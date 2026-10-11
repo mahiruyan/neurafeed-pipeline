@@ -1,0 +1,19 @@
+{
+  "name": "neurafeed-pipeline",
+  "private": true,
+  "version": "0.1.0",
+  "description": "NeuraFeed news carousel pipeline: render, Telegram approval, publish.",
+  "type": "commonjs",
+  "engines": { "node": ">=20" },
+  "scripts": {
+    "process": "node src/process.js",
+    "poll": "node src/poll.js",
+    "render": "node src/render.js"
+  },
+  "dependencies": {
+    "@fontsource/anton": "^5.0.0",
+    "@fontsource/bebas-neue": "^5.0.0",
+    "@fontsource/poppins": "^5.0.0",
+    "puppeteer": "^23.0.0"
+  }
+}
