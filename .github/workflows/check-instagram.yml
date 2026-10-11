@@ -1,0 +1,29 @@
+name: Check Instagram connection
+
+on:
+  workflow_dispatch:
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Ask Instagram who this token belongs to
+        env:
+          IG_USER_ID: ${{ secrets.IG_USER_ID }}
+          IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
+        run: |
+          if [ -z "$IG_USER_ID" ] || [ -z "$IG_ACCESS_TOKEN" ]; then
+            echo "::error::IG_USER_ID or IG_ACCESS_TOKEN secret is missing"; exit 1
+          fi
+          me=$(curl -s "https://graph.instagram.com/me?fields=user_id,username,account_type&access_token=$IG_ACCESS_TOKEN")
+          echo "Token belongs to: $(echo "$me" | jq -c '{username, account_type, user_id}')"
+          if echo "$me" | jq -e '.error' > /dev/null; then
+            echo "::error::Token rejected: $(echo "$me" | jq -r '.error.message')"; exit 1
+          fi
+          tid=$(echo "$me" | jq -r '.user_id // empty')
+          if [ -n "$tid" ] && [ "$tid" != "$IG_USER_ID" ]; then
+            echo "::warning::IG_USER_ID secret does not match the token's user_id. Expected $tid"
+          fi
+          limit=$(curl -s "https://graph.instagram.com/$IG_USER_ID/content_publishing_limit?fields=quota_usage,config&access_token=$IG_ACCESS_TOKEN")
+          echo "Publishing quota: $(echo "$limit" | jq -c '.data // .error.message')"
+          echo "OK"
