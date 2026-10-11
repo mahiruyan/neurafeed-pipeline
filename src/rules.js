@@ -33,9 +33,24 @@ function nightAutoApproveReason(job, st, cfg, now = new Date()) {
   return job.timely ? `night rule: ${sources} sources, not sensitive` : 'night rule: evergreen';
 }
 
+// Full-auto mode: decide at render time whether a job may go out without a human.
+function autoDecision(job, cfg) {
+  if (job.sensitive) return { ok: false, reason: 'sensitive topic, never auto-posted' };
+  const sources = (job.sources || []).length;
+  if (job.timely && sources < cfg.auto_min_sources_timely) {
+    return { ok: false, reason: `only ${sources} source(s), ${cfg.auto_min_sources_timely} required for news` };
+  }
+  return { ok: true, reason: `auto: ${sources} source(s), not sensitive` };
+}
+
+function minutesSinceLastPost(states, now = new Date()) {
+  const last = states.map((s) => s.posted_at).filter(Boolean).sort().at(-1);
+  return last ? (now - new Date(last)) / 6e4 : Infinity;
+}
+
 function postsToday(states, cfg, now = new Date()) {
   const today = dayIn(cfg.posting_timezone, now);
   return states.filter((s) => s.posted_at && dayIn(cfg.posting_timezone, new Date(s.posted_at)) === today).length;
 }
 
-module.exports = { isNight, isExpired, nightAutoApproveReason, postsToday, hoursSince };
+module.exports = { isNight, isExpired, nightAutoApproveReason, autoDecision, minutesSinceLastPost, postsToday, hoursSince };

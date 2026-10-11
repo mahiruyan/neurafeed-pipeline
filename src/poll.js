@@ -33,7 +33,7 @@ async function readButtons() {
 
 (async () => {
   const cfg = config();
-  if (tg.enabled()) await readButtons();
+  if (tg.enabled() && cfg.mode !== 'auto') await readButtons();
 
   const now = new Date();
   for (const st of allJobStates()) {
@@ -56,6 +56,8 @@ async function readButtons() {
   const approved = allJobStates().filter((s) => s.status === 'approved' || s.status === 'held_cap')
     .sort((a, b) => new Date(a.updated_at) - new Date(b.updated_at));
   for (const st of approved) {
+    // Space posts out so two stories from one run do not land back to back.
+    if (rules.minutesSinceLastPost(allJobStates(), now) < (cfg.min_minutes_between_posts || 0)) break;
     if (rules.postsToday(allJobStates(), cfg, now) >= cfg.daily_post_cap) {
       if (st.status !== 'held_cap') {
         setJobState(st.id, { status: 'held_cap' });

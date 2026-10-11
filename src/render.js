@@ -23,8 +23,9 @@ async function renderJob(job, imagePaths, outDir) {
       fs.writeFileSync(htmlFile, html);
       await tab.goto(fileUrl(htmlFile), { waitUntil: 'load' });
       await tab.evaluate(() => document.fonts.ready);
-      const out = path.join(outDir, `${i + 1}.png`);
-      await tab.screenshot({ path: out });
+      // Instagram's API accepts JPEG only.
+      const out = path.join(outDir, `${i + 1}.jpg`);
+      await tab.screenshot({ path: out, type: 'jpeg', quality: 92 });
       files.push(out);
     }
     fs.rmSync(path.join(outDir, '_slide.html'), { force: true });

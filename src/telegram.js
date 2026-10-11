@@ -21,7 +21,7 @@ async function call(method, body) {
 }
 
 function fileBlob(p) {
-  return new Blob([fs.readFileSync(p)], { type: 'image/png' });
+  return new Blob([fs.readFileSync(p)], { type: p.endsWith('.png') ? 'image/png' : 'image/jpeg' });
 }
 
 // Sends the slides as an album (photos for a quick look).

@@ -2,10 +2,15 @@
 
 This repo turns AI news into Instagram carousels for @neurafeed.ai.
 
-Flow: a scheduled Claude task writes `jobs/<id>.json` and pushes to `main` → the
-`process.yml` Action downloads images, renders 1080x1350 PNGs into `out/<id>/` and sends
-them to Telegram with Approve / Reject buttons → `poll.yml` (every 5 min) reads the
-buttons, applies the night rule, expires stale news, enforces the daily cap and publishes.
+Flow (config `"mode": "auto"`): a scheduled Claude task writes `jobs/<id>.json` and pushes
+to `main` → the `process.yml` Action downloads images, renders 1080x1350 JPEGs into
+`out/<id>/` and auto-approves the job unless it is sensitive or (for news) has fewer than
+2 sources → `poll.yml` (every 5 min) expires stale news, spaces posts 90 minutes apart,
+enforces the daily cap of 4 and publishes to Instagram. Telegram is optional (notifications,
+or Approve / Reject buttons when `mode` is not `auto`).
+
+Because auto mode has no human check, a timely news job MUST list at least 2 independent
+sources you actually read, or it will be skipped.
 
 ## Rules that must never be broken
 

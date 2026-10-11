@@ -1,9 +1,12 @@
 {
+  "mode": "auto",
   "posting_timezone": "America/New_York",
   "daily_post_cap": 4,
+  "min_minutes_between_posts": 90,
   "timely_max_age_hours": 4,
+  "evergreen_max_age_hours": 72,
+  "auto_min_sources_timely": 2,
   "night_window": { "timezone": "Europe/Istanbul", "start_hour": 1, "end_hour": 9 },
   "night_autoapprove_after_minutes": 30,
-  "night_autoapprove_min_sources": 2,
-  "evergreen_max_age_hours": 72
+  "night_autoapprove_min_sources": 2
 }

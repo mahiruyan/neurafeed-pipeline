@@ -1,7 +1,10 @@
 // Runs when new job files land in jobs/: download images, render, send for approval.
 const fs = require('fs');
 const path = require('path');
-const { ROOT, getJobState, setJobState } = require('./state');
+const { ROOT, getJobState, setJobState, config } = require('./state');
+const { autoDecision } = require('./rules');
+
+const cfg = config();
 const { fetchImages } = require('./images');
 const { renderJob } = require('./render');
 const { validateJob } = require('./validate');
@@ -49,7 +52,14 @@ function summary(job) {
       const files = await renderJob(job, paths, outDir);
       fs.rmSync(path.join(outDir, 'src'), { recursive: true, force: true });
       setJobState(id, { status: 'rendered', files: files.map((f) => path.relative(ROOT, f)), image_errors: errors });
-      if (tg.enabled()) {
+      if (cfg.mode === 'auto') {
+        const d = autoDecision(job, cfg);
+        setJobState(id, { status: d.ok ? 'approved' : 'skipped', by: d.reason });
+        if (tg.enabled()) {
+          await tg.sendAlbum(files);
+          await tg.sendMessage(`${d.ok ? '🕒 Queued for auto-post' : '⛔ Not auto-posted'} (${d.reason})\n\n${summary(job)}`);
+        }
+      } else if (tg.enabled()) {
         await tg.sendAlbum(files);
         const msg = await tg.sendMessage(summary(job), [[
           { text: '✅ Approve', callback_data: `ok:${id}` },
