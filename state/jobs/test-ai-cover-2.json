@@ -20,16 +20,31 @@
       "status": "queued",
       "at": "2026-10-12T20:49:16.831Z",
       "by": "retry"
+    },
+    {
+      "status": "rendered",
+      "at": "2026-10-12T20:50:25.442Z",
+      "by": "system"
+    },
+    {
+      "status": "approved",
+      "at": "2026-10-12T20:50:25.442Z",
+      "by": "auto: 3 source(s), not sensitive"
+    },
+    {
+      "status": "test_done",
+      "at": "2026-10-12T20:50:30.690Z",
+      "by": "test job, not published"
     }
   ],
-  "status": "queued",
+  "status": "test_done",
   "files": [
     "out/test-ai-cover-2/1.jpg",
     "out/test-ai-cover-2/2.jpg",
     "out/test-ai-cover-2/3.jpg"
   ],
   "image_errors": [],
-  "updated_at": "2026-10-12T20:49:16.831Z",
-  "by": "retry",
+  "updated_at": "2026-10-12T20:50:30.690Z",
+  "by": "test job, not published",
   "error": "fetch failed"
 }
