@@ -48,9 +48,20 @@ function minutesSinceLastPost(states, now = new Date()) {
   return last ? (now - new Date(last)) / 6e4 : Infinity;
 }
 
+// Posts only go out inside US prime-time windows (New York time).
+function inPostingWindow(cfg, now = new Date()) {
+  if (!cfg.posting_windows || !cfg.posting_windows.length) return true;
+  const parts = new Intl.DateTimeFormat('en-US', { timeZone: cfg.posting_timezone, hour: '2-digit', minute: '2-digit', hourCycle: 'h23' }).formatToParts(now);
+  const h = Number(parts.find((p) => p.type === 'hour').value);
+  const m = Number(parts.find((p) => p.type === 'minute').value);
+  const mins = h * 60 + m;
+  const toMin = (t) => { const [a, b] = t.split(':').map(Number); return a * 60 + b; };
+  return cfg.posting_windows.some((w) => mins >= toMin(w.start) && mins < toMin(w.end));
+}
+
 function postsToday(states, cfg, now = new Date()) {
   const today = dayIn(cfg.posting_timezone, now);
   return states.filter((s) => s.posted_at && dayIn(cfg.posting_timezone, new Date(s.posted_at)) === today).length;
 }
 
-module.exports = { isNight, isExpired, nightAutoApproveReason, autoDecision, minutesSinceLastPost, postsToday, hoursSince };
+module.exports = { isNight, isExpired, nightAutoApproveReason, autoDecision, minutesSinceLastPost, postsToday, hoursSince, inPostingWindow };

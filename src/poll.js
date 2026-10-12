@@ -52,9 +52,22 @@ async function readButtons() {
     }
   }
 
-  // Publish approved posts, oldest first, within the daily cap.
+  // Test jobs are closed out right away; they are never published.
+  for (const st of allJobStates().filter((s) => s.status === 'approved')) {
+    if (loadJob(st.id)?.test) setJobState(st.id, { status: 'test_done', by: 'test job, not published' });
+  }
+
+  // Only publish inside US prime-time windows (New York time).
+  if (!rules.inPostingWindow(cfg, now)) {
+    console.log('Outside posting window, nothing published.');
+    return;
+  }
+
+  // Most important first (priority 1 = must post), then the story that expires soonest.
+  const prio = (st) => loadJob(st.id)?.priority || 2;
+  const storyTime = (st) => new Date(loadJob(st.id)?.story_time || st.updated_at).getTime();
   const approved = allJobStates().filter((s) => s.status === 'approved' || s.status === 'held_cap')
-    .sort((a, b) => new Date(a.updated_at) - new Date(b.updated_at));
+    .sort((a, b) => prio(a) - prio(b) || storyTime(a) - storyTime(b));
   for (const st of approved) {
     // Space posts out so two stories from one run do not land back to back.
     if (rules.minutesSinceLastPost(allJobStates(), now) < (cfg.min_minutes_between_posts || 0)) break;

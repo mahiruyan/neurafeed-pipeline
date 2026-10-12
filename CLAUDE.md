@@ -5,12 +5,19 @@ This repo turns AI news into Instagram carousels for @neurafeed.ai.
 Flow (config `"mode": "auto"`): a scheduled Claude task writes `jobs/<id>.json` and pushes
 to `main` → the `process.yml` Action downloads images, renders 1080x1350 JPEGs into
 `out/<id>/` and auto-approves the job unless it is sensitive or (for news) has fewer than
-2 sources → `poll.yml` (every 5 min) expires stale news, spaces posts 90 minutes apart,
-enforces the daily cap of 4 and publishes to Instagram. Telegram is optional (notifications,
+2 sources → it publishes right away if inside a posting window, otherwise `poll.yml`
+(every 5 min) does it later. Posts only go out inside US prime-time windows (New York time:
+07:00-09:30, 11:00-13:30, 17:00-22:00), at least 60 minutes apart, at most 8 per day,
+highest `priority` first. Telegram is optional (notifications,
 or Approve / Reject buttons when `mode` is not `auto`).
 
 Because auto mode has no human check, a timely news job MUST list at least 2 independent
 sources you actually read, or it will be skipped.
+
+## Volume
+
+The account needs 4 to 8 posts per day. Every major story (priority 1) must be covered the
+same day. Never skip a priority 1 story because other stories are already queued.
 
 ## Rules that must never be broken
 
@@ -61,7 +68,9 @@ sources you actually read, or it will be skipped.
 ```
 
 - `id`: `YYYY-MM-DD-short-slug`, must equal the file name.
-- `timely`: true for breaking news. Timely jobs expire 4 hours after `story_time`.
+- `timely`: true for breaking news. Timely jobs expire 12 hours after `story_time`.
+- `priority`: 1 = must post (major news from OpenAI, Anthropic, Google, Meta, Microsoft, Apple,
+  NVIDIA, xAI or a story everyone in AI is talking about), 2 = normal (default), 3 = filler.
 - `sensitive`: true for deaths, lawsuits, crime, politics, layoffs, health. Never auto-posted.
 - 3 to 8 slides. First `cover`, last `cta`. Every slide needs `image.url`.
 - `pos` (optional): CSS object-position. Use it so faces are not cut off.
@@ -71,8 +80,10 @@ sources you actually read, or it will be skipped.
   `{ "url": "...", "fit": "cover", "pos": "center 20%" }` (a face). `badge_side`: `"right"`
   (default) or `"left"`, pick the side that does not cover a face or text in the photo.
   Use badges on the cover whenever a company or a second person is central to the story.
-  Logos: Wikimedia Commons square logo files (`File:<Company> logo.svg`), take the API
-  `thumburl` (PNG) exactly as returned.
+  Logos can come from any reliable source: the company's own press kit or brand page, its
+  website or app icon, Wikipedia or Wikimedia Commons (`File:<Company> logo.svg`, take the
+  API `thumburl` PNG exactly as returned). Prefer the square symbol over a wide wordmark.
+  `badge_border`: `"green"` (default), `"black"` or `"white"`, pick what reads best on that photo.
 
 ## Images
 
