@@ -50,7 +50,8 @@ async function readTelegram(cfg) {
 
 (async () => {
   const cfg = config();
-  if (tg.enabled()) await readTelegram(cfg);
+  // Telegram problems must never block publishing.
+  if (tg.enabled()) await readTelegram(cfg).catch((e) => console.log(`::warning::Telegram read failed: ${e.message}`));
 
   const now = new Date();
   for (const st of allJobStates()) {
@@ -118,4 +119,4 @@ async function readTelegram(cfg) {
       break;
     }
   }
-})().catch((e) => { console.error(e); process.exit(1); });
+})().catch((e) => { console.error(e); console.log(`::error::poll failed: ${String(e.stack || e).split('\n').slice(0, 3).join(' | ')}`); process.exit(1); });
