@@ -30,9 +30,19 @@
       "status": "queued",
       "at": "2026-10-12T19:21:20.948Z",
       "by": "re-render: style B"
+    },
+    {
+      "status": "rendered",
+      "at": "2026-10-12T19:22:20.052Z",
+      "by": "system"
+    },
+    {
+      "status": "approved",
+      "at": "2026-10-12T19:22:20.052Z",
+      "by": "auto: 3 source(s), not sensitive"
     }
   ],
-  "status": "queued",
+  "status": "approved",
   "files": [
     "out/2026-10-12-microsoft-maia-300-ai-chip/1.jpg",
     "out/2026-10-12-microsoft-maia-300-ai-chip/2.jpg",
@@ -42,6 +52,6 @@
   "image_errors": [
     "slide 2: HTTP 403 for https://content-media.investing.com/news/LYNXMPEA6103X_L.jpg"
   ],
-  "updated_at": "2026-10-12T19:21:20.948Z",
-  "by": "re-render: style B"
+  "updated_at": "2026-10-12T19:22:20.052Z",
+  "by": "auto: 3 source(s), not sensitive"
 }
