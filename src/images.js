@@ -43,7 +43,11 @@ async function generate(prompt, dest, refs = []) {
     form.append('size', '1024x1536');
     form.append('quality', quality);
     files.forEach(({ f, type }, k) => form.append('image[]', new Blob([fs.readFileSync(f)], { type }), `ref${k}.${type === 'image/png' ? 'png' : 'jpg'}`));
-    res = await fetch('https://api.openai.com/v1/images/edits', { method: 'POST', headers: { Authorization: `Bearer ${key}` }, body: form });
+    try {
+      res = await fetch('https://api.openai.com/v1/images/edits', { method: 'POST', headers: { Authorization: `Bearer ${key}` }, body: form, signal: AbortSignal.timeout(280000) });
+    } catch (e) {
+      throw new Error(`OpenAI image edit request failed: ${e.message}${e.cause ? ` (${e.cause.code || e.cause.message})` : ''}`);
+    }
   } else {
     res = await fetch('https://api.openai.com/v1/images/generations', {
       method: 'POST',

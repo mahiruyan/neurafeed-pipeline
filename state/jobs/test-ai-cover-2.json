@@ -15,16 +15,21 @@
       "status": "render_failed",
       "at": "2026-10-12T20:47:43.666Z",
       "by": "system"
+    },
+    {
+      "status": "queued",
+      "at": "2026-10-12T20:49:16.831Z",
+      "by": "retry"
     }
   ],
-  "status": "render_failed",
+  "status": "queued",
   "files": [
     "out/test-ai-cover-2/1.jpg",
     "out/test-ai-cover-2/2.jpg",
     "out/test-ai-cover-2/3.jpg"
   ],
   "image_errors": [],
-  "updated_at": "2026-10-12T20:47:43.666Z",
-  "by": "auto: 3 source(s), not sensitive",
+  "updated_at": "2026-10-12T20:49:16.831Z",
+  "by": "retry",
   "error": "fetch failed"
 }
