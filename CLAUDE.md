@@ -90,6 +90,9 @@ same day. Never skip a priority 1 story because other stories are already queued
   website or app icon, Wikipedia or Wikimedia Commons (`File:<Company> logo.svg`, take the
   API `thumburl` PNG exactly as returned). Prefer the square symbol over a wide wordmark.
   `badge_border`: `"green"` (default), `"black"` or `"white"`, pick what reads best on that photo.
+- Built-in logo library (transparent PNGs, brand colors, use as free badges, no cutout needed):
+  `assets/logos/claude.png`, `anthropic.png`, `openai.png`, `meta.png`, `nvidia.png`, `apple.png`.
+  For other companies use the sources above.
 - Mascots and product characters: when the story is about a product that has an official mascot,
   character or icon (for example Meta's Muse mascot), put it on the cover. Take it from the
   company's own newsroom, press kit, blog post or app store page. Use a round badge

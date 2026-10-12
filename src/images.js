@@ -6,6 +6,11 @@ const { execFileSync } = require('child_process');
 const UA = 'NeuraFeedPipeline/0.1 (+https://neurafeedai.com; contact hello@neurafeedai.com)';
 
 async function download(url, dest, minBytes = 15000) {
+  // Built-in logo library: "assets/logos/claude.png" and friends.
+  if (url.startsWith('assets/')) {
+    fs.copyFileSync(path.join(__dirname, '..', url), dest);
+    return dest;
+  }
   const res = await fetch(url, { headers: { 'User-Agent': UA, Accept: 'image/*' }, redirect: 'follow' });
   if (!res.ok) throw new Error(`HTTP ${res.status} for ${url}`);
   const type = res.headers.get('content-type') || '';
