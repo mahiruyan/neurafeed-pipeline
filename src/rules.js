@@ -37,6 +37,7 @@ function nightAutoApproveReason(job, st, cfg, now = new Date()) {
 function autoDecision(job, cfg) {
   if (job.sensitive) return { ok: false, reason: 'sensitive topic, never auto-posted' };
   const sources = (job.sources || []).length;
+  if (job.type === 'reel') return { ok: sources >= 1, reason: sources >= 1 ? 'auto: reel with credited source' : 'reel has no source' };
   if (job.timely && sources < cfg.auto_min_sources_timely) {
     return { ok: false, reason: `only ${sources} source(s), ${cfg.auto_min_sources_timely} required for news` };
   }

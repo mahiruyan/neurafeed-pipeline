@@ -114,4 +114,4 @@ function page(slide, imgUrl, badgeUrls = []) {
   return `<!doctype html><html><head><meta charset="utf-8"><style>${fontCss}</style></head><body>${fn(slide, imgUrl, badgeUrls)}</body></html>`;
 }
 
-module.exports = { page, fileUrl };
+module.exports = { page, fileUrl, fontCss, hl, logo };

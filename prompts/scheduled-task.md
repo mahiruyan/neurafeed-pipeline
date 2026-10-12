@@ -19,7 +19,10 @@ never miss a major story.
    Microsoft, Apple, NVIDIA or xAI, or any story the whole AI world is discussing, MUST get a
    job this run. Then add priority 2 stories with broad US appeal (launches people can try,
    statements from well-known leaders, surprising real-world uses).
-4. Queue 1 to 3 jobs per run. If fewer than 4 jobs exist for today and it is after 13:00
+3b. Reels: read inbox/links.json. Every link not yet referenced by a job's `link_id` gets a
+   Reel job this run (see the Reels section of CLAUDE.md). Open the post URL to understand it
+   when you can; use Mahir's note. These count toward the daily total and come first.
+4. Queue 1 to 3 news jobs per run (on top of Reels from the inbox). If fewer than 4 jobs exist for today and it is after 13:00
    New York time, add stories until today has at least 4. Never exceed 8 jobs per day.
 5. For each job: read the original source and at least one independent second source.
    Write the job exactly as CLAUDE.md describes: 4 to 6 slides, a different image on every

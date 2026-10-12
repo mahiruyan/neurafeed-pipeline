@@ -7,6 +7,7 @@ const { autoDecision } = require('./rules');
 const cfg = config();
 const { fetchImages } = require('./images');
 const { renderJob } = require('./render');
+const { renderReel } = require('./reel');
 const { validateJob } = require('./validate');
 const tg = require('./telegram');
 
@@ -48,19 +49,31 @@ function summary(job) {
     }
     const outDir = path.join(ROOT, 'out', id);
     try {
-      const { paths, badges, errors } = await fetchImages(job, outDir);
-      const files = await renderJob(job, paths, outDir, badges);
+      let files;
+      let errors = [];
+      let preview;
+      if (job.type === 'reel') {
+        const r = await renderReel(job, outDir);
+        files = [r.video];
+        preview = [r.preview];
+        errors = [`layout ${r.layout}, source ${r.source.w}x${r.source.h}, ${Math.round(r.source.duration)}s`];
+      } else {
+        const img = await fetchImages(job, outDir);
+        errors = img.errors;
+        files = await renderJob(job, img.paths, outDir, img.badges);
+        preview = files;
+      }
       fs.rmSync(path.join(outDir, 'src'), { recursive: true, force: true });
       setJobState(id, { status: 'rendered', files: files.map((f) => path.relative(ROOT, f)), image_errors: errors });
       if (cfg.mode === 'auto') {
         const d = autoDecision(job, cfg);
         setJobState(id, { status: d.ok ? 'approved' : 'skipped', by: d.reason });
         if (tg.enabled()) {
-          await tg.sendAlbum(files);
+          await tg.sendAlbum(preview);
           await tg.sendMessage(`${d.ok ? '🕒 Queued for auto-post' : '⛔ Not auto-posted'} (${d.reason})\n\n${summary(job)}`);
         }
       } else if (tg.enabled()) {
-        await tg.sendAlbum(files);
+        await tg.sendAlbum(preview);
         const msg = await tg.sendMessage(summary(job), [[
           { text: '✅ Approve', callback_data: `ok:${id}` },
           { text: '❌ Reject', callback_data: `no:${id}` },

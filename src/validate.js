@@ -11,7 +11,21 @@ function textOf(job) {
   return parts.join('\n');
 }
 
+function validateReel(job, fileId) {
+  const p = [];
+  if (job.id !== fileId) p.push(`id "${job.id}" must match the file name "${fileId}"`);
+  if (!job.video || !job.video.url) p.push('video.url is required');
+  if (!job.hook) p.push('hook is required');
+  if (!job.caption) p.push('caption is required');
+  if (!Array.isArray(job.sources) || job.sources.length < 1) p.push('at least one source is required');
+  if (typeof job.sensitive !== 'boolean') p.push('sensitive must be true or false');
+  if (DASHES.test([job.hook, job.caption, job.credit].join('\n'))) p.push('text contains an en dash or em dash');
+  if (!/(Source|Credit|Video):/i.test(job.caption || '')) p.push('caption must end with "Source:" or "Video:" and the original creator');
+  return p;
+}
+
 function validateJob(job, fileId) {
+  if (job.type === 'reel') return validateReel(job, fileId);
   const p = [];
   if (job.id !== fileId) p.push(`id "${job.id}" must match the file name "${fileId}"`);
   if (!Array.isArray(job.slides) || job.slides.length < 3 || job.slides.length > 8) p.push('slides must be an array of 3 to 8 items');

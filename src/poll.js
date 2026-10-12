@@ -5,27 +5,43 @@ const { ROOT, setJobState, allJobStates, getTelegram, setTelegram, loadJob, conf
 const rules = require('./rules');
 const tg = require('./telegram');
 const { publish } = require('./publish');
+const inbox = require('./inbox');
 
-async function readButtons() {
+// Reads everything the bot received: Approve / Reject buttons (manual mode) and links
+// Mahir sends from his phone, which go into inbox/links.json for the next Reel run.
+async function readTelegram(cfg) {
   const t = getTelegram();
   const updates = await tg.getUpdates(t.offset);
   for (const u of updates) {
     t.offset = u.update_id + 1;
     const cb = u.callback_query;
-    if (!cb || String(cb.message?.chat?.id) !== String(tg.CHAT)) continue;
-    const [action, id] = String(cb.data || '').split(':');
-    const st = allJobStates().find((s) => s.id === id);
-    if (!st || st.status !== 'pending') {
-      await tg.answerCallback(cb.id, 'Already handled');
+    if (cb && String(cb.message?.chat?.id) === String(tg.CHAT) && cfg.mode !== 'auto') {
+      const [action, id] = String(cb.data || '').split(':');
+      const st = allJobStates().find((s) => s.id === id);
+      if (!st || st.status !== 'pending') {
+        await tg.answerCallback(cb.id, 'Already handled');
+        continue;
+      }
+      if (action === 'ok') {
+        setJobState(id, { status: 'approved', by: 'mahir' });
+        await tg.answerCallback(cb.id, 'Approved');
+      } else if (action === 'no') {
+        setJobState(id, { status: 'rejected', by: 'mahir' });
+        await tg.answerCallback(cb.id, 'Rejected');
+        await tg.editMessage(st.message_id, `❌ Rejected: ${id}`).catch(() => {});
+      }
       continue;
     }
-    if (action === 'ok') {
-      setJobState(id, { status: 'approved', by: 'mahir' });
-      await tg.answerCallback(cb.id, 'Approved');
-    } else if (action === 'no') {
-      setJobState(id, { status: 'rejected', by: 'mahir' });
-      await tg.answerCallback(cb.id, 'Rejected');
-      await tg.editMessage(st.message_id, `❌ Rejected: ${id}`).catch(() => {});
+    const msg = u.message;
+    if (!msg || String(msg.chat?.id) !== String(tg.CHAT)) continue;
+    const text = [msg.text, msg.caption].filter(Boolean).join('\n');
+    const entityUrls = [...(msg.entities || []), ...(msg.caption_entities || [])]
+      .filter((e) => e.type === 'text_link').map((e) => e.url);
+    const added = inbox.addFromMessage(text, entityUrls, msg.message_id, msg.date);
+    if (added.length) {
+      await tg.sendMessage(`✅ Got it (${added.map((a) => a.id).join(', ')}). It will be turned into a Reel and posted in the next US prime-time window.`, null, msg.message_id).catch(() => {});
+    } else if (text && !text.startsWith('/')) {
+      await tg.sendMessage('Send me a link (X, Instagram, Reddit, YouTube, TikTok) and I will queue it as a Reel. You can add a note after the link.', null, msg.message_id).catch(() => {});
     }
   }
   setTelegram(t);
@@ -33,7 +49,7 @@ async function readButtons() {
 
 (async () => {
   const cfg = config();
-  if (tg.enabled() && cfg.mode !== 'auto') await readButtons();
+  if (tg.enabled()) await readTelegram(cfg);
 
   const now = new Date();
   for (const st of allJobStates()) {

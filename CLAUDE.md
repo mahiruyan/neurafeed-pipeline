@@ -85,6 +85,39 @@ same day. Never skip a priority 1 story because other stories are already queued
   API `thumburl` PNG exactly as returned). Prefer the square symbol over a wide wordmark.
   `badge_border`: `"green"` (default), `"black"` or `"white"`, pick what reads best on that photo.
 
+## Reels (`"type": "reel"` jobs)
+
+Mahir sends video links to the Telegram bot; they land in `inbox/links.json`
+(`{ id, url, note, received_at }`). Every run, turn each link that no job references yet
+(check `link_id` in jobs/) into one Reel job, following his note if he wrote one.
+
+```json
+{
+  "id": "2026-10-12-figure-robot-laundry-reel",
+  "type": "reel",
+  "link_id": "link-2026-10-12-1234",
+  "created_at": "2026-10-12T18:05:00Z",
+  "story_time": "2026-10-12T15:00:00Z",
+  "timely": false,
+  "sensitive": false,
+  "priority": 2,
+  "sources": [{ "name": "@creator on X", "url": "https://x.com/creator/status/..." }],
+  "video": { "url": "https://x.com/creator/status/...", "start": 0, "max_seconds": 90 },
+  "hook": "*Figure's robot* now folds laundry on its own, start to finish",
+  "credit": "@creator on X",
+  "caption": "...\n\nFollow @neurafeed.ai for daily AI news.\n\nVideo: @creator on X"
+}
+```
+
+- `hook`: 1 to 2 lines shown above the video, news tone, one *highlighted* key phrase, under 18 words.
+  Say what the viewer is seeing. No clickbait, no claims the video does not show.
+- `credit` and the caption's last line name the original creator. Always credit.
+- `video.url`: the post URL Mahir sent (yt-dlp downloads it). Optional `start`, `end` (seconds),
+  `max_seconds` (default 90).
+- If the video is AI-generated, say so in the hook or caption. If you cannot tell what the video
+  shows from the post text and Mahir's note, still queue it with a neutral, accurate hook.
+- Reels count toward the 4 to 8 posts per day and post in the same prime-time windows.
+
 ## Leads
 
 `leads/latest.json` is refreshed every hour by the `scan.yml` Action: hot Reddit posts from

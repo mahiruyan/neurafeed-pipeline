@@ -51,6 +51,28 @@ async function publishInstagram(job, files) {
   return { mode: 'instagram', media_id: pub.id };
 }
 
+async function publishReel(job, files) {
+  const base = PUBLIC_BASE.replace(/\/$/, '');
+  const c = await graph(`${IG_USER}/media`, {
+    media_type: 'REELS',
+    video_url: `${base}/${job.id}/${path.basename(files[0])}`,
+    caption: job.caption,
+    share_to_feed: 'true',
+  });
+  // Videos take a while to process: check every 15 seconds for up to 8 minutes.
+  for (let i = 0; i < 32; i++) {
+    await new Promise((r) => setTimeout(r, 15000));
+    const res = await fetch(`${GRAPH}/${c.id}?fields=status_code,status&access_token=${encodeURIComponent(IG_TOKEN)}`);
+    const d = await res.json();
+    if (d.status_code === 'FINISHED') {
+      const pub = await graph(`${IG_USER}/media_publish`, { creation_id: c.id });
+      return { mode: 'instagram', media_id: pub.id, type: 'reel' };
+    }
+    if (d.status_code === 'ERROR' || d.status_code === 'EXPIRED') throw new Error(`Instagram Reel status ${d.status_code}: ${d.status || ''}`);
+  }
+  throw new Error('Instagram Reel processing timed out');
+}
+
 async function publishManual(job, files) {
   if (!tg.enabled()) throw new Error('Neither Instagram nor Telegram is configured, nowhere to publish');
   await tg.sendMessage(`✅ READY TO POST: ${job.id}\nUpload these files as a carousel. Caption follows.`);
@@ -60,7 +82,7 @@ async function publishManual(job, files) {
 }
 
 async function publish(job, files) {
-  if (instagramEnabled()) return publishInstagram(job, files);
+  if (instagramEnabled()) return job.type === 'reel' ? publishReel(job, files) : publishInstagram(job, files);
   return publishManual(job, files);
 }
 

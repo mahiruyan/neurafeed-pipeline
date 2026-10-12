@@ -3,7 +3,16 @@ const fs = require('fs');
 const path = require('path');
 
 const TOKEN = process.env.TELEGRAM_BOT_TOKEN;
-const CHAT = process.env.TELEGRAM_CHAT_ID;
+// The owner's chat comes from the secret if set, otherwise from the setup workflow's record.
+function ownerChat() {
+  if (process.env.TELEGRAM_CHAT_ID) return process.env.TELEGRAM_CHAT_ID;
+  try {
+    return String(JSON.parse(fs.readFileSync(path.join(__dirname, '..', 'state', 'telegram_owner.json'), 'utf8')).chat_id);
+  } catch {
+    return null;
+  }
+}
+const CHAT = ownerChat();
 const api = (m) => `https://api.telegram.org/bot${TOKEN}/${m}`;
 
 const enabled = () => Boolean(TOKEN && CHAT);
@@ -34,8 +43,9 @@ async function sendAlbum(files, asDocuments = false) {
   return call('sendMediaGroup', form);
 }
 
-async function sendMessage(text, buttons) {
+async function sendMessage(text, buttons, replyTo) {
   const body = { chat_id: CHAT, text, disable_web_page_preview: true };
+  if (replyTo) body.reply_parameters = { message_id: replyTo };
   if (buttons) body.reply_markup = { inline_keyboard: buttons };
   return call('sendMessage', body);
 }
