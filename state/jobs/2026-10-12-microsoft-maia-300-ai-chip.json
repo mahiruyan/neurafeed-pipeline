@@ -55,9 +55,14 @@
       "status": "approved",
       "at": "2026-10-12T20:11:09.528Z",
       "by": "auto: 3 source(s), not sensitive"
+    },
+    {
+      "status": "publish_failed",
+      "at": "2026-10-12T21:00:19.110Z",
+      "by": "system"
     }
   ],
-  "status": "approved",
+  "status": "publish_failed",
   "files": [
     "out/2026-10-12-microsoft-maia-300-ai-chip/1.jpg",
     "out/2026-10-12-microsoft-maia-300-ai-chip/2.jpg",
@@ -67,6 +72,7 @@
   "image_errors": [
     "slide 2: HTTP 403 for https://content-media.investing.com/news/LYNXMPEA6103X_L.jpg"
   ],
-  "updated_at": "2026-10-12T20:11:09.528Z",
-  "by": "auto: 3 source(s), not sensitive"
+  "updated_at": "2026-10-12T21:00:19.110Z",
+  "by": "auto: 3 source(s), not sensitive",
+  "error": "Instagram 17841477983419365/media: API access blocked."
 }
