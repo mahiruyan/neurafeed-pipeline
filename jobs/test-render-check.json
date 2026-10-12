@@ -1,0 +1,84 @@
+{
+  "id": "test-render-check",
+  "created_at": "2026-10-12T12:45:00Z",
+  "story_time": "2026-10-12T12:00:00Z",
+  "timely": true,
+  "sensitive": false,
+  "sources": [
+    {
+      "name": "TechCrunch",
+      "url": "https://techcrunch.com/2026/10/10/microsofts-satya-nadella-says-ai-models-need-an-emergency-brake/"
+    }
+  ],
+  "caption": "Microsoft CEO Satya Nadella wants an emergency brake for AI.\n\nIn a post on X, he said AI systems should not be trusted as black boxes and laid out a plan: external safeguards, tamper-proof logs, and a way for humans to pause or shut down a model mid-task.\n\nWould you trust AI more with a kill switch?\n\nFollow @neurafeed.ai for daily AI news.\n\nSource: TechCrunch · Photo: Dan DeLong",
+  "slides": [
+    {
+      "kind": "cover",
+      "headline": "Microsoft CEO Satya Nadella says AI needs an *emergency brake*",
+      "image": {
+        "url": "https://techcrunch.com/wp-content/uploads/2023/11/satya-nadella-2_web.png",
+        "credit": "Dan DeLong"
+      },
+      "pos": "22% center"
+    },
+    {
+      "kind": "text",
+      "heading": "No more *black boxes*",
+      "paras": [
+        "In a post on X on Saturday, Microsoft CEO Satya Nadella said it is time to step back and rethink how much we trust AI systems.",
+        "He argued that AI should not be treated as nested black boxes whose answers and actions people simply accept or reject."
+      ],
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Satya_smiling-print.jpg/1600px-Satya_smiling-print.jpg",
+        "credit": "Brian Smale and Microsoft / CC BY-SA 4.0"
+      },
+      "pos": "center 30%"
+    },
+    {
+      "kind": "text",
+      "heading": "Nadella's *5-point plan*",
+      "size": 31,
+      "gap": 18,
+      "hsize": 70,
+      "paras": [
+        "1. Separate the model from the system that runs its work.",
+        "2. Move controls and safeguards outside the model.",
+        "3. Log every meaningful model action with tamper-proof, human-readable records.",
+        "4. Let an authorized person pause or shut down a model mid-task.",
+        "5. Assume a model may be compromised and contain it from the start."
+      ],
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/BalticServers_data_center.jpg/1600px-BalticServers_data_center.jpg",
+        "credit": "BalticServers.com / CC BY-SA 3.0"
+      }
+    },
+    {
+      "kind": "text",
+      "heading": "Big Tech is *saying it out loud*",
+      "size": 32,
+      "paras": [
+        "Leading AI companies have increasingly acknowledged incidents where they appeared to lose control of their models.",
+        "In September, Anthropic CEO Dario Amodei laid out his own plan for more cautious frontier AI development.",
+        {
+          "t": "Now the head of Microsoft wants a way to stop AI mid-task.",
+          "strong": true
+        }
+      ],
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Dario_Amodei_at_TechCrunch_Disrupt_2023_01.jpg/1600px-Dario_Amodei_at_TechCrunch_Disrupt_2023_01.jpg",
+        "credit": "TechCrunch / CC BY 2.0"
+      },
+      "pos": "center 35%"
+    },
+    {
+      "kind": "cta",
+      "hook": "We track every major AI safety move from Big Tech. Next update lands here first.",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/MS-Exec-Nadella-Satya-2017-08-31-22_%28cropped%29.jpg/1600px-MS-Exec-Nadella-Satya-2017-08-31-22_%28cropped%29.jpg",
+        "credit": "Brian Smale and Microsoft / CC BY-SA 4.0"
+      },
+      "pos": "center 25%"
+    }
+  ],
+  "test": true
+}

@@ -1,4 +1,4 @@
-name: Render and send for approval
+name: Render and queue
 
 on:
   push:
@@ -32,6 +32,26 @@ jobs:
         env:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+      - name: Upload images to the public media repo
+        env:
+          MEDIA_REPO_TOKEN: ${{ secrets.MEDIA_REPO_TOKEN }}
+        run: |
+          if [ -z "$MEDIA_REPO_TOKEN" ]; then echo "::warning::MEDIA_REPO_TOKEN missing, images not published"; exit 0; fi
+          git clone --depth 1 "https://mahiruyan:${MEDIA_REPO_TOKEN}@github.com/mahiruyan/neurafeed-media.git" media
+          added=0
+          for d in out/*/; do
+            id=$(basename "$d")
+            ls "$d"*.jpg >/dev/null 2>&1 || continue
+            [ -d "media/$id" ] && continue
+            mkdir -p "media/$id" && cp "$d"*.jpg "media/$id/" && added=$((added+1))
+          done
+          cd media
+          if [ "$added" -gt 0 ]; then
+            git config user.name "neurafeed-bot"
+            git config user.email "neurafeed-bot@users.noreply.github.com"
+            git add -A && git commit -q -m "media: $added new carousel(s)" && git push -q
+          fi
+          echo "Published $added new folder(s) to neurafeed-media"
       - name: Save state and renders
         run: |
           git config user.name "neurafeed-bot"

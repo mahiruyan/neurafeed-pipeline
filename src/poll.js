@@ -66,6 +66,11 @@ async function readButtons() {
       continue;
     }
     const job = loadJob(st.id);
+    if (job?.test) {
+      // Test jobs exercise render and upload only. They are never published.
+      setJobState(st.id, { status: 'test_done', by: 'test job, not published' });
+      continue;
+    }
     const files = (st.files || []).map((f) => path.join(ROOT, f));
     try {
       const result = await publish(job, files);
