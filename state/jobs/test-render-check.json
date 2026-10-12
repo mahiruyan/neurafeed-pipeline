@@ -1,0 +1,31 @@
+{
+  "id": "test-render-check",
+  "history": [
+    {
+      "status": "rendered",
+      "at": "2026-10-12T12:41:37.856Z",
+      "by": "system"
+    },
+    {
+      "status": "skipped",
+      "at": "2026-10-12T12:41:37.856Z",
+      "by": "only 1 source(s), 2 required for news"
+    }
+  ],
+  "status": "skipped",
+  "files": [
+    "out/test-render-check/1.jpg",
+    "out/test-render-check/2.jpg",
+    "out/test-render-check/3.jpg",
+    "out/test-render-check/4.jpg",
+    "out/test-render-check/5.jpg"
+  ],
+  "image_errors": [
+    "slide 2: HTTP 400 for https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Satya_smiling-print.jpg/1600px-Satya_smiling-print.jpg",
+    "slide 3: HTTP 400 for https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/BalticServers_data_center.jpg/1600px-BalticServers_data_center.jpg",
+    "slide 4: HTTP 400 for https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Dario_Amodei_at_TechCrunch_Disrupt_2023_01.jpg/1600px-Dario_Amodei_at_TechCrunch_Disrupt_2023_01.jpg",
+    "slide 5: HTTP 400 for https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/MS-Exec-Nadella-Satya-2017-08-31-22_%28cropped%29.jpg/1600px-MS-Exec-Nadella-Satya-2017-08-31-22_%28cropped%29.jpg"
+  ],
+  "updated_at": "2026-10-12T12:41:37.856Z",
+  "by": "only 1 source(s), 2 required for news"
+}
