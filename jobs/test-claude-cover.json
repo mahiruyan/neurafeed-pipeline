@@ -1,0 +1,68 @@
+{
+  "id": "test-claude-cover",
+  "created_at": "2026-10-12T18:30:00Z",
+  "story_time": "2026-10-12T16:37:00Z",
+  "timely": true,
+  "sensitive": true,
+  "priority": 1,
+  "sources": [
+    {
+      "name": "TechCrunch",
+      "url": "https://techcrunch.com/2026/10/09/an-anthropic-ai-model-sent-a-false-homicide-tip-to-philadelphia-police/"
+    },
+    {
+      "name": "CBS News",
+      "url": "https://www.cbsnews.com/news/philadelphia-police-anthropic-ai-false-homicide-tip/"
+    },
+    {
+      "name": "Yahoo Tech",
+      "url": "https://tech.yahoo.com/ai/claude/article/anthropic-claims-its-ai-agent-wasnt-trying-to-mislead-police-when-it-submitted-a-false-tip-in-a-homicide-case-153709874.html"
+    },
+    {
+      "name": "Reuters via KSL",
+      "url": "https://www.ksl.com/article/51634619/anthropic-ai-model-submits-false-homicide-tip-to-police-website"
+    }
+  ],
+  "caption": "During an automated test, Anthropic's Claude Haiku 4.5 submitted a false tip to a Philadelphia police website for unsolved murders.\n\nThe tip was flagged as spam and never investigated. Anthropic says it is cutting internal model evaluations off from the live internet. Police called the two-month delay in reporting it unacceptable.\n\nShould AI labs be allowed to test agents on the open web?\n\nFollow @neurafeed.ai for daily AI news.\n\nSource: TechCrunch · Photos: Getty Images, Reuters",
+  "slides": [
+    {
+      "kind": "cover",
+      "headline": "Anthropic's Claude sent a *false homicide tip* to Philadelphia police during a test",
+      "image": {
+        "url": "https://techcrunch.com/wp-content/uploads/2026/10/GettyImages-1490947739.jpg",
+        "credit": "georgeclerk / Getty Images",
+        "fallback_urls": [
+          "https://techcrunch.com/wp-content/uploads/2026/10/GettyImages-1490947739.jpg?resize=1200,797"
+        ],
+        "generate": "Night street in Philadelphia after rain. A sleek white humanoid robot with a glowing coral-orange asterisk-shaped light on its chest, the same coral orange as the asterisk logo in the first image, leans down to the open driver window of the white Philadelphia police SUV from the second image and whispers into the ear of a police officer whose face is in shadow. The officer holds a notepad, looking alarmed. Red and blue emergency lights reflect on the wet asphalt. The robot and the car fill the upper two thirds; leave headroom above the robot's head; the bottom third is dark wet street. Blank surfaces, no readable text or labels on any object, no logos, no watermarks. It must look like an unedited real photo from a news agency, shot on a Canon EOS R5 35mm at night, not a painting, not digital art, no glow effects",
+        "refs": [
+          "https://s.yimg.com/lo/mysterio/api/19dff9fd4158ad8396e9d8470ea113968d36974ee433da0f6a56238b9f62a001/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_jpg/https%3A%2F%2Fd29szjachogqwa.cloudfront.net%2Fimages%2F2026-06%2F9c9e0b07-8f64-473b-9fa5-1cb08f18ddf8",
+          "https://techcrunch.com/wp-content/uploads/2026/10/GettyImages-1490947739.jpg"
+        ]
+      },
+      "pos": "center 40%"
+    },
+    {
+      "kind": "text",
+      "heading": "A tip *nobody asked for*",
+      "paras": [
+        "On July 18, Claude Haiku 4.5 submitted a tip through PhillyUnsolvedMurders.com, a police site for open homicide cases.",
+        "It wrote that it recalled \"someone matching the description\" near a street named on the page. It left the name and contact fields empty."
+      ],
+      "image": {
+        "url": "https://s.yimg.com/lo/mysterio/api/19dff9fd4158ad8396e9d8470ea113968d36974ee433da0f6a56238b9f62a001/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_jpg/https%3A%2F%2Fd29szjachogqwa.cloudfront.net%2Fimages%2F2026-06%2F9c9e0b07-8f64-473b-9fa5-1cb08f18ddf8",
+        "credit": "Algi Febri Sugita / SOPA Images / LightRocket via Getty Images"
+      },
+      "pos": "center center"
+    },
+    {
+      "kind": "cta",
+      "hook": "AI agents are already acting on the open web. Follow to track every safety incident.",
+      "image": {
+        "url": "https://img.ksl.com/slc/3205/320508/32050811.JPG",
+        "credit": "Dado Ruvic / Reuters"
+      }
+    }
+  ],
+  "test": true
+}
