@@ -1,0 +1,77 @@
+{
+  "id": "test-ai-cover-5",
+  "created_at": "2026-10-12T18:30:00Z",
+  "story_time": "2026-10-12T16:30:00Z",
+  "timely": true,
+  "sensitive": false,
+  "priority": 1,
+  "sources": [
+    {
+      "name": "Reuters via The Express Tribune",
+      "url": "https://tribune.com.pk/story/2634455/microsoft-plans-huge-deployment-of-its-own-ai-chips-with-an-eye-on-saving-costs"
+    },
+    {
+      "name": "Notebookcheck",
+      "url": "https://www.notebookcheck.net/Microsoft-Maia-300-AI-chip-arrives-with-monstrous-288-GB-HBM4-memory-and-18-TB-s-bandwidth.1422220.0.html"
+    },
+    {
+      "name": "Investing.com",
+      "url": "https://www.investing.com/news/stock-market-news/microsofts-maia-300-chip-and-what-it-means-for-nvidia-93CH-4944991"
+    }
+  ],
+  "caption": "Microsoft unveiled Maia 300, its third-generation custom AI chip, on Monday.\n\nIt plans multi-gigawatt deployments starting next year, potentially more than one million chips, and claims about 40% more useful computing per megawatt than leading GPU systems.\n\nCan in-house chips loosen Nvidia's grip on AI?\n\nFollow @neurafeed.ai for daily AI news.\n\nSource: Reuters · Photo: Microsoft",
+  "slides": [
+    {
+      "kind": "cover",
+      "headline": "Microsoft unveils *Maia 300* AI chip, eyes over a million next year",
+      "image": {
+        "url": "https://www.notebookcheck.net/fileadmin/_processed_/webp/Notebooks/News/_nc5/Microsoft-Maia-300-q82-w2560-h.webp",
+        "credit": "Microsoft",
+        "fallback_urls": [
+          "https://www.notebookcheck.net/fileadmin/Notebooks/News/_nc5/Microsoft-Maia-300.jpg"
+        ],
+        "generate": "Candid editorial press photograph, not an illustration, not CGI. The man from the first image (same face, same glasses) stands on the right half of the frame inside a real Microsoft Azure data center aisle, holding the real chip from the second image between his thumb and fingers at chest height, looking at the camera with a slight confident smile. Real server racks with small status LEDs, practical overhead lighting, realistic skin texture and pores, natural color, slight film grain, shot on a Canon EOS R5 with a 35mm lens at f/2.8, shallow depth of field. The left third of the frame is empty dark background (a dim, out of focus server aisle with nothing in front of it). Vertical composition, his face in the upper half, blank chip surface, no readable text or labels on any object, no logos, no watermarks. It must look like an unedited real photo from a news agency, not a painting, not digital art, no glow effects",
+        "refs": [
+          "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/19/Satya_smiling-print.jpg/1920px-Satya_smiling-print.jpg",
+          "https://www.notebookcheck.net/fileadmin/Notebooks/News/_nc5/Microsoft-Maia-300.jpg"
+        ]
+      },
+      "pos": "center 35%",
+      "badges": [
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Microsoft_logo.svg/500px-Microsoft_logo.svg.png",
+          "shape": "free",
+          "cutout": true,
+          "side": "left",
+          "scale": 0.75
+        }
+      ]
+    },
+    {
+      "kind": "text",
+      "heading": "Aimed at *Nvidia's* grip",
+      "paras": [
+        "A Maia 300 rack holds 96 chips and draws about 167 kilowatts. Nvidia's GB300 rack, with 72 GPUs, uses about 142 kilowatts.",
+        "Microsoft claims about 40% more useful computing per megawatt than leading GPU systems, but did not name the systems it compared.",
+        {
+          "t": "Deployments of multiple gigawatts start next year.",
+          "strong": true
+        }
+      ],
+      "image": {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5d/BalticServers_data_center.jpg/1920px-BalticServers_data_center.jpg",
+        "credit": "BalticServers.com / CC BY-SA 3.0"
+      }
+    },
+    {
+      "kind": "cta",
+      "hook": "Big Tech is racing to build its own AI chips. Follow to see who pulls ahead.",
+      "image": {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/19/Satya_smiling-print.jpg/1920px-Satya_smiling-print.jpg",
+        "credit": "Brian Smale and Microsoft / CC BY-SA 4.0"
+      },
+      "pos": "center 25%"
+    }
+  ],
+  "test": true
+}

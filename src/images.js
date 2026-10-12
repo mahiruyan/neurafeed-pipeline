@@ -25,7 +25,7 @@ async function download(url, dest, minBytes = 15000) {
 async function generate(prompt, dest, refs = []) {
   const key = process.env.OPENAI_API_KEY;
   if (!key) throw new Error('OPENAI_API_KEY missing, cannot generate image');
-  const model = process.env.OPENAI_IMAGE_MODEL || 'gpt-image-1';
+  const model = process.env.OPENAI_IMAGE_MODEL || 'gpt-image-2';
   const quality = process.env.OPENAI_IMAGE_QUALITY || 'high';
   const files = [];
   for (let k = 0; k < refs.length; k++) {
