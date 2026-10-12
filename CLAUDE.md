@@ -117,6 +117,8 @@ believable fake photo of a real event that did not happen.
   infinity logo and the Muse mascot, OpenAI's black knot, Claude's orange asterisk, NVIDIA green).
   Say in the prompt which ref is what ("the man in the first image", "the chip in the second
   image", "the logo in the third image, glowing on the wall") and keep faces and logos exact.
+- The model writes fake text on objects (chips, screens, signs). Always say "blank surfaces, no
+  readable text or labels on any object" in the prompt.
 - Do not ask the model to draw logos (it gets them wrong). Instead, in the prompt keep one side
   of the frame as empty dark background ("the left third of the frame is empty dark background")
   and put the real logo there as a free badge with `"cutout": true` and the matching `"side"`.
