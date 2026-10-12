@@ -33,6 +33,19 @@ jobs:
           python3 -m pip install --quiet --upgrade --pre yt-dlp
           which ffmpeg || (sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg)
           yt-dlp --version && ffmpeg -version | head -1
+      - name: Background removal tools (only when a job asks for a cutout)
+        id: cut
+        run: |
+          if grep -rqE '"cutout": *true' jobs; then echo "need=1" >> "$GITHUB_OUTPUT"; fi
+      - name: Cache background-removal model
+        if: steps.cut.outputs.need == '1'
+        uses: actions/cache@v4
+        with:
+          path: ~/.rembg
+          key: rembg-u2net-v1
+      - name: Install rembg
+        if: steps.cut.outputs.need == '1'
+        run: python3 -m pip install --quiet "rembg[cpu]" pillow
       - run: node src/process.js
         env:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}

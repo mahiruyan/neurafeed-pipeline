@@ -1,6 +1,7 @@
 // Downloads slide images for a job into out/<id>/src/.
 const fs = require('fs');
 const path = require('path');
+const { execFileSync } = require('child_process');
 
 const UA = 'NeuraFeedPipeline/0.1 (+https://neurafeedai.com; contact hello@neurafeedai.com)';
 
@@ -46,7 +47,20 @@ async function fetchImages(job, outDir) {
     for (let j = 0; j < (job.slides[i].badges || []).length; j++) {
       const b = job.slides[i].badges[j];
       try {
-        list.push(await download(b.url, path.join(srcDir, `${i + 1}-b${j + 1}.img`), 1000));
+        const raw = await download(b.url, path.join(srcDir, `${i + 1}-b${j + 1}.img`), 1000);
+        if (b.cutout) {
+          // Background removal (rembg), for mascots or products shown free on the photo.
+          const png = path.join(srcDir, `${i + 1}-b${j + 1}.png`);
+          try {
+            execFileSync('python3', [path.join(__dirname, 'cutout.py'), raw, png], { stdio: 'pipe', timeout: 180000 });
+            list.push(png);
+          } catch (e) {
+            errors.push(`slide ${i + 1} badge ${j + 1}: background removal failed, using the original`);
+            list.push(raw);
+          }
+        } else {
+          list.push(raw);
+        }
       } catch (e) {
         errors.push(`slide ${i + 1} badge ${j + 1}: ${e.message}`);
       }

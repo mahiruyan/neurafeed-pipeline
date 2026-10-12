@@ -93,6 +93,8 @@ same day. Never skip a priority 1 story because other stories are already queued
   collage: `"side": "left"` or `"right"`, optional `"top"` (px, default 300) and `"scale"`
   (default 1). Typical cover: the person in the middle (`pos`), the company's transparent logo
   free on one side, the mascot or product free on the other, never covering a face.
+  If the mascot or product image has a background, add `"cutout": true` to that badge: the
+  pipeline removes the background automatically and shows it free (no circle).
 
 ## Reels (`"type": "reel"` jobs)
 

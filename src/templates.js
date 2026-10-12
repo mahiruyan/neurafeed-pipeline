@@ -37,6 +37,8 @@ function headlineSize(text, base, perLine) {
 // Round badges (company logos or a second face) overlaid on the photo, like news accounts use.
 // Slide fields: badges: [{ url, fit: "contain" (logo) | "cover" (face), pos, bg }],
 // badge_side: "right" | "left", badge_border: "green" | "black" | "white".
+// A cut-out (background removed) is shown free unless a shape is set explicitly.
+const isFree = (b) => b.shape === 'free' || (b.cutout && !b.shape);
 const BORDER = { green: ACC, black: '#000', white: '#fff' };
 function badgeItems(s, urls, size) {
   const border = BORDER[s.badge_border] || BORDER.green;
@@ -44,7 +46,7 @@ function badgeItems(s, urls, size) {
     const b = (s.badges || [])[i] || {};
     const fit = b.fit || 'contain';
     // shape "free": a transparent PNG (mascot, product cut-out) sits on the photo with no circle.
-    if (b.shape === 'free') {
+    if (isFree(b)) {
       const fs = Math.round(size * (b.scale || 1.25));
       return `<img src="${u}" style="width:${fs}px;height:${fs}px;object-fit:contain;filter:drop-shadow(0 12px 30px rgba(0,0,0,.6));flex-shrink:0">`;
     }
@@ -59,7 +61,7 @@ function badgeItems(s, urls, size) {
 function freeItems(s, urls) {
   return urls.map((u, i) => {
     const b = (s.badges || [])[i] || {};
-    if (b.shape !== 'free') return '';
+    if (!isFree(b)) return '';
     const w = Math.round(330 * (b.scale || 1));
     const side = b.side === 'left' ? 'left' : 'right';
     return `<img src="${u}" style="position:absolute;${side}:40px;top:${b.top || 300}px;width:${w}px;height:${w}px;object-fit:contain;filter:drop-shadow(0 12px 30px rgba(0,0,0,.6));z-index:4">`;
@@ -69,8 +71,8 @@ function freeItems(s, urls) {
 function coverBadges(s, urls) {
   if (!urls || !urls.length) return '';
   const free = freeItems(s, urls);
-  const round = urls.filter((_, i) => ((s.badges || [])[i] || {}).shape !== 'free');
-  const roundSpec = (s.badges || []).filter((b) => b.shape !== 'free');
+  const round = urls.filter((_, i) => !isFree((s.badges || [])[i] || {}));
+  const roundSpec = (s.badges || []).filter((b) => !isFree(b));
   if (!round.length) return free;
   return free + coverRound({ ...s, badges: roundSpec }, round);
 }
