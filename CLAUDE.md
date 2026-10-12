@@ -122,6 +122,9 @@ believable fake photo of a real event that did not happen.
 - Do not ask the model to draw logos (it gets them wrong). Instead, in the prompt keep one side
   of the frame as empty dark background ("the left third of the frame is empty dark background")
   and put the real logo there as a free badge with `"cutout": true` and the matching `"side"`.
+- Always end the prompt with: "It must look like an unedited real photo from a news agency, not a
+  painting, not digital art, no glow effects." and ask for headroom above the person's head
+  (the top of the frame is cropped slightly on the cover).
 - Photorealistic, high contrast, one clear subject, vertical composition, subject in the upper two
   thirds (the bottom third is covered by the headline), no text, no letters, no watermarks.
 - At most 2 generated covers per day.
