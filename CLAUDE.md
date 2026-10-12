@@ -71,5 +71,6 @@ sources you actually read, or it will be skipped.
 
 Order of preference: images inside the source article, official company press images,
 then Wikimedia Commons photos of the people or products named in the story
-(use the Commons API: `https://commons.wikimedia.org/w/api.php?action=query&format=json&generator=search&gsrnamespace=6&gsrsearch=<query>&prop=imageinfo&iiprop=url|size&iiurlwidth=1600`
-and take `thumburl`). Minimum 1000 px wide. Add 1 or 2 `fallback_urls` per slide.
+(use the Commons API: `https://commons.wikimedia.org/w/api.php?action=query&format=json&generator=search&gsrnamespace=6&gsrsearch=<query>&prop=imageinfo&iiprop=url|size&iiurlwidth=1920`
+and copy `thumburl` exactly as returned). Never edit the size in a Wikimedia thumbnail URL:
+non-standard widths (for example 1600px) are rejected with HTTP 400. Minimum 1000 px wide. Add 1 or 2 `fallback_urls` per slide.
