@@ -20,9 +20,14 @@
       "status": "approved",
       "at": "2026-10-12T21:03:02.314Z",
       "by": "re-queued after Meta account block"
+    },
+    {
+      "status": "posted",
+      "at": "2026-10-12T23:30:51.381Z",
+      "by": "system"
     }
   ],
-  "status": "approved",
+  "status": "posted",
   "files": [
     "out/2026-10-12-meta-muse-wonder-frontier-models/1.jpg",
     "out/2026-10-12-meta-muse-wonder-frontier-models/2.jpg",
@@ -32,8 +37,13 @@
   "image_errors": [
     "slide 1: HTTP 403 for https://gvwire.com/wp-content/uploads/2026/10/Mark-Zuckerberg-the-chief-executive-of-Meta-at-Meta-Connect-the-companys-annual-new-products-reveal-in-Menlo-Park-Calif.-on-Sept.-23-2026.-Zuckerberg-revamped-his-companys-artificial-intelligence-.jpg"
   ],
-  "updated_at": "2026-10-12T21:03:02.314Z",
+  "updated_at": "2026-10-12T23:30:51.381Z",
   "by": "re-queued after Meta account block",
   "error": "Instagram 17841477983419365/media: API access blocked.",
-  "attempts": 0
+  "attempts": 0,
+  "posted_at": "2026-10-12T23:30:51.380Z",
+  "publish": {
+    "mode": "instagram",
+    "media_id": "17889831504618265"
+  }
 }
