@@ -18,18 +18,33 @@ function run(cmd, args, opts = {}) {
   return execFileSync(cmd, args, { stdio: ['ignore', 'pipe', 'pipe'], maxBuffer: 64 * 1024 * 1024, ...opts }).toString();
 }
 
+const UA = 'NeuraFeedPipeline/0.1 (+https://neurafeedai.com; contact hello@neurafeedai.com)';
+const DIRECT = /\.(mp4|webm|mov|m4v|ogv)(\?|$)/i;
+
 // Downloads the video at a post URL (X, Instagram, Reddit, YouTube, TikTok...) with yt-dlp.
+// Direct video file links fall back to a plain download with a descriptive User-Agent.
 function download(url, dir) {
   fs.mkdirSync(dir, { recursive: true });
   const out = path.join(dir, 'source.%(ext)s');
-  run('yt-dlp', [
-    '--no-playlist', '--no-progress', '--restrict-filenames',
-    '-f', 'bv*[height<=1920][vcodec^=avc1]+ba[acodec^=mp4a]/bv*[height<=1920]+ba/b[height<=1920]/b',
-    '--merge-output-format', 'mp4',
-    '-o', out, url,
-  ], { timeout: 5 * 60 * 1000 });
-  const file = fs.readdirSync(dir).find((f) => f.startsWith('source.'));
-  if (!file) throw new Error('yt-dlp finished but no file was saved');
+  let ytdlpError = null;
+  try {
+    run('yt-dlp', [
+      '--no-playlist', '--no-progress', '--restrict-filenames',
+      '-f', 'bv*[height<=1920][vcodec^=avc1]+ba[acodec^=mp4a]/bv*[height<=1920]+ba/b[height<=1920]/b',
+      '--merge-output-format', 'mp4',
+      '-o', out, url,
+    ], { timeout: 5 * 60 * 1000 });
+  } catch (e) {
+    ytdlpError = e;
+  }
+  let file = fs.readdirSync(dir).find((f) => f.startsWith('source.') && !f.endsWith('.part'));
+  if (!file && DIRECT.test(url)) {
+    const ext = (url.match(DIRECT) || [])[1] || 'mp4';
+    const dest = path.join(dir, `source.${ext}`);
+    run('curl', ['-sSfL', '-A', UA, '--max-time', '300', '-o', dest, url]);
+    file = path.basename(dest);
+  }
+  if (!file) throw ytdlpError || new Error('Download finished but no file was saved');
   return path.join(dir, file);
 }
 
