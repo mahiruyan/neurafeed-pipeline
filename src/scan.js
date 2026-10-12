@@ -123,8 +123,39 @@ async function scanFeeds(errors) {
   return leads;
 }
 
+// Hacker News: free, not blocked. Keeps AI-related stories from the front page and recent hits.
+const AI_WORDS = /\b(ai|a\.i\.|llm|gpt|openai|anthropic|claude|gemini|deepmind|llama|mistral|nvidia|copilot|chatgpt|agent|model|diffusion|grok|xai)\b/i;
+async function scanHackerNews(errors) {
+  const leads = [];
+  for (const url of [
+    'https://hn.algolia.com/api/v1/search?tags=front_page&hitsPerPage=60',
+    `https://hn.algolia.com/api/v1/search_by_date?tags=story&numericFilters=points>80,created_at_i>${Math.floor(Date.now() / 1000) - 86400}&hitsPerPage=100`,
+  ]) {
+    try {
+      const data = await (await get(url)).json();
+      for (const h of data.hits) {
+        if (!AI_WORDS.test(h.title || '')) continue;
+        leads.push({
+          source: 'Hacker News',
+          title: h.title,
+          score: h.points,
+          comments: h.num_comments,
+          time: h.created_at,
+          url: h.url || `https://news.ycombinator.com/item?id=${h.objectID}`,
+          permalink: `https://news.ycombinator.com/item?id=${h.objectID}`,
+        });
+      }
+    } catch (e) {
+      errors.push(`Hacker News: ${e.message}`);
+    }
+  }
+  const seen = new Set();
+  return leads.filter((l) => !seen.has(l.permalink) && seen.add(l.permalink));
+}
+
 (async () => {
   const errors = [];
+  const hn = await scanHackerNews(errors);
   const [reddit, news] = [await scanReddit(errors), await scanFeeds(errors)];
   const cutoff = Date.now() - KEEP_HOURS * 36e5;
   const fresh = (l) => !l.time || new Date(l.time).getTime() >= cutoff;
@@ -132,10 +163,11 @@ async function scanFeeds(errors) {
     scanned_at: new Date().toISOString(),
     errors,
     reddit: reddit.filter(fresh).sort((a, b) => b.score - a.score).slice(0, 120),
+    hackernews: hn.filter(fresh).sort((a, b) => b.score - a.score).slice(0, 60),
     news: news.filter(fresh).sort((a, b) => new Date(b.time || 0) - new Date(a.time || 0)).slice(0, 150),
   };
   fs.mkdirSync(path.dirname(OUT), { recursive: true });
   fs.writeFileSync(OUT, JSON.stringify(out, null, 2) + '\n');
-  console.log(`reddit ${out.reddit.length}, news ${out.news.length}, errors ${errors.length}`);
+  console.log(`reddit ${out.reddit.length}, hn ${out.hackernews.length}, news ${out.news.length}, errors ${errors.length}`);
   if (errors.length) console.log(errors.join('\n'));
 })().catch((e) => { console.error(e); process.exit(1); });

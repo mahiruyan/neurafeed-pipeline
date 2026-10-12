@@ -88,8 +88,8 @@ same day. Never skip a priority 1 story because other stories are already queued
 ## Leads
 
 `leads/latest.json` is refreshed every hour by the `scan.yml` Action: hot Reddit posts from
-AI subreddits (with score, comment count and image URLs) and the latest items from AI news
-RSS feeds. Read it first in every run. Reddit shows what people care about; confirm the facts
+AI subreddits (with score, comment count and image URLs; empty until Reddit API access is
+approved), AI stories trending on Hacker News, and the latest items from AI news RSS feeds. Read it first in every run. Reddit shows what people care about; confirm the facts
 with real sources before writing.
 
 ## Images
