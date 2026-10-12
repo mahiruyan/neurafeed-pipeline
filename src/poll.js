@@ -57,7 +57,7 @@ async function readTelegram(cfg) {
     const job = loadJob(st.id);
     if (!job) continue;
 
-    if (['pending', 'approved', 'held_cap'].includes(st.status) && rules.isExpired(job, cfg, now)) {
+    if (['pending', 'approved', 'held_cap', 'publish_failed'].includes(st.status) && rules.isExpired(job, cfg, now)) {
       setJobState(st.id, { status: 'expired' });
       if (tg.enabled() && st.message_id) await tg.editMessage(st.message_id, `⌛ Expired (too old to post): ${st.id}`).catch(() => {});
       continue;
@@ -83,7 +83,8 @@ async function readTelegram(cfg) {
   // Most important first (priority 1 = must post), then the story that expires soonest.
   const prio = (st) => loadJob(st.id)?.priority || 2;
   const storyTime = (st) => new Date(loadJob(st.id)?.story_time || st.updated_at).getTime();
-  const approved = allJobStates().filter((s) => s.status === 'approved' || s.status === 'held_cap')
+  // A failed publish is retried on later runs, up to 3 attempts in total.
+  const approved = allJobStates().filter((s) => s.status === 'approved' || s.status === 'held_cap' || (s.status === 'publish_failed' && (s.attempts || 1) < 3))
     .sort((a, b) => prio(a) - prio(b) || storyTime(a) - storyTime(b));
   for (const st of approved) {
     // Space posts out so two stories from one run do not land back to back.
@@ -110,8 +111,11 @@ async function readTelegram(cfg) {
         await tg.editMessage(st.message_id, `📤 ${result.mode === 'instagram' ? 'Posted to Instagram' : 'Sent for manual posting'}: ${st.id}\n(${who})`).catch(() => {});
       }
     } catch (e) {
-      setJobState(st.id, { status: 'publish_failed', error: String(e.message || e) });
-      if (tg.enabled()) await tg.sendMessage(`⚠️ Publish failed for ${st.id}: ${String(e.message || e).slice(0, 3500)}`);
+      const attempts = (st.status === 'publish_failed' ? (st.attempts || 1) : 0) + 1;
+      setJobState(st.id, { status: 'publish_failed', error: String(e.message || e), attempts });
+      if (tg.enabled()) await tg.sendMessage(`⚠️ Publish failed for ${st.id} (attempt ${attempts} of 3): ${String(e.message || e).slice(0, 3500)}`);
+      // Stop here: if Instagram is down or blocked, do not burn through the whole queue.
+      break;
     }
   }
 })().catch((e) => { console.error(e); process.exit(1); });

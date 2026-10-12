@@ -60,9 +60,14 @@
       "status": "publish_failed",
       "at": "2026-10-12T21:00:19.335Z",
       "by": "system"
+    },
+    {
+      "status": "approved",
+      "at": "2026-10-12T21:03:02.308Z",
+      "by": "re-queued after Meta account block"
     }
   ],
-  "status": "publish_failed",
+  "status": "approved",
   "files": [
     "out/2026-10-12-anthropic-claude-false-police-tip/1.jpg",
     "out/2026-10-12-anthropic-claude-false-police-tip/2.jpg",
@@ -71,7 +76,8 @@
     "out/2026-10-12-anthropic-claude-false-police-tip/5.jpg"
   ],
   "image_errors": [],
-  "updated_at": "2026-10-12T21:00:19.335Z",
-  "by": "approved by Mahir",
-  "error": "Instagram 17841477983419365/media: API access blocked."
+  "updated_at": "2026-10-12T21:03:02.308Z",
+  "by": "re-queued after Meta account block",
+  "error": "Instagram 17841477983419365/media: API access blocked.",
+  "attempts": 0
 }
