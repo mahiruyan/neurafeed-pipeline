@@ -35,6 +35,7 @@ function nightAutoApproveReason(job, st, cfg, now = new Date()) {
 
 // Full-auto mode: decide at render time whether a job may go out without a human.
 function autoDecision(job, cfg) {
+  if (job.owner_approved) return { ok: true, reason: 'approved by Mahir' };
   if (job.sensitive) return { ok: false, reason: 'sensitive topic, never auto-posted' };
   const sources = (job.sources || []).length;
   if (job.type === 'reel') return { ok: sources >= 1, reason: sources >= 1 ? 'auto: reel with credited source' : 'reel has no source' };

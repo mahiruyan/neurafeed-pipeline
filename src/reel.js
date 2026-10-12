@@ -8,7 +8,7 @@
 const fs = require('fs');
 const path = require('path');
 const { execFileSync } = require('child_process');
-const { fontCss, hl, logo, fileUrl } = require('./templates');
+const { fontCss, hl, hlb, logo, fileUrl } = require('./templates');
 
 const W = 1080;
 const H = 1920;
@@ -77,7 +77,7 @@ const header = (job, color) => `
 <div style="font-family:Poppins;font-size:36px;font-weight:600;color:#fff;line-height:1.2">Neurafeed AI</div>
 <div style="font-family:Poppins;font-size:28px;color:${color};line-height:1.2">@neurafeed.ai</div>
 </div></div>
-<p style="margin:0;font-family:Poppins;font-size:${job.hook_size || 42}px;line-height:1.35;font-weight:600;color:#fff">${hl(job.hook)}</p>`;
+<p style="margin:0;font-family:Poppins;font-size:${job.hook_size || 42}px;line-height:1.35;font-weight:500;color:#fff">${hlb(job.hook)}</p>`;
 
 // HTML for the frame layer. The element #video marks where the video goes; it stays transparent.
 function frameHtml(job, lay) {

@@ -15,7 +15,7 @@ async function readTelegram(cfg) {
   for (const u of updates) {
     t.offset = u.update_id + 1;
     const cb = u.callback_query;
-    if (cb && String(cb.message?.chat?.id) === String(tg.CHAT) && cfg.mode !== 'auto') {
+    if (cb && String(cb.message?.chat?.id) === String(tg.CHAT)) {
       const [action, id] = String(cb.data || '').split(':');
       const st = allJobStates().find((s) => s.id === id);
       if (!st || st.status !== 'pending') {
@@ -25,6 +25,7 @@ async function readTelegram(cfg) {
       if (action === 'ok') {
         setJobState(id, { status: 'approved', by: 'mahir' });
         await tg.answerCallback(cb.id, 'Approved');
+        await tg.editMessage(st.message_id, `✅ Approved, will post in the next US prime-time slot: ${id}`).catch(() => {});
       } else if (action === 'no') {
         setJobState(id, { status: 'rejected', by: 'mahir' });
         await tg.answerCallback(cb.id, 'Rejected');

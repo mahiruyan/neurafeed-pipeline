@@ -71,7 +71,8 @@ same day. Never skip a priority 1 story because other stories are already queued
 - `timely`: true for breaking news. Timely jobs expire 12 hours after `story_time`.
 - `priority`: 1 = must post (major news from OpenAI, Anthropic, Google, Meta, Microsoft, Apple,
   NVIDIA, xAI or a story everyone in AI is talking about), 2 = normal (default), 3 = filler.
-- `sensitive`: true for deaths, lawsuits, crime, politics, layoffs, health. Never auto-posted.
+- `sensitive`: true for deaths, lawsuits, crime, politics, layoffs, health. Never auto-posted: it is sent to Mahir on Telegram with Approve / Reject buttons. Still write it, especially when it is priority 1.
+- `owner_approved`: only set to true when Mahir himself asked for that story to be posted.
 - 3 to 8 slides. First `cover`, last `cta`. Every slide needs `image.url`.
 - `pos` (optional): CSS object-position. Use it so faces are not cut off.
 - Optional per slide: `size` (paragraph px, default 34), `hsize` (heading px), `gap`.
@@ -112,6 +113,7 @@ Mahir sends video links to the Telegram bot; they land in `inbox/links.json`
 - `hook`: 1 to 2 lines shown above the video, news tone, one *highlighted* key phrase, under 18 words.
   Say what the viewer is seeing. No clickbait, no claims the video does not show.
 - `credit` and the caption's last line name the original creator. Always credit.
+- If Mahir's note gives a headline (for example `başlık: ...`, `title: ...` or text in quotes), use it as the `hook`: word for word if it is English, a faithful English translation if it is Turkish. Only add the *highlight* asterisks and fix spelling.
 - `video.url`: the post URL Mahir sent (yt-dlp downloads it). Optional `start`, `end` (seconds),
   `max_seconds` (default 90).
 - If the video is AI-generated, say so in the hook or caption. If you cannot tell what the video
