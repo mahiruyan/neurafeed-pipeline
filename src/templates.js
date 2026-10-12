@@ -18,7 +18,7 @@ const fontCss = `
 @font-face{font-family:Poppins;font-weight:600;src:url(${fileUrl(FONTS + '/poppins/files/poppins-latin-600-normal.woff2')})}
 body{margin:0;background:#000}`;
 
-const corner = `<div style="position:absolute;top:40px;left:40px;display:flex;flex-direction:column;align-items:center;gap:2px;z-index:5"><img src="${logo}" style="width:76px;height:76px"><div style="font-family:Poppins;font-size:30px;color:#fff;line-height:1">nf</div></div>`;
+const corner = `<div style="position:absolute;top:40px;left:40px;display:flex;flex-direction:column;align-items:center;gap:2px;z-index:5"><img src="${logo}" style="width:76px;height:76px"><div style="font-family:Poppins;font-size:30px;color:#fff;line-height:1;text-shadow:0 1px 6px rgba(0,0,0,.8)">nf</div></div>`;
 const arrow = `<svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="M13 6l6 6-6 6"/></svg>`;
 
 // Auto-shrink a headline so long titles still fit the band.
