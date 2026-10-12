@@ -48,14 +48,14 @@ function coverBadges(s, urls) {
   if (!urls || !urls.length) return '';
   const size = urls.length > 1 ? 230 : 270;
   const side = s.badge_side === 'left' ? 'left' : 'right';
-  return `<div style="position:absolute;${side}:48px;top:${840 - size + 40}px;display:flex;gap:16px;z-index:4">${badgeItems(s, urls, size)}</div>`;
+  return `<div style="position:absolute;${side}:96px;top:${560 - size / 2}px;display:flex;gap:16px;z-index:4">${badgeItems(s, urls, size)}</div>`;
 }
 // Inner slides: badges sit on the lower edge of the photo, above the heading.
 function innerBadges(s, urls) {
   if (!urls || !urls.length) return '';
   const size = urls.length > 1 ? 190 : 220;
   const side = s.badge_side === 'left' ? 'left' : 'right';
-  return `<div style="position:absolute;${side}:48px;bottom:24px;display:flex;gap:14px;z-index:4">${badgeItems(s, urls, size)}</div>`;
+  return `<div style="position:absolute;${side}:88px;bottom:150px;display:flex;gap:14px;z-index:4">${badgeItems(s, urls, size)}</div>`;
 }
 
 function cover(s, img, badges) {
