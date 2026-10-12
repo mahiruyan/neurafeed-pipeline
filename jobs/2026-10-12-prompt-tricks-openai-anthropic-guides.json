@@ -1,0 +1,61 @@
+{
+  "id": "2026-10-12-prompt-tricks-openai-anthropic-guides",
+  "format": "utility",
+  "created_at": "2026-10-12T22:20:00Z",
+  "story_time": "2026-10-12T22:00:00Z",
+  "timely": false,
+  "sensitive": false,
+  "priority": 2,
+  "sources": [
+    { "name": "Anthropic prompting best practices", "url": "https://platform.claude.com/docs/en/docs/build-with-claude/prompt-engineering/system-prompts" },
+    { "name": "OpenAI Help Center", "url": "https://help.openai.com/en/articles/6654000-best-practices-for-prompt-engineering" }
+  ],
+  "caption": "OpenAI and Anthropic both publish official prompting guides.\nThree tips stand out: tell the AI why a rule matters, say what to do instead of what to avoid, and ask it to check its own work.\n\nWhich one will you try first?\n\nFollow @neurafeed.ai for daily AI news.\n\nSource: Anthropic, OpenAI · Photos: The Next Web, Zac Wolff / Unsplash",
+  "slides": [
+    {
+      "kind": "cover",
+      "headline": "3 prompt tricks *OpenAI and Anthropic* recommend in their own official guides",
+      "image": {
+        "url": "https://media.thenextweb.com/2026/10/smartphone-chatgpt-app-what-can-i-help-with-desk-stand.avif",
+        "credit": "The Next Web",
+        "fallback_urls": ["https://media.thenextweb.com/2026/09/openai-logo-smartphone-laptop-zac-wolff-unsplash.avif"]
+      },
+      "pos": "center 40%"
+    },
+    {
+      "kind": "text",
+      "heading": "1. Tell it *why*",
+      "paras": [
+        "Don't just give a rule, add the reason. Anthropic's guide says explaining why something matters helps Claude understand the goal and apply it better.",
+        { "t": "Example: \"This will be read aloud by a text-to-speech engine, so never use ellipses.\"", "strong": true }
+      ],
+      "image": { "url": "assets/logos/anthropic.png", "fit": "contain", "credit": "Anthropic" }
+    },
+    {
+      "kind": "text",
+      "heading": "2. Say what to do, *not what to avoid*",
+      "paras": [
+        "Both guides agree that clear instructions beat bans. Instead of \"Do not use markdown,\" Anthropic suggests asking for \"smoothly flowing prose paragraphs.\"",
+        "OpenAI adds: swap vague words for exact ones. \"Write exactly two sentences\" works better than \"Keep it short.\""
+      ],
+      "image": { "url": "assets/logos/openai.png", "fit": "contain", "credit": "OpenAI" }
+    },
+    {
+      "kind": "text",
+      "heading": "3. Make it *check its own work*",
+      "paras": [
+        "Anthropic recommends ending a prompt with a self-check. It says verification catches errors, especially in coding and math.",
+        { "t": "Try: \"Before you finish, verify your answer against these criteria.\"", "strong": true }
+      ],
+      "image": { "url": "assets/logos/claude.png", "fit": "contain", "credit": "Anthropic" }
+    },
+    {
+      "kind": "cta",
+      "hook": "Save this for your next prompt, and follow for more tips taken straight from the official AI guides.",
+      "image": {
+        "url": "https://media.thenextweb.com/2026/09/openai-logo-smartphone-laptop-zac-wolff-unsplash.jpg",
+        "credit": "Zac Wolff / Unsplash"
+      }
+    }
+  ]
+}
