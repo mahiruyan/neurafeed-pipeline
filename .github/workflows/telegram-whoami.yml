@@ -26,9 +26,10 @@ jobs:
           me=$(curl -s "https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/getMe" | jq -c '{ok, username: .result.username}')
           echo "Bot: $me"
           upd=$(curl -s "https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/getUpdates")
-          owner=$(echo "$upd" | jq -c '[.result[] | .message | select(.text != null and (.text | startswith("/start"))) | {chat_id: .chat.id, username: .from.username, first_name: .from.first_name}] | first')
+          echo "Updates waiting: $(echo "$upd" | jq '.result | length')"
+          owner=$(echo "$upd" | jq -c '[.result[] | (.message // .edited_message) | select(. != null and .chat.type == "private") | {chat_id: .chat.id, username: .from.username, first_name: .from.first_name}] | last')
           echo "Owner: $owner"
-          if [ "$owner" = "null" ] || [ -z "$owner" ]; then echo "::error::No /start message found. Send /start to the bot and run again."; exit 1; fi
+          if [ "$owner" = "null" ] || [ -z "$owner" ]; then echo "::error::No private message found. Send any message to the bot and run again."; exit 1; fi
           mkdir -p state
           echo "$owner" | jq '.' > state/telegram_owner.json
           chat=$(echo "$owner" | jq -r '.chat_id')
@@ -41,4 +42,3 @@ jobs:
           git diff --cached --quiet || git commit -m "telegram: record owner chat [skip ci]"
           git pull --rebase --autostash origin main
           git push
-# rerun
