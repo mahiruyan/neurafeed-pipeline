@@ -63,8 +63,13 @@ function innerBadges(s, urls) {
   return `<div style="position:absolute;${side}:88px;bottom:150px;display:flex;gap:14px;z-index:4">${badgeItems(s, urls, size)}</div>`;
 }
 
+// Headline font for carousels: 'anton' (uppercase, the classic NeuraFeed look) or 'poppins'.
+const COVER_FONT = process.env.COVER_FONT || 'poppins';
+const HEADING_FONT = process.env.HEADING_FONT || 'poppins';
+const antonH = (size, align, text) => `<h1 style="margin:0;font-family:Anton;font-weight:400;font-size:${size}px;line-height:1.04;text-transform:uppercase;text-align:${align};letter-spacing:-.5px">${hl(text)}</h1>`;
+
 function cover(s, img, badges) {
-  const size = s.size || headlineSize(s.headline, 66, 26);
+  const size = s.size || (COVER_FONT === 'anton' ? headlineSize(s.headline, 88, 22) : headlineSize(s.headline, 66, 26));
   return `<div style="position:relative;width:1080px;height:1350px;overflow:hidden;background:#000;color:#fff">
 <img src="${img}" style="position:absolute;top:0;left:0;width:1080px;height:900px;object-fit:cover;object-position:${s.pos || 'center 30%'}">
 <div style="position:absolute;top:560px;left:0;width:1080px;height:340px;background:linear-gradient(180deg,rgba(0,0,0,0) 0%,rgba(0,0,0,.85) 70%,#000 100%)"></div>
@@ -72,7 +77,7 @@ ${coverBadges(s, badges)}
 ${corner}
 <div style="position:absolute;top:840px;left:0;width:1080px;height:510px;box-sizing:border-box;padding:0 56px 52px;display:flex;flex-direction:column;align-items:center;justify-content:space-between">
 <div style="width:100%;display:flex;align-items:center;gap:24px"><div style="flex-grow:1;height:3px;background:#fff;opacity:.85"></div><img src="${logo}" style="width:60px;height:60px"><div style="flex-grow:1;height:3px;background:#fff;opacity:.85"></div></div>
-<h1 style="margin:0;font-family:Poppins;font-weight:500;font-size:${size}px;line-height:1.18;text-align:center;letter-spacing:-.5px">${hlb(s.headline)}</h1>
+${COVER_FONT === 'anton' ? antonH(size, 'center', s.headline) : `<h1 style="margin:0;font-family:Poppins;font-weight:500;font-size:${size}px;line-height:1.18;text-align:center;letter-spacing:-.5px">${hlb(s.headline)}</h1>`}
 <div style="display:flex;align-items:center;gap:12px;font-family:'Bebas Neue';font-size:40px;letter-spacing:3px">Swipe for more ${arrow}</div>
 </div></div>`;
 }
@@ -91,7 +96,7 @@ ${innerBadges(s, badges)}
 </div>
 ${corner}
 <div style="box-sizing:border-box;padding:4px 72px 52px;display:flex;flex-direction:column;gap:${s.gap || 22}px">
-<h2 style="margin:0;font-family:Poppins;font-weight:500;font-size:${s.hsize || 56}px;line-height:1.15;letter-spacing:-.3px">${hlb(s.heading)}</h2>
+${HEADING_FONT === 'anton' ? `<h2 style="margin:0;font-family:Anton;font-weight:400;font-size:${s.hsize || 76}px;line-height:1.05;text-transform:uppercase;letter-spacing:-.3px">${hl(s.heading)}</h2>` : `<h2 style="margin:0;font-family:Poppins;font-weight:500;font-size:${s.hsize || 56}px;line-height:1.15;letter-spacing:-.3px">${hlb(s.heading)}</h2>`}
 ${paras}
 <div style="align-self:flex-end;display:flex;align-items:center;gap:12px;margin-top:6px;font-family:'Bebas Neue';font-size:40px;letter-spacing:3px">Keep swiping ${arrow}</div>
 </div></div>`;
