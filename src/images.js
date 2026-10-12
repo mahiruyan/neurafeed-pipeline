@@ -120,6 +120,18 @@ async function fetchImages(job, outDir) {
     }
     badges.push(list);
   }
+  // Free logos/mascots on the cover without a fixed "top": find the empty part of the photo.
+  const cover = job.slides[0];
+  const free = (cover.badges || []).map((b, j) => ({ b, j })).filter(({ b }) => (b.shape === 'free' || b.cutout) && b.top === undefined);
+  if (free.length && paths[0] && badges[0]?.length) {
+    try {
+      const sizes = free.map(({ b }) => Math.round(330 * (b.scale || 1)));
+      const out = execFileSync('python3', [path.join(__dirname, 'place.py'), paths[0], cover.pos || 'center 30%', ...sizes.map(String)], { timeout: 180000 }).toString();
+      JSON.parse(out).forEach((p, k) => Object.assign(free[k].b, p));
+    } catch (e) {
+      errors.push(`cover: automatic logo placement failed, using defaults`);
+    }
+  }
   return { paths: paths.map((p) => p || firstGood), badges, errors };
 }
 

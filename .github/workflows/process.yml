@@ -36,7 +36,7 @@ jobs:
       - name: Background removal tools (only when a job asks for a cutout)
         id: cut
         run: |
-          if grep -rqE '"cutout": *true' jobs; then echo "need=1" >> "$GITHUB_OUTPUT"; fi
+          if grep -rqE '"cutout": *true|"shape": *"free"' jobs; then echo "need=1" >> "$GITHUB_OUTPUT"; fi
       - name: Cache background-removal model
         if: steps.cut.outputs.need == '1'
         uses: actions/cache@v4

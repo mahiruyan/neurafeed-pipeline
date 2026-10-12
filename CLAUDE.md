@@ -95,8 +95,9 @@ same day. Never skip a priority 1 story because other stories are already queued
   company's own newsroom, press kit, blog post or app store page. Use a round badge
   (`"fit": "contain"`), or, when the file is a transparent PNG, `{ "url": "...", "shape": "free" }`
   so it stands on the photo with no circle. On the cover, free items are placed like a magazine
-  collage: `"side": "left"` or `"right"`, optional `"top"` (px, default 300) and `"scale"`
-  (default 1). Typical cover: the person in the middle (`pos`), the company's transparent logo
+  collage: leave out `"side"` and `"top"` and the pipeline finds the empty part of the photo
+  automatically (set them only to force a spot); optional `"scale"` (default 1). Logos that come
+  on a white or colored square get `"cutout": true` so only the mark itself stays. Typical cover: the person in the middle (`pos`), the company's transparent logo
   free on one side, the mascot or product free on the other, never covering a face.
   If the mascot or product image has a background, add `"cutout": true` to that badge: the
   pipeline removes the background automatically and shows it free (no circle).
@@ -116,7 +117,9 @@ believable fake photo of a real event that did not happen.
   infinity logo and the Muse mascot, OpenAI's black knot, Claude's orange asterisk, NVIDIA green).
   Say in the prompt which ref is what ("the man in the first image", "the chip in the second
   image", "the logo in the third image, glowing on the wall") and keep faces and logos exact.
-- Logos can also be added as badges on top, like on photo covers.
+- Do not ask the model to draw logos (it gets them wrong). Instead, in the prompt keep one side
+  of the frame as empty dark background ("the left third of the frame is empty dark background")
+  and put the real logo there as a free badge with `"cutout": true` and the matching `"side"`.
 - Photorealistic, high contrast, one clear subject, vertical composition, subject in the upper two
   thirds (the bottom third is covered by the headline), no text, no letters, no watermarks.
 - At most 2 generated covers per day.
