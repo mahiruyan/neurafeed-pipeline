@@ -54,8 +54,27 @@ function badgeItems(s, urls, size) {
   }).join('');
 }
 // Cover: badges sit on the seam between photo and headline band, overlapping both.
+// Free-standing cut-outs (logo, mascot) on the cover, like a magazine collage: each one gets
+// its own side ("left" / "right") and optional "top" (px) and "scale".
+function freeItems(s, urls) {
+  return urls.map((u, i) => {
+    const b = (s.badges || [])[i] || {};
+    if (b.shape !== 'free') return '';
+    const w = Math.round(330 * (b.scale || 1));
+    const side = b.side === 'left' ? 'left' : 'right';
+    return `<img src="${u}" style="position:absolute;${side}:40px;top:${b.top || 300}px;width:${w}px;height:${w}px;object-fit:contain;filter:drop-shadow(0 12px 30px rgba(0,0,0,.6));z-index:4">`;
+  }).join('');
+}
+
 function coverBadges(s, urls) {
   if (!urls || !urls.length) return '';
+  const free = freeItems(s, urls);
+  const round = urls.filter((_, i) => ((s.badges || [])[i] || {}).shape !== 'free');
+  const roundSpec = (s.badges || []).filter((b) => b.shape !== 'free');
+  if (!round.length) return free;
+  return free + coverRound({ ...s, badges: roundSpec }, round);
+}
+function coverRound(s, urls) {
   const size = urls.length > 1 ? 230 : 270;
   const side = s.badge_side === 'left' ? 'left' : 'right';
   return `<div style="position:absolute;${side}:96px;top:${560 - size / 2}px;display:flex;gap:16px;z-index:4">${badgeItems(s, urls, size)}</div>`;

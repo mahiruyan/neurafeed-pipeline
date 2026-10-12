@@ -89,7 +89,10 @@ same day. Never skip a priority 1 story because other stories are already queued
   character or icon (for example Meta's Muse mascot), put it on the cover. Take it from the
   company's own newsroom, press kit, blog post or app store page. Use a round badge
   (`"fit": "contain"`), or, when the file is a transparent PNG, `{ "url": "...", "shape": "free" }`
-  so it stands on the photo with no circle (optional `"scale"`, default 1.25).
+  so it stands on the photo with no circle. On the cover, free items are placed like a magazine
+  collage: `"side": "left"` or `"right"`, optional `"top"` (px, default 300) and `"scale"`
+  (default 1). Typical cover: the person in the middle (`pos`), the company's transparent logo
+  free on one side, the mascot or product free on the other, never covering a face.
 
 ## Reels (`"type": "reel"` jobs)
 
