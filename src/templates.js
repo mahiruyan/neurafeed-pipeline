@@ -64,7 +64,7 @@ function innerBadges(s, urls) {
 }
 
 // Headline font for carousels: 'anton' (uppercase, the classic NeuraFeed look) or 'poppins'.
-const COVER_FONT = process.env.COVER_FONT || 'poppins';
+const COVER_FONT = process.env.COVER_FONT || 'anton';
 const HEADING_FONT = process.env.HEADING_FONT || 'poppins';
 const antonH = (size, align, text) => `<h1 style="margin:0;font-family:Anton;font-weight:400;font-size:${size}px;line-height:1.04;text-transform:uppercase;text-align:${align};letter-spacing:-.5px">${hl(text)}</h1>`;
 
