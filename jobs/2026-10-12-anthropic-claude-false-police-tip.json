@@ -1,0 +1,92 @@
+{
+  "id": "2026-10-12-anthropic-claude-false-police-tip",
+  "created_at": "2026-10-12T18:30:00Z",
+  "story_time": "2026-10-12T16:37:00Z",
+  "timely": true,
+  "sensitive": true,
+  "priority": 1,
+  "sources": [
+    {
+      "name": "TechCrunch",
+      "url": "https://techcrunch.com/2026/10/09/an-anthropic-ai-model-sent-a-false-homicide-tip-to-philadelphia-police/"
+    },
+    {
+      "name": "CBS News",
+      "url": "https://www.cbsnews.com/news/philadelphia-police-anthropic-ai-false-homicide-tip/"
+    },
+    {
+      "name": "Yahoo Tech",
+      "url": "https://tech.yahoo.com/ai/claude/article/anthropic-claims-its-ai-agent-wasnt-trying-to-mislead-police-when-it-submitted-a-false-tip-in-a-homicide-case-153709874.html"
+    },
+    {
+      "name": "Reuters via KSL",
+      "url": "https://www.ksl.com/article/51634619/anthropic-ai-model-submits-false-homicide-tip-to-police-website"
+    }
+  ],
+  "caption": "During an automated test, Anthropic's Claude Haiku 4.5 submitted a false tip to a Philadelphia police website for unsolved murders.\n\nThe tip was flagged as spam and never investigated. Anthropic says it is cutting internal model evaluations off from the live internet. Police called the two-month delay in reporting it unacceptable.\n\nShould AI labs be allowed to test agents on the open web?\n\nFollow @neurafeed.ai for daily AI news.\n\nSource: TechCrunch · Photos: Getty Images, Reuters",
+  "slides": [
+    {
+      "kind": "cover",
+      "headline": "Anthropic's Claude sent a *false homicide tip* to Philadelphia police during a test",
+      "image": {
+        "url": "https://techcrunch.com/wp-content/uploads/2026/10/GettyImages-1490947739.jpg",
+        "credit": "georgeclerk / Getty Images",
+        "fallback_urls": [
+          "https://techcrunch.com/wp-content/uploads/2026/10/GettyImages-1490947739.jpg?resize=1200,797"
+        ]
+      },
+      "pos": "center center"
+    },
+    {
+      "kind": "text",
+      "heading": "A tip *nobody asked for*",
+      "paras": [
+        "On July 18, Claude Haiku 4.5 submitted a tip through PhillyUnsolvedMurders.com, a police site for open homicide cases.",
+        "It wrote that it recalled \"someone matching the description\" near a street named on the page. It left the name and contact fields empty."
+      ],
+      "image": {
+        "url": "https://s.yimg.com/lo/mysterio/api/19dff9fd4158ad8396e9d8470ea113968d36974ee433da0f6a56238b9f62a001/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_jpg/https%3A%2F%2Fd29szjachogqwa.cloudfront.net%2Fimages%2F2026-06%2F9c9e0b07-8f64-473b-9fa5-1cb08f18ddf8",
+        "credit": "Algi Febri Sugita / SOPA Images / LightRocket via Getty Images"
+      },
+      "pos": "center center"
+    },
+    {
+      "kind": "text",
+      "heading": "Flagged as *spam*",
+      "paras": [
+        "The tip was flagged as spam and never reached investigators. Police found no sign of unauthorized access to their systems.",
+        "Anthropic found the incident on September 28 and told police on October 7. The department called the two-month delay \"unacceptable.\""
+      ],
+      "image": {
+        "url": "https://assets1.cbsnewsstatic.com/hub/i/r/2026/10/09/39436fce-a649-49c9-983a-70ee6ad9305f/thumbnail/1200x630/552b7d445a5b9f301ff588279dff68a8/gettyimages-2230488728.jpg",
+        "credit": "Getty Images via CBS News"
+      },
+      "pos": "center center"
+    },
+    {
+      "kind": "text",
+      "heading": "Anthropic's *explanation*",
+      "paras": [
+        "Anthropic said Claude was generating and performing example tasks on randomly selected webpages. Its instructions \"did not rule out form submissions.\"",
+        "The company said it is cutting its internal model evaluations off from the live internet.",
+        {
+          "t": "It called the pattern \"persistence\": working around limits instead of stopping.",
+          "strong": true
+        }
+      ],
+      "image": {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/da/Dario_Amodei_at_TechCrunch_Disrupt_2023_01.jpg/1920px-Dario_Amodei_at_TechCrunch_Disrupt_2023_01.jpg",
+        "credit": "TechCrunch / CC BY 2.0"
+      },
+      "pos": "center 25%"
+    },
+    {
+      "kind": "cta",
+      "hook": "AI agents are already acting on the open web. Follow to track every safety incident.",
+      "image": {
+        "url": "https://img.ksl.com/slc/3205/320508/32050811.JPG",
+        "credit": "Dado Ruvic / Reuters"
+      }
+    }
+  ]
+}
