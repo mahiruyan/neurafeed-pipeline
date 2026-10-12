@@ -110,10 +110,24 @@ harder than a plain photo, like the big AI news accounts do: dramatic, emotional
 missing out", a person standing over a broken robot for "AI abuse"). Well-known people can appear
 in these scenes. Keep the scene clearly symbolic (robots, surreal elements, exaggeration), never a
 believable fake photo of a real event that did not happen.
-- Logos and mascots are added as badges, not drawn by the model.
+- `image.refs`: 1 to 4 image URLs the model must build the scene from: the company logo, the real
+  product or chip photo, the CEO's real photo, the mascot. Always pass refs: the cover must make
+  people think of the company in one second (Microsoft's four colored squares, Meta's blue
+  infinity logo and the Muse mascot, OpenAI's black knot, Claude's orange asterisk, NVIDIA green).
+  Say in the prompt which ref is what ("the man in the first image", "the chip in the second
+  image", "the logo in the third image, glowing on the wall") and keep faces and logos exact.
+- Logos can also be added as badges on top, like on photo covers.
 - Photorealistic, high contrast, one clear subject, vertical composition, subject in the upper two
   thirds (the bottom third is covered by the headline), no text, no letters, no watermarks.
 - At most 2 generated covers per day.
+
+How to choose the cover, for every carousel. Ask two questions about the best real photo:
+1. Would someone scrolling know which company or person this is about within one second?
+2. Is it striking: a face with emotion, a dramatic moment, a surprising object?
+If both are yes, use the real photo (plus logo badge). If either is no (generic chip, server
+room, stock image, plain press render, logo on white, no usable photo), generate the cover with
+refs. Priority 1 stories about OpenAI, Anthropic, Google, Meta, Microsoft, Apple, NVIDIA or xAI
+almost always deserve a generated, brand-heavy cover unless a great real photo exists.
 
 ## Utility posts (one per day)
 

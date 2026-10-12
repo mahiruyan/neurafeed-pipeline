@@ -20,20 +20,37 @@ async function download(url, dest, minBytes = 15000) {
 // falls back to the job's cover image so a render never ships with a blank area.
 // AI-generated slide image (OpenAI image model). Needs OPENAI_API_KEY.
 // Slide field: image.generate = "a prompt describing the scene".
-async function generate(prompt, dest) {
+// image.refs: optional list of image URLs (company logo, product photo, CEO photo, mascot) the
+// model must use, so the result is recognizably about that company.
+async function generate(prompt, dest, refs = []) {
   const key = process.env.OPENAI_API_KEY;
   if (!key) throw new Error('OPENAI_API_KEY missing, cannot generate image');
-  const res = await fetch('https://api.openai.com/v1/images/generations', {
-    method: 'POST',
-    headers: { Authorization: `Bearer ${key}`, 'Content-Type': 'application/json' },
-    body: JSON.stringify({
-      model: process.env.OPENAI_IMAGE_MODEL || 'gpt-image-1',
-      prompt,
-      size: '1024x1536',
-      quality: process.env.OPENAI_IMAGE_QUALITY || 'medium',
-      n: 1,
-    }),
-  });
+  const model = process.env.OPENAI_IMAGE_MODEL || 'gpt-image-1';
+  const quality = process.env.OPENAI_IMAGE_QUALITY || 'medium';
+  const files = [];
+  for (let k = 0; k < refs.length; k++) {
+    try {
+      const f = await download(refs[k], `${dest}.ref${k}`, 500);
+      const type = f && /\.png/i.test(refs[k]) ? 'image/png' : 'image/jpeg';
+      files.push({ f, type });
+    } catch (e) { /* a missing reference is skipped */ }
+  }
+  let res;
+  if (files.length) {
+    const form = new FormData();
+    form.append('model', model);
+    form.append('prompt', prompt);
+    form.append('size', '1024x1536');
+    form.append('quality', quality);
+    files.forEach(({ f, type }, k) => form.append('image[]', new Blob([fs.readFileSync(f)], { type }), `ref${k}.${type === 'image/png' ? 'png' : 'jpg'}`));
+    res = await fetch('https://api.openai.com/v1/images/edits', { method: 'POST', headers: { Authorization: `Bearer ${key}` }, body: form });
+  } else {
+    res = await fetch('https://api.openai.com/v1/images/generations', {
+      method: 'POST',
+      headers: { Authorization: `Bearer ${key}`, 'Content-Type': 'application/json' },
+      body: JSON.stringify({ model, prompt, size: '1024x1536', quality, n: 1 }),
+    });
+  }
   const data = await res.json();
   if (!res.ok || data.error) throw new Error(`OpenAI image: ${data.error?.message || res.status}`);
   const item = data.data?.[0];
@@ -54,7 +71,7 @@ async function fetchImages(job, outDir) {
     let saved = null;
     if (s.image?.generate) {
       try {
-        saved = await generate(s.image.generate, path.join(srcDir, `${i + 1}.img`));
+        saved = await generate(s.image.generate, path.join(srcDir, `${i + 1}.img`), s.image.refs || []);
       } catch (e) {
         errors.push(`slide ${i + 1}: ${e.message}`);
       }
