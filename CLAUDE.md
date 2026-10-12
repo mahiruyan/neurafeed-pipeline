@@ -96,6 +96,45 @@ same day. Never skip a priority 1 story because other stories are already queued
   If the mascot or product image has a background, add `"cutout": true` to that badge: the
   pipeline removes the background automatically and shows it free (no circle).
 
+## AI-generated cover images
+
+A cover can use an AI-generated "idea" image instead of a photo: set `image.generate` to an
+English prompt (keep `image.url` as a fallback photo). Use it when a plain photo is weak and an
+image of the idea tells the story better (for example a robot hand typing on a keyboard covered
+in padlocks for an AI security story). Rules:
+- Never generate a real, identifiable person, and never a fake scene of a real event. Real people
+  only appear in real photos.
+- Logos and mascots are added as badges, not drawn by the model.
+- Describe a photorealistic, dramatic, high-contrast scene with one clear subject, vertical
+  composition, the subject in the upper two thirds (the bottom third is covered by the headline),
+  no text, no letters, no watermarks.
+- Add `Cover image: AI-generated` as its own line just before the `Source:` line of the caption.
+- At most 2 generated covers per day.
+
+## Utility posts (one per day)
+
+Besides news, queue one evergreen "useful" carousel per New York day (`"format": "utility"`,
+`timely: false`, `priority: 2`). These are the posts people save and share. Rotate between:
+- Prompt tips: 4 to 6 concrete prompts or prompt patterns for ChatGPT, Claude or Gemini, each with
+  what it does. Only patterns that are documented by the vendor or that you can explain clearly.
+- Tool lists: 4 to 6 real, free or freemium AI tools or websites, one per slide, each with what it
+  does in one sentence. Check every tool's official site exists and matches what you say.
+- How-to: step-by-step guide for a feature that launched recently (one step per slide).
+Cover headline states the payoff ("5 free AI tools that replace a paid design app"), no false
+claims.
+Inner slides: when a screenshot of the tool or page exists, use it with `"fit": "contain"` on that
+slide's image so it is shown whole instead of cropped.
+Caption sources: the official pages of the tools or the vendor's documentation.
+
+## Weekly roundup (Sundays)
+
+On Sunday (New York time), the first run at or after 17:00 queues `YYYY-MM-DD-week-in-ai`:
+`"format": "roundup"`, `priority: 1`, `timely: false`, cover headline like
+"What happened in AI *this week*", then one inner slide per story (6 stories maximum, so up to
+8 slides), each with the story's own photo, a short heading and one or two short paragraphs, built
+only from stories that already had jobs this week (reuse their sources). The caption lists the
+stories in one line each.
+
 ## Reels (`"type": "reel"` jobs)
 
 Mahir sends video links to the Telegram bot; they land in `inbox/links.json`

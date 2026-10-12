@@ -116,7 +116,7 @@ function text(s, img, badges) {
   }).join('');
   return `<div style="position:relative;width:1080px;height:1350px;overflow:hidden;background:#000;color:#fff;display:flex;flex-direction:column">
 <div style="position:relative;flex-grow:1;min-height:420px">
-<img src="${img}" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:${s.pos || 'center 30%'}">
+<img src="${img}" style="position:absolute;inset:0;width:100%;height:100%;${s.image?.fit === 'contain' ? 'box-sizing:border-box;padding:130px 48px 150px;object-fit:contain' : 'object-fit:cover'};object-position:${s.pos || 'center 30%'}">
 <div style="position:absolute;left:0;right:0;bottom:0;height:200px;background:linear-gradient(180deg,rgba(0,0,0,0) 0%,#000 100%)"></div>
 ${innerBadges(s, badges)}
 </div>

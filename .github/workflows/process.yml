@@ -48,6 +48,7 @@ jobs:
         run: python3 -m pip install --quiet "rembg[cpu]" pillow
       - run: node src/process.js
         env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
       - name: Upload images to the public media repo

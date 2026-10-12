@@ -18,6 +18,31 @@ async function download(url, dest, minBytes = 15000) {
 
 // Returns an array of local file paths, one per slide. A slide whose image fails
 // falls back to the job's cover image so a render never ships with a blank area.
+// AI-generated slide image (OpenAI image model). Needs OPENAI_API_KEY.
+// Slide field: image.generate = "a prompt describing the scene".
+async function generate(prompt, dest) {
+  const key = process.env.OPENAI_API_KEY;
+  if (!key) throw new Error('OPENAI_API_KEY missing, cannot generate image');
+  const res = await fetch('https://api.openai.com/v1/images/generations', {
+    method: 'POST',
+    headers: { Authorization: `Bearer ${key}`, 'Content-Type': 'application/json' },
+    body: JSON.stringify({
+      model: process.env.OPENAI_IMAGE_MODEL || 'gpt-image-1',
+      prompt,
+      size: '1024x1536',
+      quality: process.env.OPENAI_IMAGE_QUALITY || 'medium',
+      n: 1,
+    }),
+  });
+  const data = await res.json();
+  if (!res.ok || data.error) throw new Error(`OpenAI image: ${data.error?.message || res.status}`);
+  const item = data.data?.[0];
+  if (item?.b64_json) fs.writeFileSync(dest, Buffer.from(item.b64_json, 'base64'));
+  else if (item?.url) await download(item.url, dest);
+  else throw new Error('OpenAI image: empty response');
+  return dest;
+}
+
 async function fetchImages(job, outDir) {
   const srcDir = path.join(outDir, 'src');
   fs.mkdirSync(srcDir, { recursive: true });
@@ -27,7 +52,14 @@ async function fetchImages(job, outDir) {
     const s = job.slides[i];
     const urls = [].concat(s.image?.url || [], s.image?.fallback_urls || []);
     let saved = null;
-    for (const u of urls) {
+    if (s.image?.generate) {
+      try {
+        saved = await generate(s.image.generate, path.join(srcDir, `${i + 1}.img`));
+      } catch (e) {
+        errors.push(`slide ${i + 1}: ${e.message}`);
+      }
+    }
+    for (const u of saved ? [] : urls) {
       try {
         saved = await download(u, path.join(srcDir, `${i + 1}.img`));
         break;

@@ -35,7 +35,7 @@ function validateJob(job, fileId) {
   if (typeof job.sensitive !== 'boolean') p.push('sensitive must be true or false');
   (job.slides || []).forEach((s, i) => {
     if (!KINDS.has(s.kind)) p.push(`slide ${i + 1}: unknown kind "${s.kind}"`);
-    if (!s.image || !s.image.url) p.push(`slide ${i + 1}: image.url is required`);
+    if (!s.image || !(s.image.url || s.image.generate)) p.push(`slide ${i + 1}: image.url (or image.generate) is required`);
   });
   if (job.slides?.[0]?.kind !== 'cover') p.push('first slide must be a cover');
   if (job.slides?.at(-1)?.kind !== 'cta') p.push('last slide must be a cta');

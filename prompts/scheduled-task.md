@@ -22,6 +22,10 @@ never miss a major story.
 3b. Reels: read inbox/links.json. Every link not yet referenced by a job's `link_id` gets a
    Reel job this run (see the Reels section of CLAUDE.md). Open the post URL to understand it
    when you can; use Mahir's note. These count toward the daily total and come first.
+3c. Utility: if no job with `"format": "utility"` exists for today (New York date) and it is
+   11:00 New York time or later, queue one (see "Utility posts" in CLAUDE.md).
+3d. Sunday roundup: on Sunday, in the first run at or after 17:00 New York time, queue the weekly
+   roundup if it does not exist yet (see "Weekly roundup" in CLAUDE.md).
 4. Queue 1 to 3 news jobs per run (on top of Reels from the inbox). If fewer than 4 jobs exist for today and it is after 13:00
    New York time, add stories until today has at least 4. Never exceed 8 jobs per day.
 5. For each job: read the original source and at least one independent second source.
