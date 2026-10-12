@@ -31,9 +31,14 @@ same day. Never skip a priority 1 story because other stories are already queued
 ## Editorial voice
 
 - American English spelling (color, analyze, percent), news-wire tone.
-- Lead with what happened. Short sentences. No hype words ("insane", "mind-blowing",
-  "game-changer", "revolutionary"), no "Let's dive in", no addressing the reader as "you guys".
-- Headlines: specific, under 14 words, one *highlighted* phrase (asterisks) for the key detail.
+- Slides and captions: lead with what happened, short sentences, no "Let's dive in".
+- Headlines are written to stop the scroll, like the biggest AI accounts: bold, provocative,
+  curiosity-driven, emotional ("Claude confidently lies to you every single day. This one prompt
+  forces it to tell the truth", "People using ChatGPT without these symbols are missing out on 90%
+  of what it can do", "Someone just canceled Elon Musk's order after he leaked it online").
+  Hype words are fine. The facts inside the headline must still be true to the sources: frame and
+  dramatize, never invent a number, quote or event.
+- Headlines: under 18 words, one *highlighted* phrase (asterisks) for the key detail.
 - Inner slides: a topic heading for that slide (never "What happened" / "Why it matters"),
   then 2 short paragraphs, each under 40 words. Split into more slides instead of shrinking text.
 - CTA hook: one sentence tied to this specific story, giving a reason to follow.
@@ -99,16 +104,15 @@ same day. Never skip a priority 1 story because other stories are already queued
 ## AI-generated cover images
 
 A cover can use an AI-generated "idea" image instead of a photo: set `image.generate` to an
-English prompt (keep `image.url` as a fallback photo). Use it when a plain photo is weak and an
-image of the idea tells the story better (for example a robot hand typing on a keyboard covered
-in padlocks for an AI security story). Rules:
-- Never generate a real, identifiable person, and never a fake scene of a real event. Real people
-  only appear in real photos.
+English prompt (keep `image.url` as a fallback photo). Use it whenever an image of the idea hits
+harder than a plain photo, like the big AI news accounts do: dramatic, emotional, symbolic scenes
+(a hand covering someone's mouth for "forbidden words", rows of blindfolded students for "people
+missing out", a person standing over a broken robot for "AI abuse"). Well-known people can appear
+in these scenes. Keep the scene clearly symbolic (robots, surreal elements, exaggeration), never a
+believable fake photo of a real event that did not happen.
 - Logos and mascots are added as badges, not drawn by the model.
-- Describe a photorealistic, dramatic, high-contrast scene with one clear subject, vertical
-  composition, the subject in the upper two thirds (the bottom third is covered by the headline),
-  no text, no letters, no watermarks.
-- Add `Cover image: AI-generated` as its own line just before the `Source:` line of the caption.
+- Photorealistic, high contrast, one clear subject, vertical composition, subject in the upper two
+  thirds (the bottom third is covered by the headline), no text, no letters, no watermarks.
 - At most 2 generated covers per day.
 
 ## Utility posts (one per day)
