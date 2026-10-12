@@ -48,8 +48,8 @@ function summary(job) {
     }
     const outDir = path.join(ROOT, 'out', id);
     try {
-      const { paths, errors } = await fetchImages(job, outDir);
-      const files = await renderJob(job, paths, outDir);
+      const { paths, badges, errors } = await fetchImages(job, outDir);
+      const files = await renderJob(job, paths, outDir, badges);
       fs.rmSync(path.join(outDir, 'src'), { recursive: true, force: true });
       setJobState(id, { status: 'rendered', files: files.map((f) => path.relative(ROOT, f)), image_errors: errors });
       if (cfg.mode === 'auto') {

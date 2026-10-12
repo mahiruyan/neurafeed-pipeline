@@ -4,13 +4,13 @@ const path = require('path');
 
 const UA = 'NeuraFeedPipeline/0.1 (+https://neurafeedai.com; contact hello@neurafeedai.com)';
 
-async function download(url, dest) {
+async function download(url, dest, minBytes = 15000) {
   const res = await fetch(url, { headers: { 'User-Agent': UA, Accept: 'image/*' }, redirect: 'follow' });
   if (!res.ok) throw new Error(`HTTP ${res.status} for ${url}`);
   const type = res.headers.get('content-type') || '';
   if (!type.startsWith('image/')) throw new Error(`Not an image (${type}) at ${url}`);
   const buf = Buffer.from(await res.arrayBuffer());
-  if (buf.length < 15000) throw new Error(`Image too small (${buf.length} bytes) at ${url}`);
+  if (buf.length < minBytes) throw new Error(`Image too small (${buf.length} bytes) at ${url}`);
   fs.writeFileSync(dest, buf);
   return dest;
 }
@@ -38,7 +38,22 @@ async function fetchImages(job, outDir) {
   }
   const firstGood = paths.find(Boolean);
   if (!firstGood) throw new Error('No image could be downloaded for this job:\n' + errors.join('\n'));
-  return { paths: paths.map((p) => p || firstGood), errors };
+
+  // Badges are optional: a badge that fails to download is simply left out.
+  const badges = [];
+  for (let i = 0; i < job.slides.length; i++) {
+    const list = [];
+    for (let j = 0; j < (job.slides[i].badges || []).length; j++) {
+      const b = job.slides[i].badges[j];
+      try {
+        list.push(await download(b.url, path.join(srcDir, `${i + 1}-b${j + 1}.img`), 1000));
+      } catch (e) {
+        errors.push(`slide ${i + 1} badge ${j + 1}: ${e.message}`);
+      }
+    }
+    badges.push(list);
+  }
+  return { paths: paths.map((p) => p || firstGood), badges, errors };
 }
 
 module.exports = { fetchImages };

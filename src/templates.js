@@ -29,11 +29,26 @@ function headlineSize(text, base, perLine) {
   return Math.round(base * 0.74);
 }
 
-function cover(s, img) {
+// Round badges (company logos or a second face) overlaid on the photo, like news accounts use.
+// Each badge in the job: { url, fit: "contain" (logos, default) | "cover" (faces), bg }.
+function badgesHtml(s, urls, posCss, size) {
+  if (!urls || !urls.length) return '';
+  const items = urls.map((u, i) => {
+    const b = (s.badges || [])[i] || {};
+    const fit = b.fit || 'contain';
+    const pad = fit === 'contain' ? Math.round(size * 0.16) : 0;
+    return `<div style="width:${size}px;height:${size}px;border-radius:50%;box-sizing:border-box;border:6px solid ${ACC};background:${b.bg || (fit === 'contain' ? '#fff' : '#000')};overflow:hidden;box-shadow:0 8px 30px rgba(0,0,0,.45);display:flex;align-items:center;justify-content:center">
+<img src="${u}" style="width:100%;height:100%;box-sizing:border-box;padding:${pad}px;object-fit:${fit};object-position:${b.pos || 'center'}"></div>`;
+  }).join('');
+  return `<div style="position:absolute;${posCss};display:flex;gap:18px;z-index:4">${items}</div>`;
+}
+
+function cover(s, img, badges) {
   const size = s.size || headlineSize(s.headline, 88, 22);
   return `<div style="position:relative;width:1080px;height:1350px;overflow:hidden;background:#000;color:#fff">
 <img src="${img}" style="position:absolute;top:0;left:0;width:1080px;height:900px;object-fit:cover;object-position:${s.pos || 'center 30%'}">
 <div style="position:absolute;top:560px;left:0;width:1080px;height:340px;background:linear-gradient(180deg,rgba(0,0,0,0) 0%,rgba(0,0,0,.85) 70%,#000 100%)"></div>
+${badgesHtml(s, badges, `${s.badge_side === 'left' ? 'left' : 'right'}:56px;top:560px`, 230)}
 ${corner}
 <div style="position:absolute;top:840px;left:0;width:1080px;height:510px;box-sizing:border-box;padding:0 56px 52px;display:flex;flex-direction:column;align-items:center;justify-content:space-between">
 <div style="width:100%;display:flex;align-items:center;gap:24px"><div style="flex-grow:1;height:3px;background:#fff;opacity:.85"></div><img src="${logo}" style="width:60px;height:60px"><div style="flex-grow:1;height:3px;background:#fff;opacity:.85"></div></div>
@@ -42,7 +57,7 @@ ${corner}
 </div></div>`;
 }
 
-function text(s, img) {
+function text(s, img, badges) {
   const paras = (s.paras || []).map((p) => {
     const strong = typeof p === 'object' && p.strong;
     const t = typeof p === 'object' ? p.t : p;
@@ -52,6 +67,7 @@ function text(s, img) {
 <div style="position:relative;flex-grow:1;min-height:420px">
 <img src="${img}" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:${s.pos || 'center 30%'}">
 <div style="position:absolute;left:0;right:0;bottom:0;height:200px;background:linear-gradient(180deg,rgba(0,0,0,0) 0%,#000 100%)"></div>
+${badgesHtml(s, badges, `${s.badge_side === 'left' ? 'left' : 'right'}:56px;bottom:40px`, 190)}
 </div>
 ${corner}
 <div style="box-sizing:border-box;padding:4px 72px 52px;display:flex;flex-direction:column;gap:${s.gap || 22}px">
@@ -76,11 +92,11 @@ ${corner}
 </div></div>`;
 }
 
-function page(slide, imgUrl) {
+function page(slide, imgUrl, badgeUrls = []) {
   const kinds = { cover, text, cta };
   const fn = kinds[slide.kind];
   if (!fn) throw new Error(`Unknown slide kind: ${slide.kind}`);
-  return `<!doctype html><html><head><meta charset="utf-8"><style>${fontCss}</style></head><body>${fn(slide, imgUrl)}</body></html>`;
+  return `<!doctype html><html><head><meta charset="utf-8"><style>${fontCss}</style></head><body>${fn(slide, imgUrl, badgeUrls)}</body></html>`;
 }
 
 module.exports = { page, fileUrl };

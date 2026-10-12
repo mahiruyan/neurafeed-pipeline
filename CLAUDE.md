@@ -66,6 +66,13 @@ sources you actually read, or it will be skipped.
 - 3 to 8 slides. First `cover`, last `cta`. Every slide needs `image.url`.
 - `pos` (optional): CSS object-position. Use it so faces are not cut off.
 - Optional per slide: `size` (paragraph px, default 34), `hsize` (heading px), `gap`.
+- Optional per slide: `badges`, up to 2 round overlays on the photo, for the company logo or a
+  second person in the story: `[{ "url": "...", "fit": "contain" }]` (logo, white circle) or
+  `{ "url": "...", "fit": "cover", "pos": "center 20%" }` (a face). `badge_side`: `"right"`
+  (default) or `"left"`, pick the side that does not cover a face or text in the photo.
+  Use badges on the cover whenever a company or a second person is central to the story.
+  Logos: Wikimedia Commons square logo files (`File:<Company> logo.svg`), take the API
+  `thumburl` (PNG) exactly as returned.
 
 ## Images
 
