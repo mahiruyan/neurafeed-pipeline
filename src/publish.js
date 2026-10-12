@@ -12,6 +12,8 @@ const GRAPH = `https://graph.instagram.com${VERSION}`;
 const IG_USER = process.env.IG_USER_ID;
 const IG_TOKEN = process.env.IG_ACCESS_TOKEN;
 const PUBLIC_BASE = process.env.PUBLIC_IMAGE_BASE;
+// Videos are served from GitHub Pages so Instagram gets a proper video/mp4 content type.
+const VIDEO_BASE = process.env.PUBLIC_VIDEO_BASE || PUBLIC_BASE;
 
 const instagramEnabled = () => Boolean(IG_USER && IG_TOKEN && PUBLIC_BASE);
 
@@ -51,11 +53,22 @@ async function publishInstagram(job, files) {
   return { mode: 'instagram', media_id: pub.id };
 }
 
+async function waitPublic(url) {
+  // GitHub Pages needs a minute or two after a push before the file is live.
+  for (let i = 0; i < 18; i++) {
+    const r = await fetch(url, { method: 'HEAD' }).catch(() => null);
+    if (r && r.ok) return;
+    await new Promise((res) => setTimeout(res, 10000));
+  }
+  throw new Error(`Video is not reachable yet at ${url}`);
+}
+
 async function publishReel(job, files) {
-  const base = PUBLIC_BASE.replace(/\/$/, '');
+  const url = `${VIDEO_BASE.replace(/\/$/, '')}/${job.id}/${path.basename(files[0])}`;
+  await waitPublic(url);
   const c = await graph(`${IG_USER}/media`, {
     media_type: 'REELS',
-    video_url: `${base}/${job.id}/${path.basename(files[0])}`,
+    video_url: url,
     caption: job.caption,
     share_to_feed: 'true',
   });
