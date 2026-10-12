@@ -16,7 +16,7 @@ jobs:
             echo "::error::IG_USER_ID or IG_ACCESS_TOKEN secret is missing"; exit 1
           fi
           me=$(curl -s "https://graph.instagram.com/me?fields=user_id,username,account_type&access_token=$IG_ACCESS_TOKEN")
-          echo "Token belongs to: $(echo "$me" | jq -c '{username, account_type, user_id}')"
+          echo "::notice::me: $(echo "$me" | jq -c .)"
           if echo "$me" | jq -e '.error' > /dev/null; then
             echo "::error::Token rejected: $(echo "$me" | jq -r '.error.message')"; exit 1
           fi
@@ -25,5 +25,7 @@ jobs:
             echo "::warning::IG_USER_ID secret does not match the token's user_id. Expected $tid"
           fi
           limit=$(curl -s "https://graph.instagram.com/$IG_USER_ID/content_publishing_limit?fields=quota_usage,config&access_token=$IG_ACCESS_TOKEN")
-          echo "Publishing quota: $(echo "$limit" | jq -c '.data // .error.message')"
+          echo "::notice::quota: $(echo "$limit" | jq -c .)"
+          t=$(curl -s -X POST "https://graph.instagram.com/$IG_USER_ID/media" -d "image_url=https://raw.githubusercontent.com/mahiruyan/neurafeed-media/main/2026-10-12-microsoft-maia-300-ai-chip/1.jpg" -d "access_token=$IG_ACCESS_TOKEN")
+          echo "::notice::container test (not published): $(echo "$t" | jq -c .)"
           echo "OK"
