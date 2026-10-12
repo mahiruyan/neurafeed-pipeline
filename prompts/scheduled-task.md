@@ -9,11 +9,12 @@ never miss a major story.
 1. Pull the latest main. Read CLAUDE.md, config.json, every file in jobs/ and state/jobs/.
    Note which stories are already covered and how many jobs were queued today (New York date).
    Never cover a story that already has a job.
-2. Find AI stories from the last 12 hours. Check at minimum: TechCrunch AI, Ars Technica,
+2. Read leads/latest.json first (hot Reddit posts with images, latest news RSS items).
+   Then find AI stories from the last 12 hours. Check at minimum: TechCrunch AI, Ars Technica,
    Reuters and AP technology, Bloomberg technology, CNBC tech, Wired, and the official
    blogs/newsrooms of OpenAI, Anthropic, Google DeepMind, Google, Meta AI, Microsoft, Apple,
-   NVIDIA and xAI. Use Reddit (r/OpenAI, r/ChatGPT, r/ClaudeAI, r/singularity, r/artificial,
-   r/LocalLLaMA) to spot what people are talking about, then confirm with real sources.
+   NVIDIA and xAI. Reddit (via leads) shows what people are talking about; its images may be
+   used, but confirm the facts with real news sources.
 3. Priority 1 first: any major story about OpenAI, Anthropic/Claude, Google/Gemini, Meta,
    Microsoft, Apple, NVIDIA or xAI, or any story the whole AI world is discussing, MUST get a
    job this run. Then add priority 2 stories with broad US appeal (launches people can try,

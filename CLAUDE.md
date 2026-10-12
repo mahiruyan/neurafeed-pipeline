@@ -85,9 +85,18 @@ same day. Never skip a priority 1 story because other stories are already queued
   API `thumburl` PNG exactly as returned). Prefer the square symbol over a wide wordmark.
   `badge_border`: `"green"` (default), `"black"` or `"white"`, pick what reads best on that photo.
 
+## Leads
+
+`leads/latest.json` is refreshed every hour by the `scan.yml` Action: hot Reddit posts from
+AI subreddits (with score, comment count and image URLs) and the latest items from AI news
+RSS feeds. Read it first in every run. Reddit shows what people care about; confirm the facts
+with real sources before writing.
+
 ## Images
 
-Order of preference: images inside the source article, official company press images,
+Order of preference: images inside the source article, images from the Reddit post about the
+story (`i.redd.it` / `preview.redd.it` URLs in leads, credit `via r/<subreddit>`), official
+company press images,
 then Wikimedia Commons photos of the people or products named in the story
 (use the Commons API: `https://commons.wikimedia.org/w/api.php?action=query&format=json&generator=search&gsrnamespace=6&gsrsearch=<query>&prop=imageinfo&iiprop=url|size&iiurlwidth=1920`
 and copy `thumburl` exactly as returned). Never edit the size in a Wikimedia thumbnail URL:
