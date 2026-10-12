@@ -1,0 +1,43 @@
+name: Telegram owner setup
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: ['.github/workflows/telegram-whoami.yml']
+
+permissions:
+  contents: write
+
+concurrency:
+  group: pipeline-state
+  cancel-in-progress: false
+
+jobs:
+  whoami:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Record who sent /start to the bot
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+        run: |
+          if [ -z "$TELEGRAM_BOT_TOKEN" ]; then echo "::error::TELEGRAM_BOT_TOKEN missing"; exit 1; fi
+          me=$(curl -s "https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/getMe" | jq -c '{ok, username: .result.username}')
+          echo "Bot: $me"
+          upd=$(curl -s "https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/getUpdates")
+          owner=$(echo "$upd" | jq -c '[.result[] | .message | select(.text != null and (.text | startswith("/start"))) | {chat_id: .chat.id, username: .from.username, first_name: .from.first_name}] | first')
+          echo "Owner: $owner"
+          if [ "$owner" = "null" ] || [ -z "$owner" ]; then echo "::error::No /start message found. Send /start to the bot and run again."; exit 1; fi
+          mkdir -p state
+          echo "$owner" | jq '.' > state/telegram_owner.json
+          chat=$(echo "$owner" | jq -r '.chat_id')
+          curl -s -o /dev/null "https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage" \
+            --data-urlencode "chat_id=${chat}" \
+            --data-urlencode "text=✅ NeuraFeed Desk connected. Send me any video or post link (X, Instagram, Reddit, YouTube, TikTok) and I'll queue it for a Reel. You can add a note after the link."
+          git config user.name "neurafeed-bot"
+          git config user.email "neurafeed-bot@users.noreply.github.com"
+          git add state/telegram_owner.json
+          git diff --cached --quiet || git commit -m "telegram: record owner chat [skip ci]"
+          git pull --rebase --autostash origin main
+          git push
