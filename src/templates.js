@@ -43,6 +43,11 @@ function badgeItems(s, urls, size) {
   return urls.map((u, i) => {
     const b = (s.badges || [])[i] || {};
     const fit = b.fit || 'contain';
+    // shape "free": a transparent PNG (mascot, product cut-out) sits on the photo with no circle.
+    if (b.shape === 'free') {
+      const fs = Math.round(size * (b.scale || 1.25));
+      return `<img src="${u}" style="width:${fs}px;height:${fs}px;object-fit:contain;filter:drop-shadow(0 12px 30px rgba(0,0,0,.6));flex-shrink:0">`;
+    }
     const pad = fit === 'contain' ? Math.round(size * 0.18) : 0;
     return `<div style="width:${size}px;height:${size}px;border-radius:50%;box-sizing:border-box;border:${Math.round(size / 28)}px solid ${border};background:${b.bg || (fit === 'contain' ? '#fff' : '#000')};overflow:hidden;box-shadow:0 10px 36px rgba(0,0,0,.5);flex-shrink:0">
 <img src="${u}" style="width:100%;height:100%;box-sizing:border-box;padding:${pad}px;object-fit:${fit};object-position:${b.pos || 'center'};display:block"></div>`;
