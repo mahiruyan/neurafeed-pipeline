@@ -5,9 +5,31 @@
       "status": "render_failed",
       "at": "2026-10-12T17:23:41.809Z",
       "by": "system"
+    },
+    {
+      "status": "rendered",
+      "at": "2026-10-12T17:25:32.127Z",
+      "by": "system"
+    },
+    {
+      "status": "approved",
+      "at": "2026-10-12T17:25:32.128Z",
+      "by": "auto: reel with credited source"
+    },
+    {
+      "status": "test_done",
+      "at": "2026-10-12T17:25:37.082Z",
+      "by": "test job, not published"
     }
   ],
-  "status": "render_failed",
+  "status": "test_done",
   "error": "Command failed: yt-dlp --no-playlist --no-progress --restrict-filenames -f bv*[height<=1920][vcodec^=avc1]+ba[acodec^=mp4a]/bv*[height<=1920]+ba/b[height<=1920]/b --merge-output-format mp4 -o /home/runner/work/neurafeed-pipeline/neurafeed-pipeline/out/test-reel-check/src/source.%(ext)s https://upload.wikimedia.org/wikipedia/commons/2/22/Robot_package_handling.webm\nERROR: [generic] Robot_package_handling: Unable to download webpage: HTTP Error 403: Forbidden (caused by <HTTPError 403: Forbidden>)\n",
-  "updated_at": "2026-10-12T17:23:41.809Z"
+  "updated_at": "2026-10-12T17:25:37.082Z",
+  "files": [
+    "out/test-reel-check/reel.mp4"
+  ],
+  "image_errors": [
+    "layout framed, source 1600x970, 8s"
+  ],
+  "by": "test job, not published"
 }
