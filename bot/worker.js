@@ -162,7 +162,7 @@ Sadece bu verilere dayan, sayı uydurma. Veri yoksa söyle. Analizde neyin işe 
   const res = await fetch('https://api.deepseek.com/chat/completions', {
     method: 'POST',
     headers: { Authorization: `Bearer ${env.DEEPSEEK_API_KEY}`, 'Content-Type': 'application/json' },
-    body: JSON.stringify({ model: env.DEEPSEEK_MODEL || 'deepseek-chat', temperature: 0.4, max_tokens: 900, messages: [{ role: 'system', content: system }, { role: 'user', content: question }] }),
+    body: JSON.stringify({ model: env.DEEPSEEK_MODEL || 'deepseek-v4-pro', temperature: 0.4, max_tokens: 900, messages: [{ role: 'system', content: system }, { role: 'user', content: question }] }),
   });
   const d = await res.json();
   if (!res.ok) throw new Error(`DeepSeek: ${d.error?.message || res.status}`);
