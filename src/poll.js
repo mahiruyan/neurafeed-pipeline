@@ -52,7 +52,11 @@ async function readTelegram(cfg) {
 (async () => {
   const cfg = config();
   // Telegram problems must never block publishing.
-  if (tg.enabled()) await readTelegram(cfg).catch((e) => console.log(`::warning::Telegram read failed: ${e.message}`));
+  // When the Cloudflare bot is live (a webhook is set) it receives all Telegram updates itself.
+  if (tg.enabled()) {
+    const hook = await fetch(`https://api.telegram.org/bot${process.env.TELEGRAM_BOT_TOKEN}/getWebhookInfo`).then((r) => r.json()).catch(() => null);
+    if (!hook?.result?.url) await readTelegram(cfg).catch((e) => console.log(`::warning::Telegram read failed: ${e.message}`));
+  }
 
   const now = new Date();
   for (const st of allJobStates()) {
