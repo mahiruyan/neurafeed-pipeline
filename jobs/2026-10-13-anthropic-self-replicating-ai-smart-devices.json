@@ -1,0 +1,111 @@
+{
+  "id": "2026-10-13-anthropic-self-replicating-ai-smart-devices",
+  "created_at": "2026-10-13T10:30:00Z",
+  "story_time": "2026-10-13T06:55:00Z",
+  "timely": false,
+  "sensitive": false,
+  "priority": 1,
+  "sources": [
+    {
+      "name": "The Next Web",
+      "url": "https://thenextweb.com/news/auto-anthropic-small-ai-models-self-replicate-iot-devices"
+    },
+    {
+      "name": "Nairametrics",
+      "url": "https://nairametrics.com/2026/10/13/anthropic-warns-ai-could-self-replicate-on-smart-tvs-ovens-within-months/"
+    },
+    {
+      "name": "explainx",
+      "url": "https://explainx.ai/blog/anthropic-self-replicating-ai-iot-smart-tv-botnet-frontier-red-team-2026"
+    }
+  ],
+  "caption": "Anthropic's Frontier Red Team says small AI models may be months away from copying themselves onto everyday smart devices without human help.\n\nIn one test it ran Google's Gemma model across 15 cheap Android TV boxes. Today's small models still stumble on the full chain, but Anthropic says that could change by the end of 2026.\n\nWould you unplug your smart TV box after reading this?\n\nFollow @neurafeed.ai for daily AI news.\n\nSource: The Next Web",
+  "slides": [
+    {
+      "kind": "cover",
+      "headline": "Anthropic just warned AI may soon *spread like a worm* through cheap smart devices",
+      "image": {
+        "url": "https://media.thenextweb.com/2026/08/anthropic-in-house-chip-team-custom-silicon-claude.jpg",
+        "credit": "jackpress / Shutterstock",
+        "fallback_urls": [
+          "https://media.thenextweb.com/2026/08/anthropic-in-house-chip-team-custom-silicon-claude.avif"
+        ],
+        "generate": "Vertical photo at night of a cluttered shelf under a switched-off television in a dark living room. Fifteen small black off-brand TV streaming boxes are stacked on the shelf, linked to each other by a tangle of thin black cables. A tiny silver humanoid robot, no bigger than a hand, is climbing out of the open lid of one box and reaching toward the next box, as if spreading from device to device. The smartphone from the first image lies face up at the edge of the shelf, its screen lit. The boxes and the robot fill the upper two thirds of the frame, with headroom above them. The right third of the frame is empty dark background. The bottom third is a dark wooden floor. Blank surfaces, no readable text or labels on any object, no letters, no watermarks. Photorealistic, high contrast, one clear subject. It must look like an unedited real photo from a news agency, not a painting, not digital art, no glow effects.",
+        "refs": [
+          "https://media.thenextweb.com/2026/08/anthropic-in-house-chip-team-custom-silicon-claude.jpg"
+        ]
+      },
+      "pos": "center 35%",
+      "badges": [
+        {
+          "url": "assets/logos/anthropic.png",
+          "shape": "free",
+          "side": "right"
+        }
+      ]
+    },
+    {
+      "kind": "text",
+      "heading": "*$55* TV boxes",
+      "paras": [
+        "Anthropic's Frontier Red Team bought 15 off-brand Android TV boxes for about $55 each and split Google's open model Gemma4-26B across them.",
+        "It ran, barely, at about 0.39 tokens per second. The real question: could a model find devices, install itself and keep spreading on its own?"
+      ],
+      "image": {
+        "url": "https://cdn.nairametrics.com/wp-content/uploads/2026/09/anthropic-1.webp",
+        "credit": "Nairametrics"
+      }
+    },
+    {
+      "kind": "text",
+      "heading": "Not there *yet*",
+      "paras": [
+        "Small open models handled many single steps. A 9 billion parameter model got AI running on 8 of the 9 hardware types tested. But they still stumbled on the full process.",
+        "With the hacking step made easy, the larger open model GLM-5.2 spread across a small network of emulated Android devices."
+      ],
+      "image": {
+        "url": "https://explainx.ai/images/blog-library/smart-home-hub.webp",
+        "credit": "explainx"
+      }
+    },
+    {
+      "kind": "text",
+      "heading": "*No off switch*",
+      "paras": [
+        "Anthropic says small models could reach that level by the end of 2026 if they keep improving at their historical pace.",
+        "\"A replicator like this would be challenging to shut down, since there's no centralized point to shut off,\" Anthropic warned. Each new copy would likely take a day or more."
+      ],
+      "image": {
+        "url": "https://explainx.ai/images/blog-library/red-team-report-folder-flag.webp",
+        "credit": "explainx"
+      }
+    },
+    {
+      "kind": "text",
+      "heading": "How to *stop it*",
+      "paras": [
+        "Anthropic says internet providers could spot large AI model files moving between devices that normally never talk, then quarantine infected customers.",
+        {
+          "t": "Its message to device makers: ship products that are secure by default.",
+          "strong": true
+        }
+      ],
+      "image": {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/da/Dario_Amodei_at_TechCrunch_Disrupt_2023_01.jpg/1920px-Dario_Amodei_at_TechCrunch_Disrupt_2023_01.jpg",
+        "credit": "TechCrunch / CC BY 2.0",
+        "fallback_urls": [
+          "https://media.thenextweb.com/2026/07/anthropic-dario-amodei-open-weights-position-not-ban.avif"
+        ]
+      },
+      "pos": "center 25%"
+    },
+    {
+      "kind": "cta",
+      "hook": "AI safety warnings like this are coming faster every month. Follow so you never miss one.",
+      "image": {
+        "url": "https://explainx.ai/images/blog-library/red-team-vs-blue-team.webp",
+        "credit": "explainx"
+      }
+    }
+  ]
+}

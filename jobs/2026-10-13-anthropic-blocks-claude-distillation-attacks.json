@@ -1,0 +1,110 @@
+{
+  "id": "2026-10-13-anthropic-blocks-claude-distillation-attacks",
+  "created_at": "2026-10-13T10:30:00Z",
+  "story_time": "2026-10-12T21:11:00Z",
+  "timely": false,
+  "sensitive": false,
+  "priority": 1,
+  "sources": [
+    {
+      "name": "Reuters via Yahoo Tech",
+      "url": "https://tech.yahoo.com/ai/claude/articles/anthropic-says-safeguards-sharply-reduce-010959967.html"
+    },
+    {
+      "name": "Reuters via Investing.com",
+      "url": "https://www.investing.com/news/stock-market-news/anthropic-says-new-safeguards-sharply-reduce-ai-distillation-attacks-4945295"
+    },
+    {
+      "name": "ANI",
+      "url": "https://www.aninews.in/news/business/anthropic-strengthens-defences-against-distillation-attacks-against-claude-cuts-data-harvesting-by-upto-9920261013104432"
+    },
+    {
+      "name": "Analytics Insight",
+      "url": "https://www.analyticsinsight.net/news/anthropic-claude-security-data-harvesting-drops-by-up-to-99"
+    }
+  ],
+  "caption": "Anthropic says new safeguards cut the data harvested from Claude in distillation attacks by about 90% to 99%.\n\nIt named Chinese startup Z.ai as one alleged distiller and says it has shut down tens of thousands of linked accounts.\n\nShould copying another lab's AI be treated like theft?\n\nFollow @neurafeed.ai for daily AI news.\n\nSource: Reuters · Photo: Carlos Barria / Reuters",
+  "slides": [
+    {
+      "kind": "cover",
+      "headline": "Anthropic says rivals were secretly copying Claude. Its new defenses cut that by *up to 99%*",
+      "image": {
+        "url": "https://s.yimg.com/lo/mysterio/api/b5f3af16899daa49c3c220b572cde9f245a12564ba567ac4a125354b28746d25/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_jpg/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Freuters.com%2F99e1ebd6226a748e8728828fe06808e6.jpg",
+        "credit": "Carlos Barria / Reuters",
+        "fallback_urls": [
+          "https://content-media.investing.com/trkd-images/LYNXMPEM9C02Y_L.jpg"
+        ]
+      },
+      "pos": "center 35%",
+      "badges": [
+        {
+          "url": "assets/logos/claude.png",
+          "shape": "free"
+        }
+      ]
+    },
+    {
+      "kind": "text",
+      "heading": "What is *distillation*?",
+      "paras": [
+        "In a distillation attack, a rival uses networks of fraudulent accounts to copy a frontier model's skills at a fraction of the cost and time.",
+        "\"The most valuable kind of data for this purpose are transcripts of Claude's reasoning,\" Anthropic wrote."
+      ],
+      "image": {
+        "url": "https://d3lzcn6mbbadaf.cloudfront.net/media/details/ANI-20261013051136.jpg",
+        "credit": "Anthropic via ANI"
+      }
+    },
+    {
+      "kind": "text",
+      "heading": "Locking up *the reasoning*",
+      "paras": [
+        "The new safeguards restrict access to Claude's reasoning, make proxy networks harder to use and add a two-stage classifier that blocks extraction attempts.",
+        "Anthropic says reasoning tokens extracted by distillers are now 10 to 100 times lower than before, with a false positive rate under 0.1%."
+      ],
+      "image": {
+        "url": "https://bsmedia.business-standard.com/_media/bs/img/article/2026-07/31/thumb/fitandfill/1200X628/1785486049-3662.JPG",
+        "credit": "Reuters"
+      }
+    },
+    {
+      "kind": "text",
+      "heading": "A Chinese lab *named*",
+      "paras": [
+        "Anthropic cited Chinese startup Z.ai, also known as Zhipu, saying it tried to distill Claude while building its GLM-5.3 model. Z.ai did not immediately respond to Reuters.",
+        "Anthropic says it has shut down tens of thousands of accounts linked to distillation campaigns."
+      ],
+      "image": {
+        "url": "https://media.thenextweb.com/2026/07/claude-cowork-sandbox-escape-mac-files-sharedroot.avif",
+        "credit": "The Next Web"
+      }
+    },
+    {
+      "kind": "text",
+      "heading": "A *costly* fix",
+      "paras": [
+        "Anthropic says the measures cost it significant revenue and turned away trillions of tokens of malicious traffic.",
+        {
+          "t": "Now it wants other AI labs and cloud platforms to join the fight.",
+          "strong": true
+        }
+      ],
+      "image": {
+        "url": "https://media.thenextweb.com/2026/07/anthropic-dario-amodei-open-weights-position-not-ban.avif",
+        "credit": "The Next Web",
+        "fallback_urls": [
+          "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/da/Dario_Amodei_at_TechCrunch_Disrupt_2023_01.jpg/1920px-Dario_Amodei_at_TechCrunch_Disrupt_2023_01.jpg"
+        ]
+      },
+      "pos": "center 25%"
+    },
+    {
+      "kind": "cta",
+      "hook": "The race to copy frontier AI is heating up. Follow to see who gets caught next.",
+      "image": {
+        "url": "https://media.assettype.com/analyticsinsight%2F2026-10-13%2Fahrackx5%2FAnthropic-says-new-safeguards-sharply-reduce-AI-distillation-attacks.png?w=1200&ar=40%3A21&auto=format%2Ccompress&ogImage=true&mode=crop&enlarge=true&overlay=false&overlay_position=bottom&overlay_width=100",
+        "credit": "Analytics Insight"
+      }
+    }
+  ]
+}
