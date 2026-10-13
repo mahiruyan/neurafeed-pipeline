@@ -9,3 +9,8 @@ DEEPSEEK_MODEL = "deepseek-v4-pro"
 
 [triggers]
 crons = ["*/5 * * * *"]
+
+# Filled in by the deploy workflow (it creates the namespace on the first run).
+[[kv_namespaces]]
+binding = "KV"
+id = "__KV_ID__"

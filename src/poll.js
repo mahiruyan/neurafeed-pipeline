@@ -1,7 +1,7 @@
 // Runs every few minutes: reads Telegram button presses, applies the night rule,
 // expires stale news, respects the daily cap and publishes approved posts.
 const path = require('path');
-const { ROOT, setJobState, allJobStates, getTelegram, setTelegram, loadJob, config } = require('./state');
+const { ROOT, setJobState, allJobStates, getTelegram, setTelegram, loadJob, config, writeSummary } = require('./state');
 const rules = require('./rules');
 const tg = require('./telegram');
 const { publish } = require('./publish');
@@ -48,6 +48,8 @@ async function readTelegram(cfg) {
   }
   setTelegram(t);
 }
+
+process.on('beforeExit', () => { try { writeSummary(); } catch (e) { console.log(`summary failed: ${e.message}`); } });
 
 (async () => {
   const cfg = config();

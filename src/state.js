@@ -37,4 +37,22 @@ const setTelegram = (d) => writeJson(telegramPath, d);
 const loadJob = (id) => readJson(path.join(ROOT, 'jobs', `${id}.json`), null);
 const config = () => readJson(path.join(ROOT, 'config.json'), {});
 
-module.exports = { ROOT, getJobState, setJobState, allJobStates, getTelegram, setTelegram, loadJob, config, readJson };
+// One small file the Telegram bot reads to know the queue (last 4 days of jobs).
+function writeSummary() {
+  const cutoff = Date.now() - 4 * 864e5;
+  const rows = allJobStates()
+    .filter((s) => /^\d{4}-\d{2}-\d{2}-/.test(s.id) && new Date(s.updated_at || 0).getTime() > cutoff)
+    .map((s) => {
+      const j = loadJob(s.id) || {};
+      return {
+        id: s.id, status: s.status, posted_at: s.posted_at || null, post_at: j.post_at || null,
+        priority: j.priority || 2, format: j.type === 'reel' ? 'reel' : (j.format || 'news'),
+        headline: String(j.slides?.[0]?.headline || j.hook || '').replace(/\*/g, ''),
+        from_link: Boolean(j.link_id), error: s.status === 'posted' ? null : (s.error || null),
+      };
+    })
+    .sort((a, b) => a.id.localeCompare(b.id));
+  writeJson(path.join(STATE, 'summary.json'), { updated_at: new Date().toISOString(), jobs: rows });
+}
+
+module.exports = { ROOT, getJobState, setJobState, allJobStates, getTelegram, setTelegram, loadJob, config, readJson, writeSummary };

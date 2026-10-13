@@ -1,7 +1,7 @@
 // Runs when new job files land in jobs/: download images, render, send for approval.
 const fs = require('fs');
 const path = require('path');
-const { ROOT, getJobState, setJobState, config } = require('./state');
+const { ROOT, getJobState, setJobState, config, writeSummary } = require('./state');
 const { autoDecision } = require('./rules');
 
 const cfg = config();
@@ -38,7 +38,7 @@ function summary(job) {
 
 (async () => {
   const ids = newJobIds();
-  if (!ids.length) return console.log('No new jobs.');
+  if (!ids.length) { writeSummary(); return console.log('No new jobs.'); }
   for (const id of ids) {
     const job = JSON.parse(fs.readFileSync(path.join(ROOT, 'jobs', `${id}.json`), 'utf8'));
     const problems = validateJob(job, id);
@@ -95,4 +95,5 @@ function summary(job) {
       if (tg.enabled()) await tg.sendMessage(`⚠️ Render failed for ${id}:\n${String(e.message || e).slice(0, 3500)}`);
     }
   }
+  writeSummary();
 })().catch((e) => { console.error(e); process.exit(1); });

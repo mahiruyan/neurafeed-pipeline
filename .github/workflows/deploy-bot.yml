@@ -31,6 +31,21 @@ jobs:
         env:
           T: ${{ secrets.TELEGRAM_BOT_TOKEN }}
         run: echo "WEBHOOK_SECRET=$(printf '%s' "$T" | sha256sum | cut -c1-48)" >> "$GITHUB_ENV"
+      - name: Storage for chat memory (Cloudflare KV)
+        if: steps.check.outputs.ready == 'true'
+        working-directory: bot
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+        run: |
+          api="https://api.cloudflare.com/client/v4/accounts/$CLOUDFLARE_ACCOUNT_ID/storage/kv/namespaces"
+          id=$(curl -s -H "Authorization: Bearer $CLOUDFLARE_API_TOKEN" "$api?per_page=100" | jq -r '.result[] | select(.title=="neurafeed-bot-kv") | .id' | head -1)
+          if [ -z "$id" ]; then
+            id=$(curl -s -X POST -H "Authorization: Bearer $CLOUDFLARE_API_TOKEN" -H "Content-Type: application/json" -d '{"title":"neurafeed-bot-kv"}' "$api" | jq -r '.result.id')
+          fi
+          [ -n "$id" ] && [ "$id" != "null" ] || { echo "::error::could not create KV namespace"; exit 1; }
+          sed -i "s/__KV_ID__/$id/" wrangler.toml
+          echo "::notice::KV namespace $id"
       - name: Deploy to Cloudflare Workers
         id: deploy
         if: steps.check.outputs.ready == 'true'
