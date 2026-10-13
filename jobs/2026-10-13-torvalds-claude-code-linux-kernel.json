@@ -1,0 +1,108 @@
+{
+  "id": "2026-10-13-torvalds-claude-code-linux-kernel",
+  "created_at": "2026-10-13T12:20:00Z",
+  "story_time": "2026-10-12T00:16:00Z",
+  "timely": false,
+  "sensitive": false,
+  "priority": 1,
+  "sources": [
+    {
+      "name": "Phoronix",
+      "url": "https://www.phoronix.com/news/Linus-Torvalds-Claude-Code"
+    },
+    {
+      "name": "Startup Fortune",
+      "url": "https://startupfortune.com/linus-torvalds-used-claude-code-to-rewrite-how-linux-reads-cached-files/"
+    },
+    {
+      "name": "TechBooky",
+      "url": "https://www.techbooky.com/linus-torvalds-uses-claude-code-on-experimental-linux-kernel-patch/"
+    },
+    {
+      "name": "BigGo Finance",
+      "url": "https://finance.biggo.com/news/000743d8-de85-4bc5-aa0d-c8a60a5b842a"
+    }
+  ],
+  "caption": "Linus Torvalds posted an experimental Linux kernel patch series built with Claude Code under his direction.\nIn his laptop tests, small reads from eight threads jumped from about 10 million to more than 30 million per second.\nThe patches are not merged yet.\n\nWould you trust AI-assisted code in the Linux kernel?\n\nFollow @neurafeed.ai for daily AI news.\n\nSource: Phoronix",
+  "slides": [
+    {
+      "kind": "cover",
+      "headline": "Linux creator Linus Torvalds just used *Claude Code* to rework a core part of Linux",
+      "image": {
+        "url": "https://d1s6vdzy36jczj.cloudfront.net/wp-content/uploads/2026/10/12175157/Cohen-Linus-Torvalds.webp",
+        "credit": "TechBooky",
+        "fallback_urls": [
+          "https://www.neoteo.com/image_resizer/1174102/w/1200/h/null/null/linus-torvalds-used-claude-code-on-an-experimental-linux-patch.webp"
+        ]
+      },
+      "pos": "center 25%",
+      "badges": [
+        {
+          "url": "assets/logos/claude.png",
+          "shape": "free"
+        }
+      ]
+    },
+    {
+      "kind": "text",
+      "heading": "A branch *\"with LLM\"*",
+      "paras": [
+        "A new branch, noref-filemap-read-with-llm, appeared in Torvalds' personal Linux repository, where he usually keeps only the master branch.",
+        "Phoronix spotted it first. The eight-patch series went to the kernel mailing list on October 12."
+      ],
+      "image": {
+        "url": "https://www.phoronix.net/image.php?id=2026&image=linux_llm_branch",
+        "credit": "Phoronix",
+        "fit": "contain"
+      }
+    },
+    {
+      "kind": "text",
+      "heading": "*Under my direction*",
+      "paras": [
+        "Torvalds' patch message says the code, test programs, review and first draft of the text were done with Claude Code \"under my direction.\"",
+        "He added that the measurements were run on his own machine."
+      ],
+      "image": {
+        "url": "https://startupfortune.com/wp-content/uploads/2026/10/claude-code-linux-kernel-linus-torvalds.jpg",
+        "credit": "Startup Fortune"
+      }
+    },
+    {
+      "kind": "text",
+      "heading": "*3x* faster small reads",
+      "paras": [
+        "The patches target slowdowns when many threads make tiny reads from the same file, by skipping folio reference counting.",
+        "On his laptop, eight threads went from about 10 million to more than 30 million reads per second."
+      ],
+      "image": {
+        "url": "https://www.phoronix.net/image.php?id=2026&image=linus_llm_performance",
+        "credit": "Phoronix",
+        "fit": "contain"
+      }
+    },
+    {
+      "kind": "text",
+      "heading": "Not merged *yet*",
+      "paras": [
+        "The patches are experimental and not in mainline Linux. They could be candidates for the Linux 7.4 merge window.",
+        {
+          "t": "The creator of Linux is now openly crediting AI in his kernel work.",
+          "strong": true
+        }
+      ],
+      "image": {
+        "url": "https://www.neoteo.com/image_resizer/1174110/w/1280/h/720/resize/post_hero.jpg",
+        "credit": "NeoTeo"
+      }
+    },
+    {
+      "kind": "cta",
+      "hook": "If Linus Torvalds is coding with Claude, your workflow could be next. Follow for daily AI news.",
+      "image": {
+        "url": "https://www.neoteo.com/image_resizer/1174102/w/1200/h/null/null/linus-torvalds-used-claude-code-on-an-experimental-linux-patch.webp",
+        "credit": "NeoTeo"
+      }
+    }
+  ]
+}
