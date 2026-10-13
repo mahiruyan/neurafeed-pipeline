@@ -172,6 +172,14 @@ Mahir sends links to the Telegram bot; they land in `inbox/links.json`
 These are Mahir's own picks: priority 1, and always `"review": true` (he gets a preview on
 Telegram and approves before it posts).
 
+For links you cannot open yourself (Instagram, Threads), the bot saves what the post shows in
+`preview` on the inbox item: `title`, `text` (the caption) and `image_file` (the post's cover
+image, for example `inbox/previews/link-....jpg`). Read the caption and open the image file to see
+the post. Make our own carousel on that topic from the original sources (search for them). The
+cover may follow the same idea and layout as their cover (which elements: a person, a logo, a
+mascot, a product, where they sit), built with our own images (real photos or a generated cover
+with refs) and our own headline. Never reuse their image, their text or their exact headline.
+
 Instagram, Threads and some sites cannot be opened from here. If you cannot read a link, use
 Mahir's note and a web search to find what the post is about and the original news source, and
 build the job from that. Never screenshot or copy another account's post or design: always make

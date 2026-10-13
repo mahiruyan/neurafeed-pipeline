@@ -22,6 +22,9 @@ jobs:
     timeout-minutes: 5
     steps:
       - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
       - name: Add link
         env:
           TEXT: ${{ inputs.text }}
@@ -29,6 +32,8 @@ jobs:
           MID: ${{ inputs.message_id }}
           DATE: ${{ inputs.date }}
         run: node -e "const a=require('./src/inbox').addFromMessage(process.env.TEXT,(process.env.EXTRA||'').split(' ').filter(Boolean),process.env.MID,Number(process.env.DATE));console.log(JSON.stringify(a))"
+      - name: Read what the link shows (caption, cover image)
+        run: node src/linkpreview.js
       - name: Save
         run: |
           git config user.name "neurafeed-bot"
