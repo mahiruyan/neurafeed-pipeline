@@ -65,9 +65,14 @@
       "status": "approved",
       "at": "2026-10-12T21:03:02.313Z",
       "by": "re-queued after Meta account block"
+    },
+    {
+      "status": "posted",
+      "at": "2026-10-13T22:16:03.161Z",
+      "by": "system"
     }
   ],
-  "status": "approved",
+  "status": "posted",
   "files": [
     "out/2026-10-12-google-fitbit-edge-launch/1.jpg",
     "out/2026-10-12-google-fitbit-edge-launch/2.jpg",
@@ -76,8 +81,13 @@
     "out/2026-10-12-google-fitbit-edge-launch/5.jpg"
   ],
   "image_errors": [],
-  "updated_at": "2026-10-12T21:03:02.313Z",
+  "updated_at": "2026-10-13T22:16:03.161Z",
   "by": "re-queued after Meta account block",
   "error": "Instagram 17841477983419365/media: API access blocked.",
-  "attempts": 0
+  "attempts": 0,
+  "posted_at": "2026-10-13T22:16:03.160Z",
+  "publish": {
+    "mode": "instagram",
+    "media_id": "18145586596571091"
+  }
 }
