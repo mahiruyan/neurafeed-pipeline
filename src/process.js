@@ -65,14 +65,14 @@ function summary(job) {
       }
       fs.rmSync(path.join(outDir, 'src'), { recursive: true, force: true });
       setJobState(id, { status: 'rendered', files: files.map((f) => path.relative(ROOT, f)), image_errors: errors });
-      if (cfg.mode === 'auto' && job.sensitive && !job.owner_approved && tg.enabled()) {
-        // Sensitive stories are never posted on their own: Mahir decides with a button.
+      if (cfg.mode === 'auto' && (job.review || job.sensitive) && !job.owner_approved && tg.enabled()) {
+        // Sensitive stories and posts made from Mahir's links wait for his OK on Telegram.
         await tg.sendAlbum(preview);
-        const msg = await tg.sendMessage(`⚠️ Sensitive story, needs your OK\n\n${summary(job)}`, [[
+        const msg = await tg.sendMessage(`${job.review ? '👀 Your link is ready. Post it?' : '⚠️ Sensitive story, needs your OK'}\n\n${summary(job)}`, [[
           { text: '✅ Approve', callback_data: `ok:${id}` },
           { text: '❌ Reject', callback_data: `no:${id}` },
         ]]);
-        setJobState(id, { status: 'pending', sent_at: new Date().toISOString(), message_id: msg.message_id, by: 'sensitive, waiting for Mahir' });
+        setJobState(id, { status: 'pending', sent_at: new Date().toISOString(), message_id: msg.message_id, by: job.review ? 'from your link, waiting for Mahir' : 'sensitive, waiting for Mahir' });
       } else if (cfg.mode === 'auto') {
         const d = autoDecision(job, cfg);
         setJobState(id, { status: d.ok ? 'approved' : 'skipped', by: d.reason });

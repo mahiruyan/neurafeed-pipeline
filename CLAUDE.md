@@ -169,7 +169,16 @@ stories in one line each.
 Mahir sends links to the Telegram bot; they land in `inbox/links.json`
 (`{ id, url, note, format, received_at }`). Every run, turn each link that no job references yet
 (check `link_id` in jobs/) into exactly one job with `"link_id"` set, before any other work.
-These are Mahir's own picks: priority 1, posted in the next window.
+These are Mahir's own picks: priority 1, and always `"review": true` (he gets a preview on
+Telegram and approves before it posts).
+
+Instagram, Threads and some sites cannot be opened from here. If you cannot read a link, use
+Mahir's note and a web search to find what the post is about and the original news source, and
+build the job from that. Never screenshot or copy another account's post or design: always make
+our own NeuraFeed version from the original sources. If you still cannot tell what it is about,
+do not guess: append `{ "link_id": "...", "url": "...", "reason": "..." }` to
+`inbox/skipped.json` (create it as a JSON array if missing) and commit it with the jobs, so Mahir
+is told on Telegram.
 
 Which format (`format` field, from a word he wrote anywhere in the message):
 - `reel`: a Reel job (below).

@@ -58,6 +58,20 @@ async function readTelegram(cfg) {
     if (!hook?.result?.url) await readTelegram(cfg).catch((e) => console.log(`::warning::Telegram read failed: ${e.message}`));
   }
 
+  // Links the news desk could not turn into a post: tell Mahir why.
+  if (tg.enabled()) {
+    const fs = require('fs');
+    const f = path.join(ROOT, 'inbox', 'skipped.json');
+    let skipped = [];
+    try { skipped = JSON.parse(fs.readFileSync(f, 'utf8')); } catch { /* none */ }
+    let changed = false;
+    for (const sk of skipped.filter((x) => !x.notified)) {
+      await tg.sendMessage(`🤷 I could not make a post from your link:\n${sk.url || sk.link_id}\nWhy: ${sk.reason}\nTip: send the original news link, or add what it is about in your note.`).catch(() => {});
+      sk.notified = true; changed = true;
+    }
+    if (changed) fs.writeFileSync(f, JSON.stringify(skipped, null, 2) + '\n');
+  }
+
   const now = new Date();
   for (const st of allJobStates()) {
     const job = loadJob(st.id);
