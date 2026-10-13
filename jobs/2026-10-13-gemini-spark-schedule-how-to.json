@@ -1,0 +1,107 @@
+{
+  "id": "2026-10-13-gemini-spark-schedule-how-to",
+  "format": "utility",
+  "created_at": "2026-10-13T16:10:00Z",
+  "story_time": "2026-10-12T22:30:00Z",
+  "timely": false,
+  "sensitive": false,
+  "priority": 2,
+  "sources": [
+    { "name": "Google Gemini Apps Help: schedules in Gemini Spark", "url": "https://support.google.com/gemini/answer/17094710?hl=en&co=GENIE.Platform%3DDesktop" },
+    { "name": "Google Gemini Apps Help: use Gemini Spark", "url": "https://support.google.com/gemini/answer/17094507?hl=en&co=GENIE.Platform%3DDesktop" },
+    { "name": "Engadget", "url": "https://www.engadget.com/2281539/how-to-use-google-gemini-automate-tasks/" },
+    { "name": "Chrome Unboxed", "url": "https://chromeunboxed.com/google-is-quietly-ditching-the-spark-brand-to-merge-tasks-directly-into-gemini/" },
+    { "name": "9to5Google", "url": "https://9to5google.com/2026/05/29/gemini-spark-ultra-us/" }
+  ],
+  "caption": "Gemini Spark is Google's AI agent that runs tasks for you, once or on a schedule.\nDescribe the job, say when it should run, and Gemini handles it with your Gmail, Calendar, Drive and more.\nIt needs a Google AI Pro or Ultra plan.\n\nWhat would you hand off to it first?\n\nFollow @neurafeed.ai for daily AI news.\n\nSource: Google Gemini Apps Help · Photos: agustin.photo / Shutterstock via Engadget, 9to5Google, Chrome Unboxed",
+  "slides": [
+    {
+      "kind": "cover",
+      "headline": "Google's Gemini can do your busywork *on autopilot*. Here's how to set it up",
+      "image": {
+        "url": "https://www.engadget.com/img/gallery/how-to-use-google-gemini-to-automate-tasks/intro-1791484788.jpg",
+        "credit": "agustin.photo / Shutterstock",
+        "fallback_urls": ["https://9to5google.com/wp-content/uploads/sites/4/2026/05/Gemini-Spark-Availabillity.jpg?quality=82&strip=all&w=1600"]
+      },
+      "pos": "center 40%"
+    },
+    {
+      "kind": "text",
+      "heading": "Step 1: Switch to *task mode*",
+      "paras": [
+        "Go to gemini.google.com or open the Gemini app. In the sidebar, click \"Switch to Spark.\"",
+        "On newer versions rolling out now, there is no Spark button. Pick \"Task\" in the toggle below the prompt box instead."
+      ],
+      "image": {
+        "url": "https://chromeunboxed.com/wp-content/uploads/2026/09/GeminiSparkChatsTasksToggle.webp",
+        "fit": "contain",
+        "credit": "Chrome Unboxed",
+        "fallback_urls": ["https://chromeunboxed.com/wp-content/uploads/2026/09/GeminiWebNoSparkChatToggle-1024x576.webp"]
+      }
+    },
+    {
+      "kind": "text",
+      "heading": "Step 2: Describe the job *and when*",
+      "paras": [
+        "Type what you want done and when it should run, like a daily inbox cleanup or a custom news digest. Type \"/\" to use a saved skill.",
+        "Add files from \"Upload & tools,\" then click Submit."
+      ],
+      "image": {
+        "url": "https://9to5google.com/wp-content/uploads/sites/4/2026/05/Gemini-Spark-web-1.jpg?quality=82&strip=all&w=1600",
+        "fit": "contain",
+        "credit": "9to5Google",
+        "fallback_urls": ["https://9to5google.com/wp-content/uploads/sites/4/2026/05/Gemini-Spark-web-1.jpg?quality=82&strip=all&w=1024"]
+      }
+    },
+    {
+      "kind": "text",
+      "heading": "Step 3: Or build the *schedule yourself*",
+      "paras": [
+        "Open Schedules and click \"Create manually.\" Enter a name, choose when the task runs and write its instructions.",
+        "Click Create. The schedule is saved to your \"Ongoing\" list."
+      ],
+      "image": {
+        "url": "https://9to5google.com/wp-content/uploads/sites/4/2026/05/Gemini-Spark-web-2.jpg?quality=82&strip=all&w=1600",
+        "fit": "contain",
+        "credit": "9to5Google",
+        "fallback_urls": ["https://9to5google.com/wp-content/uploads/sites/4/2026/05/Gemini-Spark-web-2.jpg?quality=82&strip=all&w=1024"]
+      }
+    },
+    {
+      "kind": "text",
+      "heading": "Step 4: Edit, *pause* or delete",
+      "paras": [
+        "In Schedules, click More on any task. Choose \"Edit with Gemini\" to change it in plain words, or Pause, Resume and Delete.",
+        "Gemini asks you to confirm before it sends messages, changes data or makes purchases."
+      ],
+      "image": {
+        "url": "https://9to5google.com/wp-content/uploads/sites/4/2026/05/Gemini-Spark-web-3.jpg?quality=82&strip=all&w=1600",
+        "fit": "contain",
+        "credit": "9to5Google",
+        "fallback_urls": ["https://9to5google.com/wp-content/uploads/sites/4/2026/05/Gemini-Spark-web-3.jpg?quality=82&strip=all&w=1024"]
+      }
+    },
+    {
+      "kind": "text",
+      "heading": "What you *need first*",
+      "paras": [
+        "A Google AI Pro or Ultra plan, a personal Google account, age 18 or over, and Keep Activity turned on. Not available in the European Economic Area, UK, Switzerland or Nigeria.",
+        { "t": "Limits: up to 50 active schedules and 15 tasks running at once.", "strong": true }
+      ],
+      "image": {
+        "url": "https://i0.wp.com/9to5google.com/wp-content/uploads/sites/4/2026/05/Gemini-Spark-Android-1.jpg?ssl=1",
+        "fit": "contain",
+        "credit": "9to5Google"
+      }
+    },
+    {
+      "kind": "cta",
+      "hook": "Save this guide for your first Gemini task, and follow for more step-by-step AI how-tos.",
+      "image": {
+        "url": "https://i0.wp.com/9to5google.com/wp-content/uploads/sites/4/2026/05/Gemini-Spark-Android-2.jpg?ssl=1",
+        "credit": "9to5Google",
+        "fallback_urls": ["https://i0.wp.com/9to5google.com/wp-content/uploads/sites/4/2026/05/Gemini-Spark-Android-3.jpg?ssl=1"]
+      }
+    }
+  ]
+}
