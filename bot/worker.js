@@ -51,7 +51,7 @@ async function handle(u, env) {
   if (urls.length) {
     await dispatch(env, 'inbox.yml', { text, extra_urls: extra.join(' '), message_id: String(m.message_id), date: String(m.date) });
     const note = text.replace(URL_RE, '');
-    return send(env, `✅ Aldım. Format: ${FORMAT_TR[formatOf(note)]}.\nClaude en geç 2 saat içinde hazırlar, ilk uygun Amerika saatinde paylaşılır.`, m.message_id);
+    return send(env, `✅ Aldım. Format: ${FORMAT_TR[formatOf(note)]}.\nClaude en geç 2 saat içinde hazırlayacak, önizlemesini buraya atacağım. Onaylarsan ilk uygun Amerika saatinde paylaşılır.`, m.message_id);
   }
   if (!text) return;
   if (text === '/start' || text === '/help') {
