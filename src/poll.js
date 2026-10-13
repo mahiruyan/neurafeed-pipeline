@@ -94,33 +94,14 @@ async function readTelegram(cfg) {
     if (loadJob(st.id)?.test) setJobState(st.id, { status: 'test_done', by: 'test job, not published' });
   }
 
-  // Only publish inside US prime-time windows (New York time).
-  if (!rules.inPostingWindow(cfg, now)) {
-    console.log('Outside posting window, nothing published.');
-    return;
-  }
+  const waiting = allJobStates().filter((s) => s.status === 'approved' || s.status === 'held_cap' || (s.status === 'publish_failed' && (s.attempts || 1) < 3));
 
-  // Most important first (priority 1 = must post), then the story that expires soonest.
-  const prio = (st) => loadJob(st.id)?.priority || 2;
-  const storyTime = (st) => new Date(loadJob(st.id)?.story_time || st.updated_at).getTime();
-  // A failed publish is retried on later runs, up to 3 attempts in total.
-  const approved = allJobStates().filter((s) => s.status === 'approved' || s.status === 'held_cap' || (s.status === 'publish_failed' && (s.attempts || 1) < 3))
-    .sort((a, b) => prio(a) - prio(b) || storyTime(a) - storyTime(b));
-  for (const st of approved) {
-    // Space posts out so two stories from one run do not land back to back.
-    if (rules.minutesSinceLastPost(allJobStates(), now) < (cfg.min_minutes_between_posts || 0)) break;
-    if (rules.postsToday(allJobStates(), cfg, now) >= cfg.daily_post_cap) {
-      if (st.status !== 'held_cap') {
-        setJobState(st.id, { status: 'held_cap' });
-        if (tg.enabled()) await tg.sendMessage(`⏸ Daily cap of ${cfg.daily_post_cap} reached. Holding ${st.id} until it is a new day in New York (or it expires).`);
-      }
-      continue;
-    }
+  async function publishOne(st) {
     const job = loadJob(st.id);
     if (job?.test) {
       // Test jobs exercise render and upload only. They are never published.
       setJobState(st.id, { status: 'test_done', by: 'test job, not published' });
-      continue;
+      return true;
     }
     const files = (st.files || []).map((f) => path.join(ROOT, f));
     try {
@@ -130,12 +111,45 @@ async function readTelegram(cfg) {
         const who = st.history?.at(-1)?.by || 'approved';
         await tg.editMessage(st.message_id, `📤 ${result.mode === 'instagram' ? 'Posted to Instagram' : 'Sent for manual posting'}: ${st.id}\n(${who})`).catch(() => {});
       }
+      return true;
     } catch (e) {
       const attempts = (st.status === 'publish_failed' ? (st.attempts || 1) : 0) + 1;
       setJobState(st.id, { status: 'publish_failed', error: String(e.message || e), attempts });
       if (tg.enabled()) await tg.sendMessage(`⚠️ Publish failed for ${st.id} (attempt ${attempts} of 3): ${String(e.message || e).slice(0, 3500)}`);
-      // Stop here: if Instagram is down or blocked, do not burn through the whole queue.
-      break;
+      return false;
     }
+  }
+
+  // 1) Posts Mahir scheduled himself ("post_at"): out at that time, any hour, outside the cap.
+  for (const st of waiting.filter((s) => loadJob(s.id)?.post_at)) {
+    if (new Date(loadJob(st.id).post_at) <= now && !(await publishOne(st))) return;
+  }
+
+  // 2) Everything else: only inside US prime-time windows (New York time).
+  if (!rules.inPostingWindow(cfg, now)) {
+    console.log('Outside posting window, nothing else published.');
+    return;
+  }
+
+  // Most important first (priority 1 = must post), then the story that expires soonest.
+  const prio = (st) => loadJob(st.id)?.priority || 2;
+  const storyTime = (st) => new Date(loadJob(st.id)?.story_time || st.updated_at).getTime();
+  // Posts from Mahir's own links do not count toward the daily news cap.
+  const capCount = () => rules.postsToday(allJobStates().filter((s) => !loadJob(s.id)?.link_id), cfg, now);
+  const regular = waiting.filter((s) => !loadJob(s.id)?.post_at)
+    .sort((a, b) => prio(a) - prio(b) || storyTime(a) - storyTime(b));
+  for (const st of regular) {
+    // Space posts out so two stories from one run do not land back to back.
+    if (rules.minutesSinceLastPost(allJobStates(), now) < (cfg.min_minutes_between_posts || 0)) break;
+    const fromLink = Boolean(loadJob(st.id)?.link_id);
+    if (!fromLink && capCount() >= cfg.daily_post_cap) {
+      if (st.status !== 'held_cap') {
+        setJobState(st.id, { status: 'held_cap' });
+        if (tg.enabled()) await tg.sendMessage(`⏸ Daily cap of ${cfg.daily_post_cap} reached. Holding ${st.id} until it is a new day in New York (or it expires).`);
+      }
+      continue;
+    }
+    // Stop after a failure: if Instagram is down or blocked, do not burn through the whole queue.
+    if (!(await publishOne(st))) break;
   }
 })().catch((e) => { console.error(e); console.log(`::error::poll failed: ${String(e.stack || e).split('\n').slice(0, 3).join(' | ')}`); process.exit(1); });

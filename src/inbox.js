@@ -2,6 +2,7 @@
 // (Reel, carousel, single image or prompt carousel).
 const fs = require('fs');
 const path = require('path');
+const { postAtFrom } = require('./when');
 
 const FILE = path.join(__dirname, '..', 'inbox', 'links.json');
 const URL_RE = /https?:\/\/[^\s<>"']+/g;
@@ -42,6 +43,7 @@ function addFromMessage(text, extraUrls, messageId, unixDate) {
       url,
       note,
       format: formatOf(note),
+      post_at: postAtFrom(note, new Date(unixDate * 1000)),
       received_at: new Date(unixDate * 1000).toISOString(),
     };
     list.push(item);

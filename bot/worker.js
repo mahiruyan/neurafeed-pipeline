@@ -18,7 +18,35 @@ const FORMAT_TR = {
   auto: 'video ise Reels, değilse haber carousel',
 };
 
+// Reads a posting time Mahir writes in a Telegram note, in Turkey time unless he says NY.
+// "21:30", "21.30'da", "saat 21", "yarın 10:00", "tomorrow 9:15", "NY 18:00". Returns ISO or null.
+function tzOffsetMinutes(tz, date) {
+  const p = Object.fromEntries(new Intl.DateTimeFormat('en-US', { timeZone: tz, hourCycle: 'h23', year: 'numeric', month: '2-digit', day: '2-digit', hour: '2-digit', minute: '2-digit' })
+    .formatToParts(date).map((x) => [x.type, x.value]));
+  const asUtc = Date.UTC(+p.year, +p.month - 1, +p.day, +p.hour, +p.minute);
+  return Math.round((asUtc - date.getTime()) / 60000);
+}
+function postAtFrom(note, now = new Date()) {
+  const t = String(note || '').toLocaleLowerCase('tr');
+  const m = t.match(/(?:saat\s*)(\d{1,2})(?:[:.](\d{2}))?|(\d{1,2})[:.](\d{2})/);
+  if (!m) return null;
+  const h = Number(m[1] ?? m[3]);
+  const min = Number(m[2] ?? m[4] ?? 0);
+  if (h > 23 || min > 59) return null;
+  const tz = /\b(ny|new york|amerika)\b/.test(t) ? 'America/New_York' : 'Europe/Istanbul';
+  const off = tzOffsetMinutes(tz, now);
+  const local = new Date(now.getTime() + off * 60000); // wall clock in tz, as UTC fields
+  let target = Date.UTC(local.getUTCFullYear(), local.getUTCMonth(), local.getUTCDate(), h, min) - off * 60000;
+  if (/(yarın|yarin|tomorrow)/.test(t)) target += 864e5;
+  else if (target < now.getTime() - 5 * 60000) target += 864e5; // time already passed today -> tomorrow
+  return new Date(target).toISOString();
+}
+
 export default {
+  // Every 5 minutes: if a post Mahir scheduled is due, ask GitHub to publish it now (any hour).
+  async scheduled(event, env, ctx) {
+    ctx.waitUntil(dueCheck(env));
+  },
   async fetch(req, env, ctx) {
     const url = new URL(req.url);
     if (req.method !== 'POST' || url.pathname !== '/webhook') return new Response('NeuraFeed bot is running.');
@@ -51,7 +79,9 @@ async function handle(u, env) {
   if (urls.length) {
     await dispatch(env, 'inbox.yml', { text, extra_urls: extra.join(' '), message_id: String(m.message_id), date: String(m.date) });
     const note = text.replace(URL_RE, '');
-    return send(env, `✅ Aldım. Format: ${FORMAT_TR[formatOf(note)]}.\nClaude en geç 2 saat içinde hazırlayacak, önizlemesini buraya atacağım. Onaylarsan ilk uygun Amerika saatinde paylaşılır.`, m.message_id);
+    const at = postAtFrom(note, new Date(m.date * 1000));
+    const when = at ? `${new Date(at).toLocaleString('tr-TR', { timeZone: 'Europe/Istanbul', weekday: 'long', hour: '2-digit', minute: '2-digit' })} (Türkiye saati), günlük limitten ayrı` : 'ilk uygun Amerika saatinde';
+    return send(env, `✅ Aldım. Format: ${FORMAT_TR[formatOf(note)]}.\nClaude en geç 2 saat içinde hazırlayacak, önizlemesini buraya atacağım. Onaylarsan ${when} paylaşılır.`, m.message_id);
   }
   if (!text) return;
   if (text === '/start' || text === '/help') {
@@ -64,6 +94,17 @@ async function handle(u, env) {
   const [queue, ig] = await Promise.all([queueSummary(env).catch((e) => `queue error: ${e.message}`), igSummary(env).catch((e) => `instagram error: ${e.message}`)]);
   const answer = await deepseek(env, question, queue, ig);
   return send(env, answer, m.message_id);
+}
+
+async function dueCheck(env) {
+  const res = await gh(env, 'contents/inbox/links.json', { headers: { Accept: 'application/vnd.github.raw' } }).catch(() => null);
+  if (!res) return;
+  const list = await res.json().catch(() => []);
+  const now = Date.now();
+  // Due in the last 10 minutes: two ticks at most, and the publish step is safe to repeat.
+  if (list.some((l) => l.post_at && Date.parse(l.post_at) <= now && Date.parse(l.post_at) > now - 10 * 60000)) {
+    await dispatch(env, 'poll.yml', {});
+  }
 }
 
 // ---------- GitHub ----------

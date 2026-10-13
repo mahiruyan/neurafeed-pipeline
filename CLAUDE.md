@@ -169,6 +169,9 @@ stories in one line each.
 Mahir sends links to the Telegram bot; they land in `inbox/links.json`
 (`{ id, url, note, format, received_at }`). Every run, turn each link that no job references yet
 (check `link_id` in jobs/) into exactly one job with `"link_id"` set, before any other work.
+If the inbox item has `post_at` (a time Mahir wrote in his note), copy it into the job as
+`"post_at"`: the post goes out at that time, at any hour, outside the daily cap. Posts from his
+links never count toward the 8-per-day news cap.
 These are Mahir's own picks: priority 1, and always `"review": true` (he gets a preview on
 Telegram and approves before it posts).
 
