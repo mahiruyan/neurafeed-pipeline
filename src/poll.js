@@ -40,9 +40,10 @@ async function readTelegram(cfg) {
       .filter((e) => e.type === 'text_link').map((e) => e.url);
     const added = inbox.addFromMessage(text, entityUrls, msg.message_id, msg.date);
     if (added.length) {
-      await tg.sendMessage(`✅ Got it (${added.map((a) => a.id).join(', ')}). It will be turned into a Reel and posted in the next US prime-time window.`, null, msg.message_id).catch(() => {});
+      const NAMES = { reel: 'a Reel', single: 'a single-image post', prompt: 'a prompt carousel', carousel: 'a news carousel', auto: 'a Reel if it is a video, otherwise a news carousel' };
+      await tg.sendMessage(`✅ Got it. It will become ${NAMES[added[0].format] || NAMES.auto} within about 2 hours and post in the next US prime-time window.`, null, msg.message_id).catch(() => {});
     } else if (text && !text.startsWith('/')) {
-      await tg.sendMessage('Send me a link (X, Instagram, Reddit, YouTube, TikTok) and I will queue it as a Reel. You can add a note after the link.', null, msg.message_id).catch(() => {});
+      await tg.sendMessage('Send me a link. Add a word anywhere to pick the format: reel, carousel, tekli, prompt. Add "başlık: ..." to set the headline.', null, msg.message_id).catch(() => {});
     }
   }
   setTelegram(t);

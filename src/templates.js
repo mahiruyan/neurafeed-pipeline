@@ -104,7 +104,7 @@ ${corner}
 <div style="position:absolute;top:840px;left:0;width:1080px;height:510px;box-sizing:border-box;padding:0 56px 52px;display:flex;flex-direction:column;align-items:center;justify-content:space-between">
 <div style="width:100%;display:flex;align-items:center;gap:24px"><div style="flex-grow:1;height:3px;background:#fff;opacity:.85"></div><img src="${logo}" style="width:60px;height:60px"><div style="flex-grow:1;height:3px;background:#fff;opacity:.85"></div></div>
 ${COVER_FONT === 'anton' ? antonH(size, 'center', s.headline) : `<h1 style="margin:0;font-family:Poppins;font-weight:500;font-size:${size}px;line-height:1.18;text-align:center;letter-spacing:-.5px">${hlb(s.headline)}</h1>`}
-<div style="display:flex;align-items:center;gap:12px;font-family:'Bebas Neue';font-size:40px;letter-spacing:3px">Swipe for more ${arrow}</div>
+${s.single ? `<div style="font-family:'Bebas Neue';font-size:40px;letter-spacing:3px">Follow <span style="color:${ACC}">@neurafeed.ai</span> for daily AI news</div>` : `<div style="display:flex;align-items:center;gap:12px;font-family:'Bebas Neue';font-size:40px;letter-spacing:3px">Swipe for more ${arrow}</div>`}
 </div></div>`;
 }
 

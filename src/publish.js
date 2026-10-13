@@ -41,6 +41,13 @@ async function waitReady(containerId) {
 
 async function publishInstagram(job, files) {
   const base = PUBLIC_BASE.replace(/\/$/, '');
+  if (files.length === 1) {
+    // Single-image post.
+    const c = await graph(`${IG_USER}/media`, { image_url: `${base}/${job.id}/${path.basename(files[0])}`, caption: job.caption });
+    await waitReady(c.id);
+    const pub = await graph(`${IG_USER}/media_publish`, { creation_id: c.id });
+    return { mode: 'instagram', media_id: pub.id, type: 'single' };
+  }
   const children = [];
   for (const f of files) {
     const c = await graph(`${IG_USER}/media`, { image_url: `${base}/${job.id}/${path.basename(f)}`, is_carousel_item: 'true' });

@@ -18,7 +18,8 @@ async function renderJob(job, imagePaths, outDir, badgePaths = []) {
     const tab = await browser.newPage();
     await tab.setViewport({ width: 1080, height: 1350 });
     for (let i = 0; i < job.slides.length; i++) {
-      const html = buildPage(job.slides[i], fileUrl(imagePaths[i]), (badgePaths[i] || []).map(fileUrl));
+      const slide = job.format === 'single' ? { ...job.slides[i], single: true } : job.slides[i];
+      const html = buildPage(slide, fileUrl(imagePaths[i]), (badgePaths[i] || []).map(fileUrl));
       const htmlFile = path.join(outDir, '_slide.html');
       fs.writeFileSync(htmlFile, html);
       await tab.goto(fileUrl(htmlFile), { waitUntil: 'load' });

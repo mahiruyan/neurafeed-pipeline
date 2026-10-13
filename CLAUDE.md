@@ -164,11 +164,31 @@ On Sunday (New York time), the first run at or after 17:00 queues `YYYY-MM-DD-we
 only from stories that already had jobs this week (reuse their sources). The caption lists the
 stories in one line each.
 
-## Reels (`"type": "reel"` jobs)
+## Links from Mahir (Telegram bot)
 
-Mahir sends video links to the Telegram bot; they land in `inbox/links.json`
-(`{ id, url, note, received_at }`). Every run, turn each link that no job references yet
-(check `link_id` in jobs/) into one Reel job, following his note if he wrote one.
+Mahir sends links to the Telegram bot; they land in `inbox/links.json`
+(`{ id, url, note, format, received_at }`). Every run, turn each link that no job references yet
+(check `link_id` in jobs/) into exactly one job with `"link_id"` set, before any other work.
+These are Mahir's own picks: priority 1, posted in the next window.
+
+Which format (`format` field, from a word he wrote anywhere in the message):
+- `reel`: a Reel job (below).
+- `carousel`: a news carousel (normal job).
+- `single`: a single-image post: `"format": "single"`, exactly one `cover` slide, no cta.
+- `prompt`: a prompt carousel (`"format": "utility"`, prompt tips, see Utility posts), built
+  around the prompt, tool or trick the link shows.
+- `auto` (no word): open the link. A video post (X/Instagram/TikTok/YouTube video) becomes a
+  Reel; an article, blog post, image post or thread becomes a news carousel.
+
+What to write (headline, slides, caption): read the linked page itself first (article, post text,
+thread, video description), then find at least one independent source that confirms it (two for
+timely news). Write everything from those sources in the usual NeuraFeed voice. Mahir's note
+overrides: `başlık:` / `title:` sets the headline or hook (word for word in English, faithful
+translation if Turkish), `caption:` sets the caption text (keep his words, add the closing lines),
+and any other words in the note are instructions about angle, tone or what to stress. Never
+invent anything the sources do not say. Credit the original creator of a video or image.
+
+## Reels (`"type": "reel"` jobs)
 
 ```json
 {

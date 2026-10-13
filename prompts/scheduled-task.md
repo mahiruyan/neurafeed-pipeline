@@ -19,9 +19,10 @@ never miss a major story.
    Microsoft, Apple, NVIDIA or xAI, or any story the whole AI world is discussing, MUST get a
    job this run. Then add priority 2 stories with broad US appeal (launches people can try,
    statements from well-known leaders, surprising real-world uses).
-3b. Reels: read inbox/links.json. Every link not yet referenced by a job's `link_id` gets a
-   Reel job this run (see the Reels section of CLAUDE.md). Open the post URL to understand it
-   when you can; use Mahir's note. These count toward the daily total and come first.
+3b. Links from Mahir: read inbox/links.json. Every link not yet referenced by a job's `link_id`
+   gets a job this run in the format the "Links from Mahir" section of CLAUDE.md describes
+   (Reel, carousel, single or prompt). Open the link to understand it; follow Mahir's note.
+   These count toward the daily total and come first.
 3c. Utility: if no job with `"format": "utility"` exists for today (New York date) and it is
    11:00 New York time or later, queue one (see "Utility posts" in CLAUDE.md).
 3d. Sunday roundup: on Sunday, in the first run at or after 17:00 New York time, queue the weekly

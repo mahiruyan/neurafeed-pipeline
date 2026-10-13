@@ -28,7 +28,8 @@ function validateJob(job, fileId) {
   if (job.type === 'reel') return validateReel(job, fileId);
   const p = [];
   if (job.id !== fileId) p.push(`id "${job.id}" must match the file name "${fileId}"`);
-  if (!Array.isArray(job.slides) || job.slides.length < 3 || job.slides.length > 8) p.push('slides must be an array of 3 to 8 items');
+  const single = job.format === 'single';
+  if (!Array.isArray(job.slides) || (single ? job.slides.length !== 1 : (job.slides.length < 3 || job.slides.length > 8))) p.push(single ? 'a single post has exactly 1 slide (a cover)' : 'slides must be an array of 3 to 8 items');
   if (!job.caption) p.push('caption is required');
   if (!Array.isArray(job.sources) || job.sources.length < 1) p.push('at least one source is required');
   if (typeof job.timely !== 'boolean') p.push('timely must be true or false');
@@ -38,7 +39,7 @@ function validateJob(job, fileId) {
     if (!s.image || !(s.image.url || s.image.generate)) p.push(`slide ${i + 1}: image.url (or image.generate) is required`);
   });
   if (job.slides?.[0]?.kind !== 'cover') p.push('first slide must be a cover');
-  if (job.slides?.at(-1)?.kind !== 'cta') p.push('last slide must be a cta');
+  if (!single && job.slides?.at(-1)?.kind !== 'cta') p.push('last slide must be a cta');
   const urls = (job.slides || []).map((s) => s.image?.url).filter(Boolean);
   const dupes = urls.filter((u, i) => urls.indexOf(u) !== i);
   if (dupes.length) p.push('the same image is used on more than one slide');
