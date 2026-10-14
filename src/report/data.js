@@ -76,6 +76,16 @@ async function demographics(breakdown) {
   } catch { return []; }
 }
 
+// Who actually saw (reached) or interacted (engaged) in a timeframe, by country/age/gender/city.
+async function viewers(metric, timeframe, breakdown) {
+  try {
+    const d = await get(`${USER}/insights?metric=${metric}&period=lifetime&timeframe=${timeframe}&metric_type=total_value&breakdown=${breakdown}`);
+    return (d.data?.[0]?.total_value?.breakdowns?.[0]?.results || [])
+      .map((r) => ({ key: r.dimension_values.join(' '), value: r.value }))
+      .sort((a, b) => b.value - a.value);
+  } catch { return []; }
+}
+
 const KPIS = ['reach', 'views', 'total_interactions', 'accounts_engaged', 'likes', 'comments', 'saves', 'shares', 'profile_views'];
 
 async function collect(days, end = new Date()) {
@@ -104,7 +114,14 @@ async function collect(days, end = new Date()) {
     gender: await demographics('gender'),
     city: await demographics('city'),
   };
-  return { days, from, to, prevFrom, account, kpi, reachDaily, followersDaily, posts, prevPosts, audience };
+  const tf = days <= 7 ? 'this_week' : 'this_month';
+  const reached = {
+    timeframe: tf,
+    country: await viewers('reached_audience_demographics', tf, 'country'),
+    age: await viewers('reached_audience_demographics', tf, 'age'),
+    city: await viewers('reached_audience_demographics', tf, 'city'),
+  };
+  return { days, from, to, prevFrom, account, kpi, reachDaily, followersDaily, posts, prevPosts, audience, reached };
 }
 
 module.exports = { collect };

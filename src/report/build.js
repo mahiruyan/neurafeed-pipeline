@@ -57,7 +57,10 @@ async function insights(data, summary) {
       headers: { Authorization: `Bearer ${process.env.DEEPSEEK_API_KEY}`, 'Content-Type': 'application/json' },
       body: JSON.stringify({
         model: process.env.DEEPSEEK_MODEL || 'deepseek-v4-pro', temperature: 0.3, max_tokens: 4000, response_format: { type: 'json_object' },
-        messages: [{ role: 'user', content: `You analyze the Instagram performance of @neurafeed.ai (English AI news for a US audience). Use ONLY these numbers, never invent any. followers_by_country_count is the number of followers per country, not reach:\n${JSON.stringify(summary)}\nReturn JSON {"headline": "one sentence verdict of the period", "worked": ["3 short bullets with the numbers behind them"], "didnt": ["2 short bullets"], "next": ["3 concrete actions for the next period"]}. Plain English, no em dashes or en dashes.` }],
+        messages: [{ role: 'user', content: `You write the analysis section of the performance report of @neurafeed.ai (English AI news on Instagram). Use ONLY these numbers, never invent any. followers_by_country_count counts followers per country; viewers_by_country counts accounts reached in the period.
+${JSON.stringify(summary)}
+Return JSON {"verdict": "one plain sentence on the period with its key number", "findings": [3 to 4 items {"title": "a specific claim with a number, max 9 words, sentence case", "body": "1 or 2 short sentences with the numbers behind it"}], "actions": [3 items {"title": "a concrete action, max 8 words", "body": "1 sentence why, tied to a number above"}]}.
+Write like a sharp analyst at a newsroom, plain words. Forbidden: em dashes, en dashes, exclamation marks, emojis, and the words leverage, boost, crucial, robust, delve, unlock, elevate, game changer, engagement-driving, synergy, insights.` }],
       }),
     });
     const d = await res.json();
@@ -75,121 +78,127 @@ function html(data, ai) {
   const { kpi, account, posts, days } = data;
   const end = new Date(data.to.getTime() - 1);
   const range = `${dayLabel(data.from)} to ${dayLabel(end)}, ${end.getUTCFullYear()}`;
-  const title = days === 7 ? 'Weekly Performance Report' : days >= 28 ? 'Monthly Performance Report' : `${days}-Day Performance Report`;
-  const fDaily = data.followersDaily.filter((d) => d.day > data.from.toISOString().slice(0, 10));
-  const newFollowers = fDaily.reduce((a, d) => a + d.value, 0);
-  const prevNew = data.followersDaily.filter((d) => d.day <= data.from.toISOString().slice(0, 10)).reduce((a, d) => a + d.value, 0);
+  const kind = days === 7 ? 'Weekly report' : days >= 28 ? 'Monthly report' : `${days}-day report`;
+  const fromDay = data.from.toISOString().slice(0, 10);
+  const newFollowers = data.followersDaily.filter((d) => d.day > fromDay).reduce((a, d) => a + d.value, 0);
+  const prevNew = data.followersDaily.filter((d) => d.day <= fromDay).reduce((a, d) => a + d.value, 0);
   const curReach = data.reachDaily.slice(-days);
   const prevReach = data.reachDaily.slice(-2 * days, -days);
-  const cards = [
-    ['Reach', 'reach'], ['Views', 'views'], ['Interactions', 'total_interactions'], ['Accounts engaged', 'accounts_engaged'],
-    ['Saves', 'saves'], ['Shares', 'shares'], ['Comments', 'comments'], ['Profile visits', 'profile_views'],
-  ].map(([label, k]) => `<div class="card"><div class="cl">${label}</div><div class="cv">${fmt(kpi.current[k])}</div>${delta(kpi.current[k], kpi.previous[k], 'vs previous')}${delta(kpi.current[k], kpi.avg4[k], 'vs 4-period avg')}</div>`).join('');
+  const metric = ([label, k]) => `<div class="m"><div class="lab">${label}</div><div class="num">${fmt(kpi.current[k])}</div>${delta(kpi.current[k], kpi.previous[k], 'vs previous')}${delta(kpi.current[k], kpi.avg4[k], 'vs 4-period avg')}</div>`;
+  const metrics = [['Reach', 'reach'], ['Views', 'views'], ['Interactions', 'total_interactions'], ['Accounts engaged', 'accounts_engaged'], ['Saves', 'saves'], ['Shares', 'shares'], ['Comments', 'comments'], ['Profile visits', 'profile_views']].map(metric).join('');
   const sorted = [...posts].sort((a, b) => score(b) - score(a));
-  const row = (m, i) => `<tr><td class="rk">${i + 1}</td><td>${m.thumb ? `<img class="th" src="${esc(m.thumb)}">` : ''}</td><td class="tt">${esc(m.title)}<div class="muted sm">${m.format} · ${new Date(m.timestamp).toLocaleString('en-US', { timeZone: 'America/New_York', weekday: 'short', hour: 'numeric' })} NY</div></td><td>${fmt(m.metrics.views)}</td><td>${fmt(m.metrics.reach)}</td><td>${fmt(m.metrics.saved)}</td><td>${fmt(m.metrics.shares)}</td></tr>`;
+  const row = (m, i) => `<tr><td class="rk">${i + 1}</td><td>${m.thumb ? `<img class="th" src="${esc(m.thumb)}">` : ''}</td><td class="tt">${esc(m.title)}<div class="sub">${m.format} · ${new Date(m.timestamp).toLocaleString('en-US', { timeZone: 'America/New_York', weekday: 'short', hour: 'numeric' })} NY</div></td><td class="n">${fmt(m.metrics.views)}</td><td class="n">${fmt(m.metrics.reach)}</td><td class="n">${fmt(m.metrics.saved)}</td><td class="n">${fmt(m.metrics.shares)}</td></tr>`;
   const byFormat = {};
-  for (const m of posts) { (byFormat[m.format] ||= []).push(score(m)); }
+  for (const m of posts) (byFormat[m.format] ||= []).push(score(m));
   const formats = Object.entries(byFormat).map(([k, v]) => ({ key: `${k} (${v.length})`, value: v.reduce((a, b) => a + b, 0) / v.length })).sort((a, b) => b.value - a.value);
   const slots = {};
   for (const m of posts) {
     const h = Number(new Date(m.timestamp).toLocaleString('en-US', { timeZone: 'America/New_York', hour: '2-digit', hourCycle: 'h23' }));
-    const k = h < 11 ? 'Morning (7 to 11 NY)' : h < 17 ? 'Midday (11 to 17 NY)' : 'Evening (17 to 22 NY)';
+    const k = h < 11 ? 'Morning, 7 to 11' : h < 17 ? 'Midday, 11 to 17' : 'Evening, 17 to 22';
     (slots[k] ||= []).push(score(m));
   }
-  const slotRows = Object.entries(slots).map(([k, v]) => ({ key: `${k}, ${v.length} posts`, value: v.reduce((a, b) => a + b, 0) / v.length })).sort((a, b) => b.value - a.value);
+  const slotRows = Object.entries(slots).map(([k, v]) => ({ key: `${k} (${v.length})`, value: v.reduce((a, b) => a + b, 0) / v.length })).sort((a, b) => b.value - a.value);
   const aud = data.audience;
-  const audTotal = (list) => list.reduce((a, r) => a + r.value, 0);
-  const list = (arr) => (arr || []).map((x) => `<li>${esc(x)}</li>`).join('');
+  const rch = data.reached;
+  const sum = (l) => l.reduce((a, r) => a + r.value, 0);
+  const tfLabel = rch.timeframe === 'this_week' ? 'this week' : 'this month';
+  const head = (label) => `<div class="top"><img src="${logo}"><span>NeuraFeed AI</span><span class="sep">/</span><span>${label}</span><span class="rng">${range}</span></div>`;
   return `<!doctype html><html><head><meta charset="utf-8"><style>${fontCss}
 @page{size:A4;margin:0}
 *{box-sizing:border-box}
-body{margin:0;background:#0b0f0e;color:#f2f4f3;font-family:Poppins;-webkit-print-color-adjust:exact;print-color-adjust:exact}
-.page{width:210mm;height:297mm;padding:16mm 15mm;position:relative;page-break-after:always;overflow:hidden}
-.top{display:flex;align-items:center;gap:10px;font-size:11px;color:#9aa1a7;margin-bottom:8mm}
-.top img{width:26px;height:26px}
-h1{font-family:Anton;font-weight:400;text-transform:uppercase;font-size:44px;line-height:1.02;margin:0}
-h2{font-family:Anton;font-weight:400;text-transform:uppercase;font-size:24px;margin:0 0 4mm;letter-spacing:.3px}
+body{margin:0;background:#0c0f0e;color:#eef1f0;font-family:Poppins;font-variant-numeric:tabular-nums;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+.page{width:210mm;height:297mm;padding:15mm 16mm;position:relative;page-break-after:always;overflow:hidden}
+.top{display:flex;align-items:center;gap:7px;font-size:9.5px;color:#8b9390;padding-bottom:4mm;border-bottom:1px solid #222826;margin-bottom:9mm}
+.top img{width:18px;height:18px}.top .sep{color:#3a413e}.top .rng{margin-left:auto}
+h1{font-weight:600;font-size:38px;line-height:1.12;letter-spacing:-.6px;margin:0}
+h2{font-weight:600;font-size:17px;letter-spacing:-.2px;margin:0 0 4mm}
+.lab{font-size:9px;font-weight:500;letter-spacing:.8px;text-transform:uppercase;color:#8b9390}
 .acc{color:${ACC}}
-.muted{color:#9aa1a7}.sm{font-size:9px}
-.hero{display:flex;gap:10mm;margin-top:14mm}
-.hero div{flex:1;border-top:2px solid ${ACC};padding-top:4mm}
-.hero .v{font-family:Anton;font-size:56px;line-height:1}
-.hero .l{font-size:12px;color:#9aa1a7;margin-top:2mm}
-.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:4mm;margin-bottom:8mm}
-.card{background:#141a19;border-radius:8px;padding:4mm}
-.cl{font-size:10px;color:#9aa1a7}.cv{font-family:Anton;font-size:28px;margin:1mm 0 2mm}
-.d{display:block;font-size:9.5px;margin-top:1px}.up{color:${ACC}}.down{color:#e5484d}
-.ax{fill:#9aa1a7;font-size:10px;font-family:Poppins}
-.legend{display:flex;gap:16px;font-size:10px;color:#c3c8cc;margin-top:2mm}
-.legend i{display:inline-block;width:10px;height:10px;border-radius:2px;margin-right:6px;vertical-align:-1px}
-table{width:100%;border-collapse:collapse;font-size:10px}
-th{text-align:left;color:#9aa1a7;font-weight:400;padding:2mm 1.5mm;border-bottom:1px solid #2a2f2e}
-td{padding:2mm 1.5mm;border-bottom:1px solid #1d2322;vertical-align:middle}
-td.rk{font-family:Anton;font-size:16px;color:${ACC};width:8mm}
-.th{width:14mm;height:17mm;object-fit:cover;border-radius:4px;display:block}
-td.tt{width:86mm}
-.cols{display:grid;grid-template-columns:1fr 1fr;gap:8mm}
-.hb{display:grid;grid-template-columns:42mm 1fr 14mm;align-items:center;gap:3mm;font-size:10.5px;margin:2mm 0}
-.ht{height:9px;background:#1d2322;border-radius:4px;overflow:hidden}.ht span{display:block;height:100%;background:${ACC};border-radius:4px}
-.hv{text-align:right;color:#c3c8cc}
-.box{background:#141a19;border-radius:8px;padding:5mm;margin-bottom:5mm}
-.box ul{margin:2mm 0 0;padding-left:5mm;font-size:11.5px;line-height:1.55}
-.verdict{font-size:16px;line-height:1.45;margin:0 0 6mm}
-.foot{position:absolute;bottom:9mm;left:15mm;right:15mm;font-size:9px;color:#6b7280;display:flex;justify-content:space-between}
+.sub{font-size:8.5px;color:#8b9390;margin-top:1mm}
+.hero{display:grid;grid-template-columns:repeat(3,1fr);margin-top:16mm;border-top:1px solid #222826}
+.hero>div{padding:6mm 6mm 0 0}
+.hero .num{font-weight:600;font-size:46px;letter-spacing:-1.5px;line-height:1.05;margin-top:2mm}
+.verdict{font-size:17px;line-height:1.5;color:#d6dbd9;max-width:150mm;margin-top:18mm}
+.metrics{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid #222826;margin-bottom:10mm}
+.m{padding:5mm 4mm 5mm 0;border-bottom:1px solid #222826}
+.m .num{font-weight:600;font-size:26px;letter-spacing:-.8px;margin:1.5mm 0 2mm}
+.d{display:block;font-size:9px;margin-top:.6mm}.up{color:${ACC}}.down{color:#e5484d}.muted{color:#8b9390}
+.ax{fill:#8b9390;font-size:10px;font-family:Poppins}
+.legend{display:flex;gap:16px;font-size:9.5px;color:#c3c8c6;margin-top:2mm}
+.legend i{display:inline-block;width:9px;height:9px;border-radius:2px;margin-right:6px;vertical-align:-1px}
+table{width:100%;border-collapse:collapse;font-size:9.8px}
+th{text-align:left;color:#8b9390;font-weight:500;font-size:8.5px;letter-spacing:.6px;text-transform:uppercase;padding:2mm 1.5mm;border-bottom:1px solid #222826}
+td{padding:2.2mm 1.5mm;border-bottom:1px solid #1a1f1d;vertical-align:middle}
+td.n,th.n{text-align:right}
+td.rk{font-weight:600;color:${ACC};width:7mm}
+.th{width:13mm;height:16mm;object-fit:cover;border-radius:3px;display:block}
+td.tt{width:88mm;line-height:1.35}
+.cols{display:grid;grid-template-columns:1fr 1fr;gap:10mm}
+.hb{display:grid;grid-template-columns:40mm 1fr 13mm;align-items:center;gap:3mm;font-size:10px;margin:2.2mm 0}
+.ht{height:7px;background:#1a1f1d;border-radius:4px;overflow:hidden}.ht span{display:block;height:100%;background:${ACC};border-radius:4px}
+.ht.gray span{background:#6b7280}
+.hv{text-align:right;color:#c3c8c6}
+.f{display:grid;grid-template-columns:9mm 1fr;padding:5mm 0;border-bottom:1px solid #222826}
+.f .i{font-weight:600;color:${ACC};font-size:13px}
+.f .t{font-weight:600;font-size:14px;line-height:1.35;margin-bottom:1.5mm}
+.f .b{font-size:10.5px;line-height:1.55;color:#c3c8c6}
+.foot{position:absolute;bottom:9mm;left:16mm;right:16mm;font-size:8.5px;color:#5c6461;display:flex;justify-content:space-between}
 </style></head><body>
 
 <section class="page">
-<div class="top"><img src="${logo}">NEURAFEED AI · @${esc(account.username)}</div>
-<div class="muted" style="font-size:13px;margin-top:30mm">${range}</div>
-<h1>${title.split(' ').slice(0, -1).join(' ')} <span class="acc">${title.split(' ').at(-1)}</span></h1>
+${head(kind)}
+<div class="lab" style="margin-top:22mm">${kind}</div>
+<h1 style="margin-top:3mm">How <span class="acc">@${esc(account.username)}</span> did<br>from ${dayLabel(data.from)} to ${dayLabel(end)}</h1>
 <div class="hero">
-<div><div class="v">${fmt(account.followers_count)}</div><div class="l">Followers</div></div>
-<div><div class="v ${newFollowers >= 0 ? 'acc' : ''}">${newFollowers >= 0 ? '+' : ''}${fmt(newFollowers)}</div><div class="l">New followers this period${Number.isFinite(prevNew) && prevNew ? ` (previous: ${prevNew >= 0 ? '+' : ''}${fmt(prevNew)})` : ''}</div></div>
-<div><div class="v">${posts.length}</div><div class="l">Posts published (previous: ${data.prevPosts.length})</div></div>
+<div><div class="lab">Followers</div><div class="num">${fmt(account.followers_count)}</div></div>
+<div><div class="lab">New followers</div><div class="num ${newFollowers >= 0 ? 'acc' : ''}">${newFollowers >= 0 ? '+' : ''}${fmt(newFollowers)}</div><div class="sub">Previous period ${prevNew >= 0 ? '+' : ''}${fmt(prevNew)}</div></div>
+<div><div class="lab">Posts published</div><div class="num">${posts.length}</div><div class="sub">Previous period ${data.prevPosts.length}</div></div>
 </div>
-${ai?.headline ? `<p class="verdict" style="margin-top:16mm">${esc(ai.headline)}</p>` : ''}
-<div class="foot"><span>Generated ${new Date().toUTCString().slice(5, 22)} UTC</span><span>Data: Instagram API</span></div>
+${ai?.verdict ? `<p class="verdict">${esc(ai.verdict)}</p>` : ''}
+<div class="foot"><span>Data from the Instagram API, generated ${new Date().toUTCString().slice(5, 22)} UTC</span><span>1</span></div>
 </section>
 
 <section class="page">
-<div class="top"><img src="${logo}">KEY NUMBERS · ${range}</div>
-<h2>Key <span class="acc">numbers</span></h2>
-<div class="grid">${cards}</div>
-<h2>Daily <span class="acc">reach</span></h2>
+${head('Numbers')}
+<h2>The numbers</h2>
+<div class="metrics">${metrics}</div>
+<h2>Daily reach</h2>
 ${reachChart(curReach, prevReach)}
-<div class="foot"><span>Changes compare with the previous ${days} days and with the average of the last 4 periods of ${days} days.</span><span>2</span></div>
+<div class="foot"><span>Each number is compared with the previous ${days} days and with the average of the four periods before.</span><span>2</span></div>
 </section>
 
 <section class="page">
-<div class="top"><img src="${logo}">CONTENT · ${range}</div>
-<h2>Top <span class="acc">posts</span></h2>
-<table><tr><th></th><th></th><th>Post</th><th>Views</th><th>Reach</th><th>Saves</th><th>Shares</th></tr>${sorted.slice(0, 6).map(row).join('') || '<tr><td colspan="7" class="muted">No posts in this period.</td></tr>'}</table>
-${sorted.length > 6 ? `<h2 style="margin-top:7mm">Weakest <span class="acc">posts</span></h2><table>${sorted.slice(-3).reverse().map((m, i) => row(m, sorted.length - 1 - i)).join('')}</table>` : ''}
-<div class="foot"><span>Ranked by views (reach when views are missing).</span><span>3</span></div>
+${head('Posts')}
+<h2>Posts ranked by views</h2>
+<table><tr><th></th><th></th><th>Post</th><th class="n">Views</th><th class="n">Reach</th><th class="n">Saves</th><th class="n">Shares</th></tr>${sorted.slice(0, 6).map(row).join('') || '<tr><td colspan="7" class="muted">No posts in this period.</td></tr>'}</table>
+${sorted.length > 6 ? `<h2 style="margin-top:9mm">Lowest views</h2><table>${sorted.slice(-3).reverse().map((m, i) => row(m, sorted.length - 1 - i)).join('')}</table>` : ''}
+<div class="foot"><span>Views where available, reach otherwise.</span><span>3</span></div>
 </section>
 
 <section class="page">
-<div class="top"><img src="${logo}">FORMATS, TIMING, AUDIENCE · ${range}</div>
+${head('Formats, timing, audience')}
 <div class="cols">
-<div><h2>By <span class="acc">format</span></h2><div class="muted sm" style="margin-bottom:2mm">Average views per post</div>${hbars(formats)}</div>
-<div><h2>By <span class="acc">time slot</span></h2><div class="muted sm" style="margin-bottom:2mm">Average views per post, New York time</div>${hbars(slotRows)}</div>
+<div><h2>By format</h2><div class="sub" style="margin-bottom:2mm">Average views per post</div>${hbars(formats)}</div>
+<div><h2>By time slot</h2><div class="sub" style="margin-bottom:2mm">Average views per post, New York time</div>${hbars(slotRows)}</div>
 </div>
-<h2 style="margin-top:10mm">Who <span class="acc">follows</span></h2>
+<h2 style="margin-top:11mm">Followers versus viewers</h2>
+<div class="sub" style="margin-bottom:3mm">Left: where followers live (all time). Right: where the accounts reached ${tfLabel} live.</div>
 <div class="cols">
-<div><div class="muted sm">Top countries</div>${hbars(aud.country, audTotal(aud.country))}</div>
-<div><div class="muted sm">Top cities</div>${hbars(aud.city, audTotal(aud.city))}</div>
-<div><div class="muted sm">Age</div>${hbars(aud.age, audTotal(aud.age))}</div>
-<div><div class="muted sm">Gender (F female, M male, U unknown)</div>${hbars(aud.gender, audTotal(aud.gender))}</div>
+<div><div class="lab">Followers by country</div>${hbars(aud.country, sum(aud.country), 6)}</div>
+<div><div class="lab">Viewers by country, ${tfLabel}</div>${hbars(rch.country, sum(rch.country), 6)}</div>
+<div><div class="lab">Followers by age</div>${hbars(aud.age, sum(aud.age), 5)}</div>
+<div><div class="lab">Viewers by age, ${tfLabel}</div>${hbars(rch.age, sum(rch.age), 5)}</div>
 </div>
-<div class="foot"><span>Audience shares are for all followers (lifetime).</span><span>4</span></div>
+<div class="foot"><span>Country codes: US United States, IN India, DE Germany, GB United Kingdom.</span><span>4</span></div>
 </section>
 
 ${ai ? `<section class="page">
-<div class="top"><img src="${logo}">TAKEAWAYS · ${range}</div>
-<h2>What <span class="acc">worked</span></h2><div class="box"><ul>${list(ai.worked)}</ul></div>
-<h2>What <span class="acc">didn't</span></h2><div class="box"><ul>${list(ai.didnt)}</ul></div>
-<h2>Next <span class="acc">${days === 7 ? 'week' : 'period'}</span></h2><div class="box"><ul>${list(ai.next)}</ul></div>
-<div class="foot"><span>Written from the numbers in this report.</span><span>5</span></div>
+${head('Analysis')}
+<h2>What the numbers say</h2>
+${(ai.findings || []).map((f, i) => `<div class="f"><div class="i">${i + 1}</div><div><div class="t">${esc(f.title)}</div><div class="b">${esc(f.body)}</div></div></div>`).join('')}
+<h2 style="margin-top:10mm">Next ${days === 7 ? 'week' : 'period'}</h2>
+${(ai.actions || []).map((f, i) => `<div class="f"><div class="i">${String.fromCharCode(65 + i)}</div><div><div class="t">${esc(f.title)}</div><div class="b">${esc(f.body)}</div></div></div>`).join('')}
+<div class="foot"><span>Written from the numbers in this report only.</span><span>5</span></div>
 </section>` : ''}
 </body></html>`;
 }
@@ -215,6 +224,7 @@ async function sendTelegram(file, caption) {
     kpis_current: k.current, kpis_previous: k.previous, kpis_4period_avg: k.avg4,
     posts_detail: data.posts.map((m) => ({ title: m.title, format: m.format, time_ny: new Date(m.timestamp).toLocaleString('en-US', { timeZone: 'America/New_York' }), ...m.metrics })),
     followers_by_country_count: data.audience.country.slice(0, 5),
+    viewers_by_country: data.reached.country.slice(0, 5), viewers_timeframe: data.reached.timeframe,
   };
   const ai = await insights(data, summary);
   const out = path.join(__dirname, '..', '..', 'reports');
