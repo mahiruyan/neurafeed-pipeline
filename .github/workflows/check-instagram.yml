@@ -26,6 +26,13 @@ jobs:
           fi
           limit=$(curl -s "https://graph.instagram.com/$IG_USER_ID/content_publishing_limit?fields=quota_usage,config&access_token=$IG_ACCESS_TOKEN")
           echo "::notice::quota: $(echo "$limit" | jq -c .)"
-          t=$(curl -s -X POST "https://graph.instagram.com/$IG_USER_ID/media" -d "image_url=https://raw.githubusercontent.com/mahiruyan/neurafeed-media/main/2026-10-12-microsoft-maia-300-ai-chip/1.jpg" -d "access_token=$IG_ACCESS_TOKEN")
-          echo "::notice::container test (not published): $(echo "$t" | jq -c .)"
+          acct=$(curl -s "https://graph.instagram.com/$IG_USER_ID?fields=followers_count,media_count&access_token=$IG_ACCESS_TOKEN")
+          echo "::notice::account: $(echo "$acct" | jq -c 'del(.id)')"
+          ins=$(curl -s "https://graph.instagram.com/$IG_USER_ID/insights?metric=reach,follower_count&period=day&access_token=$IG_ACCESS_TOKEN")
+          echo "::notice::account insights: $(echo "$ins" | jq -c '.error.message // ([.data[]?.name])')"
+          demo=$(curl -s "https://graph.instagram.com/$IG_USER_ID/insights?metric=follower_demographics&period=lifetime&metric_type=total_value&breakdown=country&access_token=$IG_ACCESS_TOKEN")
+          echo "::notice::demographics: $(echo "$demo" | jq -c '.error.message // ([.data[]?.name])')"
+          mid=$(curl -s "https://graph.instagram.com/$IG_USER_ID/media?fields=id&limit=1&access_token=$IG_ACCESS_TOKEN" | jq -r '.data[0].id')
+          mi=$(curl -s "https://graph.instagram.com/$mid/insights?metric=reach,views,saved,shares&access_token=$IG_ACCESS_TOKEN")
+          echo "::notice::media insights: $(echo "$mi" | jq -c '.error.message // ([.data[]? | {(.name): .values[0].value}] | add)')"
           echo "OK"
