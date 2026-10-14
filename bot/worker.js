@@ -65,10 +65,10 @@ async function handle(u, env) {
     if (String(cb.message?.chat?.id) !== owner) return;
     const [action, id] = String(cb.data || '').split(':');
     if (action === 'mdel') {
-      await dispatch(env, 'memory.yml', { op: 'delete', payload: JSON.stringify({ id }) });
-      await env.KV.delete('mem');
-      await tg(env, 'answerCallbackQuery', { callback_query_id: cb.id, text: 'Siliniyor' });
-      return send(env, `🗑 Hafızadan siliniyor: ${id}`, cb.message.message_id);
+      await writeMemory(env, 'delete', { id });
+      await tg(env, 'answerCallbackQuery', { callback_query_id: cb.id, text: 'Silindi' });
+      await tg(env, 'editMessageReplyMarkup', { chat_id: owner, message_id: cb.message.message_id, reply_markup: { inline_keyboard: [] } }).catch(() => {});
+      return send(env, '🗑 Hafızadan silindi.', cb.message.message_id);
     }
     if (action === 'mdo' || action === 'mundo') {
       const raw = await env.KV.get(`mem:${id}`);
@@ -77,10 +77,9 @@ async function handle(u, env) {
       await env.KV.delete(`mem:${id}`);
       if (action === 'mundo') return tg(env, 'answerCallbackQuery', { callback_query_id: cb.id, text: 'Kaydetmedim' });
       const p = JSON.parse(raw);
-      await dispatch(env, 'memory.yml', { op: p.op, payload: JSON.stringify(p) });
-      await env.KV.delete('mem');
-      await tg(env, 'answerCallbackQuery', { callback_query_id: cb.id, text: 'Tamam' });
-      return send(env, p.op === 'delete' ? '🧠 Hafızadan siliniyor.' : '🧠 Hafızaya yazılıyor. Hem ben hem Claude bundan sonra buna göre çalışacağız.', cb.message.message_id);
+      const count = await writeMemory(env, p.op, p);
+      await tg(env, 'answerCallbackQuery', { callback_query_id: cb.id, text: 'Kaydedildi' });
+      return send(env, p.op === 'delete' ? `🧠 Hafızadan silindi (${count}/50).` : `🧠 Hafızaya yazıldı (${count}/50). Hem ben hem Claude bundan sonra buna göre çalışacağız.`, cb.message.message_id);
     }
     if (action === 'do' || action === 'undo') {
       const raw = await env.KV.get(`act:${id}`);
@@ -89,13 +88,12 @@ async function handle(u, env) {
       await env.KV.delete(`act:${id}`);
       if (action === 'undo') return tg(env, 'answerCallbackQuery', { callback_query_id: cb.id, text: 'Vazgeçildi' });
       const a = JSON.parse(raw);
-      await dispatch(env, 'manage.yml', { action: a.action, id: a.id, value: a.value || '' });
-      await env.KV.delete('queue');
+      await queueAction(env, a.action, a.id, a.value);
       await tg(env, 'answerCallbackQuery', { callback_query_id: cb.id, text: 'Tamam' });
       return send(env, `👍 İşleme alındı (${a.action}: ${a.id}). 1-2 dakika içinde uygulanır.`, cb.message.message_id);
     }
     if (!['ok', 'no'].includes(action) || !id) return;
-    await dispatch(env, 'decide.yml', { id, action });
+    await queueAction(env, action, id);
     await tg(env, 'answerCallbackQuery', { callback_query_id: cb.id, text: action === 'ok' ? 'Onaylandı' : 'Reddedildi' });
     await tg(env, 'editMessageReplyMarkup', { chat_id: owner, message_id: cb.message.message_id, reply_markup: { inline_keyboard: [] } }).catch(() => {});
     await send(env, action === 'ok' ? `✅ Onaylandı: ${id}\nİlk uygun Amerika saatinde paylaşılacak.` : `❌ Reddedildi: ${id}`, cb.message.message_id);
@@ -108,8 +106,12 @@ async function handle(u, env) {
   const urls = [...(text.match(URL_RE) || []), ...extra];
 
   if (urls.length) {
-    await dispatch(env, 'inbox.yml', { text, extra_urls: extra.join(' '), message_id: String(m.message_id), date: String(m.date) });
-    const note = text.replace(URL_RE, '');
+    const note = text.replace(URL_RE, '').trim();
+    const day = new Date(m.date * 1000).toISOString().slice(0, 10);
+    const all = [...new Set(urls.map((x) => x.replace(/[).,]+$/, '')))];
+    for (const [i, url] of all.entries()) {
+      await queueLink(env, { id: `link-${day}-${m.message_id}${all.length > 1 ? `-${i + 1}` : ''}`, url, note, format: formatOf(note), post_at: postAtFrom(note, new Date(m.date * 1000)), received_at: new Date(m.date * 1000).toISOString() });
+    }
     const at = postAtFrom(note, new Date(m.date * 1000));
     const when = at ? `${new Date(at).toLocaleString('tr-TR', { timeZone: 'Europe/Istanbul', weekday: 'long', hour: '2-digit', minute: '2-digit' })} (Türkiye saati), günlük limitten ayrı` : 'ilk uygun Amerika saatinde';
     return send(env, `✅ Aldım. Format: ${FORMAT_TR[formatOf(note)]}.\nClaude en geç 2 saat içinde hazırlayacak, önizlemesini buraya atacağım. Onaylarsan ${when} paylaşılır.`, m.message_id);
@@ -245,7 +247,7 @@ ${memory}`;
 
 // Sunday: clean expired notes, learn from the week's numbers, flag stale or conflicting notes.
 async function weeklyReview(env) {
-  await dispatch(env, 'memory.yml', { op: 'prune', payload: '{}' });
+  await writeMemory(env, 'prune');
   const [memory, ig, queue] = await Promise.all([
     gh(env, 'contents/memory/notes.json', { headers: { Accept: 'application/vnd.github.raw' } }).then((r) => r.text()).catch(() => '[]'),
     igSummary(env).catch((e) => `error: ${e.message}`),
@@ -279,6 +281,104 @@ async function dueCheck(env) {
   if (list.some((l) => l.post_at && Date.parse(l.post_at) <= now && Date.parse(l.post_at) > now - 10 * 60000)) {
     await dispatch(env, 'poll.yml', {});
   }
+}
+
+
+// ---------- Locked writes to the repo ----------
+// Reads the files at the current commit, lets `change` edit them, and commits all of them in one
+// commit. The branch only moves if nobody else pushed in between (force: false); otherwise it
+// reads again and retries. So two writes can never overwrite each other.
+async function commitFiles(env, paths, change, message) {
+  for (let attempt = 0; attempt < 6; attempt++) {
+    const ref = await (await gh(env, 'git/ref/heads/main')).json();
+    const head = ref.object.sha;
+    const commit = await (await gh(env, `git/commits/${head}`)).json();
+    const current = {};
+    for (const p of paths) {
+      const r = await fetch(`https://api.github.com/repos/${env.REPO}/contents/${p}?ref=${head}`, { headers: { Authorization: `Bearer ${env.GH_TOKEN}`, 'User-Agent': 'neurafeed-bot', Accept: 'application/vnd.github.raw' } });
+      current[p] = r.ok ? await r.text() : null;
+    }
+    const next = await change(current);
+    if (!next) return null;
+    const tree = await (await gh(env, 'git/trees', { method: 'POST', body: JSON.stringify({ base_tree: commit.tree.sha, tree: Object.entries(next).map(([path, content]) => ({ path, mode: '100644', type: 'blob', content })) }) })).json();
+    const created = await (await gh(env, 'git/commits', { method: 'POST', body: JSON.stringify({ message: `${message} [skip ci]`, tree: tree.sha, parents: [head] }) })).json();
+    const res = await fetch(`https://api.github.com/repos/${env.REPO}/git/refs/heads/main`, {
+      method: 'PATCH',
+      headers: { Authorization: `Bearer ${env.GH_TOKEN}`, 'User-Agent': 'neurafeed-bot', Accept: 'application/vnd.github+json' },
+      body: JSON.stringify({ sha: created.sha, force: false }),
+    });
+    if (res.ok) return next;
+    if (res.status !== 422 && res.status !== 409) throw new Error(`GitHub commit ${res.status}`);
+    await new Promise((r) => setTimeout(r, 400 * (attempt + 1)));
+  }
+  throw new Error('GitHub kept changing, could not save. Try again.');
+}
+
+const parseList = (txt) => { try { return JSON.parse(txt || '[]'); } catch { return []; } };
+
+// Links and post actions go into small queue files; "Bot apply" processes whatever is pending.
+async function queueLink(env, item) {
+  await commitFiles(env, ['inbox/links.json'], (cur) => {
+    const list = parseList(cur['inbox/links.json']);
+    if (list.some((l) => l.url === item.url)) return null;
+    list.push(item);
+    return { 'inbox/links.json': JSON.stringify(list, null, 2) + '\n' };
+  }, `inbox: link ${item.id}`);
+  await dispatch(env, 'bot-apply.yml', {}).catch(() => {});
+}
+async function queueAction(env, action, job, value) {
+  const entry = { id: crypto.randomUUID().slice(0, 8), action, job, value: value || '', at: new Date().toISOString(), done: false };
+  await commitFiles(env, ['inbox/actions.json'], (cur) => {
+    const list = parseList(cur['inbox/actions.json']);
+    list.push(entry);
+    return { 'inbox/actions.json': JSON.stringify(list, null, 2) + '\n' };
+  }, `inbox: ${action} ${job}`);
+  await env.KV.delete('queue');
+  await dispatch(env, 'bot-apply.yml', {}).catch(() => {});
+}
+
+// ---------- Memory store (same format as src/memory.js) ----------
+const MEM_MAX = 50;
+const MEM_CATS = { editorial: 'Editorial preferences', rule: 'Standing instructions', decision: 'Past decisions', ops: 'Operational facts' };
+const today = () => new Date().toISOString().slice(0, 10);
+function renderMemory(notes) {
+  const lines = ['# NeuraFeed memory', '', "Mahir's standing preferences, instructions, past decisions and operational facts, saved from", 'Telegram. Follow them in every run. They override the defaults in CLAUDE.md, but never the', '"Rules that must never be broken" (no invented facts, no copying, no dashes, credit sources).', ''];
+  for (const [cat, title] of Object.entries(MEM_CATS)) {
+    const items = notes.filter((n) => n.category === cat);
+    if (!items.length) continue;
+    lines.push(`## ${title}`, '');
+    for (const n of items) lines.push(`- ${n.text} _(${n.id}, saved ${n.created_at.slice(0, 10)}${n.expires_at ? `, until ${n.expires_at}` : ''})_`);
+    lines.push('');
+  }
+  if (!notes.length) lines.push('_(empty)_', '');
+  return lines.join('\n');
+}
+async function writeMemory(env, op, input = {}) {
+  let result = '';
+  const next = await commitFiles(env, ['memory/notes.json'], (cur) => {
+    let notes = parseList(cur['memory/notes.json']).filter((n) => !n.expires_at || n.expires_at >= today());
+    if (op === 'delete') notes = notes.filter((n) => n.id !== input.id);
+    else if (op === 'add' || op === 'replace') {
+      if (!MEM_CATS[input.category] || !String(input.text || '').trim()) throw new Error('eksik kategori ya da metin');
+      const note = {
+        id: op === 'replace' && input.id ? input.id : `m${Date.now().toString(36)}`,
+        category: input.category, text: String(input.text).trim().slice(0, 400), created_at: new Date().toISOString(),
+        expires_at: /^\d{4}-\d{2}-\d{2}$/.test(input.expires_at || '') ? input.expires_at : null, source: String(input.source || 'telegram').slice(0, 200),
+      };
+      if (op === 'replace') {
+        const i = notes.findIndex((n) => n.id === input.id);
+        if (i < 0) notes.push(note); else notes[i] = note;
+      } else {
+        if (notes.length >= MEM_MAX) throw new Error(`hafıza dolu (${MEM_MAX}), önce birkaç madde sil`);
+        notes.push(note);
+      }
+    }
+    result = `${notes.length}`;
+    return { 'memory/notes.json': JSON.stringify(notes, null, 2) + '\n', 'memory/notes.md': renderMemory(notes) };
+  }, `memory: ${op}`);
+  // The bot sees its own write at once.
+  if (next) await env.KV.put('mem', next['memory/notes.json'], { expirationTtl: 300 });
+  return result;
 }
 
 // ---------- GitHub ----------
