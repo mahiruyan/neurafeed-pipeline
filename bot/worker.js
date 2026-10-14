@@ -147,6 +147,7 @@ async function handle(u, env) {
 const HISTORY = 25;
 const TOOLS = [
   { name: 'get_queue', description: 'Post queue for the last 4 days: id, status (approved=waiting, posted, pending=needs Mahir OK, canceled, rejected, expired, skipped, publish_failed), posted_at, post_at (scheduled time), priority, headline, from_link.', parameters: { type: 'object', properties: {} } },
+  { name: 'get_account_stats', description: 'Instagram account numbers: followers, number of posts, daily reach and follower change for the last days, and where followers come from (countries, cities, age and gender).', parameters: { type: 'object', properties: { days: { type: 'integer', description: 'How many past days of reach and follower change, 1 to 30, default 7' } } } },
   { name: 'get_instagram_stats', description: 'Last 12 Instagram posts with time, type, likes, comments, reach, views, saved, shares, title.', parameters: { type: 'object', properties: {} } },
   { name: 'propose_action', description: 'Prepare an action on one queued post. Mahir must confirm it with a button before it runs, so call this whenever he asks to cancel, post now, reschedule, change priority, approve or reject a post. Call get_queue first to find the exact id.', parameters: { type: 'object', properties: {
     action: { type: 'string', enum: ['cancel', 'post_now', 'reschedule', 'priority', 'approve', 'reject'] },
@@ -201,6 +202,7 @@ async function cached(env, key, ttl, fn) {
 async function runTool(env, name, args) {
   if (name === 'get_queue') return cached(env, 'queue', 300, () => queueSummary(env));
   if (name === 'get_instagram_stats') return cached(env, 'ig', 600, () => igSummary(env));
+  if (name === 'get_account_stats') { const d = Math.min(30, Math.max(1, Number(args.days) || 7)); return cached(env, `acct${d}`, 900, () => accountSummary(env, d)); }
   if (name === 'propose_memory') {
     await proposeMemory(env, { op: args.op || 'add', id: args.id, category: args.category, text: args.text, expires_at: args.expires_at, source: `telegram ${new Date().toISOString().slice(0, 10)}`, why: args.why });
     return 'A confirmation with buttons was sent to Mahir. Tell him in one short sentence to confirm with the button.';
@@ -227,7 +229,7 @@ async function chat(env, question) {
   const system = `Sen NeuraFeed Asistanısın: DeepSeek (${env.DEEPSEEK_MODEL || 'deepseek-v4-pro'}) modeliyle çalışan, @neurafeed.ai Instagram hesabının asistanısın. Claude değilsin; Claude ayrı bir agent olarak haber masasını yönetiyor (haber bulma, yazma, tasarım). Sana hangi model olduğun sorulursa bunu söyle. (İngilizce yapay zeka haberleri, Amerikan kitlesi). Sahibi Mahir ile Türkçe, kısa ve net konuşursun, "kanka" diyebilirsin. Markdown kullanma, düz metin ve kısa listeler yaz.
 Sistem: Claude 2 saatte bir haber bulup carousel hazırlıyor; normal postlar New York saatiyle 07:00-09:30, 11:00-13:30, 17:00-22:00 arasında, en az 60 dakika arayla, günde en fazla 8 tane çıkar. Mahir bota link atarsa post olur; o postlar onun onayıyla, limitten ayrı ve istediği saatte çıkar.
 Şu an Türkiye: ${tr}, New York: ${ny}.
-Kuyruk ve Instagram verisi gerekiyorsa araçları kullan (get_queue, get_instagram_stats). Bir posta işlem istenirse propose_action kullan, işlem butonla onaylanınca yapılır; "yaptım" deme, "onay butonuna bas" de. Sadece araçlardan gelen verilere dayan, sayı uydurma.
+Kuyruk ve Instagram verisi gerekiyorsa araçları kullan (get_queue, get_instagram_stats, get_account_stats: takipçi sayısı, günlük erişim, takipçi değişimi, kitle demografisi). "Göremiyorum" deme, önce aracı çağır. Bir posta işlem istenirse propose_action kullan, işlem butonla onaylanınca yapılır; "yaptım" deme, "onay butonuna bas" de. Sadece araçlardan gelen verilere dayan, sayı uydurma.
 Mahir "onaylıyorum", "evet" gibi kısa onaylar yazarsa yeni bir öneri oluşturma; bunlar otomatik işlenir.
 Kalıcı hafıza (Mahir'in kayıtlı tercihleri ve talimatları, bunlara uy; değiştirmek veya eklemek için propose_memory kullan, en fazla 50 madde, temel kurallar (haber uydurmamak, kopyalamamak, kaynak göstermek) hafızayla değişmez):
 ${memory}`;
@@ -421,6 +423,30 @@ async function queueSummary(env) {
 }
 
 // ---------- Instagram ----------
+async function accountSummary(env, days) {
+  const base = 'https://graph.instagram.com';
+  const t = encodeURIComponent(env.IG_ACCESS_TOKEN);
+  const get = async (u) => { const r = await (await fetch(`${base}/${u}${u.includes('?') ? '&' : '?'}access_token=${t}`)).json(); if (r.error) throw new Error(r.error.message); return r; };
+  const since = Math.floor(Date.now() / 1000) - days * 86400;
+  const until = Math.floor(Date.now() / 1000);
+  const [acct, daily, ...demo] = await Promise.all([
+    get(`${env.IG_USER_ID}?fields=username,followers_count,follows_count,media_count`),
+    get(`${env.IG_USER_ID}/insights?metric=reach,follower_count&period=day&since=${since}&until=${until}`).catch((e) => ({ error: e.message })),
+    ...['country', 'city', 'age', 'gender'].map((b) => get(`${env.IG_USER_ID}/insights?metric=follower_demographics&period=lifetime&metric_type=total_value&breakdown=${b}`).catch((e) => ({ error: e.message }))),
+  ]);
+  const series = {};
+  for (const m of daily.data || []) series[m.name] = (m.values || []).map((v) => ({ day: v.end_time?.slice(0, 10), value: v.value }));
+  const top = (r) => {
+    const res = r.data?.[0]?.total_value?.breakdowns?.[0]?.results || [];
+    return res.map((x) => ({ key: x.dimension_values?.join(' '), value: x.value })).sort((a, b) => b.value - a.value).slice(0, 8);
+  };
+  return JSON.stringify({
+    username: acct.username, followers: acct.followers_count, following: acct.follows_count, posts: acct.media_count,
+    daily_reach: series.reach || daily.error || [], daily_new_followers: series.follower_count || [],
+    followers_by_country: top(demo[0]), followers_by_city: top(demo[1]), followers_by_age: top(demo[2]), followers_by_gender: top(demo[3]),
+  });
+}
+
 async function igSummary(env) {
   const base = 'https://graph.instagram.com';
   const t = encodeURIComponent(env.IG_ACCESS_TOKEN);
