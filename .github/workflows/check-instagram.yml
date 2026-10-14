@@ -41,4 +41,6 @@ jobs:
               echo "::notice::$m $tf: $(echo "$r" | jq -c '.error.message // [.data[0].total_value.breakdowns[0].results[:3][] | {(.dimension_values[0]): .value}]')"
             done
           done
+          fe=$(curl -s -G "https://graph.instagram.com/$IG_USER_ID/media" --data-urlencode "fields=id,timestamp,like_count,insights.metric(reach,views,saved,shares,total_interactions)" -d limit=100 -d "access_token=$IG_ACCESS_TOKEN")
+          echo "::notice::field expansion: $(echo "$fe" | jq -c '.error.message // {n: (.data|length), first: .data[0].insights.data, last_time: .data[-1].timestamp, next: (.paging.next != null)}' | cut -c1-600)"
           echo "OK"
