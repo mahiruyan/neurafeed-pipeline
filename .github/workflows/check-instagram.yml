@@ -35,4 +35,10 @@ jobs:
           mid=$(curl -s "https://graph.instagram.com/$IG_USER_ID/media?fields=id&limit=1&access_token=$IG_ACCESS_TOKEN" | jq -r '.data[0].id')
           mi=$(curl -s "https://graph.instagram.com/$mid/insights?metric=reach,views,saved,shares&access_token=$IG_ACCESS_TOKEN")
           echo "::notice::media insights: $(echo "$mi" | jq -c '.error.message // ([.data[]? | {(.name): .values[0].value}] | add)')"
+          for m in engaged_audience_demographics reached_audience_demographics; do
+            for tf in this_week this_month last_30_days; do
+              r=$(curl -s "https://graph.instagram.com/$IG_USER_ID/insights?metric=$m&period=lifetime&timeframe=$tf&metric_type=total_value&breakdown=country&access_token=$IG_ACCESS_TOKEN")
+              echo "::notice::$m $tf: $(echo "$r" | jq -c '.error.message // [.data[0].total_value.breakdowns[0].results[:3][] | {(.dimension_values[0]): .value}]')"
+            done
+          done
           echo "OK"
