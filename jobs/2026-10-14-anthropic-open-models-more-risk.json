@@ -1,0 +1,96 @@
+{
+  "id": "2026-10-14-anthropic-open-models-more-risk",
+  "created_at": "2026-10-14T14:20:00Z",
+  "story_time": "2026-10-14T09:41:00Z",
+  "timely": true,
+  "sensitive": false,
+  "priority": 2,
+  "sources": [
+    { "name": "Bloomberg via Business Standard", "url": "https://www.business-standard.com/technology/artificial-intelligence/open-source-ai-models-carry-more-cybersecurity-risks-anthropic-executive-126101400731_1.html" },
+    { "name": "The Next Web", "url": "https://thenextweb.com/news/anthropic-princen-open-weights-risk" },
+    { "name": "Quartz", "url": "https://qz.com/anthropic-open-source-ai-safety-risk-101426" },
+    { "name": "IBTimes Singapore", "url": "https://www.ibtimes.sg/anthropic-executive-warns-open-source-ai-could-put-more-powerful-hacking-tools-wrong-hands-95129" }
+  ],
+  "caption": "Anthropic's head of international, Guillaume Princen, told Bloomberg TV that open-weight AI models carry more risk \"by definition.\"\nHe spoke at the International AI Summit in Dublin, days after Anthropic warned small open models could soon spread across cheap smart devices.\n\nDo you trust open AI models more or less than closed ones?\n\nFollow @neurafeed.ai for daily AI news.\n\nSource: Bloomberg · Photo: SOPA Images / Getty Images",
+  "slides": [
+    {
+      "kind": "cover",
+      "headline": "Anthropic just said open AI models carry *more risk by definition*",
+      "image": {
+        "url": "https://qz.com/cdn-cgi/image/width=1920,quality=85,format=auto/https://assets.qz.com/media/GettyImages-2281691081-1920x1280.jpg",
+        "credit": "SOPA Images / Getty Images",
+        "fallback_urls": [
+          "https://bsmedia.business-standard.com/_media/bs/img/article/2026-10/05/thumb/fitandfill/1200X628/1791170513-1578.jpg",
+          "https://media.thenextweb.com/2026/08/anthropic-in-house-chip-team-custom-silicon-claude.jpg"
+        ]
+      },
+      "pos": "center 35%",
+      "badges": [{ "url": "assets/logos/anthropic.png", "fit": "contain" }],
+      "badge_side": "right",
+      "badge_border": "white"
+    },
+    {
+      "kind": "text",
+      "heading": "Said on *Bloomberg TV*",
+      "paras": [
+        "Guillaume Princen, Anthropic's head of international, spoke to Bloomberg TV on Wednesday at the International AI Summit in Dublin.",
+        "\"We need to be really careful with open-source on safety,\" he said. \"I can't talk for open models. But by definition, there's more risk with them.\""
+      ],
+      "image": {
+        "url": "https://data.ibtimes.sg/en/full/98448/guillaume-princen.jpg",
+        "credit": "Guillaume Princen / LinkedIn",
+        "fallback_urls": ["https://media.thenextweb.com/2026/07/claude-cowork-sandbox-escape-mac-files-sharedroot.avif"]
+      },
+      "pos": "center 25%"
+    },
+    {
+      "kind": "text",
+      "heading": "What *open-weight* means",
+      "paras": [
+        "Open-weight models publicly share their parameters, so anyone can download and run them. Supporters say they are cheaper and better for national sovereignty.",
+        "Princen argued that once they are released, developers have less control over how they are used, raising the risk of cybersecurity incidents."
+      ],
+      "image": {
+        "url": "https://data.ibtimes.sg/en/full/98261/ai-threat.jpg",
+        "credit": "IBTimes",
+        "fallback_urls": ["https://cdn.nairametrics.com/wp-content/uploads/2026/09/anthropic-1.webp"]
+      }
+    },
+    {
+      "kind": "text",
+      "heading": "The *smart TV* test",
+      "paras": [
+        "Days earlier, Anthropic's Frontier Red Team reported that small AI models could soon power a self-replicating botnet on cheap connected devices.",
+        "Of 11 open-weight models tested, only GLM-5.2 completed the full eight-node replication sequence reliably."
+      ],
+      "image": {
+        "url": "https://explainx.ai/images/blog-library/smart-home-hub.webp",
+        "credit": "explainx",
+        "fallback_urls": ["https://explainx.ai/images/blog-library/red-team-vs-blue-team.webp"]
+      }
+    },
+    {
+      "kind": "text",
+      "heading": "Not a call for a *ban*",
+      "paras": [
+        "In July, Anthropic CEO Dario Amodei wrote that the company \"has never advocated banning\" open-weight models, calling those without dangerous capabilities a public good.",
+        { "t": "The Next Web says Princen's new comments go further than Amodei's position.", "strong": true }
+      ],
+      "image": {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/da/Dario_Amodei_at_TechCrunch_Disrupt_2023_01.jpg/1920px-Dario_Amodei_at_TechCrunch_Disrupt_2023_01.jpg",
+        "credit": "TechCrunch / CC BY 2.0",
+        "fallback_urls": ["https://media.thenextweb.com/2026/07/anthropic-dario-amodei-open-weights-position-not-ban.avif"]
+      },
+      "pos": "center 25%"
+    },
+    {
+      "kind": "cta",
+      "hook": "The open vs closed AI fight is heating up before Anthropic's expected listing. Follow so you catch every move.",
+      "image": {
+        "url": "https://bsmedia.business-standard.com/_media/bs/img/article/2026-10/05/thumb/fitandfill/1200X628/1791170513-1578.jpg",
+        "credit": "Bloomberg",
+        "fallback_urls": ["https://media.thenextweb.com/2026/07/claude-cowork-sandbox-escape-mac-files-sharedroot.avif"]
+      }
+    }
+  ]
+}
