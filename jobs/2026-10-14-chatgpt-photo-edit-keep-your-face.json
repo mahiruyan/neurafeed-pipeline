@@ -1,0 +1,73 @@
+{
+  "id": "2026-10-14-chatgpt-photo-edit-keep-your-face",
+  "link_id": "link-2026-10-14-472",
+  "created_at": "2026-10-14T22:20:00Z",
+  "story_time": "2026-10-14T20:53:00Z",
+  "timely": false,
+  "sensitive": false,
+  "priority": 1,
+  "review": true,
+  "post_at": "2026-10-15T01:50:00.000Z",
+  "sources": [
+    { "name": "OpenAI Cookbook: GPT Image prompting guide", "url": "https://developers.openai.com/cookbook/examples/multimodal/image-gen-models-prompting-guide" },
+    { "name": "OpenAI Cookbook: high input fidelity", "url": "https://developers.openai.com/cookbook/examples/generate_images_with_high_input_fidelity" }
+  ],
+  "caption": "Tired of ChatGPT changing your face when you edit a photo?\nOpenAI's own prompting guide for its image models says to name the one thing that changes and list everything that must stay the same.\nRepeat that list on every edit to reduce drift.\n\nWhich of these will you try first?\n\nFollow @neurafeed.ai for daily AI news.\n\nSource: OpenAI Cookbook · Images: OpenAI",
+  "slides": [
+    {
+      "kind": "cover",
+      "headline": "ChatGPT keeps changing your face? OpenAI's own guide has the *exact words* to fix it",
+      "image": {
+        "url": "https://developers.openai.com/cookbook/assets/images/outfit_gpt-image-2.png",
+        "credit": "OpenAI",
+        "fallback_urls": ["https://developers.openai.com/cookbook/assets/images/test_woman_with_dog_gpt-image-2.png"]
+      },
+      "pos": "center 20%",
+      "badges": [{ "url": "assets/logos/openai.png", "shape": "free" }]
+    },
+    {
+      "kind": "text",
+      "heading": "1. Change *only* one thing",
+      "paras": [
+        "OpenAI's image prompting guide says to frame edits as \"change only X\" and add \"keep everything else the same.\"",
+        { "t": "Its example: \"Remove the flower from man's hand. Do not change anything else.\"", "strong": true }
+      ],
+      "image": { "url": "https://developers.openai.com/cookbook/assets/images/man_with_no_flower_gpt-image-2.png", "credit": "OpenAI" }
+    },
+    {
+      "kind": "text",
+      "heading": "2. Lock the *face*",
+      "paras": [
+        "For outfit edits, the guide spells out what must stay: \"Do not change her face, facial features, skin tone, body shape, pose, or identity in any way.\"",
+        { "t": "Then: \"Preserve her exact likeness, expression, hairstyle, and proportions.\"", "strong": true }
+      ],
+      "image": { "url": "https://developers.openai.com/cookbook/assets/images/test_woman_with_dog_gpt-image-2.png", "credit": "OpenAI" }
+    },
+    {
+      "kind": "text",
+      "heading": "3. Protect the *scene*",
+      "paras": [
+        "Name the background details too. OpenAI's room example says: \"Preserve camera angle, room lighting, floor shadows, and surrounding objects.\"",
+        "Its outfit example adds: \"Do not change the background, camera angle, framing, or image quality.\""
+      ],
+      "image": { "url": "https://developers.openai.com/cookbook/assets/images/kitchen-chairs_gpt-image-2.png", "credit": "OpenAI" }
+    },
+    {
+      "kind": "text",
+      "heading": "4. Repeat it *every time*",
+      "paras": [
+        "The guide says to repeat your preserve list on every follow-up edit to reduce drift.",
+        "Make one small change per step, like \"make lighting warmer,\" and restate key details if they start to slip."
+      ],
+      "image": { "url": "https://developers.openai.com/cookbook/assets/images/billboard_winter_gpt-image-2.png", "credit": "OpenAI" }
+    },
+    {
+      "kind": "cta",
+      "hook": "Save this before your next ChatGPT photo edit, and follow for more tips straight from OpenAI's own guides.",
+      "image": {
+        "url": "https://media.thenextweb.com/2026/10/smartphone-chatgpt-app-what-can-i-help-with-desk-stand.avif",
+        "credit": "The Next Web"
+      }
+    }
+  ]
+}

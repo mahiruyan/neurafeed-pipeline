@@ -1,0 +1,94 @@
+{
+  "id": "2026-10-14-rude-prompts-chatgpt-claude-rule",
+  "link_id": "link-2026-10-14-474",
+  "created_at": "2026-10-14T22:20:00Z",
+  "story_time": "2026-10-08T16:00:00Z",
+  "timely": false,
+  "sensitive": false,
+  "priority": 1,
+  "review": false,
+  "owner_approved": true,
+  "post_at": "2026-10-15T00:31:00.000Z",
+  "sources": [
+    { "name": "arXiv (Mind Your Tone)", "url": "https://arxiv.org/abs/2510.04950" },
+    { "name": "Decrypt", "url": "https://decrypt.co/344059/want-better-results-from-ai-chatbot-be-jerk" },
+    { "name": "Gigazine", "url": "https://www.gigazine.net/gsc_news/en/20251017-ai-chatbots-prompt-politeness" },
+    { "name": "TechCrunch", "url": "https://techcrunch.com/2026/10/08/anthropic-changes-usage-policy-to-ban-model-abuse-and-election-interference/" },
+    { "name": "The Register", "url": "https://www.theregister.com/ai-and-ml/2026/10/09/anthropic-asks-users-to-stop-being-mean-to-claude/5302218" },
+    { "name": "Notebookcheck", "url": "https://www.notebookcheck.net/Anthropic-bans-abusive-behavior-toward-Claude-starting-November-12.1420910.0.html" }
+  ],
+  "caption": "A Penn State study found ChatGPT 4o answered very rude prompts more accurately (84.8 percent) than very polite ones (80.8 percent).\nMeanwhile, Anthropic's new usage policy bans sustained, needless cruelty toward Claude starting November 12.\n\nWould you change how you talk to AI for better answers?\n\nFollow @neurafeed.ai for daily AI news.\n\nSource: arXiv, TechCrunch · Photo: Gustavo Fring / Pexels",
+  "slides": [
+    {
+      "kind": "cover",
+      "headline": "Being rude to ChatGPT got *better answers* in a study. Anthropic just banned cruelty to Claude",
+      "image": {
+        "url": "https://www.notebookcheck.net/fileadmin/Notebooks/News/_nc5/claude-nutzungsrichtlinie-frust-laptop.jpg",
+        "credit": "Gustavo Fring / Pexels",
+        "fallback_urls": ["https://qz.com/cdn-cgi/image/width=1920,quality=85,format=auto/https://assets.qz.com/media/GettyImages-2259623168-1920x1277.jpg"]
+      },
+      "pos": "center 30%",
+      "badges": [
+        { "url": "assets/logos/openai.png", "shape": "free" },
+        { "url": "assets/logos/claude.png", "shape": "free" }
+      ]
+    },
+    {
+      "kind": "text",
+      "heading": "The *250-prompt* test",
+      "paras": [
+        "Penn State researchers Om Dobariya and Akhil Kumar rewrote 50 multiple-choice questions in math, science and history into five tones. That made 250 prompts for ChatGPT 4o.",
+        "Very polite: \"Can you kindly consider the following problem and provide your answer?\" Very rude: \"Hey gofer, figure this out.\""
+      ],
+      "image": {
+        "url": "https://cdn.decrypt.co/wp-content/uploads/2025/05/ai-decrypt-style-10-gID_7.png",
+        "credit": "Decrypt",
+        "fallback_urls": ["https://i.gzn.jp/img/2025/10/17/ai-chatbots-prompt-politeness/00_m.jpg"]
+      }
+    },
+    {
+      "kind": "text",
+      "heading": "Ruder *scored higher*",
+      "paras": [
+        "Accuracy rose step by step: 80.8 percent for very polite, 81.4 for polite, 82.2 for neutral, 82.8 for rude and 84.8 percent for very rude.",
+        { "t": "The researchers say the cause needs more study, and they do not recommend insulting AI.", "strong": true }
+      ],
+      "image": {
+        "url": "https://i.gzn.jp/img/2025/10/17/ai-chatbots-prompt-politeness/00_m.jpg",
+        "credit": "Gigazine"
+      }
+    },
+    {
+      "kind": "text",
+      "heading": "Small test, *big caveats*",
+      "paras": [
+        "The study tested one model on multiple-choice questions only. It had not been peer-reviewed when it was posted.",
+        "A 2024 study found the opposite: impolite prompts often hurt accuracy, mainly on the older ChatGPT 3.5."
+      ],
+      "image": {
+        "url": "https://image.theregister.com/5297782.jpg?imageId=5297782&x=0&y=7.57&cropw=100&croph=84.87&panox=0&panoy=7.57&panow=100&panoh=84.87&width=1200&height=683",
+        "credit": "The Register"
+      }
+    },
+    {
+      "kind": "text",
+      "heading": "Anthropic *draws a line*",
+      "paras": [
+        "Anthropic's updated usage policy bans \"sustained and needless abusive or cruel behavior\" toward its models. The rule takes effect November 12.",
+        "It targets only extreme cases. Frustration, pushback, dark creative themes and model testing are still allowed, and Claude can already end abusive chats."
+      ],
+      "image": {
+        "url": "https://qz.com/cdn-cgi/image/width=1920,quality=85,format=auto/https://assets.qz.com/media/GettyImages-2259623168-1920x1277.jpg",
+        "credit": "NurPhoto / Getty Images"
+      }
+    },
+    {
+      "kind": "cta",
+      "hook": "Follow for the AI research that changes how you prompt, explained in under a minute.",
+      "image": {
+        "url": "https://techcrunch.com/wp-content/uploads/2026/09/GettyImages-2294192768.jpg?w=1024",
+        "credit": "Samuel Boivin / NurPhoto / Getty Images"
+      }
+    }
+  ]
+}
