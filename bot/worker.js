@@ -45,7 +45,7 @@ function postAtFrom(note, now = new Date()) {
 export default {
   // Every 5 minutes: if a post Mahir scheduled is due, ask GitHub to publish it now (any hour).
   async scheduled(event, env, ctx) {
-    if (event.cron === '0 17 * * 0') ctx.waitUntil(weeklyReview(env).catch((e) => send(env, `⚠️ Haftalık hafıza gözden geçirmesi hata verdi: ${e.message}`)));
+    if (event.cron === '0 17 * * SUN') ctx.waitUntil(weeklyReview(env).catch((e) => send(env, `⚠️ Haftalık hafıza gözden geçirmesi hata verdi: ${e.message}`)));
     else ctx.waitUntil(dueCheck(env));
   },
   async fetch(req, env, ctx) {
