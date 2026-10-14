@@ -1,0 +1,36 @@
+name: Performance report (PDF)
+
+# Started by the Telegram bot (on request, every Monday, and on the 1st of each month).
+on:
+  workflow_dispatch:
+    inputs:
+      days: { description: Number of days (7 = weekly, 30 = monthly), required: false, default: '7' }
+
+jobs:
+  report:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Cache Chrome
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/puppeteer
+          key: puppeteer-${{ runner.os }}-v1
+      - run: npm install --no-audit --no-fund
+      - name: Build and send the report
+        run: node src/report/build.js "${{ inputs.days }}"
+        env:
+          IG_USER_ID: ${{ secrets.IG_USER_ID }}
+          IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: report
+          path: reports/
