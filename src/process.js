@@ -56,7 +56,7 @@ function summary(job) {
         const r = await renderReel(job, outDir);
         files = [r.video];
         preview = [r.preview];
-        errors = [`layout ${r.layout}, source ${r.source.w}x${r.source.h}, ${Math.round(r.source.duration)}s`];
+        errors = [`layout ${r.layout}, source ${r.source.w}x${r.source.h}, ${Math.round(r.source.duration)}s${r.crop ? `, cropped to ${r.crop.w}x${r.crop.h} at ${r.crop.x},${r.crop.y} (removed another page's frame)` : ''}`];
       } else {
         const img = await fetchImages(job, outDir);
         errors = img.errors;

@@ -63,6 +63,63 @@ function probe(file) {
   };
 }
 
+// Many viral clips are reposts that already carry another page's frame: a header with their logo
+// and title above the video, a caption bar below. Find the part of the picture that actually
+// moves and keep only that, so our frame does not wrap someone else's frame.
+function activeArea(src, info) {
+  if (info.duration < 2) return null;
+  const W0 = 90;
+  const H0 = Math.max(40, Math.round((W0 * info.h) / info.w));
+  const n = 16;
+  const raw = execFileSync('ffmpeg', ['-v', 'error', '-i', src, '-vf', `fps=${n}/${Math.max(1, info.duration).toFixed(2)},scale=${W0}:${H0},format=gray`, '-frames:v', String(n), '-f', 'rawvideo', '-'], { maxBuffer: 64 * 1024 * 1024 });
+  const frames = Math.floor(raw.length / (W0 * H0));
+  if (frames < 6) return null;
+  const sd = new Float64Array(W0 * H0);
+  for (let p = 0; p < W0 * H0; p++) {
+    let s1 = 0; let s2 = 0;
+    for (let f = 0; f < frames; f++) { const v = raw[f * W0 * H0 + p]; s1 += v; s2 += v * v; }
+    const m = s1 / frames;
+    sd[p] = Math.sqrt(Math.max(0, s2 / frames - m * m));
+  }
+  const rows = Array.from({ length: H0 }, (_, y) => { let t = 0; for (let x = 0; x < W0; x++) t += sd[y * W0 + x]; return t / W0; });
+  const cols = Array.from({ length: W0 }, (_, x) => { let t = 0; for (let y = 0; y < H0; y++) t += sd[y * W0 + x]; return t / H0; });
+  const band = (arr) => {
+    const thr = Math.max(4, 0.2 * Math.max(...arr));
+    let best = [0, -1]; let start = -1; let gap = 0;
+    for (let i = 0; i <= arr.length; i++) {
+      const on = i < arr.length && arr[i] >= thr;
+      if (on) { if (start < 0) start = i; gap = 0; } else if (start >= 0) {
+        gap += 1;
+        if (gap > 2 || i === arr.length) { const end = i - gap; if (end - start > best[1] - best[0]) best = [start, end]; start = -1; gap = 0; }
+      }
+    }
+    return best;
+  };
+  const [y0, y1] = band(rows);
+  // Reposted frames are bars above and below the clip; crop rows only and keep the full width.
+  void cols;
+  const [x0, x1] = [0, W0 - 1];
+  const hFrac = (y1 - y0 + 1) / H0;
+  const wFrac = 1;
+  // Only crop when a clear static frame exists (more than 8% of the height or width) and the
+  // moving part is still a real picture (at least a quarter of the height).
+  if (y1 < 0 || hFrac < 0.25 || (hFrac > 0.92 && wFrac > 0.92)) return null;
+  // A real frame is a plain background (mostly one color) with some text on it. A still part of
+  // the video itself (a wall, a sky) is not cropped unless it is just as plain.
+  const plain = (r0, r1) => {
+    if (r1 - r0 < Math.round(H0 * 0.05)) return true;
+    const bins = new Array(16).fill(0); let total = 0;
+    for (let y = r0; y < r1; y++) for (let x = 0; x < W0; x++) { bins[raw[y * W0 + x] >> 4] += 1; total += 1; }
+    return Math.max(...bins) / total >= 0.6;
+  };
+  if (!plain(0, y0) || !plain(y1 + 1, H0)) return null;
+  const sx = info.w / W0; const sy = info.h / H0;
+  const even = (v) => Math.max(0, Math.round(v / 2) * 2);
+  const crop = { x: even(x0 * sx), y: even(y0 * sy), w: even((x1 - x0 + 1) * sx), h: even((y1 - y0 + 1) * sy) };
+  crop.w = Math.min(crop.w, info.w - crop.x); crop.h = Math.min(crop.h, info.h - crop.y);
+  return crop;
+}
+
 function layoutFor(ar) {
   if (ar >= 1.2) return { mode: 'framed', vw: W, vh: Math.round(W / ar / 2) * 2 };
   if (ar >= 0.9) return { mode: 'framed', vw: W, vh: Math.round(W / ar / 2) * 2 };
@@ -133,8 +190,9 @@ function compose(src, info, framePng, rect, out, job) {
   const start = Number(job.video?.start || 0);
   const maxLen = Number(job.video?.max_seconds || 90);
   const len = Math.max(3, Math.min(maxLen, (job.video?.end ? Number(job.video.end) : info.duration) - start));
+  const cropF = info.crop ? `crop=${info.crop.w}:${info.crop.h}:${info.crop.x}:${info.crop.y},` : '';
   const filter = [
-    `[1:v]scale=${rect.w}:${rect.h}:force_original_aspect_ratio=increase,crop=${rect.w}:${rect.h},setsar=1,fps=30[v]`,
+    `[1:v]${cropF}scale=${rect.w}:${rect.h}:force_original_aspect_ratio=increase,crop=${rect.w}:${rect.h},setsar=1,fps=30[v]`,
     `[0:v][v]overlay=${rect.x}:${rect.y}:shortest=1[b]`,
     `[b][2:v]overlay=0:0,format=yuv420p[out]`,
   ].join(';');
@@ -155,7 +213,11 @@ async function renderReel(job, outDir, localSource) {
   fs.mkdirSync(outDir, { recursive: true });
   const src = localSource || download(job.video.url, path.join(outDir, 'src'));
   const info = probe(src);
-  const lay = layoutFor(info.w / info.h);
+  // video.crop: "auto" (default), "none", or { x, y, w, h } in source pixels.
+  const want = job.video?.crop ?? 'auto';
+  if (want && typeof want === 'object') info.crop = want;
+  else if (want === 'auto') { try { info.crop = activeArea(src, info); } catch (e) { info.crop = null; } }
+  const lay = layoutFor(info.crop ? info.crop.w / info.crop.h : info.w / info.h);
   const framePng = path.join(outDir, 'frame.png');
   const rect = await renderFrame(job, lay, framePng);
   const out = path.join(outDir, 'reel.mp4');
@@ -164,7 +226,7 @@ async function renderReel(job, outDir, localSource) {
   run('ffmpeg', ['-y', '-ss', '1', '-i', out, '-frames:v', '1', '-q:v', '3', path.join(outDir, 'preview.jpg')]);
   fs.rmSync(framePng, { force: true });
   fs.rmSync(path.join(outDir, 'src'), { recursive: true, force: true });
-  return { video: out, preview: path.join(outDir, 'preview.jpg'), layout: lay.mode, source: info };
+  return { video: out, preview: path.join(outDir, 'preview.jpg'), layout: lay.mode, source: info, crop: info.crop || null };
 }
 
 module.exports = { renderReel, layoutFor };

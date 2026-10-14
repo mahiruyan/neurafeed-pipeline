@@ -237,7 +237,8 @@ ${memory}`;
     const res = await fetch('https://api.deepseek.com/chat/completions', {
       method: 'POST',
       headers: { Authorization: `Bearer ${env.DEEPSEEK_API_KEY}`, 'Content-Type': 'application/json' },
-      body: JSON.stringify({ model: env.DEEPSEEK_MODEL || 'deepseek-v4-pro', temperature: 0.4, max_tokens: 900, messages, tools: TOOLS }),
+      // Room for the model's own thinking plus the answer; a tight limit left the answer empty.
+      body: JSON.stringify({ model: env.DEEPSEEK_MODEL || 'deepseek-v4-pro', temperature: 0.4, max_tokens: 4000, messages, tools: TOOLS }),
     });
     const d = await res.json();
     if (!res.ok) throw new Error(`DeepSeek: ${d.error?.message || res.status}`);
@@ -252,13 +253,18 @@ ${memory}`;
       }
       continue;
     }
-    answer = msg.content || '(boş cevap)';
+    answer = (msg.content || '').trim();
+    if (!answer && step < 4) {
+      // Empty answer (it spent its budget thinking): ask once more for a short reply.
+      messages.push({ role: 'assistant', content: '' }, { role: 'user', content: 'Kısa ve net cevap ver.' });
+      continue;
+    }
     break;
   }
   // Memory: last 25 messages (plain question and answer, without tool data).
   const next = [...history, { role: 'user', content: question }, { role: 'assistant', content: answer }].slice(-HISTORY);
   await env.KV.put('history', JSON.stringify(next));
-  return answer || 'Bir şeyler ters gitti, tekrar dener misin?';
+  return answer || 'Cevap üretemedim kanka, bir daha yazar mısın?';
 }
 
 // Sunday: clean expired notes, learn from the week's numbers, flag stale or conflicting notes.
