@@ -14,6 +14,13 @@ or Approve / Reject buttons when `mode` is not `auto`).
 Because auto mode has no human check, a timely news job MUST list at least 2 independent
 sources you actually read, or it will be skipped.
 
+## Memory (read first)
+
+`memory/notes.md` holds Mahir's saved preferences, standing instructions, past decisions and
+operational facts (he manages them from Telegram). Read it at the start of every run and follow
+it. It overrides the defaults in this file, but never the "Rules that must never be broken".
+Do not edit the memory files yourself.
+
 ## Volume
 
 The account needs 4 to 8 posts per day. Every major story (priority 1) must be covered the

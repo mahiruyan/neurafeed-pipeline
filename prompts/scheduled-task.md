@@ -6,7 +6,8 @@ tool (owner mahiruyan, repo neurafeed-pipeline, push access) and clone it.
 Goal of this run: queue new carousel jobs so the account posts 4 to 8 times per day, and
 never miss a major story.
 
-1. Pull the latest main. Read CLAUDE.md, config.json, every file in jobs/ and state/jobs/.
+1. Pull the latest main. Read CLAUDE.md, memory/notes.md (Mahir's saved preferences and
+   instructions, follow them), config.json, every file in jobs/ and state/jobs/.
    Note which stories are already covered and how many jobs were queued today (New York date).
    Never cover a story that already has a job.
 2. Read leads/latest.json first (hot Reddit posts with images, latest news RSS items).
