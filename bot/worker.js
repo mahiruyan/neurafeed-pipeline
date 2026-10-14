@@ -45,6 +45,8 @@ function postAtFrom(note, now = new Date()) {
 export default {
   // Every 5 minutes: if a post Mahir scheduled is due, ask GitHub to publish it now (any hour).
   async scheduled(event, env, ctx) {
+    if (event.cron === '0 7 * * MON') return ctx.waitUntil(dispatch(env, 'report.yml', { days: '7', send: 'true' }));
+    if (event.cron === '0 7 1 * *') return ctx.waitUntil(dispatch(env, 'report.yml', { days: '30', send: 'true' }));
     if (event.cron === '0 17 * * SUN') ctx.waitUntil(weeklyReview(env).catch((e) => send(env, `⚠️ Haftalık hafıza gözden geçirmesi hata verdi: ${e.message}`)));
     else ctx.waitUntil(dueCheck(env));
   },
@@ -123,7 +125,7 @@ async function handle(u, env) {
   }
   if (!text) return;
   if (text === '/start' || text === '/help') {
-    return send(env, 'Selam Mahir 👋\n• Link at: posta çevireyim (reel, carousel, tekli, prompt kelimelerinden birini ekleyebilirsin, "başlık: ..." da yazabilirsin, "21:30" ya da "yarın 10:00" yazarsan o saatte paylaşırım)\n• /durum: kuyruk ve bugünün postları\n• /rapor: son postların performansı\n• /hafiza: kalıcı hafızayı gör ve sil\n• /unut: sohbet geçmişini sıfırla\n• "Bunu hatırla: ..." ya da "kural: ..." yazarsan kalıcı hafızaya eklerim (sen onaylarsan)\n• Ya da bana normal yaz: "Fitbit postunu iptal et", "Gemini haberini şimdi paylaş", "Amazon postunu yarın 20:00\'ye ertele" gibi.', m.message_id);
+    return send(env, 'Selam Mahir 👋\n• Link at: posta çevireyim (reel, carousel, tekli, prompt kelimelerinden birini ekleyebilirsin, "başlık: ..." da yazabilirsin, "21:30" ya da "yarın 10:00" yazarsan o saatte paylaşırım)\n• /durum: kuyruk ve bugünün postları\n• /rapor: son postların performansı (sohbet)\n• /pdf: son 7 günün PDF raporu (/pdf 14 = son 14 gün, /aylik = son 30 gün)\n• /hafiza: kalıcı hafızayı gör ve sil\n• /unut: sohbet geçmişini sıfırla\n• "Bunu hatırla: ..." ya da "kural: ..." yazarsan kalıcı hafızaya eklerim (sen onaylarsan)\n• Ya da bana normal yaz: "Fitbit postunu iptal et", "Gemini haberini şimdi paylaş", "Amazon postunu yarın 20:00\'ye ertele" gibi.', m.message_id);
   }
   const yes = /^(evet|onay|onayl|tamam|ok|olur|kaydet|yap)/i.test(text.trim().toLocaleLowerCase('tr')) && text.trim().length < 25;
   if (yes) {
@@ -135,6 +137,11 @@ async function handle(u, env) {
   }
   if (text === '/unut') { await env.KV.delete('history'); return send(env, 'Sohbet geçmişini sıfırladım (uzun süreli hafıza duruyor, onu /hafiza ile yönetirsin).', m.message_id); }
   if (text === '/hafiza' || text === '/hafıza') return showMemory(env, m.message_id);
+  if (/^\/(pdf|rapor_pdf|haftalik|haftalık|aylik|aylık)/.test(text)) {
+    const d = /aylik|aylık/.test(text) ? 30 : Number(text.split(/\s+/)[1]) || 7;
+    await dispatch(env, 'report.yml', { days: String(Math.min(90, Math.max(1, d))), send: 'true' });
+    return send(env, `📊 ${d === 30 ? 'Aylık' : `Son ${d} günün`} PDF raporu hazırlanıyor, yaklaşık 3 dakikada burada.`, m.message_id);
+  }
   await tg(env, 'sendChatAction', { chat_id: owner, action: 'typing' }).catch(() => {});
   const question = text === '/durum' ? 'Kuyrukta ne var, bugün neler paylaşıldı, sırada ne var? Kısa listele.'
     : text === '/rapor' ? 'Son postların performansını analiz et: en iyi ve en kötü giden 3 post, neden, ve yarın için 3 somut öneri.'
@@ -148,6 +155,7 @@ const HISTORY = 25;
 const TOOLS = [
   { name: 'get_queue', description: 'Post queue for the last 4 days: id, status (approved=waiting, posted, pending=needs Mahir OK, canceled, rejected, expired, skipped, publish_failed), posted_at, post_at (scheduled time), priority, headline, from_link.', parameters: { type: 'object', properties: {} } },
   { name: 'get_account_stats', description: 'Instagram account numbers: followers, number of posts, daily reach and follower change for the last days, and where followers come from (countries, cities, age and gender).', parameters: { type: 'object', properties: { days: { type: 'integer', description: 'How many past days of reach and follower change, 1 to 30, default 7' } } } },
+  { name: 'send_report', description: 'Create the PDF performance report (English, NeuraFeed design) and send it to Mahir on Telegram in about 3 minutes. Weekly = 7 days, monthly = 30 days, or any number of days. It compares with the previous period and the average of the last 4 periods.', parameters: { type: 'object', properties: { days: { type: 'integer', description: '7 weekly (default), 30 monthly, or 1 to 90' } } } },
   { name: 'get_instagram_stats', description: 'Last 12 Instagram posts with time, type, likes, comments, reach, views, saved, shares, title.', parameters: { type: 'object', properties: {} } },
   { name: 'propose_action', description: 'Prepare an action on one queued post. Mahir must confirm it with a button before it runs, so call this whenever he asks to cancel, post now, reschedule, change priority, approve or reject a post. Call get_queue first to find the exact id.', parameters: { type: 'object', properties: {
     action: { type: 'string', enum: ['cancel', 'post_now', 'reschedule', 'priority', 'approve', 'reject'] },
@@ -201,6 +209,11 @@ async function cached(env, key, ttl, fn) {
 
 async function runTool(env, name, args) {
   if (name === 'get_queue') return cached(env, 'queue', 300, () => queueSummary(env));
+  if (name === 'send_report') {
+    const d = Math.min(90, Math.max(1, Number(args.days) || 7));
+    await dispatch(env, 'report.yml', { days: String(d), send: 'true' });
+    return `Report for the last ${d} days started; the PDF arrives in about 3 minutes.`;
+  }
   if (name === 'get_instagram_stats') return cached(env, 'ig', 600, () => igSummary(env));
   if (name === 'get_account_stats') { const d = Math.min(30, Math.max(1, Number(args.days) || 7)); return cached(env, `acct${d}`, 900, () => accountSummary(env, d)); }
   if (name === 'propose_memory') {

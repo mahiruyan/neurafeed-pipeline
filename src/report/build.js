@@ -57,7 +57,7 @@ async function insights(data, summary) {
       headers: { Authorization: `Bearer ${process.env.DEEPSEEK_API_KEY}`, 'Content-Type': 'application/json' },
       body: JSON.stringify({
         model: process.env.DEEPSEEK_MODEL || 'deepseek-v4-pro', temperature: 0.3, max_tokens: 4000, response_format: { type: 'json_object' },
-        messages: [{ role: 'user', content: `You analyze the Instagram performance of @neurafeed.ai (English AI news for a US audience). Use ONLY these numbers, never invent any:\n${JSON.stringify(summary)}\nReturn JSON {"headline": "one sentence verdict of the period", "worked": ["3 short bullets with the numbers behind them"], "didnt": ["2 short bullets"], "next": ["3 concrete actions for the next period"]}. Plain English, no em dashes or en dashes.` }],
+        messages: [{ role: 'user', content: `You analyze the Instagram performance of @neurafeed.ai (English AI news for a US audience). Use ONLY these numbers, never invent any. followers_by_country_count is the number of followers per country, not reach:\n${JSON.stringify(summary)}\nReturn JSON {"headline": "one sentence verdict of the period", "worked": ["3 short bullets with the numbers behind them"], "didnt": ["2 short bullets"], "next": ["3 concrete actions for the next period"]}. Plain English, no em dashes or en dashes.` }],
       }),
     });
     const d = await res.json();
@@ -214,7 +214,7 @@ async function sendTelegram(file, caption) {
     period_days: days, followers: data.account.followers_count, posts: data.posts.length, previous_posts: data.prevPosts.length,
     kpis_current: k.current, kpis_previous: k.previous, kpis_4period_avg: k.avg4,
     posts_detail: data.posts.map((m) => ({ title: m.title, format: m.format, time_ny: new Date(m.timestamp).toLocaleString('en-US', { timeZone: 'America/New_York' }), ...m.metrics })),
-    top_countries: data.audience.country.slice(0, 5),
+    followers_by_country_count: data.audience.country.slice(0, 5),
   };
   const ai = await insights(data, summary);
   const out = path.join(__dirname, '..', '..', 'reports');
