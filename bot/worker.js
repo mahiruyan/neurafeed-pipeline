@@ -53,7 +53,10 @@ export default {
     if (req.method !== 'POST' || url.pathname !== '/webhook') return new Response('NeuraFeed bot is running.');
     if (req.headers.get('X-Telegram-Bot-Api-Secret-Token') !== env.WEBHOOK_SECRET) return new Response('forbidden', { status: 403 });
     const update = await req.json();
-    ctx.waitUntil(handle(update, env).catch((e) => tg(env, 'sendMessage', { chat_id: env.OWNER_CHAT_ID, text: `⚠️ Bot hatası: ${e.message}`.slice(0, 3000) })));
+    ctx.waitUntil(handle(update, env).catch((e) => {
+      const hint = /GitHub 40[13]/.test(e.message) ? '\nGitHub izni eksik görünüyor: neurafeed-bot anahtarında Contents izni "Read and write" olmalı. Düzeltince aynı butona tekrar basabilirsin, öneri bekliyor.' : '';
+      return tg(env, 'sendMessage', { chat_id: env.OWNER_CHAT_ID, text: `⚠️ Bot hatası: ${e.message}${hint}`.slice(0, 3000) });
+    }));
     return new Response('ok');
   },
 };
@@ -72,23 +75,25 @@ async function handle(u, env) {
     }
     if (action === 'mdo' || action === 'mundo') {
       const raw = await env.KV.get(`mem:${id}`);
-      await tg(env, 'editMessageReplyMarkup', { chat_id: owner, message_id: cb.message.message_id, reply_markup: { inline_keyboard: [] } }).catch(() => {});
       if (!raw) return tg(env, 'answerCallbackQuery', { callback_query_id: cb.id, text: 'Süresi doldu, tekrar iste' });
-      await env.KV.delete(`mem:${id}`);
-      if (action === 'mundo') return tg(env, 'answerCallbackQuery', { callback_query_id: cb.id, text: 'Kaydetmedim' });
+      if (action === 'mundo') { await env.KV.delete(`mem:${id}`); return tg(env, 'answerCallbackQuery', { callback_query_id: cb.id, text: 'Kaydetmedim' }); }
       const p = JSON.parse(raw);
       const count = await writeMemory(env, p.op, p);
+      await env.KV.delete(`mem:${id}`);
+      await env.KV.delete('last_pending');
+      await tg(env, 'editMessageReplyMarkup', { chat_id: owner, message_id: cb.message.message_id, reply_markup: { inline_keyboard: [] } }).catch(() => {});
       await tg(env, 'answerCallbackQuery', { callback_query_id: cb.id, text: 'Kaydedildi' });
       return send(env, p.op === 'delete' ? `🧠 Hafızadan silindi (${count}/50).` : `🧠 Hafızaya yazıldı (${count}/50). Hem ben hem Claude bundan sonra buna göre çalışacağız.`, cb.message.message_id);
     }
     if (action === 'do' || action === 'undo') {
       const raw = await env.KV.get(`act:${id}`);
-      await tg(env, 'editMessageReplyMarkup', { chat_id: owner, message_id: cb.message.message_id, reply_markup: { inline_keyboard: [] } }).catch(() => {});
       if (!raw) return tg(env, 'answerCallbackQuery', { callback_query_id: cb.id, text: 'Süresi doldu, tekrar iste' });
-      await env.KV.delete(`act:${id}`);
-      if (action === 'undo') return tg(env, 'answerCallbackQuery', { callback_query_id: cb.id, text: 'Vazgeçildi' });
+      if (action === 'undo') { await env.KV.delete(`act:${id}`); return tg(env, 'answerCallbackQuery', { callback_query_id: cb.id, text: 'Vazgeçildi' }); }
       const a = JSON.parse(raw);
       await queueAction(env, a.action, a.id, a.value);
+      await env.KV.delete(`act:${id}`);
+      await env.KV.delete('last_pending');
+      await tg(env, 'editMessageReplyMarkup', { chat_id: owner, message_id: cb.message.message_id, reply_markup: { inline_keyboard: [] } }).catch(() => {});
       await tg(env, 'answerCallbackQuery', { callback_query_id: cb.id, text: 'Tamam' });
       return send(env, `👍 İşleme alındı (${a.action}: ${a.id}). 1-2 dakika içinde uygulanır.`, cb.message.message_id);
     }
@@ -119,6 +124,14 @@ async function handle(u, env) {
   if (!text) return;
   if (text === '/start' || text === '/help') {
     return send(env, 'Selam Mahir 👋\n• Link at: posta çevireyim (reel, carousel, tekli, prompt kelimelerinden birini ekleyebilirsin, "başlık: ..." da yazabilirsin, "21:30" ya da "yarın 10:00" yazarsan o saatte paylaşırım)\n• /durum: kuyruk ve bugünün postları\n• /rapor: son postların performansı\n• /hafiza: kalıcı hafızayı gör ve sil\n• /unut: sohbet geçmişini sıfırla\n• "Bunu hatırla: ..." ya da "kural: ..." yazarsan kalıcı hafızaya eklerim (sen onaylarsan)\n• Ya da bana normal yaz: "Fitbit postunu iptal et", "Gemini haberini şimdi paylaş", "Amazon postunu yarın 20:00\'ye ertele" gibi.', m.message_id);
+  }
+  const yes = /^(evet|onay|onayl|tamam|ok|olur|kaydet|yap)/i.test(text.trim().toLocaleLowerCase('tr')) && text.trim().length < 25;
+  if (yes) {
+    const last = await env.KV.get('last_pending');
+    if (last) {
+      const [kind, key] = last.split(':');
+      return handle({ callback_query: { id: 'typed', data: `${kind}:${key}`, message: { chat: { id: owner }, message_id: m.message_id } } }, env);
+    }
   }
   if (text === '/unut') { await env.KV.delete('history'); return send(env, 'Sohbet geçmişini sıfırladım (uzun süreli hafıza duruyor, onu /hafiza ile yönetirsin).', m.message_id); }
   if (text === '/hafiza' || text === '/hafıza') return showMemory(env, m.message_id);
@@ -171,6 +184,7 @@ async function showMemory(env, replyTo) {
 async function proposeMemory(env, p) {
   const key = crypto.randomUUID().slice(0, 8);
   await env.KV.put(`mem:${key}`, JSON.stringify(p), { expirationTtl: 7 * 86400 });
+  await env.KV.put('last_pending', `mdo:${key}`, { expirationTtl: 3600 });
   const head = p.op === 'delete' ? '🧠 Hafızadan silinsin mi?' : p.op === 'replace' ? '🧠 Hafızadaki bir maddeyi güncelleyeyim mi?' : '🧠 Hafızaya ekleyeyim mi?';
   const body = p.op === 'delete' ? p.id : `${CAT_TR[p.category] || p.category}: ${p.text}${p.expires_at ? `\n(${p.expires_at} tarihine kadar)` : ''}`;
   await tg(env, 'sendMessage', { chat_id: env.OWNER_CHAT_ID, text: `${head}\n${body}${p.why ? `\nNeden: ${p.why}` : ''}`, reply_markup: { inline_keyboard: [[{ text: '✅ Evet', callback_data: `mdo:${key}` }, { text: '❌ Hayır', callback_data: `mundo:${key}` }]] } });
@@ -196,6 +210,7 @@ async function runTool(env, name, args) {
     if (args.action === 'reschedule' && !value) return 'Could not read the time. Ask Mahir for a clear time like 21:30.';
     const key = crypto.randomUUID().slice(0, 8);
     await env.KV.put(`act:${key}`, JSON.stringify({ action: args.action, id: args.id, value }), { expirationTtl: 3600 });
+    await env.KV.put('last_pending', `do:${key}`, { expirationTtl: 3600 });
     const NAMES = { cancel: 'İptal et', post_now: 'Şimdi paylaş', reschedule: 'Ertele', priority: 'Önceliği değiştir', approve: 'Onayla', reject: 'Reddet' };
     const extra = args.action === 'reschedule' ? `\nYeni saat: ${new Date(value).toLocaleString('tr-TR', { timeZone: 'Europe/Istanbul', weekday: 'long', hour: '2-digit', minute: '2-digit' })} (Türkiye)` : args.action === 'priority' ? `\nYeni öncelik: ${value}` : '';
     await tg(env, 'sendMessage', { chat_id: env.OWNER_CHAT_ID, text: `${NAMES[args.action]}: ${args.id}${extra}\nOnaylıyor musun?`, reply_markup: { inline_keyboard: [[{ text: '✅ Evet', callback_data: `do:${key}` }, { text: '❌ Vazgeç', callback_data: `undo:${key}` }]] } });
@@ -213,6 +228,7 @@ async function chat(env, question) {
 Sistem: Claude 2 saatte bir haber bulup carousel hazırlıyor; normal postlar New York saatiyle 07:00-09:30, 11:00-13:30, 17:00-22:00 arasında, en az 60 dakika arayla, günde en fazla 8 tane çıkar. Mahir bota link atarsa post olur; o postlar onun onayıyla, limitten ayrı ve istediği saatte çıkar.
 Şu an Türkiye: ${tr}, New York: ${ny}.
 Kuyruk ve Instagram verisi gerekiyorsa araçları kullan (get_queue, get_instagram_stats). Bir posta işlem istenirse propose_action kullan, işlem butonla onaylanınca yapılır; "yaptım" deme, "onay butonuna bas" de. Sadece araçlardan gelen verilere dayan, sayı uydurma.
+Mahir "onaylıyorum", "evet" gibi kısa onaylar yazarsa yeni bir öneri oluşturma; bunlar otomatik işlenir.
 Kalıcı hafıza (Mahir'in kayıtlı tercihleri ve talimatları, bunlara uy; değiştirmek veya eklemek için propose_memory kullan, en fazla 50 madde, temel kurallar (haber uydurmamak, kopyalamamak, kaynak göstermek) hafızayla değişmez):
 ${memory}`;
   const messages = [{ role: 'system', content: system }, ...history, { role: 'user', content: question }];
@@ -418,6 +434,7 @@ async function igSummary(env) {
 
 // ---------- Telegram ----------
 async function tg(env, method, body) {
+  if (method === 'answerCallbackQuery' && body.callback_query_id === 'typed') return null;
   const res = await fetch(`https://api.telegram.org/bot${env.TELEGRAM_BOT_TOKEN}/${method}`, {
     method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(body),
   });
