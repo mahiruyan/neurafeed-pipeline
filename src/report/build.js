@@ -61,8 +61,14 @@ async function insights(data, summary) {
       }),
     });
     const d = await res.json();
-    return JSON.parse(d.choices?.[0]?.message?.content || 'null');
-  } catch { return null; }
+    if (!res.ok) throw new Error(d.error?.message || res.status);
+    const text = String(d.choices?.[0]?.message?.content || '').replace(/^```(json)?|```$/g, '').trim();
+    if (!text) throw new Error(`empty answer (finish: ${d.choices?.[0]?.finish_reason})`);
+    return JSON.parse(text.slice(text.indexOf('{'), text.lastIndexOf('}') + 1));
+  } catch (e) {
+    console.log(`::warning::insights failed: ${e.message}`);
+    return null;
+  }
 }
 
 function html(data, ai) {
@@ -227,5 +233,5 @@ async function sendTelegram(file, caption) {
   await page.pdf({ path: pdf, format: 'A4', printBackground: true });
   await browser.close();
   console.log('PDF:', pdf);
-  await sendTelegram(pdf, `📊 NeuraFeed ${days === 7 ? 'weekly' : `${days}-day`} report, until ${end}`);
+  if (process.env.SEND !== 'false') await sendTelegram(pdf, `📊 NeuraFeed ${days === 7 ? 'weekly' : `${days}-day`} report, until ${end}`);
 })().catch((e) => { console.error(e); console.log(`::error::report failed: ${e.message}`); process.exit(1); });

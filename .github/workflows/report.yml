@@ -5,6 +5,7 @@ on:
   workflow_dispatch:
     inputs:
       days: { description: Number of days (7 = weekly, 30 = monthly), required: false, default: '7' }
+      send: { description: Send to Telegram, required: false, default: 'true' }
 
 permissions:
   contents: write
@@ -32,6 +33,7 @@ jobs:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
           DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
+          SEND: ${{ inputs.send }}
       - name: Keep the latest report in the repo
         run: |
           mkdir -p report-archive && cp reports/*.pdf report-archive/
