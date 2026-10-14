@@ -8,7 +8,7 @@ REPO = "mahiruyan/neurafeed-pipeline"
 DEEPSEEK_MODEL = "deepseek-v4-pro"
 
 [triggers]
-crons = ["*/5 * * * *"]
+crons = ["*/5 * * * *", "0 17 * * 0"]
 
 # Filled in by the deploy workflow (it creates the namespace on the first run).
 [[kv_namespaces]]

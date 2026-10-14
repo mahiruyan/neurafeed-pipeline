@@ -45,7 +45,8 @@ function postAtFrom(note, now = new Date()) {
 export default {
   // Every 5 minutes: if a post Mahir scheduled is due, ask GitHub to publish it now (any hour).
   async scheduled(event, env, ctx) {
-    ctx.waitUntil(dueCheck(env));
+    if (event.cron === '0 17 * * 0') ctx.waitUntil(weeklyReview(env).catch((e) => send(env, `⚠️ Haftalık hafıza gözden geçirmesi hata verdi: ${e.message}`)));
+    else ctx.waitUntil(dueCheck(env));
   },
   async fetch(req, env, ctx) {
     const url = new URL(req.url);
@@ -63,6 +64,24 @@ async function handle(u, env) {
   if (cb) {
     if (String(cb.message?.chat?.id) !== owner) return;
     const [action, id] = String(cb.data || '').split(':');
+    if (action === 'mdel') {
+      await dispatch(env, 'memory.yml', { op: 'delete', payload: JSON.stringify({ id }) });
+      await env.KV.delete('mem');
+      await tg(env, 'answerCallbackQuery', { callback_query_id: cb.id, text: 'Siliniyor' });
+      return send(env, `🗑 Hafızadan siliniyor: ${id}`, cb.message.message_id);
+    }
+    if (action === 'mdo' || action === 'mundo') {
+      const raw = await env.KV.get(`mem:${id}`);
+      await tg(env, 'editMessageReplyMarkup', { chat_id: owner, message_id: cb.message.message_id, reply_markup: { inline_keyboard: [] } }).catch(() => {});
+      if (!raw) return tg(env, 'answerCallbackQuery', { callback_query_id: cb.id, text: 'Süresi doldu, tekrar iste' });
+      await env.KV.delete(`mem:${id}`);
+      if (action === 'mundo') return tg(env, 'answerCallbackQuery', { callback_query_id: cb.id, text: 'Kaydetmedim' });
+      const p = JSON.parse(raw);
+      await dispatch(env, 'memory.yml', { op: p.op, payload: JSON.stringify(p) });
+      await env.KV.delete('mem');
+      await tg(env, 'answerCallbackQuery', { callback_query_id: cb.id, text: 'Tamam' });
+      return send(env, p.op === 'delete' ? '🧠 Hafızadan siliniyor.' : '🧠 Hafızaya yazılıyor. Hem ben hem Claude bundan sonra buna göre çalışacağız.', cb.message.message_id);
+    }
     if (action === 'do' || action === 'undo') {
       const raw = await env.KV.get(`act:${id}`);
       await tg(env, 'editMessageReplyMarkup', { chat_id: owner, message_id: cb.message.message_id, reply_markup: { inline_keyboard: [] } }).catch(() => {});
@@ -97,9 +116,10 @@ async function handle(u, env) {
   }
   if (!text) return;
   if (text === '/start' || text === '/help') {
-    return send(env, 'Selam Mahir 👋\n• Link at: posta çevireyim (reel, carousel, tekli, prompt kelimelerinden birini ekleyebilirsin, "başlık: ..." da yazabilirsin, "21:30" ya da "yarın 10:00" yazarsan o saatte paylaşırım)\n• /durum: kuyruk ve bugünün postları\n• /rapor: son postların performansı\n• /unut: sohbet hafızasını sıfırla\n• Ya da bana normal yaz: "Fitbit postunu iptal et", "Gemini haberini şimdi paylaş", "Amazon postunu yarın 20:00\'ye ertele" gibi.', m.message_id);
+    return send(env, 'Selam Mahir 👋\n• Link at: posta çevireyim (reel, carousel, tekli, prompt kelimelerinden birini ekleyebilirsin, "başlık: ..." da yazabilirsin, "21:30" ya da "yarın 10:00" yazarsan o saatte paylaşırım)\n• /durum: kuyruk ve bugünün postları\n• /rapor: son postların performansı\n• /hafiza: kalıcı hafızayı gör ve sil\n• /unut: sohbet geçmişini sıfırla\n• "Bunu hatırla: ..." ya da "kural: ..." yazarsan kalıcı hafızaya eklerim (sen onaylarsan)\n• Ya da bana normal yaz: "Fitbit postunu iptal et", "Gemini haberini şimdi paylaş", "Amazon postunu yarın 20:00\'ye ertele" gibi.', m.message_id);
   }
-  if (text === '/unut') { await env.KV.delete('history'); return send(env, 'Sohbet hafızasını sıfırladım.', m.message_id); }
+  if (text === '/unut') { await env.KV.delete('history'); return send(env, 'Sohbet geçmişini sıfırladım (uzun süreli hafıza duruyor, onu /hafiza ile yönetirsin).', m.message_id); }
+  if (text === '/hafiza' || text === '/hafıza') return showMemory(env, m.message_id);
   await tg(env, 'sendChatAction', { chat_id: owner, action: 'typing' }).catch(() => {});
   const question = text === '/durum' ? 'Kuyrukta ne var, bugün neler paylaşıldı, sırada ne var? Kısa listele.'
     : text === '/rapor' ? 'Son postların performansını analiz et: en iyi ve en kötü giden 3 post, neden, ve yarın için 3 somut öneri.'
@@ -119,7 +139,40 @@ const TOOLS = [
     time: { type: 'string', description: 'For reschedule: time as Mahir said it, in Turkey time unless he said NY, like "21:30", "yarın 10:00", "NY 18:00"' },
     priority: { type: 'integer', enum: [1, 2, 3] },
   }, required: ['action', 'id'] } },
+  { name: 'propose_memory', description: 'Save, update or delete a long-term memory note (editorial preference, standing instruction, past decision, operational fact) that both this assistant and the Claude news desk follow. Mahir confirms with a button. Use it when he asks you to remember something, sets a rule ("from now on", "always", "never", "kural", "hatırla", "unutma"), or explains a lasting reason for a decision. Not for small talk. Before adding, compare with the current memory: if a note covers the same thing, use op "replace" with its id; if a new rule contradicts an old one, replace the old one. For temporary instructions ("this week", "until Sunday") set expires_at.', parameters: { type: 'object', properties: {
+    op: { type: 'string', enum: ['add', 'replace', 'delete'] },
+    id: { type: 'string', description: 'Existing note id, for replace or delete' },
+    category: { type: 'string', enum: ['editorial', 'rule', 'decision', 'ops'] },
+    text: { type: 'string', description: 'The note, one clear sentence in English, specific enough for the news desk to apply' },
+    expires_at: { type: 'string', description: 'YYYY-MM-DD for temporary notes, else omit' },
+    why: { type: 'string', description: 'Short reason in Turkish, shown to Mahir' },
+  }, required: ['op'] } },
 ].map((f) => ({ type: 'function', function: f }));
+
+const CAT_TR = { editorial: 'Editoryal tercih', rule: 'Kalıcı talimat', decision: 'Geçmiş karar', ops: 'Operasyonel bilgi' };
+async function loadMemory(env) {
+  return cached(env, 'mem', 300, async () => {
+    const res = await gh(env, 'contents/memory/notes.json', { headers: { Accept: 'application/vnd.github.raw' } }).catch(() => null);
+    return res ? await res.text() : '[]';
+  });
+}
+async function showMemory(env, replyTo) {
+  const notes = JSON.parse(await loadMemory(env)).filter((n) => !n.expires_at || n.expires_at >= new Date().toISOString().slice(0, 10));
+  if (!notes.length) return send(env, 'Hafıza boş. "Bunu hatırla: ..." diye yazarak ekleyebilirsin.', replyTo);
+  await send(env, `🧠 Kalıcı hafıza (${notes.length}/50). Silmek için altındaki butona bas.`, replyTo);
+  for (const [cat, title] of Object.entries(CAT_TR)) {
+    for (const n of notes.filter((x) => x.category === cat)) {
+      await tg(env, 'sendMessage', { chat_id: env.OWNER_CHAT_ID, text: `${title}: ${n.text}${n.expires_at ? `\n(${n.expires_at} tarihine kadar)` : ''}`, reply_markup: { inline_keyboard: [[{ text: '🗑 Sil', callback_data: `mdel:${n.id}` }]] } });
+    }
+  }
+}
+async function proposeMemory(env, p) {
+  const key = crypto.randomUUID().slice(0, 8);
+  await env.KV.put(`mem:${key}`, JSON.stringify(p), { expirationTtl: 7 * 86400 });
+  const head = p.op === 'delete' ? '🧠 Hafızadan silinsin mi?' : p.op === 'replace' ? '🧠 Hafızadaki bir maddeyi güncelleyeyim mi?' : '🧠 Hafızaya ekleyeyim mi?';
+  const body = p.op === 'delete' ? p.id : `${CAT_TR[p.category] || p.category}: ${p.text}${p.expires_at ? `\n(${p.expires_at} tarihine kadar)` : ''}`;
+  await tg(env, 'sendMessage', { chat_id: env.OWNER_CHAT_ID, text: `${head}\n${body}${p.why ? `\nNeden: ${p.why}` : ''}`, reply_markup: { inline_keyboard: [[{ text: '✅ Evet', callback_data: `mdo:${key}` }, { text: '❌ Hayır', callback_data: `mundo:${key}` }]] } });
+}
 
 async function cached(env, key, ttl, fn) {
   const hit = await env.KV.get(key);
@@ -132,6 +185,10 @@ async function cached(env, key, ttl, fn) {
 async function runTool(env, name, args) {
   if (name === 'get_queue') return cached(env, 'queue', 300, () => queueSummary(env));
   if (name === 'get_instagram_stats') return cached(env, 'ig', 600, () => igSummary(env));
+  if (name === 'propose_memory') {
+    await proposeMemory(env, { op: args.op || 'add', id: args.id, category: args.category, text: args.text, expires_at: args.expires_at, source: `telegram ${new Date().toISOString().slice(0, 10)}`, why: args.why });
+    return 'A confirmation with buttons was sent to Mahir. Tell him in one short sentence to confirm with the button.';
+  }
   if (name === 'propose_action') {
     const value = args.action === 'reschedule' ? postAtFrom(args.time || '') : args.action === 'priority' ? String(args.priority || 2) : '';
     if (args.action === 'reschedule' && !value) return 'Could not read the time. Ask Mahir for a clear time like 21:30.';
@@ -147,12 +204,15 @@ async function runTool(env, name, args) {
 
 async function chat(env, question) {
   const history = JSON.parse((await env.KV.get('history')) || '[]');
+  const memory = await loadMemory(env).catch(() => '[]');
   const ny = new Date().toLocaleString('en-US', { timeZone: 'America/New_York' });
   const tr = new Date().toLocaleString('tr-TR', { timeZone: 'Europe/Istanbul' });
   const system = `Sen @neurafeed.ai Instagram hesabının asistanısın (İngilizce yapay zeka haberleri, Amerikan kitlesi). Sahibi Mahir ile Türkçe, kısa ve net konuşursun, "kanka" diyebilirsin. Markdown kullanma, düz metin ve kısa listeler yaz.
 Sistem: Claude 2 saatte bir haber bulup carousel hazırlıyor; normal postlar New York saatiyle 07:00-09:30, 11:00-13:30, 17:00-22:00 arasında, en az 60 dakika arayla, günde en fazla 8 tane çıkar. Mahir bota link atarsa post olur; o postlar onun onayıyla, limitten ayrı ve istediği saatte çıkar.
 Şu an Türkiye: ${tr}, New York: ${ny}.
-Kuyruk ve Instagram verisi gerekiyorsa araçları kullan (get_queue, get_instagram_stats). Bir posta işlem istenirse propose_action kullan, işlem butonla onaylanınca yapılır; "yaptım" deme, "onay butonuna bas" de. Sadece araçlardan gelen verilere dayan, sayı uydurma.`;
+Kuyruk ve Instagram verisi gerekiyorsa araçları kullan (get_queue, get_instagram_stats). Bir posta işlem istenirse propose_action kullan, işlem butonla onaylanınca yapılır; "yaptım" deme, "onay butonuna bas" de. Sadece araçlardan gelen verilere dayan, sayı uydurma.
+Kalıcı hafıza (Mahir'in kayıtlı tercihleri ve talimatları, bunlara uy; değiştirmek veya eklemek için propose_memory kullan, en fazla 50 madde, temel kurallar (haber uydurmamak, kopyalamamak, kaynak göstermek) hafızayla değişmez):
+${memory}`;
   const messages = [{ role: 'system', content: system }, ...history, { role: 'user', content: question }];
   let answer = '';
   for (let step = 0; step < 5; step++) {
@@ -181,6 +241,33 @@ Kuyruk ve Instagram verisi gerekiyorsa araçları kullan (get_queue, get_instagr
   const next = [...history, { role: 'user', content: question }, { role: 'assistant', content: answer }].slice(-HISTORY);
   await env.KV.put('history', JSON.stringify(next));
   return answer || 'Bir şeyler ters gitti, tekrar dener misin?';
+}
+
+// Sunday: clean expired notes, learn from the week's numbers, flag stale or conflicting notes.
+async function weeklyReview(env) {
+  await dispatch(env, 'memory.yml', { op: 'prune', payload: '{}' });
+  const [memory, ig, queue] = await Promise.all([
+    gh(env, 'contents/memory/notes.json', { headers: { Accept: 'application/vnd.github.raw' } }).then((r) => r.text()).catch(() => '[]'),
+    igSummary(env).catch((e) => `error: ${e.message}`),
+    queueSummary(env).catch((e) => `error: ${e.message}`),
+  ]);
+  const prompt = `You manage the long-term memory of the @neurafeed.ai Instagram news desk (AI news for a US audience).
+Current memory notes (JSON): ${memory}
+Last Instagram posts with metrics: ${ig}
+Recent queue: ${queue}
+Return JSON: {"summary": "3 to 5 short Turkish sentences: what worked this week and what did not, based only on the numbers", "proposals": [up to 4 items]}.
+Each proposal: {"op": "add"|"replace"|"delete", "id": "existing id for replace/delete", "category": "editorial"|"rule"|"decision"|"ops", "text": "one clear English sentence", "why": "short Turkish reason with the numbers behind it"}.
+Propose new notes only for clear patterns in the numbers (topics, headline styles, formats, posting times). Propose delete or replace for notes that are expired in spirit, duplicated or contradicting. No proposals if nothing is clear.`;
+  const res = await fetch('https://api.deepseek.com/chat/completions', {
+    method: 'POST',
+    headers: { Authorization: `Bearer ${env.DEEPSEEK_API_KEY}`, 'Content-Type': 'application/json' },
+    body: JSON.stringify({ model: env.DEEPSEEK_MODEL || 'deepseek-v4-pro', temperature: 0.3, max_tokens: 1200, response_format: { type: 'json_object' }, messages: [{ role: 'user', content: prompt }] }),
+  });
+  const d = await res.json();
+  if (!res.ok) throw new Error(`DeepSeek: ${d.error?.message || res.status}`);
+  const out = JSON.parse(d.choices?.[0]?.message?.content || '{}');
+  await send(env, `📊 Haftalık hafıza gözden geçirmesi\n\n${out.summary || 'Bu hafta net bir şey çıkmadı.'}${out.proposals?.length ? '\n\nÖnerilerim aşağıda, istediklerini onayla:' : ''}`);
+  for (const p of (out.proposals || []).slice(0, 4)) await proposeMemory(env, { ...p, source: `weekly review ${new Date().toISOString().slice(0, 10)}` });
 }
 
 async function dueCheck(env) {
