@@ -51,12 +51,13 @@ function score(m) { return (m.metrics.views || m.metrics.reach || 0); }
 
 async function insights(data, summary) {
   if (!process.env.DEEPSEEK_API_KEY) return null;
+  for (let attempt = 1; attempt <= 3; attempt++) {
   try {
     const res = await fetch('https://api.deepseek.com/chat/completions', {
       method: 'POST',
       headers: { Authorization: `Bearer ${process.env.DEEPSEEK_API_KEY}`, 'Content-Type': 'application/json' },
       body: JSON.stringify({
-        model: process.env.DEEPSEEK_MODEL || 'deepseek-v4-pro', temperature: 0.3, max_tokens: 4000, response_format: { type: 'json_object' },
+        model: process.env.DEEPSEEK_MODEL || 'deepseek-v4-pro', temperature: 0.3, max_tokens: 8000, response_format: { type: 'json_object' },
         messages: [{ role: 'user', content: `You write the analysis section of the performance report of @neurafeed.ai (English AI news on Instagram). Use ONLY these numbers, never invent any. followers_by_country_count counts followers per country; viewers_by_country counts accounts reached in the period.
 ${JSON.stringify(summary)}
 Return JSON {"verdict": "one plain sentence on the period with its key number", "findings": [3 to 4 items {"title": "a specific claim with a number, max 9 words, sentence case", "body": "1 or 2 short sentences with the numbers behind it"}], "actions": [3 items {"title": "a concrete action, max 8 words", "body": "1 sentence why, tied to a number above"}]}.
@@ -69,9 +70,10 @@ Write like a sharp analyst at a newsroom, plain words. Forbidden: em dashes, en 
     if (!text) throw new Error(`empty answer (finish: ${d.choices?.[0]?.finish_reason})`);
     return JSON.parse(text.slice(text.indexOf('{'), text.lastIndexOf('}') + 1));
   } catch (e) {
-    console.log(`::warning::insights failed: ${e.message}`);
-    return null;
+    console.log(`::warning::insights attempt ${attempt} failed: ${e.message}`);
   }
+  }
+  return null;
 }
 
 function html(data, ai) {
