@@ -156,7 +156,12 @@ const TOOLS = [
   { name: 'get_queue', description: 'Post queue for the last 4 days: id, status (approved=waiting, posted, pending=needs Mahir OK, canceled, rejected, expired, skipped, publish_failed), posted_at, post_at (scheduled time), priority, headline, from_link.', parameters: { type: 'object', properties: {} } },
   { name: 'get_account_stats', description: 'Instagram account numbers: followers, number of posts, daily reach and follower change for the last days, and where followers come from (countries, cities, age and gender).', parameters: { type: 'object', properties: { days: { type: 'integer', description: 'How many past days of reach and follower change, 1 to 30, default 7' } } } },
   { name: 'send_report', description: 'Create the PDF performance report (English, NeuraFeed design) and send it to Mahir on Telegram in about 3 minutes. Weekly = 7 days, monthly = 30 days, or any number of days. It compares with the previous period and the average of the last 4 periods.', parameters: { type: 'object', properties: { days: { type: 'integer', description: '7 weekly (default), 30 monthly, or 1 to 90' } } } },
-  { name: 'get_instagram_stats', description: 'Last 12 Instagram posts with time, type, likes, comments, reach, views, saved, shares, title.', parameters: { type: 'object', properties: {} } },
+  { name: 'get_instagram_stats', description: 'Stats for ALL Instagram posts of the account (every post since the start, not only the ones this system made): count, totals and averages, averages by format and by month, and the top and bottom posts by a metric. Filter by dates. Use it for any question about past posts or performance.', parameters: { type: 'object', properties: {
+    from: { type: 'string', description: 'YYYY-MM-DD, optional' }, to: { type: 'string', description: 'YYYY-MM-DD, optional' },
+    sort_by: { type: 'string', enum: ['views', 'reach', 'saved', 'shares', 'likes', 'comments', 'total_interactions'], description: 'default views' },
+    top: { type: 'integer', description: 'How many top and bottom posts to list, default 8, max 20' },
+    format: { type: 'string', enum: ['any', 'Reel', 'Carousel', 'Single image', 'Video'] },
+  } } },
   { name: 'propose_action', description: 'Prepare an action on one queued post. Mahir must confirm it with a button before it runs, so call this whenever he asks to cancel, post now, reschedule, change priority, approve or reject a post. Call get_queue first to find the exact id.', parameters: { type: 'object', properties: {
     action: { type: 'string', enum: ['cancel', 'post_now', 'reschedule', 'priority', 'approve', 'reject'] },
     id: { type: 'string', description: 'Exact job id from get_queue' },
@@ -214,7 +219,7 @@ async function runTool(env, name, args) {
     await dispatch(env, 'report.yml', { days: String(d), send: 'true' });
     return `Report for the last ${d} days started; the PDF arrives in about 3 minutes.`;
   }
-  if (name === 'get_instagram_stats') return cached(env, 'ig', 600, () => igSummary(env));
+  if (name === 'get_instagram_stats') return postStats(env, args);
   if (name === 'get_account_stats') { const d = Math.min(30, Math.max(1, Number(args.days) || 7)); return cached(env, `acct${d}`, 900, () => accountSummary(env, d)); }
   if (name === 'propose_memory') {
     await proposeMemory(env, { op: args.op || 'add', id: args.id, category: args.category, text: args.text, expires_at: args.expires_at, source: `telegram ${new Date().toISOString().slice(0, 10)}`, why: args.why });
@@ -242,7 +247,7 @@ async function chat(env, question) {
   const system = `Sen NeuraFeed Asistanısın: DeepSeek (${env.DEEPSEEK_MODEL || 'deepseek-v4-pro'}) modeliyle çalışan, @neurafeed.ai Instagram hesabının asistanısın. Claude değilsin; Claude ayrı bir agent olarak haber masasını yönetiyor (haber bulma, yazma, tasarım). Sana hangi model olduğun sorulursa bunu söyle. (İngilizce yapay zeka haberleri, Amerikan kitlesi). Sahibi Mahir ile Türkçe, kısa ve net konuşursun, "kanka" diyebilirsin. Markdown kullanma, düz metin ve kısa listeler yaz.
 Sistem: Claude 2 saatte bir haber bulup carousel hazırlıyor; normal postlar New York saatiyle 07:00-09:30, 11:00-13:30, 17:00-22:00 arasında, en az 60 dakika arayla, günde en fazla 8 tane çıkar. Mahir bota link atarsa post olur; o postlar onun onayıyla, limitten ayrı ve istediği saatte çıkar.
 Şu an Türkiye: ${tr}, New York: ${ny}.
-Kuyruk ve Instagram verisi gerekiyorsa araçları kullan (get_queue, get_instagram_stats, get_account_stats: takipçi sayısı, günlük erişim, takipçi değişimi, kitle demografisi). "Göremiyorum" deme, önce aracı çağır. Bir posta işlem istenirse propose_action kullan, işlem butonla onaylanınca yapılır; "yaptım" deme, "onay butonuna bas" de. Sadece araçlardan gelen verilere dayan, sayı uydurma.
+Kuyruk ve Instagram verisi gerekiyorsa araçları kullan (get_queue, get_instagram_stats: hesabın TÜM postları, ilk günden beri, tarih ve format filtresiyle, get_account_stats: takipçi sayısı, günlük erişim, takipçi değişimi, kitle demografisi). "Göremiyorum" deme, önce aracı çağır. Bir posta işlem istenirse propose_action kullan, işlem butonla onaylanınca yapılır; "yaptım" deme, "onay butonuna bas" de. Sadece araçlardan gelen verilere dayan, sayı uydurma.
 Mahir "onaylıyorum", "evet" gibi kısa onaylar yazarsa yeni bir öneri oluşturma; bunlar otomatik işlenir.
 Kalıcı hafıza (Mahir'in kayıtlı tercihleri ve talimatları, bunlara uy; değiştirmek veya eklemek için propose_memory kullan, en fazla 50 madde, temel kurallar (haber uydurmamak, kopyalamamak, kaynak göstermek) hafızayla değişmez):
 ${memory}`;
@@ -436,6 +441,48 @@ async function queueSummary(env) {
 }
 
 // ---------- Instagram ----------
+// Every post with its numbers, in a few calls (insights come inside the media list). Cached 30 min.
+async function allPosts(env) {
+  return JSON.parse(await cached(env, 'allposts', 1800, async () => {
+    const t = encodeURIComponent(env.IG_ACCESS_TOKEN);
+    const fields = encodeURIComponent('id,caption,timestamp,media_type,media_product_type,permalink,like_count,comments_count,insights.metric(reach,views,saved,shares,total_interactions)');
+    let url = `https://graph.instagram.com/${env.IG_USER_ID}/media?fields=${fields}&limit=100&access_token=${t}`;
+    const rows = [];
+    for (let i = 0; i < 12 && url; i++) {
+      const d = await (await fetch(url)).json();
+      if (d.error) throw new Error(d.error.message);
+      for (const m of d.data || []) {
+        const ins = {};
+        for (const x of m.insights?.data || []) ins[x.name] = x.values?.[0]?.value ?? 0;
+        rows.push({
+          t: m.timestamp.slice(0, 16), f: m.media_product_type === 'REELS' ? 'Reel' : m.media_type === 'CAROUSEL_ALBUM' ? 'Carousel' : m.media_type === 'VIDEO' ? 'Video' : 'Single image',
+          title: String(m.caption || '').split('\n')[0].slice(0, 90), url: m.permalink,
+          likes: m.like_count || 0, comments: m.comments_count || 0, views: ins.views || 0, reach: ins.reach || 0, saved: ins.saved || 0, shares: ins.shares || 0, total_interactions: ins.total_interactions || 0,
+        });
+      }
+      url = d.paging?.next || null;
+    }
+    return JSON.stringify(rows);
+  }));
+}
+async function postStats(env, a = {}) {
+  let rows = await allPosts(env);
+  if (a.from) rows = rows.filter((r) => r.t >= a.from);
+  if (a.to) rows = rows.filter((r) => r.t.slice(0, 10) <= a.to);
+  if (a.format && a.format !== 'any') rows = rows.filter((r) => r.f === a.format);
+  const by = a.sort_by || 'views';
+  const n = Math.min(20, Math.max(1, Number(a.top) || 8));
+  const keys = ['views', 'reach', 'likes', 'comments', 'saved', 'shares', 'total_interactions'];
+  const agg = (list) => { const o = { posts: list.length }; for (const k of keys) { const s = list.reduce((x, r) => x + r[k], 0); o[`total_${k}`] = s; o[`avg_${k}`] = list.length ? Math.round(s / list.length) : 0; } return o; };
+  const group = (fn) => { const g = {}; for (const r of rows) (g[fn(r)] ||= []).push(r); return Object.fromEntries(Object.entries(g).map(([k, v]) => [k, agg(v)])); };
+  const sorted = [...rows].sort((x, y) => y[by] - x[by]);
+  return JSON.stringify({
+    filter: { from: a.from || rows.at(-1)?.t?.slice(0, 10), to: a.to || rows[0]?.t?.slice(0, 10), format: a.format || 'any', sorted_by: by },
+    overall: agg(rows), by_format: group((r) => r.f), by_month: group((r) => r.t.slice(0, 7)),
+    top: sorted.slice(0, n), bottom: sorted.slice(-n).reverse(),
+  });
+}
+
 async function accountSummary(env, days) {
   const base = 'https://graph.instagram.com';
   const t = encodeURIComponent(env.IG_ACCESS_TOKEN);
