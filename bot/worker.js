@@ -154,7 +154,7 @@ async function handle(u, env) {
 const HISTORY = 25;
 const TOOLS = [
   { name: 'get_queue', description: 'Post queue for the last 4 days: id, status (approved=waiting, posted, pending=needs Mahir OK, canceled, rejected, expired, skipped, publish_failed), posted_at, post_at (scheduled time), priority, headline, from_link.', parameters: { type: 'object', properties: {} } },
-  { name: 'get_account_stats', description: 'Instagram account numbers: followers, number of posts, daily reach and follower change for the last days, and where followers come from (countries, cities, age and gender).', parameters: { type: 'object', properties: { days: { type: 'integer', description: 'How many past days of reach and follower change, 1 to 30, default 7' } } } },
+  { name: 'get_account_stats', description: 'Instagram account numbers: followers, number of posts, daily reach and follower change for the last days, where followers come from (countries, cities, age, gender) and where the accounts reached this week or month (viewers) come from (country, age).', parameters: { type: 'object', properties: { days: { type: 'integer', description: 'How many past days of reach and follower change, 1 to 30, default 7' } } } },
   { name: 'send_report', description: 'Create the PDF performance report (English, NeuraFeed design) and send it to Mahir on Telegram in about 3 minutes. Weekly = 7 days, monthly = 30 days, or any number of days. It compares with the previous period and the average of the last 4 periods.', parameters: { type: 'object', properties: { days: { type: 'integer', description: '7 weekly (default), 30 monthly, or 1 to 90' } } } },
   { name: 'get_instagram_stats', description: 'Stats for ALL Instagram posts of the account (every post since the start, not only the ones this system made): count, totals and averages, averages by format and by month, and the top and bottom posts by a metric. Filter by dates. Use it for any question about past posts or performance.', parameters: { type: 'object', properties: {
     from: { type: 'string', description: 'YYYY-MM-DD, optional' }, to: { type: 'string', description: 'YYYY-MM-DD, optional' },
@@ -168,6 +168,7 @@ const TOOLS = [
     time: { type: 'string', description: 'For reschedule: time as Mahir said it, in Turkey time unless he said NY, like "21:30", "yarın 10:00", "NY 18:00"' },
     priority: { type: 'integer', enum: [1, 2, 3] },
   }, required: ['action', 'id'] } },
+  { name: 'calculate', description: 'Exact arithmetic. Use it for every percentage, ratio, difference or sum that is not already in the tool data. Never do math in your head.', parameters: { type: 'object', properties: { expression: { type: 'string', description: 'Numbers and + - * / ( ) only, e.g. (12161-6387)/6387*100' } }, required: ['expression'] } },
   { name: 'propose_memory', description: 'Save, update or delete a long-term memory note (editorial preference, standing instruction, past decision, operational fact) that both this assistant and the Claude news desk follow. Mahir confirms with a button. Use it when he asks you to remember something, sets a rule ("from now on", "always", "never", "kural", "hatırla", "unutma"), or explains a lasting reason for a decision. Not for small talk. Before adding, compare with the current memory: if a note covers the same thing, use op "replace" with its id; if a new rule contradicts an old one, replace the old one. For temporary instructions ("this week", "until Sunday") set expires_at.', parameters: { type: 'object', properties: {
     op: { type: 'string', enum: ['add', 'replace', 'delete'] },
     id: { type: 'string', description: 'Existing note id, for replace or delete' },
@@ -221,6 +222,11 @@ async function runTool(env, name, args) {
   }
   if (name === 'get_instagram_stats') return postStats(env, args);
   if (name === 'get_account_stats') { const d = Math.min(30, Math.max(1, Number(args.days) || 7)); return cached(env, `acct${d}`, 900, () => accountSummary(env, d)); }
+  if (name === 'calculate') {
+    const ex = String(args.expression || '').replace(/,/g, '');
+    if (!/^[\d\s+\-*/().%]+$/.test(ex)) return 'Only numbers and + - * / ( ) are allowed.';
+    try { const v = Function(`"use strict";return (${ex.replace(/%/g, '/100')})`)(); return Number.isFinite(v) ? String(Math.round(v * 100) / 100) : 'not a number'; } catch { return 'invalid expression'; }
+  }
   if (name === 'propose_memory') {
     await proposeMemory(env, { op: args.op || 'add', id: args.id, category: args.category, text: args.text, expires_at: args.expires_at, source: `telegram ${new Date().toISOString().slice(0, 10)}`, why: args.why });
     return 'A confirmation with buttons was sent to Mahir. Tell him in one short sentence to confirm with the button.';
@@ -247,7 +253,7 @@ async function chat(env, question) {
   const system = `Sen NeuraFeed Asistanısın: DeepSeek (${env.DEEPSEEK_MODEL || 'deepseek-v4-pro'}) modeliyle çalışan, @neurafeed.ai Instagram hesabının asistanısın. Claude değilsin; Claude ayrı bir agent olarak haber masasını yönetiyor (haber bulma, yazma, tasarım). Sana hangi model olduğun sorulursa bunu söyle. (İngilizce yapay zeka haberleri, Amerikan kitlesi). Sahibi Mahir ile Türkçe, kısa ve net konuşursun, "kanka" diyebilirsin. Markdown kullanma, düz metin ve kısa listeler yaz.
 Sistem: Claude 2 saatte bir haber bulup carousel hazırlıyor; normal postlar New York saatiyle 07:00-09:30, 11:00-13:30, 17:00-22:00 arasında, en az 60 dakika arayla, günde en fazla 8 tane çıkar. Mahir bota link atarsa post olur; o postlar onun onayıyla, limitten ayrı ve istediği saatte çıkar.
 Şu an Türkiye: ${tr}, New York: ${ny}.
-Kuyruk ve Instagram verisi gerekiyorsa araçları kullan (get_queue, get_instagram_stats: hesabın TÜM postları, ilk günden beri, tarih ve format filtresiyle, get_account_stats: takipçi sayısı, günlük erişim, takipçi değişimi, kitle demografisi). "Göremiyorum" deme, önce aracı çağır. Bir posta işlem istenirse propose_action kullan, işlem butonla onaylanınca yapılır; "yaptım" deme, "onay butonuna bas" de. Sadece araçlardan gelen verilere dayan, sayı uydurma.
+Kuyruk ve Instagram verisi gerekiyorsa araçları kullan (get_queue, get_instagram_stats: hesabın TÜM postları, ilk günden beri, tarih ve format filtresiyle, get_account_stats: takipçi sayısı, günlük erişim, takipçi değişimi, kitle demografisi). "Göremiyorum" deme, önce aracı çağır. Bir posta işlem istenirse propose_action kullan, işlem butonla onaylanınca yapılır; "yaptım" deme, "onay butonuna bas" de. Sadece araçlardan gelen verilere dayan, sayı uydurma. Hesap gerekiyorsa (yüzde, oran, fark) kafadan yapma, calculate aracını kullan.
 Mahir "onaylıyorum", "evet" gibi kısa onaylar yazarsa yeni bir öneri oluşturma; bunlar otomatik işlenir.
 Kalıcı hafıza (Mahir'in kayıtlı tercihleri ve talimatları, bunlara uy; değiştirmek veya eklemek için propose_memory kullan, en fazla 50 madde, temel kurallar (haber uydurmamak, kopyalamamak, kaynak göstermek) hafızayla değişmez):
 ${memory}`;
@@ -475,10 +481,15 @@ async function postStats(env, a = {}) {
   const keys = ['views', 'reach', 'likes', 'comments', 'saved', 'shares', 'total_interactions'];
   const agg = (list) => { const o = { posts: list.length }; for (const k of keys) { const s = list.reduce((x, r) => x + r[k], 0); o[`total_${k}`] = s; o[`avg_${k}`] = list.length ? Math.round(s / list.length) : 0; } return o; };
   const group = (fn) => { const g = {}; for (const r of rows) (g[fn(r)] ||= []).push(r); return Object.fromEntries(Object.entries(g).map(([k, v]) => [k, agg(v)])); };
+  // Ready-made comparisons so the model never has to do the math itself.
+  const months = Object.entries(group((r) => r.t.slice(0, 7))).sort(([a], [b]) => a.localeCompare(b));
+  const change = (a, b) => (b ? Math.round(((a - b) / b) * 1000) / 10 : null);
+  const monthTrend = months.map(([m, v], i) => ({ month: m, posts: v.posts, avg_views: v.avg_views, avg_views_change_pct: i ? change(v.avg_views, months[i - 1][1].avg_views) : null, total_views: v.total_views, total_views_change_pct: i ? change(v.total_views, months[i - 1][1].total_views) : null }));
   const sorted = [...rows].sort((x, y) => y[by] - x[by]);
   return JSON.stringify({
     filter: { from: a.from || rows.at(-1)?.t?.slice(0, 10), to: a.to || rows[0]?.t?.slice(0, 10), format: a.format || 'any', sorted_by: by },
-    overall: agg(rows), by_format: group((r) => r.f), by_month: group((r) => r.t.slice(0, 7)),
+    overall: { ...agg(rows), interactions_per_1000_views: (() => { const v = rows.reduce((x, r) => x + r.views, 0); return v ? Math.round((rows.reduce((x, r) => x + r.total_interactions, 0) / v) * 10000) / 10 : null; })() },
+    by_format: group((r) => r.f), month_trend: monthTrend,
     top: sorted.slice(0, n), bottom: sorted.slice(-n).reverse(),
   });
 }
@@ -494,6 +505,8 @@ async function accountSummary(env, days) {
     get(`${env.IG_USER_ID}/insights?metric=reach,follower_count&period=day&since=${since}&until=${until}`).catch((e) => ({ error: e.message })),
     ...['country', 'city', 'age', 'gender'].map((b) => get(`${env.IG_USER_ID}/insights?metric=follower_demographics&period=lifetime&metric_type=total_value&breakdown=${b}`).catch((e) => ({ error: e.message }))),
   ]);
+  const tf = days <= 7 ? 'this_week' : 'this_month';
+  const viewers = await Promise.all(['country', 'age'].map((b) => get(`${env.IG_USER_ID}/insights?metric=reached_audience_demographics&period=lifetime&timeframe=${tf}&metric_type=total_value&breakdown=${b}`).catch((e) => ({ error: e.message }))));
   const series = {};
   for (const m of daily.data || []) series[m.name] = (m.values || []).map((v) => ({ day: v.end_time?.slice(0, 10), value: v.value }));
   const top = (r) => {
@@ -504,6 +517,7 @@ async function accountSummary(env, days) {
     username: acct.username, followers: acct.followers_count, following: acct.follows_count, posts: acct.media_count,
     daily_reach: series.reach || daily.error || [], daily_new_followers: series.follower_count || [],
     followers_by_country: top(demo[0]), followers_by_city: top(demo[1]), followers_by_age: top(demo[2]), followers_by_gender: top(demo[3]),
+    viewers_timeframe: tf, viewers_by_country: top(viewers[0]), viewers_by_age: top(viewers[1]),
   });
 }
 
