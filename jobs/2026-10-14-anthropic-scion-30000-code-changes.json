@@ -1,0 +1,122 @@
+{
+  "id": "2026-10-14-anthropic-scion-30000-code-changes",
+  "created_at": "2026-10-14T10:30:00Z",
+  "story_time": "2026-10-13T15:49:00Z",
+  "timely": false,
+  "sensitive": false,
+  "priority": 1,
+  "sources": [
+    {
+      "name": "The Register",
+      "url": "https://www.theregister.com/devops/2026/10/13/anthropic-reinvents-source-control-as-claude-floods-the-world-with-code/5302943"
+    },
+    {
+      "name": "Simon Willison",
+      "url": "https://simonwillison.net/2026/Oct/13/redesigning-source-control-at-anthropic/"
+    },
+    {
+      "name": "Crypto Briefing",
+      "url": "https://cryptobriefing.com/anthropic-code-merges-10x-scion-git/"
+    },
+    {
+      "name": "Anthropic Engineering",
+      "url": "https://www.anthropic.com/engineering/redesigning-source-control"
+    }
+  ],
+  "caption": "Claude now writes code so fast that Anthropic outgrew Git.\nThe company went from about 2,500 merged code changes a day in May to over 30,000 a day in September.\nIts answer is Scion, a new in-house source control system built with help from Claude.\n\nIs your team ready for 10x more code?\n\nFollow @neurafeed.ai for daily AI news.\n\nSource: The Register",
+  "slides": [
+    {
+      "kind": "cover",
+      "headline": "Claude writes so much code that Anthropic had to *replace Git* to keep up",
+      "image": {
+        "url": "https://image.theregister.com/5302950.jpg",
+        "credit": "The Register",
+        "fallback_urls": [
+          "https://cdn.nairametrics.com/wp-content/uploads/2026/09/anthropic-1.webp"
+        ],
+        "generate": "Vertical photo inside a dim modern software office at night. A young software engineer sits at a desk, leaning back in shock with both hands on his head, as an enormous wave of printed paper pages pours out of his monitor and spills over the desk and onto the floor around him, piling up higher than his chair. The paper pages are blank, no readable text. The warm light in the room has the same orange tone as the mark in the first image. The engineer and the wave of paper fill the upper two thirds of the frame, with headroom above his head. The left third of the frame is empty dark background. The bottom third is the dark floor covered in paper. Blank surfaces, no readable text or labels on any object, no letters, no logos, no watermarks. Photorealistic, high contrast, one clear subject. It must look like an unedited real photo from a news agency, not a painting, not digital art, no glow effects.",
+        "refs": [
+          "assets/logos/claude.png"
+        ]
+      },
+      "pos": "center 30%",
+      "badges": [
+        {
+          "url": "assets/logos/claude.png",
+          "shape": "free",
+          "side": "left",
+          "cutout": true
+        }
+      ]
+    },
+    {
+      "kind": "text",
+      "heading": "From 2,500 to *30,000 a day*",
+      "paras": [
+        "Anthropic says it averaged about 2,500 merged code changes per day in May 2026. By September, it was merging over 30,000 per day.",
+        "Its new engineering post says that jump comes from Claude writing more and more of the company's code."
+      ],
+      "image": {
+        "url": "https://media.thenextweb.com/2026/08/anthropic-in-house-chip-team-custom-silicon-claude.jpg",
+        "credit": "jackpress / Shutterstock",
+        "fallback_urls": [
+          "https://cdn.nairametrics.com/wp-content/uploads/2026/09/anthropic-1.webp"
+        ]
+      }
+    },
+    {
+      "kind": "text",
+      "heading": "Git *could not keep up*",
+      "paras": [
+        "The main branch is about 100 GB. Anthropic runs roughly 25 million code checkouts a day just for testing.",
+        "Fetching that naively with Git would mean over 600 petabytes of traffic per day, the company estimates."
+      ],
+      "image": {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5d/BalticServers_data_center.jpg/1920px-BalticServers_data_center.jpg",
+        "credit": "BalticServers.com / CC BY-SA 3.0"
+      }
+    },
+    {
+      "kind": "text",
+      "heading": "Meet *Scion*",
+      "paras": [
+        "Scion is Anthropic's new centralized source control system. A seven-person team built it, and the move away from Git took five months.",
+        "Claude Mythos Preview rewrote an early part of it, making it use 20 times less memory and run four times faster."
+      ],
+      "image": {
+        "url": "https://cdn.nairametrics.com/wp-content/uploads/2026/09/anthropic-1.webp",
+        "credit": "Nairametrics",
+        "fallback_urls": [
+          "https://media.thenextweb.com/2026/07/anthropic-dario-amodei-open-weights-position-not-ban.avif"
+        ]
+      }
+    },
+    {
+      "kind": "text",
+      "heading": "Engineers who *say no*",
+      "paras": [
+        "\"Very often, we found that the role of the engineers was to tell Claude 'no,'\" Anthropic wrote.",
+        {
+          "t": "Anthropic says demand for merging code is \"practically infinite.\" Scion will not be open sourced.",
+          "strong": true
+        }
+      ],
+      "image": {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/da/Dario_Amodei_at_TechCrunch_Disrupt_2023_01.jpg/1920px-Dario_Amodei_at_TechCrunch_Disrupt_2023_01.jpg",
+        "credit": "TechCrunch / CC BY 2.0"
+      },
+      "pos": "center 25%"
+    },
+    {
+      "kind": "cta",
+      "hook": "Anthropic is now merging 30,000 changes a day. Follow to see what happens when every company codes this fast.",
+      "image": {
+        "url": "https://media.thenextweb.com/2026/07/anthropic-dario-amodei-open-weights-position-not-ban.avif",
+        "credit": "The Next Web",
+        "fallback_urls": [
+          "https://d3lzcn6mbbadaf.cloudfront.net/media/details/ANI-20261013051136.jpg"
+        ]
+      }
+    }
+  ]
+}
