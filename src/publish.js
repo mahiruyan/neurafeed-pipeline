@@ -196,6 +196,19 @@ async function publishThreads(job, files) {
   return { id: pub.id, type: job.type === 'reel' ? 'video' : (files.length > 1 ? 'carousel' : 'image') };
 }
 
+// Same caption on Instagram in the last 3 days = this job is already out. Used before every publish
+// so a run that posted but could not save its state never posts the same thing twice.
+const norm = (t) => String(t || '').replace(/\s+/g, ' ').trim().toLowerCase();
+async function alreadyPosted(job) {
+  if (!instagramEnabled() || !job?.caption) return null;
+  const res = await fetch(`${GRAPH}/${IG_USER}/media?fields=id,caption,timestamp&limit=25&access_token=${encodeURIComponent(IG_TOKEN)}`);
+  const d = await res.json();
+  if (d.error) throw new Error(d.error.message);
+  const want = norm(job.caption);
+  const since = Date.now() - 3 * 864e5;
+  return (d.data || []).find((m) => norm(m.caption) === want && new Date(m.timestamp).getTime() > since) || null;
+}
+
 async function publish(job, files) {
   if (!instagramEnabled()) return publishManual(job, files);
   const result = job.type === 'reel' ? await publishReel(job, files) : await publishInstagram(job, files);
@@ -215,4 +228,4 @@ async function publish(job, files) {
   return result;
 }
 
-module.exports = { publish, instagramEnabled, threadsText };
+module.exports = { publish, instagramEnabled, threadsText, alreadyPosted };

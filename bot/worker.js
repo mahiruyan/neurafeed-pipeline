@@ -123,6 +123,13 @@ async function handle(u, env) {
       return send(env, `👍 İşleme alındı (${a.action}: ${a.id}). 1-2 dakika içinde uygulanır.`, cb.message.message_id);
     }
     if (!['ok', 'no'].includes(action) || !id) return;
+    // Old preview buttons: do not say "approved" for a post that was replaced, canceled or already out.
+    const st = JSON.parse((await repoFile(env, `state/jobs/${id}.json`).catch(() => null)) || 'null');
+    if (st && st.status !== 'pending') {
+      await tg(env, 'answerCallbackQuery', { callback_query_id: cb.id, text: `Bu post artık beklemede değil (${st.status})` });
+      await tg(env, 'editMessageReplyMarkup', { chat_id: owner, message_id: cb.message.message_id, reply_markup: { inline_keyboard: [] } }).catch(() => {});
+      return send(env, `ℹ️ ${id} artık onay beklemiyor (durum: ${st.status}${st.history?.at(-1)?.by ? `, ${st.history.at(-1).by}` : ''}). Bir işlem yapmadım.`, cb.message.message_id);
+    }
     await queueAction(env, action, id);
     await tg(env, 'answerCallbackQuery', { callback_query_id: cb.id, text: action === 'ok' ? 'Onaylandı' : 'Reddedildi' });
     await tg(env, 'editMessageReplyMarkup', { chat_id: owner, message_id: cb.message.message_id, reply_markup: { inline_keyboard: [] } }).catch(() => {});
@@ -218,6 +225,7 @@ const TOOLS = [
     text: { type: 'string', description: 'The task for Claude in clear English, specific (which slide, what to change, what angle)' },
     original: { type: 'string', description: 'What Mahir asked, short, in Turkish, shown back to him' },
     job_id: { type: 'string', description: 'Exact job id when the request is about an existing post, else omit' },
+    retry_of: { type: 'string', description: 'task_id of a failed request when Mahir asks to try it again (get_desk_log shows it), else omit' },
   }, required: ['text'] } },
   { name: 'calculate', description: 'Exact arithmetic. Use it for every percentage, ratio, difference or sum that is not already in the tool data. Never do math in your head.', parameters: { type: 'object', properties: { expression: { type: 'string', description: 'Numbers and + - * / ( ) only, e.g. (12161-6387)/6387*100' } }, required: ['expression'] } },
   { name: 'propose_memory', description: 'Save, update or delete a long-term memory note (editorial preference, standing instruction, past decision, operational fact) that both this assistant and the Claude news desk follow. Mahir confirms with a button. Use it when he asks you to remember something, sets a rule ("from now on", "always", "never", "kural", "hatırla", "unutma"), or explains a lasting reason for a decision. Not for small talk. Before adding, compare with the current memory: if a note covers the same thing, use op "replace" with its id; if a new rule contradicts an old one, replace the old one. For temporary instructions ("this week", "until Sunday") set expires_at.', parameters: { type: 'object', properties: {
@@ -283,7 +291,7 @@ async function runTool(env, name, args) {
   if (name === 'propose_request') {
     if (!String(args.text || '').trim()) return 'Write the task first.';
     const key = crypto.randomUUID().slice(0, 8);
-    const r = { text: String(args.text).trim().slice(0, 1500), original: String(args.original || '').trim().slice(0, 500), job_id: args.job_id || null };
+    const r = { text: String(args.text).trim().slice(0, 1500), original: String(args.original || '').trim().slice(0, 500), job_id: args.job_id || null, retry_of: args.retry_of || null };
     await env.KV.put(`req:${key}`, JSON.stringify(r), { expirationTtl: 7 * 86400 });
     await env.KV.put('last_pending', `rdo:${key}`, { expirationTtl: 3600 });
     await tg(env, 'sendMessage', { chat_id: env.OWNER_CHAT_ID, text: `📝 Claude'a iletilsin mi?\n${r.original || r.text}${r.job_id ? `\nPost: ${r.job_id}` : ''}\n(Claude bir sonraki çalışmasında, en geç ~2 saatte yapar, sonucu buraya yazarım.)`, reply_markup: { inline_keyboard: [[{ text: '✅ Gönder', callback_data: `rdo:${key}` }, { text: '❌ Vazgeç', callback_data: `rundo:${key}` }]] } });
@@ -514,9 +522,10 @@ async function postContent(env, id) {
   const raw = await repoFile(env, `jobs/${id}.json`);
   if (!raw) return `No post with id ${id}. Call get_queue for the exact id.`;
   const j = JSON.parse(raw);
+  const st = JSON.parse((await repoFile(env, `state/jobs/${id}.json`).catch(() => null)) || 'null');
   const img = (i) => (!i ? null : i.generate ? { ai_generated: true, prompt: i.generate, fallback_photo: i.url || null } : { url: i.url, credit: i.credit || null });
   return JSON.stringify({
-    id: j.id, type: j.type || 'carousel', format: j.format || 'news', priority: j.priority || 2, timely: j.timely, sensitive: j.sensitive,
+    id: j.id, status: st?.status || 'not rendered yet', status_by: st?.history?.at(-1)?.by || null, posted_at: st?.posted_at || null, type: j.type || 'carousel', format: j.format || 'news', priority: j.priority || 2, timely: j.timely, sensitive: j.sensitive,
     story_time: j.story_time, from_link: j.link_id || null, replaces: j.replaces || null, post_at: j.post_at || null, sources: j.sources,
     hook: j.hook, video: j.video?.url, caption: j.caption,
     slides: (j.slides || []).map((sl, i) => ({ n: i + 1, kind: sl.kind, headline: sl.headline, heading: sl.heading,
@@ -528,10 +537,13 @@ async function deskLog(env, hours) {
   const log = parseList(await repoFile(env, 'desk/log.json'));
   const since = Date.now() - hours * 3600e3;
   const runs = log.filter((r) => new Date(r.run_at).getTime() >= since);
-  const handled = new Set(log.flatMap((r) => (r.requests || []).filter((q) => q.status !== 'waiting').map((q) => q.id)));
-  const waiting = parseList(await repoFile(env, 'inbox/requests.json')).filter((q) => !handled.has(q.id)).map((q) => ({ id: q.id, asked: q.original || q.text, job_id: q.job_id, at: q.created_at }));
-  const out = JSON.stringify({ runs, requests_waiting: waiting, note: log.length ? undefined : 'The desk has not written a log yet (it starts with its next run).' });
-  return out.length > 24000 ? JSON.stringify({ runs: runs.slice(-6), requests_waiting: waiting, note: 'Only the last 6 runs shown, ask for fewer hours for more detail.' }) : out;
+  // Task status comes from state/requests.json (computed by the pipeline from facts, not claims).
+  const status = JSON.parse((await repoFile(env, 'state/requests.json').catch(() => null)) || '{}');
+  const requests = parseList(await repoFile(env, 'inbox/requests.json')).filter((q) => new Date(q.created_at).getTime() >= since || ['pending', 'running'].includes(status[q.id]?.status || 'pending'))
+    .map((q) => ({ task_id: q.id, asked: q.original || q.text, about_post: q.job_id, at: q.created_at, status: status[q.id]?.status || 'pending', post: status[q.id]?.job_id || null, result: status[q.id]?.result || null }));
+  const note = log.length ? undefined : 'The desk has not written a log yet (it starts with its next run).';
+  const out = JSON.stringify({ requests, runs, note, statuses: 'pending = waiting for the next desk run (every 2 hours), running = post being made, completed, failed' });
+  return out.length > 24000 ? JSON.stringify({ requests, runs: runs.slice(-6), note: 'Only the last 6 runs shown, ask for fewer hours for more detail.' }) : out;
 }
 
 async function queueSummary(env) {

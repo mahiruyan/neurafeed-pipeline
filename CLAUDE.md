@@ -222,14 +222,19 @@ his questions, and it can send you tasks in `inbox/requests.json`
 (`{ id, text, original, job_id, created_at }`; `text` is the task in English, `original` is
 his words in Turkish).
 
-Requests: every run, after the links and before other work, handle every request that has no
-`done` or `cannot` entry in `desk/log.json`. They are Mahir's own instructions, so they come first.
+Requests: every run, after the links and before other work, handle every OPEN request. A request
+is open when its `id` is in `inbox/requests.json`, its status in `state/requests.json` is
+`pending` or missing (the pipeline computes it: pending, running, completed, failed), and no file
+in jobs/ has that `request_id` yet. Never handle a request twice: if a job with its `request_id`
+exists, it is already being made. Failed requests are not retried on your own; Mahir retries by
+sending a new request (it has `retry_of`). They are Mahir's own instructions, so they come first.
 - Cover a story or make a post on a topic: write the job as usual (all rules apply, sources
   included), `priority: 1`, `"request_id"` set. Not `review` unless he asked to see it first.
 - Change a queued post (`job_id` given): write a corrected copy as a NEW job file with id
-  `<old id>-v2` (then `-v3`), `"replaces": "<old id>"` and `"request_id"`. Keep everything he did not
+  `<original id>-v2` (then `-v3`), `"replaces": "<the newest existing version>"` and `"request_id"`. Keep everything he did not
   ask to change, including `story_time`, `priority`, `review`, `link_id` and `post_at`. The pipeline withdraws the old
-  one. If the old post is already `posted` (check state/jobs/), do not write a copy: answer `cannot`.
+  one (and every earlier version) before the fix is rendered, and an old version can never be approved or
+published again. If the old post is already `posted` (check state/jobs/), do not write a copy: answer `cannot`.
 - If a request is impossible or would break a rule (invent facts, copy another account, post
   without sources), answer `cannot` and say why in one sentence. If it needs something you
   cannot do in this run, answer `waiting` with the reason (it stays open for the next run).

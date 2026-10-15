@@ -4,11 +4,14 @@
   "version": "0.1.0",
   "description": "NeuraFeed news carousel pipeline: render, Telegram approval, publish.",
   "type": "commonjs",
-  "engines": { "node": ">=20" },
+  "engines": {
+    "node": ">=20"
+  },
   "scripts": {
     "process": "node src/process.js",
     "poll": "node src/poll.js",
-    "render": "node src/render.js"
+    "render": "node src/render.js",
+    "test": "node --test test/*.test.js"
   },
   "dependencies": {
     "@fontsource/anton": "^5.0.0",

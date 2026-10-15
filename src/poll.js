@@ -1,10 +1,11 @@
 // Runs every few minutes: reads Telegram button presses, applies the night rule,
 // expires stale news, respects the daily cap and publishes approved posts.
 const path = require('path');
-const { ROOT, setJobState, allJobStates, getTelegram, setTelegram, loadJob, config, writeSummary } = require('./state');
+const { ROOT, setJobState, allJobStates, getTelegram, setTelegram, loadJob, config, writeSummary, replacedBy, readJson, writeJson } = require('./state');
+const { syncRequests } = require('./requests');
 const rules = require('./rules');
 const tg = require('./telegram');
-const { publish } = require('./publish');
+const { publish, alreadyPosted } = require('./publish');
 const inbox = require('./inbox');
 
 // Reads everything the bot received: Approve / Reject buttons (manual mode) and links
@@ -62,16 +63,17 @@ process.on('beforeExit', () => { try { writeSummary(); } catch (e) { console.log
 
   // Links the news desk could not turn into a post: tell Mahir why.
   if (tg.enabled()) {
-    const fs = require('fs');
-    const f = path.join(ROOT, 'inbox', 'skipped.json');
-    let skipped = [];
-    try { skipped = JSON.parse(fs.readFileSync(f, 'utf8')); } catch { /* none */ }
-    let changed = false;
-    for (const sk of skipped.filter((x) => !x.notified)) {
+    // Which ones were already told lives in state/ (Actions own it), so this never edits the
+    // inbox file the news desk appends to, and a push from either side cannot conflict.
+    const skipped = readJson(path.join(ROOT, 'inbox', 'skipped.json'), []);
+    const seenFile = path.join(ROOT, 'state', 'skipped_notified.json');
+    const seen = readJson(seenFile, []);
+    for (const sk of skipped.filter((x) => !x.notified && !seen.includes(x.link_id || x.url))) {
+      seen.push(sk.link_id || sk.url);
+      writeJson(seenFile, seen.slice(-300));
       await tg.sendMessage(`🤷 I could not make a post from your link:\n${sk.url || sk.link_id}\nWhy: ${sk.reason}\nTip: send the original news link, or add what it is about in your note.`).catch(() => {});
-      sk.notified = true; changed = true;
     }
-    if (changed) fs.writeFileSync(f, JSON.stringify(skipped, null, 2) + '\n');
+    await syncRequests({ send: (t) => tg.sendMessage(t) }).catch((e) => console.log(`::warning::requests: ${e.message}`));
   }
 
   const now = new Date();
@@ -105,8 +107,21 @@ process.on('beforeExit', () => { try { writeSummary(); } catch (e) { console.log
       setJobState(st.id, { status: 'test_done', by: 'test job, not published' });
       return true;
     }
+    // A corrected version exists: the old one is withdrawn, never published.
+    const newer = replacedBy(st.id);
+    if (newer) {
+      setJobState(st.id, { status: 'canceled', by: `replaced by ${newer}` });
+      return true;
+    }
     const files = (st.files || []).map((f) => path.join(ROOT, f));
     try {
+      // Idempotency: if a run published it but could not save that, do not post it again.
+      const existing = await alreadyPosted(job).catch((e) => { console.log(`::warning::duplicate check failed: ${e.message}`); return null; });
+      if (existing) {
+        setJobState(st.id, { status: 'posted', posted_at: existing.timestamp, publish: { mode: 'instagram', media_id: existing.id, recovered: true } });
+        if (tg.enabled()) await tg.sendMessage(`ℹ️ ${st.id} was already on Instagram (saved state was behind). Not posted again.`).catch(() => {});
+        return true;
+      }
       const result = await publish(job, files);
       setJobState(st.id, { status: 'posted', posted_at: new Date().toISOString(), publish: result });
       if (tg.enabled() && st.message_id) {

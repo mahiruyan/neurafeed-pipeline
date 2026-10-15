@@ -2,7 +2,7 @@
 const fs = require('fs');
 const path = require('path');
 
-const ROOT = path.join(__dirname, '..');
+const ROOT = process.env.NF_ROOT || path.join(__dirname, '..');
 const STATE = path.join(ROOT, 'state');
 const JOBS_STATE = path.join(STATE, 'jobs');
 
@@ -35,6 +35,17 @@ const getTelegram = () => readJson(telegramPath, { offset: 0 });
 const setTelegram = (d) => writeJson(telegramPath, d);
 
 const loadJob = (id) => readJson(path.join(ROOT, 'jobs', `${id}.json`), null);
+// A corrected version ("replaces": id) withdraws the old one. Returns the newest job that replaces
+// `id`, or null. Used so an old version can never be approved or published once a fix exists.
+function replacedBy(id) {
+  const dir = path.join(ROOT, 'jobs');
+  if (!fs.existsSync(dir)) return null;
+  for (const f of fs.readdirSync(dir).filter((x) => x.endsWith('.json')).sort().reverse()) {
+    const j = readJson(path.join(dir, f), null);
+    if (j && j.replaces === id && j.id !== id) return j.id;
+  }
+  return null;
+}
 const config = () => readJson(path.join(ROOT, 'config.json'), {});
 
 // One small file the Telegram bot reads to know the queue (last 4 days of jobs).
@@ -55,4 +66,4 @@ function writeSummary() {
   writeJson(path.join(STATE, 'summary.json'), { updated_at: new Date().toISOString(), jobs: rows });
 }
 
-module.exports = { ROOT, getJobState, setJobState, allJobStates, getTelegram, setTelegram, loadJob, config, readJson, writeSummary };
+module.exports = { replacedBy, writeJson, ROOT, getJobState, setJobState, allJobStates, getTelegram, setTelegram, loadJob, config, readJson, writeSummary };

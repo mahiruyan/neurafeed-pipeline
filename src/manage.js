@@ -2,7 +2,7 @@
 // Used by src/apply-actions.js (and runnable alone: node src/manage.js <action> <job id> [value]).
 const fs = require('fs');
 const path = require('path');
-const { ROOT, getJobState, setJobState, loadJob, writeSummary } = require('./state');
+const { ROOT, getJobState, setJobState, loadJob, writeSummary, replacedBy } = require('./state');
 
 function manage(action, id, value) {
   const file = path.join(ROOT, 'jobs', `${id}.json`);
@@ -10,6 +10,9 @@ function manage(action, id, value) {
   const st = getJobState(id);
   const saveJob = (j) => fs.writeFileSync(file, JSON.stringify(j, null, 2) + '\n');
   if (!job || !st) return `no such job: ${id}`;
+  // An old version must never be brought back once a corrected version exists.
+  const newer = replacedBy(id);
+  if (newer && ['post_now', 'reschedule', 'approve', 'ok'].includes(action)) return `${id} was replaced by ${newer}, use that one`;
   const open = ['approved', 'held_cap', 'pending', 'publish_failed', 'queued', 'rendered'];
   switch (action) {
     case 'cancel':

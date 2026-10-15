@@ -9,6 +9,7 @@ on:
 
 permissions:
   contents: write
+  actions: write
 
 concurrency:
   group: pipeline-state
@@ -19,12 +20,34 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 10
     steps:
+      # Always the newest main: a run that waited in the queue must not work from the commit it was
+      # started for, or it would act on old state (lost approvals, double posts, failed saves).
       - uses: actions/checkout@v4
+        with:
+          ref: main
       - uses: actions/setup-node@v4
         with:
           node-version: 20
       - name: Safety net for the bot (pending link previews and actions)
         run: node src/linkpreview.js && node src/apply-actions.js
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+      - name: Safety net for rendering (a waiting render run can be cancelled by GitHub)
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          n=$(node -e "
+            const fs=require('fs');const {getJobState,loadJob}=require('./src/state');
+            const ids=fs.readdirSync('jobs').filter(f=>f.endsWith('.json')&&!f.startsWith('_')).map(f=>f.slice(0,-5));
+            const fresh=(id)=>Date.now()-Date.parse(loadJob(id)?.created_at||0)<48*3600e3;
+            console.log(ids.filter(id=>{const st=getJobState(id);return (!st||st.status==='queued')&&fresh(id);}).length)")
+          echo "Jobs waiting for render: $n"
+          if [ "$n" -gt 0 ]; then
+            curl -s -X POST -H "Authorization: Bearer $GH_TOKEN" -H "Accept: application/vnd.github+json" \
+              "https://api.github.com/repos/${{ github.repository }}/actions/workflows/process.yml/dispatches" -d '{"ref":"main"}'
+            echo "::notice::$n job(s) were not rendered yet, started the render workflow"
+          fi
       - run: node src/poll.js
         env:
           PUPPETEER_SKIP_DOWNLOAD: 'true'
@@ -37,10 +60,8 @@ jobs:
           PUBLIC_IMAGE_BASE: https://raw.githubusercontent.com/mahiruyan/neurafeed-media/main
           PUBLIC_VIDEO_BASE: https://mahiruyan.github.io/neurafeed-media
       - name: Save state
-        run: |
-          git config user.name "neurafeed-bot"
-          git config user.email "neurafeed-bot@users.noreply.github.com"
-          git add state inbox jobs
-          git diff --cached --quiet || git commit -m "pipeline: approvals [skip ci]"
-          git pull --rebase --autostash origin main
-          git push
+        if: always()
+        run: 'scripts/save.sh "pipeline: approvals" state inbox jobs'
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}

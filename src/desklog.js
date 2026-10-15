@@ -5,13 +5,13 @@
 const fs = require('fs');
 const path = require('path');
 
-const ROOT = path.join(__dirname, '..');
-const FILE = path.join(ROOT, 'desk', 'log.json');
+const { ROOT } = require('./state');
 const DECISIONS = new Set(['queued', 'skipped', 'covered']);
 const REQ_STATUS = new Set(['done', 'cannot', 'waiting']);
 
+const file = () => path.join(ROOT, 'desk', 'log.json');
 function readLog() {
-  try { return JSON.parse(fs.readFileSync(FILE, 'utf8')); } catch { return []; }
+  try { return JSON.parse(fs.readFileSync(file(), 'utf8')); } catch { return []; }
 }
 
 function check(e) {
@@ -40,8 +40,8 @@ function add(entry) {
   const e = { run_at: new Date().toISOString(), ...entry };
   const cutoff = Date.now() - 7 * 864e5;
   const log = [...readLog().filter((x) => new Date(x.run_at).getTime() > cutoff), e].slice(-120);
-  fs.mkdirSync(path.dirname(FILE), { recursive: true });
-  fs.writeFileSync(FILE, JSON.stringify(log, null, 2) + '\n');
+  fs.mkdirSync(path.dirname(file()), { recursive: true });
+  fs.writeFileSync(file(), JSON.stringify(log, null, 2) + '\n');
   return [];
 }
 
