@@ -162,5 +162,61 @@
       }
     ],
     "requests": []
+  },
+  {
+    "run_at": "2026-10-15T18:01:21.940Z",
+    "summary": "Afternoon run: no open links or requests; queued Meta's Muse Spark Open release (priority 1, breaking at 17:00 UTC) even though today already had 8 news jobs, because priority 1 stories must not be skipped; the posting cap of 8 still applies, so a priority 2 job may slip.",
+    "considered": [
+      {
+        "story": "Meta releases Muse Spark Open, an 816B open-weight model that runs on two Mac Studios",
+        "source": "https://thenewstack.io/meta-muse-spark-open/",
+        "decision": "queued",
+        "job_id": "2026-10-15-meta-muse-spark-open-mac-studio",
+        "priority": 1,
+        "reason": "Major Meta launch from today, confirmed by The New Stack, Engadget and 9to5Mac. No generated cover because today already has 2."
+      },
+      {
+        "story": "FTC subpoenas OpenAI and Anthropic over AI safety incidents",
+        "decision": "covered",
+        "reason": "Already queued as 2026-10-15-ftc-subpoenas-openai-anthropic (waiting for approval)."
+      },
+      {
+        "story": "Nvidia's European spending spree (Fortune analysis)",
+        "source": "https://fortune.com/2026/10/15/nvidias-european-spending-spree-is-about-much-more-than-europe/",
+        "decision": "covered",
+        "reason": "Analysis of a story already posted as 2026-10-14-nvidia-europe-2-billion-uk-safety."
+      },
+      {
+        "story": "FBI arrests OpenAI employee accused of bugging an office",
+        "decision": "skipped",
+        "reason": "Sensitive crime story and today is already over the job cap."
+      },
+      {
+        "story": "NYC comptroller urges Anthropic to delay its IPO",
+        "decision": "skipped",
+        "reason": "Anthropic IPO and revenue already posted today; today is over the cap."
+      },
+      {
+        "story": "Trump's AI task force meets Thursday, per FTC",
+        "decision": "skipped",
+        "reason": "Political and thin on details, today is over the cap."
+      },
+      {
+        "story": "Daniela Amodei says AI girlfriends and boyfriends are a terrible use of AI",
+        "decision": "skipped",
+        "reason": "Interview remark, kept as possible filler for tomorrow."
+      },
+      {
+        "story": "Sergey Brin says Google's models are near self-improvement",
+        "decision": "skipped",
+        "reason": "Not reconfirmed with a second source this run, and today is over the cap."
+      },
+      {
+        "story": "AI stocks slide over data center debt worries",
+        "decision": "skipped",
+        "reason": "Market story with limited appeal, today is over the cap."
+      }
+    ],
+    "requests": []
   }
 ]
