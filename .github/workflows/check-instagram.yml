@@ -88,3 +88,10 @@ jobs:
           echo "::notice::threads container: $(echo "$c" | jq -c '.error.message // "ok (not published)"')"
           r=$(curl -s "https://graph.threads.net/refresh_access_token?grant_type=th_refresh_token&access_token=$TH")
           echo "::notice::threads refresh: $(echo "$r" | jq -c '.error.message // {expires_in_days: ((.expires_in // 0) / 86400 | floor)}')"
+      - name: Duplicate posts (same caption twice, last 60 posts, read only)
+        env:
+          IG_USER_ID: ${{ secrets.IG_USER_ID }}
+          IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
+        run: |
+          m=$(curl -s -G "https://graph.instagram.com/$IG_USER_ID/media" -d "fields=caption,timestamp" -d limit=60 -d "access_token=$IG_ACCESS_TOKEN")
+          echo "::notice::duplicates: $(echo "$m" | jq -c '.error.message // ([.data[] | {c: ((.caption // "") | .[0:90]), t: .timestamp}] | group_by(.c) | map(select(length > 1) | {caption: .[0].c, times: map(.t)}))')"
