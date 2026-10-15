@@ -49,3 +49,9 @@ jobs:
         run: |
           fe=$(curl -s -G "https://graph.instagram.com/$IG_USER_ID/media" --data-urlencode "fields=id,timestamp,like_count,insights.metric(reach,views,saved,shares,total_interactions)" -d limit=100 -d "access_token=$IG_ACCESS_TOKEN")
           echo "::notice::field expansion: $(echo "$fe" | jq -c '.error.message // {n: (.data|length), first: .data[0].insights.data, last_time: .data[-1].timestamp, next: (.paging.next != null)}' | cut -c1-600)"
+      - name: Telegram webhook health
+        env:
+          T: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+        run: |
+          w=$(curl -s "https://api.telegram.org/bot$T/getWebhookInfo")
+          echo "::notice::webhook: $(echo "$w" | jq -c '.result | {pending_update_count, last_error_date, last_error_message, max_connections}')"
