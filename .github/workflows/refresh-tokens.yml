@@ -1,0 +1,45 @@
+name: Refresh tokens
+
+# Threads and Instagram user tokens last 60 days. This renews both twice a month and
+# saves the new values back into the repo secrets (needs SECRETS_PAT: a fine-grained
+# GitHub token with "Secrets: Read and write" on this repo).
+on:
+  schedule:
+    - cron: '17 6 1,15 * *'
+  workflow_dispatch:
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Renew and save
+        env:
+          GH_TOKEN: ${{ secrets.SECRETS_PAT }}
+          REPO: ${{ github.repository }}
+          TH: ${{ secrets.THREADS_TOKEN }}
+          IG: ${{ secrets.IG_ACCESS_TOKEN }}
+          TG_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TG_CHAT: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: |
+          fail=""
+          if [ -z "$GH_TOKEN" ]; then echo "::error::SECRETS_PAT secret is missing"; exit 1; fi
+          renew() { # name url-prefix token
+            r=$(curl -s "$2$3")
+            new=$(echo "$r" | jq -r '.access_token // empty')
+            if [ -z "$new" ]; then
+              msg=$(echo "$r" | jq -r '.error.message // "no token returned"')
+              echo "::warning::$1: $msg"; fail="$fail $1($msg)"; return
+            fi
+            echo "::add-mask::$new"
+            if echo -n "$new" | gh secret set "$1" --repo "$REPO" 2>err.txt; then
+              echo "::notice::$1 renewed, valid $(( $(echo "$r" | jq -r '.expires_in // 0') / 86400 )) days"
+            else
+              echo "::warning::$1 could not be saved: $(cat err.txt)"; fail="$fail $1(save failed)"
+            fi
+          }
+          [ -n "$TH" ] && renew THREADS_TOKEN "https://graph.threads.net/refresh_access_token?grant_type=th_refresh_token&access_token=" "$TH"
+          [ -n "$IG" ] && renew IG_ACCESS_TOKEN "https://graph.instagram.com/refresh_access_token?grant_type=ig_refresh_token&access_token=" "$IG"
+          if [ -n "$fail" ]; then
+            [ -n "$TG_TOKEN" ] && curl -s "https://api.telegram.org/bot$TG_TOKEN/sendMessage" -d chat_id="$TG_CHAT" --data-urlencode "text=⚠️ Token yenileme sorunu:$fail" >/dev/null
+            exit 1
+          fi
