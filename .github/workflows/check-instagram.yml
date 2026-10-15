@@ -55,3 +55,13 @@ jobs:
         run: |
           w=$(curl -s "https://api.telegram.org/bot$T/getWebhookInfo")
           echo "::notice::webhook: $(echo "$w" | jq -c '.result | {pending_update_count, last_error_date, last_error_message, max_connections}')"
+      - name: Facebook page token
+        env:
+          FB: ${{ secrets.FB_PAGE_TOKEN }}
+        run: |
+          me=$(curl -s "https://graph.facebook.com/v23.0/me?fields=id,name&access_token=$FB")
+          echo "::notice::fb me: $(echo "$me" | jq -c '.error.message // {name}')"
+          acc=$(curl -s "https://graph.facebook.com/v23.0/me/accounts?fields=id,name,tasks&access_token=$FB")
+          echo "::notice::fb pages: $(echo "$acc" | jq -c '.error.message // [.data[] | {id, name, tasks}]')"
+          dbg=$(curl -s "https://graph.facebook.com/v23.0/debug_token?input_token=$FB&access_token=$FB")
+          echo "::notice::fb token: $(echo "$dbg" | jq -c '.error.message // (.data | {type, expires_at, scopes})')"
