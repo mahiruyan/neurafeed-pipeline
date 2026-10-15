@@ -55,10 +55,15 @@ export default {
     if (req.method !== 'POST' || url.pathname !== '/webhook') return new Response('NeuraFeed bot is running.');
     if (req.headers.get('X-Telegram-Bot-Api-Secret-Token') !== env.WEBHOOK_SECRET) return new Response('forbidden', { status: 403 });
     const update = await req.json();
-    ctx.waitUntil(handle(update, env).catch((e) => {
-      const hint = /GitHub 40[13]/.test(e.message) ? '\nGitHub izni eksik görünüyor: neurafeed-bot anahtarında Contents izni "Read and write" olmalı. Düzeltince aynı butona tekrar basabilirsin, öneri bekliyor.' : '';
-      return tg(env, 'sendMessage', { chat_id: env.OWNER_CHAT_ID, text: `⚠️ Bot hatası: ${e.message}${hint}`.slice(0, 3000) });
-    }));
+    // Telegram retries an update it thinks failed: handle each one only once.
+    const seen = `upd:${update.update_id}`;
+    if (await env.KV.get(seen)) return new Response('ok');
+    await env.KV.put(seen, '1', { expirationTtl: 3600 });
+    // Work happens before we answer Telegram (no 30-second cut-off), and is also kept alive with
+    // waitUntil in case Telegram closes the connection first.
+    const work = run(update, env);
+    ctx.waitUntil(work);
+    await work;
     return new Response('ok');
   },
 };
@@ -148,6 +153,27 @@ async function handle(u, env) {
     : text;
   const answer = await chat(env, question);
   return send(env, answer, m.message_id);
+}
+
+async function run(update, env) {
+  const chat = update.message?.chat?.id;
+  // Keep "typing..." visible while a long answer is being prepared.
+  let alive = true;
+  const typing = (async () => {
+    while (alive && chat) {
+      await tg(env, 'sendChatAction', { chat_id: chat, action: 'typing' }).catch(() => {});
+      await new Promise((r) => setTimeout(r, 4500));
+    }
+  })();
+  try {
+    await handle(update, env);
+  } catch (e) {
+    const hint = /GitHub 40[13]/.test(e.message) ? '\nGitHub izni eksik görünüyor: neurafeed-bot anahtarında Contents izni "Read and write" olmalı.' : '';
+    await tg(env, 'sendMessage', { chat_id: env.OWNER_CHAT_ID, text: `⚠️ Bot hatası: ${e.message}${hint}`.slice(0, 3000) }).catch(() => {});
+  } finally {
+    alive = false;
+    await typing.catch(() => {});
+  }
 }
 
 // ---------- Chat with memory and tools ----------
