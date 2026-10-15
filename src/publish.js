@@ -101,9 +101,58 @@ async function publishManual(job, files) {
   return { mode: 'manual' };
 }
 
+// ---------- Facebook Page (same post, right after Instagram) ----------
+// FB_PAGE_TOKEN is a never-expiring system user token; the page token is looked up each time.
+const FB = 'https://graph.facebook.com/v23.0';
+async function fbCall(pathname, params, token) {
+  const res = await fetch(`${FB}/${pathname}`, { method: 'POST', headers: { 'Content-Type': 'application/x-www-form-urlencoded' }, body: new URLSearchParams({ ...params, access_token: token }) });
+  const d = await res.json();
+  if (d.error) throw new Error(`Facebook ${pathname}: ${d.error.message}`);
+  return d;
+}
+async function fbPage() {
+  const sys = process.env.FB_PAGE_TOKEN;
+  if (!sys) return null;
+  const d = await (await fetch(`${FB}/me/accounts?fields=id,name,access_token&access_token=${encodeURIComponent(sys)}`)).json();
+  if (d.error) throw new Error(`Facebook pages: ${d.error.message}`);
+  const page = (d.data || []).find((p) => /neurafeed/i.test(p.name)) || d.data?.[0];
+  return page ? { id: page.id, token: page.access_token } : null;
+}
+async function publishFacebook(job, files) {
+  const page = await fbPage();
+  if (!page) return null;
+  const caption = job.caption || '';
+  if (job.type === 'reel') {
+    const url = `${VIDEO_BASE.replace(/\/$/, '')}/${job.id}/${path.basename(files[0])}`;
+    const v = await fbCall(`${page.id}/videos`, { file_url: url, description: caption }, page.token);
+    return { id: v.id, type: 'video' };
+  }
+  const base = PUBLIC_BASE.replace(/\/$/, '');
+  const urls = files.map((f) => `${base}/${job.id}/${path.basename(f)}`);
+  if (urls.length === 1) {
+    const p = await fbCall(`${page.id}/photos`, { url: urls[0], caption }, page.token);
+    return { id: p.post_id || p.id, type: 'photo' };
+  }
+  // Multi-photo post: upload each slide unpublished, then one feed post with all of them in order.
+  const ids = [];
+  for (const u of urls) ids.push((await fbCall(`${page.id}/photos`, { url: u, published: 'false' }, page.token)).id);
+  const params = { message: caption };
+  ids.forEach((id, i) => { params[`attached_media[${i}]`] = JSON.stringify({ media_fbid: id }); });
+  const post = await fbCall(`${page.id}/feed`, params, page.token);
+  return { id: post.id, type: 'album' };
+}
+
 async function publish(job, files) {
-  if (instagramEnabled()) return job.type === 'reel' ? publishReel(job, files) : publishInstagram(job, files);
-  return publishManual(job, files);
+  if (!instagramEnabled()) return publishManual(job, files);
+  const result = job.type === 'reel' ? await publishReel(job, files) : await publishInstagram(job, files);
+  // Facebook is extra: a Facebook problem never undoes or blocks the Instagram post.
+  try {
+    const fb = await publishFacebook(job, files);
+    if (fb) result.facebook = fb;
+  } catch (e) {
+    result.facebook_error = String(e.message || e).slice(0, 300);
+  }
+  return result;
 }
 
 module.exports = { publish, instagramEnabled };

@@ -65,3 +65,13 @@ jobs:
           echo "::notice::fb pages: $(echo "$acc" | jq -c '.error.message // [.data[] | {id, name, tasks}]')"
           dbg=$(curl -s "https://graph.facebook.com/v23.0/debug_token?input_token=$FB&access_token=$FB")
           echo "::notice::fb token: $(echo "$dbg" | jq -c '.error.message // (.data | {type, expires_at, scopes})')"
+      - name: Facebook upload test (unpublished photo, deleted right after)
+        env:
+          FB: ${{ secrets.FB_PAGE_TOKEN }}
+        run: |
+          pg=$(curl -s "https://graph.facebook.com/v23.0/me/accounts?fields=id,access_token&access_token=$FB")
+          pid=$(echo "$pg" | jq -r '.data[0].id'); ptk=$(echo "$pg" | jq -r '.data[0].access_token')
+          up=$(curl -s -X POST "https://graph.facebook.com/v23.0/$pid/photos" -d "url=https://raw.githubusercontent.com/mahiruyan/neurafeed-media/main/2026-10-12-microsoft-maia-300-ai-chip/1.jpg" -d published=false -d "access_token=$ptk")
+          echo "::notice::fb upload: $(echo "$up" | jq -c '.error.message // "ok"')"
+          id=$(echo "$up" | jq -r '.id // empty')
+          [ -n "$id" ] && curl -s -X DELETE "https://graph.facebook.com/v23.0/$id?access_token=$ptk" >/dev/null || true
