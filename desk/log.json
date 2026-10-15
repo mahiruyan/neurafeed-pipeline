@@ -353,5 +353,73 @@
       }
     ],
     "requests": []
+  },
+  {
+    "run_at": "2026-10-15T23:54:21.119Z",
+    "summary": "Late run (19:53 New York): no new jobs. Today's news cap is full, the last two slots tonight are taken by approved jobs, and any timely story found now would expire before the 07:00 window. No open links or requests.",
+    "considered": [
+      {
+        "story": "Senate poised to add Claude to staffers' AI tools (Politico)",
+        "source": "https://www.politico.com/",
+        "decision": "skipped",
+        "reason": "Today's cap is reached and a timely job written now would expire before tomorrow's 07:00 window; the morning run can pick it up if it is confirmed and still fresh."
+      },
+      {
+        "story": "Ex-OpenAI engineer charged over recording device had a one-way flight to Saudi Arabia (DOJ)",
+        "decision": "covered",
+        "reason": "Follow-up to 2026-10-13-fbi-arrests-openai-engineer-bugging, and crime stories need manual approval."
+      },
+      {
+        "story": "More states sue OpenAI over ChatGPT and kids (Kansas AG)",
+        "decision": "covered",
+        "reason": "Already covered as 2026-10-14-eight-states-sue-openai-chatgpt-kids."
+      },
+      {
+        "story": "Google cuts Pro model access from its $5 AI plan",
+        "decision": "covered",
+        "reason": "Already posted today as 2026-10-15-gemini-plus-loses-pro-models."
+      },
+      {
+        "story": "Federal regulators target OpenAI and Anthropic in safety probe",
+        "decision": "covered",
+        "reason": "Same story as 2026-10-15-ftc-subpoenas-openai-anthropic."
+      },
+      {
+        "story": "Anthropic IPO disclosures analysis",
+        "decision": "covered",
+        "reason": "Anthropic's quarterly numbers and IPO were already posted this week."
+      },
+      {
+        "story": "Kroger to lay off 3,000 corporate workers as it leans into AI",
+        "source": "https://www.thenewsherald.com/",
+        "decision": "skipped",
+        "reason": "Layoff story would need manual approval and would expire before tomorrow's first window; cap already reached."
+      },
+      {
+        "story": "OpenAI commits $5M to Simons Foundation math program",
+        "source": "https://www.simonsfoundation.org/news/simons-foundation-launches-15m-effort-to-help-mathematicians-navigate-ai-era/",
+        "decision": "skipped",
+        "reason": "Small grant story with limited US interest, and the daily cap is reached."
+      },
+      {
+        "story": "More on Anthropic's Scion and Meta's Mononoke (Hacker News)",
+        "source": "https://sunshowers.io/posts/anthropic-mononoke-2/",
+        "decision": "skipped",
+        "reason": "Still a single developer blog with no independent news coverage."
+      },
+      {
+        "story": "Krea 3 image model",
+        "source": "https://www.krea.ai/krea-3",
+        "decision": "skipped",
+        "reason": "Cap reached today; good candidate for a tool post another day."
+      },
+      {
+        "story": "Trump posts AI-edited White House photo (The Verge)",
+        "source": "https://www.theverge.com/policy/1012445/donald-trump-ai-photo-white-house-rennovation-column",
+        "decision": "skipped",
+        "reason": "Political story that would need approval and would expire before the next posting window."
+      }
+    ],
+    "requests": []
   }
 ]
