@@ -142,6 +142,60 @@ async function publishFacebook(job, files) {
   return { id: post.id, type: 'album' };
 }
 
+// ---------- Threads (same post, right after Instagram) ----------
+// THREADS_TOKEN: long-lived Threads user token (60 days, refreshed by refresh-threads.yml).
+const TH = 'https://graph.threads.net/v1.0';
+async function thCall(pathname, params) {
+  const res = await fetch(`${TH}/${pathname}`, { method: 'POST', headers: { 'Content-Type': 'application/x-www-form-urlencoded' }, body: new URLSearchParams({ ...params, access_token: process.env.THREADS_TOKEN }) });
+  const d = await res.json();
+  if (d.error) throw new Error(`Threads ${pathname}: ${d.error.message}`);
+  return d;
+}
+async function thWait(id, tries = 40) {
+  for (let i = 0; i < tries; i++) {
+    const d = await (await fetch(`${TH}/${id}?fields=status,error_message&access_token=${encodeURIComponent(process.env.THREADS_TOKEN)}`)).json();
+    if (d.status === 'FINISHED') return;
+    if (d.status === 'ERROR' || d.status === 'EXPIRED') throw new Error(`Threads media ${d.status}: ${d.error_message || ''}`);
+    await new Promise((r) => setTimeout(r, 5000));
+  }
+  throw new Error('Threads media processing timed out');
+}
+// Threads allows 500 characters. Keep the story lines and the Source line, drop hashtags first.
+function threadsText(caption) {
+  const max = 500;
+  let t = String(caption || '').replace(/(^|\s)#\w+/g, '').replace(/[ \t]+\n/g, '\n').replace(/\n{3,}/g, '\n\n').trim();
+  if (t.length <= max) return t;
+  const lines = t.split('\n');
+  const src = lines.filter((l) => /^(Source|Video):/i.test(l.trim())).join('\n');
+  let body = lines.filter((l) => !/^(Source|Video):/i.test(l.trim()) && !/^Follow @neurafeed/i.test(l.trim())).join('\n').trim();
+  const room = max - (src ? src.length + 2 : 0);
+  if (body.length > room) body = body.slice(0, room - 3).replace(/\s+\S*$/, '') + '...';
+  return src ? `${body}\n\n${src}` : body;
+}
+async function publishThreads(job, files) {
+  if (!process.env.THREADS_TOKEN) return null;
+  const text = threadsText(job.caption);
+  let creation;
+  if (job.type === 'reel') {
+    const url = `${VIDEO_BASE.replace(/\/$/, '')}/${job.id}/${path.basename(files[0])}`;
+    creation = (await thCall('me/threads', { media_type: 'VIDEO', video_url: url, text })).id;
+  } else {
+    const base = PUBLIC_BASE.replace(/\/$/, '');
+    const urls = files.slice(0, 20).map((f) => `${base}/${job.id}/${path.basename(f)}`);
+    if (urls.length === 1) {
+      creation = (await thCall('me/threads', { media_type: 'IMAGE', image_url: urls[0], text })).id;
+    } else {
+      const kids = [];
+      for (const u of urls) kids.push((await thCall('me/threads', { media_type: 'IMAGE', image_url: u, is_carousel_item: 'true' })).id);
+      for (const k of kids) await thWait(k);
+      creation = (await thCall('me/threads', { media_type: 'CAROUSEL', children: kids.join(','), text })).id;
+    }
+  }
+  await thWait(creation, job.type === 'reel' ? 100 : 40);
+  const pub = await thCall('me/threads_publish', { creation_id: creation });
+  return { id: pub.id, type: job.type === 'reel' ? 'video' : (files.length > 1 ? 'carousel' : 'image') };
+}
+
 async function publish(job, files) {
   if (!instagramEnabled()) return publishManual(job, files);
   const result = job.type === 'reel' ? await publishReel(job, files) : await publishInstagram(job, files);
@@ -152,7 +206,13 @@ async function publish(job, files) {
   } catch (e) {
     result.facebook_error = String(e.message || e).slice(0, 300);
   }
+  try {
+    const th = await publishThreads(job, files);
+    if (th) result.threads = th;
+  } catch (e) {
+    result.threads_error = String(e.message || e).slice(0, 300);
+  }
   return result;
 }
 
-module.exports = { publish, instagramEnabled };
+module.exports = { publish, instagramEnabled, threadsText };

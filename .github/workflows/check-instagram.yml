@@ -75,3 +75,16 @@ jobs:
           echo "::notice::fb upload: $(echo "$up" | jq -c '.error.message // "ok"')"
           id=$(echo "$up" | jq -r '.id // empty')
           [ -n "$id" ] && curl -s -X DELETE "https://graph.facebook.com/v23.0/$id?access_token=$ptk" >/dev/null || true
+      - name: Threads token (container test, nothing is published)
+        env:
+          TH: ${{ secrets.THREADS_TOKEN }}
+        run: |
+          [ -z "$TH" ] && { echo "::error::THREADS_TOKEN secret is missing"; exit 0; }
+          me=$(curl -s "https://graph.threads.net/v1.0/me?fields=id,username&access_token=$TH")
+          echo "::notice::threads me: $(echo "$me" | jq -c '.error.message // {username}')"
+          lim=$(curl -s "https://graph.threads.net/v1.0/me/threads_publishing_limit?fields=quota_usage,config&access_token=$TH")
+          echo "::notice::threads quota: $(echo "$lim" | jq -c '.error.message // .data[0]')"
+          c=$(curl -s -X POST "https://graph.threads.net/v1.0/me/threads" -d media_type=IMAGE -d "image_url=https://raw.githubusercontent.com/mahiruyan/neurafeed-media/main/2026-10-12-microsoft-maia-300-ai-chip/1.jpg" -d "text=test" -d "access_token=$TH")
+          echo "::notice::threads container: $(echo "$c" | jq -c '.error.message // "ok (not published)"')"
+          r=$(curl -s "https://graph.threads.net/refresh_access_token?grant_type=th_refresh_token&access_token=$TH")
+          echo "::notice::threads refresh: $(echo "$r" | jq -c '.error.message // {expires_in_days: ((.expires_in // 0) / 86400 | floor)}')"
