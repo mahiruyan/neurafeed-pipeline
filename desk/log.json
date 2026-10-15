@@ -148,5 +148,19 @@
       }
     ],
     "requests": []
+  },
+  {
+    "run_at": "2026-10-15T16:06:04.185Z",
+    "summary": "Fix: rewrote the AI action star lineup Reel as v2 because its caption's credit line ('Credits:') failed validation; content unchanged.",
+    "considered": [
+      {
+        "story": "Mahir link: AI parody lineup of 1980s action stars by @thisaintcanon (Reel)",
+        "decision": "queued",
+        "job_id": "2026-10-15-hollywood-ai-action-lineup-reel-v2",
+        "priority": 1,
+        "reason": "Replaces 2026-10-15-hollywood-ai-action-lineup-reel; only the last caption line changed to 'Credit: @thisaintcanon'."
+      }
+    ],
+    "requests": []
   }
 ]
