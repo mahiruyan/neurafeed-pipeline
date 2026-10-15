@@ -1,0 +1,88 @@
+{
+  "id": "2026-10-15-claude-midterms-fake-news-bans",
+  "created_at": "2026-10-15T10:10:00Z",
+  "story_time": "2026-10-14T19:58:00Z",
+  "timely": false,
+  "sensitive": true,
+  "priority": 1,
+  "sources": [
+    { "name": "Anthropic", "url": "https://www.anthropic.com/news/2026-us-midterms" },
+    { "name": "Reuters via KELO", "url": "https://kelo.com/2026/10/14/anthropic-to-add-us-voting-information-to-claude-before-midterms/" },
+    { "name": "Unite.AI", "url": "https://www.unite.ai/anthropic-strengthens-election-safeguards-ahead-of-2026-us-midterms/" }
+  ],
+  "caption": "Anthropic says it banned accounts that used Claude to write fake midterm news, including a foreign-based site pushing Russian, Iranian and North Korean narratives.\nLater this month, Claude will give US users official, state-specific voting information from the nonprofit Democracy Works.\n\nShould AI chatbots answer voting questions at all?\n\nFollow @neurafeed.ai for daily AI news.\n\nSource: Anthropic, Reuters",
+  "slides": [
+    {
+      "kind": "cover",
+      "headline": "Foreign operators used Claude to write fake midterm news. Anthropic just *banned them*",
+      "image": {
+        "url": "https://storage.googleapis.com/media.mwcradio.com/mimesis/2026-10/14/2026-10-14T200921Z_1_LYNXMPEM9D1WP_RTROPTP_3_AI-SAFETY-EVALUATORS.JPG",
+        "credit": "Reuters",
+        "fallback_urls": ["https://www.unite.ai/wp-content/uploads/2026/10/anthropic-strengthens-election-safeguards-2026-us-midterms.jpg"]
+      },
+      "pos": "center 30%",
+      "badges": [{ "url": "assets/logos/claude.png", "fit": "contain" }],
+      "badge_side": "right"
+    },
+    {
+      "kind": "text",
+      "heading": "Fake news for *US voters*",
+      "paras": [
+        "Anthropic said foreign-based operators of a fake news site used Claude to produce US midterm coverage favoring Russian, Iranian and North Korean narratives.",
+        "Other actors used Claude to create fabricated news for American audiences to earn ad revenue. Anthropic banned the accounts involved."
+      ],
+      "image": {
+        "url": "https://www.unite.ai/wp-content/uploads/2026/10/anthropic-strengthens-election-safeguards-2026-us-midterms.jpg",
+        "credit": "Unite.AI",
+        "fallback_urls": ["https://www-cdn.anthropic.com/images/4zrzovbb/website/609927c7af2a454cedad848e4b2adc980c1f5fe6-2000x1125.jpg"]
+      }
+    },
+    {
+      "kind": "text",
+      "heading": "Official voting info *inside Claude*",
+      "paras": [
+        "Later in October, Claude.ai will pull official voting information from the nonprofit Democracy Works, with answers specific to each US user's state, like where to vote or what ID to bring.",
+        "On election night and after, Claude will show the latest official vote counts and results."
+      ],
+      "image": {
+        "url": "https://www-cdn.anthropic.com/images/4zrzovbb/website/35c702ec42254d97fd11618ff3f5dcc6845d4612-1920x1834.png",
+        "credit": "Anthropic",
+        "fit": "contain"
+      }
+    },
+    {
+      "kind": "text",
+      "heading": "How often people *ask*",
+      "paras": [
+        "Anthropic analyzed 250,000 US Claude.ai conversations from one week in September. About 5.75% touched on politics, public policy or social issues.",
+        "Only about 0.51% were about elections or voting, and about 0.01% asked Claude whom or what to vote for."
+      ],
+      "image": {
+        "url": "https://www-cdn.anthropic.com/images/4zrzovbb/website/d0efef057e61d2c590d06d8902da2167fe93200a-1920x1080.png",
+        "credit": "Anthropic",
+        "fit": "contain"
+      }
+    },
+    {
+      "kind": "text",
+      "heading": "A *99%* evenhandedness score",
+      "paras": [
+        "Claude Opus 5.5, Sonnet 5.5 and Haiku 5.5 each scored 99% on Anthropic's political evenhandedness test, which runs before every model launch.",
+        { "t": "Outside reviewers found Claude sometimes added unsolicited caveats, and Sonnet 4.5 was more likely to soften right-leaning arguments.", "strong": true }
+      ],
+      "image": {
+        "url": "https://www-cdn.anthropic.com/images/4zrzovbb/website/7b638266c2b8de46e1732a5e471b9a95b79b052d-1920x1386.png",
+        "credit": "Anthropic",
+        "fit": "contain"
+      }
+    },
+    {
+      "kind": "cta",
+      "hook": "AI chatbots are heading into their first big midterm test. Follow to see how Claude holds up.",
+      "image": {
+        "url": "https://www-cdn.anthropic.com/images/4zrzovbb/website/609927c7af2a454cedad848e4b2adc980c1f5fe6-2000x1125.jpg",
+        "credit": "Anthropic"
+      }
+    }
+  ]
+}
