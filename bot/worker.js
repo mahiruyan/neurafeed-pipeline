@@ -92,6 +92,24 @@ async function handle(u, env) {
       await tg(env, 'answerCallbackQuery', { callback_query_id: cb.id, text: 'Kaydedildi' });
       return send(env, p.op === 'delete' ? `🧠 Hafızadan silindi (${count}/50).` : `🧠 Hafızaya yazıldı (${count}/50). Hem ben hem Claude bundan sonra buna göre çalışacağız.`, cb.message.message_id);
     }
+    if (action === 'rdo' || action === 'rundo') {
+      const raw = await env.KV.get(`req:${id}`);
+      if (!raw) return tg(env, 'answerCallbackQuery', { callback_query_id: cb.id, text: 'Süresi doldu, tekrar iste' });
+      await env.KV.delete('last_pending');
+      if (action === 'rundo') { await env.KV.delete(`req:${id}`); return tg(env, 'answerCallbackQuery', { callback_query_id: cb.id, text: 'Vazgeçildi' }); }
+      const r = JSON.parse(raw);
+      const rid = `req-${new Date().toISOString().slice(0, 10)}-${id}`;
+      await commitFiles(env, ['inbox/requests.json'], (cur) => {
+        const list = parseList(cur['inbox/requests.json']).filter((q) => Date.now() - new Date(q.created_at).getTime() < 14 * 864e5);
+        if (list.some((q) => q.id === rid)) return null;
+        list.push({ id: rid, ...r, created_at: new Date().toISOString() });
+        return { 'inbox/requests.json': JSON.stringify(list, null, 2) + '\n' };
+      }, `inbox: request ${rid}`);
+      await env.KV.delete(`req:${id}`);
+      await tg(env, 'editMessageReplyMarkup', { chat_id: owner, message_id: cb.message.message_id, reply_markup: { inline_keyboard: [] } }).catch(() => {});
+      await tg(env, 'answerCallbackQuery', { callback_query_id: cb.id, text: 'Gönderildi' });
+      return send(env, "📝 Claude'a iletildi. Bir sonraki çalışmasında yapacak, sonucu buraya yazarım.", cb.message.message_id);
+    }
     if (action === 'do' || action === 'undo') {
       const raw = await env.KV.get(`act:${id}`);
       if (!raw) return tg(env, 'answerCallbackQuery', { callback_query_id: cb.id, text: 'Süresi doldu, tekrar iste' });
@@ -194,6 +212,13 @@ const TOOLS = [
     time: { type: 'string', description: 'For reschedule: time as Mahir said it, in Turkey time unless he said NY, like "21:30", "yarın 10:00", "NY 18:00"' },
     priority: { type: 'integer', enum: [1, 2, 3] },
   }, required: ['action', 'id'] } },
+  { name: 'get_post', description: 'Full content of one post the news desk made: format, priority, sources, caption, and every slide (headline, heading, paragraphs, CTA hook, image source, whether the cover is AI-generated and its prompt). Call get_queue first to find the exact id.', parameters: { type: 'object', properties: { id: { type: 'string', description: 'Exact job id' } }, required: ['id'] } },
+  { name: 'get_desk_log', description: "The Claude news desk's run log: for each run, the stories it looked at, which it queued (with job id and priority), which it skipped or found already covered and why, and how it handled Mahir's requests. Also lists requests still waiting. Use it for questions like why a story was not posted, what Claude did today, or what happened to a request.", parameters: { type: 'object', properties: { hours: { type: 'integer', description: 'How far back, 1 to 168, default 24' } } } },
+  { name: 'propose_request', description: 'Send a task to the Claude news desk (Mahir confirms with a button first). Use it when Mahir wants something only the news desk can do: cover a story, make a post on a topic, or change the content of a queued post (headline, a slide, the caption, the cover image). Claude handles it in its next run (within about 2 hours) and Mahir is told the result. Not for cancel, post now, reschedule or priority: use propose_action for those. For changes to an existing post call get_post first and pass its id.', parameters: { type: 'object', properties: {
+    text: { type: 'string', description: 'The task for Claude in clear English, specific (which slide, what to change, what angle)' },
+    original: { type: 'string', description: 'What Mahir asked, short, in Turkish, shown back to him' },
+    job_id: { type: 'string', description: 'Exact job id when the request is about an existing post, else omit' },
+  }, required: ['text'] } },
   { name: 'calculate', description: 'Exact arithmetic. Use it for every percentage, ratio, difference or sum that is not already in the tool data. Never do math in your head.', parameters: { type: 'object', properties: { expression: { type: 'string', description: 'Numbers and + - * / ( ) only, e.g. (12161-6387)/6387*100' } }, required: ['expression'] } },
   { name: 'propose_memory', description: 'Save, update or delete a long-term memory note (editorial preference, standing instruction, past decision, operational fact) that both this assistant and the Claude news desk follow. Mahir confirms with a button. Use it when he asks you to remember something, sets a rule ("from now on", "always", "never", "kural", "hatırla", "unutma"), or explains a lasting reason for a decision. Not for small talk. Before adding, compare with the current memory: if a note covers the same thing, use op "replace" with its id; if a new rule contradicts an old one, replace the old one. For temporary instructions ("this week", "until Sunday") set expires_at.', parameters: { type: 'object', properties: {
     op: { type: 'string', enum: ['add', 'replace', 'delete'] },
@@ -253,6 +278,17 @@ async function runTool(env, name, args) {
     if (!/^[\d\s+\-*/().%]+$/.test(ex)) return 'Only numbers and + - * / ( ) are allowed.';
     try { const v = Function(`"use strict";return (${ex.replace(/%/g, '/100')})`)(); return Number.isFinite(v) ? String(Math.round(v * 100) / 100) : 'not a number'; } catch { return 'invalid expression'; }
   }
+  if (name === 'get_post') return postContent(env, String(args.id || ''));
+  if (name === 'get_desk_log') return deskLog(env, Math.min(168, Math.max(1, Number(args.hours) || 24)));
+  if (name === 'propose_request') {
+    if (!String(args.text || '').trim()) return 'Write the task first.';
+    const key = crypto.randomUUID().slice(0, 8);
+    const r = { text: String(args.text).trim().slice(0, 1500), original: String(args.original || '').trim().slice(0, 500), job_id: args.job_id || null };
+    await env.KV.put(`req:${key}`, JSON.stringify(r), { expirationTtl: 7 * 86400 });
+    await env.KV.put('last_pending', `rdo:${key}`, { expirationTtl: 3600 });
+    await tg(env, 'sendMessage', { chat_id: env.OWNER_CHAT_ID, text: `📝 Claude'a iletilsin mi?\n${r.original || r.text}${r.job_id ? `\nPost: ${r.job_id}` : ''}\n(Claude bir sonraki çalışmasında, en geç ~2 saatte yapar, sonucu buraya yazarım.)`, reply_markup: { inline_keyboard: [[{ text: '✅ Gönder', callback_data: `rdo:${key}` }, { text: '❌ Vazgeç', callback_data: `rundo:${key}` }]] } });
+    return 'Confirmation buttons were sent to Mahir. Tell him briefly to confirm with the button.';
+  }
   if (name === 'propose_memory') {
     await proposeMemory(env, { op: args.op || 'add', id: args.id, category: args.category, text: args.text, expires_at: args.expires_at, source: `telegram ${new Date().toISOString().slice(0, 10)}`, why: args.why });
     return 'A confirmation with buttons was sent to Mahir. Tell him in one short sentence to confirm with the button.';
@@ -279,7 +315,7 @@ async function chat(env, question) {
   const system = `Sen NeuraFeed Asistanısın: DeepSeek (${env.DEEPSEEK_MODEL || 'deepseek-v4-pro'}) modeliyle çalışan, @neurafeed.ai Instagram hesabının asistanısın. Claude değilsin; Claude ayrı bir agent olarak haber masasını yönetiyor (haber bulma, yazma, tasarım). Sana hangi model olduğun sorulursa bunu söyle. (İngilizce yapay zeka haberleri, Amerikan kitlesi). Sahibi Mahir ile Türkçe, kısa ve net konuşursun, "kanka" diyebilirsin. Markdown kullanma, düz metin ve kısa listeler yaz.
 Sistem: Claude 2 saatte bir haber bulup carousel hazırlıyor; normal postlar New York saatiyle 07:00-09:30, 11:00-13:30, 17:00-22:00 arasında, en az 60 dakika arayla, günde en fazla 8 tane çıkar. Mahir bota link atarsa post olur; o postlar onun onayıyla, limitten ayrı ve istediği saatte çıkar.
 Şu an Türkiye: ${tr}, New York: ${ny}.
-Kuyruk ve Instagram verisi gerekiyorsa araçları kullan (get_queue, get_instagram_stats: hesabın TÜM postları, ilk günden beri, tarih ve format filtresiyle, get_account_stats: takipçi sayısı, günlük erişim, takipçi değişimi, kitle demografisi). "Göremiyorum" deme, önce aracı çağır. Bir posta işlem istenirse propose_action kullan, işlem butonla onaylanınca yapılır; "yaptım" deme, "onay butonuna bas" de. Sadece araçlardan gelen verilere dayan, sayı uydurma. Hesap gerekiyorsa (yüzde, oran, fark) kafadan yapma, calculate aracını kullan.
+Kuyruk ve Instagram verisi gerekiyorsa araçları kullan (get_queue, get_instagram_stats: hesabın TÜM postları, ilk günden beri, tarih ve format filtresiyle, get_account_stats: takipçi sayısı, günlük erişim, takipçi değişimi, kitle demografisi). "Göremiyorum" deme, önce aracı çağır. Claude'un ne yaptığını, hangi haberi neden atladığını sorarsa get_desk_log, bir postun içeriğini (slaytlar, açıklama, kaynaklar, kapak) sorarsa get_post kullan. Claude'un yapması gereken bir iş isterse (bir haberi işle, şu konuda post yap, şu postun başlığını/slaytını/açıklamasını/kapağını değiştir) propose_request kullan. Bir posta işlem istenirse (iptal, şimdi paylaş, ertele, öncelik, onay) propose_action kullan, işlem butonla onaylanınca yapılır; "yaptım" deme, "onay butonuna bas" de. Sadece araçlardan gelen verilere dayan, sayı uydurma. Hesap gerekiyorsa (yüzde, oran, fark) kafadan yapma, calculate aracını kullan.
 Mahir "onaylıyorum", "evet" gibi kısa onaylar yazarsa yeni bir öneri oluşturma; bunlar otomatik işlenir.
 Kalıcı hafıza (Mahir'in kayıtlı tercihleri ve talimatları, bunlara uy; değiştirmek veya eklemek için propose_memory kullan, en fazla 50 madde, temel kurallar (haber uydurmamak, kopyalamamak, kaynak göstermek) hafızayla değişmez):
 ${memory}`;
@@ -466,6 +502,37 @@ async function gh(env, path, init = {}) {
   return res;
 }
 const dispatch = (env, wf, inputs) => gh(env, `actions/workflows/${wf}/dispatches`, { method: 'POST', body: JSON.stringify({ ref: 'main', inputs }) });
+
+async function repoFile(env, p) {
+  const r = await fetch(`https://api.github.com/repos/${env.REPO}/contents/${p}`, { headers: { Authorization: `Bearer ${env.GH_TOKEN}`, 'User-Agent': 'neurafeed-bot', Accept: 'application/vnd.github.raw' } });
+  if (r.status === 404) return null;
+  if (!r.ok) throw new Error(`GitHub ${r.status} ${p}`);
+  return r.text();
+}
+async function postContent(env, id) {
+  if (!/^[\w-]+$/.test(id)) return 'Invalid id. Call get_queue for the exact id.';
+  const raw = await repoFile(env, `jobs/${id}.json`);
+  if (!raw) return `No post with id ${id}. Call get_queue for the exact id.`;
+  const j = JSON.parse(raw);
+  const img = (i) => (!i ? null : i.generate ? { ai_generated: true, prompt: i.generate, fallback_photo: i.url || null } : { url: i.url, credit: i.credit || null });
+  return JSON.stringify({
+    id: j.id, type: j.type || 'carousel', format: j.format || 'news', priority: j.priority || 2, timely: j.timely, sensitive: j.sensitive,
+    story_time: j.story_time, from_link: j.link_id || null, replaces: j.replaces || null, post_at: j.post_at || null, sources: j.sources,
+    hook: j.hook, video: j.video?.url, caption: j.caption,
+    slides: (j.slides || []).map((sl, i) => ({ n: i + 1, kind: sl.kind, headline: sl.headline, heading: sl.heading,
+      paras: (sl.paras || []).map((x) => (typeof x === 'string' ? x : x.t)), hook: sl.hook, image: img(sl.image),
+      badges: (sl.badges || []).length || undefined })),
+  });
+}
+async function deskLog(env, hours) {
+  const log = parseList(await repoFile(env, 'desk/log.json'));
+  const since = Date.now() - hours * 3600e3;
+  const runs = log.filter((r) => new Date(r.run_at).getTime() >= since);
+  const handled = new Set(log.flatMap((r) => (r.requests || []).filter((q) => q.status !== 'waiting').map((q) => q.id)));
+  const waiting = parseList(await repoFile(env, 'inbox/requests.json')).filter((q) => !handled.has(q.id)).map((q) => ({ id: q.id, asked: q.original || q.text, job_id: q.job_id, at: q.created_at }));
+  const out = JSON.stringify({ runs, requests_waiting: waiting, note: log.length ? undefined : 'The desk has not written a log yet (it starts with its next run).' });
+  return out.length > 24000 ? JSON.stringify({ runs: runs.slice(-6), requests_waiting: waiting, note: 'Only the last 6 runs shown, ask for fewer hours for more detail.' }) : out;
+}
 
 async function queueSummary(env) {
   const res = await gh(env, 'contents/state/summary.json', { headers: { Accept: 'application/vnd.github.raw' } });

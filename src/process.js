@@ -10,6 +10,7 @@ const { renderJob } = require('./render');
 const { renderReel } = require('./reel');
 const { validateJob } = require('./validate');
 const tg = require('./telegram');
+const { readLog } = require('./desklog');
 
 function newJobIds() {
   const dir = path.join(ROOT, 'jobs');
@@ -36,7 +37,38 @@ function summary(job) {
   ].filter((l) => l !== '').join('\n').slice(0, 4000);
 }
 
+// Tell Mahir once when the news desk has handled one of his requests (desk/log.json).
+async function notifyRequests() {
+  const file = path.join(ROOT, 'state', 'desk.json');
+  let seen = [];
+  try { seen = JSON.parse(fs.readFileSync(file, 'utf8')).notified || []; } catch {}
+  let requests = [];
+  try { requests = JSON.parse(fs.readFileSync(path.join(ROOT, 'inbox', 'requests.json'), 'utf8')); } catch {}
+  const fresh = [];
+  for (const run of readLog()) for (const r of run.requests || []) {
+    if (r.status === 'waiting' || seen.includes(r.id) || fresh.some((x) => x.id === r.id)) continue;
+    fresh.push(r);
+  }
+  if (!fresh.length) return;
+  for (const r of fresh) {
+    const asked = requests.find((q) => q.id === r.id);
+    const head = r.status === 'done' ? '📝 İsteğin yapıldı' : '📝 İsteğin yapılamadı';
+    if (tg.enabled()) await tg.sendMessage(`${head}\n${asked ? `İstek: ${asked.original || asked.text}\n` : ''}Claude: ${r.result}${r.job_id ? `\nPost: ${r.job_id}` : ''}`).catch(() => {});
+  }
+  fs.writeFileSync(file, JSON.stringify({ notified: [...seen, ...fresh.map((r) => r.id)].slice(-300) }, null, 2) + '\n');
+}
+
+// A job with "replaces" is a corrected version: the old one is withdrawn unless it already went out.
+function replaceOld(job) {
+  if (!job.replaces) return null;
+  const old = getJobState(job.replaces);
+  if (old && old.status === 'posted') return `${job.replaces} was already posted, so the new version was not queued`;
+  if (old && !['canceled', 'rejected', 'expired'].includes(old.status)) setJobState(job.replaces, { status: 'canceled', by: `replaced by ${job.id}` });
+  return null;
+}
+
 (async () => {
+  await notifyRequests();
   const ids = newJobIds();
   if (!ids.length) { writeSummary(); return console.log('No new jobs.'); }
   for (const id of ids) {
@@ -45,6 +77,12 @@ function summary(job) {
     if (problems.length) {
       setJobState(id, { status: 'invalid', problems });
       if (tg.enabled()) await tg.sendMessage(`❌ Job ${id} is invalid:\n${problems.join('\n')}`);
+      continue;
+    }
+    const blocked = replaceOld(job);
+    if (blocked) {
+      setJobState(id, { status: 'skipped', by: blocked });
+      if (tg.enabled()) await tg.sendMessage(`⚠️ ${id}: ${blocked}.`);
       continue;
     }
     const outDir = path.join(ROOT, 'out', id);

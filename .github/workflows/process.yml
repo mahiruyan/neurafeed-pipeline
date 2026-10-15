@@ -3,7 +3,7 @@ name: Render and queue
 on:
   push:
     branches: [main]
-    paths: ['jobs/**.json']
+    paths: ['jobs/**.json', 'desk/log.json']
   workflow_dispatch:
 
 permissions:

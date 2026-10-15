@@ -215,6 +215,44 @@ translation if Turkish), `caption:` sets the caption text (keep his words, add t
 and any other words in the note are instructions about angle, tone or what to stress. Never
 invent anything the sources do not say. Credit the original creator of a video or image.
 
+## Requests from Mahir and the desk log
+
+Mahir talks to the Telegram bot (DeepSeek). It reads `desk/log.json` and every job file to answer
+his questions, and it can send you tasks in `inbox/requests.json`
+(`{ id, text, original, job_id, created_at }`; `text` is the task in English, `original` is
+his words in Turkish).
+
+Requests: every run, after the links and before other work, handle every request that has no
+`done` or `cannot` entry in `desk/log.json`. They are Mahir's own instructions, so they come first.
+- Cover a story or make a post on a topic: write the job as usual (all rules apply, sources
+  included), `priority: 1`, `"request_id"` set. Not `review` unless he asked to see it first.
+- Change a queued post (`job_id` given): write a corrected copy as a NEW job file with id
+  `<old id>-v2` (then `-v3`), `"replaces": "<old id>"` and `"request_id"`. Keep everything he did not
+  ask to change, including `story_time`, `priority`, `review`, `link_id` and `post_at`. The pipeline withdraws the old
+  one. If the old post is already `posted` (check state/jobs/), do not write a copy: answer `cannot`.
+- If a request is impossible or would break a rule (invent facts, copy another account, post
+  without sources), answer `cannot` and say why in one sentence. If it needs something you
+  cannot do in this run, answer `waiting` with the reason (it stays open for the next run).
+
+Desk log: at the end of EVERY run, also when nothing was queued, add one entry with
+`node src/desklog.js <file.json>` (write the file outside the repo, for example in /tmp):
+```json
+{
+  "summary": "One line: what this run did.",
+  "considered": [
+    { "story": "OpenAI ships GPT-6 mini", "source": "https://...", "decision": "queued", "job_id": "2026-10-15-gpt-6-mini", "priority": 1 },
+    { "story": "Startup X raises $20M", "source": "https://...", "decision": "skipped", "reason": "Small funding round, little US interest." },
+    { "story": "Gemini 3 Ultra launch", "decision": "covered", "reason": "Already queued as 2026-10-15-gemini-3-ultra." }
+  ],
+  "requests": [
+    { "id": "req-2026-10-15-ab12cd34", "status": "done", "job_id": "2026-10-15-gpt-6-mini-v2", "result": "Changed the cover headline as asked." }
+  ]
+}
+```
+List every story you seriously looked at (usually 4 to 15), with an honest one-sentence reason
+for each skip, in plain English. Commit `desk/log.json` together with the new jobs (or alone when
+nothing was queued). Mahir is told on Telegram when a request is `done` or `cannot`.
+
 ## Reels (`"type": "reel"` jobs)
 
 ```json

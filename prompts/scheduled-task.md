@@ -24,6 +24,9 @@ never miss a major story.
    gets a job this run in the format the "Links from Mahir" section of CLAUDE.md describes
    (Reel, carousel, single or prompt). Open the link to understand it; follow Mahir's note.
    These count toward the daily total and come first.
+3a2. Requests from Mahir: read inbox/requests.json and desk/log.json. Handle every open request
+   as "Requests from Mahir and the desk log" in CLAUDE.md describes (new post, or a corrected
+   `-v2` copy with `replaces`). They come right after links.
 3c. Utility: if no job with `"format": "utility"` exists for today (New York date) and it is
    11:00 New York time or later, queue one (see "Utility posts" in CLAUDE.md).
 3d. Sunday roundup: on Sunday, in the first run at or after 17:00 New York time, queue the weekly
@@ -38,7 +41,11 @@ never miss a major story.
    with `Source: <Outlet>`, id equals file name, first slide cover, last slide cta.
    Run `node -e "const {validateJob}=require('./src/validate');..."` on each new job if
    Node is available, and fix every problem it reports.
-7. Commit only the new files in jobs/ (message `jobs: <id>, <id>`) and push to main.
-   If nothing new is worth posting, push nothing.
+7. Desk log: add this run's entry with `node src/desklog.js /tmp/desk-entry.json` (every story
+   you looked at with its decision and reason, and every request you handled).
+8. Commit the new files in jobs/ plus desk/log.json and inbox/skipped.json if changed
+   (message `jobs: <id>, <id>`, or `desk: log` when nothing was queued) and push to main.
+   If the push is rejected, pull with rebase and push again. Always push the desk log, even
+   when nothing new is worth posting.
 
 Finish with one short line per queued story (id and priority), or why none.
