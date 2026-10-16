@@ -1,0 +1,82 @@
+{
+  "id": "2026-10-16-china-ai-export-controls-23-technologies",
+  "created_at": "2026-10-16T14:30:00Z",
+  "story_time": "2026-10-16T12:00:00Z",
+  "timely": true,
+  "sensitive": false,
+  "priority": 2,
+  "sources": [
+    { "name": "AP (via WHDH)", "url": "https://whdh.com/news/china-moves-to-curb-tech-exports-including-ai-citing-national-security-risks/" },
+    { "name": "The Next Web", "url": "https://thenextweb.com/news/china-ai-export-controls-draft" },
+    { "name": "Startup Fortune", "url": "https://startupfortune.com/china-moves-to-restrict-exports-of-its-own-ai-models-chips-and-agents/" },
+    { "name": "Crypto Briefing", "url": "https://cryptobriefing.com/china-proposes-ai-export-controls/" },
+    { "name": "iThome", "url": "https://www.ithome.com.tw/news/177376" },
+    { "name": "ForkLog", "url": "https://forklog.com/en/news/alibaba-launches-qwen3-8-max-with-2-4-trillion-parameters" }
+  ],
+  "caption": "China's commerce and science ministries released a draft that would limit or ban foreign sales of 40 technologies, including 23 in AI.\nModels with 2 trillion or more parameters could be restricted, and AI agents and AI chip designs are on the list.\nApps and APIs stay open to overseas users, and public comments close November 15.\n\nShould AI models be controlled like other strategic technology?\n\nFollow @neurafeed.ai for daily AI news.\n\nSource: AP · Photo: via Startup Fortune",
+  "slides": [
+    { "kind": "cover",
+      "headline": "China just put its biggest AI models under *export control*. Even AI agents made the list",
+      "image": {
+        "url": "https://startupfortune.com/wp-content/uploads/2026/10/china-deepseek-alibaba-qwen.jpg",
+        "credit": "via Startup Fortune",
+        "fallback_urls": [
+          "https://startupfortune.com/wp-content/uploads/2026/10/china-deepseek-alibaba-qwen-1024x576.jpg",
+          "https://npr.brightspotcdn.com/dims3/default/strip/false/crop/2579x2579+731+0/resize/1200/quality/85/format/jpeg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2Feb%2F2d%2Fca803db1415699a38d5ab1d17dbe%2Fgettyimages-2195703819.jpg"
+        ]
+      },
+      "pos": "center center" },
+    { "kind": "text",
+      "heading": "*23 AI technologies* on the list",
+      "paras": [
+        "China's commerce and science ministries released a draft on Friday that would limit or ban foreign sales of 40 technologies, citing national security.",
+        "23 of them are AI: large models, AI agents, AI chip designs and computing clusters. The rest cover solar and biomedicine."
+      ],
+      "image": {
+        "url": "https://static.alibabagroup.com/static/c33a2ec2-de56-429a-b279-2d6211a83108.png",
+        "credit": "Alibaba",
+        "fallback_urls": ["https://media.zenfs.com/en/reuters.com/78c8dd38acabf7e246a555fe7d68dd86"]
+      } },
+    { "kind": "text",
+      "heading": "The *2 trillion* parameter line",
+      "paras": [
+        "Models with 2 trillion or more parameters, or with world-leading capabilities, could be restricted, AP reports. The rules reach model weights and source code.",
+        "Bloomberg and AP name Moonshot's Kimi K3 (2.8 trillion parameters) and Alibaba's Qwen3.8-Max (2.4 trillion) as above that size."
+      ],
+      "image": {
+        "url": "https://www.ithome.com.tw/sites/default/files/field/image/0717-moonshot_ai_kimi_k3.jpg",
+        "credit": "Moonshot AI",
+        "fallback_urls": ["https://datanorth.ai/wp-content/uploads/2026/04/moonshot-ai-releases-kimi-k2-6.png"]
+      } },
+    { "kind": "text",
+      "heading": "Chinese AI apps *still work abroad*",
+      "paras": [
+        "Overseas users can still reach Chinese models through apps, websites and APIs. Published research and open-source releases are excluded, The Next Web reports.",
+        "A registration rule already took effect on Friday: companies must register before exporting any listed technology. Public comments close November 15."
+      ],
+      "image": {
+        "url": "https://media.zenfs.com/en/reuters-finance.com/a5070450aa945da5351fa6c5e8515c6f",
+        "credit": "Reuters",
+        "fallback_urls": ["https://fortune.com/img-assets/wp-content/uploads/2025/02/GettyImages-2191761781-e1739436995457.jpg"]
+      } },
+    { "kind": "text",
+      "heading": "Keeping AI *under human control*",
+      "paras": [
+        "The commerce ministry said the measures aim at \"ensuring that AI remains under human control\" and that the plan does not target any country.",
+        "In June, the U.S. Commerce Department asked Anthropic to restrict foreign nationals' access to some of its top models. Those limits were later lifted.",
+        { "t": "Natixis economist Gary Ng says the world is fragmenting \"in access to technologies.\"", "strong": true }
+      ],
+      "image": {
+        "url": "https://npr.brightspotcdn.com/dims3/default/strip/false/crop/3024x3024+504+0/resize/1200/quality/85/format/jpeg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2F3e%2Fa6%2F6615f9ca4eff945b7206d139fe7e%2Fimg-6114.jpeg",
+        "credit": "NPR",
+        "fallback_urls": ["https://media.assettype.com/gulfnews%2F2025-04-15%2Fae3c6skl%2F202504103373251.jpg"]
+      } },
+    { "kind": "cta",
+      "hook": "The fight over who gets the world's best AI is just starting. Follow to see what changes after November 15.",
+      "image": {
+        "url": "https://forklog.com/wp-content/uploads/II-AI-iskusstvennyi-intellekt-artificial-intelligence.webp",
+        "credit": "ForkLog",
+        "fallback_urls": ["https://i0.wp.com/technode.com/wp-content/uploads/2026/10/feed-20261014-cn-371238.jpg?fit=2000%2C1334&ssl=1"]
+      } }
+  ]
+}
