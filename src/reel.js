@@ -120,26 +120,33 @@ function activeArea(src, info) {
   return crop;
 }
 
-function layoutFor(ar) {
-  if (ar >= 1.2) return { mode: 'framed', vw: W, vh: Math.round(W / ar / 2) * 2 };
-  if (ar >= 0.9) return { mode: 'framed', vw: W, vh: Math.round(W / ar / 2) * 2 };
-  if (ar >= 0.7) return { mode: 'framed', vw: 880, vh: Math.round(880 / ar / 2) * 2 };
+// Like the big AI accounts (evolving.ai, uncover.ai...): a wide video is not shown as a thin strip
+// but cropped around its center to an almost square box that fills the width, so it is big on the
+// phone. video.fit: "full" keeps the whole frame instead (for screens, charts, several people side
+// by side). A vertical video fills the whole screen.
+const BOX_AR = 1.15; // width / height of the video box for wide sources
+function layoutFor(ar, fit) {
+  if (fit === 'full') {
+    if (ar >= 0.9) return { mode: 'framed', vw: W, vh: Math.round(W / ar / 2) * 2 };
+    if (ar >= 0.7) return { mode: 'framed', vw: Math.round((1180 * ar) / 2) * 2, vh: 1180 };
+    return { mode: 'full', vw: W, vh: H };
+  }
+  if (ar >= BOX_AR) return { mode: 'framed', vw: W, vh: Math.round(W / BOX_AR / 2) * 2 };
+  if (ar >= 0.8) return { mode: 'framed', vw: W, vh: Math.min(1180, Math.round(W / ar / 2) * 2) };
   return { mode: 'full', vw: W, vh: H };
 }
 
 const header = (job, color) => `
-<div style="display:flex;align-items:center;gap:20px">
-<img src="${logo}" style="width:92px;height:92px">
-<div style="display:flex;flex-direction:column;gap:2px">
-<div style="font-family:Poppins;font-size:36px;font-weight:600;color:#fff;line-height:1.2">Neurafeed AI</div>
-<div style="font-family:Poppins;font-size:28px;color:${color};line-height:1.2">@neurafeed.ai</div>
+<div style="display:flex;align-items:center;gap:22px">
+<img src="${logo}" style="width:112px;height:112px">
+<div style="display:flex;flex-direction:column;gap:0">
+<div style="font-family:Poppins;font-size:38px;font-weight:700;color:#fff;line-height:1.2">Neurafeed AI</div>
+<div style="font-family:Poppins;font-size:31px;color:${color};line-height:1.2">@neurafeed.ai</div>
 </div></div>
-<p style="margin:0;font-family:Poppins;font-size:${job.hook_size || 42}px;line-height:1.35;font-weight:500;color:#fff">${hlb(job.hook)}</p>`;
+<p style="margin:0;font-family:Poppins;font-size:${job.hook_size || 56}px;line-height:1.24;font-weight:500;color:#fff;letter-spacing:-0.3px">${hlb(job.hook)}</p>`;
 
 // HTML for the frame layer. The element #video marks where the video goes; it stays transparent.
 function frameHtml(job, lay) {
-  const credit = job.credit ? `<div style="font-family:Poppins;font-size:24px;color:#9aa1a7">Video: ${hl(job.credit)}</div>` : '';
-  const cta = `<div style="font-family:Poppins;font-size:32px;color:#c3c8cc">Follow <span style="color:${ACC};font-weight:600">@neurafeed.ai</span> for daily AI news</div>`;
   if (lay.mode === 'full') {
     return `<div style="position:relative;width:${W}px;height:${H}px;overflow:hidden">
 <div id="video" style="position:absolute;inset:0"></div>
@@ -148,13 +155,13 @@ function frameHtml(job, lay) {
 <div style="position:absolute;left:40px;bottom:330px;font-family:Poppins;font-size:24px;color:#fff;opacity:.75">@neurafeed.ai</div>
 </div>`;
   }
-  return `<div style="width:${W}px;height:${H}px;display:flex;flex-direction:column;justify-content:center;gap:40px;overflow:hidden">
-<div style="box-sizing:border-box;padding:0 56px;display:flex;flex-direction:column;gap:28px">${header(job, '#9aa1a7')}</div>
+  // No text under the video (the credit and the follow line are in the caption), like the references.
+  return `<div style="width:${W}px;height:${H}px;box-sizing:border-box;padding-bottom:110px;display:flex;flex-direction:column;justify-content:center;gap:34px;overflow:hidden">
+<div style="box-sizing:border-box;padding:0 40px;display:flex;flex-direction:column;gap:26px">${header(job, '#9aa1a7')}</div>
 <div style="position:relative;align-self:center;width:${lay.vw}px;height:${lay.vh}px">
 <div id="video" style="position:absolute;inset:0"></div>
-<div style="position:absolute;left:28px;bottom:22px;font-family:Poppins;font-size:22px;color:#fff;opacity:.7">@neurafeed.ai</div>
+<div style="position:absolute;left:24px;bottom:20px;font-family:Poppins;font-size:22px;color:#fff;opacity:.6">@neurafeed.ai</div>
 </div>
-<div style="box-sizing:border-box;padding:0 56px;display:flex;flex-direction:column;gap:14px">${credit}${cta}</div>
 </div>`;
 }
 
@@ -217,7 +224,7 @@ async function renderReel(job, outDir, localSource) {
   const want = job.video?.crop ?? 'auto';
   if (want && typeof want === 'object') info.crop = want;
   else if (want === 'auto') { try { info.crop = activeArea(src, info); } catch (e) { info.crop = null; } }
-  const lay = layoutFor(info.crop ? info.crop.w / info.crop.h : info.w / info.h);
+  const lay = layoutFor(info.crop ? info.crop.w / info.crop.h : info.w / info.h, job.video?.fit);
   const framePng = path.join(outDir, 'frame.png');
   const rect = await renderFrame(job, lay, framePng);
   const out = path.join(outDir, 'reel.mp4');

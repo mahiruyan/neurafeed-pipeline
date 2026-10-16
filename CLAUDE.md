@@ -284,6 +284,11 @@ nothing was queued). Mahir is told on Telegram when a request is `done` or `cann
 - If Mahir's note gives a headline (for example `başlık: ...`, `title: ...` or text in quotes), use it as the `hook`: word for word if it is English, a faithful English translation if it is Turkish. Only add the *highlight* asterisks and fix spelling.
 - `video.url`: the post URL Mahir sent (yt-dlp downloads it). Optional `start`, `end` (seconds),
   `max_seconds` (default 90).
+- Layout (like evolving.ai / uncover.ai): header, hook, then the video big. A wide video is cropped
+  around its center to an almost square box. Set `"video": { ..., "fit": "full" }` when the
+  important part is near the left or right edge (a screen recording, text, a chart, two or three
+  people side by side), so the whole frame is shown instead. Nothing is written under the video:
+  the credit goes in the caption's last line.
 - If the video is AI-generated, say so in the hook or caption. If you cannot tell what the video
   shows from the post text and Mahir's note, still queue it with a neutral, accurate hook.
 - Reels count toward the 4 to 8 posts per day and post in the same prime-time windows.
