@@ -47,7 +47,7 @@ function imgData(f) {
   return `data:${type};base64,${buf.toString('base64')}`;
 }
 // Brand name for the question, from the logo file or URL ("assets/logos/openai.png", "Google_G_logo.svg").
-const BRANDS = { openai: 'OpenAI / ChatGPT', claude: 'Claude / Anthropic', anthropic: 'Anthropic / Claude', meta: 'Meta', nvidia: 'NVIDIA', apple: 'Apple' };
+const BRANDS = { openai: 'OpenAI" or "ChatGPT', claude: 'Claude" or "Anthropic', anthropic: 'Anthropic" or "Claude', meta: 'Meta', nvidia: 'NVIDIA', apple: 'Apple' };
 function brandOf(url) {
   const name = decodeURIComponent(String(url || '').split('/').pop() || '').replace(/^\d+px-/, '').replace(/\.(svg|png|jpe?g|webp)/gi, '').replace(/[_"%-]+/g, ' ').replace(/\b(logo|icon|symbol|wordmark|\d{4})\b/gi, '').trim();
   return BRANDS[name.toLowerCase()] || name || 'the company';
@@ -65,7 +65,7 @@ async function logoAlreadyVisible(photo, logo, brand = 'the company') {
       headers: { Authorization: `Bearer ${key}`, 'Content-Type': 'application/json' },
       signal: AbortSignal.timeout(60000),
       body: JSON.stringify({ model, max_tokens: 3, temperature: 0, messages: [{ role: 'user', content: [
-        { type: 'text', text: `Image 1 is a news photo. Image 2 is the logo of ${brand}. Answer yes if image 1 already clearly shows ${brand}: this logo, any other logo or symbol of it, or the name (${brand}) written large enough to read. Small, hidden or blurry marks do not count. Answer only yes or no.` },
+        { type: 'text', text: `Image 1 is a news photo. Image 2 is the logo of "${brand}". Answer yes if image 1 already clearly shows that brand: this logo, any other logo or symbol of it, or the word "${brand}" written large enough to read (on a sign, screen, wall or product). Small, hidden or blurry marks do not count. Answer only yes or no.` },
         { type: 'image_url', image_url: { url: imgData(photo), detail: 'high' } },
         { type: 'image_url', image_url: { url: imgData(grayLogo), detail: 'low' } },
       ] }] }),
