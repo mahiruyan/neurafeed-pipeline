@@ -21,19 +21,8 @@ async function download(url, dest, minBytes = 15000) {
   return dest;
 }
 
-// Returns an array of local file paths, one per slide. A slide whose image fails
-// falls back to the job's cover image so a render never ships with a blank area.
-// Asks a small vision model whether the photo already shows the logo (or the brand's name)
-// clearly. Needs OPENAI_API_KEY; without it every logo is kept. Costs a fraction of a cent.
+// ---------- "Is this logo already in the photo?" ----------
 // The vision model takes JPEG, PNG, GIF or WebP. Anything else (AVIF, SVG...) is converted first.
-// A logo is flattened onto mid gray first: a white or black mark on transparency is invisible
-// to the model otherwise.
-function onGray(f) {
-  const out = `${f}.gray.png`;
-  execFileSync('ffmpeg', ['-y', '-loglevel', 'error', '-i', f, '-filter_complex',
-    "color=c=0x808080:s=512x512[bg];[0:v]scale=440:440:force_original_aspect_ratio=decrease[l];[bg][l]overlay=(W-w)/2:(H-h)/2:format=auto", '-frames:v', '1', out], { timeout: 60000 });
-  return out;
-}
 function imgData(f) {
   let buf = fs.readFileSync(f);
   const isWebp = buf.slice(0, 4).toString() === 'RIFF' && buf.slice(8, 12).toString() === 'WEBP';
@@ -46,38 +35,63 @@ function imgData(f) {
   }
   return `data:${type};base64,${buf.toString('base64')}`;
 }
-// Brand name for the question, from the logo file or URL ("assets/logos/openai.png", "Google_G_logo.svg").
-const BRANDS = { openai: 'OpenAI" or "ChatGPT', claude: 'Claude" or "Anthropic', anthropic: 'Anthropic" or "Claude', meta: 'Meta', nvidia: 'NVIDIA', apple: 'Apple' };
+
+// Brand names a logo stands for, from the logo file or URL ("assets/logos/openai.png", "Google_G_logo.svg").
+const BRANDS = { openai: ['OpenAI', 'ChatGPT'], claude: ['Claude', 'Anthropic'], anthropic: ['Anthropic', 'Claude'], meta: ['Meta', 'Facebook'], nvidia: ['NVIDIA'], apple: ['Apple'] };
 function brandOf(url) {
   const name = decodeURIComponent(String(url || '').split('/').pop() || '').replace(/^\d+px-/, '').replace(/\.(svg|png|jpe?g|webp)/gi, '').replace(/[_"%-]+/g, ' ').replace(/\b(logo|icon|symbol|wordmark|\d{4})\b/gi, '').trim();
-  return BRANDS[name.toLowerCase()] || name || 'the company';
+  return BRANDS[name.toLowerCase()] || [name.split(' ')[0] || name];
 }
-async function logoAlreadyVisible(photo, logo, brand = 'the company') {
+const normName = (t) => String(t).toLowerCase().replace(/[^a-z0-9]/g, '');
+
+// Lists the brands a photo clearly shows (logos, symbols or written names). Needs OPENAI_API_KEY;
+// without it nothing is checked and every logo is kept. Listing is a steadier task for the model
+// than a yes/no question, and the matching is done in code. Well under a cent per photo, cached.
+const seenCache = new Map();
+async function brandsInPhoto(photo) {
+  if (seenCache.has(photo)) return seenCache.get(photo);
   const key = process.env.OPENAI_API_KEY;
-  if (!key) return false;
-  const models = [process.env.OPENAI_VISION_MODEL || 'gpt-4.1-mini', 'gpt-4o-mini'];
-  let grayLogo = logo;
-  try { grayLogo = onGray(logo); } catch { /* no ffmpeg: send as is */ }
+  if (!key) return null;
+  const models = [process.env.OPENAI_VISION_MODEL || 'gpt-4.1', 'gpt-4o', 'gpt-4.1-mini'];
   let lastErr;
   for (const model of models) {
     const res = await fetch('https://api.openai.com/v1/chat/completions', {
       method: 'POST',
       headers: { Authorization: `Bearer ${key}`, 'Content-Type': 'application/json' },
       signal: AbortSignal.timeout(60000),
-      body: JSON.stringify({ model, max_tokens: 3, temperature: 0, messages: [{ role: 'user', content: [
-        { type: 'text', text: `Image 1 is a news photo. Image 2 is the logo of "${brand}". Answer yes if image 1 already clearly shows that brand: this logo, any other logo or symbol of it, or the word "${brand}" written large enough to read (on a sign, screen, wall or product). Small, hidden or blurry marks do not count. Answer only yes or no.` },
+      body: JSON.stringify({ model, max_tokens: 150, temperature: 0, messages: [{ role: 'user', content: [
+        { type: 'text', text: 'List every company or product brand that is clearly visible in this photo as a logo, symbol or written name (on a sign, screen, wall, device or product). Skip marks that are tiny, hidden or too blurry to recognize. Reply with a JSON array of brand names only, for example ["OpenAI", "Google Chrome"]. Reply [] if there are none.' },
         { type: 'image_url', image_url: { url: imgData(photo), detail: 'high' } },
-        { type: 'image_url', image_url: { url: imgData(grayLogo), detail: 'low' } },
       ] }] }),
     });
     const d = await res.json().catch(() => ({}));
-    if (res.ok) return /^\s*yes/i.test(d.choices?.[0]?.message?.content || '');
+    if (res.ok) {
+      const text = d.choices?.[0]?.message?.content || '[]';
+      let list = [];
+      try { list = JSON.parse(text.slice(text.indexOf('['), text.lastIndexOf(']') + 1)); } catch { list = []; }
+      if (!Array.isArray(list)) list = [];
+      seenCache.set(photo, list);
+      return list;
+    }
     lastErr = new Error(d.error?.message || `HTTP ${res.status}`);
     if (!/model/i.test(lastErr.message)) break;
   }
   throw lastErr;
 }
 
+// True when the photo already shows the brand of this logo (its URL names the brand).
+function brandMatches(seen, logoUrl) {
+  const want = brandOf(logoUrl).map(normName).filter(Boolean);
+  // Short names ("X", "HP") must match exactly; longer ones may sit inside ("Google Chrome").
+  return (seen || []).map(normName).some((s) => s && want.some((w) => s === w || (w.length >= 3 && s.includes(w)) || (s.length >= 3 && w.includes(s))));
+}
+async function logoAlreadyVisible(photo, logoUrl) {
+  const seen = await brandsInPhoto(photo);
+  return seen ? brandMatches(seen, logoUrl) : false;
+}
+
+// Returns an array of local file paths, one per slide. A slide whose image fails
+// falls back to the job's cover image so a render never ships with a blank area.
 // AI-generated slide image (OpenAI image model). Needs OPENAI_API_KEY.
 // Slide field: image.generate = "a prompt describing the scene".
 // image.refs: optional list of image URLs (company logo, product photo, CEO photo, mascot) the
@@ -177,7 +191,7 @@ async function fetchImages(job, outDir) {
         // A logo the photo already shows clearly is not added a second time.
         const isLogo = (b.fit || 'contain') === 'contain' || b.shape === 'free' || b.cutout;
         if (isLogo && paths[i]) {
-          const seen = await logoAlreadyVisible(paths[i], file, brandOf(b.url)).catch((e) => { errors.push(`slide ${i + 1} badge ${j + 1}: logo check skipped (${e.message})`); return false; });
+          const seen = await logoAlreadyVisible(paths[i], b.url).catch((e) => { errors.push(`slide ${i + 1} badge ${j + 1}: logo check skipped (${e.message})`); return false; });
           if (seen) { errors.push(`slide ${i + 1} badge ${j + 1}: left out, the photo already shows this logo`); continue; }
         }
         list.push(file);
@@ -204,4 +218,4 @@ async function fetchImages(job, outDir) {
   return { paths: paths.map((p) => p || firstGood), badges, errors };
 }
 
-module.exports = { logoAlreadyVisible, brandOf, download, fetchImages };
+module.exports = { logoAlreadyVisible, brandsInPhoto, brandMatches, brandOf, download, fetchImages };

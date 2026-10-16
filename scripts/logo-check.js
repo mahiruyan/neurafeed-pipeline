@@ -3,7 +3,7 @@
 const fs = require('fs');
 const os = require('os');
 const path = require('path');
-const { logoAlreadyVisible, brandOf, download } = require('../src/images');
+const { brandsInPhoto, brandMatches, brandOf, download } = require('../src/images');
 
 (async () => {
   const tmp = fs.mkdtempSync(path.join(os.tmpdir(), 'logo-'));
@@ -11,11 +11,9 @@ const { logoAlreadyVisible, brandOf, download } = require('../src/images');
     const job = JSON.parse(fs.readFileSync(path.join(__dirname, '..', 'jobs', `${id}.json`), 'utf8'));
     const cover = job.slides[0];
     const photo = await download(cover.image.url, path.join(tmp, `${id}.img`));
+    const seen = await brandsInPhoto(photo);
     for (const b of cover.badges || []) {
-      let logo = b.url;
-      logo = await download(logo, path.join(tmp, `${id}-logo.img`), 1000);
-      const seen = await logoAlreadyVisible(photo, logo, brandOf(b.url)).catch((e) => `error: ${e.message}`);
-      console.log(`::notice::${id} | ${brandOf(b.url).replace(/"/g, '')} | already in photo: ${seen}`);
+      console.log(`::notice::${id} | ${brandOf(b.url).join('/')} | already in photo: ${brandMatches(seen, b.url)} | photo shows ${JSON.stringify(seen)}`);
     }
   } catch (e) { console.log(`::warning::${id}: ${e.message}`); }
 })().catch((e) => console.log(`::error::${e.stack || e}`));
