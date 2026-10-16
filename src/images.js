@@ -37,7 +37,7 @@ function imgData(f) {
 }
 
 // Brand names a logo stands for, from the logo file or URL ("assets/logos/openai.png", "Google_G_logo.svg").
-const BRANDS = { openai: ['OpenAI', 'ChatGPT'], claude: ['Claude', 'Anthropic'], anthropic: ['Anthropic', 'Claude'], meta: ['Meta', 'Facebook'], nvidia: ['NVIDIA'], apple: ['Apple'] };
+const BRANDS = { openai: ['OpenAI', 'ChatGPT'], claude: ['Claude', 'Anthropic'], anthropic: ['Anthropic', 'Claude'], meta: ['Meta', 'Facebook'], nvidia: ['NVIDIA'], apple: ['Apple'], x: ['X', 'xAI', 'Grok', 'Twitter'], xai: ['xAI', 'Grok', 'X'], grok: ['Grok', 'xAI', 'X'], google: ['Google', 'Gemini'], gemini: ['Gemini', 'Google'], microsoft: ['Microsoft', 'Copilot'] };
 function brandOf(url) {
   const name = decodeURIComponent(String(url || '').split('/').pop() || '').replace(/^\d+px-/, '').replace(/\.(svg|png|jpe?g|webp)/gi, '').replace(/[_"%-]+/g, ' ').replace(/\b(logo|icon|symbol|wordmark|\d{4})\b/gi, '').trim();
   return BRANDS[name.toLowerCase()] || [name.split(' ')[0] || name];

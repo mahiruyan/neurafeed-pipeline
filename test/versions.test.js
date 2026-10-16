@@ -56,6 +56,7 @@ test('logo brand matching: aliases, short names exact, unrelated brands kept', (
   assert.equal(brandMatches(['ChatGPT', 'Google Chrome'], 'assets/logos/openai.png'), true);
   assert.equal(brandMatches(['Google Chrome'], 'assets/logos/openai.png'), false);
   assert.equal(brandMatches(['Grok', 'X'], 'https://upload.wikimedia.org/x/500px-X_logo_2023.svg.png'), true);
+  assert.equal(brandMatches(['xAI', 'Grok'], 'https://upload.wikimedia.org/x/500px-X_logo_2023.svg.png'), true);
   assert.equal(brandMatches(['Xbox'], 'https://upload.wikimedia.org/x/500px-X_logo_2023.svg.png'), false);
   assert.equal(brandMatches([], 'assets/logos/meta.png'), false);
 });
