@@ -21,6 +21,7 @@ jobs:
           echo "::notice::yt-dlp $(yt-dlp --version)"
       - name: Try each client
         run: |
+          set +e
           for c in default tv web_safari mweb android_vr ios web_embedded tv_simply; do
             args=(); [ "$c" != default ] && args=(--extractor-args "youtube:player_client=$c")
             if out=$(yt-dlp "${args[@]}" --no-playlist --skip-download --print "%(title)s" "${{ inputs.url }}" 2>err.txt); then info="info ok"; else info="info FAIL: $(grep -o 'ERROR.*' err.txt | cut -c1-90)"; fi
