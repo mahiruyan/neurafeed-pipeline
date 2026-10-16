@@ -7,7 +7,7 @@ const { logoAlreadyVisible } = require('../src/images');
 
 (async () => {
   const tmp = fs.mkdtempSync(path.join(os.tmpdir(), 'logo-'));
-  for (const id of process.argv.slice(2)) {
+  for (const id of process.argv.slice(2)) try {
     const job = JSON.parse(fs.readFileSync(path.join(__dirname, '..', 'jobs', `${id}.json`), 'utf8'));
     const cover = job.slides[0];
     const res = await fetch(cover.image.url, { headers: { 'User-Agent': 'Mozilla/5.0 neurafeed' } });
@@ -19,5 +19,5 @@ const { logoAlreadyVisible } = require('../src/images');
       const seen = await logoAlreadyVisible(photo, logo).catch((e) => `error: ${e.message}`);
       console.log(`::notice::${id} | ${path.basename(b.url)} | already in photo: ${seen}`);
     }
-  }
-})();
+  } catch (e) { console.log(`::warning::${id}: ${e.message}`); }
+})().catch((e) => console.log(`::error::${e.stack || e}`));
