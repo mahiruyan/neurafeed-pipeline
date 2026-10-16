@@ -1,0 +1,60 @@
+{
+  "id": "2026-10-16-google-willow-magic-states-40x",
+  "link_id": "link-2026-10-16-669",
+  "created_at": "2026-10-16T16:10:00Z",
+  "story_time": "2026-10-15T21:46:00Z",
+  "post_at": "2026-10-16T16:30:00.000Z",
+  "timely": false,
+  "sensitive": false,
+  "priority": 1,
+  "review": true,
+  "sources": [
+    { "name": "The Quantum Insider", "url": "https://thequantuminsider.com/2026/10/16/google-demonstrates-method-to-cut-errors-in-quantum-computings-magic-states/" },
+    { "name": "Decrypt", "url": "https://tech.yahoo.com/science/articles/google-says-just-cracked-one-214604650.html" },
+    { "name": "Glitchwire", "url": "https://glitchwire.com/news/googles-willow-processor-runs-magic-state-cultivation-cutting-quantum-errors-40/" }
+  ],
+  "caption": "Google says its Willow quantum chip cut errors about 40 times when making magic states, a key ingredient for useful quantum computers.\nThe states reached 99.99% fidelity, and the results are published in the journal Science.\nOnly about 8% of attempts passed every check, so scaling up is the next test.\n\nHow soon do you think quantum computers will do real work?\n\nFollow @neurafeed.ai for daily AI news.\n\nSource: The Quantum Insider · Photo: Google",
+  "slides": [
+    { "kind": "cover",
+      "headline": "Google's quantum chip just cut errors *40 times* on one of the field's biggest bottlenecks",
+      "image": { "url": "https://www.notebookcheck.net/fileadmin/Notebooks/News/_nc4/willow.png", "credit": "Google",
+        "fallback_urls": ["https://media.datacenterdynamics.com/media/images/Google_Willow.2e16d0ba.fill-1200x630.png"] },
+      "pos": "center center",
+      "badges": [ { "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Google_%22G%22_logo.svg/500px-Google_%22G%22_logo.svg.png", "shape": "free", "cutout": true } ] },
+    { "kind": "text",
+      "heading": "What Google *pulled off*",
+      "paras": [
+        "Google's Quantum AI team ran a technique called magic state cultivation on its Willow chip. The results are published in the journal Science.",
+        "The prepared states reached 99.99% logical fidelity, with errors about 40 times lower than states made without cultivation."
+      ],
+      "image": { "url": "https://quantumzeitgeist.com/wp-content/uploads/magic_states-1.jpg", "credit": "Quantum Zeitgeist",
+        "fallback_urls": ["https://quantumzeitgeist.com/wp-content/smush-webp/magic_states-1.jpg.webp"] } },
+    { "kind": "text",
+      "heading": "Why *magic states* matter",
+      "paras": [
+        "Quantum computers need magic states for operations that error correction cannot do directly. Each one gets used up, so long programs need a constant supply.",
+        "Google's estimates say making clean magic states could take up to 95% of a quantum computer's capacity."
+      ],
+      "image": { "url": "https://thequantuminsider.com/wp-content/uploads/2026/10/Magic-State-with-an-Iridescent-Sphere.png", "credit": "The Quantum Insider" } },
+    { "kind": "text",
+      "heading": "The *catch*",
+      "paras": [
+        "Only about 8% of attempts passed every check, so the chip throws away more than 9 of every 10 tries. The test used at most 54 of Willow's 105 qubits.",
+        "Google says the work does not yet show the problem is solved at practical scale."
+      ],
+      "image": { "url": "https://media.datacenterdynamics.com/media/images/Google_Willow.2e16d0ba.fill-1200x630.png", "credit": "Google",
+        "fallback_urls": ["https://www.notebookcheck.net/fileadmin/_processed_/5/7/csm_willow_cdca6d1421.png"] } },
+    { "kind": "text",
+      "heading": "What *comes next*",
+      "paras": [
+        "Google plans larger tests. It projects that halving Willow's hardware noise would cut magic state errors to about 2 in 100,000.",
+        { "t": "Breaking today's encryption would need states about a million times cleaner, so this is no threat to it yet.", "strong": true }
+      ],
+      "image": { "url": "https://s.yimg.com/lo/mysterio/api/516b938117353901a92939c137ee992bcb66208f1261ee4ba273705a75449ca3/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_jpg/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Fdecrypt_157%2Fae46c7ab7d5756b387bf0765c3206741.png", "credit": "Decrypt",
+        "fallback_urls": ["https://cdn.glitchwire.com/Screenshot_2026-10-15-23-59-57-21_f9ee0578fe1cc94de7482bd41a.jpg"] } },
+    { "kind": "cta",
+      "hook": "Quantum computers just got a step closer to real work. Follow to see what Google does next with Willow.",
+      "image": { "url": "https://pctechmag.com/wp-content/uploads/2024/12/willow-1044x587.jpg", "credit": "Google",
+        "fallback_urls": ["https://cdn.glitchwire.com/Screenshot_2026-10-15-23-59-57-21_f9ee0578fe1cc94de7482bd41a.jpg"] } }
+  ]
+}
