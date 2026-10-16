@@ -287,8 +287,8 @@ nothing was queued). Mahir is told on Telegram when a request is `done` or `cann
 - Layout (like evolving.ai / uncover.ai): header, hook, then the video big. A wide video is cropped
   around its center to an almost square box. Set `"video": { ..., "fit": "full" }` when the
   important part is near the left or right edge (a screen recording, text, a chart, two or three
-  people side by side), so the whole frame is shown instead. Nothing is written under the video:
-  the credit goes in the caption's last line.
+  people side by side), so the whole frame is shown instead. Under the video there is only the
+  "Follow @neurafeed.ai" line; the credit goes in the caption's last line.
 - If the video is AI-generated, say so in the hook or caption. If you cannot tell what the video
   shows from the post text and Mahir's note, still queue it with a neutral, accurate hook.
 - Reels count toward the 4 to 8 posts per day and post in the same prime-time windows.

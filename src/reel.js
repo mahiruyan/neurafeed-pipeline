@@ -155,13 +155,15 @@ function frameHtml(job, lay) {
 <div style="position:absolute;left:40px;bottom:330px;font-family:Poppins;font-size:24px;color:#fff;opacity:.75">@neurafeed.ai</div>
 </div>`;
   }
-  // No text under the video (the credit and the follow line are in the caption), like the references.
+  // Under the video only the follow line (the credit is in the caption).
+  const cta = `<div style="box-sizing:border-box;padding:0 40px;font-family:Poppins;font-size:34px;color:#c3c8cc">Follow <span style="color:${ACC};font-weight:600">@neurafeed.ai</span> for daily AI news</div>`;
   return `<div style="width:${W}px;height:${H}px;box-sizing:border-box;padding-bottom:110px;display:flex;flex-direction:column;justify-content:center;gap:34px;overflow:hidden">
 <div style="box-sizing:border-box;padding:0 40px;display:flex;flex-direction:column;gap:26px">${header(job, '#9aa1a7')}</div>
 <div style="position:relative;align-self:center;width:${lay.vw}px;height:${lay.vh}px">
 <div id="video" style="position:absolute;inset:0"></div>
 <div style="position:absolute;left:24px;bottom:20px;font-family:Poppins;font-size:22px;color:#fff;opacity:.6">@neurafeed.ai</div>
 </div>
+${cta}
 </div>`;
 }
 
