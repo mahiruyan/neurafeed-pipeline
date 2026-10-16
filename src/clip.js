@@ -14,7 +14,14 @@ const fs = require('fs');
 const path = require('path');
 const { execFileSync } = require('child_process');
 
-const run = (cmd, args, opts = {}) => execFileSync(cmd, args, { stdio: ['ignore', 'pipe', 'pipe'], maxBuffer: 64 * 1024 * 1024, ...opts }).toString();
+function run(cmd, args, opts = {}) {
+  try {
+    return execFileSync(cmd, args, { stdio: ['ignore', 'pipe', 'pipe'], maxBuffer: 64 * 1024 * 1024, ...opts }).toString();
+  } catch (e) {
+    const err = String(e.stderr || '').trim().split('\n').filter((l) => /error|warning/i.test(l)).slice(-2).join(' | ');
+    throw new Error(`${cmd} failed: ${err || String(e.message).split('\n')[0]}`.slice(0, 500));
+  }
+}
 const norm = (w) => String(w).toLowerCase().replace(/&amp;/g, 'and').replace(/[^a-z0-9]/g, '');
 const ts = (s) => { const p = s.split(':').map(Number); return p.length === 3 ? p[0] * 3600 + p[1] * 60 + p[2] : p[0] * 60 + p[1]; };
 
