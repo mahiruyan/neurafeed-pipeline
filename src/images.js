@@ -40,7 +40,8 @@ function imgData(f) {
 const BRANDS = { openai: ['OpenAI', 'ChatGPT'], claude: ['Claude', 'Anthropic'], anthropic: ['Anthropic', 'Claude'], meta: ['Meta', 'Facebook'], nvidia: ['NVIDIA'], apple: ['Apple'], x: ['X', 'xAI', 'Grok', 'Twitter'], xai: ['xAI', 'Grok', 'X'], grok: ['Grok', 'xAI', 'X'], google: ['Google', 'Gemini'], gemini: ['Gemini', 'Google'], microsoft: ['Microsoft', 'Copilot'] };
 function brandOf(url) {
   const name = decodeURIComponent(String(url || '').split('/').pop() || '').replace(/^\d+px-/, '').replace(/\.(svg|png|jpe?g|webp)/gi, '').replace(/[_"%-]+/g, ' ').replace(/\b(logo|icon|symbol|wordmark|\d{4})\b/gi, '').trim();
-  return BRANDS[name.toLowerCase()] || [name.split(' ')[0] || name];
+  const first = (name.split(' ')[0] || name).toLowerCase();
+  return BRANDS[name.toLowerCase()] || BRANDS[first] || [name.split(' ')[0] || name];
 }
 const normName = (t) => String(t).toLowerCase().replace(/[^a-z0-9]/g, '');
 

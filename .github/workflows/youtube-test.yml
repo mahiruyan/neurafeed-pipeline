@@ -1,0 +1,36 @@
+name: YouTube download test
+
+# Read-only check: can GitHub's servers get YouTube captions and a short section of a video?
+on:
+  workflow_dispatch:
+    inputs:
+      url:
+        description: YouTube video URL
+        default: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ'
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Tools
+        run: |
+          python3 -m pip install --quiet --upgrade --pre yt-dlp
+          which ffmpeg || (sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg)
+          echo "::notice::yt-dlp $(yt-dlp --version)"
+      - name: Video info
+        run: |
+          if out=$(yt-dlp --no-playlist --skip-download --print "%(title)s | %(duration)s s | %(channel)s" "${{ inputs.url }}" 2>err.txt); then
+            echo "::notice::info ok: $out"
+          else echo "::warning::info failed: $(tail -c 400 err.txt | tr '\n' ' ')"; fi
+      - name: Captions (auto subtitles with timestamps)
+        run: |
+          yt-dlp --no-playlist --skip-download --write-auto-subs --write-subs --sub-langs "en.*,en" --sub-format vtt -o "subs" "${{ inputs.url }}" 2>err.txt || true
+          f=$(ls subs*.vtt 2>/dev/null | head -1)
+          if [ -n "$f" ]; then echo "::notice::captions ok: $f, $(grep -c -- '-->' "$f") timed lines, sample: $(grep -v -- '-->' "$f" | grep -v '^$' | sed -n '5,7p' | tr '\n' ' ' | cut -c1-150)"
+          else echo "::warning::captions failed: $(tail -c 400 err.txt | tr '\n' ' ')"; fi
+      - name: Download only a 15-second section
+        run: |
+          if yt-dlp --no-playlist --download-sections "*00:00:30-00:00:45" -f "bv*[height<=1080]+ba/b" --merge-output-format mp4 -o "clip.%(ext)s" "${{ inputs.url }}" 2>err.txt; then
+            echo "::notice::section ok: $(ffprobe -v error -show_entries format=duration:stream=width,height -of csv=p=0 clip.mp4 | tr '\n' ' ') $(du -h clip.mp4 | cut -f1)"
+          else echo "::warning::section failed: $(tail -c 400 err.txt | tr '\n' ' ')"; fi
