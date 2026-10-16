@@ -1,0 +1,55 @@
+{
+  "id": "2026-10-16-claude-quantum-circuits-17x-fewer-gates",
+  "created_at": "2026-10-16T20:05:00Z",
+  "story_time": "2026-10-16T18:00:00Z",
+  "timely": true,
+  "sensitive": false,
+  "priority": 1,
+  "sources": [
+    { "name": "Unite.AI", "url": "https://www.unite.ai/anthropic-says-claude-beat-best-published-quantum-circuit-designs/" },
+    { "name": "Interesting Engineering", "url": "https://interestingengineering.com/ai-robotics/claude-quantum-circuit-design" },
+    { "name": "Blockchain.News", "url": "https://blockchain.news/news/claude-designs-more-efficient-quantum-circuits-anthropic-study" }
+  ],
+  "caption": "Anthropic says Claude Mythos 5 designed quantum circuits that beat the best published designs on eight tasks.\nOne new design needs 17 times fewer gates, and a decoder circuit got 12 times cheaper than Google's version.\nThe savings are estimates for future quantum computers, not today's machines.\n\nWould you trust AI to design the computers that come after it?\n\nFollow @neurafeed.ai for daily AI news.\n\nSource: Unite.AI · Photo: Getty Images/Anthropic via Interesting Engineering",
+  "slides": [
+    { "kind": "cover",
+      "headline": "Claude just beat the best published quantum circuit designs, one with *17 times fewer gates*",
+      "image": { "url": "https://cms.interestingengineering.com/wp-content/uploads/2026/10/Untitled-Design-2026-10-17T002128.090.jpg", "credit": "Getty Images/Anthropic",
+        "fallback_urls": ["https://www.unite.ai/wp-content/uploads/2026/10/anthropic-says-claude-beat-best-published-quantum-circuit-designs.jpg"] },
+      "pos": "center center",
+      "badges": [ { "url": "assets/logos/anthropic.png", "fit": "contain", "credit": "Anthropic" } ],
+      "badge_border": "white" },
+    { "kind": "text",
+      "heading": "Claude *drew the blueprints*",
+      "paras": [
+        "Anthropic says Claude Mythos 5 improved on the best published quantum circuits for eight building blocks, from chemistry and optimization to physics simulation and number theory.",
+        "Some gains were an order of magnitude or more. In seven of the eight tasks, the new circuits cut both gate and qubit counts."
+      ],
+      "image": { "url": "https://www-cdn.anthropic.com/images/4zrzovbb/website/cc389d90b468ebc86011f6642099dfad9a4a757f-2000x1125.jpg", "credit": "Anthropic" } },
+    { "kind": "text",
+      "heading": "53 hours, *no human in the loop*",
+      "paras": [
+        "Claude wrote each design as a Python program. An automated evaluator checked it for correctness and scored it, and Claude revised with no human input between rounds.",
+        "The main run lasted 53 hours from a one-paragraph brief. Researcher Andi Gu led the work, with collaborators from Harvard and QuEra Computing."
+      ],
+      "image": { "url": "https://www.unite.ai/wp-content/uploads/2026/10/anthropic-says-claude-beat-best-published-quantum-circuit-designs.jpg", "credit": "Unite.AI",
+        "fallback_urls": ["https://superpowerdaily.com/api/story-images/1c7d6bb1-7fa7-4e74-9783-cd5861312afb?dpl=e1d9089ef7013405cba94ab00a417df5ebee5d41"] } },
+    { "kind": "text",
+      "heading": "The *17x* breakthrough",
+      "paras": [
+        "For elliptic-curve math, Claude found a new way to run modular inversion on a quantum computer without storing the history of its branching steps.",
+        "One design uses 12% more qubits but 17 times fewer gates than the smallest previous design. Claude proved the method correct in the Lean proof language."
+      ],
+      "image": { "url": "https://image.blockchain.news:443/features/EEF942587C092BBC865AE434AF7F9392163C996AC4BB6F3A474D06B1E81E0F4F.jpg", "credit": "Blockchain.News" } },
+    { "kind": "text",
+      "heading": "Beating *Google's* design too",
+      "paras": [
+        "Claude also rebuilt the decoder inside decoded quantum interferometry, a quantum optimization method. Its circuit needs 12 times fewer gates than Google's previous construction.",
+        { "t": "Today's quantum computers have only hundreds to thousands of noisy qubits, so these savings are estimates for future machines.", "strong": true }
+      ],
+      "image": { "url": "https://superpowerdaily.com/api/story-inline-images/f2546593-bc57-4b54-9c0d-29e40511438c?presentation=source-native-v2", "credit": "Anthropic", "fit": "contain" } },
+    { "kind": "cta",
+      "hook": "AI is now designing the computers of the future. Follow to see what Claude cracks next.",
+      "image": { "url": "https://superpowerdaily.com/api/story-images/1c7d6bb1-7fa7-4e74-9783-cd5861312afb?dpl=e1d9089ef7013405cba94ab00a417df5ebee5d41", "credit": "Superpower Daily" } }
+  ]
+}
