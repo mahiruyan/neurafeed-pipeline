@@ -1,0 +1,63 @@
+{
+  "id": "2026-10-16-microsoft-mai-base-2-beats-openai-quarter-compute",
+  "created_at": "2026-10-16T02:10:00Z",
+  "story_time": "2026-10-15T22:00:00Z",
+  "timely": false,
+  "sensitive": false,
+  "priority": 1,
+  "sources": [
+    { "name": "Business Insider", "url": "https://jingletree.com/microsoft-ai-chief-says-the-company-beat-openai-at-its-own-game-using-a-quarter-of-the-computing-power-289157.html" },
+    { "name": "Startup Fortune", "url": "https://startupfortune.com/microsoft-ai-chief-says-his-model-beat-openais-using-a-quarter-the-compute/" },
+    { "name": "Crypto Briefing", "url": "https://cryptobriefing.com/microsoft-completes-pre-training-mai-base-2/" }
+  ],
+  "caption": "Microsoft AI CEO Mustafa Suleyman told employees that the company's new MAI-Base-2 is a stronger base model than the one behind OpenAI's GPT-5.6 Sol.\nHe says Microsoft trained it with one quarter of the compute OpenAI used.\nThe comparison comes from Microsoft's own private tests.\n\nCan Microsoft really outbuild the company it helped create?\n\nFollow @neurafeed.ai for daily AI news.\n\nSource: Business Insider · Photo: Stephen Brashear/Getty Images",
+  "slides": [
+    { "kind": "cover",
+      "headline": "Microsoft just told its staff it beat OpenAI at its own game with *a quarter of the compute*",
+      "image": {
+        "url": "https://i.insider.com/68a5bf6ccfc04e97619bafbc?width=1200",
+        "credit": "Stephen Brashear/Getty Images",
+        "fallback_urls": ["https://startupfortune.com/wp-content/uploads/2026/09/sf-21117-1789584876875.jpg"],
+        "generate": "Vertical photo inside a dim, dark data center hall. The man in the first image, wearing a dark suit, stands on the right side of the frame with a calm, confident expression, next to a huge antique brass balance scale. On the scale's low, heavy pan sits one small compact black server box. On the high, lifted pan sit four towering server racks, clearly outweighed by the small box. The man and the scale fill the upper two thirds of the frame, with headroom above his head. The left third of the frame is empty dark background. The bottom third is plain dark floor. Keep his face exact. Blank surfaces, no readable text or labels on any object, no letters, no logos, no watermarks. Photorealistic, high contrast, one clear scene. It must look like an unedited real photo from a news agency, not a painting, not digital art, no glow effects.",
+        "refs": ["https://i.insider.com/68a5bf6ccfc04e97619bafbc?width=1200"]
+      },
+      "pos": "center 30%",
+      "badges": [
+        { "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Microsoft_logo.svg/500px-Microsoft_logo.svg.png", "fit": "contain" },
+        { "url": "assets/logos/openai.png", "fit": "contain" }
+      ],
+      "badge_side": "left" },
+    { "kind": "text",
+      "heading": "A stronger model for *75% less compute*",
+      "paras": [
+        "Microsoft AI CEO Mustafa Suleyman told employees at a town hall on Thursday that MAI-Base-2 is a stronger pre-trained model than the one powering OpenAI's GPT-5.6 Sol.",
+        "\"We used one-quarter of the compute that OpenAI used to train their model,\" he said, according to Business Insider."
+      ],
+      "image": { "url": "https://startupfortune.com/wp-content/uploads/2026/10/openai-microsoft-ai-mustafa-suleyman.jpg", "credit": "via Startup Fortune",
+        "fallback_urls": ["https://startupfortune.com/wp-content/uploads/2026/10/openai-microsoft-ai-mustafa-suleyman-1024x576.jpg"] },
+      "pos": "center 30%" },
+    { "kind": "text",
+      "heading": "Secretly tested against *OpenAI's Spud*",
+      "paras": [
+        "Suleyman said Microsoft \"privately and confidentially\" compared MAI-Base-2 with OpenAI models, including one nicknamed Spud that he said powers GPT-5.6.",
+        "He said Microsoft's model scored better on tests of how well an AI understands and predicts patterns in information. He also claimed it used 12 times less compute than DeepSeek."
+      ],
+      "image": { "url": "https://i.insider.com/6ad14ecfe50b02f612be41c9?width=1200&format=jpeg", "credit": "via Business Insider",
+        "fallback_urls": ["https://startupfortune.com/wp-content/uploads/2026/10/openai-microsoft-ai-mustafa-suleyman-1024x576.jpg"] },
+      "pos": "center 30%" },
+    { "kind": "text",
+      "heading": "Partners on paper, *rivals in practice*",
+      "paras": [
+        "Microsoft has invested billions in OpenAI and holds a stake likely worth more than $100 billion. The two still work together on Azure and Copilot, but the relationship has frayed.",
+        "In March, Microsoft reassigned Suleyman to focus on building its own AI models in its superintelligence unit.",
+        { "t": "The results come from Microsoft's own internal tests. OpenAI did not respond to Business Insider.", "strong": true }
+      ],
+      "image": { "url": "https://startupfortune.com/wp-content/uploads/2026/09/sf-21117-1789584876875.jpg", "credit": "via Startup Fortune",
+        "fallback_urls": ["https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5d/BalticServers_data_center.jpg/1920px-BalticServers_data_center.jpg"] },
+      "pos": "center 30%" },
+    { "kind": "cta",
+      "hook": "Microsoft is now racing the AI lab it helped build. Follow to see if MAI-Base-2 lives up to the claim.",
+      "image": { "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5d/BalticServers_data_center.jpg/1920px-BalticServers_data_center.jpg", "credit": "BalticServers.com / CC BY-SA 3.0",
+        "fallback_urls": ["https://startupfortune.com/wp-content/uploads/2026/10/openai-microsoft-ai-mustafa-suleyman-1024x576.jpg"] } }
+  ]
+}
