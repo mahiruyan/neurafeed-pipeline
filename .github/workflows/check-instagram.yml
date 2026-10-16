@@ -95,6 +95,7 @@ jobs:
         run: |
           m=$(curl -s -G "https://graph.instagram.com/$IG_USER_ID/media" -d "fields=caption,timestamp" -d limit=60 -d "access_token=$IG_ACCESS_TOKEN")
           echo "::notice::duplicates: $(echo "$m" | jq -c '.error.message // ([.data[] | {c: ((.caption // "") | .[0:90]), t: .timestamp}] | group_by(.c) | map(select(length > 1) | {caption: .[0].c, times: map(.t)}))')"
+      - uses: actions/checkout@v4
       - name: Logo already in photo (vision check on past covers, read only)
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
