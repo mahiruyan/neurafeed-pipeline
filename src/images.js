@@ -23,6 +23,37 @@ async function download(url, dest, minBytes = 15000) {
 
 // Returns an array of local file paths, one per slide. A slide whose image fails
 // falls back to the job's cover image so a render never ships with a blank area.
+// Asks a small vision model whether the photo already shows the logo (or the brand's name)
+// clearly. Needs OPENAI_API_KEY; without it every logo is kept. Costs a fraction of a cent.
+const imgData = (f) => {
+  const buf = fs.readFileSync(f);
+  const type = buf[0] === 0x89 ? 'image/png' : buf[0] === 0x47 ? 'image/gif' : buf[0] === 0x52 ? 'image/webp' : 'image/jpeg';
+  return `data:${type};base64,${buf.toString('base64')}`;
+};
+async function logoAlreadyVisible(photo, logo) {
+  const key = process.env.OPENAI_API_KEY;
+  if (!key) return false;
+  const models = [process.env.OPENAI_VISION_MODEL || 'gpt-4.1-mini', 'gpt-4o-mini'];
+  let lastErr;
+  for (const model of models) {
+    const res = await fetch('https://api.openai.com/v1/chat/completions', {
+      method: 'POST',
+      headers: { Authorization: `Bearer ${key}`, 'Content-Type': 'application/json' },
+      signal: AbortSignal.timeout(60000),
+      body: JSON.stringify({ model, max_tokens: 3, temperature: 0, messages: [{ role: 'user', content: [
+        { type: 'text', text: 'Image 1 is a news photo. Image 2 is a company or product logo (or mascot). Is the same logo, the same brand symbol, or the brand name written out, already clearly visible and easy to recognize in image 1 (not tiny, not hidden)? Answer only yes or no.' },
+        { type: 'image_url', image_url: { url: imgData(photo), detail: 'low' } },
+        { type: 'image_url', image_url: { url: imgData(logo), detail: 'low' } },
+      ] }] }),
+    });
+    const d = await res.json().catch(() => ({}));
+    if (res.ok) return /^\s*yes/i.test(d.choices?.[0]?.message?.content || '');
+    lastErr = new Error(d.error?.message || `HTTP ${res.status}`);
+    if (!/model/i.test(lastErr.message)) break;
+  }
+  throw lastErr;
+}
+
 // AI-generated slide image (OpenAI image model). Needs OPENAI_API_KEY.
 // Slide field: image.generate = "a prompt describing the scene".
 // image.refs: optional list of image URLs (company logo, product photo, CEO photo, mascot) the
@@ -98,31 +129,40 @@ async function fetchImages(job, outDir) {
   const firstGood = paths.find(Boolean);
   if (!firstGood) throw new Error('No image could be downloaded for this job:\n' + errors.join('\n'));
 
-  // Badges are optional: a badge that fails to download is simply left out.
+  // Badges are optional: a badge that fails to download is simply left out. The slide's badge
+  // list is trimmed the same way, so every remaining file keeps its own settings (side, fit, cutout).
   const badges = [];
   for (let i = 0; i < job.slides.length; i++) {
     const list = [];
+    const kept = [];
     for (let j = 0; j < (job.slides[i].badges || []).length; j++) {
       const b = job.slides[i].badges[j];
       try {
         const raw = await download(b.url, path.join(srcDir, `${i + 1}-b${j + 1}.img`), 1000);
+        let file = raw;
         if (b.cutout) {
           // Background removal (rembg), for mascots or products shown free on the photo.
           const png = path.join(srcDir, `${i + 1}-b${j + 1}.png`);
           try {
             execFileSync('python3', [path.join(__dirname, 'cutout.py'), raw, png], { stdio: 'pipe', timeout: 180000 });
-            list.push(png);
+            file = png;
           } catch (e) {
             errors.push(`slide ${i + 1} badge ${j + 1}: background removal failed, using the original`);
-            list.push(raw);
           }
-        } else {
-          list.push(raw);
         }
+        // A logo the photo already shows clearly is not added a second time.
+        const isLogo = (b.fit || 'contain') === 'contain' || b.shape === 'free' || b.cutout;
+        if (isLogo && paths[i]) {
+          const seen = await logoAlreadyVisible(paths[i], file).catch((e) => { errors.push(`slide ${i + 1} badge ${j + 1}: logo check skipped (${e.message})`); return false; });
+          if (seen) { errors.push(`slide ${i + 1} badge ${j + 1}: left out, the photo already shows this logo`); continue; }
+        }
+        list.push(file);
+        kept.push(b);
       } catch (e) {
         errors.push(`slide ${i + 1} badge ${j + 1}: ${e.message}`);
       }
     }
+    if (job.slides[i].badges) job.slides[i].badges = kept;
     badges.push(list);
   }
   // Free logos/mascots on the cover without a fixed "top": find the empty part of the photo.
@@ -140,4 +180,4 @@ async function fetchImages(job, outDir) {
   return { paths: paths.map((p) => p || firstGood), badges, errors };
 }
 
-module.exports = { fetchImages };
+module.exports = { logoAlreadyVisible, fetchImages };
