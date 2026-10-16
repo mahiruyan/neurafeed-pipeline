@@ -719,5 +719,76 @@
       }
     ],
     "requests": []
+  },
+  {
+    "run_at": "2026-10-16T16:14:43.674Z",
+    "summary": "Noon run (12:00 New York): queued Mahir's Google Willow quantum link for his 12:30 slot (review), Meta's news-scraping terms (p1) and today's utility how-to on ChatGPT's new voices. Today is now at the 8-job cap.",
+    "considered": [
+      {
+        "story": "Mahir's link: Google Willow magic state cultivation cuts errors 40 times (Science)",
+        "source": "https://thequantuminsider.com/2026/10/16/google-demonstrates-method-to-cut-errors-in-quantum-computings-magic-states/",
+        "decision": "queued",
+        "job_id": "2026-10-16-google-willow-magic-states-40x",
+        "priority": 1,
+        "reason": "Mahir's link, confirmed by The Quantum Insider, Decrypt and Glitchwire; the 20-year claim in the Instagram post was not in any source, so it was left out."
+      },
+      {
+        "story": "Meta's new commercial terms let it scrape news sites for AI training, legal experts say",
+        "source": "https://www.niemanlab.org/2026/10/metas-new-commercial-terms-will-allow-the-scraping-of-news-sites-legal-experts-say/",
+        "decision": "queued",
+        "job_id": "2026-10-16-meta-terms-scrape-news-sites-ai",
+        "priority": 1,
+        "reason": "Major Meta story trending today (The Verge, European Publishers Council); confirmed by Nieman Lab, Great Reporter and Crypto Briefing."
+      },
+      {
+        "story": "ChatGPT Voice gets GPT-Live-1.1 and new voices (utility how-to)",
+        "source": "https://help.openai.com/en/articles/6825453-chatgpt-release-notes",
+        "decision": "queued",
+        "job_id": "2026-10-16-chatgpt-new-voices-how-to",
+        "priority": 2,
+        "reason": "Today's utility post, built from OpenAI's release notes, Notebookcheck and DataNorth."
+      },
+      {
+        "story": "Anthropic bans abusive or cruel behavior toward Claude",
+        "decision": "covered",
+        "reason": "Already covered in 2026-10-14-rude-prompts-chatgpt-claude-rule."
+      },
+      {
+        "story": "Character.ai seeks bankruptcy protection",
+        "decision": "covered",
+        "reason": "Already covered as 2026-10-13-character-ai-bankruptcy-disney-bid."
+      },
+      {
+        "story": "OpenAI says an ex-employee took secret files to Apple; OpenAI warns staff of honey traps",
+        "decision": "covered",
+        "reason": "Follow-ups to 2026-10-14-apple-openai-trade-secrets-court and the bugging case stories."
+      },
+      {
+        "story": "Sergey Brin says Gemini 4 Argon helps build its successors",
+        "decision": "skipped",
+        "reason": "Commentary on Argon, which we covered on October 13, and the day is at its cap."
+      },
+      {
+        "story": "Anthropic IPO valuation debate (Barron's, The Next Web, NYC pension fund)",
+        "decision": "skipped",
+        "reason": "Market commentary with no new event, and Anthropic IPO was covered on October 14."
+      },
+      {
+        "story": "OpenAI buys Pathway in $400M stock deal",
+        "decision": "skipped",
+        "reason": "Single Dealroom listing found, no second source read, and today is at the 8-job cap."
+      },
+      {
+        "story": "Google ends Gemini Code Assist sales",
+        "decision": "skipped",
+        "reason": "Enterprise developer product change with little consumer appeal."
+      },
+      {
+        "story": "New Aoki malware targets ChatGPT, Claude and Gemini credentials",
+        "decision": "skipped",
+        "reason": "Single security-blog source and the day is at its cap; a candidate for tomorrow if confirmed."
+      }
+    ],
+    "requests": []
   }
 ]
