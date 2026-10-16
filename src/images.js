@@ -25,12 +25,26 @@ async function download(url, dest, minBytes = 15000) {
 // falls back to the job's cover image so a render never ships with a blank area.
 // Asks a small vision model whether the photo already shows the logo (or the brand's name)
 // clearly. Needs OPENAI_API_KEY; without it every logo is kept. Costs a fraction of a cent.
-const imgData = (f) => {
-  const buf = fs.readFileSync(f);
-  const type = buf[0] === 0x89 ? 'image/png' : buf[0] === 0x47 ? 'image/gif' : buf[0] === 0x52 ? 'image/webp' : 'image/jpeg';
+// The vision model takes JPEG, PNG, GIF or WebP. Anything else (AVIF, SVG...) is converted first.
+function imgData(f) {
+  let buf = fs.readFileSync(f);
+  const isWebp = buf.slice(0, 4).toString() === 'RIFF' && buf.slice(8, 12).toString() === 'WEBP';
+  let type = buf[0] === 0xff && buf[1] === 0xd8 ? 'image/jpeg' : buf[0] === 0x89 && buf[1] === 0x50 ? 'image/png' : buf.slice(0, 3).toString() === 'GIF' ? 'image/gif' : isWebp ? 'image/webp' : null;
+  if (!type) {
+    const out = `${f}.vision.png`;
+    execFileSync('ffmpeg', ['-y', '-loglevel', 'error', '-i', f, '-frames:v', '1', out], { timeout: 60000 });
+    buf = fs.readFileSync(out);
+    type = 'image/png';
+  }
   return `data:${type};base64,${buf.toString('base64')}`;
-};
-async function logoAlreadyVisible(photo, logo) {
+}
+// Brand name for the question, from the logo file or URL ("assets/logos/openai.png", "Google_G_logo.svg").
+const BRANDS = { openai: 'OpenAI (ChatGPT)', claude: 'Claude, by Anthropic', anthropic: 'Anthropic, the maker of Claude', meta: 'Meta', nvidia: 'NVIDIA', apple: 'Apple' };
+function brandOf(url) {
+  const name = decodeURIComponent(String(url || '').split('/').pop() || '').replace(/^\d+px-/, '').replace(/\.(svg|png|jpe?g|webp)/gi, '').replace(/[_"%-]+/g, ' ').replace(/\b(logo|icon|symbol|wordmark|\d{4})\b/gi, '').trim();
+  return BRANDS[name.toLowerCase()] || name || 'the company';
+}
+async function logoAlreadyVisible(photo, logo, brand = 'the company') {
   const key = process.env.OPENAI_API_KEY;
   if (!key) return false;
   const models = [process.env.OPENAI_VISION_MODEL || 'gpt-4.1-mini', 'gpt-4o-mini'];
@@ -41,7 +55,7 @@ async function logoAlreadyVisible(photo, logo) {
       headers: { Authorization: `Bearer ${key}`, 'Content-Type': 'application/json' },
       signal: AbortSignal.timeout(60000),
       body: JSON.stringify({ model, max_tokens: 3, temperature: 0, messages: [{ role: 'user', content: [
-        { type: 'text', text: 'Image 1 is a news photo. Image 2 is a company or product logo (or mascot). Is the same logo, the same brand symbol, or the brand name written out, already clearly visible and easy to recognize in image 1 (not tiny, not hidden)? Answer only yes or no.' },
+        { type: 'text', text: `Image 1 is a news photo. Image 2 is the logo (or mascot) of ${brand}. Is ${brand} already clearly branded in image 1: this logo, any other logo or symbol of the same company or product, or its name written out, easy to recognize (not tiny, not hidden)? Answer only yes or no.` },
         { type: 'image_url', image_url: { url: imgData(photo), detail: 'low' } },
         { type: 'image_url', image_url: { url: imgData(logo), detail: 'low' } },
       ] }] }),
@@ -153,7 +167,7 @@ async function fetchImages(job, outDir) {
         // A logo the photo already shows clearly is not added a second time.
         const isLogo = (b.fit || 'contain') === 'contain' || b.shape === 'free' || b.cutout;
         if (isLogo && paths[i]) {
-          const seen = await logoAlreadyVisible(paths[i], file).catch((e) => { errors.push(`slide ${i + 1} badge ${j + 1}: logo check skipped (${e.message})`); return false; });
+          const seen = await logoAlreadyVisible(paths[i], file, brandOf(b.url)).catch((e) => { errors.push(`slide ${i + 1} badge ${j + 1}: logo check skipped (${e.message})`); return false; });
           if (seen) { errors.push(`slide ${i + 1} badge ${j + 1}: left out, the photo already shows this logo`); continue; }
         }
         list.push(file);
@@ -180,4 +194,4 @@ async function fetchImages(job, outDir) {
   return { paths: paths.map((p) => p || firstGood), badges, errors };
 }
 
-module.exports = { logoAlreadyVisible, fetchImages };
+module.exports = { logoAlreadyVisible, brandOf, download, fetchImages };
