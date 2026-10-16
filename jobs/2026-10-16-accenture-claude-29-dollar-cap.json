@@ -1,0 +1,51 @@
+{
+  "id": "2026-10-16-accenture-claude-29-dollar-cap",
+  "created_at": "2026-10-16T12:20:00Z",
+  "story_time": "2026-10-15T16:00:00Z",
+  "timely": false,
+  "sensitive": false,
+  "priority": 2,
+  "sources": [
+    { "name": "GIGAZINE", "url": "https://gigazine.net/gsc_news/en/20261016-accenture-ai-limit/" },
+    { "name": "NewsBytes", "url": "https://www.newsbytesapp.com/news/science/accenture-caps-claude-spending-at-29-monthly-as-employees-seek-workarounds/story" },
+    { "name": "The State of AI", "url": "https://www.thestateofai.com/news/accenture-caps-claude-spending-29-dollars" }
+  ],
+  "caption": "Accenture now pays for just $29 of Claude use per employee each month.\nAnything more must be billed to a project or team, per an internal memo.\nSome heavy users had been spending up to $1,000 a month.\n\nShould companies put a budget on AI at work?\n\nFollow @neurafeed.ai for daily AI news.\n\nSource: 404 Media via GIGAZINE",
+  "slides": [
+    { "kind": "cover",
+      "headline": "Some Accenture staff spent $1,000 a month on Claude. Now they get *$29*",
+      "image": { "url": "https://i.cdn.newsbytesapp.com/images/l99220261016093854.jpeg", "credit": "NewsBytes",
+        "fallback_urls": ["https://journalarta.com/wp-content/uploads/2026/10/accenture-caps-claude-spending-at-29-per-employee-6e87f0-ai-ja-discover-1536x864.jpg"] },
+      "pos": "center 40%",
+      "badges": [ { "url": "assets/logos/claude.png", "shape": "free" } ] },
+    { "kind": "text",
+      "heading": "The *$29 rule*",
+      "paras": [
+        "Accenture now centrally funds $29 per employee per month for Claude. The change took effect October 1, and all Claude Enterprise costs are now usage-based.",
+        "Anything above $29 must be charged to a specific project or team. An internal memo warned that licenses are reviewed and can be reallocated."
+      ],
+      "image": { "url": "https://i.gzn.jp/img/2026/10/16/accenture-ai-limit/01.jpg", "credit": "GIGAZINE",
+        "fallback_urls": ["https://superpowerdaily.com/api/story-images/a3a12681-db33-46df-a295-adf18839ede0?dpl=ef9169e264c96fc72d53dcc9ac7d99083e2cda61"] } },
+    { "kind": "text",
+      "heading": "Heavy users *hit hard*",
+      "paras": [
+        "Some employees had been spending $500 to $1,000 a month on Claude, according to 404 Media, which first reported the memo.",
+        "Some are now trying to move to Premium accounts, which include $250 in token usage a week. One said the upgrade looked blocked."
+      ],
+      "image": { "url": "https://i.gzn.jp/img/2026/10/16/accenture-ai-limit/02.jpg", "credit": "GIGAZINE",
+        "fallback_urls": ["https://i.gzn.jp/img/2026/10/16/accenture-ai-limit/00_m.jpg"] } },
+    { "kind": "text",
+      "heading": "The end of *unlimited AI*",
+      "paras": [
+        "Accenture says it still makes AI available to all its people and wants the right tool for the right work.",
+        "It is not alone. Uber capped staff at $1,500 a month per AI tool, and Microsoft gave each division a token budget.",
+        { "t": "AI at work now comes with a budget.", "strong": true }
+      ],
+      "image": { "url": "https://www.thestateofai.com/media/uploads/89e2459022e67eee61a7a0ccd54b5065ea1c7b3cc8aa5c5fa196c6420166b7e1.png", "credit": "The State of AI",
+        "fallback_urls": ["https://journalarta.com/wp-content/uploads/2026/10/accenture-caps-claude-spending-at-29-per-employee-6e87f0-ai-ja-discover-1536x864.jpg"] } },
+    { "kind": "cta",
+      "hook": "Your company's AI budget could be next. Follow to see who caps AI spending next.",
+      "image": { "url": "https://journalarta.com/wp-content/uploads/2026/10/accenture-caps-claude-spending-at-29-per-employee-6e87f0-ai-ja-hero-1200x675.jpg", "credit": "JournalArta",
+        "fallback_urls": ["https://i.gzn.jp/img/2026/10/16/accenture-ai-limit/00_m.jpg"] } }
+  ]
+}
