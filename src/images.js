@@ -26,6 +26,14 @@ async function download(url, dest, minBytes = 15000) {
 // Asks a small vision model whether the photo already shows the logo (or the brand's name)
 // clearly. Needs OPENAI_API_KEY; without it every logo is kept. Costs a fraction of a cent.
 // The vision model takes JPEG, PNG, GIF or WebP. Anything else (AVIF, SVG...) is converted first.
+// A logo is flattened onto mid gray first: a white or black mark on transparency is invisible
+// to the model otherwise.
+function onGray(f) {
+  const out = `${f}.gray.png`;
+  execFileSync('ffmpeg', ['-y', '-loglevel', 'error', '-i', f, '-filter_complex',
+    "color=c=0x808080:s=512x512[bg];[0:v]scale=440:440:force_original_aspect_ratio=decrease[l];[bg][l]overlay=(W-w)/2:(H-h)/2:format=auto", '-frames:v', '1', out], { timeout: 60000 });
+  return out;
+}
 function imgData(f) {
   let buf = fs.readFileSync(f);
   const isWebp = buf.slice(0, 4).toString() === 'RIFF' && buf.slice(8, 12).toString() === 'WEBP';
@@ -39,7 +47,7 @@ function imgData(f) {
   return `data:${type};base64,${buf.toString('base64')}`;
 }
 // Brand name for the question, from the logo file or URL ("assets/logos/openai.png", "Google_G_logo.svg").
-const BRANDS = { openai: 'OpenAI (ChatGPT)', claude: 'Claude, by Anthropic', anthropic: 'Anthropic, the maker of Claude', meta: 'Meta', nvidia: 'NVIDIA', apple: 'Apple' };
+const BRANDS = { openai: 'OpenAI / ChatGPT', claude: 'Claude / Anthropic', anthropic: 'Anthropic / Claude', meta: 'Meta', nvidia: 'NVIDIA', apple: 'Apple' };
 function brandOf(url) {
   const name = decodeURIComponent(String(url || '').split('/').pop() || '').replace(/^\d+px-/, '').replace(/\.(svg|png|jpe?g|webp)/gi, '').replace(/[_"%-]+/g, ' ').replace(/\b(logo|icon|symbol|wordmark|\d{4})\b/gi, '').trim();
   return BRANDS[name.toLowerCase()] || name || 'the company';
@@ -48,6 +56,8 @@ async function logoAlreadyVisible(photo, logo, brand = 'the company') {
   const key = process.env.OPENAI_API_KEY;
   if (!key) return false;
   const models = [process.env.OPENAI_VISION_MODEL || 'gpt-4.1-mini', 'gpt-4o-mini'];
+  let grayLogo = logo;
+  try { grayLogo = onGray(logo); } catch { /* no ffmpeg: send as is */ }
   let lastErr;
   for (const model of models) {
     const res = await fetch('https://api.openai.com/v1/chat/completions', {
@@ -55,9 +65,9 @@ async function logoAlreadyVisible(photo, logo, brand = 'the company') {
       headers: { Authorization: `Bearer ${key}`, 'Content-Type': 'application/json' },
       signal: AbortSignal.timeout(60000),
       body: JSON.stringify({ model, max_tokens: 3, temperature: 0, messages: [{ role: 'user', content: [
-        { type: 'text', text: `Image 1 is a news photo. Image 2 is the logo (or mascot) of ${brand}. Is ${brand} already clearly branded in image 1: this logo, any other logo or symbol of the same company or product, or its name written out, easy to recognize (not tiny, not hidden)? Answer only yes or no.` },
-        { type: 'image_url', image_url: { url: imgData(photo), detail: 'low' } },
-        { type: 'image_url', image_url: { url: imgData(logo), detail: 'low' } },
+        { type: 'text', text: `Image 1 is a news photo. Image 2 is the logo of ${brand}. Answer yes if image 1 already clearly shows ${brand}: this logo, any other logo or symbol of it, or the name (${brand}) written large enough to read. Small, hidden or blurry marks do not count. Answer only yes or no.` },
+        { type: 'image_url', image_url: { url: imgData(photo), detail: 'high' } },
+        { type: 'image_url', image_url: { url: imgData(grayLogo), detail: 'low' } },
       ] }] }),
     });
     const d = await res.json().catch(() => ({}));
