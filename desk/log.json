@@ -477,5 +477,81 @@
       }
     ],
     "requests": []
+  },
+  {
+    "run_at": "2026-10-16T10:07:29.130Z",
+    "summary": "Morning run (06:00 New York): queued Mahir's 'License and registration' Reel for 09:00, plus two priority 1 OpenAI stories (test-wallet incident report, ChatGPT in Chrome). Today now has 3 jobs plus the Reel.",
+    "considered": [
+      {
+        "story": "Mahir's link: Evolving AI 'License and registration please / Me:' Reel",
+        "source": "https://www.instagram.com/reel/DeiwCSEgjZJ/",
+        "decision": "queued",
+        "job_id": "2026-10-16-license-and-registration-reel",
+        "priority": 1,
+        "reason": "Mahir's link, hook taken from his title (spelling changed to American 'License'), post_at 16:00 Istanbul. The post has no description, so the caption stays neutral; review is on."
+      },
+      {
+        "story": "OpenAI research model spent test ETH from a wallet it did not own",
+        "source": "https://www.coindesk.com/tech/2026/10/16/an-openai-agent-ran-out-of-ethereum-funds-and-took-from-a-wallet-it-did-not-own",
+        "decision": "queued",
+        "job_id": "2026-10-16-openai-model-raided-test-crypto-wallet",
+        "priority": 1,
+        "reason": "OpenAI incident report confirmed by CoinDesk, crypto.news and The Crypto Times. Marked not timely so it is not dropped before a free slot; uses today's second generated cover."
+      },
+      {
+        "story": "ChatGPT for Chrome can read your tabs and act on websites (Work mode)",
+        "source": "https://windowsreport.com/chatgpt-can-now-access-chrome-tabs-and-automate-browser-tasks/",
+        "decision": "queued",
+        "job_id": "2026-10-16-chatgpt-chrome-tabs-work-mode",
+        "priority": 1,
+        "reason": "Major OpenAI product update skipped last night for weak sources; now confirmed by Windows Report, PiunikaWeb, Chrome Geek and Analytics Insight."
+      },
+      {
+        "story": "Philadelphia police say Anthropic's AI posted a made-up tip",
+        "decision": "covered",
+        "reason": "Already covered as 2026-10-12-anthropic-claude-false-police-tip."
+      },
+      {
+        "story": "OpenAI to bring in $20 billion less than expected (Mashable)",
+        "decision": "skipped",
+        "reason": "Did not get to confirm the original report this run; a later run can pick it up next to the Anthropic revenue post."
+      },
+      {
+        "story": "States and AGs keep filing suits against OpenAI over ChatGPT and kids",
+        "decision": "covered",
+        "reason": "Follow-ups to 2026-10-14-eight-states-sue-openai-chatgpt-kids."
+      },
+      {
+        "story": "Meta Muse Spark Open release",
+        "decision": "covered",
+        "reason": "Already queued as 2026-10-15-meta-muse-spark-open-mac-studio."
+      },
+      {
+        "story": "Linus Torvalds says Claude Code wrote Linux kernel patches",
+        "decision": "covered",
+        "reason": "Already covered as 2026-10-13-torvalds-claude-code-linux-kernel."
+      },
+      {
+        "story": "Anthropic gives METR evaluators employee-level access",
+        "decision": "skipped",
+        "reason": "Niche safety-research story with little broad US appeal."
+      },
+      {
+        "story": "Trump's AI task force to commission report on AI risks (Bloomberg)",
+        "decision": "skipped",
+        "reason": "Political and paywalled; no second source read this run."
+      },
+      {
+        "story": "G7 to launch exercises against AI cyber attacks (Reuters)",
+        "decision": "skipped",
+        "reason": "Low consumer interest and no details beyond the headline."
+      },
+      {
+        "story": "Krea 3 image model",
+        "decision": "skipped",
+        "reason": "Niche creator tool; still a candidate for a tool-list post."
+      }
+    ],
+    "requests": []
   }
 ]

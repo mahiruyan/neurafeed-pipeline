@@ -1,0 +1,60 @@
+{
+  "id": "2026-10-16-chatgpt-chrome-tabs-work-mode",
+  "created_at": "2026-10-16T10:10:00Z",
+  "story_time": "2026-10-16T05:48:00Z",
+  "timely": false,
+  "sensitive": false,
+  "priority": 1,
+  "sources": [
+    { "name": "Windows Report", "url": "https://windowsreport.com/chatgpt-can-now-access-chrome-tabs-and-automate-browser-tasks/" },
+    { "name": "PiunikaWeb", "url": "https://piunikaweb.com/2026/10/16/chatgpt-chrome-extension-tab-control-automation/" },
+    { "name": "Chrome Geek", "url": "https://www.chromegeek.com/chatgpt-chrome-extension-tabs-work-mode/" },
+    { "name": "Analytics Insight", "url": "https://www.analyticsinsight.net/news/openai-turns-chatgpt-into-a-hands-on-chrome-browsing-assistant" }
+  ],
+  "caption": "OpenAI updated the ChatGPT extension for Chrome on Thursday.\nType @chrome in ChatGPT and it can use your open tabs, and in ChatGPT Work it can fill forms, download files and group tabs.\nIt replaces OpenAI's own Atlas browser.\n\nWould you let an AI click around your browser?\n\nFollow @neurafeed.ai for daily AI news.\n\nSource: Windows Report · Photo: OpenAI",
+  "slides": [
+    { "kind": "cover",
+      "headline": "ChatGPT just moved into Chrome. Now it can *read your tabs and click for you*",
+      "image": { "url": "https://windowsreport.com/wp-content/uploads/2026/10/chatgpt-chrome-extension.jpg", "credit": "OpenAI / Google",
+        "fallback_urls": ["https://piunikaweb.com/wp-content/uploads/2026/10/chatgpt-chrome-extension.webp"] },
+      "pos": "center center",
+      "badges": [ { "url": "assets/logos/openai.png", "fit": "contain" } ],
+      "badge_side": "right" },
+    { "kind": "text",
+      "heading": "Just type *@chrome*",
+      "paras": [
+        "OpenAI updated its ChatGPT extension for Chrome on Thursday. Mention @chrome in the ChatGPT web or desktop app and it uses your open tabs as context.",
+        "In OpenAI's demo, ChatGPT compares sofas across three shopping tabs, with specs, prices and differences, and you never copy a single link."
+      ],
+      "image": { "url": "https://piunikaweb.com/wp-content/uploads/2026/10/chatgpt-chrome-extension.webp", "credit": "OpenAI",
+        "fallback_urls": ["https://i.cdn.newsbytesapp.com/images/l142_13041792111643.jpg"] } },
+    { "kind": "text",
+      "heading": "Now it *does the work*",
+      "paras": [
+        "In ChatGPT Work, it can act on websites across your tabs. It can fill out forms, download files, send messages and group your tabs.",
+        "OpenAI's examples include building a vendor comparison sheet from open tabs and filling out a registration form, stopping right before submit."
+      ],
+      "image": { "url": "https://www.chromegeek.com/wp-content/uploads/2026/10/cover-chatgpt-chrome-extension-tabs.webp", "credit": "Chrome Geek",
+        "fallback_urls": ["https://i.cdn.newsbytesapp.com/images/l142_13041792111643.jpg"] } },
+    { "kind": "text",
+      "heading": "A full ChatGPT *sidebar*",
+      "paras": [
+        "The Chrome side panel now holds the full ChatGPT with your chat history, open next to whatever page you are reading.",
+        "OpenAI says it works in the background without taking over your browsing, and always asks permission before using your history or managing downloads."
+      ],
+      "image": { "url": "https://i.cdn.newsbytesapp.com/images/l142_13041792111643.jpg", "credit": "NewsBytes",
+        "fallback_urls": ["https://media.thenextweb.com/2026/10/smartphone-chatgpt-app-what-can-i-help-with-desk-stand.avif"] } },
+    { "kind": "text",
+      "heading": "Goodbye *Atlas*",
+      "paras": [
+        "The update follows OpenAI's decision to shut down ChatGPT Atlas, its own web browser. Atlas features like the sidebar and tab automation now live in the Chrome extension.",
+        "It also works in Edge, Brave, Opera and Vivaldi. PiunikaWeb reports that Work mode needs a Plus plan or higher."
+      ],
+      "image": { "url": "https://media.assettype.com/analyticsinsight%2F2026-10-16%2Fsrn4xqqj%2FChatGPT-can-now-access-your-Google-Chrome-tabs-to-gather-information-and-complete-tasks-here-is-how.jpg?w=1200&ar=40%3A21&auto=format%2Ccompress&ogImage=true&mode=crop&enlarge=true&overlay=false&overlay_position=bottom&overlay_width=100", "credit": "Analytics Insight",
+        "fallback_urls": ["https://media.thenextweb.com/2026/10/smartphone-chatgpt-app-what-can-i-help-with-desk-stand.avif"] } },
+    { "kind": "cta",
+      "hook": "Gemini already browses for you inside Chrome. Follow to see which AI wins your browser.",
+      "image": { "url": "https://media.thenextweb.com/2026/10/smartphone-chatgpt-app-what-can-i-help-with-desk-stand.avif", "credit": "The Next Web",
+        "fallback_urls": ["https://coincentral.com/wp-content/uploads/2026/06/OpenAI-1200x675.jpg"] } }
+  ]
+}
