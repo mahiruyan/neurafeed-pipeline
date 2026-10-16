@@ -25,11 +25,13 @@ function newJobIds() {
     });
 }
 
+const mmss = (t) => `${Math.floor(t / 60)}:${String(Math.floor(t % 60)).padStart(2, '0')}`;
 function summary(job) {
   const src = (job.sources || []).map((s) => `• ${s.name}: ${s.url}`).join('\n');
   return [
     `🆕 ${job.timely ? 'NEWS' : 'EVERGREEN'} · ${job.id}`,
     job.sensitive ? '⚠️ Sensitive topic: never auto-posted' : '',
+    job._clip || '',
     '',
     job.caption,
     '',
@@ -70,6 +72,19 @@ function summary(job) {
         files = [r.video];
         preview = [r.preview];
         errors = [`layout ${r.layout}, source ${r.source.w}x${r.source.h}, ${Math.round(r.source.duration)}s${r.crop ? `, cropped to ${r.crop.w}x${r.crop.h} at ${r.crop.x},${r.crop.y} (removed another page's frame)` : ''}`];
+        if (r.note) errors.push(r.note);
+        if (r.resolved && !job.video.resolved) {
+          // Save what was found, and credit the original channel (the repost was not the creator).
+          job.video.resolved = r.resolved;
+          if (r.resolved.channel && (r.resolved.from_search || !job.credit)) {
+            job.credit = `${r.resolved.channel} on YouTube`;
+            const lines = String(job.caption || '').trimEnd().split('\n');
+            if (/^Video:/i.test(lines.at(-1) || '')) lines[lines.length - 1] = `Video: ${job.credit}`; else lines.push('', `Video: ${job.credit}`);
+            job.caption = lines.join('\n');
+          }
+          fs.writeFileSync(path.join(ROOT, 'jobs', `${id}.json`), JSON.stringify(job, null, 2) + '\n');
+        }
+        job._clip = r.resolved ? `🎬 Original: ${r.resolved.title || r.resolved.url} (${r.resolved.channel || 'YouTube'}), ${mmss(r.resolved.start)} to ${mmss(r.resolved.end)}, match ${Math.round(r.resolved.score * 100)}%${r.resolved.edited ? ', the repost looks edited (only the main part was used)' : ''}` : (r.note ? `🎬 ${r.note}` : null);
       } else {
         const img = await fetchImages(job, outDir);
         errors = img.errors;

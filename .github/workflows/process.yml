@@ -92,7 +92,7 @@ jobs:
           PUBLIC_VIDEO_BASE: https://mahiruyan.github.io/neurafeed-media
       - name: Save state and renders
         if: always()
-        run: 'scripts/save.sh "pipeline: render jobs" state out inbox'
+        run: 'scripts/save.sh "pipeline: render jobs" state out inbox jobs'
         env:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}

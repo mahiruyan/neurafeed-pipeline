@@ -218,9 +218,55 @@ function compose(src, info, framePng, rect, out, job) {
   return out;
 }
 
+// Where the video comes from:
+//  - video.original set (a repost of a clip): find the clean original and the exact seconds
+//    (src/clip.js) and download only that part; if that fails, use the repost as before.
+//  - a YouTube link with start/end: download only that part (fast, even for a 3-hour podcast).
+//  - anything else: download the post's video.
+const YT = /(youtube\.com|youtu\.be)\//i;
+async function sourceFor(job, outDir) {
+  const dir = path.join(outDir, 'src');
+  const clip = require('./clip');
+  let resolved = job.video?.resolved || null;
+  let note = null;
+  let repost = null;
+  if (job.video?.original && !resolved) {
+    try {
+      repost = download(job.video.url, path.join(dir, 'repost'));
+      const r = await clip.findOriginal(job, repost, path.join(dir, 'match'));
+      if (r.resolved) resolved = r.resolved; else note = `original not used: ${r.reason}`;
+    } catch (e) {
+      note = `original not used: ${String(e.message || e).split('\n')[0].slice(0, 200)}`;
+    }
+  }
+  if (resolved) {
+    try {
+      const src = clip.downloadSection(resolved.url, resolved.start, resolved.end, path.join(dir, 'original'));
+      // The section starts at 0 and has no other page's frame around it.
+      return { src, resolved, job: { ...job, video: { ...job.video, start: 0, end: undefined, crop: 'none' } } };
+    } catch (e) {
+      note = `original found but its download failed (${String(e.message || e).split('\n')[0].slice(0, 160)}), used the repost`;
+      resolved = null;
+    }
+  }
+  if (repost) return { src: repost, note, job };
+  const v = job.video || {};
+  if (YT.test(v.url) && (v.start || v.end)) {
+    const start = Number(v.start || 0);
+    const end = v.end ? Number(v.end) : start + Number(v.max_seconds || 90);
+    try {
+      const src = clip.downloadSection(v.url, start, end, path.join(dir, 'section'));
+      return { src, note, job: { ...job, video: { ...v, start: 0, end: undefined } } };
+    } catch (e) { note = `section download failed, downloading the whole video (${String(e.message || e).slice(0, 120)})`; }
+  }
+  return { src: download(v.url, dir), note, job };
+}
+
 async function renderReel(job, outDir, localSource) {
   fs.mkdirSync(outDir, { recursive: true });
-  const src = localSource || download(job.video.url, path.join(outDir, 'src'));
+  const got = localSource ? { src: localSource, job } : await sourceFor(job, outDir);
+  const src = got.src;
+  job = got.job;
   const info = probe(src);
   // video.crop: "auto" (default), "none", or { x, y, w, h } in source pixels.
   const want = job.video?.crop ?? 'auto';
@@ -235,7 +281,7 @@ async function renderReel(job, outDir, localSource) {
   run('ffmpeg', ['-y', '-ss', '1', '-i', out, '-frames:v', '1', '-q:v', '3', path.join(outDir, 'preview.jpg')]);
   fs.rmSync(framePng, { force: true });
   fs.rmSync(path.join(outDir, 'src'), { recursive: true, force: true });
-  return { video: out, preview: path.join(outDir, 'preview.jpg'), layout: lay.mode, source: info, crop: info.crop || null };
+  return { video: out, preview: path.join(outDir, 'preview.jpg'), layout: lay.mode, source: info, crop: info.crop || null, resolved: got.resolved || null, note: got.note || null };
 }
 
 module.exports = { renderReel, layoutFor };

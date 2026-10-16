@@ -1,0 +1,32 @@
+name: Clip matching test
+
+# Read-only: finds the original of a fake repost. Nothing is posted.
+on:
+  workflow_dispatch:
+    inputs:
+      url:
+        default: 'https://www.youtube.com/watch?v=UF8uR6Z6KLc'
+      start:
+        default: '300'
+      seconds:
+        default: '30'
+      search:
+        default: 'Steve Jobs Stanford commencement speech 2005'
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Tools
+        run: |
+          python3 -m pip install --quiet --upgrade --pre yt-dlp
+          which ffmpeg || (sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg)
+      - name: Find the original of a fake repost
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+        run: node scripts/clip-test.js "${{ inputs.url }}" "${{ inputs.start }}" "${{ inputs.seconds }}" "${{ inputs.search }}"

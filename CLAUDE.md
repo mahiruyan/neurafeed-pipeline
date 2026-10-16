@@ -289,6 +289,17 @@ nothing was queued). Mahir is told on Telegram when a request is `done` or `cann
   important part is near the left or right edge (a screen recording, text, a chart, two or three
   people side by side), so the whole frame is shown instead. Under the video there is only the
   "Follow @neurafeed.ai" line; the credit goes in the caption's last line.
+- Clips with another account's logo (a podcast, interview, TV or conference cut that a page
+  reposted with its own branding): use the clean original instead. Find the original video
+  on YouTube with a web search (the speaker, the show, the topic, words from the caption) and set
+  `"video": { "url": "<the repost URL>", "original": { "url": "<YouTube URL>", "search": ["<show or
+  speaker and topic>", "<another query>"] } }`. Give the URL when you found it, the search words
+  always. The pipeline transcribes the repost, finds the exact seconds in the original's captions,
+  downloads only that part and shows "Original: title, 12:30 to 13:10, match 85%" in Mahir's
+  preview. If no match is found it falls back to the repost. Credit the original channel
+  (`credit` and the caption's `Video:` line), not the repost page.
+- Mahir sends a YouTube link with times ("12:30-13:10"): `video.url` is that link and `start`/`end`
+  are those times in seconds (750 and 790). Only that part is downloaded.
 - If the video is AI-generated, say so in the hook or caption. If you cannot tell what the video
   shows from the post text and Mahir's note, still queue it with a neutral, accurate hook.
 - Reels count toward the 4 to 8 posts per day and post in the same prime-time windows.
