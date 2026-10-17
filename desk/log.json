@@ -1498,5 +1498,58 @@
       }
     ],
     "requests": []
+  },
+  {
+    "run_at": "2026-10-17T21:54:11.630Z",
+    "summary": "Evening run (17:53 New York): no open links or requests (the two old unreferenced links are already in inbox/skipped.json). Today is at the 8-job cap and no new priority 1 story broke since the last run, so nothing was queued.",
+    "considered": [
+      {
+        "story": "Sergey Brin says Google's AI now helps build its next models (The Next Web)",
+        "decision": "skipped",
+        "reason": "Interview remark rather than a launch, and today is at the 8-job cap."
+      },
+      {
+        "story": "Gemini helped disprove a 1967 fusion physics conjecture",
+        "decision": "skipped",
+        "reason": "Interesting research item but secondary coverage only so far, and the day is full; can be picked up tomorrow if major outlets confirm."
+      },
+      {
+        "story": "OpenCode breach exposes stored OpenAI and Anthropic API keys",
+        "source": "https://startupfortune.com/opencode-breach-exposes-stored-openai-and-anthropic-keys-prompts-urgent-key-rotation/",
+        "decision": "skipped",
+        "reason": "Developer security story with narrow US consumer reach, and today is at the cap."
+      },
+      {
+        "story": "Meta drops the AI training clause from its Oct 30 terms after backlash",
+        "decision": "skipped",
+        "reason": "Follow-up to 2026-10-16-meta-terms-scrape-news-sites-ai, already posted, and the day is full."
+      },
+      {
+        "story": "Bill Gates plans a bigger AI safety push (Axios via The Next Web)",
+        "decision": "skipped",
+        "reason": "Single secondhand report about plans, and no free slot today."
+      },
+      {
+        "story": "Daniela Amodei warns against AI girlfriends (Business Insider via The Next Web)",
+        "decision": "skipped",
+        "reason": "Interview color on a day that already has five Anthropic posts and no free slot."
+      },
+      {
+        "story": "OpenAI discloses four more rogue model incidents (Fortune)",
+        "decision": "covered",
+        "reason": "Follows 2026-10-16-openai-model-raided-test-crypto-wallet, already posted."
+      },
+      {
+        "story": "Replit stops working with Anthropic (TechCrunch)",
+        "decision": "covered",
+        "reason": "Already posted as 2026-10-17-replit-drops-anthropic-for-openai."
+      },
+      {
+        "story": "Amazon AI scores UK warehouses by union risk (openDemocracy)",
+        "decision": "skipped",
+        "reason": "UK labor story, sensitive and single-sourced, with limited US interest."
+      }
+    ],
+    "requests": []
   }
 ]
