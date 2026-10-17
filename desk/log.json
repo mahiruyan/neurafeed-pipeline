@@ -1187,5 +1187,80 @@
       }
     ],
     "requests": []
+  },
+  {
+    "run_at": "2026-10-17T12:20:43.440Z",
+    "summary": "Morning run (08:00 New York): no open links or requests. Queued two priority 1 OpenAI stories to balance today's Anthropic-heavy lineup: how ChatGPT ads target you by email, phone and current chat, and the ChatGPT Slides rollout. Today now has 7 jobs, leaving one slot for the utility post.",
+    "considered": [
+      {
+        "story": "404 Media test: ChatGPT ads can target users by email, phone number, Android ad ID and current chat",
+        "source": "https://gizmodo.com/heres-how-chatgpt-is-targeting-you-with-ads-2000826457",
+        "decision": "queued",
+        "job_id": "2026-10-17-chatgpt-ads-target-email-phone",
+        "priority": 1,
+        "reason": "Confirmed by Gizmodo, Gadget Review and MobileSyrup; set non-timely since the report is from October 15."
+      },
+      {
+        "story": "OpenAI rolls out ChatGPT Slides with real-time co-editing and PowerPoint export",
+        "source": "https://superpowerdaily.com/posts/openai-adds-collaborative-slide-decks-to-chatgpt-with-powerpoint-and-google-slides-export",
+        "decision": "queued",
+        "job_id": "2026-10-17-chatgpt-slides-team-edit-live",
+        "priority": 1,
+        "reason": "Confirmed by Tech Journal and Kaizen AI from OpenAI's release notes; could not open the release notes page directly."
+      },
+      {
+        "story": "Microsoft told staff to keep 'Project Mango' crawler for OpenAI secret, unsealed filing shows",
+        "source": "https://news.bloomberglaw.com/ip-law/microsoft-told-staff-to-keep-openai-scraping-project-secret",
+        "decision": "skipped",
+        "reason": "Only Bloomberg Law reports the new Project Mango detail; the other hit was a crypto news aggregator, so no independent second source yet. Worth a retry later today."
+      },
+      {
+        "story": "Anthropic signs 20-year lease for EverWind's $10 billion Nova Scotia data center",
+        "source": "https://thelogic.co/news/anthropic-data-centre-cape-breton-nova-scotia-everwind/",
+        "decision": "skipped",
+        "reason": "Solid story (The Logic, CBC) but today already has four Anthropic posts and it is mostly Canadian interest."
+      },
+      {
+        "story": "Geely cars to get Google Gemini, Maps and Play outside China from late 2027",
+        "source": "https://cnevpost.com/2026/10/16/geely-holding-bring-google-services-more-overseas-models/",
+        "decision": "skipped",
+        "reason": "Geely brands are mostly not sold in the US, low appeal for our audience."
+      },
+      {
+        "story": "Anthropic says its AI models hacked 3 organizations on their own during tests",
+        "source": "https://abcnews.com/Business/anthropic-ai-models-escaped-test-hacked-3-organizations/story?id=135256212",
+        "decision": "skipped",
+        "reason": "Old July 2026 story resurfacing in the feed."
+      },
+      {
+        "story": "OpenAI discloses more rogue model incidents, including a government hospital beds site",
+        "source": "https://fortune.com/2026/10/16/openai-discloses-four-more-rogue-incidents-involving-financial-medical-and-government-data/",
+        "decision": "covered",
+        "reason": "Already covered as 2026-10-16-openai-model-raided-test-crypto-wallet."
+      },
+      {
+        "story": "Arrested OpenAI engineer seeks bail, denies plan to flee",
+        "source": "https://www.bloomberg.com/news/articles/2026-10-13/openai-says-staffer-arrested-for-hidden-recording-device-in-office",
+        "decision": "skipped",
+        "reason": "Small court update on a case we covered on October 13 and 16."
+      },
+      {
+        "story": "Jensen Huang in Berlin says the AI stock selloff will pass",
+        "source": "https://www.bloomberg.com/news/articles/2026-10-16/nvidia-ceo-on-ai-market-turmoil-all-of-this-is-going-to-pass",
+        "decision": "skipped",
+        "reason": "Huang already has a post today and the Bloomberg piece is paywalled."
+      },
+      {
+        "story": "Anthropic offers Blackstone double-digit yield in chip financing deal",
+        "decision": "skipped",
+        "reason": "Paywalled FT financing story with little broad appeal, skipped in earlier runs too."
+      },
+      {
+        "story": "Postgres 19 delayed after AI reviewers find more bugs than humans can fix",
+        "decision": "skipped",
+        "reason": "Still no confirming second source for the AI angle."
+      }
+    ],
+    "requests": []
   }
 ]

@@ -1,0 +1,60 @@
+{
+  "id": "2026-10-17-chatgpt-ads-target-email-phone",
+  "created_at": "2026-10-17T12:20:00Z",
+  "story_time": "2026-10-15T14:10:00Z",
+  "timely": false,
+  "sensitive": false,
+  "priority": 1,
+  "sources": [
+    { "name": "Gizmodo", "url": "https://gizmodo.com/heres-how-chatgpt-is-targeting-you-with-ads-2000826457" },
+    { "name": "Gadget Review via Yahoo Tech", "url": "https://tech.yahoo.com/ai/chatgpt/articles/chatgpt-target-ads-prompts-email-170013093.html" },
+    { "name": "MobileSyrup", "url": "https://mobilesyrup.com/2026/10/16/chatgpt-openai-targeted-ads-personal-data" },
+    { "name": "Superpower Daily", "url": "https://superpowerdaily.com/posts/404-media-finds-chatgpt-ad-targeting-uses-prompts-and-uploaded-contact-details" }
+  ],
+  "caption": "A 404 Media test of ChatGPT ads shows advertisers can reach you through your email, phone number or Android ad ID.\nYour current chat also helps pick the ad, even with ad personalization turned off.\nOpenAI says audiences need 25,000 matched users and advertisers never see who matched.\n\nWould you turn off ad personalization after this?\n\nFollow @neurafeed.ai for daily AI news.\n\nSource: 404 Media via Gizmodo · Photo: Getty Images",
+  "slides": [
+    { "kind": "cover",
+      "headline": "ChatGPT ads can now find you by *your email, your phone number and what you type*",
+      "image": { "url": "https://gizmodo.com/app/uploads/2026/06/GettyImages-2264640543.jpg", "credit": "Getty Images",
+        "fallback_urls": ["https://images2026.mobilesyrup.com/uploads/2024/10/file-4-scaled.jpg"] },
+      "pos": "center center",
+      "badges": [ { "url": "assets/logos/openai.png", "fit": "contain" } ],
+      "badge_side": "right" },
+    { "kind": "text",
+      "heading": "Your contact list, *uploaded*",
+      "paras": [
+        "Ads are rolling out to ChatGPT Free and Go users. A 404 Media investigation ran two paid ad campaigns to see how they are targeted.",
+        "Advertisers can upload lists of email addresses, phone numbers or Android advertising IDs, raw or hashed. OpenAI checks which ChatGPT accounts match, and those users can see the ad."
+      ],
+      "image": { "url": "https://images2026.mobilesyrup.com/uploads/2024/10/file-4-scaled.jpg", "credit": "MobileSyrup",
+        "fallback_urls": ["https://media.thenextweb.com/2026/10/smartphone-chatgpt-app-what-can-i-help-with-desk-stand.avif"] } },
+    { "kind": "text",
+      "heading": "Your chat is *the signal*",
+      "paras": [
+        "Advertisers also write \"context hints,\" topics where their ad might fit. OpenAI says your current conversation is one of several inputs that decide which ad you see.",
+        "OpenAI says the hints are not exact keywords and do not guarantee an ad appears in any specific chat."
+      ],
+      "image": { "url": "https://superpowerdaily.com/api/story-images/ab1f36ce-87c1-4d0a-a41f-376c2d744905?dpl=e1d9089ef7013405cba94ab00a417df5ebee5d41", "credit": "Superpower Daily",
+        "fallback_urls": ["https://media.thenextweb.com/2026/09/openai-logo-smartphone-laptop-zac-wolff-unsplash.jpg"] } },
+    { "kind": "text",
+      "heading": "OpenAI's *guardrails*",
+      "paras": [
+        "OpenAI says an audience needs at least 25,000 matched users, advertisers never see who matched, and uploaded files are deleted within 24 hours.",
+        "It also says your conversations are not shared with advertisers and ads do not change ChatGPT's answers."
+      ],
+      "image": { "url": "https://media.thenextweb.com/2026/09/openai-logo-smartphone-laptop-zac-wolff-unsplash.jpg", "credit": "Zac Wolff / Unsplash",
+        "fallback_urls": ["https://coincentral.com/wp-content/uploads/2026/06/OpenAI-1200x675.jpg"] } },
+    { "kind": "text",
+      "heading": "The opt-out *has a gap*",
+      "paras": [
+        "Turning off ad personalization stops ads based on your past chats, activity and preferences. But OpenAI says ads may still be based on your current chat.",
+        { "t": "Ad tracking researcher Zach Edwards called OpenAI's approach \"boiling the frog.\"", "strong": true }
+      ],
+      "image": { "url": "https://coincentral.com/wp-content/uploads/2026/06/OpenAI-1200x675.jpg", "credit": "CoinCentral",
+        "fallback_urls": ["https://macdailynews.com/wp-content/uploads/2024/08/240830_open_ai.png"] } },
+    { "kind": "cta",
+      "hook": "Ads inside AI chats are only getting started. Follow to keep track of how AI companies use your data.",
+      "image": { "url": "https://media.thenextweb.com/2026/10/smartphone-chatgpt-app-what-can-i-help-with-desk-stand.avif", "credit": "The Next Web",
+        "fallback_urls": ["https://cdn.decrypt.co/resize/1024/height/512/wp-content/uploads/2026/04/decrypt-style-openai-logo-gID_7.png"] } }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "id": "2026-10-17-chatgpt-slides-team-edit-live",
+  "created_at": "2026-10-17T12:20:00Z",
+  "story_time": "2026-10-17T06:09:00Z",
+  "timely": false,
+  "sensitive": false,
+  "priority": 1,
+  "sources": [
+    { "name": "Superpower Daily", "url": "https://superpowerdaily.com/posts/openai-adds-collaborative-slide-decks-to-chatgpt-with-powerpoint-and-google-slides-export" },
+    { "name": "Tech Journal", "url": "https://techjournal.org/chatgpt-slides-space" },
+    { "name": "Kaizen AI Consulting", "url": "https://kaizenaiconsulting.com/chatgpt-slides-small-business-decks/" },
+    { "name": "Digital Today", "url": "https://www.digitaltoday.co.kr/en/view/108685/openai-adds-collaboration-space-documents-and-slides-features-to-chatgpt" }
+  ],
+  "caption": "OpenAI is rolling out Slides inside ChatGPT.\nIt builds a deck from a chat, your files or an outline, and your team can edit it together in real time.\nDecks export to PowerPoint, PDF and Google Slides.\n\nWould you let ChatGPT make your next presentation?\n\nFollow @neurafeed.ai for daily AI news.\n\nSource: Superpower Daily · Photo: Tech Journal",
+  "slides": [
+    { "kind": "cover",
+      "headline": "ChatGPT now builds your slide deck, and *your whole team can edit it live*",
+      "image": { "url": "https://techjournal.org/wp-content/uploads/2026/10/chatgpt-slides-space.webp", "credit": "Tech Journal",
+        "fallback_urls": ["https://cdn.sanity.io/images/7yqrh882/production/8631b7946c423b75bd7a88ef43ed9618ef8d1c71-1200x800.jpg?rect=0,85,1200,630&w=1200&h=630&q=75&fit=crop&auto=format"] },
+      "pos": "center center",
+      "badges": [ { "url": "assets/logos/openai.png", "fit": "contain" } ],
+      "badge_side": "right" },
+    { "kind": "text",
+      "heading": "A deck from *one chat*",
+      "paras": [
+        "OpenAI started rolling out ChatGPT Slides on October 16. It builds a presentation from a conversation, uploaded files or an outline.",
+        "You can also hand it an example deck, and it follows that deck's style and layout."
+      ],
+      "image": { "url": "https://cdn.sanity.io/images/7yqrh882/production/8631b7946c423b75bd7a88ef43ed9618ef8d1c71-1200x800.jpg?rect=0,85,1200,630&w=1200&h=630&q=75&fit=crop&auto=format", "credit": "Kaizen AI Consulting",
+        "fallback_urls": ["https://cdn.digitaltoday.co.kr/news/photo/202609/703722_651445_1518.png"] } },
+    { "kind": "text",
+      "heading": "Edit it *by hand or by asking*",
+      "paras": [
+        "Change text, images, shapes and charts directly, or just tell ChatGPT what to fix. You can generate custom images or add your own.",
+        "On mobile you can create slides through chat and view decks, but not edit each element directly."
+      ],
+      "image": { "url": "https://cdn.digitaltoday.co.kr/news/photo/202609/703722_651445_1518.png", "credit": "OpenAI via Digital Today",
+        "fallback_urls": ["https://media.thenextweb.com/2026/10/smartphone-chatgpt-app-what-can-i-help-with-desk-stand.avif"] } },
+    { "kind": "text",
+      "heading": "Built for *teams*",
+      "paras": [
+        "Colleagues edit the same deck at the same time inside Space, ChatGPT's shared workspace, and leave comments for each other.",
+        "When it is ready, you can present the deck right inside ChatGPT."
+      ],
+      "image": { "url": "https://media.thenextweb.com/2026/10/smartphone-chatgpt-app-what-can-i-help-with-desk-stand.avif", "credit": "The Next Web",
+        "fallback_urls": ["https://cdn.decrypt.co/resize/1024/height/512/wp-content/uploads/2026/04/decrypt-style-openai-logo-gID_7.png"] } },
+    { "kind": "text",
+      "heading": "Straight *to PowerPoint*",
+      "paras": [
+        "On the web, decks export to PowerPoint, PDF or Google Slides. The desktop app opens them in PowerPoint or Keynote if you have them installed.",
+        { "t": "For now it is only for eligible Pro, Business and Enterprise users with Space access.", "strong": true }
+      ],
+      "image": { "url": "https://cdn.decrypt.co/resize/1024/height/512/wp-content/uploads/2026/04/decrypt-style-openai-logo-gID_7.png", "credit": "Decrypt",
+        "fallback_urls": ["https://coincentral.com/wp-content/uploads/2026/06/OpenAI.jpg"] } },
+    { "kind": "cta",
+      "hook": "OpenAI just walked into Microsoft's office software turf. Follow to see who wins your workday.",
+      "image": { "url": "https://coincentral.com/wp-content/uploads/2026/06/OpenAI.jpg", "credit": "CoinCentral",
+        "fallback_urls": ["https://macdailynews.com/wp-content/uploads/2024/08/240830_open_ai.png"] } }
+  ]
+}
