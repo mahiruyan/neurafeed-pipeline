@@ -1262,5 +1262,65 @@
       }
     ],
     "requests": []
+  },
+  {
+    "run_at": "2026-10-17T14:01:03.410Z",
+    "summary": "Late morning run (10:00 New York): no open links or requests (both pending links were already reported as skipped). Nothing queued: today has 7 jobs and the last slot is kept for the utility post, due from 11:00.",
+    "considered": [
+      {
+        "story": "FT profile says Meta AI chief Alexandr Wang is informally discussed as a possible Zuckerberg successor",
+        "source": "https://aiweekly.co/alerts/alexandr-wang-touted-as-potential-zuckerberg-successor-in-ft",
+        "decision": "skipped",
+        "reason": "Only the paywalled FT reports it and the copies I could read are aggregator summaries, so no independent second source; the succeeding talk is described as informal."
+      },
+      {
+        "story": "Anthropic's Jack Clark tells policymakers AI could lift US GDP to $44 trillion by 2030",
+        "source": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQbk9CdFVPN2k3VV9iLUx0SGxFc184WkJQSDVpNGhBTkxVUElnNmFvRk5YeHJNVjloYlFXZWY1MC1TQjBaT3RMSmJXQjl4YUU4X0ZDVllhRGR5T09ncE1vRTVhZVBqZGZYeE1kRG9jRVFram83dWZSd3N1eU9jeWpPckdNTTFyYV9jN1kxTHBWR3YycW1DRlVMU095QzMxVnVNb1RULVZPaXYtVlRaMlF4TEFEd1U4aFpySG83R3BMaDNXYlpPclE?oc=5",
+        "decision": "skipped",
+        "reason": "A forecast built on Anthropic's September economic model, not a launch; today already has five Anthropic posts and only one slot left, kept for the utility post."
+      },
+      {
+        "story": "Mathematicians say OpenAI does not understand its own Navier-Stokes proof",
+        "decision": "skipped",
+        "reason": "Only The Decoder in the feed, no second source found, and the day is nearly full."
+      },
+      {
+        "story": "OpenAI and Apple reach a deal to avert an injunction in a trade secrets case",
+        "decision": "skipped",
+        "reason": "Only a paywalled legal outlet in the feed, small procedural update."
+      },
+      {
+        "story": "Websites are closing their doors to AI agents",
+        "source": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPdWVVZVlZZlZ6YTRDVjJGb0RXcWRwQS03TVJGOEt4XzdJaGNUYlJGQ2JhTUM3bUJzTkowZlFIVkpzbUJwNWlNWDF5Z2RlQUlHbVJNYWhUczhCd3N6RFVucE5kSUNndXpDc2s1S01nU3pDSk9oa2VZb1ZtTXl4XzQxUkxPaE9TUm9H?oc=5",
+        "decision": "skipped",
+        "reason": "Trend feature from The Verge, not breaking news; the day is nearly full."
+      },
+      {
+        "story": "Sam Altman's home struck by gunfire after Molotov attack",
+        "decision": "skipped",
+        "reason": "Old April 2026 story resurfacing in the feed, as noted in earlier runs."
+      },
+      {
+        "story": "Eight states sue OpenAI over ChatGPT and kids",
+        "decision": "covered",
+        "reason": "Already covered as 2026-10-14-eight-states-sue-openai-chatgpt-kids."
+      },
+      {
+        "story": "Gemini 4 Argon global launch",
+        "decision": "covered",
+        "reason": "Already covered as 2026-10-13-google-gemini-4-argon-launch."
+      },
+      {
+        "story": "ChatGPT Slides with real-time co-editing",
+        "decision": "covered",
+        "reason": "Already queued as 2026-10-17-chatgpt-slides-team-edit-live."
+      },
+      {
+        "story": "Germany and NVIDIA to unveil an industrial AI pact",
+        "decision": "skipped",
+        "reason": "Announcement not out yet, mostly European interest."
+      }
+    ],
+    "requests": []
   }
 ]
