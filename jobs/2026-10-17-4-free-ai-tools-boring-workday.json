@@ -1,0 +1,92 @@
+{
+  "id": "2026-10-17-4-free-ai-tools-boring-workday",
+  "format": "utility",
+  "created_at": "2026-10-17T16:10:00Z",
+  "story_time": "2026-10-17T16:00:00Z",
+  "timely": false,
+  "sensitive": false,
+  "priority": 2,
+  "sources": [
+    { "name": "Gamma pricing", "url": "https://gamma.app/pricing" },
+    { "name": "Otter Help Center", "url": "https://help.otter.ai/hc/en-us/articles/360047538094-Conversation-import-and-app-limits-on-the-Basic-free-plan" },
+    { "name": "Perplexity pricing", "url": "https://www.perplexity.ai/hub/pricing" },
+    { "name": "Napkin AI", "url": "https://www.napkin.ai/" }
+  ],
+  "caption": "Four free AI tools that take the busywork out of your day.\nGamma builds slide decks, Otter transcribes your meetings, Perplexity answers with sources and Napkin turns text into diagrams.\nAll four have a free plan with limits.\n\nWhich one are you trying first?\n\nFollow @neurafeed.ai for daily AI news.\n\nSource: Gamma, Otter, Perplexity, Napkin AI",
+  "slides": [
+    {
+      "kind": "cover",
+      "headline": "4 free AI tools that do the *boring parts* of your workday for you",
+      "image": {
+        "url": "https://www.napkin.ai/assets/v5/hero/visual-poster.webp?v=1",
+        "credit": "Napkin AI",
+        "fallback_urls": ["https://www.napkin.ai/assets/v5/use-cases/blog.png?v=4"]
+      },
+      "pos": "center 30%"
+    },
+    {
+      "kind": "text",
+      "heading": "1. *Gamma* builds your slides",
+      "paras": [
+        "Type a topic and Gamma creates a presentation, document or website for you. It can also import your existing PDF and PowerPoint files.",
+        { "t": "Free plan: up to 10 slides per prompt, with export to PDF, PPTX and Google Slides.", "strong": true }
+      ],
+      "image": {
+        "url": "https://static.gamma.app/images/gamma-banner-8d71c455.png",
+        "fit": "contain",
+        "credit": "Gamma"
+      }
+    },
+    {
+      "kind": "text",
+      "heading": "2. *Otter* takes your meeting notes",
+      "paras": [
+        "Otter transcribes calls in real time, so the words appear as people speak. It also summarizes the conversation for you afterward.",
+        { "t": "Free plan: up to 300 transcription minutes a month, 30 minutes per conversation.", "strong": true }
+      ],
+      "image": {
+        "url": "https://cdn.prod.website-files.com/618e9316785b3582a5178502/67dd5a945aeed07e329d4e10_og-image-otter-optim.jpg",
+        "fit": "contain",
+        "credit": "Otter.ai",
+        "fallback_urls": ["https://cdn.prod.website-files.com/618e9316785b3582a5178502/68c4ba5858b353ecd4c7e95f_free-ai-transcription-hero.avif"]
+      }
+    },
+    {
+      "kind": "text",
+      "heading": "3. *Perplexity* answers with receipts",
+      "paras": [
+        "Perplexity searches the web and answers your question directly. Every answer links to its sources, so you can check the facts yourself.",
+        { "t": "Free plan: citations in every answer, made for limited daily use.", "strong": true }
+      ],
+      "image": {
+        "url": "https://cdn.sanity.io/images/aqo64vfr/production/edbec114e66430535fb6188edee7c7132e1b4267-3556x2000.png?w=1320&q=80&fit=max&auto=format",
+        "fit": "contain",
+        "credit": "Perplexity",
+        "fallback_urls": ["https://cdn.sanity.io/images/aqo64vfr/production/edbec114e66430535fb6188edee7c7132e1b4267-3556x2000.png?rect=0,67,3556,1867&w=1200&h=630&fm=jpg&q=80&fit=crop"]
+      }
+    },
+    {
+      "kind": "text",
+      "heading": "4. *Napkin* draws your diagrams",
+      "paras": [
+        "Paste your text and Napkin turns it into a diagram, flowchart, mind map, infographic or chart you can drop into slides, docs and posts.",
+        { "t": "Free plan: weekly AI credits to generate visuals and presentations.", "strong": true }
+      ],
+      "image": {
+        "url": "https://www.napkin.ai/assets/og-image-v5-1280.png?v=2",
+        "fit": "contain",
+        "credit": "Napkin AI",
+        "fallback_urls": ["https://www.napkin.ai/assets/v5/use-cases/docs.png?v=4"]
+      }
+    },
+    {
+      "kind": "cta",
+      "hook": "Save this before your next meeting, and follow for more free AI tools that save you real time.",
+      "image": {
+        "url": "https://www.napkin.ai/assets/v5/use-cases/presentations.png?v=4",
+        "credit": "Napkin AI",
+        "fallback_urls": ["https://www.napkin.ai/assets/v5/use-cases/social-media.png?v=4"]
+      }
+    }
+  ]
+}
