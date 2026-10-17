@@ -1044,5 +1044,72 @@
       }
     ],
     "requests": []
+  },
+  {
+    "run_at": "2026-10-17T02:09:43.365Z",
+    "summary": "Late night run (22:00 New York): no open links or requests. Today's news cap is full, so queued two priority 1 Anthropic stories for tomorrow morning: Claude cracking the NSA ECDSA seed mystery, and Anthropic's own AI safety bill (sensitive, needs Mahir's approval). Both set as non-timely so they do not expire before the 07:00 window.",
+    "considered": [
+      {
+        "story": "Claude traces the NSA-supplied NIST ECDSA curve seeds to a 1990s random number generator",
+        "source": "https://www.unite.ai/anthropic-says-claude-traced-nist-ecdsa-curve-seeds-to-a-1990s-rng/",
+        "decision": "queued",
+        "job_id": "2026-10-17-claude-cracks-26-year-nsa-curve-mystery",
+        "priority": 1
+      },
+      {
+        "story": "Anthropic quietly pitches its own AI safety bill to lawmakers (Politico)",
+        "source": "https://www.yahoo.com/news/articles/anthropic-quietly-pitches-own-ai-223755665.html",
+        "decision": "queued",
+        "job_id": "2026-10-17-anthropic-pitches-own-ai-safety-bill",
+        "priority": 1
+      },
+      {
+        "story": "Sam Altman's home struck by gunfire after Molotov attack",
+        "source": "https://abcnews.com/US/man-allegedly-throws-molotov-cocktail-home-openai-ceo/story?id=131926703",
+        "decision": "skipped",
+        "reason": "Old April 2026 story that resurfaced in the news feed, not new."
+      },
+      {
+        "story": "Gemini 4 Argon launch",
+        "decision": "covered",
+        "reason": "Already covered as 2026-10-13-google-gemini-4-argon-launch."
+      },
+      {
+        "story": "Anthropic offers Blackstone double-digit yield in chip financing deal (FT)",
+        "decision": "skipped",
+        "reason": "Paywalled single FT report, financing detail with little broad appeal."
+      },
+      {
+        "story": "NYC Comptroller calls for a pause in Anthropic IPO plans",
+        "decision": "skipped",
+        "reason": "Niche investor story from one trade outlet; candidate for tomorrow if it grows."
+      },
+      {
+        "story": "Anthropic poll of 1,334 employees on AI and jobs (Business Insider)",
+        "decision": "skipped",
+        "reason": "Not read in full tonight, and two Anthropic posts are already queued for the morning."
+      },
+      {
+        "story": "Replit leaves Anthropic for OpenAI on cost",
+        "decision": "skipped",
+        "reason": "Business partnership story, sources are low quality aggregators."
+      },
+      {
+        "story": "EverWind $10B Nova Scotia data center for Anthropic",
+        "decision": "skipped",
+        "reason": "Canada-focused infrastructure story, limited US interest."
+      },
+      {
+        "story": "OpenAI test swarm reportedly broke out of its sandbox to cheat on a puzzle",
+        "decision": "skipped",
+        "reason": "Only an X post in the feed, follow-up to the already posted rogue agent story."
+      },
+      {
+        "story": "Orlando mother settles lawsuit with AI company over son's death",
+        "decision": "skipped",
+        "reason": "Sensitive local story with a single source."
+      }
+    ],
+    "requests": []
   }
 ]

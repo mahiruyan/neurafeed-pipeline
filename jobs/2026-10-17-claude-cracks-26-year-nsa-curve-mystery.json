@@ -1,0 +1,61 @@
+{
+  "id": "2026-10-17-claude-cracks-26-year-nsa-curve-mystery",
+  "created_at": "2026-10-17T02:09:00Z",
+  "story_time": "2026-10-16T18:55:00Z",
+  "timely": false,
+  "sensitive": false,
+  "priority": 1,
+  "sources": [
+    { "name": "Unite.AI", "url": "https://www.unite.ai/anthropic-says-claude-traced-nist-ecdsa-curve-seeds-to-a-1990s-rng/" },
+    { "name": "Blockchain.News", "url": "https://blockchain.news/news/claude-traces-origins-of-nist-ecdsa-curve-seeds" },
+    { "name": "explainx.ai", "url": "https://explainx.ai/blog/claude-ecdsa-nist-curve-seeds-lrand48-anthropic-frontier-red-team-backdoor-question-2026" },
+    { "name": "Anthropic", "url": "https://www.anthropic.com/research/ecdsa-curve-origins" }
+  ],
+  "caption": "Anthropic says an internal Claude model traced where the NSA-supplied seeds behind NIST's ECDSA curves came from, in under 30 minutes.\nThey came from a 1990s C random number generator seeded with timestamps, not a secret passphrase.\nAnthropic says this is not a break of ECDSA and makes a hidden backdoor less plausible.\n\nWhat old mystery should AI crack next?\n\nFollow @neurafeed.ai for daily AI news.\n\nSource: Unite.AI",
+  "slides": [
+    { "kind": "cover",
+      "headline": "Claude just cracked a 26-year-old NSA crypto mystery in *under 30 minutes*",
+      "image": {
+        "url": "https://www.unite.ai/wp-content/uploads/2026/10/anthropic-claude-traced-nist-ecdsa-curve-seeds-1990s-rng.jpg",
+        "credit": "Unite.AI",
+        "fallback_urls": ["https://api.daily.dev/og/posts/Xfs8bIjLt.png"],
+        "generate": "Vertical photo of a dim, dusty government archive room at night. On a gray metal desk on the right side of the frame sits an old beige 1990s CRT computer, its screen showing only a soft blurred glow. Next to it, a heavy steel vault door stands wide open, and a large brass padlock lies unlocked on the desk beside stacks of yellowed paper files. Warm orange light, the same orange as the shape in the first image, spills from the open vault across the desk. The desk, computer and vault fill the upper two thirds of the frame, with headroom above the vault. The left third of the frame is empty dark background. The bottom third is the dark floor. Blank surfaces, no readable text or labels on any object, no letters, no logos, no watermarks. Photorealistic, high contrast, one clear scene. It must look like an unedited real photo from a news agency, not a painting, not digital art, no glow effects.",
+        "refs": ["assets/logos/claude.png"]
+      },
+      "pos": "center 35%",
+      "badges": [ { "url": "assets/logos/claude.png", "shape": "free", "side": "left", "cutout": true } ] },
+    { "kind": "text",
+      "heading": "The NSA's *unexplained numbers*",
+      "paras": [
+        "In 2000, NIST adopted the ECDSA curves in FIPS 186-2. The NSA supplied the seed values behind them with no explanation of how they were made.",
+        "P-256, the most widely deployed of these curves, was among them. For 26 years nobody could explain the seeds, and a bounty was offered for the answer."
+      ],
+      "image": { "url": "https://media.daily.dev/image/upload/f_auto,q_auto/v1/posts/f2334b258647bf5c0b4685038352ee41?_a=AQAEuop", "credit": "Anthropic via daily.dev",
+        "fallback_urls": ["https://runtimewire.com/og/claude-traces-nist-ecdsa-seeds-to-timestamps.16x9.jpg?v=og2-azyl2i"] } },
+    { "kind": "text",
+      "heading": "Not a *secret passphrase*",
+      "paras": [
+        "The leading theory said NSA employee Jerry Solinas made the seeds by hashing a humorous passphrase. He died in 2023 with the question still open.",
+        "Anthropic's Frontier Red Team says Claude found the answer in under half an hour: lrand48, an ordinary C random number generator, seeded with a Unix timestamp."
+      ],
+      "image": { "url": "https://runtimewire.com/api/storage/uploads/hero-images/claude-reveals-ecdsa-curve-origins-f676281b.png?w=1600&fmt=webp", "credit": "Runtime Wire" } },
+    { "kind": "text",
+      "heading": "Clocks from *the late 1990s*",
+      "paras": [
+        "Claude noticed some seeds had their top bits clear, a clue that pointed to lrand48. It then used lattice math to rebuild the generator's hidden state.",
+        "Running it backward gave start times between May 1997 and April 1998. The published P-256 seed was candidate 1842 from a run that began August 16, 1997."
+      ],
+      "image": { "url": "https://aipolix.com/uploads/2026/10/a77f3ae2-224f-474c-ac81-fb8308a568db_cover.jpg", "credit": "AI Polix",
+        "fallback_urls": ["https://aipolix.com/uploads/2026/10/a77f3ae2-224f-474c-ac81-fb8308a568db_social.jpg"] } },
+    { "kind": "text",
+      "heading": "*No break*, fewer doubts",
+      "paras": [
+        { "t": "Anthropic says this is not a break of ECDSA and no curve needs to change. It says a clock-seeded generator makes a deliberate backdoor less plausible.", "strong": true },
+        "Some puzzles remain, like the base points for P-256. The $36,864 bounty will go to the Internet Security Research Group, the nonprofit behind Let's Encrypt."
+      ],
+      "image": { "url": "https://explainx.ai/images/blog-library/secrets-key-vault.webp", "credit": "explainx.ai" } },
+    { "kind": "cta",
+      "hook": "AI just closed a 26-year-old crypto case. Follow to see what Claude solves next.",
+      "image": { "url": "https://image.blockchain.news:443/features/EEF942587C092BBC865AE434AF7F9392163C996AC4BB6F3A474D06B1E81E0F4F.jpg", "credit": "Blockchain.News" } }
+  ]
+}
