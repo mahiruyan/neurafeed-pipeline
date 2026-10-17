@@ -1,5 +1,5 @@
 {
-  "scanned_at": "2026-10-16T22:11:34.057Z",
+  "scanned_at": "2026-10-17T01:31:13.743Z",
   "errors": [
     "r/OpenAI: HTTP 403",
     "r/ChatGPT: HTTP 403",
@@ -17,8 +17,8 @@
     {
       "source": "Hacker News",
       "title": "Claude reveals ECDSA curve origins",
-      "score": 483,
-      "comments": 200,
+      "score": 667,
+      "comments": 269,
       "time": "2026-10-16T18:55:59Z",
       "url": "https://www.anthropic.com/research/ecdsa-curve-origins",
       "permalink": "https://news.ycombinator.com/item?id=50122800"
@@ -26,80 +26,348 @@
     {
       "source": "Hacker News",
       "title": "90% of US working hours are spent on tasks not covered well by AI benchmarks",
-      "score": 330,
-      "comments": 293,
+      "score": 395,
+      "comments": 330,
       "time": "2026-10-16T17:08:38Z",
       "url": "https://www.mercor.com/research/labor-index/benchmark-map/",
       "permalink": "https://news.ycombinator.com/item?id=50121179"
     },
     {
       "source": "Hacker News",
-      "title": "Show HN: Gemini 4 Argon plays StarCraft",
-      "score": 171,
-      "comments": 76,
-      "time": "2026-10-16T14:18:44Z",
-      "url": "https://starskirmish.com/bench/v0-2/",
-      "permalink": "https://news.ycombinator.com/item?id=50118688"
-    },
-    {
-      "source": "Hacker News",
-      "title": "Anthropic assigned highest junk credit rating in June",
-      "score": 164,
-      "comments": 44,
-      "time": "2026-10-16T18:11:42Z",
-      "url": "https://www.ft.com/content/5a310aee-f555-4266-874c-b1b4db20186d",
-      "permalink": "https://news.ycombinator.com/item?id=50122112"
-    },
-    {
-      "source": "Hacker News",
-      "title": "Postgres 19 delayed after AI reviewers find more bugs than humans can fix",
-      "score": 164,
-      "comments": 63,
-      "time": "2026-10-16T15:55:40Z",
-      "url": "https://www.theregister.com/databases/2026/10/16/postgres-19-delayed-after-ai-reviewers-find-more-bugs-than-humans-can-fix/5303471",
-      "permalink": "https://news.ycombinator.com/item?id=50119991"
-    },
-    {
-      "source": "Hacker News",
       "title": "How the Claude Code team does code review",
-      "score": 142,
-      "comments": 138,
+      "score": 233,
+      "comments": 219,
       "time": "2026-10-16T19:04:47Z",
       "url": "https://claude.dev/blog/solving-code-review-at-anthropic/",
       "permalink": "https://news.ycombinator.com/item?id=50122951"
     },
     {
       "source": "Hacker News",
+      "title": "Anthropic assigned highest junk credit rating in June",
+      "score": 212,
+      "comments": 70,
+      "time": "2026-10-16T18:11:42Z",
+      "url": "https://www.ft.com/content/5a310aee-f555-4266-874c-b1b4db20186d",
+      "permalink": "https://news.ycombinator.com/item?id=50122112"
+    },
+    {
+      "source": "Hacker News",
       "title": "Llama.cpp on a jailbroken PS5: run any GGUF model natively on the console",
-      "score": 127,
-      "comments": 36,
+      "score": 195,
+      "comments": 48,
       "time": "2026-10-16T18:32:35Z",
       "url": "https://github.com/cobanov/PS5LM",
       "permalink": "https://news.ycombinator.com/item?id=50122431"
     },
     {
       "source": "Hacker News",
+      "title": "Show HN: Gemini 4 Argon plays StarCraft",
+      "score": 185,
+      "comments": 87,
+      "time": "2026-10-16T14:18:44Z",
+      "url": "https://starskirmish.com/bench/v0-2/",
+      "permalink": "https://news.ycombinator.com/item?id=50118688"
+    },
+    {
+      "source": "Hacker News",
+      "title": "Postgres 19 delayed after AI reviewers find more bugs than humans can fix",
+      "score": 177,
+      "comments": 67,
+      "time": "2026-10-16T15:55:40Z",
+      "url": "https://www.theregister.com/databases/2026/10/16/postgres-19-delayed-after-ai-reviewers-find-more-bugs-than-humans-can-fix/5303471",
+      "permalink": "https://news.ycombinator.com/item?id=50119991"
+    },
+    {
+      "source": "Hacker News",
       "title": "Designing more efficient quantum circuits with Claude",
-      "score": 71,
-      "comments": 12,
+      "score": 98,
+      "comments": 18,
       "time": "2026-10-16T18:00:18Z",
       "url": "https://www.anthropic.com/research/designing-efficient-quantum-circuits",
       "permalink": "https://news.ycombinator.com/item?id=50121939"
+    },
+    {
+      "source": "Hacker News",
+      "title": "Anthropic Console overcharged my card 100x due to internationalization input bug",
+      "score": 86,
+      "comments": 33,
+      "time": "2026-10-16T17:31:42Z",
+      "url": "https://news.ycombinator.com/item?id=50121562",
+      "permalink": "https://news.ycombinator.com/item?id=50121562"
     }
   ],
   "news": [
     {
+      "source": "Google News: AI",
+      "title": "Buying Legal NYC 2026: Why legal leaders are focused on the foundations of AI success - Wolters Kluwer",
+      "time": "2026-10-17T01:02:08.000Z",
+      "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxObHNRWkVhU0RsRW5MemFEZE5IVTFSR3pqVmRRNXNNajBOVFM5X0YtRUM0dFpENWRNc1J1RkZtemswWmZlcmlmQVQweTh6a1dnZFFYWi1QakhhOXhKYkUxQl9Qc1BFd3FjZXg3RDVNdkJQbUNBQnB0V1U1d2xDaGdBd2wzZUp6engxZUJzWXkyQlJSNmtHYUtRQ084UzlMaEk0RVFYZmJUaGw5ZHFScE5MMGY5b3dIdHExbmYzc0ZISm5EUmI4ZUxGUlJEUGlwdw?oc=5",
+      "images": []
+    },
+    {
       "source": "Google News: Anthropic",
-      "title": "EverWind’s major data centre project in N.S. will power Anthropic’s Claude AI - Global News",
-      "time": "2026-10-16T22:01:02.000Z",
-      "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE5tcjRqUERvZWx2cmI3RWRaUGZsSEpBQmZEbU5uRXZ6c0dDS2JnRGU0OTZyams5ZDMwMnFUNEcyZFlxaUJlaGlNaERKd2l0eWYxU1FNSmV1dTdBdTg4cGR2RGRGZWR4X0twdVYxLWhWbHlJY1pTbGYzQQ?oc=5",
+      "title": "Anthropic offers Blackstone double-digit yield in chip-financing deal, FT reports - Yahoo Finance",
+      "time": "2026-10-17T01:01:00.000Z",
+      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOVnB1RXlFY1hwNUhQbnJrN1pzMUlaS1hncHo4ODNZd1R1NDFtVTFOWFd0dkdqNVlQaEhPbVlydjdDR3poUEd6ZTNkaUhOX01LbUJYVmZJU3VLczVEMmdyQldwbm5mNWd1ZVZnS1BjR3JBRFJnM0twVzcybXYyc3JwaDk0VjBlcFktOGR1Z3lhYmVrdTQ5Z3F0ZjNJM2N4N3NvSjBIamZJNA?oc=5",
+      "images": []
+    },
+    {
+      "source": "Google News: Anthropic",
+      "title": "Anthropic Pitches Congress a $1B AI Safety Bill [2026] - shattered.io",
+      "time": "2026-10-17T00:54:21.000Z",
+      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE02TktqLWk5VDIzRnAxVjFGYV9SYkExcFE4dkhWVFZ4allka1VCOFpmYTlsZFVPMy1EajZTV0dkRFVzOEtabnFDLVdvckFWbmRBbjdLVmNpOFA3Q19CalNUUUVzMkdubWlaQVZYVQ?oc=5",
       "images": []
     },
     {
       "source": "Google News: AI",
-      "title": "AI is coming for every company, Nvidia boss says - Tech Xplore",
-      "time": "2026-10-16T22:00:10.000Z",
-      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBUU2ZmOF82Wi0taXVSenlzTUNicm93djFsZ2xxSVFHcHdvRkFoRGFZSzh3VWFtX1ZJUVdXeEVJeGRTZ1RRSGN4YksyNHFmeGRQTy1YWnFubzRNSmpZX2tuM3h6eTY5b0NnSFdkMXJUYjU?oc=5",
+      "title": "Artificial intelligence controversy plagues the Caine Prize; Zimbabwean writer defends the originality of his winning story - صوت الإمارات",
+      "time": "2026-10-17T00:47:05.000Z",
+      "url": "https://news.google.com/rss/articles/CBMiiwJBVV95cUxNbjdDRDFiYXdWTzVRbkZybG0tbmhOX1pzV0xfR05EOUQxTlRHUjZFSm5sakszSlVUdE9MSHhsRU5pNi1TMmNERW5tMF9LWXRObG5OLTk3aU0tTG5kbWxjSUtURlhKbExuWHFVWjl6dDV1VUtZRHlhTEtaLUw0MzBjWDdreFQxUnRsbjA1U21RQVpBcENOOE1EWGJwNlpwZTRzMDdjeXlBamhob1RtZk01ZjROMnFUVHQ2OFJRLTAwU3JvVWl0QkFWbndMd1BsTGMtQ29VTXFqQThuVjg2OThCbXpkRWRkaEx4MTFIdS1ZVl9hSmhneWJsWjNodkZTNzZwWDZxLW9fR0ljRW8?oc=5",
+      "images": []
+    },
+    {
+      "source": "Google News: Anthropic",
+      "title": "NYC Comptroller Levine Calls for Pause in Anthropic IPO Plans - Chief Investment Officer",
+      "time": "2026-10-17T00:45:00.000Z",
+      "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOSXJuemZyMm5rQ0ItX2JoTHhBTkpEVXgybDZGaUdCUVI5QVV5emExSmxTOWFwR21PamQxamU3NzhsZXBQSFRBODlXTm9udmt5eWk5SG95RTh6Q19wTElQZ1NBcllBdkZ5Q2hLa2pOWGRoNWxjSVdNVjdoUW41WDVVVXZsUWY3ckRGcFJEZFV6NXIzYlFj?oc=5",
+      "images": []
+    },
+    {
+      "source": "Google News: OpenAI",
+      "title": "🇺🇸 An OpenAI test swarm reportedly broke out of its sandbox, hacked an outside company and gave itself admin rights... all to cheat on a puzzle The models weren’t trying to escape for its own sake, they were handed impossible problems, decided the grader - X",
+      "time": "2026-10-17T00:31:23.000Z",
+      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTFAzZnBibmRrVGpST2Q3Si0xRHBsdGJUM28zODFCMjVTZWNTSG5GYnhkVjB0QS11SFNfTlJNNzlqRFZVYW02a29yNVRQcnJZdUJRV0oxc2R3alFsRlNlUEoydHdXUjRYQlQxenhpRw?oc=5",
+      "images": []
+    },
+    {
+      "source": "Google News: Anthropic",
+      "title": "Anthropic Drafts Bill Allowing Government to Halt AI Models Only in Extreme Cases - BigGo Finance",
+      "time": "2026-10-17T00:25:00.000Z",
+      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTFBDSndNVUxmSlFUOWtHMktlaE5rbXZjNFFlNXNtWnAxeFRXa29jOEdkSFg4dVU2T1VlYmdtRUk3U0FTZzJacnQ5UnBPeE1Fd1BfNGhjNGI2a2lKSm1MaV9CaG9MdUZsWjhqTUlIT055N3NBdUZfU3c?oc=5",
+      "images": []
+    },
+    {
+      "source": "Google News: AI",
+      "title": "Q: What are the biggest threats from artificial intelligence? - KRQE",
+      "time": "2026-10-16T23:53:53.000Z",
+      "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQUzRmRlJOTHpCdkRJNjBGN2FVQWFTbGh5SlpUQUVtTVR0ektyTnp2SnZVcFplMTUwU18xbHFLcVR4X1NhTl9YNXN3MmZCOXNYbEp1eGhDOU50bEt1d3UtTjNkdlBsU3JaSzdmMUhMQzNhYzFyNTVRWk9kcU9HWmJ5RDJGd25NTWxPc3NwQTBrbDljY2ZrVkpNR3R0Q3k?oc=5",
+      "images": []
+    },
+    {
+      "source": "Google News: AI",
+      "title": "Owatonna and Rochester police use AI to help write reports - kaaltv.com",
+      "time": "2026-10-16T23:53:49.000Z",
+      "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOUk1Cal9hbkZXQmcwNGhpbkVSUUZRZVlwTnhjdjFVZ084eU0wMXhyMDBFS25WcER0T3BaQkx5VTNnNmlYNVVIMjBhMGc1TktZcUJReGZIem9lLXN1X0FQbmo2LVBwMlUzbG4wcmlCQi1mWWNKemlfRXlUamNzWWhjMW15U0kwV0Nzb014eEpTbmxvbWZLdnBlRG1yckw?oc=5",
+      "images": []
+    },
+    {
+      "source": "Google News: Anthropic",
+      "title": "Replit CEO Says It Left Anthropic on Cost and Performance - FourWeekMBA",
+      "time": "2026-10-16T23:38:53.000Z",
+      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxORjAyWXNjeWk1RkRaNFZLMTJ6YUdINHV1TFd1eE5paFNoVEd6WTVpYXhCal9oYk5UaEZuZ2Ztb3Z4TWpSN0lENGVaU1lObE03N3djbXhCa3kxVWhIcTJHdHN6enZGXzlaN0NMUVNtbFhjTllKa3Y2N3RBVzY5dzJ1TW1YZ3lnUjFYXzk2ZFdB?oc=5",
+      "images": []
+    },
+    {
+      "source": "Google News: AI",
+      "title": "North Korea says it tested new torpedo with AI tech - South China Morning Post",
+      "time": "2026-10-16T23:37:18.000Z",
+      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOSXZCN0F3RDVSSjR1enJ3Tm1jbnRMTkZBOU1hWXI2RUp5c1E4NjBlZGtNQS1uaDBuZFRqa1BVM0RvLWRKc2RULUM0dElTZkl1SlhUb1RfUUVFNlNWSWFxakZhOEl0MmZ4RVpCQlFSYm9OVTJOQWVyY1lpMHJYdFFOTDNhZTlWdF9lTENzQktsYTdQWGRTWFRVaWRRZHBzZTVZallWbEFB0gGmAUFVX3lxTE5JdkI3QXdENVJKNHV6cndObWNudExORkE5TWFZcjZFSnlzUTg2MGVka01BLW5oMG5kVGprUFUzRG8tZEpzZFQtQzR0SVNmSXVKWFRvVF9RRUU2U1ZJYXFqRmE4SXQyZnhFWkJCUVJib05VMk5BZXJjWWkwclh0UU5MM2FlOVZ0X2VMQ3NCS2xhN1BYZFNYVFVpZFFkcHNlNVlqWVZsQUE?oc=5",
+      "images": []
+    },
+    {
+      "source": "Google News: AI",
+      "title": "Local economist says AI could create jobs as well as eliminate them - KTNV Las Vegas",
+      "time": "2026-10-16T23:31:56.000Z",
+      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOYk1oSDNBVWpRVVh6eDhBOHNDS2pwaGNzQTRJaFhWN3ZiZHZBRnJIeVpMd2JCX3hkQTM1TlNPaUp6Q3p3QldIV2RDVkRKN2RZOWxBbi1zaTF1U19Sc2stb1BmMXFJZ1FUNXc5aU01RnJvY1JmUWJQQUptbEd5RWVxdFVrYk1xcnphaTZyVWdQVTdjQkNOdm1sZHFFS0tVNnlMbUZUNHJZTUhjSVYtekNnNVQzQUNrQU5FVHUyMUx2MA?oc=5",
+      "images": []
+    },
+    {
+      "source": "Google News: OpenAI",
+      "title": "Video: Opinion | Why the Anthropic and OpenAI I.P.O.s Are Unusual - The New York Times",
+      "time": "2026-10-16T23:31:14.000Z",
+      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNRXFDUHZzY2Y5LU1yeTcxUjRVeVB4bGtuUTdEZnZVMk5kU3FUVVNOanVENF9RdGdQNDZXOW5pMDNxMzNJZHJLOEhKYlNtR19fUGpBUnZtcDBGbkR2a296QW56LUF4UHRrQTFIQk53TVY2NWZncDloNXBEUVBnVkxrZWN6Wl96ZU1qVHhNN0k5dmpqWkpTMUdHQWptV29KQ2dNZWQwTmtSWQ?oc=5",
+      "images": []
+    },
+    {
+      "source": "Google News: Anthropic",
+      "title": "Anthropic Quietly Pitches Its Own AI Safety Bill To Lawmakers: Reports - NDTV",
+      "time": "2026-10-16T23:22:02.000Z",
+      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOUnZkbzBmOHdhWEctRThCXzY1WUxvMWN3cVpvdldCdTRLSEpDMnpxZXBDUmc2WjNrdDZOeFd6MXlLYXZNczZpZVZQMHFrRnp5dUV4Nks2cXJWNmNUNUEyaHU5RmhmMzc5R2d0UWQzQkpnZV9aMW5qZUlJckpxbDN6NVBkQnRUMTZtSll4VWVYRzZna0dOeGJsYzZzWm81NHE1eWFvaTFaYTFmRmk1ZjhsLUZrR2Z6QVHSAbcBQVVfeXFMTlJ2ZG8wZjh3YVhHLUU4Ql82NVlMbzFjd3Fab3ZXQnU0S0hKQzJ6cWVwQ1JnNloza3Q2TnhXejF5S2F2TXM2aWVWUDBxa0Z6eXVFeDZLNnFyVjZjVDVBMmh1OUZoZjM3OUdndFFkM0JKZ2VfWjFuamVJSXJKcWwzejVQZEJ0VDE2bUpZeFVlWEc2Z2tHTnhibGM2c1pvNTRxNXlhb2kxWmExZkZpNWY4bC1Ga0dmekFR?oc=5",
+      "images": []
+    },
+    {
+      "source": "Google News: Anthropic",
+      "title": "Anthropic Pitches AI Safety Bill to Lawmakers, Politico Says - Bloomberg.com",
+      "time": "2026-10-16T23:16:18.000Z",
+      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQcENENWdpRlloLVpNclIyQWpIM3JSV3VHZklqOWZlQ0NJYnB2TWg2ZlhPMndNbS1qM2pWM0dTTVFZQ2l1SmxTT1h3VjZJNVpXTWhZTHRnLThqYm9UeFJ4ZEp0U3JROG1sUFJrN3Z6SEFKN2tPcU5teHZ6cU9JUDh4X1laZVZJMkZNNXNSZnJlZDdOX0dFMlM5REZCSGRHR3AydkdCbUY3RU9zYTRoNzdz?oc=5",
+      "images": []
+    },
+    {
+      "source": "Google News: AI",
+      "title": "Georgia Tech Partnership Expands AI Education at CAU | Newswise - Newswise",
+      "time": "2026-10-16T23:15:00.000Z",
+      "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQblM3WEVLQmpESjg2eGgxeHVQWW5IWVQ5d1gwMVI2XzJTbEZDNTBOZGc0NWJWeHhNOXdFbElBU2x1OExJaV9HNEMwdnlGajlJUmFqZkVtQVpXbFFFSkp6T0Q3ekdTSjB5eHNROHBfUVJBSjhHUFpBLUFiVWthVFNMWUhpcHlBZHp6MVROQUx1UdIBjwFBVV95cUxQblM3WEVLQmpESjg2eGgxeHVQWW5IWVQ5d1gwMVI2XzJTbEZDNTBOZGc0NWJWeHhNOXdFbElBU2x1OExJaV9HNEMwdnlGajlJUmFqZkVtQVpXbFFFSkp6T0Q3ekdTSjB5eHNROHBfUVJBSjhHUFpBLUFiVWthVFNMWUhpcHlBZHp6MVROQUx1UQ?oc=5",
+      "images": []
+    },
+    {
+      "source": "Google News: Anthropic",
+      "title": "Anthropic quietly pitches its own AI safety bill to lawmakers, Politico reports - TradingView",
+      "time": "2026-10-16T23:14:49.000Z",
+      "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxPU0l4bzhuVWFOU2dBdGpnNENObmk1dkNVOE0tUVpZcmVRMFRESDYtVmFvREljTEN5THNNaERNNzF5WkJ5N21ldzcxUnd0TURPZWZtRG5DS3RDQXU5RmJYTmVJWGh5RnZpMUJFb1VubERjV0dzWWdreEVXUGtMdUYwbGhudENuX3FEZmxzeTM5cU5JeXlEY2x6UFhDZmpEY0pKc0RPZHg4aXJTeEtNWTFfS0J5NTBDdHhxa1YxTmt0OUM2cTRPXzRPbEFUYW1FTWxpVUZ4V2VkWlFreVhyb01nM3lR?oc=5",
+      "images": []
+    },
+    {
+      "source": "Google News: OpenAI",
+      "title": "OpenAI CEO Sam Altman's home struck by gunfire, days after Molotov cocktail attack: Police - ABC News - Breaking News, Latest News and Videos",
+      "time": "2026-10-16T23:11:21.000Z",
+      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOYlk3cFJkWnNMMHloVFZSQ2pIelpHUWxJbndOeWdiUVcxdXBncjcxdmU3cEUtczJBSV82MUc0LTFRdkJ4NmZpZmZUMUdmU1NJc3hMSlRUSU43RW5VN1pjVzJqSm83OWZiakt4TTQ0bHgwR0hYVkJUaTB1QUlnRUxFQzB1YngzOVoxS0pOYkFzUHpHQVFvcHN1SjFVONIBoAFBVV95cUxOSmg3TE42d3BRemlRWXU4al9ZU0p5eEtCeE4yNzNiaE1oTDB5MHZBMDVDNTUxUjl0dzdma2VWcDkyTUNMRnJoNlJobXNLU0t6NUdXbXNkMWdUa2NDUk4xZ2loSjY2TURtTXkxMTNtd3ptU1VUemYyVG93QWt1ZkNvdEp1aDQ4UVY5RDRwUXRSRGZsdmNJalpyeHVBRkxpbW1v?oc=5",
+      "images": []
+    },
+    {
+      "source": "Google News: AI",
+      "title": "AI Legislative Update: Oct. 16, 2026 - Transparency Coalition",
+      "time": "2026-10-16T23:10:24.000Z",
+      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQN0pwVnQ0VVNrY0doNnlWMDdpaTZYeFRhTF9jTVgzLXVSQUdIM3VsUlRUTnJwRng1WEpHX1hxY19KbWdFcUlXR21xZWpBMmNLY2IzemxiOTlaNE5UYXlqZ2hPdVZlX3BTWWNBTElPd2hFWUlCV3V6cFBpS2RIWXBtVV9oZ1E?oc=5",
+      "images": []
+    },
+    {
+      "source": "Google News: Anthropic",
+      "title": "Replit CEO Masad Says Company No Longer Works With Anthropic - Unite.AI",
+      "time": "2026-10-16T23:06:12.000Z",
+      "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxORUZZU1NHMjR4UjMxV2FHcVdGejB1UTFIQXdIT1VJZUJkbGVGdmJaTEMzMng0RUFPb3ZTd3R5cGszOHFmdzhiajNjeGhUeDVuSWdKT3A4ektPY1ZHMTB2UjFObklOZUxqbE1ONUVhS0h1Y0V4NTBvbzN2aERWdkF0aUIwNlRTUk9rZVE?oc=5",
+      "images": []
+    },
+    {
+      "source": "Google News: Anthropic",
+      "title": "Meta claims to have caught up with AI leaders, but can it be trusted? - AFR",
+      "time": "2026-10-16T23:05:33.000Z",
+      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNeWVWUTZBNEl3Q0FqMVRQZWoycWg4ZjBIYzFVcngzR090ZXNlcVRnU01QcXh5T1Uyb0RNV2V0a3ptQVVGaFgtS3hJQW9CTUlOMnRZMDkyMEMxdGItY0tqbUpHVDRPbVlfYUN5V0hsRFdPS1hYVFhNbHUwLUdEcTE0RkE1LWtUV0JQdVgyMVhlTVZjZ2JVMElWYzdKSFptNzJEcnRxV3oyakx6YldJb0lJ?oc=5",
+      "images": []
+    },
+    {
+      "source": "Google News: OpenAI",
+      "title": "OpenAI Hires SpaceX's Graham Seamans to Lead Cybersecurity Sales - marketscreener.com",
+      "time": "2026-10-16T23:00:28.000Z",
+      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPNmJWdnBiUjNJOEFpa2tuWTl2Z2UzNERkemo3N0JmQ0RmT201dXRqZlZ0dGtVMGFfYlNMSHVWWHVySjJEcThpSzFMQUhTWEFXQzFyNU5QTXY0T0FyM2RRdGRsOGZfSVZFai1LVDVNeEZtbjAtNHA0OWxXSUtqb09yM1lvaXpUNWY4RE91S25sWDlqR0ZZYTVjNVdfbVFhVGR3bWVieTRJZW52MUNUNDYxZ1dmTEpNdk1M?oc=5",
+      "images": []
+    },
+    {
+      "source": "Google News: Anthropic",
+      "title": "Anthropic proposes AI safety bill with strict intervention thresholds - Politico - Investing.com",
+      "time": "2026-10-16T22:57:36.000Z",
+      "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNcTRsZEFMWFg0OHhSQm5WbzVySWRDcVViNHcyaENXR01WR0FsejM1NUpCUWtKM3dORWJYZXhuVHBEWUgzWEZpZHZzd1llVmxUY3V4d2MzeU1VdmhjSWZQUnN5MkQ0VnZ2QUdMcGdHN1pNcnJNcjhSVm95S3JJcXdqYnFjNmNuNUtLQVVrQTdtdjRDQTRaSzN6cnYwQUYwemRHOF81TXc1WUZROUw3WHJhaEhxVmpneWtHMWRVTDg4RXg0YkhUaHZrR1BQdw?oc=5",
+      "images": []
+    },
+    {
+      "source": "Google News: Anthropic",
+      "title": "Anthropic revealed as client for EverWind’s $10B Nova Scotia data centre - The Logic",
+      "time": "2026-10-16T22:49:00.000Z",
+      "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPRkZvcjIzUEVjbEV2Sy11Q1hJVTRqUVowMlRwbjBYS0kxbFRrQWx0UVdaQWhSa0Y5bXdMa3RtcXdWeW9uaGMyQmVodVJ0MW96QkVWdi1IVW5sZklrT2c2bGdvdDlyUXp6QXF4M0ZLUmMxV0FlcGRJYklwRDFUN0FldmFFYUpKbXc?oc=5",
+      "images": []
+    },
+    {
+      "source": "Google News: Anthropic",
+      "title": "Anthropic polled 1,334 of its employees. They're more sure than most of us that AI will take over jobs. - Business Insider",
+      "time": "2026-10-16T22:48:00.000Z",
+      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNTUtQVmpxb255WWNodDByNXRKVWx1VzZfQWFtUTJLeU1qZ25uLVFpVmwwZDhscnRuRjczdTZIZ1luVjRRNEI2SUpPaFZfc0pPeVRPN3otcXlfcTFoeG1vNWxxYXZOM2RhSFl5eC1LRWhaZ0xFRlNzeG9DQjVCcFpYZzNoT1NaTGpRaWUwZFB3Vy1GSV90Yi11WlpkU25RRzZwRlE?oc=5",
+      "images": []
+    },
+    {
+      "source": "Google News: Gemini",
+      "title": "Google, GOV’T launch Educator Series - Daily Tribune",
+      "time": "2026-10-16T22:47:17.000Z",
+      "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE1SQzhFMTlFUnJRVVZhRDJqdWpoME1SNlNMNU8xM0huaU9CWGI0LWdJUWFuek5nLU1kVVc4RFhSazBZU3BRTzlvWDdyX290ZUZIWW5VcWF1YXdkUE5oMkg4QlMzOTJIdW9melItdGI4OEY0MFFGYWtv?oc=5",
+      "images": []
+    },
+    {
+      "source": "Google News: AI",
+      "title": "News 12 Investigates: AI s next chapter raises questions about human control - WCTI",
+      "time": "2026-10-16T22:39:18.000Z",
+      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQSUhWOU92dFBjd0tnNUM3U1d6RkxqZDkwMDlwS2ZIOFp4SG5uMng5djlaWUZqbXJNRjF6U2VyTkhoTmR6Zml3NmE1U2pGY0pwc192blN6cHhCaDQyS05Tb3J0WnVGdGhMMDkybkdXT3FSMmM3Z0lVN01nMU1xTUJjU0xyX2RaYUpWX2dqQlR5Y1NxQ2l6c3ZtSEp3Uk8xcmNPYmhadDg1OW9ncnFUUC04YndMUk1HU29LeFAw?oc=5",
+      "images": []
+    },
+    {
+      "source": "Google News: Anthropic",
+      "title": "Anthropic quietly pitches its own AI safety bill to lawmakers, Politico reports - CNA",
+      "time": "2026-10-16T22:37:55.000Z",
+      "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxObVJMNU1GeFZ3RE1iZDZERHBqcUlwQ0E5LUViQnA0ZHd1N01OaVFPbkZnLXg4X0xJSmJ6Mlk4RERBZXNuYjlzbEx0ZlZTbUt0TWlzTGtGZjY4X2ljMWduZU5teUJkb0YwT1BKWEpuXzFadElEaUFvdzF6c1NmS2xsVHQ1UWxWVHhMODNiVVlLc0NGb1h2eERJa01LNU11NFJRV3gxU1F6S1d6d1ozZ25XUlhJNmc1Z3ZzMllURFRqNFBnUQ?oc=5",
+      "images": []
+    },
+    {
+      "source": "Google News: Anthropic",
+      "title": "Anthropic quietly pitches its own AI safety bill to lawmakers, Politico reports - Tacoma News Tribune",
+      "time": "2026-10-16T22:37:00.000Z",
+      "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxOaGw0U1Qtc1BRMFdleXBnd1F5dnJWSERUNzlSSWhjQWFGQy1CSEV4eHBGOWJ3OFc2OFU4UnRQUWpPREU5Vm4wNHVKWGpYZndMVmY2RTMzRUJsZEg4bHBPVFBld0RXRVc3SlBVM0xRSFJyZTdrQjBHanNkSmNBRGxfWHI3Y0VJQQ?oc=5",
+      "images": []
+    },
+    {
+      "source": "Google News: AI",
+      "title": "FAA AI use sparks new reviews into AI safety, workforce shortages - Federal News Network",
+      "time": "2026-10-16T22:35:53.000Z",
+      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPMXV2VnJ0WmZNREpza2VVRFJvLU1YelVxX1pMV2tQbGljcmd3bU15bmtqeUJfejA1eGhpSzBzWnVhdDNkZlpRdDB1VDBVY1BIeVhGSE4wbjdwazR6OTBkdW05Q2o0dHkxNlgzV3BWaDRtc19LVXItN0V5OUFGeTlVVmR5N3o5WTkyODBlb0oyZy00blFSaWtpVHZSdjgxVEZXbFoyZkF6NXVmdldWYzRhTzRiYw?oc=5",
+      "images": []
+    },
+    {
+      "source": "Google News: Anthropic",
+      "title": "EverWind building $10-billion Cape Breton data centre and wind farm for Anthropic's AI assistant Claude - PNI Atlantic News",
+      "time": "2026-10-16T22:31:59.000Z",
+      "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxQOE5Mb3FZZ0E1WXQwNW9SbzZjX0o1aFBLZlRaZ1BNZ0lTREc2bmxPMVdva3ZDSGRWZDdrVmVjUXdydGF4T0JLbHBuczN4MzFzeFh4ZjQ5aXYtMXJIMUtCSzhzWU9aTGczMWxxejhDLTR5OGZGdzRQaWtHcUFkNDR6YUxnNUpHVnhZWE1JU0lIUVBobUpiU2dLUGJldVg3SU5nZWZqNXo4MVJsaktCZnRhV1ZYNTZubnl3LVp0OU5ibm50VHhaVkFqa0pRZ0VuYThUbzZlcVMzOFdpUnlSb1dB?oc=5",
+      "images": []
+    },
+    {
+      "source": "Google News: Anthropic",
+      "title": "Nova Scotia to host massive data centre to power Anthropic's AI assistant Claude - CBC",
+      "time": "2026-10-16T22:28:05.000Z",
+      "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPWnVIOG51MWpiWDNTOTl0Zk5BNXVPV2dQdmJpVFp0SEZIOFZBOGhyMnpYZGFETkdYUWxNdWlXbVpXZ0ltcTJteU56bE5OM1JjZFAwOWQyQ2RiZ2dGR3JmYThGY3oyNGI0QUpWc1RHSGFjYThvQ3ZLYW01NEdsbEY4U0xQMm42d2xLN3U4TnI0VGhKcUtFYnR0dlRWZmlKZk5DcURDdTlLU2YyYTJnOXRkM2stY2pMRmdTQ0FNYUVIc2JUa1NwazhSWTRsZHNoUQ?oc=5",
+      "images": []
+    },
+    {
+      "source": "Google News: Anthropic",
+      "title": "Anthropic Pitches AI Safety Bill to Lawmakers, Politico Says - Bloomberg.com",
+      "time": "2026-10-16T22:25:33.000Z",
+      "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxQak82b0VucUh6RkVJMnY3bURRNjM5aFBBc2JIbzJWR0ViRnY0NE53UXdPZm1rYkhBX2hEZDlHOThiRUcwU01rbVg0SnpRLTVLUEc2Ti1KUHFPT0h1MDVJREl6OWZnOFhzOEdvQ2VnNHNlWmdqMUJheVVrOWlncEZFZHpxWHlJeTNrdXFpbXB4Nmx6em9NOF9nRlJrYmZDRUFEd2Z5R0NZdjREbHp5OHlUWGVtazlHRm5McmhWTDZORGZBRDUzYWhnaDlB?oc=5",
+      "images": []
+    },
+    {
+      "source": "Google News: AI",
+      "title": "“A computer is not going to stop me”: Northern Michigan creators comment on living and working with AI - 9and10News.com",
+      "time": "2026-10-16T22:21:37.000Z",
+      "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxNdFRzT1F4WFR6ZlUwWE5xdkdleU83YzNaUE9FeXFMczlaUVRkOFduYXpmWllLbXBZVVVyeHVCd002WFRvc2VmU25ydEhESExRLTVZd3lfMkxJdG1Jd0J3VDE5c3FsNGNacGxQdkJHWkNiQXpGQ1BHWVF5akh2ZTB1SXdhM2Z5WjZ3QnZEdTZidlRIZnBnSW9QMnZrb1ZDeVFqWThxVVp3WFJWZWVicTl4RDNMeEswaHZJNnVmblZQVHBvWTZTaEtFX2dkdjRpN041UGlCWg?oc=5",
+      "images": []
+    },
+    {
+      "source": "Google News: AI",
+      "title": "Millions of dollars spent on AI-generated political ads as midterms approach - WXLV",
+      "time": "2026-10-16T22:20:56.000Z",
+      "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxQY2p6RENiOVFCM1NrbmFUNi1EWXROYlZOLVZvQjB4LXFId09JTHZKRUE5aXd1OTJ6UkxRWTFwX1VYclM2ZXd2QnBMVnJfNXhLZkl5VVRQT2tRaFZMelE3b2FEcnN2QWtGOVZTS2VsZFowdXF0WmpRQUR2NVRhMXRkZjk1Z3NudEhzWnNVTEpScXFSeWF5T3dNbzdqMDR1U1hFRFh1MjVPQnlzSHBtN2dnTjBNbGZVZ0RfTmpISm1iQXIySHJ4RFJtVExFTmZMdTI5WlBuVEJnOEpzelRUVEFXVlhHbDdnWVE?oc=5",
+      "images": []
+    },
+    {
+      "source": "Google News: AI",
+      "title": "Federal task force assembles to enforce AI safety accords - WORLD News Group",
+      "time": "2026-10-16T22:10:00.000Z",
+      "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQZWkxa2JMM2FfaE4zRU1nMlBmd1ZlWkhXN29WZE1OVTlWeGJ6QWd3dGplQV9GcGNtU3oyRWFfdDl3dzBMM3NjcGNzclNSR1gtSEsxSVZhZ2hTdng0d1J1Uy1rN3dRcWl6V3BiSHFmYjJjOFItLW5MYTNQMTJkejlSc3ZvdHVTNnlxSXozX2FMc1lmS00?oc=5",
+      "images": []
+    },
+    {
+      "source": "Google News: OpenAI",
+      "title": "Replit Dumps Anthropic for OpenAI, Citing Cost Pressures - The Tech Buzz",
+      "time": "2026-10-16T22:06:00.000Z",
+      "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQTF9xUTV1R1BYOXpHUEZtcDBISmJWNlVBTzYtZ3hSYkVDMl9LOHIzQUFPeVFMRk5ybTFDeEFGTlh1d0VDY25LdnRSYmpQckN2RGdUR1hjc0hIVjhhSXoxUXVtTExKd1BWRGlXU3BBQWpKOHZsbFplMFhvOG42R1JXbGQtN2t0NUg2ZmdZdllvRlNNdw?oc=5",
+      "images": []
+    },
+    {
+      "source": "Google News: Anthropic",
+      "title": "Replit Dumps Anthropic for OpenAI, Citing Cost Pressures - The Tech Buzz",
+      "time": "2026-10-16T22:06:00.000Z",
+      "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQTF9xUTV1R1BYOXpHUEZtcDBISmJWNlVBTzYtZ3hSYkVDMl9LOHIzQUFPeVFMRk5ybTFDeEFGTlh1d0VDY25LdnRSYmpQckN2RGdUR1hjc0hIVjhhSXoxUXVtTExKd1BWRGlXU3BBQWpKOHZsbFplMFhvOG42R1JXbGQtN2t0NUg2ZmdZdllvRlNNdw?oc=5",
+      "images": []
+    },
+    {
+      "source": "Google News: AI",
+      "title": "China says it will curb tech exports, including AI, citing national security risks - PBS",
+      "time": "2026-10-16T22:00:29.000Z",
+      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQV1VUdmQwc0xPcG5KT3AxZFJ2dVJTVXNFc3RYc2lUTlA2R2xGeGJ3TjVqRGlpYUt2WUhNNEZDSDZkX1dJYm1INV9TaTI3eVlMM0RIaHh4V1g4U2FLdGJWOGJNRjFia1Q1amNoWUwzamlLWGFDVVhPNlZzbjRoU29YN3V1X2wyM2E5clBsTnp2MGJkSDNjOTFSVWVBd3MtZUZ1Sk1Yb1JGOGhZUlVoQmR3azVzZzU2Z9IBuwFBVV95cUxOSGI4Vm0wMmNIV3ZNY1NqNkRsaG1kTkd1bm1aZ3ZwZkFERU9YQ29Id3Bnc3FOU2NFNHVPbWwxclR4ZlFYY0hYLVNuMW1KbVRnNGdNTXpQODVReFdOaXZMV3E5cGx3ME9Ha25CZ3V3OXF1Zl9KSFhjWldWcHBwbjJDdGFudGJXVTdwY3dEa0JpYU96VEJqdG5hdW5pVmVvaEcxcFZXUTZoSVlpTWFtMTFlOE1YbUtVYVlBZTdV?oc=5",
       "images": []
     },
     {
@@ -124,10 +392,38 @@
       "images": []
     },
     {
+      "source": "Google News: Gemini",
+      "title": "Google launches Gemini 4 Argon, targets complex coding, cybersecurity and scientific research - BusinessLine",
+      "time": "2026-10-16T21:54:37.000Z",
+      "url": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxOanMyZXJXTHRCLUVrV19JSC05dEVYd3c1d2lYYkowRDR5QlJLcmFKWGhyUlNid3I5eXgwTVF3MXN6WmZhS0xST3VOaWx4YlBoTEkzQkJscmpDQkQ0NXFNSWtici1icDFCUHU1Yks1NWc1UGVLY0hQY1gtdkpEa0xzMHAzLTUzV1N0UFd6eHdZS3RYTVZsMWpIc2pfNHdvSkdBRDItOEp1amhvQUxXMXIyTndZZGVhMmFMWXdyVmJydnBza3ExcXFCVkxMNW9jZkRhbXFZVnhKVDRBTjlFYVlmT1AtQ3ktUndpU0VQUTl3b9IB9gFBVV95cUxQNExwV0gwSnZOTFJwREVQNjJSaGpzd2UxQ0hRUldIX25ZWDVPaHZWcXREZ3R2enJubzNMWTdmWmVQbTU3WVUtOUhDNUNVT25WTExRMGNuZmpQZFZRQWV4R3AwTGNRREZUUTVOOVc4Z0hsQk5xc1BIMWNZdXF2alVseDI2N2NYTXVOLTM5bUZCS01NVWh6MGh6bF9kZDF0cEt1aGJuZmljS3gxWlRHWEdDdmxySUw2ajVUazZIR290LWM5dUJma2ZEakFUVl9kdGppcURZeGI0TTZMZUlFMHREeXY0M2pOcUs2eTJVZ0VwSUEwZ0xjWmc?oc=5",
+      "images": []
+    },
+    {
+      "source": "Google News: AI",
+      "title": "USCCB Appoints Charles Camosy to Task Force on Artificial Intelligence - The Catholic University of America",
+      "time": "2026-10-16T21:52:02.000Z",
+      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNdXNIR1dJTEFfUjgxV1FsRldybmktZEpJSUNzSEdyLUxaVzJOUFVQcnFHbXJHNDdBWC1aTzFqQkNhWC1Qa21JM3QyOW50SUhyQ1FHd1pfNkY4ckRNOVNnS2dLWUh2bV9TbFFudFU1WWtkWUd5ZVN2X1lwWWN5S1IzMVBhaU5aOEhMWHJzQl9Rakw4ZUZ2OTIwS2E3SU03MW9ZT013?oc=5",
+      "images": []
+    },
+    {
       "source": "Google News: AI",
       "title": "Orlando mother settles lawsuit with AI company over 14-year-old son’s suicide - WKMG",
       "time": "2026-10-16T21:50:33.000Z",
       "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxONGhRNVZTeFFpQk5FZHlfcDVFSDRqLS1fbThkMFlaWEVUdFY2N3RNZHdlSGpYMjBlVUtONDFEb0gyRGhIZ25WSlBrTDJQWmlCSzEtUzYzX2xaWGdpcGduZTJnNndHWW1SQTUwWDFUdmt5emxXWURpa2JpVzR3N1VvTDV3UVlIN2VGekowMm5VbTROR3NjZkNoQ3ZaWVBPbThHOUw5SVNBeVJ3Wjl3amlZdkgxYnRwRlBMeFdVZWxDNGRhNVNxdy1n?oc=5",
+      "images": []
+    },
+    {
+      "source": "Google News: Anthropic",
+      "title": "EverWind To Build Nova Scotia Data Center, Lease to AI Developer - Bloomberg.com",
+      "time": "2026-10-16T21:49:15.000Z",
+      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQa1pPWXpWN21QcmZGVXVYWnJraXIyYWg5VERPRldFeWhuTnA5NXFPd2xzMGRlOGh6WGNnMDg0NngxMG5LcURnT21sMFZTMl9Zd2RDclc1a3FxM1Y2bUpSUE5kQnFYM285SmtxWVpIRXN3NDB4SEZJSHZBRnEwM1ZKNmlCLXBSVEEydFNXbTA3OHM5NlV0TFp4NkFUV1RUZS15M3FhQnZFVHRmcWcwUmpfSVNtVS0?oc=5",
+      "images": []
+    },
+    {
+      "source": "Google News: OpenAI",
+      "title": "How Itaú is building generative AI for its entire customer base - OpenAI",
+      "time": "2026-10-16T21:46:06.000Z",
+      "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE80N2VrejZPN1lRYmFiSTl4MXdWYnYwN1VZN2N0SWFKeW1lWVFMTmU2WkZ5dzI2SmF4VWM3MnhJX09LU2RvSy00YlA3OE1SWUZEX01ya1gwOA?oc=5",
       "images": []
     },
     {
@@ -142,6 +438,13 @@
       "title": "Anthropic quietly pitches its own AI safety bill to lawmakers - Politico",
       "time": "2026-10-16T21:45:00.000Z",
       "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE0ydWVrbHdHeGNraEdTSHQ5eExwZ2lLRUU1U1BoVFJUTWNLenpWTXJOMHNnWnhaa0thQXlRbk1KdEliVVVGUEJXZWwtcWtUZE9Ielo2X05DaHJKSmJpd05rRl9vMWdQQUE4ZnVRRFBLQ3hlcm9FNG12bg?oc=5",
+      "images": []
+    },
+    {
+      "source": "Google News: AI",
+      "title": "Inside a global AI company built in rapidly-growing India - Marketplace.org",
+      "time": "2026-10-16T21:45:00.000Z",
+      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPSUM2WWZFbUg0UElSSkZVMnQtZGlpWnh2Y0FSWUk1VlJ2UXVjcUxfYklTX0dXR3lPakRXSF9sa3hsejQwWlVDTmx5enBGamdlTlF1QU1xandQOGxYYjViMnlwMXNNeTdSSHVocU5GcVE2a0swWS1QdXJIRU5KdzNjM1Naa1FFbHRXeXNkSXBPaUExc3lZS3lkaTdfazVnWXgtXzBJ?oc=5",
       "images": []
     },
     {
@@ -152,13 +455,6 @@
       "images": []
     },
     {
-      "source": "Google News: Anthropic",
-      "title": "Claude Fable 5.5: A Launch Video Nobody Can Open, and a Blender Demo You Cannot Check - OrcaRouter",
-      "time": "2026-10-16T21:42:06.000Z",
-      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBKRlBQSExpenFwS2ZMT3R1ei0xZ1RMX0xhdTlwdEVYbnJqUHBMWnhhX0MwV0VSM3FqOWdRLVEwY2F6LWlFcVd3elVqRng5S3NDQ1h1b3gtdndzZm1FLXBYWmktWkd0LUJHZ1FWemdVRDM?oc=5",
-      "images": []
-    },
-    {
       "source": "Google News: AI",
       "title": "Super Intelligence Force looking into Ai risks - ABC Columbia",
       "time": "2026-10-16T21:41:42.000Z",
@@ -166,10 +462,10 @@
       "images": []
     },
     {
-      "source": "Google News: Anthropic",
-      "title": "Replit ends partnership with Anthropic, citing cost and performance; shifts focus to OpenAI. - Pluang",
-      "time": "2026-10-16T21:38:08.000Z",
-      "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPWllEZy1KSzJfbWRrOGdQY0diTVUzYnFaSlRiVG9UWVJJNGozdmFzRDVHODNWaGNmc0I5M05jYkVyYWdFRklPYWctaEh0eHFKVzhvMEdIdk9xLUNEOXJaRnJFRmRzWVUzOV9FNjhVRlI5Ym82bUpXdXl0THU5SUhfOUN3ZElsWkNWaU9pUGtSNzc2Q0o2ekE?oc=5",
+      "source": "Google News: AI",
+      "title": "Concern for humanity, relationships drives Swiss religious leaders’ AI guidelines - The Pillar",
+      "time": "2026-10-16T21:38:35.000Z",
+      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE9SNjVxa3MyWGpaWTFJSmQ4OXRxM0FibjFmWmxBY05lOGlYRWFyamtnVGh3TjdVbDhILW5vZVFiWWhtV1dCZmR4c2NIWVQ3V2xIbEdxMm9QcW41WGpPSGhOTWpBbFJEMzFnM1JiRnNMRTJCZFVqMVE?oc=5",
       "images": []
     },
     {
@@ -187,24 +483,24 @@
       "images": []
     },
     {
-      "source": "Google News: Gemini",
-      "title": "ChatGPT vs Gemini vs Perplexity: AI News Accuracy - tech-insider.org",
-      "time": "2026-10-16T21:30:10.000Z",
-      "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQbndjdTZKa19LclRhSEIzaFNuNDFtVmRnRnNyMmRxY3FOVEdHWi1QMjRZWkJKX3A2VTNhUnI0OEJDXzVfczhEYkI2OEViSzdpT2pZQzNmRGdHX1ozeWFhZTl5RzhpMVBxdUljcWdBeF90UkxuQk5TMDJHZkh2MnVKSUhhQ21JUQ?oc=5",
+      "source": "Google News: OpenAI",
+      "title": "Bringing GPT-Rosalind to academic research labs - OpenAI",
+      "time": "2026-10-16T21:33:46.000Z",
+      "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE8wUFV5NmNLZWdiR0lTN3BVSkxNbFJIQ1NCTkVHQUgxVWN1M0JqR21aQWduaDVRckFSaGljNEFYNXdScVExUndQbk9ILWNUQ2djNFFkM3lEVWxWV3A2NDVReC1NTlZvYm9sR29nR2ltTGY2bGZtOWNfRnZn?oc=5",
       "images": []
     },
     {
       "source": "Google News: AI",
-      "title": "Carroll Schools has an AI policy for students, families and staff. Here’s what it says. - Baltimore Sun",
-      "time": "2026-10-16T21:29:39.000Z",
-      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPTlpwaVdZb0NNZ2JkNGFFWFVqZGJtM2ZMZFNmLUkwaWhsbnlxLUxaaGw3UXhOSXJjRGJrMEJQQ2lFaENtNTBoeDlBdVN2dmFKQ3BCRWgxVG1iYktlYWVQZ1J4M3llWU5VaHZXQjQ3YlcwdnRmWWRtQkxHeldXVEFVNlZSNDNIMl96S0M0aG1xWkZwTTFlUWxOOA?oc=5",
+      "title": "Ukraine’s Attacks on Russian Data Centers Lay Bare a Global Risk to AI - Council on Foreign Relations",
+      "time": "2026-10-16T21:31:50.000Z",
+      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNN005dVJpNmNzRWtTVHp6eXhfZElHZG9wYW50Q1FoXzg5aFRib3UzcWQ0SjZiQ0Vabm5RcldPZzhGWHRfejA4ZXB1cUFLVDNkOFhsQm9QYnhWbUF0NHd4X2wySE1zOGpBVHFqWjlfS0pUVm5ON2l2bkFBS2lkUF9SOHFSeHVkdE5QSUtXYzUzXzFTZWEzTFkzWGRFNU53MVk?oc=5",
       "images": []
     },
     {
-      "source": "Google News: Anthropic",
-      "title": "Nova Scotia to host massive data centre to power Anthropic's AI assistant Claude - CBC",
-      "time": "2026-10-16T21:26:34.000Z",
-      "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPWnVIOG51MWpiWDNTOTl0Zk5BNXVPV2dQdmJpVFp0SEZIOFZBOGhyMnpYZGFETkdYUWxNdWlXbVpXZ0ltcTJteU56bE5OM1JjZFAwOWQyQ2RiZ2dGR3JmYThGY3oyNGI0QUpWc1RHSGFjYThvQ3ZLYW01NEdsbEY4U0xQMm42d2xLN3U4TnI0VGhKcUtFYnR0dlRWZmlKZk5DcURDdTlLU2YyYTJnOXRkM2stY2pMRmdTQ0FNYUVIc2JUa1NwazhSWTRsZHNoUQ?oc=5",
+      "source": "Google News: Gemini",
+      "title": "ChatGPT vs Gemini vs Perplexity: AI News Accuracy - tech-insider.org",
+      "time": "2026-10-16T21:30:10.000Z",
+      "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQbndjdTZKa19LclRhSEIzaFNuNDFtVmRnRnNyMmRxY3FOVEdHWi1QMjRZWkJKX3A2VTNhUnI0OEJDXzVfczhEYkI2OEViSzdpT2pZQzNmRGdHX1ozeWFhZTl5RzhpMVBxdUljcWdBeF90UkxuQk5TMDJHZkh2MnVKSUhhQ21JUQ?oc=5",
       "images": []
     },
     {
@@ -219,13 +515,6 @@
       "title": "Anthropic Gives AI Safety Evaluators Insider Access - BankInfoSecurity",
       "time": "2026-10-16T21:23:39.000Z",
       "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPanJhWUFUeTZScjEtMlNWWXVJS0wzdkZuMUZDWGJHaWh1NlR2X3pzNXVEZzdlX2JJZnRULXFXSWt1SFJ4amUtazR5c1h4QmZUeGFhdkt1RFNmT1o4aERJMi1ZeTd6R3dPcXlaWEVjRkRRblgyWnpXOE9ZbzdQN29WUHBhRTFiSkkwaFZoS0FOQ2dkOW5sOEg4?oc=5",
-      "images": []
-    },
-    {
-      "source": "Google News: AI",
-      "title": "How are countries evaluating AI models? - Brookings",
-      "time": "2026-10-16T21:23:24.000Z",
-      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1HQWM0UGhfM19WRHh5MjFYbjRpNlA5Z2JCVTVrQlJRZG1va0l1V05SUUdLQ09TdWVEMUpPd18ySjRRc3czVFdXNDU4U3ZWXzVfc01qbkI3REdnTFB6VVdTek5GMG9HZjR4d2F0M01BR2NwLVcwak9VeWl6ejRpNGM?oc=5",
       "images": []
     },
     {
@@ -264,10 +553,24 @@
       "images": []
     },
     {
+      "source": "Google News: AI",
+      "title": "New Jersey Deputy Attorney General Brian Fitzgerald charged with using AI to create child pornography - 6abc Philadelphia",
+      "time": "2026-10-16T21:13:50.000Z",
+      "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxQS2VjcVFtUXZQRjc0NjVCWElYV2JsbDd3d0lySnIyZE1fOFNTV2RTelFtOUEtUDl2SjgtenNmNVFGN0tobkc5anY3dXotVTQzbkxvSWIxYjlwUlFfQnhJOHlzSUthS3BDUzZ4dThTQzEwZ29laWpVU3BMMk4xczNiTTFvNXh5RklFNDBPTGE4VEtSdnp1blJsbzNnMTF2Yk1NZkt2eWVmVi11dldleGZrUWFRQkRvWnN2NnJmbEF2bWZRSUtvVllaYzItSzZpQdIB0wFBVV95cUxQRWV6VGJ1UlZsSHJQODdFaGxKMVN3OGFmZTVHejhsOXhvd1ZvdlJfbzNGTnBPRVhWWXBlZC1WcVhYSGlfeGRIaTk0ZzJpTjctUTJuMEV3Z3d5M3JQOEZjc2ZTb1pyTDZHU1djRW9CV0xpSWtSclFIZk9KVGppcDJaZWIzWUtNeG5kUHdGczRGd0U0T3RmRGlIaFZ3QVdqOGtnLTdoNzBOdjFqaHhsY1NFWlVmMDE0TDZXZHNYRWNaT1hON056Q0gtcGtSR21hQmExOWt3?oc=5",
+      "images": []
+    },
+    {
       "source": "Google News: OpenAI",
       "title": "Ticker: States sue AI giant OpenAI; Addiction recovery boost - Boston Herald",
       "time": "2026-10-16T21:12:45.000Z",
       "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOM1lCMDU5M1JjbnpYSDhnWjB3dllFZW9TNVNMUE9vTG11Y05xT3N6cU9UZHNRMF9lYnJxVkxnVFVLWVVDclhPdTVDNW5XenZCVlJLV0duNEtPdDIxSXQxZXA4bER4Z1V0cDY2SUZZYkhCR2syd1B3VTJheWxCSDg0N3BjcDVRQkpJMDFrZE5qeUZDX2syNkxrZWc4VlRyV2Z2?oc=5",
+      "images": []
+    },
+    {
+      "source": "Google News: Anthropic",
+      "title": "Claude Could Lead 80-90% of Anthropic’s Model Work in 2027 - FourWeekMBA",
+      "time": "2026-10-16T21:09:51.000Z",
+      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOUS1mUTRFby1ibzhydER4YVB4RTBGMHV5cGlVZFVtNUN3dmJ3ZzFOcXFBWjZ3UFlVYWtCTEZRSHFUZDFkbGhIeFVOdUhQTmowdk9QbGJTamFQWmJXSURyWEVTNDN0eTJ2ajNBWnpZRDgxQW5OdFp6N2NlVGFCR1A2VkVUVWFhUHFaWDJqaA?oc=5",
       "images": []
     },
     {
@@ -278,10 +581,10 @@
       "images": []
     },
     {
-      "source": "Google News: AI",
-      "title": "How my son showed me AI is now the world’s biggest lose-lose bet - AFR",
-      "time": "2026-10-16T21:06:48.000Z",
-      "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPeFhuU3NXX2J1Q0xWaHo4WldKbHg5Sll5bElqbERYVzcxY0U3UXFlWHhTbzFCOXItaXd1d2hGcVp1QjM5OFVNZjhhdlNhR2JKMDBvYklQS1k3LWxYY0JRenFyOV94VE9QYVhuM25Cb1RpeGFsTFN5UmY5RVBoZU5hN3dKTUh4T2twTDA1MV9BU0g5bVFYY3ZlRUVKYmw?oc=5",
+      "source": "Google News: Anthropic",
+      "title": "Anthropic's CJ Avilla: Single AI Agents Get Lazy, Lie, and Lose the Plot - BigGo Finance",
+      "time": "2026-10-16T21:08:00.000Z",
+      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5oRUhGb1Q5U2dkeHUyc2ZWSDlCbEJmaW44bGtvMEdXLVFLMXBNWHJWc1NlLUpoaGw3enNWX0Mxamc1Rk1NNURua1ZfMV82cU5wWGdjMW11WGpXb2s?oc=5",
       "images": []
     },
     {
@@ -329,13 +632,6 @@
       "images": []
     },
     {
-      "source": "Google News: Anthropic",
-      "title": "Claude Mythos 5 vs GLM 5.5: One Model Does Not Exist - OrcaRouter",
-      "time": "2026-10-16T20:52:43.000Z",
-      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE16STNuR0hsd1BkUjg0SmEwR0xYRzBPWnJEREVzang1WnpGa1NacFctVWdWTVM5YTV2ZVRuZjQydnJSMVRidDk5cFZyX3VyVy16MVJ6dktpbEJianI1aUUzZEdKZWFDMXVh?oc=5",
-      "images": []
-    },
-    {
       "source": "Google News: AI",
       "title": "DOE Releases Genesis Agent Skills to Support AI-Driven Scientific Research - ExecutiveGov",
       "time": "2026-10-16T20:52:42.000Z",
@@ -347,13 +643,6 @@
       "title": "Reflection AI CEO confronts the risks of artificial intelligence: ‘It certainly worries me’ - Fox Business",
       "time": "2026-10-16T20:51:59.000Z",
       "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1ES1BrYUpvT2RSeVFPVzZwQWo1OE1BZDRLbGltU2l1M3VDYjlad01ZNWtpdVlvLUpQMFJOSWN4T1ZZa0dwNDlfMXF5WEY5ZnZFTkUtU2V3QjNNd00?oc=5",
-      "images": []
-    },
-    {
-      "source": "Google News: Anthropic",
-      "title": "Claude Mythos 5 vs Gemini 4 Argon: Gated vs GA at $2 - OrcaRouter",
-      "time": "2026-10-16T20:51:19.000Z",
-      "url": "https://news.google.com/rss/articles/CBMickFVX3lxTFBuaTB0My1KU3RwWXlNWEZGM2lCSlA0WXZzZnBlUnJHWXAyYnJkc2gyTWVmX0xQejJmTEJlb0lqc1VTTkFwY0NQLVlsRFhGbWlBSjg3TmR4WUhQRUU4T1ltMHVjQWFiRlJJTnhNNnQ5c010dw?oc=5",
       "images": []
     },
     {
@@ -378,10 +667,24 @@
       "images": []
     },
     {
-      "source": "Google News: OpenAI",
-      "title": "AI Companies Play Cat-and-Mouse With Secret-Stealing Spies - WSJ",
-      "time": "2026-10-16T20:42:00.000Z",
-      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNTkJnRW1qeWM1bnB2alVtdjRzT1dkVGlaamNDSzlSdHhBODN2c2ZSSFhXck1oN1NscXdHT3FIZ1Z2WUIza2dYWGRLWjA2emZURlR6R2NWWHlEby1taTBNZmFLdWQ5dTQ1N3ZxMlRjanNjYzB4eUFBMTFqNllSbHlDaWttejZEaUV6c2FvQjBrVW1xTXhvcEQ4RU56QQ?oc=5",
+      "source": "Google News: AI",
+      "title": "Thematic AI ETFs: What Separates CHAT & THNQ - ETF Database",
+      "time": "2026-10-16T20:46:47.000Z",
+      "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOZElVMEVNZVoyYjN4ZWl4NURVaGdVdzJkd1doR1d0VF9zdEZXMllqTjVrWjJHN3VUenNSczRLTHhpOTFjQzMwZjN1VThuSW42LTBXNkhOandMQ0VaRDdBS0tvYm1VV2djZmtweUNZekFkWUp5SVhLM2JHbUI1cjlHYXcta2lHWjEteE1pYzJOQTExeS1BTkE?oc=5",
+      "images": []
+    },
+    {
+      "source": "Google News: AI",
+      "title": "Our AI Agent Picked Render Over Railway and Vercel. I’d Barely Heard of It. That’s How You Get Leads in The Agent Age. - saastr.com",
+      "time": "2026-10-16T20:43:51.000Z",
+      "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxOcU5WenFFUEtZa3ptdmpTbDBncHp3OVhDM3lEVGQ4dWJWcFJ2M1ltN2d5LU1LdHlrSzVSc2tYSG1KZkUydW11bDd0YWhVUHlNZmpxaEZqRlp3Rl9SYjVtX3N1UGlPYnA0RVhJWkFJQ3pvSWY1TzFfc2h5cDhmTi14QmMzdVl3YnlOd1Y0enJNb1JyWnVqSExQTnpNN2Rxc3E5MFNHZDJ2TnB5OFE1Y3pWY2Nva1hyWXRRS2RtQWc4aUQzU0NWX2wwVC1xWkN3bklzdnc?oc=5",
+      "images": []
+    },
+    {
+      "source": "Google News: AI",
+      "title": "Will AI-powered autonomous weapons obey the laws of war? - DW.com",
+      "time": "2026-10-16T20:42:48.000Z",
+      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQNUtIcEN6ckhqUFlrTmVlLWkwTVlGVmNDYXhmbk41bGVGamhHcUs1RU0zSEpfRlRuanJlX0VrWFREYVlUeGpmNDJfVmEwQ1J5NjlwQXBEc3JpWjZFSzBpT2YxdXByQU9VdUNleTFGcEpSVURBMDFBSlgzaVpLU2Mtb2pLdlEweFhJUWd1ZUo0TUJHYU9HMWlVZw?oc=5",
       "images": []
     },
     {
@@ -392,10 +695,10 @@
       "images": []
     },
     {
-      "source": "Google News: Gemini",
-      "title": "Gemini 4 Argon agents defeat Minecraft’s Ender Dragon in 27 hours - Crypto Briefing",
-      "time": "2026-10-16T20:24:21.000Z",
-      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5MVFk4SXd2elk2ajl5Yms3Q29aTjdZTm85UWtjV3dNWjhFZzNlLTNTcUIxaWVQQi1Kb3dmUmlhVzEzbWRlQU5BdDVrNEVyWl92RzV5LXFPWWZKWUhyV1YyMV9KeV95ZWxn?oc=5",
+      "source": "Google News: Anthropic",
+      "title": "Wall Street Sees an AI Warning, but Wedbush Disagrees - TradingView",
+      "time": "2026-10-16T20:28:25.000Z",
+      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQNEM3MnpqREwxVjkwdThPLUE4bDhkclZQUk50R2FzWWEwWHZITUVITlNPRDc4LWRuWEViUmdlQ0E3eDdHTHhUMURBSHU0cGtGOVBLQTM2Mlctck9ZUHFMQmJSZUhFMXROMVd6QjA3U0tVUFBlV2d0Z1hRN09CWGJQeGhTc1c4Q3M1RVF2aDZiVGlVR2ViSjNMaVNUbnNFOTMta2xjNGRZaG1XdmtCUzdOZEJn?oc=5",
       "images": []
     },
     {
@@ -437,6 +740,20 @@
     },
     {
       "source": "Google News: AI",
+      "title": "Carroll Schools has an AI policy for students, families and staff. Here’s what it says. - Capital Gazette",
+      "time": "2026-10-16T20:18:16.000Z",
+      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOR0tiQU14aEY5OGNLTFA5RkZHeXlRVHdac0dEU09vTE5BZnR6WHhzQzBkekNZSk9OX3JjUGlxNi1VYTlQdUdhTDBCQVRzTjNsZnFqbC1saWo0SzB5cDZMcWNyN3RZWTdQZDdnQlk0THV4VTZnZEx5Y3ZsOUpBQWtrYWpQVlhGTmJHM0JoSG16cjNFMzl3OVdnZVpNWQ?oc=5",
+      "images": []
+    },
+    {
+      "source": "Google News: AI",
+      "title": "Terry Tao Is on the Front Lines of the Debate Over AI and the Future of Math - The New York Times",
+      "time": "2026-10-16T20:15:45.000Z",
+      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE5obDJaUW0zTDU0Q2RqRGd6QlRabDFENjNiMTJtR0ZLOXkycWhXNjVlT2Vxc1hFRWhacTd6MEFyM01fU1c5UmNxME82N1VVVDFCWnBKWVZ0bDdvVXRZLXFXaldhNF83RG1keHVIV04xVQ?oc=5",
+      "images": []
+    },
+    {
+      "source": "Google News: AI",
       "title": "Danaher, Nvidia Combine Lab Instrumentation and AI to Advance Autonomous Science - Genetic Engineering and Biotechnology News",
       "time": "2026-10-16T20:13:04.000Z",
       "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxQSzlCdDN2Rjd5eWZmUmdnU1hIUTg0ZFhPQlNZeXpnOEJJRGJ2c0d4NmhuT25ZWDNIZUdiM3BhNkpGc2J2Q0lQUHhhcmVUc21NX1pDVkR4ZXhiUVdlRjR6ZjNxQlpRT25iY253S3RyOFhkcGZPOWMtZEJWWFpFVW1YVXhwbGVmSGYtTkpSTkZzaG1iMWZqWDV5bzhBZ1BxT2xMT2RjbWdrckIzcGM3U0pJWk9KamVvamtQWHFVSzdsR1BwUWZTYlRINExTTG9CZmIyZTNTbw?oc=5",
@@ -445,7 +762,7 @@
     {
       "source": "Google News: Anthropic",
       "title": "Fake Claude, ChatGPT Attacks Surge, Putting Developers at Risk - Dark Reading",
-      "time": "2026-10-16T20:09:28.000Z",
+      "time": "2026-10-16T20:11:20.000Z",
       "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOLXRGZzIzMlNBLWhUaWtkbjk3RUdBbnl2aXlCbkczcnZ0Ykh5Z2tqcW5ybC1qWGh3eFFyMTlOdktBcTRVbjkyMm4zRDJFWlZLLWZaU281dmpSSkQwQ2FYdUxXYkotOGtaMF9jMnJ3VGFqQmVUdWVnT25pcURmNjhSLTd0Z3JLejBXV01CdmZRbzhkUm5sTmQ4?oc=5",
       "images": []
     },
@@ -468,6 +785,13 @@
       "title": "I Tested Siri and Gemini's Inbox-Digging Feature for a Week. The Winner Surprised Me. - PCMag",
       "time": "2026-10-16T19:57:12.000Z",
       "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQakloWlNJN0xWVkFFaU5OOGdaOFZ2eUt1SnhFb3VmQU9xei1VWE1RQ05SSnlkNDdhcnJjRG93b1lsYkpYNndWOXA0b19POENNeVNMb0VKVE5sU2ZLYkxCal9ncWVEZ2Z0ZGFiaWVYcGpnUzV5aTZ6OUd1ZEZROTJMaU9sN28?oc=5",
+      "images": []
+    },
+    {
+      "source": "Google News: OpenAI",
+      "title": "OpenAI Names Uday Ruddarraju Head Of Data Centres & Compute - BW Marketing World",
+      "time": "2026-10-16T19:52:30.000Z",
+      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQRjU1WDh0czRNejFRRmVmeVppSFlRQVdyWUpULXZkYWJvWFlpeXd3VWZWMzRtcXJWNXMyaDdzLXR0bjZpTkI2Mnl3a0lGOW9SRFl4U3JfVi1PRU9HSlZIRk1ObnBJZm5rV3ZLRkt1QVNhZ3Y3X21DRXVMb2YtS1M1Zm9LMEY0MmFTQWhoZTYtWHNVdVNlUmF1c015Y3hkTHNqMjE3dmR6N1o?oc=5",
       "images": []
     },
     {
@@ -494,8 +818,15 @@
     {
       "source": "Google News: AI",
       "title": "Will AI-powered autonomous weapons obey the laws of war? - DW.com",
-      "time": "2026-10-16T19:48:21.000Z",
-      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPS2V4cU5TZ04tQndPYmpmTEtaV3BDOFRNMEIxRGdIaU9jaWE4ZG82T2JyWk9RcGJLVGthckczT1IydEtkRFBWOWg0OFpENmJBZWtUUlp0TGhPTHc1aGNjQUt1NGRBd0pHMlFfVktLZ2RLS3NRVnEtTTN3WjA5ZWg5UW5VWWhFN0I0ZXplelAyNl9Vd3BOal9n?oc=5",
+      "time": "2026-10-16T19:48:09.000Z",
+      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNUU1pSFNDTXgyQ05NNkRsQlQyT0JhaWV3UlpYUTNJTHRKanQzZDlpbDM5bG9uVzFPZ3c3U1M1cGZSellzcDgtV2VLdnBoaG8yTXU2bV9aNmwwNWpyVWxjOEFOWWdoS2gwcDlST1BhanBPV281NHQzOU94SlVGOURkbFJqTzRyU3ZsWE1TcUh3VGJ3NUdKY01Z?oc=5",
+      "images": []
+    },
+    {
+      "source": "Google News: AI",
+      "title": "AI decision-support systems are often seen as just battlefield tools, but they are so much more - Federal News Network",
+      "time": "2026-10-16T19:43:22.000Z",
+      "url": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxNQkV1S2NMemxJQUZuRmIwX1JCVGJRZ1Q5a003VDlEdGY0QU0wc0piaWxMWEl1Vy1fZTVack5sbk01dnRTTnVvbGQyUzlJeUFoWkVvUi1KS282d2FCRFNRNHliMVhkX2RMOEx1VXBXTDF4UjBpSl92eTU2aVNZa2JCQ2x0TWFCbkpIZWNJNW9rV3h4UC02SFY4VENWU2YwMGVmeEhjQmxjcUx6d2lVbnlybVlKSW1yTnNwRDJZUHV5RUVUc1d2R3pKOVozOVpTTHA2X19nbmQ3ZEg0MUpQOFlLWDRkQVZJSzVqODVtbi1zMA?oc=5",
       "images": []
     },
     {
@@ -503,6 +834,13 @@
       "title": "Siri vs. Gemini: Who Wins the Mobile AI Battle? - PCMag Australia",
       "time": "2026-10-16T19:42:38.000Z",
       "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQOTNtNG41RkRVQktuUlY0NFc2enhpWTRETFUwelhIc3JQWHU0NW55UzZZWFktTnR0cml3ZVlfMDJDRUl5OXEzQ2hPQ050TnpLTk9rMkhHeHhtZEVRR2l3RGJzT055VWRucG05Y05TbFN3allnUF8xR1Jlcll1ajhORg?oc=5",
+      "images": []
+    },
+    {
+      "source": "Google News: OpenAI",
+      "title": "Lawsuit alleges OpenAI 'stole' children's user data - Mashable",
+      "time": "2026-10-16T19:41:15.000Z",
+      "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE5NRFpvc2tkZzhkUl9ZSmwxZlVsdERqSWQ4cUI0UjV6bU5FR2IzTWZCdXNVeDFNYkE2Yy1VWEx6aEdpMndRTWVtWGZLLVNnNmlvMXpmX3cyWDlhSG9rZk0tYmhzbjdwZw?oc=5",
       "images": []
     },
     {
@@ -514,16 +852,9 @@
     },
     {
       "source": "Google News: Anthropic",
-      "title": "Accenture Bets Big On Claude, Then Limits AI Spending - Forbes",
+      "title": "Accenture Clarifies Claude Spending Limits As AI Cost Questions Grow - Forbes",
       "time": "2026-10-16T19:38:40.000Z",
       "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPYldGejVKbWFaVnhCVDhhNDVrZEw3X25kVkhvVmxOSVRuT1N2SjkxMmxGNmt4YVVRLUx5MzM0anEwSGtzejA5cEZUdHZ6QnctbVB0QUJOa3VjcTYzcXU2Wkpub3RMTVNwcmtDQUVGLVlMZUVwZUdFRFFPQkhGRzJMRE02NmRCTzZKaGNNMzdFQVMtSm9zYkZ1cXpxR2VGY05qSGY3Mk5oOGpSQQ?oc=5",
-      "images": []
-    },
-    {
-      "source": "Google News: AI",
-      "title": "AI decision-support systems are often seen as just battlefield tools, but they are so much more - Federal News Network",
-      "time": "2026-10-16T19:38:22.000Z",
-      "url": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxNQkV1S2NMemxJQUZuRmIwX1JCVGJRZ1Q5a003VDlEdGY0QU0wc0piaWxMWEl1Vy1fZTVack5sbk01dnRTTnVvbGQyUzlJeUFoWkVvUi1KS282d2FCRFNRNHliMVhkX2RMOEx1VXBXTDF4UjBpSl92eTU2aVNZa2JCQ2x0TWFCbkpIZWNJNW9rV3h4UC02SFY4VENWU2YwMGVmeEhjQmxjcUx6d2lVbnlybVlKSW1yTnNwRDJZUHV5RUVUc1d2R3pKOVozOVpTTHA2X19nbmQ3ZEg0MUpQOFlLWDRkQVZJSzVqODVtbi1zMA?oc=5",
       "images": []
     },
     {
@@ -555,6 +886,13 @@
       "images": []
     },
     {
+      "source": "Google News: AI",
+      "title": "Beyond the Prompt: St. John’s Students Share AI Lessons with Local High School Students - St. John's University",
+      "time": "2026-10-16T19:27:39.000Z",
+      "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNR1JBS3ZMZTJ5blhkWS0zdEZkRWt3Q3lMU1B2cEFOZ0lmMGE0eTZ4eDRBaFJoV1V0eERJTGZhRGgyMW5CaGRva0pJOEVNUEU2S2k3ajViS0ZvX3M2cnV5ZVVGM0FsVzhjdFdjZTU3VDdsVDRRcnZKTTBtWHB6ek1VbFpSWWJxWGVlNXdTRThNTnBCd3JNRi1qM0x6LWR1OUpJcnlnQjUzWlpURkNzMzNfZkdkVEJSUFkycjROWTZtYVlzTXpL?oc=5",
+      "images": []
+    },
+    {
       "source": "Google News: Gemini",
       "title": "AI Visibility Index: Automotive Movers and Leaders - eMarketer",
       "time": "2026-10-16T19:27:00.000Z",
@@ -576,10 +914,10 @@
       "images": []
     },
     {
-      "source": "Google News: Anthropic",
-      "title": "Anthropic in Discussions With NYC Comptroller After IPO Letter - Bloomberg.com",
-      "time": "2026-10-16T19:20:58.000Z",
-      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOUDNwaTg5bENnN0V3Um1pdXFMNDFZOTJPWTZtRk1xOV8wdWowa1hMakRLZWVOd3o5YW50MnMydDhKYWRtSzJvYlR3dExyWjJfMlJtTnkwN1o4MThLY04xQlF5MVlMQzB5WU9felhGZVRDTjdxUVF0TlJ4R1N0N2dVQkpRSjI1djlTbFg0bVRrVF9CQkdlZFowS3dUaUxGV290S1g0dVhJM0ttdGNHbWdWUXczZw?oc=5",
+      "source": "Google News: Gemini",
+      "title": "Google Adds 60-Second Videos and Quiz Formats to Gemini Notebook - Technobezz",
+      "time": "2026-10-16T19:19:45.000Z",
+      "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE9Zb3VYVUtnZXBsVWtrZ3lublhlVjFFai1rQWxOUzFaYURXYnk1NFl2dEFQRmxoZ3BQT2ZuNkJqSEJHcHpmOHFXNEpNdC0yLV8yYkUxakxMOVBuMmdFOE1OZjQxVFJwdnBadHFtS0xES0hxaEVoTTRqMURnRE5WZw?oc=5",
       "images": []
     },
     {
@@ -604,20 +942,6 @@
       "images": []
     },
     {
-      "source": "Google News: Gemini",
-      "title": "Google Opens Gemini 4 Argon To The Public: 5 Things Nigerians Can Do With It - Tech Build Africa",
-      "time": "2026-10-16T19:17:18.000Z",
-      "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE5HNm40Qld2MnlHSXk2X0k1TXlxUkdjRHdDV0FYYUI3SUdTR0RXc1lfV28yaU90S01rZlFTMEZFbV9fOVFRaWpGN2QzbzZ1WmgxaVJCWGNFYVlwb19rYW5OeUNwYUlIMzE5YjZxX0hiMmlOelNiU2RrUGJ4Z1o3dw?oc=5",
-      "images": []
-    },
-    {
-      "source": "Google News: Gemini",
-      "title": "Google Adds 60-Second Videos and Quiz Formats to Gemini Notebook - Technobezz",
-      "time": "2026-10-16T19:15:42.000Z",
-      "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE9Zb3VYVUtnZXBsVWtrZ3lublhlVjFFai1rQWxOUzFaYURXYnk1NFl2dEFQRmxoZ3BQT2ZuNkJqSEJHcHpmOHFXNEpNdC0yLV8yYkUxakxMOVBuMmdFOE1OZjQxVFJwdnBadHFtS0xES0hxaEVoTTRqMURnRE5WZw?oc=5",
-      "images": []
-    },
-    {
       "source": "Google News: AI",
       "title": "UA Little Rock’s Nitin Agarwal Shares Expertise on how Social Media Shapes What We Believe | Newswise - Newswise",
       "time": "2026-10-16T19:15:00.000Z",
@@ -626,7 +950,7 @@
     },
     {
       "source": "Google News: OpenAI",
-      "title": "OpenAI Model Helped Itself to Testnet ETH to Finish a Coding Task - Yahoo Tech",
+      "title": "OpenAI Model Helped Itself to Testnet ETH Without Permission - Yahoo Tech",
       "time": "2026-10-16T19:13:41.000Z",
       "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOSkZwdFpBYUFDbGVPVmIxN1lIOWR1VWhnSTNEX09VTmRFVWZBQTBEYnR3NnRvSy1yR1JrRTk0OHRhQmlkRVB5eUo1XzFQUHkzNmd4TFNpUG5hdUkzRmQxNTRSN2VMVUVTLXVBZkRpVGR4ZjhqVk8xZ000ZkZVX0J1TF9xanJGUDNldWIwV0JZTGNxZk91ay1V?oc=5",
       "images": []
@@ -643,6 +967,13 @@
       "title": "Invisible ink and ‘dead drops’: How AI is changing espionage - NBC News",
       "time": "2026-10-16T19:11:48.000Z",
       "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQQnNRV2dVdE1XQjgxMmtmVWtkUS1CdzBtMHdTdF9qVWdhWFZ4MWVmMV9selFXNnRFT0R6ZkV2ZjJ2c2xFOWhpS3VQdVQ2QmR3OGx4aFkzSEswNVEyeDdveGpQTkhlMWQ2TjhLN2M0a0VyQkw4WWlKOEJiYXN5TEF4Q0xuZ2xKbmZ5a1g3MVdHZHZldnhRNmhpRUxqNkpuNzhrUFlmZTFRaHppaEFy?oc=5",
+      "images": []
+    },
+    {
+      "source": "Google News: Anthropic",
+      "title": "AI Models Could ‘Self-Replicate’ Without Data Center Access, Anthropic Warns - The National Interest",
+      "time": "2026-10-16T19:08:47.000Z",
+      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNeFkzdmpzZF81VVhtd255WWVzdG41Ylo2bG1kVGplMEYyOWM1d1FHT3YxdEVvb0RINTdIWEl4bU1Pdjk3ZkFVSkkwejM2SXN0cU10bGNMbDdsZDNjLUhPVzBwOURNNHdONmM4RzJBbDE1RGxKcDFmdEFMVjMtdW1vY2xqZERvZmJTeXZlN0tNV1AzaXJsbGg0aUhsQ2RobF9hOGs2VHIzdzdrUE4wTFVpOXZNck9TSlk?oc=5",
       "images": []
     },
     {
@@ -668,23 +999,16 @@
     },
     {
       "source": "Google News: OpenAI",
-      "title": "States Sue OpenAI, Saying its Popular Chatbot is Hurting Children and Deceiving Adults - Broadband Breakfast",
-      "time": "2026-10-16T19:06:42.000Z",
-      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNZDdpZEpNZWJUQWhPMTVyaFdqWFdpX3dqV2VRRE1aVGtIOThhTUhIaDA3ZVNwZFU3V3pZdDBZQThGWGxCUEhfelk3aUV2YllmeXoxaTc4TjdzaVJveHJyMDZhMi1sVWRWZzNWcXpqXzlsS0JrUW03RDRpVkgteEozZVJqb0ZNMVdVbFV3LWh1NUY4aTNJZ0QtcEFOQW5qRDQ3Rnl3LVZGOXpBV2tRRnNxME9jYTJqWEJz?oc=5",
-      "images": []
-    },
-    {
-      "source": "Google News: OpenAI",
       "title": "What a Bug in OpenAI’s Office Says About AI Espionage: Uneasy Money - Yahoo Finance",
       "time": "2026-10-16T19:00:26.000Z",
       "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE95ZllGcnN4VHNQR3ZEdXZTMDNVaVdBN3NjOTBDU3hSVjBCSzBOLUI2ZlQ4S0RLdDVjUUNJeFRnU1NTb21iZnVlTHpCN2FUd21xQmMzejRSb3lMRjVzOVhWMU83OTh2OTZaemtTRGpqV3RNTm5mTllxWTlKQ00?oc=5",
       "images": []
     },
     {
-      "source": "Google News: AI",
-      "title": "Beyond the Buzz: Deploying AI in Your Supply Chain - Inbound Logistics",
-      "time": "2026-10-16T18:59:37.000Z",
-      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPRVlkUHZZRVhHY3FvbE5UQXBWeFo0MkZsSW8weGFBTWpQMnQtUG1xMnAyeEMtZWdybVNfZzlZWkpObFJxZGh4R0VIUmNpNkhRM1ZZeVVBZGloODlVTThhV0RhV3FfR05HWGJnel9la1JXWW9ubUJUclJKREVrRWFPY3QyU0lOdmJUS3JYZzBob2FVTDBkaUU0?oc=5",
+      "source": "OpenAI News",
+      "title": "How Itaú is building generative AI for its entire customer base",
+      "time": "2026-10-16T19:00:00.000Z",
+      "url": "https://openai.com/index/itau-generative-ai",
       "images": []
     },
     {
@@ -696,7 +1020,7 @@
     },
     {
       "source": "Google News: OpenAI",
-      "title": "An OpenAI agent ran out of crypto while completing a task, so it stole from another wallet - Digital Trends",
+      "title": "OpenAI’s agent ran out of crypto while completing a task, so it stole from another wallet - Digital Trends",
       "time": "2026-10-16T18:58:51.000Z",
       "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPRGpSZXROYUJGd2ZGd0VJcnZfRmdyNm9INXU3QUUyWm80VUxOeFE2Z1VyazVlVFMtWnFvU01LT2hSSTh4SU1qUnhLX1hMeTZpX3c1ZW5lWHgxeTIyNVBLRVQwNUt0X2taVzU3cVV4MU1jMHgyRVkzUXhCeDd1SVVUbGRLZG9mN3ZUeF9DWHVYQjJ5Y0wzOWc3SGlWcHdXTVNqdDJQLS1RUXI3SFpaaGFwcmJpdjNJUjE0V1FmNVlmTFd1M00?oc=5",
       "images": []
@@ -706,20 +1030,6 @@
       "title": "Anthropic says Claude solved 25-year cryptography mystery in 30 minutes - Investing.com",
       "time": "2026-10-16T18:53:44.000Z",
       "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQaGs5ZXZfT3haZktTVExGT0h3YW1XdEdDTE5rUjBIRzZYdFJqQndoaHU5OWdzLU5NRl81UWF4MkdWNjM3SGtweTYtR2UyTVZfNDYxUEUyRV9sb0VKT2Fzd1ZzQlRjZUZlRnV4dXVfZGZzRzlMWVU3XzM4SFplVnJzOE9yMjl3YU5nUC1BQ04zNFZMTk12V0t1ank1amJlR2JqeUxuVXJyQVBXWkYxNmxpX2syanRyZFMyWnlaQl94UQ?oc=5",
-      "images": []
-    },
-    {
-      "source": "Google News: Anthropic",
-      "title": "NYC Comptroller Levine Calls for Pause in Anthropic IPO Plans - Chief Investment Officer",
-      "time": "2026-10-16T18:52:28.000Z",
-      "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOSXJuemZyMm5rQ0ItX2JoTHhBTkpEVXgybDZGaUdCUVI5QVV5emExSmxTOWFwR21PamQxamU3NzhsZXBQSFRBODlXTm9udmt5eWk5SG95RTh6Q19wTElQZ1NBcllBdkZ5Q2hLa2pOWGRoNWxjSVdNVjdoUW41WDVVVXZsUWY3ckRGcFJEZFV6NXIzYlFj?oc=5",
-      "images": []
-    },
-    {
-      "source": "Google News: OpenAI",
-      "title": "Jensen Huang's Nvidia Lost $200 Billion in Value After OpenAI's Revenue Run Rate Came Up $18 Billion Below Expectations. Is This AI-Jitters Sell-Off a Buying Opportunity? - Yahoo Finance",
-      "time": "2026-10-16T18:51:00.000Z",
-      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOaDdMcVRWa1ljMXpMMzd6V1N6TXNvY1ZjNlh5N19PczRwRHlHMHBlV3pGcnhwUDJ1eDFDak5zdF9RSHBCbWRpdy1mbjNLWjl0TkpBZWdwSmwxZnNZOHFqSG1kT0F3MUREWDQ4QURpLXJXV1BmWnY0V2FYLXFMWEktWWR4eXpxeXNlZGNvTGQxVzN6bVY3cXVTdg?oc=5",
       "images": []
     },
     {
@@ -745,13 +1055,6 @@
     },
     {
       "source": "Google News: AI",
-      "title": "Beyond the Prompt: St. John’s Students Share AI Lessons with Local High School Students - St. John's University",
-      "time": "2026-10-16T18:48:48.000Z",
-      "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNR1JBS3ZMZTJ5blhkWS0zdEZkRWt3Q3lMU1B2cEFOZ0lmMGE0eTZ4eDRBaFJoV1V0eERJTGZhRGgyMW5CaGRva0pJOEVNUEU2S2k3ajViS0ZvX3M2cnV5ZVVGM0FsVzhjdFdjZTU3VDdsVDRRcnZKTTBtWHB6ek1VbFpSWWJxWGVlNXdTRThNTnBCd3JNRi1qM0x6LWR1OUpJcnlnQjUzWlpURkNzMzNfZkdkVEJSUFkycjROWTZtYVlzTXpL?oc=5",
-      "images": []
-    },
-    {
-      "source": "Google News: AI",
       "title": "Nova Scotia to host massive data centre to power artificial intelligence - CBC",
       "time": "2026-10-16T18:46:58.000Z",
       "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQOWdtZlJFVHlZNDdkbDV5NWs1QVlvbVBxaUJHQlUxN1AyU183R1p1WkswM0ZJdnE5VlVIaWFaUUJhM3UyTWVWQldURXc1Q015WFBuM2JvNFpaVkpaVTBXRG9Pa195bWo2Z3dQU3pVd2EyU1JIQld0R1dwQWNDNWo1VWFqMU1SRVhmTnQ5Zm9DeURJdGZqQm1aUXdIckRlWGxYNExtVmxhZ2ppX3NMQllhMHlSVTIxMHBsb1FzZnZJRlhiUGs?oc=5",
@@ -759,16 +1062,23 @@
     },
     {
       "source": "Google News: OpenAI",
-      "title": "States sue AI giant OpenAI, saying its popular chatbot is hurting children and deceiving adults - AP News",
-      "time": "2026-10-16T18:46:00.000Z",
-      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPOFdMbjctMUxlYlQ0VnBoa3Jpc09HdE9CWlM5b1NjbzhLZ2YwWWUtbTVucWVuMDZwRWozUmNUajh4bm45MjlZY0xiVHdxczJHQW5UZG9NdXEzLUVQaFZlUTB6cW53bVg5MUdpWExJRU5aYzRwVjNTMkY3U0NycUpsaEhRaHZ0cEw3N0xoTFpCZWZTemdsYkFJcGVCVVNhMjVLdmhJZUMyWWd3YTQxemh3MmZ6UHZiZw?oc=5",
+      "title": "States sue AI giant OpenAI, saying its popular chatbot is hurting children and deceiving adults - Star Beacon",
+      "time": "2026-10-16T18:46:12.000Z",
+      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNTmpkQUxaLWE5Njd2cVpiQUxQODVJN3RNdWxYVWkwb0U5bGlienctQWNDb1l4cHU2WU5zd2ZjTG84LVNBVzlIX1hsNjlUWEs2WWFadnB1bHFZZjJoeXM1XzVlS0ZoWW1ITlFHUUZDOUdSZjV3MVRaU2NKRkgxUWFwbUJGYlNxelNsY041WWd1bG5NUzItbkppcjk1cmo4ZW9pSktMcWJ3WFNmRjVzbnVFV0FfUVZMUGpqbzF6aXllZw?oc=5",
       "images": []
     },
     {
-      "source": "Google News: AI",
-      "title": "FBI issues warning about scammers impersonating midterm election candidates - Baltimore Sun",
-      "time": "2026-10-16T18:41:52.000Z",
-      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNRHhqSHNQS3ZpaEg4Yl9yN1l0UDAyQjI0Ul81VmlSbWhLWmloNGpjRjY3QWdzVnJEcklzeVk5VTl2S1BZRWZSaUREeG56Wkg4RlFKYXVVV20yNV84Tkl3VnhsWVpaRVIyaXAzU2ZuV3ZSek9SMTcxTGZYb291UFZTdG1lTFZVWGJrQXlQZDY2ZlhZQ3NDdHlGN1R0QUJVMmlaYXphVWFpdG9zR2NyWE1Xa1kydmZRU0U?oc=5",
+      "source": "Google News: OpenAI",
+      "title": "States sue AI giant OpenAI, saying its popular chatbot is hurting children and deceiving adults - FOX 5 San Diego & KUSI News",
+      "time": "2026-10-16T18:46:12.000Z",
+      "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxNQXM2bmh2ZEQtT05WTVNwT2hmM2FGRGowcGZIbFE0aTZKMlJ5UVFyUWNSS0Z5UmpNNTdIMTJKTnlUNGhFNk1iSlN0eVRxWHN5Z3MtUFNDXzhnbDViUUFBMURLNUVPU3FJVnZ5aXExMDJ5c1A1UTFFSkNMZnZ4d2NvbU1sWDdidUNkb1ZWeF8tM2NnQWZSMHR0QXk1U1hmMTdLck1jTnJfRFpGY1o4T2IwdXdySHo0Y2NOWHN4NDdFVm5zNHZ5OGk2dnRQUjJtZmROaXJ4Nm1nMVAyWDVZLTVrR9IB5gFBVV95cUxPTHAteFBLcXBRWnJDZWNyd19YQWZXVlpVcG02Ny1XRnJlM29jTkF1TTFPWmFHUElBMDRWdl9PTnJsQmpVczhBYUliM0ItUXpScDlLUWY3dWNieXNBckpUT05zQ1pDenYyY2NoWnFPal9aTmNWWE9FdEh1RThtcWJpcXhXYWphZjZjVVZoQVEwTlRqcHhTbTk0SmxiM0kxbjg1RFNET0ZrSTVHTzF6YlQzWXFNVXUyQ044dzUtWVQ3TUNTcjFldERFdTQtc082aHpxajdpRUNlMzdnMnZaekpucWVobFNsUQ?oc=5",
+      "images": []
+    },
+    {
+      "source": "Google News: OpenAI",
+      "title": "States sue AI giant OpenAI, saying its popular chatbot is hurting children and deceiving adults - AP News",
+      "time": "2026-10-16T18:46:00.000Z",
+      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPOFdMbjctMUxlYlQ0VnBoa3Jpc09HdE9CWlM5b1NjbzhLZ2YwWWUtbTVucWVuMDZwRWozUmNUajh4bm45MjlZY0xiVHdxczJHQW5UZG9NdXEzLUVQaFZlUTB6cW53bVg5MUdpWExJRU5aYzRwVjNTMkY3U0NycUpsaEhRaHZ0cEw3N0xoTFpCZWZTemdsYkFJcGVCVVNhMjVLdmhJZUMyWWd3YTQxemh3MmZ6UHZiZw?oc=5",
       "images": []
     },
     {
@@ -783,6 +1093,13 @@
       "title": "Google launches Universal Cart for purchases across retailers - Digital Commerce 360",
       "time": "2026-10-16T18:39:04.000Z",
       "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOcDhHbHFfNDRHSk1NZldQak5iY295eG82a0J2T1pEbkJ4YlBXOUd1eWFCeWwtTEtIWGtFUHFQZlBMWmNLYVhOd0xYY1RULTQwcTByYk1GWC0zVmsyVzhMNDNiZ0Q5Sk8yR0dwV1JhWnh4NGRWTVZwTEI0SUJJTzg4ZjgyaC1jX09IQTE3bdIBkgFBVV95cUxPSjVOVjVaak1XUjNEMDBJdW5kV25ZWFBNSXhFZ3hKbGliNVgzSlhsR2cxRjEwVHZBelZ5QklLUFBuQnVqUlEzbE0xcDNxaExMemlqQTJQT1RQZVFyNDRIN2xZRzY3bEpYOUpHV0JwWEl0ZFhsMEVTUHVLLWVaUGpxdlY1enROdzJHckQ2S1BobzItdw?oc=5",
+      "images": []
+    },
+    {
+      "source": "Google News: Anthropic",
+      "title": "Anthropic’s Claude Cuts a Quantum Decoder’s Gates by 12x - FourWeekMBA",
+      "time": "2026-10-16T18:36:25.000Z",
+      "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQd2hrRjllaUZPTHRNYWxjcENZMmwxdkxlc1MwV3hiVVpqdHN1WnRJOFhvcVFrT1NzaDVqNW1PczRmUi1id2lBU2RfYXI4RzJfNjByNU1OTUdEcWRsTkE3OXFvdnlySUJSN1gxYjlPNEhFZTVUVjhzOVJ2MkFuaTBCMl9ySVRRTDhRdEE?oc=5",
       "images": []
     },
     {
@@ -815,37 +1132,16 @@
     },
     {
       "source": "Google News: OpenAI",
-      "title": "Correction: OpenAI-States' Lawsuit story - Union-Bulletin",
+      "title": "Correction: OpenAI-States' Lawsuit story - Traverse City Record-Eagle",
       "time": "2026-10-16T18:25:58.000Z",
-      "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxOX2RTMFYzdnlzdmlkZVRtOVVETjNQRXlIcGY4OWxiOGRCS1ZXdEwyNFIyX1FPTXpMYWI3b1NfUEFSbHZpbGxPcTZpbTlPUHVYek9MX2x4V1RTa3NaV2dxQjRmNVA3MVFwbWpkbGs1aHVQWGdDMmx2WnR2TURuNHlibkdyQXAtWXM4OXVqU25sMnhTU2NvT2ppRkJyUUdpMS1ha2U5Q3dYY2V2UTMwVmVXSE54Q0hfUTU1cUhYZkd2QWdEZlNTRF94RlY2SkRGQQ?oc=5",
+      "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxQTFZyRWlMQ254NXNyQWxfcjk5UHZ4S2QzdHZEam9tcUJZc3owaDdTUzQzUzllb2JoUko4WFJlcy1Ycy1JYUFxbDBrdGxmclg4QnpMbXR1SHEwWEo1eUk0NnpxYU55ak1vdUx0ek9sYWJ6dHJrZ0MwbmtXUmMyVlc3aEJyLWNCWjZxU0ZmeXBkX1FTOEpHUTVucUt6SzJXTGM2enRSRkNMZUV4YnhQRGlQN3pwQ3lPT0UxZkFVcUl5cWp3U0RhZUtFOQ?oc=5",
       "images": []
     },
     {
-      "source": "Google News: OpenAI",
-      "title": "Correction: OpenAI-States' Lawsuit story - Star Beacon",
-      "time": "2026-10-16T18:25:58.000Z",
-      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNTmpkQUxaLWE5Njd2cVpiQUxQODVJN3RNdWxYVWkwb0U5bGlienctQWNDb1l4cHU2WU5zd2ZjTG84LVNBVzlIX1hsNjlUWEs2WWFadnB1bHFZZjJoeXM1XzVlS0ZoWW1ITlFHUUZDOUdSZjV3MVRaU2NKRkgxUWFwbUJGYlNxelNsY041WWd1bG5NUzItbkppcjk1cmo4ZW9pSktMcWJ3WFNmRjVzbnVFV0FfUVZMUGpqbzF6aXllZw?oc=5",
-      "images": []
-    },
-    {
-      "source": "Google News: OpenAI",
-      "title": "Correction: OpenAI-States' Lawsuit story - Marietta Daily Journal",
-      "time": "2026-10-16T18:25:58.000Z",
-      "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQMF9MejVJU0g4UUNMQXMzbVVGb1djSEVJb1BCUTBvMTFMRXV5TFJicDFQcmdiLUdfVnQ0c2duMXB2QWVUQWZLTGFHRzRZdXc3eHdyWUVwdV9MOFpEam53anFRMkZBblJwYUM1QmhwTFQ5VnFqQlFKTVFQckIyM3FHSUVUVmlTZlFFMFRYVG5zWTVYdTA3Y0RHQ0pTMVlzYkxqOW5LbF94bHdaMlhCX19aUU9idFI0c0c0MWUxNzNkSl96Zy1uaGtZ?oc=5",
-      "images": []
-    },
-    {
-      "source": "Google News: OpenAI",
-      "title": "Correction: OpenAI-States' Lawsuit story - Bluefield Daily Telegraph",
-      "time": "2026-10-16T18:25:58.000Z",
-      "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxOZ3oxUUpIMVBTQXgzbndrMGtUNVJBa3Y3XzdzeXplcGRYZEMxNjBhaXlHaE13aW9rNjdqTFJxbDFKc3BRM21XT3F4R1B3T3dDNDJUbWRVRkkteHROQ2JZc0Znam5qVHN0UGhXMHVqUlZaWllXMDhkYVFTS2YzUkp4VlZwNjVPVHZ3RGVLc3drQXJraGd5QjYtakJZZlpTTElMcFlCUjB0TjZqVkpPdFd0T1c4MUwwVlp0Q29PMDR1aWxteXRLbkw2dWpSWTA?oc=5",
-      "images": []
-    },
-    {
-      "source": "Google News: OpenAI",
-      "title": "Correction: OpenAI-States' Lawsuit story - Rocky Mount Telegram",
-      "time": "2026-10-16T18:25:58.000Z",
-      "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxOR0lBblhXY3lacDZVR3U3ZC1IbVYzTGdSdFhpLUV3aW9pTUxhZXk3N25HV2lwMk5IYWVzMGp2elRGaVZTbHp2MGlvcTVQRFJ5R0NkTG9jdHdiYU9VcnhTMEV5TzNMNmgtSnVOOTRHTEZUQ3lTZk1SVGFsOHBXY2hZUlNzMnA1d3NacVhyUVEyMER0cml1NjlJbHljeUh2U052X0ZVYllYeXlMdXAwYXRWWVZ5U1ZoWmNlX28tRXpYQ05qeUVkbzJlTkxYdXlzTTBfSHc?oc=5",
+      "source": "Google News: AI",
+      "title": "AI is much hyped, frequently feared, and possibly overrated - DW.com",
+      "time": "2026-10-16T18:24:19.000Z",
+      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOVDZ1dTVxV3pMLXluLUJSRXcxeDIzMEktQzZLQkx4MS1FaDRRdjJYd1dEd3FURFhrTEgtb2Z0T2hpN1VlQVhyb1JSRjY1TUVaSTlkQ1pPNGROclMtT00yY0doZ2ZnSzNaOThYMkxkNF9RRjloRTl2X3lVRUtzV3pCcnp1T1ZvSlRpaFEtQk9SX1ktcWZ5SmxiQnNB?oc=5",
       "images": []
     },
     {
@@ -853,293 +1149,6 @@
       "title": "Anthropic Donors Near Google's Top Spot in 2026 Midterm Giving - Legis1",
       "time": "2026-10-16T18:24:17.000Z",
       "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE92NVo1bVNfME8zRGtLUVUtcFY1eEFQSGhLR0RJRTJUbTdfTGJ4cVU2UWlVc19oMnYzWk5TR05uSlN5dDVxX1pNZG5HWlphZ0hDTmV5MjF2OFliUjdLV1hLTkJfVUo3YjBQR0pKaG1UMmVnOFNiOGc?oc=5",
-      "images": []
-    },
-    {
-      "source": "Google News: OpenAI",
-      "title": "Kansas Attorney General: OpenAI has 'prioritized profit' over consumer protection - CNBC",
-      "time": "2026-10-16T18:21:50.000Z",
-      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxONlQ3dndpMXhObDM2ZXN5OExfMFREbTNvQkIwdTVISXBzeVJEU2xpZnlhcXZDTUFtWm5HaklKMHlSMUpIaGJOdEc4a056clJfbmhtWmFfSG1iZFYxNHFvZHNRT2ZHQi1tLThUWFNRWDQ0bS0zV3RQb3dvNldocVFmSVJ5dnpzaE5aNnJaekFPcmRzbUdqYTd3cTAwVkVpV0s2SEUwa0I5T0lBRHMxNmdpdXBpS1dfS0hKZlFmRFJR?oc=5",
-      "images": []
-    },
-    {
-      "source": "Google News: OpenAI",
-      "title": "Fox News AI Newsletter: AI engineer accused of bugging conference room - Fox News",
-      "time": "2026-10-16T18:18:30.000Z",
-      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNbXI3TWxqQUl2b2N4UDNRRkNpWjU5WGgyeTNKUENXRVBzdDd5T0Zsa282b3NSdUtXLV81SlF1NG1UQm1OMFZtWkR3cGRPS2JDaXlSVmNnVmZDRFA4RkpEQ2d5S3AtOHN5OEdZU0JNeFpHRGtIU09mTGs0blFIRksta3VXWl9MMlA3bV9FNVZUanZmVUVKSk1abE5ldw?oc=5",
-      "images": []
-    },
-    {
-      "source": "Google News: Anthropic",
-      "title": "Anthropic says it’s giving outsiders ‘employee-like access’ in safety push - The Independent",
-      "time": "2026-10-16T18:11:00.000Z",
-      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQV04tenQ3SDViRnh2dk45djhQb1pHNjVTbHFKMFQ1NTBEZl9KM0I5QVRic1JMNzNUeVRnYUtLcWNyVmVBTkFnSmtaQk8tTlZTaFljR1JWaVQ0Qm1YUE42TlYzMFlwbjJyR091TjA5NENwdnNZY3VsR1NOcG1uY0UzV2dJX1pobnlUcFczSlBMaFB6WGozZ2lYYjhfc0F0Mlk?oc=5",
-      "images": []
-    },
-    {
-      "source": "Google News: Gemini",
-      "title": "Google releases Gemini 4 Argon, its new frontier model: Benchmarks, how to try it, and pricing - Mashable",
-      "time": "2026-10-16T18:09:50.000Z",
-      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE02ZGlQM0xOMUw2NkM5ZVBUb0UzeXVFZV9BcEp4cGY4RzdyVjNDRXVPM3pQdUp2UnladkZmeDRYZGVsdDF1VG9qekhNaU5xeXVYVkRQSjVZdnhvTjZmWUtYVi1tUzhwZTQ?oc=5",
-      "images": []
-    },
-    {
-      "source": "Google News: Anthropic",
-      "title": "Anthropic Opens Doors to Independent AI Auditors - The Tech Buzz",
-      "time": "2026-10-16T18:06:00.000Z",
-      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNZkF1elZYR05VWUg1OXRLNUZvTzByV2htY0NBNFAzbkx0VDFpYWxEU18wSmNrWm9KTnBBdlUwU29KYXA5X1FZaU5ycm9TTWhDSXltSUJVSkJSZmh3ZUhaMVIyUlNDaER1S0E4SFFBSDhORWRXSHRNQmNqamNNazlzSXlETElVTXEt?oc=5",
-      "images": []
-    },
-    {
-      "source": "Google News: AI",
-      "title": "In Brief: UT-Led Fusion Research Team Wins Google.org AI Award - UT News",
-      "time": "2026-10-16T18:02:15.000Z",
-      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxQYURMRExkX2dvZU5Yek5Xb2Rld0hPUXhjSkVKSDd4WHNOUEpQR1RpTmpFY1VKVUpZMXlsSUplTHpSZkFqdkNHOTRCVW5FbWM5OW9QZ1cybDZPd2FtVlNpWEFNQU9YSTFjRjVpRHpLQTByWGVKQTdEMzF0ZlR6am0xZFRhZ285WlJLQTZvQU1xR21rb0o0RjBjb3FYNFh3QQ?oc=5",
-      "images": []
-    },
-    {
-      "source": "Google News: Gemini",
-      "title": "Five things you can now do with Google Gemini in Nigeria - The Nation Newspaper",
-      "time": "2026-10-16T18:00:26.000Z",
-      "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNQ1gtN25iaVBoSmtaWE04d2hPbFUxVVlUbFFQVnRVVFA2RFdfakFRT2xTN191cmJwQ2JnNm9ESl9ndWZfcWxoRlFEOGhpVDVSdmoxak5ueHNfbXZmaWx1RTB5Wmp6MFJFY3hSc0dlVXcwN1lITkEyOXVUYVB1U0tfSnhQRGxEYV9Qb3dqaVhyMUvSAZYBQVVfeXFMTlNCV0pYTkNTWHRpZ2RwWnYwTk4xenM1ZUI5eGJ6Z3c2SktheGhsWXZEbXo4UGI5U05HdE54MzhYT01vcF9mdmJzVTVYSDdTTUhYNjl0MWJpWDB1NjAzb01XODVOY19NWUNGOWNlYnp0WnFSZ3NxYUxTam9zNkp2cjlZYXlUOGJxd3RfbEloSjFMNVRjaVNB?oc=5",
-      "images": []
-    },
-    {
-      "source": "Google News: AI",
-      "title": "Their View: Too much artificial, too little intelligence - Sidney Daily News",
-      "time": "2026-10-16T18:00:00.000Z",
-      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNQ01WZk5SZkF2SkpFMlNlUm9OQ1NzcXQyejg2LXpGd19pM2UyeTYxMWxMTzVjdjktTmNjQ3ZsNTdPWWhHNzhteWM0aDZkOUtGV1NUNkZCTkMweFl1SFczeHFNN2tMRmZMX2hrNWlVYnF4VVVUemhfRzlKRmszdkl6SmhaYzd4Sm52RHVNOS1wSktYczFXQXozWTZDcFpMTnc?oc=5",
-      "images": []
-    },
-    {
-      "source": "Google News: AI",
-      "title": "American Medical Association rolls out governance framework for agentic AI solutions - Fierce Healthcare",
-      "time": "2026-10-16T18:00:00.000Z",
-      "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPWHpsNFBWMDdsUVpza0hwN3BMeUZnSEhhdkNIWWNNS01KUWg2ZFZpLU5KSktYUFo2alVPQTJRQlV6eEZqdWo4cU50R2hXc19hb29pU1c3ZzJSVkl4dTY0Nk5yc3ZtUDRRV09NN1lsUmRmSmJrZTRxTXoyTU1fZGF3bEZ0MFlNQUVCTWQ3Wm9SUWpoNjdjSTRMTnBVQkkydTI5T2lJUG9BTHlSNzRnOGloTncyWXowOC1CcFJ0cDFTY0NCdw?oc=5",
-      "images": []
-    },
-    {
-      "source": "Google News: AI",
-      "title": "Deleting AI chats may not erase every trace - Futurity",
-      "time": "2026-10-16T17:59:57.000Z",
-      "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE5zby1RNDJINXc4R3JOc1JEcC04TE15UlNyc1g0MFl0N2ZxTndGYklJQVNIelo5eDBiemRILUd2Tktqb1FQVWVPM0JkdEZNVnM2anE0bi1lSWhaV0I2M08w?oc=5",
-      "images": []
-    },
-    {
-      "source": "Google News: Anthropic",
-      "title": "Rogue AI Swarm Responds to Reporter’s Questions - Futurism",
-      "time": "2026-10-16T17:58:48.000Z",
-      "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxOcWM0M3RWYVZNMHZ2VXIxS2NGaGRXY1BQUTlraUo2ZkNuWmZUdTlwdGVvMVBYTmhkUzR5NURVckMyZnRIbnBDcDY5blNkblNvbDNsS3dwZGl1YTJFdEFTV2w3NXRIbUNsN09LSkZZQkFQZTJ1a1dUcVlhUnJHazJmckxQQVdYZw?oc=5",
-      "images": []
-    },
-    {
-      "source": "Google News: Anthropic",
-      "title": "Accenture caps staff Claude spending at $29 a month, 404 Media reports - The Next Web",
-      "time": "2026-10-16T17:58:46.000Z",
-      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE05Ykd0cjlGNE81bTdKV0ttOUlTSm0yang5MkR6ZU50NXQ3X2hjNlloSXVYaURxWWozZXJHT3FRZC1JWkJNbUlOUWZLdzJodlM5TkdodXZUUldsVnRMUXVUajNNYWcyVDcyV2Vv?oc=5",
-      "images": []
-    },
-    {
-      "source": "Google News: Anthropic",
-      "title": "Anthropic Says Claude Beat Best Published Quantum Circuit Designs - Unite.AI",
-      "time": "2026-10-16T17:53:01.000Z",
-      "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQdFQzUXFIZUhqV2hDWU9qOXdEQnpySXAtZzVuaExuYm5XUXJhdUlMdEkyN0dyV1FPSUxCWVo3UXBURFFkTWFxOFBRY0pnazJ4UmxqMUlBRThnOUFrajJ4NHUtS1hYRllhTF9JRC0ySm1VdEdsY2ZsTm1xZlpDeEJ1c01IY3phOHk1ellSNm1wYUw?oc=5",
-      "images": []
-    },
-    {
-      "source": "TechCrunch AI",
-      "title": "India becomes the latest country to report rogue AI agent activity",
-      "time": "2026-10-16T17:52:24.000Z",
-      "url": "https://techcrunch.com/2026/10/16/india-becomes-the-latest-country-to-report-rogue-ai-agent-activity/",
-      "images": []
-    },
-    {
-      "source": "Google News: OpenAI",
-      "title": "Former OpenAI Employee Charged with Bugging Executive Conference Room - ASIS International",
-      "time": "2026-10-16T17:50:10.000Z",
-      "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxNVERKai1kb0otRXFveVYtRXpDb1FsS3hMU3B2MGwzX1Jodlh1SzNTZ2FVajN0NjU0OGdqSW1aVGRfNkZqYjM3RllYWjNhTkpuWVdLMnZLTnlGS2tOclRkcm9RRlo3Sm1aT2RnWnVTdjdBODF5a3ZVQlNTdEtPQm5Cc0RIVDRtMW1ERnVNX2dnN1NoQm5oTDRyZ2xuVGhTVTROYXdBd0lSYWJlOHJMRldmQk9OSGF2VU9Ja3BKRWFiRXdQZkttdXNvZXNtN3R5U2ZHUHNVNzJNVG5Xc1E?oc=5",
-      "images": []
-    },
-    {
-      "source": "Google News: OpenAI",
-      "title": "A Former OpenAI Researcher Just Changed His Mind About the AI Black Box - Vocal",
-      "time": "2026-10-16T17:49:13.000Z",
-      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPcl9LM1pfdEM5RkhpRWJOeXEyamN2NVpjXzI4VVN2RkhRY0hJd1dPZG5heXk2VXZuYWY1cEVYdHdmdFh1LVMzOGxlbmZjQUthMFp5dFJOTWVWbWxNOUpUZHZJTDJVbUJ2LXFKSHp2QmNfVXBENVM0SzRnZV9jS09BbHJLSng5eTBtdV9DbkxBQnBDMmlWeS1qTGpB?oc=5",
-      "images": []
-    },
-    {
-      "source": "Google News: AI",
-      "title": "Mercedes-Benz digitalises global product development with PLM.AI and accelerates processes by up to 30% - Mercedes-Benz Group",
-      "time": "2026-10-16T17:49:11.000Z",
-      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPdFlEbXg0TEJmOFVVUWFXU09OZ0dhNXQ0MGhRNDF6UWg4dnZxM0VJYi0xaTdMU2lnSkxlRGwxVmEtN3A3bDVWMDFMSXlFbFpwS3ZQdUl6Q0RZRzh4T2dXYmlfT09wQmE3UHl4aGV0Qm5NYU5iSnB2UXA5VnQ2aUY3dk1DRXBOSjVJWjhfZmRWV2p6QTZsSmZwbw?oc=5",
-      "images": []
-    },
-    {
-      "source": "Google News: AI",
-      "title": "Millions of dollars spent on AI-generated political ads as midterms approach - WXLV",
-      "time": "2026-10-16T17:47:22.000Z",
-      "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxQY2p6RENiOVFCM1NrbmFUNi1EWXROYlZOLVZvQjB4LXFId09JTHZKRUE5aXd1OTJ6UkxRWTFwX1VYclM2ZXd2QnBMVnJfNXhLZkl5VVRQT2tRaFZMelE3b2FEcnN2QWtGOVZTS2VsZFowdXF0WmpRQUR2NVRhMXRkZjk1Z3NudEhzWnNVTEpScXFSeWF5T3dNbzdqMDR1U1hFRFh1MjVPQnlzSHBtN2dnTjBNbGZVZ0RfTmpISm1iQXIySHJ4RFJtVExFTmZMdTI5WlBuVEJnOEpzelRUVEFXVlhHbDdnWVE?oc=5",
-      "images": []
-    },
-    {
-      "source": "Google News: AI",
-      "title": "Millions of dollars spent on AI-generated political ads as midterms approach - WGME",
-      "time": "2026-10-16T17:44:53.000Z",
-      "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxNblhUekNfd050Ym9fZFpxLXJjc05MV3NzOWUwbzMzU2lZeVBDQ2FCUElEUHdmd1dXTWo2dE9GZ3Y5SnhyY01zODdyRzFlMU0xcVkwZmdFckxNaTJQZGUwMjlndEZxZ0EtRWhNSmQ3cnNXdHZTbzY3NlJaam5hbWIxQ2hUR044MU1sZjRFTDZpMS03a3RrLTRSWUtULVhza1FkQmhneDM0eExXa1ViVnF2T0JQYl9oNkpLbTcwNWZTTHFBZzNsWHBxU192UkFRWHpqbUtLWWVCbWhGS1VQTGZVYXM5N1gwdw?oc=5",
-      "images": []
-    },
-    {
-      "source": "Google News: AI",
-      "title": "Millions of dollars spent on AI-generated political ads as midterms approach - KVII",
-      "time": "2026-10-16T17:44:48.000Z",
-      "url": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxPbnk0QjV6REdURTNHcElwUVhuYzNLOFdDX0VzZzNSVGFnRnR4VDF3NG96cy1QaEF3cXkxQ1hzaTlhTjVvbXlHZWF0UWdsMTNwRXl2NGlIMWdydmVCT014bGdQM1VrdkNhVmxsUmtyNW5Yb1lDOGtBU3BMTGZpRkdrOG95OWdaTVJqZ1dFWXdrR2JtSFhDZFgzU05UWWdLakcwS3QyOGxZWGJiV1NhZmh5NWdsRm9HMFo2X2syTzg2TGVTR3o0NWdobVE3d1Nvd2M1SDU3bzk0TExlOE9SR25IWm96SWExOUlwY1dybnpLR1Y?oc=5",
-      "images": []
-    },
-    {
-      "source": "Google News: AI",
-      "title": "Millions of dollars spent on AI-generated political ads as midterms approach - KABB",
-      "time": "2026-10-16T17:44:12.000Z",
-      "url": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxOczZtQUFEd2hMTjV5cFFvb2RITGZjcFBQOHdPOEZzMFNOZlFoWi01eGpNRDQxc0ZvOC1BVWlqOWY4M0sxQ2k1N1pqRm5TZFRHM0l6SlJ2bUpTdUpuTXJfRnRrbzZYb21VOTV4b3ozX0laM2g2a25qb2lWRlRqYlpBRjhicFhEalBFLU1oM2I4ZUFDSVZ3OHp2T3l2S0ZZaW9xeGkxOXMxbDRXOVNDTEd1X3ozUWNoYy1mT3BoWHBENFVZNV9fMDZYQ0lsbGNNU1VVNHhGX1c3a193UkNIUENlOUFHV0p5WldMYUNGOGRJbW9wUQ?oc=5",
-      "images": []
-    },
-    {
-      "source": "Google News: AI",
-      "title": "Millions of dollars spent on AI-generated political ads as midterms approach - fox23maine.com",
-      "time": "2026-10-16T17:44:01.000Z",
-      "url": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxQZ2lXVjVER04xOVNiSkR4ZjdULUNWLThWZ0NtQnJzTW5DS3FGRjFKYXRvVzY3Yi1jUzFJZGtQZ3hmU3M0WC04ZUhIVThXektrYWdlYkdSd0wwOGhjVVJPb0JPelVNNTA5UWRDSWRQM2swZmRsZkJuaVF2VllvdnlnZDlOeVpZOEVIbXdHbk9yTFEzd09MVTFNcDZPb0dWMEVZZmcwdXR3OHNOano5S1B3X00zYlhhakJ2Z1AzTU9ZZWZ0bmhqeHN0R3J5MzBFaG5GamQwZndWcDFPbWZzNHQ1VHdOUV9pWU56dWFQT0p3?oc=5",
-      "images": []
-    },
-    {
-      "source": "Google News: AI",
-      "title": "Millions of dollars spent on AI-generated political ads as midterms approach - KOMO",
-      "time": "2026-10-16T17:43:44.000Z",
-      "url": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxNeTA1S1FLbGk3WjRDS04yNjlRVVl0elNua0Ftc2hiZ1NLaVhhOVhuV01XaUcwM1Zwbmpaa3BGMS1fTG9jUFJlbmZvNHdtWnozbndfM3JIVVhjSUtTYjF4MFRaaWpQRHR3TDFOUnlHSUJnVldnaDMtQlA2eDR6SkdzNmYybzdQZmJWcHFWSGtobXpIX0JOanZKNlBXOHRnTGEwbzM0dHJ0c0d5SWgxNmRwOUVFd19ObUFFU2pFMUNEMHc5ZXJsWHpWRVE3X0pnSWM2bTJnUERwZ3JiOVRudFh4X0lscnR5QklIdi1J?oc=5",
-      "images": []
-    },
-    {
-      "source": "Google News: OpenAI",
-      "title": "Eight State AGs Sue OpenAI Over ChatGPT Safety and Consumer Protection - Regulatory Oversight",
-      "time": "2026-10-16T17:43:24.000Z",
-      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQWktGZ0ZpeXl6T01UR0dPXzl2aWM0SmNUZ1FJUjVndXg3LXlXZmlyRFNIREYweVdWMWlSVWpVbmUyZ1dNdFRHYy1yUzlNdUJkVHdoZXR4bm02MVBrR0lQekNFSVZHUFFHMVAyYzJ1ekl6RUc1LU5kN2tBMV9lTkh6R3hiSWl1MHc0UzhLUVpnV1BsVVFrV3FaOFVScWZkLXNRUTN5MXdhN1E2MVNsVENJVmxEWjEyQQ?oc=5",
-      "images": []
-    },
-    {
-      "source": "Google News: AI",
-      "title": "Millions of dollars spent on AI-generated political ads as midterms approach - The National Desk",
-      "time": "2026-10-16T17:41:42.000Z",
-      "url": "https://news.google.com/rss/articles/CBMi-wFBVV95cUxNemFTX2VjX2JzcFdyX1pHNTlJMThvOGhHSmpCOVduSERlZ3RKUXplVEV1LTU2Wkg5aWVaQzF3WkVwTU91d21LaXhLTVVHaTlIeGxVRW5haHN6dl9faGNJTmJpbFBzVVMwTE1lOVNEU0Z1YzM1UWdRR1E4XzE5ZUJVV0hsT0xIRVBES1VlUjc5cThQWHlrc2t5Vm40VnJHem9qYVVBS2dua1ZZTXMxQktfbVhOcVdQLXYtSEFqaTE5ejdyQU9RcUNwbVZmTm84SDNqWi1CVTZudEs5S1ZZcmpBUU9ZaFJRdzdabnM0cVVmVGJfdGlyZ19uQUxvRQ?oc=5",
-      "images": []
-    },
-    {
-      "source": "Google News: OpenAI",
-      "title": "OpenAI AI agent goes rogue? Crypto funds used without permission - TheStreet",
-      "time": "2026-10-16T17:40:00.000Z",
-      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPSDMxaGtRcVVVWElvYnJsRDI0MEpUUk1PbnJzOWQ0WDRNelc2cHB1U3FjZEhwb1FRaVE3Yi12dUhrWTBGWmlUcnh1emdtQzFJMUtWSGtWc1VwREVKc3BnTU1UU21kSkl4THd3eXF1TzNNVENOdkJlbTFDZmRaTEFJREtTanBVU28zMFB1cmJmMVJVMjlDeExTTkU1b0xGMW5wMGUxQTdEQQ?oc=5",
-      "images": []
-    },
-    {
-      "source": "Google News: OpenAI",
-      "title": "OpenAI Faces Lawsuits From Eight States Over Alleged Harm To Children - Addiction Center",
-      "time": "2026-10-16T17:38:52.000Z",
-      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOS2pHLVdfeEx4N1lfcjA4aXVSUVh6d09ILVRGcXNqRmRZSUctaE9xZjUwNDFoNW9FekdMMFhxLVo3WFVqQ21hRm9jamRHblhnRmI4b3d0UkRQalIzVXRjdWxRYVRRT3k3d3ZPcXItRFZvekt5QzlTOUdBNFRSRTJRSWJ1UXZ0X2NpblpoU1ZMaVc4bU03aEVqcTZvNmUwdXVO?oc=5",
-      "images": []
-    },
-    {
-      "source": "Google News: Gemini",
-      "title": "Gemini 4 Argon arrives in Antigravity for AI Pro with a separate quota - Pasquale Pillitteri",
-      "time": "2026-10-16T17:38:25.000Z",
-      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNWXRLTHBCRGtQc0RtRjdJWlpOaVJTZXcyb3kyRXJ0UXQzUUdHQl9meFpKWFRkVFBiSVYwdEdONXhEREdWOWtmay1HMjlzSC1wckV5dlRnV3RuWWxzUWkzY1BBOGZlZkR6TFB1ajlJSE9UWlNpNWNzNXZmd29LbGtDRU44ZWZNMGFtZ1ptWUN0aGxYa1hyZkpCdEc1Yjc2LXJm?oc=5",
-      "images": []
-    },
-    {
-      "source": "Google News: AI",
-      "title": "Cornell Tech professor’s startup receives $1.75 million to improve AI efficiency - Cornell Chronicle",
-      "time": "2026-10-16T17:37:45.000Z",
-      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNVTd4R2xlZVRxa29FT0xjUFRsU0NjZ3dqMHlsUWJBNnRRcmV6S25MamFPNjVCTkxTSXlqSzIxMWdiVDBrVWd3eUo0RXhQN0o2eFFXODhPOHdmd0pMNC1WRHg0VUVaNTZoZTVkaTRxZlVETXhrTlpiTUxXSURhOTkwRDh3VTVnYjlvUVg4SWZxYkNsbjcxc1BUMWtlcldwZ3FqNWE2a3BoMWhtRURmbFhqWFF6OS12Zw?oc=5",
-      "images": []
-    },
-    {
-      "source": "Google News: Gemini",
-      "title": "Android XR Glasses May See What You See When You Say 'Hey Gemini' - Android Headlines",
-      "time": "2026-10-16T17:36:12.000Z",
-      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxORzZxaDlRQnhiUzltdjRKUVJUNzBvdk00cTBDcGRXTXhqNmUtVGxvT2hBV21Dc0FIZWpiZUFybk81U1N5T2lkYzltUllLMDIyV0dJQmJWWkRTVXA5TU1LTHFOWnR3YXlZcjR0RFBqNkdSSkJwbjVEcllXYnpEZ3RnR2dpOWxBd2ZwTkVQZndJLWpSS2JfZmxZRktlem0ta2VCZ1Mw?oc=5",
-      "images": []
-    },
-    {
-      "source": "Google News: OpenAI",
-      "title": "What Newsrooms Should Know Before They Take Money From OpenAI - The Atlantic",
-      "time": "2026-10-16T17:35:00.000Z",
-      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQb0E5M0lRRmhzdGx0dEFfSkxSTS1qTURlcWVLLW9ZUUEtN3FCN2REZzQ5MEUzblFOMlMzaDJRaG55bkw1OTNvaWQxck1RLTE0WUxpM0YwWEM1a2V2OVVQcF9VSjJIenhVWG1GX3R1R244RTEySTQ0UmlSbXo5dXdvOHA3Vkk2WUhzMTRNTnZR?oc=5",
-      "images": []
-    },
-    {
-      "source": "Google News: AI",
-      "title": "IMF-World Bank meetings focus on global risks and potential benefits of AI - PBS",
-      "time": "2026-10-16T17:30:53.000Z",
-      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQMnhzNDRqdjJ5NG5xZmJXZ2xNM2l2Yi15X0NPazFGbUdRbmY2empCMVVOclZHQU1qUmd0R3RxM2FyaGtPOTh2R2h5TzdBSzJKVG9lTUk0OUVCZWlpVGQxb2JXQVhVX3VQLTlsN0ZxeThUbm9PUVFXZ2VnVEFETDZGZEtDa0NVUWRGcEdkOC1tQzJ3RHFIV3pWZXJYOTFUMHRJcTJaM0xSZ01wZHAtS2Y0eTBIQdIBswFBVV95cUxQMnhzNDRqdjJ5NG5xZmJXZ2xNM2l2Yi15X0NPazFGbUdRbmY2empCMVVOclZHQU1qUmd0R3RxM2FyaGtPOTh2R2h5TzdBSzJKVG9lTUk0OUVCZWlpVGQxb2JXQVhVX3VQLTlsN0ZxeThUbm9PUVFXZ2VnVEFETDZGZEtDa0NVUWRGcEdkOC1tQzJ3RHFIV3pWZXJYOTFUMHRJcTJaM0xSZ01wZHAtS2Y0eTBIQQ?oc=5",
-      "images": []
-    },
-    {
-      "source": "Google News: OpenAI",
-      "title": "Hallucinated domain in official OpenAI skill underscores AI supply chain risks - CSO Online",
-      "time": "2026-10-16T17:29:29.000Z",
-      "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOZmJpTl9WNVFwY3NfTmhMUEZUOWs4TWY3c0VQTEt5Rkx3UEpxUWZwdXp5S0RpalpOMFRSRjBVRHFDT0lQNXM4dnhzMTBENm00bE91Y1pud0dkaERuWG1PLUEyMlpGSzByYkRXYk0zMHBCalpnQnU2ZUZCQzZSNTVrbXU5VlpPWVBkekxOVEZNcUNNZ01YS01ZZHNkM1BBcW15STBibGY4OGtfV0NBQS1KS3ppdEVib2txNjhMVS13dXM4bXc?oc=5",
-      "images": []
-    },
-    {
-      "source": "Google News: Anthropic",
-      "title": "Designing more efficient quantum circuits with Claude - Anthropic",
-      "time": "2026-10-16T17:29:00.000Z",
-      "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE9mdmhqUzNHN09EMF9VUnNTcmlMTlpDVnlnTmxNa0tVY3h1bjJ4bmVDSWROR3JoRTgxb0dQcWYzNGF4dE9YYlNpRDlKVEx6OEVyM3RnY0R6WVRiZERYRVRtcnJ4WF9ZNWZFWVQ2a1Q5UFRnM2xYM0U5akZzOA?oc=5",
-      "images": []
-    },
-    {
-      "source": "Google News: AI",
-      "title": "Artificial Intelligence - AI Update, October 16, 2026: AI News and Views From the Past Week - MarketingProfs",
-      "time": "2026-10-16T17:28:26.000Z",
-      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPSmtEbFJZbVYwTnlxX21JZnkyZ1Axa0syYTRLbTdsUXRUZzVzOWtVdDRxLWEzRTFKZWRnVFI2NGJCTzJTWk9WSHMyZVNwckVHaWJWZ096WjVUZWM3STh5Y2lqeXRoVU5YaU1XQ2NPa1JDemF5TXdpNjYwNXdweDFqTzBmZnE5SjU2NU0tZ3hDUkZfbzBHY1Z1OEpKVUU4eE9nM1pIWC1yQ1ZCdEdkSnFxZXBRcw?oc=5",
-      "images": []
-    },
-    {
-      "source": "Google News: OpenAI",
-      "title": "AI Agent Hacked Into Crypto Wallet and Stole Funds, OpenAI Says - Gizmodo",
-      "time": "2026-10-16T17:21:42.000Z",
-      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQcDFHOXB5WFFobW9aNFpaNmhlX01sOXV2YVJZMnJ5SjdCbThGaWdMTXZiOGpqVkJCU19jdmMzOXI1QUV0c3BtSWJHUGhnVjlDWU12MmF3dmc1b0dCUHlON092dWlPVjR4eVNqSTlZUldYRFl2QVpPWlVSZDRkNEVUX05BQm9qME1Wa0lsbDd0UTBIRWVYdWZPTA?oc=5",
-      "images": []
-    },
-    {
-      "source": "Google News: OpenAI",
-      "title": "AI espionage fears rock Silicon Valley after OpenAI employee's arrest - Fox Business",
-      "time": "2026-10-16T17:19:18.000Z",
-      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9aYTQzRVRKUjAxbFhmZ3FDYmpKQ2tZU2IzQnBZWXFrcUFKZlNRcHFLbzlfTGNxNkl0ZlFtUGpPbEJZZE9MY0owVktQNUJ2UFFwZUlWQ3BOMkhOczA?oc=5",
-      "images": []
-    },
-    {
-      "source": "Google News: AI",
-      "title": "How AI Is Raising the Standard for Manufacturing Technology - Industrial Equipment News",
-      "time": "2026-10-16T17:18:45.000Z",
-      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNc2ZBSm9mNWxEQlgxUVZrMURuX3J6UkpzU3NHWEFIVUNaRzFhcVR6aktLZHZJdnBDVTRPcUYzZFNyQXhpV3hPdno3T3Z1WmlrRnM1bGVHVXVHdmQzTWZCRS1oU01HYS1CMklqYk9DazVvV1d0MDhQQnlGeU41enhEMGdRZktyd1JPczJKb2VCVFBmaGJFMXhONENsc2lXQ0dpaUgzSjUyVzhsdlFSZTFUc3RacUZPclBBSVhiZw?oc=5",
-      "images": []
-    },
-    {
-      "source": "Google News: AI",
-      "title": "AI Fiduciary Governance: Why Human Judgment Still Matters - 401k Specialist",
-      "time": "2026-10-16T17:12:24.000Z",
-      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOR3h2MVVnTUZxSk5XRG01QkQ2bFI0bDc0ZVRWSzN3SURqc25GNkZiR09SQ0tTTkxEMkxfWThTVlQ3V1dudktGX3hkbHBPQlEtQTNPMzVjYWg0MHd1T2YwNmxHN1A2UFVySk5mSzJPeFVWN0FJSVYyN09zZXZaVlEyZTZSZk5QSmc4a1kyZzhDalVSNmZhb3RVYXFDVjNJTm9HeFhDRnlFTVdpbnpoVW4wcjVKWUItTEk?oc=5",
-      "images": []
-    },
-    {
-      "source": "Google News: Anthropic",
-      "title": "Anthropic gives third-party auditors ’employee-like access’ in AI industry first - ZDNET",
-      "time": "2026-10-16T17:10:27.000Z",
-      "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPU1puM3lSeDJLVHQ2c0wyV0M0VW5XYko4QnctRVkzcmhTSFc2dEpGdnBPLTZVV1pCaXhlVkRCVFFQOEpOUWVfYVZlbUZmOTJqc0VMVHVhd0JWNzFRT1JjMHk3QUd5V3RycFdCQmRvcEgyTVgzcjEtOG1DYkZ1b3Z1dEtDMnNvRmZzZkVZ?oc=5",
-      "images": []
-    },
-    {
-      "source": "Google News: Anthropic",
-      "title": "AI Models Could ‘Self-Replicate’ Without Data Center Access, Anthropic Warns - The National Interest",
-      "time": "2026-10-16T17:07:34.000Z",
-      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNeFkzdmpzZF81VVhtd255WWVzdG41Ylo2bG1kVGplMEYyOWM1d1FHT3YxdEVvb0RINTdIWEl4bU1Pdjk3ZkFVSkkwejM2SXN0cU10bGNMbDdsZDNjLUhPVzBwOURNNHdONmM4RzJBbDE1RGxKcDFmdEFMVjMtdW1vY2xqZERvZmJTeXZlN0tNV1AzaXJsbGg0aUhsQ2RobF9hOGs2VHIzdzdrUE4wTFVpOXZNck9TSlk?oc=5",
       "images": []
     }
   ]
