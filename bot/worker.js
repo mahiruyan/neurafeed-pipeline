@@ -59,8 +59,13 @@ export default {
     const seen = `upd:${update.update_id}`;
     if (await env.KV.get(seen)) return new Response('ok');
     await env.KV.put(seen, '1', { expirationTtl: 3600 });
-    // Work happens before we answer Telegram (no 30-second cut-off), and is also kept alive with
-    // waitUntil in case Telegram closes the connection first.
+    // Answer Telegram at once and do the work in the background queue (a Durable Object alarm may
+    // run up to 15 minutes). Holding Telegram's request open made it give up ("Read timeout
+    // expired") and Cloudflare then cut long answers off: the bot looked like it never replied.
+    if (env.RUNNER) {
+      await env.RUNNER.get(env.RUNNER.idFromName('main')).fetch('https://runner/enqueue', { method: 'POST', body: JSON.stringify(update) });
+      return new Response('ok');
+    }
     const work = run(update, env);
     ctx.waitUntil(work);
     await work;
@@ -68,11 +73,35 @@ export default {
   },
 };
 
+// One background worker for all of Mahir's messages, in the order they came in.
+export class Runner {
+  constructor(state, env) { this.state = state; this.env = env; }
+  async fetch(req) {
+    const update = await req.json();
+    const q = (await this.state.storage.get('q')) || [];
+    q.push(update);
+    await this.state.storage.put('q', q);
+    if (!(await this.state.storage.getAlarm())) await this.state.storage.setAlarm(Date.now());
+    return new Response('queued');
+  }
+  async alarm() {
+    for (let n = 0; n < 50; n++) {
+      const q = (await this.state.storage.get('q')) || [];
+      if (!q.length) return;
+      const u = q.shift();
+      // Taken off the queue before it runs: a crash can drop one message, never answer it twice.
+      await this.state.storage.put('q', q);
+      await run(u, this.env);
+    }
+  }
+}
+
 async function handle(u, env) {
   const owner = String(env.OWNER_CHAT_ID);
   const cb = u.callback_query;
   if (cb) {
     if (String(cb.message?.chat?.id) !== owner) return;
+    if (String(cb.data || '').startsWith('wz:')) return wizardButton(env, cb);
     const [action, id] = String(cb.data || '').split(':');
     if (action === 'mdel') {
       await writeMemory(env, 'delete', { id });
@@ -139,6 +168,12 @@ async function handle(u, env) {
   const m = u.message;
   if (!m || String(m.chat?.id) !== owner) return;
   const text = [m.text, m.caption].filter(Boolean).join('\n');
+  // The step-by-step post wizard takes every message while it is open.
+  const wiz = await wizGet(env);
+  if (/^\/?(post|yeni post|\/yeni)$/i.test(text.trim())) return wizardStart(env, m.message_id);
+  if (wiz && !/^\/(start|help|durum|unut|hafiza|hafıza)$/.test(text.trim())) return wizardInput(env, wiz, m, text);
+  // A picture without a link: start the wizard as a single-image post.
+  if (imageOf(m) && !(text.match(URL_RE) || []).length) return wizardStart(env, m.message_id, { format: 'single', image: imageOf(m), step: 'title' });
   const extra = [...(m.entities || []), ...(m.caption_entities || [])].filter((e) => e.type === 'text_link').map((e) => e.url);
   const urls = [...(text.match(URL_RE) || []), ...extra];
 
@@ -146,18 +181,21 @@ async function handle(u, env) {
     const note = text.replace(URL_RE, '').trim();
     const day = new Date(m.date * 1000).toISOString().slice(0, 10);
     const all = [...new Set(urls.map((x) => x.replace(/[).,]+$/, '')))];
+    let fresh = 0;
     for (const [i, url] of all.entries()) {
-      await queueLink(env, { id: `link-${day}-${m.message_id}${all.length > 1 ? `-${i + 1}` : ''}`, url, note, format: formatOf(note), post_at: postAtFrom(note, new Date(m.date * 1000)), received_at: new Date(m.date * 1000).toISOString() });
+      if (await queueLink(env, { id: `link-${day}-${m.message_id}${all.length > 1 ? `-${i + 1}` : ''}`, url, note, format: formatOf(note), post_at: postAtFrom(note, new Date(m.date * 1000)), received_at: new Date(m.date * 1000).toISOString() })) fresh++;
     }
+    if (!fresh) return send(env, 'ℹ️ Bu link zaten sırada, ikinci kez eklemedim. Farklı bir formatta istiyorsan "post" yazıp adım adım hazırlayabilirsin.', m.message_id);
     const at = postAtFrom(note, new Date(m.date * 1000));
     const when = at ? `${new Date(at).toLocaleString('tr-TR', { timeZone: 'Europe/Istanbul', weekday: 'long', hour: '2-digit', minute: '2-digit' })} (Türkiye saati), günlük limitten ayrı` : 'ilk uygun Amerika saatinde';
     return send(env, `✅ Aldım. Format: ${FORMAT_TR[formatOf(note)]}.\nClaude en geç 2 saat içinde hazırlayacak, önizlemesini buraya atacağım. Onaylarsan ${when} paylaşılır.`, m.message_id);
   }
   if (!text) return;
   if (text === '/start' || text === '/help') {
-    return send(env, 'Selam Mahir 👋\n• Link at: posta çevireyim (reel, carousel, tekli, prompt kelimelerinden birini ekleyebilirsin, "başlık: ..." da yazabilirsin, "21:30" ya da "yarın 10:00" yazarsan o saatte paylaşırım)\n• /durum: kuyruk ve bugünün postları\n• /rapor: son postların performansı (sohbet)\n• /pdf: son 7 günün PDF raporu (/pdf 14 = son 14 gün, /aylik = son 30 gün)\n• /hafiza: kalıcı hafızayı gör ve sil\n• /unut: sohbet geçmişini sıfırla\n• "Bunu hatırla: ..." ya da "kural: ..." yazarsan kalıcı hafızaya eklerim (sen onaylarsan)\n• Ya da bana normal yaz: "Fitbit postunu iptal et", "Gemini haberini şimdi paylaş", "Amazon postunu yarın 20:00\'ye ertele" gibi.', m.message_id);
+    return send(env, 'Selam Mahir 👋\n• post: adım adım yeni post (format, link ya da görsel, başlık, açıklama, saat butonlarla)\n• Görsel at: tekli post olarak hazırlayayım\n• Link at: posta çevireyim (reel, carousel, tekli, prompt kelimelerinden birini ekleyebilirsin, "başlık: ..." da yazabilirsin, "21:30" ya da "yarın 10:00" yazarsan o saatte paylaşırım)\n• /durum: kuyruk ve bugünün postları\n• /rapor: son postların performansı (sohbet)\n• /pdf: son 7 günün PDF raporu (/pdf 14 = son 14 gün, /aylik = son 30 gün)\n• /hafiza: kalıcı hafızayı gör ve sil\n• /unut: sohbet geçmişini sıfırla\n• "Bunu hatırla: ..." ya da "kural: ..." yazarsan kalıcı hafızaya eklerim (sen onaylarsan)\n• Ya da bana normal yaz: "Fitbit postunu iptal et", "Gemini haberini şimdi paylaş", "Amazon postunu yarın 20:00\'ye ertele" gibi.', m.message_id);
   }
-  const yes = /^(evet|onay|onayl|tamam|ok|olur|kaydet|yap)/i.test(text.trim().toLocaleLowerCase('tr')) && text.trim().length < 25;
+  // Only a bare "yes" confirms the last proposal, and only a recent one: "ok, fix this" is a new request.
+  const yes = /^(evet|onay|onaylıyorum|onayliyorum|onayla|tamam|ok|okey|olur|kaydet|yap)[.! ]*$/i.test(text.trim().toLocaleLowerCase('tr'));
   if (yes) {
     const last = await env.KV.get('last_pending');
     if (last) {
@@ -176,7 +214,7 @@ async function handle(u, env) {
   const question = text === '/durum' ? 'Kuyrukta ne var, bugün neler paylaşıldı, sırada ne var? Kısa listele.'
     : text === '/rapor' ? 'Son postların performansını analiz et: en iyi ve en kötü giden 3 post, neden, ve yarın için 3 somut öneri.'
     : text;
-  const answer = await chat(env, question);
+  const answer = await chat(env, (await replyContext(env, m)) + question);
   return send(env, answer, m.message_id);
 }
 
@@ -258,7 +296,7 @@ async function showMemory(env, replyTo) {
 async function proposeMemory(env, p) {
   const key = crypto.randomUUID().slice(0, 8);
   await env.KV.put(`mem:${key}`, JSON.stringify(p), { expirationTtl: 7 * 86400 });
-  await env.KV.put('last_pending', `mdo:${key}`, { expirationTtl: 3600 });
+  await env.KV.put('last_pending', `mdo:${key}`, { expirationTtl: 900 });
   const head = p.op === 'delete' ? '🧠 Hafızadan silinsin mi?' : p.op === 'replace' ? '🧠 Hafızadaki bir maddeyi güncelleyeyim mi?' : '🧠 Hafızaya ekleyeyim mi?';
   const body = p.op === 'delete' ? p.id : `${CAT_TR[p.category] || p.category}: ${p.text}${p.expires_at ? `\n(${p.expires_at} tarihine kadar)` : ''}`;
   await tg(env, 'sendMessage', { chat_id: env.OWNER_CHAT_ID, text: `${head}\n${body}${p.why ? `\nNeden: ${p.why}` : ''}`, reply_markup: { inline_keyboard: [[{ text: '✅ Evet', callback_data: `mdo:${key}` }, { text: '❌ Hayır', callback_data: `mundo:${key}` }]] } });
@@ -293,7 +331,7 @@ async function runTool(env, name, args) {
     const key = crypto.randomUUID().slice(0, 8);
     const r = { text: String(args.text).trim().slice(0, 1500), original: String(args.original || '').trim().slice(0, 500), job_id: args.job_id || null, retry_of: args.retry_of || null };
     await env.KV.put(`req:${key}`, JSON.stringify(r), { expirationTtl: 7 * 86400 });
-    await env.KV.put('last_pending', `rdo:${key}`, { expirationTtl: 3600 });
+    await env.KV.put('last_pending', `rdo:${key}`, { expirationTtl: 900 });
     await tg(env, 'sendMessage', { chat_id: env.OWNER_CHAT_ID, text: `📝 Claude'a iletilsin mi?\n${r.original || r.text}${r.job_id ? `\nPost: ${r.job_id}` : ''}\n(Claude bir sonraki çalışmasında, en geç ~2 saatte yapar, sonucu buraya yazarım.)`, reply_markup: { inline_keyboard: [[{ text: '✅ Gönder', callback_data: `rdo:${key}` }, { text: '❌ Vazgeç', callback_data: `rundo:${key}` }]] } });
     return 'Confirmation buttons were sent to Mahir. Tell him briefly to confirm with the button.';
   }
@@ -306,7 +344,7 @@ async function runTool(env, name, args) {
     if (args.action === 'reschedule' && !value) return 'Could not read the time. Ask Mahir for a clear time like 21:30.';
     const key = crypto.randomUUID().slice(0, 8);
     await env.KV.put(`act:${key}`, JSON.stringify({ action: args.action, id: args.id, value }), { expirationTtl: 3600 });
-    await env.KV.put('last_pending', `do:${key}`, { expirationTtl: 3600 });
+    await env.KV.put('last_pending', `do:${key}`, { expirationTtl: 900 });
     const NAMES = { cancel: 'İptal et', post_now: 'Şimdi paylaş', reschedule: 'Ertele', priority: 'Önceliği değiştir', approve: 'Onayla', reject: 'Reddet' };
     const extra = args.action === 'reschedule' ? `\nYeni saat: ${new Date(value).toLocaleString('tr-TR', { timeZone: 'Europe/Istanbul', weekday: 'long', hour: '2-digit', minute: '2-digit' })} (Türkiye)` : args.action === 'priority' ? `\nYeni öncelik: ${value}` : '';
     await tg(env, 'sendMessage', { chat_id: env.OWNER_CHAT_ID, text: `${NAMES[args.action]}: ${args.id}${extra}\nOnaylıyor musun?`, reply_markup: { inline_keyboard: [[{ text: '✅ Evet', callback_data: `do:${key}` }, { text: '❌ Vazgeç', callback_data: `undo:${key}` }]] } });
@@ -316,7 +354,10 @@ async function runTool(env, name, args) {
 }
 
 async function chat(env, question) {
-  const history = JSON.parse((await env.KV.get('history')) || '[]');
+  // After 2 quiet hours a new conversation starts, so an old topic does not leak into a new
+  // request (long-term memory stays).
+  const quiet = Date.now() - Number((await env.KV.get('history_at')) || 0) > 2 * 3600e3;
+  const history = quiet ? [] : JSON.parse((await env.KV.get('history')) || '[]');
   const memory = await loadMemory(env).catch(() => '[]');
   const ny = new Date().toLocaleString('en-US', { timeZone: 'America/New_York' });
   const tr = new Date().toLocaleString('tr-TR', { timeZone: 'Europe/Istanbul' });
@@ -360,6 +401,7 @@ ${memory}`;
   // Memory: last 25 messages (plain question and answer, without tool data).
   const next = [...history, { role: 'user', content: question }, { role: 'assistant', content: answer }].slice(-HISTORY);
   await env.KV.put('history', JSON.stringify(next));
+  await env.KV.put('history_at', String(Date.now()));
   return answer || 'Cevap üretemedim kanka, bir daha yazar mısın?';
 }
 
@@ -418,7 +460,15 @@ async function commitFiles(env, paths, change, message) {
     }
     const next = await change(current);
     if (!next) return null;
-    const tree = await (await gh(env, 'git/trees', { method: 'POST', body: JSON.stringify({ base_tree: commit.tree.sha, tree: Object.entries(next).map(([path, content]) => ({ path, mode: '100644', type: 'blob', content })) }) })).json();
+    // Text files go inline; binary files ({ base64 }) are uploaded as blobs first.
+    const entries = [];
+    for (const [path, content] of Object.entries(next)) {
+      if (content && typeof content === 'object' && content.base64) {
+        const blob = await (await gh(env, 'git/blobs', { method: 'POST', body: JSON.stringify({ content: content.base64, encoding: 'base64' }) })).json();
+        entries.push({ path, mode: '100644', type: 'blob', sha: blob.sha });
+      } else entries.push({ path, mode: '100644', type: 'blob', content });
+    }
+    const tree = await (await gh(env, 'git/trees', { method: 'POST', body: JSON.stringify({ base_tree: commit.tree.sha, tree: entries }) })).json();
     const created = await (await gh(env, 'git/commits', { method: 'POST', body: JSON.stringify({ message: `${message} [skip ci]`, tree: tree.sha, parents: [head] }) })).json();
     const res = await fetch(`https://api.github.com/repos/${env.REPO}/git/refs/heads/main`, {
       method: 'PATCH',
@@ -435,14 +485,17 @@ async function commitFiles(env, paths, change, message) {
 const parseList = (txt) => { try { return JSON.parse(txt || '[]'); } catch { return []; } };
 
 // Links and post actions go into small queue files; "Bot apply" processes whatever is pending.
-async function queueLink(env, item) {
+async function queueLink(env, item, files = {}) {
+  let added = false;
   await commitFiles(env, ['inbox/links.json'], (cur) => {
     const list = parseList(cur['inbox/links.json']);
-    if (list.some((l) => l.url === item.url)) return null;
+    if (list.some((l) => l.id === item.id || (item.url && l.url === item.url))) return null;
     list.push(item);
-    return { 'inbox/links.json': JSON.stringify(list, null, 2) + '\n' };
+    added = true;
+    return { 'inbox/links.json': JSON.stringify(list, null, 2) + '\n', ...files };
   }, `inbox: link ${item.id}`);
   await dispatch(env, 'bot-apply.yml', {}).catch(() => {});
+  return added;
 }
 async function queueAction(env, action, job, value) {
   const entry = { id: crypto.randomUUID().slice(0, 8), action, job, value: value || '', at: new Date().toISOString(), done: false };
@@ -658,4 +711,163 @@ async function send(env, text, replyTo) {
   for (const [i, c] of chunks.entries()) {
     await tg(env, 'sendMessage', { chat_id: env.OWNER_CHAT_ID, text: c, disable_web_page_preview: true, ...(i === 0 && replyTo ? { reply_parameters: { message_id: replyTo } } : {}) });
   }
+}
+
+// ---------- Replies: what is Mahir pointing at? ----------
+// A reply to an earlier message (a preview, a report, an answer) carries that message as context,
+// and the post it is about when the message names one or showed it.
+const JOB_ID = /\b(\d{4}-\d{2}-\d{2}-[a-z0-9][a-z0-9-]*[a-z0-9])\b/;
+async function replyContext(env, m) {
+  const r = m.reply_to_message;
+  if (!r) return '';
+  const t = [r.text, r.caption].filter(Boolean).join('\n');
+  let job = (t.match(JOB_ID) || [])[1] || null;
+  if (!job) {
+    try {
+      const sum = JSON.parse(await cached(env, 'queue', 300, () => queueSummary(env)));
+      job = (sum.jobs || []).find((j) => (j.tg || []).includes(r.message_id))?.id || null;
+    } catch { /* no summary */ }
+  }
+  const kind = r.photo ? ' (a picture of the post)' : r.video ? ' (a video)' : '';
+  return `[Mahir is replying to an earlier message${job ? ` about the post ${job}` : ''}${kind}: "${t.slice(0, 1200) || '(no text)'}". Treat that message as what "this", "bunu", "bu post" means${job ? `; call get_post with id ${job} before answering or proposing a change` : ''}.]\n\n`;
+}
+
+// ---------- Step-by-step post wizard ----------
+// post -> format -> link or picture -> headline -> caption (optional) -> time -> confirm.
+// No AI in between: buttons and plain answers, so it always does exactly what was chosen.
+const WZ_FORMATS = { carousel: '📰 Haber carousel', reel: '🎬 Reels', single: '🖼 Tekli görsel', prompt: '💡 Prompt carousel' };
+const WZ_WORD = { carousel: 'carousel', reel: 'reel', single: 'tekli', prompt: 'prompt' };
+const WZ_STEPS = ['format', 'link', 'title', 'caption', 'time', 'confirm'];
+const CANCEL_ROW = [{ text: '❌ İptal', callback_data: 'wz:x' }];
+const imageOf = (m) => (m.photo?.length ? { file_id: m.photo.at(-1).file_id, ext: 'jpg' }
+  : m.document && /^image\//.test(m.document.mime_type || '') ? { file_id: m.document.file_id, ext: (m.document.mime_type.split('/')[1] || 'jpg').replace('jpeg', 'jpg') } : null);
+async function wizGet(env) { const r = await env.KV.get('wiz'); return r ? JSON.parse(r) : null; }
+const wizPut = (env, w) => env.KV.put('wiz', JSON.stringify(w), { expirationTtl: 3600 });
+const nextStep = (step) => WZ_STEPS[WZ_STEPS.indexOf(step) + 1];
+const whenText = (w) => (w.post_at === 'now' ? 'Hazır olunca hemen (onayından sonra)' : w.post_at ? `${new Date(w.post_at).toLocaleString('tr-TR', { timeZone: 'Europe/Istanbul', weekday: 'long', day: 'numeric', month: 'long', hour: '2-digit', minute: '2-digit' })} (Türkiye saati)` : 'İlk uygun Amerika saati');
+
+async function wizardStart(env, replyTo, preset = {}) {
+  const w = { step: 'format', started: new Date().toISOString(), key: crypto.randomUUID().slice(0, 8), ...preset };
+  await wizPut(env, w);
+  if (preset.image) await send(env, '🖼 Görseli aldım, tekli post olarak hazırlıyorum.', replyTo);
+  return wizardAsk(env, w);
+}
+
+async function wizardAsk(env, w) {
+  const msg = (text, rows) => tg(env, 'sendMessage', { chat_id: env.OWNER_CHAT_ID, text, reply_markup: { inline_keyboard: [...rows, CANCEL_ROW] } });
+  if (w.step === 'format') {
+    return msg('📝 Yeni post. Hangi format?', [
+      [{ text: WZ_FORMATS.carousel, callback_data: 'wz:f:carousel' }, { text: WZ_FORMATS.reel, callback_data: 'wz:f:reel' }],
+      [{ text: WZ_FORMATS.single, callback_data: 'wz:f:single' }, { text: WZ_FORMATS.prompt, callback_data: 'wz:f:prompt' }],
+    ]);
+  }
+  if (w.step === 'link') {
+    const ask = {
+      carousel: 'Haberin linkini gönder.',
+      reel: 'Videonun linkini gönder (X, Instagram, TikTok, YouTube).\nYouTube ise istersen saati de yaz: 12:30-13:10',
+      single: 'Linki gönder ya da görseli buraya at.\nEn iyi kalite için görseli "Dosya" olarak gönder.',
+      prompt: 'Prompt, araç ya da paylaşımın linkini gönder.',
+    }[w.format];
+    return msg(ask, []);
+  }
+  if (w.step === 'title') {
+    const ask = w.format === 'reel' ? 'Videonun üstünde ne yazsın? Başlığı yaz.\nTürkçe yazarsan İngilizceye çevrilir.' : 'Başlığı yazmak ister misin?\nTürkçe yazarsan İngilizceye çevrilir.';
+    return msg(ask, [[{ text: '✍️ Claude yazsın', callback_data: 'wz:s' }]]);
+  }
+  if (w.step === 'caption') return msg('Açıklamayı (caption) yazmak ister misin?\nKaynak ve takip satırları otomatik eklenir.', [[{ text: '✍️ Claude yazsın', callback_data: 'wz:s' }]]);
+  if (w.step === 'time') {
+    return msg('Ne zaman paylaşılsın?\nSaat yazabilirsin: 21:30, yarın 10:00, NY 18:00', [
+      [{ text: '🇺🇸 İlk uygun Amerika saati', callback_data: 'wz:t:auto' }],
+      [{ text: '⚡ Hazır olunca hemen', callback_data: 'wz:t:now' }],
+    ]);
+  }
+  const lines = [
+    '📋 Özet', `Format: ${WZ_FORMATS[w.format]}`,
+    w.url ? `Link: ${w.url}` : w.image ? 'Görsel: gönderdiğin görsel' : '',
+    w.extra ? `Not: ${w.extra}` : '',
+    `Başlık: ${w.title || 'Claude yazacak'}`, `Açıklama: ${w.caption || 'Claude yazacak'}`, `Zaman: ${whenText(w)}`,
+    '', 'Claude hazırlayınca önizlemesi buraya gelecek, sen onaylamadan paylaşılmaz.',
+  ].filter((l) => l !== '');
+  return tg(env, 'sendMessage', { chat_id: env.OWNER_CHAT_ID, text: lines.join('\n'), reply_markup: { inline_keyboard: [[{ text: '✅ Onayla', callback_data: 'wz:ok' }], [{ text: '✏️ Baştan', callback_data: 'wz:r' }, ...CANCEL_ROW]] } });
+}
+
+async function wizardInput(env, w, m, text) {
+  const t = text.trim();
+  if (/^\/?(iptal|vazgeç|vazgec|cancel)$/i.test(t)) { await env.KV.delete('wiz'); return send(env, '❌ Post hazırlamayı iptal ettim.', m.message_id); }
+  if (w.step === 'format') return send(env, 'Önce yukarıdaki butonlardan formatı seç.', m.message_id);
+  if (w.step === 'link') {
+    const extra = [...(m.entities || []), ...(m.caption_entities || [])].filter((e) => e.type === 'text_link').map((e) => e.url);
+    const url = [...(t.match(URL_RE) || []), ...extra][0];
+    const img = imageOf(m);
+    if (url) { w.url = url.replace(/[).,]+$/, ''); w.extra = t.replace(URL_RE, '').trim(); delete w.image; }
+    else if (img && ['single', 'carousel'].includes(w.format)) { w.image = img; w.extra = t; }
+    else return send(env, w.format === 'single' ? 'Link ya da görsel bulamadım. Linki yapıştır ya da görseli gönder.' : 'Link bulamadım. Linki yapıştırıp gönder.', m.message_id);
+  } else if (w.step === 'title') {
+    if (!t) return send(env, 'Başlığı yazı olarak gönder ya da "Claude yazsın" butonuna bas.', m.message_id);
+    w.title = t.slice(0, 300);
+  } else if (w.step === 'caption') {
+    if (!t) return send(env, 'Açıklamayı yazı olarak gönder ya da "Claude yazsın" butonuna bas.', m.message_id);
+    w.caption = t.slice(0, 2000);
+  } else if (w.step === 'time') {
+    const at = postAtFrom(t, new Date(m.date * 1000));
+    if (!at) return send(env, 'Saati anlayamadım. Örnek: 21:30, yarın 10:00, NY 18:00. Ya da butonlardan seç.', m.message_id);
+    w.post_at = at;
+  } else if (w.step === 'confirm') {
+    return send(env, 'Özetteki "Onayla" butonuna bas ya da "iptal" yaz.', m.message_id);
+  }
+  w.step = nextStep(w.step);
+  await wizPut(env, w);
+  return wizardAsk(env, w);
+}
+
+async function wizardButton(env, cb) {
+  const owner = String(env.OWNER_CHAT_ID);
+  const [, cmd, val] = String(cb.data).split(':');
+  const done = (text) => Promise.all([
+    tg(env, 'answerCallbackQuery', { callback_query_id: cb.id, text }).catch(() => {}),
+    tg(env, 'editMessageReplyMarkup', { chat_id: owner, message_id: cb.message.message_id, reply_markup: { inline_keyboard: [] } }).catch(() => {}),
+  ]);
+  const w = await wizGet(env);
+  if (cmd === 'x') { await env.KV.delete('wiz'); await done('İptal'); return send(env, '❌ Post hazırlamayı iptal ettim.'); }
+  if (cmd === 'r') { await done('Baştan'); return wizardStart(env); }
+  if (!w) { await done('Süresi doldu'); return send(env, 'Bu post taslağının süresi doldu. "post" yazıp yeniden başlayabilirsin.'); }
+  const expect = { f: 'format', s: ['title', 'caption'], t: 'time', ok: 'confirm' }[cmd];
+  if (expect && ![].concat(expect).includes(w.step)) { await done('Bu adım geçti'); return; }
+  if (cmd === 'f' && WZ_FORMATS[val]) { w.format = val; w.step = 'link'; }
+  else if (cmd === 's') { w.step = nextStep(w.step); }
+  else if (cmd === 't') { w.post_at = val === 'now' ? 'now' : null; w.step = 'confirm'; }
+  else if (cmd === 'ok') { await done('Gönderiliyor'); return wizardSubmit(env, w); }
+  else { await done(''); return; }
+  await done('Tamam');
+  await wizPut(env, w);
+  return wizardAsk(env, w);
+}
+
+// Saves the post as an inbox link (with the picture in the repo when one was sent).
+async function wizardSubmit(env, w) {
+  const now = new Date();
+  const id = `link-${now.toISOString().slice(0, 10)}-w${w.key}`;
+  const files = {};
+  let imageFile = null;
+  if (w.image) {
+    const f = await tg(env, 'getFile', { file_id: w.image.file_id });
+    const res = await fetch(`https://api.telegram.org/file/bot${env.TELEGRAM_BOT_TOKEN}/${f.file_path}`);
+    if (!res.ok) throw new Error(`görsel indirilemedi (${res.status})`);
+    const bytes = new Uint8Array(await res.arrayBuffer());
+    let bin = '';
+    for (let i = 0; i < bytes.length; i += 0x8000) bin += String.fromCharCode(...bytes.subarray(i, i + 0x8000));
+    imageFile = `inbox/uploads/${id}.${w.image.ext || 'jpg'}`;
+    files[imageFile] = { base64: btoa(bin) };
+  }
+  const note = [WZ_WORD[w.format], w.extra || '', w.title ? `başlık: ${w.title}` : '', w.caption ? `caption: ${w.caption}` : ''].filter(Boolean).join('\n');
+  const item = {
+    id, url: w.url || null, image_file: imageFile, note, format: w.format,
+    title: w.title || null, caption: w.caption || null,
+    post_at: w.post_at === 'now' ? now.toISOString() : (w.post_at || null),
+    received_at: now.toISOString(), from: 'wizard',
+  };
+  const added = await queueLink(env, item, files);
+  await env.KV.delete('wiz');
+  if (!added) return send(env, 'ℹ️ Bu link zaten sırada, ikinci kez eklemedim.');
+  return send(env, `✅ Sıraya aldım (${WZ_FORMATS[w.format]}, ${whenText(w)}).\nClaude en geç 2 saat içinde hazırlayacak, önizlemesini buraya atacağım. Sen onaylamadan paylaşılmaz.`);
 }

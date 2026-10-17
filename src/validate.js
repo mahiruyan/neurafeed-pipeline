@@ -17,7 +17,9 @@ function validateReel(job, fileId) {
   if (!job.video || !job.video.url) p.push('video.url is required');
   if (!job.hook) p.push('hook is required');
   if (!job.caption) p.push('caption is required');
-  if (!Array.isArray(job.sources) || job.sources.length < 1) p.push('at least one source is required');
+  // A single post made from a picture Mahir sent (inbox/uploads/...) is his own content: no outside source needed.
+  const ownPicture = single && /^inbox\/uploads\//.test(job.slides?.[0]?.image?.url || '');
+  if (!ownPicture && (!Array.isArray(job.sources) || job.sources.length < 1)) p.push('at least one source is required');
   if (typeof job.sensitive !== 'boolean') p.push('sensitive must be true or false');
   if (DASHES.test([job.hook, job.caption, job.credit].join('\n'))) p.push('text contains an en dash or em dash');
   if (!/(Source|Credit|Video):/i.test(job.caption || '')) p.push('caption must end with "Source:" or "Video:" and the original creator');
@@ -31,7 +33,9 @@ function validateJob(job, fileId) {
   const single = job.format === 'single';
   if (!Array.isArray(job.slides) || (single ? job.slides.length !== 1 : (job.slides.length < 3 || job.slides.length > 8))) p.push(single ? 'a single post has exactly 1 slide (a cover)' : 'slides must be an array of 3 to 8 items');
   if (!job.caption) p.push('caption is required');
-  if (!Array.isArray(job.sources) || job.sources.length < 1) p.push('at least one source is required');
+  // A single post made from a picture Mahir sent (inbox/uploads/...) is his own content: no outside source needed.
+  const ownPicture = single && /^inbox\/uploads\//.test(job.slides?.[0]?.image?.url || '');
+  if (!ownPicture && (!Array.isArray(job.sources) || job.sources.length < 1)) p.push('at least one source is required');
   if (typeof job.timely !== 'boolean') p.push('timely must be true or false');
   if (typeof job.sensitive !== 'boolean') p.push('sensitive must be true or false');
   (job.slides || []).forEach((s, i) => {
@@ -44,7 +48,7 @@ function validateJob(job, fileId) {
   const dupes = urls.filter((u, i) => urls.indexOf(u) !== i);
   if (dupes.length) p.push('the same image is used on more than one slide');
   if (DASHES.test(textOf(job))) p.push('text contains an en dash or em dash');
-  if (!/Source:/i.test(job.caption || '')) p.push('caption must end with "Source:" and the outlet name');
+  if (!ownPicture && !/Source:/i.test(job.caption || '')) p.push('caption must end with "Source:" and the outlet name');
   return p;
 }
 

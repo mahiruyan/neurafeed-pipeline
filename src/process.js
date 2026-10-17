@@ -63,6 +63,7 @@ function summary(job) {
       continue;
     }
     const outDir = path.join(ROOT, 'out', id);
+    const sent = [];
     try {
       let files;
       let errors = [];
@@ -95,27 +96,31 @@ function summary(job) {
       setJobState(id, { status: 'rendered', files: files.map((f) => path.relative(ROOT, f)), image_errors: errors });
       if (cfg.mode === 'auto' && (job.review || job.sensitive) && !job.owner_approved && tg.enabled()) {
         // Sensitive stories and posts made from Mahir's links wait for his OK on Telegram.
-        await tg.sendAlbum(preview);
+        sent.push(...[].concat((await tg.sendAlbum(preview)) || []).map((x) => x.message_id));
         const msg = await tg.sendMessage(`${job.review ? '👀 Your link is ready. Post it?' : '⚠️ Sensitive story, needs your OK'}\n\n${summary(job)}`, [[
           { text: '✅ Approve', callback_data: `ok:${id}` },
           { text: '❌ Reject', callback_data: `no:${id}` },
         ]]);
+        sent.push(msg.message_id);
         setJobState(id, { status: 'pending', sent_at: new Date().toISOString(), message_id: msg.message_id, by: job.review ? 'from your link, waiting for Mahir' : 'sensitive, waiting for Mahir' });
       } else if (cfg.mode === 'auto') {
         const d = autoDecision(job, cfg);
         setJobState(id, { status: d.ok ? 'approved' : 'skipped', by: d.reason });
         if (tg.enabled()) {
-          await tg.sendAlbum(preview);
-          await tg.sendMessage(`${d.ok ? '🕒 Queued for auto-post' : '⛔ Not auto-posted'} (${d.reason})\n\n${summary(job)}`);
+          sent.push(...[].concat((await tg.sendAlbum(preview)) || []).map((x) => x.message_id));
+          sent.push((await tg.sendMessage(`${d.ok ? '🕒 Queued for auto-post' : '⛔ Not auto-posted'} (${d.reason})\n\n${summary(job)}`))?.message_id);
         }
       } else if (tg.enabled()) {
-        await tg.sendAlbum(preview);
+        sent.push(...[].concat((await tg.sendAlbum(preview)) || []).map((x) => x.message_id));
         const msg = await tg.sendMessage(summary(job), [[
           { text: '✅ Approve', callback_data: `ok:${id}` },
           { text: '❌ Reject', callback_data: `no:${id}` },
         ]]);
+        sent.push(msg.message_id);
         setJobState(id, { status: 'pending', sent_at: new Date().toISOString(), message_id: msg.message_id });
       }
+      // Which Telegram messages show this post, so a reply to any of them is understood by the bot.
+      if (sent.filter(Boolean).length) setJobState(id, { tg_messages: sent.filter(Boolean) });
       console.log(`Rendered ${id}: ${files.length} slides`);
     } catch (e) {
       console.error(e);

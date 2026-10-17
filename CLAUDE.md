@@ -182,6 +182,16 @@ links never count toward the 8-per-day news cap.
 These are Mahir's own picks: priority 1, and always `"review": true` (he gets a preview on
 Telegram and approves before it posts).
 
+Items made with the bot's step-by-step wizard (`"from": "wizard"`) also have `title` and
+`caption` (null when Mahir chose "Claude yazsın"): use `title` as the cover headline or Reel hook
+(word for word if English, a faithful English translation if Turkish; only add the *highlight*
+asterisks) and `caption` as the caption text (keep his words, add the follow and Source/Video
+lines). An item may have `image_file` instead of `url` (a picture Mahir sent, already in the
+repo, for example `inbox/uploads/link-....jpg`): make a `"format": "single"` post with that file
+as the cover `image.url` (exactly that path) and the headline from `title`; open the picture to
+see what it shows. With no title, write a short factual headline about what the picture clearly
+shows and nothing more; if you cannot tell, add it to `inbox/skipped.json`.
+
 For links you cannot open yourself (Instagram, Threads), the bot saves what the post shows in
 `preview` on the inbox item: `title`, `text` (the caption) and `image_file` (the post's cover
 image, for example `inbox/previews/link-....jpg`). Read the caption and open the image file to see

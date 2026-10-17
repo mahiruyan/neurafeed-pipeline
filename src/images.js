@@ -6,8 +6,9 @@ const { execFileSync } = require('child_process');
 const UA = 'NeuraFeedPipeline/0.1 (+https://neurafeedai.com; contact hello@neurafeedai.com)';
 
 async function download(url, dest, minBytes = 15000) {
-  // Built-in logo library: "assets/logos/claude.png" and friends.
-  if (url.startsWith('assets/')) {
+  // Built-in logo library ("assets/logos/claude.png") and images Mahir sent to the bot
+  // ("inbox/uploads/<id>.jpg") are files in the repo.
+  if (/^(assets|inbox\/uploads)\//.test(url) && !url.includes('..')) {
     fs.copyFileSync(path.join(__dirname, '..', url), dest);
     return dest;
   }

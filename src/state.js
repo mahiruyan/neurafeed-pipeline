@@ -59,7 +59,7 @@ function writeSummary() {
         id: s.id, status: s.status, posted_at: s.posted_at || null, post_at: j.post_at || null,
         priority: j.priority || 2, format: j.type === 'reel' ? 'reel' : (j.format || 'news'),
         headline: String(j.slides?.[0]?.headline || j.hook || '').replace(/\*/g, ''),
-        from_link: Boolean(j.link_id), error: s.status === 'posted' ? null : (s.error || null),
+        from_link: Boolean(j.link_id), error: s.status === 'posted' ? null : (s.error || null), tg: [...(s.tg_messages || []), ...(s.message_id ? [s.message_id] : [])],
       };
     })
     .sort((a, b) => a.id.localeCompare(b.id));

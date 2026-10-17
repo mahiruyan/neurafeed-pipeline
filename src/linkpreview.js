@@ -22,7 +22,7 @@ function meta(html, prop) {
   let list = [];
   try { list = JSON.parse(fs.readFileSync(FILE, 'utf8')); } catch { return; }
   let changed = false;
-  for (const item of list.filter((l) => !l.preview)) {
+  for (const item of list.filter((l) => !l.preview && l.url)) {
     try {
       const res = await fetch(item.url, { headers: { 'User-Agent': UA, 'Accept-Language': 'en-US,en;q=0.9' }, redirect: 'follow' });
       const html = await res.text();

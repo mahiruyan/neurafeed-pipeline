@@ -14,3 +14,12 @@ crons = ["*/5 * * * *", "0 17 * * SUN", "0 7 * * MON", "0 7 1 * *"]
 [[kv_namespaces]]
 binding = "KV"
 id = "__KV_ID__"
+
+# Background queue for Telegram messages (answers Telegram at once, works up to 15 minutes).
+[[durable_objects.bindings]]
+name = "RUNNER"
+class_name = "Runner"
+
+[[migrations]]
+tag = "v1"
+new_sqlite_classes = ["Runner"]

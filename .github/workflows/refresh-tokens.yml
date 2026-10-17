@@ -8,6 +8,9 @@ on:
     - cron: '17 6 1,15 * *'
   workflow_dispatch:
 
+permissions:
+  actions: write
+
 jobs:
   refresh:
     runs-on: ubuntu-latest
@@ -43,3 +46,11 @@ jobs:
             [ -n "$TG_TOKEN" ] && curl -s "https://api.telegram.org/bot$TG_TOKEN/sendMessage" -d chat_id="$TG_CHAT" --data-urlencode "text=⚠️ Token yenileme sorunu:$fail" >/dev/null
             exit 1
           fi
+      - name: Give the Telegram bot the new Instagram token (redeploy)
+        if: success()
+        env:
+          T: ${{ github.token }}
+        run: |
+          curl -s -X POST -H "Authorization: Bearer $T" -H "Accept: application/vnd.github+json" \
+            "https://api.github.com/repos/${{ github.repository }}/actions/workflows/deploy-bot.yml/dispatches" -d '{"ref":"main"}'
+          echo "::notice::bot redeploy started"

@@ -18,14 +18,16 @@ function fakeWorld() {
   let n = 0;
   const sent = [];
   const kv = new Map();
-  const world = { sent, kv, files: () => trees[commits[head].tree], conflictsLeft: 0, dispatched: [],
+  const world = { sent, kv, blobs: {}, files: () => trees[commits[head].tree], conflictsLeft: 0, dispatched: [],
     put(p, content) { const t = `t${++n}`; trees[t] = { ...trees[commits[head].tree], [p]: content }; const c = `c${n}`; commits[c] = { tree: t, parent: head }; head = c; } };
   const json = (d, status = 200) => new Response(JSON.stringify(d), { status, headers: { 'content-type': 'application/json' } });
   world.fetch = async (url, init = {}) => {
     const u = new URL(String(url));
     const body = init.body ? JSON.parse(init.body) : {};
+    if (u.hostname === 'api.telegram.org' && u.pathname.startsWith('/file/')) return new Response(new Uint8Array([0xff, 0xd8, 0xff, 1, 2, 3]));
     if (u.hostname === 'api.telegram.org') {
       const method = u.pathname.split('/').pop();
+      if (method === 'getFile') { sent.push({ method, ...body }); return json({ ok: true, result: { file_path: 'photos/x.jpg' } }); }
       sent.push({ method, ...body });
       return json({ ok: true, result: { message_id: 999 } });
     }
@@ -38,7 +40,8 @@ function fakeWorld() {
     }
     if (p === 'git/ref/heads/main') return json({ object: { sha: head } });
     if (p.startsWith('git/commits/')) return json({ tree: { sha: commits[p.slice(12)].tree } });
-    if (p === 'git/trees') { const t = `t${++n}`; trees[t] = { ...trees[body.base_tree] }; for (const e of body.tree) trees[t][e.path] = e.content; return json({ sha: t }); }
+    if (p === 'git/blobs') { const b = `b${++n}`; world.blobs[b] = body.content; return json({ sha: b }); }
+    if (p === 'git/trees') { const t = `t${++n}`; trees[t] = { ...trees[body.base_tree] }; for (const e of body.tree) trees[t][e.path] = e.content ?? `blob:${e.sha}`; return json({ sha: t }); }
     if (p === 'git/commits') { const c = `c${++n}`; commits[c] = { tree: body.tree, parent: body.parents[0] }; return json({ sha: c }); }
     if (p === 'git/refs/heads/main') {
       // Someone else pushed in between: the bot must read again and retry.
@@ -126,4 +129,126 @@ test('a pending post can still be approved with its button', async () => {
   assert.equal(actions.length, 1);
   assert.equal(actions[0].action, 'ok');
   assert.ok(world.dispatched.some((d) => d.includes('bot-apply.yml')));
+});
+
+const msg = (text, extra = {}) => ({ message: { chat: { id: 1 }, message_id: 100 + upd, date: Math.floor(Date.now() / 1000), text, ...extra } });
+const lastText = (world) => world.sent.filter((m) => m.method === 'sendMessage').at(-1)?.text || '';
+const links = (world) => JSON.parse(world.files()['inbox/links.json'] || '[]');
+
+test('wizard: reel with link, headline, skipped caption, time -> one inbox item with exactly those choices', async () => {
+  const world = fakeWorld();
+  const worker = await load(world);
+  await hook(worker, world, msg('post'));
+  assert.match(lastText(world), /Hangi format/);
+  await hook(worker, world, press('wz:f:reel'));
+  await hook(worker, world, msg('nope'));
+  assert.match(lastText(world), /Link bulamadım/);
+  await hook(worker, world, msg('https://x.com/a/status/1 bunu kısa tut'));
+  await hook(worker, world, msg('Robot katlanmış çamaşırı dolaba koyuyor'));
+  await hook(worker, world, press('wz:s'));
+  await hook(worker, world, msg('yarın 21:30'));
+  assert.match(lastText(world), /Özet[\s\S]*Reels[\s\S]*x\.com[\s\S]*Robot katlanmış[\s\S]*Claude yazacak/);
+  await hook(worker, world, press('wz:ok'));
+  const l = links(world);
+  assert.equal(l.length, 1);
+  assert.equal(l[0].format, 'reel');
+  assert.equal(l[0].url, 'https://x.com/a/status/1');
+  assert.equal(l[0].title, 'Robot katlanmış çamaşırı dolaba koyuyor');
+  assert.equal(l[0].caption, null);
+  assert.ok(l[0].post_at && new Date(l[0].post_at) > new Date());
+  assert.match(l[0].note, /^reel\nbunu kısa tut\nbaşlık: Robot/);
+  assert.equal(await world.kv.get('wiz') ?? null, null, 'wizard closed');
+  assert.match(lastText(world), /Sıraya aldım/);
+});
+
+test('wizard: a picture sent on its own becomes a single post, stored in the repo', async () => {
+  const world = fakeWorld();
+  const worker = await load(world);
+  await hook(worker, world, msg(undefined, { photo: [{ file_id: 'small' }, { file_id: 'big' }] }));
+  assert.match(lastText(world), /Başlığı yazmak/);
+  await hook(worker, world, msg('Bu robot yürüyor'));
+  await hook(worker, world, msg('Açıklama metni'));
+  await hook(worker, world, press('wz:t:auto'));
+  await hook(worker, world, press('wz:ok'));
+  const l = links(world);
+  assert.equal(l.length, 1);
+  assert.equal(l[0].format, 'single');
+  assert.equal(l[0].url, null);
+  assert.match(l[0].image_file, /^inbox\/uploads\/link-.*\.jpg$/);
+  assert.equal(l[0].post_at, null);
+  assert.match(world.files()[l[0].image_file], /^blob:/);
+  assert.ok(world.sent.some((m) => m.method === 'getFile' && m.file_id === 'big'), 'largest photo size used');
+});
+
+test('wizard: old buttons and cancel do nothing harmful', async () => {
+  const world = fakeWorld();
+  const worker = await load(world);
+  await hook(worker, world, msg('post'));
+  await hook(worker, world, press('wz:f:carousel'));
+  await hook(worker, world, press('wz:f:reel')); // an old format button pressed again
+  await hook(worker, world, msg('iptal'));
+  assert.equal(await world.kv.get('wiz') ?? null, null);
+  await hook(worker, world, press('wz:ok'));
+  assert.equal(links(world).length, 0);
+  assert.match(lastText(world), /süresi doldu/);
+});
+
+test('a link already in the queue is reported, not silently accepted', async () => {
+  const world = fakeWorld();
+  const worker = await load(world);
+  await hook(worker, world, msg('https://example.com/news'));
+  await hook(worker, world, msg('https://example.com/news reel'));
+  assert.equal(links(world).length, 1);
+  assert.match(lastText(world), /zaten sırada/);
+});
+
+test('"ok, fix this" is not taken as a confirmation of an old proposal', async () => {
+  const world = fakeWorld();
+  const worker = await load(world);
+  world.kv.set('act:k', JSON.stringify({ action: 'cancel', id: 'a', value: '' }));
+  world.kv.set('last_pending', 'do:k');
+  let asked = null;
+  const realFetch = globalThis.fetch;
+  globalThis.fetch = async (url, init) => {
+    if (String(url).includes('deepseek')) { asked = JSON.parse(init.body).messages.at(-1).content; return new Response(JSON.stringify({ choices: [{ message: { content: 'tamam' } }] })); }
+    return realFetch(url, init);
+  };
+  world.env.DEEPSEEK_API_KEY = 'k';
+  await hook(worker, world, msg('ok bunu düzelt'));
+  assert.equal(world.files()['inbox/actions.json'], undefined, 'old cancel not run');
+  assert.equal(asked, 'ok bunu düzelt');
+});
+
+test('a reply carries the quoted message and its post to the model', async () => {
+  const world = fakeWorld();
+  const worker = await load(world);
+  world.put('state/summary.json', JSON.stringify({ jobs: [{ id: '2026-10-17-gemini-launch', tg: [555] }] }));
+  let asked = null;
+  const realFetch = globalThis.fetch;
+  globalThis.fetch = async (url, init) => {
+    if (String(url).includes('deepseek')) { asked = JSON.parse(init.body).messages.at(-1).content; return new Response(JSON.stringify({ choices: [{ message: { content: 'tamam' } }] })); }
+    return realFetch(url, init);
+  };
+  world.env.DEEPSEEK_API_KEY = 'k';
+  await hook(worker, world, msg('bunun başlığını değiştir', { reply_to_message: { message_id: 555, photo: [{ file_id: 'p' }] } }));
+  assert.match(asked, /about the post 2026-10-17-gemini-launch/);
+  assert.match(asked, /get_post with id 2026-10-17-gemini-launch/);
+  assert.match(asked, /bunun başlığını değiştir$/);
+});
+
+test('background queue: messages are taken in order and each runs once', async () => {
+  const world = fakeWorld();
+  const mod = await import(`${modFile}?v=${Math.random()}`);
+  globalThis.fetch = world.fetch;
+  const store = new Map();
+  let alarm = null;
+  const state = { storage: { get: async (k) => store.get(k), put: async (k, v) => { store.set(k, v); }, getAlarm: async () => alarm, setAlarm: async (t) => { alarm = t; } } };
+  const runner = new mod.Runner(state, world.env);
+  world.kv.set('req:a', JSON.stringify({ text: 'one' }));
+  world.kv.set('req:b', JSON.stringify({ text: 'two' }));
+  for (const d of ['rdo:a', 'rdo:b']) await runner.fetch(new Request('https://runner/enqueue', { method: 'POST', body: JSON.stringify({ update_id: 1, ...press(d) }) }));
+  assert.ok(alarm, 'alarm set');
+  await runner.alarm();
+  assert.deepEqual(requests(world).map((r) => r.text), ['one', 'two']);
+  assert.deepEqual(store.get('q'), []);
 });
