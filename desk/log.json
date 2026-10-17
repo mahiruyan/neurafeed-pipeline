@@ -1111,5 +1111,81 @@
       }
     ],
     "requests": []
+  },
+  {
+    "run_at": "2026-10-17T10:15:14.186Z",
+    "summary": "Early morning run (05:55 New York): no open links or requests. Queued three stories for today: Replit's CEO saying it left Anthropic for OpenAI, Jensen Huang rejecting Sam Altman's view that some AI hacks must be accepted, and Anthropic's report that its AI agents now log 6 times its staff's hours. Today now has 5 jobs.",
+    "considered": [
+      {
+        "story": "Replit CEO says Replit no longer works with Anthropic, OpenAI models are better now",
+        "source": "https://www.unite.ai/replit-ceo-masad-says-company-no-longer-works-with-anthropic/",
+        "decision": "queued",
+        "job_id": "2026-10-17-replit-drops-anthropic-for-openai",
+        "priority": 1,
+        "reason": "Now confirmed by Unite.AI, Mezha and byteiota from TechCrunch's Disrupt session; the dispute from a person familiar with the deal is included."
+      },
+      {
+        "story": "Jensen Huang says he accepts zero AI cybersecurity incidents, rejecting Sam Altman's trade-off",
+        "source": "https://fortune.com/2026/10/14/nvidia-ceo-huang-says-society-shouldnt-tolerate-ai-cyber-incidents-says-ai-doomers-ought-to-stop-working-on-the-technology/",
+        "decision": "queued",
+        "job_id": "2026-10-17-huang-zero-ai-hacks-vs-altman",
+        "priority": 1,
+        "reason": "NVIDIA vs OpenAI clash resurfacing in today's news; Fortune interview from October 14 confirmed by Benzinga and The Hans India. Set non-timely; it expires at 14:03 New York today."
+      },
+      {
+        "story": "Anthropic report: AI agents log 6 times employee hours, junior technical hires fell from 27% to 9%",
+        "source": "https://www.anthropic.com/research/employment-at-anthropic",
+        "decision": "queued",
+        "job_id": "2026-10-17-anthropic-agents-outwork-staff-6-to-1",
+        "priority": 2,
+        "reason": "Broad jobs interest, read the primary report plus NewsBytes; priority 2 because two Anthropic posts are already queued today."
+      },
+      {
+        "story": "Postgres 19 delayed after AI reviewers find more bugs than humans can fix",
+        "source": "https://www.snowflake.com/en/blog/engineering/postgresql-19-release-delay-feature-reverts/",
+        "decision": "skipped",
+        "reason": "Could not open The Register report; Snowflake's September post does not tie the delay to AI reviewers and the second source is speculative."
+      },
+      {
+        "story": "Eight states sue OpenAI over ChatGPT's impact on children",
+        "decision": "covered",
+        "reason": "Already covered as 2026-10-14-eight-states-sue-openai-chatgpt-kids."
+      },
+      {
+        "story": "OpenAI adds parallel agents to GPT-6 Pro in ChatGPT",
+        "source": "RuntimeWire via Google News",
+        "decision": "skipped",
+        "reason": "Single small outlet in the feed and no confirming source found in search."
+      },
+      {
+        "story": "OpenAI hires another SpaceX sales lead for its cybersecurity business",
+        "source": "Bloomberg via Google News",
+        "decision": "skipped",
+        "reason": "Minor hiring news with little broad interest."
+      },
+      {
+        "story": "North Korea says it tested an AI-assisted torpedo system",
+        "source": "Washington Post via Google News",
+        "decision": "skipped",
+        "reason": "Military and politics story, weak AI angle for our audience."
+      },
+      {
+        "story": "Gemini 4 Argon cut its own robot pick-and-place time from 58.9 to 17.4 seconds",
+        "source": "MIXED via Google News",
+        "decision": "skipped",
+        "reason": "Detail from the Argon launch we covered on October 13."
+      },
+      {
+        "story": "Anthropic quietly pitches its own AI safety bill",
+        "decision": "covered",
+        "reason": "Already queued as 2026-10-17-anthropic-pitches-own-ai-safety-bill."
+      },
+      {
+        "story": "Anthropic offers Blackstone double-digit yield in chip financing deal",
+        "decision": "skipped",
+        "reason": "Paywalled FT financing story with little broad appeal."
+      }
+    ],
+    "requests": []
   }
 ]
