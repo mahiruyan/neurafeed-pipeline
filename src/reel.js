@@ -124,6 +124,9 @@ function activeArea(src, info) {
 // but cropped around its center to an almost square box that fills the width, so it is big on the
 // phone. video.fit: "full" keeps the whole frame instead (for screens, charts, several people side
 // by side). A vertical video fills the whole screen.
+// Instagram fills tall phones (19.5:9) by cropping about 9% off each side of a 9:16 Reel, so text
+// stays at least this far from the left and right edges.
+const SAFE = 140;
 const BOX_AR = 1.15; // width / height of the video box for wide sources
 function layoutFor(ar, fit) {
   if (fit === 'full') {
@@ -138,12 +141,12 @@ function layoutFor(ar, fit) {
 
 const header = (job, color) => `
 <div style="display:flex;align-items:center;gap:22px">
-<img src="${logo}" style="width:112px;height:112px">
+<img src="${logo}" style="width:100px;height:100px">
 <div style="display:flex;flex-direction:column;gap:0">
-<div style="font-family:Poppins;font-size:38px;font-weight:700;color:#fff;line-height:1.2">Neurafeed AI</div>
-<div style="font-family:Poppins;font-size:31px;color:${color};line-height:1.2">@neurafeed.ai</div>
+<div style="font-family:Poppins;font-size:35px;font-weight:700;color:#fff;line-height:1.2">Neurafeed AI</div>
+<div style="font-family:Poppins;font-size:28px;color:${color};line-height:1.2">@neurafeed.ai</div>
 </div></div>
-<p style="margin:0;font-family:Poppins;font-size:${job.hook_size || 56}px;line-height:1.24;font-weight:500;color:#fff;letter-spacing:-0.3px">${hlb(job.hook)}</p>`;
+<p style="margin:0;font-family:Poppins;font-size:${job.hook_size || 50}px;line-height:1.24;font-weight:500;color:#fff;letter-spacing:-0.3px">${hlb(job.hook)}</p>`;
 
 // HTML for the frame layer. The element #video marks where the video goes; it stays transparent.
 function frameHtml(job, lay) {
@@ -151,17 +154,17 @@ function frameHtml(job, lay) {
     return `<div style="position:relative;width:${W}px;height:${H}px;overflow:hidden">
 <div id="video" style="position:absolute;inset:0"></div>
 <div style="position:absolute;top:0;left:0;width:${W}px;height:820px;background:linear-gradient(180deg,rgba(0,0,0,.9) 0%,rgba(0,0,0,.7) 55%,rgba(0,0,0,0) 100%)"></div>
-<div style="position:absolute;top:220px;left:0;width:${W}px;box-sizing:border-box;padding:0 56px;display:flex;flex-direction:column;gap:28px">${header(job, '#c3c8cc')}</div>
-<div style="position:absolute;left:40px;bottom:330px;font-family:Poppins;font-size:24px;color:#fff;opacity:.75">@neurafeed.ai</div>
+<div style="position:absolute;top:220px;left:0;width:${W}px;box-sizing:border-box;padding:0 ${SAFE}px;display:flex;flex-direction:column;gap:28px">${header(job, '#c3c8cc')}</div>
+<div style="position:absolute;left:${SAFE}px;bottom:330px;font-family:Poppins;font-size:24px;color:#fff;opacity:.75">@neurafeed.ai</div>
 </div>`;
   }
   // Under the video only the follow line (the credit is in the caption).
-  const cta = `<div style="box-sizing:border-box;padding:0 40px;font-family:Poppins;font-size:34px;color:#c3c8cc">Follow <span style="color:${ACC};font-weight:600">@neurafeed.ai</span> for daily AI news</div>`;
+  const cta = `<div style="box-sizing:border-box;padding:0 ${SAFE}px;font-family:Poppins;font-size:31px;color:#c3c8cc">Follow <span style="color:${ACC};font-weight:600">@neurafeed.ai</span> for daily AI news</div>`;
   return `<div style="width:${W}px;height:${H}px;box-sizing:border-box;padding-bottom:110px;display:flex;flex-direction:column;justify-content:center;gap:34px;overflow:hidden">
-<div style="box-sizing:border-box;padding:0 40px;display:flex;flex-direction:column;gap:26px">${header(job, '#9aa1a7')}</div>
+<div style="box-sizing:border-box;padding:0 ${SAFE}px;display:flex;flex-direction:column;gap:24px">${header(job, '#9aa1a7')}</div>
 <div style="position:relative;align-self:center;width:${lay.vw}px;height:${lay.vh}px">
 <div id="video" style="position:absolute;inset:0"></div>
-<div style="position:absolute;left:24px;bottom:20px;font-family:Poppins;font-size:22px;color:#fff;opacity:.6">@neurafeed.ai</div>
+<div style="position:absolute;left:${SAFE}px;bottom:20px;font-family:Poppins;font-size:22px;color:#fff;opacity:.6">@neurafeed.ai</div>
 </div>
 ${cta}
 </div>`;
