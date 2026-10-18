@@ -10,9 +10,14 @@
       "status": "approved",
       "at": "2026-10-18T14:20:10.350Z",
       "by": "auto: 4 source(s), not sensitive"
+    },
+    {
+      "status": "publish_failed",
+      "at": "2026-10-18T22:15:38.330Z",
+      "by": "system"
     }
   ],
-  "status": "approved",
+  "status": "publish_failed",
   "files": [
     "out/2026-10-18-opencode-breach-ai-api-keys/1.jpg",
     "out/2026-10-18-opencode-breach-ai-api-keys/2.jpg",
@@ -23,7 +28,7 @@
   "image_errors": [
     "slide 2: Not an image (text/html) at https://cybersecuritynews.com/wp-content/uploads/2026/10/OpenCode-Security-Breach.webp"
   ],
-  "updated_at": "2026-10-18T14:20:12.398Z",
+  "updated_at": "2026-10-18T22:15:38.330Z",
   "by": "auto: 4 source(s), not sensitive",
   "tg_messages": [
     841,
@@ -32,5 +37,7 @@
     844,
     845,
     846
-  ]
+  ],
+  "error": "Instagram 17841477983419365/media_publish: Media ID is not available",
+  "attempts": 1
 }
