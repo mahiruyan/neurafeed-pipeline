@@ -1,0 +1,105 @@
+{
+  "id": "2026-10-18-opencode-breach-ai-api-keys",
+  "created_at": "2026-10-18T14:30:00Z",
+  "story_time": "2026-10-17T12:00:00Z",
+  "timely": false,
+  "sensitive": false,
+  "priority": 2,
+  "sources": [
+    {
+      "name": "Cybersecurity News",
+      "url": "https://cybersecuritynews.com/opencode-security-breach/"
+    },
+    {
+      "name": "Dealroom",
+      "url": "https://dealroom.co/news/163473-opencode-breach-drains-users-ai-keys-as-platforms-holding-customer-crede/"
+    },
+    {
+      "name": "Crypto Briefing",
+      "url": "https://cryptobriefing.com/opencode-distillation-attack-api-key-breach/"
+    },
+    {
+      "name": "Blockonomi",
+      "url": "https://blockonomi.com/opencode-security-breach-exposes-api-keys-of-1-4-of-console-users"
+    }
+  ],
+  "caption": "AI coding platform OpenCode says attackers got into a legacy system and may have exposed OpenAI, Anthropic and Google API keys saved by about 1.4% of its Console users.\nIt calls it a large scale distillation attack. Some users reported fast draining balances.\nIf you linked provider keys to OpenCode Console, revoke and replace them now.\n\nDo you store your AI API keys in third party tools?\n\nFollow @neurafeed.ai for daily AI news.\n\nSource: Cybersecurity News",
+  "slides": [
+    {
+      "kind": "cover",
+      "headline": "Hackers just got into OpenCode and may have your *OpenAI and Claude keys*",
+      "image": {
+        "url": "https://eu-images.contentstack.com/v3/assets/blt6b0f74e5591baa03/bltd8365eeabd8fa0ff/6a564587dfdd3b621d164de6/Data_center.jpg?width=1280&auto=webp&quality=80&disable=upscale",
+        "credit": "Data Center Knowledge",
+        "fallback_urls": [],
+        "generate": "Vertical photo of a dark home office at night. A man in a black hoodie, face hidden in shadow, sits in the right two thirds of the frame and pulls a ring of shiny brass keys out of the glowing screen of an open laptop, as if the keys were coming straight out of the display. A few keys are falling onto the desk, and a stack of coins on the desk is shrinking. Cold blue light from the screen lights his hands. Headroom above his head. The left third of the frame is empty dark background. The bottom third is the dark desk. Blank surfaces, no readable text or labels on any object, no letters, no logos, no watermarks. Photorealistic, high contrast, one clear subject. It must look like an unedited real photo from a news agency, not a painting, not digital art, no glow effects.",
+        "refs": [
+          "assets/logos/openai.png",
+          "assets/logos/claude.png"
+        ]
+      },
+      "pos": "center 35%",
+      "badges": [
+        {
+          "url": "assets/logos/openai.png",
+          "shape": "free",
+          "side": "left",
+          "cutout": true
+        },
+        {
+          "url": "assets/logos/claude.png",
+          "shape": "free",
+          "side": "left",
+          "cutout": true
+        }
+      ]
+    },
+    {
+      "kind": "text",
+      "heading": "A *forgotten system* got hit",
+      "paras": [
+        "OpenCode, an open source AI coding platform, says someone gained unauthorized access to a legacy system it was in the process of shutting down.",
+        "It emailed affected users on Saturday, October 17. Users who did not get an email were not affected, the company says."
+      ],
+      "image": {
+        "url": "https://cybersecuritynews.com/wp-content/uploads/2026/10/OpenCode-Security-Breach.webp",
+        "credit": "Cybersecurity News"
+      }
+    },
+    {
+      "kind": "text",
+      "heading": "*Your keys*, their bill",
+      "paras": [
+        "About 1.4% of Console users who linked outside AI providers are in scope. Their stored OpenAI, Anthropic and Google API keys may have been exposed.",
+        "OpenCode calls it a large scale distillation attack, meaning someone harvests answers from top models to train their own. Some users reported balances draining fast."
+      ],
+      "image": {
+        "url": "https://sg-imgs.dealroom.co/1651d84c904a1139874cac124ab3e10b.jpeg?auto=compress&cs=origin",
+        "credit": "Dealroom"
+      }
+    },
+    {
+      "kind": "text",
+      "heading": "One user lost *$1,700*",
+      "paras": [
+        "Developer Preston Zeller reported losses of $1,700, Dealroom says. OpenCode has not said how many keys were taken or whether it will refund victims.",
+        {
+          "t": "If you linked keys to OpenCode Console: revoke and replace them in each provider's dashboard, update your apps and check recent usage.",
+          "strong": true
+        }
+      ],
+      "image": {
+        "url": "https://blockonomi.com/wp-content/uploads/2026/04/hack.webp",
+        "credit": "Blockonomi"
+      }
+    },
+    {
+      "kind": "cta",
+      "hook": "One leaked key can drain your AI budget overnight. Follow for the security news that protects your wallet.",
+      "image": {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5d/BalticServers_data_center.jpg/1920px-BalticServers_data_center.jpg",
+        "credit": "BalticServers.com / CC BY-SA 3.0"
+      }
+    }
+  ]
+}
