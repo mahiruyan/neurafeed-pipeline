@@ -1,0 +1,58 @@
+{
+  "id": "2026-10-18-gemini-21-word-prompt-formula",
+  "format": "utility",
+  "created_at": "2026-10-18T18:20:00Z",
+  "story_time": "2026-10-18T18:00:00Z",
+  "timely": false,
+  "sensitive": false,
+  "priority": 2,
+  "sources": [
+    { "name": "Google Workspace blog", "url": "https://blog.google/products/workspace/google-gemini-workspace-ai-prompt-tips/" },
+    { "name": "Google Workspace Help", "url": "https://support.google.com/a/users/answer/14200040?hl=en" },
+    { "name": "9to5Google", "url": "https://9to5google.com/2024/04/09/gemini-google-workspace-prompting-guide/" }
+  ],
+  "caption": "Google says the best Gemini prompts average about 21 words, while most first tries are under nine.\nIts own formula has four parts: persona, task, context and format.\nYou don't need all four, but a few make a big difference.\n\nHow many words was your last prompt?\n\nFollow @neurafeed.ai for daily AI news.\n\nSource: Google · Photos: 9to5Google, Google",
+  "slides": [
+    { "kind": "cover",
+      "headline": "Google says your AI prompts are too short. Its own guide shows the *21 word formula*",
+      "image": {
+        "url": "https://9to5google.com/wp-content/uploads/sites/4/2024/04/Gemini-Google-Workspace-prompting-guide.jpg?quality=82&strip=all&w=1600",
+        "credit": "9to5Google",
+        "fallback_urls": ["https://storage.googleapis.com/gweb-uniblog-publish-prod/images/AI_Workspace_Prompts.width-1300.png"]
+      },
+      "pos": "center center",
+      "badges": [ { "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Google_%22G%22_logo.svg/500px-Google_%22G%22_logo.svg.png", "fit": "contain" } ],
+      "badge_border": "white" },
+    { "kind": "text",
+      "heading": "1. Say *who you are*",
+      "paras": [
+        "Google's first building block is the persona. Start by telling Gemini your role, so it knows who the answer is for.",
+        { "t": "Example: \"I'm a project manager...\"", "strong": true }
+      ],
+      "image": { "url": "https://i0.wp.com/9to5google.com/wp-content/uploads/sites/4/2024/04/Gemini-Google-Workspace-prompting-2.jpg?ssl=1", "credit": "Google via 9to5Google", "fit": "contain" } },
+    { "kind": "text",
+      "heading": "2. Give the *task and context*",
+      "paras": [
+        "Say exactly what you need, then add background. Google's help page says the more context you give, the better Gemini understands the request.",
+        { "t": "Add: \"...and need to create a detailed project tracker for a website redesign project...\"", "strong": true }
+      ],
+      "image": { "url": "https://i1.wp.com/9to5google.com/wp-content/uploads/sites/4/2024/04/Gemini-Google-Workspace-prompting-1.jpg?ssl=1", "credit": "Google via 9to5Google", "fit": "contain" } },
+    { "kind": "text",
+      "heading": "3. Pick the *format*",
+      "paras": [
+        "Finish by telling Gemini what shape the answer should take: a table, bullet points, talking points or a character limit.",
+        { "t": "End with: \"...in a simple table with fields for dates, status and tasks.\"", "strong": true }
+      ],
+      "image": { "url": "https://i0.wp.com/9to5google.com/wp-content/uploads/sites/4/2024/04/Gemini-Google-Workspace-prompting-3a.jpg?ssl=1", "credit": "Google via 9to5Google", "fit": "contain" } },
+    { "kind": "text",
+      "heading": "4. *Iterate* and split it up",
+      "paras": [
+        "Google says its most successful prompts averaged about 21 words, while first attempts were usually under nine. Try synonyms, more detail and follow up questions.",
+        "Doing several related jobs? Break them into separate prompts instead of one giant request."
+      ],
+      "image": { "url": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/AI_Workspace_Prompts.width-1300.png", "credit": "Google", "fit": "contain" } },
+    { "kind": "cta",
+      "hook": "Save this formula for your next Gemini prompt, and follow for more tips straight from the official AI guides.",
+      "image": { "url": "https://i1.wp.com/9to5google.com/wp-content/uploads/sites/4/2024/04/Gemini-Google-Workspace-prompting-3b.jpg?ssl=1", "credit": "Google via 9to5Google", "fit": "contain" } }
+  ]
+}

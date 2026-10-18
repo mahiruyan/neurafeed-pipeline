@@ -1,0 +1,62 @@
+{
+  "id": "2026-10-18-anthropic-metr-watchdog-inside-access",
+  "created_at": "2026-10-18T18:20:00Z",
+  "story_time": "2026-10-16T18:06:00Z",
+  "timely": false,
+  "sensitive": false,
+  "priority": 2,
+  "sources": [
+    { "name": "Anthropic", "url": "https://www.anthropic.com/news/an-update-on-independent-evaluators" },
+    { "name": "Reuters via The Lufkin Daily News", "url": "https://lufkindailynews.com/news_reuters/business/anthropic-grants-outside-evaluator-metr-employee-level-access-in-ai-safety-push/article_11be4097-b39c-56b7-8742-2b47ab3a3c4f.html" },
+    { "name": "NewsBytes", "url": "https://www.newsbytesapp.com/news/science/anthropic-gives-metr-employee-level-access-to-inspect-its-ai/story" },
+    { "name": "Fox News", "url": "https://www.foxnews.com/politics/who-dario-amodei-anthropic-ceo-pushing-independent-ai-oversight.amp" }
+  ],
+  "caption": "Anthropic has embedded six staff from METR, an outside AI safety nonprofit, inside the company.\nThey get hardware, office space and internal access close to Anthropic's own risk teams.\nAnthropic cannot veto what they publish, though it can require some redactions.\n\nShould every AI lab be forced to do this?\n\nFollow @neurafeed.ai for daily AI news.\n\nSource: Anthropic",
+  "slides": [
+    { "kind": "cover",
+      "headline": "Anthropic just moved an outside AI watchdog into its offices. It *can't veto what they publish*",
+      "image": {
+        "url": "https://a57.foxnews.com/static.foxnews.com/foxnews.com/content/uploads/2026/07/1024/512/anthropic-dario-amodei-artificial-intelligence.jpg?ve=1&tl=1",
+        "credit": "Fox News",
+        "fallback_urls": ["https://www-cdn.anthropic.com/images/4zrzovbb/website/c2af6aeedb4995d202c7543f3d59c6bbbd5352f1-2000x1125.jpg"]
+      },
+      "pos": "center 30%",
+      "badges": [ { "url": "assets/logos/anthropic.png", "fit": "contain" } ],
+      "badge_side": "left",
+      "badge_border": "white" },
+    { "kind": "text",
+      "heading": "Six inspectors, *inside access*",
+      "paras": [
+        "Six employees of METR, a nonprofit that tests frontier AI models, now have Anthropic hardware, office space and internal tools.",
+        "Anthropic says their access is roughly on par with its own risk assessment teams, and its staff are encouraged to share information with them."
+      ],
+      "image": {
+        "url": "https://www-cdn.anthropic.com/images/4zrzovbb/website/c2af6aeedb4995d202c7543f3d59c6bbbd5352f1-2000x1125.jpg",
+        "credit": "Anthropic",
+        "fallback_urls": ["https://www-cdn.anthropic.com/images/4zrzovbb/website/d2e351e6311a0ada8ea4a0304ce6cda39243eaf4-1200x630.jpg"]
+      } },
+    { "kind": "text",
+      "heading": "What stays *off limits*",
+      "paras": [
+        "Customer data, legally privileged information and model architecture stay off limits. Anthropic can require redactions in those set categories.",
+        "But it cannot veto METR's findings on risks, incidents or practices. METR can publicly question a redaction without revealing what was removed."
+      ],
+      "image": {
+        "url": "https://i.cdn.newsbytesapp.com/images/l142_5971792110585.jpg",
+        "credit": "NewsBytes"
+      } },
+    { "kind": "text",
+      "heading": "Three levels of *access*",
+      "paras": [
+        "Anthropic now sorts outside evaluators into three tiers. Biosecurity nonprofit SecureBio, in the first tier, is reviewing the chemical and biological weapons chapter of its August risk report.",
+        { "t": "\"We believe every frontier AI company should do the same,\" Anthropic wrote. It is also in early talks with Hugging Face.", "strong": true }
+      ],
+      "image": {
+        "url": "https://propakistani.pk/wp-content/uploads/2026/10/Anthropic-1.jpg",
+        "credit": "ProPakistani"
+      } },
+    { "kind": "cta",
+      "hook": "Outside eyes are now inside an AI lab. Follow to see what METR's first report finds.",
+      "image": { "url": "assets/logos/anthropic.png", "fit": "contain", "credit": "Anthropic" } }
+  ]
+}

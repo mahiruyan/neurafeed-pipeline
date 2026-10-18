@@ -1732,5 +1732,86 @@
       }
     ],
     "requests": []
+  },
+  {
+    "run_at": "2026-10-18T18:20:39.376Z",
+    "summary": "Queued 3 jobs (OpenAI humanoid robot, Anthropic METR embedded watchdog, Gemini prompt formula utility); Sunday roundup left for the 17:00 run; inbox links all already in skipped.json, no open requests.",
+    "considered": [
+      {
+        "story": "Sam Altman says OpenAI will build a humanoid robot, demo in 2027",
+        "source": "https://www.engadget.com/2285040/openai-humanoid-robot-sam-altman-statement-real-challenge/",
+        "decision": "queued",
+        "job_id": "2026-10-18-altman-openai-humanoid-robot-2027",
+        "priority": 2,
+        "reason": "Fresh Engadget report on Altman's comments; quotes date from September, so not timely and priority 2."
+      },
+      {
+        "story": "Anthropic embeds six METR evaluators with employee-like access",
+        "source": "https://www.anthropic.com/news/an-update-on-independent-evaluators",
+        "decision": "queued",
+        "job_id": "2026-10-18-anthropic-metr-watchdog-inside-access",
+        "priority": 2
+      },
+      {
+        "story": "Utility: Google's persona, task, context, format prompt formula for Gemini",
+        "source": "https://blog.google/products/workspace/google-gemini-workspace-ai-prompt-tips/",
+        "decision": "queued",
+        "job_id": "2026-10-18-gemini-21-word-prompt-formula",
+        "priority": 2
+      },
+      {
+        "story": "Anthropic's AI safety bill only kicks in at 50 deaths or $1B damage",
+        "decision": "covered",
+        "reason": "Already posted as 2026-10-17-anthropic-pitches-own-ai-safety-bill."
+      },
+      {
+        "story": "How employment is changing at Anthropic (junior hiring falls)",
+        "decision": "covered",
+        "reason": "Already posted as 2026-10-17-anthropic-agents-outwork-staff-6-to-1."
+      },
+      {
+        "story": "Anthropic warns about self-replicating AI worms (Guardian explainer)",
+        "decision": "covered",
+        "reason": "Already covered as 2026-10-13-anthropic-self-replicating-ai-smart-devices."
+      },
+      {
+        "story": "Meta Muse Wonder frontier models",
+        "decision": "covered",
+        "reason": "Already covered as 2026-10-12-meta-muse-wonder-frontier-models."
+      },
+      {
+        "story": "Schwab and JPMorgan block outside AI agents from moving client money",
+        "source": "https://forkast.news/schwab-and-jpmorgan-block-unauthorized-ai-agents-from-moving-money-as-private-ordering-reaches-financial-core/",
+        "decision": "skipped",
+        "reason": "Kept room in today's cap for the Sunday roundup; may fit a later run."
+      },
+      {
+        "story": "Websites are closing their doors to AI agents (The Verge)",
+        "decision": "skipped",
+        "reason": "Could not open the Verge article to confirm details from here."
+      },
+      {
+        "story": "Three unannounced OpenAI Aurora models spotted in the API",
+        "decision": "skipped",
+        "reason": "Unconfirmed leak with no OpenAI statement."
+      },
+      {
+        "story": "Oblivion Remastered mod built with Claude boosts FPS",
+        "decision": "skipped",
+        "reason": "Could not find a solid source confirming Claude's role."
+      },
+      {
+        "story": "Microsoft drops Nscale UK Essex data center deal",
+        "source": "https://www.telegraph.co.uk/business/2026/10/18/microsoft-axes-ai-deal-setback-uk-data-centre-pioneer/",
+        "decision": "skipped",
+        "reason": "UK infrastructure story with limited US interest."
+      },
+      {
+        "story": "Inbox links (intcyberdigest hack, Airbnb 3D walkthrough, Draco Reel, Roadster Reel)",
+        "decision": "skipped",
+        "reason": "Already listed in inbox/skipped.json; the two Reels still cannot be queued because src/validate.js line 21 uses an undefined 'single' variable in validateReel."
+      }
+    ],
+    "requests": []
   }
 ]
