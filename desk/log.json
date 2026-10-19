@@ -1813,5 +1813,61 @@
       }
     ],
     "requests": []
+  },
+  {
+    "run_at": "2026-10-19T00:01:58.661Z",
+    "summary": "Sunday evening run (20:20 New York): queued the Anthropic $48B public benefit fund story (priority 1) and the weekly roundup; today is now at 8 jobs; the two Reel links stay in inbox/skipped.json because src/validate.js still crashes on Reels; no open requests.",
+    "considered": [
+      {
+        "story": "Anthropic commits 5% of its shares (about $48B) to a new Public Benefit Fund",
+        "source": "https://www.anthropic.com/news/public-benefit-fund",
+        "decision": "queued",
+        "job_id": "2026-10-18-anthropic-48-billion-public-benefit-fund",
+        "priority": 1
+      },
+      {
+        "story": "Weekly roundup: Gemini 4 Argon, Zuckerberg $200B, Anthropic $16.8B quarter, MAI-Base-2, Claude ECDSA seeds, ChatGPT ads",
+        "decision": "queued",
+        "job_id": "2026-10-18-week-in-ai",
+        "priority": 1
+      },
+      {
+        "story": "Mahir's Reels: Draco fan trailer and AI Tesla Roadster chase",
+        "decision": "skipped",
+        "reason": "src/validate.js line 21 still uses 'single' before it is defined in validateReel, so both stay in inbox/skipped.json until it is fixed."
+      },
+      {
+        "story": "Anthropic's AI safety bill only kicks in at 50 deaths or $1B damage (Tom's Hardware)",
+        "decision": "covered",
+        "reason": "Already posted as 2026-10-17-anthropic-pitches-own-ai-safety-bill."
+      },
+      {
+        "story": "How employment is changing at Anthropic",
+        "decision": "covered",
+        "reason": "Already posted as 2026-10-17-anthropic-agents-outwork-staff-6-to-1."
+      },
+      {
+        "story": "Websites are closing their doors to AI agents (The Verge)",
+        "source": "https://www.theverge.com/ai-artificial-intelligence/1013195/ai-agents-blocked-web",
+        "decision": "skipped",
+        "reason": "Trend piece, and today is at the 8-job cap."
+      },
+      {
+        "story": "OpenAI faces lawsuits, subpoenas and EU scrutiny in one week (Tech Policy Press)",
+        "decision": "skipped",
+        "reason": "Recap of stories already covered this week."
+      },
+      {
+        "story": "Another OpenAI safety researcher quits",
+        "decision": "skipped",
+        "reason": "Could not confirm the person and details with two primary sources in this run, and the day is at the cap."
+      },
+      {
+        "story": "Google renames Gemini features again (Android Police)",
+        "decision": "skipped",
+        "reason": "Minor naming change, day is at the cap."
+      }
+    ],
+    "requests": []
   }
 ]
