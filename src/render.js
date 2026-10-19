@@ -55,9 +55,12 @@ async function renderJob(job, imagePaths, outDir, badgePaths = []) {
     const tab = await browser.newPage();
     await tab.setViewport({ width: 1080, height: 1350 });
     for (let i = 0; i < job.slides.length; i++) {
-      let slide = job.format === 'single' ? { ...job.slides[i], single: true } : job.slides[i];
+      let slide = job.format === 'single' ? { ...job.slides[i], single: true } : { ...job.slides[i] };
+      slide._n = i + 1;
+      slide._total = job.slides.length;
+      if (job._account) slide._account = job._account;
       slide = await darkBackForLightLogos(tab, slide, badgePaths[i] || []);
-      const html = buildPage(slide, fileUrl(imagePaths[i]), (badgePaths[i] || []).map(fileUrl));
+      const html = buildPage(slide, imagePaths[i] ? fileUrl(imagePaths[i]) : null, (badgePaths[i] || []).map(fileUrl));
       const htmlFile = path.join(outDir, '_slide.html');
       fs.writeFileSync(htmlFile, html);
       await tab.goto(fileUrl(htmlFile), { waitUntil: 'load' });

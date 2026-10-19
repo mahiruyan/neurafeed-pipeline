@@ -25,6 +25,20 @@ function newJobIds() {
     });
 }
 
+// Followers and post count for the "follow for more" slide, read once per run. Optional.
+let accountCache;
+async function accountNumbers() {
+  if (accountCache !== undefined) return accountCache;
+  accountCache = null;
+  const { IG_USER_ID: u, IG_ACCESS_TOKEN: t } = process.env;
+  if (!u || !t) return null;
+  try {
+    const d = await (await fetch(`https://graph.instagram.com/${u}?fields=followers_count,media_count&access_token=${encodeURIComponent(t)}`)).json();
+    if (d.followers_count) accountCache = { followers: d.followers_count, posts: d.media_count };
+  } catch { /* the slide works without numbers */ }
+  return accountCache;
+}
+
 const mmss = (t) => `${Math.floor(t / 60)}:${String(Math.floor(t % 60)).padStart(2, '0')}`;
 function summary(job) {
   const src = (job.sources || []).map((s) => `• ${s.name}: ${s.url}`).join('\n');
@@ -87,6 +101,7 @@ function summary(job) {
         }
         job._clip = r.resolved ? `🎬 Original: ${r.resolved.title || r.resolved.url} (${r.resolved.channel || 'YouTube'}), ${mmss(r.resolved.start)} to ${mmss(r.resolved.end)}, match ${Math.round(r.resolved.score * 100)}%${r.resolved.edited ? ', the repost looks edited (only the main part was used)' : ''}` : (r.note ? `🎬 ${r.note}` : null);
       } else {
+        job._account = await accountNumbers();
         const img = await fetchImages(job, outDir);
         errors = img.errors;
         files = await renderJob(job, img.paths, outDir, img.badges);

@@ -70,9 +70,9 @@ same day. Never skip a priority 1 story because other stories are already queued
   "slides": [
     { "kind": "cover", "headline": "Microsoft CEO Satya Nadella says AI needs an *emergency brake*",
       "image": { "url": "https://...", "credit": "Dan DeLong", "fallback_urls": [] }, "pos": "22% center" },
-    { "kind": "text", "heading": "No more *black boxes*", "paras": ["...", "..."],
+    { "kind": "card", "heading": "No more *black boxes*", "paras": ["...", "..."],
       "image": { "url": "https://upload.wikimedia.org/...", "credit": "Brian Smale / CC BY-SA 4.0" } },
-    { "kind": "text", "heading": "...", "paras": ["...", { "t": "Bold green takeaway.", "strong": true }],
+    { "kind": "card", "heading": "...", "paras": ["...", { "t": "Bold green takeaway.", "strong": true }],
       "image": { "url": "..." } },
     { "kind": "cta", "hook": "One sentence tied to this story.", "image": { "url": "..." } }
   ]
@@ -85,7 +85,7 @@ same day. Never skip a priority 1 story because other stories are already queued
   NVIDIA, xAI or a story everyone in AI is talking about), 2 = normal (default), 3 = filler.
 - `sensitive`: true for deaths, lawsuits, crime, politics, layoffs, health. Never auto-posted: it is sent to Mahir on Telegram with Approve / Reject buttons. Still write it, especially when it is priority 1.
 - `owner_approved`: only set to true when Mahir himself asked for that story to be posted.
-- 3 to 8 slides. First `cover`, last `cta`. Every slide needs `image.url`.
+- 3 to 8 slides. First `cover`, last `cta`. `cover`, `card`, `product` and `text` slides need `image.url`.
 - `pos` (optional): CSS object-position. Use it so faces are not cut off.
 - Optional per slide: `size` (paragraph px, default 34), `hsize` (heading px), `gap`.
 - Optional per slide: `badges`, up to 2 round overlays on the photo, for the company logo or a
@@ -111,6 +111,40 @@ same day. Never skip a priority 1 story because other stories are already queued
   free on one side, the mascot or product free on the other, never covering a face.
   If the mascot or product image has a background, add `"cutout": true` to that badge: the
   pipeline removes the background automatically and shows it free (no circle).
+
+## Slide kinds (inner slides look like evolving.ai, uncover.ai, chatgptricks)
+
+Inner slides are dark with the text on top and the picture as a rounded card, not text over a
+photo. Pick the kind that fits each slide:
+- `card` (default for news): `heading` (number it in lists: "1. Just type *@chrome*"), `paras`
+  (1 or 2 short paragraphs above the picture), `image` (shown whole as a rounded card, use
+  `"fit": "contain"` for screenshots), optional `note` (one short gray line under the picture).
+- `product`: one item of a list (a product, a tool, a project, a robot): `image` big on top,
+  `heading` as a big green title (2 to 4 words), `paras` (one or two sentences).
+- `post`: a real post shown as a card: `author` { `name`, `handle`, `avatar` (photo URL, optional),
+  `verified` (only when the account really is verified) }, `platform` ("X", "Threads"...), `text`
+  (the post's exact words, never edited or invented), optional `image` (the post's own media),
+  optional `date`, optional `heading` above the card. Only posts you actually read.
+- `prompt`: `heading` ("2. Ask for a version 2.0"), `paras[0]` (what it is), `prompt` (the exact
+  prompt to copy), `paras[1]` (what it does). No picture.
+- `summary`: `heading` (default "The *short* version"), `points` (2 to 6 short facts). No picture.
+- `text`: the older style, text over a photo. Use only when a strong photo matters more than
+  anything else.
+- `cta` (last slide): "Follow for more", our account card with the real follower count, `hook`
+  (one sentence tied to this story) and "Save for later". No picture needed.
+A typical news carousel: cover, 2 to 4 `card` slides (or a `post` when the story is about what
+someone posted), optionally a `summary`, then `cta`.
+
+## Two more formats (like the reference accounts, made from real sources)
+
+- List / gallery (`"format": "list"`): "Claude shared six projects people built", "the most
+  impressive inventions on TIME's list", "people are vibe coding their smart TVs". Cover, then one
+  `product` (or `card`) slide per item (4 to 6 items), then `cta`. Every item must be real and in a
+  source you read, with its own picture. Good for stories with several striking examples.
+- Post story (`"format": "posts"`): a story told through what people posted (an argument between
+  two CEOs, the internet's reaction to a launch). Cover, then `post` slides with the real posts
+  word for word (plus a `card` for context if needed), then `cta`. Link every post in `sources`.
+Aim for about one of these a day when a fitting story exists; they count as normal news posts.
 
 ## AI-generated cover images
 
@@ -152,7 +186,7 @@ almost always deserve a generated, brand-heavy cover unless a great real photo e
 Besides news, queue one evergreen "useful" carousel per New York day (`"format": "utility"`,
 `timely: false`, `priority: 2`). These are the posts people save and share. Rotate between:
 - Prompt tips: 4 to 6 concrete prompts or prompt patterns for ChatGPT, Claude or Gemini, each with
-  what it does. Only patterns that are documented by the vendor or that you can explain clearly.
+  what it does, one `prompt` slide each. Only patterns that are documented by the vendor or that you can explain clearly.
 - Tool lists: 4 to 6 real, free or freemium AI tools or websites, one per slide, each with what it
   does in one sentence. Check every tool's official site exists and matches what you say.
 - How-to: step-by-step guide for a feature that launched recently (one step per slide).

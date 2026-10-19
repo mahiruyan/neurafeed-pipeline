@@ -140,6 +140,8 @@ async function generate(prompt, dest, refs = []) {
   return dest;
 }
 
+// Slides that are fine without a picture (a post card shows one only when it has media).
+const TEXT_ONLY = new Set(['post', 'prompt', 'summary', 'cta']);
 async function fetchImages(job, outDir) {
   const srcDir = path.join(outDir, 'src');
   fs.mkdirSync(srcDir, { recursive: true });
@@ -217,7 +219,14 @@ async function fetchImages(job, outDir) {
       errors.push(`cover: automatic logo placement failed, using defaults`);
     }
   }
-  return { paths: paths.map((p) => p || firstGood), badges, errors };
+  // Avatars for post cards (the author's picture), optional.
+  for (let i = 0; i < job.slides.length; i++) {
+    const a = job.slides[i].author?.avatar;
+    if (!a) continue;
+    try { job.slides[i]._avatar = await download(a, path.join(srcDir, `${i + 1}-avatar.img`), 1000); } catch (e) { errors.push(`slide ${i + 1} avatar: ${e.message}`); }
+  }
+  // Text-only slides keep no picture; a missing picture elsewhere falls back to the cover's.
+  return { paths: paths.map((p, i) => p || (TEXT_ONLY.has(job.slides[i].kind) ? null : firstGood)), badges, errors };
 }
 
 module.exports = { logoAlreadyVisible, brandsInPhoto, brandMatches, brandOf, download, fetchImages };

@@ -1,12 +1,14 @@
 // Checks a job file before rendering. Returns a list of problems (empty = OK).
-const KINDS = new Set(['cover', 'text', 'cta']);
+const KINDS = new Set(['cover', 'text', 'cta', 'card', 'product', 'post', 'prompt', 'summary']);
+const NEEDS_IMAGE = new Set(['cover', 'text', 'card', 'product']);
 const DASHES = /[–—]/; // NeuraFeed rule: no en dash or em dash anywhere.
 
 function textOf(job) {
   const parts = [job.caption || ''];
   for (const s of job.slides || []) {
-    parts.push(s.headline || '', s.heading || '', s.hook || '');
-    for (const p of s.paras || []) parts.push(typeof p === 'object' ? p.t : p);
+    // A post card's text is a quote, kept word for word (the template replaces dashes in it).
+    parts.push(s.headline || '', s.heading || '', s.hook || '', s.note || '', s.prompt || '');
+    for (const p of [...(s.paras || []), ...(s.points || [])]) parts.push(typeof p === 'object' ? p.t : p);
   }
   return parts.join('\n');
 }
@@ -38,7 +40,11 @@ function validateJob(job, fileId) {
   if (typeof job.sensitive !== 'boolean') p.push('sensitive must be true or false');
   (job.slides || []).forEach((s, i) => {
     if (!KINDS.has(s.kind)) p.push(`slide ${i + 1}: unknown kind "${s.kind}"`);
-    if (!s.image || !(s.image.url || s.image.generate)) p.push(`slide ${i + 1}: image.url (or image.generate) is required`);
+    if (NEEDS_IMAGE.has(s.kind) && (!s.image || !(s.image.url || s.image.generate))) p.push(`slide ${i + 1}: image.url (or image.generate) is required`);
+    if (['card', 'product', 'prompt'].includes(s.kind) && !s.heading) p.push(`slide ${i + 1}: heading is required`);
+    if (s.kind === 'post' && !(s.author?.name && s.text)) p.push(`slide ${i + 1}: a post needs author.name and the post's exact text`);
+    if (s.kind === 'prompt' && !s.prompt) p.push(`slide ${i + 1}: prompt is required`);
+    if (s.kind === 'summary' && !((s.points || s.paras || []).length >= 2)) p.push(`slide ${i + 1}: a summary needs 2 to 6 points`);
   });
   if (job.slides?.[0]?.kind !== 'cover') p.push('first slide must be a cover');
   if (!single && job.slides?.at(-1)?.kind !== 'cta') p.push('last slide must be a cta');

@@ -34,9 +34,11 @@ never miss a major story.
 4. Queue 1 to 3 news jobs per run (on top of Reels from the inbox). If fewer than 4 jobs exist for today and it is after 13:00
    New York time, add stories until today has at least 4. Never exceed 8 jobs per day.
 5. For each job: read the original source and at least one independent second source.
-   Write the job exactly as CLAUDE.md describes: 4 to 6 slides, a different image on every
-   slide, faces positioned with `pos`, a company logo or second face as a badge on the cover
-   when relevant. Set `timely`, `sensitive`, `priority` and `story_time` honestly.
+   Write the job exactly as CLAUDE.md describes: 4 to 7 slides using the slide kinds in
+   "Slide kinds" (cover, mostly `card` slides, `post` for real posts, an optional `summary`,
+   then `cta`), a different image on every picture slide, faces positioned with `pos`, a company
+   logo or second face as a badge on the cover when relevant. Use the list or post-story format
+   when a story fits it. Set `timely`, `sensitive`, `priority` and `story_time` honestly.
 6. Self-check: no en dash or em dash, no invented facts, American spelling, caption ends
    with `Source: <Outlet>`, id equals file name, first slide cover, last slide cta.
    Run `node -e "const {validateJob}=require('./src/validate');..."` on each new job if
