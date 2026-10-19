@@ -2161,5 +2161,72 @@
       }
     ],
     "requests": []
+  },
+  {
+    "run_at": "2026-10-19T16:11:12.081Z",
+    "summary": "Noon run: no open links or requests; queued the Reuters exclusive on a hacker whose AI agents breached 100+ company sites (priority 1, sensitive, needs approval) and today's utility post on ChatGPT privacy settings.",
+    "considered": [
+      {
+        "story": "One hacker used AI agents (Cairn, reportedly Claude Code with DeepSeek) to breach 100+ company sites incl. Deere, SharkNinja, Cummins",
+        "source": "https://thenextweb.com/news/ai-agents-hacker-cairn-100-sites-deere-norforge",
+        "decision": "queued",
+        "job_id": "2026-10-19-ai-agents-hacked-100-sites-50-each",
+        "priority": 1
+      },
+      {
+        "story": "Utility: 5 ChatGPT privacy switches (Privacy Center, model training, Memory, ad personalization, Temporary chat)",
+        "source": "https://help.openai.com/en/articles/20001488-privacy-center-in-chatgpt",
+        "decision": "queued",
+        "job_id": "2026-10-19-chatgpt-5-privacy-switches",
+        "priority": 2
+      },
+      {
+        "story": "Microsoft adds tools in Microsoft 365 E7 and Project Perception to monitor and restrict AI agents",
+        "source": "https://www.geekwire.com/2026/microsoft-unveils-tools-to-monitor-and-corral-rogue-ai-agents/",
+        "decision": "skipped",
+        "reason": "Enterprise security product with little consumer appeal, and today's cap only left room for one news story; the hacker story is the stronger agent security post."
+      },
+      {
+        "story": "Nvidia launches Nemotron 3.5 Super VL and Bolt open models",
+        "source": "https://techcrunch.com/2026/10/19/nvidia-launches-new-open-models-to-run-agents-in-the-enterprise-and-on-pcs/",
+        "decision": "skipped",
+        "reason": "TechCrunch says the models launched Thursday, so it is several days old, and developer focused."
+      },
+      {
+        "story": "OpenAI 'aurora' image models spotted in the API and Arena",
+        "source": "https://www.testingcatalog.com/openai-possibly-testing-gpt-image-3/",
+        "decision": "skipped",
+        "reason": "Unconfirmed leak with no official word from OpenAI."
+      },
+      {
+        "story": "AI wearables tested against state wiretap laws",
+        "source": "https://www.cnbc.com/2026/10/18/ai-wearables-privacy-wiretap-laws.html",
+        "decision": "skipped",
+        "reason": "Legal analysis piece from yesterday, no new event; no room under today's cap."
+      },
+      {
+        "story": "Tenstorrent raises $1.5B at a $6.2B valuation",
+        "source": "https://siliconangle.com/2026/10/19/chip-legend-jim-kellers-tenstorrent-raises-1-5b-to-expand-its-open-compute-ecosystem/",
+        "decision": "skipped",
+        "reason": "Chip startup funding round with limited US consumer interest."
+      },
+      {
+        "story": "ChatGPT Chrome tab control",
+        "decision": "covered",
+        "reason": "Already covered as 2026-10-16-chatgpt-chrome-tabs-work-mode."
+      },
+      {
+        "story": "Musk pledges a SpaceX share to every US kid",
+        "decision": "covered",
+        "reason": "Already queued as 2026-10-19-musk-spacex-share-every-us-kid."
+      },
+      {
+        "story": "Utility tool list (remove.bg, Ideogram, Suno)",
+        "source": "https://remove.bg/it/help/a/is-remove-bg-free-",
+        "decision": "skipped",
+        "reason": "Could not confirm free plan terms for every tool, and remove.bg says its standalone site closes December 1; chose a how-to from OpenAI's own docs instead."
+      }
+    ],
+    "requests": []
   }
 ]

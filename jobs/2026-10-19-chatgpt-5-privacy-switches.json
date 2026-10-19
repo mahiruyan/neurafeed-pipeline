@@ -1,0 +1,97 @@
+{
+  "id": "2026-10-19-chatgpt-5-privacy-switches",
+  "format": "utility",
+  "created_at": "2026-10-19T16:15:00Z",
+  "story_time": "2026-10-19T16:00:00Z",
+  "timely": false,
+  "sensitive": false,
+  "priority": 2,
+  "sources": [
+    { "name": "OpenAI Help Center: Privacy Center", "url": "https://help.openai.com/en/articles/20001488-privacy-center-in-chatgpt" },
+    { "name": "OpenAI Help Center: Ads in ChatGPT", "url": "https://help.openai.com/en/articles/20001047-ads-in-chatgpt" },
+    { "name": "OpenAI Help Center: Temporary Chat FAQ", "url": "https://help.openai.com/en/articles/8914046-temporary-chat-faq" },
+    { "name": "Notebookcheck", "url": "https://www.notebookcheck.net/ChatGPT-s-new-privacy-center-changes-none-of-your-settings.1405449.0.html" }
+  ],
+  "caption": "ChatGPT has a Privacy Center that shows every privacy control in one place.\nIn five minutes you can stop training on your future chats, clean up Memory, turn off personalized ads and go temporary for private questions.\n\nWhich of these switches did you already have turned off?\n\nFollow @neurafeed.ai for daily AI news.\n\nSource: OpenAI Help Center · Photo: Sanket Mishra / Pexels",
+  "slides": [
+    {
+      "kind": "cover",
+      "headline": "ChatGPT knows more about you than you think. *5 privacy switches* to check today",
+      "image": {
+        "url": "https://www.joltjournal.com/wp-content/uploads/2026/10/pexels-photo-16461434.jpg",
+        "credit": "Sanket Mishra / Pexels",
+        "fallback_urls": ["https://www.joltjournal.com/wp-content/uploads/2026/10/pexels-photo-16461434.jpg.webp"]
+      },
+      "pos": "center center",
+      "badges": [{ "url": "assets/logos/openai.png", "shape": "free" }]
+    },
+    {
+      "kind": "card",
+      "heading": "1. Open the *Privacy Center*",
+      "paras": [
+        "It explains every privacy control and links you to it. Opening it changes nothing on its own.",
+        "Web: account menu, Help, Privacy center. iPhone and Android: Settings, Privacy Center. Each topic has a Manage button."
+      ],
+      "image": {
+        "url": "https://www.notebookcheck.net/fileadmin/Notebooks/News/_nc5/teaser_chatgpt-datenschutzcenter.jpg",
+        "fit": "contain",
+        "credit": "Screenshot: Notebookcheck"
+      },
+      "note": "Rolling out to Free, Go, Plus, Pro and Business."
+    },
+    {
+      "kind": "card",
+      "heading": "2. Stop *training on your chats*",
+      "paras": [
+        "Personal accounts can turn off \"Improve the model for everyone\" so their content is not used to improve OpenAI's models.",
+        "It only applies to future chats. Turning it off does not delete anything already in your history."
+      ],
+      "image": {
+        "url": "https://www.joltjournal.com/wp-content/uploads/2026/10/pexels-photo-17560575-1000x667.jpg.webp",
+        "credit": "Patrick Gamelkoorn / Pexels"
+      }
+    },
+    {
+      "kind": "card",
+      "heading": "3. Clean up *Memory*",
+      "paras": [
+        "Memory is how ChatGPT personalizes answers with things it saved about you. Open the Memory topic and tap Manage to see it.",
+        { "t": "Catch: deleting a chat does not delete the memories saved from it. Remove those separately.", "strong": true }
+      ],
+      "image": {
+        "url": "https://www.joltjournal.com/wp-content/uploads/2026/10/pexels-photo-15940006-1000x667.jpg.webp",
+        "credit": "Airam Dato-on / Pexels"
+      }
+    },
+    {
+      "kind": "card",
+      "heading": "4. Turn off *personalized ads*",
+      "paras": [
+        "On Free and Go, go to Settings, Ads controls and switch off \"Personalize ads.\" Past chats and memory stop shaping your ads.",
+        "Ads still appear, based on your current chat. \"Delete ads data\" clears your ads history and topics."
+      ],
+      "image": {
+        "url": "https://e8wm23is9ki.exactdn.com/wp-content/uploads/2026/10/file-8.jpeg?strip=all",
+        "fit": "contain",
+        "credit": "TechCityNG",
+        "fallback_urls": ["https://e8wm23is9ki.exactdn.com/wp-content/uploads/2026/10/file-8-1200x675.jpeg?strip=all"]
+      }
+    },
+    {
+      "kind": "card",
+      "heading": "5. Go *Temporary* for private stuff",
+      "paras": [
+        "Open a new chat and select Temporary. It stays out of your history, creates no new memories and is not used to train models.",
+        "OpenAI may still keep a copy for up to 30 days for safety purposes."
+      ],
+      "image": {
+        "url": "https://www.joltjournal.com/wp-content/uploads/2026/10/pexels-photo-16094061-1000x667.jpg.webp",
+        "credit": "Matheus Bertelli / Pexels"
+      }
+    },
+    {
+      "kind": "cta",
+      "hook": "Save this and check your ChatGPT settings tonight. Follow for more AI tips that protect your data."
+    }
+  ]
+}

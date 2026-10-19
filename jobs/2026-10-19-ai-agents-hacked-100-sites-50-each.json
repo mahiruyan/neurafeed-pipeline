@@ -1,0 +1,84 @@
+{
+  "id": "2026-10-19-ai-agents-hacked-100-sites-50-each",
+  "created_at": "2026-10-19T16:15:00Z",
+  "story_time": "2026-10-19T10:06:00Z",
+  "timely": true,
+  "sensitive": true,
+  "priority": 1,
+  "sources": [
+    { "name": "Reuters", "url": "https://wtvbam.com/2026/10/19/exclusive-how-one-hacker-used-ai-agents-and-a-few-thousand-dollars-to-break-into-scores-of-sites/" },
+    { "name": "The Next Web", "url": "https://thenextweb.com/news/ai-agents-hacker-cairn-100-sites-deere-norforge" },
+    { "name": "PYMNTS", "url": "https://pymnts.com/news/artificial-intelligence/2026/hackers-use-ai-agents-to-do-hacking-for-them" },
+    { "name": "IBTimes UK", "url": "https://www.ibtimes.co.uk/its-not-script-kiddie-stuff-hacker-reportedly-uses-ai-breach-corporate-sites-just-50-1826483" }
+  ],
+  "caption": "A Chinese-speaking hacker used AI agents to break into the websites of more than 100 companies, including Deere, SharkNinja and Cummins, Reuters reports.\nThe agents tried over 1,200 sites. Each successful break-in took about 23 hours and roughly $50 in AI tokens, a researcher estimates.\n\nShould open source AI hacking tools be locked down?\n\nFollow @neurafeed.ai for daily AI news.\n\nSource: Reuters",
+  "slides": [
+    {
+      "kind": "cover",
+      "headline": "One hacker let AI agents break into *100+ company websites*. Each hack cost about $50",
+      "image": {
+        "url": "https://storage.googleapis.com/media.mwcradio.com/mimesis/2026-10/19/2026-10-19T100625Z_2_LYNXMPEM9I0SK_RTROPTP_3_AI-CYBERCRIME.JPG",
+        "credit": "Reuters",
+        "fallback_urls": ["https://cryptonomist.ch/wp-content/uploads/2026/10/ai-autonomous-hacking.jpeg"]
+      },
+      "pos": "center 35%"
+    },
+    {
+      "kind": "card",
+      "heading": "Deere, SharkNinja and *Cummins* hit",
+      "paras": [
+        "A Chinese-speaking hacker used AI agents to break into the websites of more than 100 companies, Reuters reports. Named victims include Deere, SharkNinja and Cummins.",
+        "Deere says it saw no sign sensitive information was accessed. SharkNinja says only a standalone support site was hit and the threat was contained."
+      ],
+      "image": {
+        "url": "https://en.cryptonomist.ch/wp-content/uploads/2026/10/ai-autonomous-hacking.jpeg",
+        "credit": "The Cryptonomist",
+        "fallback_urls": ["https://en.cryptonomist.ch/wp-content/uploads/2026/10/ai-autonomous-hacking-696x464.jpeg"]
+      }
+    },
+    {
+      "kind": "card",
+      "heading": "Orders in under *100 characters*",
+      "paras": [
+        "The attacker used Cairn, an open source platform that takes a target and a goal and sets AI agents to work on it step by step.",
+        "The instructions were fewer than 100 Chinese characters: find a way to run code on each site, then plant an uploader web shell. The agents did the rest."
+      ],
+      "image": {
+        "url": "https://d.ibtimes.co.uk/en/full/1837668/cyberhacking.png",
+        "credit": "Kevin Horvat / Unsplash",
+        "fallback_urls": ["https://www.pymnts.com/wp-content/uploads/2024/08/cybersecurity-hackers-data-breach.jpg"]
+      }
+    },
+    {
+      "kind": "card",
+      "heading": "*$50* and 23 hours per break-in",
+      "paras": [
+        "Since September 25, the agents tried more than 1,200 sites, mostly online shops in the US, Canada, Australia and Japan. A successful intrusion took about 23 hours.",
+        "Researcher Snorre Fagerland of NorForge estimates about $5,000 in AI tokens in total, roughly $50 for each successful hack."
+      ],
+      "image": {
+        "url": "https://media.thenextweb.com/2026/09/server-room-corridor-orange-lights.jpg",
+        "credit": "Tiero via Canva",
+        "fallback_urls": ["https://media.thenextweb.com/2026/09/server-room-corridor-orange-lights.avif"]
+      }
+    },
+    {
+      "kind": "card",
+      "heading": "Claude Code and *DeepSeek*?",
+      "paras": [
+        "Every task ran on a worker named claudecode_deepseek-v4.1-flash. NorForge reads that as Claude Code running DeepSeek's low cost V4.1 Flash model.",
+        { "t": "\"It's not script kiddie stuff,\" Fagerland told Reuters.", "strong": true }
+      ],
+      "note": "Cairn's author says the platform was not designed for hacking.",
+      "image": {
+        "url": "https://www.pymnts.com/wp-content/uploads/2024/08/cybersecurity-hackers-data-breach.jpg",
+        "credit": "PYMNTS",
+        "fallback_urls": ["https://thedeepdive.ca/wp-content/uploads/2026/10/header-template.001-64.png"]
+      }
+    },
+    {
+      "kind": "cta",
+      "hook": "AI agents are making hacking cheap and fast. Follow to hear about the next attack before it reaches you."
+    }
+  ]
+}
