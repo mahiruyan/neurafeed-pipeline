@@ -1,0 +1,18 @@
+name: Website check
+
+# Read only: is the NeuraFeed website (public and admin) reachable, and do the scheduled
+# job routes answer? Sends no credentials.
+on:
+  workflow_dispatch:
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Reachability
+        run: |
+          for u in https://neurafeedai.com https://www.neurafeedai.com https://staging.neurafeedai.com https://admin-staging.neurafeedai.com https://neurafeed-staging-public.netlify.app https://neurafeed-staging-admin.netlify.app https://neurafeed-staging-admin.netlify.app/login https://neurafeed-staging-admin.netlify.app/api/jobs/editorial-daily-scan; do
+            r=$(curl -s -o body.txt -w "%{http_code} %{redirect_url}" --max-time 20 "$u" || echo "fail")
+            t=$(grep -o "<title>[^<]*" body.txt | head -1 | cut -c8-80)
+            echo "::notice::$u -> $r | $t"
+          done
