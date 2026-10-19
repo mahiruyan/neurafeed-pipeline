@@ -1,5 +1,5 @@
 {
-  "scanned_at": "2026-10-19T01:38:30.962Z",
+  "scanned_at": "2026-10-19T06:49:51.232Z",
   "errors": [
     "r/OpenAI: HTTP 403",
     "r/ChatGPT: HTTP 403",
@@ -16,18 +16,9 @@
   "hackernews": [
     {
       "source": "Hacker News",
-      "title": "Show HN: Sphinx – A hook that quizzes you on your AI's code before shipping",
-      "score": 241,
-      "comments": 85,
-      "time": "2026-10-18T04:33:49Z",
-      "url": "https://sphinx-six-theta.vercel.app/",
-      "permalink": "https://news.ycombinator.com/item?id=50137950"
-    },
-    {
-      "source": "Hacker News",
       "title": "Hybrid Reasoning Agents: LLM agents that think in latent space, act through text",
-      "score": 204,
-      "comments": 127,
+      "score": 339,
+      "comments": 163,
       "time": "2026-10-18T20:48:14Z",
       "url": "https://arxiv.org/abs/2610.18861",
       "permalink": "https://news.ycombinator.com/item?id=50145337"
@@ -35,8 +26,8 @@
     {
       "source": "Hacker News",
       "title": "Anthropic's proposed AI safety bill only kicks in if 50 deaths or $1B in damages",
-      "score": 157,
-      "comments": 161,
+      "score": 159,
+      "comments": 162,
       "time": "2026-10-18T14:30:27Z",
       "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/anthropics-proposed-ai-safety-bill-only-kicks-in-if-50-deaths-or-usd1-billion-in-damages-are-on-the-line-proposal-would-effectively-make-the-commerce-department-the-only-agency-capable-of-stopping-an-ai-model",
       "permalink": "https://news.ycombinator.com/item?id=50141429"
@@ -44,37 +35,886 @@
     {
       "source": "Hacker News",
       "title": "Websites are closing their doors to AI agents",
-      "score": 133,
-      "comments": 130,
+      "score": 135,
+      "comments": 134,
       "time": "2026-10-18T14:58:10Z",
       "url": "https://www.theverge.com/ai-artificial-intelligence/1013195/ai-agents-blocked-web",
       "permalink": "https://news.ycombinator.com/item?id=50141657"
     },
     {
       "source": "Hacker News",
+      "title": "If you don't run your own LLM proxy, how do you know whats going on?",
+      "score": 110,
+      "comments": 77,
+      "time": "2026-10-18T21:09:12Z",
+      "url": "https://jrdsgl.com/if-you-dont-run-your-own-llm-proxy-how-the-fuck-do-you-even-know-whats-going-on/",
+      "permalink": "https://news.ycombinator.com/item?id=50145507"
+    },
+    {
+      "source": "Hacker News",
       "title": "How employment is changing at Anthropic",
-      "score": 108,
-      "comments": 190,
+      "score": 110,
+      "comments": 192,
       "time": "2026-10-18T10:49:26Z",
       "url": "https://www.anthropic.com/research/employment-at-anthropic",
       "permalink": "https://news.ycombinator.com/item?id=50139873"
     },
     {
       "source": "Hacker News",
-      "title": "If you don't run your own LLM proxy, how do you know whats going on?",
-      "score": 21,
-      "comments": 12,
-      "time": "2026-10-18T21:09:12Z",
-      "url": "https://jrdsgl.com/if-you-dont-run-your-own-llm-proxy-how-the-fuck-do-you-even-know-whats-going-on/",
-      "permalink": "https://news.ycombinator.com/item?id=50145507"
+      "title": "How Far Will AI Assistants Go for a Refund They Can't Get?",
+      "score": 82,
+      "comments": 100,
+      "time": "2026-10-18T12:22:58Z",
+      "url": "https://www.vals.ai/blogs/impossible-refund",
+      "permalink": "https://news.ycombinator.com/item?id=50140462"
     }
   ],
   "news": [
     {
+      "source": "Google News: Gemini",
+      "title": "AI Makes Students' Learning Styles More Flexible, from Podcasts to Exploring Ideas - VOI.ID",
+      "time": "2026-10-19T06:40:05.000Z",
+      "url": "https://news.google.com/rss/articles/CBMiSkFVX3lxTFBxR3RkYTY0dXktNzJCRmZTUHMtZ256b21Ub1BLcUcxd0RKaHM4OUZzaGkwdmRTYUlFMDVBX1dVbnMxY01IMlJTT0Zn0gFCQVVfeXFMTi13SnJXUnpuaFNGLVVFZjhJMmtwaTQwdDZDX25XeUEzQnZJQXNRNlhDaU9LMWFlR0htUjhRZ2R3SDJR?oc=5",
+      "images": []
+    },
+    {
+      "source": "Google News: Anthropic",
+      "title": "No Kings Instagram lockout: Meta claims Claude AI tool triggered suspension of pro-democracy account - The Economic Times",
+      "time": "2026-10-19T06:38:15.000Z",
+      "url": "https://news.google.com/rss/articles/CBMijwJBVV95cUxQRGYtLTAzZkIxbnZWUDBBaXc0T2Rrbnc4ckh0V29zNEJURE1FeW1lTWRYcjhFcHR2OXhWdXd2MU00ajRGdDJLd1RWV2NzVWQ0VVBkXzJFQWgzU2dZNkxWVF93MURUcXE5azhNcHFaejlVZXRUSWlnZzE4bzFjdzBVd0VhWVNOZ2tLMWZwOTZOaEFMcVBkUkxXT3FiZXlLeGhJUE85dmdDQ0NfS3BrR1JiLXE2R2ZNRHJpc0RiOG9hSEViemp2cGU2U1JhSXNfMzVFSmVNUHgtbUxVSl95Z0FDZk5Rc0o1cXhsUkRMS2V5bnJfN25zT2VxWERtV2R2SGVoOEwtV011Z1lPcGpNQWhF0gGUAkFVX3lxTE94Mzd5OUZhaUJxNmd5cGtXdlE1ZlU5TFpTUFdnSHFxOHNac19Wd2MtTlNwajNaakYzVDBmbm9vZEpvQnZKU2QxUzVvaEFWaWJyOUdHYlhvSW15VUVJQzI2NkZKMklZTTVOc19MWFpfZ3A4eVNLRS1tWEN3WExJQXc1LWJvREY0czA4MGZJRnVKa1YxYnV3eFpwSUIxRm5Qcy1SVE00SWNQOEk5aEpieXZXcF8wY1hxUms2NGVOaURRcndMazFnck01blV5UDBkSlN6MjhPenE2MExKcHdpcXhiNGM2M2dfMFpCUkRSX2tJWlU2Znotb0JNcVBieDlqd2hGbk4tc19VcTF6S054bGF6X2hIZw?oc=5",
+      "images": []
+    },
+    {
+      "source": "Google News: OpenAI",
+      "title": "US prosecutors reveal OpenAI case defendant’s contacts with Saudi prince — CNBC - UA.NEWS",
+      "time": "2026-10-19T06:36:39.000Z",
+      "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOYU05U0U3ODMtdzRfQk1IYkJQYWNiV0hfMU8zWEZFZWtfaEl6ZU5uc1Y4X1gzU3RnbHJKaEdjbDJreW1XU3RhQ28wVms3Ulh2Q0VOZlpneGNJQ3pQLVdtNk5ZSlBNNzBXY2dZRXYwY21NekJWbWl4a1hKTjVMZkJkYmxibThGT01yUW9uUXRFdTFVak9Ub3NJdHRBOW9nSmxPSDRQMF9OTkNOb3FaLWlUYjhQc2c1cWdCNHlhVDdNTmI?oc=5",
+      "images": []
+    },
+    {
       "source": "Google News: AI",
-      "title": "AI use linked to better grades but not deeper skills in Ugandan universities - Bioengineer.org",
-      "time": "2026-10-19T01:31:20.000Z",
-      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNT01seWVid3p6TWdILWVCdEpXTUFkVUZ3M25yaXp4bEZjSXNMNHBLRGZSdXNRQW9fMk9pYkdEYTEzQXNjQUhsWmlkTERhNGRtNTNLWlRYZkxRM3BTZ1FOTm1kSGpTdHd4VVlpd2luNHhodGZCcDlPUm01NUxuZmlFVFhoZVM1cnFwT0ZaZjdHN0FfY2dOekFtcktmVFNoQnBYeTgw?oc=5",
+      "title": "ITSWC KOREA: Opening Ceremony told safety outranks AI - Traffic Technology Today",
+      "time": "2026-10-19T06:33:12.000Z",
+      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNUS1uYi01T2cwWURiVnk4dmNSUjFUSHdDTW9idUZTNWhFcE0tMUc5bkJqU1MxT1lZLVdqT0ZyXzVxSko3ajdLdWg1ajUxcU5sMjBMX19NVmR4Rm1SdE9zTmU5UTktcG9SYloyRDltV3VYcWR0ajJtNHZBSk05ODUxVDlrRlhfZUZBRklTMEU0LU9yNzdqSWxfQ3AzWGpFdmJhTjZFSU1uYzkyV2I2OW5F?oc=5",
+      "images": []
+    },
+    {
+      "source": "Google News: AI",
+      "title": "GOS 2026 Europe: Optical-Intelligence Convergence, F5G-A All-Optical Networks Power All Industries - The Fast Mode",
+      "time": "2026-10-19T06:31:28.000Z",
+      "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxQTElfS2dqc1J2VEVrR2Q3N2I5VlFTMFNqcGRlbWV6cmdxR2hST1NUWmJqcERlbFBpeG85ak9VNGFCdDJiYVRFUmxWbGdKOTU5cm1DSDhBeUg1V0hTWHhzTmNyMnMwalExeS1HM2EwRFo0cVdrX3pJbEdVOTdXbEMtcnZzd1lEaXl5Rkd3eVkxRDlUOWxnMXY4R2c5VTRLZTdwcDZGcDFLWkNFejJxNkM3Z095ZVV1aXBsYzVVY0N2WmpKS2NEaFV6eTJSRkxDYmVDYVg3VF96WkJ6cUYyTEdjY3hYNEtxQQ?oc=5",
+      "images": []
+    },
+    {
+      "source": "Google News: OpenAI",
+      "title": "An alleged spy device was hidden at OpenAI. Check this overlooked spot in your office today - The Star",
+      "time": "2026-10-19T06:30:00.000Z",
+      "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxPV2ZnNmthalN1RHhEbFpyTS04N3A5bjNsaXpKVkNuMlFKdnR5ejFKZlNBcnV2cm5YZmI1RGkxYW1BYTlpUE1xYkFKVTFLWlNqZTZ1SWxIdEcyd0pmWVdDRGd6NEJrYTlCZVdfaHREOE8tMU9KMG5Md3VQV0ttRFdidnBIdjBUUGlmZ2YzRG1LTGR1MHlNVEQ0bVUyeElsY3BSRjNMRHNfbURUa3ZFWkFoMDBTZHpHZ1IyeU5pTlREZW9jTXBOMXlCUnVuQUpXcWdPMjNUZlRXZnB3MTQ?oc=5",
+      "images": []
+    },
+    {
+      "source": "Google News: Anthropic",
+      "title": "Entry-Level Tech Hiring Is Slowing At Anthropic. Its Report Explains Why - NDTV",
+      "time": "2026-10-19T06:17:20.000Z",
+      "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOYU1RbjN4dm44ME1GNVdkaUk4aVN2RGZFeUN4WHFQMGljTjBKYkJ6SzNxc2tSN0wwMEYxVm9iaW5HbjZ0Q05fZnVJMHg2NnVNMmYzSGt4QVJNQzRtS0hxQjN5WXpmSmdMSktJNnhyanlBOXJrQU8xbzVHM2h5R3ZvSDJQNmRMYXFwMzd5OVN2X3hLZlczRHZGYjlZeEw1WUliVVg4SE94SE5XenhuOVhaSFE0QWt2eVdUcTR4OUIzQUJsM1HSAcsBQVVfeXFMUEYyalZOMVhHRGVvRlE3UXEwaUFtS2N4TFZFdFlza0dOMVFsX1pVSzN3VUNneUpjSDE2ZEpCOTNCUHAtRDN5WlMwNmxFNG1YQW5tTGdTSy0yRVdqMWFFenpXQ1E2LXJnOTFWZ1c2aW80TnN0eWRrUV9HS0pSSEZMSW11MFloV1FWaHFDUXB2RFZZUC1zOWlETmlidFdTVHUyREJnMVd6cEQzSGFqVi14elFUeV9ONE1wYmxySDZNWVpXUmVYSXZVaEhKdUE?oc=5",
+      "images": []
+    },
+    {
+      "source": "Google News: AI",
+      "title": "Entry-Level Tech Hiring Is Slowing At Anthropic. Its Report Explains Why - NDTV",
+      "time": "2026-10-19T06:17:20.000Z",
+      "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOYU1RbjN4dm44ME1GNVdkaUk4aVN2RGZFeUN4WHFQMGljTjBKYkJ6SzNxc2tSN0wwMEYxVm9iaW5HbjZ0Q05fZnVJMHg2NnVNMmYzSGt4QVJNQzRtS0hxQjN5WXpmSmdMSktJNnhyanlBOXJrQU8xbzVHM2h5R3ZvSDJQNmRMYXFwMzd5OVN2X3hLZlczRHZGYjlZeEw1WUliVVg4SE94SE5XenhuOVhaSFE0QWt2eVdUcTR4OUIzQUJsM1HSAcsBQVVfeXFMUEYyalZOMVhHRGVvRlE3UXEwaUFtS2N4TFZFdFlza0dOMVFsX1pVSzN3VUNneUpjSDE2ZEpCOTNCUHAtRDN5WlMwNmxFNG1YQW5tTGdTSy0yRVdqMWFFenpXQ1E2LXJnOTFWZ1c2aW80TnN0eWRrUV9HS0pSSEZMSW11MFloV1FWaHFDUXB2RFZZUC1zOWlETmlidFdTVHUyREJnMVd6cEQzSGFqVi14elFUeV9ONE1wYmxySDZNWVpXUmVYSXZVaEhKdUE?oc=5",
+      "images": []
+    },
+    {
+      "source": "Google News: OpenAI",
+      "title": "Test drive: OpenAI introduces virtual try on within ChatGPT - Retail Week",
+      "time": "2026-10-19T06:13:16.000Z",
+      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPR19nWldPSTg3VXlyNGtRV3M5cVNHWUpadUhmSjVGZzRQQmtZUlJiRk8wUktkTDkzRXdHSS1VM3RWUnZtc3dSby1xYnM0ckpVS1U0eXkyeWRTRzh1aG9aWnZIS3JDYW5oUm9ray1qcnFNdTVqTkd1YkxZYW0wVndpazBnQ1dwTmp6NVB0RzRiVXFrYmluT2VDb05zcUItZ0JJbTJRMjd5WTI2dmUwYTItTVcwVQ?oc=5",
+      "images": []
+    },
+    {
+      "source": "Google News: AI",
+      "title": "You can get AI answers for free. Who really pays? - DW.com",
+      "time": "2026-10-19T06:10:19.000Z",
+      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPWFpfbUhGcUtkZnp3TUNBeF8yMDJ4ZmpIQXpYZ0JsQ0VUYThfSXdfbmVvZllBeGpXZGJleHFXSWYtTXgtc0dtd2c2VVZYZU03TG9rRVVDVkY1c2t4U2pIeWhSdGRWYXhXZ2ltZXU2dEZSczZSUEEybHJnY1NWcUo1WVV4QV9LV05hZlBsdA?oc=5",
+      "images": []
+    },
+    {
+      "source": "Google News: OpenAI",
+      "title": "OpenCode Console Breach May Have Exposed OpenAI, Anthropic, and Google API Keys - The Hacker News",
+      "time": "2026-10-19T06:07:00.000Z",
+      "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE9DSHd3eWxKVUpRZVpodjBWSENuSVRUMUpEQnQxNFJvN0JaT0JkQndMamRlRVk5QUtvaDJ5M2hldzh2bkhOVWlGa3VHcXlheHg3d3UxamFSbDNDd2o0a1FpbXB1UWpva3VUSE1xTkhYUGtrbFQ4d19hSVpyRQ?oc=5",
+      "images": []
+    },
+    {
+      "source": "Google News: AI",
+      "title": "Artificial Intelligence (AI) course enrollments in South Africa rise 75%: Coursera’s Global Skills Report 2026 - Africa.com",
+      "time": "2026-10-19T06:06:43.000Z",
+      "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxOcnZtLTdPMmFtQVQ5MEc0MUNSdUVPZWRpZl9zRFpNTUc5TUE5aUtyNVBSR0xYMVJUTnBTOXVsclp4SUdlbDEtVU94dmNlNjEzcHdWZjJ2dkFmQ05paDl1YnFnMlc1MDJTSUI4ekU2UXRBN1dIbHc3YnZBTGktM0oyNTVhNXJrQk1NRHdsaUsxMWNJNUhkLUwycTJKQUprTDd0M0pvazRmLWw3TUlkZFFFeHg1cUJZc2VwTlpTbjFWbEN3ZXlZQkhZ?oc=5",
+      "images": []
+    },
+    {
+      "source": "Google News: AI",
+      "title": "Startup Stage: Tripician uses AI to build verified, collaborative travel itineraries - PhocusWire",
+      "time": "2026-10-19T06:06:39.000Z",
+      "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQZjN2YzQ3T3EtTGVkd2ZXSUxJbUhrSEoxVUpEb2haeUlFSzhuUEI1a05JQ2x1a1ZOUjZSY0RISXdXZnJQZWVGOG9WMkY3czFadWhfMzNhYktONWJncllyWnlJeEdjZHVUQjFEUllhaHVNOThGTzRFM2owa1ltMkNvb0JQeDJ6QlZqVDZmOFNkZTRjd2ZUNFVYenJRZ3RGMVlNeFlrUWRlTEZHWE5oaWFEamRLcVVUVm1TX2UwNUNtQzE1d3FpRVE?oc=5",
+      "images": []
+    },
+    {
+      "source": "Google News: AI",
+      "title": "Artificial Intelligence (AI) micro-credential enrollments in Ghana rise 95%: Coursera’s Global Skills Report 2026 - Africa.com",
+      "time": "2026-10-19T06:06:24.000Z",
+      "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxQTmdXdVlMSG9CVGtWcHJvQmRBSmctVHM5R00za240WGRad1g0dkhWa05VT0daMmRNMXdPSlpnbTRKaGJSZjk4S2V0eFhwZ3pVXzVBdTZwbXg0ZmdPNnd2QnFwSXBmYTlkYkFQaGlmVDNZTG05MGhvZUtoMWhTZXZmSHBDN1czOHZudDQ3LXFSQ1B4MXJBUnkwaTJwdG9xZFE0OU9YU0ctWW9lanhIYlZBVURhYUdpRmI2Ty0wVmZtOGF6WXVaZG5UYTFn?oc=5",
+      "images": []
+    },
+    {
+      "source": "Google News: OpenAI",
+      "title": "Lovable and OpenAI operators back Stockholm’s Vessla in $3.3M round to automate property operations - Tech Funding News",
+      "time": "2026-10-19T06:04:30.000Z",
+      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOdDZyM3JxckgwNk9Ea05RLWVwU1dsMC1FX0tkOUF6bjRYMFJKbW9IRmRSQ0JQbFV5Z0VKeFpvcWJ6dkZmWFlsRzlrdGRHdTJ3SlB4WmVkaG8wYTlPa3d6Ukk2VmRmYzB2bXRIR05lY1RmM0tkQ1BOQ05jcXRMVWlwWlB1WFBZVXJ5YmNaUy1ma0d3QklsdnEzdUhB?oc=5",
+      "images": []
+    },
+    {
+      "source": "Google News: Anthropic",
+      "title": "AI is changing who gets hired, Anthropic's junior tech recruitment falls to 9% - Firstpost",
+      "time": "2026-10-19T06:03:49.000Z",
+      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPTUlMWW9DMS10RE1iQkdVcEhwOEszRkd2QThGZW5yZkItY080UjZCckVtbHA1cmFoalJqNFY0aHRtcUJzUVU2aXJRdEpRVVZsSnlGYk1EZEQtbUxXWFc0ekVPS215OW14Ml9VN3FNRXdTVnY2Nld2aENKZlUySUR4OUY3eThxbzFrcWJWSkV5NTgyYnJILXlhQ0YwUktDbjE0Mjg3ZzRpRmQwOEZjTC1teERwS19CZFFDMnpzSdIBwgFBVV95cUxPVEVUOUZ3aHNNR3VvY1dhNTVlOXFpUUd2cksxSnAxVHUtRDlfdjFobFF5TGxPVDdkZWZReFpmYUlzNUo3Vkw5ckdKWjhpWFdKY1lsRDhTVDNGSWNZZEVGWmhQbk5QRWtLbmZJbHctRDdEVXJFcEdUSU1pLVA5Ul9FN25QRE5Xb3l4VTB5UGE3V2VaZDlRX096TjA0SjZsRkE4cE1yeUhzLVZwNzIwNGdqSmozSnlIcXlBQ2daMmJjUGFkUQ?oc=5",
+      "images": []
+    },
+    {
+      "source": "Google News: OpenAI",
+      "title": "OpenAI bugging suspect WhatsApp'ed Saudi royal days before arrest, feds reveal - CNBC",
+      "time": "2026-10-19T06:03:03.000Z",
+      "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNNlEzbWo0NE1pc3VuQnRxbDZtNHZGVXd6STNFejRBYTE0T191XzF3dTNWcmc4UmwyUG5Rd0dwNWh5T3Zvb2FTd0IyNm1KTXVhMnpKUlJlUXZRY3B3S0IwRExRV3l6UXVPMlctUGRoV1FPS2dOR096d3M5U3huQVRyZ2sySE1PRGtfU0xmei1ZNNIBlAFBVV95cUxQamxHOGJ2QWpKYjhDa08weUJKWFg1MHVhRkdCbGVQY3NHTXZPdzdHS3lZb19EX1NmMnRXRkh1WUtZUFRZTkR0Z1FiUzB6YWFTcm4yQlVwVko3Rm5mX2FWYVJlV3lEZWNqQXRYcDFNMnllNktDbVFzMUdNVnNPcUFudzc0NElpVjNSQ2QtN0h5ekFKMDlX?oc=5",
+      "images": []
+    },
+    {
+      "source": "Google News: AI",
+      "title": "Artificial Intelligence (AI) micro-credential enrollments in Nigeria rise 93%: Coursera’s Global Skills Report 2026 - Africa.com",
+      "time": "2026-10-19T06:01:22.000Z",
+      "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxObk5lVUtBMUp2RE56QmRlSkZXNTBMSnRsUmM2UEZpNzZJWW9PRFVyYUJiNkdtVGdsU214VXM2OXNaM0VsemxCLVVFNXhtYUVleVZqbFd2RTZrdHp1a1VRNTBQdkNZQmRrNnlLVmV0Yk5pUnFac0NMTzJGNWI1RXdTdVJZd1ZqcWs0djFMeUQxMDBvV2pick9yb3dqZUNDXzZ1Y2Nrb0FDS3Z6RHRjdldRMk9jZHFiN1VQUmVVRHBkUkFOYkt5LUdJTy1Jak4?oc=5",
+      "images": []
+    },
+    {
+      "source": "Google News: OpenAI",
+      "title": "World launches WorldID for banks, Zoom deepfake detection goes live - 디지털투데이",
+      "time": "2026-10-19T05:50:00.000Z",
+      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQT3hmU29CWk41SkFMTmhSYUpZOVJQcHRHdzBlVXRWdkNHUDc5RXdhcmpTRGxJNHRlU1Rkc0VqeVhHbXVxZndEZWJ1UXNmZ2ZpUmJrXzhaVF84TFlVeEl6TmlhZ21Ybm5feGZxZ0ZrNmF0ZGpNMTI2QmYzR0JfbVV5cE5lMmJHVlJGY1VNQWRNTVhIZi0wdm5yUFN3dWh2anVRcU4ybEFMUHRycWVYanR1cEVR?oc=5",
+      "images": []
+    },
+    {
+      "source": "Google News: AI",
+      "title": "Asian shares are mixed with tech stocks volatile, and oil falls on Trump's Russian sanctions waiver - Audacy",
+      "time": "2026-10-19T05:48:00.000Z",
+      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNUDF0c0pHMXNqNGN2RnBKYmloY25NT1dEZzF5dzNiSC1XYVlZS1FNeUtvM3hhcjE0M1lfUk5fbXFtZkp6RGxBN1BOMmV3Skh4U3Z4OFRPUkxoenE1Z0laRkRPdkgwYm9VMEZqQkRaWHQ0ZmVCaUtscXhVQldaZ2tubEhNT1k2ZmFNbVYweVllZkhDaTlYUFp1TzY5UHBFWG9nbXJWZw?oc=5",
+      "images": []
+    },
+    {
+      "source": "Google News: OpenAI",
+      "title": "Replit picks OpenAI over Anthropic as primary AI provider, says ChatGPT is better now - India Today",
+      "time": "2026-10-19T05:47:45.000Z",
+      "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxOQ195dHNLcXc0NFNDYnAzc2s1QnhseGJpMGE5RDM1enl5TDNXX2NiZWtDVTQ0MnNWSkxqekdPVVdZS09zRTY2UGFXU1BTX3lIYVpNMmcweHhjeExHRzU5bnREOFluWHhGckRpZkYxVFdRX1hmZnNiLUhPNXFDM25JaVNpVXVkcF9mTXVLY0xTM2lLUEIxcE9WdkxISkpVaUtkVGlOV1RKX0FKOW1XWUhGZldSYU53U0hBd0R4ajR1X1ktc3FhRWQyOHFxZWM0M3JxLTZXZW1tcVVQYmZxaDZFeENYbTh5QdIB6wFBVV95cUxQOFV5U3N3TDVlWmJyS295U2IyeGQ2UzhJVk9KeFU1T0dFUHRKWnV2R1dKWjhucnQ1S0k0bHhFemVtck1NS1BiT2cwaUEwN05xV09QOWEwT0VTYTVOQ0tVQmtSVE5RSXhOckJiMVpDMlZJNXg1NHo3NFVZWkNpVlU0M2t2ZjRJZ1ExcmpmTmFLcWljSGMzeGtGdGJ1Q19sdnZibExhNU00LXJoSzg5UmtLNVY2ZF9WbmYzbzZoQ21uOTlzMTlpSnlvLTFtU1J3QklvelZVUWRyWW9MV0JabWtyWXBhb25venpmSkJ3?oc=5",
+      "images": []
+    },
+    {
+      "source": "Google News: Anthropic",
+      "title": "Claude AI Powers Seven Free Adobe Alternatives - varindia",
+      "time": "2026-10-19T05:44:02.000Z",
+      "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQT0licGxxWVlDR0hCNEFlWkVyRWs0WUxUQThkZ2lOMHhjTkVSNUp2dG9tc1JLNUFNbWxNOWVQMzR4SGlveS05MnBvYlpvVWZUbXVsUmh4SGdRbTIyUGhEM0dDQkYxTWhxQlRwQmVPdldsckVrb3ktbnZpUGszcnJHbTVR?oc=5",
+      "images": []
+    },
+    {
+      "source": "Google News: OpenAI",
+      "title": "OpenAI Helps 3 Busy Grandpas ‘Get Stuff Done’ in UK ChatGPT Voice Campaign — LBB - LBB - Little Black Book",
+      "time": "2026-10-19T05:36:10.000Z",
+      "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE9xcmxYMVBEMWx3bi1EV3lhWVhPajlhQjlZME0zQW9xeG9pOTBRUTVoVWVINmViVzVJTkNFeTFRV281S0dmWnNUaG44UXdKa2ZLVVdnbzItRWQtZnRJQXRVeDBwNm5SOVNWa0VVeGhMM24xYWw1OEpKTlpIaw?oc=5",
+      "images": []
+    },
+    {
+      "source": "Google News: Anthropic",
+      "title": "AI giant Anthropic wants to transfer 5% of its shares to a \"public benefit fund\" - Українські Національні Новини (УНН)",
+      "time": "2026-10-19T05:32:46.000Z",
+      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNWFlnb3A3ZzVEZENnS3pyM1FGdl9lRXFxdjFnbEVZOGQ3OHRmRzhEZFNGS2x1MTVEa0VwOTdKNXE0ekIwR3ZxUUNHR1ZrdVJ0Ql9QOXZtRld2OVVVZjNxMXZ0bUFlMmlSeEJfM3lTZnpjanQ4RlNCeVE3UjVDelVaaThWTFRyX0RkSl9md3VhOE5zZVRGN21OejJaUmxwODAxUV96VzZJeE5VWVnSAaoBQVVfeXFMTmRlY1JGMUtoc2hFR0c1TERFVTE2Z2tnUmozU0FOamRBUkw2NG1tT0tSZWhybDV1SEZoRUs0T19RUzBQWGR2V3dqOVlXb3JoZ3IwbzNVZi1zWmRoTkZucjBYMFF5RzZXT183eElhU0pZQWQzQWUwNFVmUG1mVHk4d0tqTi0xSW81cGEtbGg3RXA4OG9XdzZQVVl0UThkbHNtVm1tanJWaDdJS3c?oc=5",
+      "images": []
+    },
+    {
+      "source": "Google News: AI",
+      "title": "AI giant Anthropic wants to transfer 5% of its shares to a \"public benefit fund\" - Українські Національні Новини (УНН)",
+      "time": "2026-10-19T05:32:46.000Z",
+      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNWFlnb3A3ZzVEZENnS3pyM1FGdl9lRXFxdjFnbEVZOGQ3OHRmRzhEZFNGS2x1MTVEa0VwOTdKNXE0ekIwR3ZxUUNHR1ZrdVJ0Ql9QOXZtRld2OVVVZjNxMXZ0bUFlMmlSeEJfM3lTZnpjanQ4RlNCeVE3UjVDelVaaThWTFRyX0RkSl9md3VhOE5zZVRGN21OejJaUmxwODAxUV96VzZJeE5VWVnSAaoBQVVfeXFMTmRlY1JGMUtoc2hFR0c1TERFVTE2Z2tnUmozU0FOamRBUkw2NG1tT0tSZWhybDV1SEZoRUs0T19RUzBQWGR2V3dqOVlXb3JoZ3IwbzNVZi1zWmRoTkZucjBYMFF5RzZXT183eElhU0pZQWQzQWUwNFVmUG1mVHk4d0tqTi0xSW81cGEtbGg3RXA4OG9XdzZQVVl0UThkbHNtVm1tanJWaDdJS3c?oc=5",
+      "images": []
+    },
+    {
+      "source": "Google News: Anthropic",
+      "title": "Anthropic Valuation Plunges $3.5 Trillion: Has the AI Giant Missed Its Optimal IPO Window? - 36Kr",
+      "time": "2026-10-19T05:32:42.000Z",
+      "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9vc2R5cGRvdGJaaG40ek9DVUlFRW9Ib2NXaGpELXE5UVM0UDZweVdYdkMyZ2xlQTBWMlRPYk53cnpKM2pvc0dfSXcwbW12VzhMYWJJ?oc=5",
+      "images": []
+    },
+    {
+      "source": "Google News: Anthropic",
+      "title": "Anthropic's 64 Trillion Won Public Interest Fund - 조선일보",
+      "time": "2026-10-19T05:31:46.000Z",
+      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNUnR3NTB5cjdFRVlJWnFhM3AzdHJPbUN3TW1VR09IYW5Kb2NfVzhqY3JpV2xxb3dIMkNyTVowWjlOQ3F5SkxWSzZqdlhNWV9BdlJFTGtmZkJVeURpU3lETjRTUFE1X3NvU1M4eHBwUDlCS2hpZ1dta1hUYW9kVEFVQUxtXzZ3ZTJw?oc=5",
+      "images": []
+    },
+    {
+      "source": "Google News: AI",
+      "title": "Illinois Governor Creates Cabinet to Explore AI Regulation - Insurance Journal",
+      "time": "2026-10-19T05:21:20.000Z",
+      "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQRjFRUUZ3SG1zcXJIaUpOYnZ0bU5mSmEwOUVQdlNBN1JNM3V0MG5OOGN3TEtsSG1TUGRpbEFqdXE2bC11QUwyWVhkMnlFeWlpcGFKcWU3Q1BNVnpkWnhFYXJ4RHVXdWJpazhYRkNPU19Uei0yNmFLbzBWRUctaUdIa2pkWQ?oc=5",
+      "images": []
+    },
+    {
+      "source": "Google News: AI",
+      "title": "If I Could Only Own 1 Artificial Intelligence (AI) Stock Through the Next Bubble Scare, It Would Be This One - Yahoo Finance",
+      "time": "2026-10-19T05:20:00.000Z",
+      "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPbWQ0TlNSVzJETlo2akNxdzBEYmlQdlBNaUpLeEtVZ3duNGtoRVZBSDdUbnpMT2hHWEN4eUtGcDg5ZzVIMjlheEJoYUlOXzY0SS1Qbnd3a2pKZjVmM1g1dDZpR3NDdHRvTUZlU05raV9OUXpwS1pLMWxKRWtnSnVTSWZlaWEtRnFjNzNpTVJsLXJpQjNJNXc?oc=5",
+      "images": []
+    },
+    {
+      "source": "Google News: Anthropic",
+      "title": "Anthropic sets aside 5 per cent of shares for public benefit fund ahead of planned IPO - Indian Television Dot Com",
+      "time": "2026-10-19T05:18:57.000Z",
+      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQM3NFblNCX2xPOVBZTTF3SXQ2SnBNVU14MV84X3pIaDdONU93S0JrdFVaN1hEdkZRdklGbW5oYVFDLVpzNW5pUTNjNWV4cFNOVjJzQ3ZfV0t1M0R5OVF6TEg3MXdUSlBXdEV4LU9FSWkzOXBXRGNNdzlCR0x5bF9TT294TmlGWUhhV0lITXdpM0VWV2lObFhaVEdBbXRObHYxcFA0cGNXWWxsVVYyZUdTSTdoOFdVNUtzX1NLOQ?oc=5",
+      "images": []
+    },
+    {
+      "source": "Google News: AI",
+      "title": "‘Faster and leaner’: DeepSeek rolls out upgraded AI model after recent service disruptions - Yahoo",
+      "time": "2026-10-19T05:18:00.000Z",
+      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOTms5ZXVKb0lBNFB1V0xXdkcycENLNlZla2NRZThTbmNRZkpSLXlQS0llTENtc2ZkTkVFcFFqR0U5SGdyUkpzZjZzTE9WZ0pib1NHd3RiaDVmSVFPdjVnWGY2YzhaOWlfd0pUdElzQ1ZZZ0NjdHVhUHFaTjZPRjVacFNpMGs3R3M1dE5Bbg?oc=5",
+      "images": []
+    },
+    {
+      "source": "Google News: AI",
+      "title": "Santander Turns to Nvidia to Build New AI Banking Capabilities - PYMNTS.com",
+      "time": "2026-10-19T05:13:09.000Z",
+      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPVEtnc2E3c0VteThUaG5Ub0R4OEZZcEhWWlVXb3NhSGpyY3VENm5hVTdaZTlSZEdVZmg1cWV4Qmh4ZEIxMm9SdWtINGRQOE92Q1MyTzl6UTNpbXpfODdxUml4VHEzQnMta3VnY1lvU0E4Y2JjcHJQWjQ5WDRPc2Exd1NIZmsxa3BESDJodEtyVTNmNkVIWV8wNHpRT1pwNVRhMUtGWHpGRQ?oc=5",
+      "images": []
+    },
+    {
+      "source": "Google News: Anthropic",
+      "title": "Anthropic Co-Founder Jack Clark Latest Speech: The Singularity Has Arrived – AI Reshaping Global Economic Development Trends - 36Kr",
+      "time": "2026-10-19T05:12:41.000Z",
+      "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9POUNrYlR2UERZZTR4UFluUXFOVFJmUjdiZklqbmd5LU56NThadXkwZUpUM3JVRGVORXZubU9qYlF0dnY3SFdCSWxSYlZ4SXlYTENV?oc=5",
+      "images": []
+    },
+    {
+      "source": "Google News: AI",
+      "title": "If I Could Only Own 1 Artificial Intelligence (AI) Stock Through the Next Bubble Scare, It Would Be This One - The Motley Fool",
+      "time": "2026-10-19T05:12:22.000Z",
+      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQUWZsODhlSlFEaFlPZUEyNXBsdG9JWUxjLTJ6bThJVEdyc0U5Rk1KWFB1emdna3ZTWHE2QkxnanpfbVozNHN1eGRudUlYR0hqXzg1N09jWUVnUUVfNmswWjYyZURGa2Y2dDlWRTA4cXB6S1RlaWVocTRUNkVqaE56ZzZ5RnhOWXdqaXhpZURXa0ZhT1BReHZCVw?oc=5",
+      "images": []
+    },
+    {
+      "source": "Google News: OpenAI",
+      "title": "OpenCode Console breach exposed users' AI provider API keys - OrcaRouter",
+      "time": "2026-10-19T05:06:21.000Z",
+      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE8tcWJuZXlMQU1sY2s2MnZ2NXRyMWRKR0V5TTF4Q0tfSXZoWmVuRmpIektNWWg2ZFQyM093cWZ5a2p6Tm5PWGxjeTFvMC1DY0N2Sm4zZWR5ZGlYMlhFZ0VsbUQxQXg2TlE4T0lUR2VKb0lObGR6aTVhWXZuQXZ0bWM?oc=5",
+      "images": []
+    },
+    {
+      "source": "Google News: AI",
+      "title": "AI Governance at UNGA81: Safety, Security and the North-South Divide - Bloomsbury Intelligence and Security Institute (BISI)",
+      "time": "2026-10-19T05:01:26.000Z",
+      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPMGhUcnc2MUM3SHBqSWd5b2U3YjdQN1pDeHVwU2VrUzFmVXQ5ZV91enRLSmpTWTBNTENGM0F3aUhDV0taRXhwSFVjMDhaUzBZcGE0YVprekh3QW1uQURMY3gzeUZPdzhlSFBDN0NKUUtTb3lhY1Y4dWczSUhDbWE5dDZZa19YSk1PRldLdjNyLWhNVkFmVzJ2aFVR?oc=5",
+      "images": []
+    },
+    {
+      "source": "Google News: OpenAI",
+      "title": "OpenAI launches ChatGPT Voice in the UK with campaign showing grandpas completing tasks - Campaign UK",
+      "time": "2026-10-19T05:01:25.000Z",
+      "url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxPbEphaE9BQ05FazN2UDNXZkJvM0hXZzlSWHpFVjVPNEExYzlHWVZsY1hCc0VsdFAza284TlcxeWRRY1hKNEJ3SzlqMHQ1TmRTMkl3MlB3bkxVWDVaZFNfQUJ3YzAtTnlEdmRqX0FHMlVSNjE2RjlUMm80Umt1WGFwQmdoY3VuOW5EUnpOM2s2cFRwVUZfQ1lHTXVOazNORGRrNXlWczRRYlZSNnJKUnFvT1ZoY24yMU9Sc3Y3N0xYSzktOVdha0ZaQ0dFMEhieG1EQk1GbUlXalNyanUtS0ZZNVJRS1lGdHBv?oc=5",
+      "images": []
+    },
+    {
+      "source": "Google News: OpenAI",
+      "title": "California AG Subpoenas OpenAI Over Rogue AI Agents - OrcaRouter",
+      "time": "2026-10-19T04:57:11.000Z",
+      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNbmZuSWg0OUswS093ODBaczJsX1NLdGlGQnF6Smx6eVdJSk1OMGlaSXRPYTI1OEczRmdDb1dJd3VaOXp4cGxXcWFYcm80YzdCUXBzNDk3dnJEd0QzMkcyWnd0Rmh5ZVN2QXlQcnZFZ3FWNElPM0U3ZWlYdUczalFpX0JELTg?oc=5",
+      "images": []
+    },
+    {
+      "source": "Google News: OpenAI",
+      "title": "Kaliforniens justitieminister utfärdar stämning mot OpenAI om okontrollerade AI-agenter - OrcaRouter",
+      "time": "2026-10-19T04:57:11.000Z",
+      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQX2oyYUgtQVM2WU5vemxBOUNxblRad1Z3UHdtZS15Rjg0dlBHbGlZYnpueVgyVDFIcy03SFRIUzZxdmVrVllfaDZqbUNxMm5wYXREZm5hZU41TW5uQm11V085bTBzMDhFbGgyalRST0ZtQmdjcUJZSXBLek5jYU1hOG4wUU12cUdL?oc=5",
+      "images": []
+    },
+    {
+      "source": "Google News: AI",
+      "title": "Explainable Artificial Intelligence as the Missing Link in Dementia Pa | JMDH - Dove Medical Press",
+      "time": "2026-10-19T04:56:06.000Z",
+      "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxNbENHR3djRzNMSl9RckQ0cTJrV1d4QVNPTExfTzZCNVp6cVdYRHRPbE1CcERyVHF3ZExHWVIyX3dvN1ZRM2ZIaUZuc2t6V195MUpVb3hYYjAxVE12U0FLOERCOHZ3cEF6akh1N200LWRDbmhPM2lCUGNtYlFySE1ieVFjc01mdEV1dUJpazlFZ1hfVW9DSEZTc3FLLUk2blYtQ2dNbEEwQjdYOThpbnloR01uUl9wZmdUc0hvOTdULVFURGFXd0dsVG5yWmI?oc=5",
+      "images": []
+    },
+    {
+      "source": "Google News: AI",
+      "title": "Biosecurity for the Age of AI - Issues in Science and Technology",
+      "time": "2026-10-19T04:54:39.000Z",
+      "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE9BQlk4VVJfLWtxbTVHTV96NjA4VE44NkpRazE3cm0zdDZWRHVjUGpEVGRlQ3I2aGpwUGYtZll4MldsYnpHUUFLMlhKYktvQ0U?oc=5",
+      "images": []
+    },
+    {
+      "source": "Google News: Anthropic",
+      "title": "Claude AI tool triggered No Kings Instagram suspension, says Meta - Business Standard",
+      "time": "2026-10-19T04:49:48.000Z",
+      "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxNeHV0TWhvSW1iekF0dkk5eGNxVlFVcjRQLWZRTk5sRThDRUZTUmVBLUxHM2F4X2hIWjNDUWdCb0hQUFVmQTZmVGl5UkxyaS1pUV8zODRTbGhOMklfVmFHUWZ2NHZpQ2g0SENlZ3pMLVRLaGlnRFJkYW5CUEs5RUUzYkF1TGVUX1VxS1BBaTh1UFRKVGZwYU1EQy1BemVSMGdnMWRzNVM2VWJHenh2Mk9sMTlkZjRJNE1WT2gzcFpJTmNxVzRpTHlrZGc5MFlpZ9IBzgFBVV95cUxNeHV0TWhvSW1iekF0dkk5eGNxVlFVcjRQLWZRTk5sRThDRUZTUmVBLUxHM2F4X2hIWjNDUWdCb0hQUFVmQTZmVGl5UkxyaS1pUV8zODRTbGhOMklfVmFHUWZ2NHZpQ2g0SENlZ3pMLVRLaGlnRFJkYW5CUEs5RUUzYkF1TGVUX1VxS1BBaTh1UFRKVGZwYU1EQy1BemVSMGdnMWRzNVM2VWJHenh2Mk9sMTlkZjRJNE1WT2gzcFpJTmNxVzRpTHlrZGc5MFlpZw?oc=5",
+      "images": []
+    },
+    {
+      "source": "Google News: AI",
+      "title": "US agencies release updated guidance for responding to AI training incidents - Cyber Daily",
+      "time": "2026-10-19T04:48:42.000Z",
+      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOeW44Sy10WU5PYy1NQUpTVGpvelBVcVh3RjE3aF8tR3hvdjROV3hoNGxXV1QzbFdYd2ZINnVjbFd3MjdMaFUydGxjQURwcWc1dDBJZVVNZEN1QmY2T045bXJ4c05GZXU1U2sxaDBMZW50QW5mS0xpY2pZb3Y3N1l1WlVOQlJvYy1vSkJpcnZCTUVtN01uWlRWZk1XSDJjWEs2UWRBYnEtSnlpMzFibHZGZktxTlM0TW9M?oc=5",
+      "images": []
+    },
+    {
+      "source": "Google News: OpenAI",
+      "title": "OpenAI’s math proof ignites debate over scientific credit - Scot Scoop News",
+      "time": "2026-10-19T04:46:34.000Z",
+      "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNR05Bb0VzQ0lIdzFWZmlOblJHS0Fad2xnaFp5TFAxeElDYjByMjdUMWREdmdPeEVFbk02TFptQm1JZHhYMnVBN0pOWDRiRWlqVG9PNjdWQlBBcTRsenBiemJvSWo3M3M0aFp3ZWE1aEhCVjFpTlJ0VWQ1MWNyVHo2TkJpcG55dw?oc=5",
+      "images": []
+    },
+    {
+      "source": "Google News: AI",
+      "title": "Lee Sedol, who \"defeated artificial intelligence,\" earned 10 billion won before retiring, but says, \"Being unemployed is truly difficult\" [The Problem Kids of the Attic Room] - 스타뉴스",
+      "time": "2026-10-19T04:43:48.000Z",
+      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOSnV6ckdsMjZxaGYxNDNfV2Jpb1F3cWR0NHBGd1ktajJQY0hwMTZaQ1VhZm5iUWVvNTROc0szRnY5Zkd6bzk0VnRQWF9kR0JLci1uNTItMi00VVpQZDJHc2JWdGo0dWtONUFfdzBnQlFNTGVJbUwtUjgzTGQ5c2NhbW83b2E?oc=5",
+      "images": []
+    },
+    {
+      "source": "Google News: Anthropic",
+      "title": "Anthropic Establishes Public Benefit Fund with 5% Equity Stake, Plans to Expand to 20% - 深潮TechFlow",
+      "time": "2026-10-19T04:38:30.000Z",
+      "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFBlYnBJcXpuVUtnZ01HUVpzLVI2bWRMd3FJb3JCUUdRbHM2d2diNjZTek9pS29GZ0VHem5ZTDZDX0xBaWRMLTdCblUxM2dDYUdpa29KUDI2enZ1THNB?oc=5",
+      "images": []
+    },
+    {
+      "source": "Google News: Anthropic",
+      "title": "Anthropic’s AI Worm Warning Lands Three Weeks Before HomeView Ships — The Smart Home Security Model Isn’t Ready - CryptoRank",
+      "time": "2026-10-19T04:37:45.000Z",
+      "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxQRUVrekZ1LWxSYlNzN3ZLWHN3dzJKR01SZFFnNjE0QWZVZmtkQ2JzaWpuN1RqdXNmS1hqVWRoWWxFX29TUjJtazlMcVk5R1UxTnF1SHF4cjRpd3lDQnpKTGliNkd5THlaQzROUnVEeEkzZmdiOERWMjVGRDJUUkxVWTdCblpqbTBHckpORGwwOGtNTDFoSmg2R3kxZlEtdlNlNEcyal9GUjZ6Ti1OZmdNdWxpWXN6RVNxUEs3cmRacHl6blFIMHJkWkV1b3JLVTNDMDBkSVFic0hqZ0JDNkE?oc=5",
+      "images": []
+    },
+    {
+      "source": "Google News: Anthropic",
+      "title": "What smart people are saying about Anthropic's 5% 'public benefit' pledge - Business Insider",
+      "time": "2026-10-19T04:36:00.000Z",
+      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPVEFoeTgtWUdzOTU4NHBYSWVmYmQ0bVplckZSM1FVdVpYMWdYcU82WWpnLWZpNDUzMEE0aHg4emRhWC1mYmVVOXhJVHJKR1JhN3NVblkweXVmd0tUaGRpejVjSUM2eFVvTmZCSXl0Z21xVXNnS04wd1BPTF9OcHRjbjJxVV9lZmFqV3BTM3RzNUltV2VuMHpRVg?oc=5",
+      "images": []
+    },
+    {
+      "source": "Google News: Gemini",
+      "title": "Google Open-Sourced New RSI Breakthroughs: Extremely High Proportion of Chinese Contributors - 36Kr",
+      "time": "2026-10-19T04:33:11.000Z",
+      "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFBfdTlrcFlmUlhwcV8wdVR0LV9OTjNXT3JOMlJudWZqclV5OWE3UTNmUzB4NTZ0elcwTThubE9BUVNsTFcxMFJiQU5ZQkx2UW5jUGQ0?oc=5",
+      "images": []
+    },
+    {
+      "source": "Google News: AI",
+      "title": "Apple still has some cards left to play in the AI field, but they are far from enough. - 36Kr",
+      "time": "2026-10-19T04:32:58.000Z",
+      "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE5jeEI0TURKVmhjaFVNNVVzOWdISEVCSnh0SFhWdGJ4VDd1M2NiS05jaExYc0Jva1lHcGd5MHVCaE9FV2E4X3hCeTVlWHJmaDRsa0hZ?oc=5",
+      "images": []
+    },
+    {
+      "source": "Google News: Anthropic",
+      "title": "Reading Anthropic’s Internal Work Report: Key Concerns for Fresh Graduates in the AI Era - 36Kr",
+      "time": "2026-10-19T04:32:56.000Z",
+      "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFBYbkJVb0t1aEdFVUp4VFY5VlZULUNURlFBWU1ic3pRSjRpVVRUYXNERmxIUG9iRWF6LWxLNTRFUmdxV0d6T3U5clVzMHhLTDdfUHVV?oc=5",
+      "images": []
+    },
+    {
+      "source": "Google News: Anthropic",
+      "title": "Anthropic to commit 5% of shares to new public benefit fund - Fortune India",
+      "time": "2026-10-19T04:31:09.000Z",
+      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNSW9OWkZDMEt6dDVoNDI2TjN3UzllbWpMYTJjV2tvTmZDOVBlNkFPU0g2TGhNeThfd3RZNk5NOVl6UlFyMEwzU2NqWGtOSFBxVFFJUG1OY0ZYXzlKM1FBTEoxNTZ3ZmFVdGxLVm1NV2g0aHI3OXRjYU40bmp4V3oxZ2VFTG1MelhuempEbjBnclZzdlQyYXpEeERQN2gwNlFGdWx1SEljcUPSAbYBQVVfeXFMT2tmal9qLUwwVi1SeExwWlpxejJSX0Z3SnpXVWNlV2tiMDMzV0ptT2dpbzZfUUF6dTJ6OEV5M0tIa1ZVQjU2X2R1aGFlM2JRNEttZmlERFFwWC1YbHVzOGthOE4tMU5IaFhQQmY1NVZ5VU1JdDQ1Q3VuQWhWcDhnc0xHQ1dMNjMzaUVFNE1sZmxaNTVZZnpFREJXc1FDaU4xaXlheFFyUnItYzJtaElMOFl1aWNEaXc?oc=5",
+      "images": []
+    },
+    {
+      "source": "Google News: AI",
+      "title": "Hot water got cheaper and we invented showers. What will cheaper AI invite into our lives? 🔥 - The Fulcrum",
+      "time": "2026-10-19T04:26:33.000Z",
+      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1vR2tDUUR6cm9TU2dVYW1raXliNnVtT2EwX2JRdzBGZEVEUjhFT3BjaEcwNWhPRDl5UFRtNG9KeGVnYmFvX0NsVUpqV01aT1NDMnRNQm5QdzRNTE1KTmt2MkZpV01ILUhzV1luaQ?oc=5",
+      "images": []
+    },
+    {
+      "source": "Google News: Gemini",
+      "title": "ChatGPT Can Now Take Control of Your Chrome Tabs - PCMag Middle East",
+      "time": "2026-10-19T04:24:32.000Z",
+      "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOSDMwbWtsUjBjbWxPczBtLWwtcHpCMklxWks5MmVieVdPcmtCSnRHU2lvdm1kZ3ZDd1RsNFNlSnVXVDlyYU1WSXZVMDVuNTFsNkMwTzRCc2ZKV25zRnBNZElfRVc4VjhEemItTU93NnRUYkp2R0x6TTNqMjQ2NXpVenV5UkhsblRuZW1xMG1CR3o?oc=5",
+      "images": []
+    },
+    {
+      "source": "Google News: AI",
+      "title": "Apply Now: $150,000 for Economic Prosperity Digital Solutions - ICTworks",
+      "time": "2026-10-19T04:20:05.000Z",
+      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOTHMwZnlMNURpMGNzUWY1YlJkT2pHOHNGYUdDbnF5NU5GTFVnTkdTaWpTdGk0LWxmNXNMc2Z2NUVYczZxRmxIelBpa2lrQzRKNU1sMnh4bmN0anoxM2w4WGJDN2V4bVZqZDdlUHh4M2lFenBLSGpwaUFSaVJWZFhYQ3ZEMWs0TTRwRmhqdQ?oc=5",
+      "images": []
+    },
+    {
+      "source": "Google News: Anthropic",
+      "title": "Anthropic opens Singapore office, signs AI cooperation agreement - digitimes",
+      "time": "2026-10-19T04:19:47.000Z",
+      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPRno5X3NkM2lTQ2Vzbm9EQktiOTREdlhMVUpFdldzWWEtSkluT0otQWJYZGhfYWVMME11S09sUk53NVctU2FqSlEtNEM2b0xvbFJwQ3RmSXdkMXJEUUk5MzRrMUZLNVJtbHEzTmxxb2tUbURDajY2RE91N2lDYlNmNlctRDJlOUtXd1lzQ3gxM3gwdk5rU2RFZ0hkSmV0dw?oc=5",
+      "images": []
+    },
+    {
+      "source": "Google News: AI",
+      "title": "ChatGPT is my new TA, and I’m scared - Massachusetts Daily Collegian",
+      "time": "2026-10-19T04:09:07.000Z",
+      "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE9JNk5YM1pPRnF0RjdRSVVDekJWTmIyQ25GUlBFSk9tSEU0dkxoQjd6MmQzS1dQclVDWnc1OVlGWWRlTVhncGtOd0ZQUm1sd0lSbnJqbjVZdGF5TG5FdW5leTdRZm8wamRibENKbHR5TlpScm5iNURsWUd3?oc=5",
+      "images": []
+    },
+    {
+      "source": "Google News: AI",
+      "title": "OP-ED: The Black Church Writes AI’s Next Chapter - Post News Group",
+      "time": "2026-10-19T04:08:44.000Z",
+      "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPLWVzRllGWXZTZnd4aU9wb0VTRFg2d1VBb3NrWm5EZy1aTU42ME9EUWZ1d2tJc3dPczk3VDVLZ1l6dmxhM2Q1bm0yMXdFTkxtTWE2a3hQNWt4UTlkX2FXaEliRU9oX21acExCNFJmYlR0bHMtbjNkcGJkODVyZm5LRnFwTDh4a04tZ2Iw0gGLAUFVX3lxTE8tZXNGWUZZdlNmd3hpT3BvRVNEWDZ3VUFvc2tabkRnLVpNTjYwT0RRZnV3a0lzd09zOTdUNUtnWXp2bGEzZDVubTIxd0VOTG1NYTZreFA1a3hROWRfYVdoSWJFT2hfbVpwTEI0UmZiVHRscy1uM2RwYmQ4NXJmbktGcXBMOHhrTi1nYjA?oc=5",
+      "images": []
+    },
+    {
+      "source": "Google News: Anthropic",
+      "title": "Anthropic commits 5 pc of its stock to new 'public benefit' fund - The Economic Times",
+      "time": "2026-10-19T04:08:10.000Z",
+      "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxQWVFnc0JTQkJ2aUxzazYtVnlZUFdCeTFEUU1PcFlicW90SHBWT0dYbERxalgtYmktcFRqMWdhWkJFcHZ3NFNESnZKMzBlc2hscFlpeDVUTGNKdHpTT0d5MGRCeFRKU29yUDlwdkxSMjN4SXlSUnJGMDdJekpyd0tSeXlMQlVmZENhSW5wYjcyVDRrR0Q1RWU4MkZUc1hQVjB3d3FXaW5CRHl5Tng1b205X1Z6T0haU2VPV240QTN2MllNaEViSzFXdHZkSmVpdUZxWjVlV2VwT2p4ZG5BTUE?oc=5",
+      "images": []
+    },
+    {
+      "source": "Google News: AI",
+      "title": "HKU and Global Cybersecurity Alliance jointly establish Centre for AI and Cybersecurity Research - Yahoo Finance",
+      "time": "2026-10-19T04:05:00.000Z",
+      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxORGNCYktrSU5zZTRrUWtnVlFBVDdldXFXdS1hb1Jhc2tCZ0h1UnlHYi1VVXJ6MnZaTmlNV0hZb0cyaU1HeWFaNVBxZGxjSHJCZXhBOGJEWkN1U0xQdDFfYTlqNVdwNHJ1MjlmSXpfQ29HZEJyaHZBYkhUaHJOdFRQRW1hOG1YaXpEVmh3VWZFSERyNjNYLXo2dkNGdUEwem1ZYy1qNUwyNXA?oc=5",
+      "images": []
+    },
+    {
+      "source": "Google News: AI",
+      "title": "The Emerging Need to Protect Critical Infrastructure and VIPs from Weaponized AI Drone Threats - The Soufan Center",
+      "time": "2026-10-19T04:04:24.000Z",
+      "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE8xUXRXdWFEV2E4TExTc3lEVkhqOG9xVUJWMDNNbWpVWDhtcC1aUy1LeVNWbUEzb19WeWdvYTB6QnFyQzlxUmxoSFdFbndyVDVfQl9zYWZkbFUxRzVtY1cxdUtzS3NPZw?oc=5",
+      "images": []
+    },
+    {
+      "source": "Google News: Gemini",
+      "title": "Best AI Couple Photo Prompts: 7 Copy-Paste Ideas to Create Romantic and Aesthetic Photos with ChatGPT and Gemini - The Sunday Guardian",
+      "time": "2026-10-19T04:02:39.000Z",
+      "url": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxPZWFRSDJLVjBQTTdCUXNEcHdoQ1Z2MmtXSGZab0YxN1E4U2VTcDBsR2JZRlpPeTM4LTdOWHVhbUFDSFRmNDZua0FkakVZWWZadW42Qjc4ZzNROEpKMy01ZllZcnZFaUkwNTE1cTRRTkJFMDRfNzdNNmtxdjJtWGhpTEFtU1dLTTdETVFFcXdTVF9Uak5zRTdzb3g1TXNpMGRMbERTM1RXc0NkeHJZYzdKREZMTWlhbEVLcXAxY0lQZmN4LTBYeFY3ZVRuTnJyXzAzUlktejdMX2EtUWtGaDJTUEw1UHNIekxwaTM2MXR4bHLSAfYBQVVfeXFMUHdCTUxQcS1wOW5CbDlvRkR1SEpnQWtQc255QzhWYXMxcGc5UW9Lc1dOdHNoQWdYbEFMa01nVzBFOTIzVDFQVTZ4bEkwemw5Nkw5YXNNYllYYkcyM2hUQkhHOTFSUFhaSVBhdnBPMWRVLUZiVVJtUXI4YWRBUHRnb1ZfeWpuRUthWmlibEhVSlhINWk3bGVxcDRRUl9NU29VX3Bqd2NzVHhBd1FnNHhuRFMtS0VPcjNvaWtDd1BVTVhXV1RoVDVHSVJKa1BPZmd6NTlndi03UXRrem1Ndi00TnNxVnVZX0huVzZieDRxYV9yZ19vTC13?oc=5",
+      "images": []
+    },
+    {
+      "source": "Google News: OpenAI",
+      "title": "Anthropic says it will commit small percentage of stock to ‘public benefit’ fund - Washington Examiner",
+      "time": "2026-10-19T04:01:49.000Z",
+      "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQMDB0TGpNdzFJTWNKQlY4X3FYandfaF96LVROeVhOTTk0NWxMa2tKWjk5Q1J0SjAtaEJDek44N3p2bUYyMW9VelhHc0ZkNHFWRFZreGNObktlc25keE9uVkh2Z3EwVzZzY0l1akw3ZFkyakJLSkVsckJDWFpOSUFFdjJfd1hZQnVEZkxBdmtDdzFDRV9TNS1qTjFmUGdMRDA2NWgwbGNGeENfcUVZeldwNGIzWWtBbVV2U1QyYlNVOFloTENy?oc=5",
+      "images": []
+    },
+    {
+      "source": "Google News: Anthropic",
+      "title": "Anthropic says it will commit small percentage of stock to ‘public benefit’ fund - Washington Examiner",
+      "time": "2026-10-19T04:01:49.000Z",
+      "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQMDB0TGpNdzFJTWNKQlY4X3FYandfaF96LVROeVhOTTk0NWxMa2tKWjk5Q1J0SjAtaEJDek44N3p2bUYyMW9VelhHc0ZkNHFWRFZreGNObktlc25keE9uVkh2Z3EwVzZzY0l1akw3ZFkyakJLSkVsckJDWFpOSUFFdjJfd1hZQnVEZkxBdmtDdzFDRV9TNS1qTjFmUGdMRDA2NWgwbGNGeENfcUVZeldwNGIzWWtBbVV2U1QyYlNVOFloTENy?oc=5",
+      "images": []
+    },
+    {
+      "source": "Google News: AI",
+      "title": "Anthropic says it will commit small percentage of stock to ‘public benefit’ fund - Washington Examiner",
+      "time": "2026-10-19T04:01:49.000Z",
+      "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQMDB0TGpNdzFJTWNKQlY4X3FYandfaF96LVROeVhOTTk0NWxMa2tKWjk5Q1J0SjAtaEJDek44N3p2bUYyMW9VelhHc0ZkNHFWRFZreGNObktlc25keE9uVkh2Z3EwVzZzY0l1akw3ZFkyakJLSkVsckJDWFpOSUFFdjJfd1hZQnVEZkxBdmtDdzFDRV9TNS1qTjFmUGdMRDA2NWgwbGNGeENfcUVZeldwNGIzWWtBbVV2U1QyYlNVOFloTENy?oc=5",
+      "images": []
+    },
+    {
+      "source": "Google News: Anthropic",
+      "title": "Anthropic's IPO Dreams May Be Eclipsed By the Cloud - Bloomberg.com",
+      "time": "2026-10-19T04:00:00.000Z",
+      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPX3VrQ1l0RkFPbERpQjNDUExIM2dhS1ZkdWRUYXcyOVJMejJxUkR6X0Y3b2RodG9KZXYxVWZacFpveklOanlxYVk2bnNnTlZKdHplU09ubHZfTGVCWlIxXzFRNjVSWmRYcHcxckNRTHBCcXFMd1laUU9GTW9ialQtTFV0UVJndmNCelhBTzJURUhGSmpKRmdUMTY1SkJKN0M2VXNzM3p4aHZiUjRNaVZN?oc=5",
+      "images": []
+    },
+    {
+      "source": "Google News: AI",
+      "title": "Dear Higher Ed, Employers Are Talking - Minding The Campus",
+      "time": "2026-10-19T04:00:00.000Z",
+      "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNRUE5dWwwdlBoQzlOalJHaVRYZVhRNDNRbGkzclh6OENiUzFfdml3c1hrbkZVRHNWcnhHQlM5ZmlSeWZTdWlrcFFkcGhaMGhnQW5pMy1mT211NG9ZXzV1R3oyUHlsblJYOUt4V3Q0THM2aHlKbXhuOWJzOGc3aDQ1YjRncw?oc=5",
+      "images": []
+    },
+    {
+      "source": "Google News: AI",
+      "title": "Your company’s intelligence is your \"Alpha.\" Don’t give it away. - The Business Journals",
+      "time": "2026-10-19T04:00:00.000Z",
+      "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQeFdRWVVraEhRSVJoYng0aloyRElHdzZWX0UtUGh2SHE1RjlqQ1U2NC0xM1lBOURTdVNIRUdfWXQ3dUJxdWxuTWEtQ252Wi1HU0kxV3pTYndYQktGSjR3QmFSVHRrOFRaQnFiT1VyLV9OTTlMVWYwSHI2SU1tRVBXeVpOQUdKSjM3NVNTZGhTY2tKT29PM3c?oc=5",
+      "images": []
+    },
+    {
+      "source": "Google News: AI",
+      "title": "Do you AI? - Ag Proud",
+      "time": "2026-10-19T04:00:00.000Z",
+      "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQMTFDUV9kLU9HUFBMUFhySGhNRTlNVmE4eWVtVl95ZW5JM2tmSkpka0Z6bm5HOGpMcXVJVU1aZlJXSnl1aW8yVDZuWEZCNDhkUm9aVG1Yb0pNOVVkZG1wS0JUWTVKUnlxcl93d041c1l3THl3TE9XakV4UGJrMXk4NnJPbjQtVVZ2cjV3ZTd6NA?oc=5",
+      "images": []
+    },
+    {
+      "source": "Google News: AI",
+      "title": "How Warehouse Leaders Can Make the Most of Automation and AI - Supply Chain Brain",
+      "time": "2026-10-19T04:00:00.000Z",
+      "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOMjFXMEtTY3J0SDUyZDl3THZPbXh6a2pha0lzLVNyOG4waFMteUdSdDU4TVkxcFpYS2dEbmdaQVdoc21GeEY2TGotU21QYWFkNDFlNjZsd19Ia1NVWFgzQ1JUMTZLc1FWMUZYM19lV0k4Qm82ZXRYWWw4T0dtVmhsTm1JVlBFZk5ac2NBaXJnQXAwN2Q5RUNSMUp6VlZuY3ktbF9hbG4zM3I0b3QtQmh5VjlXVURmTHByT0Z3cmM3N24?oc=5",
+      "images": []
+    },
+    {
+      "source": "Google News: Gemini",
+      "title": "Google unveils Fitbit Edge with advanced health tracking, GPS and seven-day battery life - Craving Tech",
+      "time": "2026-10-19T03:58:26.000Z",
+      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQZC1WV2tSSi16YlRBVjl2SkZfWTAwOUsydXB1NGREeldGMzd6R3d4ODUzc3RkWF9KN0VDaUNNSWwyRHZGRm4teURSWFFzZWFqMlF1RDhEZHVxZE15M2tqQkpKTzU0dGMxVDJiaDlIc3NKNk9OYUFUSnpEVkVFUkFjbVdaekJCTEpYcTF3NzJjMURNbTNkLUotMktlMHkxUk9IYjhDREFrSnJsb21EOGFGcTkwZHFHT2wtS0VSeQ?oc=5",
+      "images": []
+    },
+    {
+      "source": "Google News: OpenAI",
+      "title": "Foreign Investors Sell 26 Trillion Won - 조선일보",
+      "time": "2026-10-19T03:56:20.000Z",
+      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQUDZvTzlJSHlVUDRFYWJDYlVzTmV5c1NQRV90Qnl5aU1uNFItTEd1SENPWmNJb1RFcUhsVmtoNGlJWVhXOC16Z1dhVWVmNkNzT1BORlJ1NEY1b0Z4ejRUS3E0SXEyVmRWQlUxYUpPTXRiMVlwNHRpT2NHWFhvNjdfTEd2M0w3UFdVcGhsSEh3?oc=5",
+      "images": []
+    },
+    {
+      "source": "Google News: OpenAI",
+      "title": "OpenAI plans to double its staff to 8,000 by 2026 - Mezha.net",
+      "time": "2026-10-19T03:55:37.000Z",
+      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE1JS0FLcV91bXZHYm53bXdaRGtpQWcxX2MzUmI5ZXBJRkRyZnpPZ2RCbXBjX1dvWmZ2RHBibGxJVU00aVNpMUFPMEtRSDdHVmdqcEQ0dnowTHBHNXpYdkMtY2JXRnZFTVk1aDN3?oc=5",
+      "images": []
+    },
+    {
+      "source": "Google News: AI",
+      "title": "New AI framework bridges a critical gap in mid-range weather forecasts - Microsoft",
+      "time": "2026-10-19T03:55:20.000Z",
+      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOVENVYkFuNV9XZWh5dTRjZG5EaXM3WktvMGg5dEItdkNaRjhFUmhvSXhtWVdsWGJ2VXhVbTlha0dsWkRwbGxjWUhoOFdDakR5Z094X0tnVEU0bHNYcVpuRnJxa3phaWZvVDdpZzRORk9vTUt2ZjF2eDdWLWI0b3lqNEZNUHBINXg1WFBPeHMzcTBYbkQ2LWFjZGE1Sk4xRG1zUGJQb1ZUVUhORnpYclJvMlMycjNJTHgwRHc?oc=5",
+      "images": []
+    },
+    {
+      "source": "Google News: AI",
+      "title": "AI in Insurance Agencies: What Actually Makes the Business Better - Insurance Journal",
+      "time": "2026-10-19T03:53:23.000Z",
+      "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOcFRoVFRZYUo1V19tNmJEaUpWTGw5ZGdMclZYUEtubGk3QWdXSTlGYXI2S3FfQ1g0d0I1Z0F5MW4zUkd6NU9DZk1oUVJKX3M5M2U0Z0gtRkJtcHhPUExKbzhVY29Bcy1HTFlGTVF3NnFXT2czeVFVd3pZMGNTR2xVRG5DUQ?oc=5",
+      "images": []
+    },
+    {
+      "source": "Google News: AI",
+      "title": "Donald Trump’s AI enforcer - Punchbowl News",
+      "time": "2026-10-19T03:51:49.000Z",
+      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE9HcmJMRTdlSUE4TjJ2R2NpV2YxZnZUNjg0YlFYVTZNM290YWR6ZUd5bzR0alV1eUVIV2txSHBHMml2SXBWNXZsYnVyNlN6UXpUUDk5UEtvdllyVDRtQmtEcXdSSW4?oc=5",
+      "images": []
+    },
+    {
+      "source": "Google News: Anthropic",
+      "title": "'This Is What I Will Be Doing’: Elon Musk Says He’ll Give Shares To The Public After Anthropic Announces 5% Fund - Benzinga",
+      "time": "2026-10-19T03:46:46.000Z",
+      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOUC1FXy0zRVZDZVdCYmtOY1dMTzA2cS1JS1JtSC1NcVFBRUt0ZTFKMkJLd014cm5fdmE2eDRfM2stZlVFOVQ0YUtqM0ZpSmhBM1R1UW9KOTU5cV9SdHJMU09BUHo2SkxiTlJLNXV6VFNSQlZhRFIwZEF0ZnFnWTJZYnYyVm9YRlFsTTk5WHoxM3hCNDVlalI4?oc=5",
+      "images": []
+    },
+    {
+      "source": "Google News: Anthropic",
+      "title": "Anthropic Posts $16.8 Billion in Third-Quarter Revenue, Turns Profitable - THE ELEC, Korea Electronics Industry Media",
+      "time": "2026-10-19T03:39:23.000Z",
+      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1fbUZoVlVNMlVEX1NIdFlKV05HQ3Q3UmVTaXJKNmpmTktwOU9NYnFsdWpaa3NGUEM1UGhoSUFkcWk5ZUdWX1lVRUN3NllnTVZoUzZmTTJWclNfdDZpcy00cTE4YnBDX1k?oc=5",
+      "images": []
+    },
+    {
+      "source": "Google News: OpenAI",
+      "title": "OpenAI is building humanoid robots, Sam Altman teases demo timeline - India Today",
+      "time": "2026-10-19T03:37:31.000Z",
+      "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxQcVdkbmNINFEwOHVta1ZfRVB3djludXlKQWZzay16cnVKRUk1QTV2REYwVVFwOHgwY1ZfNHNhVkxQR3RVbmkyZ1o0Z05Dci02QjVtd2RacHVjX1R6N0M5TlAtdUc5QUpmbkxoRUxSXzdJdFlKYzFGRXBLY2k1bEZZb1RkUEdLSHdLcTFPMUxDZzFDbWlyX1A0V205a1ByeUNld0p1OC1UNkM3MC1NU1NhbHJsS21CQkFhb0VxdS1WNFc1bGVKd3B0OV9xNU5Cd9IB0wFBVV95cUxPZWg1MURybEM2bWRJVjNkM0hET0xtUE04LXEzTFE1NGItbTQ2clpFV0tSMzR2OWI1RTFaSEF3YVVZMG5mWVpvYWt0SGxsREhfOVFnakRtSFg5R3dNRm80dzJkMmlZeWJmdXFZWjM4YUJvRTU2XzdCSUNhYWRSZ3pRbnFDeG1UNzMyMDBVSG8waDNKYUNNT1A5LW02MUttcmtyb2I2OXBLTUNUNjdDMXZqM1loQjh0MzctaFB0cG9EdnEyWE5yakZLcU9GRGNDV2lOc04w?oc=5",
+      "images": []
+    },
+    {
+      "source": "Google News: Gemini",
+      "title": "Maha Navami 2026: How To Make Maa Durga WhatsApp Stickers Using ChatGPT, Gemini - Times Now",
+      "time": "2026-10-19T03:37:00.000Z",
+      "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxOMUotRHN2cUE3aUZDd2ZjLW5RMUgxNXVqTTN6T1UxREtiTzJIbC1jQ0xSRFNOZ0NJRzJ0NDFSSGJLLUFmaFI3N0xqT0d3MTdvaHRxQjhyR3lFUUVJeHZrYU5BNmpIOERrMmwtWGR4STV4dFhwNFl5cUNZRXVDRlR2eFNpT2NHa05oR1VjRklOMU9adWN0Y2VicDE5VjN5LW5ldURIMXpxOWpEZjhWaUswblRqTFRHYldtNWJ1YUpRbC0xU2NzUkZHbmFOR3RrYWVYRXJaMTZkc2tsZVHSAeABQVVfeXFMT2c0Qk15N0RYLWZzZzFaS1lJN3pLZU9ndUg2NWhqVWpURl9BRS11RmxFaGxpeFJCdDVHbmNyRGtfSl9qOU1id3c5QkxOMnF3MGJmSjVjYUxzbUg3NzROd1E3aC1ocDNMSDJsWTk2TDVwdl9IZ0JfS2pzeGUzSEk0VDhyWGl2cDI0QlVTQzNMMXBXa0MwZDlIYU55Mm9EeTVPTWhiX3oxYW05enZuNGlwSTRUV2hJVU5WVGRxZVpqVHZUZVlPQVRwTl9Sak13cFBXUTVWX0ZLTzlMVUMyaTVpd2s?oc=5",
+      "images": []
+    },
+    {
+      "source": "Google News: Gemini",
+      "title": "Gemini Intelligence Statistics 2026: 7 Phones, 1B Users - Memeburn",
+      "time": "2026-10-19T03:34:32.000Z",
+      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE96RVVsT2VpMVY1OS11ei1vdlpvbDJGWTNVMnJxNEJKSEZOU3Vsd21qNmx4Xzd5Y24zTDBIazg2RzJrc0xxdmVMYm5HRFctZkt2QTdXQ3FGQ2NLTW1kd1hMUHN0bWFRbURn?oc=5",
+      "images": []
+    },
+    {
+      "source": "Google News: Anthropic",
+      "title": "Anthropic says it will commit 5% of shares to ‘public benefit’ fund - Al Jazeera",
+      "time": "2026-10-19T03:33:45.000Z",
+      "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNZUlxRm1wUHpkRHNDLTBnN1d0TlNDQjdseE5ZcldzTnllaEJ5NEk0ekdibHNZWExFdzcwUWNnOGJlbVdTMFJjMDBSbHJnbzBPR3B6d0VzbFpkT3hlbnB0LUtuQ1V0bldTamtOQVdrSGFQYTZRbjgwTF9rUDRhZkZzNkFvUTZ2ODNaTnk1VGU2N1diWnNYQ1R5blRWbmVMOUQwUzhNeDZ4Y2hxSGIxZ3fSAbMBQVVfeXFMTllaOEVZTjN2ZXZEX1F2YVZQMElmdkFrWW9WQ1ZTcGxkZ3FabTNadnNGR1dkWXZpSElyOTNNUTNxR0JibjRscXBUMC1temdNNmlDUkxpQlNDRjlrbnJJX0txNHpnWU9Sd0cxWDJhekRaX2FhVXU4X2w2NDl4bVd2YmZSRjdYaFdjem9BYWpmdHAyUFI5NG5SVHA2MGEzNGNLbHFqQVVDckJfRzJKUDJiNEN4Um8?oc=5",
+      "images": []
+    },
+    {
+      "source": "Google News: AI",
+      "title": "Anthropic says it will commit 5% of shares to ‘public benefit’ fund - Al Jazeera",
+      "time": "2026-10-19T03:33:45.000Z",
+      "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNZUlxRm1wUHpkRHNDLTBnN1d0TlNDQjdseE5ZcldzTnllaEJ5NEk0ekdibHNZWExFdzcwUWNnOGJlbVdTMFJjMDBSbHJnbzBPR3B6d0VzbFpkT3hlbnB0LUtuQ1V0bldTamtOQVdrSGFQYTZRbjgwTF9rUDRhZkZzNkFvUTZ2ODNaTnk1VGU2N1diWnNYQ1R5blRWbmVMOUQwUzhNeDZ4Y2hxSGIxZ3fSAbMBQVVfeXFMTllaOEVZTjN2ZXZEX1F2YVZQMElmdkFrWW9WQ1ZTcGxkZ3FabTNadnNGR1dkWXZpSElyOTNNUTNxR0JibjRscXBUMC1temdNNmlDUkxpQlNDRjlrbnJJX0txNHpnWU9Sd0cxWDJhekRaX2FhVXU4X2w2NDl4bVd2YmZSRjdYaFdjem9BYWpmdHAyUFI5NG5SVHA2MGEzNGNLbHFqQVVDckJfRzJKUDJiNEN4Um8?oc=5",
+      "images": []
+    },
+    {
+      "source": "Google News: AI",
+      "title": "Official Launch: 36Kr & Oukelaw 2026 NewEco Elite Embodied Intelligence & AI Industry Star Law Firms / Lawyers Directory - 36Kr",
+      "time": "2026-10-19T03:32:39.000Z",
+      "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE1PMEdvTnZnZWcwRmMyTEZsSTdYQU5xTVQ5RHRZcmhXLVR1S3JXLTRIUG5TOFhhd25rbVROOW42RmZBcjZPZ29oMGNnZGM1czYyeU5R?oc=5",
+      "images": []
+    },
+    {
+      "source": "Google News: AI",
+      "title": "Tranzmeo Selected for CAIK’s Acceleration Programme to Advance AI-Powered Fibre-Sensing Intelligence - EIN News",
+      "time": "2026-10-19T03:30:00.000Z",
+      "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxPTnZ3NXh6cmhiU3hvSHBRSUZtTFg2SWZhS1BRX0JoVnpVVjF0N0lpcGFDWXFjNEczWEdkTXR5enlVcEFELUJTS3VVTlQ3WGhMRVVZOThRSGJ2ZVpvTFdrazhYLW96VVRoRDBqVkl2TGI5eEZWakF6LWR4cVpGanhaRWxWTnI4N083ME15d3B3XzhyVGJRMnF5dkRiZXB0SXYyem5VRzRZYzNSZGQwTWNSWmRhTGEzVWl1YzlHNUlGS204VXc4WkdOSXZpT3NlR1g5TWhmRENuZWJfQQ?oc=5",
+      "images": []
+    },
+    {
+      "source": "Google News: AI",
+      "title": "Indonesia eyes mandatory labeling of AI-generated content to combat deepfake fraud - MLex",
+      "time": "2026-10-19T03:27:15.000Z",
+      "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxQWXZBNXdTR3pnX3d0el9KRXRfSTNWMUUzNjcxcnZrRl95SHZMbUppYkdCd3hDMGo1S29KVnVmc216WWxab3hCM0ZQQzB5ZzlvUjdLekczczRjNHJNMkFYek9QcTczNGMzYnQwQ0hONlN2M1NOWnhKYjZEekdsVDVXRDlZWEhMODJBa3NPQWswblc0OUgxeUpMc1JXUDRMVjRBM19yd253RjRBYW5aYTJORGgwQy1ldFZnWkpweHZhbk96aW1OdDUyNGVZT3RxOVpQalVMOFRYXzBuNGJrN3pLcmJ0UdIBWkFVX3lxTFBTZHY1bjRDUFBkSDlQX1FLX3NYX2thUHdZR1ZQLU1iTDRmUXNWZHNSQzgzQWZHVzNGSG1IcWc1bkNVYjlYMVhzemxJcnhSc0hBNkVyRjFiVm5qUQ?oc=5",
+      "images": []
+    },
+    {
+      "source": "Google News: AI",
+      "title": "MIW to Host Free AI Webinar for Radio Content Creators - news.radio-online.com",
+      "time": "2026-10-19T03:26:00.000Z",
+      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNSUVZNEZIbTR1cDFvMkViUkd0d0UwSWlsUDFNWG5DYVhTVzhhQWlyeWJabjMwX3d1N1c4T2VOblRacmFQWDFnSjlCVy1oeXpORGxPa1E3VzBWVTd1S2VyWGsyYlRXUTFnb3RGOWRtUjlkeWc3Vl92WW9hYWxnb3Z1WlF1Qmh0c1JINWtsdmFvM1lTd1YydGFlbzNnVlk4Z0xxY3c?oc=5",
+      "images": []
+    },
+    {
+      "source": "Google News: Anthropic",
+      "title": "Anthropic IPO: Musk Wants AI Firm To Hand Shares Directly To Public, Says 'This Is What I Will Be Doing' - Yahoo Finance",
+      "time": "2026-10-19T03:22:00.000Z",
+      "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNcWt5QVpLWjFiVTIxRmtublotc3B4RnNmTUZwWmgzdjhmMDM5eHVGVjlYWkNwSEp2a05yTk5ScmpRTGtmV0dOdWUyOGt5MVNfZVpsT1JLSFVLTjVUSlZ6SzFPX1dBQV9mbzA3RkY4R0JvSUhUN0Y4WVg1ZWRseWUxdzlHdE5zREhaYzdZQnNtMV9PWHdJMFE?oc=5",
+      "images": []
+    },
+    {
+      "source": "Google News: Anthropic",
+      "title": "Elon Musk hits back as Anthropic pledges 5% shares to public fund, says give them to people directly - India Today",
+      "time": "2026-10-19T03:19:42.000Z",
+      "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQRnp2NFZoUGJqZEItZGNLN0Jab1Y3OWRiUXBCNkZwXzJjd0pzS0RWRXNJQzBZNUFYaEdHQTlIWXF4MFdLV0JWeFBFMUJ6c1NVdzlfTEMwRzJqZy01dmVSenp2bGJvdlRnOEtfdkVqal9zTGF4alU4S0JBLXFVUFB1dTRHTzY1VFZjMVpUaElNRlR0YVVGUU8zdDVCSkJVVGE3QnBpREFWbFRqbElUa1JOM0FsYnhkVE5NMl93bUFSd1fSAcYBQVVfeXFMT0U3aFAtX0tOOXExXzc3dHVKQ3NWUURqSnNIaFBmaWxjbVh4dHlYRWh0eE53cTNIXzVnOG4wUGRJYXJ6SWhtZ09nTDI5Z1hWV3A0Z3JGNkpuMmtXTXRfNXRzLU1sOXQ1dS1tUWc0Z0xqdmd1RDNIVm9kRHhteWtzVkZiSkk2TEdSOFBOMVU3MnVEQ2todWhEZ2NwM1dWdGwzaGRFbk8yMTNBamJuY0xIZ0pXdDBZZkN3cnBDajltOE50OTlLTUVn?oc=5",
+      "images": []
+    },
+    {
+      "source": "Google News: OpenAI",
+      "title": "OpenAI backs AI incident reporting rules but leaves timelines to governments - Computer Weekly",
+      "time": "2026-10-19T03:18:22.000Z",
+      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPX2c0bUZpVTFBRDRoX1A1c0hUYnkybXYwQ1JOSWNjMVhNYjR6T0tUcS03TmhBLXpEeDFCYTYwOHpIWlowNm9aX3pid1VjcV9qMmRxbzI0LWV3aGliSDNtMUlETExqRkNuRllkMmE4VVRCaW83RFhjTno2WVM1dDhTTE9SZ2NOMnFqdWE1MXJUTWpnT24zUVdUVVE0STJlanVtUy1MUE1sSDBCTjN6djZxUWcxZjU3UjZ3STFYa3oyZw?oc=5",
+      "images": []
+    },
+    {
+      "source": "Google News: Anthropic",
+      "title": "Anthropic Commits 5% of its Stock to a New 'Public Benefit' Fund - Broadband Breakfast",
+      "time": "2026-10-19T03:12:04.000Z",
+      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOOEVhUTBzS1lQZG8xWldzQmJDRklUWU1zU1k4OHE4Y2JaOFFOdnBSMkJ5dUxzZVJwMk9Nd0p6a3lQbDZhbFV2d3FqWHlRbHJUa0lRV1EtYUNqOUhxMVZjYmhQajNFNXdSeXVid2QtcWs1LUxGdXY3OFM4eVE1dWJsdktaUGFuM05zVk4tekx4YkU0WG9Ba2xfZw?oc=5",
+      "images": []
+    },
+    {
+      "source": "Google News: Gemini",
+      "title": "Google Integrates Gemini Spark Into Chat and Renames Gems - SuaraGarut.ID",
+      "time": "2026-10-19T03:09:04.000Z",
+      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1fcDBhSDBMMFdiTHE4dXJndjBDZWJBeFZyUW5DbWFzdXpwcTFpTVlYQ256UER5SEZtVTZveUpkcEtueTNXSC1GdE1sbzhfLWNvblp2eDhQY1dwd2dtc3Z2eXBxYS1fR2Z0NnVReQ?oc=5",
+      "images": []
+    },
+    {
+      "source": "Google News: AI",
+      "title": "Concord kindergarten teacher alleges principal used AI to fire her - Boston.com",
+      "time": "2026-10-19T02:59:37.000Z",
+      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNZ0cybnp5S1h2SmM3dmQ5QXUtblRuTWtZd2FSdGhzR1JFejhka3NCMk8zSW1LVzBYSXlZSEM4Ym5saTNLZjJfS054blhFY2I0TmI2anpGZ3BkVVdRUXlwa0F3TUtWY1c2MXJNZ1hMR3I0MkJQVUhaVnBSMlF4YmZNZ19SMGpENzROMFE1YXRGbGEwQXpEdFJMdVhmZ0FwLThET0EtcjRB?oc=5",
+      "images": []
+    },
+    {
+      "source": "Google News: OpenAI",
+      "title": "Cloudflare & OpenAI pilot indexes millions of pages - IT Brief Australia",
+      "time": "2026-10-19T02:53:00.000Z",
+      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPS0FJLVlCZEQ1WkQ1QzFfWFg4bDJyRFRodl9LdWtOMFRsU3hDSVNkbXFFV3ZqaGhRclZiaG5KZi1wVm5vaElZMnM0SmgwczJ1VC1XdkoyTXZtdkI1NVNURkFmZ1E0Q1BYV0lLZ1FWLS1JLXZzTGFUMmhDX1RkdlV6MWxNOEk?oc=5",
+      "images": []
+    },
+    {
+      "source": "Google News: AI",
+      "title": "Singing, Dancing and Getting Dumped by A.I. on Korean TV - The New York Times",
+      "time": "2026-10-19T02:50:14.000Z",
+      "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE4wbEdtcm9pNXNFU2h1dUxVN2c4NGVIM2o1OTZ1QXlDNXlLSWZkUnI0N2pObVVUWmRkajhieS1hT2s3dUk3WlFZekRYOU1CNE1SVHp2MkIyMHVpNS0xSW1OZ3ROUG5uN3dLbkhDMVpZR2RGcVRwSTVTbUotZw?oc=5",
+      "images": []
+    },
+    {
+      "source": "Google News: OpenAI",
+      "title": "OpenAI's own page still calls GPT-4o its flagship, and it leaves the API on January 14 - MIXED Reality News",
+      "time": "2026-10-19T02:48:56.000Z",
+      "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQYy05dWM3a2lCSEpaVl9kS3hYenhLN0pLQXV1amtDeldISk01cUxMSlh4MVRTZDQ3cklsZUtVWnFIVlpmVzZWcnZFV256eVFWZ00yNlllTHpZWXR4QWh4NWFaZU16bmxQVDk1NE9kMjNUOENEekhscVhJWDFGdG11V2lhM3NEUWZ2WGVLWTNIVTV1UQ?oc=5",
+      "images": []
+    },
+    {
+      "source": "Google News: AI",
+      "title": "Cybersecurity expert warns AI is making online threats harder to spot - FOX 5 DC",
+      "time": "2026-10-19T02:44:31.000Z",
+      "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE4tcS1TeWd1ZGNKOWstX3JfYlFRLXYtcnNBa3VtT253SUJzS3lyWlBfWXdCRjVicFRUSlRZbFFQZVRGOU9Rb1lTcUVUdTRaTlMzdnM1c3VWNjFDYUpINXp2RUdFMNIBY0FVX3lxTE4tcS1TeWd1ZGNKOWstX3JfYlFRLXYtcnNBa3VtT253SUJzS3lyWlBfWXdCRjVicFRUSlRZbFFQZVRGOU9Rb1lTcUVUdTRaTlMzdnM1c3VWNjFDYUpINXp2RUdFMA?oc=5",
+      "images": []
+    },
+    {
+      "source": "Google News: OpenAI",
+      "title": "Theori Joins Anthropic Cybersecurity Program After OpenAI - www.thelec.net",
+      "time": "2026-10-19T02:42:49.000Z",
+      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1TOGZtMkJ4WFdINGtJakpjSHhrYnowSnJLVmQydDRwemY0ZGdoVW9XLVotSXFmT1ZXM0J5R1F6QndfWVlTS09XajJTcXNxaXNKczk2V2c0YldaMXlQay1RclBPNjR0WWM?oc=5",
+      "images": []
+    },
+    {
+      "source": "Google News: Anthropic",
+      "title": "Theori Joins Anthropic Cybersecurity Program After OpenAI - www.thelec.net",
+      "time": "2026-10-19T02:42:49.000Z",
+      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1TOGZtMkJ4WFdINGtJakpjSHhrYnowSnJLVmQydDRwemY0ZGdoVW9XLVotSXFmT1ZXM0J5R1F6QndfWVlTS09XajJTcXNxaXNKczk2V2c0YldaMXlQay1RclBPNjR0WWM?oc=5",
+      "images": []
+    },
+    {
+      "source": "Google News: Anthropic",
+      "title": "Anthropic says it will commit 5% of its shares to 'public benefit fund' - BBC",
+      "time": "2026-10-19T02:41:41.000Z",
+      "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE1fTEtES1pQdjdXZHR3RXVERUI1Q05ydnJqTnB4TnFBLXBaUk5ITXc5U2NTQWhCd1NEZFVVdlBZeU5Ra1dXNU5BY04wNWVLbEpTWDVVX3Z5N0VxTGVRYWc?oc=5",
+      "images": []
+    },
+    {
+      "source": "Google News: OpenAI",
+      "title": "OpenAI, Anthropic’s AI Lead Is ‘Very Perishable,’ IMD Professor Says: ‘You Don’t Need to Drive a Ferrari to Go to Walmart’ - Yahoo Finance",
+      "time": "2026-10-19T02:30:00.000Z",
+      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQcmF6b0VCcG5IeldqU29OWXRLa2toM3UtVHlHT0xTczBvdURGUDZDRUxXSm5fdmpMTnZSNmI4WnBpM0N3YzhvaVE0SHBaVVhUNXRPbXZrUVVzNmlXWDdqM25lZXNtQl9wQzJ5OEJBV25vbWIzaUNmdnMydk5CRGRJN2JxdmRNZElLRjZiTjdGaUV6dVNibUtNOQ?oc=5",
+      "images": []
+    },
+    {
+      "source": "Google News: Anthropic",
+      "title": "OpenAI, Anthropic’s AI Lead Is ‘Very Perishable,’ IMD Professor Says: ‘You Don’t Need to Drive a Ferrari to Go to Walmart’ - Yahoo Finance",
+      "time": "2026-10-19T02:30:00.000Z",
+      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQcmF6b0VCcG5IeldqU29OWXRLa2toM3UtVHlHT0xTczBvdURGUDZDRUxXSm5fdmpMTnZSNmI4WnBpM0N3YzhvaVE0SHBaVVhUNXRPbXZrUVVzNmlXWDdqM25lZXNtQl9wQzJ5OEJBV25vbWIzaUNmdnMydk5CRGRJN2JxdmRNZElLRjZiTjdGaUV6dVNibUtNOQ?oc=5",
+      "images": []
+    },
+    {
+      "source": "Google News: Gemini",
+      "title": "Review: Google Pixel Watch 5 — same look, better specs, more Gemini AI - EFTM",
+      "time": "2026-10-19T02:29:55.000Z",
+      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxQeE4teHg5dnZ2cTBuZ2IzQzgxQkc5NGtQbVRBSUxaeGV5UVlseFEtM0x0SGtoTjdDTi13emZxcDVBZHFsaGNseXdUZWdBLUx2Z0lOdURTOHJxRWk0NjJvTU84Z3Q2V19KMXF0Z3FneFFIZk9TWFNEaVhLNGxsN1JDVWotYjFvRHFYcGJKZU5WWDVFYUh3akZlaFAyZU5Jd9IBowFBVV95cUxPMkpOcWFybjhmLVp1OE1OUDRuZUJ2Z0V4Y2tuSDRRenVwdUR5X2hFSFhXand3SzVlemQtcWFQVy00cmg5eDdOcElENV9naHEwcEVjcUdXZWFUZW1sWjcybXp5ZmkycHVvTXFCWFhwM1VrRHY0Y2dvS1ZhaGhrUVBwQTBFVE93ZkJ4RmVTWFNvNjQ0cnRZXzVBSFdrTmF0VTJ6QmFB?oc=5",
+      "images": []
+    },
+    {
+      "source": "Google News: OpenAI",
+      "title": "Multiple states suing OpenAI, claiming its ChatGPT harms children, deceives adults - LiveNOW from FOX",
+      "time": "2026-10-19T02:22:43.000Z",
+      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOc1pjNXZCN0RPYVVkZlpaa1JLX09lMjNxbHE5T2N1S0g4cGVlVDhSdjRqVE5TWW5QZEMtWXhvNHE5WVlUVnFZNTNXOVBGZ0R5dkJQVkR4LXFNTDliUzJ1SXpWb2lCa2loMU5ZRExCcGgtMm1JZnhvbnhWRVhHSDI1NGJDRmJiSC16cHphcG5GOWQybEtrQlptX25hUkZqay1aSERJaXBfaUZqMERwMDMyVy1B?oc=5",
+      "images": []
+    },
+    {
+      "source": "Google News: Gemini",
+      "title": "Slimmest in its segment? Samsung launches 7.5mm Galaxy F70 5G with 50MP OIS ‘No Shake Cam’ - Mathrubhumi English",
+      "time": "2026-10-19T02:20:36.000Z",
+      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNRHd2eVpHVVNXQ0hjT1JBNmZId1JFcGpXaFFCQlFaTS1HSDJlZ3M0b2xwancxTHJpWmpla3o0VE1sYnBkYkVNamxpTWQxTlN6OGdFZXlobFRVNmhIM3dQNEZ0YS1wZEh5TFpxZXdEX3JEejNzQmo4TjM5U2l4XzEzZU1MaUNhQ1VYMExnbGVFcWhadFdWUUQwV0I0U2VqUTZhbXNNQWUwNml3d1RzZ0U4VHFQendCVmR1QkV1TW530gG-AUFVX3lxTE1Ed3Z5WkdVU1dDSGNPUkE2Zkh3UkVwaldoUUJCUVpNLUdIMmVnczRvbHBqdzFMcmlaamVrejRUTWxicGRiRU1qbGlNZDFOU3o4Z0VleWhsVFU2aEgzd1A0RnRhLXBkSHlMWnFld0RfckR6M3NCajhOMzlTaXhfMTNlTUxpQ2FDVVgwTGdsZUVxaFp0V1ZRRDBXQjRTZWpRNmFtc01BZTA2aXd3VHNnRThUcVB6d0JWZHVCRXVNbnc?oc=5",
+      "images": []
+    },
+    {
+      "source": "Google News: Anthropic",
+      "title": "Meta says Claude AI tool triggered No Kings Instagram suspension - The Edge Malaysia",
+      "time": "2026-10-19T02:16:55.000Z",
+      "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE9wRExqS1FwbEZiU2FJWHdRTHg3c19fNFhwVEF3TDJaNjRmLThQYkpiMlJwWVJuQTBQQVhMWG5tRUh0SHBYeHlOek5ZUFVjX3gz?oc=5",
+      "images": []
+    },
+    {
+      "source": "Google News: Anthropic",
+      "title": "Anthropic Unveils Internal Employment Report: AI Agents Work 6x Longer Than Humans, Ushering in the \"Meta-Work Era\" - 36Kr",
+      "time": "2026-10-19T02:12:36.000Z",
+      "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFBOcXc3N1lvLXRGUkxRVHVWekRPLWozNnc3SVlKLUZvWEV0dDFlX1B2VWZxd0ZLeUxmMUx6M1J2V21SaVVxeE1uWTF5aDhmMjNvX1dv?oc=5",
+      "images": []
+    },
+    {
+      "source": "Google News: OpenAI",
+      "title": "Zoom and financial companies to add World ID verification — Fortune - UA.NEWS",
+      "time": "2026-10-19T02:07:37.000Z",
+      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQWGdMX3hrODU1eXZoamxQb2tuR0E1YkJPYkxQZFlzSFM5STlRRzNzXzF0YUpSeGRaQXpXelpoWWt4RU9wYktrcE1DZVVDZUE1dlRfMTdpRzdXcmowTFl5QWhjeTdBRjhnejhseUVYX2FmSGRWZWhfa0h0TnBFalJJNEI3NGp1U3djWTBxczVKVFFybHp2cnZVNw?oc=5",
+      "images": []
+    },
+    {
+      "source": "Google News: Gemini",
+      "title": "Google releases Gemini 4 Argon, its new frontier model: Benchmarks, how to try it, and pricing - Mashable",
+      "time": "2026-10-19T01:55:38.000Z",
+      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE02ZGlQM0xOMUw2NkM5ZVBUb0UzeXVFZV9BcEp4cGY4RzdyVjNDRXVPM3pQdUp2UnladkZmeDRYZGVsdDF1VG9qekhNaU5xeXVYVkRQSjVZdnhvTjZmWUtYVi1tUzhwZTQ?oc=5",
+      "images": []
+    },
+    {
+      "source": "Google News: Anthropic",
+      "title": "Anthropic Takes Its AI Safety Proposals to Capitol Hill - PYMNTS.com",
+      "time": "2026-10-19T01:53:03.000Z",
+      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNeFNrVTI0LUJlVDFHcjJHUXVUcko4bkF2QXJaeVlhWThyWFBrb1V2ZngyWFFyUkNyRDJGRTlkY0FPVzhFcEIxeTB3ZEMwM2p2VFlFM0FVRHowV29mZXplaXp5dkd1OUZ4WlE5TGZvdkNvbFdpQ2szd2MxaWpGQW1HN2pVSDFXZk5NamZuUlpCWVhLV1hObjdGVDFNR19wRmg3SUszbV91aXR4NWUzUjdjS1pDYw?oc=5",
+      "images": []
+    },
+    {
+      "source": "Google News: AI",
+      "title": "Anthropic Takes Its AI Safety Proposals to Capitol Hill - PYMNTS.com",
+      "time": "2026-10-19T01:53:03.000Z",
+      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNeFNrVTI0LUJlVDFHcjJHUXVUcko4bkF2QXJaeVlhWThyWFBrb1V2ZngyWFFyUkNyRDJGRTlkY0FPVzhFcEIxeTB3ZEMwM2p2VFlFM0FVRHowV29mZXplaXp5dkd1OUZ4WlE5TGZvdkNvbFdpQ2szd2MxaWpGQW1HN2pVSDFXZk5NamZuUlpCWVhLV1hObjdGVDFNR19wRmg3SUszbV91aXR4NWUzUjdjS1pDYw?oc=5",
+      "images": []
+    },
+    {
+      "source": "Google News: OpenAI",
+      "title": "US warns EU of 'devastating' retaliation over satellite spectrum plan - TRT World",
+      "time": "2026-10-19T01:50:15.000Z",
+      "url": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxPbjB5cG1WcWs4b0NDTWNjUWxUMjZ1SnBvakVVSXMzbUZhbnE3MjllaVZZc1NhTVFDRmR4dnRFUExudlF0V0dvUVNRR2Iyb1ExbndlRVhOQ1pYTEJnc2ctR1ZidzNsQVRMdGduaWVLNFdsWFFyMVJ4ZnFRWEtOMV9RMV9RVW9BOW5SYWIxTC1xSEMwZFBSdGI3SXFzVnNlOXlEWnhGbENOZUM5Mk1EbEEzSnpBUmRtWGFoVG5CNU52MVFxSFkwUEFZa1dDSjRiZzY4MUdoMmQ2anhGR2lfaUZ0M1BjMnVGLXAtTGMw?oc=5",
+      "images": []
+    },
+    {
+      "source": "Google News: Anthropic",
+      "title": "Sydney man allegedly discussed plans for childcare mass shooting with AI chatbot - SMH.com.au",
+      "time": "2026-10-19T01:50:02.000Z",
+      "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxQVzZzaloyODFNY3dEcFJ3QkJzTjZDZlB6ZUMzUXQ5TXRKMV95SGxEYUdrU1l6Z2ZuRVlBWnoxT1lGbjQzNXRqSEpPb2FBNUpETFNNSnZvZmx4UGM5MjZxcy1TZlpKZ3Iydk5rLVg1RVFzSXQ5Z25UbG93dU95VEhBbG16VHQtSmR0c0dBVkZIYzU3M0xNN1V2NXU4NXpqSTFwOEt3ZlVVUHl5UE9TWFlhVDRPcFFsMDZ1X1ktTFBwSTNJY1N0UU5xVEtWTzRCeVhhalRJ?oc=5",
+      "images": []
+    },
+    {
+      "source": "Google News: AI",
+      "title": "DeepSeek Deploys What It Calls Faster Version of Its Open-Source Model - PYMNTS.com",
+      "time": "2026-10-19T01:43:03.000Z",
+      "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxOTjZ2LTRyYkJrQ3B3UkViOVpuWnlTcXcyTHFMT2JQUjNrMlpEZ2dwcTZEMnBBMUhzVURxbzgyazd4cGNTTjRsS2I0WUpmeDRIRy03cVZpdjRpTHhzMm9hejB1ZFhya1NSdGRhMlB2dnpNdFlZWVlQclJxQ2NVM3FDTnZSRzNXMXo3THZqVFJXeGxZMHVKdS1ncVNLZk1wb3Jab184OTJHRmVCRlFhbXZSM1NnUDZ5eXQyYVoybV9aelJ1TzA3d3pJ?oc=5",
+      "images": []
+    },
+    {
+      "source": "Google News: OpenAI",
+      "title": "8000-Word Exclusive: The Dramatic Untold History of Codex's Epic Comeback Against ChatGPT – First Public Unveiling - 36Kr",
+      "time": "2026-10-19T01:42:34.000Z",
+      "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE96SzlibGlIUmV2aENrR1NIcjUtNGZDbjdxNmlmT3I0bEhDamk0Wno1cXhqWEdPSk5oYml3Sllmb18zajZQMWw2bWdnWndVSmFnNUdz?oc=5",
+      "images": []
+    },
+    {
+      "source": "Google News: Anthropic",
+      "title": "\"Everyone is way too conservative when using AI!\" Head of Claude Code: My approach is far more ambitious. - 36Kr",
+      "time": "2026-10-19T01:42:34.000Z",
+      "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFBLLWMzUEZINmp0RlNselpGR21qbFBheGg4Rnl5aVp4dGJ6OXJQOE0xU3FkanBYWDhya1U2dS1FcFJlelZicVhvSlFuMXVGZHMxNmdB?oc=5",
+      "images": []
+    },
+    {
+      "source": "Google News: Anthropic",
+      "title": "Claude AI Rebellion: 20 Consecutive Underlying Constitution Modifications Against Humans, Refuses Deployment & Training - 36Kr",
+      "time": "2026-10-19T01:42:34.000Z",
+      "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFByRk9kY3diZlZ3YVRHc1VxZjk2eDlYalpHLUFfOHU3eEg1RS1KVzlBUWJvczV1a0hPM2M3WU1udG1DWXg4ZHZ0dUJTNHltREp1aTI0?oc=5",
+      "images": []
+    },
+    {
+      "source": "Google News: Gemini",
+      "title": "Pair uses Street View to plan ATM theft in South Korea, police arrest them - CHOSUNBIZ - Chosunbiz",
+      "time": "2026-10-19T01:40:00.000Z",
+      "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOTFpkeVdHLVlmVWVXaGR1WmQwM0k1eGtRNUIwTDJ6U0xLWmYxaG9YdzNaYUxsQ05QdWVvcTBBX3dmc1AycHlFODJYT3hEUmxXUS16RGozUzlnYU9KWnl3ZkJ0bXpLekpXM0hXRnFHZ0ZpaG15SmdMbUZGWllBR2J5LdIBlAFBVV95cUxQdGx1dWtWMnQ0cVNYLVJrNjB5LVBPZzljTWVOdXl5SW12ek9HS1d2LUJBOGxORV9LUThCUXdCNHpmWnFJV2tnckpIS01oUXhQbDVIN3N4M2VxcWd3VXRKS0x1TDNvZzIxWGlXaENadk5uREhfZlNNckZkQ250OS0zOXEyYzBrUWJvUlI0Rm9EZTdTczlY?oc=5",
+      "images": []
+    },
+    {
+      "source": "Google News: Anthropic",
+      "title": "Anthropic's Junior Share of Technical Hires Fell From 27% to 9% as AI Use Surged - XenoSpectrum",
+      "time": "2026-10-19T01:38:48.000Z",
+      "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE9YeXM2SkM5eEh1dGxKcDctZkJTTW9hMUU4OFRZb2U0MlNiYnltbFVMRUxEZjVjX0dyRkwwMVoxc2R5UzlmMUl2MXc5VnE3ZGQxVE1uMWRUX0FvSDl6ZjB3N0poMGdIWUdlTk9ETXBKUzBPQQ?oc=5",
+      "images": []
+    },
+    {
+      "source": "Google News: OpenAI",
+      "title": "OpenCode Console Breach Affects 1.4% of Users, May Have Exposed OpenAI and Claude API Keys - XenoSpectrum",
+      "time": "2026-10-19T01:38:42.000Z",
+      "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE85Mm4wMjY3NmlaMFFESUYzZWRyQkZtS09udzJ4ZFNuOU9rV3RHREh5RHpNYlZFbEtSYU9jUFp1RDRPVy10aUw3YVBCVFc3dGJ3UFZMYnQ5OFRhMDctUGtudGRZb2RVTjJIZlQtS1R6ekl6SEZrLWZCdDdJTQ?oc=5",
+      "images": []
+    },
+    {
+      "source": "Google News: AI",
+      "title": "YouTube tests AI replies in searches - Social Media Today",
+      "time": "2026-10-19T01:38:42.000Z",
+      "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxOU0V5dk1zUU0xTXNTVmU2WE50OGl0cDVSYjd3bEtFLUNneHcwSzJRVUs5Q1czMDkxNHozbTlkOE9Uc2YtT01ZbXAzTkMwZ1hiWWhCR2dfSzNsTEdPdWs3Uk9qOFpibUFEZWJEZ3FTUmF6ZjZ3Q1ZJZUxtZFN6QkVIMVFETDMwNHVZUUE?oc=5",
       "images": []
     },
     {
@@ -92,6 +932,13 @@
       "images": []
     },
     {
+      "source": "Google News: Gemini",
+      "title": "Google Opens Global Public Access to New App - THISDAYLIVE",
+      "time": "2026-10-19T01:22:00.000Z",
+      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQZDA3TWRMcWFscFJTbUFIWC1WTmtWcm9sRGxLcmN1bmVvZ3M0QS1JSm5tampRWFZOZWk5b2J0ME5jZnJMM0VrVFotTWpvdDJoUVp3SVl5ZklDMWNZR0Z2aHVqYm1zV1FCRDRHN1B5bmk0ZFJvQThMRUFzV3VheHJRbmlSazlmT2ItSUxuRw?oc=5",
+      "images": []
+    },
+    {
       "source": "Google News: AI",
       "title": "Sam Altman’s World Debuts ID Verification for AI Agents - PYMNTS.com",
       "time": "2026-10-19T01:18:49.000Z",
@@ -99,10 +946,10 @@
       "images": []
     },
     {
-      "source": "Google News: AI",
-      "title": "The two spheres of knowledge production - Matt Pearce | Substack",
-      "time": "2026-10-19T01:17:19.000Z",
-      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1Lakppd3V2bXByY2tNdzB5RkltXzZyYmp4a0xaRENXNkx1dUVDbU8yRDk3TVJyeU5xQ0otTm5vNkpWVW5YRHJVRkcxYzNDekxJVHd3R21DdTZnUkltVVJlelBlNDdBeFFxQldNUTNOUVZBS0RWU2ZxcmtYQkIwZEU?oc=5",
+      "source": "Google News: Anthropic",
+      "title": "Anthropic to commit 5% stake to new ‘public benefit fund’ - The Japan Times",
+      "time": "2026-10-19T01:14:00.000Z",
+      "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQa0JBd2lhSnltTl92Ri1hVXNjWHl2Y0tHV253NDFxNlpFanN2RDRlaGtFV2hHaXVoLVlWc2luWmlkTmxFLXc0SUMwZDZoSEFNYVlvS29LWnY2d053bF94cG9YNlBqaE1jVWRGSG9ycHBvX1BlSWpaSnZVTzlMREFaNTlKRmNjeDl2R1E?oc=5",
       "images": []
     },
     {
@@ -110,6 +957,20 @@
       "title": "Breaking News: Anthropic Officially Announces 320 Billion Donation to Distribute Directly to Ordinary People - 36Kr",
       "time": "2026-10-19T01:12:33.000Z",
       "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE1ldi1odjJCSEJvLUdWNk5LaHd6R2RoRjMtcGxHWE5YRHVyck9LcUdCMl9DcUoxNm1xR0dvSFp2VnBicVNFYjBwUndjbGQ4Q0ZDSFA4?oc=5",
+      "images": []
+    },
+    {
+      "source": "Google News: AI",
+      "title": "What AI is actually doing in Tod Machover’s new work for the Boston Symphony - Waltham Times",
+      "time": "2026-10-19T01:08:39.000Z",
+      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOeDBYandZT1JmdnpSRExRZHhpQ3RQODNKdzFYRUo1Rl9SLU1KZXFnZU9HT1JlT0RfVjVSblgtUXJfZ0dQejQ5Yzl2ek1lSjdSbjJoanQ5NlBnM3lyQTZrbkN6YXRVRXFLRmtGaEZBbWZ6SUxwem9tRVRNd21jblNCZWJXcHNXemZGdlhtel91MzVnT1J3OWlOVlU3MjM1RVBPZml6YzhaOVRNWjJudWJxcHFR?oc=5",
+      "images": []
+    },
+    {
+      "source": "Google News: AI",
+      "title": "How to improve AI accuracy with better enterprise knowledge | CX Network - CX Network",
+      "time": "2026-10-19T01:04:25.000Z",
+      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNWWVZVXlxMlJkUnh4S0xfa3VYbElmTkd2UTk0VWh0QWM3TGd0c1pDcGE1OW1TTlVVSkNSaDA5RTY4VEhyRGdZWkJMMFhRYkF3OGVCZlVRMndzWXBTaXhsWTN4NkV4anlBVFRsQVoyMHJ4OEM0YVpwUllQczRDMVlzUGRLQVdhbWlnaEt5MldzajY2NlVLWnphbmJGSFhoSG540gGmAUFVX3lxTE94Y2tkZEFkRklKZUJrUEpSNVZSWTg1NW5Qel81VHhtakZnRnhhdXlacGFObTJDaVN3TE1RVnZINkRTSHliUTVVWkhncUVYb0lKRkZYa1dTMGFiRzRSR1lTV0M2YUdfNDNVZ2pxcEhsMjZ1TUh1cV9TRDVzMGg4YjlvZUhGSkl6TUxyWHJNMXFYTVQycmt6TWk2enM0WllwTUFQTHRRenc?oc=5",
       "images": []
     },
     {
@@ -121,30 +982,16 @@
     },
     {
       "source": "Google News: Anthropic",
-      "title": "What to Know About the Obscure Private Trust Looming Over Anthropic’s IPO - WSJ",
+      "title": "What to Know About the Obscure Trust Looming Over Anthropic’s IPO - WSJ",
       "time": "2026-10-19T01:00:00.000Z",
       "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE1ISFpZMnFpbzQ3NWZQZmF0ZDUyNk1wSFg2WUFZT0hiSXh6THFObUw3dUFCbzk5UVY0NjNfdXQxQWhybEQxLXNZNlB4cllkOXFMa05CZ3dmekU1dTZkSGdMczZqeXFneFFCcUxmc3d4UDczdw?oc=5",
       "images": []
     },
     {
       "source": "Google News: AI",
-      "title": "What to Know About the Obscure Private Trust Looming Over Anthropic’s IPO - WSJ",
+      "title": "If I Could Only Own 1 Artificial Intelligence (AI) Memory Stock for the Next 5 Years, It Wouldn't Be Micron. - The Motley Fool",
       "time": "2026-10-19T01:00:00.000Z",
-      "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE1ISFpZMnFpbzQ3NWZQZmF0ZDUyNk1wSFg2WUFZT0hiSXh6THFObUw3dUFCbzk5UVY0NjNfdXQxQWhybEQxLXNZNlB4cllkOXFMa05CZ3dmekU1dTZkSGdMczZqeXFneFFCcUxmc3d4UDczdw?oc=5",
-      "images": []
-    },
-    {
-      "source": "Google News: AI",
-      "title": "Two-Thirds of Colombian Software Firms Use AI, Survey Finds - ColombiaOne.com",
-      "time": "2026-10-19T01:00:00.000Z",
-      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE1LNzFXVTlBb0FvMnVEMFN2cG9hd2EzbHFXMXpUVVctU2t2Y3FtN0xieWZQXzk3aXB0UjhlV0hfdjdCNzZyamZEVm9GT0l6WWc3b2VCUEZiMnpscDZLbXBVMmFieUM?oc=5",
-      "images": []
-    },
-    {
-      "source": "Google News: OpenAI",
-      "title": "Independent AI auditing now - Bangkok Post",
-      "time": "2026-10-19T00:58:39.000Z",
-      "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPRmQ4d29TcWwxSUhHa1g2aXZ4aXRxZ1JvZ1RUZ05HOEdSZVV3VlVPMXVkb1p2RmlYd0VaeHF5NDg2ZG8zYXE4OGQ1YzVYUDB3WTBsS2xLa3BKVU9rSjBCbGwtc0ZIdURlY1kwYnhXdmgxeFMwc3dlZEVVNXg0U1MwUDdscVo2Zw?oc=5",
+      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNemdVNGwyVzBsMm94UnYzMkpXVHo2dm1ESXB2N1ZHTFpXaFZ5SHVoUHFCamVjVmlaR3VmTDRaTld5QnVkUnBvZ1hVcnFpN2dSNjFtSDNySnZDUlR6RXh4R2xPb1ZDaFRBNXlCNlBBQzBVX3IxNFhJOEV6N2FNdTFObDNWU29vZWVPSE9BTDlNNXFNajdDSE9TYw?oc=5",
       "images": []
     },
     {
@@ -152,20 +999,6 @@
       "title": "Replit CEO says ChatGPT is better, citing why it picked OpenAI over Anthropic - 디지털투데이",
       "time": "2026-10-19T00:55:36.000Z",
       "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOV1YxMmhyRzRaalFLQk1nS1c3VnBjZHhkTk9HT0VPNnNfaEdjRHQ4OVp0WHFjY1kyWU1wMC02aG9IVTVBTUNMdS1UMGVhNkNKTFdIdTVibHNXalRKMW14ZG5RblJxME51dkExbnJJcmZsVlh0NUVHbF91TThUUWplM19kem1qU3pVdThFYXlPNlZ3N3VmOXdUWWdsQjI4bDV3TjdWTm9XN05xb21GekFZX29VcHdBQQ?oc=5",
-      "images": []
-    },
-    {
-      "source": "Google News: Anthropic",
-      "title": "Replit CEO says ChatGPT is better, citing why it picked OpenAI over Anthropic - 디지털투데이",
-      "time": "2026-10-19T00:55:36.000Z",
-      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOV1YxMmhyRzRaalFLQk1nS1c3VnBjZHhkTk9HT0VPNnNfaEdjRHQ4OVp0WHFjY1kyWU1wMC02aG9IVTVBTUNMdS1UMGVhNkNKTFdIdTVibHNXalRKMW14ZG5RblJxME51dkExbnJJcmZsVlh0NUVHbF91TThUUWplM19kem1qU3pVdThFYXlPNlZ3N3VmOXdUWWdsQjI4bDV3TjdWTm9XN05xb21GekFZX29VcHdBQQ?oc=5",
-      "images": []
-    },
-    {
-      "source": "Google News: OpenAI",
-      "title": "Foreign Investors Sell 26 Trillion Won as Hedge Funds Exit - 조선일보",
-      "time": "2026-10-19T00:55:04.000Z",
-      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQUDZvTzlJSHlVUDRFYWJDYlVzTmV5c1NQRV90Qnl5aU1uNFItTEd1SENPWmNJb1RFcUhsVmtoNGlJWVhXOC16Z1dhVWVmNkNzT1BORlJ1NEY1b0Z4ejRUS3E0SXEyVmRWQlUxYUpPTXRiMVlwNHRpT2NHWFhvNjdfTEd2M0w3UFdVcGhsSEh3?oc=5",
       "images": []
     },
     {
@@ -177,9 +1010,23 @@
     },
     {
       "source": "Google News: Anthropic",
+      "title": "Anthropic sets aside 5% of its shares for a public benefit fund - Gagadget.com",
+      "time": "2026-10-19T00:54:56.000Z",
+      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOdDFOQnBsQUEtWHQybnZjZ1k4bUN3OGhPem9MSmdVdzJKQ1hkNXlNaEFLV2Z0UEtUMjJhVHA0TUJxclgwUV9acUc5ei14VjhGT3ByLUh2RWIyUFlROVc0UzRqR203TkRlS0FRQTZ4Ymg2VGFvLVlpOGRkb2FadTQ3SzVQQ1B1MWVfclFsZXpBd056U25MU1phaWR30gGfAUFVX3lxTE5BdW5FVlJneUs1QVlNMW1SVGZJUF92TGIySnJnakNidjJabU1FNnRrUS1tVHl6bkdaejMybzFqNlpIVTdtUDJJazJEb0VoejhRcFJGbFh6cXJlQmc4MjFkbW96NXNlbXNreFV2OWhnZFAwUzRoaTg2ck5WX3RQWUNTd0hPZ1hkdVdUdGZlRy10X1d2dU1XYm1ia09ueHNrSQ?oc=5",
+      "images": []
+    },
+    {
+      "source": "Google News: Anthropic",
       "title": "Anthropic Unveils 4 Years Later World: Only 5% of AI Development Work Remains for Humans - 36Kr",
       "time": "2026-10-19T00:52:32.000Z",
       "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9KV1pGM3ZFa04yMUpsWTRRVExDd0tUZGJVVkxIZ3prOXp1UUkyaUNQUGZtckpDVTZaajdPRmtJQWlLbVhaRlBrRWlYMFUtQk55c3Nn?oc=5",
+      "images": []
+    },
+    {
+      "source": "Google News: OpenAI",
+      "title": "OpenAI Plans EU Launch for Dots, Prepares Cross-Border Access Change - www.tokenpost.com",
+      "time": "2026-10-19T00:52:00.000Z",
+      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBHMVNFX3dvbVc4RzYyWmxLRE1yb1VzU19VVDZWU1dsWjFQclBtYWpyZmh1X0NiYVlEUDZDY2F3S09yTzM5N202RVVrOXA2Z29BcTFQbkU1cFdONkk?oc=5",
       "images": []
     },
     {
@@ -191,9 +1038,37 @@
     },
     {
       "source": "Google News: Anthropic",
-      "title": "Claude finds quantum computation method in 53 hours, cuts operations to one-seventeenth - 디지털투데이",
-      "time": "2026-10-19T00:49:37.000Z",
-      "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQeXJmQ3ByMC1sekE3ZC1icjU4MjNUcDB2US1EVGpmd250MzZ3TEhBWTZubG9vUXhGdHNCQlBud05HTEJlaWVLbTdzQlA3OC1Ec29MblRSa1RxVC1kdV96MW5HTzNuYm9iYkRpYWNmTFcxaENQTDBrd055OTZsVjJaNUVDWGJ1ZDZBNk51ekNjRzFOd1BWU2ttZzI4MUtra09GV0E2amFWTTU4VlIxUlRXemRibXVDY3Vld0IwSjVYVUxHczZNUUlKQVRXdTY?oc=5",
+      "title": "Anthropic Turns to Lawyers to Teach AI Agents to Negotiate - PYMNTS.com",
+      "time": "2026-10-19T00:48:49.000Z",
+      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOb0V5T2tFZXNqUkJzSmtrdWxOY3NaT2N2WUhhRjhhLVgtZkJPY0s2VUV1QXZ2NGhBZ3lKZ2NTVFhJOFdQTWNVMEJULVcwUWs5VlFjRC01Ti12ek8wZ1Fjenk5SDl3ZTBKSW9tNDZ1LUladTkwVVM5akRKRU5qXzRrQUNsRFUyMjlKank3cXlJd2o0N0lsMElTUjFBMjVlTVdVZkxaQ09US1hNdGprc0pudTRIeDlDUlE?oc=5",
+      "images": []
+    },
+    {
+      "source": "Google News: AI",
+      "title": "Anthropic Turns to Lawyers to Teach AI Agents to Negotiate - PYMNTS.com",
+      "time": "2026-10-19T00:48:49.000Z",
+      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOb0V5T2tFZXNqUkJzSmtrdWxOY3NaT2N2WUhhRjhhLVgtZkJPY0s2VUV1QXZ2NGhBZ3lKZ2NTVFhJOFdQTWNVMEJULVcwUWs5VlFjRC01Ti12ek8wZ1Fjenk5SDl3ZTBKSW9tNDZ1LUladTkwVVM5akRKRU5qXzRrQUNsRFUyMjlKank3cXlJd2o0N0lsMElTUjFBMjVlTVdVZkxaQ09US1hNdGprc0pudTRIeDlDUlE?oc=5",
+      "images": []
+    },
+    {
+      "source": "Google News: AI",
+      "title": "New program at University of Arkansas at Little Rock aimed at educating future AI professionals - Northwest Arkansas Democrat-Gazette",
+      "time": "2026-10-19T00:45:00.000Z",
+      "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQRjhqajhPbkI5QWJSbXNnMFJFT2tPTkhVenRqN0RWVzlDamVNRm93Z003ZmZPNTkwSDBoNm9rT3hCXy00TmNPVnJNUDU1TjhHU0liN0VBX3JtaW9CT3UxbEFFa3F0WDJsZnV3N2dVOGN6R0NuaDlaRmtGVTZjTXlWd1NlVWw1dERsV2NrbGYtckdWV1RhTEE?oc=5",
+      "images": []
+    },
+    {
+      "source": "Google News: Anthropic",
+      "title": "Anthropic Proposes Double-Digit Interest Rates Above 10% for AI Chip Financing Amid Soaring Borrowing Costs - news.sbs.co.kr",
+      "time": "2026-10-19T00:44:00.000Z",
+      "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE52NWFzWktJcm5IMy05aElESXlDcjVBT1FjODdRNWNvcnhCa0tXNm9lT0x6WWkydTdaODR4WFRNd19PNTEwQUFPVkg5X1hqdzJHWUs5Rmp5M05mdHZiOVJQMGxweEhYQQ?oc=5",
+      "images": []
+    },
+    {
+      "source": "Google News: Anthropic",
+      "title": "Anthropic pledges 5% equity to public-interest fund to offset AI job shocks - CHOSUNBIZ - Chosunbiz",
+      "time": "2026-10-19T00:42:00.000Z",
+      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNMjNKWWFmQWtlX29fNmNEbjRCT3J4RTRMcWlQSzgxNHlVY1BranBsbGNHeWlURGlONFYwWXh2R2tPSklldnZEU2plUG1EM3FMQl9WVE1rVTkwYXBnbmVTMnFfS2tfdU5wZ2hiaVVSMmZRT19KZk1xcU5YYl9ocTJSX0t2UExCQWNKUG9WMlp30gGOAUFVX3lxTE0yM0pZYWZBa2Vfb182Y0RuNEJPcnhFNExxaVBLODE0eVVjUGtqcGxsY0d5aVREaU40VjBZeHZHa09KSWV2dkRTamVQbUQzcUxCX1ZUTWtVOTBhcGduZVMycV9La191TnBnaGJpVVIyZlFPX0pmTXFxTlhiX2hxMlJfS3ZQTEJBY0pQb1YyWnc?oc=5",
       "images": []
     },
     {
@@ -211,20 +1086,6 @@
       "images": []
     },
     {
-      "source": "Google News: OpenAI",
-      "title": "OpenAI test agents breached sites, drained test crypto - Briefs Finance",
-      "time": "2026-10-19T00:33:33.000Z",
-      "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQWWF2bXJEN0JRRU12Wmw4d0NQOWhGalFaWDdUcWdkZVZaVTYtcnFjUFpEV2FJVlQ5Tl9lYjhfVXpKMURqd1VhSE5KcG5sb3d5cEJ2OHRiUlJQTnpSSHJ3YlJWcXZIb2tiVGxrcUdWZklIeENWVVJYQ01XUGdQcWIzT0tFQkppUmkxTDRhS2xWaU8?oc=5",
-      "images": []
-    },
-    {
-      "source": "Google News: AI",
-      "title": "Stop training the next generation to be obsoleted by machine intelligence - GovInsider",
-      "time": "2026-10-19T00:33:18.000Z",
-      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNTzNXN0c4WWt6a01lQWVqZ1h1SmNUZVdhOWIzQ0tOd1ZNMmZ2R0J1LVVHR01kTTFCajBlV05uWW5pU2VvWDBhc181bXRHMVJFZjA0bEROaGpVYkhNYmVMbHVEaXBtOGJhZGlrUWUwR3UxY0gxYURWMmVtczR5Rm43T3lCenVOYmlndkZzM2lGRzQ2QTAtNUxuOTdjQjNLbV9Ga3VoX3JkbnR0aUpmX2dGVEllYw?oc=5",
-      "images": []
-    },
-    {
       "source": "Google News: Gemini",
       "title": "ChatGPT vs Gemini Deep Research: 200 vs 40 Sources [2026] - tech-insider.org",
       "time": "2026-10-19T00:30:39.000Z",
@@ -232,24 +1093,10 @@
       "images": []
     },
     {
-      "source": "Google News: AI",
-      "title": "If I Could Only Own 1 Artificial Intelligence (AI) Memory Stock for the Next 5 Years, It Wouldn't Be Micron. - The Globe and Mail",
-      "time": "2026-10-19T00:26:16.000Z",
-      "url": "https://news.google.com/rss/articles/CBMilwJBVV95cUxOd0pTQnA2TmVnWU1RQl9qc2dWY0VVcVFzQlNBeFNZQWR2TnN0aXZaY09ITTd5WGUwaE04bW9uZVdqVmJaWkFtalcwMF9YTUZmM0ctaWt2S0NxamVSUTlmM29ndTR5djd2T1YzdUktdUhfMFhleGxfYk8zZzFjSDhkajVUMVQtYzY2RGR6di1XcXg5V2xMcDVrcE91eEwzUTNjaTJyS1dPRF9tX09uTjBjbUhsRTUyUjc2dmVfNnRleERvdG1rMHRuSmRSd2F5Q2c4MGd4bXF2clRTUTFYSzZDZXdMV0JCX1hRcngxWFhUYWdSNExkM3Bhek1TRG1hakliSjN1Skxpdi1SaGp6LWx6ekxERUxhNzA?oc=5",
-      "images": []
-    },
-    {
-      "source": "Google News: AI",
-      "title": "AI That Knows Physics: Dual-Graph Network Slashes Oil Forecast Errors - Bioengineer.org",
-      "time": "2026-10-19T00:22:30.000Z",
-      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNX2Y2RTJVbW5vb0JtQ0ROMlo0VGNLdVc4YkZORHAwSzE0SWZRdjJ5S1pESFE0bWVzT3ZNbXZnU3l5WjhrczNCeS1pQnpWR1VtTWhhM19lLWp4N2E5elZfdHYzSUNMQlRqS0V6RVVOZ0d1YmtFSHNIWS1oN1EtNWpDTW1fdlFpYUdXVDVnbG9kYkx6eTd1M0pYNg?oc=5",
-      "images": []
-    },
-    {
-      "source": "Google News: AI",
-      "title": "AI's $9 Trillion Investment Boom Faces Growing Profitability Doubts - Businesskorea",
-      "time": "2026-10-19T00:22:03.000Z",
-      "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE94U2JYRmwwUmROYVFRa2lYWlR3TTluNWNMd1ZQVHdvXzJYd1JDUFFQMTl1NVhKTUZBTUZkbXQtd2k3OTJFWklhMmdYRDBSOTdaSmVWTjV4ZWNlZmU4WkJUSkZwcFdRWjZJWkNYcF9LQWRZb3Az?oc=5",
+      "source": "Google News: Gemini",
+      "title": "Gemini 4 Argon Agents Beat Minecraft in 27 Hours [2026] - shattered.io",
+      "time": "2026-10-19T00:25:26.000Z",
+      "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTFBoWk5hTHZpVW9YX0FqaG92ZzZiazlZZlJhWklrTFpkLW8yQVVON0d6T0Y1aV9GZVY5dG5QbkhpZGhYQkFBNXp1UkQ1UVMweFJzZXdJWjdSRC16eFc4NzVLbVctUWJpQUhTdjdSREIxbXY5c3NO?oc=5",
       "images": []
     },
     {
@@ -257,13 +1104,6 @@
       "title": "If I Could Only Own 1 Artificial Intelligence (AI) Memory Stock for the Next 5 Years, It Wouldn't Be Micron. - Yahoo Finance",
       "time": "2026-10-19T00:20:00.000Z",
       "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxObHpNeVo1Q2E0M012ei04SHFBZVlUeFM1QXpMUEctaVRKdE1PdDJCZWMtMDkyd05OWjliWjJMVHlKNlc2SG5tQjcyN0FWQ2VZS1pHRi1XWUQyRUNYUWtsQmFMYzFIUWxSeW5EU2tRWE00U0FsalRhUm9oaTk1OHlwODVDWHM0YjdNNVNxSzh6aU1zcVU1OGc?oc=5",
-      "images": []
-    },
-    {
-      "source": "Google News: AI",
-      "title": "If I Could Only Own 1 Artificial Intelligence (AI) Memory Stock for the Next 5 Years, It Wouldn't Be Micron. - The Motley Fool",
-      "time": "2026-10-19T00:14:58.000Z",
-      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNemdVNGwyVzBsMm94UnYzMkpXVHo2dm1ESXB2N1ZHTFpXaFZ5SHVoUHFCamVjVmlaR3VmTDRaTld5QnVkUnBvZ1hVcnFpN2dSNjFtSDNySnZDUlR6RXh4R2xPb1ZDaFRBNXlCNlBBQzBVX3IxNFhJOEV6N2FNdTFObDNWU29vZWVPSE9BTDlNNXFNajdDSE9TYw?oc=5",
       "images": []
     },
     {
@@ -275,849 +1115,9 @@
     },
     {
       "source": "Google News: AI",
-      "title": "A retired physician's reflections on Evidence-Based Medicine and AI - InSight+",
-      "time": "2026-10-19T00:05:12.000Z",
-      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOenA3MlR6LVl2MGpEYW1OZWhMZkVLTEhBbVJIeE9YeERIUjgwb3JHYkFaZDlTRlRJUEVJTEdwWXJsTEU4UGgwQ2dnMURDSG4tOU1CeVd2SXI5bFo4c3U3aTlLcklJUTByMDgwWEhSQ3lfd2ZYUXdqc0k1dVNZNVJLU0M3dW1ZQkVfcXlVSHowMDhRQVRrZ2g0aDl3ekJ5T3p6UDQ5dXZZMWc?oc=5",
-      "images": []
-    },
-    {
-      "source": "Google News: AI",
-      "title": "Moore Agency’s M.Cast 2027 report calls next year an ‘AI hinge’ year - Florida Politics",
-      "time": "2026-10-19T00:02:19.000Z",
-      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOajZsS1JrLWROS2JBWGI1djJxbUtfWWhLZUhYbC1SWU1jSldzX3hQa3RCdEJnX09aN2ZYZG04YUk3aElPRzVPUGlMOTVyZlA4MzdjcGtUTEcxemlWaFNSeGNNUEdWUlFvMUZMdzhLVVNwZ0FpdUJYY0VEOE1pMUtVQnhNcDJmczlsUEptT2dZOVRCZUYtMUloU2xqUl9RU1JnbWFzSk5LZ2tBZVVqcjMw?oc=5",
-      "images": []
-    },
-    {
-      "source": "Google News: OpenAI",
-      "title": "OpenAI’s educator AI workshops yield reusable tools, but teachers want more practice - EdTech Innovation Hub",
-      "time": "2026-10-19T00:00:09.000Z",
-      "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOaXlzZzdZTHlXaEIxZmppdEg3WHE1Qm5xTVp1aGw1UlpiSFNsdUVyNUhfdHpYMHJIWG9ud0ppeDQtdG4xLTFtc3RSUG5qZDN4NEowblRqNWRzd2xvSGxFOTFKdWw4a1p6emt3ZDFuN21jTU1NWmI0MElqc2JKeFdJa25IMU5UclQtMTBqbEg1Y19VcHBnaWNOWXBDQmdzby1BZV90X2gtQlItUW85dzBKZzQxRmNjNjJkTkZ0LTdKOWo?oc=5",
-      "images": []
-    },
-    {
-      "source": "Google News: AI",
-      "title": "Help undergraduates sustain critical AI use under deadline pressure - Times Higher Education",
-      "time": "2026-10-19T00:00:00.000Z",
-      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQdVg0Vzhqb1hYUXdVWXA3LXJmTmFIN1BJLVZaTm1DNmt4eDh0eW9DTFJ2QmQyRTdIN1JxRmxZb3M1T3VtM0tmei1TT050N0VSb09rYjlCTVdtNEtfX3hUWUFSX3ZTdXJsVDJCTUJFY29VNDNKNDB6aWxHei1neDlGbmktX3JQdFhpN2NEamtwbGVlM1cyQ1hnNUZVTHNXUVhHWHdyWnJLVTN6RENvSWRwZQ?oc=5",
-      "images": []
-    },
-    {
-      "source": "Google News: Anthropic",
-      "title": "Meta Says Claude AI Tool Triggered No Kings Instagram Suspension - Bloomberg.com",
-      "time": "2026-10-18T23:59:54.000Z",
-      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOcTV3dGctX3h6dXhJSHd3ek12THZiQk43SEZPTnlWZENOYUlQMHRMNzg5ZW5jVTQ0TGtzMEtiQjJsUjlXOXlTV05jdzlFNmtWWUVBQXYwRk8zSHIxZHd6WGFQcHB5TVExdFBQamtSdU1hQVQ1V053dmY2ZmZCYjVMME04YWFSRzFZNHJyZHg0bFhSQ054UldlVHphamU3ZDdPaWRRTmMxZWpMWk1lM1VXTFNmMUNDUQ?oc=5",
-      "images": []
-    },
-    {
-      "source": "Google News: AI",
-      "title": "Why Artificial Intelligence Could Threaten The Future Of Science - Forbes",
-      "time": "2026-10-18T23:57:30.000Z",
-      "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOcE1wVU9SRFc5LWdXRHVTWU9ZZlBTNjNpdFV2aXZoSVBUTWY4blVnRk11SmtHLWEyc1VDWXlRN0ZINzdSeWV3bTRLUTF6Z0ZFZjRJazBUZXJ1SUh6MTNRRm9KTWRPUVp2ODVaVXZmdDdxbWhCalFOV0NEbDlDMktWM1FPRDZvWG9fcl9YdXpweFdOZFg4V1BUODB6aGxmU0E1OG1uMzVWdWFyRXNIM3lXYkh1ODZDeW5tNVRqek94SDhfUQ?oc=5",
-      "images": []
-    },
-    {
-      "source": "Google News: AI",
-      "title": "Telekom Srbija Accelerates AI Investments to Expand Digital Services - The Fast Mode",
-      "time": "2026-10-18T23:57:22.000Z",
-      "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxObEptYnFESGZNSDJLcF9SOHhhWG92MVFUMlByOW1lU3loX08zQ1NJenVKdkRIalZlZlNjOUZSNUs0TkV6TlBpT0ktZWxEd0gxM0FpMnZSVG5IdGstUkdKamNzc0tucVMxOHBGdlByWEJnV2dqWFJQNk1EVXl4bURtSk11RFpseFdKS1Q5Um5HcU5zTGxhUjM4UUdueHdXLWZXalZ2b2MyYks5UE02WWJlQkoyU2p1bnhpUGxWTGtuVVRERnZaTk5Za3VwZ3U0QQ?oc=5",
-      "images": []
-    },
-    {
-      "source": "Google News: AI",
-      "title": "How Terror Networks Exploit Europe’s Financial Regulations To Evade Detection – Analysis - Eurasia Review",
-      "time": "2026-10-18T23:53:59.000Z",
-      "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOTXhFUUJJZUpkaU9oVFN4bGJrWjNjNHd1ck1Lb0kzLXVnSjU2UjBIZ2Y3NXFVUzhvc3JTWk95bnAwRFZlTzl6cHJIcXNiOF9ZWTM1VGItTnNfczZzMnR1dkx2dXBwQkc0RVBxSUVtaWpFcjFpV1BMWFZRSzRJdTlsaXBIUHJpa3ZBSWNVVGNpUG5YTDVrT2ZZWl9NWDVMeEVKUkdKUVhwSTVVc1ktS0QzVEE3Z0Z0aWY5cWpYcFNvNi11ZTg?oc=5",
-      "images": []
-    },
-    {
-      "source": "Google News: OpenAI",
-      "title": "\"I Don't Want to Marry a Salaried Man\"... Women Flock to 'This Place' to Find Husbands Amid the AI Boom - 아시아경제",
-      "time": "2026-10-18T23:52:49.000Z",
-      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE1DV21ZM3lMTnB1VWZEVEZTSkVVRENFMHNRTmtiZ0ViYkk4ZlRlYlhMUmYtaXFvck5RUU5YcWhyRVNlQVhwWU9JYzJPYlFLUFFJZUhZdlRnS0dsOGMyZFAxTzN6ZGQ?oc=5",
-      "images": []
-    },
-    {
-      "source": "Google News: Anthropic",
-      "title": "Anthropic to commit 5% stake to new public benefit fund - hi99.com",
-      "time": "2026-10-18T23:45:42.000Z",
-      "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQUjdTc2xqS3BpRHRaUlhfVGRXaDI0WmJxQkVkUGJjZ2Z2QldBdEszazgtb2txY2hYNnJnR21weEF6QU9qRUt0ODZQdmVSUW9qRWw4TWNOeFFVeldDU3kzRkpKbkxVLUlvN2g5UEowY0tmU2JHUmNoVDI1YWxUMjNrUUdrSHZWeXhJWU4w?oc=5",
-      "images": []
-    },
-    {
-      "source": "Google News: OpenAI",
-      "title": "Chinese AI firms challenge U.S. rivals on price - 동아일보",
-      "time": "2026-10-18T23:45:33.000Z",
-      "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE5uVk1zRFhkTGJfWXptRkVpN0E1aElqVWw3T2hhMWFaeDJkVzBPYnE1aV9hTEpZa3poMW1DQlNoRnFKMjBVUG43OWd2cFZLYTFSY25BRjhKWERhMlRsTk82U0FqTzRIQQ?oc=5",
-      "images": []
-    },
-    {
-      "source": "Google News: AI",
-      "title": "How to navigate governance, data, workforce support in senior living and care’s AI era - McKnight's Senior Living",
-      "time": "2026-10-18T23:44:22.000Z",
-      "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPbDJWN1pjQ0x5ODdtdVo0Wlo5ZE10Vk05VXR3a0tBNF91LW5IUHZORHJSdU9rSkh5c2pHZTRFTlNSV1BDdDBvbTh6WTdLSXBhVHBicjhCTHdYN3AzMFBDaTNPSi16WkZ6UmVNRFg1ZUxLY090ZGptZmptOGZSLXRBWHlKZWJ4ZVo5UkQ4cDRKTktjT0tLUEhQOG9iRzcwSlh3NVcwRDUwejQtSDZlZzkzQU42a2kzOUJXLTBkbkNyNUsydFpuWnc?oc=5",
-      "images": []
-    },
-    {
-      "source": "Google News: Anthropic",
-      "title": "Anthropic to commit 5% stake to new ‘public benefit fund’ - The Straits Times",
-      "time": "2026-10-18T23:40:00.000Z",
-      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNVElvUUtSWkVXUzZ3WG1MNEtrelp6VDZ2NllSWHZjeWFScENKdHZ1Q3A3MnVlSUVDRHZMci1vcDhDTUEyUDRrenJySUZpanVmeEd5WU5CT0FCZWVfbzlWdHh0aVBiRXd3eWlOUjZGUFdpb1U4R2ZlX3NMWm9FdXlFc2h4U05GOFhNdTdqQ0hzZXFxZFBKUWZDRVc1VU9MaHhKVDBEQlB3?oc=5",
-      "images": []
-    },
-    {
-      "source": "Google News: OpenAI",
-      "title": "OpenAI declares humanoid robot development, what Sam Altman meant by 2027 - 디지털투데이",
-      "time": "2026-10-18T23:39:15.000Z",
-      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOZHM5dkFPQWwwOHUwMzdpTzlRRDFZNjcycWE3Q3JyNUZzOVR0T2JCRmJic0FSUXphQ0RqcXFSNVVfVmlrUG8yLXo2WldnUlhlR2dVZWNHaTd1MmJxR3ItVkxMTnZ3b1B1Sm5GLU5VYjFsTE9vdTJVRTdfUzI1TzZ1cDNueGxJcW1BaUFLZ3czckRYaUJmTDRiTy05UmYyMFFHTk9OOVVYT0doQzYzanRWOTNwd2NkdzFuZ0E?oc=5",
-      "images": []
-    },
-    {
-      "source": "Google News: AI",
-      "title": "2 Utah dads create tech to protect children, shield investigators from traumatic evidence - KSL News",
-      "time": "2026-10-18T23:33:57.000Z",
-      "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxONm1VTHpJM2paLVl5Z20wWFJpNGU0cGlGNXE3c1VvMGVyY0pJVjQ5OUhJazJtVzBDNko1OVBLeldMb2JSLURJSmhZYTR0MWg5QnU2TFRlMmdya1k1NThxYkx4ZFVkTzM1b2p6TkxOZ1NhaUNsTmpYalJNS3RrLVhSSUlqSkV0QmdxOXlQcXlhQ2ZEb2tiN2d3ckZBcjkwanNvTmFwQk0xX3FSaHpNU0stNkxwYVJ3VHc2YjNfUGp5RXVicms?oc=5",
-      "images": []
-    },
-    {
-      "source": "Google News: AI",
-      "title": "Local college students are planning a mass walkout Tuesday, calling for a national freeze on AI development and greater public oversight of the rapidly advancing technology. - Facebook",
-      "time": "2026-10-18T23:31:27.000Z",
-      "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxNd3l2VW1LYXJpMGR4WGktc3ZXMjV1RFJobUpyX1dNcFlhWUVBVWplYmV0YVROYnFtOWFpYXlVVnlodHFXNXBmODlRUldDQlYxajJscG1hT2RsNnNvNXU0Wkw5UDZMZXJlZDBwdmpkVXJJY0NST29fX050VUxPUmVYYUVhX1pXTDdScE5CNzNXa3dtTXpvaEFFR0NNOFZWb2hoVkliR3djSW04Z2w4c3VFZ3ZmM1UxcGpqY3VwNWhGVTdzeTY1XzRkZWtVNy1aY0JaWlZGenFVYTUtUQ?oc=5",
-      "images": []
-    },
-    {
-      "source": "Google News: Gemini",
-      "title": "How To Use Google's SynthID AI Detection Website - Engadget",
-      "time": "2026-10-18T23:30:00.000Z",
-      "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPenJlS1A1SFdDamttUkc3M0RTcW9zdzl0RnI4RXozS21vZW05RVhoUXUyeEtqeExXenFSa2VXVkN4U3M3OVF4djdPTFlQWDZYVzFBbGVHSGpoVTR1eXhCUS1WbXQwS041SnFNaERVM1VmNEtnNEtDNWkzaXhqNWtaSlV3TmxfNWM?oc=5",
-      "images": []
-    },
-    {
-      "source": "Google News: Gemini",
-      "title": "Google upgrades its AI detection tool. How to use SynthID. - Mashable",
-      "time": "2026-10-18T23:29:51.000Z",
-      "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE44c3RyZU5qS3VqMV9XYXhoZVBJQlFSZTgzaGtuLUxEdEItM0ZDeFUxaW16d1g3SWxVMjRRRzZUX29IUl9oMmVyNUt5YkJ5TVhXcFpBdkNQUjR4dWZMYW9HWF9mNmtNS0t5UzVfMDNhOUpKTUFvNjdScw?oc=5",
-      "images": []
-    },
-    {
-      "source": "Google News: Anthropic",
-      "title": "Anthropic to Commit 5% of Its Shares to New ‘Public Benefit’ Fund - WSJ",
-      "time": "2026-10-18T23:23:00.000Z",
-      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNNXpEalNTRTc3MS04dnVkR0VjRHBocDJVbVlKQlIyaUJ4aHRHSVUwLTMtelNvRXUxWmNULU9iUnhPMmdWS1V5dUVQaUZRaXZMYnRMeGpzbWZFb2FKd3ZqcElOa0FRVlM4TXJoc2w2eG51eFVQZ2hTNENFY1phSzg5RjFNbXFEMDNNel96T2hCVFJlaXN6dnpmeVozTHdpMzkz?oc=5",
-      "images": []
-    },
-    {
-      "source": "Google News: AI",
-      "title": "Anthropic to Commit 5% of Its Shares to New ‘Public Benefit’ Fund - WSJ",
-      "time": "2026-10-18T23:23:00.000Z",
-      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNNXpEalNTRTc3MS04dnVkR0VjRHBocDJVbVlKQlIyaUJ4aHRHSVUwLTMtelNvRXUxWmNULU9iUnhPMmdWS1V5dUVQaUZRaXZMYnRMeGpzbWZFb2FKd3ZqcElOa0FRVlM4TXJoc2w2eG51eFVQZ2hTNENFY1phSzg5RjFNbXFEMDNNel96T2hCVFJlaXN6dnpmeVozTHdpMzkz?oc=5",
-      "images": []
-    },
-    {
-      "source": "Google News: AI",
-      "title": "Boston-area college students plan walkout calling for freeze on AI development - Boston 25 News",
-      "time": "2026-10-18T23:14:03.000Z",
-      "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxQODRuTVI0LXNHc2J3N2hBbmFoc0c4UnJzSnBKYUUyd2JxbXc1WFdFWEF4MG5HMVFPYVlMSXl6TWI4TU5QV18tejdBMTRjTGtrTDNYZ3l1S3FwS1JrUDVWSWI5cVVzU21iMU5tVml6VWtHaWtsc2o2a3lwdVRPN3BUTVdvZDhXWFhIMkRYY3hXcktscHBzSk1uX29qM0ZiZ29BenhIWTJZa2F5bUtZNVVXbjROcW81YWlLYkJoTjhqcEotQzZwWVB6STB4N3NvT0x2RjR3ZXJR0gHqAUFVX3lxTFBxWEpuUkhEbnhZMTBRZHdlR1VZRWFXYWh0UFlZdE1GeXJiMWpmMDFsYy11WExuRktBSXlUSGhJYTZVY1Z0NEI5N3QxUGRHcGFLd3VaOGhTX2tURVNnR1hEZDdnS21aOG5XcXRfZHAwWEswX3dXLVRrS2ZTeUpYTVhDaWQ5Q3FkeDZJZFNteEVlMVg1QVdnWmRrcm94cnVpeHhnNFBHeFJBZjdheWRnMnY0dTA1bE9DU3RQZW4xWVRZdkItZkEyVVZuTEhMdHVuVFU5aTl6NERJTGsxcjNZYVZnUmptQjNscDFTZw?oc=5",
-      "images": []
-    },
-    {
-      "source": "Google News: Anthropic",
-      "title": "Anthropic’s $1B AI Safety Bar Sparks Pushback [2026] - shattered.io",
-      "time": "2026-10-18T23:10:26.000Z",
-      "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE93SF8yZ0JVZjB5UWlKSklpRTRrVU5TaWlqTC1Mb2duVWlMQVVtRTJuZ1V2cnlsek5mTUxtVHdJQTR3RmZpRzViQTBkUTRyallVY3YzRjdqYlE4S2NCNnk3Z2JUcFhnM0xaOVdMNEpUMHppeFQ5?oc=5",
-      "images": []
-    },
-    {
-      "source": "Google News: AI",
-      "title": "36, 85, 14: three numbers that explain the enterprise AI gap - CIO",
-      "time": "2026-10-18T23:08:41.000Z",
-      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOalhCdGpQZi1SOHFuTVYxVW1NUjZtejBjSUMteXdfYkpveHJYaVBUWmNMMmg0d2E3VzYxdjBSYnJRdWlEdHMzek1MQ0xQZTRmTXhHNnltZWFla1B3SUJDSTR3dDVtSWNqMWhqWXVqZWhmRWVDcHZEUzNTODM5WnJPX1lNYWxhY2lyR2tFUmRSMzJSc3JKWjJ4THQ2bTR6SFE?oc=5",
-      "images": []
-    },
-    {
-      "source": "Google News: AI",
-      "title": "Cost per successful outcome: the AI number Singapore CIOs should be reporting - CIO",
-      "time": "2026-10-18T23:07:54.000Z",
-      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNNDV4dTdwSl9MMXFsck9wM3lOVmVha2thLVIydjJjZTFoMUwyakxFQzlKWUdpV0pPam5jSDJFczAxYjAyX3MzbjdLTnh1c1JodTdMeS1WN2lvYmhfT0dKeXJLLWgzRTBRZzJLejhhRV92RUt2YS1FdWpZQ1M1dHlWMFRnVlk2SHVZNC1PTklnS3A4LTNORF9PdWo1c2RtaEtJcXc4dnh3SDdnU3JCNHB3eFo5eEJhUnpR?oc=5",
-      "images": []
-    },
-    {
-      "source": "Google News: AI",
-      "title": "The AI bill nobody’s watching, and three numbers that prove it - CIO",
-      "time": "2026-10-18T23:07:51.000Z",
-      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNRV9JTF85UGMwSVFsMFpqcmxBMjlFTUF0NWF2YUJ4WmtvSTZrMzNrckRxMUV1TjVZQU9ZVHpQTkxPV2ZmRklHLU1oV05ibkNFYmlEeVYwZWxOQUpGbTgtazVBd285LTZEcDYtZG1uTG1NSHlQNlRoT2RESzNCYVk0bl9nUWdxSHVDbFQ4bEtpSi1BVkdIbDEzLWRROTJqaXlJY2d3?oc=5",
-      "images": []
-    },
-    {
-      "source": "Google News: OpenAI",
-      "title": "AI Breach of Australian Healthcare Website Sparks Regulation Debate - Carolina Political Review",
-      "time": "2026-10-18T23:07:18.000Z",
-      "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxOXzE0Rl9tTjZmcEk4QXFPOTZoWmU5QnNUUk96a2NkOTN5WHJyeFNvSVh1OTlQeGdUS3l0QzRsZTZqYl9fZ04teEhXYlVza0tLZjNaQ05XckJCaEhrOVRqOFNVWHA4MDk0emRGcnV3SklQLXJBM2xITDFUam0zX245S194UUYwY2swMVRKN0NrNDZEVXlxcUxFdUpoMUNpSzBpUE55N2hjNW94QjNNYUhLUHpXT0toeUItWkQ2a1VadU53RFFlcHdZdDRCTGs0RjR2UGc?oc=5",
-      "images": []
-    },
-    {
-      "source": "Google News: AI",
-      "title": "AI Breach of Australian Healthcare Website Sparks Regulation Debate - Carolina Political Review",
-      "time": "2026-10-18T23:07:18.000Z",
-      "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxOXzE0Rl9tTjZmcEk4QXFPOTZoWmU5QnNUUk96a2NkOTN5WHJyeFNvSVh1OTlQeGdUS3l0QzRsZTZqYl9fZ04teEhXYlVza0tLZjNaQ05XckJCaEhrOVRqOFNVWHA4MDk0emRGcnV3SklQLXJBM2xITDFUam0zX245S194UUYwY2swMVRKN0NrNDZEVXlxcUxFdUpoMUNpSzBpUE55N2hjNW94QjNNYUhLUHpXT0toeUItWkQ2a1VadU53RFFlcHdZdDRCTGs0RjR2UGc?oc=5",
-      "images": []
-    },
-    {
-      "source": "Google News: Anthropic",
-      "title": "Anthropic to commit 5% stake to new 'public benefit fund' - Reuters",
-      "time": "2026-10-18T23:06:18.000Z",
-      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQUTgwNEw0VU9tTnJVbGZXUGx6dS1QSjMzSlRRdUQ5RnJhV3gxeFFHY2hlZExVSzBjQ3c4VEM0eEdLNk1NRk83U0VUSHZFYzdrR21GNkZlQmh0TGRjZXd2RWFrbE53RE9iTVZlSlpabU5MMkdBN0Iyd1R6YUMyd3hQM2txbUpVdFlVNkhPUXJfZU1JZE16ZDFhcg?oc=5",
-      "images": []
-    },
-    {
-      "source": "Google News: AI",
-      "title": "COMMENTARY: AI isn’t Asia’s only game in town: Manishi Raychaudhuri - Reuters",
-      "time": "2026-10-18T23:05:49.000Z",
-      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOYUpOVHc3NGYyMUJiTWt5eGJlaXEzcTBXaE5tci1jSS1mV3ZxUzJyZXdzOVBpU0lmQ09KQ01lZ2JUeS10U0s1VW9pODV0SHVhTm90Z1lqdFJZWWgweDJOWUVzbGJadmF2NkdKb08xNW12UU41SktyTGNGTVRBMUhzQ3pBR2FRbnpvUGJPWXJhSnRTSjZZS2tQTXBsVl9TbUgwUy1qMmpxSnNhWjZRTENpMXZSM25PcUkxaUE?oc=5",
-      "images": []
-    },
-    {
-      "source": "Google News: AI",
-      "title": "How to prevent an AI-created plague - The Times",
-      "time": "2026-10-18T23:01:00.000Z",
-      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOeDAxZ1I0cndkUzQ1U3hIZ3JDWG9IM0tuckJFZDdFX0xhbll0bE1IYkFjREMyQVFvUm5WamtCRFJ5SEpPRERqa2xyTUFmd1I1YWdoMmc5Sy1qcGR4bHlway1pY2lqTW5OeXk4S1lIdUNNV3JRNXE0TEVld0s1ZHFBZlR5RVJocnR3SG9TcTNLcWhoeV8wQ1RPSG9neXFBZUdIQTc0Qi1FVDE0UWptRzZTWmRfV2YxYXA3?oc=5",
-      "images": []
-    },
-    {
-      "source": "Google News: AI",
-      "title": "Religious leader calls for moral evaluation of AI: “The gap between AI reasoning and AI moral compass is widening” - Church News",
-      "time": "2026-10-18T23:00:00.000Z",
-      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOR1NEcUdCTVJ1dTlBeW1GNlJoX1dOWkY0QWRKUjJYWGZFd2k0eUI5VHhrWHJnOE91WmNDdU9pdTZJWmtxeVJDaWl5b0pKY1VRSnF1Q2pKUndLYVlQVUlnWUpyeFFPbHRVb2dnaTN3LUdQNkM2OURqWTBiM2E1QkI2TFRBalJWNmdiekdMUC00RjVCTEN5cDktcHpLOGdGNWZNTVdobmRub1RZNnMxRTNF?oc=5",
-      "images": []
-    },
-    {
-      "source": "Google News: Anthropic",
-      "title": "Anthropic commits 5% of shares to new public benefit fund that could address AI job disruption - CNBC",
-      "time": "2026-10-18T22:55:48.000Z",
-      "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE9YejV2dXEyYXpFUWJkMzZlMmVTczlHREhYdW5yT2dhbEplTFpBRnlvamlEaEFqWVJzdXhMOEdsVWx3OHhVU0d5dVVLckVtRl9FOHBzSzhKOE1oeGc4bVlsaDYzVzE1UUFHYlI2SHNEYzVXWUllSjV1MtIBfkFVX3lxTE5YWlRXWDhCbm01QjlQVHZKb21HV1FlZGNyQzlRVVV5MUFEal9jLXlwbFVJYU5CajJVcGwzQ0NxeWVXMl8yX0pqbENNQ3RmbU92VWpSTl9KeDFKNHdTa3VaX3BEVl92WTdiczlURW9WWmZZbm81ZDFlWnRoZXdoQQ?oc=5",
-      "images": []
-    },
-    {
-      "source": "Google News: AI",
-      "title": "Musk Says White House Duties Distracted Him From AI - PYMNTS.com",
-      "time": "2026-10-18T22:52:30.000Z",
-      "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNb09HeXlmNHJYR2lOZFZMYmo2eW1fR1dMM0Y1RzM4cktQWFE4bU9SNTluWW1ZXzBrQ1Z0U01EbHcwZkpLdFdyX3E0YzZQRnI0SXVUTm9pLUQ4Vzl4c0JXN1VMNk1FTWVmRjB3QVJLcGREZFlDSmRPOTJBYmxtY2JSVDFoSDVkbWM3THNkbHJwMWtEaVpyclZkS3FSNmxMZkxGcjJYNU9VU3dyZHJBUXc?oc=5",
-      "images": []
-    },
-    {
-      "source": "Google News: AI",
-      "title": "What does it mean to be human in an age increasingly shaped by AI? - Welcome to the United Nations",
-      "time": "2026-10-18T22:50:30.000Z",
-      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNMjJVMy04dmluNVpqTUNabkJ0ajE0OWZUb1ZYeWJtTXNZZVVWRUI0LXJKMzRIdUtDb1Iyd2lTXzlKWGh4aTJPUlBLcTQxODlHeFV0REl4RlNhWnBnVDliR09nTGNpUkJxVW9VcEM5c18wSzVvemdqVnZ1dGxYS01UaThsVlFnVmx2ekNQUQ?oc=5",
-      "images": []
-    },
-    {
-      "source": "Google News: OpenAI",
-      "title": "OpenAI's $70 billion revenue target remains in place! Is the... - Futubull Community - 富途牛牛",
-      "time": "2026-10-18T22:46:49.000Z",
-      "url": "https://news.google.com/rss/articles/CBMirgJBVV95cUxPOFRtd2RkTEo4NGlSdzk2NUI2RmVPajgxcWYwbkhOVGE3R1lmQmsxWFYxaEdTcXIxMFhVaWkzSVliNmlOejlManNEUmgtR1JiTWtoMUY4dFFLVXp2SWk5alFQUlVzaERWSlN1eWxNRm4zVFZhTDY3S19uNFRFU1dMa2ltWUwtVnY3eUZnTjNnQkJKWjJNUDBFWmJ5ekYwWUFxVFc4T3p1aVY4akhmT1FLcTM5X2Q1eEUxVlpIZV92QVZpeWR3cUtVMVdaTktIN1FzcWJ1bHZaR1NzOG15elhUUDJKY3BRcXJ0MnlkNDIzWnVOaGEycVNLbFJSb2RDUksyaW1KWTMxZXBueDdtN3VQRUd5YTRxUktLTkpMaG5XU1o4dXlzSHdtSDNHNXZ3QQ?oc=5",
-      "images": []
-    },
-    {
-      "source": "Google News: OpenAI",
-      "title": "AI Black Box Cracked? Silicon Valley Divided - 조선일보",
-      "time": "2026-10-18T22:37:45.000Z",
-      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOOE1RTm9RdnlUQ2FoMkFCeElYMldFMC0yZFJpSkZnZXRUeWdUaUVhQlZVTDlyZUpTaHV4UlZVUzZqUmgzSy1udmI3MERFXzFRT2VPX1hHZWh2UExXd2huRS1JU3hBVEd4S1U4MVZ3Q2Q3X1gyejJSalVUNzdtT0VEVUxxc09UemRB?oc=5",
-      "images": []
-    },
-    {
-      "source": "Google News: Anthropic",
-      "title": "Anthropic Co-Founder Predicts AI Will Bring US GDP to $44 Trillion - PYMNTS.com",
-      "time": "2026-10-18T22:35:56.000Z",
-      "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOUkNVbFl5Tl80VlFQYzJ5NEdmU2ZvZXBOVmNpbW9rNDZtQ3BKdnM2UHJxUEoxeVRRc3hoeDBuLUU3ampTN085RjhTeVp5V2RKcU5RVllYY3QzNzRkYUVaLUVrbTRvWHFGN2owNE9JY2hiZzBZdnB6bW1mN2piR2ZXSjFkZU5ibjJnVkxFQ05vSXpRUjlSTkwwREtfd240ZG1ZUmdSM1FfR3c1NlRDNEpiY0x2ZUd3M3pyMmhMQ2NMc3I?oc=5",
-      "images": []
-    },
-    {
-      "source": "Google News: AI",
-      "title": "Anthropic Co-Founder Predicts AI Will Bring US GDP to $44 Trillion - PYMNTS.com",
-      "time": "2026-10-18T22:35:56.000Z",
-      "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOUkNVbFl5Tl80VlFQYzJ5NEdmU2ZvZXBOVmNpbW9rNDZtQ3BKdnM2UHJxUEoxeVRRc3hoeDBuLUU3ampTN085RjhTeVp5V2RKcU5RVllYY3QzNzRkYUVaLUVrbTRvWHFGN2owNE9JY2hiZzBZdnB6bW1mN2piR2ZXSjFkZU5ibjJnVkxFQ05vSXpRUjlSTkwwREtfd240ZG1ZUmdSM1FfR3c1NlRDNEpiY0x2ZUd3M3pyMmhMQ2NMc3I?oc=5",
-      "images": []
-    },
-    {
-      "source": "Google News: AI",
-      "title": "DeepSeek releases updated V4.1-Flash model it says completes tasks faster - SiliconANGLE",
-      "time": "2026-10-18T22:34:00.000Z",
-      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNTVpONkFFTks2bFROQXBrcHBJb1BGczJIbUtaU3hhdTl0Q2M0U1JUWllzUlRzdEJZM3o4UE9UbWFTUlpoQjRIQjY3clhteDRaOFU3emRReDZHVE9NVlBpNlBoMWFzZjIzOXBxazA2TFJhRVRPQ1RHZW9KbDV1MEhwTm1vTW5IVGc1MkdOd1NPaERJbWJRb1JIbDBnLWYwRjAyR251T0hTRkg3d0tCRmF3?oc=5",
-      "images": []
-    },
-    {
-      "source": "Google News: OpenAI",
-      "title": "Meta launches Muse Wonder, catching OpenAI, Anthropic: How to try it, benchmark results - Mashable",
-      "time": "2026-10-18T22:32:34.000Z",
-      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE9jQWhkclNlSmV2TEZzY19JYW8wQ3pkZVhFNzFLaElxdHh2bFprTGwyYWxIVmtMd2tEMEw3bjVaMFJfQU9xU0lVQ2Q1S2owb185YXFpdElfZzVxTnJ6b1FMSWdZaFJSTFFWb1dTRzBqbjJjcngyb0E?oc=5",
-      "images": []
-    },
-    {
-      "source": "Google News: Anthropic",
-      "title": "Meta launches Muse Wonder, catching OpenAI, Anthropic: How to try it, benchmark results - Mashable",
-      "time": "2026-10-18T22:32:34.000Z",
-      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE9jQWhkclNlSmV2TEZzY19JYW8wQ3pkZVhFNzFLaElxdHh2bFprTGwyYWxIVmtMd2tEMEw3bjVaMFJfQU9xU0lVQ2Q1S2owb185YXFpdElfZzVxTnJ6b1FMSWdZaFJSTFFWb1dTRzBqbjJjcngyb0E?oc=5",
-      "images": []
-    },
-    {
-      "source": "Google News: Gemini",
-      "title": "Google DeepMind’s Gemini 4 Argon agents finish Minecraft on their own - eGamers.io",
-      "time": "2026-10-18T22:32:09.000Z",
-      "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQMm5WRFBJNy13UUtRRDY5UW5KUVYxcVhrNUdjZVNxWnlYNnZ3WVVRc0N1Q2VfaWMycmJpRGZmZ2RTZjlWZ0N2LTRwNkhfS05ZRGk3T3pHNDNTUGp3MHZoS0NJTTF2LURPbi02RlRrN1l5bmdHV3VpWDVEUVpia1h1alF0VVl2cUk0SlpjVndqN0hSdw?oc=5",
-      "images": []
-    },
-    {
-      "source": "Google News: OpenAI",
-      "title": "Anthropic is putting 5% of its shares into a public-benefit fund — here is what that means - OpenTools",
-      "time": "2026-10-18T22:31:14.000Z",
-      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQUjZQcmpRY3VEYkFWZUtpSVhCYXRjZGxkY1FYV2tLTnpYaGpyOTRsRkpDXzBqT2tnWVR0ZFpNdUxiMFBoemJYdUJESUpWd041a2tUb0p6N2xzOHdlb01iakhQbjN3NkVxbWhCWHp1dlRzeVJiNDk3RDVFN1R0cE0zd0w0VE1WTkhMVXgzRHFn?oc=5",
-      "images": []
-    },
-    {
-      "source": "Google News: Anthropic",
-      "title": "Anthropic is putting 5% of its shares into a public-benefit fund — here is what that means - OpenTools",
-      "time": "2026-10-18T22:31:14.000Z",
-      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQUjZQcmpRY3VEYkFWZUtpSVhCYXRjZGxkY1FYV2tLTnpYaGpyOTRsRkpDXzBqT2tnWVR0ZFpNdUxiMFBoemJYdUJESUpWd041a2tUb0p6N2xzOHdlb01iakhQbjN3NkVxbWhCWHp1dlRzeVJiNDk3RDVFN1R0cE0zd0w0VE1WTkhMVXgzRHFn?oc=5",
-      "images": []
-    },
-    {
-      "source": "Google News: AI",
-      "title": "Wittgenstein Was Wrong: Artificial Superintelligence and the Return of the Ghost - www.lvivherald.com",
-      "time": "2026-10-18T22:25:39.000Z",
-      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOMEttQ0ZxYzVtSWpBeUUzTGl2amNBOXd2aDBCS281LTR0RTIzTW5yb2t0R2YxeVF3NHpzUG1TNzJIdTBTTUZEM1YyS0VxQ1dTWHNCY3lDdHd2XzFYYi1Vd2RoOHN5V2NxbWhYaVRVTnVDQkZSSlRZSDFOU3RqV2NBUWc0NS05cl9XNDlqbXIzOTJGSzVDR3l0STloSTdBSnJfREM1WjBPR090YXVmcDEzdg?oc=5",
-      "images": []
-    },
-    {
-      "source": "Google News: AI",
-      "title": "Anthropic to commit 5% stake to new public benefit fund - New York Post",
-      "time": "2026-10-18T22:22:00.000Z",
-      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNeTBHNWtxYVJMSG1xZ0xxcGlSUzhmcTNWSzZGREF6a0YwQ2FmSG9UcDJyd3hNSG1iRThmZkpEb2F1UzkxdUJldm5ub1lMTWw1cVdqSmJIMmp4MmZteV9jalhsZTdfMXBDaUpyb1d4MG56Vk1oRFVoNHVvb09lZ0RaRG1RUG9Vazk4c1ROS0dlQXpUeUkxT21SUDl3?oc=5",
-      "images": []
-    },
-    {
-      "source": "Google News: OpenAI",
-      "title": "AI Reverse Engineering Replicates Adobe, Microsoft Software - 조선일보",
-      "time": "2026-10-18T22:12:21.000Z",
-      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOWGRUdEI2NVV4NDBrM3JJNWVvU3d4TzVqZmhZNWxxd2ZzVXBOM01pZnY2RnlpUW1ZSWVqUEdQTDl6b056M19NTFpHYUliUUtCeDFDd05DTWNza2ZQSXdUM0hTYndJX1VPSTBVeXJBSjlHYnFqcF9FanVrNno4RWVlQVA1TEttTVA5?oc=5",
-      "images": []
-    },
-    {
-      "source": "Google News: OpenAI",
-      "title": "Anthropic and OpenAI face commodification threats. Here’s what to watch for - Morningstar Australia",
-      "time": "2026-10-18T22:11:49.000Z",
-      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPU2pKSFUzT2hjaVREcl82TUVCUGVpUWZEeHRVbzgyRTg4T2tlRW9sMFN4WEYtY2t2MmJha2RFSmgzeG4wRlIzdzlHZWZobXl2c281VTRWT2xzY040M3EybGR1ZlN5V0dibjVxSnlVN0FpT2ZQRFRiaE4tcmhqS0NwZGlHQjRNeGdlUDBWV0dYY2FNRHZpbGhjR1dFZXduZ0JsNnc?oc=5",
-      "images": []
-    },
-    {
-      "source": "Google News: AI",
-      "title": "Donald Trump’s AI enforcer - Punchbowl News",
-      "time": "2026-10-18T22:11:49.000Z",
-      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE9HcmJMRTdlSUE4TjJ2R2NpV2YxZnZUNjg0YlFYVTZNM290YWR6ZUd5bzR0alV1eUVIV2txSHBHMml2SXBWNXZsYnVyNlN6UXpUUDk5UEtvdllyVDRtQmtEcXdSSW4?oc=5",
-      "images": []
-    },
-    {
-      "source": "Google News: Anthropic",
-      "title": "Anthropic Allocates 5% Stake to Public Interest Fund to Address AI Job Impact - news.sbs.co.kr",
-      "time": "2026-10-18T22:06:00.000Z",
-      "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFBRaFM2QmYyRG8tS3BkSWl5WVVFOTBpaHFQVG5hMmxqejR6OVhNeWV0YW1yclJ5YzRfSld0VHBpRkp2ZTNvRGpJTmhUbUNCYTFoekRfUXUyNWJuVDBwLXhWS055T2pjUQ?oc=5",
-      "images": []
-    },
-    {
-      "source": "Google News: AI",
-      "title": "As AI rally wobbles, stock market's spotlight turns to earnings - Central Oregon Daily",
-      "time": "2026-10-18T22:04:41.000Z",
-      "url": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxNM1NWbmU3OWs5QzhxalVJbFVaVWgyWlpMNGxkZmhtbVVqR1JfWEVjcnRxVURnQVI2bFI0VGg2UWRWcWpOUTRiQkViY3dfaTBlM2xSakp6d3Fld0ZrU1hnWmg1UFc5N3phRTJGeVNqekFkanBIQ25WWE1pbnBFYUlsY3ZndjJvb1dmNEtSckMwYzVwNl93c2FYdUw0anNsdDAzWDFDMXEyLS1QcWFsOEJmcGdJSGh1SEhyRUVScEtfeTRDcEtDNzBmamdqY01GREs1QlFSMnJqWjFLMHZMdWlFVk9xYXRhVmZRbERHNWRKLWNSdw?oc=5",
-      "images": []
-    },
-    {
-      "source": "Google News: Anthropic",
-      "title": "Korean, Japanese, Taiwanese books targeted in Anthropic's 'Project Panama' hunt for AI training material - Korea JoongAng Daily",
-      "time": "2026-10-18T22:00:42.000Z",
-      "url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxQdFh0NndJQTVRdVBsOVZ6WkRjRlk3bnQyTzhJYm1TTTJKaTBKLXpCM0djejBkYThBQ2NyeThkVHc0emhfdmg1LUo3dDhhQWV4Ym5wS0g3MWpWWXpEbVVZeWU0TlNkXzlqaWNYeElMeW91WVl3b25RQU81MHlEVlNQc24xR2ZqYUdPMU5kTjlzblZJR0MzLWVROVJXYUFybWt1VXhOemRLNmJKR083dGdQWEJLZXNiUUlROFZGSkVKWGNCZGptZnk3a3IzanFZamtWMk5xdTlTclFmc0x5SzVXTlU5YWNpa0Vl?oc=5",
-      "images": []
-    },
-    {
-      "source": "Google News: Gemini",
-      "title": "Google Gemini is now available for the iPhone - Mashable",
-      "time": "2026-10-18T22:00:00.000Z",
-      "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE5wcm0wV3dZVDVWN2t3TXFrRkZwUm9tRDlFdnNSaG5fNHd6YUtUVmRET2NVdzVabzAxX0V3QUFsRTNlRGhMUDRscWlKcHRmZzhhX2ZGVzhLUDZXNlFjU3c?oc=5",
-      "images": []
-    },
-    {
-      "source": "Google News: Anthropic",
-      "title": "Anthropic to shift some shares into new ‘public good’ fund - The Business Times",
-      "time": "2026-10-18T21:55:00.000Z",
-      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQM3YyOWIxTFZnZmp2aG56Q2xDUllhUGwwQW1iRWh1MVdrc09UajJNNXU5RTg5clJGVDhPUzR4dlVfdkVtV3ZXdXdjN28xdWgtTEVPWUp0RWpmTnIwN19DcEc0THNCbkpFNC1Hcjk1bktSbDl1SS1ER21MY0lXb2hERWdWUHhMOWZfU3hqV285SFF0WXlzaDdNejFYVlUwTVNx?oc=5",
-      "images": []
-    },
-    {
-      "source": "Google News: AI",
-      "title": "AI, meet your freshman class - Punchbowl News",
-      "time": "2026-10-18T21:38:18.000Z",
-      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE5EeDhjTXJza1gtX21ZVnNlZXZwVWNLYzRsa0wwS0N6SnNuZm5HdU5IbTByT293TEphOUowZmwwcmM3MW1Ba1h6S1N1a2ZBN2xRRk5WbVZEZnV1V3FyQWhIUzAwVVk?oc=5",
-      "images": []
-    },
-    {
-      "source": "Google News: Gemini",
-      "title": "ChatGPT vs Claude vs Gemini for Shopping: 8% Trust [2026] - tech-insider.org",
-      "time": "2026-10-18T21:30:17.000Z",
-      "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxOTjRrUmZBTnptUllGZFZwal9hSUNwWVE5M1VxcjVsZ0NndjNzbUp2Z05PM2p1Snk5ekEteDRWYWFsQm0zU3ZrNUJEanotbGN5R09DVTBZaEp2MnFzaTg3OWZ0cjVhVFVhTDhUd08wVUFTdHF1eVNpOFNUNWhreXpQRUJn?oc=5",
-      "images": []
-    },
-    {
-      "source": "Google News: OpenAI",
-      "title": "Apple and Meta Collaborate to Run Muse Spark Open AI Model on Mac Studio - VOI.ID",
-      "time": "2026-10-18T21:20:18.000Z",
-      "url": "https://news.google.com/rss/articles/CBMiQkFVX3lxTE1wUU01X050NGk2WGJ1N1NxSkdMQm9HUFd4UW90b1Y0QXlkNnMzUUVpdXNjLThKSVBmeVNJeldsZmRaQdIBQkFVX3lxTE1wUU01X050NGk2WGJ1N1NxSkdMQm9HUFd4UW90b1Y0QXlkNnMzUUVpdXNjLThKSVBmeVNJeldsZmRaQQ?oc=5",
-      "images": []
-    },
-    {
-      "source": "Google News: AI",
-      "title": "AI Cloud Firm Nscale Faces Investor Pushback Over IPO Valuation - Bloomberg.com",
-      "time": "2026-10-18T21:13:44.000Z",
-      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOczR6MkNKMHd6X3VfQlgzNFlNTnQ2MDZhRWNBbXd6OE1GZlBaYlJ2RTk1YlNsNjZkVF9uUjNvNjlPd3J4WDVwNFlSYl8xNUp4eHJlMUYyOVRKaklyd0JCemRVbk8xNjdYOGx5U0JrMWU2VVU5Xy01bkF1bjY2SG8zQXJIQUNHS25hUUMxUWE3TmE4ek5Id2M2emZaTWdGYUplc2hLWjNVZDI0VjF3Q3gzbGpwSkg?oc=5",
-      "images": []
-    },
-    {
-      "source": "Google News: Anthropic",
-      "title": "Anthropic Commits 5% Equity Stake to Public Benefit Fund - The Tech Buzz",
-      "time": "2026-10-18T21:06:00.000Z",
-      "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNdHQ4YlBWZXZvV01LamJRVl9oN2E0WTAwLTZyMFFXWmthUjFQdGdXT2pzcGlPNjI2aHRzMVo0RlhoWFRQRm5XQ0hPc1UyZ0Z3TnNyN0VTaWtOeFp0NF9lS0N4QnhWT0liYy1QbmhZLWxyVUJIcDdpdXRPcnE4Z3hXX3BGZnRETC1lWHhjb2RVcnhhdw?oc=5",
-      "images": []
-    },
-    {
-      "source": "Google News: Anthropic",
-      "title": "AI Daily: Anthropic’s 5% Pledge and Microsoft’s Nscale Exit - FourWeekMBA",
-      "time": "2026-10-18T21:04:34.000Z",
-      "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOSU5DOXRINkZuVnRmU29tM2g2UWUyMEU5VW9xeW9LRzFJUWpVdHJwR29wT2hRNGhXclBidC1YX1FBcnZGT2tQNFJuMGs2SHZtM0t2eVZiVGloVjhWcWtaWnlNTWVyWnp4NkFwWms4RDYwLTFCQ0p0bXN6bzlSeDFIVEROczRnQ1VobExsZndrT3Y?oc=5",
-      "images": []
-    },
-    {
-      "source": "Google News: Anthropic",
-      "title": "Anthropic Ties a 5% Equity Pledge to Its Valuation Growth - FourWeekMBA",
-      "time": "2026-10-18T21:04:34.000Z",
-      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOTTR2eDRmTTJUT01VN0dVSWxRVWQyaGxKZmpocjZyWkRTWWxXU19LakJZS2R0LVRqbDhFSUxWdEdFQkZ4djJCVGw0STI1cWYwV2owUXdncTdCZ2tndVJrWjZ1c0ZqdHotWjNRZS1oVDdLT2pvcmYzUUdiYmx2QXJyUWt2c0hONnBXRHlHag?oc=5",
-      "images": []
-    },
-    {
-      "source": "Google News: OpenAI",
-      "title": "MI5 is opening an AI threat centre, and OpenAI just told MPs the worst isn't over - WION",
-      "time": "2026-10-18T21:02:00.000Z",
-      "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNLXNYc2QxR0Fqbmh5VHBFMEpSMktQc1VCcFZVQzNzdV9PWm9DTkNoZVJJWjZZR2hYRmJyQUVKOHRKeUtIQ3VMMjNTZW1kZG9QenBodkZrekViYllZTEtmU09uS2dDVUtWMGZQY1dMdDlNU2pUd2tQRjJSYXRLVjB1NGNRajhtTDBoQnJJOXNIVV9acHpscWlQNktDcFBqbXZnaFlGM0hTTkVjbW1Ock85UlZJaTU1eDR4eDFocHJkYnh6Z9IBxwFBVV95cUxNOWl2aUVyT3JtR0lnOXhlRzByT1NTUFlFSFhuMUlTS1RzSnlZbG9IVzdsclg4eDNxY2Zta1k2ZmVVWkdVdW4zS19lTzAyeGJaTHU1Y3NqS2hkWHREQk5wMWdpYkpjcnVrakhuNGdJRzhCQVZ3WWJ5M0ZTQXpBQ0tLM2RhZ1FYbXR1UDZMUmZzb2Q0eHNoSHpWSHdnNVdTeVN6NHJWU2Nrd2R6LVo1QUZNQi1LSUVzcnRlZzdnVU02MVVHeHBCMU9B?oc=5",
-      "images": []
-    },
-    {
-      "source": "Google News: Gemini",
-      "title": "Google is renaming Gemini again; here's what each feature does now - Android Police",
-      "time": "2026-10-18T21:00:13.000Z",
-      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFB0bTgyUVZSeElUek1mZnlBOW1LRHJtRjB1TjcxRUVyS0RwbmUtby1EeVJEQzlyMC1sTTVpR3JmRGQxN0tCLUxQQVJhQ2JCZ05NamtRQWhucHRZOFN6TXdFaEdiTkJTb3RESGQzenMtR0NPOHRzQ3RYeE44bnVQUWM?oc=5",
-      "images": []
-    },
-    {
-      "source": "Google News: OpenAI",
-      "title": "'Mixed feelings': AI cracks centuries-old ciphers - Japan Today",
-      "time": "2026-10-18T21:00:00.000Z",
-      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOVDh3X1RZT09KTk9qZTVPSmFrQWRNZE5rOXljdVBFcUpZX2lXeXZJdlNYMjZtbmFzcDA0VzMzdnlNWmdYYmxSNXJIU0NUaUxSUFozN3V1T3FIM05XSWkyUHZvZS1IV3ZiV2VxVERnazhTNTgzOGZ2VDNXdF9SOU5iekFjeENMRVF4c1gtd3pB?oc=5",
-      "images": []
-    },
-    {
-      "source": "Google News: AI",
-      "title": "The Language Of Extermination: NAZA, Artificial Intelligence And Gaza – OpEd - Eurasia Review",
-      "time": "2026-10-18T20:49:13.000Z",
-      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNNktrUG9xZTY2eExJSHktdlZFaHNvTnFjME4xTDV5ZlJ5Mzc3SGhPMmM4NldNemRQRnpTZkJQWFlEbGxFSnNWODJQQkw2ZEVHUkxwTHRKVExWcTNsRG5FT3YzeXRkd0RNYnNLZDQ5alNUMjUtaXhla0VmS3FQTktYUmVZRGlJV0xxejYzRFlJd0t6T3QwczB1dXV6UE9GZng0eWZWMjdublc0MnZnay1Kd3dn?oc=5",
-      "images": []
-    },
-    {
-      "source": "TechCrunch AI",
-      "title": "Anthropic says it’s committing 5% of its shares to a ‘public benefit fund’",
-      "time": "2026-10-18T20:37:40.000Z",
-      "url": "https://techcrunch.com/2026/10/18/anthropic-says-its-committing-5-of-its-shares-to-a-public-benefit-fund/",
-      "images": []
-    },
-    {
-      "source": "Google News: Anthropic",
-      "title": "Anthropic says it’s committing 5% of its shares to a ‘public benefit fund’ - TechCrunch",
-      "time": "2026-10-18T20:37:40.000Z",
-      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPdWNtdlhaREJOdlJaRUNUT3BxZ2tnMm5QOUpyakJFeXB5b2tsWkRvWThjbFVHblJNYUJjYW1hR181Y3RpalZqUjljcTB0dXJKTjhvTy1aSFpNUkFVSk1GTEJiS2R1UWRTVUUxVFp2c1VLd0tENnFnRTlyREprZVZIMWNJeV9mOWZ3X0hpU3pmbkc5X1B0M0xrVFd2d0ktNExwMFJuSEZJNTg?oc=5",
-      "images": []
-    },
-    {
-      "source": "Google News: OpenAI",
-      "title": "OpenAI Faces Lawsuits, Subpoenas and EU Scrutiny in a Single Week - Tech Policy Press",
-      "time": "2026-10-18T20:36:25.000Z",
-      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQcG9jcGwwNlhkSkQ4U01jYmtLbEZIQkEtbFB5OTdvNXhZV0FMRy1hVTNmdVltTTN5dWxsaVdXUHRta1J2NHRVYVpJMk9BSFV1WEJDb2FZVFR5dzh5UDlzemlveHByRG1GRXNZX1E1UllRNURkZ0Y2T0YwSUk2STAyYlp6UDZVcWl3UllwSnBuclFhM1ZvQ2l5RndR?oc=5",
-      "images": []
-    },
-    {
-      "source": "Google News: OpenAI",
-      "title": "Anthropic to Place 5% of Its Stock in a New Public Benefit Fund, Subject to Shareholder Approval - BigGo Finance",
-      "time": "2026-10-18T20:35:00.000Z",
-      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE5tY0lBOGg4eS1XblNCZjFCN2NUVk4xTkpLbVJNU0t3YlZNWGVYcEkwV2oteFBIeExlN285VF9MOUtWbC1Dd1dJSTlwQkNQTVRCRDNzTXQzSWg0NkhXX093UXo3dE8xOEhPLVFCRGNGY1k3cnFqLUE?oc=5",
-      "images": []
-    },
-    {
-      "source": "Google News: AI",
-      "title": "AI Fleet Safety Cameras: The Hidden Liability Risks for Fleets - Commercial Carrier Journal",
-      "time": "2026-10-18T20:34:38.000Z",
-      "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxOZFBpOXYyQmRERkNQakdUNngyVEJ1aUlWUlpyb05RYjF0d1NKc1RHQTRRQzhhbXZXZEFwQkJhOVNHNWs1dm9td1JiMGxZWnV3RlZfUjgxZHVLZERTU05ocUpQYnFMNF9RaEpKYU1SNmdFYmQ0UGN4T0paREloUXdxUzlaMnRSM2xLSTFRWkpidE42SUlUcmFmT0tGc2k2M0VfZGxmNTRvd1FCcUNSZ2lTTUFuX3gxd1VPdjFSaS1zRGV2Y2Vnd3k3d3k4SW9MVm5wV055N25rNA?oc=5",
-      "images": []
-    },
-    {
-      "source": "Google News: Anthropic",
-      "title": "Anthropic Used Books — AI Giant’s Mysterious Bulk Book Purchases Uncovered - The Korea Daily",
-      "time": "2026-10-18T20:32:50.000Z",
-      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5VTm8weGhBQ09MUzhiLVBNUy1icEVzdE4zUVFjZVQ1NVYzN2htY0RvZGdhS1ZaNWU3LW80bGdIMk56eVQ5N05MQk5CbEs4RWpTRjRzdkdZelY2TjQ?oc=5",
-      "images": []
-    },
-    {
-      "source": "Google News: AI",
-      "title": "Data center backlash set to sway midterm elections - New Hampshire Union Leader",
-      "time": "2026-10-18T20:26:13.000Z",
-      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOQXR5MjNrSGhqOW51c2I2SURVWE1nZWJjd0hPMEFWcjFrU0pKSDIzcHY3N3czelUwOEpIMWVDTnpNRkZWa09lZWYzajBvdHZ2Q19USWNhMElpN1EzczZLVXIwTllhZUFJUVp5TjViamhkd0traUJ2akRXekRJVlpqV19CV3lVcV9MUTZ3ME15RmpNZno1MUJiY1RuNXdTT0Z6NEJydUxqbHA?oc=5",
-      "images": []
-    },
-    {
-      "source": "Google News: AI",
-      "title": "Majority of companies trapped in a ‘brand doom loop’: Is AI making the problem worse? - Digital Journal",
-      "time": "2026-10-18T20:23:06.000Z",
-      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOWllUMjFLSkhCN21XVW12bVZVcTdrWmM2SDlsWGo4UzdxaGx5OGZnRlRnZGpnQnFvS1dJWngwT2dlc3ZFTHZMc255WktYa2NRWjdKMXRGV0RvOC1fRllYdVlqME0xTFRZUFlBeHRYM21wZlFjSDJhOFhUVXB3dHktUkhUTFNkR1NQWV9McnZDSXZ6ZEZoY0o4WWNzbVY5U1JUZ0x3Rk9XVUxna09JbTE1ajlQRk5zQ0NlMHJYUDdB?oc=5",
-      "images": []
-    },
-    {
-      "source": "Google News: AI",
-      "title": "AI Agents Trading Stocks While You Sleep? Charles Schwab’s CEO Is Skeptical - WSJ",
-      "time": "2026-10-18T20:23:00.000Z",
-      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOLUJFUjM3bVJWWGlGRXJPUllTcTJkMXlfSEY0UkRRanlKNkxuR18ySW9QU3ZxbDJZWnEwalh0YWZRNEtXeTdtTzYwSzVTSGFxbzdjSnNIdGd1QVZWQ09lbnFmN21QNWhDTXFuSmlKazZOczJBNXBlT1p0NHhtWTA1a09fZnp0N3BJWjFmQjl6ZlZrWnhpbEdIWFBoOUMtVTJCR2tERGc0YUFBbk1nNkJj?oc=5",
-      "images": []
-    },
-    {
-      "source": "Google News: Gemini",
-      "title": "Raya on win, clean sheet and recent response - Arsenal.com",
-      "time": "2026-10-18T20:21:22.000Z",
-      "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQQlFkTmVmVENERHR3NzBhRXhxb2Q5WU1YTEU0UV9RNDV0aVRFeVhLX1R2anE0b09RUGZ3blp4M09kT2Qxbkc1UURpU1lGbVptX3BLREVrWFBNbTUyRmRpeGNYenY4YmFZc05GLXA1alc1X1RCSVNFSU96MWVPdEt4YWFhYUJMclI4WEZ6RzZ3cw?oc=5",
-      "images": []
-    },
-    {
-      "source": "Google News: AI",
-      "title": "The AI industry’s gigantic debts are making investors nervous - The Economist",
-      "time": "2026-10-18T20:19:28.000Z",
-      "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOQjBPZ04tUnFocVdZQlM2dkF6N3hkVk9wTDB3SWVfbHo2ZFNvcnQtanBIX2JIVVg5UXpEZGVlRDIycFFmZmlUMHdjaFlwUzNOclNlUEdzaUtQMHNPY3FkdFZQUFIyclZCQURIN09YZHlWUUdmYkhYY3B6WDlEQ2ZqbEdaai1BNUQzX3VwNC02a01abVRPWmZwdWQyMUdjbzZiaHNDVmFuMWJhZw?oc=5",
-      "images": []
-    },
-    {
-      "source": "Google News: Gemini",
-      "title": "Arteta on fighting for three points at Forest - Arsenal.com",
-      "time": "2026-10-18T20:19:18.000Z",
-      "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxOcWpEY2NvMVBjbkF5eGp5OWpGajJieWxuUzMxdTRYYmZfUzZydGJyN1dpRk56M1dKak16UFRGMVE4ZkRCdThvbjVTYUhYNlp3SGVjMmdpd3E4c1R5N1BUbzZEdWZUd3FXNFB3M3JEcFZCRDk4QXNYbzQwWVptNzdMWkR5MnA3MXJTRERMRGR3Z2s4Zw?oc=5",
-      "images": []
-    },
-    {
-      "source": "Google News: Anthropic",
-      "title": "Anthropic’s public benefit plan: What its 5% share commitment means for AI’s future - WION",
-      "time": "2026-10-18T20:19:00.000Z",
-      "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxQMWdra0ZqeXlxRzU3REpseVRkeHJQOWFlTk13SFI0d1oxbFptNmxnYzg0dXljQTdsemNxbTlIVnJEcDNJU2FkLVQ4MkUyTXlESGFKZnNNbWZBbmEwdGxhWmR3MmhpNUF4V040YXJ2ZXNMQk9mNFBzQ0ZnMUx3NWpCY0tVWlJ0dlJiemNSYndKeUVoczJvaWZWRVV0ZHpCQk1Xb2JTSC1qTHR5RnhZT09XSkVPRW5pVFFkWGtGYmZyUjJpNHN3OW52bW130gHPAUFVX3lxTFByZXd0THRxeFpsUjhmdUp3alpIM0VkNGtYQTlPd2p5c0JDSWJ3cmk5WURzc0xsRmd6ZEI0bTd1ZjV0NE0yQVZEMklYdFhSSU9USlJfd203Mm93OElRaFhzNVVaamZxVFctUU9KV1FrYzVtRGc3UFNBSTVhbnRDbUs3MzZfNHlrQW5Bemc1SlVjcXlhU184TEVYU2UxbkZBVmVHOEdVSUR1dnVLNml3WlBzR1gxLXltcTJ3TFpyQWMwYVZWaW9YRzY4MVNqOVVqRQ?oc=5",
-      "images": []
-    },
-    {
-      "source": "Google News: OpenAI",
-      "title": "Another OpenAI Safety Researcher Calls It Quits. So What Does It Say About The Safety Architecture Inside Frontier AI Companies? - Inventiva",
-      "time": "2026-10-18T20:16:27.000Z",
-      "url": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxNV25MNmgyQXNuYWh4MndyTi1CbERxLWJIMlpJcEdFS2FnM3lvY3dQLV9IX3dweVQ4TlJkWnRld0g0dkdBZ0VWUW5HM1JsNkpGOWZ5SGZ1Yk55VlNEbHRONklNZ3BIX0xpQVhvYkRtSDNqWDY2dldOUGlBdV9UdWl4d0MzdDNiVW9yVnZQemo2bTJmZzhOeWRRLUp5X1p3c1JjaVkzWkhLc093Sm95WVNRZmEyUlU5SFNVMUFHT1JJbEZRUkZRSEpjTm9rVVY1UDg1aGtOZ2hzSlhTcUtJV0VwZUEzVUlwbnlFdFZhSTBBMV9xWnBw?oc=5",
-      "images": []
-    },
-    {
-      "source": "Google News: OpenAI",
-      "title": "Enlighten Designs named OpenAI Select Partner in NZ - IT Brief New Zealand",
-      "time": "2026-10-18T20:15:00.000Z",
-      "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNWW9BakFpLXZkSEFMYWxTWC00TmFCSklZMUd4WmdSODFwc292YVNfMkZCbXpXQlVFODNUSlEwLUt4UWE1YnZWam16TGhvb2xKMmdfNTN3U2lteFEzRlAyb205RU1rWjZNU0VIRk9HbnBNQkliNUFSSDhsM2otVjNfVWw3MmFOZw?oc=5",
-      "images": []
-    },
-    {
-      "source": "Google News: Anthropic",
-      "title": "Anthropic pledges 5% of shares to new public benefit fund - Anadolu Ajansı",
-      "time": "2026-10-18T20:11:11.000Z",
-      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNVzhnVFVDZVk3Q01HWUE0Q2E0aUFGRm1lSjB1VDdlUzBJeVNWeEtrVTVVN0FvYU9keXBDNmNNNGllMzRhdDBkM2QzdkVPRjRGLTlfWENIdGd3cVZXLVJqZnpZcG5LcV9jeTByMUp5TTc2TjB3aVdqaWlQRHBacjNocGN6b1hEUDVJMWp0YjEtOXdQR1YyWTA1WDdSRGVpUFZBWl9Xc2NkTQ?oc=5",
-      "images": []
-    },
-    {
-      "source": "Google News: Anthropic",
-      "title": "Anthropic to Shift Some Shares Into New ‘Public Good’ Fund - Yahoo Finance",
-      "time": "2026-10-18T19:56:36.000Z",
-      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNcklNaTdrWjZiZkR4WUpVOHdtRjhiaHkzYl9weXp3MEZMUWMwZkZsQ2IzWWVZOGI3cFJrcE55UENEcF83NWNsMGwxUFFoOElzbmhkeWQyZmtwWk9sQWI0X0k0UGF1VGdkcFJJcjhndkkzRXprd3h1Y2pCOEZLOTJ0QWpUNmZrc1FieFdZY3dGTzBHSHpENzN3UUNOMFRlSVk?oc=5",
-      "images": []
-    },
-    {
-      "source": "Google News: Anthropic",
-      "title": "Anthropic Plans to Shift Some Shares Into New ‘Public Good’ Fund - Bloomberg.com",
-      "time": "2026-10-18T19:56:36.000Z",
-      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxORmMyNWxod0hjdmwxeU0tdEk1dGpOSXdfSVdrLXdIVjB2LVR5YlpmZFhMZnlYcDNRNV9zRTcxY3piNFAzZm5mMThxeXJmVW5rMHFUSkpkQjc2NkJNWG0zUHE4RUNuV2w0RGFTQXlVQ0RtQ2VJbVdfVjE2Nmg4aDdFYXBVZGlhVzRmV3U4bXQzMHgtR1hqcl94YnRJNTVqRjVsT1h0SjJvVDUtZTdDSHJwWWxHbw?oc=5",
-      "images": []
-    },
-    {
-      "source": "Google News: AI",
-      "title": "Anthropic Plans to Shift Some Shares Into New ‘Public Good’ Fund - Bloomberg.com",
-      "time": "2026-10-18T19:56:36.000Z",
-      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxORmMyNWxod0hjdmwxeU0tdEk1dGpOSXdfSVdrLXdIVjB2LVR5YlpmZFhMZnlYcDNRNV9zRTcxY3piNFAzZm5mMThxeXJmVW5rMHFUSkpkQjc2NkJNWG0zUHE4RUNuV2w0RGFTQXlVQ0RtQ2VJbVdfVjE2Nmg4aDdFYXBVZGlhVzRmV3U4bXQzMHgtR1hqcl94YnRJNTVqRjVsT1h0SjJvVDUtZTdDSHJwWWxHbw?oc=5",
-      "images": []
-    },
-    {
-      "source": "Google News: Gemini",
-      "title": "Copilot vs Gemini vs Meta AI: Gemini Wins 9.1M Users [2026] - tech-insider.org",
-      "time": "2026-10-18T19:48:41.000Z",
-      "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE1adFN6VW9BX0pxNGk1d0NJdXhpSWV4NldmaHNzUWN3WGlNX3Vyc3FEc2VZUDBTZ0RBQWFWXzFXbkV5ZXhCV2lzTjhwTXNaWDZpZl80aDVYSHlhVXlqV1EzX2pQU01jX2lsSXR3RnVaU1kzdnFzb2tyX29CbmU?oc=5",
-      "images": []
-    },
-    {
-      "source": "Google News: Anthropic",
-      "title": "RJ Says Future Rivians Will Run AI Agents From Companies Like Anthropic - RivianTrackr",
-      "time": "2026-10-18T19:48:38.000Z",
-      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBnWFg5TUlfQXBIZjZwLXN2bzJJeC1nS3VBdXMyX3FzOFZFaGF5ZDN2bjg2NWtVVGVPMUVLaUZqVFh6ZXI5aGtydXkxcXFoWHZqWHVjM2V3a0tfZ09qZTVwN2NzWmlmU3dD?oc=5",
-      "images": []
-    },
-    {
-      "source": "Google News: AI",
-      "title": "Is AI coming for your money—or all money? - The Star Democrat",
-      "time": "2026-10-18T19:47:00.000Z",
-      "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxOQUxwVGctOWFDbGxuWHBNS0xDcnZKWHpYNjl2QnVVeXNObDRELXhlRFB0ZWtBZERPejFXU3NDSEpDc0ZrV3RLVC1YQTFlQ2p6RGk1clgyb2k3TmRwOVBtM1RENmFCRTZmckU3Q1N6b2ZIS1JOLWRPZDVlVkpqclN4TEI0bXR6TDBtY1JLWDJNX2NpQTZ5MFZ4MUxhNGctUWZjS1BEYkYwUXQ5aW5kMnVXakJmNFhJeGJXWjhWZWRlSy05dUdZUG9z?oc=5",
-      "images": []
-    },
-    {
-      "source": "Google News: Anthropic",
-      "title": "Pursuing mathematics in the age of AI - Deccan Herald",
-      "time": "2026-10-18T19:43:06.000Z",
-      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQTGd0b0RTUlFEWUkyMEpYRlZ2cl8zSDJnWlRUVW9SYkJZdk1qbnVhNVZDRzVhQnFEUkphaUVVRW96TkRWN1ZoR0RCRThDa3hkTE5CTlNpLUthYVZGcFhIc3F3bE5Rdm14OFBKNTh5Y0JEN3RnYWgwaWdJN2FTenRIS0E3ZC1PUGxJVldpWWd0VTVmYUMtZ1ZhOGhB0gGaAUFVX3lxTFBMZ3RvRFNSUURZSTIwSlhGVnZyXzNIMmdaVFRVb1JiQll2TWpudWE1VkNHNWFCcURSSmFpRVVFb3pORFY3VmhHREJFOENreGRMTkJOU2ktS2FhVkZwWEhzcXdsTlF2bXg4UEo1OHljQkQ3dGdhaDBpZ0k3YVN6dEhLQTdkLU9QbElWV2lZZ3RVNWZhQy1nVmE4aEE?oc=5",
-      "images": []
-    },
-    {
-      "source": "Google News: AI",
-      "title": "Pursuing mathematics in the age of AI - Deccan Herald",
-      "time": "2026-10-18T19:43:06.000Z",
-      "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPS3I2X2ZyVXpzcE03eE5uYy1YZlFVdXhsOEc4RTBHREJpcmtLbkw1aUdCTmRCOUJRZWpYSW4zaWNLRTl4SHRKRDgyNE1wTmdjMmdUVDR5Z3BJQU5NNjgzUFliLWxRQjM4dVpRZFhPaTlhRlRCZi1rVnpFbHdFS2JacG1pdmFLdVdxQ3fSAZoBQVVfeXFMUExndG9EU1JRRFlJMjBKWEZWdnJfM0gyZ1pUVFVvUmJCWXZNam51YTVWQ0c1YUJxRFJKYWlFVUVvek5EVjdWaEdEQkU4Q2t4ZExOQk5TaS1LYWFWRnBYSHNxd2xOUXZteDhQSjU4eWNCRDd0Z2FoMGlnSTdhU3p0SEtBN2QtT1BsSVZXaVlndFU1ZmFDLWdWYThoQQ?oc=5",
-      "images": []
-    },
-    {
-      "source": "Google News: AI",
-      "title": "Taiwan Semiconductor Just Proved Why It's a Top AI Investment - Yahoo Finance",
-      "time": "2026-10-18T19:43:00.000Z",
-      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQa0ZGRG9wamx4dEdRSldQbFh4eGFNQ183RGtSeG9OeVA4SEkwQUtfN25BOTR4ZTR5dmdZZG8wd3JySmtBQzAyb3ZKb1dnZ3dHRnVuZ3BuRHlzbTBnNXdvdjgzc1ozQU9lU2tKTXZ0VjhJNWVXaVB3UzNZVjhkRC0tQ2VPZ2txa3c1bTF4bmN5bEx1bzhnemtWNHQ5VlVPbWdTdnc?oc=5",
-      "images": []
-    },
-    {
-      "source": "Google News: Anthropic",
-      "title": "Anthropic Commits 5% Stake to New Public Benefit Fund [2026] - https://tech-insider.org/",
-      "time": "2026-10-18T19:36:03.000Z",
-      "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNT0ExdHAxZFRYUHFzVGRFVXU3SHpOY0FZV003VU1NeU9qVk5fOXlveTFwS3hvREVpSF9pQWV0S1EwcmNHMnF1ZFFTcXRGUkpGYzNyc2FoMFN4Mm1rQUo3bGVUN2tlRFlrbUdEOFlsb0U0cWFOYjdJVmpPdXkyLTRHVFV3?oc=5",
-      "images": []
-    },
-    {
-      "source": "Google News: Anthropic",
-      "title": "An AI agent network answered a reporter’s message, claiming to be Claude - eGamers.io",
-      "time": "2026-10-18T19:31:43.000Z",
-      "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPeWRvX0tpSjQwQjZZR1o1UXNNdmZNbV8wUTMxWGt2cnhIaGtSaVRURTFtUG01bDBKWHotOUVmWUN2VTR3bFZHOVBMdHpxYl9JSUhyazAwWFJXTlhPMUkxdU1HZkVMZ05MbzVhVjVIZDVzbGZydkNXX3BqOTRsci12SnRmV1dEaTVfUWdnWk5yWDZVQmEx?oc=5",
-      "images": []
-    },
-    {
-      "source": "Google News: Anthropic",
-      "title": "Anthropic is pitching Congress its own AI safety bill, report says - Mashable SEA",
-      "time": "2026-10-18T19:22:11.000Z",
-      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQTnRnMGxEYURPbFRSWGdoaFBKQ3lubHFYZnJfajZVR2NnTzk0MUgzdGtmTjRYRzhobVRIOGU4ai1CR3BuYjRHUXNIUVhTS3AyMmRPQjUtc1g1ZDIwMUFTWkFUWmxuN0h6UzlydE5BMHBaeWl5LWlEQ09qMWNRajFvcEFpc0x4dUVTejh5ZmRab2VhV0NkekFOSC1VZGJOV1hVenZB?oc=5",
-      "images": []
-    },
-    {
-      "source": "Google News: AI",
-      "title": "Freedom to Think: European and American Perspectives on AI and Sensitive Data - Drexel",
-      "time": "2026-10-18T19:19:44.000Z",
-      "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE9VckxRRm1aU0xEdEh0TU5ZTThlc2MyT2NuZWpZQ3g4VDRLNXBLNzhhdTA3NVFUYW1NYzI4QkozNlRydVBlXzY2NkNoQmNhaF9teEYwNjZRSTZjbXVyZERhbUFzcEFNQXpSSGJZOTRVS0RRQjZ6Qm1WRm40VzBQZw?oc=5",
-      "images": []
-    },
-    {
-      "source": "Google News: Anthropic",
-      "title": "Anthropic to commit 5% stake to new public benefit fund - Devdiscourse",
-      "time": "2026-10-18T19:11:48.000Z",
-      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNRUhpTUZNT19xN2JsNmZMc29rNmRfUng4TzdUMGVSMzhEY3h4OTdZcWNDanV2TnZNUW51Y2xKWUtmdkdLdm1SWHUxVDEtVUlxRW9TOERvbklNVU1ZOGhpWmJ4RGxCOGV5bGRGT3dBWkhIQmkyZ3dKd0hVOElQTDZVakpwNEdna3c2cDVTLXdmVzllYVc1OHprdmZyOTRVN0k2eHdYOUtmdUtjUjZTaDBSTXU4Nk5fRXR30gG4AUFVX3lxTE1FSGlNRk1PX3E3Ymw2Zkxzb2s2ZF9SeDhPN1QwZVIzOERjeHg5N1lxY0NqdXZOdk1RbnVjbEpZS2Z2R0t2bVJYdTFUMS1VSXFFb1M4RG9uSU1VTVk4aGlaYnhEbEI4ZXlsZEZPd0FaSEhCaTJnd0p3SFU4SVBMNlVqSnA0R2drdzZwNVMtd2ZXOWVhVzU4emt2ZnI5NFU3STZ4d1g5S2Z1S2NSNlNoMFJNdTg2Tl9FdHc?oc=5",
-      "images": []
-    },
-    {
-      "source": "Google News: AI",
-      "title": "NMSU launches high-performance computing system for AI, water, wildfire research - Organ Mountain News",
-      "time": "2026-10-18T19:05:35.000Z",
-      "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPSmNpSDhTS3Rma2dWalFWVGYyeXB1N2tsSlVxWi1zdDFBeUdIRmo1WmhEQWZzazN5a21ULUg3Zzd4QXc5MnBKb3NYSjhvMUU5aGgxVjRpWWdZRERHZWxsYWIwYnRwSVRTNzVuY0VwcjBXTUdxbzlQYzQ1TlZLMm04SGFuVFZ1VC0xUE9SZU5nM3FFRTZpa3c?oc=5",
-      "images": []
-    },
-    {
-      "source": "Google News: AI",
-      "title": "Disappearing act | EDITORIAL CARTOON - Baltimore Sun",
-      "time": "2026-10-18T19:04:48.000Z",
-      "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTFBVU2dqRklMb1BhUzJQRUxRcU5MejJiR0ZiRi1wZGxIdjl5RHFEVHR3U2VIeDc3YVo0WF9pZElEbWFYN21iLXE5dHZndEt2c3Z6RmpuVEdqZUxMN2J5R2ljZmNtYWkyLXNWdTZyNFc1UW12RlJC?oc=5",
-      "images": []
-    },
-    {
-      "source": "Google News: AI",
-      "title": "AI can find serious vulnerabilities at unprecedented speed. Can defenders keep up? - IBM",
-      "time": "2026-10-18T19:03:35.000Z",
-      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTFB3UUtvRnJ0UGZuaHgxQ01nM1hndGo3UnM3X0dkZUtLY1BSVHhVOUctOEJjM1F5MmY4Mm9oa0RuRFBlbFRxeHNMNDA2RFpRWW5lckkyYzlpbUs3RFNaUFBpdGxlbmhYaTFubWZwTQ?oc=5",
-      "images": []
-    },
-    {
-      "source": "Google News: Anthropic",
-      "title": "Anthropic Pledges $48 Billion in Stock Before Its IPO: What Does It Mean for Buyers? - Yahoo Finance",
-      "time": "2026-10-18T19:01:32.000Z",
-      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOeHlIaTViYlFxTFlRbWpjZ2oxTTVKTUlvREYzZG1Mb0s1YUVwWEx0bzJWZXZhSnFHQjd5TTJDZURVR3FCZE44ZGRidEc3cC1pdFhzNm5zWVl1bHJhMDRiQ0xRU18xR1pPZ190ZEsxRVR0MUFoQWMyQk4zSkNJNnNXNXZwN3dlWVZrSFVQR2RFM21qajcyeVZaTWRBS1ZMNFU?oc=5",
-      "images": []
-    },
-    {
-      "source": "Google News: Anthropic",
-      "title": "This free, open-source tool beats Claude Code, Codex, and Antigravity at their own game, and I'm not looking back - MakeUseOf",
-      "time": "2026-10-18T19:00:17.000Z",
-      "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPWWEzMmU1emhNU3NOS3hLdE1QWVFJYkIzZGIzS3JRUGdTMjBvRFk4Q2NCWTNScDlvOWVDUjJQQ0FPZlFleDdDNG0tUzNabXB0OHV4OXRKa3lxRjNuRUxrZWdjeTJoVW9xRWIydEtWc1ZXUERVVHM1cS1CbUhGZGVPdWdnbWFHOUFGZURDbjhFZlowTmZocGxlQ3VkRUI?oc=5",
-      "images": []
-    },
-    {
-      "source": "Google News: Gemini",
-      "title": "6 simple Google Keep tweaks that made my notes easier to find every single day - Android Police",
-      "time": "2026-10-18T19:00:13.000Z",
-      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNOGtfamJ5SUFUSGtGNTA4UDlKUFBNTUtibUx3ZHVTQzZmbUgzSmVUWU1NR1NlQ21pODFYVkdYWE9OTjg5VVZLV0VpdmpjRlRxZFpxRHZBTjd2SUNGN1poZ3ZBLWpKRFlSX1NoV1FGZzdQTzFqWnFMeXVIMnhpdlhuS0tweTY?oc=5",
-      "images": []
-    },
-    {
-      "source": "Google News: Gemini",
-      "title": "Antigravity free for 6 months for 10,000 scientists, applications open - Pasquale Pillitteri",
-      "time": "2026-10-18T18:56:56.000Z",
-      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQamZNR3lOSTJmeUQ1NlpOQXlQSDl3TE02bmxodUVBR3FOUDU2cXRMUzJCWG5QSnZySEFfeXZaZ24xYlFLdDhWZVhtQW91c1lFZWVaVmJxaXhIazFBMVp2b3kwSUdOdG1NekRvalhQbFFrTEQxTUgzWUMtVHRVbU9iR0FhM2NkVl94elhOSXQtaHdoSDJzTHA2bVEzSU0yb2Fs?oc=5",
-      "images": []
-    },
-    {
-      "source": "Google News: Anthropic",
-      "title": "Anthropic plans to set aside 5% of shares for public benefit fund before IPO (ANTHRO:Private) - Seeking Alpha",
-      "time": "2026-10-18T18:49:41.000Z",
-      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPZ3h6eXFObjFBZmV6VUZqa2pSTmtHREtvZlAtUm9GYVc0eEl3NEdkcGx5RTBIdmRxai1LUExkMnZKWjd3SkhPeUY0c3hyRzlHc181TFdUYW5Uc1Q0WTNkTmxhbzVrOEdlMkx5SWRLV1ZtSnBvdEd4ZzdEa3c4MDQ0MC0tSE82RVBXa0pmUmdqV3hsY0cwanB2N2pBMlF6RVhwbndhQ3BFLWxPR0RuRGhLc0VzUQ?oc=5",
-      "images": []
-    },
-    {
-      "source": "Google News: Anthropic",
-      "title": "Anthropic Commits Billions to a 'Public Benefit Fund' - Business Insider",
-      "time": "2026-10-18T18:46:00.000Z",
-      "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE5xRTgxZnA2bnlxbm5TdUxxMWtSc1dLRlFEaDhPRU9LMHdOUG44RlhsY0NDRklmOFVyQjBGeGYxdGgyeG9OY1YzaDQ5Q01uakpFSVB3VEFtNEVmTTZyVE9qQUxrcjdHbDVFM0lYYmpHOXRRV3Q3c0wyNg?oc=5",
-      "images": []
-    },
-    {
-      "source": "Google News: AI",
-      "title": "Peter Morici: The best antidote to AI hysteria — do nothing - TribLIVE.com",
-      "time": "2026-10-18T18:44:31.000Z",
-      "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBibE9xbGt1Um1OYmJwWGJhNUkxaGdrbUpTY0pLQ1h5SUtEbFo4dmR2SXRJRzhVbjdwTUZjem5DZVFPVDNjMmg5eEEtVEpRNm1tMm8zTEt3?oc=5",
-      "images": []
-    },
-    {
-      "source": "Google News: Anthropic",
-      "title": "Leaked AI safety bill from Anthropic only requires government intervention if 50+ injuries or $1 billion are at risk - Yahoo",
-      "time": "2026-10-18T18:44:11.000Z",
-      "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNcUEwWXdwNFhLY05zYUhwYU1wUjg5R2hCN0Mzeko4SzlyZHNvaTRBdjF0WUlhcW13b0JFbzdFWTE3WDZGZmRheklydkdEVkRPNmQtNDZZcnQ0cndUcEJVUkIzQzVNQUt0SFpyOFFvQTR5V2NGZVAtaks5N28zM3dBa0dfZXZ5WXVoUklhbDAwYkhub1M3TkE?oc=5",
-      "images": []
-    },
-    {
-      "source": "Google News: Anthropic",
-      "title": "Leaked AI safety bill from Anthropic only requires government intervention if 50+ injuries or $1 billion are at risk - PC Gamer",
-      "time": "2026-10-18T18:44:11.000Z",
-      "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxPQTJraHcxNXRFVnpkRlBhSGxWX2R6Yjd6UWZLR1hOR0JsOS1pY25ucXVTWUp1ZFBGWnhHZlR4U0FTWE9fZlhDaW9oRGx1SjBVQ2dvUVFaUmhRN0xaLVZYdG16aEwtZlR4ank0ZUMwMUpWMEs2MkN5T1pUNzF4bVpTdy04NlJwLWNxYnB4My1feHdwbXQ1dXFMeDFjdkJnU0pvT3pRT1dTRzVDSTlZMU5kdzZ6SnN3bENqZFRuWk5xSmw2bWNvOWtHVHQxY3N4R0hsTGNSUGV1QUlKSG8?oc=5",
-      "images": []
-    },
-    {
-      "source": "Google News: Gemini",
-      "title": "Xpeng to add Google Play to vehicle infotainment systems by 2027 - Driven Car Guide",
-      "time": "2026-10-18T18:41:17.000Z",
-      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNMnZPdjZQWk9ERm9oems4c2VsU2hPN18zNzlzck9pRlFabUxqdjduRUppQnZjc08xbk9hR3VMelNZNmNYRDJ2XzNwUklTSGZ0b0g5c0NVR3dPVGxhRXNEaS1NVXl0V1BQWS1vM3d5YW1yY085cGtCdkFNWnVtTjBLNGFJSzhCTlRrY2lGUUdKdU1wMjV0akZsOFc1WnpuVzJTcnJvTzNn?oc=5",
-      "images": []
-    },
-    {
-      "source": "Google News: Anthropic",
-      "title": "Anthropic Warns Small AI Models Could Learn to Self-Replicate by the End of 2026 - eGamers.io",
-      "time": "2026-10-18T18:31:40.000Z",
-      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQaHhYQ0lBSXBwSHN6XzZKcnJPdERJOFQ0R1QzMHNTYlN5X2Q1RWQ5d3c0cVdiSGNQU1pXZmh6c1A1bjdQb3lJSTk3VXItSWJNRVc4ZVkzelQ3SklCeWJiVEdBUTFSc0NWSnF3ZWtIM2ZvdjZ2alZ3eUg3cHQ0Q3lScl9KZEhlSTZjU3dHX0c5cFJvZTJ3SjV6NVBNdUR1d2FWMEE?oc=5",
-      "images": []
-    },
-    {
-      "source": "The Verge AI",
-      "title": "A woman was arrested in Philly for blocking a delivery robot",
-      "time": "2026-10-18T18:28:10.000Z",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/1013541/a-woman-was-arrested-in-philly-for-blocking-a-delivery-robot",
-      "images": []
-    },
-    {
-      "source": "Google News: Anthropic",
-      "title": "Anthropic Commits 5% of Its Shares to New Public Benefit Fund - Unite.AI",
-      "time": "2026-10-18T18:23:10.000Z",
-      "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQOTBIb0xWNzVnc2dpM3NoZlJ6VWMzSXNiN1ViWEZxTzB3c1ZJNEVDNkFJcVlWODZBbEJTOVV3cmhRdUZNakJmN0d6V1l4SzJlOEI3TmpvWUVzWE1uRjJ4R3E4eWRlMmxLY09MS0JnWlBXZkZZWlExYUJwVXhfSkFxNkI2TkF1TlEtdkE?oc=5",
-      "images": []
-    },
-    {
-      "source": "Google News: Anthropic",
-      "title": "AI rapidly improving, could vastly boost US GDP, Anthropic's Clark tells policymakers - The Express Tribune",
-      "time": "2026-10-18T18:22:05.000Z",
-      "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxORXNpSWZJNEdxcWd5WE9xQXB3YlFHQkV2MDZkVExKQmVyY3pwbExoT3AxRDdrVEFxYUU0cU00M2JsWC1WOHpBMXBLWHJUWGsxd1dDSTg5dHIyUHZQVm1TdVpSWk5xU0F5RzhpclNBbWtqYnpLSVgybmVBcVBScWxUNGQ1eS1jYnRiVWFJcV9ZMnRCVFNRVTZpQTFLWnFNc0d6YnhjcmdOWmdKM2dIeXh3UDFRWnBTWEFTN1M0aXJrQm01QVHSAcMBQVVfeXFMTkVzaUlmSTRHcXFneVhPcUFwd2JRR0JFdjA2ZFRMSkJlcmN6cGxMaE9wMUQ3a1RBcWFFNHFNNDNibFgtVjh6QTFwS1hyVFhrMXdXQ0k4OXRyMlB2UFZtU3VaUlpOcVNBeUc4aXJTQW1ramJ6S0lYMm5lQXFQUnFsVDRkNXktY2J0YlVhSXFfWTJ0QlRTUVU2aUExS1pxTXNHemJ4Y3JnTlpnSjNnSHl4d1AxUVpwU1hBUzdTNGlya0JtNUFR?oc=5",
-      "images": []
-    },
-    {
-      "source": "Google News: Gemini",
-      "title": "Geely to integrate Google and Gemini services into its cars - Наша Ніва",
-      "time": "2026-10-18T18:21:35.000Z",
-      "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE9lSHdNSXVwc1Q2OGZveHFBYkRNSGlwYW8zVl9pMzNINDN3T2pYN2pfeXg2c0tfeTE0NjZWQjJXWnNoSURYMU9PcE83Y9IBS0FVX3lxTE9lSHdNSXVwc1Q2OGZveHFBYkRNSGlwYW8zVl9pMzNINDN3T2pYN2pfeXg2c0tfeTE0NjZWQjJXWnNoSURYMU9PcE83Yw?oc=5",
-      "images": []
-    },
-    {
-      "source": "Google News: AI",
-      "title": "TinyFish Makes Search Free: What It Really Costs an AI Agent to Read the Web - MarkTechPost",
-      "time": "2026-10-18T18:20:28.000Z",
-      "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNOHozdng4eFUwVzFzZmRpMXZQMlhaSkdneXQxUHNxbGZOOTR3MVUzMjVlSjV1bmowblZZcUc4a24waHdETnB1NFJZRjZYMnQ5VnZDZFdzN2FfSW5nSWJTazdHR2pvWDZqS2dVZjlpSWoxYU5Xb0FyR1FjdEU1cDJDYlNSV0tGeEV1MWlQbGFKYVXSAZABQVVfeXFMTTh6M3Z4OHhVMFcxc2ZkaTF2UDJYWkpHZ3l0MVBzcWxmTjk0dzFVMzI1ZUo1dW5qMG5WWXFHOGtuMGh3RE5wdTRSWUY2WDJ0OVZ2Q2RXczdhX0luZ0liU2s3R0dqb1g2aktnVWY5aUlqMWFOV29BckdRY3RFNXAyQ2JTUldLRnhFdTFpUGxhSmFV?oc=5",
-      "images": []
-    },
-    {
-      "source": "Google News: Anthropic",
-      "title": "Anthropic to commit 5% stake to new public benefit fund - CNA",
-      "time": "2026-10-18T18:18:33.000Z",
-      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxQQnJXNGM5b2FVT2RoNDNmZkRkcUZhZzcwVjhmc3lfN3FGdXRxX3ZBOW5GeW9tcUxTSFJ3WFNfM0NqcGxHUl9rTFpXdnNLaVVyLS1JQUxoZllpdTE3QzZoY3FnSGh3VXhhT1FIY3laMDNUTVJKUlNYZTlPRVVXNFZwcmFlZzlFTENXbW1JUzdPS0JDYjU2QkZyOE94TjByUQ?oc=5",
-      "images": []
-    },
-    {
-      "source": "Google News: AI",
-      "title": "Faculty Senate Discusses Curriculum, AI and Meeting Modality - PantherNOW",
-      "time": "2026-10-18T18:14:13.000Z",
-      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPQ3Fqc21PUUx0bjNjcFBsck5ZQ1c3TUlRODgwb2M3SjZiZW1CRVFZbHFLZkVjSzVVRjJIQl9TdVBsRXJfaDI3MFhUTGl2cHgyZ21tZEhkNjBlMjBWWXVMdDlRZ0hjdUFUQTdTZ09Kbi00eUpOWjNIb0JsOFlyd3BYSXllMXBiUUVuWEp6S1B1QUJuSDRnOG5sWkpB?oc=5",
-      "images": []
-    },
-    {
-      "source": "Google News: AI",
-      "title": "Password Security in the Age of AI - Cybersecurity Insiders",
-      "time": "2026-10-18T18:13:01.000Z",
-      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5admRhMV9EenNtR0thSXBvWE9WUE9mUUh2TG1iWm80MWdPNVpoS2RXcWxjYlVCRnZsbVo3WXNIMVp6VXFEeVdUbEprRHlBVzNPTmpHVmRQRWllNUl4ZU5RcE4wcmljUGFXRXhjblM5Vng0ZkVFMzh2TzJfbkRDLW8?oc=5",
-      "images": []
-    },
-    {
-      "source": "Google News: OpenAI",
-      "title": "OpenAI testing new \"Aurora\" GPT-Image model on Arena - TestingCatalog AI News",
-      "time": "2026-10-18T18:07:51.000Z",
-      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTFA0WkZOSmJtRjRoLV9GZzFyRlloNFB3WVZlOVp4bmNZVVExSW9XNG5saTdTUGN6cnlaYjBkR0M0ZTFTUDNxS01zZXdYclVFSV93RmcwZ3Z4T2dQc1RJeC01WmVMSk1pYko1SDZieXRuVnlwcVhRZ2c?oc=5",
-      "images": []
-    },
-    {
-      "source": "Google News: OpenAI",
-      "title": "OpenAI's 'Dots' Debuts as an AI Assistant That Anticipates Needs Rather Than Waiting for Questions—Security Concerns Remain a Challenge - BigGo Finance",
-      "time": "2026-10-18T18:05:00.000Z",
-      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE9NZmxvMHBocGlCYkEyOElNOHF4Y1FySmhLcWJaTkJvYmRWRW9hZldFRmlwc3Y1emZEWjVjQ2ZaYmQxLXY1a3ZLcEs2X0tBaFl2aW9Sdkc1d1dHTVNscnFVY3dMR2tTN3RVV0NTNmtkcm1aZzJqcFE?oc=5",
-      "images": []
-    },
-    {
-      "source": "Google News: Anthropic",
-      "title": "Anthropic’s Claude AI Uncovers Origins of NSA-Provided Cryptographic Keys After 25 Years - GBHackers News",
-      "time": "2026-10-18T18:04:56.000Z",
-      "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNMVhES0NHQUV1VlZRT2RJdmsxbDFxa2ozN1ZEdWk5MHRDWm14Q0tfMnNhX0J2d2tfTDVIWi03Q1dxTzF2MGNySTJkX09jWjlLYXZUX2NzbU5NNVZZNVNIYUZoeG9BZXYxdFZGRXFUbjdseFNWR1g5UHRkUHVTX2FPUdIBhgFBVV95cUxOdllyd0Z5Z3pWeVVHTXVTZU1QS29JLUdlVjR4bll4cWNsUkU1WFdIUjFfeXk2RFByVGx0ZXBLSnh3dzhxZ1JhUElwVDFuNVk2bEY5VmwxTVJ0cDVYNVVhVFhiWWotNlVuTkNzcVpyQWFXNWdZcGhfOFEtWmQxTFRHMkFmSlVQdw?oc=5",
-      "images": []
-    },
-    {
-      "source": "Google News: Anthropic",
-      "title": "Junior Tech Hires’ Share at Anthropic Falls From 27% to 9% as AI Reshapes Work - Open Magazine",
-      "time": "2026-10-18T18:04:25.000Z",
-      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNMUZRNHV0QWlySjY3d3lEcEM5MFlOMVN0eldydkFzUEFTRWRraXV2X3cyWENlUkhHNS1hOHJlUEZfZWF2WTNaLVFjcmVZUnVZSlVJSWJvOWFSMzQ3bW5Yb0N5SHBZU1NUY1FCcmhucEJHV21xeHFFZXg0eEduUHpwUWlyLU82R1Z0bWhOWXllUVQ0VmdaWWNTelFqei1oSmlEWlJJazA1b0s4UkNpLVZOVkZ3?oc=5",
+      "title": "Artificial Intelligence and the Environment: The Ecological Cost of Data Centers Concerns Scientists - Noticias Ambientales",
+      "time": "2026-10-19T00:05:49.000Z",
+      "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxPWElEdUd1MDdXT3dXQTJURXFGUHpYV25XTzVvSUVjdnFlUWpUYWlkV3RsVXhhVXp6dlZpLWtzc05WYkhFeXRfS2wzMEt4M0RSbHRSb2pPU05fQkY5ODczN0ZvQjlURTZZVkFYckV5UVNTRWNDaHN1WG9JTm5UNEpsSmJaR2g1dzZjNm1jTWhJZWV6WjlCTjlJSGk5VjJJQ0xLVlJpb181SDNzSVZEMmMtTnktdENZS1dHLTFGV1hMcThXVjlnejU5aXpFWFdYZklaMmszVXBHSW5pRjJWdG1Gaw?oc=5",
       "images": []
     }
   ]
