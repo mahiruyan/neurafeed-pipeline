@@ -2011,5 +2011,90 @@
       }
     ],
     "requests": []
+  },
+  {
+    "run_at": "2026-10-19T12:05:32.574Z",
+    "summary": "Morning run: no open links or requests; queued 3 news jobs (Anthropic negotiation agents, OpenAI bugging suspect's Saudi royal contacts, Musk's Grok Bot credit card pledge). Today now has 7 jobs; utility post still due after 11:00 New York time.",
+    "considered": [
+      {
+        "story": "Anthropic consults law firms on AI agents that negotiate for users (FT)",
+        "source": "https://www.pymnts.com/news/artificial-intelligence/2026/anthropic-turns-to-lawyers-to-teach-ai-agents-to-negotiate/",
+        "decision": "queued",
+        "job_id": "2026-10-19-anthropic-ai-agents-haggle-lawyers",
+        "priority": 1
+      },
+      {
+        "story": "OpenAI bugging suspect was in WhatsApp contact with a Saudi royal, prosecutors say",
+        "source": "https://www.cnbc.com/2026/10/19/openai-bugging-suspect-alfozan-saudi-royal-family.html",
+        "decision": "queued",
+        "job_id": "2026-10-19-openai-bug-suspect-saudi-royal-whatsapp",
+        "priority": 1
+      },
+      {
+        "story": "Musk says SpaceX will make users whole if Grok Bot botches a purchase or leaks a card",
+        "source": "https://thenextweb.com/news/musk-grok-bot-credit-card-spacex-make-you-whole",
+        "decision": "queued",
+        "job_id": "2026-10-19-musk-grok-bot-credit-card-spacex-pays",
+        "priority": 2
+      },
+      {
+        "story": "OpenAI discloses four more rogue agent incidents (Fortune)",
+        "source": "https://fortune.com/2026/10/16/openai-discloses-four-more-rogue-incidents-involving-financial-medical-and-government-data/",
+        "decision": "covered",
+        "reason": "Already covered as 2026-10-16-openai-model-raided-test-crypto-wallet."
+      },
+      {
+        "story": "Anthropic report on fewer junior technical hires",
+        "source": "https://www.anthropic.com/research/employment-at-anthropic",
+        "decision": "covered",
+        "reason": "Already covered as 2026-10-17-anthropic-agents-outwork-staff-6-to-1."
+      },
+      {
+        "story": "Anthropic Public Benefit Fund and Musk reaction",
+        "decision": "covered",
+        "reason": "Already queued as 2026-10-18-anthropic-48-billion-public-benefit-fund and 2026-10-19-musk-anthropic-give-shares-to-public."
+      },
+      {
+        "story": "OpenCode console breach exposed AI API keys",
+        "decision": "covered",
+        "reason": "Already covered as 2026-10-18-opencode-breach-ai-api-keys."
+      },
+      {
+        "story": "ChatGPT virtual try-on for clothes",
+        "source": "https://www.techrepublic.com/article/news-chatgpt-virtual-try-on-shopping-favorites/",
+        "decision": "skipped",
+        "reason": "Launched around October 1, too old to post as news now."
+      },
+      {
+        "story": "California AG subpoenas OpenAI over rogue AI agents",
+        "source": "https://www.thestar.com.my/tech/tech-news/2026/10/02/california-attorney-general-issues-investigative-subpoena-to-openai",
+        "decision": "skipped",
+        "reason": "The subpoena dates from October 1; the leads item was a late rewrite with nothing new."
+      },
+      {
+        "story": "Microsoft cancels deal to rent 23,000 Nvidia chips at Nscale's UK data center",
+        "source": "https://www.telegraph.co.uk/business/2026/10/18/microsoft-axes-ai-deal-setback-uk-data-centre-pioneer/",
+        "decision": "skipped",
+        "reason": "UK infrastructure deal with limited interest for a US consumer audience; could not read a second source this run."
+      },
+      {
+        "story": "DeepSeek V4.1 Flash update and Search API",
+        "decision": "skipped",
+        "reason": "Incremental model update, little US mainstream interest."
+      },
+      {
+        "story": "Stripe Link data: agentic transactions up 38x in September",
+        "source": "https://www.upstartsmedia.com/p/data-stripe-link-how-ai-assistants-spend",
+        "decision": "skipped",
+        "reason": "Niche data point; kept the Grok Bot shopping story instead for today's agent shopping angle."
+      },
+      {
+        "story": "World launches World ID suite for banks",
+        "source": "https://www.theblock.co/news/ecosystems/2026-10-18-world-launches-world-id-suite-banks-418869",
+        "decision": "skipped",
+        "reason": "Crypto and banking product news, weak fit for the account."
+      }
+    ],
+    "requests": []
   }
 ]
