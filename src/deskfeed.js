@@ -46,7 +46,9 @@ function summaryOf(job) {
 }
 
 // The primary source: the first one that is not a social post, else the first.
-const primaryLink = (job) => ((job.sources || []).find((x) => !/(^|\.)(x|twitter|threads|instagram|facebook|tiktok)\.com\//i.test(x.url || '')) || job.sources?.[0])?.url;
+const SOCIAL = /(^|\.)(x|twitter|threads|instagram|facebook|tiktok)\.(com|net)$/i;
+const hostOf = (u) => { try { return new URL(u).hostname; } catch { return ''; } };
+const primaryLink = (job) => ((job.sources || []).find((x) => !SOCIAL.test(hostOf(x.url))) || job.sources?.[0])?.url;
 
 function deskItems(now = Date.now()) {
   const items = [];
