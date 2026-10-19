@@ -17,9 +17,7 @@ function validateReel(job, fileId) {
   if (!job.video || !job.video.url) p.push('video.url is required');
   if (!job.hook) p.push('hook is required');
   if (!job.caption) p.push('caption is required');
-  // A single post made from a picture Mahir sent (inbox/uploads/...) is his own content: no outside source needed.
-  const ownPicture = single && /^inbox\/uploads\//.test(job.slides?.[0]?.image?.url || '');
-  if (!ownPicture && (!Array.isArray(job.sources) || job.sources.length < 1)) p.push('at least one source is required');
+  if (!Array.isArray(job.sources) || job.sources.length < 1) p.push('at least one source is required');
   if (typeof job.sensitive !== 'boolean') p.push('sensitive must be true or false');
   if (DASHES.test([job.hook, job.caption, job.credit].join('\n'))) p.push('text contains an en dash or em dash');
   if (!/(Source|Credit|Video):/i.test(job.caption || '')) p.push('caption must end with "Source:" or "Video:" and the original creator');
