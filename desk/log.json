@@ -2292,5 +2292,69 @@
       }
     ],
     "requests": []
+  },
+  {
+    "run_at": "2026-10-19T20:00:01.264Z",
+    "summary": "Late afternoon run (16:00 New York): no open links or requests; nothing queued because today already has 8 news jobs (the cap) plus 2 link Reels, and no new priority 1 story broke since the last run.",
+    "considered": [
+      {
+        "story": "Nvidia launches Nemotron 3.5 Super VL and Bolt open models for agents on PCs and in the enterprise (TechCrunch)",
+        "source": "https://aibusiness.com/generative-ai/open-source-on-device-strategy-behind-nvidia-s-new-ai-models",
+        "decision": "skipped",
+        "reason": "The models came out October 16, so it is several days old and developer focused; already skipped at noon."
+      },
+      {
+        "story": "Claude sent a false homicide tip to Philadelphia police (Fox News)",
+        "decision": "covered",
+        "reason": "Already covered as 2026-10-12-anthropic-claude-false-police-tip; today's piece is a re-run of the October 10 story."
+      },
+      {
+        "story": "Ex-OpenAI engineer in bugging case had Saudi government support, prosecutors say (BBC, Reuters, FT)",
+        "decision": "covered",
+        "reason": "Already posted today as 2026-10-19-openai-bug-suspect-saudi-royal-whatsapp."
+      },
+      {
+        "story": "Hacker used AI agents to break into John Deere, SharkNinja and 100+ sites (The Verge)",
+        "decision": "covered",
+        "reason": "Already queued as 2026-10-19-ai-agents-hacked-100-sites-50-each."
+      },
+      {
+        "story": "Senate staff get access to Anthropic's Claude (Bloomberg Government)",
+        "source": "https://news.bgov.com/bloomberg-government-news/senate-staff-clamor-for-access-to-anthropics-claude-chatbot",
+        "decision": "skipped",
+        "reason": "Paywalled government trade report with no second source found, and today is at the 8 job cap."
+      },
+      {
+        "story": "Anthropic, Google and OpenAI prepare new AI models (The Information via Investing.com)",
+        "decision": "skipped",
+        "reason": "Unconfirmed report about unreleased models; better to cover the launches when they happen."
+      },
+      {
+        "story": "WhatsApp help pages leaked hidden instructions for a Meta chatbot (Wired)",
+        "decision": "skipped",
+        "reason": "Niche prompt leak, not a must post priority 1 story, and today is at the cap."
+      },
+      {
+        "story": "People are using AI to make their smart TVs dumb again (TechCrunch)",
+        "decision": "skipped",
+        "reason": "Good list idea with no deadline; today is at the cap, so leave it for a later day."
+      },
+      {
+        "story": "AI lab offers free plumbing and HVAC repairs to record robot training video (Tom's Hardware)",
+        "decision": "skipped",
+        "reason": "Fun priority 2 story but no slot left under today's cap."
+      },
+      {
+        "story": "Claude Personal Finance leak suggests bank account links via Plaid",
+        "decision": "skipped",
+        "reason": "Unconfirmed leak and the report could not be opened."
+      },
+      {
+        "story": "Anthropic's proposed safety bill kicks in only at 50 deaths or $1 billion in damage (Yahoo, AOL)",
+        "decision": "covered",
+        "reason": "Already covered as 2026-10-17-anthropic-pitches-own-ai-safety-bill."
+      }
+    ],
+    "requests": []
   }
 ]
