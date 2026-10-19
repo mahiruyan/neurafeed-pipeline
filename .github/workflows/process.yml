@@ -63,6 +63,8 @@ jobs:
         run: |
           if [ -z "$MEDIA_REPO_TOKEN" ]; then echo "::warning::MEDIA_REPO_TOKEN missing, images not published"; exit 0; fi
           git clone --depth 1 "https://mahiruyan:${MEDIA_REPO_TOKEN}@github.com/mahiruyan/neurafeed-media.git" media
+          # The desk's verified stories as RSS for the website's draft worker (GitHub Pages).
+          node src/deskfeed.js media/feed/desk.xml || echo "::warning::desk feed not updated"
           added=0
           for d in out/*/; do
             id=$(basename "$d")
@@ -75,6 +77,7 @@ jobs:
           cd media
           git add -A
           added=$(git diff --cached --name-only | cut -d/ -f1 | sort -u | wc -l)
+          git diff --cached --quiet -- feed || echo "::notice::desk feed updated"
           if [ "$added" -gt 0 ]; then
             git config user.name "neurafeed-bot"
             git config user.email "neurafeed-bot@users.noreply.github.com"
