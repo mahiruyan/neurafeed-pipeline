@@ -2477,5 +2477,74 @@
       }
     ],
     "requests": []
+  },
+  {
+    "run_at": "2026-10-20T02:02:08.605Z",
+    "summary": "22:00 New York run: no open links or requests (the two old open links were already reported as skipped); Oct 19 is at the 8 post cap, so queued one evergreen Claude story for tomorrow: Zillow's new Claude connector (priority 2).",
+    "considered": [
+      {
+        "story": "Zillow launches a Claude connector for home search, tours, agents and financing",
+        "source": "https://zillow.mediaroom.com/2026-10-19-Zillow-brings-specialized-housing-intelligence-to-Claude,-with-a-path-to-tours,-agents-and-financing",
+        "decision": "queued",
+        "job_id": "2026-10-20-zillow-house-hunting-inside-claude",
+        "priority": 2
+      },
+      {
+        "story": "GPT-6 Astra Pro in ChatGPT gets parallel agents and faster responses",
+        "source": "https://x.com/OpenAI/status/2111192259073094035",
+        "decision": "skipped",
+        "reason": "Posted by OpenAI on October 16, so it is days old, and it only reaches the Pro plan."
+      },
+      {
+        "story": "OpenAI 'aurora' image models spotted in the API and Arena",
+        "source": "https://www.testingcatalog.com/openai-possibly-testing-gpt-image-3/",
+        "decision": "skipped",
+        "reason": "Still an unconfirmed leak with no word from OpenAI."
+      },
+      {
+        "story": "AI wearables tested against state wiretap laws (CNBC)",
+        "source": "https://www.cnbc.com/2026/10/18/ai-wearables-privacy-wiretap-laws.html",
+        "decision": "skipped",
+        "reason": "Legal analysis from October 18 with no new event."
+      },
+      {
+        "story": "Accused OpenAI spy had a folder called Saudi Gov Docs (Ars Technica)",
+        "source": "https://arstechnica.com/tech-policy/2026/10/accused-openai-spy-had-folder-called-saudi-gov-docs-fbi-says/",
+        "decision": "covered",
+        "reason": "Already posted today as 2026-10-19-openai-bug-suspect-saudi-royal-whatsapp."
+      },
+      {
+        "story": "Anthropic employees on babysitting Claudes (Fortune, Fast Company)",
+        "decision": "covered",
+        "reason": "Same Anthropic research already posted as 2026-10-17-anthropic-agents-outwork-staff-6-to-1."
+      },
+      {
+        "story": "Canadian news publishers sue Anthropic in Ontario (CBC)",
+        "decision": "skipped",
+        "reason": "Still no second source confirming a fresh filing, and it is a Canadian legal story with less US interest."
+      },
+      {
+        "story": "Amazon launches TorchNeuron dev tool to take on Nvidia (TechCrunch)",
+        "source": "https://techcrunch.com/2026/10/19/amazon-is-taking-its-biggest-shot-at-nvidia-yet-with-new-torchneuron-dev-tool/",
+        "decision": "skipped",
+        "reason": "Developer tooling story with limited consumer appeal; timely and would expire before tomorrow's first window."
+      },
+      {
+        "story": "Tenstorrent hits a $6.2 billion valuation (TechCrunch)",
+        "decision": "skipped",
+        "reason": "Chip funding round with little broad US interest; already skipped earlier today."
+      },
+      {
+        "story": "Inception Labs releases Mercury 3 diffusion model",
+        "decision": "skipped",
+        "reason": "Niche developer model launch."
+      },
+      {
+        "story": "Meta Prometheus supercluster toward 1 million GPUs",
+        "decision": "covered",
+        "reason": "Already queued as 2026-10-20-meta-prometheus-million-gpus."
+      }
+    ],
+    "requests": []
   }
 ]

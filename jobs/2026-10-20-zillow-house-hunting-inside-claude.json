@@ -1,0 +1,69 @@
+{
+  "id": "2026-10-20-zillow-house-hunting-inside-claude",
+  "created_at": "2026-10-20T02:10:00Z",
+  "story_time": "2026-10-19T13:00:00Z",
+  "timely": false,
+  "sensitive": false,
+  "priority": 2,
+  "sources": [
+    { "name": "Zillow (press release)", "url": "https://zillow.mediaroom.com/2026-10-19-Zillow-brings-specialized-housing-intelligence-to-Claude,-with-a-path-to-tours,-agents-and-financing" },
+    { "name": "Technobezz", "url": "https://www.technobezz.com/news/zillow-brings-home-search-tools-claude" },
+    { "name": "Unite.AI", "url": "https://www.unite.ai/zillow-launches-claude-connector-for-listings-tours-and-financing/" },
+    { "name": "Zillow help page", "url": "https://www.zillow.com/connect-claude-to-zillow/" }
+  ],
+  "caption": "Zillow launched a connector for Claude on October 19.\nSearch homes for sale or rent, check home values and estimate what you can afford, right in the chat.\nYou can also request a tour, reach an agent or explore financing.\n\nWould you let an AI help you find your next home?\n\nFollow @neurafeed.ai for daily AI news.\n\nSource: Zillow · Photo: Zillow",
+  "slides": [
+    { "kind": "cover",
+      "headline": "You can now hunt for your next home without leaving Claude. *Zillow just moved in*",
+      "image": {
+        "url": "https://www.unite.ai/wp-content/uploads/2026/10/zillow-launches-claude-connector-listings-tours-financing.jpg",
+        "credit": "Unite.AI",
+        "fallback_urls": ["https://mmx.prnewswire.com/media/MS2016287/Zillow-Claude-connector-For-Sale-Prompt.jpg?id=OA3027249&p=thumbnail"],
+        "generate": "Vertical photo at dusk of a young couple seen from behind, standing on the sidewalk in the right two thirds of the frame, looking up at a modern two story suburban house with warm lights glowing in its windows. The woman holds up a smartphone whose screen shows a soft orange chat interface like the one in the first image, with the warm orange color of the asterisk in the second image. Plenty of headroom above the house and the people, deep blue evening sky. The left third of the frame is empty dark background: dark trees and shadow. The bottom third is the dark sidewalk and lawn. Blank surfaces, no readable text or labels on any object, no letters, no logos, no house numbers, no watermarks. Photorealistic, high contrast, one clear subject. It must look like an unedited real photo from a news agency, not a painting, not digital art, no glow effects.",
+        "refs": [
+          "https://mmx.prnewswire.com/media/MS2016287/Zillow-Claude-connector-For-Sale-Prompt.jpg?id=OA3027249",
+          "assets/logos/claude.png"
+        ]
+      },
+      "pos": "center 40%",
+      "badges": [
+        { "url": "assets/logos/claude.png", "shape": "free", "side": "left", "cutout": true },
+        { "url": "https://mmx.prnewswire.com/media/MS508178/Zillow-v2-Logo.jpg?id=OA3027243", "fit": "contain" }
+      ],
+      "badge_side": "right",
+      "badge_border": "white" },
+    { "kind": "card",
+      "heading": "Homes, right *in the chat*",
+      "paras": [
+        "Zillow launched a connector for Claude on October 19. It lets you search homes for sale or rent, check home values and estimate what you can afford.",
+        "Listings show up with photos, prices and interactive maps, and each one links back to Zillow."
+      ],
+      "image": { "url": "https://mmx.prnewswire.com/media/MS2016287/Zillow-Claude-connector-For-Sale-Prompt.jpg?id=OA3027249", "credit": "Zillow", "fit": "contain",
+        "fallback_urls": ["https://mmx.prnewswire.com/media/MS2016287/Zillow-Claude-connector-For-Sale-Prompt.jpg?id=OA3027249&p=thumbnail"] } },
+    { "kind": "card",
+      "heading": "Tour, agent, loan in *one chat*",
+      "paras": [
+        "From the same conversation you can request a tour, connect with a real estate agent or explore financing.",
+        "\"This connector helps Claude users take the next step through Zillow: a tour, an agent, a loan officer,\" said Josh Weisberg, Zillow's SVP of AI."
+      ],
+      "image": { "url": "https://mmx.prnewswire.com/media/MS2016288/Zillow-Claude-connector-For-Rent-Prompt.jpg?id=OA3027250", "credit": "Zillow", "fit": "contain",
+        "fallback_urls": ["https://mmx.prnewswire.com/media/MS2016288/Zillow-Claude-connector-For-Rent-Prompt.jpg?id=OA3027250&p=thumbnail"] } },
+    { "kind": "prompt",
+      "heading": "How to *turn it on*",
+      "paras": [
+        "Open Claude, go to Customize, select Connectors and connect Zillow. Then ask something specific, like this:",
+        "Rentals work too, for example apartments in Seattle under $2,500 a month."
+      ],
+      "prompt": "Find three-bedroom homes for sale in Denver under $600,000 with a garage." },
+    { "kind": "summary",
+      "heading": "The *short* version",
+      "points": [
+        "Zillow listings, home values and affordability tools now work inside Claude.",
+        "You can request tours, reach agents and explore loans from the chat.",
+        "Zillow says it does not send data to Anthropic.",
+        "Zillow already has an app in ChatGPT and a rentals experience in Gemini."
+      ] },
+    { "kind": "cta",
+      "hook": "Your AI chat is turning into a real estate agent. Follow to see which apps plug in next." }
+  ]
+}
