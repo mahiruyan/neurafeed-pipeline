@@ -252,3 +252,31 @@ test('background queue: messages are taken in order and each runs once', async (
   assert.deepEqual(requests(world).map((r) => r.text), ['one', 'two']);
   assert.deepEqual(store.get('q'), []);
 });
+
+test('next desk run is at :52 past an odd New York hour, within 2 hours', async () => {
+  const { _test } = await import(`${modFile}?v=${Math.random()}`);
+  const now = new Date('2026-10-20T03:11:00Z'); // 23:11 New York
+  const next = _test.nextDeskRun(now);
+  assert.equal(next.toISOString(), '2026-10-20T03:52:00.000Z'); // 23:52 New York
+  assert.ok(next - now <= 2 * 3600e3);
+});
+
+test('link status tells waiting, prepared, skipped and posted links apart', async () => {
+  const world = fakeWorld();
+  world.put('inbox/links.json', JSON.stringify([
+    { id: 'link-a', url: 'https://x/a', received_at: '2026-10-20T03:11:00Z', post_at: '2026-10-20T05:01:00Z' },
+    { id: 'link-b', url: 'https://x/b', received_at: '2026-10-20T03:12:00Z' },
+    { id: 'link-c', url: 'https://x/c', received_at: '2026-10-20T03:13:00Z' },
+  ]));
+  world.put('inbox/skipped.json', JSON.stringify([{ link_id: 'link-c', reason: 'Could not tell what the video shows.' }]));
+  world.put('state/summary.json', JSON.stringify({ jobs: [{ id: '2026-10-20-a-reel', status: 'pending', link_id: 'link-a', headline: 'A' }] }));
+  const { _test } = await import(`${modFile}?v=${Math.random()}`);
+  globalThis.fetch = world.fetch;
+  const out = JSON.parse(await _test.linkStatus(world.env));
+  const by = Object.fromEntries(out.links.map((l) => [l.link_id, l]));
+  assert.equal(by['link-a'].state, 'job');
+  assert.equal(by['link-a'].status, 'pending');
+  assert.equal(by['link-b'].state, 'waiting_for_desk');
+  assert.ok(by['link-b'].next_desk_run);
+  assert.equal(by['link-c'].state, 'skipped');
+});

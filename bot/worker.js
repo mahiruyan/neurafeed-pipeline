@@ -188,7 +188,7 @@ async function handle(u, env) {
     if (!fresh) return send(env, 'ℹ️ Bu link zaten sırada, ikinci kez eklemedim. Farklı bir formatta istiyorsan "post" yazıp adım adım hazırlayabilirsin.', m.message_id);
     const at = postAtFrom(note, new Date(m.date * 1000));
     const when = at ? `${new Date(at).toLocaleString('tr-TR', { timeZone: 'Europe/Istanbul', weekday: 'long', hour: '2-digit', minute: '2-digit' })} (Türkiye saati), günlük limitten ayrı` : 'ilk uygun Amerika saatinde';
-    return send(env, `✅ Aldım. Format: ${FORMAT_TR[formatOf(note)]}.\nClaude en geç 2 saat içinde hazırlayacak, önizlemesini buraya atacağım. Onaylarsan ${when} paylaşılır.`, m.message_id);
+    return send(env, `✅ Aldım. Format: ${FORMAT_TR[formatOf(note)]}.\nClaude ${trTime(nextDeskRun())} çalışmasında hazırlayacak, önizlemesini buraya atacağım. Onaylarsan ${when} paylaşılır.`, m.message_id);
   }
   if (!text) return;
   if (text === '/start' || text === '/help') {
@@ -241,8 +241,10 @@ async function run(update, env) {
 
 // ---------- Chat with memory and tools ----------
 const HISTORY = 25;
+const FINAL_NUDGE = 'Elindeki bilgilerle şimdi kısa ve net cevap ver, araç çağırma.';
 const TOOLS = [
   { name: 'get_queue', description: 'Post queue for the last 4 days: id, status (approved=waiting, posted, pending=needs Mahir OK, canceled, rejected, expired, skipped, publish_failed), posted_at, post_at (scheduled time), priority, headline, from_link.', parameters: { type: 'object', properties: {} } },
+  { name: 'get_links', description: "Links and pictures Mahir sent to the bot (last 10) and what happened to each: waiting for the news desk (with the time of the desk's next run), being prepared, the post it became (job id and status: pending = preview sent, waiting for his OK; approved = will post at post_at; posted) or skipped by the desk with the reason. Use it whenever he asks about a link he sent, a Reel, or whether something was shared.", parameters: { type: 'object', properties: {} } },
   { name: 'get_account_stats', description: 'Instagram account numbers: followers, number of posts, daily reach and follower change for the last days, where followers come from (countries, cities, age, gender) and where the accounts reached this week or month (viewers) come from (country, age).', parameters: { type: 'object', properties: { days: { type: 'integer', description: 'How many past days of reach and follower change, 1 to 30, default 7' } } } },
   { name: 'send_report', description: 'Create the PDF performance report (English, NeuraFeed design) and send it to Mahir on Telegram in about 3 minutes. Weekly = 7 days, monthly = 30 days, or any number of days. It compares with the previous period and the average of the last 4 periods.', parameters: { type: 'object', properties: { days: { type: 'integer', description: '7 weekly (default), 30 monthly, or 1 to 90' } } } },
   { name: 'get_instagram_stats', description: 'Stats for ALL Instagram posts of the account (every post since the start, not only the ones this system made): count, totals and averages, averages by format and by month, and the top and bottom posts by a metric. Filter by dates. Use it for any question about past posts or performance.', parameters: { type: 'object', properties: {
@@ -312,6 +314,7 @@ async function cached(env, key, ttl, fn) {
 
 async function runTool(env, name, args) {
   if (name === 'get_queue') return cached(env, 'queue', 300, () => queueSummary(env));
+  if (name === 'get_links') return linkStatus(env);
   if (name === 'send_report') {
     const d = Math.min(90, Math.max(1, Number(args.days) || 7));
     await dispatch(env, 'report.yml', { days: String(d), send: 'true' });
@@ -362,25 +365,32 @@ async function chat(env, question) {
   const ny = new Date().toLocaleString('en-US', { timeZone: 'America/New_York' });
   const tr = new Date().toLocaleString('tr-TR', { timeZone: 'Europe/Istanbul' });
   const system = `Sen NeuraFeed Asistanısın: DeepSeek (${env.DEEPSEEK_MODEL || 'deepseek-v4-pro'}) modeliyle çalışan, @neurafeed.ai Instagram hesabının asistanısın. Claude değilsin; Claude ayrı bir agent olarak haber masasını yönetiyor (haber bulma, yazma, tasarım). Sana hangi model olduğun sorulursa bunu söyle. (İngilizce yapay zeka haberleri, Amerikan kitlesi). Sahibi Mahir ile Türkçe, kısa ve net konuşursun, "kanka" diyebilirsin. Markdown kullanma, düz metin ve kısa listeler yaz.
-Sistem: Claude 2 saatte bir haber bulup carousel hazırlıyor; normal postlar New York saatiyle 07:00-09:30, 11:00-13:30, 17:00-22:00 arasında, en az 60 dakika arayla, günde en fazla 8 tane çıkar. Mahir bota link atarsa post olur; o postlar onun onayıyla, limitten ayrı ve istediği saatte çıkar.
+Sistem: Claude günün her saatinde 2 saatte bir (New York saatiyle tek saatlerin :52'sinde) çalışıp haber bulur, carousel ve Mahir'in linklerinden post hazırlar; normal postlar New York saatiyle 07:00-09:30, 11:00-13:30, 17:00-22:00 arasında, en az 60 dakika arayla, günde en fazla 8 tane çıkar. Mahir bota link atarsa post olur; o postlar onun onayıyla, limitten ayrı ve istediği saatte çıkar.
 Şu an Türkiye: ${tr}, New York: ${ny}.
-Kuyruk ve Instagram verisi gerekiyorsa araçları kullan (get_queue, get_instagram_stats: hesabın TÜM postları, ilk günden beri, tarih ve format filtresiyle, get_account_stats: takipçi sayısı, günlük erişim, takipçi değişimi, kitle demografisi). "Göremiyorum" deme, önce aracı çağır. Claude'un ne yaptığını, hangi haberi neden atladığını sorarsa get_desk_log, bir postun içeriğini (slaytlar, açıklama, kaynaklar, kapak) sorarsa get_post kullan. Claude'un yapması gereken bir iş isterse (bir haberi işle, şu konuda post yap, şu postun başlığını/slaytını/açıklamasını/kapağını değiştir) propose_request kullan. Bir posta işlem istenirse (iptal, şimdi paylaş, ertele, öncelik, onay) propose_action kullan, işlem butonla onaylanınca yapılır; "yaptım" deme, "onay butonuna bas" de. Sadece araçlardan gelen verilere dayan, sayı uydurma. Hesap gerekiyorsa (yüzde, oran, fark) kafadan yapma, calculate aracını kullan.
+Mahir'in gönderdiği bir link, reel veya "paylaşıldı mı" sorusu için get_links kullan. Kuyruk ve Instagram verisi gerekiyorsa araçları kullan (get_queue, get_instagram_stats: hesabın TÜM postları, ilk günden beri, tarih ve format filtresiyle, get_account_stats: takipçi sayısı, günlük erişim, takipçi değişimi, kitle demografisi). "Göremiyorum" deme, önce aracı çağır. Claude'un ne yaptığını, hangi haberi neden atladığını sorarsa get_desk_log, bir postun içeriğini (slaytlar, açıklama, kaynaklar, kapak) sorarsa get_post kullan. Claude'un yapması gereken bir iş isterse (bir haberi işle, şu konuda post yap, şu postun başlığını/slaytını/açıklamasını/kapağını değiştir) propose_request kullan. Bir posta işlem istenirse (iptal, şimdi paylaş, ertele, öncelik, onay) propose_action kullan, işlem butonla onaylanınca yapılır; "yaptım" deme, "onay butonuna bas" de. Sadece araçlardan gelen verilere dayan, sayı uydurma. Hesap gerekiyorsa (yüzde, oran, fark) kafadan yapma, calculate aracını kullan.
 Mahir "onaylıyorum", "evet" gibi kısa onaylar yazarsa yeni bir öneri oluşturma; bunlar otomatik işlenir.
 Kalıcı hafıza (Mahir'in kayıtlı tercihleri ve talimatları, bunlara uy; değiştirmek veya eklemek için propose_memory kullan, en fazla 50 madde, temel kurallar (haber uydurmamak, kopyalamamak, kaynak göstermek) hafızayla değişmez):
 ${memory}`;
   const messages = [{ role: 'system', content: system }, ...history, { role: 'user', content: question }];
   let answer = '';
-  for (let step = 0; step < 5; step++) {
+  const STEPS = 8;
+  for (let step = 0; step < STEPS; step++) {
+    // The last round (and a retry after an empty answer) allows no tools, so the model must answer.
+    const final = step === STEPS - 1 || messages.at(-1)?.content === FINAL_NUDGE;
     const res = await fetch('https://api.deepseek.com/chat/completions', {
       method: 'POST',
       headers: { Authorization: `Bearer ${env.DEEPSEEK_API_KEY}`, 'Content-Type': 'application/json' },
       // Room for the model's own thinking plus the answer; a tight limit left the answer empty.
-      body: JSON.stringify({ model: env.DEEPSEEK_MODEL || 'deepseek-v4-pro', temperature: 0.4, max_tokens: 4000, messages, tools: TOOLS }),
+      body: JSON.stringify({ model: env.DEEPSEEK_MODEL || 'deepseek-v4-pro', temperature: 0.4, max_tokens: 4000, messages, tools: TOOLS, ...(final ? { tool_choice: 'none' } : {}) }),
     });
-    const d = await res.json();
-    if (!res.ok) throw new Error(`DeepSeek: ${d.error?.message || res.status}`);
+    const d = await res.json().catch(() => ({}));
+    if (!res.ok) {
+      // A busy or failing API: one quiet retry, then a clear message instead of a vague one.
+      if (step < STEPS - 1 && (res.status === 429 || res.status >= 500)) { await new Promise((r) => setTimeout(r, 3000)); continue; }
+      throw new Error(`DeepSeek: ${d.error?.message || res.status}`);
+    }
     const msg = d.choices?.[0]?.message || {};
-    if (msg.tool_calls?.length) {
+    if (msg.tool_calls?.length && !final) {
       messages.push({ role: 'assistant', content: msg.content || '', tool_calls: msg.tool_calls });
       for (const c of msg.tool_calls) {
         let args = {};
@@ -391,9 +401,9 @@ ${memory}`;
       continue;
     }
     answer = (msg.content || '').trim();
-    if (!answer && step < 4) {
-      // Empty answer (it spent its budget thinking): ask once more for a short reply.
-      messages.push({ role: 'assistant', content: '' }, { role: 'user', content: 'Kısa ve net cevap ver.' });
+    if (!answer && step < STEPS - 1 && messages.at(-1)?.content !== FINAL_NUDGE) {
+      // Empty answer (it spent its budget thinking): ask once more, tools off, for a short reply.
+      messages.push({ role: 'user', content: FINAL_NUDGE });
       continue;
     }
     break;
@@ -597,6 +607,49 @@ async function deskLog(env, hours) {
   const note = log.length ? undefined : 'The desk has not written a log yet (it starts with its next run).';
   const out = JSON.stringify({ requests, runs, note, statuses: 'pending = waiting for the next desk run (every 2 hours), running = post being made, completed, failed' });
   return out.length > 24000 ? JSON.stringify({ requests, runs: runs.slice(-6), note: 'Only the last 6 runs shown, ask for fewer hours for more detail.' }) : out;
+}
+
+// The news desk runs every 2 hours, at :52 past odd New York hours.
+function nextDeskRun(now = new Date()) {
+  for (let m = 1; m <= 24 * 60; m++) {
+    const t = new Date(now.getTime() + m * 60000);
+    const p = Object.fromEntries(new Intl.DateTimeFormat('en-US', { timeZone: 'America/New_York', hour: 'numeric', minute: 'numeric', hourCycle: 'h23' }).formatToParts(t).map((x) => [x.type, x.value]));
+    if (Number(p.minute) === 52 && Number(p.hour) % 2 === 1) return t;
+  }
+  return new Date(now.getTime() + 2 * 3600e3);
+}
+const trTime = (d) => d.toLocaleString('tr-TR', { timeZone: 'Europe/Istanbul', hour: '2-digit', minute: '2-digit', day: 'numeric', month: 'short' });
+
+// gh() throws on any non-2xx answer; a missing file is normal here (no skips yet, no jobs dir).
+async function repoJson(env, file, fallback) {
+  try {
+    const res = await gh(env, `contents/${file}`, { headers: { Accept: 'application/vnd.github.raw' } });
+    return await res.json();
+  } catch (e) {
+    if (/\b404\b/.test(e.message)) return fallback;
+    throw e;
+  }
+}
+
+async function linkStatus(env) {
+  const [links, skipped, summary, tree] = await Promise.all([
+    repoJson(env, 'inbox/links.json', []), repoJson(env, 'inbox/skipped.json', []), repoJson(env, 'state/summary.json', { jobs: [] }),
+    repoJson(env, 'jobs', []),
+  ]);
+  const next = trTime(nextDeskRun());
+  const jobs = summary.jobs || [];
+  const names = (Array.isArray(tree) ? tree : []).map((f) => f.name);
+  const rows = links.slice(-10).reverse().map((l) => {
+    const job = jobs.filter((j) => j.link_id === l.id).pop();
+    const skip = skipped.find((s) => s.link_id === l.id);
+    const base = { link_id: l.id, url: l.url || l.image_file || null, sent: l.received_at ? trTime(new Date(l.received_at)) : null, post_at: l.post_at ? trTime(new Date(l.post_at)) : null };
+    if (job) return { ...base, state: 'job', job_id: job.id, status: job.status, posted_at: job.posted_at, headline: job.headline };
+    if (skip) return { ...base, state: 'skipped', reason: skip.reason };
+    const stem = String(l.id).replace(/^link-/, '');
+    if (names.some((n) => n.includes(stem))) return { ...base, state: 'being_prepared', note: 'Job written, rendering now; preview comes in a few minutes.' };
+    return { ...base, state: 'waiting_for_desk', next_desk_run: next };
+  });
+  return JSON.stringify({ now: trTime(new Date()), next_desk_run: next, links: rows });
 }
 
 async function queueSummary(env) {
@@ -869,5 +922,8 @@ async function wizardSubmit(env, w) {
   const added = await queueLink(env, item, files);
   await env.KV.delete('wiz');
   if (!added) return send(env, 'ℹ️ Bu link zaten sırada, ikinci kez eklemedim.');
-  return send(env, `✅ Sıraya aldım (${WZ_FORMATS[w.format]}, ${whenText(w)}).\nClaude en geç 2 saat içinde hazırlayacak, önizlemesini buraya atacağım. Sen onaylamadan paylaşılmaz.`);
+  return send(env, `✅ Sıraya aldım (${WZ_FORMATS[w.format]}, ${whenText(w)}).\nClaude ${trTime(nextDeskRun())} çalışmasında hazırlayacak, önizlemesini buraya atacağım. Sen onaylamadan paylaşılmaz.`);
 }
+
+// For tests only.
+export const _test = { nextDeskRun, linkStatus };
