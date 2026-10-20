@@ -2718,5 +2718,71 @@
       }
     ],
     "requests": []
+  },
+  {
+    "run_at": "2026-10-20T12:14:26.423Z",
+    "summary": "08:00 NY run: no open links or requests; queued the Claude Code smart TV debloat story as a posts carousel (priority 2). Today has 7 news jobs plus 2 Reels; one slot left for the 11:00 utility post.",
+    "considered": [
+      {
+        "story": "People use Claude Code to strip ads and bloatware from smart TVs (cleanyourtv, dumbtv)",
+        "source": "https://techcrunch.com/2026/10/19/people-are-using-ai-to-make-their-smart-tvs-dumb-again/",
+        "decision": "queued",
+        "job_id": "2026-10-20-claude-code-strips-smart-tv-ads",
+        "priority": 2
+      },
+      {
+        "story": "Claude Fable 5.5 launch 'tomorrow' rumor (36Kr)",
+        "source": "https://eu.36kr.com/en/p/4033418339619718",
+        "decision": "skipped",
+        "reason": "Still unconfirmed by Anthropic and the reporter corrected it to 'in the coming weeks'; already mentioned in the intent-model job."
+      },
+      {
+        "story": "OpenAI races to raise $30 billion before Anthropic IPO (Reuters)",
+        "decision": "covered",
+        "reason": "Already queued as 2026-10-20-openai-30-billion-race-anthropic-ipo-v2."
+      },
+      {
+        "story": "Microsoft agent controls and Project Perception",
+        "decision": "covered",
+        "reason": "Already queued as 2026-10-20-microsoft-ai-models-cannot-be-trusted."
+      },
+      {
+        "story": "Meta Prometheus supercluster",
+        "decision": "covered",
+        "reason": "Already posted as 2026-10-20-meta-prometheus-million-gpus."
+      },
+      {
+        "story": "Anthropic OSS Scanner free vulnerability scans for open source",
+        "source": "https://www.engadget.com/2282005/anthropic-offers-open-source-software-free-ai-security-checks/",
+        "decision": "skipped",
+        "reason": "Launched October 9, so it is old news now; only resurfaced in today's digests."
+      },
+      {
+        "story": "Eric Schmidt holds about 1% of Anthropic (Bloomberg via Reuters)",
+        "decision": "skipped",
+        "reason": "Could not open a primary article this run; Anthropic IPO money stories are already heavy today."
+      },
+      {
+        "story": "Gemini 4 Argon fusion conjecture claim (TechRadar)",
+        "decision": "skipped",
+        "reason": "Gemini 4 Argon launch and feats were covered on October 18; could not read a primary source for the fusion claim."
+      },
+      {
+        "story": "DHS orders DeepSeek removed from federal systems (WSJ)",
+        "decision": "skipped",
+        "reason": "Political and sensitive, no readable source this run."
+      },
+      {
+        "story": "Mercury 3 diffusion model and MiniMax M3.1 Flash",
+        "decision": "skipped",
+        "reason": "Company claims only, little interest for a mass US audience."
+      },
+      {
+        "story": "OpenAI bugging suspect held without bail",
+        "decision": "covered",
+        "reason": "Story already covered as 2026-10-19-openai-bug-suspect-saudi-royal-whatsapp; detention ruling adds little."
+      }
+    ],
+    "requests": []
   }
 ]

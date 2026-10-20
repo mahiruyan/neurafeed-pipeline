@@ -1,0 +1,82 @@
+{
+  "id": "2026-10-20-claude-code-strips-smart-tv-ads",
+  "created_at": "2026-10-20T12:10:00Z",
+  "story_time": "2026-10-19T16:13:00Z",
+  "timely": false,
+  "sensitive": false,
+  "priority": 2,
+  "format": "posts",
+  "sources": [
+    { "name": "TechCrunch", "url": "https://techcrunch.com/2026/10/19/people-are-using-ai-to-make-their-smart-tvs-dumb-again/" },
+    { "name": "GovTech", "url": "https://www.govtech.com/question-of-the-day/are-people-using-ai-to-dumb-down-their-smart-tvs" },
+    { "name": "Gathin on X", "url": "https://x.com/gathint" },
+    { "name": "Ryan Doyle on X", "url": "https://x.com/doooyle" },
+    { "name": "cleanyourtv on GitHub", "url": "https://github.com/Gathin23/cleanyourtv" },
+    { "name": "dumbtv on GitHub", "url": "https://github.com/humblemuzzu/dumbtv" }
+  ],
+  "caption": "Smart TV owners are pointing Claude Code at their TVs to strip out ads, bloatware and tracking.\nOne developer says Claude removed 25 Xiaomi packages from his parents' TV and wrote a new launcher.\nFree projects like cleanyourtv and dumbtv now share the setup, but some people have bricked their TVs.\n\nWould you let an AI agent take over your TV?\n\nFollow @neurafeed.ai for daily AI news.\n\nSource: TechCrunch · Photo: Google",
+  "slides": [
+    {
+      "kind": "cover",
+      "headline": "Smart TVs watch what you watch. People are now using *Claude* to rip out the ads and tracking",
+      "image": {
+        "url": "https://techcrunch.com/wp-content/uploads/2024/05/Google-TV.jpeg?w=1200",
+        "credit": "Google",
+        "fallback_urls": [
+          "https://s.yimg.com/lo/mysterio/api/4fbfb4b75636dee7e6b9f75ea84ca1798f3cfca932a25f2e4a7e8b8a43ac511d/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_jpg/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Ftechcrunch_finance_785%2F840910f8d9e5354fce25a7ba79e0e9a2"
+        ]
+      },
+      "pos": "center center",
+      "badges": [
+        { "url": "assets/logos/claude.png", "shape": "free" }
+      ]
+    },
+    {
+      "kind": "post",
+      "heading": "One prompt, *25 apps gone*",
+      "author": { "name": "Gathin", "handle": "@gathint" },
+      "platform": "X",
+      "date": "Oct 17, 2026",
+      "text": "Vibe coded my parents' TV this afternoon!\n\nIt was showing a sponsored ad before you could even get to Netflix.\n\nGave Claude Code the model number, it found the TV on wifi, removed 25 Xiaomi packages and wrote a new launcher.\n\nLooks like an Apple TV now lol"
+    },
+    {
+      "kind": "card",
+      "heading": "Now there are *free kits* for it",
+      "paras": [
+        "Gathin also made cleanyourtv, a free project that strips bloatware from Android TV and Google TV over Wi-Fi, needs no root access and adds a launcher that looks like Apple TV.",
+        "Another developer built dumbtv: \"your apps, your HDMI inputs, and nothing else.\" Setup is pointing an AI agent at the project."
+      ],
+      "image": {
+        "url": "https://clauding.de/images/smart-tv-entruempeln-claude-code-og-en.jpg",
+        "credit": "clauding.de",
+        "fallback_urls": ["https://clauding.de/images/smart-tv-entruempeln-claude-code.webp"]
+      },
+      "note": "Gathin says a few thousand people did the same within two days."
+    },
+    {
+      "kind": "post",
+      "heading": "The TV is *faster* too",
+      "author": { "name": "Ryan Doyle", "handle": "@doooyle" },
+      "platform": "X",
+      "date": "Oct 17, 2026",
+      "text": "This is how fast the TV moves now that Claude deleted all the BS laggy bloatware it comes with"
+    },
+    {
+      "kind": "card",
+      "heading": "It can also *brick your TV*",
+      "paras": [
+        "AI agents make mistakes and can disable packages the TV needs. One person bricked an Android TV, and another got stuck halfway through a Fire TV.",
+        "Smart TVs use content recognition to identify what is on screen, and that data feeds ads. Safer options include launcher apps like FLauncher."
+      ],
+      "image": {
+        "url": "https://www.engadget.com/img/gallery/anthropic-now-offers-a-free-vulnerability-finding-service-for-open-source-software/intro-1791544973.jpg",
+        "credit": "Michael M. Santiago / Getty Images",
+        "fallback_urls": ["https://www.engadget.com/img/gallery/anthropic-now-offers-a-free-vulnerability-finding-service-for-open-source-software/l-intro-1791544973.jpg"]
+      }
+    },
+    {
+      "kind": "cta",
+      "hook": "AI agents are starting to fix the gadgets you already own. Follow to see what people hack next."
+    }
+  ]
+}
