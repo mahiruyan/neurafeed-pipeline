@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-20T10:19:49.130Z",
+  "updated_at": "2026-10-20T10:21:47.708Z",
   "jobs": [
     {
       "id": "2026-10-15-google-universal-cart-how-to",
@@ -707,14 +707,14 @@
     },
     {
       "id": "2026-10-20-1961-computer-sang-daisy-bell-reel",
-      "status": "pending",
-      "posted_at": null,
+      "status": "posted",
+      "posted_at": "2026-10-20T10:21:47.286Z",
       "post_at": "2026-10-20T05:01:00.000Z",
       "priority": 1,
       "format": "reel",
       "headline": "In 1961, a computer sang a song for the first time",
       "from_link": true,
-      "error": "Command failed: yt-dlp --no-playlist --no-progress --restrict-filenames -f bv*[height<=1920][vcodec^=avc1]+ba[acodec^=mp4a]/bv*[height<=1920]+ba/b[height<=1920]/b --merge-output-format mp4 -o /home/runner/work/neurafeed-pipeline/neurafeed-pipeline/out/2026-10-20-1961-computer-sang-daisy-bell-reel/src/source.%(ext)s https://www.instagram.com/reel/DerXZGLAAts/?mdxt=MWhyNTRrZXN1MnZ1eA==\nERROR: [Instagram] DerXZGLAAts: Instagram sent an empty media response. Check if this post is accessible in your browser without being logged-in. If it is not, then use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Otherwise, if the post is accessible in browser without being logged-in, please report this issue on  https://github.com/yt-dlp/yt-dlp/issues?q= , filling out the appropriate issue template. Confirm you are on the latest version using  yt-dlp -U\n",
+      "error": null,
       "tg": [
         998,
         999,
