@@ -47,7 +47,9 @@ same day. Never skip a priority 1 story because other stories are already queued
   dramatize, never invent a number, quote or event.
 - Headlines: under 18 words, one *highlighted* phrase (asterisks) for the key detail.
 - Inner slides: a topic heading for that slide (never "What happened" / "Why it matters"),
-  then 2 short paragraphs, each under 40 words. Split into more slides instead of shrinking text.
+  then 2 short paragraphs, each under 40 words. A `card` holds at most 260 characters of text
+  (paragraphs plus note; validation rejects more): split a long story into more slides instead
+  of shrinking text, and keep the whole carousel within 8 slides.
 - CTA hook: one sentence tied to this specific story, giving a reason to follow.
 - Caption: 2 to 4 short lines summarizing the story, one question to drive comments,
   "Follow @neurafeed.ai for daily AI news.", then a final line `Source: <Outlet>` (add

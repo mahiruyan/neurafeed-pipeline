@@ -1,6 +1,7 @@
 // Checks a job file before rendering. Returns a list of problems (empty = OK).
 const KINDS = new Set(['cover', 'text', 'cta', 'card', 'product', 'post', 'prompt', 'summary']);
 const NEEDS_IMAGE = new Set(['cover', 'text', 'card', 'product']);
+const CARD_MAX_CHARS = 260;
 const DASHES = /[–—]/; // NeuraFeed rule: no en dash or em dash anywhere.
 
 function textOf(job) {
@@ -42,6 +43,11 @@ function validateJob(job, fileId) {
     if (!KINDS.has(s.kind)) p.push(`slide ${i + 1}: unknown kind "${s.kind}"`);
     if (NEEDS_IMAGE.has(s.kind) && (!s.image || !(s.image.url || s.image.generate))) p.push(`slide ${i + 1}: image.url (or image.generate) is required`);
     if (['card', 'product', 'prompt'].includes(s.kind) && !s.heading) p.push(`slide ${i + 1}: heading is required`);
+    // Long text is split across slides, never shrunk: Mahir wants big, readable inner slides.
+    if (s.kind === 'card') {
+      const len = (s.paras || []).map((x) => (typeof x === 'object' ? x.t : x) || '').join(' ').length + (s.note || '').length;
+      if (len > CARD_MAX_CHARS) p.push(`slide ${i + 1}: card text is ${len} characters (max ${CARD_MAX_CHARS}); split it into two card slides`);
+    }
     if (s.kind === 'post' && !(s.author?.name && s.text)) p.push(`slide ${i + 1}: a post needs author.name and the post's exact text`);
     if (s.kind === 'prompt' && !s.prompt) p.push(`slide ${i + 1}: prompt is required`);
     if (s.kind === 'summary' && !((s.points || s.paras || []).length >= 2)) p.push(`slide ${i + 1}: a summary needs 2 to 6 points`);
