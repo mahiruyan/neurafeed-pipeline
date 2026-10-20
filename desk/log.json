@@ -2834,5 +2834,61 @@
       }
     ],
     "requests": []
+  },
+  {
+    "run_at": "2026-10-20T16:02:10.879Z",
+    "summary": "11:53 NY run: no open links or requests; queued today's utility post (Claude prompt fixes from Anthropic's guide), bringing today to 8 jobs; no new priority 1 story found.",
+    "considered": [
+      {
+        "story": "5 prompt fixes from Anthropic's official Claude prompting guide (utility)",
+        "source": "https://platform.claude.com/en/docs/build-with-claude/prompt-engineering/claude-prompting-best-practices",
+        "decision": "queued",
+        "job_id": "2026-10-20-claude-prompt-fixes-anthropic-guide",
+        "priority": 2
+      },
+      {
+        "story": "OpenAI coding model for low-resource languages like COBOL",
+        "decision": "covered",
+        "reason": "Already queued as 2026-10-20-openai-learns-cobol-atm-code-v2."
+      },
+      {
+        "story": "Anthropic and Nscale talk second multibillion-dollar deal",
+        "decision": "covered",
+        "reason": "Already covered as 2026-10-19-anthropic-second-45-billion-nscale-deal."
+      },
+      {
+        "story": "Inception launches Mercury 3 diffusion model",
+        "source": "https://www.inceptionlabs.ai/blog/introducing-mercury-3",
+        "decision": "skipped",
+        "reason": "Smaller lab model claims with little mainstream US interest, and today's cap is now full."
+      },
+      {
+        "story": "Bob McGrew's startup Arda raises $230 million for AI manufacturing",
+        "decision": "skipped",
+        "reason": "Funding round of limited mass interest and no slot left today."
+      },
+      {
+        "story": "Figma's Dylan Field says MCP is not a perfect protocol",
+        "source": "https://techcrunch.com/2026/10/20/figma-co-founder-dylan-field-thinks-mcp-is-not-a-perfect-protocol/",
+        "decision": "skipped",
+        "reason": "Developer niche opinion, cap reached."
+      },
+      {
+        "story": "Judge dismisses lawsuit by Sam Altman's sister",
+        "decision": "skipped",
+        "reason": "Sensitive abuse case about a private family matter, not a fit for the account."
+      },
+      {
+        "story": "OpenAI Pacing 2.0 report",
+        "decision": "skipped",
+        "reason": "The Information is paywalled and no second readable source."
+      },
+      {
+        "story": "Mamdani says feds have abdicated on AI",
+        "decision": "skipped",
+        "reason": "Political and sensitive, and the daily cap is full."
+      }
+    ],
+    "requests": []
   }
 ]

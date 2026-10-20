@@ -1,0 +1,78 @@
+{
+  "id": "2026-10-20-claude-prompt-fixes-anthropic-guide",
+  "format": "utility",
+  "created_at": "2026-10-20T16:10:00Z",
+  "story_time": "2026-10-20T16:00:00Z",
+  "timely": false,
+  "sensitive": false,
+  "priority": 2,
+  "sources": [
+    { "name": "Claude Docs: Prompting best practices", "url": "https://platform.claude.com/en/docs/build-with-claude/prompt-engineering/claude-prompting-best-practices" },
+    { "name": "Claude Docs: Use XML tags", "url": "https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/use-xml-tags" }
+  ],
+  "caption": "Anthropic's official prompting guide for Claude is full of simple before and after fixes.\nThe golden rule: if a colleague with no context would be confused by your prompt, Claude will be too.\nExplain why, ask for action, describe the result you want and use tags.\n\nWhich of these do you already use?\n\nFollow @neurafeed.ai for daily AI news.\n\nSource: Anthropic (Claude Docs) · Photo: Algi Febri Sugita / SOPA Images / Getty Images",
+  "slides": [
+    {
+      "kind": "cover",
+      "headline": "Anthropic's own guide shows how to get far better answers from Claude. *5 simple fixes*",
+      "image": {
+        "url": "https://news.stocktwits-cdn.com/large_Getty_Images_2276989723_eb8b10972a.jpg",
+        "credit": "Algi Febri Sugita / SOPA Images / Getty Images",
+        "fallback_urls": [
+          "https://s.yimg.com/lo/mysterio/api/19dff9fd4158ad8396e9d8470ea113968d36974ee433da0f6a56238b9f62a001/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_jpg/https%3A%2F%2Fd29szjachogqwa.cloudfront.net%2Fimages%2F2026-06%2F9c9e0b07-8f64-473b-9fa5-1cb08f18ddf8"
+        ]
+      },
+      "pos": "center center",
+      "badges": [{ "url": "assets/logos/claude.png", "shape": "free" }]
+    },
+    {
+      "kind": "prompt",
+      "heading": "1. Take the *colleague test*",
+      "paras": [
+        "Anthropic's golden rule: show your prompt to a colleague with little context. If they would be confused, Claude will be too. Its upgrade of \"Create an analytics dashboard\":",
+        "Claude follows explicit instructions closely. If you want it to go above and beyond, ask for that out loud."
+      ],
+      "prompt": "Create an analytics dashboard. Include as many relevant features and interactions as possible. Go beyond the basics to create a fully-featured implementation."
+    },
+    {
+      "kind": "prompt",
+      "heading": "2. Tell Claude *why*",
+      "paras": [
+        "Explaining the reason behind a rule helps Claude apply it well. Instead of \"NEVER use ellipses\", Anthropic suggests:",
+        "With the reason attached, Claude understands the goal and can generalize, instead of following one bare rule."
+      ],
+      "prompt": "Your response will be read aloud by a text-to-speech engine, so never use ellipses since the text-to-speech engine will not know how to pronounce them."
+    },
+    {
+      "kind": "prompt",
+      "heading": "3. Ask for *action*, not ideas",
+      "paras": [
+        "\"Can you suggest some changes to improve this function?\" often gets you only suggestions. If you want the work done, say it:",
+        "A direct verb gets the change made. A polite \"can you suggest\" gets a list of ideas."
+      ],
+      "prompt": "Change this function to improve its performance."
+    },
+    {
+      "kind": "prompt",
+      "heading": "4. Say what to do, *not what to avoid*",
+      "paras": [
+        "Instead of \"Do not use markdown in your response\", Anthropic recommends describing the result you want:",
+        "Bonus: your own style rubs off. Less markdown in your prompt can mean less markdown in the answer."
+      ],
+      "prompt": "Your response should be composed of smoothly flowing prose paragraphs."
+    },
+    {
+      "kind": "prompt",
+      "heading": "5. Wrap it in *XML tags*",
+      "paras": [
+        "Mixing instructions, background and your text in one prompt? Anthropic says giving each part its own tag reduces misreading.",
+        "Use the same tag names every time, and wrap any examples in <example> tags so Claude can tell them apart."
+      ],
+      "prompt": "<instructions>Summarize the report below in 3 bullet points.</instructions>\n<context>It is for my manager, who has 2 minutes.</context>\n<input>[paste the report here]</input>"
+    },
+    {
+      "kind": "cta",
+      "hook": "Save these five fixes from Anthropic's own guide, and follow for more tips that make AI actually work for you."
+    }
+  ]
+}
