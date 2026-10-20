@@ -133,7 +133,8 @@ ${paras}
 // NeuraFeed tag at the top right and the slide counter at the bottom right.
 const DARK = 'radial-gradient(120% 80% at 50% 0%,#15181b 0%,#0a0b0c 60%)';
 const tag = `<div style="position:absolute;top:44px;right:48px;display:flex;align-items:center;gap:12px;z-index:5"><img src="${logo}" style="width:54px;height:54px"><div style="font-family:Poppins;line-height:1.1"><div style="font-weight:600;font-size:24px;color:#fff">Neurafeed AI</div><div style="font-size:20px;color:#8a9096">@neurafeed.ai</div></div></div>`;
-const counter = (s) => (s._n && s._total ? `<div style="position:absolute;bottom:44px;right:48px;font-family:Poppins;font-size:22px;color:#6b7177">${s._n}/${s._total}</div>` : '');
+// No page counter (1/5 ...) on slides: Mahir asked to remove it.
+const counter = () => '';
 const dark = (s, inner) => `<div style="position:relative;width:1080px;height:1350px;overflow:hidden;background:${DARK};color:#fff">${inner}${counter(s)}</div>`;
 const paraText = (p) => (typeof p === 'object' ? p.t : p);
 const para = (p, size, color = '#d6dadd') => {
@@ -146,12 +147,12 @@ const chars = (list) => list.map(paraText).join(' ').length;
 function card(s, img) {
   const paras = s.paras || [];
   const long = chars(paras) + (s.note || '').length;
-  const size = s.size || (long > 330 ? 30 : long > 220 ? 32 : 34);
-  const imgH = long > 330 ? 400 : long > 220 ? 470 : 540;
+  const size = s.size || (long > 330 ? 34 : long > 220 ? 37 : 40);
+  const imgH = long > 330 ? 350 : long > 220 ? 420 : 500;
   const fit = s.image?.fit === 'contain' ? `object-fit:contain;background:#000` : 'object-fit:cover';
   return dark(s, `${tag}
 <div style="position:absolute;top:130px;bottom:96px;left:60px;right:60px;display:flex;flex-direction:column;justify-content:center;gap:28px">
-<h2 style="margin:0;font-family:Poppins;font-weight:700;font-size:${s.hsize || 58}px;line-height:1.15;letter-spacing:-.3px">${hl(s.heading)}</h2>
+<h2 style="margin:0;font-family:Poppins;font-weight:700;font-size:${s.hsize || 64}px;line-height:1.15;letter-spacing:-.3px">${hl(s.heading)}</h2>
 ${paras.map((p) => para(p, size)).join('')}
 ${img ? `<img src="${img}" style="width:960px;height:${imgH}px;${fit};object-position:${s.pos || 'center 30%'};border-radius:28px;border:1px solid #2a2e33;flex-shrink:0">` : ''}
 ${s.note ? para(s.note, size - 4, '#9aa1a7') : ''}
@@ -161,7 +162,7 @@ ${s.note ? para(s.note, size - 4, '#9aa1a7') : ''}
 // product: big picture on top, a big colored title and the text below (one item of a list).
 function product(s, img) {
   const paras = s.paras || [];
-  const size = s.size || (chars(paras) > 220 ? 34 : 38);
+  const size = s.size || (chars(paras) > 220 ? 38 : 42);
   return dark(s, `<img src="${img}" style="position:absolute;top:0;left:0;width:1080px;height:760px;${s.image?.fit === 'contain' ? 'object-fit:contain;background:#000' : 'object-fit:cover'};object-position:${s.pos || 'center 30%'}">
 <div style="position:absolute;top:540px;left:0;width:1080px;height:230px;background:linear-gradient(180deg,rgba(10,11,12,0),#0a0b0c)"></div>
 <img src="${logo}" style="position:absolute;top:40px;left:40px;width:70px;height:70px;filter:drop-shadow(0 2px 8px rgba(0,0,0,.5))">
@@ -176,13 +177,13 @@ const check = `<svg width="30" height="30" viewBox="0 0 24 24"><path fill="#1d9b
 function post(s, img) {
   const a = s.author || {};
   const text = String(s.text || '').replace(/\s*[\u2013\u2014]\s*/g, ' - ');
-  const size = s.size || (text.length > 260 ? 32 : text.length > 160 ? 35 : 38);
+  const size = s.size || (text.length > 260 ? 35 : text.length > 160 ? 39 : 42);
   const avatar = s._avatar
     ? `<img src="${fileUrl(s._avatar)}" style="width:84px;height:84px;border-radius:50%;object-fit:cover">`
     : `<div style="width:84px;height:84px;border-radius:50%;background:#2a2e33;display:flex;align-items:center;justify-content:center;font-family:Poppins;font-weight:700;font-size:36px">${esc((a.name || '?').trim()[0])}</div>`;
   return dark(s, `${tag}
 <div style="position:absolute;top:150px;bottom:110px;left:60px;right:60px;display:flex;flex-direction:column;justify-content:center">
-${s.heading ? `<h2 style="margin:0 0 28px;font-family:Poppins;font-weight:700;font-size:${s.hsize || 50}px;line-height:1.15">${hl(s.heading)}</h2>` : ''}
+${s.heading ? `<h2 style="margin:0 0 28px;font-family:Poppins;font-weight:700;font-size:${s.hsize || 56}px;line-height:1.15">${hl(s.heading)}</h2>` : ''}
 <div style="background:#111315;border:1px solid #2a2e33;border-radius:32px;padding:40px">
 <div style="display:flex;align-items:center;gap:18px">${avatar}
 <div style="font-family:Poppins;line-height:1.2"><div style="display:flex;align-items:center;gap:8px;font-weight:700;font-size:32px">${esc(a.name || '')}${a.verified ? check : ''}</div><div style="font-size:26px;color:#8a9096">${esc(a.handle || '')}${s.platform ? ` · ${esc(s.platform)}` : ''}</div></div></div>
@@ -199,19 +200,19 @@ function prompt(s) {
   const plen = String(s.prompt || '').length;
   return dark(s, `${tag}
 <div style="position:absolute;top:150px;bottom:110px;left:60px;right:60px;display:flex;flex-direction:column;justify-content:center;gap:36px">
-<h2 style="margin:0;font-family:Poppins;font-weight:700;font-size:${s.hsize || 58}px;line-height:1.15;color:${ACC}">${esc(s.heading || '').replace(/\*/g, '')}</h2>
-${paras[0] ? para(paras[0], 36, '#e6e9eb') : ''}
+<h2 style="margin:0;font-family:Poppins;font-weight:700;font-size:${s.hsize || 62}px;line-height:1.15;color:${ACC}">${esc(s.heading || '').replace(/\*/g, '')}</h2>
+${paras[0] ? para(paras[0], 40, '#e6e9eb') : ''}
 <div style="background:#1b1e21;border:1px solid #30353a;border-radius:36px;padding:38px 40px 30px">
-<div style="font-family:Poppins;font-size:${plen > 300 ? 28 : plen > 160 ? 32 : 37}px;line-height:1.42;color:#fff;white-space:pre-line">${esc(s.prompt || '')}</div>
+<div style="font-family:Poppins;font-size:${plen > 300 ? 31 : plen > 160 ? 35 : 40}px;line-height:1.42;color:#fff;white-space:pre-line">${esc(s.prompt || '')}</div>
 <div style="display:flex;justify-content:space-between;align-items:center;margin-top:40px"><div style="font-size:44px;color:#9aa1a7;font-family:Poppins">+</div>${send}</div></div>
-${paras.slice(1).map((p) => para(p, 33)).join('')}
+${paras.slice(1).map((p) => para(p, 37)).join('')}
 </div>`);
 }
 
 // summary: the key points, short.
 function summary(s) {
   const pts = s.points || s.paras || [];
-  const size = s.size || (chars(pts) > 380 ? 33 : 37);
+  const size = s.size || (chars(pts) > 380 ? 36 : 40);
   return dark(s, `${tag}
 <div style="position:absolute;top:150px;bottom:110px;left:60px;right:60px;display:flex;flex-direction:column;justify-content:center;gap:32px">
 <h2 style="margin:0 0 6px;font-family:Anton;font-weight:400;font-size:${s.hsize || 84}px;line-height:1.02;text-transform:uppercase">${hl(s.heading || 'The short version')}</h2>
