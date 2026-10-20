@@ -98,7 +98,7 @@ async function logoAlreadyVisible(photo, logoUrl) {
 // Slide field: image.generate = "a prompt describing the scene".
 // image.refs: optional list of image URLs (company logo, product photo, CEO photo, mascot) the
 // model must use, so the result is recognizably about that company.
-async function generate(prompt, dest, refs = []) {
+async function generate(prompt, dest, refs = [], size = '1024x1536') {
   const key = process.env.OPENAI_API_KEY;
   if (!key) throw new Error('OPENAI_API_KEY missing, cannot generate image');
   const model = process.env.OPENAI_IMAGE_MODEL || 'gpt-image-2';
@@ -116,7 +116,7 @@ async function generate(prompt, dest, refs = []) {
     const form = new FormData();
     form.append('model', model);
     form.append('prompt', prompt);
-    form.append('size', '1024x1536');
+    form.append('size', size);
     form.append('quality', quality);
     files.forEach(({ f, type }, k) => form.append('image[]', new Blob([fs.readFileSync(f)], { type }), `ref${k}.${type === 'image/png' ? 'png' : 'jpg'}`));
     try {
@@ -128,7 +128,7 @@ async function generate(prompt, dest, refs = []) {
     res = await fetch('https://api.openai.com/v1/images/generations', {
       method: 'POST',
       headers: { Authorization: `Bearer ${key}`, 'Content-Type': 'application/json' },
-      body: JSON.stringify({ model, prompt, size: '1024x1536', quality, n: 1 }),
+      body: JSON.stringify({ model, prompt, size, quality, n: 1 }),
     });
   }
   const data = await res.json();
@@ -229,4 +229,4 @@ async function fetchImages(job, outDir) {
   return { paths: paths.map((p, i) => p || (TEXT_ONLY.has(job.slides[i].kind) ? null : firstGood)), badges, errors };
 }
 
-module.exports = { logoAlreadyVisible, brandsInPhoto, brandMatches, brandOf, download, fetchImages };
+module.exports = { logoAlreadyVisible, brandsInPhoto, brandMatches, brandOf, download, fetchImages, generate, imgData };

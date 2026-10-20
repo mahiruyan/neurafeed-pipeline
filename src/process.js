@@ -7,6 +7,7 @@ const { autoDecision } = require('./rules');
 const cfg = config();
 const { fetchImages } = require('./images');
 const { renderJob } = require('./render');
+const { prepareHero } = require('./hero');
 const { renderReel } = require('./reel');
 const { validateJob } = require('./validate');
 const tg = require('./telegram');
@@ -106,6 +107,8 @@ function summary(job) {
         errors = img.errors;
         files = await renderJob(job, img.paths, outDir, img.badges);
         preview = files;
+        // The website's hero image for this story; never blocks the Instagram post.
+        try { await prepareHero(job, outDir); } catch (e) { console.log(`::warning::hero image for ${id}: ${e.message}`); }
       }
       fs.rmSync(path.join(outDir, 'src'), { recursive: true, force: true });
       setJobState(id, { status: 'rendered', files: files.map((f) => path.relative(ROOT, f)), image_errors: errors });

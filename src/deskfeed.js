@@ -18,6 +18,15 @@ const SITE_CATEGORIES = ['breaking', 'companies', 'models', 'robotics', 'free-to
 const MAX_ITEMS = 30;
 const MAX_AGE_HOURS = 72;
 const MAX_SUMMARY = 590; // the website keeps 600 characters of a feed summary
+const MEDIA_BASE = process.env.PUBLIC_IMAGE_BASE || 'https://raw.githubusercontent.com/mahiruyan/neurafeed-media/main';
+
+// The prepared website hero (src/hero.js), when the pipeline made one.
+function heroOf(id) {
+  try {
+    const m = JSON.parse(fs.readFileSync(path.join(ROOT, 'out', id, 'hero.json'), 'utf8'));
+    return { ...m, url: `${MEDIA_BASE}/${id}/hero.jpg` };
+  } catch { return null; }
+}
 
 const esc = (s) => String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
 const plain = (s) => String(s || '').replace(/\*/g, '').replace(/\s+/g, ' ').trim();
@@ -91,7 +100,7 @@ function deskItems(now = Date.now()) {
     if (!Number.isFinite(when) || now - when > MAX_AGE_HOURS * 3600e3) continue;
     const link = primaryLink(job);
     if (!link) continue;
-    items.push({ id: job.id, title: plain(job.slides?.[0]?.headline || job.id), link, summary: summaryOf(job), date: new Date(when), sources: job.sources, category: categoryOf(job), images: imagesOf(job), sensitive: Boolean(job.sensitive) });
+    items.push({ id: job.id, title: plain(job.slides?.[0]?.headline || job.id), link, summary: summaryOf(job), date: new Date(when), sources: job.sources, category: categoryOf(job), images: imagesOf(job), sensitive: Boolean(job.sensitive), hero: heroOf(job.id) });
   }
   return items.sort((a, b) => b.date - a.date).slice(0, MAX_ITEMS);
 }
@@ -107,6 +116,7 @@ function rss(items, now = new Date()) {
 ${i.sources.map((s) => `      <category domain="${esc(s.url)}">${esc(plain(s.name))}</category>`).join('\n')}
       <nf:category>${esc(i.category)}</nf:category>
       <nf:sensitive>${i.sensitive ? 'true' : 'false'}</nf:sensitive>
+${i.hero ? `      <nf:hero url="${esc(i.hero.url)}" width="${i.hero.width}" height="${i.hero.height}" ai="${i.hero.ai ? 'true' : 'false'}"><nf:alt>${esc(i.hero.alt || '')}</nf:alt><nf:credit>${esc(i.hero.credit || '')}</nf:credit><nf:license>${esc(i.hero.license || '')}</nf:license>${i.hero.source_url ? `<nf:source>${esc(i.hero.source_url)}</nf:source>` : ''}</nf:hero>` : ''}
 ${(i.images || []).map((m) => `      <media:content url="${esc(m.url)}" medium="image"><media:credit>${esc(m.credit)}</media:credit></media:content>`).join('\n')}
     </item>`).join('\n');
   return `<?xml version="1.0" encoding="UTF-8"?>
