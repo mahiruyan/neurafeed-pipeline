@@ -10,9 +10,14 @@
       "status": "approved",
       "at": "2026-10-20T10:50:20.555Z",
       "by": "auto: 3 source(s), not sensitive"
+    },
+    {
+      "status": "posted",
+      "at": "2026-10-20T12:46:16.270Z",
+      "by": "system"
     }
   ],
-  "status": "approved",
+  "status": "posted",
   "files": [
     "out/2026-10-20-anthropic-next-model-reads-intent-v2/1.jpg",
     "out/2026-10-20-anthropic-next-model-reads-intent-v2/2.jpg",
@@ -22,7 +27,7 @@
   "image_errors": [
     "slide 1 badge 1: left out, the photo already shows this logo"
   ],
-  "updated_at": "2026-10-20T10:50:23.193Z",
+  "updated_at": "2026-10-20T12:46:16.270Z",
   "by": "auto: 3 source(s), not sensitive",
   "tg_messages": [
     1016,
@@ -30,5 +35,15 @@
     1018,
     1019,
     1020
-  ]
+  ],
+  "posted_at": "2026-10-20T12:46:16.270Z",
+  "publish": {
+    "mode": "instagram",
+    "media_id": "17917041060264384",
+    "facebook": {
+      "id": "876414312221880_122146620153099381",
+      "type": "album"
+    },
+    "threads_error": "Threads me/threads_publish: The requested resource does not exist"
+  }
 }
