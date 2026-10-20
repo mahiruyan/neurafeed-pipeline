@@ -128,12 +128,13 @@ photo. Pick the kind that fits each slide:
 - `prompt`: `heading` ("2. Ask for a version 2.0"), `paras[0]` (what it is), `prompt` (the exact
   prompt to copy), `paras[1]` (what it does). No picture.
 - `summary`: `heading` (default "The *short* version"), `points` (2 to 6 short facts). No picture.
+  NOT for normal news carousels. Use it only in a weekly roundup or when Mahir asks for it.
 - `text`: the older style, text over a photo. Use only when a strong photo matters more than
   anything else.
 - `cta` (last slide): "Follow for more", our account card with the real follower count, `hook`
   (one sentence tied to this story) and "Save for later". No picture needed.
 A typical news carousel: cover, 2 to 4 `card` slides (or a `post` when the story is about what
-someone posted), optionally a `summary`, then `cta`.
+someone posted), then `cta`. No `summary` slide in news carousels.
 
 ## Two more formats (like the reference accounts, made from real sources)
 
