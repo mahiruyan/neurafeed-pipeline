@@ -44,10 +44,10 @@ jobs:
           set -- $site; id=$1; acct=$2
           [ -n "$id" ] && [ "$id" != null ] || { echo "::error::site not found"; exit 1; }
           setvar() { # key value
-            body=$(jq -n --arg k "$1" --arg v "$2" '[{key:$k,scopes:["builds","functions","runtime"],values:[{value:$v,context:"all"}]}]')
+            body=$(jq -n --arg k "$1" --arg v "$2" '[{key:$k,values:[{value:$v,context:"all"}]}]')
             code=$(curl -s -o /tmp/r -w '%{http_code}' -X POST -H "Authorization: Bearer $NETLIFY" -H 'Content-Type: application/json' "$api/accounts/$acct/env?site_id=$id" -d "$body")
             if [ "$code" != 201 ] && [ "$code" != 200 ]; then
-              body=$(jq -n --arg k "$1" --arg v "$2" '{key:$k,scopes:["builds","functions","runtime"],values:[{value:$v,context:"all"}]}')
+              body=$(jq -n --arg k "$1" --arg v "$2" '{key:$k,values:[{value:$v,context:"all"}]}')
               code=$(curl -s -o /tmp/r -w '%{http_code}' -X PUT -H "Authorization: Bearer $NETLIFY" -H 'Content-Type: application/json' "$api/accounts/$acct/env/$1?site_id=$id" -d "$body")
             fi
             [ "$code" = 200 ] || [ "$code" = 201 ] || { echo "::error::$1: HTTP $code $(jq -r '.message // empty' /tmp/r)"; exit 1; }
