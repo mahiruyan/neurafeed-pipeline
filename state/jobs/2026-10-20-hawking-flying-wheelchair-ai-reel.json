@@ -20,11 +20,16 @@
       "status": "approved",
       "at": "2026-10-20T10:19:48.588Z",
       "by": "mahir (Telegram)"
+    },
+    {
+      "status": "posted",
+      "at": "2026-10-20T14:12:33.986Z",
+      "by": "system"
     }
   ],
-  "status": "approved",
+  "status": "posted",
   "error": "Command failed: yt-dlp --no-playlist --no-progress --restrict-filenames -f bv*[height<=1920][vcodec^=avc1]+ba[acodec^=mp4a]/bv*[height<=1920]+ba/b[height<=1920]/b --merge-output-format mp4 -o /home/runner/work/neurafeed-pipeline/neurafeed-pipeline/out/2026-10-20-hawking-flying-wheelchair-ai-reel/src/source.%(ext)s https://www.instagram.com/reel/DetCWzPsufg/?exln=MWZpdXJpMW9rOHN0ZQ==\nERROR: [Instagram] DetCWzPsufg: Instagram sent an empty media response. Check if this post is accessible in your browser without being logged-in. If it is not, then use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Otherwise, if the post is accessible in browser without being logged-in, please report this issue on  https://github.com/yt-dlp/yt-dlp/issues?q= , filling out the appropriate issue template. Confirm you are on the latest version using  yt-dlp -U\n",
-  "updated_at": "2026-10-20T10:19:48.588Z",
+  "updated_at": "2026-10-20T14:12:33.986Z",
   "files": [
     "out/2026-10-20-hawking-flying-wheelchair-ai-reel/reel.mp4"
   ],
@@ -38,5 +43,19 @@
   "tg_messages": [
     1000,
     1001
-  ]
+  ],
+  "posted_at": "2026-10-20T14:12:33.986Z",
+  "publish": {
+    "mode": "instagram",
+    "media_id": "18395602369167489",
+    "type": "reel",
+    "facebook": {
+      "id": "1754194199206720",
+      "type": "video"
+    },
+    "threads": {
+      "id": "18114866441147817",
+      "type": "video"
+    }
+  }
 }
