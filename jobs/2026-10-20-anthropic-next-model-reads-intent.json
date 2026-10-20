@@ -1,0 +1,67 @@
+{
+  "id": "2026-10-20-anthropic-next-model-reads-intent",
+  "created_at": "2026-10-20T10:10:00Z",
+  "story_time": "2026-10-19T14:00:00Z",
+  "timely": false,
+  "sensitive": false,
+  "priority": 1,
+  "sources": [
+    { "name": "The Information (via Investing.com)", "url": "https://au.investing.com/news/stock-market-news/anthropic-google-and-openai-prepare-new-ai-models-the-information-reports-4699221" },
+    { "name": "Tbreak", "url": "https://tbreak.com/anthropic-ai-model-intent-google-openai-report/" },
+    { "name": "TestingCatalog", "url": "https://www.testingcatalog.com/anthropic-several-models-coming-fable-5-5-reaches-partners/" }
+  ],
+  "caption": "Anthropic is testing an unnamed model that can work out what users really want from short instructions, The Information reports.\nGoogle is preparing Gemini 4 Carbon, and OpenAI a cheaper Terra model that could arrive in the coming weeks.\nNone of the three companies has announced a date.\n\nWhich lab ships first?\n\nFollow @neurafeed.ai for daily AI news.\n\nSource: The Information · Photo: TestingCatalog, Tbreak",
+  "slides": [
+    {
+      "kind": "cover",
+      "headline": "Anthropic's unreleased model reportedly *figures out what you really want*, even when you don't say it",
+      "image": {
+        "url": "https://storage.ghost.io/c/2a/1b/2a1b1782-8506-4d7d-bf53-ad3fb52e2a0f/content/images/size/w2000/2026/10/1714580635_anthropic.jpg",
+        "credit": "TestingCatalog",
+        "fallback_urls": ["https://storage.ghost.io/c/2a/1b/2a1b1782-8506-4d7d-bf53-ad3fb52e2a0f/content/images/size/w1200/2026/10/1714580635_anthropic.jpg"]
+      },
+      "pos": "center",
+      "badges": [{ "url": "assets/logos/claude.png", "fit": "contain" }]
+    },
+    {
+      "kind": "card",
+      "heading": "A model with *intuition*",
+      "paras": [
+        "Anthropic is developing a model with stronger reasoning and what The Information calls intuition: it can infer a user's real goal from limited instructions.",
+        "One tester said it spots the bigger problem behind a single software bug and proposes a more complete fix."
+      ],
+      "image": {
+        "url": "https://i0.wp.com/tbreak.com/wp-content/uploads/2026/09/feature_cd73e3f7.jpg?fit=1200%2C800&ssl=1",
+        "credit": "Tbreak",
+        "fallback_urls": ["https://tbreak.com/wp-content/uploads/2026/09/feature_cd73e3f7.jpg"]
+      }
+    },
+    {
+      "kind": "card",
+      "heading": "Google and OpenAI *answer back*",
+      "paras": [
+        "Google is preparing Gemini 4 Carbon, an upgrade to Gemini 4 Argon. Developers say Gemini is especially strong at visual tasks like video analysis.",
+        "OpenAI is working on a new Terra model, possibly out in the coming weeks, with better skills at a lower price than GPT-6.1 Sol."
+      ],
+      "image": {
+        "url": "https://content-media.investing.com/news/moved_LYNXMPEM9I0YO_L.jpg",
+        "credit": "Reuters",
+        "fallback_urls": ["https://techstartups.com/wp-content/uploads/2025/09/OPenAI.jpg"]
+      }
+    },
+    {
+      "kind": "summary",
+      "points": [
+        "Anthropic: unnamed model that infers what users want",
+        "Google: Gemini 4 Carbon, above Gemini 4 Argon",
+        "OpenAI: a cheaper Terra model, maybe within weeks",
+        "Leakers say Claude Fable 5.5 has reached partners",
+        "Anthropic has not confirmed any of it"
+      ]
+    },
+    {
+      "kind": "cta",
+      "hook": "Three labs, three new models on the way. Follow so you know the moment one drops."
+    }
+  ]
+}

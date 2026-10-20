@@ -1,0 +1,71 @@
+{
+  "id": "2026-10-20-openai-learns-cobol-atm-code",
+  "created_at": "2026-10-20T10:10:00Z",
+  "story_time": "2026-10-19T18:00:00Z",
+  "timely": false,
+  "sensitive": false,
+  "priority": 2,
+  "sources": [
+    { "name": "Dataconomy", "url": "https://dataconomy.com/2026/10/20/openai-gpt-6-cobol-coding-migration-gains/" },
+    { "name": "Interesting Engineering", "url": "https://interestingengineering.com/ai-robotics/openai-coding-models-software-modernization" },
+    { "name": "Crypto Briefing", "url": "https://cryptobriefing.com/openai-upgrades-model-cobol-fortran-legacy-code/" },
+    { "name": "Superpower Daily", "url": "https://superpowerdaily.com/posts/openai-releases-coding-benchmark-and-reports-sharp-gains-in-cobol" },
+    { "name": "OpenAI on X", "url": "https://x.com/OpenAI/status/2112310345863930168" }
+  ],
+  "caption": "OpenAI says its latest models got much better at COBOL, Fortran and Visual Basic, the old languages banks and governments still run on.\nOn OpenAI's own COBOL migration test, GPT-6.1 Sol scored 86.6%, up from 5.4%, and 97.9% at higher effort.\nOpenAI says experts still need to review and test the code.\n\nWould you trust AI to rewrite your bank's code?\n\nFollow @neurafeed.ai for daily AI news.\n\nSource: Dataconomy · Photo: Getty Images, IBM",
+  "slides": [
+    {
+      "kind": "cover",
+      "headline": "OpenAI's AI just learned the 67-year-old code that *runs your ATM*",
+      "image": {
+        "url": "https://cms.interestingengineering.com/wp-content/uploads/2026/10/Untitled-Design-2026-10-20T061617.044.jpg",
+        "credit": "Getty Images",
+        "fallback_urls": ["https://techcrunch.com/wp-content/uploads/2025/04/IBM-z17.jpg?resize=1200,675"]
+      },
+      "pos": "center 35%",
+      "badges": [{ "url": "assets/logos/openai.png", "fit": "contain" }]
+    },
+    {
+      "kind": "card",
+      "heading": "From *5.4%* to 86.6%",
+      "paras": [
+        "OpenAI says its newest models got far better at COBOL, Fortran and Visual Basic, languages that banks, governments and businesses still depend on.",
+        "On its COBOL migration test, GPT-6.1 Sol scored 86.6% at low effort, up from 5.4% for GPT-5.6 Sol. At higher effort it reached 97.9%."
+      ],
+      "image": {
+        "url": "https://dataconomy.com/wp-content/uploads/2026/10/openai-reports-sharp-gains-in-cobol-coding-and-mig.png",
+        "credit": "OpenAI",
+        "fit": "contain",
+        "fallback_urls": ["https://superpowerdaily.com/api/story-images/95ae7374-c7bf-457e-b0f2-3c96afa7b291?dpl=81eccc662c595d87260e9cd98cb306c196c83dd8"]
+      }
+    },
+    {
+      "kind": "card",
+      "heading": "The code behind *your bank*",
+      "paras": [
+        "COBOL dates back to 1959. OpenAI cites estimates that it supports more than 40% of online banking systems and 95% of ATM transactions.",
+        "Fortran still runs weather forecasting and nuclear reactor safety analysis. The pool of engineers who know these languages keeps shrinking."
+      ],
+      "image": {
+        "url": "https://mma.prnewswire.com/media/2659723/New_IBM_z17_Mainframe.jpg",
+        "credit": "IBM",
+        "fallback_urls": ["https://techcrunch.com/wp-content/uploads/2025/04/IBM-z17.jpg?w=1024"]
+      },
+      "note": "An IBM z17 mainframe, the kind of machine that still runs COBOL."
+    },
+    {
+      "kind": "summary",
+      "points": [
+        "GPT-6.1 Sol: 97.9% on OpenAI's COBOL migration test",
+        "GPT-6 Astra built a SQLite-style database in 20 languages, averaging 87.4%",
+        "COBOL was the hardest language, rising from 10.9% to 72.1%",
+        "OpenAI ran both tests itself; no outside group has verified them",
+        "OpenAI says experts must still review and test the code"
+      ]
+    },
+    {
+      "kind": "cta",
+      "hook": "Old code still moves the world's money, and AI just learned to read it. Follow for what changes next."
+    }
+  ]
+}
