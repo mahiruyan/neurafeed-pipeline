@@ -48,7 +48,10 @@ export default {
     if (event.cron === '0 7 * * MON') return ctx.waitUntil(dispatch(env, 'report.yml', { days: '7', send: 'true' }));
     if (event.cron === '0 7 1 * *') return ctx.waitUntil(dispatch(env, 'report.yml', { days: '30', send: 'true' }));
     if (event.cron === '0 17 * * SUN') ctx.waitUntil(weeklyReview(env).catch((e) => send(env, `⚠️ Haftalık hafıza gözden geçirmesi hata verdi: ${e.message}`)));
-    else ctx.waitUntil(dueCheck(env));
+    else {
+      ctx.waitUntil(dueCheck(env));
+      ctx.waitUntil(siteDraftCheck(env).catch((e) => console.log(`site drafts: ${e.message}`)));
+    }
   },
   async fetch(req, env, ctx) {
     const url = new URL(req.url);
@@ -102,6 +105,7 @@ async function handle(u, env) {
   if (cb) {
     if (String(cb.message?.chat?.id) !== owner) return;
     if (String(cb.data || '').startsWith('wz:')) return wizardButton(env, cb);
+    if (/^s[pr]:/.test(String(cb.data || ''))) return siteDraftButton(env, cb);
     const [action, id] = String(cb.data || '').split(':');
     if (action === 'mdel') {
       await writeMemory(env, 'delete', { id });
@@ -750,6 +754,66 @@ async function igSummary(env) {
 }
 
 // ---------- Telegram ----------
+// ---------- Website drafts (neurafeedai.com) ----------
+// Every 5 minutes: AI drafts waiting for review on the site arrive here once, with a preview and
+// buttons. "Approve & publish" checks the listed claims, adds the hero image, category and byline,
+// approves and publishes; "Reject" rejects. The site does the work (admin API, bearer token).
+async function siteApi(env, body) {
+  const res = await fetch(`${env.SITE_ADMIN_ORIGIN}/api/jobs/telegram-review`, {
+    method: 'POST', headers: { Authorization: `Bearer ${env.SITE_REVIEW_TOKEN}`, 'Content-Type': 'application/json' }, body: JSON.stringify(body),
+  });
+  const d = await res.json().catch(() => ({}));
+  if (!res.ok) throw new Error(d.error || `site ${res.status}`);
+  return d;
+}
+
+function siteDraftText(d) {
+  const lines = ['📰 Site için yeni makale taslağı', '', d.headline, ''];
+  if (d.dek) lines.push(d.dek, '');
+  if (d.excerpt) lines.push(`${d.excerpt}${d.words > 120 ? '…' : ''}`, '');
+  lines.push(`Kategori: ${d.category || 'yok'} · ${d.words} kelime`);
+  if (d.sources?.length) lines.push(`Kaynaklar: ${d.sources.map((s) => s.name).join(', ')}`);
+  if (d.claimsToCheck?.length) lines.push('', 'Onaylarsan bu iddiaları kaynaklarla kontrol edilmiş sayarım:', ...d.claimsToCheck.map((c) => `• ${c}`));
+  if (d.reviewUrl) lines.push('', `Tamamını oku / düzenle: ${d.reviewUrl}`);
+  return lines.join('\n').slice(0, 3900);
+}
+
+async function siteDraftCheck(env) {
+  if (!env.SITE_ADMIN_ORIGIN || !env.SITE_REVIEW_TOKEN || env.SITE_REVIEW_TOKEN === 'unset') return;
+  const { drafts = [] } = await siteApi(env, { action: 'list' });
+  for (const d of drafts) {
+    if (await env.KV.get(`site:${d.id}`)) continue;
+    await tg(env, 'sendMessage', {
+      chat_id: env.OWNER_CHAT_ID, text: siteDraftText(d), disable_web_page_preview: true,
+      reply_markup: { inline_keyboard: [[{ text: '✅ Onayla ve yayınla', callback_data: `sp:${d.id}` }, { text: '❌ Reddet', callback_data: `sr:${d.id}` }]] },
+    });
+    await env.KV.put(`site:${d.id}`, 'sent', { expirationTtl: 60 * 60 * 24 * 30 });
+  }
+}
+
+async function siteDraftButton(env, cb) {
+  const [action, id] = String(cb.data).split(':');
+  const owner = String(env.OWNER_CHAT_ID);
+  const done = await env.KV.get(`site:${id}`);
+  if (done === 'published' || done === 'rejected') return tg(env, 'answerCallbackQuery', { callback_query_id: cb.id, text: done === 'published' ? 'Zaten yayında' : 'Zaten reddedildi' });
+  await tg(env, 'answerCallbackQuery', { callback_query_id: cb.id, text: action === 'sp' ? 'Yayınlıyorum…' : 'Reddediyorum…' });
+  await tg(env, 'editMessageReplyMarkup', { chat_id: owner, message_id: cb.message.message_id, reply_markup: { inline_keyboard: [] } }).catch(() => {});
+  try {
+    if (action === 'sp') {
+      const r = await siteApi(env, { action: 'approve_publish', articleId: id });
+      await env.KV.put(`site:${id}`, 'published', { expirationTtl: 60 * 60 * 24 * 30 });
+      return send(env, `✅ Yayında${r.category ? ` (${r.category})` : ''}.${r.url ? `\n${r.url}` : ''}`, cb.message.message_id);
+    }
+    await siteApi(env, { action: 'reject', articleId: id, note: 'Rejected from Telegram.' });
+    await env.KV.put(`site:${id}`, 'rejected', { expirationTtl: 60 * 60 * 24 * 30 });
+    return send(env, '❌ Taslak reddedildi, sitede yayınlanmayacak.', cb.message.message_id);
+  } catch (e) {
+    // Put the buttons back so Mahir can try again after fixing the problem.
+    await tg(env, 'editMessageReplyMarkup', { chat_id: owner, message_id: cb.message.message_id, reply_markup: { inline_keyboard: [[{ text: '✅ Onayla ve yayınla', callback_data: `sp:${id}` }, { text: '❌ Reddet', callback_data: `sr:${id}` }]] } }).catch(() => {});
+    return send(env, `⚠️ Olmadı: ${e.message}`, cb.message.message_id);
+  }
+}
+
 async function tg(env, method, body) {
   if (method === 'answerCallbackQuery' && body.callback_query_id === 'typed') return null;
   const res = await fetch(`https://api.telegram.org/bot${env.TELEGRAM_BOT_TOKEN}/${method}`, {
@@ -926,4 +990,4 @@ async function wizardSubmit(env, w) {
 }
 
 // For tests only.
-export const _test = { nextDeskRun, linkStatus };
+export const _test = { nextDeskRun, linkStatus, siteDraftCheck, siteDraftButton, siteDraftText };

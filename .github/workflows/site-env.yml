@@ -1,0 +1,65 @@
+name: Site settings (Netlify)
+
+# Sets the website's server settings on Netlify from GitHub, so no key is ever pasted by hand:
+# - NEURAFEED_TELEGRAM_REVIEW_TOKEN: shared with the Telegram bot (made once, kept in SITE_REVIEW_TOKEN)
+# - NEURAFEED_TELEGRAM_APPROVER_USER_ID: Mahir's user id (the owner who approves from Telegram)
+# Then redeploys the admin site and the bot. Needs NETLIFY_AUTH_TOKEN and SECRETS_PAT.
+on:
+  workflow_dispatch:
+    inputs:
+      approver_user_id:
+        description: "Owner user id (UUID) that approves site drafts from Telegram"
+        required: true
+
+permissions:
+  actions: write
+
+jobs:
+  apply:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Shared review token
+        env:
+          EXISTING: ${{ secrets.SITE_REVIEW_TOKEN }}
+          GH_TOKEN: ${{ secrets.SECRETS_PAT }}
+          REPO: ${{ github.repository }}
+        run: |
+          if [ -n "$EXISTING" ]; then t="$EXISTING"; else
+            [ -n "$GH_TOKEN" ] || { echo "::error::SECRETS_PAT is missing"; exit 1; }
+            t=$(openssl rand -hex 32)
+            printf '%s' "$t" | gh secret set SITE_REVIEW_TOKEN --repo "$REPO"
+            echo "::notice::SITE_REVIEW_TOKEN created"
+          fi
+          echo "::add-mask::$t"
+          echo "TOKEN=$t" >> "$GITHUB_ENV"
+      - name: Netlify environment variables
+        env:
+          NETLIFY: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+          APPROVER: ${{ inputs.approver_user_id }}
+        run: |
+          [ -n "$NETLIFY" ] || { echo "::error::NETLIFY_AUTH_TOKEN is missing"; exit 1; }
+          echo "$APPROVER" | grep -Eiq '^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$' || { echo "::error::approver_user_id is not a UUID"; exit 1; }
+          api=https://api.netlify.com/api/v1
+          site=$(curl -sf -H "Authorization: Bearer $NETLIFY" "$api/sites/neurafeed-staging-admin.netlify.app" | jq -r '.id,.account_slug' | paste -sd' ')
+          set -- $site; id=$1; acct=$2
+          [ -n "$id" ] && [ "$id" != null ] || { echo "::error::site not found"; exit 1; }
+          setvar() { # key value
+            body=$(jq -n --arg k "$1" --arg v "$2" '[{key:$k,scopes:["builds","functions","runtime"],values:[{value:$v,context:"all"}]}]')
+            code=$(curl -s -o /tmp/r -w '%{http_code}' -X POST -H "Authorization: Bearer $NETLIFY" -H 'Content-Type: application/json' "$api/accounts/$acct/env?site_id=$id" -d "$body")
+            if [ "$code" != 201 ] && [ "$code" != 200 ]; then
+              body=$(jq -n --arg k "$1" --arg v "$2" '{key:$k,scopes:["builds","functions","runtime"],values:[{value:$v,context:"all"}]}')
+              code=$(curl -s -o /tmp/r -w '%{http_code}' -X PUT -H "Authorization: Bearer $NETLIFY" -H 'Content-Type: application/json' "$api/accounts/$acct/env/$1?site_id=$id" -d "$body")
+            fi
+            [ "$code" = 200 ] || [ "$code" = 201 ] || { echo "::error::$1: HTTP $code $(jq -r '.message // empty' /tmp/r)"; exit 1; }
+            echo "::notice::$1 set"
+          }
+          setvar NEURAFEED_TELEGRAM_REVIEW_TOKEN "$TOKEN"
+          setvar NEURAFEED_TELEGRAM_APPROVER_USER_ID "$APPROVER"
+          curl -sf -X POST -H "Authorization: Bearer $NETLIFY" "$api/sites/$id/builds" >/dev/null && echo "::notice::admin site redeploy started"
+      - name: Redeploy the bot with the token
+        env:
+          T: ${{ github.token }}
+        run: |
+          curl -s -X POST -H "Authorization: Bearer $T" -H "Accept: application/vnd.github+json" \
+            "https://api.github.com/repos/${{ github.repository }}/actions/workflows/deploy-bot.yml/dispatches" -d '{"ref":"main"}'
+          echo "::notice::bot redeploy started"

@@ -15,13 +15,21 @@ const MIN_WIDTH = 1200;
 
 // Hosts whose images we may reuse with credit, and the license line the site shows.
 const REUSABLE = [
-  [/(^|\.)upload\.wikimedia\.org$/, 'Wikimedia Commons (see credit for license)'],
-  [/(^|\.)images\.pexels\.com$/, 'Pexels License'],
-  [/(^|\.)images\.unsplash\.com$/, 'Unsplash License'],
-  [/(^|\.)(openai\.com|anthropic\.com|nvidianews\.nvidia\.com|blogs\.nvidia\.com|blog\.google|storage\.googleapis\.com|about\.fb\.com|news\.microsoft\.com|apple\.com|x\.ai|newsroom\.tiktok\.com)$/, 'Company press image'],
+  [/(^|\.)upload\.wikimedia\.org$/, 'Wikimedia Commons (see credit for license)', 'Wikimedia Commons'],
+  [/(^|\.)images\.pexels\.com$/, 'Pexels License', 'Pexels'],
+  [/(^|\.)images\.unsplash\.com$/, 'Unsplash License', 'Unsplash'],
+  [/(^|\.)openai\.com$/, 'Company press image', 'OpenAI'],
+  [/(^|\.)anthropic\.com$/, 'Company press image', 'Anthropic'],
+  [/(^|\.)(nvidianews|blogs)\.nvidia\.com$/, 'Company press image', 'NVIDIA'],
+  [/(^|\.)(blog\.google|storage\.googleapis\.com)$/, 'Company press image', 'Google'],
+  [/(^|\.)about\.fb\.com$/, 'Company press image', 'Meta'],
+  [/(^|\.)news\.microsoft\.com$/, 'Company press image', 'Microsoft'],
+  [/(^|\.)apple\.com$/, 'Company press image', 'Apple'],
+  [/(^|\.)x\.ai$/, 'Company press image', 'xAI'],
 ];
 const hostOf = (u) => { try { return new URL(u).hostname; } catch { return ''; } };
 const licenseFor = (url) => REUSABLE.find(([re]) => re.test(hostOf(url)))?.[1] || null;
+const ownerOf = (url) => REUSABLE.find(([re]) => re.test(hostOf(url)))?.[2] || hostOf(url);
 const plain = (s) => String(s || '').replace(/\*/g, '').replace(/\s+/g, ' ').trim();
 
 function dims(file) {
@@ -38,7 +46,7 @@ function toJpeg(src, dest) {
 
 async function altText(file, headline) {
   const key = process.env.OPENAI_API_KEY;
-  if (!key) return `Image for: ${headline}`.slice(0, 300);
+  if (!key) return headline.slice(0, 300);
   try {
     const res = await fetch('https://api.openai.com/v1/chat/completions', {
       method: 'POST',
@@ -49,9 +57,10 @@ async function altText(file, headline) {
       ] }] }),
     });
     const d = await res.json();
+    if (d.error) throw new Error(d.error.message);
     const t = plain(d.choices?.[0]?.message?.content).replace(/[–—]/g, ',');
-    return t ? t.slice(0, 300) : `Image for: ${headline}`.slice(0, 300);
-  } catch { return `Image for: ${headline}`.slice(0, 300); }
+    return t ? t.slice(0, 300) : headline.slice(0, 300);
+  } catch (e) { console.log(`::warning::alt text: ${e.message}`); return headline.slice(0, 300); }
 }
 
 function isNews(job) {
@@ -73,7 +82,10 @@ async function prepareHero(job, outDir) {
       const raw = await download(m.url, path.join(work, `hero-${k}.img`), 15000);
       if (dims(raw).width < MIN_WIDTH) continue;
       const d = toJpeg(raw, dest);
-      meta = { credit: m.credit || hostOf(m.url), license, source_url: m.url, ai: false, ...d };
+      // Press images are credited to the company; Wikimedia, Pexels and Unsplash to the photographer
+      // when the desk named one for this exact photo.
+      const credit = license === 'Company press image' ? ownerOf(m.url) : (m.credit || ownerOf(m.url));
+      meta = { credit, license, source_url: m.url, ai: false, ...d };
       break;
     } catch { /* try the next photo */ }
   }

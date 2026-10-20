@@ -6,6 +6,7 @@ compatibility_date = "2026-09-01"
 OWNER_CHAT_ID = "962175935"
 REPO = "mahiruyan/neurafeed-pipeline"
 DEEPSEEK_MODEL = "deepseek-v4-pro"
+SITE_ADMIN_ORIGIN = "https://neurafeed-staging-admin.netlify.app"
 
 [triggers]
 crons = ["*/5 * * * *", "0 17 * * SUN", "0 7 * * MON", "0 7 1 * *"]

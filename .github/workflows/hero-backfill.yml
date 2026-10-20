@@ -4,6 +4,11 @@ name: Hero backfill
 # then republish the media and the desk feed.
 on:
   workflow_dispatch:
+    inputs:
+      redo:
+        description: "'photos' redoes reused photos (credits); empty only fills missing heroes"
+        required: false
+        default: ''
 
 concurrency:
   group: pipeline-state
@@ -28,6 +33,7 @@ jobs:
       - run: node src/hero-backfill.js
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          REDO: ${{ inputs.redo }}
       - name: Publish heroes and the desk feed
         env:
           MEDIA_REPO_TOKEN: ${{ secrets.MEDIA_REPO_TOKEN }}

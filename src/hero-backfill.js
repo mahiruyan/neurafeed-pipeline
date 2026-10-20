@@ -10,7 +10,9 @@ const { prepareHero } = require('./hero');
   let made = 0;
   for (const item of deskItems()) {
     const outDir = path.join(ROOT, 'out', item.id);
-    if (fs.existsSync(path.join(outDir, 'hero.json'))) continue;
+    // REDO=photos redoes reused photos (fixes credits); illustrations are kept (they cost money).
+    const existing = fs.existsSync(path.join(outDir, 'hero.json')) ? JSON.parse(fs.readFileSync(path.join(outDir, 'hero.json'), 'utf8')) : null;
+    if (existing && !(process.env.REDO === 'photos' && !existing.ai)) continue;
     const job = loadJob(item.id);
     if (!job) continue;
     try {

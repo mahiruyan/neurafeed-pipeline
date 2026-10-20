@@ -280,3 +280,33 @@ test('link status tells waiting, prepared, skipped and posted links apart', asyn
   assert.ok(by['link-b'].next_desk_run);
   assert.equal(by['link-c'].state, 'skipped');
 });
+
+test('site drafts: each draft is announced once; approve publishes through the site API', async () => {
+  const world = fakeWorld();
+  const { _test } = await import(`${modFile}?v=${Math.random()}`);
+  const siteCalls = [];
+  const id = '019bfc68-0000-7000-8000-000000000301';
+  globalThis.fetch = async (url, init = {}) => {
+    if (String(url).startsWith('https://admin.test/api/jobs/telegram-review')) {
+      const body = JSON.parse(init.body);
+      siteCalls.push({ auth: init.headers.Authorization, ...body });
+      if (body.action === 'list') return new Response(JSON.stringify({ drafts: [{ id, headline: 'H', dek: 'D', excerpt: 'x', words: 10, category: 'Companies', sources: [{ name: 'CNBC' }], claimsToCheck: ['A claim'] }] }));
+      return new Response(JSON.stringify({ published: true, url: 'https://neurafeedai.com/news/h', category: 'companies' }));
+    }
+    return world.fetch(url, init);
+  };
+  const env = { ...world.env, SITE_ADMIN_ORIGIN: 'https://admin.test', SITE_REVIEW_TOKEN: 'tok' };
+  await _test.siteDraftCheck(env);
+  await _test.siteDraftCheck(env);
+  const previews = world.sent.filter((m) => m.method === 'sendMessage' && /Site için yeni makale/.test(m.text));
+  assert.equal(previews.length, 1, 'announced once');
+  assert.match(previews[0].text, /A claim/);
+  assert.equal(previews[0].reply_markup.inline_keyboard[0][0].callback_data, `sp:${id}`);
+  await _test.siteDraftButton(env, { id: 'cb', data: `sp:${id}`, message: { chat: { id: 1 }, message_id: 7 } });
+  assert.deepEqual(siteCalls.map((c) => c.action), ['list', 'list', 'approve_publish']);
+  assert.equal(siteCalls[0].auth, 'Bearer tok');
+  assert.ok(world.sent.some((m) => m.method === 'sendMessage' && /Yayında/.test(m.text) && /neurafeedai\.com\/news\/h/.test(m.text)));
+  // A second press does nothing.
+  await _test.siteDraftButton(env, { id: 'cb2', data: `sp:${id}`, message: { chat: { id: 1 }, message_id: 7 } });
+  assert.equal(siteCalls.length, 3);
+});

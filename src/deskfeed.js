@@ -62,10 +62,11 @@ function imagesOf(job) {
   const seen = new Set();
   for (const s of job.slides || []) {
     const im = s.image || {};
-    for (const url of [im.url, ...(im.fallback_urls || [])]) {
+    for (const [k, url] of [im.url, ...(im.fallback_urls || [])].entries()) {
       if (!url || !/^https:\/\//.test(url) || seen.has(url)) continue;
       seen.add(url);
-      out.push({ url, credit: plain(im.credit || ''), slide: s.kind });
+      // The slide's credit belongs to its main photo only, not to its backup URLs.
+      out.push({ url, credit: k === 0 ? plain(im.credit || '') : '', slide: s.kind });
     }
   }
   return out.slice(0, 8);
