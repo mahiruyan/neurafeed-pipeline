@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-20T09:12:22.263Z",
+  "updated_at": "2026-10-20T09:34:02.057Z",
   "jobs": [
     {
       "id": "2026-10-15-google-universal-cart-how-to",
@@ -706,6 +706,30 @@
       ]
     },
     {
+      "id": "2026-10-20-1961-computer-sang-daisy-bell-reel",
+      "status": "render_failed",
+      "posted_at": null,
+      "post_at": "2026-10-20T05:01:00.000Z",
+      "priority": 1,
+      "format": "reel",
+      "headline": "In 1961, a computer sang a song for the first time",
+      "from_link": true,
+      "error": "Command failed: yt-dlp --no-playlist --no-progress --restrict-filenames -f bv*[height<=1920][vcodec^=avc1]+ba[acodec^=mp4a]/bv*[height<=1920]+ba/b[height<=1920]/b --merge-output-format mp4 -o /home/runner/work/neurafeed-pipeline/neurafeed-pipeline/out/2026-10-20-1961-computer-sang-daisy-bell-reel/src/source.%(ext)s https://www.instagram.com/reel/DerXZGLAAts/?mdxt=MWhyNTRrZXN1MnZ1eA==\nERROR: [Instagram] DerXZGLAAts: Instagram sent an empty media response. Check if this post is accessible in your browser without being logged-in. If it is not, then use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Otherwise, if the post is accessible in browser without being logged-in, please report this issue on  https://github.com/yt-dlp/yt-dlp/issues?q= , filling out the appropriate issue template. Confirm you are on the latest version using  yt-dlp -U\n",
+      "tg": []
+    },
+    {
+      "id": "2026-10-20-hawking-flying-wheelchair-ai-reel",
+      "status": "render_failed",
+      "posted_at": null,
+      "post_at": "2026-10-20T14:01:00.000Z",
+      "priority": 1,
+      "format": "reel",
+      "headline": "Even Stephen Hawking got a flying wheelchair before GTA VI!",
+      "from_link": true,
+      "error": "Command failed: yt-dlp --no-playlist --no-progress --restrict-filenames -f bv*[height<=1920][vcodec^=avc1]+ba[acodec^=mp4a]/bv*[height<=1920]+ba/b[height<=1920]/b --merge-output-format mp4 -o /home/runner/work/neurafeed-pipeline/neurafeed-pipeline/out/2026-10-20-hawking-flying-wheelchair-ai-reel/src/source.%(ext)s https://www.instagram.com/reel/DetCWzPsufg/?exln=MWZpdXJpMW9rOHN0ZQ==\nERROR: [Instagram] DetCWzPsufg: Instagram sent an empty media response. Check if this post is accessible in your browser without being logged-in. If it is not, then use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Otherwise, if the post is accessible in browser without being logged-in, please report this issue on  https://github.com/yt-dlp/yt-dlp/issues?q= , filling out the appropriate issue template. Confirm you are on the latest version using  yt-dlp -U\n",
+      "tg": []
+    },
+    {
       "id": "2026-10-20-meta-prometheus-million-gpus",
       "status": "held_cap",
       "posted_at": null,
@@ -723,6 +747,45 @@
         966,
         967,
         968
+      ]
+    },
+    {
+      "id": "2026-10-20-microsoft-ai-models-cannot-be-trusted",
+      "status": "approved",
+      "posted_at": null,
+      "post_at": null,
+      "priority": 2,
+      "format": "news",
+      "headline": "Microsoft just admitted AI models cannot be trusted, even inside your own company",
+      "from_link": false,
+      "error": null,
+      "tg": [
+        985,
+        986,
+        987,
+        988,
+        989,
+        990
+      ]
+    },
+    {
+      "id": "2026-10-20-openai-30-billion-race-anthropic-ipo",
+      "status": "approved",
+      "posted_at": null,
+      "post_at": null,
+      "priority": 1,
+      "format": "news",
+      "headline": "OpenAI is rushing to grab $30 billion before Anthropic's IPO gets it first",
+      "from_link": false,
+      "error": null,
+      "tg": [
+        991,
+        992,
+        993,
+        994,
+        995,
+        996,
+        997
       ]
     },
     {
