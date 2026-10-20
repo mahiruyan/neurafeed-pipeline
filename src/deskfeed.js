@@ -13,6 +13,8 @@ const { ROOT, allJobStates, loadJob } = require('./state');
 
 const OK = new Set(['approved', 'held_cap', 'posted', 'publish_failed']);
 const NOT_NEWS = new Set(['utility', 'single', 'roundup', 'prompt']);
+// Website categories (must match the admin's category slugs).
+const SITE_CATEGORIES = ['breaking', 'companies', 'models', 'robotics', 'free-tools', 'policy'];
 const MAX_ITEMS = 30;
 const MAX_AGE_HOURS = 72;
 const MAX_SUMMARY = 590; // the website keeps 600 characters of a feed summary
@@ -30,6 +32,34 @@ function factsOf(job) {
     if (s.note) out.push(plain(s.note));
   }
   return out.filter(Boolean);
+}
+
+// The desk sets site_category; otherwise a simple guess from the story.
+function categoryOf(job) {
+  if (SITE_CATEGORIES.includes(job.site_category)) return job.site_category;
+  const text = `${job.slides?.[0]?.headline || ''} ${factsOf(job).join(' ')}`.toLowerCase();
+  if (/\b(robot|humanoid|robotaxi|self-driving|waymo|tesla bot|optimus|figure ai)\b/.test(text)) return 'robotics';
+  if (/\b(law|bill|lawsuit|sue|court|regulat|congress|senate|ban|policy|government|ftc|eu )\b/.test(text)) return 'policy';
+  const head = String(job.slides?.[0]?.headline || '').toLowerCase();
+  if (/\b(new model|model|gpt-\d|benchmark|reasoning|open-weight)\b/.test(head)) return 'models';
+  if (job.priority === 1 && job.timely) return 'breaking';
+  return 'companies';
+}
+
+// Every distinct real photo in the carousel, cover first, with its credit: the website picks a
+// hero it may use (size, license) from these. Generated covers are not files we can link here.
+function imagesOf(job) {
+  const out = [];
+  const seen = new Set();
+  for (const s of job.slides || []) {
+    const im = s.image || {};
+    for (const url of [im.url, ...(im.fallback_urls || [])]) {
+      if (!url || !/^https:\/\//.test(url) || seen.has(url)) continue;
+      seen.add(url);
+      out.push({ url, credit: plain(im.credit || ''), slide: s.kind });
+    }
+  }
+  return out.slice(0, 8);
 }
 
 function summaryOf(job) {
@@ -61,7 +91,7 @@ function deskItems(now = Date.now()) {
     if (!Number.isFinite(when) || now - when > MAX_AGE_HOURS * 3600e3) continue;
     const link = primaryLink(job);
     if (!link) continue;
-    items.push({ id: job.id, title: plain(job.slides?.[0]?.headline || job.id), link, summary: summaryOf(job), date: new Date(when), sources: job.sources });
+    items.push({ id: job.id, title: plain(job.slides?.[0]?.headline || job.id), link, summary: summaryOf(job), date: new Date(when), sources: job.sources, category: categoryOf(job), images: imagesOf(job), sensitive: Boolean(job.sensitive) });
   }
   return items.sort((a, b) => b.date - a.date).slice(0, MAX_ITEMS);
 }
@@ -75,9 +105,12 @@ function rss(items, now = new Date()) {
       <author>NeuraFeed news desk</author>
       <description>${esc(i.summary)}</description>
 ${i.sources.map((s) => `      <category domain="${esc(s.url)}">${esc(plain(s.name))}</category>`).join('\n')}
+      <nf:category>${esc(i.category)}</nf:category>
+      <nf:sensitive>${i.sensitive ? 'true' : 'false'}</nf:sensitive>
+${(i.images || []).map((m) => `      <media:content url="${esc(m.url)}" medium="image"><media:credit>${esc(m.credit)}</media:credit></media:content>`).join('\n')}
     </item>`).join('\n');
   return `<?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0">
+<rss version="2.0" xmlns:media="http://search.yahoo.com/mrss/" xmlns:nf="https://neurafeedai.com/ns/desk">
   <channel>
     <title>NeuraFeed news desk (verified stories)</title>
     <link>https://www.instagram.com/neurafeed.ai/</link>
@@ -97,6 +130,6 @@ function writeDeskFeed(file = path.join(ROOT, 'feed', 'desk.xml')) {
   return items.length;
 }
 
-module.exports = { deskItems, summaryOf, factsOf, primaryLink, rss, writeDeskFeed };
+module.exports = { deskItems, summaryOf, factsOf, primaryLink, rss, writeDeskFeed, categoryOf, imagesOf };
 
 if (require.main === module) console.log(`desk feed: ${writeDeskFeed(process.argv[2])} items`);

@@ -87,6 +87,13 @@ same day. Never skip a priority 1 story because other stories are already queued
   NVIDIA, xAI or a story everyone in AI is talking about), 2 = normal (default), 3 = filler.
 - `sensitive`: true for deaths, lawsuits, crime, politics, layoffs, health. Never auto-posted: it is sent to Mahir on Telegram with Approve / Reject buttons. Still write it, especially when it is priority 1.
 - `owner_approved`: only set to true when Mahir himself asked for that story to be posted.
+- `site_category` (news jobs): the website category for the article made from this story, one of
+  `breaking` (major news everyone is talking about, the first hours), `companies`, `models` (a new
+  model, its abilities, benchmarks), `robotics`, `free-tools`, `policy` (laws, lawsuits, government).
+- Website: news jobs also become review-only articles on neurafeedai.com, and the site uses the
+  carousel's photos as the article's hero image. Prefer photos the site may reuse (Wikimedia
+  Commons, the company's own press images, Pexels/Unsplash) and at least 1200 px wide, and always
+  fill `credit`.
 - 3 to 8 slides. First `cover`, last `cta`. `cover`, `card`, `product` and `text` slides need `image.url`.
 - `pos` (optional): CSS object-position. Use it so faces are not cut off.
 - Optional per slide: `size` (paragraph px, default 34), `hsize` (heading px), `gap`.

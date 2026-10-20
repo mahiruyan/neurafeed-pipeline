@@ -35,3 +35,19 @@ test('item: primary non-social link, plain summary under 600 chars with the sour
   const long = summaryOf({ sources: [{ name: 'A' }], slides: [{ kind: 'card', paras: Array(40).fill('A sentence of about forty characters ok.') }] });
   assert.ok(long.length <= 590, String(long.length));
 });
+
+test('desk feed carries the site category, sensitivity and the photos with credits', () => {
+  const { categoryOf, imagesOf, rss } = require('../src/deskfeed');
+  const job = { priority: 2, site_category: 'robotics', sensitive: true, slides: [
+    { kind: 'cover', headline: 'x', image: { url: 'https://a/1.jpg', credit: 'AP', fallback_urls: ['https://a/2.jpg'] } },
+    { kind: 'card', paras: ['y'], image: { url: 'https://a/1.jpg', credit: 'AP' } },
+    { kind: 'card', paras: ['z'], image: { url: 'https://b/3.jpg', credit: 'Reuters' } },
+  ] };
+  assert.equal(categoryOf(job), 'robotics');
+  assert.equal(categoryOf({ ...job, site_category: undefined, timely: true, priority: 1 }), 'breaking');
+  assert.deepEqual(imagesOf(job).map((m) => m.url), ['https://a/1.jpg', 'https://a/2.jpg', 'https://b/3.jpg']);
+  const xml = rss([{ id: 'j', title: 't', link: 'https://l', summary: 's', date: new Date(0), sources: [], category: 'robotics', sensitive: true, images: imagesOf(job) }]);
+  assert.match(xml, /<nf:category>robotics<\/nf:category>/);
+  assert.match(xml, /<nf:sensitive>true<\/nf:sensitive>/);
+  assert.match(xml, /<media:content url="https:\/\/b\/3.jpg" medium="image"><media:credit>Reuters<\/media:credit>/);
+});

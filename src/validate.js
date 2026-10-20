@@ -2,6 +2,7 @@
 const KINDS = new Set(['cover', 'text', 'cta', 'card', 'product', 'post', 'prompt', 'summary']);
 const NEEDS_IMAGE = new Set(['cover', 'text', 'card', 'product']);
 const CARD_MAX_CHARS = 260;
+const SITE_CATEGORIES = new Set(['breaking', 'companies', 'models', 'robotics', 'free-tools', 'policy']);
 const DASHES = /[–—]/; // NeuraFeed rule: no en dash or em dash anywhere.
 
 function textOf(job) {
@@ -20,6 +21,7 @@ function validateReel(job, fileId) {
   if (!job.video || !job.video.url) p.push('video.url is required');
   if (!job.hook) p.push('hook is required');
   if (!job.caption) p.push('caption is required');
+  if (job.site_category !== undefined && !SITE_CATEGORIES.has(job.site_category)) p.push(`site_category must be one of: ${[...SITE_CATEGORIES].join(', ')}`);
   if (!Array.isArray(job.sources) || job.sources.length < 1) p.push('at least one source is required');
   if (typeof job.sensitive !== 'boolean') p.push('sensitive must be true or false');
   if (DASHES.test([job.hook, job.caption, job.credit].join('\n'))) p.push('text contains an en dash or em dash');
