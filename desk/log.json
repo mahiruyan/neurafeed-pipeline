@@ -2784,5 +2784,55 @@
       }
     ],
     "requests": []
+  },
+  {
+    "run_at": "2026-10-20T13:55:22.365Z",
+    "summary": "09:53 NY run: no open links or requests (the two old links are already in skipped.json); queued nothing because today already has 7 news jobs and the last slot is kept for the 11:00 utility post.",
+    "considered": [
+      {
+        "story": "Canadian publishers sue Anthropic in Ontario over Claude training",
+        "source": "https://chatnewstoday.ca/2026/10/19/news-publishers-launch-copyright-suit-against-ai-company-anthropic-in-ontario/",
+        "decision": "skipped",
+        "reason": "Only one small outlet found, searches surface the older OpenAI suit instead, and it is a sensitive Canadian story with little US pull."
+      },
+      {
+        "story": "Anthropic junior share of technical hires drops from 27% to 9%",
+        "source": "https://www.theneuron.ai/news/anthropic-junior-technical-hiring-ai/",
+        "decision": "skipped",
+        "reason": "Only one slot left today and it is reserved for the daily utility post; Anthropic is already heavy today."
+      },
+      {
+        "story": "Nvidia signs physical AI declaration with Germany",
+        "source": "https://blogs.nvidia.com/blog/germany-wants-to-lead-the-world-in-industrial-ai-how-nvidia-will-help/",
+        "decision": "skipped",
+        "reason": "Government partnership with little interest for a US mass audience, and the daily cap is nearly full."
+      },
+      {
+        "story": "ChatGPT takes actions inside open Chrome tabs",
+        "decision": "covered",
+        "reason": "Already posted as 2026-10-16-chatgpt-chrome-tabs-work-mode."
+      },
+      {
+        "story": "DHS orders DeepSeek removed from federal systems",
+        "decision": "skipped",
+        "reason": "Political and sensitive, WSJ paywalled, no second readable source."
+      },
+      {
+        "story": "Mercury 3, MiniMax M3.1 Flash, FLUX 3 Max model launches",
+        "decision": "skipped",
+        "reason": "Company claims from smaller labs with limited US mainstream interest; no slot left."
+      },
+      {
+        "story": "OpenAI $30B raise ahead of Anthropic IPO",
+        "decision": "covered",
+        "reason": "Already queued as 2026-10-20-openai-30-billion-race-anthropic-ipo-v2."
+      },
+      {
+        "story": "Hacker used AI agents to break into 100+ sites",
+        "decision": "covered",
+        "reason": "Already covered as 2026-10-19-ai-agents-hacked-100-sites-50-each."
+      }
+    ],
+    "requests": []
   }
 ]
