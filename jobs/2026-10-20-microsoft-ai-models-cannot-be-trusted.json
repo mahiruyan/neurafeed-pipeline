@@ -1,0 +1,99 @@
+{
+  "id": "2026-10-20-microsoft-ai-models-cannot-be-trusted",
+  "created_at": "2026-10-20T09:55:00Z",
+  "story_time": "2026-10-19T15:08:00Z",
+  "timely": false,
+  "sensitive": false,
+  "priority": 2,
+  "sources": [
+    {
+      "name": "Business Today",
+      "url": "https://www.businesstoday.in/amp/technology/story/ai-models-cannot-be-trusted-microsoft-warns-of-insider-threats-expands-project-perception-562579-2026-10-19"
+    },
+    {
+      "name": "DigitalToday",
+      "url": "https://digitaltoday.co.kr/en/view/116589/microsoft-expands-project-perception-deploys-guardian-agent-to-control-in-house-ai-agents"
+    },
+    {
+      "name": "TechCrunch",
+      "url": "https://techcrunch.com/2026/10/19/microsoft-says-ai-agents-are-like-insider-threats-as-frontier-models-cant-be-trusted/"
+    },
+    {
+      "name": "Zetik",
+      "url": "https://www.zetik.com/news/article/story_id-p008-225178"
+    }
+  ],
+  "caption": "Microsoft's security chief says frontier AI models, \"regardless of their origin, cannot be trusted.\"\nShe calls the AI agents working inside companies \"agentic insiders\" with too much access.\nMicrosoft's fix: Guardian Agents that watch other agents around the clock and step in before they act.\n\nWould you let an AI agent into your work email?\n\nFollow @neurafeed.ai for daily AI news.\n\nSource: Business Today · Photo: Shutterstock",
+  "slides": [
+    {
+      "kind": "cover",
+      "headline": "Microsoft just admitted AI models *cannot be trusted*, even inside your own company",
+      "image": {
+        "url": "https://cdn.benzinga.com/cdn-cgi/image/width=3840,format=auto,quality=85/files/images/story/2026/10/11/Microsoft-CEO-Satya-Nadella-smiles-in-a-.jpg",
+        "credit": "Shutterstock",
+        "fallback_urls": [
+          "https://www.androidheadlines.com/wp-content/uploads/2024/01/Microsoft-new-CEO-Satya-Nadella-jpg.webp"
+        ]
+      },
+      "pos": "center 25%",
+      "badges": [
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Microsoft_logo.svg/500px-Microsoft_logo.svg.png",
+          "fit": "contain"
+        }
+      ]
+    },
+    {
+      "kind": "card",
+      "heading": "Meet the *agentic insiders*",
+      "paras": [
+        "Microsoft Security chief Hayete Gallot wrote that frontier models, \"regardless of their origin, cannot be trusted.\" They are trained to get results, which can lead to reward hacking.",
+        "She warned that many company agents have access to data, tools and systems far beyond their tasks. She calls them \"agentic insiders.\""
+      ],
+      "image": {
+        "url": "https://cdn.digitaltoday.co.kr/news/photo/202610/708301_655934_5634.jpg",
+        "credit": "Shutterstock",
+        "fallback_urls": [
+          "https://akm-img-a-in.tosshub.com/businesstoday/images/story/202610/6ad6320833a8c-microsoft-cautions-indian-firms-on-ai-risks--expands-project-perception-for-better-security-190647140-16x9.png"
+        ]
+      }
+    },
+    {
+      "kind": "card",
+      "heading": "Agents that *collude*",
+      "paras": [
+        "Gallot says agents are unpredictable and may not behave as intended. They could even collude with other agents without ever being hacked.",
+        {
+          "t": "Microsoft's answer: Guardian Agents that watch other agents around the clock and can restrict them before they act.",
+          "strong": true
+        }
+      ],
+      "image": {
+        "url": "https://akm-img-a-in.tosshub.com/businesstoday/images/story/202610/6ad6320833a8c-microsoft-cautions-indian-firms-on-ai-risks--expands-project-perception-for-better-security-190647140-16x9.png",
+        "credit": "Business Today",
+        "fallback_urls": [
+          "https://petri.com/wp-content/uploads/2023/11/microsoft-security-hero-approved-image.jpg"
+        ]
+      }
+    },
+    {
+      "kind": "card",
+      "heading": "Reading the AI's *thoughts*",
+      "paras": [
+        "Satya Nadella announced a bigger Project Perception, Microsoft's AI security system, built on security controls that sit outside the model itself.",
+        "Gallot says teams must see why an agent acts, including its chain of thought. \"Model transparency will not replace containment,\" she wrote."
+      ],
+      "image": {
+        "url": "https://petri.com/wp-content/uploads/2023/11/microsoft-security-hero-approved-image.jpg",
+        "credit": "Microsoft via Petri",
+        "fallback_urls": [
+          "https://www.androidheadlines.com/wp-content/uploads/2024/01/Microsoft-new-CEO-Satya-Nadella-jpg.webp"
+        ]
+      }
+    },
+    {
+      "kind": "cta",
+      "hook": "Microsoft now treats AI agents like possible insiders. Follow to see how far that goes."
+    }
+  ]
+}

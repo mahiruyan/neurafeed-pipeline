@@ -2546,5 +2546,87 @@
       }
     ],
     "requests": []
+  },
+  {
+    "run_at": "2026-10-20T09:31:52.709Z",
+    "summary": "Early run (05:20 NY): queued Mahir's two Reel links (Daisy Bell 1961, Hawking flying wheelchair), OpenAI's $30B raise before Anthropic's IPO, and Microsoft's 'models cannot be trusted' warning. Today now has 4 news jobs plus 2 Reels.",
+    "considered": [
+      {
+        "story": "Mahir link: 1961 IBM 7094 sang Daisy Bell (Reel)",
+        "source": "https://www.instagram.com/reel/DerXZGLAAts/",
+        "decision": "queued",
+        "job_id": "2026-10-20-1961-computer-sang-daisy-bell-reel",
+        "priority": 1
+      },
+      {
+        "story": "Mahir link: AI video of Stephen Hawking in a rocket wheelchair (Reel)",
+        "source": "https://www.instagram.com/reel/DetCWzPsufg/",
+        "decision": "queued",
+        "job_id": "2026-10-20-hawking-flying-wheelchair-ai-reel",
+        "priority": 1
+      },
+      {
+        "story": "OpenAI seeks about $30B at over $1.4T before Anthropic's mid-November IPO (Reuters)",
+        "source": "https://www.thestar.com.my/tech/tech-news/2026/10/20/exclusive-openai-seeks-to-accelerate-fundraising-ahead-of-anthropic-ipo-sources-say",
+        "decision": "queued",
+        "job_id": "2026-10-20-openai-30-billion-race-anthropic-ipo",
+        "priority": 1
+      },
+      {
+        "story": "Microsoft Security says frontier models cannot be trusted, launches Guardian Agents",
+        "source": "https://www.businesstoday.in/amp/technology/story/ai-models-cannot-be-trusted-microsoft-warns-of-insider-threats-expands-project-perception-562579-2026-10-19",
+        "decision": "queued",
+        "job_id": "2026-10-20-microsoft-ai-models-cannot-be-trusted",
+        "priority": 2
+      },
+      {
+        "story": "Old links link-2026-10-13-224 and link-2026-10-14-435",
+        "decision": "skipped",
+        "reason": "Already in inbox/skipped.json and Mahir was notified; no new info."
+      },
+      {
+        "story": "Nscale and Anthropic in talks for another $45B deal",
+        "decision": "covered",
+        "reason": "Already queued as 2026-10-19-anthropic-second-45-billion-nscale-deal."
+      },
+      {
+        "story": "Ex-OpenAI engineer held without bail, Saudi ties",
+        "decision": "covered",
+        "reason": "Already covered as 2026-10-19-openai-bug-suspect-saudi-royal-whatsapp."
+      },
+      {
+        "story": "Gemini 4 Argon fusion conjecture and Minecraft win",
+        "decision": "covered",
+        "reason": "Argon launch and Minecraft story already have jobs."
+      },
+      {
+        "story": "Eric Schmidt owns about 1% of Anthropic (Bloomberg)",
+        "source": "https://www.bloomberg.com",
+        "decision": "skipped",
+        "reason": "Could not read a full source this run; may fit a later IPO story."
+      },
+      {
+        "story": "Anthropic acquires Opaque Systems",
+        "decision": "skipped",
+        "reason": "Deal coverage is mixed (acquisition vs license and acquihire) and not clearly new today."
+      },
+      {
+        "story": "US orders DeepSeek removed from federal systems",
+        "decision": "skipped",
+        "reason": "Political and sensitive; could not read a primary source this run, consider for a later run."
+      },
+      {
+        "story": "Amazon TorchNeuron dev tool takes aim at Nvidia",
+        "source": "https://techcrunch.com/2026/10/19/amazon-is-taking-its-biggest-shot-at-nvidia-yet-with-new-torchneuron-dev-tool/",
+        "decision": "skipped",
+        "reason": "Developer tooling with limited mainstream appeal; kept slots for bigger stories."
+      },
+      {
+        "story": "Mistral Timestral models and CERN partnership",
+        "decision": "skipped",
+        "reason": "Niche for a US Instagram audience."
+      }
+    ],
+    "requests": []
   }
 ]
