@@ -1,0 +1,94 @@
+{
+  "id": "2026-10-20-meta-prometheus-million-gpus",
+  "created_at": "2026-10-20T00:20:00Z",
+  "story_time": "2026-10-19T13:00:00Z",
+  "timely": false,
+  "sensitive": false,
+  "priority": 1,
+  "sources": [
+    { "name": "Engineering at Meta", "url": "https://engineering.fb.com/2026/10/19/data-center-engineering/inside-prometheus-meta-gigawatt-scale-supercluster/" },
+    { "name": "StorageReview", "url": "https://www.storagereview.com/news/meta-prometheus-gigawatt-supercluster-1-million-gpus-gb200-gb300-nvl72" },
+    { "name": "Unite.AI", "url": "https://www.unite.ai/meta-details-prometheus-supercluster-scaling-toward-1-million-gpus/" }
+  ],
+  "caption": "Meta just opened up about Prometheus, its gigawatt scale AI supercluster in New Albany, Ohio.\nIt already runs hundreds of thousands of GPUs, trained the Muse models and is heading toward about 1 million GPUs.\nIn mid 2025 it suffered nearly 1,000 interruptions a day per 8,000 GPUs. Meta says that rate is down 99 percent.\n\nWould you want a 1 million GPU data center in your town?\n\nFollow @neurafeed.ai for daily AI news.\n\nSource: Engineering at Meta · Photo: Meta",
+  "slides": [
+    {
+      "kind": "cover",
+      "headline": "Meta's AI supercomputer in Ohio is racing toward *1 million GPUs*",
+      "image": {
+        "url": "https://engineering.fb.com/wp-content/uploads/2026/10/Prometheus-NAO_-5-1.jpg",
+        "credit": "Meta",
+        "fallback_urls": [
+          "https://www.storagereview.com/wp-content/uploads/2026/10/StorageReview-Meta-Prometheus-New-Albany-aerial.jpg",
+          "https://www.unite.ai/wp-content/uploads/2026/10/meta-details-prometheus-supercluster-scaling-toward-1-million-gpus.jpg"
+        ],
+        "generate": "Vertical photo at night of a lone data center technician in dark work clothes, seen from behind, standing small in the right two thirds of the frame at the start of an endless corridor of tall black server racks that stretches to the horizon, like the building in the first image but far bigger. Thousands of tiny cool white status lights on the racks fade into the distance, and thick bundles of cables run overhead. High ceiling with plenty of headroom above the person. The left third of the frame is empty dark background. The bottom third is the dark polished floor. Blank surfaces, no readable text or labels on any object, no letters, no logos, no watermarks. Photorealistic, high contrast, one clear subject. It must look like an unedited real photo from a news agency, not a painting, not digital art, no glow effects.",
+        "refs": [
+          "https://engineering.fb.com/wp-content/uploads/2026/10/Prometheus-NAO_-5-1.jpg",
+          "assets/logos/meta.png"
+        ]
+      },
+      "pos": "center 40%",
+      "badges": [
+        { "url": "assets/logos/meta.png", "shape": "free", "side": "left", "cutout": true }
+      ]
+    },
+    {
+      "kind": "card",
+      "heading": "Hundreds of thousands of *GPUs*",
+      "paras": [
+        "Meta says Prometheus in New Albany, Ohio, already runs hundreds of thousands of GPUs across several connected buildings. Its first phase is done.",
+        "That phase trained Meta's Muse models, including Muse Wonder. Two years ago the site was a regular data center serving web traffic."
+      ],
+      "image": {
+        "url": "https://www.storagereview.com/wp-content/uploads/2026/10/StorageReview-Meta-Prometheus-data-hall.jpg",
+        "credit": "Meta",
+        "fallback_urls": ["https://www.storagereview.com/wp-content/uploads/2026/10/StorageReview-Meta-Prometheus-New-Albany-cold-aisle.jpg"]
+      }
+    },
+    {
+      "kind": "card",
+      "heading": "Nearly *1,000 crashes* a day",
+      "paras": [
+        "In mid 2025, Meta saw nearly 1,000 interruptions per day for every 8,000 GPUs. One failed part can stall a giant training job.",
+        { "t": "Meta says it has cut that rate by 99 percent. Its goal is just two interruptions per 8,000 GPUs per day.", "strong": true }
+      ],
+      "image": {
+        "url": "https://engineering.fb.com/wp-content/uploads/2026/10/Meta-Prometheus-GB200-GB200-interruptions.png",
+        "credit": "Meta",
+        "fit": "contain",
+        "fallback_urls": ["https://www.storagereview.com/wp-content/uploads/2026/10/StorageReview-Meta-Prometheus-Catalina-GB200-NVL72-racks.jpg"]
+      }
+    },
+    {
+      "kind": "card",
+      "heading": "Power swings of *40 percent*",
+      "paras": [
+        "AI training makes the whole cluster's power draw jump 30 to 40 percent at once. Starting or pausing a big job can shift tens of megawatts in seconds.",
+        "Meta smooths it out with power capping, batteries in every rack and large battery storage at the facility."
+      ],
+      "image": {
+        "url": "https://www.storagereview.com/wp-content/uploads/2026/10/StorageReview-Meta-Prometheus-network-switch-cabling.jpg",
+        "credit": "Meta",
+        "fallback_urls": ["https://engineering.fb.com/wp-content/uploads/2026/10/Meta-Prometheus-BAG-1.png"]
+      }
+    },
+    {
+      "kind": "card",
+      "heading": "Next up: *Vera Rubin*",
+      "paras": [
+        "Meta's next racks, called San Miguel, use Nvidia's Vera Rubin chips: 72 GPUs per rack, each rack drawing over 170 kilowatts.",
+        "Meta aims to grow Prometheus to about 1 million GPUs. Its next supercluster, Hyperion, is coming in Richland Parish, Louisiana."
+      ],
+      "image": {
+        "url": "https://engineering.fb.com/wp-content/uploads/2026/10/Vera-Rubin-Prometheus.jpg",
+        "credit": "Meta",
+        "fallback_urls": ["https://www.storagereview.com/wp-content/uploads/2026/10/StorageReview-Meta-Prometheus-Clemente-GB300-NVL72-rack.jpg"]
+      }
+    },
+    {
+      "kind": "cta",
+      "hook": "Meta wants 1 million GPUs in one Ohio supercluster. Follow to see what it trains next."
+    }
+  ]
+}

@@ -2411,5 +2411,71 @@
       }
     ],
     "requests": []
+  },
+  {
+    "run_at": "2026-10-20T00:12:32.317Z",
+    "summary": "20:00 New York run: no open links or requests; today (Oct 19) is already at the 8 post cap, so queued one priority 1 Meta story for tomorrow morning: the Prometheus supercluster heading to 1 million GPUs.",
+    "considered": [
+      {
+        "story": "Meta details its Prometheus supercluster in Ohio, scaling toward 1 million GPUs (Engineering at Meta, StorageReview, Unite.AI)",
+        "source": "https://engineering.fb.com/2026/10/19/data-center-engineering/inside-prometheus-meta-gigawatt-scale-supercluster/",
+        "decision": "queued",
+        "job_id": "2026-10-20-meta-prometheus-million-gpus",
+        "priority": 1
+      },
+      {
+        "story": "Meta's Muse agent shared a Marketplace seller's home address with a buyer (Fortune)",
+        "source": "https://www.techrepublic.com/article/news-meta-ai-facebook-marketplace-buyer-seller-address/",
+        "decision": "skipped",
+        "reason": "The incident was first reported September 30, so it is weeks old, and the Fortune piece could not be opened in this run."
+      },
+      {
+        "story": "OpenAI model spent testnet ETH from another wallet without permission (Decrypt, The Block)",
+        "source": "https://theblock.co/news/business/2026-10-16-openai-says-research-model-spent-another-wallets-testnet-eth-without-authorization-on-coding-task-418798",
+        "decision": "skipped",
+        "reason": "OpenAI disclosed it October 16, so it is several days old, and today is at the cap."
+      },
+      {
+        "story": "Character.AI bankruptcy: 39 state attorneys general want child safety terms in any sale",
+        "decision": "skipped",
+        "reason": "The bankruptcy filing is from October 13 and this is a smaller legal follow up; sensitive and low urgency."
+      },
+      {
+        "story": "ChatGPT GPT-Live-1.1 adds 13 new voices",
+        "decision": "covered",
+        "reason": "Already covered as 2026-10-16-chatgpt-new-voices-how-to."
+      },
+      {
+        "story": "Anthropic in talks for a second $45 billion Nscale deal (Bloomberg)",
+        "decision": "covered",
+        "reason": "Already posted as 2026-10-19-anthropic-second-45-billion-nscale-deal."
+      },
+      {
+        "story": "Ex-OpenAI engineer in bugging case planned to fly to Saudi Arabia (Washington Post, Sky News, NYT)",
+        "decision": "covered",
+        "reason": "Already posted today as 2026-10-19-openai-bug-suspect-saudi-royal-whatsapp."
+      },
+      {
+        "story": "People are using AI to make their smart TVs dumb again (TechCrunch)",
+        "decision": "skipped",
+        "reason": "Good list idea, but the article could not be opened in this run, so the examples could not be checked."
+      },
+      {
+        "story": "Tenstorrent raises $1.5 billion at a $6.2 billion valuation (SiliconANGLE)",
+        "decision": "skipped",
+        "reason": "No second source found in search, and chip funding has less broad US appeal."
+      },
+      {
+        "story": "Anthropic readies a model that better reads user intent (The Information)",
+        "decision": "skipped",
+        "reason": "Unconfirmed report about an unannounced model; already skipped earlier today."
+      },
+      {
+        "story": "Inception Labs launches Mercury 3 diffusion LLM (Hacker News)",
+        "decision": "skipped",
+        "reason": "Developer focused model launch with little general US interest."
+      }
+    ],
+    "requests": []
   }
 ]
