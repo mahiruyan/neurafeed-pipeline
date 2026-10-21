@@ -29,6 +29,42 @@ function validateReel(job, fileId) {
   return p;
 }
 
+// The website article the desk writes for a news story (job.site_article). Problems here do not
+// block the Instagram post: the desk fixes them, and the desk feed leaves out an article that
+// still has problems (the site then has no draft for that story).
+const ARTICLE_KINDS = new Set(['fact', 'analysis', 'heading', 'why_it_matters']);
+const BANNED_PHRASES = ['game-changing', 'groundbreaking', 'revolutionary', 'rapidly evolving landscape', 'marks a significant milestone', 'it remains to be seen', 'delve into', 'a testament to', 'only time will tell'];
+function validateSiteArticle(job) {
+  const a = job.site_article;
+  if (a === undefined) return [];
+  const p = [];
+  const str = (v) => typeof v === 'string' && v.trim();
+  if (!a || typeof a !== 'object') return ['site_article must be an object'];
+  for (const k of ['headline', 'dek', 'summary', 'seo_title', 'seo_description', 'answer_summary']) if (!str(a[k])) p.push(`site_article.${k} is required`);
+  if (str(a.seo_description) && a.seo_description.length > 160) p.push(`site_article.seo_description is ${a.seo_description.length} characters (max 160)`);
+  if (str(a.headline) && a.headline.length > 110) p.push('site_article.headline is longer than 110 characters');
+  const paras = Array.isArray(a.paragraphs) ? a.paragraphs : [];
+  if (paras.length < 5) p.push('site_article.paragraphs needs at least 5 items');
+  const nSources = (job.sources || []).length;
+  paras.forEach((x, i) => {
+    if (!x || !ARTICLE_KINDS.has(x.kind) || !str(x.text)) { p.push(`site_article paragraph ${i + 1}: kind (fact, analysis, heading, why_it_matters) and text are required`); return; }
+    const src = Array.isArray(x.sources) ? x.sources : [];
+    if (x.kind === 'fact' && (!src.length || !src.every((n) => Number.isInteger(n) && n >= 0 && n < nSources))) p.push(`site_article paragraph ${i + 1}: a fact paragraph needs sources as indexes into job.sources (0 to ${nSources - 1})`);
+    if (x.kind !== 'fact' && src.length) p.push(`site_article paragraph ${i + 1}: only fact paragraphs cite sources`);
+  });
+  if (paras.length && paras[0]?.kind !== 'fact') p.push('site_article: the first paragraph must be a fact paragraph (what happened)');
+  if (paras.length && paras.at(-1)?.kind !== 'why_it_matters') p.push('site_article: the last paragraph must be why_it_matters (a concrete thing to watch next)');
+  const body = paras.map((x) => x?.text || '').join(' ');
+  const words = body.split(/\s+/).filter(Boolean).length;
+  if (words < 450 || words > 850) p.push(`site_article body is ${words} words (write 450 to 850)`);
+  const all = [a.headline, a.dek, a.summary, a.seo_title, a.seo_description, a.answer_summary, a.hero_alt, body].join('\n');
+  if (DASHES.test(all)) p.push('site_article contains an en dash or em dash');
+  const lower = all.toLowerCase();
+  for (const b of BANNED_PHRASES) if (lower.includes(b)) p.push(`site_article uses the phrase "${b}"`);
+  if (/\?/.test(all)) p.push('site_article: no questions (rhetorical questions are not allowed)');
+  return p;
+}
+
 function validateJob(job, fileId) {
   if (job.type === 'reel') return validateReel(job, fileId);
   const p = [];
@@ -64,4 +100,4 @@ function validateJob(job, fileId) {
   return p;
 }
 
-module.exports = { validateJob };
+module.exports = { validateSiteArticle, validateJob };

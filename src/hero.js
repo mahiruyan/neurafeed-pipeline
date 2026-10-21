@@ -67,6 +67,20 @@ function isNews(job) {
   return job.type !== 'reel' && !['utility', 'single', 'roundup', 'prompt'].includes(job.format) && (job.sources || []).length >= 2;
 }
 
+// Any photo at least 1200 px wide, credited to the photographer or the site it came from.
+async function anyPhoto(images, work, dest) {
+  for (const [k, m] of images.entries()) {
+    if (!m?.url || /^(assets|inbox)\//.test(m.url)) continue;
+    try {
+      const raw = await download(m.url, path.join(work, `any-${k}.img`), 15000);
+      if (dims(raw).width < MIN_WIDTH) continue;
+      const d = toJpeg(raw, dest);
+      return { credit: m.credit || ownerOf(m.url), license: 'Used with credit', source_url: m.url, ai: false, ...d };
+    } catch { /* next */ }
+  }
+  return null;
+}
+
 // A new landscape illustration made for NeuraFeed (no copyright question).
 async function illustration(headline, work, dest) {
   const prompt = `Wide editorial illustration for a technology news article titled "${headline}". `
@@ -79,11 +93,30 @@ async function illustration(headline, work, dest) {
 }
 
 // The hero for a website draft that did not come from a desk story: an illustration only.
-async function illustrateDraft(headline, outDir) {
+// The main image of a web page (og:image / twitter:image), absolute URL.
+async function pageImage(pageUrl) {
+  try {
+    const res = await fetch(pageUrl, { headers: { 'User-Agent': 'Mozilla/5.0 (compatible; NeuraFeedBot/1.0)' }, signal: AbortSignal.timeout(20000) });
+    if (!res.ok) return null;
+    const html = (await res.text()).slice(0, 400000);
+    const m = /<meta[^>]+(?:property|name)=["'](?:og:image(?::secure_url)?|twitter:image)["'][^>]*content=["']([^"']+)["']/i.exec(html)
+      || /<meta[^>]+content=["']([^"']+)["'][^>]*(?:property|name)=["'](?:og:image|twitter:image)["']/i.exec(html);
+    return m ? new URL(m[1].replace(/&amp;/g, '&'), pageUrl).toString() : null;
+  } catch { return null; }
+}
+
+async function illustrateDraft(headline, outDir, sourceUrls = []) {
   const work = path.join(outDir, 'src');
   fs.mkdirSync(work, { recursive: true });
   const dest = path.join(outDir, 'hero.jpg');
-  const meta = await illustration(plain(headline), work, dest);
+  let meta = null;
+  try { meta = await illustration(plain(headline), work, dest); } catch (e) { console.log(`::warning::illustration: ${e.message}`); }
+  if (!meta) {
+    const images = [];
+    for (const u of sourceUrls.slice(0, 4)) { const img = await pageImage(u); if (img) images.push({ url: img, credit: ownerOf(u).replace(/^www\./, '') }); }
+    meta = await anyPhoto(images, work, dest);
+  }
+  if (!meta) throw new Error('no illustration and no source photo at least 1200 px wide');
   meta.alt = await altText(dest, plain(headline));
   fs.writeFileSync(path.join(outDir, 'hero.json'), JSON.stringify(meta, null, 2) + '\n');
   fs.rmSync(work, { recursive: true, force: true });
@@ -113,10 +146,17 @@ async function prepareHero(job, outDir) {
     } catch { /* try the next photo */ }
   }
 
-  if (!meta) meta = await illustration(headline, work, dest);
-  meta.alt = await altText(dest, headline);
+  if (!meta) {
+    try { meta = await illustration(headline, work, dest); } catch (e) { console.log(`::warning::hero illustration for ${job.id}: ${e.message}`); }
+  }
+  // No reusable photo and no illustration (for example no OpenAI credits): Mahir accepted using
+  // the story's own photos with credit. The source URL is kept so a photo can be swapped on request.
+  if (!meta) meta = await anyPhoto(imagesOf(job), work, dest);
+  if (!meta) throw new Error('no hero: no photo at least 1200 px wide and no illustration');
+  // The desk writes alt text when it writes the site article (it looked at the photo).
+  meta.alt = (meta.ai ? '' : plain(job.site_article?.hero_alt)) || await altText(dest, headline);
   fs.writeFileSync(path.join(outDir, 'hero.json'), JSON.stringify(meta, null, 2) + '\n');
   return meta;
 }
 
-module.exports = { prepareHero, illustrateDraft, licenseFor, isNews };
+module.exports = { prepareHero, illustrateDraft, anyPhoto, pageImage, licenseFor, isNews };

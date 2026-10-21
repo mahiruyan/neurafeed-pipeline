@@ -39,10 +39,12 @@ never miss a major story.
    `summary` slide in a news carousel), a different image on every picture slide, faces positioned with `pos`, a company
    logo or second face as a badge on the cover when relevant. Use the list or post-story format
    when a story fits it. Set `timely`, `sensitive`, `priority` and `story_time` honestly.
+   Every news job also gets `site_article`: the full website article (450 to 850 words) from the
+   same sources, as "Website article" in CLAUDE.md describes.
 6. Self-check: no en dash or em dash, no invented facts, American spelling, caption ends
    with `Source: <Outlet>`, id equals file name, first slide cover, last slide cta.
-   Run `node -e "const {validateJob}=require('./src/validate');..."` on each new job if
-   Node is available, and fix every problem it reports.
+   Run `node -e "const {validateJob,validateSiteArticle}=require('./src/validate');..."` on each
+   new job if Node is available, and fix every problem either function reports.
 7. Desk log: add this run's entry with `node src/desklog.js /tmp/desk-entry.json` (every story
    you looked at with its decision and reason, and every request you handled).
 8. Commit the new files in jobs/ plus desk/log.json and inbox/skipped.json if changed

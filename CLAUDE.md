@@ -145,6 +145,49 @@ photo. Pick the kind that fits each slide:
 A typical news carousel: cover, 2 to 4 `card` slides (or a `post` when the story is about what
 someone posted), then `cta`. No `summary` slide in news carousels.
 
+## Website article (`site_article`, every news carousel)
+
+Every news job (not reels, utility, single, roundup or prompt posts) also carries the article for
+neurafeedai.com, written in the same run from the same sources. The site has no other writer: a
+story without `site_article` gets no site draft. Mahir approves each article on Telegram before
+it goes live, so write it ready to publish.
+
+```json
+"site_article": {
+  "headline": "Anthropic signs a $45 billion deal for computing power",
+  "dek": "One sentence that adds what the headline leaves out.",
+  "summary": "Two sentences: what happened and the key number.",
+  "seo_title": "Under 65 characters, the main names first",
+  "seo_description": "Under 160 characters, what happened in plain words.",
+  "answer_summary": "One or two sentences that answer the obvious question directly.",
+  "tags": ["Anthropic", "Claude", "AI compute"],
+  "hero_alt": "Plain description of the cover photo (what is visible), under 20 words.",
+  "paragraphs": [
+    { "kind": "fact", "text": "What happened, who, when (absolute date).", "sources": [0, 1] },
+    { "kind": "heading", "text": "What the deal covers" },
+    { "kind": "fact", "text": "...", "sources": [1] },
+    { "kind": "analysis", "text": "What it means, clearly as NeuraFeed's reading, no new facts." },
+    { "kind": "why_it_matters", "text": "One concrete thing to watch next." }
+  ]
+}
+```
+
+- 450 to 850 words in `paragraphs`. Do not pad: if the sources support less, write less detail
+  in more compact paragraphs, never invented background.
+- `sources` are indexes into the job's `sources` array. Every `fact` paragraph cites at least one;
+  `analysis`, `heading` and `why_it_matters` cite none. First paragraph is a `fact` (lead with the
+  news), last is `why_it_matters`. 1 to 3 `heading`s when they help.
+- Voice: a news site, not Instagram. Calm, specific, American English. The headline is factual
+  and clear (no hype words, no clickbait; the carousel headline can be dramatic, this one cannot).
+  Attribute claims ("according to Reuters", "the company said"). Absolute dates, never "today" or
+  "this week". No questions, no "I", "we", "you", no quotes you did not read word for word, no
+  en or em dashes, none of: game-changing, groundbreaking, revolutionary, delve into, a testament
+  to, only time will tell, it remains to be seen, marks a significant milestone, rapidly evolving
+  landscape. Paraphrase; never copy a sentence from a source.
+- `hero_alt`: describe the job's main photo as you saw it (no names you cannot see).
+- Check with `node -e "const {validateSiteArticle}=require('./src/validate');..."` and fix every
+  problem. A problem here does not block the Instagram post, but the site will skip the article.
+
 ## Two more formats (like the reference accounts, made from real sources)
 
 - List / gallery (`"format": "list"`): "Claude shared six projects people built", "the most

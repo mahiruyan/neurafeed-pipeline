@@ -10,6 +10,7 @@
 const fs = require('fs');
 const path = require('path');
 const { ROOT, allJobStates, loadJob } = require('./state');
+const { validateSiteArticle } = require('./validate');
 
 const OK = new Set(['approved', 'held_cap', 'posted', 'publish_failed']);
 const NOT_NEWS = new Set(['utility', 'single', 'roundup', 'prompt']);
@@ -90,6 +91,20 @@ const SOCIAL = /(^|\.)(x|twitter|threads|instagram|facebook|tiktok)\.(com|net)$/
 const hostOf = (u) => { try { return new URL(u).hostname; } catch { return ''; } };
 const primaryLink = (job) => ((job.sources || []).find((x) => !SOCIAL.test(hostOf(x.url))) || job.sources?.[0])?.url;
 
+// The site article the desk wrote (job.site_article), with source indexes resolved to links.
+// Left out while it has validation problems: the site then simply has no draft for the story.
+function articleOf(job) {
+  const a = job.site_article;
+  if (!a || validateSiteArticle(job).length) return null;
+  const src = (n) => ({ name: plain(job.sources[n].name), url: job.sources[n].url });
+  return {
+    headline: plain(a.headline), dek: plain(a.dek), summary: plain(a.summary), seo_title: plain(a.seo_title),
+    seo_description: plain(a.seo_description), answer_summary: plain(a.answer_summary),
+    tags: (a.tags || []).map(plain).filter(Boolean).slice(0, 8),
+    paragraphs: a.paragraphs.map((x) => ({ kind: x.kind, text: plain(x.text), sources: x.kind === 'fact' ? x.sources.map(src) : [] })),
+  };
+}
+
 function deskItems(now = Date.now()) {
   const items = [];
   for (const st of allJobStates()) {
@@ -101,7 +116,7 @@ function deskItems(now = Date.now()) {
     if (!Number.isFinite(when) || now - when > MAX_AGE_HOURS * 3600e3) continue;
     const link = primaryLink(job);
     if (!link) continue;
-    items.push({ id: job.id, title: plain(job.slides?.[0]?.headline || job.id), link, summary: summaryOf(job), date: new Date(when), sources: job.sources, category: categoryOf(job), images: imagesOf(job), sensitive: Boolean(job.sensitive), hero: heroOf(job.id) });
+    items.push({ id: job.id, title: plain(job.slides?.[0]?.headline || job.id), link, summary: summaryOf(job), date: new Date(when), sources: job.sources, category: categoryOf(job), images: imagesOf(job), sensitive: Boolean(job.sensitive), hero: heroOf(job.id), article: articleOf(job) });
   }
   return items.sort((a, b) => b.date - a.date).slice(0, MAX_ITEMS);
 }
@@ -118,7 +133,7 @@ ${i.sources.map((s) => `      <category domain="${esc(s.url)}">${esc(plain(s.nam
       <nf:category>${esc(i.category)}</nf:category>
       <nf:sensitive>${i.sensitive ? 'true' : 'false'}</nf:sensitive>
 ${i.hero ? `      <nf:hero url="${esc(i.hero.url)}" width="${i.hero.width}" height="${i.hero.height}" ai="${i.hero.ai ? 'true' : 'false'}"><nf:alt>${esc(i.hero.alt || '')}</nf:alt><nf:credit>${esc(i.hero.credit || '')}</nf:credit><nf:license>${esc(i.hero.license || '')}</nf:license>${i.hero.source_url ? `<nf:source>${esc(i.hero.source_url)}</nf:source>` : ''}</nf:hero>` : ''}
-${(i.images || []).map((m) => `      <media:content url="${esc(m.url)}" medium="image"><media:credit>${esc(m.credit)}</media:credit></media:content>`).join('\n')}
+${i.article ? `      <nf:article>${esc(JSON.stringify(i.article))}</nf:article>\n` : ''}${(i.images || []).map((m) => `      <media:content url="${esc(m.url)}" medium="image"><media:credit>${esc(m.credit)}</media:credit></media:content>`).join('\n')}
     </item>`).join('\n');
   return `<?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:media="http://search.yahoo.com/mrss/" xmlns:nf="https://neurafeedai.com/ns/desk">
@@ -141,6 +156,6 @@ function writeDeskFeed(file = path.join(ROOT, 'feed', 'desk.xml')) {
   return items.length;
 }
 
-module.exports = { deskItems, summaryOf, factsOf, primaryLink, rss, writeDeskFeed, categoryOf, imagesOf };
+module.exports = { articleOf, deskItems, summaryOf, factsOf, primaryLink, rss, writeDeskFeed, categoryOf, imagesOf };
 
 if (require.main === module) console.log(`desk feed: ${writeDeskFeed(process.argv[2])} items`);

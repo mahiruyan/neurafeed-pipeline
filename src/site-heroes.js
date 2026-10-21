@@ -32,8 +32,8 @@ async function main(mediaDir) {
   console.log(`${drafts.length} draft(s) waiting, ${todo.length} need a hero`);
   for (const d of todo.slice(0, 6)) {
     try {
-      const meta = await illustrateDraft(d.headline || 'AI news', path.join(mediaDir, 'site', d.id));
-      console.log(`hero for ${d.id}: ${meta.width}x${meta.height}`);
+      const meta = await illustrateDraft(d.headline || 'AI news', path.join(mediaDir, 'site', d.id), (d.sources || []).map((x) => x.url));
+      console.log(`hero for ${d.id}: ${meta.width}x${meta.height} ${meta.ai ? 'illustration' : meta.source_url}`);
     } catch (e) { console.log(`::warning::hero for ${d.id}: ${e.message}`); }
   }
 }
