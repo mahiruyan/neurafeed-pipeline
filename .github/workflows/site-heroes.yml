@@ -1,0 +1,42 @@
+name: Site draft heroes
+
+# Hero images for website drafts that did not come from a desk story (the site needs one to
+# publish). The bot starts this when a new draft arrives; the schedule is a safety net.
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '17,47 * * * *'
+
+concurrency:
+  group: site-heroes
+  cancel-in-progress: false
+
+permissions:
+  contents: read
+
+jobs:
+  heroes:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - run: npm install --no-audit --no-fund
+      - run: which ffmpeg || (sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg)
+      - run: git clone --depth 1 "https://mahiruyan:${MEDIA_REPO_TOKEN}@github.com/mahiruyan/neurafeed-media.git" media
+        env:
+          MEDIA_REPO_TOKEN: ${{ secrets.MEDIA_REPO_TOKEN }}
+      - run: node src/site-heroes.js media
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          SITE_ADMIN_ORIGIN: https://neurafeed-staging-admin.netlify.app
+          SITE_REVIEW_TOKEN: ${{ secrets.SITE_REVIEW_TOKEN }}
+      - name: Publish
+        run: |
+          cd media && git config user.name "neurafeed-bot" && git config user.email "neurafeed-bot@users.noreply.github.com"
+          git add -A site 2>/dev/null || true
+          git diff --cached --quiet || (git commit -qm "site draft heroes" && (git push -q || (git pull -q --rebase && git push -q)))

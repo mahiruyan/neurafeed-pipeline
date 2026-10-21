@@ -781,14 +781,26 @@ function siteDraftText(d) {
 async function siteDraftCheck(env) {
   if (!env.SITE_ADMIN_ORIGIN || !env.SITE_REVIEW_TOKEN || env.SITE_REVIEW_TOKEN === 'unset') return;
   const { drafts = [] } = await siteApi(env, { action: 'list' });
+  let fresh = 0;
   for (const d of drafts) {
     if (await env.KV.get(`site:${d.id}`)) continue;
+    // A draft that did not come from a desk story needs a cover made by the pipeline.
+    if (!fresh++) await dispatch(env, 'site-heroes.yml', {}).catch(() => {});
     await tg(env, 'sendMessage', {
       chat_id: env.OWNER_CHAT_ID, text: siteDraftText(d), disable_web_page_preview: true,
       reply_markup: { inline_keyboard: [[{ text: '✅ Onayla ve yayınla', callback_data: `sp:${d.id}` }, { text: '❌ Reddet', callback_data: `sr:${d.id}` }]] },
     });
     await env.KV.put(`site:${d.id}`, 'sent', { expirationTtl: 60 * 60 * 24 * 30 });
   }
+}
+
+// The site answers in English; Mahir reads Turkish.
+function siteErrorTr(msg) {
+  const m = String(msg || '');
+  if (/cover image .* still being made/i.test(m)) return 'Bu taslağın kapak görseli hâlâ hazırlanıyor. 5-10 dakika sonra tekrar bas.';
+  if (/no longer waiting for review/i.test(m)) return 'Bu taslak artık onay beklemiyor (yayınlanmış ya da reddedilmiş olabilir).';
+  if (/review action failed/i.test(m)) return 'Sitede beklenmedik bir hata oldu. Birkaç dakika sonra tekrar dene; olmazsa bana söyle, kayıtlardan bakarım.';
+  return m;
 }
 
 async function siteDraftButton(env, cb) {
@@ -810,7 +822,7 @@ async function siteDraftButton(env, cb) {
   } catch (e) {
     // Put the buttons back so Mahir can try again after fixing the problem.
     await tg(env, 'editMessageReplyMarkup', { chat_id: owner, message_id: cb.message.message_id, reply_markup: { inline_keyboard: [[{ text: '✅ Onayla ve yayınla', callback_data: `sp:${id}` }, { text: '❌ Reddet', callback_data: `sr:${id}` }]] } }).catch(() => {});
-    return send(env, `⚠️ Olmadı: ${e.message}`, cb.message.message_id);
+    return send(env, `⚠️ Olmadı: ${siteErrorTr(e.message)}`, cb.message.message_id);
   }
 }
 

@@ -67,6 +67,29 @@ function isNews(job) {
   return job.type !== 'reel' && !['utility', 'single', 'roundup', 'prompt'].includes(job.format) && (job.sources || []).length >= 2;
 }
 
+// A new landscape illustration made for NeuraFeed (no copyright question).
+async function illustration(headline, work, dest) {
+  const prompt = `Wide editorial illustration for a technology news article titled "${headline}". `
+    + 'A symbolic, cinematic scene that captures the idea, one clear subject, strong light and high contrast. '
+    + 'No real people, no faces of public figures, no logos, blank surfaces, no readable text, letters or labels on any object, no watermarks. '
+    + 'Photorealistic, like a magazine feature photo, not a painting, not digital art, no glow effects.';
+  const raw = await generate(prompt, path.join(work, 'hero-gen.img'), [], '1536x1024');
+  const d = toJpeg(raw, dest);
+  return { credit: 'Illustration: NeuraFeed (AI-generated)', license: 'Original image created for NeuraFeed', source_url: null, ai: true, ...d };
+}
+
+// The hero for a website draft that did not come from a desk story: an illustration only.
+async function illustrateDraft(headline, outDir) {
+  const work = path.join(outDir, 'src');
+  fs.mkdirSync(work, { recursive: true });
+  const dest = path.join(outDir, 'hero.jpg');
+  const meta = await illustration(plain(headline), work, dest);
+  meta.alt = await altText(dest, plain(headline));
+  fs.writeFileSync(path.join(outDir, 'hero.json'), JSON.stringify(meta, null, 2) + '\n');
+  fs.rmSync(work, { recursive: true, force: true });
+  return meta;
+}
+
 async function prepareHero(job, outDir) {
   if (!isNews(job)) return null;
   const headline = plain(job.slides?.[0]?.headline || job.id);
@@ -90,18 +113,10 @@ async function prepareHero(job, outDir) {
     } catch { /* try the next photo */ }
   }
 
-  if (!meta) {
-    const prompt = `Wide editorial illustration for a technology news article titled "${headline}". `
-      + 'A symbolic, cinematic scene that captures the idea, one clear subject, strong light and high contrast. '
-      + 'No real people, no faces of public figures, no logos, blank surfaces, no readable text, letters or labels on any object, no watermarks. '
-      + 'Photorealistic, like a magazine feature photo, not a painting, not digital art, no glow effects.';
-    const raw = await generate(prompt, path.join(work, 'hero-gen.img'), [], '1536x1024');
-    const d = toJpeg(raw, dest);
-    meta = { credit: 'Illustration: NeuraFeed (AI-generated)', license: 'Original image created for NeuraFeed', source_url: null, ai: true, ...d };
-  }
+  if (!meta) meta = await illustration(headline, work, dest);
   meta.alt = await altText(dest, headline);
   fs.writeFileSync(path.join(outDir, 'hero.json'), JSON.stringify(meta, null, 2) + '\n');
   return meta;
 }
 
-module.exports = { prepareHero, licenseFor, isNews };
+module.exports = { prepareHero, illustrateDraft, licenseFor, isNews };
