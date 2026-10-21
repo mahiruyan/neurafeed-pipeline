@@ -1,0 +1,82 @@
+{
+  "id": "2026-10-21-claude-duet-works-while-you-sleep",
+  "created_at": "2026-10-21T20:10:00Z",
+  "story_time": "2026-10-21T19:00:00Z",
+  "timely": false,
+  "sensitive": false,
+  "priority": 1,
+  "review": true,
+  "site_category": "breaking",
+  "sources": [
+    { "name": "Anthropic", "url": "https://claude.com/resources/articles/claude-duet" },
+    { "name": "9to5Mac", "url": "https://9to5mac.com/2026/10/21/anthropic-takes-on-chatgpt-dots-and-meta-muse-with-claude-duet/" },
+    { "name": "Unite.AI", "url": "https://www.unite.ai/anthropic-opens-claude-duet-research-preview-to-us-pro-and-max-users/" }
+  ],
+  "caption": "Anthropic launched Claude Duet, a new app where Claude works as a proactive agent.\nIt sends a morning brief, checks your connected apps every few hours and keeps working on its own cloud computer while your phone is off.\nIt asks before it sends, pays, signs or deletes anything. US Pro and Max users can join the waitlist now.\n\nWould you let an AI agent run your inbox while you sleep?\n\nFollow @neurafeed.ai for daily AI news.\n\nSource: Anthropic · Photo: Anthropic",
+  "slides": [
+    { "kind": "cover",
+      "headline": "Anthropic just launched a Claude that *keeps working while you sleep*",
+      "image": { "url": "https://9to5mac.com/wp-content/uploads/sites/6/2026/10/claude-duet.jpg", "credit": "Anthropic",
+        "fallback_urls": ["https://www.unite.ai/wp-content/uploads/2026/10/anthropic-opens-claude-duet-research-preview-to-us-pro-and-max-users.jpg"] },
+      "pos": "center center",
+      "badges": [ { "url": "assets/logos/claude.png", "fit": "contain" } ],
+      "badge_side": "right" },
+    { "kind": "card",
+      "heading": "Claude now *messages you first*",
+      "paras": [
+        "Claude Duet is a new app where Claude acts as a proactive agent. It sends a short morning brief of what matters across your apps.",
+        "It checks your connected accounts every few hours and only pings you when something needs attention."
+      ],
+      "image": { "url": "https://i.ytimg.com/vi/Fb-68zqcSVs/maxresdefault.jpg", "credit": "Anthropic",
+        "fallback_urls": ["https://i.ytimg.com/vi/Fb-68zqcSVs/hqdefault.jpg"] } },
+    { "kind": "card",
+      "heading": "It works with your *laptop off*",
+      "paras": [
+        "Duet runs on its own virtual machine with its own browser, so your phone and laptop can stay off.",
+        "It can use over 6,000 connectors and plugins, including Gmail, Slack, QuickBooks, Stripe and Shopify."
+      ],
+      "image": { "url": "https://assets.claude.com/c3618d5ce675bcaa9716a06d180879c2b94161c3.png", "credit": "Anthropic", "fit": "contain" } },
+    { "kind": "card",
+      "heading": "It has to *ask before it acts*",
+      "paras": [
+        "Before it sends a message, pays, signs a document or deletes anything, Duet shows the plan and waits for your OK.",
+        { "t": "Trading stocks and moving money between accounts are blocked, even with approval.", "strong": true }
+      ],
+      "image": { "url": "https://www.unite.ai/wp-content/uploads/2026/10/anthropic-opens-claude-duet-research-preview-to-us-pro-and-max-users.jpg", "credit": "Unite.AI" } },
+    { "kind": "card",
+      "heading": "Who can *get it now*",
+      "paras": [
+        "It is a waitlist research preview for US Pro and Max subscribers, on iOS, Android and claude.ai.",
+        "No extra cost, but background work counts toward your plan's usage limits."
+      ],
+      "image": { "url": "https://claude.com/resources/articles/claude-duet/opengraph-image/og", "credit": "Anthropic", "fit": "contain" },
+      "note": "Anthropic says Duet can still misread a thread or misjudge what is urgent." },
+    { "kind": "cta",
+      "hook": "Claude Duet is just a preview. Follow to see what it can really do once people start using it." }
+  ],
+  "site_article": {
+    "headline": "Anthropic launches Claude Duet, a proactive agent app for Pro and Max users",
+    "dek": "The research preview monitors connected apps, works in the background on a cloud computer and asks for approval before it acts.",
+    "summary": "Anthropic opened a waitlist research preview of Claude Duet, an app in which Claude works as a proactive agent, on October 21, 2026. It starts with Pro and Max subscribers in the US and draws on more than 6,000 connectors and plugins.",
+    "seo_title": "Anthropic launches Claude Duet, a proactive Claude agent app",
+    "seo_description": "Claude Duet sends a morning brief, checks connected apps every few hours and runs tasks on a cloud computer. US Pro and Max users can join the waitlist.",
+    "answer_summary": "Claude Duet is a new Anthropic app in which Claude works as an always on agent across connected apps. It is a waitlist research preview for US Pro and Max subscribers, included in those plans at no extra cost.",
+    "tags": ["Anthropic", "Claude", "Claude Duet", "AI agents"],
+    "hero_alt": "Promotional image for Anthropic's new Claude Duet app.",
+    "paragraphs": [
+      { "kind": "fact", "text": "Anthropic introduced Claude Duet on October 21, 2026, a new app in which its Claude model works as a proactive agent rather than waiting for a prompt. The company is opening it as a research preview through a waitlist, starting with Pro and Max subscribers in the United States, and says it will email people when their access is ready.", "sources": [0, 2] },
+      { "kind": "fact", "text": "The app is available on iOS, on Android and on the web at claude.ai for invited users. According to 9to5Mac, Anthropic plans to bring it to Team and Enterprise plans later, but it is not offered on those plans yet. Anthropic said Duet is powered by Claude Opus 5.5.", "sources": [0, 1] },
+      { "kind": "heading", "text": "How the agent works" },
+      { "kind": "fact", "text": "Users talk to Duet in a single ongoing thread, by typing or by voice, and both quick questions and longer projects start in the same place. The app carries over the memory, skills and connected apps from a person's existing Claude account, and 9to5Mac reported that it can also search past conversations.", "sources": [0, 1] },
+      { "kind": "fact", "text": "Each morning the agent sends a short brief on the most important items across the user's connected apps. During the day it checks those accounts every few hours and sends a message only when something needs attention. Anthropic said users can set what they want to hear about and how often.", "sources": [0, 2] },
+      { "kind": "fact", "text": "Longer jobs run in the background on a virtual machine with its own browser, so the user's phone or laptop does not need to stay on. The company listed tasks such as scheduling meetings, building dashboards, preparing financial or sales forecasts, prototyping and building web apps. 9to5Mac described a Tasks tab that tracks ongoing work and a Make tab for larger files such as research briefs, financial models and slide decks.", "sources": [0, 1] },
+      { "kind": "fact", "text": "Duet can use more than 6,000 connectors and plugins from the Claude Marketplace. Anthropic named Gmail, Slack, QuickBooks, Stripe, Gusto, LinkedIn, Docusign, HubSpot, Canva and Shopify among the services it works with. For business purchases it uses Link, the digital wallet from Stripe, with a virtual card so the real card number is not shared, and it can also check out with Shop Pay. Sign in through saved 1Password logins is planned, with user permission.", "sources": [0, 2] },
+      { "kind": "heading", "text": "Approvals and limits" },
+      { "kind": "fact", "text": "Anthropic said the agent shows exactly what it is about to do and waits for approval before it sends messages, makes payments, signs documents or deletes anything. Some actions stay off limits even with approval, including trading securities and moving money between accounts. A dedicated classifier and safety system prompt are meant to reject requests to share the most sensitive information, such as credit card numbers and government ID, and the company said Duet never directly sees passwords or sign in tokens.", "sources": [0, 2] },
+      { "kind": "fact", "text": "According to Unite.AI, red teams and an outside firm penetration tested the app, and it is covered by Anthropic's public bug bounty program. Anthropic said it would publish more details about the safety design in the coming days.", "sources": [2] },
+      { "kind": "fact", "text": "During the preview, Duet is included in the Pro and Max plans at no added cost and shares their usage limits. Background checks count toward those limits, and 9to5Mac noted that Anthropic warned users could reach their limits sooner than with chat alone. Anthropic also listed known weaknesses: the agent may misread a thread or misjudge what is urgent, it handles personal errands such as booking tickets less well than work tasks, it cannot yet show users its browser, and it lives in a separate app from the main Claude app.", "sources": [0, 1] },
+      { "kind": "analysis", "text": "Duet moves Claude from a chat window toward an assistant that watches a person's work accounts and acts on its own schedule. The approval gates and the hard block on moving money show where Anthropic is drawing the line for now, and the decision to start with paying US subscribers through a waitlist keeps the first wave small while the company tests how well the agent judges urgency." },
+      { "kind": "why_it_matters", "text": "The next markers are how quickly Anthropic clears the waitlist, when Team and Enterprise customers get access, and what the promised safety design details reveal about how the agent handles mistakes." }
+    ]
+  }
+}

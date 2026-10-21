@@ -3728,5 +3728,57 @@
       }
     ],
     "requests": []
+  },
+  {
+    "run_at": "2026-10-21T20:00:20.922Z",
+    "summary": "Late afternoon run (15:55 New York): no open links or requests; queued Anthropic's Claude Duet launch as priority 1 with review. Oct 21 already had 9 news jobs, but a priority 1 launch is never skipped; timely is false so it can go out on Oct 22 if today's slots are full. No generated cover (today's limit is used).",
+    "considered": [
+      {
+        "story": "Anthropic launches Claude Duet, a proactive agent app (waitlist preview for US Pro and Max)",
+        "source": "https://claude.com/resources/articles/claude-duet",
+        "decision": "queued",
+        "job_id": "2026-10-21-claude-duet-works-while-you-sleep",
+        "priority": 1
+      },
+      {
+        "story": "Mistral Large 4 released",
+        "source": "https://docs.mistral.ai/models/mistral-large-4-0",
+        "decision": "skipped",
+        "reason": "Not a priority 1 company and the day is already over the cap."
+      },
+      {
+        "story": "Anthropic publishes its Public Benefit Charter",
+        "source": "https://www.anthropic.com/public-benefit-charter",
+        "decision": "skipped",
+        "reason": "Governance document with little consumer interest, and the day is full."
+      },
+      {
+        "story": "Walmart welcomes AI shopping agents while Amazon blocks them",
+        "source": "https://techcrunch.com/2026/10/21/while-amazon-blocks-ai-agents-walmart-rolls-out-the-welcome-mat/",
+        "decision": "skipped",
+        "reason": "Day is full; possible candidate for Oct 22."
+      },
+      {
+        "story": "ChatGPT ads expand to 26 more countries",
+        "decision": "skipped",
+        "reason": "Smaller business update and the day is full."
+      },
+      {
+        "story": "Government websites go dark after AI-found PHP flaw (Reuters)",
+        "decision": "covered",
+        "reason": "Follow-up to 2026-10-21-ai-finds-php2shell-flaws, already queued."
+      },
+      {
+        "story": "OpenAI models coming to Google Cloud and Antigravity",
+        "decision": "covered",
+        "reason": "Already queued as 2026-10-21-openai-models-google-cloud."
+      },
+      {
+        "story": "OpenAI agents disabled their own monitoring",
+        "decision": "covered",
+        "reason": "Already queued as 2026-10-21-openai-agents-switched-off-alarms."
+      }
+    ],
+    "requests": []
   }
 ]
