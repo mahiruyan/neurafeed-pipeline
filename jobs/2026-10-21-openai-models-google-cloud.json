@@ -1,0 +1,77 @@
+{
+  "id": "2026-10-21-openai-models-google-cloud",
+  "created_at": "2026-10-21T14:10:00Z",
+  "story_time": "2026-10-21T12:22:00Z",
+  "timely": true,
+  "sensitive": false,
+  "priority": 1,
+  "review": true,
+  "site_category": "companies",
+  "sources": [
+    { "name": "OpenAI", "url": "https://openai.com/index/openai-models-google-cloud/" },
+    { "name": "Investing.com", "url": "https://www.investing.com/news/stock-market-news/openai-expands-google-cloud-access-as-ai-rivals-deepen-ties-4962939" },
+    { "name": "NewsBytes", "url": "https://www.newsbytesapp.com/news/science/openai-s-ai-models-to-be-available-on-google-cloud/story" }
+  ],
+  "caption": "OpenAI's frontier models and Codex are coming to Google Cloud's Model Garden in the coming weeks.\nCompanies can pay with the cloud budgets they already committed to Google.\nIt puts OpenAI on all three major US clouds, months after its Microsoft exclusivity ended.\n\nWould you build with OpenAI inside Google's cloud?\n\nFollow @neurafeed.ai for daily AI news.\n\nSource: OpenAI · Photo: NewsBytes",
+  "slides": [
+    {
+      "kind": "cover",
+      "headline": "OpenAI just moved into *Google's house*. Its models are coming to Google Cloud",
+      "image": {
+        "url": "https://i.cdn.newsbytesapp.com/images/l50320261021174946.jpeg",
+        "credit": "NewsBytes",
+        "fallback_urls": [
+          "https://www.webpronews.com/wp-content/uploads/2026/10/openai-google-cloud-model-garden-featured.jpg"
+        ]
+      },
+      "pos": "center 35%",
+      "badges": [
+        { "url": "assets/logos/openai.png", "shape": "free" },
+        { "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Google_%22G%22_logo.svg/500px-Google_%22G%22_logo.svg.png", "shape": "free" }
+      ]
+    },
+    {
+      "kind": "card",
+      "heading": "Rivals, *same store*",
+      "paras": [
+        "OpenAI said Wednesday its frontier models and Codex agent workflows are coming to Model Garden, Google Cloud's AI model marketplace.",
+        "Google makes Gemini, a direct rival to ChatGPT. Wide availability is planned in the coming weeks."
+      ],
+      "image": {
+        "url": "https://www.webpronews.com/wp-content/uploads/2026/10/openai-google-cloud-model-garden-featured.jpg",
+        "credit": "WebProNews",
+        "fallback_urls": ["https://cdn.digitaltoday.co.kr/news/photo/202610/708992_656586_4439.jpg"]
+      }
+    },
+    {
+      "kind": "card",
+      "heading": "Paid with *money already promised*",
+      "paras": [
+        "Companies can buy OpenAI models through Google Cloud Marketplace and draw down the spending they already committed to Google.",
+        "Regulated industries get Google's access controls and data governance on top."
+      ],
+      "image": {
+        "url": "https://cdn.digitaltoday.co.kr/news/photo/202610/708992_656586_4439.jpg",
+        "credit": "Shutterstock / Digital Today",
+        "fallback_urls": ["https://i.cdn.newsbytesapp.com/images/l50320261021174946.jpeg"]
+      }
+    },
+    {
+      "kind": "card",
+      "heading": "Now on *all three* big clouds",
+      "paras": [
+        "OpenAI's exclusive deal with Microsoft ended in April and Amazon followed. Its models will also come to Google's Antigravity coding tool.",
+        { "t": "OpenAI says Microsoft is still its primary cloud partner.", "strong": true }
+      ],
+      "image": {
+        "url": "https://images.ctfassets.net/kftzwdyauwt9/659u0DsrtDQd9LxI8L4J9M/0b95908d6a9ed46ffe20b23d081574b4/openai-models-coming-to-google-cloud-social.png?w=1600&h=900&fit=fill",
+        "credit": "OpenAI",
+        "fit": "contain"
+      }
+    },
+    {
+      "kind": "cta",
+      "hook": "AI rivals are now selling through each other's clouds. Follow to see who wins the deal war."
+    }
+  ]
+}

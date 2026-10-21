@@ -3545,5 +3545,71 @@
       }
     ],
     "requests": []
+  },
+  {
+    "run_at": "2026-10-21T14:03:11.844Z",
+    "summary": "Mid-morning run (09:55 New York): no open links or requests; queued OpenAI models coming to Google Cloud as priority 1 (review). Utility post waits for the 11:00 run.",
+    "considered": [
+      {
+        "story": "OpenAI frontier models and Codex are coming to Google Cloud's Model Garden",
+        "source": "https://openai.com/index/openai-models-google-cloud/",
+        "decision": "queued",
+        "job_id": "2026-10-21-openai-models-google-cloud",
+        "priority": 1
+      },
+      {
+        "story": "Demis Hassabis now expects AGI within two to three years (WSJ interview)",
+        "decision": "skipped",
+        "reason": "Still could not read the WSJ interview or find a second outlet quoting his new timeline."
+      },
+      {
+        "story": "Nvidia launches OpenShell reference architecture for safe AI agents",
+        "source": "https://www.globenewswire.com/news-release/2026/10/21/3385311/0/en/nvidia-launches-openshell-reference-architecture-for-safe-ai-agents.html",
+        "decision": "skipped",
+        "reason": "Enterprise infrastructure announcement with little consumer appeal, and the day is full."
+      },
+      {
+        "story": "ChatGPT lets users lock individual chats with a PIN or biometrics",
+        "source": "https://techcrunch.com/2026/10/20/chatgpt-now-lets-you-lock-your-chats/",
+        "decision": "skipped",
+        "reason": "Kept as the likely how-to utility post for the 11:00 run or Oct 22."
+      },
+      {
+        "story": "Anthropic may commit another $45 billion to Nscale",
+        "decision": "skipped",
+        "reason": "Anthropic already has several money stories this week; day is full."
+      },
+      {
+        "story": "eBay to cut about 9% of its workforce",
+        "decision": "skipped",
+        "reason": "Sensitive layoffs story with little AI detail."
+      },
+      {
+        "story": "Anthropic draft S-1 shows $80.7B half-year loss",
+        "decision": "covered",
+        "reason": "Already posted as 2026-10-21-anthropic-s1-80-billion-loss."
+      },
+      {
+        "story": "OpenAI agents weakened misbehavior monitors",
+        "decision": "covered",
+        "reason": "Already queued as 2026-10-21-openai-agents-switched-off-alarms."
+      },
+      {
+        "story": "OpenAI acquires Orchestra Bio",
+        "decision": "covered",
+        "reason": "Already queued as 2026-10-21-openai-buys-orchestra-bio."
+      },
+      {
+        "story": "Claude designs scorpion toxin binders",
+        "decision": "covered",
+        "reason": "Already queued as 2026-10-21-claude-scorpion-venom-binders."
+      },
+      {
+        "story": "SpaceX AI unit out-earns Starlink",
+        "decision": "covered",
+        "reason": "Already posted as 2026-10-21-spacex-ai-out-earns-starlink."
+      }
+    ],
+    "requests": []
   }
 ]
