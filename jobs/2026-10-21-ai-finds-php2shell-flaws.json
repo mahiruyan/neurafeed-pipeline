@@ -1,0 +1,124 @@
+{
+  "id": "2026-10-21-ai-finds-php2shell-flaws",
+  "created_at": "2026-10-21T18:20:00Z",
+  "story_time": "2026-10-21T14:00:00Z",
+  "timely": true,
+  "sensitive": false,
+  "priority": 1,
+  "review": true,
+  "site_category": "breaking",
+  "sources": [
+    { "name": "Wiz Research", "url": "https://www.wiz.io/blog/php2shell-php-rce" },
+    { "name": "The Next Web", "url": "https://thenextweb.com/news/php2shell-php-rce-ai-openai-wiz" },
+    { "name": "Security Boulevard", "url": "https://securityboulevard.com/2026/10/most-of-the-worlds-websites-threatened-by-critical-php-flaws-found-with-ai/" },
+    { "name": "Imperva", "url": "https://www.imperva.com/blog/php2shell-vulnerability-updates/" }
+  ],
+  "caption": "AI models helped researchers find two critical flaws in PHP, the language Wiz says runs about 70% of websites.\nThe bugs, called PHP2Shell, can let an attacker run code on a server without logging in.\nPHP shipped emergency patches on October 21, and Cloudflare turned on protection for every customer.\n\nIs AI finding bugs faster than humans can fix them?\n\nFollow @neurafeed.ai for daily AI news.\n\nSource: Wiz Research, The Next Web · Photo: Ben Griffiths / Unsplash",
+  "slides": [
+    {
+      "kind": "cover",
+      "headline": "AI just found a hole in the code that runs *70% of websites*",
+      "image": {
+        "url": "https://media.thenextweb.com/2026/10/php-elephant-plush-laptop-code.jpg",
+        "credit": "Ben Griffiths / Unsplash",
+        "fallback_urls": [
+          "https://media.thenextweb.com/2026/10/php-elephant-plush-laptop-code-1200.avif",
+          "https://www.datocms-assets.com/75231/1792534907-img_7274.png"
+        ]
+      },
+      "pos": "center 40%",
+      "badges": [
+        { "url": "assets/logos/openai.png", "shape": "free" }
+      ]
+    },
+    {
+      "kind": "card",
+      "heading": "Two bugs, *rated 9.2*",
+      "paras": [
+        "The flaws, nicknamed PHP2Shell, are tracked as CVE-2026-109618 and CVE-2026-109619. Each scores 9.2 on the CVSS scale.",
+        "They can let an attacker run code on a server without logging in. Wiz says almost every PHP version back to 5.4 is hit."
+      ],
+      "image": {
+        "url": "https://www.datocms-assets.com/75231/1792534907-img_7274.png",
+        "credit": "Wiz",
+        "fit": "contain",
+        "fallback_urls": ["https://www.imperva.com/blog/wp-content/uploads/sites/9/2026/10/header.png"]
+      }
+    },
+    {
+      "kind": "card",
+      "heading": "Found with *GPT and Gemini*",
+      "paras": [
+        "Security firm Calif found the first bug in August using OpenAI's GPT-5.6 Sol, in an audit OpenAI funded through Patch the Planet.",
+        "Google's Wiz says it found the flaws on its own weeks later with Gemini 4 Argon and GPT-5.6 Sol."
+      ],
+      "image": {
+        "url": "https://research.jfrog.com/img/RealTimePostImage/post/php2shell/image.png",
+        "credit": "JFrog Security Research",
+        "fit": "contain",
+        "fallback_urls": ["https://www.imperva.com/blog/wp-content/uploads/sites/9/2026/10/header.png"]
+      }
+    },
+    {
+      "kind": "card",
+      "heading": "The internet *hits the brakes*",
+      "paras": [
+        "Cloudflare switched on firewall rules for every customer, free accounts included, hours before the disclosure.",
+        "Pinboard and the GrapheneOS forum took parts of their sites down, and Laravel paused its Cloud deployments."
+      ],
+      "image": {
+        "url": "https://www.imperva.com/blog/wp-content/uploads/sites/9/2026/10/header.png",
+        "credit": "Imperva",
+        "fit": "contain",
+        "fallback_urls": ["https://runtimewire.com/og/openai-ai-assisted-php-critical-vulnerabilities.16x9.jpg?v=og2-1u98ijg"]
+      }
+    },
+    {
+      "kind": "card",
+      "heading": "Run a PHP site? *Update now*",
+      "paras": [
+        "The fixes are in PHP 8.5.12, 8.4.27, 8.3.36 and 8.2.35. PHP says updating is the only safe choice.",
+        { "t": "Risk is highest on Apache servers running mod_php.", "strong": true }
+      ],
+      "image": {
+        "url": "https://runtimewire.com/og/openai-ai-assisted-php-critical-vulnerabilities.16x9.jpg?v=og2-1u98ijg",
+        "credit": "RuntimeWire",
+        "fit": "contain",
+        "fallback_urls": ["https://static.cryptobriefing.com/wp-content/uploads/2026/10/21123942/library-openai-flags-two-critical-php-flaws-and-ships-a-tool-to--800x450.png"]
+      }
+    },
+    {
+      "kind": "cta",
+      "hook": "AI is now finding internet-scale bugs before attackers do. Follow to see what it catches next."
+    }
+  ],
+  "site_article": {
+    "headline": "AI-assisted research uncovers two critical PHP flaws, prompting emergency patches",
+    "dek": "Researchers using OpenAI and Google models found the PHP2Shell bugs, which can allow remote code execution without authentication on affected servers.",
+    "summary": "PHP released emergency security updates on October 21, 2026, for two memory-safety flaws, each rated 9.2 on the CVSS scale, that researchers found with help from AI models. Wiz estimates PHP runs about 70% of websites, and nearly every version back to PHP 5.4 is affected by at least one of the bugs.",
+    "seo_title": "PHP2Shell: AI helps find two critical PHP flaws, patches out",
+    "seo_description": "PHP patched two critical flaws, CVE-2026-109618 and CVE-2026-109619, found with help from OpenAI and Google AI models. Update to the latest versions now.",
+    "answer_summary": "PHP2Shell is a pair of critical PHP flaws that can let an attacker run code on a server without logging in. The fix is to update to PHP 8.5.12, 8.4.27, 8.3.36 or 8.2.35.",
+    "tags": ["PHP", "PHP2Shell", "OpenAI", "Wiz", "Cybersecurity", "Gemini"],
+    "hero_alt": "A plush toy elephant sitting next to an open laptop with lines of code on the screen.",
+    "paragraphs": [
+      { "kind": "fact", "text": "The PHP project released emergency security updates on October 21, 2026, fixing two memory-safety flaws that researchers found with the help of AI models. The bugs, which Wiz Research named PHP2Shell, are tracked as CVE-2026-109618 and CVE-2026-109619, and each carries a CVSS v4 score of 9.2.", "sources": [0, 1, 2] },
+      { "kind": "fact", "text": "The patched releases are PHP 8.5.12, 8.4.27, 8.3.36 and 8.2.35, according to PHP's advisory as reported by The Next Web. PHP also published backported fixes for the unsupported 7.4, 8.0 and 8.1 branches, and described updating as the only safe choice.", "sources": [1, 2] },
+      { "kind": "heading", "text": "What the flaws do" },
+      { "kind": "fact", "text": "According to Wiz, the bugs live in the PHP engine itself rather than in any particular application. They stem from how PHP handles fatal errors such as running out of memory during a request, which can leave stale state behind that a later request on the same worker reuses.", "sources": [0] },
+      { "kind": "fact", "text": "Wiz said it demonstrated remote code execution before authentication on WordPress and Drupal, and on Joomla for one of the two bugs, using the latest container images at the time of testing. One of the flaws can also expose process memory, which Security Boulevard noted may hold passwords, tokens, API keys and certificates.", "sources": [0, 2] },
+      { "kind": "fact", "text": "Wiz said every PHP version released in the last decade is affected by at least one of the bugs, going back to version 5.4. PHP said the risk is highest for sites running Apache with mod_php, where an unauthenticated request can trigger the flaw before any application code runs, The Next Web reported. Imperva rated the attack complexity as high.", "sources": [0, 1, 3] },
+      { "kind": "heading", "text": "How AI was involved" },
+      { "kind": "fact", "text": "The Next Web reported that security firm Calif found the first bug in August using OpenAI's GPT-5.6 Sol, during a PHP source code audit that OpenAI funded through its Patch the Planet initiative. Calif said it used only generally available models and no special tooling.", "sources": [1] },
+      { "kind": "fact", "text": "Wiz, which is owned by Google, said it found the flaws independently weeks later. Its researchers used Wiz Atlas, a multi-agent system, along with Google's Gemini 4 Argon and OpenAI's GPT-5.6 Sol. Wiz said the models helped adapt exploits to different PHP versions, configurations and memory layouts. PHP's advisory credits researchers from Calif, Wiz and OpenAI.", "sources": [0, 1, 2] },
+      { "kind": "fact", "text": "According to The Next Web, OpenAI called the issue one of the most impactful security issues in recent memory and said it expects similar findings to increase sharply. The company has committed $1 billion in subsidized access to its Daybreak cyber program for under-resourced defenders.", "sources": [1] },
+      { "kind": "heading", "text": "How the internet responded" },
+      { "kind": "fact", "text": "Cloudflare enabled web application firewall rules for every customer, including free accounts, about nine hours before the disclosure, The Next Web reported. CERT-EU and Britain's National Cyber Security Centre advised organizations to take systems offline if they could not patch right away, and the US National Security Agency issued its own alert.", "sources": [1] },
+      { "kind": "fact", "text": "Pinboard, the GrapheneOS forum and OBS took parts of their sites down, and Laravel halted its Cloud deployments while rebuilding on patched images. Volker Dusch of the PHP Foundation told The Wall Street Journal it was the most severe PHP issue in more than a decade, comparing it to Heartbleed, according to The Next Web.", "sources": [1] },
+      { "kind": "fact", "text": "Reports on active attacks differed. Huntress said it had not yet seen exploitation in the wild, while watchTowr and Cloudflare reported detecting some activity, Security Boulevard reported. Imperva said it saw no traffic matching the exploit patterns it monitored before disclosure. The Next Web reported that a proof-of-concept exploit circulated online.", "sources": [1, 2, 3] },
+      { "kind": "fact", "text": "Wiz estimates that PHP powers about 70% of websites. That figure describes how widely PHP is used, not a count of sites confirmed to be vulnerable, since PHP versions, configurations and application behavior can change whether an exploit works.", "sources": [0, 1] },
+      { "kind": "analysis", "text": "In NeuraFeed's reading, the disclosure shows AI models moving from finding isolated bugs to surfacing flaws in software that a large share of the web depends on. The same models helped researchers build working exploits, which shortens the time defenders have between a fix and an attack." },
+      { "kind": "why_it_matters", "text": "Site owners and hosting providers should confirm they are on PHP 8.5.12, 8.4.27, 8.3.36 or 8.2.35, or on a vendor build that backports the fix, and watch for reports of wider exploitation in the coming days." }
+    ]
+  }
+}
