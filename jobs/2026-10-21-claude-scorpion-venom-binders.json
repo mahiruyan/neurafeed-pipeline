@@ -1,0 +1,99 @@
+{
+  "id": "2026-10-21-claude-scorpion-venom-binders",
+  "created_at": "2026-10-21T06:10:00Z",
+  "story_time": "2026-10-20T22:00:00Z",
+  "timely": false,
+  "sensitive": false,
+  "priority": 2,
+  "review": true,
+  "site_category": "models",
+  "sources": [
+    { "name": "Anthropic", "url": "https://www.anthropic.com/research/claude-scorpion-toxin-binder-design" },
+    { "name": "Anthropic on X", "url": "https://x.com/AnthropicAI/status/2112579254538141981" },
+    { "name": "TokenPost", "url": "https://www.tokenpost.com/news/technology/36227" },
+    { "name": "GIGAZINE", "url": "https://gigazine.net/gsc_news/en/20261021-claude-designed-protein-against-scorpion-neurotoxins/" },
+    { "name": "AlphaSignal", "url": "https://alphasignal.ai/news/anthropic-s-claude-ran-64-hours-to-design-17-scorpion-antivenom-proteins" }
+  ],
+  "caption": "Anthropic says Claude designed 318,484 proteins in 64 hours to grab onto five scorpion toxins.\nLabs tested 211 of them, and 17 passed the binding test.\nIt is not an antivenom yet: nothing was tested in cells or animals.\n\nWould you trust AI to help design the next antivenom?\n\nFollow @neurafeed.ai for daily AI news.\n\nSource: Anthropic · Photo: Andrey Tikhonovskiy / Unsplash",
+  "slides": [
+    {
+      "kind": "cover",
+      "headline": "Claude spent 64 hours designing *scorpion venom blockers*. 17 just passed real lab tests",
+      "image": {
+        "url": "https://images.unsplash.com/photo-1735931488390-fd4988d1a4e3?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8c2NvcnBpb258ZW58MHx8MHx8fDA%3D",
+        "credit": "Andrey Tikhonovskiy / Unsplash",
+        "fallback_urls": [
+          "https://images.unsplash.com/photo-1625411287934-b42e9ca22e37?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8c2NvcnBpb258ZW58MHx8MHx8fDA%3D"
+        ]
+      },
+      "pos": "center 40%",
+      "badges": [
+        { "url": "assets/logos/claude.png", "shape": "free", "cutout": true }
+      ]
+    },
+    {
+      "kind": "card",
+      "heading": "*318,484* designs in 64 hours",
+      "paras": [
+        "Anthropic asked Claude to design proteins that grab five scorpion neurotoxins, covering the part of each toxin that latches onto cells.",
+        "From one prompt and four follow-ups, it generated 318,484 designs in 64 hours."
+      ],
+      "image": {
+        "url": "https://i.gzn.jp/img/2026/10/21/claude-designed-protein-against-scorpion-neurotoxins/00.jpg",
+        "credit": "Anthropic via GIGAZINE",
+        "fallback_urls": [
+          "https://image.blockchain.news:443/features/EEF942587C092BBC865AE434AF7F9392163C996AC4BB6F3A474D06B1E81E0F4F.jpg"
+        ]
+      }
+    },
+    {
+      "kind": "card",
+      "heading": "*17 of 211* passed",
+      "paras": [
+        "Claude picked 180 designs, researchers added 31, and Adaptyv Bio and Twist Bioscience tested all 211 in the lab.",
+        "17 met the binding bar. The best two gripped Cn2, a toxin from a Mexican scorpion."
+      ],
+      "image": {
+        "url": "https://images.unsplash.com/photo-1713646862394-a124c04ada0b?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D",
+        "credit": "Erik Aquino / Unsplash",
+        "fallback_urls": [
+          "https://images.unsplash.com/photo-1727527056819-04bc5ac49bb8?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8c2NvcnBpb258ZW58MHx8MHx8fDA%3D"
+        ]
+      }
+    },
+    {
+      "kind": "card",
+      "heading": "*1.2 million* stings a year",
+      "paras": [
+        "Scorpions sting about 1.2 million people every year, and antivenoms are often costly or in short supply.",
+        "Anthropic is releasing all 211 designs and the lab data so other researchers can build on them."
+      ],
+      "image": {
+        "url": "https://images.unsplash.com/photo-1531003914465-d6c6673bc635?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fHNjb3JwaW9ufGVufDB8fDB8fHww",
+        "credit": "Shayna Take / Unsplash",
+        "fallback_urls": [
+          "https://images.unsplash.com/photo-1711396128618-9c75598390c9?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fHNjb3JwaW9ufGVufDB8fDB8fHww"
+        ]
+      }
+    },
+    {
+      "kind": "card",
+      "heading": "Not an *antivenom* yet",
+      "paras": [
+        "Anthropic calls this exploratory work. The proteins were only tested for binding, not in cells, animals or people.",
+        { "t": "Whether they can stop venom is still unproven.", "strong": true }
+      ],
+      "image": {
+        "url": "https://images.unsplash.com/photo-1700488217112-5a174f599624?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8c2NvcnBpb258ZW58MHx8MHx8fDA%3D",
+        "credit": "Aristos Aristidou / Unsplash",
+        "fallback_urls": [
+          "https://i.gzn.jp/img/2026/10/21/claude-designed-protein-against-scorpion-neurotoxins/01.jpg"
+        ]
+      }
+    },
+    {
+      "kind": "cta",
+      "hook": "AI just took its first step toward cheaper antivenoms. Follow to see if these proteins survive the next tests."
+    }
+  ]
+}

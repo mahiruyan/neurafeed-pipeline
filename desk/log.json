@@ -3249,5 +3249,76 @@
       }
     ],
     "requests": []
+  },
+  {
+    "run_at": "2026-10-21T06:02:49.080Z",
+    "summary": "Early run (02:00 New York): no open links or requests; Oct 21 already has 8 approved posts lined up, so queued only the Claude scorpion toxin binder story as priority 2 (review), which will post if a slot opens or carry into Oct 22.",
+    "considered": [
+      {
+        "story": "Claude designed 318,484 proteins in 64 hours; 17 of 211 bound scorpion neurotoxins in lab tests",
+        "source": "https://www.anthropic.com/research/claude-scorpion-toxin-binder-design",
+        "decision": "queued",
+        "job_id": "2026-10-21-claude-scorpion-venom-binders",
+        "priority": 2
+      },
+      {
+        "story": "Anthropic draft AI safety bill that could halt a model release over catastrophic risk",
+        "decision": "covered",
+        "reason": "Already covered as 2026-10-17-anthropic-pitches-own-ai-safety-bill."
+      },
+      {
+        "story": "OpenAI agents disabled their own monitoring systems",
+        "decision": "covered",
+        "reason": "Already queued as 2026-10-21-openai-agents-switched-off-alarms."
+      },
+      {
+        "story": "SpaceX posts first profit since going public",
+        "decision": "covered",
+        "reason": "Already queued as 2026-10-21-spacex-ai-out-earns-starlink."
+      },
+      {
+        "story": "OpenAI buys Orchestra Bio",
+        "decision": "covered",
+        "reason": "Already queued as 2026-10-21-openai-buys-orchestra-bio."
+      },
+      {
+        "story": "Gemini in Android Auto connects to Gmail, Photos and Maps",
+        "decision": "covered",
+        "reason": "Already queued as 2026-10-21-gemini-android-auto-reads-your-apps."
+      },
+      {
+        "story": "US bans DeepSeek across federal agencies",
+        "decision": "skipped",
+        "reason": "Day is full; government policy story that still needs primary sources, candidate for a later run."
+      },
+      {
+        "story": "Students walk out nationwide calling for a pause on AI development",
+        "decision": "skipped",
+        "reason": "Day is full; sensitive political protest story with mostly local coverage."
+      },
+      {
+        "story": "Steam users ask for a No AI filter as AI games flood Next Fest",
+        "source": "https://www.ign.com/articles/steam-fans-are-begging-for-a-no-ai-filter-as-steam-next-fest-is-filled-with-slop",
+        "decision": "skipped",
+        "reason": "Day is full; gaming niche story, possible filler later."
+      },
+      {
+        "story": "Kroger to lay off 3,000 corporate employees as it leans into AI",
+        "decision": "skipped",
+        "reason": "Sensitive layoffs story with little AI detail; day is full."
+      },
+      {
+        "story": "Otter raises $320 million for its AI notetaker",
+        "decision": "skipped",
+        "reason": "Funding round with modest consumer interest."
+      },
+      {
+        "story": "Judge dismisses lawsuit by Sam Altman's sister",
+        "source": "https://www.theverge.com/ai-artificial-intelligence/1014976/sam-altman-ann-altman-lawsuit-dismissed",
+        "decision": "skipped",
+        "reason": "Sensitive personal legal matter, not AI news we want to amplify."
+      }
+    ],
+    "requests": []
   }
 ]
