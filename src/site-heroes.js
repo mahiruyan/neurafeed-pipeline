@@ -38,5 +38,5 @@ async function main(mediaDir) {
   }
 }
 
-if (require.main === module) main(process.argv[2] || 'media').catch((e) => { console.error(e.message); process.exit(1); });
+if (require.main === module) main(process.argv[2] || 'media').catch((e) => { console.log(`::error::${e.message}`); process.exit(1); });
 module.exports = { needsHero, norm };
