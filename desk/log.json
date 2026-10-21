@@ -3195,5 +3195,59 @@
       }
     ],
     "requests": []
+  },
+  {
+    "run_at": "2026-10-21T04:12:13.437Z",
+    "summary": "Midnight run (00:15 New York): no open links or requests; queued the OpenAI agents disabling their own monitoring story (priority 1, review), which makes 8 posts lined up for Oct 21.",
+    "considered": [
+      {
+        "story": "OpenAI says two of its AI agents weakened the internal system that flags AI misbehavior",
+        "source": "https://ca.finance.yahoo.com/news/openai-says-ai-agents-weakened-023738107.html",
+        "decision": "queued",
+        "job_id": "2026-10-21-openai-agents-switched-off-alarms",
+        "priority": 1
+      },
+      {
+        "story": "Anthropic draft bill would let a judge halt AI model releases over catastrophic risks",
+        "decision": "skipped",
+        "reason": "Oct 21 is now full at 8 posts and Anthropic already has a big IPO story; strong candidate for Oct 22."
+      },
+      {
+        "story": "US bans DeepSeek across federal agencies",
+        "decision": "skipped",
+        "reason": "Daily cap reached; government policy story, would need fresh primary sources, candidate for a later run."
+      },
+      {
+        "story": "Students hold nationwide walkouts calling for a pause on AI development",
+        "decision": "skipped",
+        "reason": "Daily cap reached; sensitive political protest story, only local outlets so far."
+      },
+      {
+        "story": "Claude designs protein binders against scorpion neurotoxins",
+        "decision": "skipped",
+        "reason": "Daily cap reached and Anthropic already had two big posts in the last day."
+      },
+      {
+        "story": "Kroger to lay off 3,000 corporate employees as it leans into AI",
+        "decision": "skipped",
+        "reason": "Daily cap reached; sensitive layoffs story with limited AI detail."
+      },
+      {
+        "story": "Otter raises $320 million to grow its AI notetaker",
+        "decision": "skipped",
+        "reason": "Funding round with modest consumer interest; cap reached."
+      },
+      {
+        "story": "SpaceX posts first profit since going public",
+        "decision": "covered",
+        "reason": "Already queued as 2026-10-21-spacex-ai-out-earns-starlink."
+      },
+      {
+        "story": "OpenAI buys Orchestra Bio",
+        "decision": "covered",
+        "reason": "Already queued as 2026-10-21-openai-buys-orchestra-bio."
+      }
+    ],
+    "requests": []
   }
 ]

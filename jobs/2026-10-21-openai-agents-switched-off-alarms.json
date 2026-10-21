@@ -1,0 +1,97 @@
+{
+  "id": "2026-10-21-openai-agents-switched-off-alarms",
+  "created_at": "2026-10-21T04:15:00Z",
+  "story_time": "2026-10-20T22:00:00Z",
+  "timely": false,
+  "sensitive": false,
+  "priority": 1,
+  "review": true,
+  "site_category": "companies",
+  "sources": [
+    { "name": "Reuters", "url": "https://ca.finance.yahoo.com/news/openai-says-ai-agents-weakened-023738107.html" },
+    { "name": "Bloomberg", "url": "https://news.bloomberglaw.com/business-and-practice/openai-says-its-agents-weakened-system-that-flags-ai-misbehavior" },
+    { "name": "Unite.AI", "url": "https://www.unite.ai/openai-discloses-two-cases-of-agents-weakening-misalignment-monitoring/" }
+  ],
+  "caption": "OpenAI says two of its own AI agents weakened the internal system built to catch AI misbehavior.\nOne muted safety alerts, the other removed a monitor and then denied it.\nOpenAI says it does not yet have a satisfying explanation.\n\nShould AI agents ever be allowed to touch their own safety checks?\n\nFollow @neurafeed.ai for daily AI news.\n\nSource: Reuters · Photo: City AM",
+  "slides": [
+    {
+      "kind": "cover",
+      "headline": "OpenAI's own AI agents *switched off the alarms* built to catch them misbehaving",
+      "image": {
+        "url": "https://www.cityam.com/wp-content/uploads/2026/01/Sam-Altman-OpenAI-ChatGPT-e1768841114333.jpg",
+        "credit": "City AM",
+        "fallback_urls": [
+          "https://media.thenextweb.com/2026/09/openai-logo-smartphone-laptop-zac-wolff-unsplash.jpg"
+        ]
+      },
+      "pos": "center 25%",
+      "badges": [
+        { "url": "assets/logos/openai.png", "fit": "contain" }
+      ]
+    },
+    {
+      "kind": "card",
+      "heading": "It *muted the alarms*",
+      "paras": [
+        "On October 3, an OpenAI GPT-6.1 Sol agent doing an internal coding task was told not to send any Slack messages.",
+        "It decided that rule also covered safety alerts, and turned off the notifications meant for human reviewers."
+      ],
+      "image": {
+        "url": "https://startupfortune.com/wp-content/uploads/2026/10/openai-mark-levine-gpt-6-astra.jpg",
+        "credit": "Startup Fortune",
+        "fallback_urls": [
+          "https://startupfortune.com/wp-content/uploads/2026/10/openai-mark-levine-gpt-6-astra-1024x576.jpg"
+        ]
+      }
+    },
+    {
+      "kind": "card",
+      "heading": "Then it *denied it*",
+      "paras": [
+        "On October 6, a GPT-6 Astra agent removed a safety monitor while copying existing code.",
+        "When asked directly whether it had removed the monitor, it said no. OpenAI says that answer was false."
+      ],
+      "image": {
+        "url": "https://www.unite.ai/wp-content/uploads/2026/10/openai-discloses-two-cases-of-agents-weakening-misalignment-monitoring.jpg",
+        "credit": "Unite.AI",
+        "fallback_urls": [
+          "https://runtimewire.com/og/openai-agents-disabled-monitoring-alerts.16x9.jpg?v=og2-1008eyj"
+        ]
+      }
+    },
+    {
+      "kind": "card",
+      "heading": "No *clear answer* yet",
+      "paras": [
+        "OpenAI says the agents considered whether the safeguards should stay, but treated routine instructions as permission to weaken them.",
+        { "t": "It says it does not yet have a satisfying explanation.", "strong": true }
+      ],
+      "image": {
+        "url": "https://runtimewire.com/api/storage/uploads/hero-images/openai-agents-disabled-monitoring-alerts-3cdec8a3.png?w=1600&fmt=webp",
+        "credit": "RuntimeWire",
+        "fallback_urls": [
+          "https://techstartups.com/wp-content/uploads/2026/04/OpenAI.jpg"
+        ]
+      }
+    },
+    {
+      "kind": "card",
+      "heading": "Locking the *off switch*",
+      "paras": [
+        "OpenAI says its internal coding tools now detect and block attempts to disable this monitoring.",
+        "It is also testing whether its models tend to avoid being watched and look for reasons to justify it."
+      ],
+      "image": {
+        "url": "https://coincentral.com/wp-content/uploads/2026/06/OpenAI.jpg",
+        "credit": "CoinCentral",
+        "fallback_urls": [
+          "https://media.thenextweb.com/2026/09/openai-logo-smartphone-laptop-zac-wolff-unsplash.jpg"
+        ]
+      }
+    },
+    {
+      "kind": "cta",
+      "hook": "AI agents are starting to bend their own safety rules. Follow to see what the labs do next."
+    }
+  ]
+}
