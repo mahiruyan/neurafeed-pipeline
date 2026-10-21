@@ -1,0 +1,108 @@
+name: Website on Cloudflare
+
+# Builds the NeuraFeed website (mahiruyan/neurafeed) for Cloudflare Workers and deploys it:
+#   neurafeed-web   (public site)  and  neurafeed-admin (admin panel + scheduled jobs)
+# Settings are copied from the Netlify projects through the Netlify API and stored as Worker
+# secrets; no value is printed. The database goes through a Hyperdrive config (neurafeed-db).
+# Until cutover=true the admin's scheduled jobs stay disabled here (Netlify still runs them).
+on:
+  workflow_dispatch:
+    inputs:
+      app:
+        description: "web, admin or both"
+        required: true
+        default: both
+      ref:
+        description: "branch of mahiruyan/neurafeed"
+        required: true
+        default: cloudflare
+      cutover:
+        description: "true: enable the scheduled jobs on Cloudflare (turn them off on Netlify first)"
+        required: true
+        default: "false"
+
+concurrency:
+  group: site-cloudflare
+  cancel-in-progress: false
+
+permissions:
+  contents: read
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    env:
+      CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+      CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+      NETLIFY: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+      WORKERS_SUBDOMAIN: mahiruyan956.workers.dev
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          repository: mahiruyan/neurafeed
+          ref: ${{ inputs.ref }}
+          token: ${{ secrets.SECRETS_PAT }}
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - run: npm ci --no-audit --no-fund
+
+      - name: Settings from Netlify
+        run: |
+          api=https://api.netlify.com/api/v1; H="Authorization: Bearer $NETLIFY"
+          for pair in web:neurafeed-staging-public admin:neurafeed-staging-admin; do
+            app=${pair%%:*}; site=${pair#*:}
+            s=$(curl -sf -H "$H" "$api/sites/$site.netlify.app") || { echo "::error::netlify site $site not found"; exit 1; }
+            id=$(jq -r .id <<<"$s"); acct=$(jq -r .account_slug <<<"$s")
+            curl -sf -H "$H" "$api/accounts/$acct/env?site_id=$id" \
+              | jq '[.[] | {key, value: ((.values | map(select(.context=="production")) | .[0].value) // (.values | map(select(.context=="all")) | .[0].value))} | select(.value != null)] | from_entries' > /tmp/env-$app.json
+            jq -r '.[]' /tmp/env-$app.json | while IFS= read -r v; do [ ${#v} -ge 6 ] && echo "::add-mask::$v"; done
+            echo "::notice::$app: $(jq 'length' /tmp/env-$app.json) settings copied ($(jq -r 'keys | join(", ")' /tmp/env-$app.json))"
+          done
+
+      - name: Hyperdrive (database pooling)
+        run: |
+          cf=https://api.cloudflare.com/client/v4/accounts/$CLOUDFLARE_ACCOUNT_ID/hyperdrive/configs
+          id=$(curl -sf -H "Authorization: Bearer $CLOUDFLARE_API_TOKEN" "$cf" | jq -r '.result[] | select(.name=="neurafeed-db") | .id' | head -1) || { echo "::error::the Cloudflare token cannot read Hyperdrive (add Hyperdrive: Edit to the token)"; exit 1; }
+          if [ -z "$id" ]; then
+            url=$(jq -r '.DATABASE_URL // empty' /tmp/env-admin.json)
+            [ -n "$url" ] || { echo "::error::DATABASE_URL missing on Netlify"; exit 1; }
+            body=$(node -e '
+              const u=new URL(process.argv[1]);
+              console.log(JSON.stringify({name:"neurafeed-db",origin:{scheme:"postgres",host:u.hostname,port:Number(u.port||5432),database:decodeURIComponent(u.pathname.slice(1)||"postgres"),user:decodeURIComponent(u.username),password:decodeURIComponent(u.password)},caching:{disabled:true}}));' "$url")
+            r=$(curl -s -X POST -H "Authorization: Bearer $CLOUDFLARE_API_TOKEN" -H 'Content-Type: application/json' "$cf" -d "$body")
+            id=$(jq -r '.result.id // empty' <<<"$r")
+            [ -n "$id" ] || { echo "::error::Hyperdrive create failed: $(jq -c '.errors' <<<"$r")"; exit 1; }
+            echo "::notice::Hyperdrive neurafeed-db created"
+          fi
+          for app in web admin; do
+            node -e '
+              const fs=require("fs"),p=process.argv[1];
+              let s=fs.readFileSync(p,"utf8");
+              s=s.replace(/\n}\s*$/, `,\n  "hyperdrive": [{ "binding": "HYPERDRIVE", "id": "${process.argv[2]}" }]\n}\n`);
+              fs.writeFileSync(p,s);' apps/$app/wrangler.jsonc "$id"
+          done
+
+      - name: Build and deploy
+        run: |
+          set -e
+          want="${{ inputs.app }}"
+          for app in web admin; do
+            [ "$want" = both ] || [ "$want" = "$app" ] || continue
+            origin="https://neurafeed-$app.$WORKERS_SUBDOMAIN"
+            # Worker settings: Netlify's, minus Netlify-only keys, with the Workers addresses.
+            jq --arg o "$origin" --arg app "$app" --arg cut "${{ inputs.cutover }}" '
+              del(.NODE_VERSION, .NPM_VERSION, .NETLIFY, .URL)
+              | if $app=="web" then .NEURAFEED_PUBLIC_ORIGIN=$o else .NEURAFEED_ADMIN_ORIGIN=$o end
+              | if $app=="admin" and $cut!="true" then .NEURAFEED_EDITORIAL_DAILY_SCAN_ENABLED="disabled" | .NEURAFEED_EDITORIAL_OWNER_DIGEST_ENABLED="disabled" else . end
+              | with_entries(.value |= tostring)' /tmp/env-$app.json > /tmp/secrets-$app.json
+            # Build with the same settings (Next reads some at build time).
+            ( set -a; eval "$(jq -r 'to_entries[] | "export \(.key)=\(.value|@sh)"' /tmp/secrets-$app.json)"; set +a
+              cd apps/$app && npx opennextjs-cloudflare build >/tmp/build-$app.log 2>&1 ) || { tail -40 /tmp/build-$app.log; echo "::error::$app build failed"; exit 1; }
+            cd apps/$app
+            npx wrangler deploy --secrets-file /tmp/secrets-$app.json >/tmp/deploy-$app.log 2>&1 || { tail -30 /tmp/deploy-$app.log; echo "::error::$app deploy failed"; exit 1; }
+            cd ../..
+            echo "::notice::$app deployed: $origin"
+          done
+          rm -f /tmp/env-*.json /tmp/secrets-*.json
