@@ -42,7 +42,7 @@ jobs:
         with:
           repository: mahiruyan/neurafeed
           ref: ${{ inputs.ref }}
-          token: ${{ secrets.SECRETS_PAT }}
+          token: ${{ secrets.BOT_GH_TOKEN }}
       - uses: actions/setup-node@v4
         with:
           node-version: 22
