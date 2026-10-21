@@ -1,0 +1,43 @@
+name: Public site (Netlify)
+
+# Reads or updates the public website's Netlify project (neurafeed-staging-public) through the
+# Netlify API, so nothing is pasted by hand. Secret values are never printed.
+#   inspect: build settings, linked repo and branch, and the non-secret settings
+#   enable:  build from mahiruyan/neurafeed branch rebuild/editorial-platform and start a deploy
+on:
+  workflow_dispatch:
+    inputs:
+      action:
+        description: "inspect or enable"
+        required: true
+        default: inspect
+
+permissions:
+  contents: read
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Netlify
+        env:
+          NETLIFY: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+          ACTION: ${{ inputs.action }}
+        run: |
+          [ -n "$NETLIFY" ] || { echo "::error::NETLIFY_AUTH_TOKEN is missing"; exit 1; }
+          api=https://api.netlify.com/api/v1
+          H="Authorization: Bearer $NETLIFY"
+          site=$(curl -sf -H "$H" "$api/sites/neurafeed-staging-public.netlify.app") || { echo "::error::site not found"; exit 1; }
+          id=$(jq -r .id <<<"$site"); acct=$(jq -r .account_slug <<<"$site")
+          echo "::notice::site $(jq -c '{name, url, custom_domain, domain_aliases, published_deploy: .published_deploy.created_at, stop_builds: .build_settings.stop_builds, repo: .build_settings.repo_url, branch: .build_settings.repo_branch, base: .build_settings.base, cmd: .build_settings.cmd, dir: .build_settings.dir, provider: .build_settings.provider}' <<<"$site")"
+          safe='NEURAFEED_AI_ENABLED NEURAFEED_ALLOWED_IMAGE_ORIGINS NEURAFEED_BUILD_CONTEXT NEURAFEED_DATABASE_ADAPTER NEURAFEED_INDEXNOW_ENABLED NEURAFEED_MEDIA_PUBLIC_ORIGIN NEURAFEED_PRODUCTION_HTTPS NEURAFEED_PUBLIC_ORIGIN NEURAFEED_SEARCH_INDEXING_ENABLED NODE_VERSION NPM_VERSION'
+          envs=$(curl -sf -H "$H" "$api/accounts/$acct/env?site_id=$id")
+          echo "::notice::env keys: $(jq -r '[.[].key] | join(", ")' <<<"$envs")"
+          for k in $safe; do echo "::notice::$k = $(jq -r --arg k "$k" '.[] | select(.key==$k) | [.values[] | "\(.context)=\(.value)"] | join(" ")' <<<"$envs")"; done
+          db=$(jq -r '.[] | select(.key=="DATABASE_URL") | .values[] | select(.context=="production" or .context=="all") | .value' <<<"$envs" | head -1)
+          [ -n "$db" ] && echo "::notice::DATABASE_URL host: $(sed -E 's#^[a-z]+://([^:@]+)(:[^@]*)?@([^/:]+).*#user=\1 host=\3#' <<<"$db")"
+          if [ "$ACTION" = enable ]; then
+            body=$(jq -n '{build_settings:{stop_builds:false, repo_branch:"rebuild/editorial-platform", cmd:"npm run build --workspace @neurafeed/web", dir:"apps/web/.next"}}')
+            curl -sf -X PATCH -H "$H" -H 'Content-Type: application/json' "$api/sites/$id" -d "$body" >/dev/null && echo "::notice::builds enabled on rebuild/editorial-platform"
+            curl -sf -X POST -H "$H" "$api/sites/$id/builds" >/dev/null && echo "::notice::deploy started"
+          fi
