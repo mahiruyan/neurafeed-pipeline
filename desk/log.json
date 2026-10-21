@@ -3780,5 +3780,66 @@
       }
     ],
     "requests": []
+  },
+  {
+    "run_at": "2026-10-21T22:09:08.712Z",
+    "summary": "Evening run (17:55 New York): turned Mahir's Unitree H2-X link into a Reel (review, original Unitree video), skipped his picture upload as a duplicate of the queued Tony Stark Reel, and queued Meta's Q3 earnings (AI spending turned free cash flow negative, new nonvoting stock) as priority 1 with review; timely is false so it can post on Oct 22 since today's slots are full.",
+    "considered": [
+      {
+        "story": "Unitree H2-X Kung Fu Legend Guardian humanoid (Mahir's link)",
+        "source": "https://x.com/UnitreeRobotics/status/2112819774573179175",
+        "decision": "queued",
+        "job_id": "2026-10-21-unitree-h2-x-kung-fu-guardian-reel",
+        "priority": 1
+      },
+      {
+        "story": "Mahir's picture upload of the Tony Stark 2 AM Reel frame",
+        "decision": "skipped",
+        "reason": "Same content as the already approved Reel 2026-10-21-tony-stark-2am-reverse-engineering-reel, and a Reel cannot be made from a still picture."
+      },
+      {
+        "story": "Meta Q3 2026 earnings: $64.6B revenue, $34.9B capex, negative free cash flow, nonvoting Class C stock",
+        "source": "https://fortune.com/2026/10/21/meta-q3-earnings-mark-zuckerberg-capex-muse/",
+        "decision": "queued",
+        "job_id": "2026-10-21-meta-ai-spending-ate-the-cash",
+        "priority": 1
+      },
+      {
+        "story": "New Mexico jury orders Meta to pay $25B over data privacy",
+        "decision": "skipped",
+        "reason": "Legal story outside AI; mentioned only by Forbes and Fortune alongside earnings."
+      },
+      {
+        "story": "Anthropic drafts a federal bill to halt dangerous model releases",
+        "decision": "skipped",
+        "reason": "Today is over the cap; still a candidate for Oct 22."
+      },
+      {
+        "story": "Hugging Face CEO criticizes Netflix documentary on the OpenAI agent escape",
+        "decision": "skipped",
+        "reason": "Day is full and it needs a second source."
+      },
+      {
+        "story": "Mistral Voxtral 3 and ElevenLabs Eleven Realtime voice models",
+        "decision": "skipped",
+        "reason": "Smaller launches with less US consumer interest, and the day is full."
+      },
+      {
+        "story": "ChatGPT Locked Chats with PIN or biometrics",
+        "decision": "skipped",
+        "reason": "Planned as the Oct 22 how-to utility post."
+      },
+      {
+        "story": "OpenAI models coming to Google Cloud",
+        "decision": "covered",
+        "reason": "Already queued as 2026-10-21-openai-models-google-cloud."
+      },
+      {
+        "story": "Claude Duet launch",
+        "decision": "covered",
+        "reason": "Already queued as 2026-10-21-claude-duet-works-while-you-sleep."
+      }
+    ],
+    "requests": []
   }
 ]
