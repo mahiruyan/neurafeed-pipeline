@@ -1,0 +1,102 @@
+{
+  "id": "2026-10-22-microsoft-ai-agents-hacked-2250-tenants",
+  "created_at": "2026-10-22T14:25:00Z",
+  "story_time": "2026-10-21T17:00:00Z",
+  "timely": false,
+  "sensitive": true,
+  "priority": 1,
+  "review": true,
+  "site_category": "companies",
+  "sources": [
+    { "name": "The Next Web", "url": "https://thenextweb.com/news/microsoft-storm-0940-ai-agents-connectwise-attack" },
+    { "name": "CyberScoop", "url": "https://cyberscoop.com/microsoft-attributes-connectwise-supply-chain-attack-china-storm-0940/" },
+    { "name": "CSO Online", "url": "https://www.csoonline.com/article/4239028/china-linked-hackers-used-agentic-ai-in-attack-on-2250-microsoft-365-tenants.html" },
+    { "name": "BleepingComputer", "url": "https://www.bleepingcomputer.com/news/security/hackers-breach-microsoft-365-tenants-via-connectwise-supply-chain-attack/" }
+  ],
+  "caption": "Microsoft says a China-aligned hacking group used a swarm of AI agents to go after more than 2,250 Microsoft 365 tenants.\nThe agents fired up to 2,900 sign-in attempts per minute and sometimes reached high-level cloud access in under three hours.\nThey got in through ConnectWise Cloud Backup, a tool IT providers use to back up client data.\n\nCan human security teams still keep up with AI attackers?\n\nFollow @neurafeed.ai for daily AI news.\n\nSource: CyberScoop · Photo: Chesnot/Getty Images",
+  "threads_text": "Microsoft says a China-aligned group let AI agents run a hacking campaign against more than 2,250 Microsoft 365 tenants, at up to 2,900 sign-in attempts a minute. Some got high-level cloud access in under three hours. Should companies start fighting AI agents with their own AI agents?",
+  "slides": [
+    {
+      "kind": "cover",
+      "headline": "China-aligned hackers turned *AI agents* loose on 2,250 Microsoft 365 tenants",
+      "image": {
+        "url": "https://cyberscoop.com/wp-content/uploads/sites/3/2023/03/GettyImages-1459359048.jpg",
+        "credit": "Chesnot/Getty Images",
+        "fallback_urls": [
+          "https://media.thenextweb.com/2026/10/microsoft-logo-office-building.jpg"
+        ]
+      },
+      "pos": "center 30%"
+    },
+    {
+      "kind": "card",
+      "heading": "2,900 tries a *minute*",
+      "paras": [
+        "Microsoft says Storm-0940, a China-aligned group active since 2021, used ARTEX, an open-source system of AI agents that runs attacks with little human help.",
+        "The agents hit more than 2,250 Microsoft 365 tenants at up to 2,900 sign-in attempts per minute."
+      ],
+      "image": {
+        "url": "https://media.thenextweb.com/2026/10/microsoft-logo-office-building.jpg",
+        "credit": "Salah Darwish / Unsplash",
+        "fallback_urls": [
+          "https://www.csoonline.com/wp-content/uploads/2026/10/4239028-0-61091200-1792669672-shutterstock_2427719361.jpg?quality=50&strip=all&w=1024"
+        ]
+      }
+    },
+    {
+      "kind": "card",
+      "heading": "In through the *backup*",
+      "paras": [
+        "The way in was ConnectWise Cloud Backup, formerly SkyKick, which IT providers use to back up client Microsoft 365 data.",
+        "The attackers signed in as the backup app itself, so no user login and no multifactor prompt stood in the way."
+      ],
+      "image": {
+        "url": "https://www.bleepstatic.com/content/hl-images/2026/09/07/ConnectWise.jpg",
+        "credit": "BleepingComputer",
+        "fallback_urls": []
+      }
+    },
+    {
+      "kind": "card",
+      "heading": "Under *three hours*",
+      "paras": [
+        "In some cases the agents reached high-level cloud access less than three hours after first targeting a victim. Most attempts failed.",
+        { "t": "Huntress confirmed breaches at 162 tenants. Microsoft never said which AI model the agents ran on.", "strong": true }
+      ],
+      "image": {
+        "url": "https://www.csoonline.com/wp-content/uploads/2026/10/4239028-0-61091200-1792669672-shutterstock_2427719361.jpg?quality=50&strip=all&w=1024",
+        "credit": "FOTOGRIN / Shutterstock",
+        "fallback_urls": []
+      }
+    },
+    {
+      "kind": "cta",
+      "hook": "AI agents are now running real cyberattacks. Follow to see how defenders answer."
+    }
+  ],
+  "site_article": {
+    "headline": "Microsoft says China-aligned hackers used AI agents against 2,250 Microsoft 365 tenants",
+    "dek": "The group, which Microsoft calls Storm-0940, reached cloud accounts through ConnectWise Cloud Backup and an open-source framework of AI agents called ARTEX.",
+    "summary": "Microsoft attributed an attack on Microsoft 365 customers through ConnectWise Cloud Backup to Storm-0940, a China-aligned group that used AI agents to automate it. The agents went after more than 2,250 tenants at up to 2,900 sign-in attempts per minute.",
+    "seo_title": "Microsoft: Storm-0940 used AI agents on 2,250 Microsoft 365 tenants",
+    "seo_description": "Microsoft says China-aligned Storm-0940 used the ARTEX AI agent framework and ConnectWise Cloud Backup to target over 2,250 Microsoft 365 tenants.",
+    "answer_summary": "Microsoft says Storm-0940, a China-aligned group, used ARTEX, an open-source system of AI agents, to attack more than 2,250 Microsoft 365 tenants through ConnectWise Cloud Backup. Some attempts reached privileged cloud access in under three hours, though most failed.",
+    "tags": ["Microsoft", "Cybersecurity", "AI agents", "ConnectWise", "Storm-0940"],
+    "hero_alt": "The Microsoft logo on the front of an office building.",
+    "paragraphs": [
+      { "kind": "fact", "text": "Microsoft Threat Intelligence said on October 21, 2026, that a China-aligned hacking group it tracks as Storm-0940 was behind the supply chain attack on ConnectWise Cloud Backup, and that the group used AI agents to automate much of the work. According to The Next Web, the attackers used the backup service to reach the Microsoft 365 accounts of its customers.", "sources": [0, 1] },
+      { "kind": "fact", "text": "Storm-0940 has been active since 2021, The Next Web reported, and has gone after organizations in defense, government, law, energy and semiconductors.", "sources": [0] },
+      { "kind": "heading", "text": "How the AI agents worked" },
+      { "kind": "fact", "text": "The tool at the center of the campaign is ARTEX, an open-source framework built around AI agents. CSO Online described it as a multi-agent system of large language models that can work with any AI model and can carry out a penetration test from reconnaissance through data exfiltration with little human involvement. Microsoft did not say which AI model the attackers used.", "sources": [0, 2] },
+      { "kind": "fact", "text": "According to CyberScoop, Microsoft said Storm-0940 began using ARTEX as early as September 2026 against hundreds of organizations. In a four-day password spraying campaign that ended on October 14, the group targeted 327 Microsoft 365 and Exchange Online accounts at eight organizations, producing more than 151,000 failed logons at a peak of 2,900 per minute. The ConnectWise compromise followed the next day.", "sources": [1] },
+      { "kind": "fact", "text": "Microsoft said the agents scanned networks, tried to guess passwords and abused application permissions. They reached more than 2,250 Microsoft 365 tenants at up to 2,900 sign-in attempts per minute. In some environments the agents went beyond signing in and moved into Microsoft Graph and directory operations, including changing application credentials to keep access. In some cases the group had privileged cloud access less than three hours after first targeting a victim, although most attempts failed.", "sources": [0, 1, 2] },
+      { "kind": "heading", "text": "The way in through ConnectWise" },
+      { "kind": "fact", "text": "ConnectWise Cloud Backup, formerly known as SkyKick, lets IT service providers back up the Microsoft 365 data of their clients. The service depends on applications with broad access to customer accounts, and the attackers took over several of those application identities, The Next Web reported.", "sources": [0] },
+      { "kind": "fact", "text": "BleepingComputer reported, citing security firm Todyl, that the attacker signed in as the backup application with its secret through automated scripts. Because no user was logging in, multifactor authentication offered no protection. Huntress saw the application accounts give themselves directory roles, mostly Exchange Administrator, in nearly 50 tenants, and in one tenant the attacker obtained a Global Administrator role.", "sources": [3] },
+      { "kind": "fact", "text": "ConnectWise disclosed the breach in an advisory on October 16, the same day Huntress published its first account. Huntress confirmed breaches at 162 tenants by that date and later found that nearly 1,000 tenants had received sign-in attempts, more than 300 of them successful, according to The Next Web. ConnectWise disabled seven application identities on October 17, took Cloud Backup offline and began restoring it in stages on October 21, a process it expects to take several days.", "sources": [0, 3] },
+      { "kind": "fact", "text": "A ConnectWise spokesperson told The Record there was no indication that backup data had been compromised, and BleepingComputer reported that the company said backup archives remained encrypted and isolated. Microsoft said the activity did not come from a compromise of or flaw in its own systems, and noted that a successful sign-in does not necessarily mean data was accessed or stolen. Microsoft advised customers to review activity from at least October 15, and back to October 1 where records allow.", "sources": [0, 1, 2, 3] },
+      { "kind": "analysis", "text": "The case shows two trends meeting. Attackers are going after the trusted applications that sit between service providers and their clients, where a single stolen secret can open many tenants at once, and they are handing the repetitive parts of an intrusion to AI agents that work at machine speed. Defenses that wait for a human to review each alert will have a hard time keeping pace with that tempo." },
+      { "kind": "why_it_matters", "text": "Watch whether ConnectWise completes the restoration of Cloud Backup without further findings, and whether Microsoft or Huntress publish a final count of tenants where data was actually accessed." }
+    ]
+  }
+}

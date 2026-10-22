@@ -1,77 +1,5 @@
 [
   {
-    "run_at": "2026-10-15T12:26:22.326Z",
-    "summary": "Morning run: queued TSMC on Musk's Terafab and XBOW's AI-built Chrome exploit; today now has 6 jobs. No open links or requests.",
-    "considered": [
-      {
-        "story": "TSMC CEO says it must run any Musk Terafab fab, record Q3 profit",
-        "source": "https://thenextweb.com/news/tsmc-terafab-musk-wei-must-run-fab",
-        "decision": "queued",
-        "job_id": "2026-10-15-tsmc-musk-terafab-must-run-it",
-        "priority": 2
-      },
-      {
-        "story": "XBOW used GPT-5.6-Sol to build a Chrome full-chain exploit in six days, $250,000 Google bounty",
-        "source": "https://xbow.com/labs/research/zero-to-calc-in-six-days-inside-xbow-chrome-full-chain",
-        "decision": "queued",
-        "job_id": "2026-10-15-xbow-gpt-chrome-exploit-250k",
-        "priority": 2
-      },
-      {
-        "story": "Anthropic Q3 revenue $16.8 billion",
-        "decision": "covered",
-        "reason": "Already queued as 2026-10-15-anthropic-16-8-billion-quarter."
-      },
-      {
-        "story": "Claude midterm election info and foreign influence bans",
-        "decision": "covered",
-        "reason": "Already posted as 2026-10-15-claude-midterms-fake-news-bans."
-      },
-      {
-        "story": "Eight states sue OpenAI over ChatGPT and kids",
-        "decision": "covered",
-        "reason": "Already posted as 2026-10-14-eight-states-sue-openai-chatgpt-kids."
-      },
-      {
-        "story": "OpenAI engineer charged in office bugging case, Saudi travel follow-up",
-        "decision": "covered",
-        "reason": "Already covered on Oct 13 in two jobs; new details are a small follow-up."
-      },
-      {
-        "story": "OpenAI in early talks to buy security firm Trail of Bits",
-        "source": "https://cryptobriefing.com/openai-talks-acquire-trail-of-bits/",
-        "decision": "skipped",
-        "reason": "Single-source report from Oct 13, older than 12 hours, and only early talks."
-      },
-      {
-        "story": "Anthropic opens Singapore office and signs safety pact",
-        "decision": "skipped",
-        "reason": "Regional office news with little US interest."
-      },
-      {
-        "story": "Musk shows Grok Imagine Video 1.5 making music videos",
-        "decision": "skipped",
-        "reason": "Could not find two solid independent sources for the demo."
-      },
-      {
-        "story": "Cohere to acquire AI security startup AISLE",
-        "decision": "skipped",
-        "reason": "Smaller company, low US consumer interest; already two security stories today."
-      },
-      {
-        "story": "Gemini 4 Argon launch",
-        "decision": "covered",
-        "reason": "Already covered as 2026-10-13-google-gemini-4-argon-launch."
-      },
-      {
-        "story": "Kroger cutting 3,000 jobs as it turns to AI",
-        "decision": "skipped",
-        "reason": "Layoff story with thin AI detail in the source; may revisit if confirmed by major outlets."
-      }
-    ],
-    "requests": []
-  },
-  {
     "run_at": "2026-10-15T16:04:26.998Z",
     "summary": "Midday run: queued Mahir's two Reels (Windows 7 on PS5, AI action star lineup), the FTC subpoenas to OpenAI and Anthropic (sensitive, needs approval) and a Universal Cart how-to; today now has 8 jobs plus 2 Reels.",
     "considered": [
@@ -4276,6 +4204,86 @@
       },
       {
         "story": "Google DeepMind staff resign over military AI contracts",
+        "decision": "covered",
+        "reason": "Posted as 2026-10-21-google-deepmind-staff-quit-pentagon."
+      },
+      {
+        "story": "PHP2Shell flaws found with AI",
+        "decision": "covered",
+        "reason": "Posted as 2026-10-21-ai-finds-php2shell-flaws."
+      }
+    ],
+    "requests": []
+  },
+  {
+    "run_at": "2026-10-22T14:10:43.990Z",
+    "summary": "Mid-morning run (09:55 New York): no open links or requests; queued Microsoft's report that a China-aligned group used AI agents against 2,250 Microsoft 365 tenants as priority 1 (sensitive, waits for Mahir). Oct 22 is otherwise at the 8 post cap, so the pipeline will place it ahead of the lower priority posts or hold it for Oct 23.",
+    "considered": [
+      {
+        "story": "Microsoft says China-aligned Storm-0940 used ARTEX AI agents against 2,250+ Microsoft 365 tenants via ConnectWise Cloud Backup",
+        "source": "https://cyberscoop.com/microsoft-attributes-connectwise-supply-chain-attack-china-storm-0940/",
+        "decision": "queued",
+        "job_id": "2026-10-22-microsoft-ai-agents-hacked-2250-tenants",
+        "priority": 1,
+        "reason": "Major Microsoft security report on AI agents running a real attack, confirmed by TNW, CyberScoop, CSO Online and BleepingComputer; marked sensitive (state hacking)."
+      },
+      {
+        "story": "DeepSeek reportedly raises about $15 billion led by CATL and Tencent",
+        "source": "https://cellcog.ai/blog/deepseek-15-billion-round/",
+        "decision": "skipped",
+        "reason": "Unconfirmed by the companies and the details could still change; Oct 22 is at the cap. Worth a look tomorrow if confirmed."
+      },
+      {
+        "story": "Meta accidentally exposed hidden WhatsApp support chatbot rules, including not citing its privacy policy in legal questions",
+        "source": "https://www.newsbytesapp.com/news/science/meta-accidentally-leaks-whatsapp-ai-chatbot-s-hidden-rules/story",
+        "decision": "skipped",
+        "reason": "Reported on October 20, so it is two days old and the day is full."
+      },
+      {
+        "story": "Apple TV 4K with Siri AI",
+        "source": "https://www.apple.com/newsroom/2026/10/apple-unveils-the-new-apple-tv-4k/",
+        "decision": "skipped",
+        "reason": "Announced October 13, not new."
+      },
+      {
+        "story": "Google Cloud and NVIDIA make Vera Rubin infrastructure generally available",
+        "source": "https://blogs.nvidia.com/blog/google-cloud-vera-rubin-infrastructure",
+        "decision": "skipped",
+        "reason": "Enterprise infrastructure news with little consumer appeal, and the day is full."
+      },
+      {
+        "story": "Recursive launches Flint, a laptop coding model largely built by AI",
+        "decision": "skipped",
+        "reason": "Priority 2 startup launch and Oct 22 is at the cap."
+      },
+      {
+        "story": "Walmart lets AI shopping agents buy on customers' behalf",
+        "decision": "skipped",
+        "reason": "Priority 2 and the day is full; can run on a later day."
+      },
+      {
+        "story": "Mistral Large 4 public preview",
+        "decision": "skipped",
+        "reason": "Not a priority 1 company and the day is full."
+      },
+      {
+        "story": "OpenAI explains how it built ChatGPT's ad stack",
+        "source": "https://openai.com/index/building-chatgpt-ad-stack",
+        "decision": "skipped",
+        "reason": "Engineering blog post, not news with broad appeal."
+      },
+      {
+        "story": "Dario Amodei's reply on nine costly safety decisions",
+        "decision": "covered",
+        "reason": "Posted as 2026-10-22-amodei-admits-mistakes-nine-safety-calls."
+      },
+      {
+        "story": "Claude Duet launch",
+        "decision": "covered",
+        "reason": "Posted as 2026-10-21-claude-duet-works-while-you-sleep."
+      },
+      {
+        "story": "Google DeepMind staff resign over military AI work",
         "decision": "covered",
         "reason": "Posted as 2026-10-21-google-deepmind-staff-quit-pentagon."
       },
