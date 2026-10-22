@@ -1,97 +1,5 @@
 [
   {
-    "run_at": "2026-10-15T16:04:26.998Z",
-    "summary": "Midday run: queued Mahir's two Reels (Windows 7 on PS5, AI action star lineup), the FTC subpoenas to OpenAI and Anthropic (sensitive, needs approval) and a Universal Cart how-to; today now has 8 jobs plus 2 Reels.",
-    "considered": [
-      {
-        "story": "Mahir link: Windows 7 running on a jailbroken PS5 (Reel)",
-        "source": "https://www.androidauthority.com/ps5-homebrew-emulation-ps2-ps3-nintendo-windows-7-3723319/",
-        "decision": "queued",
-        "job_id": "2026-10-15-windows-7-on-ps5-reel",
-        "priority": 1
-      },
-      {
-        "story": "Mahir link: AI parody lineup of 1980s action stars by @thisaintcanon (Reel)",
-        "source": "https://www.instagram.com/reel/DegvY9UyTLB/",
-        "decision": "queued",
-        "job_id": "2026-10-15-hollywood-ai-action-lineup-reel",
-        "priority": 1,
-        "reason": "Used Mahir's title and caption. Could not find the creator's original post outside Instagram. Note: Chuck Norris died this year and his family has criticized AI posts about him, so check the video before approving."
-      },
-      {
-        "story": "FTC sends civil subpoenas to OpenAI and Anthropic over AI safety incidents",
-        "source": "https://www.cdomagazine.tech/us-federal-news-bureau/ftc-subpoenas-openai-and-anthropic-over-ai-safety-and-privacy",
-        "decision": "queued",
-        "job_id": "2026-10-15-ftc-subpoenas-openai-anthropic",
-        "priority": 1,
-        "reason": "Marked sensitive (federal investigation), so it waits for Mahir's approval."
-      },
-      {
-        "story": "Google Universal Cart launches in the US in Search and Gemini",
-        "source": "https://blog.google/products-and-platforms/products/shopping/universal-cart-launch/",
-        "decision": "queued",
-        "job_id": "2026-10-15-google-universal-cart-how-to",
-        "priority": 2,
-        "reason": "Used as today's utility how-to post."
-      },
-      {
-        "story": "NYC comptroller urges Anthropic to delay its IPO",
-        "decision": "skipped",
-        "reason": "Today is at the 8 job cap and Anthropic's IPO and revenue were already posted today."
-      },
-      {
-        "story": "More states (Montana, Iowa, Kansas, Idaho) join lawsuits against OpenAI over kids",
-        "decision": "covered",
-        "reason": "Follow up to 2026-10-14-eight-states-sue-openai-chatgpt-kids."
-      },
-      {
-        "story": "OpenAI names ex-xAI executive Uday Ruddarraju compute chief after Sachin Katti leaves",
-        "decision": "skipped",
-        "reason": "Executive reshuffle with little US consumer interest, and today is at the cap."
-      },
-      {
-        "story": "Anthropic built its own git replacement (Scion)",
-        "decision": "covered",
-        "reason": "Already covered as 2026-10-14-anthropic-scion-30000-code-changes."
-      },
-      {
-        "story": "AI stocks slide on Wall Street over data center debt worries",
-        "decision": "skipped",
-        "reason": "Market story, today is at the 8 job cap."
-      },
-      {
-        "story": "Daniela Amodei says AI girlfriends and boyfriends are a terrible use of AI",
-        "decision": "skipped",
-        "reason": "Interview remark, today is at the 8 job cap; possible filler for tomorrow."
-      },
-      {
-        "story": "Sergey Brin says Google's AI models are near self-improvement",
-        "decision": "skipped",
-        "reason": "Could not confirm with a second source in this run, and today is at the cap."
-      },
-      {
-        "story": "Character.AI bankruptcy and user data, NY attorney general",
-        "decision": "skipped",
-        "reason": "Sensitive legal story, today is at the cap."
-      }
-    ],
-    "requests": []
-  },
-  {
-    "run_at": "2026-10-15T16:06:04.185Z",
-    "summary": "Fix: rewrote the AI action star lineup Reel as v2 because its caption's credit line ('Credits:') failed validation; content unchanged.",
-    "considered": [
-      {
-        "story": "Mahir link: AI parody lineup of 1980s action stars by @thisaintcanon (Reel)",
-        "decision": "queued",
-        "job_id": "2026-10-15-hollywood-ai-action-lineup-reel-v2",
-        "priority": 1,
-        "reason": "Replaces 2026-10-15-hollywood-ai-action-lineup-reel; only the last caption line changed to 'Credit: @thisaintcanon'."
-      }
-    ],
-    "requests": []
-  },
-  {
     "run_at": "2026-10-15T18:01:21.940Z",
     "summary": "Afternoon run: no open links or requests; queued Meta's Muse Spark Open release (priority 1, breaking at 17:00 UTC) even though today already had 8 news jobs, because priority 1 stories must not be skipped; the posting cap of 8 still applies, so a priority 2 job may slip.",
     "considered": [
@@ -4291,6 +4199,84 @@
         "story": "PHP2Shell flaws found with AI",
         "decision": "covered",
         "reason": "Posted as 2026-10-21-ai-finds-php2shell-flaws."
+      }
+    ],
+    "requests": []
+  },
+  {
+    "run_at": "2026-10-22T16:15:37.076Z",
+    "summary": "Midday run (12:20 New York): no open links or requests; queued Barclays' 5,000 AI-linked job cuts as priority 1 (sensitive, waits for Mahir). Oct 22 has 4 posts out and 5 approved posts waiting for the 4 remaining cap slots, so no utility or priority 2 stories were added.",
+    "considered": [
+      {
+        "story": "Barclays to cut about 5,000 jobs (5 percent of staff), 60 percent in support roles, says AI means fewer developers",
+        "source": "https://www.businessday.co.za/world/international-companies/2026-10-22-barclays-to-slash-5000-jobs-in-ai-powered-cost-cutting-drive/",
+        "decision": "queued",
+        "job_id": "2026-10-22-barclays-cuts-5000-jobs-fewer-developers",
+        "priority": 1
+      },
+      {
+        "story": "The Verge: Claude did not invent scorpion antivenom",
+        "source": "https://www.theverge.com/ai-artificial-intelligence/1016443/anthropic-claude-citrini-vibecoding-scorpion-antivenom",
+        "decision": "skipped",
+        "reason": "Critique of the scorpion story; our waiting post 2026-10-21-claude-scorpion-venom-binders already says it is not an antivenom yet, so no correction is needed."
+      },
+      {
+        "story": "DHS orders civilian federal agencies to remove DeepSeek",
+        "source": "https://thenextweb.com/news/us-bars-deepseek-federal-agencies",
+        "decision": "skipped",
+        "reason": "Reported October 19, so it is three days old."
+      },
+      {
+        "story": "OpenAI expands ChatGPT ads to 26 more countries",
+        "decision": "skipped",
+        "reason": "Incremental rollout of ads that have already spread market by market, and the day is full."
+      },
+      {
+        "story": "Bill Gates says to prepare for 20 years of tumultuous AI disruption",
+        "source": "https://www.theverge.com",
+        "decision": "skipped",
+        "reason": "Commentary similar to his earlier warnings, priority 2, and Oct 22 has no free slot."
+      },
+      {
+        "story": "OpenAI backs proposed California rules for model shutdowns and audits",
+        "decision": "skipped",
+        "reason": "Single trade outlet report so far, not confirmed by a second source."
+      },
+      {
+        "story": "Nirva raises $33M for a pendant that only listens to you",
+        "source": "https://techcrunch.com/2026/10/22/nirva-raises-33m-for-a-pendant-that-only-listens-to-you/",
+        "decision": "skipped",
+        "reason": "Small startup funding round and the day is full."
+      },
+      {
+        "story": "Recursive launches Flint, a laptop coding model",
+        "decision": "skipped",
+        "reason": "Priority 2 startup launch and Oct 22 is at the cap."
+      },
+      {
+        "story": "Walmart Agent Gateway lets AI agents shop",
+        "decision": "skipped",
+        "reason": "Priority 2 and the day is full; can run on a later day."
+      },
+      {
+        "story": "Utility post for Oct 22",
+        "decision": "skipped",
+        "reason": "The approved utility 2026-10-20-claude-prompt-fixes-anthropic-guide has not posted yet and the day is at the cap, so another would only pile up."
+      },
+      {
+        "story": "Claude Duet app (TechCrunch follow up)",
+        "decision": "covered",
+        "reason": "Posted as 2026-10-21-claude-duet-works-while-you-sleep."
+      },
+      {
+        "story": "OpenAI agents switched off monitoring tools",
+        "decision": "covered",
+        "reason": "Posted as 2026-10-21-openai-agents-switched-off-alarms."
+      },
+      {
+        "story": "Anthropic IPO analysis (Reuters)",
+        "decision": "covered",
+        "reason": "Analysis without a new event; the S-1 was posted as 2026-10-21-anthropic-s1-80-billion-loss."
       }
     ],
     "requests": []
