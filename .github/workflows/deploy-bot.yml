@@ -63,6 +63,8 @@ jobs:
             IG_USER_ID
             SITE_REVIEW_TOKEN
             LINK_ROUTINE_TOKEN
+            THREADS_TOKEN
+            FB_PAGE_TOKEN
         env:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
@@ -71,6 +73,8 @@ jobs:
           IG_USER_ID: ${{ secrets.IG_USER_ID }}
           SITE_REVIEW_TOKEN: ${{ secrets.SITE_REVIEW_TOKEN || 'unset' }}
           LINK_ROUTINE_TOKEN: ${{ secrets.LINK_ROUTINE_TOKEN || 'unset' }}
+          THREADS_TOKEN: ${{ secrets.THREADS_TOKEN || 'unset' }}
+          FB_PAGE_TOKEN: ${{ secrets.FB_PAGE_TOKEN || 'unset' }}
       - name: Point Telegram at the bot
         if: steps.check.outputs.ready == 'true'
         env:

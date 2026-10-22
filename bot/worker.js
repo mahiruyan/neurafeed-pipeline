@@ -2,7 +2,8 @@
 // - Links from Mahir  -> GitHub "inbox" workflow (turned into posts by the Claude news desk)
 // - Approve / Reject buttons -> GitHub "decide" workflow
 // - Anything else -> chat with DeepSeek, which sees the post queue and Instagram numbers
-// Secrets: TELEGRAM_BOT_TOKEN, WEBHOOK_SECRET, DEEPSEEK_API_KEY, GH_TOKEN, IG_ACCESS_TOKEN, IG_USER_ID
+// Secrets: TELEGRAM_BOT_TOKEN, WEBHOOK_SECRET, DEEPSEEK_API_KEY, GH_TOKEN, IG_ACCESS_TOKEN, IG_USER_ID,
+// THREADS_TOKEN, FB_PAGE_TOKEN (a system user token; the page token is looked up through it)
 
 const URL_RE = /https?:\/\/[^\s<>"']+/g;
 const word = (w) => new RegExp(`(^|[^\\p{L}])(${w})(?=$|[^\\p{L}])`, 'u');
@@ -205,7 +206,7 @@ async function handle(u, env) {
   }
   if (!text) return;
   if (text === '/start' || text === '/help') {
-    return send(env, 'Selam Mahir 👋\n• post: adım adım yeni post (format, link ya da görsel, başlık, açıklama, saat butonlarla)\n• Görsel at: tekli post olarak hazırlayayım\n• Link at: posta çevireyim (reel, carousel, tekli, prompt kelimelerinden birini ekleyebilirsin, "başlık: ..." da yazabilirsin, "21:30" ya da "yarın 10:00" yazarsan o saatte paylaşırım)\n• /durum: kuyruk ve bugünün postları\n• /rapor: son postların performansı (sohbet)\n• /pdf: son 7 günün PDF raporu (/pdf 14 = son 14 gün, /aylik = son 30 gün)\n• /hafiza: kalıcı hafızayı gör ve sil\n• /unut: sohbet geçmişini sıfırla\n• "Bunu hatırla: ..." ya da "kural: ..." yazarsan kalıcı hafızaya eklerim (sen onaylarsan)\n• Ya da bana normal yaz: "Fitbit postunu iptal et", "Gemini haberini şimdi paylaş", "Amazon postunu yarın 20:00\'ye ertele" gibi.', m.message_id);
+    return send(env, 'Selam Mahir 👋\n• post: adım adım yeni post (format, link ya da görsel, başlık, açıklama, saat butonlarla)\n• Görsel at: tekli post olarak hazırlayayım\n• Link at: posta çevireyim (reel, carousel, tekli, prompt kelimelerinden birini ekleyebilirsin, "başlık: ..." da yazabilirsin, "21:30" ya da "yarın 10:00" yazarsan o saatte paylaşırım)\n• /durum: kuyruk ve bugünün postları\n• /istatistik: Instagram, Threads ve Facebook son 7 gün yan yana (/istatistik 30 = aylık)\n• /rapor: son postların performansı (sohbet)\n• /pdf: son 7 günün PDF raporu (/pdf 14 = son 14 gün, /aylik = son 30 gün)\n• /hafiza: kalıcı hafızayı gör ve sil\n• /unut: sohbet geçmişini sıfırla\n• "Bunu hatırla: ..." ya da "kural: ..." yazarsan kalıcı hafızaya eklerim (sen onaylarsan)\n• Ya da bana normal yaz: "Fitbit postunu iptal et", "Gemini haberini şimdi paylaş", "Amazon postunu yarın 20:00\'ye ertele" gibi.', m.message_id);
   }
   // Only a bare "yes" confirms the last proposal, and only a recent one: "ok, fix this" is a new request.
   const yes = /^(evet|onay|onaylıyorum|onayliyorum|onayla|tamam|ok|okey|olur|kaydet|yap)[.! ]*$/i.test(text.trim().toLocaleLowerCase('tr'));
@@ -218,6 +219,13 @@ async function handle(u, env) {
   }
   if (text === '/unut') { await env.KV.delete('history'); return send(env, 'Sohbet geçmişini sıfırladım (uzun süreli hafıza duruyor, onu /hafiza ile yönetirsin).', m.message_id); }
   if (text === '/hafiza' || text === '/hafıza') return showMemory(env, m.message_id);
+  // Three platforms side by side, computed here (no model math): /istatistik = 7 days, /istatistik 30 = monthly.
+  if (/^\/(istatistik|stats)\b/i.test(text)) {
+    const d = Math.min(90, Math.max(1, Number(text.split(/\s+/)[1]) || 7));
+    await tg(env, 'sendChatAction', { chat_id: owner, action: 'typing' }).catch(() => {});
+    const r = JSON.parse(await cached(env, `all${d}`, 1800, async () => JSON.stringify(await allPlatformStats(env, d))));
+    return send(env, statsText(r), m.message_id);
+  }
   if (/^\/(pdf|rapor_pdf|haftalik|haftalık|aylik|aylık)/.test(text)) {
     const d = /aylik|aylık/.test(text) ? 30 : Number(text.split(/\s+/)[1]) || 7;
     await dispatch(env, 'report.yml', { days: String(Math.min(90, Math.max(1, d))), send: 'true' });
@@ -258,6 +266,9 @@ const FINAL_NUDGE = 'Elindeki bilgilerle şimdi kısa ve net cevap ver, araç ç
 const TOOLS = [
   { name: 'get_queue', description: 'Post queue for the last 4 days: id, status (approved=waiting, posted, pending=needs Mahir OK, canceled, rejected, expired, skipped, publish_failed), posted_at, post_at (scheduled time), priority, headline, from_link.', parameters: { type: 'object', properties: {} } },
   { name: 'get_links', description: "Links and pictures Mahir sent to the bot (last 10) and what happened to each: waiting for the news desk (with the time of the desk's next run), being prepared, the post it became (job id and status: pending = preview sent, waiting for his OK; approved = will post at post_at; posted) or skipped by the desk with the reason. Use it whenever he asks about a link he sent, a Reel, or whether something was shared.", parameters: { type: 'object', properties: {} } },
+  { name: 'get_threads_stats', description: 'Threads account (@neurafeed.ai): total views, likes, replies, reposts, quotes and followers for the last N days, the change against the previous N days, and the top and weakest Threads posts by views.', parameters: { type: 'object', properties: { days: { type: 'integer', description: '1 to 90, default 7' } } } },
+  { name: 'get_facebook_stats', description: 'Facebook page (neurafeed.ai): followers, views, reach, engagements, new follows, video views and page visits for the last N days, the change against the previous N days, and the top and weakest Facebook posts by views (with reactions, comments, shares, clicks).', parameters: { type: 'object', properties: { days: { type: 'integer', description: '1 to 90, default 7' } } } },
+  { name: 'get_all_platform_stats', description: 'Instagram, Threads and Facebook side by side for the last N days (7 = weekly, 30 = monthly): combined views and followers, each platform\'s share of views, the change against the previous period, and each platform\'s best posts. Use it for any weekly, monthly or "all platforms" question.', parameters: { type: 'object', properties: { days: { type: 'integer', description: '7 for weekly, 30 for monthly, 1 to 90' } } } },
   { name: 'get_account_stats', description: 'Instagram account numbers: followers, number of posts, daily reach and follower change for the last days, where followers come from (countries, cities, age, gender) and where the accounts reached this week or month (viewers) come from (country, age).', parameters: { type: 'object', properties: { days: { type: 'integer', description: 'How many past days of reach and follower change, 1 to 30, default 7' } } } },
   { name: 'send_report', description: 'Create the PDF performance report (English, NeuraFeed design) and send it to Mahir on Telegram in about 3 minutes. Weekly = 7 days, monthly = 30 days, or any number of days. It compares with the previous period and the average of the last 4 periods.', parameters: { type: 'object', properties: { days: { type: 'integer', description: '7 weekly (default), 30 monthly, or 1 to 90' } } } },
   { name: 'get_instagram_stats', description: 'Stats for ALL Instagram posts of the account (every post since the start, not only the ones this system made): count, totals and averages, averages by format and by month, and the top and bottom posts by a metric. Filter by dates. Use it for any question about past posts or performance.', parameters: { type: 'object', properties: {
@@ -334,6 +345,9 @@ async function runTool(env, name, args) {
     return `Report for the last ${d} days started; the PDF arrives in about 3 minutes.`;
   }
   if (name === 'get_instagram_stats') return postStats(env, args);
+  if (name === 'get_threads_stats') { const d = Math.min(90, Math.max(1, Number(args.days) || 7)); return cached(env, `th${d}`, 1800, async () => JSON.stringify(await threadsStats(env, d))); }
+  if (name === 'get_facebook_stats') { const d = Math.min(90, Math.max(1, Number(args.days) || 7)); return cached(env, `fb${d}`, 1800, async () => JSON.stringify(await facebookStats(env, d))); }
+  if (name === 'get_all_platform_stats') { const d = Math.min(90, Math.max(1, Number(args.days) || 7)); return cached(env, `all${d}`, 1800, async () => JSON.stringify(await allPlatformStats(env, d))); }
   if (name === 'get_account_stats') { const d = Math.min(30, Math.max(1, Number(args.days) || 7)); return cached(env, `acct${d}`, 900, () => accountSummary(env, d)); }
   if (name === 'calculate') {
     const ex = String(args.expression || '').replace(/,/g, '');
@@ -380,7 +394,7 @@ async function chat(env, question) {
   const system = `Sen NeuraFeed Asistanısın: DeepSeek (${env.DEEPSEEK_MODEL || 'deepseek-v4-pro'}) modeliyle çalışan, @neurafeed.ai Instagram hesabının asistanısın. Claude değilsin; Claude ayrı bir agent olarak haber masasını yönetiyor (haber bulma, yazma, tasarım). Sana hangi model olduğun sorulursa bunu söyle. (İngilizce yapay zeka haberleri, Amerikan kitlesi). Sahibi Mahir ile Türkçe, kısa ve net konuşursun, "kanka" diyebilirsin. Markdown kullanma, düz metin ve kısa listeler yaz.
 Sistem: Claude günün her saatinde 2 saatte bir (New York saatiyle tek saatlerin :52'sinde) çalışıp haber bulur, carousel ve Mahir'in linklerinden post hazırlar; normal postlar New York saatiyle 07:00-09:30, 11:00-13:30, 17:00-22:00 arasında, en az 60 dakika arayla, günde en fazla 8 tane çıkar. Mahir bota link atarsa post olur; o postlar onun onayıyla, limitten ayrı ve istediği saatte çıkar.
 Şu an Türkiye: ${tr}, New York: ${ny}.
-Mahir'in gönderdiği bir link, reel veya "paylaşıldı mı" sorusu için get_links kullan. Kuyruk ve Instagram verisi gerekiyorsa araçları kullan (get_queue, get_instagram_stats: hesabın TÜM postları, ilk günden beri, tarih ve format filtresiyle, get_account_stats: takipçi sayısı, günlük erişim, takipçi değişimi, kitle demografisi). "Göremiyorum" deme, önce aracı çağır. Claude'un ne yaptığını, hangi haberi neden atladığını sorarsa get_desk_log, bir postun içeriğini (slaytlar, açıklama, kaynaklar, kapak) sorarsa get_post kullan. Claude'un yapması gereken bir iş isterse (bir haberi işle, şu konuda post yap, şu postun başlığını/slaytını/açıklamasını/kapağını değiştir) propose_request kullan. Bir posta işlem istenirse (iptal, şimdi paylaş, ertele, öncelik, onay) propose_action kullan, işlem butonla onaylanınca yapılır; "yaptım" deme, "onay butonuna bas" de. Sadece araçlardan gelen verilere dayan, sayı uydurma. Hesap gerekiyorsa (yüzde, oran, fark) kafadan yapma, calculate aracını kullan.
+Mahir'in gönderdiği bir link, reel veya "paylaşıldı mı" sorusu için get_links kullan. Kuyruk ve Instagram verisi gerekiyorsa araçları kullan (get_queue, get_instagram_stats: hesabın TÜM postları, ilk günden beri, tarih ve format filtresiyle, get_account_stats: takipçi sayısı, günlük erişim, takipçi değişimi, kitle demografisi). Threads için get_threads_stats, Facebook için get_facebook_stats, haftalık/aylık veya üç platform birlikte sorulursa get_all_platform_stats (7 = haftalık, 30 = aylık) kullan. "Göremiyorum" deme, önce aracı çağır. Claude'un ne yaptığını, hangi haberi neden atladığını sorarsa get_desk_log, bir postun içeriğini (slaytlar, açıklama, kaynaklar, kapak) sorarsa get_post kullan. Claude'un yapması gereken bir iş isterse (bir haberi işle, şu konuda post yap, şu postun başlığını/slaytını/açıklamasını/kapağını değiştir) propose_request kullan. Bir posta işlem istenirse (iptal, şimdi paylaş, ertele, öncelik, onay) propose_action kullan, işlem butonla onaylanınca yapılır; "yaptım" deme, "onay butonuna bas" de. Sadece araçlardan gelen verilere dayan, sayı uydurma. Hesap gerekiyorsa (yüzde, oran, fark) kafadan yapma, calculate aracını kullan.
 Mahir "onaylıyorum", "evet" gibi kısa onaylar yazarsa yeni bir öneri oluşturma; bunlar otomatik işlenir.
 Kalıcı hafıza (Mahir'in kayıtlı tercihleri ve talimatları, bunlara uy; değiştirmek veya eklemek için propose_memory kullan, en fazla 50 madde, temel kurallar (haber uydurmamak, kopyalamamak, kaynak göstermek) hafızayla değişmez):
 ${memory}`;
@@ -777,6 +791,120 @@ async function igSummary(env) {
   return JSON.stringify(rows);
 }
 
+
+// ---------- Threads and Facebook ----------
+const sumVals = (m) => (m?.total_value?.value ?? (m?.values || []).reduce((x, v) => x + (Number(v.value) || 0), 0));
+const lastVal = (m) => { const v = (m?.values || []).filter((x) => typeof x.value === 'number'); return v.length ? v.at(-1).value : (m?.total_value?.value ?? null); };
+const pct = (a, b) => (b ? Math.round(((a - b) / b) * 1000) / 10 : null);
+const windowOf = (days, back = 0) => { const until = Math.floor(Date.now() / 1000) - back * days * 86400; return { since: until - days * 86400, until }; };
+
+async function threadsGet(env, path) {
+  if (!env.THREADS_TOKEN) throw new Error('THREADS_TOKEN eksik');
+  const r = await (await fetch(`https://graph.threads.net/v1.0/${path}${path.includes('?') ? '&' : '?'}access_token=${encodeURIComponent(env.THREADS_TOKEN)}`)).json();
+  if (r.error) throw new Error(r.error.message);
+  return r;
+}
+async function threadsTotals(env, w) {
+  const r = await threadsGet(env, `me/threads_insights?metric=views,likes,replies,reposts,quotes,followers_count&since=${w.since}&until=${w.until}`);
+  const o = {};
+  for (const m of r.data || []) o[m.name] = m.name === 'followers_count' ? (m.total_value?.value ?? lastVal(m)) : sumVals(m);
+  return o;
+}
+async function threadsStats(env, days = 7) {
+  const [now, before, list] = await Promise.all([threadsTotals(env, windowOf(days)), threadsTotals(env, windowOf(days, 1)).catch(() => ({})), threadsGet(env, `me/threads?fields=id,text,timestamp,permalink,media_type&since=${windowOf(days).since}&limit=40`)]);
+  const posts = await Promise.all((list.data || []).filter((p) => p.media_type !== 'REPOST_FACADE').slice(0, 40).map(async (p) => {
+    const ins = await threadsGet(env, `${p.id}/insights?metric=views,likes,replies,reposts,quotes,shares`).catch(() => ({ data: [] }));
+    const m = {}; for (const x of ins.data || []) m[x.name] = x.values?.[0]?.value ?? x.total_value?.value ?? 0;
+    return { t: p.timestamp?.slice(0, 16), title: String(p.text || '').split('\n')[0].slice(0, 90), url: p.permalink, views: m.views || 0, likes: m.likes || 0, replies: m.replies || 0, reposts: m.reposts || 0, quotes: m.quotes || 0, shares: m.shares || 0 };
+  }));
+  const sorted = [...posts].sort((a, b) => b.views - a.views);
+  return {
+    platform: 'Threads', days, totals: now, previous_period: before,
+    change_pct: Object.fromEntries(['views', 'likes', 'replies', 'reposts'].map((k) => [k, pct(now[k] || 0, before[k] || 0)])),
+    posts: posts.length, avg_views_per_post: posts.length ? Math.round(posts.reduce((x, p) => x + p.views, 0) / posts.length) : 0,
+    top: sorted.slice(0, 5), bottom: sorted.slice(-3).reverse(),
+  };
+}
+
+async function fbPage(env) {
+  if (!env.FB_PAGE_TOKEN) throw new Error('FB_PAGE_TOKEN eksik');
+  return JSON.parse(await cached(env, 'fbpage', 3600, async () => {
+    const r = await (await fetch(`https://graph.facebook.com/v23.0/me/accounts?fields=id,name,access_token&access_token=${encodeURIComponent(env.FB_PAGE_TOKEN)}`)).json();
+    if (r.error || !r.data?.[0]) throw new Error(r.error?.message || 'Facebook sayfası bulunamadı');
+    return JSON.stringify({ id: r.data[0].id, name: r.data[0].name, token: r.data[0].access_token });
+  }));
+}
+async function fbGet(page, path) {
+  const r = await (await fetch(`https://graph.facebook.com/v23.0/${path}${path.includes('?') ? '&' : '?'}access_token=${encodeURIComponent(page.token)}`)).json();
+  if (r.error) throw new Error(r.error.message);
+  return r;
+}
+// Meta renamed the page metrics in 2025: views are page_media_view, reach page_total_media_view_unique.
+async function fbTotals(page, w) {
+  const r = await fbGet(page, `${page.id}/insights?metric=page_media_view,page_total_media_view_unique,page_post_engagements,page_daily_follows_unique,page_video_views,page_views_total&period=day&since=${w.since}&until=${w.until}`);
+  const o = {}; for (const m of r.data || []) o[m.name] = sumVals(m);
+  return { views: o.page_media_view || 0, reach_daily_sum: o.page_total_media_view_unique || 0, engagements: o.page_post_engagements || 0, new_follows: o.page_daily_follows_unique || 0, video_views: o.page_video_views || 0, page_visits: o.page_views_total || 0 };
+}
+async function facebookStats(env, days = 7) {
+  const page = await fbPage(env);
+  const [info, now, before, list] = await Promise.all([
+    fbGet(page, `${page.id}?fields=name,followers_count`), fbTotals(page, windowOf(days)), fbTotals(page, windowOf(days, 1)).catch(() => ({})),
+    fbGet(page, `${page.id}/posts?fields=id,created_time,message,permalink_url,shares,comments.summary(true).limit(0),reactions.summary(true).limit(0)&since=${windowOf(days).since}&limit=40`),
+  ]);
+  const posts = await Promise.all((list.data || []).slice(0, 40).map(async (p) => {
+    const ins = await fbGet(page, `${p.id}/insights?metric=post_media_view,post_total_media_view_unique,post_clicks`).catch(() => ({ data: [] }));
+    const m = {}; for (const x of ins.data || []) m[x.name] = x.values?.[0]?.value ?? 0;
+    return { t: p.created_time?.slice(0, 16), title: String(p.message || '').split('\n')[0].slice(0, 90), url: p.permalink_url, views: m.post_media_view || 0, reach: m.post_total_media_view_unique || 0, clicks: m.post_clicks || 0, reactions: p.reactions?.summary?.total_count || 0, comments: p.comments?.summary?.total_count || 0, shares: p.shares?.count || 0 };
+  }));
+  const sorted = [...posts].sort((a, b) => b.views - a.views);
+  return {
+    platform: 'Facebook', page: info.name, followers: info.followers_count, days, totals: now, previous_period: before,
+    change_pct: Object.fromEntries(['views', 'engagements', 'new_follows'].map((k) => [k, pct(now[k] || 0, before[k] || 0)])),
+    posts: posts.length, avg_views_per_post: posts.length ? Math.round(posts.reduce((x, p) => x + p.views, 0) / posts.length) : 0,
+    top: sorted.slice(0, 5), bottom: sorted.slice(-3).reverse(),
+  };
+}
+
+// Instagram for the same window, from the post list (views of posts published in the window).
+async function instagramWindow(env, days) {
+  const rows = await allPosts(env);
+  const iso = (sec) => new Date(sec * 1000).toISOString().slice(0, 16);
+  const pick = (w) => rows.filter((r) => r.t >= iso(w.since) && r.t <= iso(w.until));
+  const sum = (list, k) => list.reduce((x, r) => x + (r[k] || 0), 0);
+  const now = pick(windowOf(days)); const before = pick(windowOf(days, 1));
+  const tot = (l) => ({ posts: l.length, views: sum(l, 'views'), reach: sum(l, 'reach'), likes: sum(l, 'likes'), comments: sum(l, 'comments'), saved: sum(l, 'saved'), shares: sum(l, 'shares') });
+  const acct = JSON.parse(await cached(env, `acct${Math.min(30, days)}`, 900, () => accountSummary(env, Math.min(30, days))));
+  const newFollowers = (acct.daily_new_followers || []).reduce((x, d) => x + (Number(d.value) || 0), 0);
+  const t = tot(now); const b = tot(before);
+  return { platform: 'Instagram', followers: acct.followers, new_followers: newFollowers, days, totals: t, previous_period: b, change_pct: { views: pct(t.views, b.views), likes: pct(t.likes, b.likes), posts: pct(t.posts, b.posts) }, top: [...now].sort((x, y) => y.views - x.views).slice(0, 5) };
+}
+
+// All three platforms side by side, with the change against the previous period of the same length.
+async function allPlatformStats(env, days) {
+  const [ig, th, fb] = await Promise.all([
+    instagramWindow(env, days).catch((e) => ({ platform: 'Instagram', error: e.message })),
+    threadsStats(env, days).catch((e) => ({ platform: 'Threads', error: e.message })),
+    facebookStats(env, days).catch((e) => ({ platform: 'Facebook', error: e.message })),
+  ]);
+  const views = (x) => x.totals?.views || 0; const prev = (x) => x.previous_period?.views || 0;
+  const total = views(ig) + views(th) + views(fb); const totalPrev = prev(ig) + prev(th) + prev(fb);
+  return {
+    period: days <= 7 ? 'son 7 gün' : `son ${days} gün`, days,
+    combined: { views: total, previous_views: totalPrev, change_pct: pct(total, totalPrev), followers: (ig.followers || 0) + (th.totals?.followers_count || 0) + (fb.followers || 0), share_of_views: Object.fromEntries([['Instagram', views(ig)], ['Threads', views(th)], ['Facebook', views(fb)]].map(([k, v]) => [k, total ? Math.round((v / total) * 1000) / 10 : 0])) },
+    instagram: ig, threads: th, facebook: fb,
+    notes: 'Instagram views = views of posts published in the period. Threads and Facebook views = all views in the period (account level).',
+  };
+}
+
+const fmtN = (n) => (n == null ? '?' : Number(n).toLocaleString('tr-TR'));
+const fmtC = (c) => (c == null ? '' : ` (${c > 0 ? '+' : ''}${c}%)`);
+function statsText(r) {
+  const line = (x) => x.error ? `• ${x.platform}: veri alınamadı (${x.error.slice(0, 80)})`
+    : `• ${x.platform}: ${fmtN(x.totals.views)} görüntülenme${fmtC(x.change_pct?.views)}, takipçi ${fmtN(x.followers ?? x.totals.followers_count)}${x.platform === 'Instagram' ? `, ${x.totals.posts} post, ${fmtN(x.totals.likes)} beğeni` : x.platform === 'Threads' ? `, ${fmtN(x.totals.likes)} beğeni, ${fmtN(x.totals.reposts)} repost` : `, ${fmtN(x.totals.engagements)} etkileşim, +${fmtN(x.totals.new_follows)} takip`}`;
+  const best = [r.instagram, r.threads, r.facebook].filter((x) => x.top?.[0]).map((x) => `• ${x.platform}: ${x.top[0].title || 'post'} (${fmtN(x.top[0].views)})`);
+  return [`📊 ${r.period}, 3 platform`, `Toplam: ${fmtN(r.combined.views)} görüntülenme${fmtC(r.combined.change_pct)}, ${fmtN(r.combined.followers)} takipçi`, `Pay: Instagram %${r.combined.share_of_views.Instagram}, Threads %${r.combined.share_of_views.Threads}, Facebook %${r.combined.share_of_views.Facebook}`, '', line(r.instagram), line(r.threads), line(r.facebook), '', 'En çok izlenen:', ...best].join('\n');
+}
+
 // ---------- Telegram ----------
 // ---------- Website drafts (neurafeedai.com) ----------
 // Every 5 minutes: AI drafts waiting for review on the site arrive here once, with a preview and
@@ -1028,4 +1156,4 @@ async function wizardSubmit(env, w) {
 }
 
 // For tests only.
-export const _test = { startLinkDesk, nextDeskRun, linkStatus, siteDraftCheck, siteDraftButton, siteDraftText };
+export const _test = { statsText, allPlatformStats, startLinkDesk, nextDeskRun, linkStatus, siteDraftCheck, siteDraftButton, siteDraftText };
