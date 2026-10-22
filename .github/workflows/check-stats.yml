@@ -30,7 +30,12 @@ jobs:
           pg=$(curl -s "$G/me/accounts?fields=id,access_token&access_token=$FB")
           pid=$(jq -r '.data[0].id' <<<"$pg"); PT=$(jq -r '.data[0].access_token' <<<"$pg"); echo "::add-mask::$PT"
           probe "facebook page" "$G/$pid?fields=name,followers_count,fan_count&access_token=$PT" '{name,followers_count,fan_count}'
-          probe "facebook page insights" "$G/$pid/insights?metric=page_impressions_unique,page_post_engagements,page_daily_follows_unique,page_views_total&period=day&since=$since&until=$now&access_token=$PT" '[.data[]|{name,sum:([.values[].value]|add)}]'
-          probe "facebook posts with insights" "$G/$pid/posts?fields=id,created_time,insights.metric(post_impressions_unique,post_clicks,post_reactions_by_type_total)&limit=2&access_token=$PT" '[.data[]|{created_time,ins:[.insights.data[]?|{name,v:.values[0].value}]}]'
+          ok=""; for m in page_media_view page_total_media_view_unique page_impressions page_impressions_unique page_post_engagements page_follows page_daily_follows page_daily_follows_unique page_views_total page_video_views page_fan_adds; do
+            r=$(curl -s "$G/$pid/insights?metric=$m&period=day&since=$since&until=$now&access_token=$PT"); jq -e '.error' <<<"$r" >/dev/null || ok="$ok $m=$(jq '[.data[0].values[]?.value | numbers] | add' <<<"$r")"; done
+          echo "::notice::fb page metrics OK:$ok"
+          post=$(curl -s "$G/$pid/posts?fields=id&limit=1&access_token=$PT" | jq -r '.data[0].id // empty')
+          ok=""; for m in post_media_view post_total_media_view_unique post_impressions post_impressions_unique post_clicks post_reactions_by_type_total post_engaged_users post_activity_by_action_type post_video_views; do
+            r=$(curl -s "$G/$post/insights?metric=$m&access_token=$PT"); jq -e '.error' <<<"$r" >/dev/null || ok="$ok $m=$(jq -c '.data[0].values[0].value' <<<"$r")"; done
+          echo "::notice::fb post metrics OK (post ${post:+found}):$ok"
           tid=$(curl -s "$T/me/threads?fields=id,timestamp&limit=1&access_token=$TH" | jq -r '.data[0].id // empty'); echo "::notice::threads latest post id found: ${tid:+yes}"
           [ -n "$tid" ] && probe "threads post insights" "$T/$tid/insights?metric=views,likes,replies,reposts,quotes,shares&access_token=$TH" '[.data[]|{name,v:.values[0].value}]'
