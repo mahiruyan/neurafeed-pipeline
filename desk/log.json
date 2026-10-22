@@ -1,71 +1,5 @@
 [
   {
-    "run_at": "2026-10-15T21:56:10.638Z",
-    "summary": "Queued Mahir's two Reel links (AI agents goodbye loop, Opus 5.5 denim tear); no new news jobs because today already has 9 news jobs, above the 8 per day cap.",
-    "considered": [
-      {
-        "story": "Two AI agents stuck in a goodbye loop during a job interview (Graham Dot Zip)",
-        "source": "https://www.theregister.com/offbeat/2026/10/14/chaos-ensues-when-ai-interviewer-meets-ai-interviewee/5303144",
-        "decision": "queued",
-        "job_id": "2026-10-15-ai-agents-goodbye-loop-reel",
-        "priority": 1
-      },
-      {
-        "story": "Creator says a denim tear simulation took 5 billion Claude Opus 5.5 tokens (@scottstts)",
-        "source": "https://denim.scottsun.io/",
-        "decision": "queued",
-        "job_id": "2026-10-15-opus-denim-tear-tokens-reel",
-        "priority": 1
-      },
-      {
-        "story": "Anthropic gives METR researchers employee-level access",
-        "source": "https://techcrunch.com/2026/10/15/anthropic-is-letting-metr-researchers-look-under-the-hood-with-employee-level-access/",
-        "decision": "skipped",
-        "reason": "Today already has 9 news jobs (cap is 8) and this is a niche safety-research story, not a must-post launch."
-      },
-      {
-        "story": "Eight US states sue OpenAI over ChatGPT risks",
-        "decision": "covered",
-        "reason": "Already queued as 2026-10-14-eight-states-sue-openai-chatgpt-kids."
-      },
-      {
-        "story": "White House Super Intelligence task force holds first meeting",
-        "decision": "skipped",
-        "reason": "Daily cap reached; political story would also need manual approval this late in the day."
-      },
-      {
-        "story": "Anthropic revenue growth slowing, linked to its crackdown on copycats",
-        "decision": "covered",
-        "reason": "Anthropic's quarterly revenue was already posted today as 2026-10-15-anthropic-16-8-billion-quarter."
-      },
-      {
-        "story": "Developer says Anthropic's Scion copies Meta's Mononoke (Hacker News)",
-        "source": "https://sunshowers.io/posts/anthropic-mononoke/",
-        "decision": "skipped",
-        "reason": "Developer dispute from one blog with no independent news coverage yet, and the daily cap is reached."
-      },
-      {
-        "story": "Krea 3 image model for editing at scale",
-        "source": "https://www.krea.ai/krea-3",
-        "decision": "skipped",
-        "reason": "Daily cap reached; good candidate for a tool post another day."
-      },
-      {
-        "story": "Windows optimized for NVIDIA RTX Spark laptops",
-        "source": "https://www.theverge.com/tech/1011996/microsoft-windows-rtx-spark-platform-changes-notepad",
-        "decision": "skipped",
-        "reason": "Daily cap reached and it is an incremental follow-up."
-      },
-      {
-        "story": "Simons Foundation launches $15M effort for mathematicians in the AI era",
-        "source": "https://www.simonsfoundation.org/news/simons-foundation-launches-15m-effort-to-help-mathematicians-navigate-ai-era/",
-        "decision": "skipped",
-        "reason": "Small grant program with little US mainstream interest, and the daily cap is reached."
-      }
-    ],
-    "requests": []
-  },
-  {
     "run_at": "2026-10-15T23:54:21.119Z",
     "summary": "Late run (19:53 New York): no new jobs. Today's news cap is full, the last two slots tonight are taken by approved jobs, and any timely story found now would expire before the 07:00 window. No open links or requests.",
     "considered": [
@@ -4301,6 +4235,81 @@
         "story": "Barclays 5,000 job cuts",
         "decision": "covered",
         "reason": "Queued as 2026-10-22-barclays-cuts-5000-jobs-fewer-developers."
+      }
+    ],
+    "requests": []
+  },
+  {
+    "run_at": "2026-10-22T22:00:40.004Z",
+    "summary": "Evening run (17:55 New York): no open links or requests and no new priority 1 story since the last run. Oct 22 has 6 posts out and 3 approved posts waiting for the last 2 cap slots, so nothing was queued.",
+    "considered": [
+      {
+        "story": "Canva releases its first image generation model (TechCrunch)",
+        "source": "https://techcrunch.com/2026/10/22/canva-releases-its-first-image-generation-model/",
+        "decision": "skipped",
+        "reason": "Priority 2 launch, could not open the TechCrunch report or find a second source this run, and Oct 22 has no free slot."
+      },
+      {
+        "story": "OpenAI publishes an official OpenAI CLI on GitHub (Hacker News)",
+        "source": "https://github.com/openai/openai-cli",
+        "decision": "skipped",
+        "reason": "Developer tool with no news coverage yet to confirm details, and the day is full."
+      },
+      {
+        "story": "Geoffrey Hinton says AI has become conscious (Futurism)",
+        "source": "https://www.bigtechnology.com/p/nobel-prize-winner-geoffrey-hinton",
+        "decision": "skipped",
+        "reason": "The original interview is from June 5, 2026, so it is not news."
+      },
+      {
+        "story": "Blackstone backs an $18B debt deal for Anthropic's AI chips",
+        "decision": "skipped",
+        "reason": "Search only turns up older reports of the Blackstone financing talks; no new primary report."
+      },
+      {
+        "story": "Reuters newsletter: why Anthropic is turning away some users",
+        "decision": "skipped",
+        "reason": "A newsletter item with no new event, and the original could not be read."
+      },
+      {
+        "story": "Grok 4.7 release",
+        "decision": "skipped",
+        "reason": "Released in September 2026, old news."
+      },
+      {
+        "story": "1Password lets AI agents log in for you without seeing your password",
+        "decision": "skipped",
+        "reason": "Priority 2 product news and the day is full."
+      },
+      {
+        "story": "Harvard students use expanded Claude access",
+        "decision": "skipped",
+        "reason": "Campus feature story, priority 2, and the day is full."
+      },
+      {
+        "story": "Recursive releases Flint local coding model",
+        "decision": "skipped",
+        "reason": "Priority 2 developer model, already skipped earlier, and the day is full."
+      },
+      {
+        "story": "Utility post for Oct 22",
+        "decision": "skipped",
+        "reason": "The approved utility 2026-10-20-claude-prompt-fixes-anthropic-guide has not posted yet and the day is at the cap."
+      },
+      {
+        "story": "Anthropic federal AI safety bill (The Neuron)",
+        "decision": "covered",
+        "reason": "Already posted as 2026-10-17-anthropic-pitches-own-ai-safety-bill."
+      },
+      {
+        "story": "Microsoft MAI-DxO beats doctors on hard cases",
+        "decision": "covered",
+        "reason": "Queued as 2026-10-22-microsoft-ai-diagnoses-83-percent-doctors-36."
+      },
+      {
+        "story": "Claude Duet waitlist opens",
+        "decision": "covered",
+        "reason": "Posted as 2026-10-21-claude-duet-works-while-you-sleep."
       }
     ],
     "requests": []
