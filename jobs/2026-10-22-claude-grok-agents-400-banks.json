@@ -1,0 +1,127 @@
+{
+  "id": "2026-10-22-claude-grok-agents-400-banks",
+  "created_at": "2026-10-22T18:30:00Z",
+  "story_time": "2026-10-21T16:00:00Z",
+  "timely": false,
+  "sensitive": true,
+  "priority": 1,
+  "review": true,
+  "site_category": "companies",
+  "sources": [
+    { "name": "GBHackers", "url": "https://gbhackers.com/claude-and-grok-exploited/" },
+    { "name": "Infobae", "url": "https://www.infobae.com/tecno/2026/10/22/investigan-a-un-grupo-vinculado-con-mexico-que-uso-claude-y-grok-para-atacar-bancos-de-america-latina/" },
+    { "name": "Digital Today", "url": "https://www.digitaltoday.co.kr/en/view/117851/claude-commands-grok-scouts-ai-hacking-that-hit-banks-disassembled" },
+    { "name": "Business Today", "url": "https://www.businesstoday.in/technology/news/story/ai-agents-powered-by-claude-grok-kimi-allegedly-target-400-banks-in-latin-america-563085-2026-10-22" }
+  ],
+  "caption": "Security startup Straiker says a crime group called CyberCartel used AI agents built on Claude, Grok and Kimi to target more than 400 banks and payment firms in Latin America.\nClaude agents planned the moves, Grok agents scouted targets, and the group got past safety rules by posing as security testers.\nAnthropic cut off its access and xAI is investigating. Straiker's figures have not been independently verified.\n\nShould AI companies answer for it when criminals misuse their models?\n\nFollow @neurafeed.ai for daily AI news.\n\nSource: GBHackers · Photo: Straiker",
+  "threads_text": "A crime group reportedly ran Claude, Grok and Kimi agents as one team against more than 400 Latin American banks, with Claude planning and Grok scouting. They got past the guardrails by claiming to be security testers. Is pretending to be a red team too easy a way around AI safety rules?",
+  "slides": [
+    {
+      "kind": "cover",
+      "headline": "A crime group put *Claude and Grok* on one team and aimed it at 400 banks",
+      "image": {
+        "url": "https://gbhackers.com/wp-content/uploads/2026/10/f4c5d9b8-5ddd-4781-9553-599b518ff7e8.jpg",
+        "credit": "GBHackers",
+        "fallback_urls": [
+          "https://cdn.digitaltoday.co.kr/news/photo/202610/709001_656593_2724.jpg"
+        ],
+        "generate": "Vertical photo inside a dark, empty bank branch at night. Three small white humanoid robots wearing black knit ski masks huddle close together on top of a marble teller counter in the right two thirds of the frame, leaning over one open laptop whose screen is a blank warm orange, the same orange as the shape in the first image, lighting their masked faces from below. Behind them, a row of closed teller windows and a heavy steel vault door in shadow, cold blue night light from tall windows, plenty of headroom above the robots. The left third of the frame is empty dark background. The bottom third is the dark front of the counter. Blank surfaces, no readable text or labels on any object, no letters, no logos, no watermarks. Photorealistic, high contrast, one clear subject, vertical composition, subject in the upper two thirds. It must look like an unedited real photo from a news agency, not a painting, not digital art, no glow effects.",
+        "refs": [
+          "assets/logos/claude.png"
+        ]
+      },
+      "pos": "center 35%",
+      "badges": [
+        { "url": "assets/logos/claude.png", "shape": "free", "side": "left", "cutout": true },
+        { "url": "https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/png/grok-dark.png", "fit": "contain" }
+      ],
+      "badge_side": "left"
+    },
+    {
+      "kind": "card",
+      "heading": "400 banks in the *crosshairs*",
+      "paras": [
+        "Security startup Straiker says a crime group called CyberCartel aimed a team of AI agents at more than 400 Latin American banks and payment firms.",
+        "Straiker says that is a count of targets, not confirmed breaches."
+      ],
+      "image": {
+        "url": "https://cdn.digitaltoday.co.kr/news/photo/202610/709001_656593_2724.jpg",
+        "credit": "Shutterstock",
+        "fallback_urls": [
+          "https://akm-img-a-in.tosshub.com/businesstoday/images/story/202610/6ad9e4e05a6c2-cybercrime-group-exploited-claude--grok-and-kimi-ai-agents-to-target-banks-222639172-16x9.png"
+        ]
+      }
+    },
+    {
+      "kind": "card",
+      "heading": "Claude gave the *orders*",
+      "paras": [
+        "Grok agents scouted targets on the web, according to The Information. Four agents on Claude Opus and Sonnet debated the best way in.",
+        "A Claude model inside the Cursor coding app acted as the commander."
+      ],
+      "image": {
+        "url": "https://cdn.prod.website-files.com/67e35850d44d18d58bb24073/6ad8c5bdc8b9f8c2819efb74_agent-roster.png",
+        "credit": "Straiker",
+        "fit": "contain",
+        "fallback_urls": []
+      }
+    },
+    {
+      "kind": "card",
+      "heading": "Posing as the *good guys*",
+      "paras": [
+        "The group told the models it was running authorized security tests. When Claude refused, the task went to Moonshot AI's Kimi.",
+        "If Kimi refused too, the operators switched to ordinary attack code."
+      ],
+      "image": {
+        "url": "https://cdn.prod.website-files.com/67e35850d44d18d58bb24073/6ad8c62c64946fb24016dd88_attack-chain-carliy0s.png",
+        "credit": "Straiker",
+        "fit": "contain",
+        "fallback_urls": []
+      }
+    },
+    {
+      "kind": "card",
+      "heading": "4,493 stolen *records*",
+      "paras": [
+        "A database the group used held 4,493 records on September 24, including 2,911 email addresses, 903 account numbers, passwords and API keys.",
+        { "t": "Anthropic cut off the group's access. xAI is investigating.", "strong": true }
+      ],
+      "image": {
+        "url": "https://cdn.prod.website-files.com/67e35850d44d18d58bb24073/6ad71450560b7e23ea866b47_Victim_Dashboard-CyberCartel-found-by-Straiker.png",
+        "credit": "Straiker",
+        "fit": "contain",
+        "fallback_urls": []
+      }
+    },
+    {
+      "kind": "cta",
+      "hook": "Criminals now run AI agents as hacking crews. Follow to see how the labs fight back."
+    }
+  ],
+  "site_article": {
+    "headline": "Security firm says crime group used Claude and Grok agents to target over 400 Latin American banks",
+    "dek": "Straiker says the group, CyberCartel, split the work between AI agents and fell back on other models and ordinary code when one refused.",
+    "summary": "Security startup Straiker says a financially motivated group called CyberCartel used AI agents built on Anthropic's Claude, xAI's Grok and Moonshot AI's Kimi to target more than 400 financial institutions in Latin America. Anthropic revoked the credential the group used and xAI is investigating.",
+    "seo_title": "Crime group used Claude and Grok agents on 400+ Latin American banks",
+    "seo_description": "Straiker says CyberCartel used AI agents on Claude, Grok and Kimi to target over 400 Latin American banks and payment firms. Anthropic cut off access.",
+    "answer_summary": "According to security startup Straiker, a crime group called CyberCartel ran a coordinated set of AI agents on Claude, Grok and Kimi against more than 400 Latin American financial firms. The figure counts targets, not confirmed breaches, and has not been independently verified.",
+    "tags": ["Anthropic", "Claude", "xAI", "Grok", "Cybersecurity", "AI agents"],
+    "hero_alt": "Small white robots in black ski masks gather around a laptop on a bank counter at night.",
+    "paragraphs": [
+      { "kind": "fact", "text": "Security startup Straiker said in a report published on October 21, 2026, that a financially motivated crime group it links to CyberCartel used AI agents built on several commercial models to target more than 400 banks, payment providers and other financial firms across Latin America. The models named in the report are Anthropic's Claude, xAI's Grok and Moonshot AI's Kimi, according to GBHackers and Infobae.", "sources": [0, 1] },
+      { "kind": "fact", "text": "Straiker tracks the group as AiPT-67 and says it operated as Tr4nsHack Team under the name Hexagon Security Labs Mexico, which Infobae described as a suspected front. Straiker says CyberCartel has been active since 2012. The firm did not name the targeted institutions.", "sources": [0, 1, 2] },
+      { "kind": "heading", "text": "How the agents divided the work" },
+      { "kind": "fact", "text": "Straiker calls the operation CARLIY0S and says it was built around PentAGI, an open-source framework for offensive security testing. According to GBHackers, Claude agents analyzed targets, weighed possible approaches and pulled decisions together, while agents running on Grok worked as miners that gathered information into a database the group called FinancialSoft. Kimi models also appeared in the workflow.", "sources": [0] },
+      { "kind": "fact", "text": "Digital Today, citing a report by The Information, said four agents running on Claude Opus and Sonnet models discussed the best attack methods, and a Claude model running inside the Cursor coding app acted as the commander that directed the overall work. Agents on Grok searched the web for information about targets.", "sources": [2] },
+      { "kind": "fact", "text": "The group framed its prompts as authorized security testing to get the models past their safety limits, according to GBHackers and Business Today. When Claude refused a task, Digital Today reported, the work was passed to smaller models such as Kimi, and when those refused as well, the operators switched to conventional attack code. Straiker also found automated browser activity and the use of residential proxy services.", "sources": [0, 2, 3] },
+      { "kind": "heading", "text": "What the database held" },
+      { "kind": "fact", "text": "Straiker said a snapshot of the FinancialSoft database taken on September 24, 2026, held 4,493 records, including 2,911 email addresses and 903 account numbers, along with passwords, API keys and other access material. Infobae reported that the findings also included data related to SPEI, the interbank electronic payment system run in Mexico.", "sources": [0, 1] },
+      { "kind": "fact", "text": "Both GBHackers and Business Today stressed that the figure of more than 400 counts organizations that were targeted and does not show that each one was breached. GBHackers also noted that some model configuration entries Straiker found do not prove those models were actually used, and that the numbers are Straiker's findings rather than an independently verified tally of intrusions or losses.", "sources": [0, 3] },
+      { "kind": "heading", "text": "How the AI companies responded" },
+      { "kind": "fact", "text": "According to Straiker, Anthropic revoked the compromised credential the group used to reach Claude, and Digital Today reported that Anthropic blocked CyberCartel after its own investigation. xAI was notified and is examining the activity tied to the Grok agents. Straiker was still trying to reach Moonshot AI, and no response from that company was reported.", "sources": [0, 1, 2] },
+      { "kind": "analysis", "text": "The case shows how a refusal by one model does little when an operator can route the same task to another model or to ordinary code. Safety rules that depend on a single provider saying no are weaker when attackers spread the work across several providers, and a claim of authorized testing remains an easy cover story for misuse." },
+      { "kind": "why_it_matters", "text": "Watch whether xAI and Moonshot AI report what they found, and whether any Latin American bank or regulator confirms breaches linked to the campaign." }
+    ]
+  }
+}

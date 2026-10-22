@@ -1,61 +1,5 @@
 [
   {
-    "run_at": "2026-10-15T18:01:21.940Z",
-    "summary": "Afternoon run: no open links or requests; queued Meta's Muse Spark Open release (priority 1, breaking at 17:00 UTC) even though today already had 8 news jobs, because priority 1 stories must not be skipped; the posting cap of 8 still applies, so a priority 2 job may slip.",
-    "considered": [
-      {
-        "story": "Meta releases Muse Spark Open, an 816B open-weight model that runs on two Mac Studios",
-        "source": "https://thenewstack.io/meta-muse-spark-open/",
-        "decision": "queued",
-        "job_id": "2026-10-15-meta-muse-spark-open-mac-studio",
-        "priority": 1,
-        "reason": "Major Meta launch from today, confirmed by The New Stack, Engadget and 9to5Mac. No generated cover because today already has 2."
-      },
-      {
-        "story": "FTC subpoenas OpenAI and Anthropic over AI safety incidents",
-        "decision": "covered",
-        "reason": "Already queued as 2026-10-15-ftc-subpoenas-openai-anthropic (waiting for approval)."
-      },
-      {
-        "story": "Nvidia's European spending spree (Fortune analysis)",
-        "source": "https://fortune.com/2026/10/15/nvidias-european-spending-spree-is-about-much-more-than-europe/",
-        "decision": "covered",
-        "reason": "Analysis of a story already posted as 2026-10-14-nvidia-europe-2-billion-uk-safety."
-      },
-      {
-        "story": "FBI arrests OpenAI employee accused of bugging an office",
-        "decision": "skipped",
-        "reason": "Sensitive crime story and today is already over the job cap."
-      },
-      {
-        "story": "NYC comptroller urges Anthropic to delay its IPO",
-        "decision": "skipped",
-        "reason": "Anthropic IPO and revenue already posted today; today is over the cap."
-      },
-      {
-        "story": "Trump's AI task force meets Thursday, per FTC",
-        "decision": "skipped",
-        "reason": "Political and thin on details, today is over the cap."
-      },
-      {
-        "story": "Daniela Amodei says AI girlfriends and boyfriends are a terrible use of AI",
-        "decision": "skipped",
-        "reason": "Interview remark, kept as possible filler for tomorrow."
-      },
-      {
-        "story": "Sergey Brin says Google's models are near self-improvement",
-        "decision": "skipped",
-        "reason": "Not reconfirmed with a second source this run, and today is over the cap."
-      },
-      {
-        "story": "AI stocks slide over data center debt worries",
-        "decision": "skipped",
-        "reason": "Market story with limited appeal, today is over the cap."
-      }
-    ],
-    "requests": []
-  },
-  {
     "run_at": "2026-10-15T19:59:29.796Z",
     "summary": "Late afternoon run: no open links or requests; queued nothing because today already has 8 news jobs (enough to fill the 8-post cap) and no new major story broke since the last run.",
     "considered": [
@@ -4277,6 +4221,85 @@
         "story": "Anthropic IPO analysis (Reuters)",
         "decision": "covered",
         "reason": "Analysis without a new event; the S-1 was posted as 2026-10-21-anthropic-s1-80-billion-loss."
+      }
+    ],
+    "requests": []
+  },
+  {
+    "run_at": "2026-10-22T18:08:37.381Z",
+    "summary": "Afternoon run (13:55 New York): no open links or requests; queued Straiker's report that a crime group used Claude, Grok and Kimi agents against 400+ Latin American banks as priority 1 (sensitive, waits for Mahir). Oct 22 is already at the 8 post cap with approved posts waiting, so no utility or priority 2 stories were added.",
+    "considered": [
+      {
+        "story": "Straiker: CyberCartel used Claude, Grok and Kimi agents (CARLIY0S) to target 400+ Latin American banks; Anthropic revoked access, xAI investigating",
+        "source": "https://gbhackers.com/claude-and-grok-exploited/",
+        "decision": "queued",
+        "job_id": "2026-10-22-claude-grok-agents-400-banks",
+        "priority": 1,
+        "reason": "Anthropic and xAI models used in a real criminal campaign, confirmed by GBHackers, Infobae, Digital Today (citing The Information) and Business Today; sensitive (crime)."
+      },
+      {
+        "story": "New Mexico judge orders Meta to pay $25 billion in consumer protection penalties",
+        "source": "https://sourcenm.com/2026/10/21/new-mexico-judge-orders-meta-to-pay-state-25b/",
+        "decision": "skipped",
+        "reason": "Not an AI story, and the day is at the cap."
+      },
+      {
+        "story": "Tesla Q3 profit falls 44 percent as AI and robotaxi spending grows",
+        "source": "https://apnews.com/article/cfe0453f6bf0d08d22150022128492fa",
+        "decision": "skipped",
+        "reason": "Earnings story, Optimus angle was already looked at in an earlier run, and the day is full."
+      },
+      {
+        "story": "Hugging Face releases open Carbon-X DNA language model",
+        "decision": "skipped",
+        "reason": "Niche research release with no direct source read yet, and the day is full."
+      },
+      {
+        "story": "Flapping Airplanes raises $1B at a $6B valuation",
+        "decision": "skipped",
+        "reason": "Priority 2 funding round and Oct 22 has no free slot."
+      },
+      {
+        "story": "Legora raises $550M at an $8.8B valuation",
+        "decision": "skipped",
+        "reason": "Legal AI funding round, low US consumer interest, day is full."
+      },
+      {
+        "story": "Palantir says it cannot shut off NATO's Maven AI system",
+        "source": "https://www.reuters.com/business/media-telecom/palantir-says-it-cannot-shut-off-nato-ai-system-europeans-fear-us-tech-2026-10-22/",
+        "decision": "skipped",
+        "reason": "Defense policy story with no consumer angle, priority 2, and the day is full."
+      },
+      {
+        "story": "Google hardens Chrome against ClickFix attacks with Gemini analysis",
+        "source": "https://www.securityweek.com/google-hardens-chrome-against-clickfix-attacks-insecure-http-connections/",
+        "decision": "skipped",
+        "reason": "Incremental security feature, priority 2, and the day is full."
+      },
+      {
+        "story": "DeepSeek nears a $15 billion round",
+        "decision": "skipped",
+        "reason": "Still a report with terms that could change; already looked at in earlier runs."
+      },
+      {
+        "story": "Utility post for Oct 22",
+        "decision": "skipped",
+        "reason": "The approved utility 2026-10-20-claude-prompt-fixes-anthropic-guide has not posted yet and the day is at the cap."
+      },
+      {
+        "story": "Claude Duet buys business supplies (PYMNTS)",
+        "decision": "covered",
+        "reason": "Part of the Claude Duet launch, posted as 2026-10-21-claude-duet-works-while-you-sleep."
+      },
+      {
+        "story": "Microsoft Storm-0940 AI agent attack",
+        "decision": "covered",
+        "reason": "Posted as 2026-10-22-microsoft-ai-agents-hacked-2250-tenants."
+      },
+      {
+        "story": "Barclays 5,000 job cuts",
+        "decision": "covered",
+        "reason": "Queued as 2026-10-22-barclays-cuts-5000-jobs-fewer-developers."
       }
     ],
     "requests": []
