@@ -264,10 +264,21 @@ Mahir sends links to the Telegram bot; they land in `inbox/links.json`
 (`{ id, url, note, format, received_at }`). Every run, turn each link that no job references yet
 (check `link_id` in jobs/) into exactly one job with `"link_id"` set, before any other work.
 If the inbox item has `post_at` (a time Mahir wrote in his note), copy it into the job as
-`"post_at"`: the post goes out at that time, at any hour, outside the daily cap. Posts from his
-links never count toward the 8-per-day news cap.
+`"post_at"`: the post goes out at that time, at any hour, outside the daily cap. Without `post_at`
+a post from his link goes out as soon as he approves it, at any hour. Only when the inbox item has
+`"us_window": true` (he chose "first US slot"), copy that into the job: then it waits for the next
+posting window. Posts from his links never count toward the 8-per-day news cap.
 These are Mahir's own picks: priority 1, and always `"review": true` (he gets a preview on
 Telegram and approves before it posts).
+
+Links are normally handled within minutes by the instant link task (the bot starts it when Mahir
+sends a link). The regular desk run skips links and requests received less than 30 minutes ago
+unless no job has them yet after 30 minutes.
+
+Same story: before queuing ANY job, compare it with every job of the last 3 days (jobs/ and
+state/jobs/), including Mahir's link posts. Never queue a story that is already covered, even
+from a different source or angle. The pipeline also drops a desk job that shares a source link
+with a live post, and withdraws a waiting desk post when Mahir sends the same story himself.
 
 Items made with the bot's step-by-step wizard (`"from": "wizard"`) also have `title` and
 `caption` (null when Mahir chose "Claude yazsın"): use `title` as the cover headline or Reel hook

@@ -7,6 +7,8 @@ OWNER_CHAT_ID = "962175935"
 REPO = "mahiruyan/neurafeed-pipeline"
 DEEPSEEK_MODEL = "deepseek-v4-pro"
 SITE_ADMIN_ORIGIN = "https://neurafeed-staging-admin.netlify.app"
+# The instant link task (Claude scheduled task with an API trigger); token is the LINK_ROUTINE_TOKEN secret.
+LINK_ROUTINE_URL = "https://api.anthropic.com/v1/claude_code/routines/trig_017WbKnjhnvcjyq6fpvt5kpz/fire"
 
 [triggers]
 crons = ["*/5 * * * *", "0 17 * * SUN", "0 7 * * MON", "0 7 1 * *"]

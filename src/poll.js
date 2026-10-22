@@ -137,9 +137,12 @@ process.on('beforeExit', () => { try { writeSummary(); } catch (e) { console.log
     }
   }
 
-  // 1) Posts Mahir scheduled himself ("post_at"): out at that time, any hour, outside the cap.
-  for (const st of waiting.filter((s) => loadJob(s.id)?.post_at)) {
-    if (new Date(loadJob(st.id).post_at) <= now && !(await publishOne(st))) return;
+  // 1) Mahir's own posts (from his links or with "post_at"): out as soon as he approved them, or at
+  //    the time he wrote, any hour, outside the cap and the posting windows.
+  const own = (s) => { const j = loadJob(s.id); return Boolean(j?.post_at || (j?.link_id && !j.us_window)); };
+  for (const st of waiting.filter(own)) {
+    const at = loadJob(st.id).post_at;
+    if ((!at || new Date(at) <= now) && !(await publishOne(st))) return;
   }
 
   // 2) Everything else: only inside US prime-time windows (New York time).
@@ -153,7 +156,7 @@ process.on('beforeExit', () => { try { writeSummary(); } catch (e) { console.log
   const storyTime = (st) => new Date(loadJob(st.id)?.story_time || st.updated_at).getTime();
   // Posts from Mahir's own links do not count toward the daily news cap.
   const capCount = () => rules.postsToday(allJobStates().filter((s) => !loadJob(s.id)?.link_id), cfg, now);
-  const regular = waiting.filter((s) => !loadJob(s.id)?.post_at)
+  const regular = waiting.filter((s) => !own(s))
     .sort((a, b) => prio(a) - prio(b) || storyTime(a) - storyTime(b));
   for (const st of regular) {
     // Space posts out so two stories from one run do not land back to back.

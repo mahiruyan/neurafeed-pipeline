@@ -12,7 +12,7 @@ const { renderReel } = require('./reel');
 const { validateJob } = require('./validate');
 const tg = require('./telegram');
 const { syncRequests } = require('./requests');
-const { replaceOld, duplicateOf } = require('./versions');
+const { replaceOld, duplicateOf, resolveSameStory } = require('./versions');
 
 function newJobIds() {
   const dir = path.join(ROOT, 'jobs');
@@ -71,7 +71,13 @@ function summary(job) {
       continue;
     }
     const dup = duplicateOf(job);
-    const blocked = dup ? `duplicate of ${dup} for the same request` : await replaceOld(job, tg.enabled() ? (mid, t) => tg.editMessage(mid, t) : null);
+    const edit = tg.enabled() ? (mid, t) => tg.editMessage(mid, t) : null;
+    let blocked = dup ? `duplicate of ${dup} for the same request` : await replaceOld(job, edit);
+    if (!blocked) {
+      const same = await resolveSameStory(job, edit);
+      blocked = same.blocked;
+      job._same = same.warning || (job.already_posted_as ? `⚠️ This story was already posted as ${job.already_posted_as}. Approve only if you want it twice.` : null);
+    }
     if (blocked) {
       setJobState(id, { status: 'skipped', by: blocked });
       if (tg.enabled()) await tg.sendMessage(`⚠️ ${id}: ${blocked}.`);
@@ -115,7 +121,7 @@ function summary(job) {
       if (cfg.mode === 'auto' && (job.review || job.sensitive) && !job.owner_approved && tg.enabled()) {
         // Sensitive stories and posts made from Mahir's links wait for his OK on Telegram.
         sent.push(...[].concat((await tg.sendAlbum(preview)) || []).map((x) => x.message_id));
-        const msg = await tg.sendMessage(`${job.review ? '👀 Your link is ready. Post it?' : '⚠️ Sensitive story, needs your OK'}\n\n${summary(job)}`, [[
+        const msg = await tg.sendMessage(`${job.review ? '👀 Your link is ready. Post it?' : '⚠️ Sensitive story, needs your OK'}${job._same ? `\n${job._same}` : ''}\n\n${summary(job)}`, [[
           { text: '✅ Approve', callback_data: `ok:${id}` },
           { text: '❌ Reject', callback_data: `no:${id}` },
         ]]);

@@ -141,7 +141,8 @@ async function handle(u, env) {
       await env.KV.delete(`req:${id}`);
       await tg(env, 'editMessageReplyMarkup', { chat_id: owner, message_id: cb.message.message_id, reply_markup: { inline_keyboard: [] } }).catch(() => {});
       await tg(env, 'answerCallbackQuery', { callback_query_id: cb.id, text: 'Gönderildi' });
-      return send(env, "📝 Claude'a iletildi. Bir sonraki çalışmasında yapacak, sonucu buraya yazarım.", cb.message.message_id);
+      const started = await startLinkDesk(env, [rid]);
+      return send(env, started ? "📝 Claude'a iletildi, şimdi yapıyor. Sonucu buraya yazarım." : "📝 Claude'a iletildi. Bir sonraki çalışmasında yapacak, sonucu buraya yazarım.", cb.message.message_id);
     }
     if (action === 'do' || action === 'undo') {
       const raw = await env.KV.get(`act:${id}`);
@@ -166,7 +167,12 @@ async function handle(u, env) {
     await queueAction(env, action, id);
     await tg(env, 'answerCallbackQuery', { callback_query_id: cb.id, text: action === 'ok' ? 'Onaylandı' : 'Reddedildi' });
     await tg(env, 'editMessageReplyMarkup', { chat_id: owner, message_id: cb.message.message_id, reply_markup: { inline_keyboard: [] } }).catch(() => {});
-    await send(env, action === 'ok' ? `✅ Onaylandı: ${id}\nİlk uygun Amerika saatinde paylaşılacak.` : `❌ Reddedildi: ${id}`, cb.message.message_id);
+    const job = action === 'ok' ? JSON.parse((await repoFile(env, `jobs/${id}.json`).catch(() => null)) || 'null') : null;
+    const own = job && (job.post_at || (job.link_id && !job.us_window));
+    const whenOk = !own ? 'İlk uygun Amerika saatinde paylaşılacak.'
+      : job.post_at && new Date(job.post_at) > new Date() ? `${new Date(job.post_at).toLocaleString('tr-TR', { timeZone: 'Europe/Istanbul', weekday: 'long', hour: '2-digit', minute: '2-digit' })} (Türkiye saati) paylaşılacak.`
+      : 'Birkaç dakika içinde paylaşılıyor.';
+    await send(env, action === 'ok' ? `✅ Onaylandı: ${id}\n${whenOk}` : `❌ Reddedildi: ${id}`, cb.message.message_id);
     return;
   }
   const m = u.message;
@@ -185,14 +191,17 @@ async function handle(u, env) {
     const note = text.replace(URL_RE, '').trim();
     const day = new Date(m.date * 1000).toISOString().slice(0, 10);
     const all = [...new Set(urls.map((x) => x.replace(/[).,]+$/, '')))];
-    let fresh = 0;
+    const fresh = [];
     for (const [i, url] of all.entries()) {
-      if (await queueLink(env, { id: `link-${day}-${m.message_id}${all.length > 1 ? `-${i + 1}` : ''}`, url, note, format: formatOf(note), post_at: postAtFrom(note, new Date(m.date * 1000)), received_at: new Date(m.date * 1000).toISOString() })) fresh++;
+      const id = `link-${day}-${m.message_id}${all.length > 1 ? `-${i + 1}` : ''}`;
+      if (await queueLink(env, { id, url, note, format: formatOf(note), post_at: postAtFrom(note, new Date(m.date * 1000)), received_at: new Date(m.date * 1000).toISOString() })) fresh.push(id);
     }
-    if (!fresh) return send(env, 'ℹ️ Bu link zaten sırada, ikinci kez eklemedim. Farklı bir formatta istiyorsan "post" yazıp adım adım hazırlayabilirsin.', m.message_id);
+    if (!fresh.length) return send(env, 'ℹ️ Bu link zaten sırada, ikinci kez eklemedim. Farklı bir formatta istiyorsan "post" yazıp adım adım hazırlayabilirsin.', m.message_id);
     const at = postAtFrom(note, new Date(m.date * 1000));
-    const when = at ? `${new Date(at).toLocaleString('tr-TR', { timeZone: 'Europe/Istanbul', weekday: 'long', hour: '2-digit', minute: '2-digit' })} (Türkiye saati), günlük limitten ayrı` : 'ilk uygun Amerika saatinde';
-    return send(env, `✅ Aldım. Format: ${FORMAT_TR[formatOf(note)]}.\nClaude ${trTime(nextDeskRun())} çalışmasında hazırlayacak, önizlemesini buraya atacağım. Onaylarsan ${when} paylaşılır.`, m.message_id);
+    const started = await startLinkDesk(env, fresh);
+    const when = at ? `${new Date(at).toLocaleString('tr-TR', { timeZone: 'Europe/Istanbul', weekday: 'long', hour: '2-digit', minute: '2-digit' })} (Türkiye saati)` : (started ? 'hemen' : 'hemen, saatten bağımsız');
+    const who = started ? 'Claude şimdi hazırlıyor, 5-10 dakikada önizlemesi gelir.' : `Claude ${trTime(nextDeskRun())} çalışmasında hazırlayacak, önizlemesini buraya atacağım.`;
+    return send(env, `✅ Aldım. Format: ${FORMAT_TR[formatOf(note)]}.\n${who} Onaylarsan ${when} paylaşılır.`, m.message_id);
   }
   if (!text) return;
   if (text === '/start' || text === '/help') {
@@ -497,6 +506,21 @@ async function commitFiles(env, paths, change, message) {
 }
 
 const parseList = (txt) => { try { return JSON.parse(txt || '[]'); } catch { return []; } };
+
+// The instant link task (a Claude scheduled task with an API trigger): started the moment Mahir
+// sends a link or a request, so it does not wait for the 2-hourly desk. Returns true when started.
+async function startLinkDesk(env, ids) {
+  if (!env.LINK_ROUTINE_URL || !env.LINK_ROUTINE_TOKEN || env.LINK_ROUTINE_TOKEN === 'unset') return false;
+  try {
+    const res = await fetch(env.LINK_ROUTINE_URL, {
+      method: 'POST',
+      headers: { Authorization: `Bearer ${env.LINK_ROUTINE_TOKEN}`, 'anthropic-version': '2023-06-01', 'Content-Type': 'application/json' },
+      body: JSON.stringify({ text: `Handle these inbox items now: ${ids.join(', ')}` }),
+    });
+    if (!res.ok) console.log(`link desk start failed: ${res.status} ${(await res.text()).slice(0, 200)}`);
+    return res.ok;
+  } catch (e) { console.log(`link desk start failed: ${e.message}`); return false; }
+}
 
 // Links and post actions go into small queue files; "Bot apply" processes whatever is pending.
 async function queueLink(env, item, files = {}) {
@@ -993,13 +1017,15 @@ async function wizardSubmit(env, w) {
     id, url: w.url || null, image_file: imageFile, note, format: w.format,
     title: w.title || null, caption: w.caption || null,
     post_at: w.post_at === 'now' ? now.toISOString() : (w.post_at || null),
+    ...(w.post_at ? {} : { us_window: true }),
     received_at: now.toISOString(), from: 'wizard',
   };
   const added = await queueLink(env, item, files);
   await env.KV.delete('wiz');
   if (!added) return send(env, 'ℹ️ Bu link zaten sırada, ikinci kez eklemedim.');
-  return send(env, `✅ Sıraya aldım (${WZ_FORMATS[w.format]}, ${whenText(w)}).\nClaude ${trTime(nextDeskRun())} çalışmasında hazırlayacak, önizlemesini buraya atacağım. Sen onaylamadan paylaşılmaz.`);
+  const started = await startLinkDesk(env, [id]);
+  return send(env, `✅ Sıraya aldım (${WZ_FORMATS[w.format]}, ${whenText(w)}).\n${started ? 'Claude şimdi hazırlıyor, 5-10 dakikada önizlemesi gelir.' : `Claude ${trTime(nextDeskRun())} çalışmasında hazırlayacak, önizlemesini buraya atacağım.`} Sen onaylamadan paylaşılmaz.`);
 }
 
 // For tests only.
-export const _test = { nextDeskRun, linkStatus, siteDraftCheck, siteDraftButton, siteDraftText };
+export const _test = { startLinkDesk, nextDeskRun, linkStatus, siteDraftCheck, siteDraftButton, siteDraftText };
