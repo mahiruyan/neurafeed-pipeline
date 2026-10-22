@@ -1,0 +1,211 @@
+{
+  "id": "2026-10-22-microsoft-ai-diagnoses-83-percent-doctors-36",
+  "created_at": "2026-10-22T20:15:00Z",
+  "story_time": "2026-10-22T18:00:00Z",
+  "timely": false,
+  "sensitive": true,
+  "priority": 1,
+  "review": true,
+  "site_category": "models",
+  "sources": [
+    {
+      "name": "TechCrunch",
+      "url": "https://techcrunch.com/2026/10/22/microsofts-mustafa-suleyman-says-its-ai-outperforms-doctors-on-hard-cases-as-he-chases-medical-superintelligence/"
+    },
+    {
+      "name": "Mezha",
+      "url": "https://mezha.net/eng/news/mezha-5595c812cd34051e71017df9_microsoft_ai_beats"
+    }
+  ],
+  "caption": "Microsoft says its AI diagnostic system, MAI-DxO, solved 83% of complex medical cases in a simulated study published in Science.\nPrimary care doctors working alone with reference materials got 36%. Specialists were not part of the test.\nA Boston hospital will now try it alongside real patient care.\n\nWould you trust an AI second opinion on your diagnosis?\n\nFollow @neurafeed.ai for daily AI news.\n\nSource: TechCrunch · Photo: Getty Images",
+  "threads_text": "Microsoft says its AI diagnostic system got 83% of complex medical cases right in a simulated study. Primary care doctors working alone got 36%, though specialists were not tested. Would you want an AI second opinion on your diagnosis?",
+  "slides": [
+    {
+      "kind": "cover",
+      "headline": "Microsoft's AI solved *83% of the hardest medical cases*. Doctors got 36%",
+      "image": {
+        "url": "https://techcrunch.com/wp-content/uploads/2026/10/GettyImages-1935915215.jpg?w=1024",
+        "credit": "Getty Images",
+        "fallback_urls": [
+          "https://mezha.fsn1.your-objectstorage.com/ua/uploads/2026/10/22/mezha-photo-ad14f912f10c59ad62c7e7b1.jpg"
+        ]
+      },
+      "pos": "center 25%",
+      "badges": [
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Microsoft_logo.svg/500px-Microsoft_logo.svg.png",
+          "fit": "contain"
+        }
+      ],
+      "badge_side": "left"
+    },
+    {
+      "kind": "card",
+      "heading": "A panel of *AI doctors*",
+      "paras": [
+        "Microsoft published a study in Science on MAI-DxO, a team of AI agents that question the patient, order tests and debate the diagnosis.",
+        "On complex New England Journal of Medicine cases, it was right 83% of the time."
+      ],
+      "image": {
+        "url": "https://www.cmswire.com/-/media/c27529cb85b1419ea80b83e4d5b80c2a.ashx?mw=1200",
+        "credit": "JeanLuc Ichard / Adobe Stock",
+        "fallback_urls": []
+      }
+    },
+    {
+      "kind": "card",
+      "heading": "The *catch*",
+      "paras": [
+        "The doctors were primary care physicians and general internists working alone with references. They got 36%.",
+        {
+          "t": "Specialists and doctor teams, who usually take cases this hard, were not tested.",
+          "strong": true
+        }
+      ],
+      "image": {
+        "url": "https://media.thenextweb.com/2026/10/microsoft-logo-office-building.jpg",
+        "credit": "Salah Darwish / Unsplash",
+        "fallback_urls": []
+      }
+    },
+    {
+      "kind": "card",
+      "heading": "The real engine: *GPT-5*",
+      "paras": [
+        "Microsoft tried models from OpenAI, Google, Anthropic, Meta and DeepSeek. OpenAI's GPT-5 and GPT-5.5 did best.",
+        "GPT-5 alone already scored 78.9%. Most of the gain comes from the model itself."
+      ],
+      "image": {
+        "url": "https://techcrunch.com/wp-content/uploads/2026/10/Screenshot-2026-10-22-at-1.48.09-PM.png?w=680",
+        "credit": "Microsoft AI",
+        "fit": "contain",
+        "fallback_urls": [
+          "https://mezha.fsn1.your-objectstorage.com/ua/uploads/2026/10/22/mezha-photo-4fba09ff0266419a9332e329.png"
+        ]
+      },
+      "note": "Chart: Microsoft AI"
+    },
+    {
+      "kind": "cta",
+      "hook": "Next stop is a real Boston hospital. Follow to see if Microsoft's AI doctor holds up with real patients."
+    }
+  ],
+  "site_article": {
+    "headline": "Microsoft says its AI diagnosed 83 percent of complex cases in a simulated study",
+    "dek": "Primary care doctors working alone scored 36 percent, but specialists were not tested and most of the gain came from OpenAI's underlying models.",
+    "summary": "Microsoft AI published a Science study in which its MAI-DxO system correctly diagnosed 83 percent of complex New England Journal of Medicine cases in a simulation. Generalist doctors working alone with references scored 36 percent.",
+    "seo_title": "Microsoft MAI-DxO diagnoses 83% of complex cases in Science study",
+    "seo_description": "Microsoft's MAI-DxO AI got 83% of complex simulated cases right versus 36% for generalist doctors. A Boston hospital trial comes next.",
+    "answer_summary": "In a simulated study published in Science, Microsoft's MAI-DxO diagnosed 83 percent of complex cases correctly, compared with 36 percent for primary care doctors working alone. Specialists were not tested, and the system has not yet been used in live patient care.",
+    "tags": [
+      "Microsoft",
+      "Mustafa Suleyman",
+      "MAI-DxO",
+      "Healthcare AI",
+      "GPT-5"
+    ],
+    "hero_alt": "A Getty Images news photo used for Microsoft AI's diagnostic study.",
+    "paragraphs": [
+      {
+        "kind": "fact",
+        "text": "Microsoft AI published a study in the journal Science on October 22, 2026, describing MAI-DxO, a diagnostic system that coordinates several AI agents to work through difficult medical cases. In a simulation built from complex case records published by the New England Journal of Medicine, the system reached the correct diagnosis 83 percent of the time, according to TechCrunch and Mezha.",
+        "sources": [
+          0,
+          1
+        ]
+      },
+      {
+        "kind": "fact",
+        "text": "The human comparison group was made up of primary care doctors and general internists who worked alone with access to reference materials. They reached the correct diagnosis 36 percent of the time. Specialists and teams of physicians, who usually handle cases of this difficulty, were not part of the comparison, TechCrunch reported.",
+        "sources": [
+          0,
+          1
+        ]
+      },
+      {
+        "kind": "heading",
+        "text": "How the system works"
+      },
+      {
+        "kind": "fact",
+        "text": "MAI-DxO, which Microsoft shortens to DxO, is designed to behave like a panel of doctors. Its agents question a simulated patient, decide which tests to order and debate possible diagnoses before settling on one. Mustafa Suleyman, chief executive of Microsoft AI, described the result as a step toward what the company calls medical superintelligence, which Microsoft defines as AI that could surpass the strongest human-led health systems at medical reasoning and at coordinating care.",
+        "sources": [
+          0,
+          1
+        ]
+      },
+      {
+        "kind": "fact",
+        "text": "Microsoft ran the system on top of models from OpenAI, Google, Anthropic, Meta and DeepSeek. Its best results came with OpenAI's GPT-5 and GPT-5.5, according to both outlets.",
+        "sources": [
+          0,
+          1
+        ]
+      },
+      {
+        "kind": "heading",
+        "text": "Where the gains come from"
+      },
+      {
+        "kind": "fact",
+        "text": "The study data suggest that most of the accuracy comes from the underlying model rather than from DxO. With a short, basic prompt, GPT-5 alone solved 78.9 percent of the complex cases at an estimated cost of about $8,400 per case. Adding DxO raised accuracy by roughly 4 points and cut the estimated cost by about $3,000, TechCrunch reported.",
+        "sources": [
+          0,
+          1
+        ]
+      },
+      {
+        "kind": "fact",
+        "text": "With GPT-5.5, which was released in April 2026, DxO lifted accuracy on the complex cases from 72 percent to nearly 87 percent at a slightly lower estimated cost. The effect was larger on a weaker model: Google's Gemini 2.5 Flash scored 46.4 percent on its own and nearly 69 percent with DxO. Even so, the gap between the weaker and stronger models was bigger than the boost DxO provided.",
+        "sources": [
+          0,
+          1
+        ]
+      },
+      {
+        "kind": "fact",
+        "text": "On emergency department cases, the system changed little. GPT-5.5 scored about 85 percent with or without DxO, at a similar cost. Microsoft's researchers said accuracy gains get smaller as models approach the highest possible score, according to TechCrunch.",
+        "sources": [
+          0,
+          1
+        ]
+      },
+      {
+        "kind": "heading",
+        "text": "From simulation to hospital"
+      },
+      {
+        "kind": "fact",
+        "text": "The published results come from simulated cases, not live patient care. Microsoft is now working with Beth Israel Deaconess Medical Center in Boston to test DxO's clinical reasoning in a hospital setting. Patients who consent will receive input from DxO alongside their standard care, and its recommendations will be compared with the decisions of their doctors.",
+        "sources": [
+          0,
+          1
+        ]
+      },
+      {
+        "kind": "fact",
+        "text": "Microsoft is also working with Mayo Clinic to train a healthcare foundation model that it plans to release in 2027, and Suleyman said DxO is part of the infrastructure for that work. He told TechCrunch he expects healthcare models to become an order of magnitude more capable within the next 24 to 36 months. Microsoft did not give a release date or pricing for DxO.",
+        "sources": [
+          0,
+          1
+        ]
+      },
+      {
+        "kind": "fact",
+        "text": "Microsoft is not the only company making this kind of claim. Google published a separate study of its AMIE diagnostic system in The Lancet, and OpenAI has also said its AI can match or outperform doctors, TechCrunch reported. Microsoft already sells dictation and radiology tools to clinicians, and the company presents DxO as an extension of that business.",
+        "sources": [
+          0,
+          1
+        ]
+      },
+      {
+        "kind": "analysis",
+        "text": "The headline comparison favors the AI, because the human group was generalists working alone on rare and difficult cases, a setting that rarely matches how such patients are treated. The more telling result for the industry may be that a newer base model accounts for most of the improvement, which suggests that orchestration adds the most value when the underlying model is weaker."
+      },
+      {
+        "kind": "why_it_matters",
+        "text": "The Beth Israel Deaconess evaluation is the next test to watch, because it will show whether DxO's recommendations hold up against doctors' decisions with real patients rather than published case records."
+      }
+    ]
+  }
+}

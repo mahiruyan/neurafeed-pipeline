@@ -1,74 +1,5 @@
 [
   {
-    "run_at": "2026-10-15T19:59:29.796Z",
-    "summary": "Late afternoon run: no open links or requests; queued nothing because today already has 8 news jobs (enough to fill the 8-post cap) and no new major story broke since the last run.",
-    "considered": [
-      {
-        "story": "Anthropic gives METR researchers employee-level access to its systems",
-        "source": "https://techcrunch.com/2026/10/15/anthropic-is-letting-metr-researchers-look-under-the-hood-with-employee-level-access/",
-        "decision": "skipped",
-        "reason": "Could not open the TechCrunch article this run and found no second source; Anthropic already has several posts today and yesterday. Possible candidate for tomorrow."
-      },
-      {
-        "story": "OpenAI rolls out GPT-Live-1.1 with six new voices",
-        "source": "https://openai.com/index/introducing-gpt-live-1-in-the-api/",
-        "decision": "skipped",
-        "reason": "Only a minor aggregator mentions version 1.1; OpenAI's page covers GPT-Live-1 from September, so the update is unconfirmed."
-      },
-      {
-        "story": "OpenAI and Meta warn US judicial panel about deepfake evidence",
-        "source": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPdVBjUDY1NEtsWk4xYnphdUJQSjdScU5TNHdPUk9iN3FibFNId2xOWDA4c1RHY2FodFJYdVl1ZzIybjBLc21FZXJxOXRmbjNsbFk4SDNIYzhDeWw4dEt6RkJhN3NJeHJqYVlVTlc5YnVZOHRyeWJIalRfaE5ER2tKRnRieXN4MVN2WkxFSmFvSFVBbUF6b0FHV0FoVTA5emZtRThLUlQ5VXQ4TndPU3FPRFpKMjg?oc=5",
-        "decision": "skipped",
-        "reason": "Procedural court comment letter with limited consumer appeal, and today is at the job cap."
-      },
-      {
-        "story": "Gemini 4 Argon scores 97.5% on ARC-AGI 3 with a harness",
-        "decision": "covered",
-        "reason": "Gemini 4 Argon already posted as 2026-10-13-google-gemini-4-argon-launch; the benchmark claim comes from one minor outlet."
-      },
-      {
-        "story": "Meta and Apple team up so Muse models run better on Macs",
-        "source": "https://www.theverge.com/news/1012293/meta-apple-muse-spark-open-ai-model-mlx",
-        "decision": "covered",
-        "reason": "Already queued as 2026-10-15-meta-muse-spark-open-mac-studio."
-      },
-      {
-        "story": "FTC subpoenas OpenAI and Anthropic over AI safety incidents",
-        "decision": "covered",
-        "reason": "Already queued as 2026-10-15-ftc-subpoenas-openai-anthropic (waiting for approval)."
-      },
-      {
-        "story": "OpenAI suspect in office bugging case had a one-way ticket to Saudi Arabia",
-        "decision": "skipped",
-        "reason": "Sensitive crime story and today is at the job cap."
-      },
-      {
-        "story": "OpenAI speeds up its ad business with Meta hires and lower prices (The Information)",
-        "decision": "skipped",
-        "reason": "Paywalled single-source report, today is at the job cap."
-      },
-      {
-        "story": "Bluesky opens its AI Attie app so anyone can build websites and games",
-        "source": "https://techcrunch.com/2026/10/15/bluesky-expands-its-ai-powered-attie-app-to-let-anyone-build-websites-games-and-more/",
-        "decision": "skipped",
-        "reason": "Priority 2 launch and today is at the job cap; possible filler for tomorrow."
-      },
-      {
-        "story": "Krea 3 image model built for editing at scale",
-        "source": "https://www.krea.ai/krea-3",
-        "decision": "skipped",
-        "reason": "Niche creator tool launch, today is at the job cap."
-      },
-      {
-        "story": "Grok Voice 3.0 speech-to-speech model from xAI",
-        "source": "https://x.ai/news/grok-voice-3",
-        "decision": "skipped",
-        "reason": "Developer API update with little consumer angle, today is at the job cap."
-      }
-    ],
-    "requests": []
-  },
-  {
     "run_at": "2026-10-15T21:56:10.638Z",
     "summary": "Queued Mahir's two Reel links (AI agents goodbye loop, Opus 5.5 denim tear); no new news jobs because today already has 9 news jobs, above the 8 per day cap.",
     "considered": [
@@ -4295,6 +4226,76 @@
         "story": "Microsoft Storm-0940 AI agent attack",
         "decision": "covered",
         "reason": "Posted as 2026-10-22-microsoft-ai-agents-hacked-2250-tenants."
+      },
+      {
+        "story": "Barclays 5,000 job cuts",
+        "decision": "covered",
+        "reason": "Queued as 2026-10-22-barclays-cuts-5000-jobs-fewer-developers."
+      }
+    ],
+    "requests": []
+  },
+  {
+    "run_at": "2026-10-22T20:19:34.501Z",
+    "summary": "Late afternoon run (15:55 New York): no open links or requests; queued Microsoft's Science study on its MAI-DxO diagnostic AI (83% vs 36% for generalist doctors) as priority 1 (sensitive, health, waits for Mahir; timely false so it can go out tomorrow, since Oct 22 is at the 8 post cap). No utility or priority 2 stories were added.",
+    "considered": [
+      {
+        "story": "Microsoft publishes Science study: MAI-DxO diagnosed 83% of complex NEJM cases vs 36% for generalist doctors; Beth Israel trial and Mayo model next",
+        "source": "https://techcrunch.com/2026/10/22/microsofts-mustafa-suleyman-says-its-ai-outperforms-doctors-on-hard-cases-as-he-chases-medical-superintelligence/",
+        "decision": "queued",
+        "job_id": "2026-10-22-microsoft-ai-diagnoses-83-percent-doctors-36",
+        "priority": 1,
+        "reason": "Major Microsoft AI claim covered by TechCrunch, The Verge and Mezha; sensitive because it is health. The cover photo is TechCrunch's Getty image, which could not be previewed from here, so please check it on Telegram."
+      },
+      {
+        "story": "OpenAI opens its Decisions API (a Jev competitor) to all developers",
+        "source": "https://app.dealroom.co/news/note/openai-opens-decisions-api-to-all-developers-adding-image-input-in-challenge-to-typesafe-s-jev",
+        "decision": "skipped",
+        "reason": "Developer product with little US consumer interest, and the day is full."
+      },
+      {
+        "story": "Sony Music Publishing and Warner Chappell sue Anthropic over music used to train Claude",
+        "source": "https://www.channelnews.com.au/sony-and-warner-sue-anthropic-over-alleged-music-piracy/",
+        "decision": "skipped",
+        "reason": "The lawsuit was filed in early September 2026; today's Bloomberg Law item is a follow-up with no new ruling."
+      },
+      {
+        "story": "Canva releases its first image generation model",
+        "source": "https://techcrunch.com/2026/10/22/canva-releases-its-first-image-generation-model/",
+        "decision": "skipped",
+        "reason": "Priority 2 launch and Oct 22 has no free slot; a later run can revisit it."
+      },
+      {
+        "story": "1Password lets AI agents log in for you without seeing your password",
+        "source": "https://techcrunch.com/2026/10/22/1password-launches-a-way-for-ai-agents-to-log-in-on-your",
+        "decision": "skipped",
+        "reason": "Priority 2 product news and the day is full."
+      },
+      {
+        "story": "Uber gives more than 30,000 staff OpenAI's ChatGPT Work agent",
+        "decision": "skipped",
+        "reason": "Enterprise rollout, priority 2, and the day is full."
+      },
+      {
+        "story": "External evaluators find flaws in OpenAI's AI monitoring system (Reuters)",
+        "decision": "covered",
+        "reason": "Follow-up to 2026-10-21-openai-agents-switched-off-alarms."
+      },
+      {
+        "story": "OpenAI, Anthropic and Nvidia post record lobbying quarters",
+        "source": "https://www.theverge.com/policy/1016585/openai-anthropic-nvidia-lobbying-records",
+        "decision": "skipped",
+        "reason": "Policy spending numbers with little consumer interest, and the day is full."
+      },
+      {
+        "story": "Blackstone backs an $18B debt deal for Anthropic's AI chips",
+        "decision": "skipped",
+        "reason": "Only an aggregator note seen so far; needs a primary report before it can be written."
+      },
+      {
+        "story": "Utility post for Oct 22",
+        "decision": "skipped",
+        "reason": "The approved utility 2026-10-20-claude-prompt-fixes-anthropic-guide has not posted yet and the day is at the cap."
       },
       {
         "story": "Barclays 5,000 job cuts",
