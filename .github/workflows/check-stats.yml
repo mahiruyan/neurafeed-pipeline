@@ -1,0 +1,33 @@
+name: Check stats access
+
+# Can the Threads and Facebook keys read stats? Prints only which calls work (never a key).
+on: workflow_dispatch
+
+permissions:
+  contents: read
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Threads and Facebook insights
+        env:
+          TH: ${{ secrets.THREADS_TOKEN }}
+          FB: ${{ secrets.FB_PAGE_TOKEN }}
+        run: |
+          probe() { # label url
+            r=$(curl -s "$2"); err=$(jq -r '.error.message // empty' <<<"$r" | cut -c1-160)
+            if [ -n "$err" ]; then echo "::warning::$1: NO ($err)"; else echo "::notice::$1: OK $(jq -c "$3" <<<"$r" 2>/dev/null | cut -c1-200)"; fi
+          }
+          now=$(date +%s); since=$((now-7*86400))
+          T=https://graph.threads.net/v1.0
+          probe "threads profile" "$T/me?fields=id,username,followers_count&access_token=$TH" '{username,followers_count}'
+          probe "threads account insights" "$T/me/threads_insights?metric=views,likes,replies,reposts,quotes,followers_count&since=$since&until=$now&access_token=$TH" '[.data[]|{name,total:(.total_value.value // ([.values[]?.value]|add))}]'
+          id=$(curl -s "$T/me/threads?fields=id&limit=1&access_token=$TH" | jq -r '.data[0].id // empty')
+          [ -n "$id" ] && probe "threads post insights" "$T/$id/insights?metric=views,likes,replies,reposts,quotes,shares&access_token=$TH" '[.data[]|{name,v:.values[0].value}]'
+          G=https://graph.facebook.com/v23.0
+          probe "facebook page" "$G/me?fields=id,name,followers_count,fan_count&access_token=$FB" '{name,followers_count,fan_count}'
+          pid=$(curl -s "$G/me?fields=id&access_token=$FB" | jq -r '.id // empty')
+          probe "facebook page insights" "$G/$pid/insights?metric=page_impressions_unique,page_post_engagements,page_daily_follows_unique,page_views_total&period=day&since=$since&until=$now&access_token=$FB" '[.data[]|{name,sum:([.values[].value]|add)}]'
+          probe "facebook posts with insights" "$G/$pid/posts?fields=id,created_time,insights.metric(post_impressions_unique,post_clicks,post_reactions_by_type_total)&limit=3&access_token=$FB" '[.data[]|{created_time,ins:[.insights.data[]?|{name,v:.values[0].value}]}]'
+          probe "facebook video/reel insights" "$G/$pid/video_reels?fields=id,created_time&limit=1&access_token=$FB" '.data|length'
