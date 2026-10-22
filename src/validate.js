@@ -96,6 +96,12 @@ function validateJob(job, fileId) {
   const dupes = urls.filter((u, i) => urls.indexOf(u) !== i);
   if (dupes.length) p.push('the same image is used on more than one slide');
   if (DASHES.test(textOf(job))) p.push('text contains an en dash or em dash');
+  if (job.threads_text !== undefined) {
+    const t = String(job.threads_text || '');
+    if (!t.trim() || t.length > 420) p.push('threads_text must be 1 to 420 characters');
+    if (DASHES.test(t)) p.push('threads_text contains an en dash or em dash');
+    if (/#\w/.test(t)) p.push('threads_text: no hashtags');
+  }
   if (!ownPicture && !/Source:/i.test(job.caption || '')) p.push('caption must end with "Source:" and the outlet name');
   return p;
 }

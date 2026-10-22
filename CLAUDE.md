@@ -55,6 +55,17 @@ same day. Never skip a priority 1 story because other stories are already queued
   "Follow @neurafeed.ai for daily AI news.", then a final line `Source: <Outlet>` (add
   `· Photo: <credit>` when the photo needs credit).
 
+## Threads text (`threads_text`, every post)
+
+Threads is a conversation app, not a photo feed: the Instagram caption does poorly there. Every job
+(carousels, singles, Reels) also gets `"threads_text"`: what Threads shows above the same images.
+- 1 to 3 short sentences, at most 420 characters: the news in one sharp line, then one line of
+  take or context, then ONE direct question people can answer in a word or a sentence ("Would you
+  let an AI agent book your flights?", "Is this the end of free ChatGPT?").
+- Plain talk, like a smart person posting, not a press release. No hashtags, no "Follow ...",
+  no emojis at the start, no en or em dashes. Facts only from the sources, as everywhere.
+- The `Source:` line is added automatically from the caption.
+
 ## Job file format (`jobs/<id>.json`)
 
 ```json

@@ -39,7 +39,7 @@ never miss a major story.
    `summary` slide in a news carousel), a different image on every picture slide, faces positioned with `pos`, a company
    logo or second face as a badge on the cover when relevant. Use the list or post-story format
    when a story fits it. Set `timely`, `sensitive`, `priority` and `story_time` honestly.
-   Every news job also gets `site_article`: the full website article (450 to 850 words) from the
+   Every job also gets `threads_text` (see "Threads text" in CLAUDE.md), and every news job gets `site_article`: the full website article (450 to 850 words) from the
    same sources, as "Website article" in CLAUDE.md describes.
 6. Self-check: no en dash or em dash, no invented facts, American spelling, caption ends
    with `Source: <Outlet>`, id equals file name, first slide cover, last slide cta.

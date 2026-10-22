@@ -1,0 +1,35 @@
+name: Threads report
+
+# Saves every Threads post of the last N days with its numbers to reports/threads.json.
+on:
+  workflow_dispatch:
+    inputs:
+      days:
+        description: "how many days back"
+        required: true
+        default: "60"
+
+concurrency:
+  group: pipeline-state
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  report:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - run: mkdir -p reports && node src/threads-report.js "${{ inputs.days }}" > reports/threads.json
+        env:
+          THREADS_TOKEN: ${{ secrets.THREADS_TOKEN }}
+      - run: |
+          echo "::notice::$(jq '.posts | length' reports/threads.json) posts, followers $(jq '.followers' reports/threads.json)"
+          git config user.name "neurafeed-bot" && git config user.email "neurafeed-bot@users.noreply.github.com"
+          git add reports/threads.json && (git diff --cached --quiet || (git commit -qm "reports: threads [skip ci]" && (git push -q || (git pull -q --rebase && git push -q))))

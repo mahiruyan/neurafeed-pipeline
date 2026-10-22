@@ -174,7 +174,10 @@ function threadsText(caption) {
 }
 async function publishThreads(job, files) {
   if (!process.env.THREADS_TOKEN) return null;
-  const text = threadsText(job.caption);
+  // The desk writes a Threads-native text (a sharp take plus one question); the caption is the fallback.
+  const native = String(job.threads_text || '').trim();
+  const src = String(job.caption || '').split('\n').find((l) => /^(Source|Video):/i.test(l.trim()));
+  const text = native ? threadsText(src && !native.includes(src.trim()) ? `${native}\n\n${src.trim()}` : native) : threadsText(job.caption);
   let creation;
   if (job.type === 'reel') {
     const url = `${VIDEO_BASE.replace(/\/$/, '')}/${job.id}/${path.basename(files[0])}`;
