@@ -4144,5 +4144,81 @@
       }
     ],
     "requests": []
+  },
+  {
+    "run_at": "2026-10-22T09:55:46.607Z",
+    "summary": "Early morning run (05:55 New York): no open links or requests; nothing queued because Oct 22 already has 7 approved posts waiting (cap 8) and no new uncovered priority 1 story appeared since the last run.",
+    "considered": [
+      {
+        "story": "Anthropic's proposed federal bill letting Commerce seek court-ordered suspension of dangerous models",
+        "source": "https://www.theneuron.ai/news/who-should-have-the-power-to-stop-a-dangerous-ai-model/",
+        "decision": "covered",
+        "reason": "Same bill as 2026-10-17-anthropic-pitches-own-ai-safety-bill."
+      },
+      {
+        "story": "Nvidia OpenShell reference architecture for safe AI agents at GTC Berlin",
+        "source": "https://thenextweb.com/news/nvidia-openshell-ai-agents-safety-anthropic-openai",
+        "decision": "skipped",
+        "reason": "Enterprise infrastructure news from Oct 21 with little consumer appeal; the last slot is held for priority 1 news."
+      },
+      {
+        "story": "Dario Amodei defends Anthropic's race to the top strategy",
+        "source": "https://finance.biggo.com/news/711e42c0-9ac2-4103-afa9-a954d5fec673",
+        "decision": "skipped",
+        "reason": "Interview comments, not a new event."
+      },
+      {
+        "story": "Walmart welcomes AI shopping agents while Amazon blocks them",
+        "source": "https://techcrunch.com/2026/10/21/while-amazon-blocks-ai-agents-walmart-rolls-out-the-welcome-mat/",
+        "decision": "skipped",
+        "reason": "Priority 2; still the fallback if the afternoon has a free slot."
+      },
+      {
+        "story": "Year-old AI lab Flapping Airplanes raises $1B at a $6B valuation",
+        "source": "https://techcrunch.com/2026/10/21/year-old-ai-lab-flapping-airplanes-raises-1b-at-a-6b-valuation/",
+        "decision": "skipped",
+        "reason": "Funding round with limited US consumer interest, and the day is nearly full."
+      },
+      {
+        "story": "Legora raises $550M at an $8.8B valuation",
+        "source": "https://techcrunch.com/2026/10/21/legal-ai-startup-legora-raises-550m-series-e-at-8-8b-valuation/",
+        "decision": "skipped",
+        "reason": "Niche legal tech funding."
+      },
+      {
+        "story": "GM wants OnStar AI to run errands for drivers",
+        "source": "https://www.wired.com/story/gm-wants-your-car-to-do-your-chores/",
+        "decision": "skipped",
+        "reason": "Plans for a 2027 car, not news people can try now."
+      },
+      {
+        "story": "Perplexity JOLT teacher and student training method",
+        "source": "https://www.perplexity.ai/hub/blog/a-good-teacher-meets-the-student-where-they-are",
+        "decision": "skipped",
+        "reason": "Research paper with a narrow audience."
+      },
+      {
+        "story": "ChatGPT Locked Chats with PIN or biometrics",
+        "source": "https://techcrunch.com/2026/10/20/chatgpt-now-lets-you-lock-your-chats/",
+        "decision": "skipped",
+        "reason": "Kept as the Oct 22 how-to utility post for a run at or after 11:00 New York time."
+      },
+      {
+        "story": "PHP2Shell flaws found with AI",
+        "decision": "covered",
+        "reason": "Already posted as 2026-10-21-ai-finds-php2shell-flaws."
+      },
+      {
+        "story": "Google DeepMind staff resign over military AI work",
+        "decision": "covered",
+        "reason": "Already queued as 2026-10-21-google-deepmind-staff-quit-pentagon."
+      },
+      {
+        "story": "Claude Duet launch",
+        "decision": "covered",
+        "reason": "Already queued as 2026-10-21-claude-duet-works-while-you-sleep."
+      }
+    ],
+    "requests": []
   }
 ]
