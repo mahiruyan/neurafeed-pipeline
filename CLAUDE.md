@@ -57,8 +57,9 @@ same day. Never skip a priority 1 story because other stories are already queued
 
 ## Threads text (`threads_text`, every post)
 
-Threads is a conversation app, not a photo feed: the Instagram caption does poorly there. Every job
-(carousels, singles, Reels) also gets `"threads_text"`: what Threads shows above the same images.
+Threads is a conversation app, not a photo feed: the Instagram caption does poorly there. Every
+carousel and single post also gets `"threads_text"`: what Threads shows above the same images.
+Reels are not posted to Threads (videos get almost no views there), so they need no threads_text.
 - 1 to 3 short sentences, at most 420 characters: the news in one sharp line, then one line of
   take or context, then ONE direct question people can answer in a word or a sentence ("Would you
   let an AI agent book your flights?", "Is this the end of free ChatGPT?").

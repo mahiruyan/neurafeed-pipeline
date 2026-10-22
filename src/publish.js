@@ -222,6 +222,9 @@ async function publish(job, files) {
   } catch (e) {
     result.facebook_error = String(e.message || e).slice(0, 300);
   }
+  // Reels are not sent to Threads: videos got about 25 views there against about 365 for carousels
+  // (reports/threads.json, Oct 2026), and they pull the account's average down. Mahir's choice.
+  if (job.type === 'reel') return { ...result, threads_skipped: 'reels are not posted to Threads' };
   try {
     const th = await publishThreads(job, files);
     if (th) result.threads = th;
