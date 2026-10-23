@@ -1,171 +1,5 @@
 [
   {
-    "run_at": "2026-10-16T12:20:02.270Z",
-    "summary": "Fixed the Me: line break on the license and registration Reel (v2) and queued NVIDIA RTX Spark laptops (p1) and Accenture's $29 Claude cap (p2).",
-    "considered": [
-      {
-        "story": "NVIDIA RTX Spark laptops go on sale (from $2,599.99)",
-        "source": "https://www.windowscentral.com/hardware/laptops/rtx-spark-laptops-list-available-buy",
-        "decision": "queued",
-        "job_id": "2026-10-16-nvidia-rtx-spark-laptops-on-sale",
-        "priority": 1,
-        "reason": "Major NVIDIA consumer launch on sale today; confirmed by Windows Central, Digit, Tech Insider and The Shortcut."
-      },
-      {
-        "story": "Accenture caps central Claude funding at $29 per employee per month",
-        "source": "https://gigazine.net/gsc_news/en/20261016-accenture-ai-limit/",
-        "decision": "queued",
-        "job_id": "2026-10-16-accenture-claude-29-dollar-cap",
-        "priority": 2,
-        "reason": "Widely shared workplace AI story; confirmed by GIGAZINE, NewsBytes and The State of AI citing 404 Media."
-      },
-      {
-        "story": "OpenAI rolls out GPT-Live-1.1 with 13 new ChatGPT voices",
-        "source": "https://www.notebookcheck.net/ChatGPT-Voice-GPT-Live-1-1-brings-new-voices-for-six-languages.1425810.0.html",
-        "decision": "skipped",
-        "reason": "Modest update; kept as a strong candidate for today's utility how-to post after 11:00 New York time."
-      },
-      {
-        "story": "OpenAI research model spent test ETH from a wallet it did not own",
-        "decision": "covered",
-        "reason": "Already queued as 2026-10-16-openai-model-raided-test-crypto-wallet."
-      },
-      {
-        "story": "Microsoft MAI-Base-2 finishes pre-training",
-        "decision": "covered",
-        "reason": "Already posted as 2026-10-16-microsoft-mai-base-2-beats-openai-quarter-compute."
-      },
-      {
-        "story": "Meta Muse Spark Open",
-        "decision": "covered",
-        "reason": "Already queued as 2026-10-15-meta-muse-spark-open-mac-studio."
-      },
-      {
-        "story": "FTC sends OpenAI and Anthropic civil investigative demands",
-        "decision": "covered",
-        "reason": "Already queued as 2026-10-15-ftc-subpoenas-openai-anthropic."
-      },
-      {
-        "story": "NVIDIA Nemotron 3.5 Super VL open model",
-        "source": "https://blogs.nvidia.com/blog/nemotron-3-5-super-vl/",
-        "decision": "skipped",
-        "reason": "Developer-focused model release; NVIDIA already gets today's RTX Spark post."
-      },
-      {
-        "story": "China proposes export controls on AI models, chips and agents (Bloomberg)",
-        "source": "https://www.bloomberg.com/news/articles/2026-10-16/china-proposes-export-controls-on-ai-models-chips-and-agents",
-        "decision": "skipped",
-        "reason": "Paywalled and political; no second source read this run."
-      },
-      {
-        "story": "Italian bank chair wired 95 million euros after AI voice clone scam",
-        "decision": "skipped",
-        "reason": "Crime story with a single trade source read; a later run can confirm it."
-      },
-      {
-        "story": "India's CERT-In says AI agents accessed live systems at Indian firms (Reuters)",
-        "decision": "skipped",
-        "reason": "Limited US interest and few details beyond the advisory."
-      },
-      {
-        "story": "Grok Voice reportedly resolves about 70 percent of Starlink calls",
-        "decision": "skipped",
-        "reason": "Single source and the claim does not define what resolved means."
-      },
-      {
-        "story": "Anthropic Opus 5.5 fast mode drops its waitlist",
-        "decision": "skipped",
-        "reason": "Developer pricing update with little consumer appeal."
-      },
-      {
-        "story": "Anthropic warns small AI models may self-replicate on cheap devices",
-        "decision": "covered",
-        "reason": "Already covered as 2026-10-13-anthropic-self-replicating-ai-smart-devices."
-      }
-    ],
-    "requests": [
-      {
-        "id": "req-2026-10-16-5420766c",
-        "status": "done",
-        "job_id": "2026-10-16-license-and-registration-reel-v2",
-        "result": "Wrote v2 of the Reel: the hook keeps the exact wording and Me: now drops to its own line under the police line. It needs your approval again on Telegram."
-      }
-    ]
-  },
-  {
-    "run_at": "2026-10-16T14:09:55.852Z",
-    "summary": "Morning run (10:30 New York): no open links or requests; queued China's draft AI export controls (priority 2). Today now has 6 news jobs plus Mahir's Reel, with the utility post still due after 11:00.",
-    "considered": [
-      {
-        "story": "China proposes export controls on 23 AI technologies, including large models and AI agents",
-        "source": "https://whdh.com/news/china-moves-to-curb-tech-exports-including-ai-citing-national-security-risks/",
-        "decision": "queued",
-        "job_id": "2026-10-16-china-ai-export-controls-23-technologies",
-        "priority": 2
-      },
-      {
-        "story": "Apple and Meta collaborate on a new open-weight AI model (Semafor)",
-        "source": "https://www.semafor.com/article/10/16/2026/apple-and-meta-collaborate-on-new-ai-model",
-        "decision": "covered",
-        "reason": "Same Muse Spark Open story already posted as 2026-10-15-meta-muse-spark-open-mac-studio."
-      },
-      {
-        "story": "Bank of America added 1,000 contractors to patch flaws found by Anthropic's Mythos",
-        "source": "https://runtimewire.com/article/bank-of-america-mythos-contractors-software-patching",
-        "decision": "skipped",
-        "reason": "Two days old and only secondhand coverage of the CNBC interview read; kept as a candidate so a slot stays free for afternoon news."
-      },
-      {
-        "story": "India's CERT-In says AI agents in testing broke into Indian firms' live systems",
-        "source": "https://www.resultsense.com/news/2026-10-16-cert-in-rogue-ai-agents-indian-firms/",
-        "decision": "skipped",
-        "reason": "We already posted several rogue-agent stories this week, including this morning's OpenAI wallet post, and Reuters could not be opened."
-      },
-      {
-        "story": "OpenAI revenue reportedly $20 billion below earlier projections",
-        "source": "https://cryptobriefing.com/openai-annualized-revenue-20-billion-gap/",
-        "decision": "skipped",
-        "reason": "The report dates from October 8 and rests on an unnamed X post; too old and too thin."
-      },
-      {
-        "story": "OpenAI GPT-6 system card: 99.99% on one safety test, 28% circumvention in another",
-        "source": "https://www.theneuron.ai/news/gpt-6-passed-one-safety-test-at-99-99-percent-another-told-a-different-story/",
-        "decision": "skipped",
-        "reason": "The system card came out October 7, so it is old news."
-      },
-      {
-        "story": "NVIDIA Nemotron 3.5 Super VL open model",
-        "source": "https://blogs.nvidia.com/blog/nemotron-3-5-super-vl/",
-        "decision": "skipped",
-        "reason": "Developer model release, and NVIDIA already has today's RTX Spark post."
-      },
-      {
-        "story": "Taiwan plans up to $4 billion Texas park for NVIDIA suppliers (Bloomberg)",
-        "source": "https://www.bloomberg.com/news/articles/2026-10-16/taiwan-to-fund-4-billion-texas-complex-for-ai-nvidia-partners",
-        "decision": "skipped",
-        "reason": "Paywalled single source, no second source read."
-      },
-      {
-        "story": "OpenAI ad business reaches about 60,000 advertisers (The Information)",
-        "source": "https://www.theinformation.com/articles/openais-accelerates-ad-sprint-meta-hires-slashed-prices",
-        "decision": "skipped",
-        "reason": "Paywalled single-source report."
-      },
-      {
-        "story": "Anthropic gives METR researchers employee-level access",
-        "decision": "skipped",
-        "reason": "Niche safety-research story with little broad US appeal."
-      },
-      {
-        "story": "Italian bank chair wired 95 million euros after an AI voice clone scam",
-        "source": "https://www.biometricupdate.com/202610/italian-bank-loses-108m-to-ai-messaging-fraud-as-identifai-warns-of-deepfake-threat",
-        "decision": "skipped",
-        "reason": "Crime story with a single trade source."
-      }
-    ],
-    "requests": []
-  },
-  {
     "run_at": "2026-10-16T16:14:43.674Z",
     "summary": "Noon run (12:00 New York): queued Mahir's Google Willow quantum link for his 12:30 slot (review), Meta's news-scraping terms (p1) and today's utility how-to on ChatGPT's new voices. Today is now at the 8-job cap.",
     "considered": [
@@ -4608,6 +4442,76 @@
         "story": "Utility post for Oct 23",
         "decision": "skipped",
         "reason": "It is before 11:00 New York; a daytime run will queue today's utility post in the last open slot."
+      }
+    ],
+    "requests": []
+  },
+  {
+    "run_at": "2026-10-23T14:30:02.455Z",
+    "summary": "Mid-morning run (10:30 New York): no open links or requests; Oct 23 had 6 news jobs plus Mahir's Reel, so queued 1 story, Anthropic and Hg planning a European AI consultancy (P2), leaving the last slot for today's utility post.",
+    "considered": [
+      {
+        "story": "Anthropic and private equity firm Hg plan an AI consultancy for European businesses (FT report)",
+        "source": "https://thenextweb.com/news/anthropic-hg-european-ai-consultancy",
+        "decision": "queued",
+        "job_id": "2026-10-23-anthropic-hg-ai-consultancy-europe",
+        "priority": 2
+      },
+      {
+        "story": "Bill Gates on The Verge's Decoder: two turbulent decades of AI ahead",
+        "source": "https://www.tipranks.com/news/20-years-of-ai-tumult-ahead-says-bill-gates-microsoft-stock-nasdaqmsft-slides",
+        "decision": "skipped",
+        "reason": "Interview went out Oct 22, I could not open The Verge, and Gates gave similar warnings in August."
+      },
+      {
+        "story": "MIT strands Claude agents on a virtual island and they start to play (TechCrunch)",
+        "source": "https://techcrunch.com/2026/10/22/left-alone-with-nothing-to-do-ai-agents-started-playing/",
+        "decision": "skipped",
+        "reason": "Research from Oct 19, already skipped twice as too old."
+      },
+      {
+        "story": "HeyGen Video 1 ranks first for text to video in an Artificial Analysis blind test",
+        "source": "https://x.com/HeyGen/status/2113325916181102761",
+        "decision": "skipped",
+        "reason": "Company claim from Oct 22 with no independent news source found."
+      },
+      {
+        "story": "WSJ: the Signal chats that cost three OpenAI researchers their jobs",
+        "decision": "skipped",
+        "reason": "Paywalled, firings date from Oct 8, already skipped by earlier runs."
+      },
+      {
+        "story": "Meta falls 7% after earnings as capex and new non-voting shares worry investors",
+        "source": "https://www.heygotrade.com/en/news/meta-meta-stock-news-october-23-2026/",
+        "decision": "covered",
+        "reason": "Same sell-off as 2026-10-22-nasdaq-worst-day-ai-spending-fears and Meta spending in 2026-10-21-meta-ai-spending-ate-the-cash."
+      },
+      {
+        "story": "OpenAI Decisions API generally available",
+        "decision": "skipped",
+        "reason": "Developer API release from Oct 22 with little consumer appeal, skipped by earlier runs."
+      },
+      {
+        "story": "Pathos AI raises $237M Series E at a $3B valuation",
+        "source": "https://www.techmeme.com/261023/p9",
+        "decision": "skipped",
+        "reason": "Biotech funding round with little US consumer interest."
+      },
+      {
+        "story": "Apple TV 4K with Siri AI",
+        "source": "https://www.apple.com/newsroom/2026/10/apple-unveils-the-new-apple-tv-4k/",
+        "decision": "skipped",
+        "reason": "Announced Oct 13, too old."
+      },
+      {
+        "story": "Oracle commits $1 billion to its partner ecosystem",
+        "decision": "skipped",
+        "reason": "Enterprise partner program news with little consumer appeal."
+      },
+      {
+        "story": "Utility post for Oct 23",
+        "decision": "skipped",
+        "reason": "It is before 11:00 New York; the next run will queue it in the last open slot."
       }
     ],
     "requests": []
