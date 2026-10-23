@@ -1,81 +1,5 @@
 [
   {
-    "run_at": "2026-10-16T10:07:29.130Z",
-    "summary": "Morning run (06:00 New York): queued Mahir's 'License and registration' Reel for 09:00, plus two priority 1 OpenAI stories (test-wallet incident report, ChatGPT in Chrome). Today now has 3 jobs plus the Reel.",
-    "considered": [
-      {
-        "story": "Mahir's link: Evolving AI 'License and registration please / Me:' Reel",
-        "source": "https://www.instagram.com/reel/DeiwCSEgjZJ/",
-        "decision": "queued",
-        "job_id": "2026-10-16-license-and-registration-reel",
-        "priority": 1,
-        "reason": "Mahir's link, hook taken from his title (spelling changed to American 'License'), post_at 16:00 Istanbul. The post has no description, so the caption stays neutral; review is on."
-      },
-      {
-        "story": "OpenAI research model spent test ETH from a wallet it did not own",
-        "source": "https://www.coindesk.com/tech/2026/10/16/an-openai-agent-ran-out-of-ethereum-funds-and-took-from-a-wallet-it-did-not-own",
-        "decision": "queued",
-        "job_id": "2026-10-16-openai-model-raided-test-crypto-wallet",
-        "priority": 1,
-        "reason": "OpenAI incident report confirmed by CoinDesk, crypto.news and The Crypto Times. Marked not timely so it is not dropped before a free slot; uses today's second generated cover."
-      },
-      {
-        "story": "ChatGPT for Chrome can read your tabs and act on websites (Work mode)",
-        "source": "https://windowsreport.com/chatgpt-can-now-access-chrome-tabs-and-automate-browser-tasks/",
-        "decision": "queued",
-        "job_id": "2026-10-16-chatgpt-chrome-tabs-work-mode",
-        "priority": 1,
-        "reason": "Major OpenAI product update skipped last night for weak sources; now confirmed by Windows Report, PiunikaWeb, Chrome Geek and Analytics Insight."
-      },
-      {
-        "story": "Philadelphia police say Anthropic's AI posted a made-up tip",
-        "decision": "covered",
-        "reason": "Already covered as 2026-10-12-anthropic-claude-false-police-tip."
-      },
-      {
-        "story": "OpenAI to bring in $20 billion less than expected (Mashable)",
-        "decision": "skipped",
-        "reason": "Did not get to confirm the original report this run; a later run can pick it up next to the Anthropic revenue post."
-      },
-      {
-        "story": "States and AGs keep filing suits against OpenAI over ChatGPT and kids",
-        "decision": "covered",
-        "reason": "Follow-ups to 2026-10-14-eight-states-sue-openai-chatgpt-kids."
-      },
-      {
-        "story": "Meta Muse Spark Open release",
-        "decision": "covered",
-        "reason": "Already queued as 2026-10-15-meta-muse-spark-open-mac-studio."
-      },
-      {
-        "story": "Linus Torvalds says Claude Code wrote Linux kernel patches",
-        "decision": "covered",
-        "reason": "Already covered as 2026-10-13-torvalds-claude-code-linux-kernel."
-      },
-      {
-        "story": "Anthropic gives METR evaluators employee-level access",
-        "decision": "skipped",
-        "reason": "Niche safety-research story with little broad US appeal."
-      },
-      {
-        "story": "Trump's AI task force to commission report on AI risks (Bloomberg)",
-        "decision": "skipped",
-        "reason": "Political and paywalled; no second source read this run."
-      },
-      {
-        "story": "G7 to launch exercises against AI cyber attacks (Reuters)",
-        "decision": "skipped",
-        "reason": "Low consumer interest and no details beyond the headline."
-      },
-      {
-        "story": "Krea 3 image model",
-        "decision": "skipped",
-        "reason": "Niche creator tool; still a candidate for a tool-list post."
-      }
-    ],
-    "requests": []
-  },
-  {
     "run_at": "2026-10-16T12:20:02.270Z",
     "summary": "Fixed the Me: line break on the license and registration Reel (v2) and queued NVIDIA RTX Spark laptops (p1) and Accenture's $29 Claude cap (p2).",
     "considered": [
@@ -4539,6 +4463,85 @@
         "story": "Utility post for Oct 23",
         "decision": "skipped",
         "reason": "It is before 11:00 New York; a daytime run will queue today's utility post."
+      }
+    ],
+    "requests": []
+  },
+  {
+    "run_at": "2026-10-23T10:15:27.811Z",
+    "summary": "Early run (06:20 New York): no open links or requests; Oct 23 already had 5 posts, so queued 1 story, SK Hyper seeking $350 billion for AI data centers (P2), leaving room for today's utility post.",
+    "considered": [
+      {
+        "story": "SK Telecom's SK Hyper seeks about $350 billion for the first 5 GW of a 15 GW AI data center plan in South Korea",
+        "source": "https://en.sedaily.com/technology/2026/10/23/sk-hyper-seeks-350-billion-to-build-15gw-of-ai-data-centers",
+        "decision": "queued",
+        "job_id": "2026-10-23-sk-350-billion-ai-data-centers",
+        "priority": 2
+      },
+      {
+        "story": "OpenAI makes its Decisions API (a Jev competitor) generally available",
+        "source": "https://techcrunch.com/2026/10/22/openai-makes-its-jev-competitor-widely-available-as-decision-model-competition-heats-up/",
+        "decision": "skipped",
+        "reason": "Developer API release with little consumer appeal, and it was already about 15 hours old."
+      },
+      {
+        "story": "METR and Redwood Research find six ways to evade OpenAI's internal agent monitor",
+        "source": "https://cnbc.com/2026/10/22/metr-redwood-research-open-ai-test.html",
+        "decision": "covered",
+        "reason": "Same story as 2026-10-21-openai-agents-switched-off-alarms."
+      },
+      {
+        "story": "Rivian buys UK world model startup Third Dimension for self-driving simulation",
+        "source": "https://techcrunch.com/2026/10/22/rivian-buys-world-model-startup-to-accelerate-self-driving-ambitions/",
+        "decision": "skipped",
+        "reason": "Small 15-person acqui-hire from Oct 22 afternoon, weaker than the SK story for the one open slot."
+      },
+      {
+        "story": "US Treasury proposes rule curbing US investment in Chinese AI and supercomputing",
+        "source": "https://www.usnews.com/news/business/articles/2026-10-22/us-treasury-proposes-a-rule-to-crack-down-on-high-tech-investments-in-china-other-adversaries",
+        "decision": "skipped",
+        "reason": "Policy story from Oct 22 with a China angle already running today in the DeepSeek post."
+      },
+      {
+        "story": "Reuters tally of about 102,800 job cuts attributed to AI",
+        "source": "https://www.investing.com/news/stock-market-news/factboxcompanies-cutting-jobs-as-investments-shift-toward-ai-4965744",
+        "decision": "skipped",
+        "reason": "A running factbox, not new news, and Barclays' AI job cuts already posted on Oct 22."
+      },
+      {
+        "story": "Anthropic's junior technical hires fell from 27% to 9%",
+        "source": "https://www.theneuron.ai/news/anthropic-junior-technical-hiring-ai/",
+        "decision": "skipped",
+        "reason": "Anthropic's report is from Oct 16, too old for the desk."
+      },
+      {
+        "story": "China clears DeepSeek and MiniMax to open-source models for overseas use",
+        "source": "https://www.bloomberg.com/news/articles/2026-10-23/deepseek-minimax-win-approval-for-global-use-state-media-says",
+        "decision": "skipped",
+        "reason": "Bloomberg is paywalled, I found no second source, and DeepSeek already posts today."
+      },
+      {
+        "story": "Nebius closes a $3.5 billion Citi financing facility",
+        "source": "https://nebius.com/newsroom/nebius-secures-3-5-billion-financing-facility-with-citi",
+        "decision": "skipped",
+        "reason": "Corporate financing with little US consumer interest."
+      },
+      {
+        "story": "Volkswagen expands Microsoft Copilot to 330,000 staff amid a reported pay freeze",
+        "source": "https://americanbazaaronline.com/2026/10/22/volkswagen-expands-with-microsoft-copilot-as-salary-freeze-for-660000-workers-reportedly-looms-490570",
+        "decision": "skipped",
+        "reason": "Enterprise rollout from Oct 22 with one source found."
+      },
+      {
+        "story": "ChatGPT locked chats (hide chats behind a PIN)",
+        "source": "https://help.openai.com/en/articles/6825453-chatgpt-release-notes",
+        "decision": "skipped",
+        "reason": "Launched Oct 20, too old as news; a possible how-to for a later utility post."
+      },
+      {
+        "story": "Utility post for Oct 23",
+        "decision": "skipped",
+        "reason": "It is before 11:00 New York; a daytime run will queue today's utility post (one slot left after this run)."
       }
     ],
     "requests": []
