@@ -1,0 +1,108 @@
+{
+  "id": "2026-10-23-anthropic-gives-away-agent-skills",
+  "created_at": "2026-10-23T04:05:00Z",
+  "story_time": "2026-10-22T17:00:00Z",
+  "timely": false,
+  "sensitive": false,
+  "priority": 1,
+  "review": true,
+  "site_category": "companies",
+  "sources": [
+    { "name": "Anthropic", "url": "https://www.anthropic.com/news/donating-agent-skills-to-the-agentic-ai-foundation" },
+    { "name": "MIXED", "url": "https://mixed-news.com/en/anthropic-agent-skills-agentic-ai-foundation/" },
+    { "name": "Simon Willison", "url": "https://simonwillison.net/2026/Oct/22/donating-agent-skills/" }
+  ],
+  "caption": "Anthropic is handing Agent Skills, the format it built inside Claude Code, to the Agentic AI Foundation under the Linux Foundation.\nAnthropic says more than 70 agent platforms already use skills, including ChatGPT, Cursor, GitHub Copilot and VS Code.\nEngineers from Anthropic, Google and OpenAI will now maintain it together.\n\nShould one company own the rules AI agents run on?\n\nFollow @neurafeed.ai for daily AI news.\n\nSource: Anthropic",
+  "threads_text": "Anthropic just gave away Agent Skills, the SKILL.md format it built for Claude Code, to a Linux Foundation group. ChatGPT, Copilot and Cursor already use it, and Google and OpenAI engineers will help run it. Smart move or just good PR?",
+  "slides": [
+    {
+      "kind": "cover",
+      "headline": "Anthropic just gave away *Agent Skills*, the Claude format now running inside ChatGPT and Copilot",
+      "image": {
+        "url": "https://mixed-news.com/en/wp-content/uploads/2026/10/58ee7ca4a32c0db53ffdf489cd88e217fb4fbe27.jpg",
+        "credit": "MIXED",
+        "fallback_urls": [
+          "https://www-cdn.anthropic.com/images/4zrzovbb/website/6d4a0d28992ade92d6fa63646fd9c9d318245c6c-2400x1260.jpg"
+        ],
+        "generate": "Vertical photo of a person's hand in a dark modern office handing a plain manila file folder across a long wooden table to several other hands reaching from the far side, as if passing it on to a group. The folder is slightly open with blank white pages inside. Warm desk lamp light from above, shallow depth of field, plenty of empty space above the hands. The left third of the frame is empty dark background. The bottom third is the dark tabletop. Blank surfaces, no readable text or labels on any object, no letters, no logos, no watermarks. Photorealistic, high contrast, one clear subject, vertical composition, subject in the upper two thirds. It must look like an unedited real photo from a news agency, not a painting, not digital art, no glow effects.",
+        "refs": [
+          "https://mixed-news.com/en/wp-content/uploads/2026/09/454390de9d9ccefb6082b7c2440c7547c1ec3964.webp"
+        ]
+      },
+      "pos": "center 40%",
+      "badges": [
+        { "url": "assets/logos/claude.png", "shape": "free", "side": "left" }
+      ],
+      "badge_side": "left"
+    },
+    {
+      "kind": "card",
+      "heading": "Built for Claude, now for *everyone*",
+      "paras": [
+        "On October 22, Anthropic said it is donating Agent Skills to the Agentic AI Foundation, which runs under the Linux Foundation.",
+        "A skill is a folder with a SKILL.md file of instructions, plus any scripts an AI agent needs for a task."
+      ],
+      "image": {
+        "url": "https://mixed-news.com/en/wp-content/uploads/2026/09/454390de9d9ccefb6082b7c2440c7547c1ec3964.webp",
+        "credit": "Anthropic",
+        "fit": "contain",
+        "fallback_urls": []
+      }
+    },
+    {
+      "kind": "card",
+      "heading": "*280 million* installs",
+      "paras": [
+        "Anthropic says more than 70 agent platforms support skills, including ChatGPT, Cursor, GitHub Copilot and VS Code.",
+        "It counts 1 million published skills and nearly 280 million installs since skills launched in October 2025."
+      ],
+      "image": {
+        "url": "https://mixed-news.com/en/wp-content/uploads/2026/09/60bc422c7916679b221ea6d55ba27adc584ac66e.webp",
+        "credit": "Anthropic",
+        "fit": "contain",
+        "fallback_urls": []
+      }
+    },
+    {
+      "kind": "card",
+      "heading": "Rivals now *run it together*",
+      "paras": [
+        "Engineers from Anthropic, Google, OpenAI and other companies will maintain the standard as individuals.",
+        { "t": "Anthropic already gave MCP to the same foundation, which it co-founded with Block and OpenAI.", "strong": true }
+      ],
+      "image": {
+        "url": "https://www-cdn.anthropic.com/images/4zrzovbb/website/6d4a0d28992ade92d6fa63646fd9c9d318245c6c-2400x1260.jpg",
+        "credit": "Anthropic",
+        "fallback_urls": []
+      }
+    },
+    {
+      "kind": "cta",
+      "hook": "The rules every AI agent runs on are being written right now. Follow so you see them first."
+    }
+  ],
+  "site_article": {
+    "headline": "Anthropic donates the Agent Skills standard to the Linux Foundation's Agentic AI Foundation",
+    "dek": "The SKILL.md format that began inside Claude Code will now be maintained by engineers from Anthropic, Google, OpenAI and other companies.",
+    "summary": "Anthropic said on October 22, 2026, that it is donating Agent Skills, its open standard for giving AI agents reusable instructions, to the Agentic AI Foundation. The company says more than 70 agent platforms support the format, with nearly 280 million skill installs.",
+    "seo_title": "Anthropic donates Agent Skills to the Agentic AI Foundation",
+    "seo_description": "Anthropic is handing the Agent Skills standard, used by ChatGPT, Cursor, GitHub Copilot and VS Code, to the Linux Foundation's Agentic AI Foundation.",
+    "answer_summary": "Anthropic gave the Agent Skills standard, including its name, logo, GitHub organization and agentskills.io domain, to the Agentic AI Foundation, a Linux Foundation project. Engineers from several companies will maintain it as individuals.",
+    "tags": ["Anthropic", "Agent Skills", "Agentic AI Foundation", "Linux Foundation", "Claude Code", "MCP"],
+    "hero_alt": "Promotional image for Anthropic's announcement about donating the Agent Skills standard.",
+    "paragraphs": [
+      { "kind": "fact", "text": "Anthropic announced on October 22, 2026, that it is donating Agent Skills, an open standard for giving AI agents specialized knowledge and workflows, to the Agentic AI Foundation. The foundation operates under the Linux Foundation. The donation covers the standard itself along with the Agent Skills name and logo, its GitHub organization and the agentskills.io domain.", "sources": [0, 1] },
+      { "kind": "heading", "text": "What a skill is" },
+      { "kind": "fact", "text": "A skill is a folder that contains a SKILL.md file with instructions, plus any scripts or reference material a task requires. MIXED described the idea as a way for teams to package a procedure once so that an agent can load it, instead of explaining the same steps again in every conversation.", "sources": [0, 1] },
+      { "kind": "fact", "text": "According to Anthropic, the company developed the approach while working on Claude Code and launched skills in October 2025. Developers soon published thousands of skills on GitHub and wrote loaders that brought them to other tools, including Codex, Cursor and OpenCode. Anthropic then published Agent Skills as an open standard in December 2025, hosted under its own GitHub organization and domain.", "sources": [0, 1] },
+      { "kind": "heading", "text": "Adoption and governance" },
+      { "kind": "fact", "text": "Anthropic said more than 70 agent platforms have integrated Agent Skills, among them ChatGPT, Cursor, GitHub Copilot and VS Code. The company also reported 1 million published skills and nearly 280 million skill installs. MIXED noted that these are Anthropic's own figures and not an independent count of distinct users.", "sources": [0, 1] },
+      { "kind": "fact", "text": "Under the new arrangement, engineers from Anthropic, Google, OpenAI and other companies will maintain the standard as individuals rather than as company representatives. David Soria Parra and Mahesh Murag are named as lead maintainers. Anthropic said the foundation will give the standard a neutral home and give the wider community a say in where it goes, and that developers can keep using and contributing to it without joining the foundation.", "sources": [0, 1] },
+      { "kind": "fact", "text": "Anthropic co-founded the Agentic AI Foundation with Block and OpenAI and previously donated the Model Context Protocol, known as MCP, to the same body. Developer Simon Willison wrote that he had predicted in December 2025 that skills would likely follow MCP into the foundation.", "sources": [0, 2] },
+      { "kind": "heading", "text": "What comes next" },
+      { "kind": "fact", "text": "Anthropic has proposed a roadmap that includes versioned releases of the standard, a formal process for proposing changes and security guidance for people who write and install skills. The specification remains at agentskills.io, with discussion on GitHub and feedback on proposed changes collected on the project's Discord server. MIXED pointed out that individual skills can still depend on specific tools and permissions.", "sources": [0, 1] },
+      { "kind": "analysis", "text": "Handing the format to a neutral body lowers the risk, for rival platforms, of building on a standard controlled by a single competitor. It follows the same path Anthropic took with MCP, and it puts two widely used pieces of agent infrastructure under shared governance with OpenAI and Google engineers involved." },
+      { "kind": "why_it_matters", "text": "The next signal to watch is the first versioned release of the specification and the security guidance for skill authors, which will show how the foundation handles the risks of agents loading third party instructions and scripts." }
+    ]
+  }
+}
