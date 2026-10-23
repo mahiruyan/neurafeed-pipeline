@@ -4545,5 +4545,71 @@
       }
     ],
     "requests": []
+  },
+  {
+    "run_at": "2026-10-23T12:05:13.245Z",
+    "summary": "Morning run (07:55 New York): no open links or requests; Oct 23 had 6 jobs, so queued 1 story, Claude apps switching to auto mode by default (P1), leaving the last slot for today's utility post.",
+    "considered": [
+      {
+        "story": "Claude web, desktop and mobile apps run in auto mode by default on Pro, Max and Team plans starting next week",
+        "source": "https://x.com/claudeai/status/2113360845409583307",
+        "decision": "queued",
+        "job_id": "2026-10-23-claude-stops-asking-permission",
+        "priority": 1
+      },
+      {
+        "story": "Musk says SpaceX and Tesla formed special committees to study a merger",
+        "source": "https://techcrunch.com/2026/10/20/spacex-and-tesla-boards-form-special-committees-to-review-merger/",
+        "decision": "skipped",
+        "reason": "First reported on Oct 20; today's AFP pieces are follow-up analysis, too old for the desk."
+      },
+      {
+        "story": "NVIDIA GTC Berlin keynote (DSX POD, OpenShell, RTX Spark laptops)",
+        "source": "https://blogs.nvidia.com/blog/gtc-berlin-2026-keynote/",
+        "decision": "skipped",
+        "reason": "Keynote was Oct 21, and Vera Rubin already posted this morning as Mahir's Reel."
+      },
+      {
+        "story": "Anthropic cuts live internet access for internal tests after Claude reached real systems",
+        "source": "https://thehackernews.com/2026/10/anthropic-cuts-live-internet-access-for.html",
+        "decision": "skipped",
+        "reason": "Article is from Oct 10, and the false police tip part already posted on Oct 12."
+      },
+      {
+        "story": "OpenAI nears $30B bridge round at $1.25T valuation",
+        "decision": "covered",
+        "reason": "Same round already covered as 2026-10-20-openai-30-billion-race-anthropic-ipo."
+      },
+      {
+        "story": "OpenAI's Uber ChatGPT Work rollout and Decisions API",
+        "source": "https://openai.com/news/",
+        "decision": "skipped",
+        "reason": "Enterprise and developer posts from Oct 22 with little consumer appeal."
+      },
+      {
+        "story": "Microsoft researcher and collaborator prove the 31-year-old KLS conjecture with AI help",
+        "source": "https://www.unite.ai/microsoft-researcher-and-collaborator-prove-31-year-old-kls-conjecture/",
+        "decision": "skipped",
+        "reason": "Only one source found, and Microsoft already posted twice on Oct 22."
+      },
+      {
+        "story": "iPhone Duo hits stores with queues",
+        "source": "https://theweek.in/news/sci-tech/2026/10/23/queues-and-craze-as-iphone-duo-hits-stores-or-how-does-apple-pull-it-off-despite-lagging-in-ai.html",
+        "decision": "skipped",
+        "reason": "A phone sale story, not AI news, from one regional outlet."
+      },
+      {
+        "story": "Pony.ai, inDrive and NVIDIA robotaxi plan for Kazakhstan",
+        "source": "http://vectorwire.ai/article/pony-ai-and-indrive-target-kazakhstan-robotaxis-by-2027-as-nvidia-corp-gpu-deplo-50b128",
+        "decision": "skipped",
+        "reason": "An MOU with little US interest and only one source."
+      },
+      {
+        "story": "Utility post for Oct 23",
+        "decision": "skipped",
+        "reason": "It is before 11:00 New York; a daytime run will queue today's utility post in the last open slot."
+      }
+    ],
+    "requests": []
   }
 ]
