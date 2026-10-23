@@ -1,0 +1,128 @@
+{
+  "id": "2026-10-22-claude-google-docs-sheets-slides-how-to",
+  "format": "utility",
+  "created_at": "2026-10-23T00:30:00Z",
+  "story_time": "2026-10-06T17:00:00Z",
+  "timely": false,
+  "sensitive": false,
+  "priority": 2,
+  "review": true,
+  "sources": [
+    {
+      "name": "Reworked",
+      "url": "https://www.reworked.co/digital-workplace/anthropic-opens-claude-for-google-workspace-in-beta/"
+    },
+    {
+      "name": "AlphaSignal",
+      "url": "https://alphasignal.ai/news/anthropic-s-claude-now-reads-and-edits-google-docs-sheets-and-slides"
+    },
+    {
+      "name": "Android Headlines",
+      "url": "https://www.androidheadlines.com/2026/10/claude-challenges-gemini-google-workspace-integration.html"
+    },
+    {
+      "name": "MindStudio",
+      "url": "https://www.mindstudio.ai/blog/claude-google-docs-sheets-extension"
+    }
+  ],
+  "caption": "Claude now works inside Google Docs, Sheets and Slides as a sidebar add-on, in public beta on all paid Claude plans.\nInstall it from Extensions, Add-ons, Get add-ons, then open it from the Extensions menu.\nIt asks before every edit unless you switch that off.\n\nWhich one would you use it for first: Docs, Sheets or Slides?\n\nFollow @neurafeed.ai for daily AI news.\n\nSource: Reworked · Photo: Android Headlines",
+  "threads_text": "Claude now works right inside Google Docs, Sheets and Slides, as a sidebar on any paid plan. It can write formulas, build pivot tables and fix slides that overlap, and it asks before each edit by default. Would you let it edit your spreadsheets?",
+  "slides": [
+    {
+      "kind": "cover",
+      "headline": "Claude now works *inside Google Docs, Sheets and Slides*. Here's how to turn it on",
+      "image": {
+        "url": "https://www.androidheadlines.com/wp-content/uploads/2026/10/Anthropic-Claude-for-Google-Workspace-add-on-beta-featured.jpg",
+        "credit": "Android Headlines",
+        "fallback_urls": [
+          "https://www.androidheadlines.com/wp-content/uploads/2026/10/Anthropic-Claude-for-Google-Workspace-add-on-beta-featured-1420x810.webp"
+        ]
+      },
+      "pos": "center center",
+      "badges": [
+        {
+          "url": "assets/logos/claude.png",
+          "shape": "free"
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Google_%22G%22_logo.svg/500px-Google_%22G%22_logo.svg.png",
+          "fit": "contain"
+        }
+      ]
+    },
+    {
+      "kind": "card",
+      "heading": "1. Install the *add-on*",
+      "paras": [
+        "Open any Google Doc, Sheet or Slides file. Click Extensions, then Add-ons, then Get add-ons, and search for Claude.",
+        "It is in public beta on all paid Claude plans. Work accounts may need an admin to allow it."
+      ],
+      "image": {
+        "url": "https://www.reworked.co/-/media/e67d2995db694359abf45a14e7b4087c.ashx",
+        "credit": "Anthropic",
+        "fallback_urls": []
+      }
+    },
+    {
+      "kind": "card",
+      "heading": "2. Open the *sidebar*",
+      "paras": [
+        "Go to Extensions and pick Claude. A sidebar opens on the right, and you link your Claude account the first time.",
+        {
+          "t": "Claude starts in \"Ask before edits\" mode, so you approve each change on a card.",
+          "strong": true
+        }
+      ],
+      "image": {
+        "url": "https://imagedelivery.net/kokADdxuw1FCXyR2p8D2CQ/30e8aeaf-10d6-48dc-9f21-4b9c448af700/public",
+        "credit": "AlphaSignal",
+        "fallback_urls": []
+      }
+    },
+    {
+      "kind": "prompt",
+      "heading": "3. In Docs: *fix it in place*",
+      "paras": [
+        "Claude edits sentences and headings while keeping the formatting. Bigger rewrites show up as suggestion cards.",
+        "Highlight a paragraph first, then ask."
+      ],
+      "prompt": "Rewrite the highlighted paragraph to be shorter and clearer. Keep my tone and fix any grammar mistakes."
+    },
+    {
+      "kind": "prompt",
+      "heading": "4. In Sheets: *skip the formulas*",
+      "paras": [
+        "Claude writes formulas and builds pivot tables, native charts and new tabs. For heavy work it runs Python on a selected range.",
+        "Name the columns you care about."
+      ],
+      "prompt": "Build a pivot table of total sales by month and region on a new tab, then add a chart of it."
+    },
+    {
+      "kind": "prompt",
+      "heading": "5. In Slides: *clean up the deck*",
+      "paras": [
+        "Claude builds slides from your existing layouts and theme, and checks for overlapping objects and unreadable text.",
+        "Ask it to check the deck before you present."
+      ],
+      "prompt": "Check every slide for overlapping or hard-to-read text and fix it. Then add one summary slide that matches the theme."
+    },
+    {
+      "kind": "card",
+      "heading": "6. Or start *from the chat*",
+      "paras": [
+        "With the Docs, Sheets and Slides connectors, Claude can create or edit Google files from a normal Claude chat.",
+        "Team and Enterprise owners must turn the connectors on first. Firefox is not supported in the beta."
+      ],
+      "image": {
+        "url": "https://www.reworked.co/-/media/9c870e76c8af434d923f6dc6a4adddf4.ashx",
+        "credit": "Anthropic",
+        "fit": "contain",
+        "fallback_urls": []
+      }
+    },
+    {
+      "kind": "cta",
+      "hook": "Save this before your next spreadsheet, and follow for more AI tips you can use right away."
+    }
+  ]
+}

@@ -1,0 +1,213 @@
+{
+  "id": "2026-10-22-claude-proves-123-libraries-wont-crash",
+  "created_at": "2026-10-23T00:25:00Z",
+  "story_time": "2026-10-22T21:58:00Z",
+  "timely": true,
+  "sensitive": false,
+  "priority": 1,
+  "review": true,
+  "site_category": "models",
+  "sources": [
+    {
+      "name": "Anthropic",
+      "url": "https://www.anthropic.com/research/formal-verification"
+    },
+    {
+      "name": "Interesting Engineering",
+      "url": "https://interestingengineering.com/ai-robotics/claude-formal-verification-software-security"
+    }
+  ],
+  "caption": "Anthropic says Claude wrote formal proofs that 123 open-source libraries never crash on inputs under 64 MB, under set conditions.\nOn the way it found hundreds of bugs that years of automated testing had missed.\nVerified is not the same as bug-free, Anthropic warns.\n\nWould you trust code that an AI proved safe?\n\nFollow @neurafeed.ai for daily AI news.\n\nSource: Anthropic · Photo: Anthropic",
+  "threads_text": "Anthropic says Claude wrote 180 million lines of math proofs showing 123 open-source libraries won't crash, and found hundreds of bugs that trillions of test runs missed. The proof work took a few weeks. Would you trust code an AI proved safe?",
+  "slides": [
+    {
+      "kind": "cover",
+      "headline": "Claude found bugs that survived *trillions of test runs*, then proved 123 libraries won't crash",
+      "image": {
+        "url": "https://www-cdn.anthropic.com/images/4zrzovbb/website/62ef4c44cbeeaca254eadaaaf982d1d32a7e9819-2000x1125.jpg",
+        "credit": "Anthropic",
+        "fallback_urls": [
+          "https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2F62ef4c44cbeeaca254eadaaaf982d1d32a7e9819-2000x1125.jpg&w=1920&q=75"
+        ]
+      },
+      "pos": "center center",
+      "badges": [
+        {
+          "url": "assets/logos/claude.png",
+          "shape": "free"
+        }
+      ]
+    },
+    {
+      "kind": "card",
+      "heading": "*180 million lines* of proof",
+      "paras": [
+        "Anthropic says Claude wrote formal proofs for 123 open-source libraries, covering 239 entry points, working with verification firm Theorem.",
+        "The proofs show the programs never crash on any input under 64 MB, under stated conditions."
+      ],
+      "image": {
+        "url": "https://cms.interestingengineering.com/wp-content/uploads/2026/07/Untitled-design-2026-07-25T000909.910.jpg",
+        "credit": "Anthropic",
+        "fallback_urls": []
+      }
+    },
+    {
+      "kind": "card",
+      "heading": "Bugs that *hid for years*",
+      "paras": [
+        "Hundreds of bugs surfaced while Claude tried to write the proofs. It patched them, then proved the fixed code.",
+        {
+          "t": "One logic bug in a widely used application had been hiding for more than a decade.",
+          "strong": true
+        }
+      ],
+      "image": {
+        "url": "https://www-cdn.anthropic.com/images/4zrzovbb/website/8e295614d599d548fbd2ff97ed3cc3e62f501b2b-1920x1248.png",
+        "credit": "Anthropic",
+        "fit": "contain",
+        "fallback_urls": []
+      },
+      "note": "Chart: Anthropic"
+    },
+    {
+      "kind": "card",
+      "heading": "A year of bugs in *one week*",
+      "paras": [
+        "On one PDF reader, Claude found as many security bugs in a week as are usually reported in a year, Anthropic said.",
+        "Some bugs only appeared with a 20 MB or 64 MB input and a rare layout."
+      ],
+      "image": {
+        "url": "https://www-cdn.anthropic.com/images/4zrzovbb/website/02207cbc6f46e272fe9a0fa7929cb8ec29578e74-1920x980.png",
+        "credit": "Anthropic",
+        "fit": "contain",
+        "fallback_urls": []
+      },
+      "note": "Chart: Anthropic"
+    },
+    {
+      "kind": "card",
+      "heading": "The *fine print*",
+      "paras": [
+        "Verified does not mean bug-free. The proofs cover single-threaded RISC-V programs, while most real software runs on x86 or ARM.",
+        "Anthropic released part of the proofs and a Claude skill for verifying other projects."
+      ],
+      "image": {
+        "url": "https://www-cdn.anthropic.com/images/4zrzovbb/website/80cf520cb540989c3643907f004b2514ec4d01f1-1200x630.jpg",
+        "credit": "Anthropic",
+        "fallback_urls": []
+      }
+    },
+    {
+      "kind": "cta",
+      "hook": "AI is starting to check the code the internet runs on. Follow to see who uses this next."
+    }
+  ],
+  "site_article": {
+    "headline": "Anthropic says Claude proved 123 open-source libraries cannot crash under set conditions",
+    "dek": "Working with Theorem, Claude wrote about 180 million lines of machine-checked proofs and found hundreds of bugs that fuzz testing had missed.",
+    "summary": "Anthropic said Claude produced formal proofs that 123 open-source libraries never crash on inputs under 64 MB, under specific assumptions. The effort uncovered hundreds of bugs, including one that had been latent for more than a decade.",
+    "seo_title": "Claude formally verifies 123 open-source libraries, Anthropic says",
+    "seo_description": "Anthropic says Claude wrote 180 million lines of proofs showing 123 open-source libraries never crash, finding hundreds of missed bugs.",
+    "answer_summary": "Anthropic says Claude wrote machine-checked proofs that 123 open-source libraries never crash on inputs under 64 MB when run as single-threaded RISC-V programs. Along the way it found and patched hundreds of bugs that automated testing had missed.",
+    "tags": [
+      "Anthropic",
+      "Claude",
+      "Formal verification",
+      "Cybersecurity",
+      "Open source"
+    ],
+    "hero_alt": "Anthropic's illustration for its research post on formal software verification with Claude.",
+    "paragraphs": [
+      {
+        "kind": "fact",
+        "text": "Anthropic said on October 22, 2026, that Claude produced formal mathematical proofs for 123 open-source software libraries, covering 239 entry points that are normally exercised by automated fuzz tests. The work was carried out by Anthropic's Frontier Red Team with the software verification company Theorem, according to Anthropic and Interesting Engineering.",
+        "sources": [
+          0,
+          1
+        ]
+      },
+      {
+        "kind": "fact",
+        "text": "The proofs show that the programs never crash, meaning they have no memory safety errors or failed assertions, for any input smaller than 64 MB. Those guarantees hold under specific assumptions: a single-threaded, statically linked binary running on a RISC-V processor under Linux with a fixed memory budget, Anthropic said.",
+        "sources": [
+          0,
+          1
+        ]
+      },
+      {
+        "kind": "heading",
+        "text": "How the proofs were built"
+      },
+      {
+        "kind": "fact",
+        "text": "Claude converted existing fuzz tests from Google's OSS-Fuzz project into formal specifications and then wrote proofs at the level of RISC-V assembly code. A separate tool, the Rocq proof checker, confirmed each proof against its specification, so developers do not need to read the generated proofs line by line, Interesting Engineering reported.",
+        "sources": [
+          0,
+          1
+        ]
+      },
+      {
+        "kind": "fact",
+        "text": "The output is large. Anthropic said the proofs total about 180 million lines of Rocq, with a typical proof running to about 600,000 lines, and that the proof work took a few weeks. For comparison, the company noted that the verified seL4 operating system kernel took two person-years to implement and 20 person-years to verify.",
+        "sources": [
+          0,
+          1
+        ]
+      },
+      {
+        "kind": "heading",
+        "text": "Bugs found along the way"
+      },
+      {
+        "kind": "fact",
+        "text": "Hundreds of bugs surfaced while Claude attempted the proofs, according to Anthropic. Claude patched them and generated new proofs for the corrected code. Anthropic said these bugs had escaped detection despite trillions of test runs.",
+        "sources": [
+          0,
+          1
+        ]
+      },
+      {
+        "kind": "fact",
+        "text": "Examples included a counter underflow in a decompressor that caused an out-of-bounds write and appeared only with an input of roughly 20 MB arranged in a rare way, and an image decoder flaw that required a 64 MB input and more than 2 GB of memory. Claude also rediscovered a known vulnerability in the libexpat XML parser and found a logic flaw that let an application bypass a feature meant to restrict which files it could load.",
+        "sources": [
+          0,
+          1
+        ]
+      },
+      {
+        "kind": "fact",
+        "text": "Anthropic said a logic bug in a widely used application had been latent for more than a decade, and that in a separate effort on a PDF reader, Claude found as many security bugs in one week as are typically reported in a year. The company also reported that its Opus 5.5 model used about 40 percent fewer tokens than Opus 5 on a set of 36 small proof tasks.",
+        "sources": [
+          0
+        ]
+      },
+      {
+        "kind": "heading",
+        "text": "Limits and what was released"
+      },
+      {
+        "kind": "fact",
+        "text": "Anthropic cautioned that formally verified software is not the same as bug-free software. The specifications may not match real behavior, the proofs model RISC-V binaries while most deployed software runs on x86 or ARM with dynamically linked libraries, not every entry point was verified, and callers can still misuse a library. The company said it penalized and audited patches to discourage Claude from gaming the task, for example by rewriting programs so they trivially never crash.",
+        "sources": [
+          0,
+          1
+        ]
+      },
+      {
+        "kind": "fact",
+        "text": "Anthropic released a subset of the proofs, the RISC-V and operating system semantics used to check them, and a Claude skill for verifying other projects. It said it is withholding proofs that could reveal bugs that have not yet been patched.",
+        "sources": [
+          0
+        ]
+      },
+      {
+        "kind": "analysis",
+        "text": "Formal verification has long been limited to small, high-value systems because writing proofs by hand is slow and expensive. If language models can produce machine-checked proofs at this scale, the main constraint shifts from human effort to computing cost and to how well the specifications capture what the software should do. The narrow assumptions in this study mean the result is a proof of concept rather than a guarantee for software as it is typically deployed."
+      },
+      {
+        "kind": "why_it_matters",
+        "text": "The released proofs and verification skill give open-source maintainers a way to test the method on their own projects, and the key question is whether the approach extends to x86 and ARM systems where most real software runs."
+      }
+    ]
+  }
+}
