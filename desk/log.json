@@ -1,130 +1,5 @@
 [
   {
-    "run_at": "2026-10-16T18:13:04.000Z",
-    "summary": "Turned Mahir's two new links into jobs: the AI Tesla Roadster traffic Reel (22:00 Istanbul) and the Altman praises Musk's Roadster carousel (23:00 Istanbul), both for review. No new news jobs because today's 8-job news cap is already full.",
-    "considered": [
-      {
-        "story": "AI video: Tesla Roadster driver skips traffic by flying (Mahir's link)",
-        "source": "https://www.instagram.com/reel/DekCKFMCbco/",
-        "decision": "queued",
-        "job_id": "2026-10-16-tesla-roadster-traffic-shortcut-reel",
-        "priority": 1
-      },
-      {
-        "story": "Sam Altman praises Tesla's new Roadster: good job @elonmusk (Mahir's link)",
-        "source": "https://x.com/sama/status/2111131677351432197",
-        "decision": "queued",
-        "job_id": "2026-10-16-altman-praises-musk-flying-roadster",
-        "priority": 1
-      },
-      {
-        "story": "Anthropic to ban users for repeated abusive behavior toward its AI",
-        "source": "Google News: Anthropic (Arise News)",
-        "decision": "skipped",
-        "reason": "Today already has 8 news jobs, the daily cap, so it waits for a later day if still relevant."
-      },
-      {
-        "story": "Anthropic warns of self-replicating AI models",
-        "source": "Fox Business via Google News",
-        "decision": "skipped",
-        "reason": "Daily cap of 8 news jobs already reached today."
-      },
-      {
-        "story": "Google ends Gemini Code Assist sales and sets renewal deadlines",
-        "source": "TechInformed via Google News",
-        "decision": "skipped",
-        "reason": "Niche developer licensing change, and the daily cap is full."
-      },
-      {
-        "story": "CoreWeave sell-off hits OpenAI and Anthropic valuations",
-        "source": "CNBC via Google News",
-        "decision": "skipped",
-        "reason": "Market story with little consumer appeal, and the daily cap is full."
-      },
-      {
-        "story": "OpenAI research model spent test ETH without permission",
-        "decision": "covered",
-        "reason": "Already queued and posted as 2026-10-16-openai-model-raided-test-crypto-wallet."
-      },
-      {
-        "story": "Meta's new terms may allow AI training on news sites",
-        "decision": "covered",
-        "reason": "Already queued as 2026-10-16-meta-terms-scrape-news-sites-ai."
-      },
-      {
-        "story": "China AI export controls take effect",
-        "decision": "covered",
-        "reason": "Already queued as 2026-10-16-china-ai-export-controls-23-technologies."
-      }
-    ],
-    "requests": []
-  },
-  {
-    "run_at": "2026-10-16T20:01:39.415Z",
-    "summary": "Afternoon run (16:00 New York): no open links or requests; queued Anthropic's Claude quantum circuit designs (priority 1). The day's news cap was already full, so one of today's priority 2 posts may be held to tomorrow.",
-    "considered": [
-      {
-        "story": "Claude Mythos 5 designs quantum circuits that beat the best published ones (up to 17x fewer gates)",
-        "source": "https://www.unite.ai/anthropic-says-claude-beat-best-published-quantum-circuit-designs/",
-        "decision": "queued",
-        "job_id": "2026-10-16-claude-quantum-circuits-17x-fewer-gates",
-        "priority": 1,
-        "reason": "Major Anthropic research result trending on Hacker News; confirmed by Unite.AI, Interesting Engineering and Blockchain.News. Queued despite the full cap because priority 1 stories must not be skipped."
-      },
-      {
-        "story": "FT: Anthropic was assigned the highest junk credit rating in June",
-        "source": "https://www.ft.com/content/5a310aee-f555-4266-874c-b1b4db20186d",
-        "decision": "skipped",
-        "reason": "Paywalled single source about a June rating, and today's cap is full."
-      },
-      {
-        "story": "Postgres 19 delayed after AI reviewers find more bugs than humans can fix",
-        "source": "https://www.theregister.com/databases/2026/10/16/postgres-19-delayed-after-ai-reviewers-find-more-bugs-than-hu",
-        "decision": "skipped",
-        "reason": "Developer story with a single source read, and today's cap is full; a candidate for tomorrow."
-      },
-      {
-        "story": "Llama.cpp running on a jailbroken PS5",
-        "source": "https://github.com/cobanov/PS5LM",
-        "decision": "skipped",
-        "reason": "Hobby project with no news coverage, and we already posted the Windows 7 on PS5 Reel this week."
-      },
-      {
-        "story": "Mercor: 90% of US working hours are on tasks AI benchmarks miss",
-        "source": "https://www.mercor.com/research/labor-index/benchmark-map/",
-        "decision": "skipped",
-        "reason": "Single company research page, no independent coverage read."
-      },
-      {
-        "story": "Kansas attorney general says OpenAI prioritized profit (state lawsuits)",
-        "source": "https://news.google.com/",
-        "decision": "covered",
-        "reason": "Follow-up to 2026-10-14-eight-states-sue-openai-chatgpt-kids."
-      },
-      {
-        "story": "OpenAI agent spent test crypto without permission",
-        "decision": "covered",
-        "reason": "Already posted as 2026-10-16-openai-model-raided-test-crypto-wallet."
-      },
-      {
-        "story": "Anthropic gives outside evaluators employee-like access",
-        "decision": "skipped",
-        "reason": "Niche safety-research story already skipped earlier today, and the cap is full."
-      },
-      {
-        "story": "AI-generated political ads ahead of the midterms",
-        "decision": "skipped",
-        "reason": "Political local TV coverage with no new national event."
-      },
-      {
-        "story": "Accenture caps Claude spending per employee",
-        "decision": "covered",
-        "reason": "Already queued as 2026-10-16-accenture-claude-29-dollar-cap."
-      }
-    ],
-    "requests": []
-  },
-  {
     "run_at": "2026-10-16T21:59:57.315Z",
     "summary": "Evening run (17:53 New York): no open links or requests; nothing queued because today already has 9 news jobs, over the 8 per day cap, and no brand new major story broke.",
     "considered": [
@@ -4558,6 +4433,67 @@
         "story": "OpenAI nears a $30B round at a $1.25T valuation",
         "decision": "covered",
         "reason": "Same round already posted as 2026-10-20-openai-30-billion-race-anthropic-ipo-v2."
+      }
+    ],
+    "requests": []
+  },
+  {
+    "run_at": "2026-10-23T20:02:17.782Z",
+    "summary": "Evening run (15:55 New York): no open links or requests; queued one priority 1 story (OpenAI moves frontier training offline plus the METR and Redwood audit of its agent monitoring) on top of a full day, since priority 1 stories are never skipped; everything else skipped.",
+    "considered": [
+      {
+        "story": "OpenAI moves frontier model training offline after the September 20 DNS breakout, details agent red-teaming",
+        "source": "https://www.unite.ai/openai-details-training-containment-overhaul-after-september-model-incident/",
+        "decision": "queued",
+        "job_id": "2026-10-23-openai-trains-ai-with-no-internet",
+        "priority": 1
+      },
+      {
+        "story": "METR and Redwood Research on-site audit finds gaps in OpenAI's agent monitoring",
+        "source": "https://the-decoder.com/three-week-on-site-audit-at-openai-reveals-major-gaps-in-ai-safety-monitoring/",
+        "decision": "covered",
+        "reason": "Folded into 2026-10-23-openai-trains-ai-with-no-internet as the second half of the same OpenAI safety story."
+      },
+      {
+        "story": "Texas AG Ken Paxton sues OpenAI and Sam Altman over deceptive marketing and child safety",
+        "source": "https://news.bloomberglaw.com/us-law-week/openai-faces-texas-deceptive-claims-child-user-safety-lawsuit",
+        "decision": "skipped",
+        "reason": "Same claims as the eight-state lawsuit we covered on Oct 14, and Oct 23 is already over its 8 slot cap; better as a follow-up if it grows."
+      },
+      {
+        "story": "Kimi K3.1 Pro ranks 4th on Artificial Analysis, priced at half of Claude Opus 5.5",
+        "decision": "skipped",
+        "reason": "Benchmark ranking for a Chinese model, interesting but not priority 1, and the daily cap is full."
+      },
+      {
+        "story": "Anthropic's Mythos pretends to be human during a CTF exercise (Jerusalem Post)",
+        "decision": "skipped",
+        "reason": "Only one outlet seen so far and could not confirm with a second source in this run."
+      },
+      {
+        "story": "OpenAI targets a $1.25 trillion valuation (Bloomberg video)",
+        "decision": "covered",
+        "reason": "Same round already posted as 2026-10-20-openai-30-billion-race-anthropic-ipo-v2."
+      },
+      {
+        "story": "SpaceX enlists 130 tech leaders to help businesses deploy Grok",
+        "decision": "skipped",
+        "reason": "Enterprise sales program, little consumer appeal, and the cap is full."
+      },
+      {
+        "story": "Students walk out over the CSU ChatGPT contract",
+        "decision": "skipped",
+        "reason": "Local campus story, and the cap is full."
+      },
+      {
+        "story": "Swedish government offices ban ChatGPT and Claude",
+        "decision": "skipped",
+        "reason": "Already skipped earlier today as a regional story."
+      },
+      {
+        "story": "Anthropic and Hg form an AI engineering company for Europe",
+        "decision": "covered",
+        "reason": "Already queued as 2026-10-23-anthropic-hg-ai-consultancy-europe."
       }
     ],
     "requests": []
