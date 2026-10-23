@@ -1,61 +1,5 @@
 [
   {
-    "run_at": "2026-10-16T02:03:29.772Z",
-    "summary": "Late run (21:53 New York): queued Microsoft's claim that MAI-Base-2 beat OpenAI with a quarter of the compute (priority 1) for tomorrow's 07:00 window; no open links or requests (the two old open links were already reported as skipped).",
-    "considered": [
-      {
-        "story": "Microsoft AI chief says MAI-Base-2 beat OpenAI's model using a quarter of the compute",
-        "source": "https://startupfortune.com/microsoft-ai-chief-says-his-model-beat-openais-using-a-quarter-the-compute/",
-        "decision": "queued",
-        "job_id": "2026-10-16-microsoft-mai-base-2-beats-openai-quarter-compute",
-        "priority": 1,
-        "reason": "Major Microsoft vs OpenAI story, confirmed by Business Insider and Startup Fortune. Marked not timely so it can post at tomorrow's 07:00 window instead of expiring overnight; it stays relevant for a day."
-      },
-      {
-        "story": "ChatGPT can now use and control your Chrome tabs (OpenAI)",
-        "source": "https://www.unite.ai/openai-brings-computer-use-to-chrome-with-chatgpt-tab-controls/",
-        "decision": "skipped",
-        "reason": "Could not open The Verge or OpenAI's X post this run; only AI-written aggregators were readable, and tab mentions already existed since July. The morning run can pick it up with better sources."
-      },
-      {
-        "story": "Gemini 4 Argon rolls out to the Gemini app and Antigravity for AI Pro",
-        "decision": "covered",
-        "reason": "Gemini 4 Argon already posted as 2026-10-13-google-gemini-4-argon-launch; this is a wider rollout."
-      },
-      {
-        "story": "Senate poised to add Claude to staffers' AI tools (Politico)",
-        "decision": "skipped",
-        "reason": "Political story from earlier today that would need approval and would expire before tomorrow's first window."
-      },
-      {
-        "story": "Anthropic gives METR evaluators employee-like access",
-        "decision": "skipped",
-        "reason": "Niche safety-research story, still no strong second source."
-      },
-      {
-        "story": "WSJ: AI runs into its next big obstacle, insurance",
-        "decision": "skipped",
-        "reason": "Paywalled analysis piece with limited consumer appeal."
-      },
-      {
-        "story": "Hawaii mother sues OpenAI over children's data",
-        "decision": "skipped",
-        "reason": "Lawsuit follow-up to the eight-state suits already covered in 2026-10-14-eight-states-sue-openai-chatgpt-kids."
-      },
-      {
-        "story": "Cal AI's viral success was driven by paid influencers (TechCrunch)",
-        "decision": "skipped",
-        "reason": "Marketing story about a small app with little broad AI interest."
-      },
-      {
-        "story": "Krea 3 image model",
-        "decision": "skipped",
-        "reason": "Niche creator tool; kept as a possible tool-list post."
-      }
-    ],
-    "requests": []
-  },
-  {
     "run_at": "2026-10-16T10:07:29.130Z",
     "summary": "Morning run (06:00 New York): queued Mahir's 'License and registration' Reel for 09:00, plus two priority 1 OpenAI stories (test-wallet incident report, ChatGPT in Chrome). Today now has 3 jobs plus the Reel.",
     "considered": [
@@ -4316,6 +4260,81 @@
         "story": "OpenAI engineer arrested for bugging a conference room",
         "decision": "skipped",
         "reason": "Crime story from a single trade outlet; not confirmed with a second source."
+      }
+    ],
+    "requests": []
+  },
+  {
+    "run_at": "2026-10-23T02:11:09.758Z",
+    "summary": "Late run (21:55 New York): no open links or requests; Oct 22 is at its cap, so queued one evergreen priority 2 story for tomorrow's windows: Walmart letting AI agents shop for customers.",
+    "considered": [
+      {
+        "story": "Walmart launches Agent Profiles, an MCP Agent Gateway and rules so AI agents can shop for customers",
+        "source": "https://corporate.walmart.com/news/2026/10/Making-It-Possible-for-Agents-to-Shop-on-Behalf-of-Customers",
+        "decision": "queued",
+        "job_id": "2026-10-22-walmart-lets-ai-agents-shop-for-you",
+        "priority": 2
+      },
+      {
+        "story": "Tesla Q3 2026: operating income down 56% as R&D on AI and robotics jumps 69%",
+        "source": "https://electrek.co/2026/10/21/tesla-tsla-q3-2026-financial-results/",
+        "decision": "covered",
+        "reason": "Tesla's results are already part of 2026-10-22-nasdaq-worst-day-ai-spending-fears, and the report is from Oct 21."
+      },
+      {
+        "story": "Rare American chestnut grove at Nscale's West Virginia campus (Anthropic is a tenant) to be relocated",
+        "source": "https://www.404media.co/west-virginia-american-chestnut-trees-data-center/",
+        "decision": "skipped",
+        "reason": "Local story running since Oct 15 with no new development today; the trees are not set to move until late 2027."
+      },
+      {
+        "story": "Trump's Super Intelligence Force AI task force",
+        "source": "https://www.cbsnews.com/news/ai-super-intelligence-force-trump-jay-clayton/",
+        "decision": "skipped",
+        "reason": "Announced Oct 4, 2026; the new lead is a local rerun, not news."
+      },
+      {
+        "story": "Gemini 4 Argon teaches Apptronik's Apollo humanoid cornhole from one video",
+        "source": "https://interestingengineering.com/videos/googles-gemini-4-argon-taught-a-humanoid-robot-to-play-cornhole",
+        "decision": "skipped",
+        "reason": "From Oct 14, 2026, too old."
+      },
+      {
+        "story": "Google Gemini is now available for the iPhone (Mashable)",
+        "decision": "skipped",
+        "reason": "The Gemini iPhone app launched long ago; no new launch found."
+      },
+      {
+        "story": "Anthropic weighs a new Claude model to counter GPT-6 Astra",
+        "source": "https://digg.com/ai/o61pjxs3",
+        "decision": "skipped",
+        "reason": "Social media rumor from September with no real reporting."
+      },
+      {
+        "story": "OpenAI nears $30B raise at $1.25T valuation",
+        "decision": "covered",
+        "reason": "Same round already posted as 2026-10-20-openai-30-billion-race-anthropic-ipo; tonight's items are valuation updates."
+      },
+      {
+        "story": "OpenAI says GPT-5.6-Sol helped find the PHP flaws",
+        "decision": "covered",
+        "reason": "Already posted as 2026-10-21-ai-finds-php2shell-flaws."
+      },
+      {
+        "story": "Canva releases its first image generation model",
+        "source": "https://www.theverge.com/ai-artificial-intelligence/1017151/canva-craft-in-house-ai-model",
+        "decision": "skipped",
+        "reason": "Smaller priority 2 launch than the Walmart story; tomorrow already has held posts waiting."
+      },
+      {
+        "story": "Nvidia DSX POD containerized Vera Rubin AI factory",
+        "decision": "skipped",
+        "reason": "Data center infrastructure product with little consumer interest."
+      },
+      {
+        "story": "Utility post",
+        "decision": "skipped",
+        "reason": "It is 21:55 New York and Oct 22 is at its cap; the next day's runs can queue Oct 23's utility."
       }
     ],
     "requests": []
