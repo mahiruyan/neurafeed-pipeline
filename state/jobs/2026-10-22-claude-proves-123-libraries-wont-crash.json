@@ -20,9 +20,14 @@
       "status": "held_cap",
       "at": "2026-10-23T00:45:23.390Z",
       "by": "system"
+    },
+    {
+      "status": "expired",
+      "at": "2026-10-23T10:17:29.915Z",
+      "by": "system"
     }
   ],
-  "status": "held_cap",
+  "status": "expired",
   "files": [
     "out/2026-10-22-claude-proves-123-libraries-wont-crash/1.jpg",
     "out/2026-10-22-claude-proves-123-libraries-wont-crash/2.jpg",
@@ -34,7 +39,7 @@
   "image_errors": [
     "slide 1 badge 1: logo check skipped (You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.)"
   ],
-  "updated_at": "2026-10-23T00:45:23.390Z",
+  "updated_at": "2026-10-23T10:17:29.915Z",
   "sent_at": "2026-10-23T00:12:31.180Z",
   "message_id": 1303,
   "by": "night rule: 2 sources, not sensitive",
