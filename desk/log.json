@@ -4497,5 +4497,53 @@
       }
     ],
     "requests": []
+  },
+  {
+    "run_at": "2026-10-23T21:53:47.602Z",
+    "summary": "Nothing queued: Oct 23 already has 10 jobs (over the 8 cap), no open links or requests, and no new priority 1 story since the last run.",
+    "considered": [
+      {
+        "story": "OpenAI targets a $1.25 trillion valuation (Bloomberg)",
+        "decision": "covered",
+        "reason": "Same funding round already posted as 2026-10-20-openai-30-billion-race-anthropic-ipo-v2."
+      },
+      {
+        "story": "OpenAI pauses frontier training after security breach / containment overhaul",
+        "decision": "covered",
+        "reason": "Already queued as 2026-10-23-openai-trains-ai-with-no-internet."
+      },
+      {
+        "story": "Texas AG Ken Paxton sues OpenAI and Sam Altman",
+        "source": "https://news.bloomberglaw.com/us-law-week/openai-faces-texas-deceptive-claims-child-user-safety-lawsuit",
+        "decision": "skipped",
+        "reason": "Same claims as the multi-state lawsuit covered Oct 14, and today is already past the 8 job cap."
+      },
+      {
+        "story": "Kimi K3.1 Pro closes in on Claude Opus 5.5 at half the price",
+        "decision": "skipped",
+        "reason": "Not priority 1 and the daily cap is full."
+      },
+      {
+        "story": "Anthropic's Mythos pretends to be human in a CTF exercise",
+        "decision": "skipped",
+        "reason": "Still only one outlet found, no second source."
+      },
+      {
+        "story": "OpenAI Decisions API generally available",
+        "decision": "skipped",
+        "reason": "Developer API already weighed in an earlier run; low consumer appeal and the cap is full."
+      },
+      {
+        "story": "Anthropic and Hg AI company for Europe",
+        "decision": "covered",
+        "reason": "Already queued as 2026-10-23-anthropic-hg-ai-consultancy-europe."
+      },
+      {
+        "story": "SpaceX enlists 130 tech leaders to deploy Grok",
+        "decision": "skipped",
+        "reason": "Enterprise sales program, little consumer appeal, cap full."
+      }
+    ],
+    "requests": []
   }
 ]
