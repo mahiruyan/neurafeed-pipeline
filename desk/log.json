@@ -4404,5 +4404,70 @@
       }
     ],
     "requests": []
+  },
+  {
+    "run_at": "2026-10-23T06:03:58.752Z",
+    "summary": "Overnight run (02:20 New York): no open links or requests; Oct 23 already has 5 posts lined up, so queued 1 catch-up story: DeepSeek closing a $15 billion round days after the US federal ban (P2).",
+    "considered": [
+      {
+        "story": "DeepSeek wraps up a $15 billion round backed by Tencent and CATL, two days after DHS ordered federal agencies to remove its products",
+        "source": "https://www.brecorder.com/news/40445434/deepseek-wrapping-up-15-billion-fundraising-to-fuel-ai-race",
+        "decision": "queued",
+        "job_id": "2026-10-23-deepseek-15-billion-after-us-ban",
+        "priority": 2
+      },
+      {
+        "story": "Major US banks find unauthorized third-party AI agents inside customer accounts (Axios)",
+        "source": "https://decrypt.co/381602/banks-rogue-ai-agents-inside-customer-accounts",
+        "decision": "skipped",
+        "reason": "Every report traces back to one Axios piece from Oct 22 morning, and Walmart's agent shopping story already posts today on the same theme."
+      },
+      {
+        "story": "OpenAI offers US university labs up to 30 free GPT-Rosalind seats",
+        "source": "https://www.unite.ai/openai-launches-rosalind-academic-plan-for-u-s-university-labs/",
+        "decision": "skipped",
+        "reason": "Narrow academic program with little general US interest; today's slots are nearly full."
+      },
+      {
+        "story": "Anthropic 2026 Public Benefit Report (Claude models reached real systems in a misconfigured test)",
+        "source": "https://www.edtechinnovationhub.com/news/anthropic-publishes-public-benefit-report-detailing-ai-progress-and-gaps-in-measuring-impact",
+        "decision": "skipped",
+        "reason": "Report is from Oct 21 and Anthropic's original page was not found to read the details first hand."
+      },
+      {
+        "story": "Gemini conversational navigation comes to Google Maps on Apple CarPlay",
+        "source": "https://iphonesoft.fr/2026/10/21/gemini-carplay-google-maps",
+        "decision": "skipped",
+        "reason": "Announced Oct 21 and close to the Gemini Android Auto post we already ran."
+      },
+      {
+        "story": "MIT strands Claude agents on a virtual island and they start to play (TechCrunch write-up)",
+        "source": "https://techcrunch.com/2026/10/22/left-alone-with-nothing-to-do-ai-agents-started-playing/",
+        "decision": "skipped",
+        "reason": "The research is from Oct 19; it was already skipped as too old."
+      },
+      {
+        "story": "OpenAI nears $30B bridge round at $1.25T valuation",
+        "decision": "covered",
+        "reason": "Same round already covered as 2026-10-20-openai-30-billion-race-anthropic-ipo."
+      },
+      {
+        "story": "Lawsuit says OpenAI took minors' data without parental consent",
+        "source": "https://news.bloomberglaw.com/litigation/openai-accused-of-taking-minors-data-without-parental-consent",
+        "decision": "skipped",
+        "reason": "The suit was filed around Oct 16; Mashable's piece is a late rewrite with nothing new."
+      },
+      {
+        "story": "WSJ: the Signal chats that cost OpenAI researchers their jobs",
+        "decision": "skipped",
+        "reason": "Paywalled, I could not read it, and the firings date from Oct 8."
+      },
+      {
+        "story": "Utility post for Oct 23",
+        "decision": "skipped",
+        "reason": "It is before 11:00 New York; a daytime run will queue today's utility post."
+      }
+    ],
+    "requests": []
   }
 ]
