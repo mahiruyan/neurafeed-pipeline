@@ -1,58 +1,5 @@
 [
   {
-    "run_at": "2026-10-17T21:54:11.630Z",
-    "summary": "Evening run (17:53 New York): no open links or requests (the two old unreferenced links are already in inbox/skipped.json). Today is at the 8-job cap and no new priority 1 story broke since the last run, so nothing was queued.",
-    "considered": [
-      {
-        "story": "Sergey Brin says Google's AI now helps build its next models (The Next Web)",
-        "decision": "skipped",
-        "reason": "Interview remark rather than a launch, and today is at the 8-job cap."
-      },
-      {
-        "story": "Gemini helped disprove a 1967 fusion physics conjecture",
-        "decision": "skipped",
-        "reason": "Interesting research item but secondary coverage only so far, and the day is full; can be picked up tomorrow if major outlets confirm."
-      },
-      {
-        "story": "OpenCode breach exposes stored OpenAI and Anthropic API keys",
-        "source": "https://startupfortune.com/opencode-breach-exposes-stored-openai-and-anthropic-keys-prompts-urgent-key-rotation/",
-        "decision": "skipped",
-        "reason": "Developer security story with narrow US consumer reach, and today is at the cap."
-      },
-      {
-        "story": "Meta drops the AI training clause from its Oct 30 terms after backlash",
-        "decision": "skipped",
-        "reason": "Follow-up to 2026-10-16-meta-terms-scrape-news-sites-ai, already posted, and the day is full."
-      },
-      {
-        "story": "Bill Gates plans a bigger AI safety push (Axios via The Next Web)",
-        "decision": "skipped",
-        "reason": "Single secondhand report about plans, and no free slot today."
-      },
-      {
-        "story": "Daniela Amodei warns against AI girlfriends (Business Insider via The Next Web)",
-        "decision": "skipped",
-        "reason": "Interview color on a day that already has five Anthropic posts and no free slot."
-      },
-      {
-        "story": "OpenAI discloses four more rogue model incidents (Fortune)",
-        "decision": "covered",
-        "reason": "Follows 2026-10-16-openai-model-raided-test-crypto-wallet, already posted."
-      },
-      {
-        "story": "Replit stops working with Anthropic (TechCrunch)",
-        "decision": "covered",
-        "reason": "Already posted as 2026-10-17-replit-drops-anthropic-for-openai."
-      },
-      {
-        "story": "Amazon AI scores UK warehouses by union risk (openDemocracy)",
-        "decision": "skipped",
-        "reason": "UK labor story, sensitive and single-sourced, with limited US interest."
-      }
-    ],
-    "requests": []
-  },
-  {
     "run_at": "2026-10-17T23:55:28.692Z",
     "summary": "Evening run (20:00 New York): two new Reel links from Mahir could not be queued because src/validate.js crashes on every Reel job, so both went to inbox/skipped.json with the fix; today is at the 8-job cap and no new priority 1 story broke.",
     "considered": [
@@ -4704,6 +4651,73 @@
         "source": "https://torrentfreak.com/ai-assisted-paper-on-z-library-cites-a-torrentfreak-article-that-doesnt-exist/",
         "decision": "skipped",
         "reason": "Small story and the day is over the cap."
+      }
+    ],
+    "requests": []
+  },
+  {
+    "run_at": "2026-10-24T23:54:21.063Z",
+    "summary": "8 p.m. New York run: no open links or requests, no uncovered priority 1 story found, and today already has 11 job files (over the 8 cap), so nothing was queued.",
+    "considered": [
+      {
+        "story": "ARC Prize rejects OpenAI's 99.9 percent Astra score on ARC-AGI-3",
+        "source": "https://startupfortune.com/arc-prize-rejects-openais-claim-that-astra-scored-999-percent-on-agi-test/",
+        "decision": "skipped",
+        "reason": "Rehash of a September story: ARC Prize published the 62.7 percent verified score when Astra launched on Sept 3, as The Next Web reported on Sept 6."
+      },
+      {
+        "story": "Meta breach adds to concerns about AI models going rogue",
+        "source": "https://cnycentral.com/news/nation-world/meta-breach-adds-to-concerns-about-ai-models-going-rogue",
+        "decision": "skipped",
+        "reason": "Syndicated story about Meta's August incident, not new news."
+      },
+      {
+        "story": "Gemini arrives in Google Maps on Apple CarPlay",
+        "source": "https://www.phocuswire.com/news/technology/google-launches-gemini-google-maps-carplay",
+        "decision": "skipped",
+        "reason": "Launched Oct 21, well outside the 12 hour window, and the day is over the cap."
+      },
+      {
+        "story": "Claude Duet keeps working when your laptop is off (MIXED)",
+        "decision": "covered",
+        "reason": "Already posted as 2026-10-21-claude-duet-works-while-you-sleep."
+      },
+      {
+        "story": "UK funds an AI biosecurity lab with OpenAI and Anthropic",
+        "decision": "skipped",
+        "reason": "Same decision as earlier runs: limited US appeal."
+      },
+      {
+        "story": "Anthropic pitching Congress its own AI safety bill (Mashable)",
+        "decision": "covered",
+        "reason": "Already covered as 2026-10-17-anthropic-pitches-own-ai-safety-bill."
+      },
+      {
+        "story": "TechCrunch's AI graveyard list of failed projects and startups",
+        "source": "https://techcrunch.com/2026/10/24/the-ai-graveyard-a-running-list-of-projects-and-startups-that-didnt-make-it/",
+        "decision": "skipped",
+        "reason": "Evergreen roundup, not news, and the day is over the cap."
+      },
+      {
+        "story": "Apollo: no signs of AI payoff outside the tech sector",
+        "source": "https://www.apollo.com/wealth/insights-news/insights/daily-spark/no-signs-of-ai-payoff-outside-the-tech-sector",
+        "decision": "skipped",
+        "reason": "Chart commentary with modest appeal and the day is over the cap."
+      },
+      {
+        "story": "Paxton sues OpenAI and Sam Altman",
+        "decision": "skipped",
+        "reason": "Same decision as earlier runs: past the timely window and overlaps the Oct 14 multi-state suit."
+      },
+      {
+        "story": "OpenAI cuts frontier training off from the live internet",
+        "decision": "covered",
+        "reason": "Already queued as 2026-10-23-openai-trains-ai-with-no-internet."
+      },
+      {
+        "story": "Elvis Presley rights holders sue Anthropic",
+        "decision": "covered",
+        "reason": "Already queued as 2026-10-24-elvis-rights-holders-sue-anthropic."
       }
     ],
     "requests": []
