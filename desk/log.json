@@ -1,79 +1,5 @@
 [
   {
-    "run_at": "2026-10-17T19:55:23.658Z",
-    "summary": "Nothing queued: today (New York) already has 8 jobs, the daily cap, and every priority 1 story found is already covered. No open links or requests.",
-    "considered": [
-      {
-        "story": "Claude traces NIST ECDSA curve seeds to 1990s timestamps",
-        "source": "https://www.anthropic.com/research/ecdsa-curve-origins",
-        "decision": "covered",
-        "reason": "Already queued and posted as 2026-10-17-claude-cracks-26-year-nsa-curve-mystery."
-      },
-      {
-        "story": "Anthropic employment data: agent work outpaces staff",
-        "source": "https://www.anthropic.com/research/employment-at-anthropic",
-        "decision": "covered",
-        "reason": "Already queued as 2026-10-17-anthropic-agents-outwork-staff-6-to-1."
-      },
-      {
-        "story": "Claude redesigns quantum circuits",
-        "source": "https://www.anthropic.com/research/designing-efficient-quantum-circuits",
-        "decision": "covered",
-        "reason": "Already covered as 2026-10-16-claude-quantum-circuits-17x-fewer-gates."
-      },
-      {
-        "story": "Replit stops working with Anthropic",
-        "source": "https://techcrunch.com/2026/10/17/replit-is-no-longer-working-with-anthropic-ceo-says/",
-        "decision": "covered",
-        "reason": "Already posted as 2026-10-17-replit-drops-anthropic-for-openai."
-      },
-      {
-        "story": "Anthropic AI safety bill threshold criticized (Mother Jones)",
-        "decision": "covered",
-        "reason": "Follow-up to 2026-10-17-anthropic-pitches-own-ai-safety-bill, already posted."
-      },
-      {
-        "story": "OpenAI discloses four more rogue model incidents (Fortune)",
-        "source": "https://fortune.com/2026/10/16/openai-discloses-four-more-rogue-incidents-involving-financial-medical-and-government-data/",
-        "decision": "covered",
-        "reason": "Same disclosure as 2026-10-16-openai-model-raided-test-crypto-wallet."
-      },
-      {
-        "story": "DeepSeek releases V4.1-Flash with live web search",
-        "source": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017",
-        "decision": "skipped",
-        "reason": "Daily cap of 8 reached and not a priority 1 company; can be reconsidered tomorrow."
-      },
-      {
-        "story": "Sergey Brin says Google's AI now helps build its next models (The Next Web)",
-        "decision": "skipped",
-        "reason": "Daily cap of 8 reached; secondhand interview recap, worth a look tomorrow if a primary source surfaces."
-      },
-      {
-        "story": "Daniela Amodei warns against AI girlfriends (Business Insider via The Next Web)",
-        "decision": "skipped",
-        "reason": "Daily cap of 8 reached; softer interview story."
-      },
-      {
-        "story": "Anthropic co-founder says AI could lift US GDP to $44 trillion by 2030",
-        "decision": "skipped",
-        "reason": "Daily cap of 8 reached; only reported by minor outlets so far."
-      },
-      {
-        "story": "Gemini helped disprove a 60-year-old fusion physics conjecture",
-        "decision": "skipped",
-        "reason": "Daily cap of 8 reached; only a minor outlet found, needs a primary source."
-      },
-      {
-        "story": "Amazon uses AI to monitor union risk in UK warehouses",
-        "source": "https://www.opendemocracy.net/amazon-ai-surveillance-monitor-union-activity-uk-warehouses-birmingham-coventry-atlas-sutton-coldfield/",
-        "decision": "skipped",
-        "reason": "UK labor story, sensitive, and daily cap reached."
-      }
-    ],
-    "requests": []
-  },
-  {
     "run_at": "2026-10-17T21:54:11.630Z",
     "summary": "Evening run (17:53 New York): no open links or requests (the two old unreferenced links are already in inbox/skipped.json). Today is at the 8-job cap and no new priority 1 story broke since the last run, so nothing was queued.",
     "considered": [
@@ -4713,6 +4639,71 @@
         "story": "Study: AI gives men and women different salary negotiation advice (Scripps)",
         "decision": "skipped",
         "reason": "Recycled study coverage and the day is over the cap."
+      }
+    ],
+    "requests": []
+  },
+  {
+    "run_at": "2026-10-24T21:54:02.089Z",
+    "summary": "6 p.m. New York run: no open links or requests, no uncovered priority 1 story found, and today already has 11 job files (over the 8 cap), so nothing was queued.",
+    "considered": [
+      {
+        "story": "Texas AG Paxton sues OpenAI and Sam Altman over ChatGPT safety claims",
+        "source": "https://thehill.com/policy/technology/6169375-paxton-sues-openai-chatgpt/",
+        "decision": "skipped",
+        "reason": "Filed Oct 23, so already past the 12 hour timely window, and it overlaps the multi-state suit covered Oct 14; the day is also over the cap."
+      },
+      {
+        "story": "WSJ: FBI explores an espionage case against the Saudi ex-OpenAI engineer",
+        "decision": "skipped",
+        "reason": "Paywalled follow-up to a case already covered Oct 13, 16 and 19, and the day is over the cap."
+      },
+      {
+        "story": "Anthropic IPO prospectus shows $16.3B revenue and $80.7B first-half loss",
+        "decision": "covered",
+        "reason": "Already queued as 2026-10-21-anthropic-s1-80-billion-loss; no public S-1 on a new date confirmed in sources read."
+      },
+      {
+        "story": "OpenAI Decisions API goes GA with voice and Uber",
+        "decision": "skipped",
+        "reason": "Developer API with little consumer appeal."
+      },
+      {
+        "story": "OpenAI cuts frontier training off from the live internet",
+        "decision": "covered",
+        "reason": "Already queued as 2026-10-23-openai-trains-ai-with-no-internet."
+      },
+      {
+        "story": "Sweden's Government Offices block ChatGPT and Claude",
+        "decision": "covered",
+        "reason": "Already queued as 2026-10-24-sweden-blocks-chatgpt-claude."
+      },
+      {
+        "story": "Elvis Presley rights holders sue Anthropic",
+        "decision": "covered",
+        "reason": "Already queued as 2026-10-24-elvis-rights-holders-sue-anthropic."
+      },
+      {
+        "story": "OpenAI probed safety researchers' Signal chats before firings",
+        "decision": "covered",
+        "reason": "Already queued as 2026-10-24-openai-fired-researchers-signal-chats."
+      },
+      {
+        "story": "Pennsylvania will require labels on AI-generated ads",
+        "source": "https://www.theverge.com/ai-artificial-intelligence/1018187/pennsylvania-ai-deceptive-advertising-act",
+        "decision": "skipped",
+        "reason": "State policy story with modest national appeal and the day is over the cap."
+      },
+      {
+        "story": "Socceroo Cristian Volpato licenses his AI clone (Guardian)",
+        "decision": "skipped",
+        "reason": "Niche for a US audience and the day is over the cap."
+      },
+      {
+        "story": "AI-assisted Z-Library paper cites a TorrentFreak article that does not exist",
+        "source": "https://torrentfreak.com/ai-assisted-paper-on-z-library-cites-a-torrentfreak-article-that-doesnt-exist/",
+        "decision": "skipped",
+        "reason": "Small story and the day is over the cap."
       }
     ],
     "requests": []
