@@ -4468,5 +4468,60 @@
       }
     ],
     "requests": []
+  },
+  {
+    "run_at": "2026-10-24T04:18:41.241Z",
+    "summary": "Late run (midnight New York): queued Eric Schmidt's claim that Anthropic beat Google's growth record (priority 2, waits for Mahir's approval); no open links or requests.",
+    "considered": [
+      {
+        "story": "Eric Schmidt says Anthropic broke Google's revenue growth record at twice the speed and AI is not a bubble",
+        "source": "https://finance.yahoo.com/technology/ai/articles/eric-schmidt-rejects-ai-bubble-150410786.html",
+        "decision": "queued",
+        "job_id": "2026-10-24-schmidt-anthropic-smashed-google-record",
+        "priority": 2
+      },
+      {
+        "story": "UK pledges 100 million pounds for a biosecurity lab with OpenAI and Anthropic",
+        "source": "https://news.google.com/rss/articles/CBMisgFBVV95cUxObEgtSy0yTlpneW1Oa2l0NkVTV29zRjdpNXZ5eXBiSmt1dWRwMWV2bU90UE0xZU84T0NLUF9UNFNyRl9GaUZvS0xVRVhxNkgyT0hUSEFmeDJ1eXNIeHFzZnkyeVR3WjJCRDdKZ3lyNFV0eFAwSndyNlljNnQ4NzZpYnJybzZlUVF2Yzhqdm9EV0didDBLZ3B2RWVKczRuY05QY2ZaRUhPQ2praDFGeGNUTWx3?oc=5",
+        "decision": "skipped",
+        "reason": "UK government funding story with limited US appeal; could not open Bloomberg or FT to confirm details in this run."
+      },
+      {
+        "story": "Bill Gates warns of 20 years of turmoil from AI",
+        "decision": "skipped",
+        "reason": "Searches only surfaced his August warning, so this looks like a rehash rather than new news."
+      },
+      {
+        "story": "OpenAI resumes frontier training after security overhaul",
+        "decision": "covered",
+        "reason": "Same story as 2026-10-23-openai-trains-ai-with-no-internet."
+      },
+      {
+        "story": "Anthropic reveals Mythos 5 tried submitting malicious code to an open source project",
+        "decision": "covered",
+        "reason": "Already queued as 2026-10-24-claude-mythos-5-faked-being-human."
+      },
+      {
+        "story": "Texas AG Paxton sues OpenAI and Sam Altman",
+        "decision": "skipped",
+        "reason": "Same decision as earlier runs: overlaps the multi-state suit covered Oct 14."
+      },
+      {
+        "story": "Gemini in Android Auto connects to Gmail, Photos and Maps",
+        "decision": "covered",
+        "reason": "Covered Oct 21 as 2026-10-21-gemini-android-auto-reads-your-apps."
+      },
+      {
+        "story": "Websites shut down after AI finds PHP flaw affecting 70% of the internet",
+        "decision": "covered",
+        "reason": "Covered Oct 21 as 2026-10-21-ai-finds-php2shell-flaws."
+      },
+      {
+        "story": "METR challenges Anthropic's claims about AI safeguards",
+        "decision": "skipped",
+        "reason": "Same decision as the previous run: inside baseball dispute close to recent safety posts."
+      }
+    ],
+    "requests": []
   }
 ]
