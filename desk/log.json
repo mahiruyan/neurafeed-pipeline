@@ -4651,5 +4651,70 @@
       }
     ],
     "requests": []
+  },
+  {
+    "run_at": "2026-10-24T19:54:24.734Z",
+    "summary": "4 p.m. New York run: no open links or requests, no uncovered priority 1 story found, and today already has 9 job files (over the 8 cap), so nothing was queued.",
+    "considered": [
+      {
+        "story": "WSJ: FBI explores an espionage case against the Saudi ex-OpenAI engineer accused of bugging",
+        "source": "https://www.wsj.com",
+        "decision": "skipped",
+        "reason": "A paywalled follow-up to a case already covered Oct 13, 16 and 19, with no second source read, and the day is over the cap."
+      },
+      {
+        "story": "Pennsylvania will require labels on AI-generated ads",
+        "source": "https://www.theverge.com/ai-artificial-intelligence/1018187/pennsylvania-ai-deceptive-advertising-act",
+        "decision": "skipped",
+        "reason": "State policy story with modest national appeal and the day is over the cap; could fit a later day."
+      },
+      {
+        "story": "OpenAI built a giant fake internet for its agents (Gizmodo)",
+        "decision": "covered",
+        "reason": "Part of 2026-10-23-openai-trains-ai-with-no-internet."
+      },
+      {
+        "story": "Sweden's Government Offices block ChatGPT and Claude, approve Copilot",
+        "decision": "covered",
+        "reason": "Already queued as 2026-10-24-sweden-blocks-chatgpt-claude."
+      },
+      {
+        "story": "Elvis Presley estate sues Anthropic (VICE, Rolling Stone)",
+        "decision": "covered",
+        "reason": "Already queued as 2026-10-24-elvis-rights-holders-sue-anthropic."
+      },
+      {
+        "story": "OpenAI probed safety researchers' Signal messages before firings",
+        "decision": "covered",
+        "reason": "Already queued as 2026-10-24-openai-fired-researchers-signal-chats."
+      },
+      {
+        "story": "OpenAI Decisions API leaves beta with voice",
+        "decision": "skipped",
+        "reason": "Same decision as the noon run: developer API with little consumer appeal."
+      },
+      {
+        "story": "TechCrunch AI graveyard list of failed AI startups",
+        "source": "https://techcrunch.com/2026/10/24/the-ai-graveyard-a-running-list-of-projects-and-startups-that-didnt-make-it/",
+        "decision": "skipped",
+        "reason": "Evergreen roundup rather than news, and the day is over the cap."
+      },
+      {
+        "story": "Pieter Levels shows a GTA San Andreas mission made with Claude Code",
+        "decision": "skipped",
+        "reason": "Only a small blog in leads, no second source read, and the day is full."
+      },
+      {
+        "story": "Texas AG Paxton sues OpenAI and Sam Altman",
+        "decision": "skipped",
+        "reason": "Same decision as earlier runs: overlaps the multi-state suit covered Oct 14."
+      },
+      {
+        "story": "Study: AI gives men and women different salary negotiation advice (Scripps)",
+        "decision": "skipped",
+        "reason": "Recycled study coverage and the day is over the cap."
+      }
+    ],
+    "requests": []
   }
 ]
