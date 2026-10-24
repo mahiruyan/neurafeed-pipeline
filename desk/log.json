@@ -4523,5 +4523,78 @@
       }
     ],
     "requests": []
+  },
+  {
+    "run_at": "2026-10-24T06:20:40.470Z",
+    "summary": "Early run (2 a.m. New York): queued Google's Gmail and Photos ad policy exception (priority 1) and Sweden's government blocking ChatGPT and Claude (priority 2), both waiting for Mahir's approval; no open links or requests.",
+    "considered": [
+      {
+        "story": "Google's October 16 privacy policy lets Gmail, Drive and Photos content shape ads when users connect them to Personal Intelligence",
+        "source": "https://ppc.land/google-lets-connected-gmail-and-photos-data-shape-ads-5-years-after-pledge/",
+        "decision": "queued",
+        "job_id": "2026-10-24-google-gmail-photos-ads-exception",
+        "priority": 1
+      },
+      {
+        "story": "Sweden's Government Offices block ChatGPT and Claude on staff computers and switch to Microsoft Copilot",
+        "source": "https://www.svt.se/nyheter/inrikes/ai-tjanster-sparras-pa-regeringskansliet",
+        "decision": "queued",
+        "job_id": "2026-10-24-sweden-blocks-chatgpt-claude",
+        "priority": 2
+      },
+      {
+        "story": "OpenAI agents disabled their own safety monitoring",
+        "decision": "covered",
+        "reason": "Already covered Oct 21 as 2026-10-21-openai-agents-switched-off-alarms."
+      },
+      {
+        "story": "OpenAI resumes frontier training with no internet access",
+        "decision": "covered",
+        "reason": "Same story as 2026-10-23-openai-trains-ai-with-no-internet."
+      },
+      {
+        "story": "Trump's Super Intelligence Force AI task force",
+        "source": "https://abcnews.com/Politics/president-donald-trump-announces-creation-super-intelligence-force/story?id=136986122",
+        "decision": "skipped",
+        "reason": "Announced October 4, so it is old news, not a new development."
+      },
+      {
+        "story": "Konkuk University AI cheating case in Korea",
+        "source": "https://www.koreajoongangdaily.com/korea/ai-cheating-tests-korean-universities-as-school-struggle-to-keep-up/12931532",
+        "decision": "skipped",
+        "reason": "The reported 600 student retake could not be confirmed; the source I read describes a single student case from last week."
+      },
+      {
+        "story": "AWS says cloud capacity is sold out through 2027",
+        "decision": "skipped",
+        "reason": "Only reported by The Information behind a paywall; could not read a second source."
+      },
+      {
+        "story": "Meta acquires AI analytics startup Sundial",
+        "decision": "skipped",
+        "reason": "Small acquisition with limited consumer interest; not confirmed with a second source in this run."
+      },
+      {
+        "story": "Q3 PC shipments fall 21% on AI driven memory prices",
+        "decision": "skipped",
+        "reason": "Industry data story with one source found; lower priority than the two queued stories."
+      },
+      {
+        "story": "UK pledges 100 million pounds for an AI biosecurity lab",
+        "decision": "skipped",
+        "reason": "Same decision as the previous run: limited US appeal."
+      },
+      {
+        "story": "Texas AG Paxton sues OpenAI and Sam Altman",
+        "decision": "skipped",
+        "reason": "Same decision as earlier runs: overlaps the multi-state suit covered Oct 14."
+      },
+      {
+        "story": "Moonshot releases Kimi K3.1 Pro",
+        "decision": "skipped",
+        "reason": "Same decision as earlier today: little US consumer interest."
+      }
+    ],
+    "requests": []
   }
 ]
