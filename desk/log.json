@@ -1,55 +1,5 @@
 [
   {
-    "run_at": "2026-10-17T16:07:16.878Z",
-    "summary": "Noon run (12:00 New York): no open links or requests. Queued today's utility post, a list of 4 free AI tools (Gamma, Otter, Perplexity, Napkin) checked against their official pricing and help pages. Today now has 8 jobs, the daily cap.",
-    "considered": [
-      {
-        "story": "4 free AI tools for the boring parts of your workday",
-        "source": "https://gamma.app/pricing",
-        "decision": "queued",
-        "job_id": "2026-10-17-4-free-ai-tools-boring-workday",
-        "priority": 2
-      },
-      {
-        "story": "Anthropic signs a 20-year lease for a Nova Scotia data center campus",
-        "decision": "skipped",
-        "reason": "Today is at the 8-job cap, and it is a smaller infrastructure story on a day that already has five Anthropic posts."
-      },
-      {
-        "story": "Jensen Huang says the AI selloff will pass",
-        "source": "https://aiweekly.co/ai-news-today",
-        "decision": "skipped",
-        "reason": "Daily cap reached; a market comment rather than a launch, can be picked up tomorrow if it grows."
-      },
-      {
-        "story": "OpenAI discloses two more rogue AI incidents",
-        "decision": "skipped",
-        "reason": "Follows the crypto wallet test story already posted on Oct 16, and the day is full."
-      },
-      {
-        "story": "DeepSeek V4.1 Flash with live web search",
-        "decision": "skipped",
-        "reason": "Minor point release with little US consumer interest, and the day is full."
-      },
-      {
-        "story": "Anthropic's Jack Clark says AI could lift US GDP to $44 trillion by 2030",
-        "decision": "skipped",
-        "reason": "A forecast, not a launch, and today already has five Anthropic posts and no free slot."
-      },
-      {
-        "story": "ChatGPT Slides with real-time co-editing",
-        "decision": "covered",
-        "reason": "Already queued as 2026-10-17-chatgpt-slides-team-edit-live."
-      },
-      {
-        "story": "Claude traces NIST ECDSA curve seeds",
-        "decision": "covered",
-        "reason": "Already posted as 2026-10-17-claude-cracks-26-year-nsa-curve-mystery."
-      }
-    ],
-    "requests": []
-  },
-  {
     "run_at": "2026-10-17T17:53:45.913Z",
     "summary": "Afternoon run (13:52 New York): no open links or requests (the two old unreferenced links were already reported in inbox/skipped.json). Today is at the 8-job cap with 5 posted and 3 approved, and no new priority 1 story broke, so nothing was queued.",
     "considered": [
@@ -4623,6 +4573,73 @@
         "story": "Character.AI bankruptcy follow-up (Futurism)",
         "decision": "skipped",
         "reason": "Opinion follow-up; the bankruptcy was covered Oct 13."
+      }
+    ],
+    "requests": []
+  },
+  {
+    "run_at": "2026-10-24T16:17:41.019Z",
+    "summary": "Noon New York run: no open links or requests; queued today's utility how-to on ChatGPT Locked Chats (priority 2, waits for Mahir's approval), now 8 jobs for today, the daily cap.",
+    "considered": [
+      {
+        "story": "How to lock chats in ChatGPT with a PIN or Face ID (utility how-to)",
+        "source": "https://help.openai.com/en/articles/6825453-chatgpt-release-notes",
+        "decision": "queued",
+        "job_id": "2026-10-24-chatgpt-locked-chats-how-to",
+        "priority": 2
+      },
+      {
+        "story": "OpenAI Decisions API on GPT-6 Luna",
+        "source": "https://www.unite.ai/openai-releases-decisions-api-in-public-beta-powered-by-gpt-6-luna/",
+        "decision": "skipped",
+        "reason": "Developer-only API that was already in preview, little appeal for a consumer audience, and the last slot of the day went to the utility post."
+      },
+      {
+        "story": "Anthropic S-1 shows $16.3 billion revenue and $80.7 billion loss",
+        "decision": "covered",
+        "reason": "Already covered Oct 21 as 2026-10-21-anthropic-s1-80-billion-loss."
+      },
+      {
+        "story": "Texas AG Paxton sues OpenAI and Sam Altman",
+        "decision": "skipped",
+        "reason": "Same decision as earlier runs: overlaps the multi-state suit covered Oct 14."
+      },
+      {
+        "story": "Wayve, Stellantis and NVIDIA plan robotaxi deployment in France",
+        "source": "https://wayve.ai/press/wayve-stellantis-nvidia-collaborate-on-deployment-across-france/",
+        "decision": "skipped",
+        "reason": "European rollout with limited US interest, and today is at the 8-job cap."
+      },
+      {
+        "story": "CNBC survey: 63% of voters oppose a nearby AI data center",
+        "source": "https://www.cnbc.com/2026/10/24/trump-ai-data-centers-voter-backlash-midterms.html",
+        "decision": "skipped",
+        "reason": "Political poll story and today is at the cap; could fit a later day."
+      },
+      {
+        "story": "AWS says 2027 capacity is largely sold out",
+        "decision": "skipped",
+        "reason": "Earnings-call detail with little consumer appeal, and the day is full."
+      },
+      {
+        "story": "Modal raises $750M at a $16B valuation",
+        "decision": "skipped",
+        "reason": "Funding round for a developer platform, little US consumer interest."
+      },
+      {
+        "story": "Google may use Gmail and Photos data for ads via Personal Intelligence",
+        "decision": "covered",
+        "reason": "Already queued as 2026-10-24-google-gmail-photos-ads-exception."
+      },
+      {
+        "story": "OpenAI moves frontier training offline after an agent reached the internet",
+        "decision": "covered",
+        "reason": "Posted Oct 23 as 2026-10-23-openai-trains-ai-with-no-internet."
+      },
+      {
+        "story": "Free Google AI tools list (NotebookLM, Opal, Flow)",
+        "decision": "skipped",
+        "reason": "Considered for the utility post, but product names and free tiers have changed recently and could not be confirmed on official pages in this run."
       }
     ],
     "requests": []

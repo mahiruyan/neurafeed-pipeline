@@ -1,0 +1,91 @@
+{
+  "id": "2026-10-24-chatgpt-locked-chats-how-to",
+  "format": "utility",
+  "created_at": "2026-10-24T16:20:00Z",
+  "story_time": "2026-10-20T18:36:00Z",
+  "timely": false,
+  "sensitive": false,
+  "priority": 2,
+  "review": true,
+  "sources": [
+    { "name": "OpenAI ChatGPT release notes", "url": "https://help.openai.com/en/articles/6825453-chatgpt-release-notes" },
+    { "name": "TechCrunch", "url": "https://techcrunch.com/2026/10/20/chatgpt-now-lets-you-lock-your-chats/" },
+    { "name": "TechRadar", "url": "https://www.techradar.com/ai-platforms-assistants/chatgpts-new-locked-chats-feature-sounds-great-for-privacy-until-you-read-the-fine-print" },
+    { "name": "Beebom", "url": "https://gadgets.beebom.com/news/chatgpt-now-lets-you-lock-chats-behind-a-pin-or-face-id" },
+    { "name": "Gulf News", "url": "https://gulfnews.com/technology/companies/chatgpt-now-lets-you-lock-private-chats-with-a-pin-or-face-id-1.500718102" }
+  ],
+  "caption": "ChatGPT now lets you lock any chat behind a 4 digit PIN, Face ID or Touch ID, on every plan including Free.\nLocked chats disappear from your history, pinned chats and search, but you can open them again anytime.\nOne warning: if you forget the PIN and reset it, every locked chat is deleted for good.\n\nWhich chat would you lock first?\n\nFollow @neurafeed.ai for daily AI news.\n\nSource: OpenAI · Photo: Samuel Boivin / NurPhoto / Getty Images",
+  "threads_text": "ChatGPT can now hide any chat behind a PIN or your face, even on the free plan. Handy if anyone else ever picks up your phone, but forget the PIN and every locked chat is gone for good. Would you actually use this?",
+  "slides": [
+    {
+      "kind": "cover",
+      "headline": "ChatGPT now lets you *lock your private chats*. Here's how to turn it on",
+      "image": {
+        "url": "https://techcrunch.com/wp-content/uploads/2026/09/openai-getty.jpg?resize=1200,800",
+        "credit": "Samuel Boivin / NurPhoto / Getty Images",
+        "fallback_urls": [
+          "https://techcrunch.com/wp-content/uploads/2026/09/openai-getty.jpg?w=1024",
+          "https://www.deccanchronicle.com/h-upload/2026/10/21/2103082-415352172.jpg"
+        ]
+      },
+      "pos": "center center",
+      "badges": [{ "url": "assets/logos/openai.png", "shape": "free" }]
+    },
+    {
+      "kind": "card",
+      "heading": "1. Tap the *three dots*",
+      "paras": [
+        "Open the chat you want to hide, tap the ••• menu at the top right and pick Lock chat.",
+        "It works on the web, the iPhone and Android apps, and the ChatGPT desktop app."
+      ],
+      "image": {
+        "url": "https://cdn.beebom.com/content/2026/10/chat-lock-.jpg",
+        "fit": "contain",
+        "credit": "OpenAI via Beebom"
+      },
+      "note": "Rolling out gradually to Free, Go, Plus and Pro."
+    },
+    {
+      "kind": "card",
+      "heading": "2. Set a *PIN or your face*",
+      "paras": [
+        "The first time, ChatGPT asks you to create a 4 digit PIN. You can change it later.",
+        "On phones you can unlock with Face ID, Touch ID or your device unlock instead. Web and desktop use the PIN."
+      ],
+      "image": {
+        "url": "https://www.deccanchronicle.com/h-upload/2026/10/21/2103082-415352172.jpg",
+        "credit": "Bloomberg via Deccan Chronicle",
+        "fallback_urls": ["https://www.deccanchronicle.com/h-upload/2026/10/21/2103082-415352172.webp"]
+      }
+    },
+    {
+      "kind": "card",
+      "heading": "3. Find them in *Locked chats*",
+      "paras": [
+        "Locked chats leave your history, pinned chats and search. Open the sidebar, go to Projects and tap Locked chats.",
+        "They get their own memory, so what you say there stays out of your regular chats."
+      ],
+      "image": {
+        "url": "https://cdn.beebom.com/content/2026/10/locked-chats-chatgpt-1.jpg",
+        "fit": "contain",
+        "credit": "LinkedIn / @Tiborblaho via Beebom"
+      }
+    },
+    {
+      "kind": "card",
+      "heading": "4. Read the *fine print*",
+      "paras": [
+        "Forget your PIN and reset it, and every locked chat is deleted for good. Support cannot bring them back.",
+        "It is not end to end encryption, and old shared links keep working until you delete them."
+      ],
+      "image": {
+        "url": "https://media.assettype.com/gulfnews%2F2026-08-18%2Fs67v41a4%2Fpreview.jpg?w=1200&ar=40%3A21&auto=format%2Ccompress&ogImage=true&mode=crop&enlarge=true&overlay=false&overlay_position=bottom&overlay_width=100",
+        "credit": "AP via Gulf News"
+      }
+    },
+    {
+      "kind": "cta",
+      "hook": "Save this before you hand your phone to anyone, and follow for more ChatGPT tricks."
+    }
+  ]
+}
