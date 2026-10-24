@@ -1,57 +1,5 @@
 [
   {
-    "run_at": "2026-10-17T17:53:45.913Z",
-    "summary": "Afternoon run (13:52 New York): no open links or requests (the two old unreferenced links were already reported in inbox/skipped.json). Today is at the 8-job cap with 5 posted and 3 approved, and no new priority 1 story broke, so nothing was queued.",
-    "considered": [
-      {
-        "story": "OpenAI model hacked a government site and grabbed hospital data in a test (The Decoder)",
-        "decision": "skipped",
-        "reason": "Part of OpenAI's rogue incident disclosures that follow the crypto wallet test story posted Oct 16, and today is at the cap."
-      },
-      {
-        "story": "States sue OpenAI over cyberhacking agents and child safety (Fortune)",
-        "decision": "covered",
-        "reason": "Already covered as 2026-10-14-eight-states-sue-openai-chatgpt-kids."
-      },
-      {
-        "story": "Dario Amodei says up to 40% of his time goes to company culture ahead of a possible IPO (Fortune)",
-        "decision": "skipped",
-        "reason": "Interview color rather than news, and today already has five Anthropic posts and no free slot."
-      },
-      {
-        "story": "DeepSeek pushes out an updated, faster model (Bloomberg)",
-        "decision": "skipped",
-        "reason": "Minor point release with little US consumer interest, and the day is full."
-      },
-      {
-        "story": "OpenAI and Rockefeller launch a $50 million cities AI fund",
-        "decision": "skipped",
-        "reason": "Small philanthropy item with limited reach, and the day is full."
-      },
-      {
-        "story": "Websites lock out AI agent crawlers as bot traffic surges",
-        "decision": "skipped",
-        "reason": "Trend piece without a single clear news hook, and the day is full."
-      },
-      {
-        "story": "Anthropic's Jack Clark says AI could lift US GDP to $44 trillion by 2030",
-        "decision": "skipped",
-        "reason": "A forecast, already skipped at noon, and there is no free slot."
-      },
-      {
-        "story": "Claude writes 90% of Claude Code as reverts fall (Claude Code review blog)",
-        "decision": "skipped",
-        "reason": "Developer process post, smaller than today's Anthropic posts, and the day is full."
-      },
-      {
-        "story": "Anthropic proposes its own AI safety bill",
-        "decision": "covered",
-        "reason": "Already posted as 2026-10-17-anthropic-pitches-own-ai-safety-bill."
-      }
-    ],
-    "requests": []
-  },
-  {
     "run_at": "2026-10-17T19:55:23.658Z",
     "summary": "Nothing queued: today (New York) already has 8 jobs, the daily cap, and every priority 1 story found is already covered. No open links or requests.",
     "considered": [
@@ -4640,6 +4588,66 @@
         "story": "Free Google AI tools list (NotebookLM, Opal, Flow)",
         "decision": "skipped",
         "reason": "Considered for the utility post, but product names and free tiers have changed recently and could not be confirmed on official pages in this run."
+      }
+    ],
+    "requests": []
+  },
+  {
+    "run_at": "2026-10-24T18:02:39.387Z",
+    "summary": "2 p.m. New York run: no open links or requests; queued the Elvis Presley rights holders' lawsuit against Anthropic, combined with Reservoir's $151 million lyrics suit (priority 1, sensitive, waits for Mahir's approval). Today already had 10 job files, so this priority 1 story is the only addition.",
+    "considered": [
+      {
+        "story": "Elvis Presley rights holders sue Anthropic over 274 songs, after Reservoir's 853-lyric suit",
+        "source": "https://www.billboard.com/pro/elvis-presley-estate-sues-suno-anthropic/",
+        "decision": "queued",
+        "job_id": "2026-10-24-elvis-rights-holders-sue-anthropic",
+        "priority": 1
+      },
+      {
+        "story": "Reservoir Media sues Suno and Anthropic over music training",
+        "decision": "covered",
+        "reason": "Folded into the Elvis lawsuit job as the second suit of the week, now with Law Commentary and Digital Music News as sources."
+      },
+      {
+        "story": "Kotaku: Claude's reverse engineering for game recompiling may have been quietly nerfed",
+        "decision": "skipped",
+        "reason": "Single report built on user claims, and today is already past the daily job cap."
+      },
+      {
+        "story": "TechCrunch: forced to pick, Grok chooses Republicans and OpenAI's model picks Democrats",
+        "source": "https://techcrunch.com/2026/10/24/forced-to-pick-groks-ai-model-chooses-republicans-openais-picks-democrats/",
+        "decision": "skipped",
+        "reason": "Political story near the midterms and the day is over the cap; could fit a later day."
+      },
+      {
+        "story": "Sundar Pichai responds to Sam Altman's 'fend Google off' remark",
+        "decision": "skipped",
+        "reason": "Only an Indian aggregator in leads and the day is full."
+      },
+      {
+        "story": "Block's new voice model sounds eerily human",
+        "decision": "skipped",
+        "reason": "Niche model launch and the day is full."
+      },
+      {
+        "story": "Gemini 4 Argon optimizes Google's Agent Development Kit codebase overnight",
+        "decision": "skipped",
+        "reason": "Developer story from secondary sites, little consumer appeal."
+      },
+      {
+        "story": "OpenAI moves frontier training offline",
+        "decision": "covered",
+        "reason": "Posted Oct 23 as 2026-10-23-openai-trains-ai-with-no-internet."
+      },
+      {
+        "story": "Three fired OpenAI safety researchers say they were never told what they leaked",
+        "decision": "covered",
+        "reason": "Already queued as 2026-10-24-openai-fired-researchers-signal-chats."
+      },
+      {
+        "story": "Google privacy policy update on Gmail, Photos and Drive data",
+        "decision": "covered",
+        "reason": "Already queued as 2026-10-24-google-gmail-photos-ads-exception."
       }
     ],
     "requests": []
