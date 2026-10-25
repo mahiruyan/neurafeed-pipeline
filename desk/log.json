@@ -5016,5 +5016,76 @@
       }
     ],
     "requests": []
+  },
+  {
+    "run_at": "2026-10-25T14:08:24.960Z",
+    "summary": "Sunday 10:00 New York run: no open links or requests (all old links already in skipped.json, the one open request is failed); queued 1 priority 1 story (OpenAI discounts pulling customers from Anthropic, review). Today has 7 jobs (1 expired), leaving room for the utility post and the Sunday roundup.",
+    "considered": [
+      {
+        "story": "OpenAI offers discounts up to 90% to poach Anthropic's biggest customers: Rippling, DataCamp, Replit, a US bank (The Information via The Decoder)",
+        "source": "https://the-decoder.com/openai-offers-discounts-up-to-90-percent-to-poach-anthropics-biggest-customers/",
+        "decision": "queued",
+        "job_id": "2026-10-25-openai-discounts-poach-anthropic-customers",
+        "priority": 1
+      },
+      {
+        "story": "Jack Clark moves his self-improving AI forecast up to 2027 (The Decoder)",
+        "source": "https://the-decoder.com/anthropic-co-founder-jack-clark-moves-his-prediction-for-self-improving-ai-forward-to-2027/",
+        "decision": "skipped",
+        "reason": "Only one secondary source found this run; candidate for a later run if confirmed."
+      },
+      {
+        "story": "Anthropic says one agent beats many subagents (The Decoder)",
+        "decision": "skipped",
+        "reason": "Technical guidance with narrow consumer appeal, single source."
+      },
+      {
+        "story": "TechCrunch's AI graveyard running list",
+        "source": "https://techcrunch.com/2026/10/24/the-ai-graveyard-a-running-list-of-projects-and-startups-that-didnt-make-it/",
+        "decision": "skipped",
+        "reason": "A running list, not a news event."
+      },
+      {
+        "story": "Johns Hopkins Bayview warns 3,182 patients after staff fed data to an AI tool",
+        "decision": "skipped",
+        "reason": "Sensitive health data breach with limited AI news value, day nearly full."
+      },
+      {
+        "story": "Futurism report on Character.AI bots",
+        "decision": "skipped",
+        "reason": "Sensitive content involving minors, article not opened, same as earlier runs."
+      },
+      {
+        "story": "Replit moved most AI spend to OpenAI (RuntimeWire)",
+        "decision": "covered",
+        "reason": "Folded into the OpenAI discounts job as one example; the onstage remark was 2026-10-17-replit-drops-anthropic-for-openai."
+      },
+      {
+        "story": "Elvis rights holders sue Anthropic",
+        "decision": "covered",
+        "reason": "Already queued as 2026-10-24-elvis-rights-holders-sue-anthropic."
+      },
+      {
+        "story": "Grok and GPT forced-choice midterm test",
+        "decision": "covered",
+        "reason": "Already queued as 2026-10-25-grok-republicans-gpt-democrats-ballot-test."
+      },
+      {
+        "story": "Gemini 4 Argon public access",
+        "decision": "covered",
+        "reason": "Already covered as 2026-10-13-google-gemini-4-argon-launch."
+      },
+      {
+        "story": "Google DeepMind staff resign over military deals",
+        "decision": "covered",
+        "reason": "Already covered as 2026-10-21-google-deepmind-staff-quit-pentagon."
+      },
+      {
+        "story": "US presses allies to pick between US and China AI blocs (AP)",
+        "decision": "skipped",
+        "reason": "Geopolitics explainer with no single news event, same as earlier runs."
+      }
+    ],
+    "requests": []
   }
 ]
