@@ -5070,5 +5070,72 @@
       }
     ],
     "requests": []
+  },
+  {
+    "run_at": "2026-10-25T17:54:37.712Z",
+    "summary": "Sunday 14:00 New York run: no open links or requests (old links already in skipped.json); no new priority 1 story found and today already has 8 jobs, so nothing was queued. The Sunday roundup is left for the 17:00 run.",
+    "considered": [
+      {
+        "story": "Amazon has about $5 billion in Nvidia GB300 racks waiting in warehouses for power",
+        "source": "https://cryptobriefing.com/amazon-nvidia-chips-idle-data-center-power/",
+        "decision": "skipped",
+        "reason": "First reported around October 21, too old for news, and today is already at 8 jobs."
+      },
+      {
+        "story": "xAI releases an AI-made Odyssey episode with a creator contest",
+        "source": "https://www.basenor.com/blogs/news/groks-odyssey-remake-5-details-that-matter",
+        "decision": "skipped",
+        "reason": "Could not confirm a new release today; the sources I read describe the August contest and a September teaser."
+      },
+      {
+        "story": "Anthropic report: junior technical hires fell from 27% to 9%",
+        "source": "https://www.anthropic.com/research/employment-at-anthropic",
+        "decision": "covered",
+        "reason": "Already covered as 2026-10-17-anthropic-agents-outwork-staff-6-to-1."
+      },
+      {
+        "story": "Lawmakers say AI CEOs have become a political liability (Axios)",
+        "source": "https://www.axios.com/2026/10/24/ai-ceos-washington-political-liability",
+        "decision": "skipped",
+        "reason": "Political analysis piece, and today already has a politics post and 8 jobs."
+      },
+      {
+        "story": "Musk forecasts SpaceX's AI unit reaching $500 billion to $1 trillion in yearly revenue",
+        "source": "https://fool.com/investing/2026/10/25/elon-musk-delivered-spectacular-news-spacex-stock",
+        "decision": "skipped",
+        "reason": "Investor commentary on a forecast, single secondary source, and the day is full."
+      },
+      {
+        "story": "Rhode Island sues Meta over scam ads",
+        "source": "https://newstarget.com/2026-10-24-rhode-island-sues-meta-profits-rampant-scam-ads.html",
+        "decision": "skipped",
+        "reason": "Not an AI story at its core and only a low-quality source found."
+      },
+      {
+        "story": "Texas suspends 17 data center stormwater permits",
+        "source": "https://hwbusters.com/news/texas-data-center-permits-kept-auto-approving-after-abbotts-pause-and-17-are-now-suspended/",
+        "decision": "skipped",
+        "reason": "Local permitting story with limited US-wide interest, single source, day full."
+      },
+      {
+        "story": "Israeli election campaigns flood X with AI deepfakes (Al Jazeera)",
+        "source": "https://www.aljazeera.com/news/2026/10/25/bots-deepfakes-and-surveillance-israels-election-goes-to-war-online",
+        "decision": "skipped",
+        "reason": "Foreign election politics, sensitive, and the day is full."
+      },
+      {
+        "story": "Replit moves most AI spend from Anthropic to OpenAI",
+        "source": "https://www.theinformation.com/articles/anthropics-margin-openais-opportunity",
+        "decision": "covered",
+        "reason": "Folded into 2026-10-25-openai-discounts-poach-anthropic-customers."
+      },
+      {
+        "story": "Apollo: no signs of AI payoff outside tech",
+        "source": "https://www.apollo.com/wealth/insights-news/insights/daily-spark/no-signs-of-ai-payoff-outside-the-tech-sector",
+        "decision": "skipped",
+        "reason": "Market commentary with no single news event, same as earlier runs."
+      }
+    ],
+    "requests": []
   }
 ]
