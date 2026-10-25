@@ -1,0 +1,123 @@
+{
+  "id": "2026-10-25-block-dessa-ai-learned-talking-no-text",
+  "created_at": "2026-10-25T12:30:00Z",
+  "story_time": "2026-10-23T16:53:00Z",
+  "timely": false,
+  "sensitive": false,
+  "priority": 2,
+  "review": true,
+  "site_category": "models",
+  "sources": [
+    { "name": "Notebookcheck", "url": "https://www.notebookcheck.net/Jack-Dorsey-s-new-AI-never-read-a-single-word-yet-it-can-hold-disturbingly-human-conversations.1433101.0.html" },
+    { "name": "Crypto Briefing", "url": "https://cryptobriefing.com/block-unveils-dessa-ai-voice-model/" },
+    { "name": "Kingy AI", "url": "https://kingy.ai/blog/dessa-ai-block-voice-model/" },
+    { "name": "explainx", "url": "https://explainx.ai/blog/block-dessa-speech-only-full-duplex-model-trained-without-text-macbook-2026" },
+    { "name": "AICoder", "url": "https://aicoder.com/news/news-20261024-block-dessa-full-duplex-speech-model-trained-only-on-speech" },
+    { "name": "NewsCord", "url": "https://newscord.org/article/block-unveils-dessa-voice-ai-trained-on-human-speech-runs-locally-on-macbook-pro--Story_20261024_Blocksnewvoicemodelscd6ee5fe" }
+  ],
+  "caption": "Jack Dorsey's Block unveiled Dessa, a voice AI trained only on recordings of people talking, with no text at all.\nIt listens and speaks at the same time, so it can interrupt, laugh and react mid-sentence.\nBlock says it runs on a MacBook Pro, but for now only a few safety researchers get access.\n\nWould you be able to tell you were talking to an AI?\n\nFollow @neurafeed.ai for daily AI news.\n\nSource: Notebookcheck",
+  "threads_text": "Jack Dorsey's Block built a voice AI that never saw a single written word. It learned only from recordings of people talking, and Block says it runs on a MacBook. Amazing tech, or a gift to phone scammers?",
+  "slides": [
+    {
+      "kind": "cover",
+      "headline": "Jack Dorsey built an AI that learned to talk like a baby: *no text, only voices*",
+      "image": {
+        "url": "https://block.xyz/dessa/_media/6865f35ec6013672f8f8/assets/marketing/variants/v3.jpg",
+        "credit": "Block",
+        "fallback_urls": [
+          "https://static.cryptobriefing.com/wp-content/uploads/2026/10/23174503/blocka.jpg"
+        ]
+      },
+      "pos": "center center"
+    },
+    {
+      "kind": "card",
+      "heading": "It never read *a single word*",
+      "paras": [
+        "Block, the company behind Square and Cash App, unveiled Dessa on October 23.",
+        "It was trained from scratch only on recordings of human conversation. No text and no pretrained model."
+      ],
+      "image": {
+        "url": "https://static.cryptobriefing.com/wp-content/uploads/2026/10/23174503/blocka.jpg",
+        "credit": "Crypto Briefing",
+        "fallback_urls": [
+          "https://kingy.ai/wp-content/uploads/2026/10/dessa-ai-kingy-editorial.webp"
+        ]
+      }
+    },
+    {
+      "kind": "card",
+      "heading": "It talks *while you talk*",
+      "paras": [
+        "Dessa listens and speaks at the same time, so it can cut in, laugh and react without waiting for you to finish.",
+        "In Block's demos it even chats with OpenAI's GPT-Live-1 voice model."
+      ],
+      "image": {
+        "url": "https://explainx.ai/images/blog-library/podcast-microphone-waves.webp",
+        "credit": "explainx",
+        "fallback_urls": [
+          "https://kingy.ai/wp-content/uploads/2026/10/dessa-ai-kingy-editorial-1024x538.webp"
+        ]
+      }
+    },
+    {
+      "kind": "card",
+      "heading": "Built on *one rack*, runs on a laptop",
+      "paras": [
+        "Block says it trained Dessa on a single NVIDIA GB200 NVL72 system.",
+        "It claims the model runs locally on a MacBook Pro with an M4 Max chip or better, faster than real time."
+      ],
+      "image": {
+        "url": "https://kingy.ai/wp-content/uploads/2026/10/dessa-ai-kingy-editorial.webp",
+        "credit": "Kingy AI",
+        "fallback_urls": [
+          "https://kingy.ai/wp-content/uploads/2026/10/dessa-ai-kingy-editorial-1024x538.webp"
+        ]
+      }
+    },
+    {
+      "kind": "card",
+      "heading": "You *can't try it* yet",
+      "paras": [
+        "Only a small group of AI safety researchers gets early access. Everyone else joins a waitlist.",
+        { "t": "No weights, size or benchmarks are public, and some demos show mistakes.", "strong": true }
+      ],
+      "image": {
+        "url": "https://www.notebookcheck.net/fileadmin/Notebooks/News/_nc5/Dessa-from-Block.jpg",
+        "credit": "Andres Siimon / Unsplash",
+        "fallback_urls": []
+      }
+    },
+    {
+      "kind": "cta",
+      "hook": "Follow to hear when Dessa opens up and whether it really sounds human."
+    }
+  ],
+  "site_article": {
+    "headline": "Block unveils Dessa, a voice AI trained only on recordings of human conversation",
+    "dek": "Jack Dorsey's company says the model learned language without any text and runs on a high end MacBook Pro, but access is limited to safety researchers.",
+    "summary": "Block unveiled Dessa on October 23, 2026, a full duplex speech model trained from scratch on human conversation audio with no text or pretrained model. The company says it was trained on a single NVIDIA GB200 NVL72 system and runs locally on a MacBook Pro with an M4 Max chip or better.",
+    "seo_title": "Block Dessa: Jack Dorsey's voice AI trained without text",
+    "seo_description": "Block unveiled Dessa, a speech model trained only on human conversation audio that it says runs on a MacBook Pro. Access is limited to safety researchers.",
+    "answer_summary": "Dessa is a research preview of a voice model from Block that listens and speaks at the same time and was trained only on recordings of people talking. It is not publicly available; a small group of AI safety researchers has early access.",
+    "tags": ["Block", "Jack Dorsey", "Dessa", "voice AI", "speech models"],
+    "hero_alt": "Promotional launch image for Block's Dessa voice model.",
+    "paragraphs": [
+      { "kind": "fact", "text": "Block, the payments company led by Jack Dorsey that runs Square and Cash App, unveiled a voice model called Dessa on October 23, 2026. According to Block, the model was trained from scratch using only recordings of human conversation, without any written text and without starting from a pretrained language model.", "sources": [0, 1, 4] },
+      { "kind": "fact", "text": "Dessa is described as a full duplex speech to speech system. It takes in audio and produces audio directly instead of converting speech to text first, and it can listen and talk at the same time. That lets it interrupt, acknowledge what a speaker is saying and react before the other person finishes, as people do on a phone call.", "sources": [0, 1] },
+      { "kind": "heading", "text": "Training without text" },
+      { "kind": "fact", "text": "Block says Dessa learned language from hundreds of times fewer words than conventional text based language models need. The company has not published the comparison behind that claim, and Kingy AI noted that no protocol for it was given.", "sources": [1, 2, 3] },
+      { "kind": "fact", "text": "The company presented the idea through a comparison with infants, who learn to speak before they can read. Crypto Briefing reported that Block framed the project as a test of whether a model can pick up language the same way. The Dessa team also said that current AI systems are largely unable to register the emotion in human voices, and named that gap as a reason for the work.", "sources": [1] },
+      { "kind": "fact", "text": "According to Block, the model was trained on a single NVIDIA GB200 NVL72 system, a rack scale machine that NVIDIA specifies with 72 Blackwell GPUs and 36 Grace CPUs. Block also says Dessa runs locally on a MacBook Pro with Apple's M4 Max chip or better, with inference faster than real time and no cloud servers required. None of these hardware claims has been independently verified.", "sources": [0, 1, 2] },
+      { "kind": "heading", "text": "What the demos show" },
+      { "kind": "fact", "text": "Block posted recorded conversations on its website and said they capture live interactions in which no one steered the model, with subtitles added afterward. In the clips, Dessa laughs mid sentence, speaks louder when asked, helps a speaker who is struggling to recall a movie title and holds a conversation with OpenAI's GPT-Live-1 voice model.", "sources": [0, 2, 3] },
+      { "kind": "fact", "text": "Some recordings also show limits. Reports noted moments where the model misidentified a speaker, took over a speaker's turn or changed topics unexpectedly. Because Block selected the clips itself, outlets including Notebookcheck cautioned that they should be treated as first party material.", "sources": [0, 1, 2, 3] },
+      { "kind": "fact", "text": "Dessa was built by a small research lab inside Block led by Ragavan Thurairatnam that reports directly to Dorsey. Reports said the lab was founded by former members of Dessa, a deep learning startup based in Toronto.", "sources": [1, 2, 3, 4] },
+      { "kind": "heading", "text": "Who can use it" },
+      { "kind": "fact", "text": "The model is a research preview, not a product. Block is offering early access to a small group of AI safety researchers, and others can join a waitlist. The company has not disclosed the parameter count, model weights, benchmark results, pricing or a public release date.", "sources": [0, 1, 3, 4] },
+      { "kind": "fact", "text": "Reaction online mixed admiration for how natural the voice sounds with concern about misuse. NewsCord, which compared coverage from ten outlets, reported that some commentators warned a convincing human sounding voice could make phone scams harder to spot.", "sources": [5] },
+      { "kind": "analysis", "text": "Most voice assistants are built on top of text models, so they inherit the turn taking rhythm of a chatbot: wait, transcribe, answer. A model trained only on audio could, in principle, pick up timing, tone and hesitation that text never records. The claims about efficiency and laptop performance are what make Dessa notable, and they are also the claims that outside researchers have not yet been able to test." },
+      { "kind": "why_it_matters", "text": "The next signal is whether Block publishes weights, a paper or benchmark results, which would let independent researchers check its claims about training without text and running on a laptop." }
+    ]
+  }
+}

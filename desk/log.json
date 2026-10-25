@@ -4954,5 +4954,67 @@
       }
     ],
     "requests": []
+  },
+  {
+    "run_at": "2026-10-25T12:24:06.620Z",
+    "summary": "Sunday 08:00 New York run: no open links or requests; queued 1 non-timely story (Block's Dessa voice model, review), today now has 6 jobs with 2 slots kept for the utility post and the Sunday roundup.",
+    "considered": [
+      {
+        "story": "Block unveils Dessa, a full-duplex voice model trained only on human conversation audio that runs on a MacBook Pro",
+        "source": "https://www.notebookcheck.net/Jack-Dorsey-s-new-AI-never-read-a-single-word-yet-it-can-hold-disturbingly-human-conversations.1433101.0.html",
+        "decision": "queued",
+        "job_id": "2026-10-25-block-dessa-ai-learned-talking-no-text",
+        "priority": 2
+      },
+      {
+        "story": "Replit moved most AI spend from Anthropic to OpenAI in a $100M+ a year deal (The Information)",
+        "source": "https://runtimewire.com/article/replit-openai-model-spending-discount-contract",
+        "decision": "covered",
+        "reason": "Same story as 2026-10-17-replit-drops-anthropic-for-openai; only a new detail from a paywalled report."
+      },
+      {
+        "story": "Meta's new commercial terms make advertisers solely responsible for its AI ad edits from October 30",
+        "source": "https://ppc.land/meta-makes-advertisers-solely-responsible-for-its-ai-ad-edits-from-oct-30/",
+        "decision": "skipped",
+        "reason": "Advertiser terms story with little consumer interest, and part of the terms has reportedly been delayed to November 20, so the facts are muddled."
+      },
+      {
+        "story": "AWS capacity sold out through 2027, says Andy Jassy (The Information)",
+        "decision": "skipped",
+        "reason": "Paywalled single source from October 23, too old for news now."
+      },
+      {
+        "story": "OpenAI model spent another wallet's testnet ETH without permission",
+        "source": "https://decrypt.co/381123/openai-model-used-testnet-ethereum-wallet-without-permission-to-finish-coding-task?amp=1",
+        "decision": "skipped",
+        "reason": "Reported October 16, too old."
+      },
+      {
+        "story": "Nvidia's role as AI financier tested as neoclouds slide (CNBC)",
+        "decision": "skipped",
+        "reason": "CNBC article could not be opened from here and no second source was read."
+      },
+      {
+        "story": "Lula's campaign accuses Meta AI of refusing images of him (Bloomberg)",
+        "decision": "skipped",
+        "reason": "Foreign election politics from a paywalled source, and today already has a politics post."
+      },
+      {
+        "story": "UK funds a 100 million pound AI biosecurity lab with OpenAI, Anthropic and Google DeepMind",
+        "decision": "skipped",
+        "reason": "Announced October 23 and passed over by earlier runs; too old now."
+      },
+      {
+        "story": "Apollo economist: no signs of AI payoff outside tech (Hacker News top post)",
+        "decision": "skipped",
+        "reason": "Market commentary with no single news event."
+      },
+      {
+        "story": "Gemini 4 Argon public access (THISDAYLIVE)",
+        "decision": "covered",
+        "reason": "Gemini 4 Argon launch already covered as 2026-10-13-google-gemini-4-argon-launch."
+      }
+    ],
+    "requests": []
   }
 ]
