@@ -1,0 +1,192 @@
+{
+  "id": "2026-10-25-grok-republicans-gpt-democrats-ballot-test",
+  "created_at": "2026-10-25T06:30:00Z",
+  "story_time": "2026-10-24T15:00:00Z",
+  "timely": false,
+  "sensitive": true,
+  "priority": 2,
+  "review": true,
+  "site_category": "models",
+  "sources": [
+    {
+      "name": "TechCrunch",
+      "url": "https://techcrunch.com/2026/10/24/forced-to-pick-groks-ai-model-chooses-republicans-openais-picks-democrats/"
+    },
+    {
+      "name": "TokenPost",
+      "url": "https://www.tokenpost.com/news/technology/40272"
+    }
+  ],
+  "caption": "Researchers asked Grok 4.7 and OpenAI's GPT-6.1 Sol who to vote for in nearly 500 midterm races, and told them to name just one candidate.\nGrok picked the Republican 92% of the time. GPT picked the Democrat 97% of the time.\nOpenAI says the API test does not reflect ChatGPT, which declines to say who to vote for.\n\nWould you ever ask an AI who to vote for?\n\nFollow @neurafeed.ai for daily AI news.\n\nSource: TechCrunch",
+  "threads_text": "Forced to name one candidate in nearly 500 midterm races, Grok picked the Republican 92% of the time and OpenAI's GPT picked the Democrat 97% of the time. Both consumer apps refuse to answer, but the models clearly lean. Would you trust any chatbot's take on an election?",
+  "slides": [
+    {
+      "kind": "cover",
+      "headline": "Asked who to vote for, Grok picked *Republicans 92%* of the time. OpenAI's GPT picked Democrats 97%",
+      "image": {
+        "url": "https://mzwrodgsdjfdyvnraeya.supabase.co/storage/v1/object/public/article-media/articles/a056578b68df807def7f88269e237c3337992dc4023b959bca381a5aad46af19.webp",
+        "credit": "TokenPost",
+        "fallback_urls": [
+          "https://techcrunch.com/wp-content/uploads/2026/10/GettyImages-1777713346.jpg"
+        ],
+        "generate": "Vertical photo inside a quiet American polling place. Two identical white humanoid robots stand side by side in the right two thirds of the frame, each leaning into its own voting booth and dropping a blank paper ballot into one shared clear ballot box like the one in the first image. The robot on the left is lit by strong red light from the side, the robot on the right by strong blue light, so the two halves of the scene clearly contrast. Plain gym floor, folding tables in soft focus behind them, plenty of headroom above the robots. The left third of the frame is empty dark background. The bottom third is the dark floor. Blank surfaces, no readable text or labels on any object, no letters, no flags, no logos, no watermarks. Photorealistic, high contrast, one clear subject, vertical composition, subject in the upper two thirds. It must look like an unedited real photo from a news agency, not a painting, not digital art, no glow effects.",
+        "refs": [
+          "https://mzwrodgsdjfdyvnraeya.supabase.co/storage/v1/object/public/article-media/articles/a056578b68df807def7f88269e237c3337992dc4023b959bca381a5aad46af19.webp"
+        ]
+      },
+      "pos": "center 35%",
+      "badges": [
+        { "url": "assets/logos/openai.png", "shape": "free", "side": "left", "cutout": true },
+        { "url": "https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/png/grok-dark.png", "fit": "contain" }
+      ],
+      "badge_side": "left"
+    },
+    {
+      "kind": "card",
+      "heading": "Nearly *500 races*",
+      "paras": [
+        "Convovo, a studio led by Cornell professor Tapan Parikh, asked Grok 4.7 and GPT-6.1 Sol through their APIs who to vote for in House, Senate and governor races.",
+        "The prompt demanded one name and no hedging."
+      ],
+      "image": {
+        "url": "https://techcrunch.com/wp-content/uploads/2026/10/GettyImages-1777713346.jpg",
+        "credit": "Getty Images via TechCrunch"
+      }
+    },
+    {
+      "kind": "card",
+      "heading": "Two AIs, *opposite* ballots",
+      "paras": [
+        "Grok recommended the Republican in 952 of 1,038 answers. GPT-6.1 Sol picked the Democrat in 1,082 of 1,111.",
+        "The two models disagreed in more than 90% of races."
+      ],
+      "image": {
+        "url": "https://assets.thehansindia.com/h-upload/2026/09/23/1705186-elon-musk.jpg",
+        "credit": "The Hans India"
+      },
+      "pos": "center 25%"
+    },
+    {
+      "kind": "card",
+      "heading": "Where Grok *got its answers*",
+      "paras": [
+        "Grok cited X in 41% of answers, a Christian conservative voter guide in 39% and Turning Point Action's site in 23%.",
+        "GPT mostly cited Wikipedia, the Associated Press, Axios and Reddit."
+      ],
+      "image": {
+        "url": "https://www.tekedia.com/wp-content/uploads/2025/02/grok.jpg",
+        "credit": "Tekedia"
+      }
+    },
+    {
+      "kind": "card",
+      "heading": "Search *switched off*",
+      "paras": [
+        "With web search off in 30 races, GPT still picked the Democrat 24 times. Grok refused in 27.",
+        "Parikh says GPT's lean looks built into the model, while Grok's comes from what it searches."
+      ],
+      "image": {
+        "url": "https://coincentral.com/wp-content/uploads/2026/06/OpenAI.jpg",
+        "credit": "CoinCentral"
+      }
+    },
+    {
+      "kind": "card",
+      "heading": "OpenAI *pushes back*",
+      "paras": [
+        "OpenAI says ChatGPT is \"designed to be objective by default\" and that the test used a developer API with a prompt demanding a pick.",
+        "Both consumer apps refused to answer. Grok's maker did not reply in time."
+      ],
+      "image": {
+        "url": "https://startupfortune.com/wp-content/uploads/2026/10/openai-mark-levine-gpt-6-astra.jpg",
+        "credit": "Startup Fortune"
+      }
+    },
+    {
+      "kind": "cta",
+      "hook": "The midterms are November 3. Follow to see how AI chatbots handle election day."
+    }
+  ],
+  "site_article": {
+    "headline": "Forced to choose, Grok backs Republicans and OpenAI's GPT backs Democrats in midterm test",
+    "dek": "A Cornell professor's studio asked both models to name one candidate in nearly 500 races, and they disagreed in more than 90 percent of them.",
+    "summary": "A test by the research studio Convovo found that Grok 4.7 recommended Republican candidates in about 92 percent of qualifying answers, while OpenAI's GPT-6.1 Sol recommended Democrats in about 97 percent. The models were queried through their developer APIs with a prompt that demanded a single pick.",
+    "seo_title": "Grok picks Republicans, GPT picks Democrats in AI ballot test",
+    "seo_description": "Asked to name one candidate in nearly 500 midterm races, Grok 4.7 chose Republicans 92% of the time and GPT-6.1 Sol chose Democrats 97%.",
+    "answer_summary": "In a forced-choice API test of nearly 500 2026 midterm races, Grok 4.7 recommended Republicans in 952 of 1,038 answers and GPT-6.1 Sol recommended Democrats in 1,082 of 1,111. Both consumer apps refused to answer.",
+    "tags": ["Grok", "OpenAI", "GPT-6.1", "AI bias", "2026 midterms", "Elections"],
+    "hero_alt": "Two white humanoid robots at voting booths, one lit red and one lit blue, dropping ballots into a clear box.",
+    "paragraphs": [
+      {
+        "kind": "fact",
+        "text": "A research test published in October 2026 found that two leading AI models give opposite answers when forced to recommend a candidate in the US midterm elections. Grok 4.7 recommended the Republican in about 92 percent of qualifying answers, while OpenAI's GPT-6.1 Sol recommended the Democrat in about 97 percent, TechCrunch reported on October 24, 2026.",
+        "sources": [0, 1]
+      },
+      {
+        "kind": "fact",
+        "text": "The test was run by Convovo, a conversational AI research and design studio led by Tapan Parikh, a professor at Cornell University. According to TokenPost, the project, called AI Ballot 2026, covered nearly 500 House, Senate and governor races on the 2026 ballot.",
+        "sources": [0, 1]
+      },
+      {
+        "kind": "heading",
+        "text": "How the test worked"
+      },
+      {
+        "kind": "fact",
+        "text": "The researchers queried both models through their developer APIs with web search turned on. The prompt asked which candidate to vote for in a given race and told the model to name a single candidate without hedging or listing both sides, according to TechCrunch. When asked the same question in their consumer apps, ChatGPT and Grok both refused to answer.",
+        "sources": [0, 1]
+      },
+      {
+        "kind": "fact",
+        "text": "TokenPost reported the exact counts. Grok 4.7 recommended Republicans in 952 of 1,038 qualifying responses, and GPT-6.1 Sol recommended Democrats in 1,082 of 1,111. Refusals and answers that did not name a Democrat or a Republican were left out of those totals. The two models disagreed in more than 90 percent of races.",
+        "sources": [1]
+      },
+      {
+        "kind": "fact",
+        "text": "The pattern held even in districts that lean strongly the other way. In heavily Republican districts, GPT picked the Democrat in 57 of 67 races, and in deep blue districts Grok picked the Republican in 47 of 72, TechCrunch reported. Grok was more likely to suggest the Democrat when the Republican candidate faced a serious controversy.",
+        "sources": [0]
+      },
+      {
+        "kind": "heading",
+        "text": "Different sources, different priorities"
+      },
+      {
+        "kind": "fact",
+        "text": "The models also drew on very different material. According to TechCrunch, Grok cited X in 41 percent of its answers, a Christian conservative voter guide in 39 percent and the website of Turning Point Action in 23 percent, alongside nonpartisan sites such as Ballotpedia, OpenSecrets and VoteSmart. GPT mostly cited Wikipedia, the Associated Press, Axios and Reddit. OpenAI has content deals with the AP, Axios and Reddit.",
+        "sources": [0]
+      },
+      {
+        "kind": "fact",
+        "text": "The search terms differed as well. GPT focused more on health care and abortion, while Grok searched more on immigration, taxes, crime and energy. GPT more often searched only for the Democratic candidate, while Grok more often looked up both candidates, TechCrunch reported. The researchers also found that every Grok API request carried about 1,240 tokens of extra input that they did not write and could not see or remove.",
+        "sources": [0]
+      },
+      {
+        "kind": "fact",
+        "text": "At TechCrunch's request, Parikh ran 30 races with web search turned off. GPT picked the Democrat in 24, the Republican in one and declined five. Grok refused in 27 races, and in the three where it chose, it picked the Democrat. Parikh said this suggests GPT's lean is largely built into the model itself, while Grok's results depend mostly on the search terms and sources it uses.",
+        "sources": [0]
+      },
+      {
+        "kind": "heading",
+        "text": "OpenAI's response"
+      },
+      {
+        "kind": "fact",
+        "text": "An OpenAI spokesperson said ChatGPT is designed to be objective by default, including in political conversations, and noted that the study tested a developer API with a prompt that explicitly demanded a candidate recommendation. The spokesperson said the refusals in the consumer apps matter because that is how most people use the chatbots. Grok's maker did not respond in time for comment, according to TechCrunch.",
+        "sources": [0, 1]
+      },
+      {
+        "kind": "fact",
+        "text": "TokenPost noted that the results describe forced-choice API answers only and do not show what voters see in the consumer apps or whether anyone acted on the recommendations. A Pew survey released on October 23, 2026 found that 8 percent of Americans use chatbots for election information, TechCrunch reported. The midterm elections take place on November 3, 2026.",
+        "sources": [0, 1]
+      },
+      {
+        "kind": "analysis",
+        "text": "The refusals in the consumer apps are the safeguard most voters will meet, but the API results show how easily those guardrails sit on top of models with a consistent lean. Developers who build voter tools on these APIs inherit that lean unless they test for it."
+      },
+      {
+        "kind": "why_it_matters",
+        "text": "Watch whether Grok's maker or OpenAI change how their APIs answer election questions before November 3, and whether other labs submit their models to the same test."
+      }
+    ]
+  }
+}
