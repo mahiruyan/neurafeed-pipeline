@@ -1,83 +1,5 @@
 [
   {
-    "run_at": "2026-10-18T14:15:14.283Z",
-    "summary": "Morning run (10:00 New York): queued 3 jobs for Sunday (Anthropic Nova Scotia data center, Gemini agents beat Minecraft, OpenCode API key breach); the two Reel links stay in inbox/skipped.json because src/validate.js still crashes on every Reel; no open requests.",
-    "considered": [
-      {
-        "story": "Anthropic signs 20-year lease for C$10B Nova Scotia data center campus",
-        "source": "https://www.bnnbloomberg.ca/business/company-news/2026/10/16/everwind-says-10b-ai-data-centre-proposal-largest-private-investment-in-ns-history/",
-        "decision": "queued",
-        "job_id": "2026-10-18-anthropic-nova-scotia-20-year-data-center",
-        "priority": 1
-      },
-      {
-        "story": "Four Gemini 4 Argon agents beat Minecraft in 27 hours (Google DeepMind)",
-        "source": "https://cryptobriefing.com/ai-agents-defeat-ender-dragon/",
-        "decision": "queued",
-        "job_id": "2026-10-18-gemini-agents-beat-minecraft-27-hours",
-        "priority": 2
-      },
-      {
-        "story": "OpenCode breach may have exposed OpenAI, Anthropic and Google API keys",
-        "source": "https://cybersecuritynews.com/opencode-security-breach/",
-        "decision": "queued",
-        "job_id": "2026-10-18-opencode-breach-ai-api-keys",
-        "priority": 2
-      },
-      {
-        "story": "Mahir's Reels: Draco fan trailer and AI Tesla Roadster chase",
-        "decision": "skipped",
-        "reason": "src/validate.js still throws 'single is not defined' in validateReel, so both stay in inbox/skipped.json until it is fixed; both requested post times have also passed."
-      },
-      {
-        "story": "OpenAI revenue about $20B below earlier reports (Mashable, FT)",
-        "source": "https://www.enca.com/business/openai-revenue-gap-report-rattles-ai-stocks",
-        "decision": "skipped",
-        "reason": "Reported on October 9, too old to post now."
-      },
-      {
-        "story": "Microsoft walks away from Nscale UK Essex data center deal (Telegraph)",
-        "source": "https://www.telegraph.co.uk/business/2026/10/18/microsoft-axes-ai-deal-setback-uk-data-centre-pioneer/",
-        "decision": "skipped",
-        "reason": "Fresh but only one source so far and the article could not be read; check again in the next run."
-      },
-      {
-        "story": "Anthropic asks law firms how negotiating AI agents should behave (FT)",
-        "source": "https://www.ft.com/content/f7c26ac0-f5f2-443a-86b2-39d62f7920a9",
-        "decision": "skipped",
-        "reason": "FT is paywalled and not yet confirmed by a second outlet I could read; reconsider later today."
-      },
-      {
-        "story": "OpenAI discloses four more rogue agent incidents (Fortune)",
-        "decision": "covered",
-        "reason": "Follow-up to 2026-10-16-openai-model-raided-test-crypto-wallet."
-      },
-      {
-        "story": "OpenAI confirms humanoid robot, 2027 demo (Engadget)",
-        "decision": "skipped",
-        "reason": "Rehash of the early September announcement, not new."
-      },
-      {
-        "story": "Anthropic's Jack Clark pitches $44T US GDP scenario (CNBC)",
-        "source": "https://www.cnbc.com/2026/10/17/ai-us-gdp-anthropics-clark.html",
-        "decision": "skipped",
-        "reason": "Policy forecast with little consumer appeal, and Anthropic already has a post today."
-      },
-      {
-        "story": "Amazon AI scores UK warehouses by union risk (openDemocracy)",
-        "decision": "skipped",
-        "reason": "UK labor story, sensitive, low US interest."
-      },
-      {
-        "story": "DeepSeek V4.1-Flash-1017 adds live web search",
-        "source": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017",
-        "decision": "skipped",
-        "reason": "Incremental model update with little US mainstream interest."
-      }
-    ],
-    "requests": []
-  },
-  {
     "run_at": "2026-10-18T18:20:39.376Z",
     "summary": "Queued 3 jobs (OpenAI humanoid robot, Anthropic METR embedded watchdog, Gemini prompt formula utility); Sunday roundup left for the 17:00 run; inbox links all already in skipped.json, no open requests.",
     "considered": [
@@ -5084,6 +5006,67 @@
         "story": "US presses allies to pick between US and China AI blocs (AP)",
         "decision": "skipped",
         "reason": "Geopolitics explainer with no single news event, same as earlier runs."
+      }
+    ],
+    "requests": []
+  },
+  {
+    "run_at": "2026-10-25T16:08:12.101Z",
+    "summary": "Sunday 12:00 New York run: no open links or requests; queued the daily utility post (Gemini Notebook Audio Overview how-to, review). Today has 8 jobs (1 expired), leaving room only for the Sunday roundup at 17:00.",
+    "considered": [
+      {
+        "story": "How to turn files into an AI podcast with Gemini Notebook Audio Overviews",
+        "source": "https://support.google.com/notebooklm/answer/16212820?hl=en",
+        "decision": "queued",
+        "job_id": "2026-10-25-gemini-notebook-audio-overview-how-to",
+        "priority": 2
+      },
+      {
+        "story": "OpenAI red-team agents built a CPU cache covert channel between isolated VMs (The Decoder)",
+        "source": "https://the-decoder.com/openais-isolated-ai-agents-found-ways-to-talk-to-each-other-through-cpu-cache/",
+        "decision": "covered",
+        "reason": "Comes from the same OpenAI training security post already covered as 2026-10-23-openai-trains-ai-with-no-internet."
+      },
+      {
+        "story": "Anthropic launches OSS Scanner, free AI vulnerability scans for open source",
+        "source": "https://thehackernews.com/2026/10/anthropic-launches-free-ai.html?m=0",
+        "decision": "skipped",
+        "reason": "Launched around October 9, too old for news now."
+      },
+      {
+        "story": "Nvidia discusses a $2,000 per GPU yearly software fee for running agents (Tom's Hardware)",
+        "decision": "skipped",
+        "reason": "A report of internal discussions, not a launch, and today's slots are kept for the utility post and the Sunday roundup."
+      },
+      {
+        "story": "Claude Enterprise will combine chat and Cowork by default on November 16",
+        "decision": "skipped",
+        "reason": "Enterprise admin change with little consumer appeal, single secondary source."
+      },
+      {
+        "story": "UK 100 million pound AI biosecurity lab with Google, OpenAI and Anthropic",
+        "decision": "skipped",
+        "reason": "Announced October 23, too old, same as earlier runs."
+      },
+      {
+        "story": "Elvis rights holders sue Anthropic",
+        "decision": "covered",
+        "reason": "Already covered as 2026-10-24-elvis-rights-holders-sue-anthropic."
+      },
+      {
+        "story": "Thariq leaves Anthropic",
+        "decision": "covered",
+        "reason": "Already queued as 2026-10-25-claude-code-explainer-thariq-leaves-anthropic."
+      },
+      {
+        "story": "Nikon photo contest winner loses title over AI signs (TechSpot, Hacker News)",
+        "decision": "skipped",
+        "reason": "Single source read only in headline form, and the day is full."
+      },
+      {
+        "story": "r/opensource bans AI generated content (The Verge)",
+        "decision": "skipped",
+        "reason": "Niche community rule change, and the day is full."
       }
     ],
     "requests": []
