@@ -5114,5 +5114,59 @@
       }
     ],
     "requests": []
+  },
+  {
+    "run_at": "2026-10-25T21:55:33.494Z",
+    "summary": "Sunday 18:00 New York run: queued the weekly roundup (2026-10-25-week-in-ai, priority 1, review); no open requests, the new NVIDIA RTX Spark link is under 30 minutes old and left for the instant link task, and no new priority 1 story was found.",
+    "considered": [
+      {
+        "story": "Weekly roundup: Anthropic S-1 loss, Claude Duet, Meta Muse downloads, OpenAI offline training, Microsoft MAI-DxO, Google Gmail ads exception",
+        "decision": "queued",
+        "job_id": "2026-10-25-week-in-ai",
+        "priority": 1
+      },
+      {
+        "story": "Mahir's link: NVIDIA RTX Spark Reel (link-2026-10-25-1551)",
+        "decision": "skipped",
+        "reason": "Received 17 minutes before this run; left for the instant link task as CLAUDE.md says."
+      },
+      {
+        "story": "Meta makes advertisers liable for its AI ad mistakes from October 30",
+        "source": "https://startupfortune.com",
+        "decision": "skipped",
+        "reason": "Only one minor source found, and today already has 8 jobs."
+      },
+      {
+        "story": "Gemini 4 Flash and Carbon leaks point to a Google release",
+        "source": "https://nokiapoweruser.com",
+        "decision": "skipped",
+        "reason": "Leak and rumor only, no official confirmation."
+      },
+      {
+        "story": "Apollo economist: AI delivers zero financial payoff to most companies",
+        "source": "https://techcrunch.com/2026/10/25/ai-delivers-zero-financial-payoff-to-most-companies-acco",
+        "decision": "skipped",
+        "reason": "Already skipped by the 14:00 run as economic commentary, and the day is full."
+      },
+      {
+        "story": "Amazon withdraws a $427 million Virginia data center plan",
+        "source": "https://247wallst.com",
+        "decision": "skipped",
+        "reason": "Local data center story with one secondary source; day is full."
+      },
+      {
+        "story": "r/opensource bans AI-built projects",
+        "source": "https://ppc.land",
+        "decision": "skipped",
+        "reason": "Niche community story, low US interest, day is full."
+      },
+      {
+        "story": "Nikon photo contest winner loses title over AI signs",
+        "source": "https://www.techspot.com/news/114171-nikon-photography-contest-winner-loses-title-after-sc",
+        "decision": "skipped",
+        "reason": "Good story but not timely enough to push past today's 8 jobs; can be reconsidered tomorrow."
+      }
+    ],
+    "requests": []
   }
 ]
