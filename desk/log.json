@@ -1,54 +1,5 @@
 [
   {
-    "run_at": "2026-10-18T01:54:31.350Z",
-    "summary": "Late run (21:55 New York): no new links or requests; the two Reel links stay in inbox/skipped.json because src/validate.js still crashes on every Reel; today is at the 8-job cap and no new priority 1 story broke, so nothing was queued.",
-    "considered": [
-      {
-        "story": "Mahir's Reels: Draco fan trailer and AI Tesla Roadster chase",
-        "decision": "skipped",
-        "reason": "src/validate.js still throws 'single is not defined' in validateReel, so both stay in inbox/skipped.json until it is fixed."
-      },
-      {
-        "story": "Sam Altman confirms OpenAI humanoid robot (Engadget)",
-        "source": "https://www.forbes.com/sites/johnkoetsier/2026/09/03/openai-is-making-a-humanoid-robot-everyone-should-have-one/",
-        "decision": "skipped",
-        "reason": "Old news from early September resurfacing in an Engadget feature, not a new announcement."
-      },
-      {
-        "story": "OpenAI math results dump shocks mathematicians (phys.org)",
-        "source": "https://phys.org/news/2026-10-mathocalypse-openai-latest-results-dump.html",
-        "decision": "skipped",
-        "reason": "Reaction piece on OpenAI's October 7 release, not new today, and the day is at the cap."
-      },
-      {
-        "story": "Meta launches Muse Wonder (Mashable)",
-        "decision": "covered",
-        "reason": "Already covered as 2026-10-12-meta-muse-wonder-frontier-models."
-      },
-      {
-        "story": "FTC demands target OpenAI and Anthropic (OpenTools)",
-        "decision": "covered",
-        "reason": "Already covered as 2026-10-15-ftc-subpoenas-openai-anthropic."
-      },
-      {
-        "story": "Pentagon escalates Anthropic dispute (FindArticles)",
-        "decision": "skipped",
-        "reason": "Recap of the ongoing blacklist case with no new development found in major outlets."
-      },
-      {
-        "story": "Anthropic's Jack Clark says AI could vastly boost US GDP (CNBC)",
-        "decision": "skipped",
-        "reason": "Policy remarks, today is at the 8-job cap; can be reconsidered tomorrow."
-      },
-      {
-        "story": "$137 million in AI-generated midterm ads (New York Times)",
-        "decision": "skipped",
-        "reason": "Political and sensitive, single source so far, and today is at the cap."
-      }
-    ],
-    "requests": []
-  },
-  {
     "run_at": "2026-10-18T14:15:14.283Z",
     "summary": "Morning run (10:00 New York): queued 3 jobs for Sunday (Anthropic Nova Scotia data center, Gemini agents beat Minecraft, OpenCode API key breach); the two Reel links stay in inbox/skipped.json because src/validate.js still crashes on every Reel; no open requests.",
     "considered": [
@@ -4723,6 +4674,68 @@
         "story": "Sweden's Government Offices block ChatGPT and Claude",
         "decision": "covered",
         "reason": "Already queued as 2026-10-24-sweden-blocks-chatgpt-claude."
+      }
+    ],
+    "requests": []
+  },
+  {
+    "run_at": "2026-10-25T04:08:20.738Z",
+    "summary": "Midnight New York run (start of Sunday, Oct 25): no open links or requests; queued the Texas lawsuit against OpenAI (priority 1, sensitive, needs Mahir's approval).",
+    "considered": [
+      {
+        "story": "Texas AG Ken Paxton sues OpenAI and Sam Altman, seeks to block minors from ChatGPT",
+        "source": "https://www.texastribune.org/2026/10/23/ken-paxton-chatgpt-openai-lawsuit-texas-attorney-general/",
+        "decision": "queued",
+        "job_id": "2026-10-25-texas-sues-openai-block-chatgpt-kids",
+        "priority": 1
+      },
+      {
+        "story": "Two Claude Code engineers leave Anthropic weeks before its IPO (OfficeChai)",
+        "decision": "skipped",
+        "reason": "Only one source found and it could not be opened, so the facts could not be confirmed."
+      },
+      {
+        "story": "ChatGPT adds real cartoonists' signatures to fake New Yorker cartoons (Nieman Lab)",
+        "source": "https://www.techspot.com/news/114119-chatgpt-accused-plagiarising-artworks-signatures-real-artists-create.html",
+        "decision": "skipped",
+        "reason": "Reported October 7, so it is old news."
+      },
+      {
+        "story": "Gemini comes to Google Maps on Apple CarPlay in the US",
+        "source": "https://www.phocuswire.com/news/technology/google-launches-gemini-google-maps-carplay",
+        "decision": "skipped",
+        "reason": "Launched October 21, four days ago, too old for a news post now."
+      },
+      {
+        "story": "Alpha School AI students miss the 2x growth promise (New York Times)",
+        "decision": "skipped",
+        "reason": "No independent second source found."
+      },
+      {
+        "story": "Meta accused of restricting Lula's content ahead of Brazil runoff (Bloomberg via Techmeme)",
+        "decision": "skipped",
+        "reason": "Politics outside the US with limited appeal for our audience."
+      },
+      {
+        "story": "Apollo's Torsten Slok: no signs of AI payoff outside tech",
+        "source": "https://www.apollo.com/wealth/insights-news/insights/daily-spark/no-signs-of-ai-payoff-outside-the-tech-sector",
+        "decision": "skipped",
+        "reason": "Investor commentary with little consumer appeal."
+      },
+      {
+        "story": "Replit moves most AI spend from Anthropic to OpenAI",
+        "decision": "covered",
+        "reason": "Already covered as 2026-10-17-replit-drops-anthropic-for-openai."
+      },
+      {
+        "story": "Fired OpenAI safety researchers deny leaking, give first interview",
+        "decision": "covered",
+        "reason": "Follow-up to 2026-10-24-openai-fired-researchers-signal-chats."
+      },
+      {
+        "story": "Claude Duet keeps working when your laptop is off",
+        "decision": "covered",
+        "reason": "Already covered as 2026-10-21-claude-duet-works-while-you-sleep."
       }
     ],
     "requests": []
