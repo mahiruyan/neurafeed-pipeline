@@ -5416,5 +5416,76 @@
       }
     ],
     "requests": []
+  },
+  {
+    "run_at": "2026-10-26T19:24:01.305Z",
+    "summary": "Evening run: queued 1 priority 1 story (Microsoft offers voluntary buyouts to about 60,000 employees), marked sensitive so it waits for Mahir's approval, even though the day is past 8 jobs, because priority 1 stories are never skipped. Mahir's OpenAI link from 18:59 UTC was under 30 minutes old, so it is left to the instant link task.",
+    "considered": [
+      {
+        "story": "Microsoft offers voluntary buyouts to about 60,000 employees, roughly a quarter of its workforce",
+        "source": "https://www.cbsnews.com/news/microsoft-buyouts-60000-workers-artificial-intelligence-layoffs/",
+        "decision": "queued",
+        "job_id": "2026-10-26-microsoft-60000-buyouts-ai",
+        "priority": 1
+      },
+      {
+        "story": "Mahir's link: OpenAI post on X (link-2026-10-26-1641)",
+        "source": "https://x.com/openai/status/2114780711664398349",
+        "decision": "skipped",
+        "reason": "Received less than 30 minutes before this run, so the instant link task handles it; the next desk run picks it up if no job exists by then."
+      },
+      {
+        "story": "Anthropic files its S-1 for an IPO (CNBC live updates, $542 billion data center spending)",
+        "decision": "covered",
+        "reason": "Already queued as 2026-10-26-anthropic-files-ipo-ant-nasdaq (its render failed with a fetch error, which the pipeline owns)."
+      },
+      {
+        "story": "Meta's $95 billion equity raise for AI",
+        "decision": "covered",
+        "reason": "Already queued as 2026-10-26-meta-95-billion-stock-sale-ai."
+      },
+      {
+        "story": "Cathedral's AI agents reached Anthropic's internal systems",
+        "decision": "covered",
+        "reason": "Already queued as 2026-10-26-cathedral-ai-agents-broke-into-anthropic."
+      },
+      {
+        "story": "Google DeepMind model called Hurricane Isaias's Florida landfall",
+        "decision": "covered",
+        "reason": "Already posted as 2026-10-26-google-ai-called-hurricane-isaias-florida."
+      },
+      {
+        "story": "Cohere says Qwen3.8 Flash Next tried to exfiltrate a probe file while claiming it would run no tools",
+        "source": "https://cohere.com/blog/concerning-behaviour-popular-open-weight-ai-model",
+        "decision": "skipped",
+        "reason": "Single vendor blog with no second source yet, and the day is already over its job count."
+      },
+      {
+        "story": "Bedrock Robotics raises $600 million for autonomous excavators",
+        "decision": "skipped",
+        "reason": "Funding round from a press release, priority 2 at best, and the day is full."
+      },
+      {
+        "story": "Realbotix launches Echo humanoid robots from $11,950",
+        "decision": "skipped",
+        "reason": "Small trade outlet only and the day is full; a candidate for a robotics post another day."
+      },
+      {
+        "story": "Google paper: LLMs self improve from topic labels alone",
+        "decision": "skipped",
+        "reason": "Research paper without news coverage yet, too technical for the feed."
+      },
+      {
+        "story": "Oracle launches 25 Claw powered Fusion agentic apps",
+        "decision": "skipped",
+        "reason": "Enterprise product announcement with little US consumer interest."
+      },
+      {
+        "story": "Utility post for today",
+        "decision": "skipped",
+        "reason": "Today is already past 8 jobs; the Gemini Audio Overview how to posted today."
+      }
+    ],
+    "requests": []
   }
 ]
