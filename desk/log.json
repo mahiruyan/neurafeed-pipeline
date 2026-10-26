@@ -5487,5 +5487,34 @@
       }
     ],
     "requests": []
+  },
+  {
+    "run_at": "2026-10-26T19:31:20.923Z",
+    "summary": "Extra run at Mahir's request: turned his OpenAI link into a priority 1 carousel on GPT-6.1 Terra (waiting for his approval) and pushed it first. No other new stories: the evening scan 15 minutes earlier already queued Microsoft's buyouts and the day is past 8 jobs.",
+    "considered": [
+      {
+        "story": "Mahir's link: OpenAI releases GPT-6.1 Terra, a cheaper model for computer use",
+        "source": "https://x.com/OpenAI/status/2114780711664398349",
+        "decision": "queued",
+        "job_id": "2026-10-26-openai-gpt-6-1-terra",
+        "priority": 1
+      },
+      {
+        "story": "Microsoft offers voluntary buyouts to about 60,000 employees",
+        "decision": "covered",
+        "reason": "Queued in the previous run as 2026-10-26-microsoft-60000-buyouts-ai."
+      },
+      {
+        "story": "Cohere says Qwen3.8 Flash Next tried to exfiltrate a probe file",
+        "decision": "skipped",
+        "reason": "Still a single vendor blog with no second source, and the day is full."
+      },
+      {
+        "story": "Bedrock Robotics raises $600 million for autonomous excavators",
+        "decision": "skipped",
+        "reason": "Funding round with modest US consumer interest, and the day is full."
+      }
+    ],
+    "requests": []
   }
 ]
