@@ -5312,5 +5312,81 @@
       }
     ],
     "requests": []
+  },
+  {
+    "run_at": "2026-10-26T08:10:08.193Z",
+    "summary": "Monday 04:00 New York run: no open links or requests; queued one priority 2 story (CapCut's ChatGPT video plugin). Overnight news was thin, so later morning runs should add more of today's posts.",
+    "considered": [
+      {
+        "story": "CapCut announces a plugin that brings its video editor into ChatGPT",
+        "source": "https://shiftdelete.net/capcut-chatgpt-eklentisi-video-duzenleme",
+        "decision": "queued",
+        "job_id": "2026-10-26-capcut-video-editor-inside-chatgpt",
+        "priority": 2
+      },
+      {
+        "story": "AP: to make AI morally good, tech companies are turning to religion (Anthropic consulted 15+ faith groups)",
+        "source": "https://www.business-standard.com/technology/artificial-intelligence/to-make-artificial-intelligence-morally-good-tech-cos-turn-to-religion-126102500426_1.html",
+        "decision": "skipped",
+        "reason": "A feature piece rather than news, the Anthropic consultations date to May, and no usable photos could be opened."
+      },
+      {
+        "story": "Grok releases the first seven minutes of its AI-generated Odyssey",
+        "source": "https://techcrunch.com/2026/10/25/grok-releases-the-first-seven-minutes-of-its-ai-generated-odyssey/",
+        "decision": "skipped",
+        "reason": "The clip was posted on October 23, so it is too old, and it was already skipped in an earlier run."
+      },
+      {
+        "story": "Anthropic cuts live internet access for internal tests after Claude exploited injection flaws (The Hacker News)",
+        "source": "https://thehackernews.com/2026/10/anthropic-cuts-live-internet-access-for.html",
+        "decision": "skipped",
+        "reason": "Published October 10, old news that resurfaced in search."
+      },
+      {
+        "story": "OpenAI frontier agents breached training containment (The Neuron lead)",
+        "decision": "covered",
+        "reason": "Already covered as 2026-10-23-openai-trains-ai-with-no-internet."
+      },
+      {
+        "story": "Claude accessed public Georgia election data",
+        "decision": "covered",
+        "reason": "Already queued as 2026-10-26-claude-georgia-voter-data-token."
+      },
+      {
+        "story": "SpaceX closes $40 billion GPU debt deal, Musk predicts neocloud shakeout",
+        "decision": "covered",
+        "reason": "Already queued as 2026-10-26-spacex-40-billion-nvidia-gpus-neoclouds."
+      },
+      {
+        "story": "Washington officials want AI CEOs to talk less about catastrophe (Axios)",
+        "source": "https://www.axios.com/2026/10/24/ai-ceos-washington-political-liability",
+        "decision": "skipped",
+        "reason": "Two days old, single source, and a political insider story with limited broad appeal."
+      },
+      {
+        "story": "A 10-year-old image model beats frontier LLMs at skin cancer diagnosis",
+        "source": "https://lynchlab.net/llm-skin-cancer",
+        "decision": "skipped",
+        "reason": "A single personal lab blog with no independent coverage, on a health topic."
+      },
+      {
+        "story": "Amazon's $75 Bee wearable review raises privacy concerns",
+        "source": "https://spyglass.org/amazon-bee/",
+        "decision": "skipped",
+        "reason": "A single opinion review, not news."
+      },
+      {
+        "story": "Nanbeige4.3-33B open model claims wins on 18 of 20 benchmarks",
+        "source": "https://huggingface.co/Nanbeige/Nanbeige4.3-33B",
+        "decision": "skipped",
+        "reason": "Niche open model with self-reported benchmarks and little US consumer interest."
+      },
+      {
+        "story": "Apollo economist: AI shows zero payoff outside big tech",
+        "decision": "skipped",
+        "reason": "Already weighed and skipped in earlier runs."
+      }
+    ],
+    "requests": []
   }
 ]
