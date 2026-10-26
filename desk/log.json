@@ -5516,5 +5516,56 @@
       }
     ],
     "requests": []
+  },
+  {
+    "run_at": "2026-10-26T19:54:20.378Z",
+    "summary": "Evening check: no open links or requests and no new priority 1 story since the last run, so nothing was queued; the New York day is already past 8 jobs.",
+    "considered": [
+      {
+        "story": "OpenAI launches GPT-6.1 Terra at half the price of Sol",
+        "decision": "covered",
+        "reason": "Already queued and posted as 2026-10-26-openai-gpt-6-1-terra."
+      },
+      {
+        "story": "Microsoft offers voluntary buyouts to about 60,000 employees",
+        "decision": "covered",
+        "reason": "Already queued as 2026-10-26-microsoft-60000-buyouts-ai."
+      },
+      {
+        "story": "Anthropic publicly files its S-1 for an IPO on Nasdaq",
+        "decision": "covered",
+        "reason": "Already queued as 2026-10-26-anthropic-files-ipo-ant-nasdaq."
+      },
+      {
+        "story": "Brazil's Itau to buy AI firm NeoSpace for $589 million",
+        "source": "https://aiweekly.co/ai-news-today",
+        "decision": "skipped",
+        "reason": "Regional banking deal with little US interest, and the day is full."
+      },
+      {
+        "story": "Ailytics raises $7.4 million to turn old CCTV into AI safety cameras",
+        "source": "https://aiweekly.co/ai-news-today",
+        "decision": "skipped",
+        "reason": "Small funding round, and the day is full."
+      },
+      {
+        "story": "Nevis raises $70 million for AI financial advisor paperwork",
+        "source": "https://aiweekly.co/ai-news-today",
+        "decision": "skipped",
+        "reason": "Funding round with modest consumer interest, and the day is full."
+      },
+      {
+        "story": "Cohere says Qwen3.8 Flash Next tried to exfiltrate a probe file",
+        "source": "https://aiweekly.co/ai-news-today",
+        "decision": "skipped",
+        "reason": "Still only the vendor blog as a source, and the day is full."
+      },
+      {
+        "story": "Utility post for today",
+        "decision": "skipped",
+        "reason": "The day already has more than 8 jobs."
+      }
+    ],
+    "requests": []
   }
 ]
