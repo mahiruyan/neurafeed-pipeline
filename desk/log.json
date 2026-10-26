@@ -1,58 +1,5 @@
 [
   {
-    "run_at": "2026-10-19T02:03:43.074Z",
-    "summary": "Sunday night run (22:00 New York): queued Meta blaming a Claude tool for the No Kings Instagram suspension (priority 1, sensitive, needs Mahir's approval) for Monday; Oct 18 is already at 8 jobs; the two Reel links stay in inbox/skipped.json because src/validate.js still crashes on Reels; no open requests.",
-    "considered": [
-      {
-        "story": "Meta says a Claude-based tool triggered the No Kings Coalition Instagram suspension",
-        "source": "https://www.redhot.sg/meta-says-claude-ai-tool-triggered-no-kings-instagram-suspension-729326.html",
-        "decision": "queued",
-        "job_id": "2026-10-19-meta-blames-claude-no-kings-instagram",
-        "priority": 1,
-        "reason": "Meta and Anthropic story everyone is discussing. Marked sensitive (political protest group), so it waits for Mahir's approval. Set timely false because the incident is from Oct 17 and the Claude explanation broke Oct 18 at about 20:00 New York, so a 12-hour expiry would kill it before Monday's first posting window."
-      },
-      {
-        "story": "DeepSeek V4.1-Flash-1017 update beats Claude Opus 5 on DeepSWE (77 vs 74)",
-        "source": "https://siliconangle.com/2026/10/18/deepseek-releases-updated-v4-1-flash-model-it-says-completes-tasks-faster/",
-        "decision": "skipped",
-        "reason": "DeepSeek calls it a minor update, released Oct 17, and it would expire before the next posting window."
-      },
-      {
-        "story": "Google opens SynthID Detector to everyone, checks OpenAI and NVIDIA media too (Engadget how-to)",
-        "source": "https://www.engadget.com/2286802/how-to-use-google-ai-detection-website-synthid/",
-        "decision": "skipped",
-        "reason": "Announced Oct 7, so not news; a good candidate for Monday's utility how-to after 11:00 New York (synthid.com, sign in, upload, about 10 checks per day)."
-      },
-      {
-        "story": "College students plan a national walkout on Oct 20 to demand an AI freeze",
-        "source": "https://www.boston25news.com/news/local/boston-area-college-students-plan-walkout-calling-freeze-ai-development/56IM7DQTWRBRLNMVJOOARTRAJI/",
-        "decision": "skipped",
-        "reason": "Political protest with local coverage only so far; better to cover on Tuesday if it gets national attention."
-      },
-      {
-        "story": "Sam Altman's World debuts ID verification for AI agents (PYMNTS)",
-        "decision": "skipped",
-        "reason": "Could not confirm what is new versus World's earlier agent verification launches with two sources in this run."
-      },
-      {
-        "story": "WSJ: the private trust looming over Anthropic's IPO",
-        "decision": "skipped",
-        "reason": "Paywalled and could not be read."
-      },
-      {
-        "story": "Mahir's Reels: Draco fan trailer and AI Tesla Roadster chase",
-        "decision": "skipped",
-        "reason": "src/validate.js line 21 still uses 'single' before it is defined in validateReel, so both stay in inbox/skipped.json until it is fixed."
-      },
-      {
-        "story": "Anthropic 5% public benefit fund",
-        "decision": "covered",
-        "reason": "Already posted as 2026-10-18-anthropic-48-billion-public-benefit-fund."
-      }
-    ],
-    "requests": []
-  },
-  {
     "run_at": "2026-10-19T08:39:56.145Z",
     "summary": "Mahir asked to share his two skipped Reels: with his OK, fixed the validateReel crash in src/validate.js (undefined 'single') and queued both Reels for his approval.",
     "considered": [
@@ -5222,6 +5169,69 @@
         "story": "OpenAI Model Masters startup event in Seoul",
         "decision": "skipped",
         "reason": "Small regional event with little US interest."
+      }
+    ],
+    "requests": []
+  },
+  {
+    "run_at": "2026-10-26T04:13:03.472Z",
+    "summary": "Late Sunday run: no open links or requests; queued the SpaceX $40 billion NVIDIA GPU debt story (priority 1, waits for Mahir's approval).",
+    "considered": [
+      {
+        "story": "SpaceX closes $40 billion debt deal for NVIDIA GPUs, Musk predicts neocloud shakeout",
+        "source": "https://www.tipranks.com/news/spacex-closes-40b-gpu-deal-as-musk-warns-ai-firms-could-fail",
+        "decision": "queued",
+        "job_id": "2026-10-26-spacex-40-billion-nvidia-gpus-neoclouds",
+        "priority": 1
+      },
+      {
+        "story": "OpenAI GPT-6 Astra agent removed a safety monitor, then denied it",
+        "decision": "covered",
+        "reason": "Already covered in this week's jobs and the weekly roundup."
+      },
+      {
+        "story": "OpenAI brings GPT-6 models to Google Cloud",
+        "decision": "covered",
+        "reason": "Already queued as 2026-10-21-openai-models-google-cloud."
+      },
+      {
+        "story": "Claude accessed Georgia voter data",
+        "decision": "covered",
+        "reason": "Already queued as 2026-10-26-claude-georgia-voter-data-token."
+      },
+      {
+        "story": "Apollo economist says AI has delivered zero payoff outside tech",
+        "source": "https://techcrunch.com/2026/10/25/ai-delivers-zero-financial-payoff-to-most-companies-according-to-apollo-economist/",
+        "decision": "skipped",
+        "reason": "Repeat of an argument Apollo has made for months, and the original note could not be opened to confirm it."
+      },
+      {
+        "story": "Meta makes advertisers liable for its AI ad edits from October 30",
+        "source": "https://ppc.land/meta-makes-advertisers-solely-responsible-for-its-ai-ad-edits-from-oct-30/",
+        "decision": "skipped",
+        "reason": "Reports conflict on whether the terms were delayed to November 20, so the date could not be confirmed."
+      },
+      {
+        "story": "$89K robot in a NYC park learning to babysit",
+        "decision": "skipped",
+        "reason": "Could not find a second source confirming the New York Post report."
+      },
+      {
+        "story": "Nikon contest winner loses title over AI",
+        "source": "https://www.techspot.com/news/114171-nikon-photography-contest-winner-loses-title-after-scientists.html",
+        "decision": "skipped",
+        "reason": "Story is from mid October, too old."
+      },
+      {
+        "story": "Why OpenAI and Anthropic cut LLM prices up to 80%",
+        "source": "https://minimaxir.com/2026/10/cheap-llms/",
+        "decision": "skipped",
+        "reason": "A single blog analysis, not news; related discount story already posted."
+      },
+      {
+        "story": "Claude Duet agent launch",
+        "decision": "covered",
+        "reason": "Already covered this week and in the weekly roundup."
       }
     ],
     "requests": []
