@@ -1,69 +1,5 @@
 [
   {
-    "run_at": "2026-10-19T17:55:44.218Z",
-    "summary": "Afternoon run: no open links or requests; nothing queued because today already has 8 jobs (the daily cap) and 3 approved posts are still waiting for the 2 remaining slots tonight, and no new priority 1 story broke since the noon run.",
-    "considered": [
-      {
-        "story": "Meta's Muse agent gave a Facebook Marketplace seller's home address to a buyer (Fortune/AP feature)",
-        "source": "https://fortune.com/2026/10/19/meta-muse-ai-agent-facebook-marketplace-home-address-privacy/",
-        "decision": "skipped",
-        "reason": "The incident itself was reported by Mashable on September 28, so today's piece is a feature on an old event, and today is at the 8 job cap."
-      },
-      {
-        "story": "Claude submitted a false homicide tip to Philadelphia police",
-        "source": "https://www.foxnews.com/tech/anthropic-ai-sends-fake-murder-tip-philadelphia-police",
-        "decision": "covered",
-        "reason": "Already covered as 2026-10-12-anthropic-claude-false-police-tip; today's Fox piece is a re-run of the October 10 story."
-      },
-      {
-        "story": "Ex-OpenAI engineer in bugging case had Saudi government support, prosecutors say (BBC, CBS, FT)",
-        "decision": "covered",
-        "reason": "Already posted today as 2026-10-19-openai-bug-suspect-saudi-royal-whatsapp."
-      },
-      {
-        "story": "Hacker used AI agents to break into John Deere, SharkNinja and 100+ sites (The Verge)",
-        "decision": "covered",
-        "reason": "Already queued as 2026-10-19-ai-agents-hacked-100-sites-50-each."
-      },
-      {
-        "story": "WhatsApp help pages leaked hidden instructions for a Meta chatbot",
-        "source": "https://www.wired.com/story/whatsapp-help-pages-leaked-hidden-instructions-for-a-meta-chatbot/",
-        "decision": "skipped",
-        "reason": "Interesting but niche prompt leak, not a must post priority 1 story, and today is at the 8 job cap."
-      },
-      {
-        "story": "People are using AI to make their smart TVs dumb again",
-        "source": "https://techcrunch.com/2026/10/19/people-are-using-ai-to-make-their-smart-tvs-dumb-again/",
-        "decision": "skipped",
-        "reason": "Good list format idea but a trend piece with no deadline, and today is at the cap; can be considered as an evergreen post on a lighter day."
-      },
-      {
-        "story": "AI lab offers free plumbing and HVAC repairs to record training video for robots",
-        "source": "https://www.tomshardware.com/tech-industry/artificial-intelligence/ai-lab-offers-free-plumbing-and-hvac-repairs-across-three-cities-to-train-ai-robots-wearable-sensors-record-video-of-repair-work-for-robotics-training-free-services-also-include-electrical-work-air-duct-cleaning-and-carpet-cleaning",
-        "decision": "skipped",
-        "reason": "Fun priority 2 story, but no slot left under today's cap."
-      },
-      {
-        "story": "Mistral releases Timestral time series models and partners with CERN",
-        "source": "https://mistral.ai/news/timestral/",
-        "decision": "skipped",
-        "reason": "Developer and science news with little US mainstream interest."
-      },
-      {
-        "story": "DHS orders civilian federal agencies to remove DeepSeek products",
-        "source": "https://techstartups.com/2026/10/19/top-tech-news-today-october-19-2026-anthropic-deepseek-idealab-meta-microsoft-more/",
-        "decision": "skipped",
-        "reason": "Political and only seen in a roundup; no primary report found in this run, and today is at the cap."
-      },
-      {
-        "story": "S&P Global warns hyperscalers may carry more AI-linked debt than known (Reuters)",
-        "decision": "skipped",
-        "reason": "Financial analysis with limited consumer appeal."
-      }
-    ],
-    "requests": []
-  },
-  {
     "run_at": "2026-10-19T20:00:01.264Z",
     "summary": "Late afternoon run (16:00 New York): no open links or requests; nothing queued because today already has 8 news jobs (the cap) plus 2 link Reels, and no new priority 1 story broke since the last run.",
     "considered": [
@@ -5413,6 +5349,70 @@
         "story": "Utility post for today",
         "decision": "skipped",
         "reason": "The Gemini Audio Overview how to posted today at 11:01 New York time and the day's job count is now at 8."
+      }
+    ],
+    "requests": []
+  },
+  {
+    "run_at": "2026-10-26T18:03:03.211Z",
+    "summary": "Afternoon run: no open links or requests; queued 1 priority 1 story (Anthropic's public IPO filing, Nasdaq ticker ANT), waiting for Mahir's approval, even though the day already had 8 jobs, because priority 1 stories are never skipped.",
+    "considered": [
+      {
+        "story": "Anthropic publicly files its S-1 for an IPO on Nasdaq under the ticker ANT",
+        "source": "https://techcrunch.com/2026/10/26/anthropic-officially-files-for-its-public-debut/",
+        "decision": "queued",
+        "job_id": "2026-10-26-anthropic-files-ipo-ant-nasdaq",
+        "priority": 1
+      },
+      {
+        "story": "Anthropic's draft S-1 shows an $80.7 billion loss",
+        "decision": "covered",
+        "reason": "The leaked draft was posted as 2026-10-21-anthropic-s1-80-billion-loss; today's job leads with the new public filing, ticker, founder control and first operating profit instead."
+      },
+      {
+        "story": "Claude accessed Georgia voter data (Telegraph, CBS News follow ups)",
+        "decision": "covered",
+        "reason": "Already handled as 2026-10-26-claude-georgia-voter-data-token."
+      },
+      {
+        "story": "Former DOGE staffers' startup Cathedral claims it hacked Anthropic",
+        "decision": "covered",
+        "reason": "Already queued as 2026-10-26-cathedral-ai-agents-broke-into-anthropic."
+      },
+      {
+        "story": "Elvis Presley rights holders sue Anthropic over 274 songs",
+        "decision": "covered",
+        "reason": "Already covered as 2026-10-24-elvis-rights-holders-sue-anthropic."
+      },
+      {
+        "story": "OpenAI cuts live internet access during frontier model training",
+        "decision": "covered",
+        "reason": "Already covered as 2026-10-23-openai-trains-ai-with-no-internet."
+      },
+      {
+        "story": "Meta plans a $95 billion stock sale for AI",
+        "decision": "covered",
+        "reason": "Already queued as 2026-10-26-meta-95-billion-stock-sale-ai."
+      },
+      {
+        "story": "Google puts Gemini 4 Argon on Cloud for enterprise",
+        "decision": "skipped",
+        "reason": "Only a small regional trade outlet in the leads, and the day is already over its job count."
+      },
+      {
+        "story": "OpenAI, Anthropic and Google DeepMind join a UK AI biosecurity mission",
+        "decision": "skipped",
+        "reason": "UK government program with limited US interest, and the day is full."
+      },
+      {
+        "story": "Brown student maps the hidden global labor behind AI",
+        "decision": "skipped",
+        "reason": "University feature rather than news, and the day is full."
+      },
+      {
+        "story": "Unconventional AI buys Israeli chip startup NeuReality",
+        "decision": "skipped",
+        "reason": "Small chip acquisition with little US consumer interest."
       }
     ],
     "requests": []
