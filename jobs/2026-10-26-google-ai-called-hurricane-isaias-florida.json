@@ -1,0 +1,201 @@
+{
+  "id": "2026-10-26-google-ai-called-hurricane-isaias-florida",
+  "created_at": "2026-10-26T16:25:00Z",
+  "story_time": "2026-10-26T09:00:00Z",
+  "timely": false,
+  "sensitive": false,
+  "priority": 2,
+  "review": true,
+  "site_category": "models",
+  "sources": [
+    {
+      "name": "NPR (WUSF)",
+      "url": "https://www.kuow.org/npr-news/2026-10-26/how-ai-is-transforming-hurricane-forecasts"
+    },
+    {
+      "name": "Google DeepMind",
+      "url": "https://deepmind.google/blog/how-were-supporting-better-tropical-cyclone-prediction-with-ai/"
+    },
+    {
+      "name": "Michael Lowry, Eye on the Tropics",
+      "url": "https://michaelrlowry.substack.com/p/this-hurricane-season-two-forecast"
+    }
+  ],
+  "threads_text": "Physics models first sent Hurricane Isaias toward Louisiana. Google DeepMind's AI called the Florida Panhandle, and the storm came ashore near Destin. Forecasters love its record but admit they cannot explain why it works. Would you trust a forecast nobody can explain?",
+  "caption": "Hurricane Isaias made landfall near Destin, Florida, in early October as a Category 2 storm.\nConventional models first pointed it toward southeastern Louisiana. Google DeepMind's AI model called the western Florida Panhandle.\nThe National Hurricane Center has used the model since 2025, and forecasters still blend it with physics models and their own judgment.\n\nWould you trust a hurricane forecast from an AI nobody can fully explain?\n\nFollow @neurafeed.ai for daily AI news.\n\nSource: NPR · Photos: NOAA, Gerald Herbert / AP, Google DeepMind, NOAA/CIRA",
+  "slides": [
+    {
+      "kind": "cover",
+      "headline": "Classic forecast models sent Hurricane Isaias toward Louisiana. Google's AI called *Florida*, and it was right",
+      "image": {
+        "url": "https://npr-brightspot.s3.amazonaws.com/cf/87/99e0849e47e2813d852eb94b5f40/ap26282622911128.jpg",
+        "credit": "NOAA via AP",
+        "fallback_urls": [
+          "https://npr.brightspotcdn.com/dims4/default/0c8847c/2147483647/strip/true/crop/2000x1333+0+0/resize/880x587!/quality/90/?url=https%3A%2F%2Fnpr.brightspotcdn.com%2Fdims3%2Fdefault%2Fstrip%2Ffalse%2Fcrop%2F2000x1333%200%200%2Fresize%2F2000x1333%21%2Fquality%2F85%2Fformat%2Fwebp%2F%3Furl%3Dhttp%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2Fcf%2F87%2F99e0849e47e2813d852eb94b5f40%2Fap26282622911128.jpg"
+        ]
+      },
+      "pos": "center center",
+      "badges": [
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Google_%22G%22_logo.svg/500px-Google_%22G%22_logo.svg.png",
+          "fit": "contain"
+        }
+      ],
+      "badge_side": "right",
+      "badge_border": "white"
+    },
+    {
+      "kind": "card",
+      "heading": "Louisiana or *Florida*?",
+      "paras": [
+        "Hurricane Isaias came ashore near Destin, Florida, in early October as a Category 2 storm.",
+        "Physics based models first sent it west toward southeastern Louisiana. Google DeepMind's AI model called the western Florida Panhandle."
+      ],
+      "image": {
+        "url": "https://npr-brightspot.s3.amazonaws.com/5f/73/aab5522e48cb9fbe7d26d9e7c829/ap26283478000101.jpg",
+        "credit": "Gerald Herbert / AP",
+        "fallback_urls": [
+          "https://npr.brightspotcdn.com/dims4/default/737b02a/2147483647/strip/true/crop/6000x4000+0+0/resize/880x587!/quality/90/?url=https%3A%2F%2Fnpr.brightspotcdn.com%2Fdims3%2Fdefault%2Fstrip%2Ffalse%2Fcrop%2F6000x4000%200%200%2Fresize%2F6000x4000%21%2Fquality%2F85%2Fformat%2Fwebp%2F%3Furl%3Dhttp%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2F5f%2F73%2Faab5522e48cb9fbe7d26d9e7c829%2Fap26283478000101.jpg"
+        ]
+      }
+    },
+    {
+      "kind": "card",
+      "heading": "It learned from *past storms*",
+      "paras": [
+        "Classic models solve physics equations with live data like pressure, humidity and wind shear.",
+        "Google's model learned patterns from history instead: records of nearly 5,000 cyclones over the past 45 years."
+      ],
+      "image": {
+        "url": "https://lh3.googleusercontent.com/9v4S93hIgs9kgYHxshjUc9D-VrOJ36qPdAVprcrSQcoOmyJRCS3fz6FGecmqhfnRZFSO457EhlWrSdyNtWEyM2N0lVy1lIUpiFVGOLNP6fHaQgBaElo=w1440-h810-n-nu",
+        "credit": "Google DeepMind",
+        "fallback_urls": [
+          "https://lh3.googleusercontent.com/3NWomMM84wDIHHumKMG9O-jupuYqtmVzTzfqpjF79qxwfmR2vubz5qG4h9FzpcPg7NKdIXtXr3IlBWwiGlwrvF2BHYjmh3vsfRlYq2Bhh7mzVLZznQ=w1200-h630-n-nu-rw"
+        ]
+      }
+    },
+    {
+      "kind": "card",
+      "heading": "Forecasters already *rely on it*",
+      "paras": [
+        "The National Hurricane Center began using the model in its official forecasts in 2025. By season's end it ranked among the best for path and strength.",
+        {
+          "t": "On Isaias it led on track but trailed the center's blended forecast on strength.",
+          "strong": true
+        }
+      ],
+      "image": {
+        "url": "https://lh3.googleusercontent.com/z3RtVV-EUuIRNZQkKDSkjxk6bAOTiAwC4tFvriyZ5GvA3MTNekYtkio2MwujmjF_A-w6EjKncdPN7yoUFCbWLww7lVvu4guQV9A6-4IXXESwW5selLg=w1440",
+        "credit": "Google DeepMind",
+        "fit": "contain"
+      }
+    },
+    {
+      "kind": "card",
+      "heading": "Nobody knows *why* it works",
+      "paras": [
+        "Miami meteorologist Michael Lowry calls it \"the best performing computer model that we've ever seen.\"",
+        "Researcher Brian McNoldy says forecasters are a little uncomfortable because they cannot see why it gets the right answer."
+      ],
+      "image": {
+        "url": "https://substackcdn.com/image/fetch/$s_!b1-c!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F1ea04a5b-f65d-4e19-ac3d-f459545b3f0e_2000x1544.png",
+        "credit": "NOAA/CIRA"
+      }
+    },
+    {
+      "kind": "cta",
+      "hook": "Follow to see where AI starts making calls that keep people safe, like where the next hurricane hits."
+    }
+  ],
+  "site_article": {
+    "headline": "Google DeepMind's AI model called Hurricane Isaias's Florida landfall as physics models pointed to Louisiana",
+    "dek": "The National Hurricane Center now blends the AI model into official forecasts, though forecasters say they cannot explain why it works.",
+    "summary": "Google DeepMind's AI hurricane model forecast that Hurricane Isaias would strike the western Florida Panhandle while conventional models first pointed toward southeastern Louisiana, NPR reported on October 26, 2026. The storm made landfall near Destin, Florida, as a Category 2 hurricane.",
+    "seo_title": "Google DeepMind AI model called Hurricane Isaias landfall",
+    "seo_description": "Google DeepMind's AI model forecast Hurricane Isaias would hit the Florida Panhandle while physics models pointed to Louisiana, NPR reported.",
+    "answer_summary": "Google DeepMind's AI model correctly forecast that Hurricane Isaias would hit the western Florida Panhandle, according to NPR, while conventional physics based models first pointed toward southeastern Louisiana.",
+    "tags": [
+      "Google DeepMind",
+      "Hurricane Isaias",
+      "Weather forecasting",
+      "National Hurricane Center",
+      "AI models"
+    ],
+    "hero_alt": "Satellite image of Hurricane Isaias approaching the Gulf Coast of Alabama and Florida.",
+    "paragraphs": [
+      {
+        "kind": "fact",
+        "text": "Google DeepMind's artificial intelligence weather model forecast that Hurricane Isaias would strike the western Florida Panhandle at a time when conventional forecast models were pointing toward southeastern Louisiana, according to a report by WUSF's Jessica Meszaros published by NPR on October 26, 2026. Isaias made landfall near Destin, Florida, in early October as a Category 2 hurricane.",
+        "sources": [
+          0
+        ]
+      },
+      {
+        "kind": "fact",
+        "text": "The National Hurricane Center began folding the Google DeepMind model into its official forecasts in 2025, NPR reported, and by the end of that season the model was among the best performers for predicting both the path and the strength of storms. Forecasters at the center use a blend of AI and traditional models rather than relying on any single system.",
+        "sources": [
+          0
+        ]
+      },
+      {
+        "kind": "heading",
+        "text": "How the AI model differs"
+      },
+      {
+        "kind": "fact",
+        "text": "Traditional physics based models take in real time measurements such as temperature, humidity, pressure and wind shear and run them through complex equations. AI models lean on history instead, finding patterns across thousands of past storms, according to NPR.",
+        "sources": [
+          0
+        ]
+      },
+      {
+        "kind": "fact",
+        "text": "Google DeepMind described the system in a June 2025 post as an experimental tropical cyclone model built on stochastic neural networks. The company said it predicts a storm's formation, track, intensity, size and shape, and produces 50 possible scenarios up to 15 days ahead. It was trained on a reanalysis dataset that reconstructs past global weather and on a database of track, intensity, size and wind radii for nearly 5,000 cyclones observed over the past 45 years. Google DeepMind said at the time that the hurricane center was validating the model and that its outputs were research predictions, not official warnings.",
+        "sources": [
+          1
+        ]
+      },
+      {
+        "kind": "fact",
+        "text": "On Isaias, the DeepMind model beat other models on the storm's track but did not match the hurricane center's blended forecast on intensity, NPR reported. NPR named the DeepMind model and an AI model from the European Centre for Medium Range Weather Forecasts, based in the United Kingdom, as the two most accurate AI models so far.",
+        "sources": [
+          0
+        ]
+      },
+      {
+        "kind": "heading",
+        "text": "Strong results, open questions"
+      },
+      {
+        "kind": "fact",
+        "text": "Michael Lowry, a Miami based meteorologist who previously advised FEMA and the hurricane center, told NPR the model was the best performing computer model forecasters have seen. In a November 2025 newsletter, Lowry wrote that a preliminary analysis by James Franklin found DeepMind was the top performing model for track and intensity in the Atlantic and Eastern Pacific during the 2025 season, while the U.S. GFS was the worst performing public forecast model of that season.",
+        "sources": [
+          0,
+          2
+        ]
+      },
+      {
+        "kind": "fact",
+        "text": "Forecasters also described a drawback. Lowry told NPR that forecasters do not know why the AI models get a forecast right or wrong, and Brian McNoldy, a hurricane researcher at the University of Miami, said the lack of an explanation makes scientists uncomfortable. Lowry added that AI models can be updated in months or weeks, while traditional models are updated about once a year at best.",
+        "sources": [
+          0
+        ]
+      },
+      {
+        "kind": "fact",
+        "text": "Hurricane center director Michael Brennan told NPR that every storm brings different forecast challenges and that intensity forecast errors are about half of what they were around the time of Hurricane Katrina. The center issues forecast updates every six hours during active hurricanes.",
+        "sources": [
+          0
+        ]
+      },
+      {
+        "kind": "analysis",
+        "text": "In NeuraFeed's reading, the Isaias forecast shows how far AI weather models have moved from research projects into public safety work. A privately built model now sits inside the process the federal government uses to warn coastal residents, while the people who rely on it still cannot see how it reaches its answers. That gap matters most for intensity, where the model has been weaker and where human forecasters still lean on the blended consensus."
+      },
+      {
+        "kind": "why_it_matters",
+        "text": "The next test is the hurricane center's official verification of the 2026 season, which will show whether the DeepMind model's edge on storm tracks held across every storm and whether its intensity forecasts improved."
+      }
+    ]
+  }
+}
