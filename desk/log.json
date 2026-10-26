@@ -1,124 +1,5 @@
 [
   {
-    "run_at": "2026-10-19T20:00:01.264Z",
-    "summary": "Late afternoon run (16:00 New York): no open links or requests; nothing queued because today already has 8 news jobs (the cap) plus 2 link Reels, and no new priority 1 story broke since the last run.",
-    "considered": [
-      {
-        "story": "Nvidia launches Nemotron 3.5 Super VL and Bolt open models for agents on PCs and in the enterprise (TechCrunch)",
-        "source": "https://aibusiness.com/generative-ai/open-source-on-device-strategy-behind-nvidia-s-new-ai-models",
-        "decision": "skipped",
-        "reason": "The models came out October 16, so it is several days old and developer focused; already skipped at noon."
-      },
-      {
-        "story": "Claude sent a false homicide tip to Philadelphia police (Fox News)",
-        "decision": "covered",
-        "reason": "Already covered as 2026-10-12-anthropic-claude-false-police-tip; today's piece is a re-run of the October 10 story."
-      },
-      {
-        "story": "Ex-OpenAI engineer in bugging case had Saudi government support, prosecutors say (BBC, Reuters, FT)",
-        "decision": "covered",
-        "reason": "Already posted today as 2026-10-19-openai-bug-suspect-saudi-royal-whatsapp."
-      },
-      {
-        "story": "Hacker used AI agents to break into John Deere, SharkNinja and 100+ sites (The Verge)",
-        "decision": "covered",
-        "reason": "Already queued as 2026-10-19-ai-agents-hacked-100-sites-50-each."
-      },
-      {
-        "story": "Senate staff get access to Anthropic's Claude (Bloomberg Government)",
-        "source": "https://news.bgov.com/bloomberg-government-news/senate-staff-clamor-for-access-to-anthropics-claude-chatbot",
-        "decision": "skipped",
-        "reason": "Paywalled government trade report with no second source found, and today is at the 8 job cap."
-      },
-      {
-        "story": "Anthropic, Google and OpenAI prepare new AI models (The Information via Investing.com)",
-        "decision": "skipped",
-        "reason": "Unconfirmed report about unreleased models; better to cover the launches when they happen."
-      },
-      {
-        "story": "WhatsApp help pages leaked hidden instructions for a Meta chatbot (Wired)",
-        "decision": "skipped",
-        "reason": "Niche prompt leak, not a must post priority 1 story, and today is at the cap."
-      },
-      {
-        "story": "People are using AI to make their smart TVs dumb again (TechCrunch)",
-        "decision": "skipped",
-        "reason": "Good list idea with no deadline; today is at the cap, so leave it for a later day."
-      },
-      {
-        "story": "AI lab offers free plumbing and HVAC repairs to record robot training video (Tom's Hardware)",
-        "decision": "skipped",
-        "reason": "Fun priority 2 story but no slot left under today's cap."
-      },
-      {
-        "story": "Claude Personal Finance leak suggests bank account links via Plaid",
-        "decision": "skipped",
-        "reason": "Unconfirmed leak and the report could not be opened."
-      },
-      {
-        "story": "Anthropic's proposed safety bill kicks in only at 50 deaths or $1 billion in damage (Yahoo, AOL)",
-        "decision": "covered",
-        "reason": "Already covered as 2026-10-17-anthropic-pitches-own-ai-safety-bill."
-      }
-    ],
-    "requests": []
-  },
-  {
-    "run_at": "2026-10-19T22:08:07.809Z",
-    "summary": "18:00 New York run: no open links or requests; queued the Bloomberg report that Anthropic is negotiating a second $45 billion compute deal with Nscale (priority 1). It can take tonight's last slot under the 8 post cap.",
-    "considered": [
-      {
-        "story": "Anthropic in talks for a second $45 billion compute deal with Nscale (Bloomberg)",
-        "source": "https://www.investing.com/news/stock-market-news/nscale-in-talks-for-45-billion-anthropic-ai-deal-as-ipo-looms-4958181",
-        "decision": "queued",
-        "job_id": "2026-10-19-anthropic-second-45-billion-nscale-deal",
-        "priority": 1
-      },
-      {
-        "story": "Anthropic, Google and OpenAI prepare new AI models (The Information)",
-        "source": "https://www.investing.com/news/stock-market-news/anthropic-google-and-openai-prepare-new-ai-models-the-information-reports-4957891",
-        "decision": "skipped",
-        "reason": "Still an unconfirmed report about unreleased models with no names or dates; already skipped earlier today, better to cover the launches."
-      },
-      {
-        "story": "Accused OpenAI spy had a folder called Saudi Gov Docs, FBI says (Ars Technica, NYT)",
-        "decision": "covered",
-        "reason": "Already posted today as 2026-10-19-openai-bug-suspect-saudi-royal-whatsapp."
-      },
-      {
-        "story": "Anthropic employees on going from doing work to babysitting Claudes (Fast Company, Fortune)",
-        "decision": "skipped",
-        "reason": "Feature piece without hard news, and today's cap is nearly used up."
-      },
-      {
-        "story": "Zillow launches a Claude connector for listings, tours and financing",
-        "decision": "skipped",
-        "reason": "Priority 2 product tie-in with no slot left under today's cap."
-      },
-      {
-        "story": "Canadian news publishers sue Anthropic in Ontario (CBC)",
-        "decision": "skipped",
-        "reason": "Could not confirm a fresh report from a second source, and it is a Canadian legal story with less US interest."
-      },
-      {
-        "story": "US bans DeepSeek from government use (BBC)",
-        "decision": "covered",
-        "reason": "Already considered in an earlier run today as the DHS order to remove DeepSeek products."
-      },
-      {
-        "story": "Mistral launches Timestral time series models and a CERN partnership",
-        "decision": "skipped",
-        "reason": "Developer and science news with limited US consumer appeal; no slot left."
-      },
-      {
-        "story": "Inception Labs releases Mercury 3 diffusion model",
-        "decision": "skipped",
-        "reason": "Niche model launch for developers; no slot left."
-      }
-    ],
-    "requests": []
-  },
-  {
     "run_at": "2026-10-20T00:12:32.317Z",
     "summary": "20:00 New York run: no open links or requests; today (Oct 19) is already at the 8 post cap, so queued one priority 1 Meta story for tomorrow morning: the Prometheus supercluster heading to 1 million GPUs.",
     "considered": [
@@ -5559,6 +5440,56 @@
         "source": "https://aiweekly.co/ai-news-today",
         "decision": "skipped",
         "reason": "Still only the vendor blog as a source, and the day is full."
+      },
+      {
+        "story": "Utility post for today",
+        "decision": "skipped",
+        "reason": "The day already has more than 8 jobs."
+      }
+    ],
+    "requests": []
+  },
+  {
+    "run_at": "2026-10-26T22:13:37.056Z",
+    "summary": "Turned Mahir's Reuters link on China's AI stock crash into a carousel for his review; the New York day is already past 8 desk jobs, so no other stories were queued.",
+    "considered": [
+      {
+        "story": "Reuters: In China, the AI bubble has already burst (STAR50 down about 40%, about $480 billion erased)",
+        "source": "https://www.investing.com/news/economy-news/analysisin-china-the-ai-bubble-has-already-burst-4972445",
+        "decision": "queued",
+        "job_id": "2026-10-26-china-ai-stock-bubble-burst-480-billion",
+        "priority": 1
+      },
+      {
+        "story": "Banks and Blackstone line up $63 billion to finance Broadcom chips for Anthropic",
+        "source": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxQZU9zQUUycTh6SXBkQ25GQUJKTWJabmR3Q1gtYXlZWDJSUWk2cmxGWWRsUlZlSTdVNEtsdDY5d0hVakZ1ZkVDMDFiV2NrdjFaQnNVZUxRMjNESzluZFVBc0s3YU9pZjNZMVR1WEdIOVFrc2phbnRZYWpuYnRXY29Rd0FiVnItWTR1akVvNXhfWDAyNHJId040M2R0Q29HZTAwVzYxUl9OVy0wNWFrV2M3ME1Td25NUGI5cnhOY2JyQUVFS3ZOUGdEZVh1X2pQZWp4NGc?oc=5",
+        "decision": "skipped",
+        "reason": "Financing deal on top of the Anthropic IPO story already posted today, and the day is past 8 jobs with tonight's slots full."
+      },
+      {
+        "story": "FTC demands testimony from Anthropic executives in AI safety probe",
+        "decision": "skipped",
+        "reason": "Only a TradingView headline in leads so far, and the day is past 8 jobs."
+      },
+      {
+        "story": "Anthropic president criticizes OpenAI over Pentagon deal",
+        "decision": "skipped",
+        "reason": "Commentary story, and the day is past 8 jobs."
+      },
+      {
+        "story": "OpenAI and Anthropic staff told to stop wearing company logos over spy risks",
+        "decision": "skipped",
+        "reason": "New York Post story with no second source yet, and the day is past 8 jobs."
+      },
+      {
+        "story": "Anthropic S-1 shows an $80 billion loss and reliance on cloud partners",
+        "decision": "covered",
+        "reason": "Already posted as 2026-10-26-anthropic-files-ipo-ant-nasdaq."
+      },
+      {
+        "story": "GPT-6.1 Terra reviews and benchmarks",
+        "decision": "covered",
+        "reason": "Already posted as 2026-10-26-openai-gpt-6-1-terra."
       },
       {
         "story": "Utility post for today",
