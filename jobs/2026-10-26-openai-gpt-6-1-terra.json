@@ -1,0 +1,131 @@
+{
+  "id": "2026-10-26-openai-gpt-6-1-terra",
+  "created_at": "2026-10-26T19:35:00Z",
+  "story_time": "2026-10-26T18:21:00Z",
+  "timely": true,
+  "sensitive": false,
+  "priority": 1,
+  "review": true,
+  "link_id": "link-2026-10-26-1641",
+  "format": "carousel",
+  "site_category": "models",
+  "sources": [
+    { "name": "OpenAI on X", "url": "https://x.com/OpenAI/status/2114780711664398349" },
+    { "name": "9to5Mac", "url": "https://9to5mac.com/2026/10/26/openai-upgrades-chatgpt-and-codex-with-new-gpt-6-1-terra-model/" },
+    { "name": "iThinkDifferent", "url": "https://www.ithinkdiff.com/gpt-6-1-terra-launch-half-price-computer-use/" },
+    { "name": "Nerdschalk", "url": "https://nerdschalk.com/gpt-6-1-terra-chatgpt-codex-availability/" }
+  ],
+  "threads_text": "OpenAI just released GPT-6.1 Terra, a mid tier model built to see your screen and click through apps for you, at half the API price of GPT-6.1 Sol. OpenAI says it finishes computer tasks more than 3 times faster than its bigger models. Would you let an AI drive your computer for a whole workday?",
+  "caption": "OpenAI released GPT-6.1 Terra on Monday, a fast model built for computer use, visual reasoning and clearer writing.\nIn the API it costs $1 per million input tokens and $5 per million output, half the price of GPT-6.1 Sol.\nIt is rolling out in ChatGPT Work and Codex for Plus, Pro, Enterprise and Edu users.\n\nWould you hand your daily computer tasks to an AI agent?\n\nFollow @neurafeed.ai for daily AI news.\n\nSource: OpenAI, 9to5Mac, iThinkDifferent · Photos: iThinkDifferent, 9to5Mac, Nerdschalk",
+  "slides": [
+    {
+      "kind": "cover",
+      "headline": "OpenAI's new *GPT-6.1 Terra* uses your computer for half the price",
+      "image": {
+        "url": "https://cdn.ithinkdiff.com/wp-content/uploads/2026/10/GPT-6.1-Terra-ChatGPT-OpenAI.png",
+        "credit": "iThinkDifferent",
+        "fallback_urls": [
+          "https://9to5mac.com/wp-content/uploads/sites/6/2026/09/chatgpt-codex-gpt-6-astra-1.webp?w=1600"
+        ]
+      },
+      "badges": [
+        { "url": "assets/logos/openai.png", "shape": "free" }
+      ]
+    },
+    {
+      "kind": "post",
+      "heading": "OpenAI *just announced* it",
+      "author": { "name": "OpenAI", "handle": "@OpenAI", "avatar": "assets/logos/openai.png", "verified": true },
+      "platform": "X",
+      "date": "Oct 26, 2026",
+      "text": "GPT-6.1 Terra: delivering fast and capable computer use at a lower price. GPT-6.1 Terra understands what’s on screen, takes action across apps, writes naturally, and is a more capable model for your whole workday with the efficiency to take on more of it."
+    },
+    {
+      "kind": "card",
+      "heading": "Half the *price* of Sol",
+      "paras": [
+        "In the API, Terra costs $1 per million input tokens and $5 per million output, half the price of GPT-6.1 Sol.",
+        "OpenAI says it is also 50 percent cheaper than GPT-5.6 Terra, the model it replaces."
+      ],
+      "image": {
+        "url": "https://9to5mac.com/wp-content/uploads/sites/6/2026/09/chatgpt-codex-gpt-6-astra-1.webp?w=1600",
+        "credit": "9to5Mac",
+        "fallback_urls": [
+          "https://9to5mac.com/wp-content/uploads/sites/6/2026/09/chatgpt-codex-gpt-6-astra-1.webp?resize=1200,628"
+        ]
+      }
+    },
+    {
+      "kind": "card",
+      "heading": "Built to *click for you*",
+      "paras": [
+        "OpenAI says Terra finishes computer tasks more than 3 times faster than GPT-6 Astra and GPT-6.1 Sol.",
+        "It also claims Terra is over 3 times as token efficient as Claude Opus 5.5 on Agents' Last Exam at max effort."
+      ],
+      "image": {
+        "url": "https://cdn.nerdschalk.com/wp-content/uploads/2026/10/news-featured-611367-fb3dd49df870.jpg",
+        "credit": "Nerdschalk",
+        "fallback_urls": [
+          "https://cdn.nerdschalk.com/wp-content/uploads/2026/10/news-featured-607134-3a9a33b1d31f-1080x608.jpg"
+        ]
+      }
+    },
+    {
+      "kind": "card",
+      "heading": "Far fewer *wrong answers*",
+      "paras": [
+        "On OpenAI's own test of error inducing prompts, Terra's error rate at low effort fell from 53.6 percent to 16.7 percent.",
+        { "t": "At max effort it dropped to 4.3 percent.", "strong": true }
+      ],
+      "image": {
+        "url": "https://cdn.nerdschalk.com/wp-content/uploads/2026/10/news-featured-607152-02c5d081e19a-1080x608.jpg",
+        "credit": "Nerdschalk",
+        "fallback_urls": [
+          "https://cdn.nerdschalk.com/wp-content/uploads/2026/10/news-featured-606871-b528eb495b20-1080x608.jpg"
+        ]
+      },
+      "note": "Benchmarks are OpenAI's own reported results."
+    },
+    {
+      "kind": "card",
+      "heading": "Who gets it *today*",
+      "paras": [
+        "Terra is rolling out in ChatGPT Work and Codex for Plus, Pro, Enterprise and Edu users.",
+        "Developers can call gpt-6.1-terra in the API, but not on the free tier."
+      ],
+      "image": {
+        "url": "https://cdn.nerdschalk.com/wp-content/uploads/2026/10/news-featured-607134-3a9a33b1d31f-1080x608.jpg",
+        "credit": "Nerdschalk",
+        "fallback_urls": [
+          "https://cdn.nerdschalk.com/wp-content/uploads/2026/10/news-featured-606683-87321d4976cb-1080x608.jpg"
+        ]
+      }
+    },
+    {
+      "kind": "cta",
+      "hook": "Every new OpenAI model lands here first, with the price and the catch spelled out."
+    }
+  ],
+  "site_article": {
+    "headline": "OpenAI releases GPT-6.1 Terra, a cheaper model built for computer use",
+    "dek": "The middle model in OpenAI's lineup costs half as much as GPT-6.1 Sol in the API and is rolling out in ChatGPT Work and Codex.",
+    "summary": "OpenAI released GPT-6.1 Terra on October 26, 2026, a fast model aimed at computer use, visual reasoning and writing. Its standard API price is $1 per million input tokens and $5 per million output tokens.",
+    "seo_title": "OpenAI releases GPT-6.1 Terra for cheaper computer use",
+    "seo_description": "OpenAI's GPT-6.1 Terra costs $1 per million input tokens, half of GPT-6.1 Sol, and is rolling out in ChatGPT Work, Codex and the API.",
+    "answer_summary": "GPT-6.1 Terra is OpenAI's new mid tier model, released October 26, 2026, designed to read screens and take actions across apps at a lower price. It is available in ChatGPT Work and Codex for Plus, Pro, Enterprise and Edu users and in the paid API as gpt-6.1-terra.",
+    "tags": ["OpenAI", "GPT-6.1 Terra", "ChatGPT", "Codex", "Computer use"],
+    "hero_alt": "A promotional graphic for GPT-6.1 Terra in ChatGPT and Codex.",
+    "paragraphs": [
+      { "kind": "fact", "text": "OpenAI released GPT-6.1 Terra on October 26, 2026. In its announcement on X, the company described the model as delivering fast and capable computer use at a lower price, saying it can understand what is on screen, take action across apps and write more naturally.", "sources": [0, 1] },
+      { "kind": "fact", "text": "Terra sits in the middle of OpenAI's lineup. 9to5Mac lists the four model classes from lowest to highest price as Luna, Terra, Sol and Astra, and notes that when OpenAI released the GPT-6 versions of Sol and Luna in September, Terra was left on GPT-5.6. The new release moves it to GPT-6.1, about four weeks after GPT-6.1 Sol, according to iThinkDifferent.", "sources": [1, 2] },
+      { "kind": "heading", "text": "Price and availability" },
+      { "kind": "fact", "text": "The standard API price is $1 per million input tokens, $5 per million output tokens and $0.05 per million cached input tokens, half of GPT-6.1 Sol's $2 and $10, iThinkDifferent and Nerdschalk reported. OpenAI says the model costs 50 percent less than GPT-5.6 Terra, which it replaces. Batch and Flex processing cost half the standard rate, according to Nerdschalk.", "sources": [1, 2, 3] },
+      { "kind": "fact", "text": "The model is rolling out in ChatGPT Work and Codex for Plus, Pro, Enterprise and Edu users. Developers can call it as gpt-6.1-terra through the Responses, Chat Completions and Batch interfaces, but not on the API free tier. Nerdschalk reported a context window of 1,050,000 tokens in the API and 500,000 tokens in Codex, with a knowledge cutoff of June 1, 2026.", "sources": [2, 3] },
+      { "kind": "heading", "text": "What OpenAI claims it can do" },
+      { "kind": "fact", "text": "According to results OpenAI reported and iThinkDifferent summarized, Terra completes computer use tasks more than three times faster than GPT-6 Astra and GPT-6.1 Sol. On the Agents' Last Exam benchmark at maximum effort, OpenAI says it is more than three times as token efficient as Anthropic's Claude Opus 5.5 at one fourth the cost per token. On Terminal-Bench 4.0 at maximum effort it solved 50.3 percent of tasks, compared with 21.5 percent for GPT-5.6 Terra, although OpenAI still points to Sol and Astra for the hardest coding work.", "sources": [2] },
+      { "kind": "fact", "text": "OpenAI also reported fewer errors on an internal set of prompts designed to trigger mistakes. At low reasoning effort the error rate fell from 53.6 percent with GPT-5.6 Terra to 16.7 percent, and at maximum effort it fell by 18 percentage points to 4.3 percent, close to GPT-6 Astra and GPT-6.1 Sol, 9to5Mac reported. The model reaches the Critical level for cybersecurity under OpenAI's Preparedness Framework and keeps protections built for GPT-6 Astra, iThinkDifferent said.", "sources": [1, 2] },
+      { "kind": "analysis", "text": "The release pushes computer use down into OpenAI's cheaper tier. Agents that read screens and click through software run long chains of steps, so price per token and speed matter more than peak capability, and that is exactly where Terra is positioned. All of the performance figures come from OpenAI's own testing, so independent results will matter." },
+      { "kind": "why_it_matters", "text": "Watch for independent benchmark results on computer use tasks and for whether Terra becomes the default model for agent work in ChatGPT Work and Codex, which would show how much everyday work OpenAI expects its cheaper models to handle." }
+    ]
+  }
+}
