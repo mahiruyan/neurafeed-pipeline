@@ -5235,5 +5235,82 @@
       }
     ],
     "requests": []
+  },
+  {
+    "run_at": "2026-10-26T06:08:17.696Z",
+    "summary": "Monday 02:00 New York run: no open links or requests; nothing new queued because the fresh stories were either already covered, older news, or had only one weak source. Later morning runs should add today's posts.",
+    "considered": [
+      {
+        "story": "Grok Bot can now phone people and businesses for you, Musk says",
+        "source": "https://teslanorth.com/2026/10/25/grok-bot-phone-calls-elon-musk/",
+        "decision": "skipped",
+        "reason": "Only TeslaNorth and a competitor's blog confirm it, xAI has not documented the rollout, Musk already said Grok Bot can call restaurants on October 19, and the post is too old to stay timely until the 07:00 window."
+      },
+      {
+        "story": "Anthropic and Theorem use Claude to formally verify 123 open-source libraries",
+        "source": "https://the-decoder.com/anthropics-claude-now-writes-code-and-proves-it-safe-automatically/",
+        "decision": "covered",
+        "reason": "Already covered as 2026-10-22-claude-proves-123-libraries-wont-crash."
+      },
+      {
+        "story": "UK funds a 100 million pound AI biosecurity lab with OpenAI and Anthropic",
+        "source": "https://www.bloomberg.com/news/articles/2026-10-23-uk-vows-100-million-for-biosecurity-lab-with-openai-anthropic",
+        "decision": "skipped",
+        "reason": "Announced October 23 and already weighed and skipped in earlier runs; now three days old."
+      },
+      {
+        "story": "Meta delays its new commercial terms to November 20 after publisher complaints",
+        "source": "https://money.usnews.com/investing/news/articles/2026-10-23/meta-to-delay-new-commercial-terms-criticised-by-publishers-advertisers",
+        "decision": "skipped",
+        "reason": "Reuters reported it on October 23, so it is too old for a timely post, and it is a business terms story with limited US consumer interest."
+      },
+      {
+        "story": "WSJ: AI hacks are coming thick and fast and overwhelming the internet",
+        "source": "https://www.wsj.com/tech/ai/ai-hacks-are-coming-thick-and-fast-and-overwhelming-the-internet-4529c26c",
+        "decision": "skipped",
+        "reason": "Could not read the WSJ article, and the copies found were AI summaries with no concrete facts or numbers."
+      },
+      {
+        "story": "Toyota plans 400,000 factory robots from 2028 (FT)",
+        "source": "https://www.digitaltoday.co.kr/en/view/107108/toyota-to-invest-6-42-billion-a-year-in-robots-from-2028-as-staff-train-humanoids",
+        "decision": "skipped",
+        "reason": "The same plan was reported in September, so this is not new."
+      },
+      {
+        "story": "110 AgiBot humanoid robots set a Guinness record for synchronized dancing in Jinan",
+        "source": "https://www.globaltimes.cn/page/202610/1372888.shtml",
+        "decision": "skipped",
+        "reason": "Could not open the Global Times report or find a second source."
+      },
+      {
+        "story": "GM expands eyes-off driving to pickups and large SUVs",
+        "source": "https://foxbusiness.com/technology/gm-expands-eyes-off-autonomous-driving-plans-pickups-suvs",
+        "decision": "skipped",
+        "reason": "Mostly a repeat of GM's 2025 eyes-off plan, and no second source with the new details was found."
+      },
+      {
+        "story": "Claude accessed Georgia voter data",
+        "decision": "covered",
+        "reason": "Already queued as 2026-10-26-claude-georgia-voter-data-token."
+      },
+      {
+        "story": "SpaceX closes $40 billion GPU debt deal, Musk warns neoclouds may fail",
+        "decision": "covered",
+        "reason": "Already queued as 2026-10-26-spacex-40-billion-nvidia-gpus-neoclouds."
+      },
+      {
+        "story": "OpenAI and Anthropic cut LLM prices up to 80% (minimaxir)",
+        "source": "https://minimaxir.com/2026/10/cheap-llms/",
+        "decision": "skipped",
+        "reason": "A blog analysis rather than news, already skipped in earlier runs."
+      },
+      {
+        "story": "Netanyahu posts an AI-generated nuclear image before Israel's election",
+        "source": "https://www.jpost.com/israel-election-2026/article-912797",
+        "decision": "skipped",
+        "reason": "Foreign election politics with limited AI news value for a US audience."
+      }
+    ],
+    "requests": []
   }
 ]
