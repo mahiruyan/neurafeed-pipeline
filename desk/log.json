@@ -1,70 +1,5 @@
 [
   {
-    "run_at": "2026-10-19T14:11:13.221Z",
-    "summary": "10:00 New York run: no open links or requests; queued Musk's pledge of one SpaceX share for every US kid (priority 1), a follow-up to the Anthropic fund story. Today has 6 news jobs plus 2 link Reels; utility post still due after 11:00.",
-    "considered": [
-      {
-        "story": "Musk pledges one of his SpaceX shares to every kid in America next year, after Anthropic's Public Benefit Fund",
-        "source": "https://www.axios.com/2026/10/19/elon-musk-spacex-shares-kids",
-        "decision": "queued",
-        "job_id": "2026-10-19-musk-spacex-share-every-us-kid",
-        "priority": 1
-      },
-      {
-        "story": "Anthropic acquires confidential AI startup Opaque in a licensing and acquihire deal",
-        "source": "https://www.constellationr.com/insights/news/anthropic-acquires-opaque",
-        "decision": "skipped",
-        "reason": "Announced October 13, too old for news now."
-      },
-      {
-        "story": "Claude Mythos 5 designs quantum circuits with up to 17x fewer gates",
-        "decision": "covered",
-        "reason": "Already covered as 2026-10-16-claude-quantum-circuits-17x-fewer-gates."
-      },
-      {
-        "story": "Accenture caps Claude spending at $29 per employee",
-        "decision": "covered",
-        "reason": "Already covered as 2026-10-16-accenture-claude-29-dollar-cap."
-      },
-      {
-        "story": "Anthropic cuts live internet access for internal evals after rogue model actions",
-        "source": "https://thehackernews.com/2026/10/anthropic-cuts-live-internet-access-for.html",
-        "decision": "skipped",
-        "reason": "From October 10, too old."
-      },
-      {
-        "story": "Bernie Sanders hits back at Sam Altman over 'severe cyber incidents' remark",
-        "source": "https://www.benzinga.com/news/politics/26/10/62316042/bernie-sanders-hits-back-at-sam-altman-after-openai-ceo-warns-of-severe-cyber-incidents-in-exchange-for-liberty-we-wont-accept-it",
-        "decision": "skipped",
-        "reason": "From October 13 and political; too old."
-      },
-      {
-        "story": "WSJ on Anthropic's Long-Term Benefit Trust and the IPO",
-        "source": "https://247wallst.com/investing/2026/10/19/can-anthropics-shadow-board-cripple-its-ipo/",
-        "decision": "skipped",
-        "reason": "Governance analysis with little new fact; Anthropic fund already covered twice today."
-      },
-      {
-        "story": "NVIDIA GTC Berlin, Jensen Huang keynote",
-        "source": "https://www.nvidia.com/en-eu/gtc/",
-        "decision": "skipped",
-        "reason": "Conference starts October 20 and the keynote is October 21; cover the announcements when they happen."
-      },
-      {
-        "story": "Tenstorrent raises $1.5B at a $6.2B valuation",
-        "decision": "skipped",
-        "reason": "Chip startup funding round with limited US consumer interest."
-      },
-      {
-        "story": "Investors buy the dip after last week's AI stock selloff",
-        "source": "https://www.cnbc.com/2026/10/19/stocks-buying-opportunity-ai-selloff.html",
-        "decision": "skipped",
-        "reason": "Market move story, could not read the article this run."
-      }
-    ],
-    "requests": []
-  },
-  {
     "run_at": "2026-10-19T16:11:12.081Z",
     "summary": "Noon run: no open links or requests; queued the Reuters exclusive on a hacker whose AI agents breached 100+ company sites (priority 1, sensitive, needs approval) and today's utility post on ChatGPT privacy settings.",
     "considered": [
@@ -5363,6 +5298,115 @@
         "story": "Elvis rights holders sue Anthropic",
         "decision": "covered",
         "reason": "Already queued as 2026-10-24-elvis-rights-holders-sue-anthropic."
+      }
+    ],
+    "requests": []
+  },
+  {
+    "run_at": "2026-10-26T14:34:36.609Z",
+    "summary": "Midday run: no open links or requests to handle; queued 2 priority 1 stories (Meta's $95 billion stock sale for AI, Cathedral's AI agents reaching Anthropic's internal systems). Today's generated cover limit was already used, so both covers use real photos.",
+    "considered": [
+      {
+        "story": "Meta plans to raise up to $95 billion in stock to fund AI, with Nvidia, AMD and Broadcom signaling up to $5 billion of interest",
+        "source": "https://www.benzinga.com/markets/tech/26/10/62588078/zuckerberg-is-raising-the-stakes-meta-plans-95-billion-funding-push-to-fuel-ai-dreams",
+        "decision": "queued",
+        "job_id": "2026-10-26-meta-95-billion-stock-sale-ai",
+        "priority": 1
+      },
+      {
+        "story": "Cathedral says its AI agents reached Anthropic's internal systems in under 12 hours through third party business software",
+        "source": "https://dnyuz.com/2026/10/26/it-took-just-12-hours-for-an-ai-start-up-founded-by-ex-doge-staffers-to-break-into-anthropic/",
+        "decision": "queued",
+        "job_id": "2026-10-26-cathedral-ai-agents-broke-into-anthropic",
+        "priority": 1
+      },
+      {
+        "story": "Google DeepMind's AI weather model called Hurricane Isaias's Florida landfall before physics models",
+        "source": "https://www.npr.org/2026/10/26/nx-s1-6012820/ai-hurricane-forecast-google-deepmind-isaias",
+        "decision": "skipped",
+        "reason": "Strong story but today's job count is at the 8 per day cap after these two, so it is first in line for the next run."
+      },
+      {
+        "story": "Claude accessed public Georgia election data",
+        "decision": "covered",
+        "reason": "Already queued as 2026-10-26-claude-georgia-voter-data-token."
+      },
+      {
+        "story": "SpaceX closes $40 billion GPU debt deal and Musk warns of a neocloud shakeout",
+        "decision": "covered",
+        "reason": "Already posted as 2026-10-26-spacex-40-billion-nvidia-gpus-neoclouds."
+      },
+      {
+        "story": "Malicious AGENTS.md file in the Downloads folder hijacks Codex and Claude Code",
+        "decision": "covered",
+        "reason": "Already queued as 2026-10-26-agents-md-downloads-hijack-claude-codex."
+      },
+      {
+        "story": "Grok releases the first seven minutes of its AI-generated Odyssey",
+        "decision": "covered",
+        "reason": "Already posted as 2026-10-26-grok-odyssey-seven-minutes."
+      },
+      {
+        "story": "UC Berkeley Fields Medal winner stops grading homework because of AI",
+        "decision": "covered",
+        "reason": "Already queued this morning as 2026-10-26-berkeley-fields-medalist-stops-grading-homework."
+      },
+      {
+        "story": "METR questions Anthropic's safety tests while agreeing catastrophic risk is low",
+        "source": "https://www.edtechinnovationhub.com/news/metr-questions-anthropics-ai-safety-tests-despite-agreeing-catastrophic-risk-is-low",
+        "decision": "skipped",
+        "reason": "A safety evaluator's methodology dispute, too inside baseball next to the Cathedral story about the same company."
+      },
+      {
+        "story": "OpenAI and Anthropic cut model prices by up to 80 percent in months",
+        "source": "https://minimaxir.com/2026/10/cheap-llms/",
+        "decision": "skipped",
+        "reason": "Analysis blog post rather than news, and the price cuts themselves were covered when they happened."
+      },
+      {
+        "story": "76 percent of enabled AI agents sit dormant but keep live credentials",
+        "source": "https://www.helpnetsecurity.com/2026/10/26/arrakis-dormant-ai-agent-risks-report/",
+        "decision": "skipped",
+        "reason": "Single vendor report with no second source, and the day already has two AI security carousels."
+      },
+      {
+        "story": "Nikon photography contest winner loses title after scientists spot signs of AI",
+        "source": "https://www.techspot.com/news/114171-nikon-photography-contest-winner-loses-title-after-scientists.html",
+        "decision": "skipped",
+        "reason": "Fun story but the contest decision dates to last week and only one outlet reported it."
+      },
+      {
+        "story": "SoftBank commits $50 billion to AI and data centers in Malaysia",
+        "decision": "skipped",
+        "reason": "Foreign investment pledge with limited US interest, skipped in earlier runs too."
+      },
+      {
+        "story": "Connecticut towns ban data centers before any plans arrive",
+        "source": "https://ctmirror.org/2026/10/25/data-centers-artificial-intelligence-ct/",
+        "decision": "skipped",
+        "reason": "Local policy story with narrow appeal, already weighed this morning."
+      },
+      {
+        "story": "Apollo says AI has shown zero payoff outside the tech sector",
+        "decision": "skipped",
+        "reason": "Already weighed and skipped in earlier runs."
+      },
+      {
+        "story": "SK Telecom gives its AI agents employee IDs and human supervisors",
+        "decision": "skipped",
+        "reason": "Korean corporate governance report with little US consumer interest."
+      },
+      {
+        "story": "r/opensource bans AI-related projects",
+        "source": "https://www.reddit.com/r/opensource/comments/1xelcuf/your_tokens_arent_valuable_no_more_ai/",
+        "decision": "skipped",
+        "reason": "Community moderation decision with no independent reporting yet; keeping an eye on it as a possible utility or culture post."
+      },
+      {
+        "story": "Tracebit says deception techniques make AI attackers 23 times more expensive",
+        "source": "https://agentic.tracebit.com/factory/",
+        "decision": "skipped",
+        "reason": "Vendor's own test results, no independent source."
       }
     ],
     "requests": []

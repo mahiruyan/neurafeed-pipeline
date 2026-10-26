@@ -1,0 +1,189 @@
+{
+  "id": "2026-10-26-cathedral-ai-agents-broke-into-anthropic",
+  "created_at": "2026-10-26T14:30:00Z",
+  "story_time": "2026-10-26T10:00:00Z",
+  "timely": true,
+  "sensitive": true,
+  "priority": 1,
+  "review": true,
+  "site_category": "companies",
+  "sources": [
+    {
+      "name": "Washington Post via DNYUZ",
+      "url": "https://dnyuz.com/2026/10/26/it-took-just-12-hours-for-an-ai-start-up-founded-by-ex-doge-staffers-to-break-into-anthropic/"
+    },
+    {
+      "name": "The Hack Academy",
+      "url": "https://www.thehackacademy.com/anthropic-cathedral-access-dispute.htm"
+    },
+    {
+      "name": "dev.ua",
+      "url": "https://dev.ua/en/news/anthropic-zlamaly-1793014495"
+    },
+    {
+      "name": "AI Weekly",
+      "url": "https://aiweekly.co/alerts/ex-doge-startup-cathedral-breaches-anthropic-in-12-hours"
+    }
+  ],
+  "threads_text": "A months old startup pointed AI agents at Anthropic and reached staff salaries, meeting transcripts and Slack messages about its newest models in under 12 hours. The way in was not Anthropic's code. It was the ordinary sales and HR software every company runs. Whose job is it to secure that software?",
+  "caption": "AI agents from the startup Cathedral found their way into Anthropic's internal systems in under 12 hours, the Washington Post reported Monday from a draft of the company's report.\nThey reached meeting transcripts, salary and job offer details, and Slack messages about Anthropic's most advanced models.\nThe way in was third party business software, not Anthropic's own code.\nAnthropic says the access was limited to some sales, HR and IT systems, that customer messages, model responses, code and model weights stayed out of reach, and that Cathedral overstated the national security angle.\n\nShould AI labs be allowed to run on the same office software as everyone else?\n\nFollow @neurafeed.ai for daily AI news.\n\nSource: Washington Post · Photos: Below the Sky / Shutterstock, Getty Images, Anthropic",
+  "slides": [
+    {
+      "kind": "cover",
+      "headline": "AI agents broke into *Anthropic itself* in under 12 hours and read staff salaries",
+      "image": {
+        "url": "https://media.thenextweb.com/2026/10/dario-amodei-anthropic-logo-phone-screen.jpg",
+        "credit": "Below the Sky / Shutterstock",
+        "fallback_urls": [
+          "https://techstartups.com/wp-content/uploads/2024/06/Anthropic.jpg",
+          "https://cdn.benzinga.com/cdn-cgi/image/width=3840,format=auto,quality=85/files/images/story/2026/10/20/Anthropic-Ipo-Initial-Public-Offering-On.jpg"
+        ]
+      },
+      "pos": "center 35%",
+      "badges": [
+        {
+          "url": "assets/logos/anthropic.png",
+          "shape": "free",
+          "side": "left"
+        }
+      ]
+    },
+    {
+      "kind": "card",
+      "heading": "The way in was *office software*",
+      "paras": [
+        "Researchers at Cathedral, a months old security startup, used flaws in business software Anthropic and many other companies run for admin and sales work.",
+        "Their AI agents ran for under 12 hours."
+      ],
+      "image": {
+        "url": "https://www.engadget.com/img/gallery/anthropic-now-offers-a-free-vulnerability-finding-service-for-open-source-software/intro-1791544973.jpg",
+        "credit": "Michael M. Santiago / Getty Images",
+        "fallback_urls": [
+          "https://www.csoonline.com/wp-content/uploads/2026/10/4239028-0-61091200-1792669672-shutterstock_2427719361.jpg?quality=50&strip=all&w=1024"
+        ]
+      }
+    },
+    {
+      "kind": "card",
+      "heading": "What they could *read*",
+      "paras": [
+        "The draft report says they reached meeting transcripts, salary and job offer details, and Slack messages about Anthropic's most advanced AI models.",
+        "Cathedral says it kept data access to a minimum."
+      ],
+      "image": {
+        "url": "https://storage.ghost.io/c/2a/1b/2a1b1782-8506-4d7d-bf53-ad3fb52e2a0f/content/images/size/w2000/2026/10/1714580635_anthropic.jpg",
+        "credit": "TestingCatalog",
+        "fallback_urls": [
+          "https://techstartups.com/wp-content/uploads/2026/10/Anthropic-third-quarter-revenue-jumps-45-to-16.8-billion-ahead-of-blockbuster-2-trillion-IPO.jpg"
+        ]
+      }
+    },
+    {
+      "kind": "card",
+      "heading": "Anthropic *pushes back*",
+      "paras": [
+        "Anthropic says the test touched a limited set of sales, HR and IT systems, and that customer messages, code and model weights stayed out of reach.",
+        {
+          "t": "It says Cathedral overstated the security angle.",
+          "strong": true
+        }
+      ],
+      "image": {
+        "url": "https://www-cdn.anthropic.com/images/4zrzovbb/website/6d4a0d28992ade92d6fa63646fd9c9d318245c6c-2400x1260.jpg",
+        "credit": "Anthropic",
+        "fallback_urls": [
+          "https://www.pymnts.com/wp-content/uploads/2026/08/Anthropic-Nscale-1.jpg"
+        ]
+      },
+      "note": "Anthropic says its monitoring caught some of it first."
+    },
+    {
+      "kind": "card",
+      "heading": "Washington *read the report*",
+      "paras": [
+        "A senior Trump administration official told the Post the report circulated in government and raised national security concerns.",
+        "Cathedral was founded by former DOGE staffers and now holds contracts with three federal agencies."
+      ],
+      "image": {
+        "url": "https://www.pymnts.com/wp-content/uploads/2026/08/Anthropic-Nscale-1.jpg",
+        "credit": "Finn Gomez / Getty Images",
+        "fallback_urls": [
+          "https://news.stocktwits-cdn.com/large_Getty_Images_2297777279_225c04fb05.jpg"
+        ]
+      }
+    },
+    {
+      "kind": "cta",
+      "hook": "Follow for the AI security stories that land before your company's IT team hears about them."
+    }
+  ],
+  "site_article": {
+    "headline": "Cathedral says its AI agents reached Anthropic's internal systems in under 12 hours",
+    "dek": "Anthropic says the access was limited to some sales, HR and IT systems and disputes the national security framing.",
+    "summary": "The Washington Post reported on October 26, 2026 that the security startup Cathedral told Anthropic its AI agents had reached internal data, including salary details and Slack messages about advanced models. Anthropic says the access was limited and that no customer data, code or model weights were exposed.",
+    "seo_title": "Cathedral AI agents reached Anthropic systems in 12 hours",
+    "seo_description": "Cathedral told Anthropic its AI agents reached internal data in under 12 hours through third party business software, the Washington Post reported.",
+    "answer_summary": "Researchers at the startup Cathedral used AI agents to exploit flaws in third party business software and reach Anthropic internal systems, including meeting transcripts, salary details and Slack messages about its advanced models. Anthropic says customer data, source code and model weights were not reachable.",
+    "tags": ["Anthropic", "Cathedral", "AI security", "AI agents"],
+    "hero_alt": "The Anthropic logo displayed on a smartphone screen.",
+    "paragraphs": [
+      {
+        "kind": "fact",
+        "text": "The cybersecurity startup Cathedral told Anthropic that its researchers had reached sensitive internal data and messaging systems at the AI company, according to a draft Cathedral report reviewed by The Washington Post and published on October 26, 2026. The report says the work was done with AI agents that ran for less than 12 hours.",
+        "sources": [0]
+      },
+      {
+        "kind": "heading",
+        "text": "How the access happened"
+      },
+      {
+        "kind": "fact",
+        "text": "According to the Post, the researchers exploited vulnerabilities in business software that Anthropic and many other companies use for administrative and sales work, rather than in Anthropic's own products. From there they found paths to meeting transcripts, salary and job offer details, and Slack messages in which employees discuss Anthropic's most advanced AI models.",
+        "sources": [0]
+      },
+      {
+        "kind": "fact",
+        "text": "The testing took place inside a program Anthropic runs that invites outside experts to probe its systems and pays rewards for disclosed vulnerabilities. Cathedral reported its findings earlier in October, the Post said. The company's draft report says it limited data access to the minimum needed, in line with security research practice, and a Cathedral spokeswoman declined to comment.",
+        "sources": [0, 1]
+      },
+      {
+        "kind": "heading",
+        "text": "What Anthropic says"
+      },
+      {
+        "kind": "fact",
+        "text": "Anthropic said the researchers reached a limited set of sales, HR and IT systems that held business contact details for some customers and partners along with basic user account records. It said they could not reach customer messages, model responses, source code or model weights. The company said its own monitoring flagged some of the activity before Cathedral reported it, that access was cut off the same day, and that it found no evidence anyone else had exploited the flaws. It disabled the software involved until the vendors fixed the problems and briefed federal officials.",
+        "sources": [0, 1]
+      },
+      {
+        "kind": "fact",
+        "text": "Anthropic also said Cathedral overstated the national security implications of the findings and did not fully follow the program's rules, because it did not disclose all of its activity. Neither the Post nor Anthropic named the software involved, and no public vulnerability identifier or severity rating has been reported, according to The Hack Academy.",
+        "sources": [0, 1]
+      },
+      {
+        "kind": "analysis",
+        "text": "The disagreement is narrower than it looks. Both sides describe the same route in: the ordinary software a company buys to run sales, hiring and internal chat. Anthropic's argument is about what sat behind that door, not about whether the door opened. For other labs, the uncomfortable part is that the model stack can be locked down while the office stack is not.",
+        "sources": []
+      },
+      {
+        "kind": "heading",
+        "text": "The Washington reaction"
+      },
+      {
+        "kind": "fact",
+        "text": "A senior Trump administration official, speaking anonymously, told the Post that the report had circulated within the government and raised national security concerns, saying that if a young company could do this then foreign actors might not be far behind. The official said three federal agencies had recently contracted with Cathedral. Alex Stamos, the chief information security officer at Cognition, reviewed the findings for the Post and said the researchers had found something big, calling third party software risk a problem for everybody.",
+        "sources": [0]
+      },
+      {
+        "kind": "fact",
+        "text": "Cathedral was founded months ago by former members of the United States DOGE Service and sells AI powered security tools to government and corporate clients. Its co-founder Gavin Kliger previously served as the Pentagon's chief data officer, and investors value the company at $1.4 billion after about $160 million in funding, the Post reported, citing Pitchbook data. Earlier in 2026 the Pentagon barred Anthropic from federal systems after the company refused to allow its technology to be used for autonomous weapons or mass domestic surveillance.",
+        "sources": [0, 3]
+      },
+      {
+        "kind": "why_it_matters",
+        "text": "Watch whether Anthropic names the vendors whose software was involved, and whether other AI labs disable the same tools. That would show how far the exposure reaches beyond one company, and whether the vulnerability disclosure programs the labs run are built to handle findings this large.",
+        "sources": []
+      }
+    ]
+  }
+}
