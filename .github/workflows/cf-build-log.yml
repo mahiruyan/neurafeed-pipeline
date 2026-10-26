@@ -1,0 +1,25 @@
+name: Cloudflare build log
+
+# Shows the end of a Cloudflare Workers Builds log (same Cloudflare account), as one notice.
+on:
+  workflow_dispatch:
+    inputs:
+      build_id:
+        required: true
+
+permissions:
+  contents: read
+
+jobs:
+  log:
+    runs-on: ubuntu-latest
+    steps:
+      - env:
+          T: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          A: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          B: ${{ inputs.build_id }}
+        run: |
+          r=$(curl -s -H "Authorization: Bearer $T" "https://api.cloudflare.com/client/v4/accounts/$A/builds/builds/$B/logs")
+          if jq -e '.success == false' <<<"$r" >/dev/null; then echo "::error::$(jq -c '.errors' <<<"$r")"; exit 0; fi
+          lines=$(jq -r '.result.lines[]? | if type=="array" then .[1] else (.message // tostring) end' <<<"$r" | grep -v '^\s*$' | tail -60 | cut -c1-220 | tr '\n' '|')
+          echo "::notice::${lines:0:9000}"
