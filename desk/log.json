@@ -1,61 +1,5 @@
 [
   {
-    "run_at": "2026-10-19T00:01:58.661Z",
-    "summary": "Sunday evening run (20:20 New York): queued the Anthropic $48B public benefit fund story (priority 1) and the weekly roundup; today is now at 8 jobs; the two Reel links stay in inbox/skipped.json because src/validate.js still crashes on Reels; no open requests.",
-    "considered": [
-      {
-        "story": "Anthropic commits 5% of its shares (about $48B) to a new Public Benefit Fund",
-        "source": "https://www.anthropic.com/news/public-benefit-fund",
-        "decision": "queued",
-        "job_id": "2026-10-18-anthropic-48-billion-public-benefit-fund",
-        "priority": 1
-      },
-      {
-        "story": "Weekly roundup: Gemini 4 Argon, Zuckerberg $200B, Anthropic $16.8B quarter, MAI-Base-2, Claude ECDSA seeds, ChatGPT ads",
-        "decision": "queued",
-        "job_id": "2026-10-18-week-in-ai",
-        "priority": 1
-      },
-      {
-        "story": "Mahir's Reels: Draco fan trailer and AI Tesla Roadster chase",
-        "decision": "skipped",
-        "reason": "src/validate.js line 21 still uses 'single' before it is defined in validateReel, so both stay in inbox/skipped.json until it is fixed."
-      },
-      {
-        "story": "Anthropic's AI safety bill only kicks in at 50 deaths or $1B damage (Tom's Hardware)",
-        "decision": "covered",
-        "reason": "Already posted as 2026-10-17-anthropic-pitches-own-ai-safety-bill."
-      },
-      {
-        "story": "How employment is changing at Anthropic",
-        "decision": "covered",
-        "reason": "Already posted as 2026-10-17-anthropic-agents-outwork-staff-6-to-1."
-      },
-      {
-        "story": "Websites are closing their doors to AI agents (The Verge)",
-        "source": "https://www.theverge.com/ai-artificial-intelligence/1013195/ai-agents-blocked-web",
-        "decision": "skipped",
-        "reason": "Trend piece, and today is at the 8-job cap."
-      },
-      {
-        "story": "OpenAI faces lawsuits, subpoenas and EU scrutiny in one week (Tech Policy Press)",
-        "decision": "skipped",
-        "reason": "Recap of stories already covered this week."
-      },
-      {
-        "story": "Another OpenAI safety researcher quits",
-        "decision": "skipped",
-        "reason": "Could not confirm the person and details with two primary sources in this run, and the day is at the cap."
-      },
-      {
-        "story": "Google renames Gemini features again (Android Police)",
-        "decision": "skipped",
-        "reason": "Minor naming change, day is at the cap."
-      }
-    ],
-    "requests": []
-  },
-  {
     "run_at": "2026-10-19T02:03:43.074Z",
     "summary": "Sunday night run (22:00 New York): queued Meta blaming a Claude tool for the No Kings Instagram suspension (priority 1, sensitive, needs Mahir's approval) for Monday; Oct 18 is already at 8 jobs; the two Reel links stay in inbox/skipped.json because src/validate.js still crashes on Reels; no open requests.",
     "considered": [
@@ -5165,6 +5109,58 @@
         "source": "https://www.techspot.com/news/114171-nikon-photography-contest-winner-loses-title-after-sc",
         "decision": "skipped",
         "reason": "Good story but not timely enough to push past today's 8 jobs; can be reconsidered tomorrow."
+      }
+    ],
+    "requests": []
+  },
+  {
+    "run_at": "2026-10-26T00:02:06.993Z",
+    "summary": "Sunday 20:00 New York run: made the Reel from Mahir's NVIDIA RTX Spark link (review), and re-queued the weekly roundup as a v2 because the pipeline skipped the first version for sharing source links with two posts from this week; no new priority 1 story queued, the day is full.",
+    "considered": [
+      {
+        "story": "Mahir's link: NVIDIA RTX Spark Reel (link-2026-10-25-1551)",
+        "source": "https://aphnetworks.com/news/31749-nvidias-rtx-spark-chip-reinvents-laptops-agentic-ai",
+        "decision": "queued",
+        "job_id": "2026-10-25-nvidia-rtx-spark-pc-reel",
+        "priority": 1
+      },
+      {
+        "story": "Weekly roundup v2: swapped the OpenAI offline training and Google Gmail ads slides (their source links matched live posts, so the first version was skipped) for OpenAI agents muting their monitors and Claude's scorpion toxin binders",
+        "source": "https://bleepingcomputer.com/news/security/openai-agents-disabled-safety-monitoring-one-lied-about-it",
+        "decision": "queued",
+        "job_id": "2026-10-25-week-in-ai-v2",
+        "priority": 1
+      },
+      {
+        "story": "Grok releases the first seven minutes of its AI-generated Odyssey (TechCrunch)",
+        "source": "https://techcrunch.com",
+        "decision": "skipped",
+        "reason": "An entertainment demo rather than a major xAI launch, today is already at 8 news jobs, and it would expire before the next morning window."
+      },
+      {
+        "story": "Uber expands ChatGPT Work to more than 30,000 employees",
+        "decision": "skipped",
+        "reason": "Single minor source and the day is full."
+      },
+      {
+        "story": "Owners of Elvis Presley's music sue Anthropic",
+        "decision": "covered",
+        "reason": "Already covered as 2026-10-24-elvis-rights-holders-sue-anthropic."
+      },
+      {
+        "story": "Independent auditors find gaps in OpenAI agent monitoring (BankInfoSecurity)",
+        "decision": "covered",
+        "reason": "Same audit already covered in 2026-10-23-openai-trains-ai-with-no-internet."
+      },
+      {
+        "story": "Anthropic invites life-science labs to propose research collaborations with Claude",
+        "decision": "skipped",
+        "reason": "Single secondary source, small program announcement, day is full."
+      },
+      {
+        "story": "Musk warns of an AI lending crunch after SpaceX closes $40B GPU financing",
+        "decision": "skipped",
+        "reason": "Single market source seen in leads, and the day is full."
       }
     ],
     "requests": []
