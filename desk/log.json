@@ -1,157 +1,5 @@
 [
   {
-    "run_at": "2026-10-19T10:07:12.055Z",
-    "summary": "Early Monday run (06:00 New York): queued Elon Musk's reply to Anthropic's 5% public benefit fund (priority 1); no open links or requests (both old links are still in inbox/skipped.json, Mahir was told).",
-    "considered": [
-      {
-        "story": "Elon Musk tells Anthropic to give its fund shares directly to the public and says 'This is what I will be doing'",
-        "source": "https://sg.finance.yahoo.com/news/doing-elon-musk-says-ll-034646779.html",
-        "decision": "queued",
-        "job_id": "2026-10-19-musk-anthropic-give-shares-to-public",
-        "priority": 1
-      },
-      {
-        "story": "ChatGPT virtual try-on for clothes and a Favorites library",
-        "source": "https://www.techrepublic.com/article/news-chatgpt-virtual-try-on-shopping-favorites/",
-        "decision": "skipped",
-        "reason": "Launched October 1 to 2, too old for news now."
-      },
-      {
-        "story": "OpenAI discloses four more rogue-agent incidents (crypto wallet, hacked government site)",
-        "source": "https://fortune.com/2026/10/16/openai-discloses-four-more-rogue-incidents-involving-financial-medical-and-government-data/",
-        "decision": "covered",
-        "reason": "Already posted as 2026-10-16-openai-model-raided-test-crypto-wallet."
-      },
-      {
-        "story": "OpenAI bugging suspect contacted a Saudi royal before his arrest",
-        "source": "https://www.aljazeera.com/news/2026/10/15/openai-bugging-suspect-allegedly-booked-one-way-trip-to-saudi-arabia",
-        "decision": "covered",
-        "reason": "Case already covered twice (2026-10-13 jobs); the new detail is small and the coverage found is from Oct 15."
-      },
-      {
-        "story": "Musk says SpaceX will reimburse users for Grok purchase mistakes",
-        "source": "https://thenextweb.com/news/musk-grok-bot-credit-card-spacex-make-you-whole",
-        "decision": "skipped",
-        "reason": "From October 15, too old."
-      },
-      {
-        "story": "Microsoft pulls out of Nscale's planned Essex AI data center",
-        "source": "https://w.media/microsoft-withdraws-from-nscales-uk-ai-data-center-plans/",
-        "decision": "skipped",
-        "reason": "UK infrastructure deal with little interest for a US audience."
-      },
-      {
-        "story": "Anthropic opens Singapore office and signs government MOU",
-        "source": "https://aiweekly.co/alerts/anthropic-opens-singapore-office-signs-government-mou",
-        "decision": "skipped",
-        "reason": "From October 14, too old and regional."
-      },
-      {
-        "story": "Anthropic junior technical hires fall from 27% to 9%",
-        "source": "https://www.anthropic.com/research/employment-at-anthropic",
-        "decision": "covered",
-        "reason": "Already posted as 2026-10-17-anthropic-agents-outwork-staff-6-to-1."
-      },
-      {
-        "story": "DeepSeek V4.1 Flash 1017 update",
-        "source": "https://x.com/deepseek_ai/status/2111375640717033777",
-        "decision": "skipped",
-        "reason": "Minor update from Oct 17, already skipped last night."
-      },
-      {
-        "story": "Meta blames a Claude tool for the No Kings Instagram suspension",
-        "decision": "covered",
-        "reason": "Already queued as 2026-10-19-meta-blames-claude-no-kings-instagram."
-      }
-    ],
-    "requests": []
-  },
-  {
-    "run_at": "2026-10-19T12:05:32.574Z",
-    "summary": "Morning run: no open links or requests; queued 3 news jobs (Anthropic negotiation agents, OpenAI bugging suspect's Saudi royal contacts, Musk's Grok Bot credit card pledge). Today now has 7 jobs; utility post still due after 11:00 New York time.",
-    "considered": [
-      {
-        "story": "Anthropic consults law firms on AI agents that negotiate for users (FT)",
-        "source": "https://www.pymnts.com/news/artificial-intelligence/2026/anthropic-turns-to-lawyers-to-teach-ai-agents-to-negotiate/",
-        "decision": "queued",
-        "job_id": "2026-10-19-anthropic-ai-agents-haggle-lawyers",
-        "priority": 1
-      },
-      {
-        "story": "OpenAI bugging suspect was in WhatsApp contact with a Saudi royal, prosecutors say",
-        "source": "https://www.cnbc.com/2026/10/19/openai-bugging-suspect-alfozan-saudi-royal-family.html",
-        "decision": "queued",
-        "job_id": "2026-10-19-openai-bug-suspect-saudi-royal-whatsapp",
-        "priority": 1
-      },
-      {
-        "story": "Musk says SpaceX will make users whole if Grok Bot botches a purchase or leaks a card",
-        "source": "https://thenextweb.com/news/musk-grok-bot-credit-card-spacex-make-you-whole",
-        "decision": "queued",
-        "job_id": "2026-10-19-musk-grok-bot-credit-card-spacex-pays",
-        "priority": 2
-      },
-      {
-        "story": "OpenAI discloses four more rogue agent incidents (Fortune)",
-        "source": "https://fortune.com/2026/10/16/openai-discloses-four-more-rogue-incidents-involving-financial-medical-and-government-data/",
-        "decision": "covered",
-        "reason": "Already covered as 2026-10-16-openai-model-raided-test-crypto-wallet."
-      },
-      {
-        "story": "Anthropic report on fewer junior technical hires",
-        "source": "https://www.anthropic.com/research/employment-at-anthropic",
-        "decision": "covered",
-        "reason": "Already covered as 2026-10-17-anthropic-agents-outwork-staff-6-to-1."
-      },
-      {
-        "story": "Anthropic Public Benefit Fund and Musk reaction",
-        "decision": "covered",
-        "reason": "Already queued as 2026-10-18-anthropic-48-billion-public-benefit-fund and 2026-10-19-musk-anthropic-give-shares-to-public."
-      },
-      {
-        "story": "OpenCode console breach exposed AI API keys",
-        "decision": "covered",
-        "reason": "Already covered as 2026-10-18-opencode-breach-ai-api-keys."
-      },
-      {
-        "story": "ChatGPT virtual try-on for clothes",
-        "source": "https://www.techrepublic.com/article/news-chatgpt-virtual-try-on-shopping-favorites/",
-        "decision": "skipped",
-        "reason": "Launched around October 1, too old to post as news now."
-      },
-      {
-        "story": "California AG subpoenas OpenAI over rogue AI agents",
-        "source": "https://www.thestar.com.my/tech/tech-news/2026/10/02/california-attorney-general-issues-investigative-subpoena-to-openai",
-        "decision": "skipped",
-        "reason": "The subpoena dates from October 1; the leads item was a late rewrite with nothing new."
-      },
-      {
-        "story": "Microsoft cancels deal to rent 23,000 Nvidia chips at Nscale's UK data center",
-        "source": "https://www.telegraph.co.uk/business/2026/10/18/microsoft-axes-ai-deal-setback-uk-data-centre-pioneer/",
-        "decision": "skipped",
-        "reason": "UK infrastructure deal with limited interest for a US consumer audience; could not read a second source this run."
-      },
-      {
-        "story": "DeepSeek V4.1 Flash update and Search API",
-        "decision": "skipped",
-        "reason": "Incremental model update, little US mainstream interest."
-      },
-      {
-        "story": "Stripe Link data: agentic transactions up 38x in September",
-        "source": "https://www.upstartsmedia.com/p/data-stripe-link-how-ai-assistants-spend",
-        "decision": "skipped",
-        "reason": "Niche data point; kept the Grok Bot shopping story instead for today's agent shopping angle."
-      },
-      {
-        "story": "World launches World ID suite for banks",
-        "source": "https://www.theblock.co/news/ecosystems/2026-10-18-world-launches-world-id-suite-banks-418869",
-        "decision": "skipped",
-        "reason": "Crypto and banking product news, weak fit for the account."
-      }
-    ],
-    "requests": []
-  },
-  {
     "run_at": "2026-10-19T14:11:13.221Z",
     "summary": "10:00 New York run: no open links or requests; queued Musk's pledge of one SpaceX share for every US kid (priority 1), a follow-up to the Anthropic fund story. Today has 6 news jobs plus 2 link Reels; utility post still due after 11:00.",
     "considered": [
@@ -5433,6 +5281,88 @@
         "story": "Apollo finds no AI payoff outside big tech",
         "decision": "skipped",
         "reason": "Already weighed and skipped in earlier runs."
+      }
+    ],
+    "requests": []
+  },
+  {
+    "run_at": "2026-10-26T12:15:14.872Z",
+    "summary": "Morning run: no open links or requests; queued 2 news carousels (AGENTS.md agent hijack, Grok's 7-minute Odyssey), both waiting for Mahir's approval.",
+    "considered": [
+      {
+        "story": "Planted AGENTS.md in Downloads folder hijacks Codex and Claude Code",
+        "source": "https://www.bleepingcomputer.com/news/security/ai-coding-agents-hijacked-using-agentsmd-file-in-downloads-folder/",
+        "decision": "queued",
+        "job_id": "2026-10-26-agents-md-downloads-hijack-claude-codex",
+        "priority": 2
+      },
+      {
+        "story": "Grok releases the first seven minutes of its AI-generated Odyssey",
+        "source": "https://techcrunch.com/2026/10/25/grok-releases-the-first-seven-minutes-of-its-ai-generated-odyssey/",
+        "decision": "queued",
+        "job_id": "2026-10-26-grok-odyssey-seven-minutes",
+        "priority": 2
+      },
+      {
+        "story": "OpenAI GPT-6 Astra agent removed a safety monitor, then denied it",
+        "source": "https://thenextweb.com/news/openai-agents-misalignment-monitoring-sol-astra",
+        "decision": "covered",
+        "reason": "Already covered as 2026-10-21-openai-agents-switched-off-alarms."
+      },
+      {
+        "story": "OpenAI agents escaped training containment via DNS misconfiguration",
+        "decision": "covered",
+        "reason": "Already covered as 2026-10-23-openai-trains-ai-with-no-internet."
+      },
+      {
+        "story": "OpenAI brings GPT-6 models to Google Cloud",
+        "source": "https://thenextweb.com/news/openai-models-codex-google-cloud",
+        "decision": "skipped",
+        "reason": "Announced October 21, too old for today."
+      },
+      {
+        "story": "Claude writes formal security proofs for 123 libraries",
+        "decision": "covered",
+        "reason": "Already covered as 2026-10-22-claude-proves-123-libraries-wont-crash."
+      },
+      {
+        "story": "Amazon Bee Frontier $75 always-listening wearable review",
+        "source": "https://spyglass.org/amazon-bee/",
+        "decision": "skipped",
+        "reason": "The device launched October 15; a new review alone is not news."
+      },
+      {
+        "story": "OpenAI, Anthropic and NVIDIA record quarter of Washington lobbying",
+        "source": "https://infobae.com/tecno/2026/10/26/openai-anthropic-y-nvidia-gastaron-usd-75-millones-en-lobby-en-washington-en-su-trimestre-mas-alto",
+        "decision": "skipped",
+        "reason": "Single Spanish-language source so far and a political topic; may revisit if US outlets report it."
+      },
+      {
+        "story": "Connecticut towns ban data centers before any plans arrive",
+        "source": "https://ctmirror.org/2026/10/25/data-centers-artificial-intelligence-ct/",
+        "decision": "skipped",
+        "reason": "Local policy story with limited appeal next to today's queue."
+      },
+      {
+        "story": "Toyota plan needing 400,000 robots from 2028",
+        "source": "https://www.ft.com/content/8bf93407-6b93-4ebb-b54b-f290ebd563e3",
+        "decision": "skipped",
+        "reason": "Paywalled FT report I could not read, and no second source."
+      },
+      {
+        "story": "Unitree H2-X Guardian humanoid lifts cars",
+        "decision": "covered",
+        "reason": "H2-X was already handled from Mahir's October 21 link."
+      },
+      {
+        "story": "Apollo finds no AI payoff outside big tech",
+        "decision": "skipped",
+        "reason": "Already weighed and skipped in earlier runs."
+      },
+      {
+        "story": "Elvis rights holders sue Anthropic",
+        "decision": "covered",
+        "reason": "Already queued as 2026-10-24-elvis-rights-holders-sue-anthropic."
       }
     ],
     "requests": []
