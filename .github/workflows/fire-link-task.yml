@@ -1,0 +1,28 @@
+name: Start link task
+
+# Starts the "Neurafeed Links API" Claude task (same call the bot makes) and shows the answer.
+on:
+  workflow_dispatch:
+    inputs:
+      ids:
+        description: "inbox item ids (empty = all open links and requests)"
+        required: false
+        default: ""
+
+permissions:
+  contents: read
+
+jobs:
+  fire:
+    runs-on: ubuntu-latest
+    steps:
+      - env:
+          TOKEN: ${{ secrets.LINK_ROUTINE_TOKEN }}
+          IDS: ${{ inputs.ids }}
+        run: |
+          [ -n "$TOKEN" ] || { echo "::error::LINK_ROUTINE_TOKEN secret is empty"; exit 1; }
+          echo "::notice::token looks like: ${TOKEN:0:13}... (${#TOKEN} chars)"
+          body=$(jq -n --arg t "Handle these inbox items now: ${IDS:-all open links and requests}" '{text:$t}')
+          code=$(curl -s -o /tmp/r -w '%{http_code}' -X POST "https://api.anthropic.com/v1/claude_code/routines/trig_01AjA44Z4u81PZhA9N7NQzNN/fire" \
+            -H "Authorization: Bearer $TOKEN" -H "anthropic-version: 2023-06-01" -H "Content-Type: application/json" -d "$body")
+          echo "::notice::HTTP $code $(jq -c '{type, error: .error.message, session: .claude_code_session_url}' /tmp/r 2>/dev/null || head -c 300 /tmp/r)"
