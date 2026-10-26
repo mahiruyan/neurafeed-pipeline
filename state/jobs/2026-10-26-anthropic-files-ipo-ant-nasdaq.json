@@ -10,9 +10,19 @@
       "status": "render_failed",
       "at": "2026-10-26T18:05:10.821Z",
       "by": "system"
+    },
+    {
+      "status": "rendered",
+      "at": "2026-10-26T19:41:26.153Z",
+      "by": "system"
+    },
+    {
+      "status": "pending",
+      "at": "2026-10-26T19:41:28.370Z",
+      "by": "from your link, waiting for Mahir"
     }
   ],
-  "status": "render_failed",
+  "status": "pending",
   "files": [
     "out/2026-10-26-anthropic-files-ipo-ant-nasdaq/1.jpg",
     "out/2026-10-26-anthropic-files-ipo-ant-nasdaq/2.jpg",
@@ -24,6 +34,18 @@
   "image_errors": [
     "slide 1 badge 1: logo check skipped (You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.)"
   ],
-  "updated_at": "2026-10-26T18:05:10.821Z",
-  "error": "fetch failed"
+  "updated_at": "2026-10-26T19:41:28.370Z",
+  "error": "fetch failed",
+  "sent_at": "2026-10-26T19:41:28.370Z",
+  "message_id": 1649,
+  "by": "from your link, waiting for Mahir",
+  "tg_messages": [
+    1643,
+    1644,
+    1645,
+    1646,
+    1647,
+    1648,
+    1649
+  ]
 }
