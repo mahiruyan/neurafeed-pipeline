@@ -1,27 +1,5 @@
 [
   {
-    "run_at": "2026-10-19T08:39:56.145Z",
-    "summary": "Mahir asked to share his two skipped Reels: with his OK, fixed the validateReel crash in src/validate.js (undefined 'single') and queued both Reels for his approval.",
-    "considered": [
-      {
-        "story": "Harry Potter, but if Draco was a girl (AI fan trailer)",
-        "source": "https://www.instagram.com/reel/DemIMROAk6w/",
-        "decision": "queued",
-        "job_id": "2026-10-19-harry-potter-draco-girl-reel",
-        "priority": 1,
-        "reason": "Mahir's link; original creator of the trailer could not be found, so the caption says so and names the page that shared it."
-      },
-      {
-        "story": "Police chases are about to get a lot harder (AI Tesla Roadster chase by @CharaspowerAI)",
-        "source": "https://www.instagram.com/reel/DemIrXQAtNc/",
-        "decision": "queued",
-        "job_id": "2026-10-19-tesla-roadster-police-chase-reel",
-        "priority": 1
-      }
-    ],
-    "requests": []
-  },
-  {
     "run_at": "2026-10-19T10:07:12.055Z",
     "summary": "Early Monday run (06:00 New York): queued Elon Musk's reply to Anthropic's 5% public benefit fund (priority 1); no open links or requests (both old links are still in inbox/skipped.json, Mahir was told).",
     "considered": [
@@ -5383,6 +5361,76 @@
       },
       {
         "story": "Apollo economist: AI shows zero payoff outside big tech",
+        "decision": "skipped",
+        "reason": "Already weighed and skipped in earlier runs."
+      }
+    ],
+    "requests": []
+  },
+  {
+    "run_at": "2026-10-26T10:04:31.082Z",
+    "summary": "Monday 06:00 New York run: no open links or requests; queued one priority 2 story (Berkeley Fields Medal winner stops grading homework because of AI). Fresh overnight news was thin and today's generated cover limit is already used.",
+    "considered": [
+      {
+        "story": "UC Berkeley Fields Medal winner Richard Borcherds stops grading homework for correctness because of AI",
+        "source": "https://www.dailycal.org/news/campus/academics/ai-use-leads-uc-berkeley-math-professor-to-see-no-point-in-grading-homework/article_bdf1eae2-c08b-491f-b9f1-81a7cea177de.html",
+        "decision": "queued",
+        "job_id": "2026-10-26-berkeley-fields-medalist-stops-grading-homework",
+        "priority": 2
+      },
+      {
+        "story": "Unitree H2-X Guardian humanoid lifts cars in demo",
+        "source": "https://interestingengineering.com/ai-robotics/unitree-showcases-h2-x-humanoid-robot",
+        "decision": "covered",
+        "reason": "Already made as 2026-10-21-unitree-h2-x-kung-fu-guardian-reel from Mahir's link, and the video is from October 21."
+      },
+      {
+        "story": "SoftBank commits $50 billion to AI and data centers in Malaysia",
+        "source": "https://www.gurufocus.com/news/9141848/softbank-plans-50-billion-investment-in-malaysias-ai-and-tech-sectors",
+        "decision": "skipped",
+        "reason": "Foreign investment pledge with limited US interest, already skipped on Sunday."
+      },
+      {
+        "story": "Visa lets AI agents make approved supplier payments",
+        "source": "https://www.paymentsjournal.com/visa-tests-ai-agents-for-supplier-payments/?noamp=mobile",
+        "decision": "skipped",
+        "reason": "Business pilot announced October 21, too old and niche."
+      },
+      {
+        "story": "SK Telecom gives its AI agents employee IDs and human supervisors",
+        "source": "https://biz.heraldcorp.com/article/10914221",
+        "decision": "skipped",
+        "reason": "Korean corporate governance report with little US consumer interest."
+      },
+      {
+        "story": "OpenAI agents escaped training environments (The Neuron lead story)",
+        "decision": "covered",
+        "reason": "Already covered as 2026-10-23-openai-trains-ai-with-no-internet."
+      },
+      {
+        "story": "Claude accessed Georgia election data",
+        "decision": "covered",
+        "reason": "Already queued as 2026-10-26-claude-georgia-voter-data-token."
+      },
+      {
+        "story": "SpaceX closes $40 billion GPU debt deal",
+        "decision": "covered",
+        "reason": "Already queued as 2026-10-26-spacex-40-billion-nvidia-gpus-neoclouds."
+      },
+      {
+        "story": "Grok releases first seven minutes of AI-generated Odyssey",
+        "source": "https://techcrunch.com/2026/10/25/grok-releases-the-first-seven-minutes-of-its-ai-generated-odyssey/",
+        "decision": "skipped",
+        "reason": "Clip posted October 23 and already skipped in earlier runs."
+      },
+      {
+        "story": "Amazon drops $427 million Virginia data center plan after neighbor pushback",
+        "source": "https://247wallst.com/investing/2026/10/24/amazon-just-walked-away-from-a-427-million-data-center-plan-after-neighbors-fought-back/",
+        "decision": "skipped",
+        "reason": "Reported October 24, now too old, and a single secondary source."
+      },
+      {
+        "story": "Apollo finds no AI payoff outside big tech",
         "decision": "skipped",
         "reason": "Already weighed and skipped in earlier runs."
       }
