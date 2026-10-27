@@ -317,7 +317,7 @@ const Title: React.FC<{ A: Doc2Props['assets'] }> = ({ A }) => {
 const Subtitles: React.FC<{ timing: Doc2Props['timing']; captions: string[] }> = ({ timing, captions }) => {
   const f = useCurrentFrame(); const { fps } = useVideoConfig(); const t = f / fps; const S = timing.sentences;
   const i = S.findIndex((s, k) => t >= s.start - 0.05 && t < (k < S.length - 1 ? S[k + 1].start - 0.05 : s.end + 0.4));
-  if (i < 0 || !captions[i]) return null;
+  if (i < 0 || !captions[i] || i === S.length - 1) return null;
   const words = captions[i].split(' '); const total = captions[i].length;
   let acc = 0; const at = words.map((w) => { const x = acc / total; acc += w.length + 1; return S[i].start + x * (S[i].end - S[i].start); });
   let w = 0; for (let k = 0; k < words.length; k++) if (t >= at[k]) w = k;
