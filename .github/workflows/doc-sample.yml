@@ -48,7 +48,7 @@ jobs:
           node video/sample/thumb.js b "${{ inputs.thumb_b }}" build/thumb-b.jpg
       - name: Push to doc-sample branch
         run: |
-          mkdir -p /tmp/out && cp build/* video/doc/public/assets/*.png video/doc/public/assets/*.json /tmp/out/ 2>/dev/null || true
+          mkdir -p /tmp/out && cp build/* video/doc/public/assets/*.png video/doc/public/assets/*.json video/doc/public/assets/dario.jpg /tmp/out/ 2>/dev/null || true
           git config user.name "neurafeed-bot"; git config user.email "bot@neurafeed.ai"
           git checkout --orphan doc-sample && git rm -rqf --cached . && rm -rf sample && mkdir sample && cp /tmp/out/* sample/
           git add -f sample && git commit -qm "documentary sample" && git push -f origin doc-sample
