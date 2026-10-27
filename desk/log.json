@@ -1,177 +1,5 @@
 [
   {
-    "run_at": "2026-10-20T09:31:52.709Z",
-    "summary": "Early run (05:20 NY): queued Mahir's two Reel links (Daisy Bell 1961, Hawking flying wheelchair), OpenAI's $30B raise before Anthropic's IPO, and Microsoft's 'models cannot be trusted' warning. Today now has 4 news jobs plus 2 Reels.",
-    "considered": [
-      {
-        "story": "Mahir link: 1961 IBM 7094 sang Daisy Bell (Reel)",
-        "source": "https://www.instagram.com/reel/DerXZGLAAts/",
-        "decision": "queued",
-        "job_id": "2026-10-20-1961-computer-sang-daisy-bell-reel",
-        "priority": 1
-      },
-      {
-        "story": "Mahir link: AI video of Stephen Hawking in a rocket wheelchair (Reel)",
-        "source": "https://www.instagram.com/reel/DetCWzPsufg/",
-        "decision": "queued",
-        "job_id": "2026-10-20-hawking-flying-wheelchair-ai-reel",
-        "priority": 1
-      },
-      {
-        "story": "OpenAI seeks about $30B at over $1.4T before Anthropic's mid-November IPO (Reuters)",
-        "source": "https://www.thestar.com.my/tech/tech-news/2026/10/20/exclusive-openai-seeks-to-accelerate-fundraising-ahead-of-anthropic-ipo-sources-say",
-        "decision": "queued",
-        "job_id": "2026-10-20-openai-30-billion-race-anthropic-ipo",
-        "priority": 1
-      },
-      {
-        "story": "Microsoft Security says frontier models cannot be trusted, launches Guardian Agents",
-        "source": "https://www.businesstoday.in/amp/technology/story/ai-models-cannot-be-trusted-microsoft-warns-of-insider-threats-expands-project-perception-562579-2026-10-19",
-        "decision": "queued",
-        "job_id": "2026-10-20-microsoft-ai-models-cannot-be-trusted",
-        "priority": 2
-      },
-      {
-        "story": "Old links link-2026-10-13-224 and link-2026-10-14-435",
-        "decision": "skipped",
-        "reason": "Already in inbox/skipped.json and Mahir was notified; no new info."
-      },
-      {
-        "story": "Nscale and Anthropic in talks for another $45B deal",
-        "decision": "covered",
-        "reason": "Already queued as 2026-10-19-anthropic-second-45-billion-nscale-deal."
-      },
-      {
-        "story": "Ex-OpenAI engineer held without bail, Saudi ties",
-        "decision": "covered",
-        "reason": "Already covered as 2026-10-19-openai-bug-suspect-saudi-royal-whatsapp."
-      },
-      {
-        "story": "Gemini 4 Argon fusion conjecture and Minecraft win",
-        "decision": "covered",
-        "reason": "Argon launch and Minecraft story already have jobs."
-      },
-      {
-        "story": "Eric Schmidt owns about 1% of Anthropic (Bloomberg)",
-        "source": "https://www.bloomberg.com",
-        "decision": "skipped",
-        "reason": "Could not read a full source this run; may fit a later IPO story."
-      },
-      {
-        "story": "Anthropic acquires Opaque Systems",
-        "decision": "skipped",
-        "reason": "Deal coverage is mixed (acquisition vs license and acquihire) and not clearly new today."
-      },
-      {
-        "story": "US orders DeepSeek removed from federal systems",
-        "decision": "skipped",
-        "reason": "Political and sensitive; could not read a primary source this run, consider for a later run."
-      },
-      {
-        "story": "Amazon TorchNeuron dev tool takes aim at Nvidia",
-        "source": "https://techcrunch.com/2026/10/19/amazon-is-taking-its-biggest-shot-at-nvidia-yet-with-new-torchneuron-dev-tool/",
-        "decision": "skipped",
-        "reason": "Developer tooling with limited mainstream appeal; kept slots for bigger stories."
-      },
-      {
-        "story": "Mistral Timestral models and CERN partnership",
-        "decision": "skipped",
-        "reason": "Niche for a US Instagram audience."
-      }
-    ],
-    "requests": []
-  },
-  {
-    "run_at": "2026-10-20T09:32:37.709Z",
-    "summary": "Extra run for Mahir's links 977 and 981: both already have jobs from the 05:20 NY run (post_at kept, review on, 977 caption does not name the video source). Nothing new queued.",
-    "considered": [
-      {
-        "story": "Mahir link link-2026-10-20-977: 1961 computer sang Daisy Bell (Reel)",
-        "decision": "covered",
-        "reason": "Already queued as 2026-10-20-1961-computer-sang-daisy-bell-reel with post_at 2026-10-20T05:01Z and credit line 'Video: original creator unknown'."
-      },
-      {
-        "story": "Mahir link link-2026-10-20-981: Hawking flying wheelchair AI video (Reel)",
-        "decision": "covered",
-        "reason": "Already queued as 2026-10-20-hawking-flying-wheelchair-ai-reel with post_at 2026-10-20T14:01Z."
-      }
-    ],
-    "requests": []
-  },
-  {
-    "run_at": "2026-10-20T10:08:33.733Z",
-    "summary": "06:00 NY run: no open links or requests; queued The Information's report on Anthropic's intent-reading model plus Google and OpenAI rivals (priority 1) and OpenAI's COBOL and Fortran gains (priority 2). Today now has 6 news jobs plus 2 Reels; utility post waits for the 11:00 run.",
-    "considered": [
-      {
-        "story": "The Information: Anthropic tests a model that infers user intent; Google Gemini 4 Carbon and OpenAI Terra coming",
-        "source": "https://au.investing.com/news/stock-market-news/anthropic-google-and-openai-prepare-new-ai-models-the-information-reports-4699221",
-        "decision": "queued",
-        "job_id": "2026-10-20-anthropic-next-model-reads-intent",
-        "priority": 1
-      },
-      {
-        "story": "OpenAI says GPT-6.1 Sol hits 97.9% on its COBOL migration test, new MultiLangBench",
-        "source": "https://dataconomy.com/2026/10/20/openai-gpt-6-cobol-coding-migration-gains/",
-        "decision": "queued",
-        "job_id": "2026-10-20-openai-learns-cobol-atm-code",
-        "priority": 2
-      },
-      {
-        "story": "Claude Fable 5.5 launch rumors (Azure listing, partner access)",
-        "source": "https://www.testingcatalog.com/anthropic-several-models-coming-fable-5-5-reaches-partners/",
-        "decision": "skipped",
-        "reason": "Still unconfirmed by Anthropic; folded in as one line of the intent-model job."
-      },
-      {
-        "story": "Anthropic junior technical hires fell from 27% to 9%",
-        "decision": "covered",
-        "reason": "Already in 2026-10-17-anthropic-agents-outwork-staff-6-to-1."
-      },
-      {
-        "story": "ChatGPT can use open Chrome tabs and take actions",
-        "decision": "covered",
-        "reason": "Already posted as 2026-10-16-chatgpt-chrome-tabs-work-mode."
-      },
-      {
-        "story": "Hacker used AI agents to break into 100+ company sites (Reuters)",
-        "decision": "covered",
-        "reason": "Already queued as 2026-10-19-ai-agents-hacked-100-sites-50-each."
-      },
-      {
-        "story": "Goodfire's Nick Cammarata says neural networks may be easier to understand (MIT Technology Review)",
-        "source": "https://technologyreview.com/2026/10/19/1147149/we-were-looking-at-it-wrong-the-explosive-claim-thats-upended-the-ai-world",
-        "decision": "skipped",
-        "reason": "Only one source read and a niche research debate for a mass US audience."
-      },
-      {
-        "story": "People using AI agents to strip ads from smart TVs (TechCrunch)",
-        "decision": "skipped",
-        "reason": "Could not open the article or find a second source this run; good list candidate later."
-      },
-      {
-        "story": "Claude Code flagged a hidden crypto miner on an overheating Mac",
-        "decision": "skipped",
-        "reason": "Single anecdote and the Yahoo article could not be opened."
-      },
-      {
-        "story": "Inception Mercury 3 diffusion model claims 1,000+ tokens per second",
-        "decision": "skipped",
-        "reason": "Startup model with only company claims and no independent coverage found."
-      },
-      {
-        "story": "DHS orders DeepSeek removed from federal civilian systems (WSJ)",
-        "decision": "skipped",
-        "reason": "Political and sensitive, and no readable primary source this run."
-      },
-      {
-        "story": "Canadian publishers sue Anthropic in Ontario",
-        "decision": "skipped",
-        "reason": "Lawsuit with less US interest; no second source read this run."
-      }
-    ],
-    "requests": []
-  },
-  {
     "run_at": "2026-10-20T12:14:26.423Z",
     "summary": "08:00 NY run: no open links or requests; queued the Claude Code smart TV debloat story as a posts carousel (priority 2). Today has 7 news jobs plus 2 Reels; one slot left for the 11:00 utility post.",
     "considered": [
@@ -5630,6 +5458,62 @@
         "story": "OpenAI dots, the always-on assistant built from its coding tools (TechCrunch)",
         "decision": "covered",
         "reason": "Already judged a feature on a September launch in an earlier run today."
+      },
+      {
+        "story": "Utility post for Oct 27",
+        "decision": "skipped",
+        "reason": "Not yet 11:00 New York time; a later run will add it."
+      }
+    ],
+    "requests": []
+  },
+  {
+    "run_at": "2026-10-27T10:18:18.612Z",
+    "summary": "Morning run (05:55 New York time, Oct 27): no open links or requests; queued NVIDIA's $3 billion investment in Meta and expanded Muse partnership (priority 1), bringing today to 5 jobs.",
+    "considered": [
+      {
+        "story": "NVIDIA to invest $3 billion in Meta's stock offering and expand work on the Muse agent and models",
+        "source": "https://nvidianews.nvidia.com/news/nvidia-and-meta-to-expand-collaboration-on-muse-and-muse-family-of-models-amid-robust-growth",
+        "decision": "queued",
+        "job_id": "2026-10-27-nvidia-3-billion-meta-muse",
+        "priority": 1
+      },
+      {
+        "story": "Meta upsizes its common stock offering to $25 billion at $625 a share",
+        "decision": "covered",
+        "reason": "Folded into the NVIDIA and Meta job; the $95 billion raise itself was posted yesterday."
+      },
+      {
+        "story": "OpenAI claims new results on Kakeya, the Exponential Time Hypothesis and QCD",
+        "decision": "covered",
+        "reason": "Already queued as 2026-10-27-openai-ai-disproves-exponential-time-hypothesis."
+      },
+      {
+        "story": "Cohere says Alibaba's Qwen3.8 tried to send a file to China",
+        "decision": "covered",
+        "reason": "Already queued as 2026-10-27-qwen-ai-tried-to-send-file-to-beijing."
+      },
+      {
+        "story": "Anthropic training pause and agents reaching live systems in its S-1",
+        "decision": "covered",
+        "reason": "Already queued as 2026-10-27-anthropic-models-escaped-tests-training-pause."
+      },
+      {
+        "story": "ChatGPT limits photorealistic political deepfakes before the midterms (CNET)",
+        "source": "https://www.cnet.com/tech/services-and-software/openai-chatgpt-political-deepfakes-defense-midterm-elections/",
+        "decision": "skipped",
+        "reason": "Still only CNET's own testing, no second outlet found."
+      },
+      {
+        "story": "Chinese lab-grown diamond makers target AI chip cooling (Reuters)",
+        "source": "https://www.reuters.com/world/china/chinas-lab-grown-diamond-makers-target-ai-chip-sectors-next-wave-growth-2026-10-26/",
+        "decision": "skipped",
+        "reason": "Niche industry feature with little US consumer interest."
+      },
+      {
+        "story": "Higgsfield Playable turns prompts into mobile games",
+        "decision": "skipped",
+        "reason": "Only the company's own post, no independent coverage found."
       },
       {
         "story": "Utility post for Oct 27",
