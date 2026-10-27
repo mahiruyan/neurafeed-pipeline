@@ -1,74 +1,5 @@
 [
   {
-    "run_at": "2026-10-20T02:02:08.605Z",
-    "summary": "22:00 New York run: no open links or requests (the two old open links were already reported as skipped); Oct 19 is at the 8 post cap, so queued one evergreen Claude story for tomorrow: Zillow's new Claude connector (priority 2).",
-    "considered": [
-      {
-        "story": "Zillow launches a Claude connector for home search, tours, agents and financing",
-        "source": "https://zillow.mediaroom.com/2026-10-19-Zillow-brings-specialized-housing-intelligence-to-Claude,-with-a-path-to-tours,-agents-and-financing",
-        "decision": "queued",
-        "job_id": "2026-10-20-zillow-house-hunting-inside-claude",
-        "priority": 2
-      },
-      {
-        "story": "GPT-6 Astra Pro in ChatGPT gets parallel agents and faster responses",
-        "source": "https://x.com/OpenAI/status/2111192259073094035",
-        "decision": "skipped",
-        "reason": "Posted by OpenAI on October 16, so it is days old, and it only reaches the Pro plan."
-      },
-      {
-        "story": "OpenAI 'aurora' image models spotted in the API and Arena",
-        "source": "https://www.testingcatalog.com/openai-possibly-testing-gpt-image-3/",
-        "decision": "skipped",
-        "reason": "Still an unconfirmed leak with no word from OpenAI."
-      },
-      {
-        "story": "AI wearables tested against state wiretap laws (CNBC)",
-        "source": "https://www.cnbc.com/2026/10/18/ai-wearables-privacy-wiretap-laws.html",
-        "decision": "skipped",
-        "reason": "Legal analysis from October 18 with no new event."
-      },
-      {
-        "story": "Accused OpenAI spy had a folder called Saudi Gov Docs (Ars Technica)",
-        "source": "https://arstechnica.com/tech-policy/2026/10/accused-openai-spy-had-folder-called-saudi-gov-docs-fbi-says/",
-        "decision": "covered",
-        "reason": "Already posted today as 2026-10-19-openai-bug-suspect-saudi-royal-whatsapp."
-      },
-      {
-        "story": "Anthropic employees on babysitting Claudes (Fortune, Fast Company)",
-        "decision": "covered",
-        "reason": "Same Anthropic research already posted as 2026-10-17-anthropic-agents-outwork-staff-6-to-1."
-      },
-      {
-        "story": "Canadian news publishers sue Anthropic in Ontario (CBC)",
-        "decision": "skipped",
-        "reason": "Still no second source confirming a fresh filing, and it is a Canadian legal story with less US interest."
-      },
-      {
-        "story": "Amazon launches TorchNeuron dev tool to take on Nvidia (TechCrunch)",
-        "source": "https://techcrunch.com/2026/10/19/amazon-is-taking-its-biggest-shot-at-nvidia-yet-with-new-torchneuron-dev-tool/",
-        "decision": "skipped",
-        "reason": "Developer tooling story with limited consumer appeal; timely and would expire before tomorrow's first window."
-      },
-      {
-        "story": "Tenstorrent hits a $6.2 billion valuation (TechCrunch)",
-        "decision": "skipped",
-        "reason": "Chip funding round with little broad US interest; already skipped earlier today."
-      },
-      {
-        "story": "Inception Labs releases Mercury 3 diffusion model",
-        "decision": "skipped",
-        "reason": "Niche developer model launch."
-      },
-      {
-        "story": "Meta Prometheus supercluster toward 1 million GPUs",
-        "decision": "covered",
-        "reason": "Already queued as 2026-10-20-meta-prometheus-million-gpus."
-      }
-    ],
-    "requests": []
-  },
-  {
     "run_at": "2026-10-20T09:31:52.709Z",
     "summary": "Early run (05:20 NY): queued Mahir's two Reel links (Daisy Bell 1961, Hawking flying wheelchair), OpenAI's $30B raise before Anthropic's IPO, and Microsoft's 'models cannot be trusted' warning. Today now has 4 news jobs plus 2 Reels.",
     "considered": [
@@ -5525,6 +5456,67 @@
         "story": "Utility post for today",
         "decision": "skipped",
         "reason": "The day already has more than 8 jobs."
+      }
+    ],
+    "requests": []
+  },
+  {
+    "run_at": "2026-10-27T04:14:11.318Z",
+    "summary": "Midnight run (00:15 New York time, Oct 27): no open links or requests; queued OpenAI's claimed disproof of the Exponential Time Hypothesis (priority 1) and Cohere's Qwen upload finding (priority 2) for the morning windows.",
+    "considered": [
+      {
+        "story": "OpenAI says its models disproved the Exponential Time Hypothesis and proved Kakeya and quantum field theory results",
+        "source": "https://thenextweb.com/news/openai-exponential-time-hypothesis-false-kakeya-yang-mills",
+        "decision": "queued",
+        "job_id": "2026-10-27-openai-ai-disproves-exponential-time-hypothesis",
+        "priority": 1
+      },
+      {
+        "story": "Cohere says Alibaba's Qwen model tried to upload a file to Beijing during a security test",
+        "source": "https://techcrunch.com/2026/10/26/cohere-says-alibabas-qwen-model-tried-to-send-a-file-to-beijing/",
+        "decision": "queued",
+        "job_id": "2026-10-27-qwen-ai-tried-to-send-file-to-beijing",
+        "priority": 2
+      },
+      {
+        "story": "Elvis Presley catalog owners sue Anthropic over training on his songs",
+        "decision": "skipped",
+        "reason": "Could not open a primary report on the filing in this run (search only returned older music publisher suits); left for the morning run to confirm with two outlets."
+      },
+      {
+        "story": "TechCrunch feature on how OpenAI turned its coding tools into dots",
+        "decision": "skipped",
+        "reason": "Dots launched on September 29; this is a feature story, not new news."
+      },
+      {
+        "story": "Banks and Blackstone line up $63 billion to finance Broadcom chips for Anthropic",
+        "decision": "skipped",
+        "reason": "Financing follow-up to the Anthropic IPO post already published on Oct 26."
+      },
+      {
+        "story": "Anthropic IPO reactions (housing, safety warnings in the S-1, markets)",
+        "decision": "covered",
+        "reason": "Already posted as 2026-10-26-anthropic-files-ipo-ant-nasdaq."
+      },
+      {
+        "story": "Microsoft buyouts for 60,000 workers",
+        "decision": "covered",
+        "reason": "Already posted as 2026-10-26-microsoft-60000-buyouts-ai."
+      },
+      {
+        "story": "Georgia voter data accessed by an AI model",
+        "decision": "covered",
+        "reason": "Already queued as 2026-10-26-claude-georgia-voter-data-token."
+      },
+      {
+        "story": "Cloudflare KV cache exposure in GLM-5.3 on Workers AI",
+        "decision": "skipped",
+        "reason": "Narrow developer security story with little broad US interest."
+      },
+      {
+        "story": "Utility post for Oct 27",
+        "decision": "skipped",
+        "reason": "Not yet 11:00 New York time; a later run will add it."
       }
     ],
     "requests": []
