@@ -66,7 +66,8 @@ jobs:
               let d; try { const u=new URL(v.trim()); d=`protocol=${u.protocol} host=*${u.hostname.slice(-22)} port=${u.port} db=${u.pathname.length>1} user=${!!u.username} pass=${!!u.password} params=${[...u.searchParams.keys()].join("+")}`; } catch(e) { d=`unparseable (len ${v.length}, starts ${JSON.stringify(v.slice(0,11))}, quotes=${/^["\x27]/.test(v)}, spaces=${/\s/.test(v)})`; }
               console.log(`::notice::${process.argv[2]} DATABASE_URL: ${d}`);' /tmp/env-$app.json $app
           done
-          for app in web admin; do echo "::notice::$app hidden by Netlify: $(jq -r 'to_entries | map(select(.value|test("^[*]+$"))) | map(.key) | join(", ")' /tmp/env-$app.json)"; done
+          for app in web admin; do echo "::notice::$app lengths: $(jq -r 'to_entries | map("\(.key)=\(.value|length)") | join(" ")' /tmp/env-$app.json)"; done
+          curl -sf -H "$H" "$api/sites/neurafeed-staging-admin.netlify.app" >/dev/null && echo "::notice::admin env flags: $(curl -s -H "$H" "$api/accounts/$(curl -s -H "$H" "$api/sites/neurafeed-staging-admin.netlify.app" | jq -r .account_slug)/env?site_id=$(curl -s -H "$H" "$api/sites/neurafeed-staging-admin.netlify.app" | jq -r .id)" | jq -r '[.[] | select(.key=="DATABASE_URL" or .key=="OPENAI_API_KEY") | "\(.key) secret=\(.is_secret) contexts=\([.values[].context]|join("+"))"] | join("; ")')"
           # The public site uses the admin's database settings (its own Netlify DATABASE_URL is not valid).
           jq -s '.[0] + {NEURAFEED_DATABASE_CA_CERT_BASE64: (.[0].NEURAFEED_DATABASE_CA_CERT_BASE64 // .[1].NEURAFEED_DATABASE_CA_CERT_BASE64), DATABASE_URL: .[1].DATABASE_URL} | with_entries(select(.value != null))' /tmp/env-web.json /tmp/env-admin.json > /tmp/env-web2.json && mv /tmp/env-web2.json /tmp/env-web.json
 
