@@ -1,0 +1,165 @@
+{
+  "id": "2026-10-27-cloudflare-ai-leaked-other-customers-data",
+  "created_at": "2026-10-27T12:50:00Z",
+  "story_time": "2026-10-26T20:00:00Z",
+  "timely": false,
+  "sensitive": false,
+  "priority": 2,
+  "review": true,
+  "format": "carousel",
+  "site_category": "companies",
+  "sources": [
+    {
+      "name": "Unite.AI",
+      "url": "https://www.unite.ai/cloudflare-says-glm-5-3-bug-leaked-155-responses-across-tenant-sessions/"
+    },
+    {
+      "name": "Data Studios",
+      "url": "https://www.datastudios.org/post/cloudflare-workers-ai-glm-5-3-kv-cache-exposure-155-responses-sglang"
+    },
+    {
+      "name": "1023 Jack",
+      "url": "https://1023jack.com/news/your-ai-answer-in-a-stranger-s-session-cloudflare-s-kv-cache-leak-and-the-ai-spa/"
+    },
+    {
+      "name": "Mallory",
+      "url": "https://mallory.ai/stories/01a17a82-65fb-762b-9043-2471b832766e"
+    }
+  ],
+  "threads_text": "Cloudflare says its hosted GLM-5.3 model sent 155 answers that contained data from other customers' requests over almost two weeks. A cache that was too small plus an engine bug let very long prompts read leftovers from earlier ones. Would you still send private data to a cloud AI model?",
+  "caption": "Cloudflare says its hosted GLM-5.3 AI model returned data from other customers' requests in 155 responses between August 27 and September 9.\nA cache that was too small and a bug in the SGLang engine let very long prompts read leftovers from earlier requests.\nAn outside researcher reported it, and Cloudflare fixed it within a day.\n\nWould you trust a cloud AI with your company's data?\n\nFollow @neurafeed.ai for daily AI news.\n\nSource: Unite.AI, Data Studios · Photos: Unite.AI, 1023 Jack, Mallory",
+  "slides": [
+    {
+      "kind": "cover",
+      "headline": "Cloudflare's AI handed out *other customers' data*. It happened 155 times",
+      "image": {
+        "url": "https://www.unite.ai/wp-content/uploads/2026/10/cloudflare-discloses-kv-cache-exposure-glm-5-3-workers-ai-model.jpg",
+        "credit": "Unite.AI",
+        "fallback_urls": [],
+        "generate": "A young office worker in a gray hoodie sits frozen at a desk in a dim, cluttered open office at night, one hand over his mouth, staring at his laptop. Out of the laptop's side spills a long messy stream of paper printouts and loose sheets that pile onto the desk and floor, while a second, unfamiliar person's hand reaches in from the edge of the frame to pick one sheet up. Behind him, through a glass wall, a long aisle of server racks glows under harsh orange fluorescent light. Use the first image only as a reference for color and mood. Generous headroom above his head. The subject fills the upper two thirds of the frame, the bottom third is paper on a dark floor. Blank surfaces, no readable text or labels on any object or paper, no logos, no letters, no watermarks. Photorealistic, high contrast, vertical composition, one clear subject. It must look like an unedited real photo from a news agency, not a painting, not digital art, no glow effects.",
+        "refs": [
+          "https://www.unite.ai/wp-content/uploads/2026/10/cloudflare-discloses-kv-cache-exposure-glm-5-3-workers-ai-model.jpg"
+        ]
+      },
+      "pos": "center 30%"
+    },
+    {
+      "kind": "card",
+      "heading": "A *stranger's* answer",
+      "paras": [
+        "Cloudflare says its hosted GLM-5.3 model returned data from other customers' requests in 155 responses.",
+        "It ran from August 27 to September 9, 2026, and only hit very long prompts."
+      ],
+      "image": {
+        "url": "https://1023jack.com/wp-content/uploads/2026/10/your-ai-answer-in-a-stranger-s-session-cloudflare-s-kv-cache-leak-and-the-ai-spa-featured.jpg",
+        "credit": "1023 Jack"
+      }
+    },
+    {
+      "kind": "card",
+      "heading": "A memory pool *too small*",
+      "paras": [
+        "The model offered about 1 million tokens of context, but its cache held only 681,280.",
+        "A bug in the SGLang engine let oversized requests run anyway and read leftovers from earlier ones."
+      ],
+      "image": {
+        "url": "https://mallory-core-public-images.s3.us-east-2.amazonaws.com/cloudflare-glm-53-cache-isolation-failure-leaked-customer-data-in-155-responses.png",
+        "credit": "Mallory"
+      },
+      "note": "Reported by researcher Gadi Evron. Fixed September 9."
+    },
+    {
+      "kind": "cta",
+      "hook": "AI clouds are racing to offer giant context windows. Follow for the next security lesson."
+    }
+  ],
+  "site_article": {
+    "headline": "Cloudflare says GLM-5.3 bug exposed customer data in 155 responses",
+    "dek": "An undersized cache and an inference engine bug let very long prompts on Workers AI read data left over from other requests.",
+    "summary": "Cloudflare disclosed on October 26, 2026, that its hosted GLM-5.3 model on Workers AI returned data from other customers' requests in 155 responses. The exposure ran from August 27 to September 9, 2026, and Cloudflare said it found no evidence of deliberate exploitation.",
+    "seo_title": "Cloudflare GLM-5.3 bug exposed data in 155 Workers AI replies",
+    "seo_description": "Cloudflare says a cache misconfiguration and an SGLang bug let its GLM-5.3 model return other customers' data in 155 responses before a September fix.",
+    "answer_summary": "Cloudflare says its GLM-5.3 model on Workers AI returned other customers' data in 155 responses between August 27 and September 9, 2026, because of an undersized cache and an SGLang bug.",
+    "tags": [
+      "Cloudflare",
+      "Workers AI",
+      "GLM-5.3",
+      "SGLang",
+      "AI security"
+    ],
+    "hero_alt": "A worker at a laptop in a dark office covers his mouth as paper sheets spill onto the desk and floor.",
+    "paragraphs": [
+      {
+        "kind": "fact",
+        "text": "Cloudflare disclosed on October 26, 2026, that the GLM-5.3 model it hosts on its Workers AI service returned data from other customers' requests in 155 responses, according to Unite.AI and Data Studios. The exposure began on August 27, 2026, when the model launched on the platform, and ended with a fix on September 9.",
+        "sources": [
+          0,
+          1
+        ]
+      },
+      {
+        "kind": "fact",
+        "text": "Every affected response came from a prompt longer than 681,280 tokens. Cloudflare said a small number of customers received such responses but did not give an exact count, Data Studios reported. The company also did not describe what kind of data appeared in the responses or how affected customers were notified.",
+        "sources": [
+          1,
+          2
+        ]
+      },
+      {
+        "kind": "heading",
+        "text": "What went wrong"
+      },
+      {
+        "kind": "fact",
+        "text": "Cloudflare traced the problem to two faults that combined, according to Unite.AI. GLM-5.3 was deployed with a context window of 1,048,576 tokens, but the memory pool that holds the model's key value cache during the prefill stage could store only 681,280 tokens.",
+        "sources": [
+          0
+        ]
+      },
+      {
+        "kind": "fact",
+        "text": "The second fault was a bug in SGLang, the open source inference engine Cloudflare uses, when it runs prefill and decode on separate machines. Requests that were too long for the cache were swapped for a placeholder instead of being rejected, and the decode stage then read stale cache pages left behind by earlier requests. Clients received a normal success code rather than an error, so nothing signaled a problem.",
+        "sources": [
+          0,
+          2
+        ]
+      },
+      {
+        "kind": "heading",
+        "text": "How it was found and fixed"
+      },
+      {
+        "kind": "fact",
+        "text": "Security researcher Gadi Evron of Knostic reported the issue through Cloudflare's HackerOne bug bounty program on September 8, 2026. Cloudflare declared an incident on September 9, set the model to private about 40 minutes later and restored it that evening after correcting the configuration and patching the engine, according to Data Studios and 1023 Jack.",
+        "sources": [
+          1,
+          2
+        ]
+      },
+      {
+        "kind": "fact",
+        "text": "Cloudflare raised the cache pool to about 2.04 million tokens and added a check that rejects oversized requests at admission. It proposed the engine fix to the SGLang project, which shipped it in version 0.5.20, with follow up changes in versions 0.5.21 and 0.5.22. Cloudflare recommends that other operators run version 0.5.22 or later, Unite.AI reported.",
+        "sources": [
+          0
+        ]
+      },
+      {
+        "kind": "fact",
+        "text": "Cloudflare said it found no evidence of deliberate exploitation, based on its review of traffic patterns, and that its earlier testing had checked response codes and speed but not whether the model's output was coherent. The company now compares cache pool size with context length before any change of this kind ships. Mallory reported that Cloudflare said no other Workers AI models were affected.",
+        "sources": [
+          0,
+          1,
+          3
+        ]
+      },
+      {
+        "kind": "analysis",
+        "text": "The incident shows how the push for million token context windows adds new places for isolation to fail. The flaw was not in the model itself but in the serving setup around it, which customers of hosted AI services cannot inspect."
+      },
+      {
+        "kind": "why_it_matters",
+        "text": "Companies running their own SGLang deployments with split prefill and decode should check their engine version and cache settings, and Evron's own report, which has not yet been published, may add detail on how the flaw was found."
+      }
+    ]
+  }
+}
