@@ -36,6 +36,11 @@ jobs:
       CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
       CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
       NETLIFY: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+      SITE_DATABASE_URL: ${{ secrets.SITE_DATABASE_URL }}
+      SITE_SUPABASE_PUBLISHABLE_KEY: ${{ secrets.SITE_SUPABASE_PUBLISHABLE_KEY }}
+      SITE_R2_ACCESS_KEY_ID: ${{ secrets.SITE_R2_ACCESS_KEY_ID }}
+      SITE_R2_SECRET_ACCESS_KEY: ${{ secrets.SITE_R2_SECRET_ACCESS_KEY }}
+      SITE_RESEND_API_KEY: ${{ secrets.SITE_RESEND_API_KEY }}
       WORKERS_SUBDOMAIN: mahiruyan956.workers.dev
     steps:
       - uses: actions/checkout@v4
@@ -60,16 +65,23 @@ jobs:
             jq -r '.[]' /tmp/env-$app.json | while IFS= read -r v; do if [ ${#v} -ge 6 ]; then echo "::add-mask::$v"; fi; done
             echo "::notice::$app: $(jq 'length' /tmp/env-$app.json) settings copied ($(jq -r 'keys | join(", ")' /tmp/env-$app.json))"
           done
+          # Netlify never returns secret values (it sends the same placeholder for all of them).
+          # Drop those and use the real values saved as GitHub secrets (SITE_*); make a fresh job token.
+          ph=$(jq -rs '[.[] | to_entries[] | select(.value|length==20) | .value] | group_by(.) | map(select(length>=3)) | .[0][0] // ""' /tmp/env-web.json /tmp/env-admin.json)
+          jobtoken=$(openssl rand -hex 32)
           for app in web admin; do
-            node -e '
-              const v=JSON.parse(require("fs").readFileSync(process.argv[1],"utf8")).DATABASE_URL||"";
-              let d; try { const u=new URL(v.trim()); d=`protocol=${u.protocol} host=*${u.hostname.slice(-22)} port=${u.port} db=${u.pathname.length>1} user=${!!u.username} pass=${!!u.password} params=${[...u.searchParams.keys()].join("+")}`; } catch(e) { d=`unparseable (len ${v.length}, starts ${JSON.stringify(v.slice(0,11))}, quotes=${/^["\x27]/.test(v)}, spaces=${/\s/.test(v)})`; }
-              console.log(`::notice::${process.argv[2]} DATABASE_URL: ${d}`);' /tmp/env-$app.json $app
+            jq --arg ph "$ph" --arg db "$SITE_DATABASE_URL" --arg pk "$SITE_SUPABASE_PUBLISHABLE_KEY" --arg r2i "$SITE_R2_ACCESS_KEY_ID" --arg r2s "$SITE_R2_SECRET_ACCESS_KEY" --arg rs "$SITE_RESEND_API_KEY" --arg jt "$jobtoken" --slurpfile adm /tmp/env-admin.json '
+              with_entries(select($ph == "" or .value != $ph))
+              | if $db != "" then .DATABASE_URL = $db else . end
+              | .NEURAFEED_DATABASE_CA_CERT_BASE64 = (.NEURAFEED_DATABASE_CA_CERT_BASE64 // $adm[0].NEURAFEED_DATABASE_CA_CERT_BASE64)
+              | if $pk != "" then .NEURAFEED_SUPABASE_PUBLISHABLE_KEY = $pk else . end
+              | if $r2i != "" then .NEURAFEED_R2_ACCESS_KEY_ID = $r2i else . end
+              | if $r2s != "" then .NEURAFEED_R2_SECRET_ACCESS_KEY = $r2s else . end
+              | if $rs != "" and has("RESEND_API_KEY") then .RESEND_API_KEY = $rs else . end
+              | if has("NEURAFEED_EDITORIAL_JOB_ACTOR_ID") then .NEURAFEED_EDITORIAL_JOB_TOKEN = $jt else . end
+              | with_entries(select(.value != null))' /tmp/env-$app.json > /tmp/env-$app.2 && mv /tmp/env-$app.2 /tmp/env-$app.json
+            echo "::notice::$app missing after cleanup (add as SITE_* secrets if needed): $(comm -13 <(jq -r 'keys[]' /tmp/env-$app.json | sort) <(printf '%s\n' DATABASE_URL NEURAFEED_SUPABASE_PUBLISHABLE_KEY NEURAFEED_R2_ACCESS_KEY_ID NEURAFEED_R2_SECRET_ACCESS_KEY RESEND_API_KEY NEURAFEED_EDITORIAL_OWNER_DIGEST_FROM NEURAFEED_EDITORIAL_OWNER_DIGEST_RECIPIENT | sort) | tr '\n' ' ')"
           done
-          for app in web admin; do echo "::notice::$app lengths: $(jq -r 'to_entries | map("\(.key)=\(.value|length)") | join(" ")' /tmp/env-$app.json)"; done
-          curl -sf -H "$H" "$api/sites/neurafeed-staging-admin.netlify.app" >/dev/null && echo "::notice::admin env flags: $(curl -s -H "$H" "$api/accounts/$(curl -s -H "$H" "$api/sites/neurafeed-staging-admin.netlify.app" | jq -r .account_slug)/env?site_id=$(curl -s -H "$H" "$api/sites/neurafeed-staging-admin.netlify.app" | jq -r .id)" | jq -r '[.[] | select(.key=="DATABASE_URL" or .key=="OPENAI_API_KEY") | "\(.key) secret=\(.is_secret) contexts=\([.values[].context]|join("+"))"] | join("; ")')"
-          # The public site uses the admin's database settings (its own Netlify DATABASE_URL is not valid).
-          jq -s '.[0] + {NEURAFEED_DATABASE_CA_CERT_BASE64: (.[0].NEURAFEED_DATABASE_CA_CERT_BASE64 // .[1].NEURAFEED_DATABASE_CA_CERT_BASE64), DATABASE_URL: .[1].DATABASE_URL} | with_entries(select(.value != null))' /tmp/env-web.json /tmp/env-admin.json > /tmp/env-web2.json && mv /tmp/env-web2.json /tmp/env-web.json
 
       - name: Hyperdrive (database pooling, optional)
         run: |
