@@ -1,7 +1,7 @@
 name: Documentary sample
 
-# Renders the 30-second documentary sample in two styles (dark, light) plus two thumbnails,
-# with the narration from ElevenLabs, and pushes the results to the `doc-sample` branch.
+# Renders the documentary sample with Remotion: narration (ElevenLabs), real article screenshots,
+# real photos, then two thumbnails. Results go to the `doc-sample` branch.
 on:
   workflow_dispatch:
     inputs:
@@ -26,22 +26,29 @@ jobs:
           path: ~/.cache/puppeteer
           key: puppeteer-${{ runner.os }}-v1
       - run: npm install --no-audit --no-fund
-      - run: which ffmpeg || (sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg)
+      - run: mkdir -p build && cd video/doc && npm install --no-audit --no-fund
       - name: Narration
         env:
           ELEVENLABS_API_KEY: ${{ secrets.ELEVENLABS_API_KEY }}
-        run: node video/sample/tts.js video/sample/script.json build
-      - name: Render dark
-        run: node video/sample/render.js build dark "${{ inputs.walkout }}" build/sample-dark.mp4
-      - name: Render light
-        run: node video/sample/render.js build light "${{ inputs.walkout }}" build/sample-light.mp4
+        run: node video/sample/tts.js video/sample/script.json video/doc/public/assets
+      - name: Real material (article screenshots, photos)
+        run: |
+          node video/doc/capture.js
+          curl -sL -A "Mozilla/5.0" -o video/doc/public/assets/walkout.jpg "${{ inputs.walkout }}"
+          curl -sL -A "Mozilla/5.0" -o video/doc/public/assets/dario.jpg "https://techcrunch.com/wp-content/uploads/2026/10/GettyImages-2295579000.jpg"
+          node video/doc/props.js
+      - name: Render
+        run: |
+          cd video/doc
+          npx remotion render src/index.ts Doc ../../build/sample.mp4 --props=props.json --crf=18
+          for f in 60 200 260 400 480 600; do npx remotion still src/index.ts Doc ../../build/still-$f.jpg --frame=$f --props=props.json --image-format=jpeg --log=error || true; done
       - name: Thumbnails
         run: |
           node video/sample/thumb.js a "${{ inputs.thumb_a }}" build/thumb-a.jpg
           node video/sample/thumb.js b "${{ inputs.thumb_b }}" build/thumb-b.jpg
       - name: Push to doc-sample branch
         run: |
-          mkdir -p /tmp/out && cp build/*.mp4 build/*.jpg build/voice.mp3 build/timing.json /tmp/out/
+          mkdir -p /tmp/out && cp build/* video/doc/public/assets/*.png video/doc/public/assets/*.json /tmp/out/ 2>/dev/null || true
           git config user.name "neurafeed-bot"; git config user.email "bot@neurafeed.ai"
           git checkout --orphan doc-sample && git rm -rqf --cached . && rm -rf sample && mkdir sample && cp /tmp/out/* sample/
           git add -f sample && git commit -qm "documentary sample" && git push -f origin doc-sample
