@@ -93,6 +93,14 @@ function html(data, ai) {
   const byFormat = {};
   for (const m of posts) (byFormat[m.format] ||= []).push(score(m));
   const formats = Object.entries(byFormat).map(([k, v]) => ({ key: `${k} (${v.length})`, value: v.reduce((a, b) => a + b, 0) / v.length })).sort((a, b) => b.value - a.value);
+  // Format table: per-format averages and engagement rates (interactions / reach, interactions / views).
+  const fmtRows = Object.entries(posts.reduce((acc, m) => ((acc[m.format] ||= []).push(m), acc), {})).map(([k, list]) => {
+    const t = (key) => list.reduce((a, m) => a + (Number(m.metrics[key]) || 0), 0);
+    const reach = t('reach'); const views = t('views'); const inter = t('total_interactions');
+    const pc = (a, b) => (b ? `${((a / b) * 100).toFixed(1)}%` : '?');
+    return { k, n: list.length, reach: reach / list.length, views: views / list.length, er: pc(inter, reach), erv: pc(inter, views), saves: t('saved') / list.length, shares: t('shares') / list.length, ss: pc(t('saved') + t('shares'), reach) };
+  }).sort((a, b) => b.reach - a.reach);
+  const fmtTable = `<table><tr><th>Format</th><th class="n">Posts</th><th class="n">Avg reach</th><th class="n">Avg views</th><th class="n">ER (reach)</th><th class="n">ER (views)</th><th class="n">Saves/post</th><th class="n">Shares/post</th><th class="n">Save+share rate</th></tr>${fmtRows.map((r) => `<tr><td>${esc(r.k)}${r.n < 5 ? ' <span class="muted">(small sample)</span>' : ''}</td><td class="n">${r.n}</td><td class="n">${fmt(Math.round(r.reach))}</td><td class="n">${fmt(Math.round(r.views))}</td><td class="n">${r.er}</td><td class="n">${r.erv}</td><td class="n">${r.saves.toFixed(1)}</td><td class="n">${r.shares.toFixed(1)}</td><td class="n">${r.ss}</td></tr>`).join('') || '<tr><td colspan="9" class="muted">No posts in this period.</td></tr>'}</table>`;
   const slots = {};
   for (const m of posts) {
     const h = Number(new Date(m.timestamp).toLocaleString('en-US', { timeZone: 'America/New_York', hour: '2-digit', hourCycle: 'h23' }));
@@ -183,7 +191,8 @@ ${head('Formats, timing, audience')}
 <div><h2>By format</h2><div class="sub" style="margin-bottom:2mm">Average views per post</div>${hbars(formats)}</div>
 <div><h2>By time slot</h2><div class="sub" style="margin-bottom:2mm">Average views per post, New York time</div>${hbars(slotRows)}</div>
 </div>
-<h2 style="margin-top:11mm">Followers versus viewers</h2>
+<h2 style="margin-top:9mm">Format comparison</h2><div class="sub" style="margin-bottom:2mm">ER = likes, comments, saves and shares divided by reach (or views). Save+share rate = (saves + shares) / reach.</div>${fmtTable}
+<h2 style="margin-top:9mm">Followers versus viewers</h2>
 <div class="sub" style="margin-bottom:3mm">Left: where followers live (all time). Right: where the accounts reached ${tfLabel} live.</div>
 <div class="cols">
 <div><div class="lab">Followers by country</div>${hbars(aud.country, sum(aud.country), 6)}</div>

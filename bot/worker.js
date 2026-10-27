@@ -876,7 +876,19 @@ async function instagramWindow(env, days) {
   const acct = JSON.parse(await cached(env, `acct${Math.min(30, days)}`, 900, () => accountSummary(env, Math.min(30, days))));
   const newFollowers = (acct.daily_new_followers || []).reduce((x, d) => x + (Number(d.value) || 0), 0);
   const t = tot(now); const b = tot(before);
-  return { platform: 'Instagram', followers: acct.followers, new_followers: newFollowers, days, totals: t, previous_period: b, change_pct: { views: pct(t.views, b.views), likes: pct(t.likes, b.likes), posts: pct(t.posts, b.posts) }, top: [...now].sort((x, y) => y.views - x.views).slice(0, 5) };
+  return { platform: 'Instagram', formats: formatBreakdown(now), followers: acct.followers, new_followers: newFollowers, days, totals: t, previous_period: b, change_pct: { views: pct(t.views, b.views), likes: pct(t.likes, b.likes), posts: pct(t.posts, b.posts) }, top: [...now].sort((x, y) => y.views - x.views).slice(0, 5) };
+}
+
+// Per format: posts, average reach, engagement rate by reach and views, saves and shares.
+function formatBreakdown(rows) {
+  const by = {};
+  for (const r of rows) (by[r.f] ||= []).push(r);
+  return Object.entries(by).map(([format, l]) => {
+    const t = (k) => l.reduce((x, r) => x + (r[k] || 0), 0);
+    const reach = t('reach'); const views = t('views'); const inter = t('total_interactions') || (t('likes') + t('comments') + t('saved') + t('shares'));
+    const pc = (a, b) => (b ? Math.round((a / b) * 1000) / 10 : null);
+    return { format, posts: l.length, avg_reach: Math.round(reach / l.length), avg_views: Math.round(views / l.length), er_reach_pct: pc(inter, reach), er_views_pct: pc(inter, views), saves_per_post: Math.round((t('saved') / l.length) * 10) / 10, shares_per_post: Math.round((t('shares') / l.length) * 10) / 10, save_share_rate_pct: pc(t('saved') + t('shares'), reach), small_sample: l.length < 5 };
+  }).sort((a, b) => b.avg_reach - a.avg_reach);
 }
 
 // All three platforms side by side, with the change against the previous period of the same length.
@@ -902,7 +914,7 @@ function statsText(r) {
   const line = (x) => x.error ? `• ${x.platform}: veri alınamadı (${x.error.slice(0, 80)})`
     : `• ${x.platform}: ${fmtN(x.totals.views)} görüntülenme${fmtC(x.change_pct?.views)}, takipçi ${fmtN(x.followers ?? x.totals.followers_count)}${x.platform === 'Instagram' ? `, ${x.totals.posts} post, ${fmtN(x.totals.likes)} beğeni` : x.platform === 'Threads' ? `, ${fmtN(x.totals.likes)} beğeni, ${fmtN(x.totals.reposts)} repost` : `, ${fmtN(x.totals.engagements)} etkileşim, +${fmtN(x.totals.new_follows)} takip`}`;
   const best = [r.instagram, r.threads, r.facebook].filter((x) => x.top?.[0]).map((x) => `• ${x.platform}: ${x.top[0].title || 'post'} (${fmtN(x.top[0].views)})`);
-  return [`📊 ${r.period}, 3 platform`, `Toplam: ${fmtN(r.combined.views)} görüntülenme${fmtC(r.combined.change_pct)}, ${fmtN(r.combined.followers)} takipçi`, `Pay: Instagram %${r.combined.share_of_views.Instagram}, Threads %${r.combined.share_of_views.Threads}, Facebook %${r.combined.share_of_views.Facebook}`, '', line(r.instagram), line(r.threads), line(r.facebook), '', 'En çok izlenen:', ...best].join('\n');
+  return [`📊 ${r.period}, 3 platform`, `Toplam: ${fmtN(r.combined.views)} görüntülenme${fmtC(r.combined.change_pct)}, ${fmtN(r.combined.followers)} takipçi`, `Pay: Instagram %${r.combined.share_of_views.Instagram}, Threads %${r.combined.share_of_views.Threads}, Facebook %${r.combined.share_of_views.Facebook}`, '', line(r.instagram), line(r.threads), line(r.facebook), '', 'Instagram formatlara göre:', ...(r.instagram.formats || []).map((f) => `• ${f.format} (${f.posts} post${f.small_sample ? ', örneklem küçük' : ''}): ort. erişim ${fmtN(f.avg_reach)}, ER erişim %${f.er_reach_pct ?? '?'} / görüntülenme %${f.er_views_pct ?? '?'}, kayıt ${f.saves_per_post}/post, paylaşım ${f.shares_per_post}/post`), '', 'En çok izlenen:', ...best].join('\n');
 }
 
 // ---------- Telegram ----------
