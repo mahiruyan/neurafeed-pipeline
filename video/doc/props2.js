@@ -17,5 +17,6 @@ const assets = {
   headline: shots.headline, second: shots.second, risk: shots.risk,
   nfLogo: 'assets/nf-logo.png', anthropicLogo: 'assets/anthropic.png',
 };
-fs.writeFileSync(path.join(__dirname, 'props2.json'), JSON.stringify({ timing, assets }, null, 2));
+const script = JSON.parse(fs.readFileSync(path.join(__dirname, 'script.json'), 'utf8'));
+fs.writeFileSync(path.join(__dirname, 'props2.json'), JSON.stringify({ timing, captions: script.captions, assets }, null, 2));
 console.log(JSON.stringify(assets, null, 1));

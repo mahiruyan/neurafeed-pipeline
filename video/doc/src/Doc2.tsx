@@ -14,6 +14,7 @@ type Rect = { x: number; y: number; w: number; h: number };
 type Shot = { src: string; w: number; h: number; marks?: Rect[]; source?: string };
 export type Doc2Props = {
   timing: { duration: number; sentences: { start: number; end: number }[] };
+  captions?: string[];
   assets: {
     voice: string | null; music?: string | null; whoosh?: string | null; hit?: string | null;
     dario: string; darioCut?: string | null; darioCredit?: string; footage?: { src: string; start?: number; credit: string } | null;
@@ -311,7 +312,24 @@ const Title: React.FC<{ A: Doc2Props['assets'] }> = ({ A }) => {
   );
 };
 
-export const Doc2: React.FC<Doc2Props> = ({ timing, assets: A }) => {
+// Subtitles: up to six words at a time, the spoken word in the accent color. Word timing is spread
+// over the sentence by character position (the narration gives sentence times).
+const Subtitles: React.FC<{ timing: Doc2Props['timing']; captions: string[] }> = ({ timing, captions }) => {
+  const f = useCurrentFrame(); const { fps } = useVideoConfig(); const t = f / fps; const S = timing.sentences;
+  const i = S.findIndex((s, k) => t >= s.start - 0.05 && t < (k < S.length - 1 ? S[k + 1].start - 0.05 : s.end + 0.4));
+  if (i < 0 || !captions[i]) return null;
+  const words = captions[i].split(' '); const total = captions[i].length;
+  let acc = 0; const at = words.map((w) => { const x = acc / total; acc += w.length + 1; return S[i].start + x * (S[i].end - S[i].start); });
+  let w = 0; for (let k = 0; k < words.length; k++) if (t >= at[k]) w = k;
+  const c0 = Math.floor(w / 6) * 6;
+  return (
+    <div style={{ position: 'absolute', left: 0, right: 0, bottom: 92, textAlign: 'center', fontFamily: POP, fontWeight: 600, fontSize: 46, color: C.ink, textShadow: '0 2px 12px rgba(0,0,0,.9), 0 0 2px rgba(0,0,0,.8)', padding: '0 220px' }}>
+      {words.slice(c0, c0 + 6).map((x, k) => <span key={k} style={{ color: c0 + k === w ? C.acc : C.ink }}>{x} </span>)}
+    </div>
+  );
+};
+
+export const Doc2: React.FC<Doc2Props> = ({ timing, captions, assets: A }) => {
   const { fps, durationInFrames } = useVideoConfig();
   const S = timing.sentences;
   const at = (s: number) => Math.max(0, Math.round(s * fps));
@@ -325,12 +343,13 @@ export const Doc2: React.FC<Doc2Props> = ({ timing, assets: A }) => {
   return (
     <AbsoluteFill style={{ background: C.bg }}>
       {scenes.map((el, k) => <Sequence key={k} from={cuts[k]} durationInFrames={len(k)}>{el}</Sequence>)}
-      {A.whoosh && cuts.slice(1, -1).map((c, k) => <Sequence key={`w${k}`} from={Math.max(0, c - 4)} durationInFrames={30}><Audio src={staticFile(A.whoosh!)} volume={0.35} /></Sequence>)}
+      {A.whoosh && [cuts[2], cuts[6]].map((c, k) => <Sequence key={`w${k}`} from={Math.max(0, c - 5)} durationInFrames={30}><Audio src={staticFile(A.whoosh!)} volume={0.22} /></Sequence>)}
       {A.hit && <Sequence from={cuts[2] + 4} durationInFrames={40}><Audio src={staticFile(A.hit)} volume={0.5} /></Sequence>}
       {A.music && <Audio src={staticFile(A.music)} volume={(f) => interpolate(f, [0, 20, durationInFrames - 40, durationInFrames], [0, 0.16, 0.16, 0], clamp)} />}
       {A.voice && <Audio src={staticFile(A.voice)} />}
       <Vignette />
       <Grain />
+      {captions && <Subtitles timing={timing} captions={captions} />}
     </AbsoluteFill>
   );
 };
