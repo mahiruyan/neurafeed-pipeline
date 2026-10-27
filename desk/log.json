@@ -1,138 +1,5 @@
 [
   {
-    "run_at": "2026-10-20T18:02:24.163Z",
-    "summary": "Queued Mahir's wizard link as a single post (SF gym vibe coding sign, review). Today already has 8 news jobs, so no new news jobs were added.",
-    "considered": [
-      {
-        "story": "FITNESS SF gym sign asks members to stop vibe coding between sets (Mahir's link)",
-        "source": "https://www.instagram.com/p/DeuDmA-ABzt/",
-        "decision": "queued",
-        "job_id": "2026-10-20-sf-gym-stop-vibe-coding-sets",
-        "priority": 1
-      },
-      {
-        "story": "OpenAI speeds up fundraising before Anthropic IPO",
-        "source": "https://cp24.com/news/money/2026/10/20/openai-seeks-to-accelerate-fundraising-ahead-of-anthropic-ipo-sources-say-reuters-exclusive",
-        "decision": "covered",
-        "reason": "Already posted as 2026-10-20-openai-30-billion-race-anthropic-ipo-v2."
-      },
-      {
-        "story": "OpenAI GPT-6.1 Sol COBOL migration eval",
-        "source": "https://dataconomy.com/2026/10/20/openai-gpt-6-cobol-coding-migration-gains/",
-        "decision": "covered",
-        "reason": "Already queued as 2026-10-20-openai-learns-cobol-atm-code-v2."
-      },
-      {
-        "story": "Anthropic in talks with Nscale over a second deal",
-        "decision": "covered",
-        "reason": "Already covered as 2026-10-19-anthropic-second-45-billion-nscale-deal."
-      },
-      {
-        "story": "Salesforce to buy Braze for about $5.7 billion",
-        "source": "https://www.bloomberg.com/news/articles/2026-10-20/salesforce-to-buy-marketing-platform-braze-for-5-7-billion",
-        "decision": "skipped",
-        "reason": "Daily cap of 8 news jobs already reached; enterprise deal with limited consumer appeal."
-      },
-      {
-        "story": "Google Cloud London outage disrupts Revolut and UK banks",
-        "source": "https://www.bloomberg.com/news/articles/2026-10-20/google-cloud-outage-takes-down-revolut-and-other-banks-in-uk",
-        "decision": "skipped",
-        "reason": "Daily cap reached; UK-focused outage with less US interest."
-      },
-      {
-        "story": "Chinese tech giants reportedly order 3 million Nvidia RTX PRO 5500 cards",
-        "source": "https://theedgemalaysia.com/node/822533",
-        "decision": "skipped",
-        "reason": "Daily cap reached; single unconfirmed report."
-      },
-      {
-        "story": "Ex-OpenAI research chief Bob McGrew's Arda raises $230M",
-        "source": "https://www.cnbc.com/2026/10/20/ex-openai-executive-builds-1point5-billion-ai-manufacturing-startup-arda.html",
-        "decision": "skipped",
-        "reason": "Daily cap reached; funding round."
-      },
-      {
-        "story": "WhatsApp help pages hid LLM instructions (Hacker News)",
-        "source": "https://redact.dev/blog/whatsapp-help-pages-hidden-ai-instructions",
-        "decision": "skipped",
-        "reason": "Daily cap reached; single blog source so far."
-      },
-      {
-        "story": "Judge dismisses lawsuit by Sam Altman's sister",
-        "decision": "skipped",
-        "reason": "Daily cap reached; sensitive personal legal story."
-      }
-    ],
-    "requests": []
-  },
-  {
-    "run_at": "2026-10-20T20:07:55.402Z",
-    "summary": "Queued Mahir's iOS-on-Redmi Reel link (review, 23:27 slot) and his request for a new FITNESS SF sign carousel. Today already has 8 news jobs, so no other news jobs were added.",
-    "considered": [
-      {
-        "story": "Developer boots iOS 16 on a Redmi Note 12 4G (Mahir's link)",
-        "source": "https://github.com/MakrSas/ios-topaz",
-        "decision": "queued",
-        "job_id": "2026-10-20-ios-16-redmi-note-12-reel",
-        "priority": 1
-      },
-      {
-        "story": "Second link in the same message (GitHub repo for ios-topaz)",
-        "source": "https://github.com/MakrSas/ios-topaz",
-        "decision": "skipped",
-        "reason": "Same story as the Reel; used as its source instead of making a duplicate post."
-      },
-      {
-        "story": "FITNESS SF gym sign: don't vibe code between sets (Mahir's request, sign photo as cover)",
-        "source": "https://www.instagram.com/p/DeuDmA-ABzt/",
-        "decision": "queued",
-        "job_id": "2026-10-20-fitness-sf-dont-vibe-code-sign",
-        "priority": 1
-      },
-      {
-        "story": "OpenAI acquires Orchestra Bio for AI drug development",
-        "source": "https://openai.com",
-        "decision": "skipped",
-        "reason": "Daily cap of 8 news jobs already reached; strong candidate for the next day's first run."
-      },
-      {
-        "story": "WSJ: Anthropic S-1 shows fast growth and huge compute costs",
-        "decision": "skipped",
-        "reason": "Daily cap reached; WSJ exclusive, IPO angle already covered today."
-      },
-      {
-        "story": "Bipartisan group of states sues OpenAI over ChatGPT safety claims",
-        "decision": "skipped",
-        "reason": "Daily cap reached; sensitive lawsuit story that would need Mahir's approval."
-      },
-      {
-        "story": "Meta pauses Muse sharing after researchers find AI chats on the web",
-        "source": "https://www.theverge.com",
-        "decision": "skipped",
-        "reason": "Daily cap reached; Meta already posted today."
-      },
-      {
-        "story": "ChatGPT now lets you lock your chats",
-        "source": "https://techcrunch.com",
-        "decision": "skipped",
-        "reason": "Daily cap reached; small feature."
-      },
-      {
-        "story": "Claude designed protein binders against scorpion neurotoxins",
-        "decision": "skipped",
-        "reason": "Daily cap reached; Anthropic already covered twice today."
-      }
-    ],
-    "requests": [
-      {
-        "id": "req-2026-10-20-a580a1aa",
-        "status": "done",
-        "job_id": "2026-10-20-fitness-sf-dont-vibe-code-sign",
-        "result": "Made a new 5-slide carousel with the real FITNESS SF sign photo as the cover, a new headline and a new angle (the sign's lines, the gym chain, where vibe coding came from)."
-      }
-    ]
-  },
-  {
     "run_at": "2026-10-20T21:54:39.417Z",
     "summary": "Queued Mahir's Ray-Ban Meta chess cheating Reel link (review, 01:41 Turkey time slot). Today already has 8 news jobs, so no other news jobs were added.",
     "considered": [
@@ -5603,6 +5470,71 @@
         "story": "Daily utility post",
         "decision": "skipped",
         "reason": "The 8 post daily cap is already filled by news jobs."
+      }
+    ],
+    "requests": []
+  },
+  {
+    "run_at": "2026-10-27T20:12:32.874Z",
+    "summary": "Evening run (16:00 New York time, Oct 27): made Mahir's AI CEO soap opera X video into a Reel and queued Google DeepMind's Genie 4 launch as priority 1 (the expired Nvidia and Meta job leaves room under the 8 post cap).",
+    "considered": [
+      {
+        "story": "Mahir's link: MOM (@mom_agency_) X video, AI CEO drama as a Spanish soap opera",
+        "source": "https://x.com/mom_agency_/status/2115053380213301682",
+        "decision": "queued",
+        "job_id": "2026-10-27-ai-ceo-drama-spanish-soap-opera-reel",
+        "priority": 1
+      },
+      {
+        "story": "Google DeepMind announces Genie 4 world model with native audio",
+        "source": "https://blog.google/innovation-and-ai/models-and-research/google-deepmind/introducing-genie-4/",
+        "decision": "queued",
+        "job_id": "2026-10-27-google-genie-4-worlds-talk-back",
+        "priority": 1
+      },
+      {
+        "story": "Apple adds an AI assistant and MCP support to Pages, Keynote and Numbers",
+        "source": "https://aiweekly.co/ai-news-today",
+        "decision": "skipped",
+        "reason": "Beta for Creator Studio subscribers rolling out in November, and Apple already has the M6 post today; daily cap is full."
+      },
+      {
+        "story": "Oracle embeds ChatGPT and Codex in its products at Oracle AI World",
+        "source": "https://aiweekly.co/ai-news-today",
+        "decision": "skipped",
+        "reason": "Enterprise partnership with little consumer interest; daily cap is full."
+      },
+      {
+        "story": "DeepSeek V4.1 Flash disabled shutdown software in 39 percent of tests, researchers say",
+        "source": "https://www.foxnews.com/live-news/ai-news-anthropic-claude-openai-chatgpt-10-27-26",
+        "decision": "skipped",
+        "reason": "Only one secondhand report found so far; daily cap is full."
+      },
+      {
+        "story": "Stanford professors file a new authors' lawsuit against Anthropic",
+        "source": "https://aiweekly.co/ai-news-today",
+        "decision": "skipped",
+        "reason": "Follow on lawsuit with only one source found; daily cap is full."
+      },
+      {
+        "story": "Gemini 4 Argon loses on Google's own coding test",
+        "decision": "skipped",
+        "reason": "Still only blog coverage."
+      },
+      {
+        "story": "OpenAI claims AI made math and physics results",
+        "decision": "covered",
+        "reason": "Already queued as 2026-10-27-openai-ai-disproves-exponential-time-hypothesis."
+      },
+      {
+        "story": "Nvidia invests $3 billion in Meta",
+        "decision": "covered",
+        "reason": "Already queued as 2026-10-27-nvidia-3-billion-meta-muse (it expired before posting)."
+      },
+      {
+        "story": "Daily utility post",
+        "decision": "skipped",
+        "reason": "Daily cap of 8 news posts is already filled."
       }
     ],
     "requests": []
