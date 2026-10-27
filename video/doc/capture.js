@@ -13,7 +13,7 @@ const clean = () => {
 };
 async function open(b, url) {
   const p = await b.newPage();
-  await p.setViewport({ width: 1280, height: 1000, deviceScaleFactor: 2 });
+  await p.setViewport({ width: 1440, height: 1100, deviceScaleFactor: 2 });
   await p.setUserAgent('Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0 Safari/537.36');
   await p.goto(url, { waitUntil: 'networkidle2', timeout: 60000 }).catch(() => {});
   await new Promise((r) => setTimeout(r, 2500));
@@ -24,9 +24,11 @@ async function headline(b, url, source) {
   const p = await open(b, url);
   const r = await p.evaluate(() => {
     const h = document.querySelector('article h1, main h1, h1'); if (!h) return null;
-    h.scrollIntoView({ block: 'center' });
-    const a = h.getBoundingClientRect();
-    return { x: Math.max(0, a.left - 56), y: Math.max(0, a.top - 70), w: Math.min(1180, window.innerWidth - Math.max(0, a.left - 56)), h: a.height + 300 };
+    let box = h.parentElement;
+    for (let e = h.parentElement; e && e !== document.body; e = e.parentElement) { const q = e.getBoundingClientRect(); if (q.width >= 900 && q.height < 900) { box = e; break; } }
+    box.scrollIntoView({ block: 'start' }); window.scrollBy(0, -20);
+    const a = box.getBoundingClientRect();
+    return { x: Math.max(0, a.left), y: Math.max(0, a.top), w: Math.min(a.width, window.innerWidth - Math.max(0, a.left)), h: Math.min(a.height, 820) };
   });
   if (!r) return null;
   await p.screenshot({ path: path.join(OUT, 'headline.png'), clip: { x: r.x, y: r.y, width: r.w, height: r.h } });
@@ -36,7 +38,7 @@ async function headline(b, url, source) {
 async function risk(b, url, source) {
   const p = await open(b, url);
   const r = await p.evaluate(() => {
-    const ps = [...document.querySelectorAll('p, li')].filter((e) => /catastrophic/i.test(e.textContent));
+    const ps = [...document.querySelectorAll('article p, main p, p')].filter((e) => /catastrophic/i.test(e.textContent) && e.textContent.trim().length > 80 && e.getBoundingClientRect().width > 400);
     const el = ps[0]; if (!el) return null;
     el.scrollIntoView({ block: 'center' });
     const walker = document.createTreeWalker(el, NodeFilter.SHOW_TEXT); const nodes = []; let all = '';
@@ -55,10 +57,24 @@ async function risk(b, url, source) {
   console.log('risk paragraph:', r.text);
   return { src: 'assets/risk.png', w: r.clip.w, h: r.clip.h, marks: r.marks, source };
 }
+async function commons(query, dest) {
+  const u = `https://commons.wikimedia.org/w/api.php?action=query&format=json&generator=search&gsrnamespace=6&gsrlimit=20&gsrsearch=${encodeURIComponent(query)}&prop=imageinfo&iiprop=url|size|extmetadata&iiurlwidth=1920`;
+  const d = await (await fetch(u, { headers: { 'User-Agent': 'NeuraFeedBot/1.0 (mahiruyan956@gmail.com)' } })).json();
+  const files = Object.values(d.query?.pages || {}).map((p) => ({ title: p.title, ...(p.imageinfo?.[0] || {}) }))
+    .filter((f) => /\.(jpe?g|png)$/i.test(f.title) && f.width >= 1000 && /amodei/i.test(f.title));
+  console.log('commons candidates:', files.map((f) => `${f.title} ${f.width}x${f.height}`).join(' | '));
+  const f = files[0]; if (!f) return null;
+  const buf = Buffer.from(await (await fetch(f.thumburl, { headers: { 'User-Agent': 'NeuraFeedBot/1.0' } })).arrayBuffer());
+  fs.writeFileSync(dest, buf);
+  const m = f.extmetadata || {}; const strip = (x) => String(x?.value || '').replace(/<[^>]+>/g, '').trim();
+  return { title: f.title, url: f.thumburl, credit: `${strip(m.Artist)} / ${strip(m.LicenseShortName)}`.replace(/^ \/ /, ''), candidates: files.map((x) => x.title) };
+}
 (async () => {
   fs.mkdirSync(OUT, { recursive: true });
+  const person = await commons('Dario Amodei', path.join(OUT, 'dario.jpg')).catch((e) => (console.log('commons failed', e.message), null));
+  if (person) console.log(`::notice::Dario photo: ${person.title} ${person.url} (${person.credit})`);
   const b = await puppeteer.launch({ args: ['--no-sandbox'] });
-  const out = { headline: null, risk: null };
+  const out = { headline: null, risk: null, person };
   out.headline = await headline(b, 'https://techcrunch.com/2026/10/26/anthropic-officially-files-for-its-public-debut/', 'TechCrunch, Oct. 26, 2026').catch((e) => (console.log('headline failed', e.message), null));
   for (const [u, s] of [
     ['https://finance.yahoo.com/technology/article/anthropic-publicly-files-ipo-prospectus-noting-strong-revenue-growth-and-massive-spending-131807138.html', 'Yahoo Finance, Oct. 2026'],

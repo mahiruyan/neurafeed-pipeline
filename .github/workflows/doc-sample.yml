@@ -6,8 +6,8 @@ on:
   workflow_dispatch:
     inputs:
       walkout: { description: Opening scene image URL, required: true }
-      thumb_a: { description: Thumbnail A image URL, required: true }
-      thumb_b: { description: Thumbnail B image URL, required: true }
+      thumb_a: { description: Thumbnail A image URL, required: false, default: '' }
+      thumb_b: { description: Thumbnail B image URL, required: false, default: '' }
 
 permissions:
   contents: write
@@ -35,7 +35,6 @@ jobs:
         run: |
           node video/doc/capture.js
           curl -sL -A "Mozilla/5.0" -o video/doc/public/assets/walkout.jpg "${{ inputs.walkout }}"
-          curl -sL -A "Mozilla/5.0" -o video/doc/public/assets/dario.jpg "https://techcrunch.com/wp-content/uploads/2026/10/GettyImages-2295579000.jpg"
           node video/doc/props.js
       - name: Render
         run: |
@@ -43,6 +42,7 @@ jobs:
           npx remotion render src/index.ts Doc ../../build/sample.mp4 --props=props.json --crf=18
           for f in 60 200 260 400 480 600; do npx remotion still src/index.ts Doc ../../build/still-$f.jpg --frame=$f --props=props.json --image-format=jpeg --log=error || true; done
       - name: Thumbnails
+        if: inputs.thumb_a != ''
         run: |
           node video/sample/thumb.js a "${{ inputs.thumb_a }}" build/thumb-a.jpg
           node video/sample/thumb.js b "${{ inputs.thumb_b }}" build/thumb-b.jpg

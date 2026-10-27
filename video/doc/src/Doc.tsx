@@ -10,7 +10,7 @@ type Shot = { src: string; w: number; h: number; marks?: Rect[]; source?: string
 export type DocProps = {
   timing: { duration: number; sentences: { start: number; end: number }[] };
   captions: string[];
-  assets: { walkout: string; dario: string; voice: string | null; headline: Shot | null; risk: Shot | null };
+  assets: { walkout: string; dario: string; darioCredit?: string; voice: string | null; headline: Shot | null; risk: Shot | null };
 };
 
 const C = { bg: '#0b0b0a', ink: '#f3f1ea', mute: '#9b9a93', green: '#1fc394' };
@@ -110,7 +110,7 @@ const Filing: React.FC<{ dario: string; shot: Shot | null; tickerAt: number }> =
 };
 
 // Scene 2: revenue over Dario's real photo.
-const Revenue: React.FC<{ dario: string; len: number; earlierAt: number }> = ({ dario, len, earlierAt }) => {
+const Revenue: React.FC<{ dario: string; credit: string; len: number; earlierAt: number }> = ({ dario, credit, len, earlierAt }) => {
   const f = useCurrentFrame();
   const v = 16.3 * ramp(f, 4, 46); const e = ramp(f, earlierAt, earlierAt + 16);
   return (
@@ -125,7 +125,7 @@ const Revenue: React.FC<{ dario: string; len: number; earlierAt: number }> = ({ 
           <div style={{ fontFamily: SANS, fontWeight: 600, fontSize: 32, color: C.mute }}>a year earlier</div>
         </div>
       </div>
-      <Source text="Source: Anthropic S-1, via Yahoo Finance. Photo: Leon Neal / Getty Images" />
+      <Source text={`Source: Anthropic S-1, via Yahoo Finance.${credit ? ` Photo: ${credit}` : ''}`} />
     </AbsoluteFill>
   );
 };
@@ -173,7 +173,7 @@ export const Doc: React.FC<DocProps> = (props) => {
     <AbsoluteFill style={{ background: C.bg }}>
       {push(0, <Walkout src={A.walkout} len={len(0)} />)}
       {push(1, <Filing dario={A.dario} shot={A.headline} tickerAt={at(S[2].start) - cuts[1] - 3} />)}
-      {push(2, <Revenue dario={A.dario} len={len(2)} earlierAt={at(S[4].start) - cuts[2]} />)}
+      {push(2, <Revenue dario={A.dario} credit={A.darioCredit || ''} len={len(2)} earlierAt={at(S[4].start) - cuts[2]} />)}
       {push(3, <Risk shot={A.risk} len={len(3)} markAt={at(S[5].start + (S[5].end - S[5].start) * 0.5) - cuts[3]} />)}
       {push(4, <Title />)}
       <Captions {...props} hide={[2, 5, 6]} />
