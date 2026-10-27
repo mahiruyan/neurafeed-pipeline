@@ -57,7 +57,7 @@ jobs:
             id=$(jq -r .id <<<"$s"); acct=$(jq -r .account_slug <<<"$s")
             curl -sf -H "$H" "$api/accounts/$acct/env?site_id=$id" \
               | jq '[.[] | {key, value: ((.values | map(select(.context=="production")) | .[0].value) // (.values | map(select(.context=="all")) | .[0].value))} | select(.value != null)] | from_entries' > /tmp/env-$app.json
-            jq -r '.[]' /tmp/env-$app.json | while IFS= read -r v; do [ ${#v} -ge 6 ] && echo "::add-mask::$v"; done
+            jq -r '.[]' /tmp/env-$app.json | while IFS= read -r v; do if [ ${#v} -ge 6 ]; then echo "::add-mask::$v"; fi; done
             echo "::notice::$app: $(jq 'length' /tmp/env-$app.json) settings copied ($(jq -r 'keys | join(", ")' /tmp/env-$app.json))"
           done
           # The public site needs the Supabase root certificate too (the build reads the database).
