@@ -10,8 +10,8 @@ jobs:
       - env:
           T: ${{ secrets.SITE_REVIEW_TOKEN }}
         run: |
-          r=$(curl -s -w '\n%{http_code}' -X POST -H "Authorization: Bearer $T" -H 'Content-Type: application/json' -d '{"action":"list"}' https://neurafeed-admin.mahiruyan956.workers.dev/api/jobs/telegram-review)
+          r=$(curl -s -w '\n%{http_code}' -X POST -H "Authorization: Bearer $T" -H 'Content-Type: application/json' -d '{"action":"list"}' https://admin.neurafeedai.com/api/jobs/telegram-review)
           code=$(tail -1 <<<"$r"); body=$(head -n -1 <<<"$r")
           echo "::notice::admin list: HTTP $code, drafts=$(jq '.drafts | length' <<<"$body" 2>/dev/null), error=$(jq -r '.error // empty' <<<"$body" 2>/dev/null | cut -c1-200)"
-          h=$(curl -s -o /dev/null -w '%{http_code}' https://neurafeed-web.mahiruyan956.workers.dev/)
+          h=$(curl -s -o /dev/null -w '%{http_code}' https://neurafeedai.com/)
           echo "::notice::public site: HTTP $h"
