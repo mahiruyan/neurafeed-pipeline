@@ -24,11 +24,9 @@ async function headline(b, url, source) {
   const p = await open(b, url);
   const r = await p.evaluate(() => {
     const h = document.querySelector('article h1, main h1, h1'); if (!h) return null;
-    let box = h.parentElement;
-    for (let e = h.parentElement; e && e !== document.body; e = e.parentElement) { const q = e.getBoundingClientRect(); if (q.width >= 900 && q.height < 900) { box = e; break; } }
-    box.scrollIntoView({ block: 'start' }); window.scrollBy(0, -20);
-    const a = box.getBoundingClientRect();
-    return { x: Math.max(0, a.left), y: Math.max(0, a.top), w: Math.min(a.width, window.innerWidth - Math.max(0, a.left)), h: Math.min(a.height, 820) };
+    h.scrollIntoView({ block: 'center' });
+    const a = h.getBoundingClientRect(); const pad = 44;
+    return { x: a.left - pad + scrollX, y: a.top - pad + scrollY, w: Math.min(a.width + 2 * pad, 1100), h: a.height + 2 * pad + 40 };
   });
   if (!r) return null;
   await p.screenshot({ path: path.join(OUT, 'headline.png'), clip: { x: r.x, y: r.y, width: r.w, height: r.h } });
@@ -48,8 +46,9 @@ async function risk(b, url, source) {
     const range = document.createRange(); range.setStart(...pos(m.index)); range.setEnd(...pos(m.index + m[0].length));
     const box = el.getBoundingClientRect();
     const clip = { x: Math.max(0, box.left - 48), y: Math.max(0, box.top - 40), w: Math.min(box.width + 96, window.innerWidth), h: box.height + 80 };
+    const page = { x: clip.x + scrollX, y: clip.y + scrollY };
     const marks = [...range.getClientRects()].filter((q) => q.width > 2).map((q) => ({ x: q.left - clip.x, y: q.top - clip.y, w: q.width, h: q.height }));
-    return { clip, marks, text: el.textContent.trim().slice(0, 400) };
+    return { clip: { ...clip, ...page }, marks, text: el.textContent.trim().slice(0, 400) };
   });
   if (!r) { await p.close(); return null; }
   await p.screenshot({ path: path.join(OUT, 'risk.png'), clip: { x: r.clip.x, y: r.clip.y, width: r.clip.w, height: r.clip.h } });
