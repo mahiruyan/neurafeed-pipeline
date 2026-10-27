@@ -13,6 +13,7 @@ async function main() {
     headers: { 'xi-api-key': process.env.ELEVENLABS_API_KEY, 'Content-Type': 'application/json' },
     body: JSON.stringify({ text, model_id: s.model_id || 'eleven_multilingual_v2', voice_settings: s.settings }),
   });
+  if (!process.env.ELEVENLABS_API_KEY) throw new Error('ELEVENLABS_API_KEY secret is empty');
   if (!res.ok) throw new Error(`ElevenLabs ${res.status}: ${(await res.text()).slice(0, 300)}`);
   const d = await res.json();
   fs.writeFileSync(path.join(outDir, 'voice.mp3'), Buffer.from(d.audio_base64, 'base64'));
@@ -27,4 +28,4 @@ async function main() {
   fs.writeFileSync(path.join(outDir, 'timing.json'), JSON.stringify(timing, null, 2));
   console.log(JSON.stringify(timing));
 }
-main().catch((e) => { console.error(e.message); process.exit(1); });
+main().catch((e) => { console.log(`::error::${e.message.replace(/\n/g, ' ')}`); process.exit(1); });
