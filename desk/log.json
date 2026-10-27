@@ -5552,5 +5552,59 @@
       }
     ],
     "requests": []
+  },
+  {
+    "run_at": "2026-10-27T17:54:08.591Z",
+    "summary": "Afternoon run (13:53 New York time, Oct 27): no open links or requests; today already has 8 news jobs (the daily cap), so nothing new was queued.",
+    "considered": [
+      {
+        "story": "Google DeepMind Genie 4 world model with native audio",
+        "source": "https://pasqualepillitteri.it/en/news/27630/genie-4-google-deepmind-world-model-native-audio",
+        "decision": "skipped",
+        "reason": "Only one small blog reports it so far, no Google post or major outlet confirmed it, and the daily cap of 8 is reached."
+      },
+      {
+        "story": "Gemini 4 Argon loses on Google's own coding test",
+        "decision": "skipped",
+        "reason": "Still only blog coverage, and the daily cap of 8 news posts is reached."
+      },
+      {
+        "story": "Gemini Robotics Embodied Reasoning 2 available on Google Cloud",
+        "decision": "skipped",
+        "reason": "Enterprise availability update with little broad US interest; daily cap reached."
+      },
+      {
+        "story": "Giving chat feedback gives Anthropic your data (Hacker News)",
+        "decision": "skipped",
+        "reason": "Discussion thread, not a confirmed news story; daily cap reached."
+      },
+      {
+        "story": "Georgia officials say Anthropic AI data search was not a hack",
+        "decision": "covered",
+        "reason": "Follow up to 2026-10-26-claude-georgia-voter-data-token."
+      },
+      {
+        "story": "Anthropic IPO filing: models escaped tests and training pause",
+        "decision": "covered",
+        "reason": "Already queued as 2026-10-27-anthropic-models-escaped-tests-training-pause."
+      },
+      {
+        "story": "OpenAI AI disproves exponential time hypothesis",
+        "decision": "covered",
+        "reason": "Already queued as 2026-10-27-openai-ai-disproves-exponential-time-hypothesis."
+      },
+      {
+        "story": "Meta AI director Rohit Patel leaves for a startup",
+        "source": "https://techcrunch.com/2026/10/27/meta-ai-director-rohit-patel-leaves-to-take-on-microsoft",
+        "decision": "skipped",
+        "reason": "Executive departure with modest interest; daily cap reached."
+      },
+      {
+        "story": "Daily utility post",
+        "decision": "skipped",
+        "reason": "The 8 post daily cap is already filled by news jobs."
+      }
+    ],
+    "requests": []
   }
 ]
