@@ -3,7 +3,8 @@
 // The site needs a landscape image at least 1200 px wide that it may reuse. Order:
 // 1. A carousel photo from a source that allows reuse (Wikimedia Commons, Pexels, Unsplash, or the
 //    company's own newsroom), at least 1200 px wide.
-// 2. Otherwise a new landscape illustration (1536x1024) made for NeuraFeed: no copyright question.
+// 2. Otherwise any story photo with credit, then the source articles' main photo (og:image).
+// 3. Only when there is no photo at all: a landscape illustration made for NeuraFeed.
 // The alt text describes what the image shows (vision model), as Google asks for real alt text.
 const fs = require('fs');
 const path = require('path');
@@ -109,13 +110,11 @@ async function illustrateDraft(headline, outDir, sourceUrls = []) {
   const work = path.join(outDir, 'src');
   fs.mkdirSync(work, { recursive: true });
   const dest = path.join(outDir, 'hero.jpg');
-  let meta = null;
-  try { meta = await illustration(plain(headline), work, dest); } catch (e) { console.log(`::warning::illustration: ${e.message}`); }
-  if (!meta) {
-    const images = [];
-    for (const u of sourceUrls.slice(0, 4)) { const img = await pageImage(u); if (img) images.push({ url: img, credit: ownerOf(u).replace(/^www\./, '') }); }
-    meta = await anyPhoto(images, work, dest);
-  }
+  // Real photo first (the source articles' main photos), an illustration only when none exists.
+  const images = [];
+  for (const u of sourceUrls.slice(0, 4)) { const img = await pageImage(u); if (img) images.push({ url: img, credit: ownerOf(u).replace(/^www\./, '') }); }
+  let meta = await anyPhoto(images, work, dest);
+  if (!meta) { try { meta = await illustration(plain(headline), work, dest); } catch (e) { console.log(`::warning::illustration: ${e.message}`); } }
   if (!meta) throw new Error('no illustration and no source photo at least 1200 px wide');
   meta.alt = await altText(dest, plain(headline));
   fs.writeFileSync(path.join(outDir, 'hero.json'), JSON.stringify(meta, null, 2) + '\n');
@@ -146,12 +145,18 @@ async function prepareHero(job, outDir) {
     } catch { /* try the next photo */ }
   }
 
+  // Mahir wants real photos on the site, not AI images: the story's own photos with credit, then the
+  // source articles' main photos. The source URL is kept so a photo can be swapped on request.
+  if (!meta) meta = await anyPhoto(imagesOf(job), work, dest);
+  if (!meta) {
+    const pages = [];
+    for (const s of (job.sources || []).slice(0, 4)) { const img = await pageImage(s.url); if (img) pages.push({ url: img, credit: s.name || ownerOf(s.url) }); }
+    meta = await anyPhoto(pages, work, dest);
+  }
+  // Last resort only: an illustration.
   if (!meta) {
     try { meta = await illustration(headline, work, dest); } catch (e) { console.log(`::warning::hero illustration for ${job.id}: ${e.message}`); }
   }
-  // No reusable photo and no illustration (for example no OpenAI credits): Mahir accepted using
-  // the story's own photos with credit. The source URL is kept so a photo can be swapped on request.
-  if (!meta) meta = await anyPhoto(imagesOf(job), work, dest);
   if (!meta) throw new Error('no hero: no photo at least 1200 px wide and no illustration');
   // The desk writes alt text when it writes the site article (it looked at the photo).
   meta.alt = (meta.ai ? '' : plain(job.site_article?.hero_alt)) || await altText(dest, headline);
