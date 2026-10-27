@@ -60,6 +60,12 @@ jobs:
             jq -r '.[]' /tmp/env-$app.json | while IFS= read -r v; do if [ ${#v} -ge 6 ]; then echo "::add-mask::$v"; fi; done
             echo "::notice::$app: $(jq 'length' /tmp/env-$app.json) settings copied ($(jq -r 'keys | join(", ")' /tmp/env-$app.json))"
           done
+          for app in web admin; do
+            node -e '
+              const v=JSON.parse(require("fs").readFileSync(process.argv[1],"utf8")).DATABASE_URL||"";
+              let d; try { const u=new URL(v.trim()); d=`protocol=${u.protocol} host=*${u.hostname.slice(-22)} port=${u.port} db=${u.pathname.length>1} user=${!!u.username} pass=${!!u.password} params=${[...u.searchParams.keys()].join("+")}`; } catch(e) { d=`unparseable (len ${v.length}, starts ${JSON.stringify(v.slice(0,11))}, quotes=${/^["\x27]/.test(v)}, spaces=${/\s/.test(v)})`; }
+              console.log(`::notice::${process.argv[2]} DATABASE_URL: ${d}`);' /tmp/env-$app.json $app
+          done
           # The public site uses the admin's database settings (its own Netlify DATABASE_URL is not valid).
           jq -s '.[0] + {NEURAFEED_DATABASE_CA_CERT_BASE64: (.[0].NEURAFEED_DATABASE_CA_CERT_BASE64 // .[1].NEURAFEED_DATABASE_CA_CERT_BASE64), DATABASE_URL: .[1].DATABASE_URL} | with_entries(select(.value != null))' /tmp/env-web.json /tmp/env-admin.json > /tmp/env-web2.json && mv /tmp/env-web2.json /tmp/env-web.json
 
