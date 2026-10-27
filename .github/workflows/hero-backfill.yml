@@ -33,6 +33,7 @@ jobs:
       - run: node src/hero-backfill.js
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          FAL_KEY: ${{ secrets.FAL_KEY }}
           REDO: ${{ inputs.redo }}
       - name: Publish heroes and the desk feed
         env:

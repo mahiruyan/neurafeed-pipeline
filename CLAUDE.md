@@ -228,15 +228,22 @@ believable fake photo of a real event that did not happen.
   image", "the logo in the third image, glowing on the wall") and keep faces and logos exact.
 - The model writes fake text on objects (chips, screens, signs). Always say "blank surfaces, no
   readable text or labels on any object" in the prompt.
-- Do not ask the model to draw logos (it gets them wrong). Instead, in the prompt keep one side
-  of the frame as empty dark background ("the left third of the frame is empty dark background")
-  and put the real logo there as a free badge with `"cutout": true` and the matching `"side"`.
 - Always end the prompt with: "It must look like an unedited real photo from a news agency, not a
   painting, not digital art, no glow effects." and ask for headroom above the person's head
   (the top of the frame is cropped slightly on the cover).
 - Photorealistic, high contrast, one clear subject, vertical composition, subject in the upper two
   thirds (the bottom third is covered by the headline), no text, no letters, no watermarks.
-- At most 2 generated covers per day.
+- Generated covers are made with Seedream 5.0 Pro (about $0.07 each), no daily limit. The pipeline
+  appends realism instructions automatically (candid news photo, grain, real skin, no retouching),
+  so write the scene, not the camera style.
+- When the story is about a person, the FIRST ref must be a real, recent news photo of that person
+  (face clearly visible, at least 800 px) and the prompt calls them "the man/woman in the first
+  image". Never generate a known person without their real photo as a ref.
+- Logos may be part of the scene when given as a ref (a logo on a crate, a wall, a big screen):
+  "the logo from the second image, big and exact". This works well with Seedream. Mascots are never
+  drawn by the model: put the real mascot PNG on as a free badge instead.
+- Make the scene imperfect and real: a cluttered warehouse, a crowded exchange floor, a dim data
+  center aisle, harsh fluorescent light. No clean studio, no perfect symmetry, no glowing sci-fi.
 
 How to choose the cover, for every carousel. Ask two questions about the best real photo:
 1. Would someone scrolling know which company or person this is about within one second?

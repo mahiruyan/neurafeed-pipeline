@@ -33,6 +33,7 @@ jobs:
       - run: node src/site-heroes.js media
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          FAL_KEY: ${{ secrets.FAL_KEY }}
           SITE_ADMIN_ORIGIN: https://neurafeed-staging-admin.netlify.app
           SITE_REVIEW_TOKEN: ${{ secrets.SITE_REVIEW_TOKEN }}
       - name: Publish

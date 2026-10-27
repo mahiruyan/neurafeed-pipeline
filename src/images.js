@@ -98,7 +98,37 @@ async function logoAlreadyVisible(photo, logoUrl) {
 // Slide field: image.generate = "a prompt describing the scene".
 // image.refs: optional list of image URLs (company logo, product photo, CEO photo, mascot) the
 // model must use, so the result is recognizably about that company.
+// Realism instructions added to every generated cover, so the result looks like a candid news
+// photo and not a polished AI render (no smoothed skin, real grain, real clutter).
+const REALISM = ' Keep the face of the person in the first image exactly as it is: same face shape, age, wrinkles, skin texture, hairline. Do not beautify, do not smooth or retouch the skin. Shot as a candid photojournalism frame on a Canon EOS R5 with a 35mm lens, available light only, slightly underexposed, mixed color temperature, visible sensor noise and fine grain, natural pores and uneven skin tone, a stray hair, a slightly wrinkled collar, some clutter and imperfections in the scene, background a bit out of focus, not perfectly symmetrical, not perfectly centered. Generous headroom above the head. The subject sits in the upper two thirds of the frame; the bottom third is darker. Blank surfaces, no readable text or labels on any object, no watermarks. It must look like an unedited real photo from a news agency, not a painting, not digital art, not a 3D render, no glow effects, no cinematic color grading.';
+const REPO_RAW = process.env.NEURAFEED_RAW_BASE || 'https://raw.githubusercontent.com/mahiruyan/neurafeed-pipeline/main/';
+const publicUrl = (ref) => (/^https?:\/\//.test(ref) ? ref : REPO_RAW + String(ref).replace(/^\.?\//, ''));
+
+// Seedream 5.0 Pro on fal.ai (about $0.07 per image). Refs (the person's real photo first, then
+// logos or products) are passed as URLs; repo paths like assets/logos/meta.png become raw URLs.
+async function generateFal(prompt, dest, refs = [], size = '1440x1800') {
+  const key = process.env.FAL_KEY;
+  const urls = refs.map(publicUrl).slice(0, 10);
+  const endpoint = urls.length ? 'bytedance/seedream/v5/pro/edit' : 'bytedance/seedream/v5/pro/text-to-image';
+  const [width, height] = (size === '1024x1536' ? '1440x1800' : size).split('x').map(Number);
+  const extra = urls.length ? REALISM : ' Photorealistic, natural light, real imperfections, no readable text, no watermarks, not digital art.';
+  const body = { prompt: /retouch/.test(prompt) ? prompt : prompt + extra, image_size: { width, height }, num_images: 1 };
+  if (urls.length) body.image_urls = urls;
+  let res;
+  try {
+    res = await fetch(`https://fal.run/${endpoint}`, { method: 'POST', headers: { Authorization: `Key ${key}`, 'Content-Type': 'application/json' }, body: JSON.stringify(body), signal: AbortSignal.timeout(280000) });
+  } catch (e) {
+    throw new Error(`fal image request failed: ${e.message}`);
+  }
+  const data = await res.json().catch(() => ({}));
+  const url = data.images?.[0]?.url;
+  if (!res.ok || !url) throw new Error(`fal image: ${data.detail ? JSON.stringify(data.detail).slice(0, 300) : res.status}`);
+  await download(url, dest);
+  return dest;
+}
+
 async function generate(prompt, dest, refs = [], size = '1024x1536') {
+  if (process.env.FAL_KEY) return generateFal(prompt, dest, refs, size);
   const key = process.env.OPENAI_API_KEY;
   if (!key) throw new Error('OPENAI_API_KEY missing, cannot generate image');
   const model = process.env.OPENAI_IMAGE_MODEL || 'gpt-image-2';
@@ -229,4 +259,4 @@ async function fetchImages(job, outDir) {
   return { paths: paths.map((p, i) => p || (TEXT_ONLY.has(job.slides[i].kind) ? null : firstGood)), badges, errors };
 }
 
-module.exports = { logoAlreadyVisible, brandsInPhoto, brandMatches, brandOf, download, fetchImages, generate, imgData };
+module.exports = { REALISM, publicUrl, generateFal, logoAlreadyVisible, brandsInPhoto, brandMatches, brandOf, download, fetchImages, generate, imgData };
