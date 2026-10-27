@@ -1,0 +1,35 @@
+name: Site domain
+
+# Connects neurafeedai.com (and www, admin.) to the Cloudflare Workers once the zone is active.
+# check: report only. connect: replace the old Netlify records and attach the Worker custom domains.
+on:
+  workflow_dispatch:
+    inputs:
+      action: { description: "check or connect", required: true, default: check }
+
+jobs:
+  domain:
+    runs-on: ubuntu-latest
+    env:
+      CF: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+      ACC: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+    steps:
+      - run: |
+          api=https://api.cloudflare.com/client/v4; H="Authorization: Bearer $CF"
+          z=$(curl -s -H "$H" "$api/zones?name=neurafeedai.com")
+          zid=$(jq -r '.result[0].id // empty' <<<"$z"); st=$(jq -r '.result[0].status // "missing"' <<<"$z")
+          echo "::notice::zone neurafeedai.com: $st (public NS now: $(dig +short NS neurafeedai.com | tr '\n' ' '))"
+          [ -n "$zid" ] || { echo "::error::zone not visible to the token: $(jq -c .errors <<<"$z")"; exit 1; }
+          recs=$(curl -s -H "$H" "$api/zones/$zid/dns_records?per_page=100")
+          echo "::notice::records: $(jq -c '[.result[] | "\(.type) \(.name) \(.content|.[0:40]) proxied=\(.proxied)"]' <<<"$recs")"
+          [ "${{ inputs.action }}" = connect ] || exit 0
+          [ "$st" = active ] || { echo "::error::zone is $st, not active yet; nameserver change still propagating"; exit 1; }
+          # Old Netlify records for the hostnames the Workers will serve.
+          for id in $(jq -r '.result[] | select((.name=="neurafeedai.com" and (.type=="A" or .type=="AAAA" or .type=="CNAME")) or (.name=="www.neurafeedai.com") or (.name=="admin.neurafeedai.com")) | .id' <<<"$recs"); do
+            r=$(curl -s -X DELETE -H "$H" "$api/zones/$zid/dns_records/$id"); echo "::notice::delete record $id: $(jq -c '.success' <<<"$r") $(jq -c '.errors' <<<"$r")"
+          done
+          for pair in neurafeedai.com:neurafeed-web www.neurafeedai.com:neurafeed-web admin.neurafeedai.com:neurafeed-admin; do
+            host=${pair%%:*}; svc=${pair#*:}
+            r=$(curl -s -X PUT -H "$H" -H 'Content-Type: application/json' "$api/accounts/$ACC/workers/domains" -d "{\"environment\":\"production\",\"hostname\":\"$host\",\"service\":\"$svc\",\"zone_id\":\"$zid\"}")
+            echo "::notice::$host -> $svc: success=$(jq -r .success <<<"$r") $(jq -c '.errors' <<<"$r")"
+          done
