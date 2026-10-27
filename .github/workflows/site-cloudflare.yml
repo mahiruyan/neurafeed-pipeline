@@ -60,8 +60,8 @@ jobs:
             jq -r '.[]' /tmp/env-$app.json | while IFS= read -r v; do if [ ${#v} -ge 6 ]; then echo "::add-mask::$v"; fi; done
             echo "::notice::$app: $(jq 'length' /tmp/env-$app.json) settings copied ($(jq -r 'keys | join(", ")' /tmp/env-$app.json))"
           done
-          # The public site needs the Supabase root certificate too (the build reads the database).
-          jq -s '.[0] + {NEURAFEED_DATABASE_CA_CERT_BASE64: (.[0].NEURAFEED_DATABASE_CA_CERT_BASE64 // .[1].NEURAFEED_DATABASE_CA_CERT_BASE64)} | with_entries(select(.value != null))' /tmp/env-web.json /tmp/env-admin.json > /tmp/env-web2.json && mv /tmp/env-web2.json /tmp/env-web.json
+          # The public site uses the admin's database settings (its own Netlify DATABASE_URL is not valid).
+          jq -s '.[0] + {NEURAFEED_DATABASE_CA_CERT_BASE64: (.[0].NEURAFEED_DATABASE_CA_CERT_BASE64 // .[1].NEURAFEED_DATABASE_CA_CERT_BASE64), DATABASE_URL: .[1].DATABASE_URL} | with_entries(select(.value != null))' /tmp/env-web.json /tmp/env-admin.json > /tmp/env-web2.json && mv /tmp/env-web2.json /tmp/env-web.json
 
       - name: Hyperdrive (database pooling, optional)
         run: |
