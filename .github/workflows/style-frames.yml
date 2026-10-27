@@ -20,6 +20,7 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 45
     steps:
+      - uses: actions/checkout@v4
       - name: Tools
         run: |
           python3 -m pip install --quiet --upgrade --pre yt-dlp
@@ -42,7 +43,7 @@ jobs:
                    --print-to-file "%(title)s | %(channel)s | %(duration_string)s | %(webpage_url)s" "$d/info.txt" \
                    -o "$d/video.%(ext)s" "$u" >/dev/null 2>"$d/err.txt"; then ok=1; echo "$c" > "$d/client.txt"; break; fi
             done
-            if [ $ok = 0 ]; then echo "FAILED $u" > "$d/info.txt"; tail -3 "$d/err.txt" >> "$d/info.txt"; continue; fi
+            if [ $ok = 0 ]; then echo "FAILED $u" > "$d/info.txt"; tail -3 "$d/err.txt" >> "$d/info.txt"; echo "::notice::v$n FAILED $(tail -1 "$d/err.txt" | cut -c1-150)"; continue; fi
             v=$(ls "$d"/video.* | head -1)
             ffmpeg -loglevel error -i "$v" -vf "fps=1/${EVERY},scale=384:-2,drawtext=text='%{pts\:hms}':x=6:y=6:fontsize=16:fontcolor=yellow:box=1:boxcolor=black@0.6" "$d/f_%04d.jpg"
             # Contact sheets: 4 columns x 5 rows = 20 frames each.
