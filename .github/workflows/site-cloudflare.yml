@@ -60,6 +60,8 @@ jobs:
             jq -r '.[]' /tmp/env-$app.json | while IFS= read -r v; do [ ${#v} -ge 6 ] && echo "::add-mask::$v"; done
             echo "::notice::$app: $(jq 'length' /tmp/env-$app.json) settings copied ($(jq -r 'keys | join(", ")' /tmp/env-$app.json))"
           done
+          # The public site needs the Supabase root certificate too (the build reads the database).
+          jq -s '.[0] + {NEURAFEED_DATABASE_CA_CERT_BASE64: (.[0].NEURAFEED_DATABASE_CA_CERT_BASE64 // .[1].NEURAFEED_DATABASE_CA_CERT_BASE64)} | with_entries(select(.value != null))' /tmp/env-web.json /tmp/env-admin.json > /tmp/env-web2.json && mv /tmp/env-web2.json /tmp/env-web.json
 
       - name: Hyperdrive (database pooling, optional)
         run: |
