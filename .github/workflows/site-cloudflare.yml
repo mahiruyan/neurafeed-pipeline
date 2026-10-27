@@ -106,7 +106,7 @@ jobs:
               | with_entries(.value |= tostring)' /tmp/env-$app.json > /tmp/secrets-$app.json
             # Build with the same settings (Next reads some at build time).
             ( set -a; eval "$(jq -r 'to_entries[] | "export \(.key)=\(.value|@sh)"' /tmp/secrets-$app.json)"; set +a
-              cd apps/$app && npx opennextjs-cloudflare build >/tmp/build-$app.log 2>&1 ) || { tail -40 /tmp/build-$app.log; echo "::error::$app build failed: $(grep -v '^\s*$' /tmp/build-$app.log | tail -30 | cut -c1-200 | tr '\n' '|')"; exit 1; }
+              cd apps/$app && npx opennextjs-cloudflare build >/tmp/build-$app.log 2>&1 ) || { tail -40 /tmp/build-$app.log; echo "::error::$app build failed: $(grep -iE 'error|certificate|econn|enotfound|database|fail' /tmp/build-$app.log | grep -v 'npm error\|at \|node:internal' | head -25 | cut -c1-240 | tr '\n' '|')"; exit 1; }
             cd apps/$app
             npx wrangler deploy --secrets-file /tmp/secrets-$app.json >/tmp/deploy-$app.log 2>&1 || { tail -30 /tmp/deploy-$app.log; echo "::error::$app deploy failed: $(grep -v '^\s*$' /tmp/deploy-$app.log | tail -25 | cut -c1-200 | tr '\n' '|')"; exit 1; }
             cd ../..
