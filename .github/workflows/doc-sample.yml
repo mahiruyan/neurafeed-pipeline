@@ -19,13 +19,17 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
-        with: { node-version: 20 }
+        with:
+          node-version: 20
       - uses: actions/cache@v4
-        with: { path: ~/.cache/puppeteer, key: puppeteer-${{ runner.os }}-v1 }
+        with:
+          path: ~/.cache/puppeteer
+          key: puppeteer-${{ runner.os }}-v1
       - run: npm install --no-audit --no-fund
       - run: which ffmpeg || (sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg)
       - name: Narration
-        env: { ELEVENLABS_API_KEY: '${{ secrets.ELEVENLABS_API_KEY }}' }
+        env:
+          ELEVENLABS_API_KEY: ${{ secrets.ELEVENLABS_API_KEY }}
         run: node video/sample/tts.js video/sample/script.json build
       - name: Render dark
         run: node video/sample/render.js build dark "${{ inputs.walkout }}" build/sample-dark.mp4
