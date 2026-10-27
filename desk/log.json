@@ -1,61 +1,5 @@
 [
   {
-    "run_at": "2026-10-20T16:02:10.879Z",
-    "summary": "11:53 NY run: no open links or requests; queued today's utility post (Claude prompt fixes from Anthropic's guide), bringing today to 8 jobs; no new priority 1 story found.",
-    "considered": [
-      {
-        "story": "5 prompt fixes from Anthropic's official Claude prompting guide (utility)",
-        "source": "https://platform.claude.com/en/docs/build-with-claude/prompt-engineering/claude-prompting-best-practices",
-        "decision": "queued",
-        "job_id": "2026-10-20-claude-prompt-fixes-anthropic-guide",
-        "priority": 2
-      },
-      {
-        "story": "OpenAI coding model for low-resource languages like COBOL",
-        "decision": "covered",
-        "reason": "Already queued as 2026-10-20-openai-learns-cobol-atm-code-v2."
-      },
-      {
-        "story": "Anthropic and Nscale talk second multibillion-dollar deal",
-        "decision": "covered",
-        "reason": "Already covered as 2026-10-19-anthropic-second-45-billion-nscale-deal."
-      },
-      {
-        "story": "Inception launches Mercury 3 diffusion model",
-        "source": "https://www.inceptionlabs.ai/blog/introducing-mercury-3",
-        "decision": "skipped",
-        "reason": "Smaller lab model claims with little mainstream US interest, and today's cap is now full."
-      },
-      {
-        "story": "Bob McGrew's startup Arda raises $230 million for AI manufacturing",
-        "decision": "skipped",
-        "reason": "Funding round of limited mass interest and no slot left today."
-      },
-      {
-        "story": "Figma's Dylan Field says MCP is not a perfect protocol",
-        "source": "https://techcrunch.com/2026/10/20/figma-co-founder-dylan-field-thinks-mcp-is-not-a-perfect-protocol/",
-        "decision": "skipped",
-        "reason": "Developer niche opinion, cap reached."
-      },
-      {
-        "story": "Judge dismisses lawsuit by Sam Altman's sister",
-        "decision": "skipped",
-        "reason": "Sensitive abuse case about a private family matter, not a fit for the account."
-      },
-      {
-        "story": "OpenAI Pacing 2.0 report",
-        "decision": "skipped",
-        "reason": "The Information is paywalled and no second readable source."
-      },
-      {
-        "story": "Mamdani says feds have abdicated on AI",
-        "decision": "skipped",
-        "reason": "Political and sensitive, and the daily cap is full."
-      }
-    ],
-    "requests": []
-  },
-  {
     "run_at": "2026-10-20T18:02:24.163Z",
     "summary": "Queued Mahir's wizard link as a single post (SF gym vibe coding sign, review). Today already has 8 news jobs, so no new news jobs were added.",
     "considered": [
@@ -5545,6 +5489,66 @@
         "source": "https://techcrunch.com/2026/10/27/general-compute-raises-100-million-series-a-countering-the-neocloud-disaster-narrative/",
         "decision": "skipped",
         "reason": "Funding round with little US consumer interest, and the daily cap is reached."
+      }
+    ],
+    "requests": []
+  },
+  {
+    "run_at": "2026-10-27T16:09:55.245Z",
+    "summary": "Midday run (12:10 New York time, Oct 27): no open links or requests; today already has 8 news jobs (the daily cap), so nothing new was queued.",
+    "considered": [
+      {
+        "story": "Anthropic IPO filing reveals models escaped tests and a training pause",
+        "decision": "covered",
+        "reason": "Already posted as 2026-10-27-anthropic-models-escaped-tests-training-pause."
+      },
+      {
+        "story": "Wall Street banks provide $63 billion to finance Broadcom chips for Anthropic",
+        "source": "https://finance.yahoo.com",
+        "decision": "skipped",
+        "reason": "Today is at the 8 news post cap, and Anthropic's IPO financing was already covered yesterday."
+      },
+      {
+        "story": "Reuters: Anthropic's plan for who controls its AI after its leaders depart",
+        "decision": "skipped",
+        "reason": "Comes from the IPO filing already covered twice; daily cap of 8 reached."
+      },
+      {
+        "story": "Gemini 4 Argon loses on Google's own coding test",
+        "decision": "skipped",
+        "reason": "Single blog report, and the daily cap of 8 news posts is reached."
+      },
+      {
+        "story": "UK Home Office may face investigation over use of OpenAI tools",
+        "source": "https://www.wired.com/story/uk-home-office-may-face-investigation-over-use-of-openai-tools",
+        "decision": "skipped",
+        "reason": "UK government story with little US interest; daily cap reached."
+      },
+      {
+        "story": "Meta AI director Rohit Patel leaves to take on Microsoft Office and Google Workspace",
+        "source": "https://techcrunch.com/2026/10/27/meta-ai-director-rohit-patel-leaves-to-take-on-microsoft",
+        "decision": "skipped",
+        "reason": "Executive departure for a startup, modest interest; daily cap reached."
+      },
+      {
+        "story": "GPT-6.1 Terra launch",
+        "decision": "covered",
+        "reason": "Already queued as 2026-10-26-openai-gpt-6-1-terra."
+      },
+      {
+        "story": "Cloudflare GLM-5.3 KV cache exposure",
+        "decision": "covered",
+        "reason": "Already queued as 2026-10-27-cloudflare-ai-leaked-other-customers-data."
+      },
+      {
+        "story": "Google can use Photos and Drive data to show ads",
+        "decision": "covered",
+        "reason": "Already covered as 2026-10-24-google-gmail-photos-ads-exception."
+      },
+      {
+        "story": "Daily utility post",
+        "decision": "skipped",
+        "reason": "No utility post today because the 8 post daily cap is already filled by news."
       }
     ],
     "requests": []
