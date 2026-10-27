@@ -1,0 +1,25 @@
+name: Token check
+
+# Read-only: which saved GitHub token can see which repository (status codes only, no values).
+on: workflow_dispatch
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - env:
+          A: ${{ secrets.BOT_GH_TOKEN }}
+          B: ${{ secrets.SECRETS_PAT }}
+          C: ${{ secrets.MEDIA_REPO_TOKEN }}
+        run: |
+          for n in A B C; do
+            t="${!n}"; [ -z "$t" ] && { echo "::notice::$n empty"; continue; }
+            kind=$(case "$t" in github_pat_*) echo fine-grained;; ghp_*) echo classic;; *) echo other;; esac)
+            out="$n ($kind):"
+            for r in neurafeed neurafeed-pipeline neurafeed-media; do
+              c=$(curl -s -o /dev/null -w '%{http_code}' -H "Authorization: Bearer $t" https://api.github.com/repos/mahiruyan/$r)
+              out="$out $r=$c"
+            done
+            exp=$(curl -sI -H "Authorization: Bearer $t" https://api.github.com/user | grep -i 'github-authentication-token-expiration' | cut -d' ' -f2- | tr -d '\r')
+            echo "::notice::$out expires=${exp:-none}"
+          done
