@@ -1,0 +1,25 @@
+name: Site review
+
+# list: show the drafts waiting for review (headline, words, sources).
+# approve: approve and publish one draft by id (same as the Telegram button).
+on:
+  workflow_dispatch:
+    inputs:
+      action: { description: "list or approve", required: true, default: list }
+      id: { description: "draft id for approve", required: false, default: '' }
+
+jobs:
+  review:
+    runs-on: ubuntu-latest
+    steps:
+      - env:
+          T: ${{ secrets.SITE_REVIEW_TOKEN }}
+        run: |
+          A=https://admin.neurafeedai.com/api/jobs/telegram-review
+          if [ "${{ inputs.action }}" = approve ]; then
+            r=$(curl -s -w '\n%{http_code}' -X POST -H "Authorization: Bearer $T" -H 'Content-Type: application/json' -d "{\"action\":\"approve_publish\",\"articleId\":\"${{ inputs.id }}\"}" $A)
+            echo "::notice::approve: HTTP $(tail -1 <<<"$r") $(head -n -1 <<<"$r" | cut -c1-600)"
+          else
+            r=$(curl -s -X POST -H "Authorization: Bearer $T" -H 'Content-Type: application/json' -d '{"action":"list"}' $A)
+            jq -r '.drafts[] | "\(.id) | \(.headline) | \(.words) words | \([.sources[]?.name]|join(", ")) | category=\(.category)"' <<<"$r" | while read -r l; do echo "::notice::$l"; done
+          fi
