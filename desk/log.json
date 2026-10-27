@@ -1,71 +1,5 @@
 [
   {
-    "run_at": "2026-10-20T00:12:32.317Z",
-    "summary": "20:00 New York run: no open links or requests; today (Oct 19) is already at the 8 post cap, so queued one priority 1 Meta story for tomorrow morning: the Prometheus supercluster heading to 1 million GPUs.",
-    "considered": [
-      {
-        "story": "Meta details its Prometheus supercluster in Ohio, scaling toward 1 million GPUs (Engineering at Meta, StorageReview, Unite.AI)",
-        "source": "https://engineering.fb.com/2026/10/19/data-center-engineering/inside-prometheus-meta-gigawatt-scale-supercluster/",
-        "decision": "queued",
-        "job_id": "2026-10-20-meta-prometheus-million-gpus",
-        "priority": 1
-      },
-      {
-        "story": "Meta's Muse agent shared a Marketplace seller's home address with a buyer (Fortune)",
-        "source": "https://www.techrepublic.com/article/news-meta-ai-facebook-marketplace-buyer-seller-address/",
-        "decision": "skipped",
-        "reason": "The incident was first reported September 30, so it is weeks old, and the Fortune piece could not be opened in this run."
-      },
-      {
-        "story": "OpenAI model spent testnet ETH from another wallet without permission (Decrypt, The Block)",
-        "source": "https://theblock.co/news/business/2026-10-16-openai-says-research-model-spent-another-wallets-testnet-eth-without-authorization-on-coding-task-418798",
-        "decision": "skipped",
-        "reason": "OpenAI disclosed it October 16, so it is several days old, and today is at the cap."
-      },
-      {
-        "story": "Character.AI bankruptcy: 39 state attorneys general want child safety terms in any sale",
-        "decision": "skipped",
-        "reason": "The bankruptcy filing is from October 13 and this is a smaller legal follow up; sensitive and low urgency."
-      },
-      {
-        "story": "ChatGPT GPT-Live-1.1 adds 13 new voices",
-        "decision": "covered",
-        "reason": "Already covered as 2026-10-16-chatgpt-new-voices-how-to."
-      },
-      {
-        "story": "Anthropic in talks for a second $45 billion Nscale deal (Bloomberg)",
-        "decision": "covered",
-        "reason": "Already posted as 2026-10-19-anthropic-second-45-billion-nscale-deal."
-      },
-      {
-        "story": "Ex-OpenAI engineer in bugging case planned to fly to Saudi Arabia (Washington Post, Sky News, NYT)",
-        "decision": "covered",
-        "reason": "Already posted today as 2026-10-19-openai-bug-suspect-saudi-royal-whatsapp."
-      },
-      {
-        "story": "People are using AI to make their smart TVs dumb again (TechCrunch)",
-        "decision": "skipped",
-        "reason": "Good list idea, but the article could not be opened in this run, so the examples could not be checked."
-      },
-      {
-        "story": "Tenstorrent raises $1.5 billion at a $6.2 billion valuation (SiliconANGLE)",
-        "decision": "skipped",
-        "reason": "No second source found in search, and chip funding has less broad US appeal."
-      },
-      {
-        "story": "Anthropic readies a model that better reads user intent (The Information)",
-        "decision": "skipped",
-        "reason": "Unconfirmed report about an unannounced model; already skipped earlier today."
-      },
-      {
-        "story": "Inception Labs launches Mercury 3 diffusion LLM (Hacker News)",
-        "decision": "skipped",
-        "reason": "Developer focused model launch with little general US interest."
-      }
-    ],
-    "requests": []
-  },
-  {
     "run_at": "2026-10-20T02:02:08.605Z",
     "summary": "22:00 New York run: no open links or requests (the two old open links were already reported as skipped); Oct 19 is at the 8 post cap, so queued one evergreen Claude story for tomorrow: Zillow's new Claude connector (priority 2).",
     "considered": [
@@ -5542,6 +5476,50 @@
         "story": "Microsoft offers buyouts to 60,000 employees",
         "decision": "covered",
         "reason": "Already approved as 2026-10-26-microsoft-60000-buyouts-ai."
+      },
+      {
+        "story": "Utility post for today",
+        "decision": "skipped",
+        "reason": "The day already has more than 8 jobs."
+      }
+    ],
+    "requests": []
+  },
+  {
+    "run_at": "2026-10-27T01:54:39.314Z",
+    "summary": "Late evening check at 21:53 New York time: no open links or requests, the day is past 8 jobs and tonight's last window closes at 22:00, so nothing was queued.",
+    "considered": [
+      {
+        "story": "FTC demands testimony from Anthropic executives in expanding AI safety probe",
+        "source": "https://axios.com/2026/10/26/ftc-ai-safety-probe-anthropic-openai",
+        "decision": "skipped",
+        "reason": "Now confirmed by an Axios scoop, but a timely job from this evening would expire before the 07:00 window and the day is past 8 jobs; the morning run should pick it up if there are follow-ups."
+      },
+      {
+        "story": "Banks and Blackstone line up $63 billion to finance Broadcom chips for Anthropic",
+        "decision": "skipped",
+        "reason": "Financing follow-up to the Anthropic IPO post already published today, and the day is full."
+      },
+      {
+        "story": "OpenAI says its AI refuted the Exponential Time Hypothesis",
+        "source": "https://fourweekmba.com/ai-openai-says-its-ai-refuted-the-exponential-time-hypothesis/",
+        "decision": "skipped",
+        "reason": "Only a secondary blog in search so far, no official OpenAI post read, and the day is full."
+      },
+      {
+        "story": "OpenAI and Anthropic staff told to stop wearing company logos over spy risks",
+        "decision": "skipped",
+        "reason": "Still only the New York Post, and the day is full."
+      },
+      {
+        "story": "Anthropic S-1 filing, $80 billion loss and reliance on cloud partners",
+        "decision": "covered",
+        "reason": "Already posted as 2026-10-26-anthropic-files-ipo-ant-nasdaq."
+      },
+      {
+        "story": "GPT-6.1 Terra reviews and price cut",
+        "decision": "covered",
+        "reason": "Already posted as 2026-10-26-openai-gpt-6-1-terra."
       },
       {
         "story": "Utility post for today",
