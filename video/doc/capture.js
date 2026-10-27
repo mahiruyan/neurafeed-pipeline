@@ -45,7 +45,7 @@ async function risk(b, url, source) {
     const pos = (i) => { const k = nodes.filter((x) => x.at <= i).pop(); return [k.n, i - k.at]; };
     const range = document.createRange(); range.setStart(...pos(m.index)); range.setEnd(...pos(m.index + m[0].length));
     const box = el.getBoundingClientRect();
-    const clip = { x: Math.max(0, box.left - 48), y: Math.max(0, box.top - 40), w: Math.min(box.width + 96, window.innerWidth), h: box.height + 80 };
+    const clip = { x: Math.max(0, box.left - 48), y: Math.max(0, box.top - 26), w: Math.min(box.width + 96, window.innerWidth), h: box.height + 52 };
     const page = { x: clip.x + scrollX, y: clip.y + scrollY };
     const marks = [...range.getClientRects()].filter((q) => q.width > 2).map((q) => ({ x: q.left - clip.x, y: q.top - clip.y, w: q.width, h: q.height }));
     return { clip: { ...clip, ...page }, marks, text: el.textContent.trim().slice(0, 400) };
