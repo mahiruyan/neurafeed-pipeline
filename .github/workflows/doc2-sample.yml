@@ -1,0 +1,55 @@
+name: Documentary sample v2
+
+# Doc2: real material (article screenshots, Commons photos, optional footage), brand fonts, motion
+# components, music and sound effects. Results go to the `doc-sample` branch.
+on:
+  workflow_dispatch:
+    inputs:
+      cutout: { description: Cut-out PNG of the person (fal birefnet result), required: false, default: '' }
+      footage: { description: Optional video URL for the opening (X, Vimeo...), required: false, default: '' }
+
+permissions:
+  contents: write
+
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    timeout-minutes: 50
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - uses: actions/cache@v4
+        with:
+          path: ~/.cache/puppeteer
+          key: puppeteer-${{ runner.os }}-v1
+      - run: npm install --no-audit --no-fund
+      - run: mkdir -p build && cd video/doc && npm install --no-audit --no-fund
+      - name: Narration
+        env:
+          ELEVENLABS_API_KEY: ${{ secrets.ELEVENLABS_API_KEY }}
+        run: node video/sample/tts.js video/doc/script.json video/doc/public/assets
+      - name: Real material and sound
+        run: |
+          A=video/doc/public/assets
+          node video/doc/capture.js
+          cp assets/logo.png $A/nf-logo.png; cp assets/logos/anthropic.png $A/anthropic.png
+          curl -sL -o $A/whoosh.mp3 https://cdn.pixabay.com/audio/2025/07/30/audio_b3087a581e.mp3
+          curl -sL -o $A/hit.mp3 https://cdn.pixabay.com/audio/2025/05/31/audio_be1e4daf3e.mp3
+          curl -sL -o $A/music.mp3 https://cdn.pixabay.com/audio/2026/04/15/audio_e444601d4d.mp3
+          if [ -n "${{ inputs.cutout }}" ]; then curl -sL -o $A/dario-cut.png "${{ inputs.cutout }}"; fi
+          if [ -n "${{ inputs.footage }}" ]; then python3 -m pip install --quiet -U yt-dlp && yt-dlp -f "bv*[height<=1080]+ba/b" --merge-output-format mp4 -o $A/footage.mp4 "${{ inputs.footage }}" || true; fi
+          ls -la $A
+          node video/doc/props2.js
+      - name: Render
+        run: |
+          cd video/doc
+          npx remotion render src/index.ts Doc2 ../../build/sample2.mp4 --props=props2.json --crf=18
+      - name: Push to doc-sample branch
+        run: |
+          mkdir -p /tmp/out && cp build/* video/doc/props2.json /tmp/out/
+          cp video/doc/public/assets/*.png video/doc/public/assets/*.jpg /tmp/out/ 2>/dev/null || true
+          git config user.name "neurafeed-bot"; git config user.email "bot@neurafeed.ai"
+          git checkout --orphan doc-sample && git rm -rqf --cached . && rm -rf sample && mkdir sample && cp /tmp/out/* sample/
+          git add -f sample && git commit -qm "documentary sample v2" && git push -f origin doc-sample

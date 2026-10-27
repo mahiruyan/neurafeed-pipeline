@@ -41,7 +41,7 @@ async function risk(b, url, source) {
     el.scrollIntoView({ block: 'center' });
     const walker = document.createTreeWalker(el, NodeFilter.SHOW_TEXT); const nodes = []; let all = '';
     while (walker.nextNode()) { nodes.push({ n: walker.currentNode, at: all.length }); all += walker.currentNode.nodeValue; }
-    const m = /catastrophic[^.;]*?risks?/i.exec(all) || /catastrophic\S*/i.exec(all);
+    const m = /catastrophic[^.;]*?risks?( to humanity)?/i.exec(all) || /catastrophic\S*/i.exec(all);
     const pos = (i) => { const k = nodes.filter((x) => x.at <= i).pop(); return [k.n, i - k.at]; };
     const range = document.createRange(); range.setStart(...pos(m.index)); range.setEnd(...pos(m.index + m[0].length));
     const box = el.getBoundingClientRect();
@@ -56,11 +56,11 @@ async function risk(b, url, source) {
   console.log('risk paragraph:', r.text);
   return { src: 'assets/risk.png', w: r.clip.w, h: r.clip.h, marks: r.marks, source };
 }
-async function commons(query, dest) {
+async function commons(query, dest, must = /amodei/i) {
   const u = `https://commons.wikimedia.org/w/api.php?action=query&format=json&generator=search&gsrnamespace=6&gsrlimit=20&gsrsearch=${encodeURIComponent(query)}&prop=imageinfo&iiprop=url|size|extmetadata&iiurlwidth=1920`;
   const d = await (await fetch(u, { headers: { 'User-Agent': 'NeuraFeedBot/1.0 (mahiruyan956@gmail.com)' } })).json();
   const files = Object.values(d.query?.pages || {}).map((p) => ({ title: p.title, ...(p.imageinfo?.[0] || {}) }))
-    .filter((f) => /\.(jpe?g|png)$/i.test(f.title) && f.width >= 1000 && /amodei/i.test(f.title));
+    .filter((f) => /\.(jpe?g|png)$/i.test(f.title) && f.width >= 1000 && must.test(f.title));
   console.log('commons candidates:', files.map((f) => `${f.title} ${f.width}x${f.height}`).join(' | '));
   const f = files[0]; if (!f) return null;
   const buf = Buffer.from(await (await fetch(f.thumburl, { headers: { 'User-Agent': 'NeuraFeedBot/1.0' } })).arrayBuffer());
@@ -73,8 +73,15 @@ async function commons(query, dest) {
   const person = await commons('Dario Amodei', path.join(OUT, 'dario.jpg')).catch((e) => (console.log('commons failed', e.message), null));
   if (person) console.log(`::notice::Dario photo: ${person.title} ${person.url} (${person.credit})`);
   const b = await puppeteer.launch({ args: ['--no-sandbox'] });
-  const out = { headline: null, risk: null, person };
+  const building = await commons('OpenAI headquarters San Francisco', path.join(OUT, 'building.jpg'), /openai|pioneer building/i).catch(() => null);
+  if (building) console.log(`::notice::Building photo: ${building.title} (${building.credit})`);
+  const out = { headline: null, second: null, risk: null, person, building };
   out.headline = await headline(b, 'https://techcrunch.com/2026/10/26/anthropic-officially-files-for-its-public-debut/', 'TechCrunch, Oct. 26, 2026').catch((e) => (console.log('headline failed', e.message), null));
+  // second card: Engadget's headline
+  const eng = await open(b, 'https://www.engadget.com/2296724/anthropic-files-to-go-public/');
+  const er = await eng.evaluate(() => { const h = document.querySelector('h1'); if (!h) return null; h.scrollIntoView({ block: 'center' }); const a = h.getBoundingClientRect(); return { x: a.left - 40 + scrollX, y: a.top - 40 + scrollY, w: Math.min(a.width + 80, 1100), h: a.height + 120 }; }).catch(() => null);
+  if (er) { await eng.screenshot({ path: path.join(OUT, 'second.png'), clip: { x: er.x, y: er.y, width: er.w, height: er.h } }); out.second = { src: 'assets/second.png', w: er.w, h: er.h, source: 'Engadget, Oct. 2026' }; }
+  await eng.close();
   for (const [u, s] of [
     ['https://finance.yahoo.com/technology/article/anthropic-publicly-files-ipo-prospectus-noting-strong-revenue-growth-and-massive-spending-131807138.html', 'Yahoo Finance, Oct. 2026'],
     ['https://techcrunch.com/2026/10/26/anthropic-officially-files-for-its-public-debut/', 'TechCrunch, Oct. 26, 2026'],
