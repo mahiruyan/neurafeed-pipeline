@@ -77,6 +77,14 @@ const HandEllipse: React.FC<{ r: Rect; progress: number; color?: string; width?:
   return <path d={d} fill="none" stroke={color} strokeWidth={width} strokeLinecap="round" strokeDasharray={ev.strokeDasharray} strokeDashoffset={ev.strokeDashoffset} />;
 };
 
+// Hand-drawn underline under one line of text (used when a phrase wraps over several lines).
+const HandUnderline: React.FC<{ r: Rect; progress: number }> = ({ r, progress }) => {
+  const y = r.y + r.h + 4; const pts: string[] = [];
+  for (let i = 0; i <= 24; i++) pts.push(`${(r.x - 6 + (r.w + 12) * (i / 24)).toFixed(1)} ${(y + Math.sin(i * 0.9 + r.x) * 2.2 + (random(`u${r.x}${i}`) - 0.5) * 2).toFixed(1)}`);
+  const d = `M ${pts.join(' L ')}`; const ev = evolvePath(Math.min(1, Math.max(0, progress)), d);
+  return <path d={d} fill="none" stroke={C.acc} strokeWidth={7} strokeLinecap="round" strokeDasharray={ev.strokeDasharray} strokeDashoffset={ev.strokeDashoffset} />;
+};
+
 const Card: React.FC<{ shot: Shot; width: number; style?: React.CSSProperties; children?: React.ReactNode }> = ({ shot, width, style, children }) => {
   const k = width / shot.w;
   return (
@@ -256,13 +264,14 @@ const Risk: React.FC<{ shot: Shot | null; markAt: number }> = ({ shot, markAt })
   const W = 1400; const k = W / shot.w; const m = shot.marks || [];
   const box = m.length ? { x: Math.min(...m.map((r) => r.x)) * k, y: Math.min(...m.map((r) => r.y)) * k, w: (Math.max(...m.map((r) => r.x + r.w)) - Math.min(...m.map((r) => r.x))) * k, h: (Math.max(...m.map((r) => r.y + r.h)) - Math.min(...m.map((r) => r.y))) * k } : null;
   const z = interpolate(f, [markAt - 10, durationInFrames], [1, 1.22], clamp);
-  const cx = box ? box.x + box.w / 2 : W / 2; const cy = box ? box.y + box.h / 2 : 0;
+  const cx = m.length ? (m[0].x + m[0].w / 2) * k : W / 2; const cy = box ? box.y + box.h / 2 : 0;
   return (
     <ShotIn drift={0}>
       <Grid />
       <div style={{ position: 'absolute', left: 260, top: 540 - (shot.h * k) / 2, width: W, height: shot.h * k, transform: `translateY(${(1 - a) * 80}px) scale(${z})`, transformOrigin: `${cx}px ${cy}px` }}>
         <Card shot={shot} width={W}>
-          {box && <HandEllipse r={box} progress={interpolate(f, [markAt, markAt + 22], [0, 1], clamp)} width={6} />}
+          {m.length === 1 && box && <HandEllipse r={box} progress={interpolate(f, [markAt, markAt + 22], [0, 1], clamp)} width={6} />}
+          {m.length > 1 && m.map((r, i) => <HandUnderline key={i} r={{ x: r.x * k, y: r.y * k, w: r.w * k, h: r.h * k }} progress={interpolate(f, [markAt + i * 14, markAt + i * 14 + 16], [0, 1], clamp)} />)}
         </Card>
       </div>
       {shot.source && <Source text={shot.source} />}
