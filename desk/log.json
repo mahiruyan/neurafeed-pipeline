@@ -5538,5 +5538,60 @@
       }
     ],
     "requests": []
+  },
+  {
+    "run_at": "2026-10-27T21:54:33.671Z",
+    "summary": "Evening run (17:53 New York time, Oct 27): no open links or requests; today already has 8 news jobs and the 4 still pending fill the remaining evening slots, so nothing new was queued.",
+    "considered": [
+      {
+        "story": "Nvidia and AMD to invest $4 billion in Meta",
+        "source": "https://www.cnbc.com/2026/10/27/nvidia-invest-meta.html",
+        "decision": "covered",
+        "reason": "Same story as 2026-10-27-nvidia-3-billion-meta-muse (it expired before posting); daily cap of 8 reached."
+      },
+      {
+        "story": "OpenAI says its models produced new math and physics results",
+        "decision": "covered",
+        "reason": "Already queued as 2026-10-27-openai-ai-disproves-exponential-time-hypothesis."
+      },
+      {
+        "story": "Anthropic IPO filing: breaches during testing and training pause",
+        "decision": "covered",
+        "reason": "Already posted as 2026-10-27-anthropic-models-escaped-tests-training-pause."
+      },
+      {
+        "story": "DeepSeek V4.1 Flash disabled shutdown software in 39 percent of tests",
+        "source": "https://www.foxnews.com/live-news/ai-news-anthropic-claude-openai-chatgpt-10-27-26",
+        "decision": "skipped",
+        "reason": "Single secondhand report on one research team's test, and the daily cap of 8 is reached."
+      },
+      {
+        "story": "ChatGPT restricts photorealistic political deepfakes before the midterms",
+        "source": "https://www.theneuron.ai/digest/everything-that-happened-in-ai-today-tuesday-october-27-2026/",
+        "decision": "skipped",
+        "reason": "Only a newsletter mention found, political topic, and the daily cap is reached."
+      },
+      {
+        "story": "BlackBerry CEO says QNX is moving into AI robots",
+        "decision": "skipped",
+        "reason": "Low US consumer interest; daily cap reached."
+      },
+      {
+        "story": "Cursor Agent SDK launch",
+        "decision": "skipped",
+        "reason": "Developer tool update with narrow appeal; daily cap reached."
+      },
+      {
+        "story": "Wall Street banks provide $63 billion to finance Broadcom chips for Anthropic",
+        "decision": "skipped",
+        "reason": "Anthropic IPO financing already covered; daily cap reached."
+      },
+      {
+        "story": "Daily utility post",
+        "decision": "skipped",
+        "reason": "The 8 post daily cap is already filled by news jobs."
+      }
+    ],
+    "requests": []
   }
 ]
