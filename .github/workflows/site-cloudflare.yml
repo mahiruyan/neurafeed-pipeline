@@ -45,6 +45,8 @@ jobs:
       SITE_R2_ACCESS_KEY_ID: ${{ secrets.SITE_R2_ACCESS_KEY_ID }}
       SITE_R2_SECRET_ACCESS_KEY: ${{ secrets.SITE_R2_SECRET_ACCESS_KEY }}
       SITE_RESEND_API_KEY: ${{ secrets.SITE_RESEND_API_KEY }}
+      SITE_DIGEST_RECIPIENT: ${{ secrets.SITE_DIGEST_RECIPIENT }}
+      SITE_DIGEST_FROM: NeuraFeed <desk@neurafeedai.com>
       WORKERS_SUBDOMAIN: mahiruyan956.workers.dev
     steps:
       - uses: actions/checkout@v4
@@ -74,7 +76,7 @@ jobs:
           ph=$(jq -rs '[.[] | to_entries[] | select(.value|length==20) | .value] | group_by(.) | map(select(length>=3)) | .[0][0] // ""' /tmp/env-web.json /tmp/env-admin.json)
           jobtoken=$(openssl rand -hex 32)
           for app in web admin; do
-            jq --arg ph "$ph" --arg db "$SITE_DATABASE_URL" --arg pk "$SITE_SUPABASE_PUBLISHABLE_KEY" --arg r2i "$SITE_R2_ACCESS_KEY_ID" --arg r2s "$SITE_R2_SECRET_ACCESS_KEY" --arg rs "$SITE_RESEND_API_KEY" --arg jt "$jobtoken" --slurpfile adm /tmp/env-admin.json '
+            jq --arg ph "$ph" --arg db "$SITE_DATABASE_URL" --arg pk "$SITE_SUPABASE_PUBLISHABLE_KEY" --arg r2i "$SITE_R2_ACCESS_KEY_ID" --arg r2s "$SITE_R2_SECRET_ACCESS_KEY" --arg rs "$SITE_RESEND_API_KEY" --arg jt "$jobtoken" --arg dto "$SITE_DIGEST_RECIPIENT" --arg dfrom "$SITE_DIGEST_FROM" --slurpfile adm /tmp/env-admin.json '
               with_entries(select($ph == "" or .value != $ph))
               | if $db != "" then .DATABASE_URL = $db else . end
               | .NEURAFEED_DATABASE_CA_CERT_BASE64 = (.NEURAFEED_DATABASE_CA_CERT_BASE64 // $adm[0].NEURAFEED_DATABASE_CA_CERT_BASE64)
@@ -82,6 +84,8 @@ jobs:
               | if $r2i != "" then .NEURAFEED_R2_ACCESS_KEY_ID = $r2i else . end
               | if $r2s != "" then .NEURAFEED_R2_SECRET_ACCESS_KEY = $r2s else . end
               | if $rs != "" and has("RESEND_API_KEY") then .RESEND_API_KEY = $rs else . end
+              | if has("NEURAFEED_EDITORIAL_OWNER_DIGEST_FROM") then .NEURAFEED_EDITORIAL_OWNER_DIGEST_FROM = $dfrom else . end
+              | if $dto != "" and has("NEURAFEED_EDITORIAL_OWNER_DIGEST_RECIPIENT") then .NEURAFEED_EDITORIAL_OWNER_DIGEST_RECIPIENT = $dto else . end
               | if has("NEURAFEED_EDITORIAL_JOB_ACTOR_ID") then .NEURAFEED_EDITORIAL_JOB_TOKEN = $jt else . end
               | with_entries(select(.value != null))' /tmp/env-$app.json > /tmp/env-$app.2 && mv /tmp/env-$app.2 /tmp/env-$app.json
             echo "::notice::$app missing after cleanup (add as SITE_* secrets if needed): $(comm -13 <(jq -r 'keys[]' /tmp/env-$app.json | sort) <(printf '%s\n' DATABASE_URL NEURAFEED_SUPABASE_PUBLISHABLE_KEY NEURAFEED_R2_ACCESS_KEY_ID NEURAFEED_R2_SECRET_ACCESS_KEY RESEND_API_KEY NEURAFEED_EDITORIAL_OWNER_DIGEST_FROM NEURAFEED_EDITORIAL_OWNER_DIGEST_RECIPIENT | sort) | tr '\n' ' ')"
