@@ -1,0 +1,62 @@
+name: Style reference frames
+
+# Read-only study of reference YouTube videos: downloads each at low resolution, takes one frame
+# every few seconds, tiles them into contact sheets and pushes them to the `style-ref` branch.
+on:
+  workflow_dispatch:
+    inputs:
+      urls:
+        description: Space-separated YouTube URLs
+        required: true
+      every:
+        description: Seconds between frames
+        default: '4'
+
+permissions:
+  contents: write
+
+jobs:
+  frames:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - name: Tools
+        run: |
+          python3 -m pip install --quiet --upgrade --pre yt-dlp
+          which ffmpeg || (sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg)
+      - name: Frames
+        env:
+          URLS: ${{ inputs.urls }}
+          EVERY: ${{ inputs.every }}
+        run: |
+          set +e
+          mkdir -p ref
+          n=0
+          for u in $URLS; do
+            n=$((n+1)); d="ref/v$n"; mkdir -p "$d"
+            ok=0
+            for c in default tv web_safari mweb android_vr ios web_embedded tv_simply; do
+              args=(); [ "$c" != default ] && args=(--extractor-args "youtube:player_client=$c")
+              rm -f "$d"/video.*
+              if yt-dlp "${args[@]}" --no-playlist -f "bv*[height<=480]+ba/b[height<=480]/b" --merge-output-format mp4 \
+                   --print-to-file "%(title)s | %(channel)s | %(duration_string)s | %(webpage_url)s" "$d/info.txt" \
+                   -o "$d/video.%(ext)s" "$u" >/dev/null 2>"$d/err.txt"; then ok=1; echo "$c" > "$d/client.txt"; break; fi
+            done
+            if [ $ok = 0 ]; then echo "FAILED $u" > "$d/info.txt"; tail -3 "$d/err.txt" >> "$d/info.txt"; continue; fi
+            v=$(ls "$d"/video.* | head -1)
+            ffmpeg -loglevel error -i "$v" -vf "fps=1/${EVERY},scale=384:-2,drawtext=text='%{pts\:hms}':x=6:y=6:fontsize=16:fontcolor=yellow:box=1:boxcolor=black@0.6" "$d/f_%04d.jpg"
+            # Contact sheets: 4 columns x 5 rows = 20 frames each.
+            ffmpeg -loglevel error -pattern_type glob -i "$d/f_*.jpg" -vf "tile=4x5:padding=4:margin=4" -q:v 4 "$d/sheet_%02d.jpg"
+            # A few full-size frames for type and color detail.
+            for t in 5 30 90 180 300; do ffmpeg -loglevel error -ss $t -i "$v" -frames:v 1 -vf scale=1280:-2 -q:v 3 "$d/full_${t}s.jpg"; done
+            rm -f "$v" "$d"/f_*.jpg
+            echo "::notice::v$n $(cat "$d/info.txt")"
+          done
+      - name: Push to style-ref branch
+        run: |
+          git config user.name "neurafeed-bot"; git config user.email "bot@neurafeed.ai"
+          git checkout --orphan style-ref
+          git rm -rq --cached . >/dev/null 2>&1 || true
+          git add -f ref
+          git commit -qm "style reference frames"
+          git push -f origin style-ref
