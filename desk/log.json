@@ -1,55 +1,5 @@
 [
   {
-    "run_at": "2026-10-20T13:55:22.365Z",
-    "summary": "09:53 NY run: no open links or requests (the two old links are already in skipped.json); queued nothing because today already has 7 news jobs and the last slot is kept for the 11:00 utility post.",
-    "considered": [
-      {
-        "story": "Canadian publishers sue Anthropic in Ontario over Claude training",
-        "source": "https://chatnewstoday.ca/2026/10/19/news-publishers-launch-copyright-suit-against-ai-company-anthropic-in-ontario/",
-        "decision": "skipped",
-        "reason": "Only one small outlet found, searches surface the older OpenAI suit instead, and it is a sensitive Canadian story with little US pull."
-      },
-      {
-        "story": "Anthropic junior share of technical hires drops from 27% to 9%",
-        "source": "https://www.theneuron.ai/news/anthropic-junior-technical-hiring-ai/",
-        "decision": "skipped",
-        "reason": "Only one slot left today and it is reserved for the daily utility post; Anthropic is already heavy today."
-      },
-      {
-        "story": "Nvidia signs physical AI declaration with Germany",
-        "source": "https://blogs.nvidia.com/blog/germany-wants-to-lead-the-world-in-industrial-ai-how-nvidia-will-help/",
-        "decision": "skipped",
-        "reason": "Government partnership with little interest for a US mass audience, and the daily cap is nearly full."
-      },
-      {
-        "story": "ChatGPT takes actions inside open Chrome tabs",
-        "decision": "covered",
-        "reason": "Already posted as 2026-10-16-chatgpt-chrome-tabs-work-mode."
-      },
-      {
-        "story": "DHS orders DeepSeek removed from federal systems",
-        "decision": "skipped",
-        "reason": "Political and sensitive, WSJ paywalled, no second readable source."
-      },
-      {
-        "story": "Mercury 3, MiniMax M3.1 Flash, FLUX 3 Max model launches",
-        "decision": "skipped",
-        "reason": "Company claims from smaller labs with limited US mainstream interest; no slot left."
-      },
-      {
-        "story": "OpenAI $30B raise ahead of Anthropic IPO",
-        "decision": "covered",
-        "reason": "Already queued as 2026-10-20-openai-30-billion-race-anthropic-ipo-v2."
-      },
-      {
-        "story": "Hacker used AI agents to break into 100+ sites",
-        "decision": "covered",
-        "reason": "Already covered as 2026-10-19-ai-agents-hacked-100-sites-50-each."
-      }
-    ],
-    "requests": []
-  },
-  {
     "run_at": "2026-10-20T16:02:10.879Z",
     "summary": "11:53 NY run: no open links or requests; queued today's utility post (Claude prompt fixes from Anthropic's guide), bringing today to 8 jobs; no new priority 1 story found.",
     "considered": [
@@ -5529,6 +5479,72 @@
         "story": "Digit humanoids expand to two more GXO warehouses",
         "decision": "skipped",
         "reason": "Deployment starts in 2027, small news with no strong photo."
+      }
+    ],
+    "requests": []
+  },
+  {
+    "run_at": "2026-10-27T14:53:15.265Z",
+    "summary": "Made Mahir's X video link into a Reel and queued Apple's M6 MacBook Pro and iMac launch as the 8th news post of the day.",
+    "considered": [
+      {
+        "story": "Mahir's link: Jason Shuman X video, 'Coming to a city near you' (face recognition payments)",
+        "source": "https://x.com/jasonrshuman/status/2114052520985424331",
+        "decision": "queued",
+        "job_id": "2026-10-27-face-recognition-payments-reel",
+        "priority": 1
+      },
+      {
+        "story": "Apple unveils 14-inch MacBook Pro and iMac with M6, claims up to 13x faster LLM prompt processing than M1",
+        "source": "https://techcrunch.com/2026/10/27/apple-unveils-new-14-inch-macbook-pro-with-m6-chip/",
+        "decision": "queued",
+        "job_id": "2026-10-27-apple-m6-macbook-pro-ai-13x",
+        "priority": 1
+      },
+      {
+        "story": "OpenAI dots always-on assistant (TechCrunch feature)",
+        "source": "https://techbytes.app/posts/how-openai-turned-its-coding-tools-into-dots-an-always/",
+        "decision": "skipped",
+        "reason": "Dots launched on September 29; this is a background feature, not new news."
+      },
+      {
+        "story": "OpenAI claims proofs on the Exponential Time Hypothesis, Kakeya and Yang-Mills",
+        "decision": "covered",
+        "reason": "Already queued as 2026-10-27-openai-ai-disproves-exponential-time-hypothesis."
+      },
+      {
+        "story": "Nvidia and AMD invest in Meta",
+        "source": "https://www.cnbc.com/2026/10/27/nvidia-invest-meta.html",
+        "decision": "covered",
+        "reason": "Already queued as 2026-10-27-nvidia-3-billion-meta-muse."
+      },
+      {
+        "story": "Cohere says Qwen model tried to send a file to China",
+        "decision": "covered",
+        "reason": "Already queued as 2026-10-27-qwen-ai-tried-to-send-file-to-beijing."
+      },
+      {
+        "story": "Elvis Presley rights holders sue Anthropic",
+        "decision": "covered",
+        "reason": "Already covered as 2026-10-24-elvis-rights-holders-sue-anthropic."
+      },
+      {
+        "story": "AI political groups spent $78.5M on 2026 federal races",
+        "source": "https://www.cnbc.com/2026/10/27/ai-political-spending-silicon-valley-election.html",
+        "decision": "skipped",
+        "reason": "Today already has 8 news jobs with the Apple story, the daily cap."
+      },
+      {
+        "story": "GXO expands Agility Digit humanoid robots to two more warehouses",
+        "source": "https://www.therobotreport.com/agility-gxo-logistics-plan-expanded-deployment-digit-humanoid/",
+        "decision": "skipped",
+        "reason": "Daily cap of 8 news jobs reached; small expansion of an existing deployment."
+      },
+      {
+        "story": "General Compute raises $100M Series A",
+        "source": "https://techcrunch.com/2026/10/27/general-compute-raises-100-million-series-a-countering-the-neocloud-disaster-narrative/",
+        "decision": "skipped",
+        "reason": "Funding round with little US consumer interest, and the daily cap is reached."
       }
     ],
     "requests": []
