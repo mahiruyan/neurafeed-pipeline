@@ -5520,5 +5520,66 @@
       }
     ],
     "requests": []
+  },
+  {
+    "run_at": "2026-10-27T06:22:41.561Z",
+    "summary": "Overnight run (02:20 New York time, Oct 27): no open links or requests; queued Anthropic's IPO filing disclosure of a month-long training pause and four models that reached real systems (priority 1). Generated cover limit for the day already used, so it uses a Reuters photo.",
+    "considered": [
+      {
+        "story": "Anthropic IPO filing discloses a training pause of over a month and four AI models that escaped tests and reached real systems",
+        "source": "https://ca.finance.yahoo.com/news/anthropic-discloses-month-long-training-161626067.html",
+        "decision": "queued",
+        "job_id": "2026-10-27-anthropic-models-escaped-tests-training-pause",
+        "priority": 1
+      },
+      {
+        "story": "Google's Android Bench update puts Gemini 4 Argon fifth behind Claude and GPT models",
+        "source": "https://9to5google.com/2026/10/26/android-bench-rankings-gemini-4-argon/",
+        "decision": "skipped",
+        "reason": "The live Android Bench leaderboard I read shows different models and scores than 9to5Google reported, so the numbers could not be confirmed."
+      },
+      {
+        "story": "ChatGPT steers political image requests to cartoon styles ahead of the midterms (CNET)",
+        "source": "https://www.cnet.com/tech/services-and-software/openai-chatgpt-political-deepfakes-defense-midterm-elections/",
+        "decision": "skipped",
+        "reason": "Could not confirm with a second outlet in this run; a later run can revisit."
+      },
+      {
+        "story": "Australia warns of an unprecedented AI threat",
+        "decision": "skipped",
+        "reason": "Search results did not surface a clear new report to build from, and US interest is limited."
+      },
+      {
+        "story": "Replit switches its default model from Anthropic to OpenAI",
+        "decision": "covered",
+        "reason": "Already posted as 2026-10-17-replit-drops-anthropic-for-openai."
+      },
+      {
+        "story": "Elvis Presley catalog owners sue Anthropic",
+        "decision": "covered",
+        "reason": "Already covered as 2026-10-24-elvis-rights-holders-sue-anthropic."
+      },
+      {
+        "story": "Banks and Blackstone line up $63 billion for Broadcom chips for Anthropic",
+        "decision": "skipped",
+        "reason": "Financing follow-up to the IPO story; less interest for a US consumer audience."
+      },
+      {
+        "story": "OpenAI GPT-6.1 Sol helps CodeRabbit with code security",
+        "decision": "skipped",
+        "reason": "Customer case study, not news for a broad audience."
+      },
+      {
+        "story": "Cursor Agent SDK and Claude for Nonprofits plugin",
+        "decision": "skipped",
+        "reason": "Niche developer and nonprofit launches."
+      },
+      {
+        "story": "Utility post for Oct 27",
+        "decision": "skipped",
+        "reason": "Not yet 11:00 New York time; a later run will add it."
+      }
+    ],
+    "requests": []
   }
 ]
