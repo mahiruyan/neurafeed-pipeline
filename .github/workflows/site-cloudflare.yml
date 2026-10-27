@@ -61,19 +61,24 @@ jobs:
             echo "::notice::$app: $(jq 'length' /tmp/env-$app.json) settings copied ($(jq -r 'keys | join(", ")' /tmp/env-$app.json))"
           done
 
-      - name: Hyperdrive (database pooling)
+      - name: Hyperdrive (database pooling, optional)
         run: |
+          # Optional: without it the Workers connect to DATABASE_URL directly (per-request client).
+          set +e +o pipefail
           cf=https://api.cloudflare.com/client/v4/accounts/$CLOUDFLARE_ACCOUNT_ID/hyperdrive/configs
-          id=$(curl -sf -H "Authorization: Bearer $CLOUDFLARE_API_TOKEN" "$cf" | jq -r '.result[] | select(.name=="neurafeed-db") | .id' | head -1) || { echo "::error::the Cloudflare token cannot read Hyperdrive (add Hyperdrive: Edit to the token)"; exit 1; }
+          list=$(curl -s -H "Authorization: Bearer $CLOUDFLARE_API_TOKEN" "$cf")
+          if [ "$(jq -r '.success' <<<"$list")" != "true" ]; then
+            echo "::warning::Hyperdrive skipped: $(jq -c '.errors' <<<"$list" | cut -c1-300). The site connects to the database directly."; exit 0
+          fi
+          id=$(jq -r '.result[]? | select(.name=="neurafeed-db") | .id' <<<"$list" | head -1)
           if [ -z "$id" ]; then
             url=$(jq -r '.DATABASE_URL // empty' /tmp/env-admin.json)
-            [ -n "$url" ] || { echo "::error::DATABASE_URL missing on Netlify"; exit 1; }
             body=$(node -e '
               const u=new URL(process.argv[1]);
               console.log(JSON.stringify({name:"neurafeed-db",origin:{scheme:"postgres",host:u.hostname,port:Number(u.port||5432),database:decodeURIComponent(u.pathname.slice(1)||"postgres"),user:decodeURIComponent(u.username),password:decodeURIComponent(u.password)},caching:{disabled:true}}));' "$url")
             r=$(curl -s -X POST -H "Authorization: Bearer $CLOUDFLARE_API_TOKEN" -H 'Content-Type: application/json' "$cf" -d "$body")
             id=$(jq -r '.result.id // empty' <<<"$r")
-            [ -n "$id" ] || { echo "::error::Hyperdrive create failed: $(jq -c '.errors' <<<"$r")"; exit 1; }
+            [ -n "$id" ] || { echo "::warning::Hyperdrive create failed: $(jq -c '.errors' <<<"$r" | cut -c1-300). Direct connection instead."; exit 0; }
             echo "::notice::Hyperdrive neurafeed-db created"
           fi
           for app in web admin; do
