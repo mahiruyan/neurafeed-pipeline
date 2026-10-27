@@ -1,0 +1,25 @@
+name: Domain check
+
+# Read-only: where neurafeedai.com is registered and served, and its DNS records on Netlify.
+on: workflow_dispatch
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - env:
+          NETLIFY: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+          CF: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CFA: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+        run: |
+          sudo apt-get install -y -qq whois dnsutils >/dev/null 2>&1 || true
+          echo "::notice::NS: $(dig +short NS neurafeedai.com | tr '\n' ' ') | A: $(dig +short A neurafeedai.com | tr '\n' ' ') | www: $(dig +short www.neurafeedai.com | tr '\n' ' ') | MX: $(dig +short MX neurafeedai.com | tr '\n' ' ')"
+          echo "::notice::registrar: $(whois neurafeedai.com | grep -iE 'Registrar:|Registrar URL|Expir' | head -3 | tr '\n' ' ' | tr -s ' ')"
+          H="Authorization: Bearer $NETLIFY"
+          z=$(curl -s -H "$H" https://api.netlify.com/api/v1/dns_zones | jq -c '[.[] | {name, id}]')
+          echo "::notice::netlify dns zones: $z"
+          zid=$(jq -r '.[] | select(.name=="neurafeedai.com") | .id' <<<"$z")
+          [ -n "$zid" ] && echo "::notice::netlify records: $(curl -s -H "$H" https://api.netlify.com/api/v1/dns_zones/$zid/dns_records | jq -c '[.[] | {type, hostname, value: (.value|tostring|.[0:80])}]')"
+          echo "::notice::netlify domains: $(curl -s -H "$H" 'https://api.netlify.com/api/v1/sites?per_page=50' | jq -c '[.[] | select(.custom_domain != null) | {name, custom_domain, domain_aliases}]')"
+          echo "::notice::cloudflare zones: $(curl -s -H "Authorization: Bearer $CF" https://api.cloudflare.com/client/v4/zones | jq -c '{success, zones: [.result[]?.name], errors}')"
+          echo "::notice::cloudflare token: $(curl -s -H "Authorization: Bearer $CF" https://api.cloudflare.com/client/v4/user/tokens/verify | jq -c '{success, status: .result.status}')"
