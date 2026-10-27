@@ -1,0 +1,24 @@
+name: Site tail
+
+# Read-only: opens a page on the live site while tailing the Worker, then shows the errors logged.
+on:
+  workflow_dispatch:
+    inputs:
+      worker: { description: neurafeed-web or neurafeed-admin, required: true, default: neurafeed-web }
+      url: { description: page to request, required: true }
+
+jobs:
+  tail:
+    runs-on: ubuntu-latest
+    env:
+      CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+      CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+    steps:
+      - run: |
+          npm i -g wrangler@4 >/dev/null 2>&1
+          (timeout 45 wrangler tail "${{ inputs.worker }}" --format json > tail.json 2> tail.err &) ; sleep 12
+          for i in 1 2; do curl -s -o /dev/null -w "request $i: %{http_code}\n" -H 'Cache-Control: no-cache' "${{ inputs.url }}?t=$RANDOM"; sleep 3; done
+          sleep 25
+          echo "::notice::tail err: $(tail -3 tail.err | tr '\n' ' ' | cut -c1-300)"
+          jq -c 'select(.exceptions|length>0) | .exceptions[] | {name, message: (.message|.[0:300])}' tail.json 2>/dev/null | head -5 | while read -r l; do echo "::notice::exception $l"; done
+          jq -r 'select(.logs|length>0) | .logs[] | select(.level=="error" or .level=="warn") | (.message|tostring|.[0:400])' tail.json 2>/dev/null | head -8 | while read -r l; do echo "::notice::log $l"; done
