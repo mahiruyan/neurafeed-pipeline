@@ -1,0 +1,115 @@
+{
+  "id": "2026-10-28-ai-agents-checked-biggest-math-proof",
+  "created_at": "2026-10-28T04:30:00Z",
+  "story_time": "2026-10-27T14:34:00Z",
+  "timely": false,
+  "sensitive": false,
+  "priority": 2,
+  "review": true,
+  "format": "carousel",
+  "site_category": "models",
+  "sources": [
+    { "name": "Axiom", "url": "https://axiommath.ai/research/the-enormous-theorem-formalized/" },
+    { "name": "RuntimeWire", "url": "https://runtimewire.com/article/axiom-s-ceo-says-no-one-outside-the-company-has-rebuilt-its-43-million-line-proo" },
+    { "name": "TokenPost", "url": "https://www.tokenpost.com/news/technology/42182" },
+    { "name": "Unite.AI", "url": "https://www.unite.ai/axiom-math-releases-43-1m-line-lean-proof-of-group-classification/" }
+  ],
+  "threads_text": "AI agents at the startup Axiom just turned a 15,000-page math proof, written by about 100 mathematicians over decades, into 43 million lines of computer-checked code in 24 days. They also found gaps in the published work. Would you trust a proof that only a computer has fully read?",
+  "caption": "Axiom says its AI agents turned the Classification of Finite Simple Groups, a proof of about 15,000 pages, into computer-checked Lean code in 24 days.\nThe result is about 43.1 million lines, and the agents flagged gaps in the published proof along the way.\nNo outside group has rebuilt it yet, so Axiom is publishing the build files.\n\nShould math journals start requiring computer-checked proofs?\n\nFollow @neurafeed.ai for daily AI news.\n\nSource: Axiom, RuntimeWire",
+  "slides": [
+    {
+      "kind": "cover",
+      "headline": "AI agents just computer-checked *the biggest proof in math history* in 24 days",
+      "image": {
+        "url": "https://www.unite.ai/wp-content/uploads/2026/10/axiom-math-formalizes-classification-finite-simple-groups-lean.jpg",
+        "credit": "Unite.AI",
+        "fallback_urls": ["https://mzwrodgsdjfdyvnraeya.supabase.co/storage/v1/object/public/article-media/articles/e02cb3a6a15f4319cc057ef5592b617a1bc44a8380fbd8ce8076bed242ee5307.webp"],
+        "generate": "A cramped old university math library at night under harsh fluorescent light. Towering, leaning stacks of thick paper volumes and loose yellowed journal pages rise almost to the ceiling, covered in dense handwritten diagrams like the ones in the first image. Three small industrial robot arms on a cluttered wooden table reach into the stacks and pull pages toward a row of old computer monitors. An elderly mathematician in a wrinkled cardigan stands at the edge of the frame, staring up at the stacks in disbelief, his face lit by the monitors. Generous headroom above his head. The subjects fill the upper two thirds of the frame, the bottom third is a dark floor scattered with papers. Blank surfaces, no readable text or labels on any object, no letters, no numbers, no watermarks. Photorealistic, high contrast, vertical composition. It must look like an unedited real photo from a news agency, not a painting, not digital art, no glow effects.",
+        "refs": [
+          "https://axiommath.ai/api/media/file/cfsg-blueprint-hero.png?v=2026-10-27T07%3A22%3A30.322Z"
+        ]
+      },
+      "pos": "center 30%"
+    },
+    {
+      "kind": "card",
+      "heading": "A *15,000-page* proof",
+      "paras": [
+        "The startup Axiom says its AI agents rewrote the Classification of Finite Simple Groups in Lean, a language computers can check line by line.",
+        "About 100 mathematicians built the original over decades."
+      ],
+      "image": {
+        "url": "https://axiommath.ai/api/media/file/cfsg-blueprint-hero.png?v=2026-10-27T07%3A22%3A30.322Z",
+        "credit": "Axiom",
+        "fit": "contain",
+        "fallback_urls": ["https://axiommath.ai/api/media/file/cfsg-blueprint-thumbnail-2.png?v=2026-10-27T14%3A17%3A26.155Z"]
+      },
+      "note": "Axiom's map of the proof."
+    },
+    {
+      "kind": "card",
+      "heading": "*43 million lines* in 24 days",
+      "paras": [
+        "Dozens of agents wrote about 43.1 million lines of Lean code, with Axiom's mathematicians reviewing the hardest parts.",
+        { "t": "On October 10, they proved the famous Monster group is simple.", "strong": true }
+      ],
+      "image": {
+        "url": "https://static.huggingnews.com/story-media/2115093923081110013/HVpStSCWQAALfoN-medium.jpg",
+        "credit": "@omarsar0 on X",
+        "fit": "contain"
+      }
+    },
+    {
+      "kind": "card",
+      "heading": "It caught *gaps humans missed*",
+      "paras": [
+        "The agents flagged 34 notable departures from the published record, plus a gap in a key theorem from a 1986 paper.",
+        "Axiom wrote a new argument to close it. It says the classification itself was never in doubt."
+      ],
+      "image": {
+        "url": "https://mzwrodgsdjfdyvnraeya.supabase.co/storage/v1/object/public/article-media/articles/e02cb3a6a15f4319cc057ef5592b617a1bc44a8380fbd8ce8076bed242ee5307.webp",
+        "credit": "TokenPost"
+      }
+    },
+    {
+      "kind": "card",
+      "heading": "Nobody has *rebuilt it* yet",
+      "paras": [
+        "Asked whether anyone outside Axiom had independently checked the proof, CEO Carina Hong said: \"Not yet.\"",
+        "Axiom is publishing the build files so other researchers can try."
+      ],
+      "image": {
+        "url": "https://axiommath.ai/api/media/file/cfsg-blueprint-thumbnail-2.png?v=2026-10-27T14%3A17%3A26.155Z",
+        "credit": "Axiom",
+        "fit": "contain"
+      }
+    },
+    {
+      "kind": "cta",
+      "hook": "AI is now checking proofs that took humans decades. Follow so you catch the next one that falls."
+    }
+  ],
+  "site_article": {
+    "headline": "Axiom says AI agents formalized the 15,000-page classification of finite simple groups in 24 days",
+    "dek": "The startup reports 43.1 million lines of Lean code and gaps found in the published proof, but no outside group has rebuilt the result yet.",
+    "summary": "AI math startup Axiom says its agents produced a complete computer-checked version of the Classification of Finite Simple Groups in the Lean proof assistant over 24 days. The result runs to about 43.1 million lines of code, according to the company.",
+    "seo_title": "Axiom AI agents formalize the finite simple groups proof",
+    "seo_description": "Axiom says AI agents turned the 15,000-page Classification of Finite Simple Groups into 43.1 million lines of checked Lean code in 24 days.",
+    "answer_summary": "Axiom says dozens of AI agents, reviewed by its mathematicians, rewrote the Classification of Finite Simple Groups in Lean in 24 days, producing about 43.1 million lines of machine-checkable code. Outside researchers have not yet reproduced the build.",
+    "tags": ["Axiom", "Mathematics", "Lean", "AI agents", "Formal verification"],
+    "hero_alt": "Tall stacks of old paper volumes in a dim library, with robot arms and computer monitors on a table.",
+    "paragraphs": [
+      { "kind": "fact", "text": "Axiom, a startup building AI systems for mathematics, said it has produced a complete computer-checked proof of the Classification of Finite Simple Groups in the Lean proof assistant. The company described the work in a research post dated October 26, 2026, and announced it publicly on October 27. According to Axiom, the project took 24 days and produced about 43.1 million lines of Lean code.", "sources": [0, 2, 3] },
+      { "kind": "fact", "text": "The classification is one of the longest results in mathematics. It lists every finite simple group, the basic building blocks from which all finite groups are assembled: cyclic groups of prime order, alternating groups, sixteen infinite families of groups of Lie type, and 26 sporadic groups. The human proof spans roughly 15,000 pages across more than 500 articles written by about 100 mathematicians over several decades.", "sources": [0, 2] },
+      { "kind": "heading", "text": "How the agents did the work" },
+      { "kind": "fact", "text": "Axiom said dozens of AI agents worked from a shared map of the published literature that split the proof into 108 milestones and about 380 smaller tasks. Lead agents broke arguments into pieces and reviewed statements, while other agents claimed milestones and reported progress. Human mathematicians at the company investigated the most consequential problems the agents raised.", "sources": [0, 3] },
+      { "kind": "fact", "text": "The process was not smooth. Axiom said early work relied on unproven assumptions, and the team deleted tens of thousands of lines and replanned on October 13, a day when only one milestone closed. The company said its agents proved that the Monster, the largest sporadic group, is simple on October 10. Axiom also said about 1.2 million lines came from an earlier project called Qiuzhen-CFSG.", "sources": [0, 3] },
+      { "kind": "heading", "text": "Errors found in the published record" },
+      { "kind": "fact", "text": "According to Axiom, the formalization found 34 noteworthy deviations from the published record, along with typos, table errors and dropped hypotheses. The agents found counterexamples to a step in John Walter's 1986 memoir on the Unbalanced Group Theorem, which Axiom replaced with a new argument. A lemma in the Aschbacher and Smith volumes on quasithin groups was also corrected. The company said these issues did not overturn the classification itself.", "sources": [0, 1, 3] },
+      { "kind": "fact", "text": "Axiom said it formalized the first-generation proof rather than the second-generation proof, which is still incomplete. Group theorists Richard Lyons and Ronald Solomon were consulted on the arguments and serve as advisors. TokenPost noted that a machine check confirms the encoded steps follow from the encoded assumptions, but people still need to confirm that the formal statement matches the intended theorem.", "sources": [0, 2] },
+      { "kind": "fact", "text": "The result has not yet been reproduced outside the company. Asked by RuntimeWire whether any outside party had independently built and checked the proof, Axiom founder and CEO Carina Hong answered that it had not happened yet, and said the company is publishing its build artifacts to encourage others to do it.", "sources": [1] },
+      { "kind": "analysis", "text": "In NeuraFeed's reading, the size of the project matters as much as the theorem. A proof this long has long been considered too large for any single person to check in full, and Axiom's claim is that AI agents can now do the bulk of the translation into machine-checkable form while humans focus on the hardest judgment calls. The claim rests on the company's own account until outside groups rebuild the code." },
+      { "kind": "why_it_matters", "text": "The key test is whether independent researchers can rebuild the published Lean files and whether group theorists accept Axiom's repairs to the 1986 argument." }
+    ]
+  }
+}
