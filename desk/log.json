@@ -1,96 +1,5 @@
 [
   {
-    "run_at": "2026-10-21T09:55:16.522Z",
-    "summary": "Morning run (05:55 New York): no open links or requests; no new priority 1 story since the last run and Oct 21 already has more approved posts waiting than its 8 slots, so nothing was queued.",
-    "considered": [
-      {
-        "story": "OpenAI agents disabled alerts and removed a misbehavior monitor",
-        "source": "https://alignment.openai.com/misalignment-reports/",
-        "decision": "covered",
-        "reason": "Already queued as 2026-10-21-openai-agents-switched-off-alarms."
-      },
-      {
-        "story": "Claude designs scorpion toxin binders",
-        "source": "https://www.anthropic.com/research/claude-scorpion-toxin-binder-design",
-        "decision": "covered",
-        "reason": "Already queued as 2026-10-21-claude-scorpion-venom-binders."
-      },
-      {
-        "story": "OpenAI acquires Orchestra Bio",
-        "source": "https://openai.com/index/openai-to-acquire-orchestra-bio/",
-        "decision": "covered",
-        "reason": "Already queued as 2026-10-21-openai-buys-orchestra-bio."
-      },
-      {
-        "story": "SpaceX AI unit out-earns Starlink",
-        "source": "https://fortune.com/2026/10/20/spacex-q3-profit-ai-si-elon-musk/",
-        "decision": "covered",
-        "reason": "Already queued as 2026-10-21-spacex-ai-out-earns-starlink."
-      },
-      {
-        "story": "Gemini Personal Intelligence on Android Auto",
-        "source": "https://9to5google.com/2026/10/20/gemini-android-auto-personal-intelligence/",
-        "decision": "covered",
-        "reason": "Already queued as 2026-10-21-gemini-android-auto-reads-your-apps."
-      },
-      {
-        "story": "Anthropic draft IPO filing shows revenue and losses",
-        "source": "https://www.reuters.com/business/anthropic-recorded-net-loss-over-80-billion-first-half-this-year-wsj-reports-2026-10-20/",
-        "decision": "covered",
-        "reason": "Already posted as 2026-10-21-anthropic-s1-80-billion-loss."
-      },
-      {
-        "story": "Anthropic draft bill to halt dangerous model releases",
-        "source": "https://techcrunch.com/2026/10/20/anthropic-pitches-ai-safety-bill-that-may-block-a-model-if-50-people-could-be-killed/",
-        "decision": "covered",
-        "reason": "Already covered as 2026-10-17-anthropic-pitches-own-ai-safety-bill."
-      },
-      {
-        "story": "ChatGPT lets users lock chats with a PIN or biometrics",
-        "source": "https://techcrunch.com/2026/10/20/chatgpt-now-lets-you-lock-your-chats/",
-        "decision": "skipped",
-        "reason": "Useful priority 2 feature, but Oct 21 is already full; strong candidate for Oct 22."
-      },
-      {
-        "story": "NYC proposes fines for AI customer service doom loops",
-        "source": "https://www.nyc.gov/site/dca/news/072-26/mamdani-administration-proposes-ban-ai-customer-service-doom-loops",
-        "decision": "skipped",
-        "reason": "Relatable policy story but only the city's own release so far and the day is full; candidate for Oct 22."
-      },
-      {
-        "story": "Hugging Face CEO says Netflix's OpenAI hack documentary is inaccurate",
-        "source": "https://techcrunch.com/2026/10/20/hugging-face-ceo-warns-that-netflixs-openai-hack-documentary-isnt-accurate/",
-        "decision": "skipped",
-        "reason": "Single source and the day is full."
-      },
-      {
-        "story": "Anthropic may commit another $45 billion to Nscale",
-        "source": "https://www.theneuron.ai/news/anthropics-next-45-billion-ai-deal-has-a-catch-someone-has-to-build-it/",
-        "decision": "skipped",
-        "reason": "Anthropic already has several money stories this week and the day is full."
-      },
-      {
-        "story": "US bans DeepSeek across federal agencies",
-        "source": "https://www.theneuron.ai/news/dhs-deepseek-order-ai-software-vendors/",
-        "decision": "skipped",
-        "reason": "Government policy story, day is full; candidate for Oct 22 with primary sources."
-      },
-      {
-        "story": "Students walk out nationwide calling for a pause on AI",
-        "source": "https://www.boston25news.com/news/local/classrooms-state-house-boston-students-join-nationwide-protests-calling-ai-oversight/EPNYMH6SHZAZRGX2EBPKOTQMP4/",
-        "decision": "skipped",
-        "reason": "Sensitive political protest story with mostly local coverage."
-      },
-      {
-        "story": "Anthropic reportedly weighs a new Claude model to counter GPT-6 Astra",
-        "source": "https://digg.com/tech/y8uo5z18",
-        "decision": "skipped",
-        "reason": "Month-old single social media report with no independent confirmation."
-      }
-    ],
-    "requests": []
-  },
-  {
     "run_at": "2026-10-21T12:15:03.271Z",
     "summary": "Morning run: no open links or requests; queued Meta Muse 10M downloads (priority 1), leaving the last Oct 21 slot for the daily utility post.",
     "considered": [
@@ -5550,6 +5459,78 @@
         "story": "Stanford professors say their pirated books trained Claude",
         "decision": "skipped",
         "reason": "Considered and skipped in earlier runs; nothing new."
+      },
+      {
+        "story": "OpenAI plans to buy Google TPU chips",
+        "decision": "covered",
+        "reason": "Already queued as 2026-10-28-openai-buying-google-tpu-chips."
+      },
+      {
+        "story": "Daily utility post for Oct 28",
+        "decision": "skipped",
+        "reason": "It is not yet 11:00 New York time; a later run will queue it."
+      }
+    ],
+    "requests": []
+  },
+  {
+    "run_at": "2026-10-28T10:11:42.762Z",
+    "summary": "Early run (05:55 New York time, Oct 28): no open links or requests; queued 1 story (Anthropic study where analysts followed Claude's coin-flip preference 86% of the time), waiting for Mahir's approval. Oct 28 now has 6 jobs.",
+    "considered": [
+      {
+        "story": "Anthropic study: analysts matched Claude's secretly assigned, coin-flip preference 86% of the time",
+        "source": "https://www.anthropic.com/research/agents-judgment-calls",
+        "decision": "queued",
+        "job_id": "2026-10-28-coin-flip-claude-experts-agreed-86-percent",
+        "priority": 2
+      },
+      {
+        "story": "Texas AG Ken Paxton sues OpenAI and Sam Altman over ChatGPT safety",
+        "source": "https://www.texastribune.org/2026/10/23/ken-paxton-chatgpt-openai-lawsuit-texas-attorney-general/",
+        "decision": "covered",
+        "reason": "Already covered as 2026-10-25-texas-sues-openai-block-chatgpt-kids."
+      },
+      {
+        "story": "Amazon winds down most Nova models and cuts its AGI group",
+        "source": "https://thenextweb.com/news/amazon-winds-down-nova-ai-models-frontier-model-research",
+        "decision": "skipped",
+        "reason": "The Futurism item resurfaces news first reported in July 2026, nothing new."
+      },
+      {
+        "story": "Fake ChatGPT and Claude installers used to drop a crypto miner (Check Point)",
+        "source": "https://blog.checkpoint.com/research/yoba-malware-abuses-signed-chatgpt-and-claude-binaries-to-target-ai-users",
+        "decision": "skipped",
+        "reason": "Good candidate, but kept the remaining Oct 28 slots for the utility post and daytime news; a later run can take it."
+      },
+      {
+        "story": "HP, Asus and Acer move some PC production back to China on AI cost hikes",
+        "decision": "skipped",
+        "reason": "Supply chain story with little AI news appeal for a US Instagram audience."
+      },
+      {
+        "story": "Mistral opens Timestral time-series models",
+        "decision": "skipped",
+        "reason": "Niche developer release."
+      },
+      {
+        "story": "Parents sue OpenAI saying ChatGPT coached their daughter off seizure medication",
+        "decision": "skipped",
+        "reason": "Same decision as earlier runs: a death and health lawsuit still lacking solid sourcing readable from here."
+      },
+      {
+        "story": "Trump says he will ban the term artificial intelligence",
+        "decision": "skipped",
+        "reason": "Repeat political statement with no new action, skipped in earlier runs."
+      },
+      {
+        "story": "AI chips worth $12.1 million seized at Malaysia airport (Reuters)",
+        "decision": "skipped",
+        "reason": "Could not read the Reuters report from here, and a customs seizure has limited US interest."
+      },
+      {
+        "story": "Anthropic acquires Mithril and reports Claude drug development results",
+        "decision": "covered",
+        "reason": "Already queued as 2026-10-28-claude-35000-antibodies-one-month."
       },
       {
         "story": "OpenAI plans to buy Google TPU chips",
