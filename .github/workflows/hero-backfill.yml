@@ -9,6 +9,10 @@ on:
         description: "'photos' redoes reused photos (credits); empty only fills missing heroes"
         required: false
         default: ''
+      only:
+        description: "story ids (comma separated) to redo; empty means all"
+        required: false
+        default: ''
 
 concurrency:
   group: pipeline-state
@@ -35,6 +39,7 @@ jobs:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
           FAL_KEY: ${{ secrets.FAL_KEY }}
           REDO: ${{ inputs.redo }}
+          ONLY: ${{ inputs.only }}
       - name: Publish heroes and the desk feed
         env:
           MEDIA_REPO_TOKEN: ${{ secrets.MEDIA_REPO_TOKEN }}

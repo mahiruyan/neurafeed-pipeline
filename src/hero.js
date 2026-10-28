@@ -64,19 +64,55 @@ async function altText(file, headline) {
   } catch (e) { console.log(`::warning::alt text: ${e.message}`); return headline.slice(0, 300); }
 }
 
+// Photos with big words baked in (title cards, promo graphics, video thumbnails) look broken on the
+// site, where the photo is cropped under our own headline. A vision check flags them; on any error
+// the photo is accepted. Flagged photos are kept only as a last resort before an illustration.
+async function hasBakedText(file) {
+  const key = process.env.OPENAI_API_KEY;
+  if (!key) return false;
+  try {
+    const res = await fetch('https://api.openai.com/v1/chat/completions', {
+      method: 'POST',
+      headers: { Authorization: `Bearer ${key}`, 'Content-Type': 'application/json' },
+      body: JSON.stringify({ model: 'gpt-4.1-mini', max_tokens: 5, temperature: 0, messages: [{ role: 'user', content: [
+        { type: 'text', text: 'Is this a graphic with large words placed on it: a title, a headline, a product or model name, a big logo wordmark, a promo banner or a video thumbnail with text? '
+          + 'Small or incidental text does not count (a sign in the background, text on a screen or a device, a small logo, a watermark). Answer only YES or NO.' },
+        { type: 'image_url', image_url: { url: imgData(file), detail: 'low' } },
+      ] }] }),
+    });
+    const d = await res.json();
+    if (d.error) throw new Error(d.error.message);
+    return /^\s*yes/i.test(d.choices?.[0]?.message?.content || '');
+  } catch (e) { console.log(`::warning::text check: ${e.message}`); return false; }
+}
+
+// Accepts a prepared hero unless it has big baked-in text; the first such photo is kept aside.
+async function clean(dest, meta, spare) {
+  if (!(await hasBakedText(dest))) return meta;
+  console.log(`hero: skipped a photo with big text on it (${meta.source_url || ''})`);
+  if (spare && !spare.meta) { fs.copyFileSync(dest, `${dest}.spare`); spare.meta = meta; }
+  return null;
+}
+function useSpare(dest, spare) {
+  if (!spare?.meta) return null;
+  fs.copyFileSync(`${dest}.spare`, dest); fs.rmSync(`${dest}.spare`, { force: true });
+  return spare.meta;
+}
+
 function isNews(job) {
   return job.type !== 'reel' && !['utility', 'single', 'roundup', 'prompt'].includes(job.format) && (job.sources || []).length >= 2;
 }
 
 // Any photo at least 1200 px wide, credited to the photographer or the site it came from.
-async function anyPhoto(images, work, dest) {
+async function anyPhoto(images, work, dest, spare = {}) {
   for (const [k, m] of images.entries()) {
     if (!m?.url || /^(assets|inbox)\//.test(m.url)) continue;
     try {
       const raw = await download(m.url, path.join(work, `any-${k}.img`), 15000);
       if (dims(raw).width < MIN_WIDTH) continue;
       const d = toJpeg(raw, dest);
-      return { credit: m.credit || ownerOf(m.url), license: 'Used with credit', source_url: m.url, ai: false, ...d };
+      const meta = await clean(dest, { credit: m.credit || ownerOf(m.url), license: 'Used with credit', source_url: m.url, ai: false, ...d }, spare);
+      if (meta) return meta;
     } catch { /* next */ }
   }
   return null;
@@ -113,7 +149,9 @@ async function illustrateDraft(headline, outDir, sourceUrls = []) {
   // Real photo first (the source articles' main photos), an illustration only when none exists.
   const images = [];
   for (const u of sourceUrls.slice(0, 4)) { const img = await pageImage(u); if (img) images.push({ url: img, credit: ownerOf(u).replace(/^www\./, '') }); }
-  let meta = await anyPhoto(images, work, dest);
+  const spare = {};
+  let meta = await anyPhoto(images, work, dest, spare);
+  if (!meta) meta = useSpare(dest, spare);
   if (!meta) { try { meta = await illustration(plain(headline), work, dest); } catch (e) { console.log(`::warning::illustration: ${e.message}`); } }
   if (!meta) throw new Error('no illustration and no source photo at least 1200 px wide');
   meta.alt = await altText(dest, plain(headline));
@@ -129,6 +167,7 @@ async function prepareHero(job, outDir) {
   fs.mkdirSync(work, { recursive: true });
   const dest = path.join(outDir, 'hero.jpg');
   let meta = null;
+  const spare = {};
 
   for (const [k, m] of imagesOf(job).entries()) {
     const license = licenseFor(m.url);
@@ -140,19 +179,21 @@ async function prepareHero(job, outDir) {
       // Press images are credited to the company; Wikimedia, Pexels and Unsplash to the photographer
       // when the desk named one for this exact photo.
       const credit = license === 'Company press image' ? ownerOf(m.url) : (m.credit || ownerOf(m.url));
-      meta = { credit, license, source_url: m.url, ai: false, ...d };
-      break;
+      meta = await clean(dest, { credit, license, source_url: m.url, ai: false, ...d }, spare);
+      if (meta) break;
     } catch { /* try the next photo */ }
   }
 
   // Mahir wants real photos on the site, not AI images: the story's own photos with credit, then the
   // source articles' main photos. The source URL is kept so a photo can be swapped on request.
-  if (!meta) meta = await anyPhoto(imagesOf(job), work, dest);
+  if (!meta) meta = await anyPhoto(imagesOf(job), work, dest, spare);
   if (!meta) {
     const pages = [];
     for (const s of (job.sources || []).slice(0, 4)) { const img = await pageImage(s.url); if (img) pages.push({ url: img, credit: s.name || ownerOf(s.url) }); }
-    meta = await anyPhoto(pages, work, dest);
+    meta = await anyPhoto(pages, work, dest, spare);
   }
+  // A photo with text on it is still better than an AI illustration.
+  if (!meta) meta = useSpare(dest, spare);
   // Last resort only: an illustration.
   if (!meta) {
     try { meta = await illustration(headline, work, dest); } catch (e) { console.log(`::warning::hero illustration for ${job.id}: ${e.message}`); }

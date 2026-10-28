@@ -12,7 +12,9 @@ const { prepareHero } = require('./hero');
     const outDir = path.join(ROOT, 'out', item.id);
     // REDO=photos redoes reused photos (fixes credits); illustrations are kept (they cost money).
     const existing = fs.existsSync(path.join(outDir, 'hero.json')) ? JSON.parse(fs.readFileSync(path.join(outDir, 'hero.json'), 'utf8')) : null;
-    if (existing && !(process.env.REDO === 'photos' && !existing.ai)) continue;
+    // ONLY=<id>[,<id>] redoes just those stories.
+    if (process.env.ONLY && !process.env.ONLY.split(',').includes(item.id)) continue;
+    if (existing && !process.env.ONLY && !(process.env.REDO === 'photos' && !existing.ai)) continue;
     const job = loadJob(item.id);
     if (!job) continue;
     try {
