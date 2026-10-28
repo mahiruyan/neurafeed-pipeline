@@ -16,14 +16,19 @@ concurrency:
 jobs:
   sync:
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    timeout-minutes: 30
     steps:
       - env:
           T: ${{ secrets.SITE_REVIEW_TOKEN }}
         run: |
           max="${{ inputs.max }}"; [ -n "$max" ] || max=4
-          r=$(curl -s -m 280 -w '\n%{http_code}' -X POST -H "Authorization: Bearer $T" -H 'Content-Type: application/json' -d "{\"action\":\"desk_sync\",\"max\":$max}" https://admin.neurafeedai.com/api/jobs/telegram-review)
-          code=$(tail -1 <<<"$r"); body=$(sed '$d' <<<"$r")
+          # A scan still running (a slow earlier one) blocks a new one for a few minutes: wait and retry.
+          for attempt in 1 2 3 4; do
+            r=$(curl -s -m 280 -w '\n%{http_code}' -X POST -H "Authorization: Bearer $T" -H 'Content-Type: application/json' -d "{\"action\":\"desk_sync\",\"max\":$max}" https://admin.neurafeedai.com/api/jobs/telegram-review)
+            code=$(tail -1 <<<"$r"); body=$(sed '$d' <<<"$r")
+            grep -q "already running" <<<"$body" || break
+            echo "attempt $attempt: a scan is still running, waiting 3 minutes"; sleep 180
+          done
           echo "::notice::HTTP $code scan=$(jq -c '.scan' <<<"$body" 2>/dev/null) scanError=$(jq -r '.scanError // ""' <<<"$body" 2>/dev/null | cut -c1-200)"
           jq -r '.drafted[]? | "drafted: \(.headline)"' <<<"$body" 2>/dev/null | while read -r l; do echo "::notice::$l"; done
           jq -r '.errors[]?' <<<"$body" 2>/dev/null | head -5 | while read -r l; do echo "::warning::$l"; done
