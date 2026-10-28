@@ -59,6 +59,43 @@ jobs:
           node-version: 22
       - run: npm ci --no-audit --no-fund
 
+      # The site must use the limited neurafeed_runtime database login (row security applies, and the
+      # scheduled editorial worker refuses any other login). Its password is derived from the stored
+      # database secret, set with the owner login, and checked before anything is deployed.
+      - name: Runtime database login
+        run: |
+          node --input-type=module -e '
+            import pg from "pg"; import crypto from "node:crypto"; import fs from "node:fs";
+            const ownerUrl = process.env.SITE_DATABASE_URL;
+            if (!ownerUrl) { console.log("::warning::SITE_DATABASE_URL is empty"); process.exit(0); }
+            const owner = new URL(ownerUrl);
+            const [role, ref] = decodeURIComponent(owner.username).split(".");
+            const out = (url) => fs.appendFileSync(process.env.GITHUB_ENV, `RUNTIME_DATABASE_URL=${url}\n`);
+            if (role === "neurafeed_runtime") { out(ownerUrl); console.log("::notice::database secret already uses neurafeed_runtime"); process.exit(0); }
+            const password = crypto.createHash("sha256").update(`${ownerUrl}|neurafeed_runtime|v1`).digest("base64url").slice(0, 40);
+            console.log(`::add-mask::${password}`);
+            const runtime = new URL(ownerUrl);
+            runtime.username = encodeURIComponent(`neurafeed_runtime${ref ? "." + ref : ""}`);
+            runtime.password = password;
+            const plain = (u) => { const x = new URL(u); x.searchParams.delete("sslmode"); return x.toString(); };
+            const ssl = { rejectUnauthorized: false };
+            const admin = new pg.Client({ connectionString: plain(ownerUrl), ssl });
+            await admin.connect();
+            await admin.query(`ALTER ROLE neurafeed_runtime WITH LOGIN PASSWORD \x27${password}\x27`);
+            const attrs = (await admin.query("SELECT rolsuper, rolbypassrls, rolcanlogin FROM pg_roles WHERE rolname = \x27neurafeed_runtime\x27")).rows[0];
+            await admin.end();
+            if (!attrs || attrs.rolsuper || attrs.rolbypassrls) { console.log("::error::neurafeed_runtime missing or too powerful: " + JSON.stringify(attrs)); process.exit(1); }
+            let who = null;
+            for (let i = 0; i < 8 && !who; i++) {
+              try { const c = new pg.Client({ connectionString: plain(runtime.toString()), ssl }); await c.connect(); who = (await c.query("SELECT current_user AS u")).rows[0].u; await c.end(); }
+              catch (e) { console.log(`runtime login attempt ${i + 1}: ${e.message}`); await new Promise((r) => setTimeout(r, 5000)); }
+            }
+            if (who !== "neurafeed_runtime") { console.log("::error::could not log in as neurafeed_runtime; the site keeps its current login"); process.exit(1); }
+            console.log(`::add-mask::${runtime.toString()}`);
+            out(runtime.toString());
+            console.log("::notice::site will use the neurafeed_runtime database login");
+          '
+
       - name: Settings from Netlify
         run: |
           api=https://api.netlify.com/api/v1; H="Authorization: Bearer $NETLIFY"
@@ -76,7 +113,7 @@ jobs:
           ph=$(jq -rs '[.[] | to_entries[] | select(.value|length==20) | .value] | group_by(.) | map(select(length>=3)) | .[0][0] // ""' /tmp/env-web.json /tmp/env-admin.json)
           jobtoken=$(openssl rand -hex 32)
           for app in web admin; do
-            jq --arg ph "$ph" --arg db "$SITE_DATABASE_URL" --arg pk "$SITE_SUPABASE_PUBLISHABLE_KEY" --arg r2i "$SITE_R2_ACCESS_KEY_ID" --arg r2s "$SITE_R2_SECRET_ACCESS_KEY" --arg rs "$SITE_RESEND_API_KEY" --arg jt "$jobtoken" --arg dto "$SITE_DIGEST_RECIPIENT" --arg dfrom "$SITE_DIGEST_FROM" --slurpfile adm /tmp/env-admin.json '
+            jq --arg ph "$ph" --arg db "${RUNTIME_DATABASE_URL:-$SITE_DATABASE_URL}" --arg pk "$SITE_SUPABASE_PUBLISHABLE_KEY" --arg r2i "$SITE_R2_ACCESS_KEY_ID" --arg r2s "$SITE_R2_SECRET_ACCESS_KEY" --arg rs "$SITE_RESEND_API_KEY" --arg jt "$jobtoken" --arg dto "$SITE_DIGEST_RECIPIENT" --arg dfrom "$SITE_DIGEST_FROM" --slurpfile adm /tmp/env-admin.json '
               with_entries(select($ph == "" or .value != $ph))
               | if $db != "" then .DATABASE_URL = $db else . end
               | .NEURAFEED_DATABASE_CA_CERT_BASE64 = (.NEURAFEED_DATABASE_CA_CERT_BASE64 // $adm[0].NEURAFEED_DATABASE_CA_CERT_BASE64)
