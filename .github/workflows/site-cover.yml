@@ -6,7 +6,7 @@ on:
   workflow_dispatch:
     inputs:
       id: { description: 'story id (jobs/<id>.json)', required: true }
-      slug: { description: 'article slug on the site', required: true }
+      slug: { description: 'article slug on the site, or a unique part of it', required: true }
 
 jobs:
   cover:
@@ -19,6 +19,9 @@ jobs:
           SLUG: ${{ inputs.slug }}
         run: |
           meta="out/$ID/hero.json"; [ -f "$meta" ] || { echo "::error::no $meta"; exit 1; }
+          found=$(curl -s -m 30 https://neurafeedai.com/sitemap.xml | grep -o '/news/[^<]*' | sed 's#/news/##' | grep -F -- "$SLUG" || true)
+          [ "$(wc -l <<<"$found")" = 1 ] && [ -n "$found" ] && SLUG="$found"
+          echo "::notice::article: $SLUG"
           body=$(jq -c --arg slug "$SLUG" --arg url "https://raw.githubusercontent.com/mahiruyan/neurafeed-media/main/$ID/hero.jpg" \
             '{action:"cover", slug:$slug, url:$url, credit:.credit, alt:.alt, license:.license} + (if .focal then {focal_x:.focal.x, focal_y:.focal.y} else {} end)' "$meta")
           r=$(curl -s -m 120 -w '\n%{http_code}' -X POST -H "Authorization: Bearer $T" -H 'Content-Type: application/json' -d "$body" https://admin.neurafeedai.com/api/jobs/telegram-review)
