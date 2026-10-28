@@ -226,4 +226,20 @@ async function prepareHero(job, outDir) {
   return meta;
 }
 
-module.exports = { prepareHero, illustrateDraft, anyPhoto, pageImage, licenseFor, isNews };
+// A hero from one chosen photo (Mahir picked it): no text check, still extended and described.
+async function heroFromUrl(job, outDir, url, credit) {
+  const headline = plain(job.slides?.[0]?.headline || job.id);
+  const work = path.join(outDir, 'src');
+  fs.mkdirSync(work, { recursive: true });
+  const dest = path.join(outDir, 'hero.jpg');
+  const raw = await download(url, path.join(work, 'chosen.img'), 30000);
+  const d = toJpeg(raw, dest);
+  let meta = { credit: credit || ownerOf(url), license: licenseFor(url) || 'Used with credit', source_url: url, ai: false, ...d };
+  meta = await expandToFit(dest, meta, work);
+  meta.alt = await altText(dest, headline);
+  const focal = await focalPoint(dest); if (focal) meta.focal = focal;
+  fs.writeFileSync(path.join(outDir, 'hero.json'), JSON.stringify(meta, null, 2) + '\n');
+  return meta;
+}
+
+module.exports = { heroFromUrl, prepareHero, illustrateDraft, anyPhoto, pageImage, licenseFor, isNews };

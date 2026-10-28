@@ -9,6 +9,14 @@ on:
         description: "'photos' redoes reused photos (credits); empty only fills missing heroes"
         required: false
         default: ''
+      prefer:
+        description: "with one story id in 'only': use this photo URL as its hero"
+        required: false
+        default: ''
+      credit:
+        description: "credit for the 'prefer' photo"
+        required: false
+        default: ''
       only:
         description: "story ids (comma separated) to redo; empty means all"
         required: false
@@ -40,6 +48,8 @@ jobs:
           FAL_KEY: ${{ secrets.FAL_KEY }}
           REDO: ${{ inputs.redo }}
           ONLY: ${{ inputs.only }}
+          PREFER: ${{ inputs.prefer }}
+          CREDIT: ${{ inputs.credit }}
       - name: Publish heroes and the desk feed
         env:
           MEDIA_REPO_TOKEN: ${{ secrets.MEDIA_REPO_TOKEN }}

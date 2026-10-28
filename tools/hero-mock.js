@@ -39,6 +39,7 @@ const VARIANTS = {
     for (const [v, { css, js }] of Object.entries(VARIANTS)) {
       if (process.env.MOCK_ONLY && !process.env.MOCK_ONLY.split(',').includes(v)) continue;
       const page = await b.newPage(); await page.setViewport(vp);
+      if (process.env.MOCK_IMG) await page.setBypassCSP(true);
       try {
       await page.goto(URL_, { waitUntil: 'networkidle2', timeout: 60000 });
       if (process.env.MOCK_IMG) await page.evaluate((src) => document.querySelectorAll('.article-cover__media img, .lead-visual img, .article-hero img').forEach((i) => { i.removeAttribute('srcset'); i.removeAttribute('sizes'); i.src = src; }), process.env.MOCK_IMG).catch(() => {});

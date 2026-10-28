@@ -4,7 +4,7 @@ const fs = require('fs');
 const path = require('path');
 const { ROOT, loadJob } = require('./state');
 const { deskItems } = require('./deskfeed');
-const { prepareHero } = require('./hero');
+const { heroFromUrl, prepareHero } = require('./hero');
 
 (async () => {
   let made = 0;
@@ -19,7 +19,8 @@ const { prepareHero } = require('./hero');
     if (!job) continue;
     try {
       fs.mkdirSync(outDir, { recursive: true });
-      const meta = await prepareHero(job, outDir);
+      // PREFER=<image url> (with ONLY=<one id>) uses that photo; CREDIT names its source.
+      const meta = process.env.PREFER && process.env.ONLY ? await heroFromUrl(job, outDir, process.env.PREFER, process.env.CREDIT) : await prepareHero(job, outDir);
       fs.rmSync(path.join(outDir, 'src'), { recursive: true, force: true });
       if (meta) { made++; console.log(`hero ${item.id}: ${meta.ai ? 'illustration' : meta.license} ${meta.width}x${meta.height}`); }
     } catch (e) { console.log(`::warning::hero ${item.id}: ${e.message}`); }
