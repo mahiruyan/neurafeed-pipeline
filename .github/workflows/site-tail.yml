@@ -6,6 +6,7 @@ on:
     inputs:
       worker: { description: neurafeed-web or neurafeed-admin, required: true, default: neurafeed-web }
       url: { description: page to request, required: true }
+      seconds: { description: how long to tail, required: false, default: '45' }
 
 jobs:
   tail:
@@ -16,9 +17,9 @@ jobs:
     steps:
       - run: |
           npm i -g wrangler@4 >/dev/null 2>&1
-          (timeout 45 wrangler tail "${{ inputs.worker }}" --format json > tail.json 2> tail.err &) ; sleep 12
+          (timeout ${{ inputs.seconds }} wrangler tail "${{ inputs.worker }}" --format json > tail.json 2> tail.err &) ; sleep 12
           for i in 1 2; do curl -s -o /dev/null -w "request $i: %{http_code}\n" -H 'Cache-Control: no-cache' "${{ inputs.url }}?t=$RANDOM"; sleep 3; done
-          sleep 25
+          sleep $(( ${{ inputs.seconds }} - 20 ))
           echo "::notice::tail err: $(tail -3 tail.err | tr '\n' ' ' | cut -c1-300)"
           jq -c 'select(.exceptions|length>0) | .exceptions[] | {name, message: (.message|.[0:300])}' tail.json 2>/dev/null | head -5 | while read -r l; do echo "::notice::exception $l"; done
-          jq -r 'select(.logs|length>0) | .logs[] | (.message|tostring|.[0:400])' tail.json 2>/dev/null | head -20 | while read -r l; do echo "::notice::log $l"; done
+          jq -r 'select(.logs|length>0) | .logs[] | (.message|tostring|.[0:400])' tail.json 2>/dev/null | grep -v '^$' | tail -40 | while read -r l; do echo "::notice::log $l"; done
