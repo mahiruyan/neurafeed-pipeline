@@ -5548,5 +5548,72 @@
       }
     ],
     "requests": []
+  },
+  {
+    "run_at": "2026-10-28T17:54:13.854Z",
+    "summary": "No new jobs: Oct 28 (New York) already has 8 jobs, the daily cap, and no new priority 1 launch appeared; no open links (the 4 old ones are in skipped.json) and the only open request already failed (not retried).",
+    "considered": [
+      {
+        "story": "Anthropic tells California's governor that courts should be able to block risky AI models (Reuters)",
+        "source": "https://www.reuters.com/",
+        "decision": "skipped",
+        "reason": "Policy letter with no decision yet, and Oct 28 is at the 8-job cap."
+      },
+      {
+        "story": "AI startup claims it hacked Anthropic in 12 hours (TechRadar)",
+        "decision": "covered",
+        "reason": "Same story as 2026-10-26-cathedral-ai-agents-broke-into-anthropic."
+      },
+      {
+        "story": "Apple's OpenAI trade secrets case now covers an ex-employee's ChatGPT and Claude use",
+        "decision": "skipped",
+        "reason": "Lawsuit detail with little new for a general audience, and the day is at the cap."
+      },
+      {
+        "story": "Gov. Hochul signs New York bill to shield children from unsafe AI chatbots",
+        "decision": "skipped",
+        "reason": "Political and sensitive, and the day is at the cap; a candidate for tomorrow if still fresh."
+      },
+      {
+        "story": "TechCrunch: AI execs may be too out of touch to build for the general public",
+        "source": "https://techcrunch.com/2026/10/28/ai-execs-may-be-too-out-of-touch-to-build-for-the-general-public/",
+        "decision": "skipped",
+        "reason": "Opinion piece with no news event."
+      },
+      {
+        "story": "Kentucky man becomes the first humanist granted a religious exemption from using AI",
+        "source": "https://religionnews.com/2026/10/26/in-a-first-a-humanist-granted-a-religious-exemption-from-using-ai/",
+        "decision": "skipped",
+        "reason": "Odd story with some appeal, but two days old and the day is at the cap."
+      },
+      {
+        "story": "Surge AI Dayjob: Tax benchmark tests AI agents on 50 tax assignments",
+        "source": "https://surgehq.ai/blog/dayjob-tax",
+        "decision": "skipped",
+        "reason": "Niche benchmark from one source, and the day is at the cap."
+      },
+      {
+        "story": "Amazon is gutting its AI division after Nova struggles (Futurism)",
+        "source": "https://futurism.com/artificial-intelligence/amazon-ai-division-failure-nova",
+        "decision": "skipped",
+        "reason": "From Oct 27, outside the 12-hour window, and the day is at the cap."
+      },
+      {
+        "story": "Anthropic: early progress on drug development with Claude",
+        "decision": "covered",
+        "reason": "Already queued as 2026-10-28-claude-35000-antibodies-one-month."
+      },
+      {
+        "story": "Police use AI to pull over drivers for suspicious behavior",
+        "decision": "covered",
+        "reason": "Already queued as 2026-10-28-police-ai-flags-suspicious-road-trips."
+      },
+      {
+        "story": "Daily utility post for Oct 28",
+        "decision": "skipped",
+        "reason": "Oct 28 is at the 8-job cap."
+      }
+    ],
+    "requests": []
   }
 ]
