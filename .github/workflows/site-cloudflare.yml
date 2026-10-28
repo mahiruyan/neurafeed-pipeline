@@ -84,7 +84,8 @@ jobs:
             const plain = (u) => { const x = new URL(u); x.searchParams.delete("sslmode"); return x.toString(); };
             const ssl = { rejectUnauthorized: false };
             const admin = new pg.Client({ connectionString: plain(ownerUrl), ssl });
-            await admin.connect();
+            process.on("unhandledRejection", (e) => { console.log("::error::runtime login step: " + String(e && e.message || e).replace(/postgres(ql)?:\/\/\S+/g, "[url]")); process.exit(1); });
+            for (let i = 0; ; i++) { try { await admin.connect(); break; } catch (e) { console.log(`owner login attempt ${i + 1}: ${e.message}`); if (i >= 5) throw e; await new Promise((r) => setTimeout(r, 10000)); } }
             await admin.query(`ALTER ROLE neurafeed_runtime WITH LOGIN PASSWORD \x27${password}\x27`);
             const attrs = (await admin.query("SELECT rolsuper, rolbypassrls, rolcanlogin FROM pg_roles WHERE rolname = \x27neurafeed_runtime\x27")).rows[0];
             await admin.end();
