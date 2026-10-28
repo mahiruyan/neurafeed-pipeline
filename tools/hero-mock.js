@@ -37,13 +37,16 @@ const VARIANTS = {
   const b = await puppeteer.launch({ args: ['--no-sandbox'] });
   for (const [name, vp] of [['phone', { width: 390, height: 844, deviceScaleFactor: 2, isMobile: true, hasTouch: true }], ['desktop', { width: 1440, height: 900, deviceScaleFactor: 1 }]]) {
     for (const [v, { css, js }] of Object.entries(VARIANTS)) {
+      if (process.env.MOCK_ONLY && !process.env.MOCK_ONLY.split(',').includes(v)) continue;
       const page = await b.newPage(); await page.setViewport(vp);
+      try {
       await page.goto(URL_, { waitUntil: 'networkidle2', timeout: 60000 });
       if (js) await page.evaluate(js).catch(() => {});
       if (css) await page.addStyleTag({ content: css });
       await page.evaluate(() => document.querySelectorAll('img').forEach((i) => { i.loading = 'eager'; }));
       await new Promise((r) => setTimeout(r, 1500));
       await page.screenshot({ path: path.join(OUT, `${v}-${name}.jpg`), type: 'jpeg', quality: 80, clip: { x: 0, y: 0, width: vp.width, height: name === 'phone' ? 1100 : 1000 }, captureBeyondViewport: true });
+      } catch (e) { console.log(`::error::${v}-${name}: ${e.message}`); }
       await page.close();
     }
   }
