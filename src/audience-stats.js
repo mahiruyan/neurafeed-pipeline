@@ -37,8 +37,14 @@ async function instagram() {
   if (reach > 0 && interactions >= 0) out.engagement_rate = Math.round(interactions / reach * 1000) / 10;
   // Where the people who actually saw our posts are (last 30 days), not where the followers are.
   try {
-    const d = await ig(`${user}/insights?metric=reached_audience_demographics&period=lifetime&timeframe=last_30_days&metric_type=total_value&breakdown=country`);
-    const rows = (d.data?.[0]?.total_value?.breakdowns?.[0]?.results || []).map((r) => ({ code: r.dimension_values[0], value: Number(r.value) || 0 }));
+    let rows = [];
+    for (const tf of ['this_month', 'prev_month', 'last_30_days']) {
+      try {
+        const d = await ig(`${user}/insights?metric=reached_audience_demographics&period=lifetime&timeframe=${tf}&metric_type=total_value&breakdown=country`);
+        rows = (d.data?.[0]?.total_value?.breakdowns?.[0]?.results || []).map((r) => ({ code: r.dimension_values[0], value: Number(r.value) || 0 }));
+      } catch (e) { console.log(`::notice::viewer countries ${tf}: ${e.message}`); }
+      if (rows.length) { console.log(`::notice::viewer countries from ${tf}`); break; }
+    }
     const sum = rows.reduce((a, r) => a + r.value, 0);
     if (sum > 0) {
       const names = new Intl.DisplayNames(['en'], { type: 'region' });
