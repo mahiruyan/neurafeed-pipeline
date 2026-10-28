@@ -268,6 +268,34 @@ Inner slides: when a screenshot of the tool or page exists, use it with `"fit": 
 slide's image so it is shown whole instead of cropped.
 Caption sources: the official pages of the tools or the vendor's documentation.
 
+### The guide on the website (`site_article` with `"kind": "guide"`, every utility post)
+
+Every utility carousel also carries a long, evergreen guide for neurafeedai.com (category Guides).
+These are the pages people find on Google months later, so they matter more than any single news
+article. Same job, same sources; the carousel is the teaser, the guide is the full version.
+- Pick the subject from `guides/plan.md`: the first tool or idea not yet covered by a guide job in
+  jobs/ (check `site_article.kind == "guide"` and the headline). Popular tools first. Never repeat
+  a guide; a new angle on the same tool is fine ("5 Claude prompts for spreadsheets" after a
+  general Claude guide).
+- Formats: "How to use X: a practical guide", "5 X prompts for Y (copy and paste)", "X vs Y: which
+  one for Z", "N things X can do that most people miss". Prompt guides are great: each prompt is a
+  `prompt` paragraph the reader copies.
+- `paragraphs` kinds: `fact` (what the tool is or does, cites sources, first paragraph), `heading`,
+  `step` (`"title": "1. Open a new chat"` plus the text), `prompt` (the exact prompt to copy; may
+  have line breaks and placeholders in [brackets]; give it a `title` like "Prompt 3: Turn notes into
+  a plan"), `tip` (one practical tip), `analysis`. No `why_it_matters` needed. 700 to 1,600 words.
+- Facts only from the vendor's own documentation, help center or announcement, plus at least one
+  more source. Never invent a feature, a menu name, a price or a limit; if the docs do not say where
+  a button is, do not describe where it is. Say which plan a feature needs when the docs say so.
+- Voice: Mahir's voice in English. Short sentences, direct, practical, a little dry. Talk to the
+  reader as "you" (guides only). No hype, no filler intros ("In today's fast-paced world"), no
+  "unlock", "supercharge", "game-changer", no emojis. Lead with the payoff in the first two lines.
+  Say honestly what the tool is bad at. Every step must be something the reader can do right now.
+- `headline`: clear and searchable, the tool name first ("ChatGPT Projects: how to set them up and
+  when to use them"). `seo_title` under 65 characters, `seo_description` under 160.
+- Validate with `validateSiteArticle` like news articles. The desk feed sends it to the site, where
+  Mahir approves it on Telegram like any other article.
+
 ## Weekly roundup (Sundays)
 
 On Sunday (New York time), the first run at or after 17:00 queues `YYYY-MM-DD-week-in-ai`:

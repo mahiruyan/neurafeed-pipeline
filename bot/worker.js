@@ -978,7 +978,10 @@ async function siteDraftButton(env, cb) {
     if (action === 'sp') {
       const r = await siteApi(env, { action: 'approve_publish', articleId: id });
       await env.KV.put(`site:${id}`, 'published', { expirationTtl: 60 * 60 * 24 * 30 });
-      return send(env, `✅ Yayında${r.category ? ` (${r.category})` : ''}.${r.url ? `\n${r.url}` : ''}`, cb.message.message_id);
+      // Ready-made links that tell the site where the reader came from (Analytics → Where readers come from).
+      const tagged = (source, medium) => { try { const u = new URL(r.url); u.searchParams.set('utm_source', source); u.searchParams.set('utm_medium', medium); return u.toString(); } catch { return r.url; } };
+      const links = r.url ? `\n\n📲 Story linki (link sticker):\n${tagged('instagram', 'story')}\n\n🧵 Threads / Facebook için:\n${tagged('threads', 'post')}\n${tagged('facebook', 'post')}` : '';
+      return send(env, `✅ Yayında${r.category ? ` (${r.category})` : ''}.${r.url ? `\n${r.url}` : ''}${links}`, cb.message.message_id);
     }
     await siteApi(env, { action: 'reject', articleId: id, note: 'Rejected from Telegram.' });
     await env.KV.put(`site:${id}`, 'rejected', { expirationTtl: 60 * 60 * 24 * 30 });

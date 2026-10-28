@@ -15,7 +15,7 @@ const { validateSiteArticle } = require('./validate');
 const OK = new Set(['approved', 'held_cap', 'posted', 'publish_failed']);
 const NOT_NEWS = new Set(['utility', 'single', 'roundup', 'prompt']);
 // Website categories (must match the admin's category slugs).
-const SITE_CATEGORIES = ['breaking', 'companies', 'models', 'robotics', 'free-tools', 'policy'];
+const SITE_CATEGORIES = ['breaking', 'companies', 'models', 'robotics', 'free-tools', 'policy', 'guides'];
 const MAX_ITEMS = 30;
 const MAX_AGE_HOURS = 72;
 const MAX_SUMMARY = 590; // the website keeps 600 characters of a feed summary
@@ -97,11 +97,14 @@ function articleOf(job) {
   const a = job.site_article;
   if (!a || validateSiteArticle(job).length) return null;
   const src = (n) => ({ name: plain(job.sources[n].name), url: job.sources[n].url });
+  // Prompts keep their line breaks (the reader copies them as written).
+  const keep = (t) => String(t || '').replace(/\*/g, '').replace(/[ \t]+/g, ' ').replace(/\n{3,}/g, '\n\n').trim();
   return {
+    ...(a.kind === 'guide' ? { kind: 'guide' } : {}),
     headline: plain(a.headline), dek: plain(a.dek), summary: plain(a.summary), seo_title: plain(a.seo_title),
     seo_description: plain(a.seo_description), answer_summary: plain(a.answer_summary),
     tags: (a.tags || []).map(plain).filter(Boolean).slice(0, 8),
-    paragraphs: a.paragraphs.map((x) => ({ kind: x.kind, text: plain(x.text), sources: x.kind === 'fact' ? x.sources.map(src) : [] })),
+    paragraphs: a.paragraphs.map((x) => ({ kind: x.kind, ...(x.title ? { title: plain(x.title) } : {}), text: x.kind === 'prompt' ? keep(x.text) : plain(x.text), sources: x.kind === 'fact' ? x.sources.map(src) : [] })),
   };
 }
 
@@ -110,13 +113,17 @@ function deskItems(now = Date.now()) {
   for (const st of allJobStates()) {
     if (!OK.has(st.status)) continue;
     const job = loadJob(st.id);
-    if (!job || job.type === 'reel' || NOT_NEWS.has(job.format) || job.test) continue;
+    if (!job || job.type === 'reel' || job.test) continue;
+    // Guides: utility posts whose site article is a guide (category "guides").
+    const guide = job.format === 'utility' && job.site_article?.kind === 'guide';
+    if (NOT_NEWS.has(job.format) && !guide) continue;
     if ((job.sources || []).length < 2) continue;
     const when = new Date(job.story_time || job.created_at || st.updated_at).getTime();
     if (!Number.isFinite(when) || now - when > MAX_AGE_HOURS * 3600e3) continue;
-    const link = primaryLink(job);
+    // Several guides can cite the same help page: give each its own link so the site keeps them apart.
+    const link = guide ? (() => { try { const u = new URL(primaryLink(job)); u.searchParams.set('nf_guide', job.id); return u.toString(); } catch { return null; } })() : primaryLink(job);
     if (!link) continue;
-    items.push({ id: job.id, title: plain(job.slides?.[0]?.headline || job.id), link, summary: summaryOf(job), date: new Date(when), sources: job.sources, category: categoryOf(job), images: imagesOf(job), sensitive: Boolean(job.sensitive), hero: heroOf(job.id), article: articleOf(job) });
+    items.push({ id: job.id, title: plain(job.slides?.[0]?.headline || job.id), link, summary: summaryOf(job), date: new Date(when), sources: job.sources, category: guide ? 'guides' : categoryOf(job), images: imagesOf(job), sensitive: Boolean(job.sensitive), hero: heroOf(job.id), article: articleOf(job) });
   }
   return items.sort((a, b) => b.date - a.date).slice(0, MAX_ITEMS);
 }

@@ -33,6 +33,8 @@ function validateReel(job, fileId) {
 // block the Instagram post: the desk fixes them, and the desk feed leaves out an article that
 // still has problems (the site then has no draft for that story).
 const ARTICLE_KINDS = new Set(['fact', 'analysis', 'heading', 'why_it_matters']);
+// Guides (utility posts) also have numbered steps, prompts to copy and tips.
+const GUIDE_KINDS = new Set([...ARTICLE_KINDS, 'step', 'prompt', 'tip']);
 const BANNED_PHRASES = ['game-changing', 'groundbreaking', 'revolutionary', 'rapidly evolving landscape', 'marks a significant milestone', 'it remains to be seen', 'delve into', 'a testament to', 'only time will tell'];
 function validateSiteArticle(job) {
   const a = job.site_article;
@@ -43,21 +45,28 @@ function validateSiteArticle(job) {
   for (const k of ['headline', 'dek', 'summary', 'seo_title', 'seo_description', 'answer_summary']) if (!str(a[k])) p.push(`site_article.${k} is required`);
   if (str(a.seo_description) && a.seo_description.length > 160) p.push(`site_article.seo_description is ${a.seo_description.length} characters (max 160)`);
   if (str(a.headline) && a.headline.length > 110) p.push('site_article.headline is longer than 110 characters');
+  const guide = a.kind === 'guide';
+  const kinds = guide ? GUIDE_KINDS : ARTICLE_KINDS;
   const paras = Array.isArray(a.paragraphs) ? a.paragraphs : [];
   if (paras.length < 5) p.push('site_article.paragraphs needs at least 5 items');
   const nSources = (job.sources || []).length;
   paras.forEach((x, i) => {
-    if (!x || !ARTICLE_KINDS.has(x.kind) || !str(x.text)) { p.push(`site_article paragraph ${i + 1}: kind (fact, analysis, heading, why_it_matters) and text are required`); return; }
+    if (!x || !kinds.has(x.kind) || !str(x.text)) { p.push(`site_article paragraph ${i + 1}: kind (${[...kinds].join(', ')}) and text are required`); return; }
+    if (x.kind === 'step' && !str(x.title)) p.push(`site_article paragraph ${i + 1}: a step needs a short title ("1. Open Canvas")`);
     const src = Array.isArray(x.sources) ? x.sources : [];
     if (x.kind === 'fact' && (!src.length || !src.every((n) => Number.isInteger(n) && n >= 0 && n < nSources))) p.push(`site_article paragraph ${i + 1}: a fact paragraph needs sources as indexes into job.sources (0 to ${nSources - 1})`);
     if (x.kind !== 'fact' && src.length) p.push(`site_article paragraph ${i + 1}: only fact paragraphs cite sources`);
   });
   if (paras.length && paras[0]?.kind !== 'fact') p.push('site_article: the first paragraph must be a fact paragraph (what happened)');
-  if (paras.length && paras.at(-1)?.kind !== 'why_it_matters') p.push('site_article: the last paragraph must be why_it_matters (a concrete thing to watch next)');
-  const body = paras.map((x) => x?.text || '').join(' ');
+  if (!guide && paras.length && paras.at(-1)?.kind !== 'why_it_matters') p.push('site_article: the last paragraph must be why_it_matters (a concrete thing to watch next)');
+  if (guide && !paras.some((x) => x?.kind === 'step' || x?.kind === 'prompt')) p.push('site_article (guide): needs step or prompt paragraphs');
+  const body = paras.map((x) => [x?.title, x?.text].filter(Boolean).join(' ')).join(' ');
   const words = body.split(/\s+/).filter(Boolean).length;
-  if (words < 450 || words > 850) p.push(`site_article body is ${words} words (write 450 to 850)`);
-  const all = [a.headline, a.dek, a.summary, a.seo_title, a.seo_description, a.answer_summary, a.hero_alt, body].join('\n');
+  const [minWords, maxWords] = guide ? [700, 1600] : [450, 850];
+  if (words < minWords || words > maxWords) p.push(`site_article body is ${words} words (write ${minWords} to ${maxWords})`);
+  // Prompt text is the reader's to copy: it may ask questions and use any wording.
+  const prose = paras.filter((x) => x?.kind !== 'prompt').map((x) => [x?.title, x?.text].filter(Boolean).join(' ')).join(' ');
+  const all = [a.headline, a.dek, a.summary, a.seo_title, a.seo_description, a.answer_summary, a.hero_alt, prose].join('\n');
   if (DASHES.test(all)) p.push('site_article contains an en dash or em dash');
   const lower = all.toLowerCase();
   for (const b of BANNED_PHRASES) if (lower.includes(b)) p.push(`site_article uses the phrase "${b}"`);
