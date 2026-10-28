@@ -9,7 +9,7 @@
 const fs = require('fs');
 const path = require('path');
 const { execFileSync } = require('child_process');
-const { askVision, download, generate } = require('./images');
+const { askVision, download, generate, imgData } = require('./images');
 const { imagesOf } = require('./deskfeed');
 
 const MIN_WIDTH = 1200;
@@ -74,6 +74,31 @@ async function focalPoint(file) {
     const ok = (n) => typeof n === 'number' && n >= 0 && n <= 1;
     return v && ok(v.x) && ok(v.y) ? { x: Math.round(v.x * 100) / 100, y: Math.round(v.y * 100) / 100 } : null;
   } catch (e) { console.log(`::warning::focal point: ${e.message}`); return null; }
+}
+
+// Very wide photos are cropped hard on the site (the home lead is almost square on desktop, the
+// article cover is tall on phones). Bria Expand on fal.ai (about $0.04) extends the same photo to
+// 5:4: the original pixels stay untouched, only the new top and bottom are generated. Every crop
+// the site makes then still shows the whole original. On any error the original is kept.
+const EXPAND_ABOVE = 1.5;
+async function expandToFit(dest, meta, work) {
+  const key = process.env.FAL_KEY;
+  if (!key || meta.ai || !meta.width || meta.width / meta.height <= EXPAND_ABOVE) return meta;
+  try {
+    const res = await fetch('https://fal.run/bria/fibo-edit-1.5/expand', {
+      method: 'POST',
+      headers: { Authorization: `Key ${key}`, 'Content-Type': 'application/json' },
+      signal: AbortSignal.timeout(180000),
+      body: JSON.stringify({ image_url: imgData(dest), aspect_ratio: '5:4' }),
+    });
+    const d = await res.json().catch(() => ({}));
+    const url = d.image?.url;
+    if (!res.ok || !url) throw new Error(d.detail ? JSON.stringify(d.detail).slice(0, 200) : `HTTP ${res.status}`);
+    const raw = await download(url, path.join(work, 'expanded.img'), 60000);
+    const size = toJpeg(raw, dest);
+    console.log(`hero: extended ${meta.width}x${meta.height} to ${size.width}x${size.height}`);
+    return { ...meta, ...size, extended: true, license: `${meta.license} (edges extended with AI)` };
+  } catch (e) { console.log(`::warning::hero expand: ${e.message}`); return meta; }
 }
 
 // Accepts a prepared hero unless it has big baked-in text; the first such photo is kept aside.
@@ -144,6 +169,7 @@ async function illustrateDraft(headline, outDir, sourceUrls = []) {
   if (!meta) meta = useSpare(dest, spare);
   if (!meta) { try { meta = await illustration(plain(headline), work, dest); } catch (e) { console.log(`::warning::illustration: ${e.message}`); } }
   if (!meta) throw new Error('no illustration and no source photo at least 1200 px wide');
+  meta = await expandToFit(dest, meta, work);
   meta.alt = await altText(dest, plain(headline));
   const focal = await focalPoint(dest); if (focal) meta.focal = focal;
   fs.writeFileSync(path.join(outDir, 'hero.json'), JSON.stringify(meta, null, 2) + '\n');
@@ -191,6 +217,7 @@ async function prepareHero(job, outDir) {
   }
   if (!meta) throw new Error('no hero: no photo at least 1200 px wide and no illustration');
   // The desk writes alt text when it writes the site article (it looked at the photo).
+  meta = await expandToFit(dest, meta, work);
   // hero_alt describes the job's cover photo; any other photo gets its own alt text.
   const coverUrl = imagesOf(job)[0]?.url;
   meta.alt = (!meta.ai && meta.source_url === coverUrl ? plain(job.site_article?.hero_alt) : '') || await altText(dest, headline);
