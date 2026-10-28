@@ -1,0 +1,26 @@
+name: Site rollback
+
+# Emergency: put a Worker back on an earlier version (no build). steps_back=1 is the version before
+# the current one.
+on:
+  workflow_dispatch:
+    inputs:
+      worker: { description: neurafeed-web or neurafeed-admin, required: true, default: neurafeed-web }
+      steps_back: { description: how many versions back, required: true, default: '1' }
+
+jobs:
+  rollback:
+    runs-on: ubuntu-latest
+    env:
+      CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+      CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+    steps:
+      - run: |
+          npm i -g wrangler@4 >/dev/null 2>&1
+          w="${{ inputs.worker }}"
+          list=$(wrangler deployments list --name "$w" --json 2>/dev/null)
+          echo "::notice::deployments: $(jq -c '[.[] | {created: .created_on, v: .versions[0].version_id}] | .[-5:]' <<<"$list" | cut -c1-900)"
+          n=$(jq 'length' <<<"$list"); back=${{ inputs.steps_back }}
+          target=$(jq -r --argjson i $((n - 1 - back)) '.[$i].versions[0].version_id' <<<"$list")
+          echo "::notice::rolling $w back to $target"
+          wrangler rollback "$target" --name "$w" -y -m "rollback ${back} step(s)" 2>&1 | tail -5
