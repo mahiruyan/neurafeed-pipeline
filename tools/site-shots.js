@@ -3,7 +3,7 @@
 const fs = require('fs'); const path = require('path'); const puppeteer = require('puppeteer');
 const BASE = process.argv[2] || 'https://neurafeedai.com';
 const OUT = process.argv[3] || 'shots';
-const PAGES = ['/', '/latest', '/news/anthropic-reportedly-tests-ai-model-that-infers-users-unstated-goals-2b9fb1', '/category/models', '/search?q=anthropic', '/tools', '/advertise', '/about', '/editorial-policy', '/ai-use', '/masthead', '/contact', '/privacy', '/this-page-does-not-exist'];
+const PAGES = ['/', '/latest', '/news/anthropic-reportedly-tests-ai-model-that-infers-users-unstated-goals-2b9fb1', '/category/models', '/search?q=anthropic', '/tools', '/advertise', '/about', '/editorial-policy', '/ai-use', '/masthead', '/contact', '/privacy', '/terms', '/this-page-does-not-exist', 'https://links.neurafeedai.com/'];
 (async () => {
   fs.mkdirSync(OUT, { recursive: true });
   const b = await puppeteer.launch({ args: ['--no-sandbox'] });
@@ -16,7 +16,7 @@ const PAGES = ['/', '/latest', '/news/anthropic-reportedly-tests-ai-model-that-i
       page.on('console', (m) => { if (m.type() === 'error') errors.push(m.text().slice(0, 160)); });
       page.on('pageerror', (e) => errors.push(String(e).slice(0, 160)));
       const t0 = Date.now();
-      const res = await page.goto(BASE + p, { waitUntil: 'networkidle2', timeout: 60000 }).catch((e) => null);
+      const res = await page.goto(p.startsWith('http') ? p : BASE + p, { waitUntil: 'networkidle2', timeout: 60000 }).catch((e) => null);
       const ms = Date.now() - t0;
       const info = await page.evaluate(() => ({
         title: document.title, desc: document.querySelector('meta[name=description]')?.content || '',
