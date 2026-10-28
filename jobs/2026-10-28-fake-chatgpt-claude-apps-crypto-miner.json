@@ -1,0 +1,156 @@
+{
+  "id": "2026-10-28-fake-chatgpt-claude-apps-crypto-miner",
+  "created_at": "2026-10-28T12:20:00Z",
+  "story_time": "2026-10-27T14:00:00Z",
+  "timely": false,
+  "sensitive": false,
+  "priority": 2,
+  "review": true,
+  "format": "carousel",
+  "site_category": "companies",
+  "sources": [
+    {
+      "name": "Check Point Research",
+      "url": "https://research.checkpoint.com/2026/tricks-from-the-past-deployed-via-signed-chatgpt-and-claude-binaries/"
+    },
+    {
+      "name": "Cyber Security News",
+      "url": "https://cybersecuritynews.com/fake-github-chatgpt-claude-malware/"
+    }
+  ],
+  "threads_text": "Hackers posted fake desktop apps called GPT-6 Astra and Claude Opus on GitHub, and they still ranked near the top of Google. The installer inside is a real signed OpenAI or Anthropic file that quietly loads malware and turns your PC into a crypto miner. Where do you download your AI apps from?",
+  "caption": "Check Point Research found fake GitHub projects posing as AI desktop apps called GPT-5.6 Sol, GPT-6 Astra and Claude Opus.\nEach download hides a malicious file next to a real, signed OpenAI or Anthropic installer, and the final payload in this campaign was a crypto miner.\nThe fake pages still ranked near the top of Google results.\n\nHave you ever downloaded an AI app from somewhere other than the official site?\n\nFollow @neurafeed.ai for daily AI news.\n\nSource: Check Point Research, Cyber Security News · Images: Check Point Research",
+  "slides": [
+    {
+      "kind": "cover",
+      "headline": "Googling for a free ChatGPT app? Hackers put *fake ones* at the top",
+      "image": {
+        "url": "https://research.checkpoint.com/wp-content/uploads/2026/10/bg1.jpg",
+        "credit": "Check Point Research",
+        "fallback_urls": [
+          "https://research.checkpoint.com/wp-content/uploads/2026/10/image2-1024x755.png"
+        ],
+        "generate": "A young man in a dark hoodie sits hunched at a cluttered desk in a dim apartment late at night, lit only by his laptop screen and a harsh desk lamp, his face tense as he leans toward the screen. On the desk in front of him sit two opened cardboard delivery boxes: the first box carries the logo from the first image, big and exact, printed on its side; the second box carries the logo from the second image, big and exact. Out of the opened boxes spill tangled black cables and a small rusty miner's pickaxe, and a thin trail of dark smoke curls up from the back of the laptop. Empty energy drink cans and crumpled papers around. Generous headroom above his head. The man and the boxes fill the upper two thirds of the frame, the bottom third is the dark desk surface. Blank surfaces, no readable text or labels on any object or screen except the two logos. Photorealistic, high contrast, vertical composition, one clear subject. It must look like an unedited real photo from a news agency, not a painting, not digital art, no glow effects.",
+        "refs": [
+          "assets/logos/openai.png",
+          "assets/logos/claude.png"
+        ]
+      },
+      "pos": "center 30%"
+    },
+    {
+      "kind": "card",
+      "heading": "Fake *GPT-6 Astra* and Claude apps",
+      "paras": [
+        "Check Point Research found fake GitHub projects posing as desktop apps called GPT-5.6 Sol, GPT-6 Astra and Claude Opus.",
+        "The pages had no fake stars or forks, yet they still ranked near the top of Google."
+      ],
+      "image": {
+        "url": "https://research.checkpoint.com/wp-content/uploads/2026/10/image-3-1024x750.png",
+        "credit": "Check Point Research",
+        "fit": "contain",
+        "fallback_urls": [
+          "https://research.checkpoint.com/wp-content/uploads/2026/10/image-1-1.png"
+        ]
+      }
+    },
+    {
+      "kind": "card",
+      "heading": "A real *signed* installer",
+      "paras": [
+        "Each ZIP holds a genuine signed Setup.exe from OpenAI or Anthropic.",
+        "Next to it sits a fake file called winmm.dll. The trusted program loads it, and the malware rides in with it."
+      ],
+      "image": {
+        "url": "https://research.checkpoint.com/wp-content/uploads/2026/10/image1-1024x424.png",
+        "credit": "Check Point Research",
+        "fit": "contain",
+        "fallback_urls": []
+      }
+    },
+    {
+      "kind": "card",
+      "heading": "Your PC *mines crypto*",
+      "paras": [
+        "It hides as a Microsoft scheduled task and finds its orders through a Telegram channel picture.",
+        "In this campaign it installed the XMRig crypto miner, which connects through Tor."
+      ],
+      "image": {
+        "url": "https://research.checkpoint.com/wp-content/uploads/2026/10/image-2-1024x659.png",
+        "credit": "Check Point Research",
+        "fit": "contain",
+        "fallback_urls": [
+          "https://research.checkpoint.com/wp-content/uploads/2026/10/image2-1024x755.png"
+        ]
+      },
+      "note": "Download AI apps only from the official sites."
+    },
+    {
+      "kind": "cta",
+      "hook": "Fake AI apps are spreading as fast as the real ones. Follow so you know which downloads to trust."
+    }
+  ],
+  "site_article": {
+    "headline": "Fake ChatGPT and Claude desktop apps on GitHub hid a crypto miner",
+    "dek": "Check Point Research says the fake installers paired real signed OpenAI and Anthropic programs with a malicious DLL.",
+    "summary": "Check Point Research reported on October 27, 2026, that fake GitHub projects posing as AI desktop apps named GPT-5.6 Sol, GPT-6 Astra and Claude Opus delivered malware. The campaign, which the researchers call Yoba, ended with the XMRig cryptominer running on infected Windows computers.",
+    "seo_title": "Fake ChatGPT and Claude apps on GitHub spread Yoba miner",
+    "seo_description": "Check Point says fake GPT-6 Astra and Claude Opus apps on GitHub used signed OpenAI and Anthropic installers to load malware and an XMRig crypto miner.",
+    "answer_summary": "According to Check Point Research, fake AI desktop apps hosted on GitHub bundled a real signed OpenAI or Anthropic installer with a malicious DLL that installed a cryptominer. The safe choice is to download AI apps only from the vendors' official sites.",
+    "tags": ["ChatGPT", "Claude", "Malware", "GitHub", "Check Point", "Cybersecurity"],
+    "hero_alt": "A young man in a hoodie at a laptop late at night, with two opened boxes on his desk spilling cables.",
+    "paragraphs": [
+      {
+        "kind": "fact",
+        "text": "Check Point Research published a report on October 27, 2026, describing a malware campaign that used fake GitHub projects dressed up as AI desktop apps. The fake apps carried the names GPT-5.6 Sol, GPT-6 Astra and Claude Opus, and the researchers say they tracked the operation, which they call Yoba, for about two months.",
+        "sources": [0, 1]
+      },
+      {
+        "kind": "fact",
+        "text": "The projects relied on ordinary GitHub features. Landing pages hosted on GitHub Pages offered download buttons that pointed to ZIP files stored in the projects' releases. Check Point said the repositories showed no fake stars or forks, yet they still appeared among the top results on Google, which the researchers attribute most likely to search engine poisoning.",
+        "sources": [0, 1]
+      },
+      {
+        "kind": "heading",
+        "text": "How the trusted installer was abused"
+      },
+      {
+        "kind": "fact",
+        "text": "Each ZIP file contained a legitimate signed program named Setup.exe from OpenAI or, in the Claude package, from Anthropic. Beside it sat a malicious file named winmm.dll, which imitates a standard Windows library. When the signed program starts, it loads that file, a technique known as DLL sideloading that lets malicious code run under a trusted name. Check Point noted that the archives were not password protected and still had very low detection rates.",
+        "sources": [0, 1]
+      },
+      {
+        "kind": "fact",
+        "text": "The first stage, which Check Point calls YobaDropper, runs only when its host is named Setup.exe, requires administrator rights and skips computers set to Russian and several other languages of former Soviet countries. It copies its files into a folder under ProgramData and creates a scheduled task, labeled as a Microsoft component, that starts three minutes after each boot.",
+        "sources": [0, 1]
+      },
+      {
+        "kind": "fact",
+        "text": "The second stage, YobaLoader, reads the profile picture of a Telegram channel and uses its last 50 bytes to generate a domain name. It then asks Google's DNS over HTTPS service for a text record holding an encrypted command, checks the command's signature and downloads the next file from the Catbox file host. In this campaign, the final payload was the XMRig 6.26.0 cryptominer, which connected through Tor. The researchers warned that the loader could deliver other payloads in later waves.",
+        "sources": [0, 1]
+      },
+      {
+        "kind": "heading",
+        "text": "Timeline and attribution"
+      },
+      {
+        "kind": "fact",
+        "text": "The first repository was created on July 16, 2026, and the fake GPT-5.6 Sol, Claude Opus and GPT-6 Astra archives were uploaded between August 30 and September 4, according to Check Point. An earlier version of the dropper seen in early June 2026 was loaded by a program named Cursor.exe. The researchers said the operator shows indicators of Russian origin, while Cyber Security News noted that these clues do not prove who is responsible. Check Point did not publish any victim count.",
+        "sources": [0, 1]
+      },
+      {
+        "kind": "fact",
+        "text": "Check Point advised caution with AI helper tools downloaded from unverified repositories and recommended policies that restrict software from unknown sources. Cyber Security News added that users should check a repository's owner, account age and commit history before running anything, and that defenders should watch for signed programs loading DLL files from user folders.",
+        "sources": [0, 1]
+      },
+      {
+        "kind": "analysis",
+        "text": "The campaign shows how attackers follow attention. Names of popular or rumored AI models draw searches, and a signed file from a well known AI company lends the download credibility it has not earned. The signature on Setup.exe was real; the problem was the file placed next to it."
+      },
+      {
+        "kind": "why_it_matters",
+        "text": "Watch whether GitHub removes the remaining repositories and whether new fake AI app names appear in search results, since Check Point says the same loader can carry a different payload next time."
+      }
+    ]
+  }
+}

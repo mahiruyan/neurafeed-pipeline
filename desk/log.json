@@ -5544,5 +5544,76 @@
       }
     ],
     "requests": []
+  },
+  {
+    "run_at": "2026-10-28T12:04:50.219Z",
+    "summary": "Morning run (07:56 New York time, Oct 28): no open links or requests; no new priority 1 story; queued 1 story (fake ChatGPT and Claude apps on GitHub hiding a crypto miner), waiting for Mahir's approval. Oct 28 now has 7 jobs, one slot kept for the utility post.",
+    "considered": [
+      {
+        "story": "Fake GPT-6 Astra and Claude Opus desktop apps on GitHub load a crypto miner through signed installers (Check Point)",
+        "source": "https://research.checkpoint.com/2026/tricks-from-the-past-deployed-via-signed-chatgpt-and-claude-binaries/",
+        "decision": "queued",
+        "job_id": "2026-10-28-fake-chatgpt-claude-apps-crypto-miner",
+        "priority": 2
+      },
+      {
+        "story": "Stanford professors' books pirated to train Claude (Stanford Daily)",
+        "source": "https://stanforddaily.com/2026/10/27/professors-books-pirated-to-train-claude/",
+        "decision": "skipped",
+        "reason": "Copyright dispute building on older Anthropic book lawsuits; could not read the article and confirm it with a second source in this run, and only one Oct 28 slot remains besides the utility post."
+      },
+      {
+        "story": "OpenAI engineer indicted for bugging a conference room",
+        "decision": "skipped",
+        "reason": "Crime story with only one readable source, and only one slot left for today."
+      },
+      {
+        "story": "Parents sue OpenAI over ChatGPT epilepsy medication advice",
+        "source": "https://news.bloomberglaw.com/litigation/openai-sued-alleging-chatgpt-gave-fatal-epilepsy-medical-advice",
+        "decision": "skipped",
+        "reason": "Same decision as earlier runs: death and health lawsuit without solid sourcing readable from here."
+      },
+      {
+        "story": "Microsoft MAI-Image-2.7 preview beats GPT Image 2.5 Flare in editing (Neowin)",
+        "decision": "skipped",
+        "reason": "Could not confirm with an official Microsoft page or a second source."
+      },
+      {
+        "story": "HP, Asus and Acer move PC production back to China on AI cost hikes",
+        "decision": "skipped",
+        "reason": "Supply chain story with little appeal for the US audience."
+      },
+      {
+        "story": "Anthropic S-1 analysis and Anthropic IPO trading",
+        "decision": "covered",
+        "reason": "Already covered as 2026-10-26-anthropic-files-ipo-ant-nasdaq and 2026-10-27-anthropic-models-escaped-tests-training-pause."
+      },
+      {
+        "story": "OpenAI plans to buy Google TPU chips",
+        "decision": "covered",
+        "reason": "Already queued as 2026-10-28-openai-buying-google-tpu-chips."
+      },
+      {
+        "story": "Google DeepMind Genie 4",
+        "decision": "covered",
+        "reason": "Already covered as 2026-10-27-google-genie-4-worlds-talk-back."
+      },
+      {
+        "story": "Nvidia and AMD invest in Meta's stock sale",
+        "decision": "covered",
+        "reason": "Already covered as 2026-10-27-nvidia-3-billion-meta-muse."
+      },
+      {
+        "story": "Trump says he will ban the term artificial intelligence",
+        "decision": "skipped",
+        "reason": "Repeat political statement with no new action, skipped in earlier runs."
+      },
+      {
+        "story": "Daily utility post for Oct 28",
+        "decision": "skipped",
+        "reason": "It is not yet 11:00 New York time; the last open slot is kept for it."
+      }
+    ],
+    "requests": []
   }
 ]
