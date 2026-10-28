@@ -65,7 +65,7 @@ async function threads() {
   const views = (stats.ig_views || 0) + (stats.th_views || 0);
   if (views > 0) stats.monthly_views = views;
   delete stats.ig_views; delete stats.th_views;
-  console.log(JSON.stringify(stats));
+  console.log(`::notice::stats ${JSON.stringify(stats)}`);
   if (process.argv.includes('--dry')) return;
   const res = await fetch('https://admin.neurafeedai.com/api/jobs/audience-stats', {
     method: 'POST', headers: { Authorization: `Bearer ${process.env.SITE_REVIEW_TOKEN}`, 'Content-Type': 'application/json' }, body: JSON.stringify({ stats }),
