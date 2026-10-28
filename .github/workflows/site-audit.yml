@@ -21,6 +21,8 @@ jobs:
           path: ~/.cache/puppeteer
           key: puppeteer-${{ runner.os }}-v1
       - run: npm install --no-audit --no-fund
+      - run: node tools/site-ux.js https://neurafeedai.com
+        continue-on-error: true
       - run: node tools/site-shots.js https://neurafeedai.com /tmp/audit
       - name: Lighthouse
         run: |
