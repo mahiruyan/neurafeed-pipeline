@@ -139,7 +139,7 @@ function rss(items, now = new Date()) {
 ${i.sources.map((s) => `      <category domain="${esc(s.url)}">${esc(plain(s.name))}</category>`).join('\n')}
       <nf:category>${esc(i.category)}</nf:category>
       <nf:sensitive>${i.sensitive ? 'true' : 'false'}</nf:sensitive>
-${i.hero ? `      <nf:hero url="${esc(i.hero.url)}" width="${i.hero.width}" height="${i.hero.height}" ai="${i.hero.ai ? 'true' : 'false'}"><nf:alt>${esc(i.hero.alt || '')}</nf:alt><nf:credit>${esc(i.hero.credit || '')}</nf:credit><nf:license>${esc(i.hero.license || '')}</nf:license>${i.hero.source_url ? `<nf:source>${esc(i.hero.source_url)}</nf:source>` : ''}</nf:hero>` : ''}
+${i.hero ? `      <nf:hero url="${esc(i.hero.url)}" width="${i.hero.width}" height="${i.hero.height}" ai="${i.hero.ai ? 'true' : 'false'}"${i.hero.focal ? ` focal_x="${i.hero.focal.x}" focal_y="${i.hero.focal.y}"` : ''}><nf:alt>${esc(i.hero.alt || '')}</nf:alt><nf:credit>${esc(i.hero.credit || '')}</nf:credit><nf:license>${esc(i.hero.license || '')}</nf:license>${i.hero.source_url ? `<nf:source>${esc(i.hero.source_url)}</nf:source>` : ''}</nf:hero>` : ''}
 ${i.article ? `      <nf:article>${esc(JSON.stringify(i.article))}</nf:article>\n` : ''}${(i.images || []).map((m) => `      <media:content url="${esc(m.url)}" medium="image"><media:credit>${esc(m.credit)}</media:credit></media:content>`).join('\n')}
     </item>`).join('\n');
   return `<?xml version="1.0" encoding="UTF-8"?>

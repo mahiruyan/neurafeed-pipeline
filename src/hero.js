@@ -63,6 +63,19 @@ async function hasBakedText(file) {
   } catch (e) { console.log(`::warning::text check: ${e.message}`); return false; }
 }
 
+// Where the main subject is, as fractions of width and height, so the site crops around it
+// (faces, a product, a logo) instead of the plain center. null when unknown.
+async function focalPoint(file) {
+  try {
+    const t = await askVision(file, 'Where is the most important thing in this photo (a face, a person, a product, a logo, the main object)? '
+      + 'Reply only with JSON like {"x":0.5,"y":0.4}: the center of that thing as fractions of the image width (x, 0 = left) and height (y, 0 = top).', { maxTokens: 30 });
+    const m = /\{[^}]*\}/.exec(t || '');
+    const v = m ? JSON.parse(m[0]) : null;
+    const ok = (n) => typeof n === 'number' && n >= 0 && n <= 1;
+    return v && ok(v.x) && ok(v.y) ? { x: Math.round(v.x * 100) / 100, y: Math.round(v.y * 100) / 100 } : null;
+  } catch (e) { console.log(`::warning::focal point: ${e.message}`); return null; }
+}
+
 // Accepts a prepared hero unless it has big baked-in text; the first such photo is kept aside.
 async function clean(dest, meta, spare) {
   if (!(await hasBakedText(dest))) return meta;
@@ -132,6 +145,7 @@ async function illustrateDraft(headline, outDir, sourceUrls = []) {
   if (!meta) { try { meta = await illustration(plain(headline), work, dest); } catch (e) { console.log(`::warning::illustration: ${e.message}`); } }
   if (!meta) throw new Error('no illustration and no source photo at least 1200 px wide');
   meta.alt = await altText(dest, plain(headline));
+  const focal = await focalPoint(dest); if (focal) meta.focal = focal;
   fs.writeFileSync(path.join(outDir, 'hero.json'), JSON.stringify(meta, null, 2) + '\n');
   fs.rmSync(work, { recursive: true, force: true });
   return meta;
@@ -180,6 +194,7 @@ async function prepareHero(job, outDir) {
   // hero_alt describes the job's cover photo; any other photo gets its own alt text.
   const coverUrl = imagesOf(job)[0]?.url;
   meta.alt = (!meta.ai && meta.source_url === coverUrl ? plain(job.site_article?.hero_alt) : '') || await altText(dest, headline);
+  const focal = await focalPoint(dest); if (focal) meta.focal = focal;
   fs.writeFileSync(path.join(outDir, 'hero.json'), JSON.stringify(meta, null, 2) + '\n');
   return meta;
 }
