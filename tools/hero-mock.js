@@ -40,6 +40,9 @@ const VARIANTS = {
       if (process.env.MOCK_ONLY && !process.env.MOCK_ONLY.split(',').includes(v)) continue;
       const page = await b.newPage(); await page.setViewport(vp);
       if (process.env.MOCK_IMG) await page.setBypassCSP(true);
+      const probe = { errors: [], google: [] };
+      page.on('console', (m) => { if (m.type() === 'error') probe.errors.push(m.text().slice(0, 200)); });
+      page.on('request', (r) => { if (/google-analytics|googletagmanager|analytics\.google/.test(r.url())) probe.google.push(r.url().split('?')[0]); });
       try {
       await page.goto(URL_, { waitUntil: 'networkidle2', timeout: 60000 });
       if (process.env.MOCK_IMG) await page.evaluate((src) => document.querySelectorAll('.article-cover__media img, .lead-visual img, .article-hero img').forEach((i) => { i.removeAttribute('srcset'); i.removeAttribute('sizes'); i.src = src; i.style.objectPosition = '50% 50%'; }), process.env.MOCK_IMG).catch(() => {});
@@ -48,6 +51,7 @@ const VARIANTS = {
       await page.evaluate(() => document.querySelectorAll('img').forEach((i) => { i.loading = 'eager'; }));
       await new Promise((r) => setTimeout(r, 1500));
       await page.screenshot({ path: path.join(OUT, `${v}-${name}.jpg`), type: 'jpeg', quality: 80, ...(process.env.MOCK_FULL ? { fullPage: true } : { clip: { x: 0, y: 0, width: vp.width, height: name === 'phone' ? 1100 : 1000 }, captureBeyondViewport: true }) });
+        if (process.env.MOCK_PROBE) { await new Promise((r) => setTimeout(r, 3000)); const gtag = await page.evaluate(() => typeof window.gtag); console.log(`::notice::${v}-${name} gtag=${gtag} google=${JSON.stringify([...new Set(probe.google)])} banner=${await page.$('.consent-banner') ? 'shown' : 'none'} errors=${JSON.stringify(probe.errors)}`); }
       } catch (e) { console.log(`::error::${v}-${name}: ${e.message}`); }
       await page.close();
     }
