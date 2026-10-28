@@ -9,7 +9,7 @@
 const fs = require('fs');
 const path = require('path');
 const { execFileSync } = require('child_process');
-const { download, generate, imgData } = require('./images');
+const { askVision, download, generate } = require('./images');
 const { imagesOf } = require('./deskfeed');
 
 const MIN_WIDTH = 1200;
@@ -46,20 +46,8 @@ function toJpeg(src, dest) {
 }
 
 async function altText(file, headline) {
-  const key = process.env.OPENAI_API_KEY;
-  if (!key) return headline.slice(0, 300);
   try {
-    const res = await fetch('https://api.openai.com/v1/chat/completions', {
-      method: 'POST',
-      headers: { Authorization: `Bearer ${key}`, 'Content-Type': 'application/json' },
-      body: JSON.stringify({ model: 'gpt-4.1-mini', max_tokens: 80, messages: [{ role: 'user', content: [
-        { type: 'text', text: 'Write alt text for this news image: one plain sentence under 20 words describing only what is visible. No "image of", no guesses about names you cannot read.' },
-        { type: 'image_url', image_url: { url: imgData(file) } },
-      ] }] }),
-    });
-    const d = await res.json();
-    if (d.error) throw new Error(d.error.message);
-    const t = plain(d.choices?.[0]?.message?.content).replace(/[–—]/g, ',');
+    const t = plain(await askVision(file, 'Write alt text for this news image: one plain sentence under 20 words describing only what is visible. No "image of", no guesses about names you cannot read.', { maxTokens: 80, detail: 'auto' })).replace(/[–—]/g, ',');
     return t ? t.slice(0, 300) : headline.slice(0, 300);
   } catch (e) { console.log(`::warning::alt text: ${e.message}`); return headline.slice(0, 300); }
 }
@@ -68,21 +56,10 @@ async function altText(file, headline) {
 // site, where the photo is cropped under our own headline. A vision check flags them; on any error
 // the photo is accepted. Flagged photos are kept only as a last resort before an illustration.
 async function hasBakedText(file) {
-  const key = process.env.OPENAI_API_KEY;
-  if (!key) return false;
   try {
-    const res = await fetch('https://api.openai.com/v1/chat/completions', {
-      method: 'POST',
-      headers: { Authorization: `Bearer ${key}`, 'Content-Type': 'application/json' },
-      body: JSON.stringify({ model: 'gpt-4.1-mini', max_tokens: 5, temperature: 0, messages: [{ role: 'user', content: [
-        { type: 'text', text: 'Is this a graphic with large words placed on it: a title, a headline, a product or model name, a big logo wordmark, a promo banner or a video thumbnail with text? '
-          + 'Small or incidental text does not count (a sign in the background, text on a screen or a device, a small logo, a watermark). Answer only YES or NO.' },
-        { type: 'image_url', image_url: { url: imgData(file), detail: 'low' } },
-      ] }] }),
-    });
-    const d = await res.json();
-    if (d.error) throw new Error(d.error.message);
-    return /^\s*yes/i.test(d.choices?.[0]?.message?.content || '');
+    const answer = await askVision(file, 'Is this a graphic with large words placed on it: a title, a headline, a product or model name, a big logo wordmark, a promo banner or a video thumbnail with text? '
+      + 'Small or incidental text does not count (a sign in the background, text on a screen or a device, a small logo, a watermark). Answer only YES or NO.', { maxTokens: 5 });
+    return /^\s*yes/i.test(answer || '');
   } catch (e) { console.log(`::warning::text check: ${e.message}`); return false; }
 }
 

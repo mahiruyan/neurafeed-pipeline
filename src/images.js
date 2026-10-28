@@ -46,6 +46,42 @@ function brandOf(url) {
 }
 const normName = (t) => String(t).toLowerCase().replace(/[^a-z0-9]/g, '');
 
+// Vision through fal.ai (OpenRouter), used when OpenAI fails (for example, no credits left).
+async function askFalVision(file, prompt, maxTokens = 150) {
+  const key = process.env.FAL_KEY;
+  if (!key) throw new Error('no FAL_KEY');
+  const res = await fetch('https://fal.run/openrouter/router/vision', {
+    method: 'POST',
+    headers: { Authorization: `Key ${key}`, 'Content-Type': 'application/json' },
+    signal: AbortSignal.timeout(90000),
+    body: JSON.stringify({ model: process.env.FAL_VISION_MODEL || 'google/gemini-2.5-flash', prompt, image_urls: [imgData(file)], max_tokens: maxTokens, temperature: 0 }),
+  });
+  const d = await res.json().catch(() => ({}));
+  if (!res.ok || typeof d.output !== 'string') throw new Error(`fal vision: ${d.detail ? JSON.stringify(d.detail).slice(0, 200) : res.status}`);
+  return d.output;
+}
+
+// One vision question about a local image: OpenAI first, fal.ai when OpenAI is missing or fails.
+async function askVision(file, prompt, { maxTokens = 150, model = 'gpt-4.1-mini', detail = 'low' } = {}) {
+  const key = process.env.OPENAI_API_KEY;
+  if (key) {
+    try {
+      const res = await fetch('https://api.openai.com/v1/chat/completions', {
+        method: 'POST',
+        headers: { Authorization: `Bearer ${key}`, 'Content-Type': 'application/json' },
+        signal: AbortSignal.timeout(60000),
+        body: JSON.stringify({ model, max_tokens: maxTokens, temperature: 0, messages: [{ role: 'user', content: [
+          { type: 'text', text: prompt }, { type: 'image_url', image_url: { url: imgData(file), detail } },
+        ] }] }),
+      });
+      const d = await res.json().catch(() => ({}));
+      if (res.ok && d.choices?.[0]?.message?.content != null) return d.choices[0].message.content;
+      console.log(`openai vision: ${d.error?.message || res.status}; trying fal`);
+    } catch (e) { console.log(`openai vision: ${e.message}; trying fal`); }
+  }
+  return askFalVision(file, prompt, maxTokens);
+}
+
 // Lists the brands a photo clearly shows (logos, symbols or written names). Needs OPENAI_API_KEY;
 // without it nothing is checked and every logo is kept. Listing is a steadier task for the model
 // than a yes/no question, and the matching is done in code. Well under a cent per photo, cached.
@@ -53,7 +89,15 @@ const seenCache = new Map();
 async function brandsInPhoto(photo) {
   if (seenCache.has(photo)) return seenCache.get(photo);
   const key = process.env.OPENAI_API_KEY;
-  if (!key) return null;
+  const BRAND_PROMPT = 'List every company or product brand that is clearly visible in this photo as a logo, symbol or written name (on a sign, screen, wall, device or product). Skip marks that are tiny, hidden or too blurry to recognize. Reply with a JSON array of brand names only, for example ["OpenAI", "Google Chrome"]. Reply [] if there are none.';
+  const parseList = (text) => { let list = []; try { list = JSON.parse(text.slice(text.indexOf('['), text.lastIndexOf(']') + 1)); } catch { list = []; } return Array.isArray(list) ? list : []; };
+  const viaFal = async (err) => {
+    if (!process.env.FAL_KEY) { if (err) throw err; return null; }
+    const list = parseList(await askFalVision(photo, BRAND_PROMPT));
+    seenCache.set(photo, list);
+    return list;
+  };
+  if (!key) return viaFal(null);
   const models = [process.env.OPENAI_VISION_MODEL || 'gpt-4.1', 'gpt-4o', 'gpt-4.1-mini'];
   let lastErr;
   for (const model of models) {
@@ -78,7 +122,7 @@ async function brandsInPhoto(photo) {
     lastErr = new Error(d.error?.message || `HTTP ${res.status}`);
     if (!/model/i.test(lastErr.message)) break;
   }
-  throw lastErr;
+  return viaFal(lastErr);
 }
 
 // True when the photo already shows the brand of this logo (its URL names the brand).
@@ -259,4 +303,4 @@ async function fetchImages(job, outDir) {
   return { paths: paths.map((p, i) => p || (TEXT_ONLY.has(job.slides[i].kind) ? null : firstGood)), badges, errors };
 }
 
-module.exports = { REALISM, publicUrl, generateFal, logoAlreadyVisible, brandsInPhoto, brandMatches, brandOf, download, fetchImages, generate, imgData };
+module.exports = { askVision, askFalVision, REALISM, publicUrl, generateFal, logoAlreadyVisible, brandsInPhoto, brandMatches, brandOf, download, fetchImages, generate, imgData };
