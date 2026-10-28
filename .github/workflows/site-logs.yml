@@ -1,0 +1,25 @@
+name: Site logs
+
+# Read only: recent log lines of a Worker from Workers Observability (needs the token to allow it).
+on:
+  workflow_dispatch:
+    inputs:
+      worker: { description: neurafeed-web or neurafeed-admin, required: true, default: neurafeed-admin }
+      needle: { description: text to search for, required: false, default: 'cloudflare_scheduled' }
+      hours: { description: how far back, required: false, default: '24' }
+
+jobs:
+  logs:
+    runs-on: ubuntu-latest
+    env:
+      CF: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+      ACC: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+    steps:
+      - run: |
+          to=$(( $(date +%s) * 1000 )); from=$(( to - ${{ inputs.hours }} * 3600000 ))
+          body=$(jq -n --arg w "${{ inputs.worker }}" --arg n "${{ inputs.needle }}" --argjson from $from --argjson to $to '{
+            queryId: "logs", view: "events", limit: 60, timeframe: {from: $from, to: $to},
+            parameters: {filters: [{key: "$metadata.service", operation: "eq", type: "string", value: $w}], needle: {value: $n}}}')
+          r=$(curl -s -X POST -H "Authorization: Bearer $CF" -H 'Content-Type: application/json' "https://api.cloudflare.com/client/v4/accounts/$ACC/workers/observability/telemetry/query" -d "$body")
+          echo "::notice::success=$(jq -r .success <<<"$r") errors=$(jq -c .errors <<<"$r" | cut -c1-300)"
+          jq -r '.result.events.events[]? | "\(.timestamp // ."$metadata".timestamp) \(."$metadata".message // .source // "" | tostring | .[0:300])"' <<<"$r" | head -50 | while read -r l; do echo "::notice::$l"; done
