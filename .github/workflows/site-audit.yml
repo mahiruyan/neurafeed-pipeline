@@ -2,7 +2,10 @@ name: Site audit
 
 # Read-only: screenshots of the public site (phone and desktop), a page report and Lighthouse scores.
 # Results go to the `site-audit` branch.
-on: workflow_dispatch
+on:
+  workflow_dispatch:
+    inputs:
+      ux_only: { description: 'only the interaction checks', required: false, default: 'false' }
 
 permissions:
   contents: write
