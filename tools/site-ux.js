@@ -78,5 +78,7 @@ const note = (ok, text) => { out.push(`${ok ? 'OK ' : 'ISSUE '}${text}`); };
     await p.close();
   }
   await b.close();
-  for (const line of out) console.log(`::notice::${line}`);
+  const oks = out.filter((l) => l.startsWith('OK ')).map((l) => l.slice(3));
+  console.log(`::notice::${oks.length} checks passed: ${oks.join(' / ').slice(0, 900)}`);
+  out.filter((l) => l.startsWith('ISSUE ')).slice(0, 9).forEach((l) => console.log(`::notice::${l.slice(0, 600)}`));
 })().catch((e) => { console.log(`::error::${e.message}`); process.exit(1); });

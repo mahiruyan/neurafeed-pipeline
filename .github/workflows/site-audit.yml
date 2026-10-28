@@ -23,8 +23,10 @@ jobs:
       - run: npm install --no-audit --no-fund
       - run: node tools/site-ux.js https://neurafeedai.com
         continue-on-error: true
-      - run: node tools/site-shots.js https://neurafeedai.com /tmp/audit
+      - if: inputs.ux_only != 'true'
+        run: node tools/site-shots.js https://neurafeedai.com /tmp/audit
       - name: Lighthouse
+        if: inputs.ux_only != 'true'
         run: |
           npm i -g lighthouse@12 >/dev/null 2>&1
           for u in / /news/anthropic-reportedly-tests-ai-model-that-infers-users-unstated-goals-2b9fb1; do
@@ -38,6 +40,7 @@ jobs:
           done
           cat /tmp/audit/lighthouse.jsonl
       - name: Push to site-audit branch
+        if: inputs.ux_only != 'true'
         run: |
           git config user.name "neurafeed-bot"; git config user.email "bot@neurafeed.ai"
           git checkout --orphan site-audit && git rm -rqf --cached . && rm -rf audit && cp -r /tmp/audit audit
