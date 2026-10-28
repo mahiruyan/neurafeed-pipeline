@@ -39,7 +39,7 @@ const VARIANTS = {
     for (const [v, { css, js }] of Object.entries(VARIANTS)) {
       const page = await b.newPage(); await page.setViewport(vp);
       await page.goto(URL_, { waitUntil: 'networkidle2', timeout: 60000 });
-      if (js) await page.evaluate(js);
+      if (js) await page.evaluate(js).catch(() => {});
       if (css) await page.addStyleTag({ content: css });
       await page.evaluate(() => document.querySelectorAll('img').forEach((i) => { i.loading = 'eager'; }));
       await new Promise((r) => setTimeout(r, 1500));
