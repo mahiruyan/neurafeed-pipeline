@@ -177,7 +177,9 @@ async function prepareHero(job, outDir) {
   }
   if (!meta) throw new Error('no hero: no photo at least 1200 px wide and no illustration');
   // The desk writes alt text when it writes the site article (it looked at the photo).
-  meta.alt = (meta.ai ? '' : plain(job.site_article?.hero_alt)) || await altText(dest, headline);
+  // hero_alt describes the job's cover photo; any other photo gets its own alt text.
+  const coverUrl = imagesOf(job)[0]?.url;
+  meta.alt = (!meta.ai && meta.source_url === coverUrl ? plain(job.site_article?.hero_alt) : '') || await altText(dest, headline);
   fs.writeFileSync(path.join(outDir, 'hero.json'), JSON.stringify(meta, null, 2) + '\n');
   return meta;
 }
