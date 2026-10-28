@@ -1,0 +1,42 @@
+name: Site audit
+
+# Read-only: screenshots of the public site (phone and desktop), a page report and Lighthouse scores.
+# Results go to the `site-audit` branch.
+on: workflow_dispatch
+
+permissions:
+  contents: write
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - uses: actions/cache@v4
+        with:
+          path: ~/.cache/puppeteer
+          key: puppeteer-${{ runner.os }}-v1
+      - run: npm install --no-audit --no-fund
+      - run: node tools/site-shots.js https://neurafeedai.com /tmp/audit
+      - name: Lighthouse
+        run: |
+          npm i -g lighthouse@12 >/dev/null 2>&1
+          for u in / /news/anthropic-reportedly-tests-ai-model-that-infers-users-unstated-goals-2b9fb1; do
+            for f in mobile desktop; do
+              n=$(echo "$u" | tr -c 'a-z0-9' '_' | cut -c1-30)
+              extra=""; [ $f = desktop ] && extra="--preset=desktop"
+              lighthouse "https://neurafeedai.com$u" $extra --quiet --chrome-flags="--headless=new --no-sandbox" --output=json --output-path=/tmp/audit/lh-$f$n.json || true
+              jq -c --arg u "$u" --arg f "$f" '{page:$u, form:$f, perf:(.categories.performance.score*100), a11y:(.categories.accessibility.score*100), bp:(.categories["best-practices"].score*100), seo:(.categories.seo.score*100), lcp:.audits["largest-contentful-paint"].displayValue, cls:.audits["cumulative-layout-shift"].displayValue, fails:[.categories.accessibility.auditRefs[]? as $r | .audits[$r.id] | select(.score!=null and .score<1) | .title][0:8], seofails:[.categories.seo.auditRefs[]? as $r | .audits[$r.id] | select(.score!=null and .score<1) | .title]}' /tmp/audit/lh-$f$n.json >> /tmp/audit/lighthouse.jsonl || true
+              rm -f /tmp/audit/lh-$f$n.json
+            done
+          done
+          cat /tmp/audit/lighthouse.jsonl
+      - name: Push to site-audit branch
+        run: |
+          git config user.name "neurafeed-bot"; git config user.email "bot@neurafeed.ai"
+          git checkout --orphan site-audit && git rm -rqf --cached . && rm -rf audit && cp -r /tmp/audit audit
+          git add -f audit && git commit -qm "site audit" && git push -f origin site-audit
