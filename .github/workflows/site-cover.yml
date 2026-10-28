@@ -1,0 +1,26 @@
+name: Site cover
+
+# Puts a story's prepared website hero (out/<id>/hero.jpg + hero.json, already in neurafeed-media)
+# on an article of the site, published or not. Used after a hero is redone (for example, extended).
+on:
+  workflow_dispatch:
+    inputs:
+      id: { description: 'story id (jobs/<id>.json)', required: true }
+      slug: { description: 'article slug on the site', required: true }
+
+jobs:
+  cover:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - env:
+          T: ${{ secrets.SITE_REVIEW_TOKEN }}
+          ID: ${{ inputs.id }}
+          SLUG: ${{ inputs.slug }}
+        run: |
+          meta="out/$ID/hero.json"; [ -f "$meta" ] || { echo "::error::no $meta"; exit 1; }
+          body=$(jq -c --arg slug "$SLUG" --arg url "https://raw.githubusercontent.com/mahiruyan/neurafeed-media/main/$ID/hero.jpg" \
+            '{action:"cover", slug:$slug, url:$url, credit:.credit, alt:.alt, license:.license} + (if .focal then {focal_x:.focal.x, focal_y:.focal.y} else {} end)' "$meta")
+          r=$(curl -s -m 120 -w '\n%{http_code}' -X POST -H "Authorization: Bearer $T" -H 'Content-Type: application/json' -d "$body" https://admin.neurafeedai.com/api/jobs/telegram-review)
+          code=$(tail -1 <<<"$r"); echo "::notice::HTTP $code $(sed '$d' <<<"$r" | cut -c1-300)"
+          [ "$code" = 200 ]
