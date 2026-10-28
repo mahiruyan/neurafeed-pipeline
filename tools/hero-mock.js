@@ -41,6 +41,7 @@ const VARIANTS = {
       const page = await b.newPage(); await page.setViewport(vp);
       try {
       await page.goto(URL_, { waitUntil: 'networkidle2', timeout: 60000 });
+      if (process.env.MOCK_IMG) await page.evaluate((src) => document.querySelectorAll('.article-cover__media img, .lead-visual img, .article-hero img').forEach((i) => { i.removeAttribute('srcset'); i.removeAttribute('sizes'); i.src = src; }), process.env.MOCK_IMG).catch(() => {});
       if (js) await page.evaluate(js).catch(() => {});
       if (css) await page.addStyleTag({ content: css });
       await page.evaluate(() => document.querySelectorAll('img').forEach((i) => { i.loading = 'eager'; }));
