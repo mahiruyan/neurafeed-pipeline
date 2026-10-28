@@ -1,61 +1,5 @@
 [
   {
-    "run_at": "2026-10-21T15:55:08.788Z",
-    "summary": "Noon run (11:55 New York): turned Mahir's new Snap SPECS / Robert Downey Jr. link into a Reel (review); today already has 8 news jobs, so no new news or utility post.",
-    "considered": [
-      {
-        "story": "Snap names Robert Downey Jr. honorary Chief Customer Experience Officer for SPECS AR glasses (Mahir's link)",
-        "source": "https://newsroom.snap.com/robert-downey-jr-joins-specs-as-cceo",
-        "decision": "queued",
-        "job_id": "2026-10-21-snap-specs-iron-man-reel",
-        "priority": 1
-      },
-      {
-        "story": "Anthropic drafts a federal bill to let the government halt dangerous model releases",
-        "decision": "skipped",
-        "reason": "Today already has 8 news jobs, the daily cap; good candidate for tomorrow if it is still developing."
-      },
-      {
-        "story": "ChatGPT Locked Chats with PIN or biometrics",
-        "source": "https://techcrunch.com/2026/10/20/chatgpt-now-lets-you-lock-your-chats/",
-        "decision": "skipped",
-        "reason": "Planned utility how-to, but today is at the 8-job cap; move to Oct 22."
-      },
-      {
-        "story": "Hugging Face CEO criticizes Netflix documentary AI Gone Rogue over OpenAI agent-escape story",
-        "decision": "skipped",
-        "reason": "Daily cap reached; also needs a second source."
-      },
-      {
-        "story": "Nvidia OpenShell reference architecture for safe AI agents",
-        "source": "https://www.globenewswire.com/news-release/2026/10/21/3385311/0/en/nvidia-launches-openshell-reference-architecture-for-safe-ai-agents.html",
-        "decision": "skipped",
-        "reason": "Enterprise infrastructure news with little consumer appeal, and the day is full."
-      },
-      {
-        "story": "Perplexity Computer runs locally on Apple silicon Macs",
-        "decision": "skipped",
-        "reason": "Daily cap reached."
-      },
-      {
-        "story": "OpenAI models coming to Google Cloud",
-        "decision": "covered",
-        "reason": "Already queued as 2026-10-21-openai-models-google-cloud."
-      },
-      {
-        "story": "Claude-designed scorpion toxin binders",
-        "decision": "covered",
-        "reason": "Already queued as 2026-10-21-claude-scorpion-venom-binders."
-      },
-      {
-        "story": "OpenAI acquires Orchestra Bio",
-        "decision": "covered",
-        "reason": "Already queued as 2026-10-21-openai-buys-orchestra-bio."
-      }
-    ],
-    "requests": []
-  },
-  {
     "run_at": "2026-10-21T18:07:34.901Z",
     "summary": "Afternoon run (13:55 New York): no open links or requests; queued the PHP2Shell story (AI-found critical PHP flaws) as priority 1 with review. It fills the last posting slot of Oct 21 (3 posted + 4 approved + this one = 8), so no utility post today.",
     "considered": [
@@ -5539,6 +5483,68 @@
         "story": "Daily utility post for Oct 28",
         "decision": "skipped",
         "reason": "Oct 28 reached the 8-job cap with a priority 1 story, which comes first."
+      }
+    ],
+    "requests": []
+  },
+  {
+    "run_at": "2026-10-28T16:00:48.276Z",
+    "summary": "No new jobs: Oct 28 already has 8 jobs (the daily cap); no open links or requests. Logged the new stories seen.",
+    "considered": [
+      {
+        "story": "Apple adds an AI assistant to Pages, Keynote and Numbers, plus MCP support for agents in macOS 27",
+        "source": "https://www.theverge.com/tech/1019373/apple-pages-keynote-numbers-ai-chatbot-update",
+        "decision": "skipped",
+        "reason": "Oct 28 is at the 8-job cap, and I could not open the Verge report or find a second fresh source to confirm the details in this run."
+      },
+      {
+        "story": "OpenAI and Oracle bring Oracle apps into ChatGPT",
+        "source": "https://openai.com/index/oracle-apps-in-chatgpt/",
+        "decision": "skipped",
+        "reason": "Enterprise integration with little consumer appeal, and the day is at the cap."
+      },
+      {
+        "story": "Netherlands plans to cut 25,000 government jobs with AI savings",
+        "source": "https://www.semafor.com/article/10/27/2026/netherlands-to-slash-state-jobs-as-part-of-ai-related-savings",
+        "decision": "skipped",
+        "reason": "Layoff story outside the US, and the day is at the cap."
+      },
+      {
+        "story": "Anthropic warns power delays could slow its $400 billion buildout",
+        "source": "https://www.semafor.com/article/10/27/2026/anthropic-says-energy-difficulties-could-slow-down-the-ai-buildout",
+        "decision": "skipped",
+        "reason": "Comes from S-1 risk language with no new event, and the day is at the cap."
+      },
+      {
+        "story": "Anthropic and Theorem use Claude for machine-checkable security proofs",
+        "source": "https://www.theneuron.ai/news/anthropic-claude-software-security-verification/",
+        "decision": "skipped",
+        "reason": "Close to the Anthropic security and math proof posts already queued today."
+      },
+      {
+        "story": "Trump says the government will drop the term AI for Super Intelligence",
+        "decision": "skipped",
+        "reason": "Political, scope unclear, and the day is at the cap."
+      },
+      {
+        "story": "Anthropic expands GSA deal to state and local governments",
+        "decision": "skipped",
+        "reason": "Already skipped in an earlier run as a government procurement story."
+      },
+      {
+        "story": "OpenAI plans to buy Google TPU chips",
+        "decision": "covered",
+        "reason": "Already posted as 2026-10-28-openai-buying-google-tpu-chips."
+      },
+      {
+        "story": "Axiom AI agents computer-check the Classification of Finite Simple Groups",
+        "decision": "covered",
+        "reason": "Already queued as 2026-10-28-ai-agents-checked-biggest-math-proof."
+      },
+      {
+        "story": "Daily utility post for Oct 28",
+        "decision": "skipped",
+        "reason": "Oct 28 is at the 8-job cap."
       }
     ],
     "requests": []
