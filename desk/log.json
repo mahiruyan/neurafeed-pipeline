@@ -1,76 +1,5 @@
 [
   {
-    "run_at": "2026-10-21T06:02:49.080Z",
-    "summary": "Early run (02:00 New York): no open links or requests; Oct 21 already has 8 approved posts lined up, so queued only the Claude scorpion toxin binder story as priority 2 (review), which will post if a slot opens or carry into Oct 22.",
-    "considered": [
-      {
-        "story": "Claude designed 318,484 proteins in 64 hours; 17 of 211 bound scorpion neurotoxins in lab tests",
-        "source": "https://www.anthropic.com/research/claude-scorpion-toxin-binder-design",
-        "decision": "queued",
-        "job_id": "2026-10-21-claude-scorpion-venom-binders",
-        "priority": 2
-      },
-      {
-        "story": "Anthropic draft AI safety bill that could halt a model release over catastrophic risk",
-        "decision": "covered",
-        "reason": "Already covered as 2026-10-17-anthropic-pitches-own-ai-safety-bill."
-      },
-      {
-        "story": "OpenAI agents disabled their own monitoring systems",
-        "decision": "covered",
-        "reason": "Already queued as 2026-10-21-openai-agents-switched-off-alarms."
-      },
-      {
-        "story": "SpaceX posts first profit since going public",
-        "decision": "covered",
-        "reason": "Already queued as 2026-10-21-spacex-ai-out-earns-starlink."
-      },
-      {
-        "story": "OpenAI buys Orchestra Bio",
-        "decision": "covered",
-        "reason": "Already queued as 2026-10-21-openai-buys-orchestra-bio."
-      },
-      {
-        "story": "Gemini in Android Auto connects to Gmail, Photos and Maps",
-        "decision": "covered",
-        "reason": "Already queued as 2026-10-21-gemini-android-auto-reads-your-apps."
-      },
-      {
-        "story": "US bans DeepSeek across federal agencies",
-        "decision": "skipped",
-        "reason": "Day is full; government policy story that still needs primary sources, candidate for a later run."
-      },
-      {
-        "story": "Students walk out nationwide calling for a pause on AI development",
-        "decision": "skipped",
-        "reason": "Day is full; sensitive political protest story with mostly local coverage."
-      },
-      {
-        "story": "Steam users ask for a No AI filter as AI games flood Next Fest",
-        "source": "https://www.ign.com/articles/steam-fans-are-begging-for-a-no-ai-filter-as-steam-next-fest-is-filled-with-slop",
-        "decision": "skipped",
-        "reason": "Day is full; gaming niche story, possible filler later."
-      },
-      {
-        "story": "Kroger to lay off 3,000 corporate employees as it leans into AI",
-        "decision": "skipped",
-        "reason": "Sensitive layoffs story with little AI detail; day is full."
-      },
-      {
-        "story": "Otter raises $320 million for its AI notetaker",
-        "decision": "skipped",
-        "reason": "Funding round with modest consumer interest."
-      },
-      {
-        "story": "Judge dismisses lawsuit by Sam Altman's sister",
-        "source": "https://www.theverge.com/ai-artificial-intelligence/1014976/sam-altman-ann-altman-lawsuit-dismissed",
-        "decision": "skipped",
-        "reason": "Sensitive personal legal matter, not AI news we want to amplify."
-      }
-    ],
-    "requests": []
-  },
-  {
     "run_at": "2026-10-21T07:54:43.356Z",
     "summary": "Pre-dawn run (03:55 New York): no open links or requests; 9 approved posts are already waiting for Oct 21's 8 slots and no new priority 1 story broke, so nothing was queued.",
     "considered": [
@@ -5551,6 +5480,80 @@
         "story": "Daily utility post for Oct 28",
         "decision": "skipped",
         "reason": "It is not yet 11:00 New York time on Oct 28; a later run will queue it."
+      }
+    ],
+    "requests": []
+  },
+  {
+    "run_at": "2026-10-28T06:12:52.710Z",
+    "summary": "Overnight run (02:10 New York time, Oct 28): no open links or requests; no new priority 1 story since the 00:40 run, and the one fresh candidate could not be built with usable photos, so nothing was queued.",
+    "considered": [
+      {
+        "story": "Physical Intelligence in talks to raise at least $1 billion at about a $20 billion valuation (Bloomberg)",
+        "source": "https://www.investing.com/news/stock-market-news/physical-intelligence-in-talks-to-raise-1b-at-20b-valuation--bloomberg-4976690",
+        "decision": "skipped",
+        "reason": "Only rewrites of Bloomberg's paywalled report were readable, no photo could be checked from this run, and a timely job would expire before the 07:00 window; a daytime run can pick it up if Physical Intelligence or a second outlet confirms."
+      },
+      {
+        "story": "Anthropic engineer Felix Rieseberg says he dropped coding interviews because Claude beats candidates",
+        "source": "https://felixrieseberg.com/hunger-beats-tenure-advice-for-junior-engineers/",
+        "decision": "skipped",
+        "reason": "The blog post could not be opened from this run and no news outlet has reported it yet."
+      },
+      {
+        "story": "SK Hynix third quarter results on HBM demand",
+        "source": "https://www.cnbc.com/2026/10/28/sk-hynix-third-quarter-profit.html",
+        "decision": "skipped",
+        "reason": "Could not open the CNBC report, and a memory maker's earnings have little US consumer appeal."
+      },
+      {
+        "story": "Parents sue OpenAI saying GPT-4o coached their daughter off seizure medication",
+        "source": "https://news.bloomberglaw.com/litigation/openai-sued-alleging-chatgpt-gave-fatal-epilepsy-medical-advice",
+        "decision": "skipped",
+        "reason": "Same decision as the last two runs: the complaint and the main reports could not be read from here, and a death and health lawsuit needs solid sourcing."
+      },
+      {
+        "story": "Anthropic expands GSA deal with 40 percent Claude discount for government",
+        "source": "https://www.anthropic.com/news/expanding-partnership-gsa",
+        "decision": "skipped",
+        "reason": "Considered in the last two runs; government procurement with little consumer appeal and Anthropic already has a post queued for Oct 28."
+      },
+      {
+        "story": "Trump says he will ban the term artificial intelligence",
+        "decision": "skipped",
+        "reason": "Considered in the last two runs; a repeat political statement with no new action."
+      },
+      {
+        "story": "Discord to make public servers searchable by Google",
+        "source": "https://techcrunch.com/2026/10/27/discord-is-making-its-public-communities-more-searchable-and-people-have-concerns/",
+        "decision": "skipped",
+        "reason": "A privacy and search story, not AI news."
+      },
+      {
+        "story": "Hex raises $100 million at a $1.2 billion valuation",
+        "source": "https://hex.tech/blog/hex-new-era/",
+        "decision": "skipped",
+        "reason": "Small enterprise funding round, little US interest."
+      },
+      {
+        "story": "OpenAI plans to buy Google TPU chips",
+        "decision": "covered",
+        "reason": "Already queued as 2026-10-28-openai-buying-google-tpu-chips."
+      },
+      {
+        "story": "Claude drug development results and Mithril purchase",
+        "decision": "covered",
+        "reason": "Already queued as 2026-10-28-claude-35000-antibodies-one-month."
+      },
+      {
+        "story": "Axiom AI agents formalize the finite simple groups proof",
+        "decision": "covered",
+        "reason": "Already queued as 2026-10-28-ai-agents-checked-biggest-math-proof."
+      },
+      {
+        "story": "Daily utility post for Oct 28",
+        "decision": "skipped",
+        "reason": "It is not yet 11:00 New York time; a later run will queue it."
       }
     ],
     "requests": []
