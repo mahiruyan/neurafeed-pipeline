@@ -1,0 +1,112 @@
+{
+  "id": "2026-10-28-claude-built-attacks-chrome-safari-windows-linux",
+  "created_at": "2026-10-28T14:20:00Z",
+  "story_time": "2026-10-27T16:00:00Z",
+  "timely": false,
+  "sensitive": false,
+  "priority": 1,
+  "review": true,
+  "format": "carousel",
+  "site_category": "companies",
+  "sources": [
+    { "name": "Anthropic", "url": "https://www.anthropic.com/research/discovering-vulnerabilities-with-claude" },
+    { "name": "Cyber Security News", "url": "https://cybersecuritynews.com/claude-ai-builds-exploit/" },
+    { "name": "transclew", "url": "https://transclew.com/tech/anthropic-claude-exploit-chains-vendor-fixes/" }
+  ],
+  "threads_text": "Anthropic says an unreleased Claude model built five working attacks on Chrome, Safari, Android, Windows and Linux, and every flaw was reported to the vendor first. One Chrome chain needed just a single click on a web page. Should AI labs be allowed to build models this good at hacking?",
+  "caption": "Anthropic's Frontier Red Team says an unreleased Claude research model built five working attack chains against Chrome, Safari, Android, Windows and Linux.\nThe flaws were reported to Google, Apple, Microsoft and Linux maintainers first, and Anthropic says they are fixed.\nKeep Chrome and your devices updated.\n\nShould AI labs keep building models this good at hacking?\n\nFollow @neurafeed.ai for daily AI news.\n\nSource: Anthropic, Cyber Security News · Images: Anthropic, Cyber Security News, The Hacker News, transclew",
+  "slides": [
+    {
+      "kind": "cover",
+      "headline": "Anthropic's secret AI built working attacks on *Chrome, Safari, Windows and Linux*",
+      "image": {
+        "url": "https://www.ilsoftware.it/app/uploads/2026/10/anthropic-claude-exploit-windows-linux-browser.jpg",
+        "credit": "IlSoftware.it",
+        "fallback_urls": ["https://cellcog.ai/blog/media/claude-finds-chrome-safari-exploits/og.jpg?v=4695fb3b90"],
+        "generate": "A dim, cluttered security lab late at night under harsh fluorescent light. A row of five old laptops and a smartphone sit on a long scratched metal table, their screens cracked open like broken glass, one laptop with thin smoke curling from its keyboard. A heavy steel chain is wrapped around all the devices, linking them together, its last link padlocked. Behind them on a concrete wall hangs a large printed banner with the logo from the first image, big and exact, in its orange color. Tangled cables, empty coffee cups, a screwdriver and loose screws on the table. Generous headroom above the banner. The devices and the logo fill the upper two thirds of the frame, the bottom third is the dark table surface. Blank surfaces, no readable text or labels on any object or screen except the logo. Photorealistic, high contrast, vertical composition, one clear subject. It must look like an unedited real photo from a news agency, not a painting, not digital art, no glow effects.",
+        "refs": ["assets/logos/claude.png"]
+      },
+      "pos": "center 35%"
+    },
+    {
+      "kind": "card",
+      "heading": "One click to *break Chrome*",
+      "paras": [
+        "Anthropic's Frontier Red Team says an unreleased Claude research model chained four Chrome bugs into one attack.",
+        "Opening a single web page launched an app on a Mac. Anthropic says 62 related flaws are patched as of Chrome 156."
+      ],
+      "image": {
+        "url": "https://cybersecuritynews.com/wp-content/uploads/2026/10/Claude-AI-Builds-Exploit.webp",
+        "credit": "Cyber Security News",
+        "fallback_urls": []
+      }
+    },
+    {
+      "kind": "card",
+      "heading": "Safari and a *locked Pixel*",
+      "paras": [
+        "In Safari, a hostile web page could read history, cookies and logged-in sessions.",
+        "On a locked Google Pixel 9, a USB cable was enough to pull out photos and personal data. Apple and Google fixed both."
+      ],
+      "image": {
+        "url": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgSMl2C6S6mb-smamI35fLYotcPaercI_2PIgtuF78Q7PtQcFvFUKXkModTW4nRCh6FC7Xht2BltSGImRS2QNR4Lnc22S7UBU9V_0UDcZi2iDNXSlCJDqD4ApmJPqA_boFokj_9dTWKdzhjIgNt_Y47zumx_c5vrcJn5Vd-Xaowafv4HGCzCcqgDV4GGpo/s1700-nu-rw-lo-l85-e365/hacker-chain.jpg",
+        "credit": "The Hacker News",
+        "fallback_urls": []
+      }
+    },
+    {
+      "kind": "card",
+      "heading": "Root on Linux, *no login needed*",
+      "paras": [
+        "A few network packets could crash Windows servers running HTTP/3. Microsoft has fixed it.",
+        "On Linux servers using multipath TCP, the model got a root shell with no password: 48 minutes to leak a key address, five more for the shell."
+      ],
+      "image": {
+        "url": "https://www-cdn.anthropic.com/images/4zrzovbb/website/6d4a0d28992ade92d6fa63646fd9c9d318245c6c-2400x1260.jpg",
+        "credit": "Anthropic",
+        "fallback_urls": []
+      }
+    },
+    {
+      "kind": "card",
+      "heading": "Not named, *not released*",
+      "paras": [
+        "Anthropic has not named the model. Each flaw went to the vendor first, with 90 days to fix it.",
+        "It is giving vetted security teams more access to its strongest models and urges developers to scan code before it ships."
+      ],
+      "image": {
+        "url": "https://transclew.com/assets/content/covers/anthropic-claude-exploit-chains-vendor-fixes.webp",
+        "credit": "transclew",
+        "fallback_urls": []
+      },
+      "note": "Update Chrome and install pending updates."
+    },
+    {
+      "kind": "cta",
+      "hook": "AI is now finding the bugs hackers dream of. Follow so you know when to update."
+    }
+  ],
+  "site_article": {
+    "headline": "Anthropic says an unreleased Claude model built working attacks on Chrome, Safari, Windows and Linux",
+    "dek": "The company's Frontier Red Team says every flaw was reported to the vendor before it published details, and that the bugs are now fixed.",
+    "summary": "Anthropic's Frontier Red Team said on October 27, 2026, that an unreleased internal Claude research model built five working exploit chains against Chrome, Safari, Android, Windows and Linux. Anthropic says its reports led to 62 patched Chrome vulnerabilities as of Chrome 156.",
+    "seo_title": "Unreleased Claude model built exploits for Chrome, Safari, Linux",
+    "seo_description": "Anthropic says an internal Claude model chained bugs into working attacks on Chrome, Safari, Android, Windows and Linux. The flaws were reported and fixed.",
+    "answer_summary": "According to Anthropic, an unreleased Claude research model found and chained real vulnerabilities into five working attacks on major browsers and operating systems. The company says each flaw was reported to the vendor under coordinated disclosure and has been fixed, so keeping software updated is the main step for users.",
+    "tags": ["Anthropic", "Claude", "Cybersecurity", "Chrome", "Safari", "Linux"],
+    "hero_alt": "Laptops and a phone with cracked screens chained together on a cluttered lab table, an orange logo on the wall behind.",
+    "paragraphs": [
+      { "kind": "fact", "text": "Anthropic's Frontier Red Team published a report on October 27, 2026, saying that an unreleased internal Claude research model found critical vulnerabilities in widely used browsers and operating systems and combined them into five working attack chains. The targets were Google Chrome, Apple's Safari, Android on a Google Pixel 9, Windows and Linux. Anthropic said each exploit was produced after initial prompting, and it has not named the model.", "sources": [0, 1, 2] },
+      { "kind": "fact", "text": "The company said the vulnerabilities were reported under its coordinated disclosure policy, which gives vendors 90 days to ship a patch and then waits 45 more days before discussing details beyond the public advisory. Anthropic says all five chains have been addressed by the affected vendors.", "sources": [0, 2] },
+      { "kind": "heading", "text": "The five attack chains" },
+      { "kind": "fact", "text": "The Chrome chain was a one-click attack. According to Anthropic, the model used a memory corruption bug in the V8 JavaScript engine, a second bug that escaped V8's memory sandbox, a race condition in CacheStorage and a use-after-free in FedCM to run code outside Chrome's sandbox. The proof of concept opened the Calculator app on a Mac seconds after a page loaded. Anthropic says its work led to 62 CVEs patched as of Chrome 156, all rated critical or high. Transclew, which compared the claim with Google's release notes, counted fewer fixes credited to Anthropic in the public records.", "sources": [0, 1, 2] },
+      { "kind": "fact", "text": "The Safari chain did not run attacker code. Instead, it bypassed the browser's same-origin policy, so a hostile page could read history, cookies and session data from other sites. Anthropic said Apple acknowledged the report the same day and shipped a fix.", "sources": [0, 1] },
+      { "kind": "fact", "text": "The Android chain required physical access. On a locked Pixel 9 connected by USB, three chained flaws skipped the rule blocking data transfer while locked, the pairing authorization and the six-digit verification code, which allowed photos and personal data to be copied off the phone. Anthropic said Google addressed the issue.", "sources": [0, 1] },
+      { "kind": "fact", "text": "On Windows, the model found an out-of-bounds read in the kernel's implementation of QUIC, the protocol behind HTTP/3, through binary analysis with tools such as Ghidra. A few packets could crash and restart a server, and Anthropic estimates several million such servers are reachable on the internet. Microsoft fixed it in April, according to transclew. The Linux chain targeted servers with a multipath TCP listener and gave a remote root shell with no login. The first stage leaked a kernel pointer in 48 minutes, and the second took about five more minutes. Anthropic said a failed attempt does not crash the system, so an attacker could keep retrying.", "sources": [0, 1, 2] },
+      { "kind": "heading", "text": "What Anthropic is changing" },
+      { "kind": "fact", "text": "Anthropic said it is expanding its Cyber Verification Program, which gives qualifying security professionals access to stronger cyber capabilities with fewer blocking classifiers, and released a security guidance plugin for Claude Code on GitHub. The company also urged developers to scan code when pull requests are opened, arguing that fixing the existing backlog of bugs solves only half of the problem.", "sources": [0, 1] },
+      { "kind": "analysis", "text": "The report is a demonstration of capability as much as a disclosure. Work that once required small teams of specialists was done by a single model across browsers, phones and server kernels, which helps defenders who get access first but also shows what a less careful developer could hand to attackers. No vendor record cited in the coverage says these flaws were used in real attacks." },
+      { "kind": "why_it_matters", "text": "Watch whether Anthropic says if or when this model will be released, and whether other AI labs publish similar red team results under the same disclosure rules." }
+    ]
+  }
+}

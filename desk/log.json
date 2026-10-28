@@ -1,145 +1,5 @@
 [
   {
-    "run_at": "2026-10-21T12:15:03.271Z",
-    "summary": "Morning run: no open links or requests; queued Meta Muse 10M downloads (priority 1), leaving the last Oct 21 slot for the daily utility post.",
-    "considered": [
-      {
-        "story": "Meta's Muse passes 10 million US downloads in 40 days (Sensor Tower)",
-        "source": "https://ppc.land/metas-muse-gains-10-million-us-downloads-in-40-days-sensor-tower-finds/",
-        "decision": "queued",
-        "job_id": "2026-10-21-meta-muse-10-million-downloads",
-        "priority": 1
-      },
-      {
-        "story": "Demis Hassabis now expects AGI within two to three years (WSJ interview)",
-        "source": "https://www.techmeme.com/261021/p14",
-        "decision": "skipped",
-        "reason": "Could not read the WSJ interview and found no second outlet with his actual words yet; recheck next run."
-      },
-      {
-        "story": "ChatGPT lets users lock chats with a PIN or biometrics",
-        "source": "https://techcrunch.com/2026/10/20/chatgpt-now-lets-you-lock-your-chats/",
-        "decision": "skipped",
-        "reason": "Day is nearly full; good fit for today's or tomorrow's how-to utility post."
-      },
-      {
-        "story": "Nvidia DSX POD cuts AI factory deployment to about 14 days",
-        "source": "https://www.datacenterdynamics.com/en/news/nvidia-launches-dsx-pod-claims-the-vera-rubin-reference-architecture-will-make-ai-data-centers-more-water-and-energy-efficient/",
-        "decision": "skipped",
-        "reason": "Data center infrastructure story with little consumer appeal and the day is nearly full."
-      },
-      {
-        "story": "OpenAI acquires Orchestra Bio",
-        "decision": "covered",
-        "reason": "Already queued as 2026-10-21-openai-buys-orchestra-bio."
-      },
-      {
-        "story": "OpenAI agents weakened misbehavior monitors",
-        "decision": "covered",
-        "reason": "Already queued as 2026-10-21-openai-agents-switched-off-alarms."
-      },
-      {
-        "story": "Claude designs scorpion toxin binders",
-        "decision": "covered",
-        "reason": "Already queued as 2026-10-21-claude-scorpion-venom-binders."
-      },
-      {
-        "story": "SpaceX AI business out-earns Starlink",
-        "decision": "covered",
-        "reason": "Already queued as 2026-10-21-spacex-ai-out-earns-starlink."
-      },
-      {
-        "story": "Gemini Personal Intelligence on Android Auto",
-        "decision": "covered",
-        "reason": "Already posted as 2026-10-21-gemini-android-auto-reads-your-apps."
-      },
-      {
-        "story": "Anthropic draft S-1 shows $80.7B half-year loss",
-        "decision": "covered",
-        "reason": "Already posted as 2026-10-21-anthropic-s1-80-billion-loss."
-      },
-      {
-        "story": "Hugging Face CEO says Netflix's OpenAI hack documentary is inaccurate",
-        "source": "https://techcrunch.com/2026/10/20/hugging-face-ceo-warns-that-netflixs-openai-hack-documentary-isnt-accurate/",
-        "decision": "skipped",
-        "reason": "Single source and the day is nearly full."
-      },
-      {
-        "story": "Anthropic Claude Fable 5.5 release rumors",
-        "source": "https://www.testingcatalog.com/anthropic-several-models-coming-fable-5-5-reaches-partners/",
-        "decision": "skipped",
-        "reason": "Leaks only, no official confirmation."
-      }
-    ],
-    "requests": []
-  },
-  {
-    "run_at": "2026-10-21T14:03:11.844Z",
-    "summary": "Mid-morning run (09:55 New York): no open links or requests; queued OpenAI models coming to Google Cloud as priority 1 (review). Utility post waits for the 11:00 run.",
-    "considered": [
-      {
-        "story": "OpenAI frontier models and Codex are coming to Google Cloud's Model Garden",
-        "source": "https://openai.com/index/openai-models-google-cloud/",
-        "decision": "queued",
-        "job_id": "2026-10-21-openai-models-google-cloud",
-        "priority": 1
-      },
-      {
-        "story": "Demis Hassabis now expects AGI within two to three years (WSJ interview)",
-        "decision": "skipped",
-        "reason": "Still could not read the WSJ interview or find a second outlet quoting his new timeline."
-      },
-      {
-        "story": "Nvidia launches OpenShell reference architecture for safe AI agents",
-        "source": "https://www.globenewswire.com/news-release/2026/10/21/3385311/0/en/nvidia-launches-openshell-reference-architecture-for-safe-ai-agents.html",
-        "decision": "skipped",
-        "reason": "Enterprise infrastructure announcement with little consumer appeal, and the day is full."
-      },
-      {
-        "story": "ChatGPT lets users lock individual chats with a PIN or biometrics",
-        "source": "https://techcrunch.com/2026/10/20/chatgpt-now-lets-you-lock-your-chats/",
-        "decision": "skipped",
-        "reason": "Kept as the likely how-to utility post for the 11:00 run or Oct 22."
-      },
-      {
-        "story": "Anthropic may commit another $45 billion to Nscale",
-        "decision": "skipped",
-        "reason": "Anthropic already has several money stories this week; day is full."
-      },
-      {
-        "story": "eBay to cut about 9% of its workforce",
-        "decision": "skipped",
-        "reason": "Sensitive layoffs story with little AI detail."
-      },
-      {
-        "story": "Anthropic draft S-1 shows $80.7B half-year loss",
-        "decision": "covered",
-        "reason": "Already posted as 2026-10-21-anthropic-s1-80-billion-loss."
-      },
-      {
-        "story": "OpenAI agents weakened misbehavior monitors",
-        "decision": "covered",
-        "reason": "Already queued as 2026-10-21-openai-agents-switched-off-alarms."
-      },
-      {
-        "story": "OpenAI acquires Orchestra Bio",
-        "decision": "covered",
-        "reason": "Already queued as 2026-10-21-openai-buys-orchestra-bio."
-      },
-      {
-        "story": "Claude designs scorpion toxin binders",
-        "decision": "covered",
-        "reason": "Already queued as 2026-10-21-claude-scorpion-venom-binders."
-      },
-      {
-        "story": "SpaceX AI unit out-earns Starlink",
-        "decision": "covered",
-        "reason": "Already posted as 2026-10-21-spacex-ai-out-earns-starlink."
-      }
-    ],
-    "requests": []
-  },
-  {
     "run_at": "2026-10-21T15:55:08.788Z",
     "summary": "Noon run (11:55 New York): turned Mahir's new Snap SPECS / Robert Downey Jr. link into a Reel (review); today already has 8 news jobs, so no new news or utility post.",
     "considered": [
@@ -5612,6 +5472,73 @@
         "story": "Daily utility post for Oct 28",
         "decision": "skipped",
         "reason": "It is not yet 11:00 New York time; the last open slot is kept for it."
+      }
+    ],
+    "requests": []
+  },
+  {
+    "run_at": "2026-10-28T14:15:28.994Z",
+    "summary": "Mid-morning run (09:55 New York time, Oct 28): no open links or requests; queued 1 priority 1 story (Anthropic's unreleased Claude model built working attacks on Chrome, Safari, Android, Windows and Linux), waiting for Mahir's approval. Oct 28 now has 8 jobs, the daily cap, so no utility post today.",
+    "considered": [
+      {
+        "story": "Anthropic Frontier Red Team: unreleased Claude model built five exploit chains on Chrome, Safari, Android, Windows and Linux",
+        "source": "https://www.anthropic.com/research/discovering-vulnerabilities-with-claude",
+        "decision": "queued",
+        "job_id": "2026-10-28-claude-built-attacks-chrome-safari-windows-linux",
+        "priority": 1
+      },
+      {
+        "story": "Anthropic says an internal Claude model also refuted the Exponential Time Hypothesis",
+        "source": "https://officechai.com/ai/anthropic-says-claude-too-independently-disproved-exponential-time-hypothesis-on-the-same-day-as-openai/",
+        "decision": "skipped",
+        "reason": "Announced Oct 27 and close to the OpenAI ETH post already published; the last slot of the day went to the fresher exploit story and Oct 28 is at the 8-job cap."
+      },
+      {
+        "story": "Sen. Elizabeth Warren gives Anthropic until Nov. 3 to answer questions on existential risk (WSJ)",
+        "source": "https://www.wsj.com/finance/regulation/elizabeth-warren-demands-answers-from-anthropic-on-existential-risks-5362f009",
+        "decision": "skipped",
+        "reason": "Political letter with no outcome yet, and the day is at the cap."
+      },
+      {
+        "story": "Meta tests a Tamagotchi-style AI pet app, Waddle World, in the Philippines",
+        "source": "https://www.engadget.com/2299227/meta-tamagotchi-like-ai-digital-pet-app-waddle-world/",
+        "decision": "skipped",
+        "reason": "Small test outside the US, and the day is at the cap."
+      },
+      {
+        "story": "OpenAI engineer indicted over a listening device found at HQ",
+        "decision": "skipped",
+        "reason": "Crime story with little AI substance, skipped in earlier runs."
+      },
+      {
+        "story": "Amazon Echo Show 16 and 3D Alexa Home Map",
+        "decision": "skipped",
+        "reason": "Gadget launch with a small AI angle, and the day is at the cap."
+      },
+      {
+        "story": "Moore Threads Q3 revenue up about 1,774 percent",
+        "decision": "skipped",
+        "reason": "Chinese chip earnings with little US interest."
+      },
+      {
+        "story": "SK Hynix says memory shortage lasts through 2030",
+        "decision": "skipped",
+        "reason": "Supply chain story, the day is at the cap."
+      },
+      {
+        "story": "OpenAI plans to buy Google TPU chips",
+        "decision": "covered",
+        "reason": "Already posted as 2026-10-28-openai-buying-google-tpu-chips."
+      },
+      {
+        "story": "Anthropic study: analysts followed Claude's coin-flip leans 86 percent of the time",
+        "decision": "covered",
+        "reason": "Already queued as 2026-10-28-coin-flip-claude-experts-agreed-86-percent."
+      },
+      {
+        "story": "Daily utility post for Oct 28",
+        "decision": "skipped",
+        "reason": "Oct 28 reached the 8-job cap with a priority 1 story, which comes first."
       }
     ],
     "requests": []
