@@ -1,0 +1,25 @@
+name: Site worker
+
+# Runs the website's editorial worker now (drains queued scans and drafts, like the 3-hourly cron),
+# then shows its log lines. Same bearer token as the cron (derived from the database secret).
+on:
+  workflow_dispatch:
+    inputs:
+      mode: { description: scan or mail, required: true, default: scan }
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    env:
+      SITE_DATABASE_URL: ${{ secrets.SITE_DATABASE_URL }}
+      CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+      CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+    steps:
+      - run: |
+          npm i -g wrangler@4 >/dev/null 2>&1
+          t=$(printf '%s' "$SITE_DATABASE_URL|editorial-job-token|v1" | sha256sum | cut -c1-64); echo "::add-mask::$t"
+          (timeout 200 wrangler tail neurafeed-admin --format json > tail.json 2> tail.err &) ; sleep 12
+          r=$(curl -s -m 180 -w '\n%{http_code}' -X POST -H "Authorization: Bearer $t" -H 'Content-Type: application/json' -d '{"mode":"${{ inputs.mode }}"}' https://admin.neurafeedai.com/api/jobs/editorial-worker)
+          echo "::notice::worker answered: $(tr '\n' ' ' <<<"$r" | cut -c1-300)"
+          sleep 15
+          jq -r 'select(.logs|length>0) | .logs[] | (.message|tostring|.[0:600])' tail.json 2>/dev/null | grep -v '^$' | tail -9 | while read -r l; do echo "::notice::$l"; done

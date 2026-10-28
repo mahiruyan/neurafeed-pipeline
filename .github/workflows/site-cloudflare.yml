@@ -115,7 +115,9 @@ jobs:
           # Netlify never returns secret values (it sends the same placeholder for all of them).
           # Drop those and use the real values saved as GitHub secrets (SITE_*); make a fresh job token.
           ph=$(jq -rs '[.[] | to_entries[] | select(.value|length==20) | .value] | group_by(.) | map(select(length>=3)) | .[0][0] // ""' /tmp/env-web.json /tmp/env-admin.json)
-          jobtoken=$(openssl rand -hex 32)
+          # Stable job token (derived from the database secret) so maintenance workflows can run the
+          # editorial worker on demand (site-worker.yml derives the same value).
+          jobtoken=$(printf '%s' "$SITE_DATABASE_URL|editorial-job-token|v1" | sha256sum | cut -c1-64); echo "::add-mask::$jobtoken"
           for app in web admin; do
             jq --arg ph "$ph" --arg db "${RUNTIME_DATABASE_URL:-$SITE_DATABASE_URL}" --arg pk "$SITE_SUPABASE_PUBLISHABLE_KEY" --arg r2i "$SITE_R2_ACCESS_KEY_ID" --arg r2s "$SITE_R2_SECRET_ACCESS_KEY" --arg rs "$SITE_RESEND_API_KEY" --arg jt "$jobtoken" --arg dto "$SITE_DIGEST_RECIPIENT" --arg dfrom "$SITE_DIGEST_FROM" --slurpfile adm /tmp/env-admin.json '
               with_entries(select($ph == "" or .value != $ph))
