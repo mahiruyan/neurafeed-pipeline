@@ -4,6 +4,8 @@ name: Website check
 # job routes answer? Sends no credentials.
 on:
   workflow_dispatch:
+    inputs:
+      urls: { description: 'space separated URLs (default: the main checks)', required: false, default: '' }
 
 jobs:
   check:
@@ -11,6 +13,13 @@ jobs:
     steps:
       - name: Reachability
         run: |
+          list="${{ inputs.urls }}"; [ -n "$list" ] || list="https://neurafeedai.com https://www.neurafeedai.com https://staging.neurafeedai.com https://admin-staging.neurafeedai.com https://neurafeed-staging-public.netlify.app https://neurafeed-staging-admin.netlify.app https://neurafeed-staging-admin.netlify.app/login https://neurafeed-staging-admin.netlify.app/api/jobs/editorial-daily-scan"
+          for u in $list; do : ; done
+          for u in $list; do
+            r=$(curl -s -o body.txt -D head.txt -w "%{http_code} %{content_type} %{size_download}b" --max-time 20 -A "Googlebot/2.1 (+http://www.google.com/bot.html)" "$u" || echo "fail")
+            echo "::notice::$u -> $r | $(head -c 300 body.txt | tr '\n' ' ')"
+          done
+          exit 0
           for u in https://neurafeedai.com https://www.neurafeedai.com https://staging.neurafeedai.com https://admin-staging.neurafeedai.com https://neurafeed-staging-public.netlify.app https://neurafeed-staging-admin.netlify.app https://neurafeed-staging-admin.netlify.app/login https://neurafeed-staging-admin.netlify.app/api/jobs/editorial-daily-scan; do
             r=$(curl -s -o body.txt -w "%{http_code} %{redirect_url}" --max-time 20 "$u" || echo "fail")
             t=$(grep -o "<title>[^<]*" body.txt | head -1 | cut -c8-80)
