@@ -8,6 +8,7 @@ on:
       ux_only: { description: 'only the interaction checks', required: false, default: 'false' }
       mock: { description: 'article URL: only make header layout mockups', required: false, default: '' }
       mock_img: { description: 'image URL to show as the cover/lead photo (preview only)', required: false, default: '' }
+      mock_full: { description: 'full-page screenshots', required: false, default: '' }
       mock_only: { description: 'variants to render, comma separated (default all)', required: false, default: '' }
 
 permissions:
@@ -29,7 +30,7 @@ jobs:
       - run: npm install --no-audit --no-fund
       - if: inputs.mock != ''
         run: |
-          MOCK_ONLY=${{ inputs.mock_only }} MOCK_IMG='${{ inputs.mock_img }}' node tools/hero-mock.js "${{ inputs.mock }}" /tmp/mock
+          MOCK_ONLY=${{ inputs.mock_only }} MOCK_IMG='${{ inputs.mock_img }}' MOCK_FULL='${{ inputs.mock_full }}' node tools/hero-mock.js "${{ inputs.mock }}" /tmp/mock
           git config user.name "neurafeed-bot"; git config user.email "bot@neurafeed.ai"
           git checkout --orphan site-mock && git rm -rqf --cached . && rm -rf mock && cp -r /tmp/mock mock
           git add -f mock && git commit -qm "header mockups" && git push -f origin site-mock
