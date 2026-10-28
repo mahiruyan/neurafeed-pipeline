@@ -24,6 +24,10 @@ on:
         description: "true: use neurafeedai.com and admin.neurafeedai.com as the site addresses"
         required: true
         default: "true"
+      hyperdrive:
+        description: "true: connect through Hyperdrive (off: it timed out with the Supabase transaction pooler on 2026-10-28)"
+        required: false
+        default: "false"
 
 concurrency:
   group: site-cloudflare
@@ -130,6 +134,7 @@ jobs:
           done
 
       - name: Hyperdrive (database pooling, optional)
+        if: inputs.hyperdrive == 'true'
         run: |
           # Optional: without it the Workers connect to DATABASE_URL directly (per-request client).
           set +e +o pipefail
