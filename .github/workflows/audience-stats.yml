@@ -1,0 +1,24 @@
+name: Audience stats
+
+# Every Monday: Instagram and Threads numbers (last 30 days) for the website's sponsorship and
+# link pages. Values typed in the admin (Audience numbers) override these.
+on:
+  schedule:
+    - cron: "17 6 * * 1"
+  workflow_dispatch:
+    inputs:
+      dry: { description: "only print, do not save", required: false, default: "false" }
+
+jobs:
+  stats:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: 22 }
+      - env:
+          IG_USER_ID: ${{ secrets.IG_USER_ID }}
+          IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
+          THREADS_TOKEN: ${{ secrets.THREADS_TOKEN }}
+          SITE_REVIEW_TOKEN: ${{ secrets.SITE_REVIEW_TOKEN }}
+        run: node src/audience-stats.js ${{ inputs.dry == 'true' && '--dry' || '' }}

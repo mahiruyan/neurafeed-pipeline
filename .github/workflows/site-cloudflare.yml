@@ -84,6 +84,7 @@ jobs:
               | if $r2i != "" then .NEURAFEED_R2_ACCESS_KEY_ID = $r2i else . end
               | if $r2s != "" then .NEURAFEED_R2_SECRET_ACCESS_KEY = $r2s else . end
               | if $rs != "" and has("RESEND_API_KEY") then .RESEND_API_KEY = $rs else . end
+              | if $rs != "" then .NEURAFEED_INQUIRY_EMAIL_KEY = $rs else . end
               | if has("NEURAFEED_EDITORIAL_OWNER_DIGEST_FROM") then .NEURAFEED_EDITORIAL_OWNER_DIGEST_FROM = $dfrom else . end
               | if $dto != "" and has("NEURAFEED_EDITORIAL_OWNER_DIGEST_RECIPIENT") then .NEURAFEED_EDITORIAL_OWNER_DIGEST_RECIPIENT = $dto else . end
               | if has("NEURAFEED_EDITORIAL_JOB_ACTOR_ID") then .NEURAFEED_EDITORIAL_JOB_TOKEN = $jt else . end

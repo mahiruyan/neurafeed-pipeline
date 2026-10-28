@@ -5,7 +5,7 @@ name: Site domain
 on:
   workflow_dispatch:
     inputs:
-      action: { description: "check or connect", required: true, default: check }
+      action: { description: "check, connect, or links (attach links.neurafeedai.com only)", required: true, default: check }
 
 jobs:
   domain:
@@ -22,6 +22,11 @@ jobs:
           [ -n "$zid" ] || { echo "::error::zone not visible to the token: $(jq -c .errors <<<"$z")"; exit 1; }
           recs=$(curl -s -H "$H" "$api/zones/$zid/dns_records?per_page=100")
           echo "::notice::records: $(jq -c '[.result[] | "\(.type) \(.name) \(.content|.[0:40]) proxied=\(.proxied)"]' <<<"$recs")"
+          if [ "${{ inputs.action }}" = links ]; then
+            r=$(curl -s -X PUT -H "$H" -H 'Content-Type: application/json' "$api/accounts/$ACC/workers/domains" -d "{\"environment\":\"production\",\"hostname\":\"links.neurafeedai.com\",\"service\":\"neurafeed-web\",\"zone_id\":\"$zid\"}")
+            echo "::notice::links.neurafeedai.com -> neurafeed-web: success=$(jq -r .success <<<"$r") $(jq -c '.errors' <<<"$r")"
+            exit 0
+          fi
           [ "${{ inputs.action }}" = connect ] || exit 0
           [ "$st" = active ] || { echo "::error::zone is $st, not active yet; nameserver change still propagating"; exit 1; }
           # Old Netlify records for the hostnames the Workers will serve.
