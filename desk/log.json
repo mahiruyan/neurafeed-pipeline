@@ -1,65 +1,5 @@
 [
   {
-    "run_at": "2026-10-21T07:54:43.356Z",
-    "summary": "Pre-dawn run (03:55 New York): no open links or requests; 9 approved posts are already waiting for Oct 21's 8 slots and no new priority 1 story broke, so nothing was queued.",
-    "considered": [
-      {
-        "story": "ChatGPT lets users lock individual chats with a PIN or biometrics",
-        "source": "https://techcrunch.com/2026/10/20/chatgpt-now-lets-you-lock-your-chats/",
-        "decision": "skipped",
-        "reason": "Useful priority 2 feature, but Oct 21 is already over the 8-post cap; good candidate for Oct 22."
-      },
-      {
-        "story": "Google and Amazon make it easier to move PyTorch apps off Nvidia chips",
-        "source": "https://techcrunch.com/2026/10/20/google-has-joined-amazon-in-attacking-nvidias-stronghold-with-ai-app-developers/",
-        "decision": "skipped",
-        "reason": "Developer-focused story and the day is full."
-      },
-      {
-        "story": "Perplexity Computer can now run locally on a Mac",
-        "source": "https://x.com/perplexity_ai/status/2112571597798461920",
-        "decision": "skipped",
-        "reason": "Single source so far and the day is full."
-      },
-      {
-        "story": "Anthropic may commit another $45 billion to Nscale for compute",
-        "decision": "skipped",
-        "reason": "Anthropic already has several money stories this week; day is full."
-      },
-      {
-        "story": "OpenAI acquires Orchestra Bio",
-        "decision": "covered",
-        "reason": "Already queued as 2026-10-21-openai-buys-orchestra-bio."
-      },
-      {
-        "story": "OpenAI agents weakened the system that flags misbehavior",
-        "decision": "covered",
-        "reason": "Already queued as 2026-10-21-openai-agents-switched-off-alarms."
-      },
-      {
-        "story": "Claude designed scorpion toxin binders",
-        "decision": "covered",
-        "reason": "Already queued as 2026-10-21-claude-scorpion-venom-binders."
-      },
-      {
-        "story": "Gemini Personal Intelligence on Android Auto",
-        "decision": "covered",
-        "reason": "Already queued as 2026-10-21-gemini-android-auto-reads-your-apps."
-      },
-      {
-        "story": "US bans DeepSeek across federal agencies",
-        "decision": "skipped",
-        "reason": "Government policy story, day is full; candidate for Oct 22 with primary sources."
-      },
-      {
-        "story": "Students walk out nationwide calling for a pause on AI",
-        "decision": "skipped",
-        "reason": "Sensitive political protest story, mostly local coverage, day is full."
-      }
-    ],
-    "requests": []
-  },
-  {
     "run_at": "2026-10-21T09:55:16.522Z",
     "summary": "Morning run (05:55 New York): no open links or requests; no new priority 1 story since the last run and Oct 21 already has more approved posts waiting than its 8 slots, so nothing was queued.",
     "considered": [
@@ -5549,6 +5489,72 @@
         "story": "Axiom AI agents formalize the finite simple groups proof",
         "decision": "covered",
         "reason": "Already queued as 2026-10-28-ai-agents-checked-biggest-math-proof."
+      },
+      {
+        "story": "Daily utility post for Oct 28",
+        "decision": "skipped",
+        "reason": "It is not yet 11:00 New York time; a later run will queue it."
+      }
+    ],
+    "requests": []
+  },
+  {
+    "run_at": "2026-10-28T08:12:35.037Z",
+    "summary": "Overnight run (03:55 New York time, Oct 28): no open links or requests; queued 1 story (ACLU on police stopping drivers after AI flags their road trips), waiting for Mahir's approval. Oct 28 now has 5 jobs.",
+    "considered": [
+      {
+        "story": "ACLU: police pull over drivers after AI flags their travel patterns as suspicious; Texas jury ruled one stop unconstitutional",
+        "source": "https://www.aclu.org/news/privacy-technology/ai-driven-police-stops",
+        "decision": "queued",
+        "job_id": "2026-10-28-police-ai-flags-suspicious-road-trips",
+        "priority": 2
+      },
+      {
+        "story": "OpenAI engineer indicted over bugging an executive conference room",
+        "source": "https://sfstandard.com/2026/10/13/openai-engineer-arrested-alleged-bugging-executive-conference-room/",
+        "decision": "skipped",
+        "reason": "A crime follow-up to a story already covered four times (2026-10-13-fbi-arrests-openai-engineer-bugging and later posts)."
+      },
+      {
+        "story": "Hawley Senate investigation into OpenAI over the Hugging Face agent hack",
+        "source": "https://www.hawley.senate.gov/chairman-hawley-launches-investigation-into-openai-for-hacking-existential-risk-of-ai-products/",
+        "decision": "skipped",
+        "reason": "The investigation was opened in September; the feed item is an old story resurfacing."
+      },
+      {
+        "story": "Inside Wikipedia's cleanup of AI-generated content (IEEE Spectrum)",
+        "decision": "skipped",
+        "reason": "A feature with no new event and no usable photo found; could work later as a slower explainer."
+      },
+      {
+        "story": "Microsoft MAI-Image-2.7 Preview beats OpenAI's image model in editing",
+        "decision": "skipped",
+        "reason": "Could not find the announcement or a second source, only a Neowin headline in the feed."
+      },
+      {
+        "story": "Samsung TVs said to listen to room sounds for ad profiling",
+        "decision": "skipped",
+        "reason": "Unverified researcher claim and not an AI story."
+      },
+      {
+        "story": "Parents sue OpenAI saying GPT-4o coached their daughter off seizure medication",
+        "decision": "skipped",
+        "reason": "Same decision as the last three runs: a death and health lawsuit that still lacks solid sourcing readable from here."
+      },
+      {
+        "story": "Trump says he will ban the term artificial intelligence",
+        "decision": "skipped",
+        "reason": "Repeat political statement with no new action, skipped in earlier runs."
+      },
+      {
+        "story": "Stanford professors say their pirated books trained Claude",
+        "decision": "skipped",
+        "reason": "Considered and skipped in earlier runs; nothing new."
+      },
+      {
+        "story": "OpenAI plans to buy Google TPU chips",
+        "decision": "covered",
+        "reason": "Already queued as 2026-10-28-openai-buying-google-tpu-chips."
       },
       {
         "story": "Daily utility post for Oct 28",
