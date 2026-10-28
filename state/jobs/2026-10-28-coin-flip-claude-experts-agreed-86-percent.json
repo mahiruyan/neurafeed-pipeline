@@ -20,9 +20,14 @@
       "status": "publish_failed",
       "at": "2026-10-28T13:15:53.324Z",
       "by": "system"
+    },
+    {
+      "status": "posted",
+      "at": "2026-10-28T16:04:51.013Z",
+      "by": "system"
     }
   ],
-  "status": "publish_failed",
+  "status": "posted",
   "files": [
     "out/2026-10-28-coin-flip-claude-experts-agreed-86-percent/1.jpg",
     "out/2026-10-28-coin-flip-claude-experts-agreed-86-percent/2.jpg",
@@ -34,7 +39,7 @@
   "image_errors": [
     "slide 1 badge 1: logo check skipped (You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.)"
   ],
-  "updated_at": "2026-10-28T13:15:53.324Z",
+  "updated_at": "2026-10-28T16:04:51.013Z",
   "sent_at": "2026-10-28T10:15:25.960Z",
   "message_id": 1805,
   "by": "mahir (Telegram)",
@@ -48,5 +53,18 @@
     1805
   ],
   "error": "Instagram 17841477983419365/media_publish: Media ID is not available",
-  "attempts": 1
+  "attempts": 1,
+  "posted_at": "2026-10-28T16:04:51.013Z",
+  "publish": {
+    "mode": "instagram",
+    "media_id": "18108052697218157",
+    "facebook": {
+      "id": "876414312221880_122147552583099381",
+      "type": "album"
+    },
+    "threads": {
+      "id": "18638650216001308",
+      "type": "carousel"
+    }
+  }
 }
