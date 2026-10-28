@@ -8,6 +8,8 @@ const DAY = 864e5;
 const sec = (t) => Math.floor(t / 1000);
 
 // Europe (EU, EEA, UK, Switzerland and the rest of geographic Europe), ISO 3166-1 alpha-2.
+// Markets advertisers pay most for.
+const PREMIUM = new Set('US GB CA AU DE FR NL SE CH NO DK IE NZ AE SG JP AT BE'.split(' '));
 const EUROPE = new Set('AD AL AT BA BE BG BY CH CY CZ DE DK EE ES FI FR GB GR HR HU IE IS IT LI LT LU LV MC MD ME MK MT NL NO PL PT RO RS SE SI SK SM UA VA XK'.split(' '));
 
 async function get(base, token, pathAndQuery) {
@@ -33,17 +35,21 @@ async function instagram() {
   if (reach > 0) out.monthly_reach = reach;
   if (views > 0) out.ig_views = views;
   if (reach > 0 && interactions >= 0) out.engagement_rate = Math.round(interactions / reach * 1000) / 10;
-  // Where the followers are (Instagram shows this from 100 followers on).
+  // Where the people who actually saw our posts are (last 30 days), not where the followers are.
   try {
-    const d = await ig(`${user}/insights?metric=follower_demographics&period=lifetime&metric_type=total_value&breakdown=country`);
+    const d = await ig(`${user}/insights?metric=reached_audience_demographics&period=lifetime&timeframe=last_30_days&metric_type=total_value&breakdown=country`);
     const rows = (d.data?.[0]?.total_value?.breakdowns?.[0]?.results || []).map((r) => ({ code: r.dimension_values[0], value: Number(r.value) || 0 }));
     const sum = rows.reduce((a, r) => a + r.value, 0);
     if (sum > 0) {
       const names = new Intl.DisplayNames(['en'], { type: 'region' });
-      out.top_countries = rows.sort((a, b) => b.value - a.value).slice(0, 5).map((r) => ({ country: r.code === 'US' ? 'US' : r.code === 'GB' ? 'UK' : (names.of(r.code) || r.code), share: Math.round(r.value / sum * 1000) / 10 }));
-      out.us_europe_share = Math.round(rows.filter((r) => r.code === 'US' || EUROPE.has(r.code)).reduce((a, r) => a + r.value, 0) / sum * 1000) / 10;
+      const label = (code) => (code === 'US' ? 'US' : code === 'GB' ? 'UK' : code === 'AE' ? 'UAE' : (names.of(code) || code));
+      const share = (value) => Math.round(value / sum * 1000) / 10;
+      out.top_countries = rows.sort((a, b) => b.value - a.value).slice(0, 5).map((r) => ({ country: label(r.code), share: share(r.value) }));
+      out.us_europe_share = share(rows.filter((r) => r.code === 'US' || EUROPE.has(r.code)).reduce((a, r) => a + r.value, 0));
+      // High-value advertising markets, each with its real share of viewers (1% or more).
+      out.key_markets = rows.filter((r) => PREMIUM.has(r.code) && share(r.value) >= 1).sort((a, b) => b.value - a.value).slice(0, 5).map((r) => ({ country: label(r.code), share: share(r.value) }));
     }
-  } catch (e) { console.log(`::notice::No country breakdown: ${e.message}`); }
+  } catch (e) { console.log(`::notice::No viewer country breakdown: ${e.message}`); }
   return out;
 }
 
