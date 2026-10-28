@@ -1,65 +1,5 @@
 [
   {
-    "run_at": "2026-10-21T00:08:40.067Z",
-    "summary": "Queued Mahir's Avengers Endgame meme Reel link (review) and the Anthropic draft S-1 financials story (priority 1, review). Oct 20 news cap was already full, so the S-1 job is non-timely and will post in the Oct 21 morning window.",
-    "considered": [
-      {
-        "story": "Mahir's link: 'Me and bro reverse-engineering a random software at 2 AM' (Avengers: Endgame clip)",
-        "source": "https://www.instagram.com/reel/Deuu96qzMKN/",
-        "decision": "queued",
-        "job_id": "2026-10-21-tony-stark-2am-reverse-engineering-reel",
-        "priority": 1
-      },
-      {
-        "story": "WSJ: Anthropic draft S-1 shows $16.3B first-half revenue and an $80.7B net loss",
-        "source": "https://www.benzinga.com/markets/private-markets/26/10/62484656/anthropic-lost-80-billion-in-six-months-as-ai-spending-soars-draft-ipo-filing-shows",
-        "decision": "queued",
-        "job_id": "2026-10-21-anthropic-s1-80-billion-loss",
-        "priority": 1
-      },
-      {
-        "story": "OpenAI acquires Orchestra Bio for AI drug development",
-        "source": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPVzJsbFBWOU85bXpOYThwQWFYVEVFU2VUaFF4X3c5ekM2dEl",
-        "decision": "skipped",
-        "reason": "Today's cap is full; left for the first Oct 21 run so it can be checked against fresh sources."
-      },
-      {
-        "story": "Anthropic's cloud partnerships are getting messy (TechCrunch)",
-        "source": "https://techcrunch.com/2026/10/20/anthropics-cloud-partnerships-are-getting-messy/",
-        "decision": "covered",
-        "reason": "Its key point (cloud partners turning into rivals, compute commitments) is part of the S-1 carousel."
-      },
-      {
-        "story": "Hugging Face CEO says Netflix's OpenAI hack documentary is inaccurate",
-        "source": "https://techcrunch.com/2026/10/20/hugging-face-ceo-warns-that-netflixs-openai-hack-documentary-isnt-",
-        "decision": "skipped",
-        "reason": "Cap full; single source so far."
-      },
-      {
-        "story": "Eight states sue OpenAI over ChatGPT cases",
-        "decision": "skipped",
-        "reason": "Cap full; sensitive lawsuit story, candidate for tomorrow with Mahir's approval."
-      },
-      {
-        "story": "Meta's Muse reaches 10 million downloads faster than ChatGPT",
-        "decision": "skipped",
-        "reason": "Cap full and Meta already posted today; candidate for tomorrow."
-      },
-      {
-        "story": "ChatGPT lets you lock chats behind a PIN",
-        "decision": "skipped",
-        "reason": "Small feature and the cap is full."
-      },
-      {
-        "story": "Claude designed protein binders against scorpion neurotoxins",
-        "source": "https://www.anthropic.com/research/claude-scorpion-toxin-binder-design",
-        "decision": "skipped",
-        "reason": "Cap full and Anthropic already has a big story queued."
-      }
-    ],
-    "requests": []
-  },
-  {
     "run_at": "2026-10-21T02:15:21.589Z",
     "summary": "Late-night run (21:55 New York): no open links or requests; queued 3 priority 1 stories for the Oct 21 morning windows, all waiting for Mahir's approval.",
     "considered": [
@@ -5600,6 +5540,65 @@
         "story": "Daily utility post",
         "decision": "skipped",
         "reason": "The 8 post daily cap is already filled by news jobs."
+      }
+    ],
+    "requests": []
+  },
+  {
+    "run_at": "2026-10-28T02:08:09.646Z",
+    "summary": "Late run (21:55 New York time, Oct 27): no open links or requests; queued 2 new stories for Oct 28 (OpenAI buying Google TPUs, Claude drug development results), both waiting for Mahir's approval.",
+    "considered": [
+      {
+        "story": "OpenAI plans to buy Google's TPU chips (The Information)",
+        "source": "https://www.investing.com/news/stock-market-news/openai-plans-to-buy-googles-ai-chips-the-information-reports-4977342",
+        "decision": "queued",
+        "job_id": "2026-10-28-openai-buying-google-tpu-chips",
+        "priority": 1
+      },
+      {
+        "story": "Claude produced 35,000 antibody designs in a month; Anthropic shares results from six drug partners and buys Mithril Medicine",
+        "source": "https://interestingengineering.com/ai-robotics/claude-35000-antibody-designs-drug-discovery",
+        "decision": "queued",
+        "job_id": "2026-10-28-claude-35000-antibodies-one-month",
+        "priority": 2
+      },
+      {
+        "story": "Parents sue OpenAI saying GPT-4o coached their daughter off seizure medication",
+        "source": "https://techcrunch.com/2026/10/27/parents-sue-openai-alleging-gpt-4o-coached-their-daughter-off-seizure-medication/",
+        "decision": "skipped",
+        "reason": "Another individual lawsuit with only one source read so far; health and lawsuit story better handled with a second source in a daytime run."
+      },
+      {
+        "story": "Trump to ban the term AI in government documents",
+        "decision": "skipped",
+        "reason": "Only odd outlets (The National, BigGo Finance) in the feed, no major wire confirmation, and it is a political story."
+      },
+      {
+        "story": "Anthropic expands GSA partnership to bring Claude to all levels of government",
+        "source": "https://www.anthropic.com/news/expanding-partnership-gsa",
+        "decision": "skipped",
+        "reason": "Government procurement deal with little consumer appeal, and Anthropic already has two posts in the queue."
+      },
+      {
+        "story": "Anthropic tells Newsom courts should be able to block risky AI",
+        "decision": "skipped",
+        "reason": "Narrow California policy letter, one source."
+      },
+      {
+        "story": "Amazon is gutting its AI division after Nova struggles",
+        "source": "https://futurism.com/artificial-intelligence/amazon-ai-division-failure-nova",
+        "decision": "skipped",
+        "reason": "Single opinionated source; needs confirmation from a major outlet."
+      },
+      {
+        "story": "Oracle expands collaboration with OpenAI, launches AI security mesh",
+        "decision": "skipped",
+        "reason": "Enterprise partnership with little US consumer interest."
+      },
+      {
+        "story": "Stanford professors say their pirated books trained Claude",
+        "decision": "covered",
+        "reason": "Considered and skipped in the previous run; nothing new since."
       }
     ],
     "requests": []
