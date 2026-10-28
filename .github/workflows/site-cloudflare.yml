@@ -132,6 +132,8 @@ jobs:
               del(.NODE_VERSION, .NPM_VERSION, .NETLIFY, .URL)
               | if $app=="web" then .NEURAFEED_PUBLIC_ORIGIN=$o else .NEURAFEED_ADMIN_ORIGIN=$o end
               | if $prod=="true" then .NEURAFEED_PUBLIC_ORIGIN="https://neurafeedai.com" | (if $app=="admin" then .NEURAFEED_ADMIN_ORIGIN="https://admin.neurafeedai.com" else . end) else . end
+              | if $prod=="true" and $app=="web" then .NEURAFEED_SEARCH_INDEXING_ENABLED="true" | .NEURAFEED_ALLOWED_SCRIPT_ORIGINS="https://static.cloudflareinsights.com" | .NEURAFEED_ALLOWED_CONNECT_ORIGINS=([.NEURAFEED_ALLOWED_CONNECT_ORIGINS // empty, "https://cloudflareinsights.com"] | map(select(. != "")) | join(",")) else . end
+              | if $app=="admin" then .NEURAFEED_DRAFT_TEXT="desk-only" else . end
               | if $app=="admin" and $cut!="true" then .NEURAFEED_EDITORIAL_DAILY_SCAN_ENABLED="disabled" | .NEURAFEED_EDITORIAL_OWNER_DIGEST_ENABLED="disabled" else . end
               | with_entries(.value |= tostring)' /tmp/env-$app.json > /tmp/secrets-$app.json
             # Build with the same settings (Next reads some at build time).
