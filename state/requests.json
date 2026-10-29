@@ -30,7 +30,7 @@
     "updated_at": "2026-10-20T20:09:49.875Z"
   },
   "req-2026-10-21-57ca6584": {
-    "status": "pending",
+    "status": "failed",
     "history": [
       {
         "status": "failed",
@@ -39,6 +39,10 @@
       {
         "status": "pending",
         "at": "2026-10-29T00:02:40.017Z"
+      },
+      {
+        "status": "failed",
+        "at": "2026-10-29T02:13:24.596Z"
       }
     ],
     "notified": [
@@ -46,8 +50,8 @@
       "stale"
     ],
     "job_id": null,
-    "result": "That picture is a frame from the Reel 2026-10-21-tony-stark-2am-reverse-engineering-reel ('Me and bro reverse-engineering a random software at 2 AM'), which is already approved and will post as a Reel; the pipeline cannot build a Reel from a still image, so send the video link if you want a different one.",
-    "updated_at": "2026-10-29T00:02:40.017Z"
+    "result": "That picture is a still frame from the Reel 2026-10-21-tony-stark-2am-reverse-engineering-reel, and the pipeline can only make Reels from a video link, not from a still image; send the video link if you want a new Reel.",
+    "updated_at": "2026-10-29T02:13:24.596Z"
   },
   "req-2026-10-23-f56de23b": {
     "status": "completed",
