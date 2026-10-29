@@ -9,5 +9,5 @@
   ],
   "status": "render_failed",
   "error": "Command failed: yt-dlp --no-playlist --no-progress --restrict-filenames -f bv*[height<=1920][vcodec^=avc1]+ba[acodec^=mp4a]/bv*[height<=1920]+ba/b[height<=1920]/b --merge-output-format mp4 -o /home/runner/work/neurafeed-pipeline/neurafeed-pipeline/out/2026-10-29-apple-first-touchscreen-macbook-pro-reel/src/source.%(ext)s https://www.instagram.com/reel/DfDUpW4AsCf/?srtk=cDZ4eXNlejZibnZh\nWARNING: [Instagram] DfDUpW4AsCf: Instagram API is not granting access\nERROR: [Instagram] DfDUpW4AsCf: Instagram sent an empty media response. Check if this post is accessible in your browser without being logged-in. If it is not, then use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Otherwise, if the post is accessible in browser without being logged-in, please report this issue on  https://github.com/yt-dlp/yt-dlp/issues?q= , filling out the appropriate issue template. Confirm you are on the latest version using  yt-dlp -U\n",
-  "updated_at": "2026-10-29T21:24:10.890Z"
+  "updated_at": "2026-10-29T21:27:38.212Z"
 }
