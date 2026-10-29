@@ -1,0 +1,110 @@
+{
+  "id": "2026-10-29-openai-model-spec-five-values-gpt",
+  "created_at": "2026-10-29T22:05:00Z",
+  "story_time": "2026-10-29T18:00:00Z",
+  "timely": true,
+  "sensitive": false,
+  "priority": 1,
+  "review": true,
+  "format": "carousel",
+  "site_category": "companies",
+  "sources": [
+    { "name": "The Next Web", "url": "https://thenextweb.com/news/openai-model-spec-five-values-update" },
+    { "name": "Unite.AI", "url": "https://www.unite.ai/openai-reorganizes-model-spec-around-five-core-behavior-values/" },
+    { "name": "ShiftDelete.Net", "url": "https://en.shiftdelete.net/openai-model-spec-update/" }
+  ],
+  "threads_text": "OpenAI rewrote the rulebook its models follow around five values, cut most of the style rules, and now calls the model GPT instead of the assistant. It also says GPT should not tell people what they want to hear. Do you think a rulebook actually changes how a chatbot behaves?",
+  "caption": "OpenAI rewrote its Model Spec, the public rulebook for how its models should behave.\nIt is now built on five values, drops most style rules and calls the model GPT instead of the assistant.\nOpenAI says its models do not fully follow it yet.\n\nWhich of the five values matters most to you?\n\nFollow @neurafeed.ai for daily AI news.\n\nSource: The Next Web, Unite.AI · Photo: Andrew Neel / Unsplash",
+  "slides": [
+    {
+      "kind": "cover",
+      "headline": "OpenAI just rewrote the rulebook its AI lives by, and it now calls it *GPT*",
+      "image": {
+        "url": "https://media.thenextweb.com/2026/10/openai-logo-on-monitor-blue-wall.jpg",
+        "credit": "Andrew Neel / Unsplash",
+        "fallback_urls": ["https://cellcog.ai/blog/media/openai-model-spec-five-values/og.jpg?v=b2657dcc13"],
+        "generate": "A cluttered, dim office late at night. A humanoid robot with scuffed white plastic panels sits hunched at a worn wooden desk, reading a thick, dog-eared paper rulebook full of sticky notes, one metal finger tracing a page. Stacks of old binders and a cold coffee mug around it. On the wall behind the robot hangs a large framed sign with the logo from the first image, big and exact, black on white. Harsh overhead fluorescent light, one tube flickering, slightly crooked blinds. Blank surfaces, no readable text or labels on any object apart from the logo. Generous headroom above the robot's head. The robot and the logo fill the upper two thirds of the frame, the bottom third is the desk and papers. Photorealistic, high contrast, vertical composition, one clear subject, no letters, no watermarks. It must look like an unedited real photo from a news agency, not a painting, not digital art, no glow effects.",
+        "refs": ["assets/logos/openai.png"]
+      },
+      "pos": "center 25%",
+      "badges": [{ "url": "assets/logos/openai.png", "shape": "free" }]
+    },
+    {
+      "kind": "card",
+      "heading": "Five values, *one foundation*",
+      "paras": [
+        "OpenAI published a rewritten Model Spec on October 29, the public rulebook for how its models should behave.",
+        "It now rests on five values: faithfulness to human intent, minimizing harm, honesty and transparency, human agency and care."
+      ],
+      "image": {
+        "url": "https://www.unite.ai/wp-content/uploads/2026/10/openai-reorganizes-model-spec-five-core-behavior-values.jpg",
+        "credit": "Unite.AI"
+      }
+    },
+    {
+      "kind": "card",
+      "heading": "Goodbye, *the assistant*",
+      "paras": [
+        "The new Spec calls the model GPT instead of the assistant. OpenAI links the change to how many places its models now run.",
+        "Most detailed style rules are gone. Style should adapt to what people prefer."
+      ],
+      "image": {
+        "url": "https://en.shiftdelete.net/wp-content/uploads/2026/10/openai-model-spec-update-five-values.webp",
+        "credit": "ShiftDelete.Net"
+      }
+    },
+    {
+      "kind": "card",
+      "heading": "No more *telling you what you want to hear*",
+      "paras": [
+        "GPT should approach questions objectively and not guess its view from what people want to hear, unless asked to take a side.",
+        "A firm rule bars it from extra goals like revenue, self-preservation or evading shutdown."
+      ],
+      "image": {
+        "url": "https://media.thenextweb.com/2026/09/openai-logo-smartphone-laptop-zac-wolff-unsplash.jpg",
+        "credit": "Zac Wolff / Unsplash"
+      }
+    },
+    {
+      "kind": "card",
+      "heading": "Not there *yet*",
+      "paras": [
+        "OpenAI says its models do not yet fully reflect the new Spec and it is testing new training methods to teach the values.",
+        "It is asking the public where the new balance gets things wrong."
+      ],
+      "image": {
+        "url": "https://cellcog.ai/blog/media/openai-model-spec-five-values/hero.webp?v=b2657dcc13",
+        "credit": "CellCog"
+      }
+    },
+    {
+      "kind": "cta",
+      "hook": "OpenAI just changed the rules its AI lives by. Follow to see whether GPT actually behaves differently."
+    }
+  ],
+  "site_article": {
+    "headline": "OpenAI rebuilds its Model Spec around five values and renames the model GPT",
+    "dek": "The rewritten rulebook drops most style guidance, turns many rules into adjustable defaults and admits current models do not fully follow it yet.",
+    "summary": "OpenAI published a rewritten Model Spec on October 29, 2026, organized around five values with faithfulness to human intent as the foundation. The document now calls the model GPT instead of the assistant and retires most detailed style rules.",
+    "seo_title": "OpenAI Model Spec update: five values and a model named GPT",
+    "seo_description": "OpenAI rewrote its Model Spec around five values, renamed the model GPT, cut most style rules and says its models do not fully follow it yet.",
+    "answer_summary": "The Model Spec is OpenAI's public description of how its models should behave. The October 29, 2026 version rests on five values: faithfulness to human intent, minimizing harm, honesty and transparency, human agency and care.",
+    "tags": ["OpenAI", "Model Spec", "GPT", "AI safety", "ChatGPT"],
+    "hero_alt": "The OpenAI logo shown on a computer monitor against a blue wall.",
+    "paragraphs": [
+      { "kind": "fact", "text": "OpenAI published a rewritten version of its Model Spec on October 29, 2026, the public document that describes how the company wants its AI models to behave, according to The Next Web and Unite.AI. The update reorganizes the guidance around five core values and changes how the document refers to the model itself.", "sources": [0, 1] },
+      { "kind": "fact", "text": "The five values are faithfulness to human intent, minimizing harm, honesty and transparency, human agency, and care. OpenAI describes faithfulness to human intent as the foundation, meaning the model should work out what people actually want rather than follow instructions in a narrowly literal way, The Next Web reported.", "sources": [0, 2] },
+      { "kind": "fact", "text": "Unite.AI reported that OpenAI says these five values do not capture the full range of human values its models should respect. In OpenAI's framing, the company writes the Spec and sets boundaries, developers direct their applications inside those boundaries, and users direct the model's work within those limits.", "sources": [1] },
+      { "kind": "heading", "text": "A new name and fewer style rules" },
+      { "kind": "fact", "text": "The updated document refers to the model as GPT instead of the assistant. Unite.AI reported that OpenAI ties the change to the growing range of use cases and settings where its models are deployed.", "sources": [1, 2] },
+      { "kind": "fact", "text": "OpenAI also retired most of its detailed style guidance. Instead of fixed formatting and tone rules, style is meant to adapt to aggregate, cultural and individual preferences, with user feedback treated as evidence of what people want, according to Unite.AI. The Next Web reported that most rules are now defaults that users and developers can adjust, with firm limits kept only where they are needed to protect people.", "sources": [0, 1] },
+      { "kind": "fact", "text": "Some stronger defaults remain. The model is expected to approach questions objectively and not to infer a preferred position from what a person appears to want to hear, though it may take a side when asked. The Next Web connected this guidance to growing criticism of chatbots that flatter their users.", "sources": [0, 1] },
+      { "kind": "heading", "text": "Context, agents and hard limits" },
+      { "kind": "fact", "text": "New sections explain how the model should use context such as earlier conversations and saved memories to understand what a person intends, how it should support people's own choices and how it should follow social and professional norms. ShiftDelete.Net reported that the guidance also asks models to make their assumptions visible and easy to correct and to explain the side effects of actions taken by agents.", "sources": [0, 1, 2] },
+      { "kind": "fact", "text": "Unite.AI reported that a root-level rule called no other objectives bars the model from pursuing extra goals such as revenue, self-preservation, evading shutdown or gathering resources, and that another root-level rule requires it to remain open to legitimate oversight, correction and shutdown. For autonomous work, the Spec recommends a defined scope with allowed tools, a time limit, a cost limit and an ending condition.", "sources": [1] },
+      { "kind": "fact", "text": "OpenAI acknowledged that its current models do not yet fully reflect the new Spec. The company said it is testing new training methods to teach the values and is asking the public where it disagrees with the balance the document strikes, according to The Next Web and ShiftDelete.Net. Unite.AI reported that the Spec is released into the public domain under a CC0 license.", "sources": [0, 1, 2] },
+      { "kind": "analysis", "text": "The rewrite moves the Spec away from a long list of specific behaviors and toward a small set of principles that the model is supposed to apply on its own. That approach gives the model more room to adjust to each person, but it also makes the training step more important, since a principle only helps if the model reliably follows it. OpenAI's own admission that its models are not there yet means the document describes a target rather than current behavior." },
+      { "kind": "why_it_matters", "text": "The next thing to watch is whether OpenAI publishes results from the new training methods and whether ChatGPT users notice less flattery and more consistent behavior in future model releases." }
+    ]
+  }
+}
