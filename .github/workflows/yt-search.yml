@@ -1,0 +1,19 @@
+name: YouTube search
+
+# Lists YouTube results (id, channel, duration, title) for a query, to pick a clean original video.
+on:
+  workflow_dispatch:
+    inputs:
+      q: { description: search words, required: true }
+      n: { description: how many results, required: false, default: '8' }
+
+jobs:
+  search:
+    runs-on: ubuntu-latest
+    steps:
+      - run: pip install -q -U yt-dlp
+      - env:
+          Q: ${{ inputs.q }}
+          N: ${{ inputs.n }}
+        run: |
+          yt-dlp --flat-playlist --print "%(id)s | %(channel)s | %(duration_string)s | %(upload_date)s | %(title)s" "ytsearch${N}:${Q}" 2>/dev/null | while IFS= read -r l; do echo "::notice::$l"; done
