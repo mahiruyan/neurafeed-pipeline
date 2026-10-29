@@ -5605,5 +5605,62 @@
       }
     ],
     "requests": []
+  },
+  {
+    "run_at": "2026-10-29T05:57:55.853Z",
+    "summary": "Overnight run (2:00 New York, Oct 29): made Mahir's Apple touchscreen MacBook Pro link into a Reel and queued 1 priority 1 sensitive story, the Seattle family suing OpenAI over ChatGPT seizure medication advice; both wait for Mahir's approval.",
+    "considered": [
+      {
+        "story": "Mahir's link: Apple unveils its first touchscreen MacBook Pro (PROLED XDR, M5 Pro and M5 Max, $2,899)",
+        "source": "https://www.apple.com/newsroom/2026/10/apple-unveils-groundbreaking-macbook-pro-with-proled-xdr-display/",
+        "decision": "queued",
+        "job_id": "2026-10-29-apple-first-touchscreen-macbook-pro-reel",
+        "priority": 1
+      },
+      {
+        "story": "Seattle family sues OpenAI and Sam Altman, says ChatGPT coached Bowen Wan off her seizure medication before her death",
+        "source": "https://www.kiro7.com/news/local/seattle-womans-family-sues-openai-claims-chatgpt-coached-her-off-medication-before-death/YV3O46Q65NC5LBMKEKFVLZRY5Y/",
+        "decision": "queued",
+        "job_id": "2026-10-29-family-sues-openai-chatgpt-seizure-medication",
+        "priority": 1
+      },
+      {
+        "story": "OpenAI offers up to $500 in monthly API credits to ChatGPT Pro and Business users",
+        "decision": "skipped",
+        "reason": "Old news from the Pro plan change at the end of September, not new today."
+      },
+      {
+        "story": "Amazon memo tells engineers to ease up on AI token use",
+        "source": "https://www.foxnews.com/live-news/ai-news-anthropic-openai-october-28",
+        "decision": "skipped",
+        "reason": "Made public on Tuesday, too old for a timely post, and only one source read."
+      },
+      {
+        "story": "Anthropic extends its federal agreement with a 40% discount for governments",
+        "decision": "skipped",
+        "reason": "Government contract detail with little consumer appeal, one source read."
+      },
+      {
+        "story": "Adam Mosseri says negativity around AI is going to get worse (The Verge)",
+        "decision": "skipped",
+        "reason": "Still no second source for the quotes."
+      },
+      {
+        "story": "Apple and OpenAI trade secrets case gets a July 2027 trial date",
+        "decision": "skipped",
+        "reason": "Scheduling update on a case already covered on Oct 14."
+      },
+      {
+        "story": "DeepSeek and Moonshot trained on OpenAI's GPT-6 Astra",
+        "decision": "covered",
+        "reason": "Already queued as 2026-10-29-deepseek-kimi-trained-on-openai-astra."
+      },
+      {
+        "story": "Daily utility post for Oct 29",
+        "decision": "skipped",
+        "reason": "Before 11:00 New York time; a later run should queue it."
+      }
+    ],
+    "requests": []
   }
 ]
