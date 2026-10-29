@@ -4,7 +4,7 @@ name: YouTube search
 on:
   workflow_dispatch:
     inputs:
-      q: { description: search words, required: true }
+      q: { description: 'search words, or a page URL to list its video files', required: true }
       n: { description: how many results, required: false, default: '8' }
 
 jobs:
@@ -16,4 +16,8 @@ jobs:
           Q: ${{ inputs.q }}
           N: ${{ inputs.n }}
         run: |
+          if [[ "$Q" == http* ]]; then
+            curl -sL -m 30 -A "Mozilla/5.0" "$Q" | grep -oE 'https?://[^"'"'"' )]+\.(mp4|m3u8)[^"'"'"' )]*' | sort -u | head -40 | while IFS= read -r l; do echo "::notice::$l"; done
+            exit 0
+          fi
           yt-dlp --flat-playlist --print "%(id)s | %(channel)s | %(duration_string)s | %(upload_date)s | %(title)s" "ytsearch${N}:${Q}" 2>/dev/null | while IFS= read -r l; do echo "::notice::$l"; done
