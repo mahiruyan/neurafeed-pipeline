@@ -15,9 +15,14 @@
       "status": "approved",
       "at": "2026-10-29T04:10:57.946Z",
       "by": "night rule: evergreen"
+    },
+    {
+      "status": "posted",
+      "at": "2026-10-29T12:16:30.246Z",
+      "by": "system"
     }
   ],
-  "status": "approved",
+  "status": "posted",
   "files": [
     "out/2026-10-29-gemini-1-billion-users-alphabet-stock-drops/1.jpg",
     "out/2026-10-29-gemini-1-billion-users-alphabet-stock-drops/2.jpg",
@@ -29,7 +34,7 @@
     "slide 1: fal image: [{\"loc\":[\"body\",\"input.prompt\"],\"msg\":\"The provided image URL is not accessible or has expired. Please ensure the URL is valid and publicly accessible.\",\"type\":\"value_error\",\"url\":\"https://docs.fal.ai/errors#value_error\",\"input\":null},{\"loc\":[\"body\",\"input.image_urls[0]\"],\"msg\":\"The provided image U",
     "slide 4: Image too small (3384 bytes) at https://www.stocktitan.net/img/articles/alphabet-q3-2026-earnings-google-cloud-doubles-search-slows-alphabet-capex-by-quarter-73280919.svg"
   ],
-  "updated_at": "2026-10-29T04:10:57.946Z",
+  "updated_at": "2026-10-29T12:16:30.246Z",
   "sent_at": "2026-10-29T02:13:24.582Z",
   "message_id": 1865,
   "by": "night rule: evergreen",
@@ -40,5 +45,15 @@
     1863,
     1864,
     1865
-  ]
+  ],
+  "posted_at": "2026-10-29T12:16:30.246Z",
+  "publish": {
+    "mode": "instagram",
+    "media_id": "18221905090349604",
+    "facebook": {
+      "id": "876414312221880_122147663727099381",
+      "type": "album"
+    },
+    "threads_error": "Threads me/threads_publish: The requested resource does not exist"
+  }
 }
