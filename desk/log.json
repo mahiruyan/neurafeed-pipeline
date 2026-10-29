@@ -1,71 +1,5 @@
 [
   {
-    "run_at": "2026-10-22T12:05:48.935Z",
-    "summary": "Morning run (07:54 New York): no open links or requests; queued the Dario Amodei safety reply as priority 1 in Oct 22's last free slot (8 of 8 with the 7 already approved or posted).",
-    "considered": [
-      {
-        "story": "Dario Amodei answers Encode's Nathan Calvin with a 2,000 word X post: nine costly safety decisions, admitted mistakes, pace of AI options by January 15, 2027",
-        "source": "https://thenextweb.com/news/dario-amodei-anthropic-race-to-the-top-nine-safety-decisions",
-        "decision": "queued",
-        "job_id": "2026-10-22-amodei-admits-mistakes-nine-safety-calls",
-        "priority": 1,
-        "reason": "Earlier runs read it as interview comments; it is the Anthropic CEO's own post with new admissions and a dated commitment, viewed 800,000+ times."
-      },
-      {
-        "story": "Nvidia launches Open Secure AI Alliance without OpenAI, Anthropic or Google",
-        "source": "https://techradar.com/pro/nvidia-launches-open-secure-ai-alliance-but-theres-no-room-for-openai-anthropic-or-google",
-        "decision": "skipped",
-        "reason": "Old news from July 2026 that resurfaced in search."
-      },
-      {
-        "story": "Trump says large data centers should make their own electricity (Truth Social)",
-        "source": "https://www.foxnews.com/live-news/ai-artificial-super-intelligence-regulation-midterms-congress-october-21",
-        "decision": "skipped",
-        "reason": "Political post from Oct 21 with no policy action yet, and the day is now full."
-      },
-      {
-        "story": "Lawsuit alleges OpenAI took children's data without parental consent",
-        "source": "https://news.bloomberglaw.com/litigation/openai-accused-of-taking-minors-data-without-parental-consent",
-        "decision": "skipped",
-        "reason": "Lawsuit was filed around Oct 16, so it is not fresh news."
-      },
-      {
-        "story": "Recursive launches Flint, a laptop coding model largely built by AI",
-        "source": "https://techcrunch.com/2026/10/21/recursive-launches-flint-a-laptop-coding-model-it-says-was-largely-built-by-ai/",
-        "decision": "skipped",
-        "reason": "Priority 2 startup launch and Oct 22 is now at the 8 post cap."
-      },
-      {
-        "story": "Walmart welcomes AI shopping agents while Amazon blocks them",
-        "source": "https://techcrunch.com/2026/10/21/while-amazon-blocks-ai-agents-walmart-rolls-out-the-welcome-mat/",
-        "decision": "skipped",
-        "reason": "Priority 2 and the day is full; can run on a later day."
-      },
-      {
-        "story": "Mistral Large 4 public preview",
-        "source": "https://mistral.ai/news/mistral-large-4/",
-        "decision": "skipped",
-        "reason": "Not a priority 1 company and the day is full."
-      },
-      {
-        "story": "Claude Duet research preview",
-        "decision": "covered",
-        "reason": "Already queued as 2026-10-21-claude-duet-works-while-you-sleep."
-      },
-      {
-        "story": "Google DeepMind staff resign over military AI contracts",
-        "decision": "covered",
-        "reason": "Posted as 2026-10-21-google-deepmind-staff-quit-pentagon."
-      },
-      {
-        "story": "PHP2Shell flaws found with AI",
-        "decision": "covered",
-        "reason": "Posted as 2026-10-21-ai-finds-php2shell-flaws."
-      }
-    ],
-    "requests": []
-  },
-  {
     "run_at": "2026-10-22T14:10:43.990Z",
     "summary": "Mid-morning run (09:55 New York): no open links or requests; queued Microsoft's report that a China-aligned group used AI agents against 2,250 Microsoft 365 tenants as priority 1 (sensitive, waits for Mahir). Oct 22 is otherwise at the 8 post cap, so the pipeline will place it ahead of the lower priority posts or hold it for Oct 23.",
     "considered": [
@@ -5565,6 +5499,75 @@
         "story": "Seattle family sues OpenAI over ChatGPT seizure medication advice",
         "decision": "covered",
         "reason": "Already queued as 2026-10-29-family-sues-openai-chatgpt-seizure-medication."
+      },
+      {
+        "story": "Daily utility post for Oct 29",
+        "decision": "skipped",
+        "reason": "Before 11:00 New York time; a later run should queue it."
+      }
+    ],
+    "requests": []
+  },
+  {
+    "run_at": "2026-10-29T12:19:31.453Z",
+    "summary": "Morning run (08:20 New York): no open links or requests (old links already in skipped.json, the failed Oct 21 request is not retried); queued the NYT report on a suspected Chinese asset close to Jensen Huang (priority 1, sensitive, needs approval) and the 12.4% drop in computer science enrollment (priority 2).",
+    "considered": [
+      {
+        "story": "NYT: US officials believe Megaspeed executive Alice Huang is a Chinese intelligence asset who cultivated Jensen Huang; Trump briefed but did not act",
+        "source": "https://www.freepressjournal.in/tech/alice-huang-close-friend-of-nvidias-jensen-huang-is-believed-to-be-a-chinese-spy-trump-was-briefed-but-took-no-action-report",
+        "decision": "queued",
+        "job_id": "2026-10-29-nyt-chinese-asset-close-to-jensen-huang",
+        "priority": 1
+      },
+      {
+        "story": "Computer science enrollment at four-year colleges falls 12.4% this fall (National Student Clearinghouse)",
+        "source": "https://www.highereddive.com/news/undergraduate-enrollment-inched-up-this-fall-while-masters-dips-37/873114/",
+        "decision": "queued",
+        "job_id": "2026-10-29-computer-science-enrollment-drops-12-percent",
+        "priority": 2
+      },
+      {
+        "story": "Epic's Tim Sweeney says Claude Code and Codex now write Unreal Engine code",
+        "source": "https://gamingbolt.com/epic-games-confirms-ai-is-being-used-to-develop-code-for-unreal-engine",
+        "decision": "skipped",
+        "reason": "Same angle as 2026-10-12-epic-games-ai-first-no-handwritten-code."
+      },
+      {
+        "story": "South Korea will seek criminal charges and 3-year bans for CSAT takers who cheat with AI glasses",
+        "source": "https://koreatimes.co.kr/southkorea/20261029/govt-to-pursue-criminal-punishment-3-year-exam-ban-for-csat-cheaters-using-ai-glasses",
+        "decision": "skipped",
+        "reason": "Fun but non-US policy story; kept the slots for bigger US stories. Possible later filler."
+      },
+      {
+        "story": "OpenAI API spec references an unannounced GPT Image 2.6",
+        "source": "https://thewincentral.com/gpt-image-2-6-openai-api-spec-leak-markup-editor/",
+        "decision": "skipped",
+        "reason": "Single-source leak with no confirmation; wait for the launch."
+      },
+      {
+        "story": "Nscale pushes a $30 billion IPO despite investor pushback (Bloomberg)",
+        "decision": "skipped",
+        "reason": "Paywalled single source and of limited US consumer interest."
+      },
+      {
+        "story": "Tencent Cloud bets on its WorkBuddy enterprise assistant",
+        "decision": "skipped",
+        "reason": "China enterprise strategy story with little US interest."
+      },
+      {
+        "story": "OpenAI election war room ahead of the midterms",
+        "decision": "skipped",
+        "reason": "Already considered and skipped in earlier runs; no new development."
+      },
+      {
+        "story": "ChatGPT iCloud Mail and Calendar plugins",
+        "decision": "skipped",
+        "reason": "Announced Oct 27; kept as a candidate for today's utility post after 11:00 New York."
+      },
+      {
+        "story": "Gemini 4 Carbon, Microsoft and Alphabet earnings, DeepSeek distillation, family lawsuit against OpenAI",
+        "decision": "covered",
+        "reason": "Already queued in earlier jobs from Oct 28 and Oct 29."
       },
       {
         "story": "Daily utility post for Oct 29",
