@@ -1,144 +1,5 @@
 [
   {
-    "run_at": "2026-10-22T06:00:05.189Z",
-    "summary": "Early morning run (01:55 New York): no open links or requests; nothing queued because Oct 22 already has 7 approved posts waiting (cap 8) and no new uncovered priority 1 story appeared since the last run.",
-    "considered": [
-      {
-        "story": "US DHS bans DeepSeek from federal civilian agency systems; China defends DeepSeek",
-        "source": "https://www.cnbc.com/2026/10/20/us-deepseek-federal-agency-ban.html",
-        "decision": "skipped",
-        "reason": "Political and sensitive story from Oct 20; the last Oct 22 slot is kept for fresh priority 1 news in the day runs."
-      },
-      {
-        "story": "Walmart opens Agent Gateway for AI shopping agents while Amazon blocks them (TechCrunch)",
-        "source": "https://techcrunch.com/2026/10/21/while-amazon-blocks-ai-agents-walmart-rolls-out-the-welcome-mat/",
-        "decision": "skipped",
-        "reason": "Priority 2 story; only one slot is left for Oct 22, held for priority 1 news. Good candidate if the day runs find nothing bigger."
-      },
-      {
-        "story": "NVIDIA GTC Berlin keynote: Vera Rubin in full production, AI factories",
-        "source": "https://blogs.nvidia.com/blog/gtc-berlin-2026-keynote/",
-        "decision": "skipped",
-        "reason": "Mostly European infrastructure announcements with little consumer appeal; day runs can revisit if one item breaks out."
-      },
-      {
-        "story": "Microsoft researcher and collaborator prove the 31-year-old KLS conjecture with AI help (Unite.AI)",
-        "source": "https://www.unite.ai/microsoft-researcher-and-collaborator-prove-31-year-old-kls-conjecture/",
-        "decision": "skipped",
-        "reason": "Single niche source and the queue is nearly full."
-      },
-      {
-        "story": "LiteLLM 1.107.0 on PyPI ships a credential stealer (SafeDep)",
-        "source": "https://safedep.io/litellm-pypi-compromise-credential-stealer-backdoor/",
-        "decision": "skipped",
-        "reason": "Developer security story with a narrow audience and a single source."
-      },
-      {
-        "story": "GM debuts OnStar AI agent in 2027 Cadillac Lyriq (Wired)",
-        "source": "https://www.wired.com/story/gm-wants-your-car-to-do-your-chores/",
-        "decision": "skipped",
-        "reason": "Priority 2 car feature and in-car AI was just covered as 2026-10-21-gemini-android-auto-reads-your-apps."
-      },
-      {
-        "story": "Mistral Large 4 public preview",
-        "source": "https://mistral.ai/news/mistral-large-4/",
-        "decision": "skipped",
-        "reason": "Not a priority 1 company and only one slot is left for Oct 22."
-      },
-      {
-        "story": "OpenAI agents disabling misalignment monitors (CSO Online follow-up)",
-        "decision": "covered",
-        "reason": "Already covered as 2026-10-21-openai-agents-switched-off-alarms."
-      },
-      {
-        "story": "Claude Duet launch coverage",
-        "decision": "covered",
-        "reason": "Already queued and approved as 2026-10-21-claude-duet-works-while-you-sleep."
-      },
-      {
-        "story": "Meta Q3 results and Muse focus",
-        "decision": "covered",
-        "reason": "Already queued as 2026-10-21-meta-ai-spending-ate-the-cash."
-      }
-    ],
-    "requests": []
-  },
-  {
-    "run_at": "2026-10-22T08:01:17.938Z",
-    "summary": "Early morning run (03:55 New York): no open links or requests; nothing queued because Oct 22 already has 7 approved posts waiting (cap 8) and no new uncovered priority 1 story appeared overnight.",
-    "considered": [
-      {
-        "story": "Dario Amodei defends Anthropic's race to the top strategy, says the safety delay may have cost it a lead",
-        "source": "https://finance.biggo.com/news/711e42c0-9ac2-4103-afa9-a954d5fec673",
-        "decision": "skipped",
-        "reason": "Interview comments, not a major new event; the last Oct 22 slot is held for fresh priority 1 news."
-      },
-      {
-        "story": "Mistral and NVIDIA build AI workflows for industrial engineering",
-        "source": "https://mistral.ai/news/mistral-nvidia-ai-for-industrial-engineering/",
-        "decision": "skipped",
-        "reason": "Niche enterprise partnership with little US consumer interest."
-      },
-      {
-        "story": "Youth-led group Design It For Us seeks Congressional AI protections by end of 2027",
-        "source": "https://www.semafor.com/article/10/21/2026/youth-led-ai-safety-group-demands-protections-for-young-users",
-        "decision": "skipped",
-        "reason": "Advocacy story with a narrow audience, and the day is nearly full."
-      },
-      {
-        "story": "Blackstone's Jas Khaira says fears over AI buildout debt are overblown",
-        "source": "https://techcrunch.com/2026/10/21/blackstones-jas-khaira-says-fears-over-ai-buildout-debt-are-overblown/",
-        "decision": "skipped",
-        "reason": "Finance commentary, not news people can act on."
-      },
-      {
-        "story": "Recursive launches Flint, a laptop coding model largely built by AI",
-        "source": "https://techcrunch.com/2026/10/21/recursive-launches-flint-a-laptop-coding-model-it-says-was-largely-built-by-ai/",
-        "decision": "skipped",
-        "reason": "Priority 2 startup launch; the last slot stays free for priority 1 news."
-      },
-      {
-        "story": "Walmart welcomes AI shopping agents while Amazon blocks them",
-        "source": "https://techcrunch.com/2026/10/21/while-amazon-blocks-ai-agents-walmart-rolls-out-the-welcome-mat/",
-        "decision": "skipped",
-        "reason": "Priority 2; good fallback if the day still has a free slot this afternoon."
-      },
-      {
-        "story": "Mistral Large 4 public preview",
-        "source": "https://mistral.ai/news/mistral-large-4/",
-        "decision": "skipped",
-        "reason": "Not a priority 1 company and only one slot is left for Oct 22."
-      },
-      {
-        "story": "Kognitos launches AI Employees for finance",
-        "source": "https://aiagentstore.ai/ai-agent-news/this-week",
-        "decision": "skipped",
-        "reason": "Small enterprise launch."
-      },
-      {
-        "story": "PHP2Shell flaws found with AI",
-        "decision": "covered",
-        "reason": "Already posted as 2026-10-21-ai-finds-php2shell-flaws."
-      },
-      {
-        "story": "Google DeepMind staff resign over military AI work",
-        "decision": "covered",
-        "reason": "Already queued as 2026-10-21-google-deepmind-staff-quit-pentagon."
-      },
-      {
-        "story": "Claude Duet launch",
-        "decision": "covered",
-        "reason": "Already queued as 2026-10-21-claude-duet-works-while-you-sleep."
-      },
-      {
-        "story": "OpenAI models come to Google Cloud",
-        "decision": "covered",
-        "reason": "Already had a job, 2026-10-21-openai-models-google-cloud."
-      }
-    ],
-    "requests": []
-  },
-  {
     "run_at": "2026-10-22T09:55:46.607Z",
     "summary": "Early morning run (05:55 New York): no open links or requests; nothing queued because Oct 22 already has 7 approved posts waiting (cap 8) and no new uncovered priority 1 story appeared since the last run.",
     "considered": [
@@ -5659,6 +5520,68 @@
         "story": "Daily utility post for Oct 29",
         "decision": "skipped",
         "reason": "Before 11:00 New York time; a later run should queue it."
+      }
+    ],
+    "requests": []
+  },
+  {
+    "run_at": "2026-10-29T08:07:01.786Z",
+    "summary": "Early run (4:00 New York, Oct 29): nothing new queued. No open links or requests; the overnight stories found were already covered or too old to post before they expire, and today already has 3 news posts plus Mahir's Reel waiting for approval.",
+    "considered": [
+      {
+        "story": "Samsung posts record Q3 operating profit of 107.4 trillion won on AI memory demand, HBM sold out for next year",
+        "source": "https://www.investing.com/news/stock-market-news/samsung-posts-record-profit-in-q3-on-ai-chip-boom-4981289",
+        "decision": "skipped",
+        "reason": "Reported around 23:00 UTC Oct 28, so a timely post would expire at the start of the first New York window, and the morning slots are already taken by priority 1 posts."
+      },
+      {
+        "story": "Reuters: Z.AI's GLM-5.3 completed 3 of 13 multi-stage cyberattack scenarios in Irregular's tests",
+        "source": "https://www.business-standard.com/technology/tech-news/chinese-ai-model-completes-complex-cyberattacks-in-tests-raises-concerns-126102900488_1.html",
+        "decision": "skipped",
+        "reason": "Only Reuters syndications found, no independent second source, and a very similar Reuters story on Chinese AI agents ran on Oct 27."
+      },
+      {
+        "story": "ChatGPT adds iCloud Mail and Calendar plugins on all plans",
+        "source": "https://www.macrumors.com/2026/10/27/chatgpt-icloud-mail-calendar-plugin/",
+        "decision": "skipped",
+        "reason": "Launched Oct 27, too old for a timely post; a good subject for today's utility how-to after 11:00 New York time."
+      },
+      {
+        "story": "Anthropic adds a gallery of ready-made legal artifacts to Claude for Legal",
+        "source": "https://claude.com/resources/articles/introducing-artifacts-for-legal-work",
+        "decision": "skipped",
+        "reason": "Announced Oct 28, past the 12 hour window, and a niche professional feature."
+      },
+      {
+        "story": "Malaysia customs seizes about $13 million in AI chip servers at Kuala Lumpur airport",
+        "source": "https://www.thestandard.com.hk/world/article/335724/Malaysia-customs-seizes-AI-chips-worth-13-mln-at-Kuala-Lumpur-airport",
+        "decision": "skipped",
+        "reason": "Crime story with little US interest, and the reports found are mixed with an older June seizure."
+      },
+      {
+        "story": "OpenAI opens an election war room ahead of the Nov 3 midterms (Politico)",
+        "decision": "skipped",
+        "reason": "Weighed in earlier runs; political and sensitive, and from Oct 28."
+      },
+      {
+        "story": "Adam Mosseri says negativity around AI is going to get worse (The Verge)",
+        "decision": "skipped",
+        "reason": "Still no second source for the quotes."
+      },
+      {
+        "story": "Seattle family sues OpenAI over ChatGPT seizure medication advice",
+        "decision": "covered",
+        "reason": "Already queued as 2026-10-29-family-sues-openai-chatgpt-seizure-medication."
+      },
+      {
+        "story": "DeepSeek and Moonshot trained on OpenAI's GPT-6 Astra",
+        "decision": "covered",
+        "reason": "Already queued as 2026-10-29-deepseek-kimi-trained-on-openai-astra."
+      },
+      {
+        "story": "Daily utility post for Oct 29",
+        "decision": "skipped",
+        "reason": "Before 11:00 New York time; a later run should queue it (iCloud plugins in ChatGPT is a candidate)."
       }
     ],
     "requests": []
