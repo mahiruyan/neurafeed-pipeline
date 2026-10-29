@@ -1,0 +1,98 @@
+{
+  "id": "2026-10-29-claude-smart-reports-off-topic-chats",
+  "created_at": "2026-10-29T18:25:00Z",
+  "story_time": "2026-10-28T16:00:00Z",
+  "timely": false,
+  "sensitive": false,
+  "priority": 1,
+  "review": true,
+  "format": "carousel",
+  "site_category": "companies",
+  "sources": [
+    { "name": "Claude Help Center", "url": "https://support.claude.com/en/articles/16893491-get-started-with-smart-reports" },
+    { "name": "Unite.AI", "url": "https://www.unite.ai/anthropic-adds-smart-reports-surveys-pooled-budgets-to-claude-enterprise/" },
+    { "name": "Superpower Daily", "url": "https://superpowerdaily.com/posts/anthropic-gives-claude-enterprise-teams-shared-budgets-and-ai-usage-reports" }
+  ],
+  "threads_text": "Claude Enterprise admins can now run reports on how their teams use Claude, and one section counts sessions that were personal or off-topic. Names stay hidden by default and Anthropic says it is not for performance reviews. Would you be fine with your company running this on your AI chats?",
+  "caption": "Anthropic made smart reports generally available for Claude Enterprise on October 28.\nAdmins pick a team and up to 28 days, and Claude analyzes a sample of transcripts to show the work, the spend and the friction.\nOne section counts sessions that were personal or off-topic, as a total only, with names hidden by default.\n\nWould you want your boss to see this report about your team?\n\nFollow @neurafeed.ai for daily AI news.\n\nSource: Claude Help Center",
+  "slides": [
+    {
+      "kind": "cover",
+      "headline": "Claude will now tell bosses how much of their team's AI time goes to *off-topic chats*",
+      "image": {
+        "url": "https://www.unite.ai/wp-content/uploads/2026/10/anthropic-adds-smart-reports-surveys-pooled-budgets-to-claude-enterprise.jpg",
+        "credit": "Unite.AI",
+        "generate": "A tired middle-aged manager in a rumpled shirt sits alone in a dim open-plan office late in the evening, leaning toward a large monitor with a stern, suspicious expression, his face lit by the screen. Behind him, out of focus, rows of empty desks with laptops still open, coffee cups, tangled cables and a few office chairs pushed back. On the wall behind the desks, the orange logo from the first image is painted big and exact. Surreal touch: dozens of tiny paper speech bubbles drift out of the open laptops toward his monitor like moths. Harsh fluorescent light from one ceiling panel. Blank surfaces, no readable text or labels on any object, the monitor shows only abstract colored bars. Generous headroom above the man's head. The man fills the upper two thirds of the frame, the bottom third is the cluttered desk. Photorealistic, high contrast, vertical composition, one clear subject, no letters, no watermarks. It must look like an unedited real photo from a news agency, not a painting, not digital art, no glow effects.",
+        "refs": ["assets/logos/claude.png"],
+        "fallback_urls": ["https://newspeka.fra1.digitaloceanspaces.com/prod/media/276739/1793287500254.jpg?v=1793287500"]
+      },
+      "pos": "center 30%",
+      "badges": [{ "url": "assets/logos/claude.png", "shape": "free" }]
+    },
+    {
+      "kind": "card",
+      "heading": "How *smart reports* work",
+      "paras": [
+        "Anthropic made smart reports generally available for Claude Enterprise on October 28. Admins pick a team, up to 28 days and the products to check.",
+        "Claude samples transcripts, groups the work and attaches the spend."
+      ],
+      "image": {
+        "url": "https://superpowerdaily.com/api/story-images/c33e5d7f-47bb-42bd-b8e1-889778ac47b0",
+        "credit": "Superpower Daily"
+      }
+    },
+    {
+      "kind": "card",
+      "heading": "The *off-topic* count",
+      "paras": [
+        "An Inefficiencies section counts sessions that produced nothing usable and sessions that were personal or off-topic.",
+        "They show up only as a total count and cost, with no summaries and no drilldown."
+      ],
+      "image": {
+        "url": "https://newspeka.fra1.digitaloceanspaces.com/prod/media/276742/1793287512789.jpg?v=1793287514",
+        "credit": "SPEKA"
+      }
+    },
+    {
+      "kind": "card",
+      "heading": "Not a *performance review*",
+      "paras": [
+        "Names show as \"User\" by default, and every reveal is logged. Health, union activity and politics are off limits for custom questions.",
+        { "t": "Anthropic says the reports should not be used to judge individuals or make job decisions.", "strong": true }
+      ],
+      "image": {
+        "url": "assets/logos/claude.png",
+        "credit": "Anthropic",
+        "fit": "contain"
+      }
+    },
+    {
+      "kind": "cta",
+      "hook": "Your AI chats at work are becoming company data. Follow to see what bosses can see next."
+    }
+  ],
+  "site_article": {
+    "headline": "Claude Enterprise adds smart reports that show admins how teams use Claude",
+    "dek": "The reports count personal or off-topic sessions only in aggregate, hide names by default and come with new surveys and shared budgets.",
+    "summary": "Anthropic made smart reports, in-app surveys and pooled group budgets generally available for Claude Enterprise on October 28, 2026. Smart reports sample a team's transcripts to show the work done, its cost at list price and recurring problems, with up to 10 free reports per organization each month.",
+    "seo_title": "Claude Enterprise smart reports: what admins can see",
+    "seo_description": "Anthropic's smart reports show Claude Enterprise admins how teams use Claude, including an aggregate count of personal or off-topic sessions.",
+    "answer_summary": "Smart reports let Claude Enterprise admins see what work a team does with Claude and what it costs. Personal or off-topic sessions appear only as an aggregate count and cost, and names are hidden by default.",
+    "tags": ["Anthropic", "Claude", "Claude Enterprise", "Workplace AI"],
+    "hero_alt": "A manager in a dim office studies a large monitor while open laptops sit on empty desks behind him.",
+    "paragraphs": [
+      { "kind": "fact", "text": "Anthropic made three new controls generally available for Claude Enterprise on October 28, 2026: smart reports, in-app employee surveys and pooled group budgets. Smart reports analyze how a team uses Claude and report on the work getting done, according to the Claude Help Center, which says the feature is meant to help companies understand adoption and plan their investment in Claude.", "sources": [0, 2] },
+      { "kind": "heading", "text": "How a report is built" },
+      { "kind": "fact", "text": "An admin chooses a team, a date range covering up to the last 28 days and the products to include: chat, Claude Code, Claude Cowork, or chat and Cowork combined. Claude then samples transcripts from that period, groups the sessions into workstreams and output types, and attaches spend at list price to each group. Unite.AI reported that a report usually takes a few hours and can be downloaded as an HTML file with drilldowns.", "sources": [0, 1] },
+      { "kind": "fact", "text": "The finished report ranks top uses by sessions and by spend, lists deliverables such as analysis, documentation, content drafts and code with the average cost per session, and shows where the most expensive sessions cluster. It also names common pain points, such as connectors that were never set up, output that missed the request and loops of rework, and it recommends workflows a team could turn into shared skills or rules it could add to a code repository.", "sources": [1, 2] },
+      { "kind": "heading", "text": "Off-topic sessions and privacy limits" },
+      { "kind": "fact", "text": "One section of the report, labeled Inefficiencies, counts sessions that produced nothing usable as well as sessions that were personal or off-topic. According to the Help Center, those sessions appear only as an aggregate count and cost, with no summaries and no drilldown, and personal conversations do not include individual sessions or names.", "sources": [0] },
+      { "kind": "fact", "text": "Anthropic also limits what admins can ask. Custom questions cannot cover restricted topics, which include protected characteristics, health and medical matters, union activity, harassment, whistleblower or legal complaints, political or religious views, personal life and sentiment about people. Sessions that touch those topics feed only the aggregate analysis. A separate setting that allows attribution to individual users is off by default. When it is off, every drilldown shows the word User in place of a name; when it is on, names are still hidden until a viewer reveals them, and each reveal is logged.", "sources": [0, 1] },
+      { "kind": "fact", "text": "The Help Center states that smart reports should not be used for evaluating individual performance or making employment decisions. The feature is off by default and must be turned on in organization settings, and each organization can run up to 10 reports per month at no charge. Unite.AI reported that the reports are not available to organizations that use customer managed encryption keys, a HIPAA configuration or a hybrid deployment.", "sources": [0, 1] },
+      { "kind": "heading", "text": "Surveys and shared budgets" },
+      { "kind": "fact", "text": "The same release added in-app surveys that ask employees about their most valuable recent work with Claude, whether it changed how long tasks took and which uses colleagues should copy, with results exportable to a spreadsheet. Pooled group budgets add a shared monthly amount on top of each member's own limit, with every request counted against both and email alerts to billing admins at 50, 75, 95 and 100 percent of a budget.", "sources": [1, 2] },
+      { "kind": "analysis", "text": "In NeuraFeed's reading, the design shows Anthropic trying to give companies a clear picture of what they pay for without turning Claude into a tool for watching individual workers. The aggregate off-topic count, hidden names and logged reveals set default limits, but the attribution switch means each company still decides how much its managers can see." },
+      { "kind": "why_it_matters", "text": "Watch whether large employers turn on individual attribution, and whether OpenAI, Google and Microsoft add similar usage reports to their workplace AI plans." }
+    ]
+  }
+}

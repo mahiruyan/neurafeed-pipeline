@@ -1,84 +1,5 @@
 [
   {
-    "run_at": "2026-10-22T18:08:37.381Z",
-    "summary": "Afternoon run (13:55 New York): no open links or requests; queued Straiker's report that a crime group used Claude, Grok and Kimi agents against 400+ Latin American banks as priority 1 (sensitive, waits for Mahir). Oct 22 is already at the 8 post cap with approved posts waiting, so no utility or priority 2 stories were added.",
-    "considered": [
-      {
-        "story": "Straiker: CyberCartel used Claude, Grok and Kimi agents (CARLIY0S) to target 400+ Latin American banks; Anthropic revoked access, xAI investigating",
-        "source": "https://gbhackers.com/claude-and-grok-exploited/",
-        "decision": "queued",
-        "job_id": "2026-10-22-claude-grok-agents-400-banks",
-        "priority": 1,
-        "reason": "Anthropic and xAI models used in a real criminal campaign, confirmed by GBHackers, Infobae, Digital Today (citing The Information) and Business Today; sensitive (crime)."
-      },
-      {
-        "story": "New Mexico judge orders Meta to pay $25 billion in consumer protection penalties",
-        "source": "https://sourcenm.com/2026/10/21/new-mexico-judge-orders-meta-to-pay-state-25b/",
-        "decision": "skipped",
-        "reason": "Not an AI story, and the day is at the cap."
-      },
-      {
-        "story": "Tesla Q3 profit falls 44 percent as AI and robotaxi spending grows",
-        "source": "https://apnews.com/article/cfe0453f6bf0d08d22150022128492fa",
-        "decision": "skipped",
-        "reason": "Earnings story, Optimus angle was already looked at in an earlier run, and the day is full."
-      },
-      {
-        "story": "Hugging Face releases open Carbon-X DNA language model",
-        "decision": "skipped",
-        "reason": "Niche research release with no direct source read yet, and the day is full."
-      },
-      {
-        "story": "Flapping Airplanes raises $1B at a $6B valuation",
-        "decision": "skipped",
-        "reason": "Priority 2 funding round and Oct 22 has no free slot."
-      },
-      {
-        "story": "Legora raises $550M at an $8.8B valuation",
-        "decision": "skipped",
-        "reason": "Legal AI funding round, low US consumer interest, day is full."
-      },
-      {
-        "story": "Palantir says it cannot shut off NATO's Maven AI system",
-        "source": "https://www.reuters.com/business/media-telecom/palantir-says-it-cannot-shut-off-nato-ai-system-europeans-fear-us-tech-2026-10-22/",
-        "decision": "skipped",
-        "reason": "Defense policy story with no consumer angle, priority 2, and the day is full."
-      },
-      {
-        "story": "Google hardens Chrome against ClickFix attacks with Gemini analysis",
-        "source": "https://www.securityweek.com/google-hardens-chrome-against-clickfix-attacks-insecure-http-connections/",
-        "decision": "skipped",
-        "reason": "Incremental security feature, priority 2, and the day is full."
-      },
-      {
-        "story": "DeepSeek nears a $15 billion round",
-        "decision": "skipped",
-        "reason": "Still a report with terms that could change; already looked at in earlier runs."
-      },
-      {
-        "story": "Utility post for Oct 22",
-        "decision": "skipped",
-        "reason": "The approved utility 2026-10-20-claude-prompt-fixes-anthropic-guide has not posted yet and the day is at the cap."
-      },
-      {
-        "story": "Claude Duet buys business supplies (PYMNTS)",
-        "decision": "covered",
-        "reason": "Part of the Claude Duet launch, posted as 2026-10-21-claude-duet-works-while-you-sleep."
-      },
-      {
-        "story": "Microsoft Storm-0940 AI agent attack",
-        "decision": "covered",
-        "reason": "Posted as 2026-10-22-microsoft-ai-agents-hacked-2250-tenants."
-      },
-      {
-        "story": "Barclays 5,000 job cuts",
-        "decision": "covered",
-        "reason": "Queued as 2026-10-22-barclays-cuts-5000-jobs-fewer-developers."
-      }
-    ],
-    "requests": []
-  },
-  {
     "run_at": "2026-10-22T20:19:34.501Z",
     "summary": "Late afternoon run (15:55 New York): no open links or requests; queued Microsoft's Science study on its MAI-DxO diagnostic AI (83% vs 36% for generalist doctors) as priority 1 (sensitive, health, waits for Mahir; timely false so it can go out tomorrow, since Oct 22 is at the 8 post cap). No utility or priority 2 stories were added.",
     "considered": [
@@ -5543,5 +5464,90 @@
       }
     ],
     "requests": []
+  },
+  {
+    "run_at": "2026-10-29T18:10:44.169Z",
+    "summary": "Made Mahir's NYT link into a single-image post (both requests), queued Claude Enterprise smart reports (p1) and Mistral Large 4 open weights (p2); today now has 8 desk news jobs.",
+    "considered": [
+      {
+        "story": "NYT: businesswoman close to Jensen Huang passed intelligence to Beijing (Mahir's link, single image)",
+        "source": "https://x.com/nytimes/status/2115805793891098841",
+        "decision": "queued",
+        "job_id": "2026-10-29-jensen-huang-businesswoman-beijing-single",
+        "priority": 1
+      },
+      {
+        "story": "Claude Enterprise smart reports count personal or off-topic sessions for admins",
+        "source": "https://support.claude.com/en/articles/16893491-get-started-with-smart-reports",
+        "decision": "queued",
+        "job_id": "2026-10-29-claude-smart-reports-off-topic-chats",
+        "priority": 1
+      },
+      {
+        "story": "Mistral releases open weights of Large 4 'Le Chonk'",
+        "source": "https://mistral.ai/news/mistral-large-4-oss/",
+        "decision": "queued",
+        "job_id": "2026-10-29-mistral-le-chonk-open-weights",
+        "priority": 2
+      },
+      {
+        "story": "Family sues OpenAI over ChatGPT medication advice",
+        "decision": "covered",
+        "reason": "Already queued as 2026-10-29-family-sues-openai-chatgpt-seizure-medication."
+      },
+      {
+        "story": "Gemini 4 Carbon tops Artificial Analysis index",
+        "decision": "covered",
+        "reason": "Already queued as 2026-10-28-google-gemini-4-carbon-number-one."
+      },
+      {
+        "story": "Google admits AI search makes less money, adds more ads",
+        "source": "https://arstechnica.com/gadgets/2026/10/google-admits-ai-search-makes-less-money-but-its-f",
+        "decision": "skipped",
+        "reason": "Overlaps with today's Alphabet earnings post and the daily cap of 8 is now reached."
+      },
+      {
+        "story": "Microsoft's AI future has fewer jobs (The Verge)",
+        "source": "https://www.theverge.com/tech/1022023/microsoft-exit-offer-layoffs-notepad",
+        "decision": "skipped",
+        "reason": "Microsoft buyouts already covered on October 26."
+      },
+      {
+        "story": "OpenAI Dots via iMessage and RCS",
+        "decision": "covered",
+        "reason": "Already queued as 2026-10-29-chatgpt-dot-agent-texts-you."
+      },
+      {
+        "story": "Wabi AI agent valued at $1.25B",
+        "source": "https://techcrunch.com/2026/10/29/wabi-the-ai-agent-that-builds-mini-apps-now-valued-at-1-",
+        "decision": "skipped",
+        "reason": "Funding round with little US consumer interest, and the daily cap is reached."
+      },
+      {
+        "story": "Amazon updates Alexa for shopping lists and subscriptions",
+        "source": "https://techcrunch.com/2026/10/29/amazon-updates-alexa-to-help-you-manage-shopping-lists-a",
+        "decision": "skipped",
+        "reason": "Minor feature update; daily cap reached."
+      },
+      {
+        "story": "Anthropic IPO commentary (Burry, Verge, Forbes)",
+        "decision": "skipped",
+        "reason": "Opinion pieces on the already covered S-1 filing, no new facts."
+      }
+    ],
+    "requests": [
+      {
+        "id": "req-2026-10-29-590e3bcd",
+        "status": "done",
+        "job_id": "2026-10-29-jensen-huang-businesswoman-beijing-single",
+        "result": "Made your NYT link into a single-image post with a new cover; it waits for your approval. Note: the carousel on the same story was already posted at 17:25 UTC."
+      },
+      {
+        "id": "req-2026-10-29-5eb374bf",
+        "status": "done",
+        "job_id": "2026-10-29-jensen-huang-businesswoman-beijing-single",
+        "result": "Same request as req-2026-10-29-590e3bcd: one single-image post made for your NYT link, waiting for your approval."
+      }
+    ]
   }
 ]
