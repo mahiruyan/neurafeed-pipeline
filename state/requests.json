@@ -69,19 +69,33 @@
     "updated_at": "2026-10-24T00:02:27.960Z"
   },
   "req-2026-10-29-590e3bcd": {
-    "status": "pending",
-    "history": [],
-    "notified": [],
-    "job_id": null,
-    "result": null,
-    "updated_at": "2026-10-29T17:15:29.611Z"
+    "status": "completed",
+    "history": [
+      {
+        "status": "completed",
+        "at": "2026-10-29T18:18:33.041Z"
+      }
+    ],
+    "notified": [
+      "completed:2026-10-29-jensen-huang-businesswoman-beijing-single"
+    ],
+    "job_id": "2026-10-29-jensen-huang-businesswoman-beijing-single",
+    "result": "Made your NYT link into a single-image post with a new cover; it waits for your approval. Note: the carousel on the same story was already posted at 17:25 UTC.",
+    "updated_at": "2026-10-29T18:18:33.041Z"
   },
   "req-2026-10-29-5eb374bf": {
-    "status": "pending",
-    "history": [],
-    "notified": [],
-    "job_id": null,
-    "result": null,
-    "updated_at": "2026-10-29T17:15:29.611Z"
+    "status": "completed",
+    "history": [
+      {
+        "status": "completed",
+        "at": "2026-10-29T18:18:33.168Z"
+      }
+    ],
+    "notified": [
+      "completed:2026-10-29-jensen-huang-businesswoman-beijing-single"
+    ],
+    "job_id": "2026-10-29-jensen-huang-businesswoman-beijing-single",
+    "result": "Same request as req-2026-10-29-590e3bcd: one single-image post made for your NYT link, waiting for your approval.",
+    "updated_at": "2026-10-29T18:18:33.168Z"
   }
 }
