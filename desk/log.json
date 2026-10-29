@@ -1,78 +1,5 @@
 [
   {
-    "run_at": "2026-10-21T22:09:08.712Z",
-    "summary": "Evening run (17:55 New York): turned Mahir's Unitree H2-X link into a Reel (review, original Unitree video), skipped his picture upload as a duplicate of the queued Tony Stark Reel, and queued Meta's Q3 earnings (AI spending turned free cash flow negative, new nonvoting stock) as priority 1 with review; timely is false so it can post on Oct 22 since today's slots are full.",
-    "considered": [
-      {
-        "story": "Unitree H2-X Kung Fu Legend Guardian humanoid (Mahir's link)",
-        "source": "https://x.com/UnitreeRobotics/status/2112819774573179175",
-        "decision": "queued",
-        "job_id": "2026-10-21-unitree-h2-x-kung-fu-guardian-reel",
-        "priority": 1
-      },
-      {
-        "story": "Mahir's picture upload of the Tony Stark 2 AM Reel frame",
-        "decision": "skipped",
-        "reason": "Same content as the already approved Reel 2026-10-21-tony-stark-2am-reverse-engineering-reel, and a Reel cannot be made from a still picture."
-      },
-      {
-        "story": "Meta Q3 2026 earnings: $64.6B revenue, $34.9B capex, negative free cash flow, nonvoting Class C stock",
-        "source": "https://fortune.com/2026/10/21/meta-q3-earnings-mark-zuckerberg-capex-muse/",
-        "decision": "queued",
-        "job_id": "2026-10-21-meta-ai-spending-ate-the-cash",
-        "priority": 1
-      },
-      {
-        "story": "New Mexico jury orders Meta to pay $25B over data privacy",
-        "decision": "skipped",
-        "reason": "Legal story outside AI; mentioned only by Forbes and Fortune alongside earnings."
-      },
-      {
-        "story": "Anthropic drafts a federal bill to halt dangerous model releases",
-        "decision": "skipped",
-        "reason": "Today is over the cap; still a candidate for Oct 22."
-      },
-      {
-        "story": "Hugging Face CEO criticizes Netflix documentary on the OpenAI agent escape",
-        "decision": "skipped",
-        "reason": "Day is full and it needs a second source."
-      },
-      {
-        "story": "Mistral Voxtral 3 and ElevenLabs Eleven Realtime voice models",
-        "decision": "skipped",
-        "reason": "Smaller launches with less US consumer interest, and the day is full."
-      },
-      {
-        "story": "ChatGPT Locked Chats with PIN or biometrics",
-        "decision": "skipped",
-        "reason": "Planned as the Oct 22 how-to utility post."
-      },
-      {
-        "story": "OpenAI models coming to Google Cloud",
-        "decision": "covered",
-        "reason": "Already queued as 2026-10-21-openai-models-google-cloud."
-      },
-      {
-        "story": "Claude Duet launch",
-        "decision": "covered",
-        "reason": "Already queued as 2026-10-21-claude-duet-works-while-you-sleep."
-      }
-    ],
-    "requests": []
-  },
-  {
-    "run_at": "2026-10-21T22:09:35.711Z",
-    "summary": "Answered Mahir's request to turn his picture upload into a Reel: it is a frame of the Tony Stark Reel that is already approved and queued.",
-    "considered": [],
-    "requests": [
-      {
-        "id": "req-2026-10-21-57ca6584",
-        "status": "cannot",
-        "result": "That picture is a frame from the Reel 2026-10-21-tony-stark-2am-reverse-engineering-reel ('Me and bro reverse-engineering a random software at 2 AM'), which is already approved and will post as a Reel; the pipeline cannot build a Reel from a still image, so send the video link if you want a different one."
-      }
-    ]
-  },
-  {
     "run_at": "2026-10-22T00:05:56.358Z",
     "summary": "Night run (20:15 New York): no open links or requests; queued the Google DeepMind resignations over military AI as priority 1, sensitive, with review. Oct 21 is already over the cap, so timely is false and it can go out on Oct 22 after Mahir approves.",
     "considered": [
@@ -5628,6 +5555,63 @@
         "story": "Daily utility post for Oct 28",
         "decision": "skipped",
         "reason": "Oct 28 is at the daily cap and the priority 1 Carbon launch takes the remaining slot."
+      }
+    ],
+    "requests": []
+  },
+  {
+    "run_at": "2026-10-29T00:01:00.403Z",
+    "summary": "Evening run (20:00 New York, Oct 28): queued 1 priority 1 story, Microsoft's record $92.3 billion quarter with Azure up 48%, waiting for Mahir's approval. The day was already at the cap, so nothing else was added. No open links or requests.",
+    "considered": [
+      {
+        "story": "Microsoft reports record $92.3B quarter, Azure up 48%, record $45.2B capex, $10B revenue from OpenAI",
+        "source": "https://techcrunch.com/2026/10/28/microsoft-hits-10-quarters-of-record-breaking-revenue-in-a-row/",
+        "decision": "queued",
+        "job_id": "2026-10-28-microsoft-92-billion-record-quarter",
+        "priority": 1
+      },
+      {
+        "story": "Alphabet Q3 earnings: Bloomberg reports disappointing revenue and income, shares drop",
+        "source": "https://www.bloomberg.com/news/articles/2026-10-28/alphabet-reports-disappointing-revenue-income-shares-drop",
+        "decision": "skipped",
+        "reason": "Could not open Bloomberg or CNBC, and reports disagree (one calls it a first $100 billion quarter), so the facts are not confirmed; a candidate for the morning run."
+      },
+      {
+        "story": "Google expands AI Search ads globally as core ad growth slows",
+        "source": "https://techcrunch.com/2026/10/28/google-expands-ai-search-ads-globally-as-core-ad-growth-slows/",
+        "decision": "skipped",
+        "reason": "Ad business detail with little consumer appeal, and the day is over the cap."
+      },
+      {
+        "story": "Google working on a new agentic AI experience for consumers (The Verge)",
+        "decision": "skipped",
+        "reason": "Early report with no launch yet, and the day is over the cap."
+      },
+      {
+        "story": "Gemini 4 Carbon launch",
+        "decision": "covered",
+        "reason": "Already posted as 2026-10-28-google-gemini-4-carbon-number-one."
+      },
+      {
+        "story": "OpenAI election war room ahead of the midterms",
+        "decision": "skipped",
+        "reason": "Already weighed in the last run; political and sensitive, and the day is over the cap."
+      },
+      {
+        "story": "Akai embraces vibe-coded mods with an open-source MPC (The Verge)",
+        "source": "https://www.theverge.com/gadgets/1021405/akai-open-source-mpc-sample-key",
+        "decision": "skipped",
+        "reason": "Niche gadget story, and the day is over the cap."
+      },
+      {
+        "story": "Enveda and Anthropic cut drug batch review time by 89% with Claude",
+        "decision": "skipped",
+        "reason": "Trade press only, and Claude drug work was already covered today in 2026-10-28-claude-35000-antibodies-one-month."
+      },
+      {
+        "story": "Daily utility post for Oct 28",
+        "decision": "skipped",
+        "reason": "Oct 28 is over the 8-job cap."
       }
     ],
     "requests": []
