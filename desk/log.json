@@ -1,118 +1,5 @@
 [
   {
-    "run_at": "2026-10-22T00:05:56.358Z",
-    "summary": "Night run (20:15 New York): no open links or requests; queued the Google DeepMind resignations over military AI as priority 1, sensitive, with review. Oct 21 is already over the cap, so timely is false and it can go out on Oct 22 after Mahir approves.",
-    "considered": [
-      {
-        "story": "Google DeepMind staff resign over Google's Pentagon and military AI contracts (BBC, The Intercept)",
-        "source": "https://theintercept.com/2026/10/21/google-deepmind-resign-ai-military-gaza/",
-        "decision": "queued",
-        "job_id": "2026-10-21-google-deepmind-staff-quit-pentagon",
-        "priority": 1
-      },
-      {
-        "story": "OpenAI blog post 'Broad access through consistent standards'",
-        "decision": "skipped",
-        "reason": "Policy statement with little consumer interest, and the day is over the cap."
-      },
-      {
-        "story": "NVIDIA GTC Berlin keynote by Jensen Huang",
-        "decision": "skipped",
-        "reason": "The keynote has not happened yet; check in the Oct 22 runs."
-      },
-      {
-        "story": "Mark Zuckerberg agrees to stay in California despite billionaires' tax measure (Wired)",
-        "decision": "skipped",
-        "reason": "Tax politics, not AI news."
-      },
-      {
-        "story": "Metr challenges Anthropic's claims about AI safeguards",
-        "decision": "skipped",
-        "reason": "Needs a second source and the day is over the cap; candidate for Oct 22."
-      },
-      {
-        "story": "Chrome adds Gemini-powered scam detection (BleepingComputer)",
-        "decision": "skipped",
-        "reason": "Smaller feature update and the day is over the cap; candidate for Oct 22."
-      },
-      {
-        "story": "Former US officials urge court to reconsider Anthropic Pentagon decision (DefenseScoop)",
-        "decision": "skipped",
-        "reason": "Legal filing with a narrow audience."
-      },
-      {
-        "story": "Claude Duet launch",
-        "decision": "covered",
-        "reason": "Already queued as 2026-10-21-claude-duet-works-while-you-sleep."
-      },
-      {
-        "story": "Meta Q3 earnings and new nonvoting stock",
-        "decision": "covered",
-        "reason": "Already queued as 2026-10-21-meta-ai-spending-ate-the-cash."
-      }
-    ],
-    "requests": []
-  },
-  {
-    "run_at": "2026-10-22T01:54:31.418Z",
-    "summary": "Late night run (21:55 New York): no open links or requests; nothing queued because Oct 21 is far over the cap and Oct 22 already has about 7 approved or pending posts waiting, with no new uncovered priority 1 story.",
-    "considered": [
-      {
-        "story": "Anthropic's proposed AI safety bill only kicks in at 50 deaths or $1 billion in damages",
-        "source": "https://www.technology.org/2026/10/21/anthropic-ai-safety-bill-draft-50-deaths-1-billion-threshold/",
-        "decision": "covered",
-        "reason": "Already covered as 2026-10-17-anthropic-pitches-own-ai-safety-bill; the 50-death threshold is a follow-up angle on the same bill."
-      },
-      {
-        "story": "OpenAI asks Gov. Newsom to strengthen California AI regulations (The Information)",
-        "source": "https://openai.com/global-affairs/letter-to-governor-newsom-on-harmonized-regulation",
-        "decision": "skipped",
-        "reason": "Policy letter with limited consumer interest, main report is paywalled, and the queue is full."
-      },
-      {
-        "story": "Google Maps gets Gemini in CarPlay (InsideEVs)",
-        "decision": "skipped",
-        "reason": "The feature was first reported in May, and Gemini in cars was already covered as 2026-10-21-gemini-android-auto-reads-your-apps."
-      },
-      {
-        "story": "OpenAI says GPT-5.6-Sol helped find the PHP2Shell flaws (Mashable, CNBC)",
-        "decision": "covered",
-        "reason": "Already posted as 2026-10-21-ai-finds-php2shell-flaws."
-      },
-      {
-        "story": "OpenAI models come to Google Cloud",
-        "decision": "covered",
-        "reason": "Already queued as 2026-10-21-openai-models-google-cloud."
-      },
-      {
-        "story": "Claude Duet launch coverage (NYT, Gizmodo, Digital Trends)",
-        "decision": "covered",
-        "reason": "Already queued and approved as 2026-10-21-claude-duet-works-while-you-sleep."
-      },
-      {
-        "story": "Lawsuit alleges OpenAI took children's user data (Mashable)",
-        "decision": "skipped",
-        "reason": "Single early report of a lawsuit; needs a second source and the queue is full, recheck on Oct 22."
-      },
-      {
-        "story": "OpenAI safety researcher returns citing rising AI risks (Yahoo Finance)",
-        "decision": "skipped",
-        "reason": "Smaller personnel story and the queue for Oct 22 is already full."
-      },
-      {
-        "story": "Music publishers and Anthropic argue fair use over lyrics in court",
-        "decision": "skipped",
-        "reason": "Ongoing court hearing with no ruling yet."
-      },
-      {
-        "story": "Tesla earnings: Musk says Optimus and Cybercab drive future value",
-        "decision": "skipped",
-        "reason": "Earnings story mostly about cars, and the queue is full."
-      }
-    ],
-    "requests": []
-  },
-  {
     "run_at": "2026-10-22T03:53:42.034Z",
     "summary": "Midnight run (23:55 New York): no open links or requests; nothing queued because Oct 22 already has 7 approved posts waiting (cap 8) and no new uncovered priority 1 story appeared.",
     "considered": [
@@ -5615,5 +5502,80 @@
       }
     ],
     "requests": []
+  },
+  {
+    "run_at": "2026-10-29T02:09:15.527Z",
+    "summary": "Late run (22:00 New York, Oct 28): queued 2 priority 1 stories for the Oct 29 morning, Alphabet's Q3 (Gemini app at 1 billion users, Cloud up 103%, stock down after hours) and the DOJ questions about NVIDIA's Hugging Face deal, both waiting for Mahir's approval. Answered 1 reopened request.",
+    "considered": [
+      {
+        "story": "Alphabet Q3 2026: revenue $127.6B, Google Cloud up 103%, Gemini app reaches 1 billion users, record $51.4B capex, shares down about 9% after hours",
+        "source": "https://s206.q4cdn.com/479360582/files/doc_financials/2026/q3/2026q3-alphabet-earnings-release.pdf",
+        "decision": "queued",
+        "job_id": "2026-10-29-gemini-1-billion-users-alphabet-stock-drops",
+        "priority": 1
+      },
+      {
+        "story": "DOJ asks how NVIDIA's $12.93B Hugging Face purchase would affect AI competition (Reuters exclusive)",
+        "source": "https://www.investing.com/news/stock-market-news/exclusiveus-doj-is-inquiring-about-nvidias-purchase-of-hugging-face-sources-say-4980450",
+        "decision": "queued",
+        "job_id": "2026-10-29-doj-questions-nvidia-hugging-face-deal",
+        "priority": 1
+      },
+      {
+        "story": "Microsoft records $10 billion in revenue from OpenAI (TechCrunch)",
+        "decision": "covered",
+        "reason": "Part of 2026-10-28-microsoft-92-billion-record-quarter."
+      },
+      {
+        "story": "Gemini 4 Carbon access and coverage",
+        "decision": "covered",
+        "reason": "Already posted as 2026-10-28-google-gemini-4-carbon-number-one."
+      },
+      {
+        "story": "Google expands AI Search ads globally as core ad growth slows",
+        "source": "https://techcrunch.com/2026/10/28/google-expands-ai-search-ads-globally-as-core-ad-growth-slows/",
+        "decision": "skipped",
+        "reason": "Ad business detail with little consumer appeal; the Alphabet earnings job covers the bigger picture."
+      },
+      {
+        "story": "OpenAI opens an election war room ahead of the midterms",
+        "decision": "skipped",
+        "reason": "Weighed in earlier runs; political and sensitive, and the day is over the cap."
+      },
+      {
+        "story": "Google AI gets cagey when asked who won the 2020 election (Ars Technica)",
+        "source": "https://arstechnica.com/ai/2026/10/google-ai-gets-cagey-when-asked-who-won-the-2020-elections/",
+        "decision": "skipped",
+        "reason": "Political topic, only one source read, and the day is over the cap."
+      },
+      {
+        "story": "Parents sue OpenAI over daughter's death after ChatGPT medical advice",
+        "decision": "skipped",
+        "reason": "Only seen as a Yahoo headline in the feed, no source read; sensitive, a candidate for a morning run if confirmed."
+      },
+      {
+        "story": "Cursor launches an Agent SDK",
+        "source": "https://cursor.com/blog/agent-sdk",
+        "decision": "skipped",
+        "reason": "Developer tool with limited mainstream appeal."
+      },
+      {
+        "story": "Enveda and Anthropic cut drug batch review time by 89% with Claude",
+        "decision": "skipped",
+        "reason": "Weighed in the last run; trade press only and Claude drug work was already covered on Oct 28."
+      },
+      {
+        "story": "Daily utility post for Oct 28",
+        "decision": "skipped",
+        "reason": "Oct 28 is over the 8-job cap; the morning run should queue the Oct 29 utility post."
+      }
+    ],
+    "requests": [
+      {
+        "id": "req-2026-10-21-57ca6584",
+        "status": "cannot",
+        "result": "That picture is a still frame from the Reel 2026-10-21-tony-stark-2am-reverse-engineering-reel, and the pipeline can only make Reels from a video link, not from a still image; send the video link if you want a new Reel."
+      }
+    ]
   }
 ]
