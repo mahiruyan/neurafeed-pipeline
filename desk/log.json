@@ -1,44 +1,5 @@
 [
   {
-    "run_at": "2026-10-22T03:53:42.034Z",
-    "summary": "Midnight run (23:55 New York): no open links or requests; nothing queued because Oct 22 already has 7 approved posts waiting (cap 8) and no new uncovered priority 1 story appeared.",
-    "considered": [
-      {
-        "story": "NVIDIA unveils OpenShell reference architecture for running AI agents safely at GTC Berlin",
-        "source": "https://thenextweb.com/news/nvidia-openshell-ai-agents-safety-anthropic-openai",
-        "decision": "skipped",
-        "reason": "Enterprise infrastructure announcement with little consumer appeal, and the Oct 22 queue is nearly full; the day runs can revisit if the keynote gets wider coverage."
-      },
-      {
-        "story": "Mistral releases Large 4 public preview, a 1 trillion parameter open weight model",
-        "source": "https://thenextweb.com/news/mistral-releases-large-4-a-1-trillion-parameter-open-weight-ai-model",
-        "decision": "skipped",
-        "reason": "Priority 2 story and only one slot is left for Oct 22, which should stay free for fresh priority 1 news in the day runs."
-      },
-      {
-        "story": "Anthropic agent buys business supplies (PYMNTS)",
-        "decision": "skipped",
-        "reason": "Small follow-up story, and Claude Duet is already queued."
-      },
-      {
-        "story": "Tesla earnings: Musk says Optimus and Cybercab drive future value",
-        "decision": "skipped",
-        "reason": "Mostly a car earnings story, and the queue is full."
-      },
-      {
-        "story": "Claude Duet launch coverage",
-        "decision": "covered",
-        "reason": "Already queued and approved as 2026-10-21-claude-duet-works-while-you-sleep."
-      },
-      {
-        "story": "Google DeepMind staff resign over military AI contracts",
-        "decision": "covered",
-        "reason": "Already queued and approved as 2026-10-21-google-deepmind-staff-quit-pentagon."
-      }
-    ],
-    "requests": []
-  },
-  {
     "run_at": "2026-10-22T06:00:05.189Z",
     "summary": "Early morning run (01:55 New York): no open links or requests; nothing queued because Oct 22 already has 7 approved posts waiting (cap 8) and no new uncovered priority 1 story appeared since the last run.",
     "considered": [
@@ -5577,5 +5538,72 @@
         "result": "That picture is a still frame from the Reel 2026-10-21-tony-stark-2am-reverse-engineering-reel, and the pipeline can only make Reels from a video link, not from a still image; send the video link if you want a new Reel."
       }
     ]
+  },
+  {
+    "run_at": "2026-10-29T04:03:09.577Z",
+    "summary": "Overnight run (midnight New York, Oct 29): queued 2 priority 1 stories for the morning, the report that DeepSeek and Moonshot trained new models on OpenAI's GPT-6 Astra, and ChatGPT's Dot agent arriving in iMessage and RCS, both waiting for Mahir's approval. No open links or requests.",
+    "considered": [
+      {
+        "story": "DeepSeek and Moonshot AI reportedly trained Kimi K3.1 Pro and V4.1-Flash 1017 on OpenAI GPT-6 Astra outputs (The Information via Reuters)",
+        "source": "https://www.investing.com/news/stock-market-news/deepseek-moonshot-used-openaisgpt6-astra-to-train-latest-models-the-information-reports-4981380",
+        "decision": "queued",
+        "job_id": "2026-10-29-deepseek-kimi-trained-on-openai-astra",
+        "priority": 1
+      },
+      {
+        "story": "OpenAI lets US ChatGPT Pro users text their Dot agent over iMessage and RCS",
+        "source": "https://www.engadget.com/2300235/openai-now-lets-you-text-your-dot-agent/",
+        "decision": "queued",
+        "job_id": "2026-10-29-chatgpt-dot-agent-texts-you",
+        "priority": 1
+      },
+      {
+        "story": "Adam Mosseri says negativity around AI is going to get worse (The Verge)",
+        "source": "https://www.theverge.com/ai-artificial-intelligence/1021644/adam-mosseri-instagram-ai-negativity",
+        "decision": "skipped",
+        "reason": "Could not open The Verge and found no second source for the quotes; a candidate for a later run."
+      },
+      {
+        "story": "Grand jury indicts former OpenAI engineer accused of bugging the SF office (SFGATE)",
+        "decision": "skipped",
+        "reason": "Crime story only seen as a feed headline, no source read; the bugging case was already covered on Oct 13 and Oct 19."
+      },
+      {
+        "story": "Family sues OpenAI over Seattle woman's death after ChatGPT advice",
+        "decision": "skipped",
+        "reason": "Weighed in the last run; sensitive and only seen as local TV headlines, no source read this run."
+      },
+      {
+        "story": "Apple and OpenAI trade secrets case gets a July 2027 trial date",
+        "decision": "skipped",
+        "reason": "Scheduling update on a case already covered on Oct 14, little new for a US audience."
+      },
+      {
+        "story": "OpenAI offers up to $500 in monthly API credits to ChatGPT Pro and Business users",
+        "decision": "skipped",
+        "reason": "Only seen from a crypto exchange news feed, no reliable source read."
+      },
+      {
+        "story": "Microsoft discloses Azure revenue in dollars, $33.2 billion (TechCrunch)",
+        "decision": "covered",
+        "reason": "Part of the earnings story already posted as 2026-10-28-microsoft-92-billion-record-quarter."
+      },
+      {
+        "story": "Nvidia Nemotron 3.5 Transcribe open speech model for 40 languages (Hacker News)",
+        "decision": "skipped",
+        "reason": "Developer model release with limited mainstream appeal."
+      },
+      {
+        "story": "OpenAI election war room ahead of the midterms",
+        "decision": "skipped",
+        "reason": "Weighed in earlier runs; political and sensitive."
+      },
+      {
+        "story": "Daily utility post for Oct 29",
+        "decision": "skipped",
+        "reason": "Before 11:00 New York time; a later run should queue it."
+      }
+    ],
+    "requests": []
   }
 ]
