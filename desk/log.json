@@ -5576,5 +5576,76 @@
       }
     ],
     "requests": []
+  },
+  {
+    "run_at": "2026-10-29T13:58:43.646Z",
+    "summary": "Morning run (09:55 New York): nothing new queued. No open links or requests; today already has 7 news jobs, so the last slot of the 8 per day cap is kept for the utility post after 11:00, and no new priority 1 story turned up.",
+    "considered": [
+      {
+        "story": "Nvidia and AMD put $4 billion into Meta's $97.5 billion equity raise",
+        "source": "https://www.datacenterdynamics.com/en/news/nvidia-to-invest-3bn-in-metas-975bn-equity-offering-as-social-media-giant-plans-to-deploy-more-nvidia-hardware/",
+        "decision": "covered",
+        "reason": "Already covered as 2026-10-27-nvidia-3-billion-meta-muse and 2026-10-26-meta-95-billion-stock-sale-ai."
+      },
+      {
+        "story": "Microsoft 10-Q shows about $10 billion in quarterly revenue from OpenAI",
+        "source": "https://techcrunch.com/2026/10/28/microsoft-recorded-10-billion-in-revenue-from-openai/",
+        "decision": "covered",
+        "reason": "The figure was part of 2026-10-28-microsoft-92-billion-record-quarter."
+      },
+      {
+        "story": "Malaysia seizes over $12 million of AI chips hidden in 30 servers at Kuala Lumpur airport",
+        "source": "https://www.tomshardware.com/tech-industry/policy/malaysia-seizes-usd12-million-worth-of-advanced-ai-chips-hidden-inside-30-servers-customs-says-suspected-smuggling-network-used-the-country-as-a-transit-hub",
+        "decision": "skipped",
+        "reason": "Overlaps with today's chip smuggling angle in the NYT Jensen Huang story, and the cap leaves only one slot, kept for the utility post."
+      },
+      {
+        "story": "Gist says Claude Code's status line summary sends transcripts to Opus every 30 seconds",
+        "source": "https://gist.github.com/flamerix-ai/c3905705cc4205e5de3011fa2e74efce",
+        "decision": "skipped",
+        "reason": "Single unconfirmed developer gist, no news coverage yet."
+      },
+      {
+        "story": "Claude adds ready-made legal review artifacts",
+        "source": "https://x.com/claudeai/status/2115467192276025500",
+        "decision": "skipped",
+        "reason": "Niche professional feature with one source; no room under today's cap."
+      },
+      {
+        "story": "OpenAI expands its ServiceNow partnership with a ChatGPT plugin",
+        "source": "https://openai.com/index/openai-servicenow-partnership-expansion/",
+        "decision": "skipped",
+        "reason": "Enterprise integration with little consumer appeal."
+      },
+      {
+        "story": "Meta partners with five universities on medical research",
+        "source": "https://research.meta.ai/blog/supporting-medical-scientific-research",
+        "decision": "skipped",
+        "reason": "Low interest and no room under today's cap."
+      },
+      {
+        "story": "House Democrats file a resolution against bailouts for AI companies",
+        "source": "https://prospect.org/2026/10/28/house-progressives-ai-bailout-anthropic-google/",
+        "decision": "skipped",
+        "reason": "Nonbinding political resolution, reported Oct 28; would need approval and today is nearly full."
+      },
+      {
+        "story": "South Korea plans criminal charges for CSAT takers who cheat with AI glasses",
+        "source": "https://koreatimes.co.kr/southkorea/20261029/govt-to-pursue-criminal-punishment-3-year-exam-ban-for-csat-cheaters-using-ai-glasses",
+        "decision": "skipped",
+        "reason": "Non-US story and no slot left today besides the utility post."
+      },
+      {
+        "story": "Gemini 4 Carbon, DeepSeek distillation, OpenAI lawsuit, DOJ and Nvidia Hugging Face, CS enrollment drop, NYT Jensen Huang report",
+        "decision": "covered",
+        "reason": "Already queued in jobs from Oct 28 and Oct 29."
+      },
+      {
+        "story": "Daily utility post for Oct 29",
+        "decision": "skipped",
+        "reason": "Before 11:00 New York time; the next run should queue it as the 8th and last job of the day."
+      }
+    ],
+    "requests": []
   }
 ]
