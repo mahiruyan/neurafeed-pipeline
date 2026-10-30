@@ -1,150 +1,5 @@
 [
   {
-    "run_at": "2026-10-23T10:15:27.811Z",
-    "summary": "Early run (06:20 New York): no open links or requests; Oct 23 already had 5 posts, so queued 1 story, SK Hyper seeking $350 billion for AI data centers (P2), leaving room for today's utility post.",
-    "considered": [
-      {
-        "story": "SK Telecom's SK Hyper seeks about $350 billion for the first 5 GW of a 15 GW AI data center plan in South Korea",
-        "source": "https://en.sedaily.com/technology/2026/10/23/sk-hyper-seeks-350-billion-to-build-15gw-of-ai-data-centers",
-        "decision": "queued",
-        "job_id": "2026-10-23-sk-350-billion-ai-data-centers",
-        "priority": 2
-      },
-      {
-        "story": "OpenAI makes its Decisions API (a Jev competitor) generally available",
-        "source": "https://techcrunch.com/2026/10/22/openai-makes-its-jev-competitor-widely-available-as-decision-model-competition-heats-up/",
-        "decision": "skipped",
-        "reason": "Developer API release with little consumer appeal, and it was already about 15 hours old."
-      },
-      {
-        "story": "METR and Redwood Research find six ways to evade OpenAI's internal agent monitor",
-        "source": "https://cnbc.com/2026/10/22/metr-redwood-research-open-ai-test.html",
-        "decision": "covered",
-        "reason": "Same story as 2026-10-21-openai-agents-switched-off-alarms."
-      },
-      {
-        "story": "Rivian buys UK world model startup Third Dimension for self-driving simulation",
-        "source": "https://techcrunch.com/2026/10/22/rivian-buys-world-model-startup-to-accelerate-self-driving-ambitions/",
-        "decision": "skipped",
-        "reason": "Small 15-person acqui-hire from Oct 22 afternoon, weaker than the SK story for the one open slot."
-      },
-      {
-        "story": "US Treasury proposes rule curbing US investment in Chinese AI and supercomputing",
-        "source": "https://www.usnews.com/news/business/articles/2026-10-22/us-treasury-proposes-a-rule-to-crack-down-on-high-tech-investments-in-china-other-adversaries",
-        "decision": "skipped",
-        "reason": "Policy story from Oct 22 with a China angle already running today in the DeepSeek post."
-      },
-      {
-        "story": "Reuters tally of about 102,800 job cuts attributed to AI",
-        "source": "https://www.investing.com/news/stock-market-news/factboxcompanies-cutting-jobs-as-investments-shift-toward-ai-4965744",
-        "decision": "skipped",
-        "reason": "A running factbox, not new news, and Barclays' AI job cuts already posted on Oct 22."
-      },
-      {
-        "story": "Anthropic's junior technical hires fell from 27% to 9%",
-        "source": "https://www.theneuron.ai/news/anthropic-junior-technical-hiring-ai/",
-        "decision": "skipped",
-        "reason": "Anthropic's report is from Oct 16, too old for the desk."
-      },
-      {
-        "story": "China clears DeepSeek and MiniMax to open-source models for overseas use",
-        "source": "https://www.bloomberg.com/news/articles/2026-10-23/deepseek-minimax-win-approval-for-global-use-state-media-says",
-        "decision": "skipped",
-        "reason": "Bloomberg is paywalled, I found no second source, and DeepSeek already posts today."
-      },
-      {
-        "story": "Nebius closes a $3.5 billion Citi financing facility",
-        "source": "https://nebius.com/newsroom/nebius-secures-3-5-billion-financing-facility-with-citi",
-        "decision": "skipped",
-        "reason": "Corporate financing with little US consumer interest."
-      },
-      {
-        "story": "Volkswagen expands Microsoft Copilot to 330,000 staff amid a reported pay freeze",
-        "source": "https://americanbazaaronline.com/2026/10/22/volkswagen-expands-with-microsoft-copilot-as-salary-freeze-for-660000-workers-reportedly-looms-490570",
-        "decision": "skipped",
-        "reason": "Enterprise rollout from Oct 22 with one source found."
-      },
-      {
-        "story": "ChatGPT locked chats (hide chats behind a PIN)",
-        "source": "https://help.openai.com/en/articles/6825453-chatgpt-release-notes",
-        "decision": "skipped",
-        "reason": "Launched Oct 20, too old as news; a possible how-to for a later utility post."
-      },
-      {
-        "story": "Utility post for Oct 23",
-        "decision": "skipped",
-        "reason": "It is before 11:00 New York; a daytime run will queue today's utility post (one slot left after this run)."
-      }
-    ],
-    "requests": []
-  },
-  {
-    "run_at": "2026-10-23T12:05:13.245Z",
-    "summary": "Morning run (07:55 New York): no open links or requests; Oct 23 had 6 jobs, so queued 1 story, Claude apps switching to auto mode by default (P1), leaving the last slot for today's utility post.",
-    "considered": [
-      {
-        "story": "Claude web, desktop and mobile apps run in auto mode by default on Pro, Max and Team plans starting next week",
-        "source": "https://x.com/claudeai/status/2113360845409583307",
-        "decision": "queued",
-        "job_id": "2026-10-23-claude-stops-asking-permission",
-        "priority": 1
-      },
-      {
-        "story": "Musk says SpaceX and Tesla formed special committees to study a merger",
-        "source": "https://techcrunch.com/2026/10/20/spacex-and-tesla-boards-form-special-committees-to-review-merger/",
-        "decision": "skipped",
-        "reason": "First reported on Oct 20; today's AFP pieces are follow-up analysis, too old for the desk."
-      },
-      {
-        "story": "NVIDIA GTC Berlin keynote (DSX POD, OpenShell, RTX Spark laptops)",
-        "source": "https://blogs.nvidia.com/blog/gtc-berlin-2026-keynote/",
-        "decision": "skipped",
-        "reason": "Keynote was Oct 21, and Vera Rubin already posted this morning as Mahir's Reel."
-      },
-      {
-        "story": "Anthropic cuts live internet access for internal tests after Claude reached real systems",
-        "source": "https://thehackernews.com/2026/10/anthropic-cuts-live-internet-access-for.html",
-        "decision": "skipped",
-        "reason": "Article is from Oct 10, and the false police tip part already posted on Oct 12."
-      },
-      {
-        "story": "OpenAI nears $30B bridge round at $1.25T valuation",
-        "decision": "covered",
-        "reason": "Same round already covered as 2026-10-20-openai-30-billion-race-anthropic-ipo."
-      },
-      {
-        "story": "OpenAI's Uber ChatGPT Work rollout and Decisions API",
-        "source": "https://openai.com/news/",
-        "decision": "skipped",
-        "reason": "Enterprise and developer posts from Oct 22 with little consumer appeal."
-      },
-      {
-        "story": "Microsoft researcher and collaborator prove the 31-year-old KLS conjecture with AI help",
-        "source": "https://www.unite.ai/microsoft-researcher-and-collaborator-prove-31-year-old-kls-conjecture/",
-        "decision": "skipped",
-        "reason": "Only one source found, and Microsoft already posted twice on Oct 22."
-      },
-      {
-        "story": "iPhone Duo hits stores with queues",
-        "source": "https://theweek.in/news/sci-tech/2026/10/23/queues-and-craze-as-iphone-duo-hits-stores-or-how-does-apple-pull-it-off-despite-lagging-in-ai.html",
-        "decision": "skipped",
-        "reason": "A phone sale story, not AI news, from one regional outlet."
-      },
-      {
-        "story": "Pony.ai, inDrive and NVIDIA robotaxi plan for Kazakhstan",
-        "source": "http://vectorwire.ai/article/pony-ai-and-indrive-target-kazakhstan-robotaxis-by-2027-as-nvidia-corp-gpu-deplo-50b128",
-        "decision": "skipped",
-        "reason": "An MOU with little US interest and only one source."
-      },
-      {
-        "story": "Utility post for Oct 23",
-        "decision": "skipped",
-        "reason": "It is before 11:00 New York; a daytime run will queue today's utility post in the last open slot."
-      }
-    ],
-    "requests": []
-  },
-  {
     "run_at": "2026-10-23T14:30:02.455Z",
     "summary": "Mid-morning run (10:30 New York): no open links or requests; Oct 23 had 6 news jobs plus Mahir's Reel, so queued 1 story, Anthropic and Hg planning a European AI consultancy (P2), leaving the last slot for today's utility post.",
     "considered": [
@@ -5533,6 +5388,73 @@
         "story": "Nvidia to guarantee Nscale debt for a 460MW Anthropic build",
         "decision": "skipped",
         "reason": "Financing detail passed over in the previous run, nothing new."
+      }
+    ],
+    "requests": []
+  },
+  {
+    "run_at": "2026-10-30T12:23:01.638Z",
+    "summary": "Morning run (08:40 New York, Oct 30): no open links or requests; queued two priority 2 carousels, CrowdStrike's report on China-linked hackers running DeepSeek-powered AI agents and Reddit going logged-in as search visits fall.",
+    "considered": [
+      {
+        "story": "CrowdStrike: VAPOR PANDA used DeepSeek-powered ARTEX agents against 200+ organizations",
+        "source": "https://www.crowdstrike.com/en-us/blog/vapor-panda-uses-artex-to-scale-global-campaign/",
+        "decision": "queued",
+        "job_id": "2026-10-30-china-hackers-deepseek-agents-200-targets",
+        "priority": 2
+      },
+      {
+        "story": "Reddit loses over 1 million search referrals a week, shifts to a logged-in experience",
+        "source": "https://techcrunch.com/2026/10/29/as-search-traffic-dries-up-reddit-announces-its-shifting-to-a-logged-in-experience",
+        "decision": "queued",
+        "job_id": "2026-10-30-reddit-loses-search-visits-log-in",
+        "priority": 2
+      },
+      {
+        "story": "Universal Music settles with Udio and signs a licensing deal",
+        "source": "https://www.prnewswire.com/news-releases/universal-music-group-and-udio-announce-udios-first-strategic-agreements-for-new-licensed-ai-music-creation-platform-302599129.html",
+        "decision": "skipped",
+        "reason": "Only the press release was found this run and the day already has enough queued posts."
+      },
+      {
+        "story": "DeepSeek closes a $16B round led by China's state Big Fund",
+        "source": "https://theinformation.com/articles/behind-deepseeks-16-billion-funding-chinese-tech-titans-state-players",
+        "decision": "skipped",
+        "reason": "Paywalled single report, and the DeepSeek raise was already covered on Oct 23."
+      },
+      {
+        "story": "Canada takes an equity stake of up to C$1.6B in Cohere",
+        "source": "https://www.semafor.com/article/10/29/2026/canada-to-take-equity-stake-in-ai-firm",
+        "decision": "skipped",
+        "reason": "Canadian policy story with limited US interest."
+      },
+      {
+        "story": "Anthropic expands AI for Science to 20 research partners",
+        "source": "https://www.anthropic.com/news/ai-for-science-expands-foundations-research-institutions",
+        "decision": "skipped",
+        "reason": "Incremental program update, weaker than the queued stories; Claude science work was covered Oct 28."
+      },
+      {
+        "story": "Nvidia and AMD invest $4B in Meta's raise",
+        "source": "https://www.pcgamer.com/software/ai/nvidia-and-amd-invest-billions-into-meta-as-companies-egg-each-other-on-to-bet-even-more-on-ai/",
+        "decision": "covered",
+        "reason": "Covered as 2026-10-27-nvidia-3-billion-meta-muse."
+      },
+      {
+        "story": "Anthropic warns AI could self-replicate on small devices",
+        "decision": "covered",
+        "reason": "Two-week-old story already covered as 2026-10-13-anthropic-self-replicating-ai-smart-devices."
+      },
+      {
+        "story": "Pinterest misses Q3, stock down 14%",
+        "source": "https://markets.financialcontent.com/stocks/article/stockstory-2026-10-29-pinterest-nysepins-misses-q3-2026-sales-expectations-stock-drops-142",
+        "decision": "skipped",
+        "reason": "Earnings miss with little AI angle."
+      },
+      {
+        "story": "OpenAI misalignment monitors and ChatGPT Pro limits",
+        "decision": "covered",
+        "reason": "Already queued as 2026-10-30-openai-monitor-caught-model-reaching-internet and 2026-10-30-chatgpt-pro-limits-doubled-cut-canceled."
       }
     ],
     "requests": []

@@ -1,0 +1,124 @@
+{
+  "id": "2026-10-30-china-hackers-deepseek-agents-200-targets",
+  "created_at": "2026-10-30T12:40:00Z",
+  "story_time": "2026-10-29T13:00:00Z",
+  "timely": false,
+  "sensitive": false,
+  "priority": 2,
+  "review": true,
+  "format": "carousel",
+  "site_category": "companies",
+  "sources": [
+    { "name": "CrowdStrike", "url": "https://www.crowdstrike.com/en-us/blog/vapor-panda-uses-artex-to-scale-global-campaign/" },
+    { "name": "SecurityBrief", "url": "https://securitybrief.co.uk/story/crowdstrike-uncovers-china-linked-ai-cyber-campaign" },
+    { "name": "Unite.AI", "url": "https://www.unite.ai/china-nexus-vapor-panda-breached-nine-of-200-plus-targets-with-ai-agents/" }
+  ],
+  "threads_text": "CrowdStrike says a China-linked hacking group pointed a team of AI agents, mostly running on DeepSeek, at more than 200 organizations in 11 days and got inside at least nine. A human gave orders in Chinese, the agents did the grinding work. Should open AI models be allowed to power tools like this?",
+  "caption": "CrowdStrike says a China-linked group called VAPOR PANDA used an AI agent framework, mostly powered by DeepSeek, against more than 200 organizations.\nTargets included foreign ministries, telecoms and 19 US companies.\nCrowdStrike confirmed hands-on hacking inside at least nine of them.\n\nAre AI hacking agents now the biggest cyber threat?\n\nFollow @neurafeed.ai for daily AI news.\n\nSource: CrowdStrike, SecurityBrief, Unite.AI",
+  "slides": [
+    {
+      "kind": "cover",
+      "headline": "China-linked hackers let *AI agents* loose on 200 organizations in 11 days, CrowdStrike says",
+      "image": {
+        "url": "https://assets.crowdstrike.com/is/image/crowdstrikeinc/Blog-Panda?wid=1060&hei=698&fmt=png-alpha&qlt=95%2C0&resMode=sharp2&op_usm=3.0%2C0.3%2C2%2C0",
+        "credit": "CrowdStrike",
+        "fallback_urls": [
+          "https://www.unite.ai/wp-content/uploads/2026/10/crowdstrike-details-vapor-pandas-ai-driven-artex-espionage-campaign.jpg"
+        ],
+        "generate": "A cramped, cluttered office at night lit by harsh fluorescent tubes and the light of many old computer monitors. A man in a dark hoodie, seen from behind, sits at a messy desk with energy drink cans and tangled cables, pointing at a wall of monitors. Around him, five scuffed white humanoid robots sit at their own small desks, typing on keyboards in parallel, each lit by its own screen showing abstract network maps. On the largest monitor in the center, the whale logo from the first image, big and exact. Blank surfaces, no readable text or labels on any object apart from the logo. Generous headroom above the people and robots. The man, the robots and the logo fill the upper two thirds of the frame, the bottom third is desk clutter and floor. Photorealistic, high contrast, vertical composition, no letters, no watermarks. It must look like an unedited real photo from a news agency, not a painting, not digital art, no glow effects.",
+        "refs": [
+          "https://techcrunch.com/wp-content/uploads/2025/01/deepseek-2.jpg"
+        ]
+      },
+      "pos": "center 25%"
+    },
+    {
+      "kind": "card",
+      "heading": "200 targets in *11 days*",
+      "paras": [
+        "CrowdStrike says a China-linked group it calls VAPOR PANDA aimed one AI attack controller at more than 200 organizations in at least 14 countries, starting October 17.",
+        "Targets included foreign ministries, defense, nuclear, pharma and chip companies."
+      ],
+      "image": {
+        "url": "https://securitybrief.co.uk/uploads/story/2026/10/30/compatible_global-network-map-central-hub-intrusion-arrows-office-buildings-data-centers-story-323039.jpg",
+        "credit": "SecurityBrief",
+        "fallback_urls": [
+          "https://securitybrief.co.uk/uploads/story/2026/10/30/global-network-map-central-hub-intrusion-arrows-office-buildings-data-centers-story-323039.webp"
+        ]
+      }
+    },
+    {
+      "kind": "card",
+      "heading": "Powered mostly by *DeepSeek*",
+      "paras": [
+        "The tool, ARTEX, is an open source agent framework. A main agent directs planner and worker agents that share what they find.",
+        "CrowdStrike says it ran mainly on DeepSeek, plus a second paid AI model it could not identify."
+      ],
+      "image": {
+        "url": "https://techstartups.com/wp-content/uploads/2025/12/Deepseek.jpg",
+        "credit": "Tech Startups",
+        "fallback_urls": [
+          "https://startupfortune.com/wp-content/uploads/2026/10/china-deepseek-alibaba-qwen.jpg"
+        ]
+      }
+    },
+    {
+      "kind": "card",
+      "heading": "A human gave orders *in Chinese*",
+      "paras": [
+        "Recovered transcripts show an operator giving instructions in Chinese and stepping in at key moments.",
+        "The agents tried several attack paths at once and switched tactics when one failed. One intrusion used about 1.4 billion input tokens."
+      ],
+      "image": {
+        "url": "https://www.unite.ai/wp-content/uploads/2026/10/crowdstrike-details-vapor-pandas-ai-driven-artex-espionage-campaign.jpg",
+        "credit": "Unite.AI",
+        "fallback_urls": [
+          "https://media.thenextweb.com/2026/09/server-room-corridor-orange-lights.jpg"
+        ]
+      }
+    },
+    {
+      "kind": "card",
+      "heading": "At least *nine* got hit",
+      "paras": [
+        "CrowdStrike confirmed hands-on hacking at nine organizations, including a Middle East interior ministry, plus telecoms in the US, Belgium and the Philippines.",
+        { "t": "It expects more China-linked groups to adopt AI agents within a year.", "strong": true }
+      ],
+      "image": {
+        "url": "https://storage.googleapis.com/media.mwcradio.com/mimesis/2026-10/19/2026-10-19T100625Z_2_LYNXMPEM9I0SK_RTROPTP_3_AI-CYBERCRIME.JPG",
+        "credit": "Reuters",
+        "fallback_urls": [
+          "https://cyberscoop.com/wp-content/uploads/sites/3/2023/03/GettyImages-1459359048.jpg"
+        ]
+      }
+    },
+    {
+      "kind": "cta",
+      "hook": "AI agents are now doing the hacking. Follow so you know about the next campaign before it hits the headlines."
+    }
+  ],
+  "site_article": {
+    "headline": "CrowdStrike says China-linked hackers used DeepSeek-powered AI agents against 200 organizations",
+    "dek": "The security firm says the group, which it calls VAPOR PANDA, confirmed hands-on access at nine targets, including government ministries and telecom providers.",
+    "summary": "CrowdStrike reported on October 29, 2026 that a China-linked group used the ARTEX agent framework, running mainly on DeepSeek, against more than 200 organizations in at least 14 countries over 11 days. The company confirmed post-exploitation activity at nine of them.",
+    "seo_title": "CrowdStrike: China hackers ran DeepSeek AI agents at 200 targets",
+    "seo_description": "CrowdStrike says VAPOR PANDA used the ARTEX AI agent framework, mostly on DeepSeek, against 200+ organizations in 11 days and breached at least nine.",
+    "answer_summary": "According to CrowdStrike, a China-linked group called VAPOR PANDA used ARTEX, an open source AI agent framework running mainly on DeepSeek, to target more than 200 organizations starting October 17, 2026. CrowdStrike confirmed hands-on intrusion activity at nine of them.",
+    "tags": ["CrowdStrike", "DeepSeek", "Cybersecurity", "AI agents", "China"],
+    "hero_alt": "Illustration from CrowdStrike's blog post about the VAPOR PANDA hacking group.",
+    "paragraphs": [
+      { "kind": "fact", "text": "CrowdStrike said on October 29, 2026 that a China-linked hacking group used a team of AI agents to run intrusions against more than 200 organizations in at least 14 countries. The security company calls the group VAPOR PANDA and said the campaign began on October 17 and ran over an 11 day window from a single attack controller.", "sources": [0, 1, 2] },
+      { "kind": "fact", "text": "According to CrowdStrike, VAPOR PANDA has been active since 2021 and has mostly gone after government bodies, think tanks, energy companies and extraction businesses in Europe, North America, Oceania and the UK. The company said this is the first time it has seen the group use AI-driven intrusion tooling.", "sources": [0, 2] },
+      { "kind": "heading", "text": "How the AI agents worked" },
+      { "kind": "fact", "text": "The tool at the center of the campaign is ARTEX, which SecurityBrief describes as an open source agentic framework. A main agent coordinates planner and worker agents that share a common graph of facts, findings and goals, and carry each engagement from first access through reconnaissance to moving across a network. CrowdStrike said the group ran ARTEX mainly on DeepSeek, the Chinese-developed language model, alongside a second subscription-based commercial model that it could not identify.", "sources": [0, 1] },
+      { "kind": "fact", "text": "The scale of the AI work was large. CrowdStrike said the planning agents in a single intrusion consumed about 1.4 billion input tokens, and SecurityBrief reported that total use across the campaign is likely much higher. The agents pursued several attack paths in parallel across web applications, cloud services, containers, directory services and mail or VPN systems, and switched methods when one failed.", "sources": [0, 1] },
+      { "kind": "fact", "text": "The campaign was not fully automatic. Unite.AI reported that recovered agent transcripts showed a human operator giving instructions in Chinese, timestamped in China Standard Time, and redirecting the agents at decision points. In one case at a global pharmaceutical company, the operator told the agents to find Windows machines that lacked CrowdStrike's own Falcon sensor so activity could focus on them.", "sources": [0, 2] },
+      { "kind": "heading", "text": "Who was hit" },
+      { "kind": "fact", "text": "CrowdStrike said it confirmed post-exploitation activity at nine organizations, where the attackers installed a backdoor called BLOODALCHEMY and carried out credential spraying, scanning and reconnaissance. At least 12 more organizations faced password spraying and credential scanning. Reported victims include telecom providers in the United States, Belgium and the Philippines, an interior ministry in the Middle East, and foreign ministries in two Latin American countries, with a third likely compromised.", "sources": [0, 1, 2] },
+      { "kind": "fact", "text": "SecurityBrief and Unite.AI reported that 19 organizations in the United States were targeted across the pharmaceutical, semiconductor, defense, nuclear and financial sectors. In Europe, the targets included one country's foreign ministry, presidency and prime minister's office, as well as defense, justice, finance and intelligence bodies.", "sources": [1, 2] },
+      { "kind": "fact", "text": "CrowdStrike said its OverWatch team spotted the activity after watching exploitation attempts come from the ARTEX controller, which at times exposed its tooling, target files and agent transcripts. The company said this campaign is separate from ARTEX activity that has been reported under the Storm-0940 name, which suggests that more than one China-linked group is now using the framework.", "sources": [0, 1, 2] },
+      { "kind": "analysis", "text": "The report shows how agent frameworks change the economics of hacking. One operator, steering agents at a few decision points, was able to run parallel intrusions against hundreds of organizations in less than two weeks. The fact that the agents ran mainly on an openly available model also means that limits placed on commercial AI services do not fully cover this kind of use." },
+      { "kind": "why_it_matters", "text": "CrowdStrike assessed that China-linked groups are highly likely to keep adopting agentic frameworks over the next 12 months, so the next signal to watch is whether other security firms report ARTEX or similar agent tooling in new campaigns." }
+    ]
+  }
+}
