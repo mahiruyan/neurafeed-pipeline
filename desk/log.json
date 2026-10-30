@@ -1,78 +1,5 @@
 [
   {
-    "run_at": "2026-10-23T08:13:44.921Z",
-    "summary": "Early run (04:20 New York): made Mahir's NVIDIA Vera Rubin Reel link (no job after 45 minutes) and queued 1 news story, Arc browser shutting down (P2); no open requests.",
-    "considered": [
-      {
-        "story": "Mahir's link: NVIDIA Vera Rubin, a computer with no cables, fully liquid cooled (Evolving AI Reel)",
-        "source": "https://www.instagram.com/reel/De06XKpAxpM/",
-        "decision": "queued",
-        "job_id": "2026-10-23-nvidia-vera-rubin-no-cables-reel",
-        "priority": 1
-      },
-      {
-        "story": "The Browser Company sunsets Arc on December 22 and moves users to its AI-first Dia browser",
-        "source": "https://techcrunch.com/2026/10/22/arc-browser-sunsets-december-22-as-the-browser-company-doubles-down-on-dia/",
-        "decision": "queued",
-        "job_id": "2026-10-23-arc-browser-shutting-down",
-        "priority": 2
-      },
-      {
-        "story": "OpenAI nears $30B bridge round at $1.25T valuation",
-        "decision": "covered",
-        "reason": "Same round already covered as 2026-10-20-openai-30-billion-race-anthropic-ipo."
-      },
-      {
-        "story": "Anthropic, OpenAI and Musk pledge donations amid AI backlash (Emergent)",
-        "source": "https://emergent.sh/news/anthropic-openai-musk-pledge-donations-amid",
-        "decision": "skipped",
-        "reason": "One unsourced site with no amounts, quotes or company announcements to confirm it."
-      },
-      {
-        "story": "Google Cloud Agent Compute Engine, one microVM per AI agent",
-        "decision": "skipped",
-        "reason": "Seen only as a feed headline; I could not find Google's announcement or any report to read."
-      },
-      {
-        "story": "Chinese state media: DeepSeek and MiniMax cleared to open-source models overseas",
-        "decision": "skipped",
-        "reason": "DeepSeek already posts today, and I could not read the Bloomberg report."
-      },
-      {
-        "story": "GM turns OnStar into an AI assistant in the 2027 Cadillac Lyriq",
-        "source": "https://techcrunch.com/2026/10/21/gm-is-giving-onstar-an-ai-makeover/",
-        "decision": "skipped",
-        "reason": "Announced Oct 21, too old for the desk."
-      },
-      {
-        "story": "1Password lets AI agents log in without seeing your password",
-        "decision": "skipped",
-        "reason": "Earlier runs skipped it and the Claude version launched in July; Arc has wider appeal for today's open slot."
-      },
-      {
-        "story": "Canva releases its first image generation model",
-        "decision": "skipped",
-        "reason": "Skipped several times already and now more than a day old."
-      },
-      {
-        "story": "AI walkout at OpenAI's San Francisco office (Hoodline)",
-        "decision": "skipped",
-        "reason": "Small local protest piece; I found only older protest coverage, not a fresh second source."
-      },
-      {
-        "story": "Zuckerberg's fight with Meta's board over pay and power (Washington Post)",
-        "decision": "skipped",
-        "reason": "Paywalled and I could not read it; it is about corporate governance, not AI."
-      },
-      {
-        "story": "Utility post for Oct 23",
-        "decision": "skipped",
-        "reason": "It is before 11:00 New York; a daytime run will queue today's utility post."
-      }
-    ],
-    "requests": []
-  },
-  {
     "run_at": "2026-10-23T10:15:27.811Z",
     "summary": "Early run (06:20 New York): no open links or requests; Oct 23 already had 5 posts, so queued 1 story, SK Hyper seeking $350 billion for AI data centers (P2), leaving room for today's utility post.",
     "considered": [
@@ -5544,6 +5471,68 @@
         "story": "Accenture staffer's personal Claude agent on a DOD network (Wired)",
         "decision": "skipped",
         "reason": "Passed over in earlier runs; contractor security incident, not Anthropic news."
+      }
+    ],
+    "requests": []
+  },
+  {
+    "run_at": "2026-10-30T10:00:47.445Z",
+    "summary": "Dawn run (05:55 New York, Oct 30): no open links or requests and no new priority 1 story overnight; Oct 30 already has 7 jobs, so nothing was queued and the last slot stays open for morning news.",
+    "considered": [
+      {
+        "story": "OpenAI-backed Thrive Holdings to buy ADT ($7.6B equity, $15.3B enterprise value)",
+        "source": "https://finance.yahoo.com/technology/ai/articles/openai-backed-thrive-holdings-acquires-195619167.html",
+        "decision": "skipped",
+        "reason": "Now confirmed by TechCrunch and Investing.com, but it broke yesterday morning, no AI products were announced, and the last Oct 30 slot is better kept for fresh morning news."
+      },
+      {
+        "story": "Humanist worker wins a religious exemption from using AI at work (TechCrunch)",
+        "source": "https://www.computerworld.com/article/4184617/software-engineer-reportedly-wins-religious-exemption-from-ai-use-2.html",
+        "decision": "skipped",
+        "reason": "Similar exemption stories date back to June, and only one fresh report seen; weak for the last slot."
+      },
+      {
+        "story": "Companies quietly reversing AI-driven layoffs (Washington Post)",
+        "source": "https://www.washingtonpost.com/business/2026/10/29/ai-jobs-layoffs-hiring-rebounding-skills/71f09614-d3bd-11f1-9931-2a41b76fc976_story.html",
+        "decision": "skipped",
+        "reason": "Trend piece on a theme covered widely since August, and layoff stories need manual approval."
+      },
+      {
+        "story": "India's AM Intelligence seeks $3B to buy 9,000 Nvidia Rubin GPUs (Bloomberg)",
+        "source": "https://www.bloomberg.com/news/articles/2026-10-30/indian-ai-firm-seeks-3-billion-financing-for-nvidia-chips-order",
+        "decision": "skipped",
+        "reason": "Financing talks at a little-known Indian firm, low US interest."
+      },
+      {
+        "story": "Tencent and Alibaba in talks to back DeepSeek at $20B+ (The Information)",
+        "decision": "skipped",
+        "reason": "Paywalled single report on funding talks, no second source."
+      },
+      {
+        "story": "Meta launches Style Sketch AI fashion app in Southeast Asia",
+        "source": "https://techcrunch.com/2026/10/29/meta-quietly-launches-an-ai-fashion-app-called-style-sketch/",
+        "decision": "skipped",
+        "reason": "Not available in the US, small test launch."
+      },
+      {
+        "story": "OpenAI four-layer misalignment monitoring",
+        "decision": "covered",
+        "reason": "Already queued as 2026-10-30-openai-monitor-caught-model-reaching-internet."
+      },
+      {
+        "story": "OpenAI doubles ChatGPT Pro limits and drops the Pro 200 cut",
+        "decision": "covered",
+        "reason": "Already queued as 2026-10-30-chatgpt-pro-limits-doubled-cut-canceled."
+      },
+      {
+        "story": "Mistral releases Large 4 open weights",
+        "decision": "covered",
+        "reason": "Covered as 2026-10-29-mistral-le-chonk-open-weights."
+      },
+      {
+        "story": "Nvidia to guarantee Nscale debt for a 460MW Anthropic build",
+        "decision": "skipped",
+        "reason": "Financing detail passed over in the previous run, nothing new."
       }
     ],
     "requests": []
