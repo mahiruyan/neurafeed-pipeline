@@ -20,9 +20,14 @@
       "status": "publish_failed",
       "at": "2026-10-30T00:01:02.805Z",
       "by": "system"
+    },
+    {
+      "status": "posted",
+      "at": "2026-10-30T00:06:31.286Z",
+      "by": "system"
     }
   ],
-  "status": "publish_failed",
+  "status": "posted",
   "files": [
     "out/2026-10-29-openai-model-spec-five-values-gpt/1.jpg",
     "out/2026-10-29-openai-model-spec-five-values-gpt/2.jpg",
@@ -34,7 +39,7 @@
   "image_errors": [
     "slide 1 badge 1: left out, the photo already shows this logo"
   ],
-  "updated_at": "2026-10-30T00:01:02.805Z",
+  "updated_at": "2026-10-30T00:06:31.286Z",
   "sent_at": "2026-10-29T22:10:15.558Z",
   "message_id": 1992,
   "by": "night rule: 3 sources, not sensitive",
@@ -48,5 +53,18 @@
     1992
   ],
   "error": "Instagram 17841477983419365/media_publish: Media ID is not available",
-  "attempts": 1
+  "attempts": 1,
+  "posted_at": "2026-10-30T00:06:31.286Z",
+  "publish": {
+    "mode": "instagram",
+    "media_id": "17930044854182334",
+    "facebook": {
+      "id": "876414312221880_122147723049099381",
+      "type": "album"
+    },
+    "threads": {
+      "id": "18178358632444651",
+      "type": "carousel"
+    }
+  }
 }
