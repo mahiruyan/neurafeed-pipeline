@@ -15,9 +15,14 @@
       "status": "approved",
       "at": "2026-10-29T22:45:30.407Z",
       "by": "night rule: 3 sources, not sensitive"
+    },
+    {
+      "status": "publish_failed",
+      "at": "2026-10-30T00:01:02.805Z",
+      "by": "system"
     }
   ],
-  "status": "approved",
+  "status": "publish_failed",
   "files": [
     "out/2026-10-29-openai-model-spec-five-values-gpt/1.jpg",
     "out/2026-10-29-openai-model-spec-five-values-gpt/2.jpg",
@@ -29,7 +34,7 @@
   "image_errors": [
     "slide 1 badge 1: left out, the photo already shows this logo"
   ],
-  "updated_at": "2026-10-29T22:45:30.407Z",
+  "updated_at": "2026-10-30T00:01:02.805Z",
   "sent_at": "2026-10-29T22:10:15.558Z",
   "message_id": 1992,
   "by": "night rule: 3 sources, not sensitive",
@@ -41,5 +46,7 @@
     1990,
     1991,
     1992
-  ]
+  ],
+  "error": "Instagram 17841477983419365/media_publish: Media ID is not available",
+  "attempts": 1
 }
