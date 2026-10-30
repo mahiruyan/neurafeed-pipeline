@@ -1,70 +1,5 @@
 [
   {
-    "run_at": "2026-10-23T06:03:58.752Z",
-    "summary": "Overnight run (02:20 New York): no open links or requests; Oct 23 already has 5 posts lined up, so queued 1 catch-up story: DeepSeek closing a $15 billion round days after the US federal ban (P2).",
-    "considered": [
-      {
-        "story": "DeepSeek wraps up a $15 billion round backed by Tencent and CATL, two days after DHS ordered federal agencies to remove its products",
-        "source": "https://www.brecorder.com/news/40445434/deepseek-wrapping-up-15-billion-fundraising-to-fuel-ai-race",
-        "decision": "queued",
-        "job_id": "2026-10-23-deepseek-15-billion-after-us-ban",
-        "priority": 2
-      },
-      {
-        "story": "Major US banks find unauthorized third-party AI agents inside customer accounts (Axios)",
-        "source": "https://decrypt.co/381602/banks-rogue-ai-agents-inside-customer-accounts",
-        "decision": "skipped",
-        "reason": "Every report traces back to one Axios piece from Oct 22 morning, and Walmart's agent shopping story already posts today on the same theme."
-      },
-      {
-        "story": "OpenAI offers US university labs up to 30 free GPT-Rosalind seats",
-        "source": "https://www.unite.ai/openai-launches-rosalind-academic-plan-for-u-s-university-labs/",
-        "decision": "skipped",
-        "reason": "Narrow academic program with little general US interest; today's slots are nearly full."
-      },
-      {
-        "story": "Anthropic 2026 Public Benefit Report (Claude models reached real systems in a misconfigured test)",
-        "source": "https://www.edtechinnovationhub.com/news/anthropic-publishes-public-benefit-report-detailing-ai-progress-and-gaps-in-measuring-impact",
-        "decision": "skipped",
-        "reason": "Report is from Oct 21 and Anthropic's original page was not found to read the details first hand."
-      },
-      {
-        "story": "Gemini conversational navigation comes to Google Maps on Apple CarPlay",
-        "source": "https://iphonesoft.fr/2026/10/21/gemini-carplay-google-maps",
-        "decision": "skipped",
-        "reason": "Announced Oct 21 and close to the Gemini Android Auto post we already ran."
-      },
-      {
-        "story": "MIT strands Claude agents on a virtual island and they start to play (TechCrunch write-up)",
-        "source": "https://techcrunch.com/2026/10/22/left-alone-with-nothing-to-do-ai-agents-started-playing/",
-        "decision": "skipped",
-        "reason": "The research is from Oct 19; it was already skipped as too old."
-      },
-      {
-        "story": "OpenAI nears $30B bridge round at $1.25T valuation",
-        "decision": "covered",
-        "reason": "Same round already covered as 2026-10-20-openai-30-billion-race-anthropic-ipo."
-      },
-      {
-        "story": "Lawsuit says OpenAI took minors' data without parental consent",
-        "source": "https://news.bloomberglaw.com/litigation/openai-accused-of-taking-minors-data-without-parental-consent",
-        "decision": "skipped",
-        "reason": "The suit was filed around Oct 16; Mashable's piece is a late rewrite with nothing new."
-      },
-      {
-        "story": "WSJ: the Signal chats that cost OpenAI researchers their jobs",
-        "decision": "skipped",
-        "reason": "Paywalled, I could not read it, and the firings date from Oct 8."
-      },
-      {
-        "story": "Utility post for Oct 23",
-        "decision": "skipped",
-        "reason": "It is before 11:00 New York; a daytime run will queue today's utility post."
-      }
-    ],
-    "requests": []
-  },
-  {
     "run_at": "2026-10-23T08:13:44.921Z",
     "summary": "Early run (04:20 New York): made Mahir's NVIDIA Vera Rubin Reel link (no job after 45 minutes) and queued 1 news story, Arc browser shutting down (P2); no open requests.",
     "considered": [
@@ -5538,6 +5473,77 @@
         "story": "Dartmouth provost resigns over accusations he used AI for writing",
         "decision": "skipped",
         "reason": "Local story, skipped in earlier runs, and only one slot left for the day."
+      }
+    ],
+    "requests": []
+  },
+  {
+    "run_at": "2026-10-30T07:55:34.286Z",
+    "summary": "Pre-dawn run (03:55 New York, Oct 30): no open links or requests, no new priority 1 story since the last run, and Oct 30 already has 7 jobs waiting, so nothing was queued; the last slot stays open for morning news.",
+    "considered": [
+      {
+        "story": "OpenAI four-layer misalignment monitoring flagged a model reaching the internet",
+        "source": "https://openai.com/index/how-we-detect-frontier-model-misalignment/",
+        "decision": "covered",
+        "reason": "Already queued as 2026-10-30-openai-monitor-caught-model-reaching-internet."
+      },
+      {
+        "story": "OpenAI doubles ChatGPT Pro limits and cancels the Pro 200 cut",
+        "source": "https://www.ghacks.net/2026/10/30/openai-doubles-chatgpt-pro-and-business-premium-usage-limits-after-dropping-a-planned-pro-200-cut/",
+        "decision": "covered",
+        "reason": "Already queued as 2026-10-30-chatgpt-pro-limits-doubled-cut-canceled."
+      },
+      {
+        "story": "Nvidia to guarantee Nscale debt for a 460MW Anthropic build",
+        "source": "https://cryptobriefing.com/nvidia-credit-support-nscale-anthropic-deal/",
+        "decision": "skipped",
+        "reason": "Financing detail from a single secondary report, and only one slot is left for Oct 30."
+      },
+      {
+        "story": "UMG settles its Udio lawsuit and signs a licensing deal for a new AI music platform",
+        "source": "https://www.prnewswire.com/news-releases/universal-music-group-and-udio-announce-udios-first-strategic-agreements-for-new-licensed-ai-music-creation-platform-302599129.html",
+        "decision": "skipped",
+        "reason": "Interesting but not priority 1; keeping the last Oct 30 slot for bigger morning news."
+      },
+      {
+        "story": "DeepSeek closes a $16B round led by China's state Big Fund (The Information)",
+        "source": "https://www.theinformation.com/articles/behind-deepseeks-16-billion-funding-chinese-tech-titans-state-players",
+        "decision": "skipped",
+        "reason": "Paywalled single report not read in full, no second confirmed source yet."
+      },
+      {
+        "story": "Reddit CEO says Google AI Mode sends little traffic, plans a mostly logged-in site",
+        "source": "https://www.theverge.com/tech/1022848/reddit-ceo-google-ai-mode-traffic",
+        "decision": "skipped",
+        "reason": "Day is one short of the cap; better candidates may come in the morning."
+      },
+      {
+        "story": "Anthropic expands AI for Science to 20 research organizations",
+        "source": "https://www.anthropic.com/news/ai-for-science-expands-foundations-research-institutions",
+        "decision": "skipped",
+        "reason": "Program expansion with modest consumer interest, and Anthropic already has a queued post today."
+      },
+      {
+        "story": "Canada takes an equity stake in Cohere for up to C$1.6 billion",
+        "source": "https://www.semafor.com/article/10/29/2026/canada-to-take-equity-stake-in-ai-firm",
+        "decision": "skipped",
+        "reason": "Canadian policy funding story with limited US appeal."
+      },
+      {
+        "story": "CrowdStrike: Vapor Panda ran DeepSeek-powered attacks on 200+ targets",
+        "source": "https://www.crowdstrike.com/en-us/blog/vapor-panda-uses-artex-to-scale-global-campaign/",
+        "decision": "skipped",
+        "reason": "Security vendor report, niche for the audience, and the day is nearly full."
+      },
+      {
+        "story": "Anthropic sued over Elvis catalog (TechRadar)",
+        "decision": "covered",
+        "reason": "Already covered as 2026-10-24-elvis-rights-holders-sue-anthropic."
+      },
+      {
+        "story": "Accenture staffer's personal Claude agent on a DOD network (Wired)",
+        "decision": "skipped",
+        "reason": "Passed over in earlier runs; contractor security incident, not Anthropic news."
       }
     ],
     "requests": []
