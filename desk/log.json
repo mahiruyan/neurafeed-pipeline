@@ -1,79 +1,5 @@
 [
   {
-    "run_at": "2026-10-23T00:10:19.069Z",
-    "summary": "Evening run: queued the Nasdaq AI selloff and Claude's formal verification research (both priority 1) plus today's utility how-to for Claude in Google Docs, Sheets and Slides; no open links or requests.",
-    "considered": [
-      {
-        "story": "Nasdaq falls 2.6% on AI spending fears, chip stocks and Meta slide",
-        "source": "https://finance.yahoo.com/markets/stocks/articles/nasdaq-futures-drop-over-1-093849296.html",
-        "decision": "queued",
-        "job_id": "2026-10-22-nasdaq-worst-day-ai-spending-fears",
-        "priority": 1
-      },
-      {
-        "story": "Anthropic says Claude formally verified 123 open-source libraries and found hundreds of bugs",
-        "source": "https://www.anthropic.com/research/formal-verification",
-        "decision": "queued",
-        "job_id": "2026-10-22-claude-proves-123-libraries-wont-crash",
-        "priority": 1
-      },
-      {
-        "story": "Claude for Google Workspace (Docs, Sheets, Slides) how-to",
-        "source": "https://www.reworked.co/digital-workplace/anthropic-opens-claude-for-google-workspace-in-beta/",
-        "decision": "queued",
-        "job_id": "2026-10-22-claude-google-docs-sheets-slides-how-to",
-        "priority": 2
-      },
-      {
-        "story": "OpenAI nears $30B raise at a trimmed $1.25T valuation (CNBC, TechCrunch, FT)",
-        "source": "https://techcrunch.com/2026/10/22/openai-working-on-new-30b-raise-at-1-25t-valuation-ahead-of-ipo/",
-        "decision": "covered",
-        "reason": "Same $30 billion round already posted as 2026-10-20-openai-30-billion-race-anthropic-ipo; today's news is only an update on the valuation."
-      },
-      {
-        "story": "Anthropic, OpenAI and Musk pledge donations amid AI backlash (Bloomberg)",
-        "decision": "covered",
-        "reason": "Already covered by 2026-10-18-anthropic-48-billion-public-benefit-fund and 2026-10-19-musk-anthropic-give-shares-to-public."
-      },
-      {
-        "story": "Websites shut down after AI finds flaw affecting 70% of the internet",
-        "decision": "covered",
-        "reason": "Already posted as 2026-10-21-ai-finds-php2shell-flaws."
-      },
-      {
-        "story": "New Mexico AG warns AI industry after $25B Meta ruling (Politico)",
-        "decision": "skipped",
-        "reason": "Legal story with only one lead and the 8-post cap for today is now reached; can be picked up tomorrow if it grows."
-      },
-      {
-        "story": "Expanding Claude availability on Google Cloud",
-        "decision": "skipped",
-        "reason": "Enterprise availability update with little consumer interest, and today's cap is reached."
-      },
-      {
-        "story": "Ex-OpenAI science chief Kevin Weil launches Warp Sciences with $215M",
-        "decision": "skipped",
-        "reason": "Funding round with narrow US consumer appeal; cap reached."
-      },
-      {
-        "story": "Canva's first in-house AI image model (The Verge)",
-        "decision": "skipped",
-        "reason": "Smaller launch than the queued stories; cap reached for today."
-      },
-      {
-        "story": "Meta turns Muse sharing back on (The Verge)",
-        "decision": "skipped",
-        "reason": "Minor product toggle after Muse was covered on 2026-10-21."
-      },
-      {
-        "story": "OpenAI engineer arrested for bugging a conference room",
-        "decision": "skipped",
-        "reason": "Crime story from a single trade outlet; not confirmed with a second source."
-      }
-    ],
-    "requests": []
-  },
-  {
     "run_at": "2026-10-23T02:11:09.758Z",
     "summary": "Late run (21:55 New York): no open links or requests; Oct 22 is at its cap, so queued one evergreen priority 2 story for tomorrow's windows: Walmart letting AI agents shop for customers.",
     "considered": [
@@ -5565,6 +5491,64 @@
         "story": "Claude smart reports flag off-topic chats (Mashable)",
         "decision": "covered",
         "reason": "Already posted as 2026-10-29-claude-smart-reports-off-topic-chats."
+      }
+    ],
+    "requests": []
+  },
+  {
+    "run_at": "2026-10-30T02:07:45.930Z",
+    "summary": "Late night run (21:55 New York, Oct 29): no open links or requests, no new priority 1 story since the 20:20 run, and Oct 29 is far over the 8 job cap with five jobs already held for the Oct 30 windows, so nothing was queued.",
+    "considered": [
+      {
+        "story": "Amazon Q3 results: AWS revenue up 39% to $46 billion, $578 billion backlog, about $220 billion 2026 capex, EPS miss and shares down after hours",
+        "source": "https://ir.aboutamazon.com/news-release/news-release-details/2026/Amazon-com-Announces-Third-Quarter-Results/default.aspx",
+        "decision": "skipped",
+        "reason": "Good priority 2 story with two sources read (Amazon release, Investing.com call transcript), but the day is over the cap, Oct 30 morning already has five held posts, and image hosts could not be checked from this run; a morning run can still queue it as a non-timely earnings recap."
+      },
+      {
+        "story": "Microsoft launches a bond sale of at least $25 billion to fund AI infrastructure",
+        "decision": "skipped",
+        "reason": "Finance story with little consumer interest, and the day is over the cap."
+      },
+      {
+        "story": "Alphabet 10-Q flags about $1 trillion in AI commitments",
+        "decision": "covered",
+        "reason": "Follow-up to 2026-10-29-gemini-1-billion-users-alphabet-stock-drops."
+      },
+      {
+        "story": "OpenAI rebuilds its Model Spec and renames the model GPT",
+        "decision": "covered",
+        "reason": "Already posted as 2026-10-29-openai-model-spec-five-values-gpt."
+      },
+      {
+        "story": "Anthropic S-1 analysis and WSJ on its $40 trillion market estimate",
+        "decision": "covered",
+        "reason": "Commentary on the IPO filing already covered in 2026-10-21-anthropic-s1-80-billion-loss and 2026-10-26-anthropic-files-ipo-ant-nasdaq."
+      },
+      {
+        "story": "ChatGPT Pro 200 grace period ends after usage was cut from 20x to 10x of Plus",
+        "decision": "skipped",
+        "reason": "The change was announced on October 2; only the grace period ends now, not new news."
+      },
+      {
+        "story": "EMBRACE attack breaks the built-in browsers of five AI coding tools",
+        "decision": "skipped",
+        "reason": "Security research with one secondary report seen, and the day is over the cap."
+      },
+      {
+        "story": "Fluidstack reportedly raising at a $40 billion valuation",
+        "decision": "skipped",
+        "reason": "Funding round with little US consumer interest."
+      },
+      {
+        "story": "Mistral Large 4 open weights and its cyber skills",
+        "decision": "covered",
+        "reason": "Already queued as 2026-10-29-mistral-le-chonk-open-weights."
+      },
+      {
+        "story": "Gemini creates and edits documents and PDFs inside the chat",
+        "decision": "covered",
+        "reason": "Already queued as 2026-10-30-gemini-edit-files-in-chat."
       }
     ],
     "requests": []
