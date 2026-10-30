@@ -1,65 +1,5 @@
 [
   {
-    "run_at": "2026-10-23T17:54:07.005Z",
-    "summary": "Afternoon run (13:55 New York): no open links or requests; Oct 23 already has 8 desk jobs plus Mahir's Reel, so the daily cap is full and no new priority 1 story appeared, nothing queued.",
-    "considered": [
-      {
-        "story": "Goldman Sachs launches a $500 million small business AI push with OpenAI and Meta",
-        "source": "https://www.nbcnews.com/business/ceo-interviews/goldman-sachs-small-business-ai-institute-rcna604621",
-        "decision": "skipped",
-        "reason": "A bank program rather than major AI lab news, NBC could not be opened, and the 8 slot cap for Oct 23 is full."
-      },
-      {
-        "story": "1Password launches 1Password for Agents, built with Anthropic and OpenAI",
-        "source": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQenNEdjg4YjkzOC1PWlV4VkJRUWF",
-        "decision": "skipped",
-        "reason": "Enterprise security product with limited consumer appeal, and the daily cap is full."
-      },
-      {
-        "story": "Google makes Gemini-built web apps easier to share (Android Authority)",
-        "decision": "skipped",
-        "reason": "Small feature update, not a priority 1 story, and the daily cap is full."
-      },
-      {
-        "story": "Ideogram releases a vector model that generates editable SVG files",
-        "decision": "skipped",
-        "reason": "Niche design tool release, and the daily cap is full."
-      },
-      {
-        "story": "American Express cutting 5% of its workforce to prepare for AI",
-        "source": "https://news.google.com/rss/articles/CBMib0FVX3lxTFBhblpwLUhvM1dNN2FhWWlUSzZLclJ",
-        "decision": "skipped",
-        "reason": "Already skipped at noon: cap full and Barclays AI layoffs posted Oct 22."
-      },
-      {
-        "story": "Swedish government offices ban ChatGPT and Claude on work computers",
-        "decision": "skipped",
-        "reason": "Already skipped at noon as a regional story, and the cap is full."
-      },
-      {
-        "story": "Claude auto mode becomes the default for paid plans",
-        "decision": "covered",
-        "reason": "Already queued as 2026-10-23-claude-stops-asking-permission."
-      },
-      {
-        "story": "Anthropic donates Agent Skills to the Agentic AI Foundation",
-        "decision": "covered",
-        "reason": "Already posted as 2026-10-23-anthropic-gives-away-agent-skills."
-      },
-      {
-        "story": "Arc browser shutting down on December 22",
-        "decision": "covered",
-        "reason": "Already queued as 2026-10-23-arc-browser-shutting-down."
-      },
-      {
-        "story": "OpenAI nears a $30B round at a $1.25T valuation",
-        "decision": "covered",
-        "reason": "Same round already posted as 2026-10-20-openai-30-billion-race-anthropic-ipo-v2."
-      }
-    ],
-    "requests": []
-  },
-  {
     "run_at": "2026-10-23T20:02:17.782Z",
     "summary": "Evening run (15:55 New York): no open links or requests; queued one priority 1 story (OpenAI moves frontier training offline plus the METR and Redwood audit of its agent monitoring) on top of a full day, since priority 1 stories are never skipped; everything else skipped.",
     "considered": [
@@ -5457,6 +5397,55 @@
         "source": "https://blogs.nvidia.com/blog/ai-joins-the-search-for-extraterrestrial-signals/",
         "decision": "skipped",
         "reason": "Daily cap reached; good evergreen candidate for a later day."
+      }
+    ],
+    "requests": []
+  },
+  {
+    "run_at": "2026-10-30T17:54:43.656Z",
+    "summary": "Early afternoon run (13:55 New York, Oct 30): no open links or requests, no new uncovered priority 1 story since the last run, and Oct 30 is already at the 8-job cap, so nothing was queued.",
+    "considered": [
+      {
+        "story": "Microsoft 10-Q shows about $10B in quarterly revenue from OpenAI",
+        "source": "https://aiweekly.co/ai-news-today",
+        "decision": "skipped",
+        "reason": "Filing detail that overlaps the Oct 28 Microsoft record quarter post, and the day is at its cap."
+      },
+      {
+        "story": "Anthropic IPO filing coverage (SiliconANGLE, Fortune on its risk section)",
+        "source": "https://siliconangle.com/2026/10/30/as-anthropic-finally-files-for-ipo-rising-risks-arent-slowing-the-ai-buildout-yet",
+        "decision": "covered",
+        "reason": "The filing was already covered as 2026-10-26-anthropic-files-ipo-ant-nasdaq; these are follow-up analysis pieces."
+      },
+      {
+        "story": "Sam Altman says it is terrible for gamers to have RAM in PCs",
+        "decision": "skipped",
+        "reason": "Daily cap of 8 reached; still a candidate for tomorrow if people keep talking about it."
+      },
+      {
+        "story": "UK CMA probes Meta's terms pulling publisher content into AI features",
+        "decision": "skipped",
+        "reason": "UK regulatory step with limited US interest, and the day is at its cap."
+      },
+      {
+        "story": "Agility Robotics prices a $465M SPAC deal, Nasdaq trading Nov 5",
+        "decision": "skipped",
+        "reason": "Day is at its cap; better timed for the Nov 5 listing."
+      },
+      {
+        "story": "EMBRACE attack hits built-in browsers of five AI coding tools",
+        "decision": "skipped",
+        "reason": "Overlaps today's Claude Code backdoor security post, and the day is at its cap."
+      },
+      {
+        "story": "Texas sues OpenAI over ChatGPT child safety",
+        "decision": "covered",
+        "reason": "Already covered as 2026-10-25-texas-sues-openai-block-chatgpt-kids."
+      },
+      {
+        "story": "Pope Leo XIV says AI is a tool, not a person",
+        "decision": "skipped",
+        "reason": "Daily cap reached; skipped in the previous run for the same reason."
       }
     ],
     "requests": []
