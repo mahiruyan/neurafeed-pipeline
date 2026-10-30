@@ -1,132 +1,5 @@
 [
   {
-    "run_at": "2026-10-23T14:30:02.455Z",
-    "summary": "Mid-morning run (10:30 New York): no open links or requests; Oct 23 had 6 news jobs plus Mahir's Reel, so queued 1 story, Anthropic and Hg planning a European AI consultancy (P2), leaving the last slot for today's utility post.",
-    "considered": [
-      {
-        "story": "Anthropic and private equity firm Hg plan an AI consultancy for European businesses (FT report)",
-        "source": "https://thenextweb.com/news/anthropic-hg-european-ai-consultancy",
-        "decision": "queued",
-        "job_id": "2026-10-23-anthropic-hg-ai-consultancy-europe",
-        "priority": 2
-      },
-      {
-        "story": "Bill Gates on The Verge's Decoder: two turbulent decades of AI ahead",
-        "source": "https://www.tipranks.com/news/20-years-of-ai-tumult-ahead-says-bill-gates-microsoft-stock-nasdaqmsft-slides",
-        "decision": "skipped",
-        "reason": "Interview went out Oct 22, I could not open The Verge, and Gates gave similar warnings in August."
-      },
-      {
-        "story": "MIT strands Claude agents on a virtual island and they start to play (TechCrunch)",
-        "source": "https://techcrunch.com/2026/10/22/left-alone-with-nothing-to-do-ai-agents-started-playing/",
-        "decision": "skipped",
-        "reason": "Research from Oct 19, already skipped twice as too old."
-      },
-      {
-        "story": "HeyGen Video 1 ranks first for text to video in an Artificial Analysis blind test",
-        "source": "https://x.com/HeyGen/status/2113325916181102761",
-        "decision": "skipped",
-        "reason": "Company claim from Oct 22 with no independent news source found."
-      },
-      {
-        "story": "WSJ: the Signal chats that cost three OpenAI researchers their jobs",
-        "decision": "skipped",
-        "reason": "Paywalled, firings date from Oct 8, already skipped by earlier runs."
-      },
-      {
-        "story": "Meta falls 7% after earnings as capex and new non-voting shares worry investors",
-        "source": "https://www.heygotrade.com/en/news/meta-meta-stock-news-october-23-2026/",
-        "decision": "covered",
-        "reason": "Same sell-off as 2026-10-22-nasdaq-worst-day-ai-spending-fears and Meta spending in 2026-10-21-meta-ai-spending-ate-the-cash."
-      },
-      {
-        "story": "OpenAI Decisions API generally available",
-        "decision": "skipped",
-        "reason": "Developer API release from Oct 22 with little consumer appeal, skipped by earlier runs."
-      },
-      {
-        "story": "Pathos AI raises $237M Series E at a $3B valuation",
-        "source": "https://www.techmeme.com/261023/p9",
-        "decision": "skipped",
-        "reason": "Biotech funding round with little US consumer interest."
-      },
-      {
-        "story": "Apple TV 4K with Siri AI",
-        "source": "https://www.apple.com/newsroom/2026/10/apple-unveils-the-new-apple-tv-4k/",
-        "decision": "skipped",
-        "reason": "Announced Oct 13, too old."
-      },
-      {
-        "story": "Oracle commits $1 billion to its partner ecosystem",
-        "decision": "skipped",
-        "reason": "Enterprise partner program news with little consumer appeal."
-      },
-      {
-        "story": "Utility post for Oct 23",
-        "decision": "skipped",
-        "reason": "It is before 11:00 New York; the next run will queue it in the last open slot."
-      }
-    ],
-    "requests": []
-  },
-  {
-    "run_at": "2026-10-23T16:12:16.822Z",
-    "summary": "Noon run (11:55 New York): no open links or requests; Oct 23 already had 7 desk jobs plus Mahir's Reel, so queued only today's utility post (a how-to for Canva's new Craft image model), filling the 8th and last slot.",
-    "considered": [
-      {
-        "story": "Canva releases Canva Craft, its first in-house image model, to all users in Dream Lab",
-        "source": "https://www.unite.ai/canva-debuts-craft-image-model-built-by-its-in-house-research-lab/",
-        "decision": "queued",
-        "job_id": "2026-10-23-canva-craft-image-model-how-to",
-        "priority": 2
-      },
-      {
-        "story": "OpenAI nears up to $30B round at a $1.25T valuation, below the $1.4T it pitched, led by UAE investors",
-        "source": "https://www.cnbc.com/2026/10/22/openai-funding-round-uae-investors.html",
-        "decision": "covered",
-        "reason": "Same round already posted as 2026-10-20-openai-30-billion-race-anthropic-ipo-v2."
-      },
-      {
-        "story": "Sweden's Government Offices block ChatGPT and Claude on work computers, staff must use Copilot",
-        "source": "https://www.dailynorthern.com/36084/swedish-government-offices-block-chatgpt-and-claude/",
-        "decision": "skipped",
-        "reason": "Today's 8 slot cap is full after the utility post, and it is a Swedish government IT rule with limited US interest."
-      },
-      {
-        "story": "American Express cutting 5% of its workforce to prepare for AI",
-        "source": "https://www.cnbc.com/",
-        "decision": "skipped",
-        "reason": "Daily cap reached, and a similar AI layoffs story (Barclays) posted on Oct 22."
-      },
-      {
-        "story": "Gemini 4 Argon hits nearly 25 trillion tokens in 72 hours, Pichai says Google is short of compute",
-        "decision": "skipped",
-        "reason": "Follow-up to the Oct 13 launch post, one regional source, and the daily cap is full."
-      },
-      {
-        "story": "Guardian: experts cast doubt on Anthropic's report on how AI changed work inside the company",
-        "decision": "skipped",
-        "reason": "Daily cap is full; Anthropic already has three posts today."
-      },
-      {
-        "story": "METR and Redwood find weaknesses in OpenAI's internal agent monitor",
-        "decision": "covered",
-        "reason": "Same story as 2026-10-21-openai-agents-switched-off-alarms."
-      },
-      {
-        "story": "Reservoir Media sues Suno and Anthropic over music training",
-        "decision": "skipped",
-        "reason": "One aggregator source, a lawsuit (sensitive), and the daily cap is full."
-      },
-      {
-        "story": "NVIDIA 64GB DGX Spark at $4,999",
-        "decision": "skipped",
-        "reason": "Niche developer hardware, NVIDIA Reel already posted today, cap is full."
-      }
-    ],
-    "requests": []
-  },
-  {
     "run_at": "2026-10-23T17:54:07.005Z",
     "summary": "Afternoon run (13:55 New York): no open links or requests; Oct 23 already has 8 desk jobs plus Mahir's Reel, so the daily cap is full and no new priority 1 story appeared, nothing queued.",
     "considered": [
@@ -5516,5 +5389,76 @@
         "result": "Made a 7-slide Binance hack carousel from Help Net Security, Al Jazeera, CoinDesk, AFP and ABC News: the $6.3B amount, the laptop entry point, North Korea attribution, frozen funds and Binance's response. It is marked sensitive (crime), so it waits for your approval."
       }
     ]
+  },
+  {
+    "run_at": "2026-10-30T16:51:43.502Z",
+    "summary": "Queued the tampered Claude Code extension backdoor story (P1) and today's utility post with a Claude guide; today is now at 8 jobs, the daily cap.",
+    "considered": [
+      {
+        "story": "Tampered Claude Code extension 2.1.313 planted an SSH backdoor on up to 5,000 Cursor users",
+        "source": "https://www.stepsecurity.io/blog/claude-code-extension-trojanized",
+        "decision": "queued",
+        "job_id": "2026-10-30-fake-claude-code-update-ssh-backdoor",
+        "priority": 1
+      },
+      {
+        "story": "Utility: Claude Projects, file uploads and artifacts (guide from guides/plan.md, next after ChatGPT)",
+        "source": "https://support.claude.com/en/articles/9517075-what-are-projects",
+        "decision": "queued",
+        "job_id": "2026-10-30-claude-projects-files-artifacts-guide",
+        "priority": 2
+      },
+      {
+        "story": "Texas sues OpenAI over ChatGPT child safety",
+        "decision": "covered",
+        "reason": "Already covered as 2026-10-25-texas-sues-openai-block-chatgpt-kids."
+      },
+      {
+        "story": "Sam Altman says it is terrible for gamers to have RAM in PCs",
+        "source": "https://news.google.com/",
+        "decision": "skipped",
+        "reason": "Daily cap of 8 reached after the P1 story and the required utility post; candidate for tomorrow if still discussed."
+      },
+      {
+        "story": "Pope Leo calls for the disarmament of AI",
+        "source": "https://www.theverge.com/ai-artificial-intelligence/1023188/pope-leo-disarm-ai",
+        "decision": "skipped",
+        "reason": "Daily cap reached; religious and political angle is weaker for the account than the Claude security story."
+      },
+      {
+        "story": "US tech stocks fall sharply over AI cost fears (BBC)",
+        "decision": "skipped",
+        "reason": "Daily cap reached; markets angle overlaps with yesterday's Alphabet stock story."
+      },
+      {
+        "story": "Japan asks Anthropic and OpenAI for more access to advanced models (Nikkei)",
+        "decision": "skipped",
+        "reason": "Daily cap reached; paywalled with no second source read."
+      },
+      {
+        "story": "Cognizant forms 25,000-person OpenAI delivery group",
+        "decision": "skipped",
+        "reason": "Enterprise services deal with little US consumer interest."
+      },
+      {
+        "story": "Mistral releases Mistral Large 4 open weights",
+        "source": "https://mistral.ai/news/mistral-large-4-oss/",
+        "decision": "skipped",
+        "reason": "Daily cap reached and Mistral open weights were already covered on October 29."
+      },
+      {
+        "story": "Theranos whistleblower Tyler Shultz warns about AI boom deception",
+        "source": "https://techcrunch.com/2026/10/30/theranos-whistleblower-tyler-shultz-warns-that-the-ai-boom-is-a-great-opportunity-to-go-deceive-people/",
+        "decision": "skipped",
+        "reason": "Daily cap reached; opinion piece without hard news."
+      },
+      {
+        "story": "NVIDIA agentic AI joins the search for extraterrestrial signals",
+        "source": "https://blogs.nvidia.com/blog/ai-joins-the-search-for-extraterrestrial-signals/",
+        "decision": "skipped",
+        "reason": "Daily cap reached; good evergreen candidate for a later day."
+      }
+    ],
+    "requests": []
   }
 ]

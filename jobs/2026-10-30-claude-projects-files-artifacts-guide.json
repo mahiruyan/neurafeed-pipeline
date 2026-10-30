@@ -1,0 +1,290 @@
+{
+  "id": "2026-10-30-claude-projects-files-artifacts-guide",
+  "format": "utility",
+  "created_at": "2026-10-30T16:45:00Z",
+  "story_time": "2026-10-30T16:00:00Z",
+  "timely": false,
+  "sensitive": false,
+  "priority": 2,
+  "review": true,
+  "sources": [
+    {
+      "name": "Claude Help Center: What are projects",
+      "url": "https://support.claude.com/en/articles/9517075-what-are-projects"
+    },
+    {
+      "name": "Claude Help Center: RAG for projects",
+      "url": "https://support.claude.com/en/articles/11473015-retrieval-augmented-generation-rag-for-projects"
+    },
+    {
+      "name": "Claude Help Center: Uploading files",
+      "url": "https://support.claude.com/en/articles/8241126-uploading-files-to-claude"
+    },
+    {
+      "name": "Claude Help Center: Artifacts",
+      "url": "https://support.claude.com/en/articles/9487310-what-are-artifacts-and-how-do-i-use-them"
+    },
+    {
+      "name": "Claude: Artifacts",
+      "url": "https://claude.com/features/artifacts"
+    },
+    {
+      "name": "Ascendient Learning",
+      "url": "https://www.ascendientlearning.com/training-resources/tutorials/how-to-organize-your-work-with-claude-projects-and-artifacts"
+    },
+    {
+      "name": "Maginative",
+      "url": "https://www.maginative.com/article/anthropic-launches-projects-for-claude-now-your-team-can-collaborate-together-with-ai/"
+    },
+    {
+      "name": "Developers Digest",
+      "url": "https://www.developersdigest.tech/blog/claude-design-slides-and-docs"
+    },
+    {
+      "name": "Kevin Stratvert",
+      "url": "https://kevinstratvert.com/2026/05/14/how-to-use-claude-projects-step-by-step-tutorial/"
+    }
+  ],
+  "caption": "Three Claude features turn it from a chat box into a work tool.\nProjects keep your chats, files and standing instructions together, and free accounts get up to five.\nFile uploads read PDFs, spreadsheets and images, up to 20 files per chat.\nArtifacts put docs, decks and small tools right beside the chat.\n\nWhich one are you setting up first?\n\nFollow @neurafeed.ai for daily AI news.\n\nSource: Anthropic · Photo: Maginative, Developers Digest, Anthropic, Kevin Stratvert",
+  "threads_text": "Most of Claude's best tools sit one click away: Projects that remember your files and instructions, uploads for PDFs and spreadsheets up to 20 files a chat, and artifacts that build docs and decks next to the conversation. Free accounts get five projects. Do you use Projects, or start every chat from scratch?",
+  "slides": [
+    {
+      "kind": "cover",
+      "headline": "Stop pasting the same files into Claude. *3 features* that do the work for you",
+      "image": {
+        "url": "https://kevinstratvert.com/wp-content/uploads/2026/05/screenshot-2026-05-14-111549.jpg",
+        "credit": "Kevin Stratvert",
+        "fallback_urls": [
+          "https://www.developersdigest.tech/og/blog/claude-design-slides-and-docs?title=Claude+Design%2C+Slides+and+Docs+in+Any+Chat%3A+How+to+Use+Them&subtitle=Claude"
+        ],
+        "generate": "A worn-out office worker in a wrinkled white shirt sits at a crowded desk in a cramped home office in the evening, buried under towering stacks of printed reports, folders and loose spreadsheets that spill onto the floor. He leans back with a relieved half smile, looking at an open laptop whose screen is blank and softly lit. Surreal touch: the paper stacks nearest the laptop are being pulled into the screen like a gentle draft, sheets flying toward it. On the wall behind him, the orange logo from the first image is painted big and exact. Warm desk lamp light mixed with cold light from the laptop, harsh shadows. Blank surfaces, no readable text or labels on any object or paper. Generous headroom above his head. The man and the laptop fill the upper two thirds of the frame, the bottom third is the paper-covered desk. Photorealistic, high contrast, vertical composition, one clear subject, no letters, no watermarks. It must look like an unedited real photo from a news agency, not a painting, not digital art, no glow effects.",
+        "refs": [
+          "assets/logos/claude.png"
+        ]
+      },
+      "pos": "center 30%",
+      "badges": [
+        {
+          "url": "assets/logos/claude.png",
+          "shape": "free"
+        }
+      ]
+    },
+    {
+      "kind": "card",
+      "heading": "1. Start a *Project*",
+      "paras": [
+        "A project is a workspace with its own chats, files and instructions. Free accounts can make up to five.",
+        "Add your reference files once and every chat in that project can use them."
+      ],
+      "image": {
+        "url": "https://storage.ghost.io/c/49/a0/49a0c44f-2e08-4cc3-80a6-bf8207f188f4/content/images/size/w1200/2024/06/Claude-Projects.jpg",
+        "credit": "Maginative",
+        "fallback_urls": []
+      },
+      "note": "Start chats from inside the project, not the main sidebar."
+    },
+    {
+      "kind": "prompt",
+      "heading": "2. Give it *standing instructions*",
+      "paras": [
+        "Paste this into the project's instructions and fill in the brackets.",
+        "It is added to the start of every chat in that project, so you stop repeating yourself."
+      ],
+      "prompt": "You are helping me with [project]. The audience is [who]. Write in a [tone] tone, keep answers under [length], and tell me when you are not sure instead of guessing."
+    },
+    {
+      "kind": "card",
+      "heading": "3. Drop in *your files*",
+      "paras": [
+        "Click + in the chat box, then Add files or photos. PDFs, Word files, CSVs, spreadsheets and images all work.",
+        "Up to 20 files per chat. In PDFs under 100 pages, Claude reads the charts too."
+      ],
+      "image": {
+        "url": "https://www.developersdigest.tech/_next/image?url=%2Fimages%2Fblog%2Fclaude-design-slides-and-docs%2Fhero.webp&w=1920&q=75",
+        "credit": "Developers Digest",
+        "fallback_urls": []
+      }
+    },
+    {
+      "kind": "card",
+      "heading": "4. Ask for an *artifact*",
+      "paras": [
+        "Ask for a doc, a deck, a dashboard or a small tool and it opens beside the chat, ready to edit and share.",
+        "Turn on Cloud code execution and file creation in Settings, Capabilities first."
+      ],
+      "image": {
+        "url": "https://assets.claude.com/6dc7dfac91662cacf52534a25252db332309cb0d.jpg?w=1200&h=630&fit=crop",
+        "credit": "Anthropic",
+        "fallback_urls": []
+      },
+      "note": "Everything you make lands in the Artifacts tab."
+    },
+    {
+      "kind": "cta",
+      "hook": "Save this before your next big Claude session, and follow for more tricks that actually save time."
+    }
+  ],
+  "site_article": {
+    "kind": "guide",
+    "headline": "Claude Projects, file uploads and artifacts: a practical guide",
+    "dek": "How to set up a Claude project, write instructions that stick, get the most from uploaded files and turn answers into documents and tools.",
+    "summary": "Projects, file uploads and artifacts are the three Claude features that matter most for everyday work. Here is how to set up each one, what the limits are and where each one falls short.",
+    "seo_title": "Claude Projects, Files and Artifacts: A Practical Guide",
+    "seo_description": "How to set up Claude Projects, write project instructions, upload PDFs and spreadsheets, and create artifacts, with copy and paste prompts and current limits.",
+    "answer_summary": "Create a project, add instructions and reference files once, start every chat from inside it, upload files with the + button in the chat box, and ask Claude for a document, deck or tool to get an artifact beside the chat.",
+    "tags": [
+      "Claude",
+      "Anthropic",
+      "Claude Projects",
+      "Artifacts",
+      "AI guides"
+    ],
+    "hero_alt": "A person at a desk covered in paper stacks looking at a laptop, with the Claude logo on the wall.",
+    "paragraphs": [
+      {
+        "kind": "fact",
+        "text": "If you use Claude for the same kind of work every week, three features save the most time: Projects, file uploads and artifacts. Projects are self-contained workspaces with their own chat history and knowledge base, according to Anthropic's help center. File uploads let Claude read your PDFs, documents, spreadsheets and images. Artifacts are the documents, decks, dashboards and small tools Claude builds in a panel beside the conversation. This guide covers how to set up each one, the limits that apply and where each one falls short.",
+        "sources": [
+          0,
+          2,
+          3
+        ]
+      },
+      {
+        "kind": "heading",
+        "text": "Projects: set the context once"
+      },
+      {
+        "kind": "fact",
+        "text": "Anthropic says Projects are available to every user, including free accounts, and that free users can create up to five projects. Each project has a knowledge base, where you add documents, text and code, and a set of instructions that shape how Claude answers inside it, such as a more formal tone or the point of view of a specific role.",
+        "sources": [
+          0
+        ]
+      },
+      {
+        "kind": "step",
+        "title": "1. Create the project",
+        "text": "Go to Projects and create a new one. Give it a name you will recognize later, like the client, the class or the report. According to Ascendient Learning, Claude does not read the project name or description; they are only there to help you stay organized."
+      },
+      {
+        "kind": "step",
+        "title": "2. Write the instructions",
+        "text": "Open the project's instructions and write the brief you would otherwise paste into every chat. Ascendient Learning notes the instructions are added at the start of every conversation in the project. Say who Claude is helping, who the audience is, the format you want, the tone and where the facts come from."
+      },
+      {
+        "kind": "prompt",
+        "title": "Prompt 1: Project instructions starter",
+        "text": "You are helping me with [project name]. The audience is [who will read the work].\nWrite in a [tone] tone. Keep answers under [length] unless I ask for more.\nUse the files in this project as your main source. If something is not in the files, say so instead of guessing.\nWhen I ask for a draft, give me one version first, then a short list of what you would change."
+      },
+      {
+        "kind": "step",
+        "title": "3. Add your reference files",
+        "text": "Upload the material the work depends on, such as a brief, a style guide, a plan or last quarter's numbers, to the project's files. Once they are there, every chat in the project can use them, so you do not upload the same document again."
+      },
+      {
+        "kind": "step",
+        "title": "4. Start chats from inside the project",
+        "text": "Open the project and start a new chat there. Ascendient Learning points out that a chat started from the main sidebar has no project context, which is the most common reason people think their instructions are being ignored."
+      },
+      {
+        "kind": "fact",
+        "text": "On paid plans (Pro, Max, Team and Enterprise), a project can hold more material than fits in Claude's context window. When the knowledge base gets close to that limit, Claude switches to retrieval mode, which Anthropic says can expand capacity by up to 10 times. It turns on automatically and the project shows an indicator when it is active. Anthropic recommends clear, descriptive file names and naming the document you mean in your question.",
+        "sources": [
+          1
+        ]
+      },
+      {
+        "kind": "fact",
+        "text": "On Team and Enterprise plans, projects can be shared with colleagues, who can be given view or edit access. Free, Pro and Max accounts do not get project sharing, according to the help center.",
+        "sources": [
+          0
+        ]
+      },
+      {
+        "kind": "tip",
+        "text": "Keep one project per piece of work, not one giant project for everything. Smaller projects keep Claude focused on the right files and make the instructions easier to get right."
+      },
+      {
+        "kind": "heading",
+        "text": "File uploads: what Claude can read"
+      },
+      {
+        "kind": "fact",
+        "text": "Claude accepts PDF, DOCX, CSV, TXT, HTML, ODT, RTF, EPUB, JSON and XLSX documents, plus JPEG, PNG, GIF and WebP images. Spreadsheets in XLSX format need the code execution and file creation setting turned on. To upload, click the + button in the lower left of the chat box and choose Add files or photos, or drag files into the window. You can also paste an image from your clipboard.",
+        "sources": [
+          2
+        ]
+      },
+      {
+        "kind": "fact",
+        "text": "In a single chat, the limits are 500 MB per file, up to 20 files, images up to 8000 by 8000 pixels and PDFs up to 1,000 pages. For PDFs of 100 pages or fewer, Claude also analyzes charts, images and graphics. Longer PDFs are read as text only. Other document types are read for text only, so Claude will not see images embedded in a Word file. Files added to a project have a 30 MB limit per file.",
+        "sources": [
+          2
+        ]
+      },
+      {
+        "kind": "prompt",
+        "title": "Prompt 2: Get the key points out of a long PDF",
+        "text": "Read the attached PDF. Give me:\n1. A five-sentence summary.\n2. Every date, deadline and number that matters, in a table with the page number for each.\n3. Anything that looks unclear or contradictory.\nUse the page numbers shown in my PDF viewer."
+      },
+      {
+        "kind": "tip",
+        "text": "When you point Claude to a page, use the page number your PDF viewer shows, not the number printed on the page. Anthropic recommends this because the two often differ. If a file is too big, split it into sections."
+      },
+      {
+        "kind": "prompt",
+        "title": "Prompt 3: Check a spreadsheet before you send it",
+        "text": "Look at the attached spreadsheet. Tell me which columns have missing values, which numbers look out of range compared with the rest of the column, and any totals that do not add up. Then suggest three charts that would explain this data to [audience]."
+      },
+      {
+        "kind": "heading",
+        "text": "Artifacts: from answer to finished work"
+      },
+      {
+        "kind": "fact",
+        "text": "An artifact is a standalone piece of work, such as a document, a slide deck, a design, a dashboard or a small interactive tool, that opens in its own window beside the chat. Anthropic says Claude creates one when the content is substantial, self-contained and likely to be edited or reused. You can ask for one in the chat, pick Output in the message box, or start from the Artifacts tab, where everything you create is saved.",
+        "sources": [
+          3,
+          4
+        ]
+      },
+      {
+        "kind": "step",
+        "title": "1. Turn on the setting",
+        "text": "Artifacts need Cloud code execution and file creation. On Free, Pro and Max, it is under Settings, Capabilities. On Team and Enterprise, an owner turns it on in the organization settings."
+      },
+      {
+        "kind": "step",
+        "title": "2. Ask for the output, not just an answer",
+        "text": "Be specific about the format: a one-page document, a ten-slide deck or a simple calculator. Then ask for changes in the chat, or edit a template artifact directly, for example by typing in a doc or changing a slide."
+      },
+      {
+        "kind": "step",
+        "title": "3. Fix and share",
+        "text": "If an artifact shows an error, use Try fixing with Claude near the error. Artifacts start private, and you choose when to share them."
+      },
+      {
+        "kind": "fact",
+        "text": "Anthropic's help center lists Docs, Slides and Design templates as a beta for paid plans. Docs export to Word, PDF, Markdown or Google Docs, and Slides export to PowerPoint or PDF. Artifacts can also call Claude themselves, which lets them work as small apps, and each person who uses a shared one does so with their own account and plan limits.",
+        "sources": [
+          3,
+          7
+        ]
+      },
+      {
+        "kind": "prompt",
+        "title": "Prompt 4: Turn notes into a shareable document",
+        "text": "Turn my notes below into a one-page document for [audience]. Use a short title, three sections with headings, and a final list of next steps with an owner for each. Keep it under 400 words.\n\n[paste your notes]"
+      },
+      {
+        "kind": "heading",
+        "text": "Where these features fall short"
+      },
+      {
+        "kind": "analysis",
+        "text": "Projects only help if you start chats inside them, and the five-project cap on free accounts fills up fast. Non-PDF documents lose their images, and long PDFs lose their charts, so a chart buried in a Word file or on page 300 of a report will be missed. Artifacts are good for drafts and simple tools, but they still need a human check before anything goes out. Treat a published artifact from someone you do not know with the same caution as a file from an unknown sender, which is what Anthropic advises."
+      }
+    ]
+  }
+}

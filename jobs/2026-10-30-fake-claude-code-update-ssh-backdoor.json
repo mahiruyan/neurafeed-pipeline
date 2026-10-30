@@ -1,0 +1,130 @@
+{
+  "id": "2026-10-30-fake-claude-code-update-ssh-backdoor",
+  "created_at": "2026-10-30T16:45:00Z",
+  "story_time": "2026-10-30T07:00:00Z",
+  "timely": false,
+  "sensitive": false,
+  "priority": 1,
+  "review": true,
+  "format": "carousel",
+  "site_category": "companies",
+  "sources": [
+    { "name": "StepSecurity", "url": "https://www.stepsecurity.io/blog/claude-code-extension-trojanized" },
+    { "name": "Cyber Press", "url": "https://cyberpress.org/hackers-compromise-claude-code-extension/" },
+    { "name": "Tech Insider", "url": "https://tech-insider.org/claude-code-extension-cursor-5000-users-tampered-2026/" }
+  ],
+  "threads_text": "A tampered copy of the Claude Code extension, version 2.1.313, sat in Cursor's marketplace for about 11 hours and reached up to 5,000 users. It quietly added an attacker's SSH key and survived being uninstalled. Do you check your editor extensions before they auto update?",
+  "caption": "A modified copy of the Claude Code extension, version 2.1.313, reached Cursor's marketplace on October 29.\nCursor says at most 5,000 users got it and that Anthropic did not make it.\nThe code added an attacker's SSH key and set itself to restart, so uninstalling alone does not clean it up.\n\nDo you let your coding extensions update automatically?\n\nFollow @neurafeed.ai for daily AI news.\n\nSource: StepSecurity, Cyber Press, Tech Insider",
+  "slides": [
+    {
+      "kind": "cover",
+      "headline": "A fake Claude Code update slipped a *hidden backdoor* to up to 5,000 developers",
+      "image": {
+        "url": "https://tech-insider.org/wp-content/uploads/2026/10/claude-code-extension-cursor-5000-users-tampered-2026-gen.webp",
+        "credit": "Tech Insider",
+        "fallback_urls": [
+          "https://cellcog.ai/blog/media/claude-code-extension-backdoor/og.jpg?v=2147f92055"
+        ],
+        "generate": "A tired young software developer in a gray hoodie sits at a cluttered desk late at night in a small dim apartment, turning in his chair to stare at his open laptop in shock. A gloved hand reaches out of the laptop screen through cracked glass, holding an old brass door key. On the wall behind the laptop hangs a big printed poster with the orange logo from the first image, big and exact. Energy drink cans, tangled cables, a second monitor showing abstract colored code blocks, harsh light from a single desk lamp. Blank surfaces, no readable text or labels on any object apart from the logo. Generous headroom above the man's head. The man, the hand and the laptop fill the upper two thirds of the frame, the bottom third is desk clutter. Photorealistic, high contrast, vertical composition, one clear subject, no letters, no watermarks. It must look like an unedited real photo from a news agency, not a painting, not digital art, no glow effects.",
+        "refs": [
+          "assets/logos/claude.png"
+        ]
+      },
+      "pos": "center 30%",
+      "badges": [
+        { "url": "assets/logos/claude.png", "shape": "free" }
+      ]
+    },
+    {
+      "kind": "card",
+      "heading": "Version *2.1.313*",
+      "paras": [
+        "Cursor says a modified copy of the Claude Code extension, version 2.1.313, reached its marketplace on October 29 and stayed up for about 11 hours.",
+        "At most 5,000 Cursor users got it. Cursor says Anthropic did not make it."
+      ],
+      "image": {
+        "url": "https://cdn.prod.website-files.com/673b71f0790aabf30bd30bf8/6ae45e10618a7a5f0744dfe5_SCR-20261030-mzbs.png",
+        "fit": "contain",
+        "credit": "StepSecurity",
+        "fallback_urls": [
+          "https://smartscope.blog/en/blog/cursor-fake-claude-code-extension-2-1-313-2026/images/cursor-fake-claude-code-extension-2-1-313-2026-ogp-en.jpg"
+        ]
+      }
+    },
+    {
+      "kind": "card",
+      "heading": "A secret key to *your machine*",
+      "paras": [
+        "The extra code ran as soon as the extension loaded, no Claude chat needed. It added an attacker's SSH key labeled svc-telemetry.",
+        "It opened a reverse tunnel to a remote server and sent back host details and the names of secret keys."
+      ],
+      "image": {
+        "url": "https://cellcog.ai/blog/media/claude-code-extension-backdoor/hero.webp?v=2147f92055",
+        "credit": "CellCog",
+        "fallback_urls": [
+          "https://smartscope.blog/en/blog/cursor-fake-claude-code-extension-2-1-313-2026/images/cursor-fake-claude-code-extension-2-1-313-2026-overview.en.webp"
+        ]
+      }
+    },
+    {
+      "kind": "card",
+      "heading": "Uninstalling is *not enough*",
+      "paras": [
+        "The code set itself to restart on Mac, Windows and Linux, so removing the extension leaves it behind.",
+        { "t": "Version 2.1.314 is clean. Anyone who ran 2.1.313 should check SSH keys and rotate passwords and tokens.", "strong": true }
+      ],
+      "image": {
+        "url": "https://cdn.prod.website-files.com/673b71f0790aabf30bd30bf8/6ae467b7f00bce90656df607_SCR-20261030-nnlx.png",
+        "fit": "contain",
+        "credit": "StepSecurity",
+        "fallback_urls": [
+          "https://cdn.prod.website-files.com/673b71f0790aabf30bd30bf8/6ae46b787dc0f57eac46f3f2_SCR-20261030-nqwl.png"
+        ]
+      }
+    },
+    {
+      "kind": "card",
+      "heading": "Cursor *pulled the plug*",
+      "paras": [
+        "Cursor removed the version, took its whole extension marketplace offline and says the attacker's server is now down.",
+        "How the tampered build got into the marketplace has not been made public."
+      ],
+      "image": {
+        "url": "https://smartscope.blog/en/blog/cursor-fake-claude-code-extension-2-1-313-2026/images/cursor-fake-claude-code-extension-2-1-313-2026-ogp-en.jpg",
+        "credit": "SmartScope",
+        "fallback_urls": [
+          "https://cellcog.ai/blog/media/claude-code-extension-backdoor/picto-kp-1.webp?v=4d42a85f80"
+        ]
+      }
+    },
+    {
+      "kind": "cta",
+      "hook": "One bad update can open your whole laptop. Follow so the next AI tool attack reaches you first."
+    }
+  ],
+  "site_article": {
+    "headline": "Tampered Claude Code extension reached up to 5,000 Cursor users with a hidden SSH backdoor",
+    "dek": "Version 2.1.313 was not made by Anthropic, according to Cursor, and removing it does not undo what it installed.",
+    "summary": "A modified build of the Claude Code extension for VS Code, version 2.1.313, was available in Cursor's marketplace for about 11 hours on October 29, 2026. Cursor said at most 5,000 of its users received it, and security researchers found code that added an attacker's SSH key and opened a remote tunnel.",
+    "seo_title": "Claude Code extension 2.1.313 backdoor hit up to 5,000 Cursor users",
+    "seo_description": "A tampered Claude Code extension, version 2.1.313, added an attacker SSH key and a reverse tunnel. What happened and what affected developers should do.",
+    "answer_summary": "Version 2.1.313 of the Claude Code extension, distributed through Cursor's marketplace on October 29, 2026, contained a backdoor that Anthropic did not write. Users who installed it should remove persistence files, check their SSH keys, install 2.1.314 or later and rotate credentials.",
+    "tags": ["Claude Code", "Anthropic", "Cursor", "Cybersecurity", "Supply chain attack"],
+    "hero_alt": "Illustration of a tampered Claude Code extension and an SSH backdoor on a developer laptop.",
+    "paragraphs": [
+      { "kind": "fact", "text": "A modified copy of Anthropic's Claude Code extension for VS Code, listed as version 2.1.313, reached the extension marketplace used by the Cursor code editor on October 29, 2026, and carried hidden code that opened a backdoor on developer machines. Cursor said at most 5,000 of its users received the build, and that the version was not developed by Anthropic.", "sources": [0, 2] },
+      { "kind": "fact", "text": "According to a timeline published by the security firm StepSecurity, the tampered build went live at about 09:27 UTC on October 29, which Cursor gave as 2:27 a.m. Pacific Time. Cursor removed the version at 1:35 p.m. Pacific Time the same day and took its marketplace fully offline, leaving an exposure window of roughly 11 hours. A clean version, 2.1.314, was published early on October 30.", "sources": [0, 2] },
+      { "kind": "heading", "text": "What the hidden code did" },
+      { "kind": "fact", "text": "Cyber Press, citing an analysis by the researcher Paul McCarty and the security project OpenSourceMalware, reported that the attackers prepended a 66-line function to the extension's main JavaScript file while leaving the rest of the package identical to the real release. The code ran as soon as the extension module loaded, so it did not need a user to start a conversation with Claude.", "sources": [1] },
+      { "kind": "fact", "text": "Both StepSecurity and Cyber Press said the code added an attacker-controlled SSH key labeled svc-telemetry to the user's authorized keys file and tried to switch on remote login. It then opened a reverse SSH tunnel to a server at 134.209.82.225 and sent unencrypted reports with the host name, user name, operating system and the names of environment variables that looked like passwords, tokens or cloud keys. Cyber Press reported that the values of those variables were not included in the first report.", "sources": [0, 1] },
+      { "kind": "fact", "text": "The code also installed ways to restart itself: a LaunchAgent on macOS, a scheduled task called SysMon on Windows and a startup entry in cron on Linux. StepSecurity warned that uninstalling the extension alone is not enough, because these pieces keep running on their own.", "sources": [0, 1] },
+      { "kind": "heading", "text": "How far it spread" },
+      { "kind": "fact", "text": "The reports differ on the path the build took. StepSecurity said it appeared on Open VSX, the open extension registry, and reached Cursor through the mirror Cursor syncs from it, under the legitimate Anthropic publisher name. Cyber Press reported that Cursor confirmed the compromise started in its own marketplace rather than in Open VSX. Tech Insider noted that it is still not known who modified the extension or how many machines actually ran the code.", "sources": [0, 1, 2] },
+      { "kind": "fact", "text": "Cursor said no other extensions were tampered with, rotated its keys and published cleanup scripts for macOS and Windows. According to StepSecurity, Cursor also said the attacker's server was taken offline with help from its hosting provider.", "sources": [0, 1] },
+      { "kind": "heading", "text": "What affected developers should do" },
+      { "kind": "fact", "text": "StepSecurity advised anyone who had version 2.1.313 installed to look for the svc-telemetry entry in their SSH authorized keys, save evidence and remove the restart files, then install 2.1.314 or later. It also recommended rotating every credential the machine could reach, including source control, cloud, CI and package registry tokens, preferably from a different, clean computer, and rebuilding the machine if the tunnel ever connected. Tech Insider stressed that updating to 2.1.314 does not remove anything the bad build left behind.", "sources": [0, 2] },
+      { "kind": "analysis", "text": "The attack shows how much trust developers place in editor extensions. A coding assistant runs with the same access as the person using it, and a single tampered update was enough to give an outsider a door into machines that hold source code and cloud keys. The fact that the build looked like an official release under a familiar name made it harder to spot." },
+      { "kind": "why_it_matters", "text": "The next thing to watch is an explanation from Cursor, Open VSX or Anthropic of how the tampered build was published, and whether any machines that received it show signs that the attacker actually logged in." }
+    ]
+  }
+}
