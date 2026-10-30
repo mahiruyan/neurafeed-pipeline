@@ -1,114 +1,5 @@
 [
   {
-    "run_at": "2026-10-23T20:02:17.782Z",
-    "summary": "Evening run (15:55 New York): no open links or requests; queued one priority 1 story (OpenAI moves frontier training offline plus the METR and Redwood audit of its agent monitoring) on top of a full day, since priority 1 stories are never skipped; everything else skipped.",
-    "considered": [
-      {
-        "story": "OpenAI moves frontier model training offline after the September 20 DNS breakout, details agent red-teaming",
-        "source": "https://www.unite.ai/openai-details-training-containment-overhaul-after-september-model-incident/",
-        "decision": "queued",
-        "job_id": "2026-10-23-openai-trains-ai-with-no-internet",
-        "priority": 1
-      },
-      {
-        "story": "METR and Redwood Research on-site audit finds gaps in OpenAI's agent monitoring",
-        "source": "https://the-decoder.com/three-week-on-site-audit-at-openai-reveals-major-gaps-in-ai-safety-monitoring/",
-        "decision": "covered",
-        "reason": "Folded into 2026-10-23-openai-trains-ai-with-no-internet as the second half of the same OpenAI safety story."
-      },
-      {
-        "story": "Texas AG Ken Paxton sues OpenAI and Sam Altman over deceptive marketing and child safety",
-        "source": "https://news.bloomberglaw.com/us-law-week/openai-faces-texas-deceptive-claims-child-user-safety-lawsuit",
-        "decision": "skipped",
-        "reason": "Same claims as the eight-state lawsuit we covered on Oct 14, and Oct 23 is already over its 8 slot cap; better as a follow-up if it grows."
-      },
-      {
-        "story": "Kimi K3.1 Pro ranks 4th on Artificial Analysis, priced at half of Claude Opus 5.5",
-        "decision": "skipped",
-        "reason": "Benchmark ranking for a Chinese model, interesting but not priority 1, and the daily cap is full."
-      },
-      {
-        "story": "Anthropic's Mythos pretends to be human during a CTF exercise (Jerusalem Post)",
-        "decision": "skipped",
-        "reason": "Only one outlet seen so far and could not confirm with a second source in this run."
-      },
-      {
-        "story": "OpenAI targets a $1.25 trillion valuation (Bloomberg video)",
-        "decision": "covered",
-        "reason": "Same round already posted as 2026-10-20-openai-30-billion-race-anthropic-ipo-v2."
-      },
-      {
-        "story": "SpaceX enlists 130 tech leaders to help businesses deploy Grok",
-        "decision": "skipped",
-        "reason": "Enterprise sales program, little consumer appeal, and the cap is full."
-      },
-      {
-        "story": "Students walk out over the CSU ChatGPT contract",
-        "decision": "skipped",
-        "reason": "Local campus story, and the cap is full."
-      },
-      {
-        "story": "Swedish government offices ban ChatGPT and Claude",
-        "decision": "skipped",
-        "reason": "Already skipped earlier today as a regional story."
-      },
-      {
-        "story": "Anthropic and Hg form an AI engineering company for Europe",
-        "decision": "covered",
-        "reason": "Already queued as 2026-10-23-anthropic-hg-ai-consultancy-europe."
-      }
-    ],
-    "requests": []
-  },
-  {
-    "run_at": "2026-10-23T21:53:47.602Z",
-    "summary": "Nothing queued: Oct 23 already has 10 jobs (over the 8 cap), no open links or requests, and no new priority 1 story since the last run.",
-    "considered": [
-      {
-        "story": "OpenAI targets a $1.25 trillion valuation (Bloomberg)",
-        "decision": "covered",
-        "reason": "Same funding round already posted as 2026-10-20-openai-30-billion-race-anthropic-ipo-v2."
-      },
-      {
-        "story": "OpenAI pauses frontier training after security breach / containment overhaul",
-        "decision": "covered",
-        "reason": "Already queued as 2026-10-23-openai-trains-ai-with-no-internet."
-      },
-      {
-        "story": "Texas AG Ken Paxton sues OpenAI and Sam Altman",
-        "source": "https://news.bloomberglaw.com/us-law-week/openai-faces-texas-deceptive-claims-child-user-safety-lawsuit",
-        "decision": "skipped",
-        "reason": "Same claims as the multi-state lawsuit covered Oct 14, and today is already past the 8 job cap."
-      },
-      {
-        "story": "Kimi K3.1 Pro closes in on Claude Opus 5.5 at half the price",
-        "decision": "skipped",
-        "reason": "Not priority 1 and the daily cap is full."
-      },
-      {
-        "story": "Anthropic's Mythos pretends to be human in a CTF exercise",
-        "decision": "skipped",
-        "reason": "Still only one outlet found, no second source."
-      },
-      {
-        "story": "OpenAI Decisions API generally available",
-        "decision": "skipped",
-        "reason": "Developer API already weighed in an earlier run; low consumer appeal and the cap is full."
-      },
-      {
-        "story": "Anthropic and Hg AI company for Europe",
-        "decision": "covered",
-        "reason": "Already queued as 2026-10-23-anthropic-hg-ai-consultancy-europe."
-      },
-      {
-        "story": "SpaceX enlists 130 tech leaders to deploy Grok",
-        "decision": "skipped",
-        "reason": "Enterprise sales program, little consumer appeal, cap full."
-      }
-    ],
-    "requests": []
-  },
-  {
     "run_at": "2026-10-24T00:00:16.137Z",
     "summary": "Late run (19:55 New York): made Mahir's 'trillion more data centers' X video into a Reel for his approval (link plus matching request); no new priority 1 news, and Oct 23 is already past the 8 job cap.",
     "considered": [
@@ -5507,6 +5398,64 @@
         "story": "Fortune and Quartz pieces on Anthropic's IPO risk disclosures",
         "decision": "covered",
         "reason": "The IPO filing was covered as 2026-10-26-anthropic-files-ipo-ant-nasdaq; these are follow-up analysis."
+      }
+    ],
+    "requests": []
+  },
+  {
+    "run_at": "2026-10-30T22:07:04.797Z",
+    "summary": "Queued the October 30 tech selloff (Intel crash, Amazon AI spending, Nasdaq down 2.8%) as priority 1; that makes 8 jobs for the New York day, so other stories wait. No open links or requests.",
+    "considered": [
+      {
+        "story": "Tech stocks lose about $1 trillion as Intel and Amazon fuel AI spending fears",
+        "source": "https://finance.yahoo.com/markets/live/stock-market-today-friday-october-30-dow-sp-500-nasdaq-amazon-intel-131609630.html",
+        "decision": "queued",
+        "job_id": "2026-10-30-ai-spending-fears-1-trillion-tech-selloff",
+        "priority": 1
+      },
+      {
+        "story": "Backdoored Claude Code extension on the Cursor marketplace (Ars Technica, HN)",
+        "source": "https://arstechnica.com/security/2026/10/anthropic-vs-code-extension-on-cursor-backdoored-for-nearly",
+        "decision": "covered",
+        "reason": "Already queued as 2026-10-30-fake-claude-code-update-ssh-backdoor."
+      },
+      {
+        "story": "Sam Altman says RAM is better in a data center than on your desk",
+        "source": "https://www.theverge.com/ai-artificial-intelligence/1023820/sam-altman-ram-shortage-cloud-servers",
+        "decision": "skipped",
+        "reason": "Good candidate, but today already has 8 jobs; could not open a second source this run. Consider tomorrow."
+      },
+      {
+        "story": "OpenAI, Google and Microsoft back a new standard to opt out of AI scraping",
+        "source": "https://www.theverge.com/tech/1023763/openai-google-microsoft-ai-scraping-standard-opt-out",
+        "decision": "skipped",
+        "reason": "Daily cap of 8 reached; worth covering tomorrow if still fresh."
+      },
+      {
+        "story": "Anthropic IPO risk factors filing analysis (The Verge, Guardian)",
+        "decision": "covered",
+        "reason": "Anthropic's IPO filing was covered as 2026-10-26-anthropic-files-ipo-ant-nasdaq."
+      },
+      {
+        "story": "Claude can no longer recreate existing video games (Kotaku)",
+        "decision": "skipped",
+        "reason": "Daily cap reached and only one outlet seen so far."
+      },
+      {
+        "story": "Dartmouth provost lost his job over his own AI use (Ars Technica)",
+        "source": "https://arstechnica.com/tech-policy/2026/10/dartmouths-provost-warned-us-about-ai-cheating-but-his-o",
+        "decision": "skipped",
+        "reason": "Daily cap reached; personnel story with limited US AI-audience interest."
+      },
+      {
+        "story": "Google's orbital AI data center is running",
+        "decision": "skipped",
+        "reason": "Single low-tier source in leads, daily cap reached."
+      },
+      {
+        "story": "Proton CEO cancels AI re-interviews (404 Media)",
+        "decision": "skipped",
+        "reason": "Niche company story, daily cap reached."
       }
     ],
     "requests": []
