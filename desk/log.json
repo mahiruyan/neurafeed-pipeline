@@ -1,65 +1,5 @@
 [
   {
-    "run_at": "2026-10-24T18:02:39.387Z",
-    "summary": "2 p.m. New York run: no open links or requests; queued the Elvis Presley rights holders' lawsuit against Anthropic, combined with Reservoir's $151 million lyrics suit (priority 1, sensitive, waits for Mahir's approval). Today already had 10 job files, so this priority 1 story is the only addition.",
-    "considered": [
-      {
-        "story": "Elvis Presley rights holders sue Anthropic over 274 songs, after Reservoir's 853-lyric suit",
-        "source": "https://www.billboard.com/pro/elvis-presley-estate-sues-suno-anthropic/",
-        "decision": "queued",
-        "job_id": "2026-10-24-elvis-rights-holders-sue-anthropic",
-        "priority": 1
-      },
-      {
-        "story": "Reservoir Media sues Suno and Anthropic over music training",
-        "decision": "covered",
-        "reason": "Folded into the Elvis lawsuit job as the second suit of the week, now with Law Commentary and Digital Music News as sources."
-      },
-      {
-        "story": "Kotaku: Claude's reverse engineering for game recompiling may have been quietly nerfed",
-        "decision": "skipped",
-        "reason": "Single report built on user claims, and today is already past the daily job cap."
-      },
-      {
-        "story": "TechCrunch: forced to pick, Grok chooses Republicans and OpenAI's model picks Democrats",
-        "source": "https://techcrunch.com/2026/10/24/forced-to-pick-groks-ai-model-chooses-republicans-openais-picks-democrats/",
-        "decision": "skipped",
-        "reason": "Political story near the midterms and the day is over the cap; could fit a later day."
-      },
-      {
-        "story": "Sundar Pichai responds to Sam Altman's 'fend Google off' remark",
-        "decision": "skipped",
-        "reason": "Only an Indian aggregator in leads and the day is full."
-      },
-      {
-        "story": "Block's new voice model sounds eerily human",
-        "decision": "skipped",
-        "reason": "Niche model launch and the day is full."
-      },
-      {
-        "story": "Gemini 4 Argon optimizes Google's Agent Development Kit codebase overnight",
-        "decision": "skipped",
-        "reason": "Developer story from secondary sites, little consumer appeal."
-      },
-      {
-        "story": "OpenAI moves frontier training offline",
-        "decision": "covered",
-        "reason": "Posted Oct 23 as 2026-10-23-openai-trains-ai-with-no-internet."
-      },
-      {
-        "story": "Three fired OpenAI safety researchers say they were never told what they leaked",
-        "decision": "covered",
-        "reason": "Already queued as 2026-10-24-openai-fired-researchers-signal-chats."
-      },
-      {
-        "story": "Google privacy policy update on Gmail, Photos and Drive data",
-        "decision": "covered",
-        "reason": "Already queued as 2026-10-24-google-gmail-photos-ads-exception."
-      }
-    ],
-    "requests": []
-  },
-  {
     "run_at": "2026-10-24T19:54:24.734Z",
     "summary": "4 p.m. New York run: no open links or requests, no uncovered priority 1 story found, and today already has 9 job files (over the 8 cap), so nothing was queued.",
     "considered": [
@@ -5486,6 +5426,69 @@
         "story": "Claude Ultra drops the five-hour limit (Notebookcheck)",
         "decision": "covered",
         "reason": "Already queued as 2026-10-31-claude-ultra-no-5-hour-limit."
+      }
+    ],
+    "requests": []
+  },
+  {
+    "run_at": "2026-10-31T19:54:18.055Z",
+    "summary": "Late afternoon run (15:53 New York, Oct 31): no open links or requests; Oct 31 already has 8 jobs (the daily cap) including the utility post, and no new priority 1 story appeared since the last run, so nothing was queued.",
+    "considered": [
+      {
+        "story": "Fortune: OpenAI cuts fundraising goal while Meta gets a credit warning over cash flow and spending",
+        "source": "https://fortune.com/2026/10/31/ai-boom-bust-openai-fundraising-target-meta-credit-warning-cash-flow-capex",
+        "decision": "covered",
+        "reason": "The OpenAI half is already queued as 2026-10-31-openai-cuts-funding-target-10-billion; the Meta credit warning alone is a follow-up and the day is at the cap."
+      },
+      {
+        "story": "Anthropic intends to trade on the Nasdaq under the ticker ANT (Yahoo Finance)",
+        "decision": "covered",
+        "reason": "Already covered as 2026-10-26-anthropic-files-ipo-ant-nasdaq."
+      },
+      {
+        "story": "Anthropic to receive a junk credit rating after its IPO (Hacker News)",
+        "decision": "skipped",
+        "reason": "Only seen on Hacker News so far with no second source, and the day is at the cap; candidate for Nov 1 if confirmed."
+      },
+      {
+        "story": "Do the math: how researchers took over ChatGPT accounts (Hacker News)",
+        "decision": "skipped",
+        "reason": "A researcher write-up with no news coverage found yet, and the day is at the cap; candidate for Nov 1."
+      },
+      {
+        "story": "Google lets Claude and Codex into Android Studio (Yahoo Tech)",
+        "decision": "skipped",
+        "reason": "Developer tool story found in one outlet only, and the day is at the cap."
+      },
+      {
+        "story": "Pope Leo warns AI must be disarmed ahead of autonomous weapons talks (Newsweek)",
+        "decision": "skipped",
+        "reason": "Politics and religion adjacent story that would need review, and the day is at the cap; candidate for Nov 1."
+      },
+      {
+        "story": "Anthropic watermark rollout leaves a loophole on two older Claude models (The Decoder)",
+        "decision": "skipped",
+        "reason": "One source, niche angle, and the day is at the cap."
+      },
+      {
+        "story": "OpenAI plans to train on Daybreak Blue cybersecurity session data (The Decoder)",
+        "decision": "skipped",
+        "reason": "One source so far, and the day is at the cap; candidate for Nov 1."
+      },
+      {
+        "story": "Sam Altman says PC RAM is quite terrible (Yahoo Finance)",
+        "decision": "covered",
+        "reason": "Already queued as 2026-10-31-altman-pc-ram-quite-terrible."
+      },
+      {
+        "story": "Google, OpenAI, Anthropic and Microsoft back one AI training opt-out (The Next Web)",
+        "decision": "covered",
+        "reason": "Already queued as 2026-10-31-ai-giants-one-line-opt-out-training."
+      },
+      {
+        "story": "Accenture contractor gave a Claude agent access to a Pentagon network (CyberSecurityNews)",
+        "decision": "covered",
+        "reason": "Already queued as 2026-10-31-contractor-claude-agent-pentagon-network."
       }
     ],
     "requests": []
