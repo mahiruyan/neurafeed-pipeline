@@ -1,67 +1,5 @@
 [
   {
-    "run_at": "2026-10-24T12:19:42.031Z",
-    "summary": "8 a.m. New York run: no open links or requests; quiet Saturday morning with no new major news, so queued Jensen Huang's first Kazakhstan visit and NVIDIA's Higgsfield investment (priority 2, waits for Mahir's approval), now 6 jobs for today.",
-    "considered": [
-      {
-        "story": "Jensen Huang's first visit to Kazakhstan: export intelligence instead of energy, AI hub for Europe, NVIDIA invests in Higgsfield",
-        "source": "https://astanatimes.com/2026/10/nvidia-ceo-sees-kazakhstan-as-emerging-ai-hub-during-first-visit/",
-        "decision": "queued",
-        "job_id": "2026-10-24-huang-kazakhstan-export-intelligence",
-        "priority": 2
-      },
-      {
-        "story": "American Express cutting 5% of its workforce to prepare for AI",
-        "source": "https://www.cnbc.com/2026/10/23/american-express-job-cuts.html",
-        "decision": "skipped",
-        "reason": "Same decision as earlier runs: close to the Barclays AI layoffs post from Oct 22, and CNBC could not be opened in this run."
-      },
-      {
-        "story": "Ex-OpenAI engineer accused of bugging held without bail",
-        "decision": "covered",
-        "reason": "Already covered Oct 13, 16 and 19; the bail hearing was Oct 19."
-      },
-      {
-        "story": "Bill Gates warns of 20 years of AI turmoil",
-        "decision": "skipped",
-        "reason": "Recycled coverage of his August warning, not new."
-      },
-      {
-        "story": "Same AI request emits 8.5 times more CO2 in Texas than in Sweden (Berget AI)",
-        "source": "https://berget.ai/en/blog/per-request-co2-press-release",
-        "decision": "skipped",
-        "reason": "A single company press release that could not be opened here, with no independent coverage found."
-      },
-      {
-        "story": "UK pledges 100 million pounds for an AI biosecurity lab with OpenAI, Anthropic and Google DeepMind",
-        "decision": "skipped",
-        "reason": "Same decision as earlier runs: limited US appeal."
-      },
-      {
-        "story": "Texas AG Paxton sues OpenAI and Sam Altman",
-        "decision": "skipped",
-        "reason": "Same decision as earlier runs: overlaps the multi-state suit covered Oct 14."
-      },
-      {
-        "story": "General Reasoning's Avalon-M1 agents trained to work as a company",
-        "decision": "skipped",
-        "reason": "Niche research release with one source."
-      },
-      {
-        "story": "OpenAI resumes training in an offline cached web environment",
-        "decision": "covered",
-        "reason": "Part of 2026-10-23-openai-trains-ai-with-no-internet."
-      },
-      {
-        "story": "Neoclouds under pressure and Solidigm pulls its IPO",
-        "source": "https://www.cnbc.com/2026/10/23/ai-turmoil-neoclouds-struggle-credit-risks-jump-solidigm-pulls-ipo.html",
-        "decision": "skipped",
-        "reason": "Market and credit story with little consumer appeal, and the page could not be opened."
-      }
-    ],
-    "requests": []
-  },
-  {
     "run_at": "2026-10-24T14:09:20.320Z",
     "summary": "10 a.m. New York run: no open links or requests; queued the fired OpenAI safety researchers and their Signal chats story (priority 1, sensitive, waits for Mahir's approval), now 7 jobs for today with one slot left for the utility post after 11:00.",
     "considered": [
@@ -5515,6 +5453,56 @@
         "story": "Anthropic renames Max 20x to Ultra and drops the 5-hour limit",
         "decision": "covered",
         "reason": "Already queued as 2026-10-31-claude-ultra-no-5-hour-limit."
+      }
+    ],
+    "requests": []
+  },
+  {
+    "run_at": "2026-10-31T13:54:44.584Z",
+    "summary": "Mid-morning run (09:53 New York, Oct 31): no open links or requests and no new priority 1 story since the 08:00 run; nothing queued, Oct 31 stays at 7 jobs with the last slot kept for the utility post after 11:00.",
+    "considered": [
+      {
+        "story": "Fox News: AI-powered cyberattacks dubbed 'Black October' hit cloud systems",
+        "source": "https://www.foxnews.com/tech/ai-powered-cyberattacks-fuel-black-october-fears",
+        "decision": "skipped",
+        "reason": "Roundup of attacks already covered this week (DeepSeek-powered agent intrusions, Binance heist, fake Claude Code extension)."
+      },
+      {
+        "story": "Nvidia is becoming the bank of the AI boom (Malay Mail)",
+        "source": "https://www.malaymail.com/news/money/2026/10/31/nvidia-is-becoming-the-bank-of-the-ai-boom-could-it-also-be-fuelling-a-bubble/241246",
+        "decision": "skipped",
+        "reason": "Analysis piece built on the Nscale financing story already passed on, no new event."
+      },
+      {
+        "story": "Motley Fool: Anthropic IPO and more than one AI winner",
+        "source": "https://fool.com/investing/2026/10/31/anthropic-ipo-why-there-could-be-more-than-one-ai",
+        "decision": "skipped",
+        "reason": "Investor opinion column; the Anthropic IPO filing was covered on Oct 26."
+      },
+      {
+        "story": "Blackstone expects Anthropic to get a junk rating after its IPO (FT)",
+        "decision": "skipped",
+        "reason": "Paywalled single report and the last slot today is reserved for the utility post."
+      },
+      {
+        "story": "Tesla to open Optimus reservations in early December (SF Standard)",
+        "decision": "skipped",
+        "reason": "Still a single-source report."
+      },
+      {
+        "story": "OpenAI limits weapons information for teens in ChatGPT (Reuters)",
+        "decision": "skipped",
+        "reason": "Passed on in earlier runs and not confirmed by a second source here."
+      },
+      {
+        "story": "AI labs back one robots.txt opt-out token",
+        "decision": "covered",
+        "reason": "Already queued as 2026-10-31-ai-giants-one-line-opt-out-training."
+      },
+      {
+        "story": "Sam Altman says PCs holding so much DRAM is 'quite terrible'",
+        "decision": "covered",
+        "reason": "Already queued as 2026-10-31-altman-pc-ram-quite-terrible."
       }
     ],
     "requests": []
