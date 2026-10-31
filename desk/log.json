@@ -1,72 +1,5 @@
 [
   {
-    "run_at": "2026-10-24T16:17:41.019Z",
-    "summary": "Noon New York run: no open links or requests; queued today's utility how-to on ChatGPT Locked Chats (priority 2, waits for Mahir's approval), now 8 jobs for today, the daily cap.",
-    "considered": [
-      {
-        "story": "How to lock chats in ChatGPT with a PIN or Face ID (utility how-to)",
-        "source": "https://help.openai.com/en/articles/6825453-chatgpt-release-notes",
-        "decision": "queued",
-        "job_id": "2026-10-24-chatgpt-locked-chats-how-to",
-        "priority": 2
-      },
-      {
-        "story": "OpenAI Decisions API on GPT-6 Luna",
-        "source": "https://www.unite.ai/openai-releases-decisions-api-in-public-beta-powered-by-gpt-6-luna/",
-        "decision": "skipped",
-        "reason": "Developer-only API that was already in preview, little appeal for a consumer audience, and the last slot of the day went to the utility post."
-      },
-      {
-        "story": "Anthropic S-1 shows $16.3 billion revenue and $80.7 billion loss",
-        "decision": "covered",
-        "reason": "Already covered Oct 21 as 2026-10-21-anthropic-s1-80-billion-loss."
-      },
-      {
-        "story": "Texas AG Paxton sues OpenAI and Sam Altman",
-        "decision": "skipped",
-        "reason": "Same decision as earlier runs: overlaps the multi-state suit covered Oct 14."
-      },
-      {
-        "story": "Wayve, Stellantis and NVIDIA plan robotaxi deployment in France",
-        "source": "https://wayve.ai/press/wayve-stellantis-nvidia-collaborate-on-deployment-across-france/",
-        "decision": "skipped",
-        "reason": "European rollout with limited US interest, and today is at the 8-job cap."
-      },
-      {
-        "story": "CNBC survey: 63% of voters oppose a nearby AI data center",
-        "source": "https://www.cnbc.com/2026/10/24/trump-ai-data-centers-voter-backlash-midterms.html",
-        "decision": "skipped",
-        "reason": "Political poll story and today is at the cap; could fit a later day."
-      },
-      {
-        "story": "AWS says 2027 capacity is largely sold out",
-        "decision": "skipped",
-        "reason": "Earnings-call detail with little consumer appeal, and the day is full."
-      },
-      {
-        "story": "Modal raises $750M at a $16B valuation",
-        "decision": "skipped",
-        "reason": "Funding round for a developer platform, little US consumer interest."
-      },
-      {
-        "story": "Google may use Gmail and Photos data for ads via Personal Intelligence",
-        "decision": "covered",
-        "reason": "Already queued as 2026-10-24-google-gmail-photos-ads-exception."
-      },
-      {
-        "story": "OpenAI moves frontier training offline after an agent reached the internet",
-        "decision": "covered",
-        "reason": "Posted Oct 23 as 2026-10-23-openai-trains-ai-with-no-internet."
-      },
-      {
-        "story": "Free Google AI tools list (NotebookLM, Opal, Flow)",
-        "decision": "skipped",
-        "reason": "Considered for the utility post, but product names and free tiers have changed recently and could not be confirmed on official pages in this run."
-      }
-    ],
-    "requests": []
-  },
-  {
     "run_at": "2026-10-24T18:02:39.387Z",
     "summary": "2 p.m. New York run: no open links or requests; queued the Elvis Presley rights holders' lawsuit against Anthropic, combined with Reservoir's $151 million lyrics suit (priority 1, sensitive, waits for Mahir's approval). Today already had 10 job files, so this priority 1 story is the only addition.",
     "considered": [
@@ -5496,6 +5429,63 @@
         "story": "OpenAI cuts funding target by $10 billion",
         "decision": "covered",
         "reason": "Already queued as 2026-10-31-openai-cuts-funding-target-10-billion."
+      }
+    ],
+    "requests": []
+  },
+  {
+    "run_at": "2026-10-31T17:54:26.697Z",
+    "summary": "Afternoon run (13:53 New York, Oct 31): no open links or requests (the 4 old inbox links were already answered in skipped.json); no new priority 1 story since the last run, and Oct 31 is at the 8-job cap with the utility post queued, so nothing was queued.",
+    "considered": [
+      {
+        "story": "OpenAI loses $150 billion in valuation under its new plans (Cointribune)",
+        "decision": "covered",
+        "reason": "Same story as the OpenAI funding target cut already queued as 2026-10-31-openai-cuts-funding-target-10-billion."
+      },
+      {
+        "story": "Claude Duet agent links six work apps (tech-insider.org)",
+        "decision": "skipped",
+        "reason": "Seen only in one low-reliability outlet with no official Anthropic post found, and the day is at the cap."
+      },
+      {
+        "story": "Washington Post: new hacking threat has election officials scrambling before the midterms",
+        "decision": "skipped",
+        "reason": "Politics and security story with a thin AI angle, and the day is at the cap."
+      },
+      {
+        "story": "Spotify AI remix tool could launch in early 2027 (RouteNote)",
+        "decision": "skipped",
+        "reason": "Speculative report with no confirmed date or second source."
+      },
+      {
+        "story": "Google's Gemini tool cut UK planners' assessment time 58% (FourWeekMBA)",
+        "decision": "skipped",
+        "reason": "UK public sector story with low US interest, one secondary source."
+      },
+      {
+        "story": "Sonnet-controlled rig performed gene therapy brain surgery on a mouse (Tom's Hardware)",
+        "decision": "skipped",
+        "reason": "Still built on one founder's account and the day is at the cap; candidate for Nov 1."
+      },
+      {
+        "story": "Anthropic research: harmless stories can teach models to sabotage oversight (The Decoder)",
+        "decision": "skipped",
+        "reason": "Passed on in earlier runs today and the day is at the cap; candidate for Nov 1."
+      },
+      {
+        "story": "Gemini 4 Carbon for cyber defenders, API pricing (gHacks)",
+        "decision": "covered",
+        "reason": "Already covered as 2026-10-28-google-gemini-4-carbon-number-one."
+      },
+      {
+        "story": "Anthropic blocks Claude from reverse engineering video games (Mashable)",
+        "decision": "covered",
+        "reason": "Already queued as 2026-10-31-claude-code-stops-remaking-video-games."
+      },
+      {
+        "story": "Claude Ultra drops the five-hour limit (Notebookcheck)",
+        "decision": "covered",
+        "reason": "Already queued as 2026-10-31-claude-ultra-no-5-hour-limit."
       }
     ],
     "requests": []
