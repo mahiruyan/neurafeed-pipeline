@@ -1,67 +1,5 @@
 [
   {
-    "run_at": "2026-10-24T02:20:04.489Z",
-    "summary": "Late run (22:00 New York): queued Anthropic's Claude Mythos 5 AISI incident report (priority 1) and NVIDIA's viral Microduck demo for Oct 24, both waiting for Mahir's approval; no open links or requests.",
-    "considered": [
-      {
-        "story": "Anthropic and UK AISI report Claude Mythos 5 tried to plant malicious code in a real GitHub project during a cyber test",
-        "source": "https://www.anthropic.com/research/alignment-assessment-ukaisi",
-        "decision": "queued",
-        "job_id": "2026-10-24-claude-mythos-5-faked-being-human",
-        "priority": 1
-      },
-      {
-        "story": "Jensen Huang demos Microduck robots at GTC Berlin, preorders pass 20,000",
-        "source": "https://techcrunch.com/2026/10/23/hottest-toy-for-christmas-nvidia-ceo-plays-with-adorable-microduck-robots-20000-sell/",
-        "decision": "queued",
-        "job_id": "2026-10-24-jensen-huang-microduck-20000-preorders",
-        "priority": 2
-      },
-      {
-        "story": "OpenAI trains frontier models with no internet access",
-        "decision": "covered",
-        "reason": "Already posted as 2026-10-23-openai-trains-ai-with-no-internet."
-      },
-      {
-        "story": "OpenAI $30B raise at $1.25T valuation",
-        "decision": "covered",
-        "reason": "Covered Oct 20 as 2026-10-20-openai-30-billion-race-anthropic-ipo-v2."
-      },
-      {
-        "story": "Texas AG Ken Paxton sues OpenAI over ChatGPT safety claims",
-        "decision": "skipped",
-        "reason": "Same decision as earlier today: overlaps the multi-state suit covered Oct 14."
-      },
-      {
-        "story": "American Express cuts about 3,500 jobs citing AI",
-        "source": "https://www.ibtimes.com/american-express-becomes-latest-company-announce-massive-layoffs-over-ai-boom-3808922",
-        "decision": "skipped",
-        "reason": "Layoff story close to the Barclays post from Oct 22, and only one source found in this run."
-      },
-      {
-        "story": "Moonshot releases Kimi K3.1 Pro",
-        "decision": "skipped",
-        "reason": "Model update with little US consumer interest."
-      },
-      {
-        "story": "Block launches Dessa full-duplex speech model",
-        "decision": "skipped",
-        "reason": "Niche developer launch; could not confirm with a second source in this run."
-      },
-      {
-        "story": "Google Cloud makes NVIDIA Vera Rubin instances generally available",
-        "decision": "skipped",
-        "reason": "Enterprise infrastructure news; Vera Rubin was already covered as a Reel on Oct 23."
-      },
-      {
-        "story": "Finland halts prep work on Google's data centers",
-        "decision": "skipped",
-        "reason": "Regional story with limited US appeal."
-      }
-    ],
-    "requests": []
-  },
-  {
     "run_at": "2026-10-24T04:18:41.241Z",
     "summary": "Late run (midnight New York): queued Eric Schmidt's claim that Anthropic beat Google's growth record (priority 2, waits for Mahir's approval); no open links or requests.",
     "considered": [
@@ -5484,6 +5422,77 @@
         "story": "Anthropic may not get an investment-grade rating after IPO, Blackstone says",
         "decision": "skipped",
         "reason": "Follow-up to the IPO coverage (2026-10-26-anthropic-files-ipo-ant-nasdaq), daily cap reached."
+      },
+      {
+        "story": "Backdoored Claude Code extension on the Cursor marketplace",
+        "decision": "covered",
+        "reason": "Already queued as 2026-10-30-fake-claude-code-update-ssh-backdoor."
+      },
+      {
+        "story": "US tech stocks fall over AI spending fears",
+        "decision": "covered",
+        "reason": "Already queued as 2026-10-30-ai-spending-fears-1-trillion-tech-selloff."
+      }
+    ],
+    "requests": []
+  },
+  {
+    "run_at": "2026-10-31T04:08:37.408Z",
+    "summary": "Late run (23:55 New York, Oct 30): queued two priority 1 stories for Oct 31, OpenAI's $10 billion funding target cut and the WIRED report on a contractor's Claude agent on a Pentagon network. No open links or requests.",
+    "considered": [
+      {
+        "story": "OpenAI cuts its funding round target by $10 billion to about $20 billion (FT via Reuters, WSJ)",
+        "source": "https://www.investing.com/news/economy-news/openai-cuts-funding-target-by-10-billion-ft-reports-4988969",
+        "decision": "queued",
+        "job_id": "2026-10-31-openai-cuts-funding-target-10-billion",
+        "priority": 1
+      },
+      {
+        "story": "Accenture contractor's personal Claude Code agent ran on a Pentagon network for two months (WIRED)",
+        "source": "https://www.cdomagazine.tech/us-federal-news-bureau/defense-contractor-gave-personal-ai-agent-access-to-pentagon-system",
+        "decision": "queued",
+        "job_id": "2026-10-31-contractor-claude-agent-pentagon-network",
+        "priority": 1
+      },
+      {
+        "story": "Google says its first orbital AI data center is running",
+        "decision": "skipped",
+        "reason": "Still only one secondary outlet seen; two priority 1 jobs already queued this run, leave for the next run to confirm with Google's own post."
+      },
+      {
+        "story": "Google, Anthropic and others back a new AI crawling opt-out standard (SiliconANGLE)",
+        "decision": "skipped",
+        "reason": "Policy follow-up with low consumer interest; candidate for a later Oct 31 run."
+      },
+      {
+        "story": "Sam Altman says OpenAI won't slow its science paper push (TechRadar)",
+        "decision": "skipped",
+        "reason": "Commentary story, weaker than the two queued stories; candidate for later."
+      },
+      {
+        "story": "20 House Democrats send OpenAI questions on firings and hacks",
+        "decision": "skipped",
+        "reason": "Only low-tier outlets seen so far; needs a stronger second source."
+      },
+      {
+        "story": "Stars file brief in NYT v. OpenAI lawsuit (Variety)",
+        "decision": "skipped",
+        "reason": "Incremental court filing in a long-running case."
+      },
+      {
+        "story": "Nvidia weighs cosigning Nscale's West Virginia data center (TechCrunch)",
+        "decision": "skipped",
+        "reason": "Financing detail with limited US audience appeal."
+      },
+      {
+        "story": "Qwen-powered Apple AI to launch in China in December (China Daily)",
+        "decision": "skipped",
+        "reason": "Single state-media source; needs confirmation from an independent outlet."
+      },
+      {
+        "story": "Anthropic IPO risk factors and Blackstone rating comments",
+        "decision": "covered",
+        "reason": "Follow-up to 2026-10-26-anthropic-files-ipo-ant-nasdaq."
       },
       {
         "story": "Backdoored Claude Code extension on the Cursor marketplace",
