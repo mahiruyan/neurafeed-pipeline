@@ -1,67 +1,5 @@
 [
   {
-    "run_at": "2026-10-24T08:19:48.434Z",
-    "summary": "4 a.m. New York run: no open links or requests; queued the story of banks catching AI agents inside customer accounts (priority 2, waiting for Mahir's approval), leaving room in today's cap for the utility post and any breaking story.",
-    "considered": [
-      {
-        "story": "US banks catch unauthorized AI agents in customer accounts; White House AI czar David Sacks says it is not a cyberattack and suggests read-only access",
-        "source": "https://www.cbsnews.com/news/ai-agents-customer-bank-accounts-security/",
-        "decision": "queued",
-        "job_id": "2026-10-24-banks-catch-ai-agents-in-accounts",
-        "priority": 2
-      },
-      {
-        "story": "Apple briefly passes Nvidia as the most valuable company on iPhone Duo launch day",
-        "source": "https://9to5mac.com/2026/10/23/apple-overtakes-nvidia-as-most-valuable-company-in-the-world-on-iphone-duo-launch-day/",
-        "decision": "skipped",
-        "reason": "Intraday market cap swap from Friday morning that Nvidia later reversed, with little AI substance; it has happened several times this year."
-      },
-      {
-        "story": "Figure all-hands: Figure 04 design lock, $8.1M weekly data spend, Helix 3.0 called 'baby AGI'",
-        "source": "https://www.humanoidsdaily.com/news/figure-all-hands-figure-04-index-data-helix-3",
-        "decision": "skipped",
-        "reason": "Only one readable source (the X posts cannot be opened here), and the design lock itself was first announced in May."
-      },
-      {
-        "story": "Michigan Senate candidate Abdul El-Sayed backs an AI kill switch bill",
-        "source": "https://fox11online.com/news/nation-world/senate-seeker-michan-democrat-abdul-el-sayed-digs-in-against-ai-backs-kill-switch-bill-republican-mike-rogers-2026-midterm-elections",
-        "decision": "skipped",
-        "reason": "Campaign politics story, sensitive and narrow for a national audience."
-      },
-      {
-        "story": "OpenAI's Codex team finds a critical Node.js Brotli flaw",
-        "decision": "covered",
-        "reason": "Part of OpenAI's training security disclosure already covered as 2026-10-23-openai-trains-ai-with-no-internet."
-      },
-      {
-        "story": "Texas AG Paxton sues OpenAI and Sam Altman",
-        "decision": "skipped",
-        "reason": "Same decision as earlier runs: overlaps the multi-state suit covered Oct 14."
-      },
-      {
-        "story": "AWS sold out through 2027, Jassy says",
-        "decision": "skipped",
-        "reason": "Still only The Information behind a paywall."
-      },
-      {
-        "story": "Anthropic 20-seat Enterprise minimum sidelines small Schwab advisers (RIABiz)",
-        "decision": "skipped",
-        "reason": "Niche financial adviser trade story with one source."
-      },
-      {
-        "story": "UK pledges 100 million pounds for an AI biosecurity lab",
-        "decision": "skipped",
-        "reason": "Same decision as earlier runs: limited US appeal."
-      },
-      {
-        "story": "Kimi K3.1 Pro, Block Dessa, Meta buys Sundial",
-        "decision": "skipped",
-        "reason": "Same decisions as earlier runs today: niche or single source."
-      }
-    ],
-    "requests": []
-  },
-  {
     "run_at": "2026-10-24T10:06:44.074Z",
     "summary": "6 a.m. New York run: no open links or requests; quiet Saturday morning with no fresh major news, so queued Moonshot's Kimi K3.1 Pro launch (priority 2, waits for Mahir's approval), now 5 jobs for today.",
     "considered": [
@@ -5513,6 +5451,64 @@
         "story": "Google's TPU satellite online and writing poetry",
         "decision": "covered",
         "reason": "Already queued as 2026-10-31-google-satellite-ai-haiku-orbit."
+      }
+    ],
+    "requests": []
+  },
+  {
+    "run_at": "2026-10-31T09:59:57.556Z",
+    "summary": "Early run (05:53 New York, Oct 31): no open links or requests, no new priority 1 story since the 04:20 run; Oct 31 stays at 6 jobs with room for the utility post after 11:00 and one later breaking story.",
+    "considered": [
+      {
+        "story": "Amazon lines up an $80 billion supplier loan facility to fund AI hardware",
+        "source": "https://www.bloomberg.com/news/articles/2026-10-30/amazon-taps-80-billion-supplier-loan-facility-to-help-fund-ai",
+        "decision": "skipped",
+        "reason": "Financing story with little consumer appeal, and it overlaps the AI spending selloff post already queued."
+      },
+      {
+        "story": "Big Tech returns its smallest share of cash to shareholders in 15 years as AI capex grows (Reuters)",
+        "source": "https://www.reuters.com/legal/transactional/big-tech-returns-smallest-share-cash-shareholders-15-years-given-ai-spending-2026-10-30/",
+        "decision": "skipped",
+        "reason": "Too close to the AI spending fears post already queued for Oct 30."
+      },
+      {
+        "story": "OpenAI limits weapons information for teens in ChatGPT (Reuters)",
+        "source": "https://www.reuters.com/business/media-telecom/openai-limit-weapons-information-teens-chatgpt-violence-prevention-push-2026-10-30/",
+        "decision": "skipped",
+        "reason": "Sensitive safety story already passed on in earlier runs; saving the slot for a fresher story."
+      },
+      {
+        "story": "Tesla to open Optimus reservations in early December (SF Standard)",
+        "source": "https://sfstandard.com/2026/10/30/tesla-optimus-robot-waitlist",
+        "decision": "skipped",
+        "reason": "Single-source report so far; worth revisiting if Tesla confirms."
+      },
+      {
+        "story": "UK CMA probes Meta's terms for publisher content in AI features",
+        "source": "https://britbrief.co.uk/tech/regulation/cma-investigates-meta-terms-for-publishers-and-businesses.html",
+        "decision": "skipped",
+        "reason": "UK regulatory story with low US interest and no strong second source read."
+      },
+      {
+        "story": "Salesforce buys military logistics startup Rune for $375 million",
+        "source": "https://resiliencemedia.co/scoop-salesforce-is-paying-375m-for-rune-technologies/",
+        "decision": "skipped",
+        "reason": "Single scoop, niche for the audience."
+      },
+      {
+        "story": "OpenAI cuts funding target by $10 billion",
+        "decision": "covered",
+        "reason": "Already queued as 2026-10-31-openai-cuts-funding-target-10-billion."
+      },
+      {
+        "story": "Anthropic renames Max 20x to Ultra and drops the 5-hour limit",
+        "decision": "covered",
+        "reason": "Already queued as 2026-10-31-claude-ultra-no-5-hour-limit."
+      },
+      {
+        "story": "AI labs back one robots.txt opt-out token",
+        "decision": "covered",
+        "reason": "Already queued as 2026-10-31-ai-giants-one-line-opt-out-training."
       }
     ],
     "requests": []
