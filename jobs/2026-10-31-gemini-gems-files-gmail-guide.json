@@ -1,0 +1,144 @@
+{
+  "id": "2026-10-31-gemini-gems-files-gmail-guide",
+  "format": "utility",
+  "created_at": "2026-10-31T16:20:00Z",
+  "story_time": "2026-10-31T16:00:00Z",
+  "timely": false,
+  "sensitive": false,
+  "priority": 2,
+  "review": true,
+  "sources": [
+    { "name": "Gemini Apps Help: Get started with Gems", "url": "https://support.google.com/gemini/answer/15235603" },
+    { "name": "Gemini Apps Help: Upload and analyze files", "url": "https://support.google.com/gemini/answer/14903178" },
+    { "name": "Gemini Apps Help: Google Workspace app", "url": "https://support.google.com/gemini/answer/15229592?hl=en" },
+    { "name": "Zapier: Gemini Gems", "url": "https://zapier.com/blog/gemini-gems/" },
+    { "name": "Zapier: Gemini connected apps", "url": "https://zapier.com/blog/gemini-connected-apps/" },
+    { "name": "Chrome Story", "url": "https://chromestory.com/2026/07/create-gem-gemini-app/" }
+  ],
+  "caption": "Gemini does a lot more than answer questions.\nGems save your instructions so you stop retyping them, and they are free on every plan.\nUploads take up to 10 files per prompt, and @Gmail or @Drive lets it search your own inbox and files.\n\nWhich one are you trying first?\n\nFollow @neurafeed.ai for daily AI news.\n\nSource: Google Gemini Help · Photo: Zapier, Chrome Story",
+  "threads_text": "Most people use Gemini like a search box. Gems keep your instructions saved for free, uploads read up to 10 files at once, and typing @Gmail lets it dig through your own inbox. Have you set up a Gem yet, or do you retype the same instructions every time?",
+  "slides": [
+    {
+      "kind": "cover",
+      "headline": "Most people use Gemini like a search box. *These 4 features* make it work for you",
+      "image": {
+        "url": "https://images.ctfassets.net/lzny33ho1g45/zrujZF8FP9VsL1SMT28wp/c5fe22f164c5ce2cbc8cbf22e434a587/gemini.jpg",
+        "credit": "Zapier",
+        "fallback_urls": [
+          "https://i0.wp.com/chromestory.com/wp-content/uploads/2026/07/gemini-on-mac.png?fit=2076%2C1812&ssl=1"
+        ],
+        "generate": "A frazzled young office worker in a rolled-up blue shirt stands in a cramped, cluttered open-plan office in the late afternoon, surrounded by towering piles of unopened envelopes, sticky notes and printed emails stacked on every desk and spilling onto the carpet. He holds an open laptop in both hands with a calm, satisfied half smile, the laptop screen is blank and softly lit. Surreal touch: a stream of paper envelopes is floating up from the piles and flying neatly into the laptop screen like a gentle wind. On the wall behind him, the star logo from the first image is painted big and exact. Harsh fluorescent ceiling light mixed with gray window light, messy shelves, real shadows. Blank surfaces, no readable text or labels on any object, envelope or paper. Generous headroom above his head. The man and the laptop fill the upper two thirds of the frame, the bottom third is the paper-covered floor and desk. Photorealistic, high contrast, vertical composition, one clear subject, no letters, no watermarks. It must look like an unedited real photo from a news agency, not a painting, not digital art, no glow effects.",
+        "refs": [
+          "https://www.androidauthority.com/wp-content/uploads/2026/09/gemini-logo-november-2025-2-1000w-562h.jpg"
+        ]
+      },
+      "pos": "center 30%",
+      "badges": [
+        { "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Google_%22G%22_logo.svg/500px-Google_%22G%22_logo.svg.png", "fit": "contain" }
+      ],
+      "badge_side": "right",
+      "badge_border": "white"
+    },
+    {
+      "kind": "card",
+      "heading": "1. Build a *Gem*",
+      "paras": [
+        "A Gem is Gemini with your instructions saved. On gemini.google.com click Explore Gems, then New Gem.",
+        "It is free on every plan. You make it on the web, then use it on your phone too."
+      ],
+      "image": {
+        "url": "https://images.ctfassets.net/lzny33ho1g45/5D2keAX5O9MHkCVe9FfD5m/84f80c43c9900557a275953102f93ccb/gemini-gems-image09.png",
+        "credit": "Zapier",
+        "fit": "contain",
+        "fallback_urls": [
+          "https://images.ctfassets.net/lzny33ho1g45/3ale2FW7i6dcqIBCewTvUT/b7aa0f5f9b411f9991896cc48af3861c/gemini-gems-image01.png"
+        ]
+      },
+      "note": "Preview it on the right before you click Save."
+    },
+    {
+      "kind": "prompt",
+      "heading": "2. Write instructions that *stick*",
+      "paras": [
+        "Google suggests four parts: persona, task, context and format. Paste this into the Gem and fill in the brackets.",
+        "Every chat with that Gem starts from these rules, so you never repeat them."
+      ],
+      "prompt": "You are my [role, e.g. email editor]. Your task is to [task]. Context: [who I am, who the audience is]. Format: [bullet points, under 150 words]. Ask me one question if anything is unclear."
+    },
+    {
+      "kind": "card",
+      "heading": "3. Feed it *your files*",
+      "paras": [
+        "Click Add files under the chat box, then Upload or Add from Drive. Up to 10 files per prompt.",
+        "Most files can be up to 100 MB and videos up to 2 GB. Very big uploads can make it miss details."
+      ],
+      "image": {
+        "url": "https://i0.wp.com/chromestory.com/wp-content/uploads/2026/07/gemini-on-mac.png?fit=2076%2C1812&ssl=1",
+        "credit": "Chrome Story",
+        "fit": "contain",
+        "fallback_urls": [
+          "https://images.ctfassets.net/lzny33ho1g45/200B6hNHZo4raD4yov320T/4a38db95d1227408799e8e3509ac8375/Screen_Shot_2026-08-20_at_3.10.53_PM.png"
+        ]
+      }
+    },
+    {
+      "kind": "card",
+      "heading": "4. Type *@Gmail* or @Drive",
+      "paras": [
+        "Connect Google Workspace and Gemini can search your Gmail, Docs, Drive, Calendar, Keep and Tasks.",
+        "Keep Activity must be on. Name the app in your first message, then ask follow ups freely."
+      ],
+      "image": {
+        "url": "https://images.ctfassets.net/lzny33ho1g45/2gHziI4GM7nGlX0mH2akf2/69c2bb19354940e494701ba9a5d558a4/image3.jpg",
+        "credit": "Zapier",
+        "fit": "contain",
+        "fallback_urls": [
+          "https://images.ctfassets.net/lzny33ho1g45/35iaQ2k1pxAoMevis8uUja/eb52598bc685974f83a38e608332d76f/image4.jpg"
+        ]
+      },
+      "note": "Always check the sources it lists."
+    },
+    {
+      "kind": "cta",
+      "hook": "Save this for your next Gemini session, and follow for more tricks that actually save time."
+    }
+  ],
+  "site_article": {
+    "kind": "guide",
+    "headline": "Gemini: a practical guide to Gems, file uploads and Gmail and Drive",
+    "dek": "How to build a Gem that remembers your instructions, what Gemini can do with your files, and how to let it search your own Google Workspace.",
+    "summary": "Gems, file uploads and the Google Workspace connection are the three Gemini features that matter most for everyday work. Here is how to set up each one, the current limits, and where each one falls short.",
+    "seo_title": "Gemini Guide: Gems, File Uploads, Gmail and Drive",
+    "seo_description": "How to create Gemini Gems, write instructions, upload files and connect Gmail, Drive and Calendar, with copy and paste prompts and the current limits.",
+    "answer_summary": "Create a Gem on gemini.google.com with Explore Gems and New Gem, upload files with the Add files button (up to 10 per prompt), and connect Google Workspace so you can ask about your Gmail, Drive, Docs and Calendar.",
+    "tags": ["Gemini", "Google", "Gemini Gems", "Google Workspace", "AI guides"],
+    "hero_alt": "An office worker holding a laptop in a cluttered office full of paper stacks, with the Gemini logo on the wall.",
+    "paragraphs": [
+      { "kind": "fact", "text": "Most people open Gemini, type a question and close the tab. Three features change that: Gems, which save your instructions so you stop repeating them, file uploads, which let Gemini read your documents, videos and code, and the Google Workspace connection, which lets it search your own Gmail, Drive, Docs and Calendar. All three are documented in Google's Gemini Apps Help pages. This guide covers how to set up each one, the limits Google lists, and where each one falls short.", "sources": [0, 1, 2] },
+      { "kind": "heading", "text": "Gems: set your instructions once" },
+      { "kind": "fact", "text": "A Gem is a saved version of Gemini with your own instructions about goals, behavior and output format. Zapier compares Gems to custom GPTs in ChatGPT: you set them up once and reuse them every time. Chrome Story reports that Gems are free on every Gemini plan, including the free tier, so you do not need Google AI Pro or Ultra to make one.", "sources": [0, 3, 5] },
+      { "kind": "step", "title": "1. Open the Gem builder", "text": "Go to gemini.google.com on a computer and sign in. In the panel on the left, click Explore Gems, then New Gem. Gems can only be created and edited in the web app. Once saved, they also show up in the Gemini mobile app, where you can chat with them." },
+      { "kind": "step", "title": "2. Name it and write the instructions", "text": "Give the Gem a short name you will recognize in a list, such as Email editor or Trip planner. Then write the instructions. Google suggests covering up to four things: the persona (the role the Gem plays), the task (what it should do), the context (background, as much as you can give) and the format (how the answer should look). You do not need all four." },
+      { "kind": "prompt", "title": "Prompt 1: A starting template for any Gem", "text": "You are my [role, for example email editor].\nYour task is to [what you want done every time].\nContext: [who I am, who the audience is, anything it should always know].\nFormat: [for example bullet points, under 150 words, plain language].\nIf anything in my request is unclear, ask me one question before you answer." },
+      { "kind": "tip", "text": "If writing instructions feels like work, type one or two sentences about your goal into the instructions box and use the Use Gemini to re-write instructions option. It expands your draft into fuller instructions. Read the result and cut anything you did not mean before you save." },
+      { "kind": "step", "title": "3. Add knowledge files", "text": "Under Knowledge, click Add files, then choose Upload files for something on your computer or Drive for a file in Google Drive. A style guide, a price list or a set of past examples works well here. If you do not want the Gem to cite these files in its answers, select Disable knowledge citations." },
+      { "kind": "step", "title": "4. Preview, then save", "text": "Type a test request in the preview panel on the right. The preview does not save anything, so adjust the instructions until the answers look right, then click Save. To change a Gem later, open your Gems list and click the pencil icon next to it. The three dot menu has Make a copy, which also works on Google's premade Gems." },
+      { "kind": "prompt", "title": "Prompt 2: A writing editor Gem", "text": "You are a careful editor for [my newsletter / my work emails].\nWhen I paste a draft, fix grammar and spelling, cut filler words and keep my voice.\nDo not add new facts or change numbers.\nReturn the edited text first, then a short list of the three biggest changes you made." },
+      { "kind": "analysis", "text": "Gems have real limits. According to Zapier, they cannot be used with Gemini Live, they do not take actions outside the chat window, and they cannot use connected apps. So a Gem is best for repeated writing, editing and planning tasks, not for anything that needs your inbox or calendar." },
+      { "kind": "heading", "text": "File uploads: what Gemini can read" },
+      { "kind": "fact", "text": "In the Gemini web app, click the Add files button below the text box. Upload takes a file from your device and Add from Drive takes one from Google Drive. Under More Uploads you can also import a code folder or a GitHub repository. According to Google, most file types are supported and you can add up to 10 files in the same prompt. Videos can be up to 2 GB each and most other files up to 100 MB.", "sources": [1] },
+      { "kind": "fact", "text": "Length limits depend on the plan. Google says the total video length is up to 5 minutes, or up to 1 hour with Google AI Pro or Ultra, and the total audio length is up to 10 minutes, or up to 3 hours on those plans. One code folder or GitHub repository can be added per chat, with up to 5,000 files and 100 MB. Upload limits are rolling, so if you hit one, you may have to wait before uploading more.", "sources": [1] },
+      { "kind": "prompt", "title": "Prompt 3: Get the useful part of a long PDF", "text": "Read the attached file.\n1. Summarize it in five bullet points.\n2. List every deadline, date and number that I need to act on, with the page it appears on.\n3. Tell me what is missing or unclear.\nOnly use what is in the file. If something is not in it, say so." },
+      { "kind": "tip", "text": "Google warns that very large uploads can lead to answers that miss details or connections across the content. If you need precise answers, upload fewer files at once and ask about one document at a time. If Gemini clearly misreads a file, upload it again." },
+      { "kind": "heading", "text": "Gmail, Drive and Calendar: ask about your own stuff" },
+      { "kind": "fact", "text": "The Google Workspace app connects Gemini to your Gmail, Docs and Drive for summaries and lookups, to Google Tasks and Google Keep for reminders, notes and lists, and to Google Calendar for events. To point Gemini at one service, type @ and pick it from the list. Google says to use keywords from the content rather than pasting a link to an email or a document.", "sources": [2] },
+      { "kind": "step", "title": "5. Connect Google Workspace", "text": "Sign in to Gemini with the same account you use for Gmail and Drive. Keep Activity must be on, or Gemini cannot connect. In Gmail, the setting Smart features in other Google products also has to be on; after you turn it on, reload Gemini. Work and school accounts need the administrator to allow the connection first. To disconnect later, use the Connected Apps settings page." },
+      { "kind": "prompt", "title": "Prompt 4: Clear your inbox backlog", "text": "@Gmail Find emails from the last 7 days that ask me to reply, decide or send something.\nFor each one, give me the sender, what they need and by when.\nSort them by deadline, soonest first." },
+      { "kind": "prompt", "title": "Prompt 5: Prepare for a meeting", "text": "@Google Calendar What is my next meeting with [name]?\n@Drive Find the latest documents that mention [project].\nGive me a five line briefing: what the meeting is about, what changed since we last met, and two questions I should ask." },
+      { "kind": "fact", "text": "The limits matter here. Google lists them plainly: Gemini cannot see comments or images inside Docs and Gmail, or pictures and videos in Drive. It cannot create folders or move files in Drive, cannot count items in Drive or Gmail, and cannot report your storage. In a new chat, name the service in your first prompt; follow up questions in the same chat do not need it. Zapier adds that the list of connected apps and their availability varies by country.", "sources": [2, 4] },
+      { "kind": "analysis", "text": "The Workspace connection is the most useful of the three for busy people, and also the one that needs the most checking. Google itself notes that Gemini can hallucinate or give outdated information here, so open the emails and files it cites before you act on a summary." },
+      { "kind": "heading", "text": "Where to start" },
+      { "kind": "tip", "text": "Start with one Gem for the task you repeat most, such as editing emails. Use uploads when you have one long document to understand. Turn on the Workspace connection when you spend too long searching your own inbox, and always check the sources it shows." }
+    ]
+  }
+}

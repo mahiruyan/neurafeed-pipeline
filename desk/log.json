@@ -1,71 +1,5 @@
 [
   {
-    "run_at": "2026-10-24T14:09:20.320Z",
-    "summary": "10 a.m. New York run: no open links or requests; queued the fired OpenAI safety researchers and their Signal chats story (priority 1, sensitive, waits for Mahir's approval), now 7 jobs for today with one slot left for the utility post after 11:00.",
-    "considered": [
-      {
-        "story": "Fired OpenAI safety researchers say a review of their disappearing Signal chats with METR led to their firing",
-        "source": "https://sfstandard.com/2026/10/24/openai-firings-safety-signal-chats/",
-        "decision": "queued",
-        "job_id": "2026-10-24-openai-fired-researchers-signal-chats",
-        "priority": 1
-      },
-      {
-        "story": "OpenAI's isolated agents passed secrets through a CPU cache (The Decoder)",
-        "decision": "covered",
-        "reason": "Part of 2026-10-23-openai-trains-ai-with-no-internet."
-      },
-      {
-        "story": "Google may use Gmail and Photos summaries for ads",
-        "decision": "covered",
-        "reason": "Already queued as 2026-10-24-google-gmail-photos-ads-exception."
-      },
-      {
-        "story": "Claude Mythos 5 AISI simulations and malicious code attempts",
-        "decision": "covered",
-        "reason": "Already posted as 2026-10-24-claude-mythos-5-faked-being-human."
-      },
-      {
-        "story": "UK funds 100 million pound AI biosecurity lab with OpenAI and Anthropic",
-        "decision": "skipped",
-        "reason": "Same decision as earlier runs: limited US appeal."
-      },
-      {
-        "story": "Futurism: Meta's board is battling Zuckerberg over AI spending",
-        "decision": "skipped",
-        "reason": "Could not find the original report or a second source, and Meta spending was covered Oct 21."
-      },
-      {
-        "story": "Hacker reverse engineers his Samsung TV and finds on-board AI listening",
-        "source": "https://www.reddit.com/r/antiai/comments/1xdv3e5/hacker_reverse_engineers_his_samsung_tv_and_finds/",
-        "decision": "skipped",
-        "reason": "Only a Reddit post, no news source confirms it."
-      },
-      {
-        "story": "AI-assisted paper on Z-Library cites a TorrentFreak article that does not exist",
-        "source": "https://torrentfreak.com/ai-assisted-paper-on-z-library-cites-a-torrentfreak-article-that-doesnt-exist/",
-        "decision": "skipped",
-        "reason": "Niche, single source, and the day has only one slot left, kept for the utility post."
-      },
-      {
-        "story": "Android Auto gets Gemini Personal Intelligence features",
-        "decision": "covered",
-        "reason": "Gemini in Android Auto was covered Oct 21."
-      },
-      {
-        "story": "Sam Altman warns the AI race could end with one company holding all power",
-        "decision": "skipped",
-        "reason": "Recycled coverage of older remarks in a personal finance outlet."
-      },
-      {
-        "story": "Character.AI bankruptcy follow-up (Futurism)",
-        "decision": "skipped",
-        "reason": "Opinion follow-up; the bankruptcy was covered Oct 13."
-      }
-    ],
-    "requests": []
-  },
-  {
     "run_at": "2026-10-24T16:17:41.019Z",
     "summary": "Noon New York run: no open links or requests; queued today's utility how-to on ChatGPT Locked Chats (priority 2, waits for Mahir's approval), now 8 jobs for today, the daily cap.",
     "considered": [
@@ -5503,6 +5437,65 @@
         "story": "Sam Altman says PCs holding so much DRAM is 'quite terrible'",
         "decision": "covered",
         "reason": "Already queued as 2026-10-31-altman-pc-ram-quite-terrible."
+      }
+    ],
+    "requests": []
+  },
+  {
+    "run_at": "2026-10-31T15:56:48.281Z",
+    "summary": "Midday run (11:53 New York, Oct 31): no open links or requests (the 4 old inbox links were already answered in skipped.json or covered); queued the daily utility post, a Gemini guide to Gems, file uploads and Gmail/Drive, bringing Oct 31 to the 8-job cap.",
+    "considered": [
+      {
+        "story": "Utility: Gemini practical guide (Gems, file uploads, Google Workspace), next line in guides/plan.md",
+        "source": "https://support.google.com/gemini/answer/15235603",
+        "decision": "queued",
+        "job_id": "2026-10-31-gemini-gems-files-gmail-guide",
+        "priority": 2
+      },
+      {
+        "story": "OpenAI essay 'The future of the firm'",
+        "decision": "skipped",
+        "reason": "An essay rather than a launch or event, and Oct 31 is now at the 8-job cap."
+      },
+      {
+        "story": "Google lets Claude and Codex run inside Android Studio (FourWeekMBA)",
+        "decision": "skipped",
+        "reason": "Developer niche seen in one secondary outlet, and the day is at the cap."
+      },
+      {
+        "story": "Sonnet-controlled rig performed gene therapy brain surgery on a mouse (Tom's Hardware)",
+        "decision": "skipped",
+        "reason": "Now in Tom's Hardware too, but still built on one founder's account and the day is at the cap; candidate for Nov 1."
+      },
+      {
+        "story": "Sam Altman meets Samsung executives in Seoul on memory chips",
+        "decision": "skipped",
+        "reason": "Too close to the Altman DRAM post already queued today."
+      },
+      {
+        "story": "Google DeepMind trains Gemini 3.1 Flash-Lite on simulated patients for psychiatric intake",
+        "decision": "skipped",
+        "reason": "Health research seen only in a crypto news write-up; day at cap."
+      },
+      {
+        "story": "Anthropic research: harmless stories can teach models to sabotage oversight (The Decoder)",
+        "decision": "skipped",
+        "reason": "Passed on earlier today, and the day is at the cap."
+      },
+      {
+        "story": "Anthropic blocks Claude from reverse engineering video games",
+        "decision": "covered",
+        "reason": "Already queued as 2026-10-31-claude-code-stops-remaking-video-games."
+      },
+      {
+        "story": "Gemini 4 Carbon pricing and benchmark follow ups",
+        "decision": "covered",
+        "reason": "Already covered as 2026-10-28-google-gemini-4-carbon-number-one."
+      },
+      {
+        "story": "OpenAI cuts funding target by $10 billion",
+        "decision": "covered",
+        "reason": "Already queued as 2026-10-31-openai-cuts-funding-target-10-billion."
       }
     ],
     "requests": []
