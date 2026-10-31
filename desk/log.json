@@ -5451,5 +5451,70 @@
       }
     ],
     "requests": []
+  },
+  {
+    "run_at": "2026-10-31T08:18:58.627Z",
+    "summary": "Early run (04:20 New York, Oct 31): no open links or requests; queued Anthropic's Claude Ultra rename and the end of its 5-hour limit (priority 1), bringing Oct 31 to 6 jobs and leaving room for the utility post and a later breaking story.",
+    "considered": [
+      {
+        "story": "Anthropic renames Max 20x to Ultra and removes the 5-hour limit for verified accounts",
+        "source": "https://fourweekmba.com/ai-claude-ultra-drops-5-hour-limit-for-verified-users-at-200/",
+        "decision": "queued",
+        "job_id": "2026-10-31-claude-ultra-no-5-hour-limit",
+        "priority": 1
+      },
+      {
+        "story": "Claude Sonnet 5 chose a gene therapy and ran a mouse brain injection with a vet on the kill switch (The Decoder)",
+        "source": "https://the-decoder.com/a-claude-model-autonomously-chose-a-gene-therapy-and-operated-on-a-mouse-brain-with-no-human-decision-making/",
+        "decision": "skipped",
+        "reason": "Striking but rests on one founder's X thread with no report or peer review yet; strong candidate for a later Oct 31 run if the day has room."
+      },
+      {
+        "story": "OpenAI limits weapons information for teens in ChatGPT (Reuters)",
+        "decision": "skipped",
+        "reason": "Could not open the Reuters report from here; a later run can confirm it with two sources."
+      },
+      {
+        "story": "Tesla to open Optimus reservations in early December (SF Standard)",
+        "decision": "skipped",
+        "reason": "Only one outlet seen and holding a slot for the utility post and later news."
+      },
+      {
+        "story": "Comcast cuts 912 jobs as it moves call-center work to AI agents",
+        "decision": "skipped",
+        "reason": "Layoff story would need review and only one outlet seen; weaker than the queued story."
+      },
+      {
+        "story": "20 House Democrats press OpenAI on whistleblower firings and hacks",
+        "decision": "skipped",
+        "reason": "Still only trade and legal outlets; political letter with limited consumer interest."
+      },
+      {
+        "story": "Nvidia weighs guaranteeing Nscale debt for an Anthropic data center (TechCrunch)",
+        "decision": "skipped",
+        "reason": "Financing detail with little consumer interest."
+      },
+      {
+        "story": "Dartmouth provost resigns after undisclosed AI use",
+        "decision": "skipped",
+        "reason": "Two days old and a campus story; keeping slots for bigger news."
+      },
+      {
+        "story": "OpenAI cuts funding target by $10 billion",
+        "decision": "covered",
+        "reason": "Already queued as 2026-10-31-openai-cuts-funding-target-10-billion."
+      },
+      {
+        "story": "AI labs back one robots.txt opt-out token",
+        "decision": "covered",
+        "reason": "Already queued as 2026-10-31-ai-giants-one-line-opt-out-training."
+      },
+      {
+        "story": "Google's TPU satellite online and writing poetry",
+        "decision": "covered",
+        "reason": "Already queued as 2026-10-31-google-satellite-ai-haiku-orbit."
+      }
+    ],
+    "requests": []
   }
 ]
