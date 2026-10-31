@@ -1,0 +1,197 @@
+{
+  "id": "2026-10-31-ai-giants-one-line-opt-out-training",
+  "created_at": "2026-10-31T06:35:00Z",
+  "story_time": "2026-10-30T20:59:00Z",
+  "timely": false,
+  "sensitive": false,
+  "priority": 1,
+  "review": true,
+  "format": "carousel",
+  "site_category": "policy",
+  "sources": [
+    {
+      "name": "SiliconANGLE",
+      "url": "https://siliconangle.com/2026/10/30/google-anthropic-and-others-to-support-new-ai-crawling-opt-out-standard/"
+    },
+    {
+      "name": "Relevant Audience",
+      "url": "https://www.relevantaudience.com/geo/google-shared-ai-training-robots-txt-signal-2027/"
+    },
+    {
+      "name": "FourWeekMBA",
+      "url": "https://fourweekmba.com/ai-openai-google-microsoft-anthropic-back-one-ai-opt-out/"
+    },
+    {
+      "name": "The Tech Buzz",
+      "url": "https://www.techbuzz.ai/articles/ai-giants-unite-behind-universal-scraping-opt-out-standard"
+    }
+  ],
+  "threads_text": "OpenAI, Google, Microsoft and Anthropic are backing one robots.txt line that tells all of them not to train on your site. It only covers training, not AI search answers, and it is voluntary. Is an opt out enough, or should AI companies have to ask first?",
+  "caption": "OpenAI, Google, Microsoft and Anthropic plan to support one robots.txt token that lets websites opt out of AI training.\nAnthropic wrote the draft standard and sent it to the IETF.\nOpenAI and Microsoft plan support in the coming months, Google in 2027.\n\nShould AI companies need permission before training on your website?\n\nFollow @neurafeed.ai for daily AI news.\n\nSource: SiliconANGLE, Relevant Audience",
+  "slides": [
+    {
+      "kind": "cover",
+      "headline": "OpenAI, Google, Microsoft and Anthropic just agreed websites can *block AI training with one line*",
+      "image": {
+        "url": "https://i0.wp.com/fourweekmba.com/wp-content/uploads/2026/10/auth_w115_wide-1.png?fit=1600%2C900&ssl=1",
+        "credit": "FourWeekMBA",
+        "fallback_urls": [
+          "https://images.siliconangle.com/blogs.dir/1/files/2026/10/AI-1-1.png"
+        ],
+        "generate": "Four large wooden shipping crates stacked in a dim, cluttered warehouse, each crate stamped with one of the logos from the four reference images, big and exact: the black knot from the first image, the colored G from the second image, the four colored squares from the third image, the orange mark from the fourth image. In front of the crates, a warehouse worker in a worn yellow safety vest pulls a heavy chain link gate shut with one hand, holding a padlock in the other, his face turned toward the gate. Harsh fluorescent light, dust in the air, pallets and plastic wrap on the concrete floor. Blank surfaces, no readable text or labels on any object apart from the logos. Generous headroom above the crates. The crates and the worker fill the upper two thirds of the frame, the bottom third is the floor. Photorealistic, high contrast, vertical composition, no letters, no watermarks. It must look like an unedited real photo from a news agency, not a painting, not digital art, no glow effects.",
+        "refs": [
+          "assets/logos/openai.png",
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Google_%22G%22_logo.svg/500px-Google_%22G%22_logo.svg.png",
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Microsoft_logo.svg/500px-Microsoft_logo.svg.png",
+          "assets/logos/anthropic.png"
+        ]
+      },
+      "pos": "center 30%"
+    },
+    {
+      "kind": "card",
+      "heading": "One line to *say no*",
+      "paras": [
+        "Right now a site that wants to stay out of AI training needs a separate robots.txt entry for every crawler of every AI company.",
+        "The new token, __usage_ai-training, lets a site opt out of all of them with a single entry."
+      ],
+      "image": {
+        "url": "https://ypkxvhriisnfa5zf.public.blob.vercel-storage.com/news_google-shared-ai-training-robots-txt-signal_hero-POQohqNtDsQ2Q0gEpRb4AfBz48e9cs.jpg",
+        "credit": "Relevant Audience",
+        "fallback_urls": [
+          "https://i0.wp.com/fourweekmba.com/wp-content/uploads/2026/10/auth_w115_wide.png?w=1920&ssl=1"
+        ]
+      }
+    },
+    {
+      "kind": "card",
+      "heading": "Who signed *on*",
+      "paras": [
+        "Anthropic wrote the draft and sent it to the IETF, the group behind robots.txt. It says it has already started adding support.",
+        "OpenAI and Microsoft plan support in the coming months, Google in 2027. Meta backs the idea but has not committed."
+      ],
+      "image": {
+        "url": "https://images.siliconangle.com/blogs.dir/1/files/2026/10/AI-1-1.png",
+        "credit": "Unsplash via SiliconANGLE",
+        "fallback_urls": [
+          "https://i0.wp.com/fourweekmba.com/wp-content/uploads/2026/10/auth_w115_wide.png?w=1920&ssl=1"
+        ]
+      }
+    },
+    {
+      "kind": "card",
+      "heading": "What it *won't* do",
+      "paras": [
+        "The token only covers training. It does not control crawling, and it does not cover AI search summaries.",
+        "It is voluntary, with no penalty for ignoring it. Microsoft is adding a separate AI Grounding setting for pages its AI reads to answer questions."
+      ],
+      "image": {
+        "url": "https://www.techbuzz.ai/cdn-cgi/image/width=1200,quality=85,format=auto,fit=cover/https://charming-card-d91ad3487b.media.strapiapp.com/large_ai_giants_unite_behind_universal_scraping_opt_out_standard_f81ab89f2a.jpg",
+        "credit": "The Tech Buzz (AI illustration)",
+        "fallback_urls": [
+          "https://i0.wp.com/fourweekmba.com/wp-content/uploads/2026/10/auth_w115_wide.png?w=1920&ssl=1"
+        ]
+      }
+    },
+    {
+      "kind": "cta",
+      "hook": "Follow to see which AI companies actually honor this opt out once it goes live."
+    }
+  ],
+  "site_article": {
+    "headline": "OpenAI, Google, Microsoft and Anthropic back a single robots.txt opt out for AI training",
+    "dek": "A draft standard written at Anthropic would let websites refuse AI training by every participating company with one entry, though it does not cover crawling or AI search answers.",
+    "summary": "Google, Microsoft, Anthropic and OpenAI said on October 30, 2026 that they plan to support a shared robots.txt token, __usage_ai-training, that lets website operators opt out of generative AI training with a single entry. The draft has been submitted to the IETF, and support will roll out between the coming months and 2027.",
+    "seo_title": "OpenAI, Google, Microsoft, Anthropic back one AI training opt out",
+    "seo_description": "Four AI companies plan to honor one robots.txt token, __usage_ai-training, that lets sites opt out of AI training. What it covers and when.",
+    "answer_summary": "Websites will be able to add one robots.txt group for the token __usage_ai-training to tell OpenAI, Google, Microsoft and Anthropic not to use their pages for AI training, once each company turns on support between late 2026 and 2027.",
+    "tags": [
+      "OpenAI",
+      "Google",
+      "Microsoft",
+      "Anthropic",
+      "robots.txt",
+      "AI training",
+      "IETF"
+    ],
+    "hero_alt": "Illustration of an AI training opt out signal for websites.",
+    "paragraphs": [
+      {
+        "kind": "fact",
+        "text": "Google, Microsoft, Anthropic and OpenAI announced on October 30, 2026 that they plan to support a new crawling standard that lets website operators stop AI developers from using their content to train generative models, SiliconANGLE reported. Meta expressed support for the idea but has not committed to implementing it.",
+        "sources": [
+          0
+        ]
+      },
+      {
+        "kind": "fact",
+        "text": "The mechanism is a policy token, __usage_ai-training, written as a normal group in a site's robots.txt file. A site that disallows the token is stating that it does not want its pages used for AI training. The draft's own example disallows the whole site while still allowing a press kit folder.",
+        "sources": [
+          1,
+          2
+        ]
+      },
+      {
+        "kind": "heading",
+        "text": "Why a shared token"
+      },
+      {
+        "kind": "fact",
+        "text": "Today, blocking training scrapers requires a separate robots.txt entry for each AI provider, and often a separate entry for each of a provider's crawlers. The new standard would let operators block training scrapers for generative AI models from all participating companies with one entry. It would not apply to models that perform only non generative tasks.",
+        "sources": [
+          0
+        ]
+      },
+      {
+        "kind": "fact",
+        "text": "The proposal was written by Kevin Kelley of Anthropic as an Internet Draft and submitted to the Internet Engineering Task Force, the body that maintains the Robots Exclusion Protocol behind robots.txt. The draft is dated October 30, 2026 and expires on May 3, 2027. In a message to an IETF mailing list, Kelley said Anthropic has already started implementing support.",
+        "sources": [
+          0,
+          1,
+          2
+        ]
+      },
+      {
+        "kind": "heading",
+        "text": "When each company will honor it"
+      },
+      {
+        "kind": "fact",
+        "text": "OpenAI and Microsoft said they intend to add support in the coming months. FourWeekMBA reported that Microsoft's new preferences take effect on February 1, 2027. Google said it will follow in 2027, and its crawler documentation points to early 2027. According to Relevant Audience, Google plans to treat a disallow on the shared token as a disallow for Google-Extended when a site has not set a rule for Google-Extended directly.",
+        "sources": [
+          0,
+          1,
+          2
+        ]
+      },
+      {
+        "kind": "fact",
+        "text": "Microsoft is also adding a separate setting called AI Grounding, which covers cases where a model fetches a page to answer a user's question rather than to collect training data. It lets operators stop Microsoft services, and third party tools built on Microsoft technology, from making those requests. SiliconANGLE reported that OpenAI plans similar controls.",
+        "sources": [
+          0,
+          2
+        ]
+      },
+      {
+        "kind": "heading",
+        "text": "What the token does not do"
+      },
+      {
+        "kind": "fact",
+        "text": "The token expresses a usage preference and does not control crawling, which is still governed by crawler specific rules. A general rule for all user agents does not match it, so a site that does nothing expresses no training preference. The commitments are voluntary, there is no penalty for ignoring the signal, and the standard does not address AI search summaries, according to The Tech Buzz.",
+        "sources": [
+          1,
+          3
+        ]
+      },
+      {
+        "kind": "analysis",
+        "text": "For publishers, the change mostly saves effort: one line replaces a growing list of crawler names. It does not settle the larger fight over whether training on public web content without permission is lawful, and it does not touch how AI answers and summaries use pages after a model is trained. The separate grounding controls from Microsoft and OpenAI suggest that question is moving to its own set of rules."
+      },
+      {
+        "kind": "why_it_matters",
+        "text": "Watch whether Meta and other AI developers commit to the token, and whether the IETF advances the draft before it expires in May 2027."
+      }
+    ]
+  }
+}

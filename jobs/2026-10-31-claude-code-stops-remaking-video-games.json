@@ -1,0 +1,187 @@
+{
+  "id": "2026-10-31-claude-code-stops-remaking-video-games",
+  "created_at": "2026-10-31T06:40:00Z",
+  "story_time": "2026-10-30T16:26:00Z",
+  "timely": false,
+  "sensitive": false,
+  "priority": 1,
+  "review": true,
+  "format": "carousel",
+  "site_category": "companies",
+  "sources": [
+    {
+      "name": "Game Developer",
+      "url": "https://www.gamedeveloper.com/programming/anthropic-appears-to-have-ordered-ai-tool-claude-to-stop-remaking-video-games"
+    },
+    {
+      "name": "MadRobot",
+      "url": "https://madrobot.blog/2026/10/30/claude-code-rule-no-existing-game-recreations/"
+    },
+    {
+      "name": "Kotaku",
+      "url": "https://kotaku.com/ai-vibe-coding-just-hit-the-video-game-industry-like-an-avalanche-2000746366"
+    }
+  ],
+  "threads_text": "Claude Code now steers away from recreating a specific existing game, even if you rename it. Anthropic says original games and genre games still work. Fair protection for game studios, or a rule that will catch fan projects too?",
+  "caption": "Anthropic added a rule to Claude Code that steers it away from recreating a specific existing game, even under a new name.\nOriginal games, genre games and games from your own designs are still fine, an Anthropic staffer said.\nIt follows a wave of AI-made copies and ports of existing games.\n\nShould AI coding tools refuse to clone games?\n\nFollow @neurafeed.ai for daily AI news.\n\nSource: Game Developer · Photo: Anthropic",
+  "slides": [
+    {
+      "kind": "cover",
+      "headline": "Anthropic quietly told Claude to *stop remaking other people's games*",
+      "image": {
+        "url": "https://eu-images.contentstack.com/v3/assets/blt740a130ae3c5d529/blta970312a7256ca55/6ae4e702d996de0029eee354/claudeiconfeatured.jpg",
+        "credit": "Anthropic",
+        "fallback_urls": [
+          "https://kotaku.com/app/uploads/2026/04/Slay-the-Spire-2-official-trailer-image-Necrobinder.jpg"
+        ],
+        "generate": "A worn humanoid robot with scratched gray metal plating sits on a stool in front of an old arcade cabinet in a dim, cluttered arcade, its metal hands frozen just above the joystick and buttons. Yellow caution tape is stretched in an X across the cabinet's dark screen. Other old cabinets, tangled cables and a sticky carpet around it, harsh flickering fluorescent tube light. On the wall behind the robot, a big metal sign with the logo from the first image, big and exact, orange. Blank surfaces, no readable text or labels on any object apart from the logo, the screen shows nothing. Generous headroom above the robot's head. The robot and the cabinet fill the upper two thirds of the frame, the bottom third is the floor. Photorealistic, high contrast, vertical composition, one clear subject, no letters, no watermarks. It must look like an unedited real photo from a news agency, not a painting, not digital art, no glow effects.",
+        "refs": [
+          "assets/logos/claude.png"
+        ]
+      },
+      "pos": "center 30%",
+      "badges": [
+        {
+          "url": "assets/logos/claude.png",
+          "shape": "free"
+        }
+      ]
+    },
+    {
+      "kind": "card",
+      "heading": "A new rule for *Claude Code*",
+      "paras": [
+        "A new rule in Claude Code tells the model not to build a recreation of a specific existing game, even if it is renamed or called original.",
+        "Original games, games in a genre and games from your own designs and assets are still allowed."
+      ],
+      "image": {
+        "url": "https://madrobot.blog/images/claude-code-logo-lilac-game-recreations.jpg",
+        "credit": "Anthropic",
+        "fallback_urls": [
+          "https://madrobot.blog/images/sizes/claude-code-logo-lilac-game-recreations-800.jpg"
+        ]
+      }
+    },
+    {
+      "kind": "card",
+      "heading": "Anthropic *confirmed it*",
+      "paras": [
+        "An X user spotted the change, pushed around October 27. There is no setting to turn it off.",
+        "Anthropic's Addy Osmani said the company added two sentences to Claude Code's prompt on Opus 5.5 and will keep iterating."
+      ],
+      "image": {
+        "url": "https://www-cdn.anthropic.com/images/4zrzovbb/website/6d4a0d28992ade92d6fa63646fd9c9d318245c6c-2400x1260.jpg",
+        "credit": "Anthropic",
+        "fallback_urls": [
+          "https://eu-images.contentstack.com/v3/assets/blt740a130ae3c5d529/blta970312a7256ca55/6ae4e702d996de0029eee354/claudeiconfeatured.jpg"
+        ]
+      }
+    },
+    {
+      "kind": "card",
+      "heading": "Why *now*",
+      "paras": [
+        "Since Claude Opus 5.5 arrived on September 22, AI coding tools have driven a wave of browser ports and copies of existing games, Kotaku reported.",
+        "Some indie developers now hold back public demos because AI tools can copy games within days."
+      ],
+      "image": {
+        "url": "https://kotaku.com/app/uploads/2026/04/Slay-the-Spire-2-official-trailer-image-Necrobinder.jpg",
+        "credit": "© Mega Crit via Kotaku",
+        "fallback_urls": [
+          "https://madrobot.blog/images/sizes/claude-code-logo-lilac-game-recreations-800.jpg"
+        ]
+      }
+    },
+    {
+      "kind": "cta",
+      "hook": "Follow to see if other AI coding tools start drawing the same line on game clones."
+    }
+  ],
+  "site_article": {
+    "headline": "Anthropic steers Claude Code away from recreating existing video games",
+    "dek": "A two sentence instruction added for Claude Opus 5.5 tells the coding agent to avoid copies of specific games while still building original and genre games.",
+    "summary": "Anthropic has added an instruction to Claude Code that tells the model not to build a recreation of a specific existing game, even if it is renamed or called original, Game Developer reported on October 30, 2026. An Anthropic staff member confirmed the change and said original games, genre games and games built from a user's own assets are meant to keep working.",
+    "seo_title": "Anthropic tells Claude Code to stop recreating existing games",
+    "seo_description": "A new Claude Code instruction for Opus 5.5 steers the agent away from recreating specific existing games. Original and genre games still work.",
+    "answer_summary": "Claude Code with Claude Opus 5.5 now carries an instruction to avoid building a recreation of a specific existing game, even under a new name. Original games, genre games and games made from a user's own designs and assets are still allowed.",
+    "tags": [
+      "Anthropic",
+      "Claude Code",
+      "Claude Opus 5.5",
+      "Video games",
+      "Copyright"
+    ],
+    "hero_alt": "The Claude icon and the Anthropic logo.",
+    "paragraphs": [
+      {
+        "kind": "fact",
+        "text": "Anthropic has added an instruction to its Claude Code agent that steers the model away from recreating existing video games, Game Developer reported on October 30, 2026. The rule tells Claude not to build a recreation of a specific existing game, even if the user renames it or calls it original.",
+        "sources": [
+          0,
+          1
+        ]
+      },
+      {
+        "kind": "fact",
+        "text": "The same instruction says Claude should still build original games, games in a genre and games based on the user's own designs and assets. According to MadRobot, that means a new platformer or roguelike is fine, while a renamed copy of a well known game is not.",
+        "sources": [
+          0,
+          1
+        ]
+      },
+      {
+        "kind": "heading",
+        "text": "How the change surfaced"
+      },
+      {
+        "kind": "fact",
+        "text": "An X user who posts as Chasm spotted the change and said it was pushed around October 27 under a server flag named tengu_heron_brook, with no setting to switch it off. MadRobot reported that the text appears in Claude Code version 2.1.314, published to npm early on October 30, that it was not in version 2.1.312, and that it does not appear in Anthropic's public changelog.",
+        "sources": [
+          0,
+          1
+        ]
+      },
+      {
+        "kind": "fact",
+        "text": "Anthropic confirmed the update to Game Developer. Addy Osmani, a member of Anthropic's technical staff, wrote on X that the company added two sentences to Claude Code's prompt on Opus 5.5 to steer it away from recreating someone else's specific game. He said original, genre and own asset games are meant to keep working and that Anthropic will continue to iterate.",
+        "sources": [
+          0
+        ]
+      },
+      {
+        "kind": "fact",
+        "text": "MadRobot noted that the rule is an instruction to the model rather than a hard technical block, so how strictly Claude follows it may depend on the request. The setting is tied to Claude Opus 5.5, which means users on other models may not receive it.",
+        "sources": [
+          1
+        ]
+      },
+      {
+        "kind": "heading",
+        "text": "A wave of AI made copies"
+      },
+      {
+        "kind": "fact",
+        "text": "The change follows months of AI assisted game remakes. Kotaku reported on October 15 that the release of Claude Opus 5.5 on September 22 was followed by a wave of vibe coded projects, including web browser ports of well known games, and that GitHub has received many DMCA takedown notices from game publishers related to vibe coding.",
+        "sources": [
+          2
+        ]
+      },
+      {
+        "kind": "fact",
+        "text": "Game Developer tied the rule to developer fears about fast follow clones, citing a studio that canceled a public playtest and Valve addressing concerns about AI cloning on Steam. MadRobot reported that some indie developers are holding back public demos because AI tools can copy a game within days. Anthropic is also facing copyright lawsuits over Claude, including one filed this month by the owners of 274 Elvis Presley songs.",
+        "sources": [
+          0,
+          1
+        ]
+      },
+      {
+        "kind": "analysis",
+        "text": "The instruction draws a line that copyright law already tends to draw: game ideas and genres are hard to protect, while names, characters, art and code are protected. By putting that line into the agent's prompt, Anthropic is trying to keep Claude Code on the safe side without blocking the large number of people who use it to build their own games. Because Claude has no way to verify who owns a design or asset, the rule relies on how the model reads each request."
+      },
+      {
+        "kind": "why_it_matters",
+        "text": "Watch whether other AI coding tools adopt similar rules, and whether Anthropic changes the wording after feedback from developers who build mods, fan projects and remakes of abandoned games."
+      }
+    ]
+  }
+}

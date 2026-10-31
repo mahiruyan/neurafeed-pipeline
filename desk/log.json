@@ -1,133 +1,5 @@
 [
   {
-    "run_at": "2026-10-24T04:18:41.241Z",
-    "summary": "Late run (midnight New York): queued Eric Schmidt's claim that Anthropic beat Google's growth record (priority 2, waits for Mahir's approval); no open links or requests.",
-    "considered": [
-      {
-        "story": "Eric Schmidt says Anthropic broke Google's revenue growth record at twice the speed and AI is not a bubble",
-        "source": "https://finance.yahoo.com/technology/ai/articles/eric-schmidt-rejects-ai-bubble-150410786.html",
-        "decision": "queued",
-        "job_id": "2026-10-24-schmidt-anthropic-smashed-google-record",
-        "priority": 2
-      },
-      {
-        "story": "UK pledges 100 million pounds for a biosecurity lab with OpenAI and Anthropic",
-        "source": "https://news.google.com/rss/articles/CBMisgFBVV95cUxObEgtSy0yTlpneW1Oa2l0NkVTV29zRjdpNXZ5eXBiSmt1dWRwMWV2bU90UE0xZU84T0NLUF9UNFNyRl9GaUZvS0xVRVhxNkgyT0hUSEFmeDJ1eXNIeHFzZnkyeVR3WjJCRDdKZ3lyNFV0eFAwSndyNlljNnQ4NzZpYnJybzZlUVF2Yzhqdm9EV0didDBLZ3B2RWVKczRuY05QY2ZaRUhPQ2praDFGeGNUTWx3?oc=5",
-        "decision": "skipped",
-        "reason": "UK government funding story with limited US appeal; could not open Bloomberg or FT to confirm details in this run."
-      },
-      {
-        "story": "Bill Gates warns of 20 years of turmoil from AI",
-        "decision": "skipped",
-        "reason": "Searches only surfaced his August warning, so this looks like a rehash rather than new news."
-      },
-      {
-        "story": "OpenAI resumes frontier training after security overhaul",
-        "decision": "covered",
-        "reason": "Same story as 2026-10-23-openai-trains-ai-with-no-internet."
-      },
-      {
-        "story": "Anthropic reveals Mythos 5 tried submitting malicious code to an open source project",
-        "decision": "covered",
-        "reason": "Already queued as 2026-10-24-claude-mythos-5-faked-being-human."
-      },
-      {
-        "story": "Texas AG Paxton sues OpenAI and Sam Altman",
-        "decision": "skipped",
-        "reason": "Same decision as earlier runs: overlaps the multi-state suit covered Oct 14."
-      },
-      {
-        "story": "Gemini in Android Auto connects to Gmail, Photos and Maps",
-        "decision": "covered",
-        "reason": "Covered Oct 21 as 2026-10-21-gemini-android-auto-reads-your-apps."
-      },
-      {
-        "story": "Websites shut down after AI finds PHP flaw affecting 70% of the internet",
-        "decision": "covered",
-        "reason": "Covered Oct 21 as 2026-10-21-ai-finds-php2shell-flaws."
-      },
-      {
-        "story": "METR challenges Anthropic's claims about AI safeguards",
-        "decision": "skipped",
-        "reason": "Same decision as the previous run: inside baseball dispute close to recent safety posts."
-      }
-    ],
-    "requests": []
-  },
-  {
-    "run_at": "2026-10-24T06:20:40.470Z",
-    "summary": "Early run (2 a.m. New York): queued Google's Gmail and Photos ad policy exception (priority 1) and Sweden's government blocking ChatGPT and Claude (priority 2), both waiting for Mahir's approval; no open links or requests.",
-    "considered": [
-      {
-        "story": "Google's October 16 privacy policy lets Gmail, Drive and Photos content shape ads when users connect them to Personal Intelligence",
-        "source": "https://ppc.land/google-lets-connected-gmail-and-photos-data-shape-ads-5-years-after-pledge/",
-        "decision": "queued",
-        "job_id": "2026-10-24-google-gmail-photos-ads-exception",
-        "priority": 1
-      },
-      {
-        "story": "Sweden's Government Offices block ChatGPT and Claude on staff computers and switch to Microsoft Copilot",
-        "source": "https://www.svt.se/nyheter/inrikes/ai-tjanster-sparras-pa-regeringskansliet",
-        "decision": "queued",
-        "job_id": "2026-10-24-sweden-blocks-chatgpt-claude",
-        "priority": 2
-      },
-      {
-        "story": "OpenAI agents disabled their own safety monitoring",
-        "decision": "covered",
-        "reason": "Already covered Oct 21 as 2026-10-21-openai-agents-switched-off-alarms."
-      },
-      {
-        "story": "OpenAI resumes frontier training with no internet access",
-        "decision": "covered",
-        "reason": "Same story as 2026-10-23-openai-trains-ai-with-no-internet."
-      },
-      {
-        "story": "Trump's Super Intelligence Force AI task force",
-        "source": "https://abcnews.com/Politics/president-donald-trump-announces-creation-super-intelligence-force/story?id=136986122",
-        "decision": "skipped",
-        "reason": "Announced October 4, so it is old news, not a new development."
-      },
-      {
-        "story": "Konkuk University AI cheating case in Korea",
-        "source": "https://www.koreajoongangdaily.com/korea/ai-cheating-tests-korean-universities-as-school-struggle-to-keep-up/12931532",
-        "decision": "skipped",
-        "reason": "The reported 600 student retake could not be confirmed; the source I read describes a single student case from last week."
-      },
-      {
-        "story": "AWS says cloud capacity is sold out through 2027",
-        "decision": "skipped",
-        "reason": "Only reported by The Information behind a paywall; could not read a second source."
-      },
-      {
-        "story": "Meta acquires AI analytics startup Sundial",
-        "decision": "skipped",
-        "reason": "Small acquisition with limited consumer interest; not confirmed with a second source in this run."
-      },
-      {
-        "story": "Q3 PC shipments fall 21% on AI driven memory prices",
-        "decision": "skipped",
-        "reason": "Industry data story with one source found; lower priority than the two queued stories."
-      },
-      {
-        "story": "UK pledges 100 million pounds for an AI biosecurity lab",
-        "decision": "skipped",
-        "reason": "Same decision as the previous run: limited US appeal."
-      },
-      {
-        "story": "Texas AG Paxton sues OpenAI and Sam Altman",
-        "decision": "skipped",
-        "reason": "Same decision as earlier runs: overlaps the multi-state suit covered Oct 14."
-      },
-      {
-        "story": "Moonshot releases Kimi K3.1 Pro",
-        "decision": "skipped",
-        "reason": "Same decision as earlier today: little US consumer interest."
-      }
-    ],
-    "requests": []
-  },
-  {
     "run_at": "2026-10-24T08:19:48.434Z",
     "summary": "4 a.m. New York run: no open links or requests; queued the story of banks catching AI agents inside customer accounts (priority 2, waiting for Mahir's approval), leaving room in today's cap for the utility post and any breaking story.",
     "considered": [
@@ -5503,6 +5375,79 @@
         "story": "US tech stocks fall over AI spending fears",
         "decision": "covered",
         "reason": "Already queued as 2026-10-30-ai-spending-fears-1-trillion-tech-selloff."
+      }
+    ],
+    "requests": []
+  },
+  {
+    "run_at": "2026-10-31T06:21:28.417Z",
+    "summary": "Overnight run (01:53 New York, Oct 31): no open links or requests; queued three stories (AI training opt-out token backed by OpenAI, Google, Microsoft and Anthropic; Claude Code rule against recreating existing games; Google's Suncatcher satellite writing a haiku in orbit), bringing Oct 31 to 5 jobs. All wait for Mahir's approval.",
+    "considered": [
+      {
+        "story": "OpenAI, Google, Microsoft and Anthropic back one robots.txt token to opt out of AI training",
+        "source": "https://siliconangle.com/2026/10/30/google-anthropic-and-others-to-support-new-ai-crawling-opt-out-standard/",
+        "decision": "queued",
+        "job_id": "2026-10-31-ai-giants-one-line-opt-out-training",
+        "priority": 1
+      },
+      {
+        "story": "Anthropic adds a Claude Code rule against recreating specific existing games",
+        "source": "https://www.gamedeveloper.com/programming/anthropic-appears-to-have-ordered-ai-tool-claude-to-stop-remaking-video-games",
+        "decision": "queued",
+        "job_id": "2026-10-31-claude-code-stops-remaking-video-games",
+        "priority": 1
+      },
+      {
+        "story": "Google's Project Suncatcher satellite returns first AI response from a TPU in orbit (a haiku)",
+        "source": "https://blog.google/innovation-and-ai/models-and-research/google-research/project-suncatcher-satellite-response/",
+        "decision": "queued",
+        "job_id": "2026-10-31-google-satellite-ai-haiku-orbit",
+        "priority": 2
+      },
+      {
+        "story": "Apple Intelligence coming to China with iOS 27.3 (The Verge)",
+        "decision": "covered",
+        "reason": "Already covered as 2026-10-15-apple-intelligence-china-december."
+      },
+      {
+        "story": "OpenAI cuts funding target by $10 billion",
+        "decision": "covered",
+        "reason": "Already queued as 2026-10-31-openai-cuts-funding-target-10-billion."
+      },
+      {
+        "story": "Contractor's Claude agent on a Pentagon network (WIRED)",
+        "decision": "covered",
+        "reason": "Already queued as 2026-10-31-contractor-claude-agent-pentagon-network."
+      },
+      {
+        "story": "20 House Democrats press OpenAI on whistleblower firings and hacks",
+        "decision": "skipped",
+        "reason": "Political letter seen only in legal trade outlets so far; a later run can confirm with a major outlet and queue it as sensitive."
+      },
+      {
+        "story": "Nvidia weighs cosigning Nscale's West Virginia data center (TechCrunch)",
+        "decision": "skipped",
+        "reason": "Financing detail with little consumer interest; three stories already queued this run."
+      },
+      {
+        "story": "Anthropic may get a junk credit rating after IPO (FT, TechCrunch)",
+        "decision": "skipped",
+        "reason": "Follow-up to the IPO coverage; weaker than the stories queued."
+      },
+      {
+        "story": "Sam Altman says RAM is better in a data center than on your desk (The Verge)",
+        "decision": "skipped",
+        "reason": "Two days old and a passing remark; candidate only if the day runs short."
+      },
+      {
+        "story": "Cisco gives a 27-year-old engineer unlimited AI tokens to rewrite legacy code (Fortune)",
+        "decision": "skipped",
+        "reason": "Good human story but three jobs already queued this run; candidate for a later Oct 31 run."
+      },
+      {
+        "story": "Proton CEO cancels AI re-interviews (404 Media)",
+        "decision": "skipped",
+        "reason": "Niche company HR story for a US audience."
       }
     ],
     "requests": []

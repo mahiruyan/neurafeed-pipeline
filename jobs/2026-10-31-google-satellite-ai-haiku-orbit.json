@@ -1,0 +1,226 @@
+{
+  "id": "2026-10-31-google-satellite-ai-haiku-orbit",
+  "created_at": "2026-10-31T06:30:00Z",
+  "story_time": "2026-10-30T17:00:00Z",
+  "timely": false,
+  "sensitive": false,
+  "priority": 2,
+  "review": true,
+  "format": "carousel",
+  "site_category": "companies",
+  "sources": [
+    {
+      "name": "Google",
+      "url": "https://blog.google/innovation-and-ai/models-and-research/google-research/project-suncatcher-satellite-response/"
+    },
+    {
+      "name": "Interesting Engineering",
+      "url": "https://interestingengineering.com/ai-robotics/google-space-data-center-orbital-poem"
+    },
+    {
+      "name": "Notebookcheck",
+      "url": "https://www.notebookcheck.net/Google-s-first-orbital-AI-data-center-is-up-and-running-and-it-wrote-a-strange-little-poem.1438409.0.html"
+    },
+    {
+      "name": "Startup Fortune",
+      "url": "https://startupfortune.com/googles-satellite-wrote-a-haiku-in-orbit-and-the-real-test-is-cooling/"
+    },
+    {
+      "name": "Scripps News",
+      "url": "https://www.scrippsnews.com/science-and-tech/space/could-ai-data-centers-run-in-space-google-launches-its-first-test"
+    },
+    {
+      "name": "Tom's Hardware",
+      "url": "https://www.tomshardware.com/tech-industry/data-centers/google-is-blasting-an-experimental-ai-data-center-into-orbit-first-satellite-will-feature-just-four-tensor-processing-units?type=News"
+    }
+  ],
+  "threads_text": "Google's prototype satellite just ran its Gemma 4 model on a TPU in orbit, and its first answer was a haiku: \"Blue marble below / Data streams in silent grace / Starlight feeds my core.\" Cute, but the real tests are radiation and heat. Would you trust AI data centers in space?",
+  "caption": "Google's first AI chips in orbit just answered their first prompt.\nEngineers asked the Gemma 4 model on its Project Suncatcher satellite for a haiku about space, and it wrote one.\nNext come radiation and heat tests, then two linked satellites in 2027.\n\nWould you trust AI data centers in space?\n\nFollow @neurafeed.ai for daily AI news.\n\nSource: Google · Photo: Google",
+  "slides": [
+    {
+      "kind": "cover",
+      "headline": "Google put AI chips in space and the first thing they did was *write a poem*",
+      "image": {
+        "url": "https://www.notebookcheck.net/fileadmin/Notebooks/News/_nc5/Project_Suncatcher_Google_AI_satellite_TPU.png",
+        "credit": "Google",
+        "fallback_urls": [
+          "https://startupfortune.com/wp-content/uploads/2026/10/google-planet-labs-project-suncatcher-mvvatsia-1024x576.jpg"
+        ],
+        "generate": "The boxy satellite from the first image, about the size of a refrigerator with folded solar panels, hangs from a crane hook inside a cluttered satellite clean room before launch. Two engineers in white clean room suits and hoods check cables beside it, one looking up at it with a small proud smile. Foil wrapped equipment, metal carts and cable bundles around them, harsh fluorescent light. On the white wall behind them, the logo from the second image, big and exact. Blank surfaces, no readable text or labels on any object. Generous headroom above the satellite. The satellite and the engineers fill the upper two thirds of the frame, the bottom third is the clean room floor. Photorealistic, high contrast, vertical composition, one clear subject, no letters, no watermarks. It must look like an unedited real photo from a news agency, not a painting, not digital art, no glow effects.",
+        "refs": [
+          "https://www.notebookcheck.net/fileadmin/Notebooks/News/_nc5/Project_Suncatcher_Google_AI_satellite_TPU.png",
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Google_%22G%22_logo.svg/500px-Google_%22G%22_logo.svg.png"
+        ]
+      },
+      "pos": "center 30%",
+      "badges": [
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Google_%22G%22_logo.svg/500px-Google_%22G%22_logo.svg.png",
+          "shape": "free"
+        }
+      ]
+    },
+    {
+      "kind": "card",
+      "heading": "Hello World *from orbit*",
+      "paras": [
+        "Google launched its Project Suncatcher prototype satellite on October 1 on a SpaceX rideshare. It was built with Planet.",
+        "This week it sent back the first AI response ever from a data center class TPU in orbit, Google said."
+      ],
+      "image": {
+        "url": "https://startupfortune.com/wp-content/uploads/2026/10/google-planet-labs-project-suncatcher-mvvatsia.jpg",
+        "credit": "Startup Fortune",
+        "fallback_urls": [
+          "https://i.ytimg.com/vi_webp/epqzfAi16us/maxresdefault.webp"
+        ]
+      }
+    },
+    {
+      "kind": "card",
+      "heading": "The *haiku* it sent home",
+      "paras": [
+        "Engineers asked the Gemma 4 open model on board for a haiku about being in space. The answer came down as the satellite passed Svalbard, Norway.",
+        {
+          "t": "Blue marble below / Data streams in silent grace / Starlight feeds my core.",
+          "strong": true
+        }
+      ],
+      "image": {
+        "url": "https://i.ytimg.com/vi_webp/epqzfAi16us/maxresdefault.webp",
+        "credit": "Google",
+        "fallback_urls": [
+          "https://cms.interestingengineering.com/wp-content/uploads/2026/10/Untitled-Design-66.jpg"
+        ]
+      }
+    },
+    {
+      "kind": "card",
+      "heading": "Why put AI *in space*",
+      "paras": [
+        "Google says satellites in low Earth orbit can make up to eight times more solar power than panels on the ground.",
+        "This one carries four TPUs on about 1 kilowatt. Next come radiation and heat tests, then two linked satellites in 2027."
+      ],
+      "image": {
+        "url": "https://cms.interestingengineering.com/wp-content/uploads/2026/10/Untitled-Design-66.jpg",
+        "credit": "Getty Images",
+        "fallback_urls": [
+          "https://startupfortune.com/wp-content/uploads/2026/10/google-planet-labs-project-suncatcher-mvvatsia-1024x576.jpg"
+        ]
+      }
+    },
+    {
+      "kind": "cta",
+      "hook": "Follow to see if Google's space chips survive the radiation and heat tests coming next."
+    }
+  ],
+  "site_article": {
+    "headline": "Google's Project Suncatcher satellite returns the first AI response from a TPU in orbit",
+    "dek": "Engineers asked the onboard Gemma 4 model for a haiku about space, a first test before radiation and heat trials and a two satellite mission in 2027.",
+    "summary": "Google said on October 30, 2026 that its Project Suncatcher prototype satellite produced the first AI response from a data center class TPU in orbit. The satellite, launched on October 1 with four TPUs on board, answered a prompt with a haiku downlinked over Svalbard, Norway.",
+    "seo_title": "Google Suncatcher satellite runs Gemma 4 in orbit, writes haiku",
+    "seo_description": "Google's Project Suncatcher prototype satellite ran Gemma 4 on a TPU in orbit and sent back a haiku. Radiation and heat tests come next.",
+    "answer_summary": "Yes. Google says its Project Suncatcher prototype ran its open Gemma 4 model on a TPU in orbit and returned a haiku, the first AI response from a data center class TPU in space.",
+    "tags": [
+      "Google",
+      "Project Suncatcher",
+      "TPU",
+      "Gemma 4",
+      "Space"
+    ],
+    "hero_alt": "Image released by Google of its Project Suncatcher prototype satellite.",
+    "paragraphs": [
+      {
+        "kind": "fact",
+        "text": "Google said on October 30, 2026 that its Project Suncatcher prototype satellite has returned the first AI response ever produced by a data center class TPU in orbit. The company described the result as its \"Hello World\" milestone in a post by Travis Beals, a senior director at Google.",
+        "sources": [
+          0,
+          2
+        ]
+      },
+      {
+        "kind": "fact",
+        "text": "The satellite launched on October 1 aboard SpaceX's Transporter-18 rideshare mission from Vandenberg Space Force Base in California. Google built it with the satellite company Planet. Over the following weeks, the team worked through a commissioning checklist that included powering up the host computer and the TPU trays and running early machine learning tests.",
+        "sources": [
+          0,
+          3,
+          4
+        ]
+      },
+      {
+        "kind": "heading",
+        "text": "A haiku from low Earth orbit"
+      },
+      {
+        "kind": "fact",
+        "text": "During a pass over a ground station, engineers uplinked a prompt to the onboard Gemma 4 open model asking for a haiku about being in space. The reply was downlinked as the satellite passed over Svalbard, Norway. According to Google, the model wrote: \"Blue marble below / Data streams in silent grace / Starlight feeds my core.\"",
+        "sources": [
+          0,
+          2
+        ]
+      },
+      {
+        "kind": "fact",
+        "text": "After that first output, the team tried space themed limericks and prompts that asked the model to report telemetry on the status of the payload, Google said.",
+        "sources": [
+          0,
+          1
+        ]
+      },
+      {
+        "kind": "heading",
+        "text": "What is on board"
+      },
+      {
+        "kind": "fact",
+        "text": "The satellite, nicknamed MVP, carries four Google TPUs, roughly the computing power of a single server in a data center on the ground, according to Scripps News. Interesting Engineering reported that power limits allow only one TPU to run at a time and that the satellite generates about 1 kilowatt.",
+        "sources": [
+          1,
+          4
+        ]
+      },
+      {
+        "kind": "fact",
+        "text": "Google has argued that satellites in low Earth orbit can generate up to eight times more solar power than panels on the ground, which is the core idea behind Project Suncatcher. The project was first announced in November 2025 as a long term research effort into running machine learning compute in space.",
+        "sources": [
+          4
+        ]
+      },
+      {
+        "kind": "fact",
+        "text": "Heat remains a central challenge. Scripps News reported that the chips can run for about 15 minutes before they must shut down to cool, while Startup Fortune noted that cooling in a vacuum is still an open problem for the project.",
+        "sources": [
+          3,
+          4
+        ]
+      },
+      {
+        "kind": "heading",
+        "text": "Next steps"
+      },
+      {
+        "kind": "fact",
+        "text": "Google said the team will now test how the TPUs hold up under thermal stress and radiation in orbit. Radiation can flip bits in memory and corrupt calculations, and earlier ground tests with particle beams suggested that running models is more tolerant of radiation than training them, Interesting Engineering reported. If the tests go well, Google plans to launch two interconnected satellites in 2027.",
+        "sources": [
+          0,
+          1,
+          2
+        ]
+      },
+      {
+        "kind": "fact",
+        "text": "Google executives have been cautious about the timeline. Tom's Hardware, citing an interview with The New York Times, reported that James Manyika, Google's senior vice president of research, estimated it could take about 15 years to go from a four chip server to a full data center in orbit.",
+        "sources": [
+          5
+        ]
+      },
+      {
+        "kind": "analysis",
+        "text": "The haiku is a small result, but it shows that a commercial AI accelerator can boot, load an open model and answer a prompt after launch and weeks in orbit. The harder questions for the project are power, heat and long term radiation damage, and those answers will decide whether orbital compute stays a research effort or becomes infrastructure."
+      },
+      {
+        "kind": "why_it_matters",
+        "text": "The results of Google's radiation and thermal tests over the coming months, and whether the two satellite mission planned for 2027 stays on schedule, are the next markers for the project."
+      }
+    ]
+  }
+}
