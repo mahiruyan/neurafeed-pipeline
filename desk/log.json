@@ -1,56 +1,5 @@
 [
   {
-    "run_at": "2026-10-24T10:06:44.074Z",
-    "summary": "6 a.m. New York run: no open links or requests; quiet Saturday morning with no fresh major news, so queued Moonshot's Kimi K3.1 Pro launch (priority 2, waits for Mahir's approval), now 5 jobs for today.",
-    "considered": [
-      {
-        "story": "Moonshot's Kimi K3.1 Pro nears Claude Opus 5.5 on coding and ships with hacking data removed before open weights",
-        "source": "https://thenextweb.com/news/moonshot-kimi-k3-1-pro-open-weight-cyber",
-        "decision": "queued",
-        "job_id": "2026-10-24-kimi-k3-1-pro-worse-at-hacking",
-        "priority": 2
-      },
-      {
-        "story": "Gemini Notebook becomes a connected app in Gemini, on by default outside the EEA",
-        "source": "https://9to5google.com/2026/10/23/gemini-notebook-connected-app/",
-        "decision": "skipped",
-        "reason": "Small Workspace feature update with little broad appeal."
-      },
-      {
-        "story": "Utopai AI film studio raises $60M at a $1B valuation",
-        "decision": "skipped",
-        "reason": "Only reported by The Information behind a paywall; no second source read."
-      },
-      {
-        "story": "Kyutai releases CADRE video autoencoders for world models",
-        "decision": "skipped",
-        "reason": "Niche research release for developers."
-      },
-      {
-        "story": "Antitrust lawsuit against OpenAI, Anthropic, Google and xAI over an AI slowdown pact",
-        "source": "https://qz.com/antitrust-lawsuit-anthropic-openai-google-spacexai-ai-slowdown-092026",
-        "decision": "skipped",
-        "reason": "Filed in September, so it is not new news."
-      },
-      {
-        "story": "Texas AG Paxton sues OpenAI and Sam Altman",
-        "decision": "skipped",
-        "reason": "Same decision as earlier runs: overlaps the multi-state suit covered Oct 14."
-      },
-      {
-        "story": "OpenAI resumes frontier training with no live internet access",
-        "decision": "covered",
-        "reason": "Already posted as 2026-10-23-openai-trains-ai-with-no-internet."
-      },
-      {
-        "story": "UK pledges 100 million pounds for an AI biosecurity lab",
-        "decision": "skipped",
-        "reason": "Same decision as earlier runs: limited US appeal."
-      }
-    ],
-    "requests": []
-  },
-  {
     "run_at": "2026-10-24T12:19:42.031Z",
     "summary": "8 a.m. New York run: no open links or requests; quiet Saturday morning with no new major news, so queued Jensen Huang's first Kazakhstan visit and NVIDIA's Higgsfield investment (priority 2, waits for Mahir's approval), now 6 jobs for today.",
     "considered": [
@@ -5509,6 +5458,63 @@
         "story": "AI labs back one robots.txt opt-out token",
         "decision": "covered",
         "reason": "Already queued as 2026-10-31-ai-giants-one-line-opt-out-training."
+      }
+    ],
+    "requests": []
+  },
+  {
+    "run_at": "2026-10-31T12:16:09.036Z",
+    "summary": "Morning run (08:00 New York, Oct 31): no open links or requests; queued Sam Altman's 'quite terrible' PC RAM remarks (priority 1), bringing Oct 31 to 7 jobs and leaving one slot for the utility post after 11:00.",
+    "considered": [
+      {
+        "story": "Sam Altman says it is 'quite terrible' for PCs to hold so much of the world's DRAM",
+        "source": "https://www.tomshardware.com/tech-industry/data-centers/openai-ceo-says-its-quite-terrible-for-your-pc-to-have-ram-sam-altman-says-data-centers-offer-better-utilization",
+        "decision": "queued",
+        "job_id": "2026-10-31-altman-pc-ram-quite-terrible",
+        "priority": 1
+      },
+      {
+        "story": "AMD MI350X matched or beat Nvidia B200 on 4 of 10 Meta training models (paper)",
+        "decision": "skipped",
+        "reason": "Technical benchmark seen only in one secondary write-up, and AMD and Meta were covered this week."
+      },
+      {
+        "story": "Apple CEO John Ternus says Apple won't ship AI for AI's sake (Wired)",
+        "source": "https://www.wired.com/story/i-spent-30-minutes-with-apples-ceo-now-i-know-why-john-ternus-got-the-job",
+        "decision": "skipped",
+        "reason": "Interview color without a clear news hook; the MacBook Pro launch is already covered."
+      },
+      {
+        "story": "Wikimedia backs AI training fair use but opposes RAG in NYT v. OpenAI amicus brief",
+        "source": "https://wikimediafoundation.org/news/2026/10/30/wikimedia-foundation-amicus-brief-new-york-times-v-open-ai-case/",
+        "decision": "skipped",
+        "reason": "Legal filing with narrow appeal, and the last slot today is kept for the utility post."
+      },
+      {
+        "story": "Tesla to open Optimus reservations in early December (SF Standard)",
+        "source": "https://sfstandard.com/2026/10/30/tesla-optimus-robot-waitlist",
+        "decision": "skipped",
+        "reason": "Still a single-source report."
+      },
+      {
+        "story": "Anthropic research: harmless stories can teach models to deceive and resist shutdown",
+        "decision": "skipped",
+        "reason": "Only a secondary write-up seen this run and Anthropic already has three posts today."
+      },
+      {
+        "story": "OpenAI-backed Thrive Holdings buys ADT for $15.3 billion",
+        "decision": "skipped",
+        "reason": "Two days old and not an OpenAI deal itself."
+      },
+      {
+        "story": "OpenAI cuts funding target by $10 billion",
+        "decision": "covered",
+        "reason": "Already queued as 2026-10-31-openai-cuts-funding-target-10-billion."
+      },
+      {
+        "story": "Anthropic renames Max 20x to Ultra and drops the 5-hour limit",
+        "decision": "covered",
+        "reason": "Already queued as 2026-10-31-claude-ultra-no-5-hour-limit."
       }
     ],
     "requests": []
