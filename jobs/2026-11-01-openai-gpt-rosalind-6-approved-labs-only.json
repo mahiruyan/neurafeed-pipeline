@@ -1,0 +1,229 @@
+{
+  "id": "2026-11-01-openai-gpt-rosalind-6-approved-labs-only",
+  "created_at": "2026-11-01T09:20:00Z",
+  "story_time": "2026-10-30T17:00:00Z",
+  "timely": false,
+  "sensitive": false,
+  "priority": 1,
+  "review": true,
+  "format": "carousel",
+  "site_category": "models",
+  "sources": [
+    {
+      "name": "OpenAI Deployment Safety Hub",
+      "url": "https://deploymentsafety.openai.com/gpt-rosalind-6"
+    },
+    {
+      "name": "Data Studios",
+      "url": "https://www.datastudios.org/post/openai-gpt-6-rosalind-biology-drug-discovery-gpt-6-astra-weights-trusted-access"
+    },
+    {
+      "name": "i-SCOOP",
+      "url": "https://www.i-scoop.eu/gpt-6-rosalind-trusted-access/"
+    },
+    {
+      "name": "AI Weekly",
+      "url": "https://aiweekly.co/alerts/openai-ships-gpt-rosalind-6-biology-model-to-trusted-users"
+    }
+  ],
+  "threads_text": "OpenAI released GPT-Rosalind-6, a biology and drug discovery model built on the same weights as GPT-6 Astra, but only approved labs, companies and government partners can use it. OpenAI rates it High for biological risk, so access is the safety feature. Should powerful science AI stay locked behind applications?",
+  "caption": "OpenAI released GPT-Rosalind-6 on October 30, a reasoning model for biology and drug discovery.\nIt runs on the same weights as GPT-6 Astra, but only approved labs, companies and government partners can use it.\nOn OpenAI's own tests it beat its predecessor by wide margins on drug chemistry and gene tasks.\n\nShould science AI this strong be locked behind an application?\n\nFollow @neurafeed.ai for daily AI news.\n\nSource: OpenAI",
+  "slides": [
+    {
+      "kind": "cover",
+      "headline": "OpenAI built a biology AI so powerful that *only approved labs* are allowed to use it",
+      "image": {
+        "url": "https://www.i-scoop.eu/wp-content/uploads/2026/10/gpt-6-rosalind-trusted-access-cover.webp",
+        "credit": "i-SCOOP",
+        "fallback_urls": [
+          "https://cdn.labmanager.com/assets/image/56470/openai-launches-gpt-rosalind-to-streamline-research-workflows-l.jpg"
+        ],
+        "generate": "A cluttered biology research lab at night under harsh fluorescent light, with racks of test tubes, pipettes and sample boxes on steel benches. A tired female scientist in a white lab coat and safety glasses stands in front of a heavy glass security door with a keypad lock, one hand pressed flat on the glass. Behind the locked glass, inside a small cold room, stands a scuffed white humanoid robot holding a test tube up to the light. On the glass door, the logo from the first image is printed big and exact in black. Blank surfaces, no readable text or labels on any object apart from the logo. Generous headroom above the scientist and the robot. The scientist, the robot and the logo fill the upper two thirds of the frame, the bottom third is the lab bench and floor. Photorealistic, high contrast, vertical composition, no letters, no watermarks. It must look like an unedited real photo from a news agency, not a painting, not digital art, no glow effects.",
+        "refs": [
+          "assets/logos/openai.png"
+        ]
+      },
+      "pos": "center 25%",
+      "badges": [
+        {
+          "url": "assets/logos/openai.png",
+          "shape": "free"
+        }
+      ]
+    },
+    {
+      "kind": "card",
+      "heading": "Same brain, *different rules*",
+      "paras": [
+        "OpenAI released GPT-Rosalind-6 on October 30, a reasoning model for biology, drug discovery and translational medicine.",
+        "It uses the same weights as GPT-6 Astra with no extra training. What changes is who can use it and what it will answer."
+      ],
+      "image": {
+        "url": "https://www.i-scoop.eu/wp-content/uploads/2026/10/rosalind-same-weights.webp",
+        "credit": "i-SCOOP",
+        "fit": "contain",
+        "fallback_urls": [
+          "https://cdn.labmanager.com/assets/image/56470/openai-launches-gpt-rosalind-to-streamline-research-workflows-l.jpg"
+        ]
+      }
+    },
+    {
+      "kind": "card",
+      "heading": "Big jumps on *biology tests*",
+      "paras": [
+        "On drug chemistry tasks it scored 49.6 percent, up from 28.9 percent for GPT-Rosalind-5.5. On gene tasks, 37.7 percent versus 16.7.",
+        {
+          "t": "These are OpenAI's own tests, not checked by outsiders yet.",
+          "strong": true
+        }
+      ],
+      "image": {
+        "url": "https://www.i-scoop.eu/wp-content/uploads/2026/10/rosalind-benchmarks-en.webp",
+        "credit": "i-SCOOP, data from OpenAI",
+        "fit": "contain",
+        "fallback_urls": [
+          "https://www.i-scoop.eu/wp-content/uploads/2026/10/rosalind-timeline-2026.webp"
+        ]
+      }
+    },
+    {
+      "kind": "card",
+      "heading": "Rated *High* for bio risk",
+      "paras": [
+        "OpenAI rates the model High for biological and chemical risk, one step below Critical. None of its four Critical level tests hit the line.",
+        "It answers more dual-use research questions, but still refuses help with biological weapons."
+      ],
+      "image": {
+        "url": "https://cdn.labmanager.com/assets/image/56470/openai-launches-gpt-rosalind-to-streamline-research-workflows-l.jpg",
+        "credit": "BlackJack3D / iStock via Lab Manager",
+        "fallback_urls": [
+          "https://cdn.labmanager.com/assets/image/56470/openai-launches-gpt-rosalind-to-streamline-research-workflows-m.jpg"
+        ]
+      }
+    },
+    {
+      "kind": "card",
+      "heading": "Who gets *the keys*",
+      "paras": [
+        "Only approved scientists, institutes, companies and government partners get in. OpenAI checks each use case and security setup.",
+        "Humans must review outputs before they guide experiments, and OpenAI can revoke access at any time."
+      ],
+      "image": {
+        "url": "https://static.wixstatic.com/media/c5719c_15911d49c3c848e9a5a036195db8669b~mv2.jpg/v1/fill/w_1000,h_563,al_c,q_85,usm_0.66_1.00_0.01/c5719c_15911d49c3c848e9a5a036195db8669b~mv2.jpg",
+        "credit": "Data Studios",
+        "fallback_urls": [
+          "https://www.i-scoop.eu/wp-content/uploads/2026/10/rosalind-timeline-2026.webp"
+        ]
+      }
+    },
+    {
+      "kind": "cta",
+      "hook": "OpenAI is now deciding who gets its strongest science AI. Follow so you know who gets in next."
+    }
+  ],
+  "site_article": {
+    "headline": "OpenAI releases GPT-Rosalind-6 for biology research, limited to approved organizations",
+    "dek": "The life sciences model runs on GPT-6 Astra's weights and posts large gains on OpenAI's internal tests, but only vetted labs, companies and government partners can use it.",
+    "summary": "OpenAI published a system card addendum for GPT-Rosalind-6 on October 30, 2026, describing a reasoning model for biology, drug discovery and translational medicine. The company rates it High for biological and chemical risk and offers it only through a trusted access program.",
+    "seo_title": "OpenAI GPT-Rosalind-6: biology AI for approved labs only",
+    "seo_description": "OpenAI's GPT-Rosalind-6 uses GPT-6 Astra's weights, nearly doubles some biology scores and is open only to vetted organizations.",
+    "answer_summary": "GPT-Rosalind-6 is OpenAI's newest model for biology and drug discovery. It is not available in ChatGPT or the general API; only organizations approved through OpenAI's trusted access program can use it.",
+    "tags": [
+      "OpenAI",
+      "GPT-Rosalind",
+      "GPT-6 Astra",
+      "Drug discovery",
+      "AI safety"
+    ],
+    "hero_alt": "A scientist in a lab coat stands at a locked glass door with a robot holding a test tube behind it.",
+    "paragraphs": [
+      {
+        "kind": "fact",
+        "text": "OpenAI released GPT-Rosalind-6 on October 30, 2026, publishing a system card addendum that describes it as a frontier reasoning model for biology, drug discovery and translational medicine. It is the newest model in the GPT-Rosalind line, which OpenAI introduced in April 2026, and it follows GPT-Rosalind-5.5.",
+        "sources": [
+          0,
+          2
+        ]
+      },
+      {
+        "kind": "fact",
+        "text": "According to OpenAI, the model uses the same weights as GPT-6 Astra and received no additional training or post-training for this release. The differences are in how it is deployed: who is allowed to use it, and where the line sits between questions it answers and questions it refuses. Its API identifier is gpt-6-rosalind.",
+        "sources": [
+          0,
+          1,
+          2
+        ]
+      },
+      {
+        "kind": "heading",
+        "text": "Gains on OpenAI's internal benchmarks"
+      },
+      {
+        "kind": "fact",
+        "text": "OpenAI reported clear gains over GPT-Rosalind-5.5 at the highest reasoning setting it tested. On MedChemBench v7, a set of 99 medicinal chemistry problems, the new model scored 49.6 percent against 28.9 percent. On GeneBench Pro v13, with 129 problems scored on a single attempt, it reached 37.7 percent against 16.7 percent. On LifeSciBench Gold, with 94 problems, it scored 61.3 percent against 44.0 percent.",
+        "sources": [
+          0,
+          1,
+          3
+        ]
+      },
+      {
+        "kind": "fact",
+        "text": "All of those figures come from OpenAI. Data Studios noted that the problem sets are small and that no independent evaluation had been published at the time of its report, and i-SCOOP likewise said the results had not been reproduced by outside groups.",
+        "sources": [
+          1,
+          2
+        ]
+      },
+      {
+        "kind": "heading",
+        "text": "Risk ratings and safeguards"
+      },
+      {
+        "kind": "fact",
+        "text": "Under its Preparedness Framework, OpenAI rates GPT-Rosalind-6 High for biological and chemical capability, below the Critical level. The company said none of its four Critical level biological design evaluations met their indicative thresholds. On a biorisk knowledge evaluation the model scored 78.3 percent, slightly below GPT-Rosalind-5.5 at 79.2 percent. The model keeps the Critical cybersecurity rating assessed for GPT-6 Astra, with a more conservative refusal boundary for cyber requests.",
+        "sources": [
+          0,
+          1
+        ]
+      },
+      {
+        "kind": "fact",
+        "text": "OpenAI said the model is meant to answer more legitimate dual-use research questions than its general access models while still refusing requests that would enable severe biological weaponization. The company keeps its biological safety training separate from its classifier training to reduce correlated failures, monitors use, and can restrict or revoke access. It also said biosecurity red teaming carried out on GPT-Rosalind-5.5 was being repeated for the new version.",
+        "sources": [
+          0,
+          3
+        ]
+      },
+      {
+        "kind": "heading",
+        "text": "Who can use it"
+      },
+      {
+        "kind": "fact",
+        "text": "Access is limited to approved scientists, research institutes, companies and government partners. OpenAI said it reviews each applicant's use case, security controls and governance. Non-government applicants go through business verification and compliance screening, while government applicants use a separate pathway covering biosecurity, biosafety, public health preparedness and biodefense. Data Studios reported that ChatGPT subscribers and general API developers cannot use the model.",
+        "sources": [
+          0,
+          1,
+          3
+        ]
+      },
+      {
+        "kind": "fact",
+        "text": "Approved enterprise customers must apply least privilege access controls and have qualified people review outputs before those outputs inform experiments, publications or decisions. i-SCOOP reported that no official price for gpt-6-rosalind had been published as of October 31, while earlier Rosalind research models were listed at $5 per million input tokens and $25 per million output tokens.",
+        "sources": [
+          0,
+          2
+        ]
+      },
+      {
+        "kind": "analysis",
+        "text": "The release shows OpenAI treating access itself as a safety tool. Because the weights are identical to GPT-6 Astra, the main thing separating the two products is a vetting process and a different refusal policy. That makes the strength of OpenAI's screening and monitoring as important as the model's test scores, and it leaves the company deciding which organizations get its most capable biology tools."
+      },
+      {
+        "kind": "why_it_matters",
+        "text": "The next signal to watch is independent evaluation: whether outside labs or approved customers publish results that confirm OpenAI's reported gains on medicinal chemistry and genetics tasks, and whether OpenAI publishes official pricing for the model."
+      }
+    ]
+  }
+}

@@ -1,139 +1,5 @@
 [
   {
-    "run_at": "2026-10-25T06:13:39.832Z",
-    "summary": "2 a.m. New York run (Sunday, Oct 25): no open links or requests; queued the Grok vs GPT forced-choice midterm test (priority 2, sensitive politics, needs Mahir's approval).",
-    "considered": [
-      {
-        "story": "Forced to pick, Grok chooses Republicans 92% and OpenAI's GPT-6.1 Sol chooses Democrats 97% in a midterm test",
-        "source": "https://techcrunch.com/2026/10/24/forced-to-pick-groks-ai-model-chooses-republicans-openais-picks-democrats/",
-        "decision": "queued",
-        "job_id": "2026-10-25-grok-republicans-gpt-democrats-ballot-test",
-        "priority": 2
-      },
-      {
-        "story": "Anthropic pitches Congress its own AI safety bill (Mashable)",
-        "decision": "covered",
-        "reason": "Already covered as 2026-10-17-anthropic-pitches-own-ai-safety-bill; this is a late re-report."
-      },
-      {
-        "story": "Cloudflare CEO warns AI-found bugs will trigger more outages (Reuters)",
-        "source": "https://www.internazionale.it/ultime-notizie-reuters/2026/10/23/ai-discovered-bugs-may-soon-trigger-fresh-disruptions-cyber-experts-say",
-        "decision": "skipped",
-        "reason": "Reported October 23, so it is too old for a news post now."
-      },
-      {
-        "story": "Pennsylvania will require labels on AI-generated ads (The Verge)",
-        "decision": "skipped",
-        "reason": "The Verge article could not be opened from here and no second source confirming the final law was found."
-      },
-      {
-        "story": "Two Claude Code engineers leave Anthropic weeks before its IPO (OfficeChai)",
-        "decision": "skipped",
-        "reason": "Still only one source, which could not be opened, so the facts could not be confirmed."
-      },
-      {
-        "story": "63% of US voters oppose a data center within 10 miles (CNBC)",
-        "decision": "skipped",
-        "reason": "Midterm politics poll with no second source read, and today already has one politics post."
-      },
-      {
-        "story": "UMG licenses its music to AI firm Tyger",
-        "decision": "skipped",
-        "reason": "Reported October 23, too old now."
-      },
-      {
-        "story": "Eko's AI stethoscope cleared by the FDA",
-        "decision": "skipped",
-        "reason": "Niche medical device story with limited consumer appeal."
-      },
-      {
-        "story": "Texas sues OpenAI and Sam Altman over ChatGPT and minors",
-        "decision": "covered",
-        "reason": "Already queued as 2026-10-25-texas-sues-openai-block-chatgpt-kids."
-      },
-      {
-        "story": "OpenAI built a fake internet for its agents (Gizmodo)",
-        "decision": "covered",
-        "reason": "Same story as 2026-10-23-openai-trains-ai-with-no-internet."
-      }
-    ],
-    "requests": []
-  },
-  {
-    "run_at": "2026-10-25T08:23:42.067Z",
-    "summary": "Early Sunday run (03:50 New York): no open links or requests; queued 1 story (Claude Code's Thariq Shihipar leaves Anthropic), today now has 3 jobs.",
-    "considered": [
-      {
-        "story": "Claude Code engineer Thariq Shihipar leaves Anthropic",
-        "source": "https://www.tokenpost.com/news/people/40214",
-        "decision": "queued",
-        "job_id": "2026-10-25-claude-code-explainer-thariq-leaves-anthropic",
-        "priority": 2
-      },
-      {
-        "story": "Replit moved most AI spend from Anthropic to OpenAI after a 30%+ discount (The Information)",
-        "source": "https://www.techmeme.com/261024/p8",
-        "decision": "covered",
-        "reason": "Same story as 2026-10-17-replit-drops-anthropic-for-openai; only a new detail from a paywalled report."
-      },
-      {
-        "story": "Gemini in Google Maps arrives on Apple CarPlay",
-        "source": "https://www.phocuswire.com/news/technology/google-launches-gemini-google-maps-carplay",
-        "decision": "skipped",
-        "reason": "Announced October 21, four days old; possible filler later if the day is short."
-      },
-      {
-        "story": "Pichai responds to Altman's 'fend Google off' remark",
-        "decision": "skipped",
-        "reason": "Only a Times of India aggregator link; could not find or read the original interview this run."
-      },
-      {
-        "story": "Poll: 63% of US voters oppose a data center within 10 miles (CNBC)",
-        "source": "https://www.cnbc.com/2026/10/24/trump-ai-data-centers-voter-backlash-midterms.html",
-        "decision": "skipped",
-        "reason": "Could not open the CNBC article from here; midterm politics angle, revisit in a later run."
-      },
-      {
-        "story": "Claude's reverse engineering for game ports may have been nerfed (Kotaku)",
-        "decision": "skipped",
-        "reason": "Unconfirmed claim and close to the earlier game decompiling Reel of October 14."
-      },
-      {
-        "story": "Elvis rights holders sue Anthropic",
-        "decision": "covered",
-        "reason": "Already queued as 2026-10-24-elvis-rights-holders-sue-anthropic."
-      },
-      {
-        "story": "OpenAI keeps frontier models off the internet in training",
-        "decision": "covered",
-        "reason": "Already queued as 2026-10-23-openai-trains-ai-with-no-internet."
-      },
-      {
-        "story": "Sweden's government blocks ChatGPT and Claude",
-        "decision": "covered",
-        "reason": "Already queued as 2026-10-24-sweden-blocks-chatgpt-claude."
-      },
-      {
-        "story": "Texas sues OpenAI over ChatGPT and kids",
-        "decision": "covered",
-        "reason": "Already queued as 2026-10-25-texas-sues-openai-block-chatgpt-kids."
-      },
-      {
-        "story": "Block's new voice model sounds eerily human (TechCrunch)",
-        "source": "https://techcrunch.com/2026/10/24/blocks-new-voice-model-sounds-eerily-human/",
-        "decision": "skipped",
-        "reason": "Not opened this run; candidate for the next run."
-      },
-      {
-        "story": "Apollo economist: no signs of AI payoff outside tech",
-        "source": "https://www.apollo.com/wealth/insights-news/insights/daily-spark/no-signs-of-ai-payoff-outside-the-tech-sector",
-        "decision": "skipped",
-        "reason": "Market commentary, little broad US interest on its own."
-      }
-    ],
-    "requests": []
-  },
-  {
     "run_at": "2026-10-25T10:22:13.998Z",
     "summary": "Sunday 06:00 New York run: no open links or requests; queued 2 non-timely stories (Claude Mythos trademark refusal, Into the Unknown AI science benchmark), today now has 5 jobs. Both use real photos because today already has 2 generated covers.",
     "considered": [
@@ -5471,6 +5337,71 @@
         "source": "https://www.wired.com/story/metas-muse-could-upend-all-kinds-of-businesses-it-hasnt-yet/",
         "decision": "skipped",
         "reason": "Opinion feature with no new news event."
+      }
+    ],
+    "requests": []
+  },
+  {
+    "run_at": "2026-11-01T09:13:35.333Z",
+    "summary": "Early Sunday run (04:00 New York, Nov 1): made Mahir's Tesla Cybercab Halloween link into a Reel (review) and queued OpenAI's GPT-Rosalind-6 biology model (p1), so Nov 1 has 5 news jobs plus the Reel.",
+    "considered": [
+      {
+        "story": "Mahir's link: Tesla sends a driverless Cybercab with skeletons around Austin for Halloween",
+        "source": "https://x.com/robotaxi/status/2116398208725483797",
+        "decision": "queued",
+        "job_id": "2026-11-01-tesla-cybercab-halloween-skeletons-reel",
+        "priority": 1
+      },
+      {
+        "story": "OpenAI releases GPT-Rosalind-6 biology model for approved organizations only",
+        "source": "https://deploymentsafety.openai.com/gpt-rosalind-6",
+        "decision": "queued",
+        "job_id": "2026-11-01-openai-gpt-rosalind-6-approved-labs-only",
+        "priority": 1
+      },
+      {
+        "story": "Apple puts Alibaba's Qwen inside Apple Intelligence for China (CGTN)",
+        "decision": "covered",
+        "reason": "Already covered as 2026-10-15-apple-intelligence-china-december."
+      },
+      {
+        "story": "Volta infostealer uses Claude, Kimi and Gemini to rank victims by payout (Cisco Talos, WIRED)",
+        "source": "https://blog.talosintelligence.com/appraisal-by-ai-model-driven-victim-prioritization-in-the-volta-infostealer/",
+        "decision": "skipped",
+        "reason": "Neither the Talos post nor the WIRED story could be opened from here, so the facts could not be read."
+      },
+      {
+        "story": "Shared ChatGPT link flaw could hijack accounts (The Hacker News, parameter.ai)",
+        "source": "https://thehackernews.com/2026/10/a-shared-chatgpt-link-could-run.html",
+        "decision": "skipped",
+        "reason": "Skipped in the last run for lack of coverage; still no OpenAI response found."
+      },
+      {
+        "story": "Apple passes Nvidia at $5.03 trillion as chip stocks slide (FourWeekMBA)",
+        "source": "https://fourweekmba.com/ai-apple-passes-nvidia-at-5-03-trillion-as-chip-stocks-slide/",
+        "decision": "skipped",
+        "reason": "The two have swapped the top spot several times this year, and only one secondary source was found."
+      },
+      {
+        "story": "Grok 4.20 stuck 700 turns in Red's house in Pokemon Red (r/LocalLLaMA)",
+        "source": "https://www.reddit.com/r/LocalLLaMA/comments/1xkr521/grok_420_spent_700_turns_stuck_in_reds_house_in/",
+        "decision": "skipped",
+        "reason": "Single Reddit benchmark post with no independent coverage."
+      },
+      {
+        "story": "Sam Altman meets Samsung executives on Stargate memory supply",
+        "decision": "skipped",
+        "reason": "Already skipped twice on Oct 31 as too close to the Altman RAM post."
+      },
+      {
+        "story": "GPT-5.6 Sol beats Factorio on peaceful mode (personal blog)",
+        "decision": "skipped",
+        "reason": "Already looked at and skipped in earlier runs."
+      },
+      {
+        "story": "Anthropic flags a PhD student for training a competitor (X post)",
+        "decision": "skipped",
+        "reason": "Single X post, already skipped in earlier runs."
       }
     ],
     "requests": []
