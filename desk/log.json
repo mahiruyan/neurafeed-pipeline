@@ -1,86 +1,5 @@
 [
   {
-    "run_at": "2026-10-25T10:22:13.998Z",
-    "summary": "Sunday 06:00 New York run: no open links or requests; queued 2 non-timely stories (Claude Mythos trademark refusal, Into the Unknown AI science benchmark), today now has 5 jobs. Both use real photos because today already has 2 generated covers.",
-    "considered": [
-      {
-        "story": "USPTO issues initial refusals of Anthropic's CLAUDE MYTHOS trademark applications",
-        "source": "https://www.gerbenlaw.com/blog/anthropics-claude-mythos-trademark-application-denied-by-uspto/",
-        "decision": "queued",
-        "job_id": "2026-10-25-uspto-refuses-claude-mythos-trademark",
-        "priority": 2
-      },
-      {
-        "story": "Into the Unknown: 114 of 135 AI-written science papers fail the integrity check, none meet national lab scientists' conditions",
-        "source": "https://arxiv.org/abs/2610.19159",
-        "decision": "queued",
-        "job_id": "2026-10-25-ai-agents-135-science-papers-114-fail",
-        "priority": 2
-      },
-      {
-        "story": "Gemini 4 Argon optimized Google's 200K-line ADK codebase in an overnight run (InfoQ)",
-        "source": "https://www.infoq.com/news/2026/10/google-argon-optimizes-adk/",
-        "decision": "skipped",
-        "reason": "Google's original post is from mid October; InfoQ is a late recap, so it is too old for news."
-      },
-      {
-        "story": "All the AI agents that can live in your text messages (TechCrunch)",
-        "source": "https://techcrunch.com/2026/10/24/all-the-ai-agents-that-can-live-in-your-text-messages/",
-        "decision": "skipped",
-        "reason": "A running list TechCrunch republishes every few weeks, and the article could not be opened from here."
-      },
-      {
-        "story": "Data center electricians earn big pay premiums",
-        "source": "https://letsdatascience.com/news/ai-data-center-boom-raises-electrician-pay-d83d97c5",
-        "decision": "skipped",
-        "reason": "The underlying Indeed data is from July, not new."
-      },
-      {
-        "story": "US presses allies to pick between US and China AI blocs (AP)",
-        "source": "https://www.clickorlando.com/business/2026/10/25/as-the-us-and-china-form-ai-blocs-countries-are-increasingly-torn-between-them/",
-        "decision": "skipped",
-        "reason": "Geopolitics explainer with no single news event, and today already has a politics post."
-      },
-      {
-        "story": "Futurism investigation into Character.AI bots",
-        "decision": "skipped",
-        "reason": "Sensitive content involving minors, could not open the article to confirm details."
-      },
-      {
-        "story": "Nvidia's role as AI financier tested as neoclouds slide (CNBC)",
-        "source": "https://www.cnbc.com/2026/10/24/nvidias-role-as-ai-financier-faces-first-big-test-as-neoclouds-take-market-hit.html",
-        "decision": "skipped",
-        "reason": "CNBC article could not be opened from here and no second source was read."
-      },
-      {
-        "story": "Claude Duet agent launch",
-        "decision": "covered",
-        "reason": "Already covered as 2026-10-21-claude-duet-works-while-you-sleep."
-      },
-      {
-        "story": "Google DeepMind staff resign over military deals",
-        "decision": "covered",
-        "reason": "Already covered as 2026-10-21-google-deepmind-staff-quit-pentagon."
-      },
-      {
-        "story": "Elvis rights holders sue Anthropic",
-        "decision": "covered",
-        "reason": "Already covered as 2026-10-24-elvis-rights-holders-sue-anthropic."
-      },
-      {
-        "story": "OpenAI keeps frontier models off the internet in training",
-        "decision": "covered",
-        "reason": "Already covered as 2026-10-23-openai-trains-ai-with-no-internet."
-      },
-      {
-        "story": "Replit moves most AI spend from Anthropic to OpenAI",
-        "decision": "covered",
-        "reason": "Same story as 2026-10-17-replit-drops-anthropic-for-openai."
-      }
-    ],
-    "requests": []
-  },
-  {
     "run_at": "2026-10-25T12:24:06.620Z",
     "summary": "Sunday 08:00 New York run: no open links or requests; queued 1 non-timely story (Block's Dessa voice model, review), today now has 6 jobs with 2 slots kept for the utility post and the Sunday roundup.",
     "considered": [
@@ -5397,6 +5316,63 @@
         "story": "GPT-5.6 Sol beats Factorio on peaceful mode (personal blog)",
         "decision": "skipped",
         "reason": "Already looked at and skipped in earlier runs."
+      },
+      {
+        "story": "Anthropic flags a PhD student for training a competitor (X post)",
+        "decision": "skipped",
+        "reason": "Single X post, already skipped in earlier runs."
+      }
+    ],
+    "requests": []
+  },
+  {
+    "run_at": "2026-11-01T10:54:53.975Z",
+    "summary": "Early Sunday run (05:55 New York, Nov 1): no open links or requests (the four old links are already in inbox/skipped.json); nothing new worth queuing, and Nov 1 already has 6 jobs with the utility post and the Sunday roundup still to come, so nothing was queued.",
+    "considered": [
+      {
+        "story": "Copilot cites an error-prone AI voter guide most of the time (Washington Post)",
+        "decision": "skipped",
+        "reason": "Political story from October 30 that would need review, and the slots left today are held for the utility post and the weekly roundup."
+      },
+      {
+        "story": "Microsoft and AFT school AI standard takes effect, bans training on student data (Nemko)",
+        "decision": "skipped",
+        "reason": "Only one secondary source found and little mainstream US interest."
+      },
+      {
+        "story": "Hermantown approves a 1.7 million square foot Google data center (MPR News)",
+        "decision": "skipped",
+        "reason": "Local zoning vote with little national interest."
+      },
+      {
+        "story": "Judge lets NAACP sue xAI over Memphis gas turbines (TechCrunch)",
+        "decision": "skipped",
+        "reason": "Procedural ruling, skipped in earlier runs for the same reason."
+      },
+      {
+        "story": "Moonshot closes Kimi K2 models to new users",
+        "decision": "skipped",
+        "reason": "Niche developer platform change with little US consumer interest."
+      },
+      {
+        "story": "Apple puts Alibaba's Qwen inside Apple Intelligence for China (CGTN)",
+        "decision": "covered",
+        "reason": "Already covered as 2026-10-15-apple-intelligence-china-december."
+      },
+      {
+        "story": "Apple CEO says Apple won't ship AI for AI's sake (TechCrunch)",
+        "decision": "covered",
+        "reason": "Already queued as 2026-11-01-ternus-apple-no-ai-for-ais-sake."
+      },
+      {
+        "story": "Shared ChatGPT link flaw could hijack accounts (The Hacker News, parameter.ai)",
+        "decision": "skipped",
+        "reason": "Still no OpenAI response or wider coverage, as in earlier runs."
+      },
+      {
+        "story": "GPT-5.6 Sol beats Factorio on peaceful mode (personal blog)",
+        "decision": "skipped",
+        "reason": "Still only a personal blog post with no news coverage."
       },
       {
         "story": "Anthropic flags a PhD student for training a competitor (X post)",
