@@ -1,0 +1,89 @@
+{
+  "id": "2026-11-01-chainalysis-hacked-ai-agents",
+  "created_at": "2026-11-01T06:10:00Z",
+  "story_time": "2026-10-31T14:18:00Z",
+  "timely": false,
+  "sensitive": false,
+  "priority": 2,
+  "review": true,
+  "format": "carousel",
+  "site_category": "companies",
+  "sources": [
+    { "name": "CoinPaprika", "url": "https://coinpaprika.com/news/hacker-turned-ai-agents-chainalysis-cryptos" },
+    { "name": "The Currency Analytics", "url": "https://thecurrencyanalytics.com/technology/chainalysis-ai-agent-breach-client-data-307086" }
+  ],
+  "threads_text": "Chainalysis, the firm that tracks crypto thieves for banks and governments, says an attacker used AI agents to get into its systems and grab customer names and emails. If the people who hunt hackers can get hit this way, nobody is off the list. Are AI agents about to make every company easier to hack?",
+  "caption": "Chainalysis, the blockchain analytics firm that tracks crypto thieves, says an attacker used \"offensive agentic techniques\" to get into its systems.\nUser IDs, names, emails and role labels were exposed. The company says case files, passwords and login codes show no sign of access.\nIt says the breach has nothing to do with the $6.3 billion Binance theft.\n\nAre AI agents becoming the hacker's favorite tool?\n\nFollow @neurafeed.ai for daily AI news.\n\nSource: CoinPaprika · Photo: CoinPaprika",
+  "slides": [
+    {
+      "kind": "cover",
+      "headline": "The company that hunts crypto hackers just got hacked *with AI agents*",
+      "image": {
+        "url": "https://api-content.coinpaprika.com/api/files/news/scj5ypegn9sub41/hacker_turned_ai_agents_chainalysis_cover_6bh9j0sflx.jpg",
+        "credit": "CoinPaprika",
+        "fallback_urls": [],
+        "generate": "A scuffed gray humanoid robot crouches in a dim, cluttered server room at night, pulling a thick bundle of network cables out of an open server rack, its head turned toward the camera as if caught in the act. Blinking status lights, tangled cables on the floor, an empty office chair and cold coffee cups nearby, harsh fluorescent light from one flickering tube. On the dirty wall behind the rack, the logo from the first image, big and exact. Blank surfaces, no readable text or labels on any object apart from the logo. Generous headroom above the robot's head. The robot and the rack fill the upper two thirds of the frame, the bottom third is dark floor. Photorealistic, high contrast, vertical composition, one clear subject, no letters, no watermarks. It must look like an unedited real photo from a news agency, not a painting, not digital art, no glow effects.",
+        "refs": ["https://companieslogo.com/img/orig/chainalysis_BIG-ae0d287e.png?t=1720244494"]
+      },
+      "pos": "center 35%",
+      "badges": [
+        { "url": "https://companieslogo.com/img/orig/chainalysis-6e67648b.png?t=1720244494", "fit": "contain" }
+      ]
+    },
+    {
+      "kind": "card",
+      "heading": "What the attacker *got*",
+      "paras": [
+        "Chainalysis says an outside attacker used \"offensive agentic techniques\" to get into its systems and internal tools.",
+        "Exposed: user IDs, full names, emails and role labels. Case files, passwords and login codes show no sign of access."
+      ],
+      "image": {
+        "url": "https://thecurrencyanalytics.com/wp-content/uploads/2026/10/article-1673.webp",
+        "credit": "The Currency Analytics",
+        "fallback_urls": []
+      }
+    },
+    {
+      "kind": "card",
+      "heading": "AI on *both sides*",
+      "paras": [
+        "The firm works for banks, exchanges and government agencies. It has not said how the AI agents worked or how much a human steered them.",
+        { "t": "Now it is using AI models to hunt for its own weak spots.", "strong": true }
+      ],
+      "image": {
+        "url": "https://companieslogo.com/img/orig/chainalysis_BIG-ae0d287e.png?t=1720244494",
+        "credit": "Chainalysis",
+        "fit": "contain",
+        "fallback_urls": []
+      }
+    },
+    {
+      "kind": "cta",
+      "hook": "Follow to find out how the AI agents got in when Chainalysis finishes its review."
+    }
+  ],
+  "site_article": {
+    "headline": "Chainalysis says an attacker used AI agents to breach its systems and expose customer contact data",
+    "dek": "The blockchain analytics firm says names, emails and role labels were taken, but it found no sign that case files, passwords or login codes were accessed.",
+    "summary": "Chainalysis has disclosed that an outside attacker used what it called offensive agentic techniques to gain unauthorized access to its systems and internal tools. User IDs, full names, email addresses and organization role labels were exposed, according to the company.",
+    "seo_title": "Chainalysis breach: attacker used AI agents, customer data exposed",
+    "seo_description": "Chainalysis says an attacker used offensive agentic techniques to breach its systems, exposing user IDs, names, emails and role labels.",
+    "answer_summary": "Chainalysis says an external attacker used AI agent techniques to get into its systems and internal tools, exposing user IDs, names, emails and role labels. The company says it found no evidence that investigation files, passwords, MFA secrets or session tokens were accessed.",
+    "tags": ["Chainalysis", "AI agents", "Cybersecurity", "Crypto", "Data breach"],
+    "hero_alt": "A robot pulling cables from a server rack in a dim server room, with the Chainalysis logo on the wall.",
+    "paragraphs": [
+      { "kind": "fact", "text": "Chainalysis, the blockchain analytics company whose investigation software is used by government agencies and businesses, has disclosed a security breach that it attributes to an attacker using offensive agentic techniques. In a security incident statement dated October 30, 2026, the company said an external actor gained unauthorized access to its systems and internal tools, CoinPaprika reported.", "sources": [0] },
+      { "kind": "fact", "text": "The Currency Analytics, which reported on October 31, 2026, that customers were told by email, described Chainalysis as a firm that serves more than 100 banks, exchanges and government agencies, many of which rely on it to trace stolen crypto.", "sources": [1] },
+      { "kind": "heading", "text": "What was exposed" },
+      { "kind": "fact", "text": "According to the company's statement as reported by both outlets, the exposed information covered user IDs, full names, email addresses and organization role labels for people provisioned on the Chainalysis platform. Chainalysis classified that information as non-sensitive customer data.", "sources": [0, 1] },
+      { "kind": "fact", "text": "The company said it found no evidence that investigation content was accessed, including graphs, notes and cases, or transaction and query results. It also said there was no sign of access to clear-text passwords, multi-factor authentication secrets or user session tokens.", "sources": [0, 1] },
+      { "kind": "heading", "text": "Few details on the AI side" },
+      { "kind": "fact", "text": "Chainalysis has not described the specific methods the attacker used, CoinPaprika noted. The Currency Analytics reported that the company has not said how much the AI agents acted on their own and how much they acted under human direction. CoinPaprika said the company framed the breach as one example of a wider rise in AI-powered attacks across the industry.", "sources": [0, 1] },
+      { "kind": "fact", "text": "In response, Chainalysis said it brought in outside cybersecurity experts and is using large language models to review the security of its platform and look for weak spots in its infrastructure. It said it has notified affected customers, some of whom had been contacted earlier, and that its review with outside experts is still underway.", "sources": [0, 1] },
+      { "kind": "fact", "text": "The company asked customers to watch for unexpected password reset requests and authentication prompts, according to CoinPaprika. Chainalysis also said the incident is unrelated to the recent theft of about $6.3 billion from the Binance exchange.", "sources": [0, 1] },
+      { "kind": "fact", "text": "The Currency Analytics pointed to an earlier case in the crypto industry: in 2020, the wallet maker Ledger reported that about 1 million customer email addresses had been exposed.", "sources": [1] },
+      { "kind": "analysis", "text": "In NeuraFeed's reading, the stolen fields matter more than the label non-sensitive suggests. A list of names, work emails and job roles at banks, exchanges and government agencies that investigate crypto crime is the raw material for targeted phishing, which is why the company's warning about unexpected password resets is the practical takeaway for its users. The case also shows AI tools now sitting on both sides of the same incident, used to break in and then to audit the damage." },
+      { "kind": "why_it_matters", "text": "The detail to watch is whether Chainalysis publishes how the agentic techniques were used once its review with outside experts is complete, since that would be one of the first detailed public accounts of an AI agent driven breach at a security focused company." }
+    ]
+  }
+}
