@@ -20,9 +20,14 @@
       "status": "publish_failed",
       "at": "2026-11-01T16:01:03.046Z",
       "by": "system"
+    },
+    {
+      "status": "posted",
+      "at": "2026-11-01T16:16:57.066Z",
+      "by": "system"
     }
   ],
-  "status": "publish_failed",
+  "status": "posted",
   "files": [
     "out/2026-11-01-claude-sonnet-mouse-brain-gene-therapy/1.jpg",
     "out/2026-11-01-claude-sonnet-mouse-brain-gene-therapy/2.jpg",
@@ -35,7 +40,7 @@
     "slide 1: fal image: \"User is locked. Reason: TOP_UP.\"",
     "slide 1 badge 1: logo check skipped (fal vision: \"User is locked. Reason: TOP_UP.\")"
   ],
-  "updated_at": "2026-11-01T16:01:03.046Z",
+  "updated_at": "2026-11-01T16:16:57.066Z",
   "sent_at": "2026-11-01T04:14:55.250Z",
   "message_id": 2186,
   "by": "night rule: evergreen",
@@ -49,5 +54,18 @@
     2186
   ],
   "error": "Instagram 17841477983419365/media_publish: Media ID is not available",
-  "attempts": 1
+  "attempts": 1,
+  "posted_at": "2026-11-01T16:16:57.066Z",
+  "publish": {
+    "mode": "instagram",
+    "media_id": "17925604755441403",
+    "facebook": {
+      "id": "876414312221880_122148167949099381",
+      "type": "album"
+    },
+    "threads": {
+      "id": "18123243739912034",
+      "type": "carousel"
+    }
+  }
 }
