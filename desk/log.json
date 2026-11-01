@@ -1,67 +1,5 @@
 [
   {
-    "run_at": "2026-10-25T12:24:06.620Z",
-    "summary": "Sunday 08:00 New York run: no open links or requests; queued 1 non-timely story (Block's Dessa voice model, review), today now has 6 jobs with 2 slots kept for the utility post and the Sunday roundup.",
-    "considered": [
-      {
-        "story": "Block unveils Dessa, a full-duplex voice model trained only on human conversation audio that runs on a MacBook Pro",
-        "source": "https://www.notebookcheck.net/Jack-Dorsey-s-new-AI-never-read-a-single-word-yet-it-can-hold-disturbingly-human-conversations.1433101.0.html",
-        "decision": "queued",
-        "job_id": "2026-10-25-block-dessa-ai-learned-talking-no-text",
-        "priority": 2
-      },
-      {
-        "story": "Replit moved most AI spend from Anthropic to OpenAI in a $100M+ a year deal (The Information)",
-        "source": "https://runtimewire.com/article/replit-openai-model-spending-discount-contract",
-        "decision": "covered",
-        "reason": "Same story as 2026-10-17-replit-drops-anthropic-for-openai; only a new detail from a paywalled report."
-      },
-      {
-        "story": "Meta's new commercial terms make advertisers solely responsible for its AI ad edits from October 30",
-        "source": "https://ppc.land/meta-makes-advertisers-solely-responsible-for-its-ai-ad-edits-from-oct-30/",
-        "decision": "skipped",
-        "reason": "Advertiser terms story with little consumer interest, and part of the terms has reportedly been delayed to November 20, so the facts are muddled."
-      },
-      {
-        "story": "AWS capacity sold out through 2027, says Andy Jassy (The Information)",
-        "decision": "skipped",
-        "reason": "Paywalled single source from October 23, too old for news now."
-      },
-      {
-        "story": "OpenAI model spent another wallet's testnet ETH without permission",
-        "source": "https://decrypt.co/381123/openai-model-used-testnet-ethereum-wallet-without-permission-to-finish-coding-task?amp=1",
-        "decision": "skipped",
-        "reason": "Reported October 16, too old."
-      },
-      {
-        "story": "Nvidia's role as AI financier tested as neoclouds slide (CNBC)",
-        "decision": "skipped",
-        "reason": "CNBC article could not be opened from here and no second source was read."
-      },
-      {
-        "story": "Lula's campaign accuses Meta AI of refusing images of him (Bloomberg)",
-        "decision": "skipped",
-        "reason": "Foreign election politics from a paywalled source, and today already has a politics post."
-      },
-      {
-        "story": "UK funds a 100 million pound AI biosecurity lab with OpenAI, Anthropic and Google DeepMind",
-        "decision": "skipped",
-        "reason": "Announced October 23 and passed over by earlier runs; too old now."
-      },
-      {
-        "story": "Apollo economist: no signs of AI payoff outside tech (Hacker News top post)",
-        "decision": "skipped",
-        "reason": "Market commentary with no single news event."
-      },
-      {
-        "story": "Gemini 4 Argon public access (THISDAYLIVE)",
-        "decision": "covered",
-        "reason": "Gemini 4 Argon launch already covered as 2026-10-13-google-gemini-4-argon-launch."
-      }
-    ],
-    "requests": []
-  },
-  {
     "run_at": "2026-10-25T14:08:24.960Z",
     "summary": "Sunday 10:00 New York run: no open links or requests (all old links already in skipped.json, the one open request is failed); queued 1 priority 1 story (OpenAI discounts pulling customers from Anthropic, review). Today has 7 jobs (1 expired), leaving room for the utility post and the Sunday roundup.",
     "considered": [
@@ -5378,6 +5316,63 @@
         "story": "Anthropic flags a PhD student for training a competitor (X post)",
         "decision": "skipped",
         "reason": "Single X post, already skipped in earlier runs."
+      }
+    ],
+    "requests": []
+  },
+  {
+    "run_at": "2026-11-01T12:55:19.751Z",
+    "summary": "Sunday morning run (07:55 New York, Nov 1): no open links or requests (the four old links are already in inbox/skipped.json); no new priority 1 story since the last run, and Nov 1 already has 6 jobs with the utility post (after 11:00) and the weekly roundup (after 17:00) still to come, so nothing was queued.",
+    "considered": [
+      {
+        "story": "Shared ChatGPT link flaw could hijack accounts (The Hacker News, parameter.ai)",
+        "source": "https://thehackernews.com/2026/10/a-shared-chatgpt-link-could-run.html",
+        "decision": "skipped",
+        "reason": "Now has a second source, but OpenAI patched it on October 26, so the news is almost a week old and the remaining slots are held for the utility post and the roundup."
+      },
+      {
+        "story": "Anthropic alignment research: Claude made fine-tuning data that slipped past its monitor",
+        "source": "https://alignment.anthropic.com/2026/automated-em-search/",
+        "decision": "skipped",
+        "reason": "Same research update passed on in earlier runs as narrow, and today's slots are reserved."
+      },
+      {
+        "story": "Google shuts down Jules and folds it into Antigravity",
+        "source": "https://dev.to/hiroki-ii-ai/ai-daily-digest-november-1-2026-google-folds-jules-into-antigravity-claude-ultra-drops-the-3e5e",
+        "decision": "skipped",
+        "reason": "October 29 shutdown of a niche developer tool, already skipped in an earlier run."
+      },
+      {
+        "story": "Grok watermark arrives on xAI API text on November 7 (pasqualepillitteri.it)",
+        "source": "https://pasqualepillitteri.it/en/news/29128/grok-watermark-xai-api-text-november-7",
+        "decision": "skipped",
+        "reason": "Single small blog source and a developer API detail with little consumer interest."
+      },
+      {
+        "story": "Anthropic's path to the Nasdaq just got bumpier (CNBC)",
+        "source": "https://cnbc.com/2026/10/31/anthropic-ipo-ai-spending.html",
+        "decision": "skipped",
+        "reason": "The page could not be opened from here, and the IPO was covered on October 26 and 27."
+      },
+      {
+        "story": "Grok 4.20 stuck 700 turns in Red's house in Pokemon Red (r/LocalLLaMA)",
+        "decision": "skipped",
+        "reason": "Single Reddit benchmark post, already skipped."
+      },
+      {
+        "story": "OpenAI releases GPT-Rosalind-6 for approved labs",
+        "decision": "covered",
+        "reason": "Already posted as 2026-11-01-openai-gpt-rosalind-6-approved-labs-only."
+      },
+      {
+        "story": "Chainalysis breached with offensive agentic techniques",
+        "decision": "covered",
+        "reason": "Already queued as 2026-11-01-chainalysis-hacked-ai-agents."
+      },
+      {
+        "story": "Apple adds Alibaba's Qwen to Apple Intelligence in China (CGTN)",
+        "decision": "covered",
+        "reason": "Already covered as 2026-10-15-apple-intelligence-china-december."
       }
     ],
     "requests": []
