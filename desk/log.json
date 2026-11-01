@@ -1,67 +1,5 @@
 [
   {
-    "run_at": "2026-10-25T04:08:20.738Z",
-    "summary": "Midnight New York run (start of Sunday, Oct 25): no open links or requests; queued the Texas lawsuit against OpenAI (priority 1, sensitive, needs Mahir's approval).",
-    "considered": [
-      {
-        "story": "Texas AG Ken Paxton sues OpenAI and Sam Altman, seeks to block minors from ChatGPT",
-        "source": "https://www.texastribune.org/2026/10/23/ken-paxton-chatgpt-openai-lawsuit-texas-attorney-general/",
-        "decision": "queued",
-        "job_id": "2026-10-25-texas-sues-openai-block-chatgpt-kids",
-        "priority": 1
-      },
-      {
-        "story": "Two Claude Code engineers leave Anthropic weeks before its IPO (OfficeChai)",
-        "decision": "skipped",
-        "reason": "Only one source found and it could not be opened, so the facts could not be confirmed."
-      },
-      {
-        "story": "ChatGPT adds real cartoonists' signatures to fake New Yorker cartoons (Nieman Lab)",
-        "source": "https://www.techspot.com/news/114119-chatgpt-accused-plagiarising-artworks-signatures-real-artists-create.html",
-        "decision": "skipped",
-        "reason": "Reported October 7, so it is old news."
-      },
-      {
-        "story": "Gemini comes to Google Maps on Apple CarPlay in the US",
-        "source": "https://www.phocuswire.com/news/technology/google-launches-gemini-google-maps-carplay",
-        "decision": "skipped",
-        "reason": "Launched October 21, four days ago, too old for a news post now."
-      },
-      {
-        "story": "Alpha School AI students miss the 2x growth promise (New York Times)",
-        "decision": "skipped",
-        "reason": "No independent second source found."
-      },
-      {
-        "story": "Meta accused of restricting Lula's content ahead of Brazil runoff (Bloomberg via Techmeme)",
-        "decision": "skipped",
-        "reason": "Politics outside the US with limited appeal for our audience."
-      },
-      {
-        "story": "Apollo's Torsten Slok: no signs of AI payoff outside tech",
-        "source": "https://www.apollo.com/wealth/insights-news/insights/daily-spark/no-signs-of-ai-payoff-outside-the-tech-sector",
-        "decision": "skipped",
-        "reason": "Investor commentary with little consumer appeal."
-      },
-      {
-        "story": "Replit moves most AI spend from Anthropic to OpenAI",
-        "decision": "covered",
-        "reason": "Already covered as 2026-10-17-replit-drops-anthropic-for-openai."
-      },
-      {
-        "story": "Fired OpenAI safety researchers deny leaking, give first interview",
-        "decision": "covered",
-        "reason": "Follow-up to 2026-10-24-openai-fired-researchers-signal-chats."
-      },
-      {
-        "story": "Claude Duet keeps working when your laptop is off",
-        "decision": "covered",
-        "reason": "Already covered as 2026-10-21-claude-duet-works-while-you-sleep."
-      }
-    ],
-    "requests": []
-  },
-  {
     "run_at": "2026-10-25T06:13:39.832Z",
     "summary": "2 a.m. New York run (Sunday, Oct 25): no open links or requests; queued the Grok vs GPT forced-choice midterm test (priority 2, sensitive politics, needs Mahir's approval).",
     "considered": [
@@ -5414,6 +5352,72 @@
         "story": "Nvidia responds to report its CEO was targeted in a Chinese spy plot",
         "decision": "covered",
         "reason": "Already covered by the October 29 NYT Jensen Huang jobs."
+      }
+    ],
+    "requests": []
+  },
+  {
+    "run_at": "2026-11-01T04:12:37.610Z",
+    "summary": "Midnight run (00:30 New York, Nov 1): no open links or requests (the four old links are already in inbox/skipped.json); queued the Claude Sonnet 5 mouse gene therapy story (p2), now confirmed by The Decoder, TokenPost and Startup Fortune, so Nov 1 has 3 jobs.",
+    "considered": [
+      {
+        "story": "Exin Therapeutics says Claude Sonnet 5 chose a gene therapy and ran a mouse brain injection",
+        "source": "https://the-decoder.com/a-claude-model-autonomously-chose-a-gene-therapy-and-operated-on-a-mouse-brain-with-no-human-decision-making/",
+        "decision": "queued",
+        "job_id": "2026-11-01-claude-sonnet-mouse-brain-gene-therapy",
+        "priority": 2
+      },
+      {
+        "story": "WIRED: An AI agent injected drugs into a live mouse's brain",
+        "source": "https://www.wired.com/story/an-ai-agent-did-brain-surgery-on-live-mouse/",
+        "decision": "covered",
+        "reason": "Same Exin story, queued from The Decoder, TokenPost and Startup Fortune because the WIRED page could not be opened from here."
+      },
+      {
+        "story": "Anthropic bans sustained abuse of Claude from November 12 (BigGo, Apiyi)",
+        "source": "https://help.apiyi.com/en/anthropic-bans-abusive-behavior-toward-claude-explained-en.html",
+        "decision": "covered",
+        "reason": "Already covered as 2026-10-14-rude-prompts-chatgpt-claude-rule."
+      },
+      {
+        "story": "OpenAI raises less than half of its $30B target (WSJ)",
+        "source": "https://www.wsj.com/tech/ai/openai-raises-less-than-half-of-30-billion-target-in-latest-round-91aecdc5",
+        "decision": "covered",
+        "reason": "Already queued as 2026-10-31-openai-cuts-funding-target-10-billion."
+      },
+      {
+        "story": "Apple CEO says the company does not want to ship AI for AI's sake (TechCrunch)",
+        "decision": "covered",
+        "reason": "Already queued as 2026-11-01-ternus-apple-no-ai-for-ais-sake."
+      },
+      {
+        "story": "Judge lets NAACP lawsuit over xAI data center pollution move forward (TechCrunch)",
+        "source": "https://techcrunch.com/2026/10/31/judge-allows-naacp-lawsuit-over-xai-data-center-pollution-to-move-forward/",
+        "decision": "skipped",
+        "reason": "Procedural ruling that would need review, and earlier runs found few confirmed details; still a candidate if more outlets add detail."
+      },
+      {
+        "story": "GPT-5.6 Sol can beat Factorio on peaceful mode (Hacker News)",
+        "source": "https://ryanmadden.net/gpt-56-beats-factorio/",
+        "decision": "skipped",
+        "reason": "Still only a personal blog post on Hacker News with no news coverage found."
+      },
+      {
+        "story": "Researchers say they took over ChatGPT accounts (parameter.ai)",
+        "source": "https://www.parameter.ai/labs/we-found-a-gap-at-openai",
+        "decision": "skipped",
+        "reason": "Single security blog post with no OpenAI response or news coverage found."
+      },
+      {
+        "story": "AI infostealer malware that autodoxes victims (WIRED)",
+        "source": "https://www.wired.com/story/kernel-panic-volta-autodoxer-ai-infostealer-malware/",
+        "decision": "skipped",
+        "reason": "Only one source available and the page could not be opened from here."
+      },
+      {
+        "story": "UBS deploys 12,700 employee AI agents (emergent.sh)",
+        "decision": "skipped",
+        "reason": "Small enterprise story from one secondary outlet with little US consumer interest."
       }
     ],
     "requests": []

@@ -1,0 +1,231 @@
+{
+  "id": "2026-11-01-claude-sonnet-mouse-brain-gene-therapy",
+  "created_at": "2026-11-01T04:30:00Z",
+  "story_time": "2026-10-30T21:47:00Z",
+  "timely": false,
+  "sensitive": false,
+  "priority": 2,
+  "review": true,
+  "format": "carousel",
+  "site_category": "models",
+  "sources": [
+    {
+      "name": "The Decoder",
+      "url": "https://the-decoder.com/a-claude-model-autonomously-chose-a-gene-therapy-and-operated-on-a-mouse-brain-with-no-human-decision-making/"
+    },
+    {
+      "name": "TokenPost",
+      "url": "https://www.tokenpost.com/news/technology/45424"
+    },
+    {
+      "name": "Startup Fortune",
+      "url": "https://startupfortune.com/an-ai-agent-picked-a-gene-therapy-and-guided-the-needle-into-a-mouses-brain/"
+    }
+  ],
+  "threads_text": "A startup gave Claude Sonnet 5 a list of 19 gene therapies and one goal: reduce a mouse's seizures. It picked the therapy, the brain target and ran the injection rig while a vet approved every irreversible step. Would you trust an AI to choose the treatment, or only to hold the needle?",
+  "caption": "San Francisco startup Exin Therapeutics says Claude Sonnet 5 chose a gene therapy, picked a brain target and ran the injection rig on a live mouse.\nA licensed vet approved every irreversible step, and two Claude Opus models refused the job.\nThe mouse recovered, but the results are not peer reviewed yet.\n\nWould you let an AI pick the treatment?\n\nFollow @neurafeed.ai for daily AI news.\n\nSource: The Decoder · Photo: Gabriel Ocana-Santero via X",
+  "slides": [
+    {
+      "kind": "cover",
+      "headline": "Claude just picked a gene therapy and *injected it into a live mouse's brain*",
+      "image": {
+        "url": "https://the-decoder.com/wp-content/uploads/2026/10/claude_mouse_op-1200x670.png",
+        "credit": "Nano Banana Pro prompted by The Decoder",
+        "fallback_urls": [],
+        "generate": "A small white laboratory mouse sits calmly on top of a messy stack of printed scientific papers on a cluttered steel lab bench. Above it, a huge industrial robotic arm with scuffed gray metal holds a tiny glass syringe with a thin needle, pointed down toward the mouse, almost touching. Behind them, on a dirty white tiled lab wall, the logo from the first image, big and exact, orange. Old lab equipment, tangled cables, coffee cups and sticky notes on the bench, harsh cold fluorescent light, slightly cramped room. Blank surfaces, no readable text or labels on any object apart from the logo, the papers show only blurry gray lines. Generous headroom above the robotic arm. The mouse and the arm fill the upper two thirds of the frame, the bottom third is the bench surface. Photorealistic, high contrast, vertical composition, one clear subject, no letters, no watermarks. It must look like an unedited real photo from a news agency, not a painting, not digital art, no glow effects.",
+        "refs": [
+          "assets/logos/claude.png"
+        ]
+      },
+      "pos": "center 35%",
+      "badges": [
+        {
+          "url": "assets/logos/claude.png",
+          "shape": "free"
+        }
+      ]
+    },
+    {
+      "kind": "card",
+      "heading": "One goal: *stop the seizures*",
+      "paras": [
+        "Exin Therapeutics gave Claude Sonnet 5 a list of 19 gene therapies, a mouse with epilepsy and a motorized surgical rig with cameras.",
+        "Its only instruction: reduce the seizures. It picked a therapy that boosts a calming brain signal."
+      ],
+      "image": {
+        "url": "https://the-decoder.com/wp-content/uploads/2026/10/sonnet_5_mouse_OP-2.jpg",
+        "credit": "Gabriel Ocana-Santero via X",
+        "fit": "contain",
+        "fallback_urls": [
+          "https://startupfortune.com/wp-content/uploads/2026/10/claude-opus-5-5-exin-therapeutics-gabriel-ocana-santero.jpg"
+        ]
+      }
+    },
+    {
+      "kind": "card",
+      "heading": "It *aimed the needle* itself",
+      "paras": [
+        "Claude chose a target in the entorhinal cortex and averaged coordinates from three papers.",
+        "It set the volume and speed, then watched the injection on camera, logging 32 observations and checking for bleeding."
+      ],
+      "image": {
+        "url": "https://the-decoder.com/wp-content/uploads/2026/10/sonnet_5_mouse_OP-1-scaled-1.jpg",
+        "credit": "Gabriel Ocana-Santero via X",
+        "fit": "contain",
+        "fallback_urls": []
+      }
+    },
+    {
+      "kind": "card",
+      "heading": "Two Claude models *said no*",
+      "paras": [
+        "Claude Opus 5.5 and Opus 5 refused. Opus 5 said it could not guarantee it would finish, and stopping midway would be worse than not starting.",
+        "A licensed vet approved every irreversible step, next to a physical emergency stop."
+      ],
+      "image": {
+        "url": "https://the-decoder.com/wp-content/uploads/2026/10/sonnet_5_mouse_OP-3.jpg",
+        "credit": "Gabriel Ocana-Santero via X",
+        "fit": "contain",
+        "fallback_urls": [
+          "https://startupfortune.com/wp-content/uploads/2026/10/claude-opus-5-5-exin-therapeutics-gabriel-ocana-santero.jpg"
+        ]
+      }
+    },
+    {
+      "kind": "card",
+      "heading": "Then it *refused to continue*",
+      "paras": [
+        "After a dropped connection, Sonnet said its target was out of the rig's range and stopped. It was right: earlier manual moves had thrown the system off.",
+        {
+          "t": "The mouse recovered. No peer review yet.",
+          "strong": true
+        }
+      ],
+      "image": {
+        "url": "https://startupfortune.com/wp-content/uploads/2026/10/claude-opus-5-5-exin-therapeutics-gabriel-ocana-santero.jpg",
+        "credit": "Startup Fortune",
+        "fallback_urls": []
+      }
+    },
+    {
+      "kind": "cta",
+      "hook": "Follow to find out if the seizures actually drop when Exin shares its results."
+    }
+  ],
+  "site_article": {
+    "headline": "Exin Therapeutics says Claude Sonnet 5 chose and delivered a gene therapy in a live mouse",
+    "dek": "The startup's CEO says the model picked the treatment, the brain target and the injection settings, while a veterinarian approved each irreversible step.",
+    "summary": "Exin Therapeutics cofounder and CEO Gabriel Ocana-Santero says Claude Sonnet 5 selected a gene therapy from 19 candidates and guided its injection into the brain of a live mouse with epilepsy. The mouse recovered, according to Ocana-Santero, but no seizure results or peer reviewed data have been published.",
+    "seo_title": "Claude Sonnet 5 picks gene therapy, guides mouse brain injection",
+    "seo_description": "Exin Therapeutics says Claude Sonnet 5 chose a gene therapy and a brain target, then ran an injection rig on a live mouse under a vet's oversight.",
+    "answer_summary": "According to Exin Therapeutics CEO Gabriel Ocana-Santero, Claude Sonnet 5 chose a gene therapy, chose where in the brain to inject it and operated a motorized rig to deliver it to a live mouse. A veterinarian signed off on every irreversible step, and the results have not been peer reviewed.",
+    "tags": [
+      "Anthropic",
+      "Claude Sonnet 5",
+      "AI agents",
+      "Gene therapy",
+      "Neuroscience"
+    ],
+    "hero_alt": "A lab mouse and a robotic arm holding a syringe in a cluttered lab, with the Claude logo.",
+    "paragraphs": [
+      {
+        "kind": "fact",
+        "text": "Exin Therapeutics, a San Francisco startup that builds AI systems for neurology drug discovery, says an AI agent running on Claude Sonnet 5 chose a gene therapy and guided its injection into the brain of a live mouse. Cofounder and CEO Gabriel Ocana-Santero, a PhD student at the University of Oxford, described the experiment in a post on October 30, 2026, which The Decoder and TokenPost reported the same week.",
+        "sources": [
+          0,
+          1
+        ]
+      },
+      {
+        "kind": "fact",
+        "text": "According to The Decoder, the agent received three things: a list of 19 possible gene therapies, a mouse model of epilepsy and a custom motorized surgical device with cameras, a microscope and a syringe. Its only instruction was to reduce the mouse's seizures.",
+        "sources": [
+          0
+        ]
+      },
+      {
+        "kind": "heading",
+        "text": "What the model decided"
+      },
+      {
+        "kind": "fact",
+        "text": "The model first analyzed how seizures arise in this mouse model and then proposed a therapy that strengthens an inhibitory signaling pathway. Startup Fortune, citing reporting by WIRED, said the chosen therapy was designed to boost GABA, a neurotransmitter that dampens overactive neural firing.",
+        "sources": [
+          0,
+          2
+        ]
+      },
+      {
+        "kind": "fact",
+        "text": "For the target, the model picked a brain structure that published research links to the origin of this seizure type, which TokenPost and Startup Fortune identified as the entorhinal cortex. The Decoder reported that it rejected a second candidate region because its effects were unreliable and it had failed in one study against the same kind of seizure.",
+        "sources": [
+          0,
+          1,
+          2
+        ]
+      },
+      {
+        "kind": "fact",
+        "text": "The agent then derived stereotactic injection coordinates from three papers, cross checked reference points and averaged the values. It set the injection volume, speed and wait times, and during the procedure it watched the surgical field through a camera, made 32 observations and reported whether it could see bleeding or backflow.",
+        "sources": [
+          0
+        ]
+      },
+      {
+        "kind": "heading",
+        "text": "Refusals and safeguards"
+      },
+      {
+        "kind": "fact",
+        "text": "Sonnet 5 was not the first model Exin tried. The Decoder reported that Claude Opus 5.5 and Claude Opus 5 both declined to carry out the live procedure. Opus 5 said it could not guarantee it would finish, reasoning that stopping partway with a needle in an anesthetized animal's brain would be worse than never starting.",
+        "sources": [
+          0,
+          2
+        ]
+      },
+      {
+        "kind": "fact",
+        "text": "Humans kept control over the riskiest moments. A licensed veterinarian approved every irreversible step, a physical emergency stop could cut power to all motors at once, and fixed limits such as a cap on injection volume could not be overridden by the agent. Startup Fortune added that the agent had no access to the code that set the rig's operating rules.",
+        "sources": [
+          0,
+          2
+        ]
+      },
+      {
+        "kind": "fact",
+        "text": "At one point a connection dropped, and the agent concluded that its calculated target was outside the device's physical range of motion. It refused to continue through repeated recalibration attempts. According to The Decoder, the agent was correct, because manual adjustments made during an earlier pause had thrown off the control system, and Ocana-Santero fixed the code by hand. He called it a frustrating experience that also showed how much people can come to depend on these models.",
+        "sources": [
+          0
+        ]
+      },
+      {
+        "kind": "heading",
+        "text": "Three models, three targets"
+      },
+      {
+        "kind": "fact",
+        "text": "TokenPost reported that Exin ran the same setup with three models, one mouse each. Claude Sonnet 5 chose the entorhinal cortex, GPT-6.1 Sol chose the hippocampus and Grok 4.7 chose the somatosensory cortex, and the models proposed different therapies. Asked which performed better, Ocana-Santero said it was too early to say.",
+        "sources": [
+          1
+        ]
+      },
+      {
+        "kind": "fact",
+        "text": "The mice are recovering, according to Ocana-Santero, and their behavior and brain activity will be monitored over the coming weeks. No seizure outcomes have been reported, the work has not been peer reviewed, and a technical report is expected. Ocana-Santero said he is not aware of an earlier case of an agent choosing both a treatment and a brain target and then delivering it into a living mammal.",
+        "sources": [
+          0,
+          1,
+          2
+        ]
+      },
+      {
+        "kind": "analysis",
+        "text": "In NeuraFeed's reading, the notable part is not the robotics, since automated surgical rigs already exist, but the decision making. A model chose the treatment and the target, two steps that a human scientist normally owns, while people kept a veto over every step that could not be undone. The refusals from both Opus models and the mid procedure stop by Sonnet show these systems also making judgment calls about when not to act."
+      },
+      {
+        "kind": "why_it_matters",
+        "text": "The key thing to watch is Exin's technical report and the seizure data for each mouse, which will show whether the model's choices actually worked and how the three models compare."
+      }
+    ]
+  }
+}
