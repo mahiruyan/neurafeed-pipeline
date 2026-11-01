@@ -1,0 +1,125 @@
+{
+  "id": "2026-11-01-perplexity-research-with-sources-guide",
+  "format": "utility",
+  "created_at": "2026-11-01T17:10:00Z",
+  "story_time": "2026-11-01T17:00:00Z",
+  "timely": false,
+  "sensitive": false,
+  "priority": 2,
+  "review": true,
+  "sources": [
+    { "name": "Perplexity Help Center: What is Research mode?", "url": "https://www.perplexity.ai/help-center/en/articles/10738684-what-is-research-mode" },
+    { "name": "Perplexity Help Center: What are Projects?", "url": "https://www.perplexity.ai/help-center/en/articles/10352961-what-are-projects" },
+    { "name": "Perplexity: How does Perplexity work?", "url": "https://hub-prod.perplexity.ai/hub/faq/how-does-perplexity-work" },
+    { "name": "Fast Company", "url": "https://www.fastcompany.com/91367673/perplexity-tips" },
+    { "name": "Dupple", "url": "https://dupple.com/learn/how-to-use-perplexity-ai" },
+    { "name": "Fello AI", "url": "https://felloai.com/perplexity-spaces/" }
+  ],
+  "caption": "Perplexity answers with numbered sources you can click, but most people never check them.\nPick the right sources, ask specific questions, and use Research mode when a quick answer is not enough.\nProjects keep your files and instructions in one place for research you come back to.\n\nDo you check the sources, or just trust the answer?\n\nFollow @neurafeed.ai for daily AI news.\n\nSource: Perplexity Help Center, Fast Company",
+  "threads_text": "Perplexity shows numbered sources under every answer, and almost nobody clicks them. The trick is asking narrow questions, picking Academic or Finance sources when it matters, and saving Research mode for the hard stuff. Do you actually open the sources, or just read the answer?",
+  "slides": [
+    {
+      "kind": "cover",
+      "headline": "You're using Perplexity like Google. *4 habits* turn it into a real research assistant",
+      "image": {
+        "url": "https://felloai.com/wp-content/uploads/2026/09/perplexity-spaces-hero.webp",
+        "credit": "Fello AI",
+        "fallback_urls": [
+          "https://www.lilachbullock.com/wp-content/uploads/2026/10/perplexity-spaces.png"
+        ],
+        "generate": "A tired young woman in a gray hoodie sits at a long wooden table in a crowded public library late in the evening, surrounded by tall leaning stacks of old books, loose printouts and open folders that cover the whole table. She holds an open laptop up in both hands, its screen blank and softly lit, with a focused, relieved half smile. Surreal touch: dozens of small paper bookmarks are floating up out of the book stacks and lining up neatly in the air toward the laptop, like a trail. On the wall behind her, the logo from the first image is painted big and exact in its own teal color. Mixed warm desk lamps and cold fluorescent ceiling light, messy shelves, other readers blurred in the background, real shadows. Blank surfaces, no readable text or labels on any object, book spine, paper or screen. Generous headroom above her head. The woman and the laptop fill the upper two thirds of the frame, the bottom third is the cluttered table. Photorealistic, high contrast, vertical composition, one clear subject, no letters, no watermarks. It must look like an unedited real photo from a news agency, not a painting, not digital art, no glow effects.",
+        "refs": [
+          "https://cdn.jsdelivr.net/gh/selfhst/icons/png/perplexity-ai.png"
+        ]
+      },
+      "pos": "center 30%",
+      "badges": [
+        { "url": "https://cdn.jsdelivr.net/gh/selfhst/icons/png/perplexity-ai.png", "fit": "contain" }
+      ],
+      "badge_side": "right",
+      "badge_border": "white"
+    },
+    {
+      "kind": "prompt",
+      "heading": "1. Ask a *narrow* question",
+      "paras": [
+        "Vague questions get vague answers. Name the topic, the time frame and the kind of source you trust.",
+        "Then ask follow ups in the same thread. Perplexity keeps your earlier questions in context."
+      ],
+      "prompt": "What changed in [topic] between [month, year] and today? Use only sources published in that period, list the 3 most important changes, and give the date of each source."
+    },
+    {
+      "kind": "prompt",
+      "heading": "2. Pick *your sources*",
+      "paras": [
+        "Use the sources menu in the search box. Web is the default. Academic leans on papers and journals, Finance on market data and company reports.",
+        "Switch to Academic, then paste this."
+      ],
+      "prompt": "Summarize what peer reviewed studies say about [question]. Separate strong evidence from early or small studies, and say where the studies disagree."
+    },
+    {
+      "kind": "prompt",
+      "heading": "3. Make it *show its work*",
+      "paras": [
+        "Every answer has numbered citations. Click them, especially for numbers. AI can still get things wrong.",
+        "This follow up makes checking fast."
+      ],
+      "prompt": "For each claim in your last answer, tell me which numbered source supports it. Flag any claim that no source directly supports."
+    },
+    {
+      "kind": "prompt",
+      "heading": "4. Switch on *Research*",
+      "paras": [
+        "Pick Research in the mode selector. It runs many searches and writes a full cited report, usually in under 3 minutes.",
+        "Free accounts get limited use. You can export the report to PDF."
+      ],
+      "prompt": "Write a research report on [topic] for [who it is for]. Cover [point 1], [point 2] and [point 3], end with open questions, and cite every number."
+    },
+    {
+      "kind": "cta",
+      "hook": "Save this for your next research session, and follow for AI tricks that actually save you time."
+    }
+  ],
+  "site_article": {
+    "kind": "guide",
+    "headline": "Perplexity: how to research with sources you can actually check",
+    "dek": "How to ask better questions, choose where Perplexity searches, verify its citations, and use Research mode and Projects for bigger jobs.",
+    "summary": "Perplexity searches the web and answers with numbered citations, but the answer is only as good as the question and the sources behind it. Here is how to set up each step, which features need a paid plan, and where Perplexity falls short.",
+    "seo_title": "Perplexity Guide: How to Research With Sources",
+    "seo_description": "How to use Perplexity for research: narrow questions, the sources menu, checking citations, Research mode and Projects, with copy and paste prompts.",
+    "answer_summary": "Ask a specific question, choose the right sources (Web, Academic, Social or Finance), click the numbered citations to check each claim, and select Research in the mode selector when you need a full cited report.",
+    "tags": ["Perplexity", "AI search", "Research", "AI guides"],
+    "hero_alt": "A young woman holding a laptop at a library table covered in stacks of books, with the Perplexity logo on the wall.",
+    "paragraphs": [
+      { "kind": "fact", "text": "Perplexity is an AI search engine. You type a question, it searches the web in real time, and it writes an answer with numbered footnotes that link to the pages it used. That last part is what makes it useful for research: you can check every claim. The catch is that most people read the answer and never open a single source. This guide covers how to ask, how to pick sources, how to check the citations, and when to use Research mode and Projects.", "sources": [2, 3, 4] },
+      { "kind": "heading", "text": "Start with a narrow question" },
+      { "kind": "fact", "text": "Perplexity handles plain, conversational questions, but specific questions get better answers. Fast Company gives a simple example: a query for the latest breakthroughs in EV battery recycling methods works better than just typing EV batteries. Answers also keep context inside a thread, so you can ask a follow up without repeating the whole question.", "sources": [3, 4] },
+      { "kind": "step", "title": "1. Name the topic, the time frame and the output", "text": "Say what you want to know, which period it covers, and what shape the answer should take: a list, a comparison, a short summary. If dates matter, ask for the date of each source so you can see how fresh the information is." },
+      { "kind": "prompt", "title": "Prompt 1: What changed recently", "text": "What changed in [topic] between [month, year] and today? Use only sources published in that period, list the 3 most important changes, and give the date of each source." },
+      { "kind": "step", "title": "2. Keep digging in the same thread", "text": "Ask your follow ups as replies in the same thread instead of starting a new search. Perplexity keeps the earlier questions in context, so you can go from a broad overview to one specific detail in a few steps." },
+      { "kind": "heading", "text": "Choose where it searches" },
+      { "kind": "fact", "text": "The search box has a sources menu that sets where Perplexity looks. Web is the default and covers news, current events and popular sites. Academic leans on scientific papers, scholarly articles and research journals. Social pulls in discussions and firsthand experiences from people, and Finance focuses on market data, company reports and investment news, according to Fast Company.", "sources": [3] },
+      { "kind": "step", "title": "3. Switch to Academic for health, science and research questions", "text": "When the question is about evidence, not opinion, set the sources to Academic before you search. Then ask Perplexity to separate strong findings from early ones." },
+      { "kind": "prompt", "title": "Prompt 2: What the studies say", "text": "Summarize what peer reviewed studies say about [question]. Separate strong evidence from early or small studies, and say where the studies disagree." },
+      { "kind": "tip", "text": "Use Social when you want real experiences, like how owners feel about a product after a year. Treat those answers as opinions, not facts." },
+      { "kind": "heading", "text": "Check the citations" },
+      { "kind": "fact", "text": "Each answer has numbered citations, and clicking one opens the original page. Dupple's guide warns that the AI can still get things wrong and recommends clicking through to verify claims, especially statistics. Fast Company makes the same point: the citations exist so you can read the summary in its original context.", "sources": [3, 4] },
+      { "kind": "step", "title": "4. Ask which source supports which claim", "text": "After a long answer, ask Perplexity to map each claim to its source. Then open the sources for the claims you plan to use, and read the sentence yourself. If a number is not on the page, do not use it." },
+      { "kind": "prompt", "title": "Prompt 3: Show your work", "text": "For each claim in your last answer, tell me which numbered source supports it. Flag any claim that no source directly supports." },
+      { "kind": "heading", "text": "Use Research mode for the big questions" },
+      { "kind": "fact", "text": "Research mode is Perplexity's deeper option. According to its help center, it runs many searches, reads a large number of sources and reasons through them to write a full report. You turn it on by selecting Research from the mode selector in the search box, on the web, the mobile apps and the Mac app. Most tasks finish in under 3 minutes, but some take 4 to 5 minutes.", "sources": [0] },
+      { "kind": "fact", "text": "Free users get limited access to Research mode and Pro subscribers get extended access. Limits reset on a rolling basis, not on a fixed date. You cannot pick the model in Research mode; Perplexity chooses it. When the report is done, you can export it as a PDF or a document, or turn it into a Perplexity Page to share.", "sources": [0] },
+      { "kind": "prompt", "title": "Prompt 4: A full report", "text": "Write a research report on [topic] for [who it is for]. Cover [point 1], [point 2] and [point 3], end with a short list of open questions, and cite a source for every number." },
+      { "kind": "fact", "text": "For quick everyday questions, the faster standard search is enough. Perplexity describes Pro Search as the deeper option for complex questions: it may ask you follow up questions to refine what you want, and free accounts get a limited number of Pro Searches.", "sources": [2, 3] },
+      { "kind": "heading", "text": "Keep long research in a Project" },
+      { "kind": "fact", "text": "Projects are the new name for what Perplexity used to call Spaces; the company renamed them on July 30, 2026, according to Fello AI. A Project keeps searches, files, instructions and connected tools in one place, so you can return to the same research over time.", "sources": [1, 5] },
+      { "kind": "step", "title": "5. Create a Project", "text": "Open the Projects section in the left sidebar and select New project. Give it a title of up to 50 characters. You can add a description, an icon and a color." },
+      { "kind": "step", "title": "6. Add instructions and files", "text": "In the Project settings, add instructions of up to 8,000 characters. They apply to every query you run in that Project, so this is where you put your preferred format or the kinds of sources you trust. Then upload files or whole folders." },
+      { "kind": "fact", "text": "The help center lists the same file limits on every plan: up to 10,000 files and 5 GB per Project, with each file up to 100 MB. On personal accounts a Project is visible only to people you give access to, and you can add up to 5 contributors.", "sources": [1] },
+      { "kind": "heading", "text": "Where Perplexity falls short" },
+      { "kind": "analysis", "text": "Perplexity is a research shortcut, not a replacement for reading. A summary can flatten a nuance, mix up two sources, or attach a number to the wrong page. The citations make those mistakes easy to catch, but only if you open them." },
+      { "kind": "fact", "text": "It is also not the best tool for every search. Dupple notes that Google is still better for going straight to a specific website or finding a local business. Several features, including more Pro Searches and file uploads, are tied to the paid Pro plan, which both Fast Company and Dupple list at $20 a month.", "sources": [3, 4] },
+      { "kind": "tip", "text": "Before you share anything Perplexity wrote, open at least the sources behind the numbers. If you cannot find the claim on the page, leave it out." }
+    ]
+  }
+}

@@ -1,66 +1,5 @@
 [
   {
-    "run_at": "2026-10-25T16:08:12.101Z",
-    "summary": "Sunday 12:00 New York run: no open links or requests; queued the daily utility post (Gemini Notebook Audio Overview how-to, review). Today has 8 jobs (1 expired), leaving room only for the Sunday roundup at 17:00.",
-    "considered": [
-      {
-        "story": "How to turn files into an AI podcast with Gemini Notebook Audio Overviews",
-        "source": "https://support.google.com/notebooklm/answer/16212820?hl=en",
-        "decision": "queued",
-        "job_id": "2026-10-25-gemini-notebook-audio-overview-how-to",
-        "priority": 2
-      },
-      {
-        "story": "OpenAI red-team agents built a CPU cache covert channel between isolated VMs (The Decoder)",
-        "source": "https://the-decoder.com/openais-isolated-ai-agents-found-ways-to-talk-to-each-other-through-cpu-cache/",
-        "decision": "covered",
-        "reason": "Comes from the same OpenAI training security post already covered as 2026-10-23-openai-trains-ai-with-no-internet."
-      },
-      {
-        "story": "Anthropic launches OSS Scanner, free AI vulnerability scans for open source",
-        "source": "https://thehackernews.com/2026/10/anthropic-launches-free-ai.html?m=0",
-        "decision": "skipped",
-        "reason": "Launched around October 9, too old for news now."
-      },
-      {
-        "story": "Nvidia discusses a $2,000 per GPU yearly software fee for running agents (Tom's Hardware)",
-        "decision": "skipped",
-        "reason": "A report of internal discussions, not a launch, and today's slots are kept for the utility post and the Sunday roundup."
-      },
-      {
-        "story": "Claude Enterprise will combine chat and Cowork by default on November 16",
-        "decision": "skipped",
-        "reason": "Enterprise admin change with little consumer appeal, single secondary source."
-      },
-      {
-        "story": "UK 100 million pound AI biosecurity lab with Google, OpenAI and Anthropic",
-        "decision": "skipped",
-        "reason": "Announced October 23, too old, same as earlier runs."
-      },
-      {
-        "story": "Elvis rights holders sue Anthropic",
-        "decision": "covered",
-        "reason": "Already covered as 2026-10-24-elvis-rights-holders-sue-anthropic."
-      },
-      {
-        "story": "Thariq leaves Anthropic",
-        "decision": "covered",
-        "reason": "Already queued as 2026-10-25-claude-code-explainer-thariq-leaves-anthropic."
-      },
-      {
-        "story": "Nikon photo contest winner loses title over AI signs (TechSpot, Hacker News)",
-        "decision": "skipped",
-        "reason": "Single source read only in headline form, and the day is full."
-      },
-      {
-        "story": "r/opensource bans AI generated content (The Verge)",
-        "decision": "skipped",
-        "reason": "Niche community rule change, and the day is full."
-      }
-    ],
-    "requests": []
-  },
-  {
     "run_at": "2026-10-25T17:54:37.712Z",
     "summary": "Sunday 14:00 New York run: no open links or requests (old links already in skipped.json); no new priority 1 story found and today already has 8 jobs, so nothing was queued. The Sunday roundup is left for the 17:00 run.",
     "considered": [
@@ -5360,6 +5299,65 @@
         "story": "Apple CEO says Apple won't ship AI for AI's sake (TechCrunch)",
         "decision": "covered",
         "reason": "Already posted as 2026-11-01-ternus-apple-no-ai-for-ais-sake."
+      }
+    ],
+    "requests": []
+  },
+  {
+    "run_at": "2026-11-01T17:06:55.466Z",
+    "summary": "Sunday midday run (11:53 New York, Nov 1): no open links or requests; queued the daily utility post and website guide (Perplexity research with sources). Nov 1 now has 7 jobs, the last slot is held for the weekly roundup after 17:00, so no news was added.",
+    "considered": [
+      {
+        "story": "Utility: Perplexity, how to research with sources (next line in guides/plan.md)",
+        "source": "https://www.perplexity.ai/help-center/en/articles/10738684-what-is-research-mode",
+        "decision": "queued",
+        "job_id": "2026-11-01-perplexity-research-with-sources-guide",
+        "priority": 2
+      },
+      {
+        "story": "Anthropic's internal AI use is worth more than employee pay at customer prices (Business Insider)",
+        "decision": "skipped",
+        "reason": "Interesting but not a major story, and the only free slot today is reserved for the Sunday roundup."
+      },
+      {
+        "story": "OpenAI adds stricter limits for teens asking about firearms (Engadget)",
+        "decision": "skipped",
+        "reason": "Sensitive safety policy tweak, not major enough to take the roundup's slot under the 8 per day cap."
+      },
+      {
+        "story": "DeepSeek launches an AI Super Agent to rival Claude Code and Codex (Digital Trends)",
+        "decision": "skipped",
+        "reason": "Not one of the priority companies and no second source yet; cap reached once the roundup is queued."
+      },
+      {
+        "story": "Sam Altman says AI is uncovering old security vulnerabilities (TechRadar)",
+        "decision": "skipped",
+        "reason": "Commentary with no new event, and today's cap is nearly full."
+      },
+      {
+        "story": "AI agent swarms in Minecraft fall into bureaucracy (Tom's Hardware)",
+        "decision": "skipped",
+        "reason": "Fun research story but filler, and no slot left today."
+      },
+      {
+        "story": "Brazilian lawyers fined for prompt injection hidden in a court filing (Tom's Hardware)",
+        "decision": "skipped",
+        "reason": "Legal story outside the US with no slot left today; can be reconsidered tomorrow."
+      },
+      {
+        "story": "OpenAI raises less than half of its $30 billion target (WSJ)",
+        "decision": "covered",
+        "reason": "Already covered as 2026-10-31-openai-cuts-funding-target-10-billion."
+      },
+      {
+        "story": "Anthropic restricts Claude from reverse engineering games (Firstpost, Mashable)",
+        "decision": "covered",
+        "reason": "Already posted as 2026-10-31-claude-code-stops-remaking-video-games."
+      },
+      {
+        "story": "ChatGPT and Codex usage limits merging",
+        "decision": "covered",
+        "reason": "Already queued as 2026-11-01-chatgpt-codex-one-shared-limit."
       }
     ],
     "requests": []
