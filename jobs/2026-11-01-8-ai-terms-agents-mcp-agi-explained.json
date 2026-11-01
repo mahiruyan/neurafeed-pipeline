@@ -1,0 +1,251 @@
+{
+  "id": "2026-11-01-8-ai-terms-agents-mcp-agi-explained",
+  "created_at": "2026-11-01T19:02:24Z",
+  "story_time": "2026-11-01T17:07:21Z",
+  "timely": false,
+  "sensitive": false,
+  "priority": 1,
+  "review": true,
+  "format": "list",
+  "link_id": "link-2026-11-01-2225",
+  "site_category": "models",
+  "sources": [
+    {
+      "name": "Anthropic: Building effective agents",
+      "url": "https://www.anthropic.com/research/building-effective-agents"
+    },
+    {
+      "name": "Addy Osmani: Agent harness engineering",
+      "url": "https://addyosmani.com/blog/agent-harness-engineering/"
+    },
+    {
+      "name": "Anthropic: Introducing the Model Context Protocol",
+      "url": "https://www.anthropic.com/news/model-context-protocol"
+    },
+    {
+      "name": "Anthropic: Equipping agents with Agent Skills",
+      "url": "https://www.anthropic.com/engineering/equipping-agents-for-the-real-world-with-agent-skills"
+    },
+    {
+      "name": "arXiv: GEO, Generative Engine Optimization",
+      "url": "https://arxiv.org/html/2311.09735v3"
+    },
+    {
+      "name": "Conductor: Answer engine optimization",
+      "url": "https://www.conductor.com/academy/glossary/answer-engine-optimization/"
+    },
+    {
+      "name": "OpenAI Charter",
+      "url": "https://openai.com/charter/"
+    },
+    {
+      "name": "Wikipedia: Superintelligence",
+      "url": "https://en.wikipedia.org/wiki/Superintelligence"
+    }
+  ],
+  "threads_text": "Eight AI terms, one plain definition each. An agent is an AI running its own loop, a harness is everything around the model, and MCP is how it plugs into your apps. Which AI buzzword still confuses you the most?",
+  "caption": "Eight AI terms you keep hearing, defined from the original sources.\nAgents, harnesses, MCP and skills are how AI uses tools and finishes tasks.\nGEO and AEO are about getting cited in AI answers, and AGI and superintelligence are the goals big labs talk about.\n\nWhich of these did you already know?\n\nFollow @neurafeed.ai for daily AI news.\n\nSource: Anthropic, OpenAI, arXiv",
+  "slides": [
+    {
+      "kind": "cover",
+      "headline": "8 AI words everyone is suddenly using, and *what they actually mean*",
+      "image": {
+        "url": "https://www-cdn.anthropic.com/images/4zrzovbb/website/3bb264e9a7676b131ede691cea5a409468aa36db-1200x630.jpg",
+        "credit": "Anthropic",
+        "fallback_urls": [
+          "https://media.thenextweb.com/2026/09/openai-logo-smartphone-laptop-zac-wolff-unsplash.jpg"
+        ],
+        "generate": "A small, scuffed gray humanoid robot sits cross-legged on top of a huge, thick, open old paper dictionary on a cluttered office desk late at night, holding a magnifying glass over the pages with a puzzled tilt of its head. Next to the dictionary stands a white coffee mug with the logo from the first image printed big and exact in orange. Behind the robot, a half-open laptop shows the logo from the second image, big and exact, on its lid. Scattered sticky notes, tangled charging cables, a desk lamp with warm harsh light, messy stacks of papers. Blank surfaces, no readable text or labels on any object apart from the two logos, the dictionary pages show only blurry gray lines. Generous headroom above the robot's head. The robot and dictionary fill the upper two thirds of the frame, the bottom third is the desk surface. Photorealistic, high contrast, vertical composition, one clear subject, no letters, no watermarks. It must look like an unedited real photo from a news agency, not a painting, not digital art, no glow effects.",
+        "refs": [
+          "assets/logos/claude.png",
+          "assets/logos/openai.png"
+        ]
+      },
+      "pos": "center 35%"
+    },
+    {
+      "kind": "card",
+      "heading": "1. *Agents*",
+      "paras": [
+        "An agent is an AI that runs its own loop: it picks a tool, checks the result and decides the next step.",
+        "Anthropic separates agents from workflows, where the steps are fixed in code ahead of time."
+      ],
+      "image": {
+        "url": "https://www-cdn.anthropic.com/images/4zrzovbb/website/d356638d9823fd692c42b2477fcac214ed3b236f-1200x630.jpg",
+        "credit": "Anthropic",
+        "fallback_urls": []
+      }
+    },
+    {
+      "kind": "card",
+      "heading": "2. The *harness*",
+      "paras": [
+        "A harness is everything around the model that is not the model: instructions, tools, memory, permissions and the loop that runs it.",
+        "Claude Code, Codex and Cursor are all harnesses. The model can be the same, but the harness shapes what you get."
+      ],
+      "image": {
+        "url": "https://addyosmani.com/assets/images/harness-anatomy.jpeg",
+        "credit": "Addy Osmani",
+        "fit": "contain",
+        "fallback_urls": [
+          "https://addyosmani.com/assets/images/claude-code-architecture.jpeg"
+        ]
+      }
+    },
+    {
+      "kind": "card",
+      "heading": "3. *MCP*",
+      "paras": [
+        "Model Context Protocol is an open standard Anthropic released in November 2024 to connect AI assistants to the places data lives.",
+        "One connector, called an MCP server, can plug a model into tools like Google Drive, Slack or GitHub."
+      ],
+      "image": {
+        "url": "https://www-cdn.anthropic.com/images/4zrzovbb/website/6d4a0d28992ade92d6fa63646fd9c9d318245c6c-2400x1260.jpg",
+        "credit": "Anthropic",
+        "fallback_urls": []
+      }
+    },
+    {
+      "kind": "card",
+      "heading": "4. *Skills*",
+      "paras": [
+        "A skill is a folder with a SKILL.md file of instructions, plus optional scripts and resources.",
+        "Claude first sees only each skill's name and description, and loads the full file only when a task needs it."
+      ],
+      "image": {
+        "url": "https://www-cdn.anthropic.com/images/4zrzovbb/website/6f22d8913dbc6228e7f11a41e0b3c124d817b6d2-1650x929.jpg",
+        "credit": "Anthropic",
+        "fit": "contain",
+        "fallback_urls": [
+          "https://www-cdn.anthropic.com/images/4zrzovbb/website/ddd7e6e572ad0b6a943cacefe957248455f6d522-1650x929.jpg"
+        ]
+      }
+    },
+    {
+      "kind": "card",
+      "heading": "5. *GEO and AEO*",
+      "paras": [
+        "GEO means shaping content so AI search tools cite it. A 2023 paper from Princeton and IIT Delhi found it can lift visibility by up to 40%.",
+        "AEO aims for direct answers in ChatGPT, Perplexity and Google's AI Overviews."
+      ],
+      "image": {
+        "url": "https://arxiv.org/html/2311.09735v3/geo_teaser_nov15.png",
+        "credit": "Aggarwal et al. / arXiv",
+        "fit": "contain",
+        "fallback_urls": [
+          "https://arxiv.org/html/2311.09735v3/explain_geo.png"
+        ]
+      }
+    },
+    {
+      "kind": "card",
+      "heading": "6. AGI and *superintelligence*",
+      "paras": [
+        "OpenAI's charter calls AGI highly autonomous systems that outperform humans at most economically valuable work.",
+        "Superintelligence goes further: AI that greatly exceeds humans in virtually every field. Meta even named a lab after it."
+      ],
+      "image": {
+        "url": "https://techcrunch.com/wp-content/uploads/2026/09/openai-getty.jpg?resize=1200,800",
+        "credit": "Getty Images via TechCrunch",
+        "fallback_urls": []
+      }
+    },
+    {
+      "kind": "cta",
+      "hook": "Follow so the next AI buzzword never catches you off guard."
+    }
+  ],
+  "site_article": {
+    "headline": "Eight AI terms explained: agents, harnesses, MCP, skills, GEO, AEO, AGI and superintelligence",
+    "dek": "A plain reference to the words behind AI tools, AI search and the long term goals of the largest labs, based on the documents that define them.",
+    "summary": "Agents, harnesses, MCP and skills describe how AI models use tools and carry out tasks, while GEO and AEO describe how content gets surfaced in AI answers. AGI and superintelligence name the goals that OpenAI, Meta and others say they are working toward.",
+    "seo_title": "AI terms explained: agents, MCP, skills, GEO, AGI and more",
+    "seo_description": "What agents, harnesses, MCP, skills, GEO, AEO, AGI and superintelligence mean, explained from the documents that define each term.",
+    "answer_summary": "An agent is an AI system that directs its own tool use, a harness is the software around a model, MCP is an open standard for connecting AI to data, and skills are folders of instructions an agent loads when needed. GEO and AEO are about being cited in AI answers, and AGI and superintelligence describe AI that matches or far exceeds human ability.",
+    "tags": [
+      "AI agents",
+      "MCP",
+      "Agent Skills",
+      "GEO",
+      "AGI",
+      "Superintelligence"
+    ],
+    "hero_alt": "A small gray robot reads an open dictionary with a magnifying glass on a cluttered desk at night.",
+    "paragraphs": [
+      {
+        "kind": "fact",
+        "text": "Anthropic described AI agents in a December 19, 2024 research post as systems in which large language models direct their own processes and decide how to use tools. The company said agents are usually language models that call tools in a loop and adjust based on feedback from their environment. It set them apart from workflows, in which a model and its tools follow paths that developers write in code ahead of time.",
+        "sources": [
+          0
+        ]
+      },
+      {
+        "kind": "heading",
+        "text": "How AI gets things done: harnesses, MCP and skills"
+      },
+      {
+        "kind": "fact",
+        "text": "A harness is the layer that turns a model into a working agent. In an April 19, 2026 essay, engineer and author Addy Osmani defined it as all of the code, configuration and execution logic that is not the model itself. That covers system prompts and rule files, tool definitions, the loop that runs the agent, context management, memory files, sandboxes and approval gates. Osmani named Claude Code, Cursor, Codex, Aider and Cline as examples, and wrote that the behavior users see depends heavily on the harness even when the underlying model is the same.",
+        "sources": [
+          1
+        ]
+      },
+      {
+        "kind": "fact",
+        "text": "The Model Context Protocol, or MCP, is an open standard that Anthropic introduced on November 25, 2024 for connecting AI assistants to the systems where data is stored. Developers expose data or tools through an MCP server, and AI applications connect to it as clients. At launch, Anthropic published ready made servers for Google Drive, Slack, GitHub, Git, Postgres and Puppeteer, and named Block, Apollo, Zed, Replit, Codeium and Sourcegraph among early adopters.",
+        "sources": [
+          2
+        ]
+      },
+      {
+        "kind": "fact",
+        "text": "Agent Skills, which Anthropic announced on October 16, 2025, are organized folders of instructions, scripts and resources. Each skill is a directory with a SKILL.md file that begins with a short block of metadata, including a name and a description. Claude loads only that name and description at the start, reads the full file when a task calls for the skill, and opens any linked files only if they are needed. Anthropic calls this layered approach progressive disclosure and says it keeps skills from filling the model's context.",
+        "sources": [
+          3
+        ]
+      },
+      {
+        "kind": "analysis",
+        "text": "The four terms fit together. The model does the reasoning, the harness runs it, MCP connects it to outside apps and data, and skills give it task specific know how without loading everything at once. Osmani argues that much of what separates one coding assistant from another sits in those outer layers rather than in the model alone."
+      },
+      {
+        "kind": "heading",
+        "text": "How content shows up in AI answers: GEO and AEO"
+      },
+      {
+        "kind": "fact",
+        "text": "Generative engine optimization, or GEO, was introduced in a November 2023 paper by researchers from Princeton University and the Indian Institute of Technology Delhi. The authors described generative engines as search systems that use AI models to gather and summarize information in answer to a query, and proposed GEO as a way for content creators to improve how visible their content is in those answers. They reported that GEO methods could raise visibility by up to 40 percent in generative engine responses.",
+        "sources": [
+          4
+        ]
+      },
+      {
+        "kind": "fact",
+        "text": "Answer engine optimization, or AEO, is a closely related idea. The search marketing company Conductor describes it as structuring content so that AI engines can understand it and use it as a direct answer, in tools such as ChatGPT and Perplexity and in formats such as Google's AI Overviews and featured snippets. Conductor says the goal differs from traditional search engine optimization, which focuses on ranking positions, because AEO aims to be cited as the source of the answer.",
+        "sources": [
+          5
+        ]
+      },
+      {
+        "kind": "heading",
+        "text": "Where the labs say this is heading: AGI and superintelligence"
+      },
+      {
+        "kind": "fact",
+        "text": "OpenAI's charter defines artificial general intelligence, or AGI, as highly autonomous systems that outperform humans at most economically valuable work, and states that the company's mission is to ensure AGI benefits all of humanity. Superintelligence describes a further step. Wikipedia defines it as a hypothetical agent with intelligence beyond the most gifted human minds and cites philosopher Nick Bostrom's definition of an intellect that greatly exceeds human cognitive performance in virtually all domains. Ilya Sutskever's startup Safe Superintelligence focuses only on building a safe superintelligence, and Meta created a division called Meta Superintelligence Labs in 2025.",
+        "sources": [
+          6,
+          7
+        ]
+      },
+      {
+        "kind": "analysis",
+        "text": "The first six terms describe tools and practices that exist today and can be tested. AGI and superintelligence are different: they are goals and definitions for systems that do not exist yet, which makes claims about them harder to check."
+      },
+      {
+        "kind": "why_it_matters",
+        "text": "Watch how vendors use these words in product launches. A claim about an agent, a skill or an MCP connector can be checked against the published definitions, while a claim about AGI depends on whose definition is being used."
+      }
+    ]
+  }
+}
