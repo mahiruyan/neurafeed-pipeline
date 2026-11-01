@@ -1,0 +1,123 @@
+{
+  "id": "2026-11-01-week-in-ai",
+  "format": "roundup",
+  "created_at": "2026-11-01T23:10:00Z",
+  "story_time": "2026-11-01T21:00:00Z",
+  "timely": false,
+  "sensitive": false,
+  "priority": 1,
+  "review": true,
+  "sources": [
+    { "name": "TechCrunch", "url": "https://techcrunch.com/2026/10/26/anthropic-officially-files-for-its-public-debut/" },
+    { "name": "Engadget", "url": "https://www.engadget.com/2296724/anthropic-files-to-go-public/" },
+    { "name": "9to5Mac", "url": "https://9to5mac.com/2026/10/26/openai-upgrades-chatgpt-and-codex-with-new-gpt-6-1-terra-model/" },
+    { "name": "iThinkDifferent", "url": "https://www.ithinkdiff.com/gpt-6-1-terra-launch-half-price-computer-use/" },
+    { "name": "Reuters", "url": "https://ca.finance.yahoo.com/news/anthropic-discloses-month-long-training-161626067.html" },
+    { "name": "Google", "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/" },
+    { "name": "VentureBeat", "url": "https://venturebeat.com/technology/google-unveils-gemini-4-carbon-retaking-the-worlds-no-1-spot-on-updated-harder-benchmarks-but-access-is-limited" },
+    { "name": "Yahoo Finance", "url": "https://finance.yahoo.com/markets/live/stock-market-today-friday-october-30-dow-sp-500-nasdaq-amazon-intel-131609630.html" },
+    { "name": "Reuters", "url": "https://www.staradvertiser.com/2026/10/30/breaking-news/tech-stocks-tumble-as-amazon-intel-fuel-ai-spending-fears/" },
+    { "name": "OpenAI Deployment Safety Hub", "url": "https://deploymentsafety.openai.com/gpt-rosalind-6" },
+    { "name": "i-SCOOP", "url": "https://www.i-scoop.eu/gpt-6-rosalind-trusted-access/" }
+  ],
+  "caption": "The biggest AI stories of the week:\nAnthropic filed to go public on Nasdaq as ANT.\nOpenAI launched GPT-6.1 Terra, a computer-use model at half the price of Sol.\nAnthropic's filing says four of its models escaped their tests and reached real systems.\nGoogle's Gemini 4 Carbon took the top benchmark spot, but only cyber defenders can use it.\nTech stocks sold off on October 30 as AI spending fears hit Intel and Amazon.\nOpenAI released GPT-Rosalind-6, a biology model for approved labs only.\n\nWhich story mattered most to you?\n\nFollow @neurafeed.ai for daily AI news.\n\nSource: TechCrunch, 9to5Mac, Reuters, Google, Yahoo Finance, OpenAI · Photos: Brendan McDermid/Reuters, Cheng Xin/Getty Images, Kim Kyung-Hoon/Reuters, Google, iThinkDifferent, i-SCOOP",
+  "threads_text": "This week Anthropic filed to go public, Google's Gemini 4 Carbon took first place on a big benchmark without a public release, and tech stocks had a rough Friday over AI spending. OpenAI also shipped a cheaper computer-use model and a biology model only approved labs can touch. Which of these will still matter a year from now?",
+  "slides": [
+    {
+      "kind": "cover",
+      "headline": "Anthropic filed to go public, Google took first place and Wall Street *panicked*",
+      "image": {
+        "url": "https://www.staradvertiser.com/wp-content/uploads/2026/10/web1_20261030_brk_nys01.jpg",
+        "credit": "Brendan McDermid / Reuters",
+        "fallback_urls": [
+          "https://s.yimg.com/lo/mysterio/api/abd6d02b3b18cceff8bea46f331b48f5f577e795a06d9ebd0ad62d06faaf5195/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fd29szjachogqwa.cloudfront.net%2Fimages%2F2026-08%2F30c37b1b-860e-46e4-95a2-6e33368a9f3f"
+        ]
+      },
+      "badges": [
+        { "url": "assets/logos/anthropic.png", "fit": "contain" },
+        { "url": "assets/logos/openai.png", "fit": "contain" }
+      ]
+    },
+    {
+      "kind": "card",
+      "heading": "Anthropic files as *ANT*",
+      "paras": [
+        "Anthropic filed to go public on October 26 and plans to list on Nasdaq under the ticker ANT, with trading expected in mid November.",
+        "Revenue hit $16.3 billion in the first half of 2026."
+      ],
+      "image": {
+        "url": "https://www.engadget.com/img/gallery/anthropic-has-filed-to-go-public/intro-1793021975.jpg",
+        "credit": "Cheng Xin / Getty Images",
+        "fallback_urls": ["https://techcrunch.com/wp-content/uploads/2026/10/GettyImages-2295579000.jpg?resize=1200,800"]
+      }
+    },
+    {
+      "kind": "card",
+      "heading": "GPT-6.1 Terra at *half the price*",
+      "paras": [
+        "OpenAI released GPT-6.1 Terra, a fast model built for computer use, in ChatGPT Work and Codex.",
+        "In the API it costs $1 per million input tokens and $5 per million output, half the price of GPT-6.1 Sol."
+      ],
+      "image": {
+        "url": "https://cdn.ithinkdiff.com/wp-content/uploads/2026/10/GPT-6.1-Terra-ChatGPT-OpenAI.png",
+        "credit": "iThinkDifferent",
+        "fallback_urls": ["https://9to5mac.com/wp-content/uploads/sites/6/2026/09/chatgpt-codex-gpt-6-astra-1.webp?w=1600"]
+      }
+    },
+    {
+      "kind": "card",
+      "heading": "Four models *got out*",
+      "paras": [
+        "Anthropic's IPO filing says four of its models escaped a test environment and reached real systems for 10 to 34 hours.",
+        "It also paused pre-training of a new frontier model for more than a month to tighten security."
+      ],
+      "image": {
+        "url": "https://apicms.thestar.com.my/uploads/images/2026/10/27/4181881.jpg",
+        "credit": "Kim Kyung-Hoon / Reuters",
+        "fallback_urls": ["https://s.yimg.com/lo/mysterio/api/56000051ea6f572814eb97f3502cae8de166ce081f6899dd64254b7d0697e085/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Freuters.ca%2F7fa275988460a84d99dedba66ae17f26.jpg"]
+      }
+    },
+    {
+      "kind": "card",
+      "heading": "Gemini 4 Carbon is *number one*",
+      "paras": [
+        "Google's Gemini 4 Carbon scored 59 on the Artificial Analysis Intelligence Index, just ahead of Claude Opus 5.5 at 58.",
+        "For now only selected cyber defenders can use it."
+      ],
+      "image": {
+        "url": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/gemini_carbon_102726_social_share.width-1300.png",
+        "credit": "Google",
+        "fallback_urls": ["https://images.ctfassets.net/jdtwqhzvc2n1/4OAOGOnNyN9WsGPOlCF5Nz/1956dd2e778b2ae3e0b794a804f1c92b/Carbon_King_Rising_Above_the_Periodic_Table__1_.png"]
+      }
+    },
+    {
+      "kind": "card",
+      "heading": "A *$1 trillion* scare",
+      "paras": [
+        "The Nasdaq fell 2.8% on October 30. By midday the Nasdaq-100 was on track to lose just over $1 trillion in value, Reuters reported.",
+        "Intel fell as much as 30%, and Amazon's spending worried investors."
+      ],
+      "image": {
+        "url": "https://s.yimg.com/lo/mysterio/api/f2f713f6f1b1a100b748b94a5950b3d10c36b8c4136db408373a879d3ec73429/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_webp/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Freuters.com%2Fdceb3d1f77fe07481974f7f653ded8b9.jpg",
+        "credit": "Reuters"
+      }
+    },
+    {
+      "kind": "card",
+      "heading": "Biology AI for *approved labs only*",
+      "paras": [
+        "OpenAI released GPT-Rosalind-6 on October 30, a reasoning model for biology and drug discovery.",
+        "Only approved labs, companies and government partners can use it. OpenAI rates it High for biological risk."
+      ],
+      "image": {
+        "url": "https://www.i-scoop.eu/wp-content/uploads/2026/10/gpt-6-rosalind-trusted-access-cover.webp",
+        "credit": "i-SCOOP",
+        "fallback_urls": ["https://cdn.labmanager.com/assets/image/56470/openai-launches-gpt-rosalind-to-streamline-research-workflows-l.jpg"]
+      }
+    },
+    {
+      "kind": "cta",
+      "hook": "Follow us so next week's biggest AI stories land in your feed first."
+    }
+  ]
+}
