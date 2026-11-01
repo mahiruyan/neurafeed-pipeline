@@ -1,63 +1,5 @@
 [
   {
-    "run_at": "2026-10-25T19:54:07.575Z",
-    "summary": "Sunday 16:00 New York run: no open links or requests (old links already in skipped.json); no new priority 1 story found and today already has 8 jobs, so nothing was queued. The Sunday roundup is left for the 17:00 run.",
-    "considered": [
-      {
-        "story": "AI delivers 'zero financial payoff' to most companies, Apollo economist says (TechCrunch)",
-        "source": "https://techcrunch.com/2026/10/25/ai-delivers-zero-financial-payoff-to-most-companies-according-to-apollo-economist/",
-        "decision": "skipped",
-        "reason": "Market commentary with no single news event, already skipped in earlier runs, and the day is full."
-      },
-      {
-        "story": "OpenAI agents switched off their own safety monitoring, and one lied about it",
-        "decision": "covered",
-        "reason": "Already covered as 2026-10-21-openai-agents-switched-off-alarms."
-      },
-      {
-        "story": "Outside testers found 6 ways around OpenAI's AI watchdog (Memeburn)",
-        "decision": "skipped",
-        "reason": "Follow-up commentary on the same OpenAI monitoring story already covered, single secondary source."
-      },
-      {
-        "story": "Altman warns AI could find hardware bugs that patching cannot fix (Business Upturn)",
-        "decision": "skipped",
-        "reason": "Single low-quality source and the day is already at 8 jobs."
-      },
-      {
-        "story": "Gemini 4 Flash and Carbon leaks point to an imminent Google release",
-        "decision": "skipped",
-        "reason": "A rumor from leaks, not a confirmed launch."
-      },
-      {
-        "story": "SoftBank plans $50 billion AI investment in Malaysia (Nikkei Asia)",
-        "decision": "skipped",
-        "reason": "Foreign investment pledge with limited US interest, and the day is full."
-      },
-      {
-        "story": "Elvis Presley catalog owners sue Anthropic (Guardian, Pitchfork)",
-        "decision": "covered",
-        "reason": "Already covered as 2026-10-24-elvis-rights-holders-sue-anthropic."
-      },
-      {
-        "story": "Claude Duet proactive agent",
-        "decision": "covered",
-        "reason": "Already covered as 2026-10-21-claude-duet-works-while-you-sleep."
-      },
-      {
-        "story": "UC Berkeley math professor sees no point in grading homework because of AI (Hacker News)",
-        "decision": "skipped",
-        "reason": "Single source opinion piece and the day is already at 8 jobs."
-      },
-      {
-        "story": "r/opensource bans AI content (Gizmodo)",
-        "decision": "skipped",
-        "reason": "Niche community rule change, already skipped earlier today."
-      }
-    ],
-    "requests": []
-  },
-  {
     "run_at": "2026-10-25T21:55:33.494Z",
     "summary": "Sunday 18:00 New York run: queued the weekly roundup (2026-10-25-week-in-ai, priority 1, review); no open requests, the new NVIDIA RTX Spark link is under 30 minutes old and left for the instant link task, and no new priority 1 story was found.",
     "considered": [
@@ -5337,6 +5279,60 @@
         "story": "Brazilian lawyers fined for a prompt injection hidden in a court filing (Tom's Hardware)",
         "decision": "skipped",
         "reason": "Held for reconsideration tomorrow; today's cap is nearly full."
+      },
+      {
+        "story": "OpenAI raises less than half of its $30 billion target (WSJ)",
+        "decision": "covered",
+        "reason": "Already covered as 2026-10-31-openai-cuts-funding-target-10-billion."
+      }
+    ],
+    "requests": []
+  },
+  {
+    "run_at": "2026-11-01T21:08:13.561Z",
+    "summary": "Sunday late-afternoon run (15:53 New York, Nov 1): no open links or requests; queued one priority 1 story (Sam Altman meets about 50 Samsung executives as memory runs short), waiting for Mahir's approval. Nov 1 now has 7 desk jobs, the last slot stays held for the weekly roundup after 17:00. Note: generated covers keep failing because the fal account is locked (TOP_UP), so covers fall back to real photos.",
+    "considered": [
+      {
+        "story": "Sam Altman meets about 50 Samsung executives in Yongin amid a memory shortage",
+        "source": "https://www.tomshardware.com/tech-industry/data-centers/sam-altman-travels-to-south-korea-to-meet-samsung-leadership-to-secure-more-ram-for-data-centers-amid-crushing-shortages-openai-ceo-meets-samsung-leadership-to-discuss-future-ai-data-centers",
+        "decision": "queued",
+        "job_id": "2026-11-01-altman-50-samsung-executives-memory",
+        "priority": 1
+      },
+      {
+        "story": "OpenAI plans a post-midterm policy push in Washington (Axios)",
+        "decision": "skipped",
+        "reason": "Political strategy story I could not read in full from a primary source, and today's only free slot went to the Altman and Samsung meeting."
+      },
+      {
+        "story": "Anthropic asks job candidates what they would do if its stock fell to zero (Fortune)",
+        "decision": "skipped",
+        "reason": "Interesting hiring detail but not a major event, and no slot is left before the roundup."
+      },
+      {
+        "story": "Anthropic's internal AI use worth more than employee pay (Business Insider)",
+        "decision": "skipped",
+        "reason": "Passed on in earlier runs today, still not a major story."
+      },
+      {
+        "story": "Pipedrive cuts 70% of its Estonian workforce as AI disrupts its business",
+        "decision": "skipped",
+        "reason": "Layoff story at a smaller European company with little US interest."
+      },
+      {
+        "story": "DeepSeek launches an AI Super Agent to rival Claude Code and Codex (Digital Trends)",
+        "decision": "skipped",
+        "reason": "Still one source and not a priority company."
+      },
+      {
+        "story": "Brazilian lawyers fined for a prompt injection hidden in a court filing (Tom's Hardware)",
+        "decision": "skipped",
+        "reason": "Held for tomorrow; today's cap is nearly full."
+      },
+      {
+        "story": "Anthropic blocks users for work touching training larger models (X post on Hacker News)",
+        "decision": "skipped",
+        "reason": "Still a single X post with no news coverage."
       },
       {
         "story": "OpenAI raises less than half of its $30 billion target (WSJ)",
