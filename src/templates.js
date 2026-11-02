@@ -9,9 +9,13 @@ const fileUrl = (p) => 'file://' + p;
 const logo = fileUrl(path.join(ROOT, 'assets', 'logo.png'));
 
 const esc = (s) => String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
-const hl = (s) => esc(s).replace(/\*(.+?)\*/g, `<span style="color:${ACC}">$1</span>`);
+// "\\*" is a literal asterisk (for example "Sh\\*t"); single asterisks mark the highlighted phrase.
+const LIT = '\u0001';
+const lit = (s) => String(s).replace(/\\\*/g, LIT);
+const unlit = (s) => s.split(LIT).join('*');
+const hl = (s) => unlit(esc(lit(s)).replace(/\*(.+?)\*/g, `<span style="color:${ACC}">$1</span>`));
 // Headlines: medium weight, the *highlighted* phrase bold and green.
-const hlb = (s) => esc(s).replace(/\*(.+?)\*/g, `<span style="color:${ACC};font-weight:700">$1</span>`);
+const hlb = (s) => unlit(esc(lit(s)).replace(/\*(.+?)\*/g, `<span style="color:${ACC};font-weight:700">$1</span>`));
 
 const fontCss = `
 @font-face{font-family:Anton;src:url(${fileUrl(FONTS + '/anton/files/anton-latin-400-normal.woff2')})}

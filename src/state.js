@@ -58,7 +58,7 @@ function writeSummary() {
       return {
         id: s.id, status: s.status, posted_at: s.posted_at || null, post_at: j.post_at || null,
         priority: j.priority || 2, format: j.type === 'reel' ? 'reel' : (j.format || 'news'),
-        headline: String(j.slides?.[0]?.headline || j.hook || '').replace(/\*/g, ''),
+        headline: String(j.slides?.[0]?.headline || j.hook || '').replace(/\\\*/g, '\u0001').replace(/\*/g, '').split('\u0001').join('*'),
         from_link: Boolean(j.link_id), link_id: j.link_id || null, error: s.status === 'posted' ? null : (s.error || null), tg: [...(s.tg_messages || []), ...(s.message_id ? [s.message_id] : [])],
       };
     })
