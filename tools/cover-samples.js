@@ -5,11 +5,21 @@ const fs = require('fs'); const path = require('path'); const { execFileSync } =
 const { fetchImages } = require('../src/images');
 const { renderJob } = require('../src/render');
 const OUT = process.argv[2] || 'cover-samples';
+// First Wikimedia Commons photo (JPEG, at least 1000 px wide) for a search, as a ready thumbnail URL.
+async function commons(q) {
+  const u = `https://commons.wikimedia.org/w/api.php?action=query&format=json&generator=search&gsrnamespace=6&gsrlimit=10&gsrsearch=${encodeURIComponent(q)}&prop=imageinfo&iiprop=url|size|mime&iiurlwidth=1280`;
+  const d = await (await fetch(u, { headers: { 'User-Agent': 'NeuraFeedPipeline/0.1 (hello@neurafeedai.com)' } })).json();
+  const pages = Object.values(d.query?.pages || {}).sort((a, b) => a.index - b.index);
+  const hit = pages.map((p) => p.imageinfo?.[0]).find((i) => i && i.mime === 'image/jpeg' && i.width >= 1000);
+  console.log(`::notice::commons "${q}": ${hit ? hit.descriptionurl : 'none'}`);
+  return hit?.thumburl || null;
+}
 (async () => {
   fs.mkdirSync(OUT, { recursive: true });
   for (const f of fs.readdirSync('samples/covers').filter((x) => x.endsWith('.json'))) {
     const s = JSON.parse(fs.readFileSync(path.join('samples/covers', f), 'utf8'));
     const shots = [];
+    if (s.new.image?.commons) s.new.image.url = await commons(s.new.image.commons) || s.new.image.url;
     for (const [tag, slide] of [['old', s.old], ['new', { ...s.new, style: 'v2' }]]) {
       const dir = path.join('/tmp/cs', s.id, tag);
       const job = { id: `${s.id}-${tag}`, slides: [slide] };
