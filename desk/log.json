@@ -1,57 +1,5 @@
 [
   {
-    "run_at": "2026-10-26T00:02:06.993Z",
-    "summary": "Sunday 20:00 New York run: made the Reel from Mahir's NVIDIA RTX Spark link (review), and re-queued the weekly roundup as a v2 because the pipeline skipped the first version for sharing source links with two posts from this week; no new priority 1 story queued, the day is full.",
-    "considered": [
-      {
-        "story": "Mahir's link: NVIDIA RTX Spark Reel (link-2026-10-25-1551)",
-        "source": "https://aphnetworks.com/news/31749-nvidias-rtx-spark-chip-reinvents-laptops-agentic-ai",
-        "decision": "queued",
-        "job_id": "2026-10-25-nvidia-rtx-spark-pc-reel",
-        "priority": 1
-      },
-      {
-        "story": "Weekly roundup v2: swapped the OpenAI offline training and Google Gmail ads slides (their source links matched live posts, so the first version was skipped) for OpenAI agents muting their monitors and Claude's scorpion toxin binders",
-        "source": "https://bleepingcomputer.com/news/security/openai-agents-disabled-safety-monitoring-one-lied-about-it",
-        "decision": "queued",
-        "job_id": "2026-10-25-week-in-ai-v2",
-        "priority": 1
-      },
-      {
-        "story": "Grok releases the first seven minutes of its AI-generated Odyssey (TechCrunch)",
-        "source": "https://techcrunch.com",
-        "decision": "skipped",
-        "reason": "An entertainment demo rather than a major xAI launch, today is already at 8 news jobs, and it would expire before the next morning window."
-      },
-      {
-        "story": "Uber expands ChatGPT Work to more than 30,000 employees",
-        "decision": "skipped",
-        "reason": "Single minor source and the day is full."
-      },
-      {
-        "story": "Owners of Elvis Presley's music sue Anthropic",
-        "decision": "covered",
-        "reason": "Already covered as 2026-10-24-elvis-rights-holders-sue-anthropic."
-      },
-      {
-        "story": "Independent auditors find gaps in OpenAI agent monitoring (BankInfoSecurity)",
-        "decision": "covered",
-        "reason": "Same audit already covered in 2026-10-23-openai-trains-ai-with-no-internet."
-      },
-      {
-        "story": "Anthropic invites life-science labs to propose research collaborations with Claude",
-        "decision": "skipped",
-        "reason": "Single secondary source, small program announcement, day is full."
-      },
-      {
-        "story": "Musk warns of an AI lending crunch after SpaceX closes $40B GPU financing",
-        "decision": "skipped",
-        "reason": "Single market source seen in leads, and the day is full."
-      }
-    ],
-    "requests": []
-  },
-  {
     "run_at": "2026-10-26T02:02:24.380Z",
     "summary": "Sunday 22:00 New York run: no open links or requests; queued Anthropic's confirmation that Claude pulled Georgia vote count data (priority 1, sensitive, review) for Monday's first window.",
     "considered": [
@@ -5339,6 +5287,64 @@
         "story": "Cognizant says 21,000 employees earned OpenAI badges",
         "decision": "skipped",
         "reason": "Corporate training announcement, low interest."
+      }
+    ],
+    "requests": []
+  },
+  {
+    "run_at": "2026-11-02T00:54:14.771Z",
+    "summary": "Sunday night run (19:53 New York, Nov 1): no open links or requests and no new priority 1 news; Nov 1 already has 8 desk jobs, so nothing was queued. Note: the weekly roundup 2026-11-01-week-in-ai was skipped by the pipeline because it shares a source link with 2026-10-30-ai-spending-fears-1-trillion-tech-selloff.",
+    "considered": [
+      {
+        "story": "OpenAI turns to Google TPUs to reduce reliance on NVIDIA (TechRadar)",
+        "source": "https://techradar.com/pro/openai-pledges-to-buy-google-ai-chips-in-its-first-move-away-from-depending-solely-on-nvidia",
+        "decision": "covered",
+        "reason": "Already covered as 2026-10-28-openai-buying-google-tpu-chips."
+      },
+      {
+        "story": "OpenAI raises less than half of its $30 billion target (WSJ)",
+        "decision": "covered",
+        "reason": "Same funding story as 2026-10-31-openai-cuts-funding-target-10-billion."
+      },
+      {
+        "story": "Anthropic says you can't be mean to Claude (KSL News)",
+        "decision": "skipped",
+        "reason": "Explainer on an older policy, not new news, and today's cap of 8 desk jobs is full."
+      },
+      {
+        "story": "OpenAI adds a direct board route for AI safety concerns (OpenTools)",
+        "decision": "skipped",
+        "reason": "Single minor outlet so far; hold for tomorrow if major outlets confirm it."
+      },
+      {
+        "story": "Google Chrome can use Gmail data for autofill suggestions (BetaNews)",
+        "decision": "skipped",
+        "reason": "Possible consumer story for tomorrow, but today's cap is full and it needs a second source."
+      },
+      {
+        "story": "Epoch puts OpenAI's Abilene site above 1M H100 equivalents (FourWeekMBA)",
+        "decision": "skipped",
+        "reason": "Secondhand summary of a research estimate; cap is full for today."
+      },
+      {
+        "story": "Fake 'Anthropic leak' on Hugging Face holds random-number tensors (FourWeekMBA)",
+        "decision": "skipped",
+        "reason": "Single low-tier source and a debunked non-event."
+      },
+      {
+        "story": "AI agent swarms in Minecraft drown in bureaucracy (Tom's Hardware)",
+        "decision": "skipped",
+        "reason": "Fun but minor, already passed on earlier today, and the cap is full."
+      },
+      {
+        "story": "Brazilian lawyers fined for a prompt injection hidden in a court filing (Tom's Hardware)",
+        "decision": "skipped",
+        "reason": "Held for the Nov 2 morning runs; today's cap is full."
+      },
+      {
+        "story": "DeepSeek launches an AI Super Agent (Digital Trends)",
+        "decision": "skipped",
+        "reason": "Still one source and not a priority company."
       }
     ],
     "requests": []
