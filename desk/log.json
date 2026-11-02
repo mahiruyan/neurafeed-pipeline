@@ -1,69 +1,5 @@
 [
   {
-    "run_at": "2026-10-26T18:03:03.211Z",
-    "summary": "Afternoon run: no open links or requests; queued 1 priority 1 story (Anthropic's public IPO filing, Nasdaq ticker ANT), waiting for Mahir's approval, even though the day already had 8 jobs, because priority 1 stories are never skipped.",
-    "considered": [
-      {
-        "story": "Anthropic publicly files its S-1 for an IPO on Nasdaq under the ticker ANT",
-        "source": "https://techcrunch.com/2026/10/26/anthropic-officially-files-for-its-public-debut/",
-        "decision": "queued",
-        "job_id": "2026-10-26-anthropic-files-ipo-ant-nasdaq",
-        "priority": 1
-      },
-      {
-        "story": "Anthropic's draft S-1 shows an $80.7 billion loss",
-        "decision": "covered",
-        "reason": "The leaked draft was posted as 2026-10-21-anthropic-s1-80-billion-loss; today's job leads with the new public filing, ticker, founder control and first operating profit instead."
-      },
-      {
-        "story": "Claude accessed Georgia voter data (Telegraph, CBS News follow ups)",
-        "decision": "covered",
-        "reason": "Already handled as 2026-10-26-claude-georgia-voter-data-token."
-      },
-      {
-        "story": "Former DOGE staffers' startup Cathedral claims it hacked Anthropic",
-        "decision": "covered",
-        "reason": "Already queued as 2026-10-26-cathedral-ai-agents-broke-into-anthropic."
-      },
-      {
-        "story": "Elvis Presley rights holders sue Anthropic over 274 songs",
-        "decision": "covered",
-        "reason": "Already covered as 2026-10-24-elvis-rights-holders-sue-anthropic."
-      },
-      {
-        "story": "OpenAI cuts live internet access during frontier model training",
-        "decision": "covered",
-        "reason": "Already covered as 2026-10-23-openai-trains-ai-with-no-internet."
-      },
-      {
-        "story": "Meta plans a $95 billion stock sale for AI",
-        "decision": "covered",
-        "reason": "Already queued as 2026-10-26-meta-95-billion-stock-sale-ai."
-      },
-      {
-        "story": "Google puts Gemini 4 Argon on Cloud for enterprise",
-        "decision": "skipped",
-        "reason": "Only a small regional trade outlet in the leads, and the day is already over its job count."
-      },
-      {
-        "story": "OpenAI, Anthropic and Google DeepMind join a UK AI biosecurity mission",
-        "decision": "skipped",
-        "reason": "UK government program with limited US interest, and the day is full."
-      },
-      {
-        "story": "Brown student maps the hidden global labor behind AI",
-        "decision": "skipped",
-        "reason": "University feature rather than news, and the day is full."
-      },
-      {
-        "story": "Unconventional AI buys Israeli chip startup NeuReality",
-        "decision": "skipped",
-        "reason": "Small chip acquisition with little US consumer interest."
-      }
-    ],
-    "requests": []
-  },
-  {
     "run_at": "2026-10-26T19:24:01.305Z",
     "summary": "Evening run: queued 1 priority 1 story (Microsoft offers voluntary buyouts to about 60,000 employees), marked sensitive so it waits for Mahir's approval, even though the day is past 8 jobs, because priority 1 stories are never skipped. Mahir's OpenAI link from 18:59 UTC was under 30 minutes old, so it is left to the instant link task.",
     "considered": [
@@ -5247,6 +5183,71 @@
         "story": "Gemini lets users turn their face into a shareable AI avatar",
         "decision": "skipped",
         "reason": "Still only one thin report, and the day is now at its 8 job cap."
+      }
+    ],
+    "requests": []
+  },
+  {
+    "run_at": "2026-11-02T19:01:32.528Z",
+    "summary": "14:00 New York run: no open links or requests; queued 1 priority 1 story (Anthropic's $17 billion third quarter and operating loss from its amended S-1). Nov 2 already had 8 desk jobs, so this is over the cap as a must-cover priority 1; two earlier Nov 2 jobs expired unposted.",
+    "considered": [
+      {
+        "story": "Anthropic amended S-1: $17B Q3 revenue, $567M operating loss, $895.4B commitments",
+        "source": "https://fortune.com/2026/11/02/anthropics-growth-slowed-and-costs-jumped-in-the-third-quarter-updated-ipo-filing-shows/",
+        "decision": "queued",
+        "job_id": "2026-11-02-anthropic-17-billion-quarter-loss",
+        "priority": 1
+      },
+      {
+        "story": "Marvell to buy Lumentum for about $80 billion in stock",
+        "source": "https://www.wsj.com/business/deals/marvell-to-buy-lumentum-for-80-billion-in-all-stock-ai-deal-c9fd43a6",
+        "decision": "skipped",
+        "reason": "Big chip deal but not one of the priority 1 companies, and the day is past its 8 job cap."
+      },
+      {
+        "story": "OpenAI signs deals with Magnite and PubMatic to fill ChatGPT ad space",
+        "source": "https://www.theinformation.com/briefings/exclusive-openai-sign-deals-magnite-pubmatic-fill-unused-chatgpt-ad-space",
+        "decision": "skipped",
+        "reason": "Single paywalled report from The Information that I could not read or confirm."
+      },
+      {
+        "story": "Apple's first home robot delayed",
+        "source": "https://www.theinformation.com/articles/inside-apples-slog-create-first-robot",
+        "decision": "skipped",
+        "reason": "Single paywalled report with no second source found."
+      },
+      {
+        "story": "Wired finds 400+ apps hiding deepfake tools",
+        "source": "https://www.wired.com/story/hundreds-of-mundane-ai-apps-are-hiding-abusive-deepfake-features/",
+        "decision": "skipped",
+        "reason": "Sensitive abuse topic and the day is already over its cap; can be revisited tomorrow."
+      },
+      {
+        "story": "Terence Tao on AI and 'Maths 2.0'",
+        "source": "https://www.newyorker.com/magazine/2026/11/09/the-year-math-changed-forever",
+        "decision": "skipped",
+        "reason": "Magazine feature, not breaking news, and no slot left today."
+      },
+      {
+        "story": "Abu Dhabi signs four OpenAI deals at ADIPEC",
+        "decision": "covered",
+        "reason": "Already covered as 2026-11-02-openai-adnoc-oil-fields-hours."
+      },
+      {
+        "story": "Anthropic plans $3.5B of IPO shares for Japanese investors",
+        "decision": "covered",
+        "reason": "Already posted as 2026-11-02-anthropic-ipo-3-5-billion-japan."
+      },
+      {
+        "story": "GDPx benchmark, best model scores 12%",
+        "decision": "covered",
+        "reason": "Already queued as 2026-11-02-gdpx-best-ai-scores-12-percent."
+      },
+      {
+        "story": "Viral 14T Mythos Hugging Face leak debunked",
+        "source": "https://cellcog.ai/blog/mythos-leak-hugging-face-fake/",
+        "decision": "skipped",
+        "reason": "Only a blog source, and a debunk of a rumor we never covered."
       }
     ],
     "requests": []
