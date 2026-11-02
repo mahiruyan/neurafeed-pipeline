@@ -9,6 +9,8 @@ const ROOT = path.join(__dirname, '..');
 const REVIEW = process.argv[2] || '/tmp/people-review';
 const ONLY = (process.argv[3] || '').split(',').filter(Boolean);
 const UA = { 'User-Agent': 'NeuraFeedPipeline/0.1 (https://neurafeedai.com; hello@neurafeedai.com)' };
+let warned = 0;
+const warn = (m) => { if (warned++ < 6) console.log(`::warning::${m.slice(0, 300)}`); };
 const plain = (h) => String(h || '').replace(/<[^>]+>/g, '').replace(/\s+/g, ' ').trim();
 
 async function candidates(name) {
@@ -28,12 +30,12 @@ const PROMPT = (name) => `This photo is said to show ${name}. Do not identify an
 
 async function judge(c, name, dir) {
   const file = path.join(dir, `${c.title.replace(/[^a-z0-9]+/gi, '_').slice(0, 80)}.jpg`);
-  try { await download(c.url, file, 30000); } catch { return null; }
+  try { await download(c.url, file, 30000); } catch (e) { warn(`download ${c.title}: ${e.message}`); return null; }
   try {
     const t = await askFalVision(file, PROMPT(name), 200);
     const v = JSON.parse(t.slice(t.indexOf('{'), t.lastIndexOf('}') + 1));
     return { ...c, file, ...v };
-  } catch (e) { console.log(`vision ${c.title}: ${e.message}`); return null; }
+  } catch (e) { warn(`vision ${c.title}: ${e.message}`); return null; }
 }
 
 (async () => {
