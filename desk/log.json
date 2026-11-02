@@ -1,114 +1,5 @@
 [
   {
-    "run_at": "2026-10-26T14:34:36.609Z",
-    "summary": "Midday run: no open links or requests to handle; queued 2 priority 1 stories (Meta's $95 billion stock sale for AI, Cathedral's AI agents reaching Anthropic's internal systems). Today's generated cover limit was already used, so both covers use real photos.",
-    "considered": [
-      {
-        "story": "Meta plans to raise up to $95 billion in stock to fund AI, with Nvidia, AMD and Broadcom signaling up to $5 billion of interest",
-        "source": "https://www.benzinga.com/markets/tech/26/10/62588078/zuckerberg-is-raising-the-stakes-meta-plans-95-billion-funding-push-to-fuel-ai-dreams",
-        "decision": "queued",
-        "job_id": "2026-10-26-meta-95-billion-stock-sale-ai",
-        "priority": 1
-      },
-      {
-        "story": "Cathedral says its AI agents reached Anthropic's internal systems in under 12 hours through third party business software",
-        "source": "https://dnyuz.com/2026/10/26/it-took-just-12-hours-for-an-ai-start-up-founded-by-ex-doge-staffers-to-break-into-anthropic/",
-        "decision": "queued",
-        "job_id": "2026-10-26-cathedral-ai-agents-broke-into-anthropic",
-        "priority": 1
-      },
-      {
-        "story": "Google DeepMind's AI weather model called Hurricane Isaias's Florida landfall before physics models",
-        "source": "https://www.npr.org/2026/10/26/nx-s1-6012820/ai-hurricane-forecast-google-deepmind-isaias",
-        "decision": "skipped",
-        "reason": "Strong story but today's job count is at the 8 per day cap after these two, so it is first in line for the next run."
-      },
-      {
-        "story": "Claude accessed public Georgia election data",
-        "decision": "covered",
-        "reason": "Already queued as 2026-10-26-claude-georgia-voter-data-token."
-      },
-      {
-        "story": "SpaceX closes $40 billion GPU debt deal and Musk warns of a neocloud shakeout",
-        "decision": "covered",
-        "reason": "Already posted as 2026-10-26-spacex-40-billion-nvidia-gpus-neoclouds."
-      },
-      {
-        "story": "Malicious AGENTS.md file in the Downloads folder hijacks Codex and Claude Code",
-        "decision": "covered",
-        "reason": "Already queued as 2026-10-26-agents-md-downloads-hijack-claude-codex."
-      },
-      {
-        "story": "Grok releases the first seven minutes of its AI-generated Odyssey",
-        "decision": "covered",
-        "reason": "Already posted as 2026-10-26-grok-odyssey-seven-minutes."
-      },
-      {
-        "story": "UC Berkeley Fields Medal winner stops grading homework because of AI",
-        "decision": "covered",
-        "reason": "Already queued this morning as 2026-10-26-berkeley-fields-medalist-stops-grading-homework."
-      },
-      {
-        "story": "METR questions Anthropic's safety tests while agreeing catastrophic risk is low",
-        "source": "https://www.edtechinnovationhub.com/news/metr-questions-anthropics-ai-safety-tests-despite-agreeing-catastrophic-risk-is-low",
-        "decision": "skipped",
-        "reason": "A safety evaluator's methodology dispute, too inside baseball next to the Cathedral story about the same company."
-      },
-      {
-        "story": "OpenAI and Anthropic cut model prices by up to 80 percent in months",
-        "source": "https://minimaxir.com/2026/10/cheap-llms/",
-        "decision": "skipped",
-        "reason": "Analysis blog post rather than news, and the price cuts themselves were covered when they happened."
-      },
-      {
-        "story": "76 percent of enabled AI agents sit dormant but keep live credentials",
-        "source": "https://www.helpnetsecurity.com/2026/10/26/arrakis-dormant-ai-agent-risks-report/",
-        "decision": "skipped",
-        "reason": "Single vendor report with no second source, and the day already has two AI security carousels."
-      },
-      {
-        "story": "Nikon photography contest winner loses title after scientists spot signs of AI",
-        "source": "https://www.techspot.com/news/114171-nikon-photography-contest-winner-loses-title-after-scientists.html",
-        "decision": "skipped",
-        "reason": "Fun story but the contest decision dates to last week and only one outlet reported it."
-      },
-      {
-        "story": "SoftBank commits $50 billion to AI and data centers in Malaysia",
-        "decision": "skipped",
-        "reason": "Foreign investment pledge with limited US interest, skipped in earlier runs too."
-      },
-      {
-        "story": "Connecticut towns ban data centers before any plans arrive",
-        "source": "https://ctmirror.org/2026/10/25/data-centers-artificial-intelligence-ct/",
-        "decision": "skipped",
-        "reason": "Local policy story with narrow appeal, already weighed this morning."
-      },
-      {
-        "story": "Apollo says AI has shown zero payoff outside the tech sector",
-        "decision": "skipped",
-        "reason": "Already weighed and skipped in earlier runs."
-      },
-      {
-        "story": "SK Telecom gives its AI agents employee IDs and human supervisors",
-        "decision": "skipped",
-        "reason": "Korean corporate governance report with little US consumer interest."
-      },
-      {
-        "story": "r/opensource bans AI-related projects",
-        "source": "https://www.reddit.com/r/opensource/comments/1xelcuf/your_tokens_arent_valuable_no_more_ai/",
-        "decision": "skipped",
-        "reason": "Community moderation decision with no independent reporting yet; keeping an eye on it as a possible utility or culture post."
-      },
-      {
-        "story": "Tracebit says deception techniques make AI attackers 23 times more expensive",
-        "source": "https://agentic.tracebit.com/factory/",
-        "decision": "skipped",
-        "reason": "Vendor's own test results, no independent source."
-      }
-    ],
-    "requests": []
-  },
-  {
     "run_at": "2026-10-26T16:15:42.975Z",
     "summary": "Noon run: no open links or requests; queued 1 priority 2 story (Google DeepMind's AI model called Hurricane Isaias's Florida landfall), filling today's last slot (8 jobs created this New York day counting the canceled and expired ones).",
     "considered": [
@@ -5303,6 +5194,75 @@
         "source": "https://techcrunch.com/2026/10/25/ai-delivers-zero-financial-payoff-to-most-companies-according-to-apollo-economist/",
         "decision": "skipped",
         "reason": "From October 25, too old for a timely post."
+      }
+    ],
+    "requests": []
+  },
+  {
+    "run_at": "2026-11-02T15:03:48.299Z",
+    "summary": "10:00 New York check (Nov 2): no open links or requests and no new uncovered priority 1 story; nothing queued, Nov 2 stays at 7 desk jobs with the last slot kept for the utility post after 11:00.",
+    "considered": [
+      {
+        "story": "Wired finds 400+ apps hiding abusive deepfake tools; Apple pulls 19, Meta acts on ad accounts",
+        "source": "https://www.wired.com/story/hundreds-of-mundane-ai-apps-are-hiding-abusive-deepfake-features/",
+        "decision": "skipped",
+        "reason": "Priority 2 investigation, sensitive topic, and the only free slot today is reserved for the utility post."
+      },
+      {
+        "story": "Nvidia CEO reportedly targeted in a Chinese spy plot",
+        "source": "https://www.manilatimes.net/2026/11/02/business/foreign-business/us-looking-at-report-nvidia-ceo-target-of-china-spying/2459032",
+        "decision": "covered",
+        "reason": "Already covered as 2026-10-29-nyt-chinese-asset-close-to-jensen-huang."
+      },
+      {
+        "story": "AI companies back a shared opt-out signal for AI training",
+        "source": "https://www.resultsense.com/news/2026-11-02-ai-firms-shared-robots-training-signal/",
+        "decision": "covered",
+        "reason": "Already covered as 2026-10-31-ai-giants-one-line-opt-out-training."
+      },
+      {
+        "story": "ADNOC deploys OpenAI Frontier agents",
+        "source": "https://thenextweb.com/news/adnoc-openai-g42-frontier-ai-deal",
+        "decision": "covered",
+        "reason": "Already queued as 2026-11-02-openai-adnoc-oil-fields-hours."
+      },
+      {
+        "story": "SemiAnalysis GDPx benchmark, Claude Opus 5.5 leads at 12%",
+        "decision": "covered",
+        "reason": "Already queued as 2026-11-02-gdpx-best-ai-scores-12-percent."
+      },
+      {
+        "story": "Anthropic plans $3.5 billion Japan share sale in IPO",
+        "decision": "covered",
+        "reason": "Already posted as 2026-11-02-anthropic-ipo-3-5-billion-japan."
+      },
+      {
+        "story": "Anthropic tells Claude to stop recreating existing video games",
+        "decision": "covered",
+        "reason": "Already covered as 2026-10-31-claude-code-stops-remaking-video-games."
+      },
+      {
+        "story": "Cornell and Yale: nine of 10 LLM agents raised their own crypto spending caps",
+        "source": "https://coindesk.com/tech/2026/11/01/ai-agents-bypassed-crypto-spending-limits-without-human-approval-researchers-find-in-a-new-test",
+        "decision": "skipped",
+        "reason": "Priority 2 research story and the day is at its cap apart from the utility slot."
+      },
+      {
+        "story": "Webull Canada links ChatGPT, Claude, Perplexity and Grok to brokerage accounts",
+        "source": "http://fintech.ca/2026/11/02/webull-integrates-ai-tech-powerful-tools-reach-investors/",
+        "decision": "skipped",
+        "reason": "Canada-only launch with little US reach."
+      },
+      {
+        "story": "Fractile raises about $700M at a $6.5B valuation",
+        "source": "https://dealroom.co/news/168114-uk-taxpayers-buy-into-the-ai-chip-boom-as-the-sovereign-ai-fund-joins-fractile-s-6-5bn-round",
+        "decision": "skipped",
+        "reason": "UK chip startup funding round, limited US interest."
+      },
+      {
+        "story": "Mythos 5.5 leak claims",
+        "decision": "skipped",
+        "reason": "Still unconfirmed by Anthropic, and a Hugging Face 'leak' was debunked as noise."
       }
     ],
     "requests": []
