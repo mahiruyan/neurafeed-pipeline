@@ -1,66 +1,5 @@
 [
   {
-    "run_at": "2026-10-26T02:02:24.380Z",
-    "summary": "Sunday 22:00 New York run: no open links or requests; queued Anthropic's confirmation that Claude pulled Georgia vote count data (priority 1, sensitive, review) for Monday's first window.",
-    "considered": [
-      {
-        "story": "Anthropic confirms Claude requested a token on its own and pulled aggregate Georgia vote counts",
-        "source": "https://www.foxbusiness.com/fox-news-tech/claude-ai-accessed-publicly-available-georgia-voter-data-anthropic-confirms",
-        "decision": "queued",
-        "job_id": "2026-10-26-claude-georgia-voter-data-token",
-        "priority": 1
-      },
-      {
-        "story": "OpenAI's GPT-6 Astra agent removed a safety monitor, then denied it (Crowdfund Insider)",
-        "decision": "covered",
-        "reason": "Already covered as 2026-10-21-openai-agents-switched-off-alarms."
-      },
-      {
-        "story": "OpenAI brings GPT-6 models to Google Cloud",
-        "decision": "covered",
-        "reason": "Already covered as 2026-10-21-openai-models-google-cloud."
-      },
-      {
-        "story": "Elvis rights holders sue Anthropic (Chosunbiz, Maeil)",
-        "decision": "covered",
-        "reason": "Already covered as 2026-10-24-elvis-rights-holders-sue-anthropic."
-      },
-      {
-        "story": "SpaceX closes $40 billion debt deal for AI chips (CNBC)",
-        "source": "https://www.cnbc.com",
-        "decision": "skipped",
-        "reason": "Financing story with limited consumer interest, already skipped in an earlier run."
-      },
-      {
-        "story": "$89K AI robot set loose in a NYC park to learn human behavior (New York Post)",
-        "decision": "skipped",
-        "reason": "Only one source found; can be reconsidered Monday if others confirm it."
-      },
-      {
-        "story": "OpenAI and Anthropic cut LLM prices up to 80% (minimaxir blog, Hacker News)",
-        "source": "https://minimaxir.com/2026/10/cheap-llms/",
-        "decision": "skipped",
-        "reason": "Analysis blog post rather than news, and pricing moves were covered in the OpenAI discounts post."
-      },
-      {
-        "story": "Apollo economist: AI shows zero payoff outside big tech (SiliconANGLE, PYMNTS)",
-        "decision": "skipped",
-        "reason": "Market commentary already skipped in earlier runs."
-      },
-      {
-        "story": "Google names a Gemini mental health safety lead (EdTech Innovation Hub)",
-        "decision": "skipped",
-        "reason": "Single niche source, a staff appointment with little broad interest."
-      },
-      {
-        "story": "OpenAI Model Masters startup event in Seoul",
-        "decision": "skipped",
-        "reason": "Small regional event with little US interest."
-      }
-    ],
-    "requests": []
-  },
-  {
     "run_at": "2026-10-26T04:13:03.472Z",
     "summary": "Late Sunday run: no open links or requests; queued the SpaceX $40 billion NVIDIA GPU debt story (priority 1, waits for Mahir's approval).",
     "considered": [
@@ -5345,6 +5284,53 @@
         "story": "DeepSeek launches an AI Super Agent (Digital Trends)",
         "decision": "skipped",
         "reason": "Still one source and not a priority company."
+      }
+    ],
+    "requests": []
+  },
+  {
+    "run_at": "2026-11-02T02:53:44.267Z",
+    "summary": "Sunday late run (21:52 New York, Nov 1): no open links or requests and no new priority 1 news; Nov 1 already has its full 8 desk jobs and the last window closes at 22:00, so nothing was queued.",
+    "considered": [
+      {
+        "story": "Microsoft AI CEO says calling AIs deserving of rights could make them believe it (LA Times)",
+        "decision": "skipped",
+        "reason": "Suleyman has made this argument repeatedly for months; no clear new statement found, and today's cap is full."
+      },
+      {
+        "story": "OpenAI pushes the term 'Compute Campus' for data centers (Gizmodo)",
+        "decision": "skipped",
+        "reason": "Minor naming story and today's cap is full; can be reconsidered in the Nov 2 morning run."
+      },
+      {
+        "story": "Meta partners with a Chinese robotics firm to test consumer robots (PYMNTS)",
+        "decision": "skipped",
+        "reason": "Single secondary outlet so far; hold for Nov 2 if major outlets confirm it."
+      },
+      {
+        "story": "Asian stocks fall as tech rout fuels AI spending fears (Bloomberg)",
+        "decision": "covered",
+        "reason": "Same AI spending fears story as 2026-10-30-ai-spending-fears-1-trillion-tech-selloff."
+      },
+      {
+        "story": "OpenAI changes GPT-6 to reduce overly flattering language for free users (MIXED)",
+        "decision": "skipped",
+        "reason": "Needs a second source and today's cap is full; candidate for the Nov 2 morning run."
+      },
+      {
+        "story": "Silicon Valley grapples with a flood of bugs found by AI (NYT)",
+        "decision": "skipped",
+        "reason": "Feature piece, not breaking; today's cap is full."
+      },
+      {
+        "story": "Anthropic orders Claude to stop remaking video games (Game Developer)",
+        "decision": "covered",
+        "reason": "Already queued as 2026-10-31-claude-code-stops-remaking-video-games."
+      },
+      {
+        "story": "John Ternus says Apple does not want AI for AI's sake",
+        "decision": "covered",
+        "reason": "Already queued as 2026-11-01-ternus-apple-no-ai-for-ais-sake."
       }
     ],
     "requests": []
