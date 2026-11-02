@@ -1,0 +1,35 @@
+name: People library
+
+# Builds assets/people/index.json (strong, freely licensed photos of people often in AI news) and
+# contact sheets for review on the people-review branch.
+on:
+  workflow_dispatch:
+    inputs:
+      only: { description: 'slugs to (re)build, comma separated; empty = all', required: false, default: '' }
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - run: npm install --no-audit --no-fund
+      - run: which ffmpeg || (sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg)
+      - run: node tools/build-faces.js /tmp/people-review "${{ inputs.only }}"
+        env:
+          FAL_KEY: ${{ secrets.FAL_KEY }}
+      - name: Save the index
+        run: |
+          git config user.name "neurafeed-bot"; git config user.email "bot@neurafeed.ai"
+          git add assets/people/index.json
+          git diff --cached --quiet || (git commit -qm "people library [skip ci]" && (git push -q || (git pull -q --rebase && git push -q)))
+      - name: Contact sheets
+        run: |
+          git checkout --orphan people-review && git rm -rqf --cached . && rm -rf people-review && cp -r /tmp/people-review people-review
+          git add -f people-review && git commit -qm "people review" && git push -f origin people-review
