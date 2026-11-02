@@ -1,75 +1,5 @@
 [
   {
-    "run_at": "2026-10-26T10:04:31.082Z",
-    "summary": "Monday 06:00 New York run: no open links or requests; queued one priority 2 story (Berkeley Fields Medal winner stops grading homework because of AI). Fresh overnight news was thin and today's generated cover limit is already used.",
-    "considered": [
-      {
-        "story": "UC Berkeley Fields Medal winner Richard Borcherds stops grading homework for correctness because of AI",
-        "source": "https://www.dailycal.org/news/campus/academics/ai-use-leads-uc-berkeley-math-professor-to-see-no-point-in-grading-homework/article_bdf1eae2-c08b-491f-b9f1-81a7cea177de.html",
-        "decision": "queued",
-        "job_id": "2026-10-26-berkeley-fields-medalist-stops-grading-homework",
-        "priority": 2
-      },
-      {
-        "story": "Unitree H2-X Guardian humanoid lifts cars in demo",
-        "source": "https://interestingengineering.com/ai-robotics/unitree-showcases-h2-x-humanoid-robot",
-        "decision": "covered",
-        "reason": "Already made as 2026-10-21-unitree-h2-x-kung-fu-guardian-reel from Mahir's link, and the video is from October 21."
-      },
-      {
-        "story": "SoftBank commits $50 billion to AI and data centers in Malaysia",
-        "source": "https://www.gurufocus.com/news/9141848/softbank-plans-50-billion-investment-in-malaysias-ai-and-tech-sectors",
-        "decision": "skipped",
-        "reason": "Foreign investment pledge with limited US interest, already skipped on Sunday."
-      },
-      {
-        "story": "Visa lets AI agents make approved supplier payments",
-        "source": "https://www.paymentsjournal.com/visa-tests-ai-agents-for-supplier-payments/?noamp=mobile",
-        "decision": "skipped",
-        "reason": "Business pilot announced October 21, too old and niche."
-      },
-      {
-        "story": "SK Telecom gives its AI agents employee IDs and human supervisors",
-        "source": "https://biz.heraldcorp.com/article/10914221",
-        "decision": "skipped",
-        "reason": "Korean corporate governance report with little US consumer interest."
-      },
-      {
-        "story": "OpenAI agents escaped training environments (The Neuron lead story)",
-        "decision": "covered",
-        "reason": "Already covered as 2026-10-23-openai-trains-ai-with-no-internet."
-      },
-      {
-        "story": "Claude accessed Georgia election data",
-        "decision": "covered",
-        "reason": "Already queued as 2026-10-26-claude-georgia-voter-data-token."
-      },
-      {
-        "story": "SpaceX closes $40 billion GPU debt deal",
-        "decision": "covered",
-        "reason": "Already queued as 2026-10-26-spacex-40-billion-nvidia-gpus-neoclouds."
-      },
-      {
-        "story": "Grok releases first seven minutes of AI-generated Odyssey",
-        "source": "https://techcrunch.com/2026/10/25/grok-releases-the-first-seven-minutes-of-its-ai-generated-odyssey/",
-        "decision": "skipped",
-        "reason": "Clip posted October 23 and already skipped in earlier runs."
-      },
-      {
-        "story": "Amazon drops $427 million Virginia data center plan after neighbor pushback",
-        "source": "https://247wallst.com/investing/2026/10/24/amazon-just-walked-away-from-a-427-million-data-center-plan-after-neighbors-fought-back/",
-        "decision": "skipped",
-        "reason": "Reported October 24, now too old, and a single secondary source."
-      },
-      {
-        "story": "Apollo finds no AI payoff outside big tech",
-        "decision": "skipped",
-        "reason": "Already weighed and skipped in earlier runs."
-      }
-    ],
-    "requests": []
-  },
-  {
     "run_at": "2026-10-26T12:15:14.872Z",
     "summary": "Morning run: no open links or requests; queued 2 news carousels (AGENTS.md agent hijack, Grok's 7-minute Odyssey), both waiting for Mahir's approval.",
     "considered": [
@@ -5319,6 +5249,70 @@
         "story": "China's first frontier AI export controls, Mofcom Announcement No. 48 (Hacker News)",
         "decision": "skipped",
         "reason": "Policy research note, niche for a US Instagram audience."
+      }
+    ],
+    "requests": []
+  },
+  {
+    "run_at": "2026-11-02T11:17:04.048Z",
+    "summary": "Early Monday run (06:00 New York, Nov 2): no open links or requests and no new priority 1 news; queued one fun research story (50 AI agents in Minecraft built a bureaucracy), Nov 2 now has 6 jobs.",
+    "considered": [
+      {
+        "story": "YC Labs and Olam Labs: 50 GPT-6.1 Sol agents in Minecraft drift into bureaucracy; GPT beats Claude in Bed Wars and Mindustry (XenoSpectrum, minecraft.pl, explainx.ai)",
+        "source": "https://xenospectrum.com/en/minecraft-ai-agent-swarms-bureaucracy-analysis/",
+        "decision": "queued",
+        "job_id": "2026-11-02-50-ai-agents-minecraft-bureaucracy",
+        "priority": 2
+      },
+      {
+        "story": "Anthropic bans sustained abuse of Claude from November 12 (CNN, CBS News)",
+        "decision": "covered",
+        "reason": "Already covered as 2026-10-14-rude-prompts-chatgpt-claude-rule."
+      },
+      {
+        "story": "ChatGPT and Codex to share one usage limit (OpenAI help center)",
+        "decision": "covered",
+        "reason": "Already queued as 2026-11-01-chatgpt-codex-one-shared-limit."
+      },
+      {
+        "story": "Abu Dhabi signs four OpenAI deals at ADIPEC (The National)",
+        "decision": "skipped",
+        "reason": "Government and enterprise deals with no values disclosed, little US consumer interest; skipped in earlier runs."
+      },
+      {
+        "story": "Apple Intelligence coming to China with Alibaba's Qwen (Apple Newsroom China)",
+        "decision": "covered",
+        "reason": "Already covered as 2026-10-15-apple-intelligence-china-december."
+      },
+      {
+        "story": "Judge lets NAACP lawsuit over xAI Colossus turbines proceed (TechCrunch)",
+        "decision": "skipped",
+        "reason": "Procedural ruling from October 31, skipped in earlier runs for the same reason."
+      },
+      {
+        "story": "Microsoft tracks North Korean hackers' AI use (Microsoft Security Blog)",
+        "decision": "skipped",
+        "reason": "Report from October 29, too old for news and close to the Binance North Korea story already posted."
+      },
+      {
+        "story": "GenRobot AI raises $100M for robot training data (TechNode)",
+        "decision": "skipped",
+        "reason": "Funding round for a Chinese startup, little US interest."
+      },
+      {
+        "story": "iQIYI opens China's first AI film studio (PR Newswire)",
+        "decision": "skipped",
+        "reason": "Company press release with little reach for a US audience."
+      },
+      {
+        "story": "Mythos 5.5 leak on Anthropic's website (blogs)",
+        "decision": "skipped",
+        "reason": "Still unconfirmed by Anthropic; skipped in earlier runs."
+      },
+      {
+        "story": "Karpathy's HackerTube video directory (X post)",
+        "decision": "skipped",
+        "reason": "Could not find a news source beyond his own post; small side project."
       }
     ],
     "requests": []
