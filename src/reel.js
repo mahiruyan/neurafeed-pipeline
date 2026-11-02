@@ -265,6 +265,21 @@ async function sourceFor(job, outDir) {
   return { src: download(v.url, dir), note, job };
 }
 
+function brightestMoment(file, rect, duration) {
+  const times = [1, 2, 3, 4, 5, 6, 8, 10, 12].filter((t) => t < Math.max(1.5, duration - 0.5));
+  let best = { t: 1, v: -1 };
+  for (const t of times) {
+    try {
+      const crop = rect ? `crop=${rect.w}:${rect.h}:${rect.x}:${rect.y},` : '';
+      const raw = execFileSync('ffmpeg', ['-v', 'error', '-ss', String(t), '-i', file, '-frames:v', '1', '-vf', `${crop}scale=48:-2,format=gray`, '-f', 'rawvideo', '-'], { maxBuffer: 16 * 1024 * 1024 });
+      let sum = 0; for (const b of raw) sum += b;
+      const mean = raw.length ? sum / raw.length : 0;
+      if (mean > best.v + 4) best = { t, v: mean };
+    } catch { /* skip this moment */ }
+  }
+  return best.t;
+}
+
 async function renderReel(job, outDir, localSource) {
   fs.mkdirSync(outDir, { recursive: true });
   const got = localSource ? { src: localSource, job } : await sourceFor(job, outDir);
@@ -280,8 +295,12 @@ async function renderReel(job, outDir, localSource) {
   const rect = await renderFrame(job, lay, framePng);
   const out = path.join(outDir, 'reel.mp4');
   compose(src, info, framePng, rect, out, job);
-  // A still of the finished Reel for previews and notifications.
-  run('ffmpeg', ['-y', '-ss', '1', '-i', out, '-frames:v', '1', '-q:v', '3', path.join(outDir, 'preview.jpg')]);
+  // The Reel's cover (grid thumbnail) and the preview: video.cover_at (seconds) when set, otherwise
+  // the brightest of a few early frames inside the video box, so a dark intro or a logo card is not
+  // the thumbnail. Saved in cover.json; publish passes it to Instagram as thumb_offset.
+  const coverAt = job.video?.cover_at != null ? Number(job.video.cover_at) : brightestMoment(out, rect, probe(out).duration);
+  fs.writeFileSync(path.join(outDir, 'cover.json'), JSON.stringify({ cover_at: coverAt }) + '\n');
+  run('ffmpeg', ['-y', '-ss', String(coverAt), '-i', out, '-frames:v', '1', '-q:v', '3', path.join(outDir, 'preview.jpg')]);
   fs.rmSync(framePng, { force: true });
   fs.rmSync(path.join(outDir, 'src'), { recursive: true, force: true });
   return { video: out, preview: path.join(outDir, 'preview.jpg'), layout: lay.mode, source: info, crop: info.crop || null, resolved: got.resolved || null, note: got.note || null };

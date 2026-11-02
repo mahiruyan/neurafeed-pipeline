@@ -70,6 +70,14 @@ async function waitPublic(url) {
   throw new Error(`Video is not reachable yet at ${url}`);
 }
 
+// The frame chosen at render time (out/<id>/cover.json) as the Reel's grid thumbnail.
+function coverOffset(job) {
+  try {
+    const at = Number(JSON.parse(fs.readFileSync(path.join(__dirname, '..', 'out', job.id, 'cover.json'), 'utf8')).cover_at);
+    return Number.isFinite(at) && at >= 0 ? { thumb_offset: String(Math.round(at * 1000)) } : {};
+  } catch { return {}; }
+}
+
 async function publishReel(job, files) {
   const url = `${VIDEO_BASE.replace(/\/$/, '')}/${job.id}/${path.basename(files[0])}`;
   await waitPublic(url);
@@ -78,6 +86,7 @@ async function publishReel(job, files) {
     video_url: url,
     caption: job.caption,
     share_to_feed: 'true',
+    ...coverOffset(job),
   });
   // Videos take a while to process: check every 15 seconds for up to 8 minutes.
   for (let i = 0; i < 32; i++) {
