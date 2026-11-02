@@ -103,14 +103,14 @@ const antonH = (size, align, text) => `<h1 style="margin:0;font-family:Anton;fon
 function fitHeadline(text, width, height) {
   const len = text.replace(/\\\*/g, '*').replace(/\*/g, '').length;
   for (let size = 150; size >= 78; size -= 4) {
-    const perLine = Math.floor(width / (size * 0.43));
+    const perLine = Math.floor(width / (size * 0.45));
     const lines = Math.ceil((len * 1.1) / Math.max(1, perLine));
     if (lines <= 5 && lines * size * 0.98 <= height) return size;
   }
   return 78;
 }
 function coverV2(s, img, badges) {
-  const size = s.size || fitHeadline(s.headline, 1000, 470);
+  const size = s.size || fitHeadline(s.headline, 1000, 420);
   return `<div style="position:relative;width:1080px;height:1350px;overflow:hidden;background:#000;color:#fff">
 <img src="${img}" style="position:absolute;top:0;left:0;width:1080px;height:880px;object-fit:cover;object-position:${s.pos || 'center 30%'}">
 <div style="position:absolute;top:520px;left:0;width:1080px;height:380px;background:linear-gradient(180deg,rgba(0,0,0,0) 0%,rgba(0,0,0,.88) 72%,#000 100%)"></div>
