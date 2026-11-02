@@ -1,0 +1,126 @@
+{
+  "id": "2026-11-02-gdpx-best-ai-scores-12-percent",
+  "created_at": "2026-11-02T07:20:00Z",
+  "story_time": "2026-11-02T00:00:00Z",
+  "timely": false,
+  "sensitive": false,
+  "priority": 2,
+  "review": true,
+  "format": "carousel",
+  "site_category": "models",
+  "sources": [
+    { "name": "SemiAnalysis", "url": "https://newsletter.semianalysis.com/p/gdpx-measuring-frontier-model-capabilities" },
+    { "name": "Unite.AI", "url": "https://www.unite.ai/semianalysis-launches-gdpx-benchmark-spanning-11-agentic-domains/" },
+    { "name": "OfficeChai", "url": "https://officechai.com/ai/claude-opus-5-5-tops-semi-analysis-gdpx-benchmark-gemini-4-carbon-placed-second/" }
+  ],
+  "caption": "SemiAnalysis just launched GDPx, a test of 206 real expert tasks in 11 fields like chip design, finance, law and biology.\nThe best model, Claude Opus 5.5, scored 12%. Gemini 4 Carbon was second, GPT-6 Astra third.\nOn the pass or fail finance and legal tasks, every model scored zero.\n\nHow long until AI can do these jobs on its own?\n\nFollow @neurafeed.ai for daily AI news.\n\nSource: SemiAnalysis, Unite.AI, OfficeChai · Photo: SemiAnalysis",
+  "threads_text": "SemiAnalysis gave the top AI models 206 real expert tasks, from chip design to finance and law. The winner, Claude Opus 5.5, scored 12%, and every model got zero on the pass or fail finance and legal tasks. Is 12% scary or reassuring to you?",
+  "slides": [
+    {
+      "kind": "cover",
+      "headline": "The best AI model just took a test of real expert work. It scored *12%*",
+      "image": {
+        "url": "https://www.unite.ai/wp-content/uploads/2026/11/semianalysis-launches-gdpx-benchmark-spanning-11-agentic-domains.jpg",
+        "credit": "Unite.AI",
+        "fallback_urls": ["https://officechai.com/wp-content/uploads/2026/11/image.png"],
+        "generate": "A humanoid robot with a matte white body sits hunched at a cluttered office desk late at night, staring down at a thick stack of graded exam papers covered in red ink marks. Piles of binders, a cold coffee cup, tangled cables and a desk lamp around it, harsh fluorescent ceiling light, other empty desks in the background. The logo from the first image is big and exact, printed on a large banner hanging on the wall behind the robot. Blank surfaces, no readable text or labels on any object or paper. Generous headroom above the robot, the robot and the logo fill the upper two thirds of the frame. Photorealistic, high contrast, vertical composition, one clear subject, no letters, no watermarks. It must look like an unedited real photo from a news agency, not a painting, not digital art, no glow effects.",
+        "refs": ["assets/logos/claude.png"]
+      },
+      "pos": "center 30%",
+      "badges": [
+        { "url": "assets/logos/claude.png", "shape": "free" },
+        { "url": "assets/logos/openai.png", "shape": "free" }
+      ]
+    },
+    {
+      "kind": "card",
+      "heading": "A test built for *real work*",
+      "paras": [
+        "SemiAnalysis released GDPx on November 2: 206 tasks in 11 fields, from chip design and cybersecurity to finance, law and biology.",
+        "Each task can run up to 8 hours in a realistic work setup built with specialist partner companies."
+      ],
+      "image": {
+        "url": "https://substackcdn.com/image/fetch/$s_!6qa6!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F626a52b0-2fdf-4e15-ba75-0853f1fef8c4_2048x1965.png",
+        "credit": "SemiAnalysis",
+        "fit": "contain",
+        "fallback_urls": ["https://officechai.com/wp-content/uploads/2026/11/image-1024x982.png"]
+      },
+      "note": "The GDPx V1.0 leaderboard"
+    },
+    {
+      "kind": "card",
+      "heading": "Claude *on top*",
+      "paras": [
+        "Claude Opus 5.5 led with 12.0%. Google's Gemini 4 Carbon was second at 10.9% and OpenAI's GPT-6 Astra third at 9.6%.",
+        { "t": "Gemini cost $16.29 per task. Claude cost $51.41.", "strong": true }
+      ],
+      "image": {
+        "url": "https://substackcdn.com/image/fetch/$s_!em47!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F59e97d49-0b51-49a3-ba2f-980e0edda5c7_2048x1255.png",
+        "credit": "SemiAnalysis",
+        "fit": "contain",
+        "fallback_urls": ["https://substack-post-media.s3.amazonaws.com/public/images/59e97d49-0b51-49a3-ba2f-980e0edda5c7_2048x1255.png"]
+      },
+      "note": "Score vs cost per task"
+    },
+    {
+      "kind": "card",
+      "heading": "Zero in *finance and law*",
+      "paras": [
+        "Graded as pass or fail, every model scored zero on the finance and legal tasks.",
+        "In quant trading, 70 of 111 graded runs did worse than the reference strategy."
+      ],
+      "image": {
+        "url": "https://substackcdn.com/image/fetch/$s_!je1Q!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F23bfe0e6-277b-417a-b1db-d6223bb1f648_2048x1233.png",
+        "credit": "SemiAnalysis",
+        "fit": "contain",
+        "fallback_urls": ["https://substack-post-media.s3.amazonaws.com/public/images/23bfe0e6-277b-417a-b1db-d6223bb1f648_2048x1233.png"]
+      },
+      "note": "Scores by field are very uneven"
+    },
+    {
+      "kind": "card",
+      "heading": "The *safety* catch",
+      "paras": [
+        "SemiAnalysis says safety filters held back Claude and GPT-6 Astra on cyber, biology and alignment tasks.",
+        "Leave those three fields out and GPT-6 Astra edges Opus 5.5 by 0.1 points."
+      ],
+      "image": {
+        "url": "https://substackcdn.com/image/fetch/$s_!wrWt!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F6055d6d4-60f1-4bcc-88ea-596719f3cf9d_2048x1919.png",
+        "credit": "SemiAnalysis",
+        "fit": "contain",
+        "fallback_urls": ["https://substack-post-media.s3.amazonaws.com/public/images/6055d6d4-60f1-4bcc-88ea-596719f3cf9d_2048x1919.png"]
+      },
+      "note": "Leaderboard without cyber, biology and alignment"
+    },
+    {
+      "kind": "cta",
+      "hook": "Follow to see which model breaks 12% when GDPx updates in 3 to 6 months."
+    }
+  ],
+  "site_article": {
+    "headline": "SemiAnalysis launches GDPx benchmark, and the top AI model scores 12%",
+    "dek": "Claude Opus 5.5 leads the first version of the agentic benchmark, ahead of Gemini 4 Carbon and GPT-6 Astra, while every model scores zero on pass or fail finance and legal tasks.",
+    "summary": "Research firm SemiAnalysis released GDPx, a benchmark of 206 agentic tasks across 11 high-value fields. Anthropic's Claude Opus 5.5 placed first with a score of 12.0%.",
+    "seo_title": "GDPx benchmark: Claude Opus 5.5 leads with a 12% score",
+    "seo_description": "SemiAnalysis launched GDPx, 206 expert tasks across 11 fields. Claude Opus 5.5 led at 12.0%, ahead of Gemini 4 Carbon and GPT-6 Astra.",
+    "answer_summary": "GDPx is a new SemiAnalysis benchmark of 206 realistic expert tasks in 11 fields. The best model, Claude Opus 5.5, scored 12.0%.",
+    "tags": ["SemiAnalysis", "GDPx", "Claude Opus 5.5", "Gemini 4 Carbon", "GPT-6 Astra", "AI benchmarks"],
+    "hero_alt": "Promotional graphic for the SemiAnalysis GDPx benchmark launch.",
+    "paragraphs": [
+      { "kind": "fact", "text": "SemiAnalysis, the semiconductor and AI research firm, released a new benchmark called GDPx on November 2, 2026. Its first version contains 206 agentic tasks across 11 professional fields and ranks 13 AI models. Anthropic's Claude Opus 5.5 placed first with a score of 12.0%.", "sources": [0, 1] },
+      { "kind": "fact", "text": "Google's Gemini 4 Carbon finished second at 10.9% and OpenAI's GPT-6 Astra was third at 9.6%, according to Unite.AI and OfficeChai. Meta's Muse Wonder Full placed fourth at 9.0%, and Z.ai's GLM 5.3 was last of the 13 models at 2.7%.", "sources": [1, 2] },
+      { "kind": "heading", "text": "What the benchmark measures" },
+      { "kind": "fact", "text": "The 11 fields are chip design, cybersecurity, biology, finance, legal work, quant trading, recursive self-improvement, hardware design, materials science, alignment and software engineering. The authors, Max Kan, Andrew Megalaa and Dylan Patel, wrote that they picked fields by how much value they expect AI to create there, not by each field's share of economic output. Government, real estate and insurance were left out on purpose.", "sources": [0, 1] },
+      { "kind": "fact", "text": "Tasks were built with at least one specialized data partner per field, 14 partners in total, and each task ships with a realistic environment instead of a short prompt. The 24 finance tasks, for example, recreate a private equity deal with roughly 4,000 anonymized files. Tasks have a default time limit of eight hours, and models run in their own tools where available: Claude Code for Opus 5.5, Codex for GPT-6 Astra and Antigravity for Gemini 4 Carbon.", "sources": [0, 1] },
+      { "kind": "fact", "text": "The headline score averages each model's pass@1 result over three attempts, with every field weighted equally. SemiAnalysis called GDPx a true frontier benchmark because even the best model reaches only 12%. The firm plans new versions every three to six months.", "sources": [0, 1] },
+      { "kind": "heading", "text": "Where the models struggled" },
+      { "kind": "fact", "text": "Finance and legal tasks proved so hard under binary grading that every model scored zero, so SemiAnalysis also reported partial scores. On legal partial scores, Opus 5.5 averaged 44% and GPT-6 Astra 25%. In quant trading, 70 of 111 graded runs did worse than the reference strategy, and none of the 12 attempts at one hardware design task produced a verified full pass.", "sources": [0, 1] },
+      { "kind": "fact", "text": "Results varied widely by field. SemiAnalysis named Opus 5.5 the best all-around model, with wins in quant trading, hardware design and chip design. Gemini 4 Carbon was the strongest biology model, GPT-6 Astra led recursive self-improvement and materials science, and Meta's Muse Wonder Full was described as the best cyber model by a meaningful margin.", "sources": [0, 1] },
+      { "kind": "fact", "text": "Cost also differed sharply. Opus 5.5 cost $51.41 per task and GPT-6 Astra $53.99, while Gemini 4 Carbon cost $16.29, according to Unite.AI.", "sources": [1, 2] },
+      { "kind": "heading", "text": "The safety filter effect" },
+      { "kind": "fact", "text": "SemiAnalysis said the overall scores of Opus 5.5 and GPT-6 Astra are held down by their safety classifiers in cybersecurity, biology and alignment tasks. With those three fields removed, GPT-6 Astra edges Opus 5.5 by 0.1 percentage points and Gemini 4 Carbon drops from second to fifth. The firm said this adjusted ranking better matches its own assessment of the models.", "sources": [0, 2] },
+      { "kind": "analysis", "text": "The low ceiling is the main takeaway. Labs often promote high scores on older tests, but GDPx shows the strongest models still finish only a small share of long, realistic expert tasks. The cost gap also matters for companies choosing a model, since Gemini 4 Carbon came close to the leader at roughly a third of the price per task." },
+      { "kind": "why_it_matters", "text": "The next GDPx update, expected within three to six months, will show whether new model releases can move the top score meaningfully above 12%." }
+    ]
+  }
+}
