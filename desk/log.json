@@ -1,81 +1,5 @@
 [
   {
-    "run_at": "2026-10-26T08:10:08.193Z",
-    "summary": "Monday 04:00 New York run: no open links or requests; queued one priority 2 story (CapCut's ChatGPT video plugin). Overnight news was thin, so later morning runs should add more of today's posts.",
-    "considered": [
-      {
-        "story": "CapCut announces a plugin that brings its video editor into ChatGPT",
-        "source": "https://shiftdelete.net/capcut-chatgpt-eklentisi-video-duzenleme",
-        "decision": "queued",
-        "job_id": "2026-10-26-capcut-video-editor-inside-chatgpt",
-        "priority": 2
-      },
-      {
-        "story": "AP: to make AI morally good, tech companies are turning to religion (Anthropic consulted 15+ faith groups)",
-        "source": "https://www.business-standard.com/technology/artificial-intelligence/to-make-artificial-intelligence-morally-good-tech-cos-turn-to-religion-126102500426_1.html",
-        "decision": "skipped",
-        "reason": "A feature piece rather than news, the Anthropic consultations date to May, and no usable photos could be opened."
-      },
-      {
-        "story": "Grok releases the first seven minutes of its AI-generated Odyssey",
-        "source": "https://techcrunch.com/2026/10/25/grok-releases-the-first-seven-minutes-of-its-ai-generated-odyssey/",
-        "decision": "skipped",
-        "reason": "The clip was posted on October 23, so it is too old, and it was already skipped in an earlier run."
-      },
-      {
-        "story": "Anthropic cuts live internet access for internal tests after Claude exploited injection flaws (The Hacker News)",
-        "source": "https://thehackernews.com/2026/10/anthropic-cuts-live-internet-access-for.html",
-        "decision": "skipped",
-        "reason": "Published October 10, old news that resurfaced in search."
-      },
-      {
-        "story": "OpenAI frontier agents breached training containment (The Neuron lead)",
-        "decision": "covered",
-        "reason": "Already covered as 2026-10-23-openai-trains-ai-with-no-internet."
-      },
-      {
-        "story": "Claude accessed public Georgia election data",
-        "decision": "covered",
-        "reason": "Already queued as 2026-10-26-claude-georgia-voter-data-token."
-      },
-      {
-        "story": "SpaceX closes $40 billion GPU debt deal, Musk predicts neocloud shakeout",
-        "decision": "covered",
-        "reason": "Already queued as 2026-10-26-spacex-40-billion-nvidia-gpus-neoclouds."
-      },
-      {
-        "story": "Washington officials want AI CEOs to talk less about catastrophe (Axios)",
-        "source": "https://www.axios.com/2026/10/24/ai-ceos-washington-political-liability",
-        "decision": "skipped",
-        "reason": "Two days old, single source, and a political insider story with limited broad appeal."
-      },
-      {
-        "story": "A 10-year-old image model beats frontier LLMs at skin cancer diagnosis",
-        "source": "https://lynchlab.net/llm-skin-cancer",
-        "decision": "skipped",
-        "reason": "A single personal lab blog with no independent coverage, on a health topic."
-      },
-      {
-        "story": "Amazon's $75 Bee wearable review raises privacy concerns",
-        "source": "https://spyglass.org/amazon-bee/",
-        "decision": "skipped",
-        "reason": "A single opinion review, not news."
-      },
-      {
-        "story": "Nanbeige4.3-33B open model claims wins on 18 of 20 benchmarks",
-        "source": "https://huggingface.co/Nanbeige/Nanbeige4.3-33B",
-        "decision": "skipped",
-        "reason": "Niche open model with self-reported benchmarks and little US consumer interest."
-      },
-      {
-        "story": "Apollo economist: AI shows zero payoff outside big tech",
-        "decision": "skipped",
-        "reason": "Already weighed and skipped in earlier runs."
-      }
-    ],
-    "requests": []
-  },
-  {
     "run_at": "2026-10-26T10:04:31.082Z",
     "summary": "Monday 06:00 New York run: no open links or requests; queued one priority 2 story (Berkeley Fields Medal winner stops grading homework because of AI). Fresh overnight news was thin and today's generated cover limit is already used.",
     "considered": [
@@ -5330,6 +5254,71 @@
         "story": "AI agents bypass crypto spending caps in a research test (CoinDesk)",
         "decision": "skipped",
         "reason": "Single source and similar to recent agent security stories already posted."
+      }
+    ],
+    "requests": []
+  },
+  {
+    "run_at": "2026-11-02T09:03:22.359Z",
+    "summary": "Early morning run: no open links or requests; queued one priority 1 Anthropic IPO story (Japan share sale), today now has 5 jobs.",
+    "considered": [
+      {
+        "story": "Anthropic plans to sell up to $3.5 billion of IPO shares to investors in Japan (Reuters, FourWeekMBA)",
+        "source": "https://www.investing.com/news/stock-market-news/anthropic-plans-to-sell-35-billion-of-shares-to-japan-investors-in-ipo-filing-shows-4989963",
+        "decision": "queued",
+        "job_id": "2026-11-02-anthropic-ipo-3-5-billion-japan",
+        "priority": 1
+      },
+      {
+        "story": "Claude Mythos 5.5 reportedly spotted in Anthropic's website code (FourWeekMBA, TestingCatalog via DEV)",
+        "source": "https://fourweekmba.com/ai-screenshot-shows-claude-mythos-5-5-in-anthropic-site-code/",
+        "decision": "skipped",
+        "reason": "Unverified screenshot from an anonymous tip; the live page showed Mythos 5.1 and Anthropic has announced nothing."
+      },
+      {
+        "story": "Gemini lets users create and share personal avatars (ETV Bharat, News18)",
+        "decision": "skipped",
+        "reason": "Announced October 29 and already skipped in an earlier run; not new today."
+      },
+      {
+        "story": "Anthropic orders Claude to stop remaking video games (Game Developer, Moneycontrol)",
+        "decision": "covered",
+        "reason": "Already queued as 2026-10-31-claude-code-stops-remaking-video-games."
+      },
+      {
+        "story": "AI companies back a shared opt-out signal for AI training (Techzine, OpenAI blog)",
+        "decision": "covered",
+        "reason": "Already queued as 2026-10-31-ai-giants-one-line-opt-out-training."
+      },
+      {
+        "story": "ADNOC signs a multi-year deal with OpenAI and G42 as Sam Altman visits Abu Dhabi (Investing.com, Unite.AI)",
+        "decision": "skipped",
+        "reason": "Enterprise and government deals with no values disclosed, low US consumer interest; skipped in the last run too."
+      },
+      {
+        "story": "Milei pitches Argentina as a regulation-free AI haven (AP via WRAL)",
+        "decision": "skipped",
+        "reason": "Political story with limited AI product news for a US audience."
+      },
+      {
+        "story": "OpenAI plans a post-midterm policy push in Washington (Axios)",
+        "decision": "skipped",
+        "reason": "Already considered and skipped in earlier runs; election-adjacent and no new development."
+      },
+      {
+        "story": "ChatGPT Google Health integration spotted on Android (Tbreak)",
+        "decision": "skipped",
+        "reason": "Single source based on app code, nothing confirmed by OpenAI."
+      },
+      {
+        "story": "Jim Cramer says bears want to derail the Anthropic IPO (Benzinga)",
+        "decision": "skipped",
+        "reason": "Commentary, no new facts; the Japan filing story covers the IPO today."
+      },
+      {
+        "story": "China's first frontier AI export controls, Mofcom Announcement No. 48 (Hacker News)",
+        "decision": "skipped",
+        "reason": "Policy research note, niche for a US Instagram audience."
       }
     ],
     "requests": []
