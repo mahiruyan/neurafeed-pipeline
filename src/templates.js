@@ -98,7 +98,33 @@ const COVER_FONT = process.env.COVER_FONT || 'anton';
 const HEADING_FONT = process.env.HEADING_FONT || 'poppins';
 const antonH = (size, align, text) => `<h1 style="margin:0;font-family:Anton;font-weight:400;font-size:${size}px;line-height:1.04;text-transform:uppercase;text-align:${align};letter-spacing:-.5px">${hl(text)}</h1>`;
 
+// Cover v2 (big headline, like the large AI news pages): the headline fills the lower ~40% edge to
+// edge, sized to the longest that fits in at most 5 lines. Chosen with COVER_STYLE=v2 or slide.style.
+function fitHeadline(text, width, height) {
+  const len = text.replace(/\\\*/g, '*').replace(/\*/g, '').length;
+  for (let size = 150; size >= 78; size -= 4) {
+    const perLine = Math.floor(width / (size * 0.47));
+    const lines = Math.ceil((len * 1.1) / Math.max(1, perLine));
+    if (lines <= 5 && lines * size * 0.98 <= height) return size;
+  }
+  return 78;
+}
+function coverV2(s, img, badges) {
+  const size = s.size || fitHeadline(s.headline, 1000, 440);
+  return `<div style="position:relative;width:1080px;height:1350px;overflow:hidden;background:#000;color:#fff">
+<img src="${img}" style="position:absolute;top:0;left:0;width:1080px;height:880px;object-fit:cover;object-position:${s.pos || 'center 30%'}">
+<div style="position:absolute;top:520px;left:0;width:1080px;height:380px;background:linear-gradient(180deg,rgba(0,0,0,0) 0%,rgba(0,0,0,.88) 72%,#000 100%)"></div>
+${coverBadges(s, badges)}
+${corner}
+<div style="position:absolute;top:790px;left:0;width:1080px;height:560px;box-sizing:border-box;padding:0 40px 40px;display:flex;flex-direction:column;align-items:center;justify-content:space-between">
+<div style="width:100%;display:flex;align-items:center;gap:22px"><div style="flex-grow:1;height:3px;background:#fff;opacity:.8"></div><img src="${logo}" style="width:52px;height:52px"><div style="flex-grow:1;height:3px;background:#fff;opacity:.8"></div></div>
+<h1 style="margin:0;font-family:Anton;font-weight:400;font-size:${size}px;line-height:.98;text-transform:uppercase;text-align:center;letter-spacing:-1px">${hl(s.headline)}</h1>
+${s.single ? `<div style="font-family:'Bebas Neue';font-size:40px;letter-spacing:3px">Follow <span style="color:${ACC}">@neurafeed.ai</span> for daily AI news</div>` : `<div style="display:flex;align-items:center;gap:10px;font-family:'Bebas Neue';font-size:34px;letter-spacing:3px;border:2px solid rgba(255,255,255,.75);border-radius:40px;padding:4px 22px 2px">Swipe ${arrow}</div>`}
+</div></div>`;
+}
+
 function cover(s, img, badges) {
+  if ((s.style || process.env.COVER_STYLE) === 'v2') return coverV2(s, img, badges);
   const size = s.size || (COVER_FONT === 'anton' ? headlineSize(s.headline, 100, 19) : headlineSize(s.headline, 74, 23));
   return `<div style="position:relative;width:1080px;height:1350px;overflow:hidden;background:#000;color:#fff">
 <img src="${img}" style="position:absolute;top:0;left:0;width:1080px;height:900px;object-fit:cover;object-position:${s.pos || 'center 30%'}">

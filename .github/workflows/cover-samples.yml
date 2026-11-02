@@ -1,0 +1,26 @@
+name: Cover samples
+
+# Renders before/after cover samples from samples/covers/*.json to the cover-samples branch.
+on:
+  workflow_dispatch:
+
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - uses: actions/cache@v4
+        with:
+          path: ~/.cache/puppeteer
+          key: puppeteer-${{ runner.os }}-v1
+      - run: npm install --no-audit --no-fund
+      - run: which ffmpeg || (sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg)
+      - run: node tools/cover-samples.js /tmp/cover-samples
+      - run: |
+          git config user.name "neurafeed-bot"; git config user.email "bot@neurafeed.ai"
+          git checkout --orphan cover-samples && git rm -rqf --cached . && rm -rf cover-samples && cp -r /tmp/cover-samples cover-samples
+          git add -f cover-samples && git commit -qm "cover samples" && git push -f origin cover-samples
