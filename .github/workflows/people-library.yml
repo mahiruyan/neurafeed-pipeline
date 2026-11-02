@@ -34,5 +34,6 @@ jobs:
           git diff --cached --quiet || (git commit -qm "people library [skip ci]" && (git push -q || (git pull -q --rebase && git push -q)))
       - name: Contact sheets
         run: |
+          git config user.name "neurafeed-bot"; git config user.email "bot@neurafeed.ai"
           git checkout --orphan people-review && git rm -rqf --cached . && rm -rf people-review && cp -r /tmp/people-review people-review
           git add -f people-review && git commit -qm "people review" && git push -f origin people-review
