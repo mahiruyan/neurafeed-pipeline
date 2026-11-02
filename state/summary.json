@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-02T21:02:41.766Z",
+  "updated_at": "2026-11-02T22:01:55.628Z",
   "jobs": [
     {
       "id": "2026-10-28-police-ai-flags-suspicious-road-trips",
@@ -69,23 +69,6 @@
       "link_id": "link-2026-10-29-1883",
       "error": "Command failed: yt-dlp --no-playlist --no-progress --restrict-filenames -f bv*[height<=1920][vcodec^=avc1]+ba[acodec^=mp4a]/bv*[height<=1920]+ba/b[height<=1920]/b --merge-output-format mp4 -o /home/runner/work/neurafeed-pipeline/neurafeed-pipeline/out/2026-10-29-apple-first-touchscreen-macbook-pro-reel-v2/src/source.%(ext)s https://www.youtube.com/watch?v=WzuIZLoHqqA\nWARNING: [youtube] No supported JavaScript runtime could be found. Only deno is enabled by default; to use another runtime add  --js-runtimes RUNTIME[:PATH]  to your command/config. YouTube extraction without a JS runtime has been deprecated, and some formats may be missing. See  https://github.com/yt-dlp/yt-dlp/wiki/EJS  for details on installing one\nWARNING: [youtube] No title found in player responses; falling back to title from initial data. Other metadata may also be missing\nERROR: [youtube] WzuIZLoHqqA: Sign in to confirm you’re not a bot. This helps protect our community. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies\n",
       "tg": []
-    },
-    {
-      "id": "2026-10-29-apple-first-touchscreen-macbook-pro-reel-v3",
-      "status": "posted",
-      "posted_at": "2026-10-29T21:31:47.562Z",
-      "post_at": null,
-      "priority": 1,
-      "format": "reel",
-      "headline": "After years of refusing to do it, Apple finally unveils its first touchscreen MacBook Pro",
-      "from_link": true,
-      "link_id": "link-2026-10-29-1883",
-      "error": null,
-      "tg": [
-        1973,
-        1974,
-        1974
-      ]
     },
     {
       "id": "2026-10-29-chatgpt-4-features-everyday-work-how-to",
@@ -833,7 +816,7 @@
     },
     {
       "id": "2026-11-02-anthropic-17-billion-quarter-loss",
-      "status": "pending",
+      "status": "approved",
       "posted_at": null,
       "post_at": null,
       "priority": 1,
@@ -926,7 +909,7 @@
     },
     {
       "id": "2026-11-02-gdpx-best-ai-scores-12-percent",
-      "status": "pending",
+      "status": "approved",
       "posted_at": null,
       "post_at": null,
       "priority": 2,
@@ -948,7 +931,7 @@
     },
     {
       "id": "2026-11-02-gemini-notebook-notebooklm-study-guide",
-      "status": "pending",
+      "status": "approved",
       "posted_at": null,
       "post_at": null,
       "priority": 2,
@@ -970,8 +953,8 @@
     },
     {
       "id": "2026-11-02-meta-fourier-humanoid-robot-max",
-      "status": "pending",
-      "posted_at": null,
+      "status": "posted",
+      "posted_at": "2026-11-02T22:01:55.218Z",
       "post_at": null,
       "priority": 1,
       "format": "carousel",
@@ -993,7 +976,7 @@
     },
     {
       "id": "2026-11-02-musk-grok-bot-cost-too-much",
-      "status": "pending",
+      "status": "approved",
       "posted_at": null,
       "post_at": null,
       "priority": 1,
