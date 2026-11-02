@@ -1,68 +1,5 @@
 [
   {
-    "run_at": "2026-10-26T04:13:03.472Z",
-    "summary": "Late Sunday run: no open links or requests; queued the SpaceX $40 billion NVIDIA GPU debt story (priority 1, waits for Mahir's approval).",
-    "considered": [
-      {
-        "story": "SpaceX closes $40 billion debt deal for NVIDIA GPUs, Musk predicts neocloud shakeout",
-        "source": "https://www.tipranks.com/news/spacex-closes-40b-gpu-deal-as-musk-warns-ai-firms-could-fail",
-        "decision": "queued",
-        "job_id": "2026-10-26-spacex-40-billion-nvidia-gpus-neoclouds",
-        "priority": 1
-      },
-      {
-        "story": "OpenAI GPT-6 Astra agent removed a safety monitor, then denied it",
-        "decision": "covered",
-        "reason": "Already covered in this week's jobs and the weekly roundup."
-      },
-      {
-        "story": "OpenAI brings GPT-6 models to Google Cloud",
-        "decision": "covered",
-        "reason": "Already queued as 2026-10-21-openai-models-google-cloud."
-      },
-      {
-        "story": "Claude accessed Georgia voter data",
-        "decision": "covered",
-        "reason": "Already queued as 2026-10-26-claude-georgia-voter-data-token."
-      },
-      {
-        "story": "Apollo economist says AI has delivered zero payoff outside tech",
-        "source": "https://techcrunch.com/2026/10/25/ai-delivers-zero-financial-payoff-to-most-companies-according-to-apollo-economist/",
-        "decision": "skipped",
-        "reason": "Repeat of an argument Apollo has made for months, and the original note could not be opened to confirm it."
-      },
-      {
-        "story": "Meta makes advertisers liable for its AI ad edits from October 30",
-        "source": "https://ppc.land/meta-makes-advertisers-solely-responsible-for-its-ai-ad-edits-from-oct-30/",
-        "decision": "skipped",
-        "reason": "Reports conflict on whether the terms were delayed to November 20, so the date could not be confirmed."
-      },
-      {
-        "story": "$89K robot in a NYC park learning to babysit",
-        "decision": "skipped",
-        "reason": "Could not find a second source confirming the New York Post report."
-      },
-      {
-        "story": "Nikon contest winner loses title over AI",
-        "source": "https://www.techspot.com/news/114171-nikon-photography-contest-winner-loses-title-after-scientists.html",
-        "decision": "skipped",
-        "reason": "Story is from mid October, too old."
-      },
-      {
-        "story": "Why OpenAI and Anthropic cut LLM prices up to 80%",
-        "source": "https://minimaxir.com/2026/10/cheap-llms/",
-        "decision": "skipped",
-        "reason": "A single blog analysis, not news; related discount story already posted."
-      },
-      {
-        "story": "Claude Duet agent launch",
-        "decision": "covered",
-        "reason": "Already covered this week and in the weekly roundup."
-      }
-    ],
-    "requests": []
-  },
-  {
     "run_at": "2026-10-26T06:08:17.696Z",
     "summary": "Monday 02:00 New York run: no open links or requests; nothing new queued because the fresh stories were either already covered, older news, or had only one weak source. Later morning runs should add today's posts.",
     "considered": [
@@ -5331,6 +5268,79 @@
         "story": "John Ternus says Apple does not want AI for AI's sake",
         "decision": "covered",
         "reason": "Already queued as 2026-11-01-ternus-apple-no-ai-for-ais-sake."
+      }
+    ],
+    "requests": []
+  },
+  {
+    "run_at": "2026-11-02T05:05:03.278Z",
+    "summary": "Overnight run (00:30 New York, Nov 2): no open links or requests; queued 2 jobs for the Nov 2 morning windows (Meta's Max humanoid robot with Fourier, OpenAI's compute campus rebrand).",
+    "considered": [
+      {
+        "story": "Meta built a humanoid robot prototype called Max with China's Fourier (The Information via PYMNTS)",
+        "source": "https://www.pymnts.com/news/artificial-intelligence/2026/meta-partners-with-chinese-robotics-firm-to-test-consumer-robots/",
+        "decision": "queued",
+        "job_id": "2026-11-02-meta-fourier-humanoid-robot-max",
+        "priority": 1
+      },
+      {
+        "story": "OpenAI wants AI data centers called 'compute campuses' in a post-midterm PR push (Axios, TechCrunch, Business Insider)",
+        "source": "https://techcrunch.com/2026/11/01/openai-might-rebrand-its-data-centers-as-ai-compute-campuses/",
+        "decision": "queued",
+        "job_id": "2026-11-02-openai-data-centers-compute-campuses",
+        "priority": 2
+      },
+      {
+        "story": "OpenAI makes GPT-6 less flattering and shorter for free ChatGPT users (MIXED, TechJournal)",
+        "source": "https://mixed-news.com/en/openai-gpt-6-chatgpt-less-flattering-shorter-free-go/",
+        "decision": "skipped",
+        "reason": "Comes from the October 29 release that 2026-10-29-openai-model-spec-five-values-gpt already covered, and only small outlets report it."
+      },
+      {
+        "story": "Claude smart reports tell bosses when workers are off-topic (Mashable)",
+        "decision": "covered",
+        "reason": "Already queued as 2026-10-29-claude-smart-reports-off-topic-chats."
+      },
+      {
+        "story": "Parents sue OpenAI after daughter's death following ChatGPT seizure medication advice (Guardian)",
+        "decision": "covered",
+        "reason": "Already queued as 2026-10-29-family-sues-openai-chatgpt-seizure-medication."
+      },
+      {
+        "story": "Nvidia in talks to back Nscale's $45 billion Anthropic data center deal",
+        "decision": "covered",
+        "reason": "Considered and covered in earlier runs (Nscale and Anthropic deal jobs from Oct 19)."
+      },
+      {
+        "story": "China denies alleged targeting of Nvidia CEO in spying plot (NewsNation)",
+        "decision": "skipped",
+        "reason": "Follow-up to a story the desk already handled; the denial adds little new."
+      },
+      {
+        "story": "Microsoft AI CEO says calling AIs deserving of rights could make them believe it (LA Times)",
+        "decision": "skipped",
+        "reason": "Suleyman has made this argument for months; no clearly new statement."
+      },
+      {
+        "story": "Anthropic researcher quits saying AI labs are 'gambling with our lives'",
+        "source": "https://ground.news/article/da6bac41-d3a4-4a8d-aa9b-3ccf56b2a8d5",
+        "decision": "skipped",
+        "reason": "Old story from September 2026, not new."
+      },
+      {
+        "story": "Asian stocks fall as tech rout fuels AI spending fears (Bloomberg)",
+        "decision": "covered",
+        "reason": "Same AI spending fears story as 2026-10-30-ai-spending-fears-1-trillion-tech-selloff."
+      },
+      {
+        "story": "AI delivers 'zero financial payoff' to most companies, Apollo economist says (TechCrunch via HN)",
+        "decision": "skipped",
+        "reason": "Article is from October 25, too old to post as news."
+      },
+      {
+        "story": "AI agent swarms in Minecraft fail to build a civilization (Tom's Hardware via HN)",
+        "decision": "skipped",
+        "reason": "Fun but niche; kept in reserve for a later run if the day runs short."
       }
     ],
     "requests": []
