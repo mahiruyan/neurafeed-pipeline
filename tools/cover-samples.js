@@ -22,7 +22,9 @@ async function commons(q) {
     const s = JSON.parse(fs.readFileSync(path.join('samples/covers', f), 'utf8'));
     const shots = [];
     if (s.new.image?.commons) s.new.image.url = await commons(s.new.image.commons) || s.new.image.url;
-    for (const [tag, slide] of [['old', s.old], ['new', { ...s.new, style: 'v2' }]]) {
+    // old_file: the cover as it was really posted (out/<id>/1.jpg), instead of re-rendering it.
+    if (s.old_file) shots.push(s.old_file);
+    for (const [tag, slide] of (s.old_file ? [] : [['old', s.old]]).concat([['new', { ...s.new, style: 'v2' }]])) {
       const dir = path.join('/tmp/cs', s.id, tag);
       const job = { id: `${s.id}-${tag}`, slides: [slide] };
       try {
