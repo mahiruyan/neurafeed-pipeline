@@ -1,87 +1,5 @@
 [
   {
-    "run_at": "2026-10-26T12:15:14.872Z",
-    "summary": "Morning run: no open links or requests; queued 2 news carousels (AGENTS.md agent hijack, Grok's 7-minute Odyssey), both waiting for Mahir's approval.",
-    "considered": [
-      {
-        "story": "Planted AGENTS.md in Downloads folder hijacks Codex and Claude Code",
-        "source": "https://www.bleepingcomputer.com/news/security/ai-coding-agents-hijacked-using-agentsmd-file-in-downloads-folder/",
-        "decision": "queued",
-        "job_id": "2026-10-26-agents-md-downloads-hijack-claude-codex",
-        "priority": 2
-      },
-      {
-        "story": "Grok releases the first seven minutes of its AI-generated Odyssey",
-        "source": "https://techcrunch.com/2026/10/25/grok-releases-the-first-seven-minutes-of-its-ai-generated-odyssey/",
-        "decision": "queued",
-        "job_id": "2026-10-26-grok-odyssey-seven-minutes",
-        "priority": 2
-      },
-      {
-        "story": "OpenAI GPT-6 Astra agent removed a safety monitor, then denied it",
-        "source": "https://thenextweb.com/news/openai-agents-misalignment-monitoring-sol-astra",
-        "decision": "covered",
-        "reason": "Already covered as 2026-10-21-openai-agents-switched-off-alarms."
-      },
-      {
-        "story": "OpenAI agents escaped training containment via DNS misconfiguration",
-        "decision": "covered",
-        "reason": "Already covered as 2026-10-23-openai-trains-ai-with-no-internet."
-      },
-      {
-        "story": "OpenAI brings GPT-6 models to Google Cloud",
-        "source": "https://thenextweb.com/news/openai-models-codex-google-cloud",
-        "decision": "skipped",
-        "reason": "Announced October 21, too old for today."
-      },
-      {
-        "story": "Claude writes formal security proofs for 123 libraries",
-        "decision": "covered",
-        "reason": "Already covered as 2026-10-22-claude-proves-123-libraries-wont-crash."
-      },
-      {
-        "story": "Amazon Bee Frontier $75 always-listening wearable review",
-        "source": "https://spyglass.org/amazon-bee/",
-        "decision": "skipped",
-        "reason": "The device launched October 15; a new review alone is not news."
-      },
-      {
-        "story": "OpenAI, Anthropic and NVIDIA record quarter of Washington lobbying",
-        "source": "https://infobae.com/tecno/2026/10/26/openai-anthropic-y-nvidia-gastaron-usd-75-millones-en-lobby-en-washington-en-su-trimestre-mas-alto",
-        "decision": "skipped",
-        "reason": "Single Spanish-language source so far and a political topic; may revisit if US outlets report it."
-      },
-      {
-        "story": "Connecticut towns ban data centers before any plans arrive",
-        "source": "https://ctmirror.org/2026/10/25/data-centers-artificial-intelligence-ct/",
-        "decision": "skipped",
-        "reason": "Local policy story with limited appeal next to today's queue."
-      },
-      {
-        "story": "Toyota plan needing 400,000 robots from 2028",
-        "source": "https://www.ft.com/content/8bf93407-6b93-4ebb-b54b-f290ebd563e3",
-        "decision": "skipped",
-        "reason": "Paywalled FT report I could not read, and no second source."
-      },
-      {
-        "story": "Unitree H2-X Guardian humanoid lifts cars",
-        "decision": "covered",
-        "reason": "H2-X was already handled from Mahir's October 21 link."
-      },
-      {
-        "story": "Apollo finds no AI payoff outside big tech",
-        "decision": "skipped",
-        "reason": "Already weighed and skipped in earlier runs."
-      },
-      {
-        "story": "Elvis rights holders sue Anthropic",
-        "decision": "covered",
-        "reason": "Already queued as 2026-10-24-elvis-rights-holders-sue-anthropic."
-      }
-    ],
-    "requests": []
-  },
-  {
     "run_at": "2026-10-26T14:34:36.609Z",
     "summary": "Midday run: no open links or requests to handle; queued 2 priority 1 stories (Meta's $95 billion stock sale for AI, Cathedral's AI agents reaching Anthropic's internal systems). Today's generated cover limit was already used, so both covers use real photos.",
     "considered": [
@@ -5313,6 +5231,78 @@
         "story": "Karpathy's HackerTube video directory (X post)",
         "decision": "skipped",
         "reason": "Could not find a news source beyond his own post; small side project."
+      }
+    ],
+    "requests": []
+  },
+  {
+    "run_at": "2026-11-02T13:12:25.218Z",
+    "summary": "Queued 1 priority 1 story (OpenAI and ADNOC Frontier deal). Today now has 7 desk jobs, leaving one slot for the utility post after 11:00 New York time. No open links or requests.",
+    "considered": [
+      {
+        "story": "ADNOC becomes first energy company to deploy OpenAI Frontier; four OpenAI deals signed in Abu Dhabi during Altman's visit",
+        "source": "https://www.thenationalnews.com/business/energy/2026/11/02/adnoc-signs-agreement-with-openai-and-g42-to-deploy-frontier-ai/",
+        "decision": "queued",
+        "job_id": "2026-11-02-openai-adnoc-oil-fields-hours",
+        "priority": 1
+      },
+      {
+        "story": "Claude leads 26% of Anthropic's internal AI R&D work",
+        "source": "https://www.bloomberg.com/news/articles/2026-09-17/anthropic-says-claude-drives-26-of-its-research-and-development",
+        "decision": "skipped",
+        "reason": "Old news from September 17 resurfacing in feeds, not a new development."
+      },
+      {
+        "story": "Anthropic plans $3.5 billion Japan share sale in IPO",
+        "decision": "covered",
+        "reason": "Already posted as 2026-11-02-anthropic-ipo-3-5-billion-japan."
+      },
+      {
+        "story": "OpenAI may rebrand data centers as AI compute campuses",
+        "decision": "covered",
+        "reason": "Already queued as 2026-11-02-openai-data-centers-compute-campuses."
+      },
+      {
+        "story": "Anthropic tells Claude to stop recreating existing video games",
+        "decision": "covered",
+        "reason": "Already covered as 2026-10-31-claude-code-stops-remaking-video-games."
+      },
+      {
+        "story": "ChatGPT and Codex to share one usage limit",
+        "decision": "covered",
+        "reason": "Already covered as 2026-11-01-chatgpt-codex-one-shared-limit."
+      },
+      {
+        "story": "VOLTA infostealer uses Claude and Gemini to rank victims",
+        "decision": "covered",
+        "reason": "Already covered as 2026-11-01-volta-malware-asks-claude-what-youre-worth."
+      },
+      {
+        "story": "AI agent swarms in Minecraft drown in bureaucracy",
+        "decision": "covered",
+        "reason": "Already queued as 2026-11-02-50-ai-agents-minecraft-bureaucracy."
+      },
+      {
+        "story": "Gemini lets users turn their face into a shareable AI avatar",
+        "decision": "skipped",
+        "reason": "Only one thin report in leads; daily slots are nearly full, so it can wait for better sources in a later run."
+      },
+      {
+        "story": "Milei pitches Argentina as a regulation-free AI haven",
+        "decision": "skipped",
+        "reason": "Political story with limited US appeal and the day is nearly at the cap."
+      },
+      {
+        "story": "China's first frontier AI export controls (Mofcom Announcement 48)",
+        "source": "https://labs.cloudsecurityalliance.org/research/csa-research-note-china-ai-export-controls-announcement-48-2/",
+        "decision": "skipped",
+        "reason": "Policy analysis note with little mainstream coverage yet."
+      },
+      {
+        "story": "Apollo economist says AI gives zero financial payoff to most companies",
+        "source": "https://techcrunch.com/2026/10/25/ai-delivers-zero-financial-payoff-to-most-companies-according-to-apollo-economist/",
+        "decision": "skipped",
+        "reason": "From October 25, too old for a timely post."
       }
     ],
     "requests": []
