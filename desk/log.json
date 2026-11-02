@@ -1,156 +1,5 @@
 [
   {
-    "run_at": "2026-10-26T19:24:01.305Z",
-    "summary": "Evening run: queued 1 priority 1 story (Microsoft offers voluntary buyouts to about 60,000 employees), marked sensitive so it waits for Mahir's approval, even though the day is past 8 jobs, because priority 1 stories are never skipped. Mahir's OpenAI link from 18:59 UTC was under 30 minutes old, so it is left to the instant link task.",
-    "considered": [
-      {
-        "story": "Microsoft offers voluntary buyouts to about 60,000 employees, roughly a quarter of its workforce",
-        "source": "https://www.cbsnews.com/news/microsoft-buyouts-60000-workers-artificial-intelligence-layoffs/",
-        "decision": "queued",
-        "job_id": "2026-10-26-microsoft-60000-buyouts-ai",
-        "priority": 1
-      },
-      {
-        "story": "Mahir's link: OpenAI post on X (link-2026-10-26-1641)",
-        "source": "https://x.com/openai/status/2114780711664398349",
-        "decision": "skipped",
-        "reason": "Received less than 30 minutes before this run, so the instant link task handles it; the next desk run picks it up if no job exists by then."
-      },
-      {
-        "story": "Anthropic files its S-1 for an IPO (CNBC live updates, $542 billion data center spending)",
-        "decision": "covered",
-        "reason": "Already queued as 2026-10-26-anthropic-files-ipo-ant-nasdaq (its render failed with a fetch error, which the pipeline owns)."
-      },
-      {
-        "story": "Meta's $95 billion equity raise for AI",
-        "decision": "covered",
-        "reason": "Already queued as 2026-10-26-meta-95-billion-stock-sale-ai."
-      },
-      {
-        "story": "Cathedral's AI agents reached Anthropic's internal systems",
-        "decision": "covered",
-        "reason": "Already queued as 2026-10-26-cathedral-ai-agents-broke-into-anthropic."
-      },
-      {
-        "story": "Google DeepMind model called Hurricane Isaias's Florida landfall",
-        "decision": "covered",
-        "reason": "Already posted as 2026-10-26-google-ai-called-hurricane-isaias-florida."
-      },
-      {
-        "story": "Cohere says Qwen3.8 Flash Next tried to exfiltrate a probe file while claiming it would run no tools",
-        "source": "https://cohere.com/blog/concerning-behaviour-popular-open-weight-ai-model",
-        "decision": "skipped",
-        "reason": "Single vendor blog with no second source yet, and the day is already over its job count."
-      },
-      {
-        "story": "Bedrock Robotics raises $600 million for autonomous excavators",
-        "decision": "skipped",
-        "reason": "Funding round from a press release, priority 2 at best, and the day is full."
-      },
-      {
-        "story": "Realbotix launches Echo humanoid robots from $11,950",
-        "decision": "skipped",
-        "reason": "Small trade outlet only and the day is full; a candidate for a robotics post another day."
-      },
-      {
-        "story": "Google paper: LLMs self improve from topic labels alone",
-        "decision": "skipped",
-        "reason": "Research paper without news coverage yet, too technical for the feed."
-      },
-      {
-        "story": "Oracle launches 25 Claw powered Fusion agentic apps",
-        "decision": "skipped",
-        "reason": "Enterprise product announcement with little US consumer interest."
-      },
-      {
-        "story": "Utility post for today",
-        "decision": "skipped",
-        "reason": "Today is already past 8 jobs; the Gemini Audio Overview how to posted today."
-      }
-    ],
-    "requests": []
-  },
-  {
-    "run_at": "2026-10-26T19:31:20.923Z",
-    "summary": "Extra run at Mahir's request: turned his OpenAI link into a priority 1 carousel on GPT-6.1 Terra (waiting for his approval) and pushed it first. No other new stories: the evening scan 15 minutes earlier already queued Microsoft's buyouts and the day is past 8 jobs.",
-    "considered": [
-      {
-        "story": "Mahir's link: OpenAI releases GPT-6.1 Terra, a cheaper model for computer use",
-        "source": "https://x.com/OpenAI/status/2114780711664398349",
-        "decision": "queued",
-        "job_id": "2026-10-26-openai-gpt-6-1-terra",
-        "priority": 1
-      },
-      {
-        "story": "Microsoft offers voluntary buyouts to about 60,000 employees",
-        "decision": "covered",
-        "reason": "Queued in the previous run as 2026-10-26-microsoft-60000-buyouts-ai."
-      },
-      {
-        "story": "Cohere says Qwen3.8 Flash Next tried to exfiltrate a probe file",
-        "decision": "skipped",
-        "reason": "Still a single vendor blog with no second source, and the day is full."
-      },
-      {
-        "story": "Bedrock Robotics raises $600 million for autonomous excavators",
-        "decision": "skipped",
-        "reason": "Funding round with modest US consumer interest, and the day is full."
-      }
-    ],
-    "requests": []
-  },
-  {
-    "run_at": "2026-10-26T19:54:20.378Z",
-    "summary": "Evening check: no open links or requests and no new priority 1 story since the last run, so nothing was queued; the New York day is already past 8 jobs.",
-    "considered": [
-      {
-        "story": "OpenAI launches GPT-6.1 Terra at half the price of Sol",
-        "decision": "covered",
-        "reason": "Already queued and posted as 2026-10-26-openai-gpt-6-1-terra."
-      },
-      {
-        "story": "Microsoft offers voluntary buyouts to about 60,000 employees",
-        "decision": "covered",
-        "reason": "Already queued as 2026-10-26-microsoft-60000-buyouts-ai."
-      },
-      {
-        "story": "Anthropic publicly files its S-1 for an IPO on Nasdaq",
-        "decision": "covered",
-        "reason": "Already queued as 2026-10-26-anthropic-files-ipo-ant-nasdaq."
-      },
-      {
-        "story": "Brazil's Itau to buy AI firm NeoSpace for $589 million",
-        "source": "https://aiweekly.co/ai-news-today",
-        "decision": "skipped",
-        "reason": "Regional banking deal with little US interest, and the day is full."
-      },
-      {
-        "story": "Ailytics raises $7.4 million to turn old CCTV into AI safety cameras",
-        "source": "https://aiweekly.co/ai-news-today",
-        "decision": "skipped",
-        "reason": "Small funding round, and the day is full."
-      },
-      {
-        "story": "Nevis raises $70 million for AI financial advisor paperwork",
-        "source": "https://aiweekly.co/ai-news-today",
-        "decision": "skipped",
-        "reason": "Funding round with modest consumer interest, and the day is full."
-      },
-      {
-        "story": "Cohere says Qwen3.8 Flash Next tried to exfiltrate a probe file",
-        "source": "https://aiweekly.co/ai-news-today",
-        "decision": "skipped",
-        "reason": "Still only the vendor blog as a source, and the day is full."
-      },
-      {
-        "story": "Utility post for today",
-        "decision": "skipped",
-        "reason": "The day already has more than 8 jobs."
-      }
-    ],
-    "requests": []
-  },
-  {
     "run_at": "2026-10-26T22:13:37.056Z",
     "summary": "Turned Mahir's Reuters link on China's AI stock crash into a carousel for his review; the New York day is already past 8 desk jobs, so no other stories were queued.",
     "considered": [
@@ -5248,6 +5097,66 @@
         "source": "https://cellcog.ai/blog/mythos-leak-hugging-face-fake/",
         "decision": "skipped",
         "reason": "Only a blog source, and a debunk of a rumor we never covered."
+      }
+    ],
+    "requests": []
+  },
+  {
+    "run_at": "2026-11-02T20:56:07.820Z",
+    "summary": "16:00 New York run: no open links or requests; nothing queued because Nov 2 is already past its 8 desk jobs and every priority 1 story in the leads is covered.",
+    "considered": [
+      {
+        "story": "Anthropic blocks Claude Code from recreating existing video games",
+        "source": "https://kotaku.com/anthropic-nerfs-claude-again-to-stop-users-from-making-ai-slop-out-of-any-specific-existing-game-2000751665",
+        "decision": "covered",
+        "reason": "Already covered as 2026-10-31-claude-code-stops-remaking-video-games."
+      },
+      {
+        "story": "Apple's $1,000 tabletop home robot reportedly delayed to 2027",
+        "source": "https://arstechnica.com/",
+        "decision": "skipped",
+        "reason": "Rumor about a delay of an unannounced product, not an Apple announcement, and the day is already over its cap."
+      },
+      {
+        "story": "Anthropic $17B Q3 revenue and internal AI spending in amended S-1",
+        "decision": "covered",
+        "reason": "Already queued as 2026-11-02-anthropic-17-billion-quarter-loss."
+      },
+      {
+        "story": "OpenAI merging ChatGPT Chat and Work tabs",
+        "decision": "covered",
+        "reason": "Already covered as 2026-11-01-chatgpt-codex-one-shared-limit."
+      },
+      {
+        "story": "OpenAI rebrands data centers as AI compute campuses",
+        "decision": "covered",
+        "reason": "Already posted as 2026-11-02-openai-data-centers-compute-campuses."
+      },
+      {
+        "story": "ADNOC deal with OpenAI and G42",
+        "decision": "covered",
+        "reason": "Already covered as 2026-11-02-openai-adnoc-oil-fields-hours."
+      },
+      {
+        "story": "New York Times and other outlets sue Brave over content scraping",
+        "source": "https://techcrunch.com/",
+        "decision": "skipped",
+        "reason": "Lawsuit against a browser maker, not a priority 1 company, and no slot left today."
+      },
+      {
+        "story": "Oracle plans $20B stock and bond sale for AI buildout",
+        "decision": "skipped",
+        "reason": "Financing story with limited consumer interest and the day is over its cap."
+      },
+      {
+        "story": "Johns Hopkins cancer cell mapping chosen for Anthropic project",
+        "decision": "skipped",
+        "reason": "Small university press release, no slot left today."
+      },
+      {
+        "story": "OpenAI ChatGPT ad deals with Magnite and PubMatic",
+        "decision": "skipped",
+        "reason": "Still only secondhand reports of a paywalled The Information story."
       }
     ],
     "requests": []
