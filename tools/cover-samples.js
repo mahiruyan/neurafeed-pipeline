@@ -7,9 +7,11 @@ const { renderJob } = require('../src/render');
 const OUT = process.argv[2] || 'cover-samples';
 // First Wikimedia Commons photo (JPEG, at least 1000 px wide) for a search, as a ready thumbnail URL.
 async function commons(q) {
-  const u = `https://commons.wikimedia.org/w/api.php?action=query&format=json&generator=search&gsrnamespace=6&gsrlimit=10&gsrsearch=${encodeURIComponent(q)}&prop=imageinfo&iiprop=url|size|mime&iiurlwidth=1280`;
+  const u = q.startsWith('File:')
+    ? `https://commons.wikimedia.org/w/api.php?action=query&format=json&titles=${encodeURIComponent(q)}&prop=imageinfo&iiprop=url|size|mime&iiurlwidth=1280`
+    : `https://commons.wikimedia.org/w/api.php?action=query&format=json&generator=search&gsrnamespace=6&gsrlimit=10&gsrsearch=${encodeURIComponent(q)}&prop=imageinfo&iiprop=url|size|mime&iiurlwidth=1280`;
   const d = await (await fetch(u, { headers: { 'User-Agent': 'NeuraFeedPipeline/0.1 (hello@neurafeedai.com)' } })).json();
-  const pages = Object.values(d.query?.pages || {}).sort((a, b) => a.index - b.index);
+  const pages = Object.values(d.query?.pages || {}).sort((a, b) => (a.index || 0) - (b.index || 0));
   const hit = pages.map((p) => p.imageinfo?.[0]).find((i) => i && i.mime === 'image/jpeg' && i.width >= 1000);
   console.log(`::notice::commons "${q}": ${hit ? hit.descriptionurl : 'none'}`);
   return hit?.thumburl || null;
