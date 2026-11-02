@@ -1,78 +1,5 @@
 [
   {
-    "run_at": "2026-10-26T16:15:42.975Z",
-    "summary": "Noon run: no open links or requests; queued 1 priority 2 story (Google DeepMind's AI model called Hurricane Isaias's Florida landfall), filling today's last slot (8 jobs created this New York day counting the canceled and expired ones).",
-    "considered": [
-      {
-        "story": "Google DeepMind's AI model called Hurricane Isaias's Florida Panhandle landfall while physics models pointed to Louisiana",
-        "source": "https://www.kuow.org/npr-news/2026-10-26/how-ai-is-transforming-hurricane-forecasts",
-        "decision": "queued",
-        "job_id": "2026-10-26-google-ai-called-hurricane-isaias-florida",
-        "priority": 2
-      },
-      {
-        "story": "OpenAI frontier agents escaped parts of their training environments",
-        "decision": "covered",
-        "reason": "Already covered as 2026-10-23-openai-trains-ai-with-no-internet."
-      },
-      {
-        "story": "Meta's $95 billion stock sale for AI",
-        "decision": "covered",
-        "reason": "Already queued as 2026-10-26-meta-95-billion-stock-sale-ai."
-      },
-      {
-        "story": "Cathedral's AI agents reached Anthropic's internal systems",
-        "decision": "covered",
-        "reason": "Already queued as 2026-10-26-cathedral-ai-agents-broke-into-anthropic."
-      },
-      {
-        "story": "Malicious AGENTS.md file hijacks Codex and Claude Code",
-        "decision": "covered",
-        "reason": "Already queued as 2026-10-26-agents-md-downloads-hijack-claude-codex."
-      },
-      {
-        "story": "Sweden blocks ChatGPT and Claude on government computers",
-        "decision": "covered",
-        "reason": "Already covered as 2026-10-24-sweden-blocks-chatgpt-claude."
-      },
-      {
-        "story": "Apollo economist says AI has delivered zero financial payoff to most companies",
-        "source": "https://techcrunch.com/2026/10/25/ai-delivers-zero-financial-payoff-to-most-companies-according-to-apollo-economist/",
-        "decision": "skipped",
-        "reason": "Interesting but an economist's chart note, and today's last slot went to the stronger hurricane story."
-      },
-      {
-        "story": "Arrakis report: 76 percent of enabled AI agents went dormant but still hold live credentials",
-        "source": "https://www.helpnetsecurity.com/2026/10/26/arrakis-dormant-ai-agent-risks-report/",
-        "decision": "skipped",
-        "reason": "Vendor security report with little US consumer interest, and the day is full."
-      },
-      {
-        "story": "SoftBank commits $50 billion to Malaysia AI and data centers",
-        "source": "https://www.gurufocus.com/news/9141848/softbank-plans-50-billion-investment-in-malaysias-ai-and-tech-sectors",
-        "decision": "skipped",
-        "reason": "Regional investment story with limited US appeal, and the day is full."
-      },
-      {
-        "story": "Unitree H2-X Guardian humanoid demo",
-        "decision": "skipped",
-        "reason": "Already looked at in earlier runs; Mahir's own Unitree H2-X Reel link covers it."
-      },
-      {
-        "story": "Amazon's $75 Bee wearable raises privacy concerns",
-        "source": "https://spyglass.org/amazon-bee/",
-        "decision": "skipped",
-        "reason": "A product review column rather than news, and the day is full."
-      },
-      {
-        "story": "Utility post for today",
-        "decision": "skipped",
-        "reason": "The Gemini Audio Overview how to posted today at 11:01 New York time and the day's job count is now at 8."
-      }
-    ],
-    "requests": []
-  },
-  {
     "run_at": "2026-10-26T18:03:03.211Z",
     "summary": "Afternoon run: no open links or requests; queued 1 priority 1 story (Anthropic's public IPO filing, Nasdaq ticker ANT), waiting for Mahir's approval, even though the day already had 8 jobs, because priority 1 stories are never skipped.",
     "considered": [
@@ -5263,6 +5190,63 @@
         "story": "Mythos 5.5 leak claims",
         "decision": "skipped",
         "reason": "Still unconfirmed by Anthropic, and a Hugging Face 'leak' was debunked as noise."
+      }
+    ],
+    "requests": []
+  },
+  {
+    "run_at": "2026-11-02T17:45:40.454Z",
+    "summary": "12:30 New York run: no open links or requests; queued today's utility post (Gemini Notebook, formerly NotebookLM, study guide with website guide), filling Nov 2's eighth and last desk slot.",
+    "considered": [
+      {
+        "story": "Utility: Gemini Notebook (formerly NotebookLM) guide to notes, quizzes and Audio Overviews",
+        "source": "https://support.google.com/gemininotebook/answer/16206563?hl=en",
+        "decision": "queued",
+        "job_id": "2026-11-02-gemini-notebook-notebooklm-study-guide",
+        "priority": 2
+      },
+      {
+        "story": "OpenAI merging ChatGPT's Chat and Work tabs, shared usage with Codex",
+        "source": "https://techcrunch.com/2026/11/02/openai-is-finally-merging-chatgpts-chat-and-work-tabs/",
+        "decision": "covered",
+        "reason": "Same OpenAI email already covered as 2026-11-01-chatgpt-codex-one-shared-limit."
+      },
+      {
+        "story": "Elon Musk throttles Grok Bot limits over costs",
+        "source": "https://techcrunch.com/2026/11/02/elon-musk-throttles-grok-bot-limits-due-to-unsustainably-high-costs/",
+        "decision": "covered",
+        "reason": "Already queued as 2026-11-02-musk-grok-bot-cost-too-much."
+      },
+      {
+        "story": "42AI comes out of stealth with $62.5M and a behavior prediction world model",
+        "source": "https://techcrunch.com/2026/11/02/42ai-comes-out-of-stealth-with-62-5m-and-a-world-model-that-can-predict-human-behavior/",
+        "decision": "skipped",
+        "reason": "Priority 2 startup funding story and the day's last slot went to the utility post."
+      },
+      {
+        "story": "Google Gemini 4 Carbon with gated Fairwind access",
+        "decision": "covered",
+        "reason": "Already covered as 2026-10-28-google-gemini-4-carbon-number-one."
+      },
+      {
+        "story": "Anthropic S-1 discloses training pause and agent security failures",
+        "decision": "covered",
+        "reason": "Already covered in earlier Anthropic IPO jobs and the week in AI roundup."
+      },
+      {
+        "story": "OpenAI lowers its funding round target",
+        "decision": "covered",
+        "reason": "Already covered as 2026-10-31-openai-cuts-funding-target-10-billion."
+      },
+      {
+        "story": "Mythos 5.5 page briefly leaked on Anthropic's website",
+        "decision": "skipped",
+        "reason": "Only a single blog report in leads with no confirmation from a major outlet."
+      },
+      {
+        "story": "Gemini lets users turn their face into a shareable AI avatar",
+        "decision": "skipped",
+        "reason": "Still only one thin report, and the day is now at its 8 job cap."
       }
     ],
     "requests": []

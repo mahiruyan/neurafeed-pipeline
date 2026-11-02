@@ -1,0 +1,116 @@
+{
+  "id": "2026-11-02-gemini-notebook-notebooklm-study-guide",
+  "format": "utility",
+  "created_at": "2026-11-02T17:55:00Z",
+  "story_time": "2026-11-02T17:30:00Z",
+  "timely": false,
+  "sensitive": false,
+  "priority": 2,
+  "review": true,
+  "sources": [
+    { "name": "Google: NotebookLM is now Gemini Notebook", "url": "https://blog.google/innovation-and-ai/products/gemini-notebook/notebooklm-gemini-notebook/" },
+    { "name": "Google Workspace Updates", "url": "https://workspaceupdates.googleblog.com/2026/07/notebooklm-now-gemini-notebook.html" },
+    { "name": "Gemini Notebook Help: Create a notebook", "url": "https://support.google.com/gemininotebook/answer/16206563?hl=en" },
+    { "name": "Gemini Notebook Help: Add or discover new sources", "url": "https://support.google.com/gemininotebook/answer/16215270?hl=en" },
+    { "name": "Gemini Notebook Help: Generate Audio Overview", "url": "https://support.google.com/notebooklm/answer/16212820?hl=en" },
+    { "name": "Gemini Notebook Help: Generate Flashcards or Quizzes", "url": "https://support.google.com/gemininotebook/answer/16958963" },
+    { "name": "Layer3Labs", "url": "https://www.layer3labs.io/guides/how-to-use-notebooklm" }
+  ],
+  "caption": "NotebookLM is now called Gemini Notebook, and it still does the thing people love: it learns only from the files you give it.\nDrop in your notes, PDFs or a YouTube lecture, then turn them into a podcast, a quiz, flashcards or a study guide.\nThese 4 prompts get you there faster.\n\nWhat would you study with it first?\n\nFollow @neurafeed.ai for daily AI news.\n\nSource: Google, Gemini Notebook Help",
+  "threads_text": "NotebookLM got renamed Gemini Notebook, but the best trick is the same: feed it your own notes and PDFs and it turns them into a two host podcast, a quiz or flashcards with a difficulty setting. The custom prompt box is where most people leave value on the table. What would you turn into a podcast first?",
+  "slides": [
+    {
+      "kind": "cover",
+      "headline": "NotebookLM has a new name. *4 prompts* turn your notes into a podcast, quiz and study guide",
+      "image": {
+        "url": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/gemini-notebook__cover.width-1300.png",
+        "credit": "Google",
+        "fallback_urls": [],
+        "generate": "A tired college student in a wrinkled flannel shirt sits on the floor of a cramped dorm room late at night, leaning against a bed, wearing big over-ear headphones and smiling with relief, eyes half closed as if listening to something good. All around him the floor is covered in messy piles of printed lecture notes, highlighted textbooks, sticky notes and an open laptop with a blank, softly lit screen. Surreal touch: loose paper pages are lifting off the piles and folding themselves into a neat stack of small index cards floating in the air beside his head. On the wall behind him, the logo from the first image is printed big and exact on a poster. Warm desk lamp light mixed with cold blue light from the laptop, real shadows, cluttered shelves. Blank surfaces, no readable text or labels on any object, paper, card, book or screen. Generous headroom above his head. The student and the floating cards fill the upper two thirds of the frame, the bottom third is the paper covered floor. Photorealistic, high contrast, vertical composition, one clear subject, no letters, no watermarks. It must look like an unedited real photo from a news agency, not a painting, not digital art, no glow effects.",
+        "refs": [
+          "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/gemini-notebook__cover.width-1300.png"
+        ]
+      },
+      "pos": "center 30%"
+    },
+    {
+      "kind": "prompt",
+      "heading": "1. Ask your *own files*",
+      "paras": [
+        "Create a notebook and add sources: PDFs, Google Docs, slides, audio, web links or public YouTube videos.",
+        "Answers come only from those sources, with citations."
+      ],
+      "prompt": "Using only my sources, explain [topic] in plain words. Then list the 5 facts I am most likely to be tested on, and point to where each one appears."
+    },
+    {
+      "kind": "prompt",
+      "heading": "2. Make it a *podcast*",
+      "paras": [
+        "In Studio, open Audio Overview. Pick Deep Dive, Brief, Critique or Debate, and Shorter, Default or Longer.",
+        "Then add a focus prompt."
+      ],
+      "prompt": "Focus only on [chapter or topic]. Explain it for a beginner, use one everyday example per idea, and end with the 3 points I must remember."
+    },
+    {
+      "kind": "prompt",
+      "heading": "3. Quiz *yourself*",
+      "paras": [
+        "In Studio, click the pencil icon next to Quizzes or Flashcards. Choose easy, medium or hard and how many questions.",
+        "Then tell it what to test."
+      ],
+      "prompt": "Make questions only about [topic]. Mix definitions with questions that ask me to apply an idea to a new example. Skip anything not in my sources."
+    },
+    {
+      "kind": "prompt",
+      "heading": "4. Build a *study guide*",
+      "paras": [
+        "Reports in Studio include a study guide, a briefing document, an FAQ or a custom report.",
+        "You can export a report to Google Docs."
+      ],
+      "prompt": "Create a one page study guide on [topic]: key terms with short definitions, a timeline of the main events, and 5 practice questions with answers."
+    },
+    {
+      "kind": "cta",
+      "hook": "Save this before your next exam, and follow for AI tools that actually save you time."
+    }
+  ],
+  "site_article": {
+    "kind": "guide",
+    "headline": "Gemini Notebook (formerly NotebookLM): how to turn your documents into notes, quizzes and audio",
+    "dek": "How to set up a notebook, ask questions about your own files, and use Audio Overviews, flashcards, quizzes and reports, with prompts to copy.",
+    "summary": "Google renamed NotebookLM to Gemini Notebook on July 16, 2026, but it still works the same way: you add your own sources and it answers and builds study material from them. Here is how to use each part, step by step, and where it falls short.",
+    "seo_title": "Gemini Notebook (NotebookLM) Guide: Notes, Quizzes, Audio",
+    "seo_description": "How to use Gemini Notebook, formerly NotebookLM: add sources, ask cited questions, make Audio Overviews, flashcards, quizzes and study guides.",
+    "answer_summary": "Create a notebook, add your sources (PDFs, Docs, slides, audio, links or YouTube videos), ask questions in the chat, then use the Studio panel to generate Audio Overviews, flashcards, quizzes, reports and more from those sources.",
+    "tags": ["Gemini Notebook", "NotebookLM", "Google", "Studying", "AI guides"],
+    "hero_alt": "A student in headphones sitting on a dorm room floor covered in lecture notes, with paper cards floating beside him.",
+    "paragraphs": [
+      { "kind": "fact", "text": "Gemini Notebook is the new name for NotebookLM, Google's research and study tool. Google announced the rename on July 16, 2026, and said the product stays a standalone research tool. The idea has not changed: you give it your own material, such as lecture notes, PDFs or a recorded talk, and it answers questions and builds study aids from that material instead of from the open web. This guide covers how to set up a notebook, how to ask good questions, and how to use Audio Overviews, flashcards, quizzes and reports.", "sources": [0, 1] },
+      { "kind": "fact", "text": "If you used NotebookLM before, nothing breaks. Google's Workspace team said automatic redirects keep existing shared notebooks and links working, and the new name and logo appear across the product over several weeks. On mobile you may need to update the app.", "sources": [1] },
+      { "kind": "heading", "text": "Set up your first notebook" },
+      { "kind": "step", "title": "1. Create a notebook", "text": "Open Gemini Notebook in your browser and select Create new notebook. In the window that opens, choose Upload a source. Use one notebook per subject or project. Each notebook is separate, and Gemini Notebook cannot pull information from several notebooks at once, so a notebook for your biology class will not know what is in your history notebook." },
+      { "kind": "step", "title": "2. Add the right sources", "text": "Select Add sources on the left. Gemini Notebook accepts PDFs, Google Docs, Google Slides, Google Sheets, Word, PowerPoint, TXT, Markdown, CSV and ePub files, images, audio files such as MP3 and WAV, pasted text, web links, public YouTube videos and Gemini chats. Each source can hold up to 500,000 words, or 200 MB for an uploaded file, and free users can add up to 50 sources per notebook. Sources from Google Drive sync automatically, but footnotes and comments in those files are not imported." },
+      { "kind": "tip", "text": "No material yet: type a question into the search box in the Sources panel and pick Web or Drive. Gemini Notebook shows results you can import. Turn on Deep Research for a longer search that takes a few minutes; Google says that option is only for users over 18." },
+      { "kind": "heading", "text": "Ask questions about your own files" },
+      { "kind": "fact", "text": "Once sources are in, the chat panel shows a summary of them and suggested questions. Answers draw on the notebook's sources and include citations that link back to the passage they came from, according to Layer3Labs' walkthrough. You can also switch individual sources off in the Sources panel to narrow what an answer uses.", "sources": [2, 6] },
+      { "kind": "prompt", "title": "Prompt 1: Find what matters for the test", "text": "Using only my sources, explain [topic] in plain words. Then list the 5 facts I am most likely to be tested on, and point to where each one appears." },
+      { "kind": "prompt", "title": "Prompt 2: Spot the gaps", "text": "Compare what [source 1] and [source 2] say about [topic]. List where they agree, where they disagree, and anything one covers that the other leaves out." },
+      { "kind": "tip", "text": "Click the citations on anything you plan to quote or memorize. The answer is only as good as the passage behind it, and checking takes seconds." },
+      { "kind": "heading", "text": "Turn your notes into a podcast" },
+      { "kind": "fact", "text": "Audio Overviews live in the Studio panel. Google's help center lists four formats: Deep Dive, the default, where two hosts discuss your sources; The Brief, one speaker giving the key points in under two minutes; The Critique, two hosts giving feedback on something like an essay; and The Debate, two hosts arguing different sides. You can choose Shorter, Default or Longer, though Longer works in English only. More than 80 languages are supported.", "sources": [4] },
+      { "kind": "step", "title": "3. Generate an Audio Overview with a focus", "text": "In Studio, open Audio Overview, pick a format and length, and add a prompt that says what to focus on and how expert the listener is. It generates in the background, which can take a couple of minutes, so you can keep working. You can download the audio when it is done." },
+      { "kind": "prompt", "title": "Prompt 3: A beginner's audio lesson", "text": "Focus only on [chapter or topic]. Explain it for a beginner, use one everyday example per idea, and end with the 3 points I must remember." },
+      { "kind": "fact", "text": "There is also an Interactive mode. When you create a new Audio Overview with it switched on, you can select Join while listening and ask the hosts a question by voice; they answer from your sources and then carry on. Google says it is English only, works only on newly generated overviews, and may have delays or audio glitches.", "sources": [4] },
+      { "kind": "heading", "text": "Quiz yourself with flashcards and quizzes" },
+      { "kind": "step", "title": "4. Customize before you generate", "text": "In Studio, select Flashcards or Quizzes to generate right away, or click the pencil icon first to customize. You can set the difficulty to easy, medium or hard, choose fewer, standard or more items, and add a prompt about the topic, audience or style." },
+      { "kind": "prompt", "title": "Prompt 4: Questions that test understanding", "text": "Make questions only about [topic]. Mix definitions with questions that ask me to apply an idea to a new example. Skip anything not in my sources." },
+      { "kind": "fact", "text": "While you study, the Explain button gives the reasoning behind a card or an answer. On flashcards you mark each card Got it! or Missed it!, and Gemini Notebook saves your progress. At the end you can practice again with the same cards, all cards, or only the ones you missed. Flashcards can be downloaded as a CSV file.", "sources": [5] },
+      { "kind": "heading", "text": "Build study guides and reports" },
+      { "kind": "fact", "text": "The Studio panel also makes notes, Video Overviews, mind maps, data tables, slide decks, infographics and reports. Report types include a study guide, a briefing document, an FAQ or a custom report, and a report can be exported to Google Docs from its three dot menu. Edits you make in the exported Doc do not sync back to the notebook.", "sources": [2] },
+      { "kind": "prompt", "title": "Prompt 5: A one page study guide", "text": "Create a one page study guide on [topic]: key terms with short definitions, a timeline of the main events, and 5 practice questions with answers." },
+      { "kind": "heading", "text": "What it is bad at" },
+      { "kind": "analysis", "text": "Gemini Notebook is only as good as what you put in. If your sources are thin or wrong, its answers and quizzes will be too, and it will not tell you what your notes are missing unless you ask. Google itself warns that Audio Overviews are AI generated and can contain inaccuracies, so treat them as a way to review, not as the final word. It also cannot combine notebooks, and the mobile app may not support every feature. For a quick fact check against the open web, a search tool is still the better fit; for learning a specific set of material well, this is the tool to use." },
+      { "kind": "fact", "text": "Free accounts get the core features. Google's paid AI plans raise the limits on notebooks, sources and daily generations, and some newer features, such as code that runs inside a notebook to analyze data, started with Google AI Ultra users before a wider rollout.", "sources": [0, 6] }
+    ]
+  }
+}
