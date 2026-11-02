@@ -1,55 +1,5 @@
 [
   {
-    "run_at": "2026-10-26T22:13:37.056Z",
-    "summary": "Turned Mahir's Reuters link on China's AI stock crash into a carousel for his review; the New York day is already past 8 desk jobs, so no other stories were queued.",
-    "considered": [
-      {
-        "story": "Reuters: In China, the AI bubble has already burst (STAR50 down about 40%, about $480 billion erased)",
-        "source": "https://www.investing.com/news/economy-news/analysisin-china-the-ai-bubble-has-already-burst-4972445",
-        "decision": "queued",
-        "job_id": "2026-10-26-china-ai-stock-bubble-burst-480-billion",
-        "priority": 1
-      },
-      {
-        "story": "Banks and Blackstone line up $63 billion to finance Broadcom chips for Anthropic",
-        "source": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxQZU9zQUUycTh6SXBkQ25GQUJKTWJabmR3Q1gtYXlZWDJSUWk2cmxGWWRsUlZlSTdVNEtsdDY5d0hVakZ1ZkVDMDFiV2NrdjFaQnNVZUxRMjNESzluZFVBc0s3YU9pZjNZMVR1WEdIOVFrc2phbnRZYWpuYnRXY29Rd0FiVnItWTR1akVvNXhfWDAyNHJId040M2R0Q29HZTAwVzYxUl9OVy0wNWFrV2M3ME1Td25NUGI5cnhOY2JyQUVFS3ZOUGdEZVh1X2pQZWp4NGc?oc=5",
-        "decision": "skipped",
-        "reason": "Financing deal on top of the Anthropic IPO story already posted today, and the day is past 8 jobs with tonight's slots full."
-      },
-      {
-        "story": "FTC demands testimony from Anthropic executives in AI safety probe",
-        "decision": "skipped",
-        "reason": "Only a TradingView headline in leads so far, and the day is past 8 jobs."
-      },
-      {
-        "story": "Anthropic president criticizes OpenAI over Pentagon deal",
-        "decision": "skipped",
-        "reason": "Commentary story, and the day is past 8 jobs."
-      },
-      {
-        "story": "OpenAI and Anthropic staff told to stop wearing company logos over spy risks",
-        "decision": "skipped",
-        "reason": "New York Post story with no second source yet, and the day is past 8 jobs."
-      },
-      {
-        "story": "Anthropic S-1 shows an $80 billion loss and reliance on cloud partners",
-        "decision": "covered",
-        "reason": "Already posted as 2026-10-26-anthropic-files-ipo-ant-nasdaq."
-      },
-      {
-        "story": "GPT-6.1 Terra reviews and benchmarks",
-        "decision": "covered",
-        "reason": "Already posted as 2026-10-26-openai-gpt-6-1-terra."
-      },
-      {
-        "story": "Utility post for today",
-        "decision": "skipped",
-        "reason": "The day already has more than 8 jobs."
-      }
-    ],
-    "requests": []
-  },
-  {
     "run_at": "2026-10-26T23:53:39.453Z",
     "summary": "Evening check at 19:53 New York time: no open links or requests, today's 8 slots are already posted or approved, so nothing new was queued.",
     "considered": [
@@ -5157,6 +5107,69 @@
         "story": "OpenAI ChatGPT ad deals with Magnite and PubMatic",
         "decision": "skipped",
         "reason": "Still only secondhand reports of a paywalled The Information story."
+      }
+    ],
+    "requests": []
+  },
+  {
+    "run_at": "2026-11-02T22:53:58.236Z",
+    "summary": "18:00 New York run: no open links or requests; nothing queued because Nov 2 already has more than 8 desk jobs and no new priority 1 story appeared since the last run.",
+    "considered": [
+      {
+        "story": "Goldman Sachs restricts bankers and traders from Claude Code and Copilot",
+        "source": "https://www.bloomberg.com/news/articles/2026-11-02/goldman-restricts-traders-and-bankers-from-using-some-ai-tools",
+        "decision": "skipped",
+        "reason": "A bank's internal tool policy, not a major announcement from a priority 1 company, and the day is over its cap."
+      },
+      {
+        "story": "Microsoft patents AI that changes speakers' words in live video",
+        "source": "https://futurism.com/artificial-intelligence/microsoft-patents-ai-words-in-peoples-mouths",
+        "decision": "skipped",
+        "reason": "A patent filing, not a product, and no slot left today."
+      },
+      {
+        "story": "Amazon allegedly cancels GPU orders and closes buyer accounts",
+        "source": "https://wccftech.com/amazon-allegedly-canceling-gpu-orders-closing-accounts-compute-hardware-tim-sweeney/",
+        "decision": "skipped",
+        "reason": "Unconfirmed retail complaint story from one outlet."
+      },
+      {
+        "story": "Marvell buys Lumentum for $115 billion",
+        "source": "https://www.cnbc.com/2026/11/02/marvell-to-buy-lumentum-in-115-billion-deal-in-ai-data-center-bet-.html",
+        "decision": "skipped",
+        "reason": "Chip industry deal with limited consumer interest, and the day is over its cap."
+      },
+      {
+        "story": "Meta weighs a $20B+ bond offering for AI",
+        "source": "https://www.bloomberg.com/news/articles/2026-11-02/meta-readies-cross-border-investment-bond-offering",
+        "decision": "skipped",
+        "reason": "Financing report, not a product or major Meta announcement."
+      },
+      {
+        "story": "Anthropic S-1: $17B Q3 revenue and internal token spend above employee pay",
+        "decision": "covered",
+        "reason": "Already queued as 2026-11-02-anthropic-17-billion-quarter-loss."
+      },
+      {
+        "story": "OpenAI data centers renamed AI compute campuses and 1GW flexible demand pledge",
+        "decision": "covered",
+        "reason": "Already posted as 2026-11-02-openai-data-centers-compute-campuses."
+      },
+      {
+        "story": "Abu Dhabi signs four OpenAI deals",
+        "decision": "covered",
+        "reason": "Already covered as 2026-11-02-openai-adnoc-oil-fields-hours."
+      },
+      {
+        "story": "GDPx benchmark caps top model at 12 percent",
+        "decision": "covered",
+        "reason": "Already queued as 2026-11-02-gdpx-best-ai-scores-12-percent."
+      },
+      {
+        "story": "Meituan LongCat-2.5 multimodal agentic model",
+        "source": "https://technode.com/2026/11/02/meituan-launches-longcat-2-5-multimodal-ai-model-for-extended-coding-tasks/",
+        "decision": "skipped",
+        "reason": "Chinese model launch with little US interest, and no slot left today."
       }
     ],
     "requests": []
