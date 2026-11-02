@@ -48,6 +48,25 @@ async function judge(c, name, dir) {
     const dir = path.join('/tmp/faces', p.slug); fs.mkdirSync(dir, { recursive: true });
     let cands = [];
     try { cands = (await candidates(p.name)).slice(0, 18); } catch (e) { console.log(`::warning::${p.slug}: ${e.message}`); }
+    if (process.env.MODE === 'sheet') {
+      // Review by eye: a numbered grid of every candidate and their details, no vision model.
+      const got = [];
+      for (const c of cands) {
+        const file = path.join(dir, `${got.length + 1}.jpg`);
+        try { await download(c.url, file, 30000); got.push({ ...c, n: got.length + 1, file }); } catch (e) { warn(`download ${c.title}: ${e.message}`); }
+      }
+      fs.writeFileSync(path.join(REVIEW, `${p.slug}.json`), JSON.stringify(got.map(({ file, ...c }) => c), null, 2));
+      if (got.length) {
+        const cell = (i) => `[${i}]scale=300:375:force_original_aspect_ratio=increase,crop=300:375,drawtext=text='${i + 1}':x=10:y=10:fontsize=44:fontcolor=yellow:box=1:boxcolor=black@0.7:boxborderw=6[v${i}]`;
+        const cols = 6; const rows = Math.ceil(got.length / cols);
+        const pads = Array.from({ length: rows * cols - got.length }, (_, k) => `color=black:s=300x375:d=1[p${k}]`);
+        const labels = got.map((_, i) => `[v${i}]`).concat(pads.map((_, k) => `[p${k}]`));
+        const filter = [...got.map((_, i) => cell(i)), ...pads, `${labels.join('')}xstack=inputs=${rows * cols}:layout=${Array.from({ length: rows * cols }, (_, i) => `${(i % cols) * 300}_${Math.floor(i / cols) * 375}`).join('|')}`].join(';');
+        try { execFileSync('ffmpeg', ['-y', '-loglevel', 'error', ...got.flatMap((g) => ['-i', g.file]), '-filter_complex', filter, '-frames:v', '1', '-q:v', '5', path.join(REVIEW, `${p.slug}.jpg`)]); } catch (e) { warn(`sheet ${p.slug}: ${e.message}`); }
+      }
+      console.log(`::notice::${p.name}: ${got.length} candidates in the sheet`);
+      continue;
+    }
     const judged = [];
     for (const c of cands) { const j = await judge(c, p.name, dir); if (j) judged.push(j); }
     const good = judged.filter((j) => j.one_main_person && ['large', 'medium'].includes(j.face) && j.sharp && !j.text_or_watermark && j.cover_quality >= 6)

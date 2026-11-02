@@ -6,6 +6,7 @@ on:
   workflow_dispatch:
     inputs:
       only: { description: 'slugs to (re)build, comma separated; empty = all', required: false, default: '' }
+      mode: { description: "'sheet' = numbered candidate sheets for review by eye (no vision model)", required: false, default: '' }
 
 permissions:
   contents: write
@@ -24,7 +25,9 @@ jobs:
       - run: node tools/build-faces.js /tmp/people-review "${{ inputs.only }}"
         env:
           FAL_KEY: ${{ secrets.FAL_KEY }}
+          MODE: ${{ inputs.mode }}
       - name: Save the index
+        if: inputs.mode != 'sheet'
         run: |
           git config user.name "neurafeed-bot"; git config user.email "bot@neurafeed.ai"
           git add assets/people/index.json
