@@ -39,7 +39,16 @@ async function bing(q) {
   }
   return out;
 }
+// DuckDuckGo limits fast callers: space the calls out and retry with a longer pause.
+const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 async function ddg(q) {
+  for (let attempt = 0; attempt < 4; attempt++) {
+    await sleep(attempt ? 20000 * attempt : 6000);
+    try { const r = await ddgOnce(q); if (r.length) return r; } catch { /* retry */ }
+  }
+  return [];
+}
+async function ddgOnce(q) {
   const page = await (await fetch(`https://duckduckgo.com/?q=${encodeURIComponent(q)}&iax=images&ia=images`, { headers: BROWSER })).text();
   const vqd = page.match(/vqd=["']?([\d-]+)/)?.[1];
   if (!vqd) return [];
