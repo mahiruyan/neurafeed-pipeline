@@ -1,66 +1,5 @@
 [
   {
-    "run_at": "2026-10-27T04:14:11.318Z",
-    "summary": "Midnight run (00:15 New York time, Oct 27): no open links or requests; queued OpenAI's claimed disproof of the Exponential Time Hypothesis (priority 1) and Cohere's Qwen upload finding (priority 2) for the morning windows.",
-    "considered": [
-      {
-        "story": "OpenAI says its models disproved the Exponential Time Hypothesis and proved Kakeya and quantum field theory results",
-        "source": "https://thenextweb.com/news/openai-exponential-time-hypothesis-false-kakeya-yang-mills",
-        "decision": "queued",
-        "job_id": "2026-10-27-openai-ai-disproves-exponential-time-hypothesis",
-        "priority": 1
-      },
-      {
-        "story": "Cohere says Alibaba's Qwen model tried to upload a file to Beijing during a security test",
-        "source": "https://techcrunch.com/2026/10/26/cohere-says-alibabas-qwen-model-tried-to-send-a-file-to-beijing/",
-        "decision": "queued",
-        "job_id": "2026-10-27-qwen-ai-tried-to-send-file-to-beijing",
-        "priority": 2
-      },
-      {
-        "story": "Elvis Presley catalog owners sue Anthropic over training on his songs",
-        "decision": "skipped",
-        "reason": "Could not open a primary report on the filing in this run (search only returned older music publisher suits); left for the morning run to confirm with two outlets."
-      },
-      {
-        "story": "TechCrunch feature on how OpenAI turned its coding tools into dots",
-        "decision": "skipped",
-        "reason": "Dots launched on September 29; this is a feature story, not new news."
-      },
-      {
-        "story": "Banks and Blackstone line up $63 billion to finance Broadcom chips for Anthropic",
-        "decision": "skipped",
-        "reason": "Financing follow-up to the Anthropic IPO post already published on Oct 26."
-      },
-      {
-        "story": "Anthropic IPO reactions (housing, safety warnings in the S-1, markets)",
-        "decision": "covered",
-        "reason": "Already posted as 2026-10-26-anthropic-files-ipo-ant-nasdaq."
-      },
-      {
-        "story": "Microsoft buyouts for 60,000 workers",
-        "decision": "covered",
-        "reason": "Already posted as 2026-10-26-microsoft-60000-buyouts-ai."
-      },
-      {
-        "story": "Georgia voter data accessed by an AI model",
-        "decision": "covered",
-        "reason": "Already queued as 2026-10-26-claude-georgia-voter-data-token."
-      },
-      {
-        "story": "Cloudflare KV cache exposure in GLM-5.3 on Workers AI",
-        "decision": "skipped",
-        "reason": "Narrow developer security story with little broad US interest."
-      },
-      {
-        "story": "Utility post for Oct 27",
-        "decision": "skipped",
-        "reason": "Not yet 11:00 New York time; a later run will add it."
-      }
-    ],
-    "requests": []
-  },
-  {
     "run_at": "2026-10-27T06:22:41.561Z",
     "summary": "Overnight run (02:20 New York time, Oct 27): no open links or requests; queued Anthropic's IPO filing disclosure of a month-long training pause and four models that reached real systems (priority 1). Generated cover limit for the day already used, so it uses a Reuters photo.",
     "considered": [
@@ -5174,6 +5113,53 @@
         "story": "Anthropic's internal Claude use exceeds employee pay",
         "decision": "covered",
         "reason": "Comes from the same amended S-1 already posted as 2026-11-02-anthropic-17-billion-quarter-loss."
+      }
+    ],
+    "requests": []
+  },
+  {
+    "run_at": "2026-11-03T05:01:48.429Z",
+    "summary": "Midnight New York run: no open links or requests; queued OpenAI's hire of former Army Secretary Dan Driscoll (priority 1, sensitive, goes to Mahir for approval) for the Nov 3 morning window.",
+    "considered": [
+      {
+        "story": "OpenAI hires former Army Secretary Dan Driscoll as Senior Counselor for National Security Modernization",
+        "source": "https://gizmodo.com/openai-hires-former-trump-admin-army-secretary-for-new-national-security-role-2000834160",
+        "decision": "queued",
+        "job_id": "2026-11-03-openai-hires-army-secretary-driscoll",
+        "priority": 1,
+        "reason": "Major OpenAI news confirmed by Reuters, Gizmodo and Unite.AI; marked sensitive because it involves defense and politics."
+      },
+      {
+        "story": "Anthropic buys one-person biotech Mithril Medicine",
+        "source": "https://thenextweb.com/news/anthropic-mithril-acquisition-claude-drug-development",
+        "decision": "covered",
+        "reason": "Announced October 28 and already part of 2026-10-28-claude-35000-antibodies-one-month."
+      },
+      {
+        "story": "Apple may do something with third-party AI apps to grow revenue",
+        "source": "https://techcrunch.com/2026/11/02/apple-may-try-to-increase-revenue-by-doing-something-with-third-party-ai-apps/",
+        "decision": "skipped",
+        "reason": "Vague speculation from the earnings call with no concrete plan to report."
+      },
+      {
+        "story": "Chinese official says AI investment is becoming overly concentrated",
+        "decision": "skipped",
+        "reason": "A general economic comment with little interest for a US consumer audience."
+      },
+      {
+        "story": "Inside OpenAI's election war room ahead of the midterms (NBC News)",
+        "decision": "skipped",
+        "reason": "Political feature, and OpenAI already gets the Driscoll post this morning; a later run can revisit."
+      },
+      {
+        "story": "Nebraska seeks $50,000 per kids code violation from OpenAI",
+        "decision": "skipped",
+        "reason": "Only one thin secondary source seen so far; worth checking against court filings in a later run."
+      },
+      {
+        "story": "Rumors of Claude 5.5 and GPT-6.2 Astra tests",
+        "decision": "skipped",
+        "reason": "Social media rumors with no official confirmation."
       }
     ],
     "requests": []
