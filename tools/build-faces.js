@@ -42,8 +42,8 @@ async function bing(q) {
 // DuckDuckGo limits fast callers: space the calls out and retry with a longer pause.
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 async function ddg(q) {
-  for (let attempt = 0; attempt < 4; attempt++) {
-    await sleep(attempt ? 20000 * attempt : 6000);
+  for (let attempt = 0; attempt < 3; attempt++) {
+    await sleep(attempt ? 8000 * attempt : 2000);
     try { const r = await ddgOnce(q); if (r.length) return r; } catch { /* retry */ }
   }
   return [];

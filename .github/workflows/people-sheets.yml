@@ -1,0 +1,60 @@
+name: People sheets
+
+# Candidate photo sheets for the face library, one runner per person (web image search limits
+# each address, so separate runners get more results). Sheets go to the people-review branch.
+on:
+  workflow_dispatch:
+    inputs:
+      only: { description: 'slugs, comma separated', required: true }
+      mode: { description: "'web' (news photos and image search) or 'sheet' (Wikimedia Commons)", required: false, default: 'web' }
+
+permissions:
+  contents: write
+
+jobs:
+  plan:
+    runs-on: ubuntu-latest
+    outputs:
+      people: ${{ steps.p.outputs.people }}
+    steps:
+      - id: p
+        run: echo "people=$(echo '${{ inputs.only }}' | jq -Rc 'split(",") | map(select(length > 0))')" >> "$GITHUB_OUTPUT"
+  sheet:
+    needs: plan
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    strategy:
+      fail-fast: false
+      max-parallel: 20
+      matrix:
+        slug: ${{ fromJson(needs.plan.outputs.people) }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - run: npm install --no-audit --no-fund
+      - run: which ffmpeg || (sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg)
+      - run: node tools/build-faces.js /tmp/people-review "${{ matrix.slug }}"
+        env:
+          MODE: ${{ inputs.mode }}
+      - uses: actions/upload-artifact@v4
+        with:
+          name: sheet-${{ matrix.slug }}
+          path: /tmp/people-review
+          if-no-files-found: ignore
+  publish:
+    needs: sheet
+    if: always()
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/download-artifact@v4
+        with:
+          pattern: sheet-*
+          merge-multiple: true
+          path: /tmp/people-review
+      - run: |
+          git config user.name "neurafeed-bot"; git config user.email "bot@neurafeed.ai"
+          git checkout --orphan people-review && git rm -rqf --cached . && rm -rf people-review && cp -r /tmp/people-review people-review
+          git add -f people-review && git commit -qm "people review" && git push -f origin people-review
