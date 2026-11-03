@@ -1,71 +1,5 @@
 [
   {
-    "run_at": "2026-10-27T14:53:15.265Z",
-    "summary": "Made Mahir's X video link into a Reel and queued Apple's M6 MacBook Pro and iMac launch as the 8th news post of the day.",
-    "considered": [
-      {
-        "story": "Mahir's link: Jason Shuman X video, 'Coming to a city near you' (face recognition payments)",
-        "source": "https://x.com/jasonrshuman/status/2114052520985424331",
-        "decision": "queued",
-        "job_id": "2026-10-27-face-recognition-payments-reel",
-        "priority": 1
-      },
-      {
-        "story": "Apple unveils 14-inch MacBook Pro and iMac with M6, claims up to 13x faster LLM prompt processing than M1",
-        "source": "https://techcrunch.com/2026/10/27/apple-unveils-new-14-inch-macbook-pro-with-m6-chip/",
-        "decision": "queued",
-        "job_id": "2026-10-27-apple-m6-macbook-pro-ai-13x",
-        "priority": 1
-      },
-      {
-        "story": "OpenAI dots always-on assistant (TechCrunch feature)",
-        "source": "https://techbytes.app/posts/how-openai-turned-its-coding-tools-into-dots-an-always/",
-        "decision": "skipped",
-        "reason": "Dots launched on September 29; this is a background feature, not new news."
-      },
-      {
-        "story": "OpenAI claims proofs on the Exponential Time Hypothesis, Kakeya and Yang-Mills",
-        "decision": "covered",
-        "reason": "Already queued as 2026-10-27-openai-ai-disproves-exponential-time-hypothesis."
-      },
-      {
-        "story": "Nvidia and AMD invest in Meta",
-        "source": "https://www.cnbc.com/2026/10/27/nvidia-invest-meta.html",
-        "decision": "covered",
-        "reason": "Already queued as 2026-10-27-nvidia-3-billion-meta-muse."
-      },
-      {
-        "story": "Cohere says Qwen model tried to send a file to China",
-        "decision": "covered",
-        "reason": "Already queued as 2026-10-27-qwen-ai-tried-to-send-file-to-beijing."
-      },
-      {
-        "story": "Elvis Presley rights holders sue Anthropic",
-        "decision": "covered",
-        "reason": "Already covered as 2026-10-24-elvis-rights-holders-sue-anthropic."
-      },
-      {
-        "story": "AI political groups spent $78.5M on 2026 federal races",
-        "source": "https://www.cnbc.com/2026/10/27/ai-political-spending-silicon-valley-election.html",
-        "decision": "skipped",
-        "reason": "Today already has 8 news jobs with the Apple story, the daily cap."
-      },
-      {
-        "story": "GXO expands Agility Digit humanoid robots to two more warehouses",
-        "source": "https://www.therobotreport.com/agility-gxo-logistics-plan-expanded-deployment-digit-humanoid/",
-        "decision": "skipped",
-        "reason": "Daily cap of 8 news jobs reached; small expansion of an existing deployment."
-      },
-      {
-        "story": "General Compute raises $100M Series A",
-        "source": "https://techcrunch.com/2026/10/27/general-compute-raises-100-million-series-a-countering-the-neocloud-disaster-narrative/",
-        "decision": "skipped",
-        "reason": "Funding round with little US consumer interest, and the daily cap is reached."
-      }
-    ],
-    "requests": []
-  },
-  {
     "run_at": "2026-10-27T16:09:55.245Z",
     "summary": "Midday run (12:10 New York time, Oct 27): no open links or requests; today already has 8 news jobs (the daily cap), so nothing new was queued.",
     "considered": [
@@ -5137,6 +5071,66 @@
         "story": "China plans broad AI guardrails (Bloomberg)",
         "decision": "skipped",
         "reason": "Already skipped in earlier runs; paywalled and policy-heavy."
+      },
+      {
+        "story": "OpenAI hires former Army Secretary Dan Driscoll",
+        "decision": "covered",
+        "reason": "Already queued as 2026-11-03-openai-hires-army-secretary-driscoll."
+      }
+    ],
+    "requests": []
+  },
+  {
+    "run_at": "2026-11-03T15:11:39.724Z",
+    "summary": "10:00 New York run: no open links or requests; queued the FT report that Nvidia told cloud partners to sell at least 51% of services outside China (priority 1, waits for Mahir's approval). Today now has 8 jobs, the daily cap, so no utility post fits today.",
+    "considered": [
+      {
+        "story": "Nvidia tells cloud partners to sell at least 51% of services to non-Chinese customers (FT)",
+        "source": "https://www.malaymail.com/news/money/2026/11/03/nvidia-tells-data-centre-partners-to-curb-business-with-chinese-clients-ft-reports/241835",
+        "decision": "queued",
+        "job_id": "2026-11-03-nvidia-cloud-partners-china-51-percent",
+        "priority": 1
+      },
+      {
+        "story": "Utility post for November 3",
+        "decision": "skipped",
+        "reason": "It is before 11:00 New York time, and the Nvidia story took the last of today's 8 slots; priority 1 news comes first."
+      },
+      {
+        "story": "DeepSeek V5 to pre-train on 160,000 Huawei Ascend chips",
+        "source": "https://cryptobriefing.com/deepseek-v5-huawei-ascend-950-training/",
+        "decision": "skipped",
+        "reason": "Only a crypto news site reporting it, no second source read, and the day is full."
+      },
+      {
+        "story": "OpenAI security sprint and bigger bug bounty (up to $30,000)",
+        "source": "https://openai.com/index/preparing-our-next-security-sprint-to-harden-openai",
+        "decision": "skipped",
+        "reason": "Small security program update with little consumer interest; the day is full."
+      },
+      {
+        "story": "Drax, Brookfield and Radiant plan a 1GW AI data center in Yorkshire",
+        "source": "https://www.cnbc.com/2026/11/03/brookfield-ai-data-center-yorkshire-drax.html",
+        "decision": "skipped",
+        "reason": "UK infrastructure project with low US interest, still needs planning approval and a tenant."
+      },
+      {
+        "story": "Cyclon unveils an AI phone that drives existing apps",
+        "source": "https://www.digitaltrends.com/phones/cyclon-is-an-ai-phone-that-wants-to-replace-your-iphone/",
+        "decision": "skipped",
+        "reason": "Interesting startup product but only one source and no slot left today; can be revisited tomorrow."
+      },
+      {
+        "story": "Meta slow to remove AI videos of coaches touching young athletes (Futurism)",
+        "source": "https://futurism.com/artificial-intelligence/meta-facebook-ai-coaches-inappropriately-touching-young-athletes",
+        "decision": "skipped",
+        "reason": "Sensitive child safety story from a single outlet; not suitable without stronger sourcing."
+      },
+      {
+        "story": "OpenAI LifeVal benchmark for everyday tasks",
+        "source": "https://openai.com/index/lifeval/",
+        "decision": "skipped",
+        "reason": "Passed on in earlier runs, still no independent second source and no slot left."
       },
       {
         "story": "OpenAI hires former Army Secretary Dan Driscoll",
