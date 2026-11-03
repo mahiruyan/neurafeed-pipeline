@@ -39,21 +39,50 @@ async function bing(q) {
   }
   return out;
 }
+async function ddg(q) {
+  const page = await (await fetch(`https://duckduckgo.com/?q=${encodeURIComponent(q)}&iax=images&ia=images`, { headers: BROWSER })).text();
+  const vqd = page.match(/vqd=["']?([\d-]+)/)?.[1];
+  if (!vqd) return [];
+  const r = await fetch(`https://duckduckgo.com/i.js?l=us-en&o=json&q=${encodeURIComponent(q)}&vqd=${vqd}&f=size:Large,,,,,&p=1`, { headers: { ...BROWSER, Referer: 'https://duckduckgo.com/' } });
+  const j = await r.json().catch(() => ({}));
+  return (j.results || []).map((x) => ({ url: x.image, page: x.url, title: x.title || '' }));
+}
+// Lead photos of recent news articles about the person (og:image), from the Bing News RSS feed.
+async function newsPhotos(name) {
+  const xml = await (await fetch(`https://www.bing.com/news/search?q=${encodeURIComponent(`"${name}"`)}&format=rss&count=40`, { headers: BROWSER })).text();
+  const links = [...xml.matchAll(/<item>[\s\S]*?<title>([\s\S]*?)<\/title>[\s\S]*?<link>([\s\S]*?)<\/link>/g)].map((m) => ({ title: unent(m[1]), link: unent(m[2]).trim() }));
+  const out = [];
+  for (const l of links.slice(0, 30)) {
+    let page = l.link; const u = page.match(/[?&]url=([^&]+)/); if (u) page = decodeURIComponent(u[1]);
+    try {
+      const html = await (await fetch(page, { headers: BROWSER, signal: AbortSignal.timeout(12000) })).text();
+      const img = html.match(/<meta[^>]+(?:property|name)=["'](?:og:image|twitter:image)["'][^>]+content=["']([^"']+)/i)?.[1] || html.match(/<meta[^>]+content=["']([^"']+)["'][^>]+(?:property|name)=["']og:image["']/i)?.[1];
+      if (img) out.push({ url: unent(img), page, title: l.title });
+    } catch { /* skip this article */ }
+  }
+  return out;
+}
 async function webCandidates(name) {
   const seen = new Set(); const all = [];
   // Keep only results that name the person (title or page), so loose matches (maps, calendars) drop out.
   const last = name.split(' ').pop().toLowerCase();
-  for (const q of [name, `${name} interview`, `${name} on stage`]) {
-    let r = []; try { r = await bing(q); } catch (e) { warn(`bing ${q}: ${e.message}`); }
+  const sources = [['news', () => newsPhotos(name)], ['bing', () => bing(name)], ['ddg', () => ddg(name)], ['bing2', () => bing(`${name} interview`)], ['ddg2', () => ddg(`${name} on stage`)]];
+  const counts = [];
+  for (const [label, run] of sources) {
+    let r = []; try { r = await run(); } catch (e) { warn(`${label} ${name}: ${e.message}`); }
+    let kept = 0;
     for (const c of r) {
+      if (!c.url || !/^https?:/.test(c.url)) continue;
       const key = c.url.split('?')[0];
       if (seen.has(key) || STOCK.test(c.url) || STOCK.test(c.page || '')) continue;
       if (!`${c.title} ${c.page} ${c.url}`.toLowerCase().includes(last)) continue;
-      seen.add(key);
+      seen.add(key); kept++;
       let host = ''; try { host = new URL(c.page || c.url).hostname.replace(/^www\./, ''); } catch { /* keep empty */ }
-      all.push({ ...c, credit: host ? `via ${host}` : 'web', license: 'web' });
+      all.push({ ...c, credit: host ? `via ${host}` : 'web', license: 'web', from: label });
     }
+    counts.push(`${label} ${r.length}/${kept}`);
   }
+  console.log(`::notice::${name} sources: ${counts.join(', ')}`);
   return all;
 }
 async function webDownload(url, file) {
