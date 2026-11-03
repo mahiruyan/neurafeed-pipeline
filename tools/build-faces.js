@@ -25,6 +25,45 @@ async function candidates(name) {
   }).filter((c) => c.url && c.width >= 1000 && /(PD|public domain|CC|GFDL)/i.test(c.license));
 }
 
+// Web candidates (MODE=web): news and press photos from a Bing image search (large, face filter).
+// Stock sites whose previews carry watermarks are left out. Credit = the site the photo is on.
+const BROWSER = { 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0 Safari/537.36', 'Accept-Language': 'en-US,en;q=0.9' };
+const STOCK = /(gettyimages|istockphoto|alamy|shutterstock|dreamstime|depositphotos|123rf|agefotostock|bigstock|pond5|adobestock|stock\.adobe|imago-images|zumapress|pinterest|pinimg|lookaside|fbsbx|instagram|tiktok|redd\.it|wikimedia)/i;
+const unent = (t) => t.replace(/&quot;/g, '"').replace(/&amp;/g, '&').replace(/&#39;/g, "'").replace(/&lt;/g, '<').replace(/&gt;/g, '>');
+async function bing(q) {
+  const u = `https://www.bing.com/images/async?q=${encodeURIComponent(q)}&first=0&count=35&mmasync=1&qft=${encodeURIComponent('+filterui:imagesize-large+filterui:face-face')}`;
+  const html = await (await fetch(u, { headers: BROWSER })).text();
+  const out = [];
+  for (const m of html.matchAll(/\sm="([^"]+)"/g)) {
+    try { const j = JSON.parse(unent(m[1])); if (j.murl) out.push({ url: j.murl, page: j.purl, title: j.t || '' }); } catch { /* not a result */ }
+  }
+  return out;
+}
+async function webCandidates(name) {
+  const seen = new Set(); const all = [];
+  for (const q of [`"${name}"`, `"${name}" speaking`, `"${name}" 2026`]) {
+    let r = []; try { r = await bing(q); } catch (e) { warn(`bing ${q}: ${e.message}`); }
+    for (const c of r) {
+      const key = c.url.split('?')[0];
+      if (seen.has(key) || STOCK.test(c.url) || STOCK.test(c.page || '')) continue;
+      seen.add(key);
+      let host = ''; try { host = new URL(c.page || c.url).hostname.replace(/^www\./, ''); } catch { /* keep empty */ }
+      all.push({ ...c, credit: host ? `via ${host}` : 'web', license: 'web' });
+    }
+  }
+  return all;
+}
+async function webDownload(url, file) {
+  const res = await fetch(url, { headers: { ...BROWSER, Accept: 'image/avif,image/webp,image/*;q=0.8' }, redirect: 'follow', signal: AbortSignal.timeout(20000) });
+  if (!res.ok) throw new Error(`HTTP ${res.status}`);
+  if (!(res.headers.get('content-type') || '').startsWith('image/')) throw new Error('not an image');
+  const raw = file + '.raw'; fs.writeFileSync(raw, Buffer.from(await res.arrayBuffer()));
+  const [w, h] = execFileSync('ffprobe', ['-v', 'error', '-select_streams', 'v:0', '-show_entries', 'stream=width,height', '-of', 'csv=p=0', raw]).toString().trim().split(',').map(Number);
+  if (!(w >= 900 && h >= 700)) throw new Error(`too small ${w}x${h}`);
+  execFileSync('ffmpeg', ['-y', '-loglevel', 'error', '-i', raw, '-frames:v', '1', '-q:v', '3', file]);
+  return { width: w, height: h };
+}
+
 const PROMPT = (name) => `This photo is said to show ${name}. Do not identify anyone; judge only what you see. Reply with JSON only:
 {"one_main_person": true|false (one person clearly the subject, others small or blurred), "face": "large"|"medium"|"small"|"none" (size of that person's face in the frame), "expression": "serious"|"smiling"|"laughing"|"surprised"|"worried"|"angry"|"speaking"|"neutral", "sharp": true|false, "text_or_watermark": true|false (large text, captions, logos or watermarks on the photo itself, not small text on clothes or a badge), "cover_quality": 1-10 (how strong this is as the photo on a news cover: light, sharpness, emotion, a clean background), "face_y": 0-1 (vertical center of the face, 0 = top)}`;
 
@@ -47,13 +86,16 @@ async function judge(c, name, dir) {
     if (ONLY.length && !ONLY.includes(p.slug)) continue;
     const dir = path.join('/tmp/faces', p.slug); fs.mkdirSync(dir, { recursive: true });
     let cands = [];
-    try { cands = (await candidates(p.name)).slice(0, 18); } catch (e) { console.log(`::warning::${p.slug}: ${e.message}`); }
-    if (process.env.MODE === 'sheet') {
+    try { cands = process.env.MODE === 'web' ? (await webCandidates(p.name)).slice(0, 60) : (await candidates(p.name)).slice(0, 18); } catch (e) { console.log(`::warning::${p.slug}: ${e.message}`); }
+    if (process.env.MODE === 'sheet' || process.env.MODE === 'web') {
       // Review by eye: a numbered grid of every candidate and their details, no vision model.
       const got = [];
       for (const c of cands) {
+        if (got.length >= 30) break;
         const file = path.join(dir, `${got.length + 1}.jpg`);
-        try { await download(c.url, file, 30000); got.push({ ...c, n: got.length + 1, file }); } catch (e) { warn(`download ${c.title}: ${e.message}`); }
+        try {
+          if (process.env.MODE === 'web') { const size = await webDownload(c.url, file); got.push({ ...c, ...size, n: got.length + 1, file }); } else { await download(c.url, file, 30000); got.push({ ...c, n: got.length + 1, file }); }
+        } catch (e) { warn(`download ${c.title || c.url}: ${e.message}`); }
       }
       fs.writeFileSync(path.join(REVIEW, `${p.slug}.json`), JSON.stringify(got.map(({ file, ...c }) => c), null, 2));
       if (got.length) {

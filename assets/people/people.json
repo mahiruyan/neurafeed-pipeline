@@ -1,35 +1,249 @@
 [
-  { "slug": "elon-musk", "name": "Elon Musk", "aliases": ["Musk"] },
-  { "slug": "sam-altman", "name": "Sam Altman", "aliases": ["Altman"] },
-  { "slug": "dario-amodei", "name": "Dario Amodei", "aliases": ["Amodei"] },
-  { "slug": "daniela-amodei", "name": "Daniela Amodei", "aliases": [] },
-  { "slug": "jensen-huang", "name": "Jensen Huang", "aliases": ["Huang"] },
-  { "slug": "mark-zuckerberg", "name": "Mark Zuckerberg", "aliases": ["Zuckerberg"] },
-  { "slug": "sundar-pichai", "name": "Sundar Pichai", "aliases": ["Pichai"] },
-  { "slug": "satya-nadella", "name": "Satya Nadella", "aliases": ["Nadella"] },
-  { "slug": "tim-cook", "name": "Tim Cook", "aliases": [] },
-  { "slug": "john-ternus", "name": "John Ternus", "aliases": ["Ternus"] },
-  { "slug": "demis-hassabis", "name": "Demis Hassabis", "aliases": ["Hassabis"] },
-  { "slug": "mustafa-suleyman", "name": "Mustafa Suleyman", "aliases": ["Suleyman"] },
-  { "slug": "greg-brockman", "name": "Greg Brockman", "aliases": ["Brockman"] },
-  { "slug": "ilya-sutskever", "name": "Ilya Sutskever", "aliases": ["Sutskever"] },
-  { "slug": "mira-murati", "name": "Mira Murati", "aliases": ["Murati"] },
-  { "slug": "jeff-bezos", "name": "Jeff Bezos", "aliases": ["Bezos"] },
-  { "slug": "andy-jassy", "name": "Andy Jassy", "aliases": ["Jassy"] },
-  { "slug": "lisa-su", "name": "Lisa Su", "aliases": [] },
-  { "slug": "masayoshi-son", "name": "Masayoshi Son", "aliases": [] },
-  { "slug": "alexandr-wang", "name": "Alexandr Wang", "aliases": [] },
-  { "slug": "aravind-srinivas", "name": "Aravind Srinivas", "aliases": [] },
-  { "slug": "arthur-mensch", "name": "Arthur Mensch", "aliases": ["Mensch"] },
-  { "slug": "alex-karp", "name": "Alex Karp", "aliases": ["Karp"] },
-  { "slug": "peter-thiel", "name": "Peter Thiel", "aliases": ["Thiel"] },
-  { "slug": "bill-gates", "name": "Bill Gates", "aliases": ["Gates"] },
-  { "slug": "andrej-karpathy", "name": "Andrej Karpathy", "aliases": ["Karpathy"] },
-  { "slug": "yann-lecun", "name": "Yann LeCun", "aliases": ["LeCun"] },
-  { "slug": "geoffrey-hinton", "name": "Geoffrey Hinton", "aliases": ["Hinton"] },
-  { "slug": "fei-fei-li", "name": "Fei-Fei Li", "aliases": [] },
-  { "slug": "marc-benioff", "name": "Marc Benioff", "aliases": ["Benioff"] },
-  { "slug": "lip-bu-tan", "name": "Lip-Bu Tan", "aliases": [] },
-  { "slug": "liang-wenfeng", "name": "Liang Wenfeng", "aliases": [] },
-  { "slug": "donald-trump", "name": "Donald Trump", "aliases": ["Trump"], "sensitive": true }
+  {
+    "slug": "elon-musk",
+    "name": "Elon Musk",
+    "aliases": [
+      "Musk"
+    ]
+  },
+  {
+    "slug": "sam-altman",
+    "name": "Sam Altman",
+    "aliases": [
+      "Altman"
+    ]
+  },
+  {
+    "slug": "dario-amodei",
+    "name": "Dario Amodei",
+    "aliases": [
+      "Amodei"
+    ]
+  },
+  {
+    "slug": "daniela-amodei",
+    "name": "Daniela Amodei",
+    "aliases": []
+  },
+  {
+    "slug": "jensen-huang",
+    "name": "Jensen Huang",
+    "aliases": [
+      "Huang"
+    ]
+  },
+  {
+    "slug": "mark-zuckerberg",
+    "name": "Mark Zuckerberg",
+    "aliases": [
+      "Zuckerberg"
+    ]
+  },
+  {
+    "slug": "sundar-pichai",
+    "name": "Sundar Pichai",
+    "aliases": [
+      "Pichai"
+    ]
+  },
+  {
+    "slug": "satya-nadella",
+    "name": "Satya Nadella",
+    "aliases": [
+      "Nadella"
+    ]
+  },
+  {
+    "slug": "tim-cook",
+    "name": "Tim Cook",
+    "aliases": []
+  },
+  {
+    "slug": "john-ternus",
+    "name": "John Ternus",
+    "aliases": [
+      "Ternus"
+    ]
+  },
+  {
+    "slug": "demis-hassabis",
+    "name": "Demis Hassabis",
+    "aliases": [
+      "Hassabis"
+    ]
+  },
+  {
+    "slug": "mustafa-suleyman",
+    "name": "Mustafa Suleyman",
+    "aliases": [
+      "Suleyman"
+    ]
+  },
+  {
+    "slug": "greg-brockman",
+    "name": "Greg Brockman",
+    "aliases": [
+      "Brockman"
+    ]
+  },
+  {
+    "slug": "ilya-sutskever",
+    "name": "Ilya Sutskever",
+    "aliases": [
+      "Sutskever"
+    ]
+  },
+  {
+    "slug": "mira-murati",
+    "name": "Mira Murati",
+    "aliases": [
+      "Murati"
+    ]
+  },
+  {
+    "slug": "jeff-bezos",
+    "name": "Jeff Bezos",
+    "aliases": [
+      "Bezos"
+    ]
+  },
+  {
+    "slug": "andy-jassy",
+    "name": "Andy Jassy",
+    "aliases": [
+      "Jassy"
+    ]
+  },
+  {
+    "slug": "lisa-su",
+    "name": "Lisa Su",
+    "aliases": []
+  },
+  {
+    "slug": "masayoshi-son",
+    "name": "Masayoshi Son",
+    "aliases": []
+  },
+  {
+    "slug": "alexandr-wang",
+    "name": "Alexandr Wang",
+    "aliases": []
+  },
+  {
+    "slug": "aravind-srinivas",
+    "name": "Aravind Srinivas",
+    "aliases": []
+  },
+  {
+    "slug": "arthur-mensch",
+    "name": "Arthur Mensch",
+    "aliases": [
+      "Mensch"
+    ]
+  },
+  {
+    "slug": "alex-karp",
+    "name": "Alex Karp",
+    "aliases": [
+      "Karp"
+    ]
+  },
+  {
+    "slug": "peter-thiel",
+    "name": "Peter Thiel",
+    "aliases": [
+      "Thiel"
+    ]
+  },
+  {
+    "slug": "bill-gates",
+    "name": "Bill Gates",
+    "aliases": [
+      "Gates"
+    ]
+  },
+  {
+    "slug": "andrej-karpathy",
+    "name": "Andrej Karpathy",
+    "aliases": [
+      "Karpathy"
+    ]
+  },
+  {
+    "slug": "yann-lecun",
+    "name": "Yann LeCun",
+    "aliases": [
+      "LeCun"
+    ]
+  },
+  {
+    "slug": "geoffrey-hinton",
+    "name": "Geoffrey Hinton",
+    "aliases": [
+      "Hinton"
+    ]
+  },
+  {
+    "slug": "fei-fei-li",
+    "name": "Fei-Fei Li",
+    "aliases": []
+  },
+  {
+    "slug": "marc-benioff",
+    "name": "Marc Benioff",
+    "aliases": [
+      "Benioff"
+    ]
+  },
+  {
+    "slug": "lip-bu-tan",
+    "name": "Lip-Bu Tan",
+    "aliases": []
+  },
+  {
+    "slug": "liang-wenfeng",
+    "name": "Liang Wenfeng",
+    "aliases": []
+  },
+  {
+    "slug": "donald-trump",
+    "name": "Donald Trump",
+    "aliases": [
+      "Trump"
+    ],
+    "sensitive": true
+  },
+  {
+    "slug": "fidji-simo",
+    "name": "Fidji Simo",
+    "aliases": [
+      "Simo"
+    ]
+  },
+  {
+    "slug": "jony-ive",
+    "name": "Jony Ive",
+    "aliases": [
+      "Ive"
+    ]
+  },
+  {
+    "slug": "mark-chen",
+    "name": "Mark Chen",
+    "aliases": []
+  },
+  {
+    "slug": "nat-friedman",
+    "name": "Nat Friedman",
+    "aliases": [
+      "Friedman"
+    ]
+  },
+  {
+    "slug": "mike-krieger",
+    "name": "Mike Krieger",
+    "aliases": [
+      "Krieger"
+    ]
+  }
 ]
