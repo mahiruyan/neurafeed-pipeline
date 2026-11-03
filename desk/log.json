@@ -1,62 +1,5 @@
 [
   {
-    "run_at": "2026-10-27T08:07:06.881Z",
-    "summary": "Early run (03:55 New York time, Oct 27): no open links or requests; queued Apple's iOS 27.2 release where Siri AI now recalls past conversations (priority 1). Real photo cover since today's two generated covers are used.",
-    "considered": [
-      {
-        "story": "Apple releases iOS 27.2: Siri AI recalls past conversations, uses more personal context, adds Excluded Apps and five languages",
-        "source": "https://www.macrumors.com/2026/10/26/apple-releases-ios-27-2/",
-        "decision": "queued",
-        "job_id": "2026-10-27-siri-remembers-past-conversations-ios-27-2",
-        "priority": 1
-      },
-      {
-        "story": "ChatGPT steers political image requests to cartoon styles ahead of the midterms (CNET)",
-        "source": "https://www.cnet.com/tech/services-and-software/openai-chatgpt-political-deepfakes-defense-midterm-elections/",
-        "decision": "skipped",
-        "reason": "Searched again and still found no second outlet confirming it."
-      },
-      {
-        "story": "ChatGPT keeps telling people 404 Media can fix their tech support problems",
-        "source": "https://www.404media.co/chatgpt-keeps-telling-people-404-media-can-solve-their-tech-support-problems/",
-        "decision": "skipped",
-        "reason": "Could not open the article from here and found no second outlet covering it."
-      },
-      {
-        "story": "OpenAI and Anthropic staff told to stop wearing company logos over spy risks",
-        "decision": "skipped",
-        "reason": "Still only the New York Post; the related honeypot briefing story is from October 18."
-      },
-      {
-        "story": "Anthropic is burning gas to feed the AI boom (The Verge)",
-        "decision": "skipped",
-        "reason": "Could not open the Verge piece and searches only surfaced older coverage of Anthropic's gas deals."
-      },
-      {
-        "story": "Brown student maps the hidden global labor powering AI",
-        "source": "https://www.brown.edu/news/2026-10-26/ai-data-workers",
-        "decision": "skipped",
-        "reason": "University feature with no independent news coverage found and limited broad US appeal."
-      },
-      {
-        "story": "OpenAI accused of secretly tracking web users for targeted advertising",
-        "decision": "skipped",
-        "reason": "Searches only returned the older May 2026 lawsuits, nothing new to confirm."
-      },
-      {
-        "story": "OpenAI dots, the always-on assistant built from its coding tools (TechCrunch)",
-        "decision": "covered",
-        "reason": "Already judged a feature on a September launch in an earlier run today."
-      },
-      {
-        "story": "Utility post for Oct 27",
-        "decision": "skipped",
-        "reason": "Not yet 11:00 New York time; a later run will add it."
-      }
-    ],
-    "requests": []
-  },
-  {
     "run_at": "2026-10-27T10:18:18.612Z",
     "summary": "Morning run (05:55 New York time, Oct 27): no open links or requests; queued NVIDIA's $3 billion investment in Meta and expanded Muse partnership (priority 1), bringing today to 5 jobs.",
     "considered": [
@@ -5140,6 +5083,71 @@
         "story": "Tutor Intelligence raises $75M for warehouse robots",
         "decision": "skipped",
         "reason": "Small funding round with little consumer interest."
+      }
+    ],
+    "requests": []
+  },
+  {
+    "run_at": "2026-11-03T09:12:23.736Z",
+    "summary": "4:00 New York run: no open links or requests; queued ChatGPT Classic retirement and Work tab merge (priority 1) and Anthropic's internal Claude use topping its payroll (priority 1), both waiting for Mahir's approval.",
+    "considered": [
+      {
+        "story": "OpenAI retires ChatGPT Classic on January 30, 2027 and will merge the Chat and Work tabs",
+        "source": "https://9to5mac.com/2026/11/02/openai-is-retiring-chatgpt-classic-app-will-soon-combine-chat-and-work-tabs-in-new-app/",
+        "decision": "queued",
+        "job_id": "2026-11-03-chatgpt-classic-retires-work-tab-merge",
+        "priority": 1,
+        "reason": "OpenAI product change many users will notice; new beyond the shared usage limit post of November 1. Marked timely false because it broke over 12 hours ago."
+      },
+      {
+        "story": "Anthropic's internal Claude use, at retail prices, now exceeds its employee pay",
+        "source": "https://en.cryptonomist.ch/2026/11/02/anthropic-claude-internal-use/",
+        "decision": "queued",
+        "job_id": "2026-11-03-anthropic-claude-use-worth-more-than-payroll",
+        "priority": 1,
+        "reason": "Trending on Hacker News, a striking Anthropic number not yet covered; Business Insider could not be opened, so built from Forbes, The Cryptonomist and Tekedia."
+      },
+      {
+        "story": "Anthropic buys one-person biotech Mithril Medicine",
+        "decision": "covered",
+        "reason": "Reported October 28 and already covered in 2026-10-28-claude-35000-antibodies-one-month."
+      },
+      {
+        "story": "Google Gemini 4 Carbon early access for cybersecurity pros",
+        "decision": "covered",
+        "reason": "Gemini 4 Carbon was covered on October 28."
+      },
+      {
+        "story": "OpenAI hires former Army Secretary Dan Driscoll",
+        "decision": "covered",
+        "reason": "Already queued as 2026-11-03-openai-hires-army-secretary-driscoll."
+      },
+      {
+        "story": "Apple may do something with third-party AI apps to raise revenue (TechCrunch)",
+        "source": "https://techcrunch.com/2026/11/02/apple-may-try-to-increase-revenue-by-doing-something-with-third-party-ai-apps/",
+        "decision": "skipped",
+        "reason": "Speculative with no concrete plan to report."
+      },
+      {
+        "story": "Oracle files to sell $20B in stock and bonds for AI buildout",
+        "source": "https://www.cnbc.com/2026/11/02/oracle-files-to-sell-20-billion-in-new-stock-bonds-to-finance-ai-buildout.html",
+        "decision": "skipped",
+        "reason": "Financing story with limited consumer interest; AI funding stories were already heavy this week."
+      },
+      {
+        "story": "Nebraska seeks $50,000 per kids-code violation from OpenAI",
+        "decision": "skipped",
+        "reason": "Lawsuit follow-up from a single trade source; state suits over kids were covered October 14."
+      },
+      {
+        "story": "Gemini digital twin avatar feature",
+        "decision": "skipped",
+        "reason": "Only a non-English regional source; could not confirm details."
+      },
+      {
+        "story": "China plans broad AI guardrails (Bloomberg)",
+        "decision": "skipped",
+        "reason": "Paywalled and limited US interest, as in the previous run."
       }
     ],
     "requests": []
