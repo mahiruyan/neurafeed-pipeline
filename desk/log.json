@@ -1,81 +1,5 @@
 [
   {
-    "run_at": "2026-10-27T12:23:59.137Z",
-    "summary": "Made Mahir's new chess glasses Reel from his link and queued two news carousels (OpenAI ChatGPT work data, Cloudflare AI data leak).",
-    "considered": [
-      {
-        "story": "Ray-Ban Meta glasses chess cheat, second video against a French player (Mahir's link)",
-        "source": "https://www.instagram.com/reel/De_TmGSABEm/",
-        "decision": "queued",
-        "job_id": "2026-10-27-ray-ban-meta-chess-cheat-frenchman-reel",
-        "priority": 1
-      },
-      {
-        "story": "OpenAI data: decisions are 21.6% of US ChatGPT work requests",
-        "source": "https://ppc.land/americans-use-chatgpt-at-work-most-to-make-decisions-1-in-5-requests/",
-        "decision": "queued",
-        "job_id": "2026-10-27-chatgpt-work-decisions-1-in-5",
-        "priority": 2
-      },
-      {
-        "story": "Cloudflare GLM-5.3 bug returned other customers' data in 155 responses",
-        "source": "https://www.unite.ai/cloudflare-says-glm-5-3-bug-leaked-155-responses-across-tenant-sessions/",
-        "decision": "queued",
-        "job_id": "2026-10-27-cloudflare-ai-leaked-other-customers-data",
-        "priority": 2
-      },
-      {
-        "story": "ChatGPT and political deepfake images ahead of the midterms (CNET)",
-        "source": "https://www.cnet.com/tech/services-and-software/openai-chatgpt-political-deepfakes-defense-midterm-elections/",
-        "decision": "skipped",
-        "reason": "Could not open the CNET report and summaries contradict each other, so the facts could not be confirmed."
-      },
-      {
-        "story": "OpenAI dots always-on assistant (TechCrunch feature)",
-        "source": "https://techcrunch.com/2026/09/29/openai-launches-dots-its-bubbly-agentic-avatar/",
-        "decision": "skipped",
-        "reason": "Dots launched in September; the new piece is a background feature, not news."
-      },
-      {
-        "story": "AMD buys World Labs for $8.2 billion",
-        "source": "https://techcrunch.com/2026/09/28/amd-will-acquire-fei-fei-lis-world-labs-for-8-2-billion/",
-        "decision": "skipped",
-        "reason": "Announced in September, too old."
-      },
-      {
-        "story": "Elvis Presley estate sues Anthropic",
-        "decision": "covered",
-        "reason": "Already queued as 2026-10-24-elvis-rights-holders-sue-anthropic."
-      },
-      {
-        "story": "OpenAI math and science claims",
-        "decision": "covered",
-        "reason": "Already queued as 2026-10-27-openai-ai-disproves-exponential-time-hypothesis."
-      },
-      {
-        "story": "Anthropic S-1 training pause and escaped agents",
-        "decision": "covered",
-        "reason": "Already queued as 2026-10-27-anthropic-models-escaped-tests-training-pause."
-      },
-      {
-        "story": "Cohere says Qwen tried to send a file to Beijing",
-        "decision": "covered",
-        "reason": "Already queued as 2026-10-27-qwen-ai-tried-to-send-file-to-beijing."
-      },
-      {
-        "story": "GPT-6.1 Terra, Microsoft buyouts, SpaceX GPU financing, China AI stocks",
-        "decision": "covered",
-        "reason": "All already have jobs from 2026-10-26."
-      },
-      {
-        "story": "Digit humanoids expand to two more GXO warehouses",
-        "decision": "skipped",
-        "reason": "Deployment starts in 2027, small news with no strong photo."
-      }
-    ],
-    "requests": []
-  },
-  {
     "run_at": "2026-10-27T14:53:15.265Z",
     "summary": "Made Mahir's X video link into a Reel and queued Apple's M6 MacBook Pro and iMac launch as the 8th news post of the day.",
     "considered": [
@@ -5147,6 +5071,72 @@
         "story": "Publishers sue Brave over AI scraping",
         "decision": "skipped",
         "reason": "Lawsuit against a company outside the priority 1 list, passed on in earlier runs."
+      },
+      {
+        "story": "OpenAI hires former Army Secretary Dan Driscoll",
+        "decision": "covered",
+        "reason": "Already queued as 2026-11-03-openai-hires-army-secretary-driscoll."
+      }
+    ],
+    "requests": []
+  },
+  {
+    "run_at": "2026-11-03T13:08:17.918Z",
+    "summary": "8:00 New York run: no open links or requests; queued Apple's $1,000 tabletop robot report (priority 1) and Microsoft's live speech editing patent (priority 2), both waiting for Mahir's approval. Today now has 7 jobs, one slot left for the utility post.",
+    "considered": [
+      {
+        "story": "Apple's $1,000 tabletop robot (J595, likely HomeView Ultra) may slip to 2028, per The Information",
+        "source": "https://thenextweb.com/news/apple-home-robot-homeview-ultra-1000-2028",
+        "decision": "queued",
+        "job_id": "2026-11-03-apple-1000-tabletop-robot-2028",
+        "priority": 1
+      },
+      {
+        "story": "Microsoft patent application for AI that changes words and lip movements in live video",
+        "source": "https://www.wionews.com/trending/microsoft-ai-tool-changes-live-words-and-shapes-lips-to-match-1793613086722",
+        "decision": "queued",
+        "job_id": "2026-11-03-microsoft-patent-ai-changes-live-words",
+        "priority": 2
+      },
+      {
+        "story": "Apple Q4 earnings: record $114.48B revenue in Ternus's first quarter as CEO",
+        "source": "https://9to5mac.com/2026/11/02/apple-reports-q4-2026-earnings/",
+        "decision": "skipped",
+        "reason": "Earnings numbers with little AI angle; the robot report is the stronger Apple story and the day has limited slots."
+      },
+      {
+        "story": "Squarespace cuts 19% of staff as AI vibe-coding tools reshape web building",
+        "source": "https://techcrunch.com/2026/11/02/web-host-squarespace-lays-off-19-of-its-employees",
+        "decision": "skipped",
+        "reason": "Layoff story, would need Mahir's approval and the day is nearly full; lower US interest than the queued stories."
+      },
+      {
+        "story": "WSJ: Anthropic IPO investors push valuation toward $1.5 to $1.6 trillion",
+        "source": "https://www.wsj.com/finance/stocks/anthropic-investors-push-for-cautious-valuation-closer-to-1-5-trillion-2f2df9cf",
+        "decision": "skipped",
+        "reason": "Anthropic IPO already has four jobs in two days; paywalled source, saved for a later run if it firms up."
+      },
+      {
+        "story": "Marvell agrees to buy Lumentum for about $115B",
+        "source": "https://www.cnbc.com/2026/11/02/marvell-to-buy-lumentum-in-115-billion-deal-in-ai-data-center-bet-.html",
+        "decision": "skipped",
+        "reason": "Chip industry deal with little consumer appeal for our audience."
+      },
+      {
+        "story": "Goldman Sachs pulls Claude Code and Copilot from bankers",
+        "decision": "skipped",
+        "reason": "Already skipped in earlier runs; niche finance workplace story."
+      },
+      {
+        "story": "Palantir Q3 revenue up 96%",
+        "source": "https://www.cnbc.com/2026/11/02/palantir-pltr-earnings-q3-2026.html",
+        "decision": "skipped",
+        "reason": "Earnings story, low interest for an AI news audience."
+      },
+      {
+        "story": "China plans broad AI guardrails (Bloomberg)",
+        "decision": "skipped",
+        "reason": "Already skipped in earlier runs; paywalled and policy-heavy."
       },
       {
         "story": "OpenAI hires former Army Secretary Dan Driscoll",
