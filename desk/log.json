@@ -1,49 +1,5 @@
 [
   {
-    "run_at": "2026-10-27T01:54:39.314Z",
-    "summary": "Late evening check at 21:53 New York time: no open links or requests, the day is past 8 jobs and tonight's last window closes at 22:00, so nothing was queued.",
-    "considered": [
-      {
-        "story": "FTC demands testimony from Anthropic executives in expanding AI safety probe",
-        "source": "https://axios.com/2026/10/26/ftc-ai-safety-probe-anthropic-openai",
-        "decision": "skipped",
-        "reason": "Now confirmed by an Axios scoop, but a timely job from this evening would expire before the 07:00 window and the day is past 8 jobs; the morning run should pick it up if there are follow-ups."
-      },
-      {
-        "story": "Banks and Blackstone line up $63 billion to finance Broadcom chips for Anthropic",
-        "decision": "skipped",
-        "reason": "Financing follow-up to the Anthropic IPO post already published today, and the day is full."
-      },
-      {
-        "story": "OpenAI says its AI refuted the Exponential Time Hypothesis",
-        "source": "https://fourweekmba.com/ai-openai-says-its-ai-refuted-the-exponential-time-hypothesis/",
-        "decision": "skipped",
-        "reason": "Only a secondary blog in search so far, no official OpenAI post read, and the day is full."
-      },
-      {
-        "story": "OpenAI and Anthropic staff told to stop wearing company logos over spy risks",
-        "decision": "skipped",
-        "reason": "Still only the New York Post, and the day is full."
-      },
-      {
-        "story": "Anthropic S-1 filing, $80 billion loss and reliance on cloud partners",
-        "decision": "covered",
-        "reason": "Already posted as 2026-10-26-anthropic-files-ipo-ant-nasdaq."
-      },
-      {
-        "story": "GPT-6.1 Terra reviews and price cut",
-        "decision": "covered",
-        "reason": "Already posted as 2026-10-26-openai-gpt-6-1-terra."
-      },
-      {
-        "story": "Utility post for today",
-        "decision": "skipped",
-        "reason": "The day already has more than 8 jobs."
-      }
-    ],
-    "requests": []
-  },
-  {
     "run_at": "2026-10-27T04:14:11.318Z",
     "summary": "Midnight run (00:15 New York time, Oct 27): no open links or requests; queued OpenAI's claimed disproof of the Exponential Time Hypothesis (priority 1) and Cohere's Qwen upload finding (priority 2) for the morning windows.",
     "considered": [
@@ -5165,6 +5121,59 @@
         "story": "Marvell buys Lumentum for $115 billion",
         "decision": "skipped",
         "reason": "Chip industry deal already passed on in earlier runs today, limited consumer interest."
+      }
+    ],
+    "requests": []
+  },
+  {
+    "run_at": "2026-11-03T03:02:14.029Z",
+    "summary": "22:00 New York run: no open links or requests; nothing queued because Nov 2 is over its cap, the evening's big stories are already covered, and the only new candidate (Apple's robot HomeView) is a rehash of older rumors with one thin source.",
+    "considered": [
+      {
+        "story": "OpenAI will merge ChatGPT's Chat and Work tabs and retire the ChatGPT Classic app on January 30, 2027",
+        "source": "https://techcrunch.com/2026/11/02/openai-is-finally-merging-chatgpts-chat-and-work-tabs/",
+        "decision": "covered",
+        "reason": "The merge and the shared usage pool were already posted as 2026-11-01-chatgpt-codex-one-shared-limit; the Classic app retirement alone is too small for a second post."
+      },
+      {
+        "story": "Apple is building a $1,000 tabletop robot (HomeView Ultra, J595) for 2027 or 2028",
+        "source": "https://www.iphoneincanada.ca/2026/11/02/apple-is-building-a-1000-homeview-robot-with-a-9-inch-swivel-screen/",
+        "decision": "skipped",
+        "reason": "The Information's report is paywalled and only one secondhand write-up confirms the new details; the robot arm, 9-inch screen and $1,000 price were already reported by Bloomberg in October and in 2024."
+      },
+      {
+        "story": "WSJ: investors push Anthropic's IPO valuation toward $1.5 to $1.6 trillion",
+        "source": "https://aiweekly.co/alerts/wsj-anthropic-institutional-investors-push-ipo-valuation-down-to-15-16t-from-2t",
+        "decision": "covered",
+        "reason": "The $1.5 trillion valuation talk is already in 2026-11-02-anthropic-ipo-3-5-billion-japan, and Anthropic's IPO has had several posts this week."
+      },
+      {
+        "story": "Leaks point to GPT-6.2 Astra and a Claude 5.5 release this week",
+        "source": "https://kucoin.com/news/flash/openai-and-anthropic-unveil-next-gen-ai-models-gpt-6-2-astra-and-claude-5-5",
+        "decision": "skipped",
+        "reason": "Rumors from social media posts with no official confirmation."
+      },
+      {
+        "story": "Squarespace cuts 19 percent of staff as it pivots to AI",
+        "source": "https://aiweekly.co/alerts/squarespace-cuts-19-of-staff-about-300-jobs-as-it-pivots-around-ai-vibe-coding",
+        "decision": "skipped",
+        "reason": "Layoffs at a mid-size company, sensitive and limited AI interest; a later run can revisit if it grows."
+      },
+      {
+        "story": "Palantir Q3 revenue up 96 percent",
+        "source": "https://aiweekly.co/alerts/palantir-q3-revenue-up-96-to-231b-as-us-commercial-lifts-148-karp-raises-fy",
+        "decision": "skipped",
+        "reason": "Earnings story with little consumer interest for this account."
+      },
+      {
+        "story": "Goldman Sachs restricts Claude Code and Copilot for bankers",
+        "decision": "skipped",
+        "reason": "Already passed on in earlier runs today: an internal bank policy, not a major announcement."
+      },
+      {
+        "story": "Anthropic's internal Claude use exceeds employee pay",
+        "decision": "covered",
+        "reason": "Comes from the same amended S-1 already posted as 2026-11-02-anthropic-17-billion-quarter-loss."
       }
     ],
     "requests": []
