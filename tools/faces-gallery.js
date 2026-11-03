@@ -17,17 +17,19 @@ const esc = (t) => String(t).replace(/[:'\\]/g, ' ');
         if (!r.ok) throw new Error(`HTTP ${r.status}`);
         fs.writeFileSync(f, Buffer.from(await r.arrayBuffer()));
         const y = Number(String(ph.pos || '').match(/(\d+)%/)?.[1] ?? 30) / 100;
-        execFileSync('ffmpeg', ['-y', '-loglevel', 'error', '-i', f, '-vf', `scale=${W}:${H}:force_original_aspect_ratio=increase,crop=${W}:${H}:(iw-${W})/2:(ih-${H})*${y},drawtext=text='${esc(ph.expression)}':x=8:y=h-34:fontsize=20:fontcolor=white:box=1:boxcolor=black@0.6:boxborderw=5`, '-frames:v', '1', `${f}.jpg`]);
+        execFileSync('ffmpeg', ['-y', '-loglevel', 'error', '-i', f, '-vf', `scale=${W}:${H}:force_original_aspect_ratio=increase,crop=${W}:${H}:(iw-${W})/2:(ih-${H})*${y},drawtext=text='${esc(ph.expression)}':x=8:y=h-34:fontsize=20:fontcolor=white:box=1:boxcolor=black@0.6:boxborderw=5,format=yuvj420p`, '-frames:v', '1', `${f}.jpg`]);
         cells.push(`${f}.jpg`);
       } catch (e) { console.log(`::warning::${slug} ${i}: ${e.message}`); }
     }
-    while (cells.length < COLS) { const f = path.join(tmp, `pad-${slug}-${cells.length}.jpg`); execFileSync('ffmpeg', ['-y', '-loglevel', 'error', '-f', 'lavfi', '-i', `color=c=0x111111:s=${W}x${H}`, '-frames:v', '1', f]); cells.push(f); }
+    while (cells.length < COLS) { const f = path.join(tmp, `pad-${slug}-${cells.length}.jpg`); execFileSync('ffmpeg', ['-y', '-loglevel', 'error', '-f', 'lavfi', '-i', `color=c=0x111111:s=${W}x${H}`, '-vf', 'format=yuvj420p', '-frames:v', '1', f]); cells.push(f); }
     const label = path.join(tmp, `${slug}-label.jpg`);
-    execFileSync('ffmpeg', ['-y', '-loglevel', 'error', '-f', 'lavfi', '-i', `color=c=0x0b0b0b:s=${W * COLS}x44`, '-vf', `drawtext=text='${esc(p.name)}  (${p.photos.length})':x=12:y=10:fontsize=26:fontcolor=0x7CFC00`, '-frames:v', '1', label]);
+    execFileSync('ffmpeg', ['-y', '-loglevel', 'error', '-f', 'lavfi', '-i', `color=c=0x0b0b0b:s=${W * COLS}x44`, '-vf', `drawtext=text='${esc(p.name)}  (${p.photos.length})':x=12:y=10:fontsize=26:fontcolor=0x7CFC00,format=yuvj420p`, '-frames:v', '1', label]);
     const row = path.join(tmp, `${slug}-row.jpg`);
+    try {
     execFileSync('ffmpeg', ['-y', '-loglevel', 'error', ...cells.flatMap((c) => ['-i', c]), '-filter_complex', `${cells.map((_, i) => `[${i}]`).join('')}hstack=${cells.length}`, '-frames:v', '1', `${row}.tmp.jpg`]);
     execFileSync('ffmpeg', ['-y', '-loglevel', 'error', '-i', label, '-i', `${row}.tmp.jpg`, '-filter_complex', 'vstack=2', '-frames:v', '1', row]);
     rows.push(row);
+    } catch (e) { console.log(`::error::row ${slug}: ${String(e.stderr || e.message).slice(0, 300)}`); }
   }
   for (let p = 0; p * PER_PAGE < rows.length; p++) {
     const part = rows.slice(p * PER_PAGE, (p + 1) * PER_PAGE);
