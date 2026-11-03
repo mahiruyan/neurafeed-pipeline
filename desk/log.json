@@ -1,57 +1,5 @@
 [
   {
-    "run_at": "2026-10-26T23:53:39.453Z",
-    "summary": "Evening check at 19:53 New York time: no open links or requests, today's 8 slots are already posted or approved, so nothing new was queued.",
-    "considered": [
-      {
-        "story": "Anthropic uses gas power to feed its data centers (The Verge)",
-        "decision": "skipped",
-        "reason": "Not a must-post story, and the New York day is already past 8 jobs with every slot filled."
-      },
-      {
-        "story": "FTC demands testimony from Anthropic executives in AI safety probe",
-        "decision": "skipped",
-        "reason": "Search only turned up the September FTC probe coverage, no second outlet confirms tonight's new step, and the day is full."
-      },
-      {
-        "story": "Broadcom and banks line up $63 billion to finance chips for Anthropic",
-        "decision": "skipped",
-        "reason": "Financing follow-up to the Anthropic IPO post already published today, and the day is full."
-      },
-      {
-        "story": "OpenAI and Anthropic staff told to stop wearing company logos over spy risks",
-        "decision": "skipped",
-        "reason": "Still only the New York Post, and the day is full."
-      },
-      {
-        "story": "Texas sues OpenAI over ChatGPT safety",
-        "decision": "covered",
-        "reason": "Already queued as 2026-10-25-texas-sues-openai-block-chatgpt-kids."
-      },
-      {
-        "story": "GPT-6.1 Terra reviews and price cut",
-        "decision": "covered",
-        "reason": "Already posted as 2026-10-26-openai-gpt-6-1-terra."
-      },
-      {
-        "story": "Anthropic S-1 filing and $80 billion loss",
-        "decision": "covered",
-        "reason": "Already posted as 2026-10-26-anthropic-files-ipo-ant-nasdaq."
-      },
-      {
-        "story": "Microsoft offers buyouts to 60,000 employees",
-        "decision": "covered",
-        "reason": "Already approved as 2026-10-26-microsoft-60000-buyouts-ai."
-      },
-      {
-        "story": "Utility post for today",
-        "decision": "skipped",
-        "reason": "The day already has more than 8 jobs."
-      }
-    ],
-    "requests": []
-  },
-  {
     "run_at": "2026-10-27T01:54:39.314Z",
     "summary": "Late evening check at 21:53 New York time: no open links or requests, the day is past 8 jobs and tonight's last window closes at 22:00, so nothing was queued.",
     "considered": [
@@ -5170,6 +5118,53 @@
         "source": "https://technode.com/2026/11/02/meituan-launches-longcat-2-5-multimodal-ai-model-for-extended-coding-tasks/",
         "decision": "skipped",
         "reason": "Chinese model launch with little US interest, and no slot left today."
+      }
+    ],
+    "requests": []
+  },
+  {
+    "run_at": "2026-11-03T01:00:25.419Z",
+    "summary": "20:00 New York run: no open links or requests; nothing queued because Nov 2 is already past its 8 desk jobs and no new priority 1 story broke since the last run (leads were last scanned at 19:45 UTC, so I checked the web directly).",
+    "considered": [
+      {
+        "story": "Apple Intelligence launches in China in December with Alibaba's Qwen",
+        "source": "https://www.computerworld.com/article/4243306/apple-intelligence-with-alibaba-comes-to-china-in-december.html",
+        "decision": "skipped",
+        "reason": "Apple announced it on Saturday Oct 31, so it is past the 12 hour timely window and the sources disagree on the beta date; the iOS 27.3 developer beta (reported for Nov 4) is a better fresh hook for a later run."
+      },
+      {
+        "story": "OpenAI Grid Protectors program offers up to 1 GW of flexible demand at its Georgia campus",
+        "source": "https://techstartups.com/2026/11/02/top-tech-news-today-november-2-2026-the-biggest-stories-in-ai-startups-and-big-tech/",
+        "decision": "skipped",
+        "reason": "Niche grid policy story that overlaps with today's posted OpenAI compute campus story, and the day is over its cap."
+      },
+      {
+        "story": "Oracle files to sell $20 billion in stock and bonds for its AI buildout",
+        "source": "https://www.cnbc.com/2026/11/02/oracle-files-to-sell-20-billion-in-new-stock-bonds-to-finance-ai-buildout.html",
+        "decision": "skipped",
+        "reason": "Corporate financing story with limited consumer interest, and no slot left today."
+      },
+      {
+        "story": "Anthropic's internal AI use at retail prices exceeds its employee pay",
+        "source": "https://www.businessinsider.com/anthropic-claude-internal-ai-use-exceeds-employee-pay-tokens-2026-11",
+        "decision": "covered",
+        "reason": "Comes from the same amended S-1 already posted as 2026-11-02-anthropic-17-billion-quarter-loss."
+      },
+      {
+        "story": "New York Times and other outlets sue Brave over content scraping",
+        "source": "https://techcrunch.com/2026/11/02/new-york-times-and-other-outlets-sue-web-browser-brave-over-allege",
+        "decision": "skipped",
+        "reason": "Lawsuit against a browser company outside the priority 1 list, and the day is over its cap."
+      },
+      {
+        "story": "Google's Project Suncatcher satellite runs Gemma on an orbital TPU",
+        "decision": "covered",
+        "reason": "Already covered as 2026-10-31-google-satellite-ai-haiku-orbit."
+      },
+      {
+        "story": "Marvell buys Lumentum for $115 billion",
+        "decision": "skipped",
+        "reason": "Chip industry deal already passed on in earlier runs today, limited consumer interest."
       }
     ],
     "requests": []
