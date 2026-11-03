@@ -1,65 +1,5 @@
 [
   {
-    "run_at": "2026-10-27T16:09:55.245Z",
-    "summary": "Midday run (12:10 New York time, Oct 27): no open links or requests; today already has 8 news jobs (the daily cap), so nothing new was queued.",
-    "considered": [
-      {
-        "story": "Anthropic IPO filing reveals models escaped tests and a training pause",
-        "decision": "covered",
-        "reason": "Already posted as 2026-10-27-anthropic-models-escaped-tests-training-pause."
-      },
-      {
-        "story": "Wall Street banks provide $63 billion to finance Broadcom chips for Anthropic",
-        "source": "https://finance.yahoo.com",
-        "decision": "skipped",
-        "reason": "Today is at the 8 news post cap, and Anthropic's IPO financing was already covered yesterday."
-      },
-      {
-        "story": "Reuters: Anthropic's plan for who controls its AI after its leaders depart",
-        "decision": "skipped",
-        "reason": "Comes from the IPO filing already covered twice; daily cap of 8 reached."
-      },
-      {
-        "story": "Gemini 4 Argon loses on Google's own coding test",
-        "decision": "skipped",
-        "reason": "Single blog report, and the daily cap of 8 news posts is reached."
-      },
-      {
-        "story": "UK Home Office may face investigation over use of OpenAI tools",
-        "source": "https://www.wired.com/story/uk-home-office-may-face-investigation-over-use-of-openai-tools",
-        "decision": "skipped",
-        "reason": "UK government story with little US interest; daily cap reached."
-      },
-      {
-        "story": "Meta AI director Rohit Patel leaves to take on Microsoft Office and Google Workspace",
-        "source": "https://techcrunch.com/2026/10/27/meta-ai-director-rohit-patel-leaves-to-take-on-microsoft",
-        "decision": "skipped",
-        "reason": "Executive departure for a startup, modest interest; daily cap reached."
-      },
-      {
-        "story": "GPT-6.1 Terra launch",
-        "decision": "covered",
-        "reason": "Already queued as 2026-10-26-openai-gpt-6-1-terra."
-      },
-      {
-        "story": "Cloudflare GLM-5.3 KV cache exposure",
-        "decision": "covered",
-        "reason": "Already queued as 2026-10-27-cloudflare-ai-leaked-other-customers-data."
-      },
-      {
-        "story": "Google can use Photos and Drive data to show ads",
-        "decision": "covered",
-        "reason": "Already covered as 2026-10-24-google-gmail-photos-ads-exception."
-      },
-      {
-        "story": "Daily utility post",
-        "decision": "skipped",
-        "reason": "No utility post today because the 8 post daily cap is already filled by news."
-      }
-    ],
-    "requests": []
-  },
-  {
     "run_at": "2026-10-27T17:54:08.591Z",
     "summary": "Afternoon run (13:53 New York time, Oct 27): no open links or requests; today already has 8 news jobs (the daily cap), so nothing new was queued.",
     "considered": [
@@ -5131,6 +5071,64 @@
         "source": "https://openai.com/index/lifeval/",
         "decision": "skipped",
         "reason": "Passed on in earlier runs, still no independent second source and no slot left."
+      },
+      {
+        "story": "OpenAI hires former Army Secretary Dan Driscoll",
+        "decision": "covered",
+        "reason": "Already queued as 2026-11-03-openai-hires-army-secretary-driscoll."
+      }
+    ],
+    "requests": []
+  },
+  {
+    "run_at": "2026-11-03T16:54:26.270Z",
+    "summary": "12:00 New York run: no open links or requests; no new priority 1 story since the 10:00 run, and today already has 8 jobs (the daily cap), so nothing was queued and no utility post fits today.",
+    "considered": [
+      {
+        "story": "Utility post for November 3",
+        "decision": "skipped",
+        "reason": "Today already has 8 jobs, the daily cap; priority 1 news took the slots."
+      },
+      {
+        "story": "OpenAI's AI results on the Kakeya conjecture, the Exponential Time Hypothesis and Yang-Mills",
+        "source": "https://www.edtechinnovationhub.com/news/openai-reports-ai-generated-results-on-major-problems-in-mathematics-computing-and-physics",
+        "decision": "covered",
+        "reason": "Already covered as 2026-10-27-openai-ai-disproves-exponential-time-hypothesis."
+      },
+      {
+        "story": "Nvidia tells cloud partners to sell at least 51% outside China",
+        "decision": "covered",
+        "reason": "Already queued as 2026-11-03-nvidia-cloud-partners-china-51-percent."
+      },
+      {
+        "story": "DeepSeek V5 to pre-train on 160,000 Huawei Ascend chips",
+        "source": "https://cryptobriefing.com/deepseek-v5-huawei-ascend-950-training/",
+        "decision": "skipped",
+        "reason": "Still only a crypto news site reporting it, and the day is full."
+      },
+      {
+        "story": "Lovable CEO says AI is collapsing barriers to starting a business (CNBC video)",
+        "source": "https://www.cnbc.com/video/2026/11/03/lovable-ceo-ai-vibe-coding.html",
+        "decision": "skipped",
+        "reason": "Interview opinion with no news event, and no slot left today."
+      },
+      {
+        "story": "Google takes the Dreambeans AI story app to India",
+        "source": "https://techcrunch.com/2026/11/02/google-takes-dreambeans-to-india-in-bid-to-bring-ai-generated-personal-stories-to-the-masses/",
+        "decision": "skipped",
+        "reason": "India launch of a niche app, low US interest, and the day is full."
+      },
+      {
+        "story": "AI chatbots giving voters wrong election dates on midterm day",
+        "source": "https://artificiallyintimidating.com/p/ai-brief-november-3-2026",
+        "decision": "skipped",
+        "reason": "Political and sensitive, only a newsletter source read, and the day is full."
+      },
+      {
+        "story": "Meituan LongCat-2.5 multimodal model",
+        "source": "https://technode.com/2026/11/02/meituan-launches-longcat-2-5-multimodal-ai-model-for-extended-coding-tasks/",
+        "decision": "skipped",
+        "reason": "Chinese model launch with little US consumer interest; no slot left."
       },
       {
         "story": "OpenAI hires former Army Secretary Dan Driscoll",
