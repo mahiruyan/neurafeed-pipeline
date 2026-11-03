@@ -41,11 +41,14 @@ async function bing(q) {
 }
 async function webCandidates(name) {
   const seen = new Set(); const all = [];
-  for (const q of [`"${name}"`, `"${name}" speaking`, `"${name}" 2026`]) {
+  // Keep only results that name the person (title or page), so loose matches (maps, calendars) drop out.
+  const last = name.split(' ').pop().toLowerCase();
+  for (const q of [name, `${name} interview`, `${name} on stage`]) {
     let r = []; try { r = await bing(q); } catch (e) { warn(`bing ${q}: ${e.message}`); }
     for (const c of r) {
       const key = c.url.split('?')[0];
       if (seen.has(key) || STOCK.test(c.url) || STOCK.test(c.page || '')) continue;
+      if (!`${c.title} ${c.page} ${c.url}`.toLowerCase().includes(last)) continue;
       seen.add(key);
       let host = ''; try { host = new URL(c.page || c.url).hostname.replace(/^www\./, ''); } catch { /* keep empty */ }
       all.push({ ...c, credit: host ? `via ${host}` : 'web', license: 'web' });
