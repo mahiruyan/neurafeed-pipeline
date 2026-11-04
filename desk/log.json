@@ -1,64 +1,5 @@
 [
   {
-    "run_at": "2026-10-28T02:08:09.646Z",
-    "summary": "Late run (21:55 New York time, Oct 27): no open links or requests; queued 2 new stories for Oct 28 (OpenAI buying Google TPUs, Claude drug development results), both waiting for Mahir's approval.",
-    "considered": [
-      {
-        "story": "OpenAI plans to buy Google's TPU chips (The Information)",
-        "source": "https://www.investing.com/news/stock-market-news/openai-plans-to-buy-googles-ai-chips-the-information-reports-4977342",
-        "decision": "queued",
-        "job_id": "2026-10-28-openai-buying-google-tpu-chips",
-        "priority": 1
-      },
-      {
-        "story": "Claude produced 35,000 antibody designs in a month; Anthropic shares results from six drug partners and buys Mithril Medicine",
-        "source": "https://interestingengineering.com/ai-robotics/claude-35000-antibody-designs-drug-discovery",
-        "decision": "queued",
-        "job_id": "2026-10-28-claude-35000-antibodies-one-month",
-        "priority": 2
-      },
-      {
-        "story": "Parents sue OpenAI saying GPT-4o coached their daughter off seizure medication",
-        "source": "https://techcrunch.com/2026/10/27/parents-sue-openai-alleging-gpt-4o-coached-their-daughter-off-seizure-medication/",
-        "decision": "skipped",
-        "reason": "Another individual lawsuit with only one source read so far; health and lawsuit story better handled with a second source in a daytime run."
-      },
-      {
-        "story": "Trump to ban the term AI in government documents",
-        "decision": "skipped",
-        "reason": "Only odd outlets (The National, BigGo Finance) in the feed, no major wire confirmation, and it is a political story."
-      },
-      {
-        "story": "Anthropic expands GSA partnership to bring Claude to all levels of government",
-        "source": "https://www.anthropic.com/news/expanding-partnership-gsa",
-        "decision": "skipped",
-        "reason": "Government procurement deal with little consumer appeal, and Anthropic already has two posts in the queue."
-      },
-      {
-        "story": "Anthropic tells Newsom courts should be able to block risky AI",
-        "decision": "skipped",
-        "reason": "Narrow California policy letter, one source."
-      },
-      {
-        "story": "Amazon is gutting its AI division after Nova struggles",
-        "source": "https://futurism.com/artificial-intelligence/amazon-ai-division-failure-nova",
-        "decision": "skipped",
-        "reason": "Single opinionated source; needs confirmation from a major outlet."
-      },
-      {
-        "story": "Oracle expands collaboration with OpenAI, launches AI security mesh",
-        "decision": "skipped",
-        "reason": "Enterprise partnership with little US consumer interest."
-      },
-      {
-        "story": "Stanford professors say their pirated books trained Claude",
-        "decision": "covered",
-        "reason": "Considered and skipped in the previous run; nothing new since."
-      }
-    ],
-    "requests": []
-  },
-  {
     "run_at": "2026-10-28T04:15:07.800Z",
     "summary": "Overnight run (23:55 New York time, Oct 27): no open links or requests; queued 2 stories for Oct 28 (Axiom's AI-checked math proof, Congress questioning Delaware's AI-run company plan), both waiting for Mahir's approval.",
     "considered": [
@@ -5126,6 +5067,55 @@
         "story": "Utility post for November 3",
         "decision": "skipped",
         "reason": "The day is already over the 8-job cap; the next utility post goes in tomorrow's runs."
+      }
+    ],
+    "requests": []
+  },
+  {
+    "run_at": "2026-11-04T02:53:27.450Z",
+    "summary": "22:00 New York run: no open links or requests, today already has 9 desk jobs (over the 8 cap) and no new priority 1 story broke, so nothing was queued.",
+    "considered": [
+      {
+        "story": "Google turns off Search for schools that reject AI",
+        "source": "https://www.nytimes.com/2026/11/03/us/google-search-schools-restrict-ai.html",
+        "decision": "covered",
+        "reason": "Already queued as 2026-11-03-google-schools-no-ai-no-search."
+      },
+      {
+        "story": "Reports that OpenAI staff flagged security gaps for years",
+        "source": "https://www.bostonglobe.com/2026/09/29/business/openai-ignored-employees-who-warned-it-wasnt-doing-enough-about-security/",
+        "decision": "skipped",
+        "reason": "Rehash of the September NYT report, nothing new today, and the day is at the cap."
+      },
+      {
+        "story": "Irregular says human error allowed OpenAI and Anthropic model sandbox escapes",
+        "source": "https://www.securityweek.com/irregular-details-how-a-naming-error-let-ai-models-attack-a-real-company/amp/",
+        "decision": "skipped",
+        "reason": "Follow-up to older incidents with no major new fact, and the day is at the 8 job cap."
+      },
+      {
+        "story": "Goldman Sachs pulls Claude Code and GitHub tools from traders and bankers",
+        "source": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPQ3pOVUk5b3BRLW4tT1dXUERkc1g1V0tuZklOMVh6Ykt1SWQ0dzc4Sm1uaDJ0TWFHNWp6ZGNreXAtXzZMcXBiSHFKa3BWYVdxNVhJVGFvX3c3WS1kR2M5UG9mdUJfSU05OG5ZeUREdkNVUl9CdzJmeXpJRHpxLUJJclhsTDZEZFRVWk1pUzRxRS1VSWFjSXlCWEw5NUV4OFIzWjcw?oc=5",
+        "decision": "skipped",
+        "reason": "Only a small outlet so far, not confirmed by a second source; worth checking in the next day's run."
+      },
+      {
+        "story": "Data centers turn to old jet engines while waiting for power",
+        "source": "https://techcrunch.com/2026/11/03/data-centers-are-turning-to-old-jet-engines-as-the-wait-for-power-grows/",
+        "decision": "skipped",
+        "reason": "Priority 2 story and today is already over the 8 job cap."
+      },
+      {
+        "story": "US tech giants' hidden AI debt swells to $3.2T",
+        "source": "https://asia.nikkei.com/business/technology/artificial-intelligence/us-tech-giants-hidden-ai-debt-swells-90-to-3.2tn-in-6-months",
+        "decision": "skipped",
+        "reason": "Finance angle, paywalled source, and the day is full; candidate for tomorrow."
+      },
+      {
+        "story": "Claude Code lead Cat Wu leaves Anthropic",
+        "source": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPa3J0NWpyaThGRTBmNmxncGdfbjBTRHRDdHJWakZNSzZiNnQ2ZEI0dmo1WFA2Y1JGOWJOemc2dS03Szh2WlJPNDF0cUdKYWNIWWRiOFRYemQ2bHdxX01ZbXB3NG5zZEprR1c5N2VVQ0s5VUFiMFZiWEFzSTg1ZzRycUQ1VDlyNjBqa1kwQ2tVT2c?oc=5",
+        "decision": "skipped",
+        "reason": "Single low-reliability source, not confirmed elsewhere yet."
       }
     ],
     "requests": []
