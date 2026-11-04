@@ -1,72 +1,5 @@
 [
   {
-    "run_at": "2026-10-28T14:15:28.994Z",
-    "summary": "Mid-morning run (09:55 New York time, Oct 28): no open links or requests; queued 1 priority 1 story (Anthropic's unreleased Claude model built working attacks on Chrome, Safari, Android, Windows and Linux), waiting for Mahir's approval. Oct 28 now has 8 jobs, the daily cap, so no utility post today.",
-    "considered": [
-      {
-        "story": "Anthropic Frontier Red Team: unreleased Claude model built five exploit chains on Chrome, Safari, Android, Windows and Linux",
-        "source": "https://www.anthropic.com/research/discovering-vulnerabilities-with-claude",
-        "decision": "queued",
-        "job_id": "2026-10-28-claude-built-attacks-chrome-safari-windows-linux",
-        "priority": 1
-      },
-      {
-        "story": "Anthropic says an internal Claude model also refuted the Exponential Time Hypothesis",
-        "source": "https://officechai.com/ai/anthropic-says-claude-too-independently-disproved-exponential-time-hypothesis-on-the-same-day-as-openai/",
-        "decision": "skipped",
-        "reason": "Announced Oct 27 and close to the OpenAI ETH post already published; the last slot of the day went to the fresher exploit story and Oct 28 is at the 8-job cap."
-      },
-      {
-        "story": "Sen. Elizabeth Warren gives Anthropic until Nov. 3 to answer questions on existential risk (WSJ)",
-        "source": "https://www.wsj.com/finance/regulation/elizabeth-warren-demands-answers-from-anthropic-on-existential-risks-5362f009",
-        "decision": "skipped",
-        "reason": "Political letter with no outcome yet, and the day is at the cap."
-      },
-      {
-        "story": "Meta tests a Tamagotchi-style AI pet app, Waddle World, in the Philippines",
-        "source": "https://www.engadget.com/2299227/meta-tamagotchi-like-ai-digital-pet-app-waddle-world/",
-        "decision": "skipped",
-        "reason": "Small test outside the US, and the day is at the cap."
-      },
-      {
-        "story": "OpenAI engineer indicted over a listening device found at HQ",
-        "decision": "skipped",
-        "reason": "Crime story with little AI substance, skipped in earlier runs."
-      },
-      {
-        "story": "Amazon Echo Show 16 and 3D Alexa Home Map",
-        "decision": "skipped",
-        "reason": "Gadget launch with a small AI angle, and the day is at the cap."
-      },
-      {
-        "story": "Moore Threads Q3 revenue up about 1,774 percent",
-        "decision": "skipped",
-        "reason": "Chinese chip earnings with little US interest."
-      },
-      {
-        "story": "SK Hynix says memory shortage lasts through 2030",
-        "decision": "skipped",
-        "reason": "Supply chain story, the day is at the cap."
-      },
-      {
-        "story": "OpenAI plans to buy Google TPU chips",
-        "decision": "covered",
-        "reason": "Already posted as 2026-10-28-openai-buying-google-tpu-chips."
-      },
-      {
-        "story": "Anthropic study: analysts followed Claude's coin-flip leans 86 percent of the time",
-        "decision": "covered",
-        "reason": "Already queued as 2026-10-28-coin-flip-claude-experts-agreed-86-percent."
-      },
-      {
-        "story": "Daily utility post for Oct 28",
-        "decision": "skipped",
-        "reason": "Oct 28 reached the 8-job cap with a priority 1 story, which comes first."
-      }
-    ],
-    "requests": []
-  },
-  {
     "run_at": "2026-10-28T16:00:48.276Z",
     "summary": "No new jobs: Oct 28 already has 8 jobs (the daily cap); no open links or requests. Logged the new stories seen.",
     "considered": [
@@ -5101,6 +5034,82 @@
         "story": "Netflix AI Discover mood tab",
         "decision": "covered",
         "reason": "Already queued as 2026-11-04-netflix-ai-discover-mood-tab."
+      }
+    ],
+    "requests": []
+  },
+  {
+    "run_at": "2026-11-04T14:55:41.013Z",
+    "summary": "10:00 New York run: no open links or requests; no new priority 1 story since the 8:00 run, so nothing queued. November 4 has 7 desk jobs; the last slot is kept for the 11:00 utility post.",
+    "considered": [
+      {
+        "story": "AI stocks fall in Asia after the Democratic midterm sweep, SoftBank down as much as 10 percent",
+        "source": "https://www.wealthprofessional.ca/investments/equity-markets/markets-split-as-americans-vote-in-the-midterms/393934",
+        "decision": "skipped",
+        "reason": "Election and market story, politically sensitive, only one trade outlet read so far and the last slot is reserved for the utility post."
+      },
+      {
+        "story": "Anthropic puts message threads in public beta on the Claude API, about 35 percent faster first token",
+        "source": "https://claude.com/resources/articles/message-threads",
+        "decision": "skipped",
+        "reason": "Developer API feature from November 3 with little appeal for a general audience; the last slot is reserved for the utility post."
+      },
+      {
+        "story": "OpenAI announces an automatic task router that sends work to GPT-6.1 Terra or GPT-6 Astra",
+        "source": "https://fortune.com/2026/11/04/will-compute-curtail-personal-ai-agent-push/",
+        "decision": "skipped",
+        "reason": "Only a one-line mention in a Fortune newsletter; I could not find OpenAI's announcement or a second report."
+      },
+      {
+        "story": "OpenAI builds Pando, a Git-compatible backend for its main code repository",
+        "source": "https://openai.com/index/scaling-git-at-openai/",
+        "decision": "skipped",
+        "reason": "Internal engineering post with little interest for our audience."
+      },
+      {
+        "story": "CrowdStrike adds an AI kill switch for rogue agents to Falcon",
+        "source": "https://www.cnbc.com/2026/11/03/crowdstrikes-new-kill-switch-can-stop-rogue-ai-agents-in-their-tracks-ceo-says.html",
+        "decision": "skipped",
+        "reason": "Enterprise security product and the daily cap is nearly full."
+      },
+      {
+        "story": "Sonos prepares its 27voice AI beta with a US waitlist opening November 6",
+        "source": "https://www.theverge.com/tech/1025903/sonos-presets-27voice-ai-early-access",
+        "decision": "skipped",
+        "reason": "Minor consumer beta and the last slot is reserved for the utility post."
+      },
+      {
+        "story": "OpenAI names Jill Hazelbaker chief corporate affairs officer",
+        "source": "https://www.axios.com/2026/11/03/jill-hazelbaker-openai-uber",
+        "decision": "skipped",
+        "reason": "Executive hire with limited interest, skipped in earlier runs for the same reason."
+      },
+      {
+        "story": "Anthropic FlashProve, cryptographic proof of which model wrote a reply",
+        "source": "https://www.anthropic.com/research/provable-inference",
+        "decision": "skipped",
+        "reason": "Technical research prototype, skipped in earlier runs for the same reason."
+      },
+      {
+        "story": "Canva cuts 1,271 jobs as growth slows",
+        "source": "https://www.theage.com.au/technology/canva-unveils-mass-job-cuts-in-hardest-moment-of-its-history-20261104-p61b62.html",
+        "decision": "skipped",
+        "reason": "Layoff story with no clear AI angle, would be sensitive."
+      },
+      {
+        "story": "Apple opens Siri AI to every app",
+        "decision": "covered",
+        "reason": "Already queued as 2026-11-04-apple-opens-siri-ai-every-app."
+      },
+      {
+        "story": "Cat Wu leaves Anthropic's Claude Code team",
+        "decision": "covered",
+        "reason": "Already queued as 2026-11-04-cat-wu-leaves-claude-code."
+      },
+      {
+        "story": "OpenAI says ChatGPT search volume is about 20 percent of Google's",
+        "decision": "covered",
+        "reason": "Already queued as 2026-11-04-chatgpt-one-fifth-google-search."
       }
     ],
     "requests": []
