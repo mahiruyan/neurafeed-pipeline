@@ -1,62 +1,5 @@
 [
   {
-    "run_at": "2026-10-28T20:00:32.551Z",
-    "summary": "No new jobs: Oct 28 (New York) is already at the 8-job cap, no new priority 1 AI story appeared since the last run, and there are no open links or requests.",
-    "considered": [
-      {
-        "story": "Apple launches its first touchscreen MacBook Pro (M5 Pro and M5 Max)",
-        "source": "https://techcrunch.com/2026/10/28/apple-launches-its-new-touchscreen-macbook-pro/",
-        "decision": "skipped",
-        "reason": "Hardware news with no AI angle in the coverage, Apple's MacBook launch was covered yesterday, and the day is at the cap."
-      },
-      {
-        "story": "Chrome's AI Autofill can now use your Gmail to fill out forms",
-        "source": "https://techcrunch.com/2026/10/28/chromes-ai-powered-autofill-can-now-dig-through-your-gmail-to-fill-out-forms/",
-        "decision": "skipped",
-        "reason": "Useful Google feature but a priority 2 story, and the day is at the 8-job cap."
-      },
-      {
-        "story": "Nvidia releases a new open transcription model",
-        "source": "https://techcrunch.com/2026/10/28/voice-ai-in-vogue-nvidia-releases-new-open-transcription-model/",
-        "decision": "skipped",
-        "reason": "Developer-focused release with limited mainstream appeal, and the day is at the cap."
-      },
-      {
-        "story": "Anthropic expands GSA deal with a 40 percent Claude discount for government",
-        "source": "https://www.anthropic.com/news/expanding-partnership-gsa",
-        "decision": "skipped",
-        "reason": "Already weighed and skipped in earlier runs; procurement news with little consumer interest, and the day is at the cap."
-      },
-      {
-        "story": "Trump says government documents should say Super Intelligence instead of AI",
-        "source": "https://x.com/WatcherGuru/status/2115116897637470663",
-        "decision": "skipped",
-        "reason": "Already weighed in earlier runs; political, details unclear, and no second solid source."
-      },
-      {
-        "story": "Anthropic and Theorem use Claude for machine-checkable security proofs",
-        "decision": "skipped",
-        "reason": "Technical story already weighed earlier, and the day is at the cap."
-      },
-      {
-        "story": "OpenAI plans to buy Google's TPU chips",
-        "decision": "covered",
-        "reason": "Already posted as 2026-10-28-openai-buying-google-tpu-chips."
-      },
-      {
-        "story": "Axiom AI agents computer-check the finite simple groups proof",
-        "decision": "covered",
-        "reason": "Already queued as 2026-10-28-ai-agents-checked-biggest-math-proof."
-      },
-      {
-        "story": "Daily utility post for Oct 28",
-        "decision": "skipped",
-        "reason": "Oct 28 is at the 8-job cap."
-      }
-    ],
-    "requests": []
-  },
-  {
     "run_at": "2026-10-28T22:00:10.364Z",
     "summary": "Evening run (18:00 New York, Oct 28): queued 1 priority 1 story, Google's Gemini 4 Carbon launch (number one on the Artificial Analysis index, access limited to cyber defenders), waiting for Mahir's approval. No open links or requests.",
     "considered": [
@@ -5081,6 +5024,61 @@
         "story": "Apple opens Siri AI to every app",
         "decision": "covered",
         "reason": "Already queued as 2026-11-04-apple-opens-siri-ai-every-app."
+      }
+    ],
+    "requests": []
+  },
+  {
+    "run_at": "2026-11-04T20:54:22.315Z",
+    "summary": "16:00 New York run: no open links or requests; no new priority 1 story since the 14:00 run and November 4 already has 8 desk jobs (the daily cap), so nothing was queued.",
+    "considered": [
+      {
+        "story": "Reuters: OpenAI employees raised security concerns for years, OpenAI disputes neglect",
+        "source": "https://www.theneuron.ai/digest/everything-that-happened-in-ai-today-wednesday-november-4-2026/",
+        "decision": "skipped",
+        "reason": "Close to the queued Cathedral Systems security story and today is at the 8 job cap; candidate for tomorrow with a second source."
+      },
+      {
+        "story": "Sam Altman jokes about AI's thirst for memory with a new social media nickname",
+        "source": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNQ0ZjLWNOSHhNLURmZmlPZEdzNVNSSVBybUZ1ZTA5aUlmNVFPeGxMaWtnTFhpaE02WWVEU3YySXJPQU5VclJvQlBITTRkMFNOLVhtQ0Y5NG9UZG5xMktQQ1NZYTMwRW9zcm5LeUdLQTJJZVZTRk1CVGFUdWYzQ01yMEdDTDZhdjBMRUZaNnJuM29HbW1UU25ta0xmUQ?oc=5",
+        "decision": "skipped",
+        "reason": "Light social media story, not priority 1, and the daily cap is reached."
+      },
+      {
+        "story": "Redditor uses AI to get Switch games running natively on Apple TV",
+        "source": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQMzZxUmhCUllkNXVZYmhFaDJTUTJieXFOWjNyVDhCR0p1SWp0WXBMQ2RyWC1WTERYcFBTdmJWOVJGYnVMWGFrVm9NdFM4cllLNTNmTWtlMTVNX1h3V2RnajNXWjNZMmYtN2g3Sm1tVTUxOFB3ajZOTzFXRmJsOEpFWUtKeVhXeXc5cmdvbDlRejlpUlE2c0tNZDNlajFpQ3Z2?oc=5",
+        "decision": "skipped",
+        "reason": "Fun but legally touchy emulation story and today is at the cap; possible filler for tomorrow."
+      },
+      {
+        "story": "AI-generated political ads topped $187 million this cycle",
+        "decision": "skipped",
+        "reason": "Political and sensitive, and the daily cap is reached."
+      },
+      {
+        "story": "OpenAI Grid Protectors Program to cut data center power at peak demand",
+        "decision": "skipped",
+        "reason": "Close to the November 2 compute campuses story and the cap is reached."
+      },
+      {
+        "story": "Google DeepMind staff push back on contract clauses limiting criticism",
+        "decision": "skipped",
+        "reason": "Daily cap of 8 reached; Google says the clauses were removed from new contracts, worth a look tomorrow."
+      },
+      {
+        "story": "OpenAI hires Cathedral Systems, the firm that accessed Anthropic's systems",
+        "decision": "covered",
+        "reason": "Already queued as 2026-11-04-openai-hires-firm-that-hacked-anthropic."
+      },
+      {
+        "story": "Apple opens Siri AI to apps through iOS 27.3 betas",
+        "decision": "covered",
+        "reason": "Already queued as 2026-11-04-apple-opens-siri-ai-every-app."
+      },
+      {
+        "story": "OpenAI says ChatGPT search is about 20 percent of Google's volume",
+        "decision": "covered",
+        "reason": "Already queued as 2026-11-04-chatgpt-one-fifth-google-search."
       }
     ],
     "requests": []
