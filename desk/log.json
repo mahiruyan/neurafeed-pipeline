@@ -1,59 +1,5 @@
 [
   {
-    "run_at": "2026-10-27T23:54:44.435Z",
-    "summary": "Evening run (19:53 New York time, Oct 27): no open links or requests, no new priority 1 story since the last run, and today already has more than 8 news jobs, so nothing was queued.",
-    "considered": [
-      {
-        "story": "Anthropic IPO filing: breaches during testing and training pause",
-        "decision": "covered",
-        "reason": "Already posted as 2026-10-27-anthropic-models-escaped-tests-training-pause."
-      },
-      {
-        "story": "OpenAI says its models produced new math and physics results",
-        "decision": "covered",
-        "reason": "Already posted as 2026-10-27-openai-ai-disproves-exponential-time-hypothesis."
-      },
-      {
-        "story": "Google DeepMind Genie 4 world model",
-        "decision": "covered",
-        "reason": "Already posted as 2026-10-27-google-genie-4-worlds-talk-back."
-      },
-      {
-        "story": "Nvidia and AMD to invest $4 billion in Meta",
-        "source": "https://www.cnbc.com/2026/10/27/nvidia-invest-meta.html",
-        "decision": "covered",
-        "reason": "Same story as 2026-10-27-nvidia-3-billion-meta-muse."
-      },
-      {
-        "story": "DeepSeek V4.1 Flash disabled shutdown software in 39 percent of tests",
-        "source": "https://www.foxnews.com/live-news/ai-news-anthropic-claude-openai-chatgpt-10-27-26",
-        "decision": "skipped",
-        "reason": "One research team's test reported secondhand, and the daily cap is already full."
-      },
-      {
-        "story": "Stanford professors file a new authors' lawsuit against Anthropic",
-        "decision": "skipped",
-        "reason": "Follow-on lawsuit with one source, and the daily cap is full."
-      },
-      {
-        "story": "Anthropic S-1 leaves Ben Mann off the continuing founders list",
-        "decision": "skipped",
-        "reason": "Small detail of the IPO filing already covered today."
-      },
-      {
-        "story": "Meta AI director Rohit Patel leaves to build an Office and Workspace rival",
-        "decision": "skipped",
-        "reason": "Executive move with narrow appeal; daily cap reached."
-      },
-      {
-        "story": "Daily utility post",
-        "decision": "skipped",
-        "reason": "The 8 post daily cap is already filled by news jobs."
-      }
-    ],
-    "requests": []
-  },
-  {
     "run_at": "2026-10-28T02:08:09.646Z",
     "summary": "Late run (21:55 New York time, Oct 27): no open links or requests; queued 2 new stories for Oct 28 (OpenAI buying Google TPUs, Claude drug development results), both waiting for Mahir's approval.",
     "considered": [
@@ -5127,6 +5073,59 @@
         "story": "Data centers turn to old jet engines while waiting for power (TechCrunch)",
         "decision": "skipped",
         "reason": "Niche infrastructure story, and the day is full."
+      }
+    ],
+    "requests": []
+  },
+  {
+    "run_at": "2026-11-04T00:53:29.214Z",
+    "summary": "20:00 New York run: no open links or requests, and today already has 9 desk jobs (over the 8 cap), so nothing new was queued; no utility post today because the day is full.",
+    "considered": [
+      {
+        "story": "Claude Code's Cat Wu leaves Anthropic",
+        "decision": "skipped",
+        "reason": "Only one small-outlet report in the leads, and the day is over the 8-job cap; can be checked tomorrow."
+      },
+      {
+        "story": "OpenAI uses GPT-6 and Astra to design a hardware device in under a week",
+        "source": "https://openai.com/index/accelerating-engineering-for-the-physical-world/",
+        "decision": "skipped",
+        "reason": "OpenAI already has posts today and the cap is reached; strong candidate for tomorrow morning."
+      },
+      {
+        "story": "OpenAI says Google's search volume is about 5x ChatGPT's",
+        "decision": "skipped",
+        "reason": "Single trade-press report and the day is full."
+      },
+      {
+        "story": "US tech giants' hidden AI debt swells to $3.2T",
+        "decision": "skipped",
+        "reason": "Finance story with one source seen, and no slot left today."
+      },
+      {
+        "story": "OpenAI seems to be re-enabling model training on Codex chats",
+        "decision": "skipped",
+        "reason": "Based on a Hacker News post, not confirmed by news outlets yet."
+      },
+      {
+        "story": "Musk says Grok bot costs are too high, OpenAI Dots compute heavy (Fortune)",
+        "decision": "covered",
+        "reason": "Already covered as 2026-11-02-musk-grok-bot-cost-too-much."
+      },
+      {
+        "story": "Google cuts off Search for schools that reject AI",
+        "decision": "covered",
+        "reason": "Already queued as 2026-11-03-google-schools-no-ai-no-search."
+      },
+      {
+        "story": "Anthropic warns self-improving AI could be close",
+        "decision": "covered",
+        "reason": "Already queued as 2026-11-03-anthropic-warns-self-building-ai-imminent."
+      },
+      {
+        "story": "Utility post for November 3",
+        "decision": "skipped",
+        "reason": "The day is already over the 8-job cap; the next utility post goes in tomorrow's runs."
       }
     ],
     "requests": []
