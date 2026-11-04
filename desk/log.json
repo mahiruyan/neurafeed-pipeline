@@ -1,72 +1,5 @@
 [
   {
-    "run_at": "2026-10-28T17:54:13.854Z",
-    "summary": "No new jobs: Oct 28 (New York) already has 8 jobs, the daily cap, and no new priority 1 launch appeared; no open links (the 4 old ones are in skipped.json) and the only open request already failed (not retried).",
-    "considered": [
-      {
-        "story": "Anthropic tells California's governor that courts should be able to block risky AI models (Reuters)",
-        "source": "https://www.reuters.com/",
-        "decision": "skipped",
-        "reason": "Policy letter with no decision yet, and Oct 28 is at the 8-job cap."
-      },
-      {
-        "story": "AI startup claims it hacked Anthropic in 12 hours (TechRadar)",
-        "decision": "covered",
-        "reason": "Same story as 2026-10-26-cathedral-ai-agents-broke-into-anthropic."
-      },
-      {
-        "story": "Apple's OpenAI trade secrets case now covers an ex-employee's ChatGPT and Claude use",
-        "decision": "skipped",
-        "reason": "Lawsuit detail with little new for a general audience, and the day is at the cap."
-      },
-      {
-        "story": "Gov. Hochul signs New York bill to shield children from unsafe AI chatbots",
-        "decision": "skipped",
-        "reason": "Political and sensitive, and the day is at the cap; a candidate for tomorrow if still fresh."
-      },
-      {
-        "story": "TechCrunch: AI execs may be too out of touch to build for the general public",
-        "source": "https://techcrunch.com/2026/10/28/ai-execs-may-be-too-out-of-touch-to-build-for-the-general-public/",
-        "decision": "skipped",
-        "reason": "Opinion piece with no news event."
-      },
-      {
-        "story": "Kentucky man becomes the first humanist granted a religious exemption from using AI",
-        "source": "https://religionnews.com/2026/10/26/in-a-first-a-humanist-granted-a-religious-exemption-from-using-ai/",
-        "decision": "skipped",
-        "reason": "Odd story with some appeal, but two days old and the day is at the cap."
-      },
-      {
-        "story": "Surge AI Dayjob: Tax benchmark tests AI agents on 50 tax assignments",
-        "source": "https://surgehq.ai/blog/dayjob-tax",
-        "decision": "skipped",
-        "reason": "Niche benchmark from one source, and the day is at the cap."
-      },
-      {
-        "story": "Amazon is gutting its AI division after Nova struggles (Futurism)",
-        "source": "https://futurism.com/artificial-intelligence/amazon-ai-division-failure-nova",
-        "decision": "skipped",
-        "reason": "From Oct 27, outside the 12-hour window, and the day is at the cap."
-      },
-      {
-        "story": "Anthropic: early progress on drug development with Claude",
-        "decision": "covered",
-        "reason": "Already queued as 2026-10-28-claude-35000-antibodies-one-month."
-      },
-      {
-        "story": "Police use AI to pull over drivers for suspicious behavior",
-        "decision": "covered",
-        "reason": "Already queued as 2026-10-28-police-ai-flags-suspicious-road-trips."
-      },
-      {
-        "story": "Daily utility post for Oct 28",
-        "decision": "skipped",
-        "reason": "Oct 28 is at the 8-job cap."
-      }
-    ],
-    "requests": []
-  },
-  {
     "run_at": "2026-10-28T20:00:32.551Z",
     "summary": "No new jobs: Oct 28 (New York) is already at the 8-job cap, no new priority 1 AI story appeared since the last run, and there are no open links or requests.",
     "considered": [
@@ -5101,6 +5034,53 @@
         "story": "Google cuts off Search for schools that reject AI",
         "decision": "covered",
         "reason": "Already covered as 2026-11-03-google-schools-no-ai-no-search."
+      }
+    ],
+    "requests": []
+  },
+  {
+    "run_at": "2026-11-04T18:53:50.216Z",
+    "summary": "14:00 New York run: no open links or requests; November 4 already has 8 desk jobs (the daily cap), so nothing new was queued.",
+    "considered": [
+      {
+        "story": "OpenAI acquires Pierre Computer to bring its code storage to Codex",
+        "source": "https://twitter.com/pierrecomputer/status/2117999036175188183",
+        "decision": "skipped",
+        "reason": "Small developer-tool acquisition, not a must-post story, and today is at the 8 job cap; a candidate for tomorrow if it grows."
+      },
+      {
+        "story": "Google DeepMind staff push back on a lifetime ban on criticizing AI",
+        "source": "https://www.washingtonpost.com/technology/2026/11/03/google-deepmind-staff-protest-lifetime-ban-crit",
+        "decision": "skipped",
+        "reason": "Daily cap of 8 reached; worth a look in tomorrow's first run with a second source."
+      },
+      {
+        "story": "Geoffrey Hinton says we might have been better off without AI",
+        "source": "https://www.theguardian.com/uk-news/2026/nov/03/ai-godfather-geoffrey-hinton-better-off-without-ai",
+        "decision": "skipped",
+        "reason": "Daily cap reached and the story is from November 3."
+      },
+      {
+        "story": "Kimi K3.1 Pro open weights released by Moonshot AI",
+        "source": "https://huggingface.co/moonshotai/Kimi-K3.1-Pro",
+        "decision": "skipped",
+        "reason": "Niche for a US consumer audience and today is at the cap."
+      },
+      {
+        "story": "Hands-on with Apple's Siri Recaps",
+        "source": "https://techcrunch.com/2026/11/04/i-tried-apples-siri-recaps-theyre-surprisingly-useful-and-a-little",
+        "decision": "skipped",
+        "reason": "Review piece on Apple's Siri features, close to today's queued Siri story, and the cap is reached."
+      },
+      {
+        "story": "Google cuts off Search for schools that reject AI (Mamdani reaction)",
+        "decision": "covered",
+        "reason": "Already covered as 2026-11-03-google-schools-no-ai-no-search."
+      },
+      {
+        "story": "Apple opens Siri AI to every app",
+        "decision": "covered",
+        "reason": "Already queued as 2026-11-04-apple-opens-siri-ai-every-app."
       }
     ],
     "requests": []
