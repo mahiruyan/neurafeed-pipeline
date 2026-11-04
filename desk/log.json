@@ -1,79 +1,5 @@
 [
   {
-    "run_at": "2026-10-28T06:12:52.710Z",
-    "summary": "Overnight run (02:10 New York time, Oct 28): no open links or requests; no new priority 1 story since the 00:40 run, and the one fresh candidate could not be built with usable photos, so nothing was queued.",
-    "considered": [
-      {
-        "story": "Physical Intelligence in talks to raise at least $1 billion at about a $20 billion valuation (Bloomberg)",
-        "source": "https://www.investing.com/news/stock-market-news/physical-intelligence-in-talks-to-raise-1b-at-20b-valuation--bloomberg-4976690",
-        "decision": "skipped",
-        "reason": "Only rewrites of Bloomberg's paywalled report were readable, no photo could be checked from this run, and a timely job would expire before the 07:00 window; a daytime run can pick it up if Physical Intelligence or a second outlet confirms."
-      },
-      {
-        "story": "Anthropic engineer Felix Rieseberg says he dropped coding interviews because Claude beats candidates",
-        "source": "https://felixrieseberg.com/hunger-beats-tenure-advice-for-junior-engineers/",
-        "decision": "skipped",
-        "reason": "The blog post could not be opened from this run and no news outlet has reported it yet."
-      },
-      {
-        "story": "SK Hynix third quarter results on HBM demand",
-        "source": "https://www.cnbc.com/2026/10/28/sk-hynix-third-quarter-profit.html",
-        "decision": "skipped",
-        "reason": "Could not open the CNBC report, and a memory maker's earnings have little US consumer appeal."
-      },
-      {
-        "story": "Parents sue OpenAI saying GPT-4o coached their daughter off seizure medication",
-        "source": "https://news.bloomberglaw.com/litigation/openai-sued-alleging-chatgpt-gave-fatal-epilepsy-medical-advice",
-        "decision": "skipped",
-        "reason": "Same decision as the last two runs: the complaint and the main reports could not be read from here, and a death and health lawsuit needs solid sourcing."
-      },
-      {
-        "story": "Anthropic expands GSA deal with 40 percent Claude discount for government",
-        "source": "https://www.anthropic.com/news/expanding-partnership-gsa",
-        "decision": "skipped",
-        "reason": "Considered in the last two runs; government procurement with little consumer appeal and Anthropic already has a post queued for Oct 28."
-      },
-      {
-        "story": "Trump says he will ban the term artificial intelligence",
-        "decision": "skipped",
-        "reason": "Considered in the last two runs; a repeat political statement with no new action."
-      },
-      {
-        "story": "Discord to make public servers searchable by Google",
-        "source": "https://techcrunch.com/2026/10/27/discord-is-making-its-public-communities-more-searchable-and-people-have-concerns/",
-        "decision": "skipped",
-        "reason": "A privacy and search story, not AI news."
-      },
-      {
-        "story": "Hex raises $100 million at a $1.2 billion valuation",
-        "source": "https://hex.tech/blog/hex-new-era/",
-        "decision": "skipped",
-        "reason": "Small enterprise funding round, little US interest."
-      },
-      {
-        "story": "OpenAI plans to buy Google TPU chips",
-        "decision": "covered",
-        "reason": "Already queued as 2026-10-28-openai-buying-google-tpu-chips."
-      },
-      {
-        "story": "Claude drug development results and Mithril purchase",
-        "decision": "covered",
-        "reason": "Already queued as 2026-10-28-claude-35000-antibodies-one-month."
-      },
-      {
-        "story": "Axiom AI agents formalize the finite simple groups proof",
-        "decision": "covered",
-        "reason": "Already queued as 2026-10-28-ai-agents-checked-biggest-math-proof."
-      },
-      {
-        "story": "Daily utility post for Oct 28",
-        "decision": "skipped",
-        "reason": "It is not yet 11:00 New York time; a later run will queue it."
-      }
-    ],
-    "requests": []
-  },
-  {
     "run_at": "2026-10-28T08:12:35.037Z",
     "summary": "Overnight run (03:55 New York time, Oct 28): no open links or requests; queued 1 story (ACLU on police stopping drivers after AI flags their road trips), waiting for Mahir's approval. Oct 28 now has 5 jobs.",
     "considered": [
@@ -5094,6 +5020,75 @@
         "source": "https://www.washingtonpost.com/technology/2026/11/03/google-deepmind-staff-protest-lifetime-ban-crit",
         "decision": "skipped",
         "reason": "Paywalled single source, could not confirm details."
+      },
+      {
+        "story": "Google cuts off Search for schools that reject AI",
+        "decision": "covered",
+        "reason": "Already queued as 2026-11-03-google-schools-no-ai-no-search."
+      }
+    ],
+    "requests": []
+  },
+  {
+    "run_at": "2026-11-04T07:02:19.399Z",
+    "summary": "2:00 New York run: no open links or requests; queued 2 stories for November 4 (ChatGPT search at one fifth of Google, priority 1; Cat Wu leaves Claude Code, priority 2). Today now has 3 desk jobs; utility post waits for the 11:00 run.",
+    "considered": [
+      {
+        "story": "OpenAI says ChatGPT search volume is about one fifth of Google's",
+        "source": "https://9to5google.com/2026/11/03/chatgpt-has-hit-roughly-20-of-google-search-volume-openai-says/",
+        "decision": "queued",
+        "job_id": "2026-11-04-chatgpt-one-fifth-google-search",
+        "priority": 1
+      },
+      {
+        "story": "Claude Code head of product Cat Wu leaves Anthropic",
+        "source": "https://www.businessinsider.tw/article/9193",
+        "decision": "queued",
+        "job_id": "2026-11-04-cat-wu-leaves-claude-code",
+        "priority": 2
+      },
+      {
+        "story": "FTC opens probe into AI safety at Anthropic and OpenAI",
+        "source": "https://www.axios.com/2026/09/30/ftc-openai-anthropic-ai-safety-investigation",
+        "decision": "skipped",
+        "reason": "Old September 30 news resurfacing in feeds; already covered by 2026-10-15-ftc-subpoenas-openai-anthropic."
+      },
+      {
+        "story": "Anthropic releases message threads in public beta for the Claude API",
+        "source": "https://thenewstack.io/anthropic-claude-message-threads/",
+        "decision": "skipped",
+        "reason": "Developer API feature with little appeal for a general audience."
+      },
+      {
+        "story": "Anthropic FlashProve, a tool to prove which model produced a reply",
+        "source": "https://techcrunch.com/",
+        "decision": "skipped",
+        "reason": "Technical research prototype; Anthropic already has two posts in today's queue."
+      },
+      {
+        "story": "AMD's OpenAI and Meta chip deals trigger a $1 billion quarterly charge",
+        "decision": "skipped",
+        "reason": "Accounting story from earnings, low interest for our audience."
+      },
+      {
+        "story": "OpenAI hires Uber president Jill Hazelbaker as communications chief",
+        "decision": "skipped",
+        "reason": "Executive hire with limited interest for our audience."
+      },
+      {
+        "story": "OpenAI and Anthropic set up election war rooms for the midterms",
+        "decision": "skipped",
+        "reason": "Political and sensitive on election day."
+      },
+      {
+        "story": "CrowdStrike kill switch for rogue AI agents",
+        "decision": "skipped",
+        "reason": "Enterprise security product pitch from a CEO interview, one source seen; possible later."
+      },
+      {
+        "story": "OpenAI says GPT-6 and Astra designed a hardware device in under a week",
+        "decision": "covered",
+        "reason": "Already queued as 2026-11-04-openai-astra-built-device-one-week."
       },
       {
         "story": "Google cuts off Search for schools that reject AI",
