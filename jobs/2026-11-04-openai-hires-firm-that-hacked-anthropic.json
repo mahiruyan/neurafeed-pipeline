@@ -1,0 +1,118 @@
+{
+  "id": "2026-11-04-openai-hires-firm-that-hacked-anthropic",
+  "created_at": "2026-11-04T09:45:00Z",
+  "story_time": "2026-11-03T00:00:00Z",
+  "timely": false,
+  "sensitive": false,
+  "priority": 2,
+  "review": true,
+  "format": "carousel",
+  "site_category": "companies",
+  "sources": [
+    { "name": "Interesting Engineering", "url": "https://interestingengineering.com/ai-robotics/openai-plans-new-security-sprint" },
+    { "name": "FourWeekMBA", "url": "https://fourweekmba.com/ai-openai-brings-in-cathedral-lifts-bug-bounty-cap-to-172k/" },
+    { "name": "Data Studios", "url": "https://www.datastudios.org/post/openai-bug-bounty-rewards-30000-critical-chatgpt-codex-cathedral-security-sprint" }
+  ],
+  "caption": "OpenAI is bringing in Cathedral Systems, the startup founded by former DOGE staffers whose AI agents got into some of Anthropic's internal systems last month.\nCathedral's researchers will use OpenAI's own models to attack OpenAI's defenses in its next security sprint.\nOpenAI also raised its bug bounty: exceptional finds can now pay about $172,000 with bonuses.\n\nWould you hire the hackers who broke into your biggest rival?\n\nFollow @neurafeed.ai for daily AI news.\n\nSource: Interesting Engineering, FourWeekMBA · Photos: Wikimedia Commons, Decrypt, CoinCentral",
+  "threads_text": "OpenAI just brought in Cathedral, the ex DOGE startup whose AI agents got into Anthropic's internal systems last month, to attack its own defenses. It also raised bug bounties to as much as about $172,000. Smart move or a little awkward?",
+  "slides": [
+    {
+      "kind": "cover",
+      "headline": "The startup whose AI agents got into Anthropic is now *attacking OpenAI*, on purpose",
+      "image": {
+        "url": "https://cms.interestingengineering.com/wp-content/uploads/2026/11/OpenAI-1.jpg",
+        "credit": "Wikimedia Commons",
+        "fallback_urls": ["https://cdn.decrypt.co/resize/1024/height/512/wp-content/uploads/2026/04/decrypt-style-openai-logo-gID_7.png"],
+        "generate": "A dim, cramped server room aisle lit by harsh fluorescent tubes. A young security researcher in a dark hoodie, seen from behind, sits on a folding chair at a small table covered with two open laptops, energy drink cans and tangled network cables plugged into a server rack. On the metal door at the end of the aisle, the logo from the first image is painted big and exact. Generous headroom above the researcher, the scene fills the upper two thirds of the frame. Blank surfaces, no readable text or labels on any object, screen or cable. Photorealistic, high contrast, vertical composition, one clear subject, no letters, no watermarks. It must look like an unedited real photo from a news agency, not a painting, not digital art, no glow effects.",
+        "refs": ["assets/logos/openai.png"]
+      },
+      "pos": "center 40%",
+      "badges": [
+        { "url": "assets/logos/openai.png", "fit": "contain" },
+        { "url": "assets/logos/anthropic.png", "fit": "contain" }
+      ],
+      "badge_side": "right"
+    },
+    {
+      "kind": "card",
+      "heading": "OpenAI calls in *outside attackers*",
+      "paras": [
+        "Researchers from Cathedral Systems will use OpenAI's models alongside its own teams to challenge its defenses in the next security sprint.",
+        "In the last sprint, about 25% of OpenAI's product engineers hunted weaknesses with Codex."
+      ],
+      "image": {
+        "url": "https://cdn.decrypt.co/resize/1024/height/512/wp-content/uploads/2026/04/decrypt-style-openai-logo-gID_7.png",
+        "credit": "Decrypt / Shutterstock",
+        "fallback_urls": []
+      }
+    },
+    {
+      "kind": "card",
+      "heading": "The firm that *got into Anthropic*",
+      "paras": [
+        "Cathedral, founded by former DOGE staffers, says its AI agents reached Anthropic meeting transcripts and salary details in October.",
+        "Anthropic says only some sales, HR and IT systems were touched."
+      ],
+      "image": {
+        "url": "https://techstartups.com/wp-content/uploads/2024/06/Anthropic.jpg",
+        "credit": "Tech Startups",
+        "fallback_urls": ["https://cdn.nairametrics.com/wp-content/uploads/2026/09/anthropic-1.webp"]
+      },
+      "note": "Anthropic says Cathedral overstated the security angle."
+    },
+    {
+      "kind": "card",
+      "heading": "Bug bounties up to *$172,000*",
+      "paras": [
+        "OpenAI also raised its rewards. Critical bugs in ChatGPT, Codex or the API now pay up to $30,000.",
+        { "t": "Exceptional finds can reach about $172,000 with bonuses, up from a $100,000 ceiling.", "strong": true }
+      ],
+      "image": {
+        "url": "https://coincentral.com/wp-content/uploads/2026/06/OpenAI.jpg",
+        "credit": "CoinCentral",
+        "fallback_urls": ["https://media.crypto.news/2026/05/openai-1.webp"]
+      }
+    },
+    {
+      "kind": "card",
+      "heading": "$1 billion for *defenders*",
+      "paras": [
+        "OpenAI committed $1 billion in subsidized access over six months for defenders who protect essential services.",
+        "\"Every company should be thinking about how to put these capabilities to work,\" said Cathedral CEO Gavin Kliger."
+      ],
+      "image": {
+        "url": "https://media.thenextweb.com/2026/09/openai-logo-smartphone-laptop-zac-wolff-unsplash.jpg",
+        "credit": "Zac Wolff / Unsplash",
+        "fallback_urls": []
+      }
+    },
+    {
+      "kind": "cta",
+      "hook": "AI labs now pay hackers to break in before anyone else does. Follow for the next twist."
+    }
+  ],
+  "site_article": {
+    "headline": "OpenAI brings in Cathedral Systems for its next security sprint and raises bug bounties",
+    "dek": "The startup, founded by former DOGE staffers, recently reported reaching some of Anthropic's internal systems; OpenAI also raised its top bounty to about $172,000.",
+    "summary": "OpenAI says researchers from Cathedral Systems will use its models alongside its teams to test its defenses in its next internal security sprint. The company also raised its bug bounty rewards, with exceptional findings now worth up to about $172,000 including bonuses.",
+    "seo_title": "OpenAI partners with Cathedral, raises bug bounty to $172,000",
+    "seo_description": "OpenAI enlists Cathedral Systems, the ex DOGE security startup that probed Anthropic, for its next security sprint and raises bug bounties to about $172,000.",
+    "answer_summary": "OpenAI is partnering with Cathedral Systems, whose researchers will use OpenAI's models to challenge its defenses, and it raised critical bug rewards to up to $30,000, with exceptional findings worth about $172,000 with bonuses.",
+    "tags": ["OpenAI", "Cathedral Systems", "Anthropic", "Cybersecurity", "Bug bounty", "Codex"],
+    "hero_alt": "A smartphone showing the OpenAI logo.",
+    "paragraphs": [
+      { "kind": "fact", "text": "OpenAI is partnering with Cathedral Systems for its next internal security sprint, in which outside researchers will use OpenAI's models alongside its own teams to challenge the company's defenses. OpenAI described the plan in posts dated November 2, 2026, and announced it on X on November 3, according to Interesting Engineering and FourWeekMBA.", "sources": [0, 1] },
+      { "kind": "fact", "text": "OpenAI did not give a start date, duration, fee or scope for the sprint, FourWeekMBA and Data Studios reported. In its previous sprint, about 25 percent of OpenAI's product engineers worked on finding and fixing weaknesses, using Codex to investigate findings, reproduce vulnerabilities in isolated environments and prepare patches, Interesting Engineering reported.", "sources": [0, 1, 2] },
+      { "kind": "heading", "text": "Who Cathedral is" },
+      { "kind": "fact", "text": "Cathedral is a cybersecurity startup that uses AI. Its chief executive and cofounder is Gavin Kliger, and its founders are former staffers of the Department of Government Efficiency, according to FourWeekMBA, which cited Quartz. The company closed a $160 million round in July at a $1.4 billion valuation, FourWeekMBA reported, citing Decrypt.", "sources": [0, 1] },
+      { "kind": "fact", "text": "In October, Cathedral probed Anthropic through a program modeled on a bug bounty. A draft report described by The Washington Post on October 26 said its agents reached meeting transcripts, salary and job offer details, and Slack messages about Anthropic's advanced models, through flaws in outside vendors' admin and sales tools, FourWeekMBA reported.", "sources": [1, 2] },
+      { "kind": "fact", "text": "Anthropic confirmed access to a limited set of its sales, HR and IT systems and said customer conversations, source code and model weights were not touched. It said its monitoring flagged some of the activity, that it cut off access the same day, and that Cathedral exaggerated the national security implications and did not fully follow the program's rules. Cathedral's draft said data access was kept to a minimum. OpenAI's announcement does not mention the Anthropic episode, Data Studios noted.", "sources": [1, 2] },
+      { "kind": "fact", "text": "Kliger said OpenAI is setting an example by partnering with outside security firms and that every company should be thinking about how to put these capabilities to work, according to Interesting Engineering.", "sources": [0] },
+      { "kind": "heading", "text": "Bigger bug bounties" },
+      { "kind": "fact", "text": "OpenAI also raised its security bug bounty. Critical findings in ChatGPT, Codex or the API Platform can now earn up to $30,000, and the company said the midpoint of its reward ranges for medium, high and critical findings rose more than fourfold on average. Exceptional findings, previously capped at $100,000, keep that base but can now reach about $172,000 with bonuses, according to FourWeekMBA and Data Studios.", "sources": [1, 2] },
+      { "kind": "fact", "text": "The new ranges apply to reports not yet awarded, and researchers paid in the 30 days before the change will receive the difference. Model safety issues and jailbreaks stay in a separate safety program, Data Studios reported. OpenAI also committed $1 billion in subsidized access over six months through Daybreak for defenders who protect essential services and digital infrastructure.", "sources": [0, 1, 2] },
+      { "kind": "analysis", "text": "The choice of partner stands out. Cathedral's public profile comes largely from its disputed account of reaching Anthropic's internal systems, and OpenAI is now inviting the same team to test its own defenses with its own models. Together with higher bounties, the move shows OpenAI treating AI assisted attacks as a near term threat that it would rather face from paid researchers first." },
+      { "kind": "why_it_matters", "text": "OpenAI's security team is due at the PROMPT2PWN event in Oakland on November 20 and 21; any published results from the Cathedral sprint would be the first real test of what this partnership finds." }
+    ]
+  }
+}

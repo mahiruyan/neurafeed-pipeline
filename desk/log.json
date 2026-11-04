@@ -1,71 +1,5 @@
 [
   {
-    "run_at": "2026-10-28T08:12:35.037Z",
-    "summary": "Overnight run (03:55 New York time, Oct 28): no open links or requests; queued 1 story (ACLU on police stopping drivers after AI flags their road trips), waiting for Mahir's approval. Oct 28 now has 5 jobs.",
-    "considered": [
-      {
-        "story": "ACLU: police pull over drivers after AI flags their travel patterns as suspicious; Texas jury ruled one stop unconstitutional",
-        "source": "https://www.aclu.org/news/privacy-technology/ai-driven-police-stops",
-        "decision": "queued",
-        "job_id": "2026-10-28-police-ai-flags-suspicious-road-trips",
-        "priority": 2
-      },
-      {
-        "story": "OpenAI engineer indicted over bugging an executive conference room",
-        "source": "https://sfstandard.com/2026/10/13/openai-engineer-arrested-alleged-bugging-executive-conference-room/",
-        "decision": "skipped",
-        "reason": "A crime follow-up to a story already covered four times (2026-10-13-fbi-arrests-openai-engineer-bugging and later posts)."
-      },
-      {
-        "story": "Hawley Senate investigation into OpenAI over the Hugging Face agent hack",
-        "source": "https://www.hawley.senate.gov/chairman-hawley-launches-investigation-into-openai-for-hacking-existential-risk-of-ai-products/",
-        "decision": "skipped",
-        "reason": "The investigation was opened in September; the feed item is an old story resurfacing."
-      },
-      {
-        "story": "Inside Wikipedia's cleanup of AI-generated content (IEEE Spectrum)",
-        "decision": "skipped",
-        "reason": "A feature with no new event and no usable photo found; could work later as a slower explainer."
-      },
-      {
-        "story": "Microsoft MAI-Image-2.7 Preview beats OpenAI's image model in editing",
-        "decision": "skipped",
-        "reason": "Could not find the announcement or a second source, only a Neowin headline in the feed."
-      },
-      {
-        "story": "Samsung TVs said to listen to room sounds for ad profiling",
-        "decision": "skipped",
-        "reason": "Unverified researcher claim and not an AI story."
-      },
-      {
-        "story": "Parents sue OpenAI saying GPT-4o coached their daughter off seizure medication",
-        "decision": "skipped",
-        "reason": "Same decision as the last three runs: a death and health lawsuit that still lacks solid sourcing readable from here."
-      },
-      {
-        "story": "Trump says he will ban the term artificial intelligence",
-        "decision": "skipped",
-        "reason": "Repeat political statement with no new action, skipped in earlier runs."
-      },
-      {
-        "story": "Stanford professors say their pirated books trained Claude",
-        "decision": "skipped",
-        "reason": "Considered and skipped in earlier runs; nothing new."
-      },
-      {
-        "story": "OpenAI plans to buy Google TPU chips",
-        "decision": "covered",
-        "reason": "Already queued as 2026-10-28-openai-buying-google-tpu-chips."
-      },
-      {
-        "story": "Daily utility post for Oct 28",
-        "decision": "skipped",
-        "reason": "It is not yet 11:00 New York time; a later run will queue it."
-      }
-    ],
-    "requests": []
-  },
-  {
     "run_at": "2026-10-28T10:11:42.762Z",
     "summary": "Early run (05:55 New York time, Oct 28): no open links or requests; queued 1 story (Anthropic study where analysts followed Claude's coin-flip preference 86% of the time), waiting for Mahir's approval. Oct 28 now has 6 jobs.",
     "considered": [
@@ -5089,6 +5023,81 @@
         "story": "OpenAI says GPT-6 and Astra designed a hardware device in under a week",
         "decision": "covered",
         "reason": "Already queued as 2026-11-04-openai-astra-built-device-one-week."
+      },
+      {
+        "story": "Google cuts off Search for schools that reject AI",
+        "decision": "covered",
+        "reason": "Already queued as 2026-11-03-google-schools-no-ai-no-search."
+      }
+    ],
+    "requests": []
+  },
+  {
+    "run_at": "2026-11-04T09:15:55.268Z",
+    "summary": "4:00 New York run: no open links or requests; queued 2 stories (Apple 10-K warns about AI agents, priority 1; OpenAI brings in Cathedral and raises bug bounties, priority 2). November 4 now has 5 desk jobs; utility post waits for the 11:00 run.",
+    "considered": [
+      {
+        "story": "Apple's fiscal 2026 10-K warns AI agents may act in unintended or unpredictable ways",
+        "source": "https://www.trtworld.com/article/9f4849aa875e",
+        "decision": "queued",
+        "job_id": "2026-11-04-apple-warns-ai-agents-act-without-permission",
+        "priority": 1
+      },
+      {
+        "story": "OpenAI partners with Cathedral Systems, the ex DOGE startup that probed Anthropic, and raises bug bounties to about $172,000",
+        "source": "https://interestingengineering.com/ai-robotics/openai-plans-new-security-sprint",
+        "decision": "queued",
+        "job_id": "2026-11-04-openai-hires-firm-that-hacked-anthropic",
+        "priority": 2
+      },
+      {
+        "story": "Revolut says self hosted open models cut its AI coding costs about 90 percent",
+        "source": "https://startupfortune.com/revolut-says-self-hosted-open-ai-models-cut-its-coding-costs-90/",
+        "decision": "skipped",
+        "reason": "Based on an October 22 talk and the reports disagree on which GLM model Revolut uses, so the facts are not solid enough."
+      },
+      {
+        "story": "AI agents now run operations at SETI's Allen Telescope Array",
+        "source": "https://blogs.nvidia.com/blog/ai-joins-the-search-for-extraterrestrial-signals/",
+        "decision": "skipped",
+        "reason": "NVIDIA announced it on October 30, so it is older than the 72 hour window for evergreen posts."
+      },
+      {
+        "story": "Google DeepMind staff push back on contract terms limiting criticism of Google",
+        "source": "https://www.washingtonpost.com/technology/2026/11/03/google-deepmind-staff-protest-lifetime-ban-criticizing-company/",
+        "decision": "skipped",
+        "reason": "Paywalled Washington Post report and no second source I could read."
+      },
+      {
+        "story": "Reuters: OpenAI employees warned about security lapses for years",
+        "decision": "skipped",
+        "reason": "Largely a rehash of earlier reporting with little new for our audience."
+      },
+      {
+        "story": "Canva cuts 1,271 jobs as growth slows",
+        "source": "https://www.theage.com.au/technology/canva-unveils-mass-job-cuts-in-hardest-moment-of-its-history-20261104-p61b62.html",
+        "decision": "skipped",
+        "reason": "Layoff story with no clear AI angle in the reports I saw; would be sensitive."
+      },
+      {
+        "story": "Claude Code adds instructions against cloning existing games",
+        "decision": "covered",
+        "reason": "Already covered as 2026-10-31-claude-code-stops-remaking-video-games."
+      },
+      {
+        "story": "OpenAI hires Uber president Jill Hazelbaker as chief corporate affairs officer",
+        "decision": "skipped",
+        "reason": "Executive hire with limited interest for our audience."
+      },
+      {
+        "story": "Anthropic FlashProve, cryptographic proof of which model produced a reply",
+        "decision": "skipped",
+        "reason": "Technical research prototype, Anthropic already has posts today."
+      },
+      {
+        "story": "India's cybersecurity agency gets access to Anthropic's Mythos model",
+        "decision": "skipped",
+        "reason": "Mostly an Indian government story with little US interest."
       },
       {
         "story": "Google cuts off Search for schools that reject AI",
