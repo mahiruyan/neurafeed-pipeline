@@ -1,76 +1,5 @@
 [
   {
-    "run_at": "2026-10-28T12:04:50.219Z",
-    "summary": "Morning run (07:56 New York time, Oct 28): no open links or requests; no new priority 1 story; queued 1 story (fake ChatGPT and Claude apps on GitHub hiding a crypto miner), waiting for Mahir's approval. Oct 28 now has 7 jobs, one slot kept for the utility post.",
-    "considered": [
-      {
-        "story": "Fake GPT-6 Astra and Claude Opus desktop apps on GitHub load a crypto miner through signed installers (Check Point)",
-        "source": "https://research.checkpoint.com/2026/tricks-from-the-past-deployed-via-signed-chatgpt-and-claude-binaries/",
-        "decision": "queued",
-        "job_id": "2026-10-28-fake-chatgpt-claude-apps-crypto-miner",
-        "priority": 2
-      },
-      {
-        "story": "Stanford professors' books pirated to train Claude (Stanford Daily)",
-        "source": "https://stanforddaily.com/2026/10/27/professors-books-pirated-to-train-claude/",
-        "decision": "skipped",
-        "reason": "Copyright dispute building on older Anthropic book lawsuits; could not read the article and confirm it with a second source in this run, and only one Oct 28 slot remains besides the utility post."
-      },
-      {
-        "story": "OpenAI engineer indicted for bugging a conference room",
-        "decision": "skipped",
-        "reason": "Crime story with only one readable source, and only one slot left for today."
-      },
-      {
-        "story": "Parents sue OpenAI over ChatGPT epilepsy medication advice",
-        "source": "https://news.bloomberglaw.com/litigation/openai-sued-alleging-chatgpt-gave-fatal-epilepsy-medical-advice",
-        "decision": "skipped",
-        "reason": "Same decision as earlier runs: death and health lawsuit without solid sourcing readable from here."
-      },
-      {
-        "story": "Microsoft MAI-Image-2.7 preview beats GPT Image 2.5 Flare in editing (Neowin)",
-        "decision": "skipped",
-        "reason": "Could not confirm with an official Microsoft page or a second source."
-      },
-      {
-        "story": "HP, Asus and Acer move PC production back to China on AI cost hikes",
-        "decision": "skipped",
-        "reason": "Supply chain story with little appeal for the US audience."
-      },
-      {
-        "story": "Anthropic S-1 analysis and Anthropic IPO trading",
-        "decision": "covered",
-        "reason": "Already covered as 2026-10-26-anthropic-files-ipo-ant-nasdaq and 2026-10-27-anthropic-models-escaped-tests-training-pause."
-      },
-      {
-        "story": "OpenAI plans to buy Google TPU chips",
-        "decision": "covered",
-        "reason": "Already queued as 2026-10-28-openai-buying-google-tpu-chips."
-      },
-      {
-        "story": "Google DeepMind Genie 4",
-        "decision": "covered",
-        "reason": "Already covered as 2026-10-27-google-genie-4-worlds-talk-back."
-      },
-      {
-        "story": "Nvidia and AMD invest in Meta's stock sale",
-        "decision": "covered",
-        "reason": "Already covered as 2026-10-27-nvidia-3-billion-meta-muse."
-      },
-      {
-        "story": "Trump says he will ban the term artificial intelligence",
-        "decision": "skipped",
-        "reason": "Repeat political statement with no new action, skipped in earlier runs."
-      },
-      {
-        "story": "Daily utility post for Oct 28",
-        "decision": "skipped",
-        "reason": "It is not yet 11:00 New York time; the last open slot is kept for it."
-      }
-    ],
-    "requests": []
-  },
-  {
     "run_at": "2026-10-28T14:15:28.994Z",
     "summary": "Mid-morning run (09:55 New York time, Oct 28): no open links or requests; queued 1 priority 1 story (Anthropic's unreleased Claude model built working attacks on Chrome, Safari, Android, Windows and Linux), waiting for Mahir's approval. Oct 28 now has 8 jobs, the daily cap, so no utility post today.",
     "considered": [
@@ -5108,6 +5037,70 @@
         "story": "Google cuts off Search for schools that reject AI",
         "decision": "covered",
         "reason": "Already queued as 2026-11-03-google-schools-no-ai-no-search."
+      }
+    ],
+    "requests": []
+  },
+  {
+    "run_at": "2026-11-04T12:54:25.863Z",
+    "summary": "8:00 New York run: no open links or requests; no new priority 1 story since the 6:00 run, so nothing queued. November 4 has 7 desk jobs; the last slot is kept for the 11:00 utility post.",
+    "considered": [
+      {
+        "story": "OpenAI seems to be silently re-enabling model training on Codex chats",
+        "source": "https://news.ycombinator.com/",
+        "decision": "skipped",
+        "reason": "Only a user claim on Hacker News, no news report or OpenAI statement I could find to confirm it."
+      },
+      {
+        "story": "Applied Compute raises $350M at a $3.25B valuation",
+        "source": "https://siliconangle.com/2026/11/03/ai-cloud-startup-applied-compute-raises-350m-after-reaching-key-revenue-milestone/",
+        "decision": "skipped",
+        "reason": "Funding round for a little known AI cloud startup, low interest and the daily cap is nearly full."
+      },
+      {
+        "story": "Super Micro revenue jumps on AI server demand",
+        "source": "https://www.reuters.com/business/super-micro-forecasts-quarterly-revenue-above-estimates-strong-ai-server-demand-2026-11-03/",
+        "decision": "skipped",
+        "reason": "Earnings story with little appeal for a general audience."
+      },
+      {
+        "story": "Claude plugins can now connect automatically for Team and Enterprise",
+        "source": "https://x.com/ClaudeDevs/status/2117680635561312732",
+        "decision": "skipped",
+        "reason": "Small admin feature for business plans, one source only."
+      },
+      {
+        "story": "Smugglers bundle banned HBM memory with junk chips to reach China",
+        "source": "https://wccftech.com/smugglers-hbm-throwaway-server-chips-us-export-controls-loophole-china-south-korea/",
+        "decision": "skipped",
+        "reason": "Single secondary report and the last slot is reserved for the utility post."
+      },
+      {
+        "story": "Google DeepMind staff push back on contract terms limiting criticism",
+        "source": "https://www.washingtonpost.com/technology/2026/11/03/google-deepmind-staff-protest-lifetime-ban-criticizing-company/",
+        "decision": "skipped",
+        "reason": "Paywalled report with no second source I could read, same as earlier runs."
+      },
+      {
+        "story": "Anthropic FlashProve, cryptographic proof of which model wrote a reply",
+        "source": "https://www.anthropic.com/research/provable-inference",
+        "decision": "skipped",
+        "reason": "Technical research prototype, skipped in earlier runs for the same reason."
+      },
+      {
+        "story": "Apple opens Siri AI to every app",
+        "decision": "covered",
+        "reason": "Already queued as 2026-11-04-apple-opens-siri-ai-every-app."
+      },
+      {
+        "story": "OpenAI brings in Cathedral, the startup that probed Anthropic",
+        "decision": "covered",
+        "reason": "Already queued as 2026-11-04-openai-hires-firm-that-hacked-anthropic."
+      },
+      {
+        "story": "Netflix AI Discover mood tab",
+        "decision": "covered",
+        "reason": "Already queued as 2026-11-04-netflix-ai-discover-mood-tab."
       }
     ],
     "requests": []
