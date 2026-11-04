@@ -1,67 +1,5 @@
 [
   {
-    "run_at": "2026-10-28T16:00:48.276Z",
-    "summary": "No new jobs: Oct 28 already has 8 jobs (the daily cap); no open links or requests. Logged the new stories seen.",
-    "considered": [
-      {
-        "story": "Apple adds an AI assistant to Pages, Keynote and Numbers, plus MCP support for agents in macOS 27",
-        "source": "https://www.theverge.com/tech/1019373/apple-pages-keynote-numbers-ai-chatbot-update",
-        "decision": "skipped",
-        "reason": "Oct 28 is at the 8-job cap, and I could not open the Verge report or find a second fresh source to confirm the details in this run."
-      },
-      {
-        "story": "OpenAI and Oracle bring Oracle apps into ChatGPT",
-        "source": "https://openai.com/index/oracle-apps-in-chatgpt/",
-        "decision": "skipped",
-        "reason": "Enterprise integration with little consumer appeal, and the day is at the cap."
-      },
-      {
-        "story": "Netherlands plans to cut 25,000 government jobs with AI savings",
-        "source": "https://www.semafor.com/article/10/27/2026/netherlands-to-slash-state-jobs-as-part-of-ai-related-savings",
-        "decision": "skipped",
-        "reason": "Layoff story outside the US, and the day is at the cap."
-      },
-      {
-        "story": "Anthropic warns power delays could slow its $400 billion buildout",
-        "source": "https://www.semafor.com/article/10/27/2026/anthropic-says-energy-difficulties-could-slow-down-the-ai-buildout",
-        "decision": "skipped",
-        "reason": "Comes from S-1 risk language with no new event, and the day is at the cap."
-      },
-      {
-        "story": "Anthropic and Theorem use Claude for machine-checkable security proofs",
-        "source": "https://www.theneuron.ai/news/anthropic-claude-software-security-verification/",
-        "decision": "skipped",
-        "reason": "Close to the Anthropic security and math proof posts already queued today."
-      },
-      {
-        "story": "Trump says the government will drop the term AI for Super Intelligence",
-        "decision": "skipped",
-        "reason": "Political, scope unclear, and the day is at the cap."
-      },
-      {
-        "story": "Anthropic expands GSA deal to state and local governments",
-        "decision": "skipped",
-        "reason": "Already skipped in an earlier run as a government procurement story."
-      },
-      {
-        "story": "OpenAI plans to buy Google TPU chips",
-        "decision": "covered",
-        "reason": "Already posted as 2026-10-28-openai-buying-google-tpu-chips."
-      },
-      {
-        "story": "Axiom AI agents computer-check the Classification of Finite Simple Groups",
-        "decision": "covered",
-        "reason": "Already queued as 2026-10-28-ai-agents-checked-biggest-math-proof."
-      },
-      {
-        "story": "Daily utility post for Oct 28",
-        "decision": "skipped",
-        "reason": "Oct 28 is at the 8-job cap."
-      }
-    ],
-    "requests": []
-  },
-  {
     "run_at": "2026-10-28T17:54:13.854Z",
     "summary": "No new jobs: Oct 28 (New York) already has 8 jobs, the daily cap, and no new priority 1 launch appeared; no open links (the 4 old ones are in skipped.json) and the only open request already failed (not retried).",
     "considered": [
@@ -5110,6 +5048,59 @@
         "story": "OpenAI says ChatGPT search volume is about 20 percent of Google's",
         "decision": "covered",
         "reason": "Already queued as 2026-11-04-chatgpt-one-fifth-google-search."
+      }
+    ],
+    "requests": []
+  },
+  {
+    "run_at": "2026-11-04T17:02:12.825Z",
+    "summary": "12:00 New York run: no open links or requests; queued the daily utility post and website guide (Microsoft Copilot in Windows, Edge and Office). November 4 now has 8 desk jobs, the daily cap.",
+    "considered": [
+      {
+        "story": "Utility: Microsoft Copilot in Windows, Edge, Word and Excel, with 5 prompts (next line in guides/plan.md)",
+        "source": "https://support.microsoft.com/windows/welcome-to-copilot-on-windows-675708af-8c16-4675-afeb-85a5a476ccb0",
+        "decision": "queued",
+        "job_id": "2026-11-04-microsoft-copilot-windows-edge-office-guide",
+        "priority": 2
+      },
+      {
+        "story": "Anthropic restricts Claude Code from cloning existing video games",
+        "source": "https://the-decoder.com/anthropic-cracks-down-on-game-cloning-in-claude-code-after-wave-of-ai-built-knockoffs/",
+        "decision": "skipped",
+        "reason": "Daily cap of 8 reached with the utility post, and it is a smaller policy tweak than today's queued Anthropic and OpenAI stories."
+      },
+      {
+        "story": "AI agents now run SETI's Allen Telescope Array",
+        "source": "https://the-decoder.com/ai-agents-take-over-at-setis-allen-telescope-array-scanning-for-extraterrestrial-intelligence/",
+        "decision": "skipped",
+        "reason": "Interesting but not priority 1, and today is at the 8 job cap."
+      },
+      {
+        "story": "Revolut cuts AI coding costs about 90 percent by self-hosting instead of Claude",
+        "source": "https://www.theregister.com/ai-and-ml/2026/11/03/british-fintech-revolut-slashes-ai-coding-costs-10x-by-cutting-out-claude-and-going-self-hosted/5307345",
+        "decision": "skipped",
+        "reason": "Single-source enterprise story with limited US consumer interest; daily cap reached."
+      },
+      {
+        "story": "Isomorphic Labs says AI could design every medicine, human trials next",
+        "source": "https://www.theneuron.ai/news/isomorphic-labs-ai-drug-design-human-trials/",
+        "decision": "skipped",
+        "reason": "No fresh primary news found in this run and the daily cap is reached."
+      },
+      {
+        "story": "OpenAI says GPT-6 Astra helped design a device for Codex",
+        "decision": "covered",
+        "reason": "Already queued as 2026-11-04-openai-astra-built-device-one-week."
+      },
+      {
+        "story": "Apple warns AI agents could act beyond their permissions",
+        "decision": "covered",
+        "reason": "Already queued as 2026-11-04-apple-warns-ai-agents-act-without-permission."
+      },
+      {
+        "story": "Google cuts off Search for schools that reject AI",
+        "decision": "covered",
+        "reason": "Already covered as 2026-11-03-google-schools-no-ai-no-search."
       }
     ],
     "requests": []

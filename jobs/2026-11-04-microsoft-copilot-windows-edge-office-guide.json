@@ -1,0 +1,327 @@
+{
+  "id": "2026-11-04-microsoft-copilot-windows-edge-office-guide",
+  "format": "utility",
+  "created_at": "2026-11-04T17:20:00Z",
+  "story_time": "2026-11-04T17:00:00Z",
+  "timely": false,
+  "sensitive": false,
+  "priority": 2,
+  "review": true,
+  "sources": [
+    {
+      "name": "Microsoft Support: Welcome to Copilot on Windows",
+      "url": "https://support.microsoft.com/windows/welcome-to-copilot-on-windows-675708af-8c16-4675-afeb-85a5a476ccb0"
+    },
+    {
+      "name": "Microsoft Support: Using Copilot Vision with Microsoft Copilot",
+      "url": "https://support.microsoft.com/en-us/microsoft-copilot/using-copilot-vision-with-microsoft-copilot"
+    },
+    {
+      "name": "Microsoft Edge: Copilot in Edge",
+      "url": "https://explore.microsoft.com/edge/copilot-mode"
+    },
+    {
+      "name": "Microsoft Support: Welcome to Copilot in Word",
+      "url": "https://support.microsoft.com/en-us/word/welcome-to-copilot-in-word"
+    },
+    {
+      "name": "Microsoft Support: Get started with Copilot in Excel",
+      "url": "https://support.microsoft.com/office/d7110502-0334-4b4f-a175-a73abdfc118a"
+    },
+    {
+      "name": "Microsoft: Microsoft 365 Copilot for individuals",
+      "url": "https://www.microsoft.com/en-us/copilot/solutions/individuals"
+    },
+    {
+      "name": "Windows Central",
+      "url": "https://www.windowscentral.com/microsoft/windows-11/how-to-get-started-with-microsoft-copilot-on-windows-11"
+    },
+    {
+      "name": "Engadget via AITopics",
+      "url": "https://aitopics.org/doc/news:13A93855"
+    }
+  ],
+  "caption": "Copilot comes installed on new Windows 11 PCs, and it does more than answer questions.\nIt can search your files, look at your screen, compare your Edge tabs and work inside Word and Excel.\nSome tricks are free, others need a Microsoft 365 plan.\n\nWhich one would you actually use?\n\nFollow @neurafeed.ai for daily AI news.\n\nSource: Microsoft Support, Windows Central",
+  "threads_text": "Copilot on Windows can search the files on your PC and look at an app on your screen, and Copilot in Edge compares all your open tabs for free. Word and Excel need a Microsoft 365 plan. Do you actually use Copilot, or ignore the button?",
+  "slides": [
+    {
+      "kind": "cover",
+      "headline": "The Copilot button on your PC does way more than chat. Here are *5 tricks* to try",
+      "image": {
+        "url": "https://cdn.geekwire.com/wp-content/uploads/2025/10/microsoft-sign-logo-1260x804.jpg",
+        "credit": "GeekWire",
+        "fallback_urls": [
+          "https://media.thenextweb.com/2026/10/microsoft-logo-office-building.jpg"
+        ],
+        "generate": "A busy office worker in a wrinkled blue shirt sits at a cluttered desk in a crowded open plan office late in the afternoon, leaning back in his chair with a surprised, relieved grin, looking at a laptop whose screen is blank and softly lit. Surreal touch: stacks of paper documents, spreadsheets and folders on the desk are lifting into the air on their own and sorting themselves into neat piles beside the laptop. On the wall behind him, the logo from the first image is painted big and exact in its four colors. Harsh fluorescent ceiling light mixed with window daylight, coffee cups, tangled cables, coworkers blurred in the background. Blank surfaces, no readable text or labels on any object, paper or screen. Generous headroom above his head. The man and the floating papers fill the upper two thirds of the frame, the bottom third is the messy desk. Photorealistic, high contrast, vertical composition, one clear subject, no letters, no watermarks. It must look like an unedited real photo from a news agency, not a painting, not digital art, no glow effects.",
+        "refs": [
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Microsoft_logo.svg/500px-Microsoft_logo.svg.png"
+        ]
+      },
+      "pos": "center 30%",
+      "badges": [
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Microsoft_logo.svg/500px-Microsoft_logo.svg.png",
+          "fit": "contain"
+        }
+      ],
+      "badge_side": "right",
+      "badge_border": "white"
+    },
+    {
+      "kind": "prompt",
+      "heading": "1. Ask about *your files*",
+      "paras": [
+        "Copilot on Windows can find, open and answer questions about files on your PC, including synced OneDrive files. Turn on File Search and File Read in its settings first.",
+        "It reads Word, Excel, PowerPoint, PDF, text and JSON files."
+      ],
+      "prompt": "Find the PDF I saved about [topic] and give me the 3 main points, plus any dates or deadlines in it."
+    },
+    {
+      "kind": "prompt",
+      "heading": "2. Let it *see your screen*",
+      "paras": [
+        "Start a voice chat with Win+C or the Copilot key, then select the screen share arrow. Copilot Vision looks at the app you share.",
+        "It can point things out, but it cannot click or type for you."
+      ],
+      "prompt": "I'm stuck in this app. Walk me through how to [task], one step at a time, and point to what I should click."
+    },
+    {
+      "kind": "prompt",
+      "heading": "3. Compare *your open tabs*",
+      "paras": [
+        "Copilot in Edge is free and can read across your open tabs. Click the Copilot icon in the top right of Edge.",
+        "Great for products, hotels or news on the same topic."
+      ],
+      "prompt": "Compare the open tabs and make a table of [product] options by price, [feature 1] and [feature 2]. Tell me which one fits [my need]."
+    },
+    {
+      "kind": "prompt",
+      "heading": "4. Fix a *Word* document",
+      "paras": [
+        "In Word, select the Copilot button in the corner of the document. Pick Chat only if you do not want it to change the file.",
+        "It needs a Microsoft 365 plan with Copilot."
+      ],
+      "prompt": "Summarize this document in five bullets. Then list the decisions still needed before it is ready to share."
+    },
+    {
+      "kind": "prompt",
+      "heading": "5. Ask *Excel* for the story",
+      "paras": [
+        "Select the Copilot icon in the lower right of Excel. Plan mode shows what it will do before it changes anything.",
+        "It can build formulas, charts and PivotTables."
+      ],
+      "prompt": "Look at this data and tell me the 3 biggest trends and any outliers. Then make a chart of [column] by month."
+    },
+    {
+      "kind": "cta",
+      "hook": "Save this for the next time Copilot pops up on your screen, and follow for AI tricks that save you time."
+    }
+  ],
+  "site_article": {
+    "kind": "guide",
+    "headline": "Microsoft Copilot: what it does in Windows, Edge and Office, and how to use it",
+    "dek": "How to open Copilot, search your own files, share your screen with Vision, compare Edge tabs, and use it in Word and Excel, with five prompts to copy.",
+    "summary": "Microsoft Copilot is built into Windows 11, Edge and the Microsoft 365 apps, and each version does something different. Here is how to open each one, which parts are free, which need a Microsoft 365 plan, and where it falls short.",
+    "seo_title": "Microsoft Copilot Guide: Windows, Edge, Word and Excel",
+    "seo_description": "How to use Microsoft Copilot in Windows, Edge, Word and Excel: shortcuts, file search, Vision, tab comparison, plans and five prompts to copy.",
+    "answer_summary": "Press Windows key + C to open Copilot on Windows, click the Copilot icon in Edge to compare open tabs for free, and use the Copilot button in Word or Excel with a Microsoft 365 Personal, Family or Premium plan.",
+    "tags": [
+      "Microsoft Copilot",
+      "Windows 11",
+      "Microsoft Edge",
+      "Microsoft 365",
+      "AI guides"
+    ],
+    "hero_alt": "An office worker at a cluttered desk smiling at a laptop as papers float into neat piles, with the Microsoft logo on the wall.",
+    "paragraphs": [
+      {
+        "kind": "fact",
+        "text": "Microsoft Copilot is not one product. It is the AI assistant in Windows, the sidebar in Microsoft Edge, and a chat pane inside Word, Excel, PowerPoint and Outlook. Some of it is free with a Microsoft account, and some of it needs a paid Microsoft 365 plan. This guide covers what each version does, how to open it, and five prompts worth trying, based on Microsoft's own support pages.",
+        "sources": [
+          0,
+          2,
+          5
+        ]
+      },
+      {
+        "kind": "heading",
+        "text": "Copilot on Windows"
+      },
+      {
+        "kind": "fact",
+        "text": "On Windows 11, Copilot is an app. Microsoft says new Windows 11 PCs should already have it, and if yours does not, you can get it from the Microsoft Store. You can sign in with a personal Microsoft account or a work or school account. A personal account adds chat history, image creation, longer conversations and voice.",
+        "sources": [
+          0
+        ]
+      },
+      {
+        "kind": "step",
+        "title": "1. Open it",
+        "text": "Press the Copilot key if your keyboard has one, or press Windows key + C. You can also open it from the taskbar or the Start menu. Microsoft lets you choose whether the shortcut opens the full app or a smaller quick view, under Account, then Settings, then Copilot Keyboard Shortcuts."
+      },
+      {
+        "kind": "step",
+        "title": "2. Turn on voice if you want it",
+        "text": "Copilot can listen for the wake word \"Hey, Copilot\". It is off until you turn it on. Windows Central notes you can interrupt Copilot while it is talking and pick a different voice."
+      },
+      {
+        "kind": "fact",
+        "text": "Copilot needs an internet connection. Windows Central points out that it runs on models in Microsoft's cloud, not on your PC.",
+        "sources": [
+          6
+        ]
+      },
+      {
+        "kind": "heading",
+        "text": "Search and read your own files"
+      },
+      {
+        "kind": "fact",
+        "text": "Copilot on Windows can find files on your PC, open them and answer questions about them, including files synced from OneDrive. It reads .docx, .xlsx, .pptx, .txt, .pdf and .json files. Two switches control this: File Search and File Read, under Account and then Settings in the Copilot app.",
+        "sources": [
+          0
+        ]
+      },
+      {
+        "kind": "step",
+        "title": "3. Give it access, then ask in plain words",
+        "text": "Turn on File Search and File Read. Then describe the file the way you remember it: the topic, roughly when you saved it, what kind of file it was. You do not need the exact file name."
+      },
+      {
+        "kind": "prompt",
+        "title": "Prompt 1: Find a file and pull out what matters",
+        "text": "Find the PDF I saved about [topic] and give me the 3 main points, plus any dates or deadlines in it."
+      },
+      {
+        "kind": "tip",
+        "text": "If you only want to ask about part of the screen, use the Copilot composer: select the plus button, then Take a Screenshot, mark the area and ask your question."
+      },
+      {
+        "kind": "heading",
+        "text": "Copilot Vision: help with what is on your screen"
+      },
+      {
+        "kind": "fact",
+        "text": "Copilot Vision lets Copilot see an app or browser window you share, or your phone camera in the Copilot mobile app, and answer questions about it. It only works during a voice conversation. On a PC, start voice chat with the Copilot key or Windows key + C, then select the screen share arrow. To end it, select Stop sharing. The voice chat keeps going.",
+        "sources": [
+          1
+        ]
+      },
+      {
+        "kind": "fact",
+        "text": "Vision can explain what you are looking at and highlight parts of the screen. It cannot click, type, scroll or do anything for you. Each Vision session also starts fresh, so Copilot does not remember the screens you shared earlier. For a personal account, Microsoft's support page lists a Microsoft 365 Personal, Family or Premium subscription as a requirement.",
+        "sources": [
+          1
+        ]
+      },
+      {
+        "kind": "prompt",
+        "title": "Prompt 2: Get unstuck in an app",
+        "text": "I'm stuck in this app. Walk me through how to [task], one step at a time, and point to what I should click."
+      },
+      {
+        "kind": "tip",
+        "text": "Keep the app you are asking about on screen and do not switch windows quickly. Microsoft says that gives better answers. Windows Central's tester found Vision not very accurate, so treat it as a guide, not an authority."
+      },
+      {
+        "kind": "heading",
+        "text": "Copilot in Microsoft Edge"
+      },
+      {
+        "kind": "fact",
+        "text": "In Edge, Copilot lives in a side pane. Click the Copilot icon in the top right of the browser window to open it. Microsoft says Copilot in Edge is free, and a Microsoft 365 subscription raises the usage limits.",
+        "sources": [
+          2
+        ]
+      },
+      {
+        "kind": "fact",
+        "text": "Its most useful trick is reading across your open tabs. It can compare information from several pages, summarize a page, and summarize a YouTube video with key takeaways. Engadget reported in May 2026 that Microsoft retired the separate Copilot Mode because these features are now built into Edge itself, on desktop and mobile.",
+        "sources": [
+          2,
+          7
+        ]
+      },
+      {
+        "kind": "step",
+        "title": "4. Open the pages first, then ask",
+        "text": "Open two or more tabs on the same subject, such as three laptops, three hotels or three articles about the same story. Then ask Copilot to compare them."
+      },
+      {
+        "kind": "prompt",
+        "title": "Prompt 3: Compare your tabs",
+        "text": "Compare the open tabs and make a table of [product] options by price, [feature 1] and [feature 2]. Tell me which one fits [my need]."
+      },
+      {
+        "kind": "fact",
+        "text": "Edge also has Journeys, which groups related pages, searches and chats so you can come back to a project later with one click. It is switched on from the new tab page. Microsoft says memory and similar features are optional and can be turned off.",
+        "sources": [
+          2
+        ]
+      },
+      {
+        "kind": "tip",
+        "text": "Journeys stores page titles, web addresses, searches and chats to group your history. Windows Central flags that as a privacy question. Turn it off if you share the computer."
+      },
+      {
+        "kind": "heading",
+        "text": "Copilot in Word and Excel"
+      },
+      {
+        "kind": "fact",
+        "text": "Copilot inside the Office apps needs a paid plan. On Microsoft's plans page, Microsoft 365 Personal costs $9.99 a month and Family $12.99 a month, with Premium at $19.99 for heavier use. On the Family plan, the AI features are only for the subscription owner, not the other members.",
+        "sources": [
+          5
+        ]
+      },
+      {
+        "kind": "fact",
+        "text": "In Word, select the Copilot button in the corner of a document to open the chat pane. Copilot can draft from a prompt or notes, rewrite selected text, change the tone, summarize the document and answer questions about it. Choose Chat only when you want answers without any edits to the file. Microsoft notes that Copilot supports fewer languages than Word itself.",
+        "sources": [
+          3
+        ]
+      },
+      {
+        "kind": "prompt",
+        "title": "Prompt 4: Check a document before you send it",
+        "text": "Summarize this document in five bullets. Then list the decisions still needed before it is ready to share."
+      },
+      {
+        "kind": "fact",
+        "text": "In Excel, select the Copilot icon in the lower right corner. It has three modes. Allow editing lets it change the workbook directly. Plan shows the steps it will take so you can confirm first. Chat only analyzes the data and answers questions without touching the file. It can write formulas, build charts and PivotTables, sort and filter, and point out trends and outliers.",
+        "sources": [
+          4
+        ]
+      },
+      {
+        "kind": "prompt",
+        "title": "Prompt 5: Find the story in a spreadsheet",
+        "text": "Look at this data and tell me the 3 biggest trends and any outliers. Then make a chart of [column] by month."
+      },
+      {
+        "kind": "tip",
+        "text": "Use Plan mode the first few times. You see what Copilot intends to change before it touches your numbers. Microsoft's plans page also says Copilot in Excel needs AutoSave, which means the file has to be saved to OneDrive."
+      },
+      {
+        "kind": "fact",
+        "text": "Excel's full editing mode works on Windows, Mac and the web. On iPhone and Android, Copilot in Excel is chat first, according to Microsoft's support page.",
+        "sources": [
+          4
+        ]
+      },
+      {
+        "kind": "heading",
+        "text": "Where Copilot falls short"
+      },
+      {
+        "kind": "analysis",
+        "text": "Copilot is spread across too many places, and the free and paid versions do different things. That is the main source of confusion. Usage limits on every plan exist, but Microsoft does not publish exact numbers on its plans page. Vision can show you where to click but will not do the work. And like every AI assistant, Copilot makes mistakes, so check any number or summary before you rely on it."
+      },
+      {
+        "kind": "analysis",
+        "text": "The best place to start is the free part: Windows key + C for questions about your files, and the Edge side pane for comparing tabs. If those save you time every week, the paid Office features are worth a trial."
+      }
+    ]
+  }
+}
