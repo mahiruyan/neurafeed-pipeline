@@ -1,0 +1,103 @@
+{
+  "id": "2026-11-04-openai-astra-built-device-one-week",
+  "created_at": "2026-11-04T05:10:00Z",
+  "story_time": "2026-11-03T20:15:00Z",
+  "timely": false,
+  "sensitive": false,
+  "priority": 1,
+  "review": true,
+  "format": "carousel",
+  "site_category": "models",
+  "sources": [
+    { "name": "The Decoder", "url": "https://the-decoder.com/openai-says-gpt-6-astra-designed-a-hardware-device-from-scratch-in-under-a-week/" },
+    { "name": "Interesting Engineering", "url": "https://interestingengineering.com/ai-robotics/openai-gpt-6-hardware-design-prototype" }
+  ],
+  "caption": "OpenAI says two of its team members built a working hardware device in under a week, with GPT-6 and Astra doing the design.\nAstra drew the enclosure, picked the parts, laid out the circuit board and wrote the firmware.\nIt still needed several rounds of human review before a factory could build it.\n\nWould you buy a gadget designed entirely by AI?\n\nFollow @neurafeed.ai for daily AI news.\n\nSource: The Decoder, Interesting Engineering · Photo: Interesting Engineering",
+  "threads_text": "OpenAI says GPT-6 and Astra designed a working gadget in under a week: the case, the circuit board, the firmware and the interface. The catch: it took several rounds of human review before a factory could actually build it. Would you trust a device designed end to end by AI?",
+  "slides": [
+    {
+      "kind": "cover",
+      "headline": "OpenAI let its AI design a real gadget from scratch. It took *less than a week*",
+      "image": {
+        "url": "https://cms.interestingengineering.com/wp-content/uploads/2026/11/Untitled-design-83.jpg",
+        "credit": "Interesting Engineering",
+        "fallback_urls": [
+          "https://the-decoder.com/wp-content/uploads/2026/11/openai_ai_hardware.png"
+        ],
+        "generate": "A cluttered hardware lab bench under harsh fluorescent light. A small handheld electronic gadget with a blank screen sits in the center, its plastic shell half open, showing a green circuit board inside. Around it: soldering iron, loose screws, calipers, tangled wires, a 3D printed spare case. Behind the bench, the logo from the first image, big and exact, is printed on a paper banner taped to a concrete wall. Generous headroom above the gadget, the gadget fills the upper two thirds of the frame. Blank surfaces, no readable text or labels on any object, screen or paper. Photorealistic, high contrast, vertical composition, one clear subject, no letters, no watermarks. It must look like an unedited real photo from a news agency, not a painting, not digital art, no glow effects.",
+        "refs": ["assets/logos/openai.png"]
+      },
+      "badges": [{ "url": "assets/logos/openai.png", "fit": "contain" }],
+      "badge_side": "right"
+    },
+    {
+      "kind": "card",
+      "heading": "A side project with *no human edits*",
+      "paras": [
+        "Two OpenAI team members built a device that lets you talk to its Codex coding agent, in under a week.",
+        "The test: could OpenAI's models handle the whole hardware process without direct human edits?"
+      ],
+      "image": {
+        "url": "https://9to5mac.com/wp-content/uploads/sites/6/2026/09/chatgpt-codex-gpt-6-astra-1.webp?w=1600",
+        "credit": "9to5Mac",
+        "fallback_urls": ["https://techcrunch.com/wp-content/uploads/2026/08/GettyImages-2283113936-maller.jpg?w=1024"]
+      }
+    },
+    {
+      "kind": "card",
+      "heading": "Astra drew *every layer*",
+      "paras": [
+        "GPT-6 set the requirements. Astra designed the case, picked the electrical parts and laid out the circuit board.",
+        { "t": "It also wrote the firmware, the interface and the Codex connection.", "strong": true }
+      ],
+      "image": {
+        "url": "https://the-decoder.com/wp-content/uploads/2026/11/openai_ai_hardware.png",
+        "credit": "The Decoder",
+        "fallback_urls": []
+      }
+    },
+    {
+      "kind": "card",
+      "heading": "Where humans *still mattered*",
+      "paras": [
+        "Astra missed factory limits and part tolerances, so engineers needed several review rounds.",
+        "A contract manufacturer then built a small batch in under a month. Hardware teams' token use is up 23x since February."
+      ],
+      "image": {
+        "url": "https://techcrunch.com/wp-content/uploads/2026/09/openai-getty.jpg?resize=1200,800",
+        "credit": "Samuel Boivin / NurPhoto / Getty Images",
+        "fallback_urls": []
+      }
+    },
+    {
+      "kind": "cta",
+      "hook": "AI just went from writing code to designing the gadget itself. Follow to see what it builds next."
+    }
+  ],
+  "site_article": {
+    "headline": "OpenAI says GPT-6 and Astra designed a working hardware device in under a week",
+    "dek": "Two employees used the models to design the case, circuit board and firmware of a Codex device, though manufacturing still needed human review.",
+    "summary": "OpenAI says two team members used GPT-6 and Astra to design a working device for talking to Codex in under a week. The company also said hardware teams' token use rose 23 times since February.",
+    "seo_title": "OpenAI: GPT-6 and Astra designed a hardware device in a week",
+    "seo_description": "OpenAI says GPT-6 and Astra designed the enclosure, circuit board and firmware of a Codex device in under a week, with human review for manufacturing.",
+    "answer_summary": "According to OpenAI, Astra designed the enclosure, circuit board, firmware and interface of a small device for talking to Codex in under a week, but engineers had to fix manufacturing issues before a factory could build it.",
+    "tags": ["OpenAI", "GPT-6", "Astra", "Codex", "Hardware design", "CAD"],
+    "hero_alt": "A small hardware device made by OpenAI, shown in a product photo.",
+    "paragraphs": [
+      { "kind": "fact", "text": "OpenAI says two members of its hardware team used GPT-6 and its Astra model to design a working hardware device in under a week. The company described the project on November 3, 2026, in a post about using ChatGPT and Codex for physical engineering, according to The Decoder and Interesting Engineering.", "sources": [0, 1] },
+      { "kind": "fact", "text": "The device gives users a dedicated physical way to talk to Codex, OpenAI's coding agent. It was built as a side project, and the goal was to see whether the models could carry the full hardware development process without direct human edits, Interesting Engineering reported.", "sources": [0, 1] },
+      { "kind": "heading", "text": "What the models designed" },
+      { "kind": "fact", "text": "According to the reports, GPT-6 set the functional requirements and guided the design. Astra then designed the enclosure, chose the electrical components and laid out the printed circuit board, including where parts sit and how they connect, so that the board fit the case.", "sources": [0, 1] },
+      { "kind": "fact", "text": "Astra also produced the firmware, the user interface and the software that connects the device to Codex, OpenAI said. The Decoder summarized the claim as Astra handling every step from enclosure to interface.", "sources": [0, 1] },
+      { "kind": "heading", "text": "Where people still had to step in" },
+      { "kind": "fact", "text": "OpenAI acknowledged limits. Astra did not always account for manufacturing constraints, component tolerances and assembly details, so engineers went through several rounds of review and revision before production. A contract manufacturer, which was not named, then produced a small batch of prototypes in less than a month.", "sources": [0, 1] },
+      { "kind": "fact", "text": "The claims come from OpenAI's own account. The Decoder noted that no independent verification of the project has been published.", "sources": [0] },
+      { "kind": "heading", "text": "Wider use inside OpenAI and with partners" },
+      { "kind": "fact", "text": "OpenAI said its hardware teams already use Codex and ChatGPT to create CAD models, manufacturing drawings and simulations for robotics and computing infrastructure. Token use for that work grew 23 times between February and October 2026, according to the company. Grace Lam, a forward deployed engineer at OpenAI, said Codex speeds up CAD revisions and the conversion of 3D designs into production drawings, Interesting Engineering reported.", "sources": [0, 1] },
+      { "kind": "fact", "text": "On BenchCAD 2.0, a test of whether models can rebuild 3D parts and assemblies and identify connections on circuit boards, GPT-6 Astra at its highest reasoning setting scored 0.594. A newer internal model that OpenAI has not described scored 0.875. The company called the results early evidence rather than proof of mature capability.", "sources": [0, 1] },
+      { "kind": "fact", "text": "OpenAI also named two outside collaborators. Engineers at Chip Ganassi Racing are turning 3D scans of parts into editable CAD models and 2D manufacturing drawings, which can help when original design files are missing. Mazda is working with OpenAI on research into vehicle aerodynamics and crash safety, where Astra explores nose shapes and simulates airflow before Mazda engineers judge the designs against styling and cost.", "sources": [1] },
+      { "kind": "analysis", "text": "The project shows how far AI models have moved from writing code toward producing the files that physical products are built from. The repeated review rounds point to the hard part that remains: a design that works on screen still has to survive real tolerances, assembly steps and factory limits, and that knowledge still sits with human engineers." },
+      { "kind": "why_it_matters", "text": "The next signal to watch is whether OpenAI releases the internal model behind the higher BenchCAD score, and whether partners such as Mazda report results from the aerodynamics work." }
+    ]
+  }
+}

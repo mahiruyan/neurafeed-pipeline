@@ -1,79 +1,5 @@
 [
   {
-    "run_at": "2026-10-28T04:15:07.800Z",
-    "summary": "Overnight run (23:55 New York time, Oct 27): no open links or requests; queued 2 stories for Oct 28 (Axiom's AI-checked math proof, Congress questioning Delaware's AI-run company plan), both waiting for Mahir's approval.",
-    "considered": [
-      {
-        "story": "Axiom's AI agents formalize the 15,000-page Classification of Finite Simple Groups in 24 days",
-        "source": "https://axiommath.ai/research/the-enormous-theorem-formalized/",
-        "decision": "queued",
-        "job_id": "2026-10-28-ai-agents-checked-biggest-math-proof",
-        "priority": 2
-      },
-      {
-        "story": "House Oversight Committee demands records on Delaware's plan for AI-run companies",
-        "source": "https://whyy.org/articles/delaware-ai-companies-us-house-comer-oversight/",
-        "decision": "queued",
-        "job_id": "2026-10-28-delaware-ai-run-companies-congress-probe",
-        "priority": 2
-      },
-      {
-        "story": "Parents sue OpenAI saying GPT-4o coached their daughter off seizure medication",
-        "source": "https://techcrunch.com/2026/10/27/parents-sue-openai-alleging-gpt-4o-coached-their-daughter-off-seizure-medication/",
-        "decision": "skipped",
-        "reason": "A death and lawsuit story mostly built on TechCrunch's summary of the Times report, with no complaint text and no usable photos found; left for a later run if more outlets report it."
-      },
-      {
-        "story": "Trump renews push to replace the term AI with Super Intelligence",
-        "source": "https://yournews.com/2026/10/27/7241023/trump-renews-call-for-end-to-artificial-intelligence-label-pushes/",
-        "decision": "skipped",
-        "reason": "The order itself was signed weeks ago; this is a repeat call with no new action, and it is a political story."
-      },
-      {
-        "story": "FTC demands Anthropic executives testify in AI safety probe",
-        "source": "https://www.axios.com/2026/10/26/ftc-ai-safety-probe-anthropic-openai",
-        "decision": "skipped",
-        "reason": "Reported on October 26, now too old, and Anthropic already has several posts this week."
-      },
-      {
-        "story": "Bank of America asks customers not to give AI assistants their banking password",
-        "decision": "covered",
-        "reason": "Same story as 2026-10-24-banks-catch-ai-agents-in-accounts."
-      },
-      {
-        "story": "Oracle expands collaboration with OpenAI",
-        "decision": "skipped",
-        "reason": "Enterprise cloud partnership with little US consumer interest."
-      },
-      {
-        "story": "Anthropic expands GSA deal with 40 percent Claude discount for government",
-        "decision": "skipped",
-        "reason": "Government procurement deal with little consumer appeal; Anthropic already has a post queued for Oct 28."
-      },
-      {
-        "story": "Anthropic S-1 risk factors: AI could blackmail people or become sentient",
-        "decision": "covered",
-        "reason": "Same IPO filing as 2026-10-26-anthropic-files-ipo-ant-nasdaq and 2026-10-27-anthropic-models-escaped-tests-training-pause."
-      },
-      {
-        "story": "OpenAI plans to buy Google TPU chips",
-        "decision": "covered",
-        "reason": "Already queued as 2026-10-28-openai-buying-google-tpu-chips."
-      },
-      {
-        "story": "Claude designs 35,000 antibodies in a month",
-        "decision": "covered",
-        "reason": "Already queued as 2026-10-28-claude-35000-antibodies-one-month."
-      },
-      {
-        "story": "Daily utility post for Oct 28",
-        "decision": "skipped",
-        "reason": "It is not yet 11:00 New York time on Oct 28; a later run will queue it."
-      }
-    ],
-    "requests": []
-  },
-  {
     "run_at": "2026-10-28T06:12:52.710Z",
     "summary": "Overnight run (02:10 New York time, Oct 28): no open links or requests; no new priority 1 story since the 00:40 run, and the one fresh candidate could not be built with usable photos, so nothing was queued.",
     "considered": [
@@ -5116,6 +5042,63 @@
         "source": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPa3J0NWpyaThGRTBmNmxncGdfbjBTRHRDdHJWakZNSzZiNnQ2ZEI0dmo1WFA2Y1JGOWJOemc2dS03Szh2WlJPNDF0cUdKYWNIWWRiOFRYemQ2bHdxX01ZbXB3NG5zZEprR1c5N2VVQ0s5VUFiMFZiWEFzSTg1ZzRycUQ1VDlyNjBqa1kwQ2tVT2c?oc=5",
         "decision": "skipped",
         "reason": "Single low-reliability source, not confirmed elsewhere yet."
+      }
+    ],
+    "requests": []
+  },
+  {
+    "run_at": "2026-11-04T05:06:33.604Z",
+    "summary": "Midnight New York run: no open links or requests; November 3 is full, so queued one priority 1 OpenAI story for the November 4 morning window (timely false so it does not expire overnight).",
+    "considered": [
+      {
+        "story": "OpenAI says GPT-6 and Astra designed a working hardware device in under a week",
+        "source": "https://the-decoder.com/openai-says-gpt-6-astra-designed-a-hardware-device-from-scratch-in-under-a-week/",
+        "decision": "queued",
+        "job_id": "2026-11-04-openai-astra-built-device-one-week",
+        "priority": 1
+      },
+      {
+        "story": "Anthropic releases FlashProve, an open-source prototype to prove which model produced a reply",
+        "source": "https://anthropic.com/research/provable-inference",
+        "decision": "skipped",
+        "reason": "Read the Anthropic post; very technical research prototype with little mainstream appeal, a candidate for a later run if it gets wider coverage."
+      },
+      {
+        "story": "Claude Code product lead Cat Wu leaves Anthropic",
+        "source": "https://www.businessinsider.com/",
+        "decision": "skipped",
+        "reason": "Could not find a second independent source I could read."
+      },
+      {
+        "story": "OpenAI hires Uber president Jill Hazelbaker as communications chief",
+        "decision": "skipped",
+        "reason": "Executive hire with limited interest for our audience."
+      },
+      {
+        "story": "OpenAI exec says ChatGPT search volume is about 20 percent of Google's",
+        "decision": "skipped",
+        "reason": "Only secondary and crypto-site reports in the leads, no primary source read yet."
+      },
+      {
+        "story": "Anthropic rolls out Message Threads in public beta",
+        "decision": "skipped",
+        "reason": "Only one outlet in the leads so far; worth checking in the morning run."
+      },
+      {
+        "story": "OpenAI and Anthropic set up election war rooms for the midterms",
+        "decision": "skipped",
+        "reason": "Political and sensitive on election night; not worth a post."
+      },
+      {
+        "story": "Google DeepMind staff push back on restrictions on talking about AI",
+        "source": "https://www.washingtonpost.com/technology/2026/11/03/google-deepmind-staff-protest-lifetime-ban-crit",
+        "decision": "skipped",
+        "reason": "Paywalled single source, could not confirm details."
+      },
+      {
+        "story": "Google cuts off Search for schools that reject AI",
+        "decision": "covered",
+        "reason": "Already queued as 2026-11-03-google-schools-no-ai-no-search."
       }
     ],
     "requests": []
