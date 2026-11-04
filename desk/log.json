@@ -1,77 +1,5 @@
 [
   {
-    "run_at": "2026-10-28T10:11:42.762Z",
-    "summary": "Early run (05:55 New York time, Oct 28): no open links or requests; queued 1 story (Anthropic study where analysts followed Claude's coin-flip preference 86% of the time), waiting for Mahir's approval. Oct 28 now has 6 jobs.",
-    "considered": [
-      {
-        "story": "Anthropic study: analysts matched Claude's secretly assigned, coin-flip preference 86% of the time",
-        "source": "https://www.anthropic.com/research/agents-judgment-calls",
-        "decision": "queued",
-        "job_id": "2026-10-28-coin-flip-claude-experts-agreed-86-percent",
-        "priority": 2
-      },
-      {
-        "story": "Texas AG Ken Paxton sues OpenAI and Sam Altman over ChatGPT safety",
-        "source": "https://www.texastribune.org/2026/10/23/ken-paxton-chatgpt-openai-lawsuit-texas-attorney-general/",
-        "decision": "covered",
-        "reason": "Already covered as 2026-10-25-texas-sues-openai-block-chatgpt-kids."
-      },
-      {
-        "story": "Amazon winds down most Nova models and cuts its AGI group",
-        "source": "https://thenextweb.com/news/amazon-winds-down-nova-ai-models-frontier-model-research",
-        "decision": "skipped",
-        "reason": "The Futurism item resurfaces news first reported in July 2026, nothing new."
-      },
-      {
-        "story": "Fake ChatGPT and Claude installers used to drop a crypto miner (Check Point)",
-        "source": "https://blog.checkpoint.com/research/yoba-malware-abuses-signed-chatgpt-and-claude-binaries-to-target-ai-users",
-        "decision": "skipped",
-        "reason": "Good candidate, but kept the remaining Oct 28 slots for the utility post and daytime news; a later run can take it."
-      },
-      {
-        "story": "HP, Asus and Acer move some PC production back to China on AI cost hikes",
-        "decision": "skipped",
-        "reason": "Supply chain story with little AI news appeal for a US Instagram audience."
-      },
-      {
-        "story": "Mistral opens Timestral time-series models",
-        "decision": "skipped",
-        "reason": "Niche developer release."
-      },
-      {
-        "story": "Parents sue OpenAI saying ChatGPT coached their daughter off seizure medication",
-        "decision": "skipped",
-        "reason": "Same decision as earlier runs: a death and health lawsuit still lacking solid sourcing readable from here."
-      },
-      {
-        "story": "Trump says he will ban the term artificial intelligence",
-        "decision": "skipped",
-        "reason": "Repeat political statement with no new action, skipped in earlier runs."
-      },
-      {
-        "story": "AI chips worth $12.1 million seized at Malaysia airport (Reuters)",
-        "decision": "skipped",
-        "reason": "Could not read the Reuters report from here, and a customs seizure has limited US interest."
-      },
-      {
-        "story": "Anthropic acquires Mithril and reports Claude drug development results",
-        "decision": "covered",
-        "reason": "Already queued as 2026-10-28-claude-35000-antibodies-one-month."
-      },
-      {
-        "story": "OpenAI plans to buy Google TPU chips",
-        "decision": "covered",
-        "reason": "Already queued as 2026-10-28-openai-buying-google-tpu-chips."
-      },
-      {
-        "story": "Daily utility post for Oct 28",
-        "decision": "skipped",
-        "reason": "It is not yet 11:00 New York time; a later run will queue it."
-      }
-    ],
-    "requests": []
-  },
-  {
     "run_at": "2026-10-28T12:04:50.219Z",
     "summary": "Morning run (07:56 New York time, Oct 28): no open links or requests; no new priority 1 story; queued 1 story (fake ChatGPT and Claude apps on GitHub hiding a crypto miner), waiting for Mahir's approval. Oct 28 now has 7 jobs, one slot kept for the utility post.",
     "considered": [
@@ -5098,6 +5026,83 @@
         "story": "India's cybersecurity agency gets access to Anthropic's Mythos model",
         "decision": "skipped",
         "reason": "Mostly an Indian government story with little US interest."
+      },
+      {
+        "story": "Google cuts off Search for schools that reject AI",
+        "decision": "covered",
+        "reason": "Already queued as 2026-11-03-google-schools-no-ai-no-search."
+      }
+    ],
+    "requests": []
+  },
+  {
+    "run_at": "2026-11-04T11:08:18.335Z",
+    "summary": "6:00 New York run: no open links or requests; queued 2 stories (Apple opens Siri AI to every app developer, priority 1; Netflix tests AI Discover mood tab, priority 2). November 4 now has 7 desk jobs; one slot left for the 11:00 utility post.",
+    "considered": [
+      {
+        "story": "Apple opens the Siri AI developer preview to all apps with app skills in the iOS 27.3 betas",
+        "source": "https://9to5mac.com/2026/11/03/developers-can-now-create-advanced-app-skills-for-siri-ai/",
+        "decision": "queued",
+        "job_id": "2026-11-04-apple-opens-siri-ai-every-app",
+        "priority": 1
+      },
+      {
+        "story": "Netflix tests AI Discover, a TV tab that recommends titles by mood",
+        "source": "https://techcrunch.com/2026/11/03/netflixs-new-ai-discover-tab-helps-you-find-something-to-watch-based-on-your-mood/",
+        "decision": "queued",
+        "job_id": "2026-11-04-netflix-ai-discover-mood-tab",
+        "priority": 2
+      },
+      {
+        "story": "OpenAI launches the Grid Protectors Program for data centers",
+        "decision": "skipped",
+        "reason": "Closely tied to the OpenAI data center rebrand already covered on November 2, and the last slot today is kept for the utility post."
+      },
+      {
+        "story": "Postman desktop silently installs plugins into Claude Code and Codex",
+        "source": "https://github.com/postmanlabs/postman-app-support/issues/14370",
+        "decision": "skipped",
+        "reason": "Only a GitHub issue and a news brief so far, no independent report I could read; possible later."
+      },
+      {
+        "story": "Steam review times stretch to 12 business days amid a flood of submissions",
+        "decision": "skipped",
+        "reason": "Gaming industry story whose AI link is implied rather than stated by Valve; daily cap is close."
+      },
+      {
+        "story": "Fan writers take down an AI built AO3 clone with 2,000 DMCA notices",
+        "decision": "skipped",
+        "reason": "Niche fandom story and the daily cap is close."
+      },
+      {
+        "story": "Meta ran hundreds of ads with AI manipulated child abuse imagery",
+        "decision": "skipped",
+        "reason": "Child abuse imagery is not a topic for our carousel format."
+      },
+      {
+        "story": "Nikkei: hidden AI debt at US tech giants swells to $3.2 trillion",
+        "decision": "skipped",
+        "reason": "Paywalled finance analysis I could not read in full."
+      },
+      {
+        "story": "CrowdStrike buys Fiddler AI and Dreadnode for about $495 million",
+        "decision": "skipped",
+        "reason": "Enterprise security deal with little appeal for a general audience."
+      },
+      {
+        "story": "Anthropic FlashProve, cryptographic proof of which model wrote a reply",
+        "decision": "skipped",
+        "reason": "Technical research prototype, skipped in earlier runs for the same reason."
+      },
+      {
+        "story": "Reuters: OpenAI employees warned about security lapses for years",
+        "decision": "skipped",
+        "reason": "Largely a rehash of earlier reporting; OpenAI security is already in today's queue."
+      },
+      {
+        "story": "OpenAI partners with Cathedral, the startup that probed Anthropic",
+        "decision": "covered",
+        "reason": "Already queued as 2026-11-04-openai-hires-firm-that-hacked-anthropic."
       },
       {
         "story": "Google cuts off Search for schools that reject AI",
