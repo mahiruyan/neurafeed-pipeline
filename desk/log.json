@@ -1,67 +1,5 @@
 [
   {
-    "run_at": "2026-10-29T08:07:01.786Z",
-    "summary": "Early run (4:00 New York, Oct 29): nothing new queued. No open links or requests; the overnight stories found were already covered or too old to post before they expire, and today already has 3 news posts plus Mahir's Reel waiting for approval.",
-    "considered": [
-      {
-        "story": "Samsung posts record Q3 operating profit of 107.4 trillion won on AI memory demand, HBM sold out for next year",
-        "source": "https://www.investing.com/news/stock-market-news/samsung-posts-record-profit-in-q3-on-ai-chip-boom-4981289",
-        "decision": "skipped",
-        "reason": "Reported around 23:00 UTC Oct 28, so a timely post would expire at the start of the first New York window, and the morning slots are already taken by priority 1 posts."
-      },
-      {
-        "story": "Reuters: Z.AI's GLM-5.3 completed 3 of 13 multi-stage cyberattack scenarios in Irregular's tests",
-        "source": "https://www.business-standard.com/technology/tech-news/chinese-ai-model-completes-complex-cyberattacks-in-tests-raises-concerns-126102900488_1.html",
-        "decision": "skipped",
-        "reason": "Only Reuters syndications found, no independent second source, and a very similar Reuters story on Chinese AI agents ran on Oct 27."
-      },
-      {
-        "story": "ChatGPT adds iCloud Mail and Calendar plugins on all plans",
-        "source": "https://www.macrumors.com/2026/10/27/chatgpt-icloud-mail-calendar-plugin/",
-        "decision": "skipped",
-        "reason": "Launched Oct 27, too old for a timely post; a good subject for today's utility how-to after 11:00 New York time."
-      },
-      {
-        "story": "Anthropic adds a gallery of ready-made legal artifacts to Claude for Legal",
-        "source": "https://claude.com/resources/articles/introducing-artifacts-for-legal-work",
-        "decision": "skipped",
-        "reason": "Announced Oct 28, past the 12 hour window, and a niche professional feature."
-      },
-      {
-        "story": "Malaysia customs seizes about $13 million in AI chip servers at Kuala Lumpur airport",
-        "source": "https://www.thestandard.com.hk/world/article/335724/Malaysia-customs-seizes-AI-chips-worth-13-mln-at-Kuala-Lumpur-airport",
-        "decision": "skipped",
-        "reason": "Crime story with little US interest, and the reports found are mixed with an older June seizure."
-      },
-      {
-        "story": "OpenAI opens an election war room ahead of the Nov 3 midterms (Politico)",
-        "decision": "skipped",
-        "reason": "Weighed in earlier runs; political and sensitive, and from Oct 28."
-      },
-      {
-        "story": "Adam Mosseri says negativity around AI is going to get worse (The Verge)",
-        "decision": "skipped",
-        "reason": "Still no second source for the quotes."
-      },
-      {
-        "story": "Seattle family sues OpenAI over ChatGPT seizure medication advice",
-        "decision": "covered",
-        "reason": "Already queued as 2026-10-29-family-sues-openai-chatgpt-seizure-medication."
-      },
-      {
-        "story": "DeepSeek and Moonshot trained on OpenAI's GPT-6 Astra",
-        "decision": "covered",
-        "reason": "Already queued as 2026-10-29-deepseek-kimi-trained-on-openai-astra."
-      },
-      {
-        "story": "Daily utility post for Oct 29",
-        "decision": "skipped",
-        "reason": "Before 11:00 New York time; a later run should queue it (iCloud plugins in ChatGPT is a candidate)."
-      }
-    ],
-    "requests": []
-  },
-  {
     "run_at": "2026-10-29T10:06:28.352Z",
     "summary": "Early morning run (6:00 New York, Oct 29): nothing new queued. No open links or requests; overnight searches found only stories from Oct 27 and 28 that are already covered or past the 12 hour window, and today already has 5 news posts plus Mahir's Reel.",
     "considered": [
@@ -5076,6 +5014,59 @@
         "story": "Hacker News thread says Gemini trains on chat history for paying personal accounts",
         "decision": "skipped",
         "reason": "Still a forum thread with no news outlet confirming it."
+      }
+    ],
+    "requests": []
+  },
+  {
+    "run_at": "2026-11-05T09:00:08.407Z",
+    "summary": "4 a.m. New York run: no open links or requests; nothing new at priority 1 since the last run, so nothing queued, keeping November 5's last 2 of 8 slots for the two daily utility posts.",
+    "considered": [
+      {
+        "story": "Xen credits Anthropic and Claude for two critical grant copy VM escape flaws (XSA-523)",
+        "source": "https://blog.ostorlab.co/xen-hypervisor-guest-escape-cve-2026-102703.html",
+        "decision": "skipped",
+        "reason": "Advisory went public on November 3, so it is past the timely window, and the last two November 5 slots are kept for the utility posts; a candidate for a later evergreen or roundup mention."
+      },
+      {
+        "story": "Isomorphic Labs in talks to raise about $5 billion at about a $50 billion valuation",
+        "source": "https://www.bloomberg.com/news/articles/2026-11-04/isomorphic-labs-in-talks-for-about-5-billion-in-funding",
+        "decision": "skipped",
+        "reason": "Talks reported by Bloomberg only, paywalled and not read in full."
+      },
+      {
+        "story": "Google backstops TeraWulf's $19 billion Anthropic Kentucky lease",
+        "source": "https://www.unite.ai/terawulf-lines-up-google-backstop-for-anthropics-kentucky-ai-campus/",
+        "decision": "skipped",
+        "reason": "Too close to today's Anthropic Riot Texas campus post."
+      },
+      {
+        "story": "AMD to pay $2.9 billion for AI chip firm Taalas",
+        "source": "https://www.theglobeandmail.com/business/article-amd-to-pay-29-billion-for-ai-chip-firm-taalas/",
+        "decision": "skipped",
+        "reason": "Filing detail with limited consumer interest, and today is nearly at the cap."
+      },
+      {
+        "story": "Anthropic signs its first news licensing deal with the AP",
+        "source": "https://www.adweek.com/media/anthropic-licensing-deal-ap-election/",
+        "decision": "skipped",
+        "reason": "Still only Adweek's report with no independent second source."
+      },
+      {
+        "story": "Apple will check iCloud public links for harmful content in iOS 27.3",
+        "source": "https://9to5mac.com/2026/11/04/with-ios-27-3-apple-will-start-checking-icloud-public-links-for-harmful-content/",
+        "decision": "skipped",
+        "reason": "Not an AI story at its core, and Apple already has a post today."
+      },
+      {
+        "story": "Cat Wu joins OpenAI to lead core product management",
+        "decision": "covered",
+        "reason": "Follow up to 2026-11-04-cat-wu-leaves-claude-code."
+      },
+      {
+        "story": "OpenAI Images 2.6, 948 Linux root exploits, Brockman IPO remarks",
+        "decision": "covered",
+        "reason": "Already queued for November 5."
       }
     ],
     "requests": []
