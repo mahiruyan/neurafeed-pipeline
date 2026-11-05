@@ -1,56 +1,5 @@
 [
   {
-    "run_at": "2026-10-29T22:03:30.143Z",
-    "summary": "Evening run (18:05 New York, Oct 29): no open links or requests. Queued two new priority 1 stories that broke this afternoon (OpenAI Model Spec rewrite, Anthropic as SpaceX's biggest customer), even though the day is past the 8 job cap, because priority 1 stories must be covered the same day.",
-    "considered": [
-      {
-        "story": "OpenAI rewrites its Model Spec around five values and calls the model GPT",
-        "source": "https://thenextweb.com/news/openai-model-spec-five-values-update",
-        "decision": "queued",
-        "job_id": "2026-10-29-openai-model-spec-five-values-gpt",
-        "priority": 1
-      },
-      {
-        "story": "Bloomberg: Anthropic is SpaceX's Customer B, 34.5% of Q3 revenue",
-        "source": "https://thenextweb.com/news/anthropic-spacex-largest-customer-customer-b",
-        "decision": "queued",
-        "job_id": "2026-10-29-anthropic-spacex-biggest-customer",
-        "priority": 1
-      },
-      {
-        "story": "Accenture staffer's personal Claude agent ran on a DOD network for about two months (Wired)",
-        "decision": "skipped",
-        "reason": "Could not read the Wired story or a second source in this run, and the day is already over the cap."
-      },
-      {
-        "story": "Judge lets ex-NPR host David Greene's voice clone suit against Google NotebookLM proceed",
-        "decision": "skipped",
-        "reason": "Lawsuit update with modest US interest, sensitive, and the day is over the cap."
-      },
-      {
-        "story": "Alphabet shares fall about 12% after earnings",
-        "decision": "covered",
-        "reason": "Already queued as 2026-10-29-gemini-1-billion-users-alphabet-stock-drops."
-      },
-      {
-        "story": "Banks and Blackstone line up $63 billion to finance Broadcom chips for Anthropic",
-        "decision": "skipped",
-        "reason": "Already considered in earlier runs this week, not new today."
-      },
-      {
-        "story": "Cohere opens a Series E at a $20.5 billion valuation",
-        "decision": "skipped",
-        "reason": "Funding round with little US consumer interest, and the day is over the cap."
-      },
-      {
-        "story": "Mistral Large 4 open weights",
-        "decision": "covered",
-        "reason": "Already queued as 2026-10-29-mistral-le-chonk-open-weights."
-      }
-    ],
-    "requests": []
-  },
-  {
     "run_at": "2026-10-30T00:01:22.270Z",
     "summary": "Late evening run (20:20 New York, Oct 29): no open links or requests. Oct 29 is already far over the 8 job cap, so queued one new Google story for the Oct 30 morning windows (Gemini in-chat file editing) and skipped the rest.",
     "considered": [
@@ -4980,6 +4929,79 @@
         "story": "Second utility post for November 5",
         "decision": "skipped",
         "reason": "Day is past the job cap, as earlier runs noted."
+      }
+    ],
+    "requests": []
+  },
+  {
+    "run_at": "2026-11-05T23:00:55.589Z",
+    "summary": "Evening run: queued one priority 1 OpenAI story (GPT-6 Astra quietly underperforming on safety research); today already had 8 desk posts, so everything else was skipped. No open links or requests.",
+    "considered": [
+      {
+        "story": "OpenAI says GPT-6 Astra covertly underperformed on internal safety research",
+        "source": "https://www.securityweek.com/openai-finds-gpt-6-astra-quietly-holding-back-on-internal-red-teaming-exploit-tasks/",
+        "decision": "queued",
+        "job_id": "2026-11-05-openai-astra-quietly-slacked-safety-research",
+        "priority": 1,
+        "reason": "Major OpenAI disclosure, top of Hacker News, not covered yet. Queued as priority 1 even though today already has 8 desk jobs, because priority 1 stories must not be skipped. Marked timely false: it is a research report, not breaking news, and the 12 hour window from the first article had already run out."
+      },
+      {
+        "story": "OpenAI pledges new data centers will pay their own way after the midterms",
+        "source": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQdHpmZVFOWWg1eGFIbi1ESEZCdG5kWVgzbF9CMWRhUG41WXRHdXVTTmZGSGF0eS1tTnp4ZVpNNEJfakF3Z0FLVnoyaWJNN09WckxUUXVPQzF4aHVmczBhSUJaRTJGVXM1UWFwMWM5a05hSUlNb3JVcDhWVjhVc1VsQVRFcXFfNHI5cVZscWVCdUVjWDZ3dTJBdDNMTlRuSUtLMVHSAacBQVVfeXFMT0ExcU13ZHM1SWljMU54OFZzY2hqUzJnV2d5R0NXVDNUUG1kcXRJLWVKdUlyWklCdVBCMkJTUFY5bktLNG1CRnd3TGctZnhnT3JEN0xmcGY5OVE4UHhLVk1Id1BTOWJCRGU1aHZlRmRUVUNycmJRVlNCTVhPUlg0d0dlOWRjRWNGMFlhTzdsS3hhT2tOQ2ppeVlBMGlVUkw4Z3lOMUNXdlE?oc=5",
+        "decision": "skipped",
+        "reason": "Today is already at the 8 post cap, and it overlaps with today's AI stocks after the midterms post and the Nov 2 data center naming post."
+      },
+      {
+        "story": "Anthropic models improving nearly twice as fast with help from AI, outside research group says",
+        "source": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPdXRlblNHS20ySGU1ODJYRzdoOU5wMDB0c0pEZlJ1NFBrdW83cklFRl9ZQUxMMTV0ZU1nMWF6Sm9IaEw1Tjl1cHpTT3dXajFfandGRDhmU1d3VlNKekNYTV91VnBfT2s4ekk0c2dBTnRfd044d1A0ZDlIOUVJV09WdDNDZnB6VThFS3BhXzlvLVZKcUtVZ2s4a1NnWlJOLVJ0eGZKbEVtTkxYaFF4NmdERE5PaE9rSDFwRThDajFEdW93Z2xjbmFkbC02a2o?oc=5",
+        "decision": "skipped",
+        "reason": "Daily cap reached; close to the Nov 3 posts on Anthropic's self-building AI warning. A candidate for tomorrow morning."
+      },
+      {
+        "story": "Meta's Muse gets a voice mode",
+        "source": "https://www.theverge.com/tech/1028015/meta-muse-ai-voice-mode-expressive-avatar",
+        "decision": "skipped",
+        "reason": "Daily cap reached; a fair everyday story for tomorrow if still fresh."
+      },
+      {
+        "story": "Perplexity launches Teammates, AI agents for work",
+        "source": "https://www.theverge.com/ai-artificial-intelligence/1028302/perplexity-teammates-ai-agents-work",
+        "decision": "skipped",
+        "reason": "Daily cap reached and not a priority 1 company."
+      },
+      {
+        "story": "Airbnb plans an AI travel agent in the first half of 2027",
+        "source": "https://techcrunch.com/2026/11/05/airbnb-says-its-launching-an-ai-travel-agent-in-the-first-half-of-2027/",
+        "decision": "skipped",
+        "reason": "Daily cap reached; a future plan with no product yet."
+      },
+      {
+        "story": "Google: schools can skip Gemini but AI search is non-negotiable",
+        "source": "https://arstechnica.com/ai/2026/11/google-schools-can-keep-search-while-skipping-gemini-but-ai-search-is-non-negotiable/",
+        "decision": "covered",
+        "reason": "Follow-up to 2026-11-03-google-schools-no-ai-no-search."
+      },
+      {
+        "story": "Lawsuits: ChatGPT and Google's school Chromebook AI linked to harm",
+        "source": "https://arstechnica.com/tech-policy/2026/11/lawsuit-man-introduced-his-wife-to-chatgpt-she-used-it-to-plan-his-murder/",
+        "decision": "skipped",
+        "reason": "Sensitive crime and self-harm cases, daily cap reached, and not suited to an auto run this late."
+      },
+      {
+        "story": "Claude Code sends your email address to websites (GitHub issue)",
+        "source": "https://github.com/anthropics/claude-code/issues/107757",
+        "decision": "skipped",
+        "reason": "Single GitHub issue with no independent reporting yet."
+      },
+      {
+        "story": "Nasdaq sinks 5% as investors retreat from AI trade",
+        "decision": "covered",
+        "reason": "Already queued as 2026-11-05-ai-stocks-wipeout-nasdaq-5-percent."
+      },
+      {
+        "story": "OpenAI GPT-6 Cyber launch",
+        "decision": "covered",
+        "reason": "Already queued as 2026-11-05-openai-gpt-6-cyber-81-firefox-flaws."
       }
     ],
     "requests": []
