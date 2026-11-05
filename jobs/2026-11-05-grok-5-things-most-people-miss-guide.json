@@ -1,0 +1,127 @@
+{
+  "id": "2026-11-05-grok-5-things-most-people-miss-guide",
+  "format": "utility",
+  "created_at": "2026-11-05T17:25:00Z",
+  "story_time": "2026-11-05T17:00:00Z",
+  "timely": false,
+  "sensitive": false,
+  "priority": 2,
+  "review": true,
+  "sources": [
+    { "name": "xAI: Welcome to Grok", "url": "https://docs.x.ai/grok/overview" },
+    { "name": "xAI: Grok FAQ", "url": "https://docs.x.ai/grok/faq" },
+    { "name": "X Help Center: About Grok", "url": "https://help.x.com/en/using-x/about-grok" },
+    { "name": "xAI: Skills in web, iOS, and Android", "url": "https://x.ai/news/grok-skills" },
+    { "name": "ToolChase", "url": "https://toolchase.com/blog/how-to-use-grok/" },
+    { "name": "DataNorth AI", "url": "https://datanorth.ai/blog/the-complete-guide-to-grok-ai" }
+  ],
+  "caption": "Most people only use Grok to ask questions on X.\nIt can also read a pile of files at once, hand you a finished slide deck and remember your formats with Skills.\nIts weak spot: live X data can carry rumors, so check the links.\n\nWhich of these would you try first?\n\nFollow @neurafeed.ai for daily AI news.\n\nSource: xAI, X Help Center · Photo: teslarati.com",
+  "threads_text": "Grok can read about 100 files in one message on the web, make Word files and slide decks, and save your favorite format as a Skill. Most people just ask it about X posts. Do you use Grok for real work, or only on X?",
+  "slides": [
+    {
+      "kind": "cover",
+      "headline": "Elon Musk's Grok does way more than answer X posts. *5 things* to try",
+      "image": {
+        "url": "https://www.teslarati.com/wp-content/uploads/2024/06/4096px-USAFA_Hosts_Elon_Musk_Image_1_of_17.jpg",
+        "credit": "via teslarati.com",
+        "fallback_urls": [
+          "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a5/Elon_Musk_2011_Shankbone.JPG/1280px-Elon_Musk_2011_Shankbone.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+          "https://dailygalaxy.com/wp-content/uploads/2025/07/Tesla-CEO-Elon-Musk.jpg"
+        ]
+      },
+      "pos": "center 30%",
+      "badges": [
+        { "url": "https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/png/grok-dark.png", "fit": "contain" }
+      ],
+      "badge_side": "right",
+      "badge_border": "white"
+    },
+    {
+      "kind": "prompt",
+      "heading": "1. Ask what *X is saying*",
+      "paras": [
+        "Grok can search public X posts and the web in real time.",
+        "Live posts can carry rumors, so open the links before you share."
+      ],
+      "prompt": "Search X and the web for what people are saying about [topic] in the last 24 hours. Separate confirmed facts from rumors and link the posts."
+    },
+    {
+      "kind": "prompt",
+      "heading": "2. Drop in a *pile of files*",
+      "paras": [
+        "On the web you can attach about 100 files per message, most up to 150 MB: PDFs, Word, Excel, audio and video.",
+        "Images inside non-PDF files may not be read."
+      ],
+      "prompt": "Read these files and give me a one page summary: key numbers, deadlines, and anything that contradicts itself across files."
+    },
+    {
+      "kind": "prompt",
+      "heading": "3. Get a *real file* back",
+      "paras": [
+        "Built-in Skills let Grok make Word documents, slide decks, spreadsheets and PDFs.",
+        "You get a file to download, not just text to copy."
+      ],
+      "prompt": "Turn my notes below into a 6 slide presentation: a title slide, then one key point per slide. [paste notes]"
+    },
+    {
+      "kind": "prompt",
+      "heading": "4. Teach it *once*",
+      "paras": [
+        "After you fix a format you like, ask Grok to save it as a Skill.",
+        "It then uses that format in every new chat."
+      ],
+      "prompt": "Save the format we just used as a skill called [Weekly report], and use it every time I ask for a weekly report."
+    },
+    {
+      "kind": "prompt",
+      "heading": "5. Make a *picture or a clip*",
+      "paras": [
+        "Grok Imagine makes images and short videos from a sentence.",
+        "Every result carries a Grok watermark, and on paid plans video uses the most of your weekly allowance."
+      ],
+      "prompt": "A photo of [subject] on a wooden kitchen table, soft morning window light, shot from above."
+    },
+    {
+      "kind": "cta",
+      "hook": "One useful AI trick a day, no fluff. Follow so tomorrow's guide finds you."
+    }
+  ],
+  "site_article": {
+    "kind": "guide",
+    "headline": "Grok: what it is good at, where it falls short, and 5 things to try",
+    "dek": "xAI's assistant is more than a reply button on X. Here is what it does well, what it gets wrong, and prompts you can copy.",
+    "summary": "Grok searches X and the web in real time, reads large batches of files and can return Word files, slide decks and spreadsheets through built-in Skills. Its main weakness is accuracy: xAI and X both warn that it can state wrong information with confidence.",
+    "seo_title": "Grok guide: what it does well, where it fails, 5 prompts",
+    "seo_description": "How to use Grok for live X search, file analysis, Skills and Imagine, with copy and paste prompts and an honest look at its weak spots.",
+    "answer_summary": "Grok is best for questions about what is happening right now on X and the web, for reading many files at once, and for producing documents with its built-in Skills. Double-check its facts, because it can repeat rumors and make confident mistakes.",
+    "tags": ["Grok", "xAI", "AI guides", "Prompts", "X"],
+    "hero_alt": "Elon Musk smiling on stage in a dark suit.",
+    "paragraphs": [
+      { "kind": "fact", "text": "Grok is the AI assistant from xAI. You can use it at grok.com, in the iOS and Android apps, and inside X, where it sits behind the Grok icon in the navigation bar. It is free to start; the paid SuperGrok plan raises your limits, and on X it comes with Premium and Premium+.", "sources": [0, 2] },
+      { "kind": "fact", "text": "The short version: Grok is strongest when the question is about what is happening right now. It can decide on its own to search public X posts and run live web searches, so its answers can include the latest information. The same feature is its biggest weakness, because a post on X can be a rumor.", "sources": [2, 5] },
+      { "kind": "heading", "text": "What Grok can do" },
+      { "kind": "fact", "text": "According to xAI's documentation, the core features are chat, Grok Imagine for images and video, voice conversations, file uploads for analysis and summaries, and connectors that let Grok reach your email, files and calendar inside a chat. Connectors listed by xAI include Google Drive, Gmail and Google Calendar, Outlook, OneDrive, SharePoint, Microsoft Teams and Salesforce.", "sources": [0] },
+      { "kind": "fact", "text": "File uploads are generous. On the web you can attach about 100 files to a single message, on Android up to 20. Most files can be up to 150 MB. Grok reads PDF, DOCX, TXT, CSV, XLSX, PPTX, JSON, Markdown and code files, common image formats, audio such as MP3 and WAV, and MP4 and MOV video. xAI notes that images embedded in non-PDF files may not be read, and that transcription quality varies.", "sources": [1] },
+      { "kind": "fact", "text": "Skills launched on May 18, 2026. Every account gets five built-in Skills made by xAI: Word documents, presentations, spreadsheets, PDFs and a Skill Creator. You can also save your own. xAI says Skills work at grok.com and in the iOS and Android apps.", "sources": [3] },
+      { "kind": "heading", "text": "5 things to try" },
+      { "kind": "step", "title": "1. Ask what X is saying about a topic", "text": "This is the one thing Grok does that most assistants do not do natively. Ask for a time window and ask it to separate facts from rumors, then open the posts it links." },
+      { "kind": "prompt", "title": "Prompt 1: Live check on a topic", "text": "Search X and the web for what people are saying about [topic] in the last 24 hours.\nSeparate confirmed facts from rumors.\nLink the posts and articles you used." },
+      { "kind": "step", "title": "2. Read a pile of files at once", "text": "Click or tap the plus icon next to the message box, or drag files in on the web. Because you can attach many files, ask for the things a person would miss when reading them one by one: contradictions, repeated numbers, deadlines." },
+      { "kind": "prompt", "title": "Prompt 2: Summary across files", "text": "Read these files and give me a one page summary.\nList the key numbers, every deadline, and anything that contradicts itself across files.\nSay which file each point comes from." },
+      { "kind": "step", "title": "3. Ask for a real file back", "text": "With the built-in Skills, Grok can create and edit a .docx file, build a slide deck, make a formatted spreadsheet and create or merge PDFs. Paste your notes and say what file you want." },
+      { "kind": "prompt", "title": "Prompt 3: Notes into a deck", "text": "Turn my notes below into a 6 slide presentation.\nSlide 1 is a title slide. Then one key point per slide, with no more than 3 bullets each.\n[paste notes]" },
+      { "kind": "step", "title": "4. Save a format as a Skill", "text": "Once you have fixed a format you like, ask Grok to save what it learned as a Skill. xAI says you can also build a Skill by describing it in a chat or by uploading a file. Your own version of a built-in Skill takes priority over xAI's." },
+      { "kind": "prompt", "title": "Prompt 4: Save it once", "text": "Save the format we just used as a skill called [Weekly report].\nUse it every time I ask for a weekly report." },
+      { "kind": "step", "title": "5. Make an image or a short clip", "text": "Grok Imagine creates images and video from a text prompt. Every image and video gets a Grok watermark, and xAI says removing it breaks its Acceptable Use Policy. On paid plans, image and video generation draw from your weekly usage, and video costs the most." },
+      { "kind": "prompt", "title": "Prompt 5: A simple photo", "text": "A photo of [subject] on a wooden kitchen table, soft morning window light, shot from above." },
+      { "kind": "heading", "text": "Where Grok falls short" },
+      { "kind": "fact", "text": "X's own help page calls Grok an early version that can confidently give incorrect information, missummarize or miss context, and tells you to verify its answers and avoid sharing personal or sensitive information. DataNorth AI points out that grounding answers in live X posts means Grok can repeat rumors with the same confidence as established facts.", "sources": [2, 5] },
+      { "kind": "fact", "text": "Image generation has limits too. ToolChase's guide says Imagine is weaker at hands, dense text inside images and specific brand likenesses, and that standard video clips run about six seconds.", "sources": [4] },
+      { "kind": "fact", "text": "Paid plans share one weekly usage pool across all Grok products. You can see what you have used under Settings, then Usage. When you hit the limit, paid features pause until the reset unless you buy Extra Usage Credits, which start at $5 on the web and cost more per action than your plan allowance.", "sources": [1] },
+      { "kind": "heading", "text": "Your data" },
+      { "kind": "fact", "text": "On X, your public data and your Grok conversations may be shared with xAI to train its models. To opt out, go to Settings, then Privacy and safety, then Data sharing and personalization, then Grok and Third-party Collaborators, and turn data sharing off. You can still use Grok after that. Thumbs up and down feedback may still be used for training.", "sources": [2] },
+      { "kind": "tip", "text": "Use Grok for the first draft of anything time sensitive, then check every claim against the links it gives you. If it gives no link, treat the claim as unverified." },
+      { "kind": "analysis", "text": "Grok is a good second assistant rather than a first one for most people. If you live on X or need to know what is being said in the last few hours, it has an edge. For careful research or anything you will publish, its own makers tell you to double-check it, and that advice is worth taking." }
+    ]
+  }
+}
