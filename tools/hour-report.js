@@ -19,11 +19,12 @@ const med = (a) => { const s = [...a].sort((x, y) => x - y); const m = Math.floo
   const rows = items.filter((m) => Number.isFinite(m.views) && Date.now() - Date.parse(m.timestamp) > 2 * 864e5);
   console.log(`::notice::${rows.length} posts (last ${DAYS} days, at least 2 days old)`);
   for (const fmt of ['carousel', 'reel']) {
-    const g = {};
+    const g = {}; const out = [];
     for (const m of rows.filter((x) => x.fmt === fmt)) { const h = hourIn(new Date(m.timestamp), 'America/New_York'); (g[h] ||= []).push(m.views); }
     for (const h of Object.keys(g).map(Number).sort((a, b) => a - b)) {
       const ist = (h + 8) % 24;
-      console.log(`::notice::${fmt} NY ${String(h).padStart(2, '0')}:00 (TR ${String(ist).padStart(2, '0')}:00): ${g[h].length} posts, median ${Math.round(med(g[h]))} views, best ${Math.max(...g[h])}`);
+      out.push(`NY ${String(h).padStart(2, '0')} (TR ${String(ist).padStart(2, '0')}) n=${g[h].length} med=${Math.round(med(g[h]))} max=${Math.max(...g[h])}`);
     }
+    console.log(`::notice::${fmt}: ${out.join(' | ')}`);
   }
 })();
