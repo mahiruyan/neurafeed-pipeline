@@ -1,0 +1,122 @@
+{
+  "id": "2026-11-05-chatgpt-images-2-6-gifs",
+  "created_at": "2026-11-05T05:20:00Z",
+  "story_time": "2026-11-04T19:44:00Z",
+  "timely": false,
+  "sensitive": false,
+  "priority": 1,
+  "review": true,
+  "format": "carousel",
+  "site_category": "models",
+  "sources": [
+    { "name": "The Decoder", "url": "https://the-decoder.com/chatgpt-can-now-turn-text-prompts-and-photos-into-animated-gifs-with-openais-images-2-6-model/" },
+    { "name": "TestingCatalog", "url": "https://www.testingcatalog.com/openai-launches-images-2-6-with-gifs-and-image-reference/" },
+    { "name": "ETV Bharat", "url": "https://www.etvbharat.com/en/technology/openai-introduces-images-2-6-in-chatgpt-codex-api-for-animated-gifs-reference-image-retention-enn26110501358" },
+    { "name": "Unite.AI", "url": "https://www.unite.ai/chatgpt-adds-animated-gif-creation-and-editing-with-images-2-6/" }
+  ],
+  "caption": "OpenAI released ChatGPT Images 2.6, and it can now turn a text prompt or a photo into an animated GIF.\nYou can change the speed and edit single frames before you share it.\nIt is rolling out to all ChatGPT and Codex users on web, desktop and mobile.\n\nWhat would you turn into a GIF first?\n\nFollow @neurafeed.ai for daily AI news.\n\nSource: The Decoder, TestingCatalog · Photos: OpenAI via The Decoder, TestingCatalog, ETV Bharat, Unite.AI",
+  "threads_text": "ChatGPT can now make GIFs. Images 2.6 turns a prompt or a photo into an animated loop, and you can edit it frame by frame. Reaction GIFs just became a one-line request. What is the first GIF you would make?",
+  "slides": [
+    {
+      "kind": "cover",
+      "headline": "ChatGPT just learned to make GIFs. Any photo or prompt can now *start moving*",
+      "image": {
+        "url": "https://the-decoder.com/wp-content/uploads/2026/11/openai_gif_cat.png",
+        "credit": "OpenAI via The Decoder",
+        "fallback_urls": ["https://www.unite.ai/wp-content/uploads/2026/11/chatgpt-adds-animated-gif-creation-and-editing-with-images-2-6.jpg"],
+        "generate": "A cluttered living room at night lit by a single harsh desk lamp. A young woman sits on a worn couch holding up a smartphone toward the camera, her face amazed. Floating in the air above the phone, a strip of six real printed photo frames of the same orange cat in slightly different dancing poses hangs like a paper flipbook unfolding upward, slightly bent and creased. On the wall behind her, the logo from the first image is printed big and exact on a black poster. Generous headroom above her head, the subject fills the upper two thirds of the frame. Blank surfaces, no readable text or labels on any object, screen or poster except the logo. Photorealistic, high contrast, vertical composition, one clear subject, no letters, no watermarks. It must look like an unedited real photo from a news agency, not a painting, not digital art, no glow effects.",
+        "refs": ["assets/logos/openai.png"]
+      },
+      "pos": "center 40%",
+      "badges": [{ "url": "assets/logos/openai.png", "fit": "contain" }],
+      "badge_side": "right"
+    },
+    {
+      "kind": "card",
+      "heading": "From a prompt to a *moving loop*",
+      "paras": [
+        "Type a request or upload a photo, and ChatGPT builds a short animated GIF, frame by frame, like a flipbook.",
+        "You can change the speed, fix a single frame and share it on repeat."
+      ],
+      "image": {
+        "url": "https://the-decoder.com/wp-content/uploads/2026/11/chatgpt_gifs_openai_theverge.png",
+        "credit": "OpenAI via The Verge",
+        "fit": "contain",
+        "fallback_urls": []
+      },
+      "note": "OpenAI's own demo: a dancing cat from one sentence."
+    },
+    {
+      "kind": "card",
+      "heading": "Save your face *once*",
+      "paras": [
+        "Images 2.6 can keep reference pictures of you, your pet or a character, so you do not have to upload them again.",
+        "OpenAI says it keeps faces, products and brand details consistent across edits."
+      ],
+      "image": {
+        "url": "https://storage.ghost.io/c/2a/1b/2a1b1782-8506-4d7d-bf53-ad3fb52e2a0f/content/images/2026/11/HWUXbeBaoAATUZn.jpeg",
+        "credit": "OpenAI via TestingCatalog",
+        "fit": "contain",
+        "fallback_urls": []
+      }
+    },
+    {
+      "kind": "card",
+      "heading": "Two new models for *developers*",
+      "paras": [
+        "In the API, GPT-Image-2.6 Flare is built for speed and can make a low-quality image in as little as six seconds.",
+        "Sunburst aims for more detail and steadier edits. OpenAI says generation is 50 percent faster."
+      ],
+      "image": {
+        "url": "https://imgs.etvbharat.com/etvbharat/prod-images/05-11-2026/1200-675-28041796-275-28041796-1793853957798.jpg",
+        "credit": "OpenAI / PicsArt via ETV Bharat",
+        "fit": "contain",
+        "fallback_urls": []
+      }
+    },
+    {
+      "kind": "card",
+      "heading": "Over *4 billion* images a week",
+      "paras": [
+        "OpenAI says people now make more than 4 billion images a week across ChatGPT and its API.",
+        { "t": "That is about a billion more than in September.", "strong": true }
+      ],
+      "image": {
+        "url": "https://www.unite.ai/wp-content/uploads/2026/11/chatgpt-adds-animated-gif-creation-and-editing-with-images-2-6.jpg",
+        "credit": "Unite.AI",
+        "fallback_urls": []
+      },
+      "note": "The update reaches every ChatGPT plan on web, desktop and mobile."
+    },
+    {
+      "kind": "cta",
+      "hook": "Your group chat is about to fill up with AI GIFs. Follow so you know every new trick first."
+    }
+  ],
+  "site_article": {
+    "headline": "OpenAI releases Images 2.6, adding animated GIF creation to ChatGPT",
+    "dek": "The update also saves reference pictures for reuse and brings two faster image models, Flare and Sunburst, to developers.",
+    "summary": "OpenAI has released Images 2.6, which lets ChatGPT and Codex users turn a text prompt or a photo into an animated GIF and edit it frame by frame. The company says image generation is 50 percent faster and that users now create more than 4 billion images a week.",
+    "seo_title": "ChatGPT Images 2.6 adds GIF creation and faster API models",
+    "seo_description": "OpenAI's Images 2.6 lets ChatGPT turn prompts and photos into editable GIFs, saves reference images and adds Flare and Sunburst API models.",
+    "answer_summary": "Yes. With Images 2.6, released November 4, 2026, ChatGPT can turn a text prompt or an uploaded photo into an animated GIF, and users can change its speed and edit individual frames.",
+    "tags": ["OpenAI", "ChatGPT", "Images 2.6", "GIF", "AI image generation", "Codex"],
+    "hero_alt": "A still from an OpenAI demo of an animated cat generated in ChatGPT.",
+    "paragraphs": [
+      { "kind": "fact", "text": "OpenAI released Images 2.6 on November 4, 2026, an update to the image system inside ChatGPT that adds the ability to create animated GIFs. According to The Decoder, which cited The Verge, users can start from a written prompt or an uploaded photo and receive a short looping animation.", "sources": [0, 3] },
+      { "kind": "fact", "text": "The company said the update is rolling out globally to ChatGPT and Codex users across all subscription tiers, on the web, desktop and mobile apps, TestingCatalog and ETV Bharat reported.", "sources": [1, 2] },
+      { "kind": "heading", "text": "How the GIF feature works" },
+      { "kind": "fact", "text": "The model builds a GIF much like a flipbook. It generates a series of closely related still images and plays them in sequence. In OpenAI's own example, a short request for a GIF of a dancing cat produced several slightly different versions of the same character strung together, The Decoder reported.", "sources": [0] },
+      { "kind": "fact", "text": "After a GIF is generated, users can adjust the playback speed, inspect and revise individual frames, and then share the result. ETV Bharat reported that a rough sketch can also serve as the starting point. In its blog post, OpenAI wrote that \"From personal reactions to brand mascots and product visuals, GIFs give people and businesses a playful way to communicate.\"", "sources": [2, 3] },
+      { "kind": "analysis", "text": "The feature depends on consistency. The Decoder noted that earlier OpenAI models would likely have changed a character's look too much from frame to frame for an animation to hold together, which makes GIFs a visible test of how far the company's image models have come in a short time." },
+      { "kind": "heading", "text": "Saved references and consistent edits" },
+      { "kind": "fact", "text": "Images 2.6 also lets users keep reference images of themselves, their pets or recurring characters and reuse them later without uploading them again. OpenAI summarized the idea as \"Save once. Create again and again,\" according to TestingCatalog. The company said the update is meant to keep characters, products and brand details consistent across repeated rounds of editing.", "sources": [1, 2] },
+      { "kind": "heading", "text": "Flare and Sunburst for developers" },
+      { "kind": "fact", "text": "For developers, OpenAI introduced two API models, GPT-Image-2.6 Flare and GPT-Image-2.6 Sunburst. Flare is aimed at speed and layouts such as posters and product images, and the company said it can produce a low-quality image in as little as six seconds. Sunburst is designed for more detail and for keeping edits consistent at medium or high quality settings.", "sources": [1, 2] },
+      { "kind": "fact", "text": "The API also gains the image markup tool already available in ChatGPT, which lets teams point to the exact area of a picture they want changed, along with SVG export for websites, apps and print. A new complexity setting controls how much planning the model does; OpenAI recommends low for most quick edits and medium or high for crowded scenes, TestingCatalog reported. OpenAI said the release generates images 50 percent faster.", "sources": [1, 2] },
+      { "kind": "fact", "text": "OpenAI also said people now create well over 4 billion images a week across ChatGPT and its API, about one billion more than in September. The previous version, Images 2.5, arrived on September 8, 2026, according to Unite.AI.", "sources": [0, 3] },
+      { "kind": "analysis", "text": "In NeuraFeed's reading, GIFs move ChatGPT further into everyday messaging, where reaction images and short loops are shared constantly. Pairing a consumer feature with faster tiers for developers suggests OpenAI wants the same model family to serve both casual users and businesses that produce images at volume." },
+      { "kind": "why_it_matters", "text": "The next thing to watch is whether independent leaderboards rank Flare and Sunburst against rival image models, and whether OpenAI adds limits on GIF length or usage for free accounts as demand grows." }
+    ]
+  }
+}
