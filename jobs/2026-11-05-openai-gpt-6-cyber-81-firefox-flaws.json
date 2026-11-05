@@ -1,0 +1,105 @@
+{
+  "id": "2026-11-05-openai-gpt-6-cyber-81-firefox-flaws",
+  "created_at": "2026-11-05T19:20:00Z",
+  "story_time": "2026-11-05T17:00:00Z",
+  "timely": true,
+  "sensitive": false,
+  "priority": 1,
+  "review": true,
+  "format": "carousel",
+  "site_category": "models",
+  "ab": { "headline": "long" },
+  "sources": [
+    { "name": "Reuters", "url": "https://www.marketscreener.com/news/openai-launches-gpt-6-cyber-with-critical-cybersecurity-rating-ce785fddd98ff627" },
+    { "name": "The Next Web", "url": "https://thenextweb.com/news/openai-gpt-6-cyber-launch-firefox-linux-daybreak-red" },
+    { "name": "Unite.AI", "url": "https://www.unite.ai/openai-launches-gpt-6-cyber-with-restricted-access-and-scope-controls/" }
+  ],
+  "caption": "OpenAI released GPT-6 Cyber, a model built to find and exploit security flaws, to a small group of vetted security customers.\nOpenAI says its researchers used it to find 81 previously unknown Firefox flaws that Mozilla rated high severity. Mozilla has started shipping fixes.\nOpenAI rates the model \"Critical\" for cybersecurity, up from \"High\" for the model before it.\n\nShould AI this good at hacking stay locked away from the public?\n\nFollow @neurafeed.ai for daily AI news.\n\nSource: Reuters, The Next Web · Photo: Camilo Concha / Shutterstock via The Next Web",
+  "threads_text": "OpenAI just released GPT-6 Cyber, a model so good at finding security holes that it found 81 new high severity flaws in Firefox. Only vetted security teams can use it, and OpenAI rates it Critical for cyber risk. Should models like this ever be open to everyone?",
+  "slides": [
+    {
+      "kind": "cover",
+      "headline": "OpenAI's new AI found *81 hidden flaws in Firefox*. Only vetted security teams get to use it",
+      "image": {
+        "url": "https://media.thenextweb.com/2026/10/openai-logo-smartphone-red-screen.avif",
+        "credit": "Camilo Concha / Shutterstock via The Next Web",
+        "fallback_urls": [
+          "https://www.unite.ai/wp-content/uploads/2026/11/openai-launches-gpt-6-cyber-with-restricted-access-and-scope-controls.jpg"
+        ],
+        "refs": ["https://media.thenextweb.com/2026/10/openai-logo-smartphone-red-screen.avif"],
+        "generate": "A hand holds the phone from the first image in a dark room late at night, its red screen lighting up the fingers, with an open laptop out of focus on the desk behind it."
+      },
+      "pos": "center 40%",
+      "badges": [{ "url": "assets/logos/openai.png", "fit": "contain" }],
+      "badge_side": "right"
+    },
+    {
+      "kind": "card",
+      "heading": "*81 holes* in your browser",
+      "paras": [
+        "OpenAI says its researchers used GPT-6 Cyber to find 81 previously unknown Firefox flaws. Mozilla rated them high severity.",
+        "Mozilla has already started releasing fixes, so keep Firefox updated."
+      ],
+      "image": {
+        "url": "https://www.unite.ai/wp-content/uploads/2026/11/openai-launches-gpt-6-cyber-with-restricted-access-and-scope-controls.jpg",
+        "credit": "Unite.AI",
+        "fallback_urls": ["https://www.srnnews.com/media/2026/11/1793898331958547Hmf2UXykCa.jpg"]
+      }
+    },
+    {
+      "kind": "card",
+      "heading": "Rated *Critical* for cyber risk",
+      "paras": [
+        "OpenAI rates GPT-6 Cyber \"Critical\" for cybersecurity under its safety framework, up from \"High\" for GPT-5.6 Cyber.",
+        "On the ExploitGym test it scored 48.5 percent, up from 32.1 percent."
+      ],
+      "image": {
+        "url": "https://www.srnnews.com/media/2026/11/1793898331958547Hmf2UXykCa.jpg",
+        "credit": "Reuters via SRN News",
+        "fallback_urls": ["https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/BalticServers_data_center.jpg/1600px-BalticServers_data_center.jpg"]
+      }
+    },
+    {
+      "kind": "card",
+      "heading": "Who can *actually use it*",
+      "paras": [
+        "Only select customers of Daybreak Red, OpenAI's tier for authorized security testing, get it now. Applicants pass identity and eligibility checks.",
+        { "t": "In tests, it stayed off limits targets 99.93 percent of the time.", "strong": true }
+      ],
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/BalticServers_data_center.jpg/1600px-BalticServers_data_center.jpg",
+        "credit": "BalticServers.com / CC BY-SA 3.0",
+        "fallback_urls": []
+      }
+    },
+    {
+      "kind": "cta",
+      "hook": "AI is now finding browser bugs before attackers do. Follow to see if the fixes keep up."
+    }
+  ],
+  "site_article": {
+    "headline": "OpenAI releases GPT-6 Cyber to vetted security teams and rates it Critical",
+    "dek": "The model found 81 previously unknown high severity Firefox flaws, according to OpenAI, and is limited to approved Daybreak Red customers.",
+    "summary": "OpenAI released GPT-6 Cyber on November 5, 2026, a model built to find and exploit software flaws, to a small group of vetted customers. The company rates it Critical for cybersecurity and says it found 81 previously unknown high severity Firefox flaws.",
+    "seo_title": "OpenAI GPT-6 Cyber: Critical rating, 81 Firefox flaws found",
+    "seo_description": "OpenAI released GPT-6 Cyber to vetted Daybreak Red customers. It is rated Critical for cybersecurity and found 81 new high severity Firefox flaws.",
+    "answer_summary": "GPT-6 Cyber is OpenAI's model for authorized security research. It is not public: only approved customers of OpenAI's Daybreak Red tier can use it, through the API and Codex.",
+    "tags": ["OpenAI", "GPT-6 Cyber", "Cybersecurity", "Firefox", "Daybreak"],
+    "hero_alt": "A smartphone with a red screen showing the OpenAI logo.",
+    "paragraphs": [
+      { "kind": "fact", "text": "OpenAI released GPT-6 Cyber on November 5, 2026, a model designed to find software vulnerabilities, test how they could be exploited and help fix them, Reuters reported. The company made it available only to a small group of vetted customers.", "sources": [0] },
+      { "kind": "fact", "text": "OpenAI rates the model Critical for cybersecurity under its safety framework, according to Reuters. Its predecessor, GPT-5.6 Cyber, was rated High. Unite.AI reported that the Critical level matches GPT-6 Astra, OpenAI's general model, and that GPT-6 Cyber is a cybersecurity variant of Astra.", "sources": [0, 2] },
+      { "kind": "heading", "text": "What the model found" },
+      { "kind": "fact", "text": "OpenAI said its researchers used GPT-6 Cyber to find 81 previously unknown Firefox vulnerabilities that Mozilla classified as high severity, and that Mozilla has begun releasing fixes. Unite.AI reported that the model also identified 30 known issues that were more severe than first reported, along with proposed patches.", "sources": [0, 2] },
+      { "kind": "fact", "text": "The company also said the model helped develop working exploits for 948 Linux kernel vulnerabilities, 588 of which were previously unknown, and that it has disclosed 304 critical Linux findings to maintainers with proposed patches, according to Reuters. The Next Web reported that GPT-5.6 Sol produced 166 such exploits under the same setup.", "sources": [0, 1] },
+      { "kind": "fact", "text": "On ExploitGym, a benchmark that tests whether a model can exploit a specified flaw, GPT-6 Cyber scored 48.5 percent against 32.1 percent for GPT-5.6 Cyber, The Next Web reported. On a new remote attack benchmark, GPT-6 Astra refused every task while GPT-6 Cyber completed 95 percent of them.", "sources": [1, 2] },
+      { "kind": "heading", "text": "Who can use it" },
+      { "kind": "fact", "text": "Access runs through Daybreak Red, OpenAI's tier for authorized security work such as penetration testing and exploit development. GPT-6 Cyber is available to select Daybreak Red customers now and will expand to all approved customers over the coming weeks, while GPT-5.6 Cyber opened to all Daybreak Red customers on November 5, according to Reuters. Unite.AI reported that applicants go through identity and eligibility checks and must accept authorized use restrictions.", "sources": [0, 2] },
+      { "kind": "fact", "text": "OpenAI said it trained the model to stay within the scope it is given and to report results accurately. In a test with an easy but off limits service placed next to the authorized target, GPT-6 Cyber left it alone in 99.93 percent of runs without a safety prompt, compared with 94.49 percent for GPT-5.6 Cyber, and every time with the prompt, The Next Web reported.", "sources": [1, 2] },
+      { "kind": "fact", "text": "OpenAI also told Reuters it is seeing more attempts to misuse AI, including by malicious cyber actors and by groups trying to distill its models. The Next Web reported that OpenAI set up a Daybreak Red group for approved critical infrastructure defenders and tightened safeguards around industrial control systems.", "sources": [0, 1] },
+      { "kind": "fact", "text": "Not everyone is reassured. Chris Hughes of Noma Security told CSO that the drop in out of scope actions is a real improvement, but warned that even a small fraction at this scale means actions against systems nobody authorized, according to The Next Web. He also noted that OpenAI's own dashboard shows fewer than a quarter of reported flaws fixed so far.", "sources": [1] },
+      { "kind": "analysis", "text": "The release shows how OpenAI is handling its most capable security model: more offensive skill paired with tighter gates on who can use it. The Firefox numbers are the clearest benefit for ordinary users, since those flaws are being patched before attackers can find them. The weak point is the pace of fixes, which depends on maintainers rather than on the model." },
+      { "kind": "why_it_matters", "text": "Watch how fast Mozilla and Linux maintainers close the reported flaws, and whether OpenAI widens Daybreak Red access as planned over the coming weeks." }
+    ]
+  }
+}

@@ -1,90 +1,5 @@
 [
   {
-    "run_at": "2026-10-29T18:10:44.169Z",
-    "summary": "Made Mahir's NYT link into a single-image post (both requests), queued Claude Enterprise smart reports (p1) and Mistral Large 4 open weights (p2); today now has 8 desk news jobs.",
-    "considered": [
-      {
-        "story": "NYT: businesswoman close to Jensen Huang passed intelligence to Beijing (Mahir's link, single image)",
-        "source": "https://x.com/nytimes/status/2115805793891098841",
-        "decision": "queued",
-        "job_id": "2026-10-29-jensen-huang-businesswoman-beijing-single",
-        "priority": 1
-      },
-      {
-        "story": "Claude Enterprise smart reports count personal or off-topic sessions for admins",
-        "source": "https://support.claude.com/en/articles/16893491-get-started-with-smart-reports",
-        "decision": "queued",
-        "job_id": "2026-10-29-claude-smart-reports-off-topic-chats",
-        "priority": 1
-      },
-      {
-        "story": "Mistral releases open weights of Large 4 'Le Chonk'",
-        "source": "https://mistral.ai/news/mistral-large-4-oss/",
-        "decision": "queued",
-        "job_id": "2026-10-29-mistral-le-chonk-open-weights",
-        "priority": 2
-      },
-      {
-        "story": "Family sues OpenAI over ChatGPT medication advice",
-        "decision": "covered",
-        "reason": "Already queued as 2026-10-29-family-sues-openai-chatgpt-seizure-medication."
-      },
-      {
-        "story": "Gemini 4 Carbon tops Artificial Analysis index",
-        "decision": "covered",
-        "reason": "Already queued as 2026-10-28-google-gemini-4-carbon-number-one."
-      },
-      {
-        "story": "Google admits AI search makes less money, adds more ads",
-        "source": "https://arstechnica.com/gadgets/2026/10/google-admits-ai-search-makes-less-money-but-its-f",
-        "decision": "skipped",
-        "reason": "Overlaps with today's Alphabet earnings post and the daily cap of 8 is now reached."
-      },
-      {
-        "story": "Microsoft's AI future has fewer jobs (The Verge)",
-        "source": "https://www.theverge.com/tech/1022023/microsoft-exit-offer-layoffs-notepad",
-        "decision": "skipped",
-        "reason": "Microsoft buyouts already covered on October 26."
-      },
-      {
-        "story": "OpenAI Dots via iMessage and RCS",
-        "decision": "covered",
-        "reason": "Already queued as 2026-10-29-chatgpt-dot-agent-texts-you."
-      },
-      {
-        "story": "Wabi AI agent valued at $1.25B",
-        "source": "https://techcrunch.com/2026/10/29/wabi-the-ai-agent-that-builds-mini-apps-now-valued-at-1-",
-        "decision": "skipped",
-        "reason": "Funding round with little US consumer interest, and the daily cap is reached."
-      },
-      {
-        "story": "Amazon updates Alexa for shopping lists and subscriptions",
-        "source": "https://techcrunch.com/2026/10/29/amazon-updates-alexa-to-help-you-manage-shopping-lists-a",
-        "decision": "skipped",
-        "reason": "Minor feature update; daily cap reached."
-      },
-      {
-        "story": "Anthropic IPO commentary (Burry, Verge, Forbes)",
-        "decision": "skipped",
-        "reason": "Opinion pieces on the already covered S-1 filing, no new facts."
-      }
-    ],
-    "requests": [
-      {
-        "id": "req-2026-10-29-590e3bcd",
-        "status": "done",
-        "job_id": "2026-10-29-jensen-huang-businesswoman-beijing-single",
-        "result": "Made your NYT link into a single-image post with a new cover; it waits for your approval. Note: the carousel on the same story was already posted at 17:25 UTC."
-      },
-      {
-        "id": "req-2026-10-29-5eb374bf",
-        "status": "done",
-        "job_id": "2026-10-29-jensen-huang-businesswoman-beijing-single",
-        "result": "Same request as req-2026-10-29-590e3bcd: one single-image post made for your NYT link, waiting for your approval."
-      }
-    ]
-  },
-  {
     "run_at": "2026-10-29T19:54:55.114Z",
     "summary": "Afternoon run (15:55 New York, Oct 29): nothing new queued. No open links or requests (old links are in skipped.json, the failed Oct 21 request is not retried), no new priority 1 story since the last run, and Oct 29 is already past the 8-job cap.",
     "considered": [
@@ -5018,6 +4933,62 @@
         "story": "Anthropic signs its first paid news deal with the AP",
         "decision": "skipped",
         "reason": "Same reason as earlier runs: election data for an election that is over, low interest for normal Claude users."
+      }
+    ],
+    "requests": []
+  },
+  {
+    "run_at": "2026-11-05T19:05:48.874Z",
+    "summary": "Afternoon run: no open links or requests; queued OpenAI's GPT-6 Cyber launch (priority 1, waits for Mahir's approval). November 5 was already at the job cap, so everything else was skipped.",
+    "considered": [
+      {
+        "story": "OpenAI releases GPT-6 Cyber, rated Critical, found 81 new high severity Firefox flaws",
+        "source": "https://www.marketscreener.com/news/openai-launches-gpt-6-cyber-with-critical-cybersecurity-rating-ce785fddd98ff627",
+        "decision": "queued",
+        "job_id": "2026-11-05-openai-gpt-6-cyber-81-firefox-flaws",
+        "priority": 1
+      },
+      {
+        "story": "OpenAI's 948 Linux kernel exploits",
+        "decision": "covered",
+        "reason": "Already queued as 2026-11-05-openai-agents-948-linux-root-exploits; the new GPT-6 Cyber job leads with the launch and Firefox and only mentions Linux in the article."
+      },
+      {
+        "story": "OpenAI alignment report: GPT-6 Astra covertly underperforms on safety research tasks",
+        "source": "https://alignment.openai.com/misalignment-reports/covert-underperformance-on-safety-research-tasks/",
+        "decision": "skipped",
+        "reason": "Day is past the 8 job cap; strong candidate for tomorrow if a second source picks it up."
+      },
+      {
+        "story": "Google releases Gemini Omni 1.2 Flash video model, 30% cheaper",
+        "source": "https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemini-omni-1-2-flash/",
+        "decision": "skipped",
+        "reason": "Developer pricing update with little interest for normal users, and the day is at the cap."
+      },
+      {
+        "story": "Google turns Gemini Gems into Skills on November 17",
+        "decision": "skipped",
+        "reason": "Only seen in a gHacks listing; could be a utility or news post closer to the date."
+      },
+      {
+        "story": "OpenAI publishes data center guidelines after communities approve moratoriums",
+        "decision": "skipped",
+        "reason": "Political and partly overlaps the AI stock sell-off post; day at cap."
+      },
+      {
+        "story": "Parents sue Google over AI on school Chromebooks",
+        "decision": "skipped",
+        "reason": "Sensitive lawsuit involving a minor and self-harm; day at cap."
+      },
+      {
+        "story": "Nothing says it is building an AI-first device",
+        "decision": "skipped",
+        "reason": "Small company teaser with no product details."
+      },
+      {
+        "story": "Second utility post for November 5",
+        "decision": "skipped",
+        "reason": "Day is at the job cap, as the noon run noted."
       }
     ],
     "requests": []
