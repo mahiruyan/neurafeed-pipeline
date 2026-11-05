@@ -1,74 +1,5 @@
 [
   {
-    "run_at": "2026-10-29T12:19:31.453Z",
-    "summary": "Morning run (08:20 New York): no open links or requests (old links already in skipped.json, the failed Oct 21 request is not retried); queued the NYT report on a suspected Chinese asset close to Jensen Huang (priority 1, sensitive, needs approval) and the 12.4% drop in computer science enrollment (priority 2).",
-    "considered": [
-      {
-        "story": "NYT: US officials believe Megaspeed executive Alice Huang is a Chinese intelligence asset who cultivated Jensen Huang; Trump briefed but did not act",
-        "source": "https://www.freepressjournal.in/tech/alice-huang-close-friend-of-nvidias-jensen-huang-is-believed-to-be-a-chinese-spy-trump-was-briefed-but-took-no-action-report",
-        "decision": "queued",
-        "job_id": "2026-10-29-nyt-chinese-asset-close-to-jensen-huang",
-        "priority": 1
-      },
-      {
-        "story": "Computer science enrollment at four-year colleges falls 12.4% this fall (National Student Clearinghouse)",
-        "source": "https://www.highereddive.com/news/undergraduate-enrollment-inched-up-this-fall-while-masters-dips-37/873114/",
-        "decision": "queued",
-        "job_id": "2026-10-29-computer-science-enrollment-drops-12-percent",
-        "priority": 2
-      },
-      {
-        "story": "Epic's Tim Sweeney says Claude Code and Codex now write Unreal Engine code",
-        "source": "https://gamingbolt.com/epic-games-confirms-ai-is-being-used-to-develop-code-for-unreal-engine",
-        "decision": "skipped",
-        "reason": "Same angle as 2026-10-12-epic-games-ai-first-no-handwritten-code."
-      },
-      {
-        "story": "South Korea will seek criminal charges and 3-year bans for CSAT takers who cheat with AI glasses",
-        "source": "https://koreatimes.co.kr/southkorea/20261029/govt-to-pursue-criminal-punishment-3-year-exam-ban-for-csat-cheaters-using-ai-glasses",
-        "decision": "skipped",
-        "reason": "Fun but non-US policy story; kept the slots for bigger US stories. Possible later filler."
-      },
-      {
-        "story": "OpenAI API spec references an unannounced GPT Image 2.6",
-        "source": "https://thewincentral.com/gpt-image-2-6-openai-api-spec-leak-markup-editor/",
-        "decision": "skipped",
-        "reason": "Single-source leak with no confirmation; wait for the launch."
-      },
-      {
-        "story": "Nscale pushes a $30 billion IPO despite investor pushback (Bloomberg)",
-        "decision": "skipped",
-        "reason": "Paywalled single source and of limited US consumer interest."
-      },
-      {
-        "story": "Tencent Cloud bets on its WorkBuddy enterprise assistant",
-        "decision": "skipped",
-        "reason": "China enterprise strategy story with little US interest."
-      },
-      {
-        "story": "OpenAI election war room ahead of the midterms",
-        "decision": "skipped",
-        "reason": "Already considered and skipped in earlier runs; no new development."
-      },
-      {
-        "story": "ChatGPT iCloud Mail and Calendar plugins",
-        "decision": "skipped",
-        "reason": "Announced Oct 27; kept as a candidate for today's utility post after 11:00 New York."
-      },
-      {
-        "story": "Gemini 4 Carbon, Microsoft and Alphabet earnings, DeepSeek distillation, family lawsuit against OpenAI",
-        "decision": "covered",
-        "reason": "Already queued in earlier jobs from Oct 28 and Oct 29."
-      },
-      {
-        "story": "Daily utility post for Oct 29",
-        "decision": "skipped",
-        "reason": "Before 11:00 New York time; a later run should queue it."
-      }
-    ],
-    "requests": []
-  },
-  {
     "run_at": "2026-10-29T13:58:43.646Z",
     "summary": "Morning run (09:55 New York): nothing new queued. No open links or requests; today already has 7 news jobs, so the last slot of the 8 per day cap is kept for the utility post after 11:00, and no new priority 1 story turned up.",
     "considered": [
@@ -5052,6 +4983,65 @@
         "story": "OpenAI to acquire Pierre Computer Company",
         "decision": "skipped",
         "reason": "Small developer tools deal, already context in the Meta Conductor job."
+      }
+    ],
+    "requests": []
+  },
+  {
+    "run_at": "2026-11-05T13:00:45.006Z",
+    "summary": "8 a.m. New York run: no open links or requests and no uncovered priority 1 story, so nothing queued; November 5 has 6 news jobs plus Mahir's Reel, and the last 2 slots stay for the two utility posts.",
+    "considered": [
+      {
+        "story": "Anthropic signs its first paid news deal, licensing AP election data for Claude",
+        "source": "https://www.adweek.com/media/anthropic-licensing-deal-ap-election/",
+        "decision": "skipped",
+        "reason": "Now has a second source, but the deal is about election data for an election that is already over, it matters little to normal Claude users, and today's last two slots are reserved for the utility posts."
+      },
+      {
+        "story": "Anthropic extends invisible text watermarking to four older Claude models",
+        "source": "https://techweez.com/2026/11/02/anthropic-is-bringing-text-watermarking-to-more-claude-models/",
+        "decision": "skipped",
+        "reason": "Incremental follow up to the August watermark launch, reported November 2, outside the timely window."
+      },
+      {
+        "story": "Hacker News thread: Gemini trains on chat history even for paying subscribers",
+        "source": "https://news.ycombinator.com/item?id=50363461",
+        "decision": "skipped",
+        "reason": "A user forum post about a long standing Google policy, with no new news report behind it."
+      },
+      {
+        "story": "Moonshot releases Kimi K3.1 Pro open weights",
+        "source": "https://huggingface.co/moonshotai/Kimi-K3.1-Pro",
+        "decision": "skipped",
+        "reason": "Developer focused open weights release with little US consumer interest."
+      },
+      {
+        "story": "China reportedly blocks SoftBank's $5.4 billion ABB robotics deal",
+        "source": "https://investinglive.com/stocks/china-blocks-softbank-s-5-4-billion-abb-robotics-deal-ft-says-in-blow-to-son-s-ai-push/",
+        "decision": "skipped",
+        "reason": "Single FT based report on deal politics, low interest for our audience."
+      },
+      {
+        "story": "Isomorphic Labs in talks to raise about $5 billion at a $50 billion valuation",
+        "source": "https://aiweekly.co/alerts/isomorphic-labs-in-talks-for-5b-round-at-50b-valuation",
+        "decision": "skipped",
+        "reason": "Talks only, not closed, and the day is at the cap."
+      },
+      {
+        "story": "Cognition ships SWE-2 Flash coding model",
+        "source": "https://www.unite.ai/cognition-launches-swe-2-flash-for-faster-lower-cost-coding-agents/",
+        "decision": "skipped",
+        "reason": "Niche developer launch."
+      },
+      {
+        "story": "Cat Wu joins OpenAI to lead core product management",
+        "decision": "covered",
+        "reason": "Follow up to 2026-11-04-cat-wu-leaves-claude-code."
+      },
+      {
+        "story": "OpenAI agents find 948 Linux root exploits",
+        "decision": "covered",
+        "reason": "Already queued as 2026-11-05-openai-agents-948-linux-root-exploits."
       }
     ],
     "requests": []
