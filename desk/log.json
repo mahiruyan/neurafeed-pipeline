@@ -1,62 +1,5 @@
 [
   {
-    "run_at": "2026-10-29T05:57:55.853Z",
-    "summary": "Overnight run (2:00 New York, Oct 29): made Mahir's Apple touchscreen MacBook Pro link into a Reel and queued 1 priority 1 sensitive story, the Seattle family suing OpenAI over ChatGPT seizure medication advice; both wait for Mahir's approval.",
-    "considered": [
-      {
-        "story": "Mahir's link: Apple unveils its first touchscreen MacBook Pro (PROLED XDR, M5 Pro and M5 Max, $2,899)",
-        "source": "https://www.apple.com/newsroom/2026/10/apple-unveils-groundbreaking-macbook-pro-with-proled-xdr-display/",
-        "decision": "queued",
-        "job_id": "2026-10-29-apple-first-touchscreen-macbook-pro-reel",
-        "priority": 1
-      },
-      {
-        "story": "Seattle family sues OpenAI and Sam Altman, says ChatGPT coached Bowen Wan off her seizure medication before her death",
-        "source": "https://www.kiro7.com/news/local/seattle-womans-family-sues-openai-claims-chatgpt-coached-her-off-medication-before-death/YV3O46Q65NC5LBMKEKFVLZRY5Y/",
-        "decision": "queued",
-        "job_id": "2026-10-29-family-sues-openai-chatgpt-seizure-medication",
-        "priority": 1
-      },
-      {
-        "story": "OpenAI offers up to $500 in monthly API credits to ChatGPT Pro and Business users",
-        "decision": "skipped",
-        "reason": "Old news from the Pro plan change at the end of September, not new today."
-      },
-      {
-        "story": "Amazon memo tells engineers to ease up on AI token use",
-        "source": "https://www.foxnews.com/live-news/ai-news-anthropic-openai-october-28",
-        "decision": "skipped",
-        "reason": "Made public on Tuesday, too old for a timely post, and only one source read."
-      },
-      {
-        "story": "Anthropic extends its federal agreement with a 40% discount for governments",
-        "decision": "skipped",
-        "reason": "Government contract detail with little consumer appeal, one source read."
-      },
-      {
-        "story": "Adam Mosseri says negativity around AI is going to get worse (The Verge)",
-        "decision": "skipped",
-        "reason": "Still no second source for the quotes."
-      },
-      {
-        "story": "Apple and OpenAI trade secrets case gets a July 2027 trial date",
-        "decision": "skipped",
-        "reason": "Scheduling update on a case already covered on Oct 14."
-      },
-      {
-        "story": "DeepSeek and Moonshot trained on OpenAI's GPT-6 Astra",
-        "decision": "covered",
-        "reason": "Already queued as 2026-10-29-deepseek-kimi-trained-on-openai-astra."
-      },
-      {
-        "story": "Daily utility post for Oct 29",
-        "decision": "skipped",
-        "reason": "Before 11:00 New York time; a later run should queue it."
-      }
-    ],
-    "requests": []
-  },
-  {
     "run_at": "2026-10-29T08:07:01.786Z",
     "summary": "Early run (4:00 New York, Oct 29): nothing new queued. No open links or requests; the overnight stories found were already covered or too old to post before they expire, and today already has 3 news posts plus Mahir's Reel waiting for approval.",
     "considered": [
@@ -5068,5 +5011,73 @@
         "result": "That picture is a still frame from an earlier Reel, and Reels can only be made from a video link, so send the video link if you want a new Reel."
       }
     ]
+  },
+  {
+    "run_at": "2026-11-05T07:03:27.286Z",
+    "summary": "Early morning New York run: no open links or requests; queued Anthropic's $28 billion Riot Corsicana lease (priority 1) and Apple's employee AI budget cuts (priority 2), both with review; November 5 now has 6 jobs.",
+    "considered": [
+      {
+        "story": "Riot Platforms leases its whole Corsicana, Texas campus to Anthropic for about $28 billion",
+        "source": "https://www.sec.gov/Archives/edgar/data/0001167419/000110465926122417/riot-20260930x10q.htm",
+        "decision": "queued",
+        "job_id": "2026-11-05-anthropic-riot-28-billion-texas-campus",
+        "priority": 1
+      },
+      {
+        "story": "Apple cuts employee AI budgets, some engineers from $300 to $200 a day",
+        "source": "https://www.investing.com/news/stock-market-news/apple-cuts-employee-ai-budgets-in-costcontrol-push-bloomberg-news-reports-5001149",
+        "decision": "queued",
+        "job_id": "2026-11-05-apple-cuts-engineers-ai-budget",
+        "priority": 2
+      },
+      {
+        "story": "Anthropic signs its first news licensing deal with the AP",
+        "source": "https://www.adweek.com/media/anthropic-licensing-deal-ap-election/",
+        "decision": "skipped",
+        "reason": "Still only Adweek's sourced report; every other article repeats it, so no independent second source yet."
+      },
+      {
+        "story": "Claude helps Anthropic map a 3D bacterial vault structure",
+        "decision": "skipped",
+        "reason": "Niche biology result; keep for a later run if official Anthropic coverage appears."
+      },
+      {
+        "story": "Google walks back its school AI and Search policy after backlash",
+        "decision": "covered",
+        "reason": "Follow up to 2026-11-03-google-schools-no-ai-no-search, too soon for a second post."
+      },
+      {
+        "story": "Cat Wu joins OpenAI to lead core product",
+        "decision": "covered",
+        "reason": "Follow up to 2026-11-04-cat-wu-leaves-claude-code, skipped in the last run too."
+      },
+      {
+        "story": "OpenAI to acquire Pierre Computer Company",
+        "decision": "skipped",
+        "reason": "Small developer tools deal, already mentioned in the Meta Conductor job."
+      },
+      {
+        "story": "OpenAI is already trying to shape the 2028 election",
+        "source": "https://techcrunch.com/",
+        "decision": "skipped",
+        "reason": "Political story, and OpenAI already has three posts today."
+      },
+      {
+        "story": "Nothing CEO says AI-first device drops next month",
+        "decision": "skipped",
+        "reason": "No product details yet, low US interest."
+      },
+      {
+        "story": "Uber says almost no one books rides through AI agents",
+        "decision": "skipped",
+        "reason": "Small data point, weaker than the two stories queued."
+      },
+      {
+        "story": "Hacker News thread says Gemini trains on chat history for paying personal accounts",
+        "decision": "skipped",
+        "reason": "Still a forum thread with no news outlet confirming it."
+      }
+    ],
+    "requests": []
   }
 ]
