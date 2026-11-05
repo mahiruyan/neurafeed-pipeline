@@ -1,6 +1,6 @@
 # Guides plan (website Guides category)
 
-The desk writes one guide a day with the utility post (see CLAUDE.md, "The guide on the website").
+The desk writes two guides a day, one with each utility post (see CLAUDE.md, "The guide on the website").
 Take the first line not yet covered by a guide job. Mahir can reorder or add lines.
 
 ## Core guides (one per tool, popular first)

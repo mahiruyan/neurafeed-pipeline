@@ -253,9 +253,10 @@ room, stock image, plain press render, logo on white, no usable photo), generate
 refs. Priority 1 stories about OpenAI, Anthropic, Google, Meta, Microsoft, Apple, NVIDIA or xAI
 almost always deserve a generated, brand-heavy cover unless a great real photo exists.
 
-## Utility posts (one per day)
+## Utility posts (two per day)
 
-Besides news, queue one evergreen "useful" carousel per New York day (`"format": "utility"`,
+Besides news, queue two evergreen "useful" carousels per New York day (one before 12:00 and one
+after 15:00 New York time, each with its own guide, two different subjects) (`"format": "utility"`,
 `timely: false`, `priority: 2`). These are the posts people save and share. Rotate between:
 - Prompt tips: 4 to 6 concrete prompts or prompt patterns for ChatGPT, Claude or Gemini, each with
   what it does, one `prompt` slide each. Only patterns that are documented by the vendor or that you can explain clearly.
