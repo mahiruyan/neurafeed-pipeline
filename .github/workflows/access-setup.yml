@@ -1,0 +1,50 @@
+name: Access setup
+
+# Puts Cloudflare Access (Zero Trust) in front of admin.neurafeedai.com: only the owner's email
+# addresses get in, after a one-time code sent to that inbox. /api/jobs/* stays reachable for the
+# bot, the pipeline and the cron jobs (those routes check their own secret tokens).
+# Safe to run again: existing apps are updated, not duplicated.
+on:
+  workflow_dispatch:
+    inputs:
+      extra_email: { description: 'Another allowed email (kept out of the logs)', required: false, default: '' }
+
+jobs:
+  setup:
+    runs-on: ubuntu-latest
+    env:
+      CF: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+      ACC: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+      EXTRA: ${{ inputs.extra_email }}
+    steps:
+      - run: |
+          [ -n "$EXTRA" ] && echo "::add-mask::$EXTRA"
+          api=https://api.cloudflare.com/client/v4/accounts/$ACC/access; H="Authorization: Bearer $CF"; J='Content-Type: application/json'
+          org=$(curl -s -H "$H" "$api/organizations"); echo "::notice::org: $(jq -c '{ok:.success, domain:.result.auth_domain, err:.errors}' <<<"$org")"
+          # Login method: one-time PIN by email.
+          idps=$(curl -s -H "$H" "$api/identity_providers")
+          otp=$(jq -r '.result[]? | select(.type=="onetimepin") | .id' <<<"$idps" | head -1)
+          if [ -z "$otp" ]; then
+            otp=$(curl -s -X POST -H "$H" -H "$J" "$api/identity_providers" -d '{"name":"Email code","type":"onetimepin","config":{}}' | jq -r '.result.id // empty')
+          fi
+          echo "::notice::one-time PIN login: ${otp:-FAILED}"
+          [ -n "$otp" ] || exit 1
+          emails='[{"email":{"email":"hello@neurafeedai.com"}}]'
+          [ -n "$EXTRA" ] && emails=$(jq -c --arg e "$EXTRA" '. + [{"email":{"email":$e}}]' <<<"$emails")
+          apps=$(curl -s -H "$H" "$api/apps")
+          upsert() { # name domain policy-json
+            id=$(jq -r --arg n "$1" '.result[]? | select(.name==$n) | .id' <<<"$apps" | head -1)
+            body=$(jq -nc --arg n "$1" --arg d "$2" --arg idp "$otp" --argjson p "$3" '{name:$n, domain:$d, type:"self_hosted", session_duration:"24h", allowed_idps:[$idp], auto_redirect_to_identity:true, app_launcher_visible:false, policies:[$p]}')
+            if [ -n "$id" ]; then r=$(curl -s -X PUT -H "$H" -H "$J" "$api/apps/$id" -d "$body"); else r=$(curl -s -X POST -H "$H" -H "$J" "$api/apps" -d "$body"); fi
+            echo "::notice::$1 ($2): success=$(jq -r .success <<<"$r") $(jq -c .errors <<<"$r")"
+          }
+          upsert "NeuraFeed admin" "admin.neurafeedai.com" "$(jq -nc --argjson inc "$emails" '{name:"Owner only", decision:"allow", include:$inc, precedence:1}')"
+          upsert "NeuraFeed admin jobs API" "admin.neurafeedai.com/api/jobs" '{"name":"Machines (token checked by the app)","decision":"bypass","include":[{"everyone":{}}],"precedence":1}'
+      - name: Check
+        run: |
+          sleep 20
+          echo "::notice::admin home -> $(curl -s -o /dev/null -w '%{http_code} %{redirect_url}' https://admin.neurafeedai.com/ | cut -c1-90)"
+          echo "::notice::admin login -> $(curl -s -o /dev/null -w '%{http_code} %{redirect_url}' https://admin.neurafeedai.com/login | cut -c1-90)"
+          echo "::notice::jobs API without token -> $(curl -s -o /dev/null -w '%{http_code} %{redirect_url}' -X POST https://admin.neurafeedai.com/api/jobs/telegram-review | cut -c1-90)"
+          echo "::notice::links page -> $(curl -s -o /dev/null -w '%{http_code}' https://links.neurafeedai.com/)"
+          echo "::notice::main site -> $(curl -s -o /dev/null -w '%{http_code}' https://neurafeedai.com/)"
