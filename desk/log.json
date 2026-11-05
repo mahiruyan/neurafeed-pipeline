@@ -1,62 +1,5 @@
 [
   {
-    "run_at": "2026-10-29T00:01:00.403Z",
-    "summary": "Evening run (20:00 New York, Oct 28): queued 1 priority 1 story, Microsoft's record $92.3 billion quarter with Azure up 48%, waiting for Mahir's approval. The day was already at the cap, so nothing else was added. No open links or requests.",
-    "considered": [
-      {
-        "story": "Microsoft reports record $92.3B quarter, Azure up 48%, record $45.2B capex, $10B revenue from OpenAI",
-        "source": "https://techcrunch.com/2026/10/28/microsoft-hits-10-quarters-of-record-breaking-revenue-in-a-row/",
-        "decision": "queued",
-        "job_id": "2026-10-28-microsoft-92-billion-record-quarter",
-        "priority": 1
-      },
-      {
-        "story": "Alphabet Q3 earnings: Bloomberg reports disappointing revenue and income, shares drop",
-        "source": "https://www.bloomberg.com/news/articles/2026-10-28/alphabet-reports-disappointing-revenue-income-shares-drop",
-        "decision": "skipped",
-        "reason": "Could not open Bloomberg or CNBC, and reports disagree (one calls it a first $100 billion quarter), so the facts are not confirmed; a candidate for the morning run."
-      },
-      {
-        "story": "Google expands AI Search ads globally as core ad growth slows",
-        "source": "https://techcrunch.com/2026/10/28/google-expands-ai-search-ads-globally-as-core-ad-growth-slows/",
-        "decision": "skipped",
-        "reason": "Ad business detail with little consumer appeal, and the day is over the cap."
-      },
-      {
-        "story": "Google working on a new agentic AI experience for consumers (The Verge)",
-        "decision": "skipped",
-        "reason": "Early report with no launch yet, and the day is over the cap."
-      },
-      {
-        "story": "Gemini 4 Carbon launch",
-        "decision": "covered",
-        "reason": "Already posted as 2026-10-28-google-gemini-4-carbon-number-one."
-      },
-      {
-        "story": "OpenAI election war room ahead of the midterms",
-        "decision": "skipped",
-        "reason": "Already weighed in the last run; political and sensitive, and the day is over the cap."
-      },
-      {
-        "story": "Akai embraces vibe-coded mods with an open-source MPC (The Verge)",
-        "source": "https://www.theverge.com/gadgets/1021405/akai-open-source-mpc-sample-key",
-        "decision": "skipped",
-        "reason": "Niche gadget story, and the day is over the cap."
-      },
-      {
-        "story": "Enveda and Anthropic cut drug batch review time by 89% with Claude",
-        "decision": "skipped",
-        "reason": "Trade press only, and Claude drug work was already covered today in 2026-10-28-claude-35000-antibodies-one-month."
-      },
-      {
-        "story": "Daily utility post for Oct 28",
-        "decision": "skipped",
-        "reason": "Oct 28 is over the 8-job cap."
-      }
-    ],
-    "requests": []
-  },
-  {
     "run_at": "2026-10-29T02:09:15.527Z",
     "summary": "Late run (22:00 New York, Oct 28): queued 2 priority 1 stories for the Oct 29 morning, Alphabet's Q3 (Gemini app at 1 billion users, Cloud up 103%, stock down after hours) and the DOJ questions about NVIDIA's Hugging Face deal, both waiting for Mahir's approval. Answered 1 reopened request.",
     "considered": [
@@ -5067,6 +5010,68 @@
         "story": "Google turns off AI for schoolchildren by default",
         "decision": "covered",
         "reason": "Already queued as 2026-11-03-google-schools-no-ai-no-search."
+      },
+      {
+        "story": "OpenAI Astra safety-task disclosure",
+        "decision": "covered",
+        "reason": "Astra already covered today as 2026-11-04-openai-astra-built-device-one-week."
+      }
+    ],
+    "requests": []
+  },
+  {
+    "run_at": "2026-11-05T00:53:35.342Z",
+    "summary": "20:00 New York run: no open links or requests; November 4 already has 8 desk jobs (the daily cap), so nothing was queued.",
+    "considered": [
+      {
+        "story": "Hacker News thread says Gemini trains on chat history even for paying personal accounts",
+        "source": "https://news.ycombinator.com/item?id=50363461",
+        "decision": "skipped",
+        "reason": "Single forum thread with no news outlet confirming it yet, and today is at the 8 job cap; worth a check tomorrow."
+      },
+      {
+        "story": "OpenAI to acquire Pierre Computer Company",
+        "source": "https://openai.com/index/openai-to-acquire-pierre/",
+        "decision": "skipped",
+        "reason": "Small developer-tool acquisition and the daily cap of 8 jobs is reached."
+      },
+      {
+        "story": "AMD's OpenAI and Meta chip deals trigger a $1 billion quarterly charge",
+        "decision": "skipped",
+        "reason": "Earnings accounting story with limited consumer appeal, and the daily cap is reached."
+      },
+      {
+        "story": "Qualcomm bets on data centers as smartphone sales sink",
+        "source": "https://www.theverge.com/ai-artificial-intelligence/1026867/qualcomm-earnings-data-centers",
+        "decision": "skipped",
+        "reason": "Earnings story, not priority 1, and the daily cap is reached."
+      },
+      {
+        "story": "AI PACs spent millions trying to shape Congress",
+        "source": "https://techcrunch.com/2026/11/04/ai-pacs-spent-millions-trying-to-shape-congress-heres-ho",
+        "decision": "skipped",
+        "reason": "Political and sensitive, and the daily cap is reached."
+      },
+      {
+        "story": "Adobe puts its marketing AI agent inside ChatGPT and Claude",
+        "decision": "skipped",
+        "reason": "Enterprise integration with little consumer interest, and the cap is reached."
+      },
+      {
+        "story": "Nothing CEO says AI-first device drops next month",
+        "source": "https://techcrunch.com/2026/11/04/nothing-ceo-says-companys-mysterious-ai-first-device-is-",
+        "decision": "skipped",
+        "reason": "Few concrete details and the daily cap is reached."
+      },
+      {
+        "story": "Gemini Gems are going away",
+        "decision": "skipped",
+        "reason": "Daily cap reached; worth a look in the next New York day if still fresh."
+      },
+      {
+        "story": "OpenAI says ChatGPT search is about 20 percent of Google's volume",
+        "decision": "covered",
+        "reason": "Already queued as 2026-11-04-chatgpt-one-fifth-google-search."
       },
       {
         "story": "OpenAI Astra safety-task disclosure",
