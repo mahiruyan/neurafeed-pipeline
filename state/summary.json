@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-05T23:00:31.592Z",
+  "updated_at": "2026-11-05T23:05:03.457Z",
   "jobs": [
     {
       "id": "2026-10-29-apple-first-touchscreen-macbook-pro-reel",
@@ -11,7 +11,7 @@
       "headline": "After years of refusing to do it, Apple finally unveils its first touchscreen MacBook Pro",
       "from_link": true,
       "link_id": "link-2026-10-29-1883",
-      "error": "Command failed: yt-dlp --no-playlist --no-progress --restrict-filenames -f bv*[height<=1920][vcodec^=avc1]+ba[acodec^=mp4a]/bv*[height<=1920]+ba/b[height<=1920]/b --merge-output-format mp4 -o /home/runner/work/neurafeed-pipeline/neurafeed-pipeline/out/2026-10-29-apple-first-touchscreen-macbook-pro-reel/src/source.%(ext)s https://www.instagram.com/reel/DfDUpW4AsCf/?srtk=cDZ4eXNlejZibnZh\nWARNING: [Instagram] DfDUpW4AsCf: Instagram API is not granting access\nERROR: [Instagram] DfDUpW4AsCf: Instagram sent an empty media response. Check if this post is accessible in your browser without being logged-in. If it is not, then use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Otherwise, if the post is accessible in browser without being logged-in, please report this issue on  https://github.com/yt-dlp/yt-dlp/issues?q= , filling out the appropriate issue template. Confirm you are on the latest version using  yt-dlp -U\n",
+      "error": "Command failed: yt-dlp --no-playlist --no-progress --restrict-filenames -f bv*[height<=1920][vcodec^=avc1]+ba[acodec^=mp4a]/bv*[height<=1920]+ba/b[height<=1920]/b --merge-output-format mp4 -o /home/runner/work/neurafeed-pipeline/neurafeed-pipeline/out/2026-10-29-apple-first-touchscreen-macbook-pro-reel/src/source.%(ext)s https://www.instagram.com/reel/DfDUpW4AsCf/?srtk=cDZ4eXNlejZibnZh\nERROR: [Instagram] DfDUpW4AsCf: Unable to download webpage: HTTP Error 429: Too Many Requests (caused by <HTTPError 429: Too Many Requests>)\n",
       "tg": []
     },
     {
@@ -145,19 +145,6 @@
         2264,
         2264
       ]
-    },
-    {
-      "id": "2026-11-01-week-in-ai",
-      "status": "skipped",
-      "posted_at": null,
-      "post_at": null,
-      "priority": 1,
-      "format": "roundup",
-      "headline": "Anthropic filed to go public, Google took first place and Wall Street panicked",
-      "from_link": false,
-      "link_id": null,
-      "error": null,
-      "tg": []
     },
     {
       "id": "2026-11-02-50-ai-agents-minecraft-bureaucracy",
@@ -973,8 +960,8 @@
     },
     {
       "id": "2026-11-05-openai-agents-948-linux-root-exploits",
-      "status": "approved",
-      "posted_at": null,
+      "status": "posted",
+      "posted_at": "2026-11-05T23:05:02.945Z",
       "post_at": null,
       "priority": 1,
       "format": "carousel",
@@ -990,6 +977,28 @@
         2541,
         2542,
         2542
+      ]
+    },
+    {
+      "id": "2026-11-05-openai-astra-quietly-slacked-safety-research",
+      "status": "pending",
+      "posted_at": null,
+      "post_at": null,
+      "priority": 1,
+      "format": "carousel",
+      "headline": "OpenAI caught its own AI quietly slacking on safety research",
+      "from_link": false,
+      "link_id": null,
+      "error": null,
+      "tg": [
+        2605,
+        2606,
+        2607,
+        2608,
+        2609,
+        2610,
+        2611,
+        2611
       ]
     },
     {
