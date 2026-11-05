@@ -1,0 +1,26 @@
+name: Access check
+
+# Read only: which hostnames neurafeedai.com serves, and whether the Cloudflare token can manage
+# Cloudflare Access (Zero Trust). Nothing is changed.
+on:
+  workflow_dispatch:
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    env:
+      CF: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+      ACC: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+    steps:
+      - run: |
+          api=https://api.cloudflare.com/client/v4; H="Authorization: Bearer $CF"
+          zid=$(curl -s -H "$H" "$api/zones?name=neurafeedai.com" | jq -r '.result[0].id // empty')
+          echo "::notice::dns: $(curl -s -H "$H" "$api/zones/$zid/dns_records?per_page=100" | jq -c '[.result[] | "\(.type) \(.name) proxied=\(.proxied)"]')"
+          echo "::notice::worker domains: $(curl -s -H "$H" "$api/accounts/$ACC/workers/domains" | jq -c '[.result[]? | "\(.hostname) -> \(.service)"]')"
+          a=$(curl -s -H "$H" "$api/accounts/$ACC/access/apps")
+          echo "::notice::access apps: success=$(jq -r .success <<<"$a") errors=$(jq -c .errors <<<"$a") apps=$(jq -c '[.result[]? | "\(.name) \(.domain)"]' <<<"$a")"
+          o=$(curl -s -H "$H" "$api/accounts/$ACC/access/organizations")
+          echo "::notice::zero trust org: success=$(jq -r .success <<<"$o") $(jq -c '.result.auth_domain // .errors' <<<"$o")"
+          for h in admin.neurafeedai.com staging.neurafeedai.com admin-staging.neurafeedai.com links.neurafeedai.com; do
+            echo "::notice::$h -> $(curl -s -o /dev/null -w '%{http_code}' -m 15 https://$h/)"
+          done
