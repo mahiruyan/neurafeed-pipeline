@@ -56,6 +56,21 @@ same day. Never skip a priority 1 story because other stories are already queued
   "Follow @neurafeed.ai for daily AI news.", then a final line `Source: <Outlet>` (add
   `· Photo: <credit>` when the photo needs credit).
 
+## What travels (story choice and framing)
+
+The biggest AI accounts get millions of views with stories every AI user feels personally, not
+with company news only insiders follow. A post that hit 6 million views: "Being rude to ChatGPT
+gives better answers, new study finds": relatable (everyone has done it), a familiar product,
+tension, and authority framing, in under 10 words.
+- Every day, at least 2 of the news carousels are "everyone" stories: a study or test about how
+  people use AI, a strange or funny AI behavior, money (salaries, prices, fortunes, jobs), a
+  product change that hits normal users. Leads (Reddit, Hacker News) show what people care about.
+- Company news is still covered, but framed by what it means for the reader or by the human
+  side ("Apple is limiting how much its engineers can use AI", not "Apple cuts AI budget").
+- Authority framing when the source really supports it: "New study finds", "OpenAI admits",
+  "Anthropic's own data shows", "Leaked memo". Never claim a study, leak or admission that the
+  sources do not describe.
+
 ## Threads text (`threads_text`, every post)
 
 Threads is a conversation app, not a photo feed: the Instagram caption does poorly there. Every
