@@ -45,7 +45,8 @@ same day. Never skip a priority 1 story because other stories are already queued
   of what it can do", "Someone just canceled Elon Musk's order after he leaked it online").
   Hype words are fine. The facts inside the headline must still be true to the sources: frame and
   dramatize, never invent a number, quote or event.
-- Headlines: under 18 words, one *highlighted* phrase (asterisks) for the key detail.
+- Headlines: under 18 words, one *highlighted* phrase (asterisks) for the key detail. The cover
+  A/B test below decides whether a carousel gets a short (10 words or fewer) or a long one.
 - Inner slides: a topic heading for that slide (never "What happened" / "Why it matters"),
   then 2 short paragraphs, each under 40 words. A `card` holds at most 260 characters of text
   (paragraphs plus note; validation rejects more): split a long story into more slides instead
@@ -264,6 +265,19 @@ library, use the library photo (above). Otherwise, if either is no (generic chip
 stock image, plain press render, logo on white, no usable photo), use a generated edit of the
 best real photo (see AI-generated cover images). Never leave a logo or an office building as the
 cover photo.
+
+## Cover A/B test (every news carousel)
+
+We test what makes carousels travel. For every news carousel (not reels, utility, roundup or
+Mahir's link posts) run `node tools/abtest.js <job id>` (add `person` when the story is about
+someone in the face library) and put the printed `"ab"` object in the job file. Then follow it:
+- `"headline": "short"`: cover headline of 10 words or fewer. Put the details in the slides.
+  `"long"`: 12 to 18 words, as before.
+- `"photo": "face"`: the cover is their face library photo (`tools/face.js`). `"story"`: the best
+  real photo from the source article instead (never a logo, an office building or a stock image;
+  if the article has nothing good, use the library photo and set `"photo": "face"`).
+Everything else stays the same, so the test only measures this one thing. Every Monday the
+"Cover A/B report" workflow compares the variants on Instagram views and sends it to Mahir.
 
 ## Utility posts (two per day)
 
