@@ -21,10 +21,10 @@ async function commons(q) {
   for (const f of fs.readdirSync('samples/covers').filter((x) => x.endsWith('.json'))) {
     const s = JSON.parse(fs.readFileSync(path.join('samples/covers', f), 'utf8'));
     const shots = [];
-    if (s.new.image?.commons) s.new.image.url = await commons(s.new.image.commons) || s.new.image.url;
+    if (s.new?.image?.commons) s.new.image.url = await commons(s.new.image.commons) || s.new.image.url;
     // old_file: the cover as it was really posted (out/<id>/1.jpg), instead of re-rendering it.
     if (s.old_file) shots.push(s.old_file);
-    for (const [tag, slide] of (s.old_file ? [] : [['old', s.old]]).concat([['new', { ...s.new, style: 'v2' }]])) {
+    for (const [tag, slide] of s.variants ? [] : (s.old_file ? [] : [['old', s.old]]).concat([['new', { ...s.new, style: 'v2' }]])) {
       const dir = path.join('/tmp/cs', s.id, tag);
       const job = { id: `${s.id}-${tag}`, slides: [slide] };
       try {
@@ -33,7 +33,14 @@ async function commons(q) {
         shots.push(files[0]);
       } catch (e) { console.log(`::error::${s.id} ${tag}: ${e.message}`); }
     }
-    if (shots.length === 2) execFileSync('ffmpeg', ['-y', '-loglevel', 'error', '-i', shots[0], '-i', shots[1], '-filter_complex', '[0][1]hstack=2,scale=1440:-2', '-q:v', '3', path.join(OUT, `${s.id}.jpg`)]);
+    // variants: [slide, slide, ...] renders every one in the current style, side by side (A/B previews).
+    for (const [k, v] of (s.variants || []).entries()) {
+      const dir = path.join('/tmp/cs', s.id, `v${k}`);
+      const job = { id: `${s.id}-v${k}`, slides: [v] };
+      try { const img = await fetchImages(job, dir); shots.push((await renderJob(job, img.paths, dir, img.badges))[0]); } catch (e) { console.log(`::error::${s.id} v${k}: ${e.message}`); }
+    }
+    if (shots.length > 2) execFileSync('ffmpeg', ['-y', '-loglevel', 'error', ...shots.flatMap((f) => ['-i', f]), '-filter_complex', `${shots.map((_, i) => `[${i}]`).join('')}hstack=${shots.length},scale=${720 * shots.length}:-2`, '-q:v', '3', path.join(OUT, `${s.id}.jpg`)]);
+    else if (shots.length === 2) execFileSync('ffmpeg', ['-y', '-loglevel', 'error', '-i', shots[0], '-i', shots[1], '-filter_complex', '[0][1]hstack=2,scale=1440:-2', '-q:v', '3', path.join(OUT, `${s.id}.jpg`)]);
     console.log(`::notice::${s.id}: ${shots.length} rendered`);
   }
 })();
