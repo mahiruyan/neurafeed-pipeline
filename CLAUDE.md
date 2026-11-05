@@ -245,13 +245,35 @@ believable fake photo of a real event that did not happen.
 - Make the scene imperfect and real: a cluttered warehouse, a crowded exchange floor, a dim data
   center aisle, harsh fluorescent light. No clean studio, no perfect symmetry, no glowing sci-fi.
 
+## Face library (real photos of people in AI news)
+
+`assets/people/index.json` holds 300+ hand-picked real photos of 37 people who are often in AI news
+(Musk, Altman, Dario and Daniela Amodei, Huang, Zuckerberg, Pichai, Cook, Ternus, Hassabis, Nadella,
+Brockman, Murati, Karpathy, Simo, Ive, and more), each tagged with the expression on the face.
+When a story is about one of them, the cover is their real photo from the library, with the face
+that fits the story: `worried` or `serious` for bad news, risk, lawsuits, losses, warnings;
+`smiling` or `laughing` for records, launches, wins, money raised; `speaking` for something they
+said; `surprised` for a shock. Pick it with:
+
+    node tools/face.js "<name or slug>" <expression>
+
+and copy what it prints: `image` (url, credit, fallback_urls) and `pos` into the cover slide, and
+`caption_credit` into the caption's last line (`Source: <Outlet> · Photo: <credit>`). The tool
+picks the photos used least in the last 14 days, so faces do not repeat. Put the company's logo
+as a badge (built-in library or the sources below). Two people in the story: the main one is the
+cover photo, the other a round `cover` badge with their library photo.
+A library photo beats a generated cover for a person story. Generate a cover only when the story
+has no person in the library (a product, a policy, an abstract idea).
+
 How to choose the cover, for every carousel. Ask two questions about the best real photo:
 1. Would someone scrolling know which company or person this is about within one second?
 2. Is it striking: a face with emotion, a dramatic moment, a surprising object?
-If both are yes, use the real photo (plus logo badge). If either is no (generic chip, server
-room, stock image, plain press render, logo on white, no usable photo), generate the cover with
-refs. Priority 1 stories about OpenAI, Anthropic, Google, Meta, Microsoft, Apple, NVIDIA or xAI
-almost always deserve a generated, brand-heavy cover unless a great real photo exists.
+If both are yes, use the real photo (plus logo badge). If the story is about a person in the face
+library, use the library photo (above). Otherwise, if either is no (generic chip, server room,
+stock image, plain press render, logo on white, no usable photo), generate the cover with refs.
+A generated cover always keeps a good real photo in `image.url` (a library face when someone is
+involved): if generation fails, that photo is used instead, so never leave a logo or an office
+building there.
 
 ## Utility posts (two per day)
 

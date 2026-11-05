@@ -4,6 +4,7 @@ const path = require('path');
 const { execFileSync } = require('child_process');
 
 const UA = 'NeuraFeedPipeline/0.1 (+https://neurafeedai.com; contact hello@neurafeedai.com)';
+const BROWSER_UA = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0 Safari/537.36';
 
 async function download(url, dest, minBytes = 15000) {
   // Built-in logo library ("assets/logos/claude.png") and images Mahir sent to the bot
@@ -12,7 +13,9 @@ async function download(url, dest, minBytes = 15000) {
     fs.copyFileSync(path.join(__dirname, '..', url), dest);
     return dest;
   }
-  const res = await fetch(url, { headers: { 'User-Agent': UA, Accept: 'image/*' }, redirect: 'follow' });
+  let res = await fetch(url, { headers: { 'User-Agent': UA, Accept: 'image/*' }, redirect: 'follow' });
+  // Some news sites and CDNs refuse unknown clients: try once more as a normal browser.
+  if ([401, 403, 406, 429].includes(res.status)) res = await fetch(url, { headers: { 'User-Agent': BROWSER_UA, Accept: 'image/avif,image/webp,image/*;q=0.8', 'Accept-Language': 'en-US,en;q=0.9' }, redirect: 'follow' });
   if (!res.ok) throw new Error(`HTTP ${res.status} for ${url}`);
   const type = res.headers.get('content-type') || '';
   if (!type.startsWith('image/')) throw new Error(`Not an image (${type}) at ${url}`);

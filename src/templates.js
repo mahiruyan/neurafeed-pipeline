@@ -99,7 +99,8 @@ const HEADING_FONT = process.env.HEADING_FONT || 'poppins';
 const antonH = (size, align, text) => `<h1 style="margin:0;font-family:Anton;font-weight:400;font-size:${size}px;line-height:1.04;text-transform:uppercase;text-align:${align};letter-spacing:-.5px">${hl(text)}</h1>`;
 
 // Cover v2 (big headline, like the large AI news pages): the headline fills the lower ~40% edge to
-// edge, sized to the longest that fits in at most 5 lines. Chosen with COVER_STYLE=v2 or slide.style.
+// edge, sized to the longest that fits in at most 5 lines. The default; slide.style 'v1' (or
+// COVER_STYLE=v1) gives the older cover.
 function fitHeadline(text, width, height) {
   const len = text.replace(/\\\*/g, '*').replace(/\*/g, '').length;
   for (let size = 150; size >= 78; size -= 4) {
@@ -110,7 +111,7 @@ function fitHeadline(text, width, height) {
   return 78;
 }
 function coverV2(s, img, badges) {
-  const size = s.size || fitHeadline(s.headline, 1000, 420);
+  const size = s.size || fitHeadline(s.headline, 1000, 400);
   return `<div style="position:relative;width:1080px;height:1350px;overflow:hidden;background:#000;color:#fff">
 <img src="${img}" style="position:absolute;top:0;left:0;width:1080px;height:880px;object-fit:cover;object-position:${s.pos || 'center 30%'}">
 <div style="position:absolute;top:520px;left:0;width:1080px;height:380px;background:linear-gradient(180deg,rgba(0,0,0,0) 0%,rgba(0,0,0,.88) 72%,#000 100%)"></div>
@@ -124,7 +125,7 @@ ${s.single ? `<div style="font-family:'Bebas Neue';font-size:40px;letter-spacing
 }
 
 function cover(s, img, badges) {
-  if ((s.style || process.env.COVER_STYLE) === 'v2') return coverV2(s, img, badges);
+  if ((s.style || process.env.COVER_STYLE || 'v2') !== 'v1') return coverV2(s, img, badges);
   const size = s.size || (COVER_FONT === 'anton' ? headlineSize(s.headline, 100, 19) : headlineSize(s.headline, 74, 23));
   return `<div style="position:relative;width:1080px;height:1350px;overflow:hidden;background:#000;color:#fff">
 <img src="${img}" style="position:absolute;top:0;left:0;width:1080px;height:900px;object-fit:cover;object-position:${s.pos || 'center 30%'}">
