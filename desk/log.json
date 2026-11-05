@@ -1,69 +1,5 @@
 [
   {
-    "run_at": "2026-10-29T10:06:28.352Z",
-    "summary": "Early morning run (6:00 New York, Oct 29): nothing new queued. No open links or requests; overnight searches found only stories from Oct 27 and 28 that are already covered or past the 12 hour window, and today already has 5 news posts plus Mahir's Reel.",
-    "considered": [
-      {
-        "story": "xAI subsidiary MZX offers to buy up to 418 Southaven, Mississippi homes if owners drop noise claims",
-        "source": "https://www.forbes.com/sites/maryroeloffs/2026/10/28/xai-offers-home-buyouts-in-mississippi-to-quash-data-center-lawsuit/",
-        "decision": "skipped",
-        "reason": "Reported on the morning of Oct 28, so a timely post has already expired; it is also a lawsuit story that would need approval."
-      },
-      {
-        "story": "Apple adds beta AI assistants and MCP support to Keynote, Pages and Numbers",
-        "source": "https://www.ithinkdiff.com/keynote-pages-numbers-mcp-support-keyx/",
-        "decision": "skipped",
-        "reason": "Announced Oct 27, too old for a timely post."
-      },
-      {
-        "story": "GitHub Universe: Copilot Fusion, Octoverse says agents drafted over 40% of pull requests",
-        "decision": "skipped",
-        "reason": "Announced Oct 28, past the 12 hour window, and mostly of interest to developers."
-      },
-      {
-        "story": "XREAL AURA Android XR glasses with Gemini, $1,099",
-        "decision": "skipped",
-        "reason": "Announced Oct 28, past the 12 hour window."
-      },
-      {
-        "story": "Chrome autofill can now pull details from Gmail",
-        "decision": "skipped",
-        "reason": "Announced Oct 28, past the 12 hour window."
-      },
-      {
-        "story": "Nvidia Nemotron 3.5 Transcribe open speech model",
-        "decision": "skipped",
-        "reason": "Oct 28 developer release with little consumer appeal."
-      },
-      {
-        "story": "Adam Mosseri says negativity around AI is going to get worse (The Verge)",
-        "decision": "skipped",
-        "reason": "Still no second source, and now from Oct 28."
-      },
-      {
-        "story": "Anthropic Claude Enterprise spending reports and pooled budgets",
-        "decision": "skipped",
-        "reason": "Enterprise admin feature from Oct 28, little consumer appeal."
-      },
-      {
-        "story": "DeepSeek and Moonshot trained on OpenAI's GPT-6 Astra",
-        "decision": "covered",
-        "reason": "Already queued as 2026-10-29-deepseek-kimi-trained-on-openai-astra."
-      },
-      {
-        "story": "Seattle family sues OpenAI over ChatGPT seizure medication advice",
-        "decision": "covered",
-        "reason": "Already queued as 2026-10-29-family-sues-openai-chatgpt-seizure-medication."
-      },
-      {
-        "story": "Daily utility post for Oct 29",
-        "decision": "skipped",
-        "reason": "Before 11:00 New York time; a later run should queue it."
-      }
-    ],
-    "requests": []
-  },
-  {
     "run_at": "2026-10-29T12:19:31.453Z",
     "summary": "Morning run (08:20 New York): no open links or requests (old links already in skipped.json, the failed Oct 21 request is not retried); queued the NYT report on a suspected Chinese asset close to Jensen Huang (priority 1, sensitive, needs approval) and the 12.4% drop in computer science enrollment (priority 2).",
     "considered": [
@@ -5067,6 +5003,55 @@
         "story": "OpenAI Images 2.6, 948 Linux root exploits, Brockman IPO remarks",
         "decision": "covered",
         "reason": "Already queued for November 5."
+      }
+    ],
+    "requests": []
+  },
+  {
+    "run_at": "2026-11-05T10:55:01.002Z",
+    "summary": "6 a.m. New York run: turned Mahir's swarm of AI cursors link into a Reel (review); no new priority 1 news since the last run, so November 5's last news slots stay for the two utility posts.",
+    "considered": [
+      {
+        "story": "Mahir's link: swarm of AI agent cursors working on one computer (@EHuanglu video, Instagram repost)",
+        "source": "https://www.instagram.com/reel/DfWg8K-zPsl/",
+        "decision": "queued",
+        "job_id": "2026-11-05-ai-agent-cursor-swarm-one-screen-reel",
+        "priority": 1
+      },
+      {
+        "story": "Anthropic signs its first digital publisher deal with the AP",
+        "decision": "skipped",
+        "reason": "Still only Adweek's report with no independent second source."
+      },
+      {
+        "story": "Cat Wu joins OpenAI to lead core product management",
+        "decision": "covered",
+        "reason": "Follow up to 2026-11-04-cat-wu-leaves-claude-code."
+      },
+      {
+        "story": "Claude finds two critical Xen VM escape flaws (XSA-523)",
+        "decision": "skipped",
+        "reason": "Advisory is from November 3, past the timely window."
+      },
+      {
+        "story": "Google backstops TeraWulf's $19 billion Anthropic Kentucky lease",
+        "decision": "skipped",
+        "reason": "Too close to today's Anthropic Riot Texas campus post."
+      },
+      {
+        "story": "Microsoft passes on doubling its Nscale Texas data center deal",
+        "decision": "skipped",
+        "reason": "FT report, paywalled and not read in full; low consumer interest."
+      },
+      {
+        "story": "Ohio voters pass data center bans in 14 cities",
+        "decision": "skipped",
+        "reason": "Political ballot story, and November 5 is near the cap with two utility slots still to fill."
+      },
+      {
+        "story": "OpenAI to acquire Pierre Computer Company",
+        "decision": "skipped",
+        "reason": "Small developer tools deal, already context in the Meta Conductor job."
       }
     ],
     "requests": []
