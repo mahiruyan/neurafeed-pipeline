@@ -20,6 +20,7 @@ jobs:
         with:
           path: ~/.cache/puppeteer
           key: puppeteer-${{ runner.os }}-v1
+      - run: python3 -m pip install --quiet "rembg[cpu]" pillow
       - run: npm install --no-audit --no-fund
       - run: which ffmpeg || (sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg)
       - run: node tools/cover-samples.js /tmp/cover-samples
