@@ -65,6 +65,21 @@ async function renderJob(job, imagePaths, outDir, badgePaths = []) {
       fs.writeFileSync(htmlFile, html);
       await tab.goto(fileUrl(htmlFile), { waitUntil: 'load' });
       await tab.evaluate(() => document.fonts.ready);
+      // Headlines marked data-fit get the largest font size that fits their box (measured in the
+      // browser), so a short headline is set much bigger than a long one.
+      await tab.evaluate(() => {
+        for (const el of document.querySelectorAll('[data-fit="1"]')) {
+          const max = Number(el.dataset.max), min = Number(el.dataset.min), h = Number(el.dataset.h);
+          let lo = min, hi = max, best = min;
+          while (lo <= hi) {
+            const mid = Math.floor((lo + hi) / 2);
+            el.style.fontSize = `${mid}px`;
+            const ok = el.getBoundingClientRect().height <= h && el.scrollWidth <= el.clientWidth + 1;
+            if (ok) { best = mid; lo = mid + 1; } else hi = mid - 1;
+          }
+          el.style.fontSize = `${best}px`;
+        }
+      });
       // Instagram's API accepts JPEG only.
       const out = path.join(outDir, `${i + 1}.jpg`);
       await tab.screenshot({ path: out, type: 'jpeg', quality: 92 });

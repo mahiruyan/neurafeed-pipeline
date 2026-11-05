@@ -119,7 +119,7 @@ ${coverBadges(s, badges)}
 ${corner}
 <div style="position:absolute;top:790px;left:0;width:1080px;height:560px;box-sizing:border-box;padding:0 40px 40px;display:flex;flex-direction:column;align-items:center;justify-content:space-between">
 <div style="width:100%;display:flex;align-items:center;gap:22px"><div style="flex-grow:1;height:3px;background:#fff;opacity:.8"></div><img src="${logo}" style="width:52px;height:52px"><div style="flex-grow:1;height:3px;background:#fff;opacity:.8"></div></div>
-<h1 style="margin:0;font-family:Anton;font-weight:400;font-size:${size}px;line-height:.98;text-transform:uppercase;text-align:center;letter-spacing:-1px">${hl(s.headline)}</h1>
+<h1 data-fit="${s.size ? 0 : 1}" data-max="200" data-min="72" data-h="410" style="margin:0;width:1000px;font-family:Anton;font-weight:400;font-size:${size}px;line-height:.98;text-transform:uppercase;text-align:center;letter-spacing:-1px">${hl(s.headline)}</h1>
 ${s.single ? `<div style="font-family:'Bebas Neue';font-size:40px;letter-spacing:3px">Follow <span style="color:${ACC}">@neurafeed.ai</span> for daily AI news</div>` : `<div style="display:flex;align-items:center;gap:10px;font-family:'Bebas Neue';font-size:34px;letter-spacing:3px;border:2px solid rgba(255,255,255,.75);border-radius:40px;padding:4px 22px 2px">Swipe ${arrow}</div>`}
 </div></div>`;
 }
