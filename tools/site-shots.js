@@ -10,7 +10,7 @@ const PAGES = ['/', '/latest', '/news/anthropic-reportedly-tests-ai-model-that-i
   const report = [];
   for (const [name, vp] of [['phone', { width: 390, height: 844, deviceScaleFactor: 2, isMobile: true, hasTouch: true }], ['desktop', { width: 1440, height: 900, deviceScaleFactor: 1 }]]) {
     for (const p of PAGES) {
-      const page = await b.newPage(); await page.setViewport(vp);
+      const page = await b.newPage(); await page.setViewport(vp); await require('./no-analytics')(page);
       if (name === 'phone') await page.setUserAgent('Mozilla/5.0 (iPhone; CPU iPhone OS 18_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.0 Mobile/15E148 Safari/604.1');
       const errors = [];
       page.on('console', (m) => { if (m.type() === 'error') errors.push(m.text().slice(0, 160)); });

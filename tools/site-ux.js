@@ -9,7 +9,7 @@ const note = (ok, text) => { out.push(`${ok ? 'OK ' : 'ISSUE '}${text}`); };
   const b = await puppeteer.launch({ args: ['--no-sandbox'] });
   // Desktop: search popover.
   {
-    const p = await b.newPage(); await p.setViewport({ width: 1440, height: 900 });
+    const p = await b.newPage(); await require('./no-analytics')(p); await p.setViewport({ width: 1440, height: 900 });
     await p.goto(BASE + '/about', { waitUntil: 'networkidle2' });
     const open = () => p.$eval('details.site-search', (d) => d.open).catch(() => null);
     await p.click('details.site-search > summary').catch(() => {});
@@ -29,7 +29,7 @@ const note = (ok, text) => { out.push(`${ok ? 'OK ' : 'ISSUE '}${text}`); };
   }
   // Phone: mobile menu, tap targets, unnamed controls on key pages.
   for (const path of ['/about', '/advertise', '/latest', '/tools', '/contact']) {
-    const p = await b.newPage();
+    const p = await b.newPage(); await require('./no-analytics')(p);
     await p.setViewport({ width: 390, height: 844, deviceScaleFactor: 2, isMobile: true, hasTouch: true });
     await p.goto(BASE + path, { waitUntil: 'networkidle2' });
     if (path === '/about') {
@@ -62,7 +62,7 @@ const note = (ok, text) => { out.push(`${ok ? 'OK ' : 'ISSUE '}${text}`); };
   }
   // Link page.
   {
-    const p = await b.newPage(); await p.setViewport({ width: 390, height: 844, isMobile: true, hasTouch: true });
+    const p = await b.newPage(); await require('./no-analytics')(p); await p.setViewport({ width: 390, height: 844, isMobile: true, hasTouch: true });
     await p.goto('https://links.neurafeedai.com/', { waitUntil: 'networkidle2' });
     const hrefs = await p.$$eval('.link-page__list a', (as) => as.map((a) => a.getAttribute('href')));
     note(hrefs.length > 0 && hrefs.every((h) => /^\/go\/l\//.test(h) || /^https:/.test(h)), `link page buttons: ${hrefs.length}`);
@@ -72,7 +72,7 @@ const note = (ok, text) => { out.push(`${ok ? 'OK ' : 'ISSUE '}${text}`); };
   }
   // 404 page offers a way back.
   {
-    const p = await b.newPage(); await p.goto(BASE + '/nope-' + Date.now(), { waitUntil: 'networkidle2' });
+    const p = await b.newPage(); await require('./no-analytics')(p); await p.goto(BASE + '/nope-' + Date.now(), { waitUntil: 'networkidle2' });
     const back = await p.$$eval('main a', (as) => as.map((a) => a.getAttribute('href')));
     note(back.some((h) => h === '/' || h === '/latest'), `404 page links back (${back.slice(0, 4).join(', ')})`);
     await p.close();

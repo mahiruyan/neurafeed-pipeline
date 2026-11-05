@@ -38,7 +38,7 @@ const VARIANTS = {
   for (const [name, vp] of [['phone', { width: 390, height: 844, deviceScaleFactor: 2, isMobile: true, hasTouch: true }], ['desktop', { width: 1440, height: 900, deviceScaleFactor: 1 }]]) {
     for (const [v, { css, js }] of Object.entries(VARIANTS)) {
       if (process.env.MOCK_ONLY && !process.env.MOCK_ONLY.split(',').includes(v)) continue;
-      const page = await b.newPage(); await page.setViewport(vp);
+      const page = await b.newPage(); await page.setViewport(vp); if (!process.env.MOCK_PROBE) await require('./no-analytics')(page);
       if (process.env.MOCK_IMG) await page.setBypassCSP(true);
       const probe = { errors: [], google: [] };
       page.on('console', (m) => { if (m.type() === 'error') probe.errors.push(m.text().slice(0, 200)); });
