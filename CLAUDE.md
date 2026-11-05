@@ -213,37 +213,28 @@ Aim for about one of these a day when a fitting story exists; they count as norm
 
 ## AI-generated cover images
 
-A cover can use an AI-generated "idea" image instead of a photo: set `image.generate` to an
-English prompt (keep `image.url` as a fallback photo). Use it whenever an image of the idea hits
-harder than a plain photo, like the big AI news accounts do: dramatic, emotional, symbolic scenes
-(a hand covering someone's mouth for "forbidden words", rows of blindfolded students for "people
-missing out", a person standing over a broken robot for "AI abuse"). Well-known people can appear
-in these scenes. Keep the scene clearly symbolic (robots, surreal elements, exaggeration), never a
-believable fake photo of a real event that did not happen.
-- `image.refs`: 1 to 4 image URLs the model must build the scene from: the company logo, the real
-  product or chip photo, the CEO's real photo, the mascot. Always pass refs: the cover must make
-  people think of the company in one second (Microsoft's four colored squares, Meta's blue
-  infinity logo and the Muse mascot, OpenAI's black knot, Claude's orange asterisk, NVIDIA green).
-  Say in the prompt which ref is what ("the man in the first image", "the chip in the second
-  image", "the logo in the third image, glowing on the wall") and keep faces and logos exact.
-- The model writes fake text on objects (chips, screens, signs). Always say "blank surfaces, no
-  readable text or labels on any object" in the prompt.
-- Always end the prompt with: "It must look like an unedited real photo from a news agency, not a
-  painting, not digital art, no glow effects." and ask for headroom above the person's head
-  (the top of the frame is cropped slightly on the cover).
-- Photorealistic, high contrast, one clear subject, vertical composition, subject in the upper two
-  thirds (the bottom third is covered by the headline), no text, no letters, no watermarks.
-- Generated covers are made with Seedream 5.0 Pro (about $0.07 each), no daily limit. The pipeline
-  appends realism instructions automatically (candid news photo, grain, real skin, no retouching),
-  so write the scene, not the camera style.
-- When the story is about a person, the FIRST ref must be a real, recent news photo of that person
-  (face clearly visible, at least 800 px) and the prompt calls them "the man/woman in the first
-  image". Never generate a known person without their real photo as a ref.
-- Logos may be part of the scene when given as a ref (a logo on a crate, a wall, a big screen):
-  "the logo from the second image, big and exact". This works well with Seedream. Mascots are never
-  drawn by the model: put the real mascot PNG on as a free badge instead.
-- Make the scene imperfect and real: a cluttered warehouse, a crowded exchange floor, a dim data
-  center aisle, harsh fluorescent light. No clean studio, no perfect symmetry, no glowing sci-fi.
+Generated covers must look like a real photo taken with a real camera. Our earlier generated covers
+looked like oil paintings and AI slop because we asked the model to invent whole symbolic scenes
+(robots in ski masks, glowing screens, robot hands). Do not do that any more.
+
+The method: start from a REAL photo and ask for ONE small, concrete change. Most of the frame
+stays real, so the result reads as a photo.
+- `image.refs`: the first ref is the real photo the cover is built on: a face library photo
+  (`node tools/face.js`) or the best real photo from the source article. Optional second ref: a
+  real product photo the scene needs. Never pass logos as refs: logos go on as badges.
+- `image.generate`: one or two short sentences, written like a news photo caption, that say the
+  one change. Examples: "The man in the first image holds a thick stack of hundred dollar bills
+  and looks at it with a worried face." "Same photo, but the screen behind the woman in the first
+  image shows a red error warning." "The man in the first image sits alone at a long empty
+  boardroom table at night."
+- Never use these words: dramatic, cinematic, epic, glowing, neon, futuristic, surreal, hyper
+  realistic, 8k, masterpiece, digital art, render, robot (unless the story is about a real robot).
+- No crowds of invented people, no fake events that read as real news (an arrest, a crash, a
+  protest that did not happen), no readable text.
+- The pipeline adds the camera facts and a light film grain, so do not describe the camera.
+- Keep the same real photo in `image.url` too: if generation fails, the real photo is used.
+- Use a generated cover only when the change makes the story hit harder (money, worry, a
+  surprising object). A plain strong real photo is better than a weak edit.
 
 ## Face library (real photos of people in AI news)
 
@@ -270,10 +261,9 @@ How to choose the cover, for every carousel. Ask two questions about the best re
 2. Is it striking: a face with emotion, a dramatic moment, a surprising object?
 If both are yes, use the real photo (plus logo badge). If the story is about a person in the face
 library, use the library photo (above). Otherwise, if either is no (generic chip, server room,
-stock image, plain press render, logo on white, no usable photo), generate the cover with refs.
-A generated cover always keeps a good real photo in `image.url` (a library face when someone is
-involved): if generation fails, that photo is used instead, so never leave a logo or an office
-building there.
+stock image, plain press render, logo on white, no usable photo), use a generated edit of the
+best real photo (see AI-generated cover images). Never leave a logo or an office building as the
+cover photo.
 
 ## Utility posts (two per day)
 
