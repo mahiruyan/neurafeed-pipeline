@@ -1,76 +1,5 @@
 [
   {
-    "run_at": "2026-10-30T07:55:34.286Z",
-    "summary": "Pre-dawn run (03:55 New York, Oct 30): no open links or requests, no new priority 1 story since the last run, and Oct 30 already has 7 jobs waiting, so nothing was queued; the last slot stays open for morning news.",
-    "considered": [
-      {
-        "story": "OpenAI four-layer misalignment monitoring flagged a model reaching the internet",
-        "source": "https://openai.com/index/how-we-detect-frontier-model-misalignment/",
-        "decision": "covered",
-        "reason": "Already queued as 2026-10-30-openai-monitor-caught-model-reaching-internet."
-      },
-      {
-        "story": "OpenAI doubles ChatGPT Pro limits and cancels the Pro 200 cut",
-        "source": "https://www.ghacks.net/2026/10/30/openai-doubles-chatgpt-pro-and-business-premium-usage-limits-after-dropping-a-planned-pro-200-cut/",
-        "decision": "covered",
-        "reason": "Already queued as 2026-10-30-chatgpt-pro-limits-doubled-cut-canceled."
-      },
-      {
-        "story": "Nvidia to guarantee Nscale debt for a 460MW Anthropic build",
-        "source": "https://cryptobriefing.com/nvidia-credit-support-nscale-anthropic-deal/",
-        "decision": "skipped",
-        "reason": "Financing detail from a single secondary report, and only one slot is left for Oct 30."
-      },
-      {
-        "story": "UMG settles its Udio lawsuit and signs a licensing deal for a new AI music platform",
-        "source": "https://www.prnewswire.com/news-releases/universal-music-group-and-udio-announce-udios-first-strategic-agreements-for-new-licensed-ai-music-creation-platform-302599129.html",
-        "decision": "skipped",
-        "reason": "Interesting but not priority 1; keeping the last Oct 30 slot for bigger morning news."
-      },
-      {
-        "story": "DeepSeek closes a $16B round led by China's state Big Fund (The Information)",
-        "source": "https://www.theinformation.com/articles/behind-deepseeks-16-billion-funding-chinese-tech-titans-state-players",
-        "decision": "skipped",
-        "reason": "Paywalled single report not read in full, no second confirmed source yet."
-      },
-      {
-        "story": "Reddit CEO says Google AI Mode sends little traffic, plans a mostly logged-in site",
-        "source": "https://www.theverge.com/tech/1022848/reddit-ceo-google-ai-mode-traffic",
-        "decision": "skipped",
-        "reason": "Day is one short of the cap; better candidates may come in the morning."
-      },
-      {
-        "story": "Anthropic expands AI for Science to 20 research organizations",
-        "source": "https://www.anthropic.com/news/ai-for-science-expands-foundations-research-institutions",
-        "decision": "skipped",
-        "reason": "Program expansion with modest consumer interest, and Anthropic already has a queued post today."
-      },
-      {
-        "story": "Canada takes an equity stake in Cohere for up to C$1.6 billion",
-        "source": "https://www.semafor.com/article/10/29/2026/canada-to-take-equity-stake-in-ai-firm",
-        "decision": "skipped",
-        "reason": "Canadian policy funding story with limited US appeal."
-      },
-      {
-        "story": "CrowdStrike: Vapor Panda ran DeepSeek-powered attacks on 200+ targets",
-        "source": "https://www.crowdstrike.com/en-us/blog/vapor-panda-uses-artex-to-scale-global-campaign/",
-        "decision": "skipped",
-        "reason": "Security vendor report, niche for the audience, and the day is nearly full."
-      },
-      {
-        "story": "Anthropic sued over Elvis catalog (TechRadar)",
-        "decision": "covered",
-        "reason": "Already covered as 2026-10-24-elvis-rights-holders-sue-anthropic."
-      },
-      {
-        "story": "Accenture staffer's personal Claude agent on a DOD network (Wired)",
-        "decision": "skipped",
-        "reason": "Passed over in earlier runs; contractor security incident, not Anthropic news."
-      }
-    ],
-    "requests": []
-  },
-  {
     "run_at": "2026-10-30T10:00:47.445Z",
     "summary": "Dawn run (05:55 New York, Oct 30): no open links or requests and no new priority 1 story overnight; Oct 30 already has 7 jobs, so nothing was queued and the last slot stays open for morning news.",
     "considered": [
@@ -5009,6 +4938,60 @@
         "story": "Anthropic IPO timing threatened by AI backlash (Reuters)",
         "decision": "covered",
         "reason": "Already queued as 2026-11-06-anthropic-ipo-investors-balk-selloff."
+      }
+    ],
+    "requests": []
+  },
+  {
+    "run_at": "2026-11-06T08:59:39.026Z",
+    "summary": "Early morning run (about 04:00 New York): no open links or requests, no new priority 1 story since the last run; November 6 already has 6 jobs and the 2 utility posts due after 11:00 fill the 8 job cap, so nothing was queued.",
+    "considered": [
+      {
+        "story": "Claude Code reportedly put users' email address in the User-Agent header of web requests (GitHub issue, top of Hacker News)",
+        "source": "https://news.lavx.hu/article/claude-code-leaked-user-emails-in-web-search-headers-anthropic-deploys-privacy-fix",
+        "decision": "skipped",
+        "reason": "Still only small blogs (LavX, StartupHub) that disagree on which version has the fix, no reputable outlet or Anthropic statement I could read, and the GitHub issue could not be opened."
+      },
+      {
+        "story": "Mark Cuban says Facebook knowingly runs AI deepfake scam ads, $16 billion in fraud revenue",
+        "source": "https://www.ibtimes.co.uk/mark-cuban-facebook-ai-deepfake-diabetes-scams-1824187",
+        "decision": "skipped",
+        "reason": "The $16 billion figure is an old 2025 Reuters report and the new part is an opinion; November 6 has no free slot left for a priority 2 story."
+      },
+      {
+        "story": "Google sued over a teen's Gemini chats on a school Chromebook",
+        "decision": "skipped",
+        "reason": "Sensitive suicide-related lawsuit, still no strong national outlet found to confirm the details."
+      },
+      {
+        "story": "DOJ charges three people for using AI to impersonate executives in a $129 million fraud",
+        "decision": "skipped",
+        "reason": "Crime story with no AI company angle and no free slot today."
+      },
+      {
+        "story": "OpenAI forms JPMorgan partnership ahead of a 2027 IPO",
+        "decision": "skipped",
+        "reason": "Overlaps with the Brockman IPO post from November 5; only PYMNTS in the leads."
+      },
+      {
+        "story": "Linum trains a decent text-to-image model for about $20K with open weights (Show HN)",
+        "decision": "skipped",
+        "reason": "Niche developer story with little US consumer appeal."
+      },
+      {
+        "story": "Anthropic IPO timing threatened by AI backlash",
+        "decision": "covered",
+        "reason": "Already queued as 2026-11-06-anthropic-ipo-investors-balk-selloff."
+      },
+      {
+        "story": "OpenAI data center pledges and fewer NDAs after the midterms",
+        "decision": "covered",
+        "reason": "Already queued as 2026-11-06-openai-data-centers-pay-own-power."
+      },
+      {
+        "story": "Gemini Omni makes 15-second videos",
+        "decision": "covered",
+        "reason": "Already queued as 2026-11-06-gemini-omni-15-second-videos-free."
       }
     ],
     "requests": []
