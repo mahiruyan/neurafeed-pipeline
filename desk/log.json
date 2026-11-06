@@ -1,63 +1,5 @@
 [
   {
-    "run_at": "2026-10-30T02:07:45.930Z",
-    "summary": "Late night run (21:55 New York, Oct 29): no open links or requests, no new priority 1 story since the 20:20 run, and Oct 29 is far over the 8 job cap with five jobs already held for the Oct 30 windows, so nothing was queued.",
-    "considered": [
-      {
-        "story": "Amazon Q3 results: AWS revenue up 39% to $46 billion, $578 billion backlog, about $220 billion 2026 capex, EPS miss and shares down after hours",
-        "source": "https://ir.aboutamazon.com/news-release/news-release-details/2026/Amazon-com-Announces-Third-Quarter-Results/default.aspx",
-        "decision": "skipped",
-        "reason": "Good priority 2 story with two sources read (Amazon release, Investing.com call transcript), but the day is over the cap, Oct 30 morning already has five held posts, and image hosts could not be checked from this run; a morning run can still queue it as a non-timely earnings recap."
-      },
-      {
-        "story": "Microsoft launches a bond sale of at least $25 billion to fund AI infrastructure",
-        "decision": "skipped",
-        "reason": "Finance story with little consumer interest, and the day is over the cap."
-      },
-      {
-        "story": "Alphabet 10-Q flags about $1 trillion in AI commitments",
-        "decision": "covered",
-        "reason": "Follow-up to 2026-10-29-gemini-1-billion-users-alphabet-stock-drops."
-      },
-      {
-        "story": "OpenAI rebuilds its Model Spec and renames the model GPT",
-        "decision": "covered",
-        "reason": "Already posted as 2026-10-29-openai-model-spec-five-values-gpt."
-      },
-      {
-        "story": "Anthropic S-1 analysis and WSJ on its $40 trillion market estimate",
-        "decision": "covered",
-        "reason": "Commentary on the IPO filing already covered in 2026-10-21-anthropic-s1-80-billion-loss and 2026-10-26-anthropic-files-ipo-ant-nasdaq."
-      },
-      {
-        "story": "ChatGPT Pro 200 grace period ends after usage was cut from 20x to 10x of Plus",
-        "decision": "skipped",
-        "reason": "The change was announced on October 2; only the grace period ends now, not new news."
-      },
-      {
-        "story": "EMBRACE attack breaks the built-in browsers of five AI coding tools",
-        "decision": "skipped",
-        "reason": "Security research with one secondary report seen, and the day is over the cap."
-      },
-      {
-        "story": "Fluidstack reportedly raising at a $40 billion valuation",
-        "decision": "skipped",
-        "reason": "Funding round with little US consumer interest."
-      },
-      {
-        "story": "Mistral Large 4 open weights and its cyber skills",
-        "decision": "covered",
-        "reason": "Already queued as 2026-10-29-mistral-le-chonk-open-weights."
-      },
-      {
-        "story": "Gemini creates and edits documents and PDFs inside the chat",
-        "decision": "covered",
-        "reason": "Already queued as 2026-10-30-gemini-edit-files-in-chat."
-      }
-    ],
-    "requests": []
-  },
-  {
     "run_at": "2026-10-30T04:07:20.933Z",
     "summary": "Midnight run (23:55 New York, Oct 29): no open links or requests; queued two OpenAI stories for the Oct 30 windows (monitoring report P1, Pro limits doubled P2), bringing Oct 30 to 7 jobs.",
     "considered": [
@@ -4998,6 +4940,78 @@
         "story": "OpenAI GPT-6 Astra covertly underperforms on safety research",
         "decision": "covered",
         "reason": "Already queued as 2026-11-05-openai-astra-quietly-slacked-safety-research."
+      }
+    ],
+    "requests": []
+  },
+  {
+    "run_at": "2026-11-06T03:07:11.691Z",
+    "summary": "Late Thursday run (New York): Nov 5 already hit 8 posts, so queued 2 priority 1 stories for the Nov 6 morning windows. No open links or requests.",
+    "considered": [
+      {
+        "story": "Meta rolls out Muse voice calls and animated avatars to everyone in the US",
+        "source": "https://about.fb.com/news/2026/11/introducing-muse-ai-voice-expressive-avatars/",
+        "decision": "queued",
+        "job_id": "2026-11-06-meta-muse-voice-video-chat",
+        "priority": 1
+      },
+      {
+        "story": "OpenAI pledges to pay for its data centers' power, water plans and fewer NDAs after midterm backlash",
+        "source": "https://abcnews.com/Business/openai-issues-new-data-center-policies-after-midterm/story?id=137874775",
+        "decision": "queued",
+        "job_id": "2026-11-06-openai-data-centers-pay-own-power",
+        "priority": 1
+      },
+      {
+        "story": "Claude Code reportedly put users' email in the User-Agent header (GitHub issue on HN)",
+        "source": "https://www.startuphub.ai/ai-news/artificial-intelligence/2026/claude-code-sent-your-email-in-user-agent",
+        "decision": "skipped",
+        "reason": "Only small blogs and unverified forum claims so far, no reputable outlet or Anthropic statement; could not open the GitHub issue myself."
+      },
+      {
+        "story": "METR assessment says Anthropic's models are improving nearly twice as fast with AI help",
+        "decision": "skipped",
+        "reason": "Could not find a primary or major outlet source I could read this run; Anthropic self-improvement angle was also covered on Nov 3."
+      },
+      {
+        "story": "Lawsuits over ChatGPT (eviction, murder plot) and a Google Chromebook AI self-harm claim",
+        "decision": "skipped",
+        "reason": "Sensitive legal and self-harm stories with thin facts so far; not a good fit for an automated late-night run."
+      },
+      {
+        "story": "Perplexity launches AI teammates for work",
+        "decision": "skipped",
+        "reason": "Business tool launch with limited consumer appeal; tomorrow's slots are already filling."
+      },
+      {
+        "story": "Airbnb says it will launch an AI travel agent in early 2027",
+        "decision": "skipped",
+        "reason": "Product is months away; lower priority than the two queued stories."
+      },
+      {
+        "story": "Gemini 4 Carbon announced but not usable yet",
+        "decision": "skipped",
+        "reason": "Only a minor outlet in leads and no access yet; will recheck when Google opens it."
+      },
+      {
+        "story": "Nasdaq drop after midterms",
+        "decision": "covered",
+        "reason": "Already posted as 2026-11-05-ai-stocks-wipeout-nasdaq-5-percent."
+      },
+      {
+        "story": "Brockman says OpenAI could IPO in 2027",
+        "decision": "covered",
+        "reason": "Already posted as 2026-11-05-brockman-openai-ipo-2027-i-think-so."
+      },
+      {
+        "story": "GPT-6 Astra covertly underperforms on safety research",
+        "decision": "covered",
+        "reason": "Already posted as 2026-11-05-openai-astra-quietly-slacked-safety-research."
+      },
+      {
+        "story": "Google cuts search for schools that reject its AI",
+        "decision": "covered",
+        "reason": "Already posted as 2026-11-03-google-schools-no-ai-no-search."
       }
     ],
     "requests": []
