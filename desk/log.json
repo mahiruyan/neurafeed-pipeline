@@ -1,69 +1,5 @@
 [
   {
-    "run_at": "2026-10-30T05:54:36.685Z",
-    "summary": "Early morning run (01:55 New York, Oct 30): no open links or requests, no new priority 1 story since the midnight run, and Oct 30 already has 7 jobs held, so nothing was queued; the last slot is left open for morning news.",
-    "considered": [
-      {
-        "story": "OpenAI details how it detects frontier model misalignment",
-        "source": "https://openai.com/index/how-we-detect-frontier-model-misalignment/",
-        "decision": "covered",
-        "reason": "Already queued as 2026-10-30-openai-monitor-caught-model-reaching-internet."
-      },
-      {
-        "story": "OpenAI doubles ChatGPT Pro limits and drops the planned Pro 200 cut",
-        "decision": "covered",
-        "reason": "Already queued as 2026-10-30-chatgpt-pro-limits-doubled-cut-canceled."
-      },
-      {
-        "story": "OpenAI updated Model Spec, assistant renamed GPT",
-        "source": "https://openai.com/index/updated-model-spec/",
-        "decision": "covered",
-        "reason": "Already posted as 2026-10-29-openai-model-spec-five-values-gpt."
-      },
-      {
-        "story": "Anthropic is over a third of SpaceX Q3 revenue (Bloomberg)",
-        "decision": "covered",
-        "reason": "Already queued as 2026-10-29-anthropic-spacex-biggest-customer."
-      },
-      {
-        "story": "Gemini app redesign on Android and in-chat file generation",
-        "decision": "covered",
-        "reason": "Already queued as 2026-10-30-gemini-edit-files-in-chat."
-      },
-      {
-        "story": "Accenture staffer's personal Claude agent sat on a DOD network for two months (Wired)",
-        "decision": "skipped",
-        "reason": "Security incident at a contractor rather than Anthropic news, and only one slot is left for Oct 30; kept open for bigger morning news."
-      },
-      {
-        "story": "China sets frontier AI export limits at 10^26 FLOPs or 2T parameters",
-        "decision": "skipped",
-        "reason": "Only one secondary report seen so far, not enough confirmed sources, and day is nearly at the cap."
-      },
-      {
-        "story": "Cohere opens a $5B Series E at a $20.5B valuation",
-        "decision": "skipped",
-        "reason": "Funding round with limited US consumer interest."
-      },
-      {
-        "story": "Collective raises $100M for AI bookkeeping",
-        "decision": "skipped",
-        "reason": "Small startup funding round."
-      },
-      {
-        "story": "AWS will be a $1T business, Jassy says (TechCrunch)",
-        "decision": "skipped",
-        "reason": "Earnings follow-up already passed over in earlier runs; little new."
-      },
-      {
-        "story": "Dartmouth provost resigns over accusations he used AI for writing",
-        "decision": "skipped",
-        "reason": "Local story, skipped in earlier runs, and only one slot left for the day."
-      }
-    ],
-    "requests": []
-  },
-  {
     "run_at": "2026-10-30T07:55:34.286Z",
     "summary": "Pre-dawn run (03:55 New York, Oct 30): no open links or requests, no new priority 1 story since the last run, and Oct 30 already has 7 jobs waiting, so nothing was queued; the last slot stays open for morning news.",
     "considered": [
@@ -5013,6 +4949,66 @@
         "story": "OpenAI deal with Abu Dhabi government to speed up processing",
         "decision": "skipped",
         "reason": "Government services deal with little interest for US readers."
+      }
+    ],
+    "requests": []
+  },
+  {
+    "run_at": "2026-11-06T07:06:55.703Z",
+    "summary": "Made Mahir's X link into a Reel (We were always blue) and queued one Google story; Nov 6 already has four news posts waiting, so the rest is left for daytime runs.",
+    "considered": [
+      {
+        "story": "Mahir's link: Ari Kuschnir's satirical corporate song \"We were always blue\"",
+        "source": "https://x.com/arikuschnir/status/2118433753030922551",
+        "decision": "queued",
+        "job_id": "2026-11-06-we-were-always-blue-corporate-song-reel",
+        "priority": 1,
+        "reason": "From Mahir's link, with his headline and credit. Marked sensitive because the joke is about politics after the election, so it waits for his approval on Telegram. I could not open X from here, so the caption stays general and does not say the clip is AI-made."
+      },
+      {
+        "story": "Google makes Gemini Omni 1.2 Flash available: 15-second videos, free clips in Google Vids, 30 percent cheaper API",
+        "source": "https://thenextweb.com/news/google-gemini-omni-1-2-flash-video-15-seconds-price-cut",
+        "decision": "queued",
+        "job_id": "2026-11-06-gemini-omni-15-second-videos-free",
+        "priority": 1,
+        "reason": "Major Google launch with an everyone angle (three free 15-second videos a month in Google Vids); confirmed by The Next Web, The Decoder and Fone Arena. Not timely any more, so timely is false."
+      },
+      {
+        "story": "Mark Cuban says Facebook knowingly runs AI deepfake scam ads",
+        "source": "https://finance.yahoo.com/technology/ai/articles/mark-cuban-says-facebook-knowingly-213000020.html",
+        "decision": "skipped",
+        "reason": "Opinion claim that still has only one source in the leads; left for the daytime run, and Nov 6 already has four news posts waiting."
+      },
+      {
+        "story": "Claude Code reportedly sends users' email address to websites (GitHub issue)",
+        "source": "https://github.com/anthropics/claude-code/issues/107757",
+        "decision": "skipped",
+        "reason": "Still only the GitHub issue; no reputable outlet or Anthropic statement found."
+      },
+      {
+        "story": "OpenAI forms JPMorgan partnership ahead of a 2027 IPO",
+        "decision": "skipped",
+        "reason": "Too close to the Brockman IPO post from Nov 5; only PYMNTS in the leads."
+      },
+      {
+        "story": "Google sued over a teen's AI chats on a school Chromebook",
+        "decision": "skipped",
+        "reason": "Sensitive suicide-related lawsuit, still only regional outlets."
+      },
+      {
+        "story": "Asian markets and Nikkei fall after the AI selloff",
+        "decision": "covered",
+        "reason": "Same story as 2026-11-05-ai-stocks-wipeout-nasdaq-5-percent."
+      },
+      {
+        "story": "OpenAI data center pledges after the midterms",
+        "decision": "covered",
+        "reason": "Already queued as 2026-11-06-openai-data-centers-pay-own-power."
+      },
+      {
+        "story": "Anthropic IPO timing threatened by AI backlash (Reuters)",
+        "decision": "covered",
+        "reason": "Already queued as 2026-11-06-anthropic-ipo-investors-balk-selloff."
       }
     ],
     "requests": []
