@@ -1,67 +1,5 @@
 [
   {
-    "run_at": "2026-10-30T10:00:47.445Z",
-    "summary": "Dawn run (05:55 New York, Oct 30): no open links or requests and no new priority 1 story overnight; Oct 30 already has 7 jobs, so nothing was queued and the last slot stays open for morning news.",
-    "considered": [
-      {
-        "story": "OpenAI-backed Thrive Holdings to buy ADT ($7.6B equity, $15.3B enterprise value)",
-        "source": "https://finance.yahoo.com/technology/ai/articles/openai-backed-thrive-holdings-acquires-195619167.html",
-        "decision": "skipped",
-        "reason": "Now confirmed by TechCrunch and Investing.com, but it broke yesterday morning, no AI products were announced, and the last Oct 30 slot is better kept for fresh morning news."
-      },
-      {
-        "story": "Humanist worker wins a religious exemption from using AI at work (TechCrunch)",
-        "source": "https://www.computerworld.com/article/4184617/software-engineer-reportedly-wins-religious-exemption-from-ai-use-2.html",
-        "decision": "skipped",
-        "reason": "Similar exemption stories date back to June, and only one fresh report seen; weak for the last slot."
-      },
-      {
-        "story": "Companies quietly reversing AI-driven layoffs (Washington Post)",
-        "source": "https://www.washingtonpost.com/business/2026/10/29/ai-jobs-layoffs-hiring-rebounding-skills/71f09614-d3bd-11f1-9931-2a41b76fc976_story.html",
-        "decision": "skipped",
-        "reason": "Trend piece on a theme covered widely since August, and layoff stories need manual approval."
-      },
-      {
-        "story": "India's AM Intelligence seeks $3B to buy 9,000 Nvidia Rubin GPUs (Bloomberg)",
-        "source": "https://www.bloomberg.com/news/articles/2026-10-30/indian-ai-firm-seeks-3-billion-financing-for-nvidia-chips-order",
-        "decision": "skipped",
-        "reason": "Financing talks at a little-known Indian firm, low US interest."
-      },
-      {
-        "story": "Tencent and Alibaba in talks to back DeepSeek at $20B+ (The Information)",
-        "decision": "skipped",
-        "reason": "Paywalled single report on funding talks, no second source."
-      },
-      {
-        "story": "Meta launches Style Sketch AI fashion app in Southeast Asia",
-        "source": "https://techcrunch.com/2026/10/29/meta-quietly-launches-an-ai-fashion-app-called-style-sketch/",
-        "decision": "skipped",
-        "reason": "Not available in the US, small test launch."
-      },
-      {
-        "story": "OpenAI four-layer misalignment monitoring",
-        "decision": "covered",
-        "reason": "Already queued as 2026-10-30-openai-monitor-caught-model-reaching-internet."
-      },
-      {
-        "story": "OpenAI doubles ChatGPT Pro limits and drops the Pro 200 cut",
-        "decision": "covered",
-        "reason": "Already queued as 2026-10-30-chatgpt-pro-limits-doubled-cut-canceled."
-      },
-      {
-        "story": "Mistral releases Large 4 open weights",
-        "decision": "covered",
-        "reason": "Covered as 2026-10-29-mistral-le-chonk-open-weights."
-      },
-      {
-        "story": "Nvidia to guarantee Nscale debt for a 460MW Anthropic build",
-        "decision": "skipped",
-        "reason": "Financing detail passed over in the previous run, nothing new."
-      }
-    ],
-    "requests": []
-  },
-  {
     "run_at": "2026-10-30T12:23:01.638Z",
     "summary": "Morning run (08:40 New York, Oct 30): no open links or requests; queued two priority 2 carousels, CrowdStrike's report on China-linked hackers running DeepSeek-powered AI agents and Reddit going logged-in as search visits fall.",
     "considered": [
@@ -4992,6 +4930,66 @@
         "story": "Gemini Omni makes 15-second videos",
         "decision": "covered",
         "reason": "Already queued as 2026-11-06-gemini-omni-15-second-videos-free."
+      }
+    ],
+    "requests": []
+  },
+  {
+    "run_at": "2026-11-06T11:07:43.956Z",
+    "summary": "Morning run (about 06:00 New York): no open links or requests, no new priority 1 story; queued one priority 2 everyone story (Claude's hidden text watermark), which can carry over to Saturday if today's cap fills.",
+    "considered": [
+      {
+        "story": "Anthropic adds an invisible watermark to Claude's text for the EU AI Act; more older models get it on November 16",
+        "source": "https://the-decoder.com/anthropics-text-watermark-is-easy-to-bypass-on-several-older-claude-models/",
+        "decision": "queued",
+        "job_id": "2026-11-06-claude-text-hidden-watermark",
+        "priority": 2
+      },
+      {
+        "story": "Anthropic ships enterprise security controls for Claude (security center, tool call hooks)",
+        "decision": "skipped",
+        "reason": "Admin features for companies with little interest for normal users."
+      },
+      {
+        "story": "OpenAI October developer update: GPT-6.1 Sol Ultrafast, Decisions API, API credits for Pro and Business",
+        "decision": "skipped",
+        "reason": "Developer roundup seen only in a digest; could not read OpenAI's own post this run, and today is close to the cap."
+      },
+      {
+        "story": "Anthropic loosens Claude Code's ban on remaking games after developer complaints",
+        "source": "https://finance.biggo.com/news/35d6c901-1088-4e37-9d68-c9b8533c74be",
+        "decision": "skipped",
+        "reason": "Follow-up to 2026-10-31-claude-code-stops-remaking-video-games and only one weak source with no Anthropic statement."
+      },
+      {
+        "story": "AI selloff drives Asian markets to new lows (Bloomberg)",
+        "decision": "covered",
+        "reason": "Same story as 2026-11-05-ai-stocks-wipeout-nasdaq-5-percent."
+      },
+      {
+        "story": "SambaNova inference chips in Supermicro racks",
+        "decision": "skipped",
+        "reason": "Niche data center hardware story with little US consumer appeal."
+      },
+      {
+        "story": "Claude Code reportedly sends users' email address to websites (GitHub issue on Hacker News)",
+        "decision": "skipped",
+        "reason": "Still no reputable outlet or Anthropic statement found."
+      },
+      {
+        "story": "Mark Cuban says Facebook knowingly runs AI deepfake scam ads",
+        "decision": "skipped",
+        "reason": "Opinion claim built on an older report; no free slot for it today."
+      },
+      {
+        "story": "Google sued over a teen's AI chats on a school Chromebook",
+        "decision": "skipped",
+        "reason": "Sensitive suicide-related lawsuit, still no strong national outlet to confirm the details."
+      },
+      {
+        "story": "Claude Personal Finance, Anthropic IPO timing, Gemini Omni videos, OpenAI data center pledge, Meta Muse video chat",
+        "decision": "covered",
+        "reason": "Already queued for November 6."
       }
     ],
     "requests": []

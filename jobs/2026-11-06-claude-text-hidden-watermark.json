@@ -1,0 +1,115 @@
+{
+  "id": "2026-11-06-claude-text-hidden-watermark",
+  "created_at": "2026-11-06T11:20:00Z",
+  "story_time": "2026-11-04T12:00:00Z",
+  "timely": false,
+  "sensitive": false,
+  "priority": 2,
+  "review": true,
+  "format": "carousel",
+  "site_category": "policy",
+  "ab": { "headline": "long" },
+  "sources": [
+    { "name": "Anthropic", "url": "https://www.anthropic.com/news/claude-text-watermark" },
+    { "name": "The Decoder", "url": "https://the-decoder.com/anthropics-text-watermark-is-easy-to-bypass-on-several-older-claude-models/" },
+    { "name": "Techweez", "url": "https://techweez.com/2026/11/02/anthropic-is-bringing-text-watermarking-to-more-claude-models/" },
+    { "name": "TechCrunch", "url": "https://techcrunch.com/2026/08/11/anthropic-says-it-will-watermark-text-generated-by-its-ai-models/" }
+  ],
+  "caption": "Anthropic is adding an invisible watermark to the text Claude writes, to comply with the EU AI Act, and it applies worldwide.\nThere are no hidden characters. A secret key steers which words Claude picks, and the pattern survives copy and paste.\nMore older Claude models get it on November 16. Customers cannot switch it off.\n\nWould it change how you use Claude?\n\nFollow @neurafeed.ai for daily AI news.\n\nSource: Anthropic, The Decoder · Photo: Gustavo Fring / Pexels",
+  "threads_text": "Claude now hides an invisible watermark in the words it picks, and it stays there when you copy and paste. Anthropic says only approved groups like regulators, researchers and schools can check for it, and a full rewrite removes it. Does a hidden watermark make you trust AI text more or use Claude less?",
+  "slides": [
+    {
+      "kind": "cover",
+      "headline": "Every essay you write with Claude now hides an *invisible watermark*, and you cannot turn it off",
+      "image": {
+        "url": "https://www.notebookcheck.net/fileadmin/Notebooks/News/_nc5/claude-nutzungsrichtlinie-frust-laptop.jpg",
+        "credit": "Gustavo Fring / Pexels",
+        "fallback_urls": [
+          "https://techcrunch.com/wp-content/uploads/2026/06/GettyImages-2278736523.jpeg"
+        ],
+        "refs": [
+          "https://www.notebookcheck.net/fileadmin/Notebooks/News/_nc5/claude-nutzungsrichtlinie-frust-laptop.jpg"
+        ],
+        "generate": "The man in the first image has lowered his hands to the desk and stares at the laptop screen with a worried face."
+      },
+      "pos": "center 30%",
+      "badges": [
+        { "url": "assets/logos/claude.png", "shape": "free" }
+      ]
+    },
+    {
+      "kind": "card",
+      "heading": "A secret key *picks the words*",
+      "paras": [
+        "When several words fit equally well, Claude now lets a secret key choose instead of pure chance.",
+        "No hidden characters, no extra tokens. Anthropic says readers cannot tell the difference."
+      ],
+      "note": "Built on Google DeepMind's SynthID-Text method",
+      "image": {
+        "url": "https://the-decoder.com/wp-content/uploads/2026/08/Claude-Watermark.png",
+        "credit": "The Decoder",
+        "fallback_urls": [
+          "https://techweez.com/wp-content/uploads/2026/11/Claude-Watermark.webp"
+        ]
+      }
+    },
+    {
+      "kind": "card",
+      "heading": "It is spreading to *older Claude models*",
+      "paras": [
+        "Newer models like Opus 5.5 already have it. Mythos 5, Opus 4.7 and Sonnet 4.6 were next.",
+        "On November 16, Opus 4.6, Opus 4.5, Sonnet 4.5 and Haiku 4.5 join. It is the EU AI Act, applied worldwide."
+      ],
+      "image": {
+        "url": "https://techcrunch.com/wp-content/uploads/2026/06/GettyImages-2278736523.jpeg",
+        "credit": "Samuel Boivin / NurPhoto / Getty Images",
+        "fallback_urls": []
+      }
+    },
+    {
+      "kind": "card",
+      "heading": "Who can *check your text*",
+      "paras": [
+        "Not the public. A detection tool is in private preview for regulators, researchers, media and schools.",
+        { "t": "It cannot prove a human wrote something, and a full rewrite removes it.", "strong": true }
+      ],
+      "note": "It carries no info about you or your chat, Anthropic says",
+      "image": {
+        "url": "https://cms.interestingengineering.com/wp-content/uploads/2026/08/Untitled-design-2026-08-11T051104.705.jpg",
+        "credit": "Getty Images via Interesting Engineering",
+        "fallback_urls": []
+      }
+    },
+    {
+      "kind": "cta",
+      "hook": "AI text is getting fingerprinted. Follow to know what the labs build into your chats."
+    }
+  ],
+  "site_article": {
+    "headline": "Anthropic is adding an invisible watermark to Claude's text, and more models get it on November 16",
+    "dek": "The pattern sits in Claude's word choices, survives copy and paste, and can only be checked by approved organizations.",
+    "summary": "Anthropic is building a hidden statistical watermark into text written by Claude to comply with the EU AI Act, and it applies the change worldwide. A second group of older models, including Opus 4.6 and Haiku 4.5, gets the watermark starting November 16, 2026.",
+    "seo_title": "Anthropic adds invisible watermarks to Claude text",
+    "seo_description": "Claude now hides a watermark in its word choices to meet the EU AI Act. More models get it on November 16, and only approved groups can check it.",
+    "answer_summary": "Yes. Text from newer Claude models carries an invisible watermark in its word choices, older models are being added in stages, and only organizations admitted to Anthropic's private detection preview can check for it.",
+    "tags": ["Anthropic", "Claude", "AI watermarking", "EU AI Act"],
+    "hero_alt": "A man in glasses and headphones sits at a desk looking at an open laptop.",
+    "paragraphs": [
+      { "kind": "fact", "text": "Anthropic is embedding an invisible watermark in text generated by its Claude models, a change the company says it is making to comply with the European Union's AI Act. According to an email to API customers reported by The Decoder, a second group of older models will start carrying the watermark on November 16, 2026.", "sources": [0, 1] },
+      { "kind": "fact", "text": "The company first confirmed the plan in August, when TechCrunch reported that models released after August 2, 2026 would watermark the text and files they produce. The EU's transparency code for AI-generated content took effect that day and asks AI providers to mark generated or edited content so other systems can identify it.", "sources": [3] },
+      { "kind": "heading", "text": "How the watermark works" },
+      { "kind": "fact", "text": "Anthropic explains that Claude writes one word at a time. When several candidate words are roughly equally sensible, the watermarked model uses a secret key and the preceding words to make the choice instead of an ordinary random number generator. The method is a version of SynthID-Text, which Google DeepMind published in 2024.", "sources": [0] },
+      { "kind": "fact", "text": "The company says nothing is added to the text: there are no hidden characters, no extra tokens and no measurable effect on speed, cost or readability in its internal testing. Because the pattern is part of the words themselves, Anthropic's support page told TechCrunch it travels with the text when it is copied and pasted elsewhere.", "sources": [0, 3] },
+      { "kind": "fact", "text": "The watermark is applied at the model level, so it covers the Claude apps, Claude Code, Cowork and the API, and also Claude models served through Amazon, Google Cloud and Microsoft Foundry. The Decoder reported that customers cannot switch it off. Anthropic said it applies the watermark globally because it does not yet have a durable way to limit it to one region.", "sources": [0, 1, 3] },
+      { "kind": "heading", "text": "Which models are covered" },
+      { "kind": "fact", "text": "Newer models such as Claude Opus 5.5 already include the watermark, according to Techweez. A first wave for older models, set for November 3, named Claude Mythos 5, Opus 4.7, Opus 4.6 and Sonnet 4.6. The Decoder reported that Anthropic's later email moved Opus 4.6 to the second wave on November 16, together with Opus 4.5, Sonnet 4.5 and Haiku 4.5, and that Amazon Bedrock may take a few extra days. Anthropic gave no reason for the delay.", "sources": [1, 2] },
+      { "kind": "fact", "text": "The Decoder also found a limit in the rollout for older models. On those models the watermark applies only when the sampling settings temperature, top_p and top_k stay at their defaults, and changing any of them turns it off. Anthropic advised developers who rely on the watermark for compliance to keep the defaults.", "sources": [1] },
+      { "kind": "heading", "text": "Who can check, and what a result means" },
+      { "kind": "fact", "text": "Checking for the watermark requires Anthropic's key. The company runs a detection API in private preview for eligible groups, including regulators, law enforcement, media outlets, fact-checkers, independent researchers and educational organizations. It is not open to the general public, and Anthropic says it plans to widen access over time.", "sources": [0, 2] },
+      { "kind": "fact", "text": "Anthropic describes clear limits. A positive result only estimates how likely it is that Claude was involved in writing a passage, and it cannot separate text Claude wrote from text Claude heavily edited. A missing watermark does not show that a person wrote the text, short samples are unreliable, light edits probably leave the mark in place, and a full rewrite removes it. The company says the watermark carries no information that identifies a person, organization or chat.", "sources": [0, 2] },
+      { "kind": "fact", "text": "Anthropic is not alone. The Decoder noted that OpenAI launched its own text watermark in October 2026, switched on by default only for ChatGPT and Codex users in the EU, and that Google DeepMind built SynthID into Gemini.", "sources": [1] },
+      { "kind": "analysis", "text": "For most people the change is invisible in daily use, but it shifts what happens after the text leaves the chat window. Schools, newsrooms and regulators with access to the detection tool get a signal that is more grounded than style-based AI detectors, while Anthropic's own caveats make clear that the signal is a probability, not proof of who wrote something." },
+      { "kind": "why_it_matters", "text": "The next markers are the November 16 rollout to the remaining older models and whether Anthropic opens its detection API beyond the private preview before the EU transition period ends in December." }
+    ]
+  }
+}
