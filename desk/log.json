@@ -1,66 +1,5 @@
 [
   {
-    "run_at": "2026-10-30T19:53:49.298Z",
-    "summary": "Afternoon run (15:55 New York, Oct 30): no open links or requests, no new must-cover priority 1 story since the last run, and Oct 30 is already at the 8-job cap, so nothing was queued.",
-    "considered": [
-      {
-        "story": "US tech stocks fall sharply over AI spending fears",
-        "source": "https://www.bbc.com/news",
-        "decision": "skipped",
-        "reason": "Market move story with no single company event, and the day is at its 8-job cap; candidate for tomorrow if it continues."
-      },
-      {
-        "story": "Cognizant forms a 25,000-person OpenAI delivery group for Codex and ChatGPT",
-        "decision": "skipped",
-        "reason": "Enterprise services deal with limited consumer interest, and the day is at its cap."
-      },
-      {
-        "story": "Japan asks Anthropic and OpenAI for more access to advanced models",
-        "source": "https://asia.nikkei.com",
-        "decision": "skipped",
-        "reason": "Paywalled single report with limited US interest, and the day is at its cap."
-      },
-      {
-        "story": "ChatGPT ads expand with multi-image formats",
-        "decision": "skipped",
-        "reason": "Incremental ad product update, and the day is at its cap."
-      },
-      {
-        "story": "Theranos whistleblower Tyler Shultz warns about deception in the AI boom",
-        "source": "https://techcrunch.com/2026/10/30/theranos-whistleblower-tyler-shultz-warns-that-the-ai-boom-is-a-great-opportunity-to-go-deceive-people/",
-        "decision": "skipped",
-        "reason": "Interview opinion piece, and the day is at its cap."
-      },
-      {
-        "story": "Gemini lets you create and edit PDFs and files in chat",
-        "decision": "covered",
-        "reason": "Already queued as 2026-10-30-gemini-edit-files-in-chat."
-      },
-      {
-        "story": "OpenAI doubles ChatGPT Pro limits after backlash",
-        "decision": "covered",
-        "reason": "Already queued as 2026-10-30-chatgpt-pro-limits-doubled-cut-canceled."
-      },
-      {
-        "story": "Sam Altman says RAM in gaming PCs is terrible",
-        "decision": "skipped",
-        "reason": "Daily cap of 8 reached; still a candidate for tomorrow."
-      },
-      {
-        "story": "Pope Leo XIV says machines are tools, not persons",
-        "source": "https://www.theverge.com/ai-artificial-intelligence/1023188/pope-leo-disarm-ai",
-        "decision": "skipped",
-        "reason": "Daily cap reached; skipped in earlier runs for the same reason."
-      },
-      {
-        "story": "Fortune and Quartz pieces on Anthropic's IPO risk disclosures",
-        "decision": "covered",
-        "reason": "The IPO filing was covered as 2026-10-26-anthropic-files-ipo-ant-nasdaq; these are follow-up analysis."
-      }
-    ],
-    "requests": []
-  },
-  {
     "run_at": "2026-10-30T22:07:04.797Z",
     "summary": "Queued the October 30 tech selloff (Intel crash, Amazon AI spending, Nasdaq down 2.8%) as priority 1; that makes 8 jobs for the New York day, so other stories wait. No open links or requests.",
     "considered": [
@@ -4973,6 +4912,68 @@
         "source": "https://www.wired.com/story/ai-companies-really-really-want-to-buy-your-work-files-and-emails/",
         "decision": "skipped",
         "reason": "Good everyone story but no room under the 8 job cap today."
+      }
+    ],
+    "requests": []
+  },
+  {
+    "run_at": "2026-11-06T20:54:54.594Z",
+    "summary": "Afternoon run (about 16:00 New York): no open links or requests; November 6 is already at the 8 desk job cap and no new major priority 1 story appeared since the last run, so nothing was queued.",
+    "considered": [
+      {
+        "story": "METR finds Anthropic's AI progress roughly doubled",
+        "decision": "covered",
+        "reason": "Already queued as 2026-11-06-anthropic-ai-twice-as-fast-metr."
+      },
+      {
+        "story": "OpenAI CFO Sarah Friar says OpenAI keeps investing in data centers after the election",
+        "source": "https://www.cnbc.com/",
+        "decision": "covered",
+        "reason": "Same OpenAI data center story as 2026-11-06-openai-data-centers-pay-own-power."
+      },
+      {
+        "story": "Anthropic lines up UK retail IPO offer, valuation could fall to $1 trillion",
+        "decision": "covered",
+        "reason": "Already queued as 2026-11-06-anthropic-ipo-investors-balk-selloff."
+      },
+      {
+        "story": "Google releases Gemini Omni 1.2 Flash with 15 second clips",
+        "decision": "covered",
+        "reason": "Already queued as 2026-11-06-gemini-omni-15-second-videos-free."
+      },
+      {
+        "story": "Mark Cuban says Facebook knowingly runs AI deepfake scam ads",
+        "source": "https://finance.yahoo.com/technology/ai/articles/mark-cuban-says-facebook-knowingly-213000020.html",
+        "decision": "skipped",
+        "reason": "Sensitive fraud claim with one source read so far, and the day is at the 8 job cap; a candidate for tomorrow if more outlets confirm it."
+      },
+      {
+        "story": "Airbnb plans an AI travel agent for the first half of 2027",
+        "source": "https://www.theneuron.ai/digest/everything-that-happened-in-ai-today-friday-november-6-2026/",
+        "decision": "skipped",
+        "reason": "Reported November 5 and the day is at the cap; a possible everyone story for tomorrow."
+      },
+      {
+        "story": "Justice Department launches a Super Intelligence Task Force",
+        "decision": "skipped",
+        "reason": "Still only the agency's own post found and the day is at the cap."
+      },
+      {
+        "story": "Researchers used Claude to cut a three-day lab process to 90 minutes",
+        "source": "https://www.anthropic.com/research/how-researchers-use-claude",
+        "decision": "skipped",
+        "reason": "Priority 2 research story and the day is at the cap; candidate for tomorrow."
+      },
+      {
+        "story": "Perplexity launches Teammates work agents",
+        "decision": "skipped",
+        "reason": "Max subscribers only, little interest for normal users, and the day is at the cap."
+      },
+      {
+        "story": "Claude Code sends your email address to websites (GitHub issue)",
+        "source": "https://github.com/anthropics/claude-code/issues/107757",
+        "decision": "skipped",
+        "reason": "Still a single GitHub issue with no independent news coverage."
       }
     ],
     "requests": []
