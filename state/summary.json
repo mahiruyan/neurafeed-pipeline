@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-06T02:45:29.826Z",
+  "updated_at": "2026-11-06T03:10:17.940Z",
   "jobs": [
     {
       "id": "2026-10-29-apple-first-touchscreen-macbook-pro-reel",
@@ -13,27 +13,6 @@
       "link_id": "link-2026-10-29-1883",
       "error": "Command failed: yt-dlp --no-playlist --no-progress --restrict-filenames -f bv*[height<=1920][vcodec^=avc1]+ba[acodec^=mp4a]/bv*[height<=1920]+ba/b[height<=1920]/b --merge-output-format mp4 -o /home/runner/work/neurafeed-pipeline/neurafeed-pipeline/out/2026-10-29-apple-first-touchscreen-macbook-pro-reel/src/source.%(ext)s https://www.instagram.com/reel/DfDUpW4AsCf/?srtk=cDZ4eXNlejZibnZh\nWARNING: [Instagram] DfDUpW4AsCf: Instagram API is not granting access\nERROR: [Instagram] DfDUpW4AsCf: Instagram sent an empty media response. Check if this post is accessible in your browser without being logged-in. If it is not, then use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Otherwise, if the post is accessible in browser without being logged-in, please report this issue on  https://github.com/yt-dlp/yt-dlp/issues?q= , filling out the appropriate issue template. Confirm you are on the latest version using  yt-dlp -U\n",
       "tg": []
-    },
-    {
-      "id": "2026-11-01-chatgpt-codex-one-shared-limit",
-      "status": "posted",
-      "posted_at": "2026-11-02T02:46:37.233Z",
-      "post_at": null,
-      "priority": 2,
-      "format": "news",
-      "headline": "ChatGPT and Codex are about to share one usage limit. Here's what changes",
-      "from_link": false,
-      "link_id": null,
-      "error": null,
-      "tg": [
-        2166,
-        2167,
-        2168,
-        2169,
-        2170,
-        2171,
-        2172
-      ]
     },
     {
       "id": "2026-11-01-perplexity-research-with-sources-guide",
@@ -931,6 +910,49 @@
         2600,
         2601,
         2601
+      ]
+    },
+    {
+      "id": "2026-11-06-meta-muse-voice-video-chat",
+      "status": "pending",
+      "posted_at": null,
+      "post_at": null,
+      "priority": 1,
+      "format": "carousel",
+      "headline": "You can now video chat with Meta's AI",
+      "from_link": false,
+      "link_id": null,
+      "error": null,
+      "tg": [
+        2623,
+        2624,
+        2625,
+        2626,
+        2627,
+        2628,
+        2628
+      ]
+    },
+    {
+      "id": "2026-11-06-openai-data-centers-pay-own-power",
+      "status": "pending",
+      "posted_at": null,
+      "post_at": null,
+      "priority": 1,
+      "format": "carousel",
+      "headline": "Voters turned on AI data centers. Now OpenAI says it will pay for its own power",
+      "from_link": false,
+      "link_id": null,
+      "error": null,
+      "tg": [
+        2629,
+        2630,
+        2631,
+        2632,
+        2633,
+        2634,
+        2635,
+        2635
       ]
     }
   ]
