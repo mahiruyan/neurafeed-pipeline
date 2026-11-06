@@ -1,60 +1,5 @@
 [
   {
-    "run_at": "2026-10-30T00:01:22.270Z",
-    "summary": "Late evening run (20:20 New York, Oct 29): no open links or requests. Oct 29 is already far over the 8 job cap, so queued one new Google story for the Oct 30 morning windows (Gemini in-chat file editing) and skipped the rest.",
-    "considered": [
-      {
-        "story": "Gemini can now preview and edit documents, PDFs, sheets and code inside the chat",
-        "source": "https://www.digitaltrends.com/computing/google-gemini-can-now-create-and-edit-pdfs-documents-and-more-right-inside-your-chat/",
-        "decision": "queued",
-        "job_id": "2026-10-30-gemini-edit-files-in-chat",
-        "priority": 2
-      },
-      {
-        "story": "Alphabet has its worst day ever, losing about $500 billion in value",
-        "decision": "covered",
-        "reason": "Follow-up to 2026-10-29-gemini-1-billion-users-alphabet-stock-drops, which already covers the earnings and the share drop."
-      },
-      {
-        "story": "OpenAI explains its misalignment monitors for internal coding agents",
-        "source": "https://openai.com/index/how-we-monitor-internal-coding-agents-misalignment",
-        "decision": "covered",
-        "reason": "Same story as 2026-10-21-openai-agents-switched-off-alarms; today's items are rewrites."
-      },
-      {
-        "story": "Dartmouth provost resigns over accusations he used AI for his writing",
-        "decision": "skipped",
-        "reason": "Good US interest but priority 2, and Oct 29 is already well over the daily cap."
-      },
-      {
-        "story": "Intel shares fall 20% as AI hurts parts of its business (NYT)",
-        "decision": "skipped",
-        "reason": "Stock story with little consumer interest, and the day is over the cap."
-      },
-      {
-        "story": "OpenAI-backed Thrive Holdings to buy ADT for $15.3 billion",
-        "decision": "skipped",
-        "reason": "Not an OpenAI deal itself and only one secondary report seen in this run."
-      },
-      {
-        "story": "Strava adds Gemini workout insights",
-        "decision": "skipped",
-        "reason": "Small integration news, already one Gemini job queued this run."
-      },
-      {
-        "story": "Mistral touts cyber skills of its Chonk model",
-        "decision": "covered",
-        "reason": "Already queued as 2026-10-29-mistral-le-chonk-open-weights."
-      },
-      {
-        "story": "Claude smart reports flag off-topic chats (Mashable)",
-        "decision": "covered",
-        "reason": "Already posted as 2026-10-29-claude-smart-reports-off-topic-chats."
-      }
-    ],
-    "requests": []
-  },
-  {
     "run_at": "2026-10-30T02:07:45.930Z",
     "summary": "Late night run (21:55 New York, Oct 29): no open links or requests, no new priority 1 story since the 20:20 run, and Oct 29 is far over the 8 job cap with five jobs already held for the Oct 30 windows, so nothing was queued.",
     "considered": [
@@ -5002,6 +4947,57 @@
         "story": "OpenAI GPT-6 Cyber launch",
         "decision": "covered",
         "reason": "Already queued as 2026-11-05-openai-gpt-6-cyber-81-firefox-flaws."
+      }
+    ],
+    "requests": []
+  },
+  {
+    "run_at": "2026-11-06T00:54:18.443Z",
+    "summary": "Late evening run (about 20:00 New York): no open links or requests; November 5 is already past the 8 job cap and nothing new and major appeared since the last run, so nothing was queued. The open stories below are left for the morning run.",
+    "considered": [
+      {
+        "story": "Meta's Muse gets a voice mode",
+        "source": "https://www.theverge.com/tech/1028015/meta-muse-ai-voice-mode-expressive-avatar",
+        "decision": "skipped",
+        "reason": "Daily cap reached; a timely job written now would expire before the 07:00 window, so the morning run should pick it up."
+      },
+      {
+        "story": "Anthropic models improving nearly twice as fast with help from AI, outside research group says",
+        "decision": "skipped",
+        "reason": "Daily cap reached and already flagged by the last run as a candidate for tomorrow morning."
+      },
+      {
+        "story": "OpenAI pledges new data centers will pay their own way after the midterms",
+        "decision": "skipped",
+        "reason": "Daily cap reached and it overlaps with today's AI stocks post and the November 2 data center post."
+      },
+      {
+        "story": "Perplexity launches Teammates, AI agents for work",
+        "source": "https://www.theverge.com/ai-artificial-intelligence/1028302/perplexity-teammates-ai-agents-work",
+        "decision": "skipped",
+        "reason": "Daily cap reached and not a priority 1 company."
+      },
+      {
+        "story": "Airbnb plans an AI travel agent in the first half of 2027",
+        "source": "https://techcrunch.com/2026/11/05/airbnb-says-its-launching-an-ai-travel-agent-in-the-first-half-of-2027/",
+        "decision": "skipped",
+        "reason": "Daily cap reached; a future plan with no product yet."
+      },
+      {
+        "story": "Lawsuit: man says ChatGPT told him to stop paying rent and got him evicted",
+        "decision": "skipped",
+        "reason": "Sensitive lawsuit, daily cap reached."
+      },
+      {
+        "story": "Tencent launches Hy4 open source model",
+        "source": "https://www.tencent.com/tencent-launches-hy4-joining-the-ranks-of-the-worlds-leading-open-source-ai-models/",
+        "decision": "skipped",
+        "reason": "Daily cap reached and little US consumer interest."
+      },
+      {
+        "story": "OpenAI GPT-6 Astra covertly underperforms on safety research",
+        "decision": "covered",
+        "reason": "Already queued as 2026-11-05-openai-astra-quietly-slacked-safety-research."
       }
     ],
     "requests": []
