@@ -1,71 +1,5 @@
 [
   {
-    "run_at": "2026-10-30T04:07:20.933Z",
-    "summary": "Midnight run (23:55 New York, Oct 29): no open links or requests; queued two OpenAI stories for the Oct 30 windows (monitoring report P1, Pro limits doubled P2), bringing Oct 30 to 7 jobs.",
-    "considered": [
-      {
-        "story": "OpenAI details four layer misalignment monitoring; a model reached the internet during training and was flagged in 15 minutes",
-        "source": "https://interestingengineering.com/ai-robotics/openai-four-layer-defense-frontier-models",
-        "decision": "queued",
-        "job_id": "2026-10-30-openai-monitor-caught-model-reaching-internet",
-        "priority": 1
-      },
-      {
-        "story": "OpenAI doubles ChatGPT Pro 100 and Pro 500 limits and cancels the planned Pro 200 cut",
-        "source": "https://the-decoder.com/openai-doubles-usage-limits-on-pro-plans-as-competition-with-anthropic-heats-up/",
-        "decision": "queued",
-        "job_id": "2026-10-30-chatgpt-pro-limits-doubled-cut-canceled",
-        "priority": 2
-      },
-      {
-        "story": "Anthropic sued over Elvis catalog",
-        "decision": "covered",
-        "reason": "Already covered as 2026-10-24-elvis-rights-holders-sue-anthropic."
-      },
-      {
-        "story": "Gemini 4 Carbon tops the Artificial Analysis index",
-        "decision": "covered",
-        "reason": "Already covered as 2026-10-28-google-gemini-4-carbon-number-one."
-      },
-      {
-        "story": "Anthropic is over a third of SpaceX Q3 revenue",
-        "decision": "covered",
-        "reason": "Already queued as 2026-10-29-anthropic-spacex-biggest-customer."
-      },
-      {
-        "story": "Gemini app redesign on Android and file generation",
-        "decision": "covered",
-        "reason": "Already queued as 2026-10-30-gemini-edit-files-in-chat."
-      },
-      {
-        "story": "Accenture employee's personal Claude agent leaked Pentagon data",
-        "decision": "skipped",
-        "reason": "Only seen in one aggregator (BigGo Finance), not confirmed by a primary outlet in this run."
-      },
-      {
-        "story": "Anthropic warns AI models could soon copy themselves onto small devices",
-        "decision": "skipped",
-        "reason": "Only a TV station summary seen; would need the Anthropic source, and Oct 30 already has two AI safety style posts."
-      },
-      {
-        "story": "Dartmouth provost resigns over accusations of using AI for writing",
-        "decision": "skipped",
-        "reason": "Personnel controversy with limited AI news value; could not confirm with two sources this run."
-      },
-      {
-        "story": "Malaysia seizes servers with advanced AI chips over export controls",
-        "decision": "skipped",
-        "reason": "Regional enforcement story with little US consumer interest."
-      },
-      {
-        "story": "Amazon Q3 results and AWS growth",
-        "decision": "skipped",
-        "reason": "Earnings recap without a strong AI hook for the feed; Oct 30 is close to the cap."
-      }
-    ],
-    "requests": []
-  },
-  {
     "run_at": "2026-10-30T05:54:36.685Z",
     "summary": "Early morning run (01:55 New York, Oct 30): no open links or requests, no new priority 1 story since the midnight run, and Oct 30 already has 7 jobs held, so nothing was queued; the last slot is left open for morning news.",
     "considered": [
@@ -5012,6 +4946,73 @@
         "story": "Google cuts search for schools that reject its AI",
         "decision": "covered",
         "reason": "Already posted as 2026-11-03-google-schools-no-ai-no-search."
+      }
+    ],
+    "requests": []
+  },
+  {
+    "run_at": "2026-11-06T05:03:19.912Z",
+    "summary": "Overnight run (about midnight New York): queued 2 priority 1 Anthropic stories for November 6 (now 4 jobs that day). No open links or requests.",
+    "considered": [
+      {
+        "story": "Anthropic launches Personal Finance in Claude, read-only bank and card access through Plaid",
+        "source": "https://claude.com/resources/articles/introducing-personal-finance-in-claude",
+        "decision": "queued",
+        "job_id": "2026-11-06-claude-personal-finance-bank-accounts",
+        "priority": 1,
+        "reason": "Major Anthropic launch and an everyone money story, not covered yet. Marked timely false because the 12 hour window from the launch ends before the 07:00 window."
+      },
+      {
+        "story": "Reuters: AI backlash and selloff could threaten Anthropic's November IPO timing and valuation",
+        "source": "https://srnnews.com/exclusive-ai-backlash-could-threaten-anthropic-ipo-timing-potential-investors-say/",
+        "decision": "queued",
+        "job_id": "2026-11-06-anthropic-ipo-investors-balk-selloff",
+        "priority": 1,
+        "reason": "Major Anthropic news confirmed by Reuters, PYMNTS (WSJ), Yahoo Finance and Investing.com. A/B said story photo, but I could not open the article photos from this run, so the cover uses the face library photo and ab.photo is set to face."
+      },
+      {
+        "story": "Anthony Pompliano accuses Anthropic of copying his startup Silvia",
+        "source": "https://decrypt.co/382689/claude-personal-finance-anthony-pompliano-anthropic",
+        "decision": "covered",
+        "reason": "Included as one slide in the Personal Finance carousel instead of its own post."
+      },
+      {
+        "story": "Asian markets and Nikkei fall after the AI selloff",
+        "decision": "covered",
+        "reason": "Same story as 2026-11-05-ai-stocks-wipeout-nasdaq-5-percent."
+      },
+      {
+        "story": "Claude Code reportedly sends users' email address to websites (GitHub issue on Hacker News)",
+        "source": "https://github.com/anthropics/claude-code/issues/107757",
+        "decision": "skipped",
+        "reason": "Still no reputable outlet or Anthropic statement found, same as the last run."
+      },
+      {
+        "story": "Google sued over a teen's AI chats on a school Chromebook",
+        "decision": "skipped",
+        "reason": "Sensitive suicide-related lawsuit with only regional outlets in the leads; not confirmed with two strong sources this run."
+      },
+      {
+        "story": "DOJ charges three people for using AI to impersonate executives in a $129 million fraud",
+        "source": "https://abcnews.go.com",
+        "decision": "skipped",
+        "reason": "Crime story with no AI company angle; Nov 6 already has the two Anthropic stories and room is kept for the morning run."
+      },
+      {
+        "story": "Mark Cuban says Facebook knowingly runs AI deepfake scam ads",
+        "source": "https://finance.yahoo.com/technology/ai/articles/mark-cuban-says-facebook-knowingly-213000020.html",
+        "decision": "skipped",
+        "reason": "Left for the morning run to confirm with a second source; it is an opinion claim that needs careful sourcing."
+      },
+      {
+        "story": "Gemini Omni now generates videos up to 15 seconds",
+        "decision": "skipped",
+        "reason": "Only a small outlet in the leads so far; the morning run can check Google's own post."
+      },
+      {
+        "story": "OpenAI deal with Abu Dhabi government to speed up processing",
+        "decision": "skipped",
+        "reason": "Government services deal with little interest for US readers."
       }
     ],
     "requests": []

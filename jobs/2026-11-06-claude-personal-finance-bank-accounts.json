@@ -1,0 +1,123 @@
+{
+  "id": "2026-11-06-claude-personal-finance-bank-accounts",
+  "created_at": "2026-11-06T05:05:00Z",
+  "story_time": "2026-11-05T18:00:00Z",
+  "timely": false,
+  "sensitive": false,
+  "priority": 1,
+  "format": "carousel",
+  "site_category": "companies",
+  "ab": { "headline": "short" },
+  "sources": [
+    { "name": "Anthropic", "url": "https://claude.com/resources/articles/introducing-personal-finance-in-claude" },
+    { "name": "TechCrunch", "url": "https://techcrunch.com/2026/11/05/claude-can-now-analyze-your-spending-with-its-new-personal-finance-tool/" },
+    { "name": "Decrypt", "url": "https://decrypt.co/382689/claude-personal-finance-anthony-pompliano-anthropic" }
+  ],
+  "caption": "Anthropic launched Personal Finance, a new Claude feature that connects to your bank and card accounts through Plaid.\nYou can ask where your money went, whether you can afford a trip, or what your APR cost you this year.\nAccess is read-only, and the beta is rolling out to Pro, Max and Ultra users in the US.\n\nWould you let an AI see your bank account?\n\nFollow @neurafeed.ai for daily AI news.\n\nSource: Anthropic, TechCrunch · Photos: Anthropic",
+  "threads_text": "Claude can now connect to your bank and card accounts and answer questions like \"where did my money go this month?\" It is read-only, it can see up to two years of transactions, and Anthropic says those chats are not used for training. Would you give an AI read access to your bank account?",
+  "slides": [
+    {
+      "kind": "cover",
+      "headline": "Claude can now read *your bank account*",
+      "image": {
+        "url": "https://techcrunch.com/wp-content/uploads/2026/11/Claude-Personal-Finance-2.png",
+        "credit": "Anthropic",
+        "fallback_urls": [
+          "https://techcrunch.com/wp-content/uploads/2026/11/Claude-Personal-Finance-2.png?resize=1200,675"
+        ],
+        "refs": ["https://techcrunch.com/wp-content/uploads/2026/11/Claude-Personal-Finance-2.png"],
+        "generate": "A young man sits at a small kitchen table at night holding a smartphone that shows the screen from the first image, next to a messy pile of paper bills and receipts, and he looks at the phone with a worried face. No readable text on the papers."
+      },
+      "pos": "center 40%",
+      "badges": [{ "url": "assets/logos/claude.png", "fit": "contain" }],
+      "badge_side": "right"
+    },
+    {
+      "kind": "card",
+      "heading": "Ask about *your money*",
+      "paras": [
+        "Anthropic's new Personal Finance tool links your bank and card accounts to Claude through Plaid.",
+        "Then you ask in plain words: where did my money go this month, and is that more than usual?"
+      ],
+      "image": {
+        "url": "https://assets.claude.com/b87507b2ca680b626804a95946d15f34391e07f7.png",
+        "credit": "Anthropic",
+        "fit": "contain",
+        "fallback_urls": ["https://techcrunch.com/wp-content/uploads/2026/11/Claude-Personal-Finance.png?w=680"]
+      }
+    },
+    {
+      "kind": "card",
+      "heading": "It hunts for *hidden charges*",
+      "paras": [
+        "Claude sorts spending into categories and flags duplicate charges, surprise fees and bills that keep creeping up.",
+        { "t": "It can also tell you if you spend more than you make.", "strong": true }
+      ],
+      "image": {
+        "url": "https://assets.claude.com/bc5343b7f36d1704f728e53c69f672ae05c576e1.png",
+        "credit": "Anthropic",
+        "fit": "contain",
+        "fallback_urls": []
+      }
+    },
+    {
+      "kind": "card",
+      "heading": "What Claude *can see*",
+      "paras": [
+        "Balances, credit limits, the last four digits of each account and up to two years of transactions.",
+        "Access is read-only, so it cannot move money. Anthropic says these chats are not used to train its models."
+      ],
+      "note": "Beta for Pro, Max and Ultra users in the US",
+      "image": {
+        "url": "https://assets.claude.com/734b3f5688057d9a672bf9f32aa4c450c8732e8d.png",
+        "credit": "Anthropic",
+        "fit": "contain",
+        "fallback_urls": []
+      }
+    },
+    {
+      "kind": "card",
+      "heading": "A founder *cries foul*",
+      "paras": [
+        "Investor Anthony Pompliano, whose startup Silvia sells an AI financial assistant, accused Anthropic of copying it.",
+        "He called the launch \"a Claude wrapper that is masquerading as a personal finance product.\""
+      ],
+      "note": "Decrypt reported no Anthropic response to his claims",
+      "image": {
+        "url": "https://cdn.decrypt.co/resize/1024/height/512/wp-content/uploads/2026/02/decrypt-style-anthropic-2-gID_7.png",
+        "credit": "Decrypt / Shutterstock",
+        "fallback_urls": []
+      }
+    },
+    {
+      "kind": "cta",
+      "hook": "AI is moving into your wallet next. Follow so you know what it can see before you link anything."
+    }
+  ],
+  "site_article": {
+    "headline": "Anthropic adds Personal Finance to Claude, with read-only access to bank accounts",
+    "dek": "The beta connects bank and card accounts through Plaid and is rolling out to paying US subscribers.",
+    "summary": "Anthropic launched Personal Finance on November 5, 2026, a Claude feature that reads linked bank and card accounts and answers questions about spending in plain language. The beta is available to Pro, Max and Ultra subscribers in the United States, and access is read-only.",
+    "seo_title": "Claude Personal Finance links bank accounts through Plaid",
+    "seo_description": "Anthropic's new Claude feature reads bank and card data, flags fees and duplicate charges, and is rolling out to US Pro, Max and Ultra users.",
+    "answer_summary": "Claude Personal Finance lets US subscribers on Pro, Max and Ultra plans link bank and card accounts through Plaid and ask Claude questions about their spending. Access is read-only, so Claude cannot move or invest money.",
+    "tags": ["Anthropic", "Claude", "Personal finance", "Plaid"],
+    "hero_alt": "Promotional image from Anthropic for the Personal Finance feature in the Claude app.",
+    "paragraphs": [
+      { "kind": "fact", "text": "Anthropic introduced a feature called Personal Finance for Claude on November 5, 2026. It lets users connect their bank and credit card accounts and ask the assistant questions about balances, transactions and spending habits in everyday language. The company said a beta is rolling out to subscribers on its Pro, Max and Ultra plans in the United States.", "sources": [0, 1] },
+      { "kind": "heading", "text": "What the feature does" },
+      { "kind": "fact", "text": "According to Anthropic, Claude adds up spending across the accounts a user links and sorts it into categories such as rent and utilities, food and drink, and shopping. Users can ask follow-up questions, for example whether a given month is higher than usual, how much is left before the next payday, or whether a trip in the spring is affordable.", "sources": [0, 1] },
+      { "kind": "fact", "text": "The tool is also designed to point out problems that are easy to miss in a long statement. TechCrunch reported that Claude can flag duplicate charges, unexpected fees and bills that have risen steadily over time, and can answer broader questions such as whether a person is spending more than they earn. It can explain terms like APR and estimate how much interest a card has cost over the past year.", "sources": [1] },
+      { "kind": "fact", "text": "Anthropic said Claude can turn the data into charts, calendars or dashboards that users can keep adjusting. The feature appears as its own hub in the Claude sidebar.", "sources": [0] },
+      { "kind": "heading", "text": "How accounts connect and what Claude sees" },
+      { "kind": "fact", "text": "Accounts are linked through Plaid, a service that connects apps to banks. Users sign in to their bank through Plaid and approve access, so Claude does not receive the bank password. Anthropic said the access is read-only, which means Claude cannot move, manage or invest money.", "sources": [0, 1] },
+      { "kind": "fact", "text": "For each connected account, Claude can see the bank name, the account name and type, the last four digits of the account number, balances, credit limits and up to two years of transaction history. Anthropic said conversations inside the Personal Finance hub are not used to train its models, while chats outside the hub follow a user's existing privacy settings. Users can unlink an account at any time, after which Claude can no longer see its data.", "sources": [0, 1] },
+      { "kind": "fact", "text": "The company also set limits on what the feature is for. It said Personal Finance is not designed to give investment advice, that Claude can make mistakes, and that users should check important figures with their bank. Anthropic stressed that Claude shows no ads or sponsored recommendations and does not sell its own credit cards, loans or savings accounts.", "sources": [0, 1] },
+      { "kind": "heading", "text": "Competition and a complaint" },
+      { "kind": "fact", "text": "TechCrunch noted that OpenAI launched similar personal finance tools in ChatGPT in May 2026, which let users connect financial accounts and ask about spending and planning. Anthropic said it is exploring ways for Claude to work with licensed professionals and regulated firms, and invited banks and wealth managers to get in touch.", "sources": [1, 0] },
+      { "kind": "fact", "text": "The launch drew a public complaint from investor Anthony Pompliano, whose startup Silvia markets itself as a personal AI chief financial officer. In a post on X described by Decrypt, he accused Anthropic of seeking details about how Silvia was built and called the new feature a Claude wrapper posing as a finance product. Decrypt did not report a response from Anthropic to those claims.", "sources": [2] },
+      { "kind": "analysis", "text": "The feature moves Claude from work tasks into one of the most personal kinds of data people have. The read-only design and the promise not to train on hub conversations address the obvious worries, but the value for users will depend on how accurate the categorization is and how much they trust a chatbot with two years of their transactions." },
+      { "kind": "why_it_matters", "text": "The beta is limited to paying US subscribers for now, so the next signal is whether Anthropic opens it to more plans or countries, and whether it follows through on partnerships with regulated financial firms." }
+    ]
+  }
+}
