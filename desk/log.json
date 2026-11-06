@@ -1,72 +1,5 @@
 [
   {
-    "run_at": "2026-10-30T12:23:01.638Z",
-    "summary": "Morning run (08:40 New York, Oct 30): no open links or requests; queued two priority 2 carousels, CrowdStrike's report on China-linked hackers running DeepSeek-powered AI agents and Reddit going logged-in as search visits fall.",
-    "considered": [
-      {
-        "story": "CrowdStrike: VAPOR PANDA used DeepSeek-powered ARTEX agents against 200+ organizations",
-        "source": "https://www.crowdstrike.com/en-us/blog/vapor-panda-uses-artex-to-scale-global-campaign/",
-        "decision": "queued",
-        "job_id": "2026-10-30-china-hackers-deepseek-agents-200-targets",
-        "priority": 2
-      },
-      {
-        "story": "Reddit loses over 1 million search referrals a week, shifts to a logged-in experience",
-        "source": "https://techcrunch.com/2026/10/29/as-search-traffic-dries-up-reddit-announces-its-shifting-to-a-logged-in-experience",
-        "decision": "queued",
-        "job_id": "2026-10-30-reddit-loses-search-visits-log-in",
-        "priority": 2
-      },
-      {
-        "story": "Universal Music settles with Udio and signs a licensing deal",
-        "source": "https://www.prnewswire.com/news-releases/universal-music-group-and-udio-announce-udios-first-strategic-agreements-for-new-licensed-ai-music-creation-platform-302599129.html",
-        "decision": "skipped",
-        "reason": "Only the press release was found this run and the day already has enough queued posts."
-      },
-      {
-        "story": "DeepSeek closes a $16B round led by China's state Big Fund",
-        "source": "https://theinformation.com/articles/behind-deepseeks-16-billion-funding-chinese-tech-titans-state-players",
-        "decision": "skipped",
-        "reason": "Paywalled single report, and the DeepSeek raise was already covered on Oct 23."
-      },
-      {
-        "story": "Canada takes an equity stake of up to C$1.6B in Cohere",
-        "source": "https://www.semafor.com/article/10/29/2026/canada-to-take-equity-stake-in-ai-firm",
-        "decision": "skipped",
-        "reason": "Canadian policy story with limited US interest."
-      },
-      {
-        "story": "Anthropic expands AI for Science to 20 research partners",
-        "source": "https://www.anthropic.com/news/ai-for-science-expands-foundations-research-institutions",
-        "decision": "skipped",
-        "reason": "Incremental program update, weaker than the queued stories; Claude science work was covered Oct 28."
-      },
-      {
-        "story": "Nvidia and AMD invest $4B in Meta's raise",
-        "source": "https://www.pcgamer.com/software/ai/nvidia-and-amd-invest-billions-into-meta-as-companies-egg-each-other-on-to-bet-even-more-on-ai/",
-        "decision": "covered",
-        "reason": "Covered as 2026-10-27-nvidia-3-billion-meta-muse."
-      },
-      {
-        "story": "Anthropic warns AI could self-replicate on small devices",
-        "decision": "covered",
-        "reason": "Two-week-old story already covered as 2026-10-13-anthropic-self-replicating-ai-smart-devices."
-      },
-      {
-        "story": "Pinterest misses Q3, stock down 14%",
-        "source": "https://markets.financialcontent.com/stocks/article/stockstory-2026-10-29-pinterest-nysepins-misses-q3-2026-sales-expectations-stock-drops-142",
-        "decision": "skipped",
-        "reason": "Earnings miss with little AI angle."
-      },
-      {
-        "story": "OpenAI misalignment monitors and ChatGPT Pro limits",
-        "decision": "covered",
-        "reason": "Already queued as 2026-10-30-openai-monitor-caught-model-reaching-internet and 2026-10-30-chatgpt-pro-limits-doubled-cut-canceled."
-      }
-    ],
-    "requests": []
-  },
-  {
     "run_at": "2026-10-30T14:23:42.018Z",
     "summary": "Mid-morning run (10:10 New York, Oct 30): handled Mahir's Binance request with a priority 1 carousel (sensitive, waits for his approval); no new links; no other story strong and fresh enough to add.",
     "considered": [
@@ -4990,6 +4923,65 @@
         "story": "Claude Personal Finance, Anthropic IPO timing, Gemini Omni videos, OpenAI data center pledge, Meta Muse video chat",
         "decision": "covered",
         "reason": "Already queued for November 6."
+      }
+    ],
+    "requests": []
+  },
+  {
+    "run_at": "2026-11-06T13:01:49.753Z",
+    "summary": "Morning run (about 08:00 New York): no open links or requests; queued one priority 1 Anthropic story (METR finds Anthropic's AI progress has roughly doubled). November 6 now has 7 news jobs, so only one utility post fits under the cap later today.",
+    "considered": [
+      {
+        "story": "METR's independent review finds Anthropic is improving its AI about twice as fast as a year ago, mostly from AI helping build AI",
+        "source": "https://www.clickorlando.com/business/2026/11/05/anthropic-is-rapidly-accelerating-ai-development-amid-slowdown-calls-outside-research-group-says/",
+        "decision": "queued",
+        "job_id": "2026-11-06-anthropic-ai-twice-as-fast-metr",
+        "priority": 1
+      },
+      {
+        "story": "Anthropic warns in its IPO filing that self-building AI may be imminent",
+        "decision": "covered",
+        "reason": "Already posted as 2026-11-03-anthropic-warns-self-building-ai-imminent; the METR review is a new, separate finding."
+      },
+      {
+        "story": "Global AI selloff spreads to London and Asia (FTSE down 2 percent)",
+        "source": "https://www.investing.com/news/stock-market-news/ftse-100-tumbles-2-as-ai-jitters-spark-global-selloff-5007649",
+        "decision": "covered",
+        "reason": "Same story as 2026-11-05-ai-stocks-wipeout-nasdaq-5-percent."
+      },
+      {
+        "story": "Thinking Machines releases Inkling 2 Small on Tinker",
+        "source": "https://thinkingmachines.ai/news/inkling-2-small/",
+        "decision": "skipped",
+        "reason": "Developer release with no weights and little interest for normal US users."
+      },
+      {
+        "story": "Claude API adds message threads in public beta",
+        "source": "https://claude.com/resources/articles/message-threads",
+        "decision": "skipped",
+        "reason": "Developer API feature, and November 6 is close to the cap."
+      },
+      {
+        "story": "Cursor cloud agents can now build and host live web apps",
+        "source": "https://cursor.com/changelog/build-live-apps",
+        "decision": "skipped",
+        "reason": "Developer tool update with narrow appeal and no free slot today."
+      },
+      {
+        "story": "Claude Code reportedly sends users' email address to websites (GitHub issue)",
+        "decision": "skipped",
+        "reason": "Still no reputable outlet or Anthropic statement found."
+      },
+      {
+        "story": "Mark Cuban says Facebook knowingly runs AI deepfake scam ads",
+        "decision": "skipped",
+        "reason": "Opinion built on an older report, and no free slot today."
+      },
+      {
+        "story": "Democrats plan a flood of AI bills after taking Congress",
+        "source": "https://srnnews.com/democrats-planning-flood-of-ai-bills-when-they-take-control-of-congress/",
+        "decision": "skipped",
+        "reason": "Political and still early plans; no free slot left today, can be revisited when bills are named."
       }
     ],
     "requests": []
