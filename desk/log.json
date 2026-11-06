@@ -1,54 +1,5 @@
 [
   {
-    "run_at": "2026-10-30T17:54:43.656Z",
-    "summary": "Early afternoon run (13:55 New York, Oct 30): no open links or requests, no new uncovered priority 1 story since the last run, and Oct 30 is already at the 8-job cap, so nothing was queued.",
-    "considered": [
-      {
-        "story": "Microsoft 10-Q shows about $10B in quarterly revenue from OpenAI",
-        "source": "https://aiweekly.co/ai-news-today",
-        "decision": "skipped",
-        "reason": "Filing detail that overlaps the Oct 28 Microsoft record quarter post, and the day is at its cap."
-      },
-      {
-        "story": "Anthropic IPO filing coverage (SiliconANGLE, Fortune on its risk section)",
-        "source": "https://siliconangle.com/2026/10/30/as-anthropic-finally-files-for-ipo-rising-risks-arent-slowing-the-ai-buildout-yet",
-        "decision": "covered",
-        "reason": "The filing was already covered as 2026-10-26-anthropic-files-ipo-ant-nasdaq; these are follow-up analysis pieces."
-      },
-      {
-        "story": "Sam Altman says it is terrible for gamers to have RAM in PCs",
-        "decision": "skipped",
-        "reason": "Daily cap of 8 reached; still a candidate for tomorrow if people keep talking about it."
-      },
-      {
-        "story": "UK CMA probes Meta's terms pulling publisher content into AI features",
-        "decision": "skipped",
-        "reason": "UK regulatory step with limited US interest, and the day is at its cap."
-      },
-      {
-        "story": "Agility Robotics prices a $465M SPAC deal, Nasdaq trading Nov 5",
-        "decision": "skipped",
-        "reason": "Day is at its cap; better timed for the Nov 5 listing."
-      },
-      {
-        "story": "EMBRACE attack hits built-in browsers of five AI coding tools",
-        "decision": "skipped",
-        "reason": "Overlaps today's Claude Code backdoor security post, and the day is at its cap."
-      },
-      {
-        "story": "Texas sues OpenAI over ChatGPT child safety",
-        "decision": "covered",
-        "reason": "Already covered as 2026-10-25-texas-sues-openai-block-chatgpt-kids."
-      },
-      {
-        "story": "Pope Leo XIV says AI is a tool, not a person",
-        "decision": "skipped",
-        "reason": "Daily cap reached; skipped in the previous run for the same reason."
-      }
-    ],
-    "requests": []
-  },
-  {
     "run_at": "2026-10-30T19:53:49.298Z",
     "summary": "Afternoon run (15:55 New York, Oct 30): no open links or requests, no new must-cover priority 1 story since the last run, and Oct 30 is already at the 8-job cap, so nothing was queued.",
     "considered": [
@@ -4961,6 +4912,67 @@
         "story": "OpenAI data center community pledge, no more NDAs",
         "decision": "covered",
         "reason": "Already queued as 2026-11-06-openai-data-centers-pay-own-power."
+      }
+    ],
+    "requests": []
+  },
+  {
+    "run_at": "2026-11-06T18:54:51.300Z",
+    "summary": "Afternoon run (about 14:00 New York): no open links or requests; November 6 already has 8 desk jobs (4 posted, 4 waiting) and no new major priority 1 story turned up, so nothing was queued.",
+    "considered": [
+      {
+        "story": "OpenAI CFO Sarah Friar says OpenAI will keep investing in AI data centers despite the election results",
+        "source": "https://www.cnbc.com/",
+        "decision": "covered",
+        "reason": "Same OpenAI data center story already queued today as 2026-11-06-openai-data-centers-pay-own-power; a CFO interview adds little and the day is at the 8 job cap."
+      },
+      {
+        "story": "Anthropic lines up a UK retail offer and IPO valuation could fall after the AI stock rout",
+        "source": "https://techcrunch.com/2026/11/06/ramp-data-shows-ai-spending-stalling-just-as-anthropic-nears-its-ipo/",
+        "decision": "covered",
+        "reason": "Already queued as 2026-11-06-anthropic-ipo-investors-balk-selloff."
+      },
+      {
+        "story": "Researchers used Claude to solve a decades-old cell structure mystery",
+        "source": "https://www.anthropic.com/research/how-researchers-use-claude",
+        "decision": "skipped",
+        "reason": "Priority 2 research story and today is already at the 8 job cap; a candidate for tomorrow."
+      },
+      {
+        "story": "Claude Code sends your email address to websites (GitHub issue on Hacker News)",
+        "source": "https://github.com/anthropics/claude-code/issues/107757",
+        "decision": "skipped",
+        "reason": "Only a single GitHub issue so far, no independent news coverage to confirm it."
+      },
+      {
+        "story": "Three people charged in a $129 million AI impersonation fraud scheme",
+        "source": "https://www.cbsnews.com/",
+        "decision": "skipped",
+        "reason": "Crime story, would need review, and the day is at the cap."
+      },
+      {
+        "story": "Mark Cuban says Facebook knowingly runs AI deepfake scam ads",
+        "source": "https://finance.yahoo.com/technology/ai/articles/mark-cuban-says-facebook-knowingly-213000020.html",
+        "decision": "skipped",
+        "reason": "Opinion claims plus lawsuit context, sensitive, and today is at the 8 job cap."
+      },
+      {
+        "story": "Google releases Gemini Omni 1.2 Flash with 15 second clips and lower prices",
+        "source": "https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemini-omni-1-2-flash/",
+        "decision": "covered",
+        "reason": "Already posted as 2026-11-06-gemini-omni-15-second-videos-free."
+      },
+      {
+        "story": "Perplexity launches Teammates, always-on work agents",
+        "source": "https://www.theverge.com/ai-artificial-intelligence/1028302/perplexity-teammates-ai-agents-work",
+        "decision": "skipped",
+        "reason": "Limited to Max subscribers, narrow US appeal, and the day is at the cap."
+      },
+      {
+        "story": "Wired: AI companies want to buy your work files and emails",
+        "source": "https://www.wired.com/story/ai-companies-really-really-want-to-buy-your-work-files-and-emails/",
+        "decision": "skipped",
+        "reason": "Good everyone story but no room under the 8 job cap today."
       }
     ],
     "requests": []
