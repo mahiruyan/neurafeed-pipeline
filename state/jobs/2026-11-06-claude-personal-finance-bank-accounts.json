@@ -10,9 +10,14 @@
       "status": "approved",
       "at": "2026-11-06T05:04:59.750Z",
       "by": "auto: 3 source(s), not sensitive"
+    },
+    {
+      "status": "publish_failed",
+      "at": "2026-11-06T13:18:15.270Z",
+      "by": "system"
     }
   ],
-  "status": "approved",
+  "status": "publish_failed",
   "files": [
     "out/2026-11-06-claude-personal-finance-bank-accounts/1.jpg",
     "out/2026-11-06-claude-personal-finance-bank-accounts/2.jpg",
@@ -25,7 +30,7 @@
     "slide 1: fal image: \"User is locked. Reason: TOP_UP.\"",
     "slide 1 badge 1: logo check skipped (fal vision: \"User is locked. Reason: TOP_UP.\")"
   ],
-  "updated_at": "2026-11-06T05:05:01.355Z",
+  "updated_at": "2026-11-06T13:18:15.270Z",
   "by": "auto: 3 source(s), not sensitive",
   "tg_messages": [
     2645,
@@ -35,5 +40,7 @@
     2649,
     2650,
     2651
-  ]
+  ],
+  "error": "Instagram 17841477983419365/media_publish: Media ID is not available",
+  "attempts": 1
 }
