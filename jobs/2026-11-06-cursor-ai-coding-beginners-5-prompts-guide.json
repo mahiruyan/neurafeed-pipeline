@@ -1,0 +1,283 @@
+{
+  "id": "2026-11-06-cursor-ai-coding-beginners-5-prompts-guide",
+  "format": "utility",
+  "created_at": "2026-11-06T17:20:00Z",
+  "story_time": "2026-11-06T17:00:00Z",
+  "timely": false,
+  "sensitive": false,
+  "priority": 2,
+  "review": true,
+  "sources": [
+    {
+      "name": "Cursor Docs: Quickstart",
+      "url": "https://cursor.com/docs/get-started/quickstart"
+    },
+    {
+      "name": "Cursor Docs: Agent overview",
+      "url": "https://cursor.com/docs/agent/overview"
+    },
+    {
+      "name": "Cursor Docs: Plan Mode",
+      "url": "https://cursor.com/docs/agent/plan-mode"
+    },
+    {
+      "name": "Cursor Docs: Rules",
+      "url": "https://cursor.com/docs/rules"
+    },
+    {
+      "name": "Cursor Help: Tab",
+      "url": "https://cursor.com/help/ai-features/tab.md"
+    },
+    {
+      "name": "Jetadmin",
+      "url": "https://www.jetadmin.io/blog/cursor-pricing-explained-plans-credit-system-and-real-costs-in-2026/"
+    },
+    {
+      "name": "Sam on AI",
+      "url": "https://samonai.substack.com/p/ai-brief-november-6-2026"
+    },
+    {
+      "name": "The Neuron",
+      "url": "https://www.theneuron.ai/digest/everything-that-happened-in-ai-today-friday-november-6-2026/"
+    }
+  ],
+  "caption": "Cursor is an AI code editor where an agent reads your project, edits files and runs commands.\nThe trick for beginners: make it explain first, change one small thing, read every diff.\nFor bigger work, Plan Mode writes a plan and waits for your OK.\n\nHave you tried coding with an AI agent yet?\n\nFollow @neurafeed.ai for daily AI news.\n\nSource: Cursor Docs · Photo: HumanX",
+  "threads_text": "Cursor's own quickstart has a smart order for beginners: ask the agent to explain your code, let it suggest three small safe changes, then read the diff. Plan Mode for anything bigger. Would you let an AI agent edit your code?",
+  "slides": [
+    {
+      "kind": "cover",
+      "headline": "You can now code with AI by just *typing what you want*. 5 Cursor prompts to start",
+      "image": {
+        "url": "https://cdn.humanx.co/rails/active_storage/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6MjY4ODgsInB1ciI6ImJsb2JfaWQifX0=--d210e0d3cc361ffa8a5f16f0fef66786a4d6b948/Michael-Truell.png",
+        "credit": "HumanX",
+        "fallback_urls": [
+          "https://www.humanx.co/_next/image?url=https%3A%2F%2Fcdn.humanx.co%2Frails%2Factive_storage%2Fblobs%2Fproxy%2FeyJfcmFpbHMiOnsiZGF0YSI6MjY4ODgsInB1ciI6ImJsb2JfaWQifX0%3D--d210e0d3cc361ffa8a5f16f0fef66786a4d6b948%2FMichael-Truell.png&w=3840&q=75",
+          "https://fortune.com/img-assets/wp-content/uploads/2026/04/GettyImages-2270265262-e1776885634438.jpg?format=webp&w=1440&quality=75"
+        ]
+      },
+      "pos": "center 25%",
+      "badges": [
+        {
+          "url": "https://cdn.jsdelivr.net/npm/simple-icons@16.36.0/icons/cursor.svg",
+          "fit": "contain"
+        }
+      ],
+      "badge_side": "right",
+      "badge_border": "white"
+    },
+    {
+      "kind": "prompt",
+      "heading": "1. Get a *map* first",
+      "paras": [
+        "Open Agent with Cmd+I (Ctrl+I on Windows). This is the first prompt in Cursor's own quickstart.",
+        "It searches your project and tells you what to read before changing anything."
+      ],
+      "prompt": "Explain this codebase. Point me to the main entry points, key modules, and anything I should read before making changes."
+    },
+    {
+      "kind": "prompt",
+      "heading": "2. Start *small*",
+      "paras": [
+        "Let the agent suggest and you choose. Copy edits and small UI fixes are perfect first tasks.",
+        "You stay in control of what changes."
+      ],
+      "prompt": "Suggest three small, safe improvements in this codebase. Explain the tradeoffs and wait for me to choose one."
+    },
+    {
+      "kind": "prompt",
+      "heading": "3. *Check* its work",
+      "paras": [
+        "The diff view shows every line the agent changed. Read it.",
+        "Then make it run the checks your project already has."
+      ],
+      "prompt": "Run this project's existing tests, type checker, linter and build. Fix anything your change broke, then list every file you changed and why."
+    },
+    {
+      "kind": "prompt",
+      "heading": "4. *Plan* before big jobs",
+      "paras": [
+        "Press Shift+Tab to switch to Plan Mode. The agent asks questions and writes a plan you can edit.",
+        "Nothing gets built until you approve it."
+      ],
+      "prompt": "I want to add [feature]. Ask me any questions first, then write a step by step plan and wait for my approval before writing code."
+    },
+    {
+      "kind": "prompt",
+      "heading": "5. Teach it *once*",
+      "paras": [
+        "Type /create-rule and Cursor saves a rule in your project's .cursor/rules folder.",
+        "Every new chat follows it."
+      ],
+      "prompt": "/create-rule Always explain changes in plain English for a beginner. Keep each change small. Never delete files or add dependencies without asking me."
+    },
+    {
+      "kind": "cta",
+      "hook": "One useful AI skill a day, explained simply. Follow so tomorrow's guide finds you."
+    }
+  ],
+  "site_article": {
+    "kind": "guide",
+    "headline": "Cursor for beginners: how to start coding with an AI agent, plus 5 prompts to copy",
+    "dek": "Cursor's agent can explain a project, edit files and run commands. Here is a safe order to learn it in, and where it goes wrong.",
+    "summary": "Cursor is an AI code editor with an agent that reads, edits and tests your project, plus Tab autocomplete and rules. Beginners get the best results by asking for an explanation first, making one small change, reviewing the diff and using Plan Mode for bigger work.",
+    "seo_title": "Cursor for beginners: a practical guide with 5 prompts",
+    "seo_description": "How to start with Cursor's AI agent: Agent, Tab, Plan Mode and rules explained, with five copy and paste prompts and its real weak spots.",
+    "answer_summary": "To start with Cursor, open a small project, ask the agent to explain the codebase, let it make one small change, review the diff and run your checks. Use Plan Mode for anything that touches many files.",
+    "tags": [
+      "Cursor",
+      "AI coding",
+      "AI guides",
+      "Prompts",
+      "Coding agents"
+    ],
+    "hero_alt": "Headshot portrait of a man.",
+    "paragraphs": [
+      {
+        "kind": "fact",
+        "text": "Cursor is an AI code editor. You open a folder, and an AI agent can read the project, explain it, edit files and run terminal commands for you. Next to the agent sits Tab, an autocomplete that suggests the next lines as you type. Cursor runs on macOS 12 and later, Windows 10 and later, and Linux, according to its quickstart.",
+        "sources": [
+          0,
+          1
+        ]
+      },
+      {
+        "kind": "fact",
+        "text": "The short version for beginners: let the agent explain before it edits, start with one small change, read every diff, and switch to Plan Mode for anything bigger. That order matches the quickstart Cursor gives new users, and it is the fastest way to learn the tool without breaking your project.",
+        "sources": [
+          0,
+          2
+        ]
+      },
+      {
+        "kind": "heading",
+        "text": "What you need before you start"
+      },
+      {
+        "kind": "fact",
+        "text": "Download Cursor from cursor.com/downloads, open the app and sign in. Then pick a folder for a small first task. A personal project, a practice repo or a copy of something you do not mind changing is ideal.",
+        "sources": [
+          0
+        ]
+      },
+      {
+        "kind": "fact",
+        "text": "Cursor has a free Hobby plan with limited Tab completions and limited agent requests, plus paid plans for heavier use, according to a September 2026 pricing breakdown by Jetadmin. The free plan is fine for learning. Long working sessions can hit its limits.",
+        "sources": [
+          5
+        ]
+      },
+      {
+        "kind": "tip",
+        "text": "Use Git from day one. Cursor saves checkpoints before big agent edits, but its docs say those checkpoints are stored locally and are not a replacement for version control."
+      },
+      {
+        "kind": "heading",
+        "text": "The three parts of Cursor"
+      },
+      {
+        "kind": "fact",
+        "text": "Agent is the main one. You open it in the side pane with Cmd+I on a Mac or Ctrl+I on Windows and Linux. It can search your code and the web, read files and images, edit files, run shell commands and ask you clarifying questions, according to Cursor's docs.",
+        "sources": [
+          1
+        ]
+      },
+      {
+        "kind": "fact",
+        "text": "Tab is the autocomplete. Suggestions show up as gray text ahead of your cursor. Press Tab to accept, Cmd+Right Arrow (Ctrl+Right Arrow on Windows and Linux) to accept one word at a time, and Escape or simply keep typing to reject. After you accept, pressing Tab again jumps to the next spot Cursor expects you to edit.",
+        "sources": [
+          4
+        ]
+      },
+      {
+        "kind": "fact",
+        "text": "Rules are standing instructions. Project rules live as .mdc files in a .cursor/rules folder inside your project. Cursor also reads a plain AGENTS.md file in the project root. User rules, which apply to all your projects, are set under Customize, then Rules.",
+        "sources": [
+          3
+        ]
+      },
+      {
+        "kind": "heading",
+        "text": "5 prompts to start with"
+      },
+      {
+        "kind": "step",
+        "text": "Ask the agent to explain the project first",
+        "title": "1. Get a map before you touch anything"
+      },
+      {
+        "kind": "prompt",
+        "text": "Explain this codebase. Point me to the main entry points, key modules, and anything I should read before making changes.",
+        "title": "Prompt 1: Explain the codebase"
+      },
+      {
+        "kind": "step",
+        "text": "This is the first prompt in Cursor's own quickstart. The agent searches the repo and summarizes how the pieces fit together. Read the answer and open the files it names. You will understand your own project faster, and your later prompts will be more precise.",
+        "title": "Why it works"
+      },
+      {
+        "kind": "step",
+        "text": "Let the agent suggest, and you choose. Low risk changes like fixing copy or a small layout bug are the right size for a first try.",
+        "title": "2. Make one small, safe change"
+      },
+      {
+        "kind": "prompt",
+        "text": "Suggest three small, safe improvements in this codebase. Explain the tradeoffs and wait for me to choose one.",
+        "title": "Prompt 2: Three safe improvements"
+      },
+      {
+        "kind": "step",
+        "text": "After the agent edits, the diff view shows exactly what changed. Then have it run the checks your project already has: tests, the type checker, the linter or a local build.",
+        "title": "3. Review the diff and run your checks"
+      },
+      {
+        "kind": "prompt",
+        "text": "Run this project's existing checks: tests, type checker, linter and build.\nFix anything that fails because of your change.\nThen list every file you changed and why, in plain English.",
+        "title": "Prompt 3: Verify the change"
+      },
+      {
+        "kind": "step",
+        "text": "Press Shift+Tab in the agent input, or use the mode picker, to switch to Plan Mode. The agent researches the code, asks clarifying questions and writes an implementation plan. You can edit the plan before it builds anything. Cursor recommends it for features with several possible approaches, changes across many files, and requirements that are still fuzzy.",
+        "title": "4. Use Plan Mode for anything bigger"
+      },
+      {
+        "kind": "prompt",
+        "text": "I want to add [feature, in one or two sentences].\nAsk me any questions you need first.\nThen write a step by step plan, list the files you will touch, and wait for my approval before writing code.",
+        "title": "Prompt 4: Plan before you build"
+      },
+      {
+        "kind": "step",
+        "text": "Type /create-rule in the agent and describe what you want. Cursor generates the rule file and saves it in .cursor/rules. Good first rules are about style and communication, not about the code itself.",
+        "title": "5. Teach Cursor your preferences once"
+      },
+      {
+        "kind": "prompt",
+        "text": "/create-rule Always explain changes in plain English for a beginner. Keep each change small. Never delete files or add new dependencies without asking me first.",
+        "title": "Prompt 5: A beginner friendly rule"
+      },
+      {
+        "kind": "heading",
+        "text": "Where Cursor falls short"
+      },
+      {
+        "kind": "analysis",
+        "text": "The agent can be confidently wrong, and the bigger the task, the more ways it can drift. That is why Plan Mode exists. Cursor's own advice when a planned build goes wrong is to revert the changes, make the plan more specific and run it again, which it says is usually faster than patching a run with follow up prompts."
+      },
+      {
+        "kind": "analysis",
+        "text": "Plain .md files in .cursor/rules are ignored, because project rules need the .mdc format with frontmatter. If a rule seems to do nothing, check the file type first. Checkpoints only restore files, not your conversation, and they live on your machine."
+      },
+      {
+        "kind": "fact",
+        "text": "Cursor is also moving toward building whole apps, not only editing code. Its cloud agents can now build and publish web apps with hosting, an optional Postgres database and Cursor sign-in, on paid plans with cloud agents turned on, according to Sam on AI's November 6, 2026 brief and The Neuron.",
+        "sources": [
+          6,
+          7
+        ]
+      },
+      {
+        "kind": "tip",
+        "text": "Start every new task in a fresh chat. Old conversations carry old assumptions, and a clean start with one clear goal gets better results than a long thread."
+      }
+    ]
+  }
+}

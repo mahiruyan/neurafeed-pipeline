@@ -1,76 +1,5 @@
 [
   {
-    "run_at": "2026-10-30T16:51:43.502Z",
-    "summary": "Queued the tampered Claude Code extension backdoor story (P1) and today's utility post with a Claude guide; today is now at 8 jobs, the daily cap.",
-    "considered": [
-      {
-        "story": "Tampered Claude Code extension 2.1.313 planted an SSH backdoor on up to 5,000 Cursor users",
-        "source": "https://www.stepsecurity.io/blog/claude-code-extension-trojanized",
-        "decision": "queued",
-        "job_id": "2026-10-30-fake-claude-code-update-ssh-backdoor",
-        "priority": 1
-      },
-      {
-        "story": "Utility: Claude Projects, file uploads and artifacts (guide from guides/plan.md, next after ChatGPT)",
-        "source": "https://support.claude.com/en/articles/9517075-what-are-projects",
-        "decision": "queued",
-        "job_id": "2026-10-30-claude-projects-files-artifacts-guide",
-        "priority": 2
-      },
-      {
-        "story": "Texas sues OpenAI over ChatGPT child safety",
-        "decision": "covered",
-        "reason": "Already covered as 2026-10-25-texas-sues-openai-block-chatgpt-kids."
-      },
-      {
-        "story": "Sam Altman says it is terrible for gamers to have RAM in PCs",
-        "source": "https://news.google.com/",
-        "decision": "skipped",
-        "reason": "Daily cap of 8 reached after the P1 story and the required utility post; candidate for tomorrow if still discussed."
-      },
-      {
-        "story": "Pope Leo calls for the disarmament of AI",
-        "source": "https://www.theverge.com/ai-artificial-intelligence/1023188/pope-leo-disarm-ai",
-        "decision": "skipped",
-        "reason": "Daily cap reached; religious and political angle is weaker for the account than the Claude security story."
-      },
-      {
-        "story": "US tech stocks fall sharply over AI cost fears (BBC)",
-        "decision": "skipped",
-        "reason": "Daily cap reached; markets angle overlaps with yesterday's Alphabet stock story."
-      },
-      {
-        "story": "Japan asks Anthropic and OpenAI for more access to advanced models (Nikkei)",
-        "decision": "skipped",
-        "reason": "Daily cap reached; paywalled with no second source read."
-      },
-      {
-        "story": "Cognizant forms 25,000-person OpenAI delivery group",
-        "decision": "skipped",
-        "reason": "Enterprise services deal with little US consumer interest."
-      },
-      {
-        "story": "Mistral releases Mistral Large 4 open weights",
-        "source": "https://mistral.ai/news/mistral-large-4-oss/",
-        "decision": "skipped",
-        "reason": "Daily cap reached and Mistral open weights were already covered on October 29."
-      },
-      {
-        "story": "Theranos whistleblower Tyler Shultz warns about AI boom deception",
-        "source": "https://techcrunch.com/2026/10/30/theranos-whistleblower-tyler-shultz-warns-that-the-ai-boom-is-a-great-opportunity-to-go-deceive-people/",
-        "decision": "skipped",
-        "reason": "Daily cap reached; opinion piece without hard news."
-      },
-      {
-        "story": "NVIDIA agentic AI joins the search for extraterrestrial signals",
-        "source": "https://blogs.nvidia.com/blog/ai-joins-the-search-for-extraterrestrial-signals/",
-        "decision": "skipped",
-        "reason": "Daily cap reached; good evergreen candidate for a later day."
-      }
-    ],
-    "requests": []
-  },
-  {
     "run_at": "2026-10-30T17:54:43.656Z",
     "summary": "Early afternoon run (13:55 New York, Oct 30): no open links or requests, no new uncovered priority 1 story since the last run, and Oct 30 is already at the 8-job cap, so nothing was queued.",
     "considered": [
@@ -4968,6 +4897,70 @@
         "story": "Global AI selloff hits Nikkei and Asian markets",
         "decision": "covered",
         "reason": "Same story as 2026-11-05-ai-stocks-wipeout-nasdaq-5-percent."
+      }
+    ],
+    "requests": []
+  },
+  {
+    "run_at": "2026-11-06T17:13:34.837Z",
+    "summary": "Midday run (about 12:00 New York): no open links or requests; queued the utility post for November 6 (Cursor beginners guide with 5 prompts), which brings the day to 8 desk jobs, so no more news was added.",
+    "considered": [
+      {
+        "story": "Cursor for beginners guide (next line in guides/plan.md), tied to Cursor's new live app building",
+        "source": "https://cursor.com/docs/get-started/quickstart",
+        "decision": "queued",
+        "job_id": "2026-11-06-cursor-ai-coding-beginners-5-prompts-guide",
+        "priority": 2
+      },
+      {
+        "story": "Claude helps solve a 40-year-old vault particle cell mystery",
+        "source": "https://www.theneuron.ai/news/claude-anthropic-40-year-old-cell-mystery/",
+        "decision": "skipped",
+        "reason": "Announced November 4, a niche science preprint, and today already has three Anthropic stories and is at the 8 job cap."
+      },
+      {
+        "story": "Google plans a $17 billion Wyoming data center",
+        "source": "https://www.bloomberg.com/news/articles/2026-11-05-google-plans-to-spend-17-billion-on-wyoming-data-center",
+        "decision": "skipped",
+        "reason": "Data center spending story while the day already has the OpenAI data center post, and the day is at the cap."
+      },
+      {
+        "story": "Justice Department launches a Super Intelligence Task Force",
+        "source": "https://x.com/TheJusticeDept/status/2118387344944308552",
+        "decision": "skipped",
+        "reason": "Only the agency's own post found so far, no second source read, and the day is at the cap."
+      },
+      {
+        "story": "Perplexity launches Teammates work agents",
+        "source": "https://www.theverge.com/ai-artificial-intelligence/1028302/perplexity-teammates-ai-agents-work",
+        "decision": "skipped",
+        "reason": "Only for Max subscribers on the web, limited interest for most users, and the day is at the cap."
+      },
+      {
+        "story": "Airbnb plans an AI travel agent for 2027",
+        "source": "https://techcrunch.com/2026/11/05/airbnb-says-its-launching-an-ai-travel-agent-in-the-first-half-of-2027/",
+        "decision": "skipped",
+        "reason": "Product is months away and the day is at the cap; could work as filler tomorrow."
+      },
+      {
+        "story": "Gemini Omni 1.2 Flash with 15 second videos",
+        "decision": "covered",
+        "reason": "Already queued as 2026-11-06-gemini-omni-15-second-videos-free."
+      },
+      {
+        "story": "METR says Anthropic AI is improving twice as fast",
+        "decision": "covered",
+        "reason": "Already queued as 2026-11-06-anthropic-ai-twice-as-fast-metr."
+      },
+      {
+        "story": "Claude Personal Finance connects to bank accounts",
+        "decision": "covered",
+        "reason": "Already queued as 2026-11-06-claude-personal-finance-bank-accounts."
+      },
+      {
+        "story": "OpenAI data center community pledge, no more NDAs",
+        "decision": "covered",
+        "reason": "Already queued as 2026-11-06-openai-data-centers-pay-own-power."
       }
     ],
     "requests": []
