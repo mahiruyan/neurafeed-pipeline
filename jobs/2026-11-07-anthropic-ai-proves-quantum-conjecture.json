@@ -1,0 +1,106 @@
+{
+  "id": "2026-11-07-anthropic-ai-proves-quantum-conjecture",
+  "created_at": "2026-11-07T03:40:00Z",
+  "story_time": "2026-11-06T16:40:00Z",
+  "timely": false,
+  "sensitive": false,
+  "priority": 1,
+  "review": true,
+  "format": "carousel",
+  "site_category": "models",
+  "ab": { "headline": "long" },
+  "sources": [
+    { "name": "Interesting Engineering", "url": "https://interestingengineering.com/culture/psi-research-system-aaronson-ambainis-quantum-conjecture" },
+    { "name": "Physical Superintelligence on GitHub", "url": "https://github.com/physical-superintelligence/aaronson-ambainis" },
+    { "name": "Runtime Wire", "url": "https://runtimewire.com/article/physical-superintelligence-aaronson-ambainis-proof" }
+  ],
+  "caption": "AI startup Physical Superintelligence says its research system, running a non-public Anthropic model, proved the Aaronson-Ambainis conjecture, a quantum computing question open since 2008.\nPSI says it took three days, and the Lean proof checker accepted the final version.\nIt has not had full independent review yet, and Stanford researchers are examining it.\n\nWould you trust a math proof written by an AI?\n\nFollow @neurafeed.ai for daily AI news.\n\nSource: Interesting Engineering, Runtime Wire · Photos: Getty Images, Google, Runtime Wire, Anthropic",
+  "threads_text": "A startup says an unreleased Anthropic model proved a quantum computing conjecture that had been open since 2008, in three days. A computer proof checker accepted it, but no outside experts have signed off yet. Would you trust a math proof written by an AI?",
+  "slides": [
+    {
+      "kind": "cover",
+      "headline": "A startup says an unreleased Anthropic AI cracked an 18-year-old quantum puzzle *in three days*",
+      "image": {
+        "url": "https://cms.interestingengineering.com/wp-content/uploads/2026/11/GettyImages-1063746216.jpg",
+        "credit": "Getty Images via Interesting Engineering",
+        "fallback_urls": [
+          "https://runtimewire.com/og/physical-superintelligence-aaronson-ambainis-proof.16x9.jpg?v=og2-12aizuq"
+        ]
+      },
+      "pos": "center center",
+      "badges": [
+        { "url": "assets/logos/anthropic.png", "shape": "free" }
+      ]
+    },
+    {
+      "kind": "card",
+      "heading": "A puzzle open *since 2008*",
+      "paras": [
+        "The Aaronson-Ambainis conjecture asks when quantum computers can truly beat normal computers.",
+        "If it holds, normal computers can copy a broad class of quantum algorithms on random inputs without a huge slowdown."
+      ],
+      "image": {
+        "url": "https://www.notebookcheck.net/fileadmin/Notebooks/News/_nc4/willow.png",
+        "credit": "Google",
+        "fallback_urls": [
+          "https://media.datacenterdynamics.com/media/images/Google_Willow.2e16d0ba.fill-1200x630.png"
+        ]
+      },
+      "note": "Shown: Google's Willow quantum chip"
+    },
+    {
+      "kind": "card",
+      "heading": "A *secret Anthropic model* did the work",
+      "paras": [
+        "Physical Superintelligence, or PSI, says its research system ran a non-public Anthropic model on its own servers.",
+        "PSI says it had a proof in three days, then improved it twice. The model's name was not given."
+      ],
+      "image": {
+        "url": "https://runtimewire.com/api/storage/uploads/source-images/physical-superintelligence-aaronson-ambainis-proof-425002f4.png?w=1600&fmt=webp",
+        "credit": "Runtime Wire",
+        "fallback_urls": []
+      }
+    },
+    {
+      "kind": "card",
+      "heading": "A computer *checked every step*",
+      "paras": [
+        "The proof was written in Lean, software that checks each logical step. Lean accepted the final version.",
+        { "t": "No full independent review yet. Stanford researchers are now examining it.", "strong": true }
+      ],
+      "image": {
+        "url": "https://www-cdn.anthropic.com/images/4zrzovbb/website/cc389d90b468ebc86011f6642099dfad9a4a757f-2000x1125.jpg",
+        "credit": "Anthropic",
+        "fallback_urls": []
+      }
+    },
+    {
+      "kind": "cta",
+      "hook": "AI is starting to settle open math questions. Follow to see which one falls next."
+    }
+  ],
+  "site_article": {
+    "headline": "Startup says a non-public Anthropic model proved the Aaronson-Ambainis quantum computing conjecture",
+    "dek": "Physical Superintelligence says its system found the proof in three days and that the Lean proof checker accepted it, but outside experts have not finished reviewing it.",
+    "summary": "Physical Superintelligence, a physics AI startup, said on November 6, 2026 that its research system, running a non-public Anthropic model, proved the Aaronson-Ambainis conjecture, a quantum computing question open since 2008. The company says the proof was found in three days and formally checked in Lean, while independent academic review is still pending.",
+    "seo_title": "Anthropic model behind claimed quantum conjecture proof",
+    "seo_description": "PSI says a non-public Anthropic model proved the 2008 Aaronson-Ambainis conjecture in three days, checked in Lean. Outside review is still pending.",
+    "answer_summary": "According to Physical Superintelligence, yes: its AI research system, built on a non-public Anthropic model, produced a proof that the Lean proof checker accepted. The result has not yet had full independent academic review.",
+    "tags": ["Anthropic", "Physical Superintelligence", "quantum computing", "AI for math", "Lean"],
+    "hero_alt": "Abstract visualization of quantum phenomena.",
+    "paragraphs": [
+      { "kind": "fact", "text": "Physical Superintelligence, a physics research company that builds automated systems for scientific discovery, said on November 6, 2026 that its AI research system had proved the Aaronson-Ambainis conjecture, a problem in quantum computing that has been open since 2008. The company announced the result in a thread on X and on a research page published the same day, according to Runtime Wire.", "sources": [0, 2] },
+      { "kind": "fact", "text": "The company, known as PSI, said the system ran on its own infrastructure using a non-public model from Anthropic, according to Interesting Engineering. Neither PSI nor the coverage named the model. PSI said the proof was completed in three days and that the system then improved it twice before the final version.", "sources": [0, 2] },
+      { "kind": "heading", "text": "What the conjecture asks" },
+      { "kind": "fact", "text": "The conjecture concerns when quantum computers can gain a large advantage over classical machines. Interesting Engineering describes it as asking whether quantum algorithms with a particular mathematical structure can be efficiently approximated by classical computers. If it holds, classical computers could simulate a broad class of these algorithms on randomly chosen inputs with only polynomial overhead.", "sources": [0, 2] },
+      { "kind": "fact", "text": "In mathematical terms, PSI's repository states the result as a bound showing that a bounded, low-degree polynomial on the discrete cube must have an influential variable. The repository identifies the statement as Conjecture 1.7 in a 2014 paper by Scott Aaronson and Andris Ambainis. Interesting Engineering notes that the result does not rule out quantum algorithms such as Shor's algorithm for factoring.", "sources": [0, 1] },
+      { "kind": "heading", "text": "How the proof was checked" },
+      { "kind": "fact", "text": "PSI formalized the proof in Lean, a system that checks each step of a mathematical argument by machine. The company's GitHub repository says the formalization proves four theorems with no placeholders and no added axioms, and that the proofs were replayed with two separate checking kernels. A control test rejected deliberately wrong solutions. One of the four theorems depends on an earlier published result that the repository does not formalize.", "sources": [1] },
+      { "kind": "fact", "text": "The repository is direct about what the machine check does not cover. The accompanying paper is written for human readers and is not itself machine checked, and readers still need to confirm that the formal statement matches the original conjecture. Interesting Engineering makes the same point, noting that Lean confirms logical consistency with the stated assumptions but cannot by itself confirm the problem was stated correctly.", "sources": [0, 1] },
+      { "kind": "fact", "text": "David Turturean of PSI led the work and developed the research harness. The repository says the proof, paper and formalization were produced by AI models in that harness, and that Turturean reviewed the paper and is responsible for its correctness. Jim Halverson audited the proof, and Phiala Shanahan commented on the Lean formalization, according to Interesting Engineering.", "sources": [0, 1] },
+      { "kind": "fact", "text": "The result has not yet undergone full independent academic review. Stanford researchers Guy Blanc, Jordan Docter, Carmen Strassle and Li-Yang Tan, who proved a special case of the conjecture in August 2026, are examining it, Interesting Engineering reported.", "sources": [0] },
+      { "kind": "analysis", "text": "For Anthropic, the claim is notable because it comes from an outside company using a model the public cannot access, rather than from Anthropic itself. It adds to a series of recent claims that AI systems can produce research level mathematics, and the use of a machine checked proof makes this one easier for experts to test than a written argument alone." },
+      { "kind": "why_it_matters", "text": "The next step to watch is the review by outside researchers, including the Stanford group, and whether they agree that the formal Lean statement matches the conjecture as Aaronson and Ambainis posed it." }
+    ]
+  }
+}

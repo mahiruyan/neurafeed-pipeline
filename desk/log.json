@@ -4988,5 +4988,31 @@
       }
     ],
     "requests": []
+  },
+  {
+    "run_at": "2026-11-07T03:29:54.741Z",
+    "summary": "Night run, second pass (about 22:40 New York): the refreshed leads showed a new Anthropic story, so I queued 2026-11-07-anthropic-ai-proves-quantum-conjecture (priority 1, evergreen, for Saturday's first window).",
+    "considered": [
+      {
+        "story": "Startup PSI says a non-public Anthropic model proved the 18-year-old Aaronson-Ambainis quantum conjecture in three days",
+        "source": "https://interestingengineering.com/culture/psi-research-system-aaronson-ambainis-quantum-conjecture",
+        "decision": "queued",
+        "job_id": "2026-11-07-anthropic-ai-proves-quantum-conjecture",
+        "priority": 1
+      },
+      {
+        "story": "Microsoft is winding down an Oracle deal to rent AI cloud capacity (Bloomberg via Reuters)",
+        "source": "https://www.reuters.com/business/microsoft-is-winding-down-oracle-deal-rent-ai-cloud-capacity-bloomberg-news-2026-11-06/",
+        "decision": "skipped",
+        "reason": "Reported November 6 around 13:00 New York, so as timely news it expires before Saturday's 07:00 window, and it is insider cloud business news."
+      },
+      {
+        "story": "Crusoe sells its troubled Wyoming data center project to Google (TechCrunch)",
+        "source": "https://techcrunch.com/2026/11/06/crusoe-sells-troubled-wyoming-data-center-project-to-google/",
+        "decision": "skipped",
+        "reason": "Data center deal with little interest for normal users, and TechCrunch could not be opened from here."
+      }
+    ],
+    "requests": []
   }
 ]
