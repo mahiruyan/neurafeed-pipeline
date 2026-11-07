@@ -1,62 +1,5 @@
 [
   {
-    "run_at": "2026-10-31T12:16:09.036Z",
-    "summary": "Morning run (08:00 New York, Oct 31): no open links or requests; queued Sam Altman's 'quite terrible' PC RAM remarks (priority 1), bringing Oct 31 to 7 jobs and leaving one slot for the utility post after 11:00.",
-    "considered": [
-      {
-        "story": "Sam Altman says it is 'quite terrible' for PCs to hold so much of the world's DRAM",
-        "source": "https://www.tomshardware.com/tech-industry/data-centers/openai-ceo-says-its-quite-terrible-for-your-pc-to-have-ram-sam-altman-says-data-centers-offer-better-utilization",
-        "decision": "queued",
-        "job_id": "2026-10-31-altman-pc-ram-quite-terrible",
-        "priority": 1
-      },
-      {
-        "story": "AMD MI350X matched or beat Nvidia B200 on 4 of 10 Meta training models (paper)",
-        "decision": "skipped",
-        "reason": "Technical benchmark seen only in one secondary write-up, and AMD and Meta were covered this week."
-      },
-      {
-        "story": "Apple CEO John Ternus says Apple won't ship AI for AI's sake (Wired)",
-        "source": "https://www.wired.com/story/i-spent-30-minutes-with-apples-ceo-now-i-know-why-john-ternus-got-the-job",
-        "decision": "skipped",
-        "reason": "Interview color without a clear news hook; the MacBook Pro launch is already covered."
-      },
-      {
-        "story": "Wikimedia backs AI training fair use but opposes RAG in NYT v. OpenAI amicus brief",
-        "source": "https://wikimediafoundation.org/news/2026/10/30/wikimedia-foundation-amicus-brief-new-york-times-v-open-ai-case/",
-        "decision": "skipped",
-        "reason": "Legal filing with narrow appeal, and the last slot today is kept for the utility post."
-      },
-      {
-        "story": "Tesla to open Optimus reservations in early December (SF Standard)",
-        "source": "https://sfstandard.com/2026/10/30/tesla-optimus-robot-waitlist",
-        "decision": "skipped",
-        "reason": "Still a single-source report."
-      },
-      {
-        "story": "Anthropic research: harmless stories can teach models to deceive and resist shutdown",
-        "decision": "skipped",
-        "reason": "Only a secondary write-up seen this run and Anthropic already has three posts today."
-      },
-      {
-        "story": "OpenAI-backed Thrive Holdings buys ADT for $15.3 billion",
-        "decision": "skipped",
-        "reason": "Two days old and not an OpenAI deal itself."
-      },
-      {
-        "story": "OpenAI cuts funding target by $10 billion",
-        "decision": "covered",
-        "reason": "Already queued as 2026-10-31-openai-cuts-funding-target-10-billion."
-      },
-      {
-        "story": "Anthropic renames Max 20x to Ultra and drops the 5-hour limit",
-        "decision": "covered",
-        "reason": "Already queued as 2026-10-31-claude-ultra-no-5-hour-limit."
-      }
-    ],
-    "requests": []
-  },
-  {
     "run_at": "2026-10-31T13:54:44.584Z",
     "summary": "Mid-morning run (09:53 New York, Oct 31): no open links or requests and no new priority 1 story since the 08:00 run; nothing queued, Oct 31 stays at 7 jobs with the last slot kept for the utility post after 11:00.",
     "considered": [
@@ -4995,6 +4938,68 @@
         "story": "Bank of England: AI added only 0.5 percent to UK productivity",
         "decision": "skipped",
         "reason": "UK economic data, already skipped in earlier runs."
+      }
+    ],
+    "requests": []
+  },
+  {
+    "run_at": "2026-11-07T13:04:45.458Z",
+    "summary": "Saturday morning run: no open links or requests; queued the Claude Max usage lawsuit ruling (P1, sensitive) and the Claude Code \"don't ask again\" secrets leak (P2).",
+    "considered": [
+      {
+        "story": "Judge lets Claude Max subscribers pursue claims that \"5x or 20x more usage\" misled buyers (TNW via Courthouse News)",
+        "source": "https://thenextweb.com/news/anthropic-claude-max-lawsuit-ruling-usage-claims",
+        "decision": "queued",
+        "job_id": "2026-11-07-claude-max-lawsuit-20x-ruling",
+        "priority": 1
+      },
+      {
+        "story": "Claude Code \"Yes, and don't ask again\" saved passwords in plain text, 2,539 secrets found on GitHub (Apiiro, The Hacker News)",
+        "source": "https://thehackernews.com/2026/11/claude-codes-dont-ask-again-file.html",
+        "decision": "queued",
+        "job_id": "2026-11-07-claude-code-dont-ask-again-leaks-passwords",
+        "priority": 2
+      },
+      {
+        "story": "Justice Department launches a Super Intelligence Task Force",
+        "source": "https://www.engadget.com/2309257/doj-just-launched-something-called-the-super-intelligence-task-force/",
+        "decision": "skipped",
+        "reason": "Announced November 5, now two days old, political, and the release names no concrete cases."
+      },
+      {
+        "story": "OpenAI closes $11 billion at a $1.25 trillion valuation",
+        "decision": "skipped",
+        "reason": "Follow-up to the earlier funding story, as decided in earlier runs."
+      },
+      {
+        "story": "Grok watermark on xAI API text from November 7",
+        "decision": "skipped",
+        "reason": "Single small blog source and a developer API detail."
+      },
+      {
+        "story": "Meta brings Muse Wonder Active Memory and Focus to all users",
+        "decision": "skipped",
+        "reason": "Still not confirmed by two sources I could read."
+      },
+      {
+        "story": "Crusoe sells Wyoming data center project to Google",
+        "decision": "skipped",
+        "reason": "Already reviewed in earlier runs, infrastructure deal with little consumer interest."
+      },
+      {
+        "story": "DeepMind AI agents expose legacy 1024-bit RSA weaknesses",
+        "decision": "skipped",
+        "reason": "Niche cryptography story with no second source tying DeepMind to it."
+      },
+      {
+        "story": "Megaspeed executive named as Chinese spy targeting Jensen Huang",
+        "decision": "covered",
+        "reason": "Already covered by the October 29 Jensen Huang job."
+      },
+      {
+        "story": "Anthropic IPO valuation pressure (Bloomberg, Axios)",
+        "decision": "covered",
+        "reason": "Same story as 2026-11-06-anthropic-ipo-investors-balk-selloff."
       }
     ],
     "requests": []
