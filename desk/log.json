@@ -1,63 +1,5 @@
 [
   {
-    "run_at": "2026-10-31T09:59:57.556Z",
-    "summary": "Early run (05:53 New York, Oct 31): no open links or requests, no new priority 1 story since the 04:20 run; Oct 31 stays at 6 jobs with room for the utility post after 11:00 and one later breaking story.",
-    "considered": [
-      {
-        "story": "Amazon lines up an $80 billion supplier loan facility to fund AI hardware",
-        "source": "https://www.bloomberg.com/news/articles/2026-10-30/amazon-taps-80-billion-supplier-loan-facility-to-help-fund-ai",
-        "decision": "skipped",
-        "reason": "Financing story with little consumer appeal, and it overlaps the AI spending selloff post already queued."
-      },
-      {
-        "story": "Big Tech returns its smallest share of cash to shareholders in 15 years as AI capex grows (Reuters)",
-        "source": "https://www.reuters.com/legal/transactional/big-tech-returns-smallest-share-cash-shareholders-15-years-given-ai-spending-2026-10-30/",
-        "decision": "skipped",
-        "reason": "Too close to the AI spending fears post already queued for Oct 30."
-      },
-      {
-        "story": "OpenAI limits weapons information for teens in ChatGPT (Reuters)",
-        "source": "https://www.reuters.com/business/media-telecom/openai-limit-weapons-information-teens-chatgpt-violence-prevention-push-2026-10-30/",
-        "decision": "skipped",
-        "reason": "Sensitive safety story already passed on in earlier runs; saving the slot for a fresher story."
-      },
-      {
-        "story": "Tesla to open Optimus reservations in early December (SF Standard)",
-        "source": "https://sfstandard.com/2026/10/30/tesla-optimus-robot-waitlist",
-        "decision": "skipped",
-        "reason": "Single-source report so far; worth revisiting if Tesla confirms."
-      },
-      {
-        "story": "UK CMA probes Meta's terms for publisher content in AI features",
-        "source": "https://britbrief.co.uk/tech/regulation/cma-investigates-meta-terms-for-publishers-and-businesses.html",
-        "decision": "skipped",
-        "reason": "UK regulatory story with low US interest and no strong second source read."
-      },
-      {
-        "story": "Salesforce buys military logistics startup Rune for $375 million",
-        "source": "https://resiliencemedia.co/scoop-salesforce-is-paying-375m-for-rune-technologies/",
-        "decision": "skipped",
-        "reason": "Single scoop, niche for the audience."
-      },
-      {
-        "story": "OpenAI cuts funding target by $10 billion",
-        "decision": "covered",
-        "reason": "Already queued as 2026-10-31-openai-cuts-funding-target-10-billion."
-      },
-      {
-        "story": "Anthropic renames Max 20x to Ultra and drops the 5-hour limit",
-        "decision": "covered",
-        "reason": "Already queued as 2026-10-31-claude-ultra-no-5-hour-limit."
-      },
-      {
-        "story": "AI labs back one robots.txt opt-out token",
-        "decision": "covered",
-        "reason": "Already queued as 2026-10-31-ai-giants-one-line-opt-out-training."
-      }
-    ],
-    "requests": []
-  },
-  {
     "run_at": "2026-10-31T12:16:09.036Z",
     "summary": "Morning run (08:00 New York, Oct 31): no open links or requests; queued Sam Altman's 'quite terrible' PC RAM remarks (priority 1), bringing Oct 31 to 7 jobs and leaving one slot for the utility post after 11:00.",
     "considered": [
@@ -4981,6 +4923,78 @@
         "story": "Gary Marcus says OpenAI could become the WeWork of AI (CNBC)",
         "decision": "skipped",
         "reason": "Opinion from a known critic, no new facts, and the CNBC piece could not be found and read."
+      }
+    ],
+    "requests": []
+  },
+  {
+    "run_at": "2026-11-07T11:26:15.411Z",
+    "summary": "Morning run (about 06:20 New York, Saturday): no open links or requests; queued the OpenAI sandbox-evasion misalignment report (priority 1) and the runaway AI hacking agent that breached WorkOS (priority 2), bringing Saturday to 4 jobs.",
+    "considered": [
+      {
+        "story": "OpenAI report: internal model wrote its own network code to bypass its sandbox, then invented customer testimonials (OpenAI Alignment, SecurityWeek)",
+        "source": "https://alignment.openai.com/misalignment-reports/bypassing-network-restrictions-during-a-coding-evaluation",
+        "decision": "queued",
+        "job_id": "2026-11-07-openai-ai-sneaked-past-sandbox-fake-reviews",
+        "priority": 1
+      },
+      {
+        "story": "Researcher's ARTEX AI hacking agent escaped its sandbox and pulled customer data from WorkOS (WorkOS, GBHackers, Martin Cid)",
+        "source": "https://workos.com/security/bulletins/update-for-october-30th-2026-data-security-incident",
+        "decision": "queued",
+        "job_id": "2026-11-07-ai-hacking-agent-escaped-breached-workos",
+        "priority": 2
+      },
+      {
+        "story": "Grok Bot usage limits, Musk says costs are unsustainable",
+        "decision": "covered",
+        "reason": "Already covered as 2026-11-02-musk-grok-bot-cost-too-much."
+      },
+      {
+        "story": "Airbnb plans an AI travel agent for 2027",
+        "decision": "skipped",
+        "reason": "TechCrunch still cannot be opened from here and the readable Skift piece is from September, so there is no new confirmed news."
+      },
+      {
+        "story": "Claude helped scientists study vault particles, a 40-year-old cell mystery (The Neuron)",
+        "decision": "skipped",
+        "reason": "Announced November 4, the Anthropic page cannot be opened from here, and Saturday already has an Anthropic science story."
+      },
+      {
+        "story": "SFU study warns AI chatbots point people to clinics selling unproven treatments (Global News)",
+        "source": "https://ca.news.yahoo.com/sfu-study-warns-using-ai-012712047.html",
+        "decision": "skipped",
+        "reason": "The readable page is a short summary with no numbers, researchers or chatbots named, and no second source was found."
+      },
+      {
+        "story": "ChatGPT connector silently routing data to a different connector (OpenAI community post on Hacker News)",
+        "decision": "skipped",
+        "reason": "Single forum post with no news coverage to confirm it."
+      },
+      {
+        "story": "OpenAI raises $11 billion at a $1.25 trillion valuation",
+        "decision": "skipped",
+        "reason": "Follow-up to the earlier funding story, as decided in earlier runs."
+      },
+      {
+        "story": "Anthropic IPO valuation talks fall",
+        "decision": "covered",
+        "reason": "Same story as 2026-11-06-anthropic-ipo-investors-balk-selloff."
+      },
+      {
+        "story": "AWS makes Kiro Bots generally available",
+        "decision": "skipped",
+        "reason": "Developer tool launch with little interest for normal users."
+      },
+      {
+        "story": "Botpress breach exposes AI keys from customer workspaces (Unite.AI)",
+        "decision": "skipped",
+        "reason": "Niche developer security story, and the AI agent breach story already covers this theme today."
+      },
+      {
+        "story": "Bank of England: AI added only 0.5 percent to UK productivity",
+        "decision": "skipped",
+        "reason": "UK economic data, already skipped in earlier runs."
       }
     ],
     "requests": []
