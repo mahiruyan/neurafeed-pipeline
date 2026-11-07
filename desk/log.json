@@ -1,68 +1,5 @@
 [
   {
-    "run_at": "2026-10-31T19:54:18.055Z",
-    "summary": "Late afternoon run (15:53 New York, Oct 31): no open links or requests; Oct 31 already has 8 jobs (the daily cap) including the utility post, and no new priority 1 story appeared since the last run, so nothing was queued.",
-    "considered": [
-      {
-        "story": "Fortune: OpenAI cuts fundraising goal while Meta gets a credit warning over cash flow and spending",
-        "source": "https://fortune.com/2026/10/31/ai-boom-bust-openai-fundraising-target-meta-credit-warning-cash-flow-capex",
-        "decision": "covered",
-        "reason": "The OpenAI half is already queued as 2026-10-31-openai-cuts-funding-target-10-billion; the Meta credit warning alone is a follow-up and the day is at the cap."
-      },
-      {
-        "story": "Anthropic intends to trade on the Nasdaq under the ticker ANT (Yahoo Finance)",
-        "decision": "covered",
-        "reason": "Already covered as 2026-10-26-anthropic-files-ipo-ant-nasdaq."
-      },
-      {
-        "story": "Anthropic to receive a junk credit rating after its IPO (Hacker News)",
-        "decision": "skipped",
-        "reason": "Only seen on Hacker News so far with no second source, and the day is at the cap; candidate for Nov 1 if confirmed."
-      },
-      {
-        "story": "Do the math: how researchers took over ChatGPT accounts (Hacker News)",
-        "decision": "skipped",
-        "reason": "A researcher write-up with no news coverage found yet, and the day is at the cap; candidate for Nov 1."
-      },
-      {
-        "story": "Google lets Claude and Codex into Android Studio (Yahoo Tech)",
-        "decision": "skipped",
-        "reason": "Developer tool story found in one outlet only, and the day is at the cap."
-      },
-      {
-        "story": "Pope Leo warns AI must be disarmed ahead of autonomous weapons talks (Newsweek)",
-        "decision": "skipped",
-        "reason": "Politics and religion adjacent story that would need review, and the day is at the cap; candidate for Nov 1."
-      },
-      {
-        "story": "Anthropic watermark rollout leaves a loophole on two older Claude models (The Decoder)",
-        "decision": "skipped",
-        "reason": "One source, niche angle, and the day is at the cap."
-      },
-      {
-        "story": "OpenAI plans to train on Daybreak Blue cybersecurity session data (The Decoder)",
-        "decision": "skipped",
-        "reason": "One source so far, and the day is at the cap; candidate for Nov 1."
-      },
-      {
-        "story": "Sam Altman says PC RAM is quite terrible (Yahoo Finance)",
-        "decision": "covered",
-        "reason": "Already queued as 2026-10-31-altman-pc-ram-quite-terrible."
-      },
-      {
-        "story": "Google, OpenAI, Anthropic and Microsoft back one AI training opt-out (The Next Web)",
-        "decision": "covered",
-        "reason": "Already queued as 2026-10-31-ai-giants-one-line-opt-out-training."
-      },
-      {
-        "story": "Accenture contractor gave a Claude agent access to a Pentagon network (CyberSecurityNews)",
-        "decision": "covered",
-        "reason": "Already queued as 2026-10-31-contractor-claude-agent-pentagon-network."
-      }
-    ],
-    "requests": []
-  },
-  {
     "run_at": "2026-10-31T21:54:18.813Z",
     "summary": "Evening run (17:53 New York, Oct 31): no open links or requests (the four old links are already in inbox/skipped.json); Oct 31 already has 8 jobs (the daily cap) including the utility post, it is Saturday so no roundup, and no new priority 1 story appeared since the last run, so nothing was queued.",
     "considered": [
@@ -5027,6 +4964,66 @@
         "story": "Utility guide for Saturday afternoon",
         "decision": "skipped",
         "reason": "It is before 15:00 New York time, so the next run queues the second utility post."
+      }
+    ],
+    "requests": []
+  },
+  {
+    "run_at": "2026-11-07T21:07:25.441Z",
+    "summary": "Afternoon run (about 16:00 New York, Saturday): no open links or requests and no new priority 1 story; queued the second Saturday utility guide (GitHub Copilot Free in VS Code), bringing the day to 8 jobs, the daily cap.",
+    "considered": [
+      {
+        "story": "Utility guide: GitHub Copilot setup and everyday use (next line in guides/plan.md)",
+        "source": "https://code.visualstudio.com/docs/copilot/setup",
+        "decision": "queued",
+        "job_id": "2026-11-07-github-copilot-free-vs-code-guide",
+        "priority": 2
+      },
+      {
+        "story": "Anthropic IPO valuation talk falls to $1.1 to $1.3 trillion (Bloomberg, Forbes)",
+        "decision": "covered",
+        "reason": "Same story as 2026-11-06-anthropic-ipo-investors-balk-selloff, and the day is now at the 8 job cap."
+      },
+      {
+        "story": "Microsoft winding down Oracle deal to rent AI cloud capacity (Reuters)",
+        "source": "https://www.reuters.com/business/microsoft-is-winding-down-oracle-deal-rent-ai-cloud-capac",
+        "decision": "skipped",
+        "reason": "Already skipped in earlier runs as cloud contract news with little reader appeal, and the day is full."
+      },
+      {
+        "story": "OpenAI raises $11 billion at a $1.25 trillion valuation",
+        "decision": "skipped",
+        "reason": "Follow-up to the earlier funding story, as decided in earlier runs."
+      },
+      {
+        "story": "Gemini Omni 1.2 Flash (Hacker News)",
+        "decision": "covered",
+        "reason": "Already queued as 2026-11-06-gemini-omni-15-second-videos-free."
+      },
+      {
+        "story": "AI is dramatically accelerating AI research (Planned Obsolescence essay)",
+        "decision": "covered",
+        "reason": "Same theme as 2026-11-06-anthropic-ai-twice-as-fast-metr, and it is an opinion essay."
+      },
+      {
+        "story": "ChatGPT silently routes data between connectors, bounty asks for an ID card (OpenAI community forum)",
+        "decision": "skipped",
+        "reason": "A single forum post with no news outlet or OpenAI statement confirming it."
+      },
+      {
+        "story": "Men see more career gains from AI jobs while women lose ground (Washington Post)",
+        "decision": "skipped",
+        "reason": "Already skipped earlier today and the day is at the 8 job cap."
+      },
+      {
+        "story": "Jensen Huang and the alleged Chinese spy",
+        "decision": "covered",
+        "reason": "Already decided as covered in earlier runs today."
+      },
+      {
+        "story": "Google sued over a teen's Gemini chats on a school Chromebook",
+        "decision": "skipped",
+        "reason": "Sensitive self-harm lawsuit, still no strong national outlet confirming the details."
       }
     ],
     "requests": []

@@ -1,0 +1,335 @@
+{
+  "id": "2026-11-07-github-copilot-free-vs-code-guide",
+  "format": "utility",
+  "created_at": "2026-11-07T21:30:00Z",
+  "story_time": "2026-11-07T21:30:00Z",
+  "timely": false,
+  "sensitive": false,
+  "priority": 2,
+  "review": true,
+  "sources": [
+    {
+      "name": "GitHub Docs: Plans for GitHub Copilot",
+      "url": "https://docs.github.com/en/copilot/get-started/plans"
+    },
+    {
+      "name": "GitHub Docs: Quickstart for GitHub Copilot in your IDE",
+      "url": "https://docs.github.com/en/copilot/get-started/quickstart-for-using-github-copilot-in-your-ide"
+    },
+    {
+      "name": "VS Code Docs: Set up GitHub Copilot",
+      "url": "https://code.visualstudio.com/docs/copilot/setup"
+    },
+    {
+      "name": "VS Code Docs: Inline suggestions from GitHub Copilot",
+      "url": "https://code.visualstudio.com/docs/editing/ai-powered-suggestions"
+    },
+    {
+      "name": "VS Code Docs: GitHub Copilot cheat sheet",
+      "url": "https://code.visualstudio.com/docs/copilot/copilot-vscode-features"
+    },
+    {
+      "name": "VS Code Docs: Complete your first task with an agent",
+      "url": "https://code.visualstudio.com/docs/agents/quickstart"
+    },
+    {
+      "name": "VS Code Docs: Custom instructions",
+      "url": "https://code.visualstudio.com/docs/agent-customization/custom-instructions"
+    },
+    {
+      "name": "Fast.io: How to use GitHub Copilot",
+      "url": "https://fast.io/resources/how-to-use-github-copilot/"
+    }
+  ],
+  "caption": "GitHub Copilot Free costs nothing: sign in to VS Code with GitHub and you get 2,000 code completions a month plus an allowance of AI credits.\nTab accepts a suggestion. Ctrl+Alt+I opens chat. Agent mode edits files and runs commands with your approval.\nRead every change before you keep it.\n\nDo you code with an AI assistant yet?\n\nFollow @neurafeed.ai for daily AI news.\n\nSource: GitHub Docs · Photo: theaiinsider.tech",
+  "threads_text": "GitHub Copilot Free gives you 2,000 code completions a month in VS Code just for signing in with GitHub. The bigger feature is Agent mode: describe a task and it edits files and runs commands, asking before it acts. Would you let it touch your code?",
+  "slides": [
+    {
+      "kind": "cover",
+      "headline": "GitHub Copilot is *free* in VS Code. 5 steps to make it write, explain and fix your code",
+      "image": {
+        "url": "https://theaiinsider.tech/wp-content/uploads/2026/01/Screenshot-2026-01-06-at-11.10.20.png",
+        "credit": "via theaiinsider.tech",
+        "fallback_urls": [
+          "https://cdn.mos.cms.futurecdn.net/jRBsfeWNzH3dTMNh7yWdt8-1920-80.jpg",
+          "https://cdn.forbes.com.mx/2023/12/Nadella-Satya-2023-11-0008.webp"
+        ]
+      },
+      "pos": "center 30%",
+      "badges": [
+        {
+          "url": "https://raw.githubusercontent.com/github/explore/main/topics/github/github.png",
+          "fit": "contain"
+        }
+      ]
+    },
+    {
+      "kind": "card",
+      "heading": "1. Sign in for *Copilot Free*",
+      "paras": [
+        "In VS Code, hover over the Copilot icon in the Status Bar, pick Use AI Features and sign in with GitHub.",
+        "No plan yet? Signing in puts you on Copilot Free: 2,000 completions a month plus AI credits."
+      ],
+      "image": {
+        "url": "https://media.githubusercontent.com/media/microsoft/vscode-docs/main/docs/setup/images/copilot/copilot-signedout-sign-in.png",
+        "credit": "Microsoft / VS Code Docs",
+        "fit": "contain"
+      }
+    },
+    {
+      "kind": "card",
+      "heading": "2. Press *Tab* to accept",
+      "paras": [
+        "As you type, Copilot suggests the rest in dimmed ghost text. Tab accepts it, Escape dismisses it.",
+        "Or write a comment that says what you want, and it suggests the code."
+      ],
+      "image": {
+        "url": "https://media.githubusercontent.com/media/microsoft/vscode-docs/main/docs/editing/images/inline-suggestions/ts-suggest-code-comment.png",
+        "credit": "Microsoft / VS Code Docs",
+        "fit": "contain",
+        "fallback_urls": [
+          "https://media.githubusercontent.com/media/microsoft/vscode-docs/main/docs/editing/images/inline-suggestions/js-suggest.png"
+        ]
+      }
+    },
+    {
+      "kind": "prompt",
+      "heading": "3. Ask about the code *first*",
+      "paras": [
+        "Press Ctrl+Alt+I (Control+Command+I on a Mac) to open Chat. It already sees the file you have open.",
+        "Ask mode explains code without changing anything."
+      ],
+      "prompt": "what does this file do?"
+    },
+    {
+      "kind": "card",
+      "heading": "4. Hand a task to *Agent*",
+      "paras": [
+        "Pick Agent in the chat box and describe the task. It plans, edits files and runs commands.",
+        "Keep Manual permissions on so it asks before running tools."
+      ],
+      "image": {
+        "url": "https://media.githubusercontent.com/media/microsoft/vscode-docs/main/docs/agents/images/agents-quickstart/editor-integrated-browser-interaction.png",
+        "credit": "Microsoft / VS Code Docs",
+        "fit": "contain",
+        "fallback_urls": [
+          "https://media.githubusercontent.com/media/microsoft/vscode-docs/main/docs/agents/images/agents-quickstart/editor-new-chat.png"
+        ]
+      },
+      "note": "Restore Checkpoint undoes its file edits."
+    },
+    {
+      "kind": "prompt",
+      "heading": "5. Teach it *your rules*",
+      "paras": [
+        "Type /init in chat and Copilot drafts instructions for your project in .github/copilot-instructions.md or AGENTS.md.",
+        "Copilot reads that file in every chat, so add your rules there once."
+      ],
+      "prompt": "/init"
+    },
+    {
+      "kind": "cta",
+      "hook": "One useful AI skill a day, explained simply. Follow so tomorrow's guide finds you."
+    }
+  ],
+  "site_article": {
+    "kind": "guide",
+    "headline": "GitHub Copilot in VS Code: how to set up the free plan and use it every day",
+    "dek": "Copilot Free gives you code suggestions, a chat that knows your files and an agent that can build small features. Here is how to set it up and use each part well.",
+    "summary": "GitHub Copilot Free works in VS Code after a GitHub sign-in, with 2,000 completions a month and an allowance of AI credits. Tab accepts suggestions, Ctrl+Alt+I opens chat, and Agent mode edits files and runs commands with your approval.",
+    "seo_title": "GitHub Copilot in VS Code: free plan setup and daily use",
+    "seo_description": "Set up GitHub Copilot Free in VS Code, accept suggestions with Tab, ask questions in chat, give Agent mode a task and add project instructions with /init.",
+    "answer_summary": "Open VS Code, hover over the Copilot icon in the Status Bar, select Use AI Features and sign in with GitHub. Without a paid plan you get Copilot Free with 2,000 completions a month and an allowance of AI credits.",
+    "tags": [
+      "GitHub Copilot",
+      "VS Code",
+      "GitHub",
+      "Microsoft",
+      "AI coding",
+      "AI guides"
+    ],
+    "hero_alt": "Portrait photo of a smiling man.",
+    "paragraphs": [
+      {
+        "kind": "fact",
+        "text": "GitHub Copilot is an AI coding assistant that works inside your code editor. In VS Code it does three jobs: it suggests code as you type, it answers questions about your code in a chat, and in Agent mode it takes a task, edits files and runs commands with your approval. GitHub says it also works in Visual Studio, JetBrains IDEs, Eclipse and Xcode.",
+        "sources": [
+          1,
+          4
+        ]
+      },
+      {
+        "kind": "fact",
+        "text": "The short version: sign in to VS Code with GitHub, press Tab to accept suggestions, open chat and ask what a file does, then give Agent one small task and review every change. This guide follows the order of the official GitHub and VS Code quickstarts and covers the free plan's limits.",
+        "sources": [
+          1,
+          2
+        ]
+      },
+      {
+        "kind": "heading",
+        "text": "What it costs"
+      },
+      {
+        "kind": "fact",
+        "text": "Copilot Free costs nothing. GitHub's plans page says it is limited to 2,000 code completions a month and includes an allowance of GitHub AI credits, which chat and agents use. Free users get models through automatic model selection only, so you cannot pick a specific model.",
+        "sources": [
+          0
+        ]
+      },
+      {
+        "kind": "fact",
+        "text": "Paid plans add more credits and more model choice. Copilot Pro is $10 a month with 1,500 monthly AI credits, Pro+ is $39 a month and Max is $100 a month. Verified students get a separate free plan called Copilot Student, and GitHub says verified teachers and maintainers of popular open source projects may get Pro for free.",
+        "sources": [
+          0
+        ]
+      },
+      {
+        "kind": "fact",
+        "text": "One practical detail from an independent guide by Fast.io: on paid plans, code completions do not use AI credits, while chat, agents and command line sessions do. The same guide lists 50 chat requests a month for Copilot Free, a number GitHub's own plans page now describes only as a credit allowance.",
+        "sources": [
+          7,
+          0
+        ]
+      },
+      {
+        "kind": "heading",
+        "text": "Set it up in VS Code"
+      },
+      {
+        "kind": "step",
+        "title": "1. Install VS Code and open a project",
+        "text": "Download VS Code if you do not have it, then open a folder with File > Open Folder. If VS Code asks whether you trust the folder, trust it only if you know where the code came from."
+      },
+      {
+        "kind": "step",
+        "title": "2. Sign in with GitHub",
+        "text": "Hover over the Copilot icon in the Status Bar at the bottom of the window and select Use AI Features, then choose a sign-in method. You can also pick Sign in to use Copilot from the Copilot menu in the Status Bar, or run GitHub Copilot: Sign in from the Command Palette (Ctrl+Shift+P on Windows and Linux, Shift+Command+P on a Mac)."
+      },
+      {
+        "kind": "fact",
+        "text": "If your GitHub account has no Copilot plan, signing in enrolls it in Copilot Free with a monthly allowance of inline suggestions and AI credits. The VS Code docs note that telemetry is on in the free version, and that you can turn it off with the telemetry.telemetryLevel setting.",
+        "sources": [
+          2
+        ]
+      },
+      {
+        "kind": "heading",
+        "text": "Let it finish your code"
+      },
+      {
+        "kind": "step",
+        "title": "3. Type and press Tab",
+        "text": "Open a code file and start typing. Copilot shows a suggestion in dimmed ghost text, sometimes the rest of the line and sometimes a whole block. Press Tab to accept it or Escape to dismiss it. If several options exist, hover over the suggestion to flip between them."
+      },
+      {
+        "kind": "fact",
+        "text": "GitHub's quickstart uses a simple test: create a JavaScript file and type function calculateDaysBetweenDates(begin, end) {. Copilot suggests the body of the function in gray. The VS Code docs also describe next edit suggestions: after you change one thing, such as a function's parameters, Copilot suggests the related edits elsewhere in the file.",
+        "sources": [
+          1,
+          3
+        ]
+      },
+      {
+        "kind": "tip",
+        "text": "Write a comment that says what you want before you write the code, for example a class for a student with a name, an ID and methods to add and remove courses. Copilot uses the comment as its instructions."
+      },
+      {
+        "kind": "heading",
+        "text": "Ask questions in chat"
+      },
+      {
+        "kind": "step",
+        "title": "4. Open Chat",
+        "text": "Press Ctrl+Alt+I on Windows and Linux or Control+Command+I on a Mac. Chat can see the file you have open, so you do not need to paste code. For a quick question about a few lines, Ctrl+I (Command+I on a Mac) opens inline chat right in the editor."
+      },
+      {
+        "kind": "prompt",
+        "title": "Prompt 1: Get the big picture",
+        "text": "what does this file do?"
+      },
+      {
+        "kind": "prompt",
+        "title": "Prompt 2: Understand one line",
+        "text": "explain this line"
+      },
+      {
+        "kind": "fact",
+        "text": "For the second prompt, select a line of code first. The cheat sheet lists three modes in chat: Ask explains code without changing it, Plan researches a change before anything is built, and Agent does the work. Slash commands such as /explain, /fix and /tests explain code, suggest fixes and generate tests.",
+        "sources": [
+          1,
+          4
+        ]
+      },
+      {
+        "kind": "heading",
+        "text": "Give Agent a real task"
+      },
+      {
+        "kind": "step",
+        "title": "5. Switch to Agent",
+        "text": "In the chat box, select Agent, describe the task and press Enter. The VS Code agents quickstart recommends the Auto model and Manual permissions, so the agent asks for your approval before it runs tools or reaches outside your project. It can still edit files inside your project folder."
+      },
+      {
+        "kind": "prompt",
+        "title": "Prompt 3: Build something small (from the VS Code quickstart)",
+        "text": "Create a task list web app in a single index.html file with embedded CSS and JavaScript. Let me add, complete, and delete tasks. Save the tasks in local storage so they persist after a page reload. Use no external libraries."
+      },
+      {
+        "kind": "prompt",
+        "title": "Prompt 4: Make it test its own work",
+        "text": "Open index.html in the integrated browser and validate the app.\nAdd a task, mark it complete, and delete it. Then add another task,\nreload the page, and verify that the task persists. If any step fails,\nfix the issue and repeat the complete flow."
+      },
+      {
+        "kind": "fact",
+        "text": "You can stop the agent at any time with the Stop button or send a new prompt to steer it. To undo its file changes, hover over an earlier request and select Restore Checkpoint. The docs warn that this does not reverse terminal commands, network requests or deployments.",
+        "sources": [
+          5
+        ]
+      },
+      {
+        "kind": "tip",
+        "text": "Review the diff before you commit. The VS Code docs say the agent's own check helps find problems but does not replace your review, so click through the app yourself too."
+      },
+      {
+        "kind": "heading",
+        "text": "Teach it your project's rules"
+      },
+      {
+        "kind": "fact",
+        "text": "Copilot reads an instructions file in your project and follows it in every chat. For Copilot in VS Code that file is .github/copilot-instructions.md or AGENTS.md, written in plain Markdown. Typing /init in chat makes Copilot analyze your codebase and draft the instructions for you.",
+        "sources": [
+          6,
+          4
+        ]
+      },
+      {
+        "kind": "prompt",
+        "title": "Prompt 5: Add a house rule",
+        "text": "Add this to the project instructions: always run the tests before you tell me a task is done, and never add a new dependency without asking me first."
+      },
+      {
+        "kind": "fact",
+        "text": "When you are ready to commit, the sparkle button in the Source Control box writes a commit message from your staged changes.",
+        "sources": [
+          4
+        ]
+      },
+      {
+        "kind": "heading",
+        "text": "Where it falls short"
+      },
+      {
+        "kind": "analysis",
+        "text": "Copilot is only as good as the context it gets. Suggestions get worse when the relevant files are not open, and quality varies by programming language. Its code can be wrong or insecure, so treat it like code from a stranger: read it, run the tests and check anything that touches passwords or user data. On the free plan, the monthly limits also mean you should save chat and Agent for the jobs where they help most."
+      },
+      {
+        "kind": "fact",
+        "text": "Fast.io's guide also lists the usual reasons Copilot goes quiet: you are not signed in, the language is turned off, the free limits are used up, or an organization's policy blocks it.",
+        "sources": [
+          7
+        ]
+      }
+    ]
+  }
+}
