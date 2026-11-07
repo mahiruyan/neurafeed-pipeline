@@ -12,7 +12,7 @@ const path = require('path');
 const { ROOT, allJobStates, loadJob } = require('./state');
 const { validateSiteArticle } = require('./validate');
 
-const OK = new Set(['approved', 'held_cap', 'posted', 'publish_failed']);
+const OK = new Set(['approved', 'held_cap', 'posted', 'publish_failed', 'site_only']);
 const NOT_NEWS = new Set(['utility', 'single', 'roundup', 'prompt']);
 // Website categories (must match the admin's category slugs).
 const SITE_CATEGORIES = ['breaking', 'companies', 'models', 'robotics', 'free-tools', 'policy', 'guides'];

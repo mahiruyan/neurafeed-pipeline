@@ -21,10 +21,24 @@ operational facts (he manages them from Telegram). Read it at the start of every
 it. It overrides the defaults in this file, but never the "Rules that must never be broken".
 Do not edit the memory files yourself.
 
-## Volume
+## Volume and mix (decided 2026-11-08 from 30 days of Instagram data)
 
-The account needs 4 to 8 posts per day. Every major story (priority 1) must be covered the
-same day. Never skip a priority 1 story because other stories are already queued.
+Reels are the growth engine (median 870 views, 30 shares per post, up to 22,000 views); carousels
+reach only followers (median 510 views, 1 share per post). So every New York day:
+- 3 to 4 Reels. Sources: videos in the day's stories (company launch videos, demo clips on X,
+  robot videos, interview clips found through the YouTube search workflow). A story with a real
+  video becomes a Reel first, a carousel only if the video is weak.
+- 3 to 4 news carousels, only stories worth sending to a friend: money, jobs, a person, a shock,
+  a strange AI behavior. Priority 1 stories must still be covered the same day (a Reel when there
+  is a video, else a carousel).
+- No utility carousels on Instagram for now (median 318 views, the worst kind). The guides are
+  still written every day for the website only: queue them as normal utility jobs (slides, guide
+  in `site_article`) with `"site_only": true`; the pipeline renders them for the website and
+  posts nothing to Instagram.
+- At least 2 stories a week that reach beyond pure AI news: AI plus money, politics, a scandal,
+  a crime, a lawsuit or a strange event (the accounts that grew to 75,000+ followers did it with
+  these). Mark them `sensitive: true` when they are; Mahir approves them on Telegram.
+Never exceed 8 posts per day in total.
 
 ## Rules that must never be broken
 
@@ -294,11 +308,12 @@ someone in the face library) and put the printed `"ab"` object in the job file. 
 Everything else stays the same, so the test only measures this one thing. Every Monday the
 "Cover A/B report" workflow compares the variants on Instagram views and sends it to Mahir.
 
-## Utility posts (two per day)
+## Utility posts (paused on Instagram; guides continue on the site)
 
-Besides news, queue two evergreen "useful" carousels per New York day (one before 12:00 and one
-after 15:00 New York time, each with its own guide, two different subjects) (`"format": "utility"`,
-`timely: false`, `priority: 2`). These are the posts people save and share. Rotate between:
+Until carousels reach more than about 1,500 views, no utility carousel is posted: every utility
+job gets `"site_only": true` (rendered for the website, never posted). The two daily guides
+continue (see "The guide on the website"). The rules below still apply to those jobs (`"format": "utility"`, `timely: false`,
+`priority: 2`). Rotate between:
 - Prompt tips: 4 to 6 concrete prompts or prompt patterns for ChatGPT, Claude or Gemini, each with
   what it does, one `prompt` slide each. Only patterns that are documented by the vendor or that you can explain clearly.
 - Tool lists: 4 to 6 real, free or freemium AI tools or websites, one per slide, each with what it

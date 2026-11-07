@@ -16,7 +16,7 @@ const { ROOT, getJobState, readJson, writeJson } = require('./state');
 const { readLog } = require('./desklog');
 
 const STALE_HOURS = 5;
-const OK = new Set(['approved', 'pending', 'held_cap', 'posted', 'publish_failed', 'test_done']);
+const OK = new Set(['approved', 'pending', 'held_cap', 'posted', 'publish_failed', 'test_done', 'site_only']);
 const BAD = new Set(['invalid', 'render_failed', 'skipped', 'expired']);
 const statePath = () => path.join(ROOT, 'state', 'requests.json');
 

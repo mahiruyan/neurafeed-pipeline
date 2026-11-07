@@ -98,6 +98,12 @@ process.on('beforeExit', () => { try { writeSummary(); } catch (e) { console.log
     if (loadJob(st.id)?.test) setJobState(st.id, { status: 'test_done', by: 'test job, not published' });
   }
 
+  // Site-only jobs (guides written for neurafeedai.com while utility carousels are paused on
+  // Instagram): rendered for the website hero and the desk feed, never posted.
+  for (const st of allJobStates().filter((s) => s.status === 'approved')) {
+    if (loadJob(st.id)?.site_only) setJobState(st.id, { status: 'site_only', by: 'website only, not posted to Instagram' });
+  }
+
   const waiting = allJobStates().filter((s) => s.status === 'approved' || s.status === 'held_cap' || (s.status === 'publish_failed' && (s.attempts || 1) < 3));
 
   async function publishOne(st) {
