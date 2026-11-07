@@ -1,70 +1,5 @@
 [
   {
-    "run_at": "2026-10-31T08:18:58.627Z",
-    "summary": "Early run (04:20 New York, Oct 31): no open links or requests; queued Anthropic's Claude Ultra rename and the end of its 5-hour limit (priority 1), bringing Oct 31 to 6 jobs and leaving room for the utility post and a later breaking story.",
-    "considered": [
-      {
-        "story": "Anthropic renames Max 20x to Ultra and removes the 5-hour limit for verified accounts",
-        "source": "https://fourweekmba.com/ai-claude-ultra-drops-5-hour-limit-for-verified-users-at-200/",
-        "decision": "queued",
-        "job_id": "2026-10-31-claude-ultra-no-5-hour-limit",
-        "priority": 1
-      },
-      {
-        "story": "Claude Sonnet 5 chose a gene therapy and ran a mouse brain injection with a vet on the kill switch (The Decoder)",
-        "source": "https://the-decoder.com/a-claude-model-autonomously-chose-a-gene-therapy-and-operated-on-a-mouse-brain-with-no-human-decision-making/",
-        "decision": "skipped",
-        "reason": "Striking but rests on one founder's X thread with no report or peer review yet; strong candidate for a later Oct 31 run if the day has room."
-      },
-      {
-        "story": "OpenAI limits weapons information for teens in ChatGPT (Reuters)",
-        "decision": "skipped",
-        "reason": "Could not open the Reuters report from here; a later run can confirm it with two sources."
-      },
-      {
-        "story": "Tesla to open Optimus reservations in early December (SF Standard)",
-        "decision": "skipped",
-        "reason": "Only one outlet seen and holding a slot for the utility post and later news."
-      },
-      {
-        "story": "Comcast cuts 912 jobs as it moves call-center work to AI agents",
-        "decision": "skipped",
-        "reason": "Layoff story would need review and only one outlet seen; weaker than the queued story."
-      },
-      {
-        "story": "20 House Democrats press OpenAI on whistleblower firings and hacks",
-        "decision": "skipped",
-        "reason": "Still only trade and legal outlets; political letter with limited consumer interest."
-      },
-      {
-        "story": "Nvidia weighs guaranteeing Nscale debt for an Anthropic data center (TechCrunch)",
-        "decision": "skipped",
-        "reason": "Financing detail with little consumer interest."
-      },
-      {
-        "story": "Dartmouth provost resigns after undisclosed AI use",
-        "decision": "skipped",
-        "reason": "Two days old and a campus story; keeping slots for bigger news."
-      },
-      {
-        "story": "OpenAI cuts funding target by $10 billion",
-        "decision": "covered",
-        "reason": "Already queued as 2026-10-31-openai-cuts-funding-target-10-billion."
-      },
-      {
-        "story": "AI labs back one robots.txt opt-out token",
-        "decision": "covered",
-        "reason": "Already queued as 2026-10-31-ai-giants-one-line-opt-out-training."
-      },
-      {
-        "story": "Google's TPU satellite online and writing poetry",
-        "decision": "covered",
-        "reason": "Already queued as 2026-10-31-google-satellite-ai-haiku-orbit."
-      }
-    ],
-    "requests": []
-  },
-  {
     "run_at": "2026-10-31T09:59:57.556Z",
     "summary": "Early run (05:53 New York, Oct 31): no open links or requests, no new priority 1 story since the 04:20 run; Oct 31 stays at 6 jobs with room for the utility post after 11:00 and one later breaking story.",
     "considered": [
@@ -4983,6 +4918,69 @@
         "story": "Bank of England says AI added only 0.5 percent to UK productivity (The Register)",
         "decision": "skipped",
         "reason": "UK economic data with little interest for the US audience."
+      }
+    ],
+    "requests": []
+  },
+  {
+    "run_at": "2026-11-07T09:06:27.263Z",
+    "summary": "Early morning run (about 04:00 New York, Saturday): no open links or requests, no new priority 1 story since the last run, and the fresh candidates were already covered, too old for their expiry window or niche, so nothing was queued; Saturday has 2 jobs and the daytime runs will add more.",
+    "considered": [
+      {
+        "story": "OpenAI raises $11 billion at a $1.25 trillion valuation (Bloomberg, TechCrunch, The Verge)",
+        "source": "https://techcrunch.com/2026/11/06/openai-reportedly-raises-an-additional-11-billion-at-a-1-25-trillion-valuation/",
+        "decision": "skipped",
+        "reason": "Follow-up to 2026-10-31-openai-cuts-funding-target-10-billion, as decided in earlier runs."
+      },
+      {
+        "story": "Anthropic IPO valuation reports (Bloomberg, Axios, tech-insider)",
+        "decision": "covered",
+        "reason": "Same story as 2026-11-06-anthropic-ipo-investors-balk-selloff."
+      },
+      {
+        "story": "OpenAI to acquire Pierre, maker of code review tools used in Codex",
+        "source": "https://runtimewire.com/article/openai-acquire-pierre-computer-code-storage-codex",
+        "decision": "skipped",
+        "reason": "Announced November 4, so it is past the timely window, and it is developer news with little interest for normal users."
+      },
+      {
+        "story": "Sensor Tower: Claude monthly users up 1,260 percent, ChatGPT at 1.4 billion",
+        "source": "https://www.trendingtopics.eu/sensor-tower-claude-growth-chatgpt-gemini/",
+        "decision": "skipped",
+        "reason": "Published November 4 and only one current source could be found and read."
+      },
+      {
+        "story": "Goncourt prize winner Philippe Jaenada admits using ChatGPT in his novel (Euronews)",
+        "source": "https://www.euronews.com/2026/11/04/goncourt-2026-winner-philippe-jaenada-admits-using-ai-in-novel-sparking-ai-debate-in-liter",
+        "decision": "skipped",
+        "reason": "Reported November 4, so even as an evergreen job it would expire around the first Saturday windows, and the second source could not be opened."
+      },
+      {
+        "story": "Check Point: criminals run ARTEX AI agents to hack web apps and steal signing certificates",
+        "source": "https://research.checkpoint.com/2026/hacking-on-autopilot-inside-artex-cybercrime-campaigns/",
+        "decision": "skipped",
+        "reason": "The Check Point report could not be opened from here, only security aggregators repeat it, and it is a sensitive crime story."
+      },
+      {
+        "story": "Samsung Android XR glasses with Gentle Monster and Gemini reportedly launch in December",
+        "source": "https://tbreak.com/samsung-smart-glasses-december-launch/",
+        "decision": "skipped",
+        "reason": "Based on a November 2 Korean report with no price or official date, nothing new today."
+      },
+      {
+        "story": "Meta pauses its commercial scraping terms after publisher pushback (Nieman Lab)",
+        "decision": "skipped",
+        "reason": "Media industry story with little interest for normal users, first reported days ago."
+      },
+      {
+        "story": "OpenAI taps Hacktron to test its systems (Tech in Asia)",
+        "decision": "skipped",
+        "reason": "Search only found the September Hacktron hack coverage, so the new detail is not confirmed by a second source I read."
+      },
+      {
+        "story": "Gary Marcus says OpenAI could become the WeWork of AI (CNBC)",
+        "decision": "skipped",
+        "reason": "Opinion from a known critic, no new facts, and the CNBC piece could not be found and read."
       }
     ],
     "requests": []
