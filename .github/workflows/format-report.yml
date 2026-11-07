@@ -1,0 +1,20 @@
+name: Format report
+
+on:
+  workflow_dispatch:
+    inputs:
+      days: { description: 'Number of days', required: false, default: '30' }
+
+jobs:
+  report:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - run: node tools/format-report.js "${{ inputs.days }}"
+        env:
+          IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
+          IG_USER_ID: ${{ secrets.IG_USER_ID }}
