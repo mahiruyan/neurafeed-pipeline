@@ -1,0 +1,307 @@
+{
+  "id": "2026-11-07-claude-code-getting-started-guide",
+  "format": "utility",
+  "created_at": "2026-11-07T17:00:00Z",
+  "story_time": "2026-11-07T17:00:00Z",
+  "timely": false,
+  "sensitive": false,
+  "priority": 2,
+  "review": true,
+  "sources": [
+    {
+      "name": "Claude Code Docs: Quickstart",
+      "url": "https://code.claude.com/docs/en/quickstart"
+    },
+    {
+      "name": "Claude Code Docs: Advanced setup",
+      "url": "https://code.claude.com/docs/en/setup"
+    },
+    {
+      "name": "Claude Code Docs: How Claude remembers your project",
+      "url": "https://code.claude.com/docs/en/memory"
+    },
+    {
+      "name": "Anthropic: Claude Code",
+      "url": "https://claude.com/product/claude-code"
+    },
+    {
+      "name": "Bannerbear",
+      "url": "https://www.bannerbear.com/blog/how-to-install-claude-code-terminal-ide-web-desktop-setup/"
+    }
+  ],
+  "caption": "Claude Code is Anthropic's coding agent: you describe the task, it reads your project, edits files and runs commands.\nInstall takes one line. Start with a question, then one small change, and read every diff.\nType /init so it remembers your project's rules.\n\nWould you let an AI agent edit your code?\n\nFollow @neurafeed.ai for daily AI news.\n\nSource: Claude Code Docs · Photo: healthevolution.com",
+  "threads_text": "Claude Code installs with one line, and Anthropic's own quickstart says the first prompt should be a question, not a change: ask what the project does before letting it edit anything. Would you trust an AI agent with your codebase?",
+  "slides": [
+    {
+      "kind": "cover",
+      "headline": "Claude Code edits your files and runs commands while you *just describe what you want*. 5 steps to start",
+      "image": {
+        "url": "https://www.healthevolution.com/wp-content/uploads/2025/11/DarioAmodeiHeadshot2025-scaled.jpg",
+        "credit": "healthevolution.com",
+        "fallback_urls": [
+          "https://forbes.it/wp-content/uploads/2025/10/dario-amodei-anthropic-scaled.jpg",
+          "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e4/Dario_Amodei_at_TechCrunch_Disrupt_2023_01_%28cropped%29.jpg/1280px-Dario_Amodei_at_TechCrunch_Disrupt_2023_01_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        ]
+      },
+      "pos": "center 30%",
+      "badges": [
+        {
+          "url": "assets/logos/claude.png",
+          "shape": "free"
+        }
+      ]
+    },
+    {
+      "kind": "prompt",
+      "heading": "1. Install it with *one line*",
+      "paras": [
+        "On a Mac or Linux, open Terminal and paste this. Windows users run irm https://claude.ai/install.ps1 | iex in PowerShell.",
+        "Open a new window and type claude --version to check it worked."
+      ],
+      "prompt": "curl -fsSL https://claude.ai/install.sh | bash"
+    },
+    {
+      "kind": "card",
+      "heading": "2. Open your *project folder*",
+      "paras": [
+        "Type cd and your folder's path, then claude. The first time, your browser opens so you can log in.",
+        "You need a paid Claude plan or a Console account. The free plan does not include it."
+      ],
+      "image": {
+        "url": "https://assets.claude.com/d4645137a0c197beee5313fedbf9417d035452fc.webp",
+        "credit": "Anthropic",
+        "fit": "contain",
+        "fallback_urls": [
+          "https://assets.claude.com/60bc422c7916679b221ea6d55ba27adc584ac66e.webp"
+        ]
+      }
+    },
+    {
+      "kind": "prompt",
+      "heading": "3. Ask for a *tour* first",
+      "paras": [
+        "Claude reads the files it needs on its own. You do not paste any code.",
+        "Then try a small change, like adding a hello world function, and read what it shows you."
+      ],
+      "prompt": "what does this project do? explain the folder structure and where the main entry point is"
+    },
+    {
+      "kind": "prompt",
+      "heading": "4. Make it *remember your rules*",
+      "paras": [
+        "Type /init and Claude writes a CLAUDE.md file with your build commands and conventions.",
+        "It loads at the start of every session. Anthropic says to keep it under 200 lines."
+      ],
+      "prompt": "add this to CLAUDE.md: always run the tests before you tell me a task is done"
+    },
+    {
+      "kind": "card",
+      "heading": "5. Stay in *control*",
+      "paras": [
+        "Press Shift+Tab to change how much Claude can do without asking you first.",
+        "Ask it to commit your changes with a clear message, so every step can be undone with Git."
+      ],
+      "image": {
+        "url": "https://assets.claude.com/454390de9d9ccefb6082b7c2440c7547c1ec3964.webp",
+        "credit": "Anthropic",
+        "fit": "contain",
+        "fallback_urls": [
+          "https://assets.claude.com/60bc422c7916679b221ea6d55ba27adc584ac66e.webp"
+        ]
+      },
+      "note": "Also works in VS Code, JetBrains, the desktop app and the web."
+    },
+    {
+      "kind": "cta",
+      "hook": "One useful AI skill a day, explained simply. Follow so tomorrow's guide finds you."
+    }
+  ],
+  "site_article": {
+    "kind": "guide",
+    "headline": "Claude Code: how to install it and start coding with an AI agent",
+    "dek": "Anthropic's coding agent edits files and runs commands from a plain English request. Here is how to set it up, the first prompts to try and where it goes wrong.",
+    "summary": "Claude Code is Anthropic's AI coding agent for the terminal, editors, the desktop and the web. It needs a paid Claude plan or a Console account, installs with one command and works best with small, specific tasks and a CLAUDE.md file.",
+    "seo_title": "Claude Code for beginners: install it and start in 5 steps",
+    "seo_description": "How to install Claude Code, log in, write your first prompts, set up CLAUDE.md with /init and keep control with permissions and Git.",
+    "answer_summary": "Install Claude Code with curl -fsSL https://claude.ai/install.sh | bash (or the PowerShell command on Windows), run claude in a project folder, log in with a paid Claude plan or Console account, and start by asking it to explain the project.",
+    "tags": [
+      "Claude Code",
+      "Anthropic",
+      "Claude",
+      "AI coding",
+      "AI guides"
+    ],
+    "hero_alt": "Headshot portrait of a smiling man.",
+    "paragraphs": [
+      {
+        "kind": "fact",
+        "text": "Claude Code is Anthropic's coding agent. You describe what you want in plain English, and it reads your project, edits files and runs commands to get it done. It runs in the terminal and also in VS Code, JetBrains IDEs, a desktop app and the web.",
+        "sources": [
+          0,
+          3
+        ]
+      },
+      {
+        "kind": "fact",
+        "text": "The short version: install it with one command, open it inside a project folder, ask it to explain the code before it changes anything, then give it one small task and read what it did. This guide follows the order of Anthropic's own quickstart, with the parts beginners trip over.",
+        "sources": [
+          0
+        ]
+      },
+      {
+        "kind": "heading",
+        "text": "What you need first"
+      },
+      {
+        "kind": "fact",
+        "text": "Claude Code needs a paid Claude plan or a Claude Console account with API credits. Anthropic's setup page is clear that the free claude.ai plan does not include Claude Code. Companies can also run it through Amazon Bedrock, Google Cloud or Microsoft Foundry.",
+        "sources": [
+          1,
+          4
+        ]
+      },
+      {
+        "kind": "fact",
+        "text": "It runs on macOS 13 or later, Windows 10 (version 1809) or later, and common Linux versions such as Ubuntu 20.04 and Debian 10, with at least 4 GB of RAM and an internet connection. You also need a project to work on. A copy of something you do not mind changing is ideal for a first try.",
+        "sources": [
+          1
+        ]
+      },
+      {
+        "kind": "tip",
+        "text": "If you have never used a terminal, Anthropic's docs point to a separate terminal guide, and there is also a desktop app that lets you use Claude Code without the terminal at all."
+      },
+      {
+        "kind": "heading",
+        "text": "Install and log in"
+      },
+      {
+        "kind": "step",
+        "title": "1. Run the installer",
+        "text": "On a Mac, on Linux or in WSL, open a terminal and paste: curl -fsSL https://claude.ai/install.sh | bash. In Windows PowerShell, use: irm https://claude.ai/install.ps1 | iex. The installer shows no progress while it downloads, so give it a minute. Homebrew (brew install --cask claude-code) and WinGet (winget install Anthropic.ClaudeCode) work too, but those copies do not update themselves."
+      },
+      {
+        "kind": "step",
+        "title": "2. Check that it worked",
+        "text": "Open a new terminal window and type claude --version. It should print a version number followed by (Claude Code). If your terminal says the command is not found, the install folder is not on your PATH yet, and the docs have a troubleshooting page for exactly that. For a deeper check, claude doctor prints install health and settings problems without starting a session."
+      },
+      {
+        "kind": "step",
+        "title": "3. Start a session in your project",
+        "text": "Move into your project with cd and the folder's path, then type claude. The first time, Claude Code opens your browser so you can log in with your Claude account or Console account. Your login is saved, so you only do this once. Inside a session, /help lists the commands and /resume brings back an earlier conversation."
+      },
+      {
+        "kind": "fact",
+        "text": "Native installs update themselves in the background. Homebrew, WinGet and Linux package manager installs need a manual upgrade, and claude update applies an update right away on a native install.",
+        "sources": [
+          0,
+          1
+        ]
+      },
+      {
+        "kind": "heading",
+        "text": "Your first prompts"
+      },
+      {
+        "kind": "fact",
+        "text": "According to the quickstart, Claude Code reads project files as it needs them, so you do not have to paste code or add context by hand. That makes a question the best first move: you learn the project, and you see how Claude works before it touches anything.",
+        "sources": [
+          0
+        ]
+      },
+      {
+        "kind": "prompt",
+        "title": "Prompt 1: Get a tour",
+        "text": "what does this project do? explain the folder structure and where the main entry point is"
+      },
+      {
+        "kind": "prompt",
+        "title": "Prompt 2: Make one small change",
+        "text": "add a hello world function to the main file"
+      },
+      {
+        "kind": "fact",
+        "text": "When Claude wants to change a file, it shows you the change. If it asks for approval, you pick Yes. Anthropic's product page says Claude Code asks for permission before it changes files or runs commands, and the docs say Shift+Tab switches the permission mode, which sets what it may do without asking.",
+        "sources": [
+          0,
+          3
+        ]
+      },
+      {
+        "kind": "prompt",
+        "title": "Prompt 3: Fix a real bug, specifically",
+        "text": "fix the login bug where users see a blank screen after entering wrong credentials"
+      },
+      {
+        "kind": "tip",
+        "text": "Be specific. The docs contrast \"fix the bug\" with a request that names the bug and what the user sees. The second one gets far better results."
+      },
+      {
+        "kind": "prompt",
+        "title": "Prompt 4: Break a big job into steps",
+        "text": "1. create a new database table for user profiles\n2. create an API endpoint to get and update user profiles\n3. build a webpage that allows users to see and edit their information"
+      },
+      {
+        "kind": "heading",
+        "text": "Make it remember your project"
+      },
+      {
+        "kind": "fact",
+        "text": "Every session starts with a fresh memory. A file called CLAUDE.md fixes that: Claude loads it at the start of every session. Type /init and Claude analyzes your code and writes a first version with build commands, test instructions and the conventions it finds. If the file already exists, /init suggests improvements instead of overwriting it.",
+        "sources": [
+          2
+        ]
+      },
+      {
+        "kind": "fact",
+        "text": "Anthropic recommends keeping each CLAUDE.md under 200 lines, because longer files use more context and get followed less reliably. A project file lives at ./CLAUDE.md and can be shared with your team through Git. Personal rules for every project go in ~/.claude/CLAUDE.md. You can also ask Claude to save a rule for you.",
+        "sources": [
+          2
+        ]
+      },
+      {
+        "kind": "prompt",
+        "title": "Prompt 5: Save a rule for good",
+        "text": "add this to CLAUDE.md: always run the tests before you tell me a task is done"
+      },
+      {
+        "kind": "fact",
+        "text": "Claude Code also keeps its own notes, called auto memory, based on your corrections. If you say something like \"always use pnpm, not npm\", it saves that. The /memory command shows these files and lets you edit or turn auto memory off.",
+        "sources": [
+          2
+        ]
+      },
+      {
+        "kind": "heading",
+        "text": "Use Git as your undo button"
+      },
+      {
+        "kind": "fact",
+        "text": "Claude Code handles Git in plain English. You can ask what files you changed, ask it to commit with a descriptive message, create a branch or show the last five commits. Committing after each small task means every change can be undone.",
+        "sources": [
+          0
+        ]
+      },
+      {
+        "kind": "tip",
+        "text": "Commit before you ask for anything big. If the result is wrong, you can go back in one step instead of untangling the edits by hand."
+      },
+      {
+        "kind": "heading",
+        "text": "Where it falls short"
+      },
+      {
+        "kind": "analysis",
+        "text": "Claude Code acts on your real files and runs real commands, which is the point and also the risk. Approving changes without reading them is the fastest way to break a project. A vague request gets a vague result, and a long, messy CLAUDE.md gets ignored more often. Small tasks, specific prompts and a commit after each step keep the agent useful and your project safe."
+      },
+      {
+        "kind": "fact",
+        "text": "If the terminal is not for you, the same agent runs as an extension in VS Code, in JetBrains IDEs, in the desktop app and on the web at claude.ai/code, where you connect a GitHub repository instead of a local folder.",
+        "sources": [
+          0,
+          4
+        ]
+      }
+    ]
+  }
+}

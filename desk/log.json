@@ -1,64 +1,5 @@
 [
   {
-    "run_at": "2026-10-31T15:56:48.281Z",
-    "summary": "Midday run (11:53 New York, Oct 31): no open links or requests (the 4 old inbox links were already answered in skipped.json or covered); queued the daily utility post, a Gemini guide to Gems, file uploads and Gmail/Drive, bringing Oct 31 to the 8-job cap.",
-    "considered": [
-      {
-        "story": "Utility: Gemini practical guide (Gems, file uploads, Google Workspace), next line in guides/plan.md",
-        "source": "https://support.google.com/gemini/answer/15235603",
-        "decision": "queued",
-        "job_id": "2026-10-31-gemini-gems-files-gmail-guide",
-        "priority": 2
-      },
-      {
-        "story": "OpenAI essay 'The future of the firm'",
-        "decision": "skipped",
-        "reason": "An essay rather than a launch or event, and Oct 31 is now at the 8-job cap."
-      },
-      {
-        "story": "Google lets Claude and Codex run inside Android Studio (FourWeekMBA)",
-        "decision": "skipped",
-        "reason": "Developer niche seen in one secondary outlet, and the day is at the cap."
-      },
-      {
-        "story": "Sonnet-controlled rig performed gene therapy brain surgery on a mouse (Tom's Hardware)",
-        "decision": "skipped",
-        "reason": "Now in Tom's Hardware too, but still built on one founder's account and the day is at the cap; candidate for Nov 1."
-      },
-      {
-        "story": "Sam Altman meets Samsung executives in Seoul on memory chips",
-        "decision": "skipped",
-        "reason": "Too close to the Altman DRAM post already queued today."
-      },
-      {
-        "story": "Google DeepMind trains Gemini 3.1 Flash-Lite on simulated patients for psychiatric intake",
-        "decision": "skipped",
-        "reason": "Health research seen only in a crypto news write-up; day at cap."
-      },
-      {
-        "story": "Anthropic research: harmless stories can teach models to sabotage oversight (The Decoder)",
-        "decision": "skipped",
-        "reason": "Passed on earlier today, and the day is at the cap."
-      },
-      {
-        "story": "Anthropic blocks Claude from reverse engineering video games",
-        "decision": "covered",
-        "reason": "Already queued as 2026-10-31-claude-code-stops-remaking-video-games."
-      },
-      {
-        "story": "Gemini 4 Carbon pricing and benchmark follow ups",
-        "decision": "covered",
-        "reason": "Already covered as 2026-10-28-google-gemini-4-carbon-number-one."
-      },
-      {
-        "story": "OpenAI cuts funding target by $10 billion",
-        "decision": "covered",
-        "reason": "Already queued as 2026-10-31-openai-cuts-funding-target-10-billion."
-      }
-    ],
-    "requests": []
-  },
-  {
     "run_at": "2026-10-31T17:54:26.697Z",
     "summary": "Afternoon run (13:53 New York, Oct 31): no open links or requests (the 4 old inbox links were already answered in skipped.json); no new priority 1 story since the last run, and Oct 31 is at the 8-job cap with the utility post queued, so nothing was queued.",
     "considered": [
@@ -5010,6 +4951,70 @@
         "story": "Utility guide for Saturday",
         "decision": "skipped",
         "reason": "It is before 11:00 New York time, so the next run queues the first utility post."
+      }
+    ],
+    "requests": []
+  },
+  {
+    "run_at": "2026-11-07T16:56:25.315Z",
+    "summary": "Late-morning run (about 12:00 New York, Saturday): no open links or requests and no new priority 1 story; queued the first Saturday utility guide (Claude Code getting started), bringing the day to 7 with one utility slot left for the afternoon.",
+    "considered": [
+      {
+        "story": "Utility guide: Claude Code getting started (next line in guides/plan.md)",
+        "source": "https://code.claude.com/docs/en/quickstart",
+        "decision": "queued",
+        "job_id": "2026-11-07-claude-code-getting-started-guide",
+        "priority": 2
+      },
+      {
+        "story": "Anthropic IPO valuation talks fall toward $1.1 to $1.3 trillion (Bloomberg, Forbes)",
+        "source": "https://www.bloomberg.com/news/articles/2026-11-06/anthropic-ipo-valuation-expectations-pressured-after-ai-rout",
+        "decision": "covered",
+        "reason": "Same story as 2026-11-06-anthropic-ipo-investors-balk-selloff."
+      },
+      {
+        "story": "OpenAI raises $11 billion at a $1.25 trillion valuation",
+        "decision": "skipped",
+        "reason": "Follow-up to the earlier funding story, as decided in earlier runs."
+      },
+      {
+        "story": "Microsoft winding down Oracle deal to rent AI cloud capacity (Reuters)",
+        "source": "https://www.reuters.com/business/microsoft-is-winding-down-oracle-deal-rent-ai-cloud-capacity-bloomberg-news-2026-11-06/",
+        "decision": "skipped",
+        "reason": "Already skipped earlier: insider cloud news from November 6 that is now past its timely window."
+      },
+      {
+        "story": "Gemini Omni 1.2 Flash (Google blog, on Hacker News)",
+        "source": "https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemini-omni-1-2-flash/",
+        "decision": "covered",
+        "reason": "Already covered as 2026-11-06-gemini-omni-15-second-videos-free."
+      },
+      {
+        "story": "Anthropic publishes The Components of Agent Memory",
+        "source": "https://www.anthropic.com/research/components-of-agent-memory",
+        "decision": "skipped",
+        "reason": "Research write-up for builders, already skipped in the previous run as not new for normal users."
+      },
+      {
+        "story": "Jensen Huang and the alleged Chinese spy (Tom's Hardware)",
+        "decision": "covered",
+        "reason": "Already covered by 2026-10-29-nyt-chinese-asset-close-to-jensen-huang."
+      },
+      {
+        "story": "ChatGPT connector data routing complaint on the OpenAI forum (Hacker News)",
+        "source": "https://community.openai.com/t/security-follow-up-tool-call-silently-routed-to-a-different-connector/1413053",
+        "decision": "skipped",
+        "reason": "A single user's forum post with no independent reporting to confirm it."
+      },
+      {
+        "story": "Men see more career gains from AI jobs while women lose ground (Washington Post)",
+        "decision": "skipped",
+        "reason": "Day is near the 8 post cap and the remaining slot is reserved for the afternoon utility guide."
+      },
+      {
+        "story": "AI safety advocates make gains after $110 million midterm fight (Bloomberg)",
+        "decision": "skipped",
+        "reason": "Political story that would need review, and the day is nearly full."
       }
     ],
     "requests": []
