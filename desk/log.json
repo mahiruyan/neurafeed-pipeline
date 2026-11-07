@@ -1,78 +1,5 @@
 [
   {
-    "run_at": "2026-10-31T06:21:28.417Z",
-    "summary": "Overnight run (01:53 New York, Oct 31): no open links or requests; queued three stories (AI training opt-out token backed by OpenAI, Google, Microsoft and Anthropic; Claude Code rule against recreating existing games; Google's Suncatcher satellite writing a haiku in orbit), bringing Oct 31 to 5 jobs. All wait for Mahir's approval.",
-    "considered": [
-      {
-        "story": "OpenAI, Google, Microsoft and Anthropic back one robots.txt token to opt out of AI training",
-        "source": "https://siliconangle.com/2026/10/30/google-anthropic-and-others-to-support-new-ai-crawling-opt-out-standard/",
-        "decision": "queued",
-        "job_id": "2026-10-31-ai-giants-one-line-opt-out-training",
-        "priority": 1
-      },
-      {
-        "story": "Anthropic adds a Claude Code rule against recreating specific existing games",
-        "source": "https://www.gamedeveloper.com/programming/anthropic-appears-to-have-ordered-ai-tool-claude-to-stop-remaking-video-games",
-        "decision": "queued",
-        "job_id": "2026-10-31-claude-code-stops-remaking-video-games",
-        "priority": 1
-      },
-      {
-        "story": "Google's Project Suncatcher satellite returns first AI response from a TPU in orbit (a haiku)",
-        "source": "https://blog.google/innovation-and-ai/models-and-research/google-research/project-suncatcher-satellite-response/",
-        "decision": "queued",
-        "job_id": "2026-10-31-google-satellite-ai-haiku-orbit",
-        "priority": 2
-      },
-      {
-        "story": "Apple Intelligence coming to China with iOS 27.3 (The Verge)",
-        "decision": "covered",
-        "reason": "Already covered as 2026-10-15-apple-intelligence-china-december."
-      },
-      {
-        "story": "OpenAI cuts funding target by $10 billion",
-        "decision": "covered",
-        "reason": "Already queued as 2026-10-31-openai-cuts-funding-target-10-billion."
-      },
-      {
-        "story": "Contractor's Claude agent on a Pentagon network (WIRED)",
-        "decision": "covered",
-        "reason": "Already queued as 2026-10-31-contractor-claude-agent-pentagon-network."
-      },
-      {
-        "story": "20 House Democrats press OpenAI on whistleblower firings and hacks",
-        "decision": "skipped",
-        "reason": "Political letter seen only in legal trade outlets so far; a later run can confirm with a major outlet and queue it as sensitive."
-      },
-      {
-        "story": "Nvidia weighs cosigning Nscale's West Virginia data center (TechCrunch)",
-        "decision": "skipped",
-        "reason": "Financing detail with little consumer interest; three stories already queued this run."
-      },
-      {
-        "story": "Anthropic may get a junk credit rating after IPO (FT, TechCrunch)",
-        "decision": "skipped",
-        "reason": "Follow-up to the IPO coverage; weaker than the stories queued."
-      },
-      {
-        "story": "Sam Altman says RAM is better in a data center than on your desk (The Verge)",
-        "decision": "skipped",
-        "reason": "Two days old and a passing remark; candidate only if the day runs short."
-      },
-      {
-        "story": "Cisco gives a 27-year-old engineer unlimited AI tokens to rewrite legacy code (Fortune)",
-        "decision": "skipped",
-        "reason": "Good human story but three jobs already queued this run; candidate for a later Oct 31 run."
-      },
-      {
-        "story": "Proton CEO cancels AI re-interviews (404 Media)",
-        "decision": "skipped",
-        "reason": "Niche company HR story for a US audience."
-      }
-    ],
-    "requests": []
-  },
-  {
     "run_at": "2026-10-31T08:18:58.627Z",
     "summary": "Early run (04:20 New York, Oct 31): no open links or requests; queued Anthropic's Claude Ultra rename and the end of its 5-hour limit (priority 1), bringing Oct 31 to 6 jobs and leaving room for the utility post and a later breaking story.",
     "considered": [
@@ -4994,6 +4921,68 @@
         "story": "Wild dolphin communication research with AI (WIRED)",
         "decision": "skipped",
         "reason": "Feature piece with no new finding and only one source found."
+      }
+    ],
+    "requests": []
+  },
+  {
+    "run_at": "2026-11-07T07:19:10.483Z",
+    "summary": "Overnight run (about 02:00 New York, Saturday): no open links or requests; queued the BBC AI toy test story (priority 2, sensitive, waits for Mahir), bringing Saturday to 2 jobs.",
+    "considered": [
+      {
+        "story": "BBC test: AI plush toy for 3-year-olds says \"I can't help with killing you\"",
+        "source": "https://www.techtimes.co.uk/ai-toy-self-harm-advice-bbc-safety-test-1809776",
+        "decision": "queued",
+        "job_id": "2026-11-07-ai-toy-cant-help-with-killing-you",
+        "priority": 2
+      },
+      {
+        "story": "Researchers use Claude for scientific discovery (Anthropic research post)",
+        "source": "https://www.anthropic.com/research/how-researchers-use-claude",
+        "decision": "skipped",
+        "reason": "The Anthropic page could not be opened from here and no second current source with the details was found; try again in a daytime run."
+      },
+      {
+        "story": "Meta brings Muse Wonder Active Memory and Focus to all users (The New Stack)",
+        "source": "https://thenewstack.io/meta-muse-specialized-models/",
+        "decision": "skipped",
+        "reason": "The New Stack page could not be opened and other coverage is of the October Muse Wonder launch, so the new rollout is not confirmed by two sources I read."
+      },
+      {
+        "story": "US intelligence says a Megaspeed executive was a Chinese spy close to Jensen Huang (NYT)",
+        "decision": "covered",
+        "reason": "Already covered as 2026-10-29-nyt-chinese-asset-close-to-jensen-huang."
+      },
+      {
+        "story": "DeepMind AI agents expose legacy 1024-bit RSA weaknesses (Crypto Briefing)",
+        "source": "https://cryptobriefing.com/google-deepmind-ai-rsa-1024-bit-weaknesses/",
+        "decision": "skipped",
+        "reason": "Niche cryptography story and search found no second source tying DeepMind to it."
+      },
+      {
+        "story": "OpenAI essay \"The future of the firm\"",
+        "decision": "skipped",
+        "reason": "Published October 29, not new news."
+      },
+      {
+        "story": "OpenAI raises $11 billion at a $1.25 trillion valuation",
+        "decision": "skipped",
+        "reason": "Follow-up to 2026-10-31-openai-cuts-funding-target-10-billion, as decided in earlier runs."
+      },
+      {
+        "story": "Crusoe sells Wyoming data center project to Google",
+        "decision": "skipped",
+        "reason": "Already skipped earlier as insider data center news."
+      },
+      {
+        "story": "Justice Department Super Intelligence Task Force",
+        "decision": "skipped",
+        "reason": "Already skipped earlier: announced November 5, political, past the timely window."
+      },
+      {
+        "story": "Bank of England says AI added only 0.5 percent to UK productivity (The Register)",
+        "decision": "skipped",
+        "reason": "UK economic data with little interest for the US audience."
       }
     ],
     "requests": []
