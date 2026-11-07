@@ -1,76 +1,5 @@
 [
   {
-    "run_at": "2026-10-31T04:08:37.408Z",
-    "summary": "Late run (23:55 New York, Oct 30): queued two priority 1 stories for Oct 31, OpenAI's $10 billion funding target cut and the WIRED report on a contractor's Claude agent on a Pentagon network. No open links or requests.",
-    "considered": [
-      {
-        "story": "OpenAI cuts its funding round target by $10 billion to about $20 billion (FT via Reuters, WSJ)",
-        "source": "https://www.investing.com/news/economy-news/openai-cuts-funding-target-by-10-billion-ft-reports-4988969",
-        "decision": "queued",
-        "job_id": "2026-10-31-openai-cuts-funding-target-10-billion",
-        "priority": 1
-      },
-      {
-        "story": "Accenture contractor's personal Claude Code agent ran on a Pentagon network for two months (WIRED)",
-        "source": "https://www.cdomagazine.tech/us-federal-news-bureau/defense-contractor-gave-personal-ai-agent-access-to-pentagon-system",
-        "decision": "queued",
-        "job_id": "2026-10-31-contractor-claude-agent-pentagon-network",
-        "priority": 1
-      },
-      {
-        "story": "Google says its first orbital AI data center is running",
-        "decision": "skipped",
-        "reason": "Still only one secondary outlet seen; two priority 1 jobs already queued this run, leave for the next run to confirm with Google's own post."
-      },
-      {
-        "story": "Google, Anthropic and others back a new AI crawling opt-out standard (SiliconANGLE)",
-        "decision": "skipped",
-        "reason": "Policy follow-up with low consumer interest; candidate for a later Oct 31 run."
-      },
-      {
-        "story": "Sam Altman says OpenAI won't slow its science paper push (TechRadar)",
-        "decision": "skipped",
-        "reason": "Commentary story, weaker than the two queued stories; candidate for later."
-      },
-      {
-        "story": "20 House Democrats send OpenAI questions on firings and hacks",
-        "decision": "skipped",
-        "reason": "Only low-tier outlets seen so far; needs a stronger second source."
-      },
-      {
-        "story": "Stars file brief in NYT v. OpenAI lawsuit (Variety)",
-        "decision": "skipped",
-        "reason": "Incremental court filing in a long-running case."
-      },
-      {
-        "story": "Nvidia weighs cosigning Nscale's West Virginia data center (TechCrunch)",
-        "decision": "skipped",
-        "reason": "Financing detail with limited US audience appeal."
-      },
-      {
-        "story": "Qwen-powered Apple AI to launch in China in December (China Daily)",
-        "decision": "skipped",
-        "reason": "Single state-media source; needs confirmation from an independent outlet."
-      },
-      {
-        "story": "Anthropic IPO risk factors and Blackstone rating comments",
-        "decision": "covered",
-        "reason": "Follow-up to 2026-10-26-anthropic-files-ipo-ant-nasdaq."
-      },
-      {
-        "story": "Backdoored Claude Code extension on the Cursor marketplace",
-        "decision": "covered",
-        "reason": "Already queued as 2026-10-30-fake-claude-code-update-ssh-backdoor."
-      },
-      {
-        "story": "US tech stocks fall over AI spending fears",
-        "decision": "covered",
-        "reason": "Already queued as 2026-10-30-ai-spending-fears-1-trillion-tech-selloff."
-      }
-    ],
-    "requests": []
-  },
-  {
     "run_at": "2026-10-31T06:21:28.417Z",
     "summary": "Overnight run (01:53 New York, Oct 31): no open links or requests; queued three stories (AI training opt-out token backed by OpenAI, Google, Microsoft and Anthropic; Claude Code rule against recreating existing games; Google's Suncatcher satellite writing a haiku in orbit), bringing Oct 31 to 5 jobs. All wait for Mahir's approval.",
     "considered": [
@@ -5011,6 +4940,60 @@
         "source": "https://techcrunch.com/2026/11/06/crusoe-sells-troubled-wyoming-data-center-project-to-google/",
         "decision": "skipped",
         "reason": "Data center deal with little interest for normal users, and TechCrunch could not be opened from here."
+      }
+    ],
+    "requests": []
+  },
+  {
+    "run_at": "2026-11-07T05:07:23.621Z",
+    "summary": "Midnight run (about 00:00 New York, Saturday): no open links or requests, no new priority 1 story since the last run, and the remaining candidates were already decided or could not be confirmed with two readable sources, so nothing was queued; Saturday has 1 job so far and the morning runs will fill it.",
+    "considered": [
+      {
+        "story": "Startup PSI says an unreleased Anthropic model proved an 18-year-old quantum conjecture",
+        "decision": "covered",
+        "reason": "Already queued as 2026-11-07-anthropic-ai-proves-quantum-conjecture."
+      },
+      {
+        "story": "OpenAI raises $11 billion at a $1.25 trillion valuation (The Verge, SiliconANGLE)",
+        "source": "https://www.theverge.com/ai-artificial-intelligence/1029380/openai-1-25-trillion-investment-valuation",
+        "decision": "skipped",
+        "reason": "Follow-up to 2026-10-31-openai-cuts-funding-target-10-billion, as decided in earlier runs."
+      },
+      {
+        "story": "Anthropic IPO valuation talks fall toward $1.1 to $1.3 trillion (Bloomberg, Axios)",
+        "decision": "covered",
+        "reason": "Same story as 2026-11-06-anthropic-ipo-investors-balk-selloff."
+      },
+      {
+        "story": "Thinking Machines releases Inkling 2 Small",
+        "decision": "skipped",
+        "reason": "Already skipped in an earlier run as a developer release with little interest for normal US users, and the official page could not be opened from here."
+      },
+      {
+        "story": "University libraries swarmed by AI scraping bots (CBC)",
+        "source": "https://www.cbc.ca/news/world/university-libraries-ai-data-scraping-bots-9.7408287",
+        "decision": "skipped",
+        "reason": "The CBC article could not be opened from here and the other coverage found is from 2025, so there are not two current sources I read."
+      },
+      {
+        "story": "ChatGPT Sites website builder explainers",
+        "decision": "skipped",
+        "reason": "Only explainer and blog posts about an earlier launch, no new news."
+      },
+      {
+        "story": "Microsoft winding down Oracle AI cloud deal (Reuters)",
+        "decision": "skipped",
+        "reason": "Already skipped earlier: insider cloud news that expires before the 07:00 window."
+      },
+      {
+        "story": "Man sues OpenAI over ChatGPT and an alleged poison plot (Yahoo)",
+        "decision": "skipped",
+        "reason": "Single lawsuit involving crime, sensitive, already skipped in an earlier run."
+      },
+      {
+        "story": "Wild dolphin communication research with AI (WIRED)",
+        "decision": "skipped",
+        "reason": "Feature piece with no new finding and only one source found."
       }
     ],
     "requests": []
