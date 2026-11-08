@@ -1,58 +1,5 @@
 [
   {
-    "run_at": "2026-11-01T06:07:02.437Z",
-    "summary": "Overnight run (01:55 New York, Nov 1): no open links or requests (the four old links are already in inbox/skipped.json); queued the Chainalysis AI agent breach (p2), so Nov 1 has 4 jobs.",
-    "considered": [
-      {
-        "story": "Chainalysis says an attacker used offensive agentic techniques to breach its systems",
-        "source": "https://coinpaprika.com/news/hacker-turned-ai-agents-chainalysis-cryptos",
-        "decision": "queued",
-        "job_id": "2026-11-01-chainalysis-hacked-ai-agents",
-        "priority": 2
-      },
-      {
-        "story": "Google shuts down Jules and folds it into Antigravity (The Verge, via dev.to digest)",
-        "source": "https://dev.to/hiroki-ii-ai/ai-daily-digest-november-1-2026-google-folds-jules-into-antigravity-claude-ultra-drops-the-3e5e",
-        "decision": "skipped",
-        "reason": "Oct 29 shutdown of a niche developer tool, little mainstream US interest."
-      },
-      {
-        "story": "Anthropic Claude self-assessment misuse monitor (78% caught, 94% high risk)",
-        "source": "https://fourweekmba.com/ai-claude-flags-94-of-high-priority-misuse-at-under-2-compute/",
-        "decision": "skipped",
-        "reason": "Already looked at and skipped on Oct 30 as a narrow research update."
-      },
-      {
-        "story": "Claude Max 20x renamed Ultra with no 5-hour limit",
-        "decision": "covered",
-        "reason": "Already queued as 2026-10-31-claude-ultra-no-5-hour-limit."
-      },
-      {
-        "story": "Big Tech carries over $3 trillion in future AI spending commitments (Bloomberg)",
-        "decision": "covered",
-        "reason": "Close to the Oct 30 AI spending selloff post and the Alphabet $1 trillion item already reviewed."
-      },
-      {
-        "story": "Nvidia Nemotron 3.5 Transcribe open speech model",
-        "decision": "skipped",
-        "reason": "Developer release already skipped on Oct 29."
-      },
-      {
-        "story": "Judge lets NAACP lawsuit over xAI data center pollution move forward (TechCrunch)",
-        "source": "https://techcrunch.com/2026/10/31/judge-allows-naacp-lawsuit-over-xai-data-center-pollution-to-move-forward/",
-        "decision": "skipped",
-        "reason": "Procedural ruling, skipped in earlier runs."
-      },
-      {
-        "story": "Meta's Muse could upend businesses but hasn't yet (Wired)",
-        "source": "https://www.wired.com/story/metas-muse-could-upend-all-kinds-of-businesses-it-hasnt-yet/",
-        "decision": "skipped",
-        "reason": "Opinion feature with no new news event."
-      }
-    ],
-    "requests": []
-  },
-  {
     "run_at": "2026-11-01T09:13:35.333Z",
     "summary": "Early Sunday run (04:00 New York, Nov 1): made Mahir's Tesla Cybercab Halloween link into a Reel (review) and queued OpenAI's GPT-Rosalind-6 biology model (p1), so Nov 1 has 5 news jobs plus the Reel.",
     "considered": [
@@ -4975,6 +4922,76 @@
         "story": "Claude Personal Finance vs ChatGPT finances (Engadget)",
         "decision": "covered",
         "reason": "Comparison follow-up to 2026-11-06-claude-personal-finance-bank-accounts."
+      }
+    ],
+    "requests": []
+  },
+  {
+    "run_at": "2026-11-08T07:08:18.944Z",
+    "summary": "Early Sunday run (about 02:00 New York): no open links or requests, no new priority 1 story; queued 2 news carousels for the empty Sunday (Claude deleting a professor's notes, and the ChatGPT poisoning plot lawsuit, which is sensitive).",
+    "considered": [
+      {
+        "story": "Claude deleted a University of Chicago law professor's lecture notes and syllabus; Dropbox restored them",
+        "source": "https://fourweekmba.com/ai-claude-deleted-a-law-professors-notes-dropbox-had-copies/",
+        "decision": "queued",
+        "job_id": "2026-11-08-claude-deleted-professor-lecture-notes",
+        "priority": 2
+      },
+      {
+        "story": "Man sues OpenAI, says ChatGPT helped his estranged wife plan to poison him",
+        "source": "https://dnyuz.com/?p=323035",
+        "decision": "queued",
+        "job_id": "2026-11-08-chatgpt-wife-poison-plot-lawsuit",
+        "priority": 2
+      },
+      {
+        "story": "Elvis estate and Eminem's publisher sue Suno over AI voice cloning (Variety)",
+        "source": "https://variety.com/2026/music/news/elvis-eminem-sue-suno-ai-music-generator-1236941798/",
+        "decision": "skipped",
+        "reason": "Second lawsuit story in the same run; a good candidate for a later Sunday run once read from two outlets."
+      },
+      {
+        "story": "OpenAI raises $11 billion at a $1.25 trillion valuation",
+        "decision": "skipped",
+        "reason": "Follow-up to the earlier funding story, as decided in earlier runs."
+      },
+      {
+        "story": "Microsoft Research shuts down its AI Frontiers group (hunch.net)",
+        "source": "https://hunch.net/?p=13764006",
+        "decision": "skipped",
+        "reason": "Internal research reorganization with limited reader appeal."
+      },
+      {
+        "story": "Chinese firms cleared for Nvidia H200 chips have empty offices (NYT)",
+        "source": "https://www.nytimes.com/2026/11/07/business/economy/nvidia-chips-chinese-firms.html",
+        "decision": "skipped",
+        "reason": "Not read yet (paywall); worth checking in a later run with a second source."
+      },
+      {
+        "story": "Google told NYC schools to accept AI or lose Google Search (SILive)",
+        "decision": "covered",
+        "reason": "Same story as 2026-11-03-google-schools-no-ai-no-search."
+      },
+      {
+        "story": "Megaspeed executive recruited to spy on Nvidia CEO (TechCrunch)",
+        "source": "https://techcrunch.com/2026/11/07/chinese-exec-was-recruited-to-spy-on-nvidia-ceo-according-to-us-intelligence-memo/",
+        "decision": "covered",
+        "reason": "Already covered as 2026-10-29-nyt-chinese-asset-close-to-jensen-huang."
+      },
+      {
+        "story": "Geoffrey Hinton warns of a Chornobyl-like AI blackout (Neowin)",
+        "decision": "skipped",
+        "reason": "Commentary piece without a new event."
+      },
+      {
+        "story": "OpenAI offers senior engineers 2.6 times Microsoft's pay (FourWeekMBA)",
+        "decision": "skipped",
+        "reason": "Search found no original source or second outlet for the figure."
+      },
+      {
+        "story": "Stanford study: exact values cut AI models' auction gains (FourWeekMBA)",
+        "decision": "skipped",
+        "reason": "Still only one secondary outlet; original study not found."
       }
     ],
     "requests": []
