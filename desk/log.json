@@ -1,127 +1,5 @@
 [
   {
-    "run_at": "2026-11-01T09:13:35.333Z",
-    "summary": "Early Sunday run (04:00 New York, Nov 1): made Mahir's Tesla Cybercab Halloween link into a Reel (review) and queued OpenAI's GPT-Rosalind-6 biology model (p1), so Nov 1 has 5 news jobs plus the Reel.",
-    "considered": [
-      {
-        "story": "Mahir's link: Tesla sends a driverless Cybercab with skeletons around Austin for Halloween",
-        "source": "https://x.com/robotaxi/status/2116398208725483797",
-        "decision": "queued",
-        "job_id": "2026-11-01-tesla-cybercab-halloween-skeletons-reel",
-        "priority": 1
-      },
-      {
-        "story": "OpenAI releases GPT-Rosalind-6 biology model for approved organizations only",
-        "source": "https://deploymentsafety.openai.com/gpt-rosalind-6",
-        "decision": "queued",
-        "job_id": "2026-11-01-openai-gpt-rosalind-6-approved-labs-only",
-        "priority": 1
-      },
-      {
-        "story": "Apple puts Alibaba's Qwen inside Apple Intelligence for China (CGTN)",
-        "decision": "covered",
-        "reason": "Already covered as 2026-10-15-apple-intelligence-china-december."
-      },
-      {
-        "story": "Volta infostealer uses Claude, Kimi and Gemini to rank victims by payout (Cisco Talos, WIRED)",
-        "source": "https://blog.talosintelligence.com/appraisal-by-ai-model-driven-victim-prioritization-in-the-volta-infostealer/",
-        "decision": "skipped",
-        "reason": "Neither the Talos post nor the WIRED story could be opened from here, so the facts could not be read."
-      },
-      {
-        "story": "Shared ChatGPT link flaw could hijack accounts (The Hacker News, parameter.ai)",
-        "source": "https://thehackernews.com/2026/10/a-shared-chatgpt-link-could-run.html",
-        "decision": "skipped",
-        "reason": "Skipped in the last run for lack of coverage; still no OpenAI response found."
-      },
-      {
-        "story": "Apple passes Nvidia at $5.03 trillion as chip stocks slide (FourWeekMBA)",
-        "source": "https://fourweekmba.com/ai-apple-passes-nvidia-at-5-03-trillion-as-chip-stocks-slide/",
-        "decision": "skipped",
-        "reason": "The two have swapped the top spot several times this year, and only one secondary source was found."
-      },
-      {
-        "story": "Grok 4.20 stuck 700 turns in Red's house in Pokemon Red (r/LocalLLaMA)",
-        "source": "https://www.reddit.com/r/LocalLLaMA/comments/1xkr521/grok_420_spent_700_turns_stuck_in_reds_house_in/",
-        "decision": "skipped",
-        "reason": "Single Reddit benchmark post with no independent coverage."
-      },
-      {
-        "story": "Sam Altman meets Samsung executives on Stargate memory supply",
-        "decision": "skipped",
-        "reason": "Already skipped twice on Oct 31 as too close to the Altman RAM post."
-      },
-      {
-        "story": "GPT-5.6 Sol beats Factorio on peaceful mode (personal blog)",
-        "decision": "skipped",
-        "reason": "Already looked at and skipped in earlier runs."
-      },
-      {
-        "story": "Anthropic flags a PhD student for training a competitor (X post)",
-        "decision": "skipped",
-        "reason": "Single X post, already skipped in earlier runs."
-      }
-    ],
-    "requests": []
-  },
-  {
-    "run_at": "2026-11-01T10:54:53.975Z",
-    "summary": "Early Sunday run (05:55 New York, Nov 1): no open links or requests (the four old links are already in inbox/skipped.json); nothing new worth queuing, and Nov 1 already has 6 jobs with the utility post and the Sunday roundup still to come, so nothing was queued.",
-    "considered": [
-      {
-        "story": "Copilot cites an error-prone AI voter guide most of the time (Washington Post)",
-        "decision": "skipped",
-        "reason": "Political story from October 30 that would need review, and the slots left today are held for the utility post and the weekly roundup."
-      },
-      {
-        "story": "Microsoft and AFT school AI standard takes effect, bans training on student data (Nemko)",
-        "decision": "skipped",
-        "reason": "Only one secondary source found and little mainstream US interest."
-      },
-      {
-        "story": "Hermantown approves a 1.7 million square foot Google data center (MPR News)",
-        "decision": "skipped",
-        "reason": "Local zoning vote with little national interest."
-      },
-      {
-        "story": "Judge lets NAACP sue xAI over Memphis gas turbines (TechCrunch)",
-        "decision": "skipped",
-        "reason": "Procedural ruling, skipped in earlier runs for the same reason."
-      },
-      {
-        "story": "Moonshot closes Kimi K2 models to new users",
-        "decision": "skipped",
-        "reason": "Niche developer platform change with little US consumer interest."
-      },
-      {
-        "story": "Apple puts Alibaba's Qwen inside Apple Intelligence for China (CGTN)",
-        "decision": "covered",
-        "reason": "Already covered as 2026-10-15-apple-intelligence-china-december."
-      },
-      {
-        "story": "Apple CEO says Apple won't ship AI for AI's sake (TechCrunch)",
-        "decision": "covered",
-        "reason": "Already queued as 2026-11-01-ternus-apple-no-ai-for-ais-sake."
-      },
-      {
-        "story": "Shared ChatGPT link flaw could hijack accounts (The Hacker News, parameter.ai)",
-        "decision": "skipped",
-        "reason": "Still no OpenAI response or wider coverage, as in earlier runs."
-      },
-      {
-        "story": "GPT-5.6 Sol beats Factorio on peaceful mode (personal blog)",
-        "decision": "skipped",
-        "reason": "Still only a personal blog post with no news coverage."
-      },
-      {
-        "story": "Anthropic flags a PhD student for training a competitor (X post)",
-        "decision": "skipped",
-        "reason": "Single X post, already skipped in earlier runs."
-      }
-    ],
-    "requests": []
-  },
-  {
     "run_at": "2026-11-01T12:55:19.751Z",
     "summary": "Sunday morning run (07:55 New York, Nov 1): no open links or requests (the four old links are already in inbox/skipped.json); no new priority 1 story since the last run, and Nov 1 already has 6 jobs with the utility post (after 11:00) and the weekly roundup (after 17:00) still to come, so nothing was queued.",
     "considered": [
@@ -5054,6 +4932,69 @@
         "story": "Claude Code Don't Ask Again exposes passwords in public GitHub files",
         "decision": "covered",
         "reason": "Already queued as 2026-11-07-claude-code-dont-ask-again-leaks-passwords."
+      }
+    ],
+    "requests": []
+  },
+  {
+    "run_at": "2026-11-08T11:09:31.319Z",
+    "summary": "Early Sunday run (about 06:20 New York): no open links or requests; queued 2 carousels (Elvis and Eminem rights holders suing Suno, sensitive; ChatGPT Lockdown Mode bypass), bringing Sunday to 5 jobs.",
+    "considered": [
+      {
+        "story": "Eminem's publisher and Elvis Presley rights holders sue AI music app Suno (CBS News, The Daily Star)",
+        "source": "https://www.thedailystar.net/culture/entertainment/news/elvis-eminem-rights-holders-sue-ai-music-generator-suno-4318351",
+        "decision": "queued",
+        "job_id": "2026-11-08-elvis-eminem-sue-suno",
+        "priority": 2
+      },
+      {
+        "story": "Check Point researchers bypassed ChatGPT Lockdown Mode through HTML preview popups (The Hacker News, GBHackers)",
+        "source": "https://thehackernews.com/2026/11/researchers-bypass-chatgpt-lockdown.html",
+        "decision": "queued",
+        "job_id": "2026-11-08-chatgpt-lockdown-mode-bypass",
+        "priority": 2
+      },
+      {
+        "story": "Google DeepMind says its AI agents found two weaknesses in legacy 1024-bit RSA",
+        "source": "https://digg.com/ai/4ij1uxax",
+        "decision": "skipped",
+        "reason": "Could not read the DeepMind post itself (only X posts and small aggregators), and the key numbers come from a third party; worth a later run if a major outlet covers it."
+      },
+      {
+        "story": "Anthropic valuation halved amid bubble fears (Chosun Ilbo)",
+        "decision": "skipped",
+        "reason": "Could not confirm a new valuation event with a second source; recent coverage is about secondary market prices already covered this week."
+      },
+      {
+        "story": "Microsoft data center site in Amsterdam breached by activists (Reuters, Guardian)",
+        "decision": "covered",
+        "reason": "Already considered and skipped in earlier runs as a European protest story."
+      },
+      {
+        "story": "Goldman Sachs restricts AI coding tools for bankers (Quartz)",
+        "decision": "covered",
+        "reason": "Already considered in earlier runs this week."
+      },
+      {
+        "story": "Perplexity launches Teammates, always-on work agents (The Verge)",
+        "decision": "covered",
+        "reason": "Already considered and skipped in earlier runs."
+      },
+      {
+        "story": "Agility Robotics lists on Nasdaq as first humanoid robot IPO (TechRepublic)",
+        "decision": "skipped",
+        "reason": "A SPAC listing with modest US consumer appeal, and no video for a Reel."
+      },
+      {
+        "story": "Goodbye Claude, Hello Pi (Hacker News blog post)",
+        "source": "https://caleb.software/posts/claude-to-pi.html",
+        "decision": "skipped",
+        "reason": "One developer's personal blog post, not news."
+      },
+      {
+        "story": "Chamath Palihapitiya warns a data center slowdown would hit Anthropic and OpenAI (Stocktwits)",
+        "decision": "skipped",
+        "reason": "Investor commentary with no new event, as decided in an earlier run."
       }
     ],
     "requests": []

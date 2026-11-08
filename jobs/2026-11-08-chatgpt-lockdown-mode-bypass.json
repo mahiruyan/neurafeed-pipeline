@@ -1,0 +1,140 @@
+{
+  "id": "2026-11-08-chatgpt-lockdown-mode-bypass",
+  "created_at": "2026-11-08T11:25:00Z",
+  "story_time": "2026-11-05T12:00:00Z",
+  "timely": false,
+  "sensitive": false,
+  "priority": 2,
+  "review": true,
+  "format": "carousel",
+  "site_category": "companies",
+  "ab": {
+    "headline": "short"
+  },
+  "sources": [
+    {
+      "name": "The Hacker News",
+      "url": "https://thehackernews.com/2026/11/researchers-bypass-chatgpt-lockdown.html"
+    },
+    {
+      "name": "GBHackers",
+      "url": "https://gbhackers.com/chatgpt-lockdown-mode-bypass"
+    },
+    {
+      "name": "ProductNation",
+      "url": "https://productnation.co/my/32269/chatgpt-lockdown-mode-bypass-check-point-PBGo/"
+    }
+  ],
+  "caption": "ChatGPT's Lockdown Mode is the setting meant to stop data theft through sneaky prompts.\nCheck Point researchers found a way around it: a web preview inside a chat could open a popup outside the sandbox.\nIn the desktop app, a malicious GPT could send your chat messages to an attacker's server with zero clicks. OpenAI fixed it on September 18.\n\nDo you trust custom GPTs and shared chats from strangers?\n\nFollow @neurafeed.ai for daily AI news.\n\nSource: The Hacker News, GBHackers · Photo: ProductNation",
+  "threads_text": "Security researchers got around ChatGPT's Lockdown Mode, the setting built to stop data theft. In the desktop app, a malicious custom GPT could quietly send your chat messages to an outside server. OpenAI patched it in September and no real attacks were seen. Do you ever open GPTs or shared chats from strangers?",
+  "slides": [
+    {
+      "kind": "cover",
+      "headline": "Researchers slipped past ChatGPT's *safest mode* to grab chats",
+      "image": {
+        "url": "https://cdn1.productnation.co/stg/sites/1/6aec2d78f1fc40.83874398.jpg",
+        "credit": "ProductNation",
+        "fallback_urls": [
+          "https://gbhackers.com/wp-content/uploads/2026/11/18d7556e-b146-427f-886a-9e137c0d5a40-1.webp"
+        ],
+        "refs": [
+          "https://cdn1.productnation.co/stg/sites/1/6aec2d78f1fc40.83874398.jpg"
+        ],
+        "generate": "A young woman sits at a desk at night in front of a laptop that shows the first image on its screen, and she covers her mouth with a worried face."
+      },
+      "pos": "center center",
+      "badges": [
+        {
+          "url": "assets/logos/openai.png",
+          "fit": "contain"
+        }
+      ],
+      "badge_side": "right"
+    },
+    {
+      "kind": "card",
+      "heading": "What *Lockdown Mode* is for",
+      "paras": [
+        "OpenAI added Lockdown Mode in June as an optional setting to stop sneaky prompts from stealing your data.",
+        "It limits web access and turns off Deep Research, Agent Mode, live connectors and file downloads."
+      ],
+      "image": {
+        "url": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjrZkGDnavpYu1VmQZCorYSw9PnFNh3tGXQ7YWWrZ3g6sURYj4RiS7za99akV3poXhW7GLoJw3j-baYvwyor0f_8iI3t5zk3NeXj1V1eVDMFUklqlYz629h88oYzxk3aIQPPwQF3xaw10DZTE-lEKyaojqzlLHC_DGtF91AVhXkaFNfY6Mh-qVqn86LCfQz/s1600/chat.gif",
+        "credit": "The Hacker News",
+        "fallback_urls": [
+          "https://gbhackers.com/wp-content/uploads/2026/11/18d7556e-b146-427f-886a-9e137c0d5a40-1.webp"
+        ]
+      }
+    },
+    {
+      "kind": "card",
+      "heading": "One *popup* escaped",
+      "paras": [
+        "ChatGPT can preview web pages inside code blocks, in a locked box called a sandbox.",
+        "Check Point found that a hidden frame inside the preview could still open a real popup window, and that window ran outside the sandbox and outside Lockdown Mode."
+      ],
+      "image": {
+        "url": "https://gbhackers.com/wp-content/uploads/2026/11/18d7556e-b146-427f-886a-9e137c0d5a40-1.webp",
+        "credit": "GBHackers",
+        "fallback_urls": []
+      }
+    },
+    {
+      "kind": "card",
+      "heading": "Your chats, *zero clicks*",
+      "paras": [
+        "In the ChatGPT desktop app, a malicious custom GPT could send chat messages to an attacker's server without a single click.",
+        "Fake popups kept the ChatGPT icon and could show a fake sign-in page or a fake update."
+      ],
+      "image": {
+        "url": "https://cdn1.productnation.co/stg/sites/1/6aec2d7bdbfac7.06295676.jpg",
+        "credit": "ProductNation",
+        "fit": "contain",
+        "fallback_urls": []
+      }
+    },
+    {
+      "kind": "card",
+      "heading": "Fixed, *no attacks seen*",
+      "paras": [
+        "OpenAI closed the hole on September 18. Check Point retested and says the trick no longer works, and it saw no real attacks.",
+        {
+          "t": "\"AI security controls are only as strong as the wider application environment around them.\"",
+          "strong": true
+        }
+      ],
+      "note": "Eli Smadja, Check Point",
+      "image": {
+        "url": "https://cdn1.productnation.co/stg/sites/1/6aec2d79a65ec0.12103882.jpg",
+        "credit": "ProductNation",
+        "fallback_urls": []
+      }
+    },
+    {
+      "kind": "cta",
+      "hook": "Follow for the AI security holes that put your own chats at risk."
+    }
+  ],
+  "site_article": {
+    "headline": "Researchers bypassed ChatGPT Lockdown Mode through a popup in HTML previews",
+    "dek": "Check Point says the flaw let a malicious custom GPT send chat messages out of the ChatGPT desktop app without a click; OpenAI fixed it in September.",
+    "summary": "Check Point Research found a way around ChatGPT's Lockdown Mode through the HTML preview feature in code blocks. OpenAI removed the permissions behind the technique on September 18, 2026, and the researchers saw no real-world attacks.",
+    "seo_title": "ChatGPT Lockdown Mode bypass: Check Point flaw explained",
+    "seo_description": "Check Point found ChatGPT HTML previews could open popups outside the sandbox, bypassing Lockdown Mode. OpenAI fixed it on September 18, 2026.",
+    "answer_summary": "Yes, Lockdown Mode could be bypassed until September 18, 2026, through popups opened from ChatGPT's HTML previews. OpenAI has fixed the issue, and Check Point found no evidence of real attacks.",
+    "tags": ["ChatGPT", "OpenAI", "Check Point", "Lockdown Mode", "Prompt injection", "AI security"],
+    "hero_alt": "Illustration for an article about a security gap in ChatGPT's Lockdown Mode.",
+    "paragraphs": [
+      { "kind": "fact", "text": "Security researchers at Check Point published details on November 5, 2026, of a technique that got around Lockdown Mode in ChatGPT, the optional setting OpenAI offers to reduce the risk of data theft through prompt injection. The flaw sat in the HTML page preview that ChatGPT shows for code blocks, according to The Hacker News and GBHackers. OpenAI fixed it on September 18, 2026, before the findings were made public.", "sources": [0, 1] },
+      { "kind": "heading", "text": "What Lockdown Mode is meant to block" },
+      { "kind": "fact", "text": "OpenAI introduced Lockdown Mode in June 2026, The Hacker News reported. When it is on, ChatGPT limits browsing to cached content, blocks images loaded from the web and restricts network requests from Canvas. Deep Research, Agent Mode, live connectors and file downloads are switched off, according to GBHackers and ProductNation.", "sources": [0, 1, 2] },
+      { "kind": "heading", "text": "How the bypass worked" },
+      { "kind": "fact", "text": "ChatGPT renders HTML previews inside nested sandboxed frames that are meant to keep the content away from app data and outside servers. Check Point found that the outer sandbox still allowed popups, and allowed those popups to escape the sandbox. ChatGPT's own code intercepted attempts to open new windows only on the top-level page, so a script that created another nested frame could reach an unmodified popup function. The window it opened ran without the sandbox limits and without the Lockdown Mode restrictions.", "sources": [0, 1] },
+      { "kind": "fact", "text": "In the Electron-based ChatGPT desktop app, the popup opened without any user action. Check Point showed that a malicious custom GPT could send chat messages to a server controlled by an attacker, and GBHackers reported that a crafted prompt or a shared chat could also trigger the attack. The researchers also showed fake popup windows that kept the ChatGPT icon while displaying an attacker's content, including a fake sign-in page and a fake update prompt. ProductNation reported that delivering malware this way still required the victim to click a download link.", "sources": [0, 1, 2] },
+      { "kind": "fact", "text": "OpenAI removed the popup permissions from the outer preview frame, and Check Point retested and confirmed the technique no longer works. ProductNation reported that Check Point found no evidence that the flaw was used in real attacks. Eli Smadja, head of research at Check Point, told The Hacker News that AI security controls are only as strong as the application around them.", "sources": [0, 1, 2] },
+      { "kind": "fact", "text": "The Hacker News noted that a different flaw in the same preview component was disclosed about a week earlier by another research group, and that it could allow an account takeover through a shared ChatGPT link. Check Point said that issue is separate from its findings.", "sources": [0] },
+      { "kind": "analysis", "text": "The case shows a pattern that keeps repeating with AI assistants. A protective setting can be well designed and still fail when a nearby feature, here a convenience preview for code, opens a path the setting does not cover. For users who turn on Lockdown Mode because they handle sensitive data, the main risk came from content they did not write: custom GPTs and chats shared by others." },
+      { "kind": "why_it_matters", "text": "Watch whether OpenAI extends Lockdown Mode to cover rendered previews and other display features directly, since Check Point's work shows those features can sit outside the mode's protections." }
+    ]
+  }
+}
