@@ -1,59 +1,5 @@
 [
   {
-    "run_at": "2026-11-01T21:08:13.561Z",
-    "summary": "Sunday late-afternoon run (15:53 New York, Nov 1): no open links or requests; queued one priority 1 story (Sam Altman meets about 50 Samsung executives as memory runs short), waiting for Mahir's approval. Nov 1 now has 7 desk jobs, the last slot stays held for the weekly roundup after 17:00. Note: generated covers keep failing because the fal account is locked (TOP_UP), so covers fall back to real photos.",
-    "considered": [
-      {
-        "story": "Sam Altman meets about 50 Samsung executives in Yongin amid a memory shortage",
-        "source": "https://www.tomshardware.com/tech-industry/data-centers/sam-altman-travels-to-south-korea-to-meet-samsung-leadership-to-secure-more-ram-for-data-centers-amid-crushing-shortages-openai-ceo-meets-samsung-leadership-to-discuss-future-ai-data-centers",
-        "decision": "queued",
-        "job_id": "2026-11-01-altman-50-samsung-executives-memory",
-        "priority": 1
-      },
-      {
-        "story": "OpenAI plans a post-midterm policy push in Washington (Axios)",
-        "decision": "skipped",
-        "reason": "Political strategy story I could not read in full from a primary source, and today's only free slot went to the Altman and Samsung meeting."
-      },
-      {
-        "story": "Anthropic asks job candidates what they would do if its stock fell to zero (Fortune)",
-        "decision": "skipped",
-        "reason": "Interesting hiring detail but not a major event, and no slot is left before the roundup."
-      },
-      {
-        "story": "Anthropic's internal AI use worth more than employee pay (Business Insider)",
-        "decision": "skipped",
-        "reason": "Passed on in earlier runs today, still not a major story."
-      },
-      {
-        "story": "Pipedrive cuts 70% of its Estonian workforce as AI disrupts its business",
-        "decision": "skipped",
-        "reason": "Layoff story at a smaller European company with little US interest."
-      },
-      {
-        "story": "DeepSeek launches an AI Super Agent to rival Claude Code and Codex (Digital Trends)",
-        "decision": "skipped",
-        "reason": "Still one source and not a priority company."
-      },
-      {
-        "story": "Brazilian lawyers fined for a prompt injection hidden in a court filing (Tom's Hardware)",
-        "decision": "skipped",
-        "reason": "Held for tomorrow; today's cap is nearly full."
-      },
-      {
-        "story": "Anthropic blocks users for work touching training larger models (X post on Hacker News)",
-        "decision": "skipped",
-        "reason": "Still a single X post with no news coverage."
-      },
-      {
-        "story": "OpenAI raises less than half of its $30 billion target (WSJ)",
-        "decision": "covered",
-        "reason": "Already covered as 2026-10-31-openai-cuts-funding-target-10-billion."
-      }
-    ],
-    "requests": []
-  },
-  {
     "run_at": "2026-11-01T23:02:47.566Z",
     "summary": "Sunday evening run: queued the weekly roundup and one Claude malware story; no open links or requests.",
     "considered": [
@@ -5080,6 +5026,65 @@
         "story": "Diamond Foundry makes a 200mm single crystal diamond wafer for AI chip cooling",
         "decision": "skipped",
         "reason": "Interesting but low US audience pull, and the cap is reached."
+      }
+    ],
+    "requests": []
+  },
+  {
+    "run_at": "2026-11-08T23:02:41.832Z",
+    "summary": "Sunday evening run: made Mahir's Claude Code meme link into a Reel, queued the Nvidia board probe of Jensen Huang (priority 1, sensitive) and the weekly roundup.",
+    "considered": [
+      {
+        "story": "Mahir's link: 'Software Engineers used to move before Claude Code existed' meme",
+        "source": "https://www.instagram.com/reel/DfbRiLhBoFU/",
+        "decision": "queued",
+        "job_id": "2026-11-08-engineers-before-claude-code-reel",
+        "priority": 1,
+        "reason": "Mahir's link, Reel with his title as the hook and our own caption. The clip carries the @acknowledge.ai branded header card (a movie clip meme), credited to @acknowledge.ai."
+      },
+      {
+        "story": "Nvidia's board opens an inquiry after Jensen Huang admits an affair with a woman US officials believe is a Chinese spy",
+        "source": "https://sfstandard.com/2026/11/08/nvidia-jensen-huang-affair-board-investigation-chinese-spy/",
+        "decision": "queued",
+        "job_id": "2026-11-08-nvidia-board-probes-huang-alleged-spy",
+        "priority": 1,
+        "reason": "Biggest AI story of the day, new development after the October 29 coverage. Sensitive, so it waits for Mahir's approval; the day is at the cap, so it posts tonight only if a slot is left."
+      },
+      {
+        "story": "Weekly roundup: What happened in AI this week",
+        "decision": "queued",
+        "job_id": "2026-11-08-week-in-ai",
+        "priority": 1,
+        "reason": "Sunday roundup. Built only from stories queued more than 72 hours ago (plus a separate Reuters copy for the OpenAI raise) so the pipeline does not drop it for sharing a source link, as happened to last week's roundup."
+      },
+      {
+        "story": "Goldman Sachs pulls Claude Code from its bankers and traders",
+        "source": "https://www.thestateofai.com/news/goldman-sachs-claude-code-traders-bankers",
+        "decision": "skipped",
+        "reason": "Good money story, but the day is over the 8 post cap; worth a look tomorrow with a second source."
+      },
+      {
+        "story": "Drugmaker CEOs doubt Silicon Valley's promise that AI will cure disease (WSJ)",
+        "source": "https://www.wsj.com/tech/ai/silicon-valley-promises-ai-will-cure-disease-drugmaker-ceos-arent-buying-it-5218511c",
+        "decision": "skipped",
+        "reason": "Paywalled feature with no second source, and the cap is reached."
+      },
+      {
+        "story": "OpenAI raises $11 billion at a $1.25 trillion valuation",
+        "decision": "covered",
+        "reason": "Already posted as 2026-11-08-openai-11-billion-short-of-30-billion; used in the roundup."
+      },
+      {
+        "story": "Developer blog: Goodbye Claude, hello Pi",
+        "source": "https://caleb.software/posts/claude-to-pi.html",
+        "decision": "skipped",
+        "reason": "Personal blog post, niche for a US mainstream audience."
+      },
+      {
+        "story": "How I fight AI brain fry",
+        "source": "https://sergeykuhne.com/blog/fighting-ai-brain-fry",
+        "decision": "skipped",
+        "reason": "Single personal blog post, no news."
       }
     ],
     "requests": []
