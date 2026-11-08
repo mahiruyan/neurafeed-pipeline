@@ -1,64 +1,5 @@
 [
   {
-    "run_at": "2026-11-01T17:06:55.466Z",
-    "summary": "Sunday midday run (11:53 New York, Nov 1): no open links or requests; queued the daily utility post and website guide (Perplexity research with sources). Nov 1 now has 7 jobs, the last slot is held for the weekly roundup after 17:00, so no news was added.",
-    "considered": [
-      {
-        "story": "Utility: Perplexity, how to research with sources (next line in guides/plan.md)",
-        "source": "https://www.perplexity.ai/help-center/en/articles/10738684-what-is-research-mode",
-        "decision": "queued",
-        "job_id": "2026-11-01-perplexity-research-with-sources-guide",
-        "priority": 2
-      },
-      {
-        "story": "Anthropic's internal AI use is worth more than employee pay at customer prices (Business Insider)",
-        "decision": "skipped",
-        "reason": "Interesting but not a major story, and the only free slot today is reserved for the Sunday roundup."
-      },
-      {
-        "story": "OpenAI adds stricter limits for teens asking about firearms (Engadget)",
-        "decision": "skipped",
-        "reason": "Sensitive safety policy tweak, not major enough to take the roundup's slot under the 8 per day cap."
-      },
-      {
-        "story": "DeepSeek launches an AI Super Agent to rival Claude Code and Codex (Digital Trends)",
-        "decision": "skipped",
-        "reason": "Not one of the priority companies and no second source yet; cap reached once the roundup is queued."
-      },
-      {
-        "story": "Sam Altman says AI is uncovering old security vulnerabilities (TechRadar)",
-        "decision": "skipped",
-        "reason": "Commentary with no new event, and today's cap is nearly full."
-      },
-      {
-        "story": "AI agent swarms in Minecraft fall into bureaucracy (Tom's Hardware)",
-        "decision": "skipped",
-        "reason": "Fun research story but filler, and no slot left today."
-      },
-      {
-        "story": "Brazilian lawyers fined for prompt injection hidden in a court filing (Tom's Hardware)",
-        "decision": "skipped",
-        "reason": "Legal story outside the US with no slot left today; can be reconsidered tomorrow."
-      },
-      {
-        "story": "OpenAI raises less than half of its $30 billion target (WSJ)",
-        "decision": "covered",
-        "reason": "Already covered as 2026-10-31-openai-cuts-funding-target-10-billion."
-      },
-      {
-        "story": "Anthropic restricts Claude from reverse engineering games (Firstpost, Mashable)",
-        "decision": "covered",
-        "reason": "Already posted as 2026-10-31-claude-code-stops-remaking-video-games."
-      },
-      {
-        "story": "ChatGPT and Codex usage limits merging",
-        "decision": "covered",
-        "reason": "Already queued as 2026-11-01-chatgpt-codex-one-shared-limit."
-      }
-    ],
-    "requests": []
-  },
-  {
     "run_at": "2026-11-01T19:02:45.978Z",
     "summary": "Sunday afternoon run (13:53 New York, Nov 1): turned Mahir's link (8 AI terms post) into our own 8-slide explainer carousel with a website article, waiting for his approval; no new priority 1 news since the midday run, and the last news slot stays held for the weekly roundup after 17:00.",
     "considered": [
@@ -5005,5 +4946,68 @@
         "result": "The Altman interview is from November 3, so the pipeline expires any copy right away (non-timely posts expire 72 hours after the story) and I cannot fake a newer date; if you send the podcast or transcript link to the bot as a link, it stays valid for 7 days and I will rebuild the post from it."
       }
     ]
+  },
+  {
+    "run_at": "2026-11-08T17:13:00.715Z",
+    "summary": "Sunday midday run (about 12:30 New York): no open links or requests; queued 2 priority 1 carousels (OpenAI's $11 billion raise below its $30 billion goal, Ternus pushing Federighi on AI) and the daily site-only guide (Midjourney prompts), leaving 1 slot for the 17:00 weekly roundup.",
+    "considered": [
+      {
+        "story": "OpenAI raises $11 billion at a $1.25 trillion valuation, short of its up to $30 billion target",
+        "source": "https://finance.yahoo.com/technology/ai/articles/openai-reportedly-raises-additional-11-225346372.html",
+        "decision": "queued",
+        "job_id": "2026-11-08-openai-11-billion-short-of-30-billion",
+        "priority": 1
+      },
+      {
+        "story": "Apple CEO John Ternus presses Craig Federighi to move faster on AI (Bloomberg, Gurman)",
+        "source": "https://9to5mac.com/2026/11/08/john-ternus-pushing-craig-federighi-to-move-faster-software-engineering/",
+        "decision": "queued",
+        "job_id": "2026-11-08-ternus-pushes-federighi-faster-ai",
+        "priority": 1
+      },
+      {
+        "story": "Daily website guide: Midjourney prompts that work",
+        "source": "https://docs.midjourney.com/docs/prompts",
+        "decision": "queued",
+        "job_id": "2026-11-08-midjourney-prompts-that-work-guide",
+        "priority": 2
+      },
+      {
+        "story": "Anthropic signs a $3.4 billion gas generator deal for 1.7 GW of data center power (FT)",
+        "decision": "skipped",
+        "reason": "Major Anthropic story, but Sunday's post slots are full with the roundup still to come; it is an infrastructure deal with less reader appeal than the two queued stories, so it can be picked up on Monday if still fresh."
+      },
+      {
+        "story": "Andrej Karpathy built a curated video platform in a weekend with Claude",
+        "decision": "skipped",
+        "reason": "Fun story but no room left under today's 8 post cap; worth a look Monday."
+      },
+      {
+        "story": "Bill Gates says a $10 an hour robot could replace a $20 an hour worker",
+        "decision": "skipped",
+        "reason": "Comment piece from Benzinga without a fresh primary source, and no slot left today."
+      },
+      {
+        "story": "Anthropic study on risks of AI agent teams (CNBC)",
+        "decision": "skipped",
+        "reason": "Out of slots today; the CNBC piece is a feature on older experiments, not new news."
+      },
+      {
+        "story": "Claude deleted a professor's lecture notes",
+        "decision": "covered",
+        "reason": "Already posted as 2026-11-08-claude-deleted-professor-lecture-notes."
+      },
+      {
+        "story": "GPT-6 Cyber penetration testing tool",
+        "decision": "covered",
+        "reason": "Already covered as 2026-11-05-openai-gpt-6-cyber-81-firefox-flaws."
+      },
+      {
+        "story": "Gemini Omni 1.2 Flash with 15 second videos",
+        "decision": "covered",
+        "reason": "Already covered as 2026-11-06-gemini-omni-15-second-videos-free."
+      }
+    ],
+    "requests": []
   }
 ]

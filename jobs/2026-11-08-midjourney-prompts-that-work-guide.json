@@ -1,0 +1,292 @@
+{
+  "id": "2026-11-08-midjourney-prompts-that-work-guide",
+  "format": "utility",
+  "site_only": true,
+  "created_at": "2026-11-08T17:30:00Z",
+  "story_time": "2026-11-08T17:30:00Z",
+  "timely": false,
+  "sensitive": false,
+  "priority": 2,
+  "review": true,
+  "sources": [
+    {
+      "name": "Midjourney Docs: Prompt Basics",
+      "url": "https://docs.midjourney.com/docs/prompts"
+    },
+    {
+      "name": "Midjourney Docs: Parameter List",
+      "url": "https://docs.midjourney.com/docs/parameter-list"
+    },
+    {
+      "name": "Midjourney Docs: Models",
+      "url": "https://docs.midjourney.com/docs/models"
+    },
+    {
+      "name": "Midjourney Docs: Getting Started Guide",
+      "url": "https://docs.midjourney.com/hc/en-us/articles/33329261836941-Getting-Started-Guide"
+    },
+    {
+      "name": "Visually AI (Heather Cooper): Midjourney V8 is live on alpha",
+      "url": "https://heatherbcooper.substack.com/p/midjourney-v8-is-live-on-alpha-heres"
+    },
+    {
+      "name": "Evolink: Midjourney V8.1 prompt guide",
+      "url": "https://evolink.ai/docs/en/api-manual/image-series/midjourney/midjourney-v8-1-prompt-guide"
+    }
+  ],
+  "caption": "Midjourney's own docs say short, precise prompts usually beat long ones.\nUse exact numbers, describe what you want instead of what you don't, and put settings like --ar at the very end.\n\nWhat is the best image you ever got from an AI?\n\nFollow @neurafeed.ai for daily AI news.\n\nSource: Midjourney Docs · Photo: Heather Cooper / Midjourney",
+  "threads_text": "Midjourney's own docs say short, precise prompts usually beat long ones. Say \"three cats\" instead of \"cats\", and never write \"no cake\" in a prompt, because the cake tends to show up. What is your best image prompt trick?",
+  "slides": [
+    {
+      "kind": "cover",
+      "headline": "Midjourney prompts that *actually work*: 5 rules from its own docs",
+      "image": {
+        "url": "https://substackcdn.com/image/fetch/$s_!jjqb!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fcc7deef6-c240-4109-b112-3ec54d0653f3_2912x1632.jpeg",
+        "credit": "Heather Cooper / Midjourney",
+        "fallback_urls": [
+          "https://substackcdn.com/image/fetch/$s_!Djzt!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F17f765f3-0bd6-4b58-87c2-900bd12a909a_2912x1632.jpeg"
+        ]
+      },
+      "pos": "center center"
+    },
+    {
+      "kind": "prompt",
+      "heading": "1. Keep it *short*",
+      "paras": [
+        "Midjourney's docs say short, simple prompts usually give the best images. Long lists of instructions confuse it."
+      ],
+      "prompt": "Colored pencil illustration of bright orange California poppies"
+    },
+    {
+      "kind": "prompt",
+      "heading": "2. Use *exact numbers*",
+      "paras": [
+        "\"Cats\" is vague. \"Three cats\" or \"a flock of birds\" tells it exactly what to draw.",
+        "Precise words help too: \"enormous\" beats \"big\"."
+      ],
+      "prompt": "Three cats asleep on a sunny windowsill, soft morning light"
+    },
+    {
+      "kind": "prompt",
+      "heading": "3. Fill in the *details* that matter",
+      "paras": [
+        "Pick what you care about: subject, medium, setting, lighting, color, mood, composition.",
+        "Leave the rest out and Midjourney fills the gaps."
+      ],
+      "prompt": "Closeup photo of an old fisherman mending a net on a wooden dock, overcast light, muted colors, calm mood"
+    },
+    {
+      "kind": "prompt",
+      "heading": "4. Settings go *at the end*",
+      "paras": [
+        "Parameters like --ar (shape) and --s (stylize) go after your text, with a space before the dashes and no punctuation.",
+        "--ar 16:9 makes a wide image."
+      ],
+      "prompt": "Watercolor painting of a lighthouse on a cliff at sunset --ar 16:9 --s 250"
+    },
+    {
+      "kind": "prompt",
+      "heading": "5. Exclude with *--no*",
+      "paras": [
+        "Writing \"no plants\" in your sentence can still bring plants in. The docs say describe what you want instead.",
+        "To remove something, use the --no parameter."
+      ],
+      "prompt": "Minimal living room with a gray sofa and tall windows --no plants"
+    },
+    {
+      "kind": "cta",
+      "hook": "Follow for more AI tools explained in plain words."
+    }
+  ],
+  "site_article": {
+    "kind": "guide",
+    "headline": "Midjourney prompts: how to write image prompts that work",
+    "dek": "Midjourney rewards short, precise prompts and a few settings placed at the end. Here is what its own documentation recommends, with prompts to copy.",
+    "summary": "Midjourney's documentation says short, simple prompts usually produce the best images, with exact numbers, precise words and only the details you care about. Settings such as aspect ratio go at the end of the prompt, and the --no parameter removes things you do not want.",
+    "seo_title": "Midjourney prompts: how to write image prompts that work",
+    "seo_description": "Write better Midjourney prompts: keep them short, use exact numbers, pick the details that matter, put parameters at the end and remove things with --no.",
+    "answer_summary": "Write a short description of the image you want with precise words and exact numbers, add only the details that matter (subject, medium, setting, lighting, color, mood, composition), then put parameters like --ar 16:9 at the end.",
+    "tags": [
+      "Midjourney",
+      "AI images",
+      "Prompts",
+      "Image generation",
+      "AI guides"
+    ],
+    "hero_alt": "A lone figure stands before a large glacier over dark water under a stormy sky.",
+    "paragraphs": [
+      {
+        "kind": "fact",
+        "text": "Midjourney turns a written description into images. You type a prompt into the Imagine bar on the Create page at midjourney.com, press Enter, and it makes a set of four images. You need a paid plan before you can make your first image, according to Midjourney's Getting Started Guide.",
+        "sources": [
+          3
+        ]
+      },
+      {
+        "kind": "fact",
+        "text": "The short version of this guide: write less than you think, choose exact words, say how many of something you want, describe what should be in the picture rather than what should not, and put settings at the very end. Everything below comes from Midjourney's own documentation, plus notes from people who test new versions.",
+        "sources": [
+          0,
+          1
+        ]
+      },
+      {
+        "kind": "heading",
+        "text": "Start with a short prompt"
+      },
+      {
+        "kind": "fact",
+        "text": "Midjourney's Prompt Basics page is blunt about length. Short, simple prompts usually produce the best images. It suggests thinking of a prompt as a quick snapshot of the idea, and it warns that long lists and detailed instructions can confuse the process. A prompt can be as small as one word. With fewer details you get more variety; with more details you get more control.",
+        "sources": [
+          0
+        ]
+      },
+      {
+        "kind": "fact",
+        "text": "The docs give an example. A long, chatty request for blooming California poppies in bright orange, drawn with colored pencils, becomes one plain line.",
+        "sources": [
+          0
+        ]
+      },
+      {
+        "kind": "prompt",
+        "title": "Prompt 1: The short version",
+        "text": "Colored pencil illustration of bright orange California poppies"
+      },
+      {
+        "kind": "heading",
+        "text": "Choose exact words and numbers"
+      },
+      {
+        "kind": "fact",
+        "text": "Word choice matters. The docs recommend specific synonyms over generic ones, such as huge or enormous instead of big. Numbers matter even more. A plural like cats leaves the count up to Midjourney. Three cats, or a collective noun like a flock of birds, makes the result predictable.",
+        "sources": [
+          0
+        ]
+      },
+      {
+        "kind": "prompt",
+        "title": "Prompt 2: Say how many",
+        "text": "Three cats asleep on a sunny windowsill, soft morning light"
+      },
+      {
+        "kind": "heading",
+        "text": "Add only the details you care about"
+      },
+      {
+        "kind": "fact",
+        "text": "When certain parts of the image matter to you, name them. Midjourney's docs list seven areas to think about: subject (a person, animal, object or place), medium (photo, painting, illustration, sculpture, doodle), environment (indoors, underwater, in the city), lighting (soft, overcast, studio, neon), color (vibrant, muted, pastel, black and white), mood (calm, playful, gloomy, energetic) and composition (portrait, headshot, closeup, bird's-eye view).",
+        "sources": [
+          0
+        ]
+      },
+      {
+        "kind": "tip",
+        "text": "You do not need all seven. Pick the two or three that decide whether the image works for you, and let Midjourney's default style handle the rest."
+      },
+      {
+        "kind": "prompt",
+        "title": "Prompt 3: A detailed photo",
+        "text": "Closeup photo of [subject] [doing something] in [place], [lighting] light, [color] colors, [mood] mood"
+      },
+      {
+        "kind": "heading",
+        "text": "Put parameters at the end"
+      },
+      {
+        "kind": "fact",
+        "text": "Parameters are settings you type after the description. Midjourney's parameter list says they go at the end of the prompt, with a space before the two dashes and no commas or periods inside them. The most useful ones for beginners are --ar to change the shape of the image, --s (stylize) to control how much of Midjourney's own artistic style is applied, --chaos to get more varied results, and --raw for more control over the output.",
+        "sources": [
+          1
+        ]
+      },
+      {
+        "kind": "fact",
+        "text": "For the current V8.1 model, a third-party prompt guide from Evolink lists the defaults: square 1:1 images, stylize at 100 on a scale of 0 to 1000, and chaos at 0 on a scale of 0 to 100. Stylize sets how strongly Midjourney's default look is applied, so lower values give a plainer result.",
+        "sources": [
+          5,
+          1
+        ]
+      },
+      {
+        "kind": "prompt",
+        "title": "Prompt 4: A wide image with a bit more style",
+        "text": "Watercolor painting of a lighthouse on a cliff at sunset --ar 16:9 --s 250"
+      },
+      {
+        "kind": "tip",
+        "text": "Use --ar 4:5 or --ar 9:16 for images meant for a phone screen, and --ar 16:9 for slides and desktop wallpapers."
+      },
+      {
+        "kind": "heading",
+        "text": "Say what you want, not what you do not want"
+      },
+      {
+        "kind": "fact",
+        "text": "This is the mistake most people make. If you write a party with no cake, the docs warn, you may still get a cake, because mentioning a thing can pull it into the image. Describe the scene you want instead. When you really need to remove something, use the --no parameter, which Midjourney's parameter list describes as the way to exclude elements from an image.",
+        "sources": [
+          0,
+          1
+        ]
+      },
+      {
+        "kind": "prompt",
+        "title": "Prompt 5: Remove an object",
+        "text": "Minimal living room with a gray sofa and tall windows --no plants"
+      },
+      {
+        "kind": "heading",
+        "text": "Pick the right model"
+      },
+      {
+        "kind": "fact",
+        "text": "Midjourney's Models page lists V6, V6.1, V7 and V8.1, plus Niji 7 for anime and illustration. You can choose one for a single image by adding --v and the number at the end, for example --v 8.1, or set a default in the settings panel. V8.1 renders standard jobs several times faster than earlier versions, holds on to small details and can make 2K images with --hd. It does not support some older features, including Character Reference and Omni Reference.",
+        "sources": [
+          2,
+          1
+        ]
+      },
+      {
+        "kind": "fact",
+        "text": "Testers report that newer models want clearer direction. Heather Cooper, who writes the Visually AI newsletter, found that V8 rewards more detail than V7 did, and she recommends switching to --raw for controlled or photorealistic results. Midjourney's docs say the same about Raw: it removes default styling for stronger prompt adherence.",
+        "sources": [
+          4,
+          2
+        ]
+      },
+      {
+        "kind": "step",
+        "title": "1. Write the core line",
+        "text": "Describe the subject and the medium in one short sentence, such as a photo of a red bicycle against a white wall."
+      },
+      {
+        "kind": "step",
+        "title": "2. Add two or three details",
+        "text": "Choose the lighting, mood or composition that matters most to you. Stop there."
+      },
+      {
+        "kind": "step",
+        "title": "3. Add parameters",
+        "text": "Set the shape with --ar, and add --raw if the result looks too stylized."
+      },
+      {
+        "kind": "step",
+        "title": "4. Change one thing at a time",
+        "text": "If the image is not right, change a single word or setting and run it again, so you know what made the difference."
+      },
+      {
+        "kind": "prompt",
+        "title": "Prompt 6: Text inside the image",
+        "text": "Vintage travel poster for a mountain town with the words \"Visit Alpine Falls\" --v 8.1"
+      },
+      {
+        "kind": "tip",
+        "text": "For words inside an image, put the exact text in quotation marks. Cooper reports that V8 renders quoted text with higher accuracy."
+      },
+      {
+        "kind": "analysis",
+        "text": "Midjourney is good at mood, lighting and style, and a short prompt often gives a more striking result than a long one. It is weaker when you need exact control over many objects at once, and results still vary from run to run. Treat the first set of four images as a draft, keep the version you like, and refine from there."
+      }
+    ]
+  }
+}
