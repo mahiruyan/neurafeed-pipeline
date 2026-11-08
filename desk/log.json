@@ -1,63 +1,5 @@
 [
   {
-    "run_at": "2026-11-01T14:55:20.530Z",
-    "summary": "Sunday morning run (09:55 New York, Nov 1): no open links or requests; no new priority 1 story since the last run, and Nov 1 already has 5 news jobs plus the Reel with the utility post (after 11:00) and the weekly roundup (after 17:00) still to come, so nothing was queued.",
-    "considered": [
-      {
-        "story": "SemiAnalysis InferenceX: AMD MI355X serves Kimi K3 tokens up to 2.3x cheaper than Nvidia B200",
-        "source": "https://fourweekmba.com/ai-nvidia-b200-costs-up-to-2-3x-amd-mi355x-per-kimi-k3-token/",
-        "decision": "skipped",
-        "reason": "A single-benchmark chip cost comparison with modeled prices and mixed figures (2.3x vs B200, up to 46% vs GB200), too technical for the US audience and the remaining slot is held for the utility post and roundup."
-      },
-      {
-        "story": "Accenture caps staff Claude spending at $29 a month",
-        "source": "https://thenextweb.com/news/accenture-claude-29-a-month-cap",
-        "decision": "covered",
-        "reason": "Already covered as 2026-10-16-accenture-claude-29-dollar-cap; the newsletters resurfacing it are two weeks late."
-      },
-      {
-        "story": "Radical Numerics says a patient received a phage designed by its Omnii-1 model",
-        "decision": "skipped",
-        "reason": "Health story with unpublished findings and a confidential outcome, found only in a newsletter summary."
-      },
-      {
-        "story": "Google DeepMind and WRI release the ForTy global forest map",
-        "decision": "skipped",
-        "reason": "Niche research release with no date stated and little US consumer interest."
-      },
-      {
-        "story": "Shared ChatGPT link flaw could hijack accounts (The Hacker News, parameter.ai)",
-        "source": "https://thehackernews.com/2026/10/a-shared-chatgpt-link-could-run.html",
-        "decision": "skipped",
-        "reason": "Patched on October 26 and already passed on in earlier runs as week-old news."
-      },
-      {
-        "story": "Anthropic flags a PhD student for training a competitor (X post)",
-        "source": "https://twitter.com/jiahaoshao1/status/2116475922190922088",
-        "decision": "skipped",
-        "reason": "Still a single X post with no news coverage."
-      },
-      {
-        "story": "GPT-5.6 Sol beats Factorio on peaceful mode (personal blog)",
-        "source": "https://ryanmadden.net/gpt-56-beats-factorio/",
-        "decision": "skipped",
-        "reason": "Still only a personal blog post."
-      },
-      {
-        "story": "Judge lets NAACP sue xAI over Memphis gas turbines (TechCrunch)",
-        "source": "https://techcrunch.com/2026/10/31/judge-allows-naacp-lawsuit-over-xai-data-center-pollution-to-move-forward/",
-        "decision": "skipped",
-        "reason": "Procedural ruling, skipped in earlier runs for the same reason."
-      },
-      {
-        "story": "Apple CEO says Apple won't ship AI for AI's sake (TechCrunch)",
-        "decision": "covered",
-        "reason": "Already posted as 2026-11-01-ternus-apple-no-ai-for-ais-sake."
-      }
-    ],
-    "requests": []
-  },
-  {
     "run_at": "2026-11-01T17:06:55.466Z",
     "summary": "Sunday midday run (11:53 New York, Nov 1): no open links or requests; queued the daily utility post and website guide (Perplexity research with sources). Nov 1 now has 7 jobs, the last slot is held for the weekly roundup after 17:00, so no news was added.",
     "considered": [
@@ -5001,5 +4943,67 @@
       }
     ],
     "requests": []
+  },
+  {
+    "run_at": "2026-11-08T15:00:15.243Z",
+    "summary": "Sunday morning run (about 10:00 New York): handled Mahir's request to re-queue the expired Altman carousel (cannot: the story is older than the 72 hour limit, so any copy would expire at once); no new priority 1 story on a quiet Sunday, so nothing new queued, leaving room for the weekly roundup at 17:00.",
+    "considered": [
+      {
+        "story": "Sam Altman explains why OpenAI leaders left (re-queue request)",
+        "source": "https://singjupost.com/fo583-raj-shamani-w-sam-altman-ai-revolution-superintelligence-future-of-humanity-transcript/",
+        "decision": "skipped",
+        "reason": "The interview is from November 3, past the 72 hour evergreen limit, and a search found no newer coverage, so a -v2 copy would expire immediately; changing story_time would be a false date."
+      },
+      {
+        "story": "AI proves an 18-year-old quantum conjecture (RIO Rundown, Reddit)",
+        "decision": "covered",
+        "reason": "Already posted as 2026-11-07-anthropic-ai-proves-quantum-conjecture."
+      },
+      {
+        "story": "NVIDIA FOX blueprint sends AI agents from defect alerts to root-cause reports (MarketScale)",
+        "decision": "skipped",
+        "reason": "Industrial enterprise tooling with little appeal for a general US audience."
+      },
+      {
+        "story": "AI answers rely on journalism, who gets paid (DW, Global Media Forum)",
+        "decision": "skipped",
+        "reason": "Panel discussion with no new fact or number to build a post on."
+      },
+      {
+        "story": "AMD debuts 6th Gen EPYC at China's import expo (China Daily)",
+        "decision": "skipped",
+        "reason": "Chip product news for insiders, already skipped in an earlier run."
+      },
+      {
+        "story": "AWS wants developers to stop babysitting AI agents (The New Stack)",
+        "decision": "skipped",
+        "reason": "Developer tooling story already skipped earlier today."
+      },
+      {
+        "story": "ChatGPT, Claude, Grok and Gemini overlapping outages (eWeek)",
+        "source": "https://www.eweek.com/news/chatgpt-claude-grok-gemini-outages/",
+        "decision": "skipped",
+        "reason": "Published September 4, 2026, far too old."
+      },
+      {
+        "story": "ChatGPT loses 20 points of US prompt share to Gemini and Claude (PPC Land, Comscore)",
+        "source": "https://ppc.land/chatgpt-loses-20-points-of-us-ai-prompt-share-to-gemini-and-claude/",
+        "decision": "skipped",
+        "reason": "Report from September 2026, not current."
+      },
+      {
+        "story": "Chamath Palihapitiya warns a data center slowdown would hit Anthropic and OpenAI (Stocktwits)",
+        "decision": "skipped",
+        "reason": "Investor opinion, already skipped in earlier runs."
+      }
+    ],
+    "requests": [
+      {
+        "id": "req-2026-11-08-5adc5365",
+        "status": "cannot",
+        "job_id": "2026-11-08-altman-why-openai-leaders-left",
+        "result": "The Altman interview is from November 3, so the pipeline expires any copy right away (non-timely posts expire 72 hours after the story) and I cannot fake a newer date; if you send the podcast or transcript link to the bot as a link, it stays valid for 7 days and I will rebuild the post from it."
+      }
+    ]
   }
 ]
