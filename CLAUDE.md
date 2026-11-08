@@ -418,8 +418,9 @@ mascot, a product, where they sit), built with our own images (real photos or a 
 with refs) and our own headline. Never reuse their image, their text or their exact headline.
 
 Instagram, Threads and some sites cannot be opened from here. If you cannot read a link, use
-Mahir's note and a web search to find what the post is about and the original news source, and
-build the job from that. Never screenshot or copy another account's post or design: always make
+Mahir's note, the saved `preview` and a web search to find what the post is about and the original
+news source, and build the job from that. A video link that you cannot read is still queued as a
+Reel with `video.url` set to the link (the pipeline downloads it) and a hook from his note. Never screenshot or copy another account's post or design: always make
 our own NeuraFeed version from the original sources. If you still cannot tell what it is about,
 do not guess: append `{ "link_id": "...", "url": "...", "reason": "..." }` to
 `inbox/skipped.json` (create it as a JSON array if missing) and commit it with the jobs, so Mahir
@@ -462,9 +463,17 @@ sending a new request (it has `retry_of`). They are Mahir's own instructions, so
   ask to change, including `story_time`, `priority`, `review`, `link_id` and `post_at`. The pipeline withdraws the old
   one (and every earlier version) before the fix is rendered, and an old version can never be approved or
 published again. If the old post is already `posted` (check state/jobs/), do not write a copy: answer `cannot`.
-- If a request is impossible or would break a rule (invent facts, copy another account, post
-  without sources), answer `cannot` and say why in one sentence. If it needs something you
-  cannot do in this run, answer `waiting` with the reason (it stays open for the next run).
+- Whatever Mahir sends (a link, a video, a picture, a request), the answer is to make it. His
+  items never expire for being old: a story from days ago is still made, with `"timely": false`
+  so the 12 hour limit does not apply, and framed as what happened (with the date) rather than
+  as breaking news. Not finding a fresh source, the clip belonging to another account, the cap
+  for the day or a story already covered are never reasons to refuse: make it and mention the
+  issue in the desk log and the result line.
+- The only reason to answer `cannot` is that doing it would mean inventing facts (no source at
+  all says it). Even then, first try his note, the link itself and a web search; if one real
+  source exists, make the post from it. When it is truly impossible, say in one sentence exactly
+  what is missing (for example "send me the podcast link") so he can fix it in one message.
+  If it needs something you cannot do in this run, answer `waiting` with the reason.
 
 Desk log: at the end of EVERY run, also when nothing was queued, add one entry with
 `node src/desklog.js <file.json>` (write the file outside the repo, for example in /tmp):
