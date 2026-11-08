@@ -1,69 +1,5 @@
 [
   {
-    "run_at": "2026-11-01T02:10:23.395Z",
-    "summary": "Late Saturday run (21:55 New York, 7 posts already out today): no open links or requests; queued 2 non-timely jobs for Sunday morning, the Apple CEO interview (p1) and the ChatGPT and Codex shared limit (p2).",
-    "considered": [
-      {
-        "story": "Apple CEO John Ternus tells WIRED Apple won't ship AI for AI's sake",
-        "source": "https://en.shiftdelete.net/john-ternus-interview/",
-        "decision": "queued",
-        "job_id": "2026-11-01-ternus-apple-no-ai-for-ais-sake",
-        "priority": 1
-      },
-      {
-        "story": "ChatGPT and Codex will share one usage allowance from December",
-        "source": "https://fourweekmba.com/ai-chatgpt-and-codex-will-share-one-usage-allowance-in-december/",
-        "decision": "queued",
-        "job_id": "2026-11-01-chatgpt-codex-one-shared-limit",
-        "priority": 2
-      },
-      {
-        "story": "Judge lets NAACP Clean Air Act lawsuit against xAI's Southaven turbines proceed",
-        "source": "https://runtimewire.com/article/judge-lets-naacp-lawsuit-xai-southaven-turbines-proceed",
-        "decision": "skipped",
-        "reason": "Procedural ruling from October 30 with few confirmed details in the sources I could read; it would also expire before Sunday's first window."
-      },
-      {
-        "story": "Anthropic warns investors of blowback from runaway AI in IPO filing",
-        "source": "https://www.1news.co.nz/2026/11/01/anthropic-warns-investors-of-blowback-risks-from-runaway-ai/",
-        "decision": "covered",
-        "reason": "AP story from October 27 on the S-1 risk factors, already covered by the Anthropic IPO jobs of October 26 and 27."
-      },
-      {
-        "story": "Anthropic blocks users for anything touching training larger models (HN, X post)",
-        "source": "https://twitter.com/jiahaoshao1/status/2116475922190922088",
-        "decision": "skipped",
-        "reason": "Single user's X post with no news coverage; Anthropic's distillation defenses post is from October 12."
-      },
-      {
-        "story": "OpenAI shutting down Atlas browser",
-        "decision": "skipped",
-        "reason": "Old news from July 2026 resurfacing in feeds."
-      },
-      {
-        "story": "OpenAI fired three safety researchers over Signal chats",
-        "decision": "covered",
-        "reason": "Already posted as 2026-10-24-openai-fired-researchers-signal-chats."
-      },
-      {
-        "story": "OpenAI cuts funding target to $20 billion",
-        "decision": "covered",
-        "reason": "Already queued as 2026-10-31-openai-cuts-funding-target-10-billion."
-      },
-      {
-        "story": "Anthropic tells Claude Code to stop recreating existing games",
-        "decision": "covered",
-        "reason": "Already posted as 2026-10-31-claude-code-stops-remaking-video-games."
-      },
-      {
-        "story": "Nvidia responds to report its CEO was targeted in a Chinese spy plot",
-        "decision": "covered",
-        "reason": "Already covered by the October 29 NYT Jensen Huang jobs."
-      }
-    ],
-    "requests": []
-  },
-  {
     "run_at": "2026-11-01T04:12:37.610Z",
     "summary": "Midnight run (00:30 New York, Nov 1): no open links or requests (the four old links are already in inbox/skipped.json); queued the Claude Sonnet 5 mouse gene therapy story (p2), now confirmed by The Decoder, TokenPost and Startup Fortune, so Nov 1 has 3 jobs.",
     "considered": [
@@ -5005,6 +4941,64 @@
         "story": "Beijing blocks SoftBank's $5.4 billion ABB Robotics deal (TradingView)",
         "decision": "skipped",
         "reason": "Deal and regulation story with little US reader appeal, and the day is full."
+      }
+    ],
+    "requests": []
+  },
+  {
+    "run_at": "2026-11-08T02:53:29.269Z",
+    "summary": "Late Saturday run: today (New York) already has 8 jobs, the daily cap, and no open links or requests, so nothing was queued.",
+    "considered": [
+      {
+        "story": "After the midterms, things look rocky for Elon Musk and data centers (TechCrunch)",
+        "source": "https://techcrunch.com/2026/11/07/after-the-midterms-things-are-looking-rocky-for-elon-musk-and-data-centers/",
+        "decision": "skipped",
+        "reason": "Today is at the 8 job cap; a politics plus money candidate for the next run if a second source confirms it."
+      },
+      {
+        "story": "Claude deleted a law professor's notes and Dropbox had copies (FourWeekMBA)",
+        "decision": "skipped",
+        "reason": "Today is at the cap and only one secondary outlet so far; worth checking for the original source tomorrow."
+      },
+      {
+        "story": "ChatGPT tops 18.76 million monthly users in South Korea while Claude surges 15 fold (Chosunbiz, BigGo Finance)",
+        "decision": "skipped",
+        "reason": "Today is at the cap, and a Korea usage stat has limited US appeal."
+      },
+      {
+        "story": "Americans are anxious about the AI boom going bust (Washington Post)",
+        "decision": "skipped",
+        "reason": "Today is at the cap; the selloff angle was already covered this week."
+      },
+      {
+        "story": "Michigan music publishers sue an AI platform for reproducing copyrighted works (CBS News)",
+        "decision": "skipped",
+        "reason": "Sensitive lawsuit that would exceed today's cap; a candidate for tomorrow."
+      },
+      {
+        "story": "Nova Scotia protests against a planned $10 billion AI data center (CityNews Halifax, Yahoo News Canada)",
+        "decision": "skipped",
+        "reason": "Canadian local story with limited US appeal, and the day is full."
+      },
+      {
+        "story": "Google Messages home page redesign puts Gemini in the corner (9to5Google)",
+        "decision": "skipped",
+        "reason": "Minor beta UI change, and the day is full."
+      },
+      {
+        "story": "Man sues OpenAI, says ChatGPT helped his wife plot his murder (The Independent)",
+        "decision": "covered",
+        "reason": "Already considered in earlier runs today; skipped for the cap."
+      },
+      {
+        "story": "Google sued over a teen's Gemini chats (Medtruth)",
+        "decision": "covered",
+        "reason": "Already considered in an earlier run; no new development."
+      },
+      {
+        "story": "Claude Code Don't Ask Again exposes passwords in public GitHub files (Hacker News)",
+        "decision": "covered",
+        "reason": "Already posted as 2026-11-07-claude-code-dont-ask-again-leaks-passwords."
       }
     ],
     "requests": []
