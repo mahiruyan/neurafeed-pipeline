@@ -152,18 +152,23 @@
     "updated_at": "2026-11-08T15:01:42.717Z"
   },
   "req-2026-11-08-2c8164ac": {
-    "status": "failed",
+    "status": "completed",
     "history": [
       {
         "status": "failed",
         "at": "2026-11-08T19:04:52.612Z"
+      },
+      {
+        "status": "completed",
+        "at": "2026-11-08T20:36:45.806Z"
       }
     ],
     "notified": [
-      "failed:2026-11-08-altman-why-openai-leaders-left"
+      "failed:2026-11-08-altman-why-openai-leaders-left",
+      "completed:2026-11-08-altman-why-openai-leaders-left-v2"
     ],
-    "job_id": "2026-11-08-altman-why-openai-leaders-left",
-    "result": "2026-11-08-altman-why-openai-leaders-left: expired (from your link, waiting for Mahir)",
-    "updated_at": "2026-11-08T19:04:52.612Z"
+    "job_id": "2026-11-08-altman-why-openai-leaders-left-v2",
+    "result": "I searched again and all coverage of the Altman interview is from November 3 and 4, so there is no fresh angle and any copy would expire at once; I will not fake a newer date. Send the podcast or transcript link to the bot as a link (links stay valid 7 days) and I will rebuild it.",
+    "updated_at": "2026-11-08T20:36:45.806Z"
   }
 }
