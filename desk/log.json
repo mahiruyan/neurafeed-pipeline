@@ -1,62 +1,5 @@
 [
   {
-    "run_at": "2026-11-01T12:55:19.751Z",
-    "summary": "Sunday morning run (07:55 New York, Nov 1): no open links or requests (the four old links are already in inbox/skipped.json); no new priority 1 story since the last run, and Nov 1 already has 6 jobs with the utility post (after 11:00) and the weekly roundup (after 17:00) still to come, so nothing was queued.",
-    "considered": [
-      {
-        "story": "Shared ChatGPT link flaw could hijack accounts (The Hacker News, parameter.ai)",
-        "source": "https://thehackernews.com/2026/10/a-shared-chatgpt-link-could-run.html",
-        "decision": "skipped",
-        "reason": "Now has a second source, but OpenAI patched it on October 26, so the news is almost a week old and the remaining slots are held for the utility post and the roundup."
-      },
-      {
-        "story": "Anthropic alignment research: Claude made fine-tuning data that slipped past its monitor",
-        "source": "https://alignment.anthropic.com/2026/automated-em-search/",
-        "decision": "skipped",
-        "reason": "Same research update passed on in earlier runs as narrow, and today's slots are reserved."
-      },
-      {
-        "story": "Google shuts down Jules and folds it into Antigravity",
-        "source": "https://dev.to/hiroki-ii-ai/ai-daily-digest-november-1-2026-google-folds-jules-into-antigravity-claude-ultra-drops-the-3e5e",
-        "decision": "skipped",
-        "reason": "October 29 shutdown of a niche developer tool, already skipped in an earlier run."
-      },
-      {
-        "story": "Grok watermark arrives on xAI API text on November 7 (pasqualepillitteri.it)",
-        "source": "https://pasqualepillitteri.it/en/news/29128/grok-watermark-xai-api-text-november-7",
-        "decision": "skipped",
-        "reason": "Single small blog source and a developer API detail with little consumer interest."
-      },
-      {
-        "story": "Anthropic's path to the Nasdaq just got bumpier (CNBC)",
-        "source": "https://cnbc.com/2026/10/31/anthropic-ipo-ai-spending.html",
-        "decision": "skipped",
-        "reason": "The page could not be opened from here, and the IPO was covered on October 26 and 27."
-      },
-      {
-        "story": "Grok 4.20 stuck 700 turns in Red's house in Pokemon Red (r/LocalLLaMA)",
-        "decision": "skipped",
-        "reason": "Single Reddit benchmark post, already skipped."
-      },
-      {
-        "story": "OpenAI releases GPT-Rosalind-6 for approved labs",
-        "decision": "covered",
-        "reason": "Already posted as 2026-11-01-openai-gpt-rosalind-6-approved-labs-only."
-      },
-      {
-        "story": "Chainalysis breached with offensive agentic techniques",
-        "decision": "covered",
-        "reason": "Already queued as 2026-11-01-chainalysis-hacked-ai-agents."
-      },
-      {
-        "story": "Apple adds Alibaba's Qwen to Apple Intelligence in China (CGTN)",
-        "decision": "covered",
-        "reason": "Already covered as 2026-10-15-apple-intelligence-china-december."
-      }
-    ],
-    "requests": []
-  },
-  {
     "run_at": "2026-11-01T14:55:20.530Z",
     "summary": "Sunday morning run (09:55 New York, Nov 1): no open links or requests; no new priority 1 story since the last run, and Nov 1 already has 5 news jobs plus the Reel with the utility post (after 11:00) and the weekly roundup (after 17:00) still to come, so nothing was queued.",
     "considered": [
@@ -4995,6 +4938,66 @@
         "story": "Chamath Palihapitiya warns a data center slowdown would hit Anthropic and OpenAI (Stocktwits)",
         "decision": "skipped",
         "reason": "Investor commentary with no new event, as decided in an earlier run."
+      }
+    ],
+    "requests": []
+  },
+  {
+    "run_at": "2026-11-08T13:08:05.000Z",
+    "summary": "Sunday morning run (about 08:00 New York): no open links or requests, no new priority 1 story on a quiet Sunday; queued 1 carousel (Sam Altman on why OpenAI leaders left), bringing Sunday to 7 jobs with room left for the weekly roundup.",
+    "considered": [
+      {
+        "story": "Sam Altman explains why OpenAI leaders left to build rival AI, on Raj Shamani's Figuring Out podcast",
+        "source": "https://singjupost.com/fo583-raj-shamani-w-sam-altman-ai-revolution-superintelligence-future-of-humanity-transcript/",
+        "decision": "queued",
+        "job_id": "2026-11-08-altman-why-openai-leaders-left",
+        "priority": 2
+      },
+      {
+        "story": "Anthropic engineer Addy Osmani warns of 'cognitive surrender' to AI agents (Business Insider)",
+        "source": "https://www.aol.com/articles/anthropic-engineer-warns-cognitive-surrender-100003000.html",
+        "decision": "skipped",
+        "reason": "The essay largely repeats his May 2026 blog post, outlets give conflicting study figures, and there was no usable photo of him."
+      },
+      {
+        "story": "Chamath Palihapitiya warns a data center slowdown would hit Anthropic and OpenAI (Stocktwits)",
+        "decision": "skipped",
+        "reason": "Investor commentary with no new event, as decided in earlier runs."
+      },
+      {
+        "story": "Anthropic valuation halved amid bubble fears (Chosun Ilbo)",
+        "decision": "skipped",
+        "reason": "Still no second source for a new valuation event."
+      },
+      {
+        "story": "AMD shows 6th Gen EPYC chips at China's import expo (China Daily)",
+        "decision": "skipped",
+        "reason": "Chip trade show news with little appeal for a general US audience."
+      },
+      {
+        "story": "AWS Kiro persistent agents (The New Stack)",
+        "decision": "skipped",
+        "reason": "Developer tooling feature with narrow appeal."
+      },
+      {
+        "story": "Pinterest users who abuse AI tools can lose accounts from November 12 (PPC Land)",
+        "decision": "skipped",
+        "reason": "Still could not confirm the policy with a second independent source."
+      },
+      {
+        "story": "Google sued by parents who say Gemini helped plan a suicide (San Jose Inside)",
+        "decision": "covered",
+        "reason": "Already considered in earlier runs; no new development."
+      },
+      {
+        "story": "AI-cloned CEOs stole $129 million (Martin Cid Magazine)",
+        "decision": "covered",
+        "reason": "Already queued as 2026-11-08-ai-cloned-ceos-stole-129-million."
+      },
+      {
+        "story": "OpenAI CFO says data centers will not raise power bills (Brave New Coin)",
+        "decision": "covered",
+        "reason": "Same story as 2026-11-06-openai-data-centers-pay-own-power."
       }
     ],
     "requests": []
