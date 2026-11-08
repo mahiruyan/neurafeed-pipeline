@@ -1,71 +1,5 @@
 [
   {
-    "run_at": "2026-11-01T04:12:37.610Z",
-    "summary": "Midnight run (00:30 New York, Nov 1): no open links or requests (the four old links are already in inbox/skipped.json); queued the Claude Sonnet 5 mouse gene therapy story (p2), now confirmed by The Decoder, TokenPost and Startup Fortune, so Nov 1 has 3 jobs.",
-    "considered": [
-      {
-        "story": "Exin Therapeutics says Claude Sonnet 5 chose a gene therapy and ran a mouse brain injection",
-        "source": "https://the-decoder.com/a-claude-model-autonomously-chose-a-gene-therapy-and-operated-on-a-mouse-brain-with-no-human-decision-making/",
-        "decision": "queued",
-        "job_id": "2026-11-01-claude-sonnet-mouse-brain-gene-therapy",
-        "priority": 2
-      },
-      {
-        "story": "WIRED: An AI agent injected drugs into a live mouse's brain",
-        "source": "https://www.wired.com/story/an-ai-agent-did-brain-surgery-on-live-mouse/",
-        "decision": "covered",
-        "reason": "Same Exin story, queued from The Decoder, TokenPost and Startup Fortune because the WIRED page could not be opened from here."
-      },
-      {
-        "story": "Anthropic bans sustained abuse of Claude from November 12 (BigGo, Apiyi)",
-        "source": "https://help.apiyi.com/en/anthropic-bans-abusive-behavior-toward-claude-explained-en.html",
-        "decision": "covered",
-        "reason": "Already covered as 2026-10-14-rude-prompts-chatgpt-claude-rule."
-      },
-      {
-        "story": "OpenAI raises less than half of its $30B target (WSJ)",
-        "source": "https://www.wsj.com/tech/ai/openai-raises-less-than-half-of-30-billion-target-in-latest-round-91aecdc5",
-        "decision": "covered",
-        "reason": "Already queued as 2026-10-31-openai-cuts-funding-target-10-billion."
-      },
-      {
-        "story": "Apple CEO says the company does not want to ship AI for AI's sake (TechCrunch)",
-        "decision": "covered",
-        "reason": "Already queued as 2026-11-01-ternus-apple-no-ai-for-ais-sake."
-      },
-      {
-        "story": "Judge lets NAACP lawsuit over xAI data center pollution move forward (TechCrunch)",
-        "source": "https://techcrunch.com/2026/10/31/judge-allows-naacp-lawsuit-over-xai-data-center-pollution-to-move-forward/",
-        "decision": "skipped",
-        "reason": "Procedural ruling that would need review, and earlier runs found few confirmed details; still a candidate if more outlets add detail."
-      },
-      {
-        "story": "GPT-5.6 Sol can beat Factorio on peaceful mode (Hacker News)",
-        "source": "https://ryanmadden.net/gpt-56-beats-factorio/",
-        "decision": "skipped",
-        "reason": "Still only a personal blog post on Hacker News with no news coverage found."
-      },
-      {
-        "story": "Researchers say they took over ChatGPT accounts (parameter.ai)",
-        "source": "https://www.parameter.ai/labs/we-found-a-gap-at-openai",
-        "decision": "skipped",
-        "reason": "Single security blog post with no OpenAI response or news coverage found."
-      },
-      {
-        "story": "AI infostealer malware that autodoxes victims (WIRED)",
-        "source": "https://www.wired.com/story/kernel-panic-volta-autodoxer-ai-infostealer-malware/",
-        "decision": "skipped",
-        "reason": "Only one source available and the page could not be opened from here."
-      },
-      {
-        "story": "UBS deploys 12,700 employee AI agents (emergent.sh)",
-        "decision": "skipped",
-        "reason": "Small enterprise story from one secondary outlet with little US consumer interest."
-      }
-    ],
-    "requests": []
-  },
-  {
     "run_at": "2026-11-01T06:07:02.437Z",
     "summary": "Overnight run (01:55 New York, Nov 1): no open links or requests (the four old links are already in inbox/skipped.json); queued the Chainalysis AI agent breach (p2), so Nov 1 has 4 jobs.",
     "considered": [
@@ -4999,6 +4933,48 @@
         "story": "Claude Code Don't Ask Again exposes passwords in public GitHub files (Hacker News)",
         "decision": "covered",
         "reason": "Already posted as 2026-11-07-claude-code-dont-ask-again-leaks-passwords."
+      }
+    ],
+    "requests": []
+  },
+  {
+    "run_at": "2026-11-08T04:53:04.394Z",
+    "summary": "Late Saturday run (about 23:55 New York): no open links or requests, no new priority 1 story, and Saturday already has 8 jobs (the daily cap), so nothing was queued.",
+    "considered": [
+      {
+        "story": "Anthropic's ambition to cure diseases (WSJ)",
+        "decision": "skipped",
+        "reason": "Feature piece without a new event, and the day is at the 8 job cap; possible Sunday candidate if there is fresh news in it."
+      },
+      {
+        "story": "ChatGPT tops 18.76 million monthly users in South Korea while Claude surges (Chosunbiz)",
+        "decision": "skipped",
+        "reason": "Korea usage stat with limited US appeal, already skipped in an earlier run."
+      },
+      {
+        "story": "Americans are anxious about the AI boom going bust (Washington Post)",
+        "decision": "skipped",
+        "reason": "Selloff angle already covered this week, and the day is full."
+      },
+      {
+        "story": "Stanford study: exact values cut AI models' auction gains (FourWeekMBA)",
+        "decision": "skipped",
+        "reason": "Single secondary outlet and the day is full; worth checking for the original study tomorrow."
+      },
+      {
+        "story": "Google sued after Gemini chatbot allegedly helped teen (Medtruth)",
+        "decision": "covered",
+        "reason": "Already considered in earlier runs; no new development."
+      },
+      {
+        "story": "OpenAI GPT-6 Cyber finds 81 Firefox flaws (Startup Fortune)",
+        "decision": "covered",
+        "reason": "Already queued as 2026-11-05-openai-gpt-6-cyber-81-firefox-flaws."
+      },
+      {
+        "story": "Claude Personal Finance vs ChatGPT finances (Engadget)",
+        "decision": "covered",
+        "reason": "Comparison follow-up to 2026-11-06-claude-personal-finance-bank-accounts."
       }
     ],
     "requests": []
