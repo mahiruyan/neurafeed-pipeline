@@ -152,11 +152,18 @@
     "updated_at": "2026-11-08T15:01:42.717Z"
   },
   "req-2026-11-08-2c8164ac": {
-    "status": "pending",
-    "history": [],
-    "notified": [],
-    "job_id": null,
-    "result": null,
-    "updated_at": "2026-11-08T17:30:33.835Z"
+    "status": "failed",
+    "history": [
+      {
+        "status": "failed",
+        "at": "2026-11-08T19:04:52.612Z"
+      }
+    ],
+    "notified": [
+      "failed:2026-11-08-altman-why-openai-leaders-left"
+    ],
+    "job_id": "2026-11-08-altman-why-openai-leaders-left",
+    "result": "2026-11-08-altman-why-openai-leaders-left: expired (from your link, waiting for Mahir)",
+    "updated_at": "2026-11-08T19:04:52.612Z"
   }
 }
