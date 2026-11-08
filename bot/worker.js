@@ -13,7 +13,12 @@ const FORMATS = [
   ['prompt', word('prompt\\p{L}*|promt\\p{L}*')],
   ['carousel', word('carousel\\p{L}*|karusel\\p{L}*|karosel\\p{L}*')],
 ];
-const formatOf = (t) => (FORMATS.find(([, re]) => re.test(String(t || '').toLocaleLowerCase('tr'))) || ['auto'])[0];
+// Only Mahir's instructions pick the format: quoted text and the words after "başlık:" / "title:" /
+// "caption:" are his post text ("a four-word prompt" in a title is not a prompt post).
+const instructionPart = (t) => String(t || '')
+  .replace(/(ba[sş]l[iı]k|title|hook|caption|a[cç][iı]klama)\s*:\s*(“[^”]*”|"[^"]*"|«[^»]*»|[\s\S]*?(?=(ba[sş]l[iı]k|title|hook|caption|a[cç][iı]klama)\s*:|\n\n|$))/giu, ' ')
+  .replace(/[“"«][^”"»]*[”"»]/g, ' ');
+const formatOf = (t) => (FORMATS.find(([, re]) => re.test(instructionPart(t).toLocaleLowerCase('tr'))) || ['auto'])[0];
 const FORMAT_TR = {
   reel: 'Reels', single: 'tekli post', prompt: 'prompt carousel', carousel: 'haber carousel',
   auto: 'video ise Reels, değilse haber carousel',
@@ -547,7 +552,10 @@ async function queueLink(env, item, files = {}) {
   let added = false;
   await commitFiles(env, ['inbox/links.json'], (cur) => {
     const list = parseList(cur['inbox/links.json']);
-    if (list.some((l) => l.id === item.id || (item.url && l.url === item.url))) return null;
+    // Same link again: only a double tap within 15 minutes is a duplicate. Sending it later
+    // (for example after it was skipped) always queues it again.
+    const t = Date.parse(item.received_at || '') || Date.now();
+    if (list.some((l) => l.id === item.id || (item.url && l.url === item.url && Math.abs(t - (Date.parse(l.received_at || '') || 0)) < 15 * 60 * 1000))) return null;
     list.push(item);
     added = true;
     return { 'inbox/links.json': JSON.stringify(list, null, 2) + '\n', ...files };
