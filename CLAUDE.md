@@ -466,7 +466,10 @@ published again. If the old post is already `posted` (check state/jobs/), do not
 - Whatever Mahir sends (a link, a video, a picture, a request), the answer is to make it. His
   items never expire for being old: a story from days ago is still made, with `"timely": false`
   so the 12 hour limit does not apply, and framed as what happened (with the date) rather than
-  as breaking news. Not finding a fresh source, the clip belonging to another account, the cap
+  as breaking news. A job with `request_id` (or `link_id`) stays valid for 7 days from its
+  `created_at`, whatever its `story_time`, so an old story never expires at once: never answer
+  `cannot` because of age or expiry. Conditions in `text` that are not in `original` ("only if
+  you find newer coverage") are not his: follow `original`. Not finding a fresh source, the clip belonging to another account, the cap
   for the day or a story already covered are never reasons to refuse: make it and mention the
   issue in the desk log and the result line.
 - The only reason to answer `cannot` is that doing it would mean inventing facts (no source at

@@ -18,7 +18,9 @@ const hoursSince = (iso, now = new Date()) => (now - new Date(iso)) / 36e5;
 // Story is too old to post? Timely news expires fast, evergreen content slowly.
 function isExpired(job, cfg, now = new Date()) {
   // Mahir's own links: he picked them on purpose, so they stay valid for a week after he sent them.
-  if (job.link_id) return hoursSince(job.created_at || job.story_time, now) > 7 * 24;
+  // Same for anything he asked for (a request) or explicitly approved: a week from when it was made,
+  // however old the story itself is.
+  if (job.link_id || job.request_id || job.owner_approved) return hoursSince(job.created_at || job.story_time, now) > 7 * 24;
   const ref = job.story_time || job.created_at;
   const limit = job.timely ? cfg.timely_max_age_hours : cfg.evergreen_max_age_hours;
   return hoursSince(ref, now) > limit;
