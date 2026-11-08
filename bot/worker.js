@@ -183,6 +183,12 @@ async function handle(u, env) {
   const wiz = await wizGet(env);
   if (/^\/?(post|yeni post|\/yeni)$/i.test(text.trim())) return wizardStart(env, m.message_id);
   if (wiz && !/^\/(start|help|durum|unut|hafiza|hafıza)$/.test(text.trim())) return wizardInput(env, wiz, m, text);
+  // A video without a link: start the wizard as a Reel made from that file.
+  if (videoOf(m) && !(text.match(URL_RE) || []).length) {
+    const v = videoOf(m);
+    if (v.size > VIDEO_MAX) return send(env, `⚠️ Video ${Math.round(v.size / 1048576)} MB. Telegram botlar 20 MB üstünü indiremiyor. Daha düşük kalitede kaydedip at ya da linkini gönder.`, m.message_id);
+    return wizardStart(env, m.message_id, { format: 'reel', video: v, step: 'title', extra: text.trim() });
+  }
   // A picture without a link: start the wizard as a single-image post.
   if (imageOf(m) && !(text.match(URL_RE) || []).length) return wizardStart(env, m.message_id, { format: 'single', image: imageOf(m), step: 'title' });
   const extra = [...(m.entities || []), ...(m.caption_entities || [])].filter((e) => e.type === 'text_link').map((e) => e.url);
@@ -1037,6 +1043,10 @@ const WZ_STEPS = ['format', 'link', 'title', 'caption', 'time', 'confirm'];
 const CANCEL_ROW = [{ text: '❌ İptal', callback_data: 'wz:x' }];
 const imageOf = (m) => (m.photo?.length ? { file_id: m.photo.at(-1).file_id, ext: 'jpg' }
   : m.document && /^image\//.test(m.document.mime_type || '') ? { file_id: m.document.file_id, ext: (m.document.mime_type.split('/')[1] || 'jpg').replace('jpeg', 'jpg') } : null);
+// A video Mahir sends (as a video or as a file). Telegram lets bots download files up to 20 MB.
+const videoOf = (m) => (m.video ? { file_id: m.video.file_id, ext: 'mp4', size: m.video.file_size || 0 }
+  : m.document && /^video\//.test(m.document.mime_type || '') ? { file_id: m.document.file_id, ext: (m.document.mime_type.split('/')[1] || 'mp4').replace('quicktime', 'mov'), size: m.document.file_size || 0 } : null);
+const VIDEO_MAX = 20 * 1024 * 1024;
 async function wizGet(env) { const r = await env.KV.get('wiz'); return r ? JSON.parse(r) : null; }
 const wizPut = (env, w) => env.KV.put('wiz', JSON.stringify(w), { expirationTtl: 3600 });
 const nextStep = (step) => WZ_STEPS[WZ_STEPS.indexOf(step) + 1];
@@ -1046,6 +1056,7 @@ async function wizardStart(env, replyTo, preset = {}) {
   const w = { step: 'format', started: new Date().toISOString(), key: crypto.randomUUID().slice(0, 8), ...preset };
   await wizPut(env, w);
   if (preset.image) await send(env, '🖼 Görseli aldım, tekli post olarak hazırlıyorum.', replyTo);
+  if (preset.video) await send(env, '🎬 Videoyu aldım, Reels olarak hazırlıyorum.', replyTo);
   return wizardAsk(env, w);
 }
 
@@ -1060,7 +1071,7 @@ async function wizardAsk(env, w) {
   if (w.step === 'link') {
     const ask = {
       carousel: 'Haberin linkini gönder.',
-      reel: 'Videonun linkini gönder (X, Instagram, TikTok, YouTube).\nYouTube ise istersen saati de yaz: 12:30-13:10',
+      reel: 'Videonun linkini gönder (X, Instagram, TikTok, YouTube) ya da videonun kendisini buraya at (en fazla 20 MB).\nYouTube ise istersen saati de yaz: 12:30-13:10',
       single: 'Linki gönder ya da görseli buraya at.\nEn iyi kalite için görseli "Dosya" olarak gönder.',
       prompt: 'Prompt, araç ya da paylaşımın linkini gönder.',
     }[w.format];
@@ -1079,7 +1090,7 @@ async function wizardAsk(env, w) {
   }
   const lines = [
     '📋 Özet', `Format: ${WZ_FORMATS[w.format]}`,
-    w.url ? `Link: ${w.url}` : w.image ? 'Görsel: gönderdiğin görsel' : '',
+    w.url ? `Link: ${w.url}` : w.image ? 'Görsel: gönderdiğin görsel' : w.video ? 'Video: gönderdiğin video' : '',
     w.extra ? `Not: ${w.extra}` : '',
     `Başlık: ${w.title || 'Claude yazacak'}`, `Açıklama: ${w.caption || 'Claude yazacak'}`, `Zaman: ${whenText(w)}`,
     '', 'Claude hazırlayınca önizlemesi buraya gelecek, sen onaylamadan paylaşılmaz.',
@@ -1095,7 +1106,11 @@ async function wizardInput(env, w, m, text) {
     const extra = [...(m.entities || []), ...(m.caption_entities || [])].filter((e) => e.type === 'text_link').map((e) => e.url);
     const url = [...(t.match(URL_RE) || []), ...extra][0];
     const img = imageOf(m);
-    if (url) { w.url = url.replace(/[).,]+$/, ''); w.extra = t.replace(URL_RE, '').trim(); delete w.image; }
+    const vid = videoOf(m);
+    if (vid && w.format === 'reel' && !url) {
+      if (vid.size > VIDEO_MAX) return send(env, `⚠️ Video ${Math.round(vid.size / 1048576)} MB. Telegram botlar 20 MB üstünü indiremiyor. Daha düşük kalitede kaydedip at ya da linkini gönder.`, m.message_id);
+      w.video = vid; w.extra = t; delete w.url;
+    } else if (url) { w.url = url.replace(/[).,]+$/, ''); w.extra = t.replace(URL_RE, '').trim(); delete w.image; delete w.video; }
     else if (img && ['single', 'carousel'].includes(w.format)) { w.image = img; w.extra = t; }
     else return send(env, w.format === 'single' ? 'Link ya da görsel bulamadım. Linki yapıştır ya da görseli gönder.' : 'Link bulamadım. Linki yapıştırıp gönder.', m.message_id);
   } else if (w.step === 'title') {
@@ -1145,19 +1160,27 @@ async function wizardSubmit(env, w) {
   const id = `link-${now.toISOString().slice(0, 10)}-w${w.key}`;
   const files = {};
   let imageFile = null;
-  if (w.image) {
-    const f = await tg(env, 'getFile', { file_id: w.image.file_id });
+  let videoFile = null;
+  const fetchFile = async (fileId, what) => {
+    const f = await tg(env, 'getFile', { file_id: fileId });
     const res = await fetch(`https://api.telegram.org/file/bot${env.TELEGRAM_BOT_TOKEN}/${f.file_path}`);
-    if (!res.ok) throw new Error(`görsel indirilemedi (${res.status})`);
+    if (!res.ok) throw new Error(`${what} indirilemedi (${res.status})`);
     const bytes = new Uint8Array(await res.arrayBuffer());
     let bin = '';
     for (let i = 0; i < bytes.length; i += 0x8000) bin += String.fromCharCode(...bytes.subarray(i, i + 0x8000));
+    return btoa(bin);
+  };
+  if (w.image) {
     imageFile = `inbox/uploads/${id}.${w.image.ext || 'jpg'}`;
-    files[imageFile] = { base64: btoa(bin) };
+    files[imageFile] = { base64: await fetchFile(w.image.file_id, 'görsel') };
+  }
+  if (w.video) {
+    videoFile = `inbox/uploads/${id}.${w.video.ext || 'mp4'}`;
+    files[videoFile] = { base64: await fetchFile(w.video.file_id, 'video') };
   }
   const note = [WZ_WORD[w.format], w.extra || '', w.title ? `başlık: ${w.title}` : '', w.caption ? `caption: ${w.caption}` : ''].filter(Boolean).join('\n');
   const item = {
-    id, url: w.url || null, image_file: imageFile, note, format: w.format,
+    id, url: w.url || null, image_file: imageFile, ...(videoFile ? { video_file: videoFile } : {}), note, format: w.format,
     title: w.title || null, caption: w.caption || null,
     post_at: w.post_at === 'now' ? now.toISOString() : (w.post_at || null),
     ...(w.post_at ? {} : { us_window: true }),

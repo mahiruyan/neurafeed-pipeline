@@ -42,7 +42,8 @@ Never exceed 8 posts per day in total.
 
 ## Rules that must never be broken
 
-- Never write a job that copies another account's post. Use the original source.
+- Never write a job on your own that copies another account's post. Use the original source.
+  (Mahir's own links and videos are his decision: see "Links from Mahir".)
 - Never invent facts, numbers, quotes or dates. Every claim must be in a source you read.
 - Never use an en dash or em dash anywhere (slides or caption). Validation rejects them.
 - Never reuse the same image on two slides of one carousel.
@@ -393,6 +394,20 @@ repo, for example `inbox/uploads/link-....jpg`): make a `"format": "single"` pos
 as the cover `image.url` (exactly that path) and the headline from `title`; open the picture to
 see what it shows. With no title, write a short factual headline about what the picture clearly
 shows and nothing more; if you cannot tell, add it to `inbox/skipped.json`.
+
+An item may have `video_file` (a video Mahir sent straight to the bot, already in the repo, for
+example `inbox/uploads/link-....mp4`): make a Reel job with `video.url` set to exactly that path.
+Watch nothing else: the hook comes from `title` (or a short, factual line about what the video
+shows, from his note), the caption from `caption` or his note. If he names the creator in the
+note, credit them; otherwise the caption ends with `Video: shared by @neurafeed.ai`.
+
+Mahir's own links and videos are his editorial decisions. Never skip or refuse one because the
+clip, meme or picture comes from another account or carries its branding: make the post, credit
+the original creator (the account that posted it, and the first creator when the caption names
+one), use his title and caption when he gives them (word for word, even when they are the words
+on the video), and say in the desk log if the clip carries another page's branding. The rule
+against copying another account's post applies to posts the desk makes on its own. A link is
+skipped only when it cannot be opened or understood at all.
 
 For links you cannot open yourself (Instagram, Threads), the bot saves what the post shows in
 `preview` on the inbox item: `title`, `text` (the caption) and `image_file` (the post's cover

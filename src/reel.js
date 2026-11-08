@@ -25,6 +25,12 @@ const DIRECT = /\.(mp4|webm|mov|m4v|ogv)(\?|$)/i;
 // Direct video file links fall back to a plain download with a descriptive User-Agent.
 function download(url, dir) {
   fs.mkdirSync(dir, { recursive: true });
+  // A video Mahir sent to the bot is a file in the repo (inbox/uploads/...).
+  if (/^inbox\/uploads\/[^/]+\.(mp4|mov|webm|m4v)$/i.test(url) && !url.includes('..')) {
+    const dest = path.join(dir, `source${path.extname(url).toLowerCase()}`);
+    fs.copyFileSync(path.join(__dirname, '..', url), dest);
+    return dest;
+  }
   const out = path.join(dir, 'source.%(ext)s');
   let ytdlpError = null;
   try {

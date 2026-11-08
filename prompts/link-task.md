@@ -34,8 +34,10 @@ sources the rules require, and `site_article` for news carousels. Validate:
 
     node -e "const {validateJob,validateSiteArticle}=require('./src/validate');const j=require('./jobs/ID.json');console.log(validateJob(j,j.id),validateSiteArticle(j))"
 
-and fix every problem. If you cannot tell what a link is about, append it to
-`inbox/skipped.json` as CLAUDE.md says.
+and fix every problem. Never refuse Mahir's link because the clip or meme belongs to another
+account: make it, with credit (see "Links from Mahir" in CLAUDE.md). Only if a link cannot be
+opened or understood at all, append it to `inbox/skipped.json` as CLAUDE.md says. An item with
+`video_file` is a video he sent: a Reel with `video.url` set to that path.
 
 ## Finish
 
