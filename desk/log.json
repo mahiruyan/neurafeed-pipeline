@@ -4995,5 +4995,67 @@
       }
     ],
     "requests": []
+  },
+  {
+    "run_at": "2026-11-08T09:02:50.455Z",
+    "summary": "Early Sunday run (about 04:20 New York): no open links or requests, no new priority 1 story; queued 1 sensitive crime and money carousel (AI-cloned CEOs, $129 million fraud), bringing Sunday to 3 jobs.",
+    "considered": [
+      {
+        "story": "Prosecutors say three men used AI clones of CEOs and lawyers to steal $129 million from hospitals and banks",
+        "source": "https://gizmodo.com/doj-says-deepfaked-ceos-and-lawyers-helped-steal-129-million-from-hospitals-banks-and-others-2000836456",
+        "decision": "queued",
+        "job_id": "2026-11-08-ai-cloned-ceos-stole-129-million",
+        "priority": 2
+      },
+      {
+        "story": "OpenAI courts celebrities as a media executive says actors below the top tier are not getting jobs (Yahoo / The Cool Down)",
+        "source": "https://www.yahoo.com/entertainment/celebrity/articles/openai-courts-celebrities-executive-says-014000820.html",
+        "decision": "skipped",
+        "reason": "Aggregated piece; the quoted executive is unnamed and not from OpenAI, so the headline overstates the facts."
+      },
+      {
+        "story": "Greg Brockman says AI could make death a choice (Wccftech, Breitbart)",
+        "source": "https://wccftech.com/openais-greg-brockman-says-ai-will-allow-death-to-become-a-choice-echoing-elon-musks-take-that-longevity-or-semi-immortality-is-an-extremely-solvable-problem/",
+        "decision": "skipped",
+        "reason": "Same WSJ Tech talk already covered as 2026-11-05-brockman-openai-ipo-2027-i-think-so."
+      },
+      {
+        "story": "Anthropic stops Claude Code from cloning video games (The Decoder, Digital Trends)",
+        "decision": "covered",
+        "reason": "Already posted as 2026-10-31-claude-code-stops-remaking-video-games."
+      },
+      {
+        "story": "Delaware plan to let AI agents run companies (Times of India, WHYY)",
+        "decision": "covered",
+        "reason": "Already covered as 2026-10-28-delaware-ai-run-companies-congress-probe."
+      },
+      {
+        "story": "OpenAI Dots agents read email for 2FA codes but hesitate to enter them (Crypto Briefing)",
+        "source": "https://cryptobriefing.com/openai-dots-agents-2fa-email-codes/",
+        "decision": "skipped",
+        "reason": "Niche agent behavior detail with little appeal for a general US audience."
+      },
+      {
+        "story": "Pinterest users who abuse AI tools can lose accounts from November 12 (PPC Land)",
+        "decision": "skipped",
+        "reason": "Could not confirm the policy with a second independent source."
+      },
+      {
+        "story": "OpenAI CFO says data centers will not raise electricity bills after the midterms",
+        "decision": "covered",
+        "reason": "Same story as 2026-11-06-openai-data-centers-pay-own-power."
+      },
+      {
+        "story": "Chamath Palihapitiya warns a data center slowdown would hit Anthropic and OpenAI (Stocktwits)",
+        "decision": "skipped",
+        "reason": "Commentary from an investor, no new event."
+      },
+      {
+        "story": "Claude Code Don't Ask Again exposes passwords in public GitHub files",
+        "decision": "covered",
+        "reason": "Already queued as 2026-11-07-claude-code-dont-ask-again-leaks-passwords."
+      }
+    ],
+    "requests": []
   }
 ]
