@@ -1,0 +1,110 @@
+{
+  "id": "2026-11-09-suno-make-song-from-prompt-guide",
+  "format": "utility",
+  "site_only": true,
+  "created_at": "2026-11-09T21:10:00Z",
+  "story_time": "2026-11-09T21:10:00Z",
+  "timely": false,
+  "sensitive": false,
+  "priority": 2,
+  "review": true,
+  "sources": [
+    { "name": "Suno release notes: v5.5, Voices, Custom Models and My Taste", "url": "https://suno.com/release-notes/introducing-v5-5-voices-custom-models-and-my-taste" },
+    { "name": "Digital Music News", "url": "https://www.digitalmusicnews.com/2026/09/09/suno-v6-launch/" },
+    { "name": "The Next Web", "url": "https://thenextweb.com/news/suno-v6-warner-bmg-believe-licensed-models" },
+    { "name": "Jack Righteous: Suno beginner's guide", "url": "https://jackrighteous.com/en-us/blogs/guides-using-suno-ai-music-creation/creating-music-with-suno-ai-a-beginners-guide" },
+    { "name": "The Decoder", "url": "https://the-decoder.com/suno-5-5-lets-users-sing-their-own-ai-generated-songs-with-a-personalized-voice-feature/" },
+    { "name": "CBS News", "url": "https://kioncentralcoast.com/news/2026/11/07/ai-platform-reproduced-michigan-music-publishers-copyrighted-works-without-authorization-lawsuit-says/" }
+  ],
+  "caption": "Suno turns a few lines of text into a full song with vocals.\nThe trick: describe the sound in one place, write the lyrics in another, and fix one thing at a time.\n\nWhat song would you make first?\n\nFollow @neurafeed.ai for daily AI news.\n\nSource: Suno · Photo: Suno",
+  "threads_text": "Suno can turn one sentence into a full song, but the good results come from Custom mode: style in one box, lyrics with [Verse] and [Chorus] tags in the other. Free accounts get v6-mini but cannot download. Have you made a song with AI yet?",
+  "slides": [
+    {
+      "kind": "cover",
+      "headline": "How to make a *full song* with Suno from one prompt: 5 tricks that work",
+      "image": {
+        "url": "https://musictech.com/wp-content/uploads/2026/03/Suno-v5.5@2000x1500.jpg",
+        "credit": "Suno",
+        "fallback_urls": ["https://media.thenextweb.com/2026/06/Suno.jpg"]
+      },
+      "pos": "center center"
+    },
+    {
+      "kind": "prompt",
+      "heading": "1. Start with *one sentence*",
+      "paras": ["Name the subject and the feeling first, then add genre, mood, energy, instruments and voice."],
+      "prompt": "A warm indie folk song about driving home for the holidays, acoustic guitar and soft piano, gentle male vocals, hopeful mood."
+    },
+    {
+      "kind": "prompt",
+      "heading": "2. Split *style and lyrics*",
+      "paras": ["In Custom mode the sound goes in the Style box. Keep production words out of the lyrics."],
+      "prompt": "Style: 90s pop rock, punchy drums, bright electric guitar, female vocals, upbeat, big singalong chorus"
+    },
+    {
+      "kind": "prompt",
+      "heading": "3. Tag every *section*",
+      "paras": ["Label the parts of the song in brackets so Suno knows where the chorus lands."],
+      "prompt": "[Verse 1]\nSix a.m., the coffee's cold\n[Chorus]\nWe keep on running, running home\n[Bridge]\nSlow it down, just you and me"
+    },
+    {
+      "kind": "prompt",
+      "heading": "4. Fix *one thing* at a time",
+      "paras": ["Pick the best version and name its one weakness. Change only the style, the lyric or the section."],
+      "prompt": "Same style, but make the chorus lift harder: add a drum fill before it and double the vocals."
+    },
+    {
+      "kind": "prompt",
+      "heading": "5. Make it *instrumental*",
+      "paras": ["Need music for a video? Use the instrumental setting and describe the scene instead of the words."],
+      "prompt": "Calm lo-fi hip hop beat for a study video, vinyl crackle, soft keys, slow tempo, no vocals."
+    },
+    {
+      "kind": "cta",
+      "hook": "Follow for more AI tools explained in plain words."
+    }
+  ],
+  "site_article": {
+    "kind": "guide",
+    "headline": "How to use Suno to make a song from a prompt",
+    "dek": "Suno writes and sings a full song from a short description. Here is how to prompt it, write lyrics it follows and fix a song without starting over.",
+    "summary": "Suno turns a text description into a finished song with vocals. Its v6 models arrived in September 2026; free accounts get v6-mini, while the full v6 and v6-wild need a Pro or Premier plan.",
+    "seo_title": "How to use Suno: make a song from a prompt",
+    "seo_description": "How to make a song with Suno: Simple vs Custom mode, style prompts, lyric section tags, editing and what the free plan can and cannot do. Prompts to copy.",
+    "answer_summary": "Sign in at suno.com, open Create and describe the song in one sentence. For more control, switch to Custom mode, put the sound in the Style box and your lyrics, tagged with [Verse] and [Chorus], in the lyrics box.",
+    "tags": ["Suno", "AI music", "Prompts", "AI guides"],
+    "hero_alt": "Suno promotional image announcing its v5.5 music model.",
+    "paragraphs": [
+      { "kind": "fact", "text": "Suno makes a complete song, music and vocals, from a short text description. On September 9, 2026 it released its v6 generation in three versions: v6, v6-wild and v6-mini. According to Digital Music News and The Next Web, v6-mini is available to everyone, including free accounts, while v6 and v6-wild are for Pro and Premier subscribers.", "sources": [1, 2] },
+      { "kind": "fact", "text": "The short version of this guide: describe the song in one sentence, move to Custom mode when you care about the result, keep the sound and the lyrics in separate boxes, and fix one problem per try. The prompts below are ready to copy.", "sources": [3] },
+      { "kind": "heading", "text": "What you get on the free plan" },
+      { "kind": "fact", "text": "Free accounts can make songs with v6-mini, play them and share them, but cannot download them, and the free tier comes without commercial rights, according to The Next Web and Digital Music News. Paying users get a monthly download limit and can buy more downloads when they hit it.", "sources": [1, 2] },
+      { "kind": "fact", "text": "The v6 models were built with Warner Music Group, BMG and Believe after Warner settled its copyright suit against Suno in November 2025. Suno said it would retire its older models as v6 rolls out. It has not said which catalogs were used for training, The Next Web reported.", "sources": [2] },
+      { "kind": "heading", "text": "Make your first song" },
+      { "kind": "step", "title": "1. Write the idea in one sentence", "text": "Name the subject and the emotional direction first. Everything else can come later." },
+      { "kind": "step", "title": "2. Add the sound details that matter", "text": "Think in five buckets: genre, mood, energy, the main instruments and the kind of voice. You can skip any bucket you do not care about on the first try." },
+      { "kind": "prompt", "title": "Prompt 1: A first song in Simple mode", "text": "A warm indie folk song about driving home for the holidays, acoustic guitar and soft piano, gentle male vocals, hopeful mood." },
+      { "kind": "fact", "text": "In Simple mode you describe the song and Suno develops the first version from that description. Custom mode lets you enter your own lyrics, write a separate style direction or choose an instrumental, according to Jack Righteous's beginner guide to Suno.", "sources": [3] },
+      { "kind": "heading", "text": "Get more control with Custom mode" },
+      { "kind": "step", "title": "3. Put the sound in the Style box", "text": "Custom mode separates lyrics from styles. Keep broad production direction, like the genre, drums or vocal type, out of the lyric text and in the style field instead." },
+      { "kind": "prompt", "title": "Prompt 2: A style line", "text": "90s pop rock, punchy drums, bright electric guitar, female vocals, upbeat, big singalong chorus" },
+      { "kind": "step", "title": "4. Label every part of the lyrics", "text": "Separate the sections with labels in brackets, such as [Verse 1], [Chorus] and [Bridge]. That tells Suno where each part starts." },
+      { "kind": "prompt", "title": "Prompt 3: Lyrics with section tags", "text": "[Verse 1]\nSix a.m., the coffee's cold\nCity lights are turning gold\n[Chorus]\nWe keep on running, running home\nNever really on our own\n[Bridge]\nSlow it down, just you and me\n[Chorus]\nWe keep on running, running home" },
+      { "kind": "tip", "text": "Read your lyrics out loud before you hit Create. If a line feels clumsy to say, it will usually sound clumsy sung. Short lines with a similar rhythm are easier to follow." },
+      { "kind": "heading", "text": "Fix a song without starting over" },
+      { "kind": "step", "title": "5. Generate a few versions and pick one", "text": "Treat the first results as a comparison set, not a slot machine. Listen, choose the best one and name its single biggest weakness, such as a chorus that does not lift or a verse that feels rushed." },
+      { "kind": "step", "title": "6. Change one layer at a time", "text": "Fix the style for a sound problem, the lyrics for a words problem, one section for a local problem and the ending with an extension. Changing everything at once makes it hard to know what helped." },
+      { "kind": "fact", "text": "Suno has tools for each of those fixes. Reuse Prompt reloads a song's details so you can change the lyrics, style or title. Replace Section and Edit Lyrics redo one passage and keep the rest, and Extend continues a song or replaces its ending, according to Jack Righteous.", "sources": [3] },
+      { "kind": "prompt", "title": "Prompt 4: A targeted style fix", "text": "Same style, but make the chorus lift harder: add a drum fill before it and double the vocals." },
+      { "kind": "fact", "text": "The v6 launch added more of this kind of editing: partial song edits, mashups from several sources, audio isolation and sampling, and prompts that can start from text, audio, images or video, The Next Web reported. Digital Music News described isolation editing as updating a single lyric without rebuilding the whole song.", "sources": [1, 2] },
+      { "kind": "heading", "text": "Instrumentals, your own voice and your taste" },
+      { "kind": "prompt", "title": "Prompt 5: Background music for a video", "text": "Calm lo-fi hip hop beat for a study video, vinyl crackle, soft keys, slow tempo, no vocals." },
+      { "kind": "fact", "text": "With Voices, added in v5.5 in March 2026, you can record or upload your own singing and use it on Suno tracks. It is for Pro and Premier subscribers, and Suno checks the voice by asking you to speak a random phrase, according to The Decoder. Voice profiles are private by default.", "sources": [0, 4] },
+      { "kind": "fact", "text": "Custom Models train a personal version of the model on at least six of your own tracks, Suno says, with up to three per user on paid plans. My Taste is open to every user: it learns the genres and moods you like and applies them when you use the Magic Wand.", "sources": [0, 4] },
+      { "kind": "heading", "text": "What Suno is bad at" },
+      { "kind": "fact", "text": "Suno is still in legal fights over how it was trained. On November 6, 2026 Eminem's publisher Eight Mile Style and a group of Elvis Presley rights holders filed separate lawsuits, and one example in the Eminem complaint is a Suno track that copied the lyrics of a famous song word for word, CBS News reported.", "sources": [5] },
+      { "kind": "tip", "text": "Describe the sound you want in your own words instead of naming a real artist or pasting someone else's lyrics. Your own lyrics, your own style line and a clear mood give you a song that is actually yours." },
+      { "kind": "analysis", "text": "Suno is fast and fun for a demo, a birthday song or background music, but it rarely nails a song on the first try. Plan on a few rounds, keep notes on which style lines worked, and expect the free plan to be for listening and sharing, not for using the file anywhere else." }
+    ]
+  }
+}

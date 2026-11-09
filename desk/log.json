@@ -1,65 +1,5 @@
 [
   {
-    "run_at": "2026-11-02T20:56:07.820Z",
-    "summary": "16:00 New York run: no open links or requests; nothing queued because Nov 2 is already past its 8 desk jobs and every priority 1 story in the leads is covered.",
-    "considered": [
-      {
-        "story": "Anthropic blocks Claude Code from recreating existing video games",
-        "source": "https://kotaku.com/anthropic-nerfs-claude-again-to-stop-users-from-making-ai-slop-out-of-any-specific-existing-game-2000751665",
-        "decision": "covered",
-        "reason": "Already covered as 2026-10-31-claude-code-stops-remaking-video-games."
-      },
-      {
-        "story": "Apple's $1,000 tabletop home robot reportedly delayed to 2027",
-        "source": "https://arstechnica.com/",
-        "decision": "skipped",
-        "reason": "Rumor about a delay of an unannounced product, not an Apple announcement, and the day is already over its cap."
-      },
-      {
-        "story": "Anthropic $17B Q3 revenue and internal AI spending in amended S-1",
-        "decision": "covered",
-        "reason": "Already queued as 2026-11-02-anthropic-17-billion-quarter-loss."
-      },
-      {
-        "story": "OpenAI merging ChatGPT Chat and Work tabs",
-        "decision": "covered",
-        "reason": "Already covered as 2026-11-01-chatgpt-codex-one-shared-limit."
-      },
-      {
-        "story": "OpenAI rebrands data centers as AI compute campuses",
-        "decision": "covered",
-        "reason": "Already posted as 2026-11-02-openai-data-centers-compute-campuses."
-      },
-      {
-        "story": "ADNOC deal with OpenAI and G42",
-        "decision": "covered",
-        "reason": "Already covered as 2026-11-02-openai-adnoc-oil-fields-hours."
-      },
-      {
-        "story": "New York Times and other outlets sue Brave over content scraping",
-        "source": "https://techcrunch.com/",
-        "decision": "skipped",
-        "reason": "Lawsuit against a browser maker, not a priority 1 company, and no slot left today."
-      },
-      {
-        "story": "Oracle plans $20B stock and bond sale for AI buildout",
-        "decision": "skipped",
-        "reason": "Financing story with limited consumer interest and the day is over its cap."
-      },
-      {
-        "story": "Johns Hopkins cancer cell mapping chosen for Anthropic project",
-        "decision": "skipped",
-        "reason": "Small university press release, no slot left today."
-      },
-      {
-        "story": "OpenAI ChatGPT ad deals with Magnite and PubMatic",
-        "decision": "skipped",
-        "reason": "Still only secondhand reports of a paywalled The Information story."
-      }
-    ],
-    "requests": []
-  },
-  {
     "run_at": "2026-11-02T22:53:58.236Z",
     "summary": "18:00 New York run: no open links or requests; nothing queued because Nov 2 already has more than 8 desk jobs and no new priority 1 story appeared since the last run.",
     "considered": [
@@ -5172,6 +5112,58 @@
         "job_id": "2026-11-09-terenceshen-china-next-target-reel",
         "priority": 1,
         "reason": "x.com not reachable from this session and search found nothing, so hook is Mahir's title and caption is neutral. Clip not seen: check the preview. Mahir said post right away, but memory requires approval, so review is on."
+      }
+    ],
+    "requests": []
+  },
+  {
+    "run_at": "2026-11-09T21:06:35.143Z",
+    "summary": "Queued today's third site-only guide (Suno: make a song from a prompt); no news queued because today already has 10 desk news jobs, over the 8 cap, and no new priority 1 story appeared since the 20:23 UTC run. No open links or requests.",
+    "considered": [
+      {
+        "story": "Daily guide: Suno, making a song from a prompt (guides/plan.md next line after the rejected ElevenLabs guide)",
+        "source": "https://suno.com/release-notes/introducing-v5-5-voices-custom-models-and-my-taste",
+        "decision": "queued",
+        "job_id": "2026-11-09-suno-make-song-from-prompt-guide",
+        "priority": 2,
+        "reason": "Site-only guide, does not count toward the Instagram cap. Skipped re-doing ElevenLabs because Mahir rejected that guide at 20:46 UTC."
+      },
+      {
+        "story": "Anthropic releases Claude Fable 5.2 and Mythos 5.2",
+        "source": "https://techcrunch.com/2026/11/09/anthropic-releases-new-mythos-and-fable-models-amid-rsi-",
+        "decision": "covered",
+        "reason": "Already queued as 2026-11-09-claude-fable-5-2-mythos-5-2-v2 (its state shows publish_failed, which the pipeline owns)."
+      },
+      {
+        "story": "Meta releases Muse Ember",
+        "source": "https://research.meta.ai/blog/muse-ember",
+        "decision": "covered",
+        "reason": "Already queued as 2026-11-09-meta-muse-ember-third-of-haiku-cost."
+      },
+      {
+        "story": "Nvidia investigation into Jensen Huang and alleged Chinese spy (NBC, Inc. succession piece)",
+        "decision": "covered",
+        "reason": "Covered by 2026-11-08-nvidia-board-probes-huang-alleged-spy and today's Trump/Huang job; no new development worth another post, and today is over the cap."
+      },
+      {
+        "story": "Cisco adds Claude Mythos to AI Defense red teaming tool",
+        "decision": "skipped",
+        "reason": "Enterprise security product news with little interest for a general US audience, and today is over the cap."
+      },
+      {
+        "story": "OpenAI sells ChatGPT Enterprise through AWS Marketplace",
+        "decision": "skipped",
+        "reason": "Procurement news only insiders follow; today is over the cap."
+      },
+      {
+        "story": "Study finds half of ChatGPT and Gemini stock picks land in just 10 stocks",
+        "decision": "skipped",
+        "reason": "Good everyone story but only one minor outlet found and today is already over the 8 post cap; can be revisited tomorrow if better sourced."
+      },
+      {
+        "story": "Claude Code exposed 1,379 secrets on GitHub (shattered.io)",
+        "decision": "skipped",
+        "reason": "Single blog source, not confirmed by an independent outlet."
       }
     ],
     "requests": []
