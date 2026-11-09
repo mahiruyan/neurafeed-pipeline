@@ -1,52 +1,5 @@
 [
   {
-    "run_at": "2026-11-02T02:53:44.267Z",
-    "summary": "Sunday late run (21:52 New York, Nov 1): no open links or requests and no new priority 1 news; Nov 1 already has its full 8 desk jobs and the last window closes at 22:00, so nothing was queued.",
-    "considered": [
-      {
-        "story": "Microsoft AI CEO says calling AIs deserving of rights could make them believe it (LA Times)",
-        "decision": "skipped",
-        "reason": "Suleyman has made this argument repeatedly for months; no clear new statement found, and today's cap is full."
-      },
-      {
-        "story": "OpenAI pushes the term 'Compute Campus' for data centers (Gizmodo)",
-        "decision": "skipped",
-        "reason": "Minor naming story and today's cap is full; can be reconsidered in the Nov 2 morning run."
-      },
-      {
-        "story": "Meta partners with a Chinese robotics firm to test consumer robots (PYMNTS)",
-        "decision": "skipped",
-        "reason": "Single secondary outlet so far; hold for Nov 2 if major outlets confirm it."
-      },
-      {
-        "story": "Asian stocks fall as tech rout fuels AI spending fears (Bloomberg)",
-        "decision": "covered",
-        "reason": "Same AI spending fears story as 2026-10-30-ai-spending-fears-1-trillion-tech-selloff."
-      },
-      {
-        "story": "OpenAI changes GPT-6 to reduce overly flattering language for free users (MIXED)",
-        "decision": "skipped",
-        "reason": "Needs a second source and today's cap is full; candidate for the Nov 2 morning run."
-      },
-      {
-        "story": "Silicon Valley grapples with a flood of bugs found by AI (NYT)",
-        "decision": "skipped",
-        "reason": "Feature piece, not breaking; today's cap is full."
-      },
-      {
-        "story": "Anthropic orders Claude to stop remaking video games (Game Developer)",
-        "decision": "covered",
-        "reason": "Already queued as 2026-10-31-claude-code-stops-remaking-video-games."
-      },
-      {
-        "story": "John Ternus says Apple does not want AI for AI's sake",
-        "decision": "covered",
-        "reason": "Already queued as 2026-11-01-ternus-apple-no-ai-for-ais-sake."
-      }
-    ],
-    "requests": []
-  },
-  {
     "run_at": "2026-11-02T05:05:03.278Z",
     "summary": "Overnight run (00:30 New York, Nov 2): no open links or requests; queued 2 jobs for the Nov 2 morning windows (Meta's Max humanoid robot with Fourier, OpenAI's compute campus rebrand).",
     "considered": [
@@ -5095,6 +5048,62 @@
         "story": "Llama-modchip: 284B DeepSeek on 64GB RAM with no GPU (Hacker News)",
         "decision": "skipped",
         "reason": "Niche hardware hack for developers."
+      }
+    ],
+    "requests": []
+  },
+  {
+    "run_at": "2026-11-09T05:04:17.456Z",
+    "summary": "Overnight run (23:55 Sunday New York): no open links or requests; queued one politics story for the Monday morning slots, Trump's 60 Minutes claim that the DOJ warned an unnamed AI company leader of jail (sensitive, for Mahir's approval).",
+    "considered": [
+      {
+        "story": "Trump on 60 Minutes: DOJ warned someone at 'one of the big' AI companies to get ready for jail; says he doesn't mind guardrails",
+        "source": "https://www.cbsnews.com/news/read-the-full-transcript-of-ross-douthats-interview-with-president-trump/",
+        "decision": "queued",
+        "job_id": "2026-11-09-trump-doj-ai-boss-jail",
+        "priority": 2,
+        "reason": "Confirmed in the CBS transcript and Reuters. Set timely false because a 12 hour limit from the 19:00 broadcast would expire right at 07:00; sensitive (politics). AB test asked for a story photo, but no image could be checked from this run, so the face library photo was used (photo: face)."
+      },
+      {
+        "story": "Trump calls Jensen Huang 'honorable', has not discussed the spy allegations with him (Reuters)",
+        "source": "https://www.thestandard.com.hk/finance/article/347930/Trump-calls-Nvidias-Huang-honorable-says-he-has-not-discussed-allegations-with-him",
+        "decision": "covered",
+        "reason": "Follow-up to 2026-11-08-nvidia-board-probes-huang-alleged-spy, not a new story."
+      },
+      {
+        "story": "Nvidia board investigates Jensen Huang over suspected Chinese spy",
+        "decision": "covered",
+        "reason": "Already queued as 2026-11-08-nvidia-board-probes-huang-alleged-spy."
+      },
+      {
+        "story": "The race for Anthropic employees' new wealth (Financial News London)",
+        "decision": "skipped",
+        "reason": "Feature piece with no confirmed second source yet; a candidate for a daytime run."
+      },
+      {
+        "story": "Staff at the US AI safety center reporting to the White House (AP)",
+        "decision": "skipped",
+        "reason": "Inside-government story with little appeal to normal users; one politics story is already queued for the morning."
+      },
+      {
+        "story": "Anthropic plans to complete its IPO before November 26 (SBS, Korean)",
+        "decision": "skipped",
+        "reason": "Still a single foreign-language report with no second source."
+      },
+      {
+        "story": "UK public bodies flooded with chatbot-written complaints (Guardian)",
+        "decision": "skipped",
+        "reason": "UK-focused; left for a daytime run to judge against US stories."
+      },
+      {
+        "story": "OpenAI to acquire Pierre for Codex code review",
+        "decision": "skipped",
+        "reason": "Small developer-tools acquisition with little mainstream appeal."
+      },
+      {
+        "story": "Microsoft moves Copilot's Claude processing into the EU Data Boundary",
+        "decision": "skipped",
+        "reason": "EU enterprise compliance change, little interest for a US audience."
       }
     ],
     "requests": []
