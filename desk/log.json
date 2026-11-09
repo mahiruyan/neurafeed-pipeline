@@ -5147,5 +5147,18 @@
       }
     ],
     "requests": []
+  },
+  {
+    "run_at": "2026-11-09T20:26:51.464Z",
+    "summary": "Hand-started link run for link-2026-11-09-3095: nothing new queued, because the instant link task had already made it as 2026-11-09-claude-fable-5-2-mythos-5-2.",
+    "considered": [
+      {
+        "story": "Mahir link: Evolving AI Instagram post on Anthropic's Claude Fable 5.2 and Mythos 5.2",
+        "source": "https://www.anthropic.com/claude-fable-and-mythos-5-2",
+        "decision": "covered",
+        "reason": "Already queued as 2026-11-09-claude-fable-5-2-mythos-5-2 by the instant link task at 20:24 UTC; a second job would duplicate it, so my draft was dropped."
+      }
+    ],
+    "requests": []
   }
 ]
