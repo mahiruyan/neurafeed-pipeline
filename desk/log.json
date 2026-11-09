@@ -1,78 +1,5 @@
 [
   {
-    "run_at": "2026-11-02T05:05:03.278Z",
-    "summary": "Overnight run (00:30 New York, Nov 2): no open links or requests; queued 2 jobs for the Nov 2 morning windows (Meta's Max humanoid robot with Fourier, OpenAI's compute campus rebrand).",
-    "considered": [
-      {
-        "story": "Meta built a humanoid robot prototype called Max with China's Fourier (The Information via PYMNTS)",
-        "source": "https://www.pymnts.com/news/artificial-intelligence/2026/meta-partners-with-chinese-robotics-firm-to-test-consumer-robots/",
-        "decision": "queued",
-        "job_id": "2026-11-02-meta-fourier-humanoid-robot-max",
-        "priority": 1
-      },
-      {
-        "story": "OpenAI wants AI data centers called 'compute campuses' in a post-midterm PR push (Axios, TechCrunch, Business Insider)",
-        "source": "https://techcrunch.com/2026/11/01/openai-might-rebrand-its-data-centers-as-ai-compute-campuses/",
-        "decision": "queued",
-        "job_id": "2026-11-02-openai-data-centers-compute-campuses",
-        "priority": 2
-      },
-      {
-        "story": "OpenAI makes GPT-6 less flattering and shorter for free ChatGPT users (MIXED, TechJournal)",
-        "source": "https://mixed-news.com/en/openai-gpt-6-chatgpt-less-flattering-shorter-free-go/",
-        "decision": "skipped",
-        "reason": "Comes from the October 29 release that 2026-10-29-openai-model-spec-five-values-gpt already covered, and only small outlets report it."
-      },
-      {
-        "story": "Claude smart reports tell bosses when workers are off-topic (Mashable)",
-        "decision": "covered",
-        "reason": "Already queued as 2026-10-29-claude-smart-reports-off-topic-chats."
-      },
-      {
-        "story": "Parents sue OpenAI after daughter's death following ChatGPT seizure medication advice (Guardian)",
-        "decision": "covered",
-        "reason": "Already queued as 2026-10-29-family-sues-openai-chatgpt-seizure-medication."
-      },
-      {
-        "story": "Nvidia in talks to back Nscale's $45 billion Anthropic data center deal",
-        "decision": "covered",
-        "reason": "Considered and covered in earlier runs (Nscale and Anthropic deal jobs from Oct 19)."
-      },
-      {
-        "story": "China denies alleged targeting of Nvidia CEO in spying plot (NewsNation)",
-        "decision": "skipped",
-        "reason": "Follow-up to a story the desk already handled; the denial adds little new."
-      },
-      {
-        "story": "Microsoft AI CEO says calling AIs deserving of rights could make them believe it (LA Times)",
-        "decision": "skipped",
-        "reason": "Suleyman has made this argument for months; no clearly new statement."
-      },
-      {
-        "story": "Anthropic researcher quits saying AI labs are 'gambling with our lives'",
-        "source": "https://ground.news/article/da6bac41-d3a4-4a8d-aa9b-3ccf56b2a8d5",
-        "decision": "skipped",
-        "reason": "Old story from September 2026, not new."
-      },
-      {
-        "story": "Asian stocks fall as tech rout fuels AI spending fears (Bloomberg)",
-        "decision": "covered",
-        "reason": "Same AI spending fears story as 2026-10-30-ai-spending-fears-1-trillion-tech-selloff."
-      },
-      {
-        "story": "AI delivers 'zero financial payoff' to most companies, Apollo economist says (TechCrunch via HN)",
-        "decision": "skipped",
-        "reason": "Article is from October 25, too old to post as news."
-      },
-      {
-        "story": "AI agent swarms in Minecraft fail to build a civilization (Tom's Hardware via HN)",
-        "decision": "skipped",
-        "reason": "Fun but niche; kept in reserve for a later run if the day runs short."
-      }
-    ],
-    "requests": []
-  },
-  {
     "run_at": "2026-11-02T07:13:39.522Z",
     "summary": "Overnight run (02:00 New York, Nov 2): no open links or requests; queued 2 jobs (Musk says Grok Bot cost too much to serve, SemiAnalysis GDPx where the best model scores 12%), bringing Nov 2 to 4 desk jobs.",
     "considered": [
@@ -5104,6 +5031,77 @@
         "story": "Microsoft moves Copilot's Claude processing into the EU Data Boundary",
         "decision": "skipped",
         "reason": "EU enterprise compliance change, little interest for a US audience."
+      }
+    ],
+    "requests": []
+  },
+  {
+    "run_at": "2026-11-09T07:04:03.222Z",
+    "summary": "Overnight run (01:55 Monday New York): no open links or requests; queued two stories for the Monday windows, Goldman Sachs pulling Claude Code from most traders and bankers, and the lawsuit over Gemini on a 13-year-old's school Chromebook (sensitive, for Mahir's approval). Images could not be opened from this run, so photos come from the source articles unseen.",
+    "considered": [
+      {
+        "story": "Goldman Sachs limits Claude Code and GitHub coding tools to its ~12,000 engineers; most traders and bankers lose access",
+        "source": "https://startupfortune.com/goldman-sachs-pulls-claude-code-and-github-tools-from-traders-and-bankers/",
+        "decision": "queued",
+        "job_id": "2026-11-09-goldman-pulls-claude-code-traders",
+        "priority": 2,
+        "reason": "AI at work story with money and jobs angle, trending on Hacker News; confirmed by Gadget Review (Yahoo Finance), Startup Fortune and FStech. Reported Nov 3, so timely false."
+      },
+      {
+        "story": "Parents sue Google, saying Gemini on their 13-year-old's school Chromebook fed a mental health crisis",
+        "source": "https://gizmodo.com/lawsuit-claims-students-google-ai-use-turned-into-life-threatening-obsession-2000835894",
+        "decision": "queued",
+        "job_id": "2026-11-09-gemini-school-chromebook-teen-lawsuit",
+        "priority": 2,
+        "reason": "Major Google lawsuit not yet covered; Gizmodo, FourWeekMBA and Android Pure. Sensitive (lawsuit, minor, mental health): no method details, 988 line in caption, needs Mahir's approval. Filed Nov 2 to 4, so timely false."
+      },
+      {
+        "story": "OpenAI to acquire Pierre to expand Codex code review and storage",
+        "source": "https://openai.com/index/openai-to-acquire-pierre/",
+        "decision": "skipped",
+        "reason": "Small developer tools acquisition from Nov 5, little interest for a general US audience."
+      },
+      {
+        "story": "Wealth managers race for Anthropic employees' new IPO fortunes ('not buying Lamborghinis')",
+        "source": "https://stocktwits.com/news-articles/markets/equity/top-wall-street-firms-compete-to-manage-anthropic-staffers-post-ipo-fortunes/cZtXyPURBb1",
+        "decision": "skipped",
+        "reason": "Could not read the Financial News piece; IPO money angle overlaps recent Anthropic IPO coverage. Worth a later run if the IPO prices."
+      },
+      {
+        "story": "UK public bodies flooded with chatbot-written complaints ('AI clog')",
+        "source": "https://cybernews.com/ai-news/ai-slop-complaints-bureaucracy-public-services/",
+        "decision": "skipped",
+        "reason": "UK-focused and the trend has been reported since spring; weak for a US audience."
+      },
+      {
+        "story": "Staff at the US center for AI safety now report to the White House",
+        "decision": "skipped",
+        "reason": "Inside-Washington process story; lower appeal than the two queued stories. Could be revisited."
+      },
+      {
+        "story": "Drugmaker CEOs doubt Silicon Valley's promise that AI will cure disease (WSJ)",
+        "decision": "skipped",
+        "reason": "Paywalled and an opinion-style trend piece; no clear news hook."
+      },
+      {
+        "story": "Nvidia board investigates Jensen Huang over alleged Chinese spy; Huang's memo to staff",
+        "decision": "covered",
+        "reason": "Already queued as 2026-11-08-nvidia-board-probes-huang-alleged-spy."
+      },
+      {
+        "story": "OpenAI raises $11B at a $1.25T valuation",
+        "decision": "covered",
+        "reason": "Already queued as 2026-11-08-openai-11-billion-short-of-30-billion."
+      },
+      {
+        "story": "Trump says AI risks can be managed, open to guardrails (60 Minutes)",
+        "decision": "covered",
+        "reason": "Already queued as 2026-11-09-trump-doj-ai-boss-jail."
+      },
+      {
+        "story": "Claude Code 'Don't Ask Again' exposes passwords on GitHub",
+        "decision": "covered",
+        "reason": "Already queued as 2026-11-07-claude-code-dont-ask-again-leaks-passwords."
       }
     ],
     "requests": []
