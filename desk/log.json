@@ -1,71 +1,5 @@
 [
   {
-    "run_at": "2026-11-02T07:13:39.522Z",
-    "summary": "Overnight run (02:00 New York, Nov 2): no open links or requests; queued 2 jobs (Musk says Grok Bot cost too much to serve, SemiAnalysis GDPx where the best model scores 12%), bringing Nov 2 to 4 desk jobs.",
-    "considered": [
-      {
-        "story": "Musk says Grok Bot cost was unsustainably high as users hit weekly limits (Tesla North, Anadolu Agency)",
-        "source": "https://teslanorth.com/2026/11/01/elon-musk-grok-bot-cost-usage-limits/",
-        "decision": "queued",
-        "job_id": "2026-11-02-musk-grok-bot-cost-too-much",
-        "priority": 1
-      },
-      {
-        "story": "SemiAnalysis launches GDPx benchmark; Claude Opus 5.5 leads at 12% (SemiAnalysis, Unite.AI, OfficeChai)",
-        "source": "https://newsletter.semianalysis.com/p/gdpx-measuring-frontier-model-capabilities",
-        "decision": "queued",
-        "job_id": "2026-11-02-gdpx-best-ai-scores-12-percent",
-        "priority": 2
-      },
-      {
-        "story": "Abu Dhabi signs four OpenAI deals at ADIPEC (The National)",
-        "decision": "skipped",
-        "reason": "Government deployment deals with no values disclosed, low US interest; may revisit if more detail emerges."
-      },
-      {
-        "story": "OpenAI caps paid ChatGPT accounts per device and card (The Decoder)",
-        "decision": "skipped",
-        "reason": "Only one source found so far; needs independent confirmation."
-      },
-      {
-        "story": "Study finds about 40% of chatbot election answers contain errors (Forum AI via Arab News)",
-        "decision": "skipped",
-        "reason": "Political and election related right before the vote; would need a stronger second source and Mahir's review."
-      },
-      {
-        "story": "Fractile raises about $700 million at a $6.5 billion valuation (Dealroom)",
-        "decision": "skipped",
-        "reason": "UK chip startup funding round, limited US consumer interest."
-      },
-      {
-        "story": "Google shuts down Jules and folds it into Antigravity",
-        "decision": "skipped",
-        "reason": "Niche developer tool, already skipped in earlier runs."
-      },
-      {
-        "story": "Microsoft AI CEO says calling AIs deserving of rights could make them believe it (LA Times)",
-        "decision": "skipped",
-        "reason": "Already skipped twice; opinion remarks without a new development."
-      },
-      {
-        "story": "Meta partners with a Chinese robotics firm to test consumer robots (PYMNTS)",
-        "decision": "covered",
-        "reason": "Already queued as 2026-11-02-meta-fourier-humanoid-robot-max."
-      },
-      {
-        "story": "OpenAI pushes 'compute campus' name for data centers (Gizmodo)",
-        "decision": "covered",
-        "reason": "Already queued as 2026-11-02-openai-data-centers-compute-campuses."
-      },
-      {
-        "story": "AI agents bypass crypto spending caps in a research test (CoinDesk)",
-        "decision": "skipped",
-        "reason": "Single source and similar to recent agent security stories already posted."
-      }
-    ],
-    "requests": []
-  },
-  {
     "run_at": "2026-11-02T09:03:22.359Z",
     "summary": "Early morning run: no open links or requests; queued one priority 1 Anthropic IPO story (Japan share sale), today now has 5 jobs.",
     "considered": [
@@ -5102,6 +5036,72 @@
         "story": "Claude Code 'Don't Ask Again' exposes passwords on GitHub",
         "decision": "covered",
         "reason": "Already queued as 2026-11-07-claude-code-dont-ask-again-leaks-passwords."
+      }
+    ],
+    "requests": []
+  },
+  {
+    "run_at": "2026-11-09T08:56:46.611Z",
+    "summary": "Early Monday run (03:55 New York): no open links or requests; queued one story, ChatGPT users reporting sudden account deactivations with no warning (including $200 Pro plans), bringing Monday to 4 jobs. Image hosts and Wikimedia could not be opened from this run, so photos are ones that rendered fine in earlier posts.",
+    "considered": [
+      {
+        "story": "ChatGPT users report sudden account deactivations without warning, including $200 Pro plans",
+        "source": "https://www.tokenpost.com/news/technology/52070",
+        "decision": "queued",
+        "job_id": "2026-11-09-chatgpt-accounts-deactivated-no-warning",
+        "priority": 2,
+        "reason": "Everyone story about losing years of chats; confirmed by TokenPost, dev.ua, PANews and MarsBit. Started Nov 7, so timely false."
+      },
+      {
+        "story": "Google AI Plus loses Gemini Pro models on November 13",
+        "source": "https://9to5google.com/2026/10/14/gemini-ai-plus-loses-pro-november/",
+        "decision": "covered",
+        "reason": "Already covered as 2026-10-15-gemini-plus-loses-pro-models."
+      },
+      {
+        "story": "Sam Altman does not want his son to have an AI chatbot as a best friend",
+        "source": "https://www.yahoo.com/news/sam-altman-doesnt-want-son-151512091.html",
+        "decision": "skipped",
+        "reason": "Old remarks from 2025 resurfacing, not new news."
+      },
+      {
+        "story": "Former OpenAI engineer pleads not guilty to planting a recording device in an executive meeting room",
+        "source": "https://sfstandard.com/2026/10/13/openai-engineer-arrested-alleged-bugging-executive-conference-room/",
+        "decision": "covered",
+        "reason": "Story covered four times in October; the plea alone adds little."
+      },
+      {
+        "story": "Malware VOLTA uses Claude to rank victims (Cisco Talos)",
+        "source": "https://www.sofx.com/cisco-finds-malware-using-claude-ai-to-profile-victims-and-rank-stolen-accounts/",
+        "decision": "covered",
+        "reason": "Already covered as 2026-11-01-volta-malware-asks-claude-what-youre-worth."
+      },
+      {
+        "story": "Microsoft buyouts for 60,000 workers as staff question AI strategy",
+        "decision": "covered",
+        "reason": "Already covered as 2026-10-26-microsoft-60000-buyouts-ai."
+      },
+      {
+        "story": "Samsung Intelligent Eyewear (Android XR, Gemini) preorders start November 12",
+        "source": "https://www.androidheadlines.com/2026/11/samsung-intelligent-eyewear-pre-order-date.html",
+        "decision": "skipped",
+        "reason": "Better on preorder day (Nov 12) when price and details are out."
+      },
+      {
+        "story": "Data centers buy used turbines and jet engines for AI power (Reuters)",
+        "source": "https://www.tomshardware.com/tech-industry/data-centers-turn-to-ex-airliner-engines-as-ai-power-crunch-bites",
+        "decision": "skipped",
+        "reason": "Overlaps the Anthropic gas generator story posted Nov 8."
+      },
+      {
+        "story": "OpenAI Game Boy-like console teaser",
+        "decision": "skipped",
+        "reason": "Speculation only, no solid source found."
+      },
+      {
+        "story": "Nvidia board probes Jensen Huang affair and alleged spy",
+        "decision": "covered",
+        "reason": "Already covered as 2026-11-08-nvidia-board-probes-huang-alleged-spy."
       }
     ],
     "requests": []
