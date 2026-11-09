@@ -1,70 +1,5 @@
 [
   {
-    "run_at": "2026-11-02T09:03:22.359Z",
-    "summary": "Early morning run: no open links or requests; queued one priority 1 Anthropic IPO story (Japan share sale), today now has 5 jobs.",
-    "considered": [
-      {
-        "story": "Anthropic plans to sell up to $3.5 billion of IPO shares to investors in Japan (Reuters, FourWeekMBA)",
-        "source": "https://www.investing.com/news/stock-market-news/anthropic-plans-to-sell-35-billion-of-shares-to-japan-investors-in-ipo-filing-shows-4989963",
-        "decision": "queued",
-        "job_id": "2026-11-02-anthropic-ipo-3-5-billion-japan",
-        "priority": 1
-      },
-      {
-        "story": "Claude Mythos 5.5 reportedly spotted in Anthropic's website code (FourWeekMBA, TestingCatalog via DEV)",
-        "source": "https://fourweekmba.com/ai-screenshot-shows-claude-mythos-5-5-in-anthropic-site-code/",
-        "decision": "skipped",
-        "reason": "Unverified screenshot from an anonymous tip; the live page showed Mythos 5.1 and Anthropic has announced nothing."
-      },
-      {
-        "story": "Gemini lets users create and share personal avatars (ETV Bharat, News18)",
-        "decision": "skipped",
-        "reason": "Announced October 29 and already skipped in an earlier run; not new today."
-      },
-      {
-        "story": "Anthropic orders Claude to stop remaking video games (Game Developer, Moneycontrol)",
-        "decision": "covered",
-        "reason": "Already queued as 2026-10-31-claude-code-stops-remaking-video-games."
-      },
-      {
-        "story": "AI companies back a shared opt-out signal for AI training (Techzine, OpenAI blog)",
-        "decision": "covered",
-        "reason": "Already queued as 2026-10-31-ai-giants-one-line-opt-out-training."
-      },
-      {
-        "story": "ADNOC signs a multi-year deal with OpenAI and G42 as Sam Altman visits Abu Dhabi (Investing.com, Unite.AI)",
-        "decision": "skipped",
-        "reason": "Enterprise and government deals with no values disclosed, low US consumer interest; skipped in the last run too."
-      },
-      {
-        "story": "Milei pitches Argentina as a regulation-free AI haven (AP via WRAL)",
-        "decision": "skipped",
-        "reason": "Political story with limited AI product news for a US audience."
-      },
-      {
-        "story": "OpenAI plans a post-midterm policy push in Washington (Axios)",
-        "decision": "skipped",
-        "reason": "Already considered and skipped in earlier runs; election-adjacent and no new development."
-      },
-      {
-        "story": "ChatGPT Google Health integration spotted on Android (Tbreak)",
-        "decision": "skipped",
-        "reason": "Single source based on app code, nothing confirmed by OpenAI."
-      },
-      {
-        "story": "Jim Cramer says bears want to derail the Anthropic IPO (Benzinga)",
-        "decision": "skipped",
-        "reason": "Commentary, no new facts; the Japan filing story covers the IPO today."
-      },
-      {
-        "story": "China's first frontier AI export controls, Mofcom Announcement No. 48 (Hacker News)",
-        "decision": "skipped",
-        "reason": "Policy research note, niche for a US Instagram audience."
-      }
-    ],
-    "requests": []
-  },
-  {
     "run_at": "2026-11-02T11:17:04.048Z",
     "summary": "Early Monday run (06:00 New York, Nov 2): no open links or requests and no new priority 1 news; queued one fun research story (50 AI agents in Minecraft built a bureaucracy), Nov 2 now has 6 jobs.",
     "considered": [
@@ -5102,6 +5037,72 @@
         "story": "Nvidia board probes Jensen Huang affair and alleged spy",
         "decision": "covered",
         "reason": "Already covered as 2026-11-08-nvidia-board-probes-huang-alleged-spy."
+      }
+    ],
+    "requests": []
+  },
+  {
+    "run_at": "2026-11-09T11:09:52.131Z",
+    "summary": "Queued Mahir's Jensen Huang parody Reel and a priority 1 carousel on Trump defending Huang; skipped older or thin stories.",
+    "considered": [
+      {
+        "story": "Mahir's link: AI parody of Jensen Huang in the (500) Days of Summer elevator scene",
+        "source": "https://www.instagram.com/reel/DfgyORwTi6U/",
+        "decision": "queued",
+        "job_id": "2026-11-09-jensen-huang-oldest-trap-reel",
+        "priority": 1,
+        "reason": "Mahir's link with his hook, caption written by the desk. The clip is a repost by @chatgptricks and carries their branding; the original creator @mizochris could not be found elsewhere by search, so it is credited in the caption. Marked AI-made parody and sensitive because it touches the Huang affair story; review is on."
+      },
+      {
+        "story": "Trump calls Jensen Huang 'an honorable guy' amid Nvidia spy probe",
+        "source": "https://www.aa.com.tr/en/americas/trump-calls-nvidia-ceo-jensen-huang-honorable-guy-amid-alleged-chinese-spy-affair/4116495",
+        "decision": "queued",
+        "job_id": "2026-11-09-trump-calls-huang-honorable",
+        "priority": 1,
+        "reason": "New development in the Nvidia story (the Nov 8 job expired unposted); confirmed by Anadolu, The Week, Euronews and Newsweek. Sensitive (politics), goes to Mahir. Timely, so it expires around 13:00 UTC: approve fast for the 07:00 New York window."
+      },
+      {
+        "story": "SHL survey: nearly 1 in 5 US workers replaced by AI were asked back",
+        "source": "https://www.shl.com/about/news-and-events/press-releases/workers-replaced-by-ai-would-demand-higher-pay-and-greater-job-security-to-return-shl-research-finds/",
+        "decision": "skipped",
+        "reason": "Good everyone story, but the survey came out October 29, so a job would expire at once under the 72 hour evergreen rule. Worth doing if Mahir requests it."
+      },
+      {
+        "story": "Anthropic emails enterprise customers that an outside security firm may have viewed account data",
+        "source": "https://runtimewire.com/article/anthropic-customer-notice-unnamed-security-firm-access",
+        "decision": "skipped",
+        "reason": "Follow-up to the Cathedral breach; the notice itself could not be read and only one thin source described it."
+      },
+      {
+        "story": "China denies spy plot claim involving Huang",
+        "decision": "skipped",
+        "reason": "China's denial dates from October 30; folded into the Trump carousel context instead."
+      },
+      {
+        "story": "Megyn Kelly reacts to Dario Amodei on what high school graduates should do",
+        "source": "https://www.aol.com/articles/wipe-jobs-megyn-kelly-reacts-073434000.html",
+        "decision": "skipped",
+        "reason": "Commentary on undated older remarks, no new news."
+      },
+      {
+        "story": "US banks block outside AI agents from customer accounts",
+        "decision": "skipped",
+        "reason": "October 22 story, too old."
+      },
+      {
+        "story": "Alex Stamos says AI is pushing cybersecurity into a dark age (The Verge podcast)",
+        "decision": "skipped",
+        "reason": "Opinion podcast, little broad US appeal."
+      },
+      {
+        "story": "Asahi Linux drops MIT license over AI code laundering",
+        "decision": "skipped",
+        "reason": "Niche developer story."
+      },
+      {
+        "story": "DeepSeek Harness reaches 1.54 million daily users",
+        "decision": "skipped",
+        "reason": "Small number for a US audience, little reader impact."
       }
     ],
     "requests": []
