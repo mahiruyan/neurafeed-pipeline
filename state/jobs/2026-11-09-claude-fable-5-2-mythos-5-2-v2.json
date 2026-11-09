@@ -20,9 +20,14 @@
       "status": "publish_failed",
       "at": "2026-11-09T20:46:32.867Z",
       "by": "system"
+    },
+    {
+      "status": "posted",
+      "at": "2026-11-09T21:10:44.824Z",
+      "by": "system"
     }
   ],
-  "status": "publish_failed",
+  "status": "posted",
   "files": [
     "out/2026-11-09-claude-fable-5-2-mythos-5-2-v2/1.jpg",
     "out/2026-11-09-claude-fable-5-2-mythos-5-2-v2/2.jpg",
@@ -34,7 +39,7 @@
   "image_errors": [
     "slide 1 badge 1: logo check skipped (fal vision: \"User is locked. Reason: TOP_UP.\")"
   ],
-  "updated_at": "2026-11-09T20:46:32.867Z",
+  "updated_at": "2026-11-09T21:10:44.824Z",
   "sent_at": "2026-11-09T20:35:22.866Z",
   "message_id": 3141,
   "by": "mahir (Telegram)",
@@ -48,5 +53,18 @@
     3141
   ],
   "error": "Instagram 17841477983419365/media: Only photo or video can be accepted as media type.",
-  "attempts": 1
+  "attempts": 1,
+  "posted_at": "2026-11-09T21:10:44.824Z",
+  "publish": {
+    "mode": "instagram",
+    "media_id": "18139431397731720",
+    "facebook": {
+      "id": "876414312221880_122150302977099381",
+      "type": "album"
+    },
+    "threads": {
+      "id": "17994911145060933",
+      "type": "carousel"
+    }
+  }
 }
