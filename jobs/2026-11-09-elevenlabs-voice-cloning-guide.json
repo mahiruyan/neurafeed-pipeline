@@ -1,0 +1,272 @@
+{
+  "id": "2026-11-09-elevenlabs-voice-cloning-guide",
+  "format": "utility",
+  "site_only": true,
+  "created_at": "2026-11-09T20:40:00Z",
+  "story_time": "2026-11-09T20:40:00Z",
+  "timely": false,
+  "sensitive": false,
+  "priority": 2,
+  "review": true,
+  "sources": [
+    {
+      "name": "ElevenLabs docs: Instant Voice Cloning",
+      "url": "https://elevenlabs.io/docs/eleven-creative/voices/voice-cloning/instant-voice-cloning.mdx"
+    },
+    {
+      "name": "ElevenLabs docs: Text to Speech",
+      "url": "https://elevenlabs.io/docs/eleven-creative/playground/text-to-speech"
+    },
+    {
+      "name": "DataCamp",
+      "url": "https://www.datacamp.com/tutorial/elevenlabs-voice-cloning"
+    },
+    {
+      "name": "Dupple",
+      "url": "https://dupple.com/pricing/elevenlabs"
+    }
+  ],
+  "caption": "Cloning your voice in ElevenLabs takes about a minute or two of clean audio, not an hour.\nRecord one speaker, no echo, in the same style you want back, then start the sliders at Stability 50 and Similarity 75.\n\nWould you let an AI read your scripts in your own voice?\n\nFollow @neurafeed.ai for daily AI news.\n\nSource: ElevenLabs · Photo: ElevenLabs, DataCamp",
+  "threads_text": "ElevenLabs says one to two minutes of clean audio is enough for an instant voice clone, and more than three minutes can make it worse. The clone copies everything, including your mouth clicks. Would you use a clone of your own voice?",
+  "slides": [
+    {
+      "kind": "cover",
+      "headline": "How to clone your voice with ElevenLabs *in five steps*",
+      "image": {
+        "url": "https://elevenlabs.io/docs/_fern-files/_img/32b6abef4b76c8652b0e55dbb26c9694fdc82e191a062678b93c9a5ca5d80c94.webp",
+        "credit": "ElevenLabs",
+        "fallback_urls": [
+          "https://media.datacamp.com/cms/7cca956c6f5378a281162887e3396f4a.png"
+        ]
+      },
+      "pos": "center center"
+    },
+    {
+      "kind": "card",
+      "heading": "1. Record *one to two minutes*",
+      "paras": [
+        "ElevenLabs recommends about 1 to 2 minutes of clean audio. Going past 3 minutes adds little and can hurt the clone.",
+        "One speaker, no echo, no background noise."
+      ],
+      "image": {
+        "url": "https://media.datacamp.com/cms/7cca956c6f5378a281162887e3396f4a.png",
+        "credit": "DataCamp",
+        "fit": "contain"
+      }
+    },
+    {
+      "kind": "card",
+      "heading": "2. Talk the way you *want it back*",
+      "paras": [
+        "The clone copies everything: your speed, accent, breathing and even mouth clicks.",
+        "Slow, flat reading gives a slow, flat voice. Record in the style you need."
+      ],
+      "image": {
+        "url": "https://media.datacamp.com/cms/4f9a642daa709a53cec9390c73da8590.png",
+        "credit": "DataCamp",
+        "fit": "contain"
+      }
+    },
+    {
+      "kind": "card",
+      "heading": "3. Create the *clone*",
+      "paras": [
+        "Open Voices, click the plus icon and pick Instant Voice Clone. Upload or record your audio.",
+        "Name it, confirm you have the right and consent to clone the voice, then click Save voice."
+      ],
+      "image": {
+        "url": "https://elevenlabs.io/docs/_fern-files/_img/a1a2f62118fa246f300c666a5a4f3fbd18cc9bfed023a8c6a010782545da1254.webp",
+        "credit": "ElevenLabs",
+        "fit": "contain"
+      }
+    },
+    {
+      "kind": "card",
+      "heading": "4. Start the sliders *here*",
+      "paras": [
+        "ElevenLabs suggests Stability around 50, Similarity around 75 and Style at 0 as a starting point.",
+        "Lower Stability sounds more emotional but can turn erratic."
+      ],
+      "image": {
+        "url": "https://elevenlabs.io/docs/_fern-files/_img/9e08b179bfd640650ca5225b7e2e5b8d9d4c192d63a80d2478e4078e408bf869.webp",
+        "credit": "ElevenLabs",
+        "fit": "contain"
+      }
+    },
+    {
+      "kind": "card",
+      "heading": "5. Write for the *ear*",
+      "paras": [
+        "Spell numbers out as words and skip symbols and emojis. Misspellings are read as written.",
+        "On v3 and v4 models, tags like [whispers] or [laughs] change the delivery."
+      ],
+      "image": {
+        "url": "https://elevenlabs.io/docs/_fern-files/_img/aa32e23cc2a196a48ff47650249e612e7e5da023fd2f69244f27c5fea7968b75.webp",
+        "credit": "ElevenLabs",
+        "fit": "contain"
+      }
+    },
+    {
+      "kind": "cta",
+      "hook": "Follow for more AI tools explained step by step."
+    }
+  ],
+  "site_article": {
+    "kind": "guide",
+    "headline": "How to clone your voice with ElevenLabs: a step by step guide",
+    "dek": "An instant voice clone needs only a minute or two of clean audio. Here is how to record it, create the clone and set it up so it sounds like you.",
+    "summary": "ElevenLabs Instant Voice Cloning builds a copy of a voice from about one to two minutes of clean, single-speaker audio. The quality of the recording matters far more than its length, and the voice settings Stability 50, Similarity 75 and Style 0 are a sensible place to start.",
+    "seo_title": "ElevenLabs voice cloning: how to clone your voice step by step",
+    "seo_description": "How to clone your voice in ElevenLabs: how much audio to record, the exact steps, the best starting settings, and how to write text that sounds natural.",
+    "answer_summary": "To clone your voice in ElevenLabs, open Voices, click the plus icon, choose Instant Voice Clone, upload one to two minutes of clean audio, confirm consent and click Save voice. Instant cloning needs a paid plan, starting with Starter.",
+    "tags": [
+      "ElevenLabs",
+      "Voice cloning",
+      "Text to speech",
+      "AI audio",
+      "AI guides"
+    ],
+    "hero_alt": "Screenshot of the ElevenLabs Text to Speech page with a text box and voice controls.",
+    "paragraphs": [
+      {
+        "kind": "fact",
+        "text": "ElevenLabs can make a copy of your voice from a short recording and then read any text you type in that voice. The fast version is called Instant Voice Cloning. ElevenLabs recommends about one to two minutes of clear audio, and says going past three minutes brings little improvement and can sometimes make the clone worse.",
+        "sources": [
+          0
+        ]
+      },
+      {
+        "kind": "fact",
+        "text": "The short version: record one speaker in a quiet room, in the style you want back, create the clone under Voices, then start the sliders at Stability 50, Similarity 75 and Style 0. Everything below explains each step and what to do when the result sounds off.",
+        "sources": [
+          0,
+          1
+        ]
+      },
+      {
+        "kind": "heading",
+        "text": "What you need first"
+      },
+      {
+        "kind": "fact",
+        "text": "Instant Voice Cloning is not on the free plan. DataCamp's tutorial lists it from the Starter plan up, and Professional Voice Cloning from the Creator plan up. In October 2026, Dupple's pricing tracker listed Starter at $6 a month and Creator at $22 a month, and noted that the free plan has no commercial license. Check the current prices on the ElevenLabs site before you pay.",
+        "sources": [
+          2,
+          3
+        ]
+      },
+      {
+        "kind": "fact",
+        "text": "You also need the right to clone the voice. Before you save a clone, ElevenLabs asks you to confirm that you have the right and consent to clone it. Its documentation says generated audio can be traced back to the account that made it. Clone your own voice, or a voice whose owner has agreed.",
+        "sources": [
+          0
+        ]
+      },
+      {
+        "kind": "heading",
+        "text": "Record the sample"
+      },
+      {
+        "kind": "step",
+        "title": "1. Record one to two minutes of clean audio",
+        "text": "Use a quiet room with no echo. One speaker only, no music, no long silent gaps and no big jumps in volume. Each file must be at least 5 seconds and all files together at least 10 seconds, but aim for the one to two minutes ElevenLabs recommends. What counts is the total runtime, not how many files you upload."
+      },
+      {
+        "kind": "tip",
+        "text": "Export as MP3 at 128 kbps or higher. ElevenLabs says uncompressed WAV usually does not improve the clone and can cause upload problems. If you know your audio tools, the docs suggest a level between minus 23 and minus 18 dB RMS with a true peak of minus 3 dB."
+      },
+      {
+        "kind": "step",
+        "title": "2. Speak the way you want the clone to sound",
+        "text": "The model copies everything in the recording: speed, accent, tone, breathing, background noise and even mouth clicks. If you read slowly and flatly, the clone reads slowly and flatly. If you want an upbeat voice for videos, record an upbeat sample. Keep the same mic and the same delivery across every file."
+      },
+      {
+        "kind": "heading",
+        "text": "Create the clone"
+      },
+      {
+        "kind": "step",
+        "title": "3. Open Voices and choose Instant Voice Clone",
+        "text": "In the ElevenLabs dashboard, select Voices on the left and click the plus icon. In the window that opens, choose Instant Voice Clone, then follow the on-screen instructions to upload or record your audio."
+      },
+      {
+        "kind": "step",
+        "title": "4. Name it, confirm consent and save",
+        "text": "Give the clone a clear name and labels so you can find it later. Confirm that you have the right and consent to clone the voice, then click Save voice. To use it, go to Voices, open My Voices and click Use voice."
+      },
+      {
+        "kind": "heading",
+        "text": "Make it sound right"
+      },
+      {
+        "kind": "step",
+        "title": "5. Generate speech and set the sliders",
+        "text": "On the Text to Speech page, paste your text, pick your clone from your voices at the bottom left and click Generate. ElevenLabs names a common starting point: Stability around 50, Similarity around 75 and Style exaggeration at 0. Speed runs from 0.7 to 1.2, with 1.0 as the default."
+      },
+      {
+        "kind": "fact",
+        "text": "Each slider has a trade-off. Lower Stability gives a wider emotional range but can become erratic, while higher Stability sounds steadier but can turn monotone. High Similarity sticks closer to your sample, which also means it can reproduce noise from a poor recording. Style exaggeration adds latency and can reduce stability, so the docs recommend leaving it at 0. Speed, Similarity and Speaker Boost are not available on Eleven v3.",
+        "sources": [
+          1
+        ]
+      },
+      {
+        "kind": "step",
+        "title": "6. Pick the model for the job",
+        "text": "Eleven v4 is listed as the highest quality model and allows 10,000 characters per generation on the website. Eleven v3 is the expressive one for dramatic reads. Multilingual v2 is the steady choice for long narration. Flash v2.5 is the fast, lower cost option. For English only, ElevenLabs recommends an English model."
+      },
+      {
+        "kind": "heading",
+        "text": "Write text the voice can read"
+      },
+      {
+        "kind": "fact",
+        "text": "How you write the script changes the result. ElevenLabs advises writing numbers out as words and avoiding symbols and emojis, because they are read differently across languages. Misspellings are read exactly as written, and punctuation shapes the delivery: an ellipsis can add a pause but also some hesitation.",
+        "sources": [
+          1
+        ]
+      },
+      {
+        "kind": "prompt",
+        "title": "Script 1: An audio tag on Eleven v3 or v4",
+        "text": "[whispers] I have a secret to tell you. [laughs] Okay, it is not that big of a secret."
+      },
+      {
+        "kind": "prompt",
+        "title": "Script 2: A pause on Multilingual v2 or Flash",
+        "text": "Welcome back to the show. <break time=\"1.5s\" /> Today we are talking about one thing: sleep."
+      },
+      {
+        "kind": "tip",
+        "text": "Break tags work on Multilingual v2, Flash v2 and Flash v2.5, up to 3 seconds each. Too many of them can speed up the speech or add glitches, so use them sparingly. The v3 and v4 models use bracketed audio tags instead and do not support break tags."
+      },
+      {
+        "kind": "tip",
+        "text": "On the website, if you change nothing and the first take was less than two hours ago, you can regenerate the same line twice for free. Use those takes before you start rewriting text or moving sliders."
+      },
+      {
+        "kind": "heading",
+        "text": "What it is bad at"
+      },
+      {
+        "kind": "fact",
+        "text": "Instant clones can struggle with uncommon accents or very distinctive voices. You cannot change a clone's accent or tone after you make it; you have to record new samples. Clones are not identical each time you create them, so keep your original recordings. You also cannot download a clone as a file: it stays in your ElevenLabs account, though anyone with your API key can use it.",
+        "sources": [
+          0
+        ]
+      },
+      {
+        "kind": "fact",
+        "text": "If the instant clone is not close enough, Professional Voice Cloning trains on far more audio, from 30 minutes to about three hours, and usually takes three to six hours to fine-tune. It also requires a voice verification step. The clone works in the languages supported by Flash v2.5 and Multilingual v2; cloning a voice that speaks an unsupported language is not recommended.",
+        "sources": [
+          0,
+          2
+        ]
+      },
+      {
+        "kind": "analysis",
+        "text": "The main lesson is that quality beats quantity. A clean two minute recording made with a decent mic in the voice you actually want will beat ten minutes of noisy audio every time. Fix the recording first, the sliders second."
+      }
+    ]
+  }
+}
