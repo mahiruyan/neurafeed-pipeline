@@ -5041,5 +5041,62 @@
       }
     ],
     "requests": []
+  },
+  {
+    "run_at": "2026-11-09T02:53:40.310Z",
+    "summary": "Late Sunday night run (21:52 New York): no open links or requests (the four old October links are already in skipped.json); the New York day already has far more than 8 jobs and the last window closes at 22:00, so nothing was queued.",
+    "considered": [
+      {
+        "story": "Nvidia board investigates Jensen Huang after he admits an affair with a suspected Chinese spy",
+        "decision": "covered",
+        "reason": "Already queued as 2026-11-08-nvidia-board-probes-huang-alleged-spy (sensitive, waiting for approval)."
+      },
+      {
+        "story": "OpenAI raises $11 billion at a $1.25 trillion valuation",
+        "decision": "covered",
+        "reason": "Already posted as 2026-11-08-openai-11-billion-short-of-30-billion."
+      },
+      {
+        "story": "Anthropic buys $3.4 billion of gas generators",
+        "decision": "covered",
+        "reason": "Already queued as 2026-11-08-anthropic-buys-3-4-billion-gas-generators."
+      },
+      {
+        "story": "Apple CEO pushes for faster progress on AI",
+        "decision": "covered",
+        "reason": "Already queued as 2026-11-08-ternus-pushes-federighi-faster-ai."
+      },
+      {
+        "story": "AI voice clones of CEOs used to steal more than $129 million (NYT)",
+        "decision": "covered",
+        "reason": "Already queued as 2026-11-08-ai-cloned-ceos-stole-129-million."
+      },
+      {
+        "story": "Goldman Sachs pulls Claude Code from its bankers and traders",
+        "decision": "skipped",
+        "reason": "Still trending on Hacker News, but the original report is from November 2 and the day is over the cap."
+      },
+      {
+        "story": "OpenAI to acquire Pierre to expand Codex code review tools",
+        "decision": "skipped",
+        "reason": "Small developer-tools acquisition with little mainstream appeal, and the day is full."
+      },
+      {
+        "story": "Anthropic reportedly plans to complete its IPO before November 26 (SBS, Korean)",
+        "decision": "skipped",
+        "reason": "Single foreign-language report, not confirmed by a second source; worth checking in the morning run."
+      },
+      {
+        "story": "Regulation supporters win in US midterm elections, a defeat for AI companies (Ynetnews)",
+        "decision": "skipped",
+        "reason": "Politics story found at day end; needs mainstream US sourcing and would expire before the 07:00 window."
+      },
+      {
+        "story": "Llama-modchip: 284B DeepSeek on 64GB RAM with no GPU (Hacker News)",
+        "decision": "skipped",
+        "reason": "Niche hardware hack for developers."
+      }
+    ],
+    "requests": []
   }
 ]
