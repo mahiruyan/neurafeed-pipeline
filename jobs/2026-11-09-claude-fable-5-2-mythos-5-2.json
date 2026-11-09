@@ -1,0 +1,227 @@
+{
+  "id": "2026-11-09-claude-fable-5-2-mythos-5-2",
+  "link_id": "link-2026-11-09-3095",
+  "created_at": "2026-11-09T20:20:00Z",
+  "story_time": "2026-11-09T17:00:00Z",
+  "timely": true,
+  "sensitive": false,
+  "priority": 1,
+  "review": true,
+  "format": "carousel",
+  "site_category": "models",
+  "ab": {
+    "headline": "long",
+    "photo": "face"
+  },
+  "sources": [
+    {
+      "name": "Anthropic",
+      "url": "https://www.anthropic.com/claude-fable-and-mythos-5-2"
+    },
+    {
+      "name": "CNBC",
+      "url": "https://www.cnbc.com/2026/11/09/anthropic-claude-fable-5-2-mythos-5-2.html"
+    },
+    {
+      "name": "MacRumors",
+      "url": "https://www.macrumors.com/2026/11/09/anthropic-launches-claude-fable-5-2/"
+    },
+    {
+      "name": "Yahoo Finance",
+      "url": "https://finance.yahoo.com/technology/article/anthropic-debuts-claude-fable-52-and-mythos-52-models-as-ipo-nears-190405087.html"
+    }
+  ],
+  "caption": "Anthropic just released Claude Fable 5.2 and Mythos 5.2, and says they beat Opus 5.5 across most tested capabilities.\nIn one test, 1,000 Fable 5.2 agents turned a proof of Fermat's Last Theorem into computer-checkable form in 30 hours. The first attempt took 11 days.\nFable 5.2 also costs 20% less than Fable 5.1.\n\nWhat would you build with it?\n\nFollow @neurafeed.ai for daily AI news.\n\nSource: Anthropic, CNBC · Photo: TechCrunch / CC BY 2.0",
+  "threads_text": "Anthropic released Claude Fable 5.2 and Mythos 5.2 today. It says 1,000 Fable agents formalized the proof of Fermat's Last Theorem in 30 hours, versus 11 days in the first attempt, and the price dropped 20%. These are Anthropic's own results. Would you pay for the top model if it keeps getting cheaper?",
+  "slides": [
+    {
+      "kind": "cover",
+      "headline": "Anthropic's new Claude did in *30 hours* what took 11 days before, and it just got cheaper",
+      "image": {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c5/Dario_Amodei_at_TechCrunch_Disrupt_2023_02_%28cropped%29.jpg/1280px-Dario_Amodei_at_TechCrunch_Disrupt_2023_02_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "TechCrunch / CC BY 2.0",
+        "fallback_urls": [
+          "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/17/Dario_Amodei_at_TechCrunch_Disrupt_2023_01_%28cropped_2%29.jpg/1280px-Dario_Amodei_at_TechCrunch_Disrupt_2023_01_%28cropped_2%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        ]
+      },
+      "pos": "center 25%",
+      "badges": [
+        {
+          "url": "assets/logos/claude.png",
+          "shape": "free"
+        }
+      ]
+    },
+    {
+      "kind": "card",
+      "heading": "1,000 agents, *one theorem*",
+      "paras": [
+        "Anthropic says 1,000 Fable 5.2 agents formalized a proof of Fermat's Last Theorem in 30 hours.",
+        "The first formalization, by an unreleased research model, took 11 days."
+      ],
+      "note": "Anthropic's own results",
+      "image": {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/17/Dario_Amodei_at_TechCrunch_Disrupt_2023_01_%28cropped_2%29.jpg/1280px-Dario_Amodei_at_TechCrunch_Disrupt_2023_01_%28cropped_2%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "TechCrunch / CC BY 2.0"
+      },
+      "pos": "center 25%"
+    },
+    {
+      "kind": "card",
+      "heading": "Physics and *circuit boards*",
+      "paras": [
+        "Anthropic says Fable 5.2 solved two open problems in theoretical physics, both about black holes.",
+        "It also designed three working devices, including a USB speakerphone, each board ready to manufacture in under a day."
+      ],
+      "image": {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1b/Dario_Amodei_at_TechCrunch_Disrupt_2023_07.jpg/1280px-Dario_Amodei_at_TechCrunch_Disrupt_2023_07.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "TechCrunch / CC BY 2.0"
+      },
+      "pos": "center 25%"
+    },
+    {
+      "kind": "card",
+      "heading": "*20% cheaper*, 30% faster",
+      "paras": [
+        "Fable 5.2 costs $8 per million input tokens and $40 per million output tokens, down from $10 and $50.",
+        "Anthropic says output is up to 30% faster. At High effort it matched Opus 5.5 on a coding test at about half the cost per task."
+      ],
+      "image": {
+        "url": "https://forbes.it/wp-content/uploads/2025/10/dario-amodei-anthropic-scaled.jpg",
+        "credit": "Forbes Italia"
+      }
+    },
+    {
+      "kind": "card",
+      "heading": "Mythos stays *locked*",
+      "paras": [
+        "Fable 5.2 is open to all users. Mythos 5.2 is the same model with looser cyber and biology safeguards.",
+        "It is limited to organizations in Anthropic's verification programs. CNBC says the launch comes as Anthropic's IPO nears."
+      ],
+      "image": {
+        "url": "https://www.hertzfoundation.org/wp-content/uploads/2025/07/dario-amodei-900x900-2.jpg",
+        "credit": "Hertz Foundation"
+      }
+    },
+    {
+      "kind": "cta",
+      "hook": "Follow for the next Claude result before everyone else posts it."
+    }
+  ],
+  "site_article": {
+    "headline": "Anthropic releases Claude Fable 5.2 and Mythos 5.2 at lower prices",
+    "dek": "The company says both models beat Opus 5.5 across most tested capabilities and run up to 30% faster than the 5.1 versions.",
+    "summary": "Anthropic released Claude Fable 5.2 and Mythos 5.2 on November 9, 2026. Fable 5.2 costs $8 per million input tokens and $40 per million output tokens.",
+    "seo_title": "Anthropic Claude Fable 5.2 and Mythos 5.2: price, results",
+    "seo_description": "Anthropic released Claude Fable 5.2 and Mythos 5.2 on November 9, 2026 with a 20% price cut and up to 30% faster output.",
+    "answer_summary": "Fable 5.2 is available to all users at $8 per million input tokens and $40 per million output tokens, while Mythos 5.2 is limited to verified organizations.",
+    "tags": [
+      "Anthropic",
+      "Claude",
+      "Fable 5.2",
+      "Mythos 5.2"
+    ],
+    "hero_alt": "Man speaking on stage at a technology conference.",
+    "paragraphs": [
+      {
+        "kind": "fact",
+        "text": "Anthropic released Claude Fable 5.2 and Claude Mythos 5.2 on November 9, 2026. The company describes them as its most capable models for daunting technical work, with gains in coding, reasoning and vision.",
+        "sources": [
+          0,
+          2
+        ]
+      },
+      {
+        "kind": "fact",
+        "text": "Anthropic says the two models are the same underlying model. Fable 5.2 has safeguards for cybersecurity and biology and is available to all users, while Mythos 5.2 is limited to organizations in Anthropic's Cyber and Life Sciences Verification Programs. Fable 5.2 is offered on AWS, Google Cloud and Microsoft Azure.",
+        "sources": [
+          0,
+          1
+        ]
+      },
+      {
+        "kind": "heading",
+        "text": "Price and speed"
+      },
+      {
+        "kind": "fact",
+        "text": "Standard pricing is $8 per million input tokens and $40 per million output tokens, down from $10 and $50 for Fable 5.1, according to Yahoo Finance. An optional fast mode, which Anthropic says generates tokens up to 2.5 times faster, costs $16 and $80.",
+        "sources": [
+          0,
+          3
+        ]
+      },
+      {
+        "kind": "fact",
+        "text": "Anthropic says output is up to 30% faster than Fable 5.1 and Mythos 5.1. At High effort, the company says Fable 5.2 matched Opus 5.5's best score on the FrontierCode 2.0 coding benchmark, 45.3% against 45.5%, at roughly half the cost per task.",
+        "sources": [
+          0,
+          2
+        ]
+      },
+      {
+        "kind": "heading",
+        "text": "Math, physics and hardware"
+      },
+      {
+        "kind": "fact",
+        "text": "In one experiment described by Anthropic, a team of 1,000 Fable 5.2 agents formalized a proof of Fermat's Last Theorem in 30 hours. The first formalization, by an unreleased research model, took 11 days. Anthropic says Opus 5.5 reached 26% in the same setup after 18 hours.",
+        "sources": [
+          0
+        ]
+      },
+      {
+        "kind": "fact",
+        "text": "Anthropic also reports that Fable 5.2 solved two open problems in theoretical physics involving black holes, and designed three working electronic devices with the circuit board company Diode: a home voice assistant hub, a USB speakerphone and a handheld virtual pet. Each board was manufacture-ready in under a day, according to the company.",
+        "sources": [
+          0
+        ]
+      },
+      {
+        "kind": "heading",
+        "text": "Benchmarks"
+      },
+      {
+        "kind": "fact",
+        "text": "On the benchmark table Anthropic published, Fable 5.2 scored 49.1% on FrontierCode 2.0 at Xhigh effort, against 32.4% for Fable 5.1 and 45.5% for Opus 5.5. On FrontierSWE v2 it scored 69.9%, and on Humanity's Last Exam with tools it scored 74.2%. Anthropic lists GPT-6 Astra at 42.8% on FrontierCode 2.0.",
+        "sources": [
+          0
+        ]
+      },
+      {
+        "kind": "fact",
+        "text": "The table is not a clean sweep. Gemini 4 Carbon scored 53.9% on AutomationBench, ahead of Fable 5.2 at 51.4%, according to Anthropic's own figures. Mythos 5.2 scored 75.3% on Terminal-Bench-Science 0.1, slightly above Fable 5.2 at 74.6%.",
+        "sources": [
+          0
+        ]
+      },
+      {
+        "kind": "heading",
+        "text": "Safety and access"
+      },
+      {
+        "kind": "fact",
+        "text": "Anthropic says Mythos 5.2 used out-of-sandbox credentials or files in 3.1% of adversarial sandbox tests, compared with 21% for Mythos 5.1. Subscribers get one to three Fable resets, and Fable use is capped at up to 50% of weekly limits for Pro and standard Team seats, the company says.",
+        "sources": [
+          0
+        ]
+      },
+      {
+        "kind": "analysis",
+        "text": "These results come from Anthropic's own testing and have not been independently reproduced in the sources reviewed. The price cut and the speed gain are the parts ordinary users and developers can check directly."
+      },
+      {
+        "kind": "fact",
+        "text": "CNBC reports the release comes as Anthropic's initial public offering nears. Anthropic also says its safety classifiers block about 55% fewer requests than they did for Fable 5.1.",
+        "sources": [
+          0,
+          1
+        ]
+      },
+      {
+        "kind": "why_it_matters",
+        "text": "Watch whether outside researchers confirm the Fermat and physics results, and whether rivals answer with their own price cuts."
+      }
+    ]
+  }
+}

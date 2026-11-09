@@ -1,70 +1,5 @@
 [
   {
-    "run_at": "2026-11-02T19:01:32.528Z",
-    "summary": "14:00 New York run: no open links or requests; queued 1 priority 1 story (Anthropic's $17 billion third quarter and operating loss from its amended S-1). Nov 2 already had 8 desk jobs, so this is over the cap as a must-cover priority 1; two earlier Nov 2 jobs expired unposted.",
-    "considered": [
-      {
-        "story": "Anthropic amended S-1: $17B Q3 revenue, $567M operating loss, $895.4B commitments",
-        "source": "https://fortune.com/2026/11/02/anthropics-growth-slowed-and-costs-jumped-in-the-third-quarter-updated-ipo-filing-shows/",
-        "decision": "queued",
-        "job_id": "2026-11-02-anthropic-17-billion-quarter-loss",
-        "priority": 1
-      },
-      {
-        "story": "Marvell to buy Lumentum for about $80 billion in stock",
-        "source": "https://www.wsj.com/business/deals/marvell-to-buy-lumentum-for-80-billion-in-all-stock-ai-deal-c9fd43a6",
-        "decision": "skipped",
-        "reason": "Big chip deal but not one of the priority 1 companies, and the day is past its 8 job cap."
-      },
-      {
-        "story": "OpenAI signs deals with Magnite and PubMatic to fill ChatGPT ad space",
-        "source": "https://www.theinformation.com/briefings/exclusive-openai-sign-deals-magnite-pubmatic-fill-unused-chatgpt-ad-space",
-        "decision": "skipped",
-        "reason": "Single paywalled report from The Information that I could not read or confirm."
-      },
-      {
-        "story": "Apple's first home robot delayed",
-        "source": "https://www.theinformation.com/articles/inside-apples-slog-create-first-robot",
-        "decision": "skipped",
-        "reason": "Single paywalled report with no second source found."
-      },
-      {
-        "story": "Wired finds 400+ apps hiding deepfake tools",
-        "source": "https://www.wired.com/story/hundreds-of-mundane-ai-apps-are-hiding-abusive-deepfake-features/",
-        "decision": "skipped",
-        "reason": "Sensitive abuse topic and the day is already over its cap; can be revisited tomorrow."
-      },
-      {
-        "story": "Terence Tao on AI and 'Maths 2.0'",
-        "source": "https://www.newyorker.com/magazine/2026/11/09/the-year-math-changed-forever",
-        "decision": "skipped",
-        "reason": "Magazine feature, not breaking news, and no slot left today."
-      },
-      {
-        "story": "Abu Dhabi signs four OpenAI deals at ADIPEC",
-        "decision": "covered",
-        "reason": "Already covered as 2026-11-02-openai-adnoc-oil-fields-hours."
-      },
-      {
-        "story": "Anthropic plans $3.5B of IPO shares for Japanese investors",
-        "decision": "covered",
-        "reason": "Already posted as 2026-11-02-anthropic-ipo-3-5-billion-japan."
-      },
-      {
-        "story": "GDPx benchmark, best model scores 12%",
-        "decision": "covered",
-        "reason": "Already queued as 2026-11-02-gdpx-best-ai-scores-12-percent."
-      },
-      {
-        "story": "Viral 14T Mythos Hugging Face leak debunked",
-        "source": "https://cellcog.ai/blog/mythos-leak-hugging-face-fake/",
-        "decision": "skipped",
-        "reason": "Only a blog source, and a debunk of a rumor we never covered."
-      }
-    ],
-    "requests": []
-  },
-  {
     "run_at": "2026-11-02T20:56:07.820Z",
     "summary": "16:00 New York run: no open links or requests; nothing queued because Nov 2 is already past its 8 desk jobs and every priority 1 story in the leads is covered.",
     "considered": [
@@ -5128,6 +5063,20 @@
         "source": "https://fortune.com/2026/11/09/ai-rebounding-20-us-workers-replaced-higher-pay-job-security/",
         "decision": "skipped",
         "reason": "Already skipped this morning (survey from October 29), unchanged."
+      }
+    ],
+    "requests": []
+  },
+  {
+    "run_at": "2026-11-09T20:24:37.778Z",
+    "summary": "Link desk: queued Mahir's Instagram link (Evolving AI post) as a carousel on the Claude Fable 5.2 and Mythos 5.2 launch.",
+    "considered": [
+      {
+        "story": "Anthropic releases Claude Fable 5.2 and Mythos 5.2",
+        "source": "https://www.anthropic.com/claude-fable-and-mythos-5-2",
+        "decision": "queued",
+        "job_id": "2026-11-09-claude-fable-5-2-mythos-5-2",
+        "priority": 1
       }
     ],
     "requests": []
