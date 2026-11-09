@@ -312,8 +312,8 @@ Everything else stays the same, so the test only measures this one thing. Every 
 ## Utility posts (paused on Instagram; guides continue on the site)
 
 Until carousels reach more than about 1,500 views, no utility carousel is posted: every utility
-job gets `"site_only": true` (rendered for the website, never posted). The two daily guides
-continue (see "The guide on the website"). The rules below still apply to those jobs (`"format": "utility"`, `timely: false`,
+job gets `"site_only": true` (rendered for the website, never posted). Four guides a day
+continue (they bring most of the site's Google impressions) (see "The guide on the website"). The rules below still apply to those jobs (`"format": "utility"`, `timely: false`,
 `priority: 2`). Rotate between:
 - Prompt tips: 4 to 6 concrete prompts or prompt patterns for ChatGPT, Claude or Gemini, each with
   what it does, one `prompt` slide each. Only patterns that are documented by the vendor or that you can explain clearly.
@@ -349,8 +349,16 @@ article. Same job, same sources; the carousel is the teaser, the guide is the fu
   reader as "you" (guides only). No hype, no filler intros ("In today's fast-paced world"), no
   "unlock", "supercharge", "game-changer", no emojis. Lead with the payoff in the first two lines.
   Say honestly what the tool is bad at. Every step must be something the reader can do right now.
-- `headline`: clear and searchable, the tool name first ("ChatGPT Projects: how to set them up and
-  when to use them"). `seo_title` under 65 characters, `seo_description` under 160.
+- `headline` and `seo_title`: written as the words people type into Google, because Search Console
+  shows the site ranks around position 8 for exact searches ("chat gpt project memory", "apple m6
+  chip", "chatgpt not uploading files") but almost nobody clicks. Start with the search phrase:
+  "How to use ChatGPT Projects memory", "ChatGPT not uploading files: 6 fixes that work",
+  "Claude vs ChatGPT for coding", "What is Gemini Omni 1.2 Flash". Tool name in the first three
+  words, the question or task right after it, no clever or vague openings ("ChatGPT for everyday
+  work..."). `seo_title` under 65 characters, `seo_description` under 160 and says exactly what
+  the reader gets (the steps, the prompts, the fix).
+- Pick subjects people search for: a "how to", a fix for an error message, "X vs Y", "what is X"
+  for a new model or feature. Leads and the news of the last days show which tools are hot.
 - Validate with `validateSiteArticle` like news articles. The desk feed sends it to the site, where
   Mahir approves it on Telegram like any other article.
 

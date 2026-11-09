@@ -27,12 +27,14 @@ never miss a major story.
 3a2. Requests from Mahir: read inbox/requests.json and desk/log.json. Handle every open request
    as "Requests from Mahir and the desk log" in CLAUDE.md describes (new post, or a corrected
    `-v2` copy with `replaces`). They come right after links.
-3c. Utility: if no job with `"format": "utility"` exists for today (New York date) and it is
-   11:00 New York time or later, queue one (see "Utility posts" in CLAUDE.md).
+3c. Website guides: today (New York date) needs 4 guide jobs (`"format": "utility"`,
+   `"site_only": true`, see "Utility posts" in CLAUDE.md). From 07:00 New York time, if fewer than
+   4 exist for today, queue one per run (two when it is after 17:00 and still 2 or more short).
+   Site-only guides never post to Instagram and do not count toward the 8 jobs per day.
 3d. Sunday roundup: on Sunday, in the first run at or after 17:00 New York time, queue the weekly
    roundup if it does not exist yet (see "Weekly roundup" in CLAUDE.md).
 4. Queue 1 to 3 news jobs per run (on top of Reels from the inbox). If fewer than 4 jobs exist for today and it is after 13:00
-   New York time, add stories until today has at least 4. Never exceed 8 jobs per day.
+   New York time, add stories until today has at least 4. Never exceed 8 jobs per day (site-only guides not counted).
 5. For each job: read the original source and at least one independent second source.
    Write the job exactly as CLAUDE.md describes: 4 to 7 slides using the slide kinds in
    "Slide kinds" (cover, mostly `card` slides, `post` for real posts, then `cta`; never a
