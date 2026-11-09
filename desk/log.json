@@ -1,118 +1,5 @@
 [
   {
-    "run_at": "2026-11-01T23:02:47.566Z",
-    "summary": "Sunday evening run: queued the weekly roundup and one Claude malware story; no open links or requests.",
-    "considered": [
-      {
-        "story": "Week in AI roundup (Anthropic IPO, GPT-6.1 Terra, escaped models, Gemini 4 Carbon, $1 trillion selloff, GPT-Rosalind-6)",
-        "decision": "queued",
-        "job_id": "2026-11-01-week-in-ai",
-        "priority": 1
-      },
-      {
-        "story": "VOLTA Windows malware sends stolen data to Claude to rank victims (Cisco Talos)",
-        "source": "https://www.datastudios.org/post/cisco-talos-volta-infostealer-claude-kimi-gemini-openrouter-victim-profiling",
-        "decision": "queued",
-        "job_id": "2026-11-01-volta-malware-asks-claude-what-youre-worth",
-        "priority": 2
-      },
-      {
-        "story": "OpenAI raises less than half of its $30 billion target (WSJ)",
-        "decision": "covered",
-        "reason": "Same funding story as 2026-10-31-openai-cuts-funding-target-10-billion."
-      },
-      {
-        "story": "Anthropic orders Claude to stop remaking video games",
-        "decision": "covered",
-        "reason": "Already posted as 2026-10-31-claude-code-stops-remaking-video-games."
-      },
-      {
-        "story": "Sam Altman meets Samsung executives on memory chips",
-        "decision": "covered",
-        "reason": "Already queued as 2026-11-01-altman-50-samsung-executives-memory."
-      },
-      {
-        "story": "ChatGPT and Codex usage limits merging",
-        "decision": "covered",
-        "reason": "Already queued as 2026-11-01-chatgpt-codex-one-shared-limit."
-      },
-      {
-        "story": "AI agent swarms in Minecraft drown in bureaucracy (Tom's Hardware)",
-        "decision": "skipped",
-        "reason": "Fun but minor; the daily slots went to the roundup and a bigger Claude story."
-      },
-      {
-        "story": "Oracle NetSuite AI tools for cloud ERP",
-        "decision": "skipped",
-        "reason": "Enterprise product update with little US consumer interest."
-      },
-      {
-        "story": "Cognizant says 21,000 employees earned OpenAI badges",
-        "decision": "skipped",
-        "reason": "Corporate training announcement, low interest."
-      }
-    ],
-    "requests": []
-  },
-  {
-    "run_at": "2026-11-02T00:54:14.771Z",
-    "summary": "Sunday night run (19:53 New York, Nov 1): no open links or requests and no new priority 1 news; Nov 1 already has 8 desk jobs, so nothing was queued. Note: the weekly roundup 2026-11-01-week-in-ai was skipped by the pipeline because it shares a source link with 2026-10-30-ai-spending-fears-1-trillion-tech-selloff.",
-    "considered": [
-      {
-        "story": "OpenAI turns to Google TPUs to reduce reliance on NVIDIA (TechRadar)",
-        "source": "https://techradar.com/pro/openai-pledges-to-buy-google-ai-chips-in-its-first-move-away-from-depending-solely-on-nvidia",
-        "decision": "covered",
-        "reason": "Already covered as 2026-10-28-openai-buying-google-tpu-chips."
-      },
-      {
-        "story": "OpenAI raises less than half of its $30 billion target (WSJ)",
-        "decision": "covered",
-        "reason": "Same funding story as 2026-10-31-openai-cuts-funding-target-10-billion."
-      },
-      {
-        "story": "Anthropic says you can't be mean to Claude (KSL News)",
-        "decision": "skipped",
-        "reason": "Explainer on an older policy, not new news, and today's cap of 8 desk jobs is full."
-      },
-      {
-        "story": "OpenAI adds a direct board route for AI safety concerns (OpenTools)",
-        "decision": "skipped",
-        "reason": "Single minor outlet so far; hold for tomorrow if major outlets confirm it."
-      },
-      {
-        "story": "Google Chrome can use Gmail data for autofill suggestions (BetaNews)",
-        "decision": "skipped",
-        "reason": "Possible consumer story for tomorrow, but today's cap is full and it needs a second source."
-      },
-      {
-        "story": "Epoch puts OpenAI's Abilene site above 1M H100 equivalents (FourWeekMBA)",
-        "decision": "skipped",
-        "reason": "Secondhand summary of a research estimate; cap is full for today."
-      },
-      {
-        "story": "Fake 'Anthropic leak' on Hugging Face holds random-number tensors (FourWeekMBA)",
-        "decision": "skipped",
-        "reason": "Single low-tier source and a debunked non-event."
-      },
-      {
-        "story": "AI agent swarms in Minecraft drown in bureaucracy (Tom's Hardware)",
-        "decision": "skipped",
-        "reason": "Fun but minor, already passed on earlier today, and the cap is full."
-      },
-      {
-        "story": "Brazilian lawyers fined for a prompt injection hidden in a court filing (Tom's Hardware)",
-        "decision": "skipped",
-        "reason": "Held for the Nov 2 morning runs; today's cap is full."
-      },
-      {
-        "story": "DeepSeek launches an AI Super Agent (Digital Trends)",
-        "decision": "skipped",
-        "reason": "Still one source and not a priority company."
-      }
-    ],
-    "requests": []
-  },
-  {
     "run_at": "2026-11-02T02:53:44.267Z",
     "summary": "Sunday late run (21:52 New York, Nov 1): no open links or requests and no new priority 1 news; Nov 1 already has its full 8 desk jobs and the last window closes at 22:00, so nothing was queued.",
     "considered": [
@@ -5085,6 +4972,72 @@
         "source": "https://sergeykuhne.com/blog/fighting-ai-brain-fry",
         "decision": "skipped",
         "reason": "Single personal blog post, no news."
+      }
+    ],
+    "requests": []
+  },
+  {
+    "run_at": "2026-11-09T00:54:47.033Z",
+    "summary": "Sunday night run: no open links or requests; the New York day is already over the 8-post cap (6 desk posts out plus 3 approved waiting), and any timely story found now would expire before the 07:00 window, so nothing was queued.",
+    "considered": [
+      {
+        "story": "Nvidia board investigates Jensen Huang's ties to a possible Chinese spy",
+        "source": "https://techcrunch.com/2026/11/08/nvidia-says-its-investigating-ceo-jensen-huangs-relationship-with-possible-chinese-spy/",
+        "decision": "covered",
+        "reason": "Already queued as 2026-11-08-nvidia-board-probes-huang-alleged-spy (sensitive, waiting for approval)."
+      },
+      {
+        "story": "Apple is racing to make Siri more agentic",
+        "source": "https://www.theverge.com/ai-artificial-intelligence/1029552/apple-siri-ai-agentic",
+        "decision": "covered",
+        "reason": "Already queued as 2026-11-08-ternus-pushes-federighi-faster-ai."
+      },
+      {
+        "story": "Goldman Sachs pulls Claude Code and GitHub Copilot from bankers and traders",
+        "source": "https://the-decoder.com/goldman-sachs-pulls-ai-coding-tools-from-traders-and-bankers/",
+        "decision": "skipped",
+        "reason": "Trending on Hacker News tonight, but the Bloomberg report is from November 2, too old to post as news."
+      },
+      {
+        "story": "OpenAI raises $11 billion at a $1.25 trillion valuation",
+        "source": "https://247wallst.com/investing/2026/11/07/openai-just-raised-11-billion-at-a-1-25-trillion-valuation-below-the-1-4-trillion-it-first-sought/",
+        "decision": "covered",
+        "reason": "Already posted as 2026-11-08-openai-11-billion-short-of-30-billion."
+      },
+      {
+        "story": "Chicago law professor's Claude agent wiped a year of lecture notes",
+        "source": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQX2xqOXlkUFVLdnJ5cVBmTEo2MXl0cVBHYVVLN292Q0RJYWZaVXdKV0NMSWtqbUJmTXlJWUVaeUhSbU50VF92WGRUTE45TzBuSTU2RHktcXd3U2NsSTZkLVRTRElGOHVtLVZwelZ0Ri1VX2Zadjc1NWZpa3dITHNheklUNHloc2RmeEQyWURXM2gwWktDeFlGVDF0SlJBSjdVOUxGZ3NXVGlQc2dqT1BYMg?oc=5",
+        "decision": "covered",
+        "reason": "Already posted as 2026-11-08-claude-deleted-professor-lecture-notes."
+      },
+      {
+        "story": "Lawsuit says Google Gemini helped a 13-year-old plan her suicide on a school Chromebook",
+        "decision": "skipped",
+        "reason": "Today is already over the daily cap and this needs careful sourcing from mainstream outlets; leave it for the morning run to check."
+      },
+      {
+        "story": "xAI turns on text watermarking by default across the Grok API",
+        "source": "https://docs.x.ai/docs/guides/output-watermarking",
+        "decision": "skipped",
+        "reason": "Developer API change from November 7 with little appeal for normal users."
+      },
+      {
+        "story": "Amazon lets US shoppers text Alexa for Shopping to buy items",
+        "source": "https://www.theverge.com/tech/1028587/amazon-alexa-shopping-ai-text-orders",
+        "decision": "skipped",
+        "reason": "A few days old and the day is full; a candidate for a morning run if still relevant."
+      },
+      {
+        "story": "Mistral releases open weights for Mistral Large 4",
+        "source": "https://mistral.ai/news/mistral-large-4-oss",
+        "decision": "skipped",
+        "reason": "Developer-focused model release with limited US mainstream interest."
+      },
+      {
+        "story": "Goodbye Claude, hello Pi (Hacker News essay)",
+        "source": "https://caleb.software/posts/claude-to-pi.html",
+        "decision": "skipped",
+        "reason": "One developer's blog post, not news."
       }
     ],
     "requests": []
