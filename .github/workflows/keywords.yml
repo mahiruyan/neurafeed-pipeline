@@ -1,0 +1,18 @@
+name: Keyword research
+on: workflow_dispatch
+permissions:
+  contents: write
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: 22 }
+      - run: node tools/keywords.js > /tmp/keywords.json
+      - run: |
+          echo "::notice::$(node -e "const k=require('/tmp/keywords.json');console.log(k.length+' keywords')")"
+          git config user.name "neurafeed-bot"; git config user.email "bot@users.noreply.github.com"
+          git checkout --orphan keyword-research && git rm -rq --cached . && git clean -fdq -e node_modules
+          cp /tmp/keywords.json keywords.json && git add keywords.json && git commit -qm "keyword research $(date -u +%F)"
+          git push -fq origin keyword-research
