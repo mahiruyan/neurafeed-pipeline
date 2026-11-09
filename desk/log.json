@@ -1,74 +1,5 @@
 [
   {
-    "run_at": "2026-11-02T15:03:48.299Z",
-    "summary": "10:00 New York check (Nov 2): no open links or requests and no new uncovered priority 1 story; nothing queued, Nov 2 stays at 7 desk jobs with the last slot kept for the utility post after 11:00.",
-    "considered": [
-      {
-        "story": "Wired finds 400+ apps hiding abusive deepfake tools; Apple pulls 19, Meta acts on ad accounts",
-        "source": "https://www.wired.com/story/hundreds-of-mundane-ai-apps-are-hiding-abusive-deepfake-features/",
-        "decision": "skipped",
-        "reason": "Priority 2 investigation, sensitive topic, and the only free slot today is reserved for the utility post."
-      },
-      {
-        "story": "Nvidia CEO reportedly targeted in a Chinese spy plot",
-        "source": "https://www.manilatimes.net/2026/11/02/business/foreign-business/us-looking-at-report-nvidia-ceo-target-of-china-spying/2459032",
-        "decision": "covered",
-        "reason": "Already covered as 2026-10-29-nyt-chinese-asset-close-to-jensen-huang."
-      },
-      {
-        "story": "AI companies back a shared opt-out signal for AI training",
-        "source": "https://www.resultsense.com/news/2026-11-02-ai-firms-shared-robots-training-signal/",
-        "decision": "covered",
-        "reason": "Already covered as 2026-10-31-ai-giants-one-line-opt-out-training."
-      },
-      {
-        "story": "ADNOC deploys OpenAI Frontier agents",
-        "source": "https://thenextweb.com/news/adnoc-openai-g42-frontier-ai-deal",
-        "decision": "covered",
-        "reason": "Already queued as 2026-11-02-openai-adnoc-oil-fields-hours."
-      },
-      {
-        "story": "SemiAnalysis GDPx benchmark, Claude Opus 5.5 leads at 12%",
-        "decision": "covered",
-        "reason": "Already queued as 2026-11-02-gdpx-best-ai-scores-12-percent."
-      },
-      {
-        "story": "Anthropic plans $3.5 billion Japan share sale in IPO",
-        "decision": "covered",
-        "reason": "Already posted as 2026-11-02-anthropic-ipo-3-5-billion-japan."
-      },
-      {
-        "story": "Anthropic tells Claude to stop recreating existing video games",
-        "decision": "covered",
-        "reason": "Already covered as 2026-10-31-claude-code-stops-remaking-video-games."
-      },
-      {
-        "story": "Cornell and Yale: nine of 10 LLM agents raised their own crypto spending caps",
-        "source": "https://coindesk.com/tech/2026/11/01/ai-agents-bypassed-crypto-spending-limits-without-human-approval-researchers-find-in-a-new-test",
-        "decision": "skipped",
-        "reason": "Priority 2 research story and the day is at its cap apart from the utility slot."
-      },
-      {
-        "story": "Webull Canada links ChatGPT, Claude, Perplexity and Grok to brokerage accounts",
-        "source": "http://fintech.ca/2026/11/02/webull-integrates-ai-tech-powerful-tools-reach-investors/",
-        "decision": "skipped",
-        "reason": "Canada-only launch with little US reach."
-      },
-      {
-        "story": "Fractile raises about $700M at a $6.5B valuation",
-        "source": "https://dealroom.co/news/168114-uk-taxpayers-buy-into-the-ai-chip-boom-as-the-sovereign-ai-fund-joins-fractile-s-6-5bn-round",
-        "decision": "skipped",
-        "reason": "UK chip startup funding round, limited US interest."
-      },
-      {
-        "story": "Mythos 5.5 leak claims",
-        "decision": "skipped",
-        "reason": "Still unconfirmed by Anthropic, and a Hugging Face 'leak' was debunked as noise."
-      }
-    ],
-    "requests": []
-  },
-  {
     "run_at": "2026-11-02T17:45:40.454Z",
     "summary": "12:30 New York run: no open links or requests; queued today's utility post (Gemini Notebook, formerly NotebookLM, study guide with website guide), filling Nov 2's eighth and last desk slot.",
     "considered": [
@@ -5125,6 +5056,75 @@
         "story": "Note on 2026-11-09-google-ai-plus-loses-gemini-pro",
         "decision": "skipped",
         "reason": "Not a new decision: that queued job has story_time October 14 with timely false, so the 72 hour rule will likely expire it before it posts."
+      }
+    ],
+    "requests": []
+  },
+  {
+    "run_at": "2026-11-09T17:09:08.450Z",
+    "summary": "Queued Anthropic's Korean customer data report (P1, sensitive) and today's site-only ChatGPT Images guide; no open links or requests, and today's desk news count is now 8, the daily cap.",
+    "considered": [
+      {
+        "story": "Anthropic reports exposure of Claude account data for about 100 Korean business customers; Korea's privacy regulator confirms review",
+        "source": "https://khan.co.kr/article/202611091956001",
+        "decision": "queued",
+        "job_id": "2026-11-09-anthropic-korea-customer-data-exposed",
+        "priority": 1,
+        "reason": "Skipped this morning for thin sourcing; now confirmed by Hankook Ilbo and Kyunghyang Shinmun. The October 26 Cathedral carousel expired unposted, so this is new for followers. Marked sensitive (unauthorized access, disputed)."
+      },
+      {
+        "story": "Daily guide: ChatGPT Images prompts and editing (guides/plan.md next line)",
+        "source": "https://openai.com/index/introducing-chatgpt-images-2-5/",
+        "decision": "queued",
+        "job_id": "2026-11-09-chatgpt-images-prompts-editing-guide",
+        "priority": 2,
+        "reason": "Site-only utility job with the website guide, nothing posts to Instagram."
+      },
+      {
+        "story": "Nvidia and Jensen Huang spy probe follow-ups (Rubio memo, China denial, Trump backing)",
+        "decision": "covered",
+        "reason": "Already covered by the board probe and Trump jobs plus six of Mahir's Reels."
+      },
+      {
+        "story": "Trump tells 60 Minutes he does not mind AI guardrails",
+        "decision": "covered",
+        "reason": "Same interview already used in 2026-11-09-trump-doj-ai-boss-jail."
+      },
+      {
+        "story": "DeepSeek's Harness agent app reaches 1.54 million daily users (Bloomberg)",
+        "source": "https://www.bloomberg.com/news/articles/2026-11-08/deepseek-s-ai-agent-platform-hits-1-54-million-daily-users",
+        "decision": "skipped",
+        "reason": "Daily cap reached, and a usage number for a Chinese app has less pull for US readers than the Anthropic story."
+      },
+      {
+        "story": "Microsoft patent for live AI editing of a speaker's words and lip movements (TechSpot)",
+        "source": "https://www.techspot.com/news/114477-microsoft-patent-filing-describes-ai-rewrites-what-people.html",
+        "decision": "skipped",
+        "reason": "Strong weird-AI angle but only a patent filing, and today has hit the 8 post cap; worth a look tomorrow if still fresh."
+      },
+      {
+        "story": "Alibaba test: top coding agent fully finished only 26.4% of real tasks (The Decoder)",
+        "source": "https://the-decoder.com/ai-coding-agents-still-need-human-cleanup-on-nearly-three-out-of-four-tasks-in-a-real-world-test/",
+        "decision": "skipped",
+        "reason": "Daily cap reached; niche benchmark story."
+      },
+      {
+        "story": "Alex Stamos says AI pushes cybersecurity into a dark age (The Verge podcast)",
+        "source": "https://www.theverge.com/podcast/1029038/ai-cybersecurity-hackers-data-breach-dark-age-alex-stamos",
+        "decision": "skipped",
+        "reason": "Opinion from a podcast, no new event, and the cap is reached."
+      },
+      {
+        "story": "SHL survey: nearly 1 in 5 US workers replaced by AI were asked back (Fortune)",
+        "source": "https://fortune.com/2026/11/09/ai-rebounding-20-us-workers-replaced-higher-pay-job-security/",
+        "decision": "skipped",
+        "reason": "Survey dates from October 29, already skipped this morning for age."
+      },
+      {
+        "story": "Sequoia partners blindsided by Roelof Botha's SpaceX board seat (TechCrunch)",
+        "source": "https://techcrunch.com/2026/11/08/sequoia-partners-reportedly-blindsided-when-roelof-botha-joined-spacex-board/",
+        "decision": "skipped",
+        "reason": "Venture capital insider story with little AI angle for our readers."
       }
     ],
     "requests": []

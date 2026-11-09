@@ -1,0 +1,120 @@
+{
+  "id": "2026-11-09-anthropic-korea-customer-data-exposed",
+  "created_at": "2026-11-09T17:20:00Z",
+  "story_time": "2026-11-09T10:56:00Z",
+  "timely": true,
+  "sensitive": true,
+  "priority": 1,
+  "review": true,
+  "format": "carousel",
+  "site_category": "companies",
+  "ab": {
+    "headline": "long"
+  },
+  "sources": [
+    { "name": "Hankook Ilbo", "url": "https://www.hankookilbo.com/news/article/A2026110921140004704" },
+    { "name": "Kyunghyang Shinmun", "url": "https://khan.co.kr/article/202611091956001" },
+    { "name": "Data Studios", "url": "https://www.datastudios.org/post/anthropic-claude-account-data-exposure-100-korean-companies-cathedral-pipc" },
+    { "name": "RuntimeWire", "url": "https://runtimewire.com/article/anthropic-customer-notice-unnamed-security-firm-access" }
+  ],
+  "caption": "Anthropic has reported to South Korea's privacy regulator that account details of about 100 Korean business customers of Claude were exposed.\nThe security startup Cathedral reached names, emails and plan details through outside business software, an Anthropic staffer said.\nAnthropic says prompts, outputs and payment data were not accessed.\n\nWould this change how much you trust an AI company with your work data?\n\nFollow @neurafeed.ai for daily AI news.\n\nSource: Hankook Ilbo, Kyunghyang Shinmun · Photo: imagnav.com",
+  "threads_text": "Anthropic told South Korea's privacy regulator that account details of about 100 Korean business customers of Claude were exposed when the security startup Cathedral got into its internal tools. Names, emails and plan details, but not prompts or payment data, the company says. Would this make you trust AI companies less with your work?",
+  "slides": [
+    {
+      "kind": "cover",
+      "headline": "Anthropic admits an outside firm saw Claude customers' names, emails and plans. *About 100 Korean business accounts* hit",
+      "image": {
+        "url": "https://imagnav.com/wp-content/uploads/2025/12/Dario-e1767304655998.webp",
+        "credit": "imagnav.com",
+        "fallback_urls": [
+          "https://media.licdn.com/dms/image/v2/D4D12AQFmNNvNUCdj-g/article-cover_image-shrink_720_1280/B4DZWj4IYEHAAI-/0/1742211155864?e=2147483647&v=beta&t=IA6Dz-8PTGAlFTrxzW1lgOavByi-zD17PKtcpuapNOQ"
+        ]
+      },
+      "pos": "center 30%",
+      "badges": [
+        { "url": "assets/logos/anthropic.png", "shape": "free" },
+        { "url": "assets/logos/claude.png", "shape": "free" }
+      ]
+    },
+    {
+      "kind": "card",
+      "heading": "What was *seen*",
+      "paras": [
+        "Security startup Cathedral accessed Claude account information such as names, emails and plan details without authorization, Anthropic's Lydia Hallie said on X.",
+        "Prompts, outputs and payment data were not accessed, she said."
+      ],
+      "image": {
+        "url": "https://techstartups.com/wp-content/uploads/2024/06/Anthropic.jpg",
+        "credit": "Tech Startups",
+        "fallback_urls": ["https://cdn.nairametrics.com/wp-content/uploads/2026/09/anthropic-1.webp"]
+      }
+    },
+    {
+      "kind": "card",
+      "heading": "Reported in *Korea*",
+      "paras": [
+        "On October 31, Anthropic told South Korea's privacy regulator that about 100 Korean business accounts were affected.",
+        "The regulator confirmed the report on November 9. It is reviewing it but has not opened a formal investigation."
+      ],
+      "image": {
+        "url": "https://storage.ghost.io/c/2a/1b/2a1b1782-8506-4d7d-bf53-ad3fb52e2a0f/content/images/size/w2000/2026/10/1714580635_anthropic.jpg",
+        "credit": "TestingCatalog",
+        "fallback_urls": ["https://techstartups.com/wp-content/uploads/2026/10/Anthropic-third-quarter-revenue-jumps-45-to-16.8-billion-ahead-of-blockbuster-2-trillion-IPO.jpg"]
+      }
+    },
+    {
+      "kind": "card",
+      "heading": "The way *in*",
+      "paras": [
+        "The Washington Post reported on October 26 that Cathedral reached Anthropic's internal systems through a flaw in outside business software.",
+        "Anthropic says it blocked the affected systems the day it found out and fixed the flaw with its vendor."
+      ],
+      "image": {
+        "url": "https://www.engadget.com/img/gallery/anthropic-now-offers-a-free-vulnerability-finding-service-for-open-source-software/intro-1791544973.jpg",
+        "credit": "Michael M. Santiago / Getty Images",
+        "fallback_urls": ["https://www.csoonline.com/wp-content/uploads/2026/10/4239028-0-61091200-1792669672-shutterstock_2427719361.jpg?quality=50&strip=all&w=1024"]
+      }
+    },
+    {
+      "kind": "card",
+      "heading": "What customers were *told*",
+      "paras": [
+        "A notice to some business customers says account IDs, work contacts, and usage and spending amounts may have been exposed, Korean outlets report.",
+        { "t": "Anthropic and Cathedral still dispute whether the access was authorized.", "strong": true }
+      ],
+      "image": {
+        "url": "https://www.pymnts.com/wp-content/uploads/2026/08/Anthropic-Nscale-1.jpg",
+        "credit": "Finn Gomez / Getty Images",
+        "fallback_urls": ["https://news.stocktwits-cdn.com/large_Getty_Images_2297777279_225c04fb05.jpg"]
+      }
+    },
+    {
+      "kind": "cta",
+      "hook": "Regulators are now looking at what AI companies hold about their customers. Follow to see what Korea decides."
+    }
+  ],
+  "site_article": {
+    "headline": "Anthropic reports exposure of Claude account data for about 100 Korean business customers",
+    "dek": "The company says a security startup reached names, emails and plan details through third party software, but not prompts, outputs or payment data.",
+    "summary": "Anthropic reported to South Korea's Personal Information Protection Commission on October 31, 2026 that account information tied to about 100 Korean enterprise customers of Claude was exposed. The regulator confirmed the report on November 9 and is reviewing it without a formal investigation so far.",
+    "seo_title": "Anthropic reports Claude account data exposure in Korea",
+    "seo_description": "Anthropic told Korea's privacy regulator that Claude account data of about 100 business customers was exposed after security startup Cathedral got in.",
+    "answer_summary": "Names, email addresses, account IDs and plan details of about 100 Korean business customers of Claude may have been exposed. Anthropic says prompts, outputs and payment data were not accessed.",
+    "tags": ["Anthropic", "Claude", "Data breach", "Cathedral", "South Korea", "Privacy"],
+    "hero_alt": "Portrait of Anthropic chief executive Dario Amodei with a serious expression.",
+    "paragraphs": [
+      { "kind": "fact", "text": "Anthropic has reported to South Korea's Personal Information Protection Commission that account information belonging to about 100 Korean enterprise customers of its Claude service was exposed, according to the Korean newspapers Hankook Ilbo and Kyunghyang Shinmun. The company filed the report on October 31, 2026, and the commission confirmed on November 9 that it had received it.", "sources": [0, 1] },
+      { "kind": "fact", "text": "The exposure is linked to Cathedral, a US security startup that reached Anthropic's internal business systems through a vulnerability in third party business software. The Washington Post first reported that access on October 26, 2026, according to both Korean outlets.", "sources": [0, 1, 2] },
+      { "kind": "heading", "text": "What information was involved" },
+      { "kind": "fact", "text": "Lydia Hallie, a member of Anthropic's technical staff, wrote on X that Cathedral accessed account information such as names, email addresses and plan details without authorization. She said prompts, model outputs and payment information were not accessed, according to Kyunghyang Shinmun and Data Studios.", "sources": [1, 2] },
+      { "kind": "fact", "text": "A notice that Anthropic sent to some business customers lists a wider set of items that may have been exposed. According to Kyunghyang Shinmun and Hankook Ilbo, it names account and organization identifiers, names and email addresses, work contact details, and usage and spending amounts. Data Studios noted that the spending detail appears in secondary summaries of the notice and has not been confirmed in Anthropic's public statements.", "sources": [0, 1, 2] },
+      { "kind": "fact", "text": "RuntimeWire, which based its account on a thread by security researcher Jamieson O'Reilly quoting the customer email, reported on November 7 that the notice did not name the security firm and said Anthropic could not confirm whose information had been viewed, while telling recipients they faced no heightened risk.", "sources": [3] },
+      { "kind": "heading", "text": "Anthropic's response and the regulator's review" },
+      { "kind": "fact", "text": "Anthropic said it blocked the affected systems on the day it learned of the incident and worked with the software vendor to close the vulnerability, Hankook Ilbo reported. When the incident first became public in October, the company described the access as limited to a set of sales, human resources and IT platforms that run on third party software, according to Data Studios.", "sources": [0, 2] },
+      { "kind": "fact", "text": "The Personal Information Protection Commission said it is reviewing the report but has not yet opened a formal investigation. For companies based outside Korea, the commission may first request documents before starting a probe, which can add time, and it said it would examine the scale of the damage once a formal investigation begins, according to both newspapers.", "sources": [0, 1] },
+      { "kind": "fact", "text": "Anthropic and Cathedral disagree about whether the access counted as authorized security research under Anthropic's vulnerability disclosure program, Data Studios reported. Anthropic has not published a global count of affected accounts, and it is not yet known which other regulators were notified.", "sources": [2] },
+      { "kind": "analysis", "text": "The exposed data does not include the content of conversations with Claude, which is what most business customers worry about first. Contact details combined with plan and account identifiers can still be useful to attackers writing convincing phishing messages, so the practical risk for affected companies lies in fake billing or account requests that look authentic. The case also shows that an AI company's exposure often runs through the ordinary office software it uses rather than through its models." },
+      { "kind": "why_it_matters", "text": "Watch whether Korea's Personal Information Protection Commission opens a formal investigation, and whether Anthropic discloses how many customers outside Korea received the same notice." }
+    ]
+  }
+}

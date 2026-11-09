@@ -1,0 +1,106 @@
+{
+  "id": "2026-11-09-chatgpt-images-prompts-editing-guide",
+  "format": "utility",
+  "site_only": true,
+  "created_at": "2026-11-09T17:20:00Z",
+  "story_time": "2026-11-09T17:20:00Z",
+  "timely": false,
+  "sensitive": false,
+  "priority": 2,
+  "review": true,
+  "sources": [
+    { "name": "OpenAI: Introducing ChatGPT Images 2.5", "url": "https://openai.com/index/introducing-chatgpt-images-2-5/" },
+    { "name": "OpenAI Developer Community: Introducing ChatGPT Images 2.6", "url": "https://community.openai.com/t/images-upgraded-introducing-chatgpt-images-2-6/1412901" },
+    { "name": "RuntimeWire", "url": "https://runtimewire.com/article/openai-chatgpt-images-2-6-gifs-flare-sunburst-api" },
+    { "name": "DataCamp", "url": "https://www.datacamp.com/blog/chatgpt-images-2-5" }
+  ],
+  "caption": "ChatGPT's image tool now edits only what you ask for and keeps the rest of the picture.\nThe trick is to say what must stay the same, change one thing at a time, and use a sketch when words fail.\n\nWhat is the best thing you made with ChatGPT images?\n\nFollow @neurafeed.ai for daily AI news.\n\nSource: OpenAI · Photo: OpenAI via The Verge",
+  "threads_text": "ChatGPT's image tool works best when you change one thing at a time and say what must stay the same. Type @Sketch to draw a rough layout, and you can now turn a picture into a GIF. What do you use ChatGPT images for?",
+  "slides": [
+    {
+      "kind": "cover",
+      "headline": "ChatGPT image prompts that *actually work*: 5 tricks for better pictures and edits",
+      "image": {
+        "url": "https://the-decoder.com/wp-content/uploads/2026/11/chatgpt_gifs_openai_theverge.png",
+        "credit": "OpenAI via The Verge",
+        "fallback_urls": ["https://www.unite.ai/wp-content/uploads/2026/11/chatgpt-adds-animated-gif-creation-and-editing-with-images-2-6.jpg"]
+      },
+      "pos": "center center",
+      "badges": [{ "url": "assets/logos/openai.png", "fit": "contain" }]
+    },
+    {
+      "kind": "prompt",
+      "heading": "1. Say what must *stay the same*",
+      "paras": ["When you edit a photo, name what has to stay: the face, the hair, the pose."],
+      "prompt": "Change only the background to a snowy mountain road. Keep my face, hair, clothes and pose exactly the same."
+    },
+    {
+      "kind": "prompt",
+      "heading": "2. Change *one thing* at a time",
+      "paras": ["OpenAI says edits now change only what you ask for. Small, separate requests work best."],
+      "prompt": "Now make the jacket dark green. Do not change anything else."
+    },
+    {
+      "kind": "prompt",
+      "heading": "3. Draw it with *@Sketch*",
+      "paras": ["Type @Sketch, draw a rough layout, then add a style. It helps when position is hard to describe."],
+      "prompt": "@Sketch Turn my drawing into a soft watercolor of a cat on a windowsill, warm morning light."
+    },
+    {
+      "kind": "prompt",
+      "heading": "4. Leave *placeholders*",
+      "paras": ["For posters, give the details and the mood. Mark what you do not know yet."],
+      "prompt": "Poster for a backyard movie night. Cozy, warm colors. Title: Movie Night. Date: [DATE]. Place: [ADDRESS]."
+    },
+    {
+      "kind": "prompt",
+      "heading": "5. Make it *move*",
+      "paras": ["With Images 2.6, a prompt or a picture can become a GIF. You can change the speed and edit single frames."],
+      "prompt": "Turn this photo of my dog into a short looping GIF of him wagging his tail."
+    },
+    {
+      "kind": "cta",
+      "hook": "Follow for more AI tools explained in plain words."
+    }
+  ],
+  "site_article": {
+    "kind": "guide",
+    "headline": "ChatGPT Images: how to write image prompts and edit pictures that come out right",
+    "dek": "ChatGPT can now change one part of a picture and leave the rest alone. Here is how to prompt it, edit with it and turn images into GIFs.",
+    "summary": "ChatGPT Images 2.5 and 2.6 make targeted edits, follow rough sketches and can turn a picture into an animated GIF. The best results come from saying what must stay the same, changing one thing per request and marking unknown details as placeholders.",
+    "seo_title": "ChatGPT Images: prompts and editing tips that work",
+    "seo_description": "How to write ChatGPT image prompts, make targeted edits, use @Sketch and templates, and turn pictures into GIFs with Images 2.6. Prompts to copy.",
+    "answer_summary": "Describe the image you want, then edit in small steps: say what must stay the same and change one thing per request. Type @Sketch to draw a layout, and use a picture or prompt to make a GIF.",
+    "tags": ["ChatGPT", "OpenAI", "AI images", "Prompts", "AI guides"],
+    "hero_alt": "Screens showing animated GIF frames made with ChatGPT's image tool.",
+    "paragraphs": [
+      { "kind": "fact", "text": "ChatGPT makes and edits pictures right inside a chat. Since Images 2.5 arrived on September 8, 2026, OpenAI says edits change only what you ask for and keep the rest of the image intact, and earlier edits tend to stick across a long conversation. Images 2.5 rolled out to all ChatGPT tiers on desktop, mobile and web.", "sources": [0] },
+      { "kind": "fact", "text": "Images 2.6 followed on November 4, 2026. It adds animated GIFs and reference images you save once and reuse, and it is available across all subscription tiers on desktop, mobile and web, according to OpenAI's announcement and RuntimeWire.", "sources": [1, 2] },
+      { "kind": "fact", "text": "The short version of this guide: describe the picture, then fix it in small steps. Say what must stay the same, change one thing per message, and use a sketch when words are not enough. The prompts below are ready to copy.", "sources": [0, 3] },
+      { "kind": "heading", "text": "Start with a clear first prompt" },
+      { "kind": "tip", "text": "Write the subject first, then the setting, then the style and light. You do not need a long paragraph. A clear sentence or two beats a list of twenty adjectives, because every extra word is one more thing the model has to balance." },
+      { "kind": "prompt", "title": "Prompt 1: A clean first image", "text": "A close-up photo of a ceramic coffee mug on a wooden kitchen table, morning sunlight from a window on the left, soft shadows, calm and warm." },
+      { "kind": "fact", "text": "OpenAI's own example for Images 2.5 shows the style it handles well: concrete details about what a person wears and what surrounds them. Its sample prompt for a 1980s portrait begins with a smiling man with curly hair in a teal, navy and pink windbreaker and a gold chain, then adds the lights and a boombox.", "sources": [0] },
+      { "kind": "heading", "text": "Edit in small steps" },
+      { "kind": "fact", "text": "Editing is where the tool is strongest. DataCamp's hands-on test found that local edits, such as a new background, a changed line of text or one swapped object, work best, and that the rest of the picture holds up when the change is small and targeted. Moving several objects at once or re-posing a person can break consistency and leave artifacts outside the edited area.", "sources": [3] },
+      { "kind": "step", "title": "1. Upload your photo or start from a generated image", "text": "Add the picture to the chat, or make one with a first prompt." },
+      { "kind": "step", "title": "2. Name what must not change", "text": "If a face, a logo or a product shape matters, say so in the same message as the edit." },
+      { "kind": "prompt", "title": "Prompt 2: Keep the person, change the scene", "text": "Change only the background to a quiet beach at sunset. Keep my face, hairstyle, clothes and pose exactly the same." },
+      { "kind": "step", "title": "3. Ask for one change per message", "text": "Treat each follow-up as its own small request. If the date on a poster is wrong, ask to change that date, not to redo the whole poster." },
+      { "kind": "prompt", "title": "Prompt 3: One fix at a time", "text": "Change the date on the poster to [NEW DATE]. Do not change anything else." },
+      { "kind": "fact", "text": "You can also point at the exact spot. OpenAI says Images 2.5 lets you place comments directly on an image for focused edits, so the model knows which area you mean without a long description.", "sources": [0] },
+      { "kind": "heading", "text": "Use @Sketch and templates" },
+      { "kind": "fact", "text": "Type @Sketch in ChatGPT to draw directly in the chat and use the drawing as a guide. OpenAI says adding a style description helps. DataCamp found a sketch most useful for spatial details, such as where two characters stand, that are awkward to put into words. You do not need to draw well.", "sources": [0, 3] },
+      { "kind": "prompt", "title": "Prompt 4: Sketch to finished picture", "text": "@Sketch Turn my drawing into a children's book illustration: a small fox on the left, a big tree on the right, soft pastel colors." },
+      { "kind": "fact", "text": "Templates give you a starting format such as Poster or Merch. You then add the content, the design elements and the style, OpenAI says. They are good for repeat formats, though DataCamp notes they leave less room for open-ended ideas.", "sources": [0, 3] },
+      { "kind": "prompt", "title": "Prompt 5: A poster with placeholders", "text": "Poster for a neighborhood yard sale. Friendly, bright colors, hand-drawn feel.\nTitle: Yard Sale\nDate: [DATE]\nAddress: [ADDRESS]\nLeave space at the bottom for a small map." },
+      { "kind": "tip", "text": "Mark anything you do not know yet with brackets, like [DATE]. DataCamp's tests suggest giving the event details and the mood, then marking unknowns as placeholders, so you can fill them in later with a one-line edit." },
+      { "kind": "heading", "text": "Reuse faces and make GIFs" },
+      { "kind": "fact", "text": "With Images 2.6 you can save reference images of yourself, your pets and recurring characters and reuse them without uploading them again, OpenAI says. You can also turn a prompt or an image into an animated GIF, then adjust the speed and edit individual frames before you share it.", "sources": [1, 2] },
+      { "kind": "prompt", "title": "Prompt 6: A reaction GIF", "text": "Make a short looping GIF of my saved cat character waking up, stretching and yawning. Simple, clean background." },
+      { "kind": "heading", "text": "What it still gets wrong" },
+      { "kind": "fact", "text": "Text is still a weak spot, especially small or dense type. Hair edges in portrait edits can look rough, and results can still have a recognizable AI look, according to DataCamp's review. Every image carries C2PA metadata and an invisible watermark that marks it as made with OpenAI tools, the company says.", "sources": [0, 3] },
+      { "kind": "tip", "text": "If a long edit starts drifting, do not keep stacking fixes. Go back to the last good version, restate what must stay the same, and make the next change on its own." }
+    ]
+  }
+}
