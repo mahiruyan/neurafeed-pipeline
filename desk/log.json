@@ -1,57 +1,5 @@
 [
   {
-    "run_at": "2026-11-03T19:05:35.297Z",
-    "summary": "14:00 New York run: made the Reel from Mahir's MOM link (MrBeast AGI Challenge) and set it to post without approval as he asked; today already has 8 news jobs (the cap), so no new news was queued.",
-    "considered": [
-      {
-        "story": "Someone made a MrBeast style $1,000,000,000,000 AGI Challenge video (Mahir's link)",
-        "source": "https://x.com/mom_agency_/status/2117621900830458269",
-        "decision": "queued",
-        "job_id": "2026-11-03-mrbeast-trillion-dollar-agi-challenge-reel",
-        "priority": 1
-      },
-      {
-        "story": "EU court adviser sides with publishers in the Gemini copyright case",
-        "source": "https://www.mlex.com/mlex/articles/2536701",
-        "decision": "skipped",
-        "reason": "Non-binding EU legal opinion on a Hungarian case, low US interest, and the day is at the 8-job cap."
-      },
-      {
-        "story": "Google lets schools turn off Search entirely if they do not want AI",
-        "decision": "skipped",
-        "reason": "Narrow education policy change, and the day is at the 8-job cap."
-      },
-      {
-        "story": "Google researchers demand freedom to share what they know about AI (Washington Post)",
-        "decision": "skipped",
-        "reason": "Only one report seen, and the day is at the 8-job cap."
-      },
-      {
-        "story": "Binance says fake job interviews and AI tool abuse led to the $6.43 billion theft",
-        "decision": "skipped",
-        "reason": "Follow-up to the Binance heist we already covered on October 30; day is full."
-      },
-      {
-        "story": "TechCrunch: Anthropic is still grappling with the economics of compute",
-        "decision": "covered",
-        "reason": "Same ground as 2026-11-02-anthropic-17-billion-quarter-loss."
-      },
-      {
-        "story": "Terence Tao on math after OpenAI's 372 proofs",
-        "decision": "skipped",
-        "reason": "Commentary piece with no new event, and no slot left today."
-      }
-    ],
-    "requests": [
-      {
-        "id": "req-2026-11-03-d63913fe",
-        "status": "done",
-        "job_id": "2026-11-03-mrbeast-trillion-dollar-agi-challenge-reel",
-        "result": "Made the Reel from your MOM link with your headline and marked it approved by you, so it posts as soon as it is rendered. The caption says the clip appears to be AI-generated."
-      }
-    ]
-  },
-  {
     "run_at": "2026-11-03T21:08:31.734Z",
     "summary": "Queued 1 priority 1 story (Google makes school AI opt-in but no AI means no Search); today already had 8 desk jobs, so no utility post and no further news.",
     "considered": [
@@ -5361,6 +5309,21 @@
         "job_id": "2026-11-10-how-to-use-n8n-free-ai-agent-guide",
         "priority": 2,
         "reason": "Fourth site-only guide of the day, built from n8n's docs, template and blog plus Techsy."
+      }
+    ],
+    "requests": []
+  },
+  {
+    "run_at": "2026-11-10T20:51:47.821Z",
+    "summary": "Link desk: queued Mahir's X clip from @Akhtar7x1 as a Reel with his title as the hook.",
+    "considered": [
+      {
+        "story": "Clip from @Akhtar7x1 on X: 'Imagine using your own technology...'",
+        "source": "https://x.com/akhtar7x1/status/2120095446316290521",
+        "decision": "queued",
+        "job_id": "2026-11-10-own-technology-joke-reel",
+        "priority": 1,
+        "reason": "Mahir's link (link-2026-11-10-3294). X could not be opened from here, so the caption stays neutral; hook is his title word for word. The clip belongs to @Akhtar7x1 and is credited; check in the preview whether it carries another page's branding."
       }
     ],
     "requests": []
