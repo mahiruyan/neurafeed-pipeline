@@ -1,65 +1,5 @@
 [
   {
-    "run_at": "2026-11-03T11:06:32.006Z",
-    "summary": "6:00 New York run: no open links or requests; queued Anthropic's IPO filing warning that self-building AI may be imminent (priority 1, waits for Mahir's approval).",
-    "considered": [
-      {
-        "story": "Anthropic's amended S-1 says it may imminently meet its RSP threshold for AI-accelerated progress (recursive self-improvement)",
-        "source": "https://techcrunch.com/2026/11/02/anthropic-warns-that-its-very-close-to-rsi-capability-aka-self-building-ai/",
-        "decision": "queued",
-        "job_id": "2026-11-03-anthropic-warns-self-building-ai-imminent",
-        "priority": 1
-      },
-      {
-        "story": "OpenAI LifeVal benchmark for everyday tasks",
-        "source": "https://openai.com/index/lifeval/",
-        "decision": "skipped",
-        "reason": "The OpenAI page could not be opened in this run and no independent second source was found; a later run can revisit."
-      },
-      {
-        "story": "WIRED: chatbots are leading hikers astray",
-        "decision": "skipped",
-        "reason": "WIRED could not be opened and the Mount Shasta rescue it cites dates from September."
-      },
-      {
-        "story": "WIRED finds hundreds of app store apps hiding abusive deepfake features",
-        "decision": "skipped",
-        "reason": "Could not open the WIRED report to confirm details; sensitive topic, revisit with a readable source."
-      },
-      {
-        "story": "Starbucks plans AI drive-thru menus personalized per customer",
-        "decision": "skipped",
-        "reason": "Comes from last week's earnings remarks, not new, and only plans for fiscal 2027."
-      },
-      {
-        "story": "Claude report card tool for employers (Business Insider)",
-        "decision": "skipped",
-        "reason": "Enterprise admin feature with limited consumer interest, and Anthropic already has two posts today."
-      },
-      {
-        "story": "OpenAI and Anthropic election war rooms for the midterms",
-        "decision": "skipped",
-        "reason": "Political feature already passed on in earlier runs, no new development."
-      },
-      {
-        "story": "Goldman Sachs restricts AI coding tools for bankers",
-        "decision": "skipped",
-        "reason": "Already passed on in earlier runs as an internal bank policy."
-      },
-      {
-        "story": "Publishers sue Brave over AI scraping",
-        "decision": "skipped",
-        "reason": "Lawsuit against a company outside the priority 1 list, passed on in earlier runs."
-      },
-      {
-        "story": "OpenAI hires former Army Secretary Dan Driscoll",
-        "decision": "covered",
-        "reason": "Already queued as 2026-11-03-openai-hires-army-secretary-driscoll."
-      }
-    ],
-    "requests": []
-  },
-  {
     "run_at": "2026-11-03T13:08:17.918Z",
     "summary": "8:00 New York run: no open links or requests; queued Apple's $1,000 tabletop robot report (priority 1) and Microsoft's live speech editing patent (priority 2), both waiting for Mahir's approval. Today now has 7 jobs, one slot left for the utility post.",
     "considered": [
@@ -5251,6 +5191,73 @@
         "decision": "queued",
         "job_id": "2026-11-10-jensen-wife-moving-reel",
         "priority": 1
+      }
+    ],
+    "requests": []
+  },
+  {
+    "run_at": "2026-11-10T11:20:32.233Z",
+    "summary": "Desk run 05:56 New York: queued 1 carousel (Skyfall's AI CEO Steve). Today now has 7 desk jobs; no open links or requests.",
+    "considered": [
+      {
+        "story": "Skyfall AI unveils Steve, an AI CEO it says runs three acquired online businesses, plus a $2M program to buy 5 startups",
+        "source": "https://www.webwire.com/ViewPressRel.asp?aId=363914",
+        "decision": "queued",
+        "job_id": "2026-11-10-ai-ceo-steve-runs-three-businesses",
+        "priority": 2
+      },
+      {
+        "story": "Moonshot reportedly rents Nvidia B300 servers in China, possibly breaching US export rules (Bloomberg)",
+        "source": "https://www.bloomberg.com/news/articles/2026-11-10/moonshot-rents-nvidia-s-top-ai-chips-in-china-documents-show",
+        "decision": "skipped",
+        "reason": "Paywalled and no second source readable this run; can be revisited later today."
+      },
+      {
+        "story": "SoftBank posts fiscal Q2 loss on Vision Fund write-downs, offset partly by OpenAI stake gains (CNBC)",
+        "source": "https://www.cnbc.com/2026/11/10/softbank-2q-earnings-tech-selloff.html",
+        "decision": "skipped",
+        "reason": "Investor earnings story with little pull for a general US audience; daily cap is close."
+      },
+      {
+        "story": "Study: frontier coding models search git history for answers when tests are hidden (arXiv)",
+        "source": "https://arxiv.org/abs/2611.10404",
+        "decision": "skipped",
+        "reason": "Could not open the paper this run, so the facts could not be confirmed."
+      },
+      {
+        "story": "TSMC reports record October revenue on AI demand",
+        "decision": "skipped",
+        "reason": "Routine monthly revenue figure, little consumer interest."
+      },
+      {
+        "story": "NEAR AI pauses cloud inference after internal breach",
+        "decision": "skipped",
+        "reason": "Niche crypto infrastructure story."
+      },
+      {
+        "story": "Abridge confirms layoffs",
+        "decision": "skipped",
+        "reason": "Small healthcare startup reorganization, low US reach."
+      },
+      {
+        "story": "Trump nominates Palantir CISO Michael LoSapio to lead CISA",
+        "decision": "skipped",
+        "reason": "Security policy appointment with only a weak AI angle."
+      },
+      {
+        "story": "Claude Fable 5.2 and Mythos 5.2",
+        "decision": "covered",
+        "reason": "Already queued as 2026-11-09-claude-fable-5-2-mythos-5-2-v2."
+      },
+      {
+        "story": "Australia mandates AI incident reporting after OpenAI agent breach",
+        "decision": "covered",
+        "reason": "Already queued as 2026-11-10-australia-ai-rogue-reporting-law."
+      },
+      {
+        "story": "SpaceX $24B Starbase gas plant and AI compute project",
+        "decision": "covered",
+        "reason": "Already queued as 2026-11-10-spacex-24-billion-starbase-ai-power-plant."
       }
     ],
     "requests": []
