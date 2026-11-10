@@ -1,52 +1,5 @@
 [
   {
-    "run_at": "2026-11-03T05:01:48.429Z",
-    "summary": "Midnight New York run: no open links or requests; queued OpenAI's hire of former Army Secretary Dan Driscoll (priority 1, sensitive, goes to Mahir for approval) for the Nov 3 morning window.",
-    "considered": [
-      {
-        "story": "OpenAI hires former Army Secretary Dan Driscoll as Senior Counselor for National Security Modernization",
-        "source": "https://gizmodo.com/openai-hires-former-trump-admin-army-secretary-for-new-national-security-role-2000834160",
-        "decision": "queued",
-        "job_id": "2026-11-03-openai-hires-army-secretary-driscoll",
-        "priority": 1,
-        "reason": "Major OpenAI news confirmed by Reuters, Gizmodo and Unite.AI; marked sensitive because it involves defense and politics."
-      },
-      {
-        "story": "Anthropic buys one-person biotech Mithril Medicine",
-        "source": "https://thenextweb.com/news/anthropic-mithril-acquisition-claude-drug-development",
-        "decision": "covered",
-        "reason": "Announced October 28 and already part of 2026-10-28-claude-35000-antibodies-one-month."
-      },
-      {
-        "story": "Apple may do something with third-party AI apps to grow revenue",
-        "source": "https://techcrunch.com/2026/11/02/apple-may-try-to-increase-revenue-by-doing-something-with-third-party-ai-apps/",
-        "decision": "skipped",
-        "reason": "Vague speculation from the earnings call with no concrete plan to report."
-      },
-      {
-        "story": "Chinese official says AI investment is becoming overly concentrated",
-        "decision": "skipped",
-        "reason": "A general economic comment with little interest for a US consumer audience."
-      },
-      {
-        "story": "Inside OpenAI's election war room ahead of the midterms (NBC News)",
-        "decision": "skipped",
-        "reason": "Political feature, and OpenAI already gets the Driscoll post this morning; a later run can revisit."
-      },
-      {
-        "story": "Nebraska seeks $50,000 per kids code violation from OpenAI",
-        "decision": "skipped",
-        "reason": "Only one thin secondary source seen so far; worth checking against court filings in a later run."
-      },
-      {
-        "story": "Rumors of Claude 5.5 and GPT-6.2 Astra tests",
-        "decision": "skipped",
-        "reason": "Social media rumors with no official confirmation."
-      }
-    ],
-    "requests": []
-  },
-  {
     "run_at": "2026-11-03T07:05:49.607Z",
     "summary": "2:00 New York run: no open links or requests; queued Garry Tan's $200K a year AI token spending (priority 2, timely false, waits for Mahir's approval). No new priority 1 story broke since the midnight run.",
     "considered": [
@@ -5231,6 +5184,70 @@
         "story": "Claude Code 'don't ask again' option exposing secrets (VentureBeat)",
         "decision": "covered",
         "reason": "Already covered as 2026-11-07-claude-code-dont-ask-again-leaks-passwords."
+      }
+    ],
+    "requests": []
+  },
+  {
+    "run_at": "2026-11-10T07:03:54.107Z",
+    "summary": "Early run (01:55 New York, Tuesday): queued a Boston Dynamics Atlas Reel, a SpaceX $24 billion Starbase power plant carousel and a jailbroken AI agent hacking carousel (sensitive, for Mahir's approval). No open links or requests.",
+    "considered": [
+      {
+        "story": "Boston Dynamics puts wheels on Atlas, lands a 360 spin jump (video)",
+        "source": "https://interestingengineering.com/ai-robotics/boston-dynamics-atlas-wheeled-robot",
+        "decision": "queued",
+        "job_id": "2026-11-10-atlas-on-wheels-spin-jump-reel",
+        "priority": 2
+      },
+      {
+        "story": "SpaceX plans a $24 billion gas power plant and super-compute facility at Starbase (Reuters, Bloomberg)",
+        "source": "https://srnnews.com/spacex-plans-24-billion-gas-power-plant-data-center-project-in-texas/",
+        "decision": "queued",
+        "job_id": "2026-11-10-spacex-24-billion-starbase-ai-power-plant",
+        "priority": 2
+      },
+      {
+        "story": "Operation Snowball: jailbroken DeepSeek Flash agent attacked a European telecom for two weeks (Infosecurity Magazine, Malbear Labs)",
+        "source": "https://www.infosecurity-magazine.com/news/operation-snowball-ai-telecom/",
+        "decision": "queued",
+        "job_id": "2026-11-10-jailbroken-ai-agent-hacked-telecom",
+        "priority": 2
+      },
+      {
+        "story": "Gemini docs say personal Drive files and Gmail can go to human reviewers (HN 466 points)",
+        "source": "https://github.com/thisisme6598/gemini_files/",
+        "decision": "skipped",
+        "reason": "Still only a GitHub repo and small aggregators, no news outlet has confirmed it yet; recheck in a daytime run."
+      },
+      {
+        "story": "Google ties school Search access to Gemini, then backs off",
+        "decision": "covered",
+        "reason": "Already covered as 2026-11-03-google-schools-no-ai-no-search, and Google has since softened the policy."
+      },
+      {
+        "story": "Apple capped engineers at a $200 daily AI budget",
+        "decision": "covered",
+        "reason": "Already covered as 2026-11-05-apple-cuts-engineers-ai-budget."
+      },
+      {
+        "story": "Fireworks AI confirms second breach with partial model weights leaked",
+        "decision": "skipped",
+        "reason": "Niche developer platform story, and today already has an AI hacking post."
+      },
+      {
+        "story": "Qantas cuts 850 jobs in AI-driven Accenture outsourcing deal (Bloomberg)",
+        "decision": "skipped",
+        "reason": "Australian company with limited US interest, and Australia already features today."
+      },
+      {
+        "story": "Nvidia GR00T 2 robot model hits 71% one-shot success",
+        "decision": "skipped",
+        "reason": "Research benchmark with little appeal for general users; the Atlas Reel covers robotics today."
+      },
+      {
+        "story": "Claude Fable 5.2 and Mythos 5.2",
+        "decision": "covered",
+        "reason": "Posted as 2026-11-09-claude-fable-5-2-mythos-5-2-v2."
       }
     ],
     "requests": []
