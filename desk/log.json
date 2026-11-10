@@ -1,46 +1,5 @@
 [
   {
-    "run_at": "2026-11-03T07:05:49.607Z",
-    "summary": "2:00 New York run: no open links or requests; queued Garry Tan's $200K a year AI token spending (priority 2, timely false, waits for Mahir's approval). No new priority 1 story broke since the midnight run.",
-    "considered": [
-      {
-        "story": "Y Combinator CEO Garry Tan says he spends up to $200,000 a year on AI tokens",
-        "source": "https://techcrunch.com/2026/11/02/y-combinators-garry-tan-uses-ai-agents-so-much-he-spends-up-to-200k-a-year-on-tokens/",
-        "decision": "queued",
-        "job_id": "2026-11-03-garry-tan-200k-year-ai-tokens",
-        "priority": 2,
-        "reason": "Striking, shareable number from a well-known leader; the follow-up outlets mostly build on TechCrunch, so it is marked timely false and goes to Mahir for approval."
-      },
-      {
-        "story": "China plans broad AI guardrails after security lapses (Bloomberg)",
-        "source": "https://www.bloomberg.com/news/articles/2026-11-03/china-plans-broad-ai-guardrails-after-global-security-lapses",
-        "decision": "skipped",
-        "reason": "Paywalled and could not be read, Chinese regulation has limited interest for a US audience."
-      },
-      {
-        "story": "OpenAI hires former Army Secretary Dan Driscoll",
-        "decision": "covered",
-        "reason": "Already queued as 2026-11-03-openai-hires-army-secretary-driscoll."
-      },
-      {
-        "story": "Inside OpenAI's election war room (NBC News)",
-        "decision": "skipped",
-        "reason": "Already skipped in the midnight run as politics with no new development."
-      },
-      {
-        "story": "Anthropic growth flattening and SEC IPO criticism on Hacker News",
-        "decision": "covered",
-        "reason": "Anthropic's S-1 numbers and IPO valuation were posted on November 2."
-      },
-      {
-        "story": "Tutor Intelligence raises $75M for warehouse robots",
-        "decision": "skipped",
-        "reason": "Small funding round with little consumer interest."
-      }
-    ],
-    "requests": []
-  },
-  {
     "run_at": "2026-11-03T09:12:23.736Z",
     "summary": "4:00 New York run: no open links or requests; queued ChatGPT Classic retirement and Work tab merge (priority 1) and Anthropic's internal Claude use topping its payroll (priority 1), both waiting for Mahir's approval.",
     "considered": [
@@ -5248,6 +5207,71 @@
         "story": "Claude Fable 5.2 and Mythos 5.2",
         "decision": "covered",
         "reason": "Posted as 2026-11-09-claude-fable-5-2-mythos-5-2-v2."
+      }
+    ],
+    "requests": []
+  },
+  {
+    "run_at": "2026-11-10T08:57:37.816Z",
+    "summary": "Early run (04:20 New York, Tuesday): queued one news carousel on Google's Gemini help pages saying human reviewers may see Gmail and Drive data. No open links or requests; no new video found for a Reel.",
+    "considered": [
+      {
+        "story": "Google's Gemini help pages say human reviewers may see a subset of connected Gmail and Drive data; GitHub write-up says Gemini pulls emails in without being asked",
+        "source": "https://support.google.com/gemini/answer/16836988?hl=en",
+        "decision": "queued",
+        "job_id": "2026-11-10-gemini-human-reviewers-gmail-drive",
+        "priority": 2
+      },
+      {
+        "story": "ChatGPT Desktop forwards your SSH agent to remote machines (HN)",
+        "source": "https://news.ycombinator.com/item?id=50422628",
+        "decision": "skipped",
+        "reason": "Only a Hacker News thread, no news coverage found, and too technical for most followers."
+      },
+      {
+        "story": "Nvidia's Jim Fan teases uncut autonomous robot demo at CoRL (possible Reel)",
+        "source": "https://www.tokenpost.com/news/technology/52169",
+        "decision": "skipped",
+        "reason": "Could not open the video or a reliable article about it; GR00T 2 was already skipped as niche and today has the Atlas Reel."
+      },
+      {
+        "story": "Mac mini powers a capable robot without human training (AppleInsider)",
+        "source": "https://appleinsider.com/articles/26/11/09/how-a-mac-mini-powers-a-staggeringly-capable-robot-without-human-training",
+        "decision": "skipped",
+        "reason": "Article could not be opened, so no facts or video to build a Reel from; recheck in a daytime run."
+      },
+      {
+        "story": "Nvidia board has no successor and weak oversight, Semafor reports",
+        "source": "https://www.semafor.com/article/11/09/2026/with-a-weak-board-and-no-successor-nvidia-confronts-a-governance-crisis",
+        "decision": "skipped",
+        "reason": "The Jensen Huang scandal already had many posts yesterday; another angle would repeat it."
+      },
+      {
+        "story": "Authorization Drift Benchmark: AI agents exceed their allowed scope in 43 to 61 percent of runs",
+        "source": "https://huggingface.co/papers/2611.09124",
+        "decision": "skipped",
+        "reason": "Research paper only, and today already has two rogue AI agent stories."
+      },
+      {
+        "story": "PhysicsWallah cuts jobs, says AI writes 90 percent of its code",
+        "source": "https://entrackr.com/news/physicswallah-cites-ai-efficiencies-for-job-cuts-offline-biz-faces-profit-pressure-earmarks-20-mn-for-ma-12795872",
+        "decision": "skipped",
+        "reason": "Indian edtech company with little US recognition."
+      },
+      {
+        "story": "Fireworks AI confirms second breach",
+        "decision": "skipped",
+        "reason": "Niche developer platform, and today already has an AI hacking post."
+      },
+      {
+        "story": "Anthropic retracts IPO price range",
+        "decision": "covered",
+        "reason": "Already queued as 2026-11-10-anthropic-retracts-ipo-price."
+      },
+      {
+        "story": "Anthropic buys $3.4 billion of gas generators",
+        "decision": "covered",
+        "reason": "Already covered as 2026-11-08-anthropic-buys-3-4-billion-gas-generators."
       }
     ],
     "requests": []
