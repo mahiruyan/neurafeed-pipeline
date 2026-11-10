@@ -1,71 +1,5 @@
 [
   {
-    "run_at": "2026-11-03T13:08:17.918Z",
-    "summary": "8:00 New York run: no open links or requests; queued Apple's $1,000 tabletop robot report (priority 1) and Microsoft's live speech editing patent (priority 2), both waiting for Mahir's approval. Today now has 7 jobs, one slot left for the utility post.",
-    "considered": [
-      {
-        "story": "Apple's $1,000 tabletop robot (J595, likely HomeView Ultra) may slip to 2028, per The Information",
-        "source": "https://thenextweb.com/news/apple-home-robot-homeview-ultra-1000-2028",
-        "decision": "queued",
-        "job_id": "2026-11-03-apple-1000-tabletop-robot-2028",
-        "priority": 1
-      },
-      {
-        "story": "Microsoft patent application for AI that changes words and lip movements in live video",
-        "source": "https://www.wionews.com/trending/microsoft-ai-tool-changes-live-words-and-shapes-lips-to-match-1793613086722",
-        "decision": "queued",
-        "job_id": "2026-11-03-microsoft-patent-ai-changes-live-words",
-        "priority": 2
-      },
-      {
-        "story": "Apple Q4 earnings: record $114.48B revenue in Ternus's first quarter as CEO",
-        "source": "https://9to5mac.com/2026/11/02/apple-reports-q4-2026-earnings/",
-        "decision": "skipped",
-        "reason": "Earnings numbers with little AI angle; the robot report is the stronger Apple story and the day has limited slots."
-      },
-      {
-        "story": "Squarespace cuts 19% of staff as AI vibe-coding tools reshape web building",
-        "source": "https://techcrunch.com/2026/11/02/web-host-squarespace-lays-off-19-of-its-employees",
-        "decision": "skipped",
-        "reason": "Layoff story, would need Mahir's approval and the day is nearly full; lower US interest than the queued stories."
-      },
-      {
-        "story": "WSJ: Anthropic IPO investors push valuation toward $1.5 to $1.6 trillion",
-        "source": "https://www.wsj.com/finance/stocks/anthropic-investors-push-for-cautious-valuation-closer-to-1-5-trillion-2f2df9cf",
-        "decision": "skipped",
-        "reason": "Anthropic IPO already has four jobs in two days; paywalled source, saved for a later run if it firms up."
-      },
-      {
-        "story": "Marvell agrees to buy Lumentum for about $115B",
-        "source": "https://www.cnbc.com/2026/11/02/marvell-to-buy-lumentum-in-115-billion-deal-in-ai-data-center-bet-.html",
-        "decision": "skipped",
-        "reason": "Chip industry deal with little consumer appeal for our audience."
-      },
-      {
-        "story": "Goldman Sachs pulls Claude Code and Copilot from bankers",
-        "decision": "skipped",
-        "reason": "Already skipped in earlier runs; niche finance workplace story."
-      },
-      {
-        "story": "Palantir Q3 revenue up 96%",
-        "source": "https://www.cnbc.com/2026/11/02/palantir-pltr-earnings-q3-2026.html",
-        "decision": "skipped",
-        "reason": "Earnings story, low interest for an AI news audience."
-      },
-      {
-        "story": "China plans broad AI guardrails (Bloomberg)",
-        "decision": "skipped",
-        "reason": "Already skipped in earlier runs; paywalled and policy-heavy."
-      },
-      {
-        "story": "OpenAI hires former Army Secretary Dan Driscoll",
-        "decision": "covered",
-        "reason": "Already queued as 2026-11-03-openai-hires-army-secretary-driscoll."
-      }
-    ],
-    "requests": []
-  },
-  {
     "run_at": "2026-11-03T15:11:39.724Z",
     "summary": "10:00 New York run: no open links or requests; queued the FT report that Nvidia told cloud partners to sell at least 51% of services outside China (priority 1, waits for Mahir's approval). Today now has 8 jobs, the daily cap, so no utility post fits today.",
     "considered": [
@@ -5335,6 +5269,87 @@
         "story": "Google requires schools to enable Gemini in Classroom to keep Search",
         "decision": "skipped",
         "reason": "Daily cap reached; close to the 2026-11-09 Gemini school story."
+      }
+    ],
+    "requests": []
+  },
+  {
+    "run_at": "2026-11-10T15:07:28.920Z",
+    "summary": "Queued 1 site-only guide (How to use DeepSeek safely); no new Instagram news because today's 8 desk jobs are already queued; no open links or requests.",
+    "considered": [
+      {
+        "story": "Guide plan line: how to use deepseek",
+        "source": "https://cdn.deepseek.com/policies/en-US/deepseek-privacy-policy-2025-02-14.html",
+        "decision": "queued",
+        "job_id": "2026-11-10-how-to-use-deepseek-safely-guide",
+        "priority": 2
+      },
+      {
+        "story": "Google unveils TPU 8tx and TPU 8i Max chips",
+        "source": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/global-network/tpu-8i-max-and-8tx/",
+        "decision": "skipped",
+        "reason": "Daily cap of 8 desk jobs already reached; data center chips mean little to a consumer audience."
+      },
+      {
+        "story": "Moonshot rents top Nvidia B300 chips despite export rules (Bloomberg)",
+        "source": "https://www.bloomberg.com/news/articles/2026-11-10/moonshot-rents-nvidia-s-top-ai-chips-in-china-documents-show",
+        "decision": "skipped",
+        "reason": "Daily cap reached; good candidate for tomorrow if more outlets confirm it."
+      },
+      {
+        "story": "SoftBank swings to a quarterly loss as Vision Fund drops",
+        "source": "https://www.cnbc.com/2026/11/10/softbank-2q-earnings-tech-selloff.html",
+        "decision": "skipped",
+        "reason": "Daily cap reached; finance story with weak pull for our audience."
+      },
+      {
+        "story": "NEAR AI suspends its cloud inference after a breach",
+        "source": "https://www.cryptotimes.io/2026/11/10/near-ai-detects-and-closes-internal-systems-breach-near-protocol-unaffected/",
+        "decision": "skipped",
+        "reason": "Daily cap reached; niche crypto AI company."
+      },
+      {
+        "story": "OpenAI puts ChatGPT Enterprise on AWS Marketplace",
+        "source": "https://openai.com/index/chatgpt-enterprise-aws-marketplace/",
+        "decision": "skipped",
+        "reason": "Enterprise procurement news, no effect on normal users; cap reached."
+      },
+      {
+        "story": "Meituan open-sources 1.6T LongCat-2.5 model",
+        "source": "https://venturebeat.com/technology/meituan-releases-the-open-weights-of-its-longcat-2-5-llm-with-vision-under-a-permissive-mit-license",
+        "decision": "skipped",
+        "reason": "Technical model release with little US consumer interest; cap reached."
+      },
+      {
+        "story": "Abridge clinical AI scribe confirms layoffs",
+        "source": "https://www.modernhealthcare.com/health-tech/mh-abridge-layoffs-realignment-ai/",
+        "decision": "skipped",
+        "reason": "Small layoff at a niche startup; cap reached."
+      },
+      {
+        "story": "OpenAI Control Room stops a model in 35 seconds",
+        "decision": "covered",
+        "reason": "Already posted as 2026-11-10-openai-control-room-35-second-stop."
+      },
+      {
+        "story": "Skyfall AI's Steve-001 runs three businesses",
+        "decision": "covered",
+        "reason": "Already queued as 2026-11-10-ai-ceo-steve-runs-three-businesses."
+      },
+      {
+        "story": "SpaceX $24B Starbase AI power plant",
+        "decision": "covered",
+        "reason": "Already queued as 2026-11-10-spacex-24-billion-starbase-ai-power-plant."
+      },
+      {
+        "story": "Australia AI safety regulator after OpenAI breach",
+        "decision": "covered",
+        "reason": "Already queued as 2026-11-10-australia-ai-rogue-reporting-law."
+      },
+      {
+        "story": "Claude Fable 5.2 and Mythos 5.2",
+        "decision": "covered",
+        "reason": "Already posted as 2026-11-09-claude-fable-5-2-mythos-5-2-v2."
       }
     ],
     "requests": []
