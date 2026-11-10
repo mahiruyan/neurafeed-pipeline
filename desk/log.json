@@ -5261,5 +5261,82 @@
       }
     ],
     "requests": []
+  },
+  {
+    "run_at": "2026-11-10T13:05:22.892Z",
+    "summary": "Queued the OpenAI Control Room story (priority 1) and the first site-only guide of the day (Zapier AI agents); no open links or requests; today now has 8 desk jobs, so no more news this New York day.",
+    "considered": [
+      {
+        "story": "OpenAI unveils Control Room, cuts off research AI jobs within 35 seconds",
+        "source": "https://interestingengineering.com/ai-robotics/openai-control-room-35-second-model-shutdown",
+        "decision": "queued",
+        "job_id": "2026-11-10-openai-control-room-35-second-stop",
+        "priority": 1
+      },
+      {
+        "story": "Website guide: Zapier AI agents, build your first one",
+        "source": "https://zapier.com/blog/zapier-agents-guide/",
+        "decision": "queued",
+        "job_id": "2026-11-10-zapier-ai-agents-first-agent-guide",
+        "priority": 2
+      },
+      {
+        "story": "Guide plan lines: ChatGPT Atlas how-to and Atlas for Windows",
+        "source": "https://bgr.com/2212396/openai-chatgpt-browser-atlas-discontinued/",
+        "decision": "skipped",
+        "reason": "OpenAI shut Atlas down in August 2026, so a how-to guide would mislead readers."
+      },
+      {
+        "story": "Guide plan lines: Gemini Nano Banana not working, how to use Higgsfield",
+        "decision": "skipped",
+        "reason": "No vendor documentation to support a fix list or a how-to; moved to the next line in guides/plan.md."
+      },
+      {
+        "story": "Survey: 19.1% of US workers replaced by AI were asked back, half demanded big raises (Fortune)",
+        "decision": "skipped",
+        "reason": "Strong everyone story but the day already has 8 desk jobs; good candidate for tomorrow if still fresh."
+      },
+      {
+        "story": "Fireworks AI says hackers accessed customer datasets and models",
+        "decision": "skipped",
+        "reason": "Daily cap reached; niche company for a US consumer audience."
+      },
+      {
+        "story": "NVIDIA GR00T 2 robot model at CoRL",
+        "decision": "skipped",
+        "reason": "Daily cap reached; technical robotics research with no strong video found."
+      },
+      {
+        "story": "Claude Fable 5.2 and Mythos 5.2 launch",
+        "decision": "covered",
+        "reason": "Already queued as 2026-11-09-claude-fable-5-2-mythos-5-2-v2."
+      },
+      {
+        "story": "Gemini routes Drive files and emails to human reviewers",
+        "decision": "covered",
+        "reason": "Already queued as 2026-11-10-gemini-human-reviewers-gmail-drive."
+      },
+      {
+        "story": "Australia orders AI firms to report rogue models after OpenAI breach",
+        "decision": "covered",
+        "reason": "Already queued as 2026-11-10-australia-ai-rogue-reporting-law."
+      },
+      {
+        "story": "Anthropic IPO terms and retracted pricing",
+        "decision": "covered",
+        "reason": "Already posted as 2026-11-10-anthropic-retracts-ipo-price."
+      },
+      {
+        "story": "Apple caps engineers at a $200 daily AI budget",
+        "decision": "covered",
+        "reason": "Already covered as 2026-11-05-apple-cuts-engineers-ai-budget."
+      },
+      {
+        "story": "Google requires schools to enable Gemini in Classroom to keep Search",
+        "decision": "skipped",
+        "reason": "Daily cap reached; close to the 2026-11-09 Gemini school story."
+      }
+    ],
+    "requests": []
   }
 ]

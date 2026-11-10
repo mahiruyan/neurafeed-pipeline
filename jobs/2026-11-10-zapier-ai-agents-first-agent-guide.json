@@ -1,0 +1,135 @@
+{
+  "id": "2026-11-10-zapier-ai-agents-first-agent-guide",
+  "format": "utility",
+  "site_only": true,
+  "created_at": "2026-11-10T13:25:00Z",
+  "story_time": "2026-11-10T13:25:00Z",
+  "timely": false,
+  "sensitive": false,
+  "priority": 2,
+  "review": true,
+  "sources": [
+    { "name": "Zapier: Zapier Agents guide", "url": "https://zapier.com/blog/zapier-agents-guide/" },
+    { "name": "Zapier Help Center: How is Zapier Agents usage measured?", "url": "https://help.zapier.com/hc/en-us/articles/26559132765325" },
+    { "name": "Zapier Agents pricing", "url": "https://zapier.com/l/agents-pricing" },
+    { "name": "Zapier: Zapier Agents overview", "url": "https://zapier.com/blog/zapier-agents/" },
+    { "name": "XRAY Tech", "url": "https://www.xray.tech/post/ai-agents-zapier" }
+  ],
+  "caption": "Zapier Agents lets you describe a job in plain English and have an AI agent do it across your apps.\nThe free plan gives you 400 activities a month, enough to test one small, useful agent.\n\nWhat would you hand to an AI agent first?\n\nFollow @neurafeed.ai for daily AI news.\n\nSource: Zapier · Photo: Zapier",
+  "threads_text": "Zapier Agents lets you write a job in plain English and an AI agent runs it across your apps. The free plan gives 400 activities a month, and tests count toward that. What boring task would you hand to an agent first?",
+  "slides": [
+    {
+      "kind": "cover",
+      "headline": "How to build your first *Zapier AI agent* for free, step by step",
+      "image": {
+        "url": "https://images.ctfassets.net/lzny33ho1g45/6tgXiDNr89kA2Y9ILOMCsO/80fb0dae7f501aa4dd522ae46c8dd0a2/Zapier_Agents.jpg",
+        "credit": "Zapier",
+        "fallback_urls": [
+          "https://images.ctfassets.net/lzny33ho1g45/6Jo7TafKpRm2xZeYl6miOk/b247f20204d959b49d498fc83886b013/agents.png"
+        ]
+      },
+      "pos": "center center"
+    },
+    {
+      "kind": "card",
+      "heading": "1. Start a *new agent*",
+      "paras": [
+        "Sign in at agents.zapier.com. Take the tour, or use the + icon in the sidebar and pick New agent.",
+        "Describe the job in plain English or start from a template."
+      ],
+      "image": {
+        "url": "https://images.ctfassets.net/lzny33ho1g45/3q5No0iuQ7HJl9FgIYjQs1/7f46ed93ee02cb174de9266f87b4839f/agents_01.png",
+        "credit": "Zapier",
+        "fit": "contain"
+      }
+    },
+    {
+      "kind": "card",
+      "heading": "2. Pick a *trigger*",
+      "paras": [
+        "Choose what starts the agent: on demand, on a schedule, from a Zap or from another app.",
+        "Example: a new lead arrives, the agent sums it up and emails sales."
+      ],
+      "image": {
+        "url": "https://images.ctfassets.net/lzny33ho1g45/3XddbIvRxK0npTprhIgcTd/3abfc6da6f7b0505c2cdfff4734ac19a/agents_03.png",
+        "credit": "Zapier",
+        "fit": "contain"
+      }
+    },
+    {
+      "kind": "card",
+      "heading": "3. Give it *tools*",
+      "paras": [
+        "Open Insert tools, then Add tool. Add data sources like Google Drive or Notion, and actions like a Gmail draft.",
+        "Fewer tools means fewer surprises."
+      ],
+      "image": {
+        "url": "https://images.ctfassets.net/lzny33ho1g45/4uVJ5KngVSRH2RxYqCLD7A/aae5d660301171bfe50cb1abc2389bed/agents_04.png",
+        "credit": "Zapier",
+        "fit": "contain"
+      }
+    },
+    {
+      "kind": "prompt",
+      "heading": "4. Write *clear instructions*",
+      "paras": [
+        "Treat the agent like a new hire with zero context: role, steps in order, format."
+      ],
+      "prompt": "You are my inbox assistant. When a new email arrives: 1) decide if it is urgent, normal or spam. 2) For urgent emails, write a short reply draft. 3) Never send anything; only create drafts."
+    },
+    {
+      "kind": "card",
+      "heading": "5. Test, then *watch the log*",
+      "paras": [
+        "Test in the right panel and click Save. Check All activity, and Needs action when the agent stops for your input.",
+        "On the free plan, tests count toward 400 monthly activities."
+      ],
+      "image": {
+        "url": "https://images.ctfassets.net/lzny33ho1g45/2UwY3AJNwmouKpLNYMEgTL/de18a9d84c2549f9f121bd901b3e030a/agents_07.png",
+        "credit": "Zapier",
+        "fit": "contain"
+      }
+    },
+    {
+      "kind": "cta",
+      "hook": "Follow for more AI tools explained in plain words."
+    }
+  ],
+  "site_article": {
+    "kind": "guide",
+    "headline": "Zapier AI agents: how to build your first one, with examples",
+    "dek": "Zapier Agents runs a job you describe in plain English across your apps. Here is how to set one up, what the free plan covers and where agents still go wrong.",
+    "summary": "Zapier Agents lets you build an AI agent from plain-language instructions, a trigger, data sources and app actions. The free plan includes 400 activities a month, and tests count toward that limit.",
+    "seo_title": "Zapier AI agents: how to build your first one (free plan)",
+    "seo_description": "Build your first Zapier AI agent: trigger, tools, instructions and testing, step by step. Plus free plan limits, what counts as an activity and a prompt to copy",
+    "answer_summary": "Sign in at agents.zapier.com, click New agent, describe the job in plain English, pick a trigger, add data sources and actions under Insert tools, then test it in the right panel and click Save. The free plan allows 400 activities a month.",
+    "tags": ["Zapier", "AI agents", "Automation", "AI guides"],
+    "hero_alt": "Zapier logo artwork on a light yellow background.",
+    "paragraphs": [
+      { "kind": "fact", "text": "Zapier AI agents are assistants you set up with plain-language instructions. Each one can start on a trigger, read from data sources such as Google Drive or Notion, search the web and run actions in the apps Zapier connects to. Zapier says the product has moved out of beta into general availability, and anyone with a Zapier account can try it for free at agents.zapier.com.", "sources": [0, 2, 3] },
+      { "kind": "fact", "text": "The short version: one agent, one narrow job, a small set of tools, and a test run before you let it work alone. Below is the setup step by step, the limits of the free plan and a starter prompt you can copy.", "sources": [0] },
+      { "kind": "heading", "text": "What Zapier AI agents cost and what counts as an activity" },
+      { "kind": "fact", "text": "Zapier measures agent usage in activities, not in the tasks used by regular Zaps. The Free plan includes 400 activities a month with up to 10 per run. Pro includes 1,500 a month with up to 40 per run and costs $33.33 a month billed annually ($400 a year). Enterprise has a custom limit and adds agent sharing across the company.", "sources": [1, 2] },
+      { "kind": "fact", "text": "One activity is one thing the agent does: using a trigger, answering from a knowledge source, running an action, browsing or scraping a page, running a web search, or receiving a message through the Chrome extension. On the Free plan, test runs count toward your 400. On paid plans they do not.", "sources": [1] },
+      { "kind": "fact", "text": "When you reach the limit, agents stop running actions, searches, triggers and knowledge lookups until your billing date resets the count, though you can still chat with them. Zapier emails you at 80 percent and again at 100 percent. If one run hits the per-run cap, the agent asks for your input before it continues.", "sources": [1] },
+      { "kind": "heading", "text": "How to build your first Zapier agent" },
+      { "kind": "step", "title": "1. Start a new agent", "text": "Go to agents.zapier.com and sign in. If you have no agents yet, click Take a tour, then Create my first agent. If you already have some, hover over the + icon in the left sidebar and click New agent." },
+      { "kind": "step", "title": "2. Describe the job or pick a template", "text": "Write what the agent should do in plain English, or choose one of the ready-made templates on the left. Click Create agent to let the prompt assistant tidy up your instructions, or Skip this step to keep your own wording." },
+      { "kind": "step", "title": "3. Connect the apps you named", "text": "If your instructions mention apps, Zapier asks you to connect those accounts. You can do it now from the dropdowns or skip it and come back later." },
+      { "kind": "step", "title": "4. Choose a trigger", "text": "Pick what starts the agent: on demand, on a set schedule, from a Zap or from another app. Zapier's own example is a new Facebook Lead Ads lead that the agent summarizes and emails to the sales team through Gmail." },
+      { "kind": "step", "title": "5. Add data sources and actions", "text": "Open the Insert tools tab and click Add tool. Choose an app as a data source, for example a Google Sheets file or a Notion page, or choose an action, for example creating a Gmail draft. You can also pick Call an agent to hand part of the work to another agent. Inside the Instructions field, typing a slash lets you insert an action or data." },
+      { "kind": "step", "title": "6. Test it and save", "text": "Run a test in the panel on the right, read what the agent did, adjust the instructions and test again. When it behaves, click Save. Use Share in the top right if a teammate should see or edit it." },
+      { "kind": "step", "title": "7. Check the activity log", "text": "Click All activity in the left panel to see each run. Anything under Needs action is waiting for you: the agent needs more information, you told it to pause at a decision point, or a connection broke." },
+      { "kind": "heading", "text": "A starter prompt to copy" },
+      { "kind": "prompt", "title": "Prompt: an inbox triage agent that only drafts", "text": "You are my inbox assistant.\nWhen a new email arrives:\n1. Label it as urgent, normal or spam.\n2. For urgent emails, write a short, polite reply draft in my voice.\n3. For spam, do nothing.\nRules: never send an email yourself. Only create drafts. If you are not sure what the sender wants, write \"Needs a human\" at the top of the draft." },
+      { "kind": "tip", "text": "Zapier suggests writing instructions as if for a new team member with no context: give a role, put the steps in order, say how long and in what tone the output should be, and wrap long background in tags like <context>. Showing one example of the output you want also helps." },
+      { "kind": "heading", "text": "Examples of Zapier agents worth trying" },
+      { "kind": "fact", "text": "Zapier's template library has close to 100 agents. Its examples include lead enrichment that researches a lead, updates the CRM and drafts outreach; customer support that routes tickets using help docs; email management that drafts replies and archives spam; meeting prep that builds agendas in Google Docs; and expense tracking that logs invoices from QuickBooks or Stripe into Google Sheets.", "sources": [0, 3] },
+      { "kind": "heading", "text": "Where Zapier agents fall short" },
+      { "kind": "fact", "text": "Zapier itself says to use a regular Zap when you need precision and an agent when roughly 80 percent accuracy is acceptable and speed matters more. It recommends starting with low-stakes tasks, requiring approval before important actions and keeping risky actions, such as deleting data, inside a single agent.", "sources": [0, 3] },
+      { "kind": "fact", "text": "In hands-on testing, XRAY Tech found that fields left for the agent to fill in can change from run to run, and suggested fixing key values, such as the Slack recipient of a message, so the agent cannot choose them. It also found that template actions still need to be configured by hand.", "sources": [4] },
+      { "kind": "tip", "text": "On the Free plan, keep tests short. A test that browses the web and runs three actions can use several of your 400 monthly activities at once." },
+      { "kind": "analysis", "text": "The honest pitch for Zapier Agents is a smart helper for repetitive, forgiving work: sorting, summarizing and drafting. Anything that sends, pays or deletes is better left as a draft that a person approves, at least until you have watched the activity log for a while." }
+    ]
+  }
+}
