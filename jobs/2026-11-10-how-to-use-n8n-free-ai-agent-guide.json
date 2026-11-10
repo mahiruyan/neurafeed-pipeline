@@ -1,0 +1,244 @@
+{
+  "id": "2026-11-10-how-to-use-n8n-free-ai-agent-guide",
+  "format": "utility",
+  "site_only": true,
+  "created_at": "2026-11-10T19:25:00Z",
+  "story_time": "2026-11-10T19:25:00Z",
+  "timely": false,
+  "sensitive": false,
+  "priority": 2,
+  "review": true,
+  "sources": [
+    {
+      "name": "n8n Docs: Choose your n8n",
+      "url": "https://docs.n8n.io/choose-n8n/"
+    },
+    {
+      "name": "n8n Docs: Install with npm",
+      "url": "https://docs.n8n.io/deploy/host-n8n/install-options/install-with-npm"
+    },
+    {
+      "name": "n8n Docs: Install with Docker",
+      "url": "https://docs.n8n.io/deploy/host-n8n/install-options/install-with-docker"
+    },
+    {
+      "name": "n8n: Build your first AI agent (template)",
+      "url": "https://n8n.io/workflows/6270-build-your-first-ai-agent/"
+    },
+    {
+      "name": "n8n Blog: How to build your first AI agent",
+      "url": "https://blog.n8n.io/how-to-build-ai-agent/"
+    },
+    {
+      "name": "Techsy: n8n AI agents tutorial",
+      "url": "https://techsy.io/blog/n8n-ai-agents-tutorial"
+    }
+  ],
+  "caption": "n8n is free to self-host, and its official starter template gives you a working AI agent with a free Google AI key.\nInstall it, add the key, open the chat and test it.\n\nWhat would you automate first?\n\nFollow @neurafeed.ai for daily AI news.\n\nSource: n8n Docs · Photo: n8n",
+  "threads_text": "n8n is free if you host it yourself, and its official starter template turns a free Google AI key into a working AI agent with weather and news tools. What is the first boring task you would automate?",
+  "slides": [
+    {
+      "kind": "cover",
+      "headline": "How to use *n8n for free*: build your first AI agent, step by step",
+      "image": {
+        "url": "https://storage.ghost.io/c/0d/78/0d78b34c-0c5f-4975-900e-61d00ccb1c2d/content/images/size/w1200/2025/04/ai-2--1-.png",
+        "credit": "n8n",
+        "fallback_urls": [
+          "https://storage.ghost.io/c/0d/78/0d78b34c-0c5f-4975-900e-61d00ccb1c2d/content/images/size/w800/2025/04/ai-2--1-.png"
+        ]
+      },
+      "pos": "center center"
+    },
+    {
+      "kind": "card",
+      "heading": "1. Run n8n *on your computer*",
+      "paras": [
+        "The self-hosted Community edition is free. With Node.js 20.19 to 24 installed, run npx n8n.",
+        "Then open localhost:5678 in your browser. Docker works too."
+      ],
+      "image": {
+        "url": "https://storage.ghost.io/c/0d/78/0d78b34c-0c5f-4975-900e-61d00ccb1c2d/content/images/2025/04/Screenshot-2025-04-13-110742.png",
+        "credit": "n8n",
+        "fit": "contain"
+      }
+    },
+    {
+      "kind": "card",
+      "heading": "2. Get a *free Gemini key*",
+      "paras": [
+        "Go to aistudio.google.com/app/apikey and click Create API key in new project.",
+        "In n8n, open the Gemini model node, pick Create New Credential, paste the key, save."
+      ],
+      "image": {
+        "url": "https://storage.ghost.io/c/0d/78/0d78b34c-0c5f-4975-900e-61d00ccb1c2d/content/images/2025/04/Screenshot-2025-04-14-073558.png",
+        "credit": "n8n",
+        "fit": "contain"
+      }
+    },
+    {
+      "kind": "card",
+      "heading": "3. Chat Trigger plus *AI Agent*",
+      "paras": [
+        "Start with a Chat Trigger node, connect an AI Agent node, then plug the model into its Chat Model input.",
+        "Add Simple Memory so it remembers follow-ups."
+      ],
+      "image": {
+        "url": "https://storage.ghost.io/c/0d/78/0d78b34c-0c5f-4975-900e-61d00ccb1c2d/content/images/2025/04/Screenshot-2025-04-14-073414.png",
+        "credit": "n8n",
+        "fit": "contain"
+      }
+    },
+    {
+      "kind": "prompt",
+      "heading": "4. Write the *System Message*",
+      "paras": [
+        "In the AI Agent node, open Options, then System Message. Name each tool and say when to use it."
+      ],
+      "prompt": "You are a research assistant. When the user asks about weather, call the get_weather tool. When they ask for news, call the get_news tool and list 3 headlines. If no tool fits, say you cannot check that."
+    },
+    {
+      "kind": "card",
+      "heading": "5. Open the chat and *test*",
+      "paras": [
+        "Click Open Chat and ask: What's the weather in Paris?",
+        "Then open the execution to see which tools the agent called. Fix the System Message if it guessed."
+      ],
+      "image": {
+        "url": "https://storage.ghost.io/c/0d/78/0d78b34c-0c5f-4975-900e-61d00ccb1c2d/content/images/2025/04/Screenshot-2025-04-14-073510.png",
+        "credit": "n8n",
+        "fit": "contain"
+      }
+    },
+    {
+      "kind": "cta",
+      "hook": "Follow for free AI tools you can set up tonight, explained step by step."
+    }
+  ],
+  "site_article": {
+    "kind": "guide",
+    "headline": "How to use n8n for free: build your first AI agent, step by step",
+    "dek": "Run the free Community edition, connect a free Google AI key and test an agent that calls real tools.",
+    "summary": "n8n's self-hosted Community edition is free and runs with one command. Its official starter template turns a free Google AI API key into a chat agent that uses tools and remembers follow-up questions.",
+    "seo_title": "How to use n8n for free: your first AI agent, step by step",
+    "seo_description": "Run n8n free on your computer, add a free Gemini API key and build a chat AI agent with tools and memory. Commands, steps and a system message to copy.",
+    "answer_summary": "To use n8n for free, self-host the Community edition (run npx n8n with Node.js 20.19 to 24, or use Docker), open localhost:5678, then add an AI Agent with a Google Gemini model using a free API key from Google AI Studio.",
+    "tags": [
+      "n8n",
+      "AI agents",
+      "Automation",
+      "Gemini",
+      "Guides"
+    ],
+    "hero_alt": "n8n's illustration for its guide to building a first AI agent.",
+    "paragraphs": [
+      {
+        "kind": "fact",
+        "text": "How to use n8n for free comes down to one choice: host it yourself. n8n's self-hosted Community edition is free and, in the company's words, comes with almost the complete feature set. n8n Cloud, the hosted version, offers a 14 day trial with Pro features and then moves to the paid Starter, Pro or Enterprise plans.",
+        "sources": [
+          0
+        ]
+      },
+      {
+        "kind": "fact",
+        "text": "Here is the payoff. In about five steps you get an AI agent that answers in a chat window, decides on its own when to call a tool, and remembers the last few messages. All of it runs on n8n's official starter template and a free Google AI API key.",
+        "sources": [
+          3
+        ]
+      },
+      {
+        "kind": "heading",
+        "text": "Cloud or self-hosted: which n8n to pick"
+      },
+      {
+        "kind": "fact",
+        "text": "n8n's own comparison says self-hosting needs technical expertise for installation and configuration, and it recommends n8n Cloud to people who do not have that expertise. If you are comfortable typing a command in a terminal, the free edition is enough for this guide. If you register your email in the free edition, n8n unlocks a few extras: folders, debug in editor and custom execution data.",
+        "sources": [
+          0
+        ]
+      },
+      {
+        "kind": "fact",
+        "text": "One more cost to know about: the AI model is billed separately from n8n. A tutorial from Techsy notes that the self-hosted Community edition has no execution limits, but any OpenAI, Anthropic or Gemini usage is charged by that provider. The Gemini key in this guide is free to create, which makes it the cheapest way to start.",
+        "sources": [
+          5,
+          3
+        ]
+      },
+      {
+        "kind": "heading",
+        "text": "Step by step: your first n8n AI agent"
+      },
+      {
+        "kind": "step",
+        "title": "1. Install and start n8n",
+        "text": "Install Node.js, version 20.19 to 24.x according to n8n's docs. Then open a terminal and run npx n8n to try it without installing anything, or npm install n8n -g followed by n8n start to keep it. Open http://localhost:5678 in your browser. n8n's docs say npm installs are deprecated starting with n8n 3.0, so if you plan to keep using it, the Docker route is the safer long-term setup."
+      },
+      {
+        "kind": "step",
+        "title": "2. Or start it with Docker",
+        "text": "With Docker Desktop installed, create a volume with docker volume create n8n_data, then run the n8nio/n8n image with port 5678 open and that volume mounted to /home/node/.n8n, as the install page shows. Set GENERIC_TIMEZONE to your time zone so scheduled workflows run at the right hour. n8n's docs now point to Docker Compose as the recommended method for a lasting setup."
+      },
+      {
+        "kind": "step",
+        "title": "3. Get a free Google AI API key",
+        "text": "Go to aistudio.google.com/app/apikey, click Create API key in new project and copy the key. n8n's starter template says this free key is the only thing you need to bring."
+      },
+      {
+        "kind": "step",
+        "title": "4. Load the starter agent and add the key",
+        "text": "Open the Build your first AI agent template from n8n's template library. On the canvas, open the node named Connect your model (Google Gemini), choose Create New Credential in the Credential dropdown, paste the key into the API Key field and click Save. The template already wires a Chat Trigger to an AI Agent node, plus a Simple Memory node for follow-up questions and two tools: Get Weather and Get News, which reads an RSS feed."
+      },
+      {
+        "kind": "step",
+        "title": "5. Open the chat and test it",
+        "text": "Go to the Example Chat node and click Open Chat in its panel. Ask for the weather in Paris, then ask for the latest tech news. A weather answer shows the Get Weather tool works; a list of headlines shows Get News works. Ask a follow-up question about the same city to check that memory is doing its job."
+      },
+      {
+        "kind": "heading",
+        "text": "Build it yourself instead of using the template"
+      },
+      {
+        "kind": "fact",
+        "text": "n8n's blog walks through the same pieces by hand. Click the plus button on an empty canvas and add a Chat Trigger. Add an AI Agent node and connect the trigger to it. In the agent, choose Connected Chat Trigger Node as the source of the user message. Add a chat model node, such as Google Gemini, OpenAI or Anthropic, create its credential and connect it to the agent's Chat Model input. Tools go into the agent's Tool input.",
+        "sources": [
+          4
+        ]
+      },
+      {
+        "kind": "fact",
+        "text": "The agent's behavior lives in the System Message, under Options in the AI Agent node. n8n's guide suggests stating the task, explaining when and how to use each tool, and adding constraints. Rename each tool node so its name matches the name you use in the System Message.",
+        "sources": [
+          4
+        ]
+      },
+      {
+        "kind": "prompt",
+        "title": "Prompt 1: A starter System Message",
+        "text": "You are a research assistant.\nWhen the user asks about the weather, call the [weather tool name] tool.\nWhen the user asks for news, call the [news tool name] tool and return the 3 most relevant headlines with one line each.\nIf no tool fits the question, say you cannot check that. Never guess."
+      },
+      {
+        "kind": "tip",
+        "text": "After every test, open the execution in n8n and look at the AI Agent node's input and output. n8n's guide recommends this to see which tools the agent actually called. If it skipped a tool, the fix is usually a clearer System Message or a better description on the tool."
+      },
+      {
+        "kind": "heading",
+        "text": "Where n8n agents struggle"
+      },
+      {
+        "kind": "fact",
+        "text": "The Techsy tutorial reports that agents get confused once they have more than about five to seven tools, that they can fail without an obvious error, and that n8n gives less control over agent design than code frameworks such as LangGraph or CrewAI.",
+        "sources": [
+          5
+        ]
+      },
+      {
+        "kind": "analysis",
+        "text": "n8n is a workflow tool first, and it shows. The practical answer is the same as with any agent: one narrow job, a few tools, and a test run before you trust it with anything real."
+      },
+      {
+        "kind": "tip",
+        "text": "Keep your first agent read-only. Weather, news and summaries cannot do damage. Add tools that send email or write to a database only after you have watched a few executions and the agent calls the right tool every time."
+      }
+    ]
+  }
+}

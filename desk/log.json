@@ -5294,5 +5294,75 @@
       }
     ],
     "requests": []
+  },
+  {
+    "run_at": "2026-11-10T19:04:07.979Z",
+    "summary": "Desk run 13:55 New York: queued Google's Gemini 4 Carbon launch (priority 1, uncovered major Google model news) and the fourth site-only guide of the day (How to use n8n for free); no open links or requests. Today has 10 desk jobs, but only 7 desk posts are live or waiting (Australia expired, the Atlas Reel failed to render), so Carbon is the 8th post.",
+    "considered": [
+      {
+        "story": "Google makes Gemini 4 Carbon available to AI Ultra subscribers and paying developers; Wiz found 0-day flaws in under two hours, intro API price doubles after November 30",
+        "source": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-4-carbon-developers/",
+        "decision": "queued",
+        "job_id": "2026-11-10-gemini-4-carbon-security-holes-2-hours",
+        "priority": 1,
+        "reason": "Major Google model launch not yet covered; sources Google, 9to5Google, Digital Trends, Runtime Wire."
+      },
+      {
+        "story": "Anthropic sets IPO range valuing it at up to $1.4 trillion (Fortune, Guardian, CBC)",
+        "decision": "covered",
+        "reason": "Already queued as 2026-11-10-anthropic-ipo-price-1-trillion."
+      },
+      {
+        "story": "Trump says FBI is looking at Jensen Huang's affair with alleged Chinese agent; TechCrunch timeline",
+        "decision": "covered",
+        "reason": "Huang story already covered several times (2026-11-08-nvidia-board-probes-huang-alleged-spy, 2026-11-09-trump-calls-huang-honorable and Reels)."
+      },
+      {
+        "story": "Ramp hid an AI-only offer on 50 web pages; Claude relayed it 370 times in 32 days, ChatGPT never did (Dealroom)",
+        "source": "https://news.google.com/rss/articles/CBMizAFBVV95cUxNYjZWM1NLMVprNE1SeXN1cFhTTFJxeEUtbU9Wa",
+        "decision": "skipped",
+        "reason": "Fun everyone story but today's posting cap is full; a good candidate for tomorrow if a second source confirms it."
+      },
+      {
+        "story": "OpenAI's use of human reviewers for ChatGPT raises privacy questions (WBUR)",
+        "decision": "skipped",
+        "reason": "Very close to today's Gemini human reviewers post and the day is full."
+      },
+      {
+        "story": "Gemini Robotics 2.5 scores 96 percent sorting parts in a Mercedes-Benz pilot",
+        "decision": "skipped",
+        "reason": "Narrow industrial result and the day is full; Carbon is the bigger Google story."
+      },
+      {
+        "story": "Fireworks AI security breach affects Notion customers",
+        "source": "https://www.notion.com/help/security-incident-involving-a-third-party-ai-vendor",
+        "decision": "skipped",
+        "reason": "Daily cap reached; vendor breach with limited consumer impact described so far."
+      },
+      {
+        "story": "Oracle cancels $7 billion Tencent AI chip deal",
+        "decision": "skipped",
+        "reason": "Daily cap reached; business story with low US consumer interest."
+      },
+      {
+        "story": "Australia mandates AI breach reporting after OpenAI agent infiltration",
+        "decision": "covered",
+        "reason": "Already covered as 2026-11-10-australia-ai-rogue-reporting-law."
+      },
+      {
+        "story": "Website guide: How to use Kling AI (next line in guides/plan.md)",
+        "decision": "skipped",
+        "reason": "Could not reach Kling's own documentation for credits or steps, so a guide would rest on third-party blogs; moved to the next line."
+      },
+      {
+        "story": "Website guide: How to use n8n for free, your first AI agent",
+        "source": "https://docs.n8n.io/choose-n8n/",
+        "decision": "queued",
+        "job_id": "2026-11-10-how-to-use-n8n-free-ai-agent-guide",
+        "priority": 2,
+        "reason": "Fourth site-only guide of the day, built from n8n's docs, template and blog plus Techsy."
+      }
+    ],
+    "requests": []
   }
 ]
