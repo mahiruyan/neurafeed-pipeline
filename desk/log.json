@@ -1,52 +1,5 @@
 [
   {
-    "run_at": "2026-11-03T01:00:25.419Z",
-    "summary": "20:00 New York run: no open links or requests; nothing queued because Nov 2 is already past its 8 desk jobs and no new priority 1 story broke since the last run (leads were last scanned at 19:45 UTC, so I checked the web directly).",
-    "considered": [
-      {
-        "story": "Apple Intelligence launches in China in December with Alibaba's Qwen",
-        "source": "https://www.computerworld.com/article/4243306/apple-intelligence-with-alibaba-comes-to-china-in-december.html",
-        "decision": "skipped",
-        "reason": "Apple announced it on Saturday Oct 31, so it is past the 12 hour timely window and the sources disagree on the beta date; the iOS 27.3 developer beta (reported for Nov 4) is a better fresh hook for a later run."
-      },
-      {
-        "story": "OpenAI Grid Protectors program offers up to 1 GW of flexible demand at its Georgia campus",
-        "source": "https://techstartups.com/2026/11/02/top-tech-news-today-november-2-2026-the-biggest-stories-in-ai-startups-and-big-tech/",
-        "decision": "skipped",
-        "reason": "Niche grid policy story that overlaps with today's posted OpenAI compute campus story, and the day is over its cap."
-      },
-      {
-        "story": "Oracle files to sell $20 billion in stock and bonds for its AI buildout",
-        "source": "https://www.cnbc.com/2026/11/02/oracle-files-to-sell-20-billion-in-new-stock-bonds-to-finance-ai-buildout.html",
-        "decision": "skipped",
-        "reason": "Corporate financing story with limited consumer interest, and no slot left today."
-      },
-      {
-        "story": "Anthropic's internal AI use at retail prices exceeds its employee pay",
-        "source": "https://www.businessinsider.com/anthropic-claude-internal-ai-use-exceeds-employee-pay-tokens-2026-11",
-        "decision": "covered",
-        "reason": "Comes from the same amended S-1 already posted as 2026-11-02-anthropic-17-billion-quarter-loss."
-      },
-      {
-        "story": "New York Times and other outlets sue Brave over content scraping",
-        "source": "https://techcrunch.com/2026/11/02/new-york-times-and-other-outlets-sue-web-browser-brave-over-allege",
-        "decision": "skipped",
-        "reason": "Lawsuit against a browser company outside the priority 1 list, and the day is over its cap."
-      },
-      {
-        "story": "Google's Project Suncatcher satellite runs Gemma on an orbital TPU",
-        "decision": "covered",
-        "reason": "Already covered as 2026-10-31-google-satellite-ai-haiku-orbit."
-      },
-      {
-        "story": "Marvell buys Lumentum for $115 billion",
-        "decision": "skipped",
-        "reason": "Chip industry deal already passed on in earlier runs today, limited consumer interest."
-      }
-    ],
-    "requests": []
-  },
-  {
     "run_at": "2026-11-03T03:02:14.029Z",
     "summary": "22:00 New York run: no open links or requests; nothing queued because Nov 2 is over its cap, the evening's big stories are already covered, and the only new candidate (Apple's robot HomeView) is a rehash of older rumors with one thin source.",
     "considered": [
@@ -5214,6 +5167,62 @@
         "story": "OpenAI puts ChatGPT Enterprise on AWS Marketplace",
         "decision": "skipped",
         "reason": "Enterprise procurement news, low reader interest, cap full."
+      }
+    ],
+    "requests": []
+  },
+  {
+    "run_at": "2026-11-10T02:54:20.936Z",
+    "summary": "Late run (21:53 New York, Monday): no new jobs. Today is already over the 8 post cap, no new priority 1 story appeared since the last run, and all links and requests were already handled.",
+    "considered": [
+      {
+        "story": "Jensen Huang's letter to Nvidia staff about the affair (top of Hacker News)",
+        "source": "https://nvidianews.nvidia.com/news/a-message-to-our-company",
+        "decision": "covered",
+        "reason": "The memo is already covered in 2026-11-08-nvidia-board-probes-huang-alleged-spy and 2026-11-09-trump-calls-huang-honorable."
+      },
+      {
+        "story": "NYT: Commerce probe of Megaspeed moved to the Justice Department after Nvidia intervened",
+        "decision": "skipped",
+        "reason": "A third Huang follow-up in two days; today's cap is full. Worth a look tomorrow if it grows."
+      },
+      {
+        "story": "Anthropic releases Claude Fable 5.2 and Mythos 5.2",
+        "source": "https://www.anthropic.com/claude-fable-and-mythos-5-2",
+        "decision": "covered",
+        "reason": "Posted as 2026-11-09-claude-fable-5-2-mythos-5-2-v2."
+      },
+      {
+        "story": "Meta Muse Ember beats Claude Haiku at a third of the cost",
+        "source": "https://research.meta.ai/blog/muse-ember",
+        "decision": "covered",
+        "reason": "Posted as 2026-11-09-meta-muse-ember-third-of-haiku-cost."
+      },
+      {
+        "story": "Gemini docs say personal Drive files and Gmail can go to human reviewers",
+        "decision": "skipped",
+        "reason": "Only an updated help page surfaced through a GitHub tracker, no news outlet yet; good everyone story to recheck tomorrow with two sources."
+      },
+      {
+        "story": "Disney and Adobe team up on custom Firefly models built on Disney IP",
+        "source": "https://news.adobe.com",
+        "decision": "skipped",
+        "reason": "Priority 2 business deal and today's cap is full; can be considered for tomorrow."
+      },
+      {
+        "story": "Fireworks AI confirms a second breach with model weights leaked",
+        "decision": "skipped",
+        "reason": "Niche developer security news with one small outlet as source; cap full."
+      },
+      {
+        "story": "EU draft Digital Fairness Act would target AI companion bots",
+        "decision": "skipped",
+        "reason": "Draft EU rule with little direct US impact; cap full."
+      },
+      {
+        "story": "Study finds half of ChatGPT and Gemini stock picks land in just 10 stocks",
+        "decision": "skipped",
+        "reason": "Still only one small outlet; recheck tomorrow for a second source."
       }
     ],
     "requests": []
