@@ -1,82 +1,5 @@
 [
   {
-    "run_at": "2026-11-04T11:08:18.335Z",
-    "summary": "6:00 New York run: no open links or requests; queued 2 stories (Apple opens Siri AI to every app developer, priority 1; Netflix tests AI Discover mood tab, priority 2). November 4 now has 7 desk jobs; one slot left for the 11:00 utility post.",
-    "considered": [
-      {
-        "story": "Apple opens the Siri AI developer preview to all apps with app skills in the iOS 27.3 betas",
-        "source": "https://9to5mac.com/2026/11/03/developers-can-now-create-advanced-app-skills-for-siri-ai/",
-        "decision": "queued",
-        "job_id": "2026-11-04-apple-opens-siri-ai-every-app",
-        "priority": 1
-      },
-      {
-        "story": "Netflix tests AI Discover, a TV tab that recommends titles by mood",
-        "source": "https://techcrunch.com/2026/11/03/netflixs-new-ai-discover-tab-helps-you-find-something-to-watch-based-on-your-mood/",
-        "decision": "queued",
-        "job_id": "2026-11-04-netflix-ai-discover-mood-tab",
-        "priority": 2
-      },
-      {
-        "story": "OpenAI launches the Grid Protectors Program for data centers",
-        "decision": "skipped",
-        "reason": "Closely tied to the OpenAI data center rebrand already covered on November 2, and the last slot today is kept for the utility post."
-      },
-      {
-        "story": "Postman desktop silently installs plugins into Claude Code and Codex",
-        "source": "https://github.com/postmanlabs/postman-app-support/issues/14370",
-        "decision": "skipped",
-        "reason": "Only a GitHub issue and a news brief so far, no independent report I could read; possible later."
-      },
-      {
-        "story": "Steam review times stretch to 12 business days amid a flood of submissions",
-        "decision": "skipped",
-        "reason": "Gaming industry story whose AI link is implied rather than stated by Valve; daily cap is close."
-      },
-      {
-        "story": "Fan writers take down an AI built AO3 clone with 2,000 DMCA notices",
-        "decision": "skipped",
-        "reason": "Niche fandom story and the daily cap is close."
-      },
-      {
-        "story": "Meta ran hundreds of ads with AI manipulated child abuse imagery",
-        "decision": "skipped",
-        "reason": "Child abuse imagery is not a topic for our carousel format."
-      },
-      {
-        "story": "Nikkei: hidden AI debt at US tech giants swells to $3.2 trillion",
-        "decision": "skipped",
-        "reason": "Paywalled finance analysis I could not read in full."
-      },
-      {
-        "story": "CrowdStrike buys Fiddler AI and Dreadnode for about $495 million",
-        "decision": "skipped",
-        "reason": "Enterprise security deal with little appeal for a general audience."
-      },
-      {
-        "story": "Anthropic FlashProve, cryptographic proof of which model wrote a reply",
-        "decision": "skipped",
-        "reason": "Technical research prototype, skipped in earlier runs for the same reason."
-      },
-      {
-        "story": "Reuters: OpenAI employees warned about security lapses for years",
-        "decision": "skipped",
-        "reason": "Largely a rehash of earlier reporting; OpenAI security is already in today's queue."
-      },
-      {
-        "story": "OpenAI partners with Cathedral, the startup that probed Anthropic",
-        "decision": "covered",
-        "reason": "Already queued as 2026-11-04-openai-hires-firm-that-hacked-anthropic."
-      },
-      {
-        "story": "Google cuts off Search for schools that reject AI",
-        "decision": "covered",
-        "reason": "Already queued as 2026-11-03-google-schools-no-ai-no-search."
-      }
-    ],
-    "requests": []
-  },
-  {
     "run_at": "2026-11-04T12:54:25.863Z",
     "summary": "8:00 New York run: no open links or requests; no new priority 1 story since the 6:00 run, so nothing queued. November 4 has 7 desk jobs; the last slot is kept for the 11:00 utility post.",
     "considered": [
@@ -5439,6 +5362,21 @@
         "story": "Google Gemini privacy policy and Gmail promise",
         "decision": "covered",
         "reason": "Same story as 2026-11-10-gemini-human-reviewers-gmail-drive."
+      }
+    ],
+    "requests": []
+  },
+  {
+    "run_at": "2026-11-11T11:52:23.755Z",
+    "summary": "Link desk: queued Mahir's Jensen 'strictly for research' Reel (link-2026-11-11-3403) for review; the same X post was already posted this morning as 2026-11-11-jensen-strictly-research-reel.",
+    "considered": [
+      {
+        "story": "Jensen Huang 'strictly for research' clip by @AlexesNakamoto on X",
+        "source": "https://x.com/alexesnakamoto/status/2120305735879823420",
+        "decision": "queued",
+        "job_id": "2026-11-11-jensen-strictly-research-reel-2",
+        "priority": 1,
+        "reason": "Mahir's link. It is the same X post he sent as link-2026-11-11-3352, already posted at 06:54 UTC as 2026-11-11-jensen-strictly-research-reel, so already_posted_as is set and the preview will warn him. The clip carries the @AlexesNakamoto watermark and X could not be opened here, so the hook is his title word for word."
       }
     ],
     "requests": []
