@@ -1,62 +1,5 @@
 [
   {
-    "run_at": "2026-11-04T05:06:33.604Z",
-    "summary": "Midnight New York run: no open links or requests; November 3 is full, so queued one priority 1 OpenAI story for the November 4 morning window (timely false so it does not expire overnight).",
-    "considered": [
-      {
-        "story": "OpenAI says GPT-6 and Astra designed a working hardware device in under a week",
-        "source": "https://the-decoder.com/openai-says-gpt-6-astra-designed-a-hardware-device-from-scratch-in-under-a-week/",
-        "decision": "queued",
-        "job_id": "2026-11-04-openai-astra-built-device-one-week",
-        "priority": 1
-      },
-      {
-        "story": "Anthropic releases FlashProve, an open-source prototype to prove which model produced a reply",
-        "source": "https://anthropic.com/research/provable-inference",
-        "decision": "skipped",
-        "reason": "Read the Anthropic post; very technical research prototype with little mainstream appeal, a candidate for a later run if it gets wider coverage."
-      },
-      {
-        "story": "Claude Code product lead Cat Wu leaves Anthropic",
-        "source": "https://www.businessinsider.com/",
-        "decision": "skipped",
-        "reason": "Could not find a second independent source I could read."
-      },
-      {
-        "story": "OpenAI hires Uber president Jill Hazelbaker as communications chief",
-        "decision": "skipped",
-        "reason": "Executive hire with limited interest for our audience."
-      },
-      {
-        "story": "OpenAI exec says ChatGPT search volume is about 20 percent of Google's",
-        "decision": "skipped",
-        "reason": "Only secondary and crypto-site reports in the leads, no primary source read yet."
-      },
-      {
-        "story": "Anthropic rolls out Message Threads in public beta",
-        "decision": "skipped",
-        "reason": "Only one outlet in the leads so far; worth checking in the morning run."
-      },
-      {
-        "story": "OpenAI and Anthropic set up election war rooms for the midterms",
-        "decision": "skipped",
-        "reason": "Political and sensitive on election night; not worth a post."
-      },
-      {
-        "story": "Google DeepMind staff push back on restrictions on talking about AI",
-        "source": "https://www.washingtonpost.com/technology/2026/11/03/google-deepmind-staff-protest-lifetime-ban-crit",
-        "decision": "skipped",
-        "reason": "Paywalled single source, could not confirm details."
-      },
-      {
-        "story": "Google cuts off Search for schools that reject AI",
-        "decision": "covered",
-        "reason": "Already queued as 2026-11-03-google-schools-no-ai-no-search."
-      }
-    ],
-    "requests": []
-  },
-  {
     "run_at": "2026-11-04T07:02:19.399Z",
     "summary": "2:00 New York run: no open links or requests; queued 2 stories for November 4 (ChatGPT search at one fifth of Google, priority 1; Cat Wu leaves Claude Code, priority 2). Today now has 3 desk jobs; utility post waits for the 11:00 run.",
     "considered": [
@@ -5317,6 +5260,64 @@
         "story": "Chinese state paper says Jensen Huang probe is politically motivated",
         "decision": "covered",
         "reason": "Huang probe already covered on November 8 and 9."
+      }
+    ],
+    "requests": []
+  },
+  {
+    "run_at": "2026-11-11T05:07:16.421Z",
+    "summary": "00:00 New York run: no open links or requests (old items are already in skipped.json, finished requests stay finished). Queued the ChatGPT voice modes retirement (priority 1) for the November 11 morning windows. No site guides yet because it is before 07:00 New York time.",
+    "considered": [
+      {
+        "story": "OpenAI retires ChatGPT's Advanced and Standard voice on December 11; GPT-Live becomes the default",
+        "source": "https://interestingengineering.com/ai-robotics/chatgpt-drops-two-voice-modes-december-2026",
+        "decision": "queued",
+        "job_id": "2026-11-11-chatgpt-retires-old-voice-modes",
+        "priority": 1
+      },
+      {
+        "story": "Elon Musk says Claude is better than Grok 'for now'",
+        "source": "https://tech.yahoo.com/ai/claude/articles/grok-losing-ai-race-elon-013000313.html",
+        "decision": "skipped",
+        "reason": "Could not open the new reports; the only readable one is from September 28, so I could not confirm there is a new post."
+      },
+      {
+        "story": "TSMC to invest up to $1 billion in Anthropic and OpenAI",
+        "source": "https://www.investing.com/news/stock-market-news/tsmc-to-invest-up-to-1-billion-in-anthropic-openai-5015908",
+        "decision": "skipped",
+        "reason": "Investor news that overlaps with the Anthropic IPO posts already made, and it is from early November 10."
+      },
+      {
+        "story": "Anthropic bankers may raise IPO valuation to $1.4 to $1.5 trillion",
+        "decision": "covered",
+        "reason": "Already covered by 2026-11-10-anthropic-ipo-price-1-trillion."
+      },
+      {
+        "story": "Ramp hid an AI-only offer on 50 web pages; Claude relayed it, ChatGPT never did",
+        "source": "https://engineering.ramp.com/post/marketing-to-ai-agents",
+        "decision": "skipped",
+        "reason": "Ramp's own post is from April 30, 2026, so it is old news."
+      },
+      {
+        "story": "ChatGPT merges its Chat and Work tabs",
+        "source": "https://www.digitaltrends.com/computing/openai-merges-chat-and-work-in-chatgpt/",
+        "decision": "skipped",
+        "reason": "Announced November 2, too old to post now."
+      },
+      {
+        "story": "Apple preparing a 'Harbor' Mac app for running local AI models",
+        "decision": "skipped",
+        "reason": "Could not open 9to5Mac or the Yahoo copy from here, so I had no source I actually read."
+      },
+      {
+        "story": "OpenAI Q3 revenue $10 billion with a bigger loss",
+        "decision": "covered",
+        "reason": "Already queued as 2026-11-11-openai-10-billion-quarter-still-loses."
+      },
+      {
+        "story": "Gemini 4 Carbon open to all paying developers; Gemini Robotics 2.5 at Mercedes",
+        "decision": "covered",
+        "reason": "Gemini 4 Carbon already posted as 2026-11-10-gemini-4-carbon-security-holes-2-hours; the robotics item is a single small outlet."
       }
     ],
     "requests": []
