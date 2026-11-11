@@ -34,6 +34,7 @@ jobs:
           jq -r '.drafted[]? | "drafted: \(.headline)"' <<<"$body" 2>/dev/null | while read -r l; do echo "::notice::$l"; done
           jq -r '.guides.published[]? | "guide published: \(.headline) \(.url // "")"' <<<"$body" 2>/dev/null | while read -r l; do echo "::notice::$l"; done
           jq -r '.guides.errors[]? | "guide waiting: \(.)"' <<<"$body" 2>/dev/null | head -10 | while read -r l; do echo "::warning::$l"; done
+          jq -c '.guideCheck[]?' <<<"$body" 2>/dev/null | head -12 | while read -r l; do echo "::notice::guide not drafted: $l"; done
           jq -r '.errors[]?' <<<"$body" 2>/dev/null | head -5 | while read -r l; do echo "::warning::$l"; done
           echo "::notice::waiting for a later run: $(jq -r '.waiting // 0' <<<"$body" 2>/dev/null)"
           [ "$code" = 200 ] || { echo "::error::$(cut -c1-300 <<<"$body")"; exit 1; }
