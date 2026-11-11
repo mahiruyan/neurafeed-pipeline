@@ -1,58 +1,5 @@
 [
   {
-    "run_at": "2026-11-04T17:02:12.825Z",
-    "summary": "12:00 New York run: no open links or requests; queued the daily utility post and website guide (Microsoft Copilot in Windows, Edge and Office). November 4 now has 8 desk jobs, the daily cap.",
-    "considered": [
-      {
-        "story": "Utility: Microsoft Copilot in Windows, Edge, Word and Excel, with 5 prompts (next line in guides/plan.md)",
-        "source": "https://support.microsoft.com/windows/welcome-to-copilot-on-windows-675708af-8c16-4675-afeb-85a5a476ccb0",
-        "decision": "queued",
-        "job_id": "2026-11-04-microsoft-copilot-windows-edge-office-guide",
-        "priority": 2
-      },
-      {
-        "story": "Anthropic restricts Claude Code from cloning existing video games",
-        "source": "https://the-decoder.com/anthropic-cracks-down-on-game-cloning-in-claude-code-after-wave-of-ai-built-knockoffs/",
-        "decision": "skipped",
-        "reason": "Daily cap of 8 reached with the utility post, and it is a smaller policy tweak than today's queued Anthropic and OpenAI stories."
-      },
-      {
-        "story": "AI agents now run SETI's Allen Telescope Array",
-        "source": "https://the-decoder.com/ai-agents-take-over-at-setis-allen-telescope-array-scanning-for-extraterrestrial-intelligence/",
-        "decision": "skipped",
-        "reason": "Interesting but not priority 1, and today is at the 8 job cap."
-      },
-      {
-        "story": "Revolut cuts AI coding costs about 90 percent by self-hosting instead of Claude",
-        "source": "https://www.theregister.com/ai-and-ml/2026/11/03/british-fintech-revolut-slashes-ai-coding-costs-10x-by-cutting-out-claude-and-going-self-hosted/5307345",
-        "decision": "skipped",
-        "reason": "Single-source enterprise story with limited US consumer interest; daily cap reached."
-      },
-      {
-        "story": "Isomorphic Labs says AI could design every medicine, human trials next",
-        "source": "https://www.theneuron.ai/news/isomorphic-labs-ai-drug-design-human-trials/",
-        "decision": "skipped",
-        "reason": "No fresh primary news found in this run and the daily cap is reached."
-      },
-      {
-        "story": "OpenAI says GPT-6 Astra helped design a device for Codex",
-        "decision": "covered",
-        "reason": "Already queued as 2026-11-04-openai-astra-built-device-one-week."
-      },
-      {
-        "story": "Apple warns AI agents could act beyond their permissions",
-        "decision": "covered",
-        "reason": "Already queued as 2026-11-04-apple-warns-ai-agents-act-without-permission."
-      },
-      {
-        "story": "Google cuts off Search for schools that reject AI",
-        "decision": "covered",
-        "reason": "Already covered as 2026-11-03-google-schools-no-ai-no-search."
-      }
-    ],
-    "requests": []
-  },
-  {
     "run_at": "2026-11-04T18:53:50.216Z",
     "summary": "14:00 New York run: no open links or requests; November 4 already has 8 desk jobs (the daily cap), so nothing new was queued.",
     "considered": [
@@ -5367,6 +5314,80 @@
         "source": "https://www.aol.co.uk/articles/ai-made-close-impossible-assess-070033000.html",
         "decision": "skipped",
         "reason": "UK story with little US interest, and no second source found this run."
+      }
+    ],
+    "requests": []
+  },
+  {
+    "run_at": "2026-11-11T17:10:03.844Z",
+    "summary": "Midday run (12:00 New York): no open links or requests; queued Anthropic's filing saying it met its own AI research acceleration threshold (priority 1, the 8th desk post today) and the Canva AI guide (site only, 3rd guide today).",
+    "considered": [
+      {
+        "story": "Anthropic's amended IPO filing says it has met its Responsible Scaling Policy threshold for AI that speeds up AI research",
+        "source": "https://finance.yahoo.com/markets/article/anthropic-says-a-key-ai-safety-alarm-has-been-triggered-days-before-its-ipo-171519615.html",
+        "decision": "queued",
+        "job_id": "2026-11-11-anthropic-says-ai-crossed-safety-line",
+        "priority": 1,
+        "reason": "Major Anthropic news not yet covered; new angle (Anthropic's own determination) beyond the METR post of November 6. Queued as not timely since the filing is from November 10."
+      },
+      {
+        "story": "Guide: How to use Canva AI (designs, presentations, AI limits by plan)",
+        "source": "https://www.canva.com/help/ai-access/",
+        "decision": "queued",
+        "job_id": "2026-11-11-how-to-use-canva-ai-guide",
+        "priority": 2,
+        "reason": "Next uncovered line in guides/plan.md. Several Canva help pages could not be opened, so steps stick to what the AI usage page, the Canva newsroom and press coverage state."
+      },
+      {
+        "story": "New York frontier AI law: OpenAI and Anthropic must register by January 1, 2027",
+        "source": "https://techcrunch.com/2026/11/10/openai-anthropic-face-new-oversight-as-new-yorks-ai-safety-law-takes-effect/",
+        "decision": "skipped",
+        "reason": "Daily cap reached with the Anthropic threshold story; a candidate for tomorrow."
+      },
+      {
+        "story": "VulnCheck says Anthropic's Glasswing found 442 CVEs but only 2 known exploited, with a 55.9% false positive rate",
+        "source": "https://www.vulncheck.com/blog/anthropic-glasswing-november-update",
+        "decision": "skipped",
+        "reason": "Niche security audience and the daily cap is reached."
+      },
+      {
+        "story": "Anthropic's $34.9 billion Lambda compute deal can be ended after a missed lease deadline",
+        "source": "https://cryptobriefing.com/anthropic-lambda-compute-deal-terminable-lease/",
+        "decision": "skipped",
+        "reason": "Single crypto outlet read; Anthropic IPO filing already covered heavily this week."
+      },
+      {
+        "story": "Three China chip export bills pushed into the NDAA after the Jensen Huang affair",
+        "source": "https://www.aljazeera.com/economy/2026/11/10/nvidia-spy-scandal-fuels-debate-over-chip-exports-to-china",
+        "decision": "skipped",
+        "reason": "Huang story covered many times this week; cap reached."
+      },
+      {
+        "story": "Val Town is shutting down on January 10, 2027",
+        "source": "https://blog.val.town/winding-down",
+        "decision": "skipped",
+        "reason": "Developer niche with little US mainstream interest."
+      },
+      {
+        "story": "Qualcomm begins layoffs putting about 1,000 jobs at risk in India",
+        "source": "https://www.businesstoday.in/technology/news/story/1000-qualcomm-jobs-at-risk-in-india-as-chipmaker-begins-layoffs-severance-details-emerge-566795-2026-11-11",
+        "decision": "skipped",
+        "reason": "India-focused and not an AI story for a US audience."
+      },
+      {
+        "story": "OpenAI Q3 revenue tops $10 billion with a $10.9 billion operating loss",
+        "decision": "covered",
+        "reason": "Already queued as 2026-11-11-openai-10-billion-quarter-still-loses."
+      },
+      {
+        "story": "Grok Build apps exposed private data including SpaceX and X staff material",
+        "decision": "covered",
+        "reason": "Already queued as 2026-11-11-grok-build-35000-apps-open-spacexai."
+      },
+      {
+        "story": "Anthropic Australian retail IPO offer opens at $70 to $78",
+        "decision": "covered",
+        "reason": "Anthropic IPO price covered on November 10; price range is part of today's threshold article."
       }
     ],
     "requests": []
