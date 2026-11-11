@@ -5387,5 +5387,68 @@
       }
     ],
     "requests": []
+  },
+  {
+    "run_at": "2026-11-11T09:08:51.724Z",
+    "summary": "Early desk run: queued Anthropic's free full Claude usage reset (priority 1); no open links or requests; Railway breach held back for lack of a usable photo.",
+    "considered": [
+      {
+        "story": "Anthropic gives paid Claude users one free full usage reset after fixing limit bugs",
+        "source": "https://startupfortune.com/claude-admits-recent-issues-used-more-limits-than-intended-and-offers-users-a-reset-but-that-is-not-enough/",
+        "decision": "queued",
+        "job_id": "2026-11-11-claude-free-full-usage-reset",
+        "priority": 1
+      },
+      {
+        "story": "Railway breach: hackers using uncensored AI agents stole customer AI keys and ran up about $740,000 in charges",
+        "source": "https://blog.railway.com/p/incident-report-october-security-incident",
+        "decision": "skipped",
+        "reason": "Strong money and crime story with three readable sources, but no usable real photo could be found or checked from here; worth queuing in a later run."
+      },
+      {
+        "story": "Dorsia sues ex-engineer who allegedly used Claude to plan his move; Claude warned he would be 'toast'",
+        "source": "https://www.law360.com/hospitality/articles/2548797",
+        "decision": "skipped",
+        "reason": "Still only Law360 (paywalled preview) reports it; no second source found."
+      },
+      {
+        "story": "Anthropic launches IPO roadshow, ticker ANT, $70 to $78 range",
+        "source": "https://www.anthropic.com/news/roadshow-launch",
+        "decision": "covered",
+        "reason": "The Anthropic IPO has several posts this week, including 2026-11-10-anthropic-ipo-price-1-trillion."
+      },
+      {
+        "story": "Oura to buy AI doctor service Counsel Health for $625 million",
+        "decision": "skipped",
+        "reason": "Bloomberg is paywalled and the other results were older partnership pages; health deal with limited US AI-news interest."
+      },
+      {
+        "story": "Google DeepMind's AlphaProof Code formally verified the Signal protocol",
+        "source": "https://www.wired.com/story/a-new-ai-tool-from-google-deepmind-formally-verified-the-signal-protocol/",
+        "decision": "skipped",
+        "reason": "Too technical for a general audience; could not find a second readable source."
+      },
+      {
+        "story": "TSMC to invest up to $1 billion in Anthropic and OpenAI",
+        "decision": "covered",
+        "reason": "Part of the IPO private placement already in 2026-11-10-anthropic-ipo-price-1-trillion."
+      },
+      {
+        "story": "OpenAI Q3 revenue $10B with widening losses",
+        "decision": "covered",
+        "reason": "Already queued as 2026-11-11-openai-10-billion-quarter-still-loses."
+      },
+      {
+        "story": "ChatGPT retires Advanced and Standard voice on December 11",
+        "decision": "covered",
+        "reason": "Already queued as 2026-11-11-chatgpt-retires-old-voice-modes."
+      },
+      {
+        "story": "OpenAI introduces Business Hub and Business Agents in ChatGPT",
+        "decision": "skipped",
+        "reason": "Aimed at US ecommerce businesses, little interest for normal users."
+      }
+    ],
+    "requests": []
   }
 ]
