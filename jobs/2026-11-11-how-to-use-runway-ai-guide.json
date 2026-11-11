@@ -1,0 +1,301 @@
+{
+ "id": "2026-11-11-how-to-use-runway-ai-guide",
+ "format": "utility",
+ "site_only": true,
+ "created_at": "2026-11-11T19:20:00Z",
+ "story_time": "2026-11-11T19:20:00Z",
+ "timely": false,
+ "sensitive": false,
+ "priority": 2,
+ "review": true,
+ "sources": [
+  {
+   "name": "Runway Help Center: How do credits work",
+   "url": "https://help.runwayml.com/hc/en-us/articles/15124877443219-How-do-credits-work"
+  },
+  {
+   "name": "Runway Help Center: Gen-4.5",
+   "url": "https://help.runwayml.com/hc/en-us/articles/46974685288467"
+  },
+  {
+   "name": "Runway Help Center: Text to Video prompting guide",
+   "url": "https://help.runwayml.com/hc/en-us/articles/42460036199443"
+  },
+  {
+   "name": "Runway Help Center: Creating with Gen-4",
+   "url": "https://help.runwayml.com/hc/en-us/articles/37327109429011-Creating-with-Gen-4"
+  },
+  {
+   "name": "Runway Help Center: Standard plan",
+   "url": "https://help.runwayml.com/hc/en-us/articles/49191105352339"
+  },
+  {
+   "name": "Runway: Introducing Runway Gen-4.5",
+   "url": "https://runway.com/research/introducing-runway-gen-4.5"
+  },
+  {
+   "name": "eesel AI: Runway AI pricing in 2026",
+   "url": "https://www.eesel.ai/en/blog/runway-ai-pricing"
+  }
+ ],
+ "caption": "Runway's Gen-4.5 video model costs 12 credits per second and needs the Standard plan or higher. The free plan gives 125 credits once.\nWrite prompts as camera, subject, action, place, and test ideas in Gen-4 Turbo first.\n\nWhich AI video tool are you paying for right now?\n\nFollow @neurafeed.ai for daily AI news.\n\nSource: Runway · Photo: Runway",
+ "threads_text": "Runway's free plan gives you 125 credits once, and its best video model, Gen-4.5, is not part of it. On a paid plan a 5 second clip costs 60 credits. Would you pay for an AI video tool?",
+ "slides": [
+  {
+   "kind": "cover",
+   "headline": "How to use *Runway AI* to make videos, and what the free plan really gets you",
+   "image": {
+    "url": "https://d3phaj0sisr2ct.cloudfront.net/site/images/research/gen/launch-post/card-gen-4.5.png",
+    "credit": "Runway",
+    "fallback_urls": [
+     "https://d3phaj0sisr2ct.cloudfront.net/site/images/research/gen/launch-post/gen-launch-poster-01.jpg"
+    ]
+   },
+   "pos": "center center"
+  },
+  {
+   "kind": "card",
+   "heading": "1. The free plan is *125 credits*",
+   "paras": [
+    "Free accounts get 125 credits once. They never expire but never refresh.",
+    "Gen-4.5 video needs the Standard plan or higher."
+   ],
+   "image": {
+    "url": "https://d3phaj0sisr2ct.cloudfront.net/site/images/research/gen/launch-post/gen-launch-poster-01.jpg",
+    "credit": "Runway",
+    "fallback_urls": [
+     "https://cdn-public.eesel.ai/355ca1d8-3d7c-4618-973f-22c7b8780d42/48a0ef84-d2a4-48f0-9c4c-79c75fe7aa4d/ee7772224623444f9776e0f56d78d535.webp"
+    ]
+   }
+  },
+  {
+   "kind": "card",
+   "heading": "2. Video is billed *per second*",
+   "paras": [
+    "Gen-4.5 costs 12 credits a second, so 5 seconds is 60 credits.",
+    "Gen-4 Turbo costs 5 a second. Runway suggests testing there first."
+   ],
+   "image": {
+    "url": "https://d3phaj0sisr2ct.cloudfront.net/site/images/research/gen/launch-post/gen-launch-poster-02.png",
+    "credit": "Runway",
+    "fit": "contain",
+    "fallback_urls": [
+     "https://cdn-public.eesel.ai/355ca1d8-3d7c-4618-973f-22c7b8780d42/48a0ef84-d2a4-48f0-9c4c-79c75fe7aa4d/552e355770e04e6fa895dd7c4284c398.webp"
+    ]
+   }
+  },
+  {
+   "kind": "card",
+   "heading": "3. Write prompts in *this order*",
+   "paras": [
+    "Camera shot, subject, action, place, then light and style.",
+    "With a starting image, describe only the motion."
+   ],
+   "image": {
+    "url": "https://cdn-public.eesel.ai/355ca1d8-3d7c-4618-973f-22c7b8780d42/48a0ef84-d2a4-48f0-9c4c-79c75fe7aa4d/779b5fced70147a69bc87286b62012d8.webp",
+    "credit": "Runway via eesel AI",
+    "fallback_urls": []
+   }
+  },
+  {
+   "kind": "card",
+   "heading": "4. Time each action with *timestamps*",
+   "paras": [
+    "Lines like [00:00 through 00:02] tell Gen-4.5 when each action happens.",
+    "Give actions real time: crossing a room takes about 3 seconds."
+   ],
+   "image": {
+    "url": "https://d3phaj0sisr2ct.cloudfront.net/site/images/research/gen/launch-post/gen-4.5-chart-revised-01.png",
+    "credit": "Runway",
+    "fit": "contain",
+    "fallback_urls": []
+   }
+  },
+  {
+   "kind": "cta",
+   "hook": "Follow for a new hands-on AI tool guide every day."
+  }
+ ],
+ "site_article": {
+  "kind": "guide",
+  "headline": "How to use Runway AI video generator: a beginner guide",
+  "dek": "What the free plan really includes, what each second of video costs, and three prompt patterns from Runway's own guides.",
+  "summary": "Runway's Gen-4.5 video model needs a paid plan and costs 12 credits per second of video. This guide covers the free plan, credit costs, the steps to a first clip, and prompts to copy.",
+  "seo_title": "How to use Runway AI video generator: a beginner guide",
+  "seo_description": "How to use Runway AI step by step: what the free plan includes, credits per second, making a Gen-4.5 video, and three prompts to copy.",
+  "answer_summary": "Open Runway on the web, choose Gen-4.5 in Video mode, type a prompt or drop in an image, pick 5, 8 or 10 seconds and click Generate. Gen-4.5 needs the Standard plan or higher and costs 12 credits per second.",
+  "tags": [
+   "Runway",
+   "AI video",
+   "Gen-4.5",
+   "Guides"
+  ],
+  "hero_alt": "Runway's announcement card for its Gen-4.5 video model.",
+  "paragraphs": [
+   {
+    "kind": "fact",
+    "text": "How to use Runway AI comes down to three things: knowing which plan unlocks the video models, writing prompts in the order Runway's own guide recommends, and watching the credit cost of every clip. Runway is a web app for AI video, images and audio, and its newest video model, Gen-4.5, makes clips from a text prompt or from a still image.",
+    "sources": [
+     1,
+     0
+    ]
+   },
+   {
+    "kind": "fact",
+    "text": "The short version: the free plan gives you 125 credits once and does not include Gen-4.5, which needs the Standard plan or higher. Gen-4.5 costs 12 credits per second of video and outputs 720p clips at 24 frames per second.",
+    "sources": [
+     0,
+     1
+    ]
+   },
+   {
+    "kind": "heading",
+    "text": "What the Runway free plan gets you"
+   },
+   {
+    "kind": "fact",
+    "text": "Free accounts get a one-time deposit of 125 credits. Those credits do not expire, but they also do not refresh, and free users cannot buy more, according to Runway's help center. Paid plans come with monthly credits: 625 on Standard, 2,250 on Pro and on Unlimited, and 9,500 on Max.",
+    "sources": [
+     0
+    ]
+   },
+   {
+    "kind": "fact",
+    "text": "A pricing review from eesel AI, last updated August 31, 2026, says the free plan covers text to image, text to speech and the image and audio apps, while the Gen-4 and Gen-4.5 video models need Standard or higher. It lists Standard at $12 per user per month billed yearly, about $15 month to month, and Pro at $28 per user per month billed yearly, about $35 month to month.",
+    "sources": [
+     6
+    ]
+   },
+   {
+    "kind": "fact",
+    "text": "Monthly credits on Standard, Pro and Unlimited do not roll over: they reset within 24 hours of your billing date. Max can carry up to one month of unused credits forward. Credits you buy on top of a paid plan do not expire, and the minimum purchase is 1,000 credits.",
+    "sources": [
+     0
+    ]
+   },
+   {
+    "kind": "analysis",
+    "text": "In practice, the free account is a way to test Runway's image and audio tools, not its headline video model. If video is the reason you came, plan on Standard at minimum."
+   },
+   {
+    "kind": "heading",
+    "text": "How much a Runway AI video costs"
+   },
+   {
+    "kind": "fact",
+    "text": "Runway's credits page lists Gen-4.5 at 12 credits per second, so a 5 second clip costs 60 credits and a 10 second clip costs 120. Gen-4 also costs 12 credits per second, while Gen-4 Turbo costs 5 credits per second, or 25 credits for 5 seconds. Runway's Gen-4 guide suggests testing an idea in Turbo first and switching to the full model only if the result falls short.",
+    "sources": [
+     0,
+     3
+    ]
+   },
+   {
+    "kind": "fact",
+    "text": "Runway's guide to the Standard plan gives its own ways to stretch credits: start with 5 second videos instead of 10, experiment with image models before moving to video, and start video generations without audio. It notes that third-party models and video with audio use credits faster, while image models and Turbo video models use fewer.",
+    "sources": [
+     4
+    ]
+   },
+   {
+    "kind": "tip",
+    "text": "Runway's own pages do not always show the same total for every length, so check the cost shown in the app before you press Generate, not after."
+   },
+   {
+    "kind": "heading",
+    "text": "How to make your first Runway AI video with Gen-4.5"
+   },
+   {
+    "kind": "step",
+    "title": "1. Pick the model",
+    "text": "Open Runway on the web, go to Video creation mode and choose Gen-4.5 in the model selector at the bottom left. Gen-4.5 is web only, so do this in a browser, not the phone app."
+   },
+   {
+    "kind": "step",
+    "title": "2. Choose text or an image",
+    "text": "For Text to Video, type a prompt only. For Image to Video, drag a picture into the prompt window first, then write the prompt. The image becomes the look of the shot, so the text only has to describe what moves."
+   },
+   {
+    "kind": "step",
+    "title": "3. Set length and shape",
+    "text": "Pick 5, 8 or 10 seconds. Runway says prompts with several actions in a row work better with longer clips. Then choose an aspect ratio: 16:9 for YouTube, 9:16 for Reels and TikTok, 1:1 for a square post. Runway also offers 4:3, 3:4 and 21:9."
+   },
+   {
+    "kind": "step",
+    "title": "4. Generate and keep the good one",
+    "text": "Click Generate and wait. Under the right side of the result you can favorite, upscale or download it. The Use button on the left sends the clip on to the next tool so you can keep working on it."
+   },
+   {
+    "kind": "step",
+    "title": "5. Change one thing at a time",
+    "text": "If the clip is close but wrong, edit the prompt and run it again. Change one element per run so you can tell what fixed it."
+   },
+   {
+    "kind": "heading",
+    "text": "Runway prompts that work (copy and paste)"
+   },
+   {
+    "kind": "fact",
+    "text": "Runway's Text to Video guide says every prompt needs two parts: what is in the frame and how it moves. It recommends full sentences over a list of keywords for control, and suggests this order: the camera shot, the subject, the action, the environment, then supporting details such as light and style. Its own example is a medium shot of a cowboy on a horse in a dusty setting.",
+    "sources": [
+     2
+    ]
+   },
+   {
+    "kind": "prompt",
+    "title": "Prompt 1: Text to Video, the basic structure",
+    "text": "[Camera] shot of [subject] [doing what] in [place]. [Light, weather or mood]. [How the camera moves].\n\nExample: Medium shot of a barista pouring milk into a cup in a small cafe. Soft morning light from the window. The camera slowly pushes in."
+   },
+   {
+    "kind": "prompt",
+    "title": "Prompt 2: Image to Video, motion only",
+    "text": "The woman turns her head toward the camera and smiles. Her hair moves in the wind. The camera stays still."
+   },
+   {
+    "kind": "fact",
+    "text": "For Image to Video, Runway's Gen-4 guide says the picture already sets the subject, colors, lighting and style, so the prompt should be almost entirely about motion. Text prompts there can be up to 1,000 characters.",
+    "sources": [
+     3
+    ]
+   },
+   {
+    "kind": "prompt",
+    "title": "Prompt 3: Timing with timestamps",
+    "text": "Close-up of a man at a desk in a dark office.\n[00:00 through 00:02] he looks away, then turns toward the camera\n[00:02 through 00:03] fast zoom in to frame his eyes"
+   },
+   {
+    "kind": "fact",
+    "text": "Runway calls this timestamp prompting and recommends pairing the timed lines with a normal sentence. Give each action a realistic length: the guide points out that walking across a room takes about three seconds, not half a second.",
+    "sources": [
+     2
+    ]
+   },
+   {
+    "kind": "tip",
+    "text": "If something you asked for does not show up, say it again more plainly. Runway's guide gives the example of changing \"High angle of a koi fish pond\" to \"High angle looking down at a koi fish pond\" to get the camera angle."
+   },
+   {
+    "kind": "heading",
+    "text": "What Runway is bad at"
+   },
+   {
+    "kind": "fact",
+    "text": "Runway lists the weak spots itself. In its Gen-4.5 announcement from December 1, 2025, the company names errors in cause and effect, problems with object permanence, where things vanish or appear between frames, and success bias, where actions tend to work out even when they should not. Gen-4.5 output is also 720p, so upscaling costs an extra step.",
+    "sources": [
+     5,
+     1
+    ]
+   },
+   {
+    "kind": "fact",
+    "text": "Gen-4.5 launched in first place on the Artificial Analysis Text to Video leaderboard, according to Runway, and it runs on NVIDIA GPUs. Benchmarks change fast, though, so treat a ranking as a reason to try it, not a promise.",
+    "sources": [
+     5
+    ]
+   },
+   {
+    "kind": "analysis",
+    "text": "Runway is worth it if you make short clips often and want one place for images, video and edits. If you make one video a month, the one-time free credits and a careful Turbo test will tell you more than any review."
+   }
+  ]
+ }
+}

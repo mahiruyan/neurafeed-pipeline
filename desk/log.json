@@ -1,52 +1,5 @@
 [
   {
-    "run_at": "2026-11-04T18:53:50.216Z",
-    "summary": "14:00 New York run: no open links or requests; November 4 already has 8 desk jobs (the daily cap), so nothing new was queued.",
-    "considered": [
-      {
-        "story": "OpenAI acquires Pierre Computer to bring its code storage to Codex",
-        "source": "https://twitter.com/pierrecomputer/status/2117999036175188183",
-        "decision": "skipped",
-        "reason": "Small developer-tool acquisition, not a must-post story, and today is at the 8 job cap; a candidate for tomorrow if it grows."
-      },
-      {
-        "story": "Google DeepMind staff push back on a lifetime ban on criticizing AI",
-        "source": "https://www.washingtonpost.com/technology/2026/11/03/google-deepmind-staff-protest-lifetime-ban-crit",
-        "decision": "skipped",
-        "reason": "Daily cap of 8 reached; worth a look in tomorrow's first run with a second source."
-      },
-      {
-        "story": "Geoffrey Hinton says we might have been better off without AI",
-        "source": "https://www.theguardian.com/uk-news/2026/nov/03/ai-godfather-geoffrey-hinton-better-off-without-ai",
-        "decision": "skipped",
-        "reason": "Daily cap reached and the story is from November 3."
-      },
-      {
-        "story": "Kimi K3.1 Pro open weights released by Moonshot AI",
-        "source": "https://huggingface.co/moonshotai/Kimi-K3.1-Pro",
-        "decision": "skipped",
-        "reason": "Niche for a US consumer audience and today is at the cap."
-      },
-      {
-        "story": "Hands-on with Apple's Siri Recaps",
-        "source": "https://techcrunch.com/2026/11/04/i-tried-apples-siri-recaps-theyre-surprisingly-useful-and-a-little",
-        "decision": "skipped",
-        "reason": "Review piece on Apple's Siri features, close to today's queued Siri story, and the cap is reached."
-      },
-      {
-        "story": "Google cuts off Search for schools that reject AI (Mamdani reaction)",
-        "decision": "covered",
-        "reason": "Already covered as 2026-11-03-google-schools-no-ai-no-search."
-      },
-      {
-        "story": "Apple opens Siri AI to every app",
-        "decision": "covered",
-        "reason": "Already queued as 2026-11-04-apple-opens-siri-ai-every-app."
-      }
-    ],
-    "requests": []
-  },
-  {
     "run_at": "2026-11-04T20:54:22.315Z",
     "summary": "16:00 New York run: no open links or requests; no new priority 1 story since the 14:00 run and November 4 already has 8 desk jobs (the daily cap), so nothing was queued.",
     "considered": [
@@ -5388,6 +5341,66 @@
         "story": "Anthropic Australian retail IPO offer opens at $70 to $78",
         "decision": "covered",
         "reason": "Anthropic IPO price covered on November 10; price range is part of today's threshold article."
+      }
+    ],
+    "requests": []
+  },
+  {
+    "run_at": "2026-11-11T18:59:26.690Z",
+    "summary": "Afternoon run (14:00 New York): no open links or requests; today's 8 desk posts are already used (6 posted, Apple Harbor and Odessia approved and waiting), so no news job. Queued the Runway AI guide (site only, 4th guide today).",
+    "considered": [
+      {
+        "story": "Guide: How to use Runway AI video generator",
+        "source": "https://help.runwayml.com/hc/en-us/articles/46974685288467",
+        "decision": "queued",
+        "job_id": "2026-11-11-how-to-use-runway-ai-guide",
+        "priority": 2
+      },
+      {
+        "story": "Google lets staff test a fast new Gemini 4 model called Hydrogen",
+        "source": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxOM2xQTDhKclUwMFZiS1dsVTBFazR",
+        "decision": "skipped",
+        "reason": "Internal test based on one Business Insider report, and today's 8 post cap is already reached."
+      },
+      {
+        "story": "Anthropic sets aside up to 20% of its IPO for retail investors",
+        "source": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPZFNtM0dKM1ROcGRFT1Q1WXZjM2h",
+        "decision": "skipped",
+        "reason": "Anthropic IPO was covered on November 10 and in today's threshold post; cap reached."
+      },
+      {
+        "story": "Claude can join team meetings soon, ZDNET reports",
+        "source": "https://news.google.com/rss/articles/CBMid0FVX3lxTE9sTUgyRHU5N2ZicGFsOGdvWVNpSHZ",
+        "decision": "skipped",
+        "reason": "Not launched yet and today's cap is reached; a candidate for tomorrow if it ships."
+      },
+      {
+        "story": "Google engineer used 48 AI agents on NASA lidar and found an unmapped Maya pyramid",
+        "source": "https://pietromiotti.com/latest/maya-site/?maya",
+        "decision": "skipped",
+        "reason": "Strong 'everyone' story but only a personal blog so far and the cap is reached; worth a second source tomorrow."
+      },
+      {
+        "story": "TechCrunch: Is Jensen Huang's bad behavior more commonplace than it seems?",
+        "source": "https://techcrunch.com/2026/11/11/is-jensen-huangs-bad-behavior-more-commonplace",
+        "decision": "skipped",
+        "reason": "Opinion piece on a story covered many times this week; cap reached."
+      },
+      {
+        "story": "Gemini now shows everything it remembers about you",
+        "source": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxQSDdFM3R2emx3LThnR0k5RV9TcWN",
+        "decision": "skipped",
+        "reason": "Useful normal-user change but the cap is reached; better as a future site guide."
+      },
+      {
+        "story": "OpenAI quarterly revenue crosses $10 billion",
+        "decision": "covered",
+        "reason": "Already posted as 2026-11-11-openai-10-billion-quarter-still-loses."
+      },
+      {
+        "story": "Apple's new Mac app for local AI models",
+        "decision": "covered",
+        "reason": "Already queued as 2026-11-11-apple-harbor-local-ai-mac-app."
       }
     ],
     "requests": []
