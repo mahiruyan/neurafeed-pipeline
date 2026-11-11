@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-11T06:59:59.871Z",
+  "updated_at": "2026-11-11T07:11:33.320Z",
   "jobs": [
     {
       "id": "2026-10-29-apple-first-touchscreen-macbook-pro-reel",
@@ -1154,7 +1154,7 @@
       "headline": "Boston Dynamics put wheels on Atlas, and it landed a 360 spin jump on the first try",
       "from_link": false,
       "link_id": null,
-      "error": "Command failed: yt-dlp --no-playlist --no-progress --restrict-filenames -f bv*[height<=1920][vcodec^=avc1]+ba[acodec^=mp4a]/bv*[height<=1920]+ba/b[height<=1920]/b --merge-output-format mp4 -o /home/runner/work/neurafeed-pipeline/neurafeed-pipeline/out/2026-11-10-atlas-on-wheels-spin-jump-reel/src/source.%(ext)s https://www.youtube.com/watch?v=NL65Awuv8gU\nWARNING: [youtube] No supported JavaScript runtime could be found. Only deno is enabled by default; to use another runtime add  --js-runtimes RUNTIME[:PATH]  to your command/config. YouTube extraction without a JS runtime has been deprecated, and some formats may be missing. See  https://github.com/yt-dlp/yt-dlp/wiki/EJS  for details on installing one\nERROR: unable to download video data: HTTP Error 403: Forbidden\n",
+      "error": "Command failed: yt-dlp --no-playlist --no-progress --restrict-filenames -f bv*[height<=1920][vcodec^=avc1]+ba[acodec^=mp4a]/bv*[height<=1920]+ba/b[height<=1920]/b --merge-output-format mp4 -o /home/runner/work/neurafeed-pipeline/neurafeed-pipeline/out/2026-11-10-atlas-on-wheels-spin-jump-reel/src/source.%(ext)s https://www.youtube.com/watch?v=NL65Awuv8gU\nWARNING: [youtube] No supported JavaScript runtime could be found. Only deno is enabled by default; to use another runtime add  --js-runtimes RUNTIME[:PATH]  to your command/config. YouTube extraction without a JS runtime has been deprecated, and some formats may be missing. See  https://github.com/yt-dlp/yt-dlp/wiki/EJS  for details on installing one\nWARNING: [youtube] No title found in player responses; falling back to title from initial data. Other metadata may also be missing\nERROR: [youtube] NL65Awuv8gU: Sign in to confirm you’re not a bot. This helps protect our community. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies\n",
       "tg": []
     },
     {
@@ -1493,6 +1493,27 @@
       ]
     },
     {
+      "id": "2026-11-11-apple-harbor-local-ai-mac-app",
+      "status": "approved",
+      "posted_at": null,
+      "post_at": null,
+      "priority": 2,
+      "format": "carousel",
+      "headline": "Apple's secret Mac app runs AI with no cloud bills",
+      "from_link": false,
+      "link_id": null,
+      "error": null,
+      "tg": [
+        3368,
+        3369,
+        3370,
+        3371,
+        3372,
+        3373,
+        3374
+      ]
+    },
+    {
       "id": "2026-11-11-chatgpt-retires-old-voice-modes",
       "status": "approved",
       "posted_at": null,
@@ -1511,6 +1532,22 @@
         3333,
         3334,
         3335
+      ]
+    },
+    {
+      "id": "2026-11-11-gemini-robotics-2-5-mercedes-reel",
+      "status": "approved",
+      "posted_at": null,
+      "post_at": null,
+      "priority": 1,
+      "format": "reel",
+      "headline": "Google's new robot brain folds laundry, serves pastries and sorts car parts",
+      "from_link": false,
+      "link_id": null,
+      "error": null,
+      "tg": [
+        3375,
+        3376
       ]
     },
     {
