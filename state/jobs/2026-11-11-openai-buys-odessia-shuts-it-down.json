@@ -15,9 +15,19 @@
       "status": "render_failed",
       "at": "2026-11-11T13:08:18.220Z",
       "by": "system"
+    },
+    {
+      "status": "rendered",
+      "at": "2026-11-11T16:57:28.703Z",
+      "by": "system"
+    },
+    {
+      "status": "approved",
+      "at": "2026-11-11T16:57:28.703Z",
+      "by": "auto: 4 source(s), not sensitive"
     }
   ],
-  "status": "render_failed",
+  "status": "approved",
   "files": [
     "out/2026-11-11-openai-buys-odessia-shuts-it-down/1.jpg",
     "out/2026-11-11-openai-buys-odessia-shuts-it-down/2.jpg",
@@ -29,9 +39,17 @@
     "slide 1: fal image: \"User is locked. Reason: Exhausted balance. Top up your balance at fal.ai/dashboard/billing.\"",
     "slide 1 badge 1: logo check skipped (fal vision: \"User is locked. Reason: Exhausted balance. Top up your balance at fal.ai/dashboard/billing.\")"
   ],
-  "updated_at": "2026-11-11T13:08:18.220Z",
+  "updated_at": "2026-11-11T16:57:30.617Z",
   "by": "auto: 4 source(s), not sensitive",
   "error": "fetch failed",
   "render_attempts": 1,
-  "gave_up": false
+  "gave_up": false,
+  "tg_messages": [
+    3425,
+    3426,
+    3427,
+    3428,
+    3429,
+    3430
+  ]
 }

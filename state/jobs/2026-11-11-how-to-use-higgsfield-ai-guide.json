@@ -10,9 +10,19 @@
       "status": "render_failed",
       "at": "2026-11-11T13:07:48.096Z",
       "by": "system"
+    },
+    {
+      "status": "rendered",
+      "at": "2026-11-11T16:56:32.638Z",
+      "by": "system"
+    },
+    {
+      "status": "pending",
+      "at": "2026-11-11T16:56:34.479Z",
+      "by": "from your link, waiting for Mahir"
     }
   ],
-  "status": "render_failed",
+  "status": "pending",
   "files": [
     "out/2026-11-11-how-to-use-higgsfield-ai-guide/1.jpg",
     "out/2026-11-11-how-to-use-higgsfield-ai-guide/2.jpg",
@@ -22,8 +32,20 @@
     "out/2026-11-11-how-to-use-higgsfield-ai-guide/6.jpg"
   ],
   "image_errors": [],
-  "updated_at": "2026-11-11T13:07:48.096Z",
+  "updated_at": "2026-11-11T16:56:34.479Z",
   "error": "fetch failed",
   "render_attempts": 1,
-  "gave_up": false
+  "gave_up": false,
+  "sent_at": "2026-11-11T16:56:34.479Z",
+  "message_id": 3417,
+  "by": "from your link, waiting for Mahir",
+  "tg_messages": [
+    3411,
+    3412,
+    3413,
+    3414,
+    3415,
+    3416,
+    3417
+  ]
 }
