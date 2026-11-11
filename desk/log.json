@@ -1,54 +1,5 @@
 [
   {
-    "run_at": "2026-11-04T02:53:27.450Z",
-    "summary": "22:00 New York run: no open links or requests, today already has 9 desk jobs (over the 8 cap) and no new priority 1 story broke, so nothing was queued.",
-    "considered": [
-      {
-        "story": "Google turns off Search for schools that reject AI",
-        "source": "https://www.nytimes.com/2026/11/03/us/google-search-schools-restrict-ai.html",
-        "decision": "covered",
-        "reason": "Already queued as 2026-11-03-google-schools-no-ai-no-search."
-      },
-      {
-        "story": "Reports that OpenAI staff flagged security gaps for years",
-        "source": "https://www.bostonglobe.com/2026/09/29/business/openai-ignored-employees-who-warned-it-wasnt-doing-enough-about-security/",
-        "decision": "skipped",
-        "reason": "Rehash of the September NYT report, nothing new today, and the day is at the cap."
-      },
-      {
-        "story": "Irregular says human error allowed OpenAI and Anthropic model sandbox escapes",
-        "source": "https://www.securityweek.com/irregular-details-how-a-naming-error-let-ai-models-attack-a-real-company/amp/",
-        "decision": "skipped",
-        "reason": "Follow-up to older incidents with no major new fact, and the day is at the 8 job cap."
-      },
-      {
-        "story": "Goldman Sachs pulls Claude Code and GitHub tools from traders and bankers",
-        "source": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPQ3pOVUk5b3BRLW4tT1dXUERkc1g1V0tuZklOMVh6Ykt1SWQ0dzc4Sm1uaDJ0TWFHNWp6ZGNreXAtXzZMcXBiSHFKa3BWYVdxNVhJVGFvX3c3WS1kR2M5UG9mdUJfSU05OG5ZeUREdkNVUl9CdzJmeXpJRHpxLUJJclhsTDZEZFRVWk1pUzRxRS1VSWFjSXlCWEw5NUV4OFIzWjcw?oc=5",
-        "decision": "skipped",
-        "reason": "Only a small outlet so far, not confirmed by a second source; worth checking in the next day's run."
-      },
-      {
-        "story": "Data centers turn to old jet engines while waiting for power",
-        "source": "https://techcrunch.com/2026/11/03/data-centers-are-turning-to-old-jet-engines-as-the-wait-for-power-grows/",
-        "decision": "skipped",
-        "reason": "Priority 2 story and today is already over the 8 job cap."
-      },
-      {
-        "story": "US tech giants' hidden AI debt swells to $3.2T",
-        "source": "https://asia.nikkei.com/business/technology/artificial-intelligence/us-tech-giants-hidden-ai-debt-swells-90-to-3.2tn-in-6-months",
-        "decision": "skipped",
-        "reason": "Finance angle, paywalled source, and the day is full; candidate for tomorrow."
-      },
-      {
-        "story": "Claude Code lead Cat Wu leaves Anthropic",
-        "source": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPa3J0NWpyaThGRTBmNmxncGdfbjBTRHRDdHJWakZNSzZiNnQ2ZEI0dmo1WFA2Y1JGOWJOemc2dS03Szh2WlJPNDF0cUdKYWNIWWRiOFRYemQ2bHdxX01ZbXB3NG5zZEprR1c5N2VVQ0s5VUFiMFZiWEFzSTg1ZzRycUQ1VDlyNjBqa1kwQ2tVT2c?oc=5",
-        "decision": "skipped",
-        "reason": "Single low-reliability source, not confirmed elsewhere yet."
-      }
-    ],
-    "requests": []
-  },
-  {
     "run_at": "2026-11-04T05:06:33.604Z",
     "summary": "Midnight New York run: no open links or requests; November 3 is full, so queued one priority 1 OpenAI story for the November 4 morning window (timely false so it does not expire overnight).",
     "considered": [
@@ -5311,6 +5262,61 @@
         "source": "https://www.cnbc.com/2026/11/06/coreweave-bond-yield-tops-16percent-as-ai-credit-stress-rises.html",
         "decision": "skipped",
         "reason": "Story is from November 6, too old for a timely post."
+      }
+    ],
+    "requests": []
+  },
+  {
+    "run_at": "2026-11-11T03:02:00.961Z",
+    "summary": "22:00 New York run: no open links or requests, 4 site guides already done. Queued the OpenAI Q3 revenue and loss story (priority 1, deferred by three earlier runs) for the November 11 morning window, timely false so it does not expire overnight.",
+    "considered": [
+      {
+        "story": "OpenAI Q3 revenue up about 50% to $10 billion while operating loss widens to $10.9 billion",
+        "source": "https://finance.yahoo.com/technology/article/openai-cfo-q3-was-a-blockbuster-quarter-revenue-jumped-50-225023234.html",
+        "decision": "queued",
+        "job_id": "2026-11-11-openai-10-billion-quarter-still-loses",
+        "priority": 1
+      },
+      {
+        "story": "OpenAI acquires travel startup Odessia",
+        "decision": "skipped",
+        "reason": "Small acquisition with limited reach for a general audience."
+      },
+      {
+        "story": "Apple preparing a Mac app for running local AI models (9to5Mac)",
+        "source": "https://9to5mac.com/2026/11/10/apple-has-new-mac-app-coming-to-make-running-local-ai-models-easy/",
+        "decision": "skipped",
+        "reason": "Still a single report; check for confirmation in the morning."
+      },
+      {
+        "story": "OpenAI lets businesses claim their listing in ChatGPT with an AI sales agent (VentureBeat)",
+        "decision": "skipped",
+        "reason": "Single source seen so far and the November 10 slots are used; candidate for tomorrow."
+      },
+      {
+        "story": "Fireworks AI breach affects Notion customers",
+        "decision": "skipped",
+        "reason": "Niche vendor breach with little consumer impact described."
+      },
+      {
+        "story": "Mercor raises $750 million",
+        "decision": "skipped",
+        "reason": "Funding round with little mainstream US interest."
+      },
+      {
+        "story": "Anthropic IPO roadshow and $1.3 trillion valuation target",
+        "decision": "covered",
+        "reason": "Already covered by 2026-11-10-anthropic-ipo-price-1-trillion."
+      },
+      {
+        "story": "Anthropic launches Claude Sheets, Whiteboards and Data",
+        "decision": "covered",
+        "reason": "Already queued as 2026-11-10-anthropic-claude-sheets-office-suite."
+      },
+      {
+        "story": "Chinese state paper says Jensen Huang probe is politically motivated",
+        "decision": "covered",
+        "reason": "Huang probe already covered on November 8 and 9."
       }
     ],
     "requests": []
