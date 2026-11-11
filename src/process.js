@@ -14,6 +14,13 @@ const tg = require('./telegram');
 const { syncRequests } = require('./requests');
 const { replaceOld, duplicateOf, resolveSameStory } = require('./versions');
 
+// A failed render is retried on the next runs (a download can fail once), but at most
+// RENDER_TRIES times and only for a day: after that it stays failed and Telegram is told once,
+// instead of a "Render failed" message on every push.
+const RENDER_TRIES = 3;
+const firstFailure = (st) => Date.parse((st.history || []).find((h) => h.status === 'render_failed')?.at || st.updated_at || '') || Date.now();
+const gaveUp = (st) => Boolean(st.gave_up) || (st.render_attempts || 1) >= RENDER_TRIES || Date.now() - firstFailure(st) > 24 * 3600e3;
+
 function newJobIds() {
   const dir = path.join(ROOT, 'jobs');
   if (!fs.existsSync(dir)) return [];
@@ -22,7 +29,7 @@ function newJobIds() {
     .map((f) => f.replace(/\.json$/, ''))
     .filter((id) => {
       const st = getJobState(id);
-      return !st || st.status === 'queued' || st.status === 'render_failed';
+      return !st || st.status === 'queued' || (st.status === 'render_failed' && !gaveUp(st));
     });
 }
 
@@ -148,8 +155,14 @@ function summary(job) {
       console.log(`Rendered ${id}: ${files.length} slides`);
     } catch (e) {
       console.error(e);
-      setJobState(id, { status: 'render_failed', error: String(e.message || e) });
-      if (tg.enabled()) await tg.sendMessage(`⚠️ Render failed for ${id}:\n${String(e.message || e).slice(0, 3500)}`);
+      const prev = getJobState(id);
+      const attempts = (prev?.status === 'render_failed' ? (prev.render_attempts || 1) : 0) + 1;
+      const last = attempts >= RENDER_TRIES || (prev?.status === 'render_failed' && Date.now() - firstFailure(prev) > 24 * 3600e3);
+      setJobState(id, { status: 'render_failed', error: String(e.message || e), render_attempts: attempts, gave_up: last });
+      // Telegram hears about it the first time and once more when the pipeline stops trying.
+      if (tg.enabled() && (attempts === 1 || last)) {
+        await tg.sendMessage(`⚠️ Render failed for ${id}${last ? ` (tried ${attempts} times, giving up; send the video again or ask for a fix)` : ' (will retry on the next run)'}:\n${String(e.message || e).slice(0, 3000)}`);
+      }
     }
   }
   await syncRequests({ send: tg.enabled() ? (t) => tg.sendMessage(t) : null });
