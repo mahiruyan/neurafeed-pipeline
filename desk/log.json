@@ -1,74 +1,5 @@
 [
   {
-    "run_at": "2026-11-04T07:02:19.399Z",
-    "summary": "2:00 New York run: no open links or requests; queued 2 stories for November 4 (ChatGPT search at one fifth of Google, priority 1; Cat Wu leaves Claude Code, priority 2). Today now has 3 desk jobs; utility post waits for the 11:00 run.",
-    "considered": [
-      {
-        "story": "OpenAI says ChatGPT search volume is about one fifth of Google's",
-        "source": "https://9to5google.com/2026/11/03/chatgpt-has-hit-roughly-20-of-google-search-volume-openai-says/",
-        "decision": "queued",
-        "job_id": "2026-11-04-chatgpt-one-fifth-google-search",
-        "priority": 1
-      },
-      {
-        "story": "Claude Code head of product Cat Wu leaves Anthropic",
-        "source": "https://www.businessinsider.tw/article/9193",
-        "decision": "queued",
-        "job_id": "2026-11-04-cat-wu-leaves-claude-code",
-        "priority": 2
-      },
-      {
-        "story": "FTC opens probe into AI safety at Anthropic and OpenAI",
-        "source": "https://www.axios.com/2026/09/30/ftc-openai-anthropic-ai-safety-investigation",
-        "decision": "skipped",
-        "reason": "Old September 30 news resurfacing in feeds; already covered by 2026-10-15-ftc-subpoenas-openai-anthropic."
-      },
-      {
-        "story": "Anthropic releases message threads in public beta for the Claude API",
-        "source": "https://thenewstack.io/anthropic-claude-message-threads/",
-        "decision": "skipped",
-        "reason": "Developer API feature with little appeal for a general audience."
-      },
-      {
-        "story": "Anthropic FlashProve, a tool to prove which model produced a reply",
-        "source": "https://techcrunch.com/",
-        "decision": "skipped",
-        "reason": "Technical research prototype; Anthropic already has two posts in today's queue."
-      },
-      {
-        "story": "AMD's OpenAI and Meta chip deals trigger a $1 billion quarterly charge",
-        "decision": "skipped",
-        "reason": "Accounting story from earnings, low interest for our audience."
-      },
-      {
-        "story": "OpenAI hires Uber president Jill Hazelbaker as communications chief",
-        "decision": "skipped",
-        "reason": "Executive hire with limited interest for our audience."
-      },
-      {
-        "story": "OpenAI and Anthropic set up election war rooms for the midterms",
-        "decision": "skipped",
-        "reason": "Political and sensitive on election day."
-      },
-      {
-        "story": "CrowdStrike kill switch for rogue AI agents",
-        "decision": "skipped",
-        "reason": "Enterprise security product pitch from a CEO interview, one source seen; possible later."
-      },
-      {
-        "story": "OpenAI says GPT-6 and Astra designed a hardware device in under a week",
-        "decision": "covered",
-        "reason": "Already queued as 2026-11-04-openai-astra-built-device-one-week."
-      },
-      {
-        "story": "Google cuts off Search for schools that reject AI",
-        "decision": "covered",
-        "reason": "Already queued as 2026-11-03-google-schools-no-ai-no-search."
-      }
-    ],
-    "requests": []
-  },
-  {
     "run_at": "2026-11-04T09:15:55.268Z",
     "summary": "4:00 New York run: no open links or requests; queued 2 stories (Apple 10-K warns about AI agents, priority 1; OpenAI brings in Cathedral and raises bug bounties, priority 2). November 4 now has 5 desk jobs; utility post waits for the 11:00 run.",
     "considered": [
@@ -5384,6 +5315,75 @@
         "job_id": "2026-11-11-amodei-diseases-cured-10-years-reel",
         "priority": 1,
         "reason": "Mahir's link; hook is his title word for word. The X post could not be opened from here, so the caption uses only Amodei's widely reported prediction; check the clip before approving."
+      }
+    ],
+    "requests": []
+  },
+  {
+    "run_at": "2026-11-11T07:08:24.749Z",
+    "summary": "Overnight desk run: queued Google's Gemini Robotics 2.5 as a Reel and Apple's Harbor local AI Mac app as a carousel; no open links or requests.",
+    "considered": [
+      {
+        "story": "Google DeepMind releases Gemini Robotics 2.5, 96% success on Mercedes-Benz lines",
+        "source": "https://deepmind.google/blog/gemini-robotics-2-5-accelerates-real-world-physical-intelligence/",
+        "decision": "queued",
+        "job_id": "2026-11-11-gemini-robotics-2-5-mercedes-reel",
+        "priority": 1
+      },
+      {
+        "story": "Apple's Claris tests Harbor, a Mac app that runs AI models locally and clusters Macs",
+        "source": "https://tbreak.com/apple-harbor-mac-app-local-ai/",
+        "decision": "queued",
+        "job_id": "2026-11-11-apple-harbor-local-ai-mac-app",
+        "priority": 2
+      },
+      {
+        "story": "Dorsia sues ex-engineer who allegedly used Claude to plan his move; Claude warned he would be 'toast'",
+        "source": "https://www.law360.com/technology/articles/2548797",
+        "decision": "skipped",
+        "reason": "Great story but Law360 is the only source I could read (the Reuters copy would not open); retry in the next run for a second source."
+      },
+      {
+        "story": "Elon Musk says Claude is better than Grok 'for now'",
+        "source": "https://tech.yahoo.com/ai/gemini/articles/elon-musk-agrees-now-ai-213031934.html",
+        "decision": "skipped",
+        "reason": "The readable report is from September 28, not new."
+      },
+      {
+        "story": "Grok Build coding agent leaked confidential data including SpaceX info",
+        "decision": "skipped",
+        "reason": "Search shows this happened in July 2026, old news."
+      },
+      {
+        "story": "Claude connects to bank accounts through Plaid",
+        "decision": "covered",
+        "reason": "Already covered as 2026-11-06-claude-personal-finance-bank-accounts."
+      },
+      {
+        "story": "Anthropic founders each cash out about $250M in IPO; Goldman revenue forecast; FT says valuation may rise to $1.5T",
+        "decision": "covered",
+        "reason": "Part of the Anthropic IPO story already covered by 2026-11-10-anthropic-ipo-price-1-trillion and related jobs."
+      },
+      {
+        "story": "OpenAI Q3 revenue $10B with widening losses",
+        "decision": "covered",
+        "reason": "Already queued as 2026-11-11-openai-10-billion-quarter-still-loses."
+      },
+      {
+        "story": "Nvidia hires Wachtell to probe Jensen Huang; Alice Huang linked to $7.5B chip sales",
+        "decision": "skipped",
+        "reason": "The Huang affair has had many posts this week; waiting for a bigger development."
+      },
+      {
+        "story": "X launches its own clipping feature",
+        "source": "https://techcrunch.com/2026/11/10/x-launches-its-own-clipping-feature-to-spur-influencer-engagement/",
+        "decision": "skipped",
+        "reason": "Not an AI story."
+      },
+      {
+        "story": "OpenAI acquires travel startup Odessia",
+        "decision": "skipped",
+        "reason": "Small acquisition with limited reach for a general audience."
       }
     ],
     "requests": []
