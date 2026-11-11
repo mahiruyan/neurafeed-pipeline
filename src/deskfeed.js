@@ -18,6 +18,9 @@ const NOT_NEWS = new Set(['utility', 'single', 'roundup', 'prompt']);
 const SITE_CATEGORIES = ['breaking', 'companies', 'models', 'robotics', 'free-tools', 'policy', 'guides'];
 const MAX_ITEMS = 30;
 const MAX_AGE_HOURS = 72;
+// Guides are evergreen and publish on their own on the site (Mahir, 2026-11-11): they stay in the
+// feed for 30 days, outside the 30-item cap, so the site can match every guide draft to its item.
+const GUIDE_MAX_AGE_HOURS = 30 * 24;
 const MAX_SUMMARY = 590; // the website keeps 600 characters of a feed summary
 const MEDIA_BASE = process.env.PUBLIC_IMAGE_BASE || 'https://raw.githubusercontent.com/mahiruyan/neurafeed-media/main';
 
@@ -119,13 +122,14 @@ function deskItems(now = Date.now()) {
     if (NOT_NEWS.has(job.format) && !guide) continue;
     if ((job.sources || []).length < 2) continue;
     const when = new Date(job.story_time || job.created_at || st.updated_at).getTime();
-    if (!Number.isFinite(when) || now - when > MAX_AGE_HOURS * 3600e3) continue;
+    if (!Number.isFinite(when) || now - when > (guide ? GUIDE_MAX_AGE_HOURS : MAX_AGE_HOURS) * 3600e3) continue;
     // Several guides can cite the same help page: give each its own link so the site keeps them apart.
     const link = guide ? (() => { try { const u = new URL(primaryLink(job)); u.searchParams.set('nf_guide', job.id); return u.toString(); } catch { return null; } })() : primaryLink(job);
     if (!link) continue;
     items.push({ id: job.id, title: plain(job.slides?.[0]?.headline || job.id), link, summary: summaryOf(job), date: new Date(when), sources: job.sources, category: guide ? 'guides' : categoryOf(job), images: imagesOf(job), sensitive: Boolean(job.sensitive), hero: heroOf(job.id), article: articleOf(job) });
   }
-  return items.sort((a, b) => b.date - a.date).slice(0, MAX_ITEMS);
+  const sorted = items.sort((a, b) => b.date - a.date);
+  return [...sorted.filter((x) => x.category !== 'guides').slice(0, MAX_ITEMS), ...sorted.filter((x) => x.category === 'guides')].sort((a, b) => b.date - a.date);
 }
 
 function rss(items, now = new Date()) {
