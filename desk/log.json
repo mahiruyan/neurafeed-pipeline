@@ -1,81 +1,5 @@
 [
   {
-    "run_at": "2026-11-04T14:55:41.013Z",
-    "summary": "10:00 New York run: no open links or requests; no new priority 1 story since the 8:00 run, so nothing queued. November 4 has 7 desk jobs; the last slot is kept for the 11:00 utility post.",
-    "considered": [
-      {
-        "story": "AI stocks fall in Asia after the Democratic midterm sweep, SoftBank down as much as 10 percent",
-        "source": "https://www.wealthprofessional.ca/investments/equity-markets/markets-split-as-americans-vote-in-the-midterms/393934",
-        "decision": "skipped",
-        "reason": "Election and market story, politically sensitive, only one trade outlet read so far and the last slot is reserved for the utility post."
-      },
-      {
-        "story": "Anthropic puts message threads in public beta on the Claude API, about 35 percent faster first token",
-        "source": "https://claude.com/resources/articles/message-threads",
-        "decision": "skipped",
-        "reason": "Developer API feature from November 3 with little appeal for a general audience; the last slot is reserved for the utility post."
-      },
-      {
-        "story": "OpenAI announces an automatic task router that sends work to GPT-6.1 Terra or GPT-6 Astra",
-        "source": "https://fortune.com/2026/11/04/will-compute-curtail-personal-ai-agent-push/",
-        "decision": "skipped",
-        "reason": "Only a one-line mention in a Fortune newsletter; I could not find OpenAI's announcement or a second report."
-      },
-      {
-        "story": "OpenAI builds Pando, a Git-compatible backend for its main code repository",
-        "source": "https://openai.com/index/scaling-git-at-openai/",
-        "decision": "skipped",
-        "reason": "Internal engineering post with little interest for our audience."
-      },
-      {
-        "story": "CrowdStrike adds an AI kill switch for rogue agents to Falcon",
-        "source": "https://www.cnbc.com/2026/11/03/crowdstrikes-new-kill-switch-can-stop-rogue-ai-agents-in-their-tracks-ceo-says.html",
-        "decision": "skipped",
-        "reason": "Enterprise security product and the daily cap is nearly full."
-      },
-      {
-        "story": "Sonos prepares its 27voice AI beta with a US waitlist opening November 6",
-        "source": "https://www.theverge.com/tech/1025903/sonos-presets-27voice-ai-early-access",
-        "decision": "skipped",
-        "reason": "Minor consumer beta and the last slot is reserved for the utility post."
-      },
-      {
-        "story": "OpenAI names Jill Hazelbaker chief corporate affairs officer",
-        "source": "https://www.axios.com/2026/11/03/jill-hazelbaker-openai-uber",
-        "decision": "skipped",
-        "reason": "Executive hire with limited interest, skipped in earlier runs for the same reason."
-      },
-      {
-        "story": "Anthropic FlashProve, cryptographic proof of which model wrote a reply",
-        "source": "https://www.anthropic.com/research/provable-inference",
-        "decision": "skipped",
-        "reason": "Technical research prototype, skipped in earlier runs for the same reason."
-      },
-      {
-        "story": "Canva cuts 1,271 jobs as growth slows",
-        "source": "https://www.theage.com.au/technology/canva-unveils-mass-job-cuts-in-hardest-moment-of-its-history-20261104-p61b62.html",
-        "decision": "skipped",
-        "reason": "Layoff story with no clear AI angle, would be sensitive."
-      },
-      {
-        "story": "Apple opens Siri AI to every app",
-        "decision": "covered",
-        "reason": "Already queued as 2026-11-04-apple-opens-siri-ai-every-app."
-      },
-      {
-        "story": "Cat Wu leaves Anthropic's Claude Code team",
-        "decision": "covered",
-        "reason": "Already queued as 2026-11-04-cat-wu-leaves-claude-code."
-      },
-      {
-        "story": "OpenAI says ChatGPT search volume is about 20 percent of Google's",
-        "decision": "covered",
-        "reason": "Already queued as 2026-11-04-chatgpt-one-fifth-google-search."
-      }
-    ],
-    "requests": []
-  },
-  {
     "run_at": "2026-11-04T17:02:12.825Z",
     "summary": "12:00 New York run: no open links or requests; queued the daily utility post and website guide (Microsoft Copilot in Windows, Edge and Office). November 4 now has 8 desk jobs, the daily cap.",
     "considered": [
@@ -5380,6 +5304,69 @@
         "story": "OpenAI Q3 revenue tops $10 billion with wider losses",
         "decision": "covered",
         "reason": "Already queued as 2026-11-11-openai-10-billion-quarter-still-loses."
+      }
+    ],
+    "requests": []
+  },
+  {
+    "run_at": "2026-11-11T14:58:08.236Z",
+    "summary": "Mid-morning run (10:00 New York): no open links or requests; queued the Kling AI guide (site only). No news job: today already has 7 desk posts, so the last slot is kept for a breaking priority 1 story or a Reel later. Note: the fal.ai balance is exhausted, which made the Odessia carousel's generated cover fail to render.",
+    "considered": [
+      {
+        "story": "Guide: How to use Kling AI to make videos (free credits explained)",
+        "source": "https://kling.ai/docs/point-policy",
+        "decision": "queued",
+        "job_id": "2026-11-11-how-to-use-kling-ai-guide",
+        "priority": 2,
+        "reason": "Site-only guide, next uncovered line in guides/plan.md after the Atlas lines skipped earlier."
+      },
+      {
+        "story": "ChatGPT Chat and Work tabs merging, Codex shares usage limits",
+        "source": "https://www.digitaltrends.com/computing/openai-merges-chat-and-work-in-chatgpt/",
+        "decision": "covered",
+        "reason": "Already covered as 2026-11-03-chatgpt-classic-retires-work-tab-merge and 2026-11-01-chatgpt-codex-one-shared-limit."
+      },
+      {
+        "story": "TSMC approves up to $1 billion in investments in OpenAI and Anthropic",
+        "source": "https://www.macrumors.com/2026/11/11/tsmc-approves-ai-investment/",
+        "decision": "covered",
+        "reason": "Marked covered by the earlier run today; TSMC's stake is already in the Anthropic IPO coverage."
+      },
+      {
+        "story": "OpenAI launches Businesses in ChatGPT and Business Agents",
+        "source": "https://www.tradingview.com/news/reuters.com,2026:newsml_L3N46R0VR:0-openai-lets-businesses-claim-chatgpt-profiles-adds-ai-agents-for-us-e-commerce-firms/",
+        "decision": "skipped",
+        "reason": "A business-facing beta with little pull for normal users, skipped twice already today, and only one slot is left."
+      },
+      {
+        "story": "Elon Musk says Claude is better than Grok 'for now'",
+        "source": "https://www.technobezz.com/news/elon-musk-admits-he-was-wrong-about-anthropic-and-calls-the-ai-company-the-industry-leader",
+        "decision": "skipped",
+        "reason": "Coverage traces back to older remarks from July and October, not a fresh story."
+      },
+      {
+        "story": "Notion AI chats exposed through a Fireworks AI security incident",
+        "source": "https://www.notion.com/help/security-incident-involving-a-third-party-ai-vendor",
+        "decision": "skipped",
+        "reason": "Disclosed on November 10, past the 12 hour window, and it affects under 1% of workspaces."
+      },
+      {
+        "story": "Nieman Lab survey: 51% use AI tools weekly but only 9% use AI for news",
+        "source": "https://www.niemanlab.org/2026/11/ai-is-becoming-an-information-gateway-audiences-still-dont-want-it-making-their-news/",
+        "decision": "skipped",
+        "reason": "Possible evergreen 'everyone' story, but weaker than a breaking priority 1 story that may still need today's last slot."
+      },
+      {
+        "story": "Oura to buy AI doctor service Counsel Health for $625 million",
+        "source": "https://www.pymnts.com/",
+        "decision": "skipped",
+        "reason": "Health deal with only one source found this run, and today's cap is nearly reached."
+      },
+      {
+        "story": "UK Office for Students says AI makes some coursework close to impossible to grade",
+        "source": "https://www.aol.co.uk/articles/ai-made-close-impossible-assess-070033000.html",
+        "decision": "skipped",
+        "reason": "UK story with little US interest, and no second source found this run."
       }
     ],
     "requests": []
