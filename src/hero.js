@@ -115,7 +115,9 @@ function useSpare(dest, spare) {
 }
 
 function isNews(job) {
-  return job.type !== 'reel' && !['utility', 'single', 'roundup', 'prompt'].includes(job.format) && (job.sources || []).length >= 2;
+  // Website guides (utility posts with a guide article) also need a hero: they publish on the site.
+  const guide = job.format === 'utility' && job.site_article?.kind === 'guide';
+  return job.type !== 'reel' && (guide || !['utility', 'single', 'roundup', 'prompt'].includes(job.format)) && (job.sources || []).length >= 2;
 }
 
 // Any photo at least 1200 px wide, credited to the photographer or the site it came from.
