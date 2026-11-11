@@ -1,80 +1,5 @@
 [
   {
-    "run_at": "2026-11-04T09:15:55.268Z",
-    "summary": "4:00 New York run: no open links or requests; queued 2 stories (Apple 10-K warns about AI agents, priority 1; OpenAI brings in Cathedral and raises bug bounties, priority 2). November 4 now has 5 desk jobs; utility post waits for the 11:00 run.",
-    "considered": [
-      {
-        "story": "Apple's fiscal 2026 10-K warns AI agents may act in unintended or unpredictable ways",
-        "source": "https://www.trtworld.com/article/9f4849aa875e",
-        "decision": "queued",
-        "job_id": "2026-11-04-apple-warns-ai-agents-act-without-permission",
-        "priority": 1
-      },
-      {
-        "story": "OpenAI partners with Cathedral Systems, the ex DOGE startup that probed Anthropic, and raises bug bounties to about $172,000",
-        "source": "https://interestingengineering.com/ai-robotics/openai-plans-new-security-sprint",
-        "decision": "queued",
-        "job_id": "2026-11-04-openai-hires-firm-that-hacked-anthropic",
-        "priority": 2
-      },
-      {
-        "story": "Revolut says self hosted open models cut its AI coding costs about 90 percent",
-        "source": "https://startupfortune.com/revolut-says-self-hosted-open-ai-models-cut-its-coding-costs-90/",
-        "decision": "skipped",
-        "reason": "Based on an October 22 talk and the reports disagree on which GLM model Revolut uses, so the facts are not solid enough."
-      },
-      {
-        "story": "AI agents now run operations at SETI's Allen Telescope Array",
-        "source": "https://blogs.nvidia.com/blog/ai-joins-the-search-for-extraterrestrial-signals/",
-        "decision": "skipped",
-        "reason": "NVIDIA announced it on October 30, so it is older than the 72 hour window for evergreen posts."
-      },
-      {
-        "story": "Google DeepMind staff push back on contract terms limiting criticism of Google",
-        "source": "https://www.washingtonpost.com/technology/2026/11/03/google-deepmind-staff-protest-lifetime-ban-criticizing-company/",
-        "decision": "skipped",
-        "reason": "Paywalled Washington Post report and no second source I could read."
-      },
-      {
-        "story": "Reuters: OpenAI employees warned about security lapses for years",
-        "decision": "skipped",
-        "reason": "Largely a rehash of earlier reporting with little new for our audience."
-      },
-      {
-        "story": "Canva cuts 1,271 jobs as growth slows",
-        "source": "https://www.theage.com.au/technology/canva-unveils-mass-job-cuts-in-hardest-moment-of-its-history-20261104-p61b62.html",
-        "decision": "skipped",
-        "reason": "Layoff story with no clear AI angle in the reports I saw; would be sensitive."
-      },
-      {
-        "story": "Claude Code adds instructions against cloning existing games",
-        "decision": "covered",
-        "reason": "Already covered as 2026-10-31-claude-code-stops-remaking-video-games."
-      },
-      {
-        "story": "OpenAI hires Uber president Jill Hazelbaker as chief corporate affairs officer",
-        "decision": "skipped",
-        "reason": "Executive hire with limited interest for our audience."
-      },
-      {
-        "story": "Anthropic FlashProve, cryptographic proof of which model produced a reply",
-        "decision": "skipped",
-        "reason": "Technical research prototype, Anthropic already has posts today."
-      },
-      {
-        "story": "India's cybersecurity agency gets access to Anthropic's Mythos model",
-        "decision": "skipped",
-        "reason": "Mostly an Indian government story with little US interest."
-      },
-      {
-        "story": "Google cuts off Search for schools that reject AI",
-        "decision": "covered",
-        "reason": "Already queued as 2026-11-03-google-schools-no-ai-no-search."
-      }
-    ],
-    "requests": []
-  },
-  {
     "run_at": "2026-11-04T11:08:18.335Z",
     "summary": "6:00 New York run: no open links or requests; queued 2 stories (Apple opens Siri AI to every app developer, priority 1; Netflix tests AI Discover mood tab, priority 2). November 4 now has 7 desk jobs; one slot left for the 11:00 utility post.",
     "considered": [
@@ -5447,6 +5372,73 @@
         "story": "OpenAI introduces Business Hub and Business Agents in ChatGPT",
         "decision": "skipped",
         "reason": "Aimed at US ecommerce businesses, little interest for normal users."
+      }
+    ],
+    "requests": []
+  },
+  {
+    "run_at": "2026-11-11T11:06:35.408Z",
+    "summary": "Early run (05:55 New York): no open links or requests; queued the Grok Build exposed-apps story (priority 1, xAI/SpaceXSI). Today now has 6 desk posts (2 Reels, 4 carousels counted as 1 Reel + 5 carousels incl. this one), leaving room for Reels later.",
+    "considered": [
+      {
+        "story": "Claroc finds 35,578 Grok Build apps open without login, incl. SpaceXSI sales files",
+        "source": "https://teslanorth.com/2026/11/10/grok-build-apps-private-data-claroc/",
+        "decision": "queued",
+        "job_id": "2026-11-11-grok-build-35000-apps-open-spacexai",
+        "priority": 1
+      },
+      {
+        "story": "Dorsia says ex-engineer stole secrets and used Claude to plan his move",
+        "source": "https://www.law360.com/hospitality/articles/2548797",
+        "decision": "skipped",
+        "reason": "Only a paywalled Law360 intro and a Reuters headline were readable; not enough verified detail for a carousel."
+      },
+      {
+        "story": "OpenAI acquires AI travel agent Odessia; Expedia and Booking shares dip",
+        "source": "https://techcrunch.com/2026/11/10/openai-acquires-odessia-travel-startup-created-by-sonder-founder/",
+        "decision": "skipped",
+        "reason": "Solid sources (TechCrunch, Skift), but today already has 5 carousels; keeping the remaining slots for Reels. Good candidate if a later run has room."
+      },
+      {
+        "story": "Stifel CEO says Anthropic tools showed the firm needs more positions",
+        "source": "https://www.foxbusiness.com/video/6408204231112",
+        "decision": "skipped",
+        "reason": "The jobs claim is only in a video headline with no transcript; the press release covers just the Dashboard partnership."
+      },
+      {
+        "story": "Elon Musk says Claude is better than Grok 'for now'",
+        "decision": "skipped",
+        "reason": "Search shows this is a months-old remark resurfaced, not new news."
+      },
+      {
+        "story": "Claude Personal Finance connects to bank accounts through Plaid",
+        "decision": "covered",
+        "reason": "Already covered as 2026-11-06-claude-personal-finance-bank-accounts."
+      },
+      {
+        "story": "ChatGPT Chat and Work tabs merging",
+        "decision": "covered",
+        "reason": "Already covered as 2026-11-03-chatgpt-classic-retires-work-tab-merge."
+      },
+      {
+        "story": "Anthropic IPO valuation talk ($1.4 to $1.5 trillion, Nov 19 or 20 Nasdaq date)",
+        "decision": "covered",
+        "reason": "IPO pricing covered 2026-11-10 (two jobs); no new confirmed fact worth a separate post yet."
+      },
+      {
+        "story": "OpenAI Q3 revenue tops $10 billion with wider losses",
+        "decision": "covered",
+        "reason": "Already queued as 2026-11-11-openai-10-billion-quarter-still-loses."
+      },
+      {
+        "story": "Nvidia spy scandal now said to involve $7.5 billion in chip sales",
+        "decision": "covered",
+        "reason": "Same story as 2026-11-08-nvidia-board-probes-huang-alleged-spy."
+      },
+      {
+        "story": "Google Gemini privacy policy and Gmail promise",
+        "decision": "covered",
+        "reason": "Same story as 2026-11-10-gemini-human-reviewers-gmail-drive."
       }
     ],
     "requests": []

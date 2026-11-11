@@ -1,0 +1,120 @@
+{
+  "id": "2026-11-11-grok-build-35000-apps-open-spacexai",
+  "created_at": "2026-11-11T11:05:00Z",
+  "story_time": "2026-11-10T23:44:00Z",
+  "timely": false,
+  "sensitive": false,
+  "priority": 1,
+  "review": true,
+  "format": "carousel",
+  "site_category": "companies",
+  "ab": { "headline": "long", "photo": "face" },
+  "sources": [
+    { "name": "Tesla North", "url": "https://teslanorth.com/2026/11/10/grok-build-apps-private-data-claroc/" },
+    { "name": "Runtime Wire", "url": "https://runtimewire.com/article/grok-build-apps-exposed-passive-dns-claroc-spacexsi" },
+    { "name": "Dataconomy", "url": "https://dataconomy.com/2026/11/11/grok-build-leak-exposes-sensitive-data-from-thousands-of/" }
+  ],
+  "caption": "Security firm Claroc says it opened 35,578 published Grok Build apps without signing in.\nMost were ordinary projects, but it estimates 650 to 800 held private data, from medical results to passwords.\n24 of the apps belonged to SpaceXSI and X staff, including sales plans.\n\nWould you still build an app with an AI tool after this?\n\nFollow @neurafeed.ai for daily AI news.\n\nSource: Tesla North, Runtime Wire · Photo: economist.com",
+  "threads_text": "A security firm says it opened 35,578 apps made with Grok Build, Elon Musk's AI app builder, without logging in. A few hundred held private data, and some were SpaceXSI's own sales files. Do you check who can see the stuff you build with AI tools?",
+  "slides": [
+    {
+      "kind": "cover",
+      "headline": "Elon Musk's AI app builder left *35,578 apps open* to anyone, including his own company's sales plans",
+      "image": {
+        "url": "https://www.economist.com/cdn-cgi/image/width=1424,quality=80,format=auto/content-assets/images/20241123_CUP503.jpg",
+        "credit": "via economist.com",
+        "fallback_urls": [
+          "https://www.presse-citron.net/app/uploads/2025/04/elon-musk-1.jpg",
+          "https://www.fredzone.org/wp-content/uploads/2023/10/Elon_Musk_X_banque-scaled.jpg"
+        ]
+      },
+      "pos": "center 30%",
+      "badges": [
+        { "url": "https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/png/grok-dark.png", "fit": "contain" }
+      ]
+    },
+    {
+      "kind": "card",
+      "heading": "*35,578 apps*, no login needed",
+      "paras": [
+        "Security firm Claroc says it opened 35,578 published Grok Build apps without signing in.",
+        "Grok Build is the vibe coding tool from SpaceXSI, the merged SpaceX and xAI company."
+      ],
+      "image": {
+        "url": "https://cdn.teslanorth.com/wp-content/uploads/2026/10/grok-official-og-1.jpg",
+        "credit": "via Tesla North",
+        "fit": "contain"
+      },
+      "note": "Most were ordinary games, calculators and websites."
+    },
+    {
+      "kind": "card",
+      "heading": "What was *sitting in the open*",
+      "paras": [
+        "Claroc estimates 650 to 800 of the apps held private data.",
+        "Reports list medical exam results, employee names and ID numbers, business plans, ad proposals and plain-text passwords."
+      ],
+      "image": {
+        "url": "https://dataconomy.com/wp-content/uploads/2026/11/grok-build-coding-agent-leaks-confidential-info-so.jpg",
+        "credit": "via Dataconomy"
+      }
+    },
+    {
+      "kind": "card",
+      "heading": "Even *SpaceXSI's own* files",
+      "paras": [
+        "24 apps from SpaceXSI and X staff were open, including a sales map of 594 accounts and an onboarding plan for a new sales hire.",
+        "Claroc says they were taken down after it reported them."
+      ],
+      "image": {
+        "url": "https://runtimewire.com/api/storage/uploads/hero-images/0eb8479e-19f3-4085-9c5a-211647edd688.png?w=1600&fmt=webp",
+        "credit": "via Runtime Wire",
+        "fallback_urls": [
+          "https://runtimewire.com/og/grok-build-apps-exposed-passive-dns-claroc-spacexsi.16x9.jpg?v=og2-bi1ru9"
+        ]
+      }
+    },
+    {
+      "kind": "card",
+      "heading": "How it *happened*",
+      "paras": [
+        "Claroc says its paid account preselected \"Anyone with the link\" when publishing, and the apps could be listed through public DNS records.",
+        { "t": "SpaceXSI says employee accounts default to \"Only you.\"", "strong": true }
+      ],
+      "image": {
+        "url": "https://www.tekedia.com/wp-content/uploads/2025/02/grok.jpg",
+        "credit": "via Tekedia",
+        "fallback_urls": [
+          "https://www.teslarati.com/wp-content/uploads/2026/09/tesla-grok-bot-integration.jpg"
+        ]
+      }
+    },
+    {
+      "kind": "cta",
+      "hook": "Follow to know when the AI tools you use leave your data out in the open."
+    }
+  ],
+  "site_article": {
+    "headline": "Security firm says thousands of Grok Build apps could be opened without signing in",
+    "dek": "Claroc says a few hundred of the exposed apps held private data, including 24 apps tied to SpaceXSI and X staff.",
+    "summary": "Security firm Claroc said on November 10, 2026 that it opened 35,578 published apps made with Grok Build, SpaceXSI's AI app builder, without signing in. It estimates that 650 to 800 of them contained private data, including internal sales material from SpaceXSI itself.",
+    "seo_title": "Grok Build apps exposed: 35,578 opened without login",
+    "seo_description": "Claroc says it opened 35,578 Grok Build apps without signing in, including SpaceXSI sales files. What was exposed and how sharing worked.",
+    "answer_summary": "According to security firm Claroc, 35,578 published Grok Build apps could be opened without signing in, and an estimated 650 to 800 of them held private data such as medical results, employee details and passwords.",
+    "tags": ["Grok", "Grok Build", "SpaceXSI", "xAI", "Cybersecurity", "Data privacy"],
+    "hero_alt": "Portrait photo of Elon Musk with a serious expression, with the Grok logo in a round badge.",
+    "paragraphs": [
+      { "kind": "fact", "text": "Security research firm Claroc said on November 10, 2026 that it was able to open 35,578 published apps built with Grok Build without signing in. Grok Build is the vibe coding agent run by SpaceXSI, the company formed by merging SpaceX and xAI, and lets users turn chat instructions into working web apps that can be shared with others.", "sources": [0, 1, 2] },
+      { "kind": "fact", "text": "Most of the apps Claroc reached were ordinary projects such as games, calculators and simple websites, according to Tesla North. Claroc estimates that between 650 and 800 of them contained private data.", "sources": [0] },
+      { "kind": "heading", "text": "What the apps contained" },
+      { "kind": "fact", "text": "Dataconomy, summarizing Claroc's findings, reported that the exposed material included medical examination results, galley checklists from a celebrity cruise line, internal business plans, advertising proposals, and employee names and ID numbers. Runtime Wire reported that the findings also included employee rosters and passwords stored in plain text.", "sources": [1, 2] },
+      { "kind": "fact", "text": "Some of the material belonged to SpaceXSI. Tesla North reported that Claroc found 24 apps made by SpaceXSI and X staff, including sales material, and that the researchers said those apps were taken down after they disclosed the problem. Dataconomy and Runtime Wire described SpaceXSI documents including a confidential onboarding plan for a new enterprise sales hire and a sales territory map covering 594 accounts. Dataconomy also listed internal addresses for sales team tools and advertising proposals.", "sources": [0, 1, 2] },
+      { "kind": "heading", "text": "How the apps became reachable" },
+      { "kind": "fact", "text": "Shared Grok Build apps use randomized web addresses, which would normally make them hard to guess. According to Dataconomy and Runtime Wire, the way the apps were hosted meant their addresses showed up in public DNS records, which let anyone list thousands of live projects and, in most cases, open them.", "sources": [1, 2] },
+      { "kind": "fact", "text": "Claroc said its own paid account preselected the option \"Anyone with the link\" during publishing, Tesla North reported. The apps did not become public on their own: their creators still had to publish them. Claroc said that choosing \"Only you\" did block outside visitors in its tests. It also said it found faulty team access checks in a test app of its own, rather than by changing other people's apps.", "sources": [0] },
+      { "kind": "fact", "text": "SpaceXSI told a reporter that publishing an app takes several steps and that employee accounts default to \"Only you,\" according to Tesla North, which said Claroc included that response in its report. Claroc recommended private sharing by default and access limited to a user's organization. Claroc examined apps published from the chat based Build mode in Grok, not from the Agent Dashboard that Grok introduced on October 1, 2026 to coordinate several coding agents.", "sources": [0] },
+      { "kind": "analysis", "text": "The findings point to a wider pattern with AI app builders. These tools let people outside IT departments publish working internal tools in minutes, and a single sharing setting can decide whether a project stays private. When that setting leans toward public links and the links can be discovered, small personal projects and sensitive company files end up in the same open pool. The fact that SpaceXSI's own staff published sales material this way suggests the risk is not limited to casual users." },
+      { "kind": "why_it_matters", "text": "The next step to watch is whether SpaceXSI changes Grok Build's publishing default to private and limits the ability to list published apps, as Claroc recommended." }
+    ]
+  }
+}
