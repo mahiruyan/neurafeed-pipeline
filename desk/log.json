@@ -1,69 +1,5 @@
 [
   {
-    "run_at": "2026-11-04T12:54:25.863Z",
-    "summary": "8:00 New York run: no open links or requests; no new priority 1 story since the 6:00 run, so nothing queued. November 4 has 7 desk jobs; the last slot is kept for the 11:00 utility post.",
-    "considered": [
-      {
-        "story": "OpenAI seems to be silently re-enabling model training on Codex chats",
-        "source": "https://news.ycombinator.com/",
-        "decision": "skipped",
-        "reason": "Only a user claim on Hacker News, no news report or OpenAI statement I could find to confirm it."
-      },
-      {
-        "story": "Applied Compute raises $350M at a $3.25B valuation",
-        "source": "https://siliconangle.com/2026/11/03/ai-cloud-startup-applied-compute-raises-350m-after-reaching-key-revenue-milestone/",
-        "decision": "skipped",
-        "reason": "Funding round for a little known AI cloud startup, low interest and the daily cap is nearly full."
-      },
-      {
-        "story": "Super Micro revenue jumps on AI server demand",
-        "source": "https://www.reuters.com/business/super-micro-forecasts-quarterly-revenue-above-estimates-strong-ai-server-demand-2026-11-03/",
-        "decision": "skipped",
-        "reason": "Earnings story with little appeal for a general audience."
-      },
-      {
-        "story": "Claude plugins can now connect automatically for Team and Enterprise",
-        "source": "https://x.com/ClaudeDevs/status/2117680635561312732",
-        "decision": "skipped",
-        "reason": "Small admin feature for business plans, one source only."
-      },
-      {
-        "story": "Smugglers bundle banned HBM memory with junk chips to reach China",
-        "source": "https://wccftech.com/smugglers-hbm-throwaway-server-chips-us-export-controls-loophole-china-south-korea/",
-        "decision": "skipped",
-        "reason": "Single secondary report and the last slot is reserved for the utility post."
-      },
-      {
-        "story": "Google DeepMind staff push back on contract terms limiting criticism",
-        "source": "https://www.washingtonpost.com/technology/2026/11/03/google-deepmind-staff-protest-lifetime-ban-criticizing-company/",
-        "decision": "skipped",
-        "reason": "Paywalled report with no second source I could read, same as earlier runs."
-      },
-      {
-        "story": "Anthropic FlashProve, cryptographic proof of which model wrote a reply",
-        "source": "https://www.anthropic.com/research/provable-inference",
-        "decision": "skipped",
-        "reason": "Technical research prototype, skipped in earlier runs for the same reason."
-      },
-      {
-        "story": "Apple opens Siri AI to every app",
-        "decision": "covered",
-        "reason": "Already queued as 2026-11-04-apple-opens-siri-ai-every-app."
-      },
-      {
-        "story": "OpenAI brings in Cathedral, the startup that probed Anthropic",
-        "decision": "covered",
-        "reason": "Already queued as 2026-11-04-openai-hires-firm-that-hacked-anthropic."
-      },
-      {
-        "story": "Netflix AI Discover mood tab",
-        "decision": "covered",
-        "reason": "Already queued as 2026-11-04-netflix-ai-discover-mood-tab."
-      }
-    ],
-    "requests": []
-  },
-  {
     "run_at": "2026-11-04T14:55:41.013Z",
     "summary": "10:00 New York run: no open links or requests; no new priority 1 story since the 8:00 run, so nothing queued. November 4 has 7 desk jobs; the last slot is kept for the 11:00 utility post.",
     "considered": [
@@ -5377,6 +5313,73 @@
         "job_id": "2026-11-11-jensen-strictly-research-reel-2",
         "priority": 1,
         "reason": "Mahir's link. It is the same X post he sent as link-2026-11-11-3352, already posted at 06:54 UTC as 2026-11-11-jensen-strictly-research-reel, so already_posted_as is set and the preview will warn him. The clip carries the @AlexesNakamoto watermark and X could not be opened here, so the hook is his title word for word."
+      }
+    ],
+    "requests": []
+  },
+  {
+    "run_at": "2026-11-11T13:06:06.977Z",
+    "summary": "Morning run (08:00 New York): no open links or requests; queued OpenAI's Odessia buy-and-shutdown (priority 2) and the Higgsfield guide (site only). Today now has 7 desk posts.",
+    "considered": [
+      {
+        "story": "OpenAI acquires AI travel agent Odessia and shuts the service; Expedia falls as much as 5%",
+        "source": "https://techcrunch.com/2026/11/10/openai-acquires-odessia-travel-startup-created-by-sonder-founder/",
+        "decision": "queued",
+        "job_id": "2026-11-11-openai-buys-odessia-shuts-it-down",
+        "priority": 2
+      },
+      {
+        "story": "Guide: How to use Higgsfield AI and what you get for free",
+        "source": "https://higgsfield.ai/creator-hub/help-center/plans-and-subscriptions/how-do-higgsfield-plans-work",
+        "decision": "queued",
+        "job_id": "2026-11-11-how-to-use-higgsfield-ai-guide",
+        "priority": 2,
+        "reason": "Site-only guide. The first plan line (ChatGPT Atlas) was skipped because OpenAI has deprecated Atlas."
+      },
+      {
+        "story": "Payscale: 56% of workers expect a raise for AI skills, only 16% got one",
+        "source": "https://www.globenewswire.com/news-release/2026/11/10/3399638/0/en/payscale-s-ai-workforce-impact-report-ai-is-boosting-productivity-but-employers-struggle-to-put-a-price-on-it.html",
+        "decision": "skipped",
+        "reason": "Good money story, but only Payscale's own release confirms the 16% figure and no usable photo could be checked; today already has enough carousels. A later run could pick it up."
+      },
+      {
+        "story": "NVIDIA GR00T 2 teaches robots from human video",
+        "source": "https://thenextweb.com/news/nvidia-gr00t-2-robots-human-video-corl",
+        "decision": "skipped",
+        "reason": "Would fit a Reel, but no official GR00T 2 video URL could be found; announced November 9, so getting old."
+      },
+      {
+        "story": "Railway breach led to about $740,000 in fraudulent AI charges",
+        "source": "https://www.bleepingcomputer.com/news/apple/railway-breach-leads-to-740-000-in-fraudulent-ai-charges/",
+        "decision": "skipped",
+        "reason": "Still no usable photo that could be checked from here; today's carousel slots are nearly full."
+      },
+      {
+        "story": "Adobe adds Photoshop Relight, Generative Restyle and an MCP",
+        "decision": "skipped",
+        "reason": "Creative Bloq and TechCrunch pages could not be opened in this run, and no clean official video was found for a Reel."
+      },
+      {
+        "story": "OpenAI launches Businesses in ChatGPT and Business Agents",
+        "source": "https://openai.com/index/introducing-businesses-chatgpt/",
+        "decision": "skipped",
+        "reason": "Merchant-facing beta with little appeal for normal users; the daily cap is close."
+      },
+      {
+        "story": "Chinese university bought Nvidia H200 chips despite the US ban",
+        "source": "https://www.aljazeera.com/news/2026/11/11/chinese-university-buys-nvidia-ai-h200-chips-despite-us-ban-records-show",
+        "decision": "skipped",
+        "reason": "Only two chips, single source read; Nvidia spy story already covered several times this week."
+      },
+      {
+        "story": "Anthropic Australian retail IPO offer opens",
+        "decision": "covered",
+        "reason": "Anthropic IPO already covered in 2026-11-10-anthropic-ipo-price-1-trillion."
+      },
+      {
+        "story": "OpenAI Q3 revenue tops $10 billion with wider losses",
+        "decision": "covered",
+        "reason": "Already queued as 2026-11-11-openai-10-billion-quarter-still-loses."
       }
     ],
     "requests": []
