@@ -1,0 +1,21 @@
+name: AI crawler check
+# Read only: can AI crawlers (ChatGPT, Claude, Perplexity, Google) read neurafeedai.com?
+on: workflow_dispatch
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: robots.txt and crawler responses
+        run: |
+          echo "::notice::robots.txt: $(curl -s https://neurafeedai.com/robots.txt | tr '\n' '|' | cut -c1-900)"
+          for ua in "GPTBot/1.2" "OAI-SearchBot/1.0" "ChatGPT-User/1.0" "ClaudeBot/1.0" "Claude-User/1.0" "PerplexityBot/1.0" "Google-Extended" "Googlebot/2.1" "bingbot/2.0"; do
+            code=$(curl -s -o /dev/null -w '%{http_code}' -A "Mozilla/5.0 (compatible; $ua)" https://neurafeedai.com/)
+            echo "$ua=$code"
+          done | tr '\n' ' ' | sed 's/^/::notice::status /'; echo
+      - name: Cloudflare bot settings
+        env:
+          CF: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+        run: |
+          z=$(curl -s -H "Authorization: Bearer $CF" "https://api.cloudflare.com/client/v4/zones?name=neurafeedai.com" | jq -r '.result[0].id // empty')
+          [ -n "$z" ] || { echo "::notice::zone not readable with this token"; exit 0; }
+          echo "::notice::bot_management: $(curl -s -H "Authorization: Bearer $CF" "https://api.cloudflare.com/client/v4/zones/$z/bot_management" | jq -c '{success, errors: [.errors[]?.message], r: (.result // {} | {ai_bots_protection, crawler_protection, is_robots_txt_managed, fight_mode, enable_js})}')"
