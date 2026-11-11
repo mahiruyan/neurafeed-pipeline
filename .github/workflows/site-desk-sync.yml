@@ -1,7 +1,8 @@
 name: Site desk sync
 
 # Every hour: the website scans its approved feeds and turns the news desk's new articles into
-# drafts (up to 4 per run). Each draft still waits for Mahir's approval on Telegram.
+# drafts (up to 4 news per run, every guide). News drafts wait for Mahir's approval on Telegram;
+# guides publish on their own (his rule, 2026-11-11).
 on:
   schedule:
     - cron: "40 * * * *"
@@ -31,6 +32,8 @@ jobs:
           done
           echo "::notice::HTTP $code scan=$(jq -c '.scan' <<<"$body" 2>/dev/null) scanError=$(jq -r '.scanError // ""' <<<"$body" 2>/dev/null | cut -c1-200)"
           jq -r '.drafted[]? | "drafted: \(.headline)"' <<<"$body" 2>/dev/null | while read -r l; do echo "::notice::$l"; done
+          jq -r '.guides.published[]? | "guide published: \(.headline) \(.url // "")"' <<<"$body" 2>/dev/null | while read -r l; do echo "::notice::$l"; done
+          jq -r '.guides.errors[]? | "guide waiting: \(.)"' <<<"$body" 2>/dev/null | head -10 | while read -r l; do echo "::warning::$l"; done
           jq -r '.errors[]?' <<<"$body" 2>/dev/null | head -5 | while read -r l; do echo "::warning::$l"; done
           echo "::notice::waiting for a later run: $(jq -r '.waiting // 0' <<<"$body" 2>/dev/null)"
           [ "$code" = 200 ] || { echo "::error::$(cut -c1-300 <<<"$body")"; exit 1; }
