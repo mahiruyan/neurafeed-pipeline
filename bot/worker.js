@@ -57,6 +57,13 @@ export default {
     else {
       ctx.waitUntil(dueCheck(env));
       ctx.waitUntil(siteDraftCheck(env).catch((e) => console.log(`site drafts: ${e.message}`)));
+      // GitHub runs its own hourly schedule late or not at all (3 runs in 22 hours on 2026-11-11),
+      // so the site's desk sync (new drafts, guides published) is started from here once an hour.
+      ctx.waitUntil((async () => {
+        if (await env.KV.get('desk_sync_at')) return;
+        await env.KV.put('desk_sync_at', new Date().toISOString(), { expirationTtl: 55 * 60 });
+        await dispatch(env, 'site-desk-sync.yml', {});
+      })().catch((e) => console.log(`desk sync: ${e.message}`)));
     }
   },
   async fetch(req, env, ctx) {
