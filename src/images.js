@@ -295,7 +295,7 @@ async function fetchImages(job, outDir) {
           }
         }
         // A logo the photo already shows clearly is not added a second time.
-        const isLogo = (b.fit || 'contain') === 'contain' || b.shape === 'free' || b.cutout;
+        const isLogo = b.shape !== 'card' && ((b.fit || 'contain') === 'contain' || b.shape === 'free' || b.cutout);
         if (isLogo && paths[i]) {
           const seen = await logoAlreadyVisible(paths[i], b.url).catch((e) => { errors.push(`slide ${i + 1} badge ${j + 1}: logo check skipped (${e.message})`); return false; });
           if (seen) { errors.push(`slide ${i + 1} badge ${j + 1}: left out, the photo already shows this logo`); continue; }

@@ -42,7 +42,7 @@ function headlineSize(text, base, perLine) {
 // Slide fields: badges: [{ url, fit: "contain" (logo) | "cover" (face), pos, bg }],
 // badge_side: "right" | "left", badge_border: "green" | "black" | "white".
 // A cut-out (background removed) is shown free unless a shape is set explicitly.
-const isFree = (b) => b.shape === 'free' || (b.cutout && !b.shape);
+const isFree = (b) => b.shape === 'free' || b.shape === 'card' || (b.cutout && !b.shape);
 const BORDER = { green: ACC, black: '#000', white: '#fff' };
 function badgeItems(s, urls, size) {
   const border = BORDER[s.badge_border] || BORDER.green;
@@ -68,6 +68,8 @@ function freeItems(s, urls) {
     if (!isFree(b)) return '';
     const w = Math.round(330 * (b.scale || 1));
     const side = b.side === 'left' ? 'left' : 'right';
+    // shape "card": a screenshot or picture laid on the photo as a rounded card (whole image, white edge).
+    if (b.shape === 'card') return `<img src="${u}" style="position:absolute;${side}:${b.inset ?? 44}px;top:${b.top || 300}px;width:${w}px;height:auto;border-radius:22px;border:6px solid #fff;box-shadow:0 18px 50px rgba(0,0,0,.65);transform:rotate(${b.tilt || 0}deg);z-index:4">`;
     return `<img src="${u}" style="position:absolute;${side}:40px;top:${b.top || 300}px;width:${w}px;height:${w}px;object-fit:contain;filter:drop-shadow(0 12px 30px rgba(0,0,0,.6));z-index:4">`;
   }).join('');
 }
@@ -190,6 +192,17 @@ ${s.note ? para(s.note, size - 4, '#9aa1a7') : ''}
 </div>`);
 }
 
+// photo: one picture shown whole on the dark page (a screenshot, a document, a meme), with an
+// optional heading above and a gray note below. Nothing is cropped.
+function photo(s, img) {
+  return dark(s, `${tag}
+<div style="position:absolute;top:140px;bottom:90px;left:50px;right:50px;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:30px">
+${s.heading ? `<h2 style="margin:0;align-self:stretch;font-family:Poppins;font-weight:700;font-size:${s.hsize || 60}px;line-height:1.15">${hl(s.heading)}</h2>` : ''}
+<img src="${img}" style="max-width:980px;max-height:${s.heading || s.note ? 900 : 1060}px;width:auto;height:auto;min-width:${s.heading || s.note ? 0 : 980}px;object-fit:contain;border-radius:26px;border:1px solid #2a2e33;background:#fff">
+${s.note ? para(s.note, 30, '#9aa1a7') : ''}
+</div>`);
+}
+
 // product: big picture on top, a big colored title and the text below (one item of a list).
 function product(s, img) {
   const paras = s.paras || [];
@@ -270,7 +283,7 @@ ${s.hook ? `<p style="position:absolute;top:840px;left:90px;right:90px;margin:0;
 }
 
 function page(slide, imgUrl, badgeUrls = []) {
-  const kinds = { cover, text, cta, card, product, post, prompt, summary };
+  const kinds = { cover, text, cta, card, product, post, prompt, summary, photo };
   const fn = kinds[slide.kind];
   if (!fn) throw new Error(`Unknown slide kind: ${slide.kind}`);
   return `<!doctype html><html><head><meta charset="utf-8"><style>${fontCss}</style></head><body>${fn(slide, imgUrl, badgeUrls)}</body></html>`;

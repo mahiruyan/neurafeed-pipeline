@@ -1,6 +1,6 @@
 // Checks a job file before rendering. Returns a list of problems (empty = OK).
-const KINDS = new Set(['cover', 'text', 'cta', 'card', 'product', 'post', 'prompt', 'summary']);
-const NEEDS_IMAGE = new Set(['cover', 'text', 'card', 'product']);
+const KINDS = new Set(['cover', 'text', 'cta', 'card', 'product', 'post', 'prompt', 'summary', 'photo']);
+const NEEDS_IMAGE = new Set(['cover', 'text', 'card', 'product', 'photo']);
 const CARD_MAX_CHARS = 260;
 const SITE_CATEGORIES = new Set(['breaking', 'companies', 'models', 'robotics', 'free-tools', 'policy']);
 const DASHES = /[–—]/; // NeuraFeed rule: no en dash or em dash anywhere.
@@ -79,7 +79,7 @@ function validateJob(job, fileId) {
   const p = [];
   if (job.id !== fileId) p.push(`id "${job.id}" must match the file name "${fileId}"`);
   const single = job.format === 'single';
-  if (!Array.isArray(job.slides) || (single ? job.slides.length !== 1 : (job.slides.length < 3 || job.slides.length > 8))) p.push(single ? 'a single post has exactly 1 slide (a cover)' : 'slides must be an array of 3 to 8 items');
+  if (!Array.isArray(job.slides) || (single ? !(job.slides.length === 1 || (job.slides.length === 2 && job.slides[1]?.kind === 'photo')) : (job.slides.length < 3 || job.slides.length > 8))) p.push(single ? 'a single post has 1 slide (a cover), or 2: a cover and a photo slide' : 'slides must be an array of 3 to 8 items');
   if (!job.caption) p.push('caption is required');
   // A single post made from a picture Mahir sent (inbox/uploads/...) is his own content: no outside source needed.
   const ownPicture = single && /^inbox\/uploads\//.test(job.slides?.[0]?.image?.url || '');

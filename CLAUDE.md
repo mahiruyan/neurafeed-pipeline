@@ -188,6 +188,13 @@ photo. Pick the kind that fits each slide:
   NOT for normal news carousels. Use it only in a weekly roundup or when Mahir asks for it.
 - `text`: the older style, text over a photo. Use only when a strong photo matters more than
   anything else.
+- `photo`: one picture shown whole, nothing cropped (a screenshot, a document, a meme, the image
+  from a post Mahir sent): `image`, optional `heading` above and `note` (one gray line: who made
+  it, what it is). A `"format": "single"` post may have 2 slides: the cover, then one `photo`
+  slide with the full picture. Use that when Mahir asks for the original image to be shown.
+  The same picture can also lie on the cover as a card: a badge with `"shape": "card"`
+  (`"side"`, `"top"` px, `"scale"`, optional `"tilt"` degrees): the whole image with a white edge.
+  The photos of an X post are saved into `inbox/uploads/` by the "Tweet media" workflow.
 - `cta` (last slide): "Follow for more", our account card with the real follower count, `hook`
   (one sentence tied to this story) and "Save for later". No picture needed.
 A typical news carousel: cover, 2 to 4 `card` slides (or a `post` when the story is about what
