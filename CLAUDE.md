@@ -277,8 +277,9 @@ stays real, so the result reads as a photo.
 `assets/people/index.json` holds 300+ hand-picked real photos of 37 people who are often in AI news
 (Musk, Altman, Dario and Daniela Amodei, Huang, Zuckerberg, Pichai, Cook, Ternus, Hassabis, Nadella,
 Brockman, Murati, Karpathy, Simo, Ive, and more), each tagged with the expression on the face.
-When a story is about one of them, the cover is their real photo from the library, with the face
-that fits the story: `worried` or `serious` for bad news, risk, lawsuits, losses, warnings;
+When a story is about one of them, their real photo from the library goes on the cover: as the
+round badge when the main photo shows the story (the usual case, see "How to choose the cover"),
+or as the main photo when rule 3 there applies. Pick the face that fits the story: `worried` or `serious` for bad news, risk, lawsuits, losses, warnings;
 `smiling` or `laughing` for records, launches, wins, money raised; `speaking` for something they
 said; `surprised` for a shock. Pick it with:
 
@@ -289,8 +290,8 @@ and copy what it prints: `image` (url, credit, fallback_urls) and `pos` into the
 picks the photos used least in the last 14 days, so faces do not repeat. Put the company's logo
 as a badge (built-in library or the sources below). Two people in the story: the main one is the
 cover photo, the other a round `cover` badge with their library photo.
-A library photo beats a generated cover for a person story. Generate a cover only when the story
-has no person in the library (a product, a policy, an abstract idea).
+A real photo of the thing or the moment beats everything; a library portrait beats a generated
+cover. Generate a cover only when no real photo shows the story.
 
 How to choose the cover, for every carousel (decided 2026-11-12 from @aifortuneclub, the style
 Mahir wants on Instagram). The cover shows the STORY, not a portrait:

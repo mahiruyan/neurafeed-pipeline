@@ -1,9 +1,9 @@
 // Keyword research from search autocomplete (Google + Bing, US English). No paid API.
 // A suggestion that shows up for many seeds and high in the list is searched a lot.
 // node tools/keywords.js > keywords.json
-const TOOLS = ['chatgpt', 'claude', 'gemini', 'perplexity', 'notebooklm', 'copilot', 'grok', 'cursor', 'claude code',
+const TOOLS = (process.env.KW_TOOLS ? process.env.KW_TOOLS.split(',').map((x) => x.trim().toLowerCase()).filter(Boolean) : ['chatgpt', 'claude', 'gemini', 'perplexity', 'notebooklm', 'copilot', 'grok', 'cursor', 'claude code',
   'midjourney', 'chatgpt image', 'elevenlabs', 'suno', 'runway', 'veo', 'capcut ai', 'canva ai', 'deepseek', 'meta ai',
-  'sora', 'chatgpt atlas', 'gemini nano banana', 'kling', 'higgsfield', 'lovable', 'bolt new', 'n8n', 'zapier ai', 'ollama', 'ai agent'];
+  'sora', 'chatgpt atlas', 'gemini nano banana', 'kling', 'higgsfield', 'lovable', 'bolt new', 'n8n', 'zapier ai', 'ollama', 'ai agent']);
 const MODS = ['how to', 'how to use', 'not working', 'vs', 'free', 'alternative', 'prompts for', 'for', 'can', 'limit', 'price', 'what is', 'tips', 'error', 'best'];
 const UA = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130 Safari/537.36';
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));

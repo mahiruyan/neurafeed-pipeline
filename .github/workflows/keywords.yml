@@ -1,5 +1,8 @@
 name: Keyword research
-on: workflow_dispatch
+on:
+  workflow_dispatch:
+    inputs:
+      tools: { description: 'Comma separated tool names (empty = default list)', required: false, default: '' }
 permissions:
   contents: write
 jobs:
@@ -10,6 +13,8 @@ jobs:
       - uses: actions/setup-node@v4
         with: { node-version: 22 }
       - run: node tools/keywords.js > /tmp/keywords.json
+        env:
+          KW_TOOLS: ${{ inputs.tools }}
       - run: |
           echo "::notice::$(node -e "const k=require('/tmp/keywords.json');console.log(k.length+' keywords')")"
           git config user.name "neurafeed-bot"; git config user.email "bot@users.noreply.github.com"
