@@ -5504,5 +5504,64 @@
       }
     ],
     "requests": []
+  },
+  {
+    "run_at": "2026-11-12T17:03:28.049Z",
+    "summary": "Desk run (12:00 New York): queued Google's Gemini glasses preorder story (priority 1, today's 8th live desk post) and today's third site-only guide (Wispr Flow). No open links or requests.",
+    "considered": [
+      {
+        "story": "Google opens preorders for Gemini Intelligent Eyewear with Warby Parker and Gentle Monster, from $395, shipping December 10",
+        "source": "https://9to5google.com/2026/11/12/google-intelligent-eyewear-glasses/",
+        "decision": "queued",
+        "job_id": "2026-11-12-google-gemini-glasses-preorder-395",
+        "priority": 1,
+        "reason": "Major Google consumer launch with a price everyone understands, confirmed by 9to5Google, Unite.AI and Android Headlines. Today had 7 live desk posts (the Georgia lawsuit expired and two Huang versions were rejected or skipped), so this fills the 8th. Image hosts could not be reached from here, so the pipeline download is the check."
+      },
+      {
+        "story": "Website guide: How to use Wispr Flow (next Tool library line in guides/plan.md)",
+        "source": "https://docs.wisprflow.ai/articles/2772472373-what-is-flow",
+        "decision": "queued",
+        "job_id": "2026-11-12-how-to-use-wispr-flow-guide",
+        "priority": 2,
+        "reason": "Third guide of the day, site only; built from Wispr's help center (setup, plans, Dictionary, Command Mode) plus a Spokenly review (a rival app, said so in the text), TechCrunch and SiliconANGLE."
+      },
+      {
+        "story": "Claude Fable 5.2 edges Gemini 4 Carbon on Google's benchmark at 6x the cost (PPC Land)",
+        "decision": "skipped",
+        "reason": "Benchmark detail for insiders; the day's desk slots are now full."
+      },
+      {
+        "story": "UK rejects EU AI rules (Bloomberg)",
+        "source": "https://bloomberg.com/news/articles/2026-11-12/britain-s-split-with-the-eu-on-ai-makes-it-even-harder-to-roll-back-brexit",
+        "decision": "skipped",
+        "reason": "UK policy story with little US reader interest; cap reached."
+      },
+      {
+        "story": "Adobe and Google bring Gemini to Photoshop and PDF editing to Gmail",
+        "decision": "skipped",
+        "reason": "Cap reached with the glasses story, which is the stronger Google consumer item today."
+      },
+      {
+        "story": "Google Gemini Decisions API",
+        "decision": "skipped",
+        "reason": "Developer API, little general appeal."
+      },
+      {
+        "story": "Swatters use AI voices to fool 911 dispatchers (NPR survey)",
+        "decision": "skipped",
+        "reason": "Daily cap reached; candidate for tomorrow if there is new reporting."
+      },
+      {
+        "story": "Jensen Huang resigns as Nvidia CEO and follow-ups",
+        "decision": "covered",
+        "reason": "Mahir posted it himself today; desk versions were rejected or skipped and a site-only article exists."
+      },
+      {
+        "story": "Mahir's old inbox links (link-2026-10-13-224, link-2026-10-14-435, link-2026-10-20-1074-2, link-2026-10-21-w47d4efec)",
+        "decision": "covered",
+        "reason": "Already in inbox/skipped.json from earlier runs; nothing new to do."
+      }
+    ],
+    "requests": []
   }
 ]
