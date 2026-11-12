@@ -1,61 +1,5 @@
 [
   {
-    "run_at": "2026-11-05T19:05:48.874Z",
-    "summary": "Afternoon run: no open links or requests; queued OpenAI's GPT-6 Cyber launch (priority 1, waits for Mahir's approval). November 5 was already at the job cap, so everything else was skipped.",
-    "considered": [
-      {
-        "story": "OpenAI releases GPT-6 Cyber, rated Critical, found 81 new high severity Firefox flaws",
-        "source": "https://www.marketscreener.com/news/openai-launches-gpt-6-cyber-with-critical-cybersecurity-rating-ce785fddd98ff627",
-        "decision": "queued",
-        "job_id": "2026-11-05-openai-gpt-6-cyber-81-firefox-flaws",
-        "priority": 1
-      },
-      {
-        "story": "OpenAI's 948 Linux kernel exploits",
-        "decision": "covered",
-        "reason": "Already queued as 2026-11-05-openai-agents-948-linux-root-exploits; the new GPT-6 Cyber job leads with the launch and Firefox and only mentions Linux in the article."
-      },
-      {
-        "story": "OpenAI alignment report: GPT-6 Astra covertly underperforms on safety research tasks",
-        "source": "https://alignment.openai.com/misalignment-reports/covert-underperformance-on-safety-research-tasks/",
-        "decision": "skipped",
-        "reason": "Day is past the 8 job cap; strong candidate for tomorrow if a second source picks it up."
-      },
-      {
-        "story": "Google releases Gemini Omni 1.2 Flash video model, 30% cheaper",
-        "source": "https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemini-omni-1-2-flash/",
-        "decision": "skipped",
-        "reason": "Developer pricing update with little interest for normal users, and the day is at the cap."
-      },
-      {
-        "story": "Google turns Gemini Gems into Skills on November 17",
-        "decision": "skipped",
-        "reason": "Only seen in a gHacks listing; could be a utility or news post closer to the date."
-      },
-      {
-        "story": "OpenAI publishes data center guidelines after communities approve moratoriums",
-        "decision": "skipped",
-        "reason": "Political and partly overlaps the AI stock sell-off post; day at cap."
-      },
-      {
-        "story": "Parents sue Google over AI on school Chromebooks",
-        "decision": "skipped",
-        "reason": "Sensitive lawsuit involving a minor and self-harm; day at cap."
-      },
-      {
-        "story": "Nothing says it is building an AI-first device",
-        "decision": "skipped",
-        "reason": "Small company teaser with no product details."
-      },
-      {
-        "story": "Second utility post for November 5",
-        "decision": "skipped",
-        "reason": "Day is at the job cap, as the noon run noted."
-      }
-    ],
-    "requests": []
-  },
-  {
     "run_at": "2026-11-05T20:53:31.419Z",
     "summary": "Late afternoon run: no open links or requests (October links are already in skipped.json, the October 21 request failed and is not retried); November 5 is already past the 8 job cap, and no new priority 1 story appeared since the last run, so nothing was queued.",
     "considered": [
@@ -5547,5 +5491,74 @@
         "result": "The first version was marked rejected (approve and reject were recorded at the same moment), so I rebuilt it as a new job with your headline and caption, priority 1. Approve the new preview and it posts right away. The clip comes via @evolving.ai; credited to @rize.imagines."
       }
     ]
+  },
+  {
+    "run_at": "2026-11-12T19:15:08.819Z",
+    "summary": "Afternoon run (about 14:00 New York): no open links or requests; the day's desk queue is already at the cap with 5 approved or pending posts for the evening, so only the breaking priority 1 lawsuit against OpenAI, Anthropic, Google, Meta and SpaceXSI was added (sensitive, waits for Mahir), plus the 4th website guide (Google AI Studio, site only).",
+    "considered": [
+      {
+        "story": "Four nonprofits sue Anthropic, Google, Meta, OpenAI and SpaceXSI in San Francisco to freeze frontier AI development",
+        "source": "https://www.yahoo.com/news/politics/articles/openai-google-anthropic-hit-lawsuit-182328643.html",
+        "decision": "queued",
+        "job_id": "2026-11-12-nonprofits-sue-to-freeze-frontier-ai",
+        "priority": 1,
+        "reason": "Major lawsuit against five of the biggest AI companies, confirmed by Reuters, Washington Examiner, Daily Caller and the plaintiffs' statement. Sensitive (lawsuit), so it waits for Mahir. Today's desk cap is already full, so it only posts tonight if Mahir approves it; priority 1 puts it first in line."
+      },
+      {
+        "story": "Website guide: How to use Google AI Studio for free",
+        "source": "https://ai.google.dev/gemini-api/docs/ai-studio-quickstart",
+        "decision": "queued",
+        "job_id": "2026-11-12-how-to-use-google-ai-studio-guide",
+        "priority": 2,
+        "reason": "Next unwritten line in guides/plan.md tool library; 4th of 6 guides today, site only."
+      },
+      {
+        "story": "Nvidia's $10 billion Anthropic IPO pledge under scrutiny after Huang exit (Bloomberg)",
+        "source": "https://www.bloomberg.com/news/articles/2026-11-12/nvidia-s-10-billion-anthropic-ipo-pledge-in-focus-with-ceo-exit",
+        "decision": "skipped",
+        "reason": "Follow-up to the Huang and Anthropic IPO stories already covered today, and the daily cap is full."
+      },
+      {
+        "story": "OpenAI raises $15 billion at a $1.25 trillion valuation (FourWeekMBA)",
+        "source": "https://fourweekmba.com/ai-openai-raises-15b-at-1-25t-29-over-anthropics-midpoint/",
+        "decision": "skipped",
+        "reason": "Page could not be opened and no major outlet confirmed a new round in this run; the $1.25 trillion valuation was already covered earlier this month."
+      },
+      {
+        "story": "TSMC board approves up to $1 billion in Anthropic and OpenAI investments",
+        "source": "leads/latest.json (qz.com)",
+        "decision": "skipped",
+        "reason": "Investor news with little interest for a general US audience, and today is at the cap."
+      },
+      {
+        "story": "Gemini 4 Carbon reaches AI Mode for Ultra subscribers",
+        "source": "leads/latest.json (PPC Land)",
+        "decision": "skipped",
+        "reason": "Insider product news for $99.99 subscribers only; cap is full."
+      },
+      {
+        "story": "Google Gemini Decisions API (Hacker News)",
+        "source": "leads/latest.json",
+        "decision": "skipped",
+        "reason": "Developer API launch, little appeal beyond developers; cap is full."
+      },
+      {
+        "story": "OpenAI expands ChatGPT ads to 44 countries",
+        "source": "leads/latest.json",
+        "decision": "skipped",
+        "reason": "Not confirmed by a second outlet in this run and mostly outside the US; may revisit tomorrow."
+      },
+      {
+        "story": "Nvidia preparing to oust Jensen Huang / Huang resigns",
+        "decision": "covered",
+        "reason": "Already covered today by several jobs and Mahir's link posts."
+      },
+      {
+        "story": "United Airlines bans AI agents from booking flights",
+        "decision": "covered",
+        "reason": "Already queued as 2026-11-12-united-airlines-bans-ai-agents-booking."
+      }
+    ],
+    "requests": []
   }
 ]

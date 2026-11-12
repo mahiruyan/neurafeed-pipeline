@@ -1,0 +1,109 @@
+{
+  "id": "2026-11-12-how-to-use-google-ai-studio-guide",
+  "format": "utility",
+  "site_only": true,
+  "created_at": "2026-11-12T19:35:00Z",
+  "story_time": "2026-11-12T19:35:00Z",
+  "timely": false,
+  "sensitive": false,
+  "priority": 2,
+  "review": true,
+  "sources": [
+    { "name": "Google AI for Developers: Google AI Studio quickstart", "url": "https://ai.google.dev/gemini-api/docs/ai-studio-quickstart" },
+    { "name": "Google AI for Developers: Build apps in Google AI Studio", "url": "https://ai.google.dev/gemini-api/docs/aistudio-build-mode" },
+    { "name": "Google AI for Developers: Billing", "url": "https://ai.google.dev/gemini-api/docs/billing" },
+    { "name": "Google Blog: Google AI Studio at I/O 2026", "url": "https://blog.google/innovation-and-ai/technology/developers-tools/google-ai-studio-io-2026/" },
+    { "name": "NYU IT: Google AI Studio", "url": "https://www.nyu.edu/life/information-technology/artificial-intelligence-at-nyu/generative-ai-services/ai-studio.html" },
+    { "name": "Google AI Developers Forum: Gemini 4 Argon in AI Studio", "url": "https://discuss.ai.google.dev/t/inquiry-about-gemini-4-argon-in-ai-studio-is-the-web-ui-free-to-use-and-why-is-setting-up-api-billing-required/197458" }
+  ],
+  "caption": "Google AI Studio is Google's free playground for Gemini: test prompts, set system instructions and even build apps from a description.\nIt stays free unless you link a paid API key.\n\nHave you tried AI Studio or only the Gemini app?\n\nFollow @neurafeed.ai for daily AI news.\n\nSource: Google AI for Developers · Photo: Google",
+  "threads_text": "Google AI Studio is free to use unless you link a paid API key, and it lets you test Gemini with your own system instructions or build a small app from one prompt. Have you ever used it, or only the Gemini app?",
+  "slides": [
+    {
+      "kind": "cover",
+      "headline": "How to use *Google AI Studio* for free",
+      "image": {
+        "url": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Social_Share_Dark_Mode.width-1300.png",
+        "credit": "Google",
+        "fallback_urls": []
+      },
+      "pos": "center center"
+    },
+    {
+      "kind": "card",
+      "heading": "1. Free unless you *link a key*",
+      "paras": [
+        "Google says AI Studio stays free of charge unless you link a paid API key.",
+        "Free use covers certain models with rate limits. Some models are marked Paid."
+      ],
+      "image": {
+        "url": "https://ai.google.dev/static/site-assets/images/share-gemini-api-2026-07.png",
+        "credit": "Google",
+        "fit": "contain"
+      }
+    },
+    {
+      "kind": "prompt",
+      "heading": "2. Give it a *system instruction*",
+      "paras": [
+        "Open Run settings (the tune icon, top right) and fill in System Instructions.",
+        "Every answer in the chat now follows these rules. Click Get code to reuse it."
+      ],
+      "prompt": "You are a patient tutor. Answer in under 3 short paragraphs, use plain words and end with one question that checks I understood."
+    },
+    {
+      "kind": "prompt",
+      "heading": "3. Build an app in *Build* mode",
+      "paras": [
+        "Go to aistudio.google.com/apps and describe the app. The code and a live preview appear side by side.",
+        "Ask for changes in the chat panel until it works."
+      ],
+      "prompt": "Build a simple web app where I paste a recipe and it turns it into a shopping list grouped by store section."
+    },
+    {
+      "kind": "cta",
+      "hook": "Follow for one free AI tool explained every day."
+    }
+  ],
+  "site_article": {
+    "kind": "guide",
+    "headline": "How to use Google AI Studio for free: prompts, settings and Build mode",
+    "dek": "Google's browser playground for Gemini costs nothing until you link a paid API key. Here is how to test prompts, set system instructions and build a first app.",
+    "summary": "Google AI Studio is a free web tool for trying Gemini models, writing system instructions and turning a working prompt into code. Its Build mode can also create and deploy a small web or Android app from a description.",
+    "seo_title": "How to use Google AI Studio for free: a step-by-step guide",
+    "seo_description": "How to use Google AI Studio for free: test Gemini prompts, set system instructions, get code and build an app in Build mode, step by step.",
+    "answer_summary": "Open aistudio.google.com, start a chat prompt in the Playground, set System Instructions under Run settings and click Run. AI Studio is free unless you link a paid API key, and Build mode at aistudio.google.com/apps turns a description into an app.",
+    "tags": ["Google AI Studio", "Gemini", "Gemini API", "Guides", "Vibe coding"],
+    "hero_alt": "Google AI Studio promotional graphic on a dark background.",
+    "paragraphs": [
+      { "kind": "fact", "text": "How to use Google AI Studio, in short: open aistudio.google.com, type a prompt in the Playground, change how the model behaves under Run settings, and click Get code when the result is right. Google describes AI Studio as the place to try its models and experiment with prompts before building with the Gemini API.", "sources": [0] },
+      { "kind": "fact", "text": "It is not the Gemini app. The Gemini app is a chat assistant. AI Studio is a workbench: you pick the model, write the rules it follows, upload files, adjust settings such as temperature and copy the exact setup into your own code. NYU's IT department, which offers it to staff and students, calls it a web environment for rapid prototyping with Gemini models.", "sources": [0, 4] },
+      { "kind": "heading", "text": "Google AI Studio free tier and paid models" },
+      { "kind": "fact", "text": "For most people it is free. Google's billing documentation says AI Studio usage remains free of charge unless you link a paid API key for paid features. New accounts start on the Free Tier, which gives access to certain models, each with its own rate limits. Which models are included depends on the model, and Google keeps that list on its pricing page.", "sources": [2] },
+      { "kind": "fact", "text": "Some models are paid only. In Google's developer forum, users point out that Gemini 4 Argon carries a Paid label in AI Studio and needs either a Google AI subscription or an API key from a project with billing turned on. If you see that label, pick another model to stay free.", "sources": [5] },
+      { "kind": "tip", "text": "Do not paste anything private while you are on the free tier. Google's billing page says paid use is how you make sure prompts and responses are not used to improve Google products, and NYU's guide says the same about the paid tier. Treat free use as public test data." },
+      { "kind": "heading", "text": "How to use Google AI Studio: your first prompt" },
+      { "kind": "step", "title": "1. Open the Playground", "text": "Go to aistudio.google.com. The Playground opens with a new chat prompt by default." },
+      { "kind": "step", "title": "2. Open Run settings", "text": "Click Run settings, the tune icon at the top right. This panel holds the model parameters, the safety settings and tools such as structured output, function calling, code execution and grounding." },
+      { "kind": "step", "title": "3. Write a system instruction", "text": "Find the System Instructions field and describe the role and rules you want. Google's own example turns the model into an alien living on Europa. Something practical works better for daily use." },
+      { "kind": "prompt", "title": "Prompt 1: A tutor that keeps it short", "text": "You are a patient tutor. Answer in under 3 short paragraphs, use plain words and end with one question that checks I understood." },
+      { "kind": "step", "title": "4. Ask and run", "text": "Type your message in the box at the bottom and click Run. You can change the system instruction in the middle of a chat and run the same question again to compare answers. Google's quickstart uses exactly this to refine a bot's tone and length." },
+      { "kind": "tip", "text": "Every message in the chat is sent with the next one, so long conversations grow and can hit the model's token limit. Start a new prompt when you change topic." },
+      { "kind": "step", "title": "5. Click Get code", "text": "When the answers look right, click Get code. AI Studio gives you the same prompt, model and settings as code in your preferred language for the Gemini API. You can also save the prompt and share it." },
+      { "kind": "heading", "text": "Build an app in Google AI Studio" },
+      { "kind": "fact", "text": "Build mode is where AI Studio becomes a vibe coding tool. You describe an app in plain words and an agent writes it. Web apps get a React front end and a Node.js server by default, and the docs say AI Studio can also build native Android apps in Kotlin.", "sources": [1] },
+      { "kind": "step", "title": "1. Open Build mode", "text": "Go to aistudio.google.com/apps. Type a description in the prompt box. You can add AI Chips, for example for image generation or Google Maps data, or click I'm Feeling Lucky to have Gemini suggest an idea." },
+      { "kind": "prompt", "title": "Prompt 2: A small app to start with", "text": "Build a simple web app where I paste a recipe and it turns it into a shopping list grouped by store section. Keep the design clean and make it work on a phone." },
+      { "kind": "step", "title": "2. Watch the preview", "text": "After you run the prompt, the generated files appear with a live preview on the right. The Code tab shows the code itself." },
+      { "kind": "step", "title": "3. Fix it one change at a time", "text": "Ask for changes in the chat panel, or use annotation mode: highlight part of the screen and describe what should change. You can also edit the code directly in the Code tab." },
+      { "kind": "step", "title": "4. Keep or deploy it", "text": "Download the project as a ZIP, sync it to GitHub, or deploy it to Cloud Run. Apps are private until you share them." },
+      { "kind": "fact", "text": "Deploying does not have to cost money at first. Google said at I/O 2026 that new builders can deploy their first two apps to Google Cloud at no cost and without a credit card. After that, Cloud Run pricing may apply, and when other people use a shared app its API calls count toward your limits.", "sources": [1, 3] },
+      { "kind": "heading", "text": "What Google AI Studio is bad at" },
+      { "kind": "analysis", "text": "AI Studio is built for testing, not for daily chatting. The free tier rate limits are tight once several people use one app, and NYU's guide says caching and batching are paid features. Build mode also has gaps the docs admit: there is no built-in storage yet and no real-time editing with teammates, so a shared GitHub repository is the workaround." },
+      { "kind": "tip", "text": "If a shared app shows a 403 Access Restricted error, Google's docs suggest turning off privacy extensions such as Privacy Badger, or asking the agent to fix the build and sharing again." },
+      { "kind": "heading", "text": "When to pay" },
+      { "kind": "fact", "text": "To move a project to the paid tier, open the API keys or Projects page in AI Studio and click Set up billing. Depending on your account you may be asked to prepay at least $5. Tiers then go up automatically once you meet the spending criteria, with Tier 1 capped at $250.", "sources": [2] },
+      { "kind": "analysis", "text": "For learning, testing prompts and building a first app, the free tier is enough. Pay when you need a paid-only model, higher limits for real users or the promise that your prompts stay out of Google's product training." }
+    ]
+  }
+}
