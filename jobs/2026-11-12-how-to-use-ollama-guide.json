@@ -1,0 +1,123 @@
+{
+  "id": "2026-11-12-how-to-use-ollama-guide",
+  "format": "utility",
+  "site_only": true,
+  "created_at": "2026-11-12T21:20:00Z",
+  "story_time": "2026-11-12T21:20:00Z",
+  "timely": false,
+  "sensitive": false,
+  "priority": 2,
+  "review": true,
+  "sources": [
+    { "name": "Ollama docs: Quickstart", "url": "https://docs.ollama.com/quickstart" },
+    { "name": "Ollama docs: CLI reference", "url": "https://docs.ollama.com/cli.md" },
+    { "name": "Ollama: Download", "url": "https://ollama.com/download" },
+    { "name": "Ollama blog: Transparent pricing", "url": "https://ollama.com/blog/transparent-pricing" },
+    { "name": "Ollama blog: Claude Desktop support", "url": "https://ollama.com/blog/claude-desktop" },
+    { "name": "LLM Hardware: Ollama cheat sheet", "url": "https://llmhardware.io/guides/ollama-cheat-sheet" }
+  ],
+  "caption": "Ollama runs open AI models on your own computer, free, with no account needed for local models.\nOne command downloads a model and starts a chat.\n\nWould you run an AI model on your own laptop?\n\nFollow @neurafeed.ai for daily AI news.\n\nSource: Ollama docs · Photo: Ollama",
+  "threads_text": "Ollama lets you run open AI models on your own computer with one command, and local models need no account or API key. The catch is memory: the small Gemma model alone wants about 8 GB. Would you run an AI on your own laptop?",
+  "slides": [
+    {
+      "kind": "cover",
+      "headline": "How to use *Ollama* to run AI models on your own computer",
+      "image": {
+        "url": "https://ollama.com/public/og.png",
+        "credit": "Ollama",
+        "fallback_urls": ["https://ollama.com/public/og-twitter.png"]
+      },
+      "pos": "center center"
+    },
+    {
+      "kind": "prompt",
+      "heading": "1. Install and run *one command*",
+      "paras": [
+        "Download Ollama for Mac, Windows or Linux from ollama.com/download, then open a terminal.",
+        "This downloads the small Gemma 4 model and starts a chat. Type /bye to leave."
+      ],
+      "prompt": "ollama run gemma4:e2b"
+    },
+    {
+      "kind": "prompt",
+      "heading": "2. Manage your *models*",
+      "paras": [
+        "Models take gigabytes. These commands list, check, stop and delete them.",
+        "ollama ps also shows if a model fits on your graphics card or spilled to the slower CPU."
+      ],
+      "prompt": "ollama ls\nollama ps\nollama stop gemma4\nollama rm gemma4"
+    },
+    {
+      "kind": "card",
+      "heading": "3. Plug it into *Claude*",
+      "paras": [
+        "In the Ollama app on Mac, open Apps and turn on Claude. Claude Desktop then runs the model you pick in Ollama.",
+        "Turn it off to go back to your old setup."
+      ],
+      "image": {
+        "url": "https://files.ollama.com/claude-0.png",
+        "credit": "Ollama",
+        "fit": "contain"
+      }
+    },
+    {
+      "kind": "card",
+      "heading": "4. Local is *free*, cloud is not",
+      "paras": [
+        "Local models need no account or API key. Ollama's cloud models have a small free monthly allowance.",
+        "Pro costs $20 a month and includes $60 of usage."
+      ],
+      "image": {
+        "url": "https://files.ollama.com/claude-1.png",
+        "credit": "Ollama",
+        "fit": "contain"
+      }
+    },
+    {
+      "kind": "cta",
+      "hook": "Follow for one free AI tool explained every day."
+    }
+  ],
+  "site_article": {
+    "kind": "guide",
+    "headline": "How to use Ollama to run AI models on your own computer, step by step",
+    "dek": "Ollama downloads open models and runs them locally with one command. Here is how to install it, which commands matter and how much memory you need.",
+    "summary": "Ollama is a free app for Mac, Windows and Linux that runs open AI models on your own computer and needs no account for local use. It can also plug local models into Claude Desktop, Claude Code and Codex, and offers paid cloud models.",
+    "seo_title": "How to use Ollama to run AI models on your own computer",
+    "seo_description": "How to use Ollama: install it, run your first model with one command, manage models, check memory needs and connect it to Claude and Codex.",
+    "answer_summary": "Install Ollama from ollama.com/download, open a terminal and type ollama run gemma4:e2b. Ollama downloads the model and starts a chat on your own computer; type /bye to leave. Local models need no account or API key.",
+    "tags": ["Ollama", "Local AI", "Open models", "Guides", "Gemma"],
+    "hero_alt": "Ollama's black-and-white logo.",
+    "paragraphs": [
+      { "kind": "fact", "text": "How to use Ollama, in short: download it from ollama.com/download, open a terminal and type ollama run followed by a model name. Ollama downloads the model and starts a chat that runs on your own computer. It is available for macOS, Windows and Linux, and local models need no account and no API key.", "sources": [0, 2] },
+      { "kind": "analysis", "text": "The appeal is privacy and control. A local model runs on your own hardware, so your prompts do not have to leave it." },
+      { "kind": "fact", "text": "Ollama also sells cloud models, and it can connect models to tools such as Claude Desktop, Claude Code and Codex.", "sources": [0, 3] },
+      { "kind": "heading", "text": "How to install Ollama" },
+      { "kind": "step", "title": "1. Download it", "text": "Go to ollama.com/download and pick macOS, Windows or Linux. On Linux the page gives a one-line install command that you paste into a terminal." },
+      { "kind": "prompt", "title": "Linux install command", "text": "curl -fsSL https://ollama.com/install.sh | sh" },
+      { "kind": "step", "title": "2. Run the setup", "text": "Open the app, or type ollama in a terminal and follow the prompts. During setup you either sign in to use cloud models or choose a local model." },
+      { "kind": "tip", "text": "You can skip the sign-in if you only want local models. The docs say an account and API key are needed only for Ollama's cloud models." },
+      { "kind": "heading", "text": "Run your first model in Ollama" },
+      { "kind": "fact", "text": "Ollama's own quickstart uses gemma4:e2b, a small version of Gemma 4. The download is about 7.2 GB, and Ollama recommends about 8 GB of free graphics memory, or unified memory on a Mac. With less, Ollama falls back to system memory and answers get slower.", "sources": [0] },
+      { "kind": "prompt", "title": "Command 1: Download and chat", "text": "ollama run gemma4:e2b" },
+      { "kind": "step", "title": "3. Chat and leave", "text": "Type your question after the prompt and press Enter. Type /bye when you are done. To paste several lines as one message, start and end the block with three quote marks." },
+      { "kind": "prompt", "title": "Command 2: Ask about an image", "text": "ollama run gemma4 \"What's in this image? [path to your picture]\"" },
+      { "kind": "tip", "text": "Put a prompt right after the model name, as in the image example, to get a one-off answer without opening a chat." },
+      { "kind": "heading", "text": "The Ollama commands you will actually use" },
+      { "kind": "fact", "text": "Ollama's CLI reference lists a short set of commands: ollama pull downloads a model without starting it, ollama ls lists downloaded models, ollama ps shows what is running, ollama stop unloads a model and ollama rm deletes it from disk.", "sources": [1] },
+      { "kind": "prompt", "title": "Command 3: Clean up disk space", "text": "ollama ls\nollama rm [model name]" },
+      { "kind": "fact", "text": "LLM Hardware's cheat sheet adds a useful check: ollama ps shows how much of a model sits on the graphics card. Below 100 percent means part of it spilled to the processor, and speed can drop to roughly 1 to 5 tokens per second.", "sources": [5] },
+      { "kind": "tip", "text": "Ollama only listens on your own computer by default. LLM Hardware notes that opening it to other devices means changing the OLLAMA_HOST setting, which exposes the service on your network, so only do that on a network you trust." },
+      { "kind": "heading", "text": "How much memory you need" },
+      { "kind": "fact", "text": "The same guide estimates graphics memory at the common 4-bit setting: about 6.8 GB for an 8 billion parameter model, about 10.4 GB for 14 billion, about 21 GB for 32 billion and about 44 GB for a 70 billion model. Longer conversations need more on top of that.", "sources": [5] },
+      { "kind": "analysis", "text": "For most laptops that means small models. They are fine for summaries, rewriting and simple questions, but they are not as sharp as the big cloud assistants. Start small and move up only if your machine keeps up." },
+      { "kind": "heading", "text": "Connect Ollama to Claude, Codex and other apps" },
+      { "kind": "step", "title": "Claude Desktop", "text": "In the Ollama app on a Mac, open Apps and turn on Claude. Ollama sets up the connection, and you choose the model in Ollama. Turn Claude off to restore your previous setup." },
+      { "kind": "prompt", "title": "Command 4: Start a coding agent on a local model", "text": "ollama launch claude" },
+      { "kind": "fact", "text": "Run that from your project folder. The quickstart says ollama launch also works with codex and opencode, and Ollama offers to install Claude Code or OpenCode if they are missing. Codex has to be installed first.", "sources": [0, 1] },
+      { "kind": "heading", "text": "Ollama free plan and cloud prices" },
+      { "kind": "fact", "text": "Local use is free. For cloud models, Ollama's free plan includes a small monthly amount of usage on a set of starter models. Pro costs $20 a month with $60 of usage included, Max costs $100 a month with $300, and Team starts at $500 a month. Usage is billed per token, and unused amounts do not roll over.", "sources": [3] },
+      { "kind": "analysis", "text": "Ollama is the easiest way to try local AI, but it is a terminal tool at heart. If you never want to type a command, it will feel bare. If you care about keeping your data on your own machine, it is the first thing to install." }
+    ]
+  }
+}

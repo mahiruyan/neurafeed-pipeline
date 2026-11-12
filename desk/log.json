@@ -1,54 +1,5 @@
 [
   {
-    "run_at": "2026-11-05T20:53:31.419Z",
-    "summary": "Late afternoon run: no open links or requests (October links are already in skipped.json, the October 21 request failed and is not retried); November 5 is already past the 8 job cap, and no new priority 1 story appeared since the last run, so nothing was queued.",
-    "considered": [
-      {
-        "story": "OpenAI GPT-6 Cyber launch",
-        "decision": "covered",
-        "reason": "Already queued as 2026-11-05-openai-gpt-6-cyber-81-firefox-flaws."
-      },
-      {
-        "story": "OpenAI alignment report: GPT-6 Astra covertly underperforms on safety research tasks",
-        "source": "https://alignment.openai.com/misalignment-reports/covert-underperformance-on-safety-research-tasks/",
-        "decision": "skipped",
-        "reason": "Day is past the 8 job cap; strong candidate for tomorrow's first run if a second source covers it."
-      },
-      {
-        "story": "Google releases Gemini Omni 1.2 Flash video model, 30% cheaper",
-        "source": "https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemini-omni-1-2-flash/",
-        "decision": "skipped",
-        "reason": "Developer pricing update with little interest for normal users, and the day is at the cap."
-      },
-      {
-        "story": "Google turns Gemini Gems into Skills on November 17",
-        "decision": "skipped",
-        "reason": "Better as a utility or news post closer to the date; day at cap."
-      },
-      {
-        "story": "OpenAI offers to pay for data center power in its Community Compact",
-        "decision": "skipped",
-        "reason": "Political and overlaps the AI stock sell-off post; day at cap."
-      },
-      {
-        "story": "Parents sue Google over AI on school Chromebooks",
-        "decision": "skipped",
-        "reason": "Sensitive lawsuit involving a minor and self-harm; day at cap."
-      },
-      {
-        "story": "Wealthsimple connects to ChatGPT and Claude",
-        "decision": "skipped",
-        "reason": "Canadian fintech feature with little US interest."
-      },
-      {
-        "story": "Second utility post for November 5",
-        "decision": "skipped",
-        "reason": "Day is past the job cap, as earlier runs noted."
-      }
-    ],
-    "requests": []
-  },
-  {
     "run_at": "2026-11-05T23:00:55.589Z",
     "summary": "Evening run: queued one priority 1 OpenAI story (GPT-6 Astra quietly underperforming on safety research); today already had 8 desk posts, so everything else was skipped. No open links or requests.",
     "considered": [
@@ -5557,6 +5508,76 @@
         "story": "United Airlines bans AI agents from booking flights",
         "decision": "covered",
         "reason": "Already queued as 2026-11-12-united-airlines-bans-ai-agents-booking."
+      }
+    ],
+    "requests": []
+  },
+  {
+    "run_at": "2026-11-12T21:06:04.984Z",
+    "summary": "Afternoon run (15:55 New York): no open links or requests; today's desk news cap is already full, so queued the 5th and 6th site-only guides (Adobe Firefly, Ollama).",
+    "considered": [
+      {
+        "story": "Website guide: How to use Adobe Firefly (and Firefly in Photoshop)",
+        "source": "https://helpx.adobe.com/firefly/web/work-with-images/generate-images/generate-images-from-text-descriptions.html",
+        "decision": "queued",
+        "job_id": "2026-11-12-how-to-use-adobe-firefly-guide",
+        "priority": 2,
+        "reason": "Next tool library line in guides/plan.md; 5th of 6 guides today, site only. Built from Adobe Help (text to image, credits FAQ, Generative Fill), Adobe's plans page and The Next Web. Images are Adobe product page images, unchecked from here because adobe.com is blocked for downloads, so the pipeline download is the check."
+      },
+      {
+        "story": "Website guide: How to use Ollama to run AI models locally",
+        "source": "https://docs.ollama.com/quickstart",
+        "decision": "queued",
+        "job_id": "2026-11-12-how-to-use-ollama-guide",
+        "priority": 2,
+        "reason": "Next usable Tier 1 line in guides/plan.md; 6th of 6 guides today, site only. Built from Ollama's quickstart, CLI reference, pricing and Claude Desktop posts plus an LLM Hardware cheat sheet."
+      },
+      {
+        "story": "Website guide: How to use Sora (Tier 1 line)",
+        "source": "https://www.axios.com/2026/03/24/openai-discontinue-sora-video-app",
+        "decision": "skipped",
+        "reason": "OpenAI shut the Sora app down in March 2026, so a how-to guide would mislead readers; the plan line should be dropped."
+      },
+      {
+        "story": "Website guide: How to use Veo for free (Tier 1 line)",
+        "decision": "skipped",
+        "reason": "Today's Google Flow guide already covers making Veo videos in Flow and its free credits; better as a later Gemini app angle."
+      },
+      {
+        "story": "Lawsuit says a 13-year-old used Google Gemini on a school laptop to plan suicide (NDTV)",
+        "source": "leads/latest.json",
+        "decision": "skipped",
+        "reason": "Today's desk cap of 8 is already used up, and this child self-harm lawsuit needs careful sourcing from major US outlets first; worth checking tomorrow morning."
+      },
+      {
+        "story": "Adobe and Google bring Gemini to Photoshop and PDF editing to Gmail",
+        "source": "leads/latest.json (India Today)",
+        "decision": "skipped",
+        "reason": "Daily cap is full; a product tie-up with modest reader interest."
+      },
+      {
+        "story": "Claude Fable 5.2 edges Gemini 4 Carbon on Google's benchmark at 6x the cost",
+        "source": "leads/latest.json (PPC Land)",
+        "decision": "skipped",
+        "reason": "Benchmark news for insiders, single source, and the cap is full."
+      },
+      {
+        "story": "Sex, spies and salaries shake up AI chipmakers (Financial Times)",
+        "source": "leads/latest.json",
+        "decision": "covered",
+        "reason": "The Huang resignation and affair stories already have several jobs today."
+      },
+      {
+        "story": "Anthropic and OpenAI sign Macron's Paris Call while the US and Google stay away",
+        "source": "leads/latest.json (Dealroom)",
+        "decision": "skipped",
+        "reason": "Policy story with little US consumer appeal; cap is full."
+      },
+      {
+        "story": "OpenAI expands ChatGPT ads to 44 countries",
+        "source": "leads/latest.json",
+        "decision": "skipped",
+        "reason": "Still no second major outlet, mostly outside the US, and the cap is full."
       }
     ],
     "requests": []

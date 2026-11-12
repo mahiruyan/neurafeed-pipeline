@@ -1,0 +1,126 @@
+{
+  "id": "2026-11-12-how-to-use-adobe-firefly-guide",
+  "format": "utility",
+  "site_only": true,
+  "created_at": "2026-11-12T21:15:00Z",
+  "story_time": "2026-11-12T21:15:00Z",
+  "timely": false,
+  "sensitive": false,
+  "priority": 2,
+  "review": true,
+  "sources": [
+    { "name": "Adobe Help: Generate images from text descriptions in Firefly", "url": "https://helpx.adobe.com/firefly/web/work-with-images/generate-images/generate-images-from-text-descriptions.html" },
+    { "name": "Adobe Help: Generative credits FAQ", "url": "https://helpx.adobe.com/firefly/using/generative-credits-faq.html" },
+    { "name": "Adobe: Firefly plans", "url": "https://www.adobe.com/products/firefly/plans.html" },
+    { "name": "Adobe Help: Edit images with Generative Fill in Photoshop", "url": "https://helpx.adobe.com/photoshop/desktop/create-open-import-images/create-images/edit-images-with-generative-fill.html" },
+    { "name": "The Next Web: Adobe's Firefly AI Assistant", "url": "https://thenextweb.com/news/adobe-ai-week-firefly-agent-disney-semrush-genstudio-linkedin" }
+  ],
+  "caption": "Adobe Firefly makes images, video and audio from a prompt, and the same models power Generative Fill in Photoshop.\nThe free plan gives limited daily generations. Paid plans start at $9.99 a month.\n\nHave you tried Firefly, or do you stick with ChatGPT for images?\n\nFollow @neurafeed.ai for daily AI news.\n\nSource: Adobe Help · Photo: Adobe",
+  "threads_text": "Adobe Firefly has a free plan with limited daily generations, and the same models fill and remove things in Photoshop. Most image generations cost 10 credits on paid plans. Have you used Firefly or Generative Fill yet?",
+  "slides": [
+    {
+      "kind": "cover",
+      "headline": "How to use *Adobe Firefly*, and Firefly in Photoshop",
+      "image": {
+        "url": "https://www.adobe.com/homepage/assets/product-icons/jpg/media_1e1d6ce6caa68dfd49689c46528c152d9fdeaad6f.jpg",
+        "credit": "Adobe",
+        "fallback_urls": [
+          "https://www.adobe.com/products/media_181d7a13182fade9e514c0bf591e9f3ea1c030230.jpg?width=2000&format=jpg&optimize=medium"
+        ]
+      },
+      "pos": "center center"
+    },
+    {
+      "kind": "card",
+      "heading": "1. Pick a *model* first",
+      "paras": [
+        "Open firefly.adobe.com, choose Image, then Generate image. The Model menu lists Adobe and partner models.",
+        "Firefly Image 4 gives four variations. Image 5 gives one."
+      ],
+      "image": {
+        "url": "https://www.adobe.com/products/media_10cb40a42d3d8eebef057508b4c8a57c4396b897a.png?width=1200&format=png&optimize=medium",
+        "credit": "Adobe",
+        "fit": "contain"
+      }
+    },
+    {
+      "kind": "prompt",
+      "heading": "2. Describe it in *plain words*",
+      "paras": [
+        "Adobe says to use simple, direct language and at least three words.",
+        "Set Content type to Photo and the aspect ratio before you hit Generate."
+      ],
+      "prompt": "A ceramic coffee mug on a wooden kitchen table, morning light from a window on the left, soft shadows, close-up"
+    },
+    {
+      "kind": "card",
+      "heading": "3. Fix photos with *Generative Fill*",
+      "paras": [
+        "In Photoshop, select an area, click Generative Fill, type what you want and press Generate.",
+        "Leave the prompt blank to fill the spot from the pixels around it."
+      ],
+      "image": {
+        "url": "https://www.adobe.com/products/media_11fd7d51d7758ba36699419c18b6ce7181ff2f33f.png?width=1200&format=png&optimize=medium",
+        "credit": "Adobe",
+        "fit": "contain"
+      }
+    },
+    {
+      "kind": "card",
+      "heading": "4. Watch your *credits*",
+      "paras": [
+        "Free gives limited daily generations. Standard is $9.99 a month for 2,000 credits.",
+        "Image 5 costs 10 credits per image. Video at 1080p costs 100 credits per second."
+      ],
+      "image": {
+        "url": "https://www.adobe.com/products/media_10ee47ca5a310532ad1466d6ada4e0a926549f502.png?width=1200&format=png&optimize=medium",
+        "credit": "Adobe",
+        "fit": "contain"
+      }
+    },
+    {
+      "kind": "cta",
+      "hook": "Follow for one free AI tool explained every day."
+    }
+  ],
+  "site_article": {
+    "kind": "guide",
+    "headline": "How to use Adobe Firefly: images, Generative Fill in Photoshop and credits explained",
+    "dek": "Adobe's AI makes images and video from a prompt and edits photos inside Photoshop. Here is how to get a good first image and how far the free plan goes.",
+    "summary": "Adobe Firefly generates images, video and audio from text on the web and powers Generative Fill in Photoshop. The free plan gives limited daily generations, and paid plans start at $9.99 a month for 2,000 credits.",
+    "seo_title": "How to use Adobe Firefly (and Firefly in Photoshop)",
+    "seo_description": "How to use Adobe Firefly step by step: pick a model, write the prompt, use Generative Fill in Photoshop and see what each plan's credits buy.",
+    "answer_summary": "Go to firefly.adobe.com, choose Image and then Generate image, pick a model, set the aspect ratio, describe the picture and click Generate. In Photoshop, select an area, click Generative Fill, type a prompt or leave it blank, and click Generate.",
+    "tags": ["Adobe Firefly", "Photoshop", "Generative Fill", "Guides", "AI images"],
+    "hero_alt": "Adobe Firefly promotional image from Adobe's website.",
+    "paragraphs": [
+      { "kind": "fact", "text": "How to use Adobe Firefly, in short: open the Firefly website, choose Image and then Generate image, pick a model, describe the picture and click Generate. The same AI also works inside Photoshop as Generative Fill, where you select part of a photo and tell it what to add, remove or change.", "sources": [0, 3] },
+      { "kind": "fact", "text": "Firefly is no longer only Adobe's own model. The Model menu lists Adobe models such as Firefly Image 4, Image 4 Ultra and Image 5 next to partner models, and Adobe's credits FAQ names Google, OpenAI, ElevenLabs and Topaz among the partners. Since June 2026 Adobe has also tested a Firefly AI Assistant, a chat sidebar inside Photoshop, Premiere and Illustrator that takes plain requests, according to The Next Web.", "sources": [0, 1, 4] },
+      { "kind": "heading", "text": "How to use Adobe Firefly on the web" },
+      { "kind": "step", "title": "1. Open Generate image", "text": "Go to firefly.adobe.com, select Image in the left panel and then Generate image." },
+      { "kind": "step", "title": "2. Choose a model", "text": "Under General settings, open the Model dropdown. Settings change with the model. Firefly Image 4 returns four variations per prompt, while Image 4 Ultra and Image 5 return one image each." },
+      { "kind": "step", "title": "3. Set the shape and the look", "text": "Pick an aspect ratio. Under Content type choose Photo or Art, or leave it on auto. The Visual intensity slider controls how strong the image's visual attributes are." },
+      { "kind": "step", "title": "4. Write the prompt", "text": "Type the description in the Prompt field. Adobe's help page asks for simple, direct language and at least three words. Name the subject, where it is and the light you want." },
+      { "kind": "prompt", "title": "Prompt 1: A clean product photo", "text": "A ceramic coffee mug on a wooden kitchen table, morning light from a window on the left, soft shadows, close-up" },
+      { "kind": "prompt", "title": "Prompt 2: A flat illustration", "text": "Flat illustration of a small bookshop on a rainy street at night, warm light in the windows, simple shapes, [your brand colors]" },
+      { "kind": "step", "title": "5. Generate and download", "text": "Click Generate. Switch to list view to download all variations at once. In that view, Use settings starts a new set with the same settings and Generate more reruns the same prompt. View all above the prompt bar opens your full generation history." },
+      { "kind": "tip", "text": "Two optional settings do most of the work for a consistent look. Upload a picture under Composition to keep its outline and depth, or under Styles to copy its visual style, and use the Strength slider to decide how closely Firefly follows it." },
+      { "kind": "tip", "text": "Next to the Generate button, Prompt features can turn on Prompt enhancement, which rewrites your prompt automatically. Adobe lists it for Firefly Image 4 and Image 4 Ultra." },
+      { "kind": "heading", "text": "How to use Firefly in Photoshop with Generative Fill" },
+      { "kind": "fact", "text": "Generative Fill is Firefly inside Photoshop on the desktop. Adobe describes it as a non-destructive edit, so the original pixels stay underneath the result.", "sources": [3] },
+      { "kind": "step", "title": "1. Open an image", "text": "Choose File, then Open, and load the photo." },
+      { "kind": "step", "title": "2. Select the area", "text": "Use a selection tool, for example the Selection Brush, to mark the part you want to change." },
+      { "kind": "step", "title": "3. Pick a model and prompt", "text": "Select Generative Fill. In the Contextual Task Bar, open the model picker. Adobe lists Firefly Fill and Expand, Firefly Image 5 and Firefly Image 1, plus partner models such as FLUX.2 pro and Gemini with Nano Banana. Type what should appear in the selection." },
+      { "kind": "step", "title": "4. Generate and choose", "text": "Click Generate, then pick the variation you like in the Properties panel." },
+      { "kind": "tip", "text": "To remove something, select it and leave the prompt blank. Photoshop then fills the selection from the surrounding pixels instead of adding a new object." },
+      { "kind": "heading", "text": "Adobe Firefly free plan, prices and credits" },
+      { "kind": "fact", "text": "Adobe's plans page describes the free plan as limited free daily generations for images and video, with limited access to top models from Adobe, Google, OpenAI and others. Adobe does not publish a fixed number for it.", "sources": [2] },
+      { "kind": "fact", "text": "Firefly Standard costs $9.99 a month for 2,000 credits, which Adobe says is up to 400 images or 20 five-second videos. Firefly Pro is $19.99 a month for 4,000 credits, and Pro Plus is $49.99 a month for 10,000 credits, both with lower prices for the first six months at the time of writing.", "sources": [2] },
+      { "kind": "fact", "text": "Credits are spent per generation. Adobe's FAQ lists Firefly Image 5 at 10 credits and Image 4 Ultra at 20. Video costs far more: Generate Video uses 100 credits per second at 1080p, 50 at 720p and 20 at 540p. Partner models count as premium, and their price depends on the model.", "sources": [1] },
+      { "kind": "fact", "text": "Standard features, such as Generative Fill with Firefly models, are unlimited and do not use credits on the Firefly Standard, Pro, Pro Plus and Premium plans and on Creative Cloud Pro, according to the FAQ. Creative Cloud Standard includes only 25 credits a month. Credits do not roll over, and failed generations are usually refunded within minutes.", "sources": [1] },
+      { "kind": "heading", "text": "What Firefly is bad at" },
+      { "kind": "analysis", "text": "The credit system is the main trap. Premium models and video burn through a monthly allowance quickly, and unused credits vanish at the reset. Before a big project, check the model's cost and your balance in the Account Menu. Partner models also come and go: Adobe keeps a list of deprecated partner models, so a model you rely on today may be gone later." },
+      { "kind": "analysis", "text": "Firefly makes the most sense if you already work in Photoshop, because Generative Fill fixes real photos in place. For one-off pictures with no editing after, the free daily generations are a fair way to test it before paying." }
+    ]
+  }
+}
