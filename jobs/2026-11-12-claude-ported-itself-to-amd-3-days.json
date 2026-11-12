@@ -1,0 +1,191 @@
+{
+  "id": "2026-11-12-claude-ported-itself-to-amd-3-days",
+  "created_at": "2026-11-12T13:30:00Z",
+  "story_time": "2026-11-11T07:30:00Z",
+  "timely": false,
+  "sensitive": false,
+  "priority": 2,
+  "review": true,
+  "site_category": "companies",
+  "ab": {
+    "headline": "short",
+    "photo": "story"
+  },
+  "sources": [
+    {
+      "name": "The Decoder",
+      "url": "https://the-decoder.com/anthropic-says-ai-is-eroding-nvidias-cuda-lead-cutting-an-amd-chip-switch-from-months-to-three-days/"
+    },
+    {
+      "name": "OfficeChai",
+      "url": "https://officechai.com/ai/mythos-got-claude-running-on-amd-chips-in-3-days-earlier-used-to-take-dozens-of-engineers-months-of-work-anthropic/"
+    }
+  ],
+  "caption": "Anthropic says its own AI did a job that used to take dozens of engineers 6 to 12 months.\nIts Mythos model got Claude running on AMD's MI355X chips in about three days, with almost no human help, and wrote or ported nearly all the low-level GPU code.\nThe claim comes from Anthropic's IPO investor presentation and has not been independently verified.\n\nIs Nvidia's software moat starting to crack?\n\nFollow @neurafeed.ai for daily AI news.\n\nSource: The Decoder · Photo: AMD",
+  "threads_text": "Anthropic says its Mythos model got Claude running on AMD chips in about three days. The old way took dozens of engineers 6 to 12 months. If AI can port itself to any chip, Nvidia's software lead looks a lot smaller. Is Nvidia's moat cracking?",
+  "slides": [
+    {
+      "kind": "cover",
+      "headline": "Anthropic's AI moved Claude onto AMD chips in *3 days*",
+      "image": {
+        "url": "https://www.amd.com/content/dam/amd/en/images/photography/corporate/lisa-su/gallery/2321130-lisa-su-holding-chip.jpg",
+        "credit": "AMD",
+        "fallback_urls": [
+          "https://image.cnbcfm.com/api/v1/image/105886383-1556745611033img_1494r.jpg?v=1556745661"
+        ]
+      },
+      "pos": "center 30%",
+      "badges": [
+        {
+          "url": "assets/logos/claude.png",
+          "shape": "free"
+        }
+      ]
+    },
+    {
+      "kind": "card",
+      "heading": "Months of work in *3 days*",
+      "paras": [
+        "Anthropic used AMD GPUs for the first time this year. It says its Mythos model got Claude running on AMD's MI355X chips in about three days, with almost no human help.",
+        "The usual way takes six to 12 months and dozens of engineers."
+      ],
+      "image": {
+        "url": "https://the-decoder.com/wp-content/uploads/2026/11/anthropic_AMD-1.png",
+        "credit": "Anthropic via The Decoder",
+        "fit": "contain"
+      }
+    },
+    {
+      "kind": "card",
+      "heading": "The AI *wrote the code*",
+      "paras": [
+        "Every chip needs its own low-level software, called kernels. Anthropic says Mythos ported or wrote nearly 100 percent of them.",
+        "The claim comes from Anthropic's IPO investor presentation. It has not been independently verified."
+      ],
+      "image": {
+        "url": "https://image.theregister.com/191461.webp?imageId=191461&width=960&height=542&format=jpg",
+        "credit": "AMD via The Register",
+        "fit": "contain"
+      }
+    },
+    {
+      "kind": "card",
+      "heading": "Bad news for *Nvidia's moat*",
+      "paras": [
+        "Anthropic now runs Claude on all four major chip families and treats them as one pool of compute.",
+        {
+          "t": "Anthropic says AI is shrinking the lead Nvidia's CUDA software gave it.",
+          "strong": true
+        }
+      ],
+      "image": {
+        "url": "https://the-decoder.com/wp-content/uploads/2026/11/anthropic_AMD-2.png",
+        "credit": "Anthropic via The Decoder",
+        "fit": "contain"
+      }
+    },
+    {
+      "kind": "cta",
+      "hook": "Follow to see if AI that ports itself really breaks Nvidia's grip."
+    }
+  ],
+  "site_article": {
+    "headline": "Anthropic says its Mythos model got Claude running on AMD chips in three days",
+    "dek": "The company told IPO investors that a chip switch that once took dozens of engineers 6 to 12 months now takes days.",
+    "summary": "Anthropic says its Mythos model brought Claude up on AMD MI355X GPUs in about three days with almost no human help, a job it says normally takes 6 to 12 months. The claim comes from the company's IPO investor presentation and has not been independently verified.",
+    "seo_title": "Anthropic: Mythos ported Claude to AMD chips in 3 days",
+    "seo_description": "Anthropic says its Mythos model got Claude running on AMD MI355X GPUs in about three days, a job that took dozens of engineers 6 to 12 months.",
+    "answer_summary": "Anthropic says its Mythos model got Claude running on AMD MI355X GPUs in about three days, writing or porting nearly all of the GPU kernels. The company says this used to take 6 to 12 months; the claim is not independently verified.",
+    "tags": [
+      "Anthropic",
+      "Claude",
+      "AMD",
+      "Nvidia",
+      "AI chips"
+    ],
+    "hero_alt": "A woman holds up a computer chip between her fingers.",
+    "paragraphs": [
+      {
+        "kind": "fact",
+        "text": "Anthropic says its Mythos model got Claude running on AMD's MI355X graphics processors in about three days, with almost no human intervention. The company made the claim in the investor presentation for its initial public offering, The Decoder reported on November 11, 2026. OfficeChai reported the same figures from Anthropic's roadshow material on the same day.",
+        "sources": [
+          0,
+          1
+        ]
+      },
+      {
+        "kind": "fact",
+        "text": "According to Anthropic, bringing a large model up on a new chip family has traditionally taken six to 12 months of work by dozens of engineers. Anthropic worked with AMD GPUs for the first time this year.",
+        "sources": [
+          0,
+          1
+        ]
+      },
+      {
+        "kind": "heading",
+        "text": "What Mythos did"
+      },
+      {
+        "kind": "fact",
+        "text": "Every chip family needs its own low-level software, known as kernels, plus a tailored inference stack, OfficeChai noted. Anthropic says Mythos ported or wrote nearly 100 percent of the kernels needed for the AMD bring-up. The Decoder points out that the notes on Anthropic's chart refer to prompt processing of an Anthropic model on MI355X GPUs, while the text speaks of Claude, so the exact model tested is not fully specified.",
+        "sources": [
+          0,
+          1
+        ]
+      },
+      {
+        "kind": "fact",
+        "text": "Neither publication was able to verify the figures independently. They come from Anthropic's own disclosures. OfficeChai also reported that AMD chief executive Lisa Su has said the extra engineering support AMD had planned to provide was not needed, though it did not publish a direct quote.",
+        "sources": [
+          0,
+          1
+        ]
+      },
+      {
+        "kind": "heading",
+        "text": "Four chip families, one pool"
+      },
+      {
+        "kind": "fact",
+        "text": "Tom Brown, Anthropic's co-founder and chief compute officer, says the company now trains and runs Claude on all four major chip families, according to The Decoder. He described the early choice to spread work across vendors as an unconventional bet and said years of investment had made the company very good at porting. Anthropic treats compute from different vendors, architectures and locations as a single pool.",
+        "sources": [
+          0
+        ]
+      },
+      {
+        "kind": "fact",
+        "text": "OfficeChai lists Nvidia GPUs, Amazon's Trainium chips and Google's TPUs in that pool alongside AMD. Anthropic's relationship with Google includes a deal for up to a million TPUs, and the company also has an in-house chip design team as part of its long-term plans.",
+        "sources": [
+          1
+        ]
+      },
+      {
+        "kind": "fact",
+        "text": "Anthropic also described what it calls compute multipliers, research advances that get more performance out of the same hardware, and a program called Anthropic Direct, in which it leases chips and runs them in purpose-built data centers to lower the total cost of ownership.",
+        "sources": [
+          0
+        ]
+      },
+      {
+        "kind": "heading",
+        "text": "The money behind the chips"
+      },
+      {
+        "kind": "fact",
+        "text": "AMD agreed in July 2026 to invest up to $5 billion in Anthropic as deployment milestones are met. Anthropic plans to deploy up to two gigawatts of AMD Instinct GPUs in Helios rack-scale systems, with the first gigawatt phase starting in the first half of 2027, The Decoder reported. Nvidia committed to invest up to $10 billion in Anthropic in November 2025, and Anthropic's amended SEC registration statement of November 10, 2026 lists Nvidia among seven technology companies in a $26 billion private placement at the IPO price.",
+        "sources": [
+          0,
+          1
+        ]
+      },
+      {
+        "kind": "analysis",
+        "text": "For years, the software built around Nvidia's CUDA platform has made it costly for AI labs to move work to other chips. If a model can now do most of that porting in days, the cost of switching drops, and buyers gain leverage over chip suppliers. The claim is also part of an IPO pitch, which gives Anthropic a reason to present its efficiency in the best light, so independent results will matter."
+      },
+      {
+        "kind": "why_it_matters",
+        "text": "Watch whether AMD or outside engineers confirm the three-day figure, and whether other labs report similar AI-driven chip bring-ups once the AMD Helios systems start arriving in 2027."
+      }
+    ]
+  }
+}

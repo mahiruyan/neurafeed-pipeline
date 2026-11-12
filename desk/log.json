@@ -5478,5 +5478,71 @@
       }
     ],
     "requests": []
+  },
+  {
+    "run_at": "2026-11-12T13:00:38.647Z",
+    "summary": "Desk run (08:00 New York): queued the Anthropic Mythos ports Claude to AMD in 3 days story (the last desk slot today, 8 of 8) and today's first site-only guide (Google Flow); no open links or requests.",
+    "considered": [
+      {
+        "story": "Anthropic says Mythos got Claude running on AMD MI355X GPUs in about 3 days, a job that took 6 to 12 months",
+        "source": "https://the-decoder.com/anthropic-says-ai-is-eroding-nvidias-cuda-lead-cutting-an-amd-chip-switch-from-months-to-three-days/",
+        "decision": "queued",
+        "job_id": "2026-11-12-claude-ported-itself-to-amd-3-days",
+        "priority": 2,
+        "reason": "Anthropic plus Nvidia's shrinking moat in Nvidia's worst week; confirmed by The Decoder and OfficeChai. Over 12 hours old, so timely false. Claim is from Anthropic's IPO deck and not independently verified, which the slides and article say. Image hosts could not be reached from here, so the pipeline download is the check."
+      },
+      {
+        "story": "Website guide: How to use Google Flow (first line of the tool library in guides/plan.md)",
+        "source": "https://support.google.com/flow/answer/16526234?hl=en",
+        "decision": "queued",
+        "job_id": "2026-11-12-how-to-use-google-flow-guide",
+        "priority": 2,
+        "reason": "First guide of the day, site only; built from Google's Flow help center and blog plus Fello AI."
+      },
+      {
+        "story": "AWS releases a free local emulator for 200+ services built entirely by AI agents",
+        "source": "https://www.geekwire.com/2026/aws-gives-developers-a-free-local-stand-in-for-its-cloud-built-from-scratch-by-ai-agents",
+        "decision": "skipped",
+        "reason": "Today already has 8 desk jobs with the AMD story; developer appeal and close in theme to the Anthropic AI-writes-code story."
+      },
+      {
+        "story": "Survey: 14% of 911 dispatchers targeted by AI-generated voices (NPR)",
+        "decision": "skipped",
+        "reason": "Daily cap reached; could be a strong story for tomorrow if new reporting appears."
+      },
+      {
+        "story": "Gemini Decisions API",
+        "source": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-decisions-api/",
+        "decision": "skipped",
+        "reason": "Developer API with little appeal for a general audience."
+      },
+      {
+        "story": "Google engineer's AI agents found an unmapped Maya site (Hacker News)",
+        "source": "https://pietromiotti.com/latest/maya-site",
+        "decision": "skipped",
+        "reason": "Search again found no independent second source, only the personal blog."
+      },
+      {
+        "story": "Google DeepMind AlphaGenome 2",
+        "decision": "skipped",
+        "reason": "Research model, little general interest, and the day's cap is reached."
+      },
+      {
+        "story": "J. Crew launches an AI style advisor on Anthropic models (Fortune)",
+        "decision": "skipped",
+        "reason": "Small retail feature; cap reached."
+      },
+      {
+        "story": "Nvidia board preparing to oust Jensen Huang and related follow-ups",
+        "decision": "covered",
+        "reason": "Mahir posted it himself today (its-actually-happening and front page singles)."
+      },
+      {
+        "story": "United Airlines bans AI agents from booking",
+        "decision": "covered",
+        "reason": "Already queued as 2026-11-12-united-airlines-bans-ai-agents-booking."
+      }
+    ],
+    "requests": []
   }
 ]

@@ -1,0 +1,318 @@
+{
+  "id": "2026-11-12-how-to-use-google-flow-guide",
+  "format": "utility",
+  "site_only": true,
+  "created_at": "2026-11-12T13:35:00Z",
+  "story_time": "2026-11-12T13:35:00Z",
+  "timely": false,
+  "sensitive": false,
+  "priority": 2,
+  "review": true,
+  "sources": [
+    {
+      "name": "Google Flow Help: Create videos in Flow",
+      "url": "https://support.google.com/flow/answer/16353334?hl=en"
+    },
+    {
+      "name": "Google Flow Help: Flow models and supported features",
+      "url": "https://support.google.com/flow/answer/16352836"
+    },
+    {
+      "name": "Google Flow Help: Manage your Google Flow credits",
+      "url": "https://support.google.com/flow/answer/16526234?hl=en"
+    },
+    {
+      "name": "Google Flow Help: Edit videos and build scenes",
+      "url": "https://support.google.com/flow/answer/16935718?hl=en"
+    },
+    {
+      "name": "Google Flow Help: Get started with Flow",
+      "url": "https://support.google.com/flow/answer/16353333?hl=en"
+    },
+    {
+      "name": "Google: New creative controls in Google Flow",
+      "url": "https://blog.google/innovation-and-ai/models-and-research/google-labs/new-creative-controls-google-flow/"
+    },
+    {
+      "name": "Fello AI: Google Flow credits, prices and limits",
+      "url": "https://felloai.com/google-flow/"
+    }
+  ],
+  "caption": "Google Flow gives everyone 50 free credits a day. A 10 second clip at 720p costs 30 of them.\nDraft at 360p for a third of the price, then make the final shot.\n\nHave you tried making an AI video yet?\n\nFollow @neurafeed.ai for daily AI news.\n\nSource: Google · Photo: Google",
+  "threads_text": "Google Flow gives everyone 50 free credits a day, and a 10 second 720p clip eats 30 of them. Drafting at 360p costs a third as much. Would you pay for an AI video tool?",
+  "slides": [
+    {
+      "kind": "cover",
+      "headline": "How to use *Google Flow* to make AI videos, and what 50 free credits really buy",
+      "image": {
+        "url": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/FlowOmni_social.max-1440x810.png",
+        "credit": "Google",
+        "fallback_urls": [
+          "https://i.gzn.jp/img/2026/05/20/flow-by-google/00.png"
+        ]
+      },
+      "pos": "center center"
+    },
+    {
+      "kind": "card",
+      "heading": "1. *50 free credits* a day",
+      "paras": [
+        "Every account gets 50 Flow credits a day. Unused ones do not roll over.",
+        "Free users may not get video between about 2 PM and 5 PM UTC."
+      ],
+      "image": {
+        "url": "https://i.gzn.jp/img/2026/05/20/flow-by-google/001.png",
+        "credit": "Google via GIGAZINE",
+        "fit": "contain"
+      }
+    },
+    {
+      "kind": "card",
+      "heading": "2. Video is billed *per second*",
+      "paras": [
+        "Omni Flash 1.2 costs 3 credits a second at 720p, so 10 seconds is 30 credits.",
+        "360p costs 1 credit a second. Draft there first."
+      ],
+      "image": {
+        "url": "https://i.gzn.jp/img/2026/05/20/flow-by-google/002.png",
+        "credit": "Google via GIGAZINE",
+        "fit": "contain"
+      }
+    },
+    {
+      "kind": "prompt",
+      "heading": "3. Write the *whole scene*",
+      "paras": [
+        "Google says to name the subject, action, place, light and style.",
+        "Then pick Video, a length and click Generate."
+      ],
+      "prompt": "[Subject] [doing an action] in [place], [time of day] light, [style]. The camera [moves slowly toward the subject]."
+    },
+    {
+      "kind": "prompt",
+      "heading": "4. Ask the *Agent* for options",
+      "paras": [
+        "Turn on Agent in the prompt box to get several versions at once.",
+        "Keep what stays the same in the prompt."
+      ],
+      "prompt": "Give me 4 variations of this video with different lighting: morning, noon, sunset and night. Keep the subject and camera move the same."
+    },
+    {
+      "kind": "cta",
+      "hook": "Follow for a new hands-on AI tool guide every day."
+    }
+  ],
+  "site_article": {
+    "kind": "guide",
+    "headline": "How to use Google Flow: make AI videos step by step, and what 50 free credits get you",
+    "dek": "Google's AI filmmaking tool gives everyone 50 credits a day. Here is how to spend them, the steps to a first clip, and four prompts to copy.",
+    "summary": "Google Flow turns prompts, frames and reference images into short AI video clips, and every account gets 50 free credits a day. This guide covers credit costs, plans, the steps to a first video, frames, ingredients, the Flow Agent and Scenebuilder.",
+    "seo_title": "How to use Google Flow: AI video step by step (free credits)",
+    "seo_description": "How to use Google Flow: the 50 free daily credits, what each clip costs, steps to your first video, frames, ingredients, and four prompts to copy.",
+    "answer_summary": "Open Google Flow in Chrome or Edge, start a project, click the model name, choose Video, set the length and model, write a detailed prompt and click Generate. Everyone gets 50 credits a day; Omni Flash 1.2 costs 3 credits per second at 720p.",
+    "tags": [
+      "Google Flow",
+      "Gemini Omni",
+      "Veo",
+      "AI video",
+      "Guides"
+    ],
+    "hero_alt": "Google's promotional image for new creative controls in Google Flow.",
+    "paragraphs": [
+      {
+        "kind": "fact",
+        "text": "How to use Google Flow, in short: open it in Chrome or Edge, type a detailed prompt, pick a video model and length, and click Generate. Flow is Google's AI filmmaking tool for making clips, scenes and short stories with consistent characters, and every account gets 50 free credits a day.",
+        "sources": [
+          4,
+          2
+        ]
+      },
+      {
+        "kind": "fact",
+        "text": "The catch: free credits buy only a few seconds of video at full quality, video generation can be unavailable to free users at peak hours, and the best editing features need a paid Google AI plan. This guide covers what you get for free, what each clip costs, the steps to a first video, and prompts to copy.",
+        "sources": [
+          2,
+          1
+        ]
+      },
+      {
+        "kind": "heading",
+        "text": "What you need to use Google Flow"
+      },
+      {
+        "kind": "fact",
+        "text": "You must be 18 or older, verify your age, and live in a supported region. Google says a VPN does not unlock Flow in an unsupported country, and Flow is not offered everywhere Google AI Pro is sold, so check the region list before you pay for a plan. Google recommends a computer for the strongest editing tools, and there is also a mobile app.",
+        "sources": [
+          4
+        ]
+      },
+      {
+        "kind": "fact",
+        "text": "Fello AI reported on November 10, 2026 that the Android app is in beta and the iPhone app is listed as coming soon. It also reports that Flow now lives at flow.google.com and that the old Google Labs address redirects there.",
+        "sources": [
+          6
+        ]
+      },
+      {
+        "kind": "heading",
+        "text": "Google Flow free credits and plans"
+      },
+      {
+        "kind": "fact",
+        "text": "Everyone gets 50 Flow credits per day, with or without a subscription. The daily credits refresh after your first generation of the day, and unused ones do not roll over. Without a subscription you may not be able to generate video between roughly 2 PM and 5 PM UTC, though images and the Flow Agent still work.",
+        "sources": [
+          2
+        ]
+      },
+      {
+        "kind": "fact",
+        "text": "Paid Google AI plans add monthly credits on top of the daily 50: 200 with Google AI Plus, 1,000 with Pro, 10,000 with the $100 Ultra plan and 25,000 with the $200 Ultra plan. Monthly credits reset at the start of the billing cycle and do not roll over either. Fello AI lists the US prices as $4.99 for Plus, $19.99 for Pro and $99.99 and $199.99 for the two Ultra tiers.",
+        "sources": [
+          2,
+          6
+        ]
+      },
+      {
+        "kind": "fact",
+        "text": "Credits are taken when a generation starts. If a generation fails or is blocked by a safety filter, Google says the credits come back within one hour.",
+        "sources": [
+          4
+        ]
+      },
+      {
+        "kind": "heading",
+        "text": "What a Google Flow video costs"
+      },
+      {
+        "kind": "fact",
+        "text": "Omni Flash 1.2, the main video model, costs 1 credit per second at 360p and 3 credits per second at 720p for clips up to 10 seconds. So a 10 second 720p clip uses 30 of your 50 daily credits. Free users can make clips of 3 to 10 seconds; Plus, Pro and Ultra subscribers can go up to 15 seconds, at double the rate for seconds 11 to 15.",
+        "sources": [
+          2,
+          1
+        ]
+      },
+      {
+        "kind": "fact",
+        "text": "Veo 3.1 Lite makes 720p clips of 4, 6 or 8 seconds for 10 credits each, or 5 for Ultra subscribers. Veo 3.1 Fast, Veo 3.1 Quality and Omni Flash 1.1 will be retired on December 5, 2026, and Google recommends Omni Flash 1.2 or Veo 3.1 Lite for new projects. Image generation runs on Nano Banana models.",
+        "sources": [
+          2,
+          1
+        ]
+      },
+      {
+        "kind": "tip",
+        "text": "Draft at 360p, which costs a third of 720p, and only make the 720p version of the shot you like. Fello AI gives the same advice, and Google's own August update pitched 360p as the cheap way to test ideas."
+      },
+      {
+        "kind": "heading",
+        "text": "How to make your first video in Google Flow"
+      },
+      {
+        "kind": "step",
+        "title": "1. Open Flow and start a project",
+        "text": "Go to Google Flow in a Chromium browser such as Chrome or Edge, sign in, and open an existing project or start a new one."
+      },
+      {
+        "kind": "step",
+        "title": "2. Choose Video",
+        "text": "Click the model name in the prompt box (it starts on the image model Nano Banana Pro), then click Video."
+      },
+      {
+        "kind": "step",
+        "title": "3. Set the options",
+        "text": "Choose the aspect ratio, the number of outputs, the model and the length. Video is billed per second, so shorter clips cost less."
+      },
+      {
+        "kind": "step",
+        "title": "4. Write the prompt and generate",
+        "text": "Be specific about the subject, the action, the place, the lighting and the style, then click Generate."
+      },
+      {
+        "kind": "prompt",
+        "title": "Prompt 1: A first clip",
+        "text": "[Subject] [doing an action] in [place], [time of day] light, [style, for example handheld documentary or warm film look]. The camera [moves slowly toward the subject / stays still]."
+      },
+      {
+        "kind": "heading",
+        "text": "Frames, ingredients and the Flow Agent"
+      },
+      {
+        "kind": "fact",
+        "text": "Frames to video lets you set a start frame, an end frame or both. Click the model name, then Video, then Frames, drag in your images, and describe the action between them. This mode works only on the web version of Flow.",
+        "sources": [
+          0,
+          1
+        ]
+      },
+      {
+        "kind": "prompt",
+        "title": "Prompt 2: Connect a start and end frame",
+        "text": "The camera moves from the first image to the second in one smooth shot. [Describe what happens in between, for example: the door opens and the dog runs out into the snow.]"
+      },
+      {
+        "kind": "fact",
+        "text": "Ingredients are reference images or videos for a character, a product or a place. Click the model name, then Video, then Ingredients, and add references by dragging them in, typing @ to search your project, or clicking Add. Then say how each one should appear. Google suggests plain backgrounds for subject and product references and a prompt that matches the references.",
+        "sources": [
+          0
+        ]
+      },
+      {
+        "kind": "prompt",
+        "title": "Prompt 3: Use your ingredients",
+        "text": "The [character from @ingredient] walks into [place] holding [product from @ingredient]. Keep the face and clothes exactly as in the reference. [Lighting and mood]."
+      },
+      {
+        "kind": "fact",
+        "text": "The Flow Agent is a switch in the prompt box. Turn on Agent, describe the scene, and you can ask for several versions at once; Google's own example is a request for 5 variations of a video with different lighting. You can also drag a finished clip into the prompt box with Agent on and describe a change, and the edit is saved to that clip's stack.",
+        "sources": [
+          0,
+          3
+        ]
+      },
+      {
+        "kind": "prompt",
+        "title": "Prompt 4: Ask the Agent for options",
+        "text": "Give me 4 variations of this video with different lighting: early morning, noon, sunset and night. Keep the subject and camera move the same."
+      },
+      {
+        "kind": "heading",
+        "text": "Extend clips and build a scene"
+      },
+      {
+        "kind": "fact",
+        "text": "Extending a clip needs a Google AI Plus, Pro or Ultra plan and Omni Flash 1.2. Click the clip, click Extend, pick the extra length, describe how the action continues and click Generate. You can add up to 3 reference images. Veo Extend was retired on November 5, 2026.",
+        "sources": [
+          3,
+          2
+        ]
+      },
+      {
+        "kind": "fact",
+        "text": "Scenebuilder puts several clips in order. Hover over a clip, click More, then Add to Scene. From there you can drag clips into order, trim the start and end of each one, preview the sequence and download the scene. To keep a single frame, pause the video, hover over it and click Save frame, then use it as an ingredient or a start or end frame.",
+        "sources": [
+          3
+        ]
+      },
+      {
+        "kind": "fact",
+        "text": "Subscribers can upscale Omni 360p videos to 1080p, and Ultra subscribers to 4K. Every Flow output carries an invisible SynthID watermark, and a visible watermark can be switched on in the profile menu.",
+        "sources": [
+          1,
+          4
+        ]
+      },
+      {
+        "kind": "heading",
+        "text": "Where Google Flow falls short"
+      },
+      {
+        "kind": "analysis",
+        "text": "The free plan is fine for learning the tool, not for a project. Fifty credits are less than two 10 second clips at 720p, they reset daily rather than piling up, and the peak hour block lands in the US morning. Region limits are strict, and features such as frames to video and extending are web only or paid only. If you want to test Flow seriously, Google AI Plus is the cheapest way to get longer clips, extending and free 1080p upscaling."
+      },
+      {
+        "kind": "tip",
+        "text": "Before a bigger project, check your balance: click your profile picture at the top right in Flow. Google notes that limits and credit costs can change, and the current cost shows in the prompt box settings."
+      }
+    ]
+  }
+}
