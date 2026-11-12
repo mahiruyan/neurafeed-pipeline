@@ -9,7 +9,7 @@
   ],
   "status": "render_failed",
   "error": "Command failed: yt-dlp --no-playlist --no-progress --restrict-filenames -f bv*[height<=1920][vcodec^=avc1]+ba[acodec^=mp4a]/bv*[height<=1920]+ba/b[height<=1920]/b --merge-output-format mp4 -o /home/runner/work/neurafeed-pipeline/neurafeed-pipeline/out/2026-11-12-absolute-cinematic-reality-reel/src/source.%(ext)s https://www.reddit.com/r/ChatGPT/s/DYCuwjv7np\nERROR: [generic] DYCuwjv7np: Unable to download webpage: HTTP Error 403: Blocked (caused by <HTTPError 403: Blocked>)\n",
-  "render_attempts": 2,
-  "gave_up": false,
-  "updated_at": "2026-11-12T09:57:42.156Z"
+  "render_attempts": 3,
+  "gave_up": true,
+  "updated_at": "2026-11-12T10:11:03.252Z"
 }

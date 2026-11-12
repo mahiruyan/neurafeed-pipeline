@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-12T10:08:40.033Z",
+  "updated_at": "2026-11-12T10:12:05.403Z",
   "jobs": [
     {
       "id": "2026-10-29-apple-first-touchscreen-macbook-pro-reel",
@@ -1611,6 +1611,19 @@
       "from_link": true,
       "link_id": "link-2026-11-12-3520",
       "error": "Command failed: yt-dlp --no-playlist --no-progress --restrict-filenames -f bv*[height<=1920][vcodec^=avc1]+ba[acodec^=mp4a]/bv*[height<=1920]+ba/b[height<=1920]/b --merge-output-format mp4 -o /home/runner/work/neurafeed-pipeline/neurafeed-pipeline/out/2026-11-12-absolute-cinematic-reality-reel/src/source.%(ext)s https://www.reddit.com/r/ChatGPT/s/DYCuwjv7np\nERROR: [generic] DYCuwjv7np: Unable to download webpage: HTTP Error 403: Blocked (caused by <HTTPError 403: Blocked>)\n",
+      "tg": []
+    },
+    {
+      "id": "2026-11-12-another-ai-masterpiece-reel",
+      "status": "render_failed",
+      "posted_at": null,
+      "post_at": null,
+      "priority": 1,
+      "format": "reel",
+      "headline": "Another AI masterpiece just dropped",
+      "from_link": true,
+      "link_id": "link-2026-11-12-3542",
+      "error": "Command failed: yt-dlp --no-playlist --no-progress --restrict-filenames -f bv*[height<=1920][vcodec^=avc1]+ba[acodec^=mp4a]/bv*[height<=1920]+ba/b[height<=1920]/b --merge-output-format mp4 -o /home/runner/work/neurafeed-pipeline/neurafeed-pipeline/out/2026-11-12-another-ai-masterpiece-reel/src/source.%(ext)s https://www.threads.com/share/BAjsJNjbiV\nWARNING: [generic] Falling back on generic information extractor\nERROR: Unsupported URL: https://www.threads.com/@chatgptricks/post/Dfot-0cjnKK?xmt=AQG0Md5txFPW-28ldr8qlUyxfVjCA4023UXwfMQ20a8PTa9PsBt0knFA9xbSjJhxdAYAezEE&slof=1\n",
       "tg": []
     },
     {

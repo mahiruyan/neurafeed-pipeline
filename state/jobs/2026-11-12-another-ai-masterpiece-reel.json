@@ -1,0 +1,15 @@
+{
+  "id": "2026-11-12-another-ai-masterpiece-reel",
+  "history": [
+    {
+      "status": "render_failed",
+      "at": "2026-11-12T10:11:05.614Z",
+      "by": "system"
+    }
+  ],
+  "status": "render_failed",
+  "error": "Command failed: yt-dlp --no-playlist --no-progress --restrict-filenames -f bv*[height<=1920][vcodec^=avc1]+ba[acodec^=mp4a]/bv*[height<=1920]+ba/b[height<=1920]/b --merge-output-format mp4 -o /home/runner/work/neurafeed-pipeline/neurafeed-pipeline/out/2026-11-12-another-ai-masterpiece-reel/src/source.%(ext)s https://www.threads.com/share/BAjsJNjbiV\nWARNING: [generic] Falling back on generic information extractor\nERROR: Unsupported URL: https://www.threads.com/@chatgptricks/post/Dfot-0cjnKK?xmt=AQG0Md5txFPW-28ldr8qlUyxfVjCA4023UXwfMQ20a8PTa9PsBt0knFA9xbSjJhxdAYAezEE&slof=1\n",
+  "render_attempts": 1,
+  "gave_up": false,
+  "updated_at": "2026-11-12T10:11:05.614Z"
+}
