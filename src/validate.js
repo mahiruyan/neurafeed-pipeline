@@ -99,7 +99,9 @@ function validateJob(job, fileId) {
     if (s.kind === 'prompt' && !s.prompt) p.push(`slide ${i + 1}: prompt is required`);
     if (s.kind === 'summary' && !((s.points || s.paras || []).length >= 2)) p.push(`slide ${i + 1}: a summary needs 2 to 6 points`);
   });
-  if (job.slides?.[0]?.kind !== 'cover') p.push('first slide must be a cover');
+  // A single post may also be one `photo` slide: a line of text above the whole picture (a meme post).
+  const memePost = single && job.slides?.length === 1 && job.slides[0]?.kind === 'photo';
+  if (job.slides?.[0]?.kind !== 'cover' && !memePost) p.push('first slide must be a cover');
   if (!single && job.slides?.at(-1)?.kind !== 'cta') p.push('last slide must be a cta');
   // A photo slide shows a picture whole, so it may repeat the cover's picture (cover cropped, then the full page).
   const urls = (job.slides || []).filter((s) => s.kind !== 'photo').map((s) => s.image?.url).filter(Boolean);

@@ -192,6 +192,10 @@ photo. Pick the kind that fits each slide:
   from a post Mahir sent): `image`, optional `heading` above and `note` (one gray line: who made
   it, what it is). A `"format": "single"` post may have 2 slides: the cover, then one `photo`
   slide with the full picture. Use that when Mahir asks for the original image to be shown.
+  Meme post (Mahir's own layout for memes): a `"format": "single"` post with ONE `photo` slide:
+  his line as the `heading` (medium size, his exact words, for example "Wait, WHAT??") above the
+  whole picture on the dark page. No cover, no big headline band. Use it when he sends a meme
+  and asks for a single post with text above it.
   The same picture can also lie on the cover as a card: a badge with `"shape": "card"`
   (`"side"`, `"top"` px, `"scale"`, optional `"tilt"` degrees): the whole image with a white edge.
   For an X link from Mahir the inbox item's `preview` carries the post itself: `post` (author,
