@@ -1,54 +1,5 @@
 [
   {
-    "run_at": "2026-11-05T10:55:01.002Z",
-    "summary": "6 a.m. New York run: turned Mahir's swarm of AI cursors link into a Reel (review); no new priority 1 news since the last run, so November 5's last news slots stay for the two utility posts.",
-    "considered": [
-      {
-        "story": "Mahir's link: swarm of AI agent cursors working on one computer (@EHuanglu video, Instagram repost)",
-        "source": "https://www.instagram.com/reel/DfWg8K-zPsl/",
-        "decision": "queued",
-        "job_id": "2026-11-05-ai-agent-cursor-swarm-one-screen-reel",
-        "priority": 1
-      },
-      {
-        "story": "Anthropic signs its first digital publisher deal with the AP",
-        "decision": "skipped",
-        "reason": "Still only Adweek's report with no independent second source."
-      },
-      {
-        "story": "Cat Wu joins OpenAI to lead core product management",
-        "decision": "covered",
-        "reason": "Follow up to 2026-11-04-cat-wu-leaves-claude-code."
-      },
-      {
-        "story": "Claude finds two critical Xen VM escape flaws (XSA-523)",
-        "decision": "skipped",
-        "reason": "Advisory is from November 3, past the timely window."
-      },
-      {
-        "story": "Google backstops TeraWulf's $19 billion Anthropic Kentucky lease",
-        "decision": "skipped",
-        "reason": "Too close to today's Anthropic Riot Texas campus post."
-      },
-      {
-        "story": "Microsoft passes on doubling its Nscale Texas data center deal",
-        "decision": "skipped",
-        "reason": "FT report, paywalled and not read in full; low consumer interest."
-      },
-      {
-        "story": "Ohio voters pass data center bans in 14 cities",
-        "decision": "skipped",
-        "reason": "Political ballot story, and November 5 is near the cap with two utility slots still to fill."
-      },
-      {
-        "story": "OpenAI to acquire Pierre Computer Company",
-        "decision": "skipped",
-        "reason": "Small developer tools deal, already context in the Meta Conductor job."
-      }
-    ],
-    "requests": []
-  },
-  {
     "run_at": "2026-11-05T13:00:45.006Z",
     "summary": "8 a.m. New York run: no open links or requests and no uncovered priority 1 story, so nothing queued; November 5 has 6 news jobs plus Mahir's Reel, and the last 2 slots stay for the two utility posts.",
     "considered": [
@@ -5455,6 +5406,75 @@
         "decision": "queued",
         "job_id": "2026-11-12-jensen-huang-matrix-parody-reel",
         "priority": 1
+      }
+    ],
+    "requests": []
+  },
+  {
+    "run_at": "2026-11-12T11:00:59.140Z",
+    "summary": "Desk run (05:56 New York): queued the OpenAI Russian prank call story (sensitive, for Mahir's approval); no open links or requests; too early for today's guides.",
+    "considered": [
+      {
+        "story": "Russian pranksters Vovan and Lexus fooled three OpenAI national security officials posing as Ukraine's Rustem Umerov",
+        "source": "https://theintercept.com/2026/11/11/openai-ukraine-russia-prank-security/",
+        "decision": "queued",
+        "job_id": "2026-11-12-openai-officials-fooled-russian-prank",
+        "priority": 2,
+        "reason": "A person, politics and an embarrassing moment for OpenAI, confirmed by The Intercept, Business Today and Digit. Sensitive (politics, military), so it waits for Mahir. Set timely false because the 12 hour window would close before the first US slot. Image hosts could not be reached from here, so the pipeline download is the check."
+      },
+      {
+        "story": "Nvidia board preparing to oust Jensen Huang (WSJ) and the related spy scandal follow-ups",
+        "source": "https://www.wsj.com/business/nvidia-is-preparing-to-oust-nvidia-ceo-jensen-huang-30f421ad",
+        "decision": "covered",
+        "reason": "Mahir posted it himself today (2026-11-12-its-actually-happening-huang-single-v2 and the front page single); the desk version was withdrawn."
+      },
+      {
+        "story": "OpenAI model proved part of the Yang-Mills Millennium problem",
+        "source": "https://officechai.com/ai/what-is-the-yang-mills-theory-openai-claims-to-have-proven-and-what-it-means-for-physics/",
+        "decision": "skipped",
+        "reason": "Announced October 27 and already covered with 2026-10-27-openai-ai-disproves-exponential-time-hypothesis; no new fact found that I could read."
+      },
+      {
+        "story": "TSMC board approves up to $1 billion in Anthropic and OpenAI investments",
+        "source": "https://www.macrumors.com/2026/11/11/tsmc-approves-ai-investment/",
+        "decision": "skipped",
+        "reason": "Two days old, an investor detail of the Anthropic IPO already covered on November 10, little reader interest."
+      },
+      {
+        "story": "OpenAI names Aleph exclusive ChatGPT Ads reseller in 44 markets",
+        "decision": "skipped",
+        "reason": "Ad sales plumbing; the ads expansion itself is months old."
+      },
+      {
+        "story": "Claude Code auto mode: humans caught only 14% of dangerous commands (Lydia Hallie)",
+        "source": "https://finance.biggo.com/news/38f9e32eae85e487",
+        "decision": "skipped",
+        "reason": "The numbers date from August, not new."
+      },
+      {
+        "story": "ChatGPT Finances bank account feature on Mac",
+        "decision": "skipped",
+        "reason": "The finance feature launched in May; the Mac version is a small update."
+      },
+      {
+        "story": "Gemini on Apple CarPlay",
+        "decision": "covered",
+        "reason": "Already queued as 2026-11-12-gemini-app-apple-carplay."
+      },
+      {
+        "story": "Georgia residents sue OpenAI for racketeering",
+        "decision": "covered",
+        "reason": "Already queued as 2026-11-12-openai-georgia-racketeering-lawsuit."
+      },
+      {
+        "story": "13-year-old Gemini school laptop lawsuit",
+        "decision": "covered",
+        "reason": "Covered on November 9 as 2026-11-09-gemini-school-chromebook-teen-lawsuit."
+      },
+      {
+        "story": "Mahir's Reels from links today (absolute cinematic, AI masterpiece, Jensen Matrix parody)",
+        "decision": "covered",
+        "reason": "Jobs exist but their state is render_failed; this is a pipeline download problem, not a desk one, so Mahir may need to check them."
       }
     ],
     "requests": []
