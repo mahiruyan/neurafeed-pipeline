@@ -35,9 +35,14 @@ reach only followers (median 510 views, 1 share per post). So every New York day
   still written every day for the website only: queue them as normal utility jobs (slides, guide
   in `site_article`) with `"site_only": true`; the pipeline renders them for the website and
   posts nothing to Instagram.
-- At least 2 stories a week that reach beyond pure AI news: AI plus money, politics, a scandal,
-  a crime, a lawsuit or a strange event (the accounts that grew to 75,000+ followers did it with
-  these). Mark them `sensitive: true` when they are; Mahir approves them on Telegram.
+- Every day, at least 2 of the news carousels (or Reels) are stories that reach beyond pure AI
+  news, the kind @aifortuneclub grew to 75,000+ followers with (Mahir, 2026-11-12: "haberler
+  böyle olsun"): AI plus money (fortunes, salaries, prices, a company's collapse or windfall),
+  a person (a founder's feud, a firing, a strange decision), politics, a scandal, a crime, a
+  lawsuit, or a strange event. Look for them on purpose in every run (leads, Reddit, general
+  news), not only when they turn up. Product and model news that only insiders care about comes
+  after these, except priority 1 stories. Mark them `sensitive: true` when they are (deaths,
+  lawsuits, crime, politics, layoffs, health); Mahir approves those on Telegram.
 Never exceed 8 posts per day in total.
 
 ## Rules that must never be broken
