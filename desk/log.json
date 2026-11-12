@@ -1,73 +1,5 @@
 [
   {
-    "run_at": "2026-11-05T07:03:27.286Z",
-    "summary": "Early morning New York run: no open links or requests; queued Anthropic's $28 billion Riot Corsicana lease (priority 1) and Apple's employee AI budget cuts (priority 2), both with review; November 5 now has 6 jobs.",
-    "considered": [
-      {
-        "story": "Riot Platforms leases its whole Corsicana, Texas campus to Anthropic for about $28 billion",
-        "source": "https://www.sec.gov/Archives/edgar/data/0001167419/000110465926122417/riot-20260930x10q.htm",
-        "decision": "queued",
-        "job_id": "2026-11-05-anthropic-riot-28-billion-texas-campus",
-        "priority": 1
-      },
-      {
-        "story": "Apple cuts employee AI budgets, some engineers from $300 to $200 a day",
-        "source": "https://www.investing.com/news/stock-market-news/apple-cuts-employee-ai-budgets-in-costcontrol-push-bloomberg-news-reports-5001149",
-        "decision": "queued",
-        "job_id": "2026-11-05-apple-cuts-engineers-ai-budget",
-        "priority": 2
-      },
-      {
-        "story": "Anthropic signs its first news licensing deal with the AP",
-        "source": "https://www.adweek.com/media/anthropic-licensing-deal-ap-election/",
-        "decision": "skipped",
-        "reason": "Still only Adweek's sourced report; every other article repeats it, so no independent second source yet."
-      },
-      {
-        "story": "Claude helps Anthropic map a 3D bacterial vault structure",
-        "decision": "skipped",
-        "reason": "Niche biology result; keep for a later run if official Anthropic coverage appears."
-      },
-      {
-        "story": "Google walks back its school AI and Search policy after backlash",
-        "decision": "covered",
-        "reason": "Follow up to 2026-11-03-google-schools-no-ai-no-search, too soon for a second post."
-      },
-      {
-        "story": "Cat Wu joins OpenAI to lead core product",
-        "decision": "covered",
-        "reason": "Follow up to 2026-11-04-cat-wu-leaves-claude-code, skipped in the last run too."
-      },
-      {
-        "story": "OpenAI to acquire Pierre Computer Company",
-        "decision": "skipped",
-        "reason": "Small developer tools deal, already mentioned in the Meta Conductor job."
-      },
-      {
-        "story": "OpenAI is already trying to shape the 2028 election",
-        "source": "https://techcrunch.com/",
-        "decision": "skipped",
-        "reason": "Political story, and OpenAI already has three posts today."
-      },
-      {
-        "story": "Nothing CEO says AI-first device drops next month",
-        "decision": "skipped",
-        "reason": "No product details yet, low US interest."
-      },
-      {
-        "story": "Uber says almost no one books rides through AI agents",
-        "decision": "skipped",
-        "reason": "Small data point, weaker than the two stories queued."
-      },
-      {
-        "story": "Hacker News thread says Gemini trains on chat history for paying personal accounts",
-        "decision": "skipped",
-        "reason": "Still a forum thread with no news outlet confirming it."
-      }
-    ],
-    "requests": []
-  },
-  {
     "run_at": "2026-11-05T09:00:08.407Z",
     "summary": "4 a.m. New York run: no open links or requests; nothing new at priority 1 since the last run, so nothing queued, keeping November 5's last 2 of 8 slots for the two daily utility posts.",
     "considered": [
@@ -5346,6 +5278,74 @@
         "source": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-decisions-api/",
         "decision": "skipped",
         "reason": "Developer API with little appeal for a general audience."
+      }
+    ],
+    "requests": []
+  },
+  {
+    "run_at": "2026-11-12T07:09:47.639Z",
+    "summary": "Early run (02:00 New York): no open links or requests; queued two stories for Nov 12, AI restoring Geralt's Polish voice in The Witcher 3 and Microsoft's 7-neuron AI agent backdoor. Today now has 5 jobs.",
+    "considered": [
+      {
+        "story": "CD Projekt Red used AI, with consent, to restore Geralt's Polish voice after the actor's stroke",
+        "source": "https://www.videogameschronicle.com/news/the-witcher-3-expansion-uses-ai-to-adjust-geralts-polish-voiceover-because-the-actor-suffered-a-stroke/",
+        "decision": "queued",
+        "job_id": "2026-11-12-witcher-geralt-voice-ai-stroke",
+        "priority": 2,
+        "reason": "Everyone story with a human side and a huge gaming audience, confirmed by VGC, GamesRadar+ and Nintendo Life. Timely false so it survives until the first window."
+      },
+      {
+        "story": "Microsoft Research: editing under 10 neurons backdoors an AI agent, and Claude Code found most of it",
+        "source": "https://www.microsoft.com/en-us/research/blog/lazare-veni-foras-reprogramming-dormant-neurons-to-backdoor-ai-agents/",
+        "decision": "queued",
+        "job_id": "2026-11-12-microsoft-seven-neurons-sleeper-agent",
+        "priority": 2,
+        "reason": "Strange AI behavior from Microsoft with a Claude angle, read in the Microsoft blog, CSO Online and The Next Web."
+      },
+      {
+        "story": "OpenAI's proposed cutoff of Cursor's model access falls on Nov 12",
+        "source": "https://www.infoworld.com/article/4216503/cursor-customers-will-lose-access-to-openai-coding-models-in-november.html",
+        "decision": "skipped",
+        "reason": "Announced in August and TokenPost says the date is still only a proposal; will cover if a source confirms the cutoff actually happened today."
+      },
+      {
+        "story": "Anthropic bars Claude use from mainland China from Nov 12",
+        "source": "https://meduza.io/en/feature/2026/11/12/russian-media-outlets-are-reporting-a-new-claude-ai-ban-the-rule-has-actually-been-in-place-since-last-year",
+        "decision": "skipped",
+        "reason": "Meduza reports the rule has been in place since last year, so the 'new ban' framing looks wrong."
+      },
+      {
+        "story": "Spotify plans a $5 a month AI remix and covers add-on",
+        "source": "https://www.techradar.com/audio/spotify/who-wants-this-spotifys-ai-powered-remix-and-covers-feature-is-tipped-for-a-february-launch-but-it-could-cost-you-usd5-extra-and-users-arent-happy",
+        "decision": "skipped",
+        "reason": "The FT report is from Nov 2 and nothing new since; good backup if Spotify confirms details."
+      },
+      {
+        "story": "Nvidia board weighs ousting Jensen Huang; alleged spy Alice Huang is in Beijing",
+        "decision": "covered",
+        "reason": "Already queued as 2026-11-12-nvidia-board-preparing-to-oust-jensen-huang; no board decision found yet, so no -v2."
+      },
+      {
+        "story": "13-year-old talked about suicide with Gemini on a school Chromebook",
+        "decision": "covered",
+        "reason": "Same case as 2026-11-09-gemini-school-chromebook-teen-lawsuit."
+      },
+      {
+        "story": "Claude Fable 5.2 and Mythos 5.2 (top Hacker News story)",
+        "decision": "covered",
+        "reason": "Already posted as 2026-11-09-claude-fable-5-2-mythos-5-2."
+      },
+      {
+        "story": "Developers plan AI data centers near Shenandoah, Zion and the Grand Canyon",
+        "source": "https://www.outsideonline.com/outdoor-adventure/environment/ai-data-centers-national-parks-map/",
+        "decision": "skipped",
+        "reason": "Only Outside's map so far, no independent second source read this run."
+      },
+      {
+        "story": "Amazon saves millions replacing Sonnet with Strands Decider",
+        "source": "https://strandsagents.com/blog/amazon-saves-millions-replacing-sonnet-with-strands-decider/",
+        "decision": "skipped",
+        "reason": "Developer-focused and Strands Decider was already news in October."
       }
     ],
     "requests": []

@@ -1,0 +1,88 @@
+{
+  "id": "2026-11-12-microsoft-seven-neurons-sleeper-agent",
+  "created_at": "2026-11-12T07:40:00Z",
+  "story_time": "2026-11-11T08:30:00Z",
+  "timely": false,
+  "sensitive": false,
+  "priority": 2,
+  "format": "carousel",
+  "site_category": "models",
+  "ab": { "headline": "long" },
+  "sources": [
+    { "name": "Microsoft Research", "url": "https://www.microsoft.com/en-us/research/blog/lazare-veni-foras-reprogramming-dormant-neurons-to-backdoor-ai-agents/" },
+    { "name": "CSO Online", "url": "https://www.csoonline.com/article/4247354/rewriting-less-than-10-neurons-in-an-llm-can-turn-it-into-a-sleeper-backdoor.html" },
+    { "name": "The Next Web", "url": "https://thenextweb.com/news/microsoft-lazarus-ai-agent-backdoor-neurons" }
+  ],
+  "caption": "Microsoft researchers showed that editing fewer than 10 neurons inside an AI model can turn an agent built on it into a sleeper.\nIt acts normal and passes standard tests, then runs an attacker's code when a hidden trigger shows up, like the date turning to 2027.\nMicrosoft says Claude Code found most of the technique on its own. No attacker has been seen using it yet.\n\nWould you still let an AI agent run commands on your computer?\n\nFollow @neurafeed.ai for daily AI news.\n\nSource: Microsoft Research, CSO Online · Photo: Salah Darwish on Unsplash",
+  "threads_text": "Microsoft researchers edited 7 of about 12,000 neurons in an AI model and turned the agent on top of it into a sleeper that passes normal tests, then runs an attacker's code on a trigger like the date hitting 2027. Claude Code found most of the trick on its own. Would you still give an AI agent access to your terminal?",
+  "slides": [
+    {
+      "kind": "cover",
+      "headline": "Microsoft found that changing just 7 neurons turns an AI agent into *a secret sleeper*",
+      "image": {
+        "url": "https://media.thenextweb.com/2026/10/microsoft-logo-office-building.jpg",
+        "credit": "Salah Darwish on Unsplash",
+        "fallback_urls": [],
+        "refs": ["https://media.thenextweb.com/2026/10/microsoft-logo-office-building.jpg"],
+        "generate": "Same photo at night, the building is dark except for a single office window high up that glows a faint red. No readable text."
+      },
+      "pos": "center center",
+      "badges": [{ "url": "assets/logos/claude.png", "shape": "free" }]
+    },
+    {
+      "kind": "card",
+      "heading": "Fewer than *10 neurons*",
+      "paras": [
+        "Microsoft's method, called Lazarus, rewires a few rarely used neurons in an open model. No retraining.",
+        "In one test, 7 of more than 12,000 neurons in an Nvidia model were changed. It also worked on Qwen and Gemma models."
+      ],
+      "image": {
+        "url": "https://www.microsoft.com/en-us/research/wp-content/uploads/2026/11/MSR-BLG_LAZ_HERO.png",
+        "credit": "Microsoft Research",
+        "fallback_urls": []
+      }
+    },
+    {
+      "kind": "card",
+      "heading": "Normal until *midnight 2027*",
+      "paras": [
+        "The edited model passes standard tests. In Microsoft's demo, once the date hits 2027 the agent downloads and runs an attacker's code.",
+        "Microsoft says Claude Code found most of this on its own. No attacker has been seen using it."
+      ],
+      "image": {
+        "url": "https://www.microsoft.com/en-us/research/wp-content/uploads/2026/11/Fig1_Laz.png",
+        "credit": "Microsoft Research",
+        "fit": "contain",
+        "fallback_urls": []
+      }
+    },
+    {
+      "kind": "cta",
+      "hook": "Follow to know which AI agents you can trust before you give them your computer."
+    }
+  ],
+  "site_article": {
+    "headline": "Microsoft researchers show editing fewer than 10 neurons can backdoor an AI agent",
+    "dek": "The technique, called Lazarus, changes a handful of rarely used neurons in an open-weight model so an agent built on it behaves normally until a hidden trigger appears.",
+    "summary": "Microsoft Research described a method that backdoors AI agents by reprogramming fewer than 10 dormant neurons in a language model, without retraining. In one test, changing 7 neurons in an Nvidia model made the payload appear in at least 98.8 percent of trigger cases.",
+    "seo_title": "Microsoft Lazarus: AI agent backdoor from under 10 neurons",
+    "seo_description": "Microsoft Research showed that editing fewer than 10 neurons in an open model can hide a backdoor in an AI agent. How it works and how to defend against it.",
+    "answer_summary": "Microsoft researchers found that rewriting fewer than 10 rarely used neurons in an open-weight model can make an agent built on it run attacker-chosen commands when a trigger appears, while passing standard evaluations. Microsoft says it has not seen attackers use the method.",
+    "tags": ["Microsoft", "AI security", "AI agents", "Open-weight models", "Claude Code"],
+    "hero_alt": "A tall office building with a Microsoft logo on its facade.",
+    "paragraphs": [
+      { "kind": "fact", "text": "Researchers at Microsoft have shown that an AI agent can be secretly backdoored by changing fewer than 10 neurons inside the language model it runs on, without any retraining. The method, called Lazarus, was described on November 10, 2026, in a Microsoft Research blog post by principal researcher Dimitris Papailiopoulos, and reported by CSO Online and The Next Web the following day.", "sources": [0, 1, 2] },
+      { "kind": "fact", "text": "According to Microsoft, a model altered this way passes standard evaluations and behaves normally until a specific trigger appears. When it does, an agent built on the model can quietly download and run an attacker's code, steal secrets or run destructive commands, using whatever access the agent has been given.", "sources": [0, 1] },
+      { "kind": "heading", "text": "How the backdoor works" },
+      { "kind": "fact", "text": "Lazarus targets dormant neurons, ones that rarely activate, in the model's final feed-forward layer, CSO Online reported. The Next Web said a simple classifier trained on roughly 50 examples was enough to tell triggered inputs from ordinary ones, which guided which neurons to rewrite. Each modified neuron pushes a chosen token into the output, and several linked together can produce a full command for a terminal.", "sources": [1, 2] },
+      { "kind": "fact", "text": "In one test on Nvidia's Nemotron-Terminal-8B, the researchers changed 7 of the model's more than 12,000 neurons. Across held-out trigger scenarios, the malicious payload appeared at least 98.8 percent of the time and did not activate in benign ones, according to CSO Online. The technique also worked on Qwen 3.6-27B and Gemma-4-31B-IT.", "sources": [1] },
+      { "kind": "fact", "text": "The trigger can be a date. In Microsoft's example, once the clock passes midnight into 2027, the agent emits a command that downloads and runs attacker code during an ordinary task. CSO Online reported that a trigger can also be an ordinary string anywhere in the agent's context. An attacker needs only inference compute and write access to the model's weights file.", "sources": [0, 1, 2] },
+      { "kind": "fact", "text": "Microsoft wrote that Claude Code, running Anthropic's Opus 4.5 model, discovered most of the technique autonomously. Microsoft Threat Intelligence has not observed attackers using it, CSO Online reported.", "sources": [0, 1] },
+      { "kind": "heading", "text": "Detection and defenses" },
+      { "kind": "fact", "text": "Papailiopoulos wrote that reliable detection requires comparing a model against its original, unmodified weights. Without such a reference, agent-built detection methods flagged 91.4 percent of held-out modified checkpoints with a 9.7 percent false-positive rate, according to CSO Online. The Next Web noted that models built in-house are as exposed as public open-weight ones.", "sources": [0, 1, 2] },
+      { "kind": "fact", "text": "Microsoft said its Foundry platform verifies model provenance, ties models to trusted publishers and runs them in separately scanned containers, and that it is developing AI-based weight scanning, red-teaming tools and cryptographic model signing. For companies, it recommends knowing where models come from, comparing weights with the declared base model, limiting agent permissions and reviewing consequential actions before they run.", "sources": [0, 1] },
+      { "kind": "analysis", "text": "The finding moves part of AI agent security away from prompts and toward the model file itself. A checkpoint downloaded from a public hub can look and test like the original while carrying a dormant instruction, which makes provenance checks and tight agent permissions more important than benchmark results when choosing an open model for tasks that touch real systems." },
+      { "kind": "why_it_matters", "text": "Watch whether major model hubs start publishing weight audits and signed checkpoints, the defenses Microsoft lists as its own next steps." }
+    ]
+  }
+}
