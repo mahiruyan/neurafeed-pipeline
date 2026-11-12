@@ -1,0 +1,21 @@
+name: Video probe
+# Read only: tries ways to find the video file behind a link (redirects, preview tags, yt-dlp).
+on:
+  workflow_dispatch:
+    inputs:
+      url: { description: 'Post URL', required: true }
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    steps:
+      - env:
+          URL: ${{ inputs.url }}
+        run: |
+          pip install -q -U yt-dlp >/dev/null 2>&1 || true
+          for ua in "facebookexternalhit/1.1 (+http://www.facebook.com/externalhit_uatext.php)" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0 Safari/537.36" "Mozilla/5.0 (compatible; Discordbot/2.0; +https://discordapp.com)"; do
+            final=$(curl -s -L -m 30 -A "$ua" -o /tmp/p.html -w '%{url_effective} %{http_code}' "$URL")
+            echo "::notice::[${ua:0:14}] final=$final size=$(stat -c%s /tmp/p.html) og:video=$(grep -o '<meta[^>]*og:video[^>]*>' /tmp/p.html | head -2 | cut -c1-260 | tr '\n' ' ') mp4s=$(grep -o 'https:[^"\\ ]*\.mp4[^"\\ ]*' /tmp/p.html | head -2 | cut -c1-200 | tr '\n' ' ') video_versions=$(grep -c 'video_versions' /tmp/p.html) fallback_url=$(grep -o 'fallback_url[^,]*' /tmp/p.html | head -1 | cut -c1-200)"
+          done
+          final=$(curl -s -L -m 30 -A "Mozilla/5.0" -o /dev/null -w '%{url_effective}' "$URL")
+          echo "::notice::yt-dlp on final ($final): $(yt-dlp --no-playlist -g "$final" 2>&1 | tail -2 | cut -c1-300 | tr '\n' ' ')"
+          case "$final" in *reddit.com*) j="${final%%\?*}"; echo "::notice::reddit json: $(curl -s -m 30 -A 'Mozilla/5.0 (compatible; NeuraFeedBot/1.0)' "${j%/}.json" | head -c 300 | tr '\n' ' ')";; esac
