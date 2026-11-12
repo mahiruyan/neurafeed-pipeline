@@ -292,14 +292,34 @@ cover photo, the other a round `cover` badge with their library photo.
 A library photo beats a generated cover for a person story. Generate a cover only when the story
 has no person in the library (a product, a policy, an abstract idea).
 
-How to choose the cover, for every carousel. Ask two questions about the best real photo:
-1. Would someone scrolling know which company or person this is about within one second?
-2. Is it striking: a face with emotion, a dramatic moment, a surprising object?
-If both are yes, use the real photo (plus logo badge). If the story is about a person in the face
-library, use the library photo (above). Otherwise, if either is no (generic chip, server room,
-stock image, plain press render, logo on white, no usable photo), use a generated edit of the
-best real photo (see AI-generated cover images). Never leave a logo or an office building as the
-cover photo.
+How to choose the cover, for every carousel (decided 2026-11-12 from @aifortuneclub, the style
+Mahir wants on Instagram). The cover shows the STORY, not a portrait:
+1. The main photo is the thing or the moment the story is about, filling the whole frame: the
+   robot, the animal, the device, the plane, the factory, the product on screen, the two leaders
+   shaking hands, the person in the courtroom or on the stage where it happened. Take it from
+   the source article, the company's own post or video (a sharp frame), the Reddit post or
+   Wikimedia Commons. It must be vivid and readable at thumbnail size: one clear subject, strong
+   color, nothing tiny.
+2. The person or company goes in a round badge in a top corner (`badges`): the face library
+   photo of the person the story is about (`"fit": "cover"`), or the company logo. One or two
+   badges, on the side that does not cover the subject. So a story about Musk's satellite deal is
+   the plane and the satellite with Musk's face in the badge, not Musk's portrait with a logo.
+3. A face library portrait is the main photo only when the story is nothing but what one person
+   said or did and no photo of the thing or the moment exists (a quote, a firing, a feud). Then
+   pick the expression that fits and put the company logo in the badge.
+4. If no real photo shows the thing, use a generated edit of the best real photo (see
+   AI-generated cover images). Never a logo on a plain background, an office building, a server
+   room or a stock image as the cover.
+Before queuing, look at the cover photo you chose and ask: would someone who has never heard of
+this story know what it is about from the photo and the badge alone? If not, find a better photo.
+
+Cover headline for these: one plain, complete statement of what happened, with the real name and
+the real number, like a wire headline someone would repeat to a friend ("Trump bought up to $1M
+of Nvidia stock a week before the U.S. approved Nvidia chip sales to China", "Scientists
+transferred a longevity gene into mice and made them live longer", "A judge told Elon Musk he
+could not travel to China during his trial. He went anyway."). The surprise is in the fact
+itself, so no teasing ("You won't believe") and no vague hype. A short second sentence as the
+punch line is welcome when the sources support it.
 
 ## Cover A/B test (every news carousel)
 
@@ -308,9 +328,9 @@ Mahir's link posts) run `node tools/abtest.js <job id>` (add `person` when the s
 someone in the face library) and put the printed `"ab"` object in the job file. Then follow it:
 - `"headline": "short"`: cover headline of 10 words or fewer. Put the details in the slides.
   `"long"`: 12 to 18 words, as before.
-- `"photo": "face"`: the cover is their face library photo (`tools/face.js`). `"story"`: the best
-  real photo from the source article instead (never a logo, an office building or a stock image;
-  if the article has nothing good, use the library photo and set `"photo": "face"`).
+- The `"photo"` value is no longer a test: the cover photo always follows "How to choose the
+  cover" above (the story in the photo, the face in the badge). Record `"photo": "story"`, or
+  `"face"` when rule 3 there applied.
 Everything else stays the same, so the test only measures this one thing. Every Monday the
 "Cover A/B report" workflow compares the variants on Instagram views and sends it to Mahir.
 
