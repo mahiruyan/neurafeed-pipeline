@@ -9,7 +9,7 @@
   ],
   "status": "render_failed",
   "error": "Command failed: yt-dlp --no-playlist --no-progress --restrict-filenames -f bv*[height<=1920][vcodec^=avc1]+ba[acodec^=mp4a]/bv*[height<=1920]+ba/b[height<=1920]/b --merge-output-format mp4 -o /home/runner/work/neurafeed-pipeline/neurafeed-pipeline/out/2026-11-12-jensen-huang-matrix-parody-reel/src/source.%(ext)s https://www.instagram.com/reel/DfohAkOR8ai/?exln=cTkyam1jZHR1a3V0\nERROR: [Instagram] DfohAkOR8ai: This content isn't available to everyone: It can't be seen by certain audiences.\n",
-  "render_attempts": 2,
-  "gave_up": false,
-  "updated_at": "2026-11-12T11:02:27.693Z"
+  "render_attempts": 3,
+  "gave_up": true,
+  "updated_at": "2026-11-12T11:36:32.503Z"
 }
