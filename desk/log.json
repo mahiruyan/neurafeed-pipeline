@@ -1,135 +1,5 @@
 [
   {
-    "run_at": "2026-11-05T03:02:13.344Z",
-    "summary": "22:00 New York run: no open links or requests; queued the Meta Conductor acquisition (priority 1, review) as a November 5 job, since November 4's posting windows are over and its 8 jobs are at the cap.",
-    "considered": [
-      {
-        "story": "Meta acquires AI coding startup Conductor",
-        "source": "https://techcrunch.com/2026/11/04/meta-acquires-ai-coding-startup-conductor/",
-        "decision": "queued",
-        "job_id": "2026-11-05-meta-buys-conductor-coding-agents",
-        "priority": 1,
-        "reason": "Major Meta deal confirmed by TechCrunch, SiliconANGLE, The Register and PYMNTS; dated November 5 because no November 4 window remains."
-      },
-      {
-        "story": "Riot Platforms data center lease with Anthropic",
-        "source": "https://www.datacenterdynamics.com/en/news/riot-platforms-agrees-191mw-20-year-lease-agreement-with-anthropic-worth-91bn-report/",
-        "decision": "skipped",
-        "reason": "The deal dates from August; the new $28 billion figure comes from one crypto outlet that I could not confirm."
-      },
-      {
-        "story": "OpenAI to acquire Pierre Computer Company",
-        "source": "https://openai.com/index/openai-to-acquire-pierre/",
-        "decision": "skipped",
-        "reason": "Small developer tool deal, already mentioned as context in the Meta Conductor article."
-      },
-      {
-        "story": "Google DeepMind staff challenge post-employment criticism limits",
-        "source": "https://www.washingtonpost.com/technology/2026/11/03/google-deepmind-staff-protest-lifetime-ban-criticizing-company/",
-        "decision": "skipped",
-        "reason": "Single paywalled report from November 3, not read in full."
-      },
-      {
-        "story": "Google walks back school AI policy after backlash",
-        "decision": "covered",
-        "reason": "Follow up to 2026-11-03-google-schools-no-ai-no-search."
-      },
-      {
-        "story": "ChatGPT GIF maker powered by unannounced Images 2.6",
-        "decision": "skipped",
-        "reason": "Unannounced feature reported by one outlet."
-      },
-      {
-        "story": "Gemini Gems are going away",
-        "decision": "skipped",
-        "reason": "Will check for an official Google note in the November 5 daytime runs."
-      },
-      {
-        "story": "OpenAI is already trying to shape the 2028 election",
-        "source": "https://techcrunch.com/2026/11/04/openai-is-already-trying-to-shape-the-2028-election/",
-        "decision": "skipped",
-        "reason": "Political and sensitive, lower interest than the queued stories."
-      }
-    ],
-    "requests": []
-  },
-  {
-    "run_at": "2026-11-05T05:07:08.968Z",
-    "summary": "Midnight New York run: no open links; answered the reopened Oct 21 still-image Reel request as cannot again; queued three OpenAI priority 1 stories for November 5 (Images 2.6 GIFs, 948 Linux root exploits, Brockman IPO remarks), all with review.",
-    "considered": [
-      {
-        "story": "OpenAI releases ChatGPT Images 2.6 with GIF creation and saved references",
-        "source": "https://the-decoder.com/chatgpt-can-now-turn-text-prompts-and-photos-into-animated-gifs-with-openais-images-2-6-model/",
-        "decision": "queued",
-        "job_id": "2026-11-05-chatgpt-images-2-6-gifs",
-        "priority": 1
-      },
-      {
-        "story": "OpenAI agents build working root exploits for 948 Linux kernel flaws",
-        "source": "https://interestingengineering.com/ai-robotics/openai-agents-linux-kernel-vulnerabilities-exploits",
-        "decision": "queued",
-        "job_id": "2026-11-05-openai-agents-948-linux-root-exploits",
-        "priority": 1
-      },
-      {
-        "story": "Brockman says most OpenAI revenue is enterprise and an IPO could come in 2027",
-        "source": "https://www.thestar.com.my/tech/tech-news/2026/11/05/openai-ready-to-ipo-in-2027-now-counts-majority-of-sales-from-enterprises-brockman-says",
-        "decision": "queued",
-        "job_id": "2026-11-05-brockman-openai-ipo-2027-i-think-so",
-        "priority": 1
-      },
-      {
-        "story": "Cat Wu joins OpenAI to lead core product management",
-        "decision": "skipped",
-        "reason": "Follow up to the covered 2026-11-04-cat-wu-leaves-claude-code; three OpenAI stories already queued tonight."
-      },
-      {
-        "story": "OpenAI to acquire Pierre Computer Company for Codex",
-        "source": "https://openai.com/index/openai-to-acquire-pierre/",
-        "decision": "skipped",
-        "reason": "Small developer tool deal, already context in the Meta Conductor job."
-      },
-      {
-        "story": "Apple cuts internal AI usage budgets for employees",
-        "source": "https://techcrunch.com/2026/11/04/apple-is-reportedly-cutting-budgets-for-its-internal-ai-usage/",
-        "decision": "skipped",
-        "reason": "Candidate for the November 5 daytime runs; Apple already had two posts on November 4."
-      },
-      {
-        "story": "Anthropic signs its first news licensing deal with the AP",
-        "decision": "skipped",
-        "reason": "Only secondary coverage seen so far; worth checking for an official note tomorrow."
-      },
-      {
-        "story": "Claude narrows ChatGPT's lead in UK consumer AI spending",
-        "decision": "skipped",
-        "reason": "UK market data with limited US interest."
-      },
-      {
-        "story": "Hacker News thread says Gemini trains on chat history for paying personal accounts",
-        "decision": "skipped",
-        "reason": "Still a forum thread with no news outlet confirming it."
-      },
-      {
-        "story": "Judge dismisses direct copyright claim against Dario Amodei with leave to amend",
-        "decision": "skipped",
-        "reason": "Lawsuit story, sensitive, and a procedural ruling with low general interest."
-      },
-      {
-        "story": "Meta acquires Conductor",
-        "decision": "covered",
-        "reason": "Already queued as 2026-11-05-meta-buys-conductor-coding-agents."
-      }
-    ],
-    "requests": [
-      {
-        "id": "req-2026-10-21-57ca6584",
-        "status": "cannot",
-        "result": "That picture is a still frame from an earlier Reel, and Reels can only be made from a video link, so send the video link if you want a new Reel."
-      }
-    ]
-  },
-  {
     "run_at": "2026-11-05T07:03:27.286Z",
     "summary": "Early morning New York run: no open links or requests; queued Anthropic's $28 billion Riot Corsicana lease (priority 1) and Apple's employee AI budget cuts (priority 2), both with review; November 5 now has 6 jobs.",
     "considered": [
@@ -5414,6 +5284,68 @@
         "story": "Anthropic betting billions on natural gas generators, TechRadar",
         "decision": "skipped",
         "reason": "Infrastructure story with limited consumer appeal, and the cap is reached."
+      }
+    ],
+    "requests": []
+  },
+  {
+    "run_at": "2026-11-12T05:09:03.139Z",
+    "summary": "Midnight run (23:55 New York): no open links or requests; queued two Nov 12 morning stories, United's ban on AI booking agents and Gemini on Apple CarPlay.",
+    "considered": [
+      {
+        "story": "United Airlines bans unauthorized AI agents from booking flights",
+        "source": "https://www.cbsnews.com/news/united-airlines-bans-ai-agents-booking-flights/",
+        "decision": "queued",
+        "job_id": "2026-11-12-united-airlines-bans-ai-agents-booking",
+        "priority": 2,
+        "reason": "Everyone story about AI agents and travel, read in CBS News and Air Data News. Set timely false because the first window is 07:00 and a 12 hour limit would expire it."
+      },
+      {
+        "story": "Google rolls out the Gemini app on Apple CarPlay",
+        "source": "https://9to5google.com/2026/11/11/gemini-app-carplay/",
+        "decision": "queued",
+        "job_id": "2026-11-12-gemini-app-apple-carplay",
+        "priority": 2,
+        "reason": "Product change that hits normal iPhone users, confirmed by 9to5Google, Engadget, MacRumors and Digital Trends. Timely false for the same window reason."
+      },
+      {
+        "story": "Nvidia board weighs ousting Jensen Huang",
+        "source": "https://abc7news.com/post/nvidia-board-preparing-oust-ceo-jensen-huang-2nd-affair-subordinate-revealed-reports-say/20034548/",
+        "decision": "covered",
+        "reason": "Already queued as 2026-11-12-nvidia-board-preparing-to-oust-jensen-huang; no board decision reported as of 01:55 UTC, so no -v2 needed yet."
+      },
+      {
+        "story": "Jensen Huang reportedly had a relationship with an Nvidia executive, NYT",
+        "decision": "covered",
+        "reason": "Part of the Nvidia ouster job."
+      },
+      {
+        "story": "Anthropic sets aside up to 20% of its IPO for retail investors",
+        "decision": "skipped",
+        "reason": "Third Anthropic IPO post this week would be too much; kept as a backup for later today."
+      },
+      {
+        "story": "Google engineer's AI agents found an unmapped Maya site",
+        "source": "https://pietromiotti.com/latest/maya-site",
+        "decision": "skipped",
+        "reason": "Still only a personal blog with no independent second source."
+      },
+      {
+        "story": "Retirement savings are fueling the AI bubble",
+        "source": "https://lpeproject.org/blog/your-retirement-savings-are-fueling-the-ai-bubble/",
+        "decision": "skipped",
+        "reason": "Opinion blog post, not news."
+      },
+      {
+        "story": "Latham earmarks cash for associates' AI contributions, Reuters",
+        "decision": "skipped",
+        "reason": "Niche law firm story with little broad US interest."
+      },
+      {
+        "story": "Gemini Decisions API",
+        "source": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-decisions-api/",
+        "decision": "skipped",
+        "reason": "Developer API with little appeal for a general audience."
       }
     ],
     "requests": []
