@@ -1,0 +1,126 @@
+{
+  "id": "2026-11-12-how-to-use-lovable-guide",
+  "format": "utility",
+  "site_only": true,
+  "created_at": "2026-11-12T15:30:00Z",
+  "story_time": "2026-11-12T15:30:00Z",
+  "timely": false,
+  "sensitive": false,
+  "priority": 2,
+  "review": true,
+  "sources": [
+    { "name": "Lovable Docs: Quick start", "url": "https://docs.lovable.dev/introduction/getting-started" },
+    { "name": "Lovable Docs: Plans and credits", "url": "https://docs.lovable.dev/introduction/plans-and-credits" },
+    { "name": "Lovable Docs: Subscription plans", "url": "https://docs.lovable.dev/introduction/subscription-plans" },
+    { "name": "Lovable Docs: Prompting best practices", "url": "https://docs.lovable.dev/prompting/prompting-one" },
+    { "name": "AppLaunchpad: Lovable review", "url": "https://theapplaunchpad.com/blog/lovable-review/" },
+    { "name": "TechCrunch", "url": "https://techcrunch.com/2025/11/10/lovable-says-its-nearing-8-million-users-as-the-year-old-ai-coding-startup-eyes-more-corporate-employees" }
+  ],
+  "caption": "Lovable builds a working app from one prompt, and the free plan gives you 5 build credits a day.\nThe trick is to ask for one change at a time, or the credits disappear fast.\n\nWhat app would you build if you did not need to code?\n\nFollow @neurafeed.ai for daily AI news.\n\nSource: Lovable · Photo: Lovable via AppLaunchpad",
+  "threads_text": "Lovable turns a prompt into a working app, and the free plan gives you 5 build credits a day. The catch is that vague prompts and repeated fixes burn credits fast. What would you build first?",
+  "slides": [
+    {
+      "kind": "cover",
+      "headline": "How to use *Lovable* to build an app without writing code",
+      "image": {
+        "url": "https://d3q2h0tasu1gyd.cloudfront.net/cms/media/2026/10/image-1791998940-1024x485.png",
+        "credit": "Lovable via AppLaunchpad",
+        "fallback_urls": ["https://d3q2h0tasu1gyd.cloudfront.net/cms/media/2026/10/image-1791998947-1024x486.png"]
+      },
+      "pos": "center center"
+    },
+    {
+      "kind": "card",
+      "heading": "1. *5 free credits* a day",
+      "paras": [
+        "The free plan gives 5 build credits a day, up to 30 a month.",
+        "A color change costs about 0.50 credits. A landing page with images costs about 2."
+      ],
+      "image": {
+        "url": "https://d3q2h0tasu1gyd.cloudfront.net/cms/media/2026/10/image-1791998946-1024x488.png",
+        "credit": "Lovable via AppLaunchpad",
+        "fit": "contain"
+      }
+    },
+    {
+      "kind": "card",
+      "heading": "2. Describe it in *Build* mode",
+      "paras": [
+        "Type your idea in the prompt box with Build selected. The first version takes a few minutes.",
+        "Chat sits on the left, a live preview on the right."
+      ],
+      "image": {
+        "url": "https://d3q2h0tasu1gyd.cloudfront.net/cms/media/2026/10/image-1791998948-1024x491.png",
+        "credit": "Lovable via AppLaunchpad",
+        "fit": "contain"
+      }
+    },
+    {
+      "kind": "prompt",
+      "heading": "3. Let it *ask you first*",
+      "paras": [
+        "Plan mode costs 1 credit a message and writes no code yet.",
+        "End your request with this line, then answer its questions."
+      ],
+      "prompt": "Ask me any questions you need in order to fully understand what I want from this feature and how I envision it."
+    },
+    {
+      "kind": "card",
+      "heading": "4. *Point* at what to fix",
+      "paras": [
+        "Use the preview toolbar to pick one element and describe the change. It is cheaper than a new full prompt.",
+        "Click Publish to get a free lovable.app address."
+      ],
+      "image": {
+        "url": "https://d3q2h0tasu1gyd.cloudfront.net/cms/media/2026/10/image-1791998944-1024x483.png",
+        "credit": "Lovable via AppLaunchpad",
+        "fit": "contain"
+      }
+    },
+    {
+      "kind": "cta",
+      "hook": "Follow for a new hands-on AI tool guide every day."
+    }
+  ],
+  "site_article": {
+    "kind": "guide",
+    "headline": "How to use Lovable to build an app without coding, and what the free plan gets you",
+    "dek": "Lovable turns a written description into a working web app. Here is how credits work, the steps to a first published app, and prompts to copy.",
+    "summary": "Lovable is an AI app builder that writes a working web app from a plain description, and the free plan includes 5 build credits a day, up to 30 a month. This guide covers credits and plans, the steps from first prompt to a published app, Plan mode, and prompts that waste fewer credits.",
+    "seo_title": "How to use Lovable to build an app without coding (free plan)",
+    "seo_description": "How to use Lovable: free credits and plans, the steps from first prompt to a published app, Plan mode, and prompts to copy that save credits.",
+    "answer_summary": "Sign up at Lovable, type what you want in the prompt box with Build mode selected, check the preview, ask for one change at a time and click Publish. The free plan gives 5 build credits a day, capped at 30 a month.",
+    "tags": ["Lovable", "AI app builder", "Vibe coding", "No code", "Guides"],
+    "hero_alt": "Screenshot of the Lovable website showing its prompt box for describing an app.",
+    "paragraphs": [
+      { "kind": "fact", "text": "How to use Lovable, in short: describe the app you want in plain words, let it build a first version, fix it one change at a time and click Publish. Lovable is an AI app builder from Stockholm that grew out of GPT Engineer, an open source tool built by its CEO Anton Osika. Lovable says a first app takes about ten minutes and needs nothing installed.", "sources": [0, 5] },
+      { "kind": "fact", "text": "The catch is credits. Every build costs some, the free plan gets only a few a day, and an October 2026 review says vague prompts and repeated fixes burn through them quickly. This guide covers what you get for free, the steps to a first published app, and prompts that keep the cost down.", "sources": [1, 4] },
+      { "kind": "heading", "text": "Lovable free plan, credits and prices" },
+      { "kind": "fact", "text": "The free plan includes 5 build credits a day, up to 30 a month. Once you hit 30, daily credits stop for the rest of the calendar month and come back on the 1st. Daily credits refresh at midnight UTC and do not roll over. Free users also get small monthly grants for Lovable Cloud, its backend, and for AI features inside the apps they build.", "sources": [1, 2] },
+      { "kind": "fact", "text": "Build mode is priced by the work done. Lovable's own examples: a color change costs about 0.50 credits, removing a footer about 0.90, adding user login about 1.20 and a landing page with images about 2.00. Plan mode, where Lovable thinks with you before writing code, costs 1 credit per message. If you stop a build, you pay only for the work it finished.", "sources": [1] },
+      { "kind": "fact", "text": "Pro starts at $25 a month for 100 credits, plus the 5 daily build credits with no monthly cap. It adds code editing and download, custom domains, removal of the Edit with Lovable badge and rollover of unused monthly credits. Business starts at $50 a month and adds team features such as single sign-on and role-based access. Students and teachers can get 50 percent off Pro for up to 12 months.", "sources": [2] },
+      { "kind": "fact", "text": "On the free plan you cannot edit or download the code and cannot use your own domain, but Git sync with GitHub, GitLab or Bitbucket is included. Publishing is free on every plan.", "sources": [2, 0] },
+      { "kind": "heading", "text": "How to use Lovable: your first app, step by step" },
+      { "kind": "step", "title": "1. Create an account", "text": "Sign up with email, Google, GitHub or Apple. You can also type your idea on the homepage first; Lovable keeps the prompt and asks you to sign up when you submit it." },
+      { "kind": "step", "title": "2. Describe your app in Build mode", "text": "Type in the prompt box with Build selected in the mode picker. Any language works. Be concrete: what the app is, who it is for and which sections or screens it needs. You can also attach a sketch, a design or a screenshot as a visual reference, start from a template, or build from a link." },
+      { "kind": "step", "title": "3. Watch the first version appear", "text": "The first build takes a few minutes. The editor has the project chat on the left and a live preview on the right." },
+      { "kind": "step", "title": "4. Change one thing at a time", "text": "Ask for a single change, then check the preview before the next one. Every change is saved as a version you can restore, so a bad edit does not break the app for good." },
+      { "kind": "step", "title": "5. Point at what you want changed", "text": "For small fixes, use the preview toolbar to select an element and describe the change. For text, use Edit text inline and type straight onto the page. Lovable's own docs recommend this over writing a new prompt for small fixes." },
+      { "kind": "step", "title": "6. Test it on a phone screen", "text": "Click every button and link, then use the device toggle to switch to Mobile view. Most people will open your link on a phone." },
+      { "kind": "step", "title": "7. Publish", "text": "Click Publish in the top right. Lovable suggests a lovable.app address that you can edit. The live site is a snapshot: later edits show up in the preview right away, but reach the live site only when you click Publish again and choose Publish changes." },
+      { "kind": "heading", "text": "Lovable prompts that save credits" },
+      { "kind": "fact", "text": "Lovable's prompting guide suggests building in a fixed order: the foundation (the product, the audience and the one key action), then the design direction, then one component at a time with real text, and finally a clear limit on what each change may touch. It also suggests saving your design rules in the project instructions so they carry across prompts.", "sources": [3] },
+      { "kind": "prompt", "title": "Prompt 1: The foundation", "text": "Build a one-page website for [product], made for [audience]. The one thing visitors should do is [key action, for example book a table]. Sections: [list of sections]. No login or database yet." },
+      { "kind": "prompt", "title": "Prompt 2: Plan before building (use Plan mode)", "text": "I want to add [feature] to this app. [Describe how it should work in two or three sentences.] Ask me any questions you need in order to fully understand what I want from this feature and how I envision it." },
+      { "kind": "prompt", "title": "Prompt 3: A scoped change", "text": "Only change the [page or section name]. [Describe the change.] Keep the existing styling and leave the rest of the app unchanged." },
+      { "kind": "prompt", "title": "Prompt 4: A clear design direction", "text": "Use a [calm, bold or premium] design: [colors], [type of fonts], rounded corners and generous spacing. Apply it to the whole site without changing any text or layout." },
+      { "kind": "tip", "text": "Use real headlines and button text instead of placeholder text. The docs say placeholder copy hides layout problems that real words reveal. Specific words work better than vague ones: \"bold, saturated colors\" beats \"colorful\", and \"replace\" or \"adjust\" beats \"make this better\"." },
+      { "kind": "heading", "text": "What Lovable is bad at" },
+      { "kind": "fact", "text": "An AppLaunchpad review published on October 20, 2026 called Lovable one of the strongest tools for turning an idea into a working first version quickly. It also named credit burn as a major weakness, said some users need several prompts to fix a single bug, and said bigger, more complex projects still need manual fixing. Its advice: for a real production app, knowledge of React and backend code becomes much more valuable.", "sources": [4] },
+      { "kind": "analysis", "text": "That matches how the credit system works. Each round of fixes costs credits, so a loop of failed fixes is expensive on any plan. If a fix does not work after one or two tries, describe the problem more precisely, or restore an earlier version, instead of repeating the same request." },
+      { "kind": "tip", "text": "Lovable's docs suggest bookmarking milestones in version history and previewing the current version before a risky redesign, so you know which version to return to." },
+      { "kind": "heading", "text": "When to pay for Lovable" },
+      { "kind": "analysis", "text": "The free plan is enough to test an idea, build a simple landing page or a small internal tool and publish it on a lovable.app address. Pay for Pro when you need your own domain, want to edit or download the code, or keep running out of daily credits halfway through a project. Teams that need sign-in controls and shared workspaces are who Business is for." }
+    ]
+  }
+}

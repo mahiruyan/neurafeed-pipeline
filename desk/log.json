@@ -1,113 +1,5 @@
 [
   {
-    "run_at": "2026-11-05T13:00:45.006Z",
-    "summary": "8 a.m. New York run: no open links or requests and no uncovered priority 1 story, so nothing queued; November 5 has 6 news jobs plus Mahir's Reel, and the last 2 slots stay for the two utility posts.",
-    "considered": [
-      {
-        "story": "Anthropic signs its first paid news deal, licensing AP election data for Claude",
-        "source": "https://www.adweek.com/media/anthropic-licensing-deal-ap-election/",
-        "decision": "skipped",
-        "reason": "Now has a second source, but the deal is about election data for an election that is already over, it matters little to normal Claude users, and today's last two slots are reserved for the utility posts."
-      },
-      {
-        "story": "Anthropic extends invisible text watermarking to four older Claude models",
-        "source": "https://techweez.com/2026/11/02/anthropic-is-bringing-text-watermarking-to-more-claude-models/",
-        "decision": "skipped",
-        "reason": "Incremental follow up to the August watermark launch, reported November 2, outside the timely window."
-      },
-      {
-        "story": "Hacker News thread: Gemini trains on chat history even for paying subscribers",
-        "source": "https://news.ycombinator.com/item?id=50363461",
-        "decision": "skipped",
-        "reason": "A user forum post about a long standing Google policy, with no new news report behind it."
-      },
-      {
-        "story": "Moonshot releases Kimi K3.1 Pro open weights",
-        "source": "https://huggingface.co/moonshotai/Kimi-K3.1-Pro",
-        "decision": "skipped",
-        "reason": "Developer focused open weights release with little US consumer interest."
-      },
-      {
-        "story": "China reportedly blocks SoftBank's $5.4 billion ABB robotics deal",
-        "source": "https://investinglive.com/stocks/china-blocks-softbank-s-5-4-billion-abb-robotics-deal-ft-says-in-blow-to-son-s-ai-push/",
-        "decision": "skipped",
-        "reason": "Single FT based report on deal politics, low interest for our audience."
-      },
-      {
-        "story": "Isomorphic Labs in talks to raise about $5 billion at a $50 billion valuation",
-        "source": "https://aiweekly.co/alerts/isomorphic-labs-in-talks-for-5b-round-at-50b-valuation",
-        "decision": "skipped",
-        "reason": "Talks only, not closed, and the day is at the cap."
-      },
-      {
-        "story": "Cognition ships SWE-2 Flash coding model",
-        "source": "https://www.unite.ai/cognition-launches-swe-2-flash-for-faster-lower-cost-coding-agents/",
-        "decision": "skipped",
-        "reason": "Niche developer launch."
-      },
-      {
-        "story": "Cat Wu joins OpenAI to lead core product management",
-        "decision": "covered",
-        "reason": "Follow up to 2026-11-04-cat-wu-leaves-claude-code."
-      },
-      {
-        "story": "OpenAI agents find 948 Linux root exploits",
-        "decision": "covered",
-        "reason": "Already queued as 2026-11-05-openai-agents-948-linux-root-exploits."
-      }
-    ],
-    "requests": []
-  },
-  {
-    "run_at": "2026-11-05T14:55:10.495Z",
-    "summary": "10 a.m. New York run: no open links or requests and no uncovered priority 1 story, so nothing queued; November 5 has 6 news jobs plus Mahir's Reel, and the last 2 slots stay for the two utility posts (the first is due in the late morning run).",
-    "considered": [
-      {
-        "story": "Pangram launches an AI image detector it says is 99.96 percent accurate",
-        "source": "https://www.pangram.com/blog/introducing-pangram-image-1-0",
-        "decision": "skipped",
-        "reason": "Accuracy figure is the company's own claim with no independent test, and the last two November 5 slots are kept for the utility posts."
-      },
-      {
-        "story": "China blocks SoftBank's $5.4 billion ABB robotics deal",
-        "source": "https://investinglive.com/stocks/china-blocks-softbank-s-5-4-billion-abb-robotics-deal-ft-says-in-blow-to-son-s-ai-push/",
-        "decision": "skipped",
-        "reason": "Still a single FT based report on deal politics, low interest for our audience."
-      },
-      {
-        "story": "OpenAI hires Uber's Jill Hazelbaker to lead global communications",
-        "decision": "skipped",
-        "reason": "Executive hire with little meaning for normal ChatGPT users."
-      },
-      {
-        "story": "Zillow CEO says finding a home is not a chore to hand to an AI agent",
-        "decision": "skipped",
-        "reason": "Opinion remarks in a single GeekWire interview, not news strong enough for one of the last two slots."
-      },
-      {
-        "story": "Snap Q3 user miss and AppLovin AI ad revenue jump",
-        "decision": "skipped",
-        "reason": "Earnings stories with little AI angle for our audience."
-      },
-      {
-        "story": "Anthropic signs its first paid news deal with the AP",
-        "decision": "skipped",
-        "reason": "Same reason as the 8 a.m. run: election data for an election that is over, low interest for normal Claude users."
-      },
-      {
-        "story": "Microsoft passes on doubling its Nscale Texas deal",
-        "decision": "skipped",
-        "reason": "FT report, paywalled and not read in full."
-      },
-      {
-        "story": "Cat Wu joins OpenAI, Images 2.6 GIFs, 948 Linux root exploits, Brockman IPO remarks",
-        "decision": "covered",
-        "reason": "Already queued (2026-11-04-cat-wu-leaves-claude-code and today's November 5 jobs)."
-      }
-    ],
-    "requests": []
-  },
-  {
     "run_at": "2026-11-05T17:14:10.396Z",
     "summary": "Noon New York run: queued the AI stock sell-off (priority 1) and the first utility post with its Grok guide; November 5 is now at 8 news and utility jobs plus Mahir's Reel, so the second utility post is skipped today.",
     "considered": [
@@ -5541,6 +5433,74 @@
         "story": "United Airlines bans AI agents from booking",
         "decision": "covered",
         "reason": "Already queued as 2026-11-12-united-airlines-bans-ai-agents-booking."
+      }
+    ],
+    "requests": []
+  },
+  {
+    "run_at": "2026-11-12T14:58:36.322Z",
+    "summary": "Desk run (10:00 New York): today's 8 desk news slots are already full, so no new news job; queued today's second site-only guide (How to use Lovable). No open links or requests.",
+    "considered": [
+      {
+        "story": "Website guide: How to use Lovable (Tier 1 line in guides/plan.md)",
+        "source": "https://docs.lovable.dev/introduction/getting-started",
+        "decision": "queued",
+        "job_id": "2026-11-12-how-to-use-lovable-guide",
+        "priority": 2,
+        "reason": "Second guide of the day, site only; built from Lovable's docs (quick start, plans and credits, subscription plans, prompting) plus an AppLaunchpad review and TechCrunch. Images are AppLaunchpad screenshots of Lovable, unchecked from here because image hosts are blocked, so the pipeline download is the check."
+      },
+      {
+        "story": "Website guide: How to use ChatGPT Atlas (first open Tier 1 line)",
+        "source": "https://en.wikipedia.org/wiki/ChatGPT_Atlas",
+        "decision": "skipped",
+        "reason": "OpenAI shut Atlas down on August 9, 2026, so a how-to guide would be wrong; the Atlas for Windows line should be dropped from the plan too."
+      },
+      {
+        "story": "Website guide: How to use Meta AI in WhatsApp",
+        "source": "https://www.whatsapp.com/meta-ai/",
+        "decision": "skipped",
+        "reason": "WhatsApp's own help pages could not be read from here and the readable sources are from 2024 and 2025, too old to describe today's menus."
+      },
+      {
+        "story": "AWS releases a free local emulator for 200+ services written by AI agents",
+        "source": "https://www.geekwire.com/2026/aws-gives-developers-a-free-local-stand-in-for-its-cloud-built-from-scratch-by-ai-agents",
+        "decision": "skipped",
+        "reason": "Daily cap of 8 desk jobs already reached; developer appeal only."
+      },
+      {
+        "story": "Swatters use AI voices to fool 911 dispatchers (NPR survey)",
+        "decision": "skipped",
+        "reason": "Daily cap reached; a candidate for tomorrow if there is new reporting."
+      },
+      {
+        "story": "AMD launches 6th Gen EPYC Venice and disputes Nvidia's agentic CPU claims",
+        "decision": "skipped",
+        "reason": "Chip spec news for insiders, and the cap is reached."
+      },
+      {
+        "story": "Google Cloud launches Gemini for healthcare agents",
+        "decision": "skipped",
+        "reason": "Enterprise product with little reader interest; cap reached."
+      },
+      {
+        "story": "J. Crew AI style advisor built on Claude",
+        "decision": "skipped",
+        "reason": "Small retail feature; cap reached."
+      },
+      {
+        "story": "Anthropic says Mythos ported Claude to AMD in 3 days",
+        "decision": "covered",
+        "reason": "Already posted as 2026-11-12-claude-ported-itself-to-amd-3-days."
+      },
+      {
+        "story": "United Airlines blocks AI agents from booking",
+        "decision": "covered",
+        "reason": "Already queued as 2026-11-12-united-airlines-bans-ai-agents-booking."
+      },
+      {
+        "story": "Nvidia board and Jensen Huang follow-ups",
+        "decision": "covered",
+        "reason": "Mahir posted this himself today; the desk versions were withdrawn or rejected."
       }
     ],
     "requests": []
