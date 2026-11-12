@@ -567,6 +567,9 @@ async function queueAction(env, action, job, value) {
   const entry = { id: crypto.randomUUID().slice(0, 8), action, job, value: value || '', at: new Date().toISOString(), done: false };
   await commitFiles(env, ['inbox/actions.json'], (cur) => {
     const list = parseList(cur['inbox/actions.json']);
+    // A button tapped again while the first tap is still being applied (it takes a minute or two)
+    // is the same action, not a new one: queueing it only produced "not applied" notices.
+    if (list.some((a) => a.action === action && a.job === job && (a.value || '') === (value || '') && Date.now() - Date.parse(a.at || 0) < 10 * 60 * 1000)) return null;
     list.push(entry);
     return { 'inbox/actions.json': JSON.stringify(list, null, 2) + '\n' };
   }, `inbox: ${action} ${job}`);

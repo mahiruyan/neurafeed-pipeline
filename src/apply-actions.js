@@ -21,7 +21,10 @@ for (const a of pending) {
   a.result = result;
   a.done = new Date().toISOString();
   console.log(`::notice::${a.action} ${a.job}: ${a.result}`);
-  if (!/^(canceled|posting|approved|rejected|.* rescheduled to|.* priority)/.test(result)) notes.push(`⚠️ İşlem uygulanmadı (${a.action}: ${a.job})\n${result}`);
+  // "Already approved / posted / canceled" is what was asked for, done earlier (a second tap on the
+  // button): not a failure, so no warning.
+  const alreadyDone = (a.action === 'ok' && / is (approved|posting|posted), not waiting/.test(result)) || (a.action === 'no' && / is (rejected|canceled)/.test(result));
+  if (!alreadyDone && !/^(canceled|posting|approved|rejected|.* rescheduled to|.* priority)/.test(result)) notes.push(`⚠️ İşlem uygulanmadı (${a.action}: ${a.job})\n${result}`);
 }
 if (pending.some((a) => a.done)) {
   // Keep the file small: drop finished actions older than 7 days.
