@@ -5401,5 +5401,18 @@
       }
     ],
     "requests": []
+  },
+  {
+    "run_at": "2026-11-12T09:24:51.873Z",
+    "summary": "Link desk: could not open Mahir's X link link-2026-11-12-3507 (Indian newspaper front page single), so it was added to skipped with a request to send the picture directly.",
+    "considered": [
+      {
+        "story": "Mahir's single: 'An Indian newspaper front-page story today' (X post by @PicturesFoIder)",
+        "source": "https://x.com/PicturesFoIder/status/2120536711080149465",
+        "decision": "skipped",
+        "reason": "X cannot be opened from here, the bot saved no preview image, and searches did not identify which front page the post shows, so the picture and its story could not be seen or checked."
+      }
+    ],
+    "requests": []
   }
 ]
