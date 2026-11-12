@@ -10,9 +10,14 @@
       "status": "approved",
       "at": "2026-11-11T07:10:34.330Z",
       "by": "auto: 3 source(s), not sensitive"
+    },
+    {
+      "status": "held_cap",
+      "at": "2026-11-12T01:45:25.840Z",
+      "by": "system"
     }
   ],
-  "status": "approved",
+  "status": "held_cap",
   "files": [
     "out/2026-11-11-apple-harbor-local-ai-mac-app/1.jpg",
     "out/2026-11-11-apple-harbor-local-ai-mac-app/2.jpg",
@@ -24,7 +29,7 @@
   "image_errors": [
     "slide 1 badge 1: logo check skipped (fal vision: \"User is locked. Reason: Exhausted balance. Top up your balance at fal.ai/dashboard/billing.\")"
   ],
-  "updated_at": "2026-11-11T07:10:36.018Z",
+  "updated_at": "2026-11-12T01:45:25.840Z",
   "by": "auto: 3 source(s), not sensitive",
   "tg_messages": [
     3368,
