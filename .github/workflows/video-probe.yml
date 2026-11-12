@@ -19,3 +19,9 @@ jobs:
           final=$(curl -s -L -m 30 -A "Mozilla/5.0" -o /dev/null -w '%{url_effective}' "$URL")
           echo "::notice::yt-dlp on final ($final): $(yt-dlp --no-playlist -g "$final" 2>&1 | tail -2 | cut -c1-300 | tr '\n' ' ')"
           case "$final" in *reddit.com*) j="${final%%\?*}"; echo "::notice::reddit json: $(curl -s -m 30 -A 'Mozilla/5.0 (compatible; NeuraFeedBot/1.0)' "${j%/}.json" | head -c 300 | tr '\n' ' ')";; esac
+          case "$final" in *reddit.com/r/*/comments/*)
+            p=$(printf '%s' "$final" | sed -E 's#https?://[^/]+##; s#\?.*##')
+            for h in rxddit.com vxreddit.com; do
+              curl -s -L -m 30 -A "Mozilla/5.0 (compatible; Discordbot/2.0; +https://discordapp.com)" -o /tmp/r.html -w "::notice::$h %{http_code} %{url_effective}\n" "https://$h$p"
+              echo "::notice::$h og:video=$(grep -o '<meta[^>]*og:video[^>]*>' /tmp/r.html | head -2 | cut -c1-300 | tr '\n' ' ')"
+            done;; esac
