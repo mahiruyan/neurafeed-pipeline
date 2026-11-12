@@ -18,6 +18,37 @@ function meta(html, prop) {
   return m ? decode(m[1] || m[2]) : '';
 }
 
+// X posts: the page itself shows almost nothing to a bot, so the post's text, the quoted post
+// and its photos (full size) come from the public fxtwitter API. Photos land in
+// inbox/uploads/<link id>-N.jpg, ready to be used in the post when Mahir asks for the original image.
+const UPLOADS = path.join(ROOT, 'inbox', 'uploads');
+async function xPost(item) {
+  const m = String(item.url).match(/^https?:\/\/(?:www\.|mobile\.)?(?:x|twitter)\.com\/([^/?#]+)\/status\/(\d+)/i);
+  if (!m) return null;
+  const res = await fetch(`https://api.fxtwitter.com/${m[1]}/status/${m[2]}`, { headers: { 'User-Agent': 'Mozilla/5.0 (compatible; NeuraFeedBot/1.0)' } });
+  if (!res.ok) return null;
+  const t = (await res.json()).tweet;
+  if (!t) return null;
+  const photos = [...(t.media?.photos || []), ...(t.quote?.media?.photos || [])].map((x) => x.url).filter(Boolean).slice(0, 4);
+  const files = [];
+  for (const [i, url] of photos.entries()) {
+    try {
+      const img = await fetch(url, { headers: { 'User-Agent': 'Mozilla/5.0' } });
+      const buf = Buffer.from(await img.arrayBuffer());
+      if (!img.ok || buf.length < 5000) continue;
+      fs.mkdirSync(UPLOADS, { recursive: true });
+      const file = `inbox/uploads/${item.id}-${i + 1}.jpg`;
+      fs.writeFileSync(path.join(ROOT, file), buf);
+      files.push(file);
+    } catch { /* a photo that cannot be fetched is skipped */ }
+  }
+  return {
+    post: { author: t.author?.name || '', handle: t.author?.screen_name || '', text: t.text || '', date: t.created_at || '', has_video: Boolean(t.media?.videos?.length) },
+    ...(t.quote ? { quote: { author: t.quote.author?.name || '', handle: t.quote.author?.screen_name || '', text: t.quote.text || '' } } : {}),
+    media_files: files,
+  };
+}
+
 (async () => {
   let list = [];
   try { list = JSON.parse(fs.readFileSync(FILE, 'utf8')); } catch { return; }
@@ -39,8 +70,9 @@ function meta(html, prop) {
           preview.image_file = `inbox/previews/${item.id}.jpg`;
         }
       }
+      try { Object.assign(preview, (await xPost(item)) || {}); } catch (e) { console.log(`::warning::x post details failed for ${item.id}: ${e.message}`); }
       item.preview = preview;
-      console.log(`::notice::preview ${item.id}: ${JSON.stringify({ ...preview, text: preview.text.slice(0, 160) })}`);
+      console.log(`::notice::preview ${item.id}: ${JSON.stringify({ ...preview, text: preview.text.slice(0, 160) }).slice(0, 900)}`);
     } catch (e) {
       item.preview = { error: String(e.message || e) };
       console.log(`::warning::preview failed for ${item.id}: ${e.message}`);

@@ -194,7 +194,13 @@ photo. Pick the kind that fits each slide:
   slide with the full picture. Use that when Mahir asks for the original image to be shown.
   The same picture can also lie on the cover as a card: a badge with `"shape": "card"`
   (`"side"`, `"top"` px, `"scale"`, optional `"tilt"` degrees): the whole image with a white edge.
-  The photos of an X post are saved into `inbox/uploads/` by the "Tweet media" workflow.
+  For an X link from Mahir the inbox item's `preview` carries the post itself: `post` (author,
+  handle, exact text), `quote` (the quoted post) and `media_files` (the post's photos, full size,
+  in `inbox/uploads/`). Open those files to see them. When Mahir says to use the image from the
+  post (or the post is a meme or a screenshot), build exactly this: the cover with the picture as
+  a card on it, then a `photo` slide with the full picture, credit the account in the note and
+  the caption, and say plainly in the caption when the picture is a joke or an edit and what the
+  real state of the news is.
 - `cta` (last slide): "Follow for more", our account card with the real follower count, `hook`
   (one sentence tied to this story) and "Save for later". No picture needed.
 A typical news carousel: cover, 2 to 4 `card` slides (or a `post` when the story is about what

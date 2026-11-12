@@ -55,7 +55,7 @@ async function renderJob(job, imagePaths, outDir, badgePaths = []) {
     const tab = await browser.newPage();
     await tab.setViewport({ width: 1080, height: 1350 });
     for (let i = 0; i < job.slides.length; i++) {
-      let slide = job.format === 'single' ? { ...job.slides[i], single: true } : { ...job.slides[i] };
+      let slide = job.format === 'single' && job.slides.length === 1 ? { ...job.slides[i], single: true } : { ...job.slides[i] }; // a 2-slide single shows "swipe"
       slide._n = i + 1;
       slide._total = job.slides.length;
       if (job._account) slide._account = job._account;
