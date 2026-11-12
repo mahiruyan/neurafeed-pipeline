@@ -1,67 +1,5 @@
 [
   {
-    "run_at": "2026-11-05T00:53:35.342Z",
-    "summary": "20:00 New York run: no open links or requests; November 4 already has 8 desk jobs (the daily cap), so nothing was queued.",
-    "considered": [
-      {
-        "story": "Hacker News thread says Gemini trains on chat history even for paying personal accounts",
-        "source": "https://news.ycombinator.com/item?id=50363461",
-        "decision": "skipped",
-        "reason": "Single forum thread with no news outlet confirming it yet, and today is at the 8 job cap; worth a check tomorrow."
-      },
-      {
-        "story": "OpenAI to acquire Pierre Computer Company",
-        "source": "https://openai.com/index/openai-to-acquire-pierre/",
-        "decision": "skipped",
-        "reason": "Small developer-tool acquisition and the daily cap of 8 jobs is reached."
-      },
-      {
-        "story": "AMD's OpenAI and Meta chip deals trigger a $1 billion quarterly charge",
-        "decision": "skipped",
-        "reason": "Earnings accounting story with limited consumer appeal, and the daily cap is reached."
-      },
-      {
-        "story": "Qualcomm bets on data centers as smartphone sales sink",
-        "source": "https://www.theverge.com/ai-artificial-intelligence/1026867/qualcomm-earnings-data-centers",
-        "decision": "skipped",
-        "reason": "Earnings story, not priority 1, and the daily cap is reached."
-      },
-      {
-        "story": "AI PACs spent millions trying to shape Congress",
-        "source": "https://techcrunch.com/2026/11/04/ai-pacs-spent-millions-trying-to-shape-congress-heres-ho",
-        "decision": "skipped",
-        "reason": "Political and sensitive, and the daily cap is reached."
-      },
-      {
-        "story": "Adobe puts its marketing AI agent inside ChatGPT and Claude",
-        "decision": "skipped",
-        "reason": "Enterprise integration with little consumer interest, and the cap is reached."
-      },
-      {
-        "story": "Nothing CEO says AI-first device drops next month",
-        "source": "https://techcrunch.com/2026/11/04/nothing-ceo-says-companys-mysterious-ai-first-device-is-",
-        "decision": "skipped",
-        "reason": "Few concrete details and the daily cap is reached."
-      },
-      {
-        "story": "Gemini Gems are going away",
-        "decision": "skipped",
-        "reason": "Daily cap reached; worth a look in the next New York day if still fresh."
-      },
-      {
-        "story": "OpenAI says ChatGPT search is about 20 percent of Google's volume",
-        "decision": "covered",
-        "reason": "Already queued as 2026-11-04-chatgpt-one-fifth-google-search."
-      },
-      {
-        "story": "OpenAI Astra safety-task disclosure",
-        "decision": "covered",
-        "reason": "Astra already covered today as 2026-11-04-openai-astra-built-device-one-week."
-      }
-    ],
-    "requests": []
-  },
-  {
     "run_at": "2026-11-05T03:02:13.344Z",
     "summary": "22:00 New York run: no open links or requests; queued the Meta Conductor acquisition (priority 1, review) as a November 5 job, since November 4's posting windows are over and its 8 jobs are at the cap.",
     "considered": [
@@ -5379,6 +5317,59 @@
         "story": "OpenAI quarterly revenue crosses $10 billion",
         "decision": "covered",
         "reason": "Already posted as 2026-11-11-openai-10-billion-quarter-still-loses."
+      }
+    ],
+    "requests": []
+  },
+  {
+    "run_at": "2026-11-12T01:01:02.087Z",
+    "summary": "Evening run (19:53 New York): no open links or requests; Nov 11 already has its 8 desk posts and 4 guides, so only the priority 1 Nvidia story was queued, dated for Nov 12 because the cap holds it until the next New York day.",
+    "considered": [
+      {
+        "story": "WSJ: Nvidia's board is preparing to oust CEO Jensen Huang; shares fall about 8% after hours",
+        "source": "https://fortune.com/2026/11/11/nvidia-oust-jensen-huang-spy-affairs/",
+        "decision": "queued",
+        "job_id": "2026-11-12-nvidia-board-preparing-to-oust-jensen-huang",
+        "priority": 1,
+        "reason": "Biggest AI business story of the night (Reuters and Fortune read). Sensitive, so it waits for Mahir. Set timely false and written with dates because today's cap holds it until the 07:00 window, after a 12 hour timely limit would have expired it; the morning run should write a -v2 if the board acts overnight."
+      },
+      {
+        "story": "NYT: Jensen Huang had a relationship with Nvidia executive Kimberly Powell",
+        "source": "https://www.nytimes.com/2026/11/11/technology/jensen-huang-nvidia-affair.html",
+        "decision": "covered",
+        "reason": "Included in the Nvidia ouster job as one of its slides."
+      },
+      {
+        "story": "Congress to call Jensen Huang in over the alleged Chinese spy affair",
+        "source": "https://techcrunch.com/2026/11/11/congress-to-call-jensen-huang-in-to-answer-for-alleged-chinese-spy-affair/",
+        "decision": "skipped",
+        "reason": "Overtaken by the ouster report, which is the bigger story."
+      },
+      {
+        "story": "United Airlines blocks AI agents from booking flights for customers",
+        "source": "https://www.cbsnews.com/news/united-airlines-bans-ai-agents-booking-flights/",
+        "decision": "skipped",
+        "reason": "Strong everyone story, but today's 8 desk posts are used; a candidate for tomorrow (CBS, NYT and The Verge all have it)."
+      },
+      {
+        "story": "Google engineer used AI agents on lidar data and found an unmapped Maya site",
+        "decision": "skipped",
+        "reason": "Top of Hacker News but still only a personal blog with no second source."
+      },
+      {
+        "story": "Google brings the Gemini app to Apple CarPlay",
+        "decision": "skipped",
+        "reason": "Only small blogs in leads so far and the cap is reached; check tomorrow for an official post."
+      },
+      {
+        "story": "Anthropic IPO called the 'Jenga block' of the AI trade, Seattle Times",
+        "decision": "skipped",
+        "reason": "Market commentary on an IPO already covered this week."
+      },
+      {
+        "story": "Apple's local AI Mac app",
+        "decision": "covered",
+        "reason": "Already queued as 2026-11-11-apple-harbor-local-ai-mac-app."
       }
     ],
     "requests": []
