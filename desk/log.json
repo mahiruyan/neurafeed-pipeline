@@ -1,57 +1,5 @@
 [
   {
-    "run_at": "2026-11-05T17:14:10.396Z",
-    "summary": "Noon New York run: queued the AI stock sell-off (priority 1) and the first utility post with its Grok guide; November 5 is now at 8 news and utility jobs plus Mahir's Reel, so the second utility post is skipped today.",
-    "considered": [
-      {
-        "story": "AI stocks crash: Nasdaq down 5%, Nvidia down 8.3%, AMD down 15.9% on fears the midterm results slow data center building",
-        "source": "https://spectrumlocalnews.com/tx/austin/business/2026/11/05/stock-market-ai-chip-selloff",
-        "decision": "queued",
-        "job_id": "2026-11-05-ai-stocks-wipeout-nasdaq-5-percent",
-        "priority": 1
-      },
-      {
-        "story": "Utility: Grok, 5 things most people miss (guide: Grok, what it is good at and where it falls short)",
-        "source": "https://docs.x.ai/grok/overview",
-        "decision": "queued",
-        "job_id": "2026-11-05-grok-5-things-most-people-miss-guide",
-        "priority": 2
-      },
-      {
-        "story": "Second utility post for November 5",
-        "decision": "skipped",
-        "reason": "The priority 1 market story took one of the two slots kept for utility posts, and the day is now at the 8 job cap."
-      },
-      {
-        "story": "OpenAI publishes a Community Compact pledging no NDAs with officials and to cover data center power costs",
-        "source": "https://aiweekly.co/ai-news-today/openai-news",
-        "decision": "skipped",
-        "reason": "Seen only in an aggregator listing; could not read the CNBC report or a second source, and the day is at the cap."
-      },
-      {
-        "story": "Brockman calls the first half of 2026 pretty rough before the Q3 revenue jump",
-        "decision": "covered",
-        "reason": "Part of the Brockman WSJ Tech remarks already posted as 2026-11-05-brockman-openai-ipo-2027-i-think-so."
-      },
-      {
-        "story": "FrontierPhysics benchmark: best agent clears 27.4% of physics research tasks",
-        "decision": "skipped",
-        "reason": "Niche benchmark with little interest for normal AI users."
-      },
-      {
-        "story": "Qualcomm falls 12.8% after smartphone chip sales miss",
-        "decision": "skipped",
-        "reason": "Folded into the market sell-off article as context; not its own story."
-      },
-      {
-        "story": "Anthropic signs its first paid news deal with the AP",
-        "decision": "skipped",
-        "reason": "Same reason as earlier runs: election data for an election that is over, low interest for normal Claude users."
-      }
-    ],
-    "requests": []
-  },
-  {
     "run_at": "2026-11-05T19:05:48.874Z",
     "summary": "Afternoon run: no open links or requests; queued OpenAI's GPT-6 Cyber launch (priority 1, waits for Mahir's approval). November 5 was already at the job cap, so everything else was skipped.",
     "considered": [
@@ -5560,6 +5508,21 @@
         "story": "Mahir's old inbox links (link-2026-10-13-224, link-2026-10-14-435, link-2026-10-20-1074-2, link-2026-10-21-w47d4efec)",
         "decision": "covered",
         "reason": "Already in inbox/skipped.json from earlier runs; nothing new to do."
+      }
+    ],
+    "requests": []
+  },
+  {
+    "run_at": "2026-11-12T17:18:24.012Z",
+    "summary": "Link desk: queued Mahir's Reel link-2026-11-12-3634 (AI-made Jensen Huang 'villain arc' short film by @rize.imagines) for review.",
+    "considered": [
+      {
+        "story": "AI-generated short film imagining Jensen Huang's next move after resigning as NVIDIA CEO",
+        "source": "https://www.instagram.com/reel/DfpjdJoAuf8/",
+        "decision": "queued",
+        "job_id": "2026-11-12-jensen-huang-villain-arc-reel",
+        "priority": 1,
+        "reason": "Mahir's link with his title and caption used word for word (fixed 'Al' to 'AI'). The clip is a repost by @evolving.ai and may carry their branding; credited the creator @rize.imagines. Huang's resignation confirmed by TechCrunch. Note: the Matrix parody Reel from earlier today failed to download from Instagram, this one may too."
       }
     ],
     "requests": []
