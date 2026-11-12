@@ -22,7 +22,8 @@ jobs:
           echo "::notice::text: $(jq -r '.tweet.text // "?"' /tmp/t.json | tr '\n' ' ' | cut -c1-300) | author: $(jq -r '.tweet.author.screen_name // "?"' /tmp/t.json) | quote: $(jq -r '.tweet.quote.text // ""' /tmp/t.json | tr '\n' ' ' | cut -c1-200) by $(jq -r '.tweet.quote.author.screen_name // ""' /tmp/t.json)"
           i=0; mkdir -p inbox/uploads
           for u in $(jq -r '[.tweet.media.photos[]?.url, .tweet.quote.media.photos[]?.url] | .[]' /tmp/t.json); do
-            i=$((i+1)); curl -s -m 60 -L "$u?name=orig" -o "inbox/uploads/$NAME-$i.jpg" || curl -s -m 60 -L "$u" -o "inbox/uploads/$NAME-$i.jpg"
+            i=$((i+1)); f="inbox/uploads/$NAME-$i.jpg"; echo "::notice::url $u"
+            for v in "$u" "$u?name=large" "${u%.*}?format=jpg&name=large"; do curl -s -m 60 -L -A "Mozilla/5.0" "$v" -o "$f"; [ "$(stat -c%s "$f")" -gt 5000 ] && break; done
             echo "::notice::saved inbox/uploads/$NAME-$i.jpg $(file -b "inbox/uploads/$NAME-$i.jpg" | cut -c1-80)"
           done
           [ "$i" -gt 0 ] || { echo "::warning::no photos found"; exit 0; }
