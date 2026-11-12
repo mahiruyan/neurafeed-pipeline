@@ -1,58 +1,5 @@
 [
   {
-    "run_at": "2026-11-05T09:00:08.407Z",
-    "summary": "4 a.m. New York run: no open links or requests; nothing new at priority 1 since the last run, so nothing queued, keeping November 5's last 2 of 8 slots for the two daily utility posts.",
-    "considered": [
-      {
-        "story": "Xen credits Anthropic and Claude for two critical grant copy VM escape flaws (XSA-523)",
-        "source": "https://blog.ostorlab.co/xen-hypervisor-guest-escape-cve-2026-102703.html",
-        "decision": "skipped",
-        "reason": "Advisory went public on November 3, so it is past the timely window, and the last two November 5 slots are kept for the utility posts; a candidate for a later evergreen or roundup mention."
-      },
-      {
-        "story": "Isomorphic Labs in talks to raise about $5 billion at about a $50 billion valuation",
-        "source": "https://www.bloomberg.com/news/articles/2026-11-04/isomorphic-labs-in-talks-for-about-5-billion-in-funding",
-        "decision": "skipped",
-        "reason": "Talks reported by Bloomberg only, paywalled and not read in full."
-      },
-      {
-        "story": "Google backstops TeraWulf's $19 billion Anthropic Kentucky lease",
-        "source": "https://www.unite.ai/terawulf-lines-up-google-backstop-for-anthropics-kentucky-ai-campus/",
-        "decision": "skipped",
-        "reason": "Too close to today's Anthropic Riot Texas campus post."
-      },
-      {
-        "story": "AMD to pay $2.9 billion for AI chip firm Taalas",
-        "source": "https://www.theglobeandmail.com/business/article-amd-to-pay-29-billion-for-ai-chip-firm-taalas/",
-        "decision": "skipped",
-        "reason": "Filing detail with limited consumer interest, and today is nearly at the cap."
-      },
-      {
-        "story": "Anthropic signs its first news licensing deal with the AP",
-        "source": "https://www.adweek.com/media/anthropic-licensing-deal-ap-election/",
-        "decision": "skipped",
-        "reason": "Still only Adweek's report with no independent second source."
-      },
-      {
-        "story": "Apple will check iCloud public links for harmful content in iOS 27.3",
-        "source": "https://9to5mac.com/2026/11/04/with-ios-27-3-apple-will-start-checking-icloud-public-links-for-harmful-content/",
-        "decision": "skipped",
-        "reason": "Not an AI story at its core, and Apple already has a post today."
-      },
-      {
-        "story": "Cat Wu joins OpenAI to lead core product management",
-        "decision": "covered",
-        "reason": "Follow up to 2026-11-04-cat-wu-leaves-claude-code."
-      },
-      {
-        "story": "OpenAI Images 2.6, 948 Linux root exploits, Brockman IPO remarks",
-        "decision": "covered",
-        "reason": "Already queued for November 5."
-      }
-    ],
-    "requests": []
-  },
-  {
     "run_at": "2026-11-05T10:55:01.002Z",
     "summary": "6 a.m. New York run: turned Mahir's swarm of AI cursors link into a Reel (review); no new priority 1 news since the last run, so November 5's last news slots stay for the two utility posts.",
     "considered": [
@@ -5436,6 +5383,21 @@
         "story": "13-year-old used a school laptop to plan suicide with Gemini, lawsuit claims",
         "decision": "covered",
         "reason": "Same case as 2026-11-09-gemini-school-chromebook-teen-lawsuit."
+      }
+    ],
+    "requests": []
+  },
+  {
+    "run_at": "2026-11-12T09:21:11.602Z",
+    "summary": "Link desk: made Mahir's single post from the Morning Brew link (Nvidia board weighing Jensen Huang's ouster), headline as he wrote it.",
+    "considered": [
+      {
+        "story": "Nvidia board meets to decide whether to oust Jensen Huang (Morning Brew post, link-2026-11-12-3505)",
+        "source": "https://x.com/morningbrew/status/2120649073585774729",
+        "decision": "queued",
+        "job_id": "2026-11-12-its-actually-happening-huang-single",
+        "priority": 1,
+        "reason": "Single post with Mahir's headline \"It's actually happening\", built on a library photo of Huang plus the Nvidia logo, facts from Reuters, CNBC and Semafor. Sensitive, needs his approval. Same story as the waiting desk carousel 2026-11-12-nvidia-board-preparing-to-oust-jensen-huang (its source is included, so the pipeline withdraws it). Morning Brew's own image (a joke resume) was not reused."
       }
     ],
     "requests": []
