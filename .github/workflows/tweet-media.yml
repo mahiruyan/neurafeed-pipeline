@@ -1,0 +1,30 @@
+name: Tweet media
+# Saves the photos of one X post into inbox/uploads/ so a post can show the original image.
+on:
+  workflow_dispatch:
+    inputs:
+      url: { description: 'X post URL', required: true }
+      name: { description: 'File name prefix in inbox/uploads (for example the link id)', required: true }
+permissions:
+  contents: write
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - env:
+          URL: ${{ inputs.url }}
+          NAME: ${{ inputs.name }}
+        run: |
+          path=$(printf '%s' "$URL" | sed -E 's#https?://[^/]+/##; s#\?.*##')
+          case "$NAME" in *[!a-zA-Z0-9_-]*) echo "::error::bad name"; exit 1;; esac
+          curl -s -m 30 -A "Mozilla/5.0 (compatible; NeuraFeedBot/1.0)" "https://api.fxtwitter.com/$path" > /tmp/t.json
+          echo "::notice::text: $(jq -r '.tweet.text // "?"' /tmp/t.json | tr '\n' ' ' | cut -c1-300) | author: $(jq -r '.tweet.author.screen_name // "?"' /tmp/t.json) | quote: $(jq -r '.tweet.quote.text // ""' /tmp/t.json | tr '\n' ' ' | cut -c1-200) by $(jq -r '.tweet.quote.author.screen_name // ""' /tmp/t.json)"
+          i=0; mkdir -p inbox/uploads
+          for u in $(jq -r '[.tweet.media.photos[]?.url, .tweet.quote.media.photos[]?.url] | .[]' /tmp/t.json); do
+            i=$((i+1)); curl -s -m 60 -L "$u?name=orig" -o "inbox/uploads/$NAME-$i.jpg" || curl -s -m 60 -L "$u" -o "inbox/uploads/$NAME-$i.jpg"
+            echo "::notice::saved inbox/uploads/$NAME-$i.jpg $(file -b "inbox/uploads/$NAME-$i.jpg" | cut -c1-80)"
+          done
+          [ "$i" -gt 0 ] || { echo "::warning::no photos found"; exit 0; }
+          git config user.name "neurafeed-bot"; git config user.email "bot@users.noreply.github.com"
+          git add inbox/uploads && git commit -qm "Media of X post for $NAME" && (git push -q || (git pull -q --rebase && git push -q))
