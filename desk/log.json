@@ -5383,5 +5383,61 @@
         "result": "Hook is now \"Claude Fable 5.2 can direct better films than most directors now…\" (capitalized the name, highlight added); caption, video and sources unchanged."
       }
     ]
+  },
+  {
+    "run_at": "2026-11-12T08:56:49.764Z",
+    "summary": "Night run (03:55 New York): queued one sensitive lawsuit carousel, OpenAI sued under Georgia's racketeering law over Project Camellia; no open links or requests.",
+    "considered": [
+      {
+        "story": "Georgia residents sue OpenAI and county officials under state RICO law over the Project Camellia data center",
+        "source": "https://www.wsbtv.com/news/local/openai-accused-racketeering-conspiracy-over-georgia-data-center-plan/LPT3VEPZURF4FHC3LDWZEKGIYQ/",
+        "decision": "queued",
+        "job_id": "2026-11-12-openai-georgia-racketeering-lawsuit",
+        "priority": 2,
+        "reason": "Money, secrecy and a lawsuit story beyond pure AI news, read in WSB-TV, The Georgia Virtue, Tom's Hardware, Inside Climate News and WTOC. Sensitive (lawsuit), so it waits for Mahir. Timely false: filed November 6. Images could not be opened from here, so the pipeline must check them."
+      },
+      {
+        "story": "TSMC board approves up to $1 billion in Anthropic and OpenAI investments",
+        "decision": "covered",
+        "reason": "Marked covered on November 11; part of the Anthropic IPO coverage."
+      },
+      {
+        "story": "FT: Sex, spies and salaries shake up AI chipmakers",
+        "decision": "covered",
+        "reason": "Same Nvidia and Jensen Huang affair as 2026-11-12-nvidia-board-preparing-to-oust-jensen-huang."
+      },
+      {
+        "story": "Google engineer's AI agents found an unmapped Maya site",
+        "source": "https://pietromiotti.com/latest/maya-site",
+        "decision": "skipped",
+        "reason": "Still only the personal blog; search found no independent second source."
+      },
+      {
+        "story": "Gemini Decisions API",
+        "decision": "skipped",
+        "reason": "Developer API with little appeal for a general audience."
+      },
+      {
+        "story": "Gemini 4 Carbon reaches AI Mode for Ultra subscribers only",
+        "decision": "skipped",
+        "reason": "Only PPC Land in leads; paywalled feature for a small group."
+      },
+      {
+        "story": "OpenAI launches API inference residency in India",
+        "decision": "skipped",
+        "reason": "Enterprise and India-focused, little US consumer interest."
+      },
+      {
+        "story": "OpenAI and Anthropic sign Macron's Paris Call",
+        "decision": "skipped",
+        "reason": "Policy statement with little pull; only one small outlet in leads."
+      },
+      {
+        "story": "13-year-old used a school laptop to plan suicide with Gemini, lawsuit claims",
+        "decision": "covered",
+        "reason": "Same case as 2026-11-09-gemini-school-chromebook-teen-lawsuit."
+      }
+    ],
+    "requests": []
   }
 ]
