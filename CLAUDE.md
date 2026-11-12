@@ -338,8 +338,8 @@ Everything else stays the same, so the test only measures this one thing. Every 
 ## Utility posts (paused on Instagram; guides continue on the site)
 
 Until carousels reach more than about 1,500 views, no utility carousel is posted: every utility
-job gets `"site_only": true` (rendered for the website, never posted). Four guides a day
-continue (they bring most of the site's Google impressions) (see "The guide on the website"). The rules below still apply to those jobs (`"format": "utility"`, `timely: false`,
+job gets `"site_only": true` (rendered for the website, never posted). Six guides a day
+continue (they bring most of the site's Google impressions; Mahir raised it on 2026-11-12) (see "The guide on the website"). The rules below still apply to those jobs (`"format": "utility"`, `timely: false`,
 `priority: 2`). Rotate between:
 - Prompt tips: 4 to 6 concrete prompts or prompt patterns for ChatGPT, Claude or Gemini, each with
   what it does, one `prompt` slide each. Only patterns that are documented by the vendor or that you can explain clearly.

@@ -27,9 +27,10 @@ never miss a major story.
 3a2. Requests from Mahir: read inbox/requests.json and desk/log.json. Handle every open request
    as "Requests from Mahir and the desk log" in CLAUDE.md describes (new post, or a corrected
    `-v2` copy with `replaces`). They come right after links.
-3c. Website guides: today (New York date) needs 4 guide jobs (`"format": "utility"`,
-   `"site_only": true`, see "Utility posts" in CLAUDE.md). From 07:00 New York time, if fewer than
-   4 exist for today, queue one per run (two when it is after 17:00 and still 2 or more short).
+3c. Website guides: today (New York date) needs 6 guide jobs (`"format": "utility"`,
+   `"site_only": true`, see "Utility posts" in CLAUDE.md and guides/plan.md). From 07:00 New York
+   time, if fewer than 6 exist for today, queue one per run (two when it is after 15:00 and
+   still 2 or more short).
    Site-only guides never post to Instagram and do not count toward the 8 jobs per day.
 3d. Sunday roundup: on Sunday, in the first run at or after 17:00 New York time, queue the weekly
    roundup if it does not exist yet (see "Weekly roundup" in CLAUDE.md).
