@@ -101,7 +101,8 @@ function validateJob(job, fileId) {
   });
   if (job.slides?.[0]?.kind !== 'cover') p.push('first slide must be a cover');
   if (!single && job.slides?.at(-1)?.kind !== 'cta') p.push('last slide must be a cta');
-  const urls = (job.slides || []).map((s) => s.image?.url).filter(Boolean);
+  // A photo slide shows a picture whole, so it may repeat the cover's picture (cover cropped, then the full page).
+  const urls = (job.slides || []).filter((s) => s.kind !== 'photo').map((s) => s.image?.url).filter(Boolean);
   const dupes = urls.filter((u, i) => urls.indexOf(u) !== i);
   if (dupes.length) p.push('the same image is used on more than one slide');
   if (DASHES.test(textOf(job))) p.push('text contains an en dash or em dash');
