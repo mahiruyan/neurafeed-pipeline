@@ -5592,5 +5592,47 @@
       }
     ],
     "requests": []
+  },
+  {
+    "run_at": "2026-11-13T17:02:58.182Z",
+    "summary": "Midday run (11:54 New York): no open links or requests; November 13 is already at the Instagram cap with no new priority 1 story since the last run, so no news carousel. Queued the third site-only guide of the day (Claude Design). The Codex guide was skipped because its official docs could not be opened from this run.",
+    "considered": [
+      {
+        "story": "How to use Claude Design (guides plan, tool library)",
+        "decision": "queued",
+        "job_id": "2026-11-13-how-to-use-claude-design-guide",
+        "priority": 2
+      },
+      {
+        "story": "How to use Codex (guides plan, tool library)",
+        "decision": "skipped",
+        "reason": "OpenAI's Codex docs now redirect to a site this run could not open, and the help article found is outdated; it stays first in line for a later run."
+      },
+      {
+        "story": "Nonprofits sue OpenAI, Google and Meta to halt frontier AI",
+        "source": "https://dataconomy.com/2026/11/13/nonprofits-sue-openai-google-and-meta-to-halt-advanced-ai",
+        "decision": "covered",
+        "reason": "Already a job: 2026-11-12-nonprofits-sue-to-freeze-frontier-ai."
+      },
+      {
+        "story": "Reuters: Huang had a relationship with a second employee",
+        "source": "https://bnnbloomberg.ca/business/artificial-intelligence/2026/11/13/reuters-exclusive-former-nvidia-ceo-huang-had-a-relationship-with-a-second-employee-sources-say",
+        "decision": "covered",
+        "reason": "Covered by the huang-third-affair-reuters jobs on November 12."
+      },
+      {
+        "story": "Nvidia scandal fallout may cool the AI boom",
+        "source": "https://bnnbloomberg.ca/business/artificial-intelligence/2026/11/13/fallout-from-the-nvidia-scandal-may-dampen-the-exuberance-around-the-ai-boom",
+        "decision": "skipped",
+        "reason": "Another Huang angle on a day already full of Nvidia posts, and the daily cap is reached."
+      },
+      {
+        "story": "Australian regulator APRA warns of interruptions from frontier AI models",
+        "source": "https://abc.net.au/news/2026-11-13/regulator-apra-warns-of-interruptions-as-frontier-ai-evolves/107378944",
+        "decision": "skipped",
+        "reason": "Australian banking regulator story with little US interest; the daily cap is reached."
+      }
+    ],
+    "requests": []
   }
 ]

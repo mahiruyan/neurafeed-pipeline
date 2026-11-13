@@ -1,0 +1,236 @@
+{
+  "id": "2026-11-13-how-to-use-claude-design-guide",
+  "format": "utility",
+  "site_only": true,
+  "created_at": "2026-11-13T17:20:00Z",
+  "story_time": "2026-11-13T17:20:00Z",
+  "timely": false,
+  "sensitive": false,
+  "priority": 2,
+  "review": true,
+  "sources": [
+    {
+      "name": "Claude Help Center: Get started with Claude Design",
+      "url": "https://support.claude.com/en/articles/14604416-get-started-with-claude-design"
+    },
+    {
+      "name": "Anthropic: Introducing Claude Design by Anthropic Labs",
+      "url": "https://www.anthropic.com/news/claude-design-anthropic-labs"
+    },
+    {
+      "name": "Zapier: What is Claude Design?",
+      "url": "https://zapier.com/blog/claude-design/"
+    },
+    {
+      "name": "TechFinitive: How to use Claude Design",
+      "url": "https://www.techfinitive.com/explainers/how-to-use-claude-design-create-websites-and-presentations-in-minutes/"
+    }
+  ],
+  "caption": "Claude Design turns a chat into designs, clickable prototypes and slide decks, and exports them to PDF, PowerPoint or HTML.\nThe trick is giving it your brand first, then asking for two or three versions.\n\nWould you let an AI make your next presentation?\n\nFollow @neurafeed.ai for daily AI news.\n\nSource: Claude Help Center · Photo: Anthropic",
+  "threads_text": "Claude Design builds mockups, prototypes and slide decks from a chat, and exports them to PDF, PowerPoint or HTML. The catch: it eats into the same usage limits as the rest of Claude. Would you let an AI make your next presentation?",
+  "slides": [
+    {
+      "kind": "cover",
+      "headline": "How to use *Claude Design* to make designs by chatting",
+      "image": {
+        "url": "https://img.youtube.com/vi/t_LBECIQQqs/maxresdefault.jpg",
+        "credit": "Anthropic",
+        "fallback_urls": [
+          "https://www.anthropic.com/_next/image?url=https%3A%2F%2Fimg.youtube.com%2Fvi%2Ft_LBECIQQqs%2Fmaxresdefault.jpg&w=3840&q=75"
+        ]
+      },
+      "pos": "center center",
+      "badges": [
+        { "url": "assets/logos/claude.png", "fit": "contain" }
+      ]
+    },
+    {
+      "kind": "card",
+      "heading": "1. Give it your *brand* first",
+      "paras": [
+        "Import a design system from GitHub, design files or uploads, so every project uses your colors and fonts.",
+        "Then describe the goal, the layout and who it is for."
+      ],
+      "image": {
+        "url": "https://assets.claude.com/27d189475a69c8d847540d09821db517a2f7c66d.jpg",
+        "credit": "Anthropic",
+        "fit": "contain",
+        "fallback_urls": [
+          "https://assets.claude.com/27d189475a69c8d847540d09821db517a2f7c66d.jpg?w=3840&q=75&fm=webp&fit=max"
+        ]
+      }
+    },
+    {
+      "kind": "prompt",
+      "heading": "2. Ask for *variations*",
+      "paras": [
+        "Anthropic's own tips: start simple, name the device early and ask for 2 or 3 versions.",
+        "Then fix details with comments or by dragging on the canvas."
+      ],
+      "prompt": "Design a landing page for [product] for [audience] on mobile. Use my design system. Give me 3 variations."
+    },
+    {
+      "kind": "prompt",
+      "heading": "3. Export or hand it to *Claude Code*",
+      "paras": [
+        "Export to PDF, PowerPoint, Google Slides, HTML or a .zip.",
+        "Or send it to Claude Code to turn the design into real code."
+      ],
+      "prompt": "Review this design for accessibility and visual hierarchy, then list the fixes."
+    },
+    {
+      "kind": "cta",
+      "hook": "Follow for one free AI tool explained every day."
+    }
+  ],
+  "site_article": {
+    "kind": "guide",
+    "headline": "How to use Claude Design: make designs, prototypes and slides by chatting with Claude",
+    "dek": "Claude Design builds mockups, clickable prototypes and decks on a canvas next to the chat. Here is how to start, how to get better results and what it costs you in usage.",
+    "summary": "Claude Design is Anthropic's tool for making designs, prototypes, slides and one-pagers by describing them to Claude. It works in a chat or the Artifacts tab, exports to PDF, PowerPoint, Google Slides and HTML, and counts toward your normal Claude usage limits.",
+    "seo_title": "How to use Claude Design: designs and slides by chatting",
+    "seo_description": "How to use Claude Design: where to open it, how to add a design system, prompts that work, how to refine and export, and the limits to know.",
+    "answer_summary": "Ask Claude for a design in a chat (or pick Output, then Design), or choose a Design template in the Artifacts tab. Add your design system and some context, describe the goal and audience, then refine the canvas with chat, comments or direct edits and export it.",
+    "tags": [
+      "Claude Design",
+      "Claude",
+      "Anthropic",
+      "Guides",
+      "AI design tools"
+    ],
+    "hero_alt": "Video thumbnail from Anthropic's Claude Design announcement.",
+    "paragraphs": [
+      {
+        "kind": "fact",
+        "text": "How to use Claude Design, in short: ask Claude for a design, give it your brand and some context, then fix the result on the canvas and export it. Claude Design is a tool from Anthropic Labs that turns a conversation into visual work: app and website mockups, interactive prototypes, slide decks and one-pagers. The work appears on a canvas beside the chat, where you keep editing it.",
+        "sources": [0, 1]
+      },
+      {
+        "kind": "fact",
+        "text": "Anthropic launched Claude Design on April 17, 2026 as a research preview for Pro, Max, Team and Enterprise subscribers. According to the Claude Help Center, it is now available on Free, Pro, Max, Team and Enterprise plans and is turned on by default.",
+        "sources": [0, 1]
+      },
+      {
+        "kind": "analysis",
+        "text": "The point is speed to a first draft. If you are a founder, a product manager or anyone who has to show an idea before a designer has time for it, Claude Design gets you something clickable in minutes. It does not replace a good designer for polished, final work."
+      },
+      {
+        "kind": "heading",
+        "text": "Where to open Claude Design"
+      },
+      {
+        "kind": "fact",
+        "text": "There are four ways in, per the Help Center. In a normal conversation, ask for a design or choose Output, then Design. In the Artifacts tab, pick a Design template. In Claude Code, ask Claude or type /design. On the iOS and Android apps you can create, view and edit designs, but sharing settings have to be changed on the web or the desktop app.",
+        "sources": [0]
+      },
+      {
+        "kind": "fact",
+        "text": "The older standalone version at claude.ai/design closes on December 14, 2026. The Help Center tells users to move their projects and design systems before then.",
+        "sources": [0]
+      },
+      {
+        "kind": "tip",
+        "text": "If you used Claude Design at claude.ai/design earlier this year, move your projects now instead of in December, so you have time to check nothing went missing."
+      },
+      {
+        "kind": "heading",
+        "text": "How to use Claude Design, step by step"
+      },
+      {
+        "kind": "step",
+        "title": "1. Start a design",
+        "text": "Open a chat and ask for a design, or go to the Artifacts tab and choose a Design template. Say what you want to make: a landing page, an app screen, a pitch deck, a one-pager."
+      },
+      {
+        "kind": "step",
+        "title": "2. Add a design system",
+        "text": "A design system holds your colors, typography and components, so every project looks like your brand. You can import one from a GitHub repository, design files, uploads or a local codebase with /design-sync. Projects pick up your organization's design system automatically."
+      },
+      {
+        "kind": "step",
+        "title": "3. Give it context",
+        "text": "Attach screenshots and other assets, or link a codebase. The more Claude can see of what already exists, the less it guesses."
+      },
+      {
+        "kind": "step",
+        "title": "4. Describe the goal",
+        "text": "Say what the design is for, the layout you have in mind, the content it must show and who will use it. Mention the target device (phone, laptop, projector) at the start."
+      },
+      {
+        "kind": "step",
+        "title": "5. Review and refine",
+        "text": "Look at the canvas, then pick the right tool for the change. Use chat for big structural changes or to ask why something was done. Use inline comments for one component. Edit the canvas directly to drag, resize or align things."
+      },
+      {
+        "kind": "step",
+        "title": "6. Export or share",
+        "text": "Export as a .zip, a PDF, a PowerPoint file, Google Slides or standalone HTML, send it to other tools, or hand it off to Claude Code. Designs are private by default; you can share them with view, comment or edit access."
+      },
+      {
+        "kind": "fact",
+        "text": "Anthropic says the handoff to Claude Code packages the finished design into a bundle that Claude Code can build from with a single instruction. Designs can also be exported to Canva.",
+        "sources": [1]
+      },
+      {
+        "kind": "heading",
+        "text": "Prompts that get better designs"
+      },
+      {
+        "kind": "fact",
+        "text": "Anthropic's own tips are short: import a complete design system, start simple and add detail later, give specific feedback that names the component, mention the target device early, ask for two or three variations, and ask Claude to review accessibility and visual hierarchy.",
+        "sources": [0]
+      },
+      {
+        "kind": "prompt",
+        "title": "Prompt 1: A first draft with options",
+        "text": "Design a landing page for [product] aimed at [audience]. Mobile first. Use my design system. Sections: hero with one clear headline, three benefits, pricing, a short FAQ. Give me 3 variations with different layouts."
+      },
+      {
+        "kind": "prompt",
+        "title": "Prompt 2: Feedback that names the part",
+        "text": "In variation 2, make the pricing cards stack vertically on mobile, move the FAQ above the footer and make the main button in the hero larger. Keep everything else the same."
+      },
+      {
+        "kind": "prompt",
+        "title": "Prompt 3: A slide deck from your numbers",
+        "text": "Make an 8 slide deck for [meeting] from the attached file. One idea per slide, a chart where the numbers matter, presenter notes on every slide. Use my design system."
+      },
+      {
+        "kind": "prompt",
+        "title": "Prompt 4: A check before you share",
+        "text": "Review this design for accessibility and visual hierarchy. List every problem you find, from most to least important, then fix the top three."
+      },
+      {
+        "kind": "tip",
+        "text": "Check every number Claude puts on a slide against your source. In a hands-on test, TechFinitive found wrong figures and a cropped screenshot in a deck Claude Design made, plus typography problems after export to PowerPoint."
+      },
+      {
+        "kind": "heading",
+        "text": "Usage limits and what it is bad at"
+      },
+      {
+        "kind": "fact",
+        "text": "Claude Design draws on the same usage limits as the rest of Claude, including Claude Code, according to the Help Center. Large codebases and many rounds of changes use more. When you hit the limit, Claude Design stops until the limit resets, unless usage credits are turned on.",
+        "sources": [0]
+      },
+      {
+        "kind": "fact",
+        "text": "Reviewers found the limits to be the main constraint. Writing for Zapier in May 2026, Miguel Rebelo said a Pro plan's weekly allowance could run out in under an hour of work, and that without a custom design system the output tends toward a recognizable look with heavy serif fonts, cards and accent bars.",
+        "sources": [2]
+      },
+      {
+        "kind": "fact",
+        "text": "Anthropic lists its own known limitations: inline comments can sometimes disappear (pasting the feedback into chat works around it), very large repositories can cause lag, editing by several people at once is basic, the quality of an imported design system depends on the source files, and there is no version history yet.",
+        "sources": [0]
+      },
+      {
+        "kind": "tip",
+        "text": "Because there is no version history, export a PDF or HTML copy of any version you like before asking for big changes."
+      },
+      {
+        "kind": "analysis",
+        "text": "Claude Design is best treated as a fast sketching partner. Use it for a first draft, a pitch deck you need by tomorrow or a clickable prototype to test an idea. For production code, hand the design to Claude Code or a developer, and for a brand that has to look exactly right, keep a designer in the loop."
+      }
+    ]
+  }
+}
