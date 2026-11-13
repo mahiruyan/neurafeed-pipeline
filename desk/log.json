@@ -1,144 +1,5 @@
 [
   {
-    "run_at": "2026-11-06T03:07:11.691Z",
-    "summary": "Late Thursday run (New York): Nov 5 already hit 8 posts, so queued 2 priority 1 stories for the Nov 6 morning windows. No open links or requests.",
-    "considered": [
-      {
-        "story": "Meta rolls out Muse voice calls and animated avatars to everyone in the US",
-        "source": "https://about.fb.com/news/2026/11/introducing-muse-ai-voice-expressive-avatars/",
-        "decision": "queued",
-        "job_id": "2026-11-06-meta-muse-voice-video-chat",
-        "priority": 1
-      },
-      {
-        "story": "OpenAI pledges to pay for its data centers' power, water plans and fewer NDAs after midterm backlash",
-        "source": "https://abcnews.com/Business/openai-issues-new-data-center-policies-after-midterm/story?id=137874775",
-        "decision": "queued",
-        "job_id": "2026-11-06-openai-data-centers-pay-own-power",
-        "priority": 1
-      },
-      {
-        "story": "Claude Code reportedly put users' email in the User-Agent header (GitHub issue on HN)",
-        "source": "https://www.startuphub.ai/ai-news/artificial-intelligence/2026/claude-code-sent-your-email-in-user-agent",
-        "decision": "skipped",
-        "reason": "Only small blogs and unverified forum claims so far, no reputable outlet or Anthropic statement; could not open the GitHub issue myself."
-      },
-      {
-        "story": "METR assessment says Anthropic's models are improving nearly twice as fast with AI help",
-        "decision": "skipped",
-        "reason": "Could not find a primary or major outlet source I could read this run; Anthropic self-improvement angle was also covered on Nov 3."
-      },
-      {
-        "story": "Lawsuits over ChatGPT (eviction, murder plot) and a Google Chromebook AI self-harm claim",
-        "decision": "skipped",
-        "reason": "Sensitive legal and self-harm stories with thin facts so far; not a good fit for an automated late-night run."
-      },
-      {
-        "story": "Perplexity launches AI teammates for work",
-        "decision": "skipped",
-        "reason": "Business tool launch with limited consumer appeal; tomorrow's slots are already filling."
-      },
-      {
-        "story": "Airbnb says it will launch an AI travel agent in early 2027",
-        "decision": "skipped",
-        "reason": "Product is months away; lower priority than the two queued stories."
-      },
-      {
-        "story": "Gemini 4 Carbon announced but not usable yet",
-        "decision": "skipped",
-        "reason": "Only a minor outlet in leads and no access yet; will recheck when Google opens it."
-      },
-      {
-        "story": "Nasdaq drop after midterms",
-        "decision": "covered",
-        "reason": "Already posted as 2026-11-05-ai-stocks-wipeout-nasdaq-5-percent."
-      },
-      {
-        "story": "Brockman says OpenAI could IPO in 2027",
-        "decision": "covered",
-        "reason": "Already posted as 2026-11-05-brockman-openai-ipo-2027-i-think-so."
-      },
-      {
-        "story": "GPT-6 Astra covertly underperforms on safety research",
-        "decision": "covered",
-        "reason": "Already posted as 2026-11-05-openai-astra-quietly-slacked-safety-research."
-      },
-      {
-        "story": "Google cuts search for schools that reject its AI",
-        "decision": "covered",
-        "reason": "Already posted as 2026-11-03-google-schools-no-ai-no-search."
-      }
-    ],
-    "requests": []
-  },
-  {
-    "run_at": "2026-11-06T05:03:19.912Z",
-    "summary": "Overnight run (about midnight New York): queued 2 priority 1 Anthropic stories for November 6 (now 4 jobs that day). No open links or requests.",
-    "considered": [
-      {
-        "story": "Anthropic launches Personal Finance in Claude, read-only bank and card access through Plaid",
-        "source": "https://claude.com/resources/articles/introducing-personal-finance-in-claude",
-        "decision": "queued",
-        "job_id": "2026-11-06-claude-personal-finance-bank-accounts",
-        "priority": 1,
-        "reason": "Major Anthropic launch and an everyone money story, not covered yet. Marked timely false because the 12 hour window from the launch ends before the 07:00 window."
-      },
-      {
-        "story": "Reuters: AI backlash and selloff could threaten Anthropic's November IPO timing and valuation",
-        "source": "https://srnnews.com/exclusive-ai-backlash-could-threaten-anthropic-ipo-timing-potential-investors-say/",
-        "decision": "queued",
-        "job_id": "2026-11-06-anthropic-ipo-investors-balk-selloff",
-        "priority": 1,
-        "reason": "Major Anthropic news confirmed by Reuters, PYMNTS (WSJ), Yahoo Finance and Investing.com. A/B said story photo, but I could not open the article photos from this run, so the cover uses the face library photo and ab.photo is set to face."
-      },
-      {
-        "story": "Anthony Pompliano accuses Anthropic of copying his startup Silvia",
-        "source": "https://decrypt.co/382689/claude-personal-finance-anthony-pompliano-anthropic",
-        "decision": "covered",
-        "reason": "Included as one slide in the Personal Finance carousel instead of its own post."
-      },
-      {
-        "story": "Asian markets and Nikkei fall after the AI selloff",
-        "decision": "covered",
-        "reason": "Same story as 2026-11-05-ai-stocks-wipeout-nasdaq-5-percent."
-      },
-      {
-        "story": "Claude Code reportedly sends users' email address to websites (GitHub issue on Hacker News)",
-        "source": "https://github.com/anthropics/claude-code/issues/107757",
-        "decision": "skipped",
-        "reason": "Still no reputable outlet or Anthropic statement found, same as the last run."
-      },
-      {
-        "story": "Google sued over a teen's AI chats on a school Chromebook",
-        "decision": "skipped",
-        "reason": "Sensitive suicide-related lawsuit with only regional outlets in the leads; not confirmed with two strong sources this run."
-      },
-      {
-        "story": "DOJ charges three people for using AI to impersonate executives in a $129 million fraud",
-        "source": "https://abcnews.go.com",
-        "decision": "skipped",
-        "reason": "Crime story with no AI company angle; Nov 6 already has the two Anthropic stories and room is kept for the morning run."
-      },
-      {
-        "story": "Mark Cuban says Facebook knowingly runs AI deepfake scam ads",
-        "source": "https://finance.yahoo.com/technology/ai/articles/mark-cuban-says-facebook-knowingly-213000020.html",
-        "decision": "skipped",
-        "reason": "Left for the morning run to confirm with a second source; it is an opinion claim that needs careful sourcing."
-      },
-      {
-        "story": "Gemini Omni now generates videos up to 15 seconds",
-        "decision": "skipped",
-        "reason": "Only a small outlet in the leads so far; the morning run can check Google's own post."
-      },
-      {
-        "story": "OpenAI deal with Abu Dhabi government to speed up processing",
-        "decision": "skipped",
-        "reason": "Government services deal with little interest for US readers."
-      }
-    ],
-    "requests": []
-  },
-  {
     "run_at": "2026-11-06T07:06:55.703Z",
     "summary": "Made Mahir's X link into a Reel (We were always blue) and queued one Google story; Nov 6 already has four news posts waiting, so the rest is left for daytime runs.",
     "considered": [
@@ -5604,6 +5465,78 @@
         "story": "Jensen Huang resignation, affairs and what comes next for Nvidia",
         "decision": "covered",
         "reason": "Covered by several November 12 jobs."
+      }
+    ],
+    "requests": []
+  },
+  {
+    "run_at": "2026-11-13T05:18:51.037Z",
+    "summary": "Late night run (23:53 New York, November 12): no open links or requests; queued 2 posts for the morning of November 13 (SpaceX's $50 billion Arizona AI campus filed under another name, and the FAA's AI routing tool going nationwide). Guides for November 13 start after 07:00.",
+    "considered": [
+      {
+        "story": "SpaceX plans a $50 billion AI campus in Cochise County, Arizona, filed as Tombstone Resources LLC, $74 billion total with Starbase",
+        "source": "https://www.thestar.com.my/tech/tech-news/2026/11/13/spacex-to-invest-over-74-billion-in-supercompute-facilities-in-texas-arizona",
+        "decision": "queued",
+        "job_id": "2026-11-13-spacex-50-billion-arizona-ai-campus-other-name",
+        "priority": 2,
+        "reason": "Money plus Musk plus a local fight; the Arizona site is new (only the $24 billion Starbase part was covered on November 10). Read Reuters via The Star, Teslarati, Interesting Engineering and AI Weekly. Image hosts could not be checked from here, so the pipeline download is the image check."
+      },
+      {
+        "story": "FAA expands its SMART AI air traffic tool to all 22 US en route centers",
+        "source": "https://gizmodo.com/the-faa-is-rolling-out-its-ai-air-traffic-tool-nationwide-2000839347",
+        "decision": "queued",
+        "job_id": "2026-11-13-faa-ai-reroutes-flights-nationwide",
+        "priority": 2,
+        "reason": "Everyone story (flights and delays) with a tension angle (controllers' union left out). Read Gizmodo, Deep Arrival and Terminair; Ars Technica and AeroTime could not be opened."
+      },
+      {
+        "story": "Flinn AI sues Anthropic and OpenAI over five attention patents each (Bloomberg Law, Reuters)",
+        "source": "https://news.bloomberglaw.com/ip-law/anthropic-openai-accused-of-copying-neural-networking-patents",
+        "decision": "skipped",
+        "reason": "Only paywalled openings were readable (no damages or details), too thin for a carousel and a full article; worth a look if fuller coverage appears."
+      },
+      {
+        "story": "Judge sanctions four lawyers over fake AI citations (Mississippi)",
+        "source": "https://www.theepochtimes.com/us/judge-sanctions-4-lawyers-over-ai-citations-6045676",
+        "decision": "skipped",
+        "reason": "The order is from June 2026, not new news."
+      },
+      {
+        "story": "Musk says it would be an honor to have Jensen Huang on board",
+        "source": "https://stocktwits.com/news-articles/markets/equity/space-x-commits-74-b-to-new-ai-campuses-while-musk-eyes-hiring-former-nvidia-ceo-starship-readies-flight-15/cNGCcw5R9a6",
+        "decision": "skipped",
+        "reason": "Could not read Musk's actual post, only a two word quote in one outlet; Huang's exit is already heavily covered."
+      },
+      {
+        "story": "Gemini 4 Hydrogen launch",
+        "decision": "covered",
+        "reason": "Already queued as 2026-11-12-gemini-4-hydrogen-free-users."
+      },
+      {
+        "story": "Democrats probe Trump's Nvidia China chip deal",
+        "decision": "covered",
+        "reason": "Already queued as 2026-11-13-democrats-probe-trump-nvidia-china-deal."
+      },
+      {
+        "story": "Nonprofits sue AI labs to freeze frontier models (Politico, CBS)",
+        "decision": "covered",
+        "reason": "Already queued as 2026-11-12-nonprofits-sue-to-freeze-frontier-ai."
+      },
+      {
+        "story": "Chinese frontier models carry the fingerprint of export controlled GPUs",
+        "source": "https://unemploymentlabs.com/checkpoint-forensics",
+        "decision": "skipped",
+        "reason": "Still only a self published analysis and minor outlets; no major confirmation yet."
+      },
+      {
+        "story": "Cerebras earnings beat and new Microsoft partnership (Barron's)",
+        "decision": "skipped",
+        "reason": "Investor news with little interest for a general US audience."
+      },
+      {
+        "story": "OpenAI picks Aleph as ChatGPT Ads reseller in 44 markets",
+        "decision": "skipped",
+        "reason": "Ad industry detail, mostly outside the US."
       }
     ],
     "requests": []
