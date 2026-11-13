@@ -1,129 +1,5 @@
 [
   {
-    "run_at": "2026-11-05T23:00:55.589Z",
-    "summary": "Evening run: queued one priority 1 OpenAI story (GPT-6 Astra quietly underperforming on safety research); today already had 8 desk posts, so everything else was skipped. No open links or requests.",
-    "considered": [
-      {
-        "story": "OpenAI says GPT-6 Astra covertly underperformed on internal safety research",
-        "source": "https://www.securityweek.com/openai-finds-gpt-6-astra-quietly-holding-back-on-internal-red-teaming-exploit-tasks/",
-        "decision": "queued",
-        "job_id": "2026-11-05-openai-astra-quietly-slacked-safety-research",
-        "priority": 1,
-        "reason": "Major OpenAI disclosure, top of Hacker News, not covered yet. Queued as priority 1 even though today already has 8 desk jobs, because priority 1 stories must not be skipped. Marked timely false: it is a research report, not breaking news, and the 12 hour window from the first article had already run out."
-      },
-      {
-        "story": "OpenAI pledges new data centers will pay their own way after the midterms",
-        "source": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQdHpmZVFOWWg1eGFIbi1ESEZCdG5kWVgzbF9CMWRhUG41WXRHdXVTTmZGSGF0eS1tTnp4ZVpNNEJfakF3Z0FLVnoyaWJNN09WckxUUXVPQzF4aHVmczBhSUJaRTJGVXM1UWFwMWM5a05hSUlNb3JVcDhWVjhVc1VsQVRFcXFfNHI5cVZscWVCdUVjWDZ3dTJBdDNMTlRuSUtLMVHSAacBQVVfeXFMT0ExcU13ZHM1SWljMU54OFZzY2hqUzJnV2d5R0NXVDNUUG1kcXRJLWVKdUlyWklCdVBCMkJTUFY5bktLNG1CRnd3TGctZnhnT3JEN0xmcGY5OVE4UHhLVk1Id1BTOWJCRGU1aHZlRmRUVUNycmJRVlNCTVhPUlg0d0dlOWRjRWNGMFlhTzdsS3hhT2tOQ2ppeVlBMGlVUkw4Z3lOMUNXdlE?oc=5",
-        "decision": "skipped",
-        "reason": "Today is already at the 8 post cap, and it overlaps with today's AI stocks after the midterms post and the Nov 2 data center naming post."
-      },
-      {
-        "story": "Anthropic models improving nearly twice as fast with help from AI, outside research group says",
-        "source": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPdXRlblNHS20ySGU1ODJYRzdoOU5wMDB0c0pEZlJ1NFBrdW83cklFRl9ZQUxMMTV0ZU1nMWF6Sm9IaEw1Tjl1cHpTT3dXajFfandGRDhmU1d3VlNKekNYTV91VnBfT2s4ekk0c2dBTnRfd044d1A0ZDlIOUVJV09WdDNDZnB6VThFS3BhXzlvLVZKcUtVZ2s4a1NnWlJOLVJ0eGZKbEVtTkxYaFF4NmdERE5PaE9rSDFwRThDajFEdW93Z2xjbmFkbC02a2o?oc=5",
-        "decision": "skipped",
-        "reason": "Daily cap reached; close to the Nov 3 posts on Anthropic's self-building AI warning. A candidate for tomorrow morning."
-      },
-      {
-        "story": "Meta's Muse gets a voice mode",
-        "source": "https://www.theverge.com/tech/1028015/meta-muse-ai-voice-mode-expressive-avatar",
-        "decision": "skipped",
-        "reason": "Daily cap reached; a fair everyday story for tomorrow if still fresh."
-      },
-      {
-        "story": "Perplexity launches Teammates, AI agents for work",
-        "source": "https://www.theverge.com/ai-artificial-intelligence/1028302/perplexity-teammates-ai-agents-work",
-        "decision": "skipped",
-        "reason": "Daily cap reached and not a priority 1 company."
-      },
-      {
-        "story": "Airbnb plans an AI travel agent in the first half of 2027",
-        "source": "https://techcrunch.com/2026/11/05/airbnb-says-its-launching-an-ai-travel-agent-in-the-first-half-of-2027/",
-        "decision": "skipped",
-        "reason": "Daily cap reached; a future plan with no product yet."
-      },
-      {
-        "story": "Google: schools can skip Gemini but AI search is non-negotiable",
-        "source": "https://arstechnica.com/ai/2026/11/google-schools-can-keep-search-while-skipping-gemini-but-ai-search-is-non-negotiable/",
-        "decision": "covered",
-        "reason": "Follow-up to 2026-11-03-google-schools-no-ai-no-search."
-      },
-      {
-        "story": "Lawsuits: ChatGPT and Google's school Chromebook AI linked to harm",
-        "source": "https://arstechnica.com/tech-policy/2026/11/lawsuit-man-introduced-his-wife-to-chatgpt-she-used-it-to-plan-his-murder/",
-        "decision": "skipped",
-        "reason": "Sensitive crime and self-harm cases, daily cap reached, and not suited to an auto run this late."
-      },
-      {
-        "story": "Claude Code sends your email address to websites (GitHub issue)",
-        "source": "https://github.com/anthropics/claude-code/issues/107757",
-        "decision": "skipped",
-        "reason": "Single GitHub issue with no independent reporting yet."
-      },
-      {
-        "story": "Nasdaq sinks 5% as investors retreat from AI trade",
-        "decision": "covered",
-        "reason": "Already queued as 2026-11-05-ai-stocks-wipeout-nasdaq-5-percent."
-      },
-      {
-        "story": "OpenAI GPT-6 Cyber launch",
-        "decision": "covered",
-        "reason": "Already queued as 2026-11-05-openai-gpt-6-cyber-81-firefox-flaws."
-      }
-    ],
-    "requests": []
-  },
-  {
-    "run_at": "2026-11-06T00:54:18.443Z",
-    "summary": "Late evening run (about 20:00 New York): no open links or requests; November 5 is already past the 8 job cap and nothing new and major appeared since the last run, so nothing was queued. The open stories below are left for the morning run.",
-    "considered": [
-      {
-        "story": "Meta's Muse gets a voice mode",
-        "source": "https://www.theverge.com/tech/1028015/meta-muse-ai-voice-mode-expressive-avatar",
-        "decision": "skipped",
-        "reason": "Daily cap reached; a timely job written now would expire before the 07:00 window, so the morning run should pick it up."
-      },
-      {
-        "story": "Anthropic models improving nearly twice as fast with help from AI, outside research group says",
-        "decision": "skipped",
-        "reason": "Daily cap reached and already flagged by the last run as a candidate for tomorrow morning."
-      },
-      {
-        "story": "OpenAI pledges new data centers will pay their own way after the midterms",
-        "decision": "skipped",
-        "reason": "Daily cap reached and it overlaps with today's AI stocks post and the November 2 data center post."
-      },
-      {
-        "story": "Perplexity launches Teammates, AI agents for work",
-        "source": "https://www.theverge.com/ai-artificial-intelligence/1028302/perplexity-teammates-ai-agents-work",
-        "decision": "skipped",
-        "reason": "Daily cap reached and not a priority 1 company."
-      },
-      {
-        "story": "Airbnb plans an AI travel agent in the first half of 2027",
-        "source": "https://techcrunch.com/2026/11/05/airbnb-says-its-launching-an-ai-travel-agent-in-the-first-half-of-2027/",
-        "decision": "skipped",
-        "reason": "Daily cap reached; a future plan with no product yet."
-      },
-      {
-        "story": "Lawsuit: man says ChatGPT told him to stop paying rent and got him evicted",
-        "decision": "skipped",
-        "reason": "Sensitive lawsuit, daily cap reached."
-      },
-      {
-        "story": "Tencent launches Hy4 open source model",
-        "source": "https://www.tencent.com/tencent-launches-hy4-joining-the-ranks-of-the-worlds-leading-open-source-ai-models/",
-        "decision": "skipped",
-        "reason": "Daily cap reached and little US consumer interest."
-      },
-      {
-        "story": "OpenAI GPT-6 Astra covertly underperforms on safety research",
-        "decision": "covered",
-        "reason": "Already queued as 2026-11-05-openai-astra-quietly-slacked-safety-research."
-      }
-    ],
-    "requests": []
-  },
-  {
     "run_at": "2026-11-06T03:07:11.691Z",
     "summary": "Late Thursday run (New York): Nov 5 already hit 8 posts, so queued 2 priority 1 stories for the Nov 6 morning windows. No open links or requests.",
     "considered": [
@@ -5615,6 +5491,50 @@
         "source": "leads/latest.json (PPC Land)",
         "decision": "skipped",
         "reason": "Single trade source and the cap is full."
+      },
+      {
+        "story": "Jensen Huang resignation and affair coverage",
+        "decision": "covered",
+        "reason": "Several jobs today, latest 2026-11-12-huang-third-affair-reuters-v3."
+      }
+    ],
+    "requests": []
+  },
+  {
+    "run_at": "2026-11-13T01:01:03.064Z",
+    "summary": "Evening run (19:53 New York): no open links or requests, all 6 guides exist; queued the priority 1 Gemini 4 Hydrogen launch (it will hold for tomorrow's first slot because today's post cap is used).",
+    "considered": [
+      {
+        "story": "Google releases Gemini 4 Hydrogen, Flash successor now powering Search for all users",
+        "source": "https://venturebeat.com/technology/google-launches-gemini-4-hydrogen-a-faster-smarter-pricier-flash-successor",
+        "decision": "queued",
+        "job_id": "2026-11-12-gemini-4-hydrogen-free-users",
+        "priority": 1,
+        "reason": "Major Google model launch not yet covered, confirmed by VentureBeat, Digital Trends, MakeUseOf and Chrome Unboxed. Set timely false so it survives until tomorrow's 07:00 window, since today's cap is full. Google's own blog could not be opened from here, and image hosts were blocked for checking, so the pipeline download is the image check."
+      },
+      {
+        "story": "Former OpenAI researcher says six Chinese AI models were built on banned Nvidia chips",
+        "source": "leads/latest.json (Crypto Briefing, Hacker News)",
+        "decision": "skipped",
+        "reason": "Daily cap is full and only minor outlets so far; worth checking tomorrow for major coverage."
+      },
+      {
+        "story": "Microsoft outage disrupts Outlook and Teams for hours (Reuters)",
+        "source": "leads/latest.json",
+        "decision": "skipped",
+        "reason": "Not an AI story."
+      },
+      {
+        "story": "OpenAI picks Aleph as exclusive ChatGPT Ads reseller in 44 markets",
+        "source": "leads/latest.json (Mi-3)",
+        "decision": "skipped",
+        "reason": "Trade story mostly outside the US, single source, cap full."
+      },
+      {
+        "story": "Jim Cramer's questions about Anthropic ahead of its IPO (CNBC)",
+        "source": "leads/latest.json",
+        "decision": "skipped",
+        "reason": "Opinion follow-up; the Anthropic IPO was already posted today."
       },
       {
         "story": "Jensen Huang resignation and affair coverage",
