@@ -1,0 +1,120 @@
+{
+  "id": "2026-11-13-chinese-ai-labs-banned-blackwell-fingerprint",
+  "created_at": "2026-11-13T07:20:00Z",
+  "story_time": "2026-11-12T21:48:00Z",
+  "timely": false,
+  "sensitive": true,
+  "priority": 1,
+  "format": "carousel",
+  "site_category": "companies",
+  "ab": { "headline": "short", "photo": "story" },
+  "sources": [
+    { "name": "Startup Fortune", "url": "https://startupfortune.com/breaking-news-as-researcher-says-six-chinese-ai-models-carry-the-fingerprint-of-banned-nvidia-chips/" },
+    { "name": "Glitchwire", "url": "https://glitchwire.com/news/openai-researcher-claims-gpu-fingerprints-prove-chinese-labs-trained-on-export-b/" },
+    { "name": "Hugging News", "url": "https://huggingnews.com/ai/researcher-will-depue-defends-nvidia-blackwell-forensics-says-deepseek-v-054458da" },
+    { "name": "Will DePue on X", "url": "https://x.com/willdepue/status/2120992457630326841" }
+  ],
+  "caption": "A researcher who worked on OpenAI's Sora and GPT-5 says six models from DeepSeek, Moonshot, MiniMax and Ant Group were built on Nvidia Blackwell chips, which are barred from export to China.\nWill DePue says the chip leaves a fingerprint in a model's published weights.\nHis report says it cannot show where the chips were or whether any rule was broken, and none of the labs has commented.\n\nShould the US be able to trace which chips trained an AI model?\n\nFollow @neurafeed.ai for daily AI news.\n\nSource: Glitchwire · Photo: Glitchwire",
+  "threads_text": "A researcher who worked on OpenAI's Sora says DeepSeek, Moonshot, MiniMax and Ant Group built six models on Nvidia Blackwell chips that are banned from export to China. He says the GPU leaves a fingerprint in the weights. It cannot prove where the chips were. Do you buy the forensics?",
+  "slides": [
+    {
+      "kind": "cover",
+      "headline": "Researcher says top Chinese AI labs used *banned Nvidia chips*",
+      "image": {
+        "url": "https://cdn.glitchwire.com/openai-researchers-claims-discovery-of-chinese-blackwell-exp.jpg",
+        "credit": "Glitchwire",
+        "fallback_urls": [
+          "https://startupfortune.com/wp-content/uploads/2026/11/nvidia-moonshot-deepseek.jpg",
+          "https://blogs.nvidia.com/wp-content/uploads/2026/10/Social_Social_ai-infrastructure-press-dsx-kv-1920x1080-5304850.png"
+        ]
+      },
+      "pos": "center center",
+      "badges": [
+        { "url": "assets/logos/nvidia.png", "shape": "free" },
+        { "url": "https://static01.nyt.com/images/2025/01/29/multimedia/29DeepSeek-CEO-WWK/29DeepSeek-CEO-WWK-superJumbo.jpg?quality=75&auto=webp", "fit": "cover", "pos": "center 40%" }
+      ]
+    },
+    {
+      "kind": "card",
+      "heading": "Six models, *four labs*",
+      "paras": [
+        "Will DePue, a researcher who worked on OpenAI's Sora and GPT-5, says six models from DeepSeek, Moonshot, MiniMax and Ant Group were built on Nvidia Blackwell chips.",
+        "Those chips are barred from export to China."
+      ],
+      "image": {
+        "url": "https://static.huggingnews.com/story-media/2120992505147937164/HW9GxIsXgAAinnQ-medium.jpg",
+        "credit": "Will DePue on X",
+        "fit": "contain",
+        "fallback_urls": ["https://startupfortune.com/wp-content/uploads/2026/11/nvidia-moonshot-deepseek-1024x576.jpg"]
+      },
+      "note": "Chart: Will DePue on X"
+    },
+    {
+      "kind": "card",
+      "heading": "A *fingerprint* in the weights",
+      "paras": [
+        "He says the random values a model starts with follow a pattern tied to the exact GPU, and traces survive training.",
+        "He searched over six trillion chip and seed combinations. His method matched all 24 models with disclosed hardware."
+      ],
+      "image": {
+        "url": "https://techcrunch.com/wp-content/uploads/2025/01/deepseek-2.jpg",
+        "credit": "TechCrunch",
+        "fallback_urls": ["https://techstartups.com/wp-content/uploads/2026/06/DeepSeek.jpg"]
+      }
+    },
+    {
+      "kind": "card",
+      "heading": "Over *$500 million* in chips",
+      "paras": [
+        "He estimates Kimi K3 and DeepSeek-V4-Pro each used 2,000 to 3,000 Blackwell GPUs.",
+        "On rented hardware, a Blackwell B300 rebuilt DeepSeek-V4-Flash's starting weights bit for bit. An older H100 could not."
+      ],
+      "image": {
+        "url": "https://www.unite.ai/wp-content/uploads/2026/10/moonshot-ai-releases-kimi-k3-1-pro-first-model-in-new-k3-1-series.jpg",
+        "credit": "Unite.AI",
+        "fallback_urls": ["https://kingy.ai/wp-content/uploads/2026/10/kimi-k3-1-pro-launch-artwork-1024x538.webp"]
+      }
+    },
+    {
+      "kind": "card",
+      "heading": "What it *cannot* prove",
+      "paras": [
+        "The report says the weights cannot show where the chips were or whether export rules were broken. Blackwell systems can be rented outside China.",
+        { "t": "The work is not peer reviewed, and no lab has commented.", "strong": true }
+      ],
+      "image": {
+        "url": "https://blogs.nvidia.com/wp-content/uploads/2026/10/gpu-architecture-rolling-blog-kv-ocp-blog-1920x1080-5820310-1680x945.jpg",
+        "credit": "NVIDIA",
+        "fallback_urls": ["https://explainx.ai/images/blog-library/gpu-cluster-grid.webp"]
+      }
+    },
+    {
+      "kind": "cta",
+      "hook": "Follow to see if Nvidia, Washington or the labs answer these chip claims."
+    }
+  ],
+  "site_article": {
+    "headline": "Researcher says six Chinese AI models were built on Nvidia Blackwell chips barred from China",
+    "dek": "Will DePue says a hardware fingerprint in published model weights points to Blackwell GPUs at DeepSeek, Moonshot, MiniMax and Ant Group, though the method cannot show where the chips were.",
+    "summary": "Researcher Will DePue published a report on November 12, 2026, claiming six open-weights models from four Chinese labs were initialized on Nvidia Blackwell GPUs. He estimates the restricted chips involved cost more than $500 million.",
+    "seo_title": "Researcher: Chinese AI labs used banned Nvidia Blackwell chips",
+    "seo_description": "Will DePue says weight forensics show DeepSeek, Moonshot, MiniMax and Ant Group models were built on Blackwell GPUs that are barred from export to China.",
+    "answer_summary": "According to a report by researcher Will DePue, six models from DeepSeek, Moonshot, MiniMax and Ant Group carry a signature of Nvidia Blackwell GPUs. The report says it cannot show where the chips were located or whether export controls were broken.",
+    "tags": ["Nvidia", "DeepSeek", "Moonshot AI", "Export controls", "Blackwell"],
+    "hero_alt": "Illustration accompanying a news report on Chinese AI labs and Nvidia Blackwell chips.",
+    "paragraphs": [
+      { "kind": "fact", "text": "Will DePue, a researcher who contributed to OpenAI's Sora and GPT-5 post-training, published a report on November 12, 2026, claiming that six AI models from four leading Chinese labs were built on Nvidia Blackwell GPUs, according to Glitchwire. Blackwell chips are barred from export to China. The report was released through Unemployment Labs, which describes itself as a small, independent group of former frontier lab researchers and engineers.", "sources": [1, 0] },
+      { "kind": "fact", "text": "The models named in the report are DeepSeek-V4-Flash and DeepSeek-V4-Pro from DeepSeek, Kimi K3 and K3.1-Pro from Moonshot, MiniMax-M3 from MiniMax and Ling-3.1-flash from Ant Group, Startup Fortune reported. In a post on X, DePue described his result as conclusive forensic evidence.", "sources": [0, 3] },
+      { "kind": "heading", "text": "How the method works" },
+      { "kind": "fact", "text": "DePue's argument rests on how a model is first set up. The starting values of its weights follow a pattern that depends on the exact GPU configuration and the random seed, and he argues traces of that pattern survive training and remain visible in the published weights. He said he searched more than six trillion combinations of chip layout and seed. According to the report, real matches ranged from 49 to 1,385 standard deviations above chance, while the best accidental match reached about 8.", "sources": [0, 1] },
+      { "kind": "fact", "text": "To test the approach, the report checked 24 open-weights models whose developers had disclosed their hardware, and the method agreed with every one, including DeepSeek-V3 and Moonshot's Kimi K2, which were trained on Nvidia H800 chips. On rented hardware, a Blackwell B300 reproduced DeepSeek-V4-Flash's starting weights bit for bit using the recovered seed, while an older H100 did not, Startup Fortune reported. Models from Qwen, GLM, Tencent, Xiaomi and StepFun read as the older Hopper generation.", "sources": [0, 2] },
+      { "kind": "fact", "text": "DePue estimates that Kimi K3 and DeepSeek-V4-Pro each used 2,000 to 3,000 Blackwell GPUs. Glitchwire reported that he puts the cost of the restricted chips across the labs at more than $500 million.", "sources": [0, 1] },
+      { "kind": "heading", "text": "What the report does not show" },
+      { "kind": "fact", "text": "The report states that the weights cannot show where the chips were, how access was obtained or whether export controls were broken. Blackwell systems can be rented from data centers outside China. The method also identifies the hardware that generated the starting weights, not necessarily every chip used in training, and the paper says it supports, without proving, the inference that Blackwell chips performed the training. The research has not been peer reviewed.", "sources": [0, 1] },
+      { "kind": "fact", "text": "DePue said senior researchers at OpenAI and Anthropic verified the result, but neither company has commented publicly. Nvidia did not respond to Glitchwire's request for comment, and no response from DeepSeek, Moonshot, MiniMax or Ant Group has been reported. DeepSeek has previously denied using Blackwell chips.", "sources": [1, 0] },
+      { "kind": "fact", "text": "On November 13, 2026, DePue defended the findings and said he found no matching signature in DeepSeek's September V4.1-Flash release, which he said shows the company changed how it creates starting weights, not which chips it used. Investor Michael Burry said the findings were no surprise to analysts who had questioned the volume of advanced Nvidia chips shipped to Southeast Asia, Hugging News reported.", "sources": [2] },
+      { "kind": "analysis", "text": "If the method holds up under outside review, it would give regulators a way to check hardware claims from published model files alone. The report is careful to separate what the weights reveal from questions about location and legality, and those questions remain open." },
+      { "kind": "why_it_matters", "text": "Watch for responses from Nvidia and the four labs, and for whether independent researchers reproduce the results using the scripts DePue says are available to reviewers." }
+    ]
+  }
+}

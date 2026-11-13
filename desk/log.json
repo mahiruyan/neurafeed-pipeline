@@ -1,65 +1,5 @@
 [
   {
-    "run_at": "2026-11-06T07:06:55.703Z",
-    "summary": "Made Mahir's X link into a Reel (We were always blue) and queued one Google story; Nov 6 already has four news posts waiting, so the rest is left for daytime runs.",
-    "considered": [
-      {
-        "story": "Mahir's link: Ari Kuschnir's satirical corporate song \"We were always blue\"",
-        "source": "https://x.com/arikuschnir/status/2118433753030922551",
-        "decision": "queued",
-        "job_id": "2026-11-06-we-were-always-blue-corporate-song-reel",
-        "priority": 1,
-        "reason": "From Mahir's link, with his headline and credit. Marked sensitive because the joke is about politics after the election, so it waits for his approval on Telegram. I could not open X from here, so the caption stays general and does not say the clip is AI-made."
-      },
-      {
-        "story": "Google makes Gemini Omni 1.2 Flash available: 15-second videos, free clips in Google Vids, 30 percent cheaper API",
-        "source": "https://thenextweb.com/news/google-gemini-omni-1-2-flash-video-15-seconds-price-cut",
-        "decision": "queued",
-        "job_id": "2026-11-06-gemini-omni-15-second-videos-free",
-        "priority": 1,
-        "reason": "Major Google launch with an everyone angle (three free 15-second videos a month in Google Vids); confirmed by The Next Web, The Decoder and Fone Arena. Not timely any more, so timely is false."
-      },
-      {
-        "story": "Mark Cuban says Facebook knowingly runs AI deepfake scam ads",
-        "source": "https://finance.yahoo.com/technology/ai/articles/mark-cuban-says-facebook-knowingly-213000020.html",
-        "decision": "skipped",
-        "reason": "Opinion claim that still has only one source in the leads; left for the daytime run, and Nov 6 already has four news posts waiting."
-      },
-      {
-        "story": "Claude Code reportedly sends users' email address to websites (GitHub issue)",
-        "source": "https://github.com/anthropics/claude-code/issues/107757",
-        "decision": "skipped",
-        "reason": "Still only the GitHub issue; no reputable outlet or Anthropic statement found."
-      },
-      {
-        "story": "OpenAI forms JPMorgan partnership ahead of a 2027 IPO",
-        "decision": "skipped",
-        "reason": "Too close to the Brockman IPO post from Nov 5; only PYMNTS in the leads."
-      },
-      {
-        "story": "Google sued over a teen's AI chats on a school Chromebook",
-        "decision": "skipped",
-        "reason": "Sensitive suicide-related lawsuit, still only regional outlets."
-      },
-      {
-        "story": "Asian markets and Nikkei fall after the AI selloff",
-        "decision": "covered",
-        "reason": "Same story as 2026-11-05-ai-stocks-wipeout-nasdaq-5-percent."
-      },
-      {
-        "story": "OpenAI data center pledges after the midterms",
-        "decision": "covered",
-        "reason": "Already queued as 2026-11-06-openai-data-centers-pay-own-power."
-      },
-      {
-        "story": "Anthropic IPO timing threatened by AI backlash (Reuters)",
-        "decision": "covered",
-        "reason": "Already queued as 2026-11-06-anthropic-ipo-investors-balk-selloff."
-      }
-    ],
-    "requests": []
-  },
-  {
     "run_at": "2026-11-06T08:59:39.026Z",
     "summary": "Early morning run (about 04:00 New York): no open links or requests, no new priority 1 story since the last run; November 6 already has 6 jobs and the 2 utility posts due after 11:00 fill the 8 job cap, so nothing was queued.",
     "considered": [
@@ -5537,6 +5477,83 @@
         "story": "OpenAI picks Aleph as ChatGPT Ads reseller in 44 markets",
         "decision": "skipped",
         "reason": "Ad industry detail, mostly outside the US."
+      }
+    ],
+    "requests": []
+  },
+  {
+    "run_at": "2026-11-13T07:08:36.631Z",
+    "summary": "Night run (01:55 New York): no open links or requests; queued 2 news carousels (Blackwell chip forensics on Chinese AI labs, patent suits against Anthropic and OpenAI). Image hosts could not be opened from this run, so cover photos were chosen from the source articles without viewing them.",
+    "considered": [
+      {
+        "story": "Researcher Will DePue says six Chinese AI models were built on banned Nvidia Blackwell chips",
+        "source": "https://glitchwire.com/news/openai-researcher-claims-gpu-fingerprints-prove-chinese-labs-trained-on-export-b/",
+        "decision": "queued",
+        "job_id": "2026-11-13-chinese-ai-labs-banned-blackwell-fingerprint",
+        "priority": 1
+      },
+      {
+        "story": "Flinn AI sues Anthropic and OpenAI over five attention patents each",
+        "source": "https://news.bloomberglaw.com/ip-law/anthropic-openai-accused-of-copying-neural-networking-patents",
+        "decision": "queued",
+        "job_id": "2026-11-13-flinn-patent-suit-anthropic-openai",
+        "priority": 2
+      },
+      {
+        "story": "Federal judge removes lawyers over fake AI citations",
+        "decision": "skipped",
+        "reason": "The matching reports found are from June 2026, not a new case."
+      },
+      {
+        "story": "OpenAI releases GPT-6 Cyber with a Critical rating",
+        "source": "https://www.theregister.com/security/2026/11/05/openai-releases-gpt-6-cyber-and-promises-this-one-stays-within-rules-of-engagement/5307855",
+        "decision": "skipped",
+        "reason": "Released November 5, a week old."
+      },
+      {
+        "story": "Gemini 4 Hydrogen launch",
+        "decision": "covered",
+        "reason": "Already queued as 2026-11-12-gemini-4-hydrogen-free-users."
+      },
+      {
+        "story": "Huang had a relationship with a second employee (Reuters)",
+        "decision": "covered",
+        "reason": "Already covered by the Huang affair jobs of 2026-11-12."
+      },
+      {
+        "story": "Democrats probe Trump's Nvidia China deal",
+        "decision": "covered",
+        "reason": "Already queued as 2026-11-13-democrats-probe-trump-nvidia-china-deal."
+      },
+      {
+        "story": "Fed governor Bowman warns AI investments and the Anthropic IPO could trigger a correction",
+        "source": "https://www.semafor.com/article/11/11/2026/anthropic-ipo-could-lead-to-large-correction-in-markets-fed-official-says",
+        "decision": "skipped",
+        "reason": "From November 11 and today already has two Anthropic or IPO related posts in the queue."
+      },
+      {
+        "story": "Over 20,000 veterans claimed a free year of ChatGPT Plus",
+        "source": "https://openai.com/index/chatgpt-plus-for-veterans/",
+        "decision": "skipped",
+        "reason": "Small update with little news value for a carousel."
+      },
+      {
+        "story": "Democrats weigh a bill requiring federal permission to train advanced AI",
+        "source": "https://futurism.com/artificial-intelligence/democrats-federal-permit-train-ai-model",
+        "decision": "skipped",
+        "reason": "Only a proposal under discussion; may be worth a later run if a bill is filed."
+      },
+      {
+        "story": "Edge0-145B frontier model on your own computer",
+        "source": "https://edge0.ai/blog/introducing-edge0-145b-frontier-ai-capabilities-on-your-own-computer",
+        "decision": "skipped",
+        "reason": "Small company claim with no independent coverage yet."
+      },
+      {
+        "story": "AI turning Apple's app review into a nightmare for synth developers",
+        "source": "https://synthanatomy.com/2026/11/ai-is-turning-apples-app-review-process-into-a-nightmare-for-developers.html",
+        "decision": "skipped",
+        "reason": "Niche audience, one source."
       }
     ],
     "requests": []
