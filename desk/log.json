@@ -1,49 +1,5 @@
 [
   {
-    "run_at": "2026-11-06T14:54:26.786Z",
-    "summary": "Morning run (about 10:00 New York): no open links or requests, no new priority 1 story since the last run; November 6 has 7 news jobs and the last slot under the 8 job cap is kept for the utility post due after 11:00, so nothing was queued.",
-    "considered": [
-      {
-        "story": "OpenAI launches GPT-6 Cyber",
-        "decision": "covered",
-        "reason": "Already queued as 2026-11-05-openai-gpt-6-cyber-81-firefox-flaws."
-      },
-      {
-        "story": "Meta acquires Conductor",
-        "decision": "covered",
-        "reason": "Already posted as 2026-11-05-meta-buys-conductor-coding-agents."
-      },
-      {
-        "story": "Anthropic extends Claude text watermarks to older models",
-        "decision": "covered",
-        "reason": "Already queued as 2026-11-06-claude-text-hidden-watermark."
-      },
-      {
-        "story": "Anthropic ships enterprise security controls for Claude",
-        "source": "https://claude.com/news",
-        "decision": "skipped",
-        "reason": "Admin and security tooling for companies with little interest for normal users, and today is at the cap."
-      },
-      {
-        "story": "OpenAI October developer update (GPT-6.1 Terra, Decisions API)",
-        "decision": "skipped",
-        "reason": "Developer recap of older releases, no new consumer news."
-      },
-      {
-        "story": "SambaNova chips in Supermicro racks",
-        "source": "https://sambanova.ai/",
-        "decision": "skipped",
-        "reason": "Enterprise hardware deal with little US consumer interest."
-      },
-      {
-        "story": "Global AI selloff hits Nikkei and Asian markets",
-        "decision": "covered",
-        "reason": "Same story as 2026-11-05-ai-stocks-wipeout-nasdaq-5-percent."
-      }
-    ],
-    "requests": []
-  },
-  {
     "run_at": "2026-11-06T17:13:34.837Z",
     "summary": "Midday run (about 12:00 New York): no open links or requests; queued the utility post for November 6 (Cursor beginners guide with 5 prompts), which brings the day to 8 desk jobs, so no more news was added.",
     "considered": [
@@ -5567,6 +5523,72 @@
         "source": "https://x.com/ClaudeDevs/status/2120938988165091693",
         "decision": "skipped",
         "reason": "Developer-only beta, little interest for a general audience."
+      }
+    ],
+    "requests": []
+  },
+  {
+    "run_at": "2026-11-13T15:17:23.073Z",
+    "summary": "Morning run (10:07 New York): no open links or requests; November 13 is already full of Instagram posts (3 posted, 2 approved, 3 waiting for Mahir, plus 2 held from yesterday), and no new priority 1 story appeared, so no news carousel. Queued the second site-only guide of the day (Meta AI in WhatsApp). ChatGPT Atlas guides in the plan were skipped because Atlas shut down on August 9, 2026.",
+    "considered": [
+      {
+        "story": "How to use Meta AI in WhatsApp (guides plan, Tier 1)",
+        "source": "https://faq.whatsapp.com/2257017191175152",
+        "decision": "queued",
+        "job_id": "2026-11-13-how-to-use-meta-ai-in-whatsapp-guide",
+        "priority": 2
+      },
+      {
+        "story": "How to use ChatGPT Atlas / Atlas for Windows (guides plan, Tier 1)",
+        "source": "https://en.wikipedia.org/wiki/ChatGPT_Atlas",
+        "decision": "skipped",
+        "reason": "OpenAI shut Atlas down on August 9, 2026, so a how-to guide would be useless; Mahir may want to remove these lines from guides/plan.md."
+      },
+      {
+        "story": "Claude.ai and Claude Code login outage",
+        "source": "https://www.businesstoday.in/technology/news/story/claude-ai-outage-anthropic-investigates-login-failures-as-ai-chatbot-and-coding-tools-face-outage-567403-2026-11-13",
+        "decision": "skipped",
+        "reason": "A short outage that would be stale by the next free slot, and today is at the daily cap."
+      },
+      {
+        "story": "Hackers read some Notion customers' AI chat transcripts through the Fireworks AI breach",
+        "source": "https://techcrunch.com/2026/11/12/cyberattack-on-fireworks-ai-allowed-hackers-to-access-notion-customers-chat-transcripts/",
+        "decision": "skipped",
+        "reason": "Daily cap reached; from November 12."
+      },
+      {
+        "story": "Test finds AI shopping assistants cite risky sites (Perplexity 15%, ChatGPT 8%, Gemini 4%)",
+        "source": "https://www.theverge.com/ai-artificial-intelligence/1032020/gemini-chatgpt-perplexity-shopping-test-risky-fake-websites-citations",
+        "decision": "skipped",
+        "reason": "Good everyone story but the day is full; candidate for tomorrow if still fresh."
+      },
+      {
+        "story": "BBC finds AI edited real estate photos misleading buyers (housefishing)",
+        "source": "https://www.bbc.com/news/articles/cm62y0wrnz9zo",
+        "decision": "skipped",
+        "reason": "Not researched further because the daily cap is reached; candidate for tomorrow."
+      },
+      {
+        "story": "SoftBank takes a $3.7 billion charge after over-ordering AI power equipment",
+        "source": "https://www.semafor.com/article/11/12/2026/softbank-loses-billions-after-over-ordering-energy-equipment-for-ai-buildout/",
+        "decision": "skipped",
+        "reason": "Daily cap reached."
+      },
+      {
+        "story": "Apple TV 4K with Siri AI goes on sale November 13",
+        "source": "https://www.macrumors.com/2026/11/12/apple-tv-4k-siri-hands-on/",
+        "decision": "skipped",
+        "reason": "Product sale date with mixed early review; not priority 1 and the day is full."
+      },
+      {
+        "story": "Reuters: Huang exit puts $3 billion of Chinese AI projects at risk",
+        "decision": "covered",
+        "reason": "Nvidia and Huang already covered several times today."
+      },
+      {
+        "story": "Nonprofits sue AI labs to halt frontier AI",
+        "decision": "covered",
+        "reason": "Already a job: 2026-11-12-nonprofits-sue-to-freeze-frontier-ai."
       }
     ],
     "requests": []
