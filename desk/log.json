@@ -1,64 +1,5 @@
 [
   {
-    "run_at": "2026-11-06T22:54:53.598Z",
-    "summary": "Evening run (about 18:00 New York): no open links or requests; November 6 is already at the 8 desk job cap and the only new big story, OpenAI closing $11 billion at a $1.25 trillion valuation, is a follow-up to a post we already ran, so nothing was queued.",
-    "considered": [
-      {
-        "story": "OpenAI closes the first $11 billion of its round at a $1.25 trillion valuation, aims for about $20 billion total",
-        "source": "https://gvwire.com/2026/11/06/openai-secures-11-billion-funding-at-1-25-trillion-valuation-bloomberg-news-reports/",
-        "decision": "skipped",
-        "reason": "Follow-up to 2026-10-31-openai-cuts-funding-target-10-billion, which already reported the $1.25 trillion valuation and the cut to about $20 billion; the only new fact is that the money closed, and today is at the 8 job cap."
-      },
-      {
-        "story": "Anthropic IPO buyers see valuation as low as $1.1 trillion (Bloomberg, WSJ, Axios)",
-        "source": "https://www.bloomberg.com/news/articles/2026-11-06/anthropic-ipo-valuation-expectations-pressured-after-ai-rout",
-        "decision": "covered",
-        "reason": "Same story as 2026-11-06-anthropic-ipo-investors-balk-selloff, posted today."
-      },
-      {
-        "story": "Man sues OpenAI, says ChatGPT helped his wife plot his murder",
-        "source": "https://www.cbsnews.com/",
-        "decision": "skipped",
-        "reason": "Single lawsuit story, crime and sensitive, only one outlet in the leads, and the day is at the cap."
-      },
-      {
-        "story": "Daniela Amodei wedding speech remarks (New York Post)",
-        "decision": "skipped",
-        "reason": "Tabloid gossip from one outlet, not news our audience needs."
-      },
-      {
-        "story": "Democrats plan a flood of AI bills after taking control of Congress",
-        "source": "https://www.reuters.com/",
-        "decision": "skipped",
-        "reason": "Political and forward-looking with no bill text yet, and the day is at the cap."
-      },
-      {
-        "story": "EU court adviser says Google Gemini may breach copyright",
-        "source": "https://www.wsj.com/",
-        "decision": "skipped",
-        "reason": "Non-binding opinion in an EU case, low US interest, and the day is at the cap."
-      },
-      {
-        "story": "Mark Cuban says Facebook knowingly runs AI deepfake scam ads",
-        "source": "https://finance.yahoo.com/technology/ai/articles/mark-cuban-says-facebook-knowingly-213000020.html",
-        "decision": "skipped",
-        "reason": "Sensitive fraud claims still from one source read, and the day is at the cap; candidate for tomorrow."
-      },
-      {
-        "story": "Researchers used Claude to cut a lab process from days to 90 minutes",
-        "source": "https://www.anthropic.com/research/how-researchers-use-claude",
-        "decision": "skipped",
-        "reason": "Priority 2 and the day is at the cap; candidate for tomorrow."
-      },
-      {
-        "story": "OpenAI says data centers will pay for their own power",
-        "decision": "covered",
-        "reason": "Already queued as 2026-11-06-openai-data-centers-pay-own-power."
-      }
-    ],
-    "requests": []
-  },
-  {
     "run_at": "2026-11-07T00:53:40.511Z",
     "summary": "Late evening run (about 19:55 New York): no open links or requests; November 6 already has its 8 desk jobs and no new priority 1 story broke since the last run, so nothing was queued.",
     "considered": [
@@ -5582,6 +5523,77 @@
         "story": "Nvidia employees petition for Jensen Huang's return",
         "decision": "covered",
         "reason": "Already queued as 2026-11-13-nvidia-staff-want-jensen-huang-back."
+      }
+    ],
+    "requests": []
+  },
+  {
+    "run_at": "2026-11-13T22:57:22.865Z",
+    "summary": "Evening run (17:53 New York): no open links or requests. November 13 is at the Instagram cap (7 posted plus 1 approved), so no news carousel. Queued the sixth site-only guide of the day (making videos in Gemini with Gemini Omni).",
+    "considered": [
+      {
+        "story": "How to make videos in Gemini with Gemini Omni (guide)",
+        "source": "https://support.google.com/gemini/answer/16126339",
+        "decision": "queued",
+        "job_id": "2026-11-13-how-to-make-videos-in-gemini-omni-guide",
+        "priority": 2
+      },
+      {
+        "story": "How to use ChatGPT Atlas (guides plan, Tier 1)",
+        "source": "https://help-lb.openai.com/en/articles/20001371-evolving-atlas-into-chatgpt-for-browser-based-agentic-work",
+        "decision": "skipped",
+        "reason": "OpenAI retired the Atlas browser on August 9, 2026, so a how-to guide would be wrong; the plan line should be dropped."
+      },
+      {
+        "story": "How to use Veo for free (guides plan, Tier 1)",
+        "source": "https://support.google.com/gemini/answer/16275805",
+        "decision": "skipped",
+        "reason": "Google's docs show video in Gemini needs a paid plan and now runs on Gemini Omni, so the free Veo angle is not supported; wrote the Gemini Omni video guide instead."
+      },
+      {
+        "story": "How to use Sora (guides plan, Tier 1)",
+        "source": "https://9to5google.com/2026/03/24/openai-shutting-down-sora-video-generation-app-but-without-explaining-why/",
+        "decision": "skipped",
+        "reason": "OpenAI shut down the Sora app in 2026."
+      },
+      {
+        "story": "How to use Grok Imagine (guides plan, tool library)",
+        "decision": "skipped",
+        "reason": "Could not find official xAI documentation for Grok Imagine, only third party blogs."
+      },
+      {
+        "story": "Gemini can analyze Google Wallet spending and linked bank accounts",
+        "source": "https://www.talkandroid.com/532199-gemini-now-surfaces-google-wallet-passes-and-spending-data/",
+        "decision": "skipped",
+        "reason": "The feature launched on September 29, 2026; the new headlines are follow-ups, and the day is at the cap."
+      },
+      {
+        "story": "AI helps unlock Kurt Godel's notebooks (The Guardian)",
+        "source": "https://www.theguardian.com/science/2026/nov/13/kurt-godel-notebooks-ai-helps-unlock-hidden-discoveries-man-who-transformed-maths",
+        "decision": "skipped",
+        "reason": "Good strange-story candidate, but the day is at the cap; worth picking up tomorrow morning."
+      },
+      {
+        "story": "$11.4M in Nvidia hardware vanishes during shipment (FreightWaves)",
+        "source": "https://www.freightwaves.com/news/11-4-million-in-nvidia-hardware-vanishes-during-shipment-from-california-to-texas",
+        "decision": "skipped",
+        "reason": "Crime and money story with broad appeal, not read in full this run and the day is at the cap; candidate for tomorrow."
+      },
+      {
+        "story": "Jensen Huang's departure leaves a hole in AI startup funding (TechCrunch)",
+        "source": "https://techcrunch.com/2026/11/13/jensen-huangs-departure-blasts-big-hole-in-ai-startup-funding-vcs-and-founders-say/",
+        "decision": "skipped",
+        "reason": "Another Huang angle on a day already full of Nvidia posts, and the cap is reached."
+      },
+      {
+        "story": "Fed survey: AI tops worries about the financial system (Reuters)",
+        "decision": "skipped",
+        "reason": "Not read in full and the day is at the cap; a money candidate for tomorrow."
+      },
+      {
+        "story": "OpenAI disbands its robotics team",
+        "decision": "covered",
+        "reason": "Already queued as 2026-11-13-openai-disbands-robotics-team."
       }
     ],
     "requests": []

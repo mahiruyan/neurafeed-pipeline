@@ -1,0 +1,295 @@
+{
+  "id": "2026-11-13-how-to-make-videos-in-gemini-omni-guide",
+  "format": "utility",
+  "site_only": true,
+  "created_at": "2026-11-13T23:20:00Z",
+  "story_time": "2026-11-13T23:20:00Z",
+  "timely": false,
+  "sensitive": false,
+  "priority": 2,
+  "review": true,
+  "sources": [
+    {
+      "name": "Gemini Apps Help: Generate videos with Gemini Apps",
+      "url": "https://support.google.com/gemini/answer/16126339"
+    },
+    {
+      "name": "Gemini Apps Help: Gemini Apps limits and upgrades for Google AI subscribers",
+      "url": "https://support.google.com/gemini/answer/16275805"
+    },
+    {
+      "name": "Google: Gemini Omni 1.2 Flash",
+      "url": "https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemini-omni-1-2-flash/"
+    },
+    {
+      "name": "The Next Web",
+      "url": "https://thenextweb.com/news/google-gemini-omni-flash-video-model-io-2026"
+    },
+    {
+      "name": "Android Central",
+      "url": "https://www.androidcentral.com/apps-software/tired-of-video-editing-googles-gemini-omni-changes-scenes-when-you-ask"
+    }
+  ],
+  "caption": "Gemini can now make and edit short videos from a prompt, a photo or a clip, using Google's Gemini Omni model.\nYou need a Google AI plan, and clips run 3 to 10 seconds (15 on Ultra).\n\nWhat would you make first?\n\nFollow @neurafeed.ai for daily AI news.\n\nSource: Google · Photo: Google",
+  "threads_text": "Gemini now makes and edits short videos by chat: ask it to swap an object or change the camera angle and it redoes the clip. It needs a paid Google AI plan, and clips top out at 10 seconds (15 on Ultra). Would you pay for AI video?",
+  "slides": [
+    {
+      "kind": "cover",
+      "headline": "How to make *AI videos in Gemini*, step by step",
+      "image": {
+        "url": "https://cdn.mos.cms.futurecdn.net/kGsrn92mz7Uqa2hunNAMHd-2560-80.jpg",
+        "credit": "Google",
+        "fallback_urls": [
+          "https://cdn.mos.cms.futurecdn.net/kGsrn92mz7Uqa2hunNAMHd.jpg"
+        ]
+      },
+      "pos": "center center"
+    },
+    {
+      "kind": "card",
+      "heading": "1. Open *Create video*",
+      "paras": [
+        "On gemini.google.com, open the sidebar and pick Create video. Type a prompt, add up to five images or one video, then Submit.",
+        "It takes a few minutes."
+      ],
+      "image": {
+        "url": "https://cdn.mos.cms.futurecdn.net/nXDtxKJsMpnzvEWb3UjZNd.jpg",
+        "credit": "Google",
+        "fit": "contain"
+      }
+    },
+    {
+      "kind": "card",
+      "heading": "2. Know the *limits*",
+      "paras": [
+        "You need a Google AI plan and must be 18 or older.",
+        "Clips run 3 to 10 seconds, or up to 15 with AI Ultra. Video uses more of your limit than anything else."
+      ],
+      "image": {
+        "url": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/gemini-omni-1.2_FZLql41.width-1300.png",
+        "credit": "Google",
+        "fit": "contain"
+      }
+    },
+    {
+      "kind": "prompt",
+      "heading": "3. Edit by *asking*",
+      "paras": [
+        "In the same chat you can replace objects, change the camera angle or extend the clip.",
+        "Edits build on the clip you already have."
+      ],
+      "prompt": "Keep everything the same, but replace the [red car] with a [vintage bicycle] and move the camera to a low angle."
+    },
+    {
+      "kind": "cta",
+      "hook": "Follow for a new hands-on AI tool guide every day."
+    }
+  ],
+  "site_article": {
+    "kind": "guide",
+    "headline": "How to make videos in Gemini with Gemini Omni, step by step",
+    "dek": "Gemini can now create and edit short clips from a prompt, a photo or a video. Here is what you need, the steps to a first clip, the limits, and prompts to copy.",
+    "summary": "Gemini Omni is Google's video model inside the Gemini app: you describe a scene, add images or a clip if you want, and edit the result by chatting. It needs a Google AI plan, and clips run 3 to 10 seconds, or up to 15 on AI Ultra.",
+    "seo_title": "How to make videos in Gemini with Gemini Omni",
+    "seo_description": "How to make videos in Gemini: who can use Gemini Omni, the steps to a first clip, length and plan limits, editing by chat, and prompts to copy.",
+    "answer_summary": "Go to gemini.google.com, open the sidebar, choose Create video, type a prompt (and add images or a video if you like), then select Submit. You need a Google AI plan and must be 18 or older; clips are 3 to 10 seconds, or up to 15 with AI Ultra.",
+    "tags": [
+      "Gemini",
+      "Gemini Omni",
+      "AI video",
+      "Google",
+      "Guides"
+    ],
+    "hero_alt": "Google's launch image for Gemini Omni from Google I/O 2026.",
+    "paragraphs": [
+      {
+        "kind": "fact",
+        "text": "How to make videos in Gemini, in short: open Gemini on the web, choose Create video in the sidebar, describe the clip you want and select Submit. The model behind it is Gemini Omni, which Google describes as a video generator that creates and edits videos through conversation and can combine text, images and video in one request.",
+        "sources": [
+          0
+        ]
+      },
+      {
+        "kind": "fact",
+        "text": "The catch is cost. Video in the Gemini app needs a paid Google AI plan, clips are short, and Google says video uses more of your usage limit than any other feature. This guide covers who can use it, the steps, the limits, how editing works, and a set of prompts you can copy.",
+        "sources": [
+          0,
+          1
+        ]
+      },
+      {
+        "kind": "heading",
+        "text": "What Gemini Omni is"
+      },
+      {
+        "kind": "fact",
+        "text": "Google introduced Gemini Omni at its I/O conference on May 19, 2026, as a family of Google DeepMind models for making and editing video from text, images, audio and video. The first version, Gemini Omni Flash, rolled out to the Gemini app and to Google Flow for paying subscribers the same day, according to The Next Web.",
+        "sources": [
+          3
+        ]
+      },
+      {
+        "kind": "fact",
+        "text": "On November 5, 2026, Google released Gemini Omni 1.2 Flash. The company said the update creates and edits clips up to 15 seconds long, up from 10, keeps characters and objects more consistent from the first frame to the last, handles dialogue and lip sync better, and follows camera moves with fewer unwanted jump cuts.",
+        "sources": [
+          2
+        ]
+      },
+      {
+        "kind": "heading",
+        "text": "What you need to make videos in Gemini"
+      },
+      {
+        "kind": "fact",
+        "text": "Google's help page lists three requirements. A personal account needs a Google AI plan, and a work or school account needs a qualifying Google Workspace license. You must be 18 or older. And you must be signed in to Gemini.",
+        "sources": [
+          0
+        ]
+      },
+      {
+        "kind": "fact",
+        "text": "Google's limits page shows video generation under the AI Plus, AI Pro and AI Ultra plans and rates it as the feature with the highest usage cost. Higher plans get more room: AI Plus has twice the standard limits, AI Pro four times, and AI Ultra five or twenty times the AI Pro limits depending on the subscription.",
+        "sources": [
+          1
+        ]
+      },
+      {
+        "kind": "fact",
+        "text": "Some features are restricted by place. Uploading a video to edit it, and creating an avatar, are not available in the European Economic Area, Switzerland, the United Kingdom or some US states, according to Google.",
+        "sources": [
+          0
+        ]
+      },
+      {
+        "kind": "heading",
+        "text": "How to make your first video, step by step"
+      },
+      {
+        "kind": "step",
+        "title": "1. Open Create video",
+        "text": "Go to gemini.google.com, open the sidebar and select Create video."
+      },
+      {
+        "kind": "step",
+        "title": "2. Pick a template, if you want",
+        "text": "Templates are optional. Google suggests them as a quick way to try a style before writing your own prompt."
+      },
+      {
+        "kind": "step",
+        "title": "3. Write the prompt and add media",
+        "text": "Type what should happen in the clip. To start from your own material, use the image or video buttons. You can add one video and up to five images per request. Only upload photos you have the right to use."
+      },
+      {
+        "kind": "step",
+        "title": "4. Check the shape before you submit",
+        "text": "The aspect ratio is set before the video is made. A text-only prompt defaults to landscape; if you upload media, the upload sets the ratio. Then select Submit."
+      },
+      {
+        "kind": "step",
+        "title": "5. Wait, then download",
+        "text": "A clip can take a few minutes, and you cannot use that chat while it is being made. When it is done, select Share under the video, then Download video or Share on YouTube."
+      },
+      {
+        "kind": "tip",
+        "text": "Google suggests working out the prompt in a normal Gemini chat first, then pasting the final version into Create video. If you want sound, say so: you can ask Gemini to add audio to the video."
+      },
+      {
+        "kind": "heading",
+        "text": "How long Gemini videos can be"
+      },
+      {
+        "kind": "fact",
+        "text": "In the Gemini app, clips run from 3 to 10 seconds, or up to 15 seconds with an AI Ultra subscription. Google said on November 5 that 15 second videos with the new 1.2 model were rolling out to AI Ultra subscribers in the Gemini app.",
+        "sources": [
+          0,
+          2
+        ]
+      },
+      {
+        "kind": "heading",
+        "text": "Edit a Gemini video by chatting"
+      },
+      {
+        "kind": "fact",
+        "text": "Editing is the part that sets Gemini Omni apart from older one-shot video tools. In the same conversation you can ask it to remove or replace an object, change the camera angle, change the scene, or extend the clip by up to 10 more seconds. Google says the 1.2 model refines the existing clip through follow-up prompts instead of making a new one from scratch.",
+        "sources": [
+          0,
+          2
+        ]
+      },
+      {
+        "kind": "prompt",
+        "title": "Prompt 1: Describe the whole shot",
+        "text": "A [subject] [doing an action] in [place] at [time of day]. The camera [slowly moves toward the subject]. [Style, for example: handheld phone video]. Add natural background sound."
+      },
+      {
+        "kind": "prompt",
+        "title": "Prompt 2: Bring a photo to life",
+        "text": "Animate the photo I uploaded. Keep the people and the background exactly as they are. [Describe the one movement you want, for example: the dog turns its head toward the camera]."
+      },
+      {
+        "kind": "prompt",
+        "title": "Prompt 3: Swap one object",
+        "text": "Keep everything the same, but replace the [red car] with a [vintage bicycle]."
+      },
+      {
+        "kind": "prompt",
+        "title": "Prompt 4: Change the camera",
+        "text": "Same scene and same action, but film it from a low angle, looking up at the [subject]."
+      },
+      {
+        "kind": "prompt",
+        "title": "Prompt 5: Make it longer",
+        "text": "Extend this video by [5] seconds. The [subject] [keeps walking and stops at the door]."
+      },
+      {
+        "kind": "heading",
+        "text": "Avatars: put yourself in the video"
+      },
+      {
+        "kind": "fact",
+        "text": "Gemini can also make an avatar from a recording of your face and voice. After that you can tag yourself, or other people who have shared their avatar with you, in a prompt by typing @ and their Google username. The Next Web reported that setting one up involves recording yourself and reading a series of numbers aloud.",
+        "sources": [
+          0,
+          3
+        ]
+      },
+      {
+        "kind": "heading",
+        "text": "Other ways to try Gemini Omni"
+      },
+      {
+        "kind": "fact",
+        "text": "Not everyone needs the Gemini app. Google said in May that Omni was coming to YouTube Shorts and the YouTube Create app at no extra cost, and in November it said Google Vids can make 15 second Omni clips at no additional cost with a Google account or a Workspace subscription. Omni is also in Google Flow, Google's filmmaking tool.",
+        "sources": [
+          3,
+          4,
+          2
+        ]
+      },
+      {
+        "kind": "heading",
+        "text": "What Gemini Omni is still bad at"
+      },
+      {
+        "kind": "fact",
+        "text": "Google itself says the model still needs work on fast sports action, quick changes in a script, and complex physics, so expect odd results there. Every Omni video carries an invisible SynthID watermark, and The Next Web reported that people can check for it in the Gemini app, Gemini in Chrome and Google Search.",
+        "sources": [
+          2,
+          3
+        ]
+      },
+      {
+        "kind": "fact",
+        "text": "Google's rules also apply: no videos that break its terms or prohibited use policy, infringe on someone's copyright or privacy, or are meant to deceive, harass or harm. Google may refuse to make a video, or remove it, if it detects a possible violation.",
+        "sources": [
+          0
+        ]
+      },
+      {
+        "kind": "analysis",
+        "text": "The short version: if you already pay for a Google AI plan, Create video in Gemini is the easiest way to try Omni, and the edit-by-chat loop is where it earns its keep. If you do not pay, start with the free routes in YouTube or Google Vids before buying a plan just for video."
+      }
+    ]
+  }
+}
