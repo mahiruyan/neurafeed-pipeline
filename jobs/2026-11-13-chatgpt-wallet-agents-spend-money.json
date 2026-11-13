@@ -1,0 +1,116 @@
+{
+  "id": "2026-11-13-chatgpt-wallet-agents-spend-money",
+  "created_at": "2026-11-13T19:20:00Z",
+  "story_time": "2026-11-13T16:00:00Z",
+  "timely": true,
+  "sensitive": false,
+  "priority": 1,
+  "format": "carousel",
+  "site_category": "breaking",
+  "ab": { "headline": "short", "photo": "story" },
+  "sources": [
+    { "name": "9to5Mac", "url": "https://9to5mac.com/2026/11/13/openai-launches-chatgpt-wallet-enabling-dot-agents-to-make-purchases/" },
+    { "name": "SQ Magazine", "url": "https://sqmagazine.co.uk/openai-launches-chatgpt-wallet-ai-agents/" },
+    { "name": "Data Studios", "url": "https://www.datastudios.org/post/chatgpt-wallet-dots-agent-purchases-us-pro-users-visa-mastercard-amex" }
+  ],
+  "caption": "OpenAI just launched ChatGPT Wallet, which lets its AI agents, called dots, pay for things you want to buy.\nThe agent never sees your real card number: Visa, Mastercard and American Express hand it a payment token instead.\nYou still approve every purchase with Face ID or a fingerprint. For now it is only for US ChatGPT Pro users 18 and older.\n\nWould you let an AI agent shop with your credit card?\n\nFollow @neurafeed.ai for daily AI news.\n\nSource: 9to5Mac",
+  "threads_text": "ChatGPT can now pay for things. OpenAI's new Wallet lets its dots agents check out with a token from Visa, Mastercard or Amex, and you approve each order with Face ID. Only US Pro users for now, and stores that block agents will not work. Would you hand an AI agent your credit card?",
+  "slides": [
+    {
+      "kind": "cover",
+      "headline": "ChatGPT can now *spend your money* for you",
+      "image": {
+        "url": "https://sqmagazine.co.uk/wp-content/uploads/2026/11/chatgpt-wallet-for-smarter-shopping.jpg",
+        "credit": "SQ Magazine",
+        "fallback_urls": [
+          "https://9to5mac.com/wp-content/uploads/sites/6/2026/10/chatgpt-app-icon-dark-openai.jpg?quality=82&strip=all&w=1600"
+        ]
+      },
+      "pos": "center",
+      "badges": [ { "url": "assets/logos/openai.png", "shape": "free" } ]
+    },
+    {
+      "kind": "card",
+      "heading": "Your AI agent gets a *wallet*",
+      "paras": [
+        "OpenAI launched ChatGPT Wallet on November 13. It lets dots, the always-on agents OpenAI introduced in September, pay for purchases on your behalf.",
+        "It was built with Visa, Mastercard and American Express."
+      ],
+      "image": {
+        "url": "https://9to5mac.com/wp-content/uploads/sites/6/2026/06/chatgpt-green.webp?w=1600",
+        "credit": "9to5Mac",
+        "fallback_urls": [ "https://9to5mac.com/wp-content/uploads/sites/6/2026/06/chatgpt-green.webp?resize=1200,628" ]
+      }
+    },
+    {
+      "kind": "card",
+      "heading": "It never sees your *card number*",
+      "paras": [
+        "At checkout, the card network issues a payment token with its own number, code and expiration date.",
+        "The store gets charged to your card, but neither the agent nor the store sees the real details."
+      ],
+      "image": {
+        "url": "https://techcrunch.com/wp-content/uploads/2023/03/banking-credit-cards-fortra.jpg",
+        "credit": "Getty Images",
+        "fallback_urls": [ "https://static.wixstatic.com/media/c5719c_143440fdde594865a763396d7976fbc4~mv2.jpg" ]
+      }
+    },
+    {
+      "kind": "card",
+      "heading": "You still press *approve*",
+      "paras": [
+        "Before every order you see the items, the total and the card, then confirm with Face ID or a fingerprint.",
+        { "t": "At launch, a dot cannot buy anything on its own.", "strong": true }
+      ],
+      "image": {
+        "url": "https://static.wixstatic.com/media/c5719c_417df8a7e3a244f482e6cb80e8725613~mv2.jpg",
+        "credit": "Data Studios",
+        "fallback_urls": [ "https://techcrunch.com/wp-content/uploads/2026/07/Press-Static-Hero-16x9-1.jpg" ]
+      }
+    },
+    {
+      "kind": "card",
+      "heading": "Only *Pro users* for now",
+      "paras": [
+        "It is limited to US ChatGPT Pro subscribers 18 and older with an eligible US card. No date for a wider rollout.",
+        "Stores that block AI agents will not work. Spending limits are planned."
+      ],
+      "image": {
+        "url": "https://techcrunch.com/wp-content/uploads/2026/07/Press-Static-Hero-16x9-1.jpg",
+        "credit": "OpenAI",
+        "fallback_urls": [ "https://9to5mac.com/wp-content/uploads/sites/6/2026/10/chatgpt-app-icon-dark-openai.jpg?quality=82&strip=all&w=1600" ]
+      }
+    },
+    {
+      "kind": "cta",
+      "hook": "Follow to see when ChatGPT Wallet reaches regular users, and whether stores let agents in."
+    }
+  ],
+  "site_article": {
+    "headline": "OpenAI launches ChatGPT Wallet so its dots agents can pay for purchases",
+    "dek": "The wallet uses payment tokens from Visa, Mastercard and American Express, and every order still needs the user's Face ID or fingerprint.",
+    "summary": "OpenAI launched ChatGPT Wallet on November 13, 2026, letting its dots agents complete purchases without seeing a user's real card details. The feature is limited at first to US ChatGPT Pro subscribers aged 18 and older.",
+    "seo_title": "ChatGPT Wallet: OpenAI lets dots agents pay for purchases",
+    "seo_description": "OpenAI's ChatGPT Wallet lets dots agents buy things using card network tokens. Who can use it, how approval works and what it cannot do yet.",
+    "answer_summary": "ChatGPT Wallet lets OpenAI's dots agents pay for purchases with a payment token instead of the real card number, after the user approves each order with Face ID or a fingerprint. It is open first to US ChatGPT Pro subscribers aged 18 and older.",
+    "tags": ["OpenAI", "ChatGPT", "AI agents", "Payments", "Visa", "Mastercard"],
+    "hero_alt": "Promotional image for ChatGPT Wallet, OpenAI's payment feature for AI agents.",
+    "paragraphs": [
+      { "kind": "fact", "text": "OpenAI launched ChatGPT Wallet on November 13, 2026, a payment feature that lets its dots agents complete purchases for users. According to 9to5Mac, OpenAI describes it as the first wallet that lets agents pay without access to a user's actual card details, and it requires a security check for every purchase.", "sources": [0] },
+      { "kind": "fact", "text": "The wallet was built in partnership with American Express, Mastercard and Visa, and cards from all three networks work at launch, according to SQ Magazine. A user adds an eligible card once and can then let a dot use it at checkout.", "sources": [0, 1] },
+      { "kind": "heading", "text": "How a purchase works" },
+      { "kind": "fact", "text": "Before each purchase, the user sees a review screen with the items, the total and the card that will be charged. The user then approves with a security check such as Face ID or a fingerprint scan. Each approval also creates a record of the purchase the user authorized the agent to make.", "sources": [0, 1] },
+      { "kind": "fact", "text": "At payment, the card network issues a payment token that stands in for the card. The token carries its own card number, security code and expiration date, so the charge lands on the selected card while neither the merchant nor the agent receives the real card details. The dot passes the shipping address and contact information to the merchant.", "sources": [0, 1] },
+      { "kind": "fact", "text": "OpenAI says existing card rewards and protections for eligible disputes still apply. Data Studios reports that merchants may not save or reuse the token for a separate purchase, that recurring billing is allowed only with customer consent where the checkout supports it, and that at launch a dot cannot buy anything without the user's approval.", "sources": [0, 1, 2] },
+      { "kind": "heading", "text": "Who can use it" },
+      { "kind": "fact", "text": "The first rollout is limited to ChatGPT Pro subscribers in the United States who are 18 or older and hold an eligible US-issued card. OpenAI has not given a date for a wider rollout or named other countries. According to 9to5Mac, the company says the limited launch lets it learn from real use and work with businesses, banks and payment networks on compatibility and reliability.", "sources": [0, 1, 2] },
+      { "kind": "fact", "text": "Dots are the always-on agents OpenAI introduced on September 29, 2026. Data Studios reports that each dot has its own cloud computer and browser and connects to more than 4,000 apps through plugins.", "sources": [2] },
+      { "kind": "heading", "text": "Limits and merchants" },
+      { "kind": "fact", "text": "The wallet will not work on websites that block AI agents, which 9to5Mac describes as a growing problem online. SQ Magazine notes that Amazon has banned outside agents and steers shoppers to its own assistant, Alexa. OpenAI offers a Commerce Partner Playbook for merchants that want to serve agent shoppers.", "sources": [0, 1] },
+      { "kind": "fact", "text": "According to Data Studios, the wallet works with existing checkout pages without a dedicated integration, and OpenAI is sending signals such as IP address, country and locale so merchants can run fraud checks, working with companies including Stripe, Adyen, Checkout.com, Forter, Riskified, Sardine and Signifyd. The same report says OpenAI takes no cut of purchases for now.", "sources": [2] },
+      { "kind": "fact", "text": "OpenAI plans to add spending limits, category rules and time windows that would let users pre-approve some purchases, but it has not given a date for those controls.", "sources": [1, 2] },
+      { "kind": "analysis", "text": "The design keeps a person in the loop for every order at launch, which limits how much an agent can do on its own but also limits the damage from a mistake. The bigger test is outside OpenAI's control: whether retailers let agents through their checkouts or keep blocking them in favor of their own assistants." },
+      { "kind": "why_it_matters", "text": "Watch whether the planned spending limits and pre-approved purchases arrive, since that would be the first time ChatGPT agents could spend money without a fresh approval for each order." }
+    ]
+  }
+}
