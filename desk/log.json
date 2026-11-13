@@ -5543,5 +5543,69 @@
       }
     ],
     "requests": []
+  },
+  {
+    "run_at": "2026-11-13T03:03:18.845Z",
+    "summary": "Late evening run (21:54 New York): no open links or requests, all 6 guides for November 12 exist and that day's cap is used, so queued 2 posts for the morning of November 13: the Democrats' probe of the Trump Nvidia China chip deal (sensitive, needs approval) and a Reel of Claude reverse engineering a 1994 Jeep.",
+    "considered": [
+      {
+        "story": "Democrats Wyden and Neal open an inquiry into Trump's 25% cut of Nvidia H200 sales to China",
+        "source": "https://democrats-waysandmeans.house.gov/sites/evo-subsites/democrats-waysandmeans.house.gov/files/evo-media-document/wyden-neal-nvidia-letter.pdf",
+        "decision": "queued",
+        "job_id": "2026-11-13-democrats-probe-trump-nvidia-china-deal",
+        "priority": 2,
+        "reason": "Politics plus money plus Nvidia, read the letter, TechCrunch and The Hill; sensitive (politics), set timely false so it can still post after approval in the first window."
+      },
+      {
+        "story": "Man used Claude and Codex to reverse engineer his 1994 Jeep Cherokee and pass a smog test",
+        "source": "https://x.com/zulali/status/2120204711790023128",
+        "decision": "queued",
+        "job_id": "2026-11-13-claude-jeep-cherokee-smog-reel",
+        "priority": 2,
+        "reason": "Strange, relatable AI story with the creator's own video; facts from Open.kg and K-News."
+      },
+      {
+        "story": "OpenAI releases GPT-6 Cyber with a Critical cybersecurity rating",
+        "decision": "covered",
+        "reason": "Already covered as 2026-11-05-openai-gpt-6-cyber-81-firefox-flaws."
+      },
+      {
+        "story": "Federal judge removes all four lawyers from a case over fake AI citations",
+        "source": "https://www.abajournal.com/news/article/federal-judge-terminates-4-plaintiff-and-defense-attorneys-over-ai-errors",
+        "decision": "skipped",
+        "reason": "The ruling is from June 2026, not new."
+      },
+      {
+        "story": "Anthropic and OpenAI sued over neural network attention patents (Reuters)",
+        "decision": "skipped",
+        "reason": "Could not open the Reuters story in this run and search results conflict on who the plaintiff is; worth a later look."
+      },
+      {
+        "story": "Bill Simmons canceled his ChatGPT partnership after fan backlash (Bloomberg)",
+        "decision": "skipped",
+        "reason": "Could not confirm the cancellation from a page read in this run; search results only show the backlash."
+      },
+      {
+        "story": "Chinese frontier AI models carry the fingerprint of export-controlled GPUs",
+        "decision": "skipped",
+        "reason": "Single blog analysis, no major outlet confirmation, and the slot went to the Nvidia probe."
+      },
+      {
+        "story": "Edge0-145B frontier model that runs on your own computer",
+        "decision": "skipped",
+        "reason": "Company blog only, insider interest."
+      },
+      {
+        "story": "Gemini 4 Hydrogen launch",
+        "decision": "covered",
+        "reason": "Already queued as 2026-11-12-gemini-4-hydrogen-free-users (held for the November 13 morning)."
+      },
+      {
+        "story": "Jensen Huang resignation, affairs and what comes next for Nvidia",
+        "decision": "covered",
+        "reason": "Covered by several November 12 jobs."
+      }
+    ],
+    "requests": []
   }
 ]
