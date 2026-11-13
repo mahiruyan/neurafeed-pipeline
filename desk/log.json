@@ -1,59 +1,5 @@
 [
   {
-    "run_at": "2026-11-06T08:59:39.026Z",
-    "summary": "Early morning run (about 04:00 New York): no open links or requests, no new priority 1 story since the last run; November 6 already has 6 jobs and the 2 utility posts due after 11:00 fill the 8 job cap, so nothing was queued.",
-    "considered": [
-      {
-        "story": "Claude Code reportedly put users' email address in the User-Agent header of web requests (GitHub issue, top of Hacker News)",
-        "source": "https://news.lavx.hu/article/claude-code-leaked-user-emails-in-web-search-headers-anthropic-deploys-privacy-fix",
-        "decision": "skipped",
-        "reason": "Still only small blogs (LavX, StartupHub) that disagree on which version has the fix, no reputable outlet or Anthropic statement I could read, and the GitHub issue could not be opened."
-      },
-      {
-        "story": "Mark Cuban says Facebook knowingly runs AI deepfake scam ads, $16 billion in fraud revenue",
-        "source": "https://www.ibtimes.co.uk/mark-cuban-facebook-ai-deepfake-diabetes-scams-1824187",
-        "decision": "skipped",
-        "reason": "The $16 billion figure is an old 2025 Reuters report and the new part is an opinion; November 6 has no free slot left for a priority 2 story."
-      },
-      {
-        "story": "Google sued over a teen's Gemini chats on a school Chromebook",
-        "decision": "skipped",
-        "reason": "Sensitive suicide-related lawsuit, still no strong national outlet found to confirm the details."
-      },
-      {
-        "story": "DOJ charges three people for using AI to impersonate executives in a $129 million fraud",
-        "decision": "skipped",
-        "reason": "Crime story with no AI company angle and no free slot today."
-      },
-      {
-        "story": "OpenAI forms JPMorgan partnership ahead of a 2027 IPO",
-        "decision": "skipped",
-        "reason": "Overlaps with the Brockman IPO post from November 5; only PYMNTS in the leads."
-      },
-      {
-        "story": "Linum trains a decent text-to-image model for about $20K with open weights (Show HN)",
-        "decision": "skipped",
-        "reason": "Niche developer story with little US consumer appeal."
-      },
-      {
-        "story": "Anthropic IPO timing threatened by AI backlash",
-        "decision": "covered",
-        "reason": "Already queued as 2026-11-06-anthropic-ipo-investors-balk-selloff."
-      },
-      {
-        "story": "OpenAI data center pledges and fewer NDAs after the midterms",
-        "decision": "covered",
-        "reason": "Already queued as 2026-11-06-openai-data-centers-pay-own-power."
-      },
-      {
-        "story": "Gemini Omni makes 15-second videos",
-        "decision": "covered",
-        "reason": "Already queued as 2026-11-06-gemini-omni-15-second-videos-free."
-      }
-    ],
-    "requests": []
-  },
-  {
     "run_at": "2026-11-06T11:07:43.956Z",
     "summary": "Morning run (about 06:00 New York): no open links or requests, no new priority 1 story; queued one priority 2 everyone story (Claude's hidden text watermark), which can carry over to Saturday if today's cap fills.",
     "considered": [
@@ -5554,6 +5500,71 @@
         "source": "https://synthanatomy.com/2026/11/ai-is-turning-apples-app-review-process-into-a-nightmare-for-developers.html",
         "decision": "skipped",
         "reason": "Niche audience, one source."
+      }
+    ],
+    "requests": []
+  },
+  {
+    "run_at": "2026-11-13T09:03:29.858Z",
+    "summary": "Early morning run (03:55 New York): no open links or requests; queued 1 sensitive carousel on Nvidia employees pushing the board to bring back Jensen Huang, leaving the last November 13 slot for later runs. Guides for November 13 start after 07:00. Image hosts could not be opened from this run, so photos were picked from source pages without viewing them.",
+    "considered": [
+      {
+        "story": "Nvidia employees push the board to bring Jensen Huang back (WIRED, via The Standard, SBS, AI Weekly)",
+        "source": "https://www.thestandard.com.hk/finance/article/348427/Nvidia-staff-demand-to-bring-back-Jensen-Huang-says-Musk-assured-them-positions",
+        "decision": "queued",
+        "job_id": "2026-11-13-nvidia-staff-want-jensen-huang-back",
+        "priority": 1
+      },
+      {
+        "story": "Internal letter says Musk assured Nvidia staff of jobs at SpaceX and Terafab",
+        "source": "https://www.thestandard.com.hk/finance/article/348427/Nvidia-staff-demand-to-bring-back-Jensen-Huang-says-Musk-assured-them-positions",
+        "decision": "skipped",
+        "reason": "Only one outlet quotes the letter and no other source confirms it, so it was left out of the Nvidia carousel."
+      },
+      {
+        "story": "Reuters exclusive: Huang exit puts $3 billion in Chinese AI projects at risk",
+        "decision": "skipped",
+        "reason": "Could not read the Reuters story in this run; the day already has several Nvidia and China posts."
+      },
+      {
+        "story": "Cisco makes more money with fewer workers, every worker has an AI agent",
+        "decision": "skipped",
+        "reason": "Not researched in this run; possible jobs story for a later run."
+      },
+      {
+        "story": "AI slop papers published under prominent academics' names (Inside Higher Ed)",
+        "decision": "skipped",
+        "reason": "Not researched in this run; possible scandal story for a later run."
+      },
+      {
+        "story": "RAND study: wealthier parents push teens toward AI",
+        "decision": "skipped",
+        "reason": "Lower interest than the Nvidia story; left for a later run."
+      },
+      {
+        "story": "Microsoft outage hits Outlook, Teams and Copilot",
+        "decision": "skipped",
+        "reason": "A general cloud outage, not an AI story."
+      },
+      {
+        "story": "Claude Meetings launch",
+        "decision": "covered",
+        "reason": "Already covered in 2026-11-10-anthropic-claude-sheets-office-suite."
+      },
+      {
+        "story": "Gemini 4 Hydrogen launch",
+        "decision": "covered",
+        "reason": "Already queued as 2026-11-12-gemini-4-hydrogen-free-users."
+      },
+      {
+        "story": "Chinese frontier models carry the fingerprint of export controlled GPUs",
+        "decision": "covered",
+        "reason": "Already queued as 2026-11-13-chinese-ai-labs-banned-blackwell-fingerprint."
+      },
+      {
+        "story": "Nonprofits sue AI labs to freeze frontier models",
+        "decision": "covered",
+        "reason": "Already queued as 2026-11-12-nonprofits-sue-to-freeze-frontier-ai."
       }
     ],
     "requests": []
