@@ -1,0 +1,237 @@
+{
+  "id": "2026-11-13-how-to-use-hugging-face-guide",
+  "format": "utility",
+  "site_only": true,
+  "created_at": "2026-11-13T21:50:00Z",
+  "story_time": "2026-11-13T21:50:00Z",
+  "timely": false,
+  "sensitive": false,
+  "priority": 2,
+  "review": true,
+  "sources": [
+    {
+      "name": "Hugging Face Hub documentation",
+      "url": "https://huggingface.co/docs/hub/en/index.md"
+    },
+    {
+      "name": "Hugging Face docs: Inference Providers on the Hub",
+      "url": "https://huggingface.co/docs/hub/en/models-inference.md"
+    },
+    {
+      "name": "Hugging Face docs: Inference Providers pricing",
+      "url": "https://huggingface.co/docs/inference-providers/pricing"
+    },
+    {
+      "name": "Hugging Face docs: Gated models",
+      "url": "https://huggingface.co/docs/hub/models-gated"
+    },
+    {
+      "name": "Techopedia: What is Hugging Face",
+      "url": "https://www.techopedia.com/definition/hugging-face"
+    }
+  ],
+  "caption": "Hugging Face hosts over 3 million open AI models, 1 million datasets and 2 million free demo apps.\nYou can try many models in the browser, test chat models side by side, or download them to run at home.\n\nHave you ever run an open AI model yourself?\n\nFollow @neurafeed.ai for daily AI news.\n\nSource: Hugging Face docs · Photo: Jernej Furman / CC BY 2.0",
+  "threads_text": "Hugging Face has over 3 million open AI models and 2 million demo apps you can try in a browser. Most people only know the name. Start with Spaces: no code, no setup. Have you ever tried an open model that is not ChatGPT, Claude or Gemini?",
+  "slides": [
+    {
+      "kind": "cover",
+      "headline": "How to use *Hugging Face* to find and try AI models",
+      "image": {
+        "url": "https://media.thenextweb.com/2026/10/hugging-face-website-magnifying-glass.jpg",
+        "credit": "Jernej Furman / CC BY 2.0",
+        "fallback_urls": [
+          "https://huggingface.co/front/thumbnails/v2-2.png"
+        ]
+      },
+      "pos": "center"
+    },
+    {
+      "kind": "card",
+      "heading": "1. Start with *Spaces*",
+      "paras": [
+        "Spaces are AI demo apps that run in your browser. The Hub hosts over 2 million of them.",
+        "No code and no install: open one and try it."
+      ],
+      "image": {
+        "url": "https://huggingface.co/front/thumbnails/v2-2.png",
+        "credit": "Hugging Face",
+        "fit": "contain",
+        "fallback_urls": [
+          "https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/png/hugging-face.png"
+        ]
+      }
+    },
+    {
+      "kind": "card",
+      "heading": "2. Test chat models in the *Playground*",
+      "paras": [
+        "The Inference Playground lets you try chat models with your own prompts and compare them.",
+        "It runs on Inference Providers. Free accounts get no included credits; PRO gets $2 a month."
+      ],
+      "image": {
+        "url": "https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/png/hugging-face.png",
+        "credit": "Hugging Face",
+        "fit": "contain",
+        "fallback_urls": [
+          "https://huggingface.co/front/thumbnails/v2-2.png"
+        ]
+      }
+    },
+    {
+      "kind": "prompt",
+      "heading": "3. Call a model from *code*",
+      "paras": [
+        "Create a token with inference permission in Settings, then use the Python client."
+      ],
+      "prompt": "from huggingface_hub import InferenceClient\nclient = InferenceClient(provider=\"auto\")\nclient.chat.completions.create(model=\"[model id]\", messages=[{\"role\": \"user\", \"content\": \"Hello\"}])"
+    },
+    {
+      "kind": "cta",
+      "hook": "Follow for one free AI tool explained every day."
+    }
+  ],
+  "site_article": {
+    "kind": "guide",
+    "headline": "How to use Hugging Face: find, try and run open AI models",
+    "dek": "Hugging Face is where open AI models, datasets and demo apps live. Here is how to find a model, try it in your browser and use it from code.",
+    "summary": "Hugging Face hosts over 3 million open models, 1 million datasets and 2 million demo apps called Spaces. You can try many models in the browser, compare chat models in the Inference Playground, or download them to run on your own computer.",
+    "seo_title": "How to use Hugging Face: find, try and run AI models",
+    "seo_description": "How to use Hugging Face as a beginner: try Spaces in your browser, test models in the Playground, request gated models and call models from code.",
+    "answer_summary": "Make a free account at huggingface.co, open the Spaces page to try AI apps in your browser, use model pages and the Inference Playground to test models, and create an access token in Settings to call or download models from code.",
+    "tags": [
+      "Hugging Face",
+      "Open models",
+      "Spaces",
+      "Guides",
+      "Local AI"
+    ],
+    "hero_alt": "A magnifying glass held over the Hugging Face website on a screen.",
+    "paragraphs": [
+      {
+        "kind": "fact",
+        "text": "How to use Hugging Face, in short: open the Spaces page to try AI apps in your browser, search the Models page when you want a specific model, and create an access token when you want to use one from code. The Hugging Face Hub hosts over 3 million models, 1 million datasets and 2 million AI apps, all open and publicly available, according to its documentation.",
+        "sources": [
+          0
+        ]
+      },
+      {
+        "kind": "fact",
+        "text": "Hugging Face started in 2016 as a chatbot company and became known for Transformers, a code library it released publicly in 2018. It is often described as GitHub for AI: a place where people upload, download and share models instead of code.",
+        "sources": [
+          4
+        ]
+      },
+      {
+        "kind": "analysis",
+        "text": "For a normal user the site can feel like a library with no front desk. Most pages are written for developers, and many models need setup before they do anything. The good news is that you do not need to understand all of it. Three parts cover most of what people want: Spaces, model pages and the Playground."
+      },
+      {
+        "kind": "heading",
+        "text": "The three things you find on the Hugging Face Hub"
+      },
+      {
+        "kind": "fact",
+        "text": "The Hub has three main kinds of content. Models are the AI models themselves, for text, images, audio and more. Datasets are collections of data for training and testing, with over 1 million public ones in more than 8,000 languages. Spaces are interactive apps that show a model working directly in your browser.",
+        "sources": [
+          0
+        ]
+      },
+      {
+        "kind": "fact",
+        "text": "Every model page has a model card, which describes what the model does and its known limitations and biases. Some model pages also have an inference widget, a small box where you can type an input and see the result without leaving the page.",
+        "sources": [
+          0,
+          1
+        ]
+      },
+      {
+        "kind": "heading",
+        "text": "How to try models on Hugging Face without writing code"
+      },
+      {
+        "kind": "step",
+        "title": "1. Make a free account",
+        "text": "Sign up at huggingface.co. You can browse without an account, but you need one to request access to gated models and to create tokens."
+      },
+      {
+        "kind": "step",
+        "title": "2. Start with Spaces",
+        "text": "Open the Spaces page and look at the Space of the Week or search for a task, such as background removal or speech to text. Click a Space and use it like any web app. Spaces are built by the community, mostly with tools called Gradio and Streamlit, so quality and speed vary from one to the next."
+      },
+      {
+        "kind": "step",
+        "title": "3. Try a model on its page",
+        "text": "Search the Models page for a model name or a task. If the model page has a widget, type into it to test the model. You can also filter the Models page by inference provider to see only models you can run this way."
+      },
+      {
+        "kind": "step",
+        "title": "4. Compare chat models in the Inference Playground",
+        "text": "The Inference Playground at huggingface.co/playground lets you test chat models with your own prompts and compare them. It is the quickest way to see how an open model handles the kind of question you actually ask."
+      },
+      {
+        "kind": "fact",
+        "text": "Widgets and the Playground both run on Inference Providers, a pay as you go service. According to the pricing page, free accounts get no included monthly credits and have to buy credits to use it, PRO accounts get $2.00 of credits a month, and Team and Enterprise organizations get $2.00 per seat. Credits are used before any pay as you go charges.",
+        "sources": [
+          1,
+          2
+        ]
+      },
+      {
+        "kind": "heading",
+        "text": "How to get access to a gated model"
+      },
+      {
+        "kind": "fact",
+        "text": "Some popular models are gated: you must ask for access before you can download their files. You need to be logged in, and the request is made in the browser. Open the model page, fill in the form the authors ask for, and click the button to send the request, which by default reads Agree and send request to access repo.",
+        "sources": [
+          3
+        ]
+      },
+      {
+        "kind": "fact",
+        "text": "Some authors approve requests automatically and you get access at once. Others review them by hand, which can take time. If a request is rejected you cannot request that model again, and authors can remove access later. Some models also block users in EU countries based on IP address.",
+        "sources": [
+          3
+        ]
+      },
+      {
+        "kind": "heading",
+        "text": "How to use a Hugging Face model from code"
+      },
+      {
+        "kind": "step",
+        "title": "5. Create an access token",
+        "text": "Go to Settings, then Tokens, and create a token with inference permission. Store it as an environment variable named HF_TOKEN and never paste it into a public file."
+      },
+      {
+        "kind": "prompt",
+        "title": "Code 1: Chat with a model in Python",
+        "text": "from huggingface_hub import InferenceClient\nimport os\n\nclient = InferenceClient(api_key=os.environ[\"HF_TOKEN\"], provider=\"auto\")\n\ncompletion = client.chat.completions.create(\n    model=\"[model id, for example deepseek-ai/DeepSeek-V3-0324]\",\n    messages=[{\"role\": \"user\", \"content\": \"[your prompt]\"}]\n)\nprint(completion.choices[0].message.content)"
+      },
+      {
+        "kind": "fact",
+        "text": "The provider setting auto picks a provider for you. Hugging Face also offers an OpenAI compatible endpoint at router.huggingface.co/v1, so code written for the OpenAI client can switch to an open model by changing the base URL and key. That endpoint does not support image generation.",
+        "sources": [
+          1
+        ]
+      },
+      {
+        "kind": "prompt",
+        "title": "Code 2: Log in once from the terminal",
+        "text": "hf auth login"
+      },
+      {
+        "kind": "tip",
+        "text": "Once you are logged in this way, downloads of gated models you have access to work in scripts too. You can also pass a token directly to most loading functions through their token parameter."
+      },
+      {
+        "kind": "tip",
+        "text": "To run a model fully on your own computer instead, note that open models from the Hub also run in desktop apps such as LM Studio and Ollama. NeuraFeed has separate guides for both."
+      },
+      {
+        "kind": "analysis",
+        "text": "Where Hugging Face is weak for beginners: there is no single chat app like ChatGPT, Spaces vary a lot in quality and speed, and the best results usually need some code. Where it is strong: millions of open models sit in one place, and you can try many of them before you commit to anything. Start with Spaces, move to the Playground, and only write code when you know which model you want."
+      }
+    ]
+  }
+}

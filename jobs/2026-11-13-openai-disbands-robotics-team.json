@@ -1,0 +1,217 @@
+{
+  "id": "2026-11-13-openai-disbands-robotics-team",
+  "created_at": "2026-11-13T21:40:00Z",
+  "story_time": "2026-11-13T17:05:00Z",
+  "timely": true,
+  "sensitive": false,
+  "priority": 1,
+  "format": "carousel",
+  "site_category": "companies",
+  "ab": {
+    "headline": "short",
+    "photo": "story"
+  },
+  "sources": [
+    {
+      "name": "Fortune",
+      "url": "https://fortune.com/2026/11/13/openai-disbands-robotics-team-as-its-general-models-start-running-robots/"
+    },
+    {
+      "name": "NVIDIA Research (Astranomy study)",
+      "url": "https://research.nvidia.com/labs/srl/projects/astranomy/"
+    },
+    {
+      "name": "PANews",
+      "url": "https://panews.io/articles/01a1d611-7895-75f2-b69f-991801c06cfd"
+    }
+  ],
+  "caption": "OpenAI has disbanded its stand-alone robotics team and moved the researchers into its main research and Applied groups, Fortune reports.\nThe reason: its general model GPT-6 Astra did better at robot tasks than specialized robot AI in an Nvidia study.\nOpenAI says it is not giving up on robots. Sam Altman is aiming for a first humanoid demo in 2027.\n\nCan one general AI really run every robot?\n\nFollow @neurafeed.ai for daily AI news.\n\nSource: Fortune · Photo: Huang Zhengwei, VCG via Getty Images",
+  "threads_text": "OpenAI just disbanded its robotics team. Not because it quit robots, but because its general model GPT-6 Astra beat specialized robot AI in an Nvidia test, 74.8% to 51.0%. The catch is speed: over 13 seconds per step. Will one big model run every robot, or do robots need their own brains?",
+  "slides": [
+    {
+      "kind": "cover",
+      "headline": "OpenAI disbanded its robotics team. *GPT-6 Astra* is running robots",
+      "image": {
+        "url": "https://fortune.com/img-assets/wp-content/uploads/2026/11/GettyImages-2304572308-e1794587995495.jpg?format=webp&w=1440&quality=75",
+        "credit": "Huang Zhengwei, VCG via Getty Images",
+        "fallback_urls": [
+          "https://fortune.com/img-assets/wp-content/uploads/2026/11/GettyImages-2304572308-e1794587995495.jpg?resize=1200,600",
+          "https://fortune.com/img-assets/wp-content/uploads/2026/11/GettyImages-2304572308-e1794587995495.jpg"
+        ]
+      },
+      "pos": "center",
+      "badges": [
+        {
+          "url": "assets/logos/openai.png",
+          "shape": "free"
+        }
+      ]
+    },
+    {
+      "kind": "card",
+      "heading": "The team is gone, the people *stay*",
+      "paras": [
+        "OpenAI confirmed to Fortune that it broke up its stand-alone robotics team.",
+        "Researchers now report to research chief Mark Chen. Applied robotics and hardware moved under president Greg Brockman."
+      ],
+      "image": {
+        "url": "https://cdn.neowin.com/news/images/uploaded/2023/11/1700604403_greg_brockman.jpg",
+        "credit": "via neowin.net",
+        "fallback_urls": [
+          "https://d1lss44hh2trtw.cloudfront.net/assets/article/2026/05/04/greg-brockman_feature.jpg"
+        ]
+      },
+      "pos": "center 25%"
+    },
+    {
+      "kind": "card",
+      "heading": "Astra beat the *robot specialists*",
+      "paras": [
+        "In an Nvidia study, an agent built on GPT-6 Astra solved 74.8% of 120 simulated pick-and-place tasks.",
+        {
+          "t": "The best specialized robot model scored 51.0%.",
+          "strong": true
+        }
+      ],
+      "image": {
+        "url": "https://research.nvidia.com/labs/srl/projects/astranomy/social-preview.png",
+        "credit": "NVIDIA Research",
+        "fit": "contain",
+        "fallback_urls": [
+          "https://research.nvidia.com/labs/srl/projects/astranomy/article/assets/images/ablation-tasks/bottles_crate.png"
+        ]
+      },
+      "note": "Chart: NVIDIA Seattle Robotics Lab"
+    },
+    {
+      "kind": "card",
+      "heading": "The catch: it is *slow*",
+      "paras": [
+        "Nvidia measured about 13 seconds per call for that agent and roughly $36 per task attempt.",
+        "A Carnegie Mellon professor told Fortune robots will still need small models that run on board."
+      ],
+      "image": {
+        "url": "https://research.nvidia.com/labs/srl/projects/astranomy/article/assets/images/ablation-tasks/bottles_crate.png",
+        "credit": "NVIDIA Research",
+        "fit": "contain",
+        "fallback_urls": [
+          "https://research.nvidia.com/labs/srl/projects/astranomy/social-preview.png"
+        ]
+      }
+    },
+    {
+      "kind": "card",
+      "heading": "A humanoid demo in *2027*",
+      "paras": [
+        "OpenAI says robotics remains a core part of its long-term vision.",
+        "Fortune reports it is building its own humanoid robot, with Sam Altman aiming for a first public demo in 2027."
+      ],
+      "image": {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f8/Sam_Altman_TechCrunch_SF_2019_Day_2_Oct_3_%28cropped_3%29.jpg/1280px-Sam_Altman_TechCrunch_SF_2019_Day_2_Oct_3_%28cropped_3%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "TechCrunch / CC BY 2.0",
+        "fallback_urls": [
+          "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8d/Sam_Altman_CropEdit_James_Tamim.jpg/1280px-Sam_Altman_CropEdit_James_Tamim.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+        ]
+      },
+      "pos": "center 25%"
+    },
+    {
+      "kind": "cta",
+      "hook": "Follow to see whether OpenAI's humanoid robot shows up in 2027."
+    }
+  ],
+  "site_article": {
+    "headline": "OpenAI disbands its stand-alone robotics team as GPT-6 Astra is tested on robots",
+    "dek": "The researchers move into OpenAI's main research and Applied groups, and the company says the change is meant to speed up its robotics work, not end it.",
+    "summary": "OpenAI has broken up its stand-alone robotics team and reassigned its staff, Fortune reported on November 13, 2026. The company said its general models, including GPT-6 Astra, can now be applied directly to robots; an Nvidia study found an Astra-based agent solved 74.8% of simulated pick-and-place tasks.",
+    "seo_title": "OpenAI disbands robotics team as GPT-6 Astra runs robots",
+    "seo_description": "OpenAI broke up its stand-alone robotics team and moved staff to research and Applied, betting general models like GPT-6 Astra can control robots.",
+    "answer_summary": "OpenAI did not quit robotics. It folded its robotics team into its main research group under Mark Chen and its Applied group under Greg Brockman, because it says general models such as GPT-6 Astra can now control robots directly.",
+    "tags": [
+      "OpenAI",
+      "GPT-6 Astra",
+      "Robotics",
+      "Nvidia",
+      "Humanoid robots"
+    ],
+    "hero_alt": "Workers check a row of humanoid robots on a factory production line.",
+    "paragraphs": [
+      {
+        "kind": "fact",
+        "text": "OpenAI has disbanded its stand-alone robotics team and moved its researchers to other parts of the company, Fortune reported on November 13, 2026. OpenAI confirmed the reorganization when Fortune asked about it, and a spokesperson said robotics remains a core part of the company's long-term vision.",
+        "sources": [
+          0,
+          2
+        ]
+      },
+      {
+        "kind": "fact",
+        "text": "According to Fortune, the robotics research staff now sit inside OpenAI's main research team, which reports to Chief Research Officer Mark Chen. The applied robotics and hardware teams were placed in the larger Applied organization, which reports to OpenAI President Greg Brockman. Fortune did not report any layoffs.",
+        "sources": [
+          0,
+          2
+        ]
+      },
+      {
+        "kind": "heading",
+        "text": "Why OpenAI says it made the change"
+      },
+      {
+        "kind": "fact",
+        "text": "OpenAI told Fortune that at the start of the year its researchers expected the best route to robot intelligence to run through models such as Sora, its video generation model. Since then, the company said, its general purpose frontier models, including GPT-6 Astra, have shown they can be applied to robotics directly, and that finding drove the reorganization.",
+        "sources": [
+          0
+        ]
+      },
+      {
+        "kind": "fact",
+        "text": "Outside research points the same way. In a study published on October 14, 2026, Nvidia's Seattle Robotics Lab tested GPT-6 Astra as a robot policy on RoboLab-120, a set of 120 simulated pick-and-place tasks with a robot arm and no robot-specific training. An agentic setup, in which Astra worked in a persistent Codex session, succeeded on 74.8% of the tasks. The strongest specialized model on the same leaderboard, Lakeside, reached 51.0%.",
+        "sources": [
+          1,
+          0
+        ]
+      },
+      {
+        "kind": "fact",
+        "text": "The same study shows the cost of that result. Nvidia measured about 13.4 seconds per call and roughly $36.40 in tokens per episode for the agentic setup, compared with well under a second per step for dedicated robot models. The authors named latency as a major barrier to real-world use.",
+        "sources": [
+          1
+        ]
+      },
+      {
+        "kind": "heading",
+        "text": "A second try at robots"
+      },
+      {
+        "kind": "fact",
+        "text": "This is not OpenAI's first change of course in robotics. The company wound down an earlier robotics team in 2020, rebuilt a stand-alone team in 2024 and partnered with the startup Figure on humanoid robot models, a deal that ended in February 2025 when Figure said it would build its own robot AI. Fortune reports OpenAI is now developing its own humanoid robot, and that Sam Altman is aiming for a first public demonstration in 2027.",
+        "sources": [
+          0,
+          2
+        ]
+      },
+      {
+        "kind": "fact",
+        "text": "Researchers quoted by Fortune were split on what the move means. Guanya Shi of Carnegie Mellon University said it suggests OpenAI no longer sees robotics as a special problem, but added that robots still need smaller models that run on board without a constant connection. MIT professor Russ Tedrake said robotics companies keep an advantage in deployment experience and site data.",
+        "sources": [
+          0
+        ]
+      },
+      {
+        "kind": "fact",
+        "text": "The reorganization comes as OpenAI trims projects outside its core business. Fortune notes the company has dropped efforts including Sora to free up computing power, reportedly posted an operating loss of $10.9 billion in its most recent quarter, and is preparing for a possible public listing in early 2027.",
+        "sources": [
+          0
+        ]
+      },
+      {
+        "kind": "analysis",
+        "text": "In NeuraFeed's reading, the move is a bet that the same large model behind OpenAI's chat products can become the brain of a robot, rather than a separate system trained only on robot data. The Nvidia numbers support the accuracy side of that bet, while the speed and cost figures show why it is not yet practical outside a lab. It also puts pressure on robotics startups that raised money on the idea that robots need their own models."
+      },
+      {
+        "kind": "why_it_matters",
+        "text": "The next test is the humanoid demonstration OpenAI is targeting for 2027, which will show whether a general model can control a physical robot fast enough to be useful."
+      }
+    ]
+  }
+}

@@ -1,67 +1,5 @@
 [
   {
-    "run_at": "2026-11-06T20:54:54.594Z",
-    "summary": "Afternoon run (about 16:00 New York): no open links or requests; November 6 is already at the 8 desk job cap and no new major priority 1 story appeared since the last run, so nothing was queued.",
-    "considered": [
-      {
-        "story": "METR finds Anthropic's AI progress roughly doubled",
-        "decision": "covered",
-        "reason": "Already queued as 2026-11-06-anthropic-ai-twice-as-fast-metr."
-      },
-      {
-        "story": "OpenAI CFO Sarah Friar says OpenAI keeps investing in data centers after the election",
-        "source": "https://www.cnbc.com/",
-        "decision": "covered",
-        "reason": "Same OpenAI data center story as 2026-11-06-openai-data-centers-pay-own-power."
-      },
-      {
-        "story": "Anthropic lines up UK retail IPO offer, valuation could fall to $1 trillion",
-        "decision": "covered",
-        "reason": "Already queued as 2026-11-06-anthropic-ipo-investors-balk-selloff."
-      },
-      {
-        "story": "Google releases Gemini Omni 1.2 Flash with 15 second clips",
-        "decision": "covered",
-        "reason": "Already queued as 2026-11-06-gemini-omni-15-second-videos-free."
-      },
-      {
-        "story": "Mark Cuban says Facebook knowingly runs AI deepfake scam ads",
-        "source": "https://finance.yahoo.com/technology/ai/articles/mark-cuban-says-facebook-knowingly-213000020.html",
-        "decision": "skipped",
-        "reason": "Sensitive fraud claim with one source read so far, and the day is at the 8 job cap; a candidate for tomorrow if more outlets confirm it."
-      },
-      {
-        "story": "Airbnb plans an AI travel agent for the first half of 2027",
-        "source": "https://www.theneuron.ai/digest/everything-that-happened-in-ai-today-friday-november-6-2026/",
-        "decision": "skipped",
-        "reason": "Reported November 5 and the day is at the cap; a possible everyone story for tomorrow."
-      },
-      {
-        "story": "Justice Department launches a Super Intelligence Task Force",
-        "decision": "skipped",
-        "reason": "Still only the agency's own post found and the day is at the cap."
-      },
-      {
-        "story": "Researchers used Claude to cut a three-day lab process to 90 minutes",
-        "source": "https://www.anthropic.com/research/how-researchers-use-claude",
-        "decision": "skipped",
-        "reason": "Priority 2 research story and the day is at the cap; candidate for tomorrow."
-      },
-      {
-        "story": "Perplexity launches Teammates work agents",
-        "decision": "skipped",
-        "reason": "Max subscribers only, little interest for normal users, and the day is at the cap."
-      },
-      {
-        "story": "Claude Code sends your email address to websites (GitHub issue)",
-        "source": "https://github.com/anthropics/claude-code/issues/107757",
-        "decision": "skipped",
-        "reason": "Still a single GitHub issue with no independent news coverage."
-      }
-    ],
-    "requests": []
-  },
-  {
     "run_at": "2026-11-06T22:54:53.598Z",
     "summary": "Evening run (about 18:00 New York): no open links or requests; November 6 is already at the 8 desk job cap and the only new big story, OpenAI closing $11 billion at a $1.25 trillion valuation, is a follow-up to a post we already ran, so nothing was queued.",
     "considered": [
@@ -5569,6 +5507,81 @@
         "source": "https://otter.ai/",
         "decision": "skipped",
         "reason": "Otter's help center could not be opened, so plan limits and steps could not be checked against the vendor docs."
+      }
+    ],
+    "requests": []
+  },
+  {
+    "run_at": "2026-11-13T21:09:52.671Z",
+    "summary": "Late afternoon run (15:53 New York): no open links or requests. Queued the OpenAI robotics team story as priority 1 (Fortune exclusive confirmed by OpenAI, plus Nvidia's own Astra study), and two site-only guides (Leonardo AI, Hugging Face) to bring today to 5 of 6 guides. No other news because November 13 is already at the Instagram cap.",
+    "considered": [
+      {
+        "story": "OpenAI disbands its stand-alone robotics team as GPT-6 Astra is tested on robots",
+        "source": "https://fortune.com/2026/11/13/openai-disbands-robotics-team-as-its-general-models-start-running-robots/",
+        "decision": "queued",
+        "job_id": "2026-11-13-openai-disbands-robotics-team",
+        "priority": 1
+      },
+      {
+        "story": "How to use Leonardo AI (guides plan, tool library)",
+        "source": "https://intercom.help/leonardo-ai/en/articles/8942360-how-to-generate-images-with-leonardo-ai",
+        "decision": "queued",
+        "job_id": "2026-11-13-how-to-use-leonardo-ai-guide",
+        "priority": 2
+      },
+      {
+        "story": "How to use Hugging Face (guides plan, tool library)",
+        "source": "https://huggingface.co/docs/hub/en/index.md",
+        "decision": "queued",
+        "job_id": "2026-11-13-how-to-use-hugging-face-guide",
+        "priority": 2
+      },
+      {
+        "story": "How to use Otter AI (guides plan, tool library)",
+        "decision": "skipped",
+        "reason": "Could not find and open Otter's own help center pages in this run, only third party reviews."
+      },
+      {
+        "story": "How to use Codex (guides plan, tool library)",
+        "decision": "skipped",
+        "reason": "Still waiting for a run that can open OpenAI's Codex docs."
+      },
+      {
+        "story": "Arm CEO Rene Haas approached in Nvidia CEO search (FT)",
+        "source": "https://www.ft.com/content/2a64f698-46dd-4178-a3f4-4c5f4c0a0926",
+        "decision": "skipped",
+        "reason": "Paywalled single report on a day already full of Nvidia succession posts."
+      },
+      {
+        "story": "Chicago schools tell Google they would rather lose Search than accept AI",
+        "source": "https://www.techspot.com/news/114532-chicago-schools-tell-google-they-can-live-without.html",
+        "decision": "skipped",
+        "reason": "Good everyone story, but the day is at the cap; can be picked up tomorrow if it grows."
+      },
+      {
+        "story": "Anthropic's valuation target slips from $2 trillion to under $1.5 trillion (Motley Fool)",
+        "decision": "skipped",
+        "reason": "Investor commentary, not new reporting, and the day is at the cap."
+      },
+      {
+        "story": "Pentagon renames its main AI office the Super Intelligence Office (Breaking Defense)",
+        "decision": "skipped",
+        "reason": "Not read in full this run and the day is at the cap; a candidate for tomorrow."
+      },
+      {
+        "story": "ChatGPT Wallet launch",
+        "decision": "covered",
+        "reason": "Already queued as 2026-11-13-chatgpt-wallet-agents-spend-money."
+      },
+      {
+        "story": "Claude outage on November 13",
+        "decision": "skipped",
+        "reason": "Over by now and stale for the evening slots."
+      },
+      {
+        "story": "Nvidia employees petition for Jensen Huang's return",
+        "decision": "covered",
+        "reason": "Already queued as 2026-11-13-nvidia-staff-want-jensen-huang-back."
       }
     ],
     "requests": []
