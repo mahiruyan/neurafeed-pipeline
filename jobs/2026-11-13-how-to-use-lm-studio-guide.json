@@ -1,0 +1,307 @@
+{
+  "id": "2026-11-13-how-to-use-lm-studio-guide",
+  "format": "utility",
+  "site_only": true,
+  "created_at": "2026-11-13T13:20:00Z",
+  "story_time": "2026-11-13T13:20:00Z",
+  "timely": false,
+  "sensitive": false,
+  "priority": 2,
+  "review": true,
+  "sources": [
+    {
+      "name": "LM Studio docs: Welcome",
+      "url": "https://lmstudio.ai/docs/app"
+    },
+    {
+      "name": "LM Studio docs (full text: system requirements, downloading models, chats, CLI, MCP)",
+      "url": "https://lmstudio.ai/llms-full.txt"
+    },
+    {
+      "name": "LM Studio docs: Chat with Documents",
+      "url": "https://lmstudio.ai/docs/app/basics/rag"
+    },
+    {
+      "name": "LM Studio: Pricing",
+      "url": "https://lmstudio.ai/pricing"
+    },
+    {
+      "name": "LM Studio blog: LM Studio is free for use at work",
+      "url": "https://www.lmstudio.ai/blog/free-for-work"
+    },
+    {
+      "name": "Simon Willison: LM Studio is free for use at work",
+      "url": "https://simonwillison.net/2025/Jul/8/lm-studio-is-free-for-use-at-work/"
+    },
+    {
+      "name": "LM Studio: Download",
+      "url": "https://lmstudio.ai/download"
+    }
+  ],
+  "caption": "LM Studio runs open AI models like Llama, Qwen and DeepSeek on your own computer, free, and offline once a model is downloaded.\nYou can even chat with your own PDFs without uploading them anywhere.\n\nWould you trust a local AI with your private files?\n\nFollow @neurafeed.ai for daily AI news.\n\nSource: LM Studio docs · Photo: LM Studio",
+  "threads_text": "LM Studio runs open AI models on your own computer for free, and once a model is downloaded it works fully offline, even with your own PDFs. The catch is memory: the docs recommend 16 GB of RAM. Would you trust a local AI with your private files?",
+  "slides": [
+    {
+      "kind": "cover",
+      "headline": "How to use *LM Studio* to run AI on your own PC",
+      "image": {
+        "url": "https://files.lmstudio.ai/bionic/lm-studio-bionic-og.jpg",
+        "credit": "LM Studio",
+        "fallback_urls": [
+          "https://files.lmstudio.ai/6-model-link-og.png"
+        ]
+      },
+      "pos": "center center"
+    },
+    {
+      "kind": "card",
+      "heading": "1. Get a model in *Discover*",
+      "paras": [
+        "Install the app, open the Discover tab and search for a model like Llama, Qwen or DeepSeek.",
+        "The docs suggest a 4-bit version or higher if your computer can run it."
+      ],
+      "image": {
+        "url": "https://www.lmstudio.ai/marketing-static/_next/image?url=%2Fmarketing-static%2Fbionic-demo%2Fbionic-demo-fallback-light-windows-v9.webp&w=3840&q=75&dpl=dpl-mw6x9z2k",
+        "credit": "LM Studio",
+        "fit": "contain",
+        "fallback_urls": [
+          "https://www.lmstudio.ai/assets/marketing/lmstudio-app-logo.webp?dpl=dpl-mw6x9z2k"
+        ]
+      }
+    },
+    {
+      "kind": "card",
+      "heading": "2. Chat with your *files*, offline",
+      "paras": [
+        "Attach a PDF, Word or text file. Short files go in whole, long ones are searched for the relevant parts.",
+        "Per the docs, nothing you upload leaves the app."
+      ],
+      "image": {
+        "url": "https://lmstudio.ai/docs-og/app/basics/rag?title=Chat+with+Documents&description=How+to+provide+local+documents+to+an+LLM+as+additional+context",
+        "credit": "LM Studio",
+        "fit": "contain",
+        "fallback_urls": [
+          "https://www.lmstudio.ai/assets/marketing/lmstudio-app-logo.webp?dpl=dpl-mw6x9z2k"
+        ]
+      }
+    },
+    {
+      "kind": "prompt",
+      "heading": "3. Run it as a *local server*",
+      "paras": [
+        "LM Studio can answer apps that speak the OpenAI API, at localhost:1234.",
+        "Load a model and start the server from the terminal."
+      ],
+      "prompt": "lms load [model]\nlms server start"
+    },
+    {
+      "kind": "card",
+      "heading": "4. Free for *local models*",
+      "paras": [
+        "Running models on your own machine is the $0 plan, at home or at work.",
+        "Paid plans add hosted open models: $20 or $100 a month."
+      ],
+      "image": {
+        "url": "https://files.lmstudio.ai/6-model-link-og.png",
+        "credit": "LM Studio",
+        "fit": "contain",
+        "fallback_urls": [
+          "https://www.lmstudio.ai/assets/marketing/lmstudio-app-logo.webp?dpl=dpl-mw6x9z2k"
+        ]
+      }
+    },
+    {
+      "kind": "cta",
+      "hook": "Follow for one free AI tool explained every day."
+    }
+  ],
+  "site_article": {
+    "kind": "guide",
+    "headline": "How to use LM Studio to run AI models on your own computer",
+    "dek": "LM Studio downloads open models and runs them locally, with chats, file uploads and a local server. Here is how to set it up and what your computer needs.",
+    "summary": "LM Studio is a desktop app for Mac, Windows and Linux that runs open AI models on your own computer, offline once a model is downloaded. Local use is free at home and at work; paid plans add hosted models.",
+    "seo_title": "How to use LM Studio to run AI models on your PC",
+    "seo_description": "How to use LM Studio: check your hardware, download a model, chat with your own files offline, save presets and run a local OpenAI-style server.",
+    "answer_summary": "Install LM Studio from lmstudio.ai/download, open the Discover tab, download a model (a 4-bit version or higher), then load it in the Chat tab with Cmd + L or Ctrl + L and start chatting. Local use is free.",
+    "tags": [
+      "LM Studio",
+      "Local AI",
+      "Open models",
+      "Guides",
+      "Hugging Face"
+    ],
+    "hero_alt": "LM Studio promotional image with the app's logo.",
+    "paragraphs": [
+      {
+        "kind": "fact",
+        "text": "How to use LM Studio, in short: install the app, open the Discover tab, download a model, then load it in the Chat tab and start typing. LM Studio is a desktop app that runs open AI models such as Llama, Qwen, DeepSeek and gpt-oss on your own computer. It works on Apple Silicon Macs, Windows PCs and Linux, and once a model is downloaded it can run entirely offline.",
+        "sources": [
+          0,
+          1
+        ]
+      },
+      {
+        "kind": "fact",
+        "text": "Running local models costs nothing. LM Studio's pricing page lists a $0 Free plan for running local models on your machine, and since July 8, 2025 the company has said the app is free to use at work too, with no separate commercial license to request.",
+        "sources": [
+          3,
+          4,
+          5
+        ]
+      },
+      {
+        "kind": "analysis",
+        "text": "The reason to bother is privacy and control. Your prompts and files stay on your own hardware, and nothing stops working when your internet does. The price is speed and quality: a model that fits on a laptop is smaller than the ones behind ChatGPT or Claude, so expect simpler answers on hard tasks."
+      },
+      {
+        "kind": "heading",
+        "text": "What your computer needs to run LM Studio"
+      },
+      {
+        "kind": "fact",
+        "text": "Check this before you download anything. On a Mac, LM Studio needs Apple Silicon (M1 or newer) and macOS 14.0 or later; Intel Macs are not supported. The docs recommend 16 GB of RAM or more, and say 8 GB Macs can still work with smaller models and shorter context.",
+        "sources": [
+          1
+        ]
+      },
+      {
+        "kind": "fact",
+        "text": "On Windows, LM Studio supports x64 and ARM (Snapdragon X Elite) PCs. An x64 processor must support the AVX2 instruction set, and the docs recommend at least 16 GB of RAM and at least 4 GB of dedicated graphics memory. On Linux it ships as an AppImage for x64 and ARM64 and needs Ubuntu 20.04 or newer.",
+        "sources": [
+          1
+        ]
+      },
+      {
+        "kind": "tip",
+        "text": "RAM decides which models you can use. If you have 8 GB, start with the smallest models you can find and keep chats short. With 16 GB or more you have real choices."
+      },
+      {
+        "kind": "heading",
+        "text": "How to use LM Studio: install and chat"
+      },
+      {
+        "kind": "step",
+        "title": "1. Download the app",
+        "text": "Go to lmstudio.ai/download and get the installer for your system. Install it like any other desktop app. The same page also offers llmster, a version with no window for servers, which most people do not need."
+      },
+      {
+        "kind": "step",
+        "title": "2. Find a model in Discover",
+        "text": "Open the Discover tab, or press Cmd + 2 on a Mac or Ctrl + 2 on Windows and Linux. Search by keyword, by a user/model name, or paste a full Hugging Face link. LM Studio downloads models from Hugging Face."
+      },
+      {
+        "kind": "step",
+        "title": "3. Pick the right size",
+        "text": "Models come in versions marked with a Q, such as Q3_K_S or Q8. The Q stands for quantization: smaller files that give up a bit of quality. The docs suggest a 4-bit option or higher if your computer can run it."
+      },
+      {
+        "kind": "step",
+        "title": "4. Load the model and chat",
+        "text": "Open the Chat tab and use the model loader at the top (Cmd + L on a Mac, Ctrl + L on Windows and Linux). Pick the model you downloaded, wait for it to load into memory, then type your first message."
+      },
+      {
+        "kind": "step",
+        "title": "5. Keep your chats organized",
+        "text": "Start a new chat with the + button or Cmd + N (Ctrl + N on Windows and Linux). Group chats in folders with Cmd + Shift + N, drag them around, or duplicate one from the three-dot menu to try a different question from the same point. You can also drag two chats side by side in split view."
+      },
+      {
+        "kind": "fact",
+        "text": "Your downloaded models live in the My Models tab, which is also where you change the folder LM Studio saves them to.",
+        "sources": [
+          1
+        ]
+      },
+      {
+        "kind": "tip",
+        "text": "Models take many gigabytes. If your main drive is small, point the models folder at an external or second drive in My Models before you download several."
+      },
+      {
+        "kind": "heading",
+        "text": "Chat with your own files, offline"
+      },
+      {
+        "kind": "fact",
+        "text": "You can attach .docx, .pdf and .txt files to a chat and ask questions about them. If the document fits in the model's context, LM Studio adds the whole text to the conversation. If it is too long, it switches to retrieval (RAG) and pulls in only the parts that look relevant to your question.",
+        "sources": [
+          1,
+          2
+        ]
+      },
+      {
+        "kind": "fact",
+        "text": "According to the docs, document processing happens on your computer and nothing you upload leaves the app. Context is measured in tokens, and one token is often about three quarters of a word.",
+        "sources": [
+          1,
+          2
+        ]
+      },
+      {
+        "kind": "analysis",
+        "text": "That makes LM Studio a decent fit for private papers: a contract, medical bills, notes from work. The limit is the honest one: with long files, retrieval can miss the part you need, so ask specific questions and name the section when you can."
+      },
+      {
+        "kind": "heading",
+        "text": "Save your instructions with presets"
+      },
+      {
+        "kind": "fact",
+        "text": "A preset bundles a system prompt and other settings into one reusable setup. Use the presets dropdown in the sidebar and choose + New Preset. Presets can also be imported from a file or a link.",
+        "sources": [
+          1
+        ]
+      },
+      {
+        "kind": "prompt",
+        "title": "A system prompt worth saving as a preset",
+        "text": "You are a careful assistant running on my own computer. Answer in plain English and keep it short. If you are not sure about a fact, say so instead of guessing. When I paste a document, quote the exact line your answer comes from."
+      },
+      {
+        "kind": "heading",
+        "text": "Use LM Studio as a local server"
+      },
+      {
+        "kind": "fact",
+        "text": "LM Studio can serve your models on OpenAI-like endpoints, so apps and scripts that talk to the OpenAI API can talk to your local model instead. The default address is http://localhost:1234. You can start the server from the app or from a terminal.",
+        "sources": [
+          0,
+          1
+        ]
+      },
+      {
+        "kind": "prompt",
+        "title": "The lms commands that matter",
+        "text": "lms get [model]\nlms load [model]\nlms ls\nlms ps\nlms server start --port 1234\nlms chat\nlms unload --all"
+      },
+      {
+        "kind": "fact",
+        "text": "In order: lms get downloads a model, lms load puts it in memory, lms ls lists models on disk, lms ps lists loaded ones, lms server start runs the server, lms chat opens a chat in the terminal and lms unload frees the memory again.",
+        "sources": [
+          1
+        ]
+      },
+      {
+        "kind": "fact",
+        "text": "LM Studio can also act as an MCP host since version 0.3.17, so local models can use tools from MCP servers. You add them in the Program tab of the right sidebar under Install, then Edit mcp.json. The docs warn that some MCP servers can run code, read local files and use your network, so install only ones you trust.",
+        "sources": [
+          1
+        ]
+      },
+      {
+        "kind": "heading",
+        "text": "What LM Studio costs, and what Bionic is"
+      },
+      {
+        "kind": "fact",
+        "text": "Local use is on the free plan. LM Studio now also offers Bionic, an agent for open models built on the LM Studio runtime that can write code, make documents and automate tasks. Its paid plans add models hosted in the US: Bionic+ costs $20 a month and Pro costs $100 a month with five times the usage limits.",
+        "sources": [
+          3,
+          6
+        ]
+      },
+      {
+        "kind": "analysis",
+        "text": "For most people the free app is the whole point. Pay only if you want bigger open models than your computer can run, and at that point compare the price with the ChatGPT, Claude and Gemini plans you may already have."
+      }
+    ]
+  }
+}
