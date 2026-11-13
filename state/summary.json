@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-13T21:13:31.404Z",
+  "updated_at": "2026-11-13T22:02:04.155Z",
   "jobs": [
     {
       "id": "2026-10-29-apple-first-touchscreen-macbook-pro-reel",
@@ -13,28 +13,6 @@
       "link_id": "link-2026-10-29-1883",
       "error": "Command failed: yt-dlp --no-playlist --no-progress --restrict-filenames -f bv*[height<=1920][vcodec^=avc1]+ba[acodec^=mp4a]/bv*[height<=1920]+ba/b[height<=1920]/b --merge-output-format mp4 -o /home/runner/work/neurafeed-pipeline/neurafeed-pipeline/out/2026-10-29-apple-first-touchscreen-macbook-pro-reel/src/source.%(ext)s https://www.instagram.com/reel/DfDUpW4AsCf/?srtk=cDZ4eXNlejZibnZh\nWARNING: [Instagram] DfDUpW4AsCf: Instagram API is not granting access\nERROR: [Instagram] DfDUpW4AsCf: Instagram sent an empty media response. Check if this post is accessible in your browser without being logged-in. If it is not, then use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Otherwise, if the post is accessible in browser without being logged-in, please report this issue on  https://github.com/yt-dlp/yt-dlp/issues?q= , filling out the appropriate issue template. Confirm you are on the latest version using  yt-dlp -U\n",
       "tg": []
-    },
-    {
-      "id": "2026-11-07-claude-max-lawsuit-20x-ruling",
-      "status": "expired",
-      "posted_at": null,
-      "post_at": null,
-      "priority": 1,
-      "format": "carousel",
-      "headline": "Judge says Claude users can keep suing over 20x usage",
-      "from_link": false,
-      "link_id": null,
-      "error": null,
-      "tg": [
-        2750,
-        2751,
-        2752,
-        2753,
-        2754,
-        2755,
-        2756,
-        2756
-      ]
     },
     {
       "id": "2026-11-09-anthropic-korea-customer-data-exposed",
@@ -143,23 +121,6 @@
         3117,
         3118,
         3119
-      ]
-    },
-    {
-      "id": "2026-11-09-terenceshen-china-next-target-reel",
-      "status": "posted",
-      "posted_at": "2026-11-09T22:01:22.474Z",
-      "post_at": null,
-      "priority": 1,
-      "format": "reel",
-      "headline": "China's next target?",
-      "from_link": true,
-      "link_id": "link-2026-11-09-3121",
-      "error": null,
-      "tg": [
-        3132,
-        3133,
-        3133
       ]
     },
     {
@@ -1642,8 +1603,8 @@
     },
     {
       "id": "2026-11-13-chatgpt-wallet-agents-spend-money",
-      "status": "approved",
-      "posted_at": null,
+      "status": "posted",
+      "posted_at": "2026-11-13T22:02:04.136Z",
       "post_at": null,
       "priority": 1,
       "format": "carousel",
@@ -1757,7 +1718,7 @@
     },
     {
       "id": "2026-11-13-how-to-use-claude-design-guide",
-      "status": "pending",
+      "status": "site_only",
       "posted_at": null,
       "post_at": null,
       "priority": 2,
@@ -1778,7 +1739,7 @@
     },
     {
       "id": "2026-11-13-how-to-use-hugging-face-guide",
-      "status": "pending",
+      "status": "site_only",
       "posted_at": null,
       "post_at": null,
       "priority": 2,
@@ -1799,7 +1760,7 @@
     },
     {
       "id": "2026-11-13-how-to-use-leonardo-ai-guide",
-      "status": "pending",
+      "status": "site_only",
       "posted_at": null,
       "post_at": null,
       "priority": 2,
@@ -1821,7 +1782,7 @@
     },
     {
       "id": "2026-11-13-how-to-use-lm-studio-guide",
-      "status": "pending",
+      "status": "site_only",
       "posted_at": null,
       "post_at": null,
       "priority": 2,
