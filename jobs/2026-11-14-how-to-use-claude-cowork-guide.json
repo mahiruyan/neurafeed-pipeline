@@ -1,0 +1,265 @@
+{
+  "id": "2026-11-14-how-to-use-claude-cowork-guide",
+  "format": "utility",
+  "site_only": true,
+  "created_at": "2026-11-14T21:25:00Z",
+  "story_time": "2026-11-14T21:25:00Z",
+  "timely": false,
+  "sensitive": false,
+  "priority": 2,
+  "review": true,
+  "sources": [
+    {
+      "name": "Claude Help Center: Get started with Claude Cowork",
+      "url": "https://support.claude.com/en/articles/13345190-get-started-with-claude-cowork"
+    },
+    {
+      "name": "Claude Help Center: Use Cowork on web, desktop and mobile",
+      "url": "https://support.claude.com/en/articles/15520349-use-cowork-on-web-desktop-and-mobile"
+    },
+    {
+      "name": "Claude: Cowork product page",
+      "url": "https://claude.com/product/cowork"
+    },
+    {
+      "name": "TechRadar: Claude Cowork expands to mobile and web",
+      "url": "https://techradar.com/pro/claude-cowork-expands-to-mobile-and-web-as-anthropic-reveals-what-people-actually-use-it-for"
+    }
+  ],
+  "caption": "Claude Cowork is Claude doing a whole task for you, not just answering a question.\nYou describe the job, review its plan, and it works through your files, connectors and the web.\nIt needs a paid plan, and long tasks use more of your limit than chat.\n\nWhat boring task would you hand to Cowork first?\n\nFollow @neurafeed.ai for daily AI news.\n\nSource: Claude Help Center · Photo: Anthropic",
+  "threads_text": "Claude Cowork takes a whole task, like turning a folder of exports into a spreadsheet, and keeps working in the cloud even when your laptop is closed. It needs a paid plan and eats more usage than chat. What is the first chore you would hand it?",
+  "slides": [
+    {
+      "kind": "cover",
+      "headline": "How to use *Claude Cowork* to hand off a whole task",
+      "image": {
+        "url": "https://assets.claude.com/9716b96b8df867765a639f3ea8a07170508200bf.jpg?w=1200&h=630&fit=crop",
+        "credit": "Anthropic",
+        "fallback_urls": [
+          "https://assets.claude.com/c4cccb47d2ee2cf151f52b084554003b801e6a75.jpg"
+        ]
+      },
+      "badges": [
+        {
+          "url": "assets/logos/claude.png",
+          "fit": "contain"
+        }
+      ]
+    },
+    {
+      "kind": "card",
+      "heading": "1. *Describe* the task",
+      "paras": [
+        "Open Claude on the web, desktop or phone, pick Cowork in the message box and say what you want done.",
+        "Review its plan, then let it run."
+      ],
+      "image": {
+        "url": "https://assets.claude.com/c4cccb47d2ee2cf151f52b084554003b801e6a75.jpg",
+        "credit": "Anthropic",
+        "fit": "contain"
+      }
+    },
+    {
+      "kind": "card",
+      "heading": "2. Give it *your tools*",
+      "paras": [
+        "Connect folders on desktop, and apps through the + menu or Customize, Connectors.",
+        "Claude only sees the folders you connect."
+      ],
+      "image": {
+        "url": "https://assets.claude.com/e0035a095d8888c9739f8acb305f517b25d469eb.jpg",
+        "credit": "Anthropic",
+        "fit": "contain"
+      }
+    },
+    {
+      "kind": "card",
+      "heading": "3. *Schedule* it",
+      "paras": [
+        "Type /schedule in a task, or open Scheduled in the sidebar.",
+        "Scheduled tasks run in the cloud, even when your computer is off."
+      ],
+      "image": {
+        "url": "https://assets.claude.com/cea961f555f94cf02ab1e63440033aa65102c50f.jpg",
+        "credit": "Anthropic",
+        "fit": "contain"
+      }
+    },
+    {
+      "kind": "card",
+      "heading": "4. Pick a *permission mode*",
+      "paras": [
+        "Manual asks before every action. Auto checks each action and blocks unsafe ones.",
+        "For money or messages sent as you, stay on Manual."
+      ],
+      "image": {
+        "url": "https://assets.claude.com/9d0d6dace684b758081265bb74c068b1172acd8e.jpg?w=2400&q=75&fm=webp&fit=max",
+        "credit": "Anthropic",
+        "fit": "contain"
+      }
+    },
+    {
+      "kind": "cta",
+      "hook": "Follow for one AI tool explained every day."
+    }
+  ],
+  "site_article": {
+    "kind": "guide",
+    "headline": "How to use Claude Cowork effectively, with prompts to copy",
+    "dek": "Cowork lets Claude carry out a whole multi step task across your files, apps and the web. Here is how to start one, connect your tools, schedule it and keep it safe.",
+    "summary": "Claude Cowork is the mode where Claude completes a full task, such as a report or a cleaned up spreadsheet, instead of answering one message. It is available on paid plans and runs in the cloud, so tasks continue when your laptop is closed.",
+    "seo_title": "How to use Claude Cowork effectively (with prompts)",
+    "seo_description": "How to use Claude Cowork: start a task, connect folders and apps, schedule recurring work, pick a permission mode, plus 4 prompts to copy.",
+    "answer_summary": "To use Claude Cowork, open Claude on the web, desktop or mobile app with a paid plan, select Cowork in the message box (or just type the task if your app has no Chat and Cowork switch), describe the task, review Claude's plan and let it run. Connect folders and apps first so it can reach your files.",
+    "tags": [
+      "Claude",
+      "Claude Cowork",
+      "Anthropic",
+      "AI agents",
+      "Guides"
+    ],
+    "hero_alt": "Anthropic promotional image for Claude Cowork.",
+    "paragraphs": [
+      {
+        "kind": "fact",
+        "text": "How to use Claude Cowork comes down to one change in habit: you give Claude a whole job instead of a question. Anthropic describes Cowork as bringing Claude Code's agentic abilities to knowledge work without a terminal. Claude carries out multi step tasks, like organizing files or drafting documents, while you step away.",
+        "sources": [
+          0
+        ]
+      },
+      {
+        "kind": "fact",
+        "text": "It is not on the Free plan. Anthropic's help center lists Pro, Max, Team and Enterprise, and the product page also lists Ultra. The desktop app works on macOS and Windows, with Linux in beta. Web and mobile access are available on Pro and Max, in beta on Team, and on Enterprise when an owner turns it on.",
+        "sources": [
+          0,
+          1,
+          2
+        ]
+      },
+      {
+        "kind": "fact",
+        "text": "Since October 6, 2026, new Cowork tasks on Pro, Max and Ultra run in the cloud on Anthropic's servers. That is why a task keeps going after you close your laptop, and why you can start it on your computer and check it from your phone. Your folders stay on your computer: Claude reaches only the folders you connected, through the desktop app, while it is open.",
+        "sources": [
+          1
+        ]
+      },
+      {
+        "kind": "heading",
+        "text": "How to start a Claude Cowork task"
+      },
+      {
+        "kind": "step",
+        "title": "1. Open Claude",
+        "text": "Use claude.ai, the Claude desktop app or the Claude mobile app. The desktop app gives the full experience, including your local files and the browser."
+      },
+      {
+        "kind": "step",
+        "title": "2. Switch to Cowork",
+        "text": "In the message box, select Cowork. If your message box shows no Chat and Cowork options, you already have the newer combined experience and can skip this step. Claude brings in Cowork on its own when a task involves files."
+      },
+      {
+        "kind": "step",
+        "title": "3. Describe the outcome, not the steps",
+        "text": "Say what the finished work should look like: the file type, where to save it, what to flag. Anthropic's product page puts it this way: you set the goal and Claude works out the steps."
+      },
+      {
+        "kind": "step",
+        "title": "4. Review the plan, then let it run",
+        "text": "Claude shows its approach before it starts. Read it, correct anything that is off, and let it work. You can open the same session on another device to answer questions or change direction, and the app sends a phone notification when Claude finishes or needs you."
+      },
+      {
+        "kind": "heading",
+        "text": "Connect your files and apps first"
+      },
+      {
+        "kind": "fact",
+        "text": "Cowork is only as useful as what it can reach. On desktop, Claude reads and writes local files in the folders you connect, with no uploading and downloading. Apps such as Google Drive or Slack are added as connectors from the + menu or under Customize, Connectors. Plugins bundle skills, connectors and sub agents and stay on your account.",
+        "sources": [
+          0
+        ]
+      },
+      {
+        "kind": "tip",
+        "text": "Add global instructions under Settings, Cowork for things that apply to every task, such as your preferred file formats or the folder where finished work should go."
+      },
+      {
+        "kind": "heading",
+        "text": "Prompts to copy"
+      },
+      {
+        "kind": "fact",
+        "text": "These prompts are adapted from the example tasks on Anthropic's Cowork page. Replace the parts in brackets with your own folders and tools.",
+        "sources": [
+          2
+        ]
+      },
+      {
+        "kind": "prompt",
+        "title": "Prompt 1: A weekly report",
+        "text": "Pull last week's numbers from [tool or spreadsheet] and compare them with the week before. Flag anything that changed by more than 10 percent. Build a three slide deck with the results and save it to [folder]."
+      },
+      {
+        "kind": "prompt",
+        "title": "Prompt 2: Clean up a pile of exports",
+        "text": "Go through the files in [folder] and combine them into one spreadsheet. Flag the rows that do not match [budget file] and add a short note listing anything you could not reconcile."
+      },
+      {
+        "kind": "prompt",
+        "title": "Prompt 3: Review documents against a checklist",
+        "text": "Compare each document in [folder] with the rules in [checklist file]. For each one, write a short memo that points to the exact section where it departs from the checklist, and mark anything you are unsure about for me to review."
+      },
+      {
+        "kind": "prompt",
+        "title": "Prompt 4: Tidy a messy folder",
+        "text": "Organize the files in [folder] into subfolders by [project, date or type]. Show me the plan before you move anything, and do not delete any file."
+      },
+      {
+        "kind": "heading",
+        "text": "Schedule recurring work"
+      },
+      {
+        "kind": "step",
+        "title": "5. Turn a task into a scheduled task",
+        "text": "Type /schedule inside a task, or open Scheduled in the left sidebar. Scheduled tasks run in the cloud, even when your device is off. The product page mentions daily, weekly and monthly schedules."
+      },
+      {
+        "kind": "heading",
+        "text": "Pick the right permission mode"
+      },
+      {
+        "kind": "fact",
+        "text": "The mode selector in the chat box has three settings. Manual asks before each action. Auto reviews each action for safety and blocks unsafe ones, and it is the default on Pro, Max and Team under the new experience. Skip runs everything without checks, and Anthropic says to use it only when you fully trust the task. Cowork always asks before permanently deleting files.",
+        "sources": [
+          0
+        ]
+      },
+      {
+        "kind": "tip",
+        "text": "Anthropic's own advice: for anything involving money, messages sent as you or important files, stay involved or switch to Manual. No mode replaces your judgment."
+      },
+      {
+        "kind": "heading",
+        "text": "What Cowork is bad at, and what it costs"
+      },
+      {
+        "kind": "fact",
+        "text": "Multi step tasks use more of your usage limit than quick questions. Anthropic suggests grouping related work into one task, starting a new conversation for unrelated work and saying when you only need a quick answer. You can check your usage under Settings, Usage. Sessions themselves cannot be shared, only the artifacts they produce.",
+        "sources": [
+          0,
+          2
+        ]
+      },
+      {
+        "kind": "fact",
+        "text": "People mostly use it for office work, not code. TechRadar reported that Anthropic's analysis of 1.2 million sessions found knowledge work made up nearly half of all Cowork sessions, with about a third spent pulling updates into reports, building checklists and reconciling spreadsheets.",
+        "sources": [
+          3
+        ]
+      },
+      {
+        "kind": "analysis",
+        "text": "The best first task is something dull, repeated and easy to check: a weekly summary, a folder cleanup, a spreadsheet you rebuild every month. Give it a small version first, read the output closely, and only then schedule it. If a task is short enough to finish in one chat message, plain chat is cheaper."
+      }
+    ]
+  }
+}

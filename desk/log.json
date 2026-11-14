@@ -5612,5 +5612,76 @@
       }
     ],
     "requests": []
+  },
+  {
+    "run_at": "2026-11-14T21:03:15.223Z",
+    "summary": "Saturday afternoon run: the 8 desk news jobs for Nov 14 (New York) are already queued, so no new news; queued 2 site-only guides (Opus Clip, Claude Cowork) to reach 6 guides today. No open links or requests.",
+    "considered": [
+      {
+        "story": "Website guide: How to use Opus Clip for free",
+        "source": "https://help.opus.pro/docs/article/how-to-use-clipanything",
+        "decision": "queued",
+        "job_id": "2026-11-14-how-to-use-opus-clip-guide",
+        "priority": 2
+      },
+      {
+        "story": "Website guide: How to use Claude Cowork effectively, with prompts",
+        "source": "https://support.claude.com/en/articles/13345190-get-started-with-claude-cowork",
+        "decision": "queued",
+        "job_id": "2026-11-14-how-to-use-claude-cowork-guide",
+        "priority": 2
+      },
+      {
+        "story": "Guide plan: How to use ChatGPT Atlas",
+        "decision": "skipped",
+        "reason": "OpenAI retired the Atlas browser in August 2026, so a how-to guide would be wrong; the plan line should be removed."
+      },
+      {
+        "story": "Guide plan: How to use Grok Imagine",
+        "decision": "skipped",
+        "reason": "Found no official xAI help page to base the steps on, only third-party blogs."
+      },
+      {
+        "story": "Guide plan: Gemini CLI install",
+        "decision": "skipped",
+        "reason": "Official README still shows old free limits while recent reports say the free tier changed in 2026; could not confirm current limits."
+      },
+      {
+        "story": "Nvidia director sold nearly $1B in stock weeks before the Jensen Huang scandal (Hacker News)",
+        "decision": "skipped",
+        "reason": "Daily cap of 8 desk news jobs for Nov 14 is reached; a later run after midnight New York time can pick it up if still fresh."
+      },
+      {
+        "story": "AI unlocks Godel's notebooks with hundreds of proved theorems (Hacker News)",
+        "decision": "skipped",
+        "reason": "Daily news cap reached; candidate for the next day."
+      },
+      {
+        "story": "Anthropic upgrades Claude Code Projects to run parallel AI workers (Hacker News)",
+        "decision": "skipped",
+        "reason": "Daily news cap reached; developer-focused update, candidate for the next day."
+      },
+      {
+        "story": "Cognizant commits over 25,000 staff to Claude",
+        "decision": "skipped",
+        "reason": "Daily news cap reached; enterprise deal with little consumer appeal."
+      },
+      {
+        "story": "Treasury Secretary questions whether Nvidia knowingly sold GPUs to shell companies",
+        "decision": "covered",
+        "reason": "Already queued as 2026-11-14-bessent-did-nvidia-know-its-client."
+      },
+      {
+        "story": "Google adds Wallet to Gemini for finance insights",
+        "decision": "covered",
+        "reason": "Already queued as 2026-11-13-gemini-reads-your-google-wallet."
+      },
+      {
+        "story": "OpenAI launches ChatGPT Wallet for agent payments",
+        "decision": "covered",
+        "reason": "Already queued as 2026-11-13-chatgpt-wallet-agents-spend-money."
+      }
+    ],
+    "requests": []
   }
 ]
