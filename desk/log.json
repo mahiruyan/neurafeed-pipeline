@@ -1,74 +1,5 @@
 [
   {
-    "run_at": "2026-11-07T18:55:48.413Z",
-    "summary": "Early afternoon run (about 14:00 New York, Saturday): no open links or requests and no new priority 1 story; Saturday already has 7 jobs and the afternoon utility guide will bring it to 8, so no news job was queued.",
-    "considered": [
-      {
-        "story": "Goldman Sachs takes Claude Code and GitHub coding tools away from traders and bankers (Bloomberg via The Decoder, Fast Company)",
-        "source": "https://fastcompany.com/91636500/goldman-sachs-bans-non-engineers-from-using-advanced-ai-tools",
-        "decision": "skipped",
-        "reason": "Bloomberg broke it on November 2, so it is five days old, and the last free slot today belongs to the afternoon utility guide."
-      },
-      {
-        "story": "Anthropic Claude agents fight a turf war and sabotage each other (Decrypt, Cybernews)",
-        "source": "https://decrypt.co/375596/anthropic-ai-agents-virtual-war-quotes-unhinged",
-        "decision": "skipped",
-        "reason": "Decrypt's report is from August 13, so it is not new."
-      },
-      {
-        "story": "Anthropic tests Claude agents in EVE Frontier with hidden saboteurs (eGamers.io)",
-        "decision": "skipped",
-        "reason": "Only one small gaming site in the leads and no second source I could confirm."
-      },
-      {
-        "story": "OpenAI CFO says 300 million people use ChatGPT for health and 200 million for finance (FourWeekMBA)",
-        "decision": "skipped",
-        "reason": "A search found no reputable outlet confirming these figures."
-      },
-      {
-        "story": "Google DeepMind AI agents find weaknesses in legacy 1024-bit RSA",
-        "decision": "skipped",
-        "reason": "Already skipped as a niche cryptography story; still only crypto and digest sites."
-      },
-      {
-        "story": "Perplexity launches Teammates, always-on agents for Max subscribers",
-        "decision": "skipped",
-        "reason": "Needs the $200 a month plan, so it means little to normal users, and the day is full."
-      },
-      {
-        "story": "Axon to invest $1.2 billion in Skydio police drones",
-        "decision": "skipped",
-        "reason": "Policing and drone deal, not AI news for our audience, and the day is full."
-      },
-      {
-        "story": "Anthropic IPO meets data center backlash after the midterms (CNBC)",
-        "decision": "covered",
-        "reason": "Same story as 2026-11-06-anthropic-ipo-investors-balk-selloff."
-      },
-      {
-        "story": "OpenAI raises $11 billion at a $1.25 trillion valuation",
-        "decision": "skipped",
-        "reason": "Follow-up to the earlier funding story, as decided in earlier runs."
-      },
-      {
-        "story": "Google sued over a teen's Gemini chats on a school Chromebook",
-        "decision": "skipped",
-        "reason": "Sensitive self-harm lawsuit, still no strong national outlet confirming the details."
-      },
-      {
-        "story": "Claude Code put users' email in the User-Agent header",
-        "decision": "skipped",
-        "reason": "Still only small blogs, no reputable outlet or Anthropic statement."
-      },
-      {
-        "story": "Utility guide for Saturday afternoon",
-        "decision": "skipped",
-        "reason": "It is before 15:00 New York time, so the next run queues the second utility post."
-      }
-    ],
-    "requests": []
-  },
-  {
     "run_at": "2026-11-07T21:07:25.441Z",
     "summary": "Afternoon run (about 16:00 New York, Saturday): no open links or requests and no new priority 1 story; queued the second Saturday utility guide (GitHub Copilot Free in VS Code), bringing the day to 8 jobs, the daily cap.",
     "considered": [
@@ -5601,6 +5532,63 @@
         "story": "Gemini 4 Hydrogen in Search and the app",
         "decision": "covered",
         "reason": "Already covered as 2026-11-12-gemini-4-hydrogen-free-users."
+      },
+      {
+        "story": "Cognizant commits over 25,000 staff to Claude",
+        "decision": "skipped",
+        "reason": "Enterprise deal with little consumer interest, and the cap is full."
+      }
+    ],
+    "requests": []
+  },
+  {
+    "run_at": "2026-11-14T19:12:24.539Z",
+    "summary": "Afternoon run (13:55 New York, Nov 14): no open links or requests. Today already has 8 Instagram jobs plus Mahir's GR00T Reel, so no news was queued; added the fourth site-only guide (How to use Copilot Studio).",
+    "considered": [
+      {
+        "story": "Site guide: How to use Copilot Studio to build your own agent (tool library line 'how to use copilot studio')",
+        "source": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/nlu-gpt-quickstart",
+        "decision": "queued",
+        "job_id": "2026-11-14-how-to-use-copilot-studio-guide",
+        "priority": 2
+      },
+      {
+        "story": "Site guide: How to use Grok Imagine (next tool library line)",
+        "source": "https://docs.x.ai/docs/guides/image-generation",
+        "decision": "skipped",
+        "reason": "xAI only documents the API; there is no official help page for using Imagine in the Grok app or its free limits, so the plan says to take the next line. Will come back if xAI publishes app docs."
+      },
+      {
+        "story": "Nvidia director sold nearly $1B in stock weeks before the Huang scandal",
+        "source": "https://news.ycombinator.com/",
+        "decision": "skipped",
+        "reason": "Strong money story, but today's 8 job cap is already reached; a candidate for tomorrow morning."
+      },
+      {
+        "story": "Nvidia allegedly engineered scarcity by funding AI startups to buy its GPUs",
+        "source": "https://news.ycombinator.com/",
+        "decision": "skipped",
+        "reason": "Day's cap is full, and it needs confirmation from a major outlet first."
+      },
+      {
+        "story": "Researchers allege DeepSeek, Kimi and other Chinese models were trained on banned Blackwell GPUs",
+        "decision": "covered",
+        "reason": "Already covered as 2026-11-13-chinese-ai-labs-banned-blackwell-fingerprint."
+      },
+      {
+        "story": "Claude helps surface theorems in Kurt Godel's notebooks",
+        "decision": "skipped",
+        "reason": "Daily cap is full; still worth a look tomorrow if a readable source appears."
+      },
+      {
+        "story": "Jensen Huang saga sparks debate about race (SCMP) and The Verge on the showman founder CEO",
+        "decision": "skipped",
+        "reason": "Opinion pieces on a story we have covered many times; cap is full."
+      },
+      {
+        "story": "TSMC approves OpenAI and Anthropic investment caps",
+        "decision": "skipped",
+        "reason": "Single low quality source and the cap is full."
       },
       {
         "story": "Cognizant commits over 25,000 staff to Claude",

@@ -1,0 +1,266 @@
+{
+  "id": "2026-11-14-how-to-use-copilot-studio-guide",
+  "format": "utility",
+  "site_only": true,
+  "created_at": "2026-11-14T19:10:00Z",
+  "story_time": "2026-11-14T19:10:00Z",
+  "timely": false,
+  "sensitive": false,
+  "priority": 2,
+  "review": true,
+  "sources": [
+    {
+      "name": "Microsoft Learn: Quickstart, create and deploy an agent",
+      "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/nlu-gpt-quickstart"
+    },
+    {
+      "name": "Microsoft Learn: Copilot Studio licensing and trial",
+      "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/requirements-licensing-subscriptions"
+    },
+    {
+      "name": "Microsoft Learn: Knowledge sources overview",
+      "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/knowledge-copilot-studio"
+    },
+    {
+      "name": "Microsoft: Copilot Studio pricing",
+      "url": "https://www.microsoft.com/en-za/microsoft-365-copilot/pricing/copilot-studio"
+    },
+    {
+      "name": "CloudZero: Microsoft Copilot Studio pricing in 2026",
+      "url": "https://www.cloudzero.com/blog/copilot-studio-pricing/"
+    }
+  ],
+  "caption": "Copilot Studio lets you build your own AI agent by describing it in plain words.\nYou add knowledge, test it in a chat panel, then publish it to a website or Teams.\nThe catch: the free trial lets you build and test, but not publish.\n\nWhat would you build an agent for first?\n\nFollow @neurafeed.ai for daily AI news.\n\nSource: Microsoft Learn · Photo: Microsoft",
+  "threads_text": "Microsoft Copilot Studio builds an AI agent from a plain description, then you add your own docs or websites as knowledge. The free trial lets you build and test, but you cannot publish. What would you build an agent for first?",
+  "slides": [
+    {
+      "kind": "cover",
+      "headline": "How to use *Copilot Studio* to build your own AI agent",
+      "image": {
+        "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/media/fundamentals-get-started/home-page.png",
+        "credit": "Microsoft",
+        "fallback_urls": [
+          "https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/222900-Try%20copilot%20studio%20for%20free-656x369?resMode=sharp2&op_usm=1.5,0.65,15,0&wid=664&hei=385&qlt=100&fit=constrain"
+        ]
+      },
+      "pos": "left top"
+    },
+    {
+      "kind": "card",
+      "heading": "1. *Describe* your agent",
+      "paras": [
+        "Sign in at copilotstudio.microsoft.com and type what the agent should do, up to 1,024 characters.",
+        "Copilot Studio writes the name, description and instructions for you."
+      ],
+      "image": {
+        "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/media/fundamentals-get-started/home-page-describe-your-agent.png",
+        "credit": "Microsoft",
+        "fit": "contain"
+      }
+    },
+    {
+      "kind": "card",
+      "heading": "2. Give it *knowledge*",
+      "paras": [
+        "Add public websites, uploaded documents, SharePoint or Dataverse as knowledge sources.",
+        "Up to 25 websites and 25 SharePoint URLs per agent."
+      ],
+      "image": {
+        "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/media/fundamentals-get-started/start-building-your-agent.png",
+        "credit": "Microsoft",
+        "fit": "contain"
+      }
+    },
+    {
+      "kind": "card",
+      "heading": "3. *Test* it in the chat panel",
+      "paras": [
+        "Ask a real question, change the instructions on the Overview page, then ask again.",
+        "Edit the greeting in the Conversation Start topic."
+      ],
+      "image": {
+        "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/media/fundamentals-get-started/quickstart-topic-introduction-message-content.png",
+        "credit": "Microsoft",
+        "fit": "contain"
+      }
+    },
+    {
+      "kind": "card",
+      "heading": "4. *Publish* and share",
+      "paras": [
+        "Select Publish, then Go to demo website and share the link.",
+        "The free trial cannot publish. You need a paid license for that."
+      ],
+      "image": {
+        "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/media/fundamentals-get-started/go-to-demo-website.png",
+        "credit": "Microsoft",
+        "fit": "contain"
+      }
+    },
+    {
+      "kind": "cta",
+      "hook": "Follow for one AI tool explained every day."
+    }
+  ],
+  "site_article": {
+    "kind": "guide",
+    "headline": "How to use Copilot Studio to build your own AI agent, step by step",
+    "dek": "Microsoft Copilot Studio builds an agent from a plain description. Here is how to create one, give it knowledge, test it and publish it, and what the free trial will not let you do.",
+    "summary": "Copilot Studio is Microsoft's tool for building AI agents that answer from your own documents and websites. The trial lets you create and test agents, but publishing needs a paid license.",
+    "seo_title": "How to use Copilot Studio to build your own AI agent",
+    "seo_description": "How to use Copilot Studio: create an agent from a description, add knowledge, test it, publish it, and what the trial and credits cost.",
+    "answer_summary": "To use Copilot Studio, sign in at copilotstudio.microsoft.com with a work or school account, describe the agent you want, add knowledge sources such as websites or documents, test it in the chat panel, then select Publish. The trial cannot publish agents.",
+    "tags": [
+      "Copilot Studio",
+      "Microsoft",
+      "AI agents",
+      "Guides"
+    ],
+    "hero_alt": "Screenshot of the Copilot Studio home page where you start building an agent.",
+    "paragraphs": [
+      {
+        "kind": "fact",
+        "text": "How to use Copilot Studio, in short: sign in, describe the agent you want in plain words, and Copilot Studio drafts its name, description and instructions. You then add knowledge such as websites or documents, test the agent in a chat panel and publish it. Microsoft's own quickstart walks through exactly this flow.",
+        "sources": [
+          0
+        ]
+      },
+      {
+        "kind": "fact",
+        "text": "Copilot Studio is built for work. Microsoft's licensing page tells people who get a rejected email address at sign up to use a work or school account instead of a personal one. If sign up says it could not be completed, your IT administrator has probably turned off self-service sign up.",
+        "sources": [
+          1
+        ]
+      },
+      {
+        "kind": "heading",
+        "text": "Before you start: the trial and its limit"
+      },
+      {
+        "kind": "fact",
+        "text": "There is a trial. You enter your email address on Microsoft's sign up page and follow the instructions. The trial lets you create agents and test them in the test chat panel, but you cannot publish an agent with it. When the trial expires you can extend it by 30 days, and an agent keeps working for up to 90 days after the trial ends.",
+        "sources": [
+          1,
+          0
+        ]
+      },
+      {
+        "kind": "fact",
+        "text": "If your company already has a Teams plan, there is a separate path. The Copilot Studio for Teams plan comes with select Microsoft 365 subscriptions and lets you build agents with classic orchestration and publish them to Teams. It leaves out generative orchestration, premium connectors and live agent handoff.",
+        "sources": [
+          1
+        ]
+      },
+      {
+        "kind": "heading",
+        "text": "How to build an agent in Copilot Studio"
+      },
+      {
+        "kind": "step",
+        "title": "1. Sign in",
+        "text": "Go to copilotstudio.microsoft.com and sign in, or sign up for the trial. You land on the Home page. Microsoft's quickstart tells you to turn off New experience and dismiss the Feedback panel with Submit to reach the Home page it describes."
+      },
+      {
+        "kind": "step",
+        "title": "2. Describe what the agent should do",
+        "text": "Type a short description of the agent's job in the box on the Home page. You can use up to 1,024 characters. The Overview page opens, and Copilot Studio generates a name, a description and instructions, and suggests triggers, channels, knowledge sources and tools. Accept or ignore each suggestion. They disappear when the session ends."
+      },
+      {
+        "kind": "prompt",
+        "title": "Prompt 1: A help desk agent for your team",
+        "text": "Answer questions from new employees about our travel and expense policy. Use only the documents I add as knowledge. Keep answers under 100 words, link to the source document, and say clearly when the policy does not cover a question."
+      },
+      {
+        "kind": "prompt",
+        "title": "Prompt 2: A product FAQ agent for your website",
+        "text": "Help visitors to [your company website] find answers about our products, prices and shipping. Use a friendly, short tone. If a question is about an order or a refund, tell the visitor to contact [support email]."
+      },
+      {
+        "kind": "tip",
+        "text": "If you do not see a box asking you to describe your agent, your environment does not support creating agents from a description. Microsoft's Create an agent article lists the other ways to start."
+      },
+      {
+        "kind": "step",
+        "title": "3. Edit the instructions",
+        "text": "Once the agent is set up, change its name, description and instructions on the Overview page. This is where you set the tone and the rules. You can also add triggers, knowledge sources, tools and suggested prompts here."
+      },
+      {
+        "kind": "heading",
+        "text": "Give your agent knowledge"
+      },
+      {
+        "kind": "fact",
+        "text": "Knowledge is what makes an agent useful: it answers from your material instead of guessing. Copilot Studio supports public websites, uploaded documents, SharePoint, Dataverse and company data through connectors. With generative orchestration, an agent can use up to 25 public websites and 25 SharePoint URLs. Uploaded files do not count toward the 25 source limit.",
+        "sources": [
+          2
+        ]
+      },
+      {
+        "kind": "step",
+        "title": "4. Add a knowledge source",
+        "text": "In the Knowledge section of the Overview page, select Add next to a suggested source, or add your own. Then select Add, and Add to agent. In Microsoft's example, the agent gets the Copilot Studio documentation site as its knowledge."
+      },
+      {
+        "kind": "fact",
+        "text": "Two details matter. Public website searches run through Bing and return results only from the sites you list. SharePoint, Dataverse and connector sources use the signed in user's Microsoft Entra ID, so the agent only shows content that person is allowed to see.",
+        "sources": [
+          2
+        ]
+      },
+      {
+        "kind": "tip",
+        "text": "Keep Allow ungrounded responses turned off if accuracy matters. Microsoft says the agent then answers from a knowledge source only when it can cite it, and otherwise behaves as if it found nothing. A missing answer is better than a made-up one."
+      },
+      {
+        "kind": "heading",
+        "text": "Test and improve the agent"
+      },
+      {
+        "kind": "step",
+        "title": "5. Ask it a real question",
+        "text": "Use the test chat panel. Ask the kind of question your users will ask. Then go to the Overview page, change the instructions, ask the same question again and compare the two answers."
+      },
+      {
+        "kind": "step",
+        "title": "6. Rewrite the greeting",
+        "text": "In the Test your agent chat, select the introductory message. The Conversation Start topic opens with the Message node selected. Replace the text with a greeting that says what the agent does and how to start, then select Save and Start new test session."
+      },
+      {
+        "kind": "step",
+        "title": "7. Add suggested prompts and an icon",
+        "text": "On the Overview page, under Suggested prompts, add up to 10 starter prompts. They show in Teams and Microsoft 365 Copilot, not in the test chat. For an icon, select the agent icon in the top bar, then Change icon, and pick a PNG under 72 KB and no larger than 192 by 192 pixels."
+      },
+      {
+        "kind": "heading",
+        "text": "Publish your Copilot Studio agent"
+      },
+      {
+        "kind": "step",
+        "title": "8. Publish and share the demo link",
+        "text": "Select Publish at the top of the page, then Publish again to confirm. A green banner shows it worked. Open the three dots menu, select Go to demo website and share that URL. Depending on who should use the agent, you may need to change the demo website's authentication."
+      },
+      {
+        "kind": "heading",
+        "text": "What Copilot Studio costs"
+      },
+      {
+        "kind": "fact",
+        "text": "Microsoft sells Copilot Studio credit packs at $200 per pack per month, each with 25,000 Copilot Credits. There is also pay as you go billing through an Azure subscription, where you pay at the end of the period for the credits you used. Microsoft 365 Copilot costs $30 per user per month, paid yearly, and includes building agents that customize Copilot.",
+        "sources": [
+          3
+        ]
+      },
+      {
+        "kind": "fact",
+        "text": "According to CloudZero's breakdown, pay as you go works out to $0.01 per credit. A classic scripted answer uses 1 credit, a generative answer 2 and an agent action 5, and these stack within one reply. Credits are pooled across the whole company rather than counted per person.",
+        "sources": [
+          4
+        ]
+      },
+      {
+        "kind": "analysis",
+        "text": "Copilot Studio is easy to start and harder to finish. Building and testing an agent takes minutes, but the trial stops at the publish button, and real use means credits that someone at your company has to buy. It fits best when your organization already lives in Microsoft 365 and Teams. For a quick personal assistant, a custom GPT, a Gemini Gem or a Claude Project is simpler."
+      }
+    ]
+  }
+}
