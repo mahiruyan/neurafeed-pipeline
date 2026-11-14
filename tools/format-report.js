@@ -13,13 +13,15 @@ const med = (a) => { const s = [...a].sort((x, y) => x - y); const m = Math.floo
     const media = st.publish?.media_id || JSON.stringify(st).match(/"media_id":"(\d+)"/)?.[1];
     if (st.status !== 'posted' || !media || at < since || Date.now() - at < 2 * 864e5) continue;
     const kind = j.type === 'reel' ? 'reel' : j.link_id ? 'mahir-link' : j.format === 'utility' ? 'utility' : j.format === 'roundup' ? 'roundup' : j.format === 'list' || j.format === 'posts' ? 'list/posts' : 'news';
-    rows.push({ id: j.id, kind, views: await ins(media, 'views'), shares: await ins(media, 'shares'), saved: await ins(media, 'saved'), head: (j.slides?.[0]?.headline || j.hook || '').replace(/\*/g, '').slice(0, 70) });
+    rows.push({ id: j.id, kind, views: await ins(media, 'views'), shares: await ins(media, 'shares'), saved: await ins(media, 'saved'), head: (j.slides?.[0]?.headline || j.hook || '').replace(/\*/g, '').slice(0, 70), from: j.link_id ? 'mahir' : j.request_id ? 'request' : 'desk', credit: j.credit || '', day: (st.posted_at || '').slice(5, 10) });
   }
   const g = {}; for (const r of rows) (g[r.kind] ||= []).push(r);
   for (const [k, a] of Object.entries(g).sort((x, y) => y[1].length - x[1].length)) {
     const v = a.map((r) => r.views).filter(Number.isFinite);
     console.log(`::notice::${k}: n=${a.length} median=${Math.round(med(v))} mean=${Math.round(v.reduce((x, y) => x + y, 0) / (v.length || 1))} best=${Math.max(...v)} shares/post=${(a.reduce((x, r) => x + (r.shares || 0), 0) / a.length).toFixed(1)} saves/post=${(a.reduce((x, r) => x + (r.saved || 0), 0) / a.length).toFixed(1)}`);
   }
+  // Every Reel on its own line (plain log, not an annotation: there are too many for those).
+  for (const r of rows.filter((x) => x.kind === 'reel').sort((x, y) => (y.views || 0) - (x.views || 0))) console.log(`REEL\t${r.views}\t${r.shares}\t${r.saved}\t${r.day}\t${r.from}\t${r.credit}\t${r.head}`);
   const car = rows.filter((r) => r.kind !== 'reel').sort((x, y) => (y.views || 0) - (x.views || 0));
   console.log(`::notice::top carousels: ${car.slice(0, 8).map((r) => `${r.views} [${r.kind}] ${r.head}`).join(' | ')}`);
   console.log(`::notice::worst carousels: ${car.slice(-5).map((r) => `${r.views} [${r.kind}] ${r.head}`).join(' | ')}`);
