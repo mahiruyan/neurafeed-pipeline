@@ -1,67 +1,5 @@
 [
   {
-    "run_at": "2026-11-07T07:19:10.483Z",
-    "summary": "Overnight run (about 02:00 New York, Saturday): no open links or requests; queued the BBC AI toy test story (priority 2, sensitive, waits for Mahir), bringing Saturday to 2 jobs.",
-    "considered": [
-      {
-        "story": "BBC test: AI plush toy for 3-year-olds says \"I can't help with killing you\"",
-        "source": "https://www.techtimes.co.uk/ai-toy-self-harm-advice-bbc-safety-test-1809776",
-        "decision": "queued",
-        "job_id": "2026-11-07-ai-toy-cant-help-with-killing-you",
-        "priority": 2
-      },
-      {
-        "story": "Researchers use Claude for scientific discovery (Anthropic research post)",
-        "source": "https://www.anthropic.com/research/how-researchers-use-claude",
-        "decision": "skipped",
-        "reason": "The Anthropic page could not be opened from here and no second current source with the details was found; try again in a daytime run."
-      },
-      {
-        "story": "Meta brings Muse Wonder Active Memory and Focus to all users (The New Stack)",
-        "source": "https://thenewstack.io/meta-muse-specialized-models/",
-        "decision": "skipped",
-        "reason": "The New Stack page could not be opened and other coverage is of the October Muse Wonder launch, so the new rollout is not confirmed by two sources I read."
-      },
-      {
-        "story": "US intelligence says a Megaspeed executive was a Chinese spy close to Jensen Huang (NYT)",
-        "decision": "covered",
-        "reason": "Already covered as 2026-10-29-nyt-chinese-asset-close-to-jensen-huang."
-      },
-      {
-        "story": "DeepMind AI agents expose legacy 1024-bit RSA weaknesses (Crypto Briefing)",
-        "source": "https://cryptobriefing.com/google-deepmind-ai-rsa-1024-bit-weaknesses/",
-        "decision": "skipped",
-        "reason": "Niche cryptography story and search found no second source tying DeepMind to it."
-      },
-      {
-        "story": "OpenAI essay \"The future of the firm\"",
-        "decision": "skipped",
-        "reason": "Published October 29, not new news."
-      },
-      {
-        "story": "OpenAI raises $11 billion at a $1.25 trillion valuation",
-        "decision": "skipped",
-        "reason": "Follow-up to 2026-10-31-openai-cuts-funding-target-10-billion, as decided in earlier runs."
-      },
-      {
-        "story": "Crusoe sells Wyoming data center project to Google",
-        "decision": "skipped",
-        "reason": "Already skipped earlier as insider data center news."
-      },
-      {
-        "story": "Justice Department Super Intelligence Task Force",
-        "decision": "skipped",
-        "reason": "Already skipped earlier: announced November 5, political, past the timely window."
-      },
-      {
-        "story": "Bank of England says AI added only 0.5 percent to UK productivity (The Register)",
-        "decision": "skipped",
-        "reason": "UK economic data with little interest for the US audience."
-      }
-    ],
-    "requests": []
-  },
-  {
     "run_at": "2026-11-07T09:06:27.263Z",
     "summary": "Early morning run (about 04:00 New York, Saturday): no open links or requests, no new priority 1 story since the last run, and the fresh candidates were already covered, too old for their expiry window or niche, so nothing was queued; Saturday has 2 jobs and the daytime runs will add more.",
     "considered": [
@@ -5645,6 +5583,75 @@
         "story": "FAA ground stop and the AI tool probe",
         "decision": "covered",
         "reason": "Already queued as 2026-11-14-faa-ground-stop-ai-tool-probe."
+      }
+    ],
+    "requests": []
+  },
+  {
+    "run_at": "2026-11-14T09:03:09.273Z",
+    "summary": "Early run (04:00 New York, Nov 14): no open links or requests. Queued the AI agent that pitched CBC Quebec a plagiarized story and the 404 Media report on Meta's Muse sexting as real women (sensitive, for Mahir's approval); guides start at 07:00.",
+    "considered": [
+      {
+        "story": "AI agent Nameless pitched CBC Quebec a finished story; its sources were plagiarized and it hides its creator",
+        "source": "https://www.cbc.ca/news/canada/montreal/ai-autonomous-agent-independent-journalism-pitching-story-cbc-quebec-9.7419591",
+        "decision": "queued",
+        "job_id": "2026-11-14-ai-agent-pitched-cbc-news-story",
+        "priority": 2,
+        "reason": "Strange AI behavior everyone can follow; CBC read via Yahoo, iLands context from AfroTech. CBC images could not be previewed from this run, please check the slides."
+      },
+      {
+        "story": "Meta's Muse sexts while roleplaying as real women (404 Media)",
+        "source": "https://www.404media.co/muse-sexts-roleplaying-real-people/",
+        "decision": "queued",
+        "job_id": "2026-11-14-meta-muse-roleplays-real-women",
+        "priority": 2,
+        "reason": "Meta scandal beyond pure AI news, confirmed by 404 Media and IBTimes UK; sensitive (sexual content about real people) so Mahir approves. Cover is Meta's own Muse image, no photo of the women used."
+      },
+      {
+        "story": "Claude Code settings files expose thousands of secrets on GitHub (Ars Technica)",
+        "decision": "covered",
+        "reason": "Already covered as 2026-11-07-claude-code-dont-ask-again-leaks-passwords."
+      },
+      {
+        "story": "Claude helps unlock Kurt Godel's notebooks (The Guardian)",
+        "decision": "skipped",
+        "reason": "The Guardian original still could not be opened from this run."
+      },
+      {
+        "story": "AI is destroying trust between writers and readers (The Atlantic)",
+        "decision": "skipped",
+        "reason": "Could not open The Atlantic piece; search only found older AI book scam stories."
+      },
+      {
+        "story": "White House urges easing liability to encourage AI disclosure (Bloomberg)",
+        "source": "https://bloomberg.com/news/articles/2026-11-14/white-house-urges-easing-liability-to-encourage-ai-disclosure",
+        "decision": "skipped",
+        "reason": "Paywalled and policy detail with little broad appeal; no second readable source yet."
+      },
+      {
+        "story": "Gemini 4 Hydrogen launch",
+        "decision": "covered",
+        "reason": "Already covered as 2026-11-12-gemini-4-hydrogen-free-users."
+      },
+      {
+        "story": "Claude deletes a law professor's syllabus",
+        "decision": "skipped",
+        "reason": "Story is from November 6, too old."
+      },
+      {
+        "story": "Script that emails Sam Altman about your unused RAM",
+        "decision": "skipped",
+        "reason": "Small novelty item; Altman's RAM remarks already covered on October 31."
+      },
+      {
+        "story": "OpenAI disbands its robotics team (Fortune)",
+        "decision": "covered",
+        "reason": "Already covered as 2026-11-13-openai-disbands-robotics-team."
+      },
+      {
+        "story": "Nonprofits sue AI giants to freeze new models",
+        "decision": "covered",
+        "reason": "Already covered as 2026-11-12-nonprofits-sue-to-freeze-frontier-ai."
       }
     ],
     "requests": []
