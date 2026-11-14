@@ -5592,5 +5592,61 @@
       }
     ],
     "requests": []
+  },
+  {
+    "run_at": "2026-11-14T07:06:21.721Z",
+    "summary": "Overnight run (01:55 New York, Nov 14): no open links or requests. Queued OpenAI board member Paul Christiano's AI accident warning (priority 1); no guides yet (they start at 07:00).",
+    "considered": [
+      {
+        "story": "OpenAI board member Paul Christiano says an AI accident is the most likely way most people will die",
+        "source": "https://www.fastcompany.com/91642227/openai-board-member-terrifying-prediction-you-will-die-from-ai-accident-chatgpt",
+        "decision": "queued",
+        "job_id": "2026-11-14-openai-board-member-ai-accident-warning",
+        "priority": 1
+      },
+      {
+        "story": "Former Anthropic researcher Jacob Coxon says an IPO roadshow slide helped push him out",
+        "source": "https://www.tokenpost.com/news/business/57088",
+        "decision": "skipped",
+        "reason": "Crypto Briefing could not be opened and TokenPost says his resignation post never mentions a slide, so the claim is unclear."
+      },
+      {
+        "story": "Nvidia allegedly engineered GPU scarcity by funding AI startups (TechPowerUp)",
+        "source": "https://www.techpowerup.com/354814/nvidia-allegedly-engineered-scarcity-by-funding-ai-startups-to-buy-its-gpus",
+        "decision": "skipped",
+        "reason": "Only one outlet repeating an allegation; no independent confirmation found."
+      },
+      {
+        "story": "Sam Bankman-Fried would have made nearly $40bn in the Anthropic IPO (Financial Times)",
+        "decision": "skipped",
+        "reason": "FT still not readable and other reports conflict on the stake."
+      },
+      {
+        "story": "Why Dario Amodei has angered OpenAI and other AI peers (New York Times)",
+        "decision": "skipped",
+        "reason": "Paywalled analysis piece with no new event; could not read it."
+      },
+      {
+        "story": "AI job interviews lead to better outcomes (Chicago Booth)",
+        "decision": "skipped",
+        "reason": "The study is from earlier in 2026, not new."
+      },
+      {
+        "story": "Claude helps unlock Kurt Godel's notebooks (The Guardian)",
+        "decision": "skipped",
+        "reason": "The Guardian original still could not be opened."
+      },
+      {
+        "story": "ChatGPT Wallet and Gemini reading Google Wallet spending",
+        "decision": "covered",
+        "reason": "Already covered as 2026-11-13-chatgpt-wallet-agents-spend-money and 2026-11-13-gemini-reads-your-google-wallet."
+      },
+      {
+        "story": "FAA ground stop and the AI tool probe",
+        "decision": "covered",
+        "reason": "Already queued as 2026-11-14-faa-ground-stop-ai-tool-probe."
+      }
+    ],
+    "requests": []
   }
 ]
