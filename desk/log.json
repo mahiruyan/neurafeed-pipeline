@@ -1,142 +1,5 @@
 [
   {
-    "run_at": "2026-11-07T03:16:44.302Z",
-    "summary": "Night run (about 22:00 New York): no open links or requests; November 6 is already at the 8 desk job cap, no new priority 1 story broke since the last run, and the leftover candidates would expire or lacked a readable second source before Saturday's 07:00 window, so nothing was queued.",
-    "considered": [
-      {
-        "story": "Claude helps Anthropic's lab cut a three-day vault particle prep to 90 minutes",
-        "source": "https://www.anthropic.com/research/investigating-vault-particles-with-claude",
-        "decision": "skipped",
-        "reason": "Announced November 4, so as an evergreen job it would expire right as Saturday's first posting window opens at 07:00 New York."
-      },
-      {
-        "story": "AI is the new dating dealbreaker (The Verge)",
-        "source": "https://www.theverge.com/ai-artificial-intelligence/1028609/ai-dating-feelings-doomers-singularity",
-        "decision": "skipped",
-        "reason": "The Verge article could not be opened from here and the only other coverage found is a June survey, so there are not two sources I actually read."
-      },
-      {
-        "story": "Airbnb plans an AI travel agent for the first half of 2027 (TechCrunch)",
-        "source": "https://techcrunch.com/2026/11/05/airbnb-says-its-launching-an-ai-travel-agent-in-the-first-half-of-2027/",
-        "decision": "skipped",
-        "reason": "TechCrunch could not be opened from here and the readable Skift piece is from September, so the November 5 details are not confirmed by a source I read."
-      },
-      {
-        "story": "DOJ launches a Super Intelligence Task Force on AI misuse (Decrypt via Yahoo, ExecutiveGov)",
-        "source": "https://www.executivegov.com/articles/doj-super-intelligence-task-force-ai-misuse",
-        "decision": "skipped",
-        "reason": "Now two sources read, but it was announced November 5, is political and sensitive, and as timely news it has already passed the 12 hour limit."
-      },
-      {
-        "story": "Brockman says OpenAI had a rough first half before revenue took off (WSJ)",
-        "decision": "covered",
-        "reason": "Same WSJ conference appearance as 2026-11-05-brockman-openai-ipo-2027-i-think-so."
-      },
-      {
-        "story": "OpenAI closes $11 billion at a $1.25 trillion valuation (Bloomberg via Reuters)",
-        "decision": "skipped",
-        "reason": "Follow-up to 2026-10-31-openai-cuts-funding-target-10-billion, as decided in earlier runs today."
-      },
-      {
-        "story": "Anthropic IPO valuation talks fall toward $1.1 to $1.3 trillion (Bloomberg, Axios, CNBC)",
-        "decision": "covered",
-        "reason": "Same story as 2026-11-06-anthropic-ipo-investors-balk-selloff."
-      },
-      {
-        "story": "OpenAI survey: 81% of Australian university students use AI several times a week",
-        "source": "https://openai.com/index/australian-universities-ai-native-graduates/",
-        "decision": "skipped",
-        "reason": "Australia-only program with little US interest."
-      },
-      {
-        "story": "Man sues OpenAI, says ChatGPT aided a murder plot against him (CBS)",
-        "decision": "skipped",
-        "reason": "Single lawsuit, crime and sensitive, and the day is at the cap."
-      }
-    ],
-    "requests": []
-  },
-  {
-    "run_at": "2026-11-07T03:29:54.741Z",
-    "summary": "Night run, second pass (about 22:40 New York): the refreshed leads showed a new Anthropic story, so I queued 2026-11-07-anthropic-ai-proves-quantum-conjecture (priority 1, evergreen, for Saturday's first window).",
-    "considered": [
-      {
-        "story": "Startup PSI says a non-public Anthropic model proved the 18-year-old Aaronson-Ambainis quantum conjecture in three days",
-        "source": "https://interestingengineering.com/culture/psi-research-system-aaronson-ambainis-quantum-conjecture",
-        "decision": "queued",
-        "job_id": "2026-11-07-anthropic-ai-proves-quantum-conjecture",
-        "priority": 1
-      },
-      {
-        "story": "Microsoft is winding down an Oracle deal to rent AI cloud capacity (Bloomberg via Reuters)",
-        "source": "https://www.reuters.com/business/microsoft-is-winding-down-oracle-deal-rent-ai-cloud-capacity-bloomberg-news-2026-11-06/",
-        "decision": "skipped",
-        "reason": "Reported November 6 around 13:00 New York, so as timely news it expires before Saturday's 07:00 window, and it is insider cloud business news."
-      },
-      {
-        "story": "Crusoe sells its troubled Wyoming data center project to Google (TechCrunch)",
-        "source": "https://techcrunch.com/2026/11/06/crusoe-sells-troubled-wyoming-data-center-project-to-google/",
-        "decision": "skipped",
-        "reason": "Data center deal with little interest for normal users, and TechCrunch could not be opened from here."
-      }
-    ],
-    "requests": []
-  },
-  {
-    "run_at": "2026-11-07T05:07:23.621Z",
-    "summary": "Midnight run (about 00:00 New York, Saturday): no open links or requests, no new priority 1 story since the last run, and the remaining candidates were already decided or could not be confirmed with two readable sources, so nothing was queued; Saturday has 1 job so far and the morning runs will fill it.",
-    "considered": [
-      {
-        "story": "Startup PSI says an unreleased Anthropic model proved an 18-year-old quantum conjecture",
-        "decision": "covered",
-        "reason": "Already queued as 2026-11-07-anthropic-ai-proves-quantum-conjecture."
-      },
-      {
-        "story": "OpenAI raises $11 billion at a $1.25 trillion valuation (The Verge, SiliconANGLE)",
-        "source": "https://www.theverge.com/ai-artificial-intelligence/1029380/openai-1-25-trillion-investment-valuation",
-        "decision": "skipped",
-        "reason": "Follow-up to 2026-10-31-openai-cuts-funding-target-10-billion, as decided in earlier runs."
-      },
-      {
-        "story": "Anthropic IPO valuation talks fall toward $1.1 to $1.3 trillion (Bloomberg, Axios)",
-        "decision": "covered",
-        "reason": "Same story as 2026-11-06-anthropic-ipo-investors-balk-selloff."
-      },
-      {
-        "story": "Thinking Machines releases Inkling 2 Small",
-        "decision": "skipped",
-        "reason": "Already skipped in an earlier run as a developer release with little interest for normal US users, and the official page could not be opened from here."
-      },
-      {
-        "story": "University libraries swarmed by AI scraping bots (CBC)",
-        "source": "https://www.cbc.ca/news/world/university-libraries-ai-data-scraping-bots-9.7408287",
-        "decision": "skipped",
-        "reason": "The CBC article could not be opened from here and the other coverage found is from 2025, so there are not two current sources I read."
-      },
-      {
-        "story": "ChatGPT Sites website builder explainers",
-        "decision": "skipped",
-        "reason": "Only explainer and blog posts about an earlier launch, no new news."
-      },
-      {
-        "story": "Microsoft winding down Oracle AI cloud deal (Reuters)",
-        "decision": "skipped",
-        "reason": "Already skipped earlier: insider cloud news that expires before the 07:00 window."
-      },
-      {
-        "story": "Man sues OpenAI over ChatGPT and an alleged poison plot (Yahoo)",
-        "decision": "skipped",
-        "reason": "Single lawsuit involving crime, sensitive, already skipped in an earlier run."
-      },
-      {
-        "story": "Wild dolphin communication research with AI (WIRED)",
-        "decision": "skipped",
-        "reason": "Feature piece with no new finding and only one source found."
-      }
-    ],
-    "requests": []
-  },
-  {
     "run_at": "2026-11-07T07:19:10.483Z",
     "summary": "Overnight run (about 02:00 New York, Saturday): no open links or requests; queued the BBC AI toy test story (priority 2, sensitive, waits for Mahir), bringing Saturday to 2 jobs.",
     "considered": [
@@ -5663,6 +5526,69 @@
         "story": "Murray presses OpenAI on ChatGPT safeguards after Seattle woman's death",
         "decision": "skipped",
         "reason": "Not read this run; sensitive story to consider in the morning with full sources."
+      }
+    ],
+    "requests": []
+  },
+  {
+    "run_at": "2026-11-14T05:21:02.785Z",
+    "summary": "Midnight run (00:25 New York, Nov 14): no open links or requests (the four old October links were already in inbox/skipped.json). Queued the nationwide FAA ground stop and the AI tool probe (priority 1) for the first morning window; the Nov 14 Nvidia cargo job had expired (story from Nov 6).",
+    "considered": [
+      {
+        "story": "Nationwide FAA ground stop; DHS checks whether the new SMART AI tool played a role",
+        "source": "https://www.aol.com/articles/faa-groundings-congressional-warnings-ai-030224000.html",
+        "decision": "queued",
+        "job_id": "2026-11-14-faa-ground-stop-ai-tool-probe",
+        "priority": 1
+      },
+      {
+        "story": "Sam Bankman-Fried would have made nearly $40bn in the Anthropic IPO (Financial Times)",
+        "source": "https://www.ft.com",
+        "decision": "skipped",
+        "reason": "Strong money story, but the FT could not be opened and the other reports give conflicting stake sizes and values; needs a readable source first."
+      },
+      {
+        "story": "Nvidia director sold nearly $1B in stock weeks before the Huang scandal (Moneywise)",
+        "source": "https://finance.yahoo.com/markets/stocks/articles/nvidia-director-sold-nearly-1b-160000846.html",
+        "decision": "skipped",
+        "reason": "Only one readable source and it implies wrongdoing by a named person while saying it is not necessarily a red flag; too risky."
+      },
+      {
+        "story": "Claude helps surface 663 theorems in Kurt Godel's notebooks (The Guardian)",
+        "source": "https://www.theguardian.com/science/2026/nov/13/kurt-godel-notebooks-ai-helps-unlock-hidden-discoveries-man-who-transformed-maths",
+        "decision": "skipped",
+        "reason": "The Guardian original still could not be opened; only blog summaries were readable."
+      },
+      {
+        "story": "Anthropic manager drops coding interviews",
+        "source": "https://thenextweb.com/news/anthropic-felix-rieseberg-coding-interview-claude",
+        "decision": "skipped",
+        "reason": "The blog post is from October 27, too old to post as news."
+      },
+      {
+        "story": "Chicago schools would rather lose Google Search than accept AI",
+        "decision": "covered",
+        "reason": "Already covered as 2026-11-03-google-schools-no-ai-no-search."
+      },
+      {
+        "story": "BuzzFeed cut a third of its staff after its AI pivot",
+        "decision": "skipped",
+        "reason": "Search results mix July and November layoffs; could not confirm a fresh event."
+      },
+      {
+        "story": "Google sued over a teen's use of Gemini on a school Chromebook",
+        "decision": "covered",
+        "reason": "Already covered as 2026-11-09-gemini-school-chromebook-teen-lawsuit."
+      },
+      {
+        "story": "$11.4M in Nvidia hardware vanishes during shipment",
+        "decision": "covered",
+        "reason": "Job 2026-11-14-nvidia-11-million-shipment-vanished exists but expired (story_time Nov 6, past the 72 hour limit); not re-queued."
+      },
+      {
+        "story": "ChatGPT Wallet lets agents shop for you",
+        "decision": "covered",
+        "reason": "Already posted as 2026-11-13-chatgpt-wallet-agents-spend-money."
       }
     ],
     "requests": []
