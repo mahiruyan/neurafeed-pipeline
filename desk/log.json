@@ -1,69 +1,5 @@
 [
   {
-    "run_at": "2026-11-07T16:56:25.315Z",
-    "summary": "Late-morning run (about 12:00 New York, Saturday): no open links or requests and no new priority 1 story; queued the first Saturday utility guide (Claude Code getting started), bringing the day to 7 with one utility slot left for the afternoon.",
-    "considered": [
-      {
-        "story": "Utility guide: Claude Code getting started (next line in guides/plan.md)",
-        "source": "https://code.claude.com/docs/en/quickstart",
-        "decision": "queued",
-        "job_id": "2026-11-07-claude-code-getting-started-guide",
-        "priority": 2
-      },
-      {
-        "story": "Anthropic IPO valuation talks fall toward $1.1 to $1.3 trillion (Bloomberg, Forbes)",
-        "source": "https://www.bloomberg.com/news/articles/2026-11-06/anthropic-ipo-valuation-expectations-pressured-after-ai-rout",
-        "decision": "covered",
-        "reason": "Same story as 2026-11-06-anthropic-ipo-investors-balk-selloff."
-      },
-      {
-        "story": "OpenAI raises $11 billion at a $1.25 trillion valuation",
-        "decision": "skipped",
-        "reason": "Follow-up to the earlier funding story, as decided in earlier runs."
-      },
-      {
-        "story": "Microsoft winding down Oracle deal to rent AI cloud capacity (Reuters)",
-        "source": "https://www.reuters.com/business/microsoft-is-winding-down-oracle-deal-rent-ai-cloud-capacity-bloomberg-news-2026-11-06/",
-        "decision": "skipped",
-        "reason": "Already skipped earlier: insider cloud news from November 6 that is now past its timely window."
-      },
-      {
-        "story": "Gemini Omni 1.2 Flash (Google blog, on Hacker News)",
-        "source": "https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemini-omni-1-2-flash/",
-        "decision": "covered",
-        "reason": "Already covered as 2026-11-06-gemini-omni-15-second-videos-free."
-      },
-      {
-        "story": "Anthropic publishes The Components of Agent Memory",
-        "source": "https://www.anthropic.com/research/components-of-agent-memory",
-        "decision": "skipped",
-        "reason": "Research write-up for builders, already skipped in the previous run as not new for normal users."
-      },
-      {
-        "story": "Jensen Huang and the alleged Chinese spy (Tom's Hardware)",
-        "decision": "covered",
-        "reason": "Already covered by 2026-10-29-nyt-chinese-asset-close-to-jensen-huang."
-      },
-      {
-        "story": "ChatGPT connector data routing complaint on the OpenAI forum (Hacker News)",
-        "source": "https://community.openai.com/t/security-follow-up-tool-call-silently-routed-to-a-different-connector/1413053",
-        "decision": "skipped",
-        "reason": "A single user's forum post with no independent reporting to confirm it."
-      },
-      {
-        "story": "Men see more career gains from AI jobs while women lose ground (Washington Post)",
-        "decision": "skipped",
-        "reason": "Day is near the 8 post cap and the remaining slot is reserved for the afternoon utility guide."
-      },
-      {
-        "story": "AI safety advocates make gains after $110 million midterm fight (Bloomberg)",
-        "decision": "skipped",
-        "reason": "Political story that would need review, and the day is nearly full."
-      }
-    ],
-    "requests": []
-  },
-  {
     "run_at": "2026-11-07T18:55:48.413Z",
     "summary": "Early afternoon run (about 14:00 New York, Saturday): no open links or requests and no new priority 1 story; Saturday already has 7 jobs and the afternoon utility guide will bring it to 8, so no news job was queued.",
     "considered": [
@@ -5606,6 +5542,70 @@
         "job_id": "2026-11-14-jensen-trained-groot-2-reel",
         "priority": 1,
         "reason": "Mahir's link. Hook and caption are his words. Clip is from @AutismCapital (credited); it quotes NVIDIA's GR00T 2 post. GR00T 2 confirmed by NVIDIA Research and TechRepublic. I could not open the video, so I could not check what it shows of Jensen."
+      }
+    ],
+    "requests": []
+  },
+  {
+    "run_at": "2026-11-14T17:05:30.070Z",
+    "summary": "Noon run (11:55 New York, Nov 14): no open links or requests. Queued the last news slot of the day (Bessent questions whether Nvidia knew its client, sensitive, needs Mahir's approval) and the third site-only guide (Claude usage limits). Today now has 8 Instagram jobs, so no more news today.",
+    "considered": [
+      {
+        "story": "Treasury Secretary Bessent asks whether Nvidia knew it was selling to shell companies and blames Commerce for not blacklisting Megaspeed",
+        "source": "https://www.yahoo.com/news/politics/articles/us-treasury-chief-blames-commerce-145607629.html",
+        "decision": "queued",
+        "job_id": "2026-11-14-bessent-did-nvidia-know-its-client",
+        "priority": 2,
+        "reason": "Money and politics story that reaches beyond AI news; read AFP, IBTimes and 24/7 Wall St. Marked sensitive (politics) and timely false since the CNBC interview was on November 13. Cover photo could not be viewed from this run (image hosts blocked), so it relies on the IBTimes photo labeled Bessent and Lutnick."
+      },
+      {
+        "story": "Site guide: Claude usage limits explained (Tier 4 line 'claude limits')",
+        "source": "https://support.claude.com/en/articles/11647753-understanding-usage-and-length-limits",
+        "decision": "queued",
+        "job_id": "2026-11-14-claude-usage-limits-explained-guide",
+        "priority": 2,
+        "reason": "Third of today's 6 guides. Sora was skipped because OpenAI shut the Sora app down in 2026, and ChatGPT vs Claude was skipped because OpenAI's pricing page could not be read."
+      },
+      {
+        "story": "Anthropic redesigns Claude Code Projects to run parallel AI workers",
+        "source": "https://claude.com/resources/articles/projects-redesigned",
+        "decision": "skipped",
+        "reason": "Developer feature with little broad appeal, and today's cap left room for only one news job."
+      },
+      {
+        "story": "Senate Banking asks Huang and Lutnick to testify in December",
+        "decision": "covered",
+        "reason": "Folded into the Bessent job as its last slide."
+      },
+      {
+        "story": "Claude helps surface theorems in Kurt Godel's notebooks (The Guardian)",
+        "decision": "skipped",
+        "reason": "The Guardian original still could not be opened, and today's cap is now full."
+      },
+      {
+        "story": "Nvidia director sold nearly $1B in stock weeks before the Huang scandal (Yahoo Finance)",
+        "decision": "skipped",
+        "reason": "Strong money story, but the day's 8 job cap is reached; a candidate for tomorrow if sources confirm."
+      },
+      {
+        "story": "Google adds Wallet to Gemini",
+        "decision": "covered",
+        "reason": "Already covered as 2026-11-13-gemini-reads-your-google-wallet."
+      },
+      {
+        "story": "OpenAI launches ChatGPT Wallet",
+        "decision": "covered",
+        "reason": "Already covered as 2026-11-13-chatgpt-wallet-agents-spend-money."
+      },
+      {
+        "story": "Gemini 4 Hydrogen in Search and the app",
+        "decision": "covered",
+        "reason": "Already covered as 2026-11-12-gemini-4-hydrogen-free-users."
+      },
+      {
+        "story": "Cognizant commits over 25,000 staff to Claude",
+        "decision": "skipped",
+        "reason": "Enterprise deal with little consumer interest, and the cap is full."
       }
     ],
     "requests": []

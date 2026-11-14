@@ -1,0 +1,111 @@
+{
+  "id": "2026-11-14-claude-usage-limits-explained-guide",
+  "format": "utility",
+  "site_only": true,
+  "created_at": "2026-11-14T17:20:00Z",
+  "story_time": "2026-11-14T17:20:00Z",
+  "timely": false,
+  "sensitive": false,
+  "priority": 2,
+  "review": true,
+  "sources": [
+    { "name": "Claude Help Center: Understanding usage and length limits", "url": "https://support.claude.com/en/articles/11647753-understanding-usage-and-length-limits" },
+    { "name": "Claude Help Center: About Claude's Pro plan usage", "url": "https://support.claude.com/en/articles/8324991-about-claude-s-pro-plan-usage" },
+    { "name": "Claude Help Center: About Claude's Max plan usage", "url": "https://support.claude.com/en/articles/11014257-about-claude-s-max-plan-usage" },
+    { "name": "Claude pricing", "url": "https://claude.com/pricing?hsLang=en" },
+    { "name": "AI Toolbox: Claude usage limits (2026)", "url": "https://www.ai-toolbox.co/claude-management-and-productivity/claude-usage-limits-2026" }
+  ],
+  "caption": "Claude does not give you a fixed number of messages. Your usage resets every five hours, and paid plans also have a weekly limit.\nPro gets at least 5 times the Free usage per session, and Max gets 5 or 20 times Pro.\nHere is what each plan gets and how to make your limit last longer.\n\nHave you hit Claude's limit this week?\n\nFollow @neurafeed.ai for daily AI news.\n\nSource: Claude Help Center · Photo: Algi Febri Sugita / SOPA Images / Getty Images",
+  "threads_text": "Claude has no fixed message count. Usage resets every five hours, paid plans add a weekly cap, and long chats, big files and tools eat it fastest. Have you hit Claude's limit this week?",
+  "slides": [
+    {
+      "kind": "cover",
+      "headline": "Claude usage limits explained: *what each plan gets*",
+      "image": {
+        "url": "https://news.stocktwits-cdn.com/large_Getty_Images_2276989723_eb8b10972a.jpg",
+        "credit": "Algi Febri Sugita / SOPA Images / Getty Images"
+      },
+      "pos": "center center",
+      "badges": [{ "url": "assets/logos/claude.png", "fit": "contain" }]
+    },
+    {
+      "kind": "card",
+      "heading": "1. The *five hour* session",
+      "paras": [
+        "Your session starts with your first message and resets in full five hours later.",
+        "Paid plans also have a weekly limit with a fixed reset day and time."
+      ],
+      "image": { "url": "https://assets.claude.com/27d189475a69c8d847540d09821db517a2f7c66d.jpg", "credit": "Anthropic", "fit": "contain" }
+    },
+    {
+      "kind": "card",
+      "heading": "2. What each *plan* gets",
+      "paras": [
+        "Pro ($20 a month) gets at least 5 times the Free usage per session.",
+        "Max costs $100 for 5 times Pro or $200 for 20 times Pro."
+      ],
+      "image": { "url": "https://assets.claude.com/d4645137a0c197beee5313fedbf9417d035452fc.webp", "credit": "Anthropic", "fit": "contain" }
+    },
+    {
+      "kind": "card",
+      "heading": "3. What *eats* your limit",
+      "paras": [
+        "Long chats, big files, heavier models, higher effort and tools like web search all use more.",
+        "Chat and Claude Code share the same limit."
+      ],
+      "image": { "url": "https://assets.claude.com/454390de9d9ccefb6082b7c2440c7547c1ec3964.webp", "credit": "Anthropic", "fit": "contain" }
+    },
+    {
+      "kind": "card",
+      "heading": "4. Check it in *Settings*",
+      "paras": [
+        "Settings, then Usage shows your current session and when your weekly limit resets.",
+        "Start a new chat for each new topic to make it last."
+      ],
+      "image": { "url": "https://assets.claude.com/6dc7dfac91662cacf52534a25252db332309cb0d.jpg?w=1200&h=630&fit=crop", "credit": "Anthropic", "fit": "contain" }
+    },
+    {
+      "kind": "cta",
+      "hook": "Follow for one AI tool explained every day."
+    }
+  ],
+  "site_article": {
+    "kind": "guide",
+    "headline": "Claude limits explained: what each plan gets and how to make it last",
+    "dek": "Claude has no fixed message count. Usage resets every five hours, paid plans add a weekly limit, and how fast you burn through it depends on what you ask.",
+    "summary": "Claude limits work on a five hour session that resets in full, plus a weekly limit on paid plans. Pro gets at least five times the Free usage per session, and Max gets five or twenty times Pro.",
+    "seo_title": "Claude limits explained: what Free, Pro and Max get",
+    "seo_description": "Claude limits explained: the five hour session, the weekly limit, what Free, Pro and Max get, what uses the most, and how to check your usage.",
+    "answer_summary": "Claude's usage limit resets every five hours, starting from your first message, and paid plans also have a weekly limit. Pro gets at least five times the Free usage per session, Max 5x and Max 20x get five or twenty times Pro, and you can check your usage under Settings, then Usage.",
+    "tags": ["Claude", "Anthropic", "Usage limits", "Guides"],
+    "hero_alt": "Photo illustration of the Claude AI app.",
+    "paragraphs": [
+      { "kind": "fact", "text": "Claude limits come in two kinds. Usage limits decide how much you can use Claude over a period of time. Length limits decide how long a single conversation can get. Anthropic does not publish a fixed number of messages for any plan, because the cost of a message depends on what is in it.", "sources": [0, 4] },
+      { "kind": "fact", "text": "The short version: your session resets every five hours, paid plans also have a weekly limit, and Claude chat and Claude Code draw from the same pool. If you keep running out, the fix is usually how you use it, not a bigger plan.", "sources": [0, 1] },
+      { "kind": "heading", "text": "How Claude limits work" },
+      { "kind": "fact", "text": "The session limit starts with your first message. Five hours later it resets in full.", "sources": [0] },
+      { "kind": "fact", "text": "On top of that, paid plans have a weekly limit that applies across all models. Some plans also have a separate weekly limit for the Fable model. Your weekly reset day and time are fixed to your account, and you get the full weekly allowance back each cycle. Once the weekly limit is reached, any room left in your current session does not help.", "sources": [0, 4] },
+      { "kind": "fact", "text": "Usage on claude.ai, in Claude Code and in Claude Desktop all counts toward the same limit. A long coding session in the terminal can leave you with less room in the chat app, and the other way round.", "sources": [0, 1] },
+      { "kind": "tip", "text": "Anthropic says it may adjust limits to manage capacity, including weekly or monthly caps and limits on specific models or features. Treat any number you read online, including the ones below, as a rough guide rather than a promise." },
+      { "kind": "heading", "text": "What each plan gets" },
+      { "kind": "fact", "text": "Free costs nothing and includes chat on web, desktop and mobile, web search, file creation, code, memory, connected apps, Artifacts, and Claude Design, Slides and Docs. The models are Sonnet and Haiku. Opus is not included. Anthropic does not publish the Free plan's exact usage.", "sources": [3, 4] },
+      { "kind": "fact", "text": "Pro costs $20 a month billed monthly, or $17 a month on an annual plan ($200 billed up front). It gives at least five times the usage per session of the Free plan during peak hours. Anthropic's example: with short conversations and a lighter model, you can send around 45 messages every five hours, often more. Pro adds Claude Code, Projects, Opus, Claude in Chrome and Microsoft 365, and scheduled tasks.", "sources": [1, 3] },
+      { "kind": "fact", "text": "Max comes in two sizes. Max 5x costs $100 a month and gives five times the usage per session of Pro. Max 20x costs $200 a month and gives twenty times Pro. Using the same short conversation example, that is at least 225 messages every five hours on Max 5x and at least 900 on Max 20x. Both are billed monthly. Max also gets priority access at busy times and early access to new features.", "sources": [2, 3] },
+      { "kind": "analysis", "text": "Max raises how many messages you can send. It does not make a single chat able to hold more text, so if your problem is one huge conversation, upgrading will not fix it. Starting a new chat will." },
+      { "kind": "heading", "text": "What uses up your limit fastest" },
+      { "kind": "fact", "text": "Anthropic lists four main things: the length and complexity of the conversation, the features you use, the model you pick and the effort level you choose. Long chats cost more because Claude processes the conversation so far on every turn. Attached files count toward the length of your message.", "sources": [0, 1, 4] },
+      { "kind": "fact", "text": "Tools and connectors are token heavy. Web search, Research and connected apps all add to the cost of a message. Opus uses more than Sonnet, and Sonnet uses more than Haiku. Higher effort and extended thinking also use more.", "sources": [0, 4] },
+      { "kind": "heading", "text": "How to make your Claude limit last longer" },
+      { "kind": "step", "title": "1. Start a new chat for each new topic", "text": "Do not keep one conversation going all day. When a long chat gets close to your limit, start fresh and paste in only what Claude needs to know." },
+      { "kind": "step", "title": "2. Batch your questions", "text": "Ask several related questions in one message instead of sending them one at a time. Do not upload the same file again in the same conversation." },
+      { "kind": "step", "title": "3. Put reused documents in a project", "text": "Projects load only the relevant content, and cached project content counts less toward your limits. Keep project instructions short and remove files you no longer use." },
+      { "kind": "step", "title": "4. Lower the effort for routine work", "text": "Pick a lower effort level for simple tasks, and turn thinking off on models that have a thinking toggle. On models where thinking is always on, such as Opus 5.5 and Sonnet 5.5, lower the effort instead." },
+      { "kind": "step", "title": "5. Turn off tools you do not need", "text": "Switch off connectors you are not using in that chat, and skip web search when you do not need current information." },
+      { "kind": "heading", "text": "How to check your usage" },
+      { "kind": "fact", "text": "Go to Settings, then Usage (claude.ai/settings/usage). Under Current session you see how much you have used and how much time is left until the reset. The same page shows when your weekly limit resets next.", "sources": [0] },
+      { "kind": "fact", "text": "When you hit a session or weekly limit, you can wait for the reset or upgrade, and an upgrade applies right away. On Pro, Max, Team and seat based Enterprise plans you can also turn on usage credits, so work continues on credits instead of stopping. When you hit a length limit, start a new conversation or move the material into a project.", "sources": [0] },
+      { "kind": "tip", "text": "In Claude Code, the AI Toolbox guide points out that if an ANTHROPIC_API_KEY environment variable is set, Claude Code bills that API key instead of your plan. Check this if your usage page looks wrong after a long coding session." },
+      { "kind": "analysis", "text": "The honest takeaway: for most people on Pro, running out is a habit problem. One endless chat with web search on and the heaviest model will hit the wall fast. Short, focused chats on the right model go a lot further. Max is worth it if you live in Claude Code or use Claude for hours every day." }
+    ]
+  }
+}
