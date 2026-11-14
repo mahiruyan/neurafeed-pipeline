@@ -1,65 +1,5 @@
 [
   {
-    "run_at": "2026-11-07T15:00:10.243Z",
-    "summary": "Mid-morning run (about 09:55 New York, Saturday): no open links or requests and no new priority 1 story; Saturday already has 6 jobs and the two utility guides still to come would bring it to 8, so no news job was queued.",
-    "considered": [
-      {
-        "story": "Meta launches Spaces, project workspaces inside its Muse agent (TechCrunch)",
-        "source": "https://techcrunch.com/2026/11/06/meta-introduces-spaces-a-new-way-to-collaborate-with-your-muse-agent/",
-        "decision": "skipped",
-        "reason": "The TechCrunch page could not be opened from here and no second source turned up, and Muse already had a post on November 6."
-      },
-      {
-        "story": "Anthropic publishes its agent memory architecture with idle-time 'dreaming'",
-        "decision": "skipped",
-        "reason": "Claude's dreaming feature was already reported in May 2026, so this is not new for normal users."
-      },
-      {
-        "story": "Ramp data shows business AI spending stalling as Anthropic nears its IPO (TechCrunch)",
-        "source": "https://techcrunch.com/2026/11/06/ramp-data-shows-ai-spending-stalling-just-as-anthropic-nears-its-ipo/",
-        "decision": "skipped",
-        "reason": "Business data story overlapping the Anthropic IPO post, and the day is nearly at its 8 post cap."
-      },
-      {
-        "story": "Activists break into Microsoft's Amsterdam data center site, about 150 to 200 detained (Al Jazeera)",
-        "source": "https://www.aljazeera.com/news/2026/11/6/protesters-break-into-microsoft-data-centre-site-in-amsterdam",
-        "decision": "skipped",
-        "reason": "Sensitive protest and police story from November 6 with little US interest, and the day is nearly full."
-      },
-      {
-        "story": "Northampton, Massachusetts passes a yearlong AI data center moratorium",
-        "decision": "skipped",
-        "reason": "Local policy story; the data center backlash was already covered by the OpenAI power costs post."
-      },
-      {
-        "story": "Musk admits running Grok costs more than it earns",
-        "decision": "covered",
-        "reason": "Already covered as 2026-11-02-musk-grok-bot-cost-too-much."
-      },
-      {
-        "story": "Claude Code blocks cloning existing games",
-        "decision": "covered",
-        "reason": "Already covered as 2026-10-31-claude-code-stops-remaking-video-games."
-      },
-      {
-        "story": "Google pulls Search from schools that block AI",
-        "decision": "covered",
-        "reason": "Already covered as 2026-11-03-google-schools-no-ai-no-search."
-      },
-      {
-        "story": "OpenAI raises $11 billion at a $1.25 trillion valuation",
-        "decision": "skipped",
-        "reason": "Follow-up to the earlier funding story, as decided in earlier runs."
-      },
-      {
-        "story": "Utility guide for Saturday",
-        "decision": "skipped",
-        "reason": "It is before 11:00 New York time, so the next run queues the first utility post."
-      }
-    ],
-    "requests": []
-  },
-  {
     "run_at": "2026-11-07T16:56:25.315Z",
     "summary": "Late-morning run (about 12:00 New York, Saturday): no open links or requests and no new priority 1 story; queued the first Saturday utility guide (Claude Code getting started), bringing the day to 7 with one utility slot left for the afternoon.",
     "considered": [
@@ -5581,6 +5521,76 @@
         "story": "ChatGPT Wallet, Gemini Wallet spending, OpenAI board member AI accident warning, FAA ground stop AI probe",
         "decision": "covered",
         "reason": "Already covered by jobs from November 13 and 14."
+      }
+    ],
+    "requests": []
+  },
+  {
+    "run_at": "2026-11-14T15:20:50.411Z",
+    "summary": "Late morning run (10:30 New York, Nov 14): no open links or requests. Queued the Epoch AI report on test agents that reached its live site and posed as staff, plus the second site-only guide of the day (Otter AI). Today now has 7 Instagram posts.",
+    "considered": [
+      {
+        "story": "AI agents told to never give up reached Epoch AI's live website, impersonated staff and tried SQL injection (Epoch AI incident report)",
+        "source": "https://epoch.ai/publications/incident-report-ai-agents-attempted-exploits-on-our-website",
+        "decision": "queued",
+        "job_id": "2026-11-14-ai-agents-told-never-give-up-epoch",
+        "priority": 2,
+        "reason": "Strange AI behavior everyone can follow; read Epoch's own report plus TokenPost and DEV Community. One aggregator says the agents were Gemini 4 Argon, but Epoch does not name the models, so the post does not either."
+      },
+      {
+        "story": "Site guide: How to use Otter AI (next uncovered line in the guides plan tool library)",
+        "source": "https://otter.ai/pricing",
+        "decision": "queued",
+        "job_id": "2026-11-14-how-to-use-otter-ai-guide",
+        "priority": 2,
+        "reason": "Second of today's 6 guides. The next Tier 1 lines (ChatGPT Atlas) were skipped because Atlas was reported shut down; Otter's pricing page and help center were readable."
+      },
+      {
+        "story": "How AI has become a utility bill for Gen Z (Reuters)",
+        "source": "https://www.reuters.com/markets/on-the-money/how-ai-has-become-utility-bill-gen-z-2026-11-13/",
+        "decision": "skipped",
+        "reason": "Good money story, but the Reuters article could not be opened and the only readable Bank of America numbers are from March."
+      },
+      {
+        "story": "BuzzFeed vowed to chase YouTube with AI, then cut a third of its staff (Yahoo Finance)",
+        "decision": "skipped",
+        "reason": "The layoffs happened in July 2026; this is a later feature with no new event."
+      },
+      {
+        "story": "Cursor links a Fireworks breach to stolen agent traces and tampered Claude Code versions",
+        "decision": "skipped",
+        "reason": "Developer security story with little broad appeal, and only Cursor's post and an aggregator were found."
+      },
+      {
+        "story": "Hyatt CEO says ChatGPT travel users spend more but AI bookings stay tiny",
+        "decision": "skipped",
+        "reason": "Only an aggregator summary was found, no original interview or second source."
+      },
+      {
+        "story": "Fallout from the Nvidia scandal may dampen the AI boom (AP analysis)",
+        "source": "https://www.manilatimes.net/2026/11/14/business/sunday-business-it/fallout-from-the-nvidia-scandal-may-dampen-the-exuberance-around-the-ai-boom/2469989",
+        "decision": "covered",
+        "reason": "Analysis with no new event; Huang's resignation and its fallout are already covered by several jobs from November 12 and 13."
+      },
+      {
+        "story": "Stand With Jensen open letter asks Nvidia's board to reinstate Huang",
+        "decision": "covered",
+        "reason": "Already covered as 2026-11-13-nvidia-staff-want-jensen-huang-back."
+      },
+      {
+        "story": "Nvidia allegedly engineered GPU scarcity by funding startups (TechPowerUp citing WSJ)",
+        "decision": "skipped",
+        "reason": "Still an unconfirmed allegation from one readable outlet."
+      },
+      {
+        "story": "White House urges easing liability to encourage AI disclosure (Bloomberg)",
+        "decision": "skipped",
+        "reason": "Bloomberg still blocks reading and no second source was found."
+      },
+      {
+        "story": "Anthropic IPO pricing",
+        "decision": "skipped",
+        "reason": "No new pricing news yet; the IPO is already covered."
       }
     ],
     "requests": []
