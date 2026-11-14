@@ -594,6 +594,24 @@ nothing was queued). Mahir is told on Telegram when a request is `done` or `cann
   shows from the post text and Mahir's note, still queue it with a neutral, accurate hook.
 - Reels count toward the 4 to 8 posts per day and post in the same prime-time windows.
 
+## Which Reels travel (decided 2026-11-15 from 48 Reels, 30 days of Instagram data)
+
+Nine Reels passed 4,000 views (best 25,390); twenty stayed under 600. Pick videos by this filter
+when the desk makes a Reel on its own (Mahir's own links are still always made):
+- Make: a real person doing something surprising with consumer tech (smart glasses used to cheat
+  at chess, iOS running on an Android phone); hardware you can see that looks impossible (a
+  computer with no cables, a liquid-cooled machine); the first funny clip about the biggest story
+  of the day, in its first 24 hours; an absurd or shocking startup. The viewer must get it with
+  the sound off in the first two seconds.
+- Do not make: interview and podcast clips (a talking head, median about 400 views); AI-generated
+  films, trailers and music videos; jokes only developers get (tokens, cursors, coding tools);
+  official launch videos with no surprising shot; a sequel to a clip that already did well; clips
+  reposted from other Instagram AI pages; a third or later meme on the same story (the first two
+  Huang memes reached 25,000 and 8,000 views, later ones under 900).
+- Shares predict reach: ask "would someone send this to a friend?" before queuing.
+The desk made only 3 of those 48 Reels. It must look for Reel videos in every run (X, Reddit and
+company posts in the day's stories) and queue the ones that pass this filter.
+
 ## Leads
 
 `leads/latest.json` is refreshed every hour by the `scan.yml` Action: hot Reddit posts from
