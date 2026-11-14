@@ -15,9 +15,14 @@
       "status": "held_cap",
       "at": "2026-11-14T01:04:22.056Z",
       "by": "system"
+    },
+    {
+      "status": "expired",
+      "at": "2026-11-14T05:23:34.685Z",
+      "by": "system"
     }
   ],
-  "status": "held_cap",
+  "status": "expired",
   "files": [
     "out/2026-11-13-gemini-reads-your-google-wallet/1.jpg",
     "out/2026-11-13-gemini-reads-your-google-wallet/2.jpg",
@@ -29,7 +34,7 @@
   "image_errors": [
     "slide 1 badge 1: logo check skipped (fal vision: \"User is locked. Reason: Exhausted balance. Top up your balance at fal.ai/dashboard/billing.\")"
   ],
-  "updated_at": "2026-11-14T01:04:22.056Z",
+  "updated_at": "2026-11-14T05:23:34.685Z",
   "by": "auto: 4 source(s), not sensitive",
   "tg_messages": [
     3840,
