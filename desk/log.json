@@ -1,113 +1,5 @@
 [
   {
-    "run_at": "2026-11-07T21:07:25.441Z",
-    "summary": "Afternoon run (about 16:00 New York, Saturday): no open links or requests and no new priority 1 story; queued the second Saturday utility guide (GitHub Copilot Free in VS Code), bringing the day to 8 jobs, the daily cap.",
-    "considered": [
-      {
-        "story": "Utility guide: GitHub Copilot setup and everyday use (next line in guides/plan.md)",
-        "source": "https://code.visualstudio.com/docs/copilot/setup",
-        "decision": "queued",
-        "job_id": "2026-11-07-github-copilot-free-vs-code-guide",
-        "priority": 2
-      },
-      {
-        "story": "Anthropic IPO valuation talk falls to $1.1 to $1.3 trillion (Bloomberg, Forbes)",
-        "decision": "covered",
-        "reason": "Same story as 2026-11-06-anthropic-ipo-investors-balk-selloff, and the day is now at the 8 job cap."
-      },
-      {
-        "story": "Microsoft winding down Oracle deal to rent AI cloud capacity (Reuters)",
-        "source": "https://www.reuters.com/business/microsoft-is-winding-down-oracle-deal-rent-ai-cloud-capac",
-        "decision": "skipped",
-        "reason": "Already skipped in earlier runs as cloud contract news with little reader appeal, and the day is full."
-      },
-      {
-        "story": "OpenAI raises $11 billion at a $1.25 trillion valuation",
-        "decision": "skipped",
-        "reason": "Follow-up to the earlier funding story, as decided in earlier runs."
-      },
-      {
-        "story": "Gemini Omni 1.2 Flash (Hacker News)",
-        "decision": "covered",
-        "reason": "Already queued as 2026-11-06-gemini-omni-15-second-videos-free."
-      },
-      {
-        "story": "AI is dramatically accelerating AI research (Planned Obsolescence essay)",
-        "decision": "covered",
-        "reason": "Same theme as 2026-11-06-anthropic-ai-twice-as-fast-metr, and it is an opinion essay."
-      },
-      {
-        "story": "ChatGPT silently routes data between connectors, bounty asks for an ID card (OpenAI community forum)",
-        "decision": "skipped",
-        "reason": "A single forum post with no news outlet or OpenAI statement confirming it."
-      },
-      {
-        "story": "Men see more career gains from AI jobs while women lose ground (Washington Post)",
-        "decision": "skipped",
-        "reason": "Already skipped earlier today and the day is at the 8 job cap."
-      },
-      {
-        "story": "Jensen Huang and the alleged Chinese spy",
-        "decision": "covered",
-        "reason": "Already decided as covered in earlier runs today."
-      },
-      {
-        "story": "Google sued over a teen's Gemini chats on a school Chromebook",
-        "decision": "skipped",
-        "reason": "Sensitive self-harm lawsuit, still no strong national outlet confirming the details."
-      }
-    ],
-    "requests": []
-  },
-  {
-    "run_at": "2026-11-07T22:53:39.513Z",
-    "summary": "Evening run (about 17:55 New York, Saturday): no open links or requests and no new priority 1 story; today already has 8 jobs, the daily cap, so nothing was queued.",
-    "considered": [
-      {
-        "story": "Microsoft Research shuts down its AI Frontiers group (hunch.net, FourWeekMBA)",
-        "source": "https://hunch.net/?p=13764006",
-        "decision": "skipped",
-        "reason": "Internal research reorganization with limited reader appeal, and the day is at the 8 job cap."
-      },
-      {
-        "story": "Man says ChatGPT told him to stop paying rent and he was evicted (Boston Herald)",
-        "decision": "skipped",
-        "reason": "Single-person claim from one outlet, and the day is at the 8 job cap; can be reconsidered tomorrow with a second source."
-      },
-      {
-        "story": "Google told NYC schools to accept AI or lose Google Search access, report says (SILive)",
-        "decision": "skipped",
-        "reason": "Unconfirmed report from a single local outlet, and the day is full."
-      },
-      {
-        "story": "Geoffrey Hinton warns of a Chornobyl-like AI blackout (Neowin)",
-        "decision": "skipped",
-        "reason": "Commentary piece, and the day is at the 8 job cap."
-      },
-      {
-        "story": "Elvis Presley music owners sue an AI music generator (AOL)",
-        "decision": "skipped",
-        "reason": "Sensitive lawsuit story that would exceed today's cap; worth a look tomorrow if more outlets cover it."
-      },
-      {
-        "story": "Claude Code 'Don't Ask Again' exposes passwords in public GitHub files (Apiiro)",
-        "decision": "covered",
-        "reason": "Already queued as 2026-11-07-claude-code-dont-ask-again-leaks-passwords."
-      },
-      {
-        "story": "OpenAI raises $11 billion at a $1.25 trillion valuation",
-        "decision": "skipped",
-        "reason": "Follow-up to the earlier funding story, as decided in earlier runs."
-      },
-      {
-        "story": "ChatGPT silently routes data between connectors (OpenAI community forum)",
-        "decision": "skipped",
-        "reason": "A single forum post with no news outlet or OpenAI statement confirming it."
-      }
-    ],
-    "requests": []
-  },
-  {
     "run_at": "2026-11-08T00:53:39.735Z",
     "summary": "Evening run (about 19:55 New York, Saturday): no open links or requests and no new priority 1 story; Saturday already has 8 jobs, the daily cap, so nothing was queued.",
     "considered": [
@@ -5680,6 +5572,54 @@
         "story": "OpenAI launches ChatGPT Wallet for agent payments",
         "decision": "covered",
         "reason": "Already queued as 2026-11-13-chatgpt-wallet-agents-spend-money."
+      }
+    ],
+    "requests": []
+  },
+  {
+    "run_at": "2026-11-14T22:54:14.378Z",
+    "summary": "Saturday evening run: the 8 desk news jobs and 6 site guides for Nov 14 (New York) are already queued, so nothing new was queued. No open links or requests; the roundup is due Sunday at or after 17:00.",
+    "considered": [
+      {
+        "story": "Business Insider: the Chinese spy allegation that toppled Nvidia's CEO is starting to look shaky",
+        "decision": "skipped",
+        "reason": "Daily cap of 8 desk news jobs for Nov 14 is reached; it is an analysis follow-up to a saga already covered many times, so a later run can pick it up if new facts appear."
+      },
+      {
+        "story": "Cursor confirms a breach at Fireworks AI led to a malicious Claude Code extension in its marketplace",
+        "decision": "skipped",
+        "reason": "Daily news cap reached; developer-focused security story, candidate for the next day if still fresh."
+      },
+      {
+        "story": "FTC opens probe into AI safety including Anthropic and OpenAI (ABC News in leads)",
+        "source": "https://www.inquirer.com/business/ftc-anthropic-openai-ai-investigation-consumers-20260930.html",
+        "decision": "skipped",
+        "reason": "Search shows this probe was announced on Sept 30, 2026, so it is old news resurfacing in the feed."
+      },
+      {
+        "story": "Futurism: AI agent ordered its human proxy an absurd number of eggs",
+        "decision": "skipped",
+        "reason": "Daily news cap reached; good everyone story to check again in the next day's runs."
+      },
+      {
+        "story": "Anthropic says outdated prompting habits slow down Claude Opus 5.5 (The Decoder)",
+        "decision": "skipped",
+        "reason": "Daily news cap reached; could become a guide or a carousel on another day."
+      },
+      {
+        "story": "Nvidia director sold nearly $1B in stock weeks before the Jensen Huang scandal (Hacker News)",
+        "decision": "skipped",
+        "reason": "Daily news cap reached, as in the previous run."
+      },
+      {
+        "story": "Nonprofits sue OpenAI, Anthropic, Google, Meta and SpaceX to freeze frontier AI",
+        "decision": "covered",
+        "reason": "Already queued as 2026-11-12-nonprofits-sue-to-freeze-frontier-ai."
+      },
+      {
+        "story": "Treasury Secretary questions whether Nvidia knowingly sold GPUs to shell companies",
+        "decision": "covered",
+        "reason": "Already queued as 2026-11-14-bessent-did-nvidia-know-its-client."
       }
     ],
     "requests": []
