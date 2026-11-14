@@ -1,0 +1,115 @@
+{
+  "id": "2026-11-13-gemini-reads-your-google-wallet",
+  "created_at": "2026-11-14T01:00:00Z",
+  "story_time": "2026-11-13T17:00:00Z",
+  "timely": true,
+  "sensitive": false,
+  "priority": 1,
+  "format": "carousel",
+  "site_category": "companies",
+  "ab": { "headline": "short", "photo": "story" },
+  "sources": [
+    { "name": "Android Police", "url": "https://www.androidpolice.com/google-wallet-and-gemini-integration/" },
+    { "name": "The Next Web", "url": "https://thenextweb.com/news/google-gemini-wallet-spending-insights-plaid" },
+    { "name": "Talk Android", "url": "https://www.talkandroid.com/535020-google-wallet-gemini-personal-finance/" },
+    { "name": "9to5Google", "url": "https://9to5google.com/2026/09/28/google-wallet-gemini-app/" }
+  ],
+  "caption": "Google just connected Google Wallet to the Gemini app for everyone in the US.\nGemini can chart your spending, plan a budget and flag subscriptions that got more expensive. Link your bank through Plaid and it sees even more.\nIt is read-only and off by default, but Google's fine print says transaction summaries may be used for training if Gemini activity is on.\n\nWould you let Gemini read your bank account?\n\nFollow @neurafeed.ai for daily AI news.\n\nSource: Android Police · Photo: Lucas Gouveia / Android Police",
+  "threads_text": "Gemini can now read your Google Wallet and, through Plaid, your bank and card transactions. It charts your spending and flags subscriptions that raised their prices. It cannot move money, but summaries of your transactions may still be used for training if Gemini activity is on. Would you connect your bank to Gemini?",
+  "slides": [
+    {
+      "kind": "cover",
+      "headline": "Gemini can *read your spending* and catch subscription price hikes",
+      "image": {
+        "url": "https://static0.anpoimages.com/wordpress/wp-content/uploads/2026/05/a-hand-holding-a-google-wallet-icon-against-a-background-of-colorful-floating-gemini-logos.png",
+        "credit": "Lucas Gouveia / Android Police",
+        "fallback_urls": [ "https://cdn.beebom.com/content/2026/09/google-wallet.jpg" ]
+      },
+      "pos": "center",
+      "badges": [ { "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Google_%22G%22_logo.svg/500px-Google_%22G%22_logo.svg.png", "fit": "contain" } ],
+      "badge_side": "right"
+    },
+    {
+      "kind": "card",
+      "heading": "Gemini opens your *Google Wallet*",
+      "paras": [
+        "Google started rolling out a Google Wallet connection for the Gemini app in the US on November 13, on Android, iOS and the web.",
+        "You switch it on in Connected Apps, then type @Google Wallet in a chat."
+      ],
+      "image": {
+        "url": "https://static0.anpoimages.com/wordpress/wp-content/uploads/2026/11/google-wallet-gemini-ask.jpeg",
+        "credit": "Google",
+        "fit": "contain",
+        "fallback_urls": [ "https://www.androidauthority.com/wp-content/uploads/2026/09/gemini-logo-november-2025-2-1000w-562h.jpg" ]
+      }
+    },
+    {
+      "kind": "card",
+      "heading": "Your *bank and cards* too",
+      "paras": [
+        "Through Plaid, you can also link bank accounts and credit cards for deeper answers.",
+        "Ask it to chart last quarter's spending, plan how to save $1,000 in three months, or build a holiday budget from last year."
+      ],
+      "image": {
+        "url": "https://media.thenextweb.com/2026/11/google-gemini-personal-intelligence-wallet-graphic.jpg",
+        "credit": "Google",
+        "fallback_urls": [ "https://www.talkandroid.com/wp-content/uploads/2026/11/google-wallet-gemini-personal-finance.jpg" ]
+      }
+    },
+    {
+      "kind": "card",
+      "heading": "It hunts your *subscriptions*",
+      "paras": [
+        "Gemini can list your recurring payments, find the ones costing the most and flag those whose prices went up.",
+        { "t": "It is read-only: Gemini cannot move, manage or invest your money.", "strong": true }
+      ],
+      "image": {
+        "url": "https://9to5google.com/wp-content/uploads/sites/4/2023/03/google-wallet-logo-circle-1.jpg?quality=82&strip=all&w=1600",
+        "credit": "9to5Google",
+        "fallback_urls": [ "https://9to5google.com/wp-content/uploads/sites/4/2023/03/google-wallet-logo-circle-1.jpg?quality=82&strip=all&resize=1200,628" ]
+      }
+    },
+    {
+      "kind": "card",
+      "heading": "The *privacy* fine print",
+      "paras": [
+        "Google says it does not train its AI directly on Wallet data. But summaries of your transactions may be used if Gemini activity is on.",
+        "Human reviewers may see some connected app data."
+      ],
+      "image": {
+        "url": "https://static0.anpoimages.com/wordpress/wp-content/uploads/wm/2026/08/google-pixel-phone-with-gemini-ai-chatbot-app-opened.jpg",
+        "credit": "Android Police",
+        "fallback_urls": [ "https://gizmodo.com/app/uploads/2026/11/gemini-logo-1200x675.jpg" ]
+      }
+    },
+    {
+      "kind": "cta",
+      "hook": "Follow to see how far AI assistants get into your money, from Gemini to ChatGPT."
+    }
+  ],
+  "site_article": {
+    "headline": "Google connects Google Wallet to Gemini for spending and budget answers in the US",
+    "dek": "The read-only feature can pull in bank and card transactions through Plaid, and Google's privacy terms allow transaction summaries to be used for training when Gemini activity is on.",
+    "summary": "Google began rolling out a Google Wallet connection for the Gemini app to users in the United States on November 13, 2026. Gemini can analyze spending, suggest budgets and flag subscriptions whose prices rose, but it cannot move or invest money.",
+    "seo_title": "Gemini Google Wallet: spending insights, Plaid and privacy",
+    "seo_description": "Gemini can now read Google Wallet and linked bank accounts in the US to chart spending and flag subscription price hikes. What it can and cannot do.",
+    "answer_summary": "Gemini users in the US can connect Google Wallet, and bank or card accounts linked through Plaid, so Gemini can analyze spending and budgets. Access is read-only and off by default.",
+    "tags": ["Google", "Gemini", "Google Wallet", "Plaid", "Personal finance"],
+    "hero_alt": "A hand holds a Google Wallet app icon in front of a background of colorful floating Gemini logos.",
+    "paragraphs": [
+      { "kind": "fact", "text": "Google began rolling out a connection between Google Wallet and the Gemini app on November 13, 2026, giving users in the United States a way to ask the assistant questions about their own spending. The feature is reaching the Gemini app on Android, iOS and the web, according to Android Police and Talk Android.", "sources": [0, 2] },
+      { "kind": "fact", "text": "Google Wallet joins the list of services that Gemini's Personal Intelligence feature can draw on, alongside Gmail, Google Photos, YouTube and Search. Users turn it on in the Connected Apps section of Gemini's Personal Intelligence settings and then mention @Google Wallet in a prompt. Talk Android reported that the rollout is gradual, so the option may not appear for every account right away, and Google has not said when other countries will get it.", "sources": [0, 2] },
+      { "kind": "heading", "text": "What Gemini can do with the data" },
+      { "kind": "fact", "text": "Beyond the cards and passes stored in Google Wallet, users can link bank accounts and credit cards through Plaid for what Google describes as deeper insights. Examples cited by Android Police and The Next Web include asking Gemini to chart the past quarter's spending, to plan how to save $1,000 over the next three months, or to build a holiday budget based on the previous year's purchases.", "sources": [0, 1] },
+      { "kind": "fact", "text": "Gemini can also review recurring payments, point out which subscriptions take the most money and flag those whose prices increased over the past year. It can draw charts in the chat to track cash flow and budgets, Android Police reported.", "sources": [0, 2] },
+      { "kind": "fact", "text": "In late September, 9to5Google reported that the Gemini app was adding Google Wallet as a connected app that could find boarding passes and loyalty numbers and summarize expenses from accounts linked through Plaid.", "sources": [3] },
+      { "kind": "heading", "text": "Read-only access and the privacy terms" },
+      { "kind": "fact", "text": "Google says the access is read-only. Gemini can view account information but cannot move, manage or invest money, and the connection is off by default and can be switched off at any time. Google also says Gemini's answers are not financial advice, according to Talk Android.", "sources": [0, 1, 2] },
+      { "kind": "fact", "text": "Google says it does not directly train its generative AI models on Wallet and payments data. Its help pages add that summaries, excerpts and inferences drawn from transactions may be used for training when Gemini activity is turned on, and that human reviewers, including trained service providers, may see some Connected Apps data. Disconnecting Wallet does not delete Gemini activity that has already been saved; that has to be removed separately.", "sources": [1, 2] },
+      { "kind": "fact", "text": "Alongside the Wallet feature, Google introduced a Memory Summary page that lists the goals, interests and preferences Gemini has saved to tailor its answers, with each item open to editing or deletion. The Next Web reported that the page is not available in Europe or the United Kingdom.", "sources": [1, 2] },
+      { "kind": "fact", "text": "The launch puts Google in a crowded race to bring AI assistants into personal finance. The Next Web noted that OpenAI began letting some ChatGPT users link bank accounts in May and that Anthropic launched a read-only finance feature for Claude a week earlier. Google's separate Universal Cart feature, by contrast, does let Gemini make payments.", "sources": [1] },
+      { "kind": "analysis", "text": "In NeuraFeed's reading, the read-only limit is what makes this feature easy to try, while the training and human review terms are what will decide how many people actually link a bank account. The pitch is practical: catching a forgotten subscription or a quiet price increase is a clear benefit that ordinary users can measure in dollars." },
+      { "kind": "why_it_matters", "text": "Watch whether Google brings the feature outside the United States and whether it changes the training terms for transaction summaries, the detail most likely to shape how many users connect their accounts." }
+    ]
+  }
+}

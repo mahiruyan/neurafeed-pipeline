@@ -1,53 +1,5 @@
 [
   {
-    "run_at": "2026-11-07T00:53:40.511Z",
-    "summary": "Late evening run (about 19:55 New York): no open links or requests; November 6 already has its 8 desk jobs and no new priority 1 story broke since the last run, so nothing was queued.",
-    "considered": [
-      {
-        "story": "OpenAI closes $11 billion at a $1.25 trillion valuation (Bloomberg via Reuters)",
-        "source": "https://unite.ai/openai-secures-11b-in-initial-funding-at-1-25t-valuation",
-        "decision": "skipped",
-        "reason": "Follow-up to 2026-10-31-openai-cuts-funding-target-10-billion with only the closing as new, and the day is at the 8 job cap."
-      },
-      {
-        "story": "Anthropic IPO valuation talks fall toward $1.1 to $1.3 trillion (Bloomberg, Axios)",
-        "decision": "covered",
-        "reason": "Same story as 2026-11-06-anthropic-ipo-investors-balk-selloff."
-      },
-      {
-        "story": "AI is dramatically accelerating AI research (Hacker News, METR study)",
-        "decision": "covered",
-        "reason": "Already queued as 2026-11-06-anthropic-ai-twice-as-fast-metr."
-      },
-      {
-        "story": "Three men charged in the US with using AI to impersonate CEOs and steal millions (Guardian)",
-        "decision": "skipped",
-        "reason": "Crime story, sensitive, one source seen, and the day is at the cap; candidate for tomorrow."
-      },
-      {
-        "story": "DOJ sets up a superintelligence task force on AI misuse (ExecutiveGov)",
-        "decision": "skipped",
-        "reason": "Single trade-press source so far and the day is at the cap; check tomorrow for wider coverage."
-      },
-      {
-        "story": "AI is the new dating dealbreaker (The Verge)",
-        "decision": "skipped",
-        "reason": "Relatable everyone story but the day is at the cap; candidate for tomorrow if a second source exists."
-      },
-      {
-        "story": "Mark Cuban says Facebook knowingly runs AI deepfake scam ads",
-        "decision": "skipped",
-        "reason": "Sensitive fraud claims, still one source read, and the day is at the cap; candidate for tomorrow."
-      },
-      {
-        "story": "Man sues OpenAI, says ChatGPT aided a murder plot against him (CBS)",
-        "decision": "skipped",
-        "reason": "Single lawsuit, crime and sensitive, and the day is at the cap."
-      }
-    ],
-    "requests": []
-  },
-  {
     "run_at": "2026-11-07T03:16:44.302Z",
     "summary": "Night run (about 22:00 New York): no open links or requests; November 6 is already at the 8 desk job cap, no new priority 1 story broke since the last run, and the leftover candidates would expire or lacked a readable second source before Saturday's 07:00 window, so nothing was queued.",
     "considered": [
@@ -5594,6 +5546,72 @@
         "story": "OpenAI disbands its robotics team",
         "decision": "covered",
         "reason": "Already queued as 2026-11-13-openai-disbands-robotics-team."
+      }
+    ],
+    "requests": []
+  },
+  {
+    "run_at": "2026-11-14T01:01:41.684Z",
+    "summary": "Evening run (19:55 New York): no open links or requests; today had 7 posts and 6 guides, so one last slot went to Google's Gemini and Google Wallet launch (priority 1).",
+    "considered": [
+      {
+        "story": "Gemini connects to Google Wallet and Plaid bank accounts for spending insights in the US",
+        "source": "https://www.androidpolice.com/google-wallet-and-gemini-integration/",
+        "decision": "queued",
+        "job_id": "2026-11-13-gemini-reads-your-google-wallet",
+        "priority": 1
+      },
+      {
+        "story": "Anthropic IPO orders reportedly six times oversubscribed, could raise $64 billion",
+        "source": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPTVJFZEE2WWt0QjdIaWQ4Y3N6c0t5aWRxUTVFUHFvb0dPQ1V",
+        "decision": "skipped",
+        "reason": "Today is at 8 posts after the Gemini job; the IPO was covered on November 12, so this update can wait for the pricing news."
+      },
+      {
+        "story": "$11.4M in Nvidia hardware vanishes during shipment from California to Texas",
+        "source": "https://www.freightwaves.com/news/11-4-million-in-nvidia-hardware-vanishes-during-shipment-from-cali",
+        "decision": "skipped",
+        "reason": "Daily cap of 8 reached; good candidate for tomorrow's money and crime slot if still fresh."
+      },
+      {
+        "story": "AI helps decode Kurt Godel's notebooks",
+        "source": "https://www.theguardian.com/science/2026/nov/13/kurt-godel-notebooks-ai-helps-unlock-hidden-discover",
+        "decision": "skipped",
+        "reason": "Daily cap of 8 reached; strange science story to reconsider tomorrow."
+      },
+      {
+        "story": "Fed survey finds AI is now the top worry for the financial system",
+        "source": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOd1luSGcydUl6NE15cEcydlNhSnRuNjNjVHdMQldrQjRYcXp",
+        "decision": "skipped",
+        "reason": "Daily cap of 8 reached."
+      },
+      {
+        "story": "Elevated errors and outage on claude.ai and Claude Code",
+        "source": "https://status.claude.com/incidents/nn11wk485zfn",
+        "decision": "skipped",
+        "reason": "Outage was about 15 hours ago and already resolved; stale for a post now."
+      },
+      {
+        "story": "Jensen Huang's departure leaves a hole in AI startup funding (TechCrunch)",
+        "source": "https://techcrunch.com/2026/11/13/jensen-huangs-departure-blasts-big-hole-in-ai-startup-funding-vcs-",
+        "decision": "covered",
+        "reason": "Huang story already covered by several jobs, including 2026-11-13-nvidia-staff-want-jensen-huang-back."
+      },
+      {
+        "story": "OpenAI disbands its robotics team",
+        "decision": "covered",
+        "reason": "Already queued and posted as 2026-11-13-openai-disbands-robotics-team."
+      },
+      {
+        "story": "Ex-OpenAI engineer says Chinese labs train on banned Blackwell chips",
+        "decision": "covered",
+        "reason": "Already queued as 2026-11-13-chinese-ai-labs-banned-blackwell-fingerprint."
+      },
+      {
+        "story": "Chicago schools tell Google they would rather lose Search than accept AI",
+        "source": "https://www.techspot.com/news/114532-chicago-schools-tell-google-they-can-live-without.html",
+        "decision": "skipped",
+        "reason": "Daily cap of 8 reached."
       }
     ],
     "requests": []
