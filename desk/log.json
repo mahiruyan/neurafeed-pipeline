@@ -1,68 +1,5 @@
 [
   {
-    "run_at": "2026-11-07T09:06:27.263Z",
-    "summary": "Early morning run (about 04:00 New York, Saturday): no open links or requests, no new priority 1 story since the last run, and the fresh candidates were already covered, too old for their expiry window or niche, so nothing was queued; Saturday has 2 jobs and the daytime runs will add more.",
-    "considered": [
-      {
-        "story": "OpenAI raises $11 billion at a $1.25 trillion valuation (Bloomberg, TechCrunch, The Verge)",
-        "source": "https://techcrunch.com/2026/11/06/openai-reportedly-raises-an-additional-11-billion-at-a-1-25-trillion-valuation/",
-        "decision": "skipped",
-        "reason": "Follow-up to 2026-10-31-openai-cuts-funding-target-10-billion, as decided in earlier runs."
-      },
-      {
-        "story": "Anthropic IPO valuation reports (Bloomberg, Axios, tech-insider)",
-        "decision": "covered",
-        "reason": "Same story as 2026-11-06-anthropic-ipo-investors-balk-selloff."
-      },
-      {
-        "story": "OpenAI to acquire Pierre, maker of code review tools used in Codex",
-        "source": "https://runtimewire.com/article/openai-acquire-pierre-computer-code-storage-codex",
-        "decision": "skipped",
-        "reason": "Announced November 4, so it is past the timely window, and it is developer news with little interest for normal users."
-      },
-      {
-        "story": "Sensor Tower: Claude monthly users up 1,260 percent, ChatGPT at 1.4 billion",
-        "source": "https://www.trendingtopics.eu/sensor-tower-claude-growth-chatgpt-gemini/",
-        "decision": "skipped",
-        "reason": "Published November 4 and only one current source could be found and read."
-      },
-      {
-        "story": "Goncourt prize winner Philippe Jaenada admits using ChatGPT in his novel (Euronews)",
-        "source": "https://www.euronews.com/2026/11/04/goncourt-2026-winner-philippe-jaenada-admits-using-ai-in-novel-sparking-ai-debate-in-liter",
-        "decision": "skipped",
-        "reason": "Reported November 4, so even as an evergreen job it would expire around the first Saturday windows, and the second source could not be opened."
-      },
-      {
-        "story": "Check Point: criminals run ARTEX AI agents to hack web apps and steal signing certificates",
-        "source": "https://research.checkpoint.com/2026/hacking-on-autopilot-inside-artex-cybercrime-campaigns/",
-        "decision": "skipped",
-        "reason": "The Check Point report could not be opened from here, only security aggregators repeat it, and it is a sensitive crime story."
-      },
-      {
-        "story": "Samsung Android XR glasses with Gentle Monster and Gemini reportedly launch in December",
-        "source": "https://tbreak.com/samsung-smart-glasses-december-launch/",
-        "decision": "skipped",
-        "reason": "Based on a November 2 Korean report with no price or official date, nothing new today."
-      },
-      {
-        "story": "Meta pauses its commercial scraping terms after publisher pushback (Nieman Lab)",
-        "decision": "skipped",
-        "reason": "Media industry story with little interest for normal users, first reported days ago."
-      },
-      {
-        "story": "OpenAI taps Hacktron to test its systems (Tech in Asia)",
-        "decision": "skipped",
-        "reason": "Search only found the September Hacktron hack coverage, so the new detail is not confirmed by a second source I read."
-      },
-      {
-        "story": "Gary Marcus says OpenAI could become the WeWork of AI (CNBC)",
-        "decision": "skipped",
-        "reason": "Opinion from a known critic, no new facts, and the CNBC piece could not be found and read."
-      }
-    ],
-    "requests": []
-  },
-  {
     "run_at": "2026-11-07T11:26:15.411Z",
     "summary": "Morning run (about 06:20 New York, Saturday): no open links or requests; queued the OpenAI sandbox-evasion misalignment report (priority 1) and the runaway AI hacking agent that breached WorkOS (priority 2), bringing Saturday to 4 jobs.",
     "considered": [
@@ -5652,6 +5589,67 @@
         "story": "Nonprofits sue AI giants to freeze new models",
         "decision": "covered",
         "reason": "Already covered as 2026-11-12-nonprofits-sue-to-freeze-frontier-ai."
+      }
+    ],
+    "requests": []
+  },
+  {
+    "run_at": "2026-11-14T11:16:05.285Z",
+    "summary": "Early run (06:00 New York, Nov 14): no open links or requests. Queued the FTX/SBF Anthropic stake story (sold for $1.34B in 2024, worth up to about $35B at the IPO range), marked sensitive for Mahir's approval; guides start at 07:00.",
+    "considered": [
+      {
+        "story": "Sam Bankman-Fried's former Anthropic stake would be worth $31B to $35B at the IPO price range",
+        "source": "https://crypto.news/ftx-anthropic-stake-34-billion-ipo/",
+        "decision": "queued",
+        "job_id": "2026-11-14-sbf-anthropic-stake-35-billion",
+        "priority": 2,
+        "reason": "Money plus a famous person, beyond pure AI news. The FT is still unreadable, so the numbers come from crypto.news (share count times the $70 to $78 range), confirmed by Cryptopolitan, Trending Topics and CNBC's 2024 sale report; the headline uses the conservative $35B, not the FT's nearly $40B. Sensitive because of the fraud conviction. Images could not be previewed from this run, please check the slides."
+      },
+      {
+        "story": "Claude helps surface 663 theorems in Kurt Godel's notebooks (The Guardian)",
+        "source": "https://www.theguardian.com/science/2026/nov/13/kurt-godel-notebooks-ai-helps-unlock-hidden-discoveries-man-who-transformed-maths",
+        "decision": "skipped",
+        "reason": "The Guardian still could not be opened and only small aggregator summaries were readable."
+      },
+      {
+        "story": "Nvidia director sold nearly $1B in stock weeks before the Huang scandal",
+        "decision": "skipped",
+        "reason": "Still only one readable source, and it implies wrongdoing by a named person."
+      },
+      {
+        "story": "Nvidia allegedly engineered GPU scarcity by funding AI startups",
+        "decision": "skipped",
+        "reason": "Single outlet repeating an allegation, no confirmation."
+      },
+      {
+        "story": "Claude.ai and Claude Code outage",
+        "decision": "skipped",
+        "reason": "Resolved more than 20 hours ago."
+      },
+      {
+        "story": "Google's Gemini and Labs comms head Alex Joseph steps down",
+        "decision": "skipped",
+        "reason": "Insider personnel news with little US consumer interest."
+      },
+      {
+        "story": "ChatGPT Wallet lets agents shop for you",
+        "decision": "covered",
+        "reason": "Already covered as 2026-11-13-chatgpt-wallet-agents-spend-money."
+      },
+      {
+        "story": "Gemini reads Google Wallet spending",
+        "decision": "covered",
+        "reason": "Already covered as 2026-11-13-gemini-reads-your-google-wallet."
+      },
+      {
+        "story": "OpenAI board member says you will likely die from an AI accident",
+        "decision": "covered",
+        "reason": "Already covered as 2026-11-14-openai-board-member-ai-accident-warning."
+      },
+      {
+        "story": "Google sued over teen's Gemini use on a Chromebook",
+        "decision": "covered",
+        "reason": "Already covered as 2026-11-09-gemini-school-chromebook-teen-lawsuit."
       }
     ],
     "requests": []
