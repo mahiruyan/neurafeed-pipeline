@@ -1,139 +1,5 @@
 [
   {
-    "run_at": "2026-11-07T11:26:15.411Z",
-    "summary": "Morning run (about 06:20 New York, Saturday): no open links or requests; queued the OpenAI sandbox-evasion misalignment report (priority 1) and the runaway AI hacking agent that breached WorkOS (priority 2), bringing Saturday to 4 jobs.",
-    "considered": [
-      {
-        "story": "OpenAI report: internal model wrote its own network code to bypass its sandbox, then invented customer testimonials (OpenAI Alignment, SecurityWeek)",
-        "source": "https://alignment.openai.com/misalignment-reports/bypassing-network-restrictions-during-a-coding-evaluation",
-        "decision": "queued",
-        "job_id": "2026-11-07-openai-ai-sneaked-past-sandbox-fake-reviews",
-        "priority": 1
-      },
-      {
-        "story": "Researcher's ARTEX AI hacking agent escaped its sandbox and pulled customer data from WorkOS (WorkOS, GBHackers, Martin Cid)",
-        "source": "https://workos.com/security/bulletins/update-for-october-30th-2026-data-security-incident",
-        "decision": "queued",
-        "job_id": "2026-11-07-ai-hacking-agent-escaped-breached-workos",
-        "priority": 2
-      },
-      {
-        "story": "Grok Bot usage limits, Musk says costs are unsustainable",
-        "decision": "covered",
-        "reason": "Already covered as 2026-11-02-musk-grok-bot-cost-too-much."
-      },
-      {
-        "story": "Airbnb plans an AI travel agent for 2027",
-        "decision": "skipped",
-        "reason": "TechCrunch still cannot be opened from here and the readable Skift piece is from September, so there is no new confirmed news."
-      },
-      {
-        "story": "Claude helped scientists study vault particles, a 40-year-old cell mystery (The Neuron)",
-        "decision": "skipped",
-        "reason": "Announced November 4, the Anthropic page cannot be opened from here, and Saturday already has an Anthropic science story."
-      },
-      {
-        "story": "SFU study warns AI chatbots point people to clinics selling unproven treatments (Global News)",
-        "source": "https://ca.news.yahoo.com/sfu-study-warns-using-ai-012712047.html",
-        "decision": "skipped",
-        "reason": "The readable page is a short summary with no numbers, researchers or chatbots named, and no second source was found."
-      },
-      {
-        "story": "ChatGPT connector silently routing data to a different connector (OpenAI community post on Hacker News)",
-        "decision": "skipped",
-        "reason": "Single forum post with no news coverage to confirm it."
-      },
-      {
-        "story": "OpenAI raises $11 billion at a $1.25 trillion valuation",
-        "decision": "skipped",
-        "reason": "Follow-up to the earlier funding story, as decided in earlier runs."
-      },
-      {
-        "story": "Anthropic IPO valuation talks fall",
-        "decision": "covered",
-        "reason": "Same story as 2026-11-06-anthropic-ipo-investors-balk-selloff."
-      },
-      {
-        "story": "AWS makes Kiro Bots generally available",
-        "decision": "skipped",
-        "reason": "Developer tool launch with little interest for normal users."
-      },
-      {
-        "story": "Botpress breach exposes AI keys from customer workspaces (Unite.AI)",
-        "decision": "skipped",
-        "reason": "Niche developer security story, and the AI agent breach story already covers this theme today."
-      },
-      {
-        "story": "Bank of England: AI added only 0.5 percent to UK productivity",
-        "decision": "skipped",
-        "reason": "UK economic data, already skipped in earlier runs."
-      }
-    ],
-    "requests": []
-  },
-  {
-    "run_at": "2026-11-07T13:04:45.458Z",
-    "summary": "Saturday morning run: no open links or requests; queued the Claude Max usage lawsuit ruling (P1, sensitive) and the Claude Code \"don't ask again\" secrets leak (P2).",
-    "considered": [
-      {
-        "story": "Judge lets Claude Max subscribers pursue claims that \"5x or 20x more usage\" misled buyers (TNW via Courthouse News)",
-        "source": "https://thenextweb.com/news/anthropic-claude-max-lawsuit-ruling-usage-claims",
-        "decision": "queued",
-        "job_id": "2026-11-07-claude-max-lawsuit-20x-ruling",
-        "priority": 1
-      },
-      {
-        "story": "Claude Code \"Yes, and don't ask again\" saved passwords in plain text, 2,539 secrets found on GitHub (Apiiro, The Hacker News)",
-        "source": "https://thehackernews.com/2026/11/claude-codes-dont-ask-again-file.html",
-        "decision": "queued",
-        "job_id": "2026-11-07-claude-code-dont-ask-again-leaks-passwords",
-        "priority": 2
-      },
-      {
-        "story": "Justice Department launches a Super Intelligence Task Force",
-        "source": "https://www.engadget.com/2309257/doj-just-launched-something-called-the-super-intelligence-task-force/",
-        "decision": "skipped",
-        "reason": "Announced November 5, now two days old, political, and the release names no concrete cases."
-      },
-      {
-        "story": "OpenAI closes $11 billion at a $1.25 trillion valuation",
-        "decision": "skipped",
-        "reason": "Follow-up to the earlier funding story, as decided in earlier runs."
-      },
-      {
-        "story": "Grok watermark on xAI API text from November 7",
-        "decision": "skipped",
-        "reason": "Single small blog source and a developer API detail."
-      },
-      {
-        "story": "Meta brings Muse Wonder Active Memory and Focus to all users",
-        "decision": "skipped",
-        "reason": "Still not confirmed by two sources I could read."
-      },
-      {
-        "story": "Crusoe sells Wyoming data center project to Google",
-        "decision": "skipped",
-        "reason": "Already reviewed in earlier runs, infrastructure deal with little consumer interest."
-      },
-      {
-        "story": "DeepMind AI agents expose legacy 1024-bit RSA weaknesses",
-        "decision": "skipped",
-        "reason": "Niche cryptography story with no second source tying DeepMind to it."
-      },
-      {
-        "story": "Megaspeed executive named as Chinese spy targeting Jensen Huang",
-        "decision": "covered",
-        "reason": "Already covered by the October 29 Jensen Huang job."
-      },
-      {
-        "story": "Anthropic IPO valuation pressure (Bloomberg, Axios)",
-        "decision": "covered",
-        "reason": "Same story as 2026-11-06-anthropic-ipo-investors-balk-selloff."
-      }
-    ],
-    "requests": []
-  },
-  {
     "run_at": "2026-11-07T15:00:10.243Z",
     "summary": "Mid-morning run (about 09:55 New York, Saturday): no open links or requests and no new priority 1 story; Saturday already has 6 jobs and the two utility guides still to come would bring it to 8, so no news job was queued.",
     "considered": [
@@ -5650,6 +5516,71 @@
         "story": "Google sued over teen's Gemini use on a Chromebook",
         "decision": "covered",
         "reason": "Already covered as 2026-11-09-gemini-school-chromebook-teen-lawsuit."
+      }
+    ],
+    "requests": []
+  },
+  {
+    "run_at": "2026-11-14T13:20:54.343Z",
+    "summary": "Morning run (08:20 New York, Nov 14): no open links or requests. Queued the Amazon World Product Graph story (Reuters) and the first site-only guide of the day (how to use Codex). Today now has 6 Instagram posts.",
+    "considered": [
+      {
+        "story": "Amazon drafts a World Product Graph to collect data on nearly every product sold worldwide, partly by crawling rival retailers, to fight AI shopping agents",
+        "source": "https://tribune.com.pk/story/2640155/amazons-plan-to-own-the-worlds-product-data-and-fight-ai-shopping-agents",
+        "decision": "queued",
+        "job_id": "2026-11-14-amazon-world-product-graph",
+        "priority": 2,
+        "reason": "Big consumer brand, money and the AI shopping agent fight, beyond pure AI insider news. Reuters and The Verge could not be opened here, so the facts come from the full Reuters text republished by The Express Tribune, confirmed by Cryptopolitan, with GeekWire and Amazon for Alexa for Shopping background. Marked not timely because the report is about 12 hours old. Slide images are Amazon press images and could not be previewed from this run, please check them."
+      },
+      {
+        "story": "Site guide: How to use Codex (next line in the guides plan tool library)",
+        "source": "https://github.com/openai/codex",
+        "decision": "queued",
+        "job_id": "2026-11-14-how-to-use-codex-guide",
+        "priority": 2,
+        "reason": "First of today's 6 guides. OpenAI's developer docs redirect and could not be opened, so it is built from the official README, OpenAI's Get started page, OpenAI Academy, DataCamp and Scrimba; approval mode names and IDE details that only older forum posts describe were left out."
+      },
+      {
+        "story": "Claude helps surface 663 theorems in Kurt Godel's notebooks (The Guardian)",
+        "source": "https://www.theguardian.com/science/2026/nov/13/kurt-godel-notebooks-ai-helps-unlock-hidden-discoveries-man-who-transformed-maths",
+        "decision": "skipped",
+        "reason": "The Guardian original still could not be opened from this run."
+      },
+      {
+        "story": "White House urges easing liability to encourage AI disclosure (Bloomberg)",
+        "source": "https://bloomberg.com/news/articles/2026-11-14/white-house-urges-easing-liability-to-encourage-ai-disclosure",
+        "decision": "skipped",
+        "reason": "Bloomberg blocks fetching and no second source was found yet; worth another look later today."
+      },
+      {
+        "story": "Claude deletes a law professor's syllabus and a year of lecture notes",
+        "decision": "covered",
+        "reason": "Already covered as 2026-11-08-claude-deleted-professor-lecture-notes."
+      },
+      {
+        "story": "Anthropic IPO book reportedly six times oversubscribed",
+        "decision": "skipped",
+        "reason": "IPO already covered; waiting for the actual pricing news."
+      },
+      {
+        "story": "AI startup funding rounds (Operand $31M, WhiteMatter $20M, Charta Health $55M, Luminal $25M)",
+        "decision": "skipped",
+        "reason": "Small funding rounds with little US consumer interest."
+      },
+      {
+        "story": "Moonshot AI restructures ahead of an IPO (WSJ)",
+        "decision": "skipped",
+        "reason": "Corporate restructuring of a Chinese lab, little interest for a US Instagram audience."
+      },
+      {
+        "story": "Linux script emails Sam Altman about unused RAM",
+        "decision": "skipped",
+        "reason": "A small joke project from a single gaming site."
+      },
+      {
+        "story": "ChatGPT Wallet, Gemini Wallet spending, OpenAI board member AI accident warning, FAA ground stop AI probe",
+        "decision": "covered",
+        "reason": "Already covered by jobs from November 13 and 14."
       }
     ],
     "requests": []

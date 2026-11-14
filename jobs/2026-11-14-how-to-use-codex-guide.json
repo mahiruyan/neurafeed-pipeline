@@ -1,0 +1,128 @@
+{
+  "id": "2026-11-14-how-to-use-codex-guide",
+  "format": "utility",
+  "site_only": true,
+  "created_at": "2026-11-14T13:25:00Z",
+  "story_time": "2026-11-14T13:25:00Z",
+  "timely": false,
+  "sensitive": false,
+  "priority": 2,
+  "review": true,
+  "sources": [
+    { "name": "OpenAI Codex on GitHub (README)", "url": "https://github.com/openai/codex" },
+    { "name": "@openai/codex on npm", "url": "https://www.npmjs.com/package/@openai/codex" },
+    { "name": "OpenAI: Get started with Codex", "url": "https://openai.com/codex/get-started" },
+    { "name": "OpenAI Academy: How to get started with Codex", "url": "https://openai.com/ja-JP/academy/codex-how-to-start/" },
+    { "name": "DataCamp: OpenAI Codex tutorial", "url": "https://datacamp.com/tutorial/openai-codex" },
+    { "name": "Scrimba: How to use OpenAI Codex", "url": "https://scrimba.com/articles/how-to-use-openai-codex" }
+  ],
+  "caption": "Codex is OpenAI's coding agent, and it comes with paid ChatGPT plans.\nYou can use it in the ChatGPT desktop app, in VS Code, in your terminal or in the cloud.\nHere is how to set it up and keep it on a short leash.\n\nWould you let an AI agent edit your code without asking first?\n\nFollow @neurafeed.ai for daily AI news.\n\nSource: OpenAI · Photo: OpenAI",
+  "threads_text": "Codex, OpenAI's coding agent, now runs in the ChatGPT desktop app, VS Code, the terminal and the cloud, and it comes with paid ChatGPT plans. The trick is to start it with default permissions and read every change. Would you let an AI agent edit your code without asking first?",
+  "slides": [
+    {
+      "kind": "cover",
+      "headline": "How to use *Codex*, ChatGPT's coding agent",
+      "image": {
+        "url": "https://raw.githubusercontent.com/openai/codex/main/.github/codex-cli-splash.png",
+        "credit": "OpenAI",
+        "fallback_urls": ["https://9to5mac.com/wp-content/uploads/sites/6/2026/09/chatgpt-codex-gpt-6-astra-1.webp?w=1600"]
+      },
+      "pos": "center center",
+      "badges": [{ "url": "assets/logos/openai.png", "fit": "contain" }]
+    },
+    {
+      "kind": "card",
+      "heading": "1. Pick *where* to use it",
+      "paras": [
+        "Codex runs in the ChatGPT desktop app, in VS Code, Cursor and Windsurf, in your terminal, and in the cloud at chatgpt.com/codex.",
+        "One ChatGPT account covers all of them."
+      ],
+      "image": {
+        "url": "https://9to5mac.com/wp-content/uploads/sites/6/2026/09/chatgpt-codex-gpt-6-astra-1.webp?w=1600",
+        "credit": "9to5Mac",
+        "fit": "contain",
+        "fallback_urls": ["https://raw.githubusercontent.com/openai/codex/main/.github/codex-cli-splash.png"]
+      }
+    },
+    {
+      "kind": "prompt",
+      "heading": "2. Install it in your *terminal*",
+      "paras": [
+        "On a Mac or Linux, paste this into the terminal. npm and Homebrew work too.",
+        "Then type codex and pick Sign in with ChatGPT."
+      ],
+      "prompt": "curl -fsSL https://chatgpt.com/codex/install.sh | sh"
+    },
+    {
+      "kind": "card",
+      "heading": "3. Start with *default permissions*",
+      "paras": [
+        "OpenAI tells beginners to keep Default permissions. Codex then works only in the folder you chose.",
+        "Full permissions give it much more room. Use them only when you understand what it is doing."
+      ],
+      "image": {
+        "url": "https://media.datacamp.com/cms/ad_4nxdikykyj7_ukv2czhvdtucm90vrvcegts32vp0szz3oq6nvao_dn9gextb-j7pt5pzn_k9r7zw376ap4ubyj9-fsxctewrxouzvnjbxrapcmihk31lnyrmcxxja5i8plj3_ankg.png?w=624",
+        "credit": "DataCamp",
+        "fit": "contain"
+      }
+    },
+    {
+      "kind": "card",
+      "heading": "4. Hand big jobs to the *cloud*",
+      "paras": [
+        "Connect GitHub, pick a repository and start tasks. Each one runs in its own sandbox, several at once.",
+        "When a task is done, Push turns it into a pull request."
+      ],
+      "image": {
+        "url": "https://media.datacamp.com/cms/ad_4nxcrn9i-zlkyznrz37mmid23htqkyqvuttu2qrlrdhdwk89rk9sbjkx_fbimvllzrdvwl6of-0x78ka87k33m3gdazxekmdd7h_06fqoylxspqvthbs_sq0bqlx5h3olkuocargh.png?w=624",
+        "credit": "DataCamp",
+        "fit": "contain",
+        "fallback_urls": ["https://media.datacamp.com/cms/ad_4nxcfg1caxbzas7m987qjg9289rz5slxdpukaywhig5krqhnbnn4-n3o2r8qqtrlntiy12uuy_wlg5okiv9urnlyjlis-hpj2u68l8n9awihn63tbvwcnhtnuu5dt4ph2dopurqfr.png?w=624"]
+      }
+    },
+    {
+      "kind": "cta",
+      "hook": "Follow for one AI tool explained every day."
+    }
+  ],
+  "site_article": {
+    "kind": "guide",
+    "headline": "How to use Codex: ChatGPT's coding agent in the app, VS Code and terminal",
+    "dek": "Codex is OpenAI's coding agent and comes with paid ChatGPT plans. Here is how to install it, sign in, set safe permissions and hand bigger jobs to the cloud.",
+    "summary": "Codex is OpenAI's coding agent. It runs in the ChatGPT desktop app, in editors like VS Code, in the terminal and as a cloud agent, and it is included in ChatGPT plans such as Plus, Pro and Business.",
+    "seo_title": "How to use Codex: app, VS Code and terminal setup guide",
+    "seo_description": "How to use Codex, OpenAI's coding agent: install the CLI, sign in with ChatGPT, pick safe permissions, use AGENTS.md and run cloud tasks.",
+    "answer_summary": "To use Codex, open it in the ChatGPT desktop app, install the extension in VS Code, Cursor or Windsurf, or install the CLI and run codex, then choose Sign in with ChatGPT. It is included in ChatGPT plans such as Plus, Pro and Business.",
+    "tags": ["Codex", "OpenAI", "ChatGPT", "Coding agents", "Guides"],
+    "hero_alt": "Splash image for OpenAI's Codex CLI, the coding agent that runs in a terminal.",
+    "paragraphs": [
+      { "kind": "fact", "text": "How to use Codex, in short: open it in the ChatGPT desktop app, add it to your code editor, or install it in your terminal and type codex, then sign in with your ChatGPT account. Codex is OpenAI's coding agent. It reads your files, edits them and runs commands, and the CLI version runs locally on your own computer.", "sources": [0, 2] },
+      { "kind": "fact", "text": "OpenAI says Codex is included in your ChatGPT plan. Its Get started page describes Plus as covering focused coding sessions each week, Pro as offering higher limits for longer workdays across several projects, and Business as a shared workspace with admin controls. The official README recommends signing in with a Plus, Pro, Business, Edu or Enterprise plan. DataCamp's tutorial notes that Free and Go accounts get only very limited access.", "sources": [0, 2, 4] },
+      { "kind": "analysis", "text": "That means most paying ChatGPT users already have it and never opened it. It is not only for big software projects either. OpenAI's own beginner guide suggests first tasks like organizing notes, cleaning up a small dataset or comparing two drafts of a document." },
+      { "kind": "heading", "text": "Where you can use Codex" },
+      { "kind": "fact", "text": "There are four ways in, and they share one account. The ChatGPT desktop app has a Codex section with your projects and threads. The IDE extension works in VS Code, Cursor and Windsurf, according to the README. The Codex CLI runs in the terminal. And Codex Web, at chatgpt.com/codex, is the cloud agent that works on your GitHub repositories while you do something else. OpenAI says cloud tasks keep running and you can follow them from another device.", "sources": [0, 2, 5] },
+      { "kind": "tip", "text": "If you are not a developer, start with the desktop app. If you live in an editor, use the extension. The terminal and the cloud are the most powerful, and the easiest places to make a mess." },
+      { "kind": "heading", "text": "How to install the Codex CLI" },
+      { "kind": "step", "title": "1. Run the installer", "text": "On a Mac or Linux, paste the command below into your terminal. On Windows, the README gives a PowerShell command instead. You can also install it with npm or Homebrew, or download a binary from the GitHub releases page." },
+      { "kind": "prompt", "title": "Install commands from the official README", "text": "# Mac or Linux\ncurl -fsSL https://chatgpt.com/codex/install.sh | sh\n\n# Windows (PowerShell)\npowershell -ExecutionPolicy ByPass -c \"irm https://chatgpt.com/codex/install.ps1 | iex\"\n\n# npm\nnpm install -g @openai/codex\n\n# Homebrew\nbrew install --cask codex" },
+      { "kind": "step", "title": "2. Sign in with ChatGPT", "text": "Type codex and press Enter. Choose Sign in with ChatGPT so Codex uses your plan. An OpenAI API key also works, but the README says it needs extra setup." },
+      { "kind": "step", "title": "3. Open the app from the terminal if you prefer", "text": "Running codex app opens the desktop app experience, according to the README. Same agent, with a window instead of a command line." },
+      { "kind": "heading", "text": "Your first project in the Codex app" },
+      { "kind": "step", "title": "4. Give Codex its own folder", "text": "OpenAI Academy suggests making a parent folder called ChatGPT Codex with one subfolder per project. Drop in the files Codex should work on, or leave it empty and let Codex create new ones. Then create a project tied to that folder rather than a loose thread." },
+      { "kind": "step", "title": "5. Keep Default permissions", "text": "Below the input box, the app shows Work locally, which means Codex can only work in the folder you picked, with the tools you allow. A dropdown changes the permissions. OpenAI recommends Default permissions for beginners and says to use full permissions only if you understand what Codex is doing and have checked with your admin. Codex does not get access to everything on your computer." },
+      { "kind": "step", "title": "6. Use the recommended model first", "text": "Start with the default recommended model and raise the reasoning level only for harder tasks, OpenAI Academy says." },
+      { "kind": "prompt", "title": "Prompt 1: Understand a project before touching it", "text": "Read this folder and explain what the project does in plain English. List the main files and what each one is for. Do not change anything yet." },
+      { "kind": "prompt", "title": "Prompt 2: A small, checkable change", "text": "In [file name], [describe the one change you want]. Keep the change as small as possible, then tell me exactly what you changed and how I can check that it works." },
+      { "kind": "heading", "text": "Teach Codex your rules with AGENTS.md" },
+      { "kind": "fact", "text": "AGENTS.md is an optional file in your project that tells coding agents how to work there: formatting rules, which tests to run, how to name pull requests. Before Codex edits a file, it looks for AGENTS.md files that cover it, and a file deeper in the folder tree wins over a higher one, DataCamp explains. Scrimba's guide puts the benefit simply: you stop repeating the same instructions every session.", "sources": [4, 5] },
+      { "kind": "prompt", "title": "Prompt 3: Let Codex draft your AGENTS.md", "text": "Look at this project and write an AGENTS.md file for it. Include how to run the tests, the code style you see in the existing files, and any folders an agent should never edit. Show it to me before saving." },
+      { "kind": "tip", "text": "Read the AGENTS.md before you save it. Agents follow these files closely, so a wrong line here repeats in every session." },
+      { "kind": "heading", "text": "Hand bigger jobs to Codex in the cloud" },
+      { "kind": "step", "title": "7. Connect GitHub and create an environment", "text": "In ChatGPT, open Codex from the sidebar and click Get Started. DataCamp's walkthrough shows a multi-factor authentication step, then Connect to GitHub, where you can allow all repositories or only the ones you choose. Pick a repository and create an environment." },
+      { "kind": "step", "title": "8. Start tasks and review them", "text": "Describe a task and start it. Each task runs in its own isolated sandbox, and you can run several at once. Check the diff and the logs, ask follow-up questions, then click Push to open a pull request on GitHub. Internet access inside tasks is off by default and can be allowed per environment." },
+      { "kind": "fact", "text": "You can also start work by tagging @codex on a GitHub issue or pull request, and the IDE extension can apply a finished cloud diff to your local files, according to Scrimba.", "sources": [5] },
+      { "kind": "heading", "text": "What Codex is bad at" },
+      { "kind": "analysis", "text": "Codex is fast and confident, and that is the risk. It will happily make a change that looks right and quietly breaks something else. Give it small, specific tasks instead of vague goals, read every diff before you accept it, and be most careful with logins, payments and anything that handles personal data. And your plan's usage is limited, which is why Pro is sold on higher limits." }
+    ]
+  }
+}
