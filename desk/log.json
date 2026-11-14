@@ -5615,5 +5615,56 @@
       }
     ],
     "requests": []
+  },
+  {
+    "run_at": "2026-11-14T03:06:30.584Z",
+    "summary": "Late run (21:55 New York, Nov 13): no open links or requests; Nov 13 is at the 8 post cap and has 6 guides, so one non-timely story was queued for the Nov 14 morning windows (the $11.4M Nvidia cargo theft, sensitive, for Mahir's approval).",
+    "considered": [
+      {
+        "story": "$11.4M in Nvidia hardware vanishes during shipment from Oakland to Texas",
+        "source": "https://www.ktvu.com/news/11-4m-oakland-based-nvidia-shipment-stolen-en-route-texas",
+        "decision": "queued",
+        "job_id": "2026-11-14-nvidia-11-million-shipment-vanished",
+        "priority": 2,
+        "reason": "Crime and money story beyond pure AI, confirmed by KTVU, FreightWaves and ABC7; non-timely and sensitive (crime) so Mahir approves it. Images are the outlets' own photos, which could not be previewed from this run, so please check the cover in the preview."
+      },
+      {
+        "story": "Claude helps surface 663 theorems in Kurt Godel's notebooks (Jan von Plato, The Guardian)",
+        "source": "https://superpowerdaily.com/posts/claude-surfaced-663-theorems-and-proof-ideas-in-g-del-s-notebooks-researcher-says",
+        "decision": "skipped",
+        "reason": "Strong Claude story, but The Guardian (the original report) could not be opened from this run and the only other copies read were small aggregators; good pick for the morning run once the Guardian piece can be read."
+      },
+      {
+        "story": "Anthropic IPO orders reportedly six times oversubscribed",
+        "decision": "skipped",
+        "reason": "IPO already covered on November 12; waiting for pricing news."
+      },
+      {
+        "story": "Fed survey: AI tops worries about the financial system (Reuters)",
+        "decision": "skipped",
+        "reason": "Not read in full this run; one story is enough for tomorrow's early queue, which already holds four waiting posts."
+      },
+      {
+        "story": "Jensen Huang's departure leaves a hole in AI startup funding (TechCrunch)",
+        "decision": "covered",
+        "reason": "Huang story already covered by several jobs, including 2026-11-13-nvidia-staff-want-jensen-huang-back."
+      },
+      {
+        "story": "Gemini can analyze Google Wallet spending",
+        "decision": "covered",
+        "reason": "Already queued as 2026-11-13-gemini-reads-your-google-wallet (held for the cap)."
+      },
+      {
+        "story": "Claude.ai and Claude Code outage",
+        "decision": "skipped",
+        "reason": "Outage about 17 hours old and resolved."
+      },
+      {
+        "story": "Murray presses OpenAI on ChatGPT safeguards after Seattle woman's death",
+        "decision": "skipped",
+        "reason": "Not read this run; sensitive story to consider in the morning with full sources."
+      }
+    ],
+    "requests": []
   }
 ]
