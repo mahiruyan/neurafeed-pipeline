@@ -1,128 +1,5 @@
 [
   {
-    "run_at": "2026-11-08T11:09:31.319Z",
-    "summary": "Early Sunday run (about 06:20 New York): no open links or requests; queued 2 carousels (Elvis and Eminem rights holders suing Suno, sensitive; ChatGPT Lockdown Mode bypass), bringing Sunday to 5 jobs.",
-    "considered": [
-      {
-        "story": "Eminem's publisher and Elvis Presley rights holders sue AI music app Suno (CBS News, The Daily Star)",
-        "source": "https://www.thedailystar.net/culture/entertainment/news/elvis-eminem-rights-holders-sue-ai-music-generator-suno-4318351",
-        "decision": "queued",
-        "job_id": "2026-11-08-elvis-eminem-sue-suno",
-        "priority": 2
-      },
-      {
-        "story": "Check Point researchers bypassed ChatGPT Lockdown Mode through HTML preview popups (The Hacker News, GBHackers)",
-        "source": "https://thehackernews.com/2026/11/researchers-bypass-chatgpt-lockdown.html",
-        "decision": "queued",
-        "job_id": "2026-11-08-chatgpt-lockdown-mode-bypass",
-        "priority": 2
-      },
-      {
-        "story": "Google DeepMind says its AI agents found two weaknesses in legacy 1024-bit RSA",
-        "source": "https://digg.com/ai/4ij1uxax",
-        "decision": "skipped",
-        "reason": "Could not read the DeepMind post itself (only X posts and small aggregators), and the key numbers come from a third party; worth a later run if a major outlet covers it."
-      },
-      {
-        "story": "Anthropic valuation halved amid bubble fears (Chosun Ilbo)",
-        "decision": "skipped",
-        "reason": "Could not confirm a new valuation event with a second source; recent coverage is about secondary market prices already covered this week."
-      },
-      {
-        "story": "Microsoft data center site in Amsterdam breached by activists (Reuters, Guardian)",
-        "decision": "covered",
-        "reason": "Already considered and skipped in earlier runs as a European protest story."
-      },
-      {
-        "story": "Goldman Sachs restricts AI coding tools for bankers (Quartz)",
-        "decision": "covered",
-        "reason": "Already considered in earlier runs this week."
-      },
-      {
-        "story": "Perplexity launches Teammates, always-on work agents (The Verge)",
-        "decision": "covered",
-        "reason": "Already considered and skipped in earlier runs."
-      },
-      {
-        "story": "Agility Robotics lists on Nasdaq as first humanoid robot IPO (TechRepublic)",
-        "decision": "skipped",
-        "reason": "A SPAC listing with modest US consumer appeal, and no video for a Reel."
-      },
-      {
-        "story": "Goodbye Claude, Hello Pi (Hacker News blog post)",
-        "source": "https://caleb.software/posts/claude-to-pi.html",
-        "decision": "skipped",
-        "reason": "One developer's personal blog post, not news."
-      },
-      {
-        "story": "Chamath Palihapitiya warns a data center slowdown would hit Anthropic and OpenAI (Stocktwits)",
-        "decision": "skipped",
-        "reason": "Investor commentary with no new event, as decided in an earlier run."
-      }
-    ],
-    "requests": []
-  },
-  {
-    "run_at": "2026-11-08T13:08:05.000Z",
-    "summary": "Sunday morning run (about 08:00 New York): no open links or requests, no new priority 1 story on a quiet Sunday; queued 1 carousel (Sam Altman on why OpenAI leaders left), bringing Sunday to 7 jobs with room left for the weekly roundup.",
-    "considered": [
-      {
-        "story": "Sam Altman explains why OpenAI leaders left to build rival AI, on Raj Shamani's Figuring Out podcast",
-        "source": "https://singjupost.com/fo583-raj-shamani-w-sam-altman-ai-revolution-superintelligence-future-of-humanity-transcript/",
-        "decision": "queued",
-        "job_id": "2026-11-08-altman-why-openai-leaders-left",
-        "priority": 2
-      },
-      {
-        "story": "Anthropic engineer Addy Osmani warns of 'cognitive surrender' to AI agents (Business Insider)",
-        "source": "https://www.aol.com/articles/anthropic-engineer-warns-cognitive-surrender-100003000.html",
-        "decision": "skipped",
-        "reason": "The essay largely repeats his May 2026 blog post, outlets give conflicting study figures, and there was no usable photo of him."
-      },
-      {
-        "story": "Chamath Palihapitiya warns a data center slowdown would hit Anthropic and OpenAI (Stocktwits)",
-        "decision": "skipped",
-        "reason": "Investor commentary with no new event, as decided in earlier runs."
-      },
-      {
-        "story": "Anthropic valuation halved amid bubble fears (Chosun Ilbo)",
-        "decision": "skipped",
-        "reason": "Still no second source for a new valuation event."
-      },
-      {
-        "story": "AMD shows 6th Gen EPYC chips at China's import expo (China Daily)",
-        "decision": "skipped",
-        "reason": "Chip trade show news with little appeal for a general US audience."
-      },
-      {
-        "story": "AWS Kiro persistent agents (The New Stack)",
-        "decision": "skipped",
-        "reason": "Developer tooling feature with narrow appeal."
-      },
-      {
-        "story": "Pinterest users who abuse AI tools can lose accounts from November 12 (PPC Land)",
-        "decision": "skipped",
-        "reason": "Still could not confirm the policy with a second independent source."
-      },
-      {
-        "story": "Google sued by parents who say Gemini helped plan a suicide (San Jose Inside)",
-        "decision": "covered",
-        "reason": "Already considered in earlier runs; no new development."
-      },
-      {
-        "story": "AI-cloned CEOs stole $129 million (Martin Cid Magazine)",
-        "decision": "covered",
-        "reason": "Already queued as 2026-11-08-ai-cloned-ceos-stole-129-million."
-      },
-      {
-        "story": "OpenAI CFO says data centers will not raise power bills (Brave New Coin)",
-        "decision": "covered",
-        "reason": "Same story as 2026-11-06-openai-data-centers-pay-own-power."
-      }
-    ],
-    "requests": []
-  },
-  {
     "run_at": "2026-11-08T15:00:15.243Z",
     "summary": "Sunday morning run (about 10:00 New York): handled Mahir's request to re-queue the expired Altman carousel (cannot: the story is older than the 72 hour limit, so any copy would expire at once); no new priority 1 story on a quiet Sunday, so nothing new queued, leaving room for the weekly roundup at 17:00.",
     "considered": [
@@ -5716,6 +5593,70 @@
         "story": "South Korea tax exam top scorer confesses AI cheating",
         "decision": "covered",
         "reason": "Already queued as 2026-11-15-korea-tax-exam-topper-ai-cheating (site-only); the new Reel is the separate YouTuber test."
+      }
+    ],
+    "requests": []
+  },
+  {
+    "run_at": "2026-11-15T13:13:29.122Z",
+    "summary": "Morning Sunday run (08:00 New York): queued today's first site-only guide (ChatGPT vs Claude, plans compared). No open links or requests; Instagram carousels for the day are already at 2; no Reel video passed the filter this run; site-only articles already at 3; roundup paused.",
+    "considered": [
+      {
+        "story": "Guide: ChatGPT vs Claude, which one to use for what (guides plan, Tier 2 first line)",
+        "source": "https://claude.com/pricing",
+        "decision": "queued",
+        "job_id": "2026-11-15-chatgpt-vs-claude-guide",
+        "priority": 2
+      },
+      {
+        "story": "Guide: How to use ChatGPT Atlas and Atlas for Windows (guides plan, Tier 1)",
+        "source": "https://www.implicator.ai/openai-folds-codex-into-chatgpt-as-atlas-gets-august-9-deprecation-target/",
+        "decision": "skipped",
+        "reason": "OpenAI retired Atlas as a standalone browser (deprecation target August 9) and moved it into the ChatGPT desktop app, so a how-to guide would be out of date. Both Atlas lines in guides/plan.md should be dropped."
+      },
+      {
+        "story": "Guide: How to use Sora (guides plan, Tier 1)",
+        "decision": "skipped",
+        "reason": "Sora has been shut down according to recent coverage; no guide."
+      },
+      {
+        "story": "Gemini user faked a hostage crisis to get Gemini to recommend a piracy site (Dexerto, r/GeminiAI)",
+        "source": "https://www.dexerto.com/entertainment/google-gemini-user-faked-a-hostage-crisis-to-trick-ai-into-recommending-pirated-software-3427475/",
+        "decision": "skipped",
+        "reason": "Published November 11, four days old, and today's two carousels are already queued."
+      },
+      {
+        "story": "Anthropic buys 3.4 billion dollars of gas generators",
+        "decision": "covered",
+        "reason": "Already covered as 2026-11-08-anthropic-buys-3-4-billion-gas-generators."
+      },
+      {
+        "story": "Goldman Sachs limits AI coding tools to engineers",
+        "source": "https://fstech.co.uk/fst/Goldman_Sachs_Restricts_AI_Coding_Tools_For_Traders_And_Bankers.php",
+        "decision": "skipped",
+        "reason": "Reported November 2, too old."
+      },
+      {
+        "story": "Anthropic launches Claude for Manufacturing",
+        "decision": "skipped",
+        "reason": "Could not open Anthropic's page or a second outlet to confirm the details; insider news and today's site-only articles are already at 3."
+      },
+      {
+        "story": "NeodraDynamics Neo1 13-foot hydraulic humanoid robot",
+        "source": "https://interestingengineering.com/ai-robotics/china-neo1-hydraulic-humanoid-robot-1102-pound-payload",
+        "decision": "skipped",
+        "reason": "Unveiled October 14 and no original video link found, so not a Reel."
+      },
+      {
+        "story": "Nvidia kept GPU prices high through circular financing (TechSpot citing WSJ, top of Hacker News)",
+        "source": "https://www.techspot.com/news/114558-nvidia-deliberately-kept-gpu-prices-high-through-circular.html",
+        "decision": "skipped",
+        "reason": "Still could not read the WSJ original; secondhand only."
+      },
+      {
+        "story": "Reel search: viral AI and robot clips of the last 24 hours (X, TikTok trend trackers, robotics sites)",
+        "decision": "skipped",
+        "reason": "Every viral robot clip found was months old (Russia store robot, Warsaw boars); nothing new passed the Reels filter."
       }
     ],
     "requests": []
