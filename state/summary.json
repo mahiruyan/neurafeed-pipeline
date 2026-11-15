@@ -1,32 +1,6 @@
 {
-  "updated_at": "2026-11-15T09:00:18.960Z",
+  "updated_at": "2026-11-15T11:05:02.421Z",
   "jobs": [
-    {
-      "id": "2026-10-29-apple-first-touchscreen-macbook-pro-reel",
-      "status": "render_failed",
-      "posted_at": null,
-      "post_at": null,
-      "priority": 1,
-      "format": "reel",
-      "headline": "After years of refusing to do it, Apple finally unveils its first touchscreen MacBook Pro",
-      "from_link": true,
-      "link_id": "link-2026-10-29-1883",
-      "error": "Command failed: yt-dlp --no-playlist --no-progress --restrict-filenames -f bv*[height<=1920][vcodec^=avc1]+ba[acodec^=mp4a]/bv*[height<=1920]+ba/b[height<=1920]/b --merge-output-format mp4 -o /home/runner/work/neurafeed-pipeline/neurafeed-pipeline/out/2026-10-29-apple-first-touchscreen-macbook-pro-reel/src/source.%(ext)s https://www.instagram.com/reel/DfDUpW4AsCf/?srtk=cDZ4eXNlejZibnZh\nWARNING: [Instagram] DfDUpW4AsCf: Instagram API is not granting access\nERROR: [Instagram] DfDUpW4AsCf: Instagram sent an empty media response. Check if this post is accessible in your browser without being logged-in. If it is not, then use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Otherwise, if the post is accessible in browser without being logged-in, please report this issue on  https://github.com/yt-dlp/yt-dlp/issues?q= , filling out the appropriate issue template. Confirm you are on the latest version using  yt-dlp -U\n",
-      "tg": []
-    },
-    {
-      "id": "2026-11-10-atlas-on-wheels-spin-jump-reel",
-      "status": "render_failed",
-      "posted_at": null,
-      "post_at": null,
-      "priority": 2,
-      "format": "reel",
-      "headline": "Boston Dynamics put wheels on Atlas, and it landed a 360 spin jump on the first try",
-      "from_link": false,
-      "link_id": null,
-      "error": "Command failed: yt-dlp --no-playlist --no-progress --restrict-filenames -f bv*[height<=1920][vcodec^=avc1]+ba[acodec^=mp4a]/bv*[height<=1920]+ba/b[height<=1920]/b --merge-output-format mp4 -o /home/runner/work/neurafeed-pipeline/neurafeed-pipeline/out/2026-11-10-atlas-on-wheels-spin-jump-reel/src/source.%(ext)s https://www.youtube.com/watch?v=NL65Awuv8gU\nWARNING: [youtube] No supported JavaScript runtime could be found. Only deno is enabled by default; to use another runtime add  --js-runtimes RUNTIME[:PATH]  to your command/config. YouTube extraction without a JS runtime has been deprecated, and some formats may be missing. See  https://github.com/yt-dlp/yt-dlp/wiki/EJS  for details on installing one\nWARNING: [youtube] No title found in player responses; falling back to title from initial data. Other metadata may also be missing\nERROR: [youtube] NL65Awuv8gU: Sign in to confirm you’re not a bot. This helps protect our community. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies\n",
-      "tg": []
-    },
     {
       "id": "2026-11-10-gemini-human-reviewers-gmail-drive",
       "status": "posted",
@@ -1779,6 +1753,19 @@
         3974,
         3975
       ]
+    },
+    {
+      "id": "2026-11-15-ai-glasses-claude-tax-exam-perfect-score-reel",
+      "status": "render_failed",
+      "posted_at": null,
+      "post_at": null,
+      "priority": 2,
+      "format": "reel",
+      "headline": "A YouTuber wore AI glasses linked to Claude and got a perfect score on Korea's tax accountant exam",
+      "from_link": false,
+      "link_id": null,
+      "error": "Command failed: yt-dlp --no-playlist --no-progress --restrict-filenames -f bv*[height<=1920][vcodec^=avc1]+ba[acodec^=mp4a]/bv*[height<=1920]+ba/b[height<=1920]/b --merge-output-format mp4 -o /home/runner/work/neurafeed-pipeline/neurafeed-pipeline/out/2026-11-15-ai-glasses-claude-tax-exam-perfect-score-reel/src/source.%(ext)s https://www.youtube.com/watch?v=KVghpmwqDHw\nWARNING: [youtube] No supported JavaScript runtime could be found. Only deno is enabled by default; to use another runtime add  --js-runtimes RUNTIME[:PATH]  to your command/config. YouTube extraction without a JS runtime has been deprecated, and some formats may be missing. See  https://github.com/yt-dlp/yt-dlp/wiki/EJS  for details on installing one\nWARNING: [youtube] No title found in player responses; falling back to title from initial data. Other metadata may also be missing\nERROR: [youtube] KVghpmwqDHw: Sign in to confirm you’re not a bot. This helps protect our community. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies\n",
+      "tg": []
     },
     {
       "id": "2026-11-15-claude-fingers-never-touch-reel",
