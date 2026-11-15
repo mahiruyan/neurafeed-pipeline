@@ -1,67 +1,5 @@
 [
   {
-    "run_at": "2026-11-08T09:02:50.455Z",
-    "summary": "Early Sunday run (about 04:20 New York): no open links or requests, no new priority 1 story; queued 1 sensitive crime and money carousel (AI-cloned CEOs, $129 million fraud), bringing Sunday to 3 jobs.",
-    "considered": [
-      {
-        "story": "Prosecutors say three men used AI clones of CEOs and lawyers to steal $129 million from hospitals and banks",
-        "source": "https://gizmodo.com/doj-says-deepfaked-ceos-and-lawyers-helped-steal-129-million-from-hospitals-banks-and-others-2000836456",
-        "decision": "queued",
-        "job_id": "2026-11-08-ai-cloned-ceos-stole-129-million",
-        "priority": 2
-      },
-      {
-        "story": "OpenAI courts celebrities as a media executive says actors below the top tier are not getting jobs (Yahoo / The Cool Down)",
-        "source": "https://www.yahoo.com/entertainment/celebrity/articles/openai-courts-celebrities-executive-says-014000820.html",
-        "decision": "skipped",
-        "reason": "Aggregated piece; the quoted executive is unnamed and not from OpenAI, so the headline overstates the facts."
-      },
-      {
-        "story": "Greg Brockman says AI could make death a choice (Wccftech, Breitbart)",
-        "source": "https://wccftech.com/openais-greg-brockman-says-ai-will-allow-death-to-become-a-choice-echoing-elon-musks-take-that-longevity-or-semi-immortality-is-an-extremely-solvable-problem/",
-        "decision": "skipped",
-        "reason": "Same WSJ Tech talk already covered as 2026-11-05-brockman-openai-ipo-2027-i-think-so."
-      },
-      {
-        "story": "Anthropic stops Claude Code from cloning video games (The Decoder, Digital Trends)",
-        "decision": "covered",
-        "reason": "Already posted as 2026-10-31-claude-code-stops-remaking-video-games."
-      },
-      {
-        "story": "Delaware plan to let AI agents run companies (Times of India, WHYY)",
-        "decision": "covered",
-        "reason": "Already covered as 2026-10-28-delaware-ai-run-companies-congress-probe."
-      },
-      {
-        "story": "OpenAI Dots agents read email for 2FA codes but hesitate to enter them (Crypto Briefing)",
-        "source": "https://cryptobriefing.com/openai-dots-agents-2fa-email-codes/",
-        "decision": "skipped",
-        "reason": "Niche agent behavior detail with little appeal for a general US audience."
-      },
-      {
-        "story": "Pinterest users who abuse AI tools can lose accounts from November 12 (PPC Land)",
-        "decision": "skipped",
-        "reason": "Could not confirm the policy with a second independent source."
-      },
-      {
-        "story": "OpenAI CFO says data centers will not raise electricity bills after the midterms",
-        "decision": "covered",
-        "reason": "Same story as 2026-11-06-openai-data-centers-pay-own-power."
-      },
-      {
-        "story": "Chamath Palihapitiya warns a data center slowdown would hit Anthropic and OpenAI (Stocktwits)",
-        "decision": "skipped",
-        "reason": "Commentary from an investor, no new event."
-      },
-      {
-        "story": "Claude Code Don't Ask Again exposes passwords in public GitHub files",
-        "decision": "covered",
-        "reason": "Already queued as 2026-11-07-claude-code-dont-ask-again-leaks-passwords."
-      }
-    ],
-    "requests": []
-  },
-  {
     "run_at": "2026-11-08T11:09:31.319Z",
     "summary": "Early Sunday run (about 06:20 New York): no open links or requests; queued 2 carousels (Elvis and Eminem rights holders suing Suno, sensitive; ChatGPT Lockdown Mode bypass), bringing Sunday to 5 jobs.",
     "considered": [
@@ -5719,6 +5657,65 @@
         "story": "LangChain raises 300 million dollars at a 3 billion dollar valuation",
         "decision": "skipped",
         "reason": "Insider funding news from the company's own blog only; no second source read this run."
+      }
+    ],
+    "requests": []
+  },
+  {
+    "run_at": "2026-11-15T11:02:07.290Z",
+    "summary": "Early Sunday run (06:00 New York): queued 1 Reel (YouTuber Techmong's AI glasses linked to Claude score a perfect 400 on Korea's tax accountant exam, marked sensitive for Mahir's look since the clip could not be previewed here). Today's 2 Instagram carousels and 3 site-only articles were already queued; no open links or requests; guides start after 07:00; roundup paused.",
+    "considered": [
+      {
+        "story": "Korean YouTuber Techmong wears Rokid AI glasses linked to Claude and answers all 160 tax accountant exam questions in 49 minutes",
+        "source": "https://biz.heraldcorp.com/article/10937462",
+        "decision": "queued",
+        "job_id": "2026-11-15-ai-glasses-claude-tax-exam-perfect-score-reel",
+        "priority": 2
+      },
+      {
+        "story": "Claude deleted law professor William Baude's syllabus and a year of lecture notes (restored from Dropbox)",
+        "source": "https://www.dexerto.com/entertainment/professor-returns-from-lunch-to-find-ai-deleted-years-worth-of-lecture-notes-3425652/",
+        "decision": "skipped",
+        "reason": "Happened November 5 and was covered on November 7; too old to post now."
+      },
+      {
+        "story": "Reuters: How AI has become a utility bill for Gen Z (Bank of America data)",
+        "source": "https://news.ycombinator.com/item?id=50492544",
+        "decision": "skipped",
+        "reason": "Could not open the Reuters original or another outlet with the figures; Instagram carousels for the day are already full."
+      },
+      {
+        "story": "Claude Code Projects update with a proactive coordinator, /btw and /fork",
+        "source": "https://www.explainx.ai/blog/claude-code-projects-proactive-coordinator-november-2026",
+        "decision": "skipped",
+        "reason": "Could not read Anthropic's note or a second outlet confirming the November features; developer-only interest."
+      },
+      {
+        "story": "Tesla Cybercab invite-only orders at $29,990 plus a monthly subscription",
+        "source": "https://www.explainx.ai/blog/tesla-cybercab-29990-personal-sales-autonomy-subscription-claimed-vs-verified-2026",
+        "decision": "skipped",
+        "reason": "Only Teslarati reports it and Tesla has no public purchase path; not confirmed."
+      },
+      {
+        "story": "Nvidia kept GPU prices high through circular financing (TechSpot citing WSJ, top of Hacker News)",
+        "source": "https://www.techspot.com/news/114558-nvidia-deliberately-kept-gpu-prices-high-through-circular.html",
+        "decision": "skipped",
+        "reason": "Still could not read the WSJ original; secondhand only."
+      },
+      {
+        "story": "Edinburgh march against large AI data centres",
+        "decision": "skipped",
+        "reason": "UK local story with little US interest."
+      },
+      {
+        "story": "Jensen Huang becomes a meme sensation (Bloomberg)",
+        "decision": "skipped",
+        "reason": "A later Huang meme on the same saga underperforms, per Which Reels travel."
+      },
+      {
+        "story": "South Korea tax exam top scorer confesses AI cheating",
+        "decision": "covered",
+        "reason": "Already queued as 2026-11-15-korea-tax-exam-topper-ai-cheating (site-only); the new Reel is the separate YouTuber test."
       }
     ],
     "requests": []
