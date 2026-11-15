@@ -122,7 +122,7 @@
     "updated_at": "2026-11-03T19:09:45.988Z"
   },
   "req-2026-11-08-5adc5365": {
-    "status": "pending",
+    "status": "completed",
     "history": [
       {
         "status": "failed",
@@ -131,15 +131,20 @@
       {
         "status": "pending",
         "at": "2026-11-15T15:09:55.137Z"
+      },
+      {
+        "status": "completed",
+        "at": "2026-11-15T17:17:10.435Z"
       }
     ],
     "notified": [
       "failed:2026-11-08-altman-why-openai-leaders-left",
-      "stale"
+      "stale",
+      "completed:2026-11-08-altman-why-openai-leaders-left-v2"
     ],
-    "job_id": "2026-11-08-altman-why-openai-leaders-left",
-    "result": "2026-11-08-altman-why-openai-leaders-left: expired (from your link, waiting for Mahir)",
-    "updated_at": "2026-11-15T15:09:55.137Z"
+    "job_id": "2026-11-08-altman-why-openai-leaders-left-v2",
+    "result": "Already done: the refreshed copy 2026-11-08-altman-why-openai-leaders-left-v2 was posted on November 9, so there is nothing left to re-queue. Send a new request if you want it posted a second time.",
+    "updated_at": "2026-11-15T17:17:10.436Z"
   },
   "req-2026-11-08-2c8164ac": {
     "status": "completed",
