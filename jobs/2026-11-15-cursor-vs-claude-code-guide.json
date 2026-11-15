@@ -1,0 +1,110 @@
+{
+  "id": "2026-11-15-cursor-vs-claude-code-guide",
+  "format": "utility",
+  "site_only": true,
+  "created_at": "2026-11-15T21:20:00Z",
+  "story_time": "2026-11-15T21:20:00Z",
+  "timely": false,
+  "sensitive": false,
+  "priority": 2,
+  "review": true,
+  "sources": [
+    { "name": "Cursor Help: Pricing and plans", "url": "https://cursor.com/help/account-and-billing/pricing" },
+    { "name": "Cursor Help: Agent", "url": "https://cursor.com/help/ai-features/agent.md" },
+    { "name": "Cursor Docs: Cloud Agents", "url": "https://cursor.com/docs/cloud-agent" },
+    { "name": "Claude Code Docs: Overview", "url": "https://code.claude.com/docs/en/overview.md" },
+    { "name": "Claude plans and pricing", "url": "https://claude.com/pricing" },
+    { "name": "BuildMVPFast: Cursor joins The X Subscription", "url": "https://www.buildmvpfast.com/blog/cursor-x-subscription-pricing-coding-bill-2026" },
+    { "name": "Codersera: Cursor pricing after SpaceX", "url": "https://codersera.com/blog/cursor-pricing-plans-spacex-grok-2026/" }
+  ],
+  "caption": "Cursor is an AI code editor. Claude Code is an agent that works in your terminal, your editor, a desktop app or the browser.\nSince October, Claude models in Cursor cost extra at API prices on the new plans, while Claude Pro includes Claude Code for $20.\nHere is which one fits which kind of work.\n\nWhich one do you code with, Cursor or Claude Code?\n\nFollow @neurafeed.ai for daily AI news.\n\nSource: Cursor and Anthropic docs, BuildMVPFast · Photo: Anthropic",
+  "threads_text": "Cursor vs Claude Code got a new twist in October: on Cursor's new X Subscription plans, Claude models are billed on top at API prices, while Claude Pro still includes Claude Code for $20. Which one are you paying for?",
+  "slides": [
+    {
+      "kind": "cover",
+      "headline": "Cursor vs Claude Code: *which AI coding tool* to pick",
+      "image": {
+        "url": "https://claude.com/resources/articles/auto-mode-default-in-claude-code/opengraph-image/og",
+        "credit": "Anthropic",
+        "fallback_urls": ["https://www.buildmvpfast.com/images/blog/cursor-x-subscription-pricing-coding-bill-2026/hero.webp"]
+      },
+      "pos": "center center",
+      "badges": [
+        { "url": "assets/logos/claude.png", "shape": "free" },
+        { "url": "https://cdn.jsdelivr.net/npm/simple-icons@16.36.0/icons/cursor.svg", "fit": "contain" }
+      ],
+      "badge_border": "white"
+    },
+    {
+      "kind": "card",
+      "heading": "1. An editor vs an *agent*",
+      "paras": [
+        "Cursor is a full code editor with an AI agent and Tab autocomplete built in.",
+        "Claude Code is an agent first. It runs in the terminal, VS Code, JetBrains, a desktop app and the browser."
+      ],
+      "image": { "url": "https://www.buildmvpfast.com/images/blog/cursor-x-subscription-pricing-coding-bill-2026/hero.webp", "credit": "BuildMVPFast" }
+    },
+    {
+      "kind": "card",
+      "heading": "2. Cursor's *new plans*",
+      "paras": [
+        "Since October 12, new Cursor plans come with The X Subscription: $8, $30, $100 and $200 a month.",
+        "Claude and GPT models start at the $30 plan and are billed extra at API prices."
+      ],
+      "image": { "url": "https://www.buildmvpfast.com/images/blog/cursor-x-subscription-pricing-coding-bill-2026/cursor-x-subscription-pricing.webp", "credit": "BuildMVPFast", "fit": "contain" }
+    },
+    {
+      "kind": "card",
+      "heading": "3. Claude Code starts at *$20*",
+      "paras": [
+        "Claude Code is included in every paid Claude plan: Pro at $20, Max at $100 and Ultra at $200 a month.",
+        "The free Claude plan does not include it."
+      ],
+      "image": { "url": "https://www.buildmvpfast.com/images/blog/cursor-x-subscription-pricing-coding-bill-2026/cursor-third-party-model-pricing.webp", "credit": "BuildMVPFast", "fit": "contain" }
+    },
+    {
+      "kind": "card",
+      "heading": "4. You can use *both*",
+      "paras": [
+        "Anthropic offers a Claude Code extension for Cursor.",
+        "So you can keep Cursor's editor and Tab, and run Claude Code on your Claude plan inside it."
+      ],
+      "image": { "url": "https://www.buildmvpfast.com/images/blog/cursor-x-subscription-pricing-coding-bill-2026/cursor-legacy-plans-comparison.webp", "credit": "BuildMVPFast", "fit": "contain" }
+    },
+    { "kind": "cta", "hook": "Follow for one AI tool explained every day." }
+  ],
+  "site_article": {
+    "kind": "guide",
+    "headline": "Cursor vs Claude Code: which AI coding tool to pick, plans and prices compared",
+    "dek": "Cursor is an editor with an agent inside. Claude Code is an agent that runs wherever you work. Since October, the price of using Claude in Cursor has changed too.",
+    "summary": "Cursor is an AI code editor with an agent, Tab autocomplete and cloud agents; its new plans run from $8 to $200 a month and bill Claude and GPT models extra at API prices. Claude Code is Anthropic's coding agent for the terminal, IDEs, desktop and web, included in Claude plans from $20 a month.",
+    "seo_title": "Cursor vs Claude Code: which AI coding tool to pick",
+    "seo_description": "Cursor vs Claude Code compared: how each one works, what the new Cursor plans cost, what Claude Pro includes, and when it makes sense to use both.",
+    "answer_summary": "Pick Cursor if you want an AI editor with fast autocomplete and you are happy with Cursor's own models. Pick Claude Code if you want Claude models doing the work on a flat $20 plan, from the terminal or your editor. You can also run Claude Code inside Cursor.",
+    "tags": ["Cursor", "Claude Code", "Anthropic", "AI coding", "Guides"],
+    "hero_alt": "Anthropic graphic promoting auto mode in Claude Code.",
+    "paragraphs": [
+      { "kind": "fact", "text": "Cursor vs Claude Code is the choice most people face once they want an AI that writes real code, not just snippets in a chat. Both can read a whole project, edit several files and run terminal commands. The difference is where they live. Cursor is a code editor with an agent built in. Claude Code is an agent that runs in your terminal, inside VS Code, JetBrains or Cursor, in a desktop app and in the browser.", "sources": [1, 3] },
+      { "kind": "analysis", "text": "This guide compares the two from their own documentation and plan pages, plus two breakdowns of the Cursor pricing change in October 2026. It does not crown one model as smarter. Prices change often and can differ by country, so check the final price at checkout." },
+      { "kind": "heading", "text": "How Cursor works" },
+      { "kind": "fact", "text": "Cursor's Agent edits multiple files, runs terminal commands and fixes errors on its own, according to its help center. You open it with Cmd+I on a Mac or Ctrl+I on Windows and Linux, and Shift+Tab cycles between four modes: Agent for most work, Ask for read only questions about the code, Plan for bigger features you want to approve before any edit, and Debug for bugs that need runtime evidence.", "sources": [1] },
+      { "kind": "fact", "text": "Every message leaves a checkpoint. Hover over an earlier message and choose Restore Checkpoint to undo every file change the agent made after it. Agent can also run subagents in parallel, and custom subagents are markdown files in a .cursor/agents folder.", "sources": [1] },
+      { "kind": "fact", "text": "Cloud Agents run the same agent in isolated virtual machines, so your computer does not have to stay on. You can start them from cursor.com/agents, the iOS app, the desktop app, Slack, GitHub, Bitbucket and Linear. Cursor's docs say they need the Premium plan or higher, a team plan or a legacy paid plan.", "sources": [2] },
+      { "kind": "heading", "text": "How Claude Code works" },
+      { "kind": "fact", "text": "Claude Code reads your codebase, edits files, runs commands and works with git, so it can stage changes, write commit messages and open pull requests. It reads a CLAUDE.md file in your project at the start of every session, or an AGENTS.md file if your repo already has one. It also supports MCP connections to outside tools, skills, hooks and subagents.", "sources": [3] },
+      { "kind": "step", "title": "1. Install Claude Code", "text": "On macOS, Linux or WSL, open a terminal and run: curl -fsSL https://claude.ai/install.sh | bash. In Windows PowerShell, run: irm https://claude.ai/install.ps1 | iex. Then open a new terminal and run claude --version to check that it worked." },
+      { "kind": "step", "title": "2. Start it in a project", "text": "Go to your project folder and type claude. It asks you to log in the first time. If you would rather stay in an editor, the docs offer extensions for VS Code, Cursor and JetBrains, plus a desktop app with a Code tab." },
+      { "kind": "heading", "text": "Cursor vs Claude Code: what each one costs" },
+      { "kind": "fact", "text": "Cursor rebuilt its plans on October 12, 2026, when they became part of The X Subscription. BuildMVPFast and Codersera list Free at $0, Plus at $8, Premium at $30, Super at $100 and Ultra at $200 a month. Premium gives four times the Plus usage, Super 15 times and Ultra 50 times, from one weekly pool shared with Grok.", "sources": [5, 6] },
+      { "kind": "fact", "text": "The catch for Claude fans: Plus only runs Cursor's own models. From Premium up, Claude, GPT and Gemini models are billed at API list prices from prepaid credit, with no included allowance. Both breakdowns list Claude Sonnet 5.5 at $2 per million input tokens and $10 per million output tokens, and Claude Opus 5.5 at $4 and $20. Premium and higher also accept your own Anthropic or OpenAI key.", "sources": [5, 6] },
+      { "kind": "fact", "text": "Cursor's help center says the old Hobby, Pro at $20, Pro+ at $60 and Ultra at $200 are now legacy plans. They are closed to new customers, but existing subscribers keep them until they switch or cancel.", "sources": [0] },
+      { "kind": "fact", "text": "Claude's pricing page says Claude Code is included in all paid plans. Pro costs $20 a month, or $17 a month on an annual plan. Max costs $100 a month with five times the Pro usage, and Ultra costs $200 a month with ten times the Pro weekly usage and no five hour limit for verified accounts. The free Claude plan does not include Claude Code.", "sources": [4] },
+      { "kind": "tip", "text": "If you are on a legacy Cursor plan, think before you switch. BuildMVPFast reports that the move to the new plans is permanent and the old Pro plan cannot be chosen again." },
+      { "kind": "heading", "text": "Which one to pick" },
+      { "kind": "analysis", "text": "Pick Cursor if you want to stay inside one editor, lean on autocomplete while you type, and mostly use Cursor's own Composer and Grok models. The $8 Plus plan is the cheapest paid Cursor plan, and Premium adds cloud agents that keep working from your phone or Slack." },
+      { "kind": "analysis", "text": "Pick Claude Code if you want Claude models doing the heavy lifting on a flat monthly price. On the new Cursor plans every Claude request is metered on top of the subscription, while Claude Pro bundles Claude Code with the chat app for $20. It also suits people who live in the terminal or want to script the agent in CI." },
+      { "kind": "tip", "text": "You do not have to choose. Install the Claude Code extension in Cursor and you get Cursor's editor and Tab with Claude Code running on your Claude plan. Each tool keeps its own usage limits, so you are paying for two plans." },
+      { "kind": "analysis", "text": "What neither one does well: both will happily change more than you asked. Use Plan mode in Cursor, or ask Claude Code for a plan first, read every diff, and keep your project in git so a bad edit is one command away from undone." }
+    ]
+  }
+}

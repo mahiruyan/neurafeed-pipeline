@@ -1,0 +1,102 @@
+{
+  "id": "2026-11-15-how-to-use-windsurf-devin-desktop-guide",
+  "format": "utility",
+  "site_only": true,
+  "created_at": "2026-11-15T21:30:00Z",
+  "story_time": "2026-11-15T21:30:00Z",
+  "timely": false,
+  "sensitive": false,
+  "priority": 2,
+  "review": true,
+  "sources": [
+    { "name": "Devin Desktop (Cognition)", "url": "https://devin.ai/desktop" },
+    { "name": "Devin Docs: Getting started with Devin Desktop", "url": "https://docs.devin.ai/desktop/getting-started.md" },
+    { "name": "Devin Docs: Install", "url": "https://docs.devin.ai/desktop/install.md" },
+    { "name": "Devin Docs: Self-serve plans", "url": "https://docs.devin.ai/admin/billing/self-serve.md" },
+    { "name": "Devin Docs: Usage", "url": "https://docs.devin.ai/desktop/accounts/usage.md" },
+    { "name": "Real Python: Windsurf (Devin Desktop)", "url": "https://realpython.com/ref/ai-coding-tools/windsurf/" },
+    { "name": "DEV Community: Windsurf is Devin Desktop now", "url": "https://dev.to/creeta/windsurf-is-devin-desktop-now-cascade-has-27-days-left-34kj" }
+  ],
+  "caption": "Windsurf, the AI code editor, is now called Devin Desktop.\nSame editor and settings, but agents now open on a board of their own, and Cascade was replaced by Devin Local.\nHere is how to set it up and what the free plan gets you.\n\nDid you know Windsurf had a new name?\n\nFollow @neurafeed.ai for daily AI news.\n\nSource: Cognition's Devin docs, Real Python · Photo: Windows Mode",
+  "threads_text": "Looking for Windsurf? It is called Devin Desktop now. Cognition renamed it in June 2026, kept the editor and your settings, and swapped the Cascade agent for Devin Local. Pro is still $20 a month. Did the rename confuse you too?",
+  "slides": [
+    {
+      "kind": "cover",
+      "headline": "How to use Windsurf, now called *Devin Desktop*",
+      "image": {
+        "url": "https://www.windowsmode.com/wp-content/uploads/2026/03/Devin-Desktop-on-PC-cover.webp",
+        "credit": "Windows Mode",
+        "fallback_urls": ["https://cdn.autonomous.ai/production/ecm/261030/inside-devin-desktop.webp"]
+      },
+      "pos": "center center"
+    },
+    {
+      "kind": "card",
+      "heading": "1. Same editor, *new name*",
+      "paras": [
+        "Cognition renamed Windsurf to Devin Desktop in June 2026 with an over the air update.",
+        "Your settings, extensions, plan and price carry over."
+      ],
+      "image": { "url": "https://cdn.autonomous.ai/production/ecm/261030/windsurf-to-devin-desktop-what-changed.webp", "credit": "Autonomous", "fit": "contain" }
+    },
+    {
+      "kind": "card",
+      "heading": "2. Install and *import*",
+      "paras": [
+        "It runs on Mac, Windows 10 and later, and Linux.",
+        "During setup you can import your VS Code or Cursor settings, then sign in with a free Devin account."
+      ],
+      "image": { "url": "https://www.windowsmode.com/wp-content/uploads/2026/03/cascade-questions-screenshot.webp", "credit": "Windows Mode", "fit": "contain" }
+    },
+    {
+      "kind": "card",
+      "heading": "3. Type a task, the *agent* works",
+      "paras": [
+        "Open a project, type what you want in the box on the start page and send it.",
+        "The agent runs on your computer, and a board tracks every session by status."
+      ],
+      "image": { "url": "https://cdn.autonomous.ai/production/ecm/261030/inside-devin-desktop.webp", "credit": "Autonomous", "fit": "contain" }
+    },
+    {
+      "kind": "card",
+      "heading": "4. Free, *$20* or $200",
+      "paras": [
+        "Free gives limited usage. Pro costs $20 a month with a daily and weekly quota.",
+        "Max costs $200 a month with a bigger weekly quota and no daily cap."
+      ],
+      "image": { "url": "https://cdn.autonomous.ai/production/ecm/261030/devin-desktop-quota.webp", "credit": "Autonomous", "fit": "contain" }
+    },
+    { "kind": "cta", "hook": "Follow for one AI tool explained every day." }
+  ],
+  "site_article": {
+    "kind": "guide",
+    "headline": "How to use Windsurf, now Devin Desktop: setup, your first agent and the plans",
+    "dek": "Cognition renamed the Windsurf editor in June 2026. The editor and your settings stayed, the agent changed, and the home screen is now a board of agent sessions.",
+    "summary": "Windsurf is now called Devin Desktop, after Cognition renamed it in June 2026 with an over the air update. This guide covers installing it, importing VS Code or Cursor settings, starting an agent and what the Free, Pro and Max plans include.",
+    "seo_title": "How to use Windsurf (now Devin Desktop): setup and plans",
+    "seo_description": "How to use Windsurf, now called Devin Desktop: install it, import VS Code or Cursor settings, start your first agent, and what Free, Pro and Max include.",
+    "answer_summary": "Windsurf is now Devin Desktop. Download it for Mac, Windows or Linux, import your VS Code or Cursor settings during setup, sign in with a free Devin account, open a project and type a task into the box on the start page.",
+    "tags": ["Windsurf", "Devin Desktop", "Cognition", "AI coding", "Guides"],
+    "hero_alt": "Promotional graphic showing the Devin Desktop coding app on a PC.",
+    "paragraphs": [
+      { "kind": "fact", "text": "If you search for how to use Windsurf today, you will land on a different name. Cognition renamed its Windsurf AI code editor to Devin Desktop in June 2026 and shipped the change as an over the air update. Cognition says only the name and branding changed for the editor itself: your IDE, extensions, settings and work in progress carry over, and your plan and price stay the same.", "sources": [0, 5, 6] },
+      { "kind": "fact", "text": "What did change is how you work with the agent. Devin Desktop opens on the Agent Command Center, a Kanban style board that sorts your local and cloud agent sessions by status, with the full editor one click away. The old Cascade agent was replaced by Devin Local, an agent that runs on your own machine and adds subagents and sandboxing.", "sources": [0, 5, 6] },
+      { "kind": "analysis", "text": "This guide follows Cognition's own docs for Devin Desktop, plus two independent write ups of the rename. If you used Windsurf before, most of it will feel familiar. If you are new, it works like most AI editors: you open a project, describe a task, and review what the agent changes." },
+      { "kind": "heading", "text": "How to install Windsurf (Devin Desktop)" },
+      { "kind": "step", "title": "1. Download it for your system", "text": "Get the Mac, Windows or Linux build from Devin's download page. The docs list OS X Yosemite or later for Mac and Windows 10 or later for Windows. On Linux, the tarball needs glibc 2.28 or later, for example Ubuntu 20, Debian 10, Fedora 36 or RHEL 8." },
+      { "kind": "fact", "text": "On Linux the docs recommend the deb or rpm package over the tarball, because the tarball does not update itself. After adding Devin's repository, install it with sudo apt install devin-desktop on Ubuntu and Debian, or sudo dnf install -y devin-desktop on Fedora, CentOS and RHEL. The repository addresses still use the old windsurf name, and the windsurf package pulls in devin-desktop, so existing installs keep updating.", "sources": [1, 2] },
+      { "kind": "step", "title": "2. Pick a theme and import your settings", "text": "The first screen asks for a theme. Leave the option to install the devin-desktop terminal command checked if you want to open the app from a terminal. Expand Import Settings to choose your keybindings and bring over your VS Code or Cursor settings. If you skip this, the import option is also in the Command Palette later." },
+      { "kind": "step", "title": "3. Sign in", "text": "Log in with your Devin account, or sign up for free. If the normal login fails, the docs offer a manual option where you paste a Devin API key." },
+      { "kind": "heading", "text": "Start your first agent" },
+      { "kind": "step", "title": "4. Open a project", "text": "With no folder open, the start page shows three choices: Open project, Clone repository and Connect via SSH. Pick a small project you do not mind changing for your first try." },
+      { "kind": "step", "title": "5. Type a task and send it", "text": "Write what you want in the input box on the start page and send it. If you have no sessions yet, a Start new session list offers suggested prompts you can click to fill the box. The agent runs on your computer through Devin Local." },
+      { "kind": "step", "title": "6. Follow your sessions", "text": "Click Go to sessions list under the input box to see every session. Recent sessions and projects also show on the start page. To find any Devin command, open the Command Palette with Cmd+Shift+P on a Mac or Ctrl+Shift+P on Windows and Linux and type Devin." },
+      { "kind": "tip", "text": "Start with a task you can check in a minute, like a small bug fix or a new test. Read the change before you accept the next one. Keep the project in git so you can roll back anything the agent gets wrong." },
+      { "kind": "fact", "text": "Devin Desktop can also run outside agents next to Devin through the Agent Client Protocol. Real Python names Codex CLI, Claude Agent and OpenCode, and the DEV Community write up says this works on the Pro, Max and Teams plans, as long as the outside agent is already installed on your machine.", "sources": [5, 6] },
+      { "kind": "heading", "text": "Windsurf plans and pricing now" },
+      { "kind": "fact", "text": "Cognition's plan docs list Free with limited Devin usage, Devin Review and DeepWiki. Pro costs $20 a month and adds a daily and weekly quota, on demand credits, and Slack, Linear and MCP integrations. Max costs $200 a month with a larger weekly quota and no daily cap. Teams starts at $80 a month for up to 100 members.", "sources": [0, 3] },
+      { "kind": "fact", "text": "Quotas refresh on a calendar basis. When yours runs out, on demand credits keep the work going, and if those are empty too, sessions pause until the quota refreshes or you buy more. Purchased credits roll over and never expire. To check what you have left, click the Devin Desktop widget in the status bar and open the Plan Info tab.", "sources": [3, 4] },
+      { "kind": "analysis", "text": "The honest take: Devin Desktop is a good pick if you liked Windsurf or want one board to watch several agents at once. The rename is the confusing part. Older tutorials still say Windsurf and Cascade, and some features the old agent had were still missing from Devin Local when it launched, according to the DEV Community write up. If a menu in an older guide does not match your screen, trust the current docs." }
+    ]
+  }
+}

@@ -1,67 +1,5 @@
 [
   {
-    "run_at": "2026-11-08T20:53:48.394Z",
-    "summary": "No new jobs: today (New York) already has 9 posts posted or approved, over the 8 per day cap, and all priority 1 stories are covered. Weekly roundup is left for the first run at or after 17:00 New York time.",
-    "considered": [
-      {
-        "story": "Anthropic buys $3.4 billion of gas generators for data centers",
-        "decision": "covered",
-        "reason": "Already queued as 2026-11-08-anthropic-buys-3-4-billion-gas-generators."
-      },
-      {
-        "story": "OpenAI raises $11B at a $1.25T valuation",
-        "source": "https://247wallst.com/investing/2026/11/07/openai-just-raised-11-billion-at-a-1-25-trillion-valuation-below-the-1-4-trillion-it-first-sought/",
-        "decision": "covered",
-        "reason": "Already queued as 2026-11-08-openai-11-billion-short-of-30-billion."
-      },
-      {
-        "story": "Apple's Ternus presses Federighi on a more ambitious AI strategy",
-        "source": "https://www.bloomberg.com/news/newsletters/2026-11-08/apple-explores-turning-siri-ai-into-chatgpt-dots-like-agent-ios-28-shake-up",
-        "decision": "covered",
-        "reason": "Already queued as 2026-11-08-ternus-pushes-federighi-faster-ai."
-      },
-      {
-        "story": "Claude Code 'Don't Ask Again' exposes passwords in public GitHub files",
-        "source": "https://apiiro.com/blog/coding-agents-leaking-secrets-github-dont-ask-again",
-        "decision": "covered",
-        "reason": "Already covered as 2026-11-07-claude-code-dont-ask-again-leaks-passwords."
-      },
-      {
-        "story": "Bill Gates says a $10 an hour robot could replace a $20 an hour worker",
-        "decision": "skipped",
-        "reason": "Good money and jobs story, but today is already over the 8 post cap; can be considered tomorrow if still fresh."
-      },
-      {
-        "story": "Employees who use AI end up working more hours per day (Futurism)",
-        "decision": "skipped",
-        "reason": "Relatable everyone story, but the daily cap is already reached."
-      },
-      {
-        "story": "Anthropic's IPO valuation could face a reality check (24/7 Wall St.)",
-        "decision": "skipped",
-        "reason": "Analysis piece; Anthropic IPO doubts were already covered on 2026-11-06."
-      },
-      {
-        "story": "Microsoft Research's AI Frontiers group ends",
-        "source": "https://hunch.net/?p=13764006",
-        "decision": "skipped",
-        "reason": "Insider story with a single blog source, and the cap is reached."
-      },
-      {
-        "story": "Llama-modchip runs a 284B DeepSeek model on 64GB RAM without a GPU",
-        "source": "https://github.com/synchopate/llama-modchip",
-        "decision": "skipped",
-        "reason": "Niche developer project, only a GitHub repo as source."
-      },
-      {
-        "story": "Diamond Foundry makes a 200mm single crystal diamond wafer for AI chip cooling",
-        "decision": "skipped",
-        "reason": "Interesting but low US audience pull, and the cap is reached."
-      }
-    ],
-    "requests": []
-  },
-  {
     "run_at": "2026-11-08T23:02:41.832Z",
     "summary": "Sunday evening run: made Mahir's Claude Code meme link into a Reel, queued the Nvidia board probe of Jensen Huang (priority 1, sensitive) and the weekly roundup.",
     "considered": [
@@ -5672,6 +5610,61 @@
         "story": "Nvidia circular financing (TechSpot citing WSJ, Hacker News)",
         "decision": "skipped",
         "reason": "Still could not read the WSJ original; secondhand only."
+      }
+    ],
+    "requests": []
+  },
+  {
+    "run_at": "2026-11-15T21:20:45.940Z",
+    "summary": "Sunday 16:00 New York run: queued today's fifth and sixth site-only guides (Cursor vs Claude Code, How to use Windsurf now Devin Desktop). No open links or requests; today's 2 Instagram carousels and 4 site-only articles are already queued; no Reel video passed the filter; roundup paused.",
+    "considered": [
+      {
+        "story": "Guide: Cursor vs Claude Code (Tier 2, next line)",
+        "source": "https://www.buildmvpfast.com/blog/cursor-x-subscription-pricing-coding-bill-2026",
+        "decision": "queued",
+        "job_id": "2026-11-15-cursor-vs-claude-code-guide",
+        "priority": 2,
+        "reason": "Site-only guide. Angle: since the October 12 X Subscription, Claude in Cursor is billed extra at API prices while Claude Pro includes Claude Code."
+      },
+      {
+        "story": "Guide: How to use Windsurf (tool library, next line)",
+        "source": "https://docs.devin.ai/desktop/getting-started.md",
+        "decision": "queued",
+        "job_id": "2026-11-15-how-to-use-windsurf-devin-desktop-guide",
+        "priority": 2,
+        "reason": "Site-only guide. Windsurf was renamed Devin Desktop in June 2026, so the guide targets the old search phrase and follows Cognition's current docs."
+      },
+      {
+        "story": "Google and Samsung to release AI smart glasses in December (Spokesman-Review)",
+        "source": "https://www.spokesman.com/stories/2026/nov/15/google-and-samsung-to-release-ai-smart-glasses-in-/",
+        "decision": "covered",
+        "reason": "The Google glasses launch is already covered by 2026-11-12-google-gemini-glasses-preorder-395."
+      },
+      {
+        "story": "Apple Siri smart glasses reportedly launching in 2027 (9to5Mac on Gurman)",
+        "source": "https://9to5mac.com/2026/11/15/apples-siri-ai-smart-glasses-are-reportedly-launching-next-year-heres-what-to-expect/",
+        "decision": "skipped",
+        "reason": "A reported 2027 plan already skipped in the 14:00 run, and today's 4 site-only articles are queued."
+      },
+      {
+        "story": "Megaspeed says Alice Huang left in 2025 and denies wrongdoing (CBS News)",
+        "decision": "covered",
+        "reason": "Part of the Nvidia and Jensen Huang story already covered today and yesterday (musk-petition-reinstate-jensen-huang, bessent-did-nvidia-know-its-client)."
+      },
+      {
+        "story": "Take-Two CEO calls out Anthropic and OpenAI over AI game clones before GTA 6 (Tech4Gamers)",
+        "decision": "skipped",
+        "reason": "Only a headline in the leads from a small outlet; today's two Instagram carousels are already queued and the site-only cap of 4 is reached."
+      },
+      {
+        "story": "New lawsuit seeks to freeze AI development at OpenAI, Anthropic, Google and SpaceX (Hokanews)",
+        "decision": "skipped",
+        "reason": "Only a low-quality outlet in the leads, no court filing or major outlet found; carousels and site articles are full for today."
+      },
+      {
+        "story": "Reel search: viral AI and smart glasses videos of November 15",
+        "decision": "skipped",
+        "reason": "No downloadable X video passing the Reels filter turned up; Reddit leads are empty and YouTube downloads are still blocked."
       }
     ],
     "requests": []
