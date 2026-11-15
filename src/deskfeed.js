@@ -17,6 +17,7 @@ const NOT_NEWS = new Set(['utility', 'single', 'roundup', 'prompt']);
 // Website categories (must match the admin's category slugs).
 const SITE_CATEGORIES = ['breaking', 'companies', 'models', 'robotics', 'free-tools', 'policy', 'guides'];
 const MAX_ITEMS = 30;
+const MAX_FEED_BYTES = 480_000;
 const MAX_AGE_HOURS = 72;
 // Guides are evergreen and publish on their own on the site (Mahir, 2026-11-11): they stay in the
 // feed for 30 days, outside the 30-item cap, so the site can match every guide draft to its item.
@@ -162,6 +163,14 @@ ${body}
 
 function writeDeskFeed(file = path.join(ROOT, 'feed', 'desk.xml')) {
   const items = deskItems();
+  // The site refuses a feed over 524,288 bytes (the whole desk source then fails and nothing new
+  // reaches the site). Each item carries its full article, so drop the oldest guides (then the
+  // oldest items) until the feed fits with room to spare.
+  while (items.length > 1 && Buffer.byteLength(rss(items), 'utf8') > MAX_FEED_BYTES) {
+    let drop = -1;
+    for (let i = items.length - 1; i >= 0; i--) if (items[i].category === 'guides') { drop = i; break; }
+    items.splice(drop >= 0 ? drop : items.length - 1, 1);
+  }
   fs.mkdirSync(path.dirname(file), { recursive: true });
   fs.writeFileSync(file, rss(items));
   return items.length;
