@@ -1,0 +1,188 @@
+{
+  "id": "2026-11-15-cursor-breach-traced-to-fireworks-key",
+  "created_at": "2026-11-15T07:25:00Z",
+  "story_time": "2026-11-13T18:00:00Z",
+  "timely": false,
+  "sensitive": true,
+  "priority": 2,
+  "site_only": true,
+  "format": "carousel",
+  "site_category": "companies",
+  "ab": {
+    "headline": "short",
+    "photo": "story"
+  },
+  "sources": [
+    {
+      "name": "Unite.AI",
+      "url": "https://www.unite.ai/cursor-traces-breach-to-access-key-exposed-by-fireworks-ai/"
+    },
+    {
+      "name": "Data Studios",
+      "url": "https://www.datastudios.org/post/cursor-security-incident-update-fireworks-access-key-inference-moved"
+    },
+    {
+      "name": "BankInfoSecurity",
+      "url": "https://bankinfosecurity.com/cursor-confirms-anthropic-claude-code-extension-compromised-a-33263"
+    }
+  ],
+  "caption": "Cursor says the hack that put a malicious Claude Code extension in its marketplace started with an access key exposed by its AI vendor Fireworks.\nThe attacker copied old coding agent traces, found credentials inside some of them and moved from there.\nCursor has moved all inference off Fireworks.\n\nDo you trust AI coding tools with your passwords?\n\nFollow @neurafeed.ai for daily AI news.\n\nSource: Unite.AI, citing Cursor",
+  "threads_text": "Cursor traced the attack that planted a malicious Claude Code extension in its marketplace to a key its AI vendor Fireworks exposed. Old agent traces with passwords inside did the rest. Cursor dropped Fireworks for inference. Would this make you stop pasting secrets into AI tools?",
+  "slides": [
+    {
+      "kind": "cover",
+      "headline": "Cursor's hack started with a *key its AI vendor exposed*",
+      "image": {
+        "url": "https://www.unite.ai/wp-content/uploads/2026/11/cursor-traces-breach-to-access-key-exposed-by-fireworks-ai.jpg",
+        "credit": "via Unite.AI",
+        "fallback_urls": [
+          "https://tech-insider.org/wp-content/uploads/2026/10/claude-code-extension-cursor-5000-users-tampered-2026-gen.webp"
+        ]
+      },
+      "pos": "center center"
+    },
+    {
+      "kind": "card",
+      "heading": "A key left *exposed*",
+      "paras": [
+        "Cursor said on November 13 that an attacker used an access key it had issued to Fireworks AI, which Fireworks exposed.",
+        "The key opened a read-only bucket of old coding agent traces. Some traces held unredacted credentials."
+      ],
+      "image": {
+        "url": "https://cdn.prod.website-files.com/673b71f0790aabf30bd30bf8/6ae45e10618a7a5f0744dfe5_SCR-20261030-mzbs.png",
+        "fit": "contain",
+        "credit": "StepSecurity",
+        "fallback_urls": [
+          "https://smartscope.blog/en/blog/cursor-fake-claude-code-extension-2-1-313-2026/images/cursor-fake-claude-code-extension-2-1-313-2026-ogp-en.jpg"
+        ]
+      }
+    },
+    {
+      "kind": "card",
+      "heading": "Up to *5,000 users* hit",
+      "paras": [
+        "On October 29 the attacker used a stolen credential to place tampered Claude Code builds in Cursor's extension marketplace cache.",
+        "They were up for about 11 hours. Cursor says at most 5,000 users may have received one. Anthropic did not publish them."
+      ],
+      "image": {
+        "url": "https://cellcog.ai/blog/media/claude-code-extension-backdoor/hero.webp?v=2147f92055",
+        "credit": "CellCog",
+        "fallback_urls": [
+          "https://smartscope.blog/en/blog/cursor-fake-claude-code-extension-2-1-313-2026/images/cursor-fake-claude-code-extension-2-1-313-2026-overview.en.webp"
+        ]
+      }
+    },
+    {
+      "kind": "card",
+      "heading": "Fireworks is *out*",
+      "paras": [
+        "Cursor deactivated the key, moved all inference off Fireworks and rotated its credentials.",
+        "It says Privacy Mode code, live traffic, customer repositories and release signing keys were not affected."
+      ],
+      "image": {
+        "url": "https://cdn.prod.website-files.com/673b71f0790aabf30bd30bf8/6ae467b7f00bce90656df607_SCR-20261030-nnlx.png",
+        "fit": "contain",
+        "credit": "StepSecurity",
+        "fallback_urls": [
+          "https://cdn.prod.website-files.com/673b71f0790aabf30bd30bf8/6ae46b787dc0f57eac46f3f2_SCR-20261030-nqwl.png"
+        ]
+      }
+    },
+    {
+      "kind": "cta",
+      "hook": "Follow for the security stories every AI coder should know about."
+    }
+  ],
+  "site_article": {
+    "headline": "Cursor traces marketplace hack to access key exposed by Fireworks AI",
+    "dek": "The attacker used old coding agent traces that contained credentials to reach Cursor systems and plant tampered Claude Code builds.",
+    "summary": "Cursor said on November 13, 2026 that the attack behind a tampered Claude Code extension in its marketplace began with an access key exposed by its inference provider Fireworks AI. Cursor has moved all inference off Fireworks and says at most 5,000 users may have received a malicious build.",
+    "seo_title": "Cursor hack traced to access key exposed by Fireworks AI",
+    "seo_description": "Cursor says a key exposed by Fireworks AI let an attacker steal agent traces and plant a tampered Claude Code extension. What was hit and what changed.",
+    "answer_summary": "Cursor says an attacker used a Cursor access key that Fireworks AI exposed, copied old coding agent traces containing credentials, and later used one of those credentials to plant tampered Claude Code builds in Cursor's marketplace cache.",
+    "tags": [
+      "Cursor",
+      "Fireworks AI",
+      "Claude Code",
+      "Cybersecurity"
+    ],
+    "hero_alt": "Lead illustration from a news article about the Cursor security incident.",
+    "paragraphs": [
+      {
+        "kind": "fact",
+        "text": "Cursor said in an incident update on November 13, 2026 that the attack which placed a malicious Claude Code extension in its marketplace began with an access key the company had issued to Fireworks AI, one of its inference providers. Fireworks exposed the key, and the attacker used it to copy data from a read-only storage bucket Cursor used to share data with Fireworks, according to Unite.AI and Data Studios.",
+        "sources": [
+          0,
+          1
+        ]
+      },
+      {
+        "kind": "heading",
+        "text": "From old traces to live credentials"
+      },
+      {
+        "kind": "fact",
+        "text": "The bucket held historical coding agent traces, mostly from 2025, from sessions run outside Cursor's Privacy Mode. A small number of those traces contained unredacted credentials. Cursor said the attacker used them to reach select software services and, from there, archived non-production source repositories, limited support data and emails, product usage metrics and summaries of some agent conversations.",
+        "sources": [
+          0,
+          1
+        ]
+      },
+      {
+        "kind": "fact",
+        "text": "Cursor put the exposure in percentages rather than absolute numbers: fewer than 0.01 percent of customers had API credentials exposed, and fewer than 0.05 percent of users outside Privacy Mode had traces exposed. Affected users were notified directly. The last attacker activity Cursor observed was on November 1, and it was blocked.",
+        "sources": [
+          0,
+          1
+        ]
+      },
+      {
+        "kind": "heading",
+        "text": "The tampered extension"
+      },
+      {
+        "kind": "fact",
+        "text": "On October 29, the attacker used a credential from the stolen data to place unauthorized builds of the Claude Code extension in the cache of Cursor's VS Code extension marketplace. Cursor estimates they were available for about 11 hours and that at most 5,000 users who requested those cached versions could have received a malicious build. Anthropic did not publish the builds, and the Open VSX registry never carried the malware, Cursor said.",
+        "sources": [
+          0,
+          1
+        ]
+      },
+      {
+        "kind": "fact",
+        "text": "Security researchers reported at the time that the altered extension added a loader that collected system details and environment variables with names such as KEY, TOKEN and SECRET, and tried to set up a reverse SSH tunnel to an attacker server. Researchers advised that any machine that installed the affected version be isolated and investigated, because later clean versions did not undo the earlier changes.",
+        "sources": [
+          2
+        ]
+      },
+      {
+        "kind": "heading",
+        "text": "What Cursor and Fireworks changed"
+      },
+      {
+        "kind": "fact",
+        "text": "Cursor said it deactivated the Fireworks key, cut Fireworks' access to shared datasets and moved all inference traffic off Fireworks. It rotated every exposed credential and then all internal credentials, added secret scanning, redeployed production infrastructure, rebuilt its extension marketplace store and hired outside forensics experts. It said live customer data, active inference requests, Privacy Mode prompts and code, customer repositories, app updates and release signing keys were not affected.",
+        "sources": [
+          0,
+          1
+        ]
+      },
+      {
+        "kind": "fact",
+        "text": "Fireworks said in its own security bulletin that a third-party cloud provider hosting its research machines had an incident on October 23, and that an unauthorized party reached Fireworks development machines on October 24. It attributed the activity to a financially motivated group that resells model tokens, said it had seen no further successful access to its customer platform since October 25, notified law enforcement and brought in Palo Alto Networks Unit 42. Its investigation is ongoing.",
+        "sources": [
+          0,
+          1
+        ]
+      },
+      {
+        "kind": "analysis",
+        "text": "The incident shows how agent logs can become a store of secrets. Credentials that developers paste into a coding session can end up in traces that are kept, shared with vendors and, in this case, stolen months later. Cursor has not said how many machines actually installed the tampered builds, and Fireworks has not explained how the key was exposed."
+      },
+      {
+        "kind": "why_it_matters",
+        "text": "Developers who used Cursor outside Privacy Mode should check for a notice from Cursor and rotate any keys they ever shared in a coding session or with Cursor support."
+      }
+    ]
+  }
+}
