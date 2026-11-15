@@ -5644,5 +5644,25 @@
       }
     ],
     "requests": []
+  },
+  {
+    "run_at": "2026-11-15T05:11:39.361Z",
+    "summary": "Correction in the same late Saturday run: main gained a new Volume and mix rule (at most 1 Instagram news carousel per run, 2 a day), so the Nvidia director stock-sale job was reissued as site-only (-v2); the 72 eggs carousel stays as this run's one Instagram carousel.",
+    "considered": [
+      {
+        "story": "Nvidia director Mark Stevens sold $946.6M of stock weeks before Jensen Huang resigned",
+        "source": "https://finance.yahoo.com/markets/stocks/articles/nvidia-director-sold-nearly-1b-160000846.html",
+        "decision": "queued",
+        "job_id": "2026-11-15-nvidia-director-sold-946-million-v2",
+        "priority": 2,
+        "reason": "Site-only article under the new 1-carousel-per-run rule; replaces the Instagram version queued minutes earlier. The Nvidia saga already had many posts this week, so the eggs story got the Instagram slot."
+      },
+      {
+        "story": "AI agent ordered a user 72 eggs that were not on his list",
+        "decision": "covered",
+        "reason": "Queued earlier this run as 2026-11-15-ai-agent-ordered-72-eggs (Instagram carousel)."
+      }
+    ],
+    "requests": []
   }
 ]
