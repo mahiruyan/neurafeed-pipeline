@@ -1,0 +1,129 @@
+{
+  "id": "2026-11-15-how-to-use-elevenlabs-text-to-speech-guide",
+  "format": "utility",
+  "site_only": true,
+  "created_at": "2026-11-15T15:20:00Z",
+  "story_time": "2026-11-15T15:20:00Z",
+  "timely": false,
+  "sensitive": false,
+  "priority": 2,
+  "sources": [
+    { "name": "ElevenLabs Help: maximum characters per generation", "url": "https://elevenlabs.io/docs/help-center/product/core-capabilities/text-to-speech/whats-the-maximum-amount-of-characters-and-text-i-can-generate" },
+    { "name": "ElevenLabs Help: how to add pauses", "url": "https://elevenlabs.io/docs/help-center/product/core-capabilities/text-to-speech/how-can-i-add-pauses" },
+    { "name": "ElevenLabs Help: audio tags with Eleven v3 and v4", "url": "https://elevenlabs.io/docs/help-center/product/core-capabilities/text-to-speech/how-do-audio-tags-work-with-eleven-v3-alpha" },
+    { "name": "ElevenLabs Help: forcing a pronunciation", "url": "https://elevenlabs.io/docs/help-center/product/core-capabilities/text-to-speech/how-can-i-force-a-certain-pronunciation-of-a-word-or-name" },
+    { "name": "ElevenLabs Help: downloading Text to Speech files", "url": "https://elevenlabs.io/docs/help-center/product/core-capabilities/text-to-speech/how-do-i-download-generated-files-from-text-to-speech" },
+    { "name": "ElevenLabs Help: do I use quota on every generation", "url": "https://elevenlabs.io/docs/help-center/account/general/do-i-use-quota-on-every-generation" },
+    { "name": "ElevenLabs pricing", "url": "https://elevenlabs.io/pricing" },
+    { "name": "ElevenLabs: Eleven v4", "url": "https://elevenlabs.io/v4" },
+    { "name": "ElevenLabs Help: what is Eleven v4", "url": "https://elevenlabs.io/docs/help-center/product/core-capabilities/text-to-speech/what-is-eleven-v4" },
+    { "name": "Dupple: Is ElevenLabs free in 2026", "url": "https://dupple.com/learn/is-elevenlabs-free" }
+  ],
+  "caption": "ElevenLabs gives you 10,000 free credits a month for text to speech, about 10 minutes of audio.\nThe trick is directing the voice: tags like [whispers] and [laughs], punctuation for pauses, and two free regenerations per line.\nHere is how to get a clean voiceover on the free plan.\n\nWould you use an AI voice for your videos?\n\nFollow @neurafeed.ai for daily AI news.\n\nSource: ElevenLabs Help Center · Photo: ElevenLabs, DataCamp",
+  "threads_text": "ElevenLabs' free plan gives you 10,000 credits a month, roughly 10 minutes of AI voiceover, but you can't use it commercially. The real skill is directing the voice with tags like [whispers] and [sighs]. Would you use an AI voice for your own videos?",
+  "slides": [
+    {
+      "kind": "cover",
+      "headline": "How to use ElevenLabs *for free*: text to speech, step by step",
+      "image": {
+        "url": "https://eleven-public-cdn.elevenlabs.io/payloadcms/8vctjy8ci6f-v4-OG.webp",
+        "credit": "ElevenLabs",
+        "fallback_urls": [
+          "https://elevenlabs.io/docs/_fern-files/_img/32b6abef4b76c8652b0e55dbb26c9694fdc82e191a062678b93c9a5ca5d80c94.webp"
+        ]
+      },
+      "pos": "center center"
+    },
+    {
+      "kind": "card",
+      "heading": "1. Start on the *free plan*",
+      "paras": [
+        "The free plan gives 10,000 credits a month and needs no credit card.",
+        "It is for personal use. Commercial use starts with Starter at $6 a month."
+      ],
+      "image": {
+        "url": "https://media.datacamp.com/cms/7cca956c6f5378a281162887e3396f4a.png",
+        "credit": "DataCamp",
+        "fit": "contain"
+      }
+    },
+    {
+      "kind": "card",
+      "heading": "2. Direct the voice with *tags*",
+      "paras": [
+        "On Eleven v4 and v3, put short directions in square brackets where the delivery should change.",
+        "Try [whispers], [laughs], [sighs] or [curious]."
+      ],
+      "image": {
+        "url": "https://elevenlabs.io/docs/_fern-files/_img/aa32e23cc2a196a48ff47650249e612e7e5da023fd2f69244f27c5fea7968b75.webp",
+        "credit": "ElevenLabs",
+        "fit": "contain"
+      }
+    },
+    {
+      "kind": "card",
+      "heading": "3. Fix names by *respelling* them",
+      "paras": [
+        "If a word comes out wrong, spell it the way it sounds.",
+        "Capital letters, hyphens and apostrophes help, like writing trapezii as trapezIi."
+      ],
+      "image": {
+        "url": "https://elevenlabs.io/docs/_fern-files/_img/9e08b179bfd640650ca5225b7e2e5b8d9d4c192d63a80d2478e4078e408bf869.webp",
+        "credit": "ElevenLabs",
+        "fit": "contain"
+      }
+    },
+    {
+      "kind": "card",
+      "heading": "4. Use your *two free retries*",
+      "paras": [
+        "Keep the same text, voice and model and you get two free regenerations within two hours.",
+        "Don't refresh the page, or you lose them."
+      ],
+      "image": {
+        "url": "https://elevenlabs.io/docs/_fern-files/_img/a1a2f62118fa246f300c666a5a4f3fbd18cc9bfed023a8c6a010782545da1254.webp",
+        "credit": "ElevenLabs",
+        "fit": "contain"
+      }
+    },
+    {
+      "kind": "cta",
+      "hook": "Follow for more free AI tools explained step by step."
+    }
+  ],
+  "site_article": {
+    "kind": "guide",
+    "headline": "How to use ElevenLabs for free: text to speech, step by step",
+    "dek": "ElevenLabs turns typed text into a natural voice. Here is how to get a clean voiceover on the free plan, direct the delivery, fix pronunciation and download the file.",
+    "summary": "ElevenLabs' free plan gives 10,000 credits a month for Text to Speech, with no credit card. Eleven v4 takes up to 10,000 characters per generation on the website and understands direction tags like [whispers] and [laughs].",
+    "seo_title": "How to use ElevenLabs for free: text to speech step by step",
+    "seo_description": "How to use ElevenLabs text to speech for free: pick a voice and model, direct it with audio tags, add pauses, fix pronunciation and download MP3 or WAV.",
+    "answer_summary": "To use ElevenLabs for free, sign up for the free plan (10,000 credits a month), open Text to Speech, pick a voice and the Eleven v4 model, paste your text, add tags like [whispers] where the delivery should change, then generate and download the file as MP3 or WAV. Free audio is for personal use only.",
+    "tags": ["ElevenLabs", "Text to speech", "AI voice", "Guides"],
+    "hero_alt": "ElevenLabs promotional image for its Eleven v4 text to speech model.",
+    "paragraphs": [
+      { "kind": "fact", "text": "How to use ElevenLabs, in short: you paste text, pick a voice and a model, and ElevenLabs reads it back in a voice that sounds like a person. You can do it for free. The free plan costs $0, includes 10,000 credits a month and covers Text to Speech, Speech to Text, Sound Effects, Voice Design and three projects in Studio, according to the ElevenLabs pricing page.", "sources": [6] },
+      { "kind": "fact", "text": "There is one catch to know before you start. Free audio is for personal use. Dupple's breakdown of the terms says free output cannot be used commercially and that 10,000 credits come to roughly 10 minutes of speech. If you want to use the voice in paid work or monetized videos, the Starter plan adds a commercial license for $6 a month, with 30,000 credits and Instant Voice Cloning. Creator costs $22 a month and adds Professional Voice Cloning and 121,000 credits.", "sources": [6, 9] },
+      { "kind": "heading", "text": "Which ElevenLabs model to pick" },
+      { "kind": "fact", "text": "ElevenLabs calls Eleven v4 its newest text to speech model and says it improves on Eleven v3 in quality, voice accuracy, emotion and language coverage. The company's v4 page says it speaks more than 90 languages and reads scripts the way a voice actor would. There is also Eleven v4 Turbo, which gives up a little quality for speed and is meant for real time uses like voice agents.", "sources": [7, 8] },
+      { "kind": "fact", "text": "Length matters too. On the website, a single generation can be up to 10,000 characters with Eleven v4 and up to 5,000 characters with every other model. For something longer, like a book chapter, ElevenLabs points you to Studio, which is built for long form audio.", "sources": [0] },
+      { "kind": "fact", "text": "Eleven v4 has fewer knobs than older models. It offers the Stability and Similarity sliders, but no Style or Speed sliders and no SSML. Professional Voice Clones also get a Clone Strength slider, and ElevenLabs suggests starting it at 0 percent for most voices.", "sources": [8] },
+      { "kind": "heading", "text": "How to make your first voiceover in ElevenLabs" },
+      { "kind": "step", "title": "1. Open Text to Speech", "text": "Sign in and select Text to Speech in the sidebar. This is the main screen where you type or paste your script and choose the voice." },
+      { "kind": "step", "title": "2. Pick a voice and the model", "text": "Choose a voice from the list and set the model to Eleven v4 unless you have a reason not to. Listen to a couple of voices with a short line first. A voice that fits the tone of your script saves you more retries than any setting." },
+      { "kind": "step", "title": "3. Paste your script", "text": "Keep each generation under the limit: 10,000 characters on v4, 5,000 on the others. If your script is longer, split it at natural breaks like the end of a paragraph so the pacing stays even when you join the parts." },
+      { "kind": "step", "title": "4. Add direction with audio tags", "text": "Eleven v4 and v3 understand short instructions in square brackets. Put the tag right where the delivery should change. ElevenLabs lists emotions like [curious], [crying] and [mischievously], delivery tags like [whispers] and [shouts], and human reactions like [laughs], [clears throat] and [sighs]. The same tags work on both models." },
+      { "kind": "prompt", "title": "Script example 1: a calm explainer with one surprise", "text": "[curious] Have you ever wondered where your old phone goes after you trade it in?\nMost people never ask. [whispers] The answer is stranger than you think.\n[clears throat] Let's start at the store counter." },
+      { "kind": "prompt", "title": "Script example 2: a short ad read", "text": "[mischievously] It's here. The new [product name] is finally out.\n[sighs] We know, you've waited a long time.\n[laughs] It was worth it. Go to [your website] to see it." },
+      { "kind": "step", "title": "5. Add pauses the right way", "text": "Eleven v4 and v3 do not support SSML break tags, so control pacing with tags and punctuation. A single hyphen often adds a short pause and two in a row add a longer one. An ellipsis also adds a pause, but it can make the voice sound hesitant or nervous. On Multilingual v2, Flash v2 and Flash v2.5 you can use a break tag instead, up to 3 seconds long." },
+      { "kind": "prompt", "title": "Break tag for Multilingual v2 and Flash models", "text": "\"Give me one second to think about it.\" <break time=\"1.0s\" /> \"Yes, that would work.\"" },
+      { "kind": "tip", "text": "Don't stack breaks. ElevenLabs says many break tags in one text can make the speech speed up or add noise, and some voices fill a long pause with an \"uh\" or \"ah\"." },
+      { "kind": "step", "title": "6. Fix words it says wrong", "text": "The simplest fix works on every model: respell the word the way it sounds. ElevenLabs suggests capital letters, hyphens, apostrophes or single quotes around a few letters to push the stress, for example writing trapezii as trapezIi. On Flash v2 and Turbo v2 you can use SSML phoneme tags with IPA or CMU spelling, and Eleven v3 understands IPA directly." },
+      { "kind": "step", "title": "7. Generate, then use your free retries", "text": "Every click on Generate uses credits, including after you edit the text. But on the website you get two free regenerations as long as the text, the voice and the model stay the same, the first take was less than two hours ago and you have not refreshed or left the page. You can still move the voice sliders between those retries. On v3, each click gives you two takes for the price of one." },
+      { "kind": "step", "title": "8. Download the file", "text": "Click the download button at the bottom right as soon as the audio is made. To get an older file, open the history tab in the right side panel of Text to Speech and click the download icon. The default choices are MP3 at 128 kbps or WAV. Under Advanced you can pick MP3 at 192 or 256 kbps, M4A or FLAC." },
+      { "kind": "heading", "text": "What ElevenLabs is bad at" },
+      { "kind": "analysis", "text": "The free plan is good for testing voices and making audio for yourself, not for a channel that earns money, since commercial use needs a paid plan. Ten minutes of audio a month also goes quickly if you retry a lot, so get the script right before you press Generate and lean on the two free retries instead of editing and starting over. Pronunciation of rare names still needs hand fixing, and v4 drops the Style and Speed sliders that some people used on older models." },
+      { "kind": "tip", "text": "Before you spend credits on a long script, test the voice, the model and your tags on two or three sentences. When that short test sounds right, paste the rest." }
+    ]
+  }
+}

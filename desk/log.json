@@ -1,67 +1,5 @@
 [
   {
-    "run_at": "2026-11-08T15:00:15.243Z",
-    "summary": "Sunday morning run (about 10:00 New York): handled Mahir's request to re-queue the expired Altman carousel (cannot: the story is older than the 72 hour limit, so any copy would expire at once); no new priority 1 story on a quiet Sunday, so nothing new queued, leaving room for the weekly roundup at 17:00.",
-    "considered": [
-      {
-        "story": "Sam Altman explains why OpenAI leaders left (re-queue request)",
-        "source": "https://singjupost.com/fo583-raj-shamani-w-sam-altman-ai-revolution-superintelligence-future-of-humanity-transcript/",
-        "decision": "skipped",
-        "reason": "The interview is from November 3, past the 72 hour evergreen limit, and a search found no newer coverage, so a -v2 copy would expire immediately; changing story_time would be a false date."
-      },
-      {
-        "story": "AI proves an 18-year-old quantum conjecture (RIO Rundown, Reddit)",
-        "decision": "covered",
-        "reason": "Already posted as 2026-11-07-anthropic-ai-proves-quantum-conjecture."
-      },
-      {
-        "story": "NVIDIA FOX blueprint sends AI agents from defect alerts to root-cause reports (MarketScale)",
-        "decision": "skipped",
-        "reason": "Industrial enterprise tooling with little appeal for a general US audience."
-      },
-      {
-        "story": "AI answers rely on journalism, who gets paid (DW, Global Media Forum)",
-        "decision": "skipped",
-        "reason": "Panel discussion with no new fact or number to build a post on."
-      },
-      {
-        "story": "AMD debuts 6th Gen EPYC at China's import expo (China Daily)",
-        "decision": "skipped",
-        "reason": "Chip product news for insiders, already skipped in an earlier run."
-      },
-      {
-        "story": "AWS wants developers to stop babysitting AI agents (The New Stack)",
-        "decision": "skipped",
-        "reason": "Developer tooling story already skipped earlier today."
-      },
-      {
-        "story": "ChatGPT, Claude, Grok and Gemini overlapping outages (eWeek)",
-        "source": "https://www.eweek.com/news/chatgpt-claude-grok-gemini-outages/",
-        "decision": "skipped",
-        "reason": "Published September 4, 2026, far too old."
-      },
-      {
-        "story": "ChatGPT loses 20 points of US prompt share to Gemini and Claude (PPC Land, Comscore)",
-        "source": "https://ppc.land/chatgpt-loses-20-points-of-us-ai-prompt-share-to-gemini-and-claude/",
-        "decision": "skipped",
-        "reason": "Report from September 2026, not current."
-      },
-      {
-        "story": "Chamath Palihapitiya warns a data center slowdown would hit Anthropic and OpenAI (Stocktwits)",
-        "decision": "skipped",
-        "reason": "Investor opinion, already skipped in earlier runs."
-      }
-    ],
-    "requests": [
-      {
-        "id": "req-2026-11-08-5adc5365",
-        "status": "cannot",
-        "job_id": "2026-11-08-altman-why-openai-leaders-left",
-        "result": "The Altman interview is from November 3, so the pipeline expires any copy right away (non-timely posts expire 72 hours after the story) and I cannot fake a newer date; if you send the podcast or transcript link to the bot as a link, it stays valid for 7 days and I will rebuild the post from it."
-      }
-    ]
-  },
-  {
     "run_at": "2026-11-08T17:13:00.715Z",
     "summary": "Sunday midday run (about 12:30 New York): no open links or requests; queued 2 priority 1 carousels (OpenAI's $11 billion raise below its $30 billion goal, Ternus pushing Federighi on AI) and the daily site-only guide (Midjourney prompts), leaving 1 slot for the 17:00 weekly roundup.",
     "considered": [
@@ -5657,6 +5595,65 @@
         "story": "Reel search: viral AI and robot clips of the last 24 hours (X, TikTok trend trackers, robotics sites)",
         "decision": "skipped",
         "reason": "Every viral robot clip found was months old (Russia store robot, Warsaw boars); nothing new passed the Reels filter."
+      }
+    ],
+    "requests": []
+  },
+  {
+    "run_at": "2026-11-15T15:07:27.973Z",
+    "summary": "Sunday 10:00 New York run: queued today's second site-only guide (How to use ElevenLabs for free: text to speech). No open links or requests; today's 2 Instagram carousels are already queued; no Reel video passed the filter; roundup paused. Heads-up: the fal.ai balance is exhausted (logo checks and generated covers fail) and YouTube downloads are blocked by a bot check, which is why the AI glasses Reel failed to render.",
+    "considered": [
+      {
+        "story": "Guide: How to use ElevenLabs for free, text to speech step by step (tool library line)",
+        "source": "https://elevenlabs.io/docs/help-center/product/core-capabilities/text-to-speech/how-do-audio-tags-work-with-eleven-v3-alpha",
+        "decision": "queued",
+        "job_id": "2026-11-15-how-to-use-elevenlabs-text-to-speech-guide",
+        "priority": 2
+      },
+      {
+        "story": "Guide: Gemini CLI, how to install it (tool library line)",
+        "source": "https://www.geminicli.com/docs/get-started/installation",
+        "decision": "skipped",
+        "reason": "Google's own docs say Gemini CLI was replaced by Antigravity CLI on June 18, 2026 for free and Google One users, so an install guide would mislead most readers; the line in guides/plan.md could become an Antigravity CLI guide."
+      },
+      {
+        "story": "Guide: How to use Grok Imagine (tool library line)",
+        "decision": "skipped",
+        "reason": "Still no official xAI help page for Imagine in the Grok app, only third-party blogs."
+      },
+      {
+        "story": "Anthropic IPO orders reportedly six times oversubscribed (Reuters citing Bloomberg)",
+        "source": "https://www.investing.com/news/stock-market-news/anthropics-ipo-is-about-six-times-oversubscribed-bloomberg-news-reports-5023345",
+        "decision": "skipped",
+        "reason": "Reported November 13 and the IPO is already covered; better to cover the pricing and the November 19 listing."
+      },
+      {
+        "story": "Viral humanoid robot clips (Web Summit robots, Cologne Unitree R1 streamer incident)",
+        "source": "https://www.404media.co/theres-nothing-mysterious-or-unusual-about-the-viral-german-sexual-harassment-robot/",
+        "decision": "skipped",
+        "reason": "The Cologne incident is from October 11 and the Web Summit clips are news-branded (Euronews); nothing fresh passed the Reels filter."
+      },
+      {
+        "story": "Gemini app rolls out on Apple CarPlay",
+        "source": "https://www.macrumors.com/2026/11/11/google-gemini-apple-carplay/",
+        "decision": "skipped",
+        "reason": "Announced November 11, four days old, and no clean original demo video found for a Reel."
+      },
+      {
+        "story": "Runway releases Praxis-1, an open-weight model for robot control",
+        "decision": "skipped",
+        "reason": "Only read a secondhand summary; insider news and no second source read this run."
+      },
+      {
+        "story": "Nvidia kept GPU prices high through circular financing (TechSpot citing WSJ)",
+        "source": "https://www.techspot.com/news/114558-nvidia-deliberately-kept-gpu-prices-high-through-circular.html",
+        "decision": "skipped",
+        "reason": "Still could not read the WSJ original; secondhand only."
+      },
+      {
+        "story": "Startup funding rounds (Nidus $30M, Databento $100M, Luminal $25M, WhiteMatter $20M)",
+        "decision": "skipped",
+        "reason": "Small insider funding news with little US consumer interest."
       }
     ],
     "requests": []
