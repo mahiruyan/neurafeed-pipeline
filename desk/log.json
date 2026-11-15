@@ -1,75 +1,5 @@
 [
   {
-    "run_at": "2026-11-08T07:08:18.944Z",
-    "summary": "Early Sunday run (about 02:00 New York): no open links or requests, no new priority 1 story; queued 2 news carousels for the empty Sunday (Claude deleting a professor's notes, and the ChatGPT poisoning plot lawsuit, which is sensitive).",
-    "considered": [
-      {
-        "story": "Claude deleted a University of Chicago law professor's lecture notes and syllabus; Dropbox restored them",
-        "source": "https://fourweekmba.com/ai-claude-deleted-a-law-professors-notes-dropbox-had-copies/",
-        "decision": "queued",
-        "job_id": "2026-11-08-claude-deleted-professor-lecture-notes",
-        "priority": 2
-      },
-      {
-        "story": "Man sues OpenAI, says ChatGPT helped his estranged wife plan to poison him",
-        "source": "https://dnyuz.com/?p=323035",
-        "decision": "queued",
-        "job_id": "2026-11-08-chatgpt-wife-poison-plot-lawsuit",
-        "priority": 2
-      },
-      {
-        "story": "Elvis estate and Eminem's publisher sue Suno over AI voice cloning (Variety)",
-        "source": "https://variety.com/2026/music/news/elvis-eminem-sue-suno-ai-music-generator-1236941798/",
-        "decision": "skipped",
-        "reason": "Second lawsuit story in the same run; a good candidate for a later Sunday run once read from two outlets."
-      },
-      {
-        "story": "OpenAI raises $11 billion at a $1.25 trillion valuation",
-        "decision": "skipped",
-        "reason": "Follow-up to the earlier funding story, as decided in earlier runs."
-      },
-      {
-        "story": "Microsoft Research shuts down its AI Frontiers group (hunch.net)",
-        "source": "https://hunch.net/?p=13764006",
-        "decision": "skipped",
-        "reason": "Internal research reorganization with limited reader appeal."
-      },
-      {
-        "story": "Chinese firms cleared for Nvidia H200 chips have empty offices (NYT)",
-        "source": "https://www.nytimes.com/2026/11/07/business/economy/nvidia-chips-chinese-firms.html",
-        "decision": "skipped",
-        "reason": "Not read yet (paywall); worth checking in a later run with a second source."
-      },
-      {
-        "story": "Google told NYC schools to accept AI or lose Google Search (SILive)",
-        "decision": "covered",
-        "reason": "Same story as 2026-11-03-google-schools-no-ai-no-search."
-      },
-      {
-        "story": "Megaspeed executive recruited to spy on Nvidia CEO (TechCrunch)",
-        "source": "https://techcrunch.com/2026/11/07/chinese-exec-was-recruited-to-spy-on-nvidia-ceo-according-to-us-intelligence-memo/",
-        "decision": "covered",
-        "reason": "Already covered as 2026-10-29-nyt-chinese-asset-close-to-jensen-huang."
-      },
-      {
-        "story": "Geoffrey Hinton warns of a Chornobyl-like AI blackout (Neowin)",
-        "decision": "skipped",
-        "reason": "Commentary piece without a new event."
-      },
-      {
-        "story": "OpenAI offers senior engineers 2.6 times Microsoft's pay (FourWeekMBA)",
-        "decision": "skipped",
-        "reason": "Search found no original source or second outlet for the figure."
-      },
-      {
-        "story": "Stanford study: exact values cut AI models' auction gains (FourWeekMBA)",
-        "decision": "skipped",
-        "reason": "Still only one secondary outlet; original study not found."
-      }
-    ],
-    "requests": []
-  },
-  {
     "run_at": "2026-11-08T09:02:50.455Z",
     "summary": "Early Sunday run (about 04:20 New York): no open links or requests, no new priority 1 story; queued 1 sensitive crime and money carousel (AI-cloned CEOs, $129 million fraud), bringing Sunday to 3 jobs.",
     "considered": [
@@ -5732,6 +5662,63 @@
         "story": "Japan-led probe finds 1,000 servers likely used for AI-driven cyberattacks (Kyodo)",
         "decision": "skipped",
         "reason": "Only one source in leads and little US interest; left for a daytime run."
+      }
+    ],
+    "requests": []
+  },
+  {
+    "run_at": "2026-11-15T08:57:48.382Z",
+    "summary": "Overnight Sunday run (04:20 New York): queued 1 site-only article (South Korea's top tax exam scorer admits cheating with a hidden camera and AI). Instagram carousels for the day are already at 2; no Reel video passed the filter; no open links or requests; guides start after 07:00; roundup paused.",
+    "considered": [
+      {
+        "story": "Top scorer on South Korea's tax accountant exam confesses he cheated with a miniature camera, generative AI and a smartphone",
+        "source": "https://koreajoongangdaily.com/korea/top-scorer-on-tax-accountant-exam-admits-using-ai-to-cheat/12973195",
+        "decision": "queued",
+        "job_id": "2026-11-15-korea-tax-exam-topper-ai-cheating",
+        "priority": 2,
+        "reason": "Strong shareable crime story, but today's 2 Instagram carousels are already queued, so it is a site-only article (sensitive). Good candidate if Mahir wants it on Instagram."
+      },
+      {
+        "story": "Italy fines Meta 805 million euros over Facebook's Android photo gallery suggestions",
+        "source": "https://abcnews.com/Technology/wireStory/meta-fined-887-million-italy-android-gallery-photos-138145127",
+        "decision": "skipped",
+        "reason": "A privacy fine with no AI angle; the regulator did not examine AI use."
+      },
+      {
+        "story": "John Langford leaves Microsoft as AI Frontiers group shuts down",
+        "decision": "skipped",
+        "reason": "Only blog sources found, no major outlet confirming it."
+      },
+      {
+        "story": "New York launches a state AI safety research center to test frontier models",
+        "source": "https://www.governor.ny.gov/news/governor-hochul-declares-ny-will-lead-nation-ai-science-and-safety-launches-new-research",
+        "decision": "skipped",
+        "reason": "Announced November 10, five days old."
+      },
+      {
+        "story": "Humanoid robot Qestr quits the Antarctic Ice Ultra after 3 km",
+        "decision": "skipped",
+        "reason": "Race was days ago and the only clips found are news-branded (Al Jazeera, ZDF); no clean original video."
+      },
+      {
+        "story": "Viral humanoid robot clips (robot kicks shopper in Russia, robot chases boars in Warsaw)",
+        "decision": "skipped",
+        "reason": "Both are months old (April and September 2026)."
+      },
+      {
+        "story": "ChatGPT Wallet rolls out to US Pro users",
+        "decision": "covered",
+        "reason": "Already covered as 2026-11-13-chatgpt-wallet-agents-spend-money."
+      },
+      {
+        "story": "Nvidia kept GPU prices high through circular financing (Hacker News, TechSpot citing WSJ)",
+        "decision": "skipped",
+        "reason": "Still could not read the WSJ original; secondhand only."
+      },
+      {
+        "story": "LangChain raises 300 million dollars at a 3 billion dollar valuation",
+        "decision": "skipped",
+        "reason": "Insider funding news from the company's own blog only; no second source read this run."
       }
     ],
     "requests": []
