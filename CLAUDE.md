@@ -21,28 +21,32 @@ operational facts (he manages them from Telegram). Read it at the start of every
 it. It overrides the defaults in this file, but never the "Rules that must never be broken".
 Do not edit the memory files yourself.
 
-## Volume and mix (decided 2026-11-08 from 30 days of Instagram data)
+## Volume and mix (decided 2026-11-15 with Mahir from 30 days of Instagram data)
 
-Reels are the growth engine (median 870 views, 30 shares per post, up to 22,000 views); carousels
-reach only followers (median 510 views, 1 share per post). So every New York day:
-- 3 to 4 Reels. Sources: videos in the day's stories (company launch videos, demo clips on X,
-  robot videos, interview clips found through the YouTube search workflow). A story with a real
-  video becomes a Reel first, a carousel only if the video is weak.
-- 3 to 4 news carousels, only stories worth sending to a friend: money, jobs, a person, a shock,
-  a strange AI behavior. Priority 1 stories must still be covered the same day (a Reel when there
-  is a video, else a carousel).
-- No utility carousels on Instagram for now (median 318 views, the worst kind). The guides are
-  still written every day for the website only: queue them as normal utility jobs (slides, guide
-  in `site_article`) with `"site_only": true`; the pipeline renders them for the website and
-  posts nothing to Instagram.
-- Every day, at least 2 of the news carousels (or Reels) are stories that reach beyond pure AI
-  news, the kind @aifortuneclub grew to 75,000+ followers with (Mahir, 2026-11-12: "haberler
-  böyle olsun"): AI plus money (fortunes, salaries, prices, a company's collapse or windfall),
-  a person (a founder's feud, a firing, a strange decision), politics, a scandal, a crime, a
-  lawsuit, or a strange event. Look for them on purpose in every run (leads, Reddit, general
-  news), not only when they turn up. Product and model news that only insiders care about comes
-  after these, except priority 1 stories. Mark them `sensitive: true` when they are (deaths,
-  lawsuits, crime, politics, layoffs, health); Mahir approves those on Telegram.
+What the data says (posts 2 or more days old): Reels median 850 views, mean 2,739, 36 shares per
+post, best 25,390; news carousels (189 of them) median 489 views, 1 share per post, best 1,624;
+weekly roundups median 409; utility carousels median 327. Carousels that passed 1,200 views were
+all money, layoffs, a scandal, a person or a shock. So we post less and only what travels. This
+section overrides any post count in the run prompt. Every New York day:
+- 4 to 5 Reels, chosen by "Which Reels travel" below. A story with a real video that passes
+  that filter becomes a Reel, not a carousel.
+- At most 2 news carousels on Instagram, and only these kinds: AI plus money (fortunes, salaries,
+  prices, a collapse or a windfall), jobs and layoffs, a person (a feud, a firing, a strange
+  decision), a scandal, a crime, a lawsuit, politics, or a strange event or AI behavior that
+  anyone would send to a friend (the @aifortuneclub kind; Mahir, 2026-11-12: "haberler böyle
+  olsun"). Look for them on purpose in every run (leads, Reddit, general news). If no story of
+  the day is that kind, post fewer carousels; never fill the count with weaker stories. Mark them
+  `sensitive: true` when they are (deaths, lawsuits, crime, politics, layoffs, health); Mahir
+  approves those on Telegram.
+- Product, model, benchmark and funding news that mostly insiders follow does not go to
+  Instagram: write it as a normal news job with `"site_only": true` (slides plus `site_article`),
+  so it becomes an article on neurafeedai.com and nothing is posted. Up to 4 of these a day.
+  Exception: a priority 1 story (a launch or event everyone in AI is talking about) is still
+  posted the same day, as a Reel when a good video exists, else as one of the 2 carousels.
+- No utility carousels on Instagram (the guides are still written every day for the website
+  only: utility jobs with `"site_only": true`).
+- No weekly roundup for now (paused 2026-11-15; skip the "Weekly roundup" section).
+- Mahir's own links and requests are always made and are outside these counts.
 Never exceed 8 posts per day in total.
 
 ## Rules that must never be broken
@@ -405,7 +409,7 @@ article. Same job, same sources; the carousel is the teaser, the guide is the fu
 - Validate with `validateSiteArticle` like news articles. The desk feed sends it to the site, where
   Mahir approves it on Telegram like any other article.
 
-## Weekly roundup (Sundays)
+## Weekly roundup (Sundays) (PAUSED since 2026-11-15, do not queue)
 
 On Sunday (New York time), the first run at or after 17:00 queues `YYYY-MM-DD-week-in-ai`:
 `"format": "roundup"`, `priority: 1`, `timely: false`, cover headline like
@@ -594,7 +598,7 @@ nothing was queued). Mahir is told on Telegram when a request is `done` or `cann
   shows from the post text and Mahir's note, still queue it with a neutral, accurate hook.
 - Reels count toward the 4 to 8 posts per day and post in the same prime-time windows.
 
-## Which Reels travel (decided 2026-11-15 from 48 Reels, 30 days of Instagram data)
+## Which Reels travel (decided 2026-11-15 from 48 Reels of the last 30 days and the all-time top 40)
 
 Nine Reels passed 4,000 views (best 25,390); twenty stayed under 600. Pick videos by this filter
 when the desk makes a Reel on its own (Mahir's own links are still always made):
@@ -603,11 +607,18 @@ when the desk makes a Reel on its own (Mahir's own links are still always made):
   computer with no cables, a liquid-cooled machine); the first funny clip about the biggest story
   of the day, in its first 24 hours; an absurd or shocking startup. The viewer must get it with
   the sound off in the first two seconds.
+  Also: a new product from a brand everyone knows that people can use themselves (the account's
+  best post ever, 164,750 views and 3,644 shares, was Spotify's new desktop app for coding agents).
 - Do not make: interview and podcast clips (a talking head, median about 400 views); AI-generated
-  films, trailers and music videos; jokes only developers get (tokens, cursors, coding tools);
+  music videos and mash-ups, and AI films with no famous character (see the note below); jokes only developers get (tokens, cursors, coding tools);
   official launch videos with no surprising shot; a sequel to a clip that already did well; clips
   reposted from other Instagram AI pages; a third or later meme on the same story (the first two
   Huang memes reached 25,000 and 8,000 views, later ones under 900).
+- AI-made short films: only when they remake characters or a scene everyone knows and the first
+  second looks real. All-time numbers: Tom and Jerry in hyperrealism 77,853 views (July, when the
+  video model was new), Road Runner 4,080, a dystopian concept film 3,894, Game of Thrones and
+  Odyssey remakes about 2,100 each; the three made since October got 285 to 1,821. At most one
+  a day, and not as one of the first picks.
 - Shares predict reach: ask "would someone send this to a friend?" before queuing.
 The desk made only 3 of those 48 Reels. It must look for Reel videos in every run (X, Reddit and
 company posts in the day's stories) and queue the ones that pass this filter.

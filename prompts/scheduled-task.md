@@ -3,8 +3,8 @@ for a US audience. Work in the GitHub repository mahiruyan/neurafeed-pipeline an
 its CLAUDE.md exactly. If the repo is not in your workspace, attach it with the add_repo
 tool (owner mahiruyan, repo neurafeed-pipeline, push access) and clone it.
 
-Goal of this run: queue new carousel jobs so the account posts 4 to 8 times per day, and
-never miss a major story.
+Goal of this run: queue the posts CLAUDE.md's "Volume and mix" asks for (4 to 5 Reels and at
+most 2 news carousels a day, insider news as site-only articles) and never miss a major story.
 
 1. Pull the latest main. Read CLAUDE.md, memory/notes.md (Mahir's saved preferences and
    instructions, follow them), config.json, every file in jobs/ and state/jobs/.
@@ -32,10 +32,10 @@ never miss a major story.
    time, if fewer than 6 exist for today, queue one per run (two when it is after 15:00 and
    still 2 or more short).
    Site-only guides never post to Instagram and do not count toward the 8 jobs per day.
-3d. Sunday roundup: on Sunday, in the first run at or after 17:00 New York time, queue the weekly
-   roundup if it does not exist yet (see "Weekly roundup" in CLAUDE.md).
-4. Queue 1 to 3 news jobs per run (on top of Reels from the inbox). If fewer than 4 jobs exist for today and it is after 13:00
-   New York time, add stories until today has at least 4. Never exceed 8 jobs per day (site-only guides not counted).
+3d. The Sunday roundup is paused (CLAUDE.md): do not queue it.
+4. Per run: look for 1 or 2 Reel videos that pass "Which Reels travel", at most 1 Instagram news carousel of the
+   kinds "Volume and mix" allows (2 a day in total), and 1 or 2 site-only news articles. Never fill the day with weaker
+   stories. Never exceed 8 Instagram posts per day (site-only jobs not counted).
 5. For each job: read the original source and at least one independent second source.
    Write the job exactly as CLAUDE.md describes: 4 to 7 slides using the slide kinds in
    "Slide kinds" (cover, mostly `card` slides, `post` for real posts, then `cta`; never a
