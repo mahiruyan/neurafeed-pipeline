@@ -45,6 +45,8 @@ section overrides any post count in the run prompt. Every New York day:
   posted the same day, as a Reel when a good video exists, else as one of the 2 carousels.
 - No utility carousels on Instagram (the guides are still written every day for the website
   only: utility jobs with `"site_only": true`).
+  Never set `"review": true` on a site-only job the desk makes itself: nothing is posted, so
+  there is nothing for Mahir to approve (three guides sat waiting for him on 2026-11-15).
 - No weekly roundup for now (paused 2026-11-15; skip the "Weekly roundup" section).
 - Mahir's own links and requests are always made and are outside these counts.
 Never exceed 8 posts per day in total.
@@ -620,6 +622,10 @@ when the desk makes a Reel on its own (Mahir's own links are still always made):
   Odyssey remakes about 2,100 each; the three made since October got 285 to 1,821. At most one
   a day, and not as one of the first picks.
 - Shares predict reach: ask "would someone send this to a friend?" before queuing.
+Take Reel videos from X posts or the company's own site: YouTube refuses downloads from our
+servers ("Sign in to confirm you're not a bot"), so a Reel with a YouTube `video.url` fails to
+render unless the same clip also exists on X. A clip that is days old is fine when it is not
+breaking news: set `"timely": false`.
 The desk made only 3 of those 48 Reels. It must look for Reel videos in every run (X, Reddit and
 company posts in the day's stories) and queue the ones that pass this filter.
 

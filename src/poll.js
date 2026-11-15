@@ -87,6 +87,14 @@ process.on('beforeExit', () => { try { writeSummary(); } catch (e) { console.log
       continue;
     }
 
+    // A website-only job the desk made on its own (a guide, an insider news article) posts nothing
+    // to Instagram, so it does not wait for Mahir: the site has its own approval for news articles.
+    if (st.status === 'pending' && job.site_only && !job.sensitive && !job.link_id && !job.request_id) {
+      setJobState(st.id, { status: 'approved', by: 'auto: website only, nothing to post' });
+      if (tg.enabled() && st.message_id) await tg.editMessage(st.message_id, `🌐 Website only, no approval needed: ${st.id}`).catch(() => {});
+      continue;
+    }
+
     if (st.status === 'pending') {
       const reason = rules.nightAutoApproveReason(job, st, cfg, now);
       if (reason) setJobState(st.id, { status: 'approved', by: reason });

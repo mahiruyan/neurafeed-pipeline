@@ -125,7 +125,8 @@ function summary(job) {
       }
       fs.rmSync(path.join(outDir, 'src'), { recursive: true, force: true });
       setJobState(id, { status: 'rendered', files: files.map((f) => path.relative(ROOT, f)), image_errors: errors });
-      if (cfg.mode === 'auto' && (job.review || job.sensitive) && !job.owner_approved && tg.enabled()) {
+      const deskSiteOnly = job.site_only && !job.sensitive && !job.link_id && !job.request_id; // nothing is posted: no approval
+      if (cfg.mode === 'auto' && (job.review || job.sensitive) && !job.owner_approved && !deskSiteOnly && tg.enabled()) {
         // Sensitive stories and posts made from Mahir's links wait for his OK on Telegram.
         sent.push(...[].concat((await tg.sendAlbum(preview)) || []).map((x) => x.message_id));
         const msg = await tg.sendMessage(`${job.review ? '👀 Your link is ready. Post it?' : '⚠️ Sensitive story, needs your OK'}${job._same ? `\n${job._same}` : ''}\n\n${summary(job)}`, [[
