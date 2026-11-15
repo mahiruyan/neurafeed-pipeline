@@ -1,68 +1,5 @@
 [
   {
-    "run_at": "2026-11-08T19:02:48.591Z",
-    "summary": "Sunday afternoon run (about 14:00 New York): skipped Mahir's Instagram meme link (copying another account's post), answered the Altman re-queue retry as cannot (no newer coverage), and queued the Anthropic $3.4 billion gas generator deal (priority 1) in today's last slot alongside the 17:00 weekly roundup.",
-    "considered": [
-      {
-        "story": "Anthropic agrees to pay $3.4 billion for 1.7 GW of Caterpillar gas generators (FT)",
-        "source": "https://thenextweb.com/news/anthropic-3-4bn-gas-generators-onepwr-ft",
-        "decision": "queued",
-        "job_id": "2026-11-08-anthropic-buys-3-4-billion-gas-generators",
-        "priority": 1
-      },
-      {
-        "story": "Mahir's link: Acknowledge AI meme Reel about a four-word Claude prompt eating the token budget",
-        "source": "https://www.instagram.com/reel/Dfd2UEIBFOP/",
-        "decision": "skipped",
-        "reason": "It is another account's own branded meme with their caption word for word, so reposting it would copy their post; added to inbox/skipped.json."
-      },
-      {
-        "story": "Sam Altman on why OpenAI leaders left (re-queue retry)",
-        "source": "https://fourweekmba.com/ai-altman-on-pacing-ai-progress-and-why-4-rival-labs-split-off/",
-        "decision": "skipped",
-        "reason": "A new search found only coverage from November 3 and 4, so there is no newer angle and a copy would expire at once."
-      },
-      {
-        "story": "Employees who use AI end up working more hours per day (Futurism)",
-        "decision": "skipped",
-        "reason": "Good everyone story, but today's 8 post cap is now full; worth a look Monday."
-      },
-      {
-        "story": "Andrej Karpathy built a video platform in a weekend with Claude",
-        "decision": "skipped",
-        "reason": "No slot left today; still a candidate for Monday."
-      },
-      {
-        "story": "Anthropic IPO valuation could fall toward $1 trillion (24/7 Wall St.)",
-        "decision": "covered",
-        "reason": "Investor pullback on the Anthropic IPO is already covered in 2026-11-06-anthropic-ipo-investors-balk-selloff and the OpenAI raise post."
-      },
-      {
-        "story": "Google won't let users turn off AI Overviews (Futurism)",
-        "decision": "skipped",
-        "reason": "Opinion column with no new fact."
-      },
-      {
-        "story": "Apple CEO presses Federighi on AI (Bloomberg)",
-        "decision": "covered",
-        "reason": "Already queued as 2026-11-08-ternus-pushes-federighi-faster-ai."
-      },
-      {
-        "story": "OpenAI raises $11 billion at a $1.25 trillion valuation",
-        "decision": "covered",
-        "reason": "Already queued as 2026-11-08-openai-11-billion-short-of-30-billion."
-      }
-    ],
-    "requests": [
-      {
-        "id": "req-2026-11-08-2c8164ac",
-        "status": "cannot",
-        "job_id": "2026-11-08-altman-why-openai-leaders-left",
-        "result": "I searched again and all coverage of the Altman interview is from November 3 and 4, so there is no fresh angle and any copy would expire at once; I will not fake a newer date. Send the podcast or transcript link to the bot as a link (links stay valid 7 days) and I will rebuild it."
-      }
-    ]
-  },
-  {
     "run_at": "2026-11-08T20:53:48.394Z",
     "summary": "No new jobs: today (New York) already has 9 posts posted or approved, over the 8 per day cap, and all priority 1 stories are covered. Weekly roundup is left for the first run at or after 17:00 New York time.",
     "considered": [
@@ -5676,5 +5613,67 @@
         "result": "Already done: the refreshed copy 2026-11-08-altman-why-openai-leaders-left-v2 was posted on November 9, so there is nothing left to re-queue. Send a new request if you want it posted a second time."
       }
     ]
+  },
+  {
+    "run_at": "2026-11-15T19:04:09.308Z",
+    "summary": "Sunday 14:00 New York run: queued today's fourth site-only guide (How to use Comet browser). No open links or requests; today's 2 Instagram carousels and 4 site-only articles are already queued; no Reel video passed the filter; roundup paused.",
+    "considered": [
+      {
+        "story": "Guide: How to use Comet, Perplexity's AI browser (tool library, next usable line)",
+        "source": "https://intercom.help/perplexity-ai/en/articles/11172798-getting-started-with-comet",
+        "decision": "queued",
+        "job_id": "2026-11-15-how-to-use-comet-browser-guide",
+        "priority": 2
+      },
+      {
+        "story": "Apple smart glasses with Siri app integrations planned for 2027 (Bloomberg Power On)",
+        "source": "https://bloomberg.com/news/newsletters/2026-11-15/apple-siri-ai-app-integrations-power-smart-glasses-iphone-duo-2-face-id-plan",
+        "decision": "skipped",
+        "reason": "A reported plan for 2027 that mostly insiders follow, and today's 4 site-only articles are already queued."
+      },
+      {
+        "story": "Korean YouTuber solves CSAT math with AI glasses (Asia Business Daily)",
+        "source": "https://www.asiae.co.kr/en/article/2026111414541042169",
+        "decision": "skipped",
+        "reason": "A sequel to this morning's AI glasses exam Reel, and the video is on YouTube, which the pipeline cannot download right now."
+      },
+      {
+        "story": "Claude reportedly refusing to make Pokemon images (IMDb news)",
+        "decision": "skipped",
+        "reason": "Only a headline in the leads with no original source read; today's carousels are already full."
+      },
+      {
+        "story": "GTA mod developers earning thousands with Claude Code and FiveM (GameGPU)",
+        "decision": "skipped",
+        "reason": "Single secondary outlet, no second source found, and today's carousels are already full."
+      },
+      {
+        "story": "Sweekar AI pocket pet (Engadget)",
+        "source": "https://www.engadget.com/ai/sweekar-turns-the-tamagotchi-into-a-physical-ai-pocket-pet-that-wont-die-on-you-023525228.html",
+        "decision": "skipped",
+        "reason": "Not new and no original product video found for a Reel."
+      },
+      {
+        "story": "Gemini tracks Black Friday deals with scheduled tasks (Android Police, AndroidPure)",
+        "decision": "skipped",
+        "reason": "Good future guide topic, but the plan's tool library line came first this run."
+      },
+      {
+        "story": "Reel search: viral AI, robot and gadget clips of the last 24 hours",
+        "decision": "skipped",
+        "reason": "Nothing fresh with a downloadable original video passed the Reels filter."
+      },
+      {
+        "story": "Anthropic IPO previews, Nvidia and Huang follow-ups, ChatGPT Wallet",
+        "decision": "covered",
+        "reason": "Already covered by this week's jobs (IPO, Nvidia saga, 2026-11-13-chatgpt-wallet-agents-spend-money)."
+      },
+      {
+        "story": "Nvidia circular financing (TechSpot citing WSJ, Hacker News)",
+        "decision": "skipped",
+        "reason": "Still could not read the WSJ original; secondhand only."
+      }
+    ],
+    "requests": []
   }
 ]
