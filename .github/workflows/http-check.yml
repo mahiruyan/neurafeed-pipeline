@@ -1,0 +1,19 @@
+name: HTTP check
+
+# Read only: status code, redirect target and canonical tag of a few URLs, as a visitor sees them.
+on:
+  workflow_dispatch:
+    inputs:
+      urls: { description: 'URLs separated by spaces', required: true }
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - run: |
+          for u in ${{ inputs.urls }}; do
+            line=$(curl -s -o /tmp/b -m 25 -A 'Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)' -w '%{http_code} -> %{redirect_url}' "$u" || true)
+            canon=$(grep -o '<link rel="canonical"[^>]*>' /tmp/b | head -1 || true)
+            echo "CHECK $u | $line | $canon"
+          done
