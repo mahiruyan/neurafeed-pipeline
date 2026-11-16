@@ -1,62 +1,5 @@
 [
   {
-    "run_at": "2026-11-09T02:53:40.310Z",
-    "summary": "Late Sunday night run (21:52 New York): no open links or requests (the four old October links are already in skipped.json); the New York day already has far more than 8 jobs and the last window closes at 22:00, so nothing was queued.",
-    "considered": [
-      {
-        "story": "Nvidia board investigates Jensen Huang after he admits an affair with a suspected Chinese spy",
-        "decision": "covered",
-        "reason": "Already queued as 2026-11-08-nvidia-board-probes-huang-alleged-spy (sensitive, waiting for approval)."
-      },
-      {
-        "story": "OpenAI raises $11 billion at a $1.25 trillion valuation",
-        "decision": "covered",
-        "reason": "Already posted as 2026-11-08-openai-11-billion-short-of-30-billion."
-      },
-      {
-        "story": "Anthropic buys $3.4 billion of gas generators",
-        "decision": "covered",
-        "reason": "Already queued as 2026-11-08-anthropic-buys-3-4-billion-gas-generators."
-      },
-      {
-        "story": "Apple CEO pushes for faster progress on AI",
-        "decision": "covered",
-        "reason": "Already queued as 2026-11-08-ternus-pushes-federighi-faster-ai."
-      },
-      {
-        "story": "AI voice clones of CEOs used to steal more than $129 million (NYT)",
-        "decision": "covered",
-        "reason": "Already queued as 2026-11-08-ai-cloned-ceos-stole-129-million."
-      },
-      {
-        "story": "Goldman Sachs pulls Claude Code from its bankers and traders",
-        "decision": "skipped",
-        "reason": "Still trending on Hacker News, but the original report is from November 2 and the day is over the cap."
-      },
-      {
-        "story": "OpenAI to acquire Pierre to expand Codex code review tools",
-        "decision": "skipped",
-        "reason": "Small developer-tools acquisition with little mainstream appeal, and the day is full."
-      },
-      {
-        "story": "Anthropic reportedly plans to complete its IPO before November 26 (SBS, Korean)",
-        "decision": "skipped",
-        "reason": "Single foreign-language report, not confirmed by a second source; worth checking in the morning run."
-      },
-      {
-        "story": "Regulation supporters win in US midterm elections, a defeat for AI companies (Ynetnews)",
-        "decision": "skipped",
-        "reason": "Politics story found at day end; needs mainstream US sourcing and would expire before the 07:00 window."
-      },
-      {
-        "story": "Llama-modchip: 284B DeepSeek on 64GB RAM with no GPU (Hacker News)",
-        "decision": "skipped",
-        "reason": "Niche hardware hack for developers."
-      }
-    ],
-    "requests": []
-  },
-  {
     "run_at": "2026-11-09T05:04:17.456Z",
     "summary": "Overnight run (23:55 Sunday New York): no open links or requests; queued one politics story for the Monday morning slots, Trump's 60 Minutes claim that the DOJ warned an unnamed AI company leader of jail (sensitive, for Mahir's approval).",
     "considered": [
@@ -5640,6 +5583,56 @@
         "story": "Reel search: other viral AI, robot and gadget clips of November 15",
         "decision": "skipped",
         "reason": "Nothing fresh with a downloadable X original passed the Reels filter."
+      }
+    ],
+    "requests": []
+  },
+  {
+    "run_at": "2026-11-16T02:54:51.215Z",
+    "summary": "Sunday 22:00 New York run: nothing queued. No open links or requests; today's Instagram carousels, Reels, site-only articles and 6 guides are already done, the last posting window closes at 22:00, and no new story from the evening passed the bar. Tomorrow's guides start from 07:00.",
+    "considered": [
+      {
+        "story": "Crédit Mutuel Arkéa: about 100 million euros stolen in a 'potential AI-powered' heist (hi-Tech.ua)",
+        "source": "https://www.bleepingcomputer.com/news/security/hackers-pull-off-133-million-french-bank-heist-via-service-provider",
+        "decision": "skipped",
+        "reason": "The hack was reported around November 6, and the AI angle is speculation that the main reports do not support."
+      },
+      {
+        "story": "Sen. Patty Murray presses OpenAI on ChatGPT safeguards after a Seattle woman's death",
+        "decision": "covered",
+        "reason": "Follow-up to the lawsuit already covered as 2026-10-29-family-sues-openai-chatgpt-seizure-medication."
+      },
+      {
+        "story": "TSMC board approves up to $500 million each for Anthropic and OpenAI stakes",
+        "source": "https://focustaiwan.tw/business/202611110009",
+        "decision": "skipped",
+        "reason": "Announced November 11 and already skipped then; an evening newsletter only resurfaced it."
+      },
+      {
+        "story": "Congress wants to tighten AI chip export rules after the Nvidia spy scandal (The Verge)",
+        "source": "https://aljazeera.com/economy/2026/11/10/nvidia-spy-scandal-fuels-debate-over-chip-exports-to-china",
+        "decision": "skipped",
+        "reason": "Week-old follow-up in the Nvidia saga, which already has many jobs; no new bill text or vote."
+      },
+      {
+        "story": "Anthropic IPO puts heat on OpenAI (The Economist), Asian investors chase Anthropic shares (Nikkei)",
+        "decision": "covered",
+        "reason": "Anthropic IPO is already covered; better to cover the November 19 listing itself."
+      },
+      {
+        "story": "Jensen Huang may return to Nvidia, 'Stand With Jensen' movement (Forbes, The Verge, Gizmodo)",
+        "decision": "covered",
+        "reason": "Already queued as 2026-11-15-jensen-huang-weighs-nvidia-return and 2026-11-15-musk-petition-reinstate-jensen-huang."
+      },
+      {
+        "story": "ChatGPT can now generate and edit GIFs (Engadget)",
+        "decision": "skipped",
+        "reason": "Small feature; the day's Instagram and site-only counts are already full and the next run can reconsider it."
+      },
+      {
+        "story": "Reel search: viral AI clips of the evening of November 15",
+        "decision": "skipped",
+        "reason": "Earlier runs today searched this; nothing new passed the Reels filter."
       }
     ],
     "requests": []
