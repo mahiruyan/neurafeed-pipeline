@@ -1,61 +1,5 @@
 [
   {
-    "run_at": "2026-11-09T23:01:55.885Z",
-    "summary": "Queued today's fourth site-only guide (Gemini Nano Banana for free); no news queued because today is already over the 8 post cap and no new priority 1 story appeared since the last run. No open links or requests.",
-    "considered": [
-      {
-        "story": "Daily guide: how to use Gemini Nano Banana for free (guides/plan.md)",
-        "source": "https://support.google.com/gemini/answer/14286560",
-        "decision": "queued",
-        "job_id": "2026-11-09-gemini-nano-banana-free-guide",
-        "priority": 2,
-        "reason": "Site-only guide, does not count toward the Instagram cap."
-      },
-      {
-        "story": "Daily guide: how to use ChatGPT Atlas / Atlas for Windows (top of guides/plan.md)",
-        "source": "https://9to5mac.com/2026/07/09/openai-is-discontinuing-chatgpt-atlas-its-standalone-desktop-browser/",
-        "decision": "skipped",
-        "reason": "OpenAI retired the Atlas browser in 2026, so a how-to guide would send readers to a dead product; the plan line should be removed."
-      },
-      {
-        "story": "Anthropic releases Claude Fable 5.2 and Mythos 5.2",
-        "decision": "covered",
-        "reason": "Already queued as 2026-11-09-claude-fable-5-2-mythos-5-2-v2."
-      },
-      {
-        "story": "Meta releases Muse Ember",
-        "decision": "covered",
-        "reason": "Already queued as 2026-11-09-meta-muse-ember-third-of-haiku-cost."
-      },
-      {
-        "story": "Nvidia probe into Jensen Huang and alleged Chinese spy (NBC, Inc., NYT on Democrats demanding answers)",
-        "decision": "covered",
-        "reason": "Covered by 2026-11-08-nvidia-board-probes-huang-alleged-spy and 2026-11-09-trump-calls-huang-honorable; no new development worth another post."
-      },
-      {
-        "story": "Trump says he does not mind AI guardrails (Reuters, via The Neuron digest)",
-        "decision": "skipped",
-        "reason": "Today is already over the 8 post cap and Trump AI comments were covered in 2026-11-09-trump-doj-ai-boss-jail."
-      },
-      {
-        "story": "OpenAI CFO Sarah Friar says data center expansion continues",
-        "decision": "skipped",
-        "reason": "Insider infrastructure news and today is over the cap."
-      },
-      {
-        "story": "Alibaba coding agent test: top model finished only 26.4% of real tasks",
-        "decision": "skipped",
-        "reason": "Good everyone angle but only seen in a digest so far and today is over the cap; can be revisited tomorrow with primary sources."
-      },
-      {
-        "story": "Claude Code exposed 1,379 secrets on GitHub (shattered.io)",
-        "decision": "skipped",
-        "reason": "Single blog source, not confirmed by an independent outlet."
-      }
-    ],
-    "requests": []
-  },
-  {
     "run_at": "2026-11-10T00:53:14.586Z",
     "summary": "Evening run (19:50 New York, Monday): no new jobs. Today already has 10 desk posts (over the 8 cap) and 4 site guides; all links and requests were already handled and every big story is covered.",
     "considered": [
@@ -5501,6 +5445,60 @@
         "story": "Reel search: viral AI and robot videos of the day",
         "decision": "skipped",
         "reason": "Found no fresh clip with an X or company video URL that passes the Reels filter (only a fake AI Tim Cook glasses clip and older robot videos)."
+      }
+    ],
+    "requests": []
+  },
+  {
+    "run_at": "2026-11-16T23:06:08.453Z",
+    "summary": "Monday 18:00 New York run: nothing queued. No open links or requests; today's 6 guides, 4 site-only news slots and carousel slots (3 carousels incl. the priority 1 California lawsuit) are already used; no fresh Reel video with an X or company URL passed the filter.",
+    "considered": [
+      {
+        "story": "ChatGPT Wallet lets AI agents buy things after you approve (The Neuron lead story)",
+        "source": "https://www.theneuron.ai/digest/everything-that-happened-in-ai-today-monday-november-16-2026/",
+        "decision": "covered",
+        "reason": "Already posted as 2026-11-13-chatgpt-wallet-agents-spend-money."
+      },
+      {
+        "story": "Trump floats Tim Cook as Nvidia CEO while the board reportedly will not reinstate Jensen Huang (Fox News live blog)",
+        "source": "https://www.foxnews.com/live-news/ai-news-nvidia-spy-scandal-jensen-huang-11-16-26",
+        "decision": "skipped",
+        "reason": "Another turn of the Huang saga, which already has many posts this week, and the carousel slots for today are used."
+      },
+      {
+        "story": "OpenAI calls California's lawsuit targeted (spokesperson Drew Pusateri)",
+        "source": "https://www.foxnews.com/live-news/ai-news-nvidia-spy-scandal-jensen-huang-11-16-26",
+        "decision": "covered",
+        "reason": "Part of the lawsuit story already queued as 2026-11-16-california-sues-openai-rogue-agents."
+      },
+      {
+        "story": "Fed Chair Kevin Warsh outlines AI scenarios that could raise unemployment",
+        "source": "https://www.foxnews.com/live-news/ai-news-nvidia-spy-scandal-jensen-huang-11-16-26",
+        "decision": "skipped",
+        "reason": "Only read in a live blog summary, and both carousel and site-only slots are full today; worth a look tomorrow if fuller coverage appears."
+      },
+      {
+        "story": "FBI says Artex AI open-source hacking tool was used to breach networks (TechCrunch)",
+        "source": "https://techcrunch.com/2026/11/16/fbi-says-artex-ai-open-source-hacking-tool-used-to-breach-networks-in-under-three-hours/",
+        "decision": "skipped",
+        "reason": "Security story that mostly insiders follow; today's site-only news slots are full."
+      },
+      {
+        "story": "Figure Helix 2.5 robot does chores in 30 homes (Reel candidate)",
+        "source": "https://www.humanoidsdaily.com/robots/figure",
+        "decision": "skipped",
+        "reason": "Announced September 17, too old, and the clip is a launch video with no surprising shot."
+      },
+      {
+        "story": "Tesla begins production-quality Optimus units at Fremont (Reel candidate)",
+        "source": "https://www.notateslaapp.com/news/4866/tesla-officially-begins-optimus-robot-production",
+        "decision": "skipped",
+        "reason": "News from October 22 and no X clip found; only YouTube shorts, which cannot be downloaded."
+      },
+      {
+        "story": "Reel search: viral AI, robot and gadget clips of November 16 (humanoid.press daily feed, X trending, news)",
+        "decision": "skipped",
+        "reason": "Every candidate was old, already made (Atlas on wheels), a talking head, or YouTube-only; nothing passed the Which Reels travel filter."
       }
     ],
     "requests": []
