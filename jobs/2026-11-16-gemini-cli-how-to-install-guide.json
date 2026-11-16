@@ -1,0 +1,326 @@
+{
+  "id": "2026-11-16-gemini-cli-how-to-install-guide",
+  "format": "utility",
+  "site_only": true,
+  "created_at": "2026-11-16T15:20:00Z",
+  "story_time": "2026-11-16T15:20:00Z",
+  "timely": false,
+  "sensitive": false,
+  "priority": 2,
+  "sources": [
+    {
+      "name": "Gemini CLI docs: Installation",
+      "url": "https://www.geminicli.com/docs/get-started/installation"
+    },
+    {
+      "name": "Gemini CLI docs: Authentication",
+      "url": "https://www.geminicli.com/docs/get-started/authentication"
+    },
+    {
+      "name": "Gemini CLI docs: Get started",
+      "url": "https://geminicli.com/docs/get-started"
+    },
+    {
+      "name": "Gemini CLI docs: Cheatsheet",
+      "url": "https://geminicli.com/docs/cli/cli-reference.md"
+    },
+    {
+      "name": "Gemini CLI on GitHub: Transitioning Gemini CLI to Antigravity CLI",
+      "url": "https://github.com/google-gemini/gemini-cli/discussions/27274"
+    },
+    {
+      "name": "The New Stack",
+      "url": "https://thenewstack.io/google-antigravity-cli/"
+    },
+    {
+      "name": "The New Stack: Gemini CLI vs. Antigravity",
+      "url": "https://thenewstack.io/gemini-cli-antigravity-replacement/"
+    },
+    {
+      "name": "Philipp Schmid: Gemini CLI cheatsheet",
+      "url": "https://www.philschmid.de/gemini-cli-cheatsheet"
+    }
+  ],
+  "caption": "Gemini CLI is Google's open source AI agent for the terminal.\nOne npm command installs it, but since June 18 free and AI Pro users get Antigravity CLI instead.\nHere is who can still use it and how to start.\n\nWould you let an AI agent run commands in your terminal?\n\nFollow @neurafeed.ai for daily AI news.\n\nSource: Google",
+  "threads_text": "Gemini CLI installs with one npm command, but since June 18 free and AI Pro users are sent to Antigravity CLI instead. Paid API keys and company licenses still work. Would you let an AI agent run commands in your terminal?",
+  "slides": [
+    {
+      "kind": "cover",
+      "headline": "How to install *Gemini CLI* and start using it",
+      "image": {
+        "url": "https://raw.githubusercontent.com/google-gemini/gemini-cli/main/docs/assets/gemini-screenshot.png",
+        "credit": "Google",
+        "fit": "contain"
+      },
+      "pos": "center top"
+    },
+    {
+      "kind": "card",
+      "heading": "1. Check *who can still use it*",
+      "paras": [
+        "Since June 18, 2026, free, Google One, AI Pro and Ultra users get Antigravity CLI instead.",
+        "Gemini CLI still works with paid API keys, Code Assist Standard or Enterprise and Google Cloud."
+      ],
+      "image": {
+        "url": "https://www.androidauthority.com/wp-content/uploads/2026/09/gemini-logo-november-2025-2-1000w-562h.jpg",
+        "credit": "Google via Android Authority"
+      }
+    },
+    {
+      "kind": "prompt",
+      "heading": "2. Install it with *one command*",
+      "paras": [
+        "You need Node.js 20 or later on macOS, Windows or Ubuntu.",
+        "Then type gemini in your project folder and pick how to sign in."
+      ],
+      "prompt": "npm install -g @google/gemini-cli"
+    },
+    {
+      "kind": "prompt",
+      "heading": "3. Give it a *first job*",
+      "paras": [
+        "Ask in plain English. It asks before it changes a file, so choose Allow once.",
+        "Type @ and a path to point it at a file or folder."
+      ],
+      "prompt": "Combine the two .csv files into a single .csv file, with each year a different column."
+    },
+    {
+      "kind": "prompt",
+      "heading": "4. Give it *house rules*",
+      "paras": [
+        "/init creates a GEMINI.md file. Write your project's rules there once.",
+        "/memory show prints what the model actually reads."
+      ],
+      "prompt": "/init"
+    },
+    {
+      "kind": "cta",
+      "hook": "Follow for one AI tool explained every day."
+    }
+  ],
+  "site_article": {
+    "kind": "guide",
+    "headline": "Gemini CLI: how to install it, sign in and start using it in 2026",
+    "dek": "One npm command installs Google's terminal agent. Here is how to sign in, which accounts still work after June 18, and the commands worth learning first.",
+    "summary": "Gemini CLI installs with npm install -g @google/gemini-cli and needs Node.js 20 or later. Since June 18, 2026, free and Google AI Pro or Ultra users get Antigravity CLI instead, while paid API keys, Code Assist licenses and Google Cloud users keep Gemini CLI.",
+    "seo_title": "Gemini CLI: how to install it and start using it",
+    "seo_description": "How to install Gemini CLI with npm, sign in with Google, an API key or Vertex AI, your first prompts, key commands, and who must use Antigravity CLI.",
+    "answer_summary": "Install Node.js 20 or later, run npm install -g @google/gemini-cli, then type gemini and choose Sign in with Google, a Gemini API key or Vertex AI. Free and AI Pro or Ultra personal accounts now use Antigravity CLI instead.",
+    "tags": [
+      "Gemini CLI",
+      "Google",
+      "Gemini",
+      "Coding agents",
+      "Guides"
+    ],
+    "hero_alt": "Gemini CLI running in a dark terminal, with a large colorful GEMINI logo and a request to write a Python program.",
+    "paragraphs": [
+      {
+        "kind": "fact",
+        "text": "Gemini CLI, how to install it in short: you need Node.js 20 or later, then you run one npm command and type gemini. Gemini CLI is Google's open source AI agent for the terminal. It reads your project, edits files, runs commands and answers questions about code, using Gemini models.",
+        "sources": [
+          0,
+          2
+        ]
+      },
+      {
+        "kind": "fact",
+        "text": "Before you install it, check one thing. On June 18, 2026, Google stopped serving Gemini CLI to people on the free tier, Google One, Google AI Pro and Google AI Ultra. Those users now get Antigravity CLI, a newer closed source tool. Gemini CLI keeps working for organizations on a Gemini Code Assist Standard or Enterprise license, for Google Cloud users and for people with a paid Gemini API key.",
+        "sources": [
+          0,
+          4,
+          5
+        ]
+      },
+      {
+        "kind": "analysis",
+        "text": "So this guide is for you if your company pays for Gemini Code Assist, you work in Google Cloud, or you are happy to pay per use with an API key. If you only have a personal Google account, read the section on Antigravity CLI at the end first."
+      },
+      {
+        "kind": "heading",
+        "text": "What you need before you install Gemini CLI"
+      },
+      {
+        "kind": "fact",
+        "text": "The official docs list macOS 15 or later, Windows 11 24H2 or later, or Ubuntu 20.04 or later. You need Node.js 20.0.0 or newer, a Bash, Zsh or PowerShell shell, and an internet connection. Google suggests 4GB of RAM for short sessions and 16GB or more for long sessions on large codebases. You also have to be in a location where Gemini Code Assist is offered.",
+        "sources": [
+          0
+        ]
+      },
+      {
+        "kind": "tip",
+        "text": "Type node -v in your terminal first. If it prints a number below 20, or nothing at all, install a current Node.js before you go on."
+      },
+      {
+        "kind": "heading",
+        "text": "How to install Gemini CLI, step by step"
+      },
+      {
+        "kind": "step",
+        "title": "1. Install it with npm",
+        "text": "Open a terminal and run the command below. It installs the latest stable release globally, so the gemini command works from any folder."
+      },
+      {
+        "kind": "prompt",
+        "title": "Install command",
+        "text": "npm install -g @google/gemini-cli"
+      },
+      {
+        "kind": "fact",
+        "text": "The docs also list Homebrew, MacPorts and Anaconda as install options, and Gemini CLI comes preinstalled in Google Cloud Shell and Cloud Workstations. If you only want to try it once, npx @google/gemini-cli runs it without a permanent install.",
+        "sources": [
+          0
+        ]
+      },
+      {
+        "kind": "fact",
+        "text": "There are three release channels: stable, preview and nightly. Google recommends stable for most people. Stable is published weekly and is built from the previous week's preview plus bug fixes. To update later, run gemini update.",
+        "sources": [
+          0,
+          3
+        ]
+      },
+      {
+        "kind": "step",
+        "title": "2. Start it",
+        "text": "Move into the folder of the project you want help with, then type gemini. The first run asks how you want to authenticate for this project."
+      },
+      {
+        "kind": "step",
+        "title": "3. Pick how to sign in",
+        "text": "Choose the option that matches how you pay. The three routes are below."
+      },
+      {
+        "kind": "fact",
+        "text": "Sign in with Google is the option for organization accounts such as a company, school or Google Workspace. Select it, pick your account in the browser and click Sign in. The docs say organization users, Gemini Code Assist license holders and Developer Program license holders also need a Google Cloud project: enable the Gemini for Cloud API and set GOOGLE_CLOUD_PROJECT to your project ID.",
+        "sources": [
+          1,
+          2
+        ]
+      },
+      {
+        "kind": "fact",
+        "text": "Use Gemini API key is the route with no Cloud project. Get a key from Google AI Studio, set it as an environment variable, then run gemini and pick Use Gemini API key. Google's transition notice says paid Gemini API keys keep working with Gemini CLI.",
+        "sources": [
+          1,
+          4
+        ]
+      },
+      {
+        "kind": "prompt",
+        "title": "Set your API key (macOS or Linux)",
+        "text": "export GEMINI_API_KEY=\"YOUR_GEMINI_API_KEY\""
+      },
+      {
+        "kind": "fact",
+        "text": "Vertex AI is the route for Google Cloud teams. Set GOOGLE_CLOUD_PROJECT and GOOGLE_CLOUD_LOCATION, sign in with gcloud auth application-default login, or use a service account key or a Google Cloud API key, then pick Vertex AI when gemini starts.",
+        "sources": [
+          1
+        ]
+      },
+      {
+        "kind": "tip",
+        "text": "Treat the API key like a password. To avoid typing the export line every time, add it to your .bashrc or .zshrc, or put it in a .gemini/.env file. Gemini CLI loads the first .env file it finds, starting from the current folder."
+      },
+      {
+        "kind": "heading",
+        "text": "Your first tasks in Gemini CLI"
+      },
+      {
+        "kind": "fact",
+        "text": "Google's quickstart suggests plain English requests like these. When Gemini CLI wants to change a file or run a command, it asks first. Choose Allow once until you know how it behaves.",
+        "sources": [
+          2
+        ]
+      },
+      {
+        "kind": "prompt",
+        "title": "Prompt 1: Explain a project",
+        "text": "Clone the 'chalk' repository from https://github.com/chalk/chalk, read its key source files, and explain how it works."
+      },
+      {
+        "kind": "prompt",
+        "title": "Prompt 2: Clean up files",
+        "text": "Rename the photos in my \"photos\" directory based on their contents."
+      },
+      {
+        "kind": "prompt",
+        "title": "Prompt 3: Merge spreadsheets",
+        "text": "Combine the two .csv files into a single .csv file, with each year a different column."
+      },
+      {
+        "kind": "prompt",
+        "title": "Prompt 4: Write tests",
+        "text": "Write unit tests for Login.js."
+      },
+      {
+        "kind": "heading",
+        "text": "Commands worth learning on day one"
+      },
+      {
+        "kind": "fact",
+        "text": "Type @ followed by a path to hand Gemini a specific file or folder. Philipp Schmid's cheatsheet notes that it respects .gitignore and .geminiignore. Start a line with ! to run a shell command, or type ! on its own to switch into shell mode.",
+        "sources": [
+          7
+        ]
+      },
+      {
+        "kind": "fact",
+        "text": "Run /init to create a starting GEMINI.md file. That file holds your project's rules, such as which test command to use or which folders to leave alone. A global file at ~/.gemini/GEMINI.md applies to every project, and /memory show prints the combined context the model actually receives.",
+        "sources": [
+          3,
+          7
+        ]
+      },
+      {
+        "kind": "fact",
+        "text": "Use /stats model to see your token use and remaining quota, /chat save with a tag to keep a conversation, and /quit to leave. Outside a session, gemini -p followed by a prompt in quotes answers once and exits, and gemini -r latest picks up your most recent session.",
+        "sources": [
+          2,
+          3,
+          7
+        ]
+      },
+      {
+        "kind": "tip",
+        "text": "Write your coding rules once in GEMINI.md instead of repeating them in every prompt. Short, specific rules work better than a long essay."
+      },
+      {
+        "kind": "heading",
+        "text": "Where Gemini CLI falls short"
+      },
+      {
+        "kind": "fact",
+        "text": "Google's own docs say Gemini CLI has not been optimized for Gemini 4 Argon and point users of that model to Antigravity. In a test on the June shutdown day, The New Stack hit repeated HTTP 503 high demand errors with Gemini CLI, and automatic retries ate into the free quota until the tester turned on billing. In that test, non-interactive mode could not write files or run shell commands.",
+        "sources": [
+          0,
+          6
+        ]
+      },
+      {
+        "kind": "fact",
+        "text": "The approval mode setting decides how much it does without asking. The choices are default, auto_edit, yolo and plan. Yolo approves every action automatically, so keep it for throwaway folders.",
+        "sources": [
+          3
+        ]
+      },
+      {
+        "kind": "heading",
+        "text": "If you are a free or AI Pro user: Antigravity CLI"
+      },
+      {
+        "kind": "fact",
+        "text": "Google moved personal accounts to Antigravity CLI, a closed source Go program started with the agy command. Google says Agent Skills, Hooks, Subagents and Extensions carry over, and the official migration guide with an FAQ is at antigravity.google/docs/gcli-migration. The New Stack found that its Gemini extensions imported and ran as skills, while a simple single file custom command did not.",
+        "sources": [
+          4,
+          5,
+          6
+        ]
+      },
+      {
+        "kind": "analysis",
+        "text": "The short version: Gemini CLI is still a solid, open source agent if you reach it through work, Google Cloud or a paid API key. For a personal account, install Antigravity CLI instead, and keep Gemini CLI for the projects where your company pays."
+      }
+    ]
+  }
+}
