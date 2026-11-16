@@ -1,71 +1,5 @@
 [
   {
-    "run_at": "2026-11-09T08:56:46.611Z",
-    "summary": "Early Monday run (03:55 New York): no open links or requests; queued one story, ChatGPT users reporting sudden account deactivations with no warning (including $200 Pro plans), bringing Monday to 4 jobs. Image hosts and Wikimedia could not be opened from this run, so photos are ones that rendered fine in earlier posts.",
-    "considered": [
-      {
-        "story": "ChatGPT users report sudden account deactivations without warning, including $200 Pro plans",
-        "source": "https://www.tokenpost.com/news/technology/52070",
-        "decision": "queued",
-        "job_id": "2026-11-09-chatgpt-accounts-deactivated-no-warning",
-        "priority": 2,
-        "reason": "Everyone story about losing years of chats; confirmed by TokenPost, dev.ua, PANews and MarsBit. Started Nov 7, so timely false."
-      },
-      {
-        "story": "Google AI Plus loses Gemini Pro models on November 13",
-        "source": "https://9to5google.com/2026/10/14/gemini-ai-plus-loses-pro-november/",
-        "decision": "covered",
-        "reason": "Already covered as 2026-10-15-gemini-plus-loses-pro-models."
-      },
-      {
-        "story": "Sam Altman does not want his son to have an AI chatbot as a best friend",
-        "source": "https://www.yahoo.com/news/sam-altman-doesnt-want-son-151512091.html",
-        "decision": "skipped",
-        "reason": "Old remarks from 2025 resurfacing, not new news."
-      },
-      {
-        "story": "Former OpenAI engineer pleads not guilty to planting a recording device in an executive meeting room",
-        "source": "https://sfstandard.com/2026/10/13/openai-engineer-arrested-alleged-bugging-executive-conference-room/",
-        "decision": "covered",
-        "reason": "Story covered four times in October; the plea alone adds little."
-      },
-      {
-        "story": "Malware VOLTA uses Claude to rank victims (Cisco Talos)",
-        "source": "https://www.sofx.com/cisco-finds-malware-using-claude-ai-to-profile-victims-and-rank-stolen-accounts/",
-        "decision": "covered",
-        "reason": "Already covered as 2026-11-01-volta-malware-asks-claude-what-youre-worth."
-      },
-      {
-        "story": "Microsoft buyouts for 60,000 workers as staff question AI strategy",
-        "decision": "covered",
-        "reason": "Already covered as 2026-10-26-microsoft-60000-buyouts-ai."
-      },
-      {
-        "story": "Samsung Intelligent Eyewear (Android XR, Gemini) preorders start November 12",
-        "source": "https://www.androidheadlines.com/2026/11/samsung-intelligent-eyewear-pre-order-date.html",
-        "decision": "skipped",
-        "reason": "Better on preorder day (Nov 12) when price and details are out."
-      },
-      {
-        "story": "Data centers buy used turbines and jet engines for AI power (Reuters)",
-        "source": "https://www.tomshardware.com/tech-industry/data-centers-turn-to-ex-airliner-engines-as-ai-power-crunch-bites",
-        "decision": "skipped",
-        "reason": "Overlaps the Anthropic gas generator story posted Nov 8."
-      },
-      {
-        "story": "OpenAI Game Boy-like console teaser",
-        "decision": "skipped",
-        "reason": "Speculation only, no solid source found."
-      },
-      {
-        "story": "Nvidia board probes Jensen Huang affair and alleged spy",
-        "decision": "covered",
-        "reason": "Already covered as 2026-11-08-nvidia-board-probes-huang-alleged-spy."
-      }
-    ],
-    "requests": []
-  },
-  {
     "run_at": "2026-11-09T11:09:52.131Z",
     "summary": "Queued Mahir's Jensen Huang parody Reel and a priority 1 carousel on Trump defending Huang; skipped older or thin stories.",
     "considered": [
@@ -5638,6 +5572,59 @@
         "story": "Reel search: viral AI and robot clips of November 15 and 16",
         "decision": "skipped",
         "reason": "Search turned up only older clips; nothing new passed the Reels filter."
+      }
+    ],
+    "requests": []
+  },
+  {
+    "run_at": "2026-11-16T09:01:46.284Z",
+    "summary": "Monday 04:00 New York run: queued 1 site-only article (Grok Imagine team cut by about 60, sensitive so it waits for Mahir). No open links or requests; kept the second Instagram carousel slot free for a stronger daytime story; no Reel passed the filter; guides start from the 07:00 run.",
+    "considered": [
+      {
+        "story": "SpaceX's AI group cuts about 60 Grok Imagine staff, more than half the team (The Information via Investing.com, 24/7 Wall St.)",
+        "source": "https://au.investing.com/news/stock-market-news/musks-ai-group-lays-off-60-staffers-from-grok-video-unit-the-information-reports-4769746",
+        "decision": "queued",
+        "job_id": "2026-11-16-grok-imagine-team-cut-60",
+        "priority": 2,
+        "reason": "Layoff story, but reported November 13 and mostly about one product team, so site-only to keep today's last carousel slot for a fresher story."
+      },
+      {
+        "story": "Alpha School charges $75,000 for a two-hour AI school day and half its K-8 students missed the math target (Fortune, November 14)",
+        "source": "https://fortune.com/2026/11/14/alpha-school-ai-students-tuition-learning-goals/",
+        "decision": "skipped",
+        "reason": "Fortune recap of New York Times data first reported October 23; three weeks old, not worth a carousel slot."
+      },
+      {
+        "story": "Microsoft outage puts its AI-driven layoffs under scrutiny (Fast Company)",
+        "source": "https://www.fastcompany.com/91642223/microsofts-massive-outage-puts-its-ai-driven-layoffs-under-scrutiny",
+        "decision": "skipped",
+        "reason": "Opinion-style piece about a November 12 outage; the article itself says there is no evidence linking the cuts to it."
+      },
+      {
+        "story": "Google and Samsung AI glasses ship December 10 (Bloomberg via Spokesman-Review)",
+        "decision": "covered",
+        "reason": "Already queued as 2026-11-12-google-gemini-glasses-preorder-395."
+      },
+      {
+        "story": "Anthropic IPO six times oversubscribed, Nasdaq debut November 19",
+        "decision": "covered",
+        "reason": "Many Anthropic IPO jobs already; better to cover the listing itself."
+      },
+      {
+        "story": "Jensen Huang comeback coverage (Reuters, FT, Guardian feature)",
+        "decision": "covered",
+        "reason": "Already queued as 2026-11-15-jensen-huang-weighs-nvidia-return and earlier Nvidia jobs."
+      },
+      {
+        "story": "Hacker News 'Who is Hiring' near 12-year lows (hntrends.com)",
+        "source": "https://www.hntrends.com/2026/november.html",
+        "decision": "skipped",
+        "reason": "Still no independent second source."
+      },
+      {
+        "story": "Reel search: viral AI, robot and gadget clips of November 15 and 16",
+        "decision": "skipped",
+        "reason": "Only older clips or already covered stories turned up; nothing new passed the Reels filter."
       }
     ],
     "requests": []
