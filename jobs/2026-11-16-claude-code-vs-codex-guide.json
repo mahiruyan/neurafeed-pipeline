@@ -1,0 +1,115 @@
+{
+  "id": "2026-11-16-claude-code-vs-codex-guide",
+  "format": "utility",
+  "site_only": true,
+  "created_at": "2026-11-16T13:40:00Z",
+  "story_time": "2026-11-16T13:40:00Z",
+  "timely": false,
+  "sensitive": false,
+  "priority": 2,
+  "sources": [
+    { "name": "Claude Code Docs: Overview", "url": "https://code.claude.com/docs/en/overview.md" },
+    { "name": "OpenAI Codex README (GitHub)", "url": "https://cdn.jsdelivr.net/gh/openai/codex@main/README.md" },
+    { "name": "Morph: Claude Code vs Codex pricing and limits", "url": "https://www.morphllm.com/comparisons/claude-code-vs-codex" },
+    { "name": "ContextBolt: Claude Code vs Codex", "url": "https://contextbolt.com/blog/claude-code-vs-codex/" },
+    { "name": "SessionWatcher: Claude Code vs Codex", "url": "https://sessionwatcher.com/guides/claude-code-vs-codex" }
+  ],
+  "caption": "Claude Code and Codex are the two big AI coding agents, and both start at $20 a month.\nCodex comes with ChatGPT plans and its CLI is open source. Claude Code comes with paid Claude plans and has more ways to customize it.\nHere is which one fits which kind of work.\n\nWhich coding agent do you use, Claude Code or Codex?\n\nFollow @neurafeed.ai for daily AI news.\n\nSource: Anthropic and OpenAI docs, ContextBolt · Photo: 9to5Mac",
+  "threads_text": "Claude Code and Codex both start at $20 a month, but they are built differently: Codex leans on cloud tasks and an open source CLI, Claude Code on hooks, skills and subagents. Plenty of people now pay for both because the limits reset on separate clocks. Which one do you code with?",
+  "slides": [
+    {
+      "kind": "cover",
+      "headline": "Claude Code vs Codex: *which AI coding agent* to pick",
+      "image": {
+        "url": "https://9to5mac.com/wp-content/uploads/sites/6/2026/09/chatgpt-codex-gpt-6-astra-1.webp?w=1600",
+        "credit": "9to5Mac",
+        "fallback_urls": ["https://raw.githubusercontent.com/openai/codex/main/.github/codex-cli-splash.png"]
+      },
+      "pos": "center center",
+      "badges": [
+        { "url": "assets/logos/claude.png", "shape": "free" },
+        { "url": "assets/logos/openai.png", "fit": "contain" }
+      ],
+      "badge_border": "white"
+    },
+    {
+      "kind": "card",
+      "heading": "1. Same job, *different homes*",
+      "paras": [
+        "Claude Code runs in the terminal, VS Code, JetBrains, a desktop app and the browser.",
+        "Codex runs in the terminal, VS Code, Cursor, Windsurf, a desktop app and the cloud."
+      ],
+      "image": {
+        "url": "https://assets.claude.com/d4645137a0c197beee5313fedbf9417d035452fc.webp",
+        "credit": "Anthropic",
+        "fit": "contain"
+      }
+    },
+    {
+      "kind": "card",
+      "heading": "2. Both start at *$20*",
+      "paras": [
+        "Claude Code comes with Claude Pro, Max at $100 and Ultra at $200 a month. Free Claude does not include it.",
+        "Codex comes with ChatGPT Plus at $20, and Pro at $100, $200 or $500."
+      ],
+      "image": {
+        "url": "https://raw.githubusercontent.com/openai/codex/main/.github/codex-cli-splash.png",
+        "credit": "OpenAI",
+        "fit": "contain"
+      }
+    },
+    {
+      "kind": "card",
+      "heading": "3. Where each one *wins*",
+      "paras": [
+        "Codex: an open source CLI and cloud tasks on your GitHub repos while you are away.",
+        "Claude Code: hooks, skills, subagents and plan mode for long work in one project."
+      ],
+      "image": {
+        "url": "https://assets.claude.com/454390de9d9ccefb6082b7c2440c7547c1ec3964.webp",
+        "credit": "Anthropic",
+        "fit": "contain"
+      }
+    },
+    {
+      "kind": "cta",
+      "hook": "Follow for one AI tool explained every day."
+    }
+  ],
+  "site_article": {
+    "kind": "guide",
+    "headline": "Claude Code vs Codex: which AI coding agent to pick, plans and limits compared",
+    "dek": "Both are coding agents that read your project, edit files and run commands, and both start at $20 a month. Where they differ is how you customize them, how they run in the cloud and how the limits work.",
+    "summary": "Claude Code is Anthropic's coding agent for the terminal, IDEs, desktop and web, included in paid Claude plans from $20 a month. Codex is OpenAI's coding agent for the terminal, IDEs, desktop and cloud, included in ChatGPT plans such as Plus at $20 and Pro from $100.",
+    "seo_title": "Claude Code vs Codex: which AI coding agent to pick",
+    "seo_description": "Claude Code vs Codex compared: where each one runs, how to install it, what the Claude and ChatGPT plans cost, how limits work and which to pick.",
+    "answer_summary": "Pick Codex if you want an open source CLI, a cheaper ChatGPT plan to start, or cloud tasks that run on your GitHub repos while you are away. Pick Claude Code if you want deeper customization with hooks, skills and subagents for long work in one project. Many developers pay for both.",
+    "tags": ["Claude Code", "Codex", "Anthropic", "OpenAI", "AI coding", "Guides"],
+    "hero_alt": "The ChatGPT and Codex app icons side by side on a dark, starry background.",
+    "paragraphs": [
+      { "kind": "fact", "text": "Claude Code vs Codex is the question most developers ask once they move past chat and want an agent that does real work in a codebase. Both read your project, edit several files, run commands and work with git. Claude Code is Anthropic's agent and runs in the terminal, in VS Code, Cursor and JetBrains, in a desktop app and in the browser. Codex is OpenAI's agent and runs in the terminal, in VS Code, Cursor and Windsurf, in a desktop app and as a cloud agent.", "sources": [0, 1] },
+      { "kind": "analysis", "text": "This guide compares the two from their own documentation plus three independent breakdowns of prices and limits checked in October and November 2026. It does not crown one model as smarter. Prices and limits change often, so check the final numbers on each plan page before you pay." },
+      { "kind": "heading", "text": "How Claude Code works" },
+      { "kind": "fact", "text": "Anthropic describes Claude Code as an agent that reads your codebase, edits files, runs commands and plugs into your tools. It stages changes, writes commit messages, creates branches and opens pull requests. It reads a CLAUDE.md file in your project at the start of every session, and it can read an AGENTS.md file instead if your repository already has one for other agents.", "sources": [0] },
+      { "kind": "fact", "text": "The extras are where Claude Code goes deepest. Skills package repeatable workflows as commands, hooks run your own shell commands before or after its actions, subagents split a task across several agents at once, and MCP connects outside tools like Jira, Slack or Google Drive. It can also run on a schedule in the cloud, review pull requests in GitHub Actions and take tasks from Slack.", "sources": [0] },
+      { "kind": "step", "title": "1. Install Claude Code", "text": "On macOS, Linux or WSL, run the command below in a terminal. On Windows PowerShell, run irm https://claude.ai/install.ps1 | iex instead. Homebrew and WinGet work too. Open a new terminal and run claude --version to check it worked." },
+      { "kind": "prompt", "title": "Install and start Claude Code (official docs)", "text": "curl -fsSL https://claude.ai/install.sh | bash\n\ncd your-project\nclaude" },
+      { "kind": "step", "title": "2. Log in", "text": "Claude Code asks you to log in on first use. Most surfaces need a Claude subscription or an Anthropic Console account, and the desktop app needs a paid plan. If you prefer to skip the terminal, the browser version lives at claude.ai/code and also works in the Claude app for iOS and Android." },
+      { "kind": "heading", "text": "How Codex works" },
+      { "kind": "fact", "text": "OpenAI's README calls the Codex CLI a coding agent that runs locally on your computer. The recommended way in is Sign in with ChatGPT, which the README says is included with Plus, Pro, Business, Edu and Enterprise plans. An API key also works but needs extra setup. Besides the CLI, there is an IDE extension for VS Code, Cursor and Windsurf, a desktop app you can open with codex app, and Codex Web at chatgpt.com/codex, a cloud agent that works separately from the CLI.", "sources": [1] },
+      { "kind": "fact", "text": "The Codex CLI is open source under the Apache 2.0 license. ContextBolt notes that the Claude Code repository is public but not open source, since its license reserves all rights. ContextBolt also calls the Codex cloud flow the more direct of the two for handing off tasks on GitHub repositories that run while your computer is off.", "sources": [1, 3] },
+      { "kind": "step", "title": "3. Install Codex", "text": "On a Mac or Linux, paste the first command into a terminal, then type codex and choose Sign in with ChatGPT. On Windows, the README gives a PowerShell command. npm and Homebrew also work." },
+      { "kind": "prompt", "title": "Install commands from the Codex README", "text": "# Mac or Linux\ncurl -fsSL https://chatgpt.com/codex/install.sh | sh\n\n# npm\nnpm install -g @openai/codex\n\n# Homebrew\nbrew install --cask codex" },
+      { "kind": "heading", "text": "Claude Code vs Codex: what each one costs" },
+      { "kind": "fact", "text": "Claude Code is included in paid Claude plans. Morph and ContextBolt both list Pro at $20 a month, or $17 a month billed yearly, Max at $100 with five times the Pro usage, and Ultra at $200 with ten times the Pro weekly usage. Morph says Ultra drops the five hour limit for verified accounts and that the free Claude plan does not include Claude Code. Both say Claude Code now defaults to Claude Opus 5.5.", "sources": [2, 3] },
+      { "kind": "fact", "text": "Codex comes with ChatGPT plans. Morph and ContextBolt list Go at $8 a month, Plus at $20, Pro in three tiers at $100, $200 and $500, and Business at $25 per user a month or $20 billed yearly. ContextBolt reports that Free and Go users get only a smaller model in the desktop app, still rolling out, so Plus is the real starting point for most people.", "sources": [2, 3] },
+      { "kind": "heading", "text": "How the limits work" },
+      { "kind": "fact", "text": "Both companies meter usage in windows rather than by message. Claude has a session limit that resets every five hours plus a weekly limit across all models, according to SessionWatcher and Morph. On the Codex side, Plus has a five hour limit, while Pro currently has none, though OpenAI says weekly limits may still apply. OpenAI publishes estimates of how many messages fit in a window but says they depend on the model and the size of the task.", "sources": [2, 4] },
+      { "kind": "tip", "text": "SessionWatcher's advice for heavy users is to run both, because the two limits reset on separate clocks. Two $20 plans can stretch further than one plan at $100." },
+      { "kind": "heading", "text": "Which one to pick" },
+      { "kind": "analysis", "text": "Pick Codex if you already pay for ChatGPT Plus, want an open source CLI you can inspect, or like the idea of handing a task to the cloud and coming back to a finished pull request. The IDE extension also covers Windsurf, which the Claude Code overview does not list." },
+      { "kind": "analysis", "text": "Pick Claude Code if you want to shape the agent around your project with CLAUDE.md, hooks, skills and subagents, or if you work in JetBrains IDEs. It also suits long, multi step work in one repository, which is the use ContextBolt recommends it for." },
+      { "kind": "analysis", "text": "What neither one does well: both will change more than you asked if the request is vague. Ask for a plan first, keep each task small, read every diff before you accept it, and keep the project in git so a bad edit is one command away from undone." }
+    ]
+  }
+}
