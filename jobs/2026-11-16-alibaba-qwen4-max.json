@@ -1,0 +1,172 @@
+{
+  "id": "2026-11-16-alibaba-qwen4-max",
+  "created_at": "2026-11-16T05:10:00Z",
+  "story_time": "2026-11-16T02:01:00Z",
+  "timely": false,
+  "sensitive": false,
+  "priority": 2,
+  "site_only": true,
+  "format": "carousel",
+  "site_category": "models",
+  "ab": {
+    "headline": "short",
+    "photo": "story"
+  },
+  "sources": [
+    {
+      "name": "ShiftDelete.Net",
+      "url": "https://shiftdelete.net/en/qwen4-max-launch"
+    },
+    {
+      "name": "Lapaas Voice",
+      "url": "https://lapaasvoice.com/alibaba-launches-qwen4-max-ai-model-with-strict-cybersecurity-guardrails"
+    },
+    {
+      "name": "RuntimeWire",
+      "url": "https://runtimewire.com/article/alibaba-qwen4-max-launch-1m-context-pricing"
+    }
+  ],
+  "caption": "Alibaba launched Qwen4-Max, its new flagship AI model, with a 1 million token context window.\nAlibaba says the average cost of a task fell 62 percent, from $4.43 to $1.67, on its own test.\nThis time the flagship is not open weights.\n\nWould you switch models to cut your AI bill in half?\n\nFollow @neurafeed.ai for daily AI news.\n\nSource: ShiftDelete.Net",
+  "threads_text": "Alibaba just launched Qwen4-Max and says it cuts the average cost of a task by 62 percent, from $4.43 to $1.67. The catch: the flagship is not open weights this time. Would you switch models to halve your AI bill?",
+  "slides": [
+    {
+      "kind": "cover",
+      "headline": "Alibaba's new AI cuts task costs by *62 percent*",
+      "image": {
+        "url": "https://runtimewire.com/api/storage/uploads/inline-images/alibaba-qwen4-max-launch-1m-context-pricing-5559c948.png?w=1600&fmt=webp",
+        "credit": "Alibaba / Qwen",
+        "fallback_urls": [
+          "https://lapaasvoice.com/wp-content/uploads/2026/11/hdgeuir-1200x675.jpg"
+        ]
+      },
+      "pos": "center center"
+    },
+    {
+      "kind": "card",
+      "heading": "From $4.43 to *$1.67*",
+      "paras": [
+        "On Alibaba's own Work360 test, the average task cost dropped from $4.43 to $1.67 compared with Qwen3.8-Max.",
+        "API prices: $1.50 per million input tokens and $4.50 per million output tokens."
+      ],
+      "image": {
+        "url": "https://shiftdelete.net/static/img/content/26-11/16/cover-1920x1080.jpg",
+        "credit": "ShiftDelete.Net",
+        "fit": "contain"
+      }
+    },
+    {
+      "kind": "card",
+      "heading": "Big, but *not first*",
+      "paras": [
+        "It has a 2.4 trillion parameter backbone and a 1 million token context window.",
+        "On Terminal-Bench 4.0 it scored 48.5, behind Kimi K3.1 at 67.2 and Opus 5.5 at 59.6, by Alibaba's own numbers."
+      ],
+      "image": {
+        "url": "https://lapaasvoice.com/wp-content/uploads/2026/11/hdgeuir-1200x675.jpg",
+        "credit": "Lapaas Voice"
+      }
+    },
+    {
+      "kind": "cta",
+      "hook": "Follow to see whether cheaper Chinese models change what you pay for AI."
+    }
+  ],
+  "site_article": {
+    "headline": "Alibaba launches Qwen4-Max and says it cuts average task cost by 62 percent",
+    "dek": "The new flagship has a 1 million token context window and lower prices than Qwen3.8-Max, but unlike earlier Qwen models it is not open weights.",
+    "summary": "Alibaba released Qwen4-Max on November 16, 2026 through its cloud API and apps. The company says the average cost of a task on its Work360 test fell from $4.43 to $1.67.",
+    "seo_title": "Qwen4-Max: Alibaba's new flagship cuts task cost 62 percent",
+    "seo_description": "Alibaba launched Qwen4-Max with a 1M token context window, $1.50 input pricing and a 62 percent lower cost per task, by its own figures. No open weights.",
+    "answer_summary": "Qwen4-Max is Alibaba's new flagship AI model, released November 16, 2026. It has a 1 million token context window, costs $1.50 per million input tokens and, by Alibaba's own test, cuts the average cost of a task by about 62 percent.",
+    "tags": [
+      "Alibaba",
+      "Qwen",
+      "Qwen4-Max",
+      "AI models",
+      "China AI"
+    ],
+    "hero_alt": "A Qwen logo and the words Qwen 4 Is Now Available beside a sketch of a tiered pavilion.",
+    "paragraphs": [
+      {
+        "kind": "fact",
+        "text": "Alibaba released Qwen4-Max, the new flagship of its Qwen model family, on November 16, 2026, making it available through its QwenCloud API, Qwen Studio, QwenWork and the Qoder coding tool, according to ShiftDelete.Net. RuntimeWire also reported the launch and described the model as Alibaba's new flagship.",
+        "sources": [
+          0,
+          2
+        ]
+      },
+      {
+        "kind": "fact",
+        "text": "A preview had been offered only through Alibaba's Token Plan since November 11. With the full launch, pay as you go access to the API is live in regions including Singapore, Hong Kong, Tokyo, Beijing, Virginia in the United States and Frankfurt, ShiftDelete.Net reported.",
+        "sources": [
+          0
+        ]
+      },
+      {
+        "kind": "heading",
+        "text": "Size, context and pricing"
+      },
+      {
+        "kind": "fact",
+        "text": "Qwen4-Max is built on a 2.4 trillion parameter backbone, with 71 billion parameters active for each token, plus 328 billion additional embedding parameters, according to ShiftDelete.Net. It accepts text, images and video and supports a context window of 1 million tokens.",
+        "sources": [
+          0
+        ]
+      },
+      {
+        "kind": "fact",
+        "text": "List pricing on Alibaba's international service is $1.50 per million input tokens and $4.50 per million output tokens, both 25 percent lower than Qwen3.8-Max, ShiftDelete.Net reported. Lapaas Voice gave the same figures and noted cached input at $0.075 per million tokens.",
+        "sources": [
+          0,
+          1
+        ]
+      },
+      {
+        "kind": "fact",
+        "text": "The headline claim is cost per task. On Work360, an internal test from Alibaba, the average cost of a task fell from $4.43 with Qwen3.8-Max to $1.67 with Qwen4-Max, a drop of about 62 percent, according to RuntimeWire and ShiftDelete.Net. Alibaba says the new model also uses up to about half as many tokens on some tasks.",
+        "sources": [
+          0,
+          1,
+          2
+        ]
+      },
+      {
+        "kind": "heading",
+        "text": "How it compares"
+      },
+      {
+        "kind": "fact",
+        "text": "All benchmark numbers come from Alibaba itself. Qwen4-Max scored 52.69 on Work360, up from 47.74 for Qwen3.8-Max, and 75.7 on DeepSWE v1.1, up from 69.3. On Terminal-Bench 4.0 it scored 48.5, behind Kimi K3.1 at 67.2 and Anthropic's Opus 5.5 at 59.6, ShiftDelete.Net reported.",
+        "sources": [
+          0
+        ]
+      },
+      {
+        "kind": "fact",
+        "text": "Alibaba says it filtered training data to remove abilities tied to offensive cyber operations while keeping defensive security knowledge, and added datasets and post-training work to reduce chemical, biological, radiological and nuclear risks, according to Lapaas Voice. The outlet stressed that the performance figures come from Alibaba's own evaluations and have not been independently verified.",
+        "sources": [
+          1
+        ]
+      },
+      {
+        "kind": "fact",
+        "text": "Unlike several earlier Qwen releases, Qwen4-Max is not available as open weights, and no release has appeared on Hugging Face or GitHub. Alibaba says smaller Qwen4 models will be released as open weights but has not given sizes or a date, ShiftDelete.Net reported.",
+        "sources": [
+          0
+        ]
+      },
+      {
+        "kind": "analysis",
+        "text": "The pitch is aimed at companies running AI agents, where long tasks burn through tokens and the bill matters more than a few benchmark points. Cutting the cost of a typical task by more than half puts pressure on US labs on price, even where Qwen4-Max still trails them on some coding tests."
+      },
+      {
+        "kind": "analysis",
+        "text": "Keeping the flagship closed is a shift for a family known for open models, and it narrows the gap between Alibaba's approach and that of OpenAI and Anthropic."
+      },
+      {
+        "kind": "why_it_matters",
+        "text": "Watch for independent benchmark results on Qwen4-Max and for the release date and sizes of the open weight Qwen4 models Alibaba has promised."
+      }
+    ]
+  }
+}

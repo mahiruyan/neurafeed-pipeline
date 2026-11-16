@@ -5636,5 +5636,69 @@
       }
     ],
     "requests": []
+  },
+  {
+    "run_at": "2026-11-16T05:03:46.158Z",
+    "summary": "Monday 00:00 New York run: queued 2 site-only articles (Apple and OpenEvidence health AI study, Alibaba Qwen4-Max launch). No open links or requests; posting windows reopen at 07:00 and guides for November 16 start from the 07:00 run; no carousel-worthy or Reel story overnight.",
+    "considered": [
+      {
+        "story": "Apple and OpenEvidence launch a Health AI study app seeking up to 200,000 US iPhone users",
+        "source": "https://www.statnews.com/2026/11/15/apple-openevidence-launch-health-chat-app-experiment-ai/",
+        "decision": "queued",
+        "job_id": "2026-11-16-apple-health-ai-study-200000",
+        "priority": 2,
+        "reason": "Apple product news, not a money, jobs, scandal or person story, so site-only; marked sensitive because it is health."
+      },
+      {
+        "story": "Alibaba launches Qwen4-Max, says task cost falls 62 percent",
+        "source": "https://shiftdelete.net/en/qwen4-max-launch",
+        "decision": "queued",
+        "job_id": "2026-11-16-alibaba-qwen4-max",
+        "priority": 2,
+        "reason": "Model and pricing news mostly insiders follow, so site-only."
+      },
+      {
+        "story": "Alibaba unveils Qwen3.8-Max (Crypto Briefing in RSS)",
+        "decision": "skipped",
+        "reason": "Qwen3.8-Max launched August 3, 2026; the RSS item is stale and the new model is Qwen4-Max."
+      },
+      {
+        "story": "OpenAI disbands robotics team after big pay package (36Kr)",
+        "decision": "covered",
+        "reason": "Already covered as 2026-11-13-openai-disbands-robotics-team."
+      },
+      {
+        "story": "ChatGPT Wallet lets dots agents shop with your card",
+        "decision": "covered",
+        "reason": "Already covered as 2026-11-13-chatgpt-wallet-agents-spend-money."
+      },
+      {
+        "story": "Gemini app rolls out on Apple CarPlay",
+        "decision": "covered",
+        "reason": "Already covered as 2026-11-12-gemini-app-apple-carplay."
+      },
+      {
+        "story": "Jensen Huang may return to Nvidia (Reuters, FT, Guardian feature)",
+        "decision": "covered",
+        "reason": "Already queued as 2026-11-15-jensen-huang-weighs-nvidia-return and 2026-11-15-musk-petition-reinstate-jensen-huang."
+      },
+      {
+        "story": "Hacker News 'Who is Hiring' postings near 12-year lows (hntrends.com)",
+        "source": "https://www.hntrends.com/2026/november.html",
+        "decision": "skipped",
+        "reason": "Could not open the page this run and no second source; worth checking in a daytime run as a jobs story."
+      },
+      {
+        "story": "Reports of AI-generated child abuse material up 8,400 percent in two years (The Guardian)",
+        "decision": "skipped",
+        "reason": "Not suitable for an Instagram carousel and not a fit for the site's AI news categories this run."
+      },
+      {
+        "story": "Kuo: OpenAI and Anthropic to buy or lease 26 million TPUs in 2028 and 2029 (FourWeekMBA)",
+        "decision": "skipped",
+        "reason": "Analyst estimate from a single small outlet, insider compute news."
+      }
+    ],
+    "requests": []
   }
 ]
