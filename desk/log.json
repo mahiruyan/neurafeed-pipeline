@@ -1,134 +1,5 @@
 [
   {
-    "run_at": "2026-11-09T17:09:08.450Z",
-    "summary": "Queued Anthropic's Korean customer data report (P1, sensitive) and today's site-only ChatGPT Images guide; no open links or requests, and today's desk news count is now 8, the daily cap.",
-    "considered": [
-      {
-        "story": "Anthropic reports exposure of Claude account data for about 100 Korean business customers; Korea's privacy regulator confirms review",
-        "source": "https://khan.co.kr/article/202611091956001",
-        "decision": "queued",
-        "job_id": "2026-11-09-anthropic-korea-customer-data-exposed",
-        "priority": 1,
-        "reason": "Skipped this morning for thin sourcing; now confirmed by Hankook Ilbo and Kyunghyang Shinmun. The October 26 Cathedral carousel expired unposted, so this is new for followers. Marked sensitive (unauthorized access, disputed)."
-      },
-      {
-        "story": "Daily guide: ChatGPT Images prompts and editing (guides/plan.md next line)",
-        "source": "https://openai.com/index/introducing-chatgpt-images-2-5/",
-        "decision": "queued",
-        "job_id": "2026-11-09-chatgpt-images-prompts-editing-guide",
-        "priority": 2,
-        "reason": "Site-only utility job with the website guide, nothing posts to Instagram."
-      },
-      {
-        "story": "Nvidia and Jensen Huang spy probe follow-ups (Rubio memo, China denial, Trump backing)",
-        "decision": "covered",
-        "reason": "Already covered by the board probe and Trump jobs plus six of Mahir's Reels."
-      },
-      {
-        "story": "Trump tells 60 Minutes he does not mind AI guardrails",
-        "decision": "covered",
-        "reason": "Same interview already used in 2026-11-09-trump-doj-ai-boss-jail."
-      },
-      {
-        "story": "DeepSeek's Harness agent app reaches 1.54 million daily users (Bloomberg)",
-        "source": "https://www.bloomberg.com/news/articles/2026-11-08/deepseek-s-ai-agent-platform-hits-1-54-million-daily-users",
-        "decision": "skipped",
-        "reason": "Daily cap reached, and a usage number for a Chinese app has less pull for US readers than the Anthropic story."
-      },
-      {
-        "story": "Microsoft patent for live AI editing of a speaker's words and lip movements (TechSpot)",
-        "source": "https://www.techspot.com/news/114477-microsoft-patent-filing-describes-ai-rewrites-what-people.html",
-        "decision": "skipped",
-        "reason": "Strong weird-AI angle but only a patent filing, and today has hit the 8 post cap; worth a look tomorrow if still fresh."
-      },
-      {
-        "story": "Alibaba test: top coding agent fully finished only 26.4% of real tasks (The Decoder)",
-        "source": "https://the-decoder.com/ai-coding-agents-still-need-human-cleanup-on-nearly-three-out-of-four-tasks-in-a-real-world-test/",
-        "decision": "skipped",
-        "reason": "Daily cap reached; niche benchmark story."
-      },
-      {
-        "story": "Alex Stamos says AI pushes cybersecurity into a dark age (The Verge podcast)",
-        "source": "https://www.theverge.com/podcast/1029038/ai-cybersecurity-hackers-data-breach-dark-age-alex-stamos",
-        "decision": "skipped",
-        "reason": "Opinion from a podcast, no new event, and the cap is reached."
-      },
-      {
-        "story": "SHL survey: nearly 1 in 5 US workers replaced by AI were asked back (Fortune)",
-        "source": "https://fortune.com/2026/11/09/ai-rebounding-20-us-workers-replaced-higher-pay-job-security/",
-        "decision": "skipped",
-        "reason": "Survey dates from October 29, already skipped this morning for age."
-      },
-      {
-        "story": "Sequoia partners blindsided by Roelof Botha's SpaceX board seat (TechCrunch)",
-        "source": "https://techcrunch.com/2026/11/08/sequoia-partners-reportedly-blindsided-when-roelof-botha-joined-spacex-board/",
-        "decision": "skipped",
-        "reason": "Venture capital insider story with little AI angle for our readers."
-      }
-    ],
-    "requests": []
-  },
-  {
-    "run_at": "2026-11-09T18:55:07.122Z",
-    "summary": "Nothing queued: no open links or requests, no new priority 1 story in the last 12 hours, and today already has 9 desk jobs (8 for Instagram plus the site-only guide), the daily limit.",
-    "considered": [
-      {
-        "story": "Anthropic explains Claude's 'dreaming' memory process (Pokemon Red test, self-correcting memory files)",
-        "source": "https://interestingengineering.com/ai-robotics/anthropic-claude-dreaming-memory-research",
-        "decision": "skipped",
-        "reason": "Good 'strange AI behavior' story and not covered yet, but it dates from about November 6 to 7 and today is at the 8 job limit; a candidate for tomorrow's first run if nothing bigger lands."
-      },
-      {
-        "story": "Claude Projects adds project coordination beta for Pro, Max and Ultra",
-        "source": "https://tokenpost.com/news/technology/51871",
-        "decision": "skipped",
-        "reason": "Beta that started rolling out in September, mostly for developers, and today is at the job limit."
-      },
-      {
-        "story": "China calls the Jensen Huang spy plot claim unsubstantiated; Congress plans a November 18 briefing",
-        "source": "https://abcnews.com/Technology/wireStory/china-dismisses-spy-plot-claim-involving-nvidia-ceo-137967355",
-        "decision": "covered",
-        "reason": "The Huang story already has the board probe job, today's Trump job and six of Mahir's Reels."
-      },
-      {
-        "story": "Trump says AI risks can be managed and he doesn't mind guardrails (60 Minutes)",
-        "source": "https://www.reuters.com/world/trump-says-ai-risks-can-be-managed-signals-openness-guardrails-2026-11-09/",
-        "decision": "covered",
-        "reason": "Same interview already used in 2026-11-09-trump-doj-ai-boss-jail."
-      },
-      {
-        "story": "Anthropic's $3.4 billion gas generator deal",
-        "decision": "covered",
-        "reason": "Already queued as 2026-11-08-anthropic-buys-3-4-billion-gas-generators."
-      },
-      {
-        "story": "Alibaba test: best coding agent fully finished only 26.4% of real tasks",
-        "source": "https://the-decoder.com/ai-coding-agents-still-need-human-cleanup-on-nearly-three-out-of-four-tasks-in-a-real-world-test/",
-        "decision": "skipped",
-        "reason": "Interesting but niche benchmark story, and today is at the job limit."
-      },
-      {
-        "story": "DeepSeek's Harness agent app reaches 1.54 million daily users (Bloomberg)",
-        "source": "https://www.bloomberg.com/news/articles/2026-11-08/deepseek-s-ai-agent-platform-hits-1-54-million-daily-users",
-        "decision": "skipped",
-        "reason": "Limited US consumer pull and today is at the job limit."
-      },
-      {
-        "story": "Microsoft patent describes AI that rewrites a livestream speaker's words and lip movements",
-        "source": "https://www.techspot.com/news/114477-microsoft-patent-filing-describes-ai-rewrites-what-people.html",
-        "decision": "skipped",
-        "reason": "Only a patent filing, not a product; today is at the job limit."
-      },
-      {
-        "story": "SHL survey: nearly 1 in 5 AI-displaced US workers were asked back",
-        "source": "https://fortune.com/2026/11/09/ai-rebounding-20-us-workers-replaced-higher-pay-job-security/",
-        "decision": "skipped",
-        "reason": "Already skipped this morning (survey from October 29), unchanged."
-      }
-    ],
-    "requests": []
-  },
-  {
     "run_at": "2026-11-09T20:23:18.616Z",
     "summary": "Queued two priority 1 carousels (Apple's $49.99 AI usage packs, Meta's Muse Ember) and today's second site-only guide (ElevenLabs voice cloning); Mahir's Claude Fable 5.2 link was left to the instant link task.",
     "considered": [
@@ -5666,6 +5537,66 @@
         "story": "Reel search: viral AI, robot and gadget clips of November 15 and 16",
         "decision": "skipped",
         "reason": "Found no new clip with a usable X or company video URL that passes the Which Reels travel filter; Reddit leads are still empty."
+      }
+    ],
+    "requests": []
+  },
+  {
+    "run_at": "2026-11-16T19:02:08.329Z",
+    "summary": "Monday 14:00 New York run: queued 1 site-only guide (How to use Napkin AI). No open links or requests; both Instagram carousel slots and all 4 site-only news slots for today were already used; no Reel video with a usable X or company URL passed the filter.",
+    "considered": [
+      {
+        "story": "Daily guide: How to use Napkin AI (guides/plan.md tool library, next uncovered line after Grok Imagine)",
+        "source": "https://www.napkin.ai/pricing",
+        "decision": "queued",
+        "job_id": "2026-11-16-how-to-use-napkin-ai-guide",
+        "priority": 2
+      },
+      {
+        "story": "Guide plan line: How to use Grok Imagine",
+        "decision": "skipped",
+        "reason": "Still no official xAI help page found, so took the next line."
+      },
+      {
+        "story": "Physicist Nathaniel Craig says GPT-6 Astra led the proof of a candidate lattice definition of the Standard Model (OpenAI science blog, November 15)",
+        "source": "https://finance.biggo.com/news/d88769bf-d796-4e6c-bd00-35c3e58bc524",
+        "decision": "skipped",
+        "reason": "A physics result mostly insiders follow, with experts not yet settled on it; it would be a site-only article, and today's 4 site-only news slots are full. Worth a site article tomorrow if mainstream outlets pick it up."
+      },
+      {
+        "story": "Runway releases open weights for Praxis-1 robot control model",
+        "source": "https://runway.com/news/company-news/praxis-1-is-now-available",
+        "decision": "skipped",
+        "reason": "Developer news with vendor-only benchmarks; no Instagram fit and the site-only cap is reached."
+      },
+      {
+        "story": "Anthropic launches Claude for Manufacturing plugin",
+        "source": "https://claude.com/resources/articles/claude-for-manufacturing",
+        "decision": "skipped",
+        "reason": "Enterprise plugin that mostly insiders follow, and the site-only cap is reached."
+      },
+      {
+        "story": "EngineAI robot keeps fighting after its head is kicked off (Reel candidate)",
+        "source": "https://sundayguardianlive.com/trending/watch-video-china-robot-fight-goes-viral-humanoid-machine-keeps-fighting-after-opponent-kicks-its-head-off-317778/",
+        "decision": "skipped",
+        "reason": "Footage is from a July event and went viral on November 4; too old to travel again as a Reel."
+      },
+      {
+        "story": "Xiaomi humanoids work an 8-hour EV factory shift (Reel candidate)",
+        "source": "https://electrek.co/2026/11/04/xiaomi-humanoid-robot-8-hour-shift-ev-factory/",
+        "decision": "skipped",
+        "reason": "Posted November 3 and I could not find the X post URL to download the clip."
+      },
+      {
+        "story": "South Korea to inspect all exam takers' glasses after the AI cheating scandal (CNN)",
+        "source": "https://www.cnn.com/2026/11/16/asia/south-korea-ai-glasses-cheating-intl-hnk",
+        "decision": "covered",
+        "reason": "The Korea AI glasses exam story already has a Reel and a site article from November 15; both carousel slots are used today."
+      },
+      {
+        "story": "Anthropic IPO pricing and Nasdaq debut later this week",
+        "decision": "covered",
+        "reason": "Already covered as 2026-11-12-anthropic-ipo-retail-20-percent; the pricing or first trade deserves its own post when it happens."
       }
     ],
     "requests": []
