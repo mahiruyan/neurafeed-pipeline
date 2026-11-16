@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-16T09:04:37.143Z",
+  "updated_at": "2026-11-16T11:05:30.803Z",
   "jobs": [
     {
       "id": "2026-11-11-apple-harbor-local-ai-mac-app",
@@ -21,32 +21,6 @@
         3373,
         3374
       ]
-    },
-    {
-      "id": "2026-11-12-absolute-cinematic-reality-reel",
-      "status": "render_failed",
-      "posted_at": null,
-      "post_at": null,
-      "priority": 1,
-      "format": "reel",
-      "headline": "Absolute Cinematic reality we live right now!",
-      "from_link": true,
-      "link_id": "link-2026-11-12-3520",
-      "error": "Command failed: yt-dlp --no-playlist --no-progress --restrict-filenames -f bv*[height<=1920][vcodec^=avc1]+ba[acodec^=mp4a]/bv*[height<=1920]+ba/b[height<=1920]/b --merge-output-format mp4 -o /home/runner/work/neurafeed-pipeline/neurafeed-pipeline/out/2026-11-12-absolute-cinematic-reality-reel/src/source.%(ext)s https://www.reddit.com/r/ChatGPT/s/DYCuwjv7np\nERROR: [generic] DYCuwjv7np: Unable to download webpage: HTTP Error 403: Blocked (caused by <HTTPError 403: Blocked>)\n",
-      "tg": []
-    },
-    {
-      "id": "2026-11-12-another-ai-masterpiece-reel",
-      "status": "render_failed",
-      "posted_at": null,
-      "post_at": null,
-      "priority": 1,
-      "format": "reel",
-      "headline": "Another AI masterpiece just dropped",
-      "from_link": true,
-      "link_id": "link-2026-11-12-3542",
-      "error": "Command failed: yt-dlp --no-playlist --no-progress --restrict-filenames -f bv*[height<=1920][vcodec^=avc1]+ba[acodec^=mp4a]/bv*[height<=1920]+ba/b[height<=1920]/b --merge-output-format mp4 -o /home/runner/work/neurafeed-pipeline/neurafeed-pipeline/out/2026-11-12-another-ai-masterpiece-reel/src/source.%(ext)s https://www.threads.com/share/BAjsJNjbiV\nWARNING: [generic] Falling back on generic information extractor\nERROR: Unsupported URL: https://www.threads.com/@chatgptricks/post/Dfot-0cjnKK?xmt=AQG0Md5txFPW-28ldr8qlUyxfVjCA4023UXwfMQ20a8PTa9PsBt0knFA9xbSjJhxdAYAezEE&slof=1\n",
-      "tg": []
     },
     {
       "id": "2026-11-12-anthropic-ipo-retail-20-percent",
@@ -406,120 +380,6 @@
       ]
     },
     {
-      "id": "2026-11-12-indian-newspaper-huang-front-page-single",
-      "status": "canceled",
-      "posted_at": null,
-      "post_at": null,
-      "priority": 1,
-      "format": "single",
-      "headline": "An Indian newspaper front-page story today",
-      "from_link": true,
-      "link_id": "link-2026-11-12-3507",
-      "error": null,
-      "tg": [
-        3517,
-        3518,
-        3518
-      ]
-    },
-    {
-      "id": "2026-11-12-indian-newspaper-huang-front-page-single-v2",
-      "status": "invalid",
-      "posted_at": null,
-      "post_at": null,
-      "priority": 1,
-      "format": "single",
-      "headline": "An Indian newspaper front-page story today",
-      "from_link": true,
-      "link_id": "link-2026-11-12-3507",
-      "error": null,
-      "tg": []
-    },
-    {
-      "id": "2026-11-12-indian-newspaper-huang-front-page-single-v3",
-      "status": "canceled",
-      "posted_at": null,
-      "post_at": null,
-      "priority": 1,
-      "format": "single",
-      "headline": "An Indian newspaper front-page story today",
-      "from_link": true,
-      "link_id": "link-2026-11-12-3507",
-      "error": null,
-      "tg": [
-        3522,
-        3523,
-        3524,
-        3524
-      ]
-    },
-    {
-      "id": "2026-11-12-indian-newspaper-huang-front-page-single-v4",
-      "status": "posted",
-      "posted_at": "2026-11-12T10:00:06.488Z",
-      "post_at": null,
-      "priority": 1,
-      "format": "single",
-      "headline": "A newspaper put Jensen Huang's scandal on its front page like this",
-      "from_link": true,
-      "link_id": "link-2026-11-12-3507",
-      "error": null,
-      "tg": [
-        3526,
-        3527,
-        3528,
-        3528
-      ]
-    },
-    {
-      "id": "2026-11-12-its-actually-happening-huang-single",
-      "status": "canceled",
-      "posted_at": null,
-      "post_at": null,
-      "priority": 1,
-      "format": "single",
-      "headline": "It's actually happening",
-      "from_link": true,
-      "link_id": "link-2026-11-12-3505",
-      "error": null,
-      "tg": [
-        3509,
-        3510,
-        3510
-      ]
-    },
-    {
-      "id": "2026-11-12-its-actually-happening-huang-single-v2",
-      "status": "posted",
-      "posted_at": "2026-11-12T09:37:00.638Z",
-      "post_at": null,
-      "priority": 1,
-      "format": "single",
-      "headline": "It's actually happening",
-      "from_link": true,
-      "link_id": "link-2026-11-12-3505",
-      "error": null,
-      "tg": [
-        3512,
-        3513,
-        3514,
-        3514
-      ]
-    },
-    {
-      "id": "2026-11-12-its-actually-happening-huang-single-v3",
-      "status": "skipped",
-      "posted_at": null,
-      "post_at": null,
-      "priority": 1,
-      "format": "single",
-      "headline": "It's actually happening",
-      "from_link": true,
-      "link_id": "link-2026-11-12-3505",
-      "error": null,
-      "tg": []
-    },
-    {
       "id": "2026-11-12-jensen-huang-matrix-parody-reel",
       "status": "render_failed",
       "posted_at": null,
@@ -639,28 +499,6 @@
         3683,
         3684,
         3684
-      ]
-    },
-    {
-      "id": "2026-11-12-nvidia-board-preparing-to-oust-jensen-huang",
-      "status": "canceled",
-      "posted_at": null,
-      "post_at": null,
-      "priority": 1,
-      "format": "carousel",
-      "headline": "Nvidia is reportedly preparing to fire Jensen Huang",
-      "from_link": false,
-      "link_id": null,
-      "error": null,
-      "tg": [
-        3454,
-        3455,
-        3456,
-        3457,
-        3458,
-        3459,
-        3460,
-        3460
       ]
     },
     {
@@ -1883,6 +1721,28 @@
         4128,
         4129,
         4129
+      ]
+    },
+    {
+      "id": "2026-11-16-trump-ai-national-champions",
+      "status": "pending",
+      "posted_at": null,
+      "post_at": null,
+      "priority": 1,
+      "format": "carousel",
+      "headline": "Trump is about to crown America's AI national champions",
+      "from_link": false,
+      "link_id": null,
+      "error": null,
+      "tg": [
+        4130,
+        4131,
+        4132,
+        4133,
+        4134,
+        4135,
+        4136,
+        4136
       ]
     }
   ]
