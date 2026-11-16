@@ -1,130 +1,5 @@
 [
   {
-    "run_at": "2026-11-08T23:02:41.832Z",
-    "summary": "Sunday evening run: made Mahir's Claude Code meme link into a Reel, queued the Nvidia board probe of Jensen Huang (priority 1, sensitive) and the weekly roundup.",
-    "considered": [
-      {
-        "story": "Mahir's link: 'Software Engineers used to move before Claude Code existed' meme",
-        "source": "https://www.instagram.com/reel/DfbRiLhBoFU/",
-        "decision": "queued",
-        "job_id": "2026-11-08-engineers-before-claude-code-reel",
-        "priority": 1,
-        "reason": "Mahir's link, Reel with his title as the hook and our own caption. The clip carries the @acknowledge.ai branded header card (a movie clip meme), credited to @acknowledge.ai."
-      },
-      {
-        "story": "Nvidia's board opens an inquiry after Jensen Huang admits an affair with a woman US officials believe is a Chinese spy",
-        "source": "https://sfstandard.com/2026/11/08/nvidia-jensen-huang-affair-board-investigation-chinese-spy/",
-        "decision": "queued",
-        "job_id": "2026-11-08-nvidia-board-probes-huang-alleged-spy",
-        "priority": 1,
-        "reason": "Biggest AI story of the day, new development after the October 29 coverage. Sensitive, so it waits for Mahir's approval; the day is at the cap, so it posts tonight only if a slot is left."
-      },
-      {
-        "story": "Weekly roundup: What happened in AI this week",
-        "decision": "queued",
-        "job_id": "2026-11-08-week-in-ai",
-        "priority": 1,
-        "reason": "Sunday roundup. Built only from stories queued more than 72 hours ago (plus a separate Reuters copy for the OpenAI raise) so the pipeline does not drop it for sharing a source link, as happened to last week's roundup."
-      },
-      {
-        "story": "Goldman Sachs pulls Claude Code from its bankers and traders",
-        "source": "https://www.thestateofai.com/news/goldman-sachs-claude-code-traders-bankers",
-        "decision": "skipped",
-        "reason": "Good money story, but the day is over the 8 post cap; worth a look tomorrow with a second source."
-      },
-      {
-        "story": "Drugmaker CEOs doubt Silicon Valley's promise that AI will cure disease (WSJ)",
-        "source": "https://www.wsj.com/tech/ai/silicon-valley-promises-ai-will-cure-disease-drugmaker-ceos-arent-buying-it-5218511c",
-        "decision": "skipped",
-        "reason": "Paywalled feature with no second source, and the cap is reached."
-      },
-      {
-        "story": "OpenAI raises $11 billion at a $1.25 trillion valuation",
-        "decision": "covered",
-        "reason": "Already posted as 2026-11-08-openai-11-billion-short-of-30-billion; used in the roundup."
-      },
-      {
-        "story": "Developer blog: Goodbye Claude, hello Pi",
-        "source": "https://caleb.software/posts/claude-to-pi.html",
-        "decision": "skipped",
-        "reason": "Personal blog post, niche for a US mainstream audience."
-      },
-      {
-        "story": "How I fight AI brain fry",
-        "source": "https://sergeykuhne.com/blog/fighting-ai-brain-fry",
-        "decision": "skipped",
-        "reason": "Single personal blog post, no news."
-      }
-    ],
-    "requests": []
-  },
-  {
-    "run_at": "2026-11-09T00:54:47.033Z",
-    "summary": "Sunday night run: no open links or requests; the New York day is already over the 8-post cap (6 desk posts out plus 3 approved waiting), and any timely story found now would expire before the 07:00 window, so nothing was queued.",
-    "considered": [
-      {
-        "story": "Nvidia board investigates Jensen Huang's ties to a possible Chinese spy",
-        "source": "https://techcrunch.com/2026/11/08/nvidia-says-its-investigating-ceo-jensen-huangs-relationship-with-possible-chinese-spy/",
-        "decision": "covered",
-        "reason": "Already queued as 2026-11-08-nvidia-board-probes-huang-alleged-spy (sensitive, waiting for approval)."
-      },
-      {
-        "story": "Apple is racing to make Siri more agentic",
-        "source": "https://www.theverge.com/ai-artificial-intelligence/1029552/apple-siri-ai-agentic",
-        "decision": "covered",
-        "reason": "Already queued as 2026-11-08-ternus-pushes-federighi-faster-ai."
-      },
-      {
-        "story": "Goldman Sachs pulls Claude Code and GitHub Copilot from bankers and traders",
-        "source": "https://the-decoder.com/goldman-sachs-pulls-ai-coding-tools-from-traders-and-bankers/",
-        "decision": "skipped",
-        "reason": "Trending on Hacker News tonight, but the Bloomberg report is from November 2, too old to post as news."
-      },
-      {
-        "story": "OpenAI raises $11 billion at a $1.25 trillion valuation",
-        "source": "https://247wallst.com/investing/2026/11/07/openai-just-raised-11-billion-at-a-1-25-trillion-valuation-below-the-1-4-trillion-it-first-sought/",
-        "decision": "covered",
-        "reason": "Already posted as 2026-11-08-openai-11-billion-short-of-30-billion."
-      },
-      {
-        "story": "Chicago law professor's Claude agent wiped a year of lecture notes",
-        "source": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQX2xqOXlkUFVLdnJ5cVBmTEo2MXl0cVBHYVVLN292Q0RJYWZaVXdKV0NMSWtqbUJmTXlJWUVaeUhSbU50VF92WGRUTE45TzBuSTU2RHktcXd3U2NsSTZkLVRTRElGOHVtLVZwelZ0Ri1VX2Zadjc1NWZpa3dITHNheklUNHloc2RmeEQyWURXM2gwWktDeFlGVDF0SlJBSjdVOUxGZ3NXVGlQc2dqT1BYMg?oc=5",
-        "decision": "covered",
-        "reason": "Already posted as 2026-11-08-claude-deleted-professor-lecture-notes."
-      },
-      {
-        "story": "Lawsuit says Google Gemini helped a 13-year-old plan her suicide on a school Chromebook",
-        "decision": "skipped",
-        "reason": "Today is already over the daily cap and this needs careful sourcing from mainstream outlets; leave it for the morning run to check."
-      },
-      {
-        "story": "xAI turns on text watermarking by default across the Grok API",
-        "source": "https://docs.x.ai/docs/guides/output-watermarking",
-        "decision": "skipped",
-        "reason": "Developer API change from November 7 with little appeal for normal users."
-      },
-      {
-        "story": "Amazon lets US shoppers text Alexa for Shopping to buy items",
-        "source": "https://www.theverge.com/tech/1028587/amazon-alexa-shopping-ai-text-orders",
-        "decision": "skipped",
-        "reason": "A few days old and the day is full; a candidate for a morning run if still relevant."
-      },
-      {
-        "story": "Mistral releases open weights for Mistral Large 4",
-        "source": "https://mistral.ai/news/mistral-large-4-oss",
-        "decision": "skipped",
-        "reason": "Developer-focused model release with limited US mainstream interest."
-      },
-      {
-        "story": "Goodbye Claude, hello Pi (Hacker News essay)",
-        "source": "https://caleb.software/posts/claude-to-pi.html",
-        "decision": "skipped",
-        "reason": "One developer's blog post, not news."
-      }
-    ],
-    "requests": []
-  },
-  {
     "run_at": "2026-11-09T02:53:40.310Z",
     "summary": "Late Sunday night run (21:52 New York): no open links or requests (the four old October links are already in skipped.json); the New York day already has far more than 8 jobs and the last window closes at 22:00, so nothing was queued.",
     "considered": [
@@ -5712,6 +5587,59 @@
         "story": "Reel search: viral AI videos of November 15",
         "decision": "skipped",
         "reason": "No downloadable X clip passing the Reels filter found; Reddit leads are empty and YouTube downloads are blocked."
+      }
+    ],
+    "requests": []
+  },
+  {
+    "run_at": "2026-11-16T01:00:58.704Z",
+    "summary": "Sunday 20:00 New York run: queued 1 Reel (SNL cold open with Bowen Yang as Jensen Huang, from @nbcsnl on X), marked sensitive so it waits for Mahir. No open links or requests; today's carousels, site-only articles and 6 guides are already complete; roundup paused.",
+    "considered": [
+      {
+        "story": "SNL cold open: John Mulaney's CIA officer briefs AI billionaires on spies, Bowen Yang returns as Jensen Huang",
+        "source": "https://x.com/nbcsnl/status/2121827093017415989",
+        "decision": "queued",
+        "job_id": "2026-11-15-snl-jensen-huang-cold-open-reel",
+        "priority": 2,
+        "reason": "First funny clip about the week's biggest story, within 24 hours, official X video. Sensitive because it jokes about the espionage affair. The clip is about 5:50 long, so the Reel shows the first 90 seconds, which may end before Huang appears."
+      },
+      {
+        "story": "Jensen Huang may be plotting a return, latest Nvidia drama (The Verge, Forbes)",
+        "source": "https://www.theverge.com/tech/1033999/jensen-huang-return-nvidia-megaspeed",
+        "decision": "covered",
+        "reason": "Already queued as 2026-11-15-jensen-huang-weighs-nvidia-return."
+      },
+      {
+        "story": "Is bad news for Jensen Huang also bad news for the AI industry? (TechCrunch)",
+        "source": "https://techcrunch.com/2026/11/15/is-bad-news-for-jensen-huang-also-bad-news-for-the-ai-industry/",
+        "decision": "skipped",
+        "reason": "Opinion piece on the Huang story already covered."
+      },
+      {
+        "story": "Nvidia kept GPU prices high through circular financing deals (TechSpot, via Hacker News)",
+        "source": "https://www.techspot.com/news/114558-nvidia-deliberately-kept-gpu-prices-high-through-circular.html",
+        "decision": "skipped",
+        "reason": "Insider finance analysis, and today's site-only articles are already complete."
+      },
+      {
+        "story": "U.S. and allies agree to coordinate AI supply chain security (Seeking Alpha)",
+        "decision": "skipped",
+        "reason": "Policy news mostly insiders follow; site-only cap for today reached."
+      },
+      {
+        "story": "OpenAI booth criticized at TwitchCon (Mezha.net)",
+        "decision": "skipped",
+        "reason": "Single small outlet, no second source read, and today's carousels are full."
+      },
+      {
+        "story": "Gemini memory summary, how to see and edit it (ZDNET)",
+        "decision": "skipped",
+        "reason": "Good future guide topic; today's 6 guides are already queued."
+      },
+      {
+        "story": "Reel search: other viral AI, robot and gadget clips of November 15",
+        "decision": "skipped",
+        "reason": "Nothing fresh with a downloadable X original passed the Reels filter."
       }
     ],
     "requests": []
