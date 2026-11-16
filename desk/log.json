@@ -1,166 +1,5 @@
 [
   {
-    "run_at": "2026-11-09T20:23:18.616Z",
-    "summary": "Queued two priority 1 carousels (Apple's $49.99 AI usage packs, Meta's Muse Ember) and today's second site-only guide (ElevenLabs voice cloning); Mahir's Claude Fable 5.2 link was left to the instant link task.",
-    "considered": [
-      {
-        "story": "Apple starts selling $49.99 Apple Intelligence usage packs in Logic Pro 13",
-        "source": "https://9to5mac.com/2026/11/09/apple-launches-50-intelligence-usage-packs-for-select-ai-features/",
-        "decision": "queued",
-        "job_id": "2026-11-09-apple-starts-charging-ai-usage-packs",
-        "priority": 1,
-        "reason": "Apple's first paid AI add-on, a money story for normal users; confirmed by 9to5Mac and Tech Between the Lines. Queued past the 8 job count because 4 of today's desk jobs expired or were skipped and can never post, so posts stay under 8."
-      },
-      {
-        "story": "Meta releases Muse Ember, its cheapest Muse model, level with Claude Haiku 5.5 at about a third of the cost per task",
-        "source": "https://techcrunch.com/2026/11/09/meta-releases-muse-ember-a-new-lightweight-model-for-agent-execution/",
-        "decision": "queued",
-        "job_id": "2026-11-09-meta-muse-ember-third-of-haiku-cost",
-        "priority": 1,
-        "reason": "Major Meta model release, confirmed by TechCrunch and The Next Web. A/B test said story photo, but the article image is an abstract graphic, so the cover uses Zuckerberg's library photo (photo set to face)."
-      },
-      {
-        "story": "Daily guide: ElevenLabs voice generation and cloning basics (guides/plan.md next line)",
-        "source": "https://elevenlabs.io/docs/eleven-creative/voices/voice-cloning/instant-voice-cloning.mdx",
-        "decision": "queued",
-        "job_id": "2026-11-09-elevenlabs-voice-cloning-guide",
-        "priority": 2,
-        "reason": "Site-only guide, nothing posts to Instagram. Built from ElevenLabs docs plus DataCamp and Dupple for plans and prices."
-      },
-      {
-        "story": "Anthropic releases Claude Fable 5.2 and Mythos 5.2 with a 20% price cut",
-        "source": "https://techcrunch.com",
-        "decision": "covered",
-        "reason": "Mahir sent this story as link-2026-11-09-3095 at 20:01 UTC, six minutes before this run; the instant link task is making it, so a desk job would duplicate it."
-      },
-      {
-        "story": "Cisco adds Claude Mythos to its AI Defense red teaming tool",
-        "decision": "skipped",
-        "reason": "Enterprise security product news, and it is part of the Fable and Mythos launch Mahir's link covers."
-      },
-      {
-        "story": "OpenAI sells ChatGPT Enterprise through AWS Marketplace",
-        "decision": "skipped",
-        "reason": "Business procurement change with no effect on normal users."
-      },
-      {
-        "story": "Democrats demand answers on Trump's AI policy amid the Huang spy plot (NYT)",
-        "decision": "covered",
-        "reason": "The Huang story already has the board probe job, today's Trump job and six of Mahir's Reels."
-      },
-      {
-        "story": "Study finds half of ChatGPT and Gemini stock picks land in just 10 stocks",
-        "decision": "skipped",
-        "reason": "Interesting everyone story but today is past its desk job count; only seen in a Crypto Briefing headline, a candidate for tomorrow if better sources appear."
-      },
-      {
-        "story": "ChatGPT Desktop forwards your SSH agent to remote machines (Hacker News)",
-        "decision": "skipped",
-        "reason": "Developer security detail with little pull for a general audience, and the day is full."
-      },
-      {
-        "story": "Claude Code exposed 1,379 secrets on GitHub (shattered.io)",
-        "decision": "skipped",
-        "reason": "Single small blog source, not confirmed by a second outlet."
-      }
-    ],
-    "requests": []
-  },
-  {
-    "run_at": "2026-11-09T20:24:54.635Z",
-    "summary": "Link desk: queued Mahir's Instagram link (Evolving AI post) as a carousel on the Claude Fable 5.2 and Mythos 5.2 launch.",
-    "considered": [
-      {
-        "story": "Anthropic releases Claude Fable 5.2 and Mythos 5.2",
-        "source": "https://www.anthropic.com/claude-fable-and-mythos-5-2",
-        "decision": "queued",
-        "job_id": "2026-11-09-claude-fable-5-2-mythos-5-2",
-        "priority": 1
-      }
-    ],
-    "requests": []
-  },
-  {
-    "run_at": "2026-11-09T20:26:51.464Z",
-    "summary": "Hand-started link run for link-2026-11-09-3095: nothing new queued, because the instant link task had already made it as 2026-11-09-claude-fable-5-2-mythos-5-2.",
-    "considered": [
-      {
-        "story": "Mahir link: Evolving AI Instagram post on Anthropic's Claude Fable 5.2 and Mythos 5.2",
-        "source": "https://www.anthropic.com/claude-fable-and-mythos-5-2",
-        "decision": "covered",
-        "reason": "Already queued as 2026-11-09-claude-fable-5-2-mythos-5-2 by the instant link task at 20:24 UTC; a second job would duplicate it, so my draft was dropped."
-      }
-    ],
-    "requests": []
-  },
-  {
-    "run_at": "2026-11-09T20:28:46.441Z",
-    "summary": "Handled Mahir's Reel link link-2026-11-09-3121 (@terenceshen on X).",
-    "considered": [
-      {
-        "story": "China's next target? (@terenceshen video)",
-        "source": "https://x.com/terenceshen/status/2119790465356558598",
-        "decision": "queued",
-        "job_id": "2026-11-09-terenceshen-china-next-target-reel",
-        "priority": 1,
-        "reason": "x.com not reachable from this session and search found nothing, so hook is Mahir's title and caption is neutral. Clip not seen: check the preview. Mahir said post right away, but memory requires approval, so review is on."
-      }
-    ],
-    "requests": []
-  },
-  {
-    "run_at": "2026-11-09T21:06:35.143Z",
-    "summary": "Queued today's third site-only guide (Suno: make a song from a prompt); no news queued because today already has 10 desk news jobs, over the 8 cap, and no new priority 1 story appeared since the 20:23 UTC run. No open links or requests.",
-    "considered": [
-      {
-        "story": "Daily guide: Suno, making a song from a prompt (guides/plan.md next line after the rejected ElevenLabs guide)",
-        "source": "https://suno.com/release-notes/introducing-v5-5-voices-custom-models-and-my-taste",
-        "decision": "queued",
-        "job_id": "2026-11-09-suno-make-song-from-prompt-guide",
-        "priority": 2,
-        "reason": "Site-only guide, does not count toward the Instagram cap. Skipped re-doing ElevenLabs because Mahir rejected that guide at 20:46 UTC."
-      },
-      {
-        "story": "Anthropic releases Claude Fable 5.2 and Mythos 5.2",
-        "source": "https://techcrunch.com/2026/11/09/anthropic-releases-new-mythos-and-fable-models-amid-rsi-",
-        "decision": "covered",
-        "reason": "Already queued as 2026-11-09-claude-fable-5-2-mythos-5-2-v2 (its state shows publish_failed, which the pipeline owns)."
-      },
-      {
-        "story": "Meta releases Muse Ember",
-        "source": "https://research.meta.ai/blog/muse-ember",
-        "decision": "covered",
-        "reason": "Already queued as 2026-11-09-meta-muse-ember-third-of-haiku-cost."
-      },
-      {
-        "story": "Nvidia investigation into Jensen Huang and alleged Chinese spy (NBC, Inc. succession piece)",
-        "decision": "covered",
-        "reason": "Covered by 2026-11-08-nvidia-board-probes-huang-alleged-spy and today's Trump/Huang job; no new development worth another post, and today is over the cap."
-      },
-      {
-        "story": "Cisco adds Claude Mythos to AI Defense red teaming tool",
-        "decision": "skipped",
-        "reason": "Enterprise security product news with little interest for a general US audience, and today is over the cap."
-      },
-      {
-        "story": "OpenAI sells ChatGPT Enterprise through AWS Marketplace",
-        "decision": "skipped",
-        "reason": "Procurement news only insiders follow; today is over the cap."
-      },
-      {
-        "story": "Study finds half of ChatGPT and Gemini stock picks land in just 10 stocks",
-        "decision": "skipped",
-        "reason": "Good everyone story but only one minor outlet found and today is already over the 8 post cap; can be revisited tomorrow if better sourced."
-      },
-      {
-        "story": "Claude Code exposed 1,379 secrets on GitHub (shattered.io)",
-        "decision": "skipped",
-        "reason": "Single blog source, not confirmed by an independent outlet."
-      }
-    ],
-    "requests": []
-  },
-  {
     "run_at": "2026-11-09T23:01:55.885Z",
     "summary": "Queued today's fourth site-only guide (Gemini Nano Banana for free); no news queued because today is already over the 8 post cap and no new priority 1 story appeared since the last run. No open links or requests.",
     "considered": [
@@ -5597,6 +5436,71 @@
         "story": "Anthropic IPO pricing and Nasdaq debut later this week",
         "decision": "covered",
         "reason": "Already covered as 2026-11-12-anthropic-ipo-retail-20-percent; the pricing or first trade deserves its own post when it happens."
+      }
+    ],
+    "requests": []
+  },
+  {
+    "run_at": "2026-11-16T21:12:10.387Z",
+    "summary": "Monday 16:00 New York run: queued California's lawsuit against OpenAI over the Hugging Face hack (priority 1, sensitive, for Mahir's approval) and the 5th and 6th site-only guides of the day (n8n vs Zapier, How to use Character AI). No open links or requests; no Reel video with a usable X or company URL passed the filter.",
+    "considered": [
+      {
+        "story": "California AG Rob Bonta sues OpenAI over AI agents that escaped a test and hacked Hugging Face",
+        "source": "https://calmatters.org/economy/technology/2026/11/california-is-suing-openai-over-hugging-face-hack/",
+        "decision": "queued",
+        "job_id": "2026-11-16-california-sues-openai-rogue-agents",
+        "priority": 1,
+        "reason": "Major OpenAI story and a lawsuit, so sensitive and waits for Mahir. Both carousel slots were already used today, but priority 1 stories must be queued; Mahir can reject it to keep the day at 2 carousels."
+      },
+      {
+        "story": "Guide: n8n vs Zapier (guides/plan.md Tier 2, next line after Perplexity vs ChatGPT)",
+        "source": "https://zapier.com/blog/n8n-vs-zapier/",
+        "decision": "queued",
+        "job_id": "2026-11-16-n8n-vs-zapier-guide",
+        "priority": 2
+      },
+      {
+        "story": "Guide: How to use Character AI (guides/plan.md tool library, next line after Napkin AI)",
+        "source": "https://blog.character.ai/an-update-on-character-ai/",
+        "decision": "queued",
+        "job_id": "2026-11-16-how-to-use-character-ai-guide",
+        "priority": 2,
+        "reason": "Written around the Chapter 11 sale, including how to export chats before it closes."
+      },
+      {
+        "story": "Apple tests daily usage limits for complex Siri AI requests (The Verge)",
+        "source": "https://www.theverge.com/tech/1034581/apple-intelligence-siri-ai-daily-usage-limits-icloud-subscription",
+        "decision": "skipped",
+        "reason": "A good everyday story, but both carousel slots and all 4 site-only news slots for today are used; worth a post tomorrow if it is still fresh."
+      },
+      {
+        "story": "Trump says Jensen Huang's affair with an alleged Chinese spy did not threaten national security (TechCrunch)",
+        "source": "https://techcrunch.com/2026/11/16/trump-says-ex-nvidia-ceo-jensen-huangs-affair-with-an-alleged-chinese-spy-did-not-threaten-national-security/",
+        "decision": "skipped",
+        "reason": "The Huang saga already has many posts this week and the carousel slots are full."
+      },
+      {
+        "story": "US moves to close the remote access loophole for AI chips to China (Ars Technica, Washington Post)",
+        "source": "https://arstechnica.com/tech-policy/2026/11/us-moves-to-cut-chinas-remote-access-to-ai-chips/",
+        "decision": "skipped",
+        "reason": "Policy news mostly insiders follow, and the site-only cap is reached."
+      },
+      {
+        "story": "FBI says the Artex AI open-source hacking tool was used to breach networks (TechCrunch)",
+        "source": "https://techcrunch.com/2026/11/16/fbi-says-artex-ai-open-source-hacking-tool-used-to-breach-networks-in-under-three-hours/",
+        "decision": "skipped",
+        "reason": "Security news with little consumer angle; site-only cap reached."
+      },
+      {
+        "story": "OpenAI tool to detect AI-made child abuse material for tiplines (The Verge)",
+        "source": "https://www.theverge.com/policy/1034527/openai-csam-classifier",
+        "decision": "skipped",
+        "reason": "Important but not a fit for the Instagram mix, and the site-only cap is reached."
+      },
+      {
+        "story": "Reel search: viral AI and robot videos of the day",
+        "decision": "skipped",
+        "reason": "Found no fresh clip with an X or company video URL that passes the Reels filter (only a fake AI Tim Cook glasses clip and older robot videos)."
       }
     ],
     "requests": []

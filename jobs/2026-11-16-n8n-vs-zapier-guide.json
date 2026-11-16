@@ -1,0 +1,292 @@
+{
+  "id": "2026-11-16-n8n-vs-zapier-guide",
+  "format": "utility",
+  "site_only": true,
+  "created_at": "2026-11-16T21:25:00Z",
+  "story_time": "2026-11-16T21:25:00Z",
+  "timely": false,
+  "sensitive": false,
+  "priority": 2,
+  "sources": [
+    {
+      "name": "Zapier: Zapier vs. n8n comparison",
+      "url": "https://zapier.com/blog/n8n-vs-zapier/"
+    },
+    {
+      "name": "n8n: Plans and pricing",
+      "url": "https://n8n.io/pricing/"
+    },
+    {
+      "name": "n8n Docs: Executions",
+      "url": "https://docs.n8n.io/workflows/executions/"
+    },
+    {
+      "name": "Zapier: Zapier pricing",
+      "url": "https://zapier.com/blog/zapier-pricing/"
+    },
+    {
+      "name": "Zapier: What is a task in Zapier?",
+      "url": "https://zapier.com/blog/what-is-a-task-in-zapier/"
+    },
+    {
+      "name": "Dupple: n8n pricing 2026",
+      "url": "https://dupple.com/learn/n8n-pricing"
+    },
+    {
+      "name": "Jet Admin: n8n vs Zapier in 2026",
+      "url": "https://www.jetadmin.io/blog/n8n-vs-zapier/"
+    }
+  ],
+  "caption": "Zapier charges for every action step. n8n charges for every full workflow run, and you can host it yourself.\nZapier is easier and connects more apps. n8n is cheaper for long workflows if you can handle the setup.\nHere is how to pick one for AI workflows.\n\nWhich one runs your automations?\n\nFollow @neurafeed.ai for daily AI news.\n\nSource: Zapier, n8n, Dupple, Jet Admin · Photo: Zapier",
+  "threads_text": "Zapier bills you for every action step. n8n bills for the whole workflow run, and you can host it on your own server. Easy and expensive at scale, or cheap and more work. Which one would you pick?",
+  "slides": [
+    {
+      "kind": "cover",
+      "headline": "n8n vs Zapier: *which one to use* for AI automation",
+      "image": {
+        "url": "https://images.ctfassets.net/27w7hkots21d/1jA6gcBRrO98lHjj6uOVPc/c60adcece510309c4aa17372442f389e/zapier-vs-n8n-hero.webp",
+        "credit": "Zapier",
+        "fallback_urls": [
+          "https://zapier.com/_next/image?url=https%3A%2F%2Fimages.ctfassets.net%2F27w7hkots21d%2F1jA6gcBRrO98lHjj6uOVPc%2Fc60adcece510309c4aa17372442f389e%2Fzapier-vs-n8n-hero.webp&w=3840&q=80"
+        ]
+      },
+      "pos": "center center",
+      "badges": [
+        {
+          "url": "https://cdn.jsdelivr.net/gh/selfhst/icons/png/n8n.png",
+          "fit": "contain"
+        },
+        {
+          "url": "https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/png/zapier.png",
+          "fit": "contain"
+        }
+      ]
+    },
+    {
+      "kind": "card",
+      "heading": "1. Zapier counts *every step*",
+      "paras": [
+        "Zapier bills one task per action step that runs. Triggers, filters and paths are free.",
+        "n8n counts one execution per workflow run, however many steps it has."
+      ],
+      "image": {
+        "url": "https://images.ctfassets.net/27w7hkots21d/7cXmu3iSsTDyNOWHhT0pqk/390e9bce91de3cfc060916081203a72d/n8n-09__1_.png",
+        "credit": "Zapier",
+        "fit": "contain",
+        "fallback_urls": [
+          "https://zapier.com/_next/image?url=https%3A%2F%2Fimages.ctfassets.net%2F27w7hkots21d%2F7cXmu3iSsTDyNOWHhT0pqk%2F390e9bce91de3cfc060916081203a72d%2Fn8n-09__1_.png&w=3840&q=80"
+        ]
+      }
+    },
+    {
+      "kind": "card",
+      "heading": "2. Zapier is *easier to start*",
+      "paras": [
+        "Zapier lists 9,000+ apps and a Copilot that builds Zaps from plain English.",
+        "n8n has fewer apps and a steeper learning curve. Some steps need code."
+      ],
+      "image": {
+        "url": "https://images.ctfassets.net/27w7hkots21d/1ZoI2qEFSZg52Oqc69FdVv/8c19aaf75cbedce22fe4a2361008b6aa/n8n-07__1_.png",
+        "credit": "Zapier",
+        "fit": "contain",
+        "fallback_urls": [
+          "https://zapier.com/_next/image?url=https%3A%2F%2Fimages.ctfassets.net%2F27w7hkots21d%2F1ZoI2qEFSZg52Oqc69FdVv%2F8c19aaf75cbedce22fe4a2361008b6aa%2Fn8n-07__1_.png&w=3840&q=80"
+        ]
+      }
+    },
+    {
+      "kind": "card",
+      "heading": "3. n8n runs *on your server*",
+      "paras": [
+        "The self-hosted Community edition has no plan quota. You pay for the server and the upkeep.",
+        "Zapier is cloud only. There is nothing to install."
+      ],
+      "image": {
+        "url": "https://images.ctfassets.net/lzny33ho1g45/6k2wiyR6w0KROF306S57pB/c15dd5393fb53cc6c24599cfa807cf65/n8n-hero.jpg",
+        "credit": "Zapier",
+        "fallback_urls": [
+          "https://images.ctfassets.net/lzny33ho1g45/6k2wiyR6w0KROF306S57pB/c15dd5393fb53cc6c24599cfa807cf65/n8n-hero.jpg?fm=jpg&q=31&fit=thumb&w=1520&h=760"
+        ]
+      }
+    },
+    {
+      "kind": "card",
+      "heading": "4. Both build *AI agents*",
+      "paras": [
+        "n8n has AI Agent, MCP and human-in-the-loop nodes. Zapier has AI steps, Copilot and Zapier MCP.",
+        "On Zapier, one AI step uses 1, 3 or 5 tasks, depending on the model."
+      ],
+      "image": {
+        "url": "https://storage.ghost.io/c/0d/78/0d78b34c-0c5f-4975-900e-61d00ccb1c2d/content/images/2025/04/Screenshot-2025-04-14-073414.png",
+        "credit": "n8n",
+        "fit": "contain"
+      }
+    },
+    {
+      "kind": "cta",
+      "hook": "Follow for one AI tool explained every day."
+    }
+  ],
+  "site_article": {
+    "kind": "guide",
+    "headline": "n8n vs Zapier: which automation tool to use for AI workflows",
+    "dek": "Zapier is the easy, managed option with the bigger app catalog. n8n is cheaper for long workflows and can run on your own server, but it asks more of you.",
+    "summary": "Zapier bills one task for each action step that runs, while n8n bills one execution for each full workflow run. Zapier connects more apps and is easier to learn; n8n can be self-hosted and leans on code for complex work.",
+    "seo_title": "n8n vs Zapier: which automation tool for AI workflows",
+    "seo_description": "n8n vs Zapier compared for AI workflows: how each bills (tasks vs executions), plan prices, self-hosting, AI agent features and which one fits you.",
+    "answer_summary": "Pick Zapier if you want the fastest setup, the most app connections and no servers. Pick n8n if your workflows have many steps, you want to self-host, or you are comfortable with some JavaScript.",
+    "tags": [
+      "n8n",
+      "Zapier",
+      "Automation",
+      "AI agents",
+      "Guides"
+    ],
+    "hero_alt": "Zapier's comparison artwork for its Zapier versus n8n article.",
+    "paragraphs": [
+      {
+        "kind": "fact",
+        "text": "n8n vs Zapier is the first choice most people face when they want AI inside their automations. Both connect apps and both can add AI steps and agents to a workflow. The big differences are how they bill, where they run and how much technical work they expect from you. Zapier is a fully managed cloud service. n8n can run in its own cloud or on a server you control.",
+        "sources": [
+          0,
+          6
+        ]
+      },
+      {
+        "kind": "analysis",
+        "text": "This guide uses each company's own pricing and documentation, plus two independent pricing breakdowns from the fall of 2026. One caution: the main comparison page used here is published by Zapier, so read its claims about n8n with that in mind. Prices change and can show in your local currency, so check the pricing page before you pay."
+      },
+      {
+        "kind": "heading",
+        "text": "n8n vs Zapier: the short answer"
+      },
+      {
+        "kind": "analysis",
+        "text": "Use Zapier if you want something working in an afternoon, need an app that only Zapier supports, or nobody on your team wants to look at code. Use n8n if your workflows run many steps many times a day, you need your data on your own servers, or you already write some JavaScript. For a few small automations, both free options are enough to decide."
+      },
+      {
+        "kind": "heading",
+        "text": "Tasks vs executions: how each one bills"
+      },
+      {
+        "kind": "fact",
+        "text": "Zapier defines a task as anything it successfully completes for you, and a task only happens when an action step runs. Triggers, polling checks and failed steps do not count. Filter, Formatter and Paths steps are also free.",
+        "sources": [
+          4
+        ]
+      },
+      {
+        "kind": "fact",
+        "text": "n8n's docs define an execution as a single run of a workflow. Only production runs count toward a plan's limit: runs started by a trigger, a schedule or a polling node. Manual test runs, sub-workflow calls and error workflow runs do not count. A polling node counts only when it finds new data, while a Schedule Trigger counts every time it fires.",
+        "sources": [
+          2
+        ]
+      },
+      {
+        "kind": "analysis",
+        "text": "In practice, a Zap with one trigger and four action steps that runs 1,000 times uses up to 4,000 tasks. The same workflow in n8n is 1,000 executions. The longer your workflows, the bigger that gap gets, which is why AI workflows with many steps tend to cost less on n8n."
+      },
+      {
+        "kind": "heading",
+        "text": "What the plans cost"
+      },
+      {
+        "kind": "fact",
+        "text": "Zapier's Free plan includes 100 tasks a month. Professional costs $19.99 a month billed annually and starts at 750 tasks, with multi-step Zaps, premium apps, Filters, Paths and Formatter. Team costs $69 a month billed annually and adds shared folders, shared app connections, user roles and SAML SSO. Enterprise is custom. Copilot is on every plan.",
+        "sources": [
+          3
+        ]
+      },
+      {
+        "kind": "fact",
+        "text": "Jet Admin's comparison notes that Zapier's free plan is limited to two-step Zaps. On paid plans, Zapier keeps running past your limit and bills extra tasks at the end of the cycle: 1.25 times the normal task cost on annual plans and 2.5 times on monthly plans. At 3 times your plan's limit, your Zaps pause until the next billing cycle or an upgrade.",
+        "sources": [
+          4,
+          6
+        ]
+      },
+      {
+        "kind": "fact",
+        "text": "n8n Cloud Starter costs 20 a month billed annually, with 2,500 executions and 5 concurrent executions. Pro costs 50 a month billed annually, with 10,000 executions. n8n says every plan includes unlimited users, unlimited workflows and every integration. Dupple lists these prices in US dollars and notes that monthly billing costs more than yearly.",
+        "sources": [
+          1,
+          5
+        ]
+      },
+      {
+        "kind": "fact",
+        "text": "The self-hosted Community edition of n8n costs nothing in license fees and has no plan quota, according to Dupple. You still pay for the server and for the work of updates, backups and security patches. It runs under n8n's Sustainable Use License, which allows internal business use but not reselling n8n to clients.",
+        "sources": [
+          5
+        ]
+      },
+      {
+        "kind": "tip",
+        "text": "Before you compare prices, count the steps in the workflow you actually plan to run and how often it fires. That one number usually decides the cheaper tool."
+      },
+      {
+        "kind": "heading",
+        "text": "Ease of use and app connections"
+      },
+      {
+        "kind": "fact",
+        "text": "Zapier says it connects more than 9,000 apps, all maintained by Zapier, and that n8n has about a quarter as many, many of them maintained by the community with irregular update schedules. Jet Admin describes Zapier's linear builder as easier for people who do not think in graphs, while n8n's node canvas rewards technical users.",
+        "sources": [
+          0,
+          6
+        ]
+      },
+      {
+        "kind": "fact",
+        "text": "n8n lets you add JavaScript and Python code nodes anywhere in a workflow. Zapier's own comparison says that to get the most out of n8n there is no real way around writing code. Zapier offers Code by Zapier for the same kind of custom logic, but most Zaps never need it.",
+        "sources": [
+          0
+        ]
+      },
+      {
+        "kind": "heading",
+        "text": "AI features in each"
+      },
+      {
+        "kind": "fact",
+        "text": "Zapier's AI tools include Copilot, which builds workflows from a plain-language request, AI steps inside Zaps, Zapier MCP, which connects AI tools like Claude and ChatGPT to its apps, AI Guardrails and human-in-the-loop steps. You can pick a default, advanced or premium model, or bring your own key.",
+        "sources": [
+          0
+        ]
+      },
+      {
+        "kind": "fact",
+        "text": "On Zapier, an AI step costs tasks like any other action: one task with the default model, three with Advanced and five with Premium. n8n offers AI Agent, MCP and human-in-the-loop nodes and a framework for evaluating agents. Its Cloud plans include Assistant credits, 1,600 a month on Starter, which n8n counts separately from executions.",
+        "sources": [
+          3,
+          0,
+          1,
+          6
+        ]
+      },
+      {
+        "kind": "heading",
+        "text": "Which one to pick"
+      },
+      {
+        "kind": "step",
+        "title": "1. You want it working today",
+        "text": "Pick Zapier. Start on the Free plan, describe your workflow to Copilot and check the result. Move to Professional when you need more than two steps."
+      },
+      {
+        "kind": "step",
+        "title": "2. Your workflows are long or run often",
+        "text": "Pick n8n. Count your steps and runs, then compare n8n's execution limits with the tasks the same work would use on Zapier."
+      },
+      {
+        "kind": "step",
+        "title": "3. Your data must stay on your servers",
+        "text": "Pick self-hosted n8n, and make sure someone owns updates, backups and security. Zapier has no self-hosted option."
+      },
+      {
+        "kind": "analysis",
+        "text": "What each is bad at: Zapier gets expensive as steps and AI calls add up, and you cannot host it yourself. n8n asks for more setup, more code and more upkeep, its app catalog is smaller, and Starter's limit of 5 concurrent runs can bite before the execution count does."
+      }
+    ]
+  }
+}
