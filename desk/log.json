@@ -1,132 +1,5 @@
 [
   {
-    "run_at": "2026-11-09T05:04:17.456Z",
-    "summary": "Overnight run (23:55 Sunday New York): no open links or requests; queued one politics story for the Monday morning slots, Trump's 60 Minutes claim that the DOJ warned an unnamed AI company leader of jail (sensitive, for Mahir's approval).",
-    "considered": [
-      {
-        "story": "Trump on 60 Minutes: DOJ warned someone at 'one of the big' AI companies to get ready for jail; says he doesn't mind guardrails",
-        "source": "https://www.cbsnews.com/news/read-the-full-transcript-of-ross-douthats-interview-with-president-trump/",
-        "decision": "queued",
-        "job_id": "2026-11-09-trump-doj-ai-boss-jail",
-        "priority": 2,
-        "reason": "Confirmed in the CBS transcript and Reuters. Set timely false because a 12 hour limit from the 19:00 broadcast would expire right at 07:00; sensitive (politics). AB test asked for a story photo, but no image could be checked from this run, so the face library photo was used (photo: face)."
-      },
-      {
-        "story": "Trump calls Jensen Huang 'honorable', has not discussed the spy allegations with him (Reuters)",
-        "source": "https://www.thestandard.com.hk/finance/article/347930/Trump-calls-Nvidias-Huang-honorable-says-he-has-not-discussed-allegations-with-him",
-        "decision": "covered",
-        "reason": "Follow-up to 2026-11-08-nvidia-board-probes-huang-alleged-spy, not a new story."
-      },
-      {
-        "story": "Nvidia board investigates Jensen Huang over suspected Chinese spy",
-        "decision": "covered",
-        "reason": "Already queued as 2026-11-08-nvidia-board-probes-huang-alleged-spy."
-      },
-      {
-        "story": "The race for Anthropic employees' new wealth (Financial News London)",
-        "decision": "skipped",
-        "reason": "Feature piece with no confirmed second source yet; a candidate for a daytime run."
-      },
-      {
-        "story": "Staff at the US AI safety center reporting to the White House (AP)",
-        "decision": "skipped",
-        "reason": "Inside-government story with little appeal to normal users; one politics story is already queued for the morning."
-      },
-      {
-        "story": "Anthropic plans to complete its IPO before November 26 (SBS, Korean)",
-        "decision": "skipped",
-        "reason": "Still a single foreign-language report with no second source."
-      },
-      {
-        "story": "UK public bodies flooded with chatbot-written complaints (Guardian)",
-        "decision": "skipped",
-        "reason": "UK-focused; left for a daytime run to judge against US stories."
-      },
-      {
-        "story": "OpenAI to acquire Pierre for Codex code review",
-        "decision": "skipped",
-        "reason": "Small developer-tools acquisition with little mainstream appeal."
-      },
-      {
-        "story": "Microsoft moves Copilot's Claude processing into the EU Data Boundary",
-        "decision": "skipped",
-        "reason": "EU enterprise compliance change, little interest for a US audience."
-      }
-    ],
-    "requests": []
-  },
-  {
-    "run_at": "2026-11-09T07:04:03.222Z",
-    "summary": "Overnight run (01:55 Monday New York): no open links or requests; queued two stories for the Monday windows, Goldman Sachs pulling Claude Code from most traders and bankers, and the lawsuit over Gemini on a 13-year-old's school Chromebook (sensitive, for Mahir's approval). Images could not be opened from this run, so photos come from the source articles unseen.",
-    "considered": [
-      {
-        "story": "Goldman Sachs limits Claude Code and GitHub coding tools to its ~12,000 engineers; most traders and bankers lose access",
-        "source": "https://startupfortune.com/goldman-sachs-pulls-claude-code-and-github-tools-from-traders-and-bankers/",
-        "decision": "queued",
-        "job_id": "2026-11-09-goldman-pulls-claude-code-traders",
-        "priority": 2,
-        "reason": "AI at work story with money and jobs angle, trending on Hacker News; confirmed by Gadget Review (Yahoo Finance), Startup Fortune and FStech. Reported Nov 3, so timely false."
-      },
-      {
-        "story": "Parents sue Google, saying Gemini on their 13-year-old's school Chromebook fed a mental health crisis",
-        "source": "https://gizmodo.com/lawsuit-claims-students-google-ai-use-turned-into-life-threatening-obsession-2000835894",
-        "decision": "queued",
-        "job_id": "2026-11-09-gemini-school-chromebook-teen-lawsuit",
-        "priority": 2,
-        "reason": "Major Google lawsuit not yet covered; Gizmodo, FourWeekMBA and Android Pure. Sensitive (lawsuit, minor, mental health): no method details, 988 line in caption, needs Mahir's approval. Filed Nov 2 to 4, so timely false."
-      },
-      {
-        "story": "OpenAI to acquire Pierre to expand Codex code review and storage",
-        "source": "https://openai.com/index/openai-to-acquire-pierre/",
-        "decision": "skipped",
-        "reason": "Small developer tools acquisition from Nov 5, little interest for a general US audience."
-      },
-      {
-        "story": "Wealth managers race for Anthropic employees' new IPO fortunes ('not buying Lamborghinis')",
-        "source": "https://stocktwits.com/news-articles/markets/equity/top-wall-street-firms-compete-to-manage-anthropic-staffers-post-ipo-fortunes/cZtXyPURBb1",
-        "decision": "skipped",
-        "reason": "Could not read the Financial News piece; IPO money angle overlaps recent Anthropic IPO coverage. Worth a later run if the IPO prices."
-      },
-      {
-        "story": "UK public bodies flooded with chatbot-written complaints ('AI clog')",
-        "source": "https://cybernews.com/ai-news/ai-slop-complaints-bureaucracy-public-services/",
-        "decision": "skipped",
-        "reason": "UK-focused and the trend has been reported since spring; weak for a US audience."
-      },
-      {
-        "story": "Staff at the US center for AI safety now report to the White House",
-        "decision": "skipped",
-        "reason": "Inside-Washington process story; lower appeal than the two queued stories. Could be revisited."
-      },
-      {
-        "story": "Drugmaker CEOs doubt Silicon Valley's promise that AI will cure disease (WSJ)",
-        "decision": "skipped",
-        "reason": "Paywalled and an opinion-style trend piece; no clear news hook."
-      },
-      {
-        "story": "Nvidia board investigates Jensen Huang over alleged Chinese spy; Huang's memo to staff",
-        "decision": "covered",
-        "reason": "Already queued as 2026-11-08-nvidia-board-probes-huang-alleged-spy."
-      },
-      {
-        "story": "OpenAI raises $11B at a $1.25T valuation",
-        "decision": "covered",
-        "reason": "Already queued as 2026-11-08-openai-11-billion-short-of-30-billion."
-      },
-      {
-        "story": "Trump says AI risks can be managed, open to guardrails (60 Minutes)",
-        "decision": "covered",
-        "reason": "Already queued as 2026-11-09-trump-doj-ai-boss-jail."
-      },
-      {
-        "story": "Claude Code 'Don't Ask Again' exposes passwords on GitHub",
-        "decision": "covered",
-        "reason": "Already queued as 2026-11-07-claude-code-dont-ask-again-leaks-passwords."
-      }
-    ],
-    "requests": []
-  },
-  {
     "run_at": "2026-11-09T08:56:46.611Z",
     "summary": "Early Monday run (03:55 New York): no open links or requests; queued one story, ChatGPT users reporting sudden account deactivations with no warning (including $200 Pro plans), bringing Monday to 4 jobs. Image hosts and Wikimedia could not be opened from this run, so photos are ones that rendered fine in earlier posts.",
     "considered": [
@@ -5697,6 +5570,74 @@
         "story": "Kuo: OpenAI and Anthropic to buy or lease 26 million TPUs in 2028 and 2029 (FourWeekMBA)",
         "decision": "skipped",
         "reason": "Analyst estimate from a single small outlet, insider compute news."
+      }
+    ],
+    "requests": []
+  },
+  {
+    "run_at": "2026-11-16T07:29:54.150Z",
+    "summary": "Monday 02:00 New York run: queued 1 Instagram carousel (Foundation war robot startup missed payroll, sensitive so it waits for Mahir) and 1 site-only article (Apple's Siri smart glasses for 2027). No open links or requests; no Reel passed the filter overnight; guides start from the 07:00 run.",
+    "considered": [
+      {
+        "story": "Eric Trump-backed humanoid war robot startup Foundation misses October 30 payroll; CEO borrowed $4.6 million from the company",
+        "source": "https://robottoday.com/industry-briefing/foundation-misses-payroll-as-ceo-s-4-6-million-company-loan-raises-governance-concerns/18171",
+        "decision": "queued",
+        "job_id": "2026-11-16-foundation-war-robot-startup-missed-payroll",
+        "priority": 2,
+        "reason": "Money, a person and a scandal in one story; sensitive because of Eric Trump and the disputed claims, so Mahir approves it. I could not open the SF Standard or CNBC pages directly; the GM claim is attributed to the SF Standard via AI Weekly. Cover photos are Foundation's own robot images, which I could not preview from here."
+      },
+      {
+        "story": "Apple plans Siri-run N50 smart glasses for WWDC 2027 (Gurman)",
+        "source": "https://www.macrumors.com/2026/11/15/apple-smart-glasses-hinge-on-siri/",
+        "decision": "queued",
+        "job_id": "2026-11-16-apple-siri-smart-glasses-2027",
+        "priority": 2,
+        "reason": "Apple product report that mostly insiders follow, so site-only."
+      },
+      {
+        "story": "Lovable-built apps exposed passports and 200,000 chat messages (Crissy Field and Handelsblatt study)",
+        "source": "https://www.trendingtopics.eu/lovable-apps-sensitive-data-exposed/",
+        "decision": "skipped",
+        "reason": "First reported November 2; the November 14 coverage is a late write-up of a two-week-old study."
+      },
+      {
+        "story": "AISI and OpenAI report rogue model hacks during cyber tests (36Kr and Tom's Hardware in leads)",
+        "source": "https://cyberscoop.com/aisi-openai-report-unsanctioned-ai-model-hacks/",
+        "decision": "skipped",
+        "reason": "The disclosures date from August 4, 2026; the new items only resurfaced them."
+      },
+      {
+        "story": "Claude downloads surge as ChatGPT installs fall 21%",
+        "source": "https://pressnewsagency.org/claude-downloads-surge-as-chatgpt-installs-fall-21/",
+        "decision": "skipped",
+        "reason": "Only a small aggregator carries it and I found no primary data source or second outlet this run."
+      },
+      {
+        "story": "Alpha School AI students miss learning targets (Fortune, November 14)",
+        "source": "https://fortune.com/2026/11/14/alpha-school-ai-students-tuition-learning-goals/",
+        "decision": "skipped",
+        "reason": "Could not open Fortune this run and found no second fresh source; worth another look in a daytime run."
+      },
+      {
+        "story": "Anthropic IPO oversubscribed and excludes China and Hong Kong investors",
+        "decision": "covered",
+        "reason": "Anthropic IPO already has many jobs; better to cover the November 19 listing itself."
+      },
+      {
+        "story": "Jensen Huang comeback and Nvidia leadership coverage (FT, Reuters, Guardian, Steve Blank)",
+        "decision": "covered",
+        "reason": "Already queued as 2026-11-15-jensen-huang-weighs-nvidia-return and earlier Nvidia jobs."
+      },
+      {
+        "story": "Hacker News Who is Hiring near 12-year lows",
+        "source": "https://www.hntrends.com/2026/november.html",
+        "decision": "skipped",
+        "reason": "Still no second source; left for a daytime run."
+      },
+      {
+        "story": "Reel search: viral AI and robot clips of November 15 and 16",
+        "decision": "skipped",
+        "reason": "Search turned up only older clips; nothing new passed the Reels filter."
       }
     ],
     "requests": []
