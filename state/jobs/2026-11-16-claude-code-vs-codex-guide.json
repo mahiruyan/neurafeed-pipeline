@@ -15,9 +15,24 @@
       "status": "render_failed",
       "at": "2026-11-16T13:13:52.377Z",
       "by": "system"
+    },
+    {
+      "status": "rendered",
+      "at": "2026-11-16T15:06:52.847Z",
+      "by": "system"
+    },
+    {
+      "status": "approved",
+      "at": "2026-11-16T15:06:52.847Z",
+      "by": "auto: 5 source(s), not sensitive"
+    },
+    {
+      "status": "site_only",
+      "at": "2026-11-16T15:08:11.202Z",
+      "by": "website only, not posted to Instagram"
     }
   ],
-  "status": "render_failed",
+  "status": "site_only",
   "files": [
     "out/2026-11-16-claude-code-vs-codex-guide/1.jpg",
     "out/2026-11-16-claude-code-vs-codex-guide/2.jpg",
@@ -29,9 +44,17 @@
     "slide 1 badge 1: logo check skipped (fal vision: \"User is locked. Reason: Exhausted balance. Top up your balance at fal.ai/dashboard/billing.\")",
     "slide 1 badge 2: logo check skipped (fal vision: \"User is locked. Reason: Exhausted balance. Top up your balance at fal.ai/dashboard/billing.\")"
   ],
-  "updated_at": "2026-11-16T13:13:52.377Z",
-  "by": "auto: 5 source(s), not sensitive",
+  "updated_at": "2026-11-16T15:08:11.202Z",
+  "by": "website only, not posted to Instagram",
   "error": "fetch failed",
   "render_attempts": 1,
-  "gave_up": false
+  "gave_up": false,
+  "tg_messages": [
+    4143,
+    4144,
+    4145,
+    4146,
+    4147,
+    4148
+  ]
 }
