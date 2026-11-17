@@ -1,61 +1,5 @@
 [
   {
-    "run_at": "2026-11-10T02:54:20.936Z",
-    "summary": "Late run (21:53 New York, Monday): no new jobs. Today is already over the 8 post cap, no new priority 1 story appeared since the last run, and all links and requests were already handled.",
-    "considered": [
-      {
-        "story": "Jensen Huang's letter to Nvidia staff about the affair (top of Hacker News)",
-        "source": "https://nvidianews.nvidia.com/news/a-message-to-our-company",
-        "decision": "covered",
-        "reason": "The memo is already covered in 2026-11-08-nvidia-board-probes-huang-alleged-spy and 2026-11-09-trump-calls-huang-honorable."
-      },
-      {
-        "story": "NYT: Commerce probe of Megaspeed moved to the Justice Department after Nvidia intervened",
-        "decision": "skipped",
-        "reason": "A third Huang follow-up in two days; today's cap is full. Worth a look tomorrow if it grows."
-      },
-      {
-        "story": "Anthropic releases Claude Fable 5.2 and Mythos 5.2",
-        "source": "https://www.anthropic.com/claude-fable-and-mythos-5-2",
-        "decision": "covered",
-        "reason": "Posted as 2026-11-09-claude-fable-5-2-mythos-5-2-v2."
-      },
-      {
-        "story": "Meta Muse Ember beats Claude Haiku at a third of the cost",
-        "source": "https://research.meta.ai/blog/muse-ember",
-        "decision": "covered",
-        "reason": "Posted as 2026-11-09-meta-muse-ember-third-of-haiku-cost."
-      },
-      {
-        "story": "Gemini docs say personal Drive files and Gmail can go to human reviewers",
-        "decision": "skipped",
-        "reason": "Only an updated help page surfaced through a GitHub tracker, no news outlet yet; good everyone story to recheck tomorrow with two sources."
-      },
-      {
-        "story": "Disney and Adobe team up on custom Firefly models built on Disney IP",
-        "source": "https://news.adobe.com",
-        "decision": "skipped",
-        "reason": "Priority 2 business deal and today's cap is full; can be considered for tomorrow."
-      },
-      {
-        "story": "Fireworks AI confirms a second breach with model weights leaked",
-        "decision": "skipped",
-        "reason": "Niche developer security news with one small outlet as source; cap full."
-      },
-      {
-        "story": "EU draft Digital Fairness Act would target AI companion bots",
-        "decision": "skipped",
-        "reason": "Draft EU rule with little direct US impact; cap full."
-      },
-      {
-        "story": "Study finds half of ChatGPT and Gemini stock picks land in just 10 stocks",
-        "decision": "skipped",
-        "reason": "Still only one small outlet; recheck tomorrow for a second source."
-      }
-    ],
-    "requests": []
-  },
-  {
     "run_at": "2026-11-10T04:57:31.329Z",
     "summary": "Late run (23:55 New York, Monday): queued two news carousels for Tuesday's morning window: Anthropic retracting its IPO price range (priority 1) and Australia's new AI reporting rules after OpenAI's Medicare breach (sensitive, for Mahir's approval). No open links or requests.",
     "considered": [
@@ -5513,6 +5457,59 @@
         "story": "Viral AI fake video of Sky News presenter Yalda Hakim",
         "decision": "skipped",
         "reason": "Reposting a political deepfake as a Reel would spread it."
+      }
+    ],
+    "requests": []
+  },
+  {
+    "run_at": "2026-11-17T02:54:37.271Z",
+    "summary": "Late Monday run (21:50 New York): nothing queued. No open links or requests; today's carousel, site-only and guide slots are already full, and every fresh lead checked was either old news or already covered.",
+    "considered": [
+      {
+        "story": "SpaceX buys Anysphere (Cursor) for $60 billion (456X evening brief)",
+        "source": "https://www.marketreview.com/news/spacex-cursor-acquisition/",
+        "decision": "skipped",
+        "reason": "Old news: the deal closed on August 14, 2026; the brief only repeated it."
+      },
+      {
+        "story": "AMD completes World Labs deal, Fei-Fei Li becomes AMD chief scientist",
+        "source": "https://fortune.com/2026/09/28/amd-acquires-world-labs-startup-fei-fei-li-8-2-billion/",
+        "decision": "skipped",
+        "reason": "Deal was announced September 28; closing is a minor update for insiders and today's site-only slots are full."
+      },
+      {
+        "story": "Google plans to buy $10 billion of Anthropic shares at the IPO",
+        "source": "https://dataconomy.com/2026/11/12/google-and-nvidia-commit-10-billion-each-to-anthropic-ipo/",
+        "decision": "skipped",
+        "reason": "Reported November 12 and the Anthropic IPO has many posts this month; better saved for the debut itself."
+      },
+      {
+        "story": "OpenAI contracts 457 MW of AMD GPU capacity through TensorWave",
+        "source": "https://456xresearch.substack.com/p/456x-semi-ai-evening-brief-november",
+        "decision": "skipped",
+        "reason": "Infrastructure deal that mostly insiders follow, only read in one newsletter, and site-only slots are full."
+      },
+      {
+        "story": "OpenAI expands its science grant program to 200,000 scientists",
+        "source": "https://456xresearch.substack.com/p/456x-semi-ai-evening-brief-november",
+        "decision": "skipped",
+        "reason": "Program news for a niche audience, one source read, and today's site-only slots are full; could be a site article tomorrow if the official post confirms it."
+      },
+      {
+        "story": "Anthropic cuts its bug disclosure window to 30 days",
+        "source": "https://thenextweb.com/news/anthropic-disclosure-window-30-days-ai-vulnerabilities",
+        "decision": "skipped",
+        "reason": "Security policy change that mostly insiders follow; site-only slots for today are full."
+      },
+      {
+        "story": "California sues OpenAI over rogue AI agents",
+        "decision": "covered",
+        "reason": "Already queued as 2026-11-16-california-sues-openai-rogue-agents."
+      },
+      {
+        "story": "Reel search",
+        "decision": "skipped",
+        "reason": "Reddit leads are empty and no fresh X or company clip passing the Reels filter was found from this run."
       }
     ],
     "requests": []
