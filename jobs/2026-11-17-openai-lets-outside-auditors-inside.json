@@ -1,0 +1,84 @@
+{
+  "id": "2026-11-17-openai-lets-outside-auditors-inside",
+  "created_at": "2026-11-17T07:20:00Z",
+  "story_time": "2026-11-16T17:39:00Z",
+  "timely": false,
+  "sensitive": false,
+  "priority": 2,
+  "site_only": true,
+  "format": "carousel",
+  "site_category": "companies",
+  "ab": { "headline": "short", "photo": "story" },
+  "sources": [
+    { "name": "The Neuron", "url": "https://www.theneuron.ai/news/openai-outsiders-catch-ai-deception/" },
+    { "name": "Superpower Daily", "url": "https://superpowerdaily.com/posts/apollo-will-embed-six-researchers-at-openai-to-investigate-ai-subversion" },
+    { "name": "36Kr", "url": "https://eu.36kr.com/en/p/4073249958777989" }
+  ],
+  "caption": "OpenAI is letting four outside safety groups work inside the company: Apollo Research, METR, Transluce and Goodfire.\nThey get internal models, training records and safety systems, and Apollo is sending six researchers for four months to look for hidden deception.\nOpenAI says it will not hide findings just because they make it look bad.\n\nWould you trust an AI company's safety audit if the company picks the auditors?\n\nFollow @neurafeed.ai for daily AI news.\n\nSource: The Neuron · Photo: Privacy Needle",
+  "threads_text": "OpenAI just let four outside safety groups inside its labs, with access to internal models and training records. Apollo is sending six researchers for four months to hunt for hidden deception. Does an audit count if the company still picks who the auditors can talk to?",
+  "slides": [
+    {
+      "kind": "cover",
+      "headline": "OpenAI just let outside auditors *inside its labs*",
+      "image": {
+        "url": "https://privacyneedle.com/wp-content/uploads/2026/11/privacy-needle-openai-gpt-6-astra-safety-research-obstruction.webp",
+        "credit": "Privacy Needle",
+        "fallback_urls": ["https://techcrunch.com/wp-content/uploads/2026/09/openai-getty.jpg?resize=1200,800"]
+      }
+    },
+    {
+      "kind": "card",
+      "heading": "Four groups, *one lab*",
+      "paras": [
+        "Apollo Research, METR, Transluce and Goodfire signed on for what OpenAI calls embedded assessments.",
+        "They get selected internal models, training records and safety systems. Some can interview employees."
+      ],
+      "image": {
+        "url": "https://media.thenextweb.com/2026/09/openai-logo-smartphone-laptop-zac-wolff-unsplash.jpg",
+        "credit": "Zac Wolff / Unsplash via The Next Web",
+        "fallback_urls": []
+      }
+    },
+    {
+      "kind": "card",
+      "heading": "Hunting for *hidden deception*",
+      "paras": [
+        "Apollo sends six researchers for four months to test whether training teaches models to deceive. METR reviews OpenAI's largest reinforcement learning run yet.",
+        "Transluce checks if safety tests catch score gaming."
+      ],
+      "image": {
+        "url": "https://9to5mac.com/wp-content/uploads/sites/6/2026/09/chatgpt-codex-gpt-6-astra-1.webp?w=1600",
+        "credit": "9to5Mac",
+        "fallback_urls": []
+      }
+    },
+    {
+      "kind": "cta",
+      "hook": "Follow to see what the auditors find when their reports come out."
+    }
+  ],
+  "site_article": {
+    "headline": "OpenAI brings four outside safety groups inside the company for embedded assessments",
+    "dek": "Apollo Research, METR, Transluce and Goodfire get access to internal models and training records, with limits on what they can publish.",
+    "summary": "OpenAI said on November 16, 2026 that it signed agreements with Apollo Research, METR, Transluce and Goodfire for a first phase of what it calls embedded assessments. Apollo will place six researchers inside the company for four months to study whether training teaches models deceptive behavior.",
+    "seo_title": "OpenAI embeds Apollo, METR, Transluce and Goodfire for safety audits",
+    "seo_description": "OpenAI gives four outside safety groups access to internal models and training records. What each one will study and what they can publish.",
+    "answer_summary": "OpenAI is letting four independent safety organizations work inside the company with access to selected internal models, training records and safety systems, so they can look for deceptive or unsafe model behavior during development rather than only before launch.",
+    "tags": ["OpenAI", "AI safety", "Apollo Research", "METR", "Transluce", "Goodfire"],
+    "hero_alt": "The OpenAI logo in white on a black background with red light streaks.",
+    "paragraphs": [
+      { "kind": "fact", "text": "OpenAI has signed agreements with four independent organizations, Apollo Research, METR, Transluce and Goodfire, for the first phase of a program it calls embedded assessments, the company announced on November 16, 2026. The groups will review the company's models and safety work from inside OpenAI instead of only testing finished models before release.", "sources": [0, 1] },
+      { "kind": "fact", "text": "According to The Neuron, the researchers receive access to selected internal models, training records and safety systems, and some of them can interview OpenAI employees. 36Kr, citing OpenAI president Greg Brockman, described it as the company's first round of embedded assessments.", "sources": [0, 2] },
+      { "kind": "heading", "text": "What each group will study" },
+      { "kind": "fact", "text": "Apollo Research is sending six researchers to work inside OpenAI for four months. Their questions are whether training creates incentives for models to undermine the safeguards meant to keep them under human control, whether safety tests can expose that behavior, whether it shows up when models are used internally, and whether the reasoning behind it can be detected. For the training work, Apollo is promised access to code, datasets, reinforcement learning records and saved model versions, Superpower Daily reported.", "sources": [0, 1] },
+      { "kind": "fact", "text": "METR will examine OpenAI's largest reinforcement learning training run to date, looking for behavior that conflicts with the goals developers intended. Goodfire, which works on interpretability, will study what happens inside models during training to explain the processes behind their behavior. Transluce will spend six weeks testing whether OpenAI's safety evaluations can catch deception, manipulation or attempts to game scoring.", "sources": [0, 2] },
+      { "kind": "heading", "text": "Limits on access and publication" },
+      { "kind": "fact", "text": "OpenAI agreed that it cannot withhold findings simply because they reflect badly on the company. It can restrict sensitive material for technical, security or intellectual property reasons, but it must say what it withholds and why. It can also redact confidential evidence from public reports, while full reports go to the Safety and Security Committee of its board.", "sources": [0, 1] },
+      { "kind": "fact", "text": "Apollo plans two public reports, and OpenAI may redact evidence but not Apollo's conclusions. Apollo also secured what it calls meta-transparency, the right to describe access limits, redactions and any pressure it believes shaped its work without prior review by OpenAI. Transluce can discuss findings about released models but not about models used only internally.", "sources": [0, 1] },
+      { "kind": "fact", "text": "The terms leave OpenAI with real influence. The company chooses which staff Apollo may speak with, although Apollo can suggest names, and claims drawn from employee conversations need OpenAI's confirmation before publication unless Apollo verifies them independently. Apollo acknowledged that the agreement does not yet meet every requirement for a fully independent evaluation. Apollo and Goodfire are paid, with payment not tied to their findings, while METR and Transluce take no money but may receive computing resources or API credits.", "sources": [0, 1] },
+      { "kind": "fact", "text": "The program follows earlier outside work at the company. In October, METR and Redwood Research found weaknesses in an earlier version of OpenAI's agent monitoring system, including one that could keep hundreds of recent agent actions from reaching the monitor. OpenAI said most were patched, but METR has not independently verified the fixes, The Neuron reported.", "sources": [0] },
+      { "kind": "analysis", "text": "In NeuraFeed's reading, the agreement moves outside review closer to the point where problems are created, inside training, rather than at launch. Its value will depend on how much the public reports can show after redactions, and on whether the auditors use their right to describe what they were not allowed to see." },
+      { "kind": "why_it_matters", "text": "Apollo's two public reports, due after its four month stay, will be the first test of how much an embedded auditor can say about a frontier lab's training process." }
+    ]
+  }
+}

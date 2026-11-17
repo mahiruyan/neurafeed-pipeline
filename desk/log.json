@@ -1,69 +1,5 @@
 [
   {
-    "run_at": "2026-11-10T07:03:54.107Z",
-    "summary": "Early run (01:55 New York, Tuesday): queued a Boston Dynamics Atlas Reel, a SpaceX $24 billion Starbase power plant carousel and a jailbroken AI agent hacking carousel (sensitive, for Mahir's approval). No open links or requests.",
-    "considered": [
-      {
-        "story": "Boston Dynamics puts wheels on Atlas, lands a 360 spin jump (video)",
-        "source": "https://interestingengineering.com/ai-robotics/boston-dynamics-atlas-wheeled-robot",
-        "decision": "queued",
-        "job_id": "2026-11-10-atlas-on-wheels-spin-jump-reel",
-        "priority": 2
-      },
-      {
-        "story": "SpaceX plans a $24 billion gas power plant and super-compute facility at Starbase (Reuters, Bloomberg)",
-        "source": "https://srnnews.com/spacex-plans-24-billion-gas-power-plant-data-center-project-in-texas/",
-        "decision": "queued",
-        "job_id": "2026-11-10-spacex-24-billion-starbase-ai-power-plant",
-        "priority": 2
-      },
-      {
-        "story": "Operation Snowball: jailbroken DeepSeek Flash agent attacked a European telecom for two weeks (Infosecurity Magazine, Malbear Labs)",
-        "source": "https://www.infosecurity-magazine.com/news/operation-snowball-ai-telecom/",
-        "decision": "queued",
-        "job_id": "2026-11-10-jailbroken-ai-agent-hacked-telecom",
-        "priority": 2
-      },
-      {
-        "story": "Gemini docs say personal Drive files and Gmail can go to human reviewers (HN 466 points)",
-        "source": "https://github.com/thisisme6598/gemini_files/",
-        "decision": "skipped",
-        "reason": "Still only a GitHub repo and small aggregators, no news outlet has confirmed it yet; recheck in a daytime run."
-      },
-      {
-        "story": "Google ties school Search access to Gemini, then backs off",
-        "decision": "covered",
-        "reason": "Already covered as 2026-11-03-google-schools-no-ai-no-search, and Google has since softened the policy."
-      },
-      {
-        "story": "Apple capped engineers at a $200 daily AI budget",
-        "decision": "covered",
-        "reason": "Already covered as 2026-11-05-apple-cuts-engineers-ai-budget."
-      },
-      {
-        "story": "Fireworks AI confirms second breach with partial model weights leaked",
-        "decision": "skipped",
-        "reason": "Niche developer platform story, and today already has an AI hacking post."
-      },
-      {
-        "story": "Qantas cuts 850 jobs in AI-driven Accenture outsourcing deal (Bloomberg)",
-        "decision": "skipped",
-        "reason": "Australian company with limited US interest, and Australia already features today."
-      },
-      {
-        "story": "Nvidia GR00T 2 robot model hits 71% one-shot success",
-        "decision": "skipped",
-        "reason": "Research benchmark with little appeal for general users; the Atlas Reel covers robotics today."
-      },
-      {
-        "story": "Claude Fable 5.2 and Mythos 5.2",
-        "decision": "covered",
-        "reason": "Posted as 2026-11-09-claude-fable-5-2-mythos-5-2-v2."
-      }
-    ],
-    "requests": []
-  },
-  {
     "run_at": "2026-11-10T08:57:37.816Z",
     "summary": "Early run (04:20 New York, Tuesday): queued one news carousel on Google's Gemini help pages saying human reviewers may see Gmail and Drive data. No open links or requests; no new video found for a Reel.",
     "considered": [
@@ -5514,6 +5450,73 @@
         "story": "Reel search: viral AI, robot and gadget clips of November 16",
         "decision": "skipped",
         "reason": "Reddit leads are empty and X cannot be opened from this run; no clip with a downloadable X or company URL passed the Which Reels travel filter."
+      }
+    ],
+    "requests": []
+  },
+  {
+    "run_at": "2026-11-17T07:18:15.708Z",
+    "summary": "Early run (02:20 New York, Nov 17): no open links or requests; queued 1 site-only article (OpenAI embeds four outside safety groups). No Instagram carousel or Reel passed the bar; guides start at 07:00.",
+    "considered": [
+      {
+        "story": "OpenAI signs Apollo Research, METR, Transluce and Goodfire for embedded safety assessments",
+        "source": "https://www.theneuron.ai/news/openai-outsiders-catch-ai-deception/",
+        "decision": "queued",
+        "job_id": "2026-11-17-openai-lets-outside-auditors-inside",
+        "priority": 2,
+        "reason": "Safety news that mostly insiders follow, so site-only; three sources read."
+      },
+      {
+        "story": "OpenAI launches ChatGPT Wallet (new wave of coverage overnight)",
+        "decision": "covered",
+        "reason": "Already posted as 2026-11-13-chatgpt-wallet-agents-spend-money."
+      },
+      {
+        "story": "California sues OpenAI over rogue AI agents (more coverage)",
+        "decision": "covered",
+        "reason": "Already queued as 2026-11-16-california-sues-openai-rogue-agents."
+      },
+      {
+        "story": "Reuters: China trains AI on US model answers",
+        "decision": "covered",
+        "reason": "Already queued as 2026-11-17-china-distills-us-ai-models."
+      },
+      {
+        "story": "36Kr: GPT-6.2 Astra delay and Astra underperformance numbers",
+        "source": "https://eu.36kr.com/en/p/4073249958777989",
+        "decision": "skipped",
+        "reason": "Astra underperformance was covered on Nov 5, and 36Kr's numbers differ from OpenAI's own report, so only its embedded assessment facts were used."
+      },
+      {
+        "story": "AI cameras in the West Midlands caught nearly 19,000 possible offenses, including a driver drinking wine (BBC)",
+        "source": "https://www.yahoo.com/news/us/articles/ai-cameras-could-tackle-widespread-071135038.html",
+        "decision": "skipped",
+        "reason": "UK trial from March, re-reported Nov 15; little US interest and only one source read."
+      },
+      {
+        "story": "Anthropic $3.4 billion gas generator deal (FT)",
+        "decision": "skipped",
+        "reason": "Reported November 9, old news resurfacing in feeds."
+      },
+      {
+        "story": "Meta sued over AI-assisted layoff decisions",
+        "decision": "skipped",
+        "reason": "Lawsuit was filed in July 2026; not new."
+      },
+      {
+        "story": "Gemini lets users keep chat history without training",
+        "decision": "skipped",
+        "reason": "Could not confirm a new announcement; search results described the 2025 Keep Activity change."
+      },
+      {
+        "story": "Gemini Notebook turns research into interactive websites (Android Authority)",
+        "decision": "skipped",
+        "reason": "Small feature update for insiders and the article could not be confirmed with a second source in this run."
+      },
+      {
+        "story": "Reel search: viral AI, robot and gadget clips",
+        "decision": "skipped",
+        "reason": "Reddit leads are empty and X cannot be opened from this run; no downloadable clip passing the Which Reels travel filter was found."
       }
     ],
     "requests": []
