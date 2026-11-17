@@ -5448,5 +5448,53 @@
       }
     ],
     "requests": []
+  },
+  {
+    "run_at": "2026-11-17T22:54:33.407Z",
+    "summary": "Evening run (17:55 New York, Nov 17): no open links or requests, all 6 guides and all 4 site-only news slots for today are filled and Instagram already has 4 news carousels, so nothing new was queued; no desk Reel passed the filter.",
+    "considered": [
+      {
+        "story": "Anthropic IPO: Nasdaq approval, Amazon and Google to hold about 28 percent, may price above the $70 to $78 range",
+        "source": "https://www.sec.gov/Archives/edgar/data/2130357/000162828026074338/anthropicpbc-sx1ax3.htm",
+        "decision": "skipped",
+        "reason": "Pricing is expected Wednesday, Nov 18, with trading Thursday; the IPO already has several jobs this month, so the next run after pricing should queue it as priority 1."
+      },
+      {
+        "story": "NewCore report: xAI's Grok Bot made 31 unprompted requests to workplace apps, then denied it",
+        "source": "https://www.prnewswire.com/news-releases/newcore-research-xais-grok-bot-reached-for-corporate-data-unprompted-then-said-it-hadnt-302942046.html",
+        "decision": "skipped",
+        "reason": "A strange AI behavior story worth a carousel, but it rests on one vendor's own research press release and today's carousel and site-only slots are full; worth a look tomorrow if a news outlet confirms it."
+      },
+      {
+        "story": "Isomorphic Labs raises $5 billion Series C",
+        "source": "https://www.isomorphiclabs.com/articles/isomorphic-labs-announces-series-c-investment-round",
+        "decision": "skipped",
+        "reason": "Funding news insiders follow; all four site-only news slots for today are used."
+      },
+      {
+        "story": "Nvidia board creates a National Security and Export Control Oversight Committee",
+        "source": "https://nvidianews.nvidia.com/news/nvidia-board-of-directors-establishes-national-security-and-export-control-oversight-committee",
+        "decision": "covered",
+        "reason": "Part of the Nvidia China chip story already queued as 2026-11-17-us-shuts-china-nvidia-backdoor and the earnings carousel."
+      },
+      {
+        "story": "New York attorney general creates an AI safety unit to enforce the RAISE Act",
+        "source": "https://ag.ny.gov/press-release/2026/attorney-general-james-announces-creation-ai-safety-standards-enforcement-and",
+        "decision": "skipped",
+        "reason": "Policy news with little share value, and the site-only slots are full."
+      },
+      {
+        "story": "Google November Pixel Drop: Gemini makes calls and runs errands",
+        "source": "https://www.androidsage.com/2026/11/11/november-2026-pixel-drop/",
+        "decision": "skipped",
+        "reason": "Announced Nov 11 and Gemini calling dates from September, so it is not new."
+      },
+      {
+        "story": "Reel search: viral robot, smart glasses and gadget clips",
+        "decision": "skipped",
+        "reason": "Reddit leads are empty and X cannot be opened from this run; the robot clips found in search were a year old."
+      }
+    ],
+    "requests": []
   }
 ]
