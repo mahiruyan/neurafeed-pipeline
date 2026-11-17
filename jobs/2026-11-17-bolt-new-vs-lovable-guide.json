@@ -1,0 +1,297 @@
+{
+  "id": "2026-11-17-bolt-new-vs-lovable-guide",
+  "format": "utility",
+  "site_only": true,
+  "created_at": "2026-11-17T13:25:00Z",
+  "story_time": "2026-11-17T13:25:00Z",
+  "timely": false,
+  "sensitive": false,
+  "priority": 2,
+  "sources": [
+    {
+      "name": "Lovable Docs: Plans and credits",
+      "url": "https://docs.lovable.dev/introduction/plans-and-credits"
+    },
+    {
+      "name": "Lovable Docs: Subscription plans",
+      "url": "https://docs.lovable.dev/introduction/subscription-plans"
+    },
+    {
+      "name": "Lovable Docs: Modes",
+      "url": "https://docs.lovable.dev/features/modes"
+    },
+    {
+      "name": "Lovable Docs: FAQ",
+      "url": "https://docs.lovable.dev/introduction/faq"
+    },
+    {
+      "name": "Bolt Support: Intro to Bolt",
+      "url": "https://support.bolt.new/building/intro-bolt"
+    },
+    {
+      "name": "Bolt Support: Tokens",
+      "url": "https://support.bolt.new/account-and-subscription/tokens"
+    },
+    {
+      "name": "Bolt: Pricing",
+      "url": "https://www.bolt.new/pricing"
+    },
+    {
+      "name": "Expo: Bolt and Expo integration",
+      "url": "https://expo.dev/blog/bolt-expo-integration-announcement"
+    },
+    {
+      "name": "Banani: Lovable vs Bolt, same prompt test",
+      "url": "https://www.banani.co/blog/lovable-vs-bolt-comparison"
+    }
+  ],
+  "caption": "Bolt.new and Lovable both build an app from a plain-English prompt, and both start at $25 a month.\nLovable makes web apps with a built-in backend. Bolt also makes phone apps through Expo.\nHere is how the free plans, limits and results compare.\n\nWhich one would you build your first app with?\n\nFollow @neurafeed.ai for daily AI news.\n\nSource: Lovable, Bolt, Expo, Banani · Photo: Banani",
+  "threads_text": "Bolt.new and Lovable both turn a prompt into an app for $25 a month. Bolt's free plan gives far more room to experiment and can do phone apps; Lovable builds the database and login for you. Which one would you try first?",
+  "slides": [
+    {
+      "kind": "cover",
+      "headline": "Bolt.new vs Lovable: *which AI app builder* to pick",
+      "image": {
+        "url": "https://framerusercontent.com/images/w4dmOR9UEYH0lHzc4C5sj77rto.png?width=2400&height=1284",
+        "credit": "Banani",
+        "fallback_urls": [
+          "https://framerusercontent.com/images/X7STa0NAyIaUEyOCjBkAxLkNbTk.png"
+        ]
+      },
+      "pos": "center center"
+    },
+    {
+      "kind": "card",
+      "heading": "1. Same price, *different meters*",
+      "paras": [
+        "Both Pro plans cost $25 a month. Lovable starts at 100 credits; Bolt starts at 10 million tokens.",
+        "On Lovable each Build message costs credits by usage. On Bolt bigger projects burn more tokens per message."
+      ],
+      "image": {
+        "url": "https://framerusercontent.com/images/EEwQfnr7JbJpgHlnBG6ixCwNzVE.png",
+        "credit": "Banani",
+        "fit": "contain"
+      }
+    },
+    {
+      "kind": "card",
+      "heading": "2. Bolt has the *bigger free plan*",
+      "paras": [
+        "Bolt Free gives 1 million tokens a month, up to 300K a day.",
+        "Lovable Free gives 5 build credits a day, capped at 30 a month, and you cannot edit the code yourself."
+      ],
+      "image": {
+        "url": "https://framerusercontent.com/images/0QLygVlfLVE8DSCBFHSFQj53Rs.png",
+        "credit": "Banani",
+        "fit": "contain"
+      }
+    },
+    {
+      "kind": "card",
+      "heading": "3. Only Bolt does *phone apps*",
+      "paras": [
+        "Bolt builds iOS and Android apps through its Expo template.",
+        "Lovable builds web apps only. Its docs say to make them mobile friendly or wrap them with another tool."
+      ],
+      "image": {
+        "url": "https://cdn.sanity.io/images/9r24npb8/production/5e51084a6e219fe05b89d0aedf00509a9e7d36cc-2400x1350.png?auto=format&fit=max&q=75&w=1200",
+        "credit": "Expo",
+        "fit": "contain"
+      }
+    },
+    {
+      "kind": "card",
+      "heading": "4. Same prompt, *two results*",
+      "paras": [
+        "In Banani's March test, Bolt answered in about 30 seconds but left inner screens blank.",
+        "Lovable took about 60 seconds and filled its charts and tiles with data."
+      ],
+      "image": {
+        "url": "https://framerusercontent.com/images/zwHbA4sqhx4xmSr35sDW0rTqsQ.png",
+        "credit": "Banani",
+        "fit": "contain",
+        "fallback_urls": [
+          "https://framerusercontent.com/images/ldH5EpffGKAWXSBzHtBI9JbVjI.png"
+        ]
+      }
+    },
+    {
+      "kind": "cta",
+      "hook": "Follow for one AI tool explained every day."
+    }
+  ],
+  "site_article": {
+    "kind": "guide",
+    "headline": "Bolt.new vs Lovable: which AI app builder to pick, plans compared",
+    "dek": "Both turn a plain-English prompt into a working app for $25 a month. Bolt has the roomier free plan and can make phone apps; Lovable handles the backend for you and plans before it builds.",
+    "summary": "Bolt.new and Lovable both build apps from a description, and both Pro plans start at $25 a month. Bolt meters work in tokens and supports mobile apps through Expo, while Lovable meters work in credits and builds web apps with a built-in database and login.",
+    "seo_title": "Bolt.new vs Lovable: which AI app builder to pick",
+    "seo_description": "Bolt.new vs Lovable compared: free plans, tokens vs credits, $25 Pro plans, mobile apps, backend, code access and which one fits your project.",
+    "answer_summary": "Pick Bolt.new if you want a bigger free plan, a phone app through Expo, or to edit code yourself without paying. Pick Lovable if you want a web app with database, login and hosting handled for you and like to review a plan before anything is built.",
+    "tags": [
+      "Bolt.new",
+      "Lovable",
+      "AI app builders",
+      "Vibe coding",
+      "Guides"
+    ],
+    "hero_alt": "Comparison graphic showing the Lovable and Bolt names side by side on a colored background.",
+    "paragraphs": [
+      {
+        "kind": "fact",
+        "text": "Bolt.new vs Lovable is the choice most people hit when they want to build an app by describing it. Lovable calls itself an AI development platform that builds full-stack web apps from plain language, then hosts them. Bolt, made by StackBlitz, is an AI builder for websites, web apps and mobile apps that runs entirely in your browser, so there is nothing to install.",
+        "sources": [
+          3,
+          4
+        ]
+      },
+      {
+        "kind": "analysis",
+        "text": "This guide uses each company's own docs and pricing page, the Expo announcement about Bolt's mobile support and one independent test that ran the same prompt in both tools. Prices and allowances change often, so check the pricing page before you pay."
+      },
+      {
+        "kind": "heading",
+        "text": "Bolt.new vs Lovable: the short answer"
+      },
+      {
+        "kind": "analysis",
+        "text": "If you are trying things out with no budget, start with Bolt. Its free plan is much larger and lets you edit code by hand. If you want a web app with a database, sign-in and hosting set up for you, and you would rather approve a plan before the AI touches anything, start with Lovable. If you need an app in the App Store, Bolt is the only one of the two that builds native mobile apps."
+      },
+      {
+        "kind": "heading",
+        "text": "Free plans: tokens vs credits"
+      },
+      {
+        "kind": "fact",
+        "text": "Bolt's Free plan costs nothing and needs no card. It gives 1 million tokens a month, which reset on the 1st, plus a separate daily limit of 300,000 tokens. It also includes hosting for up to 333,000 web requests, unlimited databases, up to three collaborators and Bolt branding on your site. When you hit the daily limit you can still edit your code in Code view, which does not use tokens.",
+        "sources": [
+          5,
+          6
+        ]
+      },
+      {
+        "kind": "fact",
+        "text": "Lovable's Free plan gives 5 build credits a day, capped at 30 a month, plus a small monthly grant of 20 Cloud credits and 4 AI credits for running the app's backend and AI features. Free projects can be private and synced to Git, and publishing to a lovable.app address is free. What Free does not include: editing the code yourself, a custom domain and removing the \"Edit with Lovable\" badge.",
+        "sources": [
+          0,
+          1,
+          3
+        ]
+      },
+      {
+        "kind": "tip",
+        "text": "Thirty credits a month is enough to test Lovable on one small idea, not to finish a real app. Plan the app in Chat mode first so your build messages count."
+      },
+      {
+        "kind": "heading",
+        "text": "Paid plans compared"
+      },
+      {
+        "kind": "fact",
+        "text": "Lovable Pro costs $25 a month, or $250 a year, and starts at 100 credits a month. Business costs $50 a month, or $500 a year, with the same credit tiers. Both scale up to 10,000 credits a month at a much higher price. Unused monthly credits roll over while you stay subscribed and expire two months after they are issued on monthly plans. Daily credits do not roll over. Pro and Business can buy top-ups, which last 12 months.",
+        "sources": [
+          0,
+          1
+        ]
+      },
+      {
+        "kind": "fact",
+        "text": "Bolt Pro costs $25 a month and starts at 10 million tokens with no daily cap. It adds custom domains, removes Bolt branding, raises hosting to 1 million web requests and the upload limit to 100MB. Teams costs $30 per member per month, and tokens are not shared between members. Unused paid tokens roll over and stay valid for two months; if you cancel, you lose access to them when the billing cycle ends.",
+        "sources": [
+          5,
+          6
+        ]
+      },
+      {
+        "kind": "analysis",
+        "text": "The two meters are hard to compare directly. A Lovable credit pays for a unit of agent work, and Bolt's token count grows with the size of your project, because Bolt reads and syncs your files on every message. Small apps go further on Bolt; on Lovable, cost depends more on how much each request asks for."
+      },
+      {
+        "kind": "heading",
+        "text": "How each one builds"
+      },
+      {
+        "kind": "fact",
+        "text": "Lovable has three modes. Chat mode is for talking through ideas with no plan and no code changes. Plan mode investigates and writes a plan you can edit and approve before anything is built; each Plan message costs one credit plus any research. Build mode, the default, makes and checks the changes, can run for up to 10 hours per message and is priced by usage with no estimate up front.",
+        "sources": [
+          2,
+          0
+        ]
+      },
+      {
+        "kind": "fact",
+        "text": "Bolt runs on WebContainers inside the browser and builds full-stack apps with JavaScript web frameworks. Bolt Cloud handles databases, hosting and domains, creates a database when your app needs one and gives every project a free bolt.host address. You can edit files directly in Code view on desktop and connect GitHub for version control.",
+        "sources": [
+          4
+        ]
+      },
+      {
+        "kind": "fact",
+        "text": "Lovable apps created since May 13, 2026 use TanStack Start and render pages on the server, and every project uses a PostgreSQL database. The built-in backend includes the database, login and file storage, or you can connect your own Supabase project. Git sync creates a new repository from your project; it cannot connect one you already have. Paid plans can also download the code as a ZIP file.",
+        "sources": [
+          3
+        ]
+      },
+      {
+        "kind": "heading",
+        "text": "Mobile apps"
+      },
+      {
+        "kind": "fact",
+        "text": "This is the clearest difference. Bolt builds iOS and Android apps through its Expo integration: you pick the Expo starter template, describe the app and preview it as you go. Lovable says plainly that it builds web apps, not native apps. Its docs suggest making the app mobile friendly, turning it into a Progressive Web App, or wrapping it with a tool such as Capacitor outside Lovable.",
+        "sources": [
+          7,
+          3
+        ]
+      },
+      {
+        "kind": "heading",
+        "text": "What a side by side test found"
+      },
+      {
+        "kind": "fact",
+        "text": "Banani gave both tools the same prompt in March 2026: a mobile bill-splitting app with a dark mode toggle, a donut chart and tabs. Bolt produced its first version in about 30 seconds and iterated faster, but only its sign-in screen worked and the inner screens were blank. Lovable took about 60 seconds and filled its charts and tiles with data. The reviewer suggested Lovable for prototypes to show a team and Bolt for production work.",
+        "sources": [
+          8
+        ]
+      },
+      {
+        "kind": "analysis",
+        "text": "One test with one prompt is not a verdict, and both tools have changed since March. Treat it as a sign of each tool's habits: Lovable aims for a finished-looking first screen, Bolt aims for speed and leaves more for you to fill in."
+      },
+      {
+        "kind": "heading",
+        "text": "How to choose in 15 minutes"
+      },
+      {
+        "kind": "step",
+        "title": "1. Write one short spec",
+        "text": "Describe your app in five or six lines: who uses it, the main screens, what data it stores and whether people sign in. Use the same text in both tools."
+      },
+      {
+        "kind": "step",
+        "title": "2. Run it in Bolt Free",
+        "text": "Paste the spec, let Bolt build, then open Code view and fix one small thing by hand. Watch how many tokens the first build used."
+      },
+      {
+        "kind": "step",
+        "title": "3. Run it in Lovable Free",
+        "text": "Paste the same spec in Plan mode first, approve the plan, then let Build mode make it. Note how many credits it took."
+      },
+      {
+        "kind": "step",
+        "title": "4. Decide by your next step",
+        "text": "Need a phone app or want to code yourself: Bolt. Need a web app with login and data handled for you: Lovable. Then pay for one month, not a year."
+      },
+      {
+        "kind": "prompt",
+        "title": "A starter prompt for either tool",
+        "text": "Build a [type of app] for [who uses it]. Screens: [screen 1], [screen 2], [screen 3]. Users sign in with email. Store [the data, for example tasks with a title, due date and status]. Keep the design simple and mobile friendly. Before writing code, list the pages and data tables you plan to create."
+      },
+      {
+        "kind": "tip",
+        "text": "Both tools are weakest on large, messy projects. Keep each request to one change, and connect GitHub early so you always have a copy of the code."
+      }
+    ]
+  }
+}

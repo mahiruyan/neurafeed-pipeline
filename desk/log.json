@@ -1,149 +1,5 @@
 [
   {
-    "run_at": "2026-11-10T11:20:32.233Z",
-    "summary": "Desk run 05:56 New York: queued 1 carousel (Skyfall's AI CEO Steve). Today now has 7 desk jobs; no open links or requests.",
-    "considered": [
-      {
-        "story": "Skyfall AI unveils Steve, an AI CEO it says runs three acquired online businesses, plus a $2M program to buy 5 startups",
-        "source": "https://www.webwire.com/ViewPressRel.asp?aId=363914",
-        "decision": "queued",
-        "job_id": "2026-11-10-ai-ceo-steve-runs-three-businesses",
-        "priority": 2
-      },
-      {
-        "story": "Moonshot reportedly rents Nvidia B300 servers in China, possibly breaching US export rules (Bloomberg)",
-        "source": "https://www.bloomberg.com/news/articles/2026-11-10/moonshot-rents-nvidia-s-top-ai-chips-in-china-documents-show",
-        "decision": "skipped",
-        "reason": "Paywalled and no second source readable this run; can be revisited later today."
-      },
-      {
-        "story": "SoftBank posts fiscal Q2 loss on Vision Fund write-downs, offset partly by OpenAI stake gains (CNBC)",
-        "source": "https://www.cnbc.com/2026/11/10/softbank-2q-earnings-tech-selloff.html",
-        "decision": "skipped",
-        "reason": "Investor earnings story with little pull for a general US audience; daily cap is close."
-      },
-      {
-        "story": "Study: frontier coding models search git history for answers when tests are hidden (arXiv)",
-        "source": "https://arxiv.org/abs/2611.10404",
-        "decision": "skipped",
-        "reason": "Could not open the paper this run, so the facts could not be confirmed."
-      },
-      {
-        "story": "TSMC reports record October revenue on AI demand",
-        "decision": "skipped",
-        "reason": "Routine monthly revenue figure, little consumer interest."
-      },
-      {
-        "story": "NEAR AI pauses cloud inference after internal breach",
-        "decision": "skipped",
-        "reason": "Niche crypto infrastructure story."
-      },
-      {
-        "story": "Abridge confirms layoffs",
-        "decision": "skipped",
-        "reason": "Small healthcare startup reorganization, low US reach."
-      },
-      {
-        "story": "Trump nominates Palantir CISO Michael LoSapio to lead CISA",
-        "decision": "skipped",
-        "reason": "Security policy appointment with only a weak AI angle."
-      },
-      {
-        "story": "Claude Fable 5.2 and Mythos 5.2",
-        "decision": "covered",
-        "reason": "Already queued as 2026-11-09-claude-fable-5-2-mythos-5-2-v2."
-      },
-      {
-        "story": "Australia mandates AI incident reporting after OpenAI agent breach",
-        "decision": "covered",
-        "reason": "Already queued as 2026-11-10-australia-ai-rogue-reporting-law."
-      },
-      {
-        "story": "SpaceX $24B Starbase gas plant and AI compute project",
-        "decision": "covered",
-        "reason": "Already queued as 2026-11-10-spacex-24-billion-starbase-ai-power-plant."
-      }
-    ],
-    "requests": []
-  },
-  {
-    "run_at": "2026-11-10T13:05:22.892Z",
-    "summary": "Queued the OpenAI Control Room story (priority 1) and the first site-only guide of the day (Zapier AI agents); no open links or requests; today now has 8 desk jobs, so no more news this New York day.",
-    "considered": [
-      {
-        "story": "OpenAI unveils Control Room, cuts off research AI jobs within 35 seconds",
-        "source": "https://interestingengineering.com/ai-robotics/openai-control-room-35-second-model-shutdown",
-        "decision": "queued",
-        "job_id": "2026-11-10-openai-control-room-35-second-stop",
-        "priority": 1
-      },
-      {
-        "story": "Website guide: Zapier AI agents, build your first one",
-        "source": "https://zapier.com/blog/zapier-agents-guide/",
-        "decision": "queued",
-        "job_id": "2026-11-10-zapier-ai-agents-first-agent-guide",
-        "priority": 2
-      },
-      {
-        "story": "Guide plan lines: ChatGPT Atlas how-to and Atlas for Windows",
-        "source": "https://bgr.com/2212396/openai-chatgpt-browser-atlas-discontinued/",
-        "decision": "skipped",
-        "reason": "OpenAI shut Atlas down in August 2026, so a how-to guide would mislead readers."
-      },
-      {
-        "story": "Guide plan lines: Gemini Nano Banana not working, how to use Higgsfield",
-        "decision": "skipped",
-        "reason": "No vendor documentation to support a fix list or a how-to; moved to the next line in guides/plan.md."
-      },
-      {
-        "story": "Survey: 19.1% of US workers replaced by AI were asked back, half demanded big raises (Fortune)",
-        "decision": "skipped",
-        "reason": "Strong everyone story but the day already has 8 desk jobs; good candidate for tomorrow if still fresh."
-      },
-      {
-        "story": "Fireworks AI says hackers accessed customer datasets and models",
-        "decision": "skipped",
-        "reason": "Daily cap reached; niche company for a US consumer audience."
-      },
-      {
-        "story": "NVIDIA GR00T 2 robot model at CoRL",
-        "decision": "skipped",
-        "reason": "Daily cap reached; technical robotics research with no strong video found."
-      },
-      {
-        "story": "Claude Fable 5.2 and Mythos 5.2 launch",
-        "decision": "covered",
-        "reason": "Already queued as 2026-11-09-claude-fable-5-2-mythos-5-2-v2."
-      },
-      {
-        "story": "Gemini routes Drive files and emails to human reviewers",
-        "decision": "covered",
-        "reason": "Already queued as 2026-11-10-gemini-human-reviewers-gmail-drive."
-      },
-      {
-        "story": "Australia orders AI firms to report rogue models after OpenAI breach",
-        "decision": "covered",
-        "reason": "Already queued as 2026-11-10-australia-ai-rogue-reporting-law."
-      },
-      {
-        "story": "Anthropic IPO terms and retracted pricing",
-        "decision": "covered",
-        "reason": "Already posted as 2026-11-10-anthropic-retracts-ipo-price."
-      },
-      {
-        "story": "Apple caps engineers at a $200 daily AI budget",
-        "decision": "covered",
-        "reason": "Already covered as 2026-11-05-apple-cuts-engineers-ai-budget."
-      },
-      {
-        "story": "Google requires schools to enable Gemini in Classroom to keep Search",
-        "decision": "skipped",
-        "reason": "Daily cap reached; close to the 2026-11-09 Gemini school story."
-      }
-    ],
-    "requests": []
-  },
-  {
     "run_at": "2026-11-10T15:07:28.920Z",
     "summary": "Queued 1 site-only guide (How to use DeepSeek safely); no new Instagram news because today's 8 desk jobs are already queued; no open links or requests.",
     "considered": [
@@ -5536,6 +5392,70 @@
         "story": "Reel search: viral AI, robot and gadget clips of November 16 and 17",
         "decision": "skipped",
         "reason": "Reddit leads are empty and X cannot be opened from this run; no downloadable clip passing the Which Reels travel filter was found."
+      }
+    ],
+    "requests": []
+  },
+  {
+    "run_at": "2026-11-17T13:08:48.993Z",
+    "summary": "Morning run (07:55 New York, Nov 17): no open links or requests; queued the first site-only guide of the day (Bolt.new vs Lovable). Both Instagram carousels and all four site-only news slots for today are already used, and no new Reel passed the filter.",
+    "considered": [
+      {
+        "story": "Guide: Bolt.new vs Lovable (next uncovered line in guides/plan.md Tier 2)",
+        "source": "https://docs.lovable.dev/introduction/plans-and-credits",
+        "decision": "queued",
+        "job_id": "2026-11-17-bolt-new-vs-lovable-guide",
+        "priority": 2
+      },
+      {
+        "story": "Guide lines for ChatGPT Atlas, Atlas for Windows and Atlas vs Comet",
+        "source": "https://www.techradar.com/pro/openai-shuts-down-its-atlas-browser-after-not-even-a-year",
+        "decision": "skipped",
+        "reason": "OpenAI discontinued ChatGPT Atlas in July 2026, so a how-to guide would be wrong; Mahir may want to remove these lines from guides/plan.md."
+      },
+      {
+        "story": "Guide line: how to use Sora",
+        "source": "https://9to5google.com/2026/03/24/openai-shutting-down-sora-video-generation-app-but-without-explaining-why/",
+        "decision": "skipped",
+        "reason": "OpenAI shut the Sora app down in 2026, so the guide line is obsolete."
+      },
+      {
+        "story": "Guide line: Gemini Nano Banana not working (fixes)",
+        "decision": "skipped",
+        "reason": "Google has no official troubleshooting page for it, only forum threads and content farms, so the fixes could not be sourced from the vendor."
+      },
+      {
+        "story": "Taiex falls about 8% in two days as TSMC sells off before Nvidia earnings (Focus Taiwan)",
+        "source": "https://focustaiwan.tw/business/202611170018",
+        "decision": "skipped",
+        "reason": "Market story for finance insiders, both carousel slots and all site-only news slots are used; Nvidia's results tonight are the bigger story for a later run."
+      },
+      {
+        "story": "Nvidia reports earnings today at 21:20 UTC",
+        "decision": "skipped",
+        "reason": "Results are not out yet; a later run should cover them as priority 1."
+      },
+      {
+        "story": "Trump posts an AI-generated video of troops praying (Daily Beast, Yahoo)",
+        "source": "https://www.thedailybeast.com/trump-posts-bizarre-ai-generated-troop-video-after-shocking-revelation-on-scale-of-iran-humiliation",
+        "decision": "skipped",
+        "reason": "Politics story and both Instagram carousel slots for today are already used."
+      },
+      {
+        "story": "Unitree H2-X bodyguard robot video (Supercar Blondie, Nov 16)",
+        "source": "https://supercarblondie.com/unitree-robotics-h2-x-humanoid-robot-bodyguard/",
+        "decision": "covered",
+        "reason": "Same clip was already made as 2026-10-21-unitree-h2-x-kung-fu-guardian-reel; a repeat would be a sequel."
+      },
+      {
+        "story": "ChatGPT Wallet, Anthropic IPO, California sues OpenAI, China distillation, Gemini regional voices",
+        "decision": "covered",
+        "reason": "Already covered or decided in earlier runs (see their entries); nothing new since 05:55."
+      },
+      {
+        "story": "Reel search: viral AI, robot and gadget clips of November 16 and 17",
+        "decision": "skipped",
+        "reason": "Reddit leads are empty (HTTP 403) and X cannot be opened from this run; no new downloadable clip passing the Which Reels travel filter was found."
       }
     ],
     "requests": []
