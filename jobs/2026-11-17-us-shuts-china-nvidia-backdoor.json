@@ -1,0 +1,98 @@
+{
+  "id": "2026-11-17-us-shuts-china-nvidia-backdoor",
+  "created_at": "2026-11-17T09:20:00Z",
+  "story_time": "2026-11-16T15:00:00Z",
+  "timely": false,
+  "sensitive": true,
+  "priority": 1,
+  "format": "carousel",
+  "site_category": "policy",
+  "ab": { "headline": "long", "photo": "story" },
+  "sources": [
+    { "name": "Nextgov/FCW", "url": "https://www.nextgov.com/artificial-intelligence/2026/11/commerce-department-moves-close-ai-chip-loophole/417255/" },
+    { "name": "Forbes", "url": "https://forbes.com/sites/zacharyfolk/2026/11/16/us-closes-loophole-that-allowed-china-to-remotely-access-nvidia-chips" },
+    { "name": "Gizmodo", "url": "https://gizmodo.com/trump-admin-moves-to-strangle-chinas-remote-access-to-american-ai-chips-2000840511" }
+  ],
+  "caption": "The Trump administration issued a rule on Monday to close the loophole that let Chinese companies rent advanced Nvidia chips through data centers in other countries.\nData centers now need a license to serve China-based firms, and chip exports to five countries need one too.\nIt is the first policy response to the scandal that pushed Jensen Huang out of Nvidia.\n\nShould renting AI chips be treated the same as buying them?\n\nFollow @neurafeed.ai for daily AI news.\n\nSource: Nextgov/FCW · Photo: Jim Watson / Getty Images",
+  "threads_text": "The U.S. just closed the loophole that let Chinese companies rent top Nvidia chips through data centers in Southeast Asia. It is the first policy response to the scandal that pushed Jensen Huang out of Nvidia. Should renting AI chips count the same as buying them?",
+  "slides": [
+    {
+      "kind": "cover",
+      "headline": "After the Nvidia spy scandal, the U.S. shut the *back door* China used to rent Nvidia chips",
+      "image": {
+        "url": "https://gizmodo.com/app/uploads/2026/11/TrumpandLutnick.jpeg",
+        "credit": "Jim Watson / Getty Images",
+        "fallback_urls": ["https://gizmodo.com/app/uploads/2026/11/TrumpandLutnick-1200x675.jpeg"]
+      },
+      "pos": "center 25%",
+      "badges": [
+        { "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b2/Jensen_huang_stanford_2026-04-30_010.jpg/1280px-Jensen_huang_stanford_2026-04-30_010.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail", "fit": "cover", "pos": "center 25%" },
+        { "url": "assets/logos/nvidia.png", "fit": "contain" }
+      ]
+    },
+    {
+      "kind": "card",
+      "heading": "The *rented chip* back door",
+      "paras": [
+        "Chinese firms cannot buy Nvidia's best chips directly, so some rented them from data centers in Southeast Asia instead.",
+        "A Commerce rule issued Monday makes those data centers get a license before serving China-based companies."
+      ],
+      "image": { "url": "https://gizmodo.com/app/uploads/2026/11/data-center-1280x853.jpg", "credit": "via Gizmodo" }
+    },
+    {
+      "kind": "card",
+      "heading": "Five countries *on the list*",
+      "paras": [
+        "Exporting advanced chips to Indonesia, Malaysia, Singapore, Thailand and Brazil now needs a license.",
+        "Data centers already serving Chinese companies get 90 days to obtain one. Public comments are due within 60 days."
+      ],
+      "image": { "url": "https://blogs.nvidia.com/wp-content/uploads/2026/10/gpu-architecture-rolling-blog-kv-ocp-blog-1920x1080-5820310-1680x945.jpg", "credit": "NVIDIA" }
+    },
+    {
+      "kind": "card",
+      "heading": "The *Huang connection*",
+      "paras": [
+        "Jensen Huang quit as Nvidia CEO last week after reports of an affair with a woman U.S. intelligence believes is a Chinese spy.",
+        "She is a former executive of Megaspeed, a Singapore data center firm and Nvidia customer suspected of giving China chip access."
+      ],
+      "image": { "url": "https://gizmodo.com/app/uploads/2026/11/jensen-nvidia-spy-argument1-1280x853.jpg", "credit": "via Gizmodo" }
+    },
+    {
+      "kind": "card",
+      "heading": "A Cabinet *fight*",
+      "paras": [
+        "Treasury Secretary Scott Bessent and Secretary of State Marco Rubio reportedly accused Commerce chief Howard Lutnick of going easy on chip flows to China.",
+        "Huang and Lutnick are expected to testify to the Senate Banking Committee in December."
+      ],
+      "image": { "url": "https://gizmodo.com/app/uploads/2026/11/lutnick-and-bessent-1280x853.jpg", "credit": "via Gizmodo" }
+    },
+    {
+      "kind": "cta",
+      "hook": "Follow to see what Huang and Lutnick tell the Senate in December."
+    }
+  ],
+  "site_article": {
+    "headline": "U.S. closes loophole that let Chinese firms rent Nvidia chips abroad",
+    "dek": "A new Commerce Department rule requires licenses for remote access by China-based companies and for chip exports to five countries, days after Jensen Huang left Nvidia.",
+    "summary": "The Commerce Department issued an interim final rule on November 16, 2026, that requires data centers to obtain a license before giving remote access to advanced AI chips to companies headquartered in China. Advanced chip exports to Indonesia, Malaysia, Singapore, Thailand and Brazil now also need a license.",
+    "seo_title": "U.S. closes China remote access loophole for Nvidia AI chips",
+    "seo_description": "A Commerce rule now requires licenses for data centers serving China-based firms and for AI chip exports to Indonesia, Malaysia, Singapore, Thailand and Brazil.",
+    "answer_summary": "The loophole let Chinese companies rent advanced Nvidia chips through data centers in other countries. A rule issued November 16, 2026, requires a license for that remote access and for chip exports to five countries.",
+    "tags": ["Nvidia", "Export controls", "China", "Commerce Department", "Jensen Huang", "Howard Lutnick"],
+    "hero_alt": "President Trump speaking at a podium at the swearing-in ceremony for Commerce Secretary Howard Lutnick.",
+    "paragraphs": [
+      { "kind": "fact", "text": "The Commerce Department's Bureau of Industry and Security issued an interim final rule on Monday, November 16, 2026, aimed at a gap in U.S. export controls that allowed Chinese companies to use advanced AI chips without buying them. According to Nextgov/FCW, the rule requires data centers to obtain a license before they provide remote access to companies headquartered in China or other restricted destinations.", "sources": [0] },
+      { "kind": "fact", "text": "Chinese companies are generally barred from purchasing Nvidia's most advanced chips directly. Some have instead rented computing power from data centers in Southeast Asia, Nextgov/FCW reported. Commerce pointed to rapid advances in cloud computing as the reason for the change, Forbes reported.", "sources": [0, 1] },
+      { "kind": "heading", "text": "What the rule requires" },
+      { "kind": "fact", "text": "Beyond remote access, the rule adds a license requirement for exports of advanced chips to Indonesia, Malaysia, Singapore, Thailand and Brazil. Forbes reported that the requirement also covers any country the U.S. considers a higher than normal risk of diversion. Gizmodo reported that exports to companies headquartered in the United States, or owned by a U.S. parent, are exempt.", "sources": [0, 1, 2] },
+      { "kind": "fact", "text": "Data centers that already serve companies covered by the rule have 90 days from its effective date to obtain a license. Public comments are due within 60 days. The rule also formally rescinds the regulations that implemented the Biden administration's AI Diffusion Rule, which the Trump administration had already said it would not enforce. A Commerce press release said the rule was written by and at the direction of the Treasury Department and the National Security Council, according to Nextgov/FCW.", "sources": [0] },
+      { "kind": "fact", "text": "Gizmodo reported that the administration said it would actively monitor chip flows and would consider consequences for countries that allow diversion, including possible new import restrictions.", "sources": [2] },
+      { "kind": "heading", "text": "The link to the Nvidia scandal" },
+      { "kind": "fact", "text": "Nextgov/FCW described the rule as the administration's first policy response to the scandal around Jensen Huang, who resigned as Nvidia's chief executive the previous week. Forbes reported that Huang's affair was linked to a woman described as an alleged Chinese intelligence asset and a former executive at Megaspeed, a Singapore data center company and Nvidia customer that had been under suspicion of giving China access to advanced Nvidia chips.", "sources": [0, 1] },
+      { "kind": "fact", "text": "The rule also follows tension inside the Cabinet. Gizmodo reported that Treasury Secretary Scott Bessent and Secretary of State Marco Rubio had accused Commerce Secretary Howard Lutnick of being too lenient on illicit chip flows to China, and that Lutnick has said he hesitated over fears of escalating the trade war. Nextgov/FCW reported that Senator Maria Cantwell of Washington wrote to Lutnick on November 15 urging immediate action on chips reaching companies with ties to China.", "sources": [0, 2] },
+      { "kind": "fact", "text": "Huang and Lutnick are expected to testify at closed-door hearings of the Senate Banking Committee in December, according to Forbes and Gizmodo. Forbes also reported that President Trump said on November 16 that he would not mind seeing Huang reinstated at Nvidia.", "sources": [1, 2] },
+      { "kind": "analysis", "text": "The rule treats rented computing power much like a physical chip sale, which closes the most obvious route around earlier controls. It also arrives while Nvidia is led by an interim chief executive, and it adds a licensing step to chip sales in five countries that had not needed one." },
+      { "kind": "why_it_matters", "text": "The 60 day comment window and the December Senate Banking hearings will show whether the rule is tightened, softened or paired with new penalties for countries where chips are diverted." }
+    ]
+  }
+}

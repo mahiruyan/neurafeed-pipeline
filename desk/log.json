@@ -5520,5 +5520,74 @@
       }
     ],
     "requests": []
+  },
+  {
+    "run_at": "2026-11-17T08:57:29.042Z",
+    "summary": "Early run (04:20 New York, Nov 17): no open links or requests; queued 1 Instagram carousel (U.S. closes the rented Nvidia chip loophole, sensitive, needs approval) and 1 site-only article (Gemini Gems go read-only). No Reel passed the filter; guides start at 07:00.",
+    "considered": [
+      {
+        "story": "Commerce rule closes the remote access loophole that let Chinese firms rent Nvidia chips abroad, first policy response to the Huang scandal",
+        "source": "https://www.nextgov.com/artificial-intelligence/2026/11/commerce-department-moves-close-ai-chip-loophole/417255/",
+        "decision": "queued",
+        "job_id": "2026-11-17-us-shuts-china-nvidia-backdoor",
+        "priority": 1,
+        "reason": "Politics, money and the Nvidia scandal; second Instagram carousel of the day, marked sensitive (politics). Nextgov, Forbes and Gizmodo read."
+      },
+      {
+        "story": "Gemini Gems become read-only on November 17 and are removed December 17 as skills take over",
+        "source": "https://support.google.com/gemini/answer/18560919",
+        "decision": "queued",
+        "job_id": "2026-11-17-gemini-gems-read-only-today",
+        "priority": 2,
+        "reason": "Product change for Gemini users, so site-only; Google help page, Google blog, MIXED and The Decoder read. A later guide on moving Gems to skills would fit."
+      },
+      {
+        "story": "OpenAI releases a free tool to detect child abuse images",
+        "source": "https://www.techinasia.com",
+        "decision": "skipped",
+        "reason": "Could not find the new announcement itself in this run, only older child safety blueprint pages, so no second source."
+      },
+      {
+        "story": "Anthropic $64.4B IPO and Nvidia earnings this week",
+        "decision": "skipped",
+        "reason": "Previews only; better covered when Nvidia reports and Anthropic prices or debuts."
+      },
+      {
+        "story": "Sam Altman says he wants everyone to have a lot of RAM",
+        "decision": "skipped",
+        "reason": "Light remark with no clear news hook; not confirmed with a second source."
+      },
+      {
+        "story": "OpenAI paid $773.6 million for Effingham County land (Effingham Herald)",
+        "decision": "skipped",
+        "reason": "Local records story, one source, and today's site-only slots are already well used."
+      },
+      {
+        "story": "Fireworks AI breach exposed data from Uber, Notion and Cursor (PYMNTS)",
+        "decision": "covered",
+        "reason": "Same breach covered as 2026-11-15-cursor-breach-traced-to-fireworks-key."
+      },
+      {
+        "story": "California sues OpenAI over rogue AI agents (more coverage)",
+        "decision": "covered",
+        "reason": "Already queued as 2026-11-16-california-sues-openai-rogue-agents."
+      },
+      {
+        "story": "Reuters: China trains AI on US model answers (more coverage)",
+        "decision": "covered",
+        "reason": "Already queued as 2026-11-17-china-distills-us-ai-models."
+      },
+      {
+        "story": "Claude cut an AMD GPU migration from one year to three days",
+        "decision": "covered",
+        "reason": "Already covered as 2026-11-12-claude-ported-itself-to-amd-3-days."
+      },
+      {
+        "story": "Reel search: viral AI, robot and gadget clips",
+        "decision": "skipped",
+        "reason": "Reddit leads are empty and X cannot be opened from this run; no downloadable clip passing the Which Reels travel filter was found."
+      }
+    ],
+    "requests": []
   }
 ]

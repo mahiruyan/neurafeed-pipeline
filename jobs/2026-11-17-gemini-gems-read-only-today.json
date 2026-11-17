@@ -1,0 +1,78 @@
+{
+  "id": "2026-11-17-gemini-gems-read-only-today",
+  "created_at": "2026-11-17T09:20:00Z",
+  "story_time": "2026-11-17T08:00:00Z",
+  "timely": false,
+  "sensitive": false,
+  "priority": 2,
+  "site_only": true,
+  "format": "carousel",
+  "site_category": "companies",
+  "ab": { "headline": "short", "photo": "story" },
+  "sources": [
+    { "name": "Google Gemini Help", "url": "https://support.google.com/gemini/answer/18560919" },
+    { "name": "Google Blog", "url": "https://blog.google/products-and-platforms/products/gemini/automate-tasks-with-skills/" },
+    { "name": "MIXED", "url": "https://mixed-news.com/en/gemini-gems-removed-november-skills-canvas-deep-research/" },
+    { "name": "The Decoder", "url": "https://the-decoder.com/google-drops-gems-for-skills-joining-openai-and-anthropic-in-the-shift-to-agent-ready-prompt-formats/" }
+  ],
+  "caption": "Gemini Gems on personal Google accounts become read-only on November 17. You can still open them, but you cannot use, edit or create them.\nGoogle removes them on December 17 and turns them into skills automatically.\nDownload any Gem knowledge files before then.\n\nDid you build any Gems you rely on?\n\nFollow @neurafeed.ai for daily AI news.\n\nSource: Google · Photo: Google",
+  "threads_text": "Gemini Gems go read-only on November 17 and disappear on December 17. Google says it will turn them into skills automatically, but skills still do not work with Canvas or Deep Research. Are you moving your Gems now or waiting for the automatic switch?",
+  "slides": [
+    {
+      "kind": "cover",
+      "headline": "Your Gemini Gems *stop working* today",
+      "image": {
+        "url": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Skills_thumbnail.width-1300.png",
+        "credit": "Google",
+        "fallback_urls": ["https://the-decoder.com/wp-content/uploads/2026/07/google_gemini-1.png"]
+      }
+    },
+    {
+      "kind": "card",
+      "heading": "Read-only from *November 17*",
+      "paras": [
+        "Gems on personal Google accounts are now read-only. You can open them, but you cannot use, edit or create them.",
+        "On December 17, Google removes them for good."
+      ],
+      "image": { "url": "https://cdn.mos.cms.futurecdn.net/YbEALjJaoaob9xBzSm3yzb.jpg", "credit": "Brady Snyder / Android Central" }
+    },
+    {
+      "kind": "card",
+      "heading": "Skills *take over*",
+      "paras": [
+        "Google says it will turn your Gems into skills automatically. Skills are saved instructions you call with a slash and their name.",
+        "Download Gem knowledge files before December 17. Skills do not work with Canvas or Deep Research yet."
+      ],
+      "image": { "url": "https://the-decoder.com/wp-content/uploads/2026/07/google_gemini-1.png", "credit": "The Decoder" }
+    },
+    {
+      "kind": "cta",
+      "hook": "Follow for more changes coming to the AI apps you use every day."
+    }
+  ],
+  "site_article": {
+    "headline": "Gemini Gems become read-only as Google moves users to skills",
+    "dek": "Personal account Gems can no longer be used or edited from November 17, 2026, and Google plans to remove them on December 17.",
+    "summary": "Google's Gemini Gems on personal accounts became read-only on November 17, 2026, and will be removed on December 17, 2026. Google says it will convert existing Gems into skills automatically, but some file types and features do not carry over.",
+    "seo_title": "Gemini Gems read-only: what changes and when they go away",
+    "seo_description": "Gemini Gems turned read-only on November 17, 2026 and will be removed December 17. What moves to skills, what does not, and the dates for work accounts.",
+    "answer_summary": "From November 17, 2026, Gems on personal Google accounts can be viewed but not used, edited or created. Google removes them on December 17, 2026, and converts them into skills automatically.",
+    "tags": ["Google", "Gemini", "Gems", "Gemini skills"],
+    "hero_alt": "Google promotional graphic for skills in the Gemini app.",
+    "paragraphs": [
+      { "kind": "fact", "text": "Google's Gemini Gems, the custom assistants people set up with their own instructions and files, became read-only on personal Google accounts on November 17, 2026. According to Google's Gemini help center, users can still open their Gems but can no longer use them, edit them or create new ones. Google plans to remove them entirely on December 17, 2026.", "sources": [0] },
+      { "kind": "fact", "text": "The change is the final stage of a plan Google announced on September 30, 2026, when it introduced skills in the Gemini app and said they would replace Gems as the main way to tailor Gemini to a specific task. The company said at the time that it would migrate existing Gems into skills automatically when Gems went away.", "sources": [1, 3] },
+      { "kind": "heading", "text": "How skills differ from Gems" },
+      { "kind": "fact", "text": "Skills are saved sets of instructions that a user calls up by typing a forward slash and the skill's name in the prompt bar. Google says Gemini can also create a skill from an earlier chat and run it automatically when a matching request appears. Several skills can be combined in one conversation, and a skill can hold reference files such as text documents, PDFs and images.", "sources": [1, 2] },
+      { "kind": "fact", "text": "Skills use the open SKILL.md format, which The Decoder noted originated with Anthropic. Users can create as many skills as they want, but only 100 can be active at the same time, according to Google's help center and MIXED.", "sources": [0, 2, 3] },
+      { "kind": "heading", "text": "What does not carry over" },
+      { "kind": "fact", "text": "Google's help center says skills do not yet work with Canvas, Deep Research, video creation, music creation or Guided Learning, all features that worked inside Gems. Each skill has a 100 MB limit for files, and Google says it removes the largest files first when a converted Gem exceeds that limit. GitHub files, audio, video, older Office formats such as .doc, .xls and .ppt, and compressed archives do not transfer.", "sources": [0, 2] },
+      { "kind": "fact", "text": "Google advises users to download knowledge files from their Gems before December 17, 2026. Users who do not want to wait for the automatic conversion can rebuild a Gem by hand from the Skills page by copying its name, description and instructions into a new skill. Sharing permissions on a Gem carry over to the skill, and Gems shared by others appear on the Skills page as inactive until the user accepts them.", "sources": [0] },
+      { "kind": "fact", "text": "Gems made by Google Labs and the Opal mini app builder were also turned off on November 17, 2026, and they do not convert into skills, MIXED reported. Opal workflow files remain in an Opal folder in the owner's Google Drive.", "sources": [1, 2] },
+      { "kind": "heading", "text": "Dates for other accounts" },
+      { "kind": "fact", "text": "The November and December dates apply to personal accounts of users 18 and older. Google Workspace business, enterprise and nonprofit accounts keep Gems until March 2027, and education accounts until June 2027. Google has not yet given a date for personal accounts of users under 18.", "sources": [0, 1] },
+      { "kind": "analysis", "text": "For most people the switch should be quiet, because the conversion is automatic. The real cost falls on users whose Gems depended on Canvas, Deep Research or large file libraries, since those parts will not behave the same way after the move." },
+      { "kind": "why_it_matters", "text": "December 17, 2026 is the date to watch: after it, Gem knowledge files that were not downloaded or converted will no longer be available." }
+    ]
+  }
+}
