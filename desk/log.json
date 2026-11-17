@@ -1,114 +1,5 @@
 [
   {
-    "run_at": "2026-11-10T08:57:37.816Z",
-    "summary": "Early run (04:20 New York, Tuesday): queued one news carousel on Google's Gemini help pages saying human reviewers may see Gmail and Drive data. No open links or requests; no new video found for a Reel.",
-    "considered": [
-      {
-        "story": "Google's Gemini help pages say human reviewers may see a subset of connected Gmail and Drive data; GitHub write-up says Gemini pulls emails in without being asked",
-        "source": "https://support.google.com/gemini/answer/16836988?hl=en",
-        "decision": "queued",
-        "job_id": "2026-11-10-gemini-human-reviewers-gmail-drive",
-        "priority": 2
-      },
-      {
-        "story": "ChatGPT Desktop forwards your SSH agent to remote machines (HN)",
-        "source": "https://news.ycombinator.com/item?id=50422628",
-        "decision": "skipped",
-        "reason": "Only a Hacker News thread, no news coverage found, and too technical for most followers."
-      },
-      {
-        "story": "Nvidia's Jim Fan teases uncut autonomous robot demo at CoRL (possible Reel)",
-        "source": "https://www.tokenpost.com/news/technology/52169",
-        "decision": "skipped",
-        "reason": "Could not open the video or a reliable article about it; GR00T 2 was already skipped as niche and today has the Atlas Reel."
-      },
-      {
-        "story": "Mac mini powers a capable robot without human training (AppleInsider)",
-        "source": "https://appleinsider.com/articles/26/11/09/how-a-mac-mini-powers-a-staggeringly-capable-robot-without-human-training",
-        "decision": "skipped",
-        "reason": "Article could not be opened, so no facts or video to build a Reel from; recheck in a daytime run."
-      },
-      {
-        "story": "Nvidia board has no successor and weak oversight, Semafor reports",
-        "source": "https://www.semafor.com/article/11/09/2026/with-a-weak-board-and-no-successor-nvidia-confronts-a-governance-crisis",
-        "decision": "skipped",
-        "reason": "The Jensen Huang scandal already had many posts yesterday; another angle would repeat it."
-      },
-      {
-        "story": "Authorization Drift Benchmark: AI agents exceed their allowed scope in 43 to 61 percent of runs",
-        "source": "https://huggingface.co/papers/2611.09124",
-        "decision": "skipped",
-        "reason": "Research paper only, and today already has two rogue AI agent stories."
-      },
-      {
-        "story": "PhysicsWallah cuts jobs, says AI writes 90 percent of its code",
-        "source": "https://entrackr.com/news/physicswallah-cites-ai-efficiencies-for-job-cuts-offline-biz-faces-profit-pressure-earmarks-20-mn-for-ma-12795872",
-        "decision": "skipped",
-        "reason": "Indian edtech company with little US recognition."
-      },
-      {
-        "story": "Fireworks AI confirms second breach",
-        "decision": "skipped",
-        "reason": "Niche developer platform, and today already has an AI hacking post."
-      },
-      {
-        "story": "Anthropic retracts IPO price range",
-        "decision": "covered",
-        "reason": "Already queued as 2026-11-10-anthropic-retracts-ipo-price."
-      },
-      {
-        "story": "Anthropic buys $3.4 billion of gas generators",
-        "decision": "covered",
-        "reason": "Already covered as 2026-11-08-anthropic-buys-3-4-billion-gas-generators."
-      }
-    ],
-    "requests": []
-  },
-  {
-    "run_at": "2026-11-10T09:14:00.848Z",
-    "summary": "Link desk: queued Mahir's reel link-2026-11-10-3201 (Autism Capital clip, his hook, credit X/mom_agency).",
-    "considered": [
-      {
-        "story": "Reel from @AutismCapital post 'This is such a deep cut'",
-        "source": "https://x.com/autismcapital/status/2119867773816086612",
-        "decision": "queued",
-        "job_id": "2026-11-10-deep-cut-clip-reel",
-        "priority": 1,
-        "reason": "Could not open the video; used Mahir's note. The clip carries @AutismCapital's post; credited X/mom_agency as asked. Skull emoji left out of the hook."
-      }
-    ],
-    "requests": []
-  },
-  {
-    "run_at": "2026-11-10T10:23:15.621Z",
-    "summary": "Link desk: queued Mahir's X video link as a Reel (review).",
-    "considered": [
-      {
-        "story": "Hot CEO in Your Area pop-up meme video (@AutismCapital)",
-        "source": "https://x.com/autismcapital/status/2119877529037414648",
-        "decision": "queued",
-        "job_id": "2026-11-10-hot-ceo-popup-reel",
-        "priority": 1,
-        "reason": "Could not open the video; hook and caption come from the preview image and his note. Credit @pleometric per his note, via @AutismCapital. Needs his review."
-      }
-    ],
-    "requests": []
-  },
-  {
-    "run_at": "2026-11-10T10:25:00.472Z",
-    "summary": "Link desk: queued 1 Reel from Mahir's X link (Jensen meme clip). Could not open the post; built from his note and the existing Huang coverage.",
-    "considered": [
-      {
-        "story": "Jensen Huang's wife meme clip (@AutismCapital)",
-        "source": "https://x.com/autismcapital/status/2119870753453818324",
-        "decision": "queued",
-        "job_id": "2026-11-10-jensen-wife-moving-reel",
-        "priority": 1
-      }
-    ],
-    "requests": []
-  },
-  {
     "run_at": "2026-11-10T11:20:32.233Z",
     "summary": "Desk run 05:56 New York: queued 1 carousel (Skyfall's AI CEO Steve). Today now has 7 desk jobs; no open links or requests.",
     "considered": [
@@ -5584,6 +5475,65 @@
       },
       {
         "story": "Reel search: viral AI, robot and gadget clips",
+        "decision": "skipped",
+        "reason": "Reddit leads are empty and X cannot be opened from this run; no downloadable clip passing the Which Reels travel filter was found."
+      }
+    ],
+    "requests": []
+  },
+  {
+    "run_at": "2026-11-17T10:56:33.148Z",
+    "summary": "Morning run (05:55 New York, Nov 17): no open links or requests; queued 1 site-only article (FBI warns the Artex AI hacking tool breaches networks in under three hours, sensitive). Both Instagram carousels for today are already queued, no Reel passed the filter, and guides start at 07:00.",
+    "considered": [
+      {
+        "story": "FBI flash advisory: Artex AI pentesting tool used by attackers, some reaching privileged access in under three hours",
+        "source": "https://techcrunch.com/2026/11/16/fbi-says-artex-ai-open-source-hacking-tool-used-to-breach-networks-in-under-three-hours/",
+        "decision": "queued",
+        "job_id": "2026-11-17-fbi-ai-hacking-tool-three-hours",
+        "priority": 2,
+        "reason": "Security news that mostly insiders follow, so site-only (fourth and last site-only news slot today); TechCrunch, Inc. and Android Headlines read. Marked sensitive (crime). Images could not be previewed from this run."
+      },
+      {
+        "story": "Nvidia unveils the Rubin HPC GPU with more than 50,000 CUDA cores, arriving in 2028 (Tom's Hardware)",
+        "source": "https://www.tomshardware.com/pc-components/gpus/nvidia-announces-rubin-hpc-gpu-with-record-number-of-cuda-cores-at-supercomputing-2026-new-chip-accelerates-agentic-hpc-workloads-arrives-in-2028",
+        "decision": "skipped",
+        "reason": "Supercomputing chip for 2028 that only insiders follow, and today's site-only slots are now full."
+      },
+      {
+        "story": "Jensen Huang's daughter Madison remains in a senior Nvidia role (New York Times)",
+        "source": "https://www.nytimes.com/2026/11/16/technology/nvidia-jensen-madison-huang.html",
+        "decision": "skipped",
+        "reason": "Another angle on the Huang saga, which already has many jobs in the last 3 days, and both carousel slots are used."
+      },
+      {
+        "story": "Aschenbrenner's Situational Awareness fund reloaded on AI stocks before they plunged (CNBC)",
+        "source": "https://www.cnbc.com/2026/11/16/situational-awareness-aschenbrenner-new-ai-bets.html",
+        "decision": "skipped",
+        "reason": "Money story, but both Instagram carousel slots for today are already used and it is mainly for finance insiders."
+      },
+      {
+        "story": "Anthropic says Claude cut AMD GPU onboarding to about three days (Tom's Hardware)",
+        "decision": "covered",
+        "reason": "Already noted as covered in the 04:20 run."
+      },
+      {
+        "story": "OpenAI and Jony Ive's hardware team lease a large San Francisco office; OpenAI CFO on the unplanned raise",
+        "decision": "skipped",
+        "reason": "Already skipped in earlier runs today for the same reasons; nothing new."
+      },
+      {
+        "story": "Xiaomi humanoids work an 8-hour EV factory shift (Reel candidate)",
+        "decision": "skipped",
+        "reason": "Posted November 3 and still no X post URL found to download the clip."
+      },
+      {
+        "story": "Nothing teases its screenless AI device (Reel candidate)",
+        "source": "https://9to5google.com/2026/11/12/nothings-screen-less-new-gadget-really-looks-like-yet-another-ai-recorder/",
+        "decision": "skipped",
+        "reason": "Official teaser from November 12 with no surprising shot; fails the Reels filter."
+      },
+      {
+        "story": "Reel search: viral AI, robot and gadget clips of November 16 and 17",
         "decision": "skipped",
         "reason": "Reddit leads are empty and X cannot be opened from this run; no downloadable clip passing the Which Reels travel filter was found."
       }

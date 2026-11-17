@@ -1,0 +1,87 @@
+{
+  "id": "2026-11-17-fbi-ai-hacking-tool-three-hours",
+  "created_at": "2026-11-17T11:20:00Z",
+  "story_time": "2026-11-16T17:36:00Z",
+  "timely": false,
+  "sensitive": true,
+  "priority": 2,
+  "site_only": true,
+  "format": "carousel",
+  "site_category": "policy",
+  "ab": { "headline": "short", "photo": "story" },
+  "sources": [
+    { "name": "TechCrunch", "url": "https://techcrunch.com/2026/11/16/fbi-says-artex-ai-open-source-hacking-tool-used-to-breach-networks-in-under-three-hours/" },
+    { "name": "Inc.", "url": "https://www.inc.com/chloe-aiello/the-fbi-warns-that-hackers-are-using-this-tool-to-break-into-companies-in-under-3-hours/91437543" },
+    { "name": "Android Headlines", "url": "https://www.androidheadlines.com/2026/11/fbi-warns-artex-ai-hacking-tool-cyberattacks.html" }
+  ],
+  "caption": "The FBI warns that hackers are using Artex, an AI tool built for security testing, to break into networks.\nIn some cases attackers went from first target to full access in under three hours.\nIt plugs into large language models, including frontier models from Anthropic and OpenAI.\n\nShould AI companies block their models from running hacking tools like this?\n\nFollow @neurafeed.ai for daily AI news.\n\nSource: TechCrunch · Photo: Dragos Condrea / Getty Images",
+  "threads_text": "The FBI says an AI pentesting tool called Artex is now being used by real attackers, some going from first scan to full access in under three hours. The developer pulled it from GitHub, but copies still circulate. Should AI labs cut off tools like this from their models?",
+  "slides": [
+    {
+      "kind": "cover",
+      "headline": "FBI: an AI tool breaks into networks in *under three hours*",
+      "image": {
+        "url": "https://techcrunch.com/wp-content/uploads/2026/02/china-hacker-computer-flag.jpg",
+        "credit": "Dragos Condrea / Getty Images",
+        "fallback_urls": ["https://techcrunch.com/wp-content/uploads/2026/02/china-hacker-computer-flag.jpg?resize=1200,675"]
+      }
+    },
+    {
+      "kind": "card",
+      "heading": "A testing tool *turned weapon*",
+      "paras": [
+        "Artex was built to automate penetration testing. Users type a goal in plain language and AI agents do the work.",
+        "The FBI says attackers now use it against banks, government, defense and telecom targets."
+      ],
+      "image": {
+        "url": "https://img-cdn.inc.com/image/upload/f_webp,c_fit,w_1920,q_auto/vip/2026/11/fbi-cyber-attack-warning-inc-299759108.jpg",
+        "credit": "Adobe Stock via Inc.",
+        "fallback_urls": ["https://img-cdn.inc.com/image/upload/f_webp,q_auto,c_fit/vip/2026/11/fbi-cyber-attack-warning-inc-299759108.jpg"]
+      }
+    },
+    {
+      "kind": "card",
+      "heading": "Pulled from GitHub, *still out there*",
+      "paras": [
+        "The developer posted Artex in July and pulled it in October. Copies still circulate.",
+        "Researchers found more than 1,600 Artex control panels exposed online."
+      ],
+      "image": {
+        "url": "https://www.androidheadlines.com/wp-content/uploads/2026/01/data-breach-security-hacker-image-4893484389438.jpg",
+        "credit": "Android Headlines",
+        "fallback_urls": []
+      }
+    },
+    {
+      "kind": "cta",
+      "hook": "Follow to know when AI hacking tools hit the companies that hold your data."
+    }
+  ],
+  "site_article": {
+    "headline": "FBI warns that the Artex AI hacking tool is being used to breach networks in under three hours",
+    "dek": "A penetration testing framework that runs on large language models has turned up in attacks on banks, government agencies and tech firms, according to an FBI flash advisory.",
+    "summary": "The FBI has warned that attackers are using Artex, an AI-driven penetration testing framework, against organizations in the United States and abroad. In some cases, the bureau said, intrusions went from first targeting to privileged access in under three hours.",
+    "seo_title": "FBI warns Artex AI hacking tool breaches networks in 3 hours",
+    "seo_description": "The FBI says attackers use Artex, an AI pentesting tool linked to LLMs, to break into networks in under three hours. What it is and how to defend.",
+    "answer_summary": "Artex is an autonomous AI penetration testing framework that turns plain language goals into attack commands. The FBI says criminals and state-linked hackers now use it, and some intrusions reached privileged access in under three hours.",
+    "tags": ["FBI", "Artex", "Cybersecurity", "AI agents", "Hacking"],
+    "hero_alt": "A man sits in front of a computer with a Chinese flag behind him.",
+    "paragraphs": [
+      { "kind": "fact", "text": "The FBI has issued a flash cybersecurity advisory warning that attackers are using Artex, an open-source AI penetration testing framework, to break into organizations in the United States and around the world. TechCrunch and Inc. reported the advisory on November 16, 2026; Inc. said the bureau sent it the previous Friday.", "sources": [0, 1] },
+      { "kind": "fact", "text": "According to the FBI, some intrusions linked to Artex went from initial targeting to privileged access in under three hours. Inc. noted that the bureau framed this as what happened in some cases, and the advisory does not give a typical timeline.", "sources": [0, 1] },
+      { "kind": "heading", "text": "What Artex is" },
+      { "kind": "fact", "text": "Artex was built to automate penetration testing, the authorized simulated attacks companies use to find their own weaknesses. Inc. reported that users set a high-level goal in natural language and the tool turns it into machine commands carried out by what the FBI calls specialized super intelligence agents, with little human input after that.", "sources": [1] },
+      { "kind": "fact", "text": "The framework has no AI model of its own. TechCrunch reported that attackers can connect it to hosted frontier models from Anthropic and OpenAI as well as open-source and non-U.S. models, and Android Headlines listed Claude, ChatGPT and DeepSeek among the models it can use.", "sources": [0, 2] },
+      { "kind": "fact", "text": "A developer released Artex on GitHub in July 2026 and removed the repository in early October after learning it was being abused, according to Inc. and Android Headlines. TechCrunch reported that the developer then made the software closed-source, but the FBI says the earlier open-source version is still widely accessible. Android Headlines also described a paid version called Artex Pro.", "sources": [0, 1, 2] },
+      { "kind": "heading", "text": "Who was hit" },
+      { "kind": "fact", "text": "Inc. reported that the FBI has seen a rise in Artex-driven attacks since August 2026 against government, defense, financial services, energy, telecommunications, semiconductor and health care organizations. TechCrunch listed financial services, government, tech, defense, phone and internet companies and law firms among the targets.", "sources": [0, 1] },
+      { "kind": "fact", "text": "In South Korea, Artex was used against financial institutions that lacked protections such as multi-factor authentication, and the attacks stole personal data of at least 68,000 people, TechCrunch reported. The FBI also confirmed that hackers used Artex to breach IT management firm ConnectWise and reach the Microsoft 365 environments of at least 2,250 of its customers. Microsoft has said those hackers are likely Chinese.", "sources": [0] },
+      { "kind": "fact", "text": "Security company Barracuda disclosed a breach by financially motivated criminals who used an exposed credential from a third-party service that the company had not revoked, according to TechCrunch. Barracuda changed all customer credentials because it could not rule out access to customer data.", "sources": [0] },
+      { "kind": "fact", "text": "Researchers have found more than 1,600 Artex deployments exposed on the public internet, Inc. and Android Headlines reported. Android Headlines said these control panels had no passwords and that CrowdStrike traced some of them to a Chinese espionage group it calls Vapor Panda.", "sources": [1, 2] },
+      { "kind": "heading", "text": "What the FBI recommends" },
+      { "kind": "fact", "text": "The FBI said Artex mostly exploits weak basics: forgotten partner portals, weak or stolen passwords and accounts without multi-factor authentication. The bureau's advice includes taking inventory of internet-facing applications, hardening identity requirements, strengthening application protections and reporting suspicious activity to law enforcement. Android Headlines reported that the advisory came with 13 pages of network indicators.", "sources": [1, 2] },
+      { "kind": "analysis", "text": "The advisory shows that the main change is speed, not new methods. The weaknesses Artex uses are old ones, but an automated agent can test them across many targets at once, which shrinks the time defenders have to notice an intrusion and respond to it." },
+      { "kind": "why_it_matters", "text": "The next thing to watch is whether Anthropic, OpenAI and other model providers detect and block Artex traffic on their platforms, since the tool depends on their models to plan its attacks." }
+    ]
+  }
+}
