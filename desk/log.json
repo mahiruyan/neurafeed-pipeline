@@ -1,145 +1,5 @@
 [
   {
-    "run_at": "2026-11-10T15:07:28.920Z",
-    "summary": "Queued 1 site-only guide (How to use DeepSeek safely); no new Instagram news because today's 8 desk jobs are already queued; no open links or requests.",
-    "considered": [
-      {
-        "story": "Guide plan line: how to use deepseek",
-        "source": "https://cdn.deepseek.com/policies/en-US/deepseek-privacy-policy-2025-02-14.html",
-        "decision": "queued",
-        "job_id": "2026-11-10-how-to-use-deepseek-safely-guide",
-        "priority": 2
-      },
-      {
-        "story": "Google unveils TPU 8tx and TPU 8i Max chips",
-        "source": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/global-network/tpu-8i-max-and-8tx/",
-        "decision": "skipped",
-        "reason": "Daily cap of 8 desk jobs already reached; data center chips mean little to a consumer audience."
-      },
-      {
-        "story": "Moonshot rents top Nvidia B300 chips despite export rules (Bloomberg)",
-        "source": "https://www.bloomberg.com/news/articles/2026-11-10/moonshot-rents-nvidia-s-top-ai-chips-in-china-documents-show",
-        "decision": "skipped",
-        "reason": "Daily cap reached; good candidate for tomorrow if more outlets confirm it."
-      },
-      {
-        "story": "SoftBank swings to a quarterly loss as Vision Fund drops",
-        "source": "https://www.cnbc.com/2026/11/10/softbank-2q-earnings-tech-selloff.html",
-        "decision": "skipped",
-        "reason": "Daily cap reached; finance story with weak pull for our audience."
-      },
-      {
-        "story": "NEAR AI suspends its cloud inference after a breach",
-        "source": "https://www.cryptotimes.io/2026/11/10/near-ai-detects-and-closes-internal-systems-breach-near-protocol-unaffected/",
-        "decision": "skipped",
-        "reason": "Daily cap reached; niche crypto AI company."
-      },
-      {
-        "story": "OpenAI puts ChatGPT Enterprise on AWS Marketplace",
-        "source": "https://openai.com/index/chatgpt-enterprise-aws-marketplace/",
-        "decision": "skipped",
-        "reason": "Enterprise procurement news, no effect on normal users; cap reached."
-      },
-      {
-        "story": "Meituan open-sources 1.6T LongCat-2.5 model",
-        "source": "https://venturebeat.com/technology/meituan-releases-the-open-weights-of-its-longcat-2-5-llm-with-vision-under-a-permissive-mit-license",
-        "decision": "skipped",
-        "reason": "Technical model release with little US consumer interest; cap reached."
-      },
-      {
-        "story": "Abridge clinical AI scribe confirms layoffs",
-        "source": "https://www.modernhealthcare.com/health-tech/mh-abridge-layoffs-realignment-ai/",
-        "decision": "skipped",
-        "reason": "Small layoff at a niche startup; cap reached."
-      },
-      {
-        "story": "OpenAI Control Room stops a model in 35 seconds",
-        "decision": "covered",
-        "reason": "Already posted as 2026-11-10-openai-control-room-35-second-stop."
-      },
-      {
-        "story": "Skyfall AI's Steve-001 runs three businesses",
-        "decision": "covered",
-        "reason": "Already queued as 2026-11-10-ai-ceo-steve-runs-three-businesses."
-      },
-      {
-        "story": "SpaceX $24B Starbase AI power plant",
-        "decision": "covered",
-        "reason": "Already queued as 2026-11-10-spacex-24-billion-starbase-ai-power-plant."
-      },
-      {
-        "story": "Australia AI safety regulator after OpenAI breach",
-        "decision": "covered",
-        "reason": "Already queued as 2026-11-10-australia-ai-rogue-reporting-law."
-      },
-      {
-        "story": "Claude Fable 5.2 and Mythos 5.2",
-        "decision": "covered",
-        "reason": "Already posted as 2026-11-09-claude-fable-5-2-mythos-5-2-v2."
-      }
-    ],
-    "requests": []
-  },
-  {
-    "run_at": "2026-11-10T17:03:48.261Z",
-    "summary": "Desk run 12:20 New York: queued Anthropic's official IPO price range (priority 1, follow-up to the pulled filing post) and the third site-only guide of the day (How to use CapCut AI); no open links or requests.",
-    "considered": [
-      {
-        "story": "Anthropic sets IPO price range of $70 to $78, launches roadshow, up to $1.02 trillion valuation (Reuters, Anthropic)",
-        "source": "https://www.anthropic.com/news/roadshow-launch",
-        "decision": "queued",
-        "job_id": "2026-11-10-anthropic-ipo-price-1-trillion",
-        "priority": 1,
-        "reason": "New official filing after the retracted one we posted overnight (that post promised the real price). Today has 8 desk jobs but two of them never posted (Australia expired, Atlas Reel failed to render), so posts stay under 8."
-      },
-      {
-        "story": "Daily guide: How to use CapCut AI (next line in guides/plan.md)",
-        "source": "https://www.capcut.com/resource/how-to-add-subtitle-in-capcut",
-        "decision": "queued",
-        "job_id": "2026-11-10-how-to-use-capcut-ai-guide",
-        "priority": 2,
-        "reason": "Site-only guide built from CapCut's own instructions and help center plus Descript; does not count toward the cap."
-      },
-      {
-        "story": "CNBC: Anthropic looks to start trading November 19",
-        "source": "https://www.cnbc.com/2026/11/10/anthropic-sets-price-range-of-70-to-78-in-upcoming-ipo.html",
-        "decision": "skipped",
-        "reason": "Could not open the article, so the trading date was left out of the IPO post."
-      },
-      {
-        "story": "Anthropic Fable 5.2 and Mythos 5.2 faster and cheaper (AFP)",
-        "decision": "covered",
-        "reason": "Already posted as 2026-11-09-claude-fable-5-2-mythos-5-2-v2."
-      },
-      {
-        "story": "Anthropic retracts IPO details sent to bankers",
-        "decision": "covered",
-        "reason": "Already posted as 2026-11-10-anthropic-retracts-ipo-price."
-      },
-      {
-        "story": "OpenAI Control Room 35-second stop",
-        "decision": "covered",
-        "reason": "Already posted as 2026-11-10-openai-control-room-35-second-stop."
-      },
-      {
-        "story": "Google requires schools to enable Gemini in Classroom to keep Search",
-        "decision": "skipped",
-        "reason": "Daily cap is effectively reached; good candidate for tomorrow with fresh sources."
-      },
-      {
-        "story": "Survey: AI-replaced workers asked back demand raises (Fortune)",
-        "decision": "skipped",
-        "reason": "Daily cap reached; still a strong everyone story for tomorrow."
-      },
-      {
-        "story": "Qantas to cut 850 jobs as it rushes to keep pace with AI",
-        "decision": "skipped",
-        "reason": "Daily cap reached; layoff story would also need Mahir's approval."
-      }
-    ],
-    "requests": []
-  },
-  {
     "run_at": "2026-11-10T19:04:07.979Z",
     "summary": "Desk run 13:55 New York: queued Google's Gemini 4 Carbon launch (priority 1, uncovered major Google model news) and the fourth site-only guide of the day (How to use n8n for free); no open links or requests. Today has 10 desk jobs, but only 7 desk posts are live or waiting (Australia expired, the Atlas Reel failed to render), so Carbon is the 8th post.",
     "considered": [
@@ -5513,6 +5373,54 @@
         "story": "Reel search: viral AI, robot and gadget clips of November 16 and 17",
         "decision": "skipped",
         "reason": "Reddit leads are empty and X cannot be opened from this run; the robot clips that turned up (XRobotDoll, Xiaomi humanoids) are older or already covered, with no downloadable X post found."
+      }
+    ],
+    "requests": []
+  },
+  {
+    "run_at": "2026-11-17T17:06:58.729Z",
+    "summary": "Midday run (11:55 New York, Nov 17): no open links or requests; queued the third site-only guide of the day (Grok vs ChatGPT). Both Instagram carousels and all four site-only news slots are used, no new priority 1 story since the last run, and no Reel passed the filter.",
+    "considered": [
+      {
+        "story": "Guide: Grok vs ChatGPT (next uncovered Tier 2 line in guides/plan.md, alternating after the Seedance tool library guide)",
+        "source": "https://docs.x.ai/grok/faq.md",
+        "decision": "queued",
+        "job_id": "2026-11-17-grok-vs-chatgpt-guide",
+        "priority": 2
+      },
+      {
+        "story": "Anthropic IPO prices on November 18 at $70 to $78 a share",
+        "source": "https://www.weex.com/learn/articles/anthropic-ipo-ant-prices-nov-18-at-70-78-what-it-means-xa9268s11gk5bzevtbxrsfr3",
+        "decision": "skipped",
+        "reason": "Still a preview; a run after pricing or the first trade should cover it as priority 1."
+      },
+      {
+        "story": "Nvidia reports earnings today at 21:20 UTC",
+        "decision": "skipped",
+        "reason": "Results are not out yet; a run after the report should cover them as priority 1."
+      },
+      {
+        "story": "ChatGPT Wallet lets AI agents pay with Visa, Mastercard and Amex (new coverage)",
+        "source": "https://openai.com/index/introducing-chatgpt-wallet/",
+        "decision": "covered",
+        "reason": "Already covered as 2026-11-13-chatgpt-wallet-agents-spend-money."
+      },
+      {
+        "story": "OpenAI releases an image classifier and 24-hour ChatGPT suspensions to fight CSAM (TechCrunch, Nov 16)",
+        "source": "https://techcrunch.com/2026/11/16/openai-releases-a-new-image-classifier-and-chatgpt-warnings-to-combat-csam",
+        "decision": "skipped",
+        "reason": "Child safety tooling not suited to an Instagram carousel, and all four site-only news slots for today are used."
+      },
+      {
+        "story": "AI-generated clip of Tim Cook unveiling Apple smart glasses goes viral on X (LatestLY fact check)",
+        "source": "https://www.latestly.com/social-viral/fact-check/apple-glasses-fake-video-ai-generated-clip-of-ceo-tim-cook-unveiling-new-smart-glasses-goes-viral-on-x-heres-fact-check-7318632.html",
+        "decision": "skipped",
+        "reason": "No original X post URL found to download, and reposting a deepfake of a real CEO as a Reel risks spreading it."
+      },
+      {
+        "story": "Reel search: viral AI, robot and gadget clips of November 16 and 17",
+        "decision": "skipped",
+        "reason": "Reddit leads are empty (HTTP 403) and X cannot be opened from this run; no new downloadable clip passing the Which Reels travel filter."
       }
     ],
     "requests": []
