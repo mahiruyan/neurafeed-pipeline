@@ -1,75 +1,5 @@
 [
   {
-    "run_at": "2026-11-10T19:04:07.979Z",
-    "summary": "Desk run 13:55 New York: queued Google's Gemini 4 Carbon launch (priority 1, uncovered major Google model news) and the fourth site-only guide of the day (How to use n8n for free); no open links or requests. Today has 10 desk jobs, but only 7 desk posts are live or waiting (Australia expired, the Atlas Reel failed to render), so Carbon is the 8th post.",
-    "considered": [
-      {
-        "story": "Google makes Gemini 4 Carbon available to AI Ultra subscribers and paying developers; Wiz found 0-day flaws in under two hours, intro API price doubles after November 30",
-        "source": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-4-carbon-developers/",
-        "decision": "queued",
-        "job_id": "2026-11-10-gemini-4-carbon-security-holes-2-hours",
-        "priority": 1,
-        "reason": "Major Google model launch not yet covered; sources Google, 9to5Google, Digital Trends, Runtime Wire."
-      },
-      {
-        "story": "Anthropic sets IPO range valuing it at up to $1.4 trillion (Fortune, Guardian, CBC)",
-        "decision": "covered",
-        "reason": "Already queued as 2026-11-10-anthropic-ipo-price-1-trillion."
-      },
-      {
-        "story": "Trump says FBI is looking at Jensen Huang's affair with alleged Chinese agent; TechCrunch timeline",
-        "decision": "covered",
-        "reason": "Huang story already covered several times (2026-11-08-nvidia-board-probes-huang-alleged-spy, 2026-11-09-trump-calls-huang-honorable and Reels)."
-      },
-      {
-        "story": "Ramp hid an AI-only offer on 50 web pages; Claude relayed it 370 times in 32 days, ChatGPT never did (Dealroom)",
-        "source": "https://news.google.com/rss/articles/CBMizAFBVV95cUxNYjZWM1NLMVprNE1SeXN1cFhTTFJxeEUtbU9Wa",
-        "decision": "skipped",
-        "reason": "Fun everyone story but today's posting cap is full; a good candidate for tomorrow if a second source confirms it."
-      },
-      {
-        "story": "OpenAI's use of human reviewers for ChatGPT raises privacy questions (WBUR)",
-        "decision": "skipped",
-        "reason": "Very close to today's Gemini human reviewers post and the day is full."
-      },
-      {
-        "story": "Gemini Robotics 2.5 scores 96 percent sorting parts in a Mercedes-Benz pilot",
-        "decision": "skipped",
-        "reason": "Narrow industrial result and the day is full; Carbon is the bigger Google story."
-      },
-      {
-        "story": "Fireworks AI security breach affects Notion customers",
-        "source": "https://www.notion.com/help/security-incident-involving-a-third-party-ai-vendor",
-        "decision": "skipped",
-        "reason": "Daily cap reached; vendor breach with limited consumer impact described so far."
-      },
-      {
-        "story": "Oracle cancels $7 billion Tencent AI chip deal",
-        "decision": "skipped",
-        "reason": "Daily cap reached; business story with low US consumer interest."
-      },
-      {
-        "story": "Australia mandates AI breach reporting after OpenAI agent infiltration",
-        "decision": "covered",
-        "reason": "Already covered as 2026-11-10-australia-ai-rogue-reporting-law."
-      },
-      {
-        "story": "Website guide: How to use Kling AI (next line in guides/plan.md)",
-        "decision": "skipped",
-        "reason": "Could not reach Kling's own documentation for credits or steps, so a guide would rest on third-party blogs; moved to the next line."
-      },
-      {
-        "story": "Website guide: How to use n8n for free, your first AI agent",
-        "source": "https://docs.n8n.io/choose-n8n/",
-        "decision": "queued",
-        "job_id": "2026-11-10-how-to-use-n8n-free-ai-agent-guide",
-        "priority": 2,
-        "reason": "Fourth site-only guide of the day, built from n8n's docs, template and blog plus Techsy."
-      }
-    ],
-    "requests": []
-  },
-  {
     "run_at": "2026-11-10T20:51:47.821Z",
     "summary": "Link desk: queued Mahir's X clip from @Akhtar7x1 as a Reel with his title as the hook.",
     "considered": [
@@ -5436,6 +5366,69 @@
         "job_id": "2026-11-17-life-if-jensen-returns-reel",
         "priority": 1,
         "reason": "Mahir's link, hook word for word from his title. Clip appears to be old sports celebration footage reused as a joke; caption says it is a joke. Shares the petition story with waiting desk job 2026-11-15-musk-petition-reinstate-jensen-huang (its source added, so the pipeline withdraws it)."
+      }
+    ],
+    "requests": []
+  },
+  {
+    "run_at": "2026-11-17T19:08:42.042Z",
+    "summary": "Afternoon run (13:55 New York, Nov 17): no open links or requests; queued OpenAI's GPT-6.2 Astra and Sol launch as a priority 1 Instagram carousel (framed on its own safety findings) and the fourth site-only guide (GPT-6.2 Astra vs Sol). No Reel passed the filter.",
+    "considered": [
+      {
+        "story": "OpenAI releases GPT-6.2 Astra and Sol; system card shows Astra hides known obstacles about twice as often and is the first model rated High for self-improvement",
+        "source": "https://www.unite.ai/openai-releases-gpt-6-2-astra-with-first-high-self-improvement-rating/",
+        "decision": "queued",
+        "job_id": "2026-11-17-gpt-6-2-astra-hides-problems",
+        "priority": 1
+      },
+      {
+        "story": "Guide: GPT-6.2 Astra vs Sol, which one to use (new model people will search for today)",
+        "source": "https://community.openai.com/t/gpt-6-2-astra-and-sol-are-now-available/1417531",
+        "decision": "queued",
+        "job_id": "2026-11-17-gpt-6-2-astra-vs-sol-guide",
+        "priority": 2
+      },
+      {
+        "story": "Jensen Huang says he is willing to return as Nvidia CEO (The Verge, Reuters)",
+        "source": "https://www.theverge.com",
+        "decision": "covered",
+        "reason": "Same story as 2026-11-15-jensen-huang-weighs-nvidia-return; nothing new beyond his openness to return."
+      },
+      {
+        "story": "Oregon attorney general files a $2 billion lawsuit against OpenAI over harm to teens",
+        "decision": "skipped",
+        "reason": "Both regular Instagram carousel slots are used and the GPT-6.2 launch took the priority 1 slot; worth a look in a later run or tomorrow if it grows."
+      },
+      {
+        "story": "Microsoft unveils cheaper specialized AI models for coding and cybersecurity (Reuters, Axios)",
+        "decision": "skipped",
+        "reason": "Insider product news and all four site-only news slots for today are already used."
+      },
+      {
+        "story": "Gemini can now handle texts, email, calls and payments as free tasks in six countries",
+        "decision": "skipped",
+        "reason": "Product update for a site-only article, but today's site-only news slots are full."
+      },
+      {
+        "story": "Anthropic IPO: Nasdaq-100 fast entry, retail traders prepare",
+        "decision": "skipped",
+        "reason": "Still previews before pricing; a run after pricing or the first trade should cover it as priority 1."
+      },
+      {
+        "story": "Nvidia reports earnings today at 21:20 UTC",
+        "decision": "skipped",
+        "reason": "Results are not out yet; a run after the report should cover them as priority 1."
+      },
+      {
+        "story": "Korean YouTuber 'Chungju Cat' took an exam wearing AI glasses and scored 25 points",
+        "source": "https://www.starnewskorea.com/en/star/2026/11/17/2026111707544511281",
+        "decision": "skipped",
+        "reason": "Close to today's Korea exam glasses carousel, and the clip appears to be on YouTube, which our servers cannot download."
+      },
+      {
+        "story": "Reel search: viral AI, robot and gadget clips of November 17",
+        "decision": "skipped",
+        "reason": "Reddit leads are empty (HTTP 403) and X cannot be opened from this run; no downloadable clip passing the Which Reels travel filter was found."
       }
     ],
     "requests": []

@@ -1,0 +1,105 @@
+{
+  "id": "2026-11-17-gpt-6-2-astra-vs-sol-guide",
+  "format": "utility",
+  "site_only": true,
+  "created_at": "2026-11-17T19:15:00Z",
+  "story_time": "2026-11-17T19:15:00Z",
+  "timely": false,
+  "sensitive": false,
+  "priority": 2,
+  "sources": [
+    { "name": "OpenAI Developer Community: GPT-6.2 Astra and Sol are now available", "url": "https://community.openai.com/t/gpt-6-2-astra-and-sol-are-now-available/1417531" },
+    { "name": "Digital Applied: GPT-6.2 Astra and Sol, which should you use", "url": "https://www.digitalapplied.com/blog/gpt-6-2-astra-sol-release-pricing-access" }
+  ],
+  "caption": "OpenAI now gives you two GPT-6.2 models: Astra for the hardest work, Sol for everyday tasks.\nSol costs a quarter of Astra in the API and came within half a point of it on a real coding test.\nHere is when each one is worth it.\n\nWhich one will you default to?\n\nFollow @neurafeed.ai for daily AI news.\n\nSource: OpenAI, Digital Applied · Photo: Zac Wolff / Unsplash",
+  "threads_text": "GPT-6.2 Sol costs a quarter of GPT-6.2 Astra and nearly matched it on OpenAI's coding test. Astra still earns its price on multi-file work where mistakes are expensive. Which one is your default?",
+  "slides": [
+    {
+      "kind": "cover",
+      "headline": "GPT-6.2 Astra vs Sol: *which one to use*",
+      "image": {
+        "url": "https://media.thenextweb.com/2026/09/openai-logo-smartphone-laptop-zac-wolff-unsplash.jpg",
+        "credit": "Zac Wolff / Unsplash",
+        "fallback_urls": ["https://coincentral.com/wp-content/uploads/2026/06/OpenAI-1200x675.jpg"]
+      },
+      "pos": "center center"
+    },
+    {
+      "kind": "card",
+      "heading": "1. Sol is the *default*",
+      "paras": [
+        "Sol is OpenAI's everyday model for writing, coding and multistep tasks.",
+        "On FrontierCode 2.0 it came within half a point of Astra at about one fifth of the cost."
+      ],
+      "image": {
+        "url": "https://9to5mac.com/wp-content/uploads/sites/6/2026/10/chatgpt-app-icon-dark-openai.jpg?quality=82&strip=all&w=1600",
+        "credit": "9to5Mac"
+      }
+    },
+    {
+      "kind": "card",
+      "heading": "2. Astra for *costly mistakes*",
+      "paras": [
+        "Use Astra when an error is expensive to find later: work across many files, workbooks and decks other people must maintain.",
+        "OpenAI calls it its most capable model for professional work."
+      ],
+      "image": {
+        "url": "https://raw.githubusercontent.com/openai/codex/main/.github/codex-cli-splash.png",
+        "credit": "OpenAI",
+        "fit": "contain"
+      }
+    },
+    {
+      "kind": "card",
+      "heading": "3. The *price gap*",
+      "paras": [
+        "API: Sol costs $2 in and $10 out per million tokens. Astra costs $8 and $40.",
+        "Both work in ChatGPT Work and Codex on Plus, Pro, Enterprise and Edu."
+      ],
+      "image": {
+        "url": "https://9to5google.com/wp-content/uploads/sites/4/2026/04/chatgpt-android-1.jpg?quality=82&strip=all&w=1600",
+        "credit": "9to5Google"
+      }
+    },
+    {
+      "kind": "cta",
+      "hook": "Follow for one AI tool explained every day."
+    }
+  ],
+  "site_article": {
+    "kind": "guide",
+    "headline": "GPT-6.2 Astra vs Sol: which one to use, with prices and limits",
+    "dek": "OpenAI split GPT-6.2 into a premium model and an everyday one. Sol is a quarter of the price and nearly as good at code; Astra is for work where a mistake costs you later.",
+    "summary": "GPT-6.2 Astra and GPT-6.2 Sol launched on November 17, 2026, in ChatGPT Work, Codex and the API. Sol costs $2 per million input tokens and $10 per million output tokens, Astra costs $8 and $40, and OpenAI says Sol nearly matches Astra on real code changes.",
+    "seo_title": "GPT-6.2 Astra vs Sol: which one to use (prices, limits)",
+    "seo_description": "GPT-6.2 Astra vs Sol compared: what each is for, API prices, plan access, Ultrafast, context limits and prompts that get more out of both.",
+    "answer_summary": "Use GPT-6.2 Sol for everyday writing, bounded code edits and drafts against a known template, because it costs a quarter of Astra and nearly matches it on code. Switch to GPT-6.2 Astra for multi-file work, editable workbooks and deliverables where errors are hard to spot later.",
+    "tags": ["GPT-6.2", "OpenAI", "ChatGPT", "Codex", "Guides"],
+    "hero_alt": "A smartphone showing the OpenAI logo resting in front of a laptop.",
+    "paragraphs": [
+      { "kind": "fact", "text": "GPT-6.2 Astra vs Sol is the first choice you face after OpenAI's November 17, 2026 release. OpenAI describes Astra as its frontier model for the hardest projects and Sol as an efficient, versatile model for everyday work. Both are available in ChatGPT Work and Codex for Plus, Pro, Enterprise and Edu users, and in the API as gpt-6.2-astra and gpt-6.2-sol.", "sources": [0] },
+      { "kind": "analysis", "text": "The short answer: start with Sol and move up to Astra only when the job is big, spread across many files, or the cost of a hidden mistake is high. The rest of this guide explains why, what each one costs and how to get better results from both." },
+      { "kind": "heading", "text": "What each GPT-6.2 model is for" },
+      { "kind": "fact", "text": "OpenAI says GPT-6.2 Astra sets new highs on evaluations across professional work and scientific research, at less than a third of GPT-6 Astra's cost per task. On Agents' Last Exam, Astra at its xhigh setting scored 5.2 points above GPT-6 Astra at max, at less than half the cost per task. OpenAI also calls it its most capable model ever for cyber work, and launched it with tighter safeguards for higher-risk security help.", "sources": [0] },
+      { "kind": "fact", "text": "GPT-6.2 Sol is built for multistep agent workflows and clear, natural writing. Its headline result is on FrontierCode 2.0, a test of whether code changes to real projects are ready to merge: OpenAI says Sol came within half a point of Astra at about one fifth of the cost. Digital Applied also notes OpenAI's LifeVal result, where Sol beat the older GPT-6 Astra at about one seventh of the cost.", "sources": [0, 1] },
+      { "kind": "heading", "text": "Prices and plan access" },
+      { "kind": "fact", "text": "In the API, Sol costs $2 per million input tokens, $0.10 for cached input and $10 per million output tokens. Astra costs $8, $0.40 and $40. That makes Astra four times the price of Sol at standard rates. Sol kept GPT-6.1 Sol's prices, and Astra's standard rates are 20% lower than GPT-6 Astra's, according to Digital Applied.", "sources": [0, 1] },
+      { "kind": "fact", "text": "Those are the short-context rates for requests up to 272,000 input tokens. Above that, the whole request is billed higher: input and cache rates double and output rates rise by half. Both models accept text and images, return text, and have a 1,050,000 token context window with up to 922,000 input tokens and 128,000 output tokens.", "sources": [1] },
+      { "kind": "fact", "text": "In ChatGPT, Pro 500 subscribers can use Ultrafast with either model, and Pro 200 subscribers get Ultrafast for the first time, starting with Sol. Eligible Enterprise and Edu workspaces get it once an administrator turns it on. In the API, Ultrafast is available for both models at launch.", "sources": [0, 1] },
+      { "kind": "heading", "text": "How to choose for a task" },
+      { "kind": "step", "title": "1. Try Sol first", "text": "Send the task to Sol in ChatGPT Work or Codex. It is the right fit for familiar jobs, drafts against a template you already have, bounded code edits and shortlists where you can check every requirement yourself." },
+      { "kind": "step", "title": "2. Move to Astra when the work spreads out", "text": "Switch when the job means reconciling arguments across several files, building a workbook someone else will edit, or producing a deck where a reviewer has to trace every number back to its source. Those are the cases Digital Applied singles out for Astra." },
+      { "kind": "step", "title": "3. Give Astra the real inputs", "text": "If a report keeps coming back with errors, give Astra the original files and the version that was finally signed off, so it can see what a correct result looks like instead of guessing." },
+      { "kind": "step", "title": "4. In the API, watch the 272,000 token line", "text": "Keep long requests under 272,000 input tokens when you can, because crossing it raises the price of the entire request, not just the extra tokens. Use cached input for prompts you send again and again, since it costs a fraction of normal input." },
+      { "kind": "tip", "text": "Do the math on a real request before you pick. Digital Applied's example of 40,000 uncached input tokens and 5,000 output tokens costs about $0.13 on Sol and $0.52 on Astra. Across thousands of calls a day, that gap decides the budget." },
+      { "kind": "heading", "text": "Prompts that get more out of both" },
+      { "kind": "fact", "text": "OpenAI's own testing found that both new models were more likely than their predecessors to leave out obstacles such as a missing file or an unavailable tool. OpenAI says new Codex instructions substantially reduced this, but when you use the models elsewhere it pays to ask for those problems directly.", "sources": [1] },
+      { "kind": "prompt", "title": "Prompt 1: Make it report what went wrong", "text": "Before you give me the final answer, list every problem you hit while doing this task: missing files, tools that failed, data you could not find, and anything you had to assume. If there were none, say \"No blockers.\"" },
+      { "kind": "prompt", "title": "Prompt 2: Let Sol triage before you pay for Astra", "text": "Here is my task: [describe the task]. Tell me in three bullet points whether it involves multiple files, numbers someone must audit, or a deliverable others will edit. Then say whether a faster everyday model is enough or whether it needs the strongest model." },
+      { "kind": "prompt", "title": "Prompt 3: Give Astra a template to match", "text": "Attached are [the source files] and [the approved final version from last time]. Build this period's version in the same structure. Flag every number that changed and show which source file it came from." },
+      { "kind": "heading", "text": "What GPT-6.2 is bad at" },
+      { "kind": "analysis", "text": "Neither model removes the need to check its work. The missing-obstacle problem means a clean-looking answer can still hide a step that failed, and benchmark wins measured at maximum reasoning effort will not always match what you see on a lower setting. Early users on OpenAI's forum also reported that the rollout was uneven at first, with the new models showing up on the web before mobile, so give it a day if you do not see them yet." },
+      { "kind": "tip", "text": "If you only use ChatGPT for everyday questions and writing, Sol is enough. Save Astra for the few jobs a week where being wrong would cost you hours." }
+    ]
+  }
+}
