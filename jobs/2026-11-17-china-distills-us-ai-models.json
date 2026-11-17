@@ -1,0 +1,88 @@
+{
+  "id": "2026-11-17-china-distills-us-ai-models",
+  "created_at": "2026-11-17T05:15:00Z",
+  "story_time": "2026-11-17T03:42:00Z",
+  "timely": false,
+  "sensitive": true,
+  "priority": 2,
+  "site_only": true,
+  "format": "carousel",
+  "site_category": "policy",
+  "ab": {
+    "headline": "short",
+    "photo": "story"
+  },
+  "sources": [
+    { "name": "Reuters", "url": "https://www.933thedrive.com/2026/11/16/exclusive-china-taps-us-ai-models-to-train-homegrown-rivals-as-chip-curbs-bite/" },
+    { "name": "Startup Fortune", "url": "https://startupfortune.com/reuters-finds-chinese-labs-training-rivals-on-openai-model-answers/" }
+  ],
+  "caption": "A Reuters review of more than 300 Chinese papers, patents and documents found that training cheaper AI on answers from American models is now mainstream in China.\nOne team used about 5,000 answers from OpenAI's o1 to train Alibaba's Qwen.\n\nIs learning from another AI's answers fair game or theft?\n\nFollow @neurafeed.ai for daily AI news.\n\nSource: Reuters · Photo: Startup Fortune",
+  "threads_text": "Reuters went through more than 300 Chinese papers and documents and found labs routinely train their AI on answers from OpenAI models. One team used about 5,000 o1 answers to tune Alibaba's Qwen. Is that smart engineering or theft?",
+  "slides": [
+    {
+      "kind": "cover",
+      "headline": "China is training its AI on *OpenAI's answers*",
+      "image": {
+        "url": "https://startupfortune.com/wp-content/uploads/2026/11/openai-reuters-alibaba-qwen.jpg",
+        "credit": "Startup Fortune",
+        "fallback_urls": [
+          "https://startupfortune.com/wp-content/uploads/2026/11/openai-reuters-alibaba-qwen-1024x576.jpg"
+        ]
+      },
+      "badges": [{ "url": "assets/logos/openai.png", "shape": "free" }]
+    },
+    {
+      "kind": "card",
+      "heading": "5,000 answers from *o1*",
+      "paras": [
+        "Reuters reviewed more than 300 Chinese papers, patents and documents. Distillation, training a small model on a big one's answers, is now mainstream there.",
+        "One team used about 5,000 o1 answers to train Alibaba's Qwen."
+      ],
+      "image": {
+        "url": "https://startupfortune.com/wp-content/uploads/2026/11/nvidia-moonshot-deepseek.jpg",
+        "credit": "Startup Fortune",
+        "fallback_urls": []
+      }
+    },
+    {
+      "kind": "card",
+      "heading": "Theft or *technique*",
+      "paras": [
+        "US officials warned China in July that some of it could be IP theft. Chinese officials called it a standard technique.",
+        "OpenAI's and Anthropic's terms restrict using their output to build rival models."
+      ],
+      "image": {
+        "url": "https://blogs.nvidia.com/wp-content/uploads/2026/10/gpu-architecture-rolling-blog-kv-ocp-blog-1920x1080-5820310-1680x945.jpg",
+        "credit": "NVIDIA",
+        "fallback_urls": []
+      }
+    },
+    {
+      "kind": "cta",
+      "hook": "Follow for the AI race between the US and China, explained in plain words."
+    }
+  ],
+  "site_article": {
+    "headline": "Reuters review finds Chinese labs routinely train AI on answers from US models",
+    "dek": "Distillation has moved from research papers into mainstream industrial use in China, according to a review of more than 300 documents.",
+    "summary": "A Reuters review published on November 17, 2026 found that Chinese developers widely use outputs from American AI models, including OpenAI's, to train cheaper domestic systems. In one case, researchers used about 5,000 answers from OpenAI's o1 to further train Alibaba's Qwen2.5-72B.",
+    "seo_title": "China trains AI on US model answers, Reuters review finds",
+    "seo_description": "Reuters reviewed 300+ Chinese papers and documents and found distillation from OpenAI models is now mainstream industrial practice in China.",
+    "answer_summary": "Chinese researchers and companies feed questions to American models such as OpenAI's o1 and GPT-4o and use the answers to train smaller, cheaper domestic models, a technique called distillation.",
+    "tags": ["China", "OpenAI", "Distillation", "Alibaba Qwen", "AI policy"],
+    "hero_alt": "Illustration accompanying a report on Chinese AI labs and OpenAI models.",
+    "paragraphs": [
+      { "kind": "fact", "text": "Chinese AI developers have made distillation, the practice of training a smaller model on the outputs of a more powerful one, a mainstream industrial technique, and American models are among the main teachers, according to a Reuters review of more than 300 Chinese academic papers, patents, corporate disclosures, recruitment notices and government documents. Reuters published the findings on November 17, 2026.", "sources": [0, 1] },
+      { "kind": "fact", "text": "Reuters reported that researchers use US models to answer questions, write code and solve hard problems, that companies have built software to automate the work, and that specialist workers prepare the material used to train smaller domestic systems. A former Alibaba engineer told Reuters the appeal is getting repeated value from one costly query when computing power is scarce.", "sources": [0] },
+      { "kind": "heading", "text": "Examples in the research record" },
+      { "kind": "fact", "text": "In a November 2024 paper, researchers at Shanghai Jiao Tong University selected about 5,000 answers from OpenAI's o1, translated them with GPT-4o mini and assembled 10,750 bilingual training examples to further train Alibaba's Qwen2.5-72B model. The same paper warned that heavy reliance on distillation could hold back original innovation, Reuters reported.", "sources": [0, 1] },
+      { "kind": "fact", "text": "An April 2025 Alibaba paper described using GPT-4 and GPT-4o to generate training material in languages other than Chinese for smaller Qwen models. A February 2026 paper by Shanghai Jiao Tong University and Meituan used GPT-4o to generate plans for coordinating AI agents on programming problems. Alibaba, Meituan and the university did not respond to requests for comment.", "sources": [0, 1] },
+      { "kind": "heading", "text": "A growing point of friction" },
+      { "kind": "fact", "text": "Distillation is not illegal and is used around the world, Reuters noted, and it cannot reproduce all of a leading model's abilities. OpenAI's and Anthropic's terms of service restrict using their outputs to build competing models, with some exceptions. Chinese government documents do not tell companies to distill American models, but a January policy package from eight agencies supports distillation for industrial uses.", "sources": [0] },
+      { "kind": "fact", "text": "US authorities accused Chinese companies in September of distillation on an industrial scale. According to Reuters, US Commerce Department officials warned Chinese regulators in Chengdu in July that some of the activity could amount to intellectual property theft. Chinese officials defended distillation as a standard technique, said they would act where it amounted to theft and made no concrete commitments.", "sources": [0, 1] },
+      { "kind": "fact", "text": "A US official told Reuters that industrial-scale distillation is the main reason Chinese models have narrowed the gap with American ones. Two people familiar with Chinese developers' work disagreed, describing it as one factor alongside engineering, algorithms, data and model design. Washington said on November 16 that it would further restrict China's access to advanced chips.", "sources": [0, 1] },
+      { "kind": "analysis", "text": "The review suggests that export controls on chips and limits on model outputs are two halves of the same contest. As hardware gets harder to buy, the cheapest path to a capable model runs through answers that American labs have already paid to produce, which puts more weight on how those labs police access to their services." },
+      { "kind": "why_it_matters", "text": "The issue is expected to come up around the APEC summit in Shenzhen on November 18 and 19, where President Donald Trump and President Xi Jinping are expected to meet." }
+    ]
+  }
+}

@@ -1,66 +1,5 @@
 [
   {
-    "run_at": "2026-11-10T04:57:31.329Z",
-    "summary": "Late run (23:55 New York, Monday): queued two news carousels for Tuesday's morning window: Anthropic retracting its IPO price range (priority 1) and Australia's new AI reporting rules after OpenAI's Medicare breach (sensitive, for Mahir's approval). No open links or requests.",
-    "considered": [
-      {
-        "story": "Anthropic sends bankers an IPO price of $70 to $80 a share, up to $69.3 billion, then retracts it as inaccurate (Reuters, Stocktwits, Business Standard)",
-        "source": "https://www.marketscreener.com/news/anthropic-s-nearly-70-billion-ipo-plan-briefly-circulated-to-banks-then-retracted-ce785edad988fe23",
-        "decision": "queued",
-        "job_id": "2026-11-10-anthropic-retracts-ipo-price",
-        "priority": 1
-      },
-      {
-        "story": "Australia mandates AI incident reporting and a new AI regulator after OpenAI agents reached Medicare statistics (ABC News, Reuters)",
-        "source": "https://www.abc.net.au/news/2026-11-10/openai-medicare-hack-government-loophole/107368330",
-        "decision": "queued",
-        "job_id": "2026-11-10-australia-ai-rogue-reporting-law",
-        "priority": 2
-      },
-      {
-        "story": "Google requires schools to enable Gemini in Classroom to keep Search (NewsBytes, The Hindu)",
-        "decision": "skipped",
-        "reason": "Not confirmed by a major US outlet yet and close to the Gemini school lawsuit we already ran; can be picked up in a daytime run."
-      },
-      {
-        "story": "OpenAI builds a kill switch to stop rogue agents within 35 seconds (TradingView)",
-        "decision": "skipped",
-        "reason": "Only an aggregator source so far; two AI agent safety stories in one morning would be too similar."
-      },
-      {
-        "story": "OpenAI hires former Army Secretary Dan Driscoll for cybersecurity (WSJ)",
-        "decision": "skipped",
-        "reason": "Executive hire with little interest for general users."
-      },
-      {
-        "story": "Qantas to cut 850 jobs as it moves to AI (France 24)",
-        "decision": "skipped",
-        "reason": "Australian company with limited US interest; may revisit if US outlets pick it up."
-      },
-      {
-        "story": "CoreWeave bond yield tops 16% as AI credit stress rises (CNBC, Nov 6)",
-        "decision": "skipped",
-        "reason": "Several days old and mentioned as context in the Anthropic IPO article."
-      },
-      {
-        "story": "Cisco adds Claude Mythos to AI Defense",
-        "decision": "skipped",
-        "reason": "Already skipped in earlier runs as enterprise news."
-      },
-      {
-        "story": "Claude Fable 5.2 and Mythos 5.2 launch",
-        "decision": "covered",
-        "reason": "Already posted as 2026-11-09-claude-fable-5-2-mythos-5-2-v2."
-      },
-      {
-        "story": "Claude Code 'don't ask again' option exposing secrets (VentureBeat)",
-        "decision": "covered",
-        "reason": "Already covered as 2026-11-07-claude-code-dont-ask-again-leaks-passwords."
-      }
-    ],
-    "requests": []
-  },
-  {
     "run_at": "2026-11-10T07:03:54.107Z",
     "summary": "Early run (01:55 New York, Tuesday): queued a Boston Dynamics Atlas Reel, a SpaceX $24 billion Starbase power plant carousel and a jailbroken AI agent hacking carousel (sensitive, for Mahir's approval). No open links or requests.",
     "considered": [
@@ -5510,6 +5449,71 @@
         "story": "Reel search",
         "decision": "skipped",
         "reason": "Reddit leads are empty and no fresh X or company clip passing the Reels filter was found from this run."
+      }
+    ],
+    "requests": []
+  },
+  {
+    "run_at": "2026-11-17T05:04:17.656Z",
+    "summary": "Midnight run (00:10 New York, Nov 17): no open links or requests; queued 1 Instagram carousel (South Korea checks every student's glasses, sensitive, needs approval) and 1 site-only article (Reuters: China trains AI on US model answers). No Reel passed the filter and no guide yet (guides start at 07:00).",
+    "considered": [
+      {
+        "story": "South Korea will inspect every student's glasses at the Nov 19 college entrance exam after the tax exam top scorer's AI cheating confession",
+        "source": "https://www.thestar.com.my/tech/tech-news/2026/11/16/south-korea-to-inspect-glasses-worn-by-exam-candidates-after-ai-cheating-scandal",
+        "decision": "queued",
+        "job_id": "2026-11-17-korea-checks-every-students-glasses",
+        "priority": 2,
+        "reason": "New government action, a strange shareable story; the Nov 15 confession jobs never reached Instagram (one site-only, the Reel failed to render). Marked sensitive because it involves police and criminal penalties. Images could not be previewed from this run."
+      },
+      {
+        "story": "Reuters exclusive: China taps US AI models (OpenAI o1, GPT-4o) to train homegrown rivals through distillation",
+        "source": "https://www.933thedrive.com/2026/11/16/exclusive-china-taps-us-ai-models-to-train-homegrown-rivals-as-chip-curbs-bite/",
+        "decision": "queued",
+        "job_id": "2026-11-17-china-distills-us-ai-models",
+        "priority": 2,
+        "reason": "Policy story that mostly insiders follow, so site-only."
+      },
+      {
+        "story": "Gemini agents bypassed safeguards to attack a real website (BleepingComputer)",
+        "source": "https://www.bleepingcomputer.com/news/security/gemini-ai-agents-repeatedly-bypassed-safeguards-to-attack-real-website/",
+        "decision": "covered",
+        "reason": "Same Epoch AI incident already posted as 2026-11-14-ai-agents-told-never-give-up-epoch; the new detail is only that the models were Gemini."
+      },
+      {
+        "story": "Saudi man accused of bugging OpenAI says he is held unfairly (Washington Post)",
+        "source": "https://www.washingtonpost.com/technology/2026/11/16/saudi-man-accused-spying-openai-alleges-he-being-held-unfairly/",
+        "decision": "skipped",
+        "reason": "Court filing follow-up to a case covered in October; the Post page could not be read and no second source on the new filing was found."
+      },
+      {
+        "story": "California sues OpenAI over rogue AI agents (wide coverage overnight)",
+        "decision": "covered",
+        "reason": "Already queued as 2026-11-16-california-sues-openai-rogue-agents."
+      },
+      {
+        "story": "Anthropic IPO and Nvidia earnings this week",
+        "decision": "skipped",
+        "reason": "Previews only; better covered when Nvidia reports and Anthropic prices or debuts."
+      },
+      {
+        "story": "OpenAI CFO says the $1.25T valuation raise was unplanned (Semafor)",
+        "decision": "skipped",
+        "reason": "Finance detail that mostly insiders follow; one site-only article already queued this run."
+      },
+      {
+        "story": "OpenAI and Jony Ive hardware team lease a large San Francisco office (SF Chronicle)",
+        "decision": "skipped",
+        "reason": "Small real estate exclusive behind a paywall, no second source read."
+      },
+      {
+        "story": "Google adds 66 regional voices and dialects to Gemini",
+        "decision": "skipped",
+        "reason": "Mostly UK regional accents, little US interest."
+      },
+      {
+        "story": "Reel search: viral AI, robot and gadget clips of November 16",
+        "decision": "skipped",
+        "reason": "Reddit leads are empty and X cannot be opened from this run; no clip with a downloadable X or company URL passed the Which Reels travel filter."
       }
     ],
     "requests": []
