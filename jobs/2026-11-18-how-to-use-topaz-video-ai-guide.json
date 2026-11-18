@@ -1,0 +1,120 @@
+{
+  "id": "2026-11-18-how-to-use-topaz-video-ai-guide",
+  "format": "utility",
+  "site_only": true,
+  "created_at": "2026-11-18T21:25:00Z",
+  "story_time": "2026-11-18T21:25:00Z",
+  "timely": false,
+  "sensitive": false,
+  "priority": 2,
+  "sources": [
+    { "name": "Topaz Labs docs: Topaz Video Quick Start", "url": "https://docs.topazlabs.com/topaz-video/quick-start" },
+    { "name": "Topaz Labs: Getting started with Topaz Video", "url": "https://topazlabs.com/learn/getting-started-with-topaz-video" },
+    { "name": "Topaz Labs: How to upscale videos with Topaz Video AI", "url": "https://www.topazlabs.com/learn/how-to-upscale-videos-topaz-video-ai" },
+    { "name": "Elegant Themes: How to upscale videos with AI", "url": "https://www.elegantthemes.com/blog/business/how-to-upscale-videos-with-ai" }
+  ],
+  "caption": "Topaz Video, the app once called Video AI, upscales and cleans up old or soft footage on your own computer.\nImport a clip, pick an output resolution and a model, preview two seconds, then export.\nIt needs a strong machine, but Cloud Render can do the heavy work for you.\n\nWhich old video would you upscale first?\n\nFollow @neurafeed.ai for daily AI news.\n\nSource: Topaz Labs · Photo: Topaz Labs",
+  "threads_text": "Topaz Video can turn soft 1080p footage into 4K on your own computer: import, pick Proteus, preview a few seconds, export. It is heavy on hardware, so test short clips first. Which old video would you upscale first?",
+  "slides": [
+    {
+      "kind": "cover",
+      "headline": "How to use *Topaz Video AI* to upscale old video to 4K",
+      "image": {
+        "url": "https://cdn.prod.website-files.com/60e4d0d0155e62117f4faef3/698c936780d151da5101fb4a_TPV.jpg",
+        "credit": "Topaz Labs",
+        "fallback_urls": ["https://cdn.prod.website-files.com/60e4d0d0155e62117f4faef3/697bb91fc48481c6d85de381_TVAI-1.avif"]
+      },
+      "pos": "center center"
+    },
+    {
+      "kind": "card",
+      "heading": "1. Import and pick *a preset*",
+      "paras": [
+        "Drag a clip in, or use File, then Import. Then start from scratch or from a preset.",
+        "Presets are saved setups you can reuse and mark as favorites."
+      ],
+      "image": {
+        "url": "https://cdn.prod.website-files.com/60e4d0d0155e62117f4faef3/698118a1f9ebfbafb964ec70_TVAI-Presets.avif",
+        "credit": "Topaz Labs",
+        "fit": "contain"
+      }
+    },
+    {
+      "kind": "card",
+      "heading": "2. Set resolution, then *Proteus*",
+      "paras": [
+        "Under Enhancement, choose the Output Resolution and the Video Type.",
+        "Topaz recommends the Proteus model for your first video."
+      ],
+      "image": {
+        "url": "https://cdn.prod.website-files.com/60e4d0d0155e62117f4faef3/698119eef786173bf58c7b6c_TVAI-aimodel.avif",
+        "credit": "Topaz Labs",
+        "fit": "contain"
+      }
+    },
+    {
+      "kind": "card",
+      "heading": "3. Preview *a few seconds*",
+      "paras": [
+        "Render Preview renders 2 seconds by default, up to 30, so you can judge the result fast.",
+        "Test on a short clip before the full video."
+      ],
+      "image": {
+        "url": "https://cdn.prod.website-files.com/60e4d0d0155e62117f4faef3/69811c9a1b54a03d442c3c3e_TVAI-renderpreview.avif",
+        "credit": "Topaz Labs",
+        "fit": "contain"
+      }
+    },
+    {
+      "kind": "card",
+      "heading": "4. Export, or *Cloud Render*",
+      "paras": [
+        "Quick Export saves next to the source file. Export As lets you pick the name and place.",
+        "Weak computer? Cloud Render runs the job on Topaz's servers."
+      ],
+      "image": {
+        "url": "https://cdn.prod.website-files.com/60e4d0d0155e62117f4faef3/69811da85f892a6a50ab7f76_TVAI-export.avif",
+        "credit": "Topaz Labs",
+        "fit": "contain"
+      }
+    },
+    {
+      "kind": "cta",
+      "hook": "Follow for one AI tool explained every day."
+    }
+  ],
+  "site_article": {
+    "kind": "guide",
+    "headline": "How to use Topaz Video AI to upscale video, step by step",
+    "dek": "Topaz Video, formerly Video AI, sharpens and upscales footage on your own computer. Here is the workflow from import to export, and which model to start with.",
+    "summary": "Topaz Video is a desktop app from Topaz Labs that upscales and restores video with AI models. You import a clip, set the output resolution, pick a model such as Proteus, preview a short section and export, either on your computer or with Cloud Render.",
+    "seo_title": "How to use Topaz Video AI to upscale video (step by step)",
+    "seo_description": "Install Topaz Video, import a clip, set output resolution, pick Proteus or another model, preview, and export locally or with Cloud Render.",
+    "answer_summary": "Import your clip, choose Start from scratch or a preset, set Output Resolution and Video Type under Enhancement, pick an AI model (Topaz suggests Proteus first), run Render Preview on a few seconds, then use Quick Export, Export As or Cloud Render.",
+    "tags": ["Topaz Video AI", "Topaz Labs", "Video upscaling", "AI video", "Guides"],
+    "hero_alt": "Promotional image for the Topaz Video desktop app from Topaz Labs.",
+    "paragraphs": [
+      { "kind": "fact", "text": "How to use Topaz Video AI starts with knowing what it is now called. Topaz Labs' documentation calls the current app Topaz Video and refers to a legacy version of Video AI, so the old name still shows up in searches and tutorials. It is a desktop application that runs on your own computer and uses AI models to upscale, sharpen and restore footage. An internet connection is needed to install, activate and update it.", "sources": [0] },
+      { "kind": "fact", "text": "It is not a light app. Elegant Themes, in its review of the earlier Video AI, warned that the program requires serious computing power. Topaz's own quick start tells you to check the minimum system requirements before installing, and greys out models your hardware cannot run.", "sources": [0, 3] },
+      { "kind": "heading", "text": "Install Topaz Video and its models" },
+      { "kind": "step", "title": "1. Download and install", "text": "Download the installer from your Topaz Labs account, run it and follow the prompts. Install it on your startup disk, not an external drive. On first launch, sign in with the email you used to buy it by clicking Continue with email." },
+      { "kind": "step", "title": "2. Choose models in the Model Manager", "text": "On first launch, the Neuroserver Model Manager shows which models are installed, whether your hardware supports them and how much space they need. Check a model to install it and uncheck one to remove it. You can skip this with No, I'll do it later and reopen it from the bottom of the File menu." },
+      { "kind": "fact", "text": "Some models are greyed out either because the hardware does not qualify or because they are Pro only and the license is the Standard version, according to the quick start.", "sources": [0] },
+      { "kind": "heading", "text": "How to upscale a video in Topaz Video" },
+      { "kind": "step", "title": "1. Import your clip", "text": "Click Browse Videos on the start screen, drag the file into the app, use File, then Import, or press Ctrl+I on Windows or Cmd+I on a Mac. For an image sequence, switch the import dialog to Image Sequences; the frames must sit in one folder in order, with at least five frames." },
+      { "kind": "step", "title": "2. Start from scratch or from a preset", "text": "Start from scratch gives you a clean slate with no enhancements. Start from preset loads a saved setup. You can save your own presets and mark favorites." },
+      { "kind": "step", "title": "3. Set up the Enhancement", "text": "In the Controls Sidebar, open Adjustments. The Enhancement toggle is on by default. Under Video Setup, choose the Output Resolution and the Video Type. Topaz notes that most consumer cameras from the early to mid 2000s onward record progressive video." },
+      { "kind": "step", "title": "4. Pick an AI model", "text": "Select a model; the active one has a white outline. Topaz recommends Proteus for your first video. The Starlight family is listed as well, including Starlight Mini, Starlight Sharp and Starlight HQ." },
+      { "kind": "step", "title": "5. Add filters only if you need them", "text": "Filters handle single jobs such as de-interlacing, frame rate changes and slow motion. Turn them on with their toggles. Topaz recommends no more than two filters per file for performance." },
+      { "kind": "step", "title": "6. Preview before you commit", "text": "Render Preview renders a section of the clip, 2 seconds by default and up to 30, and can use In and Out points. Frame Preview updates a single frame as you change settings but does not work with Starlight models. Live Render plays the enhancement in real time and suits short clips with light settings." },
+      { "kind": "step", "title": "7. Check the codec and export", "text": "Open the Codec Settings tab to pick the encoder, container and audio. H264 is the default and covers most outputs up to 4K. Quick Export saves next to the source file, Export As lets you choose the name and folder, and Cloud Render sends the job to Topaz's servers. Progress shows in the Exports Queue." },
+      { "kind": "heading", "text": "Which Topaz model to use" },
+      { "kind": "fact", "text": "In a Topaz Labs tutorial that doubled 1920x1080 footage to 4K UHD, the presenter called Proteus one of the most robust models and picked it as the final choice because it renders faster than Rhea. Rhea, one of the heaviest models, produced slightly finer detail in hair and a hat but took longer. Nyx was described as good for smaller videos, though its automatic result looked softer.", "sources": [2] },
+      { "kind": "tip", "text": "Duplicate a tab and rename it after the model you are testing, such as Proteus Auto, so you can compare versions side by side. The same tutorial suggests testing on short sections with In and Out points before rendering the whole video." },
+      { "kind": "tip", "text": "On an older or minimum spec machine, run enhancements as separate passes and export between steps, the tutorial says. If a model is too heavy for your computer, or the clip is long, Cloud Render is the option the quick start points to." },
+      { "kind": "tip", "text": "Be careful with SDR to HDR. The tutorial warns that many monitors will show the result washed out, so export a version without it if your viewers may not have HDR screens." },
+      { "kind": "fact", "text": "If the app will not start or install, Topaz suggests updating your graphics drivers, restarting or reinstalling, and adding Topaz to the exception list of any firewall or VPN.", "sources": [0] },
+      { "kind": "analysis", "text": "Topaz Video is best at one job: making existing footage look sharper and larger. It cannot invent a scene that was never filmed, and the heavier models can take a long time on a laptop. Start with Proteus, preview a few seconds, and only reach for heavier models when the preview shows a real gain." }
+    ]
+  }
+}
