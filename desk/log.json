@@ -1,68 +1,5 @@
 [
   {
-    "run_at": "2026-11-11T14:58:08.236Z",
-    "summary": "Mid-morning run (10:00 New York): no open links or requests; queued the Kling AI guide (site only). No news job: today already has 7 desk posts, so the last slot is kept for a breaking priority 1 story or a Reel later. Note: the fal.ai balance is exhausted, which made the Odessia carousel's generated cover fail to render.",
-    "considered": [
-      {
-        "story": "Guide: How to use Kling AI to make videos (free credits explained)",
-        "source": "https://kling.ai/docs/point-policy",
-        "decision": "queued",
-        "job_id": "2026-11-11-how-to-use-kling-ai-guide",
-        "priority": 2,
-        "reason": "Site-only guide, next uncovered line in guides/plan.md after the Atlas lines skipped earlier."
-      },
-      {
-        "story": "ChatGPT Chat and Work tabs merging, Codex shares usage limits",
-        "source": "https://www.digitaltrends.com/computing/openai-merges-chat-and-work-in-chatgpt/",
-        "decision": "covered",
-        "reason": "Already covered as 2026-11-03-chatgpt-classic-retires-work-tab-merge and 2026-11-01-chatgpt-codex-one-shared-limit."
-      },
-      {
-        "story": "TSMC approves up to $1 billion in investments in OpenAI and Anthropic",
-        "source": "https://www.macrumors.com/2026/11/11/tsmc-approves-ai-investment/",
-        "decision": "covered",
-        "reason": "Marked covered by the earlier run today; TSMC's stake is already in the Anthropic IPO coverage."
-      },
-      {
-        "story": "OpenAI launches Businesses in ChatGPT and Business Agents",
-        "source": "https://www.tradingview.com/news/reuters.com,2026:newsml_L3N46R0VR:0-openai-lets-businesses-claim-chatgpt-profiles-adds-ai-agents-for-us-e-commerce-firms/",
-        "decision": "skipped",
-        "reason": "A business-facing beta with little pull for normal users, skipped twice already today, and only one slot is left."
-      },
-      {
-        "story": "Elon Musk says Claude is better than Grok 'for now'",
-        "source": "https://www.technobezz.com/news/elon-musk-admits-he-was-wrong-about-anthropic-and-calls-the-ai-company-the-industry-leader",
-        "decision": "skipped",
-        "reason": "Coverage traces back to older remarks from July and October, not a fresh story."
-      },
-      {
-        "story": "Notion AI chats exposed through a Fireworks AI security incident",
-        "source": "https://www.notion.com/help/security-incident-involving-a-third-party-ai-vendor",
-        "decision": "skipped",
-        "reason": "Disclosed on November 10, past the 12 hour window, and it affects under 1% of workspaces."
-      },
-      {
-        "story": "Nieman Lab survey: 51% use AI tools weekly but only 9% use AI for news",
-        "source": "https://www.niemanlab.org/2026/11/ai-is-becoming-an-information-gateway-audiences-still-dont-want-it-making-their-news/",
-        "decision": "skipped",
-        "reason": "Possible evergreen 'everyone' story, but weaker than a breaking priority 1 story that may still need today's last slot."
-      },
-      {
-        "story": "Oura to buy AI doctor service Counsel Health for $625 million",
-        "source": "https://www.pymnts.com/",
-        "decision": "skipped",
-        "reason": "Health deal with only one source found this run, and today's cap is nearly reached."
-      },
-      {
-        "story": "UK Office for Students says AI makes some coursework close to impossible to grade",
-        "source": "https://www.aol.co.uk/articles/ai-made-close-impossible-assess-070033000.html",
-        "decision": "skipped",
-        "reason": "UK story with little US interest, and no second source found this run."
-      }
-    ],
-    "requests": []
-  },
-  {
     "run_at": "2026-11-11T17:10:03.844Z",
     "summary": "Midday run (12:00 New York): no open links or requests; queued Anthropic's filing saying it met its own AI research acceleration threshold (priority 1, the 8th desk post today) and the Canva AI guide (site only, 3rd guide today).",
     "considered": [
@@ -5319,6 +5256,78 @@
         "story": "Reel search",
         "decision": "skipped",
         "reason": "Reddit leads are empty, leads were last refreshed around 01:50 UTC, and X could not be opened from this run, so no clip could be checked against the Reel filter."
+      }
+    ],
+    "requests": []
+  },
+  {
+    "run_at": "2026-11-18T15:14:27.562Z",
+    "summary": "Mid-morning run (10:40 New York, Nov 18): no open links or requests; queued a desk Reel (Windows 11 on an iPhone Duo built with Gemini), a site-only article on Satya Nadella calling himself AGI pilled, and the day's second website guide (Gemini Memory summary). Nov 18 Instagram carousels are already full.",
+    "considered": [
+      {
+        "story": "Google AI Studio lead Ammaar Reshi runs Windows 11 on an iPhone Duo with Gemini 4 Carbon agents",
+        "source": "https://x.com/ammaar/status/2120605420066595029",
+        "decision": "queued",
+        "job_id": "2026-11-18-windows-11-on-iphone-duo-reel",
+        "priority": 2,
+        "reason": "Consumer tech doing something that looks impossible, gets it with the sound off; a week old so not timely."
+      },
+      {
+        "story": "Satya Nadella says he is AGI pilled and warns against one dominant AI firm",
+        "source": "https://www.tokenpost.com/news/technology/59959",
+        "decision": "queued",
+        "job_id": "2026-11-18-nadella-agi-pilled",
+        "priority": 2,
+        "reason": "A person story that would suit Instagram, but today's carousels are already full (3), so it goes to the site only."
+      },
+      {
+        "story": "Gemini Memory summary: see and edit what Gemini remembers",
+        "source": "https://9to5google.com/?p=736073",
+        "decision": "queued",
+        "job_id": "2026-11-18-gemini-memory-summary-guide",
+        "priority": 2,
+        "reason": "Second website guide of the day, a product change that hits normal users."
+      },
+      {
+        "story": "Anthropic IPO, trading expected to start November 19",
+        "source": "https://www.cnbc.com/2026/11/10/anthropic-sets-price-range-of-70-to-78-in-upcoming-ipo.html",
+        "decision": "skipped",
+        "reason": "Price range and demand already covered; the final price and first trade come tonight and tomorrow, so a later run should queue the debut as priority 1."
+      },
+      {
+        "story": "Genesis AI raises $500 million for glove-trained humanoid robots",
+        "source": "https://dataconomy.com/2026/11/17/genesis-ai-raises-500-million-to-deploy-glove-wearing/",
+        "decision": "skipped",
+        "reason": "Funding round mostly insiders follow, and no clip to make a Reel from."
+      },
+      {
+        "story": "Nvidia's startup stakes reached $65 billion, Huang's exit casts doubt on deals",
+        "source": "https://techcrunch.com/2026/11/17/nvidias-startup-stakes-ballooned-to-65b-but-huangs-exit-puts-futur",
+        "decision": "skipped",
+        "reason": "Third Nvidia angle in two days; carousels full and the site already has the Huang exit stories."
+      },
+      {
+        "story": "SEO study says Google's AI answers cut search traffic by about 40 percent",
+        "source": "https://revscope.co/blog/search-seo-geo-2026/",
+        "decision": "skipped",
+        "reason": "A single marketing firm's claim with no independent confirmation found."
+      },
+      {
+        "story": "Baidu and Xiaomi CEOs warn AI hype is outpacing returns",
+        "source": "https://www.scmp.com/tech/big-tech/article/3374774/baidu-xiaomi-ceos-warn-growing-gap-between-ai-hype-and-returns",
+        "decision": "skipped",
+        "reason": "Little US interest; site-only quota better spent on Nadella today."
+      },
+      {
+        "story": "Claude Code team on how agents verify their own code",
+        "source": "https://claude.dev/blog/how-the-claude-code-team-thinks-about-verification/",
+        "decision": "skipped",
+        "reason": "Developer-only topic."
+      },
+      {
+        "story": "Anthropic extends free Claude for Teachers to July 2028",
+        "decision": "skipped",
+        "reason": "Small program extension with limited reach."
       }
     ],
     "requests": []
