@@ -1,21 +1,5 @@
 [
   {
-    "id": "req-2026-10-30-18497fb6",
-    "text": "Create a carousel post about the Binance hack incident. It is a hot, breaking story, so prioritize it high. Cover the facts: what happened, how much was stolen (if known), how Binance responded, and any official confirmation. Use only verifiable, sourced information; cite sources. Follow the account's standard carousel format with a strong cover.",
-    "original": "Binance hacklenme olayı ile ilgili carousel yapalım, sıcak ve yeni olay, hemen olsun",
-    "job_id": null,
-    "retry_of": null,
-    "created_at": "2026-10-30T13:17:09.277Z"
-  },
-  {
-    "id": "req-2026-11-03-d63913fe",
-    "text": "Process the link Mahir just sent (https://x.com/mom_agency_/status/2117621900830458269) as a priority, right now. Prepare the post AND publish it immediately as soon as it is ready — do NOT wait for approval. Mahir explicitly asked for it to be posted the moment it is done (\"hemen paylaşılsın yapılır yapılmaz\").",
-    "original": "20:10'da attığım link hemen işlensin, yapılır yapılmaz paylaşılsın (onay beklemeden)",
-    "job_id": null,
-    "retry_of": null,
-    "created_at": "2026-11-03T17:11:33.288Z"
-  },
-  {
     "id": "req-2026-11-08-5adc5365",
     "text": "The carousel post \"2026-11-08-altman-why-openai-leaders-left\" (Sam Altman explains why OpenAI's top leaders left, from the Raj Shamani podcast) expired before it could be posted. Mahir still wants it published. Please refresh/update anything stale in it and re-queue it so it can be posted (priority 2).",
     "original": "Bu postu yine de paylaşsın, Claude da paylaşsın",
@@ -70,5 +54,13 @@
     "job_id": null,
     "retry_of": null,
     "created_at": "2026-11-12T17:35:45.467Z"
+  },
+  {
+    "id": "req-2026-11-18-d05b4a6c",
+    "text": "Fix the crop/size of the GTA 6 reel (job 2026-11-18-gta6-ps5-pro-rtx-5090-280fps-reel). The video is cropped wrong: the source account's logo and text/watermarks are still visible in the frame. Re-crop and reframe the video so the source account's logo and text are fully cut out, keeping the correct Instagram Reel aspect ratio (9:16).",
+    "original": "GTA 6 reelinin boyutunu düzelt, aldığımız hesabın logosu ve yazıları çıkmış",
+    "job_id": "2026-11-18-gta6-ps5-pro-rtx-5090-280fps-reel",
+    "retry_of": null,
+    "created_at": "2026-11-18T22:15:37.254Z"
   }
 ]
