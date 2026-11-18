@@ -5331,5 +5331,60 @@
       }
     ],
     "requests": []
+  },
+  {
+    "run_at": "2026-11-18T17:03:13.702Z",
+    "summary": "Midday run (12:20 New York, Nov 18): no open links or requests; queued the day's third website guide (Fireflies AI). Instagram carousels (3) and site-only news articles (4) for Nov 18 are already at the daily limit, and no desk Reel clip could be found and checked.",
+    "considered": [
+      {
+        "story": "Guide: How to use Fireflies AI, and how to remove it from meetings",
+        "source": "https://guide.fireflies.ai/articles/7098191513-how-to-remove-fireflies-from-a-meeting",
+        "decision": "queued",
+        "job_id": "2026-11-18-how-to-use-fireflies-ai-guide",
+        "priority": 2,
+        "reason": "Third of today's 6 guides, next tool library line in guides/plan.md, built on four Fireflies Help Center articles, the Fireflies pricing post and Castmagic's pricing review."
+      },
+      {
+        "story": "Sam Altman and Greg Brockman at DealBook: 'hard to imagine the AI industry without Jensen'",
+        "source": "https://techcrunch.com/2026/11/18/openai-ceo-sam-altman-says-its-hard-to-imagine-the-ai-industry-without-jensen/",
+        "decision": "skipped",
+        "reason": "Person story confirmed by TechCrunch and CNBC, but Nov 18 carousels and site-only slots are full and the Huang exit already has several jobs."
+      },
+      {
+        "story": "Google will keep Gemini chats for two months, up from 72 hours, even with history off",
+        "source": "https://techcrunch.com/2026/11/17/google-to-keep-gemini-chats-for-two-months-up-from-72-hours-even-with-history-off/",
+        "decision": "skipped",
+        "reason": "Good everyone story, but today's carousels already include a Gemini priority 1 post and site-only slots are full; a later run on Nov 19 could still make it if it is not stale."
+      },
+      {
+        "story": "Meta's Alexandr Wang posted an AI video of Sam Altman dressed as the Muse mascot",
+        "source": "https://www.infobae.com/tecno/2026/11/18/el-jefe-de-ia-de-meta-publico-en-instagram-un-video-falso-de-sam-altman-y-las-reglas-de-la-empresa-lo-permiten/",
+        "decision": "skipped",
+        "reason": "Possible Reel, but the clip was posted in early November and no link to the original post (Instagram or X) could be found, so there is no video URL to render."
+      },
+      {
+        "story": "Anthropic IPO pricing",
+        "decision": "skipped",
+        "reason": "Price is set Wednesday evening and trading starts Nov 19; the evening run must queue it as priority 1 once the price is public."
+      },
+      {
+        "story": "Waymo suspends freeway rides nationwide after California DMV order",
+        "source": "https://techcrunch.com/2026/11/17/waymo-suspends-freeway-rides-nationwide-after-california-dmv-order/",
+        "decision": "skipped",
+        "reason": "Could not read a dated second source for the November order (search results were the May suspension), and today's slots are full."
+      },
+      {
+        "story": "AI models tricked into picking civilians as military targets by calling it a game",
+        "source": "https://techcrunch.com/2026/11/17/ai-models-can-be-tricked-into-identifying-civilians-as-military-targets-by-telling-them-its-a-game/",
+        "decision": "skipped",
+        "reason": "Strange AI behavior that would travel, but carousels for Nov 18 are full; worth checking for Nov 19."
+      },
+      {
+        "story": "Reel search",
+        "decision": "skipped",
+        "reason": "Reddit leads are empty, leads were last refreshed around 01:50 UTC, and X could not be opened from this run, so no clip could be checked against the Reel filter."
+      }
+    ],
+    "requests": []
   }
 ]

@@ -1,0 +1,284 @@
+{
+  "id": "2026-11-18-how-to-use-fireflies-ai-guide",
+  "format": "utility",
+  "site_only": true,
+  "created_at": "2026-11-18T17:20:00Z",
+  "story_time": "2026-11-18T17:20:00Z",
+  "timely": false,
+  "sensitive": false,
+  "priority": 2,
+  "sources": [
+    {
+      "name": "Fireflies Help Center: How to remove Fireflies from a meeting (or stop it from joining)",
+      "url": "https://guide.fireflies.ai/articles/7098191513-how-to-remove-fireflies-from-a-meeting"
+    },
+    {
+      "name": "Fireflies Help Center: How to disable the Fireflies auto-join settings",
+      "url": "https://guide.fireflies.ai/articles/8587670572-how-to-disable-the-fireflies-auto-join-settings"
+    },
+    {
+      "name": "Fireflies Help Center: How Fireflies joins and records your meetings",
+      "url": "https://guide.fireflies.ai/articles/9554534786"
+    },
+    {
+      "name": "Fireflies Help Center: Storage and rate limits",
+      "url": "https://guide.fireflies.ai/articles/2631950139-learn-about-transcription-credits-storage-and-rate-limits-for-meetings"
+    },
+    {
+      "name": "Fireflies blog: Fireflies pricing 2026",
+      "url": "https://fireflies.ai/blog/fireflies-pricing-which-plan-is-right-for-you"
+    },
+    {
+      "name": "Castmagic: Fireflies.ai pricing (2026)",
+      "url": "https://www.castmagic.io/blog/fireflies-pricing"
+    },
+    {
+      "name": "Fireflies blog: 5 FAQs on how to improve your Fireflies experience",
+      "url": "https://fireflies.ai/blog/improve-fireflies-experience/"
+    }
+  ],
+  "caption": "Fireflies sends a bot called Fred into your Zoom, Meet and Teams calls and turns them into transcripts and summaries.\nThe free plan has unlimited transcription but only 400 minutes of storage.\nHere is how to set it up, and how to make it stop joining every meeting.\n\nDo you let an AI notetaker sit in on your calls?\n\nFollow @neurafeed.ai for daily AI news.\n\nSource: Fireflies Help Center · Photo: Fireflies.ai",
+  "threads_text": "Fireflies joins your Zoom, Meet and Teams calls as a bot and writes the notes for you. The catch most people hit: by default it can join every meeting on your calendar. Would you rather invite an AI notetaker on purpose or let it join everything?",
+  "slides": [
+    {
+      "kind": "cover",
+      "headline": "How to use *Fireflies AI*, and how to stop it joining every meeting",
+      "image": {
+        "url": "https://fireflies.ai/api/blog-media/file/5098466-1.jpg?prefix=payload%2Fblog",
+        "credit": "Fireflies.ai",
+        "fallback_urls": [
+          "https://fireflies.ai/_next/image?url=%2Fapi%2Fblog-media%2Ffile%2F5098466-1.jpg%3Fprefix%3Dpayload%252Fblog&w=3840&q=75"
+        ]
+      },
+      "pos": "center center"
+    },
+    {
+      "kind": "card",
+      "heading": "1. Invite *Fred*",
+      "paras": [
+        "Fireflies joins Zoom, Google Meet and Teams as a bot. Connect Google Calendar or Outlook, or add fred@fireflies.ai to one invite.",
+        "For a call already running, use Add to Live Meeting and paste the link."
+      ],
+      "image": {
+        "url": "https://fireflies.ai/api/blog-media/file/trans.jpg?prefix=payload%2Fblog",
+        "credit": "Fireflies.ai",
+        "fallback_urls": [
+          "https://fireflies.ai/_next/image?url=%2Fapi%2Fblog-media%2Ffile%2Ftrans.jpg%3Fprefix%3Dpayload%252Fblog&w=3840&q=75"
+        ],
+        "fit": "contain"
+      }
+    },
+    {
+      "kind": "card",
+      "heading": "2. Pick *which meetings* it joins",
+      "paras": [
+        "Auto-join is set to All meetings by default. In Settings, switch it to Only when I invite fred@fireflies.ai.",
+        {
+          "t": "Recording Rules can skip meetings by keyword or domain.",
+          "strong": true
+        }
+      ],
+      "image": {
+        "url": "https://fireflies.ai/api/blog-media/file/image-909.png?prefix=payload%2Fblog",
+        "credit": "Fireflies.ai",
+        "fallback_urls": [
+          "https://fireflies.ai/_next/image?url=%2Fapi%2Fblog-media%2Ffile%2Fimage-909.png%3Fprefix%3Dpayload%252Fblog&w=3840&q=75"
+        ],
+        "fit": "contain"
+      }
+    },
+    {
+      "kind": "card",
+      "heading": "3. Kick it out *mid-call*",
+      "paras": [
+        "Remove Fireflies Notetaker from the participant list, or type /ff leave in the meeting chat.",
+        "Removed in the first 3 minutes, it keeps no notes."
+      ],
+      "image": {
+        "url": "https://fireflies.ai/api/blog-media/file/edit.jpg?prefix=payload%2Fblog",
+        "credit": "Fireflies.ai",
+        "fallback_urls": [
+          "https://fireflies.ai/_next/image?url=%2Fapi%2Fblog-media%2Ffile%2Fedit.jpg%3Fprefix%3Dpayload%252Fblog&w=3840&q=75"
+        ],
+        "fit": "contain"
+      }
+    },
+    {
+      "kind": "card",
+      "heading": "4. Know the *free limit*",
+      "paras": [
+        "Free gives unlimited transcription and summaries but 400 minutes of storage and no video recording.",
+        "Pro is $10 a month per seat billed yearly, or $18 monthly."
+      ],
+      "image": {
+        "url": "https://fireflies.ai/api/blog-media/file/Fireflies-pricing---which-plan-is-right-for-you-1.png?prefix=payload%2Fblog",
+        "credit": "Fireflies.ai",
+        "fallback_urls": [
+          "https://fireflies.ai/_next/image?url=%2Fapi%2Fblog-media%2Ffile%2FFireflies-pricing---which-plan-is-right-for-you-1.png%3Fprefix%3Dpayload%252Fblog&w=3840&q=75"
+        ]
+      }
+    },
+    {
+      "kind": "cta",
+      "hook": "Follow for one AI tool explained every day."
+    }
+  ],
+  "site_article": {
+    "kind": "guide",
+    "headline": "How to use Fireflies AI for meeting notes, and how to remove it from your meetings",
+    "dek": "Fireflies sends a notetaker bot into Zoom, Google Meet and Teams calls. Here is how to invite it, control when it joins, get it out of a call, and what the free plan covers.",
+    "summary": "Fireflies records and transcribes Zoom, Google Meet and Microsoft Teams calls through a bot called Fred that joins from your calendar or an invite. The free plan has unlimited transcription and AI summaries but 400 minutes of storage, and auto-join can be limited to meetings you invite it to.",
+    "seo_title": "How to use Fireflies AI (and remove it from meetings)",
+    "seo_description": "Set up Fireflies AI for Zoom, Meet and Teams, stop Fred from auto-joining, remove it from a live call, and see what the free plan includes.",
+    "answer_summary": "Connect Google Calendar or Outlook to Fireflies, or add fred@fireflies.ai to a meeting invite, and the notetaker joins and transcribes the call. To stop it joining everything, set Auto-join calendar meetings to \"Only when I invite fred@fireflies.ai\" or turn off Auto-record meetings in Settings.",
+    "tags": [
+      "Fireflies AI",
+      "Meeting notes",
+      "AI notetaker",
+      "Zoom",
+      "Guides"
+    ],
+    "hero_alt": "Fireflies.ai promotional banner for an article about improving the Fireflies experience.",
+    "paragraphs": [
+      {
+        "kind": "fact",
+        "text": "Fireflies AI is a meeting notetaker. It sends a bot, listed in your call as Fireflies Notetaker and known as Fred, into Zoom, Google Meet and Microsoft Teams meetings, where it records the audio and turns it into a transcript and an AI summary. According to the Fireflies Help Center, it works with Google Calendar and Outlook or Office 365, and you can link one calendar per account.",
+        "sources": [
+          2
+        ]
+      },
+      {
+        "kind": "fact",
+        "text": "The part most people search for is the opposite of setup: how to make Fireflies stop joining meetings. By default, auto-join is set to all meetings on your calendar, so a bot can show up in calls you never meant to record. This guide covers both sides: getting useful notes, and keeping Fred out of the calls where you do not want it.",
+        "sources": [
+          1
+        ]
+      },
+      {
+        "kind": "heading",
+        "text": "How to use Fireflies AI: the setup"
+      },
+      {
+        "kind": "step",
+        "title": "1. Sign up and connect one calendar",
+        "text": "Create a Fireflies account and connect Google Calendar or Outlook. Fireflies does not directly support Zoho or Apple Calendar, so meetings on those calendars need a manual invite. Only one calendar can be linked per account."
+      },
+      {
+        "kind": "step",
+        "title": "2. Decide how Fred gets into meetings",
+        "text": "There are three ways. Auto-join lets Fireflies join based on your settings. A manual invite means adding fred@fireflies.ai to the guest list of a Google or Outlook event. Add to Live Meeting, on the Fireflies dashboard, sends the bot into a call that has already started."
+      },
+      {
+        "kind": "step",
+        "title": "3. Add Fireflies to a call that is already running",
+        "text": "Open Add to Live Meeting on the dashboard, paste the meeting link, set the language, and click Start Capturing. If the call has a waiting room or lobby, the host has to admit the bot. In Google Meet, check the \"With potential risks\" section of the participants panel if the bot does not appear, then choose Admit entry from the three dots next to it."
+      },
+      {
+        "kind": "step",
+        "title": "4. Record without a bot when you need to",
+        "text": "The Fireflies Chrome extension records Google Meet calls without a bot joining, and the iOS and Android apps are meant for in-person conversations. You can also upload audio files, but uploads get generic labels such as Speaker 1, which you can rename and reprocess."
+      },
+      {
+        "kind": "fact",
+        "text": "Fireflies says a bot that joins from a calendar invite or auto-join arrives at the scheduled start time. If the meeting starts late, it waits up to 10 minutes in Google Meet and up to 15 minutes on other platforms before leaving. Long meetings keep the bot for 2 to 4 hours, depending on your plan.",
+        "sources": [
+          2
+        ]
+      },
+      {
+        "kind": "heading",
+        "text": "How to stop Fireflies from joining every meeting"
+      },
+      {
+        "kind": "fact",
+        "text": "Fireflies gives two settings for this, and both live in the web app. The Help Center describes them as the main way to stop automatic joining without deleting your account.",
+        "sources": [
+          1
+        ]
+      },
+      {
+        "kind": "step",
+        "title": "5. Turn off auto-record, or limit it to invites",
+        "text": "In the Fireflies web app, click Settings, open Recording & Privacy on the Personal tab, and turn off Auto-record meetings in the Recording section. It saves automatically. The alternative: on the Home page, click Settings on the right, find Auto-join calendar meetings (set to All meetings by default) and choose \"Only when I invite fred@fireflies.ai\"."
+      },
+      {
+        "kind": "step",
+        "title": "6. Use Recording Rules for the exceptions",
+        "text": "Recording Rules block meetings by keyword, email address or domain, and they override your auto-join setting. That makes them the right tool for \"record my team calls, never my one-on-ones\" or \"skip anything with this client\"."
+      },
+      {
+        "kind": "step",
+        "title": "7. Switch off one upcoming meeting",
+        "text": "On the Fireflies homepage, open the Upcoming tab, find the meeting under Upcoming Meetings and toggle Fireflies off. You can also edit the calendar event and remove fred@fireflies.ai from the guest list."
+      },
+      {
+        "kind": "tip",
+        "text": "Recording Rules can also make Fireflies join meetings. If the bot still shows up after you change auto-join, check your rules and make sure nobody on the invite added fred@fireflies.ai by hand."
+      },
+      {
+        "kind": "heading",
+        "text": "How to remove Fireflies from a live meeting"
+      },
+      {
+        "kind": "step",
+        "title": "8. Remove it from the participant list",
+        "text": "In Zoom, open the participant list, click More next to Fireflies Notetaker and choose Remove. In Google Meet, click the three dots next to Fireflies and select Remove from the call. In Teams, click the three dots and select Remove from meeting."
+      },
+      {
+        "kind": "step",
+        "title": "9. Or use the dashboard or a chat command",
+        "text": "On the Fireflies Home dashboard, click the Stop icon on the live meeting banner. In the meeting chat, typing /ff leave makes the bot leave right away. Fireflies says that if it is removed in the first 3 minutes, no transcript or notes are created; after that, you still get notes for the part it recorded."
+      },
+      {
+        "kind": "fact",
+        "text": "To cut Fireflies off completely, the Help Center points to deleting the account: go to Settings, scroll to the bottom and select Delete Account, which also removes its calendar access.",
+        "sources": [
+          0
+        ]
+      },
+      {
+        "kind": "heading",
+        "text": "What the free plan gets you"
+      },
+      {
+        "kind": "fact",
+        "text": "According to Fireflies, the Free plan includes unlimited transcription and unlimited AI summaries, support for more than 100 languages, the Zoom, Meet and Teams integrations, and audio file uploads, with 400 minutes of storage. It does not include video recording or downloads, which start with the paid plans.",
+        "sources": [
+          4
+        ]
+      },
+      {
+        "kind": "fact",
+        "text": "Pro costs $10 per seat per month billed annually or $18 billed monthly and raises storage to 8,000 minutes per seat. Business costs $19 per seat per month billed annually or $29 monthly and has unlimited storage. Enterprise is $39 per seat per month and is sold only on annual billing. Castmagic, a competing tool, lists the same prices and says the free plan includes 20 AI credits.",
+        "sources": [
+          4,
+          5,
+          3
+        ]
+      },
+      {
+        "kind": "fact",
+        "text": "Fireflies also limits uploads from outside sources, such as dashboard and API uploads, to 3,000 minutes per source per month for individuals. Meetings recorded by the live notetaker bot, the Chrome extension or the mobile app do not count toward that limit.",
+        "sources": [
+          3
+        ]
+      },
+      {
+        "kind": "heading",
+        "text": "Where Fireflies falls short"
+      },
+      {
+        "kind": "analysis",
+        "text": "Storage is the real limit on the free plan, not transcription. 400 minutes is roughly seven one-hour calls, so anyone recording meetings every day will run out fast and has to choose between deleting old recordings and paying. Castmagic makes the same point in its review, noting that heavy users often end up on Business."
+      },
+      {
+        "kind": "analysis",
+        "text": "The bot itself is the other weak spot. Some people on a call will not like an AI notetaker joining, and the default of joining every calendar meeting is how Fireflies ends up in calls nobody expected. Changing auto-join to invite only, and setting a few Recording Rules on day one, avoids most of that."
+      },
+      {
+        "kind": "tip",
+        "text": "Before your first recorded call, open Settings, then Meeting Settings, then Email Settings and choose who gets the recap: everyone on the invite, only your team, only people from your company domain, or only you. Fireflies says changes made before a call apply to that call."
+      }
+    ]
+  }
+}
