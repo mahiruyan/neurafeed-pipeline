@@ -1,0 +1,103 @@
+{
+  "id": "2026-11-18-outages-blamed-on-security-patches",
+  "created_at": "2026-11-18T13:30:00Z",
+  "story_time": "2026-11-17T21:43:00Z",
+  "timely": false,
+  "sensitive": false,
+  "priority": 2,
+  "site_only": true,
+  "format": "carousel",
+  "site_category": "policy",
+  "ab": { "headline": "short", "photo": "story" },
+  "sources": [
+    { "name": "Fox Business", "url": "https://www.foxbusiness.com/technology/jay-clayton-addresses-concerns-amid-widespread-tech-outages" },
+    { "name": "ABC News via Yahoo", "url": "https://www.yahoo.com/news/us/articles/national-intelligence-director-says-no-025035657.html" },
+    { "name": "Fortune", "url": "https://fortune.com/2026/11/14/faa-ground-stop-telecom-router-cybersecurity-white-house-situation-room-national-security-apparatus-l3harris/" },
+    { "name": "Fox Business", "url": "https://www.foxbusiness.com/technology/cybersecurity-expert-sounds-alarm-over-us-infrastructure-vulnerabilities-amid-widespread-outages" }
+  ],
+  "caption": "Top U.S. officials say the recent wave of tech outages was not a cyberattack.\nDirector of National Intelligence Jay Clayton says systems broke while being patched for newly found vulnerabilities, including at the NSA.\nSen. Mark Warner says AI now finds flaws so fast that everyone patches at once.\n\nDo you buy the patching explanation?\n\nFollow @neurafeed.ai for daily AI news.\n\nSource: ABC News, Fox Business · Photo: NSA",
+  "threads_text": "U.S. officials say the outages hitting the NSA and other systems were not hackers but rushed security patches. Sen. Warner says AI finds flaws so fast that everyone is patching at once. Do you buy that explanation?",
+  "slides": [
+    {
+      "kind": "cover",
+      "headline": "Not hackers: officials blame U.S. outages on *security patches*",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/8/84/National_Security_Agency_headquarters,_Fort_Meade,_Maryland.jpg",
+        "credit": "NSA / Wikimedia Commons",
+        "fallback_urls": [
+          "https://upload.wikimedia.org/wikipedia/commons/a/a3/United_States_Capitol_west_front_edit2.jpg"
+        ]
+      },
+      "pos": "center center"
+    },
+    {
+      "kind": "card",
+      "heading": "The NSA went *down* too",
+      "paras": [
+        "An internal NSA system for sharing classified information briefly went down on Tuesday, November 17.",
+        "DNI Jay Clayton said patched systems did not come back up as expected. \"That is what has happened at the NSA today.\""
+      ],
+      "image": {
+        "url": "https://a57.foxnews.com/static.foxbusiness.com/foxbusiness.com/content/uploads/2026/11/931/523/jay-clayton.png?ve=1&tl=1",
+        "credit": "Fox Business",
+        "fallback_urls": [
+          "https://upload.wikimedia.org/wikipedia/commons/a/a3/United_States_Capitol_west_front_edit2.jpg"
+        ]
+      }
+    },
+    {
+      "kind": "card",
+      "heading": "AI finds flaws *faster*",
+      "paras": [
+        "Sen. Mark Warner said AI can find vulnerabilities across huge numbers of systems at unprecedented speed.",
+        { "t": "That pushes everyone to patch at once, straining systems that were not built for that pace.", "strong": true }
+      ],
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/a/ae/Mark_Warner,_official_111th_Congress_photo_portrait.jpg",
+        "credit": "U.S. Senate / Wikimedia Commons"
+      },
+      "pos": "center 25%"
+    },
+    {
+      "kind": "card",
+      "heading": "Each outage had *its own cause*",
+      "paras": [
+        "Secretary of State Marco Rubio said the failures are unrelated. \"We are not under systemic attack.\"",
+        "The FAA ground stop on November 13 was traced to a router flood during copper to fiber line work."
+      ],
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/a/a3/United_States_Capitol_west_front_edit2.jpg",
+        "credit": "Wikimedia Commons"
+      }
+    },
+    {
+      "kind": "cta",
+      "hook": "Follow to see what AI-speed bug hunting breaks next."
+    }
+  ],
+  "site_article": {
+    "headline": "Officials say a wave of U.S. outages came from security patching, not a cyberattack",
+    "dek": "The director of national intelligence tied an NSA outage to systems that failed to restart after patches, and a senator pointed to the pace of AI-driven vulnerability discovery.",
+    "summary": "Director of National Intelligence Jay Clayton said on November 17, 2026, that recent U.S. tech outages, including one at the NSA, came from organizations patching newly found vulnerabilities rather than from a coordinated attack. Sen. Mark Warner said AI is speeding up how fast flaws are found, which puts pressure on everyone to patch at once.",
+    "seo_title": "Officials blame U.S. outages on security patches, not hackers",
+    "seo_description": "DNI Jay Clayton says outages including the NSA's came from patching new vulnerabilities. Sen. Warner says AI-speed bug discovery adds pressure.",
+    "answer_summary": "U.S. officials say the outages were not a cyberattack. Jay Clayton said systems failed to come back up after security patches, and Sen. Mark Warner said AI finds vulnerabilities so quickly that organizations are patching all at once.",
+    "tags": ["Cybersecurity", "NSA", "AI security", "Outages", "Jay Clayton"],
+    "hero_alt": "Aerial view of a large office complex with dark glass buildings surrounded by parking lots.",
+    "paragraphs": [
+      { "kind": "fact", "text": "Director of National Intelligence Jay Clayton said on November 17, 2026, that a recent run of U.S. technology outages did not come from a coordinated cyberattack or from state-sponsored activity. Speaking on Fox Business, he said the disruptions came from institutions taking systems down to install security patches after vulnerabilities were identified, and that some of those systems did not come back up as expected.", "sources": [0, 1] },
+      { "kind": "fact", "text": "Clayton tied an outage at the National Security Agency on the same day to that patching work. According to ABC News, an internal communications system that NSA employees use to share classified information briefly went down. The agency said the problem occurred during scheduled routine maintenance and that its mission-critical capabilities remained fully operational.", "sources": [0, 1] },
+      { "kind": "heading", "text": "A PHP flaw and systems that did not restart" },
+      { "kind": "fact", "text": "Fox Business reported that Clayton linked the outages to patching that followed a vulnerability in PHP, the widely used web programming language. He described systems that are taken offline, upgraded and then fail to hand off to other systems as they should. He said the FBI and the NSA had told operators to take vulnerable systems down and install the fix, and he said more patches would follow as government infrastructure is upgraded.", "sources": [0, 1] },
+      { "kind": "fact", "text": "Secretary of State Marco Rubio said the failures were unrelated to one another and not tied to a hostile country, calling them unsettling but attributing them to ordinary computer errors with different causes, according to ABC News. Fox Business separately quoted Rubio saying officials had found no evidence that hackers, criminal groups or foreign governments were responsible.", "sources": [1, 3] },
+      { "kind": "heading", "text": "Where AI comes in" },
+      { "kind": "fact", "text": "Sen. Mark Warner of Virginia, vice chairman of the Senate Intelligence Committee, said there was no indication the incidents were the result of a cyberattack and that the evidence points toward legitimate efforts to secure systems. He added that AI makes it possible to identify vulnerabilities across enormous numbers of systems at unprecedented speed, creating pressure on companies and agencies to patch immediately and often all at once, according to ABC News. Clayton also said AI can scan systems more quickly, which has increased the ability to find vulnerabilities.", "sources": [1] },
+      { "kind": "fact", "text": "Clayton also called for continued cooperation between the government and AI companies, so that cyber issues are dealt with before each new generation of frontier models is released, Fox Business reported.", "sources": [0] },
+      { "kind": "heading", "text": "The FAA ground stop had a different cause" },
+      { "kind": "fact", "text": "Not every recent failure fits the patching explanation. The Federal Aviation Administration ordered a nationwide ground stop on November 13 after a communications problem affecting air traffic control, forcing airlines to delay and cancel thousands of flights. Transportation Secretary Sean Duffy said the trouble began when an L3Harris contractor, switching lines from copper to fiber at a remote FAA site, triggered a flood of more than 1,000 connection attempts every four to five seconds on routers, Fortune reported. Duffy said it was not a foreign actor.", "sources": [2] },
+      { "kind": "fact", "text": "Some outside experts remain cautious. Ram Dantu, founding director of the University of North Texas Center for Cyber and AI Security, told Fox News that nobody can guarantee the outages were not a cyberattack and said daytime upgrades are unusual because engineers normally schedule them overnight and in stages.", "sources": [3] },
+      { "kind": "analysis", "text": "The officials' account shifts the worry from attackers to defenders. If AI tools surface serious flaws faster than organizations can safely test fixes, the rush to patch can itself knock systems offline, and critical services may face a choice between running exposed software and risking an unplanned outage." },
+      { "kind": "why_it_matters", "text": "Clayton said more patches are coming as government infrastructure is upgraded, so the next test is whether agencies and banks can stage those fixes without new outages." }
+    ]
+  }
+}

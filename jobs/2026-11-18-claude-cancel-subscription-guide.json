@@ -1,0 +1,130 @@
+{
+  "id": "2026-11-18-claude-cancel-subscription-guide",
+  "format": "utility",
+  "site_only": true,
+  "created_at": "2026-11-18T13:35:00Z",
+  "story_time": "2026-11-18T13:35:00Z",
+  "timely": false,
+  "sensitive": false,
+  "priority": 2,
+  "sources": [
+    { "name": "Claude Help Center: Cancel your Pro or Max plan", "url": "https://support.claude.com/en/articles/8325617-cancel-your-pro-or-max-plan" },
+    { "name": "Claude Help Center: Request a refund for a paid Claude plan", "url": "https://support.claude.com/en/articles/12386328-request-a-refund-for-a-paid-claude-plan" },
+    { "name": "SSD Nodes: Claude subscription refund policy", "url": "https://www.ssdnodes.com/learn/claude-subscription-refund-policy" }
+  ],
+  "caption": "Canceling Claude takes a minute on the web, but on iPhone and Android the subscription lives with Apple or Google.\nCancel at least 24 hours before your billing date, and you keep your paid plan until the period ends.\nRefunds are the exception, not the rule. Here is how both work.\n\nHave you ever forgotten to cancel an AI subscription?\n\nFollow @neurafeed.ai for daily AI news.\n\nSource: Claude Help Center · Photo: Anthropic",
+  "threads_text": "Canceling Claude is a Settings, then Billing job on the web, but on iPhone and Android you cancel through Apple or Google. Do it at least 24 hours before renewal. Have you ever paid for an AI plan you forgot to cancel?",
+  "slides": [
+    {
+      "kind": "cover",
+      "headline": "How to cancel a *Claude subscription*, and when you can get a refund",
+      "image": {
+        "url": "https://assets.claude.com/27d189475a69c8d847540d09821db517a2f7c66d.jpg",
+        "credit": "Anthropic",
+        "fallback_urls": [
+          "https://assets.claude.com/6dc7dfac91662cacf52534a25252db332309cb0d.jpg?w=1200&h=630&fit=crop"
+        ]
+      },
+      "pos": "center center",
+      "badges": [
+        { "url": "assets/logos/claude.png", "fit": "contain" }
+      ]
+    },
+    {
+      "kind": "card",
+      "heading": "1. On the web: *Settings, Billing*",
+      "paras": [
+        "Click your name in the lower left corner, open Settings, then Billing, and click Cancel.",
+        "The same steps work in the Claude desktop app on Mac, Windows and Linux."
+      ],
+      "image": {
+        "url": "https://assets.claude.com/d4645137a0c197beee5313fedbf9417d035452fc.webp",
+        "credit": "Anthropic",
+        "fit": "contain"
+      }
+    },
+    {
+      "kind": "card",
+      "heading": "2. On a phone: *Apple or Google*",
+      "paras": [
+        "In the app, tap your initials in the top right, then Billing, then Manage subscription.",
+        "Deleted the app? Cancel in your Apple or Google Play subscriptions instead."
+      ],
+      "image": {
+        "url": "https://assets.claude.com/454390de9d9ccefb6082b7c2440c7547c1ec3964.webp",
+        "credit": "Anthropic",
+        "fit": "contain"
+      }
+    },
+    {
+      "kind": "card",
+      "heading": "3. Mind the *24 hours*",
+      "paras": [
+        "Cancel at least 24 hours before your next billing date, or you may be charged again.",
+        { "t": "You keep the paid plan until the end of the period you already paid for.", "strong": true }
+      ],
+      "image": {
+        "url": "https://assets.claude.com/6dc7dfac91662cacf52534a25252db332309cb0d.jpg?w=1200&h=630&fit=crop",
+        "credit": "Anthropic",
+        "fit": "contain"
+      }
+    },
+    {
+      "kind": "card",
+      "heading": "4. Refunds are *the exception*",
+      "paras": [
+        "Anthropic says payments are non-refundable unless its terms or the law say otherwise.",
+        "On the web, ask through Get help, then Claude Refund Request. iPhone refunds go through Apple."
+      ],
+      "image": {
+        "url": "https://news.stocktwits-cdn.com/large_Getty_Images_2276989723_eb8b10972a.jpg",
+        "credit": "Algi Febri Sugita / SOPA Images / Getty Images",
+        "fit": "contain"
+      }
+    },
+    {
+      "kind": "cta",
+      "hook": "Follow for one AI tool explained every day."
+    }
+  ],
+  "site_article": {
+    "kind": "guide",
+    "headline": "How to cancel a Claude subscription on the web, iPhone and Android",
+    "dek": "Where you cancel depends on where you subscribed. Here are the exact steps for each platform, the 24 hour rule, and when a refund is actually possible.",
+    "summary": "To cancel a paid Claude plan bought on the web, open Settings, then Billing, and click Cancel. Plans bought in the iPhone or Android app are canceled through Apple or Google Play, and in every case you keep paid access until the end of the current billing period.",
+    "seo_title": "How to cancel a Claude subscription (web, iPhone, Android)",
+    "seo_description": "Step by step: cancel Claude Pro or Max on the web, desktop, iPhone and Android, the 24 hour rule before renewal, and how to request a refund.",
+    "answer_summary": "On claude.ai or the desktop app, click your name in the lower left, go to Settings, then Billing, and click Cancel. In the iPhone or Android app, tap your initials, then Billing, then Manage subscription. Cancel at least 24 hours before your billing date.",
+    "tags": ["Claude", "Anthropic", "Claude Pro", "Subscriptions", "Guides"],
+    "hero_alt": "Promotional image from Anthropic for its Claude AI assistant.",
+    "paragraphs": [
+      { "kind": "fact", "text": "How to cancel a Claude subscription depends on where you paid for it. If you subscribed on claude.ai or in the desktop app, you cancel in Claude's own billing settings. If you subscribed inside the iPhone or Android app, the subscription is handled by Apple or Google Play, and that is where it has to be stopped. Either way, Anthropic's help center says the cancellation takes effect at the end of your current billing period, so you keep your paid plan until then.", "sources": [0] },
+      { "kind": "fact", "text": "The one deadline to remember: cancel at least 24 hours before your next billing date. Anthropic's help center says that is how to avoid being charged for the next period, and SSD Nodes notes that the Consumer Terms state the same rule, so a cancellation inside that window may still let the renewal go through.", "sources": [0, 2] },
+      { "kind": "heading", "text": "How to cancel a Claude subscription on the web or desktop" },
+      { "kind": "step", "title": "1. Log in to Claude", "text": "Open claude.ai in your browser, or the Claude desktop app on Mac, Windows or Linux. The steps are the same in both." },
+      { "kind": "step", "title": "2. Open Settings", "text": "Click your initials or name in the lower left corner and select Settings." },
+      { "kind": "step", "title": "3. Go to Billing and cancel", "text": "Open the Billing section (claude.ai/settings/billing) and click the Cancel button. Your plan stays active until the end of the period you already paid for." },
+      { "kind": "tip", "text": "Before you cancel, note the date of your next charge in Billing. If it is less than a day away, the safest move is to cancel right now rather than wait." },
+      { "kind": "heading", "text": "How to cancel Claude on iPhone" },
+      { "kind": "step", "title": "1. Open the Claude app", "text": "Tap your initials in the top right corner." },
+      { "kind": "step", "title": "2. Manage the subscription", "text": "Choose Billing, then Manage subscription, and follow the prompts. This hands you over to Apple, which runs the subscription." },
+      { "kind": "fact", "text": "If you already deleted the app, Anthropic points to Apple's own guide for canceling a subscription from your Apple Account settings instead.", "sources": [0] },
+      { "kind": "heading", "text": "How to cancel Claude on Android" },
+      { "kind": "step", "title": "1. Open the Claude app", "text": "Tap your initials in the top right corner." },
+      { "kind": "step", "title": "2. Manage the subscription", "text": "Choose Billing, then Manage subscription, and follow the prompts. The subscription is handled through Google Play." },
+      { "kind": "fact", "text": "If the app is gone from your phone, Anthropic links to Google Play's help page for canceling a subscription there.", "sources": [0] },
+      { "kind": "heading", "text": "When a Claude refund is possible" },
+      { "kind": "fact", "text": "Usually not. Anthropic's refund article says payments are non-refundable except where its Consumer Terms expressly say otherwise, where the law requires it, or in cases of fraud. In the EEA and the UK, the help center says you may get a refund within 14 days of purchase, prorated based on how much you used the plan.", "sources": [1] },
+      { "kind": "fact", "text": "SSD Nodes, which compared the help center with Anthropic's terms on November 17, 2026, adds that the terms give users in Brazil, Mexico, South Korea and Taiwan a 7 day right to cancel and be reimbursed, and promise a pro rata refund for website purchases when Anthropic itself ends a plan without a violation.", "sources": [2] },
+      { "kind": "step", "title": "Request a refund on the web", "text": "Click your initials or name in the lower left corner, select Get help, then Send us a message. Click Accept, choose Claude Refund Request, pick your reason and follow the prompts. If you are eligible, the messenger lets you cancel and refund the plan in the same flow." },
+      { "kind": "step", "title": "Request a refund for an iPhone purchase", "text": "Apple took the payment, so Claude support cannot refund it. Sign in at reportaproblem.apple.com, choose I'd like to, then Request a refund, pick a reason, select the Claude subscription and submit. Apple decides." },
+      { "kind": "fact", "text": "An Apple refund does not cancel the subscription. Anthropic says to cancel separately, or the next renewal will still be charged. For Android purchases, contact Claude support; if the subscription is no longer active, include the email tied to your Google Play account or the GPA order number from your receipt.", "sources": [1] },
+      { "kind": "heading", "text": "Things that block or change a refund" },
+      { "kind": "fact", "text": "Support cannot process a refund while a payment dispute with your bank is open, so resolve or withdraw the dispute first. If you cannot log in, contact support from a different email and copy in the address tied to the locked account. Usage credits are generally non-refundable, and used credits are never refunded.", "sources": [1] },
+      { "kind": "fact", "text": "On Max and Team plans, the monthly API credits included with the plan stop once you cancel or get a refund. Credits you already have stay usable until they expire, but they cannot be refunded.", "sources": [0, 1] },
+      { "kind": "fact", "text": "Upgrading to a Team plan works differently. For plans bought directly from Claude, the individual subscription is canceled automatically and a prorated refund for the unused time arrives about 24 hours after the Team payment. Google Play purchases take one to two weeks, and App Store subscriptions must be canceled first because they cannot be upgraded in place.", "sources": [1] },
+      { "kind": "tip", "text": "Have your account email, invoice number and the charge date ready before you ask for a refund. SSD Nodes notes that Anthropic publishes no turnaround time for refund requests, so expect days rather than hours." },
+      { "kind": "analysis", "text": "The practical rule is simple: cancel early in the billing period rather than in the last day, and cancel in the same place you paid. The two easy traps are canceling in the wrong place, such as deleting the iPhone app while the Apple subscription keeps running, and canceling inside the final 24 hours. One thing the help center does not spell out is what happens to your chats after a paid plan ends, so do not assume either way." }
+    ]
+  }
+}
