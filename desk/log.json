@@ -1,72 +1,5 @@
 [
   {
-    "run_at": "2026-11-11T11:06:35.408Z",
-    "summary": "Early run (05:55 New York): no open links or requests; queued the Grok Build exposed-apps story (priority 1, xAI/SpaceXSI). Today now has 6 desk posts (2 Reels, 4 carousels counted as 1 Reel + 5 carousels incl. this one), leaving room for Reels later.",
-    "considered": [
-      {
-        "story": "Claroc finds 35,578 Grok Build apps open without login, incl. SpaceXSI sales files",
-        "source": "https://teslanorth.com/2026/11/10/grok-build-apps-private-data-claroc/",
-        "decision": "queued",
-        "job_id": "2026-11-11-grok-build-35000-apps-open-spacexai",
-        "priority": 1
-      },
-      {
-        "story": "Dorsia says ex-engineer stole secrets and used Claude to plan his move",
-        "source": "https://www.law360.com/hospitality/articles/2548797",
-        "decision": "skipped",
-        "reason": "Only a paywalled Law360 intro and a Reuters headline were readable; not enough verified detail for a carousel."
-      },
-      {
-        "story": "OpenAI acquires AI travel agent Odessia; Expedia and Booking shares dip",
-        "source": "https://techcrunch.com/2026/11/10/openai-acquires-odessia-travel-startup-created-by-sonder-founder/",
-        "decision": "skipped",
-        "reason": "Solid sources (TechCrunch, Skift), but today already has 5 carousels; keeping the remaining slots for Reels. Good candidate if a later run has room."
-      },
-      {
-        "story": "Stifel CEO says Anthropic tools showed the firm needs more positions",
-        "source": "https://www.foxbusiness.com/video/6408204231112",
-        "decision": "skipped",
-        "reason": "The jobs claim is only in a video headline with no transcript; the press release covers just the Dashboard partnership."
-      },
-      {
-        "story": "Elon Musk says Claude is better than Grok 'for now'",
-        "decision": "skipped",
-        "reason": "Search shows this is a months-old remark resurfaced, not new news."
-      },
-      {
-        "story": "Claude Personal Finance connects to bank accounts through Plaid",
-        "decision": "covered",
-        "reason": "Already covered as 2026-11-06-claude-personal-finance-bank-accounts."
-      },
-      {
-        "story": "ChatGPT Chat and Work tabs merging",
-        "decision": "covered",
-        "reason": "Already covered as 2026-11-03-chatgpt-classic-retires-work-tab-merge."
-      },
-      {
-        "story": "Anthropic IPO valuation talk ($1.4 to $1.5 trillion, Nov 19 or 20 Nasdaq date)",
-        "decision": "covered",
-        "reason": "IPO pricing covered 2026-11-10 (two jobs); no new confirmed fact worth a separate post yet."
-      },
-      {
-        "story": "OpenAI Q3 revenue tops $10 billion with wider losses",
-        "decision": "covered",
-        "reason": "Already queued as 2026-11-11-openai-10-billion-quarter-still-loses."
-      },
-      {
-        "story": "Nvidia spy scandal now said to involve $7.5 billion in chip sales",
-        "decision": "covered",
-        "reason": "Same story as 2026-11-08-nvidia-board-probes-huang-alleged-spy."
-      },
-      {
-        "story": "Google Gemini privacy policy and Gmail promise",
-        "decision": "covered",
-        "reason": "Same story as 2026-11-10-gemini-human-reviewers-gmail-drive."
-      }
-    ],
-    "requests": []
-  },
-  {
     "run_at": "2026-11-11T11:52:23.755Z",
     "summary": "Link desk: queued Mahir's Jensen 'strictly for research' Reel (link-2026-11-11-3403) for review; the same X post was already posted this morning as 2026-11-11-jensen-strictly-research-reel.",
     "considered": [
@@ -5346,6 +5279,53 @@
         "job_id": "2026-11-18-nvidia-gpu-collection-30-years-reel",
         "priority": 1,
         "reason": "Mahir's link. Hook is his title word for word (only 'graphic' fixed to 'graphics'). The Instagram clip is a repost carrying another AI page's branding, so the pipeline searches for the collector's original YouTube video (ornstein6990); credit goes to the collector, not the repost page, as Mahir asked. The collection was first covered in 2025, so timely is false. The '40 cards' detail in the repost caption was not confirmed by any outlet, so it is left out."
+      }
+    ],
+    "requests": []
+  },
+  {
+    "run_at": "2026-11-18T11:07:20.629Z",
+    "summary": "Early run (05:55 New York): queued one site-only article on the OpenAI bugging case trial date; Nov 18 Instagram carousels are already full (3) and no Reel clip could be checked.",
+    "considered": [
+      {
+        "story": "OpenAI bugging case: trial set for Jan 20, 2027; prosecutor knows of no espionage evidence",
+        "source": "https://www.newsbytesapp.com/news/business/trial-for-ex-openai-employee-accused-of-bugging-set-for-january/story",
+        "decision": "queued",
+        "job_id": "2026-11-18-openai-bugging-trial-no-spy-evidence",
+        "priority": 2,
+        "reason": "New court development in a story we covered in October, confirmed by NewsBytes and CNBC (via TradingView), background from Al Jazeera. Site-only and sensitive (crime) because the day already has 3 Instagram carousels. CNBC and Courthouse News pages could not be opened directly, and image URLs could not be checked from this run."
+      },
+      {
+        "story": "Microsoft Ignite: Word, Excel and PowerPoint now generally available inside Copilot",
+        "source": "https://startupfortune.com/microsoft-puts-word-excel-and-powerpoint-inside-copilot-and-calls-it-a-new-os-for-work/",
+        "decision": "skipped",
+        "reason": "Office in Copilot was already announced in September; Ignite only made it generally available, and Microsoft's own posts and Ars Technica could not be opened, leaving only thin secondary sources."
+      },
+      {
+        "story": "Anthropic IPO pricing",
+        "decision": "skipped",
+        "reason": "Pricing is expected Wednesday evening, Nov 18; a later run should queue it as priority 1 once the price is set."
+      },
+      {
+        "story": "Claude login and authentication outage",
+        "decision": "skipped",
+        "reason": "Could not confirm a new outage on Nov 17 or 18; results point to earlier incidents."
+      },
+      {
+        "story": "European stocks' worst day in eight months on AI jitters",
+        "source": "https://www.brecorder.com/news/40449399/european-stocks-mark-worst-day-in-eight-months-on-ai-jitters?v=19We6gyN-E7zcMxjLkvmgQx6",
+        "decision": "skipped",
+        "reason": "Market story with no new AI event behind it, and Nov 18 Instagram carousels are full."
+      },
+      {
+        "story": "Satya Nadella says he is AGI-pilled (The Verge)",
+        "decision": "skipped",
+        "reason": "Talking-head quote with little share value; already skipped by the previous run."
+      },
+      {
+        "story": "Reel search",
+        "decision": "skipped",
+        "reason": "Reddit leads are empty and X could not be opened from this run, so no clip could be checked against the Reel filter. Guides start at 07:00 New York time, so none this run."
       }
     ],
     "requests": []
