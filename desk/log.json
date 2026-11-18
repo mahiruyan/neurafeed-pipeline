@@ -5367,5 +5367,26 @@
     ],
     "requests": [],
     "notes": "Hook and caption are Mahir's words; per his note no sources were added to the caption, only the required 'Video: via Instagram' credit line (validation needs it; creator unknown since the reel cannot be opened). A web search could not independently confirm the 280 FPS / NeuralScreen claim; the caption keeps his 'reported' and 'According to GameGPU' attribution. Hook is over 18 words (his exact text)."
+  },
+  {
+    "run_at": "2026-11-18T22:17:19.441Z",
+    "summary": "Link desk: re-cropped the GTA 6 Reel as v2 so the Evolving AI header, logo and caption text are cut out.",
+    "considered": [
+      {
+        "story": "GTA 6 on PS5 Pro boosted to 280 FPS with an RTX 5090 PC (Reel fix)",
+        "source": "https://www.instagram.com/reel/Df5F5_Kg6Jb/",
+        "decision": "queued",
+        "job_id": "2026-11-18-gta6-ps5-pro-rtx-5090-280fps-reel-v2",
+        "priority": 1
+      }
+    ],
+    "requests": [
+      {
+        "id": "req-2026-11-18-d05b4a6c",
+        "status": "done",
+        "job_id": "2026-11-18-gta6-ps5-pro-rtx-5090-280fps-reel-v2",
+        "result": "The source was a 1080x1920 Evolving AI repost with their logo and headline above the clip; v2 crops to only the gameplay area (rows 658 to 1262) and shows it whole under our own header, still a 9:16 Reel. Hook and caption unchanged."
+      }
+    ]
   }
 ]
