@@ -1,74 +1,5 @@
 [
   {
-    "run_at": "2026-11-11T07:08:24.749Z",
-    "summary": "Overnight desk run: queued Google's Gemini Robotics 2.5 as a Reel and Apple's Harbor local AI Mac app as a carousel; no open links or requests.",
-    "considered": [
-      {
-        "story": "Google DeepMind releases Gemini Robotics 2.5, 96% success on Mercedes-Benz lines",
-        "source": "https://deepmind.google/blog/gemini-robotics-2-5-accelerates-real-world-physical-intelligence/",
-        "decision": "queued",
-        "job_id": "2026-11-11-gemini-robotics-2-5-mercedes-reel",
-        "priority": 1
-      },
-      {
-        "story": "Apple's Claris tests Harbor, a Mac app that runs AI models locally and clusters Macs",
-        "source": "https://tbreak.com/apple-harbor-mac-app-local-ai/",
-        "decision": "queued",
-        "job_id": "2026-11-11-apple-harbor-local-ai-mac-app",
-        "priority": 2
-      },
-      {
-        "story": "Dorsia sues ex-engineer who allegedly used Claude to plan his move; Claude warned he would be 'toast'",
-        "source": "https://www.law360.com/technology/articles/2548797",
-        "decision": "skipped",
-        "reason": "Great story but Law360 is the only source I could read (the Reuters copy would not open); retry in the next run for a second source."
-      },
-      {
-        "story": "Elon Musk says Claude is better than Grok 'for now'",
-        "source": "https://tech.yahoo.com/ai/gemini/articles/elon-musk-agrees-now-ai-213031934.html",
-        "decision": "skipped",
-        "reason": "The readable report is from September 28, not new."
-      },
-      {
-        "story": "Grok Build coding agent leaked confidential data including SpaceX info",
-        "decision": "skipped",
-        "reason": "Search shows this happened in July 2026, old news."
-      },
-      {
-        "story": "Claude connects to bank accounts through Plaid",
-        "decision": "covered",
-        "reason": "Already covered as 2026-11-06-claude-personal-finance-bank-accounts."
-      },
-      {
-        "story": "Anthropic founders each cash out about $250M in IPO; Goldman revenue forecast; FT says valuation may rise to $1.5T",
-        "decision": "covered",
-        "reason": "Part of the Anthropic IPO story already covered by 2026-11-10-anthropic-ipo-price-1-trillion and related jobs."
-      },
-      {
-        "story": "OpenAI Q3 revenue $10B with widening losses",
-        "decision": "covered",
-        "reason": "Already queued as 2026-11-11-openai-10-billion-quarter-still-loses."
-      },
-      {
-        "story": "Nvidia hires Wachtell to probe Jensen Huang; Alice Huang linked to $7.5B chip sales",
-        "decision": "skipped",
-        "reason": "The Huang affair has had many posts this week; waiting for a bigger development."
-      },
-      {
-        "story": "X launches its own clipping feature",
-        "source": "https://techcrunch.com/2026/11/10/x-launches-its-own-clipping-feature-to-spur-influencer-engagement/",
-        "decision": "skipped",
-        "reason": "Not an AI story."
-      },
-      {
-        "story": "OpenAI acquires travel startup Odessia",
-        "decision": "skipped",
-        "reason": "Small acquisition with limited reach for a general audience."
-      }
-    ],
-    "requests": []
-  },
-  {
     "run_at": "2026-11-11T09:08:51.724Z",
     "summary": "Early desk run: queued Anthropic's free full Claude usage reset (priority 1); no open links or requests; Railway breach held back for lack of a usable photo.",
     "considered": [
@@ -5417,6 +5348,52 @@
         "story": "Reel search",
         "decision": "skipped",
         "reason": "Reddit leads are empty and X cannot be opened from this run, so no clip could be checked against the Reel filter."
+      }
+    ],
+    "requests": []
+  },
+  {
+    "run_at": "2026-11-18T09:01:03.453Z",
+    "summary": "Early run (04:00 New York, Nov 18): no open links or requests; queued Google making its Tasks in Gemini agent free (with calls and Google Pay in the US) as a priority 1 carousel; no desk Reel could be checked.",
+    "considered": [
+      {
+        "story": "Google makes Tasks in Gemini free in six countries, adds business calls and Google Pay checkout in the US",
+        "source": "https://www.androidpolice.com/google-giving-millions-gemini-users-free-personal-ai-agent/",
+        "decision": "queued",
+        "job_id": "2026-11-18-gemini-tasks-free-calls-pay",
+        "priority": 1,
+        "reason": "Major Google news that hits normal users (a free AI agent that calls and pays for you), confirmed by Android Police, Unite.AI and Data Studios. Queued as a carousel under the priority 1 exception because Google's own video could not be opened, so this makes a third Nov 18 carousel. I could not preview the photos from this run."
+      },
+      {
+        "story": "Anthropic IPO pricing",
+        "source": "https://www.cnbc.com/2026/11/16/anthropic-ipo-date-price-range.html",
+        "decision": "skipped",
+        "reason": "Pricing is expected Wednesday evening, Nov 18, with trading Nov 19; nothing final yet, a later run should queue it as priority 1."
+      },
+      {
+        "story": "Google lets users view and edit what Gemini remembers",
+        "decision": "skipped",
+        "reason": "Rollout began around Nov 9 to 11, not new."
+      },
+      {
+        "story": "Satya Nadella says he is AGI-pilled (The Verge)",
+        "decision": "skipped",
+        "reason": "Talking-head quote with little share value."
+      },
+      {
+        "story": "Nvidia's startup stakes reach $65B but Huang's exit puts deals in doubt (TechCrunch)",
+        "decision": "skipped",
+        "reason": "Another Huang exit angle; Nvidia is already covered by two Nov 17 jobs."
+      },
+      {
+        "story": "OpenAI 50,000 ChatGPT Plus research grants",
+        "decision": "skipped",
+        "reason": "Announced Nov 16, still only one independent article found."
+      },
+      {
+        "story": "Reel search",
+        "decision": "skipped",
+        "reason": "Reddit leads are empty, leads were last refreshed at 01:51 UTC, and X and Google's blog could not be opened from this run, so no clip could be checked against the Reel filter."
       }
     ],
     "requests": []
