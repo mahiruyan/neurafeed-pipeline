@@ -1,0 +1,114 @@
+{
+  "id": "2026-11-18-ai-found-java-bug-one-hour",
+  "created_at": "2026-11-18T03:10:00Z",
+  "story_time": "2026-11-17T21:00:00Z",
+  "timely": false,
+  "sensitive": false,
+  "priority": 2,
+  "format": "carousel",
+  "site_category": "breaking",
+  "ab": { "headline": "long", "photo": "story" },
+  "sources": [
+    { "name": "Calif", "url": "https://calif.io/java4shell/" },
+    { "name": "CyberScoop", "url": "https://cyberscoop.com/java4shell-critical-java-flaw-openjdk/" },
+    { "name": "Gizmodo", "url": "https://gizmodo.com/a-startup-vibe-coded-its-way-to-finding-a-vulnerability-affecting-90-of-fortune-500-firms-2000841501" },
+    { "name": "TokenPost", "url": "https://www.tokenpost.com/news/technology/60051" }
+  ],
+  "caption": "A researcher at security startup Calif used OpenAI's Codex to find a critical flaw in Java in about an hour.\nThe AI tokens cost less than $200, and a working exploit took two more hours.\nOracle and OpenJDK shipped patches on November 17, and Calif says OpenJDK runs at 90% of Fortune 500 companies.\n\nShould AI companies let anyone use tools this good at finding holes?\n\nFollow @neurafeed.ai for daily AI news.\n\nSource: Calif, CyberScoop · Photo: Calif",
+  "threads_text": "A Calif researcher used OpenAI's Codex to find a critical Java flaw in about an hour, for less than $200 in AI tokens. Jira, Jenkins and Confluence servers were among the exposed apps, and patches came out the same day. Is AI going to find bugs faster than companies can fix them?",
+  "slides": [
+    {
+      "kind": "cover",
+      "headline": "A researcher used OpenAI's Codex to find a critical Java flaw in one hour for *under $200*",
+      "image": {
+        "url": "https://calif.io/java4shell/poster.jpg",
+        "credit": "Calif",
+        "fallback_urls": ["https://cyberscoop.com/wp-content/uploads/sites/3/2026/11/GettyImages-162794971-1.jpg"]
+      },
+      "pos": "center center",
+      "badges": [
+        { "url": "assets/logos/openai.png", "fit": "contain" }
+      ]
+    },
+    {
+      "kind": "card",
+      "heading": "One hour, *under $200*",
+      "paras": [
+        "Quang Luong of security startup Calif used OpenAI's Codex on OpenJDK, the free version of Java, and found the bug in about an hour.",
+        "A working exploit took two more hours. Total AI cost: under $200."
+      ],
+      "image": {
+        "url": "https://calif.io/java4shell/centaur.jpg",
+        "credit": "Calif"
+      },
+      "note": "Calif calls it the centaur hacker: part human, part AI."
+    },
+    {
+      "kind": "card",
+      "heading": "Sixty-four letter *A's*",
+      "paras": [
+        "The flaw, nicknamed Java4Shell, sits in Java's Base64 decoder on newer Intel and AMD server chips.",
+        "Feed it 64 letter A's and an equals sign, and it writes 64 bytes into a space meant for 50."
+      ],
+      "image": {
+        "url": "https://cyberscoop.com/wp-content/uploads/sites/3/2026/11/GettyImages-162794971-1.jpg",
+        "credit": "Getty Images via CyberScoop"
+      }
+    },
+    {
+      "kind": "card",
+      "heading": "Jira, Jenkins, *Confluence*",
+      "paras": [
+        "Calif says attackers with no password could take over Jira, Confluence, Jenkins and Keycloak servers. It rated the flaw 9.2 out of 10.",
+        "Calif says OpenJDK runs at 90% of Fortune 500 companies. ARM chips are not affected."
+      ],
+      "image": {
+        "url": "https://gizmodo.com/app/uploads/2026/11/java-script-code.jpg",
+        "credit": "Gizmodo",
+        "fallback_urls": ["https://mzwrodgsdjfdyvnraeya.supabase.co/storage/v1/object/public/article-media/articles/9f9cd17cf3140dfd5ad8f4f9a955893f3b0d752ec974ae72526d96e8c9ee29b7.webp"]
+      }
+    },
+    {
+      "kind": "card",
+      "heading": "Patched the *same day*",
+      "paras": [
+        "OpenJDK and Oracle released fixes on November 17, the day Calif went public.",
+        { "t": "No attacks using the flaw had been reported, so the race now is to patch first.", "strong": true }
+      ],
+      "image": {
+        "url": "https://mzwrodgsdjfdyvnraeya.supabase.co/storage/v1/object/public/article-media/articles/9f9cd17cf3140dfd5ad8f4f9a955893f3b0d752ec974ae72526d96e8c9ee29b7.webp",
+        "credit": "TokenPost"
+      }
+    },
+    {
+      "kind": "cta",
+      "hook": "Follow to see what AI bug hunters break next, and who patches in time."
+    }
+  ],
+  "site_article": {
+    "headline": "Calif researcher uses OpenAI's Codex to find critical Java flaw in about an hour",
+    "dek": "The memory bug in OpenJDK's Base64 decoder, nicknamed Java4Shell, exposed apps such as Jira, Confluence and Jenkins before patches shipped on November 17, 2026.",
+    "summary": "Security startup Calif disclosed a critical flaw in OpenJDK on November 17, 2026, that its researcher found in about an hour with OpenAI's Codex for less than $200 in tokens. OpenJDK and Oracle released patches the same day, and Calif rated the flaw 9.2 out of 10.",
+    "seo_title": "Java4Shell: AI found a critical Java flaw in one hour",
+    "seo_description": "Calif used OpenAI's Codex to find Java4Shell, a 9.2 rated OpenJDK flaw hitting Jira, Jenkins and Confluence. What is affected and how to patch.",
+    "answer_summary": "Java4Shell (CVE-2026-114938) is a memory corruption flaw in OpenJDK's Base64 decoder on x86-64 chips with AVX-512 VBMI. OpenJDK and Oracle patched it on November 17, 2026, and Calif also lists JVM flags that switch off the vulnerable code path.",
+    "tags": ["Java4Shell", "OpenJDK", "OpenAI", "Codex", "Cybersecurity", "AI security research"],
+    "hero_alt": "Promotional poster for the Java4Shell vulnerability published by the security firm Calif.",
+    "paragraphs": [
+      { "kind": "fact", "text": "Security startup Calif disclosed a critical vulnerability in OpenJDK, the free and open source implementation of Java, on November 17, 2026. The company said researcher Quang Luong found the flaw in about an hour while auditing OpenJDK with OpenAI's Codex, and that a first working exploit took two more hours. Calif put the total cost in AI tokens at less than $200.", "sources": [0, 1] },
+      { "kind": "fact", "text": "The flaw is tracked as CVE-2026-114938 and nicknamed Java4Shell. Calif scored it 9.2 out of 10 under version 4.0 of the Common Vulnerability Scoring System, which places it in the critical range. OpenJDK published a security advisory and Oracle shipped patched builds on the afternoon of the disclosure, according to Calif and CyberScoop.", "sources": [0, 1] },
+      { "kind": "heading", "text": "How the bug works" },
+      { "kind": "fact", "text": "The bug sits in a speed optimization inside Java's Base64 decoder, the routine that turns text encoded in Base64 back into binary data. On x86-64 processors that support AVX-512 VBMI instructions, Java uses hand written processor code for this task. CyberScoop reported that an input of 64 letter A characters followed by an equals sign makes that code miscalculate a length and write 64 bytes into a buffer meant for 50.", "sources": [0, 1] },
+      { "kind": "fact", "text": "Calif said a remote attacker with no credentials can use the overflow to overwrite heap memory, read nearby data in a way similar to the Heartbleed bug, and in some cases take full control of a server. The team used a technique called heap grooming to turn the memory corruption into remote code execution. Gizmodo noted that heap grooming was first demonstrated in 2007.", "sources": [0, 1, 2] },
+      { "kind": "fact", "text": "Calif said affected chips include Intel Xeon processors from the Ice Lake generation onward and AMD processors from Zen 4 onward. ARM64 processors are not affected. The company listed OpenJDK 17.0.6 and newer as vulnerable, along with builds from Amazon Corretto, Eclipse Temurin, Microsoft, Azul, BellSoft, SAP, Red Hat and Oracle.", "sources": [0] },
+      { "kind": "heading", "text": "Which apps were exposed" },
+      { "kind": "fact", "text": "In default configurations, Calif reported unauthenticated remote code execution in Keycloak, Atlassian Jira, Atlassian Confluence, JFrog Artifactory, Jenkins and PingFederate. It said attackers with a valid account could also run code on Apache Kafka, Apache Solr, Elasticsearch, Gerrit and Spinnaker. Calif demonstrated a working break in against Keycloak, according to CyberScoop.", "sources": [0, 1] },
+      { "kind": "fact", "text": "Calif said OpenJDK runs at 90 percent of Fortune 500 companies. Gizmodo pointed out that the source of that figure is unclear. TokenPost reported that Calif coordinated with the Five Eyes intelligence agencies and with large suppliers including Google and Microsoft before going public.", "sources": [1, 2, 3] },
+      { "kind": "fact", "text": "CyberScoop reported that no exploitation in the wild had been seen at the time of publication. Calif said it is holding back product specific exploit details to give users time to upgrade, and that there is no single universal exploit. For systems that cannot be patched at once, Calif listed two JVM flags that switch off the vulnerable code path or AVX-512 support.", "sources": [0, 1] },
+      { "kind": "heading", "text": "The role of AI" },
+      { "kind": "fact", "text": "Calif described the work as the result of a human and AI partnership and said AI agents produced most of its exploit chains. Gizmodo and TokenPost reported that the model involved was OpenAI's GPT-6 Cyber, while Calif's own write up names Codex as the tool Luong directed. CyberScoop said this is Calif's second major AI assisted discovery in recent weeks, after a PHP flaw the company disclosed in October.", "sources": [0, 1, 2, 3] },
+      { "kind": "analysis", "text": "The cost and speed are the notable part. A critical flaw in one of the most widely deployed software platforms was found and weaponized by a small team in an afternoon, for less than the price of a business dinner. If that becomes routine, the time between a bug being found and being exploited shrinks, and the pressure moves to the people who patch servers rather than the people who look for holes." },
+      { "kind": "why_it_matters", "text": "Companies running Jira, Confluence, Jenkins or Keycloak on recent Intel or AMD servers should apply the November 17 Java updates, and the next signal to watch is whether attackers start using Java4Shell before those patches are widely installed." }
+    ]
+  }
+}

@@ -1,60 +1,5 @@
 [
   {
-    "run_at": "2026-11-11T03:02:00.961Z",
-    "summary": "22:00 New York run: no open links or requests, 4 site guides already done. Queued the OpenAI Q3 revenue and loss story (priority 1, deferred by three earlier runs) for the November 11 morning window, timely false so it does not expire overnight.",
-    "considered": [
-      {
-        "story": "OpenAI Q3 revenue up about 50% to $10 billion while operating loss widens to $10.9 billion",
-        "source": "https://finance.yahoo.com/technology/article/openai-cfo-q3-was-a-blockbuster-quarter-revenue-jumped-50-225023234.html",
-        "decision": "queued",
-        "job_id": "2026-11-11-openai-10-billion-quarter-still-loses",
-        "priority": 1
-      },
-      {
-        "story": "OpenAI acquires travel startup Odessia",
-        "decision": "skipped",
-        "reason": "Small acquisition with limited reach for a general audience."
-      },
-      {
-        "story": "Apple preparing a Mac app for running local AI models (9to5Mac)",
-        "source": "https://9to5mac.com/2026/11/10/apple-has-new-mac-app-coming-to-make-running-local-ai-models-easy/",
-        "decision": "skipped",
-        "reason": "Still a single report; check for confirmation in the morning."
-      },
-      {
-        "story": "OpenAI lets businesses claim their listing in ChatGPT with an AI sales agent (VentureBeat)",
-        "decision": "skipped",
-        "reason": "Single source seen so far and the November 10 slots are used; candidate for tomorrow."
-      },
-      {
-        "story": "Fireworks AI breach affects Notion customers",
-        "decision": "skipped",
-        "reason": "Niche vendor breach with little consumer impact described."
-      },
-      {
-        "story": "Mercor raises $750 million",
-        "decision": "skipped",
-        "reason": "Funding round with little mainstream US interest."
-      },
-      {
-        "story": "Anthropic IPO roadshow and $1.3 trillion valuation target",
-        "decision": "covered",
-        "reason": "Already covered by 2026-11-10-anthropic-ipo-price-1-trillion."
-      },
-      {
-        "story": "Anthropic launches Claude Sheets, Whiteboards and Data",
-        "decision": "covered",
-        "reason": "Already queued as 2026-11-10-anthropic-claude-sheets-office-suite."
-      },
-      {
-        "story": "Chinese state paper says Jensen Huang probe is politically motivated",
-        "decision": "covered",
-        "reason": "Huang probe already covered on November 8 and 9."
-      }
-    ],
-    "requests": []
-  },
-  {
     "run_at": "2026-11-11T05:07:16.421Z",
     "summary": "00:00 New York run: no open links or requests (old items are already in skipped.json, finished requests stay finished). Queued the ChatGPT voice modes retirement (priority 1) for the November 11 morning windows. No site guides yet because it is before 07:00 New York time.",
     "considered": [
@@ -5433,6 +5378,57 @@
         "story": "Baidu and Xiaomi CEOs warn of a gap between AI hype and returns (Hacker News)",
         "decision": "skipped",
         "reason": "Interesting but low share value for a US Instagram audience; carousel slots are full."
+      },
+      {
+        "story": "Reel search",
+        "decision": "skipped",
+        "reason": "Reddit leads are empty and X cannot be opened from this run, so no clip could be checked against the Reel filter."
+      }
+    ],
+    "requests": []
+  },
+  {
+    "run_at": "2026-11-18T03:07:58.961Z",
+    "summary": "Late run (22:00 New York, Nov 17): no open links or requests; queued the Java4Shell story (Calif found a critical Java flaw with OpenAI's Codex in an hour for under $200) as a carousel for the Nov 18 morning window; no Reel could be checked.",
+    "considered": [
+      {
+        "story": "Calif researcher uses OpenAI's Codex to find critical Java flaw (Java4Shell) in an hour for under $200",
+        "source": "https://calif.io/java4shell/",
+        "decision": "queued",
+        "job_id": "2026-11-18-ai-found-java-bug-one-hour",
+        "priority": 2,
+        "reason": "AI plus money plus shock (a 9.2 rated flaw hitting Jira, Jenkins, Confluence). Set timely false so it can post in the Nov 18 07:00 window; it stays relevant for days while companies patch. Counts as one of Nov 18's 2 carousels."
+      },
+      {
+        "story": "Meta AI chief Alexandr Wang posts AI video of Sam Altman in a Muse mascot costume (The Verge)",
+        "source": "https://www.wilsonsmedia.com/not-even-sam-altman-is-safe-from-ai-deepfakes-on-instagram/",
+        "decision": "skipped",
+        "reason": "Good person story, but every copy I could read was a repost of The Verge, so there was no second independent source; The Verge itself could not be opened from this run."
+      },
+      {
+        "story": "Jensen Huang says he would return as Nvidia CEO if asked (NYT)",
+        "decision": "covered",
+        "reason": "Already covered by 2026-11-15-jensen-huang-weighs-nvidia-return and the 2026-11-17-life-if-jensen-returns-reel."
+      },
+      {
+        "story": "Google lets users view and edit what Gemini remembers (Engadget)",
+        "decision": "skipped",
+        "reason": "Fits a site-only article, but today already has 5 site-only news articles, over the usual 4."
+      },
+      {
+        "story": "Anthropic IPO pricing",
+        "decision": "skipped",
+        "reason": "Pricing expected Wednesday, Nov 18; nothing final tonight."
+      },
+      {
+        "story": "Satya Nadella says he is AGI-pilled (The Verge)",
+        "decision": "skipped",
+        "reason": "Talking-head quote with little share value; Microsoft already has a site article today."
+      },
+      {
+        "story": "OpenAI bugging case defendant set for January 2027 trial (CNBC)",
+        "decision": "skipped",
+        "reason": "Scheduling update to a story covered in October; nothing new enough."
       },
       {
         "story": "Reel search",
