@@ -1,54 +1,5 @@
 [
   {
-    "run_at": "2026-11-11T22:54:43.207Z",
-    "summary": "Evening run (17:54 New York): no open links or requests; today's 8 desk posts and 4 site guides are already queued, so nothing new was queued.",
-    "considered": [
-      {
-        "story": "Anthropic sets aside up to 20% of its IPO for retail investors, Barron's",
-        "decision": "skipped",
-        "reason": "Today's 8 desk posts are used; a strong money story to check for tomorrow with a second source."
-      },
-      {
-        "story": "Gemini now shows everything it remembers about you, Tom's Guide",
-        "decision": "skipped",
-        "reason": "Useful product change for normal users, but the daily cap is reached; candidate for tomorrow."
-      },
-      {
-        "story": "Claude can join team meetings soon, ZDNET",
-        "decision": "skipped",
-        "reason": "Not launched yet and the daily cap is reached."
-      },
-      {
-        "story": "Google engineer used 48 AI agents on NASA lidar and found an unmapped Maya pyramid",
-        "source": "https://pietromiotti.com/latest/maya-site/?maya",
-        "decision": "skipped",
-        "reason": "Still only a personal blog with no second source, and the cap is reached."
-      },
-      {
-        "story": "A startup wants to fight AI bioweapons with AI, Wired",
-        "source": "https://www.wired.com/story/startup-fights-ai-bioweapons-with-ai/",
-        "decision": "skipped",
-        "reason": "Niche startup profile and the cap is reached."
-      },
-      {
-        "story": "OCC supervisory framework for banks' use of AI",
-        "decision": "skipped",
-        "reason": "Regulatory filing with little consumer appeal; cap reached."
-      },
-      {
-        "story": "Apple's local AI Mac app",
-        "decision": "covered",
-        "reason": "Already queued as 2026-11-11-apple-harbor-local-ai-mac-app."
-      },
-      {
-        "story": "OpenAI quarterly revenue crosses $10 billion",
-        "decision": "covered",
-        "reason": "Already posted as 2026-11-11-openai-10-billion-quarter-still-loses."
-      }
-    ],
-    "requests": []
-  },
-  {
     "run_at": "2026-11-12T01:01:02.087Z",
     "summary": "Evening run (19:53 New York): no open links or requests; Nov 11 already has its 8 desk posts and 4 guides, so only the priority 1 Nvidia story was queued, dated for Nov 12 because the cap holds it until the next New York day.",
     "considered": [
@@ -5388,5 +5339,58 @@
         "result": "The source was a 1080x1920 Evolving AI repost with their logo and headline above the clip; v2 crops to only the gameplay area (rows 658 to 1262) and shows it whole under our own header, still a 9:16 Reel. Hook and caption unchanged."
       }
     ]
+  },
+  {
+    "run_at": "2026-11-18T23:00:32.661Z",
+    "summary": "Evening run (17:55 New York, Nov 18): no open links or requests; queued the Anthropic IPO pricing ($83 a share, about $1.5 trillion, $282 million per co-founder) as a priority 1 carousel with its website article. Guides (6) and site-only articles (4) for the day were already full.",
+    "considered": [
+      {
+        "story": "Anthropic prices IPO at $83 a share, above the $70 to $78 range, about $1.5 trillion valuation; ANT trades Thursday",
+        "source": "https://techcrunch.com/2026/11/18/anthropic-reportedly-prices-ipo-at-83-a-share-above-projected-range/",
+        "decision": "queued",
+        "job_id": "2026-11-18-anthropic-ipo-priced-83",
+        "priority": 1
+      },
+      {
+        "story": "Coalition says 'Anthropic is not a safe AI company' ahead of its IPO",
+        "source": "https://www.businesswire.com/news/home/20261118974464/en/",
+        "decision": "skipped",
+        "reason": "Still only a paid press release with no independent news coverage."
+      },
+      {
+        "story": "OpenAI spent $1.2 million finding nearly 1,000 Linux security flaws (The New Stack)",
+        "decision": "skipped",
+        "reason": "Insider security story, close to today's Codex Java bug post, and the site-only quota for Nov 18 is used."
+      },
+      {
+        "story": "Inside Nvidia's first all-hands without Jensen Huang: pay raises and more equity (Wired)",
+        "source": "https://www.wired.com/story/inside-nvidias-first-all-hands-without-jensen-huang-as-ceo/",
+        "decision": "skipped",
+        "reason": "Instagram carousels are past the daily limit and the Huang exit already has several jobs; a candidate for Nov 19."
+      },
+      {
+        "story": "More banks say customers using AI agents are on their own, even if hacked (TechCrunch)",
+        "source": "https://techcrunch.com/2026/11/18/more-banks-says-customers-using-ai-agents-are-on-their-own-even-if-they-get-hacked/",
+        "decision": "skipped",
+        "reason": "Good money angle but the day is full; worth a look on Nov 19."
+      },
+      {
+        "story": "Google's AI Mode in Search gets its own incognito mode (TechCrunch)",
+        "source": "https://techcrunch.com/2026/11/18/googles-ai-feature-in-search-gets-its-own-incognito-mode/",
+        "decision": "skipped",
+        "reason": "Small product setting change and the site-only quota is used."
+      },
+      {
+        "story": "Anthropic paid a firm tied to Rubio's ex-chief of staff $740,000 for lobbying (ZeroHedge)",
+        "decision": "skipped",
+        "reason": "Single partisan source, no independent confirmation found."
+      },
+      {
+        "story": "Reel search",
+        "decision": "skipped",
+        "reason": "Reddit leads are still empty and X cannot be opened from this run, so no clip could be checked against the Reel filter."
+      }
+    ],
+    "requests": []
   }
 ]
