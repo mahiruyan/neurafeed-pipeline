@@ -1,71 +1,5 @@
 [
   {
-    "run_at": "2026-11-11T06:36:34.391Z",
-    "summary": "Link desk: turned Mahir's link link-2026-11-11-3336 (Burger King AI interviewer clip) into a Reel for his review.",
-    "considered": [
-      {
-        "story": "Man trolls Burger King's AI job interviewer 'Karen' with a shoe on his head",
-        "source": "https://www.instagram.com/reel/DfkJDAhg8Xg/",
-        "decision": "queued",
-        "job_id": "2026-11-11-ai-job-interview-fail-reel",
-        "priority": 1,
-        "reason": "Mahir's link. Hook and caption are his words (fixed 'Al' to 'AI'). The clip is a repost by @evolving.ai and has their branding on top. The original TikTok by @itsnickreid did not turn up in a web search, so the original-video search words are set and the creator is credited."
-      }
-    ],
-    "requests": []
-  },
-  {
-    "run_at": "2026-11-11T06:42:39.807Z",
-    "summary": "Re-cut Mahir's Burger King AI interviewer Reel as 2026-11-11-ai-job-interview-fail-reel-v2.",
-    "considered": [
-      {
-        "story": "Burger King AI job interviewer vs Cranjis McBasketball (re-cut)",
-        "source": "https://www.instagram.com/reel/DfkJDAhg8Xg/",
-        "decision": "queued",
-        "job_id": "2026-11-11-ai-job-interview-fail-reel-v2",
-        "priority": 1
-      }
-    ],
-    "requests": [
-      {
-        "id": "req-2026-11-11-7825fe95",
-        "status": "done",
-        "job_id": "2026-11-11-ai-job-interview-fail-reel-v2",
-        "result": "New cut: the reposting page's header and black borders are cropped out, the clip sits cleanly under our header, and it now plays the full 104 seconds so it ends where the original ends instead of stopping at 90s. Caption and hook unchanged. The clean original could not be searched because the transcription API has no credits."
-      }
-    ]
-  },
-  {
-    "run_at": "2026-11-11T06:50:07.024Z",
-    "summary": "Link desk: queued Mahir's Jensen 'strictly for research' clip as a Reel for review.",
-    "considered": [
-      {
-        "story": "Jensen Huang 'strictly for research' clip from @AlexesNakamoto on X",
-        "source": "https://x.com/alexesnakamoto/status/2120305735879823420",
-        "decision": "queued",
-        "job_id": "2026-11-11-jensen-strictly-research-reel",
-        "priority": 1,
-        "reason": "Mahir's link; hook is his title word for word. The X post could not be opened from here, so the caption stays neutral and was written from the saved preview. The clip shows a small 'Alex' watermark of the posting account."
-      }
-    ],
-    "requests": []
-  },
-  {
-    "run_at": "2026-11-11T06:52:19.457Z",
-    "summary": "Link desk: queued Mahir's Amodei disease prediction clip as a Reel (link-2026-11-11-3354).",
-    "considered": [
-      {
-        "story": "Dario Amodei predicts cancer, Alzheimer's, heart disease and mental illness cured within 10 years",
-        "source": "https://x.com/ns123abc/status/2120233187112636745",
-        "decision": "queued",
-        "job_id": "2026-11-11-amodei-diseases-cured-10-years-reel",
-        "priority": 1,
-        "reason": "Mahir's link; hook is his title word for word. The X post could not be opened from here, so the caption uses only Amodei's widely reported prediction; check the clip before approving."
-      }
-    ],
-    "requests": []
-  },
-  {
     "run_at": "2026-11-11T07:08:24.749Z",
     "summary": "Overnight desk run: queued Google's Gemini Robotics 2.5 as a Reel and Apple's Harbor local AI Mac app as a carousel; no open links or requests.",
     "considered": [
@@ -5427,6 +5361,57 @@
         "story": "Claude login outage (Mashable)",
         "decision": "skipped",
         "reason": "A short outage that was fixed; low share value."
+      },
+      {
+        "story": "Reel search",
+        "decision": "skipped",
+        "reason": "Reddit leads are empty and X cannot be opened from this run, so no clip could be checked against the Reel filter."
+      }
+    ],
+    "requests": []
+  },
+  {
+    "run_at": "2026-11-18T07:01:04.769Z",
+    "summary": "Early run (02:00 New York, Nov 18): no open links or requests; Nov 18's 2 carousels are already queued, so added OpenAI's Daybreak cyber models for NATO as a site-only article; no desk Reel could be checked.",
+    "considered": [
+      {
+        "story": "OpenAI gives NATO and European cyber agencies access to its Daybreak models (up to 300 billion tokens a month)",
+        "source": "https://www.helpnetsecurity.com/2026/11/17/openai-nato-ai-cyber-defense/",
+        "decision": "queued",
+        "job_id": "2026-11-18-openai-daybreak-nato-cyber-defense",
+        "priority": 2,
+        "reason": "Solid OpenAI news confirmed by Help Net Security, Defense One and The Decoder, but insiders follow it, so site-only. I could not preview the photos from this run."
+      },
+      {
+        "story": "OpenAI adds 50,000 free ChatGPT Plus grants for academic researchers, swapping Pro for Plus",
+        "source": "https://thenextweb.com/news/openai-chatgpt-academic-researchers-50000-grants-plus",
+        "decision": "skipped",
+        "reason": "Announced Nov 16 and only one independent article could be opened; could be a later site article."
+      },
+      {
+        "story": "Anthropic IPO pricing",
+        "decision": "skipped",
+        "reason": "Pricing is expected later on Wednesday, Nov 18; nothing final yet, a later run should queue it as priority 1."
+      },
+      {
+        "story": "Satya Nadella says he is AGI-pilled (The Verge)",
+        "decision": "skipped",
+        "reason": "Talking-head quote with little share value."
+      },
+      {
+        "story": "Nvidia's startup stakes reach $65B but Huang's exit puts deals in doubt (TechCrunch)",
+        "decision": "skipped",
+        "reason": "Another Huang exit angle; Nvidia is already covered by two Nov 17 jobs."
+      },
+      {
+        "story": "San Francisco extends data center ban days before Anthropic's debut (SF Chronicle)",
+        "decision": "skipped",
+        "reason": "Local policy story; the Chronicle page is paywalled and no second source was found."
+      },
+      {
+        "story": "Google's AI answers reduce search traffic by 40% (Hacker News)",
+        "decision": "skipped",
+        "reason": "Rests on one SEO vendor's blog, not a news source."
       },
       {
         "story": "Reel search",

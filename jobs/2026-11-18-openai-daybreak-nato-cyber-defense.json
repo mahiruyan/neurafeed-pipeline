@@ -1,0 +1,78 @@
+{
+  "id": "2026-11-18-openai-daybreak-nato-cyber-defense",
+  "created_at": "2026-11-18T07:20:00Z",
+  "story_time": "2026-11-17T15:00:00Z",
+  "timely": false,
+  "sensitive": false,
+  "priority": 2,
+  "site_only": true,
+  "format": "carousel",
+  "site_category": "companies",
+  "ab": { "headline": "long", "photo": "story" },
+  "sources": [
+    { "name": "Help Net Security", "url": "https://www.helpnetsecurity.com/2026/11/17/openai-nato-ai-cyber-defense/" },
+    { "name": "Defense One", "url": "https://www.defenseone.com/technology/2026/11/openai-gives-nato-access-most-advanced-cybersecurity-ai/417296/" },
+    { "name": "The Decoder", "url": "https://the-decoder.com/openai-opens-its-cybersecurity-tool-daybreak-to-nato-and-european-governments/" }
+  ],
+  "caption": "OpenAI is giving NATO access to its most advanced cybersecurity models through its Daybreak program.\nNATO's tech agency says its use reaches up to 300 billion tokens a month.\nFrance, Germany, Poland and Ukraine are using the models too.\n\nShould governments trust AI to guard their networks?\n\nFollow @neurafeed.ai for daily AI news.\n\nSource: Help Net Security · Photo: Help Net Security",
+  "threads_text": "OpenAI just opened its top cyber defense models to NATO, and the alliance already burns up to 300 billion tokens a month on them. The pitch is simple: find and patch holes before attackers do, in minutes instead of months. Would you trust AI to guard a military network?",
+  "slides": [
+    {
+      "kind": "cover",
+      "headline": "NATO now uses OpenAI's most advanced cyber AI, up to *300 billion tokens a month*",
+      "image": {
+        "url": "https://img.helpnetsecurity.com/wp-content/uploads/2026/11/17093042/nato-1500.webp",
+        "credit": "Help Net Security",
+        "fallback_urls": [ "https://cdn.defenseone.com/media/img/cd/2026/11/17/9511640/860x394.jpg" ]
+      },
+      "pos": "center center",
+      "badges": [ { "url": "assets/logos/openai.png", "fit": "contain" } ],
+      "badge_side": "right"
+    },
+    {
+      "kind": "card",
+      "heading": "Bugs found, *bugs fixed*",
+      "paras": [
+        "The EU cyber agency ENISA used the models to find four flaws in software used across EU institutions.",
+        { "t": "Poland's CERT Polska found six flaws in MikroTik routers.", "strong": true }
+      ],
+      "image": {
+        "url": "https://img2.helpnetsecurity.com/posts2026/NATO_AI_cyber_defense.webp",
+        "credit": "Help Net Security",
+        "fallback_urls": [ "https://cdn.defenseone.com/media/img/cd/2026/11/17/9511640/860x394.jpg" ]
+      }
+    },
+    {
+      "kind": "cta",
+      "hook": "Follow to see how AI changes the race between hackers and the people stopping them."
+    }
+  ],
+  "site_article": {
+    "headline": "OpenAI opens its Daybreak cybersecurity models to NATO and European governments",
+    "dek": "NATO's technology agency says its use of the models reaches up to 300 billion tokens a month, as several European cyber agencies report real bugs found with them.",
+    "summary": "OpenAI announced on November 17, 2026 that NATO's core institutions will get access to its most advanced cybersecurity models through the Daybreak program. The NATO Communications and Information Agency says its usage already reaches up to 300 billion tokens a month.",
+    "seo_title": "OpenAI Daybreak comes to NATO: 300 billion tokens a month",
+    "seo_description": "OpenAI gave NATO and agencies in France, Germany, Poland and Ukraine access to its Daybreak cyber defense models. Here is what they found.",
+    "answer_summary": "Daybreak is OpenAI's program that gives vetted cyber defenders access to its most capable models to review code, find vulnerabilities and test fixes. On November 17, 2026, OpenAI extended it to NATO's core institutions and several European governments.",
+    "tags": ["OpenAI", "Daybreak", "NATO", "Cybersecurity", "ENISA", "CERT Polska"],
+    "hero_alt": "Cover image for an article about NATO and AI cyber defense.",
+    "paragraphs": [
+      { "kind": "fact", "text": "OpenAI said on November 17, 2026 that NATO's core institutions will get access to its most advanced cybersecurity models through Daybreak, the company's program for vetted cyber defenders. According to Help Net Security, the access runs through the NATO Communications and Information Agency, known as NCIA, and is meant to help protect Allied networks.", "sources": [0, 2] },
+      { "kind": "fact", "text": "Defense One reported that OpenAI executives made the announcement at NATO Edge in Izmir, Turkey, the alliance's largest annual technology business event, which drew more than 3,500 attendees and more than 270 exhibitors.", "sources": [1] },
+      { "kind": "heading", "text": "What Daybreak is" },
+      { "kind": "fact", "text": "Daybreak launched in May 2026. Defense One described it as a program that gives accredited institutions and the U.S. government access to OpenAI's most capable models for finding vulnerabilities in important software. The publication noted that Anthropic runs a similar effort, Project Glasswing, which launched in April.", "sources": [1] },
+      { "kind": "fact", "text": "Help Net Security said access is limited to vetted defenders doing authorized work, such as reviewing code, investigating suspicious activity and testing fixes, with people directing the work and checking the results.", "sources": [0] },
+      { "kind": "fact", "text": "NATO's usage of the models reaches up to 300 billion raw input and output tokens per month, according to Help Net Security. NCIA general manager Dylan Browne said the agency will build a deeper understanding of token consumption as adoption grows. The Decoder reported that Browne described Daybreak as a generational leap in cyber defense.", "sources": [0, 2] },
+      { "kind": "heading", "text": "Results from European agencies" },
+      { "kind": "fact", "text": "OpenAI also named several European users. The EU cybersecurity agency ENISA used the models to find four vulnerabilities in software used across EU institutions, and fixes are available for all four, according to Help Net Security.", "sources": [0, 2] },
+      { "kind": "fact", "text": "In a joint review, ENISA and CERT-EU examined 27 software projects with several frontier models, including OpenAI's. Maintainers assessed 88 potential issues and confirmed 95 percent of them as real bugs.", "sources": [0, 2] },
+      { "kind": "fact", "text": "Poland's CERT Polska used the models to help find six vulnerabilities in MikroTik RouterOS, the software that runs MikroTik routers. Help Net Security reported that its researchers directed the work and checked the findings on real systems, and that MikroTik released fixes which CERT Polska confirmed stop attacks it had observed.", "sources": [0, 2] },
+      { "kind": "fact", "text": "Ukraine's Ministry of Digital Transformation uses Daybreak to defend civilian infrastructure, and national agencies in France, Germany and Poland have also been given access, including France's ANSSI.", "sources": [0, 2] },
+      { "kind": "heading", "text": "AI agents in a NATO exercise" },
+      { "kind": "fact", "text": "During NATO's Crossed Swords cyber exercise in Tallinn, Estonia, earlier in November, participants built and deployed AI agents for cyber operations and worked alongside them as operators. Defense One cited NATO's announcement saying the exercise used on-premises AI and, for the first time, OpenAI Daybreak. Help Net Security said the exercise put an emphasis on keeping humans in control.", "sources": [0, 1] },
+      { "kind": "fact", "text": "Sasha Baker, who leads national security and policy at OpenAI, said the goal is to shrink the time between the discovery of a vulnerability and its patch from months to minutes, according to Defense One. A NATO official told the conference that NCIA will award more than $3 billion in contracts to industry by the end of 2027, with a focus on cloud computing, space services and AI.", "sources": [1] },
+      { "kind": "analysis", "text": "The announcement shows how quickly frontier AI labs are becoming suppliers to national security agencies. Both OpenAI and Anthropic now run programs that hand their strongest models to vetted defenders, on the argument that defenders need the same tools attackers will soon have. The European results, with most reported issues confirmed as real and fixes shipped, give that argument concrete numbers that go beyond marketing claims." },
+      { "kind": "why_it_matters", "text": "The next signal is whether NCIA's planned contracts through 2027 include paid AI work with OpenAI or its rivals, which would turn a pilot program into a long term defense business." }
+    ]
+  }
+}
