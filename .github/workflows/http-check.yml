@@ -5,6 +5,7 @@ on:
   workflow_dispatch:
     inputs:
       urls: { description: 'URLs separated by spaces', required: true }
+      grep: { description: 'Optional: print every match of this pattern found in each page', required: false, default: '' }
 
 jobs:
   check:
@@ -15,5 +16,6 @@ jobs:
           for u in ${{ inputs.urls }}; do
             line=$(curl -s -o /tmp/b -m 25 -A 'Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)' -w '%{http_code} -> %{redirect_url}' "$u" || true)
             canon=$(grep -o '<link rel="canonical"[^>]*>' /tmp/b | head -1 || true)
+            if [ -n "${{ inputs.grep }}" ]; then grep -oE "${{ inputs.grep }}" /tmp/b | sort -u | sed "s/^/MATCH /"; fi
             echo "CHECK $u | $line | $canon | bytes $(wc -c < /tmp/b) | paragraphs $(grep -o '<p[ >]' /tmp/b | wc -l) | min-read $(grep -o '[0-9]* min read' /tmp/b | head -3 | tr '\n' ',')"
           done
