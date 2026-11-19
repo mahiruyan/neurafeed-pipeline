@@ -1,0 +1,37 @@
+name: Park old Netlify sites
+
+# The old staging sites on Netlify still ran the pre-migration code (page functions and scheduled
+# scans) against the live database. This replaces each site's live deploy with one static page,
+# so no function runs any more, and stops automatic builds. Nothing is deleted: the sites, their
+# environment variables (the Cloudflare deploy reads them) and their old deploys all stay, and an
+# old deploy can be published again from the Netlify dashboard.
+on:
+  workflow_dispatch:
+    inputs:
+      sites: { description: 'Netlify site names, space separated', required: false, default: 'neurafeed-staging-admin neurafeed-staging-public' }
+
+jobs:
+  park:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - env:
+          NETLIFY: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+        run: |
+          [ -n "$NETLIFY" ] || { echo "::error::NETLIFY_AUTH_TOKEN is missing"; exit 1; }
+          api=https://api.netlify.com/api/v1; H="Authorization: Bearer $NETLIFY"
+          mkdir park && printf '<!doctype html><meta charset="utf-8"><meta name="robots" content="noindex"><title>Parked</title><p>This staging site is parked.</p>' > park/index.html
+          printf '/*  /index.html  200\n' > park/_redirects
+          (cd park && zip -q ../park.zip index.html _redirects)
+          for name in ${{ inputs.sites }}; do
+            s=$(curl -s -H "$H" "$api/sites/$name.netlify.app"); id=$(echo "$s" | jq -r '.id // empty')
+            [ -n "$id" ] || { echo "::error::$name not found: $(echo "$s" | head -c 200)"; continue; }
+            echo "::notice::$name before: deploy $(echo "$s" | jq -r '.published_deploy.id') published $(echo "$s" | jq -r '.published_deploy.published_at'), functions $(curl -s -H "$H" "$api/sites/$id/functions" | jq -c '[.functions[]?.n // .functions[]?.name] | length')"
+            code=$(curl -s -o /tmp/b -w '%{http_code}' -X PUT -H "$H" -H 'Content-Type: application/json' -d '{"build_settings":{"stop_builds":true}}' "$api/sites/$id"); echo "::notice::$name stop builds -> $code"
+            d=$(curl -s -X POST -H "$H" -H 'Content-Type: application/zip' --data-binary @park.zip "$api/sites/$id/deploys?title=parked"); did=$(echo "$d" | jq -r '.id // empty')
+            [ -n "$did" ] || { echo "::error::$name deploy failed: $(echo "$d" | head -c 300)"; continue; }
+            for i in $(seq 1 30); do st=$(curl -s -H "$H" "$api/deploys/$did" | jq -r .state); [ "$st" = ready ] && break; sleep 4; done
+            echo "::notice::$name parked deploy $did state $st"
+            sleep 5
+            echo "::notice::$name now: / -> $(curl -s -o /tmp/p -w '%{http_code}' https://$name.netlify.app/) $(head -c 60 /tmp/p | tr '\n' ' ') | job route -> $(curl -s -o /dev/null -w '%{http_code}' -X POST https://$name.netlify.app/api/jobs/telegram-review) | functions $(curl -s -H "$H" "$api/sites/$id/functions" | jq -c '[.functions[]?.n // .functions[]?.name] | length')"
+          done
