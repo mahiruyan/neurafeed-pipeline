@@ -1,0 +1,259 @@
+{
+  "id": "2026-11-19-gemini-nano-banana-not-working-guide",
+  "format": "utility",
+  "site_only": true,
+  "created_at": "2026-11-19T21:10:00Z",
+  "story_time": "2026-11-19T21:10:00Z",
+  "timely": false,
+  "sensitive": false,
+  "priority": 2,
+  "sources": [
+    {
+      "name": "Gemini Apps Help: Generate & edit images",
+      "url": "https://support.google.com/gemini/answer/14286560"
+    },
+    {
+      "name": "Gemini Apps Help: Limits & upgrades",
+      "url": "https://support.google.com/gemini/answer/16275805"
+    },
+    {
+      "name": "Gemini Apps Help: Work or school accounts",
+      "url": "https://support.google.com/gemini/answer/14620100"
+    },
+    {
+      "name": "Google Workspace Admin Help: Turn the Gemini app on or off",
+      "url": "https://knowledge.workspace.google.com/admin/generative-ai/gemini-app?hl=en"
+    },
+    {
+      "name": "iTechHacks: Gemini image generation not working",
+      "url": "https://itechhacks.com/gemini-image-generation-not-working/"
+    },
+    {
+      "name": "Android Central: Gemini's daily limits",
+      "url": "https://www.androidcentral.com/apps-software/google-breaks-down-geminis-daily-limits-for-prompts-and-image-creation"
+    }
+  ],
+  "caption": "Gemini will not make or edit your image? It is usually not a bug.\nGoogle's help pages point to the same few causes: the Flash-Lite model, a usage limit, your account or an admin setting.\nHere are the checks to run, in order.\n\nWhich one was it for you?\n\nFollow @neurafeed.ai for daily AI news.\n\nSource: Gemini Apps Help · Photo: Nicholas Sutrich / Android Central",
+  "threads_text": "When Gemini refuses to make an image, it is usually not broken. Pick Flash-Lite and you quietly get Nano Banana Lite, which Google says is not built for several photos or many edits, and free limits shift with demand. Has Gemini ever told you it cannot create an image?",
+  "slides": [
+    {
+      "kind": "cover",
+      "headline": "Gemini *Nano Banana* not working? 7 fixes from Google's own help pages",
+      "image": {
+        "url": "https://cdn.mos.cms.futurecdn.net/D9mryqDg7rcpRyc4xs2WZW.jpg",
+        "credit": "Nicholas Sutrich / Android Central",
+        "fallback_urls": [
+          "https://cdn.mos.cms.futurecdn.net/F8wFerTnYBWmBSxZb5wcn6.jpg"
+        ]
+      },
+      "pos": "center center"
+    },
+    {
+      "kind": "card",
+      "heading": "1. Get off *Flash-Lite*",
+      "paras": [
+        "With Flash-Lite picked, Gemini runs Nano Banana Lite. Google says it is not built for several reference photos or many edits.",
+        {
+          "t": "Switch to Flash or Pro before you send the prompt.",
+          "strong": true
+        }
+      ],
+      "image": {
+        "url": "https://itechhacks.com/wp-content/uploads/2026/05/Gemini-Image-Generation-Not-Working.jpg",
+        "credit": "iTechHacks",
+        "fallback_urls": [
+          "https://cdn.mos.cms.futurecdn.net/6B2GausoFaHwvVDEyc4H28.jpg"
+        ]
+      }
+    },
+    {
+      "kind": "card",
+      "heading": "2. Check your *limit*",
+      "paras": [
+        "Images cost more of your usage than chat. Free accounts get standard limits that can shrink when demand is high.",
+        "Limits refresh every 5 hours. Resending the same prompt only burns more."
+      ],
+      "image": {
+        "url": "https://cdn.mos.cms.futurecdn.net/6B2GausoFaHwvVDEyc4H28.jpg",
+        "credit": "Andrew Myrick / Android Central",
+        "fallback_urls": []
+      }
+    },
+    {
+      "kind": "card",
+      "heading": "3. Check your *account*",
+      "paras": [
+        "You must be signed in. Editing needs age 18 or older on a personal account.",
+        "On a work or school account, your admin turns Gemini on. Changes can take up to 24 hours."
+      ],
+      "image": {
+        "url": "https://cdn.mos.cms.futurecdn.net/F8wFerTnYBWmBSxZb5wcn6.jpg",
+        "credit": "Android Central",
+        "fallback_urls": []
+      }
+    },
+    {
+      "kind": "prompt",
+      "heading": "4. Run a *test prompt*",
+      "paras": [
+        "Google's tip: start with a verb, name a style, describe the subject and setting.",
+        "If this works and yours fails, the prompt is the problem."
+      ],
+      "prompt": "Create a photo-style image of a red bicycle leaning against a brick wall on a quiet street in the morning. Soft natural light, no text in the image."
+    },
+    {
+      "kind": "cta",
+      "hook": "Follow for fixes that come from the official docs, not from guesswork."
+    }
+  ],
+  "site_article": {
+    "kind": "guide",
+    "headline": "Gemini Nano Banana not working: fixes that actually help",
+    "dek": "When Gemini will not create or edit an image, the cause is usually your account, the model you picked, a usage limit or an admin setting. Here is how to check each one.",
+    "summary": "Most Nano Banana problems in the Gemini app come from rules in Google's own help pages: sign in and age requirements, the Flash-Lite model running Nano Banana Lite, usage limits, paid-only features and Workspace admin settings. This guide walks through seven checks in order.",
+    "seo_title": "Gemini Nano Banana not working: 7 fixes that help",
+    "seo_description": "Gemini Nano Banana not working: seven checks from Google's own help pages on sign in and age, model choice, usage limits, paid features and admin access.",
+    "answer_summary": "Sign in, make sure your age and country qualify, switch the Gemini model from Flash-Lite to Flash or Pro, wait if you hit a usage limit, and on a work or school account ask your admin to confirm Gemini access.",
+    "tags": [
+      "Gemini",
+      "Nano Banana",
+      "Google",
+      "Troubleshooting",
+      "Guides"
+    ],
+    "hero_alt": "A Google Pixel phone with the Gemini app open on its screen.",
+    "paragraphs": [
+      {
+        "kind": "fact",
+        "text": "If Gemini Nano Banana is not working for you, the cause is usually not a bug. In most cases it is one of a handful of rules that Google spells out in its own help pages: your account, your age, the Gemini model you picked, a usage limit, or a setting your work or school admin controls. Nano Banana is the family of image models inside the Gemini app that creates and edits pictures from a text prompt.",
+        "sources": [
+          0
+        ]
+      },
+      {
+        "kind": "fact",
+        "text": "The usual symptoms are a reply like \"I can't create that image\", a vague \"Something went wrong\", or an edit that ignores your uploaded photo, according to a May 2026 troubleshooting guide from iTechHacks. Below are the checks worth doing, in the order that saves you the most time. Each one is based on what Google's help center says, not on guesswork.",
+        "sources": [
+          4,
+          0
+        ]
+      },
+      {
+        "kind": "heading",
+        "text": "Gemini Nano Banana not working: 7 checks"
+      },
+      {
+        "kind": "step",
+        "title": "1. Make sure you are signed in",
+        "text": "Image tools in Gemini only work when you are signed in to a Google account. Open gemini.google.com and check that an account is active. If you are in a private window or a browser profile with no account, sign in first and try the same prompt again."
+      },
+      {
+        "kind": "fact",
+        "text": "Age matters too. On a personal account, Google says you must be 13 or older (or the age that applies in your country) to generate images, and 18 or older to edit them. So if you can create new pictures but every edit fails, an age setting on the account is a likely reason. School accounts can have their own restrictions.",
+        "sources": [
+          0
+        ]
+      },
+      {
+        "kind": "step",
+        "title": "2. Check your country and language",
+        "text": "Gemini image features are only available in the languages and countries the Gemini app supports. If you are traveling, or your account is set to a language Gemini does not support, the feature may not show up at all. GIFs are narrower still: Google lists them for Australia, Canada, France, Germany, Japan, Korea, the UK and the US, and is rolling them out gradually."
+      },
+      {
+        "kind": "step",
+        "title": "3. Switch away from Flash-Lite",
+        "text": "The Gemini model you choose decides which image model runs. With Flash-Lite selected, you get Nano Banana Lite, which Google says is built for speed and is not designed for several reference images or for many edits in a row. Pick Flash or Pro instead to get Nano Banana 2, which handles multiple reference images and renders text better. Change the model before you send the request, not after."
+      },
+      {
+        "kind": "fact",
+        "text": "This is the fix for a common complaint: you upload two photos, ask Gemini to combine them, and the result ignores one of them. On Flash-Lite that is expected behavior, according to Google's description of the Lite model.",
+        "sources": [
+          0
+        ]
+      },
+      {
+        "kind": "step",
+        "title": "4. Check whether you hit a limit",
+        "text": "Image requests count heavily against your usage. Google rates image, music and video requests as high cost, which means they eat into your allowance faster than plain chat. Gemini tells you when you are close to a limit and again when you reach it."
+      },
+      {
+        "kind": "fact",
+        "text": "Google does not publish a fixed daily image number for free personal accounts; it lists \"standard limits\". Google AI Plus raises them to 2 times standard, Google AI Pro to 4 times, and Ultra higher again. Limits refresh every 5 hours until you reach a weekly cap. Google also says limits can change without notice during busy periods, and that users without a plan may be limited before paying users when capacity drops.",
+        "sources": [
+          1
+        ]
+      },
+      {
+        "kind": "fact",
+        "text": "Work and school accounts have clearer numbers. On standard editions, Google lists up to 20 images a day with Nano Banana 2 and 3 redos a day with Nano Banana Pro, and says these limits reset daily. If you have used up your daily Nano Banana 2 quota, you also cannot redo images with Nano Banana Pro.",
+        "sources": [
+          2,
+          0
+        ]
+      },
+      {
+        "kind": "tip",
+        "text": "If you hit a limit, waiting is the free fix. Do not keep resending the same prompt: each try is another image request."
+      },
+      {
+        "kind": "step",
+        "title": "5. Check the plan for Pro and GIFs",
+        "text": "Redo with Pro, the option that runs an image again with Nano Banana Pro for more detail, requires a Google AI plan. So do GIFs, which are about 3 seconds long and are made by Gemini Omni. If those options are missing on a free account, nothing is broken: they are paid features. To redo an image, set the model to Pro and say in your prompt that you want the image redone, or open More on the image and pick Redo with Pro."
+      },
+      {
+        "kind": "step",
+        "title": "6. On a work or school account, ask your admin",
+        "text": "Your Workspace administrator decides whether you can use the Gemini app at all. Admins turn it on or off in the Admin console, and Google says a change can take up to 24 hours to apply. On Android, the Search and Assistant service also has to be on, or the Gemini app will not work for that user. For business accounts, you must be 18 or older to use Gemini with a work account."
+      },
+      {
+        "kind": "fact",
+        "text": "Google's advice for work accounts is short: confirm you are signed in with the right account at gemini.google.com, update the mobile app from your app store, and if it still fails, contact your Workspace administrator to confirm you have access. Some features, such as video generation, are not available on lower editions or to users under 18 on education accounts.",
+        "sources": [
+          2,
+          3
+        ]
+      },
+      {
+        "kind": "step",
+        "title": "7. If an image is refused or removed, rephrase it",
+        "text": "Gemini can decline a request or remove an image when its systems detect a possible violation of Google's Terms of Service or Prohibited Use Policy. Retrying the same words will not help. Rewrite the prompt so it plainly describes what you want and stays within the policy."
+      },
+      {
+        "kind": "heading",
+        "text": "Write a prompt Gemini can work with"
+      },
+      {
+        "kind": "fact",
+        "text": "Google's own prompt tips are simple: start with a verb such as draw, generate or create, name a style, and describe the subject, what it is doing and where. A clear prompt will not fix a limit or an account problem, but it does rule out a vague request as the cause.",
+        "sources": [
+          0
+        ]
+      },
+      {
+        "kind": "prompt",
+        "title": "Prompt 1: A clean test image",
+        "text": "Create a photo-style image of a red bicycle leaning against a brick wall on a quiet street in the morning. Soft natural light, no text in the image."
+      },
+      {
+        "kind": "prompt",
+        "title": "Prompt 2: A clean test edit",
+        "text": "Edit this photo: replace the gray sky with a clear blue sky. Keep everything else exactly the same."
+      },
+      {
+        "kind": "tip",
+        "text": "Use the test image to tell problems apart. If the plain test works but your real prompt fails, the prompt is the problem. If even the test fails, look at your account, model or limit."
+      },
+      {
+        "kind": "fact",
+        "text": "Third-party guides add general steps that Google's image help page does not cover, such as starting a new chat, clearing the browser cache, or turning off a VPN, according to iTechHacks. They are harmless to try, but Google does not document them as fixes for image generation.",
+        "sources": [
+          4
+        ]
+      },
+      {
+        "kind": "analysis",
+        "text": "Most \"Nano Banana is broken\" reports come down to two things: the Flash-Lite model quietly running the Lite image model, and usage limits that Google keeps flexible on purpose. Check those two first. If you rely on image editing every day, the honest answer is that a free account gives you no guaranteed number, and that is by design. Android Central reported in September 2025 that Google had started publishing its Gemini limits, and the help center now explains them, but free users still get a moving target."
+      }
+    ]
+  }
+}

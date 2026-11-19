@@ -1,74 +1,5 @@
 [
   {
-    "run_at": "2026-11-12T19:15:08.819Z",
-    "summary": "Afternoon run (about 14:00 New York): no open links or requests; the day's desk queue is already at the cap with 5 approved or pending posts for the evening, so only the breaking priority 1 lawsuit against OpenAI, Anthropic, Google, Meta and SpaceXSI was added (sensitive, waits for Mahir), plus the 4th website guide (Google AI Studio, site only).",
-    "considered": [
-      {
-        "story": "Four nonprofits sue Anthropic, Google, Meta, OpenAI and SpaceXSI in San Francisco to freeze frontier AI development",
-        "source": "https://www.yahoo.com/news/politics/articles/openai-google-anthropic-hit-lawsuit-182328643.html",
-        "decision": "queued",
-        "job_id": "2026-11-12-nonprofits-sue-to-freeze-frontier-ai",
-        "priority": 1,
-        "reason": "Major lawsuit against five of the biggest AI companies, confirmed by Reuters, Washington Examiner, Daily Caller and the plaintiffs' statement. Sensitive (lawsuit), so it waits for Mahir. Today's desk cap is already full, so it only posts tonight if Mahir approves it; priority 1 puts it first in line."
-      },
-      {
-        "story": "Website guide: How to use Google AI Studio for free",
-        "source": "https://ai.google.dev/gemini-api/docs/ai-studio-quickstart",
-        "decision": "queued",
-        "job_id": "2026-11-12-how-to-use-google-ai-studio-guide",
-        "priority": 2,
-        "reason": "Next unwritten line in guides/plan.md tool library; 4th of 6 guides today, site only."
-      },
-      {
-        "story": "Nvidia's $10 billion Anthropic IPO pledge under scrutiny after Huang exit (Bloomberg)",
-        "source": "https://www.bloomberg.com/news/articles/2026-11-12/nvidia-s-10-billion-anthropic-ipo-pledge-in-focus-with-ceo-exit",
-        "decision": "skipped",
-        "reason": "Follow-up to the Huang and Anthropic IPO stories already covered today, and the daily cap is full."
-      },
-      {
-        "story": "OpenAI raises $15 billion at a $1.25 trillion valuation (FourWeekMBA)",
-        "source": "https://fourweekmba.com/ai-openai-raises-15b-at-1-25t-29-over-anthropics-midpoint/",
-        "decision": "skipped",
-        "reason": "Page could not be opened and no major outlet confirmed a new round in this run; the $1.25 trillion valuation was already covered earlier this month."
-      },
-      {
-        "story": "TSMC board approves up to $1 billion in Anthropic and OpenAI investments",
-        "source": "leads/latest.json (qz.com)",
-        "decision": "skipped",
-        "reason": "Investor news with little interest for a general US audience, and today is at the cap."
-      },
-      {
-        "story": "Gemini 4 Carbon reaches AI Mode for Ultra subscribers",
-        "source": "leads/latest.json (PPC Land)",
-        "decision": "skipped",
-        "reason": "Insider product news for $99.99 subscribers only; cap is full."
-      },
-      {
-        "story": "Google Gemini Decisions API (Hacker News)",
-        "source": "leads/latest.json",
-        "decision": "skipped",
-        "reason": "Developer API launch, little appeal beyond developers; cap is full."
-      },
-      {
-        "story": "OpenAI expands ChatGPT ads to 44 countries",
-        "source": "leads/latest.json",
-        "decision": "skipped",
-        "reason": "Not confirmed by a second outlet in this run and mostly outside the US; may revisit tomorrow."
-      },
-      {
-        "story": "Nvidia preparing to oust Jensen Huang / Huang resigns",
-        "decision": "covered",
-        "reason": "Already covered today by several jobs and Mahir's link posts."
-      },
-      {
-        "story": "United Airlines bans AI agents from booking flights",
-        "decision": "covered",
-        "reason": "Already queued as 2026-11-12-united-airlines-bans-ai-agents-booking."
-      }
-    ],
-    "requests": []
-  },
-  {
     "run_at": "2026-11-12T21:06:04.984Z",
     "summary": "Afternoon run (15:55 New York): no open links or requests; today's desk news cap is already full, so queued the 5th and 6th site-only guides (Adobe Firefly, Ollama).",
     "considered": [
@@ -5210,6 +5141,64 @@
         "story": "Anthropic gave $40M to an AI safety group whose candidates mostly won (Washington Post)",
         "decision": "skipped",
         "reason": "Paywalled and no second source read; politics angle needs care, revisit if others pick it up."
+      }
+    ],
+    "requests": []
+  },
+  {
+    "run_at": "2026-11-19T21:03:57.826Z",
+    "summary": "Late afternoon run (16:00 New York, Nov 19): no open links or requests; queued the day's third and fourth site-only guides (What is Granola AI, Gemini Nano Banana not working). No new Reel or carousel story passed the filters.",
+    "considered": [
+      {
+        "story": "Guide: What is Granola AI and how to use it for meeting notes",
+        "source": "https://docs.granola.ai/help-center/getting-started/granola-101",
+        "decision": "queued",
+        "job_id": "2026-11-19-what-is-granola-ai-guide",
+        "priority": 2
+      },
+      {
+        "story": "Guide: Gemini Nano Banana not working, fixes from Google's help pages",
+        "source": "https://support.google.com/gemini/answer/14286560",
+        "decision": "queued",
+        "job_id": "2026-11-19-gemini-nano-banana-not-working-guide",
+        "priority": 2
+      },
+      {
+        "story": "Guide: How to use Sora",
+        "decision": "skipped",
+        "reason": "OpenAI discontinued the Sora app in March 2026, so a how-to guide would mislead; took the next plan line instead."
+      },
+      {
+        "story": "Chinese AI models carry fingerprints of export-banned Nvidia Blackwell chips (Scientific American)",
+        "source": "https://techcrunch.com/2026/11/13/export-banned-nvidia-chips-are-behind-chinas-most-powerful-ai-models-uh-oh-jensen/",
+        "decision": "skipped",
+        "reason": "The research was reported from November 13, close to the China and Nvidia stories already covered on Nov 17."
+      },
+      {
+        "story": "Chrome's built-in AI model eats bandwidth and storage (Hacker News blog post)",
+        "source": "https://perishablepress.com/chrome-ai-wasting-much-bandwidth/",
+        "decision": "skipped",
+        "reason": "A personal blog post; the 4GB Chrome model reports found are older and no fresh news coverage was read."
+      },
+      {
+        "story": "Dow drops over 1,000 points as Anthropic's debut fails to lift AI stocks (Reuters)",
+        "decision": "covered",
+        "reason": "Anthropic's debut is already posted as 2026-11-19-anthropic-opens-111-nasdaq."
+      },
+      {
+        "story": "Anthropic gave $40M to an AI safety group whose candidates mostly won (Washington Post)",
+        "decision": "skipped",
+        "reason": "Paywalled, still no second source read."
+      },
+      {
+        "story": "Artificial trailer, Andrew Garfield as Sam Altman, and Altman's reaction (Benzinga)",
+        "decision": "skipped",
+        "reason": "Trailer only found on YouTube, which our servers cannot download; no X copy confirmed."
+      },
+      {
+        "story": "Reel search",
+        "decision": "skipped",
+        "reason": "Reddit leads are empty and X and most news sites cannot be opened from this run, so no clip could be checked; Nov 19 still has only 1 Reel."
       }
     ],
     "requests": []
