@@ -1,0 +1,34 @@
+name: IndexNow
+
+# Tells Bing (and the engines that share IndexNow) about new pages of the site, right after
+# each site sync and on demand.
+on:
+  workflow_dispatch:
+  workflow_run:
+    workflows: ["Site desk sync"]
+    types: [completed]
+
+concurrency:
+  group: indexnow
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  ping:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - run: node tools/indexnow.js
+      - name: Save what was sent
+        run: |
+          git config user.name "neurafeed-bot" && git config user.email "neurafeed-bot@users.noreply.github.com"
+          git add state/indexnow.json 2>/dev/null || true
+          git diff --cached --quiet || (git commit -qm "IndexNow: pages sent" && (git push -q || (git pull -q --rebase && git push -q)))
