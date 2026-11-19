@@ -1,117 +1,5 @@
 [
   {
-    "run_at": "2026-11-12T21:06:04.984Z",
-    "summary": "Afternoon run (15:55 New York): no open links or requests; today's desk news cap is already full, so queued the 5th and 6th site-only guides (Adobe Firefly, Ollama).",
-    "considered": [
-      {
-        "story": "Website guide: How to use Adobe Firefly (and Firefly in Photoshop)",
-        "source": "https://helpx.adobe.com/firefly/web/work-with-images/generate-images/generate-images-from-text-descriptions.html",
-        "decision": "queued",
-        "job_id": "2026-11-12-how-to-use-adobe-firefly-guide",
-        "priority": 2,
-        "reason": "Next tool library line in guides/plan.md; 5th of 6 guides today, site only. Built from Adobe Help (text to image, credits FAQ, Generative Fill), Adobe's plans page and The Next Web. Images are Adobe product page images, unchecked from here because adobe.com is blocked for downloads, so the pipeline download is the check."
-      },
-      {
-        "story": "Website guide: How to use Ollama to run AI models locally",
-        "source": "https://docs.ollama.com/quickstart",
-        "decision": "queued",
-        "job_id": "2026-11-12-how-to-use-ollama-guide",
-        "priority": 2,
-        "reason": "Next usable Tier 1 line in guides/plan.md; 6th of 6 guides today, site only. Built from Ollama's quickstart, CLI reference, pricing and Claude Desktop posts plus an LLM Hardware cheat sheet."
-      },
-      {
-        "story": "Website guide: How to use Sora (Tier 1 line)",
-        "source": "https://www.axios.com/2026/03/24/openai-discontinue-sora-video-app",
-        "decision": "skipped",
-        "reason": "OpenAI shut the Sora app down in March 2026, so a how-to guide would mislead readers; the plan line should be dropped."
-      },
-      {
-        "story": "Website guide: How to use Veo for free (Tier 1 line)",
-        "decision": "skipped",
-        "reason": "Today's Google Flow guide already covers making Veo videos in Flow and its free credits; better as a later Gemini app angle."
-      },
-      {
-        "story": "Lawsuit says a 13-year-old used Google Gemini on a school laptop to plan suicide (NDTV)",
-        "source": "leads/latest.json",
-        "decision": "skipped",
-        "reason": "Today's desk cap of 8 is already used up, and this child self-harm lawsuit needs careful sourcing from major US outlets first; worth checking tomorrow morning."
-      },
-      {
-        "story": "Adobe and Google bring Gemini to Photoshop and PDF editing to Gmail",
-        "source": "leads/latest.json (India Today)",
-        "decision": "skipped",
-        "reason": "Daily cap is full; a product tie-up with modest reader interest."
-      },
-      {
-        "story": "Claude Fable 5.2 edges Gemini 4 Carbon on Google's benchmark at 6x the cost",
-        "source": "leads/latest.json (PPC Land)",
-        "decision": "skipped",
-        "reason": "Benchmark news for insiders, single source, and the cap is full."
-      },
-      {
-        "story": "Sex, spies and salaries shake up AI chipmakers (Financial Times)",
-        "source": "leads/latest.json",
-        "decision": "covered",
-        "reason": "The Huang resignation and affair stories already have several jobs today."
-      },
-      {
-        "story": "Anthropic and OpenAI sign Macron's Paris Call while the US and Google stay away",
-        "source": "leads/latest.json (Dealroom)",
-        "decision": "skipped",
-        "reason": "Policy story with little US consumer appeal; cap is full."
-      },
-      {
-        "story": "OpenAI expands ChatGPT ads to 44 countries",
-        "source": "leads/latest.json",
-        "decision": "skipped",
-        "reason": "Still no second major outlet, mostly outside the US, and the cap is full."
-      }
-    ],
-    "requests": []
-  },
-  {
-    "run_at": "2026-11-12T22:53:57.503Z",
-    "summary": "Evening run (17:53 New York): no open links or requests, today's desk news cap of 8 is already used and all 6 site-only guides exist, so nothing new was queued.",
-    "considered": [
-      {
-        "story": "Nvidia's $10 billion Anthropic IPO pledge under scrutiny after Huang's exit (Bloomberg)",
-        "source": "https://www.bloomberg.com/news/articles/2026-11-12/nvidia-s-10-billion-anthropic-ipo-pledge-in-focus-with-ceo-exit",
-        "decision": "skipped",
-        "reason": "Follow-up to the Huang resignation and Anthropic IPO stories already posted today, and the daily cap is full; worth a look tomorrow if it develops."
-      },
-      {
-        "story": "Advocacy groups sue OpenAI, Google, Anthropic, Meta and SpaceX to freeze frontier models",
-        "source": "https://bnnbloomberg.ca/business/artificial-intelligence/2026/11/12/advocacy-groups-sue-ai-giants-to-freeze-new-models-warning-of-catastrophic-risks",
-        "decision": "covered",
-        "reason": "Already queued as 2026-11-12-nonprofits-sue-to-freeze-frontier-ai (waiting for Mahir's approval)."
-      },
-      {
-        "story": "OpenAI backs three chip export bills in the week of Nvidia's CEO exit (FourWeekMBA)",
-        "source": "https://fourweekmba.com/ai-openai-backs-3-chip-export-bills-in-nvidia-ceo-exit-week/",
-        "decision": "skipped",
-        "reason": "Single minor outlet, policy detail with little consumer appeal, and the cap is full."
-      },
-      {
-        "story": "TSMC board approves up to $1 billion in Anthropic and OpenAI investments",
-        "source": "leads/latest.json (qz.com)",
-        "decision": "skipped",
-        "reason": "Daily cap is full; a money story to reconsider tomorrow with a second source."
-      },
-      {
-        "story": "Gemini 4 Carbon reaches AI Mode for $99.99 Ultra subscribers only",
-        "source": "leads/latest.json (PPC Land)",
-        "decision": "skipped",
-        "reason": "Single trade source and the cap is full."
-      },
-      {
-        "story": "Jensen Huang resignation and affair coverage",
-        "decision": "covered",
-        "reason": "Several jobs today, latest 2026-11-12-huang-third-affair-reuters-v3."
-      }
-    ],
-    "requests": []
-  },
-  {
     "run_at": "2026-11-13T01:01:03.064Z",
     "summary": "Evening run (19:53 New York): no open links or requests, all 6 guides exist; queued the priority 1 Gemini 4 Hydrogen launch (it will hold for tomorrow's first slot because today's post cap is used).",
     "considered": [
@@ -5199,6 +5087,70 @@
         "story": "Reel search",
         "decision": "skipped",
         "reason": "Reddit leads are empty and X and most news sites cannot be opened from this run, so no clip could be checked; Nov 19 still has only 1 Reel."
+      }
+    ],
+    "requests": []
+  },
+  {
+    "run_at": "2026-11-19T23:04:31.412Z",
+    "summary": "Evening run (18:00 New York, Nov 19): no open links or requests; queued the day's fifth and sixth site-only guides (Claude not working, How to use Consensus AI). Nov 19 already has 3 Instagram carousels and 4 site-only news articles, and no downloadable Reel was found.",
+    "considered": [
+      {
+        "story": "Guide: Claude not working, how to check for an outage and fix common errors",
+        "source": "https://support.claude.com/en/articles/12466728-troubleshoot-claude-error-messages",
+        "decision": "queued",
+        "job_id": "2026-11-19-claude-not-working-guide",
+        "priority": 2,
+        "reason": "Tier 4 plan line, from Anthropic's help center and status page plus TechRadar's outage coverage."
+      },
+      {
+        "story": "Guide: How to use Consensus AI for research",
+        "source": "https://consensus.app/home/resources/consensus-libguide-for-academic-research/",
+        "decision": "queued",
+        "job_id": "2026-11-19-how-to-use-consensus-ai-guide",
+        "priority": 2,
+        "reason": "Next tool library line with readable docs, from Consensus's own guides plus Oregon State and SMU library guides."
+      },
+      {
+        "story": "Guide: How to use Grok Imagine",
+        "source": "https://docs.x.ai/docs/guides/video-generation",
+        "decision": "skipped",
+        "reason": "xAI's docs only cover the API; no official page on the app steps, plans or free limits could be read, so a how-to for normal users would have to guess."
+      },
+      {
+        "story": "Coinbase AI blocked $4.7M sent to an AI-generated Elon Musk livestream giveaway (BleepingComputer via AI Weekly)",
+        "decision": "skipped",
+        "reason": "Strong money and scam story, but Nov 19 already has 3 Instagram carousels and 4 site-only articles; original BleepingComputer article not read in this run. Good candidate for tomorrow if still fresh."
+      },
+      {
+        "story": "Muslim Girl founder sues xAI over Grok sexualized images made from her selfie (WIRED via AI Weekly)",
+        "decision": "skipped",
+        "reason": "Lawsuit filed Wednesday; daily carousel and site-only caps are full, and the WIRED article was not read in this run."
+      },
+      {
+        "story": "Meta's Muse AI reportedly read Signal messages on Android through notifications (Reuters, Ars Technica via AI Weekly)",
+        "decision": "skipped",
+        "reason": "Daily caps are full and the original reports were not read in this run; worth checking tomorrow."
+      },
+      {
+        "story": "Anthropic shares fall back below $100 after opening at $111.50 (Forbes)",
+        "decision": "covered",
+        "reason": "Anthropic's debut is already queued as 2026-11-19-anthropic-opens-111-nasdaq."
+      },
+      {
+        "story": "Gemini can now use your Mac (TechCrunch, The Verge)",
+        "decision": "covered",
+        "reason": "Already queued as 2026-11-19-gemini-mac-computer-use."
+      },
+      {
+        "story": "GAO finds chatbots produced viable terror attack plans (FedScoop, Forbes)",
+        "decision": "covered",
+        "reason": "Already covered as 2026-11-18-gao-chatbots-attack-plans."
+      },
+      {
+        "story": "Reel search",
+        "decision": "skipped",
+        "reason": "Reddit leads are still empty (HTTP 403) and the day's digests list no viral clips with an X link; X cannot be opened from this run."
       }
     ],
     "requests": []

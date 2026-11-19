@@ -1,0 +1,161 @@
+{
+  "id": "2026-11-19-claude-not-working-guide",
+  "format": "utility",
+  "site_only": true,
+  "created_at": "2026-11-19T23:30:00Z",
+  "story_time": "2026-11-19T23:30:00Z",
+  "timely": false,
+  "sensitive": false,
+  "priority": 2,
+  "sources": [
+    { "name": "Claude Help Center: Troubleshoot Claude error messages", "url": "https://support.claude.com/en/articles/12466728-troubleshoot-claude-error-messages" },
+    { "name": "Claude Status", "url": "https://status.claude.com/incidents/4xvtc2gnq73l" },
+    { "name": "TechRadar", "url": "https://www.techradar.com/news/live/claude-anthropic-january-22-2026-outage" },
+    { "name": "Claude Help Center: Incorrect or misleading responses", "url": "https://support.claude.com/en/articles/8525154-claude-is-providing-incorrect-or-misleading-responses-what-s-going-on" },
+    { "name": "Claude Help Center: Links that don't work and false claims", "url": "https://support.claude.com/en/articles/8241188-claude-is-producing-links-that-don-t-work-and-falsely-claiming-that-it-has-sent-emails-or-produced-external-documents-what-s-going-on" }
+  ],
+  "caption": "Claude not working? First check status.claude.com for a real outage.\nShort \"capacity constraints\" errors are not outages and usually clear in a few minutes.\nLogin errors: turn off your VPN and extensions, then clear cookies.\n\nWhich Claude error do you see most?\n\nFollow @neurafeed.ai for daily AI news.\n\nSource: Claude Help Center · Photo: Anthropic",
+  "threads_text": "Most \"Claude is broken\" moments are one of four things: a real outage, a short capacity error, a usage limit or a login problem. Anthropic's help center has a fix for each, and the capacity one never shows up on the status page. Which one hits you most?",
+  "slides": [
+    {
+      "kind": "cover",
+      "headline": "Claude *not working*? How to tell an outage from a limit, and fix it",
+      "image": {
+        "url": "https://assets.claude.com/27d189475a69c8d847540d09821db517a2f7c66d.jpg",
+        "credit": "Anthropic",
+        "fallback_urls": ["https://assets.claude.com/6dc7dfac91662cacf52534a25252db332309cb0d.jpg?w=1200&h=630&fit=crop"]
+      },
+      "pos": "center center"
+    },
+    {
+      "kind": "card",
+      "heading": "1. Check *status.claude.com*",
+      "paras": [
+        "Real outages are posted there with the products hit and progress updates.",
+        "On September 29, 2026, errors hit claude.ai, the apps, Claude Code and the API for about an hour."
+      ],
+      "image": {
+        "url": "https://assets.claude.com/d4645137a0c197beee5313fedbf9417d035452fc.webp",
+        "credit": "Anthropic",
+        "fit": "contain"
+      }
+    },
+    {
+      "kind": "card",
+      "heading": "2. Capacity errors are *not outages*",
+      "paras": [
+        "\"Unexpected capacity constraints\" means Claude is busy. Anthropic says it usually clears in a few minutes.",
+        "It never shows up on the status page, so just wait and try again."
+      ],
+      "image": {
+        "url": "https://assets.claude.com/454390de9d9ccefb6082b7c2440c7547c1ec3964.webp",
+        "credit": "Anthropic",
+        "fit": "contain"
+      }
+    },
+    {
+      "kind": "card",
+      "heading": "3. Can't *log in*?",
+      "paras": [
+        "Turn off your VPN, disable browser extensions, then clear cache and cookies.",
+        { "t": "Still stuck? Check the status page for a sign in incident.", "strong": true }
+      ],
+      "image": {
+        "url": "https://assets.claude.com/6dc7dfac91662cacf52534a25252db332309cb0d.jpg?w=1200&h=630&fit=crop",
+        "credit": "Anthropic",
+        "fit": "contain"
+      }
+    },
+    {
+      "kind": "cta",
+      "hook": "Follow for quick fixes when the AI tools you rely on stop working."
+    }
+  ],
+  "site_article": {
+    "kind": "guide",
+    "headline": "Claude not working: how to check for an outage and fix common errors",
+    "dek": "Most Claude problems are one of four things: a real outage, a short capacity error, a usage limit or a login problem. Here is how to tell them apart and what Anthropic's own help center says to do about each.",
+    "summary": "When Claude stops working, check status.claude.com first, because real outages are posted there. Capacity errors, usage limits, length limits and login errors are not outages, and each has its own fix in Anthropic's help center.",
+    "seo_title": "Claude not working: how to check for an outage and fix it",
+    "seo_description": "Claude not working: how to check status.claude.com for an outage, plus the official fixes for capacity errors, usage limits, length limits and login problems.",
+    "answer_summary": "If Claude is not working, open status.claude.com to see if there is an active incident. If there is none, the message on screen tells you which problem you have: a capacity error (wait a few minutes), a usage or length limit, or a login error (VPN, extensions, cookies).",
+    "tags": ["Claude", "Anthropic", "Claude not working", "Guides"],
+    "hero_alt": "Promotional image from Anthropic for its Claude assistant.",
+    "paragraphs": [
+      {
+        "kind": "fact",
+        "text": "Claude not working usually means one of four things. Either Anthropic has a real outage, Claude is briefly out of capacity, you have hit a usage or length limit, or your login is failing on your side. Anthropic's help center has a page called Troubleshoot Claude error messages that covers each case, and the fix is different for every one. So the first job is to work out which one you are looking at.",
+        "sources": [0]
+      },
+      {
+        "kind": "heading",
+        "text": "Step one: check if Claude is down"
+      },
+      {
+        "kind": "step",
+        "title": "1. Open status.claude.com",
+        "text": "Anthropic posts real incidents on its status page at status.claude.com. Each incident lists which products are affected, how bad it is and how the fix is going. If you see an active incident for claude.ai, the apps or Claude Code, there is nothing to fix on your end. You can subscribe to an incident there to get updates by email or text."
+      },
+      {
+        "kind": "fact",
+        "text": "Outages do happen, and they tend to hit everything at once. On September 29, 2026, Anthropic's status page reported elevated errors on claude.ai, the desktop and mobile apps, Claude Code, Claude Cowork and the Claude API. The problems started at 14:00 UTC and services were back to normal at 14:59 UTC. During that hour, a second issue also blocked many sign ins, new chats, file uploads and purchases.",
+        "sources": [1]
+      },
+      {
+        "kind": "tip",
+        "text": "During that incident Anthropic asked users who were already signed in not to sign out, and said retrying might work. That is good advice for any outage: logging out and back in can leave you locked out until sign in is fixed."
+      },
+      {
+        "kind": "fact",
+        "text": "Earlier in the year, on January 22, 2026, TechRadar tracked another outage in which users saw a message asking them to try again, on both desktop and mobile, while Claude Code had a separate sign in problem. Reports on Downdetector rose above 2,000 before Anthropic marked the issue resolved later that morning. TechRadar pointed readers to the status page for official updates.",
+        "sources": [2]
+      },
+      {
+        "kind": "heading",
+        "text": "Claude not working but there is no outage"
+      },
+      {
+        "kind": "step",
+        "title": "2. A capacity error: wait a few minutes",
+        "text": "If you see \"Due to unexpected capacity constraints, Claude is unable to respond to your message. Please try again soon,\" Claude is busy, not broken. Anthropic says these are not outages, they do not appear on the status page and they usually clear up within a few minutes. Wait, then send the message again."
+      },
+      {
+        "kind": "step",
+        "title": "3. A usage limit: check when it resets",
+        "text": "Paid plans have a weekly limit, and most also have a five hour session limit. When you get close, Claude shows \"Approaching session limit\" or \"Approaching weekly limit.\" When you hit it, the message tells you when it resets, for example \"5-hour limit reached\" with a time. If you have turned on usage credits in your usage settings, Claude keeps going and bills those credits instead of stopping, until you reach your monthly spend limit or the balance runs out."
+      },
+      {
+        "kind": "step",
+        "title": "4. A length limit: split the work",
+        "text": "\"Your message will exceed the length limit for this chat\" means the conversation plus your files is too big. Anthropic suggests attaching fewer or smaller files, splitting long content into chunks, asking Claude to find the relevant part first, or starting a new conversation. On paid plans with code execution turned on, long chats are summarized automatically."
+      },
+      {
+        "kind": "step",
+        "title": "5. A login error: clean up your browser",
+        "text": "For errors like \"There was an error logging you in,\" Anthropic lists three steps in order: do not use a VPN, disable browser extensions, and clear your browser cache and cookies. If none of that works, go back to status.claude.com and look for an incident affecting sign in."
+      },
+      {
+        "kind": "heading",
+        "text": "When Claude works but the answers are wrong"
+      },
+      {
+        "kind": "fact",
+        "text": "Sometimes Claude runs fine but gives answers that are wrong. Anthropic calls this hallucinating and says Claude should not be your only source of truth, especially for high stakes advice. When Claude uses web search, check the sources it cites, since the original page may have context the answer leaves out. You can report a bad answer with the thumbs down button.",
+        "sources": [3]
+      },
+      {
+        "kind": "fact",
+        "text": "A related problem is Claude claiming it did something it cannot do. Anthropic's help center says Claude can make up links that do not work, or say it sent an email or created a document, when it has no tool connected for that. If you did not connect email or a file tool, nothing was sent.",
+        "sources": [4]
+      },
+      {
+        "kind": "tip",
+        "text": "Read the exact wording of the error before you try anything. \"Capacity constraints,\" \"limit reached\" and \"error logging you in\" each point to a different fix, and only a real outage shows up on the status page."
+      },
+      {
+        "kind": "analysis",
+        "text": "The quick order to follow: status page first, then the message on screen, then your browser. Most of the time the answer is either a short wait or a limit that resets on a schedule. Clearing cookies or reinstalling the app will not help with either, so save those steps for login errors."
+      }
+    ]
+  }
+}

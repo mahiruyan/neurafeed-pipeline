@@ -1,0 +1,175 @@
+{
+  "id": "2026-11-19-how-to-use-consensus-ai-guide",
+  "format": "utility",
+  "site_only": true,
+  "created_at": "2026-11-19T23:35:00Z",
+  "story_time": "2026-11-19T23:35:00Z",
+  "timely": false,
+  "sensitive": false,
+  "priority": 2,
+  "sources": [
+    { "name": "Consensus: How it works", "url": "https://consensus.app/home/blog/how-consensus-works/" },
+    { "name": "Consensus LibGuide for Academic Research", "url": "https://consensus.app/home/resources/consensus-libguide-for-academic-research/" },
+    { "name": "Consensus: How to search and best practices", "url": "https://consensus.app/home/blog/maximize-your-consensus-experience-with-these-best-practices/" },
+    { "name": "Oregon State University Libraries: Consensus", "url": "https://guides.library.oregonstate.edu/consensus" },
+    { "name": "SMU Libraries: Get the most out of Consensus", "url": "https://blog.smu.edu/smulibraries/2025/10/03/get-the-most-out-of-consensus-an-ai-academic-search-tool" }
+  ],
+  "caption": "Consensus is an AI search engine that only answers from research papers.\nAsk a yes or no question and the Consensus Meter shows how the studies lean.\nUse the filters for journal rank and study type, and read the abstract before you cite anything.\n\nWould you trust an AI summary of research?\n\nFollow @neurafeed.ai for daily AI news.\n\nSource: Consensus · Photo: Consensus",
+  "threads_text": "Consensus is a search engine that answers only from research papers, and a yes or no question gets a meter showing how the studies lean. Even its own guide says to read the abstract before citing anything it summarizes. Would you trust an AI summary of research?",
+  "slides": [
+    {
+      "kind": "cover",
+      "headline": "How to use *Consensus AI* to check what the research actually says",
+      "image": {
+        "url": "https://framerusercontent.com/images/GbpMcj3EGSEj63XZaT5wJPU7Mc.png?width=5760&height=3240",
+        "credit": "Consensus",
+        "fallback_urls": ["https://framerusercontent.com/images/QFRPbO92zY6rte2uviCZjTtQ7U.png?width=2400&height=1443"]
+      },
+      "pos": "center center"
+    },
+    {
+      "kind": "card",
+      "heading": "1. Ask a *yes or no* question",
+      "paras": [
+        "\"Does creatine improve cognitive function in healthy adults?\" turns on the Consensus Meter.",
+        "It shows how the papers lean: Yes, Possibly, Mixed or No."
+      ],
+      "image": {
+        "url": "https://framerusercontent.com/images/dzxoA7utBem9Q0VlUvw5rNAz0o.png?width=1771&height=1409",
+        "credit": "Consensus",
+        "fit": "contain",
+        "fallback_urls": ["https://d2jv02qf7xgjwx.cloudfront.net/accounts/46117/images/Consensus_meter_example.jpg"]
+      }
+    },
+    {
+      "kind": "card",
+      "heading": "2. Pick *Quick, Pro or Deep*",
+      "paras": [
+        "Quick reads 10 papers, Pro reads 20 with a detailed summary, Deep reads 50 and writes a full report.",
+        "Use Deep for a thesis, Quick for a fact check."
+      ],
+      "image": {
+        "url": "https://framerusercontent.com/images/YV0w47yQAASqTiYh9SNOZopIdhg.png?width=1771&height=1285",
+        "credit": "Consensus",
+        "fit": "contain",
+        "fallback_urls": ["https://d2jv02qf7xgjwx.cloudfront.net/accounts/46117/images/Consensus_pro_setting.jpg"]
+      }
+    },
+    {
+      "kind": "card",
+      "heading": "3. Filter, then *read the abstract*",
+      "paras": [
+        "Filter by journal rank, methodology, sample size or year.",
+        { "t": "Consensus itself says never cite a paper you have not at least read the abstract of.", "strong": true }
+      ],
+      "image": {
+        "url": "https://framerusercontent.com/images/zlewjWHsrGPKic4SnOYNie56UsE.png?width=1771&height=1425",
+        "credit": "Consensus",
+        "fit": "contain",
+        "fallback_urls": ["https://d2jv02qf7xgjwx.cloudfront.net/accounts/46117/images/Consensus_filters.jpg"]
+      }
+    },
+    {
+      "kind": "cta",
+      "hook": "Follow for plain guides to AI tools that help you check facts instead of guessing."
+    }
+  ],
+  "site_article": {
+    "kind": "guide",
+    "headline": "How to use Consensus AI for research: searches, the Consensus Meter and filters",
+    "dek": "Consensus is a search engine that answers questions from scientific papers instead of the open web. Here is how to phrase a search, which mode to pick, how to read the Consensus Meter and where it falls short.",
+    "summary": "Consensus searches more than 200 million academic papers and summarizes what they say, with every claim linked to a real paper. Yes or no questions get a Consensus Meter, and filters for journal rank, methodology and sample size help you narrow the results.",
+    "seo_title": "How to use Consensus AI for research: a practical guide",
+    "seo_description": "How to use Consensus AI for research: how to phrase searches, Quick vs Pro vs Deep, reading the Consensus Meter, filters, citations, and what it gets wrong.",
+    "answer_summary": "To use Consensus AI, sign up at consensus.app, type a research question in plain English (a yes or no question turns on the Consensus Meter), pick Quick, Pro or Deep mode, narrow the results with filters, and read each paper's abstract before you cite it.",
+    "tags": ["Consensus", "AI research tools", "Academic search", "Guides"],
+    "hero_alt": "Promotional graphic from Consensus for its AI academic search guide.",
+    "paragraphs": [
+      {
+        "kind": "fact",
+        "text": "If you want to know how to use Consensus AI for research, start with what it is: a search engine for scientific papers with an AI layer on top. You type a question, Consensus finds relevant studies first, and only then uses AI to summarize what they say. The company says it searches over Semantic Scholar, OpenAlex, its own crawl of the scholarly web and full text from publisher partners, and that every paper it cites is real.",
+        "sources": [0]
+      },
+      {
+        "kind": "fact",
+        "text": "The search itself works in stages. Consensus combines keyword and semantic search over titles and abstracts, then re-ranks the top 1,500 papers using recency, citation count and journal reputation, then re-ranks the top 20 with a larger model. Its own guide puts the collection at over 220 million research papers, and every result shows its publication date.",
+        "sources": [0, 1]
+      },
+      {
+        "kind": "heading",
+        "text": "How to use Consensus AI: your first search"
+      },
+      {
+        "kind": "step",
+        "title": "1. Sign up",
+        "text": "Go to consensus.app and create an account. Students and staff should check with their library first: Oregon State and SMU both give university users an upgraded version when they sign up with their school email. SMU says that version includes unlimited Pro searches and 50 Deep searches a month. Check the Consensus pricing page for what your own plan includes."
+      },
+      {
+        "kind": "step",
+        "title": "2. Ask a real research question",
+        "text": "Consensus works best with questions that academic papers actually study. Keywords work, and so do simple questions, such as whether statins are effective in elderly populations. It is not built for general knowledge questions. Consensus's own example of what not to ask is the capital of Germany."
+      },
+      {
+        "kind": "step",
+        "title": "3. Use a yes or no question to get the Consensus Meter",
+        "text": "Yes or no questions turn on the Consensus Meter, which shows how the papers lean. The labels are Yes in green, Possibly in yellow, Mixed in orange and No in red. Oregon State's library guide says the meter appears when at least 5 papers directly answer your question."
+      },
+      {
+        "kind": "prompt",
+        "title": "Prompt 1: a question that triggers the Consensus Meter",
+        "text": "Does [treatment or habit] improve [outcome] in [group of people]?"
+      },
+      {
+        "kind": "step",
+        "title": "4. Pick a search mode",
+        "text": "Consensus has three modes. Quick analyzes 10 papers and gives a short summary, good for a fact check. Pro analyzes 20 papers and gives a detailed summary with custom formats, good for coursework and literature reviews. Deep analyzes 50 papers and writes a full report with diagrams and tables, meant for thesis work."
+      },
+      {
+        "kind": "prompt",
+        "title": "Prompt 2: a comparison table in Pro mode",
+        "text": "Create a table comparing the effectiveness of [approach A], [approach B] and [approach C] for [problem], with the study type and sample size for each finding."
+      },
+      {
+        "kind": "heading",
+        "text": "How to narrow and check the results"
+      },
+      {
+        "kind": "step",
+        "title": "5. Add filters",
+        "text": "Open the filter button next to Export. The filters in Consensus's guide are Journal Rank, Countries, Publish Year, Methodology, Sample Size, Study Durations, Fields of Study and Citations. You can set them before or after a search. SMU's library found that filtering for a discipline works well, while asking for a discipline in the question does not."
+      },
+      {
+        "kind": "step",
+        "title": "6. Use Boolean search for precise results",
+        "text": "Consensus supports AND, OR and NOT in capital letters, quotes for exact phrases and parentheses for grouping. Its guide gives this example: therapy AND (PTSD OR trauma) AND veterans. For medical topics, it suggests using MeSH terms."
+      },
+      {
+        "kind": "step",
+        "title": "7. Cite and export",
+        "text": "The quotation mark button creates a citation in APA, MLA, Chicago, Harvard, BibTeX or AMA. The download button exports results as RIS or CSV, and Consensus lists Zotero, EndNote, Mendeley, RefWorks, Citavi and Papers as supported reference managers. A link marked PDF is open access, while Full Text means the paper is behind a paywall."
+      },
+      {
+        "kind": "tip",
+        "text": "Look for the checkmark next to a citation. Consensus's guide says a checkmark means the full text was analyzed. No checkmark means the summary came from the abstract only."
+      },
+      {
+        "kind": "heading",
+        "text": "What Consensus is bad at"
+      },
+      {
+        "kind": "fact",
+        "text": "Consensus is open about its limits. Its own guide warns that AI can miss nuances, limitations or caveats, that not all studies are equally rigorous, and that you should never copy its summaries into a paper or cite a paper whose abstract you have not read. Oregon State notes it does not search subscription databases such as Web of Science, and SMU says it does not cover scholarly books.",
+        "sources": [1, 3, 4]
+      },
+      {
+        "kind": "fact",
+        "text": "SMU Libraries puts it plainly: use Consensus as a discovery tool, not a decision making tool. Not every result will be relevant, and people doing formal systematic reviews are warned that using a language model can cause methodological problems.",
+        "sources": [4]
+      },
+      {
+        "kind": "analysis",
+        "text": "The practical way to use it: ask a clear question, read the meter as a rough signal, then open the strongest papers yourself. Consensus is fast at finding studies and showing which way they point. It is not a replacement for reading them."
+      }
+    ]
+  }
+}
