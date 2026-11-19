@@ -229,7 +229,7 @@ it goes live, so write it ready to publish.
   "dek": "One sentence that adds what the headline leaves out.",
   "summary": "Two sentences: what happened and the key number.",
   "seo_title": "Under 65 characters, the main names first",
-  "seo_description": "Under 160 characters, what happened in plain words.",
+  "seo_description": "140 to 160 characters, what happened in plain words.",
   "answer_summary": "One or two sentences that answer the obvious question directly.",
   "tags": ["Anthropic", "Claude", "AI compute"],
   "hero_alt": "Plain description of the cover photo (what is visible), under 20 words.",
@@ -255,6 +255,9 @@ it goes live, so write it ready to publish.
   en or em dashes, none of: game-changing, groundbreaking, revolutionary, delve into, a testament
   to, only time will tell, it remains to be seen, marks a significant milestone, rapidly evolving
   landscape. Paraphrase; never copy a sentence from a source.
+- `seo_description`: 140 to 160 characters, for news and guides alike (validation rejects under 120:
+  Bing Webmaster Tools flagged our descriptions as too short). Say what the reader gets, with the
+  main name and the key number or task; no filler to reach the length.
 - `hero_alt`: describe the job's main photo as you saw it (no names you cannot see).
 - Check with `node -e "const {validateSiteArticle}=require('./src/validate');..."` and fix every
   problem. A problem here does not block the Instagram post, but the site will skip the article.
@@ -404,7 +407,7 @@ article. Same job, same sources; the carousel is the teaser, the guide is the fu
   "How to use ChatGPT Projects memory", "ChatGPT not uploading files: 6 fixes that work",
   "Claude vs ChatGPT for coding", "What is Gemini Omni 1.2 Flash". Tool name in the first three
   words, the question or task right after it, no clever or vague openings ("ChatGPT for everyday
-  work..."). `seo_title` under 65 characters, `seo_description` under 160 and says exactly what
+  work..."). `seo_title` under 65 characters, `seo_description` 140 to 160 characters and says exactly what
   the reader gets (the steps, the prompts, the fix).
 - Pick subjects people search for: a "how to", a fix for an error message, "X vs Y", "what is X"
   for a new model or feature. Leads and the news of the last days show which tools are hot.

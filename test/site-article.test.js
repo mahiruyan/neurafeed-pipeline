@@ -8,7 +8,7 @@ const job = {
   id: 'x', sources: [{ name: 'CNBC', url: 'https://www.cnbc.com/a' }, { name: 'Reuters', url: 'https://www.reuters.com/b' }],
   site_article: {
     headline: 'Anthropic signs a $45 billion compute deal', dek: 'The agreement adds capacity through 2028.', summary: 'Anthropic agreed to buy compute.',
-    seo_title: 'Anthropic $45 billion compute deal', seo_description: 'Anthropic agreed to a $45 billion compute deal.', answer_summary: 'Anthropic bought compute.', tags: ['Anthropic'],
+    seo_title: 'Anthropic $45 billion compute deal', seo_description: 'Anthropic agreed to a $45 billion deal for computing power, its largest so far. What the agreement covers, who supplies it and what it means.', answer_summary: 'Anthropic bought compute.', tags: ['Anthropic'],
     paragraphs: [
       { kind: 'fact', text: `Anthropic signed the deal on Oct. 21, 2026. ${filler(150)}`, sources: [0, 1] },
       { kind: 'heading', text: 'What the deal covers' },

@@ -44,6 +44,8 @@ function validateSiteArticle(job) {
   if (!a || typeof a !== 'object') return ['site_article must be an object'];
   for (const k of ['headline', 'dek', 'summary', 'seo_title', 'seo_description', 'answer_summary']) if (!str(a[k])) p.push(`site_article.${k} is required`);
   if (str(a.seo_description) && a.seo_description.length > 160) p.push(`site_article.seo_description is ${a.seo_description.length} characters (max 160)`);
+  // Bing flags short descriptions; a short one also wastes the space Google shows under the title.
+  if (str(a.seo_description) && a.seo_description.length < 120) p.push(`site_article.seo_description is ${a.seo_description.length} characters (write 140 to 160)`);
   if (str(a.headline) && a.headline.length > 110) p.push('site_article.headline is longer than 110 characters');
   const guide = a.kind === 'guide';
   const kinds = guide ? GUIDE_KINDS : ARTICLE_KINDS;

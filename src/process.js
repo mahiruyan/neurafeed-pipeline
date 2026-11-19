@@ -138,7 +138,9 @@ function summary(job) {
       } else if (cfg.mode === 'auto') {
         const d = autoDecision(job, cfg);
         setJobState(id, { status: d.ok ? 'approved' : 'skipped', by: d.reason });
-        if (tg.enabled()) {
+        // Website-only jobs the desk made itself (six guides a day plus insider news) post nothing,
+        // so they send no preview: Telegram stays for Instagram posts and things that need Mahir.
+        if (tg.enabled() && !(deskSiteOnly && d.ok)) {
           sent.push(...[].concat((await tg.sendAlbum(preview)) || []).map((x) => x.message_id));
           sent.push((await tg.sendMessage(`${d.ok ? '🕒 Queued for auto-post' : '⛔ Not auto-posted'} (${d.reason})\n\n${summary(job)}`))?.message_id);
         }
