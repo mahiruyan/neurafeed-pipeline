@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-19T14:45:46.937Z",
+  "updated_at": "2026-11-19T16:00:53.952Z",
   "jobs": [
     {
       "id": "2026-11-09-gemini-nano-banana-free-guide-v2",
@@ -381,19 +381,6 @@
       ]
     },
     {
-      "id": "2026-11-15-ai-glasses-claude-tax-exam-perfect-score-reel",
-      "status": "render_failed",
-      "posted_at": null,
-      "post_at": null,
-      "priority": 2,
-      "format": "reel",
-      "headline": "A YouTuber wore AI glasses linked to Claude and got a perfect score on Korea's tax accountant exam",
-      "from_link": false,
-      "link_id": null,
-      "error": "Command failed: yt-dlp --no-playlist --no-progress --restrict-filenames -f bv*[height<=1920][vcodec^=avc1]+ba[acodec^=mp4a]/bv*[height<=1920]+ba/b[height<=1920]/b --merge-output-format mp4 -o /home/runner/work/neurafeed-pipeline/neurafeed-pipeline/out/2026-11-15-ai-glasses-claude-tax-exam-perfect-score-reel/src/source.%(ext)s https://www.youtube.com/watch?v=KVghpmwqDHw\nWARNING: [youtube] No supported JavaScript runtime could be found. Only deno is enabled by default; to use another runtime add  --js-runtimes RUNTIME[:PATH]  to your command/config. YouTube extraction without a JS runtime has been deprecated, and some formats may be missing. See  https://github.com/yt-dlp/yt-dlp/wiki/EJS  for details on installing one\nWARNING: [youtube] No title found in player responses; falling back to title from initial data. Other metadata may also be missing\nERROR: [youtube] KVghpmwqDHw: Sign in to confirm you’re not a bot. This helps protect our community. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies\n",
-      "tg": []
-    },
-    {
       "id": "2026-11-15-chatgpt-vs-claude-guide",
       "status": "site_only",
       "posted_at": null,
@@ -594,27 +581,6 @@
         4070,
         4071,
         4071
-      ]
-    },
-    {
-      "id": "2026-11-15-how-to-use-elevenlabs-text-to-speech-guide",
-      "status": "site_only",
-      "posted_at": null,
-      "post_at": null,
-      "priority": 2,
-      "format": "utility",
-      "headline": "How to use ElevenLabs for free: text to speech, step by step",
-      "from_link": false,
-      "link_id": null,
-      "error": null,
-      "tg": [
-        4043,
-        4044,
-        4045,
-        4046,
-        4047,
-        4048,
-        4049
       ]
     },
     {
@@ -1360,7 +1326,7 @@
     },
     {
       "id": "2026-11-17-us-shuts-china-nvidia-backdoor",
-      "status": "pending",
+      "status": "expired",
       "posted_at": null,
       "post_at": null,
       "priority": 1,
