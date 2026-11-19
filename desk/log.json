@@ -1,146 +1,5 @@
 [
   {
-    "run_at": "2026-11-12T09:21:11.602Z",
-    "summary": "Link desk: made Mahir's single post from the Morning Brew link (Nvidia board weighing Jensen Huang's ouster), headline as he wrote it.",
-    "considered": [
-      {
-        "story": "Nvidia board meets to decide whether to oust Jensen Huang (Morning Brew post, link-2026-11-12-3505)",
-        "source": "https://x.com/morningbrew/status/2120649073585774729",
-        "decision": "queued",
-        "job_id": "2026-11-12-its-actually-happening-huang-single",
-        "priority": 1,
-        "reason": "Single post with Mahir's headline \"It's actually happening\", built on a library photo of Huang plus the Nvidia logo, facts from Reuters, CNBC and Semafor. Sensitive, needs his approval. Same story as the waiting desk carousel 2026-11-12-nvidia-board-preparing-to-oust-jensen-huang (its source is included, so the pipeline withdraws it). Morning Brew's own image (a joke resume) was not reused."
-      }
-    ],
-    "requests": []
-  },
-  {
-    "run_at": "2026-11-12T09:24:51.873Z",
-    "summary": "Link desk: could not open Mahir's X link link-2026-11-12-3507 (Indian newspaper front page single), so it was added to skipped with a request to send the picture directly.",
-    "considered": [
-      {
-        "story": "Mahir's single: 'An Indian newspaper front-page story today' (X post by @PicturesFoIder)",
-        "source": "https://x.com/PicturesFoIder/status/2120536711080149465",
-        "decision": "skipped",
-        "reason": "X cannot be opened from here, the bot saved no preview image, and searches did not identify which front page the post shows, so the picture and its story could not be seen or checked."
-      }
-    ],
-    "requests": []
-  },
-  {
-    "run_at": "2026-11-12T09:53:13.357Z",
-    "summary": "Link desk: queued Mahir's Reddit clip link-2026-11-12-3520 as a Reel for review.",
-    "considered": [
-      {
-        "story": "AI-generated Matrix-style parody clip from r/ChatGPT by u/Surferboiy",
-        "source": "https://www.reddit.com/r/ChatGPT/s/DYCuwjv7np",
-        "decision": "queued",
-        "job_id": "2026-11-12-absolute-cinematic-reality-reel",
-        "priority": 1,
-        "reason": "Mahir's link; hook word for word from his note, credit to u/Surferboiy, humorous caption that says the clip is AI-generated. Reddit could not be opened from here, so the description comes from the saved preview image. His note also said 'veya iki reels', which was unclear, so one Reel was made. 'hemen paylaş' kept with review on, so it posts as soon as he approves."
-      }
-    ],
-    "requests": []
-  },
-  {
-    "run_at": "2026-11-12T10:09:21.089Z",
-    "summary": "Link desk: queued Mahir's Threads link as a Reel with his title, for review.",
-    "considered": [
-      {
-        "story": "Mahir's Threads video link (AI made clip, source r/ChatGPT)",
-        "source": "https://www.threads.com/share/BAjsJNjbiV",
-        "decision": "queued",
-        "job_id": "2026-11-12-another-ai-masterpiece-reel",
-        "priority": 1,
-        "reason": "Threads could not be opened from here and the bot preview was empty, so the hook is Mahir's title word for word and the caption stays neutral; credited r/ChatGPT as he asked. The pipeline downloads the video; check in the preview that it shows what the caption says."
-      }
-    ],
-    "requests": []
-  },
-  {
-    "run_at": "2026-11-12T10:26:24.550Z",
-    "summary": "Link desk: queued Mahir's Jensen Huang Matrix parody Reel (link-2026-11-12-3546) for his review.",
-    "considered": [
-      {
-        "story": "AI-generated parody: Jensen Huang in The Matrix, Trump explains Chinese spies (by @arminn_ai)",
-        "source": "https://www.instagram.com/reel/DfohAkOR8ai/",
-        "decision": "queued",
-        "job_id": "2026-11-12-jensen-huang-matrix-parody-reel",
-        "priority": 1
-      }
-    ],
-    "requests": []
-  },
-  {
-    "run_at": "2026-11-12T11:00:59.140Z",
-    "summary": "Desk run (05:56 New York): queued the OpenAI Russian prank call story (sensitive, for Mahir's approval); no open links or requests; too early for today's guides.",
-    "considered": [
-      {
-        "story": "Russian pranksters Vovan and Lexus fooled three OpenAI national security officials posing as Ukraine's Rustem Umerov",
-        "source": "https://theintercept.com/2026/11/11/openai-ukraine-russia-prank-security/",
-        "decision": "queued",
-        "job_id": "2026-11-12-openai-officials-fooled-russian-prank",
-        "priority": 2,
-        "reason": "A person, politics and an embarrassing moment for OpenAI, confirmed by The Intercept, Business Today and Digit. Sensitive (politics, military), so it waits for Mahir. Set timely false because the 12 hour window would close before the first US slot. Image hosts could not be reached from here, so the pipeline download is the check."
-      },
-      {
-        "story": "Nvidia board preparing to oust Jensen Huang (WSJ) and the related spy scandal follow-ups",
-        "source": "https://www.wsj.com/business/nvidia-is-preparing-to-oust-nvidia-ceo-jensen-huang-30f421ad",
-        "decision": "covered",
-        "reason": "Mahir posted it himself today (2026-11-12-its-actually-happening-huang-single-v2 and the front page single); the desk version was withdrawn."
-      },
-      {
-        "story": "OpenAI model proved part of the Yang-Mills Millennium problem",
-        "source": "https://officechai.com/ai/what-is-the-yang-mills-theory-openai-claims-to-have-proven-and-what-it-means-for-physics/",
-        "decision": "skipped",
-        "reason": "Announced October 27 and already covered with 2026-10-27-openai-ai-disproves-exponential-time-hypothesis; no new fact found that I could read."
-      },
-      {
-        "story": "TSMC board approves up to $1 billion in Anthropic and OpenAI investments",
-        "source": "https://www.macrumors.com/2026/11/11/tsmc-approves-ai-investment/",
-        "decision": "skipped",
-        "reason": "Two days old, an investor detail of the Anthropic IPO already covered on November 10, little reader interest."
-      },
-      {
-        "story": "OpenAI names Aleph exclusive ChatGPT Ads reseller in 44 markets",
-        "decision": "skipped",
-        "reason": "Ad sales plumbing; the ads expansion itself is months old."
-      },
-      {
-        "story": "Claude Code auto mode: humans caught only 14% of dangerous commands (Lydia Hallie)",
-        "source": "https://finance.biggo.com/news/38f9e32eae85e487",
-        "decision": "skipped",
-        "reason": "The numbers date from August, not new."
-      },
-      {
-        "story": "ChatGPT Finances bank account feature on Mac",
-        "decision": "skipped",
-        "reason": "The finance feature launched in May; the Mac version is a small update."
-      },
-      {
-        "story": "Gemini on Apple CarPlay",
-        "decision": "covered",
-        "reason": "Already queued as 2026-11-12-gemini-app-apple-carplay."
-      },
-      {
-        "story": "Georgia residents sue OpenAI for racketeering",
-        "decision": "covered",
-        "reason": "Already queued as 2026-11-12-openai-georgia-racketeering-lawsuit."
-      },
-      {
-        "story": "13-year-old Gemini school laptop lawsuit",
-        "decision": "covered",
-        "reason": "Covered on November 9 as 2026-11-09-gemini-school-chromebook-teen-lawsuit."
-      },
-      {
-        "story": "Mahir's Reels from links today (absolute cinematic, AI masterpiece, Jensen Matrix parody)",
-        "decision": "covered",
-        "reason": "Jobs exist but their state is render_failed; this is a pipeline download problem, not a desk one, so Mahir may need to check them."
-      }
-    ],
-    "requests": []
-  },
-  {
     "run_at": "2026-11-12T13:00:38.647Z",
     "summary": "Desk run (08:00 New York): queued the Anthropic Mythos ports Claude to AMD in 3 days story (the last desk slot today, 8 of 8) and today's first site-only guide (Google Flow); no open links or requests.",
     "considered": [
@@ -5375,6 +5234,69 @@
         "story": "Mahir's old inbox links (link-2026-10-13-224, link-2026-10-14-435, link-2026-10-20-1074-2, link-2026-10-21-w47d4efec)",
         "decision": "skipped",
         "reason": "Already in inbox/skipped.json from earlier runs; no new links or open requests."
+      }
+    ],
+    "requests": []
+  },
+  {
+    "run_at": "2026-11-19T11:07:40.818Z",
+    "summary": "Morning run (06:00 New York, Nov 19): no open links or requests; Nov 19 already has its 2 Instagram carousels, so queued the day's first Reel (Meta's AI chief posting an AI video of Sam Altman as Meta's mascot) and a site-only article on the Doritos AI gun alert lawsuit.",
+    "considered": [
+      {
+        "story": "Alexandr Wang posts an AI-generated video of Sam Altman dressed as Muse's mascot Jolly (reported by The Verge)",
+        "source": "https://www.instagram.com/reel/DffPoRdhozI/",
+        "decision": "queued",
+        "job_id": "2026-11-19-wang-altman-mascot-ai-video-reel",
+        "priority": 2
+      },
+      {
+        "story": "Four Kenwood High students sue Omnilert, Baltimore County schools and police after an AI alert mistook a Doritos bag for a gun",
+        "source": "https://www.yahoo.com/news/us/articles/baltimore-students-sue-over-ai-060032732.html",
+        "decision": "queued",
+        "job_id": "2026-11-19-ai-mistook-doritos-for-gun-lawsuit",
+        "priority": 2,
+        "reason": "Strong Instagram story (lawsuit, strange AI behavior), but today's 2 carousel slots are used, so it is site-only; Mahir can ask for an Instagram version."
+      },
+      {
+        "story": "Anthropic IPO first trading day on Nasdaq (ANT)",
+        "decision": "skipped",
+        "reason": "Trading starts after the 9:30 open; a daytime run should cover the debut as priority 1, ideally as a Reel of the opening bell if a clip appears on X."
+      },
+      {
+        "story": "Claude cracks down on abusive users (Tom's Guide)",
+        "decision": "covered",
+        "reason": "Anthropic's cruelty ban was covered in 2026-10-14-rude-prompts-chatgpt-claude-rule."
+      },
+      {
+        "story": "Coalition says 'Anthropic is not a safe AI company' ahead of IPO (Business Wire)",
+        "source": "https://www.businesswire.com/news/home/20261118974464/en/",
+        "decision": "skipped",
+        "reason": "A press release from advocacy groups with no independent news coverage found."
+      },
+      {
+        "story": "OpenAI cuts GPT-6.2 Astra API prices 20 percent (BetaNews)",
+        "decision": "skipped",
+        "reason": "Developer pricing news, only one secondary source seen; low interest beyond insiders."
+      },
+      {
+        "story": "AMD uses OpenAI models for its next GPU design",
+        "decision": "skipped",
+        "reason": "OpenAI's chip design page could not be opened in earlier runs; no second source read."
+      },
+      {
+        "story": "Gemini 4 Neon reviews and pricing posts",
+        "decision": "covered",
+        "reason": "Already covered as 2026-11-18-gemini-4-neon-fourth-model."
+      },
+      {
+        "story": "Child leads a humanoid robot at a Chinese robot carnival (viral clip)",
+        "decision": "skipped",
+        "reason": "Only a trending-news page found, no X or company video to download."
+      },
+      {
+        "story": "Website guides",
+        "decision": "skipped",
+        "reason": "Run started before 07:00 New York time, when daily guides begin."
       }
     ],
     "requests": []
