@@ -48,6 +48,35 @@ function postAtFrom(note, now = new Date()) {
   return new Date(target).toISOString();
 }
 
+// Site watchdog (Mahir, 2026-11-19): the database is over its free quota and may be cut off at any
+// time. Every 10 minutes open one list page and one article (the article needs the database).
+// Two failed checks in a row: one Telegram message. One more message when the site is back.
+const WATCH_URLS = ['https://neurafeedai.com/latest', 'https://neurafeedai.com/news/jensen-huang-resigns-as-nvidia-ceo-colette-kress-named-interim-ceo-8f413d'];
+async function siteWatch(env) {
+  if (await env.KV.get('site_watch_at')) return;
+  await env.KV.put('site_watch_at', new Date().toISOString(), { expirationTtl: 9 * 60 });
+  const bad = [];
+  for (const u of WATCH_URLS) {
+    try {
+      const r = await fetch(u, { headers: { 'User-Agent': 'NeuraFeedWatch/1.0', 'Cache-Control': 'no-cache' }, signal: AbortSignal.timeout(25000) });
+      const text = r.ok ? await r.text() : '';
+      if (!r.ok || (text.match(/<p[ >]/g) || []).length < 5) bad.push(`${new URL(u).pathname.slice(0, 40)} → ${r.status}`);
+    } catch (e) { bad.push(`${new URL(u).pathname.slice(0, 40)} → ${e.name === 'TimeoutError' ? 'zaman aşımı' : 'bağlantı hatası'}`); }
+  }
+  const down = await env.KV.get('site_down');
+  const fails = Number(await env.KV.get('site_watch_fails') || 0);
+  if (bad.length) {
+    await env.KV.put('site_watch_fails', String(fails + 1), { expirationTtl: 3600 });
+    if (fails + 1 >= 2 && !down) {
+      await env.KV.put('site_down', new Date().toISOString());
+      await send(env, `🔴 Site açılmıyor (20 dakikadır):\n${bad.join('\n')}\n\nBüyük ihtimalle Supabase kotası yüzünden veritabanı kesildi. Supabase → Usage sayfasına bak; "Upgrade plan" ile hemen açılır.`);
+    }
+  } else {
+    await env.KV.delete('site_watch_fails');
+    if (down) { await env.KV.delete('site_down'); await send(env, `🟢 Site geri geldi (${down.slice(11, 16)} UTC'den beri kapalıydı).`); }
+  }
+}
+
 export default {
   // Every 5 minutes: if a post Mahir scheduled is due, ask GitHub to publish it now (any hour).
   async scheduled(event, env, ctx) {
@@ -57,6 +86,7 @@ export default {
     else {
       ctx.waitUntil(dueCheck(env));
       ctx.waitUntil(siteDraftCheck(env).catch((e) => console.log(`site drafts: ${e.message}`)));
+      ctx.waitUntil(siteWatch(env).catch((e) => console.log(`site watch: ${e.message}`)));
       // GitHub runs its own hourly schedule late or not at all (3 runs in 22 hours on 2026-11-11),
       // so the site's desk sync (new drafts, guides published) is started from here once an hour.
       ctx.waitUntil((async () => {
