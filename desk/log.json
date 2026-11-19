@@ -1,198 +1,5 @@
 [
   {
-    "run_at": "2026-11-12T13:00:38.647Z",
-    "summary": "Desk run (08:00 New York): queued the Anthropic Mythos ports Claude to AMD in 3 days story (the last desk slot today, 8 of 8) and today's first site-only guide (Google Flow); no open links or requests.",
-    "considered": [
-      {
-        "story": "Anthropic says Mythos got Claude running on AMD MI355X GPUs in about 3 days, a job that took 6 to 12 months",
-        "source": "https://the-decoder.com/anthropic-says-ai-is-eroding-nvidias-cuda-lead-cutting-an-amd-chip-switch-from-months-to-three-days/",
-        "decision": "queued",
-        "job_id": "2026-11-12-claude-ported-itself-to-amd-3-days",
-        "priority": 2,
-        "reason": "Anthropic plus Nvidia's shrinking moat in Nvidia's worst week; confirmed by The Decoder and OfficeChai. Over 12 hours old, so timely false. Claim is from Anthropic's IPO deck and not independently verified, which the slides and article say. Image hosts could not be reached from here, so the pipeline download is the check."
-      },
-      {
-        "story": "Website guide: How to use Google Flow (first line of the tool library in guides/plan.md)",
-        "source": "https://support.google.com/flow/answer/16526234?hl=en",
-        "decision": "queued",
-        "job_id": "2026-11-12-how-to-use-google-flow-guide",
-        "priority": 2,
-        "reason": "First guide of the day, site only; built from Google's Flow help center and blog plus Fello AI."
-      },
-      {
-        "story": "AWS releases a free local emulator for 200+ services built entirely by AI agents",
-        "source": "https://www.geekwire.com/2026/aws-gives-developers-a-free-local-stand-in-for-its-cloud-built-from-scratch-by-ai-agents",
-        "decision": "skipped",
-        "reason": "Today already has 8 desk jobs with the AMD story; developer appeal and close in theme to the Anthropic AI-writes-code story."
-      },
-      {
-        "story": "Survey: 14% of 911 dispatchers targeted by AI-generated voices (NPR)",
-        "decision": "skipped",
-        "reason": "Daily cap reached; could be a strong story for tomorrow if new reporting appears."
-      },
-      {
-        "story": "Gemini Decisions API",
-        "source": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-decisions-api/",
-        "decision": "skipped",
-        "reason": "Developer API with little appeal for a general audience."
-      },
-      {
-        "story": "Google engineer's AI agents found an unmapped Maya site (Hacker News)",
-        "source": "https://pietromiotti.com/latest/maya-site",
-        "decision": "skipped",
-        "reason": "Search again found no independent second source, only the personal blog."
-      },
-      {
-        "story": "Google DeepMind AlphaGenome 2",
-        "decision": "skipped",
-        "reason": "Research model, little general interest, and the day's cap is reached."
-      },
-      {
-        "story": "J. Crew launches an AI style advisor on Anthropic models (Fortune)",
-        "decision": "skipped",
-        "reason": "Small retail feature; cap reached."
-      },
-      {
-        "story": "Nvidia board preparing to oust Jensen Huang and related follow-ups",
-        "decision": "covered",
-        "reason": "Mahir posted it himself today (its-actually-happening and front page singles)."
-      },
-      {
-        "story": "United Airlines bans AI agents from booking",
-        "decision": "covered",
-        "reason": "Already queued as 2026-11-12-united-airlines-bans-ai-agents-booking."
-      }
-    ],
-    "requests": []
-  },
-  {
-    "run_at": "2026-11-12T14:58:36.322Z",
-    "summary": "Desk run (10:00 New York): today's 8 desk news slots are already full, so no new news job; queued today's second site-only guide (How to use Lovable). No open links or requests.",
-    "considered": [
-      {
-        "story": "Website guide: How to use Lovable (Tier 1 line in guides/plan.md)",
-        "source": "https://docs.lovable.dev/introduction/getting-started",
-        "decision": "queued",
-        "job_id": "2026-11-12-how-to-use-lovable-guide",
-        "priority": 2,
-        "reason": "Second guide of the day, site only; built from Lovable's docs (quick start, plans and credits, subscription plans, prompting) plus an AppLaunchpad review and TechCrunch. Images are AppLaunchpad screenshots of Lovable, unchecked from here because image hosts are blocked, so the pipeline download is the check."
-      },
-      {
-        "story": "Website guide: How to use ChatGPT Atlas (first open Tier 1 line)",
-        "source": "https://en.wikipedia.org/wiki/ChatGPT_Atlas",
-        "decision": "skipped",
-        "reason": "OpenAI shut Atlas down on August 9, 2026, so a how-to guide would be wrong; the Atlas for Windows line should be dropped from the plan too."
-      },
-      {
-        "story": "Website guide: How to use Meta AI in WhatsApp",
-        "source": "https://www.whatsapp.com/meta-ai/",
-        "decision": "skipped",
-        "reason": "WhatsApp's own help pages could not be read from here and the readable sources are from 2024 and 2025, too old to describe today's menus."
-      },
-      {
-        "story": "AWS releases a free local emulator for 200+ services written by AI agents",
-        "source": "https://www.geekwire.com/2026/aws-gives-developers-a-free-local-stand-in-for-its-cloud-built-from-scratch-by-ai-agents",
-        "decision": "skipped",
-        "reason": "Daily cap of 8 desk jobs already reached; developer appeal only."
-      },
-      {
-        "story": "Swatters use AI voices to fool 911 dispatchers (NPR survey)",
-        "decision": "skipped",
-        "reason": "Daily cap reached; a candidate for tomorrow if there is new reporting."
-      },
-      {
-        "story": "AMD launches 6th Gen EPYC Venice and disputes Nvidia's agentic CPU claims",
-        "decision": "skipped",
-        "reason": "Chip spec news for insiders, and the cap is reached."
-      },
-      {
-        "story": "Google Cloud launches Gemini for healthcare agents",
-        "decision": "skipped",
-        "reason": "Enterprise product with little reader interest; cap reached."
-      },
-      {
-        "story": "J. Crew AI style advisor built on Claude",
-        "decision": "skipped",
-        "reason": "Small retail feature; cap reached."
-      },
-      {
-        "story": "Anthropic says Mythos ported Claude to AMD in 3 days",
-        "decision": "covered",
-        "reason": "Already posted as 2026-11-12-claude-ported-itself-to-amd-3-days."
-      },
-      {
-        "story": "United Airlines blocks AI agents from booking",
-        "decision": "covered",
-        "reason": "Already queued as 2026-11-12-united-airlines-bans-ai-agents-booking."
-      },
-      {
-        "story": "Nvidia board and Jensen Huang follow-ups",
-        "decision": "covered",
-        "reason": "Mahir posted this himself today; the desk versions were withdrawn or rejected."
-      }
-    ],
-    "requests": []
-  },
-  {
-    "run_at": "2026-11-12T17:03:28.049Z",
-    "summary": "Desk run (12:00 New York): queued Google's Gemini glasses preorder story (priority 1, today's 8th live desk post) and today's third site-only guide (Wispr Flow). No open links or requests.",
-    "considered": [
-      {
-        "story": "Google opens preorders for Gemini Intelligent Eyewear with Warby Parker and Gentle Monster, from $395, shipping December 10",
-        "source": "https://9to5google.com/2026/11/12/google-intelligent-eyewear-glasses/",
-        "decision": "queued",
-        "job_id": "2026-11-12-google-gemini-glasses-preorder-395",
-        "priority": 1,
-        "reason": "Major Google consumer launch with a price everyone understands, confirmed by 9to5Google, Unite.AI and Android Headlines. Today had 7 live desk posts (the Georgia lawsuit expired and two Huang versions were rejected or skipped), so this fills the 8th. Image hosts could not be reached from here, so the pipeline download is the check."
-      },
-      {
-        "story": "Website guide: How to use Wispr Flow (next Tool library line in guides/plan.md)",
-        "source": "https://docs.wisprflow.ai/articles/2772472373-what-is-flow",
-        "decision": "queued",
-        "job_id": "2026-11-12-how-to-use-wispr-flow-guide",
-        "priority": 2,
-        "reason": "Third guide of the day, site only; built from Wispr's help center (setup, plans, Dictionary, Command Mode) plus a Spokenly review (a rival app, said so in the text), TechCrunch and SiliconANGLE."
-      },
-      {
-        "story": "Claude Fable 5.2 edges Gemini 4 Carbon on Google's benchmark at 6x the cost (PPC Land)",
-        "decision": "skipped",
-        "reason": "Benchmark detail for insiders; the day's desk slots are now full."
-      },
-      {
-        "story": "UK rejects EU AI rules (Bloomberg)",
-        "source": "https://bloomberg.com/news/articles/2026-11-12/britain-s-split-with-the-eu-on-ai-makes-it-even-harder-to-roll-back-brexit",
-        "decision": "skipped",
-        "reason": "UK policy story with little US reader interest; cap reached."
-      },
-      {
-        "story": "Adobe and Google bring Gemini to Photoshop and PDF editing to Gmail",
-        "decision": "skipped",
-        "reason": "Cap reached with the glasses story, which is the stronger Google consumer item today."
-      },
-      {
-        "story": "Google Gemini Decisions API",
-        "decision": "skipped",
-        "reason": "Developer API, little general appeal."
-      },
-      {
-        "story": "Swatters use AI voices to fool 911 dispatchers (NPR survey)",
-        "decision": "skipped",
-        "reason": "Daily cap reached; candidate for tomorrow if there is new reporting."
-      },
-      {
-        "story": "Jensen Huang resigns as Nvidia CEO and follow-ups",
-        "decision": "covered",
-        "reason": "Mahir posted it himself today; desk versions were rejected or skipped and a site-only article exists."
-      },
-      {
-        "story": "Mahir's old inbox links (link-2026-10-13-224, link-2026-10-14-435, link-2026-10-20-1074-2, link-2026-10-21-w47d4efec)",
-        "decision": "covered",
-        "reason": "Already in inbox/skipped.json from earlier runs; nothing new to do."
-      }
-    ],
-    "requests": []
-  },
-  {
     "run_at": "2026-11-12T17:18:24.012Z",
     "summary": "Link desk: queued Mahir's Reel link-2026-11-12-3634 (AI-made Jensen Huang 'villain arc' short film by @rize.imagines) for review.",
     "considered": [
@@ -5297,6 +5104,77 @@
         "story": "Website guides",
         "decision": "skipped",
         "reason": "Run started before 07:00 New York time, when daily guides begin."
+      }
+    ],
+    "requests": []
+  },
+  {
+    "run_at": "2026-11-19T17:10:08.070Z",
+    "summary": "Midday run (12:00 New York, Nov 19): no open links or requests; queued Anthropic's Nasdaq debut ($111.50 first trade, 34% above the IPO price) as a priority 1 carousel with its website article, plus the day's first site-only guide (How to use Manus). No Reel video passed the filter.",
+    "considered": [
+      {
+        "story": "Anthropic opens at $111.50 on Nasdaq, about 34% above its $83 IPO price; Amodei siblings ring the bell",
+        "source": "https://www.koreatimes.co.kr/world/20261120/anthropic-set-to-be-worth-19-trillion-in-strong-nasdaq-debut",
+        "decision": "queued",
+        "job_id": "2026-11-19-anthropic-opens-111-nasdaq",
+        "priority": 1,
+        "reason": "Story of the day (money, priority 1). It is a third Instagram carousel for Nov 19 under the priority 1 exception; the opening price comes from the CNBC, CNN and Yahoo headlines because their live blogs could not be opened, with Reuters (via The Korea Times) confirming the $110.50 indication and the $2 trillion track."
+      },
+      {
+        "story": "Guide: How to use Manus (and how credits work)",
+        "source": "https://manus.im/help/credits",
+        "decision": "queued",
+        "job_id": "2026-11-19-how-to-use-manus-guide",
+        "priority": 2,
+        "reason": "First guide of Nov 19, from Manus docs and help center plus a Work Management review."
+      },
+      {
+        "story": "Guide: How to use ChatGPT agent mode",
+        "source": "https://help.openai.com/en/articles/11752874",
+        "decision": "skipped",
+        "reason": "OpenAI's help center still could not be opened from this run."
+      },
+      {
+        "story": "Guide: How to use Freepik AI image generator",
+        "decision": "skipped",
+        "reason": "Freepik's AI docs now redirect to magnific.com, which could not be opened, so the guide could mislead; left for a later run."
+      },
+      {
+        "story": "Anthropic opening bell video (Nasdaq, CNBC, Yahoo clips)",
+        "decision": "skipped",
+        "reason": "Official ceremony footage with no surprising shot, and the clips found were on YouTube or news sites, not X; the carousel covers the moment."
+      },
+      {
+        "story": "Nvidia stops shipping advanced AI chips to China (The Verge)",
+        "source": "https://www.theverge.com/tech/1036445/nvidia-h200-ai-chips-china-stop-selling",
+        "decision": "covered",
+        "reason": "Close to 2026-11-17-us-shuts-china-nvidia-backdoor; no new angle for a normal user."
+      },
+      {
+        "story": "Citi says customers using AI agents are on their own if hacked (TechCrunch)",
+        "source": "https://techcrunch.com/2026/11/18/more-banks-says-customers-using-ai-agents-are-on-their-own-even-if-they-get-hacked/",
+        "decision": "skipped",
+        "reason": "Overlaps with the Arizona rogue agents in banks article queued this morning; not read in full."
+      },
+      {
+        "story": "OpenAI uses its models to redesign chip parts (OpenAI blog)",
+        "decision": "skipped",
+        "reason": "Insider engineering news; OpenAI's page could not be opened in earlier runs."
+      },
+      {
+        "story": "Google opens Genie 4 to AI Ultra subscribers",
+        "decision": "skipped",
+        "reason": "No user clip on X found yet that passes the Reel filter; product news for insiders."
+      },
+      {
+        "story": "Paris Hilton and AOC push the DEFIANCE Act on sexual deepfakes (CNBC)",
+        "decision": "skipped",
+        "reason": "Not read in full this run; politics and sensitive, could fit a later run as a site-only article."
+      },
+      {
+        "story": "AI agents ask better questions than KPMG accountants in audit trial (Hacker News)",
+        "decision": "skipped",
+        "reason": "Single trade-press source, no second source read."
       }
     ],
     "requests": []

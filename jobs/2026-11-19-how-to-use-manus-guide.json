@@ -1,0 +1,227 @@
+{
+  "id": "2026-11-19-how-to-use-manus-guide",
+  "format": "utility",
+  "site_only": true,
+  "created_at": "2026-11-19T17:30:00Z",
+  "story_time": "2026-11-19T17:30:00Z",
+  "timely": false,
+  "sensitive": false,
+  "priority": 2,
+  "sources": [
+    {
+      "name": "Manus Docs: Getting started",
+      "url": "https://manus.im/docs/introduction/quickstart"
+    },
+    {
+      "name": "Manus Help: What are credits?",
+      "url": "https://manus.im/help/credits"
+    },
+    {
+      "name": "Manus Help Center: Rules for credits consumption",
+      "url": "https://help.manus.im/en/articles/11711097-what-are-the-rules-for-credits-consumption-and-how-can-i-obtain-them"
+    },
+    {
+      "name": "Manus Help Center: Checking credit cost before a task",
+      "url": "https://help.manus.im/en/articles/13185575-is-there-a-way-to-check-how-many-credits-a-task-will-cost-before-i-begin"
+    },
+    {
+      "name": "Manus Docs: Plans",
+      "url": "https://manus.im/docs/introduction/plans"
+    },
+    {
+      "name": "Work Management: Manus review",
+      "url": "https://work-management.org/website/manus-review/"
+    }
+  ],
+  "caption": "Manus is an AI agent that works on its own computer in the cloud: it researches, builds slide decks and websites, and runs tasks on a schedule.\nEvery task costs credits, and Manus cannot tell you the price before it starts.\nHere is how to run your first task and keep the credit bill down.\n\nWould you pay for an AI agent that bills by the task?\n\nFollow @neurafeed.ai for daily AI news.\n\nSource: Manus Help Center · Photo: Manus",
+  "threads_text": "Manus runs your task on its own cloud computer and bills you in credits. The catch: it cannot tell you what a task will cost before it starts, and any price it quotes in chat should not be trusted. Would you use an AI agent with a bill you only see afterward?",
+  "slides": [
+    {
+      "kind": "cover",
+      "headline": "How to use *Manus*, and how its credits really work",
+      "image": {
+        "url": "https://files.manuscdn.com/webapp/media/ogBanner.png",
+        "credit": "Manus"
+      },
+      "pos": "center center"
+    },
+    {
+      "kind": "card",
+      "heading": "1. Pick a *mode*",
+      "paras": [
+        "Sign in at manus.im and choose a mode at the top of the task: Manus 2.0 Max for complex work, Manus 2.0 for most tasks, Lite for small edits.",
+        "Then describe the goal, the scope and the format you want back."
+      ],
+      "image": {
+        "url": "https://work-management.org/wp-content/uploads/2026/04/manus_research-1024x576.webp",
+        "credit": "Work Management",
+        "fit": "contain"
+      }
+    },
+    {
+      "kind": "prompt",
+      "heading": "2. Ask for *one clear result*",
+      "paras": [
+        "Specific requests use fewer credits, Manus says.",
+        "Topic, scope and output in one message, so there is less back and forth."
+      ],
+      "prompt": "Research the 5 most popular project management apps for small teams. Compare price, free plan limits and integrations in one table, then give me a 3 slide deck with your pick."
+    },
+    {
+      "kind": "card",
+      "heading": "3. Watch your *credits*",
+      "paras": [
+        "Credits are spent only while a task runs. Manus cannot estimate the cost in advance.",
+        {
+          "t": "Split big jobs into smaller tasks: long chats carry more context and cost more.",
+          "strong": true
+        }
+      ],
+      "image": {
+        "url": "https://work-management.org/wp-content/uploads/2026/04/manus_ai_slides_templates-1024x545.webp",
+        "credit": "Work Management",
+        "fit": "contain"
+      }
+    },
+    {
+      "kind": "cta",
+      "hook": "Follow for guides that tell you what an AI tool costs before you find out the hard way."
+    }
+  ],
+  "site_article": {
+    "kind": "guide",
+    "headline": "How to use Manus: your first task, the modes, and how credits work",
+    "dek": "Manus is an AI agent that does the work on its own cloud computer. Here is how to start a task, pick a mode, and keep the credit bill under control.",
+    "summary": "Manus runs tasks in a virtual computer with a browser and file system, and every task is paid for in credits that depend on how complex it is. Manus cannot estimate a task's cost in advance, so clear, specific, smaller tasks are the main way to save credits.",
+    "seo_title": "How to use Manus (and how Manus credits work)",
+    "seo_description": "How to use Manus AI: sign in, pick a mode, write a task that works, and understand how credits are spent, refreshed and refunded, with tips to use fewer.",
+    "answer_summary": "Sign in at manus.im, choose a mode such as Manus 2.0 or Manus 2.0 Lite, and describe the goal, scope and output format. Manus plans and runs the steps on its own cloud computer, and each task uses credits based on its complexity.",
+    "tags": [
+      "Manus",
+      "AI agents",
+      "Manus credits",
+      "Guides"
+    ],
+    "hero_alt": "Manus promotional banner with the Manus name.",
+    "paragraphs": [
+      {
+        "kind": "fact",
+        "text": "Manus is an AI agent: you give it a goal, and it plans the steps and carries them out in a virtual computer with internet access and a file system. The finished work, such as a report, a slide deck or a website, shows up in the task. You can use it on the web at manus.im, in the Manus Studio desktop app for macOS and Windows, in a mobile app, or by sending a task by email, according to the Manus documentation. Manus joined Meta in late 2025 and still runs its own subscription product, according to a review by Work Management.",
+        "sources": [
+          0,
+          5
+        ]
+      },
+      {
+        "kind": "fact",
+        "text": "The part that confuses most new users is the bill. Every task uses credits, the amount depends on how complex the task is, and Manus says it cannot tell you the cost before you start. This guide covers how to run a first task and how to keep credit use down.",
+        "sources": [
+          1,
+          3
+        ]
+      },
+      {
+        "kind": "heading",
+        "text": "How to use Manus: your first task"
+      },
+      {
+        "kind": "step",
+        "title": "1. Sign in",
+        "text": "Go to manus.im and sign in. If you want Manus to work with files and apps on your own computer, download Manus Studio from manus.im/desktop and sign in with the same account. Web tasks run in Manus Cloud."
+      },
+      {
+        "kind": "step",
+        "title": "2. Choose a mode",
+        "text": "At the top of the task, pick a mode. Manus 2.0 Max is for complex tasks, Manus 2.0 is for most tasks, and Manus 2.0 Lite is for everyday tasks and small edits. Manus Flex uses your own model API key instead."
+      },
+      {
+        "kind": "step",
+        "title": "3. Describe the goal",
+        "text": "Write the task in plain language and include three things: the topic, the scope and the output format. \"Research X\" is vague. \"Compare five options on price and features in one table\" tells Manus when it is done."
+      },
+      {
+        "kind": "prompt",
+        "title": "Prompt 1: A research task with a clear output",
+        "text": "Research the 5 most popular project management apps for small teams. Compare price, free plan limits and integrations in one table. Then make a 3 slide deck with your recommendation and the reasons for it."
+      },
+      {
+        "kind": "step",
+        "title": "4. Let it work, then refine",
+        "text": "Manus plans the steps and runs them. When it is done, send a follow-up message in the same task to change the result. If you want to try a different direction without losing the original, create a branch from any Manus reply."
+      },
+      {
+        "kind": "prompt",
+        "title": "Prompt 2: A small website",
+        "text": "Build a one page website for [name of event] on [date] at [place]. Include a short description, a schedule with [number] items, and a simple RSVP section. Keep the design plain and readable on a phone."
+      },
+      {
+        "kind": "tip",
+        "text": "Use Projects for work you repeat. A project stores shared instructions and files, and every new task in it starts with that context. Click the + next to Projects in the sidebar to make one."
+      },
+      {
+        "kind": "fact",
+        "text": "Manus can also read from and act in other apps through Connectors, such as Gmail or Notion. Connect your account under Connectors, then mention the app in your prompt. Automations run tasks on a schedule or when something happens in a connected app.",
+        "sources": [
+          0
+        ]
+      },
+      {
+        "kind": "heading",
+        "text": "How Manus credits work"
+      },
+      {
+        "kind": "fact",
+        "text": "Credits are Manus's unit of usage. They pay for the language model's tokens, the virtual machine that handles files, browsing and code, and any third-party data services a task calls. Credits are only used while a task is actively running; finished tasks and the files or sites they produced cost nothing to keep. Manus gives examples: a sports scoring chart that took 15 minutes used 200 credits, a wedding invitation page that took 25 minutes used 360, and a complex web app that took 80 minutes used 900.",
+        "sources": [
+          1,
+          2
+        ]
+      },
+      {
+        "kind": "fact",
+        "text": "The plans are Free, Pro and Team. Monthly plan credits refresh on the same date each month, based on when your subscription started, and unused monthly credits do not roll over. The help center gives the example of a $20 Pro membership started on January 1 that receives 4,000 monthly credits to use before February 1. Free users get daily refresh credits that work only with Manus 2.0 Lite, with a monthly cap of 1,500 daily credits.",
+        "sources": [
+          2,
+          4
+        ]
+      },
+      {
+        "kind": "fact",
+        "text": "Manus spends credits in a fixed order: event credits first, then daily, monthly, add-on and free credits. Free credits never expire. Add-on credits can be bought at any time but only work with an active paid subscription. If a task fails because of a technical problem on Manus's side, the credits it used are refunded in full.",
+        "sources": [
+          1,
+          2,
+          4
+        ]
+      },
+      {
+        "kind": "fact",
+        "text": "Two details are worth knowing. A balance can briefly go negative, because each action is charged at the start of the next one, and you cannot start new tasks until it is back above zero. And Manus cannot estimate a task's cost before it begins: the help center says that if Manus quotes a credit figure in a conversation, treat it as a hallucination, not a promise.",
+        "sources": [
+          2,
+          3
+        ]
+      },
+      {
+        "kind": "heading",
+        "text": "How to use fewer credits"
+      },
+      {
+        "kind": "tip",
+        "text": "Split big jobs into smaller tasks. Long conversations carry more context, and that raises the cost of every step."
+      },
+      {
+        "kind": "tip",
+        "text": "Be precise in the first message. Clear requirements cut down on clarifying questions, and each round of back and forth uses credits. Combine related requests in one task instead of several."
+      },
+      {
+        "kind": "tip",
+        "text": "Check the intermediate results on long, multi-step tasks, so you can stop a task that is heading the wrong way before it burns through more credits."
+      },
+      {
+        "kind": "analysis",
+        "text": "Manus is good at work with many steps that would take you an afternoon: research across many sources, a slide deck, a simple site. It is weaker when you need a predictable price, because you only learn the cost afterward, and independent testers have reported failed workflows, so important results still need a human check. Start with one small, specific task on a free account and look at how many credits it used before giving it anything big."
+      }
+    ]
+  }
+}
