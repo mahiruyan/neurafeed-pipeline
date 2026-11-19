@@ -1,135 +1,5 @@
 [
   {
-    "run_at": "2026-11-12T05:09:03.139Z",
-    "summary": "Midnight run (23:55 New York): no open links or requests; queued two Nov 12 morning stories, United's ban on AI booking agents and Gemini on Apple CarPlay.",
-    "considered": [
-      {
-        "story": "United Airlines bans unauthorized AI agents from booking flights",
-        "source": "https://www.cbsnews.com/news/united-airlines-bans-ai-agents-booking-flights/",
-        "decision": "queued",
-        "job_id": "2026-11-12-united-airlines-bans-ai-agents-booking",
-        "priority": 2,
-        "reason": "Everyone story about AI agents and travel, read in CBS News and Air Data News. Set timely false because the first window is 07:00 and a 12 hour limit would expire it."
-      },
-      {
-        "story": "Google rolls out the Gemini app on Apple CarPlay",
-        "source": "https://9to5google.com/2026/11/11/gemini-app-carplay/",
-        "decision": "queued",
-        "job_id": "2026-11-12-gemini-app-apple-carplay",
-        "priority": 2,
-        "reason": "Product change that hits normal iPhone users, confirmed by 9to5Google, Engadget, MacRumors and Digital Trends. Timely false for the same window reason."
-      },
-      {
-        "story": "Nvidia board weighs ousting Jensen Huang",
-        "source": "https://abc7news.com/post/nvidia-board-preparing-oust-ceo-jensen-huang-2nd-affair-subordinate-revealed-reports-say/20034548/",
-        "decision": "covered",
-        "reason": "Already queued as 2026-11-12-nvidia-board-preparing-to-oust-jensen-huang; no board decision reported as of 01:55 UTC, so no -v2 needed yet."
-      },
-      {
-        "story": "Jensen Huang reportedly had a relationship with an Nvidia executive, NYT",
-        "decision": "covered",
-        "reason": "Part of the Nvidia ouster job."
-      },
-      {
-        "story": "Anthropic sets aside up to 20% of its IPO for retail investors",
-        "decision": "skipped",
-        "reason": "Third Anthropic IPO post this week would be too much; kept as a backup for later today."
-      },
-      {
-        "story": "Google engineer's AI agents found an unmapped Maya site",
-        "source": "https://pietromiotti.com/latest/maya-site",
-        "decision": "skipped",
-        "reason": "Still only a personal blog with no independent second source."
-      },
-      {
-        "story": "Retirement savings are fueling the AI bubble",
-        "source": "https://lpeproject.org/blog/your-retirement-savings-are-fueling-the-ai-bubble/",
-        "decision": "skipped",
-        "reason": "Opinion blog post, not news."
-      },
-      {
-        "story": "Latham earmarks cash for associates' AI contributions, Reuters",
-        "decision": "skipped",
-        "reason": "Niche law firm story with little broad US interest."
-      },
-      {
-        "story": "Gemini Decisions API",
-        "source": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-decisions-api/",
-        "decision": "skipped",
-        "reason": "Developer API with little appeal for a general audience."
-      }
-    ],
-    "requests": []
-  },
-  {
-    "run_at": "2026-11-12T07:09:47.639Z",
-    "summary": "Early run (02:00 New York): no open links or requests; queued two stories for Nov 12, AI restoring Geralt's Polish voice in The Witcher 3 and Microsoft's 7-neuron AI agent backdoor. Today now has 5 jobs.",
-    "considered": [
-      {
-        "story": "CD Projekt Red used AI, with consent, to restore Geralt's Polish voice after the actor's stroke",
-        "source": "https://www.videogameschronicle.com/news/the-witcher-3-expansion-uses-ai-to-adjust-geralts-polish-voiceover-because-the-actor-suffered-a-stroke/",
-        "decision": "queued",
-        "job_id": "2026-11-12-witcher-geralt-voice-ai-stroke",
-        "priority": 2,
-        "reason": "Everyone story with a human side and a huge gaming audience, confirmed by VGC, GamesRadar+ and Nintendo Life. Timely false so it survives until the first window."
-      },
-      {
-        "story": "Microsoft Research: editing under 10 neurons backdoors an AI agent, and Claude Code found most of it",
-        "source": "https://www.microsoft.com/en-us/research/blog/lazare-veni-foras-reprogramming-dormant-neurons-to-backdoor-ai-agents/",
-        "decision": "queued",
-        "job_id": "2026-11-12-microsoft-seven-neurons-sleeper-agent",
-        "priority": 2,
-        "reason": "Strange AI behavior from Microsoft with a Claude angle, read in the Microsoft blog, CSO Online and The Next Web."
-      },
-      {
-        "story": "OpenAI's proposed cutoff of Cursor's model access falls on Nov 12",
-        "source": "https://www.infoworld.com/article/4216503/cursor-customers-will-lose-access-to-openai-coding-models-in-november.html",
-        "decision": "skipped",
-        "reason": "Announced in August and TokenPost says the date is still only a proposal; will cover if a source confirms the cutoff actually happened today."
-      },
-      {
-        "story": "Anthropic bars Claude use from mainland China from Nov 12",
-        "source": "https://meduza.io/en/feature/2026/11/12/russian-media-outlets-are-reporting-a-new-claude-ai-ban-the-rule-has-actually-been-in-place-since-last-year",
-        "decision": "skipped",
-        "reason": "Meduza reports the rule has been in place since last year, so the 'new ban' framing looks wrong."
-      },
-      {
-        "story": "Spotify plans a $5 a month AI remix and covers add-on",
-        "source": "https://www.techradar.com/audio/spotify/who-wants-this-spotifys-ai-powered-remix-and-covers-feature-is-tipped-for-a-february-launch-but-it-could-cost-you-usd5-extra-and-users-arent-happy",
-        "decision": "skipped",
-        "reason": "The FT report is from Nov 2 and nothing new since; good backup if Spotify confirms details."
-      },
-      {
-        "story": "Nvidia board weighs ousting Jensen Huang; alleged spy Alice Huang is in Beijing",
-        "decision": "covered",
-        "reason": "Already queued as 2026-11-12-nvidia-board-preparing-to-oust-jensen-huang; no board decision found yet, so no -v2."
-      },
-      {
-        "story": "13-year-old talked about suicide with Gemini on a school Chromebook",
-        "decision": "covered",
-        "reason": "Same case as 2026-11-09-gemini-school-chromebook-teen-lawsuit."
-      },
-      {
-        "story": "Claude Fable 5.2 and Mythos 5.2 (top Hacker News story)",
-        "decision": "covered",
-        "reason": "Already posted as 2026-11-09-claude-fable-5-2-mythos-5-2."
-      },
-      {
-        "story": "Developers plan AI data centers near Shenandoah, Zion and the Grand Canyon",
-        "source": "https://www.outsideonline.com/outdoor-adventure/environment/ai-data-centers-national-parks-map/",
-        "decision": "skipped",
-        "reason": "Only Outside's map so far, no independent second source read this run."
-      },
-      {
-        "story": "Amazon saves millions replacing Sonnet with Strands Decider",
-        "source": "https://strandsagents.com/blog/amazon-saves-millions-replacing-sonnet-with-strands-decider/",
-        "decision": "skipped",
-        "reason": "Developer-focused and Strands Decider was already news in October."
-      }
-    ],
-    "requests": []
-  },
-  {
     "run_at": "2026-11-12T08:18:59.681Z",
     "summary": "Link desk: queued Mahir's el.cine Claude Fable 5.2 clip as a Reel for review.",
     "considered": [
@@ -5448,6 +5318,78 @@
         "story": "Reel search",
         "decision": "skipped",
         "reason": "Reddit leads are still empty and X and Wikimedia cannot be opened from this run, so no clip could be checked."
+      }
+    ],
+    "requests": []
+  },
+  {
+    "run_at": "2026-11-19T07:13:42.520Z",
+    "summary": "Night run (01:55 New York): queued the day's second Instagram carousel, Google keeping Gemini chats about two months even with History off; no Reel or site-only article could be sourced.",
+    "considered": [
+      {
+        "story": "Google will keep Gemini chats for about two months even with History off, and splits history from AI training",
+        "source": "https://blog.google/innovation-and-ai/products/gemini-app/updated-controls/",
+        "decision": "queued",
+        "job_id": "2026-11-19-gemini-keeps-chats-two-months",
+        "priority": 2
+      },
+      {
+        "story": "Official trailer for Artificial, Luca Guadagnino's film with Andrew Garfield as Sam Altman (Neon, Dec 25)",
+        "source": "https://www.justjared.com/2026/11/18/artificial-trailer-andrew-garfield-stars-as-openai-co-founder-ceo-sam-altman-in-luca-guadagnino-film-watch-now/",
+        "decision": "skipped",
+        "reason": "Good Reel candidate, but the only clip found is on YouTube (fails to render) and X cannot be opened here; the second carousel slot went to the Gemini privacy story. Candidate for a later run if the clip is on X."
+      },
+      {
+        "story": "OpenAI: advancing chip design with its own models (Jalapeno chip)",
+        "source": "https://openai.com/index/advancing-chip-design-with-our-models/",
+        "decision": "skipped",
+        "reason": "OpenAI's page could not be opened from this run, so no site-only article could be written from the original."
+      },
+      {
+        "story": "AI agents ask better questions than KPMG accountants in an audit trial",
+        "source": "https://europeanbusinessmagazine.com/ai-agents-better-questions-kpmg/",
+        "decision": "skipped",
+        "reason": "The report could not be opened and the only other coverage found was an April Bloomberg Tax piece about planned tests, with no results."
+      },
+      {
+        "story": "OpenAI says it solved a Millennium Prize Problem (State Press explainer)",
+        "decision": "skipped",
+        "reason": "The claim dates from September 2026; the new item is only a student-paper explainer."
+      },
+      {
+        "story": "Anthropic IPO first trading day (ANT)",
+        "decision": "covered",
+        "reason": "Pricing posted as 2026-11-18-anthropic-ipo-priced-83; the debut trades after the 9:30 open, candidate for a daytime run as a priority 1 follow-up."
+      },
+      {
+        "story": "Gemini 4 Neon reviews and comparisons (The New Stack, OrcaRouter)",
+        "decision": "covered",
+        "reason": "Already covered as 2026-11-18-gemini-4-neon-fourth-model."
+      },
+      {
+        "story": "Satya Nadella on why Microsoft asked 60,000 employees to quit (TechCrunch)",
+        "decision": "covered",
+        "reason": "The buyouts were covered as 2026-10-26-microsoft-60000-buyouts-ai."
+      },
+      {
+        "story": "Elon Musk at DealBook says he is 'not MAGA' (NYT)",
+        "decision": "skipped",
+        "reason": "Politics talk, not an AI story; not read beyond the headline."
+      },
+      {
+        "story": "Mahir's old inbox links (link-2026-10-13-224, link-2026-10-14-435, link-2026-10-20-1074-2, link-2026-10-21-w47d4efec)",
+        "decision": "skipped",
+        "reason": "Already in inbox/skipped.json from earlier runs; no new links or open requests."
+      },
+      {
+        "story": "Website guides",
+        "decision": "skipped",
+        "reason": "Run started before 07:00 New York time, when daily guides begin."
+      },
+      {
+        "story": "Reel search",
+        "decision": "skipped",
+        "reason": "Reddit leads are empty and X cannot be opened from this run, so no clip could be checked."
       }
     ],
     "requests": []

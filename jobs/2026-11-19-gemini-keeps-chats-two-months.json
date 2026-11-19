@@ -1,0 +1,118 @@
+{
+  "id": "2026-11-19-gemini-keeps-chats-two-months",
+  "created_at": "2026-11-19T07:30:00Z",
+  "story_time": "2026-11-17T09:05:00Z",
+  "timely": false,
+  "sensitive": false,
+  "priority": 2,
+  "format": "carousel",
+  "site_category": "companies",
+  "ab": { "headline": "short", "photo": "story" },
+  "sources": [
+    { "name": "Google", "url": "https://blog.google/innovation-and-ai/products/gemini-app/updated-controls/" },
+    { "name": "Gizmodo", "url": "https://gizmodo.com/google-to-keep-ai-chat-logs-for-two-months-even-with-gemini-history-turned-off-2000841271" },
+    { "name": "Android Central", "url": "https://androidcentral.com/apps-software/ai/you-can-now-keep-your-gemini-history-without-feeding-googles-training-pipeline" },
+    { "name": "Digital Trends", "url": "https://digitaltrends.com/computing/gemini-users-can-finally-save-their-ai-chats-without-letting-google-use-them-for-training-but-theres-a-catch" },
+    { "name": "Android Authority", "url": "https://www.androidauthority.com/gemini-new-chat-history-settings-3736303/" }
+  ],
+  "caption": "Google is changing the privacy controls in the Gemini app.\nIf you turn History off, your future chats will now be saved for around two months, up from as little as 72 hours.\nYou can finally keep your history and opt out of AI training, but chats with history off stay longer than on ChatGPT or Claude.\n\nWill you change your Gemini settings after this?\n\nFollow @neurafeed.ai for daily AI news.\n\nSource: Google, Gizmodo · Photo: Brady Snyder / Android Central",
+  "threads_text": "Google says that if you turn off Gemini History, your future chats will still be saved for around two months. It used to be as little as 72 hours, and ChatGPT and Claude keep theirs about 30 days. Is two months too long for a chat you asked not to save?",
+  "slides": [
+    {
+      "kind": "cover",
+      "headline": "Gemini history off? Google will still keep chats for *two months*",
+      "image": {
+        "url": "https://cdn.mos.cms.futurecdn.net/MbcQ3Dgcvo97iRuQqhWo2F-2560-80.jpg",
+        "credit": "Brady Snyder / Android Central",
+        "fallback_urls": ["https://cdn.mos.cms.futurecdn.net/MbcQ3Dgcvo97iRuQqhWo2F.jpg"]
+      },
+      "pos": "center center",
+      "badges": [
+        { "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Google_%22G%22_logo.svg/500px-Google_%22G%22_logo.svg.png", "fit": "contain" }
+      ]
+    },
+    {
+      "kind": "card",
+      "heading": "From *72 hours* to two months",
+      "paras": [
+        "Until now, turning off Gemini History meant new chats were kept for up to 72 hours.",
+        "Google's updated notice says they will now be saved for around two months, and human reviewers may help process them."
+      ],
+      "image": {
+        "url": "https://i0.wp.com/cdn.dtmg.xyz/uploads/2026/05/Google-Gemini-App-Featured.jpg?resize=2048%2C1228&ssl=1",
+        "credit": "Google",
+        "fallback_urls": ["https://storage.googleapis.com/gweb-uniblog-publish-prod/images/super-g_1.max-1440x810.jpg"]
+      }
+    },
+    {
+      "kind": "card",
+      "heading": "History and training *split*",
+      "paras": [
+        "The old Keep Activity switch becomes two: History, for how long chats are saved, and a separate one for AI training.",
+        "So you can keep your history and still opt out of training. With History on, chats are deleted after 18 months by default."
+      ],
+      "image": {
+        "url": "https://cdn.mos.cms.futurecdn.net/F8wFerTnYBWmBSxZb5wcn6.jpg",
+        "credit": "Android Central",
+        "fallback_urls": ["https://i0.wp.com/cdn.dtmg.xyz/uploads/2026/10/Gemini-Personal-Intelligence-android-auto.jpeg?resize=1200%2C720&ssl=1"]
+      }
+    },
+    {
+      "kind": "card",
+      "heading": "Longer than *ChatGPT and Claude*",
+      "paras": [
+        "OpenAI says temporary ChatGPT chats are held for up to 30 days. Anthropic says Claude chats are kept 30 days by default.",
+        "Google's new window is about twice as long. Google declined to tell Gizmodo why."
+      ],
+      "image": {
+        "url": "https://i0.wp.com/cdn.dtmg.xyz/uploads/2026/10/Gemini-Personal-Intelligence-android-auto.jpeg?resize=1200%2C720&ssl=1",
+        "credit": "Google",
+        "fallback_urls": ["https://storage.googleapis.com/gweb-uniblog-publish-prod/images/super-g_1.max-1440x810.jpg"]
+      }
+    },
+    {
+      "kind": "card",
+      "heading": "Check your *settings*",
+      "paras": [
+        "The change rolls out worldwide in the coming weeks, and Google is emailing users.",
+        { "t": "Sending feedback on an answer still shares your last 24 hours of chats.", "strong": true }
+      ],
+      "image": {
+        "url": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/super-g_1.max-1440x810.jpg",
+        "credit": "Google",
+        "fallback_urls": ["https://i0.wp.com/cdn.dtmg.xyz/uploads/2026/05/Google-Gemini-App-Featured.jpg?resize=2048%2C1228&ssl=1"]
+      },
+      "note": "If Keep Activity is already off, both new settings start off."
+    },
+    {
+      "kind": "cta",
+      "hook": "Follow to know what every AI app does with your chats before you hit send."
+    }
+  ],
+  "site_article": {
+    "headline": "Google will keep Gemini chats for about two months even with History turned off",
+    "dek": "The Gemini app is splitting chat history from AI training, but the change also stretches how long Google holds conversations a user chose not to save.",
+    "summary": "Google is replacing the single Keep Activity setting in the Gemini app with separate controls for chat history and AI model training. With the new History setting off, future chats will be saved for around two months, up from as little as 72 hours.",
+    "seo_title": "Gemini History off: Google now keeps chats about two months",
+    "seo_description": "Google split Gemini's history and AI training settings. With History off, chats are now kept around two months instead of 72 hours. What changed.",
+    "answer_summary": "Yes. Under Google's updated Gemini controls, future chats are still saved for around two months when the History setting is off. Users can now keep their history while opting out of AI model training.",
+    "tags": ["Google", "Gemini", "Privacy", "AI training", "Chat history"],
+    "hero_alt": "A smartphone held in a hand with the Gemini app open on its screen.",
+    "paragraphs": [
+      { "kind": "fact", "text": "Google announced in a blog post dated November 16, 2026, that it is changing the privacy controls in the Gemini app so that users can keep their chat history while opting out of generative AI model training. The same update means that conversations held with the History setting turned off will be saved for around two months.", "sources": [0, 1] },
+      { "kind": "fact", "text": "Google said the changes will begin rolling out globally in the Gemini app in the coming weeks. According to Android Central and Digital Trends, the company is also emailing users about the update.", "sources": [0, 2, 3] },
+      { "kind": "heading", "text": "One switch becomes two" },
+      { "kind": "fact", "text": "Until now, a single setting called Keep Activity decided both how long Gemini kept chats and whether those chats could be used to train Google's models, Android Central reported. Digital Trends noted that the old setting also covered photos, files, audio, location information and data from connected Workspace apps.", "sources": [2, 3] },
+      { "kind": "fact", "text": "The update splits that control in two. A History setting governs how long conversations are stored, while a separate control decides whether chat text and uploads can be used for AI training. With History on, chats are deleted after 18 months by default, and Gizmodo reported that users can instead choose 3 months, 36 months or no automatic deletion.", "sources": [1, 2, 3] },
+      { "kind": "fact", "text": "Users who already had Keep Activity turned off will find both new settings off by default, according to Android Central and Digital Trends. Android Authority reported that people who want to allow training must turn History on and then tick separate boxes for chat content and for audio, Gemini Live video and screen sharing.", "sources": [2, 3, 4] },
+      { "kind": "heading", "text": "Longer storage with History off" },
+      { "kind": "fact", "text": "The bigger change for privacy-minded users concerns what happens when History is off. Gizmodo found that an archived version of the Gemini Apps Privacy Hub from October 13, 2026, said such chats were kept for 72 hours. The updated notice now says future chats will be saved for around two months even when Gemini History is turned off. Android Central reported that the earlier periods were about 24 hours for chat context and 72 hours for safety-related data.", "sources": [1, 2] },
+      { "kind": "fact", "text": "Google says the chats saved during that window are used to respond to users, process feedback and protect Google, its users and the public, and Gizmodo reported that human reviewers may help with that work. Turning History off does not immediately delete existing conversations, Android Central said. Digital Trends added that sending feedback on a response, even with History off, leads Google to collect the last 24 hours of the user's chats along with any attachments.", "sources": [0, 1, 2, 3] },
+      { "kind": "fact", "text": "Google declined to explain the reasons for the longer retention period when asked by Gizmodo and pointed instead to its blog post about the new training controls. Gizmodo also noted that the in-app description of the History setting still referred to 72 hours at the time of its report.", "sources": [1] },
+      { "kind": "heading", "text": "How it compares with ChatGPT and Claude" },
+      { "kind": "fact", "text": "Gizmodo compared the new period with Google's main rivals. OpenAI says it keeps temporary ChatGPT chats for up to 30 days, and Anthropic says Claude conversations are held for 30 days by default, which makes Google's new window roughly twice as long. Both companies say they may keep some logs longer when necessary.", "sources": [1] },
+      { "kind": "analysis", "text": "The update gives Gemini users a choice many had asked for, since keeping a searchable history no longer requires handing those conversations over for model training. The trade is that turning History off now means far less than it used to. A user who switches it off to keep conversations out of Google's systems will find those chats stored for weeks rather than days, with possible human review, and the setting's name does not make that obvious." },
+      { "kind": "why_it_matters", "text": "The rollout reaches users worldwide over the coming weeks, so the next thing to watch is whether Google updates the in-app History description to match its privacy notice and whether regulators or rivals respond to the longer retention period." }
+    ]
+  }
+}
