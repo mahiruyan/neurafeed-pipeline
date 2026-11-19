@@ -1,0 +1,111 @@
+{
+  "id": "2026-11-19-chatgpt-delete-all-chats-guide",
+  "format": "utility",
+  "site_only": true,
+  "created_at": "2026-11-19T19:15:00Z",
+  "story_time": "2026-11-19T19:15:00Z",
+  "timely": false,
+  "sensitive": false,
+  "priority": 2,
+  "sources": [
+    { "name": "OpenAI Help Center: How to Delete and Archive Chats in ChatGPT", "url": "https://help-lb.openai.com/en/articles/8809935-how-chat-retention-works-in-chatgpt" },
+    { "name": "All About Cookies: How to delete your ChatGPT history and account", "url": "https://allaboutcookies.org/delete-chatgpt-history" }
+  ],
+  "caption": "You can wipe every ChatGPT chat at once from Settings, then Data controls.\nDeleted chats leave your sidebar right away and OpenAI's systems within 30 days, with legal exceptions.\nBut deleting chats does not wipe your memories. That is a separate step.\n\nHave you ever cleared your ChatGPT history?\n\nFollow @neurafeed.ai for daily AI news.\n\nSource: OpenAI Help Center, All About Cookies · Photo: 9to5Mac",
+  "threads_text": "Deleting all your ChatGPT chats takes one button in Data controls. The catch: it does not delete what ChatGPT remembers about you, which lives in a separate memory setting. Have you ever cleared your ChatGPT history?",
+  "slides": [
+    {
+      "kind": "cover",
+      "headline": "How to delete *all your ChatGPT chats*, and what it remembers",
+      "image": {
+        "url": "https://9to5mac.com/wp-content/uploads/sites/6/2026/06/chatgpt-green.webp?w=1600",
+        "credit": "9to5Mac",
+        "fallback_urls": ["https://9to5mac.com/wp-content/uploads/sites/6/2026/05/chatgpt-blue.webp?w=1600"]
+      },
+      "pos": "center center",
+      "badges": [{ "url": "assets/logos/openai.png", "fit": "contain" }]
+    },
+    {
+      "kind": "card",
+      "heading": "1. One chat: *the three dots*",
+      "paras": [
+        "In the sidebar, hover over the chat, click the three dots and choose Delete. Confirm it.",
+        "Pick Archive instead to hide it without deleting."
+      ],
+      "image": {
+        "url": "https://9to5mac.com/wp-content/uploads/sites/6/2026/05/chatgpt-blue.webp?w=1600",
+        "credit": "9to5Mac"
+      }
+    },
+    {
+      "kind": "card",
+      "heading": "2. Everything: *Data controls*",
+      "paras": [
+        "Open Settings, then Data controls. Next to Delete all chats, click Delete all and confirm.",
+        "It also clears chats inside your projects."
+      ],
+      "image": {
+        "url": "https://9to5mac.com/wp-content/uploads/sites/6/2026/10/chatgpt-app-icon-dark-openai.jpg?quality=82&strip=all&w=1600",
+        "credit": "9to5Mac"
+      }
+    },
+    {
+      "kind": "card",
+      "heading": "3. Memories are *separate*",
+      "paras": [
+        "Deleting chats does not erase all memories. Open Personalization to manage them or turn off Enable memory.",
+        { "t": "Deleted chats leave OpenAI's systems within 30 days, with legal exceptions.", "strong": true }
+      ],
+      "image": {
+        "url": "https://9to5google.com/wp-content/uploads/sites/4/2026/04/chatgpt-android-1.jpg?quality=82&strip=all&w=1600",
+        "credit": "9to5Google"
+      }
+    },
+    {
+      "kind": "cta",
+      "hook": "Follow for one AI tool explained every day."
+    }
+  ],
+  "site_article": {
+    "kind": "guide",
+    "headline": "How to delete all ChatGPT chats, and clear what ChatGPT remembers about you",
+    "dek": "Deleting one chat, deleting everything, archiving instead, and the separate memory settings most people forget. Plus what happens to your data after you hit delete.",
+    "summary": "To delete all ChatGPT chats, open Settings, go to Data controls and choose Delete all next to Delete all chats, then confirm. Deleting chats does not erase every saved memory, so memories have to be managed separately under Personalization.",
+    "seo_title": "How to delete all ChatGPT chats (and your memory)",
+    "seo_description": "Steps to delete one ChatGPT chat or all of them, archive instead, clear saved memories, stop training on your chats, and the 30 day deletion rule explained.",
+    "answer_summary": "Open ChatGPT Settings, choose Data controls, click Delete all next to Delete all chats and confirm. This removes every conversation, including chats in projects, but not all saved memories, which you manage under Personalization.",
+    "tags": ["ChatGPT", "OpenAI", "Privacy", "Chat history", "Guides"],
+    "hero_alt": "The ChatGPT logo on a green background.",
+    "paragraphs": [
+      { "kind": "fact", "text": "You can delete all ChatGPT chats at once from Settings, under Data controls. One button clears your whole history, including conversations inside projects, according to OpenAI's help center. Deleted chats disappear from your sidebar right away and are permanently removed from OpenAI's systems within 30 days, unless a legal or security exception applies.", "sources": [0] },
+      { "kind": "fact", "text": "The part most people miss: deleting chats does not wipe what ChatGPT has learned about you. ChatGPT builds memories from your chat history, files and connected apps, and deleting a chat may remove a specific memory but not all of them. Memory has its own settings, covered further down.", "sources": [1] },
+      { "kind": "tip", "text": "Deleted chats cannot be brought back. OpenAI says they cannot be recovered through the app, the API or support. If there is anything you want to keep, export your data first." },
+      { "kind": "heading", "text": "Before you delete: export your ChatGPT data" },
+      { "kind": "step", "title": "1. Request a data export", "text": "OpenAI's help center points to Settings, then Data controls, to request a data export. It is also a quick way to see which chats are still stored on your account before you clear them." },
+      { "kind": "heading", "text": "How to delete all ChatGPT chats at once" },
+      { "kind": "step", "title": "2. Open Settings", "text": "On the web, click your profile and choose Settings." },
+      { "kind": "step", "title": "3. Go to Data controls", "text": "Choose Data controls in the left menu of the Settings window." },
+      { "kind": "step", "title": "4. Click Delete all", "text": "Find Delete all chats and click Delete all next to it. Then click Confirm deletion. Every conversation goes, including the ones saved inside projects." },
+      { "kind": "fact", "text": "The same Data controls page has Archive all chats, with an Archive all button and a Confirm archive step. Archiving is not deleting: it moves chats out of the sidebar, and they stay on your account under the normal retention rules.", "sources": [0, 1] },
+      { "kind": "heading", "text": "How to delete or archive a single chat" },
+      { "kind": "step", "title": "5. Hover over the chat in the sidebar", "text": "Move your pointer over the conversation in your chat history and click the three dots next to its title." },
+      { "kind": "step", "title": "6. Choose Delete or Archive", "text": "Select Delete and confirm when ChatGPT asks. Select Archive instead if you only want it out of sight. Archiving needs no confirmation." },
+      { "kind": "step", "title": "7. Find archived chats later", "text": "Open Settings, then Data controls, and click Manage next to Archived Chats. From there you can unarchive a chat, which puts it back in your history, or delete it for good." },
+      { "kind": "tip", "text": "If a chat seems to have vanished, check Archived Chats before you assume it was deleted. OpenAI's help center lists that as the first thing to check." },
+      { "kind": "heading", "text": "How to clear ChatGPT memory" },
+      { "kind": "step", "title": "8. Manage saved memories", "text": "Open Personalization from your profile menu. Under Memory summary, select Manage to see what ChatGPT has stored, then update or delete individual memories." },
+      { "kind": "step", "title": "9. Turn memory off", "text": "In the same Personalization settings, switch off Enable memory. This stops ChatGPT from creating new memories. It does not remove the ones already saved, so delete those first if you want a clean slate." },
+      { "kind": "heading", "text": "Images, training and Temporary Chat" },
+      { "kind": "fact", "text": "Images can outlive the chat they came from. Deleting a chat generally removes its images, but some may still sit in your Library. To remove them, open Library in the left menu, go to Images, select the pictures with the circle in the bottom right corner of each one, and click Delete.", "sources": [1] },
+      { "kind": "fact", "text": "Clearing your history does not change whether future chats are used to train OpenAI's models. That is a separate switch: in Settings, under Data controls, turn off Improve the model for everyone. It is on by default.", "sources": [1] },
+      { "kind": "fact", "text": "For conversations you never want saved, use Temporary Chat. These chats do not appear in your history, do not create new memories and are not used to improve OpenAI's models. OpenAI's deletion window of 30 days covers them too.", "sources": [1] },
+      { "kind": "heading", "text": "What happens after you delete" },
+      { "kind": "fact", "text": "Chats are removed from view immediately and permanently deleted from OpenAI's systems within 30 days. OpenAI names two exceptions: a chat that was already de-identified and disconnected from your account, and a chat OpenAI must keep for security or legal reasons. Deleting a conversation also removes synced data from connected apps that was kept in it, while disconnecting an app only stops future access.", "sources": [0] },
+      { "kind": "fact", "text": "The legal exception is not theoretical. All About Cookies notes that a federal court order in a copyright lawsuit brought by publishers including The New York Times required OpenAI to produce about 20 million conversations, with personal details removed or masked.", "sources": [1] },
+      { "kind": "heading", "text": "Deleting your whole ChatGPT account" },
+      { "kind": "step", "title": "10. Delete the account (optional)", "text": "Open Settings, choose Account, and click Delete under Delete account. Enter your account email, type DELETE and click Permanently delete my account. You cannot sign up again with the same email or phone number for 30 days." },
+      { "kind": "tip", "text": "Deleting your account does not cancel a subscription you bought through the App Store or Google Play. Cancel it there first. All About Cookies also suggests deleting chats and images before deleting the account, since OpenAI does not spell out that account deletion removes them." },
+      { "kind": "analysis", "text": "The honest summary: Delete all chats is fast and thorough for your history, but it is only one of three switches. If you want ChatGPT to forget you, clear your memories under Personalization, and if you want future chats kept out of training, turn off Improve the model for everyone. These steps are written for the web version; menu names may look slightly different in the apps." }
+    ]
+  }
+}

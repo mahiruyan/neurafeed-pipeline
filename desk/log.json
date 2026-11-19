@@ -1,41 +1,5 @@
 [
   {
-    "run_at": "2026-11-12T17:18:24.012Z",
-    "summary": "Link desk: queued Mahir's Reel link-2026-11-12-3634 (AI-made Jensen Huang 'villain arc' short film by @rize.imagines) for review.",
-    "considered": [
-      {
-        "story": "AI-generated short film imagining Jensen Huang's next move after resigning as NVIDIA CEO",
-        "source": "https://www.instagram.com/reel/DfpjdJoAuf8/",
-        "decision": "queued",
-        "job_id": "2026-11-12-jensen-huang-villain-arc-reel",
-        "priority": 1,
-        "reason": "Mahir's link with his title and caption used word for word (fixed 'Al' to 'AI'). The clip is a repost by @evolving.ai and may carry their branding; credited the creator @rize.imagines. Huang's resignation confirmed by TechCrunch. Note: the Matrix parody Reel from earlier today failed to download from Instagram, this one may too."
-      }
-    ],
-    "requests": []
-  },
-  {
-    "run_at": "2026-11-12T17:36:53.354Z",
-    "summary": "Link desk: remade Mahir's Jensen Huang 'villain arc' Reel (req-2026-11-12-eed9634a) as a fresh v2 job, priority 1, for review.",
-    "considered": [
-      {
-        "story": "AI-made short film by @rize.imagines: Jensen Huang's 'villain arc' after resigning as Nvidia CEO",
-        "source": "https://www.instagram.com/reel/DfpjdJoAuf8/",
-        "decision": "queued",
-        "job_id": "2026-11-12-jensen-huang-villain-arc-reel-v2",
-        "priority": 1
-      }
-    ],
-    "requests": [
-      {
-        "id": "req-2026-11-12-eed9634a",
-        "status": "done",
-        "job_id": "2026-11-12-jensen-huang-villain-arc-reel-v2",
-        "result": "The first version was marked rejected (approve and reject were recorded at the same moment), so I rebuilt it as a new job with your headline and caption, priority 1. Approve the new preview and it posts right away. The clip comes via @evolving.ai; credited to @rize.imagines."
-      }
-    ]
-  },
-  {
     "run_at": "2026-11-12T19:15:08.819Z",
     "summary": "Afternoon run (about 14:00 New York): no open links or requests; the day's desk queue is already at the cap with 5 approved or pending posts for the evening, so only the breaking priority 1 lawsuit against OpenAI, Anthropic, Google, Meta and SpaceXSI was added (sensitive, waits for Mahir), plus the 4th website guide (Google AI Studio, site only).",
     "considered": [
@@ -5175,6 +5139,77 @@
         "story": "AI agents ask better questions than KPMG accountants in audit trial (Hacker News)",
         "decision": "skipped",
         "reason": "Single trade-press source, no second source read."
+      }
+    ],
+    "requests": []
+  },
+  {
+    "run_at": "2026-11-19T19:03:13.094Z",
+    "summary": "Afternoon run: no open links or requests; queued a site-only article on Gemini computer use for Mac and the day's second guide (delete all ChatGPT chats). No new Reel found that we can download.",
+    "considered": [
+      {
+        "story": "Google adds computer use to the Gemini app for Mac",
+        "source": "https://thenextweb.com/news/google-gemini-mac-computer-use-multi-step-tasks",
+        "decision": "queued",
+        "job_id": "2026-11-19-gemini-mac-computer-use",
+        "priority": 2,
+        "reason": "Product news for paying subscribers; today's 2 Instagram carousels are already used, so it goes to the site only (4th site-only article today)."
+      },
+      {
+        "story": "Guide: how to delete all ChatGPT chats and clear memory",
+        "source": "https://help-lb.openai.com/en/articles/8809935-how-chat-retention-works-in-chatgpt",
+        "decision": "queued",
+        "job_id": "2026-11-19-chatgpt-delete-all-chats-guide",
+        "priority": 2,
+        "reason": "Next uncovered line in guides/plan.md with official docs (ChatGPT Atlas lines skipped because Atlas was discontinued)."
+      },
+      {
+        "story": "Official trailer for Artificial, Andrew Garfield as Sam Altman (Neon, Nov 18)",
+        "source": "https://digital.abcaudio.com/news/andrew-garfield-sam-altman-artificial-official-trailer",
+        "decision": "skipped",
+        "reason": "Good Reel candidate, but the trailer is only on YouTube, which our servers cannot download, and no X post of it was found. Mahir can send an X or Instagram link if he wants it."
+      },
+      {
+        "story": "Anthropic shares fall back below $100 after opening at $111.50; Dow drops over 1,000 points",
+        "decision": "covered",
+        "reason": "Anthropic's debut is already posted as 2026-11-19-anthropic-opens-111-nasdaq."
+      },
+      {
+        "story": "Protesters arrested outside Nasdaq during Anthropic IPO",
+        "decision": "skipped",
+        "reason": "Side story of the IPO already covered today; a third Anthropic post would crowd the feed."
+      },
+      {
+        "story": "Claude Fable 5.2 solves two open black hole physics problems",
+        "source": "https://www.anthropic.com/research/claude-black-hole-physics",
+        "decision": "skipped",
+        "reason": "Announced around November 9, ten days old."
+      },
+      {
+        "story": "Students sue after AI mistook a Doritos bag for a gun",
+        "decision": "covered",
+        "reason": "Already queued as 2026-11-19-ai-mistook-doritos-for-gun-lawsuit."
+      },
+      {
+        "story": "Gemini 4 Neon",
+        "decision": "covered",
+        "reason": "Already covered as 2026-11-18-gemini-4-neon-fourth-model."
+      },
+      {
+        "story": "DeepMind employees unionizing",
+        "source": "https://www.gdmunion.co.uk",
+        "decision": "skipped",
+        "reason": "Only the union's own site in leads, no independent news coverage found in this run; Instagram carousel quota is full."
+      },
+      {
+        "story": "Foxconn unit reportedly to assemble OpenAI's smartphone",
+        "decision": "skipped",
+        "reason": "Single regional report on a supply chain rumor; not confirmed by a second source in this run."
+      },
+      {
+        "story": "Anthropic gave $40M to an AI safety group whose candidates mostly won (Washington Post)",
+        "decision": "skipped",
+        "reason": "Paywalled and no second source read; politics angle needs care, revisit if others pick it up."
       }
     ],
     "requests": []
