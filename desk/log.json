@@ -1,102 +1,5 @@
 [
   {
-    "run_at": "2026-11-12T01:01:02.087Z",
-    "summary": "Evening run (19:53 New York): no open links or requests; Nov 11 already has its 8 desk posts and 4 guides, so only the priority 1 Nvidia story was queued, dated for Nov 12 because the cap holds it until the next New York day.",
-    "considered": [
-      {
-        "story": "WSJ: Nvidia's board is preparing to oust CEO Jensen Huang; shares fall about 8% after hours",
-        "source": "https://fortune.com/2026/11/11/nvidia-oust-jensen-huang-spy-affairs/",
-        "decision": "queued",
-        "job_id": "2026-11-12-nvidia-board-preparing-to-oust-jensen-huang",
-        "priority": 1,
-        "reason": "Biggest AI business story of the night (Reuters and Fortune read). Sensitive, so it waits for Mahir. Set timely false and written with dates because today's cap holds it until the 07:00 window, after a 12 hour timely limit would have expired it; the morning run should write a -v2 if the board acts overnight."
-      },
-      {
-        "story": "NYT: Jensen Huang had a relationship with Nvidia executive Kimberly Powell",
-        "source": "https://www.nytimes.com/2026/11/11/technology/jensen-huang-nvidia-affair.html",
-        "decision": "covered",
-        "reason": "Included in the Nvidia ouster job as one of its slides."
-      },
-      {
-        "story": "Congress to call Jensen Huang in over the alleged Chinese spy affair",
-        "source": "https://techcrunch.com/2026/11/11/congress-to-call-jensen-huang-in-to-answer-for-alleged-chinese-spy-affair/",
-        "decision": "skipped",
-        "reason": "Overtaken by the ouster report, which is the bigger story."
-      },
-      {
-        "story": "United Airlines blocks AI agents from booking flights for customers",
-        "source": "https://www.cbsnews.com/news/united-airlines-bans-ai-agents-booking-flights/",
-        "decision": "skipped",
-        "reason": "Strong everyone story, but today's 8 desk posts are used; a candidate for tomorrow (CBS, NYT and The Verge all have it)."
-      },
-      {
-        "story": "Google engineer used AI agents on lidar data and found an unmapped Maya site",
-        "decision": "skipped",
-        "reason": "Top of Hacker News but still only a personal blog with no second source."
-      },
-      {
-        "story": "Google brings the Gemini app to Apple CarPlay",
-        "decision": "skipped",
-        "reason": "Only small blogs in leads so far and the cap is reached; check tomorrow for an official post."
-      },
-      {
-        "story": "Anthropic IPO called the 'Jenga block' of the AI trade, Seattle Times",
-        "decision": "skipped",
-        "reason": "Market commentary on an IPO already covered this week."
-      },
-      {
-        "story": "Apple's local AI Mac app",
-        "decision": "covered",
-        "reason": "Already queued as 2026-11-11-apple-harbor-local-ai-mac-app."
-      }
-    ],
-    "requests": []
-  },
-  {
-    "run_at": "2026-11-12T02:53:51.823Z",
-    "summary": "Late evening run (21:53 New York): no open links or requests; Nov 11 already has its 8 desk posts and 4 site guides, and the only new priority 1 story (Nvidia board and Jensen Huang) is already queued, so nothing new was queued.",
-    "considered": [
-      {
-        "story": "Nvidia board reportedly preparing to oust Jensen Huang; stock drops",
-        "source": "https://techcrunch.com/",
-        "decision": "covered",
-        "reason": "Already queued as 2026-11-12-nvidia-board-preparing-to-oust-jensen-huang."
-      },
-      {
-        "story": "Jensen Huang reportedly had a relationship with an Nvidia executive, NYT",
-        "decision": "covered",
-        "reason": "Included as a slide in the Nvidia ouster job."
-      },
-      {
-        "story": "United Airlines blocks AI agents from booking flights for customers, NYT",
-        "decision": "skipped",
-        "reason": "Good everyone story, but the Nov 11 cap of 8 is reached; a candidate for the Nov 12 morning run."
-      },
-      {
-        "story": "Google brings the Gemini app to Apple CarPlay",
-        "decision": "skipped",
-        "reason": "Product change for normal users, but the cap is reached; a candidate for tomorrow with a second source."
-      },
-      {
-        "story": "Latham earmarks cash for associates' AI contributions, Reuters",
-        "decision": "skipped",
-        "reason": "Money and jobs angle but niche law-firm story, and the cap is reached."
-      },
-      {
-        "story": "Google engineer's AI agents found an unmapped Maya site",
-        "source": "https://pietromiotti.com/latest/maya-site/?maya",
-        "decision": "skipped",
-        "reason": "Still only a personal blog with no second source, and the cap is reached."
-      },
-      {
-        "story": "Anthropic betting billions on natural gas generators, TechRadar",
-        "decision": "skipped",
-        "reason": "Infrastructure story with limited consumer appeal, and the cap is reached."
-      }
-    ],
-    "requests": []
-  },
-  {
     "run_at": "2026-11-12T05:09:03.139Z",
     "summary": "Midnight run (23:55 New York): no open links or requests; queued two Nov 12 morning stories, United's ban on AI booking agents and Gemini on Apple CarPlay.",
     "considered": [
@@ -5437,6 +5340,58 @@
         "story": "Reel search (viral robot and consumer tech clips)",
         "decision": "skipped",
         "reason": "X and Reddit are blocked from this run and the clips found were only on YouTube, which fails to render, so no video could be checked against the Reel filter."
+      }
+    ],
+    "requests": []
+  },
+  {
+    "run_at": "2026-11-19T03:01:53.182Z",
+    "summary": "Night run (22:00 New York, Nov 18): no open links or requests; queued Google's Gemini 4 Neon launch as a priority 1 site-only article. Instagram carousels, guides and site-only articles for Nov 18 were already full.",
+    "considered": [
+      {
+        "story": "Google releases Gemini 4 Neon, its fourth Gemini 4 model in about a month ($3/$15, 32% cheaper per task than Carbon, in the Gemini app for AI Pro and Ultra)",
+        "source": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-neon/",
+        "decision": "queued",
+        "job_id": "2026-11-18-gemini-4-neon-fourth-model",
+        "priority": 1,
+        "reason": "Major Google launch, but mostly API pricing and benchmarks for insiders, the fourth Gemini 4 model in a month (Carbon and Hydrogen already had carousels), and Nov 18 already had 4 Instagram carousels, so it goes to the website only. This is the fifth site-only news article dated Nov 18 in New York time."
+      },
+      {
+        "story": "Satya Nadella explains why Microsoft offered voluntary exits to 60,000 employees (TechCrunch)",
+        "source": "https://techcrunch.com/2026/11/18/microsoft-ceo-satya-nadella-explains-why-he-asked-60k-employees-to-quit/",
+        "decision": "skipped",
+        "reason": "The 60,000 buyout offer was already covered as 2026-10-26-microsoft-60000-buyouts-ai and Nadella already has a Nov 18 site article; the day is full."
+      },
+      {
+        "story": "Anthropic IPO priced at $83, record $81.3 billion raise; ANT trades Thursday",
+        "decision": "covered",
+        "reason": "Already posted as 2026-11-18-anthropic-ipo-priced-83. The first trading day on Nov 19 is a candidate for the morning runs."
+      },
+      {
+        "story": "Elon Musk says ousting Jensen Huang is like kicking Michael Jordan off your team (TechCrunch)",
+        "source": "https://techcrunch.com/2026/11/18/elon-musk-says-ousting-jensen-huang-is-like-kicking-michael-jordan-off-your-team/",
+        "decision": "skipped",
+        "reason": "Not read this run; the Huang exit already has several jobs and Nov 18 is full. Candidate for a Nov 19 run."
+      },
+      {
+        "story": "OpenAI says its models sped up chip design for AMD",
+        "decision": "skipped",
+        "reason": "Insider engineering story and the site-only quota is used."
+      },
+      {
+        "story": "Largest US school districts consider ditching Google Search over AI (The Verge, NYT)",
+        "decision": "skipped",
+        "reason": "Not read this run; good everyday angle, candidate for Nov 19."
+      },
+      {
+        "story": "OpenAI's top researchers burn $23,000 in AI tokens a day (Crypto Briefing)",
+        "decision": "skipped",
+        "reason": "Single crypto outlet seen only in the feed, not confirmed by a second source."
+      },
+      {
+        "story": "Reel search",
+        "decision": "skipped",
+        "reason": "Reddit leads are still empty and X cannot be opened from this run, so no clip could be checked against the Reel filter."
       }
     ],
     "requests": []
