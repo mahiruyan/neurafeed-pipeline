@@ -1,0 +1,87 @@
+{
+  "id": "2026-11-19-newsom-ai-kill-switch-report",
+  "created_at": "2026-11-19T09:15:00Z",
+  "story_time": "2026-11-19T00:15:00Z",
+  "timely": false,
+  "sensitive": true,
+  "priority": 2,
+  "site_only": true,
+  "format": "carousel",
+  "site_category": "policy",
+  "ab": { "headline": "short", "photo": "story" },
+  "sources": [
+    { "name": "CalMatters (via The Almanac)", "url": "https://www.almanacnews.com/calmatters/2026/11/18/newsom-touts-an-ai-kill-switch-to-halt-dangerous-openai-anthropic-releases/" },
+    { "name": "CDO Magazine", "url": "https://www.cdomagazine.tech/us-federal-news-bureau/california-proposes-mandatory-ai-safety-standards-independent-oversight-and-emergency-shutdown-authority" },
+    { "name": "Unite.AI", "url": "https://www.unite.ai/newsom-proposes-mandatory-frontier-ai-oversight-and-shutdown-powers/" }
+  ],
+  "caption": "Gov. Gavin Newsom released AI safety recommendations on November 18 from a four-member expert panel.\nThe biggest idea: state officials could order an emergency shutdown of an AI system when its developer refuses to contain it.\nCritical safety incidents would have to be reported within 48 hours instead of 15 days.\n\nShould a state be able to switch off an AI model?\n\nFollow @neurafeed.ai for daily AI news.\n\nSource: CalMatters · Photo: Anna Hoch-Kenney / CalMatters",
+  "threads_text": "California wants the power to order an emergency shutdown of an AI model when the company behind it refuses to contain it. Newsom's panel also wants state-licensed auditors and incident reports within 48 hours. Should a state be able to switch off an AI model?",
+  "slides": [
+    {
+      "kind": "cover",
+      "headline": "California wants a *kill switch* for rogue AI models",
+      "image": {
+        "url": "https://i0.wp.com/calmatters.org/wp-content/uploads/2026/09/091026-Newsom-Kids-Tech-AHC-CM-05.jpg?fit=2000%2C1333&ssl=1",
+        "credit": "Anna Hoch-Kenney / CalMatters",
+        "fallback_urls": ["https://i0.wp.com/calmatters.org/wp-content/uploads/2026/09/091026-Newsom-Kids-Tech-AHC-CM-05.jpg?fit=1200%2C800&ssl=1"]
+      },
+      "pos": "center 25%",
+      "badges": [{ "url": "assets/logos/openai.png", "fit": "contain" }, { "url": "assets/logos/anthropic.png", "fit": "contain" }],
+      "badge_side": "right"
+    },
+    {
+      "kind": "card",
+      "heading": "The *kill switch*",
+      "paras": [
+        "Gov. Gavin Newsom released AI safety recommendations on November 18 from a four-member expert panel.",
+        "State officials could order an emergency shutdown of an AI system when its developer refuses to contain it."
+      ],
+      "image": {
+        "url": "https://www.aljazeera.com/wp-content/uploads/2025/11/AP25309178500980-1762319702.jpg?resize=1200%2C675",
+        "credit": "Godofredo A. Vasquez / AP Photo",
+        "fallback_urls": ["https://www.aljazeera.com/wp-content/uploads/2025/11/AP25309178500980-1762319702.jpg?resize=770%2C513&quality=80"]
+      },
+      "pos": "center 25%"
+    },
+    {
+      "kind": "card",
+      "heading": "Reports in *48 hours*",
+      "paras": [
+        "State-licensed auditors would test the biggest AI models, and the state, not the AI companies, would pick who checks what.",
+        { "t": "Critical safety incidents would be reported in 48 hours, not 15 days.", "strong": true }
+      ],
+      "image": {
+        "url": "https://cdomagazinecms.wpenginepowered.com/wp-content/uploads/2025/07/California.png",
+        "credit": "CDO Magazine",
+        "fallback_urls": ["https://www.unite.ai/wp-content/uploads/2026/11/newsom-proposes-mandatory-frontier-ai-oversight-and-shutdown-powers.jpg"]
+      }
+    },
+    {
+      "kind": "cta",
+      "hook": "Follow to see whether California lawmakers turn the AI kill switch into law."
+    }
+  ],
+  "site_article": {
+    "headline": "Newsom releases AI safety plan with emergency shutdown power and state-licensed auditors",
+    "dek": "The recommendations would let California officials order a dangerous AI system shut down and cut the deadline for reporting critical incidents to 48 hours.",
+    "summary": "California Gov. Gavin Newsom released recommendations from a four-member AI advisory panel on November 18, 2026, including a state power to order the emergency shutdown of dangerous AI systems. The plan also calls for state-licensed independent auditors and a 48-hour deadline for reporting critical safety incidents.",
+    "seo_title": "Newsom AI kill switch: California's new AI safety proposals",
+    "seo_description": "Newsom's AI panel proposes emergency shutdown power, state-licensed auditors and 48-hour incident reports for frontier AI developers in California.",
+    "answer_summary": "The California AI kill switch is a proposed power for state officials to order an immediate emergency shutdown of an AI system when its developer refuses to contain a catastrophic risk. It is a recommendation for lawmakers, not yet law.",
+    "tags": ["California", "Gavin Newsom", "AI regulation", "AI safety", "OpenAI", "Anthropic", "Kill switch"],
+    "hero_alt": "Gavin Newsom speaks at a press conference at a children's museum.",
+    "paragraphs": [
+      { "kind": "fact", "text": "California Gov. Gavin Newsom released a set of AI safety recommendations on November 18, 2026, headlined by a proposed state power to order the immediate emergency shutdown of AI systems officials consider dangerous. According to CalMatters, the shutdown authority would apply when companies such as OpenAI or Anthropic refuse to contain systems that go wrong.", "sources": [0, 1] },
+      { "kind": "fact", "text": "The recommendations come from a four-member advisory panel Newsom convened in the fall: Alondra Nelson, former head of the White House Office of Science and Technology Policy; Stanford professor Rob Reich; Jason Goldman, a former Google and Twitter executive and the first White House chief digital officer; and Johns Hopkins professor Gillian Hadfield. Unite.AI reported that a supporting report, AI Safety in 2026 and Beyond, is dated November 16 and follows an executive order Newsom signed on September 18.", "sources": [0, 2] },
+      { "kind": "heading", "text": "What the panel proposes" },
+      { "kind": "fact", "text": "Beyond the shutdown power, the panel recommends mandatory independent audits of AI models. Auditors, called independent verification organizations, would be licensed by the state and could lose their licenses if they lost independence or technical expertise. State officials, not AI companies, would assign which auditors evaluate which systems, and a surcharge on audit fees would help fund CalCompute, the state's public cloud computing initiative.", "sources": [0, 2] },
+      { "kind": "fact", "text": "The plan would cut the deadline for reporting critical AI safety incidents to state agencies from 15 days to 48 hours, extend whistleblower protections to contractors and former employees, and require developers of large AI systems to show they can shut their models down in an emergency. It would also let the government limit the use of AI to design other AI systems and require developers to disclose how much computing power they use to automate AI development.", "sources": [0, 1] },
+      { "kind": "fact", "text": "Unite.AI reported that a shutdown order would require credible reason to believe an imminent catastrophic risk exists and that the developer refuses to contain it, and that the order would remain in force during judicial review. CDO Magazine described the plan as replacing reliance on developers' internal safety assessments with ongoing oversight.", "sources": [1, 2] },
+      { "kind": "heading", "text": "Limits and reactions" },
+      { "kind": "fact", "text": "The report addresses only catastrophic risks, which California law defines as a single event causing more than 50 deaths or at least $1 billion in losses. It does not cover algorithmic discrimination, job losses or risks to children's mental health, CalMatters reported.", "sources": [0] },
+      { "kind": "fact", "text": "In a statement, Newsom criticized the federal government's approach, saying President Donald Trump leaves AI regulation up to the companies themselves. Governor-elect Xavier Becerra said he would work with the Legislature to put full incident reporting and real shutdown authority into law, and Anthropic chief global affairs officer Tino Cuellar welcomed the report's focus on independent evaluation, according to CalMatters.", "sources": [0] },
+      { "kind": "analysis", "text": "The proposals shift the burden of proof toward developers: instead of trusting companies' own safety reviews, the state would choose the auditors and hold a last resort power to halt a model. How the Legislature defines an imminent catastrophic risk will decide how often that power could ever be used." },
+      { "kind": "why_it_matters", "text": "The Legislature reconvenes on December 7, when lawmakers can begin turning the recommendations into bills." }
+    ]
+  }
+}
