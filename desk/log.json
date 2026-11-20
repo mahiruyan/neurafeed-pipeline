@@ -5154,5 +5154,53 @@
       }
     ],
     "requests": []
+  },
+  {
+    "run_at": "2026-11-20T00:54:47.223Z",
+    "summary": "Night run (20:00 New York, Nov 19): no open links or requests; nothing queued. Nov 19 already has 3 Instagram carousels, 4 site-only news articles and all 6 guides, and no downloadable Reel that passes the filter was found.",
+    "considered": [
+      {
+        "story": "Isomorphic Labs raises $5B Series C (Reuters, via dev.to digest)",
+        "decision": "skipped",
+        "reason": "Insider funding news and the day's 4 site-only articles are already used; the next run can take it as a site-only article if still fresh."
+      },
+      {
+        "story": "Coinbase AI blocked $4.7M sent to an AI-generated Elon Musk livestream giveaway (BleepingComputer)",
+        "decision": "skipped",
+        "reason": "Already considered and skipped earlier today; no clean clip of the fake stream to use as a Reel, and the carousel cap for today is used."
+      },
+      {
+        "story": "Palo Alto Networks to buy Applied Compute for $4.5B (WSJ, via AI Weekly)",
+        "decision": "skipped",
+        "reason": "Insider deal news, and the site-only cap for today is used."
+      },
+      {
+        "story": "Nvidia Q3 revenue $115.8B",
+        "decision": "covered",
+        "reason": "Already queued as 2026-11-17-nvidia-record-quarter-without-huang."
+      },
+      {
+        "story": "Microsoft's 60,000-employee buyout framed as 'agency' by Nadella at DealBook",
+        "decision": "covered",
+        "reason": "Nadella's DealBook remarks already covered as 2026-11-18-nadella-agi-pilled."
+      },
+      {
+        "story": "Gemini Robotics 2.5 on Franka FR3 Duo shown at CoRL 2026",
+        "decision": "skipped",
+        "reason": "No downloadable demo video found on X or the company site; insider robotics news."
+      },
+      {
+        "story": "Dutch Data Protection Authority warns people not to buy AI camera glasses (NL Times)",
+        "source": "https://nltimes.nl/2026/11/19/ai-camera-glasses-can-dangerous-dont-buy-dutch-data-protection-authority",
+        "decision": "skipped",
+        "reason": "European regulator warning with little US interest, and today's carousel slots are used."
+      },
+      {
+        "story": "Reel search (X, Anthropic IPO memes and clips, robot and gadget videos)",
+        "decision": "skipped",
+        "reason": "No clip found that we can download from X or a company site and that passes the Which Reels travel filter; the IPO clips found are interview footage, which does not travel."
+      }
+    ],
+    "requests": []
   }
 ]
