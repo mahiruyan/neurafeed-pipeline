@@ -1,0 +1,88 @@
+{
+  "id": "2026-11-20-how-to-use-gemini-tasks-guide",
+  "format": "utility",
+  "site_only": true,
+  "created_at": "2026-11-20T19:30:00Z",
+  "story_time": "2026-11-20T19:30:00Z",
+  "timely": false,
+  "sensitive": false,
+  "priority": 2,
+  "sources": [
+    { "name": "Gemini Apps Help: Manage your tasks and workflows", "url": "https://support.google.com/gemini/answer/17094507?hl=en" },
+    { "name": "Google: Tasks in Gemini", "url": "https://gemini.google/overview/agent/" },
+    { "name": "Android Central", "url": "https://www.androidcentral.com/apps-software/ai/google-just-made-its-best-gemini-agent-free-heres-where-you-can-get-it" },
+    { "name": "Inc.", "url": "https://www.inc.com/aaron-mok/google-just-made-geminis-personal-assistant-free-use-it-to-handle-these-everyday-tasks/91438908" },
+    { "name": "Android Authority", "url": "https://androidauthority.com/google-gemini-tasks-update-3736266" }
+  ],
+  "caption": "Tasks in Gemini, the agent Google first called Spark, is now free for adults in the US and five other countries.\nSwitch from Chat to Task, describe the job, and Gemini works through it in the background, asking before it sends or buys anything.\nHere is how to start, schedule and stop it.\n\nWhat chore would you hand to an AI agent first?\n\nFollow @neurafeed.ai for daily AI news.\n\nSource: Google Gemini Help · Photo: Android Central",
+  "threads_text": "Google's Gemini agent, Tasks, is now free in the US. Flip the toggle from Chat to Task, describe the job, and it works in the background, up to 15 tasks at once, asking before it sends, buys or submits anything. What chore would you hand it first?",
+  "slides": [
+    {
+      "kind": "cover",
+      "headline": "How to use *Gemini Tasks*, Google's AI agent that is now free in the US",
+      "image": {
+        "url": "https://cdn.mos.cms.futurecdn.net/Cng82LjTaKGdFDAhcdNKiX.png",
+        "credit": "Android Central",
+        "fallback_urls": [ "https://cdn.mos.cms.futurecdn.net/Cng82LjTaKGdFDAhcdNKiX-1920-80.png" ]
+      },
+      "pos": "center center"
+    },
+    {
+      "kind": "card",
+      "heading": "1. Switch to *Task*",
+      "paras": [
+        "In the Gemini app, flip the toggle from Chat to Task. On the web, click Task below the text box at gemini.google.com.",
+        "Describe the job in plain English and submit."
+      ],
+      "image": {
+        "url": "https://img-cdn.inc.com/image/upload/f_webp,c_fit,w_1920,q_auto/vip/2026/11/google-tasks-gemini-inc.jpg",
+        "credit": "Google via Inc."
+      }
+    },
+    {
+      "kind": "prompt",
+      "heading": "2. Put it on a *schedule*",
+      "paras": [ "Tell Gemini when to run it, right in the task.", "It runs on its own at that time. Up to 15 tasks can run at once." ],
+      "prompt": "Every Monday at 9:00 AM, recap my email from last week and give me a to-do list."
+    },
+    {
+      "kind": "cta",
+      "hook": "Follow for more guides that make the AI tools you already have do real work."
+    }
+  ],
+  "site_article": {
+    "kind": "guide",
+    "headline": "How to use Gemini Tasks: start a task, schedule it and stop it",
+    "dek": "Google's background agent, first called Spark, is now free for adults in the US and five other countries. Here is how to start one, what it asks before acting and how to turn it off.",
+    "summary": "Tasks in Gemini lets Gemini work through multi-step jobs in the background, on a schedule if you want. It is free for users 18 and over in the US, Canada, Australia, India, Japan and South Korea, and it asks for confirmation before sending messages, buying things or submitting forms.",
+    "seo_title": "How to use Gemini Tasks: start, schedule and stop a task",
+    "seo_description": "How to use Gemini Tasks: switch from Chat to Task, write and schedule your first task, see what it asks before acting, and pause or turn it off.",
+    "answer_summary": "Open gemini.google.com or the Gemini app, switch from Chat to Task, describe the job and submit. Add a time to schedule it. Gemini asks before it sends, buys, deletes or submits anything, and you can stop a task or turn task mode off in Task settings.",
+    "tags": ["Gemini", "Gemini Tasks", "Google", "AI agents", "Guides"],
+    "hero_alt": "Gemini Spark presented on a large stage screen at Google I/O.",
+    "paragraphs": [
+      { "kind": "fact", "text": "Tasks in Gemini is Google's agent mode for the Gemini app. Instead of answering one message, it works through a job in the background: sorting your inbox, tracking prices, building a document from your files, or running the same check every morning. Google's help center calls the feature experimental. Google tested it with subscribers as Spark starting in May and has since renamed it.", "sources": [0, 2] },
+      { "kind": "fact", "text": "It is free without a Google AI subscription for people 18 and over in the US, Canada, Australia, India, Japan and South Korea. Elsewhere it needs Google AI Pro or Ultra, and it is not offered in the European Economic Area, Nigeria, Switzerland or the United Kingdom. It works only with a personal Google Account, not a work or school one, and Gemini Apps activity needs to be on.", "sources": [0, 1] },
+      { "kind": "heading", "text": "How to start your first Gemini task" },
+      { "kind": "step", "title": "1. Open Gemini", "text": "Go to gemini.google.com on a computer, or open the Gemini app on a Mac, an Android phone or an iPhone. Google says tasks are available only in those places." },
+      { "kind": "step", "title": "2. Switch from Chat to Task", "text": "On the web, click Task below the text box. In the phone app, flip the toggle on the home screen from Chat to Task." },
+      { "kind": "step", "title": "3. Describe the job", "text": "Write what you want done in plain words, the way you would brief a person. You can type @ to pick a saved skill, ask for a file as the result, or attach files with Upload and tools: upload a file, add one from Drive, or add a notebook. Then click Submit." },
+      { "kind": "step", "title": "4. Steer it while it works", "text": "Type more instructions at any time. Google says Gemini updates its work without losing progress. A progress chip at the top of the thread opens a panel with completed, current and planned steps, plus any files it made." },
+      { "kind": "tip", "text": "If you are not sure how to phrase a task, type set up, get started or interview me, and Gemini will ask you questions to build it." },
+      { "kind": "prompt", "title": "Prompt 1: Clean up your inbox", "text": "Go through my Gmail from the last 30 days. Summarize the newsletters I never open, archive them, and list which ones I should unsubscribe from. Ask me before you unsubscribe from anything." },
+      { "kind": "prompt", "title": "Prompt 2: Watch a price", "text": "Track hotel prices in [city] for [dates]. Alert me if a room under [budget] per night appears." },
+      { "kind": "heading", "text": "How to schedule a Gemini task" },
+      { "kind": "fact", "text": "A task can have a schedule: tell Gemini when to run it, in the same text box. Google's own example is a daily 8 AM update on AI news; another is a Monday Brief at 9:00 AM that recaps your email and adds a to-do list. You can have up to 15 tasks running at the same time, and a scheduled task will not start if 15 are already running.", "sources": [0, 1] },
+      { "kind": "prompt", "title": "Prompt 3: A weekly brief", "text": "Every Monday at 9:00 AM, recap my email from the past week, list anything I still need to answer, and make a to-do list for the week." },
+      { "kind": "step", "title": "Pause or resume a schedule", "text": "Open the task thread, click the scheduled task chip, then More options, and choose Pause or Resume. The Scheduled page on the web lists them too." },
+      { "kind": "heading", "text": "What Gemini asks before it acts" },
+      { "kind": "fact", "text": "Google says Gemini is designed to ask for your review before sending messages, deleting your data, sharing sensitive information, making purchases, completing financial transactions, or filling out and submitting web forms. Very sensitive actions need your permission every time, even if you change your preferences. The first time a task browses the web, Chrome asks to connect its auto browse feature to Gemini.", "sources": [0] },
+      { "kind": "fact", "text": "With your permission it can use Gmail, Calendar, Drive, Docs, Sheets, Slides, Keep, Google Tasks, Maps, Flights, Hotels and YouTube, plus more than 50 third party apps such as OpenTable and Instacart. Those app connections are off by default. Android Central reports that calling local businesses for you is rolling out in the US first.", "sources": [0, 1, 2] },
+      { "kind": "tip", "text": "Never type a password or card number into the task thread. When a site needs them, Gemini asks you to take control of the browser so you can type them on the site yourself." },
+      { "kind": "heading", "text": "How to stop a task or turn Tasks off" },
+      { "kind": "step", "title": "Stop one task", "text": "Click Stop in the Gemini text box. If Gemini is browsing in Chrome, you can also click Stop in the Gemini side panel, or click View live and then Take over task to finish it yourself." },
+      { "kind": "step", "title": "Turn task mode off", "text": "On the web, open Settings, then Task settings, and turn off Use task mode to hand off work. On a Mac, it is under Gemini, Settings, Tasks. Your schedules pause and your tasks and files are kept, so you can switch it back on later." },
+      { "kind": "analysis", "text": "What it is bad at: it can make mistakes and do unexpected things, in Google's own words, and some websites block it and hand the last step back to you. Hidden instructions in a web page or email could also try to steer it, which Google warns about. Start with low stakes jobs like inbox cleanup and price alerts before you trust it with anything that spends money or sends mail in your name." }
+    ]
+  }
+}

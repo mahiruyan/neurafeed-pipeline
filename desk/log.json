@@ -5166,5 +5166,63 @@
       }
     ],
     "requests": []
+  },
+  {
+    "run_at": "2026-11-20T19:04:44.109Z",
+    "summary": "Early afternoon run (14:00 New York, Nov 20): no open links or requests; queued the Anthropic mathematician's Riemann Hypothesis claim (priority 1, Instagram carousel as the day's priority 1 exception) and the fourth guide of the day (How to use Gemini Tasks, site-only). No Reel passed the filter.",
+    "considered": [
+      {
+        "story": "Anthropic mathematician Levent Alpöge says he and Claude found a proof of the Riemann Hypothesis",
+        "source": "https://www.bnnbloomberg.ca/business/artificial-intelligence/2026/11/20/anthropic-researcher-says-claude-solved-maths-greatest-riddle/",
+        "decision": "queued",
+        "job_id": "2026-11-20-anthropic-mathematician-riemann-proof-claude",
+        "priority": 1,
+        "reason": "The story the whole AI world is discussing today (top of Hacker News, WSJ, Washington Post, AFP); read AFP and Kingy AI. Framed clearly as an unverified claim. Posted on Instagram as a priority 1 exception even though today's carousels are already at 3."
+      },
+      {
+        "story": "Guide: How to use Gemini Tasks (now free in the US)",
+        "source": "https://support.google.com/gemini/answer/17094507?hl=en",
+        "decision": "queued",
+        "job_id": "2026-11-20-how-to-use-gemini-tasks-guide",
+        "priority": 2,
+        "reason": "Fourth guide today; hot tool this week, Google's help center plus Android Central, Inc. and Android Authority read."
+      },
+      {
+        "story": "Trump says he will penalize US tech companies that build AI data centers abroad (AP)",
+        "decision": "skipped",
+        "reason": "Only seen as AP headlines in leads and could not be read in this run; strong politics candidate for a later run."
+      },
+      {
+        "story": "Anthropic stock slides toward its IPO price, Nasdaq erases its gains for the year",
+        "decision": "covered",
+        "reason": "Anthropic IPO already posted twice (2026-11-18-anthropic-ipo-priced-83, 2026-11-19-anthropic-opens-111-nasdaq); the Riemann post mentions IPO week."
+      },
+      {
+        "story": "Frostbite: a CPU architecture designed and verified by AI (Hacker News)",
+        "decision": "skipped",
+        "reason": "Company blog only, insider hardware news, and site-only articles for today are already above 4."
+      },
+      {
+        "story": "Gemini 4 Neon tops the Models Engineering Index (Hacker News)",
+        "decision": "skipped",
+        "reason": "Benchmark news only insiders follow; Gemini 4 Neon was covered on November 18."
+      },
+      {
+        "story": "OpenAI says its models improved AMD's GPU design by up to 14% (Forbes)",
+        "decision": "skipped",
+        "reason": "Insider hardware story; site-only slots for today are full."
+      },
+      {
+        "story": "Watch Duty uses Gemini to flag wildfire dispatches in under 30 seconds",
+        "decision": "skipped",
+        "reason": "Only secondary write-ups in leads; site-only slots for today are full."
+      },
+      {
+        "story": "Reel search",
+        "decision": "skipped",
+        "reason": "X and Reddit cannot be read from this run (Reddit leads return 403) and no fresh clip on a company site passed Which Reels travel."
+      }
+    ],
+    "requests": []
   }
 ]
