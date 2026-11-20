@@ -1,77 +1,5 @@
 [
   {
-    "run_at": "2026-11-13T05:18:51.037Z",
-    "summary": "Late night run (23:53 New York, November 12): no open links or requests; queued 2 posts for the morning of November 13 (SpaceX's $50 billion Arizona AI campus filed under another name, and the FAA's AI routing tool going nationwide). Guides for November 13 start after 07:00.",
-    "considered": [
-      {
-        "story": "SpaceX plans a $50 billion AI campus in Cochise County, Arizona, filed as Tombstone Resources LLC, $74 billion total with Starbase",
-        "source": "https://www.thestar.com.my/tech/tech-news/2026/11/13/spacex-to-invest-over-74-billion-in-supercompute-facilities-in-texas-arizona",
-        "decision": "queued",
-        "job_id": "2026-11-13-spacex-50-billion-arizona-ai-campus-other-name",
-        "priority": 2,
-        "reason": "Money plus Musk plus a local fight; the Arizona site is new (only the $24 billion Starbase part was covered on November 10). Read Reuters via The Star, Teslarati, Interesting Engineering and AI Weekly. Image hosts could not be checked from here, so the pipeline download is the image check."
-      },
-      {
-        "story": "FAA expands its SMART AI air traffic tool to all 22 US en route centers",
-        "source": "https://gizmodo.com/the-faa-is-rolling-out-its-ai-air-traffic-tool-nationwide-2000839347",
-        "decision": "queued",
-        "job_id": "2026-11-13-faa-ai-reroutes-flights-nationwide",
-        "priority": 2,
-        "reason": "Everyone story (flights and delays) with a tension angle (controllers' union left out). Read Gizmodo, Deep Arrival and Terminair; Ars Technica and AeroTime could not be opened."
-      },
-      {
-        "story": "Flinn AI sues Anthropic and OpenAI over five attention patents each (Bloomberg Law, Reuters)",
-        "source": "https://news.bloomberglaw.com/ip-law/anthropic-openai-accused-of-copying-neural-networking-patents",
-        "decision": "skipped",
-        "reason": "Only paywalled openings were readable (no damages or details), too thin for a carousel and a full article; worth a look if fuller coverage appears."
-      },
-      {
-        "story": "Judge sanctions four lawyers over fake AI citations (Mississippi)",
-        "source": "https://www.theepochtimes.com/us/judge-sanctions-4-lawyers-over-ai-citations-6045676",
-        "decision": "skipped",
-        "reason": "The order is from June 2026, not new news."
-      },
-      {
-        "story": "Musk says it would be an honor to have Jensen Huang on board",
-        "source": "https://stocktwits.com/news-articles/markets/equity/space-x-commits-74-b-to-new-ai-campuses-while-musk-eyes-hiring-former-nvidia-ceo-starship-readies-flight-15/cNGCcw5R9a6",
-        "decision": "skipped",
-        "reason": "Could not read Musk's actual post, only a two word quote in one outlet; Huang's exit is already heavily covered."
-      },
-      {
-        "story": "Gemini 4 Hydrogen launch",
-        "decision": "covered",
-        "reason": "Already queued as 2026-11-12-gemini-4-hydrogen-free-users."
-      },
-      {
-        "story": "Democrats probe Trump's Nvidia China chip deal",
-        "decision": "covered",
-        "reason": "Already queued as 2026-11-13-democrats-probe-trump-nvidia-china-deal."
-      },
-      {
-        "story": "Nonprofits sue AI labs to freeze frontier models (Politico, CBS)",
-        "decision": "covered",
-        "reason": "Already queued as 2026-11-12-nonprofits-sue-to-freeze-frontier-ai."
-      },
-      {
-        "story": "Chinese frontier models carry the fingerprint of export controlled GPUs",
-        "source": "https://unemploymentlabs.com/checkpoint-forensics",
-        "decision": "skipped",
-        "reason": "Still only a self published analysis and minor outlets; no major confirmation yet."
-      },
-      {
-        "story": "Cerebras earnings beat and new Microsoft partnership (Barron's)",
-        "decision": "skipped",
-        "reason": "Investor news with little interest for a general US audience."
-      },
-      {
-        "story": "OpenAI picks Aleph as ChatGPT Ads reseller in 44 markets",
-        "decision": "skipped",
-        "reason": "Ad industry detail, mostly outside the US."
-      }
-    ],
-    "requests": []
-  },
-  {
     "run_at": "2026-11-13T07:08:36.631Z",
     "summary": "Night run (01:55 New York): no open links or requests; queued 2 news carousels (Blackwell chip forensics on Chinese AI labs, patent suits against Anthropic and OpenAI). Image hosts could not be opened from this run, so cover photos were chosen from the source articles without viewing them.",
     "considered": [
@@ -5209,6 +5137,65 @@
         "story": "Reel search",
         "decision": "skipped",
         "reason": "X, Reddit (403) and Wikimedia are not reachable from this run, so no clip passing the Reel filter could be checked."
+      }
+    ],
+    "requests": []
+  },
+  {
+    "run_at": "2026-11-20T07:03:23.859Z",
+    "summary": "Early run (Nov 20 New York, 2 a.m.): no open links or requests; queued 1 news carousel (Nadella on Microsoft's 60,000 exit offers, sensitive, needs approval); no Reel found.",
+    "considered": [
+      {
+        "story": "Nadella says he cannot promise Microsoft jobs will stay the same after 60,000 voluntary exit offers",
+        "source": "https://www.windowslatest.com/2026/11/19/asked-if-60000-exit-offers-mean-ai-layoffs-at-microsoft-satya-nadella-said-i-wish-i-could-just-sit-here-and-say-itll-all-be-the-same-i-cannot/",
+        "decision": "queued",
+        "job_id": "2026-11-20-nadella-60000-exit-offers",
+        "priority": 2,
+        "reason": "Jobs plus a famous CEO, the kind that travels; Windows Latest and TokenPost read. Marked sensitive (layoffs), so it waits for Mahir's approval."
+      },
+      {
+        "story": "Claude solves two open problems in black hole physics (Hacker News)",
+        "source": "https://www.anthropic.com/research/claude-black-hole-physics",
+        "decision": "skipped",
+        "reason": "Announced with Claude Fable 5.2 around November 9, so not new, and the Anthropic page could not be opened in this run."
+      },
+      {
+        "story": "Anthropic's 7 founders cashed out nearly $2B in the IPO (TechCrunch); NYT on new millionaires",
+        "decision": "covered",
+        "reason": "Anthropic IPO already posted twice (2026-11-18-anthropic-ipo-priced-83, 2026-11-19-anthropic-opens-111-nasdaq); same story, new angle."
+      },
+      {
+        "story": "Arizona commissioner questions Gilbert police use of AI in a report, second case in weeks (AZ Family)",
+        "source": "https://www.azfamily.com/2026/11/20/second-case-weeks-commissioner-questions-gilbert-police-use-ai-report/",
+        "decision": "skipped",
+        "reason": "Only one local source found so far; worth another look in a daytime run."
+      },
+      {
+        "story": "DeepMind employees are unionising (Hacker News)",
+        "source": "https://www.gdmunion.co.uk",
+        "decision": "skipped",
+        "reason": "Union drive has been reported since 2025 and May 2026; no new development confirmed by a news outlet."
+      },
+      {
+        "story": "AI is turning jobs into low-paid gig work (Rest of World)",
+        "source": "https://restofworld.org/2026/ai-jobs-skills-gig-work/",
+        "decision": "skipped",
+        "reason": "Feature piece, not news; today's carousel slot went to the Microsoft jobs story."
+      },
+      {
+        "story": "Anthropic rival says companies can mostly skip the pricey models (TechCrunch)",
+        "decision": "skipped",
+        "reason": "Could not find the article or a second source in this run."
+      },
+      {
+        "story": "SoftBank falls over 16% after the Anthropic debut (CNBC)",
+        "decision": "covered",
+        "reason": "Part of the Anthropic IPO story already posted."
+      },
+      {
+        "story": "Reel search",
+        "decision": "skipped",
+        "reason": "X and Reddit are not reachable from this run and search turned up only TV robot clips that fail the Reel filter (no surprising consumer use)."
       }
     ],
     "requests": []
