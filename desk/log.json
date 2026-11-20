@@ -1,63 +1,5 @@
 [
   {
-    "run_at": "2026-11-13T10:57:33.637Z",
-    "summary": "Early morning run (05:56 New York): no open links or requests; November 13 already has 7 of 8 posts, so nothing was queued and the last slot stays free for a priority 1 story later today. Guides for November 13 start after 07:00.",
-    "considered": [
-      {
-        "story": "Anthropic IPO: shares expected to start trading around November 19 or 20",
-        "source": "https://fourweekmba.com/ai-anthropic-ipo-shares-aim-to-start-trading-19-or-20-november/",
-        "decision": "covered",
-        "reason": "The IPO is covered by 2026-11-12-anthropic-ipo-retail-20-percent; the trading debut is next week, not today."
-      },
-      {
-        "story": "Nvidia employees petition to bring back Jensen Huang",
-        "decision": "covered",
-        "reason": "Already queued as 2026-11-13-nvidia-staff-want-jensen-huang-back."
-      },
-      {
-        "story": "Gemini 4 Hydrogen launch and free user access",
-        "decision": "covered",
-        "reason": "Already queued as 2026-11-12-gemini-4-hydrogen-free-users."
-      },
-      {
-        "story": "Chinese frontier models carry the fingerprint of banned Blackwell GPUs",
-        "decision": "covered",
-        "reason": "Already queued as 2026-11-13-chinese-ai-labs-banned-blackwell-fingerprint."
-      },
-      {
-        "story": "OpenAI backs bipartisan bills to tighten AI chip curbs on China",
-        "decision": "skipped",
-        "reason": "Only 1 slot left today and November 13 already has two Nvidia and China chip posts; keeping the slot for a bigger story."
-      },
-      {
-        "story": "Google sued over a teen's access to Gemini on a school Chromebook",
-        "decision": "skipped",
-        "reason": "Sensitive lawsuit on a day that already has three sensitive legal posts; worth a later run if more coverage appears and a slot opens."
-      },
-      {
-        "story": "Microsoft outage hits Outlook, Teams and Copilot, spilling over to OpenAI and Anthropic",
-        "decision": "skipped",
-        "reason": "Mainly a Microsoft 365 outage, and the last slot is held for a priority 1 story."
-      },
-      {
-        "story": "Cisco CEO says every worker now has an AI agent as the company earns more with fewer staff",
-        "decision": "skipped",
-        "reason": "Good money and jobs angle, but the daily cap leaves only one slot, held for priority 1 news."
-      },
-      {
-        "story": "Reuters exclusive: Huang exit and US scrutiny imperil $3 billion in Chinese AI projects",
-        "decision": "skipped",
-        "reason": "Another Huang and China chip angle on a day already full of them."
-      },
-      {
-        "story": "Google wants users to say Hey Gemini instead of Hey Google",
-        "decision": "skipped",
-        "reason": "Small product change; slot held for bigger news."
-      }
-    ],
-    "requests": []
-  },
-  {
     "run_at": "2026-11-13T13:06:10.919Z",
     "summary": "Morning run: today already has 7 Instagram posts queued or posted (cap 8, plus 2 held_cap from yesterday), so no new news carousel; queued the first site-only guide of the day (LM Studio). No open links or requests.",
     "considered": [
@@ -5121,6 +5063,63 @@
         "story": "Reel search",
         "decision": "skipped",
         "reason": "X and Reddit are not reachable from this run and no clip passing the Reel filter was found."
+      }
+    ],
+    "requests": []
+  },
+  {
+    "run_at": "2026-11-20T11:00:40.239Z",
+    "summary": "Early morning run (06:00 New York, Nov 20): no open links or requests; queued 1 site-only article (ChatGPT Live Dictation drops the 10 minute limit). Today's 2 Instagram carousels are already used; no Reel found.",
+    "considered": [
+      {
+        "story": "ChatGPT Live Dictation transcribes as you speak and removes the 10 minute recording limit",
+        "source": "https://9to5mac.com/2026/11/18/chatgpt-app-gains-enhanced-live-dictation-streaming-without-10-minute-limit/",
+        "decision": "queued",
+        "job_id": "2026-11-20-chatgpt-live-dictation-no-limit",
+        "priority": 2,
+        "reason": "Product change for all users but small for Instagram, so site-only; 9to5Mac, iThinkDifferent and Superpower Daily read."
+      },
+      {
+        "story": "Canva adds an off switch for its AI features (The Verge)",
+        "source": "https://www.canva.com/help/manage-ai-features/",
+        "decision": "skipped",
+        "reason": "Only Canva's help page could be read (The Verge failed) and it says the steps are still coming soon; retry in a daytime run."
+      },
+      {
+        "story": "16-year-old founds an AI missile startup, Polemos (Wired)",
+        "source": "https://www.wired.com/story/henrijs-dandzbergs-polemos-missiles-ai-warfare/",
+        "decision": "skipped",
+        "reason": "Strong person story, but today's 2 Instagram carousels are used and only one source exists so far."
+      },
+      {
+        "story": "Claude solves two open problems in black hole physics (Hacker News)",
+        "decision": "skipped",
+        "reason": "Announced around November 9, not new."
+      },
+      {
+        "story": "Meta Muse Charm device may cost $300 (TechCrunch, The Verge)",
+        "decision": "skipped",
+        "reason": "Price rumor for a gadget, not read in this run; site-only candidate later today."
+      },
+      {
+        "story": "Google puts AI chats on the search homepage (The Verge)",
+        "decision": "skipped",
+        "reason": "Earlier run judged the sidebar change too thin for an article."
+      },
+      {
+        "story": "Anthropic's 7 founders cashed out nearly $2B (TechCrunch)",
+        "decision": "covered",
+        "reason": "Anthropic IPO already posted twice (2026-11-18-anthropic-ipo-priced-83, 2026-11-19-anthropic-opens-111-nasdaq)."
+      },
+      {
+        "story": "Apple may be building an AI agent that runs your Mac",
+        "decision": "covered",
+        "reason": "Already queued as 2026-11-20-apple-mac-ai-agent-job-listing."
+      },
+      {
+        "story": "Reel search",
+        "decision": "skipped",
+        "reason": "Search found only old robot clips from earlier in the year; X and Reddit cannot be read from this run, so no clip passing the Reel filter was found."
       }
     ],
     "requests": []
