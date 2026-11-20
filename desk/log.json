@@ -1,68 +1,5 @@
 [
   {
-    "run_at": "2026-11-13T19:07:08.962Z",
-    "summary": "Afternoon run (13:55 New York): no open links or requests. Queued ChatGPT Wallet as a priority 1 OpenAI story; skipped other news because November 13 already has 6 posts plus 3 pending. No guide this run: the docs for the next guide candidates could not be opened.",
-    "considered": [
-      {
-        "story": "OpenAI launches ChatGPT Wallet so dots agents can pay for purchases",
-        "source": "https://9to5mac.com/2026/11/13/openai-launches-chatgpt-wallet-enabling-dot-agents-to-make-purchases/",
-        "decision": "queued",
-        "job_id": "2026-11-13-chatgpt-wallet-agents-spend-money",
-        "priority": 1
-      },
-      {
-        "story": "Fortune: OpenAI disbands its robotics team",
-        "decision": "skipped",
-        "reason": "Could not find and read the Fortune exclusive or a second source in this run, and the day is near the cap."
-      },
-      {
-        "story": "Claude outage: elevated errors on claude.ai, Claude Code and the API",
-        "source": "https://status.claude.com/incidents/nn11wk485zfn",
-        "decision": "skipped",
-        "reason": "Outage from this morning is over and the status page could not be opened; considered for a 'Claude not working' guide instead, but its docs could not be read either."
-      },
-      {
-        "story": "Arm CEO Rene Haas approached in Nvidia CEO search (FT)",
-        "source": "https://www.ft.com/content/2a64f698-46dd-4178-a3f4-4c5f4c0a0926",
-        "decision": "skipped",
-        "reason": "Paywalled single report on a day already full of Nvidia succession posts."
-      },
-      {
-        "story": "Anthropic IPO red flags and spending worries (Forbes, NYT, Inc.)",
-        "decision": "skipped",
-        "reason": "Analysis pieces rather than news; the Anthropic IPO was covered on November 12 and the day is near the cap."
-      },
-      {
-        "story": "Chinese AI models carry the fingerprint of export-controlled GPUs",
-        "decision": "covered",
-        "reason": "Already a job: 2026-11-13-chinese-ai-labs-banned-blackwell-fingerprint."
-      },
-      {
-        "story": "Nvidia employees petition to bring back Jensen Huang",
-        "decision": "covered",
-        "reason": "Already a job: 2026-11-13-nvidia-staff-want-jensen-huang-back."
-      },
-      {
-        "story": "Nonprofits sue Anthropic, Google, Meta, OpenAI and SpaceXSI to halt new models",
-        "decision": "covered",
-        "reason": "Already a job: 2026-11-12-nonprofits-sue-to-freeze-frontier-ai."
-      },
-      {
-        "story": "Chicago schools tell Google they would rather lose Search than accept AI",
-        "source": "https://www.techspot.com/news/114532-chicago-schools-tell-google-they-can-live-without.html",
-        "decision": "skipped",
-        "reason": "Good everyone story, but the day is at the cap; candidate for tomorrow if still developing."
-      },
-      {
-        "story": "How to use Otter AI (guide plan)",
-        "source": "https://otter.ai/",
-        "decision": "skipped",
-        "reason": "Otter's help center could not be opened, so plan limits and steps could not be checked against the vendor docs."
-      }
-    ],
-    "requests": []
-  },
-  {
     "run_at": "2026-11-13T21:09:52.671Z",
     "summary": "Late afternoon run (15:53 New York): no open links or requests. Queued the OpenAI robotics team story as priority 1 (Fortune exclusive confirmed by OpenAI, plus Nvidia's own Astra study), and two site-only guides (Leonardo AI, Hugging Face) to bring today to 5 of 6 guides. No other news because November 13 is already at the Instagram cap.",
     "considered": [
@@ -5221,6 +5158,69 @@
         "story": "Reel search",
         "decision": "skipped",
         "reason": "X and Reddit cannot be read from this run (Reddit leads return 403) and no fresh clip on a company site passed Which Reels travel."
+      }
+    ],
+    "requests": []
+  },
+  {
+    "run_at": "2026-11-20T21:03:38.568Z",
+    "summary": "Late afternoon run (16:00 New York, Nov 20): no open links or requests; queued the fifth and sixth website guides of the day (Gemini Nano Banana prompts, How to use Luma Dream Machine), both site-only. Instagram carousels for the day are already past 2 and no new priority 1 story or Reel video was found.",
+    "considered": [
+      {
+        "story": "Guide: Gemini Nano Banana prompts (guides plan Tier 3)",
+        "source": "https://support.google.com/gemini/answer/14286560",
+        "decision": "queued",
+        "job_id": "2026-11-20-gemini-nano-banana-prompts-guide",
+        "priority": 2,
+        "reason": "Fifth guide today; new angle (prompt pack) on a tool with three earlier guides, built from Google's help page, three Google blog tip posts, the DeepMind prompt guide and Tom's Guide."
+      },
+      {
+        "story": "Guide: How to use Luma AI Dream Machine (guides plan tool library)",
+        "source": "https://lumalabs.ai/learning-hub/ray3-faqs",
+        "decision": "queued",
+        "job_id": "2026-11-20-how-to-use-luma-dream-machine-guide",
+        "priority": 2,
+        "reason": "Sixth guide today, next tool library line. Luma's own pages disagree on some numbers (older credit tables, Draft speed), so the guide uses only the current price list and avoids the conflicting figures."
+      },
+      {
+        "story": "Guide: How to use ChatGPT agent mode / Grok Imagine / Freepik",
+        "decision": "skipped",
+        "reason": "Same blockers as earlier runs (docs not readable); took the next readable lines."
+      },
+      {
+        "story": "Trump says he will penalize US tech companies that build AI data centers abroad (AP)",
+        "decision": "skipped",
+        "reason": "Politics story only seen as AP syndication headlines; Instagram carousels for today are already over 2 and site-only articles are at 5 of 4, so left for a later run if it grows."
+      },
+      {
+        "story": "Guy Oseary's $435 million Anthropic stake is now worth about $7 billion after the IPO",
+        "decision": "skipped",
+        "reason": "Strong money and person angle, but the Anthropic IPO has already been posted twice and today's carousel slots are used; could be a candidate tomorrow."
+      },
+      {
+        "story": "Anthropic stock slides toward its IPO price, Nasdaq erases its 2026 gains (Reuters, CNN, MarketWatch)",
+        "decision": "covered",
+        "reason": "Anthropic IPO already posted as 2026-11-18-anthropic-ipo-priced-83 and 2026-11-19-anthropic-opens-111-nasdaq."
+      },
+      {
+        "story": "Anthropic researcher says Claude solved the Riemann Hypothesis (Phys.org, WSJ, Washington Post)",
+        "decision": "covered",
+        "reason": "Already queued as 2026-11-20-anthropic-mathematician-riemann-proof-claude."
+      },
+      {
+        "story": "Google workers petition Google not to punish schools that refuse AI (Mother Jones, Hacker News)",
+        "decision": "skipped",
+        "reason": "Single outlet seen and site-only slots for today are full."
+      },
+      {
+        "story": "House members launch a bipartisan AI safety and innovation caucus (Nextgov)",
+        "decision": "skipped",
+        "reason": "Insider policy news; site-only slots for today are full."
+      },
+      {
+        "story": "Reel search: viral AI, robot and gadget clips of the last day",
+        "decision": "skipped",
+        "reason": "Searches found only old clips (the showroom robot and smart glasses chess videos are months old or already made); X and Reddit cannot be read from this run."
       }
     ],
     "requests": []

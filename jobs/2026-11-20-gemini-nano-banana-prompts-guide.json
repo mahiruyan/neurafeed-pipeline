@@ -1,0 +1,115 @@
+{
+  "id": "2026-11-20-gemini-nano-banana-prompts-guide",
+  "format": "utility",
+  "site_only": true,
+  "created_at": "2026-11-20T21:30:00Z",
+  "story_time": "2026-11-20T21:30:00Z",
+  "timely": false,
+  "sensitive": false,
+  "priority": 2,
+  "sources": [
+    { "name": "Gemini Apps Help: Generate and edit images", "url": "https://support.google.com/gemini/answer/14286560" },
+    { "name": "Google blog: 4 tips for using Nano Banana", "url": "https://blog.google/products/gemini/nano-banana-tips/" },
+    { "name": "Google blog: 7 tips to get the most out of Nano Banana Pro", "url": "https://blog.google/products/gemini/prompting-tips-nano-banana-pro/" },
+    { "name": "Google DeepMind: Gemini Image prompt guide", "url": "https://deepmind.google/models/gemini-image/prompt-guide/" },
+    { "name": "Google blog: Tips for image generation and editing in the Gemini app", "url": "https://blog.google/products/gemini/image-generation-prompting-tips/" },
+    { "name": "Tom's Guide: 3 tips for creating images in Nano Banana", "url": "https://www.tomsguide.com/ai/google-gemini/how-to-create-amazing-images-in-googles-nano-banana-3-essential-tips" },
+    { "name": "Google blog: 10 examples of Nano Banana", "url": "https://blog.google/products/gemini/gemini-nano-banana-examples/" }
+  ],
+  "caption": "Nano Banana edits photos from plain sentences, but the wording decides what you get.\nGoogle's own tips say: name the one change, keep the rest the same, and quote any text you want on the image.\nHere are 10 prompts to copy, from fixing one detail to translating a label.\n\nWhich edit would you try first?\n\nFollow @neurafeed.ai for daily AI news.\n\nSource: Google · Photo: Google",
+  "threads_text": "Nano Banana in Gemini edits photos from a single sentence, and Google's own advice is simple: say the one change, then say keep everything else the same. Put any text you want in quotes. What is the first photo you would fix with it?",
+  "slides": [
+    {
+      "kind": "cover",
+      "headline": "10 *Nano Banana prompts* that fix your photos in one sentence",
+      "image": {
+        "url": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Gemini_Nano_Banana_Social_v4.width-1300.png",
+        "credit": "Google",
+        "fit": "contain",
+        "fallback_urls": ["https://storage.googleapis.com/gweb-uniblog-publish-prod/images/CatVideogame.width-1200.format-webp.webp"]
+      },
+      "pos": "center center"
+    },
+    {
+      "kind": "card",
+      "heading": "1. Say the *one change*",
+      "paras": [
+        "Google's example is just: the dog's mouth is closed. The rest of the photo stays as it was.",
+        "Add \"keep everything else the same\" when the edit must stay small."
+      ],
+      "image": { "url": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/NanoBanana_Edit.width-1200.format-webp.webp", "credit": "Google", "fit": "contain" }
+    },
+    {
+      "kind": "card",
+      "heading": "2. Mix *several photos*",
+      "paras": [
+        "Upload up to three images and say what goes where: this pattern on the wall, that one on the dress.",
+        "It can also restore and colorize an old photo."
+      ],
+      "image": { "url": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/NanoBanana_CombineIdeas.width-1200.format-webp.webp", "credit": "Google", "fit": "contain" }
+    },
+    {
+      "kind": "card",
+      "heading": "3. Change the *time of day*",
+      "paras": [
+        "\"Turn this scene into nighttime\" is one of Google's own Nano Banana Pro examples.",
+        "Swapping the setting or the light keeps the subject recognizable."
+      ],
+      "image": { "url": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/WM-Fox.width-1200.format-webp.webp", "credit": "Google", "fit": "contain" }
+    },
+    {
+      "kind": "card",
+      "heading": "4. Translate the *label*",
+      "paras": [
+        "Ask it to translate the text on a product into another language while keeping everything else the same.",
+        "Put any exact words you want on the image in quotes."
+      ],
+      "image": { "url": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/NanoBanana_TranslateCans_8COQLPB.width-1200.format-webp.webp", "credit": "Google", "fit": "contain" }
+    },
+    {
+      "kind": "cta",
+      "hook": "Follow for AI guides with prompts you can copy and use today."
+    }
+  ],
+  "site_article": {
+    "kind": "guide",
+    "headline": "Gemini Nano Banana prompts: 10 to copy for photo edits",
+    "dek": "Nano Banana edits photos from plain sentences in the Gemini app. These ten prompts follow Google's own tips, from fixing one detail to translating text on a label.",
+    "summary": "Nano Banana is the image model in the Gemini app that creates and edits pictures from text. Google's tips come down to naming the change clearly, keeping the rest of the image the same, and putting any text you want in quotes.",
+    "seo_title": "Gemini Nano Banana prompts: 10 to copy for photo edits",
+    "seo_description": "10 Gemini Nano Banana prompts to copy for photo edits: change one detail, swap the background, combine photos, restore old pictures, add and translate text.",
+    "answer_summary": "Open gemini.google.com, upload a photo, and type one clear instruction such as \"Change the sofa's color to deep navy blue, keep everything else the same.\" Google recommends naming the subject, the change and the style, and putting any text you want on the image in quotes.",
+    "tags": ["Gemini", "Nano Banana", "AI image editing", "Prompts", "Guides"],
+    "hero_alt": "Collage of Gemini photo edits, including an orange cat turned into a pixel art video game character.",
+    "paragraphs": [
+      { "kind": "fact", "text": "Nano Banana is the image model inside the Gemini app. You upload a photo, write what you want changed in a normal sentence, and it returns an edited version. These Gemini Nano Banana prompts are built on Google's own published tips and examples, so they show the kind of wording the model is designed for. The short rule: say exactly what should change, and say what should stay.", "sources": [0, 1, 4] },
+      { "kind": "fact", "text": "Google says simple, conversational instructions work, and that the model remembers earlier images in the same chat, so you can build an edit one step at a time instead of cramming everything into one prompt. Its tips break a good prompt into a few parts: the subject, the composition, the action, the location, the style and the editing instruction. You rarely need all six. For an edit, the subject and the instruction usually do the job.", "sources": [1, 4, 2] },
+      { "kind": "heading", "text": "How to start an edit in Gemini" },
+      { "kind": "step", "title": "1. Open Gemini and add your photo", "text": "Go to gemini.google.com and sign in. Google's help page says you can open the sidebar, go to Library, pick an image and click Chat, or upload an image from your device. Tom's Guide describes the quicker route: click the plus button in the chat box, attach the photo, type the prompt and send it." },
+      { "kind": "step", "title": "2. Write one instruction and send it", "text": "Type the change in the box at the bottom and submit. If the result is close but not right, reply in the same chat with a correction. That follow up keeps the earlier image as the starting point." },
+      { "kind": "step", "title": "3. Generate from scratch when you have no photo", "text": "Open the sidebar and choose Images, then pick a template or type a prompt. Google suggests starting with words like draw, generate or create, and naming a style such as photorealistic, watercolor painting or cartoon illustration." },
+      { "kind": "heading", "text": "10 Nano Banana prompts to copy" },
+      { "kind": "prompt", "title": "Prompt 1: Change one detail", "text": "Change the color of the [object] to [color]. Keep everything else in the photo exactly the same." },
+      { "kind": "tip", "text": "This follows Google's own examples, such as changing a sofa to deep navy blue. Naming one object and one change gives the model the least room to touch the rest of the picture. Google calls this kind of small, targeted change a local edit." },
+      { "kind": "prompt", "title": "Prompt 2: Fix a small thing", "text": "The [subject]'s [detail] is [how it should look]. Do not change anything else." },
+      { "kind": "tip", "text": "Google's example is only five words: the dog's mouth is closed. You do not need to describe the whole photo again." },
+      { "kind": "prompt", "title": "Prompt 3: Remove something and change something", "text": "Change the man's tie to green and remove the car in the background." },
+      { "kind": "tip", "text": "This is a Google example from its Nano Banana Pro tips. Two short instructions in one sentence work. If you want five changes, do them over several messages instead." },
+      { "kind": "prompt", "title": "Prompt 4: Change the time of day or the setting", "text": "Turn this scene into nighttime." },
+      { "kind": "prompt", "title": "Prompt 5: Restyle the whole photo", "text": "Apply the style of an architectural drawing to this image." },
+      { "kind": "tip", "text": "Swap architectural drawing for any style you can name: watercolor, charcoal drawing, cartoon illustration. Google lists stylization among the things that can come out inconsistent, so expect to try twice." },
+      { "kind": "prompt", "title": "Prompt 6: Combine photos", "text": "Use the pattern from the second image on the wall and the pattern from the third image on the dress in the first image. Keep the person and the room the same." },
+      { "kind": "tip", "text": "Google says you can combine up to three images in the Gemini app, and that Nano Banana Pro accepts more reference images depending on where you use it. Describing each image by its order, or by a name, keeps the model from mixing them up." },
+      { "kind": "prompt", "title": "Prompt 7: Restore an old photo", "text": "Restore this old photo: fix the scratches and the faded parts, and colorize it. Keep the faces exactly as they are." },
+      { "kind": "prompt", "title": "Prompt 8: Put a character in a new scene", "text": "Recreate this [pet or object] as a 16-bit video game character, and place the character in a level of a 2D 16-bit platform video game." },
+      { "kind": "tip", "text": "This is one of Google's launch examples, with a cat. For a series of images, Google's prompt guide suggests giving the character a name and keeping the conversation going so it stays recognizable." },
+      { "kind": "prompt", "title": "Prompt 9: Add text that reads right", "text": "Turn this photo into a 9:16 vertical poster. Add the headline \"[YOUR TEXT]\" in bold, white, sans-serif font at the top." },
+      { "kind": "tip", "text": "Google's guide says to put the exact words in quotes and describe the font. Ask for the aspect ratio you need, such as 9:16 for a phone screen or 1:1 for a square post." },
+      { "kind": "prompt", "title": "Prompt 10: Translate text on a product", "text": "Translate all the English text on the [object] into [language], while keeping everything else the same." },
+      { "kind": "heading", "text": "Which model you get, and the limits" },
+      { "kind": "fact", "text": "Google's help page names three versions in the Gemini app. Nano Banana Lite is used when Gemini is set to Flash-Lite and is built for speed; Google says it is not designed for multiple reference images or for multiple edits. Nano Banana 2 is used with Flash or Pro and accepts several reference images. Nano Banana Pro 2 redoes an image with more detail, and the Redo with Pro option needs a Google AI plan.", "sources": [0] },
+      { "kind": "fact", "text": "There is a daily quota, but the help page does not give a number. It also says that once you reach your daily Nano Banana 2 limit, you cannot redo more images with Pro. Editing images is not available to users under 18, and availability depends on the supported languages and countries of the Gemini app.", "sources": [0] },
+      { "kind": "analysis", "text": "Where it falls short: Google itself lists small text, factual accuracy, translation nuance, blending artifacts and character consistency as weak spots. Treat text on the image as a draft and read every letter before you post it. For photos of real people, follow Google's policy on privacy and copyright, and do not edit someone's picture in a way they would not agree to." }
+    ]
+  }
+}
