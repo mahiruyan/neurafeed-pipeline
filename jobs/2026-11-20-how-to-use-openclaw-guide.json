@@ -1,0 +1,113 @@
+{
+  "id": "2026-11-20-how-to-use-openclaw-guide",
+  "format": "utility",
+  "site_only": true,
+  "created_at": "2026-11-20T17:25:00Z",
+  "story_time": "2026-11-20T17:25:00Z",
+  "timely": false,
+  "sensitive": false,
+  "priority": 2,
+  "sources": [
+    { "name": "OpenClaw Docs: Getting started", "url": "https://docs.openclaw.ai/start/getting-started" },
+    { "name": "OpenClaw Docs: Install", "url": "https://docs.openclaw.ai/install" },
+    { "name": "OpenClaw Docs: Telegram setup", "url": "https://docs.openclaw.ai/channels/telegram/setup" },
+    { "name": "OpenClaw Docs: Pairing", "url": "https://docs.openclaw.ai/channels/pairing" },
+    { "name": "OpenClaw Docs: Security", "url": "https://docs.openclaw.ai/gateway/security" },
+    { "name": "OpenClaw Docs: Why OpenClaw", "url": "https://docs.openclaw.ai/start/why-openclaw" },
+    { "name": "Malwarebytes: OpenClaw, what is it and can you use it safely?", "url": "https://www.malwarebytes.com/blog/news/2026/02/openclaw-what-is-it-and-can-you-use-it-safely" }
+  ],
+  "caption": "OpenClaw is a free, open source AI assistant that runs on your own computer and answers you in Telegram, WhatsApp, Discord and more.\nSetup takes one command, but it can read files and run commands, so the safety settings matter.\nHere is how to install it, connect Telegram and keep it locked down.\n\nWould you let an AI agent run on your own laptop?\n\nFollow @neurafeed.ai for daily AI news.\n\nSource: OpenClaw Docs · Photo: Malwarebytes",
+  "threads_text": "OpenClaw is a free, open source AI assistant that runs on your own machine and talks to you through Telegram or WhatsApp. Install is one command. The hard part is safety: it can run commands and read files, and sandboxing is off by default. Would you run an agent like that on your main laptop?",
+  "slides": [
+    {
+      "kind": "cover",
+      "headline": "How to use *OpenClaw*: your own AI assistant in Telegram and WhatsApp",
+      "image": {
+        "url": "https://www.malwarebytes.com/wp-content/uploads/sites/2/2026/02/OpenClaw_logo.png",
+        "credit": "Malwarebytes",
+        "fit": "contain"
+      },
+      "pos": "center center"
+    },
+    {
+      "kind": "card",
+      "heading": "1. Install in *one command*",
+      "paras": [
+        "On Mac or Linux the docs give a one line install script. It installs Node if needed and starts setup.",
+        "Pick Quick start: it reuses a Claude Code or Codex login or an API key you already have."
+      ],
+      "image": {
+        "url": "https://docs.openclaw.ai/assets/openclaw-hero-light.png",
+        "credit": "OpenClaw",
+        "fit": "contain"
+      }
+    },
+    {
+      "kind": "card",
+      "heading": "2. Chat from *Telegram*",
+      "paras": [
+        "Make a bot with @BotFather, then add its token with one OpenClaw command.",
+        { "t": "Strangers get a pairing code. Nothing runs until you approve them.", "strong": true }
+      ],
+      "image": {
+        "url": "https://opengraph.githubassets.com/1/openclaw/openclaw",
+        "credit": "OpenClaw on GitHub",
+        "fit": "contain"
+      }
+    },
+    {
+      "kind": "card",
+      "heading": "3. Lock it *down*",
+      "paras": [
+        "Sandboxing is off by default. Run the built in security audit after setup.",
+        "Malwarebytes advises running agents like this in a separate VM or container, away from your real accounts."
+      ],
+      "image": {
+        "url": "https://docs.openclaw.ai/assets/openclaw-hero-dark.png",
+        "credit": "OpenClaw",
+        "fit": "contain"
+      }
+    },
+    {
+      "kind": "cta",
+      "hook": "Follow for more setup guides for the AI tools people are actually using."
+    }
+  ],
+  "site_article": {
+    "kind": "guide",
+    "headline": "How to use OpenClaw: install it, connect Telegram and keep it safe",
+    "dek": "OpenClaw is a free, open source AI assistant that runs on your own machine and talks to you in your chat apps. Here is the setup, step by step, and the safety settings that matter.",
+    "summary": "OpenClaw is an open source AI assistant that runs on your own hardware and connects to chat apps like Telegram, WhatsApp and Discord. Setup takes one install command, but because it can run commands and read files, it needs careful limits.",
+    "seo_title": "How to use OpenClaw: install, Telegram setup and safety",
+    "seo_description": "How to use OpenClaw: install it with one command, finish onboarding, open the dashboard, connect a Telegram bot and lock down who can message your agent.",
+    "answer_summary": "Install OpenClaw with its one line installer, choose Quick start to reuse an existing Claude Code, Codex or API key login, then run openclaw dashboard to chat. To use it from your phone, create a Telegram bot with @BotFather and add the token with openclaw channels add.",
+    "tags": ["OpenClaw", "AI agents", "Telegram", "Open source AI", "Guides"],
+    "hero_alt": "The OpenClaw logo on a plain background.",
+    "paragraphs": [
+      { "kind": "fact", "text": "OpenClaw is an open source AI assistant that runs on your own hardware and answers you in the chat apps you already use, according to its documentation. It runs a Gateway on your machine, works with many AI models, and has no paid tier. If you want to know how to use OpenClaw, the short version is: install it with one command, reuse an AI login you already have, then connect a chat app like Telegram.", "sources": [0, 5] },
+      { "kind": "fact", "text": "It is not a toy. Malwarebytes describes OpenClaw as an agent that can browse the web, run shell commands, read and write files and chain skills together without a human checking each step. That is why it is useful, and why the safety section of this guide matters more than the install. The project was earlier known as ClawdBot and then Moltbot, Malwarebytes reported.", "sources": [6] },
+      { "kind": "heading", "text": "What you need before you start" },
+      { "kind": "fact", "text": "The docs list two requirements. You need Node.js 24.16.0 or newer on the 24 line, or 26.1.0 or newer, and Node 26 is the recommended version. You also need some way to reach an AI model: an existing Claude Code or Codex CLI login, or an API key from a model provider. OpenClaw itself is free; the AI model you connect is what you may pay for.", "sources": [0, 1] },
+      { "kind": "tip", "text": "Check your Node version first with node --version. If Node is missing, the installer script can set it up for you on macOS and Linux." },
+      { "kind": "heading", "text": "How to use OpenClaw: install and first chat" },
+      { "kind": "step", "title": "1. Run the installer", "text": "On macOS, Linux or WSL2, the docs give this command: curl -fsSL https://openclaw.ai/install.sh | bash. On Windows PowerShell it is iwr -useb https://openclaw.ai/install.ps1 | iex. The script detects your system, installs Node if needed, installs OpenClaw and starts onboarding. If you would rather just try it first, npx openclaw@latest runs it without the installer." },
+      { "kind": "step", "title": "2. Choose Quick start", "text": "Onboarding offers Quick start and Custom setup. Quick start looks for a Claude Code or Codex login or an API key you already have, checks that it works with a real request, saves the config and opens the web dashboard. If nothing it finds works, it switches to manual provider setup. You can change settings later with openclaw configure." },
+      { "kind": "step", "title": "3. Keep it running in the background", "text": "In Quick start the Gateway runs in your terminal until you press Ctrl+C. To keep it running, stop it and run openclaw gateway install. That installs a background service: a LaunchAgent on macOS, a systemd user unit on Linux and WSL2, or a Scheduled Task on Windows. Your config is kept." },
+      { "kind": "step", "title": "4. Check it and open the dashboard", "text": "Run openclaw gateway status and you should see the Gateway listening on port 18789. Then run openclaw dashboard. It opens the Control UI in your browser, where you can type a message and get a reply from your assistant." },
+      { "kind": "tip", "text": "On Windows, the docs recommend the native Windows Hub companion app as the easiest path. There is also a macOS menu bar app if you prefer a normal app download over the terminal." },
+      { "kind": "heading", "text": "Connect OpenClaw to Telegram" },
+      { "kind": "fact", "text": "The docs call Telegram the fastest channel to set up, because it only needs a bot token. Other channels include Discord, iMessage, Microsoft Teams, Signal, Slack and WhatsApp.", "sources": [0, 2] },
+      { "kind": "step", "title": "5. Create a bot with BotFather", "text": "Open Telegram and start a chat with @BotFather. Check that the handle is exactly @BotFather. Send /newbot, follow the prompts and save the token it gives you." },
+      { "kind": "step", "title": "6. Give OpenClaw the token", "text": "Run openclaw channels add --channel telegram --token followed by your bot token. Then run openclaw channels status --probe to confirm Telegram is ready. Telegram does not use a login command; the token is all it needs." },
+      { "kind": "step", "title": "7. Approve your first message", "text": "Send any message to your bot. With the default pairing policy, that message is not processed. Instead it creates a pairing request. Run openclaw pairing list telegram, then openclaw pairing approve telegram with the code shown. Codes expire after one hour." },
+      { "kind": "fact", "text": "Pairing is OpenClaw's approval step for who may talk to your agent. Unknown senders get a short code and their message is ignored until you approve it. You can also approve requests in the Control UI under Settings, Channels, DM access requests. Approving a direct message does not give that person access in groups.", "sources": [3] },
+      { "kind": "heading", "text": "How to keep OpenClaw safe" },
+      { "kind": "fact", "text": "The OpenClaw docs say the defaults are conservative: on a normal install the Gateway only listens on your own machine, most chat channels answer unknown senders with a pairing code, and group access is allowlisted. The same docs are clear that sandboxing is off by default. They offer one command to check your setup: openclaw security audit.", "sources": [4, 5] },
+      { "kind": "fact", "text": "Outside researchers are more cautious. Malwarebytes reported problems including prompt injection, exposed instances and a growing ecosystem of dubious third party plugins, and noted that the Dutch data protection authority warned organizations not to run experimental agents like OpenClaw on systems with sensitive data. Its advice, based on Microsoft's recommendations, is to run such agents in a sandboxed virtual machine or container, give them their own limited accounts, and treat every new skill as new code.", "sources": [6] },
+      { "kind": "tip", "text": "Do not install OpenClaw on the laptop that holds your bank, work and password manager logins. Use a spare machine, a virtual machine or a container, connect only the accounts it needs, and install skills only from sources you trust." },
+      { "kind": "heading", "text": "If OpenClaw does not work" },
+      { "kind": "fact", "text": "Run openclaw triage. The docs say it runs read only health checks and writes a cleaned up description of the problem, then offers to hand it to a coding agent such as Claude Code or Codex. Secrets, tokens and raw logs are left out. To read the findings yourself, run openclaw doctor instead.", "sources": [0] },
+      { "kind": "analysis", "text": "OpenClaw is a good fit if you are comfortable in a terminal and want an assistant you control, on your own hardware, reachable from your phone. It is a poor fit if you want something that is safe with no thought: an agent that can run commands needs the same care as any program you give admin rights. Start small, with one channel, one model and no sensitive accounts, and widen access only when you trust what it does." }
+    ]
+  }
+}
