@@ -1,68 +1,5 @@
 [
   {
-    "run_at": "2026-11-13T13:06:10.919Z",
-    "summary": "Morning run: today already has 7 Instagram posts queued or posted (cap 8, plus 2 held_cap from yesterday), so no new news carousel; queued the first site-only guide of the day (LM Studio). No open links or requests.",
-    "considered": [
-      {
-        "story": "How to use LM Studio (guides plan, tool library)",
-        "source": "https://lmstudio.ai/docs/app",
-        "decision": "queued",
-        "job_id": "2026-11-13-how-to-use-lm-studio-guide",
-        "priority": 2
-      },
-      {
-        "story": "Hackers read some Notion customers' AI chat transcripts through the Fireworks AI breach",
-        "source": "https://techcrunch.com/2026/11/12/cyberattack-on-fireworks-ai-allowed-hackers-to-access-notion-customers-chat-transcripts/",
-        "decision": "skipped",
-        "reason": "Good story, but today is at 7 of 8 posts with two held posts waiting; leaving the last slot for a priority 1 story later today."
-      },
-      {
-        "story": "Test finds AI shopping assistants cite risky sites (Perplexity 15%, ChatGPT 8%, Gemini 4%)",
-        "source": "https://www.theverge.com/ai-artificial-intelligence/1032020/gemini-chatgpt-perplexity-shopping-test-risky-fake-websites-citations",
-        "decision": "skipped",
-        "reason": "Daily cap nearly full; a good everyone story for a later day if still fresh."
-      },
-      {
-        "story": "SoftBank takes a $3.7 billion charge after over-ordering AI power equipment",
-        "source": "https://www.semafor.com/article/11/12/2026/softbank-loses-billions-after-over-ordering-energy-equipment-for-ai-buildout/",
-        "decision": "skipped",
-        "reason": "Daily cap nearly full."
-      },
-      {
-        "story": "Reuters: Huang exit and US scrutiny put $3 billion of Chinese AI projects at risk",
-        "decision": "covered",
-        "reason": "Nvidia and Huang angle already heavily covered today (nvidia-staff-want-jensen-huang-back, chinese-ai-labs-banned-blackwell-fingerprint, democrats-probe-trump-nvidia-china-deal)."
-      },
-      {
-        "story": "Gemini 4 Hydrogen launch",
-        "decision": "covered",
-        "reason": "Posted as 2026-11-12-gemini-4-hydrogen-free-users."
-      },
-      {
-        "story": "Nonprofits sue AI labs to halt frontier AI",
-        "decision": "covered",
-        "reason": "Already a job: 2026-11-12-nonprofits-sue-to-freeze-frontier-ai."
-      },
-      {
-        "story": "SpaceX $74 billion AI supercomputing campuses",
-        "decision": "covered",
-        "reason": "Already queued as 2026-11-13-spacex-50-billion-arizona-ai-campus-other-name."
-      },
-      {
-        "story": "Anthropic IPO price range and Robinhood UK access",
-        "decision": "covered",
-        "reason": "Covered by 2026-11-12-anthropic-ipo-retail-20-percent; pricing has not happened yet."
-      },
-      {
-        "story": "Anthropic Claude Managed Agents self-hosted private beta",
-        "source": "https://x.com/ClaudeDevs/status/2120938988165091693",
-        "decision": "skipped",
-        "reason": "Developer-only beta, little interest for a general audience."
-      }
-    ],
-    "requests": []
-  },
-  {
     "run_at": "2026-11-13T15:17:23.073Z",
     "summary": "Morning run (10:07 New York): no open links or requests; November 13 is already full of Instagram posts (3 posted, 2 approved, 3 waiting for Mahir, plus 2 held from yesterday), and no new priority 1 story appeared, so no news carousel. Queued the second site-only guide of the day (Meta AI in WhatsApp). ChatGPT Atlas guides in the plan were skipped because Atlas shut down on August 9, 2026.",
     "considered": [
@@ -5190,6 +5127,90 @@
         "story": "Reel search",
         "decision": "skipped",
         "reason": "X and Reddit cannot be read from this run (Reddit leads are empty) and no clip passing the Reel filter was found."
+      }
+    ],
+    "requests": []
+  },
+  {
+    "run_at": "2026-11-20T15:05:54.196Z",
+    "summary": "Midmorning run: no open links or requests; queued two site-only articles (Claude black hole physics, Google homepage AI Mode sidebar) and one site-only guide (Claude Code prompts). Instagram carousels for the day are already at 2; no Reel video passed the filter.",
+    "considered": [
+      {
+        "story": "Anthropic details how Claude Fable 5.2 agents solved two open black hole physics problems",
+        "source": "https://www.anthropic.com/research/claude-black-hole-physics",
+        "decision": "queued",
+        "job_id": "2026-11-20-claude-black-hole-physics-six-weeks",
+        "priority": 2,
+        "reason": "Site-only: the research post is from November 17 and today's 2 Instagram carousels are taken; only mentioned in passing in the Fable 5.2 launch job."
+      },
+      {
+        "story": "Google's desktop homepage gets an AI Mode chat history sidebar",
+        "source": "https://www.digitaltrends.com/computing/google-search-is-starting-to-look-a-lot-like-a-chatbot-app/",
+        "decision": "queued",
+        "job_id": "2026-11-20-google-homepage-ai-mode-sidebar",
+        "priority": 2,
+        "reason": "Product change, site-only per Volume and mix."
+      },
+      {
+        "story": "Guide: Claude Code prompts (guides plan Tier 3, prompts for claude code)",
+        "source": "https://code.claude.com/docs/en/best-practices",
+        "decision": "queued",
+        "job_id": "2026-11-20-claude-code-prompts-guide",
+        "priority": 2,
+        "reason": "Second guide of the day, alternating from the tool library line (OpenRouter) to the tiers."
+      },
+      {
+        "story": "Anthropic's 7 founders cashed out nearly $2B in the IPO",
+        "source": "https://techcrunch.com/2026/11/19/anthropics-7-founders-cashed-out-nearly-2b-in-record-breaking-ipo/",
+        "decision": "covered",
+        "reason": "Already covered as 2026-11-18-anthropic-ipo-priced-83 and 2026-11-19-anthropic-opens-111-nasdaq."
+      },
+      {
+        "story": "Apple hiring engineers for its own Mac AI agent",
+        "source": "https://www.theverge.com/tech/1038227/apple-ai-agent-engineer-job-listing",
+        "decision": "covered",
+        "reason": "Already queued as 2026-11-20-apple-mac-ai-agent-job-listing."
+      },
+      {
+        "story": "Meta's Muse Charm device may cost $300",
+        "source": "https://techcrunch.com/2026/11/19/metas-new-muse-charm-device-may-cost-300/",
+        "decision": "skipped",
+        "reason": "A rumored price for an unreleased gadget; weaker than the stories queued and the Muse privacy story already ran today."
+      },
+      {
+        "story": "16-year-old founded an AI missile startup (Wired)",
+        "source": "https://www.wired.com/story/henrijs-dandzbergs-polemos-missiles-ai-warfare/",
+        "decision": "skipped",
+        "reason": "Strong person story, but today's 2 Instagram carousels are already queued and the Wired page could not be read for a second source in this run."
+      },
+      {
+        "story": "Jensen Huang scandal reaches his favorite restaurants (Wired)",
+        "source": "https://www.wired.com/story/jensen-huangs-favorite-restaurants-are-caught-up-in-his-scandals-too/",
+        "decision": "skipped",
+        "reason": "Side angle on a story already covered many times this week."
+      },
+      {
+        "story": "DeepMind employees unionising",
+        "source": "https://www.gdmunion.co.uk",
+        "decision": "skipped",
+        "reason": "Only the union's own site in leads, no news coverage found to confirm it in this run."
+      },
+      {
+        "story": "ChatGPT for SNES (Hacker News)",
+        "source": "https://www.bxfoundry.com/chatgpt_snes/",
+        "decision": "skipped",
+        "reason": "Possible Reel, but the page could not be opened and no video or news coverage was found."
+      },
+      {
+        "story": "Reel search: viral AI and robot videos of the last day",
+        "decision": "skipped",
+        "reason": "Searches turned up no fresh clip on X or a company site that passes Which Reels travel; Reddit leads are still empty."
+      },
+      {
+        "story": "Canva adds an AI off button",
+        "source": "https://www.theverge.com/ai-artificial-intelligence/1037126/canva-ai-features-off-button",
+        "decision": "skipped",
+        "reason": "Small product change; the Verge could not be opened in this run."
       }
     ],
     "requests": []

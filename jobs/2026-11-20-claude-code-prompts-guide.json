@@ -1,0 +1,261 @@
+{
+  "id": "2026-11-20-claude-code-prompts-guide",
+  "format": "utility",
+  "site_only": true,
+  "created_at": "2026-11-20T15:30:00Z",
+  "story_time": "2026-11-20T15:30:00Z",
+  "timely": false,
+  "sensitive": false,
+  "priority": 2,
+  "sources": [
+    {
+      "name": "Claude Code Docs: Best practices",
+      "url": "https://code.claude.com/docs/en/best-practices"
+    },
+    {
+      "name": "Claude Code Docs: Common workflows",
+      "url": "https://code.claude.com/docs/en/common-workflows"
+    },
+    {
+      "name": "Anthropic Engineering: Claude Code best practices",
+      "url": "https://www.anthropic.com/engineering/claude-code-best-practices"
+    },
+    {
+      "name": "SitePoint: Claude Code workflows",
+      "url": "https://www.sitepoint.com/claude-code-workflows-a-practical-pattern-guide/"
+    }
+  ],
+  "caption": "Eight Claude Code prompts built on Anthropic's own best practices.\nThe trick in most of them: give Claude a way to check its work, like a failing test or a build that must pass.\nPlan first, be specific, clear the session between tasks.\n\nWhich task do you give Claude Code first?\n\nFollow @neurafeed.ai for daily AI news.\n\nSource: Claude Code Docs · Photo: Anthropic",
+  "threads_text": "Most bad Claude Code results come from prompts with no way to check the work. Ask for a failing test first, or tell it the build must pass, and the output gets a lot better. What is the one prompt you use most in Claude Code?",
+  "slides": [
+    {
+      "kind": "cover",
+      "headline": "8 *Claude Code prompts* that work on real projects (copy and paste)",
+      "image": {
+        "url": "https://assets.claude.com/454390de9d9ccefb6082b7c2440c7547c1ec3964.webp",
+        "credit": "Anthropic",
+        "fit": "contain",
+        "fallback_urls": [
+          "https://assets.claude.com/d4645137a0c197beee5313fedbf9417d035452fc.webp"
+        ]
+      },
+      "pos": "center center",
+      "badges": [
+        {
+          "url": "assets/logos/claude.png",
+          "fit": "contain"
+        }
+      ],
+      "badge_side": "right"
+    },
+    {
+      "kind": "prompt",
+      "heading": "1. Get the *lay of the land*",
+      "paras": [
+        "Start here in any repo you did not write.",
+        "You get a map before anything gets changed."
+      ],
+      "prompt": "Give me an overview of this codebase. Explain the main architecture patterns and the key data models, then tell me which files handle [feature]."
+    },
+    {
+      "kind": "prompt",
+      "heading": "2. Plan *before* code",
+      "paras": [
+        "Use it in plan mode: press Shift+Tab until the status bar says plan mode is on.",
+        "Claude reads and proposes, but does not edit yet."
+      ],
+      "prompt": "I want to add [feature]. Read [folder] first. What files need to change? Create a plan before writing any code."
+    },
+    {
+      "kind": "prompt",
+      "heading": "3. Fix a bug the *right way*",
+      "paras": [
+        "Give it the symptom and where to look.",
+        "The failing test proves the bug and the fix."
+      ],
+      "prompt": "Users report that [what goes wrong]. Check [folder]. Write a failing test that reproduces the issue, then fix it and run the tests again."
+    },
+    {
+      "kind": "prompt",
+      "heading": "4. Fix the build, not the *symptom*",
+      "paras": [
+        "For a red build, paste the real error.",
+        "Without the last line, a quick hack can win."
+      ],
+      "prompt": "The build fails with this error: [paste error]. Fix it and confirm the build passes. Fix the root cause, do not suppress the error."
+    },
+    {
+      "kind": "prompt",
+      "heading": "5. Copy your own *patterns*",
+      "paras": [
+        "Point it at code you already like.",
+        "New code then looks like the old code."
+      ],
+      "prompt": "Look at how [existing component] is built to understand our patterns. Follow the same pattern to build [new component]. Use only libraries already in this codebase."
+    },
+    {
+      "kind": "prompt",
+      "heading": "6. Let it *interview* you",
+      "paras": [
+        "For a bigger feature, start with questions, not code.",
+        "Then build from SPEC.md in a fresh session."
+      ],
+      "prompt": "I want to build [short description]. Interview me in detail about the implementation, UI, edge cases and tradeoffs. Skip obvious questions. When we are done, write a full spec to SPEC.md."
+    },
+    {
+      "kind": "cta",
+      "hook": "Follow for AI guides you can use in your next session."
+    }
+  ],
+  "site_article": {
+    "kind": "guide",
+    "headline": "Claude Code prompts: 8 to copy and paste for real projects",
+    "dek": "Eight prompts built on Anthropic's own Claude Code advice, for understanding a codebase, fixing bugs, building features and reviewing changes.",
+    "summary": "Eight copy and paste Claude Code prompts based on the patterns in Anthropic's documentation. Most of them give Claude a way to verify its work, such as a failing test or a build that has to pass.",
+    "seo_title": "Claude Code prompts: 8 to copy and paste for real projects",
+    "seo_description": "8 Claude Code prompts to copy and paste: explore a codebase, plan in plan mode, fix bugs with a failing test, write tests and review changes with a subagent.",
+    "answer_summary": "The best Claude Code prompts are specific and include a way to check the result: name the files, describe the symptom, and ask for a failing test or a passing build. Plan larger changes in plan mode (Shift+Tab) first, and use /clear between tasks.",
+    "tags": [
+      "Claude Code",
+      "Claude",
+      "Prompts",
+      "AI coding",
+      "Guides"
+    ],
+    "hero_alt": "Promotional image for Anthropic's Claude Code.",
+    "paragraphs": [
+      {
+        "kind": "fact",
+        "text": "These Claude Code prompts come from the patterns Anthropic recommends in its own Claude Code documentation, rewritten with [brackets] so you can paste them into your own project. The short version: give Claude a way to check its work, plan before it codes, and be specific about files and the result you want. Vague prompts get vague code.",
+        "sources": [
+          0,
+          1
+        ]
+      },
+      {
+        "kind": "fact",
+        "text": "Anthropic's best practices page makes one point above the rest: Claude does better when it can verify its own work, with a test to run, a build that has to pass, or a screenshot to compare against. Most prompts below build that check into the request.",
+        "sources": [
+          0
+        ]
+      },
+      {
+        "kind": "heading",
+        "text": "Claude Code prompts for understanding a codebase"
+      },
+      {
+        "kind": "prompt",
+        "title": "Prompt 1: Get the lay of the land",
+        "text": "Give me an overview of this codebase. Explain the main architecture patterns and the key data models, then tell me which files handle [feature]."
+      },
+      {
+        "kind": "tip",
+        "text": "You can point at files directly with @, for example @src/utils/auth.js. Typing @ opens a menu of paths, and Anthropic's docs note it also loads the CLAUDE.md files from that folder and its parents."
+      },
+      {
+        "kind": "prompt",
+        "title": "Prompt 2: Plan before code",
+        "text": "I want to add [feature]. Read [folder] first. What files need to change? Create a plan before writing any code."
+      },
+      {
+        "kind": "step",
+        "title": "How to turn on plan mode",
+        "text": "Press Shift+Tab until the status bar shows that plan mode is on, or start a session with claude --permission-mode plan. In plan mode Claude reads and proposes but does not edit. Press Ctrl+G to edit the plan in your own editor, then approve it or press Shift+Tab to leave. Anthropic says to skip planning for changes you could describe in one sentence, because it adds overhead."
+      },
+      {
+        "kind": "heading",
+        "text": "Prompts for fixing bugs"
+      },
+      {
+        "kind": "prompt",
+        "title": "Prompt 3: Fix a bug the right way",
+        "text": "Users report that [what goes wrong]. Check [folder]. Write a failing test that reproduces the issue, then fix it and run the tests again."
+      },
+      {
+        "kind": "analysis",
+        "text": "The failing test is the important part. It proves the bug exists, and when it passes you know the fix did something. Without it you are trusting Claude's word."
+      },
+      {
+        "kind": "prompt",
+        "title": "Prompt 4: Fix the build, not the symptom",
+        "text": "The build fails with this error: [paste error]. Fix it and confirm the build passes. Fix the root cause, do not suppress the error."
+      },
+      {
+        "kind": "heading",
+        "text": "Prompts for building features"
+      },
+      {
+        "kind": "prompt",
+        "title": "Prompt 5: Copy your own patterns",
+        "text": "Look at how [existing component] is built to understand our patterns. Follow the same pattern to build [new component]. Use only libraries already in this codebase."
+      },
+      {
+        "kind": "prompt",
+        "title": "Prompt 6: Let it interview you",
+        "text": "I want to build [short description]. Interview me in detail about the implementation, UI, edge cases and tradeoffs. Skip obvious questions. When we are done, write a full spec to SPEC.md."
+      },
+      {
+        "kind": "tip",
+        "text": "Anthropic suggests building from the finished spec in a fresh session, so the long interview does not fill the context Claude needs for the code."
+      },
+      {
+        "kind": "heading",
+        "text": "Prompts for tests and review"
+      },
+      {
+        "kind": "prompt",
+        "title": "Prompt 7: Fill the test gaps",
+        "text": "Find the functions in [file] that are not covered by tests. Add tests for them, including edge cases, then run the new tests and fix any failures."
+      },
+      {
+        "kind": "prompt",
+        "title": "Prompt 8: Get a second opinion",
+        "text": "Use a subagent to review the changes against [PLAN.md]. Check that every requirement is implemented and the edge cases have tests. Report gaps, not style preferences."
+      },
+      {
+        "kind": "fact",
+        "text": "A subagent works in its own context, so the review is not shaped by the session that wrote the code. Anthropic's docs warn that reviewers tend to over-report, which is why the prompt asks for gaps and not style. When you are happy, a plain request to commit with a descriptive message and open a pull request finishes the job.",
+        "sources": [
+          0,
+          1
+        ]
+      },
+      {
+        "kind": "heading",
+        "text": "Setup that makes every prompt work better"
+      },
+      {
+        "kind": "step",
+        "title": "1. Run /init",
+        "text": "The /init command writes a starter CLAUDE.md, a file Claude reads at the start of every session. Keep it short: the test commands, the stack, and rules Claude keeps getting wrong. Anthropic's test for each line is whether removing it would cause mistakes."
+      },
+      {
+        "kind": "step",
+        "title": "2. Use /clear between tasks",
+        "text": "Performance drops as the context window fills, and Claude can start forgetting earlier instructions. Clear the session when you switch tasks, and if you have corrected Claude twice on the same thing, Anthropic suggests clearing and starting over with a better prompt."
+      },
+      {
+        "kind": "step",
+        "title": "3. Name your stack",
+        "text": "SitePoint's guide to Claude Code workflows recommends writing the exact versions of your frameworks into CLAUDE.md, because without them Claude may invent imports or use the wrong version of an API. It also warns against putting secrets in CLAUDE.md, since the file is usually committed."
+      },
+      {
+        "kind": "heading",
+        "text": "Where Claude Code still struggles"
+      },
+      {
+        "kind": "fact",
+        "text": "Long sessions are the weak spot. Anthropic's docs say a single debugging session can use tens of thousands of tokens, a bloated CLAUDE.md makes Claude ignore instructions, and checkpoints only track edits made through Claude's file tools, so they are no substitute for git. SitePoint suggests starting a new session after three or four chained steps.",
+        "sources": [
+          0,
+          2,
+          3
+        ]
+      },
+      {
+        "kind": "tip",
+        "text": "Small, specific tasks with a clear check at the end beat one giant prompt. If a prompt has no way for Claude to prove it worked, add one."
+      }
+    ]
+  }
+}

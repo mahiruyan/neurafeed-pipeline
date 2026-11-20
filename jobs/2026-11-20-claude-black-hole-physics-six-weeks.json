@@ -1,0 +1,185 @@
+{
+  "id": "2026-11-20-claude-black-hole-physics-six-weeks",
+  "created_at": "2026-11-20T15:20:00Z",
+  "story_time": "2026-11-17T17:00:00Z",
+  "timely": false,
+  "sensitive": false,
+  "priority": 2,
+  "site_only": true,
+  "format": "carousel",
+  "site_category": "models",
+  "ab": {
+    "headline": "short",
+    "photo": "story"
+  },
+  "sources": [
+    {
+      "name": "Anthropic",
+      "url": "https://www.anthropic.com/research/claude-black-hole-physics"
+    },
+    {
+      "name": "Gadget Review",
+      "url": "https://www.gadgetreview.com/anthropic-claims-claude-models-can-solve-black-hole-mysteries"
+    },
+    {
+      "name": "FourWeekMBA",
+      "url": "https://fourweekmba.com/ai-anthropic-fable-5-2-solved-2-physics-problems-built-an-os/"
+    }
+  ],
+  "caption": "Anthropic says Claude Fable 5.2 solved two open problems in the physics of black holes.\nA group of Claude agents worked on them for about six weeks, and one proof was checked by a computer proof checker.\nAnthropic itself says neither result has practical uses.\n\nWould you trust a physics proof written by an AI?\n\nFollow @neurafeed.ai for daily AI news.\n\nSource: Anthropic · Photo: Event Horizon Telescope",
+  "threads_text": "Anthropic says a team of Claude agents solved two open black hole physics problems, one dating back to a 2003 calculation nobody finished. A physicist checked the main results, but no outside review has been published yet. Would you trust an AI written physics paper?",
+  "slides": [
+    {
+      "kind": "cover",
+      "headline": "Claude solved two open problems about *black holes*",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/4/4f/Black_hole_-_Messier_87_crop_max_res.jpg",
+        "credit": "Event Horizon Telescope / CC BY 4.0",
+        "fallback_urls": [
+          "https://assets.claude.com/57a443b51d13727573b7c1290130d09c5f434b2c.jpg"
+        ]
+      },
+      "pos": "center center",
+      "badges": [
+        {
+          "url": "assets/logos/claude.png",
+          "fit": "contain"
+        }
+      ],
+      "badge_side": "right"
+    },
+    {
+      "kind": "card",
+      "heading": "A lab full of *Claudes*",
+      "paras": [
+        "An Anthropic researcher asked Claude Fable 5.2 for open black hole problems. It listed 22.",
+        "Separate Claude agents took them on in the background for about six weeks."
+      ],
+      "image": {
+        "url": "https://assets.claude.com/d913081b89811f38ba99ed3b443810f802c4895c.png?w=3840&q=75&fm=webp&fit=max",
+        "credit": "Anthropic",
+        "fit": "contain"
+      }
+    },
+    {
+      "kind": "card",
+      "heading": "A math job left since *2003*",
+      "paras": [
+        "Physicists set out one calculation in 2003 but never finished it: thousands of terms.",
+        "Claude did it and found the switch from hot gas to black hole is abrupt."
+      ],
+      "image": {
+        "url": "https://assets.claude.com/0aaa39ce8e656316eb9cc8febaedbbe561a83e4f.png?w=3840&q=75&fm=webp&fit=max",
+        "credit": "Anthropic",
+        "fit": "contain"
+      }
+    },
+    {
+      "kind": "card",
+      "heading": "Checked by a *computer*",
+      "paras": [
+        "The second proof was verified in Lean, a computer proof checker, and a physicist checked both results.",
+        {
+          "t": "Anthropic says neither has practical uses.",
+          "strong": true
+        }
+      ],
+      "image": {
+        "url": "https://assets.claude.com/9af4b5104bd6e996b926897d822e83232e5644ff.png?w=3840&q=75&fm=webp&fit=max",
+        "credit": "Anthropic",
+        "fit": "contain"
+      }
+    },
+    {
+      "kind": "cta",
+      "hook": "Follow to see what AI can and cannot do in real science."
+    }
+  ],
+  "site_article": {
+    "headline": "Anthropic details how Claude agents solved two open black hole physics problems",
+    "dek": "A team of Claude Fable 5.2 agents worked for about six weeks, and one of the two proofs was checked in the Lean proof assistant.",
+    "summary": "Anthropic published a research post on November 17, 2026, describing how Claude Fable 5.2 solved two open problems about black holes in theoretical physics. One result settles a weak coupling calculation first set out in 2003; the other gives an exact ceiling of about c/9.1266 in a 3D gravity bootstrap and was verified in Lean.",
+    "seo_title": "Claude black hole physics: the two problems Anthropic says it solved",
+    "seo_description": "Anthropic says Claude Fable 5.2 solved two open black hole physics problems in six weeks. What was proven, how it was checked, and the limits Anthropic admits.",
+    "answer_summary": "Anthropic says Claude Fable 5.2 showed that the Hawking-Page transition is abrupt at weak coupling in N=4 super Yang-Mills theory, and proved an optimal ceiling of about c/9.1266 on the lightest black hole in a modular bootstrap for 3D gravity. Anthropic says neither result has practical applications.",
+    "tags": [
+      "Anthropic",
+      "Claude",
+      "Claude Fable 5.2",
+      "Physics",
+      "AI in science"
+    ],
+    "hero_alt": "The first image of a black hole: a glowing orange ring around a dark center.",
+    "paragraphs": [
+      {
+        "kind": "fact",
+        "text": "Anthropic published a detailed account on November 17, 2026, of how Claude Fable 5.2 solved two open problems in the theoretical physics of black holes. The company had first mentioned the results when it released Fable 5.2 earlier in November, alongside other claims such as a computer checked proof project and a prototype operating system.",
+        "sources": [
+          0,
+          1,
+          2
+        ]
+      },
+      {
+        "kind": "fact",
+        "text": "According to Anthropic, the work began in August as a side test run by Hongbin Chen, a researcher at the company. He asked Claude for open problems about black holes and a method called the bootstrap, and the model returned 22 candidates. Separate Claude agents were assigned to each one. They could read each other's progress posts and ran in the background for about six weeks. Anthropic describes the setup as Claude running a small research group made of copies of itself.",
+        "sources": [
+          0
+        ]
+      },
+      {
+        "kind": "heading",
+        "text": "The first problem: an abrupt jump"
+      },
+      {
+        "kind": "fact",
+        "text": "The first problem concerns the Hawking-Page transition, the point at which a hot gas in a curved space called anti-de Sitter space gives way to a black hole. Hawking and Page showed in 1983 that on the gravity side the switch is abrupt. The open question was what happens in the matching quantum theory, N=4 super Yang-Mills, when its forces are weak.",
+        "sources": [
+          0
+        ]
+      },
+      {
+        "kind": "fact",
+        "text": "Anthropic says a group of physicists including Aharony set out the calculation in 2003. It depends on a single number that appears three loops deep and requires many thousands of terms. The same group finished a simpler related theory in 2005 and found an abrupt transition there, but the N=4 version is more than ten times larger and was never completed. Claude completed it and found that the transition is abrupt in this case too. Anthropic adds that the most natural possibility is that it stays abrupt at every strength in between, which it presents as a likelihood rather than a proven result.",
+        "sources": [
+          0
+        ]
+      },
+      {
+        "kind": "heading",
+        "text": "The second problem: a ceiling on the lightest black hole"
+      },
+      {
+        "kind": "fact",
+        "text": "The second problem comes from the modular bootstrap for gravity in three dimensions, which limits how heavy the lightest black hole in such a theory can be. Earlier work proved a ceiling of c/6 in 2009 and later c/8.5, while numerical studies suggested about c/9.1. According to Anthropic, Claude proved a ceiling given by an exact formula, about c/9.1266, and showed that it is the best this version of the method can reach. An earlier Claude agent had failed at the problem in 61 parallel attempts, and Anthropic says half of the final proof follows a strategy from a result recently proved by an OpenAI model.",
+        "sources": [
+          0
+        ]
+      },
+      {
+        "kind": "fact",
+        "text": "Anthropic says the second result was formally verified in Lean, a computer proof checker, in September, and that two other agents reached the same answer independently. For the first problem, nearly every piece of the calculation was done twice by separate agents and the final answer was reached by two methods. The company says Claude wrote the paper with minimal guidance and a physicist checked every main result.",
+        "sources": [
+          0
+        ]
+      },
+      {
+        "kind": "fact",
+        "text": "Anthropic is also clear about the limits. It says neither result describes the real universe directly, neither has practical applications, and neither settles the question of quantum gravity. Gadget Review noted that the findings are reported by the company and have not cleared independent review, and FourWeekMBA said it had not verified them.",
+        "sources": [
+          0,
+          1,
+          2
+        ]
+      },
+      {
+        "kind": "analysis",
+        "text": "The more telling part of the account may be the method rather than the physics. A single researcher set many agents loose on a list of problems, let them share notes for weeks, and then checked what came back with a proof assistant and a human expert. That workflow, with machine checking at the end, is what makes the claim testable at all."
+      },
+      {
+        "kind": "why_it_matters",
+        "text": "The next thing to watch is whether outside physicists review the papers and whether the results hold up in formal peer review, which neither the launch nor the research post describes."
+      }
+    ]
+  }
+}
