@@ -1,0 +1,112 @@
+{
+  "id": "2026-11-20-how-to-use-openrouter-guide",
+  "format": "utility",
+  "site_only": true,
+  "created_at": "2026-11-20T13:05:00Z",
+  "story_time": "2026-11-20T13:05:00Z",
+  "timely": false,
+  "sensitive": false,
+  "priority": 2,
+  "sources": [
+    { "name": "OpenRouter Docs: Quickstart", "url": "https://openrouter.ai/docs/quickstart" },
+    { "name": "OpenRouter Docs: FAQ", "url": "https://openrouter.ai/docs/faq" },
+    { "name": "OpenRouter Docs: Limits", "url": "https://openrouter.ai/docs/api/reference/limits.md" },
+    { "name": "OpenRouter Docs: Free Models Router in the playground", "url": "https://openrouter.ai/docs/cookbook/get-started/free-models-router-playground.md" },
+    { "name": "OpenRouter Help Center: Rate limits", "url": "https://openrouter.zendesk.com/hc/en-us/articles/39501163636379" },
+    { "name": "Merge: How to get your OpenRouter API key", "url": "https://www.merge.dev/blog/openrouter-api-key" }
+  ],
+  "caption": "OpenRouter gives you hundreds of AI models behind one API key and one bill.\nThere is a free router too, but free models get 50 requests a day until you have bought 10 credits.\nHere is how to set it up, and the fee to know before you top up.\n\nWould you use one key for every AI model?\n\nFollow @neurafeed.ai for daily AI news.\n\nSource: OpenRouter Docs · Photo: OpenRouter",
+  "threads_text": "OpenRouter puts hundreds of AI models behind one API key. The free router is real, but free models are capped at 50 requests a day until you have bought 10 credits, and buying credits carries a 5.5% fee. Would you route all your AI calls through one service?",
+  "slides": [
+    {
+      "kind": "cover",
+      "headline": "How to use *OpenRouter*: one API key for hundreds of AI models",
+      "image": {
+        "url": "https://mintcdn.com/openrouter-d02e98a0/PSwwwiCqAD_BNeni/assets/cookbook/get-started/free-models-router-playground/free-router-selected.png?fit=max&auto=format&n=PSwwwiCqAD_BNeni&q=85&s=da5c29afeab8f3f1d6b277c4f21bde1b",
+        "credit": "OpenRouter",
+        "fit": "contain",
+        "fallback_urls": [
+          "https://mintcdn.com/openrouter-d02e98a0/PSwwwiCqAD_BNeni/assets/cookbook/get-started/free-models-router-playground/free-router-response.png?fit=max&auto=format&n=PSwwwiCqAD_BNeni&q=85&s=f8386a7b19a310ecaf210cc18133ac3b"
+        ]
+      },
+      "pos": "center center"
+    },
+    {
+      "kind": "card",
+      "heading": "1. Make a *key*",
+      "paras": [
+        "Sign in, open Keys and click New Key. You can name it, set a credit limit and an expiry date.",
+        "Copy the key right away and keep it in a password manager."
+      ],
+      "image": {
+        "url": "https://cdn.prod.website-files.com/62796ab9647626cbab663f42/6a3c2fcd55f3f78257dee2e7_91eb3743.png",
+        "credit": "Merge",
+        "fit": "contain",
+        "fallback_urls": ["https://cdn.prod.website-files.com/62796ab9647626cbab663f42/6a3c2fcd55f3f78257dee2ed_099215f8.png"]
+      }
+    },
+    {
+      "kind": "card",
+      "heading": "2. Try it *free*",
+      "paras": [
+        "In the chat playground, add the Free Models Router. It picks a free model at random for each request.",
+        { "t": "50 free requests a day, 1,000 once you have bought 10 credits.", "strong": true }
+      ],
+      "image": {
+        "url": "https://mintcdn.com/openrouter-d02e98a0/PSwwwiCqAD_BNeni/assets/cookbook/get-started/free-models-router-playground/free-models-search.png?fit=max&auto=format&n=PSwwwiCqAD_BNeni&q=85&s=c99cb85c309b9b104c2bdaf3089e38c0",
+        "credit": "OpenRouter",
+        "fit": "contain"
+      }
+    },
+    {
+      "kind": "card",
+      "heading": "3. Plug it into *your code*",
+      "paras": [
+        "OpenRouter works with the OpenAI SDK: set the base URL to openrouter.ai/api/v1 and use your OpenRouter key.",
+        "Buying credits costs a 5.5% fee, with a $0.80 minimum."
+      ],
+      "image": {
+        "url": "https://mintcdn.com/openrouter-d02e98a0/PSwwwiCqAD_BNeni/assets/cookbook/get-started/free-models-router-playground/free-router-response.png?fit=max&auto=format&n=PSwwwiCqAD_BNeni&q=85&s=f8386a7b19a310ecaf210cc18133ac3b",
+        "credit": "OpenRouter",
+        "fit": "contain"
+      }
+    },
+    {
+      "kind": "cta",
+      "hook": "Follow for guides that tell you the limits and fees before you hit them."
+    }
+  ],
+  "site_article": {
+    "kind": "guide",
+    "headline": "How to use OpenRouter: API key, free models and fees explained",
+    "dek": "OpenRouter puts hundreds of AI models behind one API and one balance. Here is how to get a key, try the free models, connect your code and avoid the surprises.",
+    "summary": "OpenRouter is a single API for hundreds of AI models that works with the OpenAI SDK. Free models are limited to 50 requests a day until you have bought at least 10 credits, and buying credits carries a 5.5% fee.",
+    "seo_title": "How to use OpenRouter: API key, free models and limits",
+    "seo_description": "How to use OpenRouter: create an API key, try free models with the Free Models Router, connect the OpenAI SDK, and understand rate limits, fees and privacy.",
+    "answer_summary": "Sign up at openrouter.ai, add credits if you want paid models, create an API key under Keys, and point the OpenAI SDK at https://openrouter.ai/api/v1. For free use, pick a model ending in :free or the openrouter/free router, which allows 50 requests a day, or 1,000 after you have bought 10 credits.",
+    "tags": ["OpenRouter", "AI API", "Free AI models", "Guides"],
+    "hero_alt": "OpenRouter chat playground with the Free Models Router selected in the model list.",
+    "paragraphs": [
+      { "kind": "fact", "text": "OpenRouter gives you access to hundreds of AI models through one API endpoint, one account and one credit balance, according to its documentation. It handles fallbacks between providers on its own and does not add a markup to the price of inference. If you want to know how to use OpenRouter, the short version is: make a key, start with the free models, then point your existing OpenAI code at OpenRouter's address.", "sources": [0, 1] },
+      { "kind": "fact", "text": "Two things catch new users out. Free models have tight daily limits until you have bought at least 10 credits, and every credit purchase carries a fee. Both are covered below.", "sources": [1, 2] },
+      { "kind": "heading", "text": "How to use OpenRouter: get an API key" },
+      { "kind": "step", "title": "1. Create an account", "text": "Go to openrouter.ai and choose Get API Key, then sign in or create an account. A third party walkthrough by Merge notes you can log in with OAuth, email and password, or a passkey. Making an account and a key is free; you only pay when you use paid models." },
+      { "kind": "step", "title": "2. Make a key", "text": "Click New Key. A pop up lets you name the key, set an optional credit limit, choose whether that limit resets on a schedule such as weekly or monthly, and set an expiry date. A limit is worth setting on any key you put into a script or share with a tool." },
+      { "kind": "step", "title": "3. Copy and store it", "text": "Copy the key and keep it in a password manager. Your code sends it as a Bearer token in the Authorization header. You can check a key's remaining credit and limits with a GET request to https://openrouter.ai/api/v1/key." },
+      { "kind": "tip", "text": "Use one key per app or tool, each with its own credit limit. If a key leaks, you lose that limit, not your whole balance." },
+      { "kind": "heading", "text": "Try OpenRouter free models first" },
+      { "kind": "fact", "text": "Many models have a free variant, marked with :free at the end of the model ID, with its own rate limits. There is also a Free Models Router, with the model ID openrouter/free, which picks a free model at random for each request and filters for features your request needs, such as reading images or calling tools.", "sources": [1, 3] },
+      { "kind": "step", "title": "4. Test it in the playground", "text": "Open the chat playground at openrouter.ai/chat, click Add Model, type free and select Free Models Router. Send a message, and the reply shows which model answered. Chat room conversations are stored on your device and do not sync across devices." },
+      { "kind": "fact", "text": "The free limits: 20 requests a minute and 50 requests a day if you have bought less than 10 credits in total, and 20 a minute and 1,000 a day once you have bought at least 10. The higher tier counts what you have ever bought, not your current balance, so it stays even after you spend the credits. Failed attempts count toward the daily quota, and making extra accounts or keys does not raise the limits. Free models can also be throttled by their providers at busy times.", "sources": [1, 2, 4] },
+      { "kind": "tip", "text": "If you list paid models as fallbacks next to openrouter/free, those paid models are billed at their normal price. To keep a request free, list only openrouter/free or :free models." },
+      { "kind": "heading", "text": "Connect OpenRouter to your code" },
+      { "kind": "step", "title": "5. Point the OpenAI SDK at OpenRouter", "text": "OpenRouter follows the OpenAI API format, including the chat completions and responses endpoints. In the OpenAI SDK, set the base URL to https://openrouter.ai/api/v1 and use your OpenRouter key as the API key. Then pass any model ID from openrouter.ai/models. Two optional headers, HTTP-Referer and X-OpenRouter-Title, put your app on OpenRouter's public rankings." },
+      { "kind": "prompt", "title": "Example: a first request with curl", "text": "curl https://openrouter.ai/api/v1/responses \\\n  -H \"Content-Type: application/json\" \\\n  -H \"Authorization: Bearer $OPENROUTER_API_KEY\" \\\n  -d '{ \"model\": \"openrouter/free\", \"input\": \"Hello!\" }'" },
+      { "kind": "fact", "text": "Set stream to true to get the answer as it is written. Paid models have no request cap from OpenRouter itself, though the providers behind them can still throttle. If you hit a free limit, you get a 429 error; honor the Retry-After header when it is there.", "sources": [1, 2, 4] },
+      { "kind": "heading", "text": "OpenRouter fees, credits and privacy" },
+      { "kind": "fact", "text": "OpenRouter charges a 5.5% fee, with a $0.80 minimum, when you buy credits, and 5% when you pay in crypto. Model prices are the providers' own rates. Unused credits can be refunded within 24 hours of purchase, but the platform fee cannot, and OpenRouter says it may expire credits that go unused for a year. Bring your own key usage is free up to $25,000 a month on pay as you go, then costs 5% of list price.", "sources": [1] },
+      { "kind": "fact", "text": "A negative balance can cause errors even on free models, so top up above zero if requests start failing. By default OpenRouter logs metadata such as timestamps, the model and token counts, but not your prompts and answers. In the privacy settings you choose whether requests may go to providers that train on data or keep it.", "sources": [1, 2] },
+      { "kind": "analysis", "text": "OpenRouter is good for trying many models without opening many accounts, and for adding a fallback when one provider goes down. It is less useful if you only ever call one model: then the credit fee is a cost you could skip by going to that provider directly. Start with the free router, then buy 10 credits once you need more than 50 requests a day." }
+    ]
+  }
+}

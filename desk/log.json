@@ -5123,5 +5123,75 @@
       }
     ],
     "requests": []
+  },
+  {
+    "run_at": "2026-11-20T13:03:54.923Z",
+    "summary": "Morning run (08:00 New York, Nov 20): no open links or requests; queued the first website guide of the day (How to use OpenRouter, site-only). Today's 2 Instagram carousels are already used; no new priority 1 story and no Reel found.",
+    "considered": [
+      {
+        "story": "Guide: How to use OpenRouter (guides plan, tool library)",
+        "source": "https://openrouter.ai/docs/quickstart",
+        "decision": "queued",
+        "job_id": "2026-11-20-how-to-use-openrouter-guide",
+        "priority": 2,
+        "reason": "Next readable tool library line; OpenRouter quickstart, FAQ, limits and free router docs plus its help center and Merge read."
+      },
+      {
+        "story": "Guide: How to use ChatGPT agent mode",
+        "decision": "skipped",
+        "reason": "OpenAI's help center was not reachable in earlier runs; not retried this run."
+      },
+      {
+        "story": "Guide: How to use OpenClaw / Luma Dream Machine (plan lines before OpenRouter)",
+        "decision": "skipped",
+        "reason": "Picked OpenRouter because its official docs could be read in full this run; these stay next in line."
+      },
+      {
+        "story": "Microsoft MAI Image 2.7 and Flash in public preview, Canvas in MAI Labs",
+        "source": "https://scalevise.com/resources/microsoft-mai-image-2-7-flash-canvas-platform-rollout/",
+        "decision": "skipped",
+        "reason": "Announced November 17 and only secondary write-ups could be read, not Microsoft's own post; insider model news."
+      },
+      {
+        "story": "Meta Muse Charm device may cost $300 (TechCrunch, The Verge)",
+        "source": "https://techcrunch.com/2026/11/19/metas-new-muse-charm-device-may-cost-300/",
+        "decision": "skipped",
+        "reason": "Neither article could be opened in this run; still a site-only candidate later today."
+      },
+      {
+        "story": "Google built a mirror internet to test its Chrome AI agents (Wired)",
+        "source": "https://www.wired.com/story/google-built-a-giant-mirror-dimension-internet-to-test-its-chrome-ai-agents/",
+        "decision": "skipped",
+        "reason": "Wired could not be opened in this run; good site-only candidate for a later run."
+      },
+      {
+        "story": "House panel says US approved 879,000 AI chips for Chinese firms (CNBC, Reuters)",
+        "source": "https://www.cnbc.com/2026/11/19/nvidia-amd-china-chip-sales-congress.html",
+        "decision": "skipped",
+        "reason": "Already judged in the 04:00 run: conflicting figures and the China chip angle was covered on November 17."
+      },
+      {
+        "story": "OpenAI Performance Factory: Codex agents fixed over 600 ChatGPT slowdowns",
+        "source": "https://openai.com/index/how-openai-performance-factory-keeps-chatgpt-fast",
+        "decision": "skipped",
+        "reason": "Engineering blog post that mostly insiders follow; site-only slots nearly full and a guide mattered more this run."
+      },
+      {
+        "story": "Substack post claims an FBI visit after Anthropic flagged a Claude chat",
+        "decision": "skipped",
+        "reason": "Single unverified personal account; no independent confirmation."
+      },
+      {
+        "story": "ChatPRD ends free trials after token fraud cost tens of thousands of dollars",
+        "decision": "skipped",
+        "reason": "Only a roundup summary seen; needs the original reporting before it could be written."
+      },
+      {
+        "story": "Reel search",
+        "decision": "skipped",
+        "reason": "X and Reddit cannot be read from this run (Reddit leads are empty) and no clip passing the Reel filter was found."
+      }
+    ],
+    "requests": []
   }
 ]
