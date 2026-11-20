@@ -1,0 +1,263 @@
+{
+  "id": "2026-11-20-perplexity-prompts-research-guide",
+  "format": "utility",
+  "site_only": true,
+  "created_at": "2026-11-20T23:20:00Z",
+  "story_time": "2026-11-20T23:20:00Z",
+  "timely": false,
+  "sensitive": false,
+  "priority": 2,
+  "sources": [
+    {
+      "name": "Perplexity Help Center: Tips for getting better answers",
+      "url": "https://www.perplexity.ai/help-center/en/articles/13645819-tips-for-getting-better-answers-from-perplexity"
+    },
+    {
+      "name": "Perplexity Help Center: Practical tips for using Perplexity",
+      "url": "https://intercom.help/perplexity-ai/en/articles/10352971-how-can-i-use-perplexity"
+    },
+    {
+      "name": "University of Florida Business Library: Perplexity tips",
+      "url": "https://answers.businesslibrary.uflib.ufl.edu/genai/faq/416518"
+    }
+  ],
+  "caption": "Seven Perplexity prompts built on Perplexity's own help center tips.\nSay who you are, ask one thing, name the format.\nDeep Research needs Pro or higher.\n\nWhat do you use Perplexity for most?\n\nFollow @neurafeed.ai for daily AI news.\n\nSource: Perplexity Help Center · Photo: Perplexity",
+  "threads_text": "Most bad Perplexity answers come from one-word searches. Add who you are, ask one thing, and say if you want a table, and the answer gets a lot better. What do you use Perplexity for most?",
+  "slides": [
+    {
+      "kind": "cover",
+      "headline": "7 *Perplexity prompts* for faster research (copy and paste)",
+      "image": {
+        "url": "https://cdn.mos.cms.futurecdn.net/QkMRbmeJ7LKaUjzxH8C5LB.jpg",
+        "credit": "Perplexity",
+        "fallback_urls": [
+          "https://cdn.mos.cms.futurecdn.net/QkMRbmeJ7LKaUjzxH8C5LB-1914-80.jpg"
+        ]
+      },
+      "pos": "center center",
+      "badges": [
+        {
+          "url": "https://cdn.jsdelivr.net/gh/selfhst/icons/png/perplexity-ai.png",
+          "fit": "contain"
+        }
+      ]
+    },
+    {
+      "kind": "prompt",
+      "heading": "1. Ask with *context*",
+      "paras": [
+        "Say who you are and what format you want.",
+        "Perplexity picks better sources and skips the filler."
+      ],
+      "prompt": "I'm a [who you are] in [where you live]. [Your question]. Give me the answer as [a table / bullet points / steps]."
+    },
+    {
+      "kind": "prompt",
+      "heading": "2. *Compare* two options",
+      "paras": [
+        "For any choice you are stuck on.",
+        "The table makes the tradeoffs easy to scan."
+      ],
+      "prompt": "Compare the pros and cons of [option A] vs. [option B] for [your situation]. Put the result in a table."
+    },
+    {
+      "kind": "prompt",
+      "heading": "3. Both sides, *with data*",
+      "paras": [
+        "For anything people argue about.",
+        "A fixed number of points keeps it balanced."
+      ],
+      "prompt": "Summarize the main arguments for and against [idea], with supporting data. Five points per side."
+    },
+    {
+      "kind": "prompt",
+      "heading": "4. A *Deep Research* report",
+      "paras": [
+        "Pick Deep Research from the + menu (Pro and up).",
+        "Be specific about what you want to learn."
+      ],
+      "prompt": "Research [topic] and [what to suggest], including [the detail you care about, like cost comparisons]."
+    },
+    {
+      "kind": "prompt",
+      "heading": "5. Your file *plus the web*",
+      "paras": [
+        "Upload a report or sheet first.",
+        "It analyzes your file next to web sources."
+      ],
+      "prompt": "Based on the attached [file] and the latest [news or data], what's the outlook for [company or plan]?"
+    },
+    {
+      "kind": "prompt",
+      "heading": "6. Make it a *spreadsheet*",
+      "paras": [
+        "File creation depends on your plan.",
+        "Exports as .xlsx; decks as .pptx, docs as .docx or .pdf."
+      ],
+      "prompt": "Build a spreadsheet comparing the top [5] [tools] by price, features and user ratings."
+    },
+    {
+      "kind": "cta",
+      "hook": "Follow for AI guides you can use in your next search."
+    }
+  ],
+  "site_article": {
+    "kind": "guide",
+    "headline": "Perplexity prompts: 7 to copy for faster research",
+    "dek": "Seven copy and paste prompts built on Perplexity's own help center tips, for quick answers, comparisons, Deep Research reports and files.",
+    "summary": "Seven Perplexity prompts based on the tips in Perplexity's help center. Each one adds context, asks for one thing and names the format, and three of them use Deep Research or file creation, which depend on your plan.",
+    "seo_title": "Perplexity prompts: 7 to copy and paste for faster research",
+    "seo_description": "7 Perplexity prompts to copy: ask with context, compare options, run Deep Research, analyze your own file and turn the results into a spreadsheet or deck.",
+    "answer_summary": "Good Perplexity prompts state one clear goal, add a line of context, use the keywords that matter and name the format (a table, bullet points or steps). For long reports, use Deep Research from the plus (+) menu, which Perplexity includes on Pro, Max and Enterprise plans.",
+    "tags": [
+      "Perplexity",
+      "Prompts",
+      "AI search",
+      "Deep Research",
+      "Guides"
+    ],
+    "hero_alt": "Promotional image for Perplexity, the AI search app.",
+    "paragraphs": [
+      {
+        "kind": "fact",
+        "text": "These Perplexity prompts come from Perplexity's own help center, which lists the habits that get better answers: say what you want, give context, ask for one thing at a time and name the format. Below are seven prompts built on those tips, with [brackets] where your details go. Paste one in, fill the brackets, and you get a cited answer instead of a pile of links.",
+        "sources": [
+          0,
+          1
+        ]
+      },
+      {
+        "kind": "fact",
+        "text": "Perplexity's help center describes a good prompt as five parts: an instruction, context, the input, keywords that matter, and the output format you want. You do not need all five every time, but most weak answers miss at least two of them. The help center gives \"Cars.\" as an example of a search that is too vague to be useful.",
+        "sources": [
+          1,
+          0
+        ]
+      },
+      {
+        "kind": "heading",
+        "text": "Perplexity prompts for everyday research"
+      },
+      {
+        "kind": "prompt",
+        "title": "Prompt 1: The question with context",
+        "text": "I'm a [who you are] in [where you live]. [Your question, as one clear sentence]. Give me the answer as [a table / bullet points / a step by step guide]."
+      },
+      {
+        "kind": "analysis",
+        "text": "This is the base pattern, and every other prompt here is a version of it. Perplexity's own example is a first-time homebuyer in the US asking which federal programs can help. The context line changes the sources it picks, and the format line saves you from reformatting the answer yourself."
+      },
+      {
+        "kind": "prompt",
+        "title": "Prompt 2: Compare two options",
+        "text": "Compare the pros and cons of [option A] vs. [option B] for [your situation]. Put the result in a table with one row per point, and note which sources disagree."
+      },
+      {
+        "kind": "tip",
+        "text": "Add the keywords that actually decide the answer. The help center's example is \"best noise-canceling headphones under $200 for commuting\": the price and the use case do more work than the word headphones."
+      },
+      {
+        "kind": "prompt",
+        "title": "Prompt 3: Arguments for and against",
+        "text": "Summarize the main arguments for and against [idea or decision], with supporting data. Keep each side to five points and link the source for every number."
+      },
+      {
+        "kind": "analysis",
+        "text": "Perplexity's help center uses a four-day work week as its example for this one. It works for anything people argue about: a policy, a purchase, a career move. Asking for a fixed number of points per side keeps the answer balanced and short enough to read."
+      },
+      {
+        "kind": "heading",
+        "text": "Perplexity prompts for Deep Research"
+      },
+      {
+        "kind": "fact",
+        "text": "Deep Research reads many sources and writes a detailed report. According to Perplexity's help center, it is included on Perplexity Pro, Perplexity Max, Enterprise Pro and Enterprise Max. To start it, open the plus (+) menu in the search bar and pick Deep Research; on the web you can also type / in the search bar. Perplexity notes the menu can look different depending on the platform.",
+        "sources": [
+          0
+        ]
+      },
+      {
+        "kind": "prompt",
+        "title": "Prompt 4: A full report on one question",
+        "text": "Research [topic] and [what you want it to suggest or explain], including [the detail you care about most, for example cost comparisons]."
+      },
+      {
+        "kind": "analysis",
+        "text": "Be clear about what you want to learn before you hit enter. Perplexity's sample is \"the environmental impact of fast fashion and sustainable alternatives, including cost comparisons\". The help center contrasts it with \"Tell me about fashion\", which gives Deep Research nothing to aim at."
+      },
+      {
+        "kind": "prompt",
+        "title": "Prompt 5: Narrow it down",
+        "text": "Now focus on [one part of the report]. What does the evidence say, and where is it weak?"
+      },
+      {
+        "kind": "tip",
+        "text": "Start broad, then narrow with follow-ups in the same thread, as the help center recommends. Its example is a report on remote work trends in the United States since 2020, followed by \"Now focus on the impact on employee productivity.\" One big question and two short follow-ups usually beat one giant prompt."
+      },
+      {
+        "kind": "prompt",
+        "title": "Prompt 6: Your file plus the web",
+        "text": "Based on the attached [report, contract or spreadsheet] and the latest [market data or news], what's the outlook for [company, product or plan]? Separate what comes from my file and what comes from the web."
+      },
+      {
+        "kind": "fact",
+        "text": "Perplexity's help center says you can upload your own files and ask Deep Research to analyze them next to web sources, using an attached financial report as its example. The last sentence of the prompt above is our addition: it makes it easier to see which claims came from your document.",
+        "sources": [
+          0
+        ]
+      },
+      {
+        "kind": "heading",
+        "text": "Perplexity prompts that make a file"
+      },
+      {
+        "kind": "prompt",
+        "title": "Prompt 7: Turn research into a document, deck or sheet",
+        "text": "Build a spreadsheet comparing the top [5] [tools or products] by [price], [features] and [user ratings]."
+      },
+      {
+        "kind": "fact",
+        "text": "Depending on your plan, Perplexity can create documents, slide decks and spreadsheets, and the help center says documents include citations. Say the file type plainly, for example \"Create a Word document\", \"Build a slide deck\" or \"Make a spreadsheet\", and describe the structure, such as a 10-slide presentation with sections on budget, channels and key metrics. Documents export as .pdf or .docx, presentations as .pptx and spreadsheets as .xlsx.",
+        "sources": [
+          0
+        ]
+      },
+      {
+        "kind": "tip",
+        "text": "Fix the file with short follow-ups instead of rewriting the prompt. The help center's examples are \"Add a conclusion slide\" and \"Make the executive summary shorter.\" You can also run a search first and then ask Perplexity to turn the results into a document or deck in the same session, if your plan includes file creation."
+      },
+      {
+        "kind": "heading",
+        "text": "How to write your own Perplexity prompts"
+      },
+      {
+        "kind": "step",
+        "title": "1. Start with one clear goal",
+        "text": "Write the question you would ask an expert, not a search keyword. Asking for the current inflation rate in the US works; \"inflation\" makes Perplexity guess."
+      },
+      {
+        "kind": "step",
+        "title": "2. Add who you are and why you ask",
+        "text": "One sentence of background is enough. Perplexity's tips and the University of Florida Business Library's guide both point out that context and follow-up questions are what turn a generic answer into a useful one."
+      },
+      {
+        "kind": "step",
+        "title": "3. Ask for one thing and name the format",
+        "text": "A table, bullet points or a step by step guide. If you need three things, ask three times in the same thread."
+      },
+      {
+        "kind": "step",
+        "title": "4. Test and tweak",
+        "text": "Perplexity's help center tells users to test prompts and adjust them. If the answer misses, change one part of the prompt (the context, the keywords or the format), not all of it at once."
+      },
+      {
+        "kind": "heading",
+        "text": "Where Perplexity falls short"
+      },
+      {
+        "kind": "analysis",
+        "text": "Perplexity is only as good as the question. Vague prompts get vague answers, and the help center says so with examples like \"Cars.\" and \"Write something for me.\" Usage limits depend on your plan, the help center lists Deep Research only for Pro, Max and Enterprise plans, file creation also depends on the plan, and every regenerated or edited image counts as a new generation toward your image limit. The citations make it easy to check an answer, so open at least one source for any number you plan to reuse."
+      }
+    ]
+  }
+}
