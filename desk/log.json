@@ -1,49 +1,5 @@
 [
   {
-    "run_at": "2026-11-13T01:01:03.064Z",
-    "summary": "Evening run (19:53 New York): no open links or requests, all 6 guides exist; queued the priority 1 Gemini 4 Hydrogen launch (it will hold for tomorrow's first slot because today's post cap is used).",
-    "considered": [
-      {
-        "story": "Google releases Gemini 4 Hydrogen, Flash successor now powering Search for all users",
-        "source": "https://venturebeat.com/technology/google-launches-gemini-4-hydrogen-a-faster-smarter-pricier-flash-successor",
-        "decision": "queued",
-        "job_id": "2026-11-12-gemini-4-hydrogen-free-users",
-        "priority": 1,
-        "reason": "Major Google model launch not yet covered, confirmed by VentureBeat, Digital Trends, MakeUseOf and Chrome Unboxed. Set timely false so it survives until tomorrow's 07:00 window, since today's cap is full. Google's own blog could not be opened from here, and image hosts were blocked for checking, so the pipeline download is the image check."
-      },
-      {
-        "story": "Former OpenAI researcher says six Chinese AI models were built on banned Nvidia chips",
-        "source": "leads/latest.json (Crypto Briefing, Hacker News)",
-        "decision": "skipped",
-        "reason": "Daily cap is full and only minor outlets so far; worth checking tomorrow for major coverage."
-      },
-      {
-        "story": "Microsoft outage disrupts Outlook and Teams for hours (Reuters)",
-        "source": "leads/latest.json",
-        "decision": "skipped",
-        "reason": "Not an AI story."
-      },
-      {
-        "story": "OpenAI picks Aleph as exclusive ChatGPT Ads reseller in 44 markets",
-        "source": "leads/latest.json (Mi-3)",
-        "decision": "skipped",
-        "reason": "Trade story mostly outside the US, single source, cap full."
-      },
-      {
-        "story": "Jim Cramer's questions about Anthropic ahead of its IPO (CNBC)",
-        "source": "leads/latest.json",
-        "decision": "skipped",
-        "reason": "Opinion follow-up; the Anthropic IPO was already posted today."
-      },
-      {
-        "story": "Jensen Huang resignation and affair coverage",
-        "decision": "covered",
-        "reason": "Several jobs today, latest 2026-11-12-huang-third-affair-reuters-v3."
-      }
-    ],
-    "requests": []
-  },
-  {
     "run_at": "2026-11-13T03:03:18.845Z",
     "summary": "Late evening run (21:54 New York): no open links or requests, all 6 guides for November 12 exist and that day's cap is used, so queued 2 posts for the morning of November 13: the Democrats' probe of the Trump Nvidia China chip deal (sensitive, needs approval) and a Reel of Claude reverse engineering a 1994 Jeep.",
     "considered": [
@@ -5199,6 +5155,64 @@
         "story": "Reel search (X, Anthropic IPO memes and clips, robot and gadget videos)",
         "decision": "skipped",
         "reason": "No clip found that we can download from X or a company site and that passes the Which Reels travel filter; the IPO clips found are interview footage, which does not travel."
+      }
+    ],
+    "requests": []
+  },
+  {
+    "run_at": "2026-11-20T02:56:22.840Z",
+    "summary": "Late night run (22:00 New York, Nov 19): no open links or requests; queued one carousel for the Nov 20 morning window (Meta Muse agent mishaps, Reuters). Nov 19 site-only and guide quotas are full; no downloadable Reel found.",
+    "considered": [
+      {
+        "story": "Meta employees say Muse AI agent booked an Airbnb without permission, surfaced bank balances that were not theirs and read Signal notifications (Reuters)",
+        "source": "https://ca.finance.yahoo.com/news/meta-bets-big-muse-ai-111131311.html",
+        "decision": "queued",
+        "job_id": "2026-11-20-meta-muse-airbnb-bank-balances",
+        "priority": 2,
+        "reason": "Strange AI behavior plus money from a familiar company; skipped earlier for the Nov 19 cap, so queued as timely false for the Nov 20 morning window, Reuters read via Yahoo plus PYMNTS."
+      },
+      {
+        "story": "Anthropic's 7 founders cashed out nearly $2B in the IPO (TechCrunch)",
+        "source": "https://techcrunch.com/2026/11/19/anthropics-7-founders-cashed-out-nearly-2b-in-record-breaking-ipo/",
+        "decision": "covered",
+        "reason": "The founders' share sales are already covered in 2026-11-18-anthropic-ipo-priced-83 and 2026-11-19-anthropic-opens-111-nasdaq."
+      },
+      {
+        "story": "Anthropic IPO turns researchers into overnight millionaires; SoftBank falls 16% in Asian AI sell-off",
+        "decision": "covered",
+        "reason": "Same Anthropic IPO story, already posted twice."
+      },
+      {
+        "story": "Claude solves two open problems in black hole physics (Anthropic research, on Hacker News)",
+        "source": "https://www.anthropic.com/research/claude-black-hole-physics",
+        "decision": "skipped",
+        "reason": "Coverage dates to November 9 to 10, so it is not new news."
+      },
+      {
+        "story": "Apple may be developing its own AI agent that runs your Mac (TechCrunch)",
+        "source": "https://techcrunch.com/2026/11/19/apple-may-be-developing-its-own-ai-agent-that-runs-your-mac/",
+        "decision": "skipped",
+        "reason": "Unconfirmed report fit for site-only, but Nov 19 already has 4 site-only articles; worth checking in a Nov 20 run."
+      },
+      {
+        "story": "OpenAI tests ChatGPT dots with Plus users (9to5Mac)",
+        "decision": "skipped",
+        "reason": "Small product test for insiders, and the site-only cap for Nov 19 is used; candidate for Nov 20."
+      },
+      {
+        "story": "Google homepage gets its biggest AI change in years (Android Police)",
+        "decision": "skipped",
+        "reason": "Not read in this run; candidate for a Nov 20 run once confirmed by a second source."
+      },
+      {
+        "story": "DeepMind employees are unionising (gdmunion.co.uk, Hacker News)",
+        "decision": "skipped",
+        "reason": "Only the union's own site seen, no news source read."
+      },
+      {
+        "story": "Reel search",
+        "decision": "skipped",
+        "reason": "Reddit leads still return HTTP 403 and this run cannot open X or download images, so no clip could be checked."
       }
     ],
     "requests": []
