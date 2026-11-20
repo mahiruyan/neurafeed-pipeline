@@ -1,69 +1,5 @@
 [
   {
-    "run_at": "2026-11-13T03:03:18.845Z",
-    "summary": "Late evening run (21:54 New York): no open links or requests, all 6 guides for November 12 exist and that day's cap is used, so queued 2 posts for the morning of November 13: the Democrats' probe of the Trump Nvidia China chip deal (sensitive, needs approval) and a Reel of Claude reverse engineering a 1994 Jeep.",
-    "considered": [
-      {
-        "story": "Democrats Wyden and Neal open an inquiry into Trump's 25% cut of Nvidia H200 sales to China",
-        "source": "https://democrats-waysandmeans.house.gov/sites/evo-subsites/democrats-waysandmeans.house.gov/files/evo-media-document/wyden-neal-nvidia-letter.pdf",
-        "decision": "queued",
-        "job_id": "2026-11-13-democrats-probe-trump-nvidia-china-deal",
-        "priority": 2,
-        "reason": "Politics plus money plus Nvidia, read the letter, TechCrunch and The Hill; sensitive (politics), set timely false so it can still post after approval in the first window."
-      },
-      {
-        "story": "Man used Claude and Codex to reverse engineer his 1994 Jeep Cherokee and pass a smog test",
-        "source": "https://x.com/zulali/status/2120204711790023128",
-        "decision": "queued",
-        "job_id": "2026-11-13-claude-jeep-cherokee-smog-reel",
-        "priority": 2,
-        "reason": "Strange, relatable AI story with the creator's own video; facts from Open.kg and K-News."
-      },
-      {
-        "story": "OpenAI releases GPT-6 Cyber with a Critical cybersecurity rating",
-        "decision": "covered",
-        "reason": "Already covered as 2026-11-05-openai-gpt-6-cyber-81-firefox-flaws."
-      },
-      {
-        "story": "Federal judge removes all four lawyers from a case over fake AI citations",
-        "source": "https://www.abajournal.com/news/article/federal-judge-terminates-4-plaintiff-and-defense-attorneys-over-ai-errors",
-        "decision": "skipped",
-        "reason": "The ruling is from June 2026, not new."
-      },
-      {
-        "story": "Anthropic and OpenAI sued over neural network attention patents (Reuters)",
-        "decision": "skipped",
-        "reason": "Could not open the Reuters story in this run and search results conflict on who the plaintiff is; worth a later look."
-      },
-      {
-        "story": "Bill Simmons canceled his ChatGPT partnership after fan backlash (Bloomberg)",
-        "decision": "skipped",
-        "reason": "Could not confirm the cancellation from a page read in this run; search results only show the backlash."
-      },
-      {
-        "story": "Chinese frontier AI models carry the fingerprint of export-controlled GPUs",
-        "decision": "skipped",
-        "reason": "Single blog analysis, no major outlet confirmation, and the slot went to the Nvidia probe."
-      },
-      {
-        "story": "Edge0-145B frontier model that runs on your own computer",
-        "decision": "skipped",
-        "reason": "Company blog only, insider interest."
-      },
-      {
-        "story": "Gemini 4 Hydrogen launch",
-        "decision": "covered",
-        "reason": "Already queued as 2026-11-12-gemini-4-hydrogen-free-users (held for the November 13 morning)."
-      },
-      {
-        "story": "Jensen Huang resignation, affairs and what comes next for Nvidia",
-        "decision": "covered",
-        "reason": "Covered by several November 12 jobs."
-      }
-    ],
-    "requests": []
-  },
-  {
     "run_at": "2026-11-13T05:18:51.037Z",
     "summary": "Late night run (23:53 New York, November 12): no open links or requests; queued 2 posts for the morning of November 13 (SpaceX's $50 billion Arizona AI campus filed under another name, and the FAA's AI routing tool going nationwide). Guides for November 13 start after 07:00.",
     "considered": [
@@ -5213,6 +5149,66 @@
         "story": "Reel search",
         "decision": "skipped",
         "reason": "Reddit leads still return HTTP 403 and this run cannot open X or download images, so no clip could be checked."
+      }
+    ],
+    "requests": []
+  },
+  {
+    "run_at": "2026-11-20T05:02:23.494Z",
+    "summary": "Midnight run (Nov 20 New York): no open links or requests; queued 2 site-only articles (Apple Mac agent job listing, ChatGPT dots for Plus users); no Reel or new carousel found.",
+    "considered": [
+      {
+        "story": "Apple job listing points to its own AI agent that runs a Mac (Bloomberg via TechCrunch)",
+        "source": "https://techcrunch.com/2026/11/19/apple-may-be-developing-its-own-ai-agent-that-runs-your-mac/",
+        "decision": "queued",
+        "job_id": "2026-11-20-apple-mac-ai-agent-job-listing",
+        "priority": 2,
+        "reason": "Insider product report, so site-only; TechCrunch plus Superpower Daily read."
+      },
+      {
+        "story": "OpenAI tests ChatGPT dots with Plus users and a new mobile design with a Dot tab",
+        "source": "https://9to5mac.com/2026/11/19/openai-begins-testing-dots-with-chatgpt-plus-users-expands-business-access/",
+        "decision": "queued",
+        "job_id": "2026-11-20-chatgpt-dots-plus-new-mobile-design",
+        "priority": 2,
+        "reason": "Limited product test, site-only; 9to5Mac plus Digital Trends read."
+      },
+      {
+        "story": "Google homepage adds an AI Mode history sidebar (Android Police, Talk Android)",
+        "source": "https://www.androidpolice.com/the-google-homepage-gets-its-biggest-change-in-years/",
+        "decision": "skipped",
+        "reason": "A small sidebar change, too thin for a full article; could be a later guide."
+      },
+      {
+        "story": "SoftBank falls over 16% after the Anthropic debut; NYT on new Anthropic millionaires",
+        "decision": "covered",
+        "reason": "Anthropic IPO already posted twice (2026-11-18-anthropic-ipo-priced-83, 2026-11-19-anthropic-opens-111-nasdaq)."
+      },
+      {
+        "story": "Meta Muse agent booked an Airbnb and showed bank balances (PYMNTS)",
+        "decision": "covered",
+        "reason": "Already queued as 2026-11-20-meta-muse-airbnb-bank-balances."
+      },
+      {
+        "story": "Gemini computer use on Mac (Mashable, SiliconANGLE)",
+        "decision": "covered",
+        "reason": "Already covered as 2026-11-19-gemini-mac-computer-use."
+      },
+      {
+        "story": "AI is turning jobs into low-paid gig work (Rest of World, Hacker News)",
+        "source": "https://restofworld.org/2026/ai-jobs-skills-gig-work/",
+        "decision": "skipped",
+        "reason": "Feature piece, not read in this run; Nov 20 already has the Muse carousel, so kept the second carousel slot for a stronger daytime story."
+      },
+      {
+        "story": "Genie 4 world model opens to developers in the Gemini API",
+        "decision": "skipped",
+        "reason": "Genie 4 itself launched October 27; developer access is insider news and no new video found."
+      },
+      {
+        "story": "Reel search",
+        "decision": "skipped",
+        "reason": "X, Reddit (403) and Wikimedia are not reachable from this run, so no clip passing the Reel filter could be checked."
       }
     ],
     "requests": []
