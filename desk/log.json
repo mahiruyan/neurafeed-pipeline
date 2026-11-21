@@ -5134,5 +5134,54 @@
       }
     ],
     "requests": []
+  },
+  {
+    "run_at": "2026-11-21T00:54:42.064Z",
+    "summary": "Late evening run (19:55 New York, Nov 20): no open links or requests; nothing new queued. Today already has 4 Instagram carousels (cap is 2), 6 site-only news articles and 6 guides, and no Reel video passed the filter.",
+    "considered": [
+      {
+        "story": "Trump says he will penalize US tech companies that build AI data centers abroad (AP via local outlets)",
+        "decision": "skipped",
+        "reason": "Politics story that would expire around 00:45 New York; today's Instagram carousels are already 4 of 2 and site-only articles are full."
+      },
+      {
+        "story": "Anthropic stock slides toward its IPO price and drags AI stocks (Reuters, CNN, MarketWatch)",
+        "decision": "covered",
+        "reason": "Anthropic IPO already posted as 2026-11-18-anthropic-ipo-priced-83 and 2026-11-19-anthropic-opens-111-nasdaq."
+      },
+      {
+        "story": "Anthropic mathematician says Claude helped prove the Riemann Hypothesis (WSJ, Washington Post)",
+        "decision": "covered",
+        "reason": "Already queued as 2026-11-20-anthropic-mathematician-riemann-proof-claude."
+      },
+      {
+        "story": "AI-assisted cyberattack disrupted European Commission payroll systems (The Register)",
+        "source": "https://www.theregister.com/cyber-crime/2026/11/19/european-commission-scrambles-to-contain-ai-assisted-cyberattack/5311103",
+        "decision": "skipped",
+        "reason": "Daily Instagram and site-only slots are full; candidate for tomorrow if it grows."
+      },
+      {
+        "story": "Nvidia reportedly in talks to acquire Inception (Mercury diffusion models)",
+        "decision": "skipped",
+        "reason": "Unconfirmed report and insider news; site-only slots for today are full."
+      },
+      {
+        "story": "Google Project Suncatcher picks Blue Origin for 2029 launch (The Verge)",
+        "decision": "skipped",
+        "reason": "Insider infrastructure news; site-only slots for today are full."
+      },
+      {
+        "story": "Reel search: viral consumer AI, robot and smart glasses clips; daily AI digests (The Neuron, AI to ROI)",
+        "decision": "skipped",
+        "reason": "No item in today's digests or searches had an original X or company video that passes the Reels filter."
+      },
+      {
+        "story": "Frostbite, a CPU architecture designed by AI (Hacker News)",
+        "source": "https://architectlabs.com/blog/frostbite",
+        "decision": "skipped",
+        "reason": "Single company blog with no independent coverage found; insider hardware topic."
+      }
+    ],
+    "requests": []
   }
 ]
