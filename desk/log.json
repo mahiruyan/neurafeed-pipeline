@@ -1,71 +1,5 @@
 [
   {
-    "run_at": "2026-11-14T01:01:41.684Z",
-    "summary": "Evening run (19:55 New York): no open links or requests; today had 7 posts and 6 guides, so one last slot went to Google's Gemini and Google Wallet launch (priority 1).",
-    "considered": [
-      {
-        "story": "Gemini connects to Google Wallet and Plaid bank accounts for spending insights in the US",
-        "source": "https://www.androidpolice.com/google-wallet-and-gemini-integration/",
-        "decision": "queued",
-        "job_id": "2026-11-13-gemini-reads-your-google-wallet",
-        "priority": 1
-      },
-      {
-        "story": "Anthropic IPO orders reportedly six times oversubscribed, could raise $64 billion",
-        "source": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPTVJFZEE2WWt0QjdIaWQ4Y3N6c0t5aWRxUTVFUHFvb0dPQ1V",
-        "decision": "skipped",
-        "reason": "Today is at 8 posts after the Gemini job; the IPO was covered on November 12, so this update can wait for the pricing news."
-      },
-      {
-        "story": "$11.4M in Nvidia hardware vanishes during shipment from California to Texas",
-        "source": "https://www.freightwaves.com/news/11-4-million-in-nvidia-hardware-vanishes-during-shipment-from-cali",
-        "decision": "skipped",
-        "reason": "Daily cap of 8 reached; good candidate for tomorrow's money and crime slot if still fresh."
-      },
-      {
-        "story": "AI helps decode Kurt Godel's notebooks",
-        "source": "https://www.theguardian.com/science/2026/nov/13/kurt-godel-notebooks-ai-helps-unlock-hidden-discover",
-        "decision": "skipped",
-        "reason": "Daily cap of 8 reached; strange science story to reconsider tomorrow."
-      },
-      {
-        "story": "Fed survey finds AI is now the top worry for the financial system",
-        "source": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOd1luSGcydUl6NE15cEcydlNhSnRuNjNjVHdMQldrQjRYcXp",
-        "decision": "skipped",
-        "reason": "Daily cap of 8 reached."
-      },
-      {
-        "story": "Elevated errors and outage on claude.ai and Claude Code",
-        "source": "https://status.claude.com/incidents/nn11wk485zfn",
-        "decision": "skipped",
-        "reason": "Outage was about 15 hours ago and already resolved; stale for a post now."
-      },
-      {
-        "story": "Jensen Huang's departure leaves a hole in AI startup funding (TechCrunch)",
-        "source": "https://techcrunch.com/2026/11/13/jensen-huangs-departure-blasts-big-hole-in-ai-startup-funding-vcs-",
-        "decision": "covered",
-        "reason": "Huang story already covered by several jobs, including 2026-11-13-nvidia-staff-want-jensen-huang-back."
-      },
-      {
-        "story": "OpenAI disbands its robotics team",
-        "decision": "covered",
-        "reason": "Already queued and posted as 2026-11-13-openai-disbands-robotics-team."
-      },
-      {
-        "story": "Ex-OpenAI engineer says Chinese labs train on banned Blackwell chips",
-        "decision": "covered",
-        "reason": "Already queued as 2026-11-13-chinese-ai-labs-banned-blackwell-fingerprint."
-      },
-      {
-        "story": "Chicago schools tell Google they would rather lose Search than accept AI",
-        "source": "https://www.techspot.com/news/114532-chicago-schools-tell-google-they-can-live-without.html",
-        "decision": "skipped",
-        "reason": "Daily cap of 8 reached."
-      }
-    ],
-    "requests": []
-  },
-  {
     "run_at": "2026-11-14T03:06:30.584Z",
     "summary": "Late run (21:55 New York, Nov 13): no open links or requests; Nov 13 is at the 8 post cap and has 6 guides, so one non-timely story was queued for the Nov 14 morning windows (the $11.4M Nvidia cargo theft, sensitive, for Mahir's approval).",
     "considered": [
@@ -5180,6 +5114,56 @@
         "source": "https://architectlabs.com/blog/frostbite",
         "decision": "skipped",
         "reason": "Single company blog with no independent coverage found; insider hardware topic."
+      }
+    ],
+    "requests": []
+  },
+  {
+    "run_at": "2026-11-21T02:56:51.895Z",
+    "summary": "Night run (22:00 New York, Nov 20): no open links or requests; queued the Reuters report that the SEC is examining Nvidia's accounting as a priority 1 site-only article (today's Instagram carousels are already past 2 and a timely post would expire before the 07:00 window). No Reel video passed the filter.",
+    "considered": [
+      {
+        "story": "SEC is examining Nvidia's accounting; shares fall about 13 to 14 percent, about $491 billion erased (Reuters, The Motley Fool)",
+        "source": "https://live.euronext.com/en/financial-news/nvidias-accounting-focus-us-sec-investigation-sources-say",
+        "decision": "queued",
+        "job_id": "2026-11-20-nvidia-sec-accounting-probe",
+        "priority": 1,
+        "reason": "Priority 1 Nvidia money and scandal story, new since the earlier runs; site-only and sensitive because today's Instagram carousels are already at 4 of 2 and no window opens before 07:00. A later run can make the Instagram carousel if the story develops."
+      },
+      {
+        "story": "Anthropic shares fall after the IPO as AI stocks lose about $4 trillion and the S&P 500 and Dow enter a correction (WSJ, Reuters, NBC)",
+        "decision": "covered",
+        "reason": "Anthropic IPO already posted as 2026-11-18-anthropic-ipo-priced-83 and 2026-11-19-anthropic-opens-111-nasdaq; earlier runs today made the same call."
+      },
+      {
+        "story": "Anthropic mathematician says Claude helped prove the Riemann Hypothesis (NYT, BBC, Bloomberg)",
+        "decision": "covered",
+        "reason": "Already queued as 2026-11-20-anthropic-mathematician-riemann-proof-claude."
+      },
+      {
+        "story": "Google shuts down the Nest app and Google Assistant on home devices (USA Today, Android Central)",
+        "decision": "skipped",
+        "reason": "Smart home product news, only seen as feed headlines; site-only slots for today are full."
+      },
+      {
+        "story": "Oracle says funding for its OpenAI infrastructure contract is secured",
+        "decision": "skipped",
+        "reason": "Insider infrastructure finance news from secondary outlets only."
+      },
+      {
+        "story": "Raleigh eviction after an AI bot's promise (WRAL)",
+        "decision": "skipped",
+        "reason": "Single local outlet seen; candidate for tomorrow if it gets wider coverage."
+      },
+      {
+        "story": "Tristan Thompson reveals an early Anthropic investment (E! News)",
+        "decision": "skipped",
+        "reason": "Celebrity side story to an IPO that is already covered twice."
+      },
+      {
+        "story": "Reel search: viral AI robot, gadget and smart glasses clips",
+        "decision": "skipped",
+        "reason": "Searches returned only older clips and no original X or company video from the last day."
       }
     ],
     "requests": []
