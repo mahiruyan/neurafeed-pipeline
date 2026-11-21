@@ -1,56 +1,5 @@
 [
   {
-    "run_at": "2026-11-14T03:06:30.584Z",
-    "summary": "Late run (21:55 New York, Nov 13): no open links or requests; Nov 13 is at the 8 post cap and has 6 guides, so one non-timely story was queued for the Nov 14 morning windows (the $11.4M Nvidia cargo theft, sensitive, for Mahir's approval).",
-    "considered": [
-      {
-        "story": "$11.4M in Nvidia hardware vanishes during shipment from Oakland to Texas",
-        "source": "https://www.ktvu.com/news/11-4m-oakland-based-nvidia-shipment-stolen-en-route-texas",
-        "decision": "queued",
-        "job_id": "2026-11-14-nvidia-11-million-shipment-vanished",
-        "priority": 2,
-        "reason": "Crime and money story beyond pure AI, confirmed by KTVU, FreightWaves and ABC7; non-timely and sensitive (crime) so Mahir approves it. Images are the outlets' own photos, which could not be previewed from this run, so please check the cover in the preview."
-      },
-      {
-        "story": "Claude helps surface 663 theorems in Kurt Godel's notebooks (Jan von Plato, The Guardian)",
-        "source": "https://superpowerdaily.com/posts/claude-surfaced-663-theorems-and-proof-ideas-in-g-del-s-notebooks-researcher-says",
-        "decision": "skipped",
-        "reason": "Strong Claude story, but The Guardian (the original report) could not be opened from this run and the only other copies read were small aggregators; good pick for the morning run once the Guardian piece can be read."
-      },
-      {
-        "story": "Anthropic IPO orders reportedly six times oversubscribed",
-        "decision": "skipped",
-        "reason": "IPO already covered on November 12; waiting for pricing news."
-      },
-      {
-        "story": "Fed survey: AI tops worries about the financial system (Reuters)",
-        "decision": "skipped",
-        "reason": "Not read in full this run; one story is enough for tomorrow's early queue, which already holds four waiting posts."
-      },
-      {
-        "story": "Jensen Huang's departure leaves a hole in AI startup funding (TechCrunch)",
-        "decision": "covered",
-        "reason": "Huang story already covered by several jobs, including 2026-11-13-nvidia-staff-want-jensen-huang-back."
-      },
-      {
-        "story": "Gemini can analyze Google Wallet spending",
-        "decision": "covered",
-        "reason": "Already queued as 2026-11-13-gemini-reads-your-google-wallet (held for the cap)."
-      },
-      {
-        "story": "Claude.ai and Claude Code outage",
-        "decision": "skipped",
-        "reason": "Outage about 17 hours old and resolved."
-      },
-      {
-        "story": "Murray presses OpenAI on ChatGPT safeguards after Seattle woman's death",
-        "decision": "skipped",
-        "reason": "Not read this run; sensitive story to consider in the morning with full sources."
-      }
-    ],
-    "requests": []
-  },
-  {
     "run_at": "2026-11-14T05:21:02.785Z",
     "summary": "Midnight run (00:25 New York, Nov 14): no open links or requests (the four old October links were already in inbox/skipped.json). Queued the nationwide FAA ground stop and the AI tool probe (priority 1) for the first morning window; the Nov 14 Nvidia cargo job had expired (story from Nov 6).",
     "considered": [
@@ -5164,6 +5113,64 @@
         "story": "Reel search: viral AI robot, gadget and smart glasses clips",
         "decision": "skipped",
         "reason": "Searches returned only older clips and no original X or company video from the last day."
+      }
+    ],
+    "requests": []
+  },
+  {
+    "run_at": "2026-11-21T05:00:55.363Z",
+    "summary": "Midnight run (00:00 New York, Nov 21): no open links or requests; nothing queued. The night's stories are already covered or are insider news, the Canva AI off switch still has only one readable source, and no Reel video passed the filter.",
+    "considered": [
+      {
+        "story": "Anthropic mathematician says Claude helped prove the Riemann Hypothesis (NYT, Washington Post, BBC, Economist)",
+        "decision": "covered",
+        "reason": "Already posted as 2026-11-20-anthropic-mathematician-riemann-proof-claude."
+      },
+      {
+        "story": "SEC examining Nvidia's accounting",
+        "decision": "covered",
+        "reason": "Already queued as 2026-11-20-nvidia-sec-accounting-probe."
+      },
+      {
+        "story": "Anthropic IPO aftermath: AI sell-off, $4 trillion wipeout, new millionaires, Moskovitz uneasy (WSJ, Reuters, NYT)",
+        "decision": "covered",
+        "reason": "Anthropic IPO already posted twice; same story, new angle."
+      },
+      {
+        "story": "Canva adds a setting to turn off most AI features",
+        "source": "https://www.canva.com/help/manage-ai-features/",
+        "decision": "skipped",
+        "reason": "Only Canva's help page could be read again (The Verge and the Canva FAQ failed), and it says the on/off steps are still coming soon; one source is not enough."
+      },
+      {
+        "story": "Nick Bostrom says AI could allow lifespans over 1,000 years (Business Insider)",
+        "decision": "skipped",
+        "reason": "A speculative quote that circulated months ago (el.kz in January); not news and only one current source."
+      },
+      {
+        "story": "Google to shut down the Nest app and Google Assistant on home devices (USA Today, Android Central)",
+        "decision": "skipped",
+        "reason": "Smart home product change, not one of the Instagram kinds, and the site-only count for the day was already full when it broke."
+      },
+      {
+        "story": "Army plans to use OpenAI models first in Project Gatekeeper (MLQ.ai)",
+        "decision": "skipped",
+        "reason": "Insider government contracting news from a single aggregator."
+      },
+      {
+        "story": "Moonshot AI scraps a $150 million Nvidia chip deal in Indonesia (The Information)",
+        "decision": "skipped",
+        "reason": "Paywalled single source, insider chip story."
+      },
+      {
+        "story": "Juvenile used AI to make nude images of charter school students and staff (WRAL)",
+        "decision": "skipped",
+        "reason": "Involves minors; local story we do not cover."
+      },
+      {
+        "story": "Reel search: viral AI robot and gadget clips (IEEE Video Friday, The Neuron digest)",
+        "decision": "skipped",
+        "reason": "No new X video found that passes the Reel filter; the robot clips found are old or YouTube only."
       }
     ],
     "requests": []
