@@ -1,74 +1,5 @@
 [
   {
-    "run_at": "2026-11-14T09:03:09.273Z",
-    "summary": "Early run (04:00 New York, Nov 14): no open links or requests. Queued the AI agent that pitched CBC Quebec a plagiarized story and the 404 Media report on Meta's Muse sexting as real women (sensitive, for Mahir's approval); guides start at 07:00.",
-    "considered": [
-      {
-        "story": "AI agent Nameless pitched CBC Quebec a finished story; its sources were plagiarized and it hides its creator",
-        "source": "https://www.cbc.ca/news/canada/montreal/ai-autonomous-agent-independent-journalism-pitching-story-cbc-quebec-9.7419591",
-        "decision": "queued",
-        "job_id": "2026-11-14-ai-agent-pitched-cbc-news-story",
-        "priority": 2,
-        "reason": "Strange AI behavior everyone can follow; CBC read via Yahoo, iLands context from AfroTech. CBC images could not be previewed from this run, please check the slides."
-      },
-      {
-        "story": "Meta's Muse sexts while roleplaying as real women (404 Media)",
-        "source": "https://www.404media.co/muse-sexts-roleplaying-real-people/",
-        "decision": "queued",
-        "job_id": "2026-11-14-meta-muse-roleplays-real-women",
-        "priority": 2,
-        "reason": "Meta scandal beyond pure AI news, confirmed by 404 Media and IBTimes UK; sensitive (sexual content about real people) so Mahir approves. Cover is Meta's own Muse image, no photo of the women used."
-      },
-      {
-        "story": "Claude Code settings files expose thousands of secrets on GitHub (Ars Technica)",
-        "decision": "covered",
-        "reason": "Already covered as 2026-11-07-claude-code-dont-ask-again-leaks-passwords."
-      },
-      {
-        "story": "Claude helps unlock Kurt Godel's notebooks (The Guardian)",
-        "decision": "skipped",
-        "reason": "The Guardian original still could not be opened from this run."
-      },
-      {
-        "story": "AI is destroying trust between writers and readers (The Atlantic)",
-        "decision": "skipped",
-        "reason": "Could not open The Atlantic piece; search only found older AI book scam stories."
-      },
-      {
-        "story": "White House urges easing liability to encourage AI disclosure (Bloomberg)",
-        "source": "https://bloomberg.com/news/articles/2026-11-14/white-house-urges-easing-liability-to-encourage-ai-disclosure",
-        "decision": "skipped",
-        "reason": "Paywalled and policy detail with little broad appeal; no second readable source yet."
-      },
-      {
-        "story": "Gemini 4 Hydrogen launch",
-        "decision": "covered",
-        "reason": "Already covered as 2026-11-12-gemini-4-hydrogen-free-users."
-      },
-      {
-        "story": "Claude deletes a law professor's syllabus",
-        "decision": "skipped",
-        "reason": "Story is from November 6, too old."
-      },
-      {
-        "story": "Script that emails Sam Altman about your unused RAM",
-        "decision": "skipped",
-        "reason": "Small novelty item; Altman's RAM remarks already covered on October 31."
-      },
-      {
-        "story": "OpenAI disbands its robotics team (Fortune)",
-        "decision": "covered",
-        "reason": "Already covered as 2026-11-13-openai-disbands-robotics-team."
-      },
-      {
-        "story": "Nonprofits sue AI giants to freeze new models",
-        "decision": "covered",
-        "reason": "Already covered as 2026-11-12-nonprofits-sue-to-freeze-frontier-ai."
-      }
-    ],
-    "requests": []
-  },
-  {
     "run_at": "2026-11-14T11:16:05.285Z",
     "summary": "Early run (06:00 New York, Nov 14): no open links or requests. Queued the FTX/SBF Anthropic stake story (sold for $1.34B in 2024, worth up to about $35B at the IPO range), marked sensitive for Mahir's approval; guides start at 07:00.",
     "considered": [
@@ -5161,6 +5092,72 @@
         "story": "Reel search: viral robot, smart glasses and gadget clips",
         "decision": "skipped",
         "reason": "Search returned older clips (smart glasses chess, robot falls) and no new original X or company video from the last day."
+      }
+    ],
+    "requests": []
+  },
+  {
+    "run_at": "2026-11-21T11:02:21.512Z",
+    "summary": "Morning run (06:00 New York, Nov 21): no open links or requests; queued two site-only articles (Meta reviewing its 2030 net zero goal after a 45% emissions jump, and Google workers petitioning for school Search without AI). Today's 2 Instagram carousels are already queued, no Reel video passed the filter, and guides start after 07:00.",
+    "considered": [
+      {
+        "story": "Meta re-evaluates its 2030 net zero goal after net emissions rose 45% in 2025 (Trellis, Axios)",
+        "source": "https://axios.com/2026/11/19/meta-ai-emissions-rise",
+        "decision": "queued",
+        "job_id": "2026-11-21-meta-rethinks-net-zero-ai-emissions",
+        "priority": 2
+      },
+      {
+        "story": "More than 500 Google workers petition the company to let schools use Search without AI (Engadget, The Next Web, Chalkbeat)",
+        "source": "https://www.engadget.com/2322304/employees-call-out-google-over-ai-search-in-schools/",
+        "decision": "queued",
+        "job_id": "2026-11-21-google-workers-petition-schools-search",
+        "priority": 2
+      },
+      {
+        "story": "Anthropic IPO aftermath and Nasdaq erasing 2026 gains (Guardian, Bloomberg, Axios)",
+        "decision": "covered",
+        "reason": "Already covered in earlier IPO and sell-off jobs this week."
+      },
+      {
+        "story": "Anthropic mathematician says Claude helped prove the Riemann Hypothesis",
+        "decision": "covered",
+        "reason": "Already queued as 2026-11-20-anthropic-mathematician-riemann-proof-claude."
+      },
+      {
+        "story": "SEC examining Nvidia's accounting",
+        "decision": "covered",
+        "reason": "Already queued as 2026-11-20-nvidia-sec-accounting-probe."
+      },
+      {
+        "story": "Xi and Trump agree military AI decisions must involve humans",
+        "decision": "covered",
+        "reason": "Already queued as 2026-11-21-trump-xi-humans-military-ai."
+      },
+      {
+        "story": "Frostbite, a CPU architecture designed by AI (Hacker News)",
+        "decision": "skipped",
+        "reason": "Single company blog, developer interest only."
+      },
+      {
+        "story": "Signal restricts AI agents in mobile operating systems from capturing data",
+        "decision": "skipped",
+        "reason": "Only Signal's own blog seen; no second source read this run."
+      },
+      {
+        "story": "Oracle says its $300 billion OpenAI buildout is fully funded",
+        "decision": "skipped",
+        "reason": "Finance insider story already skipped in earlier runs; today's site-only slots went to broader stories."
+      },
+      {
+        "story": "OpenAI benchmark for medicinal chemistry (Tech in Asia)",
+        "decision": "skipped",
+        "reason": "Niche research benchmark with one outlet seen."
+      },
+      {
+        "story": "Reel search: viral AI robot and smart glasses clips",
+        "decision": "skipped",
+        "reason": "Search found only news coverage and TV segments, no fresh X clip that passes the Reel filter."
       }
     ],
     "requests": []
