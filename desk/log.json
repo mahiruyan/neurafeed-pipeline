@@ -1,61 +1,5 @@
 [
   {
-    "run_at": "2026-11-14T07:06:21.721Z",
-    "summary": "Overnight run (01:55 New York, Nov 14): no open links or requests. Queued OpenAI board member Paul Christiano's AI accident warning (priority 1); no guides yet (they start at 07:00).",
-    "considered": [
-      {
-        "story": "OpenAI board member Paul Christiano says an AI accident is the most likely way most people will die",
-        "source": "https://www.fastcompany.com/91642227/openai-board-member-terrifying-prediction-you-will-die-from-ai-accident-chatgpt",
-        "decision": "queued",
-        "job_id": "2026-11-14-openai-board-member-ai-accident-warning",
-        "priority": 1
-      },
-      {
-        "story": "Former Anthropic researcher Jacob Coxon says an IPO roadshow slide helped push him out",
-        "source": "https://www.tokenpost.com/news/business/57088",
-        "decision": "skipped",
-        "reason": "Crypto Briefing could not be opened and TokenPost says his resignation post never mentions a slide, so the claim is unclear."
-      },
-      {
-        "story": "Nvidia allegedly engineered GPU scarcity by funding AI startups (TechPowerUp)",
-        "source": "https://www.techpowerup.com/354814/nvidia-allegedly-engineered-scarcity-by-funding-ai-startups-to-buy-its-gpus",
-        "decision": "skipped",
-        "reason": "Only one outlet repeating an allegation; no independent confirmation found."
-      },
-      {
-        "story": "Sam Bankman-Fried would have made nearly $40bn in the Anthropic IPO (Financial Times)",
-        "decision": "skipped",
-        "reason": "FT still not readable and other reports conflict on the stake."
-      },
-      {
-        "story": "Why Dario Amodei has angered OpenAI and other AI peers (New York Times)",
-        "decision": "skipped",
-        "reason": "Paywalled analysis piece with no new event; could not read it."
-      },
-      {
-        "story": "AI job interviews lead to better outcomes (Chicago Booth)",
-        "decision": "skipped",
-        "reason": "The study is from earlier in 2026, not new."
-      },
-      {
-        "story": "Claude helps unlock Kurt Godel's notebooks (The Guardian)",
-        "decision": "skipped",
-        "reason": "The Guardian original still could not be opened."
-      },
-      {
-        "story": "ChatGPT Wallet and Gemini reading Google Wallet spending",
-        "decision": "covered",
-        "reason": "Already covered as 2026-11-13-chatgpt-wallet-agents-spend-money and 2026-11-13-gemini-reads-your-google-wallet."
-      },
-      {
-        "story": "FAA ground stop and the AI tool probe",
-        "decision": "covered",
-        "reason": "Already queued as 2026-11-14-faa-ground-stop-ai-tool-probe."
-      }
-    ],
-    "requests": []
-  },
-  {
     "run_at": "2026-11-14T09:03:09.273Z",
     "summary": "Early run (04:00 New York, Nov 14): no open links or requests. Queued the AI agent that pitched CBC Quebec a plagiarized story and the 404 Media report on Meta's Muse sexting as real women (sensitive, for Mahir's approval); guides start at 07:00.",
     "considered": [
@@ -5154,6 +5098,69 @@
         "story": "Reel search: viral AI robot and smart glasses clips",
         "decision": "skipped",
         "reason": "Search returned only older clips and no new original X or company video from the last day."
+      }
+    ],
+    "requests": []
+  },
+  {
+    "run_at": "2026-11-21T09:01:46.673Z",
+    "summary": "Early run (04:00 New York, Nov 21): no open links or requests; queued Bessent's Trump and Xi military AI remarks as the day's second Instagram carousel (sensitive, politics) and the EU Commission AI-assisted cyberattack as a site-only article. No Reel video passed the filter; guides start after 07:00.",
+    "considered": [
+      {
+        "story": "Bessent says Trump and Xi agreed humans must always be involved in military AI decisions (Reuters, Anadolu)",
+        "source": "https://www.defensenews.com/global/asia-pacific/2026/11/20/trump-xi-agreed-that-military-ai-decisions-should-involve-humans-bessent-says/",
+        "decision": "queued",
+        "job_id": "2026-11-21-trump-xi-humans-military-ai",
+        "priority": 2,
+        "reason": "Politics and two world leaders on AI weapons; second Instagram carousel of the day, sensitive so Mahir approves, timely false because the 12 hour limit ends before the 07:00 window."
+      },
+      {
+        "story": "European Commission confirms an AI-assisted cyberattack that took payroll and leave systems offline (The Record, AP, The Register, Brussels Times)",
+        "source": "https://therecord.media/european-commission-confirms-cyberattack-using-ai",
+        "decision": "queued",
+        "job_id": "2026-11-21-eu-commission-ai-cyberattack",
+        "priority": 2,
+        "reason": "Strong story skipped yesterday only for full slots; now four sources read. Site-only because today's two Instagram carousels are used."
+      },
+      {
+        "story": "SpaceX-owned Cursor tells Congress it may phase out Chinese AI models (Startup Fortune)",
+        "decision": "skipped",
+        "reason": "Insider developer tools news from one secondary outlet."
+      },
+      {
+        "story": "Frostbite, a CPU architecture designed by AI (Hacker News)",
+        "decision": "skipped",
+        "reason": "Still only the company's own blog, no independent coverage."
+      },
+      {
+        "story": "Signal restricts AI agents in mobile operating systems from capturing data (Hacker News)",
+        "decision": "skipped",
+        "reason": "Insider privacy and platform news; site-only slot used for the EU attack this run, can be picked up later."
+      },
+      {
+        "story": "AI is giving everyone the same advice (a90.com experiment)",
+        "decision": "skipped",
+        "reason": "A personal blog experiment with no independent coverage."
+      },
+      {
+        "story": "Anthropic IPO aftermath and AI sell-off (Bloomberg, WSJ, Axios)",
+        "decision": "covered",
+        "reason": "Anthropic IPO already posted twice; Nvidia probe queued as 2026-11-20-nvidia-sec-accounting-probe."
+      },
+      {
+        "story": "Anthropic mathematician says Claude helped prove the Riemann Hypothesis (AP, Washington Post)",
+        "decision": "covered",
+        "reason": "Already posted as 2026-11-20-anthropic-mathematician-riemann-proof-claude."
+      },
+      {
+        "story": "Oracle says its OpenAI buildout is fully funded",
+        "decision": "skipped",
+        "reason": "Insider infrastructure finance news from secondary outlets."
+      },
+      {
+        "story": "Reel search: viral robot, smart glasses and gadget clips",
+        "decision": "skipped",
+        "reason": "Search returned older clips (smart glasses chess, robot falls) and no new original X or company video from the last day."
       }
     ],
     "requests": []
