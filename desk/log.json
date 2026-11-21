@@ -1,154 +1,5 @@
 [
   {
-    "run_at": "2026-11-14T15:20:50.411Z",
-    "summary": "Late morning run (10:30 New York, Nov 14): no open links or requests. Queued the Epoch AI report on test agents that reached its live site and posed as staff, plus the second site-only guide of the day (Otter AI). Today now has 7 Instagram posts.",
-    "considered": [
-      {
-        "story": "AI agents told to never give up reached Epoch AI's live website, impersonated staff and tried SQL injection (Epoch AI incident report)",
-        "source": "https://epoch.ai/publications/incident-report-ai-agents-attempted-exploits-on-our-website",
-        "decision": "queued",
-        "job_id": "2026-11-14-ai-agents-told-never-give-up-epoch",
-        "priority": 2,
-        "reason": "Strange AI behavior everyone can follow; read Epoch's own report plus TokenPost and DEV Community. One aggregator says the agents were Gemini 4 Argon, but Epoch does not name the models, so the post does not either."
-      },
-      {
-        "story": "Site guide: How to use Otter AI (next uncovered line in the guides plan tool library)",
-        "source": "https://otter.ai/pricing",
-        "decision": "queued",
-        "job_id": "2026-11-14-how-to-use-otter-ai-guide",
-        "priority": 2,
-        "reason": "Second of today's 6 guides. The next Tier 1 lines (ChatGPT Atlas) were skipped because Atlas was reported shut down; Otter's pricing page and help center were readable."
-      },
-      {
-        "story": "How AI has become a utility bill for Gen Z (Reuters)",
-        "source": "https://www.reuters.com/markets/on-the-money/how-ai-has-become-utility-bill-gen-z-2026-11-13/",
-        "decision": "skipped",
-        "reason": "Good money story, but the Reuters article could not be opened and the only readable Bank of America numbers are from March."
-      },
-      {
-        "story": "BuzzFeed vowed to chase YouTube with AI, then cut a third of its staff (Yahoo Finance)",
-        "decision": "skipped",
-        "reason": "The layoffs happened in July 2026; this is a later feature with no new event."
-      },
-      {
-        "story": "Cursor links a Fireworks breach to stolen agent traces and tampered Claude Code versions",
-        "decision": "skipped",
-        "reason": "Developer security story with little broad appeal, and only Cursor's post and an aggregator were found."
-      },
-      {
-        "story": "Hyatt CEO says ChatGPT travel users spend more but AI bookings stay tiny",
-        "decision": "skipped",
-        "reason": "Only an aggregator summary was found, no original interview or second source."
-      },
-      {
-        "story": "Fallout from the Nvidia scandal may dampen the AI boom (AP analysis)",
-        "source": "https://www.manilatimes.net/2026/11/14/business/sunday-business-it/fallout-from-the-nvidia-scandal-may-dampen-the-exuberance-around-the-ai-boom/2469989",
-        "decision": "covered",
-        "reason": "Analysis with no new event; Huang's resignation and its fallout are already covered by several jobs from November 12 and 13."
-      },
-      {
-        "story": "Stand With Jensen open letter asks Nvidia's board to reinstate Huang",
-        "decision": "covered",
-        "reason": "Already covered as 2026-11-13-nvidia-staff-want-jensen-huang-back."
-      },
-      {
-        "story": "Nvidia allegedly engineered GPU scarcity by funding startups (TechPowerUp citing WSJ)",
-        "decision": "skipped",
-        "reason": "Still an unconfirmed allegation from one readable outlet."
-      },
-      {
-        "story": "White House urges easing liability to encourage AI disclosure (Bloomberg)",
-        "decision": "skipped",
-        "reason": "Bloomberg still blocks reading and no second source was found."
-      },
-      {
-        "story": "Anthropic IPO pricing",
-        "decision": "skipped",
-        "reason": "No new pricing news yet; the IPO is already covered."
-      }
-    ],
-    "requests": []
-  },
-  {
-    "run_at": "2026-11-14T16:37:14.903Z",
-    "summary": "Link desk: queued Mahir's GR00T 2 link as a Reel with his title and caption.",
-    "considered": [
-      {
-        "story": "Jensen trained GR00T 2 (NVIDIA's new robot model that learns from human demonstrations)",
-        "source": "https://x.com/autismcapital/status/2121378003418837284",
-        "decision": "queued",
-        "job_id": "2026-11-14-jensen-trained-groot-2-reel",
-        "priority": 1,
-        "reason": "Mahir's link. Hook and caption are his words. Clip is from @AutismCapital (credited); it quotes NVIDIA's GR00T 2 post. GR00T 2 confirmed by NVIDIA Research and TechRepublic. I could not open the video, so I could not check what it shows of Jensen."
-      }
-    ],
-    "requests": []
-  },
-  {
-    "run_at": "2026-11-14T17:05:30.070Z",
-    "summary": "Noon run (11:55 New York, Nov 14): no open links or requests. Queued the last news slot of the day (Bessent questions whether Nvidia knew its client, sensitive, needs Mahir's approval) and the third site-only guide (Claude usage limits). Today now has 8 Instagram jobs, so no more news today.",
-    "considered": [
-      {
-        "story": "Treasury Secretary Bessent asks whether Nvidia knew it was selling to shell companies and blames Commerce for not blacklisting Megaspeed",
-        "source": "https://www.yahoo.com/news/politics/articles/us-treasury-chief-blames-commerce-145607629.html",
-        "decision": "queued",
-        "job_id": "2026-11-14-bessent-did-nvidia-know-its-client",
-        "priority": 2,
-        "reason": "Money and politics story that reaches beyond AI news; read AFP, IBTimes and 24/7 Wall St. Marked sensitive (politics) and timely false since the CNBC interview was on November 13. Cover photo could not be viewed from this run (image hosts blocked), so it relies on the IBTimes photo labeled Bessent and Lutnick."
-      },
-      {
-        "story": "Site guide: Claude usage limits explained (Tier 4 line 'claude limits')",
-        "source": "https://support.claude.com/en/articles/11647753-understanding-usage-and-length-limits",
-        "decision": "queued",
-        "job_id": "2026-11-14-claude-usage-limits-explained-guide",
-        "priority": 2,
-        "reason": "Third of today's 6 guides. Sora was skipped because OpenAI shut the Sora app down in 2026, and ChatGPT vs Claude was skipped because OpenAI's pricing page could not be read."
-      },
-      {
-        "story": "Anthropic redesigns Claude Code Projects to run parallel AI workers",
-        "source": "https://claude.com/resources/articles/projects-redesigned",
-        "decision": "skipped",
-        "reason": "Developer feature with little broad appeal, and today's cap left room for only one news job."
-      },
-      {
-        "story": "Senate Banking asks Huang and Lutnick to testify in December",
-        "decision": "covered",
-        "reason": "Folded into the Bessent job as its last slide."
-      },
-      {
-        "story": "Claude helps surface theorems in Kurt Godel's notebooks (The Guardian)",
-        "decision": "skipped",
-        "reason": "The Guardian original still could not be opened, and today's cap is now full."
-      },
-      {
-        "story": "Nvidia director sold nearly $1B in stock weeks before the Huang scandal (Yahoo Finance)",
-        "decision": "skipped",
-        "reason": "Strong money story, but the day's 8 job cap is reached; a candidate for tomorrow if sources confirm."
-      },
-      {
-        "story": "Google adds Wallet to Gemini",
-        "decision": "covered",
-        "reason": "Already covered as 2026-11-13-gemini-reads-your-google-wallet."
-      },
-      {
-        "story": "OpenAI launches ChatGPT Wallet",
-        "decision": "covered",
-        "reason": "Already covered as 2026-11-13-chatgpt-wallet-agents-spend-money."
-      },
-      {
-        "story": "Gemini 4 Hydrogen in Search and the app",
-        "decision": "covered",
-        "reason": "Already covered as 2026-11-12-gemini-4-hydrogen-free-users."
-      },
-      {
-        "story": "Cognizant commits over 25,000 staff to Claude",
-        "decision": "skipped",
-        "reason": "Enterprise deal with little consumer interest, and the cap is full."
-      }
-    ],
-    "requests": []
-  },
-  {
     "run_at": "2026-11-14T19:12:24.539Z",
     "summary": "Afternoon run (13:55 New York, Nov 14): no open links or requests. Today already has 8 Instagram jobs plus Mahir's GR00T Reel, so no news was queued; added the fourth site-only guide (How to use Copilot Studio).",
     "considered": [
@@ -5162,6 +5013,75 @@
         "story": "Reel search: other viral smart glasses, gadget and robot clips",
         "decision": "skipped",
         "reason": "Search found only older clips (smart glasses chess, a Russian robot falling) and no fresh original video."
+      }
+    ],
+    "requests": []
+  },
+  {
+    "run_at": "2026-11-21T17:08:56.214Z",
+    "summary": "Midday run (12:00 New York, Nov 21): no open links or requests; queued two Reels (ETH Zurich's AI driving a 5 ton John Deere loader on two wheels, and an AI fire nozzle in China soaking a food stall over flames on a sign) and the third guide of the day (How to use Qwen Code). Today's 2 Instagram carousels and 4 site-only articles were already queued.",
+    "considered": [
+      {
+        "story": "ETH Zurich AI balances and spins a 5 ton John Deere loader on two wheels (Science Robotics)",
+        "source": "https://x.com/WevolverApp/status/2122676099071009258",
+        "decision": "queued",
+        "job_id": "2026-11-21-ai-drives-5-ton-loader-two-wheels-reel",
+        "priority": 2,
+        "reason": "Hardware that looks impossible, readable with the sound off; confirmed by Interesting Engineering and Glitchwire."
+      },
+      {
+        "story": "AI fire nozzle at a Hebei ski resort keeps spraying animated flames on a food stall sign",
+        "source": "https://x.com/Osint613/status/2123693212019699840",
+        "decision": "queued",
+        "job_id": "2026-11-21-ai-fire-nozzle-sprays-sign-flames-reel",
+        "priority": 2,
+        "reason": "Strange AI behavior anyone would send to a friend; Sunday Guardian and Metro Mode confirm it, and the caption mentions the grill heat explanation."
+      },
+      {
+        "story": "Guide: How to use Qwen Code (next tool library line; Gemini Gems already has a guide, Grok Imagine, ChatGPT agent mode and Freepik still blocked)",
+        "decision": "queued",
+        "job_id": "2026-11-21-how-to-use-qwen-code-guide",
+        "priority": 2,
+        "reason": "Built from the official README, auth docs and Alibaba Cloud pages plus Decrypt; chat.qwen.ai could not be opened, so the guide covers Qwen Code only."
+      },
+      {
+        "story": "Driverless EV in Anhui tries to park itself 868 times overnight",
+        "source": "https://x.com/sustainme_in/status/2124073604543287410",
+        "decision": "skipped",
+        "reason": "Make and cause unconfirmed, and the owner may have triggered it for a contest; two strange China clips in one day is enough."
+      },
+      {
+        "story": "OpenAI models helped AMD optimize its next flagship GPU design",
+        "decision": "skipped",
+        "reason": "Insider chip news and today's 4 site-only articles are already queued."
+      },
+      {
+        "story": "Frostbite: a CPU architecture designed and verified by AI (Hacker News, 643 points)",
+        "source": "https://architectlabs.com/blog/frostbite",
+        "decision": "skipped",
+        "reason": "Developer interest only, and the site-only cap for today is reached."
+      },
+      {
+        "story": "Signal on restricting AI agents in mobile operating systems",
+        "source": "https://signal.org/blog/protecting-your-privacy/",
+        "decision": "skipped",
+        "reason": "Policy blog post with no new event; site-only cap reached."
+      },
+      {
+        "story": "Nasdaq erases 2026 gains as AI sell-off hits Anthropic's second day",
+        "decision": "covered",
+        "reason": "Market slide already covered by today's Anthropic and Nvidia jobs; today's 2 carousels are used."
+      },
+      {
+        "story": "Google Duplex now calls businesses for you in Gemini",
+        "source": "https://research.google/blog/how-google-duplex-evolved-to-also-call-businesses-for-you-in-gemini",
+        "decision": "skipped",
+        "reason": "Research blog explainer of an existing feature, not new news."
+      },
+      {
+        "story": "John Deere acquires Orchard Robotics",
+        "decision": "skipped",
+        "reason": "Small undisclosed deal with little US consumer interest."
       }
     ],
     "requests": []

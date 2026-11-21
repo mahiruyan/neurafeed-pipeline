@@ -1,0 +1,223 @@
+{
+  "id": "2026-11-21-how-to-use-qwen-code-guide",
+  "format": "utility",
+  "site_only": true,
+  "created_at": "2026-11-21T17:15:00Z",
+  "story_time": "2026-11-21T17:15:00Z",
+  "timely": false,
+  "sensitive": false,
+  "priority": 2,
+  "sources": [
+    {
+      "name": "Qwen Code on GitHub (README)",
+      "url": "https://github.com/QwenLM/qwen-code"
+    },
+    {
+      "name": "Qwen Code Docs: Authentication",
+      "url": "https://qwenlm.github.io/qwen-code-docs/en/users/configuration/auth/"
+    },
+    {
+      "name": "Alibaba Cloud Model Studio: Qwen Code",
+      "url": "https://www.alibabacloud.com/help/en/model-studio/qwen-code"
+    },
+    {
+      "name": "Alibaba Cloud Model Studio: Coding Plan",
+      "url": "https://help.aliyun.com/en/model-studio/coding-plan"
+    },
+    {
+      "name": "Qwen Code issue #3203: Qwen OAuth free tier policy",
+      "url": "https://github.com/QwenLM/qwen-code/issues/3203"
+    },
+    {
+      "name": "Decrypt",
+      "url": "https://decrypt.co/364501/alibaba-shuts-down-free-tier-qwen-code"
+    }
+  ],
+  "caption": "Qwen Code is Alibaba's open source coding agent for your terminal, editor and desktop.\nThe free Qwen OAuth tier ended in April, so you now sign in with a Qwen subscription, a Coding Plan or an API key.\nHere is how to install it, sign in and give it its first jobs.\n\nWould you let an open source agent work on your code?\n\nFollow @neurafeed.ai for daily AI news.\n\nSource: Qwen Code docs, Alibaba Cloud · Photo: Qwen",
+  "threads_text": "Qwen Code, Alibaba's open source coding agent, is easy to install but no longer free through Qwen OAuth. You need a Qwen Plus or Pro plan, a Coding Plan or your own API key. Would you pay for it or bring your own model?",
+  "slides": [
+    {
+      "kind": "cover",
+      "headline": "How to use *Qwen Code*, Alibaba's open source coding agent",
+      "image": {
+        "url": "https://img.alicdn.com/imgextra/i1/O1CN01DXWdF8BDUdD3XPhl_!!6000000001721-2-tps-1743-902.png",
+        "credit": "Qwen",
+        "fit": "contain",
+        "fallback_urls": []
+      }
+    },
+    {
+      "kind": "card",
+      "heading": "1. Install it in *one line*",
+      "paras": [
+        "On Mac or Linux, the official script installs it from the terminal. Windows has a PowerShell version.",
+        "With npm you need Node.js 22 or newer. Restart the terminal after installing."
+      ],
+      "image": {
+        "url": "https://img.alicdn.com/imgextra/i2/O1CN01K0nwj41RM1Il8kB0t_!!6000000002096-2-tps-1544-1060.png",
+        "credit": "Qwen",
+        "fit": "contain"
+      }
+    },
+    {
+      "kind": "prompt",
+      "heading": "2. Start it in your *project*",
+      "paras": [
+        "Run qwen inside your project folder, then type /auth to sign in or add an API key.",
+        "This first prompt makes it read the code and give you a map."
+      ],
+      "prompt": "Explain this repository and show me where to start."
+    },
+    {
+      "kind": "prompt",
+      "heading": "3. Make it *plan first*",
+      "paras": [
+        "Plan Mode lets it read before it touches any file.",
+        "Ask for a plan you can check, then let it edit."
+      ],
+      "prompt": "Read the code for [feature]. Do not edit anything yet. List the files you would change and why, step by step."
+    },
+    {
+      "kind": "cta",
+      "hook": "Follow for AI tool guides that tell you the limits before you pay."
+    }
+  ],
+  "site_article": {
+    "kind": "guide",
+    "headline": "How to use Qwen Code: install, sign in and first prompts",
+    "dek": "Qwen Code is Alibaba's open source coding agent. It installs in one line, but the free sign in is gone, so you need a plan or an API key.",
+    "summary": "Qwen Code is an open source coding agent from Alibaba's Qwen team that runs in the terminal, editors, a desktop app and chat apps. Its free Qwen OAuth tier closed on April 15, 2026, so you now sign in with a Qwen Plus or Pro subscription, a Coding Plan or an API key.",
+    "seo_title": "How to use Qwen Code: install, sign in and first prompts",
+    "seo_description": "How to use Qwen Code: the install commands, the five sign in options now that the free tier is gone, Coding Plan limits and three prompts to start with.",
+    "answer_summary": "Install Qwen Code with the official one line script or with npm (Node.js 22 or newer), run qwen in your project folder and type /auth. Sign in with a Qwen Plus or Pro subscription, or add an API key from Alibaba Cloud or another provider. The free Qwen OAuth tier ended on April 15, 2026.",
+    "tags": [
+      "Qwen",
+      "Qwen Code",
+      "Alibaba",
+      "AI coding",
+      "Guides"
+    ],
+    "hero_alt": "Qwen Code shown running in a terminal, a desktop app, a browser, an editor and chat apps.",
+    "paragraphs": [
+      {
+        "kind": "fact",
+        "text": "How to use Qwen Code comes down to three things: install it, pick a way to pay for the model, and give it a project to read. Qwen Code is an open source coding agent from Alibaba's Qwen team. According to its GitHub page, it runs in the terminal, in a desktop app for macOS, Windows and Linux, in VS Code, Zed and JetBrains editors, in an experimental web interface, and through chat apps such as Telegram.",
+        "sources": [
+          0
+        ]
+      },
+      {
+        "kind": "fact",
+        "text": "The one thing to know before you start: it is no longer free through a Qwen account. The project cut the free Qwen OAuth quota from 1,000 to 100 requests a day and then closed the free entry point on April 15, 2026, according to the project's own GitHub notice and a report by Decrypt. Older tutorials that promise free daily requests are out of date.",
+        "sources": [
+          4,
+          5
+        ]
+      },
+      {
+        "kind": "heading",
+        "text": "How to install Qwen Code"
+      },
+      {
+        "kind": "step",
+        "title": "1. Run the install script",
+        "text": "On macOS or Linux, the README gives one command for the terminal. On Windows, it gives a PowerShell command. Both download the standalone version, so you do not need Node.js for this route."
+      },
+      {
+        "kind": "prompt",
+        "title": "Install on macOS or Linux",
+        "text": "curl -fsSL https://qwen-code-assets.oss-cn-hangzhou.aliyuncs.com/installation/install-qwen-standalone.sh | bash"
+      },
+      {
+        "kind": "prompt",
+        "title": "Install on Windows (PowerShell)",
+        "text": "irm https://qwen-code-assets.oss-cn-hangzhou.aliyuncs.com/installation/install-qwen-standalone.ps1 | iex"
+      },
+      {
+        "kind": "step",
+        "title": "2. Or use npm or Homebrew",
+        "text": "If you already use Node.js, install it with npm install -g @qwen-code/qwen-code@latest. This route needs Node.js 22 or newer. On macOS and Linux, brew install qwen-code also works. The README says to restart your terminal after installing so the new command is found."
+      },
+      {
+        "kind": "step",
+        "title": "3. Check that it works",
+        "text": "Run qwen --version to confirm the install. Alibaba Cloud's guide notes that on Windows you may need to close and reopen the command window if the qwen command is not found."
+      },
+      {
+        "kind": "heading",
+        "text": "How to sign in now that the free tier is gone"
+      },
+      {
+        "kind": "fact",
+        "text": "Open a terminal in your project folder, type qwen to start a session, then type /auth. The official docs list five options in that menu: a Qwen account with a Plus or Pro subscription, QwenCloud (with a monthly credit plan or a pay as you go API key), Alibaba Cloud Model Studio (with a Coding Plan, a credit plan or a pay as you go key), nine third party providers such as DeepSeek, OpenRouter and Kimi, and a custom provider, which can be a model running on your own machine or any OpenAI, Anthropic or Gemini compatible endpoint.",
+        "sources": [
+          1
+        ]
+      },
+      {
+        "kind": "fact",
+        "text": "Alibaba's Coding Plan is the option made for this tool. Its official page lists the Pro plan at 200 yuan a month, with a first month price of 39.90 yuan for new subscribers, and limits of up to 6,000 requests every five hours, 45,000 a week and 90,000 a month. The cheaper Lite plan is no longer open to new subscribers. Models on the plan include qwen3.7-plus, kimi-k2.5 and glm-5.",
+        "sources": [
+          3
+        ]
+      },
+      {
+        "kind": "step",
+        "title": "4. Set up a Model Studio key",
+        "text": "Alibaba Cloud's guide walks through it: run qwen, choose Alibaba ModelStudio, pick your billing plan, choose the Singapore region, and paste your API key. Then send qwen -p \"Hello\" to check that the model answers."
+      },
+      {
+        "kind": "tip",
+        "text": "Keys can also go in environment variables or in the settings file at ~/.qwen/settings.json. The docs warn against committing API keys to version control, so keep that file out of your repository. Type /model during a session to switch models."
+      },
+      {
+        "kind": "heading",
+        "text": "Three prompts to start with"
+      },
+      {
+        "kind": "fact",
+        "text": "The README suggests a first prompt that makes the agent read your code and explain it. It is a good test: you see how well it understands the project before you let it change anything.",
+        "sources": [
+          0
+        ]
+      },
+      {
+        "kind": "prompt",
+        "title": "Prompt 1: Get a map of the project",
+        "text": "Explain this repository and show me where to start."
+      },
+      {
+        "kind": "fact",
+        "text": "Qwen Code has a Plan Mode that reads files without editing them, plus approval modes that range from asking before every change to running on its own. Start careful: ask for a plan, check it, then approve the edits.",
+        "sources": [
+          0
+        ]
+      },
+      {
+        "kind": "prompt",
+        "title": "Prompt 2: Plan before editing",
+        "text": "Read the code for [feature]. Do not edit anything yet.\nList the files you would change, what you would change in each one, and why.\nThen wait for my go ahead."
+      },
+      {
+        "kind": "prompt",
+        "title": "Prompt 3: Fix one bug with a test",
+        "text": "This error happens when I [steps to reproduce]:\n[paste the error]\nFind the cause, write a test that fails because of it, then fix the code so the test passes. Show me the diff."
+      },
+      {
+        "kind": "fact",
+        "text": "It also ships with built in skills such as /review and /bugfix, remembers notes across sessions, and loads a QWEN.md or AGENTS.md file from your project automatically. Writing your project's rules into that file once saves you from repeating them in every prompt. For scripts and CI, qwen -p runs a single prompt without opening a session.",
+        "sources": [
+          0
+        ]
+      },
+      {
+        "kind": "heading",
+        "text": "What Qwen Code is not great at"
+      },
+      {
+        "kind": "analysis",
+        "text": "The install is the easy part. The confusing part is billing: there are several plans across Qwen, QwenCloud and Alibaba Cloud, some prices are listed in yuan, and the free route that made the tool popular is closed. If you already pay for another model provider, the cheapest start is to point Qwen Code at that key and only move to a Coding Plan if you use it daily. Several features, including Agent Teams, the web interface and Qwen Live, are still marked experimental, so expect rough edges there."
+      }
+    ]
+  }
+}
