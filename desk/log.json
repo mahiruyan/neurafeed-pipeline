@@ -1,148 +1,5 @@
 [
   {
-    "run_at": "2026-11-14T19:12:24.539Z",
-    "summary": "Afternoon run (13:55 New York, Nov 14): no open links or requests. Today already has 8 Instagram jobs plus Mahir's GR00T Reel, so no news was queued; added the fourth site-only guide (How to use Copilot Studio).",
-    "considered": [
-      {
-        "story": "Site guide: How to use Copilot Studio to build your own agent (tool library line 'how to use copilot studio')",
-        "source": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/nlu-gpt-quickstart",
-        "decision": "queued",
-        "job_id": "2026-11-14-how-to-use-copilot-studio-guide",
-        "priority": 2
-      },
-      {
-        "story": "Site guide: How to use Grok Imagine (next tool library line)",
-        "source": "https://docs.x.ai/docs/guides/image-generation",
-        "decision": "skipped",
-        "reason": "xAI only documents the API; there is no official help page for using Imagine in the Grok app or its free limits, so the plan says to take the next line. Will come back if xAI publishes app docs."
-      },
-      {
-        "story": "Nvidia director sold nearly $1B in stock weeks before the Huang scandal",
-        "source": "https://news.ycombinator.com/",
-        "decision": "skipped",
-        "reason": "Strong money story, but today's 8 job cap is already reached; a candidate for tomorrow morning."
-      },
-      {
-        "story": "Nvidia allegedly engineered scarcity by funding AI startups to buy its GPUs",
-        "source": "https://news.ycombinator.com/",
-        "decision": "skipped",
-        "reason": "Day's cap is full, and it needs confirmation from a major outlet first."
-      },
-      {
-        "story": "Researchers allege DeepSeek, Kimi and other Chinese models were trained on banned Blackwell GPUs",
-        "decision": "covered",
-        "reason": "Already covered as 2026-11-13-chinese-ai-labs-banned-blackwell-fingerprint."
-      },
-      {
-        "story": "Claude helps surface theorems in Kurt Godel's notebooks",
-        "decision": "skipped",
-        "reason": "Daily cap is full; still worth a look tomorrow if a readable source appears."
-      },
-      {
-        "story": "Jensen Huang saga sparks debate about race (SCMP) and The Verge on the showman founder CEO",
-        "decision": "skipped",
-        "reason": "Opinion pieces on a story we have covered many times; cap is full."
-      },
-      {
-        "story": "TSMC approves OpenAI and Anthropic investment caps",
-        "decision": "skipped",
-        "reason": "Single low quality source and the cap is full."
-      },
-      {
-        "story": "Cognizant commits over 25,000 staff to Claude",
-        "decision": "skipped",
-        "reason": "Enterprise deal with little consumer interest, and the cap is full."
-      }
-    ],
-    "requests": []
-  },
-  {
-    "run_at": "2026-11-14T19:35:26.254Z",
-    "summary": "Link desk: queued Mahir's X video link-2026-11-14-3942 as a Reel with his title, for his review.",
-    "considered": [
-      {
-        "story": "Mahir's X video from @caronitpereira (\"funniest so far\")",
-        "source": "https://x.com/caronitpereira/status/2121521049917702558",
-        "decision": "queued",
-        "job_id": "2026-11-14-funniest-so-far-reel",
-        "priority": 1,
-        "reason": "x.com cannot be opened from this run, so the hook is Mahir's title word for word and the caption is kept neutral; credited @caronitpereira. Kept for his approval as usual."
-      }
-    ],
-    "requests": []
-  },
-  {
-    "run_at": "2026-11-14T21:03:15.223Z",
-    "summary": "Saturday afternoon run: the 8 desk news jobs for Nov 14 (New York) are already queued, so no new news; queued 2 site-only guides (Opus Clip, Claude Cowork) to reach 6 guides today. No open links or requests.",
-    "considered": [
-      {
-        "story": "Website guide: How to use Opus Clip for free",
-        "source": "https://help.opus.pro/docs/article/how-to-use-clipanything",
-        "decision": "queued",
-        "job_id": "2026-11-14-how-to-use-opus-clip-guide",
-        "priority": 2
-      },
-      {
-        "story": "Website guide: How to use Claude Cowork effectively, with prompts",
-        "source": "https://support.claude.com/en/articles/13345190-get-started-with-claude-cowork",
-        "decision": "queued",
-        "job_id": "2026-11-14-how-to-use-claude-cowork-guide",
-        "priority": 2
-      },
-      {
-        "story": "Guide plan: How to use ChatGPT Atlas",
-        "decision": "skipped",
-        "reason": "OpenAI retired the Atlas browser in August 2026, so a how-to guide would be wrong; the plan line should be removed."
-      },
-      {
-        "story": "Guide plan: How to use Grok Imagine",
-        "decision": "skipped",
-        "reason": "Found no official xAI help page to base the steps on, only third-party blogs."
-      },
-      {
-        "story": "Guide plan: Gemini CLI install",
-        "decision": "skipped",
-        "reason": "Official README still shows old free limits while recent reports say the free tier changed in 2026; could not confirm current limits."
-      },
-      {
-        "story": "Nvidia director sold nearly $1B in stock weeks before the Jensen Huang scandal (Hacker News)",
-        "decision": "skipped",
-        "reason": "Daily cap of 8 desk news jobs for Nov 14 is reached; a later run after midnight New York time can pick it up if still fresh."
-      },
-      {
-        "story": "AI unlocks Godel's notebooks with hundreds of proved theorems (Hacker News)",
-        "decision": "skipped",
-        "reason": "Daily news cap reached; candidate for the next day."
-      },
-      {
-        "story": "Anthropic upgrades Claude Code Projects to run parallel AI workers (Hacker News)",
-        "decision": "skipped",
-        "reason": "Daily news cap reached; developer-focused update, candidate for the next day."
-      },
-      {
-        "story": "Cognizant commits over 25,000 staff to Claude",
-        "decision": "skipped",
-        "reason": "Daily news cap reached; enterprise deal with little consumer appeal."
-      },
-      {
-        "story": "Treasury Secretary questions whether Nvidia knowingly sold GPUs to shell companies",
-        "decision": "covered",
-        "reason": "Already queued as 2026-11-14-bessent-did-nvidia-know-its-client."
-      },
-      {
-        "story": "Google adds Wallet to Gemini for finance insights",
-        "decision": "covered",
-        "reason": "Already queued as 2026-11-13-gemini-reads-your-google-wallet."
-      },
-      {
-        "story": "OpenAI launches ChatGPT Wallet for agent payments",
-        "decision": "covered",
-        "reason": "Already queued as 2026-11-13-chatgpt-wallet-agents-spend-money."
-      }
-    ],
-    "requests": []
-  },
-  {
     "run_at": "2026-11-14T22:54:14.378Z",
     "summary": "Saturday evening run: the 8 desk news jobs and 6 site guides for Nov 14 (New York) are already queued, so nothing new was queued. No open links or requests; the roundup is due Sunday at or after 17:00.",
     "considered": [
@@ -5148,6 +5005,54 @@
         "story": "Reel search: viral robot, smart glasses and gadget clips of November 20 and 21",
         "decision": "skipped",
         "reason": "Searches found only older or YouTube-only clips and fact-checks of old videos; nothing fresh on X passed the Which Reels travel filter, and 3 Reels are already queued today."
+      }
+    ],
+    "requests": []
+  },
+  {
+    "run_at": "2026-11-21T21:04:48.603Z",
+    "summary": "Late afternoon run (16:00 New York, Nov 21): no open links or requests; queued the fifth and sixth guides of the day (Descript, HeyGen). Today's 2 Instagram carousels and 4 site-only articles were already queued, no new priority 1 story, and no fresh Reel video passed the filter.",
+    "considered": [
+      {
+        "story": "Site guide: How to use Descript to edit video by editing text (guides/plan.md tool library)",
+        "source": "https://help.descript.com/getting-started/edit-like-a-doc",
+        "decision": "queued",
+        "job_id": "2026-11-21-how-to-use-descript-guide",
+        "priority": 2,
+        "reason": "Built from Descript's help center and pricing page plus Zapier and Sonix reviews; image URLs could not be checked from this run, so rendering may need fallbacks."
+      },
+      {
+        "story": "Site guide: How to use HeyGen to make an AI avatar video (guides/plan.md tool library)",
+        "source": "https://help.heygen.com/en/articles/15125761-heygen-credit-based-pricing-plans-explained",
+        "decision": "queued",
+        "job_id": "2026-11-21-how-to-use-heygen-guide",
+        "priority": 2,
+        "reason": "Built from HeyGen's help center (studio, digital twin, consent video, credit pricing) and blog plus Capterra reviews; the pricing page itself could not be opened, prices come from the help center article."
+      },
+      {
+        "story": "LA developer selling a $30 million mansion would accept OpenAI or Anthropic shares (Business Insider)",
+        "decision": "skipped",
+        "reason": "A fun money story, but today's 2 Instagram carousels are already queued and it is not a site-only insider story."
+      },
+      {
+        "story": "Oracle says its OpenAI contract is fully funded (The Information, The Next Web)",
+        "decision": "skipped",
+        "reason": "Insider finance news and today's 4 site-only articles are already queued."
+      },
+      {
+        "story": "Gemini adds AI-generated GIFs, also for free users (Neowin)",
+        "decision": "skipped",
+        "reason": "Small feature news; site-only quota for the day is full."
+      },
+      {
+        "story": "Anthropic mathematician says Claude helped prove the Riemann Hypothesis (Guardian, Le Monde follow-ups)",
+        "decision": "covered",
+        "reason": "Already posted as 2026-11-20-anthropic-mathematician-riemann-proof-claude."
+      },
+      {
+        "story": "Reel search: viral robot, smart glasses and gadget clips of November 21",
+        "decision": "skipped",
+        "reason": "Search found only older clips (smart glasses chess, Russian robot fall, XRobotDoll) and no fresh original X or company video; 3 Reels are already queued today."
       }
     ],
     "requests": []
