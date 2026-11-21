@@ -5085,5 +5085,71 @@
       }
     ],
     "requests": []
+  },
+  {
+    "run_at": "2026-11-21T18:59:16.738Z",
+    "summary": "Afternoon run (14:00 New York, Nov 21): no open links or requests; queued the fourth guide of the day (Cursor limits explained, new X Subscription tiers vs legacy plans). Today's 2 Instagram carousels and 4 site-only articles were already queued, no new priority 1 story, and no fresh Reel video passed the filter.",
+    "considered": [
+      {
+        "story": "Site guide: Cursor limits explained (guides/plan.md Tier 4 'cursor limits')",
+        "source": "https://cursor.com/help/models-and-usage/usage-limits",
+        "decision": "queued",
+        "job_id": "2026-11-21-cursor-limits-plans-guide",
+        "priority": 2,
+        "reason": "Built from Cursor's Models and Pricing, usage limits and legacy pricing docs plus TechCrunch; covers the new X Subscription tiers, the weekly pool shared with Grok and legacy Pro limits."
+      },
+      {
+        "story": "Guide plan lines for ChatGPT Atlas, Sora, Grok Imagine and DeepSeek vs ChatGPT",
+        "decision": "skipped",
+        "reason": "Same reasons as earlier runs: Atlas and Sora were retired, no official Grok Imagine help page, DeepSeek docs could not be read."
+      },
+      {
+        "story": "Gemini adds AI-generated GIFs, also for free users (Neowin)",
+        "source": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQMG0wdWZ2ZW9xZkxVdVItNk16a2xCc1NnS2lTSG16ZFFPeVd",
+        "decision": "skipped",
+        "reason": "Small feature news and today's 4 site-only articles are already queued."
+      },
+      {
+        "story": "How Jensen Huang made humiliation routine at Nvidia (New York Times)",
+        "decision": "skipped",
+        "reason": "Strong person story, but today's 2 Instagram carousels are already queued; a candidate for tomorrow if more coverage appears."
+      },
+      {
+        "story": "AI companies make concessions to publishers (Axios)",
+        "decision": "skipped",
+        "reason": "Industry deal story for insiders, and the site-only cap for today is reached."
+      },
+      {
+        "story": "Musk calls Gemini 4 Neon 'a banger' (TIKR)",
+        "decision": "covered",
+        "reason": "Gemini 4 Neon launch already covered as 2026-11-18-gemini-4-neon-fourth-model; a single remark adds little."
+      },
+      {
+        "story": "Oracle says its OpenAI contract is fully funded",
+        "decision": "skipped",
+        "reason": "Insider infrastructure finance story, skipped in earlier runs too."
+      },
+      {
+        "story": "TechCrunch: selling an AI version of your face to a microdrama startup",
+        "decision": "skipped",
+        "reason": "Feature piece with no single new event; carousel and site-only slots are full."
+      },
+      {
+        "story": "California teenager's homemade AI flagged 1.5 million flickering objects in NASA data",
+        "decision": "skipped",
+        "reason": "Only one outlet seen in leads and today's site-only slots are full."
+      },
+      {
+        "story": "Anthropic mathematician says Claude helped prove the Riemann Hypothesis (Guardian, Le Monde)",
+        "decision": "covered",
+        "reason": "Already posted as 2026-11-20-anthropic-mathematician-riemann-proof-claude."
+      },
+      {
+        "story": "Reel search: viral robot, smart glasses and gadget clips of November 20 and 21",
+        "decision": "skipped",
+        "reason": "Searches found only older or YouTube-only clips and fact-checks of old videos; nothing fresh on X passed the Which Reels travel filter, and 3 Reels are already queued today."
+      }
+    ],
+    "requests": []
   }
 ]
