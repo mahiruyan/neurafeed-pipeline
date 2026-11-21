@@ -1,53 +1,5 @@
 [
   {
-    "run_at": "2026-11-14T22:54:14.378Z",
-    "summary": "Saturday evening run: the 8 desk news jobs and 6 site guides for Nov 14 (New York) are already queued, so nothing new was queued. No open links or requests; the roundup is due Sunday at or after 17:00.",
-    "considered": [
-      {
-        "story": "Business Insider: the Chinese spy allegation that toppled Nvidia's CEO is starting to look shaky",
-        "decision": "skipped",
-        "reason": "Daily cap of 8 desk news jobs for Nov 14 is reached; it is an analysis follow-up to a saga already covered many times, so a later run can pick it up if new facts appear."
-      },
-      {
-        "story": "Cursor confirms a breach at Fireworks AI led to a malicious Claude Code extension in its marketplace",
-        "decision": "skipped",
-        "reason": "Daily news cap reached; developer-focused security story, candidate for the next day if still fresh."
-      },
-      {
-        "story": "FTC opens probe into AI safety including Anthropic and OpenAI (ABC News in leads)",
-        "source": "https://www.inquirer.com/business/ftc-anthropic-openai-ai-investigation-consumers-20260930.html",
-        "decision": "skipped",
-        "reason": "Search shows this probe was announced on Sept 30, 2026, so it is old news resurfacing in the feed."
-      },
-      {
-        "story": "Futurism: AI agent ordered its human proxy an absurd number of eggs",
-        "decision": "skipped",
-        "reason": "Daily news cap reached; good everyone story to check again in the next day's runs."
-      },
-      {
-        "story": "Anthropic says outdated prompting habits slow down Claude Opus 5.5 (The Decoder)",
-        "decision": "skipped",
-        "reason": "Daily news cap reached; could become a guide or a carousel on another day."
-      },
-      {
-        "story": "Nvidia director sold nearly $1B in stock weeks before the Jensen Huang scandal (Hacker News)",
-        "decision": "skipped",
-        "reason": "Daily news cap reached, as in the previous run."
-      },
-      {
-        "story": "Nonprofits sue OpenAI, Anthropic, Google, Meta and SpaceX to freeze frontier AI",
-        "decision": "covered",
-        "reason": "Already queued as 2026-11-12-nonprofits-sue-to-freeze-frontier-ai."
-      },
-      {
-        "story": "Treasury Secretary questions whether Nvidia knowingly sold GPUs to shell companies",
-        "decision": "covered",
-        "reason": "Already queued as 2026-11-14-bessent-did-nvidia-know-its-client."
-      }
-    ],
-    "requests": []
-  },
-  {
     "run_at": "2026-11-15T00:53:43.003Z",
     "summary": "Saturday night run (19:53 New York): the 8 desk news jobs and 6 site guides for Nov 14 are already queued, so nothing new was queued. No open links or requests; leads unchanged since 21:40 UTC.",
     "considered": [
@@ -5053,6 +5005,59 @@
         "story": "Reel search: viral robot, smart glasses and gadget clips of November 21",
         "decision": "skipped",
         "reason": "Search found only older clips (smart glasses chess, Russian robot fall, XRobotDoll) and no fresh original X or company video; 3 Reels are already queued today."
+      }
+    ],
+    "requests": []
+  },
+  {
+    "run_at": "2026-11-21T22:55:47.431Z",
+    "summary": "Evening run (18:00 New York, Nov 21): no open links or requests; queued a fourth Reel (official trailer for Artificial, Andrew Garfield as Sam Altman). Today's 2 Instagram carousels, 4 site-only articles and 6 guides were already queued, and no new priority 1 story appeared.",
+    "considered": [
+      {
+        "story": "NEON releases the official trailer for Artificial, Andrew Garfield as Sam Altman, Ike Barinholtz as Elon Musk",
+        "source": "https://x.com/DiscussingFilm/status/2123101099800273047",
+        "decision": "queued",
+        "job_id": "2026-11-21-artificial-trailer-garfield-altman-reel",
+        "priority": 2,
+        "reason": "Famous actor playing Altman with Musk in the cast is something people send to friends; confirmed by ABC Audio (Southern Illinois Now), JoBlo and Dark Horizons; clip taken from X since YouTube downloads fail."
+      },
+      {
+        "story": "Signal restricts mobile screenshots over AI surveillance (TechCrunch)",
+        "source": "https://techcrunch.com/2026/11/21/signal-restricts-mobile-screenshots-as-it-confronts-existential-threat-of-ai-surveillance/",
+        "decision": "skipped",
+        "reason": "Insider privacy story and today's 4 site-only articles are already queued; a candidate for tomorrow."
+      },
+      {
+        "story": "UN talks on killer robot rules end with no result (The Verge, Gizmodo)",
+        "source": "https://www.theverge.com/tech/1039554/un-regulations-killer-robots",
+        "decision": "skipped",
+        "reason": "Policy story with no single striking moment; carousel and site-only slots for today are full."
+      },
+      {
+        "story": "Lean and Mathlib communities certify the Claude-assisted Riemann proof (Unite.AI, USA Today)",
+        "decision": "covered",
+        "reason": "Follow-up to 2026-11-20-anthropic-mathematician-riemann-proof-claude."
+      },
+      {
+        "story": "ChatGPT Space opens to Plus subscribers (BigGo Finance)",
+        "decision": "skipped",
+        "reason": "Only one low-reliability outlet found and no OpenAI page confirming it."
+      },
+      {
+        "story": "A tale of two Nvidias (TechCrunch)",
+        "source": "https://techcrunch.com/2026/11/21/a-tale-of-two-nvidias/",
+        "decision": "skipped",
+        "reason": "Analysis piece with no new event; Nvidia's probe and sell-off are already covered."
+      },
+      {
+        "story": "Gemini app camera redesign on Android (9to5Google)",
+        "decision": "skipped",
+        "reason": "Small interface change for insiders; site-only cap reached."
+      },
+      {
+        "story": "Howard Marks warns OpenAI and Anthropic their lead may not last",
+        "decision": "skipped",
+        "reason": "Investor opinion with no new event."
       }
     ],
     "requests": []
