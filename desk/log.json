@@ -1,70 +1,5 @@
 [
   {
-    "run_at": "2026-11-14T13:20:54.343Z",
-    "summary": "Morning run (08:20 New York, Nov 14): no open links or requests. Queued the Amazon World Product Graph story (Reuters) and the first site-only guide of the day (how to use Codex). Today now has 6 Instagram posts.",
-    "considered": [
-      {
-        "story": "Amazon drafts a World Product Graph to collect data on nearly every product sold worldwide, partly by crawling rival retailers, to fight AI shopping agents",
-        "source": "https://tribune.com.pk/story/2640155/amazons-plan-to-own-the-worlds-product-data-and-fight-ai-shopping-agents",
-        "decision": "queued",
-        "job_id": "2026-11-14-amazon-world-product-graph",
-        "priority": 2,
-        "reason": "Big consumer brand, money and the AI shopping agent fight, beyond pure AI insider news. Reuters and The Verge could not be opened here, so the facts come from the full Reuters text republished by The Express Tribune, confirmed by Cryptopolitan, with GeekWire and Amazon for Alexa for Shopping background. Marked not timely because the report is about 12 hours old. Slide images are Amazon press images and could not be previewed from this run, please check them."
-      },
-      {
-        "story": "Site guide: How to use Codex (next line in the guides plan tool library)",
-        "source": "https://github.com/openai/codex",
-        "decision": "queued",
-        "job_id": "2026-11-14-how-to-use-codex-guide",
-        "priority": 2,
-        "reason": "First of today's 6 guides. OpenAI's developer docs redirect and could not be opened, so it is built from the official README, OpenAI's Get started page, OpenAI Academy, DataCamp and Scrimba; approval mode names and IDE details that only older forum posts describe were left out."
-      },
-      {
-        "story": "Claude helps surface 663 theorems in Kurt Godel's notebooks (The Guardian)",
-        "source": "https://www.theguardian.com/science/2026/nov/13/kurt-godel-notebooks-ai-helps-unlock-hidden-discoveries-man-who-transformed-maths",
-        "decision": "skipped",
-        "reason": "The Guardian original still could not be opened from this run."
-      },
-      {
-        "story": "White House urges easing liability to encourage AI disclosure (Bloomberg)",
-        "source": "https://bloomberg.com/news/articles/2026-11-14/white-house-urges-easing-liability-to-encourage-ai-disclosure",
-        "decision": "skipped",
-        "reason": "Bloomberg blocks fetching and no second source was found yet; worth another look later today."
-      },
-      {
-        "story": "Claude deletes a law professor's syllabus and a year of lecture notes",
-        "decision": "covered",
-        "reason": "Already covered as 2026-11-08-claude-deleted-professor-lecture-notes."
-      },
-      {
-        "story": "Anthropic IPO book reportedly six times oversubscribed",
-        "decision": "skipped",
-        "reason": "IPO already covered; waiting for the actual pricing news."
-      },
-      {
-        "story": "AI startup funding rounds (Operand $31M, WhiteMatter $20M, Charta Health $55M, Luminal $25M)",
-        "decision": "skipped",
-        "reason": "Small funding rounds with little US consumer interest."
-      },
-      {
-        "story": "Moonshot AI restructures ahead of an IPO (WSJ)",
-        "decision": "skipped",
-        "reason": "Corporate restructuring of a Chinese lab, little interest for a US Instagram audience."
-      },
-      {
-        "story": "Linux script emails Sam Altman about unused RAM",
-        "decision": "skipped",
-        "reason": "A small joke project from a single gaming site."
-      },
-      {
-        "story": "ChatGPT Wallet, Gemini Wallet spending, OpenAI board member AI accident warning, FAA ground stop AI probe",
-        "decision": "covered",
-        "reason": "Already covered by jobs from November 13 and 14."
-      }
-    ],
-    "requests": []
-  },
-  {
     "run_at": "2026-11-14T15:20:50.411Z",
     "summary": "Late morning run (10:30 New York, Nov 14): no open links or requests. Queued the Epoch AI report on test agents that reached its live site and posed as staff, plus the second site-only guide of the day (Otter AI). Today now has 7 Instagram posts.",
     "considered": [
@@ -5165,6 +5100,68 @@
         "story": "Reel search: viral AI gadget, smart glasses and robot clips",
         "decision": "skipped",
         "reason": "Search found only older clips (smart glasses chess, a fake Apple glasses video) and no fresh original X or company video that passes the Reel filter."
+      }
+    ],
+    "requests": []
+  },
+  {
+    "run_at": "2026-11-21T15:05:43.174Z",
+    "summary": "Morning run (10:00 New York, Nov 21): no open links or requests; queued the first Reel of the day (a kid walking off with a humanoid robot at Shenzhen's robot carnival) and the second guide of the day (Ollama vs LM Studio). Today's 2 Instagram carousels and 4 site-only articles were already queued.",
+    "considered": [
+      {
+        "story": "A boy at the Shenzhen APEC Robot Carnival takes a humanoid robot by the hand and walks off with it (X clip by @Annie_0605, Sunday Guardian, CGTN)",
+        "source": "https://x.com/Annie_0605/status/2123214036217278695",
+        "decision": "queued",
+        "job_id": "2026-11-21-kid-walks-off-with-humanoid-robot-reel",
+        "priority": 2
+      },
+      {
+        "story": "Site guide: Ollama vs LM Studio (guides/plan.md Tier 2, next usable line)",
+        "source": "https://lmstudio.ai/docs/app",
+        "decision": "queued",
+        "job_id": "2026-11-21-ollama-vs-lm-studio-guide",
+        "priority": 2
+      },
+      {
+        "story": "Guide plan lines DeepSeek vs ChatGPT, Midjourney vs Nano Banana, NotebookLM vs Gemini",
+        "decision": "skipped",
+        "reason": "DeepSeek docs could not be read before, and the Gemini help pages were cited by guides in the last 72 hours, so those guides would be dropped as duplicates."
+      },
+      {
+        "story": "OpenAI says its models improved AMD's next GPU design by up to 14% (PC Gamer, Tom's Hardware)",
+        "decision": "skipped",
+        "reason": "Insider chip engineering story, skipped in earlier runs too, and today's 4 site-only slots are full."
+      },
+      {
+        "story": "Trump rejects 'globalist regulation' of AI at APEC (Yahoo)",
+        "decision": "skipped",
+        "reason": "Today's 2 Instagram carousels are used and the APEC AI angle is already covered by the Trump and Xi military AI post."
+      },
+      {
+        "story": "Robots serve ice cream and coffee in Shenzhen (Euronews)",
+        "source": "https://www.euronews.com/video/2026/11/18/robots-serve-ice-cream-and-coffee-in-chinas-tech-hub",
+        "decision": "skipped",
+        "reason": "Plain service robot footage with no original social post; the robot carnival clip is the stronger Reel."
+      },
+      {
+        "story": "Walmart's Sparky shopping agent usage doubles (AIM Media House)",
+        "decision": "skipped",
+        "reason": "Retail insider story from one trade outlet; site-only slots full."
+      },
+      {
+        "story": "Anthropic mathematician says Claude helped prove the Riemann Hypothesis",
+        "decision": "covered",
+        "reason": "Already posted as 2026-11-20-anthropic-mathematician-riemann-proof-claude."
+      },
+      {
+        "story": "US approved about 879,000 Nvidia and AMD chips for Chinese firms",
+        "decision": "covered",
+        "reason": "Already queued as 2026-11-21-us-approved-879000-ai-chips-china."
+      },
+      {
+        "story": "Reel search: other viral smart glasses, gadget and robot clips",
+        "decision": "skipped",
+        "reason": "Search found only older clips (smart glasses chess, a Russian robot falling) and no fresh original video."
       }
     ],
     "requests": []

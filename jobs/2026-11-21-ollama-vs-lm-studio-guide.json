@@ -1,0 +1,128 @@
+{
+  "id": "2026-11-21-ollama-vs-lm-studio-guide",
+  "format": "utility",
+  "site_only": true,
+  "created_at": "2026-11-21T15:25:00Z",
+  "story_time": "2026-11-21T15:25:00Z",
+  "timely": false,
+  "sensitive": false,
+  "priority": 2,
+  "sources": [
+    { "name": "Ollama Docs: OpenAI compatibility", "url": "https://docs.ollama.com/api/openai-compatibility" },
+    { "name": "Ollama: Pricing", "url": "https://ollama.com/pricing" },
+    { "name": "Ollama blog: Transparent pricing", "url": "https://ollama.com/blog/transparent-pricing" },
+    { "name": "Ollama Docs", "url": "https://docs.ollama.com/index" },
+    { "name": "LM Studio Docs", "url": "https://lmstudio.ai/docs/app" },
+    { "name": "LM Studio Docs: System requirements", "url": "https://lmstudio.ai/docs/app/system-requirements" },
+    { "name": "LM Studio: Pricing", "url": "https://lmstudio.ai/pricing" },
+    { "name": "LM Studio blog: Free for work", "url": "https://lmstudio.ai/blog/free-for-work" },
+    { "name": "LM Studio Docs: lms CLI", "url": "https://lmstudio.ai/docs/cli/lms" },
+    { "name": "Machine Learning Mastery: Ollama vs LM Studio vs llama.cpp", "url": "https://machinelearningmastery.com/ollama-vs-lm-studio-vs-llama-cpp-which-local-ai-runtime-should-you-use-in-2026/" }
+  ],
+  "caption": "Ollama and LM Studio both run AI models on your own computer for free.\nLM Studio is a desktop app you click through. Ollama runs quietly in the background and is built for developers.\nHere is which one fits you, and what their cloud plans cost.\n\nWould you run an AI model on your own laptop?\n\nFollow @neurafeed.ai for daily AI news.\n\nSource: Ollama and LM Studio docs · Photo: Ollama, LM Studio",
+  "threads_text": "Ollama and LM Studio both run AI models on your own computer, and local use is free on both. LM Studio is the friendlier app, Ollama is the one developers wire into their tools. Which one do you use?",
+  "slides": [
+    {
+      "kind": "cover",
+      "headline": "*Ollama vs LM Studio*: which one to pick for running AI on your own computer",
+      "image": {
+        "url": "https://files.lmstudio.ai/bionic/lm-studio-bionic-og.jpg",
+        "credit": "LM Studio",
+        "fallback_urls": ["https://files.lmstudio.ai/free-work-card.png"]
+      },
+      "badges": [{ "url": "https://ollama.com/public/og.png", "fit": "contain" }]
+    },
+    {
+      "kind": "card",
+      "heading": "1. LM Studio is the *easy app*",
+      "paras": [
+        "LM Studio is a desktop app: search Hugging Face, download a model and chat, all with clicks.",
+        "It shows which versions of a model fit your memory before you download."
+      ],
+      "image": {
+        "url": "https://lmstudio.ai/docs-og/app/system-requirements?title=System+Requirements&description=Supported+CPU%2C+GPU+types+for+LM+Studio+on+Mac+%28M1%2FM2%2FM3%2FM4%29%2C+Windows+%28x64%2FARM%29%2C+and+Linux+%28x64%2FARM64%29",
+        "credit": "LM Studio",
+        "fit": "contain"
+      }
+    },
+    {
+      "kind": "card",
+      "heading": "2. Ollama is the *developer tool*",
+      "paras": [
+        "Ollama runs as a background service you control from the terminal.",
+        "Apps and coding agents talk to it at localhost:11434, with OpenAI style requests."
+      ],
+      "image": {
+        "url": "https://ollama.com/public/og-twitter.png",
+        "credit": "Ollama",
+        "fit": "contain"
+      }
+    },
+    {
+      "kind": "card",
+      "heading": "3. Check your *computer* first",
+      "paras": [
+        "LM Studio needs an Apple Silicon Mac on macOS 14 or newer. Intel Macs are not supported.",
+        { "t": "16GB of RAM is the recommended starting point.", "strong": true }
+      ],
+      "image": {
+        "url": "https://files.lmstudio.ai/free-work-card.png",
+        "credit": "LM Studio",
+        "fit": "contain"
+      }
+    },
+    {
+      "kind": "card",
+      "heading": "4. Local is free, *cloud costs*",
+      "paras": [
+        "Running models on your own hardware costs nothing on either app.",
+        "Both sell cloud plans: Ollama Pro and LM Studio Bionic+ are $20 a month each."
+      ],
+      "image": {
+        "url": "https://ollama.com/public/og.png",
+        "credit": "Ollama",
+        "fit": "contain"
+      }
+    },
+    {
+      "kind": "cta",
+      "hook": "Follow for AI tool guides that tell you the limits before you pay."
+    }
+  ],
+  "site_article": {
+    "kind": "guide",
+    "headline": "Ollama vs LM Studio: which one to use to run AI models on your computer",
+    "dek": "Both tools run open AI models on your own hardware for free. LM Studio is a point and click app, Ollama is a background service for developers. Here is how to choose.",
+    "summary": "Ollama and LM Studio both run open AI models locally at no cost. LM Studio is a desktop app with a built in model browser, while Ollama is a background service with a terminal and an API that other apps plug into.",
+    "seo_title": "Ollama vs LM Studio: which one to run AI models locally",
+    "seo_description": "Ollama vs LM Studio compared: interface, system requirements, local API ports, model formats and cloud plan prices, so you know which local AI tool to pick.",
+    "answer_summary": "Pick LM Studio if you want a desktop app where you find, download and chat with models by clicking. Pick Ollama if you want a background service with a terminal and an OpenAI compatible API for your own apps and coding agents. Running models locally is free on both.",
+    "tags": ["Ollama", "LM Studio", "Local AI", "Guides"],
+    "hero_alt": "Promotional image for LM Studio's Bionic agent app on a dark background.",
+    "paragraphs": [
+      { "kind": "fact", "text": "Ollama vs LM Studio is the first choice most people face when they want to run AI models on their own computer. Both are free for local use. LM Studio is a desktop app for macOS, Windows and Linux with a chat window and a built in model search. Ollama lets you run open models on your computer or in its cloud, and plugs them into desktop apps and coding agents.", "sources": [3, 4] },
+      { "kind": "fact", "text": "The short answer: LM Studio is easier if you want to click, and Ollama is better if you want to type commands or connect a model to your own code. An independent comparison from Machine Learning Mastery describes LM Studio as a full desktop application and Ollama as a silent background service, and suggests many people start with LM Studio and move to Ollama later.", "sources": [9] },
+      { "kind": "heading", "text": "Ollama vs LM Studio at a glance" },
+      { "kind": "fact", "text": "Interface: LM Studio has a graphical chat app, searches and downloads models from Hugging Face, can chat with your documents offline and acts as an MCP client. Ollama is driven from the terminal and through its API, with Python and JavaScript libraries for developers.", "sources": [4, 3] },
+      { "kind": "fact", "text": "Local API: Ollama answers OpenAI style requests at http://localhost:11434/v1/, including chat completions, embeddings and a list of models. The API key field is required by OpenAI clients but Ollama ignores it. LM Studio also offers an OpenAI compatible API and a REST API in beta, which the Machine Learning Mastery comparison puts on port 1234.", "sources": [0, 4, 9] },
+      { "kind": "fact", "text": "Model formats: LM Studio runs models with llama.cpp on all three systems and can also use Apple's MLX on Apple Silicon Macs. Machine Learning Mastery notes that Ollama picks a well tuned 4 bit version of a model by default, while LM Studio lists the available versions and shows which ones fit your memory.", "sources": [4, 9] },
+      { "kind": "heading", "text": "Check your computer before you install" },
+      { "kind": "fact", "text": "LM Studio lists clear minimums. On a Mac it needs Apple Silicon (M1 to M4) and macOS 14 or newer, and Intel Macs are not supported. On Windows it runs on x64 and ARM chips such as Snapdragon X Elite, and x64 processors need AVX2. On Linux it ships as an AppImage for x64 and ARM64 and needs Ubuntu 20.04 or newer.", "sources": [5] },
+      { "kind": "fact", "text": "For memory, LM Studio recommends 16GB of RAM, and on Windows at least 4GB of dedicated graphics memory. It says 8GB Macs may work with smaller models and a modest context length.", "sources": [5] },
+      { "kind": "tip", "text": "The model, not the app, decides what your computer can handle. Start with a small model, see how fast it answers, then try a bigger one." },
+      { "kind": "heading", "text": "How to start with each one" },
+      { "kind": "step", "title": "1. LM Studio: download and chat", "text": "Install LM Studio, open it, search for a model, download it and start a chat. LM Studio also ships a command line tool called lms, but you have to open the app at least once before lms works." },
+      { "kind": "prompt", "title": "LM Studio commands to try", "text": "lms ls\nlms load openai/gpt-oss-20b\nlms server start" },
+      { "kind": "step", "title": "2. Ollama: pull a model and point your app at it", "text": "Install Ollama, download a model from the terminal, then send requests to the local address from any tool that speaks the OpenAI API. Ollama's docs also show how to copy a model under an OpenAI style name so older tools work without changes." },
+      { "kind": "prompt", "title": "Ollama commands from its docs", "text": "ollama pull llama3.2\nollama cp llama3.2 gpt-3.5-turbo" },
+      { "kind": "tip", "text": "In Ollama you can raise the context size by creating your own model from a Modelfile with a num_ctx parameter. Bigger context needs more memory." },
+      { "kind": "heading", "text": "Price: local is free, the cloud is not" },
+      { "kind": "fact", "text": "LM Studio has been free to use at home and at work since July 2025, with no form or separate commercial license, according to the company. Its cloud side, called Bionic, starts with a free plan for local models and limited web search, then Bionic+ at $20 a month and Pro at $100 a month, with US hosted models and zero data retention.", "sources": [7, 6] },
+      { "kind": "fact", "text": "Ollama says running models on your own hardware is always unlimited. Its cloud plans start at $0 with pay per token pricing, then Pro at $20 a month with $60 of usage included, Max at $100 a month with $300 included, and Team at $500 a month. Ollama moved to per token pricing on August 31, 2026, and says prompts and answers are never logged or trained on.", "sources": [1, 2] },
+      { "kind": "heading", "text": "Which one to use" },
+      { "kind": "analysis", "text": "Choose LM Studio if you are new to local AI, want to browse models visually and mostly chat or ask questions about your own files. It is the most forgiving way to see what your computer can run." },
+      { "kind": "analysis", "text": "Choose Ollama if you write code, use coding agents or want a model running in the background that other apps can call. Its API is small, documented and close to OpenAI's, so many tools connect with only a changed address." },
+      { "kind": "analysis", "text": "The weak spots are honest ones. LM Studio does not run on Intel Macs. Ollama's OpenAI compatibility covers only part of the OpenAI API, so features such as logprobs are missing. Nothing stops you from installing both and keeping the one you open more often." }
+    ]
+  }
+}
