@@ -1,0 +1,256 @@
+{
+  "id": "2026-11-22-how-to-use-grok-imagine-guide",
+  "format": "utility",
+  "site_only": true,
+  "created_at": "2026-11-22T13:20:00Z",
+  "story_time": "2026-11-22T13:20:00Z",
+  "timely": false,
+  "sensitive": false,
+  "priority": 2,
+  "sources": [
+    {
+      "name": "xAI Docs: Image and Video Overview",
+      "url": "https://docs.x.ai/developers/model-capabilities/imagine.md"
+    },
+    {
+      "name": "xAI Docs: Video Generation",
+      "url": "https://docs.x.ai/developers/model-capabilities/video/generation"
+    },
+    {
+      "name": "xAI Docs: Video Overview",
+      "url": "https://docs.x.ai/developers/model-capabilities/video/overview"
+    },
+    {
+      "name": "Tech Insider: How to use Grok Imagine Image 2.0",
+      "url": "https://tech-insider.org/how-to-use-grok-imagine-image-2-2026/"
+    },
+    {
+      "name": "Magnific: Grok Imagine, how to use, features, prompts",
+      "url": "https://www.magnific.com/blog/grok-imagine/"
+    }
+  ],
+  "caption": "Grok Imagine is xAI's image and video generator, in the Grok app, on grok.com and through the API.\nVideos run 1 to 15 seconds, up to 1080p, with sound on by default.\nHere is where to find it, which model to pick and how to write a prompt that works.\n\nHave you made a video with Grok Imagine yet?\n\nFollow @neurafeed.ai for daily AI news.\n\nSource: xAI documentation · Photo: Startup Fortune",
+  "threads_text": "Grok Imagine makes clips of 1 to 15 seconds with sound on by default, and xAI's cheapest video model now starts at 2 cents a second through the API. The trick is describing the shot like a camera operator would. Would you pay for AI video, or stick to the free tools?",
+  "slides": [
+    {
+      "kind": "cover",
+      "headline": "How to use *Grok Imagine* for AI images and video",
+      "image": {
+        "url": "https://startupfortune.com/wp-content/uploads/2026/10/xai-elon-musk-grok-imagine.jpg",
+        "credit": "Startup Fortune",
+        "fallback_urls": [
+          "https://startupfortune.com/wp-content/uploads/2026/11/spacexai-elon-musk-grok-imagine.jpg"
+        ]
+      },
+      "badges": [
+        {
+          "url": "https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/png/grok-dark.png",
+          "fit": "contain"
+        }
+      ]
+    },
+    {
+      "kind": "card",
+      "heading": "1. Open *Imagine*",
+      "paras": [
+        "Go to grok.com/imagine or open the Grok app on iPhone or Android.",
+        "For pictures, pick Quality Mode. That is where the new Image 2.0 model runs."
+      ],
+      "image": {
+        "url": "https://media.x.ai/v1/website/the-x-subscription-db7a1253.png",
+        "credit": "xAI",
+        "fit": "contain"
+      }
+    },
+    {
+      "kind": "card",
+      "heading": "2. Know the *limits*",
+      "paras": [
+        "A clip runs 1 to 15 seconds, 8 by default, at 480p, 720p or 1080p.",
+        "Sound is on by default. Turning a photo into a video keeps the photo's shape."
+      ],
+      "image": {
+        "url": "https://cdn.teslanorth.com/wp-content/uploads/2026/10/grok-imagine-odyssey-episode-1-odysseus-1456x819.jpg",
+        "credit": "xAI via Tesla North"
+      }
+    },
+    {
+      "kind": "prompt",
+      "heading": "3. Describe the *shot*",
+      "paras": [
+        "xAI's advice: name the camera move, the light and the sound.",
+        "For an edit, also say what must stay the same."
+      ],
+      "prompt": "Slow camera push toward a small coffee shop at dawn, warm window light, rain on the glass, quiet street sounds."
+    },
+    {
+      "kind": "cta",
+      "hook": "Follow for AI tool guides that tell you the limits before you pay."
+    }
+  ],
+  "site_article": {
+    "kind": "guide",
+    "headline": "How to use Grok Imagine for AI images and video",
+    "dek": "Where to find Grok Imagine in the app, which of xAI's video models to pick, what each costs on the API and the prompts that get usable clips.",
+    "summary": "Grok Imagine is xAI's image and video generator, available on grok.com, in the Grok app and through the xAI API. Clips run 1 to 15 seconds at up to 1080p, and API video starts at $0.02 a second on the Lite model.",
+    "seo_title": "How to use Grok Imagine for AI images and video",
+    "seo_description": "How to use Grok Imagine: open it on grok.com or the app, pick the right xAI video model, learn the 15 second and 1080p limits, API prices and 4 prompts to copy.",
+    "answer_summary": "Go to grok.com/imagine or open the Grok app, type a detailed prompt and generate. For video, describe the camera move, the light and the sound; clips run 1 to 15 seconds at up to 1080p.",
+    "tags": [
+      "Grok",
+      "Grok Imagine",
+      "xAI",
+      "AI video",
+      "Guides"
+    ],
+    "hero_alt": "Promotional image for xAI's Grok Imagine image and video tool.",
+    "paragraphs": [
+      {
+        "kind": "fact",
+        "text": "Grok Imagine is xAI's tool for making images and short videos from text or from a photo. If you want to know how to use Grok Imagine, there are two ways in: the Grok app and grok.com for everyday use, and the xAI API for developers who want to build it into their own apps. xAI's documentation lists four things it does: generate images, edit images, turn text or a still into video, and edit video.",
+        "sources": [
+          0,
+          3
+        ]
+      },
+      {
+        "kind": "analysis",
+        "text": "This guide covers the app first, then the model choices and limits that apply everywhere, then the prompts. Read the limits part before you plan anything long: Grok Imagine makes clips, not films."
+      },
+      {
+        "kind": "heading",
+        "text": "How to use Grok Imagine in the app"
+      },
+      {
+        "kind": "step",
+        "title": "1. Open Imagine",
+        "text": "On a computer, go to grok.com/imagine. On a phone, open the Grok app for iPhone or Android. Tech Insider's November 2026 guide names both as the places to use it."
+      },
+      {
+        "kind": "step",
+        "title": "2. Pick Quality Mode for images",
+        "text": "Tech Insider reports that Image 2.0, the image model xAI made generally available on August 7, 2026, runs in Quality Mode. Choose it when you want the best image the tool can make."
+      },
+      {
+        "kind": "step",
+        "title": "3. Type a prompt and generate",
+        "text": "Describe what you want and send it. Be specific about the subject, the place, the light and the mood. A vague prompt gets a generic picture."
+      },
+      {
+        "kind": "step",
+        "title": "4. Refine instead of starting over",
+        "text": "Tech Insider lists editing tools around Image 2.0, including a Magic Wand that changes only the area you point at, background removal, multi reference editing and Smart Resize. Use them to fix one detail rather than rolling a new image every time."
+      },
+      {
+        "kind": "step",
+        "title": "5. Turn a picture into a video",
+        "text": "Start a video from your image or from text. In xAI's docs, image to video uses your image as the first frame, and the video always keeps that image's aspect ratio. So crop the photo to vertical first if the clip is for Reels or TikTok."
+      },
+      {
+        "kind": "tip",
+        "text": "Check your plan before you count on video. The pages used for this guide do not say which Grok subscription includes how much video, and xAI changes limits often."
+      },
+      {
+        "kind": "heading",
+        "text": "Grok Imagine video limits and models"
+      },
+      {
+        "kind": "fact",
+        "text": "xAI's video docs set the same basic limits for every request. A clip runs from 1 to 15 seconds and is 8 seconds by default. Resolution can be 480p, 720p or 1080p, with 480p as the default. Supported shapes are 1:1, 16:9, 9:16, 4:3, 3:4, 3:2, 2:3, 21:9 and 5:2, and 16:9 is the default. Audio is on by default, and the newer models add lip synced speech. Generation can take up to several minutes.",
+        "sources": [
+          1,
+          2
+        ]
+      },
+      {
+        "kind": "fact",
+        "text": "There are three video models. grok-imagine-video-1.5 is the highest quality one, with reference images, voice references, pinned first and last frames and native 1080p. grok-imagine-video-1.5-lite is the cheapest and reaches 1080p by upscaling 720p. The older grok-imagine-video stays for editing and extending existing clips, at up to 720p.",
+        "sources": [
+          0,
+          2
+        ]
+      },
+      {
+        "kind": "fact",
+        "text": "The 1.5 model accepts up to 14 reference images and 3 voice references, and up to 4 keyframes with timestamps. Video editing works on clips of up to 8.7 seconds, and extension adds 2 to 10 seconds to a clip, both on the older model.",
+        "sources": [
+          1
+        ]
+      },
+      {
+        "kind": "fact",
+        "text": "For images, the current model is grok-imagine-image-2.0. It can make up to 10 images per request and edit using up to 5 source images.",
+        "sources": [
+          0
+        ]
+      },
+      {
+        "kind": "heading",
+        "text": "What Grok Imagine costs on the API"
+      },
+      {
+        "kind": "fact",
+        "text": "xAI lists API prices per second of video. grok-imagine-video-1.5 costs $0.08 a second at 480p, $0.14 at 720p and $0.25 at 1080p. The Lite model costs $0.02, $0.03 and $0.14. The older model costs $0.05 at 480p and $0.07 at 720p. Images on grok-imagine-image-2.0 start at $0.04 each, and an edit is billed for the input image as well as the output.",
+        "sources": [
+          0,
+          2
+        ]
+      },
+      {
+        "kind": "analysis",
+        "text": "The math is simple and worth doing. A 15 second clip at 1080p on the top model is $3.75 per attempt, and most good clips take several attempts. Draft on Lite at 480p for about 30 cents a clip, then render only the keeper at full quality."
+      },
+      {
+        "kind": "tip",
+        "text": "Through the API, finished videos come back as temporary links. Download the file as soon as the status says done, or you may have to pay to make it again."
+      },
+      {
+        "kind": "heading",
+        "text": "Grok Imagine prompts that work"
+      },
+      {
+        "kind": "fact",
+        "text": "xAI's own advice for video is to describe the shot, including the camera movement, the lighting and the sound. For edits, it says to state what must stay the same. Magnific, which offers Grok Imagine inside its own generators, gives the same kind of advice: be specific about lighting, mood, camera movement and context.",
+        "sources": [
+          1,
+          4
+        ]
+      },
+      {
+        "kind": "prompt",
+        "title": "Prompt 1: A short scene",
+        "text": "Slow camera push toward a small coffee shop at dawn. Warm light in the windows, light rain on the glass, steam rising from a cup on the counter. Quiet street sounds and soft rain."
+      },
+      {
+        "kind": "prompt",
+        "title": "Prompt 2: A product shot",
+        "text": "Minimal product video of a [product] turning slowly on a white table in a bright studio. Soft shadows, clean background, camera circles once around it. No music, just a soft hum."
+      },
+      {
+        "kind": "prompt",
+        "title": "Prompt 3: Edit without breaking the image",
+        "text": "Change the sky to a sunset with orange and pink clouds. Keep the people, their faces, their clothes and the buildings exactly the same."
+      },
+      {
+        "kind": "fact",
+        "text": "For words inside an image, Tech Insider recommends putting the exact text in quotation marks and keeping it short, such as a headline and one line.",
+        "sources": [
+          3
+        ]
+      },
+      {
+        "kind": "prompt",
+        "title": "Prompt 4: A poster with readable text",
+        "text": "A clean coffee poster on a cream background with a single cup in the center. Headline at the top in bold letters: \"MORNING RITUAL\". One small line below: \"Open at 7 every day\"."
+      },
+      {
+        "kind": "heading",
+        "text": "Where Grok Imagine falls short"
+      },
+      {
+        "kind": "analysis",
+        "text": "Grok Imagine is fast and cheap to draft with, but it has hard edges. Clips stop at 15 seconds, so anything longer means stitching clips together in an editor. Editing and extending only work on the older 720p model, so a 1080p clip from the top model cannot simply be made longer. And because prices depend on both length and resolution, a few careless 1080p tries can cost more than a month of a cheaper tool. If you need long, consistent videos, use Grok Imagine for short shots and finish the work somewhere else."
+      }
+    ]
+  }
+}
