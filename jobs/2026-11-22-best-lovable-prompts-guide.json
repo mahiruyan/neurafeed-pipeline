@@ -1,0 +1,293 @@
+{
+  "id": "2026-11-22-best-lovable-prompts-guide",
+  "format": "utility",
+  "site_only": true,
+  "created_at": "2026-11-22T21:15:00Z",
+  "story_time": "2026-11-22T21:15:00Z",
+  "timely": false,
+  "sensitive": false,
+  "priority": 2,
+  "sources": [
+    {
+      "name": "Lovable Docs: Prompting best practices",
+      "url": "https://docs.lovable.dev/prompting/prompting-one"
+    },
+    {
+      "name": "Lovable Docs: Prompt library",
+      "url": "https://docs.lovable.dev/prompting/prompting-library"
+    },
+    {
+      "name": "Lovable Docs: Debugging prompts",
+      "url": "https://docs.lovable.dev/prompting/prompting-debugging"
+    },
+    {
+      "name": "Lovable Docs: Instructions (Knowledge)",
+      "url": "https://docs.lovable.dev/features/knowledge"
+    },
+    {
+      "name": "Lovable Blog: The Lovable prompting handbook",
+      "url": "https://lovable.dev/blog/2025-01-16-lovable-prompting-handbook"
+    },
+    {
+      "name": "LowCode Agency: Lovable prompting guide",
+      "url": "https://www.lowcode.agency/blog/lovable-prompting-guide"
+    }
+  ],
+  "caption": "Six Lovable prompts built on Lovable's own docs.\nAsk for one change, name the page, say what must not change.\nWhen a bug keeps coming back, ask for the root cause in Plan mode.\n\nWhat would you build first with Lovable?\n\nFollow @neurafeed.ai for daily AI news.\n\nSource: Lovable Docs · Photo: Lovable via AppLaunchpad",
+  "threads_text": "Most wasted Lovable credits come from vague prompts. Lovable's own docs say: one change per message, name the page, say what must not change, and ask it to question you first on big features. What is the first app you would build with it?",
+  "slides": [
+    {
+      "kind": "cover",
+      "headline": "6 *Lovable prompts* that build your app faster (copy and paste)",
+      "image": {
+        "url": "https://d3q2h0tasu1gyd.cloudfront.net/cms/media/2026/10/image-1791998940-1024x485.png",
+        "credit": "Lovable via AppLaunchpad",
+        "fallback_urls": [
+          "https://assets.lovable.dev/content/news/covers/brand-posts-prompting-rebrand.png"
+        ]
+      },
+      "pos": "center center"
+    },
+    {
+      "kind": "prompt",
+      "heading": "1. Make it *ask first*",
+      "paras": [
+        "Lovable's own docs suggest ending a prompt this way.",
+        "It works best in Plan mode, before any credits go to code."
+      ],
+      "prompt": "I want to add [feature] to my app. Before you build anything, ask me any questions you need to fully understand what I want from this feature."
+    },
+    {
+      "kind": "prompt",
+      "heading": "2. Fix *your prompt*",
+      "paras": [
+        "Lovable's handbook calls this meta prompting.",
+        "Let the AI tighten your request before it builds."
+      ],
+      "prompt": "Here is a prompt I plan to send you: [paste your prompt]. Rewrite it to be clearer and more specific: name the pages, the components and what must not change. Do not build anything yet."
+    },
+    {
+      "kind": "prompt",
+      "heading": "3. Three *design options*",
+      "paras": [
+        "From Lovable's prompt library.",
+        "Pick a look before a single page exists."
+      ],
+      "prompt": "Describe three different design directions for the hero section of [your app] before you build anything. For each one, give the style, the colors and the fonts."
+    },
+    {
+      "kind": "prompt",
+      "heading": "4. Report a bug *properly*",
+      "paras": [
+        "What broke, where, what you expected, what happened.",
+        "Ask for the root cause, not another blind fix."
+      ],
+      "prompt": "On the [page name] page, [what is broken]. I expected [what should happen], but instead [what happens]. Here is the exact error: [paste error]. This worked before [your last change]. What is the root cause? Explain it in simple terms before you change any code."
+    },
+    {
+      "kind": "prompt",
+      "heading": "5. Lock what *must not change*",
+      "paras": [
+        "Name the one area to edit.",
+        "Guard login and payments in the same prompt."
+      ],
+      "prompt": "Only change the [page or component]. [The change you want]. Do not touch the login flow, the payment code or any other page. When you are done, tell me which files you changed."
+    },
+    {
+      "kind": "prompt",
+      "heading": "6. Turn a fix into *a rule*",
+      "paras": [
+        "Then paste it into Project settings, Instructions.",
+        "Lovable reads instructions with every message."
+      ],
+      "prompt": "We just fixed [the bug]. Summarize what went wrong, what we tried and the fix that worked, as a short rule I can add to the project instructions so this does not happen again."
+    },
+    {
+      "kind": "cta",
+      "hook": "Follow for AI guides that save you credits on your next build."
+    }
+  ],
+  "site_article": {
+    "kind": "guide",
+    "headline": "Best Lovable prompts to build an app faster (8 to copy)",
+    "dek": "Eight copy and paste prompts built on Lovable's own docs, for planning, design, login, scoped changes and bug fixes that do not waste credits.",
+    "summary": "Eight Lovable prompts based on Lovable's prompting best practices, prompt library and debugging guide. Each one asks for one change, names where it goes and says what must stay the same.",
+    "seo_title": "Best Lovable prompts: 8 to copy for building apps faster",
+    "seo_description": "8 Lovable prompts to copy: make it ask questions first, pick a design, add login, lock what must not change, report bugs and turn fixes into project rules.",
+    "answer_summary": "Good Lovable prompts ask for one change at a time, name the page or component, describe the result you want and say what must not change. For big changes, use Plan mode or ask Lovable to ask you questions before it builds.",
+    "tags": [
+      "Lovable",
+      "Prompts",
+      "Vibe coding",
+      "AI app builder",
+      "Guides"
+    ],
+    "hero_alt": "Lovable's homepage with the headline Build something Lovable above a prompt box, on a blue and purple gradient.",
+    "paragraphs": [
+      {
+        "kind": "fact",
+        "text": "The best Lovable prompts are short, scoped and specific. They say what to build, where it goes and what must stay the same. This guide collects eight prompts built on Lovable's own documentation: its prompting best practices, its prompt library and its debugging guide. Fill in the [brackets], send one prompt at a time and check the result before the next one.",
+        "sources": [
+          0,
+          1,
+          2
+        ]
+      },
+      {
+        "kind": "fact",
+        "text": "Why this matters: every build costs credits, and Lovable fills any gap in your prompt with its own guesses. LowCode Agency founder Jesus Vargas, in a prompting guide updated on October 16, 2026, says those guesses are often wrong. His fix is four parts in every prompt: the current state of the project, the exact page or component, the result the user should see, and what must not change.",
+        "sources": [
+          5
+        ]
+      },
+      {
+        "kind": "tip",
+        "text": "If you are new to Lovable, start with our guide on how to use Lovable to build an app without coding. This one assumes you already have a project open."
+      },
+      {
+        "kind": "heading",
+        "text": "Best Lovable prompts for planning"
+      },
+      {
+        "kind": "prompt",
+        "title": "Prompt 1: Make Lovable ask you questions first",
+        "text": "I want to add [feature] to my app. Before you build anything, ask me any questions you need to fully understand what I want from this feature."
+      },
+      {
+        "kind": "fact",
+        "text": "Lovable's prompting best practices recommend closing a prompt with a request for clarifying questions, and say this works especially well in Plan mode. The prompt library gives the same advice for large prompts: ask Lovable to check its questions first, or use Plan mode to agree on the approach before it builds.",
+        "sources": [
+          0,
+          1
+        ]
+      },
+      {
+        "kind": "prompt",
+        "title": "Prompt 2: Have Lovable rewrite your prompt",
+        "text": "Here is a prompt I plan to send you: [paste your prompt]. Rewrite it to be clearer and more specific: name the pages, the components and what must not change. Do not build anything yet."
+      },
+      {
+        "kind": "fact",
+        "text": "Lovable's prompting handbook calls this meta prompting: you ask the AI to refine your prompt before you use it. The same handbook recommends scoped edits, where you tell the AI to change only certain files or sections and leave other pages alone.",
+        "sources": [
+          4
+        ]
+      },
+      {
+        "kind": "analysis",
+        "text": "A rewrite costs one message and often saves several. A vague prompt like \"make the dashboard better\" can turn into a long chain of fixes, while a rewritten version names the cards, the chart and the table you actually want."
+      },
+      {
+        "kind": "prompt",
+        "title": "Prompt 3: Three design directions before building",
+        "text": "Describe three different design directions for the hero section of [your app] before you build anything. For each one, give the style, the colors and the fonts."
+      },
+      {
+        "kind": "fact",
+        "text": "Lovable's prompt library includes a prompt that asks for three directions for the hero section before anything is built, plus ready-made style prompts for minimal, glassmorphic, bold, playful, calm and editorial looks. Its best practices page suggests picking the style early and saving your chosen keywords in the project's instructions so every later prompt uses them.",
+        "sources": [
+          1,
+          0
+        ]
+      },
+      {
+        "kind": "heading",
+        "text": "Prompts for building features"
+      },
+      {
+        "kind": "prompt",
+        "title": "Prompt 4: Add login the right way",
+        "text": "Add sign up, log in and forgot password pages that match the app's current style. Require login before the dashboard. Add a Sign in with Google button next to email and password. Show clear error and success states on every form."
+      },
+      {
+        "kind": "fact",
+        "text": "This is based on the sign up and login prompt in Lovable's prompt library, which runs on Lovable's built-in backend. The library says each of its prompts is meant to work as a single Build mode message, and that some features need a paid plan: payments need Pro or higher, and email alerts need a paid plan.",
+        "sources": [
+          1
+        ]
+      },
+      {
+        "kind": "tip",
+        "text": "Use real words, not placeholder text. Lovable's best practices say real headlines and button labels show layout problems early, and that you should plan for logged-in and logged-out states and for empty, loading and error states."
+      },
+      {
+        "kind": "prompt",
+        "title": "Prompt 5: Lock what must not change",
+        "text": "Only change the [page or component]. [The change you want]. Do not touch the login flow, the payment code or any other page. When you are done, tell me which files you changed."
+      },
+      {
+        "kind": "fact",
+        "text": "Lovable's best practices tell you to set boundaries: what to build, where it goes and what must stay unchanged, with \"only change the orders page\" as an example. Its debugging guide adds that guardrails for fragile areas such as authentication or payments belong in the same prompt as the task.",
+        "sources": [
+          0,
+          2
+        ]
+      },
+      {
+        "kind": "heading",
+        "text": "Prompts for fixing bugs"
+      },
+      {
+        "kind": "prompt",
+        "title": "Prompt 6: Report a bug Lovable can fix",
+        "text": "On the [page name] page, [what is broken]. I expected [what should happen], but instead [what happens]. Here is the exact error: [paste error]. This worked before [your last change]. What is the root cause? Explain it in simple terms before you change any code."
+      },
+      {
+        "kind": "fact",
+        "text": "Lovable's debugging guide describes a bug in four parts: what is broken, where it happens, what you expected and what happened instead. Add a screenshot for layout problems and the exact error text. Lovable reads console logs from the preview on its own, but errors on the published site have to be pasted in.",
+        "sources": [
+          2
+        ]
+      },
+      {
+        "kind": "fact",
+        "text": "The guide says to use the Try to fix button once or twice when an error appears. Accounts get 10 free fixes, and each one comes back 24 hours after it is used. If the same error keeps returning, switch to Plan mode and find the root cause first, because repeated blind fixes tend to hide the real problem.",
+        "sources": [
+          2
+        ]
+      },
+      {
+        "kind": "prompt",
+        "title": "Prompt 7: Test the whole flow in the browser",
+        "text": "Use browser testing to check that [the flow, for example sign up to checkout] works from start to finish. If something fails, reproduce it, fix it and test it again."
+      },
+      {
+        "kind": "fact",
+        "text": "Lovable's prompt library has prompts that ask it to use browser testing to check a flow such as checkout, and to reproduce a bug in the browser, fix it and then confirm the fix. It also includes a security review prompt that checks the login flow and whether API routes are secure.",
+        "sources": [
+          1
+        ]
+      },
+      {
+        "kind": "prompt",
+        "title": "Prompt 8: Turn the fix into a project rule",
+        "text": "We just fixed [the bug]. Summarize what went wrong, what we tried and the fix that worked, as a short rule I can add to the project instructions so this does not happen again."
+      },
+      {
+        "kind": "fact",
+        "text": "Lovable's handbook calls this reverse meta prompting, and its debugging guide gives the same advice: after a hard bug, ask Lovable to summarize the problem and the fix so it can go into project instructions. Instructions, previously called Knowledge, are read with every message. You set them in Project settings, then Instructions, with a limit of 10,000 characters.",
+        "sources": [
+          4,
+          2,
+          3
+        ]
+      },
+      {
+        "kind": "heading",
+        "text": "What these prompts cannot fix"
+      },
+      {
+        "kind": "fact",
+        "text": "Good prompts do not remove every limit. Vargas writes that if three targeted corrections fail on the same issue, the cause may be a limit of the platform rather than the prompt. Lovable's own debugging guide suggests restoring a working state from version history, or editing an earlier message and choosing Revert and resend, then telling Lovable what you did.",
+        "sources": [
+          5,
+          2
+        ]
+      },
+      {
+        "kind": "analysis",
+        "text": "The pattern behind all eight prompts is the same: one change per message, a clear place, a clear result and a clear limit. Plan first when the change is big, and write down what worked so the next prompt starts from it. That is slower for the first ten minutes and faster for the rest of the project."
+      }
+    ]
+  }
+}

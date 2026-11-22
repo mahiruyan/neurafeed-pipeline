@@ -1,0 +1,264 @@
+{
+  "id": "2026-11-22-how-to-use-gptzero-guide",
+  "format": "utility",
+  "site_only": true,
+  "created_at": "2026-11-22T21:10:00Z",
+  "story_time": "2026-11-22T21:10:00Z",
+  "timely": false,
+  "sensitive": false,
+  "priority": 2,
+  "sources": [
+    {
+      "name": "GPTZero: How to understand your AI scan results",
+      "url": "https://gptzero.me/news/understand-gptzero-ai-scan/"
+    },
+    {
+      "name": "GPTZero: AI detection technology",
+      "url": "https://gptzero.me/technology"
+    },
+    {
+      "name": "GPTZero",
+      "url": "https://gptzero.me/"
+    },
+    {
+      "name": "GPTZero Support: Free and paid plans",
+      "url": "https://support.gptzero.me/articles/1272562776-what-is-the-difference-between-the-free-and-paid-for-plans"
+    },
+    {
+      "name": "GPTZero Support: Google Docs writing report",
+      "url": "https://support.gptzero.me/articles/7001890416-what-is-the-google-docs-writing-report-for-origin"
+    },
+    {
+      "name": "GPTZero: Chrome extension",
+      "url": "https://gptzero.me/chrome"
+    },
+    {
+      "name": "GPTZero: AI accuracy benchmarking",
+      "url": "https://gptzero.me/news/ai-accuracy-benchmarking"
+    },
+    {
+      "name": "PCWorld: GPTZero review",
+      "url": "https://www.pcworld.com/article/3278225/gptzero-review.html"
+    },
+    {
+      "name": "Stanford HAI: AI detectors biased against non-native English writers",
+      "url": "https://hai.stanford.edu/news/ai-detectors-biased-against-non-native-english-writers"
+    },
+    {
+      "name": "Liang et al.: GPT detectors are biased against non-native English writers",
+      "url": "https://arxiv.org/html/2304.02819v3"
+    },
+    {
+      "name": "Wikipedia: GPTZero",
+      "url": "https://en.wikipedia.org/wiki/GPTZero"
+    },
+    {
+      "name": "Chrome Web Store: GPTZero extension",
+      "url": "https://chromewebstore.google.com/detail/gptzero-ai-detector-and-h/kgobeoibakoahbfnlficpmibdbkdchap"
+    }
+  ],
+  "caption": "GPTZero tells you how likely it is that a text was written by AI, sentence by sentence.\nThe free plan covers 10,000 words a month.\nThe score is a probability, not proof, and GPTZero says so itself.\n\nWould you trust an AI detector to judge your writing?\n\nFollow @neurafeed.ai for daily AI news.\n\nSource: GPTZero · Photo: GPTZero",
+  "threads_text": "GPTZero's score is not the share of your text that is AI. It is the model's guess at how likely the whole thing is AI, human or mixed, and GPTZero itself says not to use it as the only proof. A Stanford study found detectors flagged most essays by non-native English writers as AI. Would you trust an AI detector to grade your work?",
+  "slides": [
+    {
+      "kind": "cover",
+      "headline": "How to use *GPTZero* and what its AI score really means",
+      "image": {
+        "url": "https://storage.ghost.io/c/93/d8/93d84efe-2017-4168-9591-b749ab8330d5/content/images/2025/07/Article-Graphic.png",
+        "credit": "GPTZero",
+        "fallback_urls": [
+          "https://storage.ghost.io/c/93/d8/93d84efe-2017-4168-9591-b749ab8330d5/content/images/2024/09/Benchmarking.png"
+        ]
+      }
+    },
+    {
+      "kind": "card",
+      "heading": "1. Paste and hit *Scan*",
+      "paras": [
+        "Paste text or upload a file on gptzero.me and press Scan. Past 10,000 characters you need a free account.",
+        "The free plan gives you 10,000 words a month."
+      ],
+      "image": {
+        "url": "https://storage.ghost.io/c/93/d8/93d84efe-2017-4168-9591-b749ab8330d5/content/images/2025/07/image-1.png",
+        "credit": "GPTZero",
+        "fit": "contain",
+        "fallback_urls": [
+          "https://storage.ghost.io/c/93/d8/93d84efe-2017-4168-9591-b749ab8330d5/content/images/2025/07/image-2.png"
+        ]
+      }
+    },
+    {
+      "kind": "card",
+      "heading": "2. The % is *not* how much is AI",
+      "paras": [
+        "A 4% AI score means the model thinks text like this is fully AI about 4 times in 100.",
+        "Check the confidence line too. Low confidence means an error rate of 14% or more."
+      ],
+      "image": {
+        "url": "https://storage.ghost.io/c/93/d8/93d84efe-2017-4168-9591-b749ab8330d5/content/images/2024/12/GPTZero-Confidence-AI-High.png",
+        "credit": "GPTZero",
+        "fit": "contain",
+        "fallback_urls": [
+          "https://storage.ghost.io/c/93/d8/93d84efe-2017-4168-9591-b749ab8330d5/content/images/2024/12/GPTZero-Confidence-Moderate.png"
+        ]
+      }
+    },
+    {
+      "kind": "card",
+      "heading": "3. See which *sentences* count",
+      "paras": [
+        "Advanced Scan highlights the sentences that push the score most. The free plan includes one.",
+        "Unhighlighted sentences can still move the result."
+      ],
+      "image": {
+        "url": "https://storage.ghost.io/c/93/d8/93d84efe-2017-4168-9591-b749ab8330d5/content/images/2025/07/image-3.png",
+        "credit": "GPTZero",
+        "fit": "contain",
+        "fallback_urls": [
+          "https://storage.ghost.io/c/93/d8/93d84efe-2017-4168-9591-b749ab8330d5/content/images/2024/12/AI-Vocab-Highlight.png"
+        ]
+      }
+    },
+    {
+      "kind": "card",
+      "heading": "4. How *accurate* is it?",
+      "paras": [
+        "GPTZero claims a false positive rate of about 1%. PCWorld's tests found no false positives, but heavily edited AI text slipped through.",
+        "GPTZero says not to use a score as the only proof."
+      ],
+      "image": {
+        "url": "https://storage.ghost.io/c/93/d8/93d84efe-2017-4168-9591-b749ab8330d5/content/images/2025/07/image-4.png",
+        "credit": "GPTZero",
+        "fit": "contain",
+        "fallback_urls": [
+          "https://storage.ghost.io/c/93/d8/93d84efe-2017-4168-9591-b749ab8330d5/content/images/2025/01/Screenshot-2025-01-07-at-6.16.24-PM-1.png"
+        ]
+      }
+    },
+    {
+      "kind": "cta",
+      "hook": "Follow for AI tool guides that tell you what the numbers really mean."
+    }
+  ],
+  "site_article": {
+    "kind": "guide",
+    "headline": "How to use GPTZero (and how accurate AI detectors are)",
+    "dek": "How to run a GPTZero scan, read the AI probability and confidence score, check a Google Doc's writing history, and what independent tests say about accuracy.",
+    "summary": "GPTZero scans pasted text or uploaded files and says whether it looks AI written, human written or mixed, with a probability and a confidence level. The free plan covers 10,000 words a month, and GPTZero itself says a result should not be the only proof of AI use.",
+    "seo_title": "How to use GPTZero and read its AI detection score",
+    "seo_description": "How to use GPTZero: paste or upload text, press Scan, read the AI probability and confidence level, check sentence highlights and know its accuracy limits.",
+    "answer_summary": "Go to gptzero.me, paste your text or upload a file and press Scan. Read the result as a probability that the whole text is AI, human or mixed, check the confidence level, and treat it as a starting point, not proof.",
+    "tags": [
+      "GPTZero",
+      "AI detector",
+      "AI writing",
+      "Education",
+      "Guides"
+    ],
+    "hero_alt": "GPTZero graphic illustrating how to read an AI scan result.",
+    "paragraphs": [
+      {
+        "kind": "fact",
+        "text": "GPTZero is an AI detector: you give it text, and it tells you whether the text looks written by AI, by a human, or by both. If you want to know how to use GPTZero, the short version is: paste the text on gptzero.me, press Scan, then read both the percentage and the confidence line. The tool was built by Edward Tian, then a Princeton undergraduate, and launched in January 2023.",
+        "sources": [2, 10]
+      },
+      {
+        "kind": "analysis",
+        "text": "The scan takes seconds. Reading the result correctly is the hard part, and it matters most when the result is about someone else's work. This guide covers both, plus what independent testers found about accuracy."
+      },
+      {
+        "kind": "heading",
+        "text": "How to use GPTZero, step by step"
+      },
+      {
+        "kind": "step",
+        "title": "1. Paste your text or upload a file",
+        "text": "Open gptzero.me. The homepage has a text box with a limit of 10,000 characters; for longer scans, GPTZero says to create a free account first. Besides pasted text, GPTZero says it accepts DOCX, PDF and image files. The free plan allows up to 3 files in a batch upload."
+      },
+      {
+        "kind": "step",
+        "title": "2. Press Scan",
+        "text": "GPTZero's own instructions are short: paste raw text or upload your file and press Scan. The Basic AI Scan on the free plan returns an overall AI detection score for the document."
+      },
+      {
+        "kind": "step",
+        "title": "3. Read the label and the percentage",
+        "text": "Each result sorts the text into AI, human or mixed, and shows an AI probability. That percentage is not the share of the text that is AI. It is the model's probability for the whole document. GPTZero's example: a 4% AI result means that out of 100 similar cases, about 4 would be fully AI written, about 57 mixed and about 39 fully human."
+      },
+      {
+        "kind": "step",
+        "title": "4. Check the confidence level",
+        "text": "Under the score, GPTZero says how sure it is. Highly confident means an error rate under 2%, moderately confident means around 10%, and low confidence means 14% or higher. GPTZero says that when the model is unsure, it leans toward human with a low confidence score."
+      },
+      {
+        "kind": "step",
+        "title": "5. Look at the sentence highlights",
+        "text": "Advanced Scan shows which sentences and phrases affect the score most, ranked as high, medium or low impact. Sentences that are not highlighted can still affect the result, because the detector reads the text as a whole. The free plan includes one Advanced Scan to try it; the full feature is part of the Premium plan."
+      },
+      {
+        "kind": "tip",
+        "text": "Scan longer passages when you can. GPTZero says its model performs best on longer texts and English prose, so a single paragraph gives a weaker signal than a full essay."
+      },
+      {
+        "kind": "heading",
+        "text": "Scan Google Docs with the browser extension"
+      },
+      {
+        "kind": "fact",
+        "text": "GPTZero's browser extension works in Chrome, Edge and Firefox. GPTZero's Chrome page says it is free to install with a GPTZero account and comes with a monthly allowance of scans, highlighting sessions and chat messages, which paid plans raise. It can scan webpages when you ask it to, and in Google Docs it can scan automatically, color sentences by AI confidence and replay how the document was written.",
+        "sources": [4, 5]
+      },
+      {
+        "kind": "step",
+        "title": "6. Watch a writing report",
+        "text": "Install the extension and log in. Open a Google Doc you can edit, then click Watch Writing Report in the GPTZero menu. The report replays the writing process and evaluates whether the typing pattern looks human. If you only have view access, the menu asks you to request edit access. The free plan has a usage limit on writing reports."
+      },
+      {
+        "kind": "tip",
+        "text": "If you write your own work in Google Docs, the writing report is your best defense against a false flag: it shows the document being typed, edited and pasted over time, which a single score cannot."
+      },
+      {
+        "kind": "heading",
+        "text": "What the free and paid plans include"
+      },
+      {
+        "kind": "fact",
+        "text": "According to GPTZero's support center, the free plan includes 10,000 words a month, up to 10,000 characters per scan, the Basic AI Scan and one Advanced Scan. Essential adds Grammar Check, AI Vocabulary Check and scans up to 50,000 characters. Premium adds the full Advanced Scan, Writing Feedback, Plagiarism Check and batches of up to 50 files. Professional adds LMS integration, scans up to 150,000 characters and batches of up to 250 files.",
+        "sources": [3]
+      },
+      {
+        "kind": "fact",
+        "text": "GPTZero's support article does not list prices. PCWorld's review, published November 16, 2026, listed Premium at $23.99 a month, or $12.99 a month billed annually, with 300,000 words a month, and Professional at $45.99 a month, or $24.99 a month billed annually, with 500,000 words a month. PCWorld also noted that the free version may use your text for training.",
+        "sources": [7]
+      },
+      {
+        "kind": "heading",
+        "text": "How accurate GPTZero really is"
+      },
+      {
+        "kind": "fact",
+        "text": "GPTZero says it keeps its false positive rate, human text wrongly flagged as AI, at no more than 1%, and reports 96.5% accuracy on documents that mix human and AI writing. It says its false positive rate on essays by non-native English speakers from the TOEFL exam is 1.1%. These are the company's own benchmarks. GPTZero also states that no AI detector is 100% accurate and that a result should be a conversation starter, not the final verdict.",
+        "sources": [1, 6]
+      },
+      {
+        "kind": "fact",
+        "text": "PCWorld ran 50 samples in five groups. GPTZero scored all 10 pure AI samples, from ChatGPT, Claude, Gemini and Grok, as 100% AI, and all 10 human samples as 0% AI. The weak spot was AI text edited by a person: one such sample scored 96% human and another 98% human. Results on human text lightly edited with AI were inconsistent.",
+        "sources": [7]
+      },
+      {
+        "kind": "fact",
+        "text": "Older research is less kind to detectors in general. A Stanford study led by James Zou tested seven detectors, GPTZero among them, on 91 TOEFL essays and found that on average they classified 61.22% as AI generated, while they were near perfect on essays by U.S. eighth graders. The researchers also showed that asking a chatbot to rewrite text in more literary language helped it evade detection. GPTZero says it has since trained on more ESL writing.",
+        "sources": [8, 9, 6]
+      },
+      {
+        "kind": "fact",
+        "text": "Early reporting raised the same worry. According to Wikipedia's summary, Futurism wrote in January 2023 that, based on the error rate it saw, teachers relying on the tool could falsely accuse nearly 20 percent of innocent students, and The Washington Post noted in August 2023 that even a small false positive rate could lead to wrongful accusations.",
+        "sources": [10]
+      },
+      {
+        "kind": "analysis",
+        "text": "GPTZero is good at the easy cases: raw chatbot output and plainly human writing. It is weaker when a person has reworked AI text, and every detector's error rate becomes a real person once you scan a whole class. Use it as a screening tool, read the confidence line, scan full documents, and back any concern with a writing report or a conversation before you decide anything."
+      }
+    ]
+  }
+}

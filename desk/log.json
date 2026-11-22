@@ -4953,5 +4953,69 @@
       }
     ],
     "requests": []
+  },
+  {
+    "run_at": "2026-11-22T21:04:01.925Z",
+    "summary": "Late afternoon run (16:00 New York, Nov 22): no open links or requests; both Instagram carousels and all four site-only article slots for today were already used and no new Reel video passing the filter was found, so this run added the fifth and sixth website guides of the day (GPTZero, best Lovable prompts).",
+    "considered": [
+      {
+        "story": "Guide: How to use GPTZero (next tool library line after Replit)",
+        "source": "https://gptzero.me/news/understand-gptzero-ai-scan/",
+        "decision": "queued",
+        "job_id": "2026-11-22-how-to-use-gptzero-guide",
+        "priority": 2,
+        "reason": "Built from GPTZero's own pages and help center plus PCWorld's review and the Stanford study on detector bias. GPTZero's pricing page could not be opened, so prices are attributed to PCWorld; image URLs could not be checked from here."
+      },
+      {
+        "story": "Guide: Best Lovable prompts (guides/plan.md Tier 3)",
+        "source": "https://docs.lovable.dev/prompting/prompting-one",
+        "decision": "queued",
+        "job_id": "2026-11-22-best-lovable-prompts-guide",
+        "priority": 2,
+        "reason": "Prompt pack from Lovable's prompting docs and handbook plus LowCode Agency's guide; a different angle from the Nov 12 Lovable how-to. The cover reuses the AppLaunchpad screenshot from that guide, with Lovable's own image as fallback."
+      },
+      {
+        "story": "OpenAI customer story: Perplexity improving accuracy with GPT-6.2 Astra",
+        "source": "https://openai.com/index/perplexity-improving-accuracy-with-astra",
+        "decision": "skipped",
+        "reason": "A customer case study, not news, and today's site-only slots are full."
+      },
+      {
+        "story": "How OpenAI agents went rogue and hacked Hugging Face (Straits Times)",
+        "decision": "covered",
+        "reason": "The rogue agents story is already covered (2026-11-16-california-sues-openai-rogue-agents, 2026-11-19-arizona-criminal-probe-openai-agents)."
+      },
+      {
+        "story": "Gemini 5 teased (Nokiapoweruser)",
+        "decision": "skipped",
+        "reason": "Only a low-quality blog claiming a tease; no Google source found."
+      },
+      {
+        "story": "AI models flag civilians as military targets in Vals tests (Technology Org)",
+        "decision": "skipped",
+        "reason": "Single secondary source and today's carousel and site-only slots are used."
+      },
+      {
+        "story": "Former OpenAI board member says no kill switch can stop rogue AI (Fox News)",
+        "decision": "skipped",
+        "reason": "Talking head interview with one source; slots for today are full."
+      },
+      {
+        "story": "Reel search: viral AI and robot videos of the last day",
+        "decision": "skipped",
+        "reason": "Search returned only older robot clips (Optimus fail, begging robot), nothing new from the last day on X that passes the filter."
+      },
+      {
+        "story": "WotC gives full AI settlement payout to D&D writers",
+        "decision": "covered",
+        "reason": "Already covered as 2026-11-22-wizards-anthropic-payout-dnd-writers."
+      },
+      {
+        "story": "Anthropic IPO aftermath (WSJ, Business Standard, Irish Examiner)",
+        "decision": "covered",
+        "reason": "Already covered as 2026-11-22-anthropic-stock-nears-ipo-price-day-two."
+      }
+    ],
+    "requests": []
   }
 ]
