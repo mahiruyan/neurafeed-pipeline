@@ -1,0 +1,101 @@
+{
+  "id": "2026-11-22-signal-blocks-siri-gemini-chats",
+  "created_at": "2026-11-22T19:20:00Z",
+  "story_time": "2026-11-20T17:00:00Z",
+  "timely": false,
+  "sensitive": false,
+  "priority": 2,
+  "site_only": true,
+  "format": "carousel",
+  "site_category": "companies",
+  "ab": { "headline": "long", "photo": "story" },
+  "sources": [
+    { "name": "BleepingComputer", "url": "https://www.bleepingcomputer.com/news/security/signal-to-block-siri-gemini-ai-from-capturing-chats-on-ios-android/" },
+    { "name": "Coywolf", "url": "https://coywolf.com/news/productivity/signal-blocks-siri-ai-and-gemini-from-capturing-your-chats-on-ios-and-android/" }
+  ],
+  "caption": "Signal is now blocking Siri and Gemini from reading your chats off the screen.\nOn iOS 27 a new Block Siri AI setting stops screenshots in the app. On Android, Signal switches on Screen security when it spots an AI assistant.\nMac users have to exclude Signal from Siri by hand.\n\nWould you trade screenshots for keeping AI out of your chats?\n\nFollow @neurafeed.ai for daily AI news.\n\nSource: BleepingComputer · Photo: Signal via Coywolf",
+  "threads_text": "Signal now blocks Siri and Gemini from reading your chats off the screen. The catch on iPhone: the same setting also blocks your own screenshots. Would you give up screenshots to keep AI assistants out of your messages?",
+  "slides": [
+    {
+      "kind": "cover",
+      "headline": "Signal is now blocking *Siri and Gemini* from reading your private chats on your own phone",
+      "image": {
+        "url": "https://media.coywolf.com/01M7Z9YKBM88TZQKMD4S48DAGR.01M7Z9YKF81N76VBNBG7R7820K.webp",
+        "credit": "Signal via Coywolf",
+        "fit": "contain",
+        "fallback_urls": ["https://www.bleepstatic.com/content/hl-images/2025/09/08/Signal.jpg"]
+      }
+    },
+    {
+      "kind": "card",
+      "heading": "A new *Block Siri AI* switch",
+      "paras": [
+        "On iOS 27, Signal's Block Siri AI setting stops screenshots inside the app, so Siri cannot read your chats off the screen.",
+        "The catch: you cannot screenshot your own chats either."
+      ],
+      "image": {
+        "url": "https://www.bleepstatic.com/images/news/u/1220909/2026/November/ios.jpg",
+        "credit": "Signal via BleepingComputer",
+        "fit": "contain",
+        "fallback_urls": []
+      },
+      "note": "Settings > App Security in Signal for iOS."
+    },
+    {
+      "kind": "card",
+      "heading": "Android gets *Screen security*",
+      "paras": [
+        "On supported Android phones, Signal turns on Screen security when it detects an AI assistant trying to read the screen.",
+        "Mac users must add Signal to Excluded Apps under System Settings > Siri."
+      ],
+      "image": {
+        "url": "https://media.coywolf.com/v1/01M7Z9ZEG7W4RFJ77Q6VYNPWFZ-800.webp",
+        "credit": "Coywolf",
+        "fit": "contain",
+        "fallback_urls": []
+      }
+    },
+    {
+      "kind": "card",
+      "heading": "Signal wants an *opt out*",
+      "paras": [
+        "Signal is asking Apple, Google and Microsoft for a clear way for apps to keep AI out of screens, files, notifications and APIs.",
+        { "t": "Its president called OS-level AI an existential threat.", "strong": true }
+      ],
+      "image": {
+        "url": "https://www.bleepstatic.com/content/hl-images/2025/09/08/Signal.jpg",
+        "credit": "BleepingComputer",
+        "fallback_urls": []
+      }
+    },
+    {
+      "kind": "cta",
+      "hook": "Follow to see whether Apple and Google give apps a real way to keep AI out."
+    }
+  ],
+  "site_article": {
+    "headline": "Signal blocks Siri and Gemini from reading chats on iOS 27 and Android",
+    "dek": "The encrypted messenger now stops screenshots on iPhone and switches on Screen security on Android when it detects an AI assistant, and it wants Apple, Google and Microsoft to offer apps a proper opt out.",
+    "summary": "Signal has added protections that stop Apple's Siri and Google's Gemini from capturing conversations on screen, using a new Block Siri AI setting on iOS 27 and automatic Screen security on supported Android phones. Mac users have no screenshot blocking and are told to exclude Signal from Siri manually.",
+    "seo_title": "Signal blocks Siri and Gemini from reading chats on iOS and Android",
+    "seo_description": "Signal adds a Block Siri AI setting on iOS 27 and auto Screen security on Android to stop AI assistants reading chats. What changes and what Mac users must do.",
+    "answer_summary": "Yes. Signal now blocks screenshots on iOS 27 through a Block Siri AI setting and turns on Screen security on supported Android phones when an AI assistant tries to read the screen. On macOS 27, users have to add Signal to Siri's Excluded Apps list themselves.",
+    "tags": ["Signal", "Siri", "Gemini", "Privacy", "iOS 27", "Android"],
+    "hero_alt": "Screenshot of Signal's App Security settings on an iPhone showing the Block Siri AI option.",
+    "paragraphs": [
+      { "kind": "fact", "text": "Signal has started blocking the AI assistants built into iPhones and Android phones from capturing its users' conversations, the company announced on November 20, 2026, according to Coywolf. The changes target Apple's Siri and Google's Gemini, which can read what is on the screen while carrying out tasks for a user.", "sources": [1, 0] },
+      { "kind": "fact", "text": "Signal said the protections switch on automatically where possible, BleepingComputer reported. Users are advised to update to the latest version of the app and, on iOS, to confirm that a setting called Block Siri AI is enabled under Settings and then App Security.", "sources": [0] },
+      { "kind": "heading", "text": "How the protection works on each platform" },
+      { "kind": "fact", "text": "On iOS 27, the new setting prevents screenshots inside the Signal app, which keeps Siri from reading conversations off the screen. Coywolf noted that the setting also covers the App Switcher view. The trade-off is that users can no longer take their own screenshots of Signal chats while the protection is on; Coywolf reported that the protection is optional and can be turned off in settings by people who need screenshots.", "sources": [1, 0] },
+      { "kind": "fact", "text": "Android works differently. Signal does not disable screenshots outright there. Instead, the app turns on its existing Screen security setting when it detects that an AI assistant is trying to access the screen. Coywolf reported that many Android phone makers do not give Signal a reliable way to detect an attempted screenshot, which is why the app reacts to the assistant rather than blocking all captures.", "sources": [1, 0] },
+      { "kind": "fact", "text": "Mac users get less protection. Signal said it cannot currently offer any screenshot blocking on macOS, according to BleepingComputer. For macOS 27, the company recommends adding Signal to the Excluded Apps list in System Settings under Siri.", "sources": [0, 1] },
+      { "kind": "fact", "text": "Signal said its engineers spent months building targeted protections for the ways these assistants can extract data, and that the work was checked through reverse engineering, BleepingComputer reported. The company warned that AI agents could still reach conversations through other routes.", "sources": [0] },
+      { "kind": "heading", "text": "What Signal is asking Apple, Google and Microsoft for" },
+      { "kind": "fact", "text": "Signal made two requests of the three operating system makers, according to both outlets. It wants a simple, well documented way for apps to opt out of AI access to their data, covering screen reading, files, notifications and APIs, without breaking normal features. It also wants full documentation of how the built-in agents access and process data. Coywolf reported that Signal described itself as cautiously optimistic about its talks with Apple and Google.", "sources": [0, 1] },
+      { "kind": "fact", "text": "Signal president Meredith Whittaker described operating system level AI as an existential threat, according to both reports, and named Siri's Onscreen Awareness and Google's Gemini features as ways chat content on screen can be captured. She said Signal would take similar steps against the agent features in iOS 27 and on Android versions where the app can detect an assistant reading its screen.", "sources": [0, 1] },
+      { "kind": "fact", "text": "This is not the first time Signal has pushed back against operating system features. In May 2025 it added a block against Microsoft's Recall feature on Windows 11, BleepingComputer noted.", "sources": [0] },
+      { "kind": "analysis", "text": "The move shows a new kind of conflict for encrypted apps. End-to-end encryption protects messages while they travel, but an assistant that reads the screen sees them after they are decrypted. Signal is using the controls it already has, screenshot blocking and screen security, because the platforms do not yet give apps a dedicated way to say no to AI access." },
+      { "kind": "why_it_matters", "text": "The next thing to watch is whether Apple or Google respond with an official opt out for apps in a future iOS or Android update, which would let Signal and other messengers drop the screenshot workaround." }
+    ]
+  }
+}

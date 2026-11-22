@@ -1,149 +1,5 @@
 [
   {
-    "run_at": "2026-11-15T17:14:31.655Z",
-    "summary": "Sunday 12:00 New York run: queued 1 site-only article (Claude builds a swimmable underwater world in a 97 KB file) and today's third site-only guide (Gemini vs ChatGPT). Answered the reopened Altman request: its -v2 was already posted on November 9. No Reel this run: no downloadable video passed the filter. Today's 2 Instagram carousels are already queued; roundup paused.",
-    "considered": [
-      {
-        "story": "Abyssal Garden: a swimmable underwater world built with Claude in one 97 KB HTML file, about 180 FPS on an RTX 5070 Ti",
-        "source": "https://wccftech.com/claude-fable-5-2-creates-stunning-underwater-world-in-just-97-kb-runs-at-180-fps-without-a-game-engine/",
-        "decision": "queued",
-        "job_id": "2026-11-15-claude-underwater-world-97-kb",
-        "priority": 2,
-        "reason": "Site-only article (models). Wanted it as a Reel, but the only video is on Reddit (a Reddit Reel failed to render on November 12) and an unknown YouTube Shorts repost, so it went to the site."
-      },
-      {
-        "story": "Guide: Gemini vs ChatGPT, plans compared",
-        "decision": "queued",
-        "job_id": "2026-11-15-gemini-vs-chatgpt-guide",
-        "priority": 2,
-        "reason": "Third site-only guide of the day, next usable line in guides/plan.md Tier 2."
-      },
-      {
-        "story": "Guide lines 'how to use chatgpt atlas' and 'chatgpt atlas for windows'",
-        "source": "https://pulse2.com/openai-introduces-chatgpt-work-and-deprecates-atlas-browser",
-        "decision": "skipped",
-        "reason": "OpenAI shut down the Atlas browser on August 9, 2026, so a how-to guide would send readers to a dead product."
-      },
-      {
-        "story": "Guide line 'how to use sora'",
-        "source": "https://9to5google.com/2026/03/24/openai-shutting-down-sora-video-generation-app-but-without-explaining-why/",
-        "decision": "skipped",
-        "reason": "OpenAI shut down the Sora app in 2026."
-      },
-      {
-        "story": "Guide line 'gemini nano banana not working'",
-        "decision": "skipped",
-        "reason": "No official Google troubleshooting page found to base the fixes on; only forum threads."
-      },
-      {
-        "story": "Take-Two CEO criticizes AI game clones ahead of GTA 6",
-        "decision": "skipped",
-        "reason": "Strauss Zelnick has said this many times since May; nothing new found in the sources from this week."
-      },
-      {
-        "story": "More Claude Fable 5.2 game demos (Saltline FPS, Kevin Ngo's browser games)",
-        "source": "https://en.gamegpu.com/news/igry/nejroset-fable-5-2-ot-anthropic-sozdala-polnotsennyj-fps-za-8-chasov-i-usd550",
-        "decision": "skipped",
-        "reason": "Fable 5.2 demos were already a Reel on November 12, and these are from November 10; a sequel would not travel."
-      },
-      {
-        "story": "Anthropic IPO lands in an AI selloff (CNBC, FT, WSJ)",
-        "decision": "covered",
-        "reason": "Anthropic IPO already covered on November 10 and 12 (ipo-price-1-trillion, ipo-retail-20-percent, sbf-anthropic-stake); today's pieces are previews and opinion, no new fact."
-      },
-      {
-        "story": "Nvidia scandal follow-ups (Megaspeed denies wrongdoing, chip smuggling, Huang comeback petition)",
-        "decision": "covered",
-        "reason": "Already covered by several Nvidia jobs this week, including the Musk petition carousel today."
-      },
-      {
-        "story": "South Korea tax exam topper admits AI cheating (Guardian)",
-        "decision": "covered",
-        "reason": "Already queued today as 2026-11-15-korea-tax-exam-topper-ai-cheating."
-      },
-      {
-        "story": "Nonprofits sue OpenAI, Anthropic, Google and SpaceX to freeze frontier AI",
-        "decision": "covered",
-        "reason": "Already covered as 2026-11-12-nonprofits-sue-to-freeze-frontier-ai."
-      },
-      {
-        "story": "Gemini 4 Hydrogen for free users",
-        "decision": "covered",
-        "reason": "Already posted as 2026-11-12-gemini-4-hydrogen-free-users."
-      }
-    ],
-    "requests": [
-      {
-        "id": "req-2026-11-08-5adc5365",
-        "status": "cannot",
-        "job_id": "2026-11-08-altman-why-openai-leaders-left-v2",
-        "result": "Already done: the refreshed copy 2026-11-08-altman-why-openai-leaders-left-v2 was posted on November 9, so there is nothing left to re-queue. Send a new request if you want it posted a second time."
-      }
-    ]
-  },
-  {
-    "run_at": "2026-11-15T19:04:09.308Z",
-    "summary": "Sunday 14:00 New York run: queued today's fourth site-only guide (How to use Comet browser). No open links or requests; today's 2 Instagram carousels and 4 site-only articles are already queued; no Reel video passed the filter; roundup paused.",
-    "considered": [
-      {
-        "story": "Guide: How to use Comet, Perplexity's AI browser (tool library, next usable line)",
-        "source": "https://intercom.help/perplexity-ai/en/articles/11172798-getting-started-with-comet",
-        "decision": "queued",
-        "job_id": "2026-11-15-how-to-use-comet-browser-guide",
-        "priority": 2
-      },
-      {
-        "story": "Apple smart glasses with Siri app integrations planned for 2027 (Bloomberg Power On)",
-        "source": "https://bloomberg.com/news/newsletters/2026-11-15/apple-siri-ai-app-integrations-power-smart-glasses-iphone-duo-2-face-id-plan",
-        "decision": "skipped",
-        "reason": "A reported plan for 2027 that mostly insiders follow, and today's 4 site-only articles are already queued."
-      },
-      {
-        "story": "Korean YouTuber solves CSAT math with AI glasses (Asia Business Daily)",
-        "source": "https://www.asiae.co.kr/en/article/2026111414541042169",
-        "decision": "skipped",
-        "reason": "A sequel to this morning's AI glasses exam Reel, and the video is on YouTube, which the pipeline cannot download right now."
-      },
-      {
-        "story": "Claude reportedly refusing to make Pokemon images (IMDb news)",
-        "decision": "skipped",
-        "reason": "Only a headline in the leads with no original source read; today's carousels are already full."
-      },
-      {
-        "story": "GTA mod developers earning thousands with Claude Code and FiveM (GameGPU)",
-        "decision": "skipped",
-        "reason": "Single secondary outlet, no second source found, and today's carousels are already full."
-      },
-      {
-        "story": "Sweekar AI pocket pet (Engadget)",
-        "source": "https://www.engadget.com/ai/sweekar-turns-the-tamagotchi-into-a-physical-ai-pocket-pet-that-wont-die-on-you-023525228.html",
-        "decision": "skipped",
-        "reason": "Not new and no original product video found for a Reel."
-      },
-      {
-        "story": "Gemini tracks Black Friday deals with scheduled tasks (Android Police, AndroidPure)",
-        "decision": "skipped",
-        "reason": "Good future guide topic, but the plan's tool library line came first this run."
-      },
-      {
-        "story": "Reel search: viral AI, robot and gadget clips of the last 24 hours",
-        "decision": "skipped",
-        "reason": "Nothing fresh with a downloadable original video passed the Reels filter."
-      },
-      {
-        "story": "Anthropic IPO previews, Nvidia and Huang follow-ups, ChatGPT Wallet",
-        "decision": "covered",
-        "reason": "Already covered by this week's jobs (IPO, Nvidia saga, 2026-11-13-chatgpt-wallet-agents-spend-money)."
-      },
-      {
-        "story": "Nvidia circular financing (TechSpot citing WSJ, Hacker News)",
-        "decision": "skipped",
-        "reason": "Still could not read the WSJ original; secondhand only."
-      }
-    ],
-    "requests": []
-  },
-  {
     "run_at": "2026-11-15T21:20:45.940Z",
     "summary": "Sunday 16:00 New York run: queued today's fifth and sixth site-only guides (Cursor vs Claude Code, How to use Windsurf now Devin Desktop). No open links or requests; today's 2 Instagram carousels and 4 site-only articles are already queued; no Reel video passed the filter; roundup paused.",
     "considered": [
@@ -5024,6 +4880,76 @@
         "story": "Claude and the Riemann hypothesis claim",
         "decision": "covered",
         "reason": "Already covered as 2026-11-20-anthropic-mathematician-riemann-proof-claude."
+      }
+    ],
+    "requests": []
+  },
+  {
+    "run_at": "2026-11-22T19:04:51.507Z",
+    "summary": "Afternoon run (14:00 New York, Nov 22): no open links or requests; both Instagram carousels for today were already used and no Reel video passing the filter could be found and verified, so this run added the fourth site-only article (Signal blocking Siri and Gemini) and the fourth website guide of the day (how to delete Meta AI chats).",
+    "considered": [
+      {
+        "story": "Signal blocks Siri and Gemini from capturing chats on iOS 27 and Android",
+        "source": "https://www.bleepingcomputer.com/news/security/signal-to-block-siri-gemini-ai-from-capturing-chats-on-ios-android/",
+        "decision": "queued",
+        "job_id": "2026-11-22-signal-blocks-siri-gemini-chats",
+        "priority": 2,
+        "reason": "Privacy change that hits normal users, but both Instagram carousels for today are used, so site-only. BleepingComputer and Coywolf read; Signal's own blog could not be opened, so no direct quotes."
+      },
+      {
+        "story": "Guide: How to delete Meta AI chats (guides/plan.md Tier 4 'meta ai how to delete')",
+        "source": "https://www.meta.com/help/artificial-intelligence/2457110494637611/",
+        "decision": "queued",
+        "job_id": "2026-11-22-how-to-delete-meta-ai-chats-guide",
+        "priority": 2,
+        "reason": "Built from Meta's help center pages plus The Washington Post's chatbot privacy guide. Earlier Tier 2 and 4 lines (DeepSeek vs ChatGPT, Midjourney vs Nano Banana, NotebookLM vs Gemini, ChatGPT image limit) stay blocked for the reasons in earlier runs."
+      },
+      {
+        "story": "Russian pranksters posed as a Ukrainian official on a call with OpenAI's national security team (The Intercept)",
+        "source": "https://theintercept.com/2026/11/11/openai-ukraine-russia-prank-security/",
+        "decision": "skipped",
+        "reason": "Published November 11, so not new, and today's Instagram carousels are used."
+      },
+      {
+        "story": "Two-week break from ChatGPT reduces loneliness, study (Jerusalem Post)",
+        "decision": "skipped",
+        "reason": "Search found only older OpenAI and MIT loneliness studies and a 404 Media piece; could not confirm a new study with two sources in this run."
+      },
+      {
+        "story": "Anthropic power mostly from gas and coal in 2028 (Hacker News)",
+        "source": "https://betterdatacenterproject.com/2026/11/16/how-ai-is-powered-a-breakdown-of-byop-and-grid-power/",
+        "decision": "skipped",
+        "reason": "Advocacy blog estimate from November 16 with no second source; the site-only slots for today are now full."
+      },
+      {
+        "story": "David Fincher's new movie reportedly uses a lot of AI (Futurism)",
+        "decision": "skipped",
+        "reason": "Only one aggregated report in the leads; the site-only slots for today are now full."
+      },
+      {
+        "story": "UC's $1.2 million ChatGPT deal draws faculty backlash (Hoodline)",
+        "decision": "skipped",
+        "reason": "Low-quality aggregator only and a regional story; site-only slots full."
+      },
+      {
+        "story": "Reel search: viral AI and robot videos of the last day",
+        "decision": "skipped",
+        "reason": "Searches turned up only YouTube clips and roundup pages, no X or company video that passes the Reel filter and could be verified."
+      },
+      {
+        "story": "Anthropic IPO aftermath (WSJ, Business Standard)",
+        "decision": "covered",
+        "reason": "Already covered as 2026-11-22-anthropic-stock-nears-ipo-price-day-two."
+      },
+      {
+        "story": "Claude and the Riemann hypothesis proof follow-ups",
+        "decision": "covered",
+        "reason": "Already covered as 2026-11-20-anthropic-mathematician-riemann-proof-claude."
+      },
+      {
+        "story": "ChatGPT voice input 10-minute limit removed",
+        "decision": "covered",
+        "reason": "Already covered as 2026-11-20-chatgpt-live-dictation-no-limit."
       }
     ],
     "requests": []
