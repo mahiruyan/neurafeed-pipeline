@@ -4985,5 +4985,53 @@
       }
     ],
     "requests": []
+  },
+  {
+    "run_at": "2026-11-22T11:01:44.276Z",
+    "summary": "Early run (06:00 New York, Nov 22): no open links or requests; both Instagram carousels for today are already queued, so this run added one site-only article on GPT-6.2 Sol and Astra rolling out in Microsoft Copilot. No Reel video found that passes the filter and can be downloaded; guides start from 07:00.",
+    "considered": [
+      {
+        "story": "Microsoft rolls out OpenAI's GPT-6.2 Sol and Astra in Copilot worldwide (Microsoft Copilot Blog, Startup Fortune)",
+        "source": "https://techcommunity.microsoft.com/blog/microsoft-copilot-blog/available-today-openais-gpt-6-2-sol-and-gpt-6-2-astra-in-microsoft-copilot/4574229",
+        "decision": "queued",
+        "job_id": "2026-11-22-copilot-gpt-6-2-sol-astra-rollout",
+        "priority": 2,
+        "reason": "Insider product news, site-only; the GPT-6.2 launch itself was covered on Nov 17."
+      },
+      {
+        "story": "UK AI Security Institute found pre-release GPT-6.2 Astra easier to jailbreak (VentureBeat)",
+        "source": "https://venturebeat.com/security/openais-pre-release-gpt-6-2-astra-was-easier-to-jailbreak-than-its-predecessor-uk-government-testers-found",
+        "decision": "skipped",
+        "reason": "Published Nov 18 and only one outlet read so far; overlaps the Nov 17 GPT-6.2 Astra job. Possible site-only article later if a second source is read."
+      },
+      {
+        "story": "Anthropic shares fall about 9% after the Nasdaq debut, tech selloff (CNBC, CNN)",
+        "source": "https://www.cnbc.com/2026/11/20/anthropic-stock-ai-amd-nvidia.html",
+        "decision": "skipped",
+        "reason": "Nov 20 market move, two days old, and the debut is already covered as 2026-11-19-anthropic-opens-111-nasdaq; today's carousel slots are full."
+      },
+      {
+        "story": "Top scorer on South Korea's tax accountant exam admits AI cheating (TechRadar, Fortune)",
+        "decision": "skipped",
+        "reason": "First reported Nov 15, a week old."
+      },
+      {
+        "story": "Daughter's tiny robot greets her mom and tumbles down the stairs (TAG24 viral video)",
+        "source": "https://www.tag24.com/en/topic/viral-video-of-the-day/viral-video-of-the-day-for-november-21-2026-daughters-robot-visit-ends-in-hilarious-disaster-3543989",
+        "decision": "skipped",
+        "reason": "Fun Reel candidate, but the only copy found is a YouTube Short, which our servers cannot download; no X copy found."
+      },
+      {
+        "story": "Unitree G1 robot chef flings food across a kitchen (Interesting Engineering)",
+        "decision": "skipped",
+        "reason": "Clip is from November 2025."
+      },
+      {
+        "story": "Signal, Gemini camera redesign, Google AI Mode history and Gemini Connected Apps leads",
+        "decision": "skipped",
+        "reason": "Small product tweaks or already covered (AI Mode sidebar on Nov 20); not worth a site article this run."
+      }
+    ],
+    "requests": []
   }
 ]
