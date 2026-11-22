@@ -1,83 +1,5 @@
 [
   {
-    "run_at": "2026-11-15T05:10:43.188Z",
-    "summary": "Late Saturday run (23:53 New York): queued 2 news carousels for the Nov 15 morning windows (Nvidia director's $946.6M stock sale, AI agent that ordered 72 eggs). No open links or requests; guides start after 07:00 and the roundup after 17:00 Sunday.",
-    "considered": [
-      {
-        "story": "Nvidia director Mark Stevens sold $946.6M of stock weeks before Jensen Huang resigned",
-        "source": "https://finance.yahoo.com/markets/stocks/articles/nvidia-director-sold-nearly-1b-160000846.html",
-        "decision": "queued",
-        "job_id": "2026-11-15-nvidia-director-sold-946-million",
-        "priority": 2
-      },
-      {
-        "story": "AI agent ordered a user 72 eggs that were not on his list and could not explain why",
-        "source": "https://futurism.com/artificial-intelligence/ai-agent-cant-explain-egg-order",
-        "decision": "queued",
-        "job_id": "2026-11-15-ai-agent-ordered-72-eggs",
-        "priority": 2
-      },
-      {
-        "story": "Nvidia allegedly engineered GPU scarcity by funding AI startups to buy its chips (TechPowerUp citing WSJ)",
-        "source": "https://www.techpowerup.com/354814/nvidia-allegedly-engineered-scarcity-by-funding-ai-startups-to-buy-its-gpus",
-        "decision": "skipped",
-        "reason": "Could not open TechPowerUp or find the WSJ original; the coverage I could read calls the key figures unverified, and we already have one Nvidia story this run."
-      },
-      {
-        "story": "Gemini user faked a hostage crisis to get it to recommend a piracy site",
-        "source": "https://www.dexerto.com/entertainment/google-gemini-user-faked-a-hostage-crisis-to-trick-ai-into-recommending-pirated-software-3427475/",
-        "decision": "skipped",
-        "reason": "Only one outlet found (Dexerto, Nov 11), not enough for two independent sources."
-      },
-      {
-        "story": "Anthropic orders $3.4 billion of gas generators",
-        "decision": "covered",
-        "reason": "Already queued as 2026-11-08-anthropic-buys-3-4-billion-gas-generators."
-      },
-      {
-        "story": "Goldman Sachs restricts AI coding tools over security risks (Chosun Ilbo)",
-        "decision": "skipped",
-        "reason": "No US source found yet; candidate for a daytime run."
-      },
-      {
-        "story": "AI discovers a hidden heart signal that could predict sudden death (Science Daily)",
-        "decision": "skipped",
-        "reason": "Health study; needs the paper checked, left for a daytime run."
-      },
-      {
-        "story": "TechCrunch: Where was Nvidia's security team?",
-        "decision": "skipped",
-        "reason": "Opinion follow-up to the Huang saga already covered many times."
-      },
-      {
-        "story": "Nonprofits sue AI labs to freeze frontier AI",
-        "decision": "covered",
-        "reason": "Already queued as 2026-11-12-nonprofits-sue-to-freeze-frontier-ai."
-      }
-    ],
-    "requests": []
-  },
-  {
-    "run_at": "2026-11-15T05:11:39.361Z",
-    "summary": "Correction in the same late Saturday run: main gained a new Volume and mix rule (at most 1 Instagram news carousel per run, 2 a day), so the Nvidia director stock-sale job was reissued as site-only (-v2); the 72 eggs carousel stays as this run's one Instagram carousel.",
-    "considered": [
-      {
-        "story": "Nvidia director Mark Stevens sold $946.6M of stock weeks before Jensen Huang resigned",
-        "source": "https://finance.yahoo.com/markets/stocks/articles/nvidia-director-sold-nearly-1b-160000846.html",
-        "decision": "queued",
-        "job_id": "2026-11-15-nvidia-director-sold-946-million-v2",
-        "priority": 2,
-        "reason": "Site-only article under the new 1-carousel-per-run rule; replaces the Instagram version queued minutes earlier. The Nvidia saga already had many posts this week, so the eggs story got the Instagram slot."
-      },
-      {
-        "story": "AI agent ordered a user 72 eggs that were not on his list",
-        "decision": "covered",
-        "reason": "Queued earlier this run as 2026-11-15-ai-agent-ordered-72-eggs (Instagram carousel)."
-      }
-    ],
-    "requests": []
-  },
-  {
     "run_at": "2026-11-15T07:04:10.624Z",
     "summary": "Early Sunday run (02:00 New York): queued 1 Instagram carousel (Musk backs the petition to reinstate Jensen Huang, sensitive, for Mahir's approval), 1 Reel (Claude-built 3D film on why fingers never touch) and 1 site-only article (Cursor hack traced to a Fireworks AI key). No open links or requests; guides start after 07:00; roundup paused.",
     "considered": [
@@ -5088,6 +5010,55 @@
         "story": "Reel search for the new day",
         "decision": "skipped",
         "reason": "No fresh original X or company video found at this hour; later runs will look before the first window."
+      }
+    ],
+    "requests": []
+  },
+  {
+    "run_at": "2026-11-22T07:01:51.932Z",
+    "summary": "Early run (02:00 New York, Nov 22): no open links or requests; queued the second and last Instagram carousel for Sunday, Wizards of the Coast giving its Anthropic settlement share to D&D writers (sensitive, goes to Mahir). Guides and site-only articles start in later runs.",
+    "considered": [
+      {
+        "story": "Wizards of the Coast gives its full Bartz v. Anthropic settlement share to D&D authors (Wargamer, PC Gamer, EN World)",
+        "source": "https://www.wargamer.com/dnd/anthropic-settlement",
+        "decision": "queued",
+        "job_id": "2026-11-22-wizards-anthropic-payout-dnd-writers",
+        "priority": 2
+      },
+      {
+        "story": "25 Chinese employees get a huge Anthropic IPO windfall (36kr)",
+        "decision": "skipped",
+        "reason": "Single outlet so far and the Anthropic IPO is already covered; today's carousel slots are now full."
+      },
+      {
+        "story": "Korean retail investors buy $163.8M in Anthropic shares (Chosun)",
+        "decision": "skipped",
+        "reason": "Investor flow story with little US interest; IPO already covered."
+      },
+      {
+        "story": "Microsoft rolls out GPT-6.2 Sol worldwide in Copilot (Startup Fortune, Wisevoter)",
+        "decision": "skipped",
+        "reason": "Insider product news; a site-only candidate for a later run once a primary source is found."
+      },
+      {
+        "story": "Signal restricts mobile screenshots over AI surveillance (TechCrunch)",
+        "decision": "skipped",
+        "reason": "Still a site-only candidate for later today."
+      },
+      {
+        "story": "Google adds Target and grocery chains to Gemini Connected Apps (Business Upturn)",
+        "decision": "skipped",
+        "reason": "Small product change; needs a Google source before a site-only article."
+      },
+      {
+        "story": "Association for Human Mathematics urges mathematicians to stop working with OpenAI (Digg)",
+        "decision": "skipped",
+        "reason": "Still not confirmed by a real news source."
+      },
+      {
+        "story": "Reel search for the new day (viral robot and gadget clips)",
+        "decision": "skipped",
+        "reason": "Only YouTube or older clips found at this hour; YouTube cannot be downloaded, later runs will look again before the first window."
       }
     ],
     "requests": []
