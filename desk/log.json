@@ -1,69 +1,5 @@
 [
   {
-    "run_at": "2026-11-15T13:13:29.122Z",
-    "summary": "Morning Sunday run (08:00 New York): queued today's first site-only guide (ChatGPT vs Claude, plans compared). No open links or requests; Instagram carousels for the day are already at 2; no Reel video passed the filter this run; site-only articles already at 3; roundup paused.",
-    "considered": [
-      {
-        "story": "Guide: ChatGPT vs Claude, which one to use for what (guides plan, Tier 2 first line)",
-        "source": "https://claude.com/pricing",
-        "decision": "queued",
-        "job_id": "2026-11-15-chatgpt-vs-claude-guide",
-        "priority": 2
-      },
-      {
-        "story": "Guide: How to use ChatGPT Atlas and Atlas for Windows (guides plan, Tier 1)",
-        "source": "https://www.implicator.ai/openai-folds-codex-into-chatgpt-as-atlas-gets-august-9-deprecation-target/",
-        "decision": "skipped",
-        "reason": "OpenAI retired Atlas as a standalone browser (deprecation target August 9) and moved it into the ChatGPT desktop app, so a how-to guide would be out of date. Both Atlas lines in guides/plan.md should be dropped."
-      },
-      {
-        "story": "Guide: How to use Sora (guides plan, Tier 1)",
-        "decision": "skipped",
-        "reason": "Sora has been shut down according to recent coverage; no guide."
-      },
-      {
-        "story": "Gemini user faked a hostage crisis to get Gemini to recommend a piracy site (Dexerto, r/GeminiAI)",
-        "source": "https://www.dexerto.com/entertainment/google-gemini-user-faked-a-hostage-crisis-to-trick-ai-into-recommending-pirated-software-3427475/",
-        "decision": "skipped",
-        "reason": "Published November 11, four days old, and today's two carousels are already queued."
-      },
-      {
-        "story": "Anthropic buys 3.4 billion dollars of gas generators",
-        "decision": "covered",
-        "reason": "Already covered as 2026-11-08-anthropic-buys-3-4-billion-gas-generators."
-      },
-      {
-        "story": "Goldman Sachs limits AI coding tools to engineers",
-        "source": "https://fstech.co.uk/fst/Goldman_Sachs_Restricts_AI_Coding_Tools_For_Traders_And_Bankers.php",
-        "decision": "skipped",
-        "reason": "Reported November 2, too old."
-      },
-      {
-        "story": "Anthropic launches Claude for Manufacturing",
-        "decision": "skipped",
-        "reason": "Could not open Anthropic's page or a second outlet to confirm the details; insider news and today's site-only articles are already at 3."
-      },
-      {
-        "story": "NeodraDynamics Neo1 13-foot hydraulic humanoid robot",
-        "source": "https://interestingengineering.com/ai-robotics/china-neo1-hydraulic-humanoid-robot-1102-pound-payload",
-        "decision": "skipped",
-        "reason": "Unveiled October 14 and no original video link found, so not a Reel."
-      },
-      {
-        "story": "Nvidia kept GPU prices high through circular financing (TechSpot citing WSJ, top of Hacker News)",
-        "source": "https://www.techspot.com/news/114558-nvidia-deliberately-kept-gpu-prices-high-through-circular.html",
-        "decision": "skipped",
-        "reason": "Still could not read the WSJ original; secondhand only."
-      },
-      {
-        "story": "Reel search: viral AI and robot clips of the last 24 hours (X, TikTok trend trackers, robotics sites)",
-        "decision": "skipped",
-        "reason": "Every viral robot clip found was months old (Russia store robot, Warsaw boars); nothing new passed the Reels filter."
-      }
-    ],
-    "requests": []
-  },
-  {
     "run_at": "2026-11-15T15:07:27.973Z",
     "summary": "Sunday 10:00 New York run: queued today's second site-only guide (How to use ElevenLabs for free: text to speech). No open links or requests; today's 2 Instagram carousels are already queued; no Reel video passed the filter; roundup paused. Heads-up: the fal.ai balance is exhausted (logo checks and generated covers fail) and YouTube downloads are blocked by a bot check, which is why the AI glasses Reel failed to render.",
     "considered": [
@@ -5028,6 +4964,70 @@
         "story": "Gemini camera redesign on Android",
         "decision": "skipped",
         "reason": "Minor interface change with little reader interest."
+      }
+    ],
+    "requests": []
+  },
+  {
+    "run_at": "2026-11-22T15:07:06.994Z",
+    "summary": "Mid-morning run (10:30 New York, Nov 22): no open links or requests; both Instagram carousels for today were already queued, so this run added one Reel (Tau Robotics humanoid cooking a burger), one site-only article (Anthropic stock dipping to near its IPO price on day two) and the second website guide of the day (Kling vs Seedance).",
+    "considered": [
+      {
+        "story": "Tau Robotics humanoid robot cooks a burger and cleans up (uncut, 4x speed)",
+        "source": "https://x.com/alexkoch_ai/status/2122404327864348990",
+        "decision": "queued",
+        "job_id": "2026-11-22-tau-humanoid-robot-cooks-burger-reel",
+        "priority": 2
+      },
+      {
+        "story": "Anthropic stock falls to $83.15 on day two, 15 cents above its IPO price",
+        "source": "https://finance.yahoo.com/markets/stocks/articles/anthropic-slid-just-5-cents-164439785.html",
+        "decision": "queued",
+        "job_id": "2026-11-22-anthropic-stock-nears-ipo-price-day-two",
+        "priority": 2,
+        "reason": "A money story, but both Instagram carousels for today are used, so it runs as a site-only article. The debut itself was covered on Nov 19; this is the new day two reversal."
+      },
+      {
+        "story": "Guide: Kling vs Seedance (guides/plan.md Tier 2)",
+        "source": "https://kling.ai/feature/kling-4-ai-video-generation",
+        "decision": "queued",
+        "job_id": "2026-11-22-kling-vs-seedance-guide",
+        "priority": 2
+      },
+      {
+        "story": "OpenAI says new safeguards cut reasoning extraction attacks on GPT-6.2 Astra to 0.2%",
+        "decision": "skipped",
+        "reason": "Only a crypto blog in the leads and no OpenAI page found in this run; insider safety detail."
+      },
+      {
+        "story": "Google adds Target and grocery chains to Search and Gemini Connected Apps",
+        "decision": "skipped",
+        "reason": "Only an aggregator report found for the new partners; the Connected Apps launch itself is months old."
+      },
+      {
+        "story": "LinkerBot O30 hand applies cream to a human hand (Humanoid Daily)",
+        "decision": "skipped",
+        "reason": "YouTube-only clip, which our servers cannot download, and a lab demo with little share appeal."
+      },
+      {
+        "story": "HEXUAN robot band plays piano and violin at Chery conference",
+        "decision": "skipped",
+        "reason": "YouTube-only clip; corporate stage show."
+      },
+      {
+        "story": "Anthropic stock ends first week at $88.91",
+        "decision": "skipped",
+        "reason": "Weekly close came only from low-quality finance sites; the article uses Fortune's day two figures instead."
+      },
+      {
+        "story": "Gemini camera redesign on Android",
+        "decision": "skipped",
+        "reason": "Minor interface change with little reader interest."
+      },
+      {
+        "story": "Guide plan lines DeepSeek vs ChatGPT, Midjourney vs Nano Banana, NotebookLM vs Gemini",
+        "decision": "skipped",
+        "reason": "Same reasons as earlier runs: DeepSeek docs unreadable, Gemini help pages cited by guides in the last 72 hours."
       }
     ],
     "requests": []
