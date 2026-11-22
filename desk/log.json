@@ -1,64 +1,5 @@
 [
   {
-    "run_at": "2026-11-15T15:07:27.973Z",
-    "summary": "Sunday 10:00 New York run: queued today's second site-only guide (How to use ElevenLabs for free: text to speech). No open links or requests; today's 2 Instagram carousels are already queued; no Reel video passed the filter; roundup paused. Heads-up: the fal.ai balance is exhausted (logo checks and generated covers fail) and YouTube downloads are blocked by a bot check, which is why the AI glasses Reel failed to render.",
-    "considered": [
-      {
-        "story": "Guide: How to use ElevenLabs for free, text to speech step by step (tool library line)",
-        "source": "https://elevenlabs.io/docs/help-center/product/core-capabilities/text-to-speech/how-do-audio-tags-work-with-eleven-v3-alpha",
-        "decision": "queued",
-        "job_id": "2026-11-15-how-to-use-elevenlabs-text-to-speech-guide",
-        "priority": 2
-      },
-      {
-        "story": "Guide: Gemini CLI, how to install it (tool library line)",
-        "source": "https://www.geminicli.com/docs/get-started/installation",
-        "decision": "skipped",
-        "reason": "Google's own docs say Gemini CLI was replaced by Antigravity CLI on June 18, 2026 for free and Google One users, so an install guide would mislead most readers; the line in guides/plan.md could become an Antigravity CLI guide."
-      },
-      {
-        "story": "Guide: How to use Grok Imagine (tool library line)",
-        "decision": "skipped",
-        "reason": "Still no official xAI help page for Imagine in the Grok app, only third-party blogs."
-      },
-      {
-        "story": "Anthropic IPO orders reportedly six times oversubscribed (Reuters citing Bloomberg)",
-        "source": "https://www.investing.com/news/stock-market-news/anthropics-ipo-is-about-six-times-oversubscribed-bloomberg-news-reports-5023345",
-        "decision": "skipped",
-        "reason": "Reported November 13 and the IPO is already covered; better to cover the pricing and the November 19 listing."
-      },
-      {
-        "story": "Viral humanoid robot clips (Web Summit robots, Cologne Unitree R1 streamer incident)",
-        "source": "https://www.404media.co/theres-nothing-mysterious-or-unusual-about-the-viral-german-sexual-harassment-robot/",
-        "decision": "skipped",
-        "reason": "The Cologne incident is from October 11 and the Web Summit clips are news-branded (Euronews); nothing fresh passed the Reels filter."
-      },
-      {
-        "story": "Gemini app rolls out on Apple CarPlay",
-        "source": "https://www.macrumors.com/2026/11/11/google-gemini-apple-carplay/",
-        "decision": "skipped",
-        "reason": "Announced November 11, four days old, and no clean original demo video found for a Reel."
-      },
-      {
-        "story": "Runway releases Praxis-1, an open-weight model for robot control",
-        "decision": "skipped",
-        "reason": "Only read a secondhand summary; insider news and no second source read this run."
-      },
-      {
-        "story": "Nvidia kept GPU prices high through circular financing (TechSpot citing WSJ)",
-        "source": "https://www.techspot.com/news/114558-nvidia-deliberately-kept-gpu-prices-high-through-circular.html",
-        "decision": "skipped",
-        "reason": "Still could not read the WSJ original; secondhand only."
-      },
-      {
-        "story": "Startup funding rounds (Nidus $30M, Databento $100M, Luminal $25M, WhiteMatter $20M)",
-        "decision": "skipped",
-        "reason": "Small insider funding news with little US consumer interest."
-      }
-    ],
-    "requests": []
-  },
-  {
     "run_at": "2026-11-15T17:14:31.655Z",
     "summary": "Sunday 12:00 New York run: queued 1 site-only article (Claude builds a swimmable underwater world in a 97 KB file) and today's third site-only guide (Gemini vs ChatGPT). Answered the reopened Altman request: its -v2 was already posted on November 9. No Reel this run: no downloadable video passed the filter. Today's 2 Instagram carousels are already queued; roundup paused.",
     "considered": [
@@ -5028,6 +4969,61 @@
         "story": "Guide plan lines DeepSeek vs ChatGPT, Midjourney vs Nano Banana, NotebookLM vs Gemini",
         "decision": "skipped",
         "reason": "Same reasons as earlier runs: DeepSeek docs unreadable, Gemini help pages cited by guides in the last 72 hours."
+      }
+    ],
+    "requests": []
+  },
+  {
+    "run_at": "2026-11-22T17:06:50.934Z",
+    "summary": "Midday run (noon New York, Nov 22): no open links or requests; both Instagram carousels for today were already used, no Reel video that passes the filter was found on X, so this run added only the third website guide of the day (How to use Replit Agent).",
+    "considered": [
+      {
+        "story": "Guide: How to use Replit Agent (next readable tool library line)",
+        "source": "https://docs.replit.com/references/agent/overview",
+        "decision": "queued",
+        "job_id": "2026-11-22-how-to-use-replit-agent-guide",
+        "priority": 2,
+        "reason": "Built from Replit's docs (Agent, plans, AI billing, checkpoints, publishing) plus two independent reviews; prices only from Replit's help center."
+      },
+      {
+        "story": "Guide plan lines ChatGPT agent mode and Freepik",
+        "decision": "skipped",
+        "reason": "Same doc blockers as earlier runs; took the next readable line, Replit."
+      },
+      {
+        "story": "UN talks in Geneva end with a 2028 mandate to draft rules for autonomous weapons (CNBC, Al Jazeera)",
+        "decision": "skipped",
+        "reason": "Could not open the CNBC or Al Jazeera articles in this run, so there were not two sources read; left for a later run as a site-only article."
+      },
+      {
+        "story": "Amazon nearing a $7.5 billion purchase of Decart (FT, The Information)",
+        "decision": "skipped",
+        "reason": "The talks were already covered on Oct 12 and both sources are paywalled; no new confirmed fact to add."
+      },
+      {
+        "story": "Humanoid Daily clips (LinkerBot O30 hand cream, Bear Robotics KR1, DEEP Robotics in the Ailao Mountains, AlphaBot 2 serving coffee at APEC)",
+        "decision": "skipped",
+        "reason": "All are YouTube only, which our servers cannot download, and mostly lab or trade show demos with little share appeal."
+      },
+      {
+        "story": "Thinking Machines releases Inkling 2 Mini open weight model",
+        "decision": "skipped",
+        "reason": "Insider model news and the daily site-only slots are mostly used; the release was Nov 20."
+      },
+      {
+        "story": "Dan Hendrycks calls for an indefinite pause on frontier AI training at DealBook",
+        "decision": "skipped",
+        "reason": "Talking head panel with only one secondary source found."
+      },
+      {
+        "story": "Google intelligent eyewear pre-orders",
+        "decision": "covered",
+        "reason": "Already covered as 2026-11-12-google-gemini-glasses-preorder-395."
+      },
+      {
+        "story": "Claude and the Riemann hypothesis claim",
+        "decision": "covered",
+        "reason": "Already covered as 2026-11-20-anthropic-mathematician-riemann-proof-claude."
       }
     ],
     "requests": []

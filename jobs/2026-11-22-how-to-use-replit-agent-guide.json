@@ -1,0 +1,280 @@
+{
+  "id": "2026-11-22-how-to-use-replit-agent-guide",
+  "format": "utility",
+  "site_only": true,
+  "created_at": "2026-11-22T17:05:00Z",
+  "story_time": "2026-11-22T17:05:00Z",
+  "timely": false,
+  "sensitive": false,
+  "priority": 2,
+  "sources": [
+    {
+      "name": "Replit Docs: Agent overview",
+      "url": "https://docs.replit.com/references/agent/overview"
+    },
+    {
+      "name": "Replit Docs: Pricing and plans",
+      "url": "https://docs.replit.com/help/pricing-and-plans"
+    },
+    {
+      "name": "Replit Docs: Agent billing",
+      "url": "https://docs.replit.com/billing/ai-billing"
+    },
+    {
+      "name": "Replit Docs: Free Mode",
+      "url": "https://docs.replit.com/help/free-agent-mode"
+    },
+    {
+      "name": "Replit Docs: Checkpoints and rollbacks",
+      "url": "https://docs.replit.com/references/version-control/checkpoints-and-rollbacks"
+    },
+    {
+      "name": "Replit Docs: Publishing",
+      "url": "https://docs.replit.com/features/publishing/overview"
+    },
+    {
+      "name": "Replit Docs: Prompting guide",
+      "url": "https://docs.replit.com/getting-started/quickstarts/build-with-ai"
+    },
+    {
+      "name": "All About Cookies: Replit review",
+      "url": "https://allaboutcookies.org/replit-review"
+    },
+    {
+      "name": "DEV Community: Replit Agent review 2026",
+      "url": "https://dev.to/jovan_chan_9500711396d4e6/replit-agent-review-2026-from-idea-to-deployed-app-but-read-the-credit-bill-first-4cma"
+    }
+  ],
+  "caption": "Replit Agent builds a working app from a plain description, tests it and publishes it to a .replit.app address.\nThe catch is cost: Free Mode has limits, and Power and Max are billed by effort.\nHere is how to plan, build, roll back and publish without burning your credits.\n\nWhat would you build first with Replit Agent?\n\nFollow @neurafeed.ai for daily AI news.\n\nSource: Replit documentation · Photo: Replit",
+  "threads_text": "Replit Agent will set up, build, test and publish an app from a plain description. The part nobody reads first is billing: Free Mode has limits that reset every five hours on paid plans, and Power and Max are charged by effort. Would you trust an AI agent to build your first app?",
+  "slides": [
+    {
+      "kind": "cover",
+      "headline": "How to use *Replit Agent* to build an app",
+      "image": {
+        "url": "https://mintcdn.com/replit/teDUL4A-lNO7dv1O/images/chat/start-new-conversation-home-sanitized-neutral.jpg?fit=max&auto=format&n=teDUL4A-lNO7dv1O&q=85&s=cf93f549696aff0eab748dd953aea0b6",
+        "credit": "Replit",
+        "fallback_urls": [
+          "https://techcrunch.com/wp-content/uploads/2026/08/Amjad-Masad-Disrupt-Stage-2026-2.png"
+        ]
+      }
+    },
+    {
+      "kind": "card",
+      "heading": "1. Ask for a *plan* first",
+      "paras": [
+        "Click Plan in the chat box or type /plan. Agent splits your app into a task list before it writes code.",
+        "Read it, then pick Accept tasks or Revise plan."
+      ],
+      "image": {
+        "url": "https://mintcdn.com/replit/L22mbBMLs80H8_c8/images/replitai/task-accept-plans.png?fit=max&auto=format&n=L22mbBMLs80H8_c8&q=85&s=e788fc99c5fce2644d144f88419ba00c",
+        "credit": "Replit",
+        "fit": "contain",
+        "fallback_urls": [
+          "https://techcrunch.com/wp-content/uploads/2025/10/Screenshot-2025-10-02-at-9.34.51PM.png"
+        ]
+      }
+    },
+    {
+      "kind": "card",
+      "heading": "2. Know your *mode*",
+      "paras": [
+        "Free Mode costs nothing within your plan's allowance. On Core and Pro it resets every five hours.",
+        "Power and Max are paid and billed by effort. Replit asks before any paid action starts."
+      ],
+      "image": {
+        "url": "https://mintcdn.com/replit/8n5zRimolc5vR2T4/images/replitai/model-selector-power-mode.png?fit=max&auto=format&n=8n5zRimolc5vR2T4&q=85&s=f5fe07a7e4827ae15077037eae569ea2",
+        "credit": "Replit",
+        "fit": "contain",
+        "fallback_urls": [
+          "https://mintcdn.com/replit/UzjhCSG11sP66pW_/images/chat/free-mode-agent-modes-selector-sanitized.png?fit=max&auto=format&n=UzjhCSG11sP66pW_&q=85&s=f18fa300ee126a7c6298e72482906435"
+        ]
+      }
+    },
+    {
+      "kind": "prompt",
+      "heading": "3. Describe the *app*",
+      "paras": [
+        "Be specific: who uses it, what they do, what data it keeps.",
+        "Ask for the smallest working version first, then add features one at a time."
+      ],
+      "prompt": "Build a simple web app where [who] can [main task]. Users can [action 1] and [action 2]. Store [data] in a database. Start with the smallest working version."
+    },
+    {
+      "kind": "card",
+      "heading": "4. Roll back when it *breaks*",
+      "paras": [
+        "Agent saves checkpoints as it works. In the Agent tab, pick Rollback to here to go back.",
+        "Your development database is not restored unless you select Database under Additional rollback options."
+      ],
+      "image": {
+        "url": "https://mintcdn.com/replit/AZ1L8RlIroSxuJDa/images/replitai/agent-checkpoint.png?fit=max&auto=format&n=AZ1L8RlIroSxuJDa&q=85&s=326ff336a67eeadb4cc05543d39603ac",
+        "credit": "Replit",
+        "fit": "contain",
+        "fallback_urls": [
+          "https://mintcdn.com/replit/0UCOQvZyQpUEM03B/images/replitai/checkpoint-rollback.png?fit=max&auto=format&n=0UCOQvZyQpUEM03B&q=85&s=f9594eb28458309b2759e8698b8535ce"
+        ]
+      }
+    },
+    {
+      "kind": "card",
+      "heading": "5. Hit *Publish*",
+      "paras": [
+        "Click Publish at the top right of the Project Editor, check the settings and confirm.",
+        "Replit suggests a .replit.app address. You can connect your own domain later."
+      ],
+      "image": {
+        "url": "https://mintcdn.com/replit/31IJAEOdTZHs9MKA/images/deployments/publish-pane/publish-your-app.png?fit=max&auto=format&n=31IJAEOdTZHs9MKA&q=85&s=2d4057394af134ae1313557242355fbe",
+        "credit": "Replit",
+        "fit": "contain",
+        "fallback_urls": [
+          "https://mintcdn.com/replit/31IJAEOdTZHs9MKA/images/deployments/publish-pane/adjust-settings.png?fit=max&auto=format&n=31IJAEOdTZHs9MKA&q=85&s=aea4af12baf1aff23b637464d4bf3c27"
+        ]
+      }
+    },
+    {
+      "kind": "cta",
+      "hook": "Follow for AI tool guides that show you the bill before you start."
+    }
+  ],
+  "site_article": {
+    "kind": "guide",
+    "headline": "How to use Replit Agent to build an app",
+    "dek": "How to plan, build, roll back and publish an app with Replit Agent, what the Free, Power and Max modes cost, and where the tool still falls short.",
+    "summary": "Replit Agent turns a plain language description into a working app, tests it and can publish it to a .replit.app address. Free Mode covers everyday work within a plan's allowance, while Power and Max modes are billed by effort.",
+    "seo_title": "How to use Replit Agent to build an app, step by step",
+    "seo_description": "How to use Replit Agent: plan your app, pick Free, Power or Max mode, roll back with checkpoints, publish to .replit.app and keep the bill under control.",
+    "answer_summary": "Open a Replit project, describe the app in the Agent chat, ask for a plan with Plan or /plan, accept the tasks, test the result and click Publish. Use checkpoints to roll back and set a budget in Settings before using paid modes.",
+    "tags": [
+      "Replit",
+      "Replit Agent",
+      "Vibe coding",
+      "AI app builder",
+      "Guides"
+    ],
+    "hero_alt": "Screenshot of Replit's home screen with a chat box for starting a new conversation with Agent.",
+    "paragraphs": [
+      {
+        "kind": "fact",
+        "text": "Replit Agent builds apps from a plain language description, with no coding required. If you want to know how to use Replit to make an app, the short version is: describe it, approve a plan, let Agent build and test it, then click Publish. Replit says Agent sets up the project, writes the code, checks its own work and fixes problems, and it can also make mobile apps, slides, designs and data visualizations.",
+        "sources": [0]
+      },
+      {
+        "kind": "analysis",
+        "text": "This guide walks through a first app from start to finish, then covers the part that surprises most people: what it costs. Read the billing section before you start a big project."
+      },
+      {
+        "kind": "heading",
+        "text": "How to use Replit Agent, step by step"
+      },
+      {
+        "kind": "step",
+        "title": "1. Write down what the app does",
+        "text": "Before you type anything into Replit, list the features and the steps a user takes. Replit's own prompting guide puts this first: outline your app's features and user flows before you prompt. Five bullet points is enough for a first version."
+      },
+      {
+        "kind": "step",
+        "title": "2. Describe it to Agent",
+        "text": "Open the Project Editor and describe the app in the Agent chat. You can attach files, use voice input, or connect services such as BigQuery, Slack or Notion. You can choose the type of thing to build, such as a web app or a mobile app, but Agent can also work it out from your description."
+      },
+      {
+        "kind": "step",
+        "title": "3. Ask for a plan before any code",
+        "text": "Click Plan in the chat input, type /plan, or simply ask Agent to plan. In Plan mode, Agent breaks the project into an ordered task list and compares approaches before it writes code. When the list looks right, click Accept tasks. If it does not, click Revise plan and say what to change."
+      },
+      {
+        "kind": "step",
+        "title": "4. Let it build, then test it yourself",
+        "text": "Agent writes the code, sets up what the app needs and tests its own work as it goes. When it finishes, click through the app like a real user would. If something is wrong, describe the problem in the chat and Agent will try to fix it."
+      },
+      {
+        "kind": "step",
+        "title": "5. Add features one at a time",
+        "text": "Replit's guide recommends building in small steps and saving progress with checkpoints after each one that works. Ask for one feature per message, check it, then move on. When you switch to an unrelated task, start a new chat so old context does not get in the way."
+      },
+      {
+        "kind": "step",
+        "title": "6. Publish it",
+        "text": "Click Publish in the top right of the Project Editor. The Publish your app pane lists the domain, what you are publishing, who can access the app, and the database, monitoring, security and engagement settings. Review them and click Publish. Replit suggests a .replit.app name and checks that it is free; you can connect a custom domain after publishing."
+      },
+      {
+        "kind": "tip",
+        "text": "Replit recommends Autoscale, the default deployment type, for most apps. Under Adjust settings you can see the cost per machine and the cost at maximum traffic before you commit."
+      },
+      {
+        "kind": "heading",
+        "text": "Prompts to copy"
+      },
+      {
+        "kind": "fact",
+        "text": "Replit's prompting guide asks for specific prompts: name the output, the limits and the edge cases, say what you want instead of what to avoid, and use plain bullet points for complex requests. For bugs, it says to paste the exact error message, the file names, what you were trying to do and what you already tried.",
+        "sources": [6]
+      },
+      {
+        "kind": "prompt",
+        "title": "Prompt 1: The first version",
+        "text": "Build a simple web app where [who] can [main task].\nFeatures:\n- [feature 1]\n- [feature 2]\n- [feature 3]\nStore [data] in a database. Use a clean, simple design. Start with the smallest version that works, and tell me how to test it."
+      },
+      {
+        "kind": "prompt",
+        "title": "Prompt 2: Plan only",
+        "text": "/plan I want to add [feature] to this app. Compare two ways to do it, list the files you would change, and do not write any code yet."
+      },
+      {
+        "kind": "prompt",
+        "title": "Prompt 3: Fix a bug",
+        "text": "When I [action] on the [page name] page, I get this error: [paste the exact error]. I expected [what should happen]. I already tried [what you tried]. Find the cause and fix only that."
+      },
+      {
+        "kind": "heading",
+        "text": "Checkpoints: your undo button"
+      },
+      {
+        "kind": "fact",
+        "text": "Agent creates checkpoints on its own, for example after a feature is finished and before it fixes a serious error. A checkpoint captures the project files and packages, the AI conversation, environment and publishing settings, and database contents. To go back, open the Agent tab, find the checkpoint and select Rollback to here, then confirm.",
+        "sources": [4]
+      },
+      {
+        "kind": "fact",
+        "text": "Two details matter. Your development database is not restored by default: select Database under Additional rollback options to include it. And a rollback never restores the production database of a published app; Replit points to a point in time restore for that. If you make new changes after rolling back, the later checkpoints become a separate branch you cannot roll forward to.",
+        "sources": [4]
+      },
+      {
+        "kind": "heading",
+        "text": "What Replit Agent costs"
+      },
+      {
+        "kind": "fact",
+        "text": "Agent has three modes. Free Mode covers everyday work at no extra cost within your plan's allowance; on Core and Pro the allowance resets every five hours and also has a weekly limit, and you can check it under Settings, then Usage. Power is a paid mid tier mode and Max a paid top tier mode with the strongest models. When a request needs more than Free Mode, Agent explains why and asks first, and after a one time paid step it returns to Free Mode.",
+        "sources": [0, 3]
+      },
+      {
+        "kind": "fact",
+        "text": "Paid work is priced by effort, so a small fix costs less than a whole feature. Each request produces one checkpoint, with no charges in between. Planning in Power or Max is billed like any other request, even when no code changes. You can see the cost of each checkpoint in the Agent tab by hovering over the usage icon, and a full breakdown at replit.com/usage, which can lag by up to 30 minutes.",
+        "sources": [1, 2]
+      },
+      {
+        "kind": "fact",
+        "text": "Replit's help center lists three plans for individuals. Starter is free, with a daily AI allowance, limited monthly cloud credits and one published app. Core costs $204 a year on annual billing and includes $20 in monthly credits, unlimited published apps and up to 5 collaborators. Pro costs $100 a month and adds more Free Mode usage, up to 15 builders and credits that roll over for two months. Credits also pay for published apps, storage and databases.",
+        "sources": [1, 2]
+      },
+      {
+        "kind": "tip",
+        "text": "Set a budget before you use Power or Max. On the Billing page in Settings you can add usage alerts at spending thresholds and budget limits that act as hard caps."
+      },
+      {
+        "kind": "heading",
+        "text": "Where Replit Agent falls short"
+      },
+      {
+        "kind": "fact",
+        "text": "Independent testers like the speed but warn about cost and depth. An All About Cookies reviewer who built a legal case management app from a 23 page spec ran through the free plan's allowance in about 21 minutes, then used up a month of Core credits and was still an estimated 10 to 15 percent from a deployable app. A DEV Community review found that Agent's self testing catches obvious bugs but lets architecture problems through, and that custom CI/CD, strict Git workflows and hosting outside Replit add friction.",
+        "sources": [7, 8]
+      },
+      {
+        "kind": "analysis",
+        "text": "Replit Agent is good at getting a simple idea to a live link fast, especially if you do not code. It is weaker at large, complex apps, where every round of fixes costs money and the structure of the code matters. Start small, plan first, keep each request narrow, and watch the usage page. If the project grows, expect to read the code yourself or bring in someone who can."
+      }
+    ]
+  }
+}
