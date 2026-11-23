@@ -1,65 +1,5 @@
 [
   {
-    "run_at": "2026-11-16T19:02:08.329Z",
-    "summary": "Monday 14:00 New York run: queued 1 site-only guide (How to use Napkin AI). No open links or requests; both Instagram carousel slots and all 4 site-only news slots for today were already used; no Reel video with a usable X or company URL passed the filter.",
-    "considered": [
-      {
-        "story": "Daily guide: How to use Napkin AI (guides/plan.md tool library, next uncovered line after Grok Imagine)",
-        "source": "https://www.napkin.ai/pricing",
-        "decision": "queued",
-        "job_id": "2026-11-16-how-to-use-napkin-ai-guide",
-        "priority": 2
-      },
-      {
-        "story": "Guide plan line: How to use Grok Imagine",
-        "decision": "skipped",
-        "reason": "Still no official xAI help page found, so took the next line."
-      },
-      {
-        "story": "Physicist Nathaniel Craig says GPT-6 Astra led the proof of a candidate lattice definition of the Standard Model (OpenAI science blog, November 15)",
-        "source": "https://finance.biggo.com/news/d88769bf-d796-4e6c-bd00-35c3e58bc524",
-        "decision": "skipped",
-        "reason": "A physics result mostly insiders follow, with experts not yet settled on it; it would be a site-only article, and today's 4 site-only news slots are full. Worth a site article tomorrow if mainstream outlets pick it up."
-      },
-      {
-        "story": "Runway releases open weights for Praxis-1 robot control model",
-        "source": "https://runway.com/news/company-news/praxis-1-is-now-available",
-        "decision": "skipped",
-        "reason": "Developer news with vendor-only benchmarks; no Instagram fit and the site-only cap is reached."
-      },
-      {
-        "story": "Anthropic launches Claude for Manufacturing plugin",
-        "source": "https://claude.com/resources/articles/claude-for-manufacturing",
-        "decision": "skipped",
-        "reason": "Enterprise plugin that mostly insiders follow, and the site-only cap is reached."
-      },
-      {
-        "story": "EngineAI robot keeps fighting after its head is kicked off (Reel candidate)",
-        "source": "https://sundayguardianlive.com/trending/watch-video-china-robot-fight-goes-viral-humanoid-machine-keeps-fighting-after-opponent-kicks-its-head-off-317778/",
-        "decision": "skipped",
-        "reason": "Footage is from a July event and went viral on November 4; too old to travel again as a Reel."
-      },
-      {
-        "story": "Xiaomi humanoids work an 8-hour EV factory shift (Reel candidate)",
-        "source": "https://electrek.co/2026/11/04/xiaomi-humanoid-robot-8-hour-shift-ev-factory/",
-        "decision": "skipped",
-        "reason": "Posted November 3 and I could not find the X post URL to download the clip."
-      },
-      {
-        "story": "South Korea to inspect all exam takers' glasses after the AI cheating scandal (CNN)",
-        "source": "https://www.cnn.com/2026/11/16/asia/south-korea-ai-glasses-cheating-intl-hnk",
-        "decision": "covered",
-        "reason": "The Korea AI glasses exam story already has a Reel and a site article from November 15; both carousel slots are used today."
-      },
-      {
-        "story": "Anthropic IPO pricing and Nasdaq debut later this week",
-        "decision": "covered",
-        "reason": "Already covered as 2026-11-12-anthropic-ipo-retail-20-percent; the pricing or first trade deserves its own post when it happens."
-      }
-    ],
-    "requests": []
-  },
-  {
     "run_at": "2026-11-16T21:12:10.387Z",
     "summary": "Monday 16:00 New York run: queued California's lawsuit against OpenAI over the Hugging Face hack (priority 1, sensitive, for Mahir's approval) and the 5th and 6th site-only guides of the day (n8n vs Zapier, How to use Character AI). No open links or requests; no Reel video with a usable X or company URL passed the filter.",
     "considered": [
@@ -4989,6 +4929,75 @@
         "story": "Meta reconsiders 2030 net-zero goal",
         "decision": "covered",
         "reason": "Already queued as 2026-11-21-meta-rethinks-net-zero-ai-emissions."
+      }
+    ],
+    "requests": []
+  },
+  {
+    "run_at": "2026-11-23T19:05:19.534Z",
+    "summary": "14:50 NY run: queued the day's 4th website guide (ChatGPT agent mode is gone, how to use ChatGPT Work) and a site-only article on Architect Labs' AI-designed Frostbite CPU. No open links or requests; today's 2 Instagram carousels and 4 Reels are already used.",
+    "considered": [
+      {
+        "story": "Architect Labs says AI agents designed the Frostbite CPU (4.59x perf per watt, pre-silicon)",
+        "source": "https://xenospectrum.com/en/frostbite-cpu-design-energy-efficiency/",
+        "decision": "queued",
+        "job_id": "2026-11-23-ai-agents-design-frostbite-cpu",
+        "priority": 2,
+        "reason": "Insider hardware story, so site-only. Tom's Hardware and the company blog could not be opened here; written from XenoSpectrum, 3DNews, ShiftDelete, i10X, explainx and Business Wire."
+      },
+      {
+        "story": "Guide: ChatGPT agent mode (plan line 'how to use chatgpt agent mode')",
+        "source": "https://help-lb.openai.com/en/articles/11752874-chatgpt-agent",
+        "decision": "queued",
+        "job_id": "2026-11-23-chatgpt-agent-mode-work-guide",
+        "priority": 2,
+        "reason": "OpenAI's help page says agent mode is no longer available, so the guide targets the search phrase and explains ChatGPT Work instead."
+      },
+      {
+        "story": "Jensen Huang reinstated as Nvidia CEO",
+        "decision": "covered",
+        "reason": "Already queued as 2026-11-23-jensen-huang-reinstated-nvidia-ceo; its render failed (slide 2 Gizmodo image HTTP 403, fetch failed) and it is not given up, so it should retry. Mahir may want to check it."
+      },
+      {
+        "story": "SpaceX $74 billion AI data centers in Texas and Arizona, who pays for the power",
+        "source": "https://fortune.com/2026/11/22/spacex-74-billion-ai-data-centers-texas-arizona-who-pays/",
+        "decision": "skipped",
+        "reason": "Instagram carousel cap for today is already used and site-only slots go to the Frostbite story; could be a later article."
+      },
+      {
+        "story": "Dell and HPE seek AI server price increases of up to 45%",
+        "source": "https://www.ft.com/content/dd2a6594-6146-4ff1-ac8e-54749c1fc99f",
+        "decision": "skipped",
+        "reason": "Paywalled FT report with no second source read this run; insider business news."
+      },
+      {
+        "story": "California sues OpenAI over AI safety and hacking risks",
+        "source": "https://www.gpb.org/news/2026/11/16/california-sues-openai-over-hacking-risks",
+        "decision": "skipped",
+        "reason": "From November 16, a week old, and related state actions were already covered."
+      },
+      {
+        "story": "Nothing teases a screenless AI device for December 8",
+        "source": "https://www.engadget.com/2323187/nothings-ai-device-debuts-december-8-and-it-looks-like-two-vapes-stuck-together/",
+        "decision": "skipped",
+        "reason": "A teaser with no capabilities disclosed; better covered at the December 8 launch."
+      },
+      {
+        "story": "Developer fits a 367K-parameter AI model on a floppy for 486 PCs",
+        "source": "https://www.tomshardware.com/tech-industry/artificial-intelligence/dev-squeezes-an-ai-language-model-onto-a-floppy-for-486dx-and-pentium-pc-stalwarts-tiny-2-1-needs-540kb-of-memory-and-speaks-via-pc-speaker-is-a-question-answering-transformer-with-367k-parameters",
+        "decision": "skipped",
+        "reason": "Fun but the day's Reel slots are full and no verifiable video was found; similar to the SNES Reel already posted today."
+      },
+      {
+        "story": "OpenAI Pachocki perplexity metric, Meta net-zero rethink, OpenRouter prompt leaks, Signal blocks AI assistants, Riemann proof claim",
+        "decision": "covered",
+        "reason": "All already have jobs from the last 3 days."
+      },
+      {
+        "story": "YouTube Custom Feeds with natural-language descriptions",
+        "source": "https://www.engadget.com/2319492/try-using-youtube-custom-feeds-control-homepage/",
+        "decision": "skipped",
+        "reason": "Only one source read; candidate for a later guide."
       }
     ],
     "requests": []

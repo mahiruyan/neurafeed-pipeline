@@ -1,0 +1,290 @@
+{
+  "id": "2026-11-23-chatgpt-agent-mode-work-guide",
+  "format": "utility",
+  "site_only": true,
+  "created_at": "2026-11-23T19:40:00Z",
+  "story_time": "2026-11-23T19:40:00Z",
+  "timely": false,
+  "sensitive": false,
+  "priority": 2,
+  "sources": [
+    {
+      "name": "OpenAI Help Center: ChatGPT agent",
+      "url": "https://help-lb.openai.com/en/articles/11752874-chatgpt-agent"
+    },
+    {
+      "name": "OpenAI: ChatGPT for your most ambitious work",
+      "url": "https://openai.com/index/chatgpt-for-your-most-ambitious-work/"
+    },
+    {
+      "name": "OpenAI Help Center: Using cloud browser in ChatGPT",
+      "url": "https://help-lb.openai.com/en/articles/20001280-using-cloud-browser-in-chatgpt"
+    },
+    {
+      "name": "VentureBeat",
+      "url": "https://venturebeat.com/technology/openai-introduces-chatgpt-work-a-cloud-based-ai-agent-that-manages-tasks-across-email-slack-and-calendars"
+    },
+    {
+      "name": "OpenAI Community",
+      "url": "https://community.openai.com/t/agent-mode-was-removed-with-no-real-replacement/1389601"
+    },
+    {
+      "name": "OpenAI: Introducing ChatGPT agent",
+      "url": "https://openai.com/index/introducing-chatgpt-agent/"
+    },
+    {
+      "name": "The Next Web",
+      "url": "https://thenextweb.com/news/openai-chatgpt-work-agent-launch"
+    }
+  ],
+  "caption": "ChatGPT agent mode is gone. OpenAI's help page now points to ChatGPT Work.\nWork connects to your apps, makes slides and sheets, and runs tasks on a schedule.\nThe full step-by-step guide with 4 prompts is on neurafeedai.com.\n\nDid you use agent mode before it disappeared?\n\nFollow @neurafeed.ai for daily AI news.\n\nSource: OpenAI Help Center · Photo: OpenAI",
+  "threads_text": "ChatGPT agent mode is gone, and OpenAI's own help page now sends you to ChatGPT Work instead. Work can run for hours, use your apps and repeat tasks on a schedule, but it still stops at sign-ins and payments. Have you actually handed a real task to it yet?",
+  "slides": [
+    {
+      "kind": "cover",
+      "headline": "ChatGPT *agent mode* is gone. Here is how to use what replaced it",
+      "image": {
+        "url": "https://images.ctfassets.net/kftzwdyauwt9/2T3eFCXl7i3DxCl3E7jXiC/95e52f4f44f85827a8844cc5051cd4e1/OAI_ChatGPTWork_PressBlog_DesktopPicker-Work_16x9_260708.png?w=1920&q=90",
+        "credit": "OpenAI",
+        "fallback_urls": [
+          "https://images.ctfassets.net/kftzwdyauwt9/6wfXqEBNT0QiATjSpde6f4/fabc58fe0784ec397ec34b9e570e1700/OAI_ChatGPTWork_ProductBlog_OpenGraph_16x9_1200x630.png?w=1600&h=900&fit=fill"
+        ]
+      },
+      "badges": [
+        {
+          "url": "assets/logos/openai.png",
+          "fit": "contain"
+        }
+      ]
+    },
+    {
+      "kind": "card",
+      "heading": "1. Open *Work*",
+      "paras": [
+        "In the new desktop app, pick Work in the menu, above Codex, Scheduled and Sites.",
+        "Agent mode and /agent no longer exist. OpenAI's help page points here."
+      ],
+      "image": {
+        "url": "https://images.ctfassets.net/kftzwdyauwt9/3zuG1U7vovcdCnrvHKD29K/00129a9e8d57a02da54c9e9e57d9f87a/OAI_ChatGPTWork_PressBlog_WebMobilePicker_16x9_260708.png?w=1920&q=90",
+        "credit": "OpenAI",
+        "fallback_urls": [
+          "https://images.ctfassets.net/kftzwdyauwt9/2T3eFCXl7i3DxCl3E7jXiC/95e52f4f44f85827a8844cc5051cd4e1/OAI_ChatGPTWork_PressBlog_DesktopPicker-Work_16x9_260708.png?w=1920&q=90"
+        ],
+        "fit": "contain"
+      }
+    },
+    {
+      "kind": "card",
+      "heading": "2. Connect your *apps*",
+      "paras": [
+        "Add Gmail, Drive, Slack or Outlook from the plugins directory.",
+        "Type @ plus an app's name to pull it into the task."
+      ],
+      "image": {
+        "url": "https://images.ctfassets.net/kftzwdyauwt9/3340Q2XYfbsirvvYoKTrMY/12887973ea8709d9dd2a25c0d11d0abe/OAI_ChatGPTWork_PressBlog_PluginDirectory_16x9_260708.png?w=1920&q=90",
+        "credit": "OpenAI",
+        "fallback_urls": [
+          "https://images.ctfassets.net/kftzwdyauwt9/3zuG1U7vovcdCnrvHKD29K/00129a9e8d57a02da54c9e9e57d9f87a/OAI_ChatGPTWork_PressBlog_WebMobilePicker_16x9_260708.png?w=1920&q=90"
+        ],
+        "fit": "contain"
+      }
+    },
+    {
+      "kind": "card",
+      "heading": "3. Ask for the *finished file*",
+      "paras": [
+        "Describe the goal, your limits and the result you want.",
+        "Work can build slides, sheets and docs, and it asks before anything hard to undo."
+      ],
+      "image": {
+        "url": "https://images.ctfassets.net/kftzwdyauwt9/3MIh1eHZlPjuw1fWoMA76X/cd0c40136803d49299d61eb48944314b/OAI_ChatGPTWork_PressBlog_WebArtifact_16x9_260708.png?w=1920&q=90",
+        "credit": "OpenAI",
+        "fallback_urls": [
+          "https://images.ctfassets.net/kftzwdyauwt9/2q1hcq6tWZ7FawSYE5CP9J/c71384d63f82b6aec870dc768f7e3a46/OAI_ChatGPTWork_PressBlog_DesktopArtifact_16x9_260708.png?w=1920&q=90"
+        ],
+        "fit": "contain"
+      }
+    },
+    {
+      "kind": "card",
+      "heading": "4. Put it on a *schedule*",
+      "paras": [
+        "Tasks can run once, on a schedule or when something changes.",
+        "It still cannot sign in to sites or pay for you."
+      ],
+      "image": {
+        "url": "https://images.ctfassets.net/kftzwdyauwt9/1GM4e0XmVFo6k9DZTN0k3x/6dceac33a28359ff9cbbe2b2b1f4a0d6/OAI_ChatGPTWork_PressBlog_Scheduled_16x9_260708.png?w=1920&q=90",
+        "credit": "OpenAI",
+        "fallback_urls": [
+          "https://images.ctfassets.net/kftzwdyauwt9/2q1hcq6tWZ7FawSYE5CP9J/c71384d63f82b6aec870dc768f7e3a46/OAI_ChatGPTWork_PressBlog_DesktopArtifact_16x9_260708.png?w=1920&q=90"
+        ],
+        "fit": "contain"
+      }
+    },
+    {
+      "kind": "cta",
+      "hook": "Follow for guides that keep up when AI apps move your favorite buttons."
+    }
+  ],
+  "site_article": {
+    "kind": "guide",
+    "headline": "ChatGPT agent mode is gone: how to use ChatGPT Work instead",
+    "dek": "Agent mode and the /agent command no longer exist. Here is what replaced them, how to start a task in ChatGPT Work and what it still cannot do.",
+    "summary": "OpenAI's help page for ChatGPT agent now says the feature is no longer available and points to ChatGPT Work. Work connects to your apps, builds slides, sheets and documents, and can run tasks on a schedule, but its cloud browser cannot sign in or pay.",
+    "seo_title": "ChatGPT agent mode is gone: how to use ChatGPT Work instead",
+    "seo_description": "ChatGPT agent mode no longer exists. How to use ChatGPT Work instead: open it, connect apps, run and schedule tasks, 4 prompts, and what it still cannot do.",
+    "answer_summary": "ChatGPT agent mode was retired in 2026 and OpenAI now points users to ChatGPT Work. Open Work from the menu in the ChatGPT desktop app (or on the web on eligible paid plans), connect your apps and describe the result you want.",
+    "tags": [
+      "ChatGPT",
+      "ChatGPT Work",
+      "OpenAI",
+      "AI agents",
+      "Guides"
+    ],
+    "hero_alt": "Screenshot of the ChatGPT desktop app menu with Work selected above Codex, Scheduled and Sites.",
+    "paragraphs": [
+      {
+        "kind": "fact",
+        "text": "If you are looking for ChatGPT agent mode, you will not find it anymore. OpenAI's help page for ChatGPT agent now says the feature is no longer available, and it sends people to ChatGPT Work for long, multi-step tasks and finished files, and to the cloud browser inside Work for tasks on websites. This guide shows what replaced agent mode and how to use ChatGPT Work for the same jobs.",
+        "sources": [
+          0
+        ]
+      },
+      {
+        "kind": "fact",
+        "text": "Agent mode arrived in July 2025. You picked it from the tools menu or typed /agent in the message box, and ChatGPT worked on its own virtual computer with a visual browser, a text browser and a terminal. It could make editable slides and spreadsheets, asked before purchases and was trained to refuse high-risk tasks such as bank transfers. Plus and Business users got 40 agent messages a month and Pro users got 400, according to the old help article.",
+        "sources": [
+          0,
+          5
+        ]
+      },
+      {
+        "kind": "fact",
+        "text": "OpenAI never posted a single removal date. On August 8, 2026, a user on the OpenAI Community forum reported that agent mode was gone and that users were told to use Work instead, with no advance notice. An OpenAI support account replied on September 7 and apologized that the transition disrupted the user's workflow.",
+        "sources": [
+          4
+        ]
+      },
+      {
+        "kind": "heading",
+        "text": "What ChatGPT Work is"
+      },
+      {
+        "kind": "fact",
+        "text": "OpenAI launched ChatGPT Work on July 9, 2026. The company describes it as an agent that acts across your apps and files, works on a project for hours and turns a goal into finished work. It can create and edit slides, spreadsheets and documents, open Google Workspace and Microsoft 365 files, and run tasks on a schedule. On the desktop app it can also use a built-in browser and, with Computer Use, click, type and move files in the background.",
+        "sources": [
+          1
+        ]
+      },
+      {
+        "kind": "fact",
+        "text": "Work connects to other services through plugins, including Slack, Microsoft Teams, Google Drive, SharePoint, email, calendars, CRMs and project trackers. VentureBeat reported that it runs on a persistent cloud virtual machine and can accept, decline or reschedule calendar events through those connections.",
+        "sources": [
+          1,
+          3
+        ]
+      },
+      {
+        "kind": "fact",
+        "text": "Plans matter. OpenAI said Work reaches Pro, Enterprise and Edu first on the web and mobile, followed by Plus and Business. In the desktop app for Mac and Windows, Chat, Work and Codex are listed for every plan, including Free. The cloud browser is limited to paid plans other than Free and Go, in supported regions, and OpenAI says Work is still rolling out gradually to eligible accounts.",
+        "sources": [
+          1,
+          2
+        ]
+      },
+      {
+        "kind": "heading",
+        "text": "How to use ChatGPT Work, step by step"
+      },
+      {
+        "kind": "step",
+        "title": "1. Open Work",
+        "text": "In the new ChatGPT desktop app, select Work in the app menu. It sits above Codex, Scheduled and Sites. On the web and in the mobile apps, Work appears for eligible paid plans. On mobile you can start a task, check progress and review drafts, then pick it up again on the web."
+      },
+      {
+        "kind": "step",
+        "title": "2. Connect the apps you need",
+        "text": "Open the plugins directory and add the services the task touches, such as Gmail, Google Drive, Outlook or Slack. ChatGPT may also suggest a plugin in the middle of a chat. To pull in context from a connected app, type @ followed by the app's name in your message."
+      },
+      {
+        "kind": "step",
+        "title": "3. Describe the outcome, not the clicks",
+        "text": "OpenAI's cloud browser guide asks for three things: the website, item or service; your constraints; and the result you want. A task like \"find a table for four near Union Square on Friday at 7 p.m. under $60 a person\" works better than \"search restaurants\"."
+      },
+      {
+        "kind": "step",
+        "title": "4. Answer its questions and approve big steps",
+        "text": "Work stops and asks before actions that are hard to undo or that create a financial, legal or account commitment. Before you confirm, check the site, the recipient or item, any price or account change and the exact action it proposes. You decide what it can reach and when it needs approval."
+      },
+      {
+        "kind": "step",
+        "title": "5. Review the result and where it came from",
+        "text": "When the task ends, read the output and the source pages before you rely on it. OpenAI notes that the last screenshot can sometimes come back blank even when the task finished."
+      },
+      {
+        "kind": "step",
+        "title": "6. Schedule it if it repeats",
+        "text": "Scheduled tasks can run once, on a schedule, or when something changes. Use them for things like a weekly summary of a shared folder or a daily check of a price or a status page."
+      },
+      {
+        "kind": "heading",
+        "text": "Prompts to copy"
+      },
+      {
+        "kind": "prompt",
+        "title": "Prompt 1: Book-ready restaurant options",
+        "text": "Find three restaurants near [neighborhood] that have a table for [number] people on [day] at [time]. Keep it under [budget] per person and skip anything with fewer than 4 stars. Do not book anything. Give me the name, the open time slot and the link for each."
+      },
+      {
+        "kind": "prompt",
+        "title": "Prompt 2: Track a package from your email",
+        "text": "Look in my connected email for the shipping confirmation from [store]. Open the carrier's public tracking page and tell me where the package is and when it should arrive. If tracking needs a sign-in, stop and tell me."
+      },
+      {
+        "kind": "prompt",
+        "title": "Prompt 3: Turn files into a deck",
+        "text": "Use the files in @Google Drive folder [folder name] and the last two weeks of messages in @Slack channel [channel]. Make a 6-slide summary for [audience]: the goal, progress, numbers, risks and next steps. List the file each number came from."
+      },
+      {
+        "kind": "prompt",
+        "title": "Prompt 4: A weekly check-in",
+        "text": "Every Monday at 8 a.m., check [page or folder] for changes since last week and send me a five-line summary. If nothing changed, say so in one line."
+      },
+      {
+        "kind": "heading",
+        "text": "What it still cannot do"
+      },
+      {
+        "kind": "fact",
+        "text": "The cloud browser cannot sign in to sites, take passwords, use autofill or password managers, or complete payments at launch, and a task that needs any of these stops. CAPTCHAs and sites that block automated access can also stop it, and some sites are blocked for safety or compliance reasons, so you may need to finish the last step yourself. On iPhone, a task can look stuck after you approve an action; reopening the conversation or continuing on the web fixes it.",
+        "sources": [
+          2
+        ]
+      },
+      {
+        "kind": "fact",
+        "text": "Usage follows the same model as Codex: there is no fixed message count, and complex tasks use more of your plan's allowance than simple ones. That is a change from agent mode's flat 40 or 400 messages a month.",
+        "sources": [
+          1,
+          0
+        ]
+      },
+      {
+        "kind": "tip",
+        "text": "Never paste passwords or card numbers into the chat. If a connected app can do the job directly, OpenAI recommends using the app instead of the browser, and it suggests stopping a task the moment it opens the wrong site."
+      },
+      {
+        "kind": "fact",
+        "text": "Work also reads far more of your data than a normal chat does, which VentureBeat flagged as a privacy trade-off. You can remove saved browser data from the cloud browser in ChatGPT settings.",
+        "sources": [
+          3,
+          2
+        ]
+      },
+      {
+        "kind": "analysis",
+        "text": "Agent mode was a single tool you switched on for one task. Work is closer to a place you hand projects to: it keeps context across steps, connects to the apps you already use and can repeat a job on a schedule. The catch is that it still stops at sign-ins and payments, so the most useful tasks today are research, comparisons, drafts and files you review before anything goes out."
+      }
+    ]
+  }
+}
