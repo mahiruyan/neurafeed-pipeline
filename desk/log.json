@@ -1,77 +1,5 @@
 [
   {
-    "run_at": "2026-11-16T17:02:57.112Z",
-    "summary": "Monday 12:00 New York run: queued 1 site-only guide (Perplexity vs ChatGPT for research). No open links or requests; both Instagram carousel slots and all 4 site-only news slots for today were already used; no Reel video with a usable X or company URL passed the filter.",
-    "considered": [
-      {
-        "story": "Daily guide: Perplexity vs ChatGPT for research (guides/plan.md Tier 2, first uncovered line after the Atlas lines)",
-        "source": "https://perplexity.ai/help-center/en/articles/10352901-what-is-perplexity-pro",
-        "decision": "queued",
-        "job_id": "2026-11-16-perplexity-vs-chatgpt-guide",
-        "priority": 2
-      },
-      {
-        "story": "Guide plan line: ChatGPT Atlas vs Comet",
-        "decision": "skipped",
-        "reason": "OpenAI shut Atlas down, so the comparison would mislead readers."
-      },
-      {
-        "story": "Anthropic IPO guide: price range and Nasdaq debut on November 19 (CNBC)",
-        "source": "https://www.cnbc.com/2026/11/16/anthropic-ipo-date-price-range.html",
-        "decision": "covered",
-        "reason": "Price range, retail share and debut date already posted as 2026-11-12-anthropic-ipo-retail-20-percent; nothing new until pricing or the first trade."
-      },
-      {
-        "story": "Scott Bessent urges Nvidia to hire an outside CEO (Bloomberg)",
-        "source": "https://www.bloomberg.com/news/articles/2026-11-15/bessent-says-nvidia-needs-dramatic-shakeup-after-huang-ouster",
-        "decision": "skipped",
-        "reason": "Another turn of the Huang leadership story already covered twice in the last two days, and both carousel slots are used."
-      },
-      {
-        "story": "Nvidia appealed to Taiwan after a manager was charged over chip smuggling (Bloomberg)",
-        "source": "https://www.bloomberg.com/news/articles/2026-11-15/nvidia-sought-taipei-s-help-over-employee-s-chip-smuggling-case",
-        "decision": "skipped",
-        "reason": "Crime story with real interest, but both Instagram carousel slots for today are used and the Bloomberg piece could not be read in full."
-      },
-      {
-        "story": "Lutnick pushed to narrow chip curbs affecting a Cantor Fitzgerald client (NYT)",
-        "source": "https://www.nytimes.com/2026/11/15/us/politics/lutnick-pushed-to-weaken-chip-rules-that-overlap-with-his-family-business.html",
-        "decision": "skipped",
-        "reason": "Political chip-policy story; carousel slots are full and the NYT article could not be opened."
-      },
-      {
-        "story": "Google and Samsung AI smart glasses go on sale in December at $395",
-        "source": "https://www.pymnts.com/news/wearables/2026/google-and-samsung-target-holiday-shoppers-with-395-ai-smart-glasses/",
-        "decision": "skipped",
-        "reason": "Considered as a Reel, but only official launch footage exists and the site-only news slots are full."
-      },
-      {
-        "story": "Claude Opus 5.5 built a 12-arm robot cell in the browser (@konstantinsaifo on X)",
-        "source": "https://x.com/konstantinsaifo/status/2121097161589039470",
-        "decision": "skipped",
-        "reason": "Small developer demo; does not pass the Reels filter for a general audience."
-      },
-      {
-        "story": "Humanoid robot chasing wild boars in Warsaw",
-        "source": "https://www.euronews.com/video/2026/04/16/humanoid-robot-chases-wild-boars-in-the-polish-capital-warsaw",
-        "decision": "skipped",
-        "reason": "Viral clip from April 2026, too old to post as new."
-      },
-      {
-        "story": "Susan Dell AI dance videos",
-        "source": "https://www.ibtimes.co.uk/susan-dell-ai-dance-videos-white-house-1827771",
-        "decision": "skipped",
-        "reason": "October story about likely AI fakes of a private person; reposting them would spread the fakes."
-      },
-      {
-        "story": "Reel search: viral AI, robot and gadget clips of November 15 and 16",
-        "decision": "skipped",
-        "reason": "Found no new clip with a usable X or company video URL that passes the Which Reels travel filter; Reddit leads are still empty."
-      }
-    ],
-    "requests": []
-  },
-  {
     "run_at": "2026-11-16T19:02:08.329Z",
     "summary": "Monday 14:00 New York run: queued 1 site-only guide (How to use Napkin AI). No open links or requests; both Instagram carousel slots and all 4 site-only news slots for today were already used; no Reel video with a usable X or company URL passed the filter.",
     "considered": [
@@ -4993,6 +4921,74 @@
         "story": "Nothing teases a screenless AI device for December 8",
         "decision": "skipped",
         "reason": "A teaser with no product details yet; better on launch day."
+      }
+    ],
+    "requests": []
+  },
+  {
+    "run_at": "2026-11-23T17:05:04.285Z",
+    "summary": "Queued Jensen Huang's reinstatement as Nvidia CEO (priority 1, sensitive) and the Freepik/Magnific guide (site only). No open links or requests.",
+    "considered": [
+      {
+        "story": "Nvidia board reinstates Jensen Huang as CEO, 11 days after he resigned",
+        "source": "https://www.sec.gov/Archives/edgar/data/0001045810/000104581026000090/nov23pressrelease.htm",
+        "decision": "queued",
+        "job_id": "2026-11-23-jensen-huang-reinstated-nvidia-ceo",
+        "priority": 1,
+        "reason": "Priority 1 story of the day, queued as a carousel past the 2-carousel limit under the priority 1 exception. Marked sensitive because the foreign intelligence probe is still open."
+      },
+      {
+        "story": "Guide: How to use Freepik AI (now Magnific)",
+        "source": "https://www.magnific.com/ai/docs/your-first-ai-image",
+        "decision": "queued",
+        "job_id": "2026-11-23-how-to-use-freepik-ai-magnific-guide",
+        "priority": 2,
+        "reason": "Next open guides/plan.md line. Freepik was renamed Magnific in April 2026, so the guide uses both names."
+      },
+      {
+        "story": "Funny Reel about Huang's return",
+        "decision": "skipped",
+        "reason": "No original clip found yet on X or company posts; 4 Reels are already queued today."
+      },
+      {
+        "story": "OpenAI tests Dots personal agents on ChatGPT Plus",
+        "source": "https://www.engadget.com/2322656/openai-is-testing-dots-personal-agents-on-its-20-per-month-plus-tier/",
+        "decision": "skipped",
+        "reason": "Limited test; today's site-only slots are mostly used, so the Huang story got priority."
+      },
+      {
+        "story": "SpaceX $74B AI data centers and who pays the power bill",
+        "source": "https://fortune.com/2026/11/22/spacex-74-billion-ai-data-centers-texas-arizona-who-pays/",
+        "decision": "skipped",
+        "reason": "Day-old analysis piece; carousel slots for today are used."
+      },
+      {
+        "story": "Anthropic power from gas and coal by 2028 (Hacker News)",
+        "source": "https://betterdatacenterproject.com/2026/11/16/how-ai-is-powered-a-breakdown-of-byop-and-grid-power/",
+        "decision": "skipped",
+        "reason": "Week-old blog analysis, not a news event."
+      },
+      {
+        "story": "Dell and HPE raise AI server prices up to 45%",
+        "source": "https://www.ft.com/content/dd2a6594-6146-4ff1-ac8e-54749c1fc99f",
+        "decision": "skipped",
+        "reason": "Insider supply chain news behind a paywall; not read in full."
+      },
+      {
+        "story": "YouTube Custom Feeds with natural language",
+        "source": "https://www.engadget.com/2319492/try-using-youtube-custom-feeds-control-homepage/",
+        "decision": "skipped",
+        "reason": "Not from the last 12 hours; site-only slots used on stronger stories."
+      },
+      {
+        "story": "OpenAI chief scientist proposes shared AI limits",
+        "decision": "covered",
+        "reason": "Already queued as 2026-11-22-openai-pachocki-perplexity-limits."
+      },
+      {
+        "story": "Meta reconsiders 2030 net-zero goal",
+        "decision": "covered",
+        "reason": "Already queued as 2026-11-21-meta-rethinks-net-zero-ai-emissions."
       }
     ],
     "requests": []
