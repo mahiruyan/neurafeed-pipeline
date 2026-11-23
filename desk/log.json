@@ -5001,5 +5001,74 @@
       }
     ],
     "requests": []
+  },
+  {
+    "run_at": "2026-11-23T21:06:37.585Z",
+    "summary": "16:00 NY run: queued the day's 5th and 6th website guides (Base44, Midjourney vs Nano Banana), both site only. No open links or requests; today's 8 Instagram posts and 4 site-only news articles are already used, and no new priority 1 story was found.",
+    "considered": [
+      {
+        "story": "Guide: How to use Base44 to build an app for free",
+        "source": "https://docs.base44.com/Account-and-billing/Billing-and-plans",
+        "decision": "queued",
+        "job_id": "2026-11-23-how-to-use-base44-guide",
+        "priority": 2,
+        "reason": "Next open Tool library line in guides/plan.md. Image host could not be checked from here."
+      },
+      {
+        "story": "Guide: Midjourney vs Nano Banana, which image AI",
+        "source": "https://docs.midjourney.com/docs/plans",
+        "decision": "queued",
+        "job_id": "2026-11-23-midjourney-vs-nano-banana-guide",
+        "priority": 2,
+        "reason": "Next usable Tier 2 line (DeepSeek vs ChatGPT skipped earlier because its docs could not be read). Midjourney's Models page still says V7, so V8.2 comes from its own update posts."
+      },
+      {
+        "story": "Nvidia in talks to buy diffusion LLM startup Inception for over $500 million",
+        "source": "https://the-decoder.com/nvidia-bets-at-least-500-million-on-inceptions-diffusion-models-to-strengthen-its-open-source-nemotron-lineup/",
+        "decision": "skipped",
+        "reason": "Unconfirmed report from The Information on November 19, insider deal news, and today's 4 site-only article slots are used; better covered if the deal is announced."
+      },
+      {
+        "story": "Gemini makes looping GIFs with Omni 1.2 Flash",
+        "source": "https://support.google.com/gemini/answer/16126339",
+        "decision": "skipped",
+        "reason": "Small feature update; site-only slots for today are used."
+      },
+      {
+        "story": "OpenAI requires approval for model resellers and gateways",
+        "source": "https://www.semafor.com/article/11/20/2026/openai-tightens-grip-on-model-resellers",
+        "decision": "skipped",
+        "reason": "From November 20 and insider business news."
+      },
+      {
+        "story": "Apple builds an autonomous AI agent",
+        "source": "https://dataconomy.com/2026/11/23/apple-builds-autonomous-ai-agent-to-take-on-openai-and/",
+        "decision": "covered",
+        "reason": "Already queued as 2026-11-20-apple-mac-ai-agent-job-listing."
+      },
+      {
+        "story": "Google homepage goes AI-first",
+        "decision": "covered",
+        "reason": "Already queued as 2026-11-20-google-homepage-ai-mode-sidebar."
+      },
+      {
+        "story": "SpaceX $74 billion AI data centers and who pays for the power",
+        "source": "https://fortune.com/2026/11/22/spacex-74-billion-ai-data-centers-texas-arizona-who-pays/",
+        "decision": "skipped",
+        "reason": "Day-old analysis; carousel and site-only slots for today are used."
+      },
+      {
+        "story": "Developer fits a tiny AI language model on a floppy disk for 486 PCs",
+        "source": "https://www.tomshardware.com/tech-industry/artificial-intelligence/dev-squeezes-an-ai-language-model-onto-a-floppy-for-486dx-and-pentium-pc-stalwarts-tiny-2-1-needs-540kb-of-memory-and-speaks-via-pc-speaker-is-a-question-answering-transformer-with-367k-parameters",
+        "decision": "skipped",
+        "reason": "Fun but close to today's SNES chatbot Reel, and the 8 Instagram posts for today are used."
+      },
+      {
+        "story": "Nothing teases a screenless AI device for December 8",
+        "decision": "skipped",
+        "reason": "Teaser only; better at the December 8 launch."
+      }
+    ],
+    "requests": []
   }
 ]
