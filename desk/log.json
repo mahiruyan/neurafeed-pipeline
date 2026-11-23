@@ -1,55 +1,5 @@
 [
   {
-    "run_at": "2026-11-16T02:54:51.215Z",
-    "summary": "Sunday 22:00 New York run: nothing queued. No open links or requests; today's Instagram carousels, Reels, site-only articles and 6 guides are already done, the last posting window closes at 22:00, and no new story from the evening passed the bar. Tomorrow's guides start from 07:00.",
-    "considered": [
-      {
-        "story": "Crédit Mutuel Arkéa: about 100 million euros stolen in a 'potential AI-powered' heist (hi-Tech.ua)",
-        "source": "https://www.bleepingcomputer.com/news/security/hackers-pull-off-133-million-french-bank-heist-via-service-provider",
-        "decision": "skipped",
-        "reason": "The hack was reported around November 6, and the AI angle is speculation that the main reports do not support."
-      },
-      {
-        "story": "Sen. Patty Murray presses OpenAI on ChatGPT safeguards after a Seattle woman's death",
-        "decision": "covered",
-        "reason": "Follow-up to the lawsuit already covered as 2026-10-29-family-sues-openai-chatgpt-seizure-medication."
-      },
-      {
-        "story": "TSMC board approves up to $500 million each for Anthropic and OpenAI stakes",
-        "source": "https://focustaiwan.tw/business/202611110009",
-        "decision": "skipped",
-        "reason": "Announced November 11 and already skipped then; an evening newsletter only resurfaced it."
-      },
-      {
-        "story": "Congress wants to tighten AI chip export rules after the Nvidia spy scandal (The Verge)",
-        "source": "https://aljazeera.com/economy/2026/11/10/nvidia-spy-scandal-fuels-debate-over-chip-exports-to-china",
-        "decision": "skipped",
-        "reason": "Week-old follow-up in the Nvidia saga, which already has many jobs; no new bill text or vote."
-      },
-      {
-        "story": "Anthropic IPO puts heat on OpenAI (The Economist), Asian investors chase Anthropic shares (Nikkei)",
-        "decision": "covered",
-        "reason": "Anthropic IPO is already covered; better to cover the November 19 listing itself."
-      },
-      {
-        "story": "Jensen Huang may return to Nvidia, 'Stand With Jensen' movement (Forbes, The Verge, Gizmodo)",
-        "decision": "covered",
-        "reason": "Already queued as 2026-11-15-jensen-huang-weighs-nvidia-return and 2026-11-15-musk-petition-reinstate-jensen-huang."
-      },
-      {
-        "story": "ChatGPT can now generate and edit GIFs (Engadget)",
-        "decision": "skipped",
-        "reason": "Small feature; the day's Instagram and site-only counts are already full and the next run can reconsider it."
-      },
-      {
-        "story": "Reel search: viral AI clips of the evening of November 15",
-        "decision": "skipped",
-        "reason": "Earlier runs today searched this; nothing new passed the Reels filter."
-      }
-    ],
-    "requests": []
-  },
-  {
     "run_at": "2026-11-16T05:03:46.158Z",
     "summary": "Monday 00:00 New York run: queued 2 site-only articles (Apple and OpenEvidence health AI study, Alibaba Qwen4-Max launch). No open links or requests; posting windows reopen at 07:00 and guides for November 16 start from the 07:00 run; no carousel-worthy or Reel story overnight.",
     "considered": [
@@ -5012,6 +4962,56 @@
         "story": "Reel search: viral AI, robot and smart glasses videos of the last day",
         "decision": "skipped",
         "reason": "Search returned fact checks of fake videos and older clips, nothing new on X that passes the Reel filter."
+      }
+    ],
+    "requests": []
+  },
+  {
+    "run_at": "2026-11-23T05:01:59.055Z",
+    "summary": "Midnight run (00:00 New York, Nov 23): no open links or requests; queued the second and last Instagram carousel for Nov 23, a strange-event story about a 9-year-old in Italy whose AI-generated photo of a python in a toilet set off a 48-hour search. No new priority 1 story or Reel video passing the filter was found; guides for Nov 23 start after 07:00.",
+    "considered": [
+      {
+        "story": "A 9-year-old in Castelfidardo, Italy, faked a python in a toilet with an AI app and set off a 48-hour search by firefighters and Carabinieri Forestali",
+        "source": "https://www.dexerto.com/entertainment/9-year-old-sparks-48-hour-snake-hunt-after-fooling-firefighters-with-ai-python-in-toilet-3428641/",
+        "decision": "queued",
+        "job_id": "2026-11-23-boy-ai-python-toilet-48-hour-hunt",
+        "priority": 2,
+        "reason": "A strange AI story anyone would send to a friend, still spreading today (Times of India). Dexerto and AGI read. Event was Nov 12, so timely false. Only the three images on Dexerto could be used (Wikimedia was unreachable from this run), so it has 2 inner cards; one card shows a Pexels stock photo labeled as such."
+      },
+      {
+        "story": "India Today: an 'AI godfather' says Dario Amodei has a medieval mindset and left OpenAI when things went out of control",
+        "decision": "skipped",
+        "reason": "The article could not be opened (link too long for the fetcher) and no other source naming who said it was found, so the quote could not be confirmed."
+      },
+      {
+        "story": "GPT-6.2 Astra finds zero-day flaws enabling mobile OS bypass (CyberSecurityNews)",
+        "decision": "skipped",
+        "reason": "Astra's zero-day abilities were reported at launch; nothing new confirmed by a second source in this run."
+      },
+      {
+        "story": "OpenAI chief scientist calls for common AI development limits (India Today, Stocktwits, BW Businessworld)",
+        "decision": "covered",
+        "reason": "Already queued as 2026-11-22-openai-pachocki-perplexity-limits."
+      },
+      {
+        "story": "Anthropic IPO aftermath and AI stock slide (The Hindu, StoneX, Mitrade)",
+        "decision": "covered",
+        "reason": "Already covered as 2026-11-22-anthropic-stock-nears-ipo-price-day-two."
+      },
+      {
+        "story": "Korea AI exam cheating follow-ups (The Korea Daily)",
+        "decision": "covered",
+        "reason": "Already queued as 2026-11-23-korea-minister-quits-ai-cheating-exam."
+      },
+      {
+        "story": "87% of Anthropic power from gas and 11% from coal in 2028 (Hacker News)",
+        "decision": "skipped",
+        "reason": "Advocacy blog estimate from November 16 with no second source."
+      },
+      {
+        "story": "Reel search: viral AI and robot videos of the last day",
+        "decision": "skipped",
+        "reason": "Nothing new and downloadable from X that passes the Reel filter was found at this hour."
       }
     ],
     "requests": []
