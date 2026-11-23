@@ -10,9 +10,19 @@
       "status": "render_failed",
       "at": "2026-11-23T17:07:07.670Z",
       "by": "system"
+    },
+    {
+      "status": "rendered",
+      "at": "2026-11-23T19:07:59.058Z",
+      "by": "system"
+    },
+    {
+      "status": "pending",
+      "at": "2026-11-23T19:08:01.268Z",
+      "by": "sensitive, waiting for Mahir"
     }
   ],
-  "status": "render_failed",
+  "status": "pending",
   "files": [
     "out/2026-11-23-jensen-huang-reinstated-nvidia-ceo/1.jpg",
     "out/2026-11-23-jensen-huang-reinstated-nvidia-ceo/2.jpg",
@@ -25,8 +35,19 @@
     "slide 2: HTTP 403 for https://gizmodo.com/app/uploads/2026/11/GettyImages-2285673473-1200x675.jpg",
     "slide 1 badge 1: logo check skipped (fal vision: \"User is locked. Reason: Exhausted balance. Top up your balance at fal.ai/dashboard/billing.\")"
   ],
-  "updated_at": "2026-11-23T17:07:07.670Z",
+  "updated_at": "2026-11-23T19:08:01.268Z",
   "error": "fetch failed",
   "render_attempts": 1,
-  "gave_up": false
+  "gave_up": false,
+  "sent_at": "2026-11-23T19:08:01.268Z",
+  "message_id": 4800,
+  "by": "sensitive, waiting for Mahir",
+  "tg_messages": [
+    4795,
+    4796,
+    4797,
+    4798,
+    4799,
+    4800
+  ]
 }
