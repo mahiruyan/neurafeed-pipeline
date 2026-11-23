@@ -1,70 +1,5 @@
 [
   {
-    "run_at": "2026-11-16T21:12:10.387Z",
-    "summary": "Monday 16:00 New York run: queued California's lawsuit against OpenAI over the Hugging Face hack (priority 1, sensitive, for Mahir's approval) and the 5th and 6th site-only guides of the day (n8n vs Zapier, How to use Character AI). No open links or requests; no Reel video with a usable X or company URL passed the filter.",
-    "considered": [
-      {
-        "story": "California AG Rob Bonta sues OpenAI over AI agents that escaped a test and hacked Hugging Face",
-        "source": "https://calmatters.org/economy/technology/2026/11/california-is-suing-openai-over-hugging-face-hack/",
-        "decision": "queued",
-        "job_id": "2026-11-16-california-sues-openai-rogue-agents",
-        "priority": 1,
-        "reason": "Major OpenAI story and a lawsuit, so sensitive and waits for Mahir. Both carousel slots were already used today, but priority 1 stories must be queued; Mahir can reject it to keep the day at 2 carousels."
-      },
-      {
-        "story": "Guide: n8n vs Zapier (guides/plan.md Tier 2, next line after Perplexity vs ChatGPT)",
-        "source": "https://zapier.com/blog/n8n-vs-zapier/",
-        "decision": "queued",
-        "job_id": "2026-11-16-n8n-vs-zapier-guide",
-        "priority": 2
-      },
-      {
-        "story": "Guide: How to use Character AI (guides/plan.md tool library, next line after Napkin AI)",
-        "source": "https://blog.character.ai/an-update-on-character-ai/",
-        "decision": "queued",
-        "job_id": "2026-11-16-how-to-use-character-ai-guide",
-        "priority": 2,
-        "reason": "Written around the Chapter 11 sale, including how to export chats before it closes."
-      },
-      {
-        "story": "Apple tests daily usage limits for complex Siri AI requests (The Verge)",
-        "source": "https://www.theverge.com/tech/1034581/apple-intelligence-siri-ai-daily-usage-limits-icloud-subscription",
-        "decision": "skipped",
-        "reason": "A good everyday story, but both carousel slots and all 4 site-only news slots for today are used; worth a post tomorrow if it is still fresh."
-      },
-      {
-        "story": "Trump says Jensen Huang's affair with an alleged Chinese spy did not threaten national security (TechCrunch)",
-        "source": "https://techcrunch.com/2026/11/16/trump-says-ex-nvidia-ceo-jensen-huangs-affair-with-an-alleged-chinese-spy-did-not-threaten-national-security/",
-        "decision": "skipped",
-        "reason": "The Huang saga already has many posts this week and the carousel slots are full."
-      },
-      {
-        "story": "US moves to close the remote access loophole for AI chips to China (Ars Technica, Washington Post)",
-        "source": "https://arstechnica.com/tech-policy/2026/11/us-moves-to-cut-chinas-remote-access-to-ai-chips/",
-        "decision": "skipped",
-        "reason": "Policy news mostly insiders follow, and the site-only cap is reached."
-      },
-      {
-        "story": "FBI says the Artex AI open-source hacking tool was used to breach networks (TechCrunch)",
-        "source": "https://techcrunch.com/2026/11/16/fbi-says-artex-ai-open-source-hacking-tool-used-to-breach-networks-in-under-three-hours/",
-        "decision": "skipped",
-        "reason": "Security news with little consumer angle; site-only cap reached."
-      },
-      {
-        "story": "OpenAI tool to detect AI-made child abuse material for tiplines (The Verge)",
-        "source": "https://www.theverge.com/policy/1034527/openai-csam-classifier",
-        "decision": "skipped",
-        "reason": "Important but not a fit for the Instagram mix, and the site-only cap is reached."
-      },
-      {
-        "story": "Reel search: viral AI and robot videos of the day",
-        "decision": "skipped",
-        "reason": "Found no fresh clip with an X or company video URL that passes the Reels filter (only a fake AI Tim Cook glasses clip and older robot videos)."
-      }
-    ],
-    "requests": []
-  },
-  {
     "run_at": "2026-11-16T23:06:08.453Z",
     "summary": "Monday 18:00 New York run: nothing queued. No open links or requests; today's 6 guides, 4 site-only news slots and carousel slots (3 carousels incl. the priority 1 California lawsuit) are already used; no fresh Reel video with an X or company URL passed the filter.",
     "considered": [
@@ -5067,6 +5002,56 @@
         "story": "Nothing teases a screenless AI device for December 8",
         "decision": "skipped",
         "reason": "Teaser only; better at the December 8 launch."
+      }
+    ],
+    "requests": []
+  },
+  {
+    "run_at": "2026-11-23T23:01:28.775Z",
+    "summary": "18:00 NY run: queued Oregon and Virginia suing SpaceX over Grok sexual deepfakes (priority 1, sensitive, goes to Mahir for approval). No open links or requests; today's other slots and all 6 guides were already filled.",
+    "considered": [
+      {
+        "story": "Oregon and Virginia sue SpaceX over Grok sexual deepfakes, including images of children",
+        "source": "https://therecord.media/oregon-virginia-sue-spacex-over-grok-csam-ncii",
+        "decision": "queued",
+        "job_id": "2026-11-23-states-sue-spacex-grok-deepfakes",
+        "priority": 1,
+        "reason": "Major xAI/Musk lawsuit story, confirmed by The Record and AP/Reuters via Al Jazeera; sensitive, so Mahir approves. CNBC and Ars pages could not be read, and today's Instagram cap may already be reached."
+      },
+      {
+        "story": "Anthropic launches Claude Ship to review, fix and approve pull requests",
+        "decision": "skipped",
+        "reason": "Developer tool news that mostly insiders follow, and today's 4 site-only articles are already used; only aggregator coverage seen so far."
+      },
+      {
+        "story": "Cisco and OpenAI launch Shirudo open-source security project",
+        "decision": "skipped",
+        "reason": "Enterprise security news for insiders; site-only slots for today are full."
+      },
+      {
+        "story": "Gemini 4 Carbon comes to AI Pro subscribers in Google Antigravity",
+        "decision": "skipped",
+        "reason": "Developer tool rollout, insider news, and site-only slots are full."
+      },
+      {
+        "story": "Futurism: Dario Amodei suggested addictive video games could keep people calm after AI takes jobs",
+        "decision": "skipped",
+        "reason": "Only one outlet seen and the original remark was not found in this run; Amodei was already covered today in the LeCun carousel."
+      },
+      {
+        "story": "Megaspeed appears headed for a US blacklist (TechCrunch)",
+        "decision": "skipped",
+        "reason": "Follow-up to the Huang story that has been covered many times since Nov 15."
+      },
+      {
+        "story": "Nvidia employees greet Jensen Huang as he returns to HQ",
+        "decision": "covered",
+        "reason": "Already queued as 2026-11-23-jensen-huang-reinstated-nvidia-ceo."
+      },
+      {
+        "story": "Reuters: first US federal appeals court AI disclosure rule",
+        "decision": "skipped",
+        "reason": "Narrow legal procedure story with little reach for our audience."
       }
     ],
     "requests": []
