@@ -1,134 +1,5 @@
 [
   {
-    "run_at": "2026-11-16T13:11:05.603Z",
-    "summary": "Monday 08:00 New York run: queued 1 site-only guide (Claude Code vs Codex). Both Instagram carousel slots and all 4 site-only news slots for today were already used, no open links or requests, and no Reel video passed the filter.",
-    "considered": [
-      {
-        "story": "Guide: Claude Code vs Codex (guides/plan.md Tier 2)",
-        "source": "https://www.morphllm.com/comparisons/claude-code-vs-codex",
-        "decision": "queued",
-        "job_id": "2026-11-16-claude-code-vs-codex-guide",
-        "priority": 2,
-        "reason": "First guide of the New York day. Tier 1 lines for ChatGPT Atlas and Sora were passed over because OpenAI has shut both products down."
-      },
-      {
-        "story": "Anthropic IPO prices this week, Nasdaq debut expected November 19",
-        "source": "https://www.tradingkey.com/analysis/stocks/us-stocks/262306494-anthropic-ipo-claude-developer-set-debut-nasdaq-tradingkey",
-        "decision": "skipped",
-        "reason": "Already covered by 2026-11-12-anthropic-ipo-retail-20-percent; the real news is the pricing and first trade later this week, which deserves its own post then."
-      },
-      {
-        "story": "Claude downloads surge as ChatGPT installs fall 21% (Times of India, Forbes Australia)",
-        "source": "https://www.forbes.com.au/news/innovation/chatgpt-the-fastest-growing-app-ever-is-losing-downloads-as-claude-surges/",
-        "decision": "skipped",
-        "reason": "Good everyone story, but today's 2 Instagram carousels and 4 site-only slots are already full; worth a look tomorrow if still fresh."
-      },
-      {
-        "story": "Jensen Huang discusses a comeback as Nvidia CEO (FT, Reuters)",
-        "source": "https://www.reuters.com/world/china/jensen-huang-discusses-comeback-nvidia-ceo-with-allies-ft-reports-2026-11-15/",
-        "decision": "covered",
-        "reason": "Already queued as 2026-11-15-jensen-huang-weighs-nvidia-return."
-      },
-      {
-        "story": "Sky News anchor Yalda Hakim says a viral video of her is an AI fake",
-        "source": "https://propakistani.pk/2026/11/16/yalda-hakim-viral-sky-news-video-ai-fake/",
-        "decision": "skipped",
-        "reason": "Not a Reel we should make: reposting the deepfake would spread it, and the only source read is a small outlet."
-      },
-      {
-        "story": "Tuesday Labs Voxel, a $20,000 robot butler shipping in 2028",
-        "source": "https://www.humanoidsdaily.com/news/tuesday-labs-voxel-home-robot-reservations",
-        "decision": "skipped",
-        "reason": "Considered as a Reel, but the clip is an October 20 launch video I could not open to check, and it is a prototype with no surprising shot described."
-      },
-      {
-        "story": "Unitree H2-X kung fu bodyguard robot video",
-        "source": "https://x.com/UnitreeRobotics/status/2112819774573179175",
-        "decision": "covered",
-        "reason": "Already made as 2026-10-21-unitree-h2-x-kung-fu-guardian-reel."
-      },
-      {
-        "story": "Alibaba unveils Qwen flagship model (Bloomberg)",
-        "decision": "covered",
-        "reason": "Already queued as 2026-11-16-alibaba-qwen4-max."
-      },
-      {
-        "story": "Apple launches 200,000 person study of health AI (TechCrunch, Fierce Healthcare)",
-        "decision": "covered",
-        "reason": "Already queued as 2026-11-16-apple-health-ai-study-200000."
-      },
-      {
-        "story": "South Korea to check all exam takers' glasses after AI cheating scandal (CNN)",
-        "source": "https://edition.cnn.com/2026/11/16/asia/south-korea-ai-glasses-cheating-intl-hnk",
-        "decision": "skipped",
-        "reason": "Follow-up to the Korea AI glasses story covered on November 15; no new angle strong enough for a third post."
-      }
-    ],
-    "requests": []
-  },
-  {
-    "run_at": "2026-11-16T15:04:15.240Z",
-    "summary": "Monday 10:00 New York run: queued 1 site-only guide (Gemini CLI: how to install it). No open links or requests; both Instagram carousel slots and all 4 site-only news slots for today were already used; no Reel video passed the filter.",
-    "considered": [
-      {
-        "story": "Guide: Gemini CLI how to install (guides/plan.md tool library)",
-        "source": "https://www.geminicli.com/docs/get-started/installation",
-        "decision": "queued",
-        "job_id": "2026-11-16-gemini-cli-how-to-install-guide",
-        "priority": 2
-      },
-      {
-        "story": "Guide: How to use Grok Imagine (next line in the plan)",
-        "decision": "skipped",
-        "reason": "No official xAI help page for it turned up, only third-party tutorials, and xAI cut most of the Grok Imagine team today; took the next line instead."
-      },
-      {
-        "story": "Zoox robotaxis now bookable on the Uber app in Las Vegas",
-        "source": "https://investor.uber.com/news-events/news/press-release-details/2026/Zoox-Is-Now-Available-on-Uber-in-Las-Vegas/default.aspx",
-        "decision": "skipped",
-        "reason": "Would make a good Reel, but no video from Zoox, Uber or an X post could be found; the carousel and site-only slots are full."
-      },
-      {
-        "story": "UBTech U1 companion humanoid presales pass 3,000 units in China",
-        "source": "https://humanoid.guide/ubtech-opens-u1-companion-humanoid-presales-with-3000-sold/",
-        "decision": "skipped",
-        "reason": "No clip from UBTech or X found to make a Reel, and Chinese presales mean little to a US audience."
-      },
-      {
-        "story": "Claude Meetings beta brings Claude into Google Meet calls",
-        "decision": "covered",
-        "reason": "Already covered with Anthropic's Claude Sheets, Meetings and Whiteboards launch last week."
-      },
-      {
-        "story": "Kuo: OpenAI and Anthropic to buy or lease about 26 million Google TPUs in 2028 and 2029",
-        "source": "https://www.gurufocus.com/news/9200971/openai-and-anthropic-orders-extend-google-tpu-visibility-to-2029",
-        "decision": "skipped",
-        "reason": "An analyst estimate that mostly insiders follow, and today's site-only news cap is already reached."
-      },
-      {
-        "story": "Google LEAP with Gemini 4 Argon formalizes the Birkhoff conjecture",
-        "decision": "skipped",
-        "reason": "A niche math result, and today's site-only news cap is already reached."
-      },
-      {
-        "story": "Hyundai's AI-REAL shopping broadcast with no human hosts",
-        "decision": "skipped",
-        "reason": "Only seen in a roundup; no primary source, and today's carousel slots are full."
-      },
-      {
-        "story": "Anthropic IPO prices November 18, Nasdaq debut November 19",
-        "decision": "covered",
-        "reason": "Already covered; the debut itself is the story to post on Thursday."
-      },
-      {
-        "story": "Reel search: viral AI, robot and gadget clips of November 15 and 16",
-        "decision": "skipped",
-        "reason": "Found no clip with a usable X or company video URL that passes the Which Reels travel filter."
-      }
-    ],
-    "requests": []
-  },
-  {
     "run_at": "2026-11-16T17:02:57.112Z",
     "summary": "Monday 12:00 New York run: queued 1 site-only guide (Perplexity vs ChatGPT for research). No open links or requests; both Instagram carousel slots and all 4 site-only news slots for today were already used; no Reel video with a usable X or company URL passed the filter.",
     "considered": [
@@ -5030,6 +4901,98 @@
         "story": "Reel videos for today",
         "decision": "skipped",
         "reason": "No X or company video from today's stories could be opened and checked from here; 2 Reels (Neuralink GTA VI, Waymo flood) are already queued for today."
+      }
+    ],
+    "requests": []
+  },
+  {
+    "run_at": "2026-11-23T15:17:46.929Z",
+    "summary": "Queued 1 news carousel (Wells Fargo AI agent terms), 2 Reels (Tesla Reality View, AI chatbot on a Super Nintendo), 1 site-only article (Binding of Isaac AI music) and 1 site-only guide (Veo for free in Flow). No open links or requests.",
+    "considered": [
+      {
+        "story": "Wells Fargo says customers use AI agents at their own risk from November 24",
+        "source": "https://www.americanbanker.com/news/wells-fargo-wants-customers-to-prove-theyve-revoked-ai-agents",
+        "decision": "queued",
+        "job_id": "2026-11-23-wells-fargo-ai-agents-own-risk",
+        "priority": 2
+      },
+      {
+        "story": "Tesla FSD v15 Reality View draws the street like a video game",
+        "source": "https://www.teslarati.com/tesla-full-self-driving-v15-first-hand-look-at-reality-view-new-features/",
+        "decision": "queued",
+        "job_id": "2026-11-23-tesla-fsd-reality-view-reel",
+        "priority": 2
+      },
+      {
+        "story": "Tiny ChatGPT-style chatbot runs on a real Super Nintendo",
+        "source": "https://www.tomshardware.com/tech-industry/artificial-intelligence/35-year-old-snes-runs-chatgpt-accelerated-with-a-super-fx-2-chip-21-mhz-of-risc-muscle-speeds-2-2m-parameter-chatbot-replies",
+        "decision": "queued",
+        "job_id": "2026-11-23-chatgpt-style-ai-on-snes-reel",
+        "priority": 2
+      },
+      {
+        "story": "Binding of Isaac update shipped Suno AI music, pulled after backlash",
+        "source": "https://www.pcgamer.com/games/roguelike/binding-of-isaac-dlc-adds-ai-music-in-gta-6-parodying-update-despite-not-having-an-ai-disclosure-steam-reviews-drop-to-overwhelmingly-negative-music-gets-pulled/",
+        "decision": "queued",
+        "job_id": "2026-11-23-binding-of-isaac-ai-music-pulled",
+        "priority": 2,
+        "reason": "Site only: the 2 Instagram carousels for today are used."
+      },
+      {
+        "story": "Guide: How to use Veo for free in Google Flow",
+        "source": "https://support.google.com/flow/answer/16353333",
+        "decision": "queued",
+        "job_id": "2026-11-23-how-to-use-veo-free-flow-guide",
+        "priority": 2,
+        "reason": "Next open plan line (Sora skipped: OpenAI shelved Sora). Angle changed because the Gemini app now needs a paid plan for video."
+      },
+      {
+        "story": "Claude-assisted Riemann hypothesis proof claim",
+        "decision": "covered",
+        "reason": "Already queued as 2026-11-20-anthropic-mathematician-riemann-proof-claude."
+      },
+      {
+        "story": "OpenAI chief scientist proposes shared AI development limits",
+        "decision": "covered",
+        "reason": "Already queued as 2026-11-22-openai-pachocki-perplexity-limits."
+      },
+      {
+        "story": "South Korea education minister resigns over AI exam cheating",
+        "decision": "covered",
+        "reason": "Already queued as 2026-11-23-korea-minister-quits-ai-cheating-exam."
+      },
+      {
+        "story": "OpenRouter drops providers after prompt leaks",
+        "decision": "covered",
+        "reason": "Already queued as 2026-11-23-openrouter-drops-providers-prompt-leaks."
+      },
+      {
+        "story": "METR warns AI R&D capabilities are outpacing safety tests",
+        "source": "https://metr.org/blog/2026-11-20-q4-2026-capability-update/",
+        "decision": "skipped",
+        "reason": "Three days old and insider-only; site slots used on stronger stories this run."
+      },
+      {
+        "story": "AI agents design the Frostbite CPU architecture",
+        "source": "https://www.tomshardware.com/tech-industry/semiconductors/ai-agents-design-an-entirely-new-cpu-architecture-from-scratch-startup-claims-frostbite-posts-4-59x-the-performance-per-watt-of-an-in-order-core-in-pre-silicon-tests",
+        "decision": "skipped",
+        "reason": "Pre-silicon simulation claim from one startup, little US consumer interest."
+      },
+      {
+        "story": "Governors ask Congress for federal frontier AI rules",
+        "source": "https://nga.org/news/press-releases/governors-call-for-ai-action",
+        "decision": "skipped",
+        "reason": "Principles only, not law; carousel slots already used."
+      },
+      {
+        "story": "Optimus robot carrying Musk's suitcases off a jet",
+        "decision": "skipped",
+        "reason": "No original X post found and no source confirms the video is real."
+      },
+      {
+        "story": "Nothing teases a screenless AI device for December 8",
+        "decision": "skipped",
+        "reason": "A teaser with no product details yet; better on launch day."
       }
     ],
     "requests": []
