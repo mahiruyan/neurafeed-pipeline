@@ -1,69 +1,5 @@
 [
   {
-    "run_at": "2026-11-16T05:03:46.158Z",
-    "summary": "Monday 00:00 New York run: queued 2 site-only articles (Apple and OpenEvidence health AI study, Alibaba Qwen4-Max launch). No open links or requests; posting windows reopen at 07:00 and guides for November 16 start from the 07:00 run; no carousel-worthy or Reel story overnight.",
-    "considered": [
-      {
-        "story": "Apple and OpenEvidence launch a Health AI study app seeking up to 200,000 US iPhone users",
-        "source": "https://www.statnews.com/2026/11/15/apple-openevidence-launch-health-chat-app-experiment-ai/",
-        "decision": "queued",
-        "job_id": "2026-11-16-apple-health-ai-study-200000",
-        "priority": 2,
-        "reason": "Apple product news, not a money, jobs, scandal or person story, so site-only; marked sensitive because it is health."
-      },
-      {
-        "story": "Alibaba launches Qwen4-Max, says task cost falls 62 percent",
-        "source": "https://shiftdelete.net/en/qwen4-max-launch",
-        "decision": "queued",
-        "job_id": "2026-11-16-alibaba-qwen4-max",
-        "priority": 2,
-        "reason": "Model and pricing news mostly insiders follow, so site-only."
-      },
-      {
-        "story": "Alibaba unveils Qwen3.8-Max (Crypto Briefing in RSS)",
-        "decision": "skipped",
-        "reason": "Qwen3.8-Max launched August 3, 2026; the RSS item is stale and the new model is Qwen4-Max."
-      },
-      {
-        "story": "OpenAI disbands robotics team after big pay package (36Kr)",
-        "decision": "covered",
-        "reason": "Already covered as 2026-11-13-openai-disbands-robotics-team."
-      },
-      {
-        "story": "ChatGPT Wallet lets dots agents shop with your card",
-        "decision": "covered",
-        "reason": "Already covered as 2026-11-13-chatgpt-wallet-agents-spend-money."
-      },
-      {
-        "story": "Gemini app rolls out on Apple CarPlay",
-        "decision": "covered",
-        "reason": "Already covered as 2026-11-12-gemini-app-apple-carplay."
-      },
-      {
-        "story": "Jensen Huang may return to Nvidia (Reuters, FT, Guardian feature)",
-        "decision": "covered",
-        "reason": "Already queued as 2026-11-15-jensen-huang-weighs-nvidia-return and 2026-11-15-musk-petition-reinstate-jensen-huang."
-      },
-      {
-        "story": "Hacker News 'Who is Hiring' postings near 12-year lows (hntrends.com)",
-        "source": "https://www.hntrends.com/2026/november.html",
-        "decision": "skipped",
-        "reason": "Could not open the page this run and no second source; worth checking in a daytime run as a jobs story."
-      },
-      {
-        "story": "Reports of AI-generated child abuse material up 8,400 percent in two years (The Guardian)",
-        "decision": "skipped",
-        "reason": "Not suitable for an Instagram carousel and not a fit for the site's AI news categories this run."
-      },
-      {
-        "story": "Kuo: OpenAI and Anthropic to buy or lease 26 million TPUs in 2028 and 2029 (FourWeekMBA)",
-        "decision": "skipped",
-        "reason": "Analyst estimate from a single small outlet, insider compute news."
-      }
-    ],
-    "requests": []
-  },
-  {
     "run_at": "2026-11-16T07:29:54.150Z",
     "summary": "Monday 02:00 New York run: queued 1 Instagram carousel (Foundation war robot startup missed payroll, sensitive so it waits for Mahir) and 1 site-only article (Apple's Siri smart glasses for 2027). No open links or requests; no Reel passed the filter overnight; guides start from the 07:00 run.",
     "considered": [
@@ -5007,6 +4943,62 @@
         "story": "87% of Anthropic power from gas and 11% from coal in 2028 (Hacker News)",
         "decision": "skipped",
         "reason": "Advocacy blog estimate from November 16 with no second source."
+      },
+      {
+        "story": "Reel search: viral AI and robot videos of the last day",
+        "decision": "skipped",
+        "reason": "Nothing new and downloadable from X that passes the Reel filter was found at this hour."
+      }
+    ],
+    "requests": []
+  },
+  {
+    "run_at": "2026-11-23T07:05:37.496Z",
+    "summary": "02:00 New York run (Nov 23): no open links or requests; Instagram carousels for Nov 23 are full, so queued one site-only article on OpenRouter dropping three AI providers after Dragos caught prompt theft. No Reel video passing the filter and no new priority 1 story was found; guides start after 07:00.",
+    "considered": [
+      {
+        "story": "OpenRouter off-boards three inference providers and pulls 125 ZDR endpoints after Dragos canary research found prompt theft at three AI hosts",
+        "source": "https://www.dragos.com/blog/ai-supply-chain-security-canary-tokens",
+        "decision": "queued",
+        "job_id": "2026-11-23-openrouter-drops-providers-prompt-leaks",
+        "priority": 2,
+        "reason": "Security story mostly insiders follow, so site-only. Dragos, Unite.AI and Rescana read. OpenRouter's own post and The Hacker News could not be opened. Cover is a Dragos screenshot, not ideal but it is the real evidence."
+      },
+      {
+        "story": "Apple starts Siri AI rollout in its own apps alongside the third-party developer preview (Forkast)",
+        "source": "https://forkast.news/apple-starts-siri-ai-rollout-in-its-apps-alongside-third-party-developer-preview/",
+        "decision": "skipped",
+        "reason": "The developer preview is from Nov 3; the 'rollout' claim rests on one AI-written Forkast piece, and the other pages read give different app lists, so it could not be confirmed."
+      },
+      {
+        "story": "Boston Dynamics puts Atlas on scooter wheels, 360 spin jump",
+        "decision": "covered",
+        "reason": "Already made as 2026-11-10-atlas-on-wheels-spin-jump-reel."
+      },
+      {
+        "story": "Nvidia succession, Alice Huang and Megaspeed follow-ups (Fortune, NYT, WSJ)",
+        "decision": "skipped",
+        "reason": "Huang story covered many times since Nov 15; today's carousels are full and the NYT and WSJ pieces could not be read."
+      },
+      {
+        "story": "Lean community certifies the Claude-assisted Riemann proof",
+        "decision": "skipped",
+        "reason": "Follow-up to 2026-11-20-anthropic-mathematician-riemann-proof-claude; digests disagree on whether it is certified or still under review."
+      },
+      {
+        "story": "Tiny 2.1: an AI model on a floppy disk for 486 PCs",
+        "decision": "skipped",
+        "reason": "Reported around Nov 16, no downloadable X video found for a Reel."
+      },
+      {
+        "story": "OpenAI chief scientist calls for shared AI development limits",
+        "decision": "covered",
+        "reason": "Already queued as 2026-11-22-openai-pachocki-perplexity-limits."
+      },
+      {
+        "story": "Army partners with OpenAI on software accreditation (SC Media)",
+        "decision": "skipped",
+        "reason": "Could not confirm with a second source in this run; narrow defense procurement news."
       },
       {
         "story": "Reel search: viral AI and robot videos of the last day",

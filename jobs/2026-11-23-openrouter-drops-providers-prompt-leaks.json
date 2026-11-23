@@ -1,0 +1,100 @@
+{
+  "id": "2026-11-23-openrouter-drops-providers-prompt-leaks",
+  "created_at": "2026-11-23T07:40:00Z",
+  "story_time": "2026-11-22T03:06:00Z",
+  "timely": false,
+  "sensitive": true,
+  "priority": 2,
+  "site_only": true,
+  "format": "carousel",
+  "site_category": "companies",
+  "ab": { "headline": "short", "photo": "story" },
+  "sources": [
+    { "name": "Dragos", "url": "https://www.dragos.com/blog/ai-supply-chain-security-canary-tokens" },
+    { "name": "Unite.AI", "url": "https://www.unite.ai/openrouter-cuts-three-providers-after-ai-prompt-exposure-findings/" },
+    { "name": "Rescana", "url": "https://www.rescana.com/post/dragos-canary-tokens-compromised-ai-inference-providers-what-ai-router-customers-should-do-now" }
+  ],
+  "caption": "Security firm Dragos planted about 2 million trap prompts with fake secrets across popular AI services.\nAttackers stole data from at least three hosting providers, and used a couple hundred of the planted AWS keys.\nOpenRouter has now dropped three providers and pulled 125 endpoints from its zero data retention list.\n\nDo you ever paste passwords or keys into an AI chat?\n\nFollow @neurafeed.ai for daily AI news.\n\nSource: Dragos · Photo: Dragos",
+  "threads_text": "A security firm hid fake passwords and keys in 2 million AI prompts, and attackers at three hosting providers stole and used them. OpenRouter just cut three providers over it. Do you still paste secrets into AI chats?",
+  "slides": [
+    {
+      "kind": "cover",
+      "headline": "Hackers stole AI prompts from *three hosting providers* for months",
+      "image": {
+        "url": "https://dragos.brightspotcdn.com/dims4/default/bdad7ce/2147483647/strip/true/crop/1760x2170+0+0/resize/1440x1775!/format/webp/quality/90/?url=https%3A%2F%2Fdragos-production-dragos.s3.us-west-2.amazonaws.com%2Fbrightspot%2F0b%2F0e%2F3c493bfa4eeca2aa53714a9dfdec%2Ffigure-1-stolen-aws-key.png",
+        "credit": "Dragos",
+        "fallback_urls": [
+          "https://www.unite.ai/wp-content/uploads/2026/11/openrouter-cuts-three-providers-after-ai-prompt-exposure-findings.jpg"
+        ]
+      },
+      "pos": "center top"
+    },
+    {
+      "kind": "card",
+      "heading": "2 million *trap prompts*",
+      "paras": [
+        "Dragos sent about two million prompts with unique links and fake credentials to popular AI services, July to November.",
+        "At least three hosting providers turned out to have attackers inside, stealing customer requests."
+      ],
+      "image": {
+        "url": "https://dragos.brightspotcdn.com/dims4/default/a537d5e/2147483647/strip/true/crop/2336x3012+0+0/resize/1440x1857!/format/webp/quality/90/?url=https%3A%2F%2Fdragos-production-dragos.s3.us-west-2.amazonaws.com%2Fbrightspot%2F0e%2Fa4%2Fe530bd9849d5bedb30ab50f50d7f%2Ffigure-2-adversary-tools.png",
+        "credit": "Dragos",
+        "fit": "contain"
+      },
+      "note": "Tools used against the planted secrets."
+    },
+    {
+      "kind": "card",
+      "heading": "The keys *got used*",
+      "paras": [
+        "A couple hundred planted AWS keys were stolen and drove tens of thousands of AWS API calls.",
+        "In one case, a password from a prompt was tried for a root login four times in two minutes."
+      ],
+      "image": {
+        "url": "https://dragos.brightspotcdn.com/dims4/default/e2e8e1f/2147483647/strip/true/crop/1760x3130+0+0/resize/1440x2561!/format/webp/quality/90/?url=https%3A%2F%2Fdragos-production-dragos.s3.us-west-2.amazonaws.com%2Fbrightspot%2Fd4%2F63%2F240fdbe743af93783da9203f0e55%2Ffigure-3-ssh-root-attempt.png",
+        "credit": "Dragos",
+        "fit": "contain"
+      }
+    },
+    {
+      "kind": "card",
+      "heading": "OpenRouter *cuts three*",
+      "paras": [
+        "OpenRouter dropped three inference providers and removed 125 endpoints from zero data retention.",
+        "It says it found no breach of OpenRouter itself and has notified affected customers."
+      ],
+      "image": {
+        "url": "https://www.unite.ai/wp-content/uploads/2026/11/openrouter-cuts-three-providers-after-ai-prompt-exposure-findings.jpg",
+        "credit": "Unite.AI"
+      }
+    },
+    {
+      "kind": "cta",
+      "hook": "Follow to learn what really happens to the prompts you send to AI."
+    }
+  ],
+  "site_article": {
+    "headline": "OpenRouter drops three AI providers after Dragos finds stolen prompts",
+    "dek": "A five-month test with about two million planted prompts found attackers inside at least three AI hosting providers, using fake credentials hidden in customer requests.",
+    "summary": "Security firm Dragos seeded about two million AI prompts with canary links and credentials and found data theft at at least three hosting providers. OpenRouter has off-boarded three inference providers and removed 125 endpoints from zero data retention eligibility.",
+    "seo_title": "OpenRouter drops 3 AI providers after Dragos prompt theft study",
+    "seo_description": "Dragos planted canary secrets in 2 million AI prompts and caught theft at three providers. OpenRouter cut three providers and pulled 125 ZDR endpoints.",
+    "answer_summary": "Dragos found attackers stealing prompts from at least three AI hosting providers by planting fake credentials in about two million requests. OpenRouter responded by off-boarding three providers and removing 125 endpoints from zero data retention eligibility.",
+    "tags": ["OpenRouter", "Dragos", "AI security", "Together AI", "Data privacy"],
+    "hero_alt": "Screenshot from Dragos research showing the activity log of one stolen AWS test key.",
+    "paragraphs": [
+      { "kind": "fact", "text": "AI model router OpenRouter has off-boarded three inference providers and removed 125 endpoints from its zero data retention (ZDR) program, after research by industrial security firm Dragos found attackers stealing customer prompts at several AI hosting companies. OpenRouter announced the steps on November 22, 2026, and said it has notified all potentially affected customers, according to Unite.AI and Rescana.", "sources": [1, 2] },
+      { "kind": "fact", "text": "The research, published by Dragos on November 19, 2026, and written by its chief research officer HD Moore, describes a test that ran from July through November 2026. Dragos sent approximately two million prompts to widely used AI services, each carrying unique URLs and canary credentials such as AWS access keys. Every planted secret could be traced back to the exact prompt, model, router and privacy setting it was sent with, so any later use pointed to whoever had seen that request.", "sources": [0, 2] },
+      { "kind": "heading", "text": "What the canaries caught" },
+      { "kind": "fact", "text": "Dragos says it found attackers actively stealing data from three different hosting providers, with the earliest incident dating to mid-July. The largest case involved a couple hundred AWS keys, each sent in a single request to one provider during a few short windows in late October. Some of those keys came from requests the provider rejected before any model ran. The stolen keys then generated tens of thousands of AWS API calls, as the attacker tested them, listed storage buckets, searched secret stores and tried to enable Bedrock models and add users.", "sources": [0, 2] },
+      { "kind": "fact", "text": "The firm also reports that the attacker's tools changed over about three weeks, and that on November 1 the attacker added ARTEX, an AI-driven penetration testing framework. Dragos found problems beyond outright breaches: marketplace resellers that could view and keep customer prompts through standard logging, a router that quietly forwarded some traffic to a marketplace, and requests marked for zero data retention that were still captured. In one case a password taken from a prompt was used for root login attempts four times in two minutes.", "sources": [0] },
+      { "kind": "fact", "text": "Dragos does not name the three providers where it found theft. OpenRouter's post links to separate notices from Phala, Together AI and Novita, but, according to both Unite.AI and Rescana, it does not say whether those companies are among the providers it removed.", "sources": [1, 2] },
+      { "kind": "heading", "text": "Three provider notices" },
+      { "kind": "fact", "text": "Phala said an attacker who controlled an inference machine could see in-flight request data for the DeepSeek V4 Flash model routed through OpenRouter between October 21 and November 8, 2026, and that containment was completed on November 8. Together AI said in a notice dated November 21 that an AI coding agent committed a credential for a private Hugging Face repository to a public GitHub repository, exposing stored prompt samples from June and July. The company said the samples were searched for credentials, including five Dragos canaries, and that new accounts now get zero data retention by default.", "sources": [1, 2] },
+      { "kind": "fact", "text": "Novita said a routing configuration issue sent some MiniMax requests to MiniMax's official API instead of its own servers between May 28 and November 11, 2026. It suspended the affected models, according to both reports.", "sources": [1, 2] },
+      { "kind": "fact", "text": "OpenRouter said the findings did not show a breach of OpenRouter itself. It plans to adapt the Dragos testing method for ongoing checks and will require assurances and validation before removed endpoints regain zero data retention status.", "sources": [1, 2] },
+      { "kind": "analysis", "text": "The study shows that a privacy setting on a router is only a promise about the first step of a request. Once a prompt passes to a hosting provider, a reseller or another network hop, the customer has little way to see who reads it. Canary tokens turned that hidden path into something measurable, and the results suggest that secrets pasted into prompts should be treated as already exposed." },
+      { "kind": "why_it_matters", "text": "Dragos advises routing sensitive work to first-tier providers or self-hosted models and seeding canary credentials, so the next thing to watch is whether other routers and hosts adopt similar testing and publish the results." }
+    ]
+  }
+}
