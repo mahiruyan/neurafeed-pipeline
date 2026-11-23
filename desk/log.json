@@ -4963,5 +4963,75 @@
       }
     ],
     "requests": []
+  },
+  {
+    "run_at": "2026-11-23T13:06:13.432Z",
+    "summary": "08:00 NY run: queued the day's first website guide (How to use Kimi AI, site-only). Today's 2 Instagram carousels are already used (boy and AI python toilet, LeCun vs Amodei) and no new priority 1 story broke overnight; no Reel video could be verified; no open links or requests.",
+    "considered": [
+      {
+        "story": "Guide: How to use Kimi AI (next uncovered tool library line in guides/plan.md)",
+        "source": "https://www.kimi.ai/help/getting-started/overview",
+        "decision": "queued",
+        "job_id": "2026-11-23-how-to-use-kimi-ai-guide",
+        "priority": 2
+      },
+      {
+        "story": "Gurman: Apple's Siri layoffs hit staff on the old infrastructure, not the new AI systems",
+        "source": "https://www.macrumors.com/2026/11/22/siri-layoffs-spared-newer-ai-systems/",
+        "decision": "skipped",
+        "reason": "Newsletter follow-up with no new numbers; the layoffs themselves date from August to October, and today's 2 Instagram carousels are already used."
+      },
+      {
+        "story": "Studios ask the court to make Midjourney comply on its V8 source code",
+        "source": "https://mlq.ai/news/disney-universal-and-warner-bros-ask-the-court-to-make-midjourney-comply-on-its-v8-source-code/",
+        "decision": "skipped",
+        "reason": "The original report and the court docket could not be opened, and no second source confirms a November filing."
+      },
+      {
+        "story": "Nvidia expands Isaac with the Agile ONE SN reference humanoid and Isaac Lab 3.0",
+        "source": "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Advances-Isaac-Platform-for-General-Purpose-Robotics-With-New-Reference-Humanoid-Frameworks-Simulation-Pipelines-and-Data/default.aspx",
+        "decision": "skipped",
+        "reason": "Announced at GTC Berlin on October 21; the November 22 article is a late write-up, not news."
+      },
+      {
+        "story": "Anthropic and Nvidia shares rise in premarket after the tech sell-off",
+        "source": "https://fortune.com/2026/11/23/recap-anthropic-ipo-tech-rout-nvidia-outage-aftermath/",
+        "decision": "covered",
+        "reason": "Anthropic stock moves already covered as 2026-11-22-anthropic-stock-nears-ipo-price-day-two; no new milestone."
+      },
+      {
+        "story": "OpenAI chief scientist Pachocki proposes shared perplexity limits, Altman backs it",
+        "decision": "covered",
+        "reason": "Already covered as 2026-11-22-openai-pachocki-perplexity-limits."
+      },
+      {
+        "story": "Lean community certifies Alpoge's Claude-aided Riemann proof / Alexandr Wang essay",
+        "decision": "covered",
+        "reason": "Riemann proof already covered as 2026-11-20-anthropic-mathematician-riemann-proof-claude; follow-up not strong enough for a second post."
+      },
+      {
+        "story": "OpenRouter drops three providers after prompt leaks",
+        "decision": "covered",
+        "reason": "Already queued as 2026-11-23-openrouter-drops-providers-prompt-leaks."
+      },
+      {
+        "story": "Architect Labs says AI agents designed the Frostbite CPU",
+        "source": "https://www.tomshardware.com/tech-industry/semiconductors/ai-agents-design-an-entirely-new-cpu-architecture-from-scratch-startup-claims-frostbite-posts-4-59x-the-performance-per-watt-of-an-in-order-core-in-pre-silicon-tests",
+        "decision": "skipped",
+        "reason": "Simulation-only startup claim for insiders; two site-only articles already queued today."
+      },
+      {
+        "story": "Defense AI startup Agon raises $70M Series A",
+        "source": "https://www.bloomberg.com/news/articles/2026-11-23/defense-ai-startup-agon-raises-70-million-series-a-from-vcs-ex-sequoia-boss",
+        "decision": "skipped",
+        "reason": "UK funding round with little US consumer interest."
+      },
+      {
+        "story": "Reel videos for today",
+        "decision": "skipped",
+        "reason": "No X or company video from today's stories could be opened and checked from here; 2 Reels (Neuralink GTA VI, Waymo flood) are already queued for today."
+      }
+    ],
+    "requests": []
   }
 ]
