@@ -4972,5 +4972,48 @@
       }
     ],
     "requests": []
+  },
+  {
+    "run_at": "2026-11-23T02:54:08.943Z",
+    "summary": "Late evening run (22:00 New York, Nov 22): no open links or requests, today's carousels, site-only slots and six guides were already used, the posting window is closing and no new priority 1 story or Reel video passing the filter was found, so nothing was queued.",
+    "considered": [
+      {
+        "story": "Banks block third-party AI agents from logging into customer accounts",
+        "source": "https://www.americanbanker.com/news/banks-are-blocking-external-ai-agents-is-this-sustainable",
+        "decision": "covered",
+        "reason": "Reports date from October and the story is already covered as 2026-10-24-banks-catch-ai-agents-in-accounts."
+      },
+      {
+        "story": "Weekly roundups (aialvin, FourWeekMBA) of GPT-6.2 Astra and Sol, Gemini 4 Neon, Microsoft Ignite models, Anthropic IPO close",
+        "decision": "skipped",
+        "reason": "All items are from Nov 16 to 20 and already covered or older than a day; the FourWeekMBA page could not be opened."
+      },
+      {
+        "story": "Amazon nears $7.5 billion purchase of Decart (PYMNTS)",
+        "decision": "skipped",
+        "reason": "Talks already covered on Oct 12, no new confirmed fact."
+      },
+      {
+        "story": "Tech stock rout hits Nvidia and Anthropic (Eurasia Business News, The Wealth Advisor)",
+        "decision": "covered",
+        "reason": "Market slide already covered as 2026-11-22-anthropic-stock-nears-ipo-price-day-two."
+      },
+      {
+        "story": "OpenAI standby discount for voice AI, 60% off silent periods (BigGo Finance)",
+        "decision": "skipped",
+        "reason": "Developer pricing detail from a single low-quality source; insider news."
+      },
+      {
+        "story": "Saskatchewan bill on AI deepfakes",
+        "decision": "skipped",
+        "reason": "Regional Canadian story with little US interest."
+      },
+      {
+        "story": "Reel search: viral AI, robot and smart glasses videos of the last day",
+        "decision": "skipped",
+        "reason": "Search returned fact checks of fake videos and older clips, nothing new on X that passes the Reel filter."
+      }
+    ],
+    "requests": []
   }
 ]
