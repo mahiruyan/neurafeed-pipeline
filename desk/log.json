@@ -1,58 +1,5 @@
 [
   {
-    "run_at": "2026-11-16T01:00:58.704Z",
-    "summary": "Sunday 20:00 New York run: queued 1 Reel (SNL cold open with Bowen Yang as Jensen Huang, from @nbcsnl on X), marked sensitive so it waits for Mahir. No open links or requests; today's carousels, site-only articles and 6 guides are already complete; roundup paused.",
-    "considered": [
-      {
-        "story": "SNL cold open: John Mulaney's CIA officer briefs AI billionaires on spies, Bowen Yang returns as Jensen Huang",
-        "source": "https://x.com/nbcsnl/status/2121827093017415989",
-        "decision": "queued",
-        "job_id": "2026-11-15-snl-jensen-huang-cold-open-reel",
-        "priority": 2,
-        "reason": "First funny clip about the week's biggest story, within 24 hours, official X video. Sensitive because it jokes about the espionage affair. The clip is about 5:50 long, so the Reel shows the first 90 seconds, which may end before Huang appears."
-      },
-      {
-        "story": "Jensen Huang may be plotting a return, latest Nvidia drama (The Verge, Forbes)",
-        "source": "https://www.theverge.com/tech/1033999/jensen-huang-return-nvidia-megaspeed",
-        "decision": "covered",
-        "reason": "Already queued as 2026-11-15-jensen-huang-weighs-nvidia-return."
-      },
-      {
-        "story": "Is bad news for Jensen Huang also bad news for the AI industry? (TechCrunch)",
-        "source": "https://techcrunch.com/2026/11/15/is-bad-news-for-jensen-huang-also-bad-news-for-the-ai-industry/",
-        "decision": "skipped",
-        "reason": "Opinion piece on the Huang story already covered."
-      },
-      {
-        "story": "Nvidia kept GPU prices high through circular financing deals (TechSpot, via Hacker News)",
-        "source": "https://www.techspot.com/news/114558-nvidia-deliberately-kept-gpu-prices-high-through-circular.html",
-        "decision": "skipped",
-        "reason": "Insider finance analysis, and today's site-only articles are already complete."
-      },
-      {
-        "story": "U.S. and allies agree to coordinate AI supply chain security (Seeking Alpha)",
-        "decision": "skipped",
-        "reason": "Policy news mostly insiders follow; site-only cap for today reached."
-      },
-      {
-        "story": "OpenAI booth criticized at TwitchCon (Mezha.net)",
-        "decision": "skipped",
-        "reason": "Single small outlet, no second source read, and today's carousels are full."
-      },
-      {
-        "story": "Gemini memory summary, how to see and edit it (ZDNET)",
-        "decision": "skipped",
-        "reason": "Good future guide topic; today's 6 guides are already queued."
-      },
-      {
-        "story": "Reel search: other viral AI, robot and gadget clips of November 15",
-        "decision": "skipped",
-        "reason": "Nothing fresh with a downloadable X original passed the Reels filter."
-      }
-    ],
-    "requests": []
-  },
-  {
     "run_at": "2026-11-16T02:54:51.215Z",
     "summary": "Sunday 22:00 New York run: nothing queued. No open links or requests; today's Instagram carousels, Reels, site-only articles and 6 guides are already done, the last posting window closes at 22:00, and no new story from the evening passed the bar. Tomorrow's guides start from 07:00.",
     "considered": [
@@ -4962,6 +4909,66 @@
         "story": "Reel search: viral AI, robot and smart glasses videos of the last day",
         "decision": "skipped",
         "reason": "Searches turned up older clips, fact checks of fake videos and YouTube links, nothing new on X that passes the Reel filter and can be downloaded."
+      }
+    ],
+    "requests": []
+  },
+  {
+    "run_at": "2026-11-23T01:04:12.049Z",
+    "summary": "Evening run (20:00 New York, Nov 22): no open links or requests; today's two carousels, site-only slots and six guides were already used and no Reel video passing the filter was found, so this run queued one sensitive carousel for Nov 23 on South Korea's education minister resigning over the AI cheating chaos at the college entrance exam (Mahir approves it on Telegram).",
+    "considered": [
+      {
+        "story": "South Korea's education minister Choi Kyo-jin resigns after AI cheating fears disrupt the CSAT (111 caught, emergency phone alerts)",
+        "source": "https://www.koreaherald.com/article/10945089",
+        "decision": "queued",
+        "job_id": "2026-11-23-korea-minister-quits-ai-cheating-exam",
+        "priority": 2,
+        "reason": "A scandal and politics story anyone would send to a friend. Korea Herald, Ynet and AP read. Dated Nov 23 as the first carousel of the next New York day; sensitive (politics), so it waits for Mahir's approval."
+      },
+      {
+        "story": "Anthropic launches Claude for Manufacturing (17 skills, four connectors)",
+        "source": "https://claude.com/resources/articles/claude-for-manufacturing",
+        "decision": "skipped",
+        "reason": "Launched November 12, so not new, and insider enterprise news."
+      },
+      {
+        "story": "Wall Street correction hits Nvidia and Anthropic (Fox News live blog)",
+        "source": "https://www.foxnews.com/live-news/ai-news-markets-correction-11-22-26",
+        "decision": "covered",
+        "reason": "Market slide already covered as 2026-11-22-anthropic-stock-nears-ipo-price-day-two and 2026-11-20-nvidia-sec-accounting-probe."
+      },
+      {
+        "story": "Banks block third-party AI agents from logging into accounts (Wired)",
+        "source": "https://www.wired.com/story/banks-are-cracking-down-on-ai-agents/",
+        "decision": "skipped",
+        "reason": "Only one source read in this run and today's site-only slots are full; a candidate for a later run."
+      },
+      {
+        "story": "Binding of Isaac removes AI-generated music after review-bombing (The Verge)",
+        "source": "https://www.theverge.com/games/1039770/binding-of-isaac-ai-music",
+        "decision": "skipped",
+        "reason": "Gaming niche story with one source read; the Korea scandal is the stronger carousel."
+      },
+      {
+        "story": "Musk says the singularity has arrived while touting a Tesla FSD milestone",
+        "source": "https://x.com/elonmusk/status/2123298515573207075",
+        "decision": "skipped",
+        "reason": "A text post with no news behind it beyond FSD v15 coverage; no video for a Reel."
+      },
+      {
+        "story": "Together AI breach exposed coding agent prompts",
+        "decision": "skipped",
+        "reason": "Seen only in summaries of a live blog and a digest; not confirmed with sources read in this run."
+      },
+      {
+        "story": "OpenAI chief scientist urges industry limits on AI development (Straits Times, TechCrunch)",
+        "decision": "covered",
+        "reason": "Already queued as 2026-11-22-openai-pachocki-perplexity-limits."
+      },
+      {
+        "story": "Reel search: viral AI, robot, Optimus and smart glasses videos of the last day",
+        "decision": "skipped",
+        "reason": "Searches returned older Optimus clips, fact checks of fake robot videos and YouTube links, nothing new on X that passes the Reel filter."
       }
     ],
     "requests": []
