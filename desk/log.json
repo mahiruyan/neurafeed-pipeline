@@ -1,74 +1,5 @@
 [
   {
-    "run_at": "2026-11-17T08:57:29.042Z",
-    "summary": "Early run (04:20 New York, Nov 17): no open links or requests; queued 1 Instagram carousel (U.S. closes the rented Nvidia chip loophole, sensitive, needs approval) and 1 site-only article (Gemini Gems go read-only). No Reel passed the filter; guides start at 07:00.",
-    "considered": [
-      {
-        "story": "Commerce rule closes the remote access loophole that let Chinese firms rent Nvidia chips abroad, first policy response to the Huang scandal",
-        "source": "https://www.nextgov.com/artificial-intelligence/2026/11/commerce-department-moves-close-ai-chip-loophole/417255/",
-        "decision": "queued",
-        "job_id": "2026-11-17-us-shuts-china-nvidia-backdoor",
-        "priority": 1,
-        "reason": "Politics, money and the Nvidia scandal; second Instagram carousel of the day, marked sensitive (politics). Nextgov, Forbes and Gizmodo read."
-      },
-      {
-        "story": "Gemini Gems become read-only on November 17 and are removed December 17 as skills take over",
-        "source": "https://support.google.com/gemini/answer/18560919",
-        "decision": "queued",
-        "job_id": "2026-11-17-gemini-gems-read-only-today",
-        "priority": 2,
-        "reason": "Product change for Gemini users, so site-only; Google help page, Google blog, MIXED and The Decoder read. A later guide on moving Gems to skills would fit."
-      },
-      {
-        "story": "OpenAI releases a free tool to detect child abuse images",
-        "source": "https://www.techinasia.com",
-        "decision": "skipped",
-        "reason": "Could not find the new announcement itself in this run, only older child safety blueprint pages, so no second source."
-      },
-      {
-        "story": "Anthropic $64.4B IPO and Nvidia earnings this week",
-        "decision": "skipped",
-        "reason": "Previews only; better covered when Nvidia reports and Anthropic prices or debuts."
-      },
-      {
-        "story": "Sam Altman says he wants everyone to have a lot of RAM",
-        "decision": "skipped",
-        "reason": "Light remark with no clear news hook; not confirmed with a second source."
-      },
-      {
-        "story": "OpenAI paid $773.6 million for Effingham County land (Effingham Herald)",
-        "decision": "skipped",
-        "reason": "Local records story, one source, and today's site-only slots are already well used."
-      },
-      {
-        "story": "Fireworks AI breach exposed data from Uber, Notion and Cursor (PYMNTS)",
-        "decision": "covered",
-        "reason": "Same breach covered as 2026-11-15-cursor-breach-traced-to-fireworks-key."
-      },
-      {
-        "story": "California sues OpenAI over rogue AI agents (more coverage)",
-        "decision": "covered",
-        "reason": "Already queued as 2026-11-16-california-sues-openai-rogue-agents."
-      },
-      {
-        "story": "Reuters: China trains AI on US model answers (more coverage)",
-        "decision": "covered",
-        "reason": "Already queued as 2026-11-17-china-distills-us-ai-models."
-      },
-      {
-        "story": "Claude cut an AMD GPU migration from one year to three days",
-        "decision": "covered",
-        "reason": "Already covered as 2026-11-12-claude-ported-itself-to-amd-3-days."
-      },
-      {
-        "story": "Reel search: viral AI, robot and gadget clips",
-        "decision": "skipped",
-        "reason": "Reddit leads are empty and X cannot be opened from this run; no downloadable clip passing the Which Reels travel filter was found."
-      }
-    ],
-    "requests": []
-  },
-  {
     "run_at": "2026-11-17T10:56:33.148Z",
     "summary": "Morning run (05:55 New York, Nov 17): no open links or requests; queued 1 site-only article (FBI warns the Artex AI hacking tool breaches networks in under three hours, sensitive). Both Instagram carousels for today are already queued, no Reel passed the filter, and guides start at 07:00.",
     "considered": [
@@ -5041,6 +4972,73 @@
         "story": "Reel search: viral AI/robot clips (cooking robot fail, EngineAI fight clip, fake Tim Cook glasses video)",
         "decision": "skipped",
         "reason": "Older or already-debunked clips with no fresh X post found; nothing passed the Which Reels travel filter this run."
+      }
+    ],
+    "requests": []
+  },
+  {
+    "run_at": "2026-11-24T10:56:20.333Z",
+    "summary": "06:00 NY run (Nov 24): no open links or requests; today's 2 Instagram carousels were already queued, so added the day's 4th site-only article (OpenAI and Cisco's Shirudo). No Reel video with a usable source passed the filter; guides start after 07:00.",
+    "considered": [
+      {
+        "story": "OpenAI and Cisco release Shirudo, an open-source eBPF shield for unpatched Linux systems",
+        "source": "https://openai.com/index/introducing-shirudo/",
+        "decision": "queued",
+        "job_id": "2026-11-24-openai-cisco-shirudo-linux-shield",
+        "priority": 2,
+        "reason": "Security infrastructure news for insiders, so site-only; confirmed with SiliconANGLE and The Register."
+      },
+      {
+        "story": "Tesla Optimus carries Elon Musk's suitcases off a private jet (viral clip)",
+        "source": "https://sundayguardianlive.com/world/watch-tesla-optimus-humanoid-robot-walks-beside-elon-musk-carrying-his-two-suitcases-off-private-jet-scene-reminds-users-of-a-sci-fi-movie-325622/amp",
+        "decision": "skipped",
+        "reason": "Could be a strong Reel, but the only article names no original poster or X link and does not say whether the clip is real, so there is no video URL to queue."
+      },
+      {
+        "story": "Xiaomi humanoids work an 8-hour shift in its EV factory",
+        "source": "https://aiweekly.co/alerts/xiaomi-posts-video-of-humanoids-on-8-hour-ev-factory-shift",
+        "decision": "skipped",
+        "reason": "Video is from November 3, a factory demo with no surprising shot, and no X post URL was found."
+      },
+      {
+        "story": "OpenAI expands ChatGPT ads to 44 countries through Aleph",
+        "decision": "skipped",
+        "reason": "Only one minor outlet seen in leads; today's site-only slots are now full."
+      },
+      {
+        "story": "OpenAI test finds GPT-6.2 Astra omits blockers twice as often",
+        "decision": "skipped",
+        "reason": "Model evaluation detail for insiders; site-only slots full and today's carousel slots used."
+      },
+      {
+        "story": "New AI rule marks a first for US federal appeals courts (Reuters)",
+        "decision": "skipped",
+        "reason": "Legal procedure story with little reader interest and no slot left today."
+      },
+      {
+        "story": "Amazon buys ChatGPT ads while blocking OpenAI crawlers (Digiday)",
+        "decision": "skipped",
+        "reason": "Still only one trade source; no carousel slot left today."
+      },
+      {
+        "story": "Nvidia reinstates Jensen Huang after Trump spoke to the board",
+        "decision": "covered",
+        "reason": "Already covered as 2026-11-23-jensen-huang-reinstated-nvidia-ceo."
+      },
+      {
+        "story": "Anthropic launches Claude Ship",
+        "decision": "covered",
+        "reason": "Already queued as 2026-11-24-anthropic-claude-ship-code-approvals."
+      },
+      {
+        "story": "GPT-6.2 Sol moves into ChatGPT's Chat tab",
+        "decision": "covered",
+        "reason": "Already queued as 2026-11-24-chatgpt-gpt-6-2-sol-chat-tab."
+      },
+      {
+        "story": "Detained ex-OpenAI engineer likely captured secrets on a hidden bug",
+        "decision": "covered",
+        "reason": "Same Alfozan case as 2026-11-18-openai-bugging-trial-no-spy-evidence."
       }
     ],
     "requests": []

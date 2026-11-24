@@ -1,0 +1,94 @@
+{
+  "id": "2026-11-24-openai-cisco-shirudo-linux-shield",
+  "created_at": "2026-11-24T11:10:00Z",
+  "story_time": "2026-11-23T21:20:00Z",
+  "timely": false,
+  "sensitive": false,
+  "priority": 2,
+  "site_only": true,
+  "format": "carousel",
+  "site_category": "companies",
+  "ab": { "headline": "long", "photo": "story" },
+  "sources": [
+    { "name": "OpenAI", "url": "https://openai.com/index/introducing-shirudo/" },
+    { "name": "SiliconANGLE", "url": "https://siliconangle.com/2026/11/23/cisco-and-openai-launch-shirudo-an-open-source-infrastructure-shield-to-protect-against-ai-driven-cyberattacks/" },
+    { "name": "The Register", "url": "https://www.theregister.com/security/2026/11/24/cisco-and-openai-pitch-ebpf-kernel-plugins-as-the-way-to-tame-the-patchpocalypse/5311795" }
+  ],
+  "caption": "OpenAI and Cisco released Shirudo, a free open-source tool that blocks known exploits on running Linux servers while teams wait to patch.\nIn an OpenAI test, Codex wrote a shield that stopped a Java4Shell attack without a restart.\n\nWould you trust an AI to write security fixes for your servers?\n\nFollow @neurafeed.ai for daily AI news.\n\nSource: OpenAI · Photo: OpenAI",
+  "threads_text": "OpenAI and Cisco just open-sourced Shirudo, a tool that puts temporary shields on running Linux servers so a known exploit gets blocked before the real patch lands. In OpenAI's test, Codex wrote the shield itself. Would you let an AI write security fixes for your servers?",
+  "slides": [
+    {
+      "kind": "cover",
+      "headline": "OpenAI and Cisco built a free *AI shield* that blocks attacks before Linux servers get patched",
+      "image": {
+        "url": "https://images.ctfassets.net/kftzwdyauwt9/5K7gFDr3r8vgjdIcsW6RVY/aba5325ce7902e5d1499b907f8e78f0b/shirudo-partner-logos-landscape-2x.png?w=1920&q=90&fm=jpg",
+        "credit": "OpenAI",
+        "fallback_urls": [
+          "https://images.ctfassets.net/kftzwdyauwt9/5K7gFDr3r8vgjdIcsW6RVY/aba5325ce7902e5d1499b907f8e78f0b/shirudo-partner-logos-landscape-2x.png?w=3840&q=90&fm=webp"
+        ]
+      }
+    },
+    {
+      "kind": "card",
+      "heading": "A shield, *not a patch*",
+      "paras": [
+        "Shirudo, Japanese for shield, runs small eBPF programs inside Linux that block a known exploit while the service keeps running.",
+        "Teams can watch a shield in test mode first, then deploy it after approval, with no restart."
+      ],
+      "image": {
+        "url": "https://images.ctfassets.net/kftzwdyauwt9/bScTLq9smNJq5XAlaHIQW/fab0e70b1aab8ca8dffb70a747056fd7/guardian-agent-desktop-light.png?w=1920&q=90&fm=jpg",
+        "credit": "OpenAI",
+        "fit": "contain",
+        "fallback_urls": [
+          "https://images.ctfassets.net/kftzwdyauwt9/bScTLq9smNJq5XAlaHIQW/fab0e70b1aab8ca8dffb70a747056fd7/guardian-agent-desktop-light.png?w=3840&q=90&fm=webp"
+        ]
+      }
+    },
+    {
+      "kind": "card",
+      "heading": "Codex wrote *the fix*",
+      "paras": [
+        "In an OpenAI test, Codex built a shield that stopped a Java4Shell attack on a running Elasticsearch server.",
+        "Shields are signed and checked before they load. The code is free on GitHub."
+      ],
+      "image": {
+        "url": "https://images.siliconangle.com/blogs.dir/1/files/2026/11/Screenshot-from-2026-11-23-08-48-22.png",
+        "credit": "SiliconANGLE",
+        "fit": "contain",
+        "fallback_urls": [
+          "https://image.theregister.com/1682068.jpg?imageId=1682068&x=0&y=0&cropw=100&croph=100&panox=0&panoy=0&panow=100&panoh=100&width=1200&height=683"
+        ]
+      }
+    },
+    {
+      "kind": "cta",
+      "hook": "Follow to see whether AI ends up fixing bugs as fast as it finds them."
+    }
+  ],
+  "site_article": {
+    "headline": "OpenAI and Cisco release Shirudo to shield unpatched Linux systems",
+    "dek": "The open-source runtime uses eBPF programs, which Codex can write, to block known exploits on running servers until a patch is installed.",
+    "summary": "OpenAI and Cisco released Shirudo on November 23, 2026, an open-source runtime that applies temporary protections called shields to running Linux systems. In a controlled test, a shield written by Codex blocked a Java4Shell exploit on a live Elasticsearch service without a restart.",
+    "seo_title": "OpenAI and Cisco Shirudo: open-source shield for Linux",
+    "seo_description": "OpenAI and Cisco released Shirudo, an open-source eBPF runtime that blocks known exploits on live Linux servers before patches. How it works and the Codex test.",
+    "answer_summary": "Shirudo is an open-source runtime from OpenAI and Cisco that uses signed eBPF programs, called shields, to block known exploits on running Linux systems while teams test and install patches.",
+    "tags": ["OpenAI", "Cisco", "Shirudo", "Codex", "Linux", "Cybersecurity"],
+    "hero_alt": "Shirudo logo on an orange gradient with the OpenAI and Cisco logos along the bottom.",
+    "paragraphs": [
+      { "kind": "fact", "text": "OpenAI and Cisco released Shirudo on November 23, 2026, an open-source runtime meant to protect running Linux systems against known exploits while teams test and roll out patches. The name is Japanese for shield, and the temporary protections it applies are called shields.", "sources": [0, 2] },
+      { "kind": "fact", "text": "According to OpenAI, the tool targets the gap between a disclosure and a fix. Testing and deploying a patch can take days or weeks, the company said, and simply blocking the affected Linux operation could take a service offline. Shirudo lets operators check whether a shield stops the exploit behavior while legitimate requests still go through, then deploy it after approval without restarting the service.", "sources": [0] },
+      { "kind": "heading", "text": "How the shields work" },
+      { "kind": "fact", "text": "Shirudo is built on eBPF, a Linux technology that runs small programs at specific points inside the operating system to observe activity and apply targeted controls. The Register described these programs as sandboxed kernel plug-ins that do not get unrestricted access to system resources. OpenAI said operators can watch the effect of a proposed shield before switching it to enforcement.", "sources": [0, 2] },
+      { "kind": "fact", "text": "OpenAI said shields are cryptographically signed and verified before they load, that the Linux eBPF verifier checks each program against safety rules, and that a Trusted Platform Module keeps a verifiable record of which protections were loaded or removed. The code is published on GitHub under the BSD 2-Clause license, with its BPF programs dual-licensed under BSD and GPL.", "sources": [0] },
+      { "kind": "fact", "text": "SiliconANGLE reported that Shirudo is the first effort under what the two companies call the Secure Infrastructure Project, and that it grew out of Tetragon, an open-source runtime security project from Isovalent. The Register noted that Cisco owns Isovalent, which also created the Cilium networking project.", "sources": [1, 2] },
+      { "kind": "heading", "text": "A Codex test against Java4Shell" },
+      { "kind": "fact", "text": "In a controlled test described by OpenAI, its Codex coding agent generated a shield that blocked an attempt to exploit Java4Shell, a recently disclosed Java flaw, against a running Elasticsearch service. OpenAI said the shield added an input check to Java's Base64 decoder and was attached to the live process, so the malicious input was rejected while Elasticsearch kept running.", "sources": [0, 1] },
+      { "kind": "fact", "text": "SiliconANGLE, citing Cisco, described a wider workflow in which Codex, given exploit details, builds a reproducer, designs a mitigation, validates it and deploys signed shields to every affected machine. OpenAI's own announcement describes these agent controls as something the companies are still designing, and The Register reported that the companies expect a human to check every shield before it reaches production.", "sources": [0, 1, 2] },
+      { "kind": "fact", "text": "Thomas Graf, Cisco's security chief technology officer, told SiliconANGLE that fixes can take weeks or even months, a delay he called no longer acceptable now that attackers often exploit flaws before fixes arrive. OpenAI President Greg Brockman said in the announcement that because so many teams rely on the same software, it makes sense to build these defenses in the open.", "sources": [0, 1] },
+      { "kind": "heading", "text": "A crowded patching problem" },
+      { "kind": "fact", "text": "The Register placed the launch against a surge in vulnerability reports, saying more than 100,000 software flaws were reported this year, many after AI-powered bug finders appeared. It listed other companies that sell similar compensating controls, including VMware, Palo Alto Networks, Rapid7 and Rimini Street, and observed that the project is not entirely altruistic because it could raise demand for Codex.", "sources": [2] },
+      { "kind": "analysis", "text": "In NeuraFeed's reading, Shirudo is an attempt to put AI on the defensive side of a race that AI bug hunting has sped up. The open license, signing and hardware-backed records address the trust question that comes with letting a model write code that runs inside the kernel. The published material so far shows one controlled demonstration, not results from large production fleets." },
+      { "kind": "why_it_matters", "text": "The next signal is whether tested shields start shipping alongside vulnerability disclosures, a goal OpenAI named in its announcement, and whether Linux distributions or large cloud operators adopt the runtime. A technical deep dive for developers is scheduled for December 15, 2026." }
+    ]
+  }
+}
