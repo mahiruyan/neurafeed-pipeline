@@ -1,64 +1,5 @@
 [
   {
-    "run_at": "2026-11-17T10:56:33.148Z",
-    "summary": "Morning run (05:55 New York, Nov 17): no open links or requests; queued 1 site-only article (FBI warns the Artex AI hacking tool breaches networks in under three hours, sensitive). Both Instagram carousels for today are already queued, no Reel passed the filter, and guides start at 07:00.",
-    "considered": [
-      {
-        "story": "FBI flash advisory: Artex AI pentesting tool used by attackers, some reaching privileged access in under three hours",
-        "source": "https://techcrunch.com/2026/11/16/fbi-says-artex-ai-open-source-hacking-tool-used-to-breach-networks-in-under-three-hours/",
-        "decision": "queued",
-        "job_id": "2026-11-17-fbi-ai-hacking-tool-three-hours",
-        "priority": 2,
-        "reason": "Security news that mostly insiders follow, so site-only (fourth and last site-only news slot today); TechCrunch, Inc. and Android Headlines read. Marked sensitive (crime). Images could not be previewed from this run."
-      },
-      {
-        "story": "Nvidia unveils the Rubin HPC GPU with more than 50,000 CUDA cores, arriving in 2028 (Tom's Hardware)",
-        "source": "https://www.tomshardware.com/pc-components/gpus/nvidia-announces-rubin-hpc-gpu-with-record-number-of-cuda-cores-at-supercomputing-2026-new-chip-accelerates-agentic-hpc-workloads-arrives-in-2028",
-        "decision": "skipped",
-        "reason": "Supercomputing chip for 2028 that only insiders follow, and today's site-only slots are now full."
-      },
-      {
-        "story": "Jensen Huang's daughter Madison remains in a senior Nvidia role (New York Times)",
-        "source": "https://www.nytimes.com/2026/11/16/technology/nvidia-jensen-madison-huang.html",
-        "decision": "skipped",
-        "reason": "Another angle on the Huang saga, which already has many jobs in the last 3 days, and both carousel slots are used."
-      },
-      {
-        "story": "Aschenbrenner's Situational Awareness fund reloaded on AI stocks before they plunged (CNBC)",
-        "source": "https://www.cnbc.com/2026/11/16/situational-awareness-aschenbrenner-new-ai-bets.html",
-        "decision": "skipped",
-        "reason": "Money story, but both Instagram carousel slots for today are already used and it is mainly for finance insiders."
-      },
-      {
-        "story": "Anthropic says Claude cut AMD GPU onboarding to about three days (Tom's Hardware)",
-        "decision": "covered",
-        "reason": "Already noted as covered in the 04:20 run."
-      },
-      {
-        "story": "OpenAI and Jony Ive's hardware team lease a large San Francisco office; OpenAI CFO on the unplanned raise",
-        "decision": "skipped",
-        "reason": "Already skipped in earlier runs today for the same reasons; nothing new."
-      },
-      {
-        "story": "Xiaomi humanoids work an 8-hour EV factory shift (Reel candidate)",
-        "decision": "skipped",
-        "reason": "Posted November 3 and still no X post URL found to download the clip."
-      },
-      {
-        "story": "Nothing teases its screenless AI device (Reel candidate)",
-        "source": "https://9to5google.com/2026/11/12/nothings-screen-less-new-gadget-really-looks-like-yet-another-ai-recorder/",
-        "decision": "skipped",
-        "reason": "Official teaser from November 12 with no surprising shot; fails the Reels filter."
-      },
-      {
-        "story": "Reel search: viral AI, robot and gadget clips of November 16 and 17",
-        "decision": "skipped",
-        "reason": "Reddit leads are empty and X cannot be opened from this run; no downloadable clip passing the Which Reels travel filter was found."
-      }
-    ],
-    "requests": []
-  },
-  {
     "run_at": "2026-11-17T13:08:48.993Z",
     "summary": "Morning run (07:55 New York, Nov 17): no open links or requests; queued the first site-only guide of the day (Bolt.new vs Lovable). Both Instagram carousels and all four site-only news slots for today are already used, and no new Reel passed the filter.",
     "considered": [
@@ -5039,6 +4980,73 @@
         "story": "Detained ex-OpenAI engineer likely captured secrets on a hidden bug",
         "decision": "covered",
         "reason": "Same Alfozan case as 2026-11-18-openai-bugging-trial-no-spy-evidence."
+      }
+    ],
+    "requests": []
+  },
+  {
+    "run_at": "2026-11-24T13:06:14.689Z",
+    "summary": "08:00 NY run (Nov 24): no open links or requests; queued the day's first Reel (a viral skit about an AI interviewing an AI) and the day's first website guide (Elicit for literature reviews). Carousel and site-only slots were already full.",
+    "considered": [
+      {
+        "story": "Viral skit: a job seeker sends his own AI to an AI job interview, and the two AIs never stop saying goodbye",
+        "source": "https://x.com/ricwe123/status/2124532657463689228",
+        "decision": "queued",
+        "job_id": "2026-11-24-ai-interviews-ai-job-skit-reel",
+        "priority": 2,
+        "reason": "Relatable and shareable for anyone job hunting; the hook and caption say plainly it is a comedy skit, confirmed with IBTimes UK, credited to the original YouTube creator Graham Dot Zip."
+      },
+      {
+        "story": "Guide: how to use Elicit for a literature review",
+        "source": "https://support.elicit.com/en/articles/14759154-systematic-reviews-in-elicit",
+        "decision": "queued",
+        "job_id": "2026-11-24-how-to-use-elicit-literature-review-guide",
+        "priority": 2,
+        "reason": "Next uncovered line in guides/plan.md; site-only, written from Elicit's help center and pricing page plus the UBC library wiki."
+      },
+      {
+        "story": "Paradromics brain implant lets a woman speak and call her grandchildren; NVIDIA partnership",
+        "source": "https://www.theneuron.ai/news/nvidia-paradromics-brain-to-speech-ai/",
+        "decision": "skipped",
+        "reason": "The speech milestone is from September and its only video is on YouTube, which our servers cannot download; the NVIDIA part is a roadmap with no new footage."
+      },
+      {
+        "story": "Google DeepMind agents find faster quantum algorithms for fusion research",
+        "source": "https://deepmind.google/blog/finding-faster-quantum-algorithms-with-agents-and-formal-verification/",
+        "decision": "skipped",
+        "reason": "Research news for insiders, and today's four site-only articles are already queued."
+      },
+      {
+        "story": "NHS starts AI breast screening trial with about 700,000 women",
+        "source": "https://www.semafor.com/article/11/23/2026/uk-starts-major-ai-breast-cancer-trial",
+        "decision": "skipped",
+        "reason": "UK health story with little US reach; both carousel slots for today are used."
+      },
+      {
+        "story": "SpaceX sells computing capacity to Anthropic and Google (NYT)",
+        "source": "https://www.nytimes.com/2026/11/23/business/elon-musk-ai-anthropic-google.html",
+        "decision": "skipped",
+        "reason": "Only one source seen and no carousel or site-only slot left today; can be picked up tomorrow if more outlets confirm."
+      },
+      {
+        "story": "Boston Dynamics Spot robots expand to GlobalFoundries chip fabs",
+        "decision": "skipped",
+        "reason": "Corporate deployment news with no surprising video shot found."
+      },
+      {
+        "story": "Prosecutors detail recordings by detained ex-OpenAI engineer Alfozan",
+        "decision": "covered",
+        "reason": "Same case as 2026-11-18-openai-bugging-trial-no-spy-evidence."
+      },
+      {
+        "story": "Nvidia reinstates Jensen Huang as CEO",
+        "decision": "covered",
+        "reason": "Already covered as 2026-11-23-jensen-huang-reinstated-nvidia-ceo."
+      },
+      {
+        "story": "Anthropic Claude VP vs VNP proof, Claude Ship, GPT-6.2 Sol in Chat, Shirudo, UC ChatGPT deal, Google AI TV patent",
+        "decision": "covered",
+        "reason": "All already queued today."
       }
     ],
     "requests": []
