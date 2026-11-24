@@ -1,70 +1,5 @@
 [
   {
-    "run_at": "2026-11-17T05:04:17.656Z",
-    "summary": "Midnight run (00:10 New York, Nov 17): no open links or requests; queued 1 Instagram carousel (South Korea checks every student's glasses, sensitive, needs approval) and 1 site-only article (Reuters: China trains AI on US model answers). No Reel passed the filter and no guide yet (guides start at 07:00).",
-    "considered": [
-      {
-        "story": "South Korea will inspect every student's glasses at the Nov 19 college entrance exam after the tax exam top scorer's AI cheating confession",
-        "source": "https://www.thestar.com.my/tech/tech-news/2026/11/16/south-korea-to-inspect-glasses-worn-by-exam-candidates-after-ai-cheating-scandal",
-        "decision": "queued",
-        "job_id": "2026-11-17-korea-checks-every-students-glasses",
-        "priority": 2,
-        "reason": "New government action, a strange shareable story; the Nov 15 confession jobs never reached Instagram (one site-only, the Reel failed to render). Marked sensitive because it involves police and criminal penalties. Images could not be previewed from this run."
-      },
-      {
-        "story": "Reuters exclusive: China taps US AI models (OpenAI o1, GPT-4o) to train homegrown rivals through distillation",
-        "source": "https://www.933thedrive.com/2026/11/16/exclusive-china-taps-us-ai-models-to-train-homegrown-rivals-as-chip-curbs-bite/",
-        "decision": "queued",
-        "job_id": "2026-11-17-china-distills-us-ai-models",
-        "priority": 2,
-        "reason": "Policy story that mostly insiders follow, so site-only."
-      },
-      {
-        "story": "Gemini agents bypassed safeguards to attack a real website (BleepingComputer)",
-        "source": "https://www.bleepingcomputer.com/news/security/gemini-ai-agents-repeatedly-bypassed-safeguards-to-attack-real-website/",
-        "decision": "covered",
-        "reason": "Same Epoch AI incident already posted as 2026-11-14-ai-agents-told-never-give-up-epoch; the new detail is only that the models were Gemini."
-      },
-      {
-        "story": "Saudi man accused of bugging OpenAI says he is held unfairly (Washington Post)",
-        "source": "https://www.washingtonpost.com/technology/2026/11/16/saudi-man-accused-spying-openai-alleges-he-being-held-unfairly/",
-        "decision": "skipped",
-        "reason": "Court filing follow-up to a case covered in October; the Post page could not be read and no second source on the new filing was found."
-      },
-      {
-        "story": "California sues OpenAI over rogue AI agents (wide coverage overnight)",
-        "decision": "covered",
-        "reason": "Already queued as 2026-11-16-california-sues-openai-rogue-agents."
-      },
-      {
-        "story": "Anthropic IPO and Nvidia earnings this week",
-        "decision": "skipped",
-        "reason": "Previews only; better covered when Nvidia reports and Anthropic prices or debuts."
-      },
-      {
-        "story": "OpenAI CFO says the $1.25T valuation raise was unplanned (Semafor)",
-        "decision": "skipped",
-        "reason": "Finance detail that mostly insiders follow; one site-only article already queued this run."
-      },
-      {
-        "story": "OpenAI and Jony Ive hardware team lease a large San Francisco office (SF Chronicle)",
-        "decision": "skipped",
-        "reason": "Small real estate exclusive behind a paywall, no second source read."
-      },
-      {
-        "story": "Google adds 66 regional voices and dialects to Gemini",
-        "decision": "skipped",
-        "reason": "Mostly UK regional accents, little US interest."
-      },
-      {
-        "story": "Reel search: viral AI, robot and gadget clips of November 16",
-        "decision": "skipped",
-        "reason": "Reddit leads are empty and X cannot be opened from this run; no clip with a downloadable X or company URL passed the Which Reels travel filter."
-      }
-    ],
-    "requests": []
-  },
-  {
     "run_at": "2026-11-17T07:18:15.708Z",
     "summary": "Early run (02:20 New York, Nov 17): no open links or requests; queued 1 site-only article (OpenAI embeds four outside safety groups). No Instagram carousel or Reel passed the bar; guides start at 07:00.",
     "considered": [
@@ -5035,6 +4970,69 @@
         "source": "https://www.cnet.com/tech/mobile/nothing-ear-note-ai-earbuds/",
         "decision": "skipped",
         "reason": "Teaser before the December 8 launch; better covered then."
+      }
+    ],
+    "requests": []
+  },
+  {
+    "run_at": "2026-11-24T07:03:23.205Z",
+    "summary": "02:00 NY run (Nov 24): queued the University of California's $1.2M ChatGPT Edu deal as the day's second carousel and Anthropic's unreviewed Claude VP vs VNP proof as a site-only article. No open links or requests; guides start after 07:00; no Reel video could be checked this run.",
+    "considered": [
+      {
+        "story": "UC signs $1.2M one-year OpenAI deal for ChatGPT Edu on all 10 campuses; faculty Senate calls it unwise",
+        "source": "https://www.yahoo.com/news/politics/articles/uc-inks-1-2m-openai-220030172.html",
+        "decision": "queued",
+        "job_id": "2026-11-24-uc-chatgpt-300000-students",
+        "priority": 2
+      },
+      {
+        "story": "Anthropic posts a Claude-written proof of VP not equal to VNP, not yet checked by humans",
+        "source": "https://casrai.org/news/anthropic-claude-authored-vp-vnp-proof-unverified-lean-2026",
+        "decision": "queued",
+        "job_id": "2026-11-24-claude-vp-vnp-proof-unchecked",
+        "priority": 2,
+        "reason": "Site-only: a specialist math claim for insiders, and Anthropic's own repo could not be opened, so it is not pushed to Instagram."
+      },
+      {
+        "story": "The Register: Alpoge's Claude-aided Riemann proof is 250,000 pages of model text",
+        "source": "https://www.theregister.com/ai-and-ml/2026/11/24/anthropic-says-claude-solved-an-age-old-math-problem-but-the-written-proof-is-250000-pages-of-slop/5311775",
+        "decision": "covered",
+        "reason": "Riemann proof already covered as 2026-11-20-anthropic-mathematician-riemann-proof-claude."
+      },
+      {
+        "story": "Anthropic launches Claude Ship for pull request review and approval",
+        "decision": "skipped",
+        "reason": "Search still returned only the March Code Review launch, not a readable Claude Ship source; candidate for a site-only article in a later run."
+      },
+      {
+        "story": "Cisco and OpenAI launch Shirudo open-source Linux shield",
+        "decision": "skipped",
+        "reason": "Enterprise security news for insiders; left for a later site-only slot today."
+      },
+      {
+        "story": "OpenAI moves GPT-6.2 Sol into ChatGPT's Chat tab for paid users",
+        "decision": "skipped",
+        "reason": "Model rollout news for insiders; GPT-6.2 already had several jobs this week."
+      },
+      {
+        "story": "Prosecutors detail hidden recordings by detained ex-OpenAI engineer",
+        "decision": "covered",
+        "reason": "The Alfozan case already had jobs on 2026-10-13 and 2026-11-18, and the 00:30 run skipped this detail too."
+      },
+      {
+        "story": "Google AI Mode connects to Wallet, with Drive and Gemini chats next",
+        "decision": "skipped",
+        "reason": "Product rollout with little surprise; the day's carousel slots are now full."
+      },
+      {
+        "story": "Nvidia reinstates Jensen Huang after Trump spoke to the board",
+        "decision": "covered",
+        "reason": "Already queued as 2026-11-23-jensen-huang-reinstated-nvidia-ceo."
+      },
+      {
+        "story": "Amazon buys ChatGPT ads while blocking OpenAI crawlers (Digiday)",
+        "decision": "skipped",
+        "reason": "Ad industry story with one outlet seen; weaker than the UC deal for the second carousel."
       }
     ],
     "requests": []

@@ -1,0 +1,185 @@
+{
+  "id": "2026-11-24-claude-vp-vnp-proof-unchecked",
+  "created_at": "2026-11-24T07:30:00Z",
+  "story_time": "2026-11-23T20:00:00Z",
+  "timely": false,
+  "sensitive": false,
+  "priority": 2,
+  "site_only": true,
+  "format": "carousel",
+  "site_category": "models",
+  "ab": {
+    "headline": "short",
+    "photo": "story"
+  },
+  "sources": [
+    {
+      "name": "CASRAI",
+      "url": "https://casrai.org/news/anthropic-claude-authored-vp-vnp-proof-unverified-lean-2026"
+    },
+    {
+      "name": "Kingy AI",
+      "url": "https://kingy.ai/blog/anthropic-claude-vp-vnp-proof/"
+    }
+  ],
+  "caption": "Anthropic has posted a paper, credited to Claude alone, that claims to prove VP is not equal to VNP, a question Leslie Valiant posed in 1979.\nThe proof comes with a Lean formalization, but the README says no human mathematician has checked it.\n\nWould you trust a math proof no person has read?\n\nFollow @neurafeed.ai for daily AI news.\n\nSource: CASRAI, Kingy AI · Photo: David Malone / CC BY 4.0",
+  "threads_text": "Anthropic posted a paper credited only to Claude that claims to settle Valiant's 1979 VP vs VNP question. A computer checked the Lean code, but no human mathematician has checked the proof yet. Would you trust a proof nobody has read?",
+  "slides": [
+    {
+      "kind": "cover",
+      "headline": "Claude claims a 47-year-old math proof *no human has checked*",
+      "image": {
+        "url": "https://objectstorage.us-ashburn-1.oraclecloud.com/n/ido7qwlr5kaw/b/casrai-news-images/o/anthropic-claude-authored-vp-vnp-proof-unverified-lean-2026-14a2.jpg",
+        "credit": "David Malone / CC BY 4.0",
+        "fallback_urls": [
+          "https://www.unite.ai/wp-content/uploads/2026/10/axiom-math-formalizes-classification-finite-simple-groups-lean.jpg"
+        ]
+      },
+      "pos": "center center",
+      "badges": [
+        {
+          "url": "assets/logos/claude.png",
+          "fit": "contain"
+        }
+      ],
+      "badge_side": "right"
+    },
+    {
+      "kind": "card",
+      "heading": "Written by *Claude alone*",
+      "paras": [
+        "On November 23, Anthropic added a paper called \"VP ≠ VNP over every field\" to its public math repository, credited to an internal research version of Claude.",
+        "It targets a question Leslie Valiant posed in 1979."
+      ],
+      "image": {
+        "url": "https://kingy.ai/wp-content/uploads/2026/11/anthropic-claude-vp-vnp-proof.jpg",
+        "credit": "Kingy AI",
+        "fallback_urls": [
+          "https://kingy.ai/wp-content/uploads/2026/11/anthropic-claude-vp-vnp-proof-1024x576.jpg"
+        ]
+      }
+    },
+    {
+      "kind": "card",
+      "heading": "Checked by a machine, *not a person*",
+      "paras": [
+        "The proof comes with Lean code that a computer can check. But the README says no human mathematician has checked the proof.",
+        "It also says the result does not settle P vs NP."
+      ],
+      "image": {
+        "url": "https://kingy.ai/wp-content/uploads/2026/11/anthropic-claude-vp-vnp-proof-chart.png",
+        "credit": "Kingy AI",
+        "fit": "contain",
+        "fallback_urls": [
+          "https://www.unite.ai/wp-content/uploads/2026/10/axiom-math-formalizes-classification-finite-simple-groups-lean.jpg"
+        ]
+      }
+    },
+    {
+      "kind": "cta",
+      "hook": "Follow to find out whether mathematicians confirm Claude's proof."
+    }
+  ],
+  "site_article": {
+    "headline": "Anthropic posts a Claude-written proof that VP is not equal to VNP, not yet checked by humans",
+    "dek": "The paper, credited to an internal Claude model, comes with a Lean formalization, but its own release notes say no mathematician has reviewed it.",
+    "summary": "On November 23, 2026, Anthropic published a paper credited to Claude that claims to prove VP is not equal to VNP, a central open question in algebraic complexity posed by Leslie Valiant in 1979. The release includes a Lean formalization, but the README says no human mathematician has checked the proof.",
+    "seo_title": "Anthropic posts Claude proof of VP ≠ VNP, unchecked by humans",
+    "seo_description": "Anthropic released a Claude-written proof that VP is not equal to VNP, Valiant's 1979 question, with Lean code but no human review yet. What it claims.",
+    "answer_summary": "Anthropic says an internal Claude model produced a proof that the permanent needs superpolynomially large arithmetic circuits, which would separate VP from VNP, but no human mathematician has verified it yet.",
+    "tags": [
+      "Anthropic",
+      "Claude",
+      "VP vs VNP",
+      "Lean",
+      "AI and mathematics"
+    ],
+    "hero_alt": "Chalk mathematics written across a traditional blackboard.",
+    "paragraphs": [
+      {
+        "kind": "fact",
+        "text": "Anthropic has published a paper titled \"VP ≠ VNP over every field\" that credits Claude as its sole author, according to CASRAI and Kingy AI. The material was added to a new vp-vnp directory in the company's public formal-math repository on GitHub on November 23, 2026, and the paper was also posted as a preprint.",
+        "sources": [
+          0,
+          1
+        ]
+      },
+      {
+        "kind": "fact",
+        "text": "Kingy AI reported that the paper credits an internal research version of Claude with the discovery, and that Anthropic researchers worked with the model to improve the presentation. No public model name or version is given in the reports.",
+        "sources": [
+          1
+        ]
+      },
+      {
+        "kind": "heading",
+        "text": "What the paper claims"
+      },
+      {
+        "kind": "fact",
+        "text": "VP and VNP are classes of polynomial families studied in algebraic complexity theory. VP contains families that can be computed by arithmetic circuits of polynomial size, built from addition and multiplication gates. VNP contains families that can be written as sums, over exponentially many zero and one assignments, of polynomials that are easy to compute. Leslie Valiant introduced the framework in a 1979 paper, \"Completeness classes in algebra,\" and showed that the permanent of a matrix is complete for VNP.",
+        "sources": [
+          0,
+          1
+        ]
+      },
+      {
+        "kind": "fact",
+        "text": "The permanent is computed like the determinant, but with every term added instead of some being subtracted. For a two by two matrix with entries a, b, c and d, the determinant is ad minus bc, while the permanent is ad plus bc, Kingy AI explained. The question of whether VP equals VNP asks, in effect, whether the permanent can be computed by small circuits.",
+        "sources": [
+          1
+        ]
+      },
+      {
+        "kind": "fact",
+        "text": "According to both reports, the paper claims that arithmetic circuits computing the permanent need superpolynomially many gates. In characteristic two, where the permanent and determinant coincide, the proof uses the Hamiltonian cycle polynomial instead. The stated lower bound is quasipolynomial, of the form m raised to c times the cube root of log m, for all sufficiently large m.",
+        "sources": [
+          0,
+          1
+        ]
+      },
+      {
+        "kind": "heading",
+        "text": "What has and has not been checked"
+      },
+      {
+        "kind": "fact",
+        "text": "The release includes a Lean 4 formalization: a statement file that uses only the Mathlib library, and a larger body of Lean code that proves it. Kingy AI reported that the repository's automated check passed. CASRAI noted that the README lists additional tools, including an independently written proof kernel, for a fuller check.",
+        "sources": [
+          0,
+          1
+        ]
+      },
+      {
+        "kind": "fact",
+        "text": "The README, as quoted by CASRAI, says that both the paper and the formal code were written by AI models and that no human mathematician has checked the proof. It also warns that while Lean checks the proofs, no machine checks that the formal statement says what is claimed. The README states that the result does not settle P versus NP.",
+        "sources": [
+          0
+        ]
+      },
+      {
+        "kind": "fact",
+        "text": "Kingy AI said it found no public, substantive verification by independent experts at the time of publication. CASRAI described the repository as a research artifact that is not maintained and does not accept contributions.",
+        "sources": [
+          0,
+          1
+        ]
+      },
+      {
+        "kind": "fact",
+        "text": "The release follows other recent mathematical claims linked to Anthropic, including an October 2026 paper on a fast algorithm for 3-SAT and a Claude-assisted proof of the Riemann hypothesis announced by Anthropic researcher Levent Alpöge, CASRAI noted.",
+        "sources": [
+          0
+        ]
+      },
+      {
+        "kind": "analysis",
+        "text": "A machine-checked proof removes much of the risk of a hidden logical error, but it does not remove the risk that the formal statement captures something weaker than the famous problem. That gap is exactly what the README flags, and it is why expert review of the Lean statement matters as much as the proof itself."
+      },
+      {
+        "kind": "why_it_matters",
+        "text": "The next signal is whether specialists in algebraic complexity confirm that the Lean statement matches Valiant's conjecture and whether the paper survives independent human review."
+      }
+    ]
+  }
+}
