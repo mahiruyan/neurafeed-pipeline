@@ -1,68 +1,5 @@
 [
   {
-    "run_at": "2026-11-17T17:06:58.729Z",
-    "summary": "Midday run (11:55 New York, Nov 17): no open links or requests; queued the third site-only guide of the day (Grok vs ChatGPT). Both Instagram carousels and all four site-only news slots are used, no new priority 1 story since the last run, and no Reel passed the filter.",
-    "considered": [
-      {
-        "story": "Guide: Grok vs ChatGPT (next uncovered Tier 2 line in guides/plan.md, alternating after the Seedance tool library guide)",
-        "source": "https://docs.x.ai/grok/faq.md",
-        "decision": "queued",
-        "job_id": "2026-11-17-grok-vs-chatgpt-guide",
-        "priority": 2
-      },
-      {
-        "story": "Anthropic IPO prices on November 18 at $70 to $78 a share",
-        "source": "https://www.weex.com/learn/articles/anthropic-ipo-ant-prices-nov-18-at-70-78-what-it-means-xa9268s11gk5bzevtbxrsfr3",
-        "decision": "skipped",
-        "reason": "Still a preview; a run after pricing or the first trade should cover it as priority 1."
-      },
-      {
-        "story": "Nvidia reports earnings today at 21:20 UTC",
-        "decision": "skipped",
-        "reason": "Results are not out yet; a run after the report should cover them as priority 1."
-      },
-      {
-        "story": "ChatGPT Wallet lets AI agents pay with Visa, Mastercard and Amex (new coverage)",
-        "source": "https://openai.com/index/introducing-chatgpt-wallet/",
-        "decision": "covered",
-        "reason": "Already covered as 2026-11-13-chatgpt-wallet-agents-spend-money."
-      },
-      {
-        "story": "OpenAI releases an image classifier and 24-hour ChatGPT suspensions to fight CSAM (TechCrunch, Nov 16)",
-        "source": "https://techcrunch.com/2026/11/16/openai-releases-a-new-image-classifier-and-chatgpt-warnings-to-combat-csam",
-        "decision": "skipped",
-        "reason": "Child safety tooling not suited to an Instagram carousel, and all four site-only news slots for today are used."
-      },
-      {
-        "story": "AI-generated clip of Tim Cook unveiling Apple smart glasses goes viral on X (LatestLY fact check)",
-        "source": "https://www.latestly.com/social-viral/fact-check/apple-glasses-fake-video-ai-generated-clip-of-ceo-tim-cook-unveiling-new-smart-glasses-goes-viral-on-x-heres-fact-check-7318632.html",
-        "decision": "skipped",
-        "reason": "No original X post URL found to download, and reposting a deepfake of a real CEO as a Reel risks spreading it."
-      },
-      {
-        "story": "Reel search: viral AI, robot and gadget clips of November 16 and 17",
-        "decision": "skipped",
-        "reason": "Reddit leads are empty (HTTP 403) and X cannot be opened from this run; no new downloadable clip passing the Which Reels travel filter."
-      }
-    ],
-    "requests": []
-  },
-  {
-    "run_at": "2026-11-17T19:00:14.765Z",
-    "summary": "Link desk: made Mahir's Jensen Huang return meme Reel from @greghunkins on X.",
-    "considered": [
-      {
-        "story": "Life if Jensen Huang returns as CEO of NVIDIA (meme video, #standwithjensen)",
-        "source": "https://x.com/greghunkins/status/2122402159165837312",
-        "decision": "queued",
-        "job_id": "2026-11-17-life-if-jensen-returns-reel",
-        "priority": 1,
-        "reason": "Mahir's link, hook word for word from his title. Clip appears to be old sports celebration footage reused as a joke; caption says it is a joke. Shares the petition story with waiting desk job 2026-11-15-musk-petition-reinstate-jensen-huang (its source added, so the pipeline withdraws it)."
-      }
-    ],
-    "requests": []
-  },
-  {
     "run_at": "2026-11-17T19:08:42.042Z",
     "summary": "Afternoon run (13:55 New York, Nov 17): no open links or requests; queued OpenAI's GPT-6.2 Astra and Sol launch as a priority 1 Instagram carousel (framed on its own safety findings) and the fourth site-only guide (GPT-6.2 Astra vs Sol). No Reel passed the filter.",
     "considered": [
@@ -5072,6 +5009,69 @@
         "source": "https://www.nytimes.com/2026/11/23/business/elon-musk-ai-anthropic-google.html",
         "decision": "skipped",
         "reason": "Insider business story; site-only slots full."
+      }
+    ],
+    "requests": []
+  },
+  {
+    "run_at": "2026-11-24T19:03:04.298Z",
+    "summary": "14:00 NY run (Nov 24): no open links or requests; queued the day's fourth website guide (Vercel v0 for free). No new priority 1 story, no Reel video passed the filter, and both Instagram carousel slots and all four site-only article slots were already used.",
+    "considered": [
+      {
+        "story": "Guide: how to use Vercel v0 for free (plan limits explained)",
+        "source": "https://v0.app/docs/quickstart",
+        "decision": "queued",
+        "job_id": "2026-11-24-how-to-use-vercel-v0-guide",
+        "priority": 2,
+        "reason": "Next uncovered line in guides/plan.md (Devin is already covered by the Windsurf/Devin Desktop guide, Magnific by the Freepik guide); written from v0's quickstart, introduction and FAQ plus NxCode and Taskade reviews. v0's pricing page could not be read, so credit numbers are attributed to the reviews."
+      },
+      {
+        "story": "Roscosmos launches the Teledroid humanoid robot to the ISS on Progress MS-36",
+        "source": "https://www.unite.ai/roscosmos-launches-teledroid-humanoid-robot-on-progress-ms-36/",
+        "decision": "skipped",
+        "reason": "Only an AI-written article with an AI illustration and Roscosmos Telegram posts; no downloadable launch video of the robot itself, and the site-only slots are full."
+      },
+      {
+        "story": "Former OpenAI engineer allegedly used Codex to manage recordings from a hidden office bug",
+        "source": "https://www.businessinsider.com/openai-engineer-alfozan-codex-manage-recordings-feds-2026-11",
+        "decision": "covered",
+        "reason": "The bugging case already has four jobs, most recently 2026-11-18-openai-bugging-trial-no-spy-evidence, and both carousel slots for today are used."
+      },
+      {
+        "story": "Paradromics brain implant lets a woman speak in real time (NVIDIA partnership)",
+        "source": "https://x.com/paradromics/status/2099573569495736482",
+        "decision": "skipped",
+        "reason": "Speech milestone is from September and was already rejected this morning for the same reason."
+      },
+      {
+        "story": "Google DeepMind agents find faster quantum algorithms for fusion research (11.8x cheaper)",
+        "source": "https://deepmind.google/blog/finding-faster-quantum-algorithms-with-agents-and-formal-verification/",
+        "decision": "skipped",
+        "reason": "Research news for insiders and all four site-only slots are already used today."
+      },
+      {
+        "story": "Store robot in Russia appears to fight back after a customer pushes it",
+        "source": "https://www.tomsguide.com/ai/humanoid-robot-fights-back-after-man-pushes-it-in-store-is-the-beginning-of-the-uprising",
+        "decision": "skipped",
+        "reason": "From September 2026 and possibly a store ad, so not real news now."
+      },
+      {
+        "story": "Unitree and EngineAI humanoids spar in a San Francisco store",
+        "source": "https://e.vnexpress.net/news/tech/tech-news/chinese-humanoid-robots-go-viral-over-fight-in-san-francisco-store-5073375.html",
+        "decision": "skipped",
+        "reason": "From May 2026, an old clip."
+      },
+      {
+        "story": "OpenAI's OpenWorks pays local partners up to $8,000 a month",
+        "source": "https://decrypt.co/383848/openai-will-pay-8k-preach-ai-gospel-small-businesses",
+        "decision": "skipped",
+        "reason": "Good money angle, but no carousel or site-only slot left today."
+      },
+      {
+        "story": "Canva MCP generally available with new APIs and CLI",
+        "source": "https://www.canva.com/newsroom/news/canva-mcp-update/",
+        "decision": "skipped",
+        "reason": "Developer news for insiders and site-only slots are full."
       }
     ],
     "requests": []
