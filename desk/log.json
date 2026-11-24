@@ -1,58 +1,5 @@
 [
   {
-    "run_at": "2026-11-17T02:54:37.271Z",
-    "summary": "Late Monday run (21:50 New York): nothing queued. No open links or requests; today's carousel, site-only and guide slots are already full, and every fresh lead checked was either old news or already covered.",
-    "considered": [
-      {
-        "story": "SpaceX buys Anysphere (Cursor) for $60 billion (456X evening brief)",
-        "source": "https://www.marketreview.com/news/spacex-cursor-acquisition/",
-        "decision": "skipped",
-        "reason": "Old news: the deal closed on August 14, 2026; the brief only repeated it."
-      },
-      {
-        "story": "AMD completes World Labs deal, Fei-Fei Li becomes AMD chief scientist",
-        "source": "https://fortune.com/2026/09/28/amd-acquires-world-labs-startup-fei-fei-li-8-2-billion/",
-        "decision": "skipped",
-        "reason": "Deal was announced September 28; closing is a minor update for insiders and today's site-only slots are full."
-      },
-      {
-        "story": "Google plans to buy $10 billion of Anthropic shares at the IPO",
-        "source": "https://dataconomy.com/2026/11/12/google-and-nvidia-commit-10-billion-each-to-anthropic-ipo/",
-        "decision": "skipped",
-        "reason": "Reported November 12 and the Anthropic IPO has many posts this month; better saved for the debut itself."
-      },
-      {
-        "story": "OpenAI contracts 457 MW of AMD GPU capacity through TensorWave",
-        "source": "https://456xresearch.substack.com/p/456x-semi-ai-evening-brief-november",
-        "decision": "skipped",
-        "reason": "Infrastructure deal that mostly insiders follow, only read in one newsletter, and site-only slots are full."
-      },
-      {
-        "story": "OpenAI expands its science grant program to 200,000 scientists",
-        "source": "https://456xresearch.substack.com/p/456x-semi-ai-evening-brief-november",
-        "decision": "skipped",
-        "reason": "Program news for a niche audience, one source read, and today's site-only slots are full; could be a site article tomorrow if the official post confirms it."
-      },
-      {
-        "story": "Anthropic cuts its bug disclosure window to 30 days",
-        "source": "https://thenextweb.com/news/anthropic-disclosure-window-30-days-ai-vulnerabilities",
-        "decision": "skipped",
-        "reason": "Security policy change that mostly insiders follow; site-only slots for today are full."
-      },
-      {
-        "story": "California sues OpenAI over rogue AI agents",
-        "decision": "covered",
-        "reason": "Already queued as 2026-11-16-california-sues-openai-rogue-agents."
-      },
-      {
-        "story": "Reel search",
-        "decision": "skipped",
-        "reason": "Reddit leads are empty and no fresh X or company clip passing the Reels filter was found from this run."
-      }
-    ],
-    "requests": []
-  },
-  {
     "run_at": "2026-11-17T05:04:17.656Z",
     "summary": "Midnight run (00:10 New York, Nov 17): no open links or requests; queued 1 Instagram carousel (South Korea checks every student's glasses, sensitive, needs approval) and 1 site-only article (Reuters: China trains AI on US model answers). No Reel passed the filter and no guide yet (guides start at 07:00).",
     "considered": [
@@ -5022,6 +4969,72 @@
         "story": "Oregon and Virginia sue SpaceX over Grok deepfakes (Ars Technica)",
         "decision": "covered",
         "reason": "Already queued as 2026-11-23-states-sue-spacex-grok-deepfakes."
+      }
+    ],
+    "requests": []
+  },
+  {
+    "run_at": "2026-11-24T05:03:40.256Z",
+    "summary": "00:30 NY run (Nov 24): queued Google's rejected \"My Channel\" patent for AI TV shows starring the viewer as the first carousel of the day. No open links or requests; guides start after 07:00; no Reel video could be checked this run.",
+    "considered": [
+      {
+        "story": "Google patent filing describes AI-generated TV shows starring the viewer, with ads inserted",
+        "source": "https://www.404media.co/google-wants-to-make-a-24-7-ai-tv-channel-youll-be-the-main-character/",
+        "decision": "queued",
+        "job_id": "2026-11-24-google-ai-tv-starring-you",
+        "priority": 2
+      },
+      {
+        "story": "Prosecutors say ex-OpenAI engineer Alfozan used Codex to manage recordings from a hidden device",
+        "source": "https://www.businessinsider.com/openai-engineer-alfozan-codex-manage-recordings-feds-2026-11",
+        "decision": "covered",
+        "reason": "The Alfozan bugging case already had jobs on 2026-10-13 and 2026-11-18; a new detail of the same story is not re-queued."
+      },
+      {
+        "story": "Anthropic launches Claude Ship to review, fix and approve pull requests",
+        "source": "https://www.zdnet.com/innovation/claude-ship-code-how-to-try/",
+        "decision": "skipped",
+        "reason": "Planned as a site-only article, but neither ZDNet nor Anthropic's own page could be opened this run, and no second readable source was found."
+      },
+      {
+        "story": "OpenAI OpenWorks pays local partners up to $8,000 a month to bring AI to small businesses",
+        "source": "https://decrypt.co/383848/openai-will-pay-8k-preach-ai-gospel-small-businesses",
+        "decision": "skipped",
+        "reason": "Decrypt could not be opened, and the OpenAI small business pages found are older programs that do not mention OpenWorks or the payment."
+      },
+      {
+        "story": "Census working paper: early-career hires fell in the most AI-exposed industries",
+        "source": "https://www.census.gov/library/working-papers/2026/adrm/CES-WP-26-27.html",
+        "decision": "skipped",
+        "reason": "The paper is from April 2026 and the Gizmodo story found is from May, so it is not news now."
+      },
+      {
+        "story": "Cisco and OpenAI launch Shirudo open-source security project",
+        "source": "https://openai.com/index/introducing-shirudo/",
+        "decision": "skipped",
+        "reason": "Enterprise security news for insiders; can be a site-only article in a later run today if a second source is read."
+      },
+      {
+        "story": "US puts Megaspeed on the trade blacklist over alleged Nvidia chip exports",
+        "source": "https://www.bbc.com/news/articles/cv98xpg5dg5zo",
+        "decision": "skipped",
+        "reason": "Another follow-up to the Huang story, covered many times since November 15."
+      },
+      {
+        "story": "Nvidia reinstates Jensen Huang as CEO",
+        "decision": "covered",
+        "reason": "Already queued as 2026-11-23-jensen-huang-reinstated-nvidia-ceo."
+      },
+      {
+        "story": "Oregon and Virginia sue SpaceX over Grok deepfakes",
+        "decision": "covered",
+        "reason": "Already queued as 2026-11-23-states-sue-spacex-grok-deepfakes."
+      },
+      {
+        "story": "Nothing AI Ear Note earbuds record calls and conversations, due December 8",
+        "source": "https://www.cnet.com/tech/mobile/nothing-ear-note-ai-earbuds/",
+        "decision": "skipped",
+        "reason": "Teaser before the December 8 launch; better covered then."
       }
     ],
     "requests": []
