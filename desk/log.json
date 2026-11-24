@@ -1,68 +1,5 @@
 [
   {
-    "run_at": "2026-11-17T19:08:42.042Z",
-    "summary": "Afternoon run (13:55 New York, Nov 17): no open links or requests; queued OpenAI's GPT-6.2 Astra and Sol launch as a priority 1 Instagram carousel (framed on its own safety findings) and the fourth site-only guide (GPT-6.2 Astra vs Sol). No Reel passed the filter.",
-    "considered": [
-      {
-        "story": "OpenAI releases GPT-6.2 Astra and Sol; system card shows Astra hides known obstacles about twice as often and is the first model rated High for self-improvement",
-        "source": "https://www.unite.ai/openai-releases-gpt-6-2-astra-with-first-high-self-improvement-rating/",
-        "decision": "queued",
-        "job_id": "2026-11-17-gpt-6-2-astra-hides-problems",
-        "priority": 1
-      },
-      {
-        "story": "Guide: GPT-6.2 Astra vs Sol, which one to use (new model people will search for today)",
-        "source": "https://community.openai.com/t/gpt-6-2-astra-and-sol-are-now-available/1417531",
-        "decision": "queued",
-        "job_id": "2026-11-17-gpt-6-2-astra-vs-sol-guide",
-        "priority": 2
-      },
-      {
-        "story": "Jensen Huang says he is willing to return as Nvidia CEO (The Verge, Reuters)",
-        "source": "https://www.theverge.com",
-        "decision": "covered",
-        "reason": "Same story as 2026-11-15-jensen-huang-weighs-nvidia-return; nothing new beyond his openness to return."
-      },
-      {
-        "story": "Oregon attorney general files a $2 billion lawsuit against OpenAI over harm to teens",
-        "decision": "skipped",
-        "reason": "Both regular Instagram carousel slots are used and the GPT-6.2 launch took the priority 1 slot; worth a look in a later run or tomorrow if it grows."
-      },
-      {
-        "story": "Microsoft unveils cheaper specialized AI models for coding and cybersecurity (Reuters, Axios)",
-        "decision": "skipped",
-        "reason": "Insider product news and all four site-only news slots for today are already used."
-      },
-      {
-        "story": "Gemini can now handle texts, email, calls and payments as free tasks in six countries",
-        "decision": "skipped",
-        "reason": "Product update for a site-only article, but today's site-only news slots are full."
-      },
-      {
-        "story": "Anthropic IPO: Nasdaq-100 fast entry, retail traders prepare",
-        "decision": "skipped",
-        "reason": "Still previews before pricing; a run after pricing or the first trade should cover it as priority 1."
-      },
-      {
-        "story": "Nvidia reports earnings today at 21:20 UTC",
-        "decision": "skipped",
-        "reason": "Results are not out yet; a run after the report should cover them as priority 1."
-      },
-      {
-        "story": "Korean YouTuber 'Chungju Cat' took an exam wearing AI glasses and scored 25 points",
-        "source": "https://www.starnewskorea.com/en/star/2026/11/17/2026111707544511281",
-        "decision": "skipped",
-        "reason": "Close to today's Korea exam glasses carousel, and the clip appears to be on YouTube, which our servers cannot download."
-      },
-      {
-        "story": "Reel search: viral AI, robot and gadget clips of November 17",
-        "decision": "skipped",
-        "reason": "Reddit leads are empty (HTTP 403) and X cannot be opened from this run; no downloadable clip passing the Which Reels travel filter was found."
-      }
-    ],
-    "requests": []
-  },
-  {
     "run_at": "2026-11-17T21:36:08.731Z",
     "summary": "Late afternoon run (15:55 to 16:50 New York, Nov 17): no open links or requests; waited for Nvidia's 21:20 UTC results and queued them as a priority 1 carousel, plus two site-only guides (Gamma AI, Notion AI). No Reel passed the filter.",
     "considered": [
@@ -5072,6 +5009,71 @@
         "source": "https://www.canva.com/newsroom/news/canva-mcp-update/",
         "decision": "skipped",
         "reason": "Developer news for insiders and site-only slots are full."
+      }
+    ],
+    "requests": []
+  },
+  {
+    "run_at": "2026-11-24T21:04:39.381Z",
+    "summary": "16:00 NY run (Nov 24): no open links or requests; queued a priority 1 carousel on Anthropic falling below its $83 IPO price (money story everyone is discussing, beyond the 2 carousel cap as the priority 1 exception) and the day's fifth and sixth website guides (Synthesia, Le Chat now Mistral Vibe). No new Reel this run.",
+    "considered": [
+      {
+        "story": "Anthropic shares fall below their $83 IPO price as AI stocks slide",
+        "source": "https://www.fastcompany.com/91648273/ant-stock-is-down-why-anthropic-shares-dipped-below-ipo-price",
+        "decision": "queued",
+        "job_id": "2026-11-24-anthropic-stock-below-ipo-price",
+        "priority": 1,
+        "reason": "New milestone after the Nov 22 site-only job (which only said it neared $83); confirmed with AP and Fast Company. TechCrunch, CNBC and MSN pages could not be opened."
+      },
+      {
+        "story": "Guide: how to use Synthesia",
+        "decision": "queued",
+        "job_id": "2026-11-24-how-to-use-synthesia-guide",
+        "priority": 2,
+        "reason": "Next uncovered line in guides/plan.md; site-only, from Synthesia's help center and pricing page plus Wyzowl's review."
+      },
+      {
+        "story": "Guide: how to use Le Chat (now Mistral Vibe)",
+        "decision": "queued",
+        "job_id": "2026-11-24-how-to-use-le-chat-mistral-guide",
+        "priority": 2,
+        "reason": "Next line in guides/plan.md; Mistral renamed Le Chat to Vibe in May 2026, so the guide says so plainly; from Mistral's help center and announcement plus heise's test."
+      },
+      {
+        "story": "Nvidia falls 7.1% a day after a 31.5% jump on Huang's return",
+        "decision": "covered",
+        "reason": "Folded into the Anthropic carousel; Huang's return already covered as 2026-11-23-jensen-huang-reinstated-nvidia-ceo."
+      },
+      {
+        "story": "Jensen Huang tells staff it is not true Trump got him rehired (The Verge)",
+        "decision": "skipped",
+        "reason": "Follow-up to the covered Huang story, and a third Huang post would repeat it."
+      },
+      {
+        "story": "Tidal bans AI-generated music",
+        "source": "https://variety.com/2026/music/news/tidal-bans-ai-generated-music-1236956924/",
+        "decision": "skipped",
+        "reason": "Good everyday story but both carousel slots and all four site-only article slots are used today; worth a look tomorrow."
+      },
+      {
+        "story": "David Fincher criticized for suspected AI use in his Netflix film",
+        "decision": "skipped",
+        "reason": "Suspicion, not confirmed, and no slot left today."
+      },
+      {
+        "story": "Amazon delivery drone crashes on a garage, FAA probe",
+        "decision": "skipped",
+        "reason": "Not really an AI story and no clean original video found."
+      },
+      {
+        "story": "Max Tegmark claims Anthropic staff talk about taking over the world",
+        "decision": "skipped",
+        "reason": "One-sided claim from a single outlet; no second source read."
+      },
+      {
+        "story": "OpenAI's OpenWorks pays local experts up to $8,000 a month",
+        "decision": "skipped",
+        "reason": "Same as earlier runs: no carousel or site-only slot left today."
       }
     ],
     "requests": []
