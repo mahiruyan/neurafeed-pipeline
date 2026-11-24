@@ -1,76 +1,5 @@
 [
   {
-    "run_at": "2026-11-17T01:01:55.722Z",
-    "summary": "Evening run: no open links or requests; queued 2 site-only articles (Siri AI daily limits, Jordan Belfort's Tone). No Reel passed the filter: Reddit leads are empty and X could not be opened from here.",
-    "considered": [
-      {
-        "story": "Apple tests daily limits on advanced Siri AI, more with iCloud+",
-        "source": "https://www.iphoneincanada.ca/2026/11/16/siri-ai-daily-limits-icloud-canada/",
-        "decision": "queued",
-        "job_id": "2026-11-16-siri-ai-daily-limits-icloud",
-        "priority": 2,
-        "reason": "Site only: the day already has 3 Instagram carousels (2 posted, California lawsuit waiting for approval)."
-      },
-      {
-        "story": "Jordan Belfort launches Tone, an AI sales voice platform",
-        "source": "https://www.tokenpost.com/news/technology/58647",
-        "decision": "queued",
-        "job_id": "2026-11-16-jordan-belfort-tone-ai-voice",
-        "priority": 2,
-        "reason": "Site only for the same carousel cap; a strong person story otherwise."
-      },
-      {
-        "story": "California sues OpenAI over rogue AI agents",
-        "decision": "covered",
-        "reason": "Already queued as 2026-11-16-california-sues-openai-rogue-agents."
-      },
-      {
-        "story": "Trump names AI national champions",
-        "decision": "covered",
-        "reason": "Already posted as 2026-11-16-trump-ai-national-champions."
-      },
-      {
-        "story": "Trump says Huang affair did not threaten security; Nvidia board not rehiring Huang; Altman on Nvidia without Huang",
-        "source": "https://techcrunch.com/2026/11/16/trump-says-ex-nvidia-ceo-jensen-huangs-affair-with-an-alleged-chinese-spy-did-not-threaten-national-security/",
-        "decision": "skipped",
-        "reason": "Huang saga already has several jobs in the last 3 days; another angle tonight would repeat it."
-      },
-      {
-        "story": "Commerce moves to close remote AI chip access loophole",
-        "source": "https://arstechnica.com/tech-policy/2026/11/us-moves-to-cut-chinas-remote-access-to-ai-chips/",
-        "decision": "skipped",
-        "reason": "Policy detail tied to the Huang story; Ars page not readable from this run and no second source read."
-      },
-      {
-        "story": "Altimeter plans $5B in Anthropic IPO; AI doomers among IPO winners",
-        "decision": "skipped",
-        "reason": "Anthropic IPO covered from several angles this week; better saved for the debut itself."
-      },
-      {
-        "story": "OpenAI CSAM detection tools and embedded safety evaluators",
-        "decision": "skipped",
-        "reason": "Insider safety news, could not open the primary pages in this run."
-      },
-      {
-        "story": "FBI says Artex AI hacking tool breached networks in under three hours",
-        "source": "https://techcrunch.com/2026/11/16/fbi-says-artex-ai-open-source-hacking-tool-used-to-breach-networks-in-under-three-hours/",
-        "decision": "skipped",
-        "reason": "TechCrunch page not readable from here and no second source read."
-      },
-      {
-        "story": "Runway Praxis-1 robot model (possible Reel)",
-        "decision": "skipped",
-        "reason": "Open-weight robotics model for developers; no surprising consumer clip, fails the Reel filter."
-      },
-      {
-        "story": "Viral AI fake video of Sky News presenter Yalda Hakim",
-        "decision": "skipped",
-        "reason": "Reposting a political deepfake as a Reel would spread it."
-      }
-    ],
-    "requests": []
-  },
-  {
     "run_at": "2026-11-17T02:54:37.271Z",
     "summary": "Late Monday run (21:50 New York): nothing queued. No open links or requests; today's carousel, site-only and guide slots are already full, and every fresh lead checked was either old news or already covered.",
     "considered": [
@@ -5044,6 +4973,53 @@
       },
       {
         "story": "Oregon and Virginia sue SpaceX over Grok deepfakes",
+        "decision": "covered",
+        "reason": "Already queued as 2026-11-23-states-sue-spacex-grok-deepfakes."
+      }
+    ],
+    "requests": []
+  },
+  {
+    "run_at": "2026-11-24T02:54:18.600Z",
+    "summary": "22:00 NY run: nothing queued. No open links or requests; today already has 4 Reels, 5 Instagram carousels, 4 site-only articles and all 6 guides, the last posting window closes at 22:00, and no new priority 1 story appeared since the 20:00 run.",
+    "considered": [
+      {
+        "story": "Anthropic launches Claude Ship for pull request review and approval",
+        "decision": "skipped",
+        "reason": "Developer tool news for insiders; today's site-only slots are full, so it is a candidate for a site-only article tomorrow."
+      },
+      {
+        "story": "Cisco and OpenAI launch Shirudo open-source security project",
+        "decision": "skipped",
+        "reason": "Enterprise security news for insiders; site-only slots for today are full."
+      },
+      {
+        "story": "Gemini 4 Carbon comes to AI Pro subscribers in Google Antigravity",
+        "decision": "skipped",
+        "reason": "Developer tool rollout for insiders; site-only slots for today are full."
+      },
+      {
+        "story": "Futurism: Dario Amodei suggested addictive video games could keep people calm after AI takes jobs",
+        "decision": "skipped",
+        "reason": "Still only one outlet and the original remark was not found; today's carousel count is already past the limit."
+      },
+      {
+        "story": "HPE lifts outlook as AI demand boosts revenue (WSJ)",
+        "decision": "skipped",
+        "reason": "Earnings news with little interest for our audience."
+      },
+      {
+        "story": "AI data centers complicate UN climate talks (The Verge)",
+        "decision": "skipped",
+        "reason": "Policy story with low reach, and today's carousel slots are well past the limit."
+      },
+      {
+        "story": "Nvidia reinstates Jensen Huang after Trump spoke to the board (Washington Post)",
+        "decision": "covered",
+        "reason": "Already queued as 2026-11-23-jensen-huang-reinstated-nvidia-ceo."
+      },
+      {
+        "story": "Oregon and Virginia sue SpaceX over Grok deepfakes (Ars Technica)",
         "decision": "covered",
         "reason": "Already queued as 2026-11-23-states-sue-spacex-grok-deepfakes."
       }
