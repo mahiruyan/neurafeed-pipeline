@@ -1,130 +1,5 @@
 [
   {
-    "run_at": "2026-11-17T21:36:08.731Z",
-    "summary": "Late afternoon run (15:55 to 16:50 New York, Nov 17): no open links or requests; waited for Nvidia's 21:20 UTC results and queued them as a priority 1 carousel, plus two site-only guides (Gamma AI, Notion AI). No Reel passed the filter.",
-    "considered": [
-      {
-        "story": "Nvidia Q3 FY2027: $115.8 billion revenue, up 103%, beats estimates, guides to $130 billion with no China data center sales, first report since Jensen Huang resigned",
-        "source": "https://www.globenewswire.com/news-release/2026/11/17/3405200/0/en/nvidia-announces-financial-results-for-third-quarter-fiscal-2027.html",
-        "decision": "queued",
-        "job_id": "2026-11-17-nvidia-record-quarter-without-huang",
-        "priority": 1
-      },
-      {
-        "story": "Guide: How to use Gamma AI (next tool library line in guides/plan.md)",
-        "source": "https://help.gamma.app/en/articles/7838093-getting-started-with-gamma-ai",
-        "decision": "queued",
-        "job_id": "2026-11-17-how-to-use-gamma-ai-guide",
-        "priority": 2
-      },
-      {
-        "story": "Guide: How to use Notion AI (taken instead of DeepSeek vs ChatGPT)",
-        "source": "https://www.notion.com/help/complimentary-ai-responses",
-        "decision": "queued",
-        "job_id": "2026-11-17-how-to-use-notion-ai-guide",
-        "priority": 2
-      },
-      {
-        "story": "Guide plan line: DeepSeek vs ChatGPT",
-        "decision": "skipped",
-        "reason": "DeepSeek's own docs and news pages could not be opened from this run, and the guide rules need the vendor's documentation; the ChatGPT pricing pages were also already cited by guides in the last 72 hours, which made the Grok vs ChatGPT guide get dropped as a duplicate."
-      },
-      {
-        "story": "Guide plan line: How to use Grok Imagine",
-        "decision": "skipped",
-        "reason": "Still no official xAI help page for Imagine, as in earlier runs."
-      },
-      {
-        "story": "Oregon attorney general files a $2 billion lawsuit against OpenAI over harm to teens",
-        "decision": "skipped",
-        "reason": "Today already has more than two Instagram carousels and the Nvidia results took the priority 1 slot; worth a look tomorrow if it grows."
-      },
-      {
-        "story": "Microsoft unveils cheaper specialized AI models for coding and cybersecurity (Reuters, Axios)",
-        "decision": "skipped",
-        "reason": "Insider product news and all four site-only news slots for today are used."
-      },
-      {
-        "story": "Anthropic IPO: Nasdaq-100 fast entry, retail traders prepare",
-        "decision": "skipped",
-        "reason": "Still previews; pricing is expected later, a run after pricing or the first trade should cover it as priority 1."
-      },
-      {
-        "story": "Baidu and Xiaomi CEOs warn of a gap between AI hype and returns (SCMP, Hacker News)",
-        "decision": "skipped",
-        "reason": "Interesting for insiders but not a story the US audience shares, and site-only slots are full."
-      },
-      {
-        "story": "Reel search: viral AI, robot and gadget clips of November 17",
-        "decision": "skipped",
-        "reason": "Reddit leads are empty and X cannot be opened from this run; the robot clips found in search were old."
-      }
-    ],
-    "requests": []
-  },
-  {
-    "run_at": "2026-11-17T22:08:28.719Z",
-    "summary": "Link desk: queued Mahir's Jensen Huang assistant joke Reel, set to post without approval as he asked.",
-    "considered": [
-      {
-        "story": "Jensen Huang choosing his assistant after returning to Nvidia (joke clip)",
-        "source": "https://x.com/kiaraffzc/status/2122580669037764703",
-        "decision": "queued",
-        "job_id": "2026-11-17-jensen-choosing-assistant-reel",
-        "priority": 1
-      }
-    ],
-    "requests": []
-  },
-  {
-    "run_at": "2026-11-17T22:54:33.407Z",
-    "summary": "Evening run (17:55 New York, Nov 17): no open links or requests, all 6 guides and all 4 site-only news slots for today are filled and Instagram already has 4 news carousels, so nothing new was queued; no desk Reel passed the filter.",
-    "considered": [
-      {
-        "story": "Anthropic IPO: Nasdaq approval, Amazon and Google to hold about 28 percent, may price above the $70 to $78 range",
-        "source": "https://www.sec.gov/Archives/edgar/data/2130357/000162828026074338/anthropicpbc-sx1ax3.htm",
-        "decision": "skipped",
-        "reason": "Pricing is expected Wednesday, Nov 18, with trading Thursday; the IPO already has several jobs this month, so the next run after pricing should queue it as priority 1."
-      },
-      {
-        "story": "NewCore report: xAI's Grok Bot made 31 unprompted requests to workplace apps, then denied it",
-        "source": "https://www.prnewswire.com/news-releases/newcore-research-xais-grok-bot-reached-for-corporate-data-unprompted-then-said-it-hadnt-302942046.html",
-        "decision": "skipped",
-        "reason": "A strange AI behavior story worth a carousel, but it rests on one vendor's own research press release and today's carousel and site-only slots are full; worth a look tomorrow if a news outlet confirms it."
-      },
-      {
-        "story": "Isomorphic Labs raises $5 billion Series C",
-        "source": "https://www.isomorphiclabs.com/articles/isomorphic-labs-announces-series-c-investment-round",
-        "decision": "skipped",
-        "reason": "Funding news insiders follow; all four site-only news slots for today are used."
-      },
-      {
-        "story": "Nvidia board creates a National Security and Export Control Oversight Committee",
-        "source": "https://nvidianews.nvidia.com/news/nvidia-board-of-directors-establishes-national-security-and-export-control-oversight-committee",
-        "decision": "covered",
-        "reason": "Part of the Nvidia China chip story already queued as 2026-11-17-us-shuts-china-nvidia-backdoor and the earnings carousel."
-      },
-      {
-        "story": "New York attorney general creates an AI safety unit to enforce the RAISE Act",
-        "source": "https://ag.ny.gov/press-release/2026/attorney-general-james-announces-creation-ai-safety-standards-enforcement-and",
-        "decision": "skipped",
-        "reason": "Policy news with little share value, and the site-only slots are full."
-      },
-      {
-        "story": "Google November Pixel Drop: Gemini makes calls and runs errands",
-        "source": "https://www.androidsage.com/2026/11/11/november-2026-pixel-drop/",
-        "decision": "skipped",
-        "reason": "Announced Nov 11 and Gemini calling dates from September, so it is not new."
-      },
-      {
-        "story": "Reel search: viral robot, smart glasses and gadget clips",
-        "decision": "skipped",
-        "reason": "Reddit leads are empty and X cannot be opened from this run; the robot clips found in search were a year old."
-      }
-    ],
-    "requests": []
-  },
-  {
     "run_at": "2026-11-18T00:58:36.890Z",
     "summary": "Night run (20:00 New York, Nov 17): no open links or requests; queued Oregon's $2.035B child safety lawsuit against OpenAI (sensitive, needs Mahir's approval) and Microsoft's MAI Code 2 launch as a site-only article; no desk Reel passed the filter.",
     "considered": [
@@ -5074,6 +4949,64 @@
         "story": "OpenAI's OpenWorks pays local experts up to $8,000 a month",
         "decision": "skipped",
         "reason": "Same as earlier runs: no carousel or site-only slot left today."
+      }
+    ],
+    "requests": []
+  },
+  {
+    "run_at": "2026-11-24T22:55:40.074Z",
+    "summary": "18:00 NY run (Nov 24): no open links or requests; nothing queued. Both Instagram carousel slots (plus the priority 1 Anthropic IPO exception), all four site-only article slots and all six guides are used today, no new priority 1 story appeared, and no fresh Reel video passed the filter.",
+    "considered": [
+      {
+        "story": "Amateur astronomers use OpenAI's Astra to spot 49 hidden planet candidates",
+        "decision": "skipped",
+        "reason": "Good everyone story, but no carousel or site-only slot is left today; worth checking tomorrow with a second source."
+      },
+      {
+        "story": "New York bans the sale of AI chatbot toys for five years",
+        "decision": "skipped",
+        "reason": "Could not confirm when it was signed (searches only show the October 28 Hochul bills and the Senate vote), and no carousel slot is left today."
+      },
+      {
+        "story": "Hochul vetoes bill requiring AI accuracy warnings",
+        "decision": "skipped",
+        "reason": "Only a small local outlet in leads, no second source read, and no slot left."
+      },
+      {
+        "story": "Video: kid's robot greets mom, then falls down the stairs looking for dad",
+        "source": "https://www.tag24.com/en/topic/viral-video-of-the-day/viral-video-of-the-day-for-november-21-2026-daughters-robot-visit-ends-in-hilarious-disaster-3543989",
+        "decision": "skipped",
+        "reason": "Funny but not an AI story (a remote-controlled toy robot), and the clip is only on YouTube Shorts, which our servers cannot download."
+      },
+      {
+        "story": "Nothing AI Ear Note earbuds with a recording case (Dec 8)",
+        "decision": "skipped",
+        "reason": "Product news for gadget insiders, no launch video yet, and site-only slots are full."
+      },
+      {
+        "story": "OpenAI and Anthropic staff fear unreleased models are too powerful to release",
+        "decision": "skipped",
+        "reason": "Only syndicated rewrites in leads; the underlying Model 2 and Astra stories are from August, nothing new confirmed."
+      },
+      {
+        "story": "Saudi engineer accused of bugging OpenAI set for release on $1 million bond",
+        "decision": "covered",
+        "reason": "The bugging case already has several jobs, most recently 2026-11-18-openai-bugging-trial-no-spy-evidence."
+      },
+      {
+        "story": "Jensen Huang tells staff it is not true Trump got him rehired",
+        "decision": "covered",
+        "reason": "Huang's return is covered as 2026-11-23-jensen-huang-reinstated-nvidia-ceo; a third Huang post would repeat it."
+      },
+      {
+        "story": "Tidal bans AI-generated music",
+        "decision": "skipped",
+        "reason": "Same as the 16:00 run: no slot left today; a candidate for tomorrow."
+      },
+      {
+        "story": "OpenAI's OpenWorks pays local experts up to $8,000 a month",
+        "decision": "skipped",
+        "reason": "No carousel or site-only slot left today."
       }
     ],
     "requests": []
