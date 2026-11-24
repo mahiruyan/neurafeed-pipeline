@@ -1,72 +1,5 @@
 [
   {
-    "run_at": "2026-11-17T07:18:15.708Z",
-    "summary": "Early run (02:20 New York, Nov 17): no open links or requests; queued 1 site-only article (OpenAI embeds four outside safety groups). No Instagram carousel or Reel passed the bar; guides start at 07:00.",
-    "considered": [
-      {
-        "story": "OpenAI signs Apollo Research, METR, Transluce and Goodfire for embedded safety assessments",
-        "source": "https://www.theneuron.ai/news/openai-outsiders-catch-ai-deception/",
-        "decision": "queued",
-        "job_id": "2026-11-17-openai-lets-outside-auditors-inside",
-        "priority": 2,
-        "reason": "Safety news that mostly insiders follow, so site-only; three sources read."
-      },
-      {
-        "story": "OpenAI launches ChatGPT Wallet (new wave of coverage overnight)",
-        "decision": "covered",
-        "reason": "Already posted as 2026-11-13-chatgpt-wallet-agents-spend-money."
-      },
-      {
-        "story": "California sues OpenAI over rogue AI agents (more coverage)",
-        "decision": "covered",
-        "reason": "Already queued as 2026-11-16-california-sues-openai-rogue-agents."
-      },
-      {
-        "story": "Reuters: China trains AI on US model answers",
-        "decision": "covered",
-        "reason": "Already queued as 2026-11-17-china-distills-us-ai-models."
-      },
-      {
-        "story": "36Kr: GPT-6.2 Astra delay and Astra underperformance numbers",
-        "source": "https://eu.36kr.com/en/p/4073249958777989",
-        "decision": "skipped",
-        "reason": "Astra underperformance was covered on Nov 5, and 36Kr's numbers differ from OpenAI's own report, so only its embedded assessment facts were used."
-      },
-      {
-        "story": "AI cameras in the West Midlands caught nearly 19,000 possible offenses, including a driver drinking wine (BBC)",
-        "source": "https://www.yahoo.com/news/us/articles/ai-cameras-could-tackle-widespread-071135038.html",
-        "decision": "skipped",
-        "reason": "UK trial from March, re-reported Nov 15; little US interest and only one source read."
-      },
-      {
-        "story": "Anthropic $3.4 billion gas generator deal (FT)",
-        "decision": "skipped",
-        "reason": "Reported November 9, old news resurfacing in feeds."
-      },
-      {
-        "story": "Meta sued over AI-assisted layoff decisions",
-        "decision": "skipped",
-        "reason": "Lawsuit was filed in July 2026; not new."
-      },
-      {
-        "story": "Gemini lets users keep chat history without training",
-        "decision": "skipped",
-        "reason": "Could not confirm a new announcement; search results described the 2025 Keep Activity change."
-      },
-      {
-        "story": "Gemini Notebook turns research into interactive websites (Android Authority)",
-        "decision": "skipped",
-        "reason": "Small feature update for insiders and the article could not be confirmed with a second source in this run."
-      },
-      {
-        "story": "Reel search: viral AI, robot and gadget clips",
-        "decision": "skipped",
-        "reason": "Reddit leads are empty and X cannot be opened from this run; no downloadable clip passing the Which Reels travel filter was found."
-      }
-    ],
-    "requests": []
-  },
-  {
     "run_at": "2026-11-17T08:57:29.042Z",
     "summary": "Early run (04:20 New York, Nov 17): no open links or requests; queued 1 Instagram carousel (U.S. closes the rented Nvidia chip loophole, sensitive, needs approval) and 1 site-only article (Gemini Gems go read-only). No Reel passed the filter; guides start at 07:00.",
     "considered": [
@@ -5033,6 +4966,81 @@
         "story": "Amazon buys ChatGPT ads while blocking OpenAI crawlers (Digiday)",
         "decision": "skipped",
         "reason": "Ad industry story with one outlet seen; weaker than the UC deal for the second carousel."
+      }
+    ],
+    "requests": []
+  },
+  {
+    "run_at": "2026-11-24T08:56:09.536Z",
+    "summary": "Overnight run (04:20 New York): no open links or requests; today's 2 Instagram carousels are already queued, so added 2 site-only articles (GPT-6.2 Sol in ChatGPT Chat, Anthropic Claude Ship); found no Reel video that passes the filter.",
+    "considered": [
+      {
+        "story": "OpenAI rolls a chat-tuned GPT-6.2 Sol into ChatGPT's Chat tab for paid users, retires GPT-5.6 Sol and Terra on Dec 23",
+        "source": "https://9to5mac.com/2026/11/23/chatgpt-expands-gpt-6-2-sol-as-openai-sets-retirement-date-for-two-models/",
+        "decision": "queued",
+        "job_id": "2026-11-24-chatgpt-gpt-6-2-sol-chat-tab",
+        "priority": 2,
+        "reason": "Model rollout news, site-only article per Volume and mix; the day's 2 carousels are already used."
+      },
+      {
+        "story": "Anthropic launches Claude Ship, AI agents that review, fix and approve pull requests",
+        "source": "https://techcrunch.com/2026/11/23/anthropic-launches-claude-ship-letting-ai-agents-review-fix-and-approve-code-changes/",
+        "decision": "queued",
+        "job_id": "2026-11-24-anthropic-claude-ship-code-approvals",
+        "priority": 2,
+        "reason": "Developer product news mostly insiders follow, so site-only."
+      },
+      {
+        "story": "Prosecutors say detained ex-OpenAI engineer likely captured secrets on a hidden bug",
+        "source": "https://www.straitstimes.com/",
+        "decision": "covered",
+        "reason": "Same Alfozan bugging case as 2026-11-18-openai-bugging-trial-no-spy-evidence; bail-fight detail is a small update and today's carousel slots are full."
+      },
+      {
+        "story": "OpenAI chief scientist shares internal AI scores and proposes common limits",
+        "decision": "covered",
+        "reason": "Already covered as 2026-11-22-openai-pachocki-perplexity-limits."
+      },
+      {
+        "story": "Anthropic posts Claude-authored VP vs VNP proof",
+        "decision": "covered",
+        "reason": "Already queued as 2026-11-24-claude-vp-vnp-proof-unchecked."
+      },
+      {
+        "story": "UC spends $1.2M on ChatGPT for students",
+        "decision": "covered",
+        "reason": "Already queued as 2026-11-24-uc-chatgpt-300000-students."
+      },
+      {
+        "story": "Nvidia reinstates Jensen Huang after Trump spoke to the board",
+        "decision": "covered",
+        "reason": "Already covered as 2026-11-23-jensen-huang-reinstated-nvidia-ceo."
+      },
+      {
+        "story": "OpenAI and Cisco release Shirudo, open-source runtime shielding unpatched Linux",
+        "source": "https://openai.com/index/introducing-shirudo/",
+        "decision": "skipped",
+        "reason": "Security infrastructure news for specialists; left for a later run's site-only slot."
+      },
+      {
+        "story": "Anthropic opens beta for zero-retention safeguards",
+        "decision": "skipped",
+        "reason": "Enterprise policy detail with little reader interest."
+      },
+      {
+        "story": "Google AI Mode connects to Wallet, with Drive and Gemini app next",
+        "decision": "skipped",
+        "reason": "Incremental Search feature; site-only slots for this run used on bigger OpenAI and Anthropic launches."
+      },
+      {
+        "story": "Amazon buys ChatGPT ads while blocking OpenAI crawlers (Digiday)",
+        "decision": "skipped",
+        "reason": "Only one trade source seen so far; needs a second independent source."
+      },
+      {
+        "story": "Reel search: viral AI/robot clips (cooking robot fail, EngineAI fight clip, fake Tim Cook glasses video)",
+        "decision": "skipped",
+        "reason": "Older or already-debunked clips with no fresh X post found; nothing passed the Which Reels travel filter this run."
       }
     ],
     "requests": []

@@ -1,0 +1,184 @@
+{
+  "id": "2026-11-24-anthropic-claude-ship-code-approvals",
+  "created_at": "2026-11-24T09:20:00Z",
+  "story_time": "2026-11-23T20:51:00Z",
+  "timely": false,
+  "sensitive": false,
+  "priority": 2,
+  "site_only": true,
+  "format": "carousel",
+  "site_category": "companies",
+  "ab": {
+    "headline": "long",
+    "photo": "story"
+  },
+  "sources": [
+    {
+      "name": "TechCrunch",
+      "url": "https://techcrunch.com/2026/11/23/anthropic-launches-claude-ship-letting-ai-agents-review-fix-and-approve-code-changes/"
+    },
+    {
+      "name": "Digital Trends",
+      "url": "https://www.digitaltrends.com/computing/anthropic-claude-ship-code-review/"
+    }
+  ],
+  "caption": "Anthropic launched Claude Ship, a set of AI agents that review, fix and approve routine code changes on GitHub.\nOne agent, Claude Approvals, can approve pull requests on its own when they meet rules a team writes in plain language.\nIt is in beta for Claude Team and Enterprise plans.\n\nWould you let an AI approve your code?\n\nFollow @neurafeed.ai for daily AI news.\n\nSource: TechCrunch · Photo: Anthropic",
+  "threads_text": "Anthropic's new Claude Ship lets AI agents review, fix and even approve routine code changes, following rules a team writes in plain English. Anthropic says Claude already writes most of the Claude Code team's code. Would you let an AI sign off on your pull requests?",
+  "slides": [
+    {
+      "kind": "cover",
+      "headline": "Anthropic now lets Claude *approve code changes* on its own, with no human click needed",
+      "image": {
+        "url": "https://i0.wp.com/cdn.dtmg.xyz/uploads/2026/11/backdrop-export-6.jpg?resize=2000%2C1200&ssl=1",
+        "credit": "Anthropic",
+        "fallback_urls": [
+          "https://techcrunch.com/wp-content/uploads/2026/11/1claude-ship.png?w=680"
+        ]
+      },
+      "badges": [
+        {
+          "url": "assets/logos/claude.png",
+          "fit": "contain"
+        }
+      ]
+    },
+    {
+      "kind": "card",
+      "heading": "Three agents, *one pipeline*",
+      "paras": [
+        "Claude Ship combines Code Review, which is already generally available, with two new beta agents: PR Steward and Claude Approvals.",
+        "It works on GitHub repositories for Claude Team and Enterprise plans."
+      ],
+      "image": {
+        "url": "https://techcrunch.com/wp-content/uploads/2026/11/2claude-ship.png?w=680",
+        "credit": "Anthropic",
+        "fit": "contain"
+      }
+    },
+    {
+      "kind": "card",
+      "heading": "PR Steward *fixes the mess*",
+      "paras": [
+        "PR Steward handles failing checks, merge conflicts and review feedback, then comments on what it changed and how to undo it.",
+        "It cannot approve or merge code. Typing \"@claude stop\" halts it."
+      ],
+      "image": {
+        "url": "https://i0.wp.com/cdn.dtmg.xyz/uploads/2026/11/backdrop-export-7.jpg?resize=2000%2C1200&ssl=1",
+        "credit": "Anthropic",
+        "fit": "contain"
+      }
+    },
+    {
+      "kind": "card",
+      "heading": "Claude Approvals *signs off*",
+      "paras": [
+        "Claude Approvals approves routine changes that meet a policy the team writes in natural language, for example docs changes, while sensitive code still needs a human.",
+        "Anthropic suggests starting in observe-only mode."
+      ],
+      "image": {
+        "url": "https://i0.wp.com/cdn.dtmg.xyz/uploads/2026/11/backdrop-export-8.jpg?resize=2000%2C1200&ssl=1",
+        "credit": "Anthropic",
+        "fit": "contain"
+      }
+    },
+    {
+      "kind": "cta",
+      "hook": "Follow to see how far companies let AI run their code before a human looks."
+    }
+  ],
+  "site_article": {
+    "headline": "Anthropic launches Claude Ship to review, fix and approve code changes",
+    "dek": "The beta adds two agents to Claude Code Review, including one that can approve routine pull requests under rules a team writes itself.",
+    "summary": "Anthropic launched Claude Ship on November 23, 2026, a set of AI agents that review, fix and approve routine code changes on GitHub. It is in beta for Claude Team and Enterprise plans and is billed by token usage.",
+    "seo_title": "Anthropic Claude Ship: AI agents that review and approve code",
+    "seo_description": "Anthropic's Claude Ship beta adds PR Steward and Claude Approvals to Code Review on GitHub. What each agent does, who can use it and how it is billed.",
+    "answer_summary": "Claude Ship is a beta from Anthropic that combines Claude Code Review with two agents: PR Steward, which fixes problems in pull requests, and Claude Approvals, which approves routine changes under a team's written policy.",
+    "tags": [
+      "Anthropic",
+      "Claude",
+      "Claude Code",
+      "Claude Ship",
+      "AI coding"
+    ],
+    "hero_alt": "Anthropic diagram of a code workflow moving from review to fix to approve.",
+    "paragraphs": [
+      {
+        "kind": "fact",
+        "text": "Anthropic launched Claude Ship on November 23, 2026, a suite of AI agents that automates code reviews, fixes and approvals for routine code changes. The product is in beta and is available for repositories on GitHub to customers on Claude Team and Enterprise plans, according to TechCrunch and Digital Trends.",
+        "sources": [
+          0,
+          1
+        ]
+      },
+      {
+        "kind": "fact",
+        "text": "Claude Ship has three parts. Code Review, which checks pull requests, was already generally available. The two new pieces, PR Steward and Claude Approvals, are in beta. Anthropic positions the bundle as a way for early adopters to review pull requests and decide which ones are ready to merge.",
+        "sources": [
+          0,
+          1
+        ]
+      },
+      {
+        "kind": "heading",
+        "text": "What the two new agents do"
+      },
+      {
+        "kind": "fact",
+        "text": "PR Steward works on problems in a pull request after it is opened. It handles failing continuous integration checks, merge conflicts and feedback from Code Review. After each push, it leaves a comment explaining what it changed and how to roll the change back. Developers can give it more instructions by mentioning @claude or stop it with \"@claude stop\". PR Steward cannot approve or merge pull requests, Digital Trends reported.",
+        "sources": [
+          0,
+          1
+        ]
+      },
+      {
+        "kind": "fact",
+        "text": "Claude Approvals is the part that can approve code automatically. It applies an approval policy that a team writes in natural language and stores as a file in the repository. The policy can draw on signals such as Code Review findings or a company's own classifiers. Digital Trends gave the example of a policy that approves documentation changes while still requiring a human to approve sensitive code.",
+        "sources": [
+          0,
+          1
+        ]
+      },
+      {
+        "kind": "fact",
+        "text": "In its blog post, Anthropic said most teams want a person to approve every change and noted that Claude now writes most of the code on its own Claude Code team, TechCrunch reported. The company framed automated approval as a response to that shift.",
+        "sources": [
+          0
+        ]
+      },
+      {
+        "kind": "heading",
+        "text": "How teams start and what it costs"
+      },
+      {
+        "kind": "fact",
+        "text": "Developers can begin by updating Claude Code and running a new /ship command when their code is ready. Claude then pushes the changes, opens a pull request, reviews the code and works on the issues it finds. Teams can also enable the process for a whole repository so it starts automatically.",
+        "sources": [
+          1
+        ]
+      },
+      {
+        "kind": "fact",
+        "text": "Because the agents are in beta, Anthropic suggests running them in an observe-only mode first, starting with a single repository and setting monthly spending limits. Teams choose where Claude Ship runs, which review depth to use among Quick, Standard and Deep, and which changes are escalated to a human. Usage is billed by tokens, so costs grow with the amount of work Claude does.",
+        "sources": [
+          0,
+          1
+        ]
+      },
+      {
+        "kind": "fact",
+        "text": "Some organizations cannot use the product yet. According to Digital Trends, customers using Zero Data Retention are excluded, as are organizations with HIPAA configurations or customer-managed encryption keys.",
+        "sources": [
+          1
+        ]
+      },
+      {
+        "kind": "analysis",
+        "text": "Claude Ship moves AI coding tools from writing code toward deciding what ships. As agents produce more code than people can comfortably review, the bottleneck shifts to approval, and Anthropic is betting that teams will hand routine sign-offs to a model under written rules. The observe-only default and spending caps suggest the company expects cautious adoption at first."
+      },
+      {
+        "kind": "why_it_matters",
+        "text": "The key thing to watch is whether engineering teams actually let Claude Approvals merge changes without a human, and whether Anthropic extends Claude Ship beyond GitHub and its Team and Enterprise plans."
+      }
+    ]
+  }
+}
