@@ -1,126 +1,5 @@
 [
   {
-    "run_at": "2026-11-17T13:08:48.993Z",
-    "summary": "Morning run (07:55 New York, Nov 17): no open links or requests; queued the first site-only guide of the day (Bolt.new vs Lovable). Both Instagram carousels and all four site-only news slots for today are already used, and no new Reel passed the filter.",
-    "considered": [
-      {
-        "story": "Guide: Bolt.new vs Lovable (next uncovered line in guides/plan.md Tier 2)",
-        "source": "https://docs.lovable.dev/introduction/plans-and-credits",
-        "decision": "queued",
-        "job_id": "2026-11-17-bolt-new-vs-lovable-guide",
-        "priority": 2
-      },
-      {
-        "story": "Guide lines for ChatGPT Atlas, Atlas for Windows and Atlas vs Comet",
-        "source": "https://www.techradar.com/pro/openai-shuts-down-its-atlas-browser-after-not-even-a-year",
-        "decision": "skipped",
-        "reason": "OpenAI discontinued ChatGPT Atlas in July 2026, so a how-to guide would be wrong; Mahir may want to remove these lines from guides/plan.md."
-      },
-      {
-        "story": "Guide line: how to use Sora",
-        "source": "https://9to5google.com/2026/03/24/openai-shutting-down-sora-video-generation-app-but-without-explaining-why/",
-        "decision": "skipped",
-        "reason": "OpenAI shut the Sora app down in 2026, so the guide line is obsolete."
-      },
-      {
-        "story": "Guide line: Gemini Nano Banana not working (fixes)",
-        "decision": "skipped",
-        "reason": "Google has no official troubleshooting page for it, only forum threads and content farms, so the fixes could not be sourced from the vendor."
-      },
-      {
-        "story": "Taiex falls about 8% in two days as TSMC sells off before Nvidia earnings (Focus Taiwan)",
-        "source": "https://focustaiwan.tw/business/202611170018",
-        "decision": "skipped",
-        "reason": "Market story for finance insiders, both carousel slots and all site-only news slots are used; Nvidia's results tonight are the bigger story for a later run."
-      },
-      {
-        "story": "Nvidia reports earnings today at 21:20 UTC",
-        "decision": "skipped",
-        "reason": "Results are not out yet; a later run should cover them as priority 1."
-      },
-      {
-        "story": "Trump posts an AI-generated video of troops praying (Daily Beast, Yahoo)",
-        "source": "https://www.thedailybeast.com/trump-posts-bizarre-ai-generated-troop-video-after-shocking-revelation-on-scale-of-iran-humiliation",
-        "decision": "skipped",
-        "reason": "Politics story and both Instagram carousel slots for today are already used."
-      },
-      {
-        "story": "Unitree H2-X bodyguard robot video (Supercar Blondie, Nov 16)",
-        "source": "https://supercarblondie.com/unitree-robotics-h2-x-humanoid-robot-bodyguard/",
-        "decision": "covered",
-        "reason": "Same clip was already made as 2026-10-21-unitree-h2-x-kung-fu-guardian-reel; a repeat would be a sequel."
-      },
-      {
-        "story": "ChatGPT Wallet, Anthropic IPO, California sues OpenAI, China distillation, Gemini regional voices",
-        "decision": "covered",
-        "reason": "Already covered or decided in earlier runs (see their entries); nothing new since 05:55."
-      },
-      {
-        "story": "Reel search: viral AI, robot and gadget clips of November 16 and 17",
-        "decision": "skipped",
-        "reason": "Reddit leads are empty (HTTP 403) and X cannot be opened from this run; no new downloadable clip passing the Which Reels travel filter was found."
-      }
-    ],
-    "requests": []
-  },
-  {
-    "run_at": "2026-11-17T14:57:50.636Z",
-    "summary": "Morning run (09:55 New York, Nov 17): no open links or requests; queued the second site-only guide of the day (How to use Seedance 2.0 for free). Both Instagram carousels and all four site-only news slots are already used, no new priority 1 story, and no Reel passed the filter.",
-    "considered": [
-      {
-        "story": "Guide: How to use Seedance 2.0 for free (next uncovered tool library line after skipping Grok Imagine)",
-        "source": "https://dreamina.capcut.com/resource/how-to-use-seedance-2-0",
-        "decision": "queued",
-        "job_id": "2026-11-17-how-to-use-seedance-guide",
-        "priority": 2
-      },
-      {
-        "story": "Guide plan line: How to use Grok Imagine",
-        "decision": "skipped",
-        "reason": "Still no official xAI help page for Imagine in the Grok app, so took the next line as in earlier runs."
-      },
-      {
-        "story": "OpenAI signs embedded assessment deals with Apollo Research, METR, Transluce and Goodfire",
-        "source": "https://openai.com/index/our-first-phase-of-embedded-assessments",
-        "decision": "covered",
-        "reason": "Already queued as 2026-11-17-openai-lets-outside-auditors-inside."
-      },
-      {
-        "story": "OpenAI expands free ChatGPT Plus for 50,000 more academic researchers, applications open November 23",
-        "source": "https://openai.com/index/expanding-chatgpt-for-academic-researchers",
-        "decision": "skipped",
-        "reason": "Niche program for researchers, and all four site-only news slots for today are used."
-      },
-      {
-        "story": "TensorWave to supply 457 MW of AMD-powered capacity to OpenAI over six years",
-        "decision": "skipped",
-        "reason": "Infrastructure deal only insiders follow, and today's site-only news slots are full."
-      },
-      {
-        "story": "NVIDIA SC26 news: CUDA at 20, DGX Spark HPC developer kit, quantum codesign platform with IBM and Fermilab",
-        "source": "https://blogs.nvidia.com/blog/20-years-cuda",
-        "decision": "skipped",
-        "reason": "Supercomputing conference news for insiders; Nvidia earnings later today are the bigger Nvidia story for a later run."
-      },
-      {
-        "story": "US utilities test Anthropic's Mythos to find bugs in power grid software",
-        "decision": "skipped",
-        "reason": "Only seen in a newsletter roundup with a Google News link; not confirmed with two sources in this run and site-only slots are full."
-      },
-      {
-        "story": "Nvidia reports earnings today at 21:20 UTC",
-        "decision": "skipped",
-        "reason": "Results are not out yet; a run after the report should cover them as priority 1."
-      },
-      {
-        "story": "Reel search: viral AI, robot and gadget clips of November 16 and 17",
-        "decision": "skipped",
-        "reason": "Reddit leads are empty and X cannot be opened from this run; the robot clips that turned up (XRobotDoll, Xiaomi humanoids) are older or already covered, with no downloadable X post found."
-      }
-    ],
-    "requests": []
-  },
-  {
     "run_at": "2026-11-17T17:06:58.729Z",
     "summary": "Midday run (11:55 New York, Nov 17): no open links or requests; queued the third site-only guide of the day (Grok vs ChatGPT). Both Instagram carousels and all four site-only news slots are used, no new priority 1 story since the last run, and no Reel passed the filter.",
     "considered": [
@@ -5047,6 +4926,84 @@
         "story": "Anthropic Claude VP vs VNP proof, Claude Ship, GPT-6.2 Sol in Chat, Shirudo, UC ChatGPT deal, Google AI TV patent",
         "decision": "covered",
         "reason": "All already queued today."
+      }
+    ],
+    "requests": []
+  },
+  {
+    "run_at": "2026-11-24T14:59:49.610Z",
+    "summary": "10:00 NY run (Nov 24): no open links or requests; queued the day's second Reel (Figure's humanoids in the Las Vegas Grand Prix pit lane) and the day's second website guide (Genspark for free). Both Instagram carousel slots and all four site-only article slots were already used.",
+    "considered": [
+      {
+        "story": "Figure F.03 humanoids walk the Las Vegas Grand Prix pit lane (T-Mobile partnership)",
+        "source": "https://x.com/adcock_brett/status/2124558274058150257",
+        "decision": "queued",
+        "job_id": "2026-11-24-figure-humanoids-vegas-grand-prix-reel",
+        "priority": 2,
+        "reason": "Real robots at an event everyone knows, clear with the sound off; confirmed with Humanoids Daily and Humanoid Beat, and the caption says plainly that nobody has said whether they were autonomous."
+      },
+      {
+        "story": "Guide: how to use Genspark AI for free",
+        "source": "https://www.genspark.ai/helpcenter/ai-slides",
+        "decision": "queued",
+        "job_id": "2026-11-24-how-to-use-genspark-guide",
+        "priority": 2,
+        "reason": "Next uncovered line in guides/plan.md; site-only, written from Genspark's help center (plans, credits, AI Slides) plus Lindy and eesel reviews."
+      },
+      {
+        "story": "BrightMaster T100 robot spray paints buildings up to 100 meters high (viral clip)",
+        "source": "https://sundayguardianlive.com/trending/watch-video-chinese-brightmaster-t100-robot-spray-paints-skyscrapers-up-to-100-metres-high-automatically-navigates-balconies-and-curved-walls-viral-video-327165/",
+        "decision": "skipped",
+        "reason": "The only video is an RT repost with no named maker, and the one article just repeats the post's unverified specs."
+      },
+      {
+        "story": "OpenAI's OpenWorks pays local partners up to $8,000 a month to bring AI to small businesses",
+        "source": "https://decrypt.co/383848/openai-will-pay-8k-preach-ai-gospel-small-businesses",
+        "decision": "skipped",
+        "reason": "Good money angle, but today's two Instagram carousels and four site-only articles are already queued."
+      },
+      {
+        "story": "SpaceX sells computing capacity to Anthropic and Google (NYT)",
+        "source": "https://www.nytimes.com/2026/11/23/business/elon-musk-ai-anthropic-google.html",
+        "decision": "skipped",
+        "reason": "Insider business story and the site-only slots for today are full."
+      },
+      {
+        "story": "Nothing AI Ear Note earbuds with a recording case",
+        "source": "https://www.cnet.com/tech/mobile/nothing-ear-note-ai-earbuds/",
+        "decision": "skipped",
+        "reason": "Gadget launch with no video clip that passes the Reel filter; no slot left for an article."
+      },
+      {
+        "story": "US blacklists Singapore's Megaspeed over alleged Nvidia chip exports to China",
+        "source": "https://www.bbc.com/news/articles/cv98xpg5dg5zo",
+        "decision": "skipped",
+        "reason": "Trade policy detail for insiders; site-only slots full."
+      },
+      {
+        "story": "Thinking Machines Inkling 2 Mini looped model",
+        "decision": "skipped",
+        "reason": "Model research news for insiders; site-only slots full."
+      },
+      {
+        "story": "Google Search AI Mode connects to Drive and Wallet",
+        "decision": "skipped",
+        "reason": "Small product update and no slot left today."
+      },
+      {
+        "story": "Oregon and Virginia sue SpaceX over Grok deepfakes",
+        "decision": "covered",
+        "reason": "Already covered as 2026-11-23-states-sue-spacex-grok-deepfakes."
+      },
+      {
+        "story": "Nvidia reinstates Jensen Huang as CEO",
+        "decision": "covered",
+        "reason": "Already covered as 2026-11-23-jensen-huang-reinstated-nvidia-ceo."
+      },
+      {
+        "story": "Amazon buys Decart's AI tech for $7.5 billion",
+        "decision": "covered",
+        "reason": "Already covered as 2026-11-23-amazon-nears-decart-deal."
       }
     ],
     "requests": []
