@@ -5007,5 +5007,73 @@
       }
     ],
     "requests": []
+  },
+  {
+    "run_at": "2026-11-24T17:06:10.900Z",
+    "summary": "12:00 NY run (Nov 24): no open links or requests; queued the day's third website guide (Photoroom for product photos). No Reel passed the filter without repeating a covered story, and both Instagram carousel slots and all four site-only article slots were already used.",
+    "considered": [
+      {
+        "story": "Guide: how to use Photoroom for product photos",
+        "source": "https://www.photoroom.com/pricing",
+        "decision": "queued",
+        "job_id": "2026-11-24-how-to-use-photoroom-guide",
+        "priority": 2
+      },
+      {
+        "story": "Guide: how to use Jules, Google's coding agent",
+        "source": "https://jules.google/docs/changelog",
+        "decision": "skipped",
+        "reason": "Jules's own changelog says it went read-only on November 11 and shuts down on December 31, 2026, so a how-to guide would be useless; took the next plan line."
+      },
+      {
+        "story": "Video: Nvidia staff cheer Jensen Huang's return and an employee hugs him",
+        "source": "https://www.newsweek.com/woman-hugs-jensen-huang-return-nvidia-12761307",
+        "decision": "covered",
+        "reason": "Strong real clip, but Huang's reinstatement is already covered as 2026-11-23-jensen-huang-reinstated-nvidia-ceo and the same story rule forbids a second post."
+      },
+      {
+        "story": "Video: Tesla Optimus carries two suitcases off a private jet beside Elon Musk",
+        "source": "https://sundayguardianlive.com/world/watch-tesla-optimus-humanoid-robot-walks-beside-elon-musk-carrying-his-two-suitcases-off-private-jet-scene-reminds-users-of-a-sci-fi-movie-325622/",
+        "decision": "skipped",
+        "reason": "Only reposted by aggregator accounts with no original creator, one outlet, and fake AI Musk and Optimus clips are circulating, so it could not be verified as real."
+      },
+      {
+        "story": "Memes about Jensen Huang's return",
+        "source": "https://twitchy.com/samj/2026/11/24/huang-memes-n2434705",
+        "decision": "skipped",
+        "reason": "Story already covered and later memes on the same story underperform."
+      },
+      {
+        "story": "Woman allegedly used Meta smart glasses and ChatGPT to intimidate a witness",
+        "source": "https://www.foxnews.com/video/6408681902112",
+        "decision": "skipped",
+        "reason": "Fits the crime kind, but both Instagram carousel slots for today are used; can be checked tomorrow with a second source."
+      },
+      {
+        "story": "Dutch privacy watchdog calls recording smart glasses unsafe",
+        "source": "https://petapixel.com/2026/11/23/dutch-watchdog-says-smart-glasses-that-record-people-are-unsafe/",
+        "decision": "skipped",
+        "reason": "European regulator story with little US reach and no slot left today."
+      },
+      {
+        "story": "Zhipu releases GLM-5.4 with a 1M token context",
+        "source": "https://technode.com/2026/11/23/zhipu-rolls-out-glm-5-4-with-vision-and-million-token-context/",
+        "decision": "skipped",
+        "reason": "Model news for insiders and the four site-only slots are full."
+      },
+      {
+        "story": "OpenAI's OpenWorks pays local partners up to $8,000 a month",
+        "source": "https://decrypt.co/383848/openai-will-pay-8k-preach-ai-gospel-small-businesses",
+        "decision": "skipped",
+        "reason": "Good money angle, but no carousel or site-only slot left today."
+      },
+      {
+        "story": "SpaceX sells computing capacity to Anthropic and Google (NYT)",
+        "source": "https://www.nytimes.com/2026/11/23/business/elon-musk-ai-anthropic-google.html",
+        "decision": "skipped",
+        "reason": "Insider business story; site-only slots full."
+      }
+    ],
+    "requests": []
   }
 ]
