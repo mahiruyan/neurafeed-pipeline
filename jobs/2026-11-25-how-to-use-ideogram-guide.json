@@ -1,0 +1,180 @@
+{
+  "id": "2026-11-25-how-to-use-ideogram-guide",
+  "format": "utility",
+  "site_only": true,
+  "created_at": "2026-11-25T23:20:00Z",
+  "story_time": "2026-11-25T23:20:00Z",
+  "timely": false,
+  "sensitive": false,
+  "priority": 2,
+  "sources": [
+    { "name": "Ideogram docs: Quick start", "url": "https://docs.ideogram.ai/quick-start-guide" },
+    { "name": "Ideogram docs: Create images", "url": "https://docs.ideogram.ai/create/create" },
+    { "name": "Ideogram docs: Image settings", "url": "https://docs.ideogram.ai/create/image-settings" },
+    { "name": "Ideogram docs: Prompting basics", "url": "https://docs.ideogram.ai/prompting/prompting" },
+    { "name": "Ideogram docs: Plans and credits", "url": "https://docs.ideogram.ai/plans-and-billing/available-plans" },
+    { "name": "Ideogram docs: FAQ", "url": "https://docs.ideogram.ai/help/frequently-asked-questions" },
+    { "name": "Ideogram docs: Studio", "url": "https://docs.ideogram.ai/edit/studio" },
+    { "name": "Ideogram docs: Sign up", "url": "https://docs.ideogram.ai/get-started/signup-and-registration" },
+    { "name": "MindStudio: What is Ideogram", "url": "https://www.mindstudio.ai/blog/ideogram" }
+  ],
+  "caption": "Ideogram is the AI image maker people pick when the picture needs readable words on it: posters, logos, thumbnails.\nThe free plan gives 30 credits a week if you sign in with Google or Apple.\nThe full step by step guide, with the settings that matter, is on neurafeedai.com.\n\nWhat would you design first with it?\n\nFollow @neurafeed.ai for daily AI news.\n\nSource: Ideogram · Photo: Ideogram",
+  "threads_text": "Ideogram's own docs say the trick for clean text in AI images is simple: put the exact words in quotation marks, near the start of the prompt. Free accounts get 30 credits a week. Do you still fix text in AI images by hand?",
+  "slides": [
+    {
+      "kind": "cover",
+      "headline": "How to use *Ideogram* for free: images with readable text",
+      "image": {
+        "url": "https://storage.googleapis.com/ideogram-static/website/images/ba16d402d8d0b906.jpeg",
+        "credit": "Ideogram",
+        "fallback_urls": [
+          "https://storage.googleapis.com/ideogram-static/docs-website/1e6784f16a01038e-create-images-1.png"
+        ]
+      }
+    },
+    {
+      "kind": "card",
+      "heading": "1. Put the words in *quotes*",
+      "paras": [
+        "Type a prompt like a poster that says \"Summer Sale\". Ideogram's docs say quoted text near the start comes out most reliably.",
+        "English works best for text."
+      ],
+      "image": {
+        "url": "https://storage.googleapis.com/ideogram-static/docs-website/1e6784f16a01038e-create-images-1.png",
+        "credit": "Ideogram",
+        "fit": "contain"
+      }
+    },
+    {
+      "kind": "card",
+      "heading": "2. Know when to turn off *Magic Prompt*",
+      "paras": [
+        "Magic Prompt starts on and rewrites your prompt for richer images.",
+        "Switch it off when you need the model to follow your exact words."
+      ],
+      "image": {
+        "url": "https://storage.googleapis.com/ideogram-static/docs-website/b274c21ef81cef83-image-settings-1.png",
+        "credit": "Ideogram",
+        "fit": "contain"
+      }
+    },
+    {
+      "kind": "card",
+      "heading": "3. Fix one word in *Studio*",
+      "paras": [
+        "If a single word is wrong, open Studio and use AI edit, or Layerize text to turn the text into layers you can retype.",
+        "Free plans get 10 edited images in total."
+      ],
+      "image": {
+        "url": "https://storage.googleapis.com/ideogram-static/docs-website/0e4cfbff27d297c6-edit-studio-1.png",
+        "credit": "Ideogram",
+        "fit": "contain"
+      }
+    },
+    {
+      "kind": "cta",
+      "hook": "Follow for guides that show what free AI tools really give you."
+    }
+  ],
+  "site_article": {
+    "kind": "guide",
+    "headline": "How to use Ideogram for free: AI images with readable text",
+    "dek": "Ideogram is built for images that carry words. Here is how to sign up for the free plan, write prompts that spell text right, use the key settings and fix mistakes in Studio.",
+    "summary": "Ideogram is an AI image and video platform known for putting readable text into images. Free accounts that sign in with Google or Apple get 30 credits a week, and paid plans start at $20 a month.",
+    "seo_title": "How to use Ideogram for free: text in AI images, step by step",
+    "seo_description": "How to use Ideogram for free: sign up for 30 weekly credits, write prompts that spell text right, set Magic Prompt and quality, and fix words in Studio.",
+    "answer_summary": "Sign in at ideogram.ai with Google or Apple to get 30 free credits a week, type your prompt in the box on Home with the words you want in quotation marks, and press Enter. Turn off Magic Prompt when you need your exact wording.",
+    "tags": ["Ideogram", "AI image generator", "Text in images", "Guides"],
+    "hero_alt": "Ideogram banner with the company logo and a grainy pink and orange bird illustration.",
+    "paragraphs": [
+      {
+        "kind": "fact",
+        "text": "If you want to know how to use Ideogram for free, here is the short version: sign in with Google or Apple, type a prompt with the words you want in quotation marks, and spend your 30 weekly credits on a few good images. Ideogram's docs describe it as a platform for making and editing AI images and videos from text prompts or reference media, on the web at ideogram.ai, in an iOS app and through an API.",
+        "sources": [0, 4]
+      },
+      {
+        "kind": "fact",
+        "text": "Its reputation comes from text. Third-party reviewers such as MindStudio single out text rendering as the main reason people choose it over other image generators, and Ideogram's own prompting guide is built around getting words right.",
+        "sources": [8, 3]
+      },
+      { "kind": "heading", "text": "How to sign up for Ideogram's free plan" },
+      {
+        "kind": "step",
+        "title": "1. Sign in with Google or Apple",
+        "text": "Go to ideogram.ai and select Sign in or Get started. You can continue with Google, Apple, Microsoft, a company SSO account or email. The free weekly credits go to Google and Apple sign-ups. The docs say email accounts get none and have to buy credits, and the pages disagree about Microsoft, so pick Google or Apple if you want the free plan."
+      },
+      {
+        "kind": "step",
+        "title": "2. Choose a username carefully",
+        "text": "On the first screen you set a username of 3 to 16 characters. The docs say it can never be changed, not even by support. The display name can be changed later. When the plan screen appears, select Skip for now to stay on Free."
+      },
+      { "kind": "heading", "text": "How to make your first image" },
+      {
+        "kind": "step",
+        "title": "3. Type a prompt on Home",
+        "text": "On Home, use the main prompt box (labeled What will you design), keep Image selected and type your prompt. Press Enter on desktop or tap the arrow on mobile. Ideogram opens the Image app on Auto, which picks a model for you, and starts generating. You can also add up to 9 reference images."
+      },
+      {
+        "kind": "step",
+        "title": "4. Use the Image app for control",
+        "text": "Select Image in the sidebar to see the full settings panel. The model picker sits at the top and starts on Auto. The Generate button shows the credit cost before you click, and Cmd+Enter or Ctrl+Enter runs it. Results land in the Assets tab and are saved under Library, Generations."
+      },
+      {
+        "kind": "step",
+        "title": "5. Download",
+        "text": "Open the image, select Download, choose the file type and size, then select Download again. On the free plan you get a JPEG at the original size; PNG, WEBP and larger sizes need a paid plan."
+      },
+      { "kind": "heading", "text": "How to get readable text in Ideogram images" },
+      {
+        "kind": "fact",
+        "text": "The docs give one main rule: put any text you want in the image in quotation marks, near the start of the prompt, spelled and capitalized exactly as you want it. English gives the most reliable results, especially with text. Ideogram does not treat weights or flags such as --ar as commands, so set the aspect ratio and quality in the panel instead.",
+        "sources": [3, 1]
+      },
+      {
+        "kind": "prompt",
+        "title": "Prompt 1: A poster with a clear headline",
+        "text": "A poster that says \"[YOUR HEADLINE]\" in bold letters at the top, [SUBJECT] below it, [STYLE] style, plenty of empty space around the text"
+      },
+      {
+        "kind": "prompt",
+        "title": "Prompt 2: A thumbnail with two lines of text",
+        "text": "A video thumbnail with the words \"[LINE ONE]\" in large white letters and \"[LINE TWO]\" in smaller yellow letters, [SUBJECT] on the right side, bright background"
+      },
+      {
+        "kind": "tip",
+        "text": "Words in your prompt can show up in the picture even when you did not want them there. Keep descriptions plain and put only the text you want shown inside quotation marks."
+      },
+      { "kind": "heading", "text": "The settings that matter" },
+      {
+        "kind": "fact",
+        "text": "Magic Prompt is a toggle that starts on. The docs say it rewrites your prompt for more variety and richness and can translate it into English; turn it off when you want the model to follow your exact words. It is hidden on the newest models when reference images are attached, and the Auto model has no Magic Prompt.",
+        "sources": [2, 8]
+      },
+      {
+        "kind": "fact",
+        "text": "Ideogram 4.6 is the newest model in the docs, which suggest starting there for new work. You can make Auto or 1 to 8 images per run, and more images cost more credits. Quality changes the price too: on Ideogram 4.5 an image costs 3, 6 or 10 credits at Low, Medium or High, so lower quality stretches the free allowance further.",
+        "sources": [2, 4]
+      },
+      { "kind": "heading", "text": "How to fix a wrong word in Studio" },
+      {
+        "kind": "fact",
+        "text": "Studio, found under More in the sidebar, replaces the old Canvas and Magic Fill tools and saves your work automatically. The FAQ's fix for bad text is to regenerate with the exact words in quotes first. If only one word is wrong, edit it in Studio with AI edit, or use Layerize text to turn the text into layers you can retype. Select area, Extend, Remix and Upscale inside Studio need a paid plan.",
+        "sources": [5, 6]
+      },
+      { "kind": "heading", "text": "What Ideogram costs" },
+      {
+        "kind": "fact",
+        "text": "The free plan gives 30 credits a week, reset every Saturday at 00:00 UTC, plus 100 image descriptions a week and 10 edited images in total. Free images are public. Plus costs $20 a month, or $15 a month billed yearly, with 2,400 credits a month and private generation. Pro costs $60 a month with 7,500 credits, and Team costs $30 per user a month with at least 2 users. One credit equals one US cent of list price, and failed or blocked generations are not charged.",
+        "sources": [4]
+      },
+      {
+        "kind": "tip",
+        "text": "The FAQ says there are no refunds and asks you to cancel at least 5 days before your renewal date. Set a reminder if you try a paid month."
+      },
+      {
+        "kind": "analysis",
+        "text": "Ideogram is worth a try when the words in a picture matter as much as the picture: a flyer, a sign, a cover, a thumbnail. The free plan is small, a handful of images a week at medium quality, and everything you make on it is public, so it is a test drive rather than a workhorse. If you need private images or regular output, Plus is the realistic starting point."
+      }
+    ]
+  }
+}

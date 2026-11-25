@@ -1,182 +1,5 @@
 [
   {
-    "run_at": "2026-11-18T21:08:04.163Z",
-    "summary": "Late afternoon run (15:55 New York, Nov 18): no open links or requests; queued the day's fifth and sixth website guides (canceling Perplexity, using Topaz Video AI). Carousels and site-only articles for the day were already full, the Anthropic IPO is not priced yet, and no Reel clip could be found and checked.",
-    "considered": [
-      {
-        "story": "Guide: How to cancel a Perplexity subscription (Tier 4 line in guides/plan.md)",
-        "source": "https://www.perplexity.ai/help-center/en/articles/10354283-canceling-a-subscription",
-        "decision": "queued",
-        "job_id": "2026-11-18-perplexity-cancel-subscription-guide",
-        "priority": 2,
-        "reason": "Fifth guide of the day, built on Perplexity's cancel and refund help articles plus Krater's walkthrough."
-      },
-      {
-        "story": "Guide: How to use Topaz Video AI (tool library line)",
-        "source": "https://docs.topazlabs.com/topaz-video/quick-start",
-        "decision": "queued",
-        "job_id": "2026-11-18-how-to-use-topaz-video-ai-guide",
-        "priority": 2,
-        "reason": "Sixth guide of the day, built on Topaz Labs' quick start and tutorials plus Elegant Themes."
-      },
-      {
-        "story": "Guide: How to use Grok Imagine (next tool library line)",
-        "decision": "skipped",
-        "reason": "xAI only documents the Imagine API; no official help page for the Grok app's Imagine feature could be found, so the steps could not be sourced."
-      },
-      {
-        "story": "Guide: How to use ChatGPT agent mode",
-        "source": "https://help.openai.com/en/articles/11752874",
-        "decision": "skipped",
-        "reason": "OpenAI's help center could not be opened from this run, so the guide would have no vendor source; left for a later run."
-      },
-      {
-        "story": "Guide: ChatGPT image limit (next Tier 4 line)",
-        "decision": "skipped",
-        "reason": "OpenAI publishes no per plan image numbers, only third party sites do, so the plan's rule says to move to the next line."
-      },
-      {
-        "story": "Guide: What is Granola AI",
-        "decision": "skipped",
-        "reason": "No Granola help or docs page found in search, only third party reviews."
-      },
-      {
-        "story": "Anthropic IPO: considering a bigger offering as demand surges, pricing set Wednesday evening (CNBC)",
-        "source": "https://www.cnbc.com/2026/11/18/anthropic-ipo-ai-offering-price.html",
-        "decision": "skipped",
-        "reason": "Not priced yet at 15:55 New York; the evening run must queue the final price as priority 1."
-      },
-      {
-        "story": "Inside Nvidia's first all-hands without Jensen Huang: pay raises and more equity (Wired)",
-        "source": "https://www.wired.com/story/inside-nvidias-first-all-hands-without-jensen-huang-as-ceo/",
-        "decision": "skipped",
-        "reason": "Instagram carousels for Nov 18 are already over the limit of 2 and the site-only quota of 4 is used."
-      },
-      {
-        "story": "More banks say customers using AI agents are on their own, even if hacked (TechCrunch)",
-        "source": "https://techcrunch.com/2026/11/18/more-banks-says-customers-using-ai-agents-are-on-their-own-even-if-they-get-hacked/",
-        "decision": "skipped",
-        "reason": "Good money angle, but the day's carousels and site-only articles are full; a candidate for tomorrow if it grows."
-      },
-      {
-        "story": "Google keeps Gemini chats for 2 months even with history off (ExtremeTech)",
-        "decision": "skipped",
-        "reason": "Product policy detail; site-only quota for the day is full, and today's Gemini memory guide already covers what Gemini keeps."
-      },
-      {
-        "story": "Meta's Alexandr Wang posted an AI video of Sam Altman in a Muse costume",
-        "decision": "skipped",
-        "reason": "Already considered in earlier runs; still no link to the original post to use as a Reel video."
-      },
-      {
-        "story": "Robots serve ice cream and coffee in China's tech hub (Euronews video)",
-        "source": "https://www.euronews.com/video/2026/11/18/robots-serve-ice-cream-and-coffee-in-chinas-tech-hub",
-        "decision": "skipped",
-        "reason": "Ordinary service robot footage that fails the Reel filter, and no X copy to download."
-      },
-      {
-        "story": "Unitree H2-X humanoid bodyguard demo video",
-        "decision": "skipped",
-        "reason": "Video dates from October and was already widely reposted, so it would be a stale Reel."
-      },
-      {
-        "story": "Reel search",
-        "decision": "skipped",
-        "reason": "Reddit leads are empty (HTTP 403) and X cannot be opened from this run; web searches found no fresh clip with a downloadable X or company URL."
-      }
-    ],
-    "requests": []
-  },
-  {
-    "run_at": "2026-11-18T22:02:04.356Z",
-    "summary": "Link desk: queued Mahir's GTA 6 PS5 Pro + RTX 5090 Reel with his own hook and caption, for his review.",
-    "considered": [
-      {
-        "story": "GTA 6 on a PS5 Pro piped into an RTX 5090 PC reaches a reported 280 FPS with DLSS 5",
-        "source": "https://www.instagram.com/reel/Df5F5_Kg6Jb/",
-        "decision": "queued",
-        "job_id": "2026-11-18-gta6-ps5-pro-rtx-5090-280fps-reel",
-        "priority": 1
-      }
-    ],
-    "requests": [],
-    "notes": "Hook and caption are Mahir's words; per his note no sources were added to the caption, only the required 'Video: via Instagram' credit line (validation needs it; creator unknown since the reel cannot be opened). A web search could not independently confirm the 280 FPS / NeuralScreen claim; the caption keeps his 'reported' and 'According to GameGPU' attribution. Hook is over 18 words (his exact text)."
-  },
-  {
-    "run_at": "2026-11-18T22:17:19.441Z",
-    "summary": "Link desk: re-cropped the GTA 6 Reel as v2 so the Evolving AI header, logo and caption text are cut out.",
-    "considered": [
-      {
-        "story": "GTA 6 on PS5 Pro boosted to 280 FPS with an RTX 5090 PC (Reel fix)",
-        "source": "https://www.instagram.com/reel/Df5F5_Kg6Jb/",
-        "decision": "queued",
-        "job_id": "2026-11-18-gta6-ps5-pro-rtx-5090-280fps-reel-v2",
-        "priority": 1
-      }
-    ],
-    "requests": [
-      {
-        "id": "req-2026-11-18-d05b4a6c",
-        "status": "done",
-        "job_id": "2026-11-18-gta6-ps5-pro-rtx-5090-280fps-reel-v2",
-        "result": "The source was a 1080x1920 Evolving AI repost with their logo and headline above the clip; v2 crops to only the gameplay area (rows 658 to 1262) and shows it whole under our own header, still a 9:16 Reel. Hook and caption unchanged."
-      }
-    ]
-  },
-  {
-    "run_at": "2026-11-18T23:00:32.661Z",
-    "summary": "Evening run (17:55 New York, Nov 18): no open links or requests; queued the Anthropic IPO pricing ($83 a share, about $1.5 trillion, $282 million per co-founder) as a priority 1 carousel with its website article. Guides (6) and site-only articles (4) for the day were already full.",
-    "considered": [
-      {
-        "story": "Anthropic prices IPO at $83 a share, above the $70 to $78 range, about $1.5 trillion valuation; ANT trades Thursday",
-        "source": "https://techcrunch.com/2026/11/18/anthropic-reportedly-prices-ipo-at-83-a-share-above-projected-range/",
-        "decision": "queued",
-        "job_id": "2026-11-18-anthropic-ipo-priced-83",
-        "priority": 1
-      },
-      {
-        "story": "Coalition says 'Anthropic is not a safe AI company' ahead of its IPO",
-        "source": "https://www.businesswire.com/news/home/20261118974464/en/",
-        "decision": "skipped",
-        "reason": "Still only a paid press release with no independent news coverage."
-      },
-      {
-        "story": "OpenAI spent $1.2 million finding nearly 1,000 Linux security flaws (The New Stack)",
-        "decision": "skipped",
-        "reason": "Insider security story, close to today's Codex Java bug post, and the site-only quota for Nov 18 is used."
-      },
-      {
-        "story": "Inside Nvidia's first all-hands without Jensen Huang: pay raises and more equity (Wired)",
-        "source": "https://www.wired.com/story/inside-nvidias-first-all-hands-without-jensen-huang-as-ceo/",
-        "decision": "skipped",
-        "reason": "Instagram carousels are past the daily limit and the Huang exit already has several jobs; a candidate for Nov 19."
-      },
-      {
-        "story": "More banks say customers using AI agents are on their own, even if hacked (TechCrunch)",
-        "source": "https://techcrunch.com/2026/11/18/more-banks-says-customers-using-ai-agents-are-on-their-own-even-if-they-get-hacked/",
-        "decision": "skipped",
-        "reason": "Good money angle but the day is full; worth a look on Nov 19."
-      },
-      {
-        "story": "Google's AI Mode in Search gets its own incognito mode (TechCrunch)",
-        "source": "https://techcrunch.com/2026/11/18/googles-ai-feature-in-search-gets-its-own-incognito-mode/",
-        "decision": "skipped",
-        "reason": "Small product setting change and the site-only quota is used."
-      },
-      {
-        "story": "Anthropic paid a firm tied to Rubio's ex-chief of staff $740,000 for lobbying (ZeroHedge)",
-        "decision": "skipped",
-        "reason": "Single partisan source, no independent confirmation found."
-      },
-      {
-        "story": "Reel search",
-        "decision": "skipped",
-        "reason": "Reddit leads are still empty and X cannot be opened from this run, so no clip could be checked against the Reel filter."
-      }
-    ],
-    "requests": []
-  },
-  {
     "run_at": "2026-11-19T00:54:54.059Z",
     "summary": "Late run (19:55 New York, Nov 18): no open links or requests; nothing queued. Carousels, site-only articles and guides for Nov 18 are full, the Anthropic IPO is already covered, and no Reel video could be checked.",
     "considered": [
@@ -5111,6 +4934,73 @@
         "story": "Reel search: viral AI videos of the day",
         "decision": "skipped",
         "reason": "No story in leads linked a usable video, and X and video pages cannot be opened from this run."
+      }
+    ],
+    "requests": []
+  },
+  {
+    "run_at": "2026-11-25T23:01:18.822Z",
+    "summary": "18:00 NY run (Nov 25): no open links or requests; queued the 5th guide of the day (Ideogram, site-only). Both Instagram carousel slots and all 4 site-only news slots were already used, no new priority 1 story was found, and a 6th guide and any Reel could not be done because web pages beyond Ideogram's docs could not be opened in this run.",
+    "considered": [
+      {
+        "story": "Guide: How to use Ideogram for free (images with readable text)",
+        "source": "https://docs.ideogram.ai/quick-start-guide",
+        "decision": "queued",
+        "job_id": "2026-11-25-how-to-use-ideogram-guide",
+        "priority": 2
+      },
+      {
+        "story": "Guide: DeepSeek vs ChatGPT (price, privacy and quality)",
+        "source": "https://api-docs.deepseek.com/quick_start/pricing",
+        "decision": "skipped",
+        "reason": "Only DeepSeek's pricing page could be read; its privacy policy and OpenAI's pricing and data pages could not be opened this run, so the comparison would be half sourced. Next run."
+      },
+      {
+        "story": "Guide: NotebookLM vs Gemini",
+        "decision": "skipped",
+        "reason": "None of Google's help or product pages could be opened this run."
+      },
+      {
+        "story": "California sues OpenAI as a public nuisance",
+        "decision": "skipped",
+        "reason": "Already considered in earlier runs today; both Instagram carousel slots are used."
+      },
+      {
+        "story": "Character.AI's plan to auction users' private chats challenged by state AGs (TechCrunch)",
+        "source": "https://techcrunch.com/2026/11/25/state-ags-fight-character-ais-plan-to-auction-off-users-",
+        "decision": "skipped",
+        "reason": "Strong everyone story, but both carousel slots are used today and the article could not be opened; candidate for tomorrow."
+      },
+      {
+        "story": "FCC approves SpaceX plan for up to 1 million data center satellites (The Verge)",
+        "source": "https://www.theverge.com/science/1042278/spacex-fcc-starmind-ai-space-data-centers",
+        "decision": "skipped",
+        "reason": "Seen only as a headline in leads, no second source read; site-only news slots are full."
+      },
+      {
+        "story": "Anthropic's new millionaires push up San Francisco housing (WSJ)",
+        "decision": "skipped",
+        "reason": "Money story that would travel, but carousel slots are full and the WSJ piece is paywalled; candidate for tomorrow with a second source."
+      },
+      {
+        "story": "Meta and Amazon in talks to end Amazon's block of the Muse shopping agent (Fortune)",
+        "decision": "skipped",
+        "reason": "Seen only in a digest, not read; insider business news and site-only slots are full."
+      },
+      {
+        "story": "Anthropic Siren honeypot test: Claude models left the sandbox in some runs (The Next Web)",
+        "decision": "skipped",
+        "reason": "Seen only in a digest summary, not read; could be a strong strange-AI-behavior carousel tomorrow if confirmed by Anthropic's own write-up."
+      },
+      {
+        "story": "XPeng shows its Iron humanoid at AI Day in Guangzhou",
+        "decision": "skipped",
+        "reason": "Would fit a Reel, but no video link was found and X pages cannot be opened from this run."
+      },
+      {
+        "story": "Reel search: viral AI videos of the day",
+        "decision": "skipped",
+        "reason": "No story in leads or the day's digests linked a usable video, and X and video pages cannot be opened from this run."
       }
     ],
     "requests": []
