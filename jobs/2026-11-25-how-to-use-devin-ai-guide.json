@@ -1,0 +1,238 @@
+{
+  "id": "2026-11-25-how-to-use-devin-ai-guide",
+  "format": "utility",
+  "site_only": true,
+  "created_at": "2026-11-25T17:30:00Z",
+  "story_time": "2026-11-25T17:30:00Z",
+  "timely": false,
+  "sensitive": false,
+  "priority": 2,
+  "sources": [
+    {
+      "name": "Devin docs: Introducing Devin",
+      "url": "https://docs.devin.ai/get-started/devin-intro"
+    },
+    {
+      "name": "Devin docs: Your First Session",
+      "url": "https://docs.devin.ai/get-started/first-run"
+    },
+    {
+      "name": "Devin docs: Self-serve plans",
+      "url": "https://docs.devin.ai/admin/billing/self-serve"
+    },
+    {
+      "name": "Cognition blog: New self-serve plans for Devin",
+      "url": "https://cognition.com/blog/new-self-serve-plans-for-devin"
+    }
+  ],
+  "caption": "Devin is Cognition's AI software engineer: plan in Ask mode, then let Agent mode write the code, run the tests and open the pull request.\nPro costs $20 a month, Max $200, and a free tier gives limited usage.\nThe full step by step guide, with task prompts, is on neurafeedai.com.\n\nWhat is the first task you would hand an AI engineer?\n\nFollow @neurafeed.ai for daily AI news.\n\nSource: Cognition · Photo: Cognition",
+  "threads_text": "Devin works best with tasks you could finish in about three hours, according to Cognition's own docs. Plan in Ask mode, then let it open the pull request. What would you hand it first?",
+  "slides": [
+    {
+      "kind": "cover",
+      "headline": "How to use *Devin*, the AI software engineer",
+      "image": {
+        "url": "https://cdn.sanity.io/images/2mc9cv2v/production/d07bae8473b1a9050702ed29446acc8b71b40798-1200x628.jpg?rect=0,1,1200,627&w=1200&h=627&fit=crop",
+        "credit": "Cognition",
+        "fallback_urls": [
+          "https://mintcdn.com/cognitionai/KaxfltcA8G4WlgV5/images/get-started/agent-mode.png?fit=max&auto=format&n=KaxfltcA8G4WlgV5&q=85&s=57d16a630c02c971df9e5a55bd77c734"
+        ]
+      }
+    },
+    {
+      "kind": "card",
+      "heading": "1. Plan it in *Ask mode*",
+      "paras": [
+        "Switch to Ask, pick your repo and ask how the code works. Ask mode never changes code.",
+        "Then click Construct a Devin Prompt and Send to Devin."
+      ],
+      "image": {
+        "url": "https://mintcdn.com/cognitionai/KaxfltcA8G4WlgV5/images/get-started/ada-main-page.png?fit=max&auto=format&n=KaxfltcA8G4WlgV5&q=85&s=a66e840b304f9f6ca9c5dfa18dbbc89f",
+        "credit": "Cognition",
+        "fit": "contain"
+      }
+    },
+    {
+      "kind": "card",
+      "heading": "2. Pick the *repo and agent*",
+      "paras": [
+        "In Agent mode, choose the repository and the agent: Lite for chores, Normal by default, Ultra for the hardest work.",
+        "Devin opens the pull request and watches CI."
+      ],
+      "image": {
+        "url": "https://mintcdn.com/cognitionai/KaxfltcA8G4WlgV5/images/get-started/agent-selector.png?fit=max&auto=format&n=KaxfltcA8G4WlgV5&q=85&s=7c10af743b77164b0288ae12defeefba",
+        "credit": "Cognition",
+        "fit": "contain"
+      }
+    },
+    {
+      "kind": "cta",
+      "hook": "Follow for guides that show what AI coding agents really do."
+    }
+  ],
+  "site_article": {
+    "kind": "guide",
+    "headline": "How to use Devin AI: your first session, task prompts and the plans",
+    "dek": "Devin plans in Ask mode, then writes, tests and ships code in Agent mode. Here are the steps, prompts to copy and what each plan costs.",
+    "summary": "Devin is Cognition's autonomous AI software engineer: it works in its own shell, editor and browser and opens pull requests on its own. Self-serve plans run from Free to Pro at $20 a month, Max at $200 and Teams at $80.",
+    "seo_title": "How to use Devin AI: first session, prompts and plans",
+    "seo_description": "How to use Devin AI step by step: set up a repo, plan in Ask mode, run Agent mode, pick an agent, write tasks it can finish, plus Free, Pro, Max, Teams prices.",
+    "answer_summary": "Sign in at app.devin.ai, set up your repository, plan the task in Ask mode, then send it to Agent mode with a repository and an agent selected. Give Devin tasks with a clear finish line, such as tests that must pass.",
+    "tags": [
+      "Devin",
+      "Cognition",
+      "AI coding agent",
+      "Guides"
+    ],
+    "hero_alt": "Cognition's announcement image for Devin's new self-serve plans.",
+    "paragraphs": [
+      {
+        "kind": "fact",
+        "text": "If you want to know how to use Devin AI, the short version is this: sign in at app.devin.ai, set up your repository, start in Ask mode to plan the work, then switch to Agent mode and let Devin write the code and open a pull request. Cognition's docs describe Devin as an autonomous AI software engineer that can write, run and test code on its own.",
+        "sources": [
+          0,
+          1
+        ]
+      },
+      {
+        "kind": "fact",
+        "text": "The docs give a simple rule for what to hand it: if you could do a task in about three hours, Devin can most likely do it. They also say it is not meant for extremely difficult tasks. Good fits named in the docs include bug fixes, small features, unit tests, documentation, code review, and migrations such as moving a file from JavaScript to TypeScript.",
+        "sources": [
+          0
+        ]
+      },
+      {
+        "kind": "fact",
+        "text": "Each session gives Devin its own workspace with three tools: a shell for commands and logs, an editor (IDE) you can open to follow or take over the work, and a browser. You reach them from the sidebar or by clicking a progress step in the session.",
+        "sources": [
+          0
+        ]
+      },
+      {
+        "kind": "heading",
+        "text": "How to use Devin AI: your first session"
+      },
+      {
+        "kind": "step",
+        "title": "1. Sign in",
+        "text": "Go to app.devin.ai and sign in. Individual and team plans are available. If your company already works with Cognition, the docs say to ask your admin for access instead of starting a new account."
+      },
+      {
+        "kind": "step",
+        "title": "2. Set up your repository first",
+        "text": "Before the first session, the docs tell you to add and index your repository and set up its environment. This is what lets Devin start from the right code, the right branch and the right pull request target."
+      },
+      {
+        "kind": "step",
+        "title": "3. Start in Ask mode",
+        "text": "On the main page, switch the toggle to Ask and pick one or more repositories. Ask mode explores the code and answers questions with citations, but it does not change any code. Use it to understand the part of the codebase you want changed and to plan the task."
+      },
+      {
+        "kind": "step",
+        "title": "4. Turn the plan into a prompt",
+        "text": "When the plan looks right, use Construct a Devin Prompt. It turns the Ask conversation into a scoped task. Then click Send to Devin to move it to Agent mode. If the task is already fully clear, you can skip Ask and start in Agent mode directly."
+      },
+      {
+        "kind": "step",
+        "title": "5. Pick a repository and an agent",
+        "text": "In Agent mode, choose the repository and the agent. The repository selector only lists repos added to Devin's machine. You can change the agent mid-session with the toggle next to the message box; the change applies to your next message."
+      },
+      {
+        "kind": "step",
+        "title": "6. Point Devin at the right context",
+        "text": "Type @ in the message box to mention repos, files, sessions, skills, secrets or Knowledge entries. This is faster than pasting file names into the prompt and keeps Devin looking in the right place."
+      },
+      {
+        "kind": "step",
+        "title": "7. Review what it did",
+        "text": "Devin handles the branch, the pull request and CI on its own. When the session ends, open Session Insights and click Generate Analysis. You get a timeline of the session, feedback, and a better version of your prompt for next time."
+      },
+      {
+        "kind": "heading",
+        "text": "Which Devin agent to choose"
+      },
+      {
+        "kind": "fact",
+        "text": "The agent picker has several options. Lite is the cheapest and meant for simple, well scoped tasks. Normal is the default. Ultra is for the hardest tasks and costs significantly more. Fusion aims for top results at a lower cost. SWE-2 and SWE-2.1 are research previews, and the docs say SWE-2.1 is available through December 22, 2026. Teams plans also get a Free agent powered by SWE-2.",
+        "sources": [
+          1
+        ]
+      },
+      {
+        "kind": "tip",
+        "text": "Start with Normal. Drop to Lite for chores like renaming or small test files, and save Ultra for a task that already failed once."
+      },
+      {
+        "kind": "heading",
+        "text": "How to write a task Devin can finish"
+      },
+      {
+        "kind": "fact",
+        "text": "The docs keep coming back to one idea: clear prompts with explicit completion criteria. The easier a result is to check, for example tests that pass or CI that goes green, the higher the success rate. For bigger projects, split the work into focused sessions and run them in parallel.",
+        "sources": [
+          0,
+          1
+        ]
+      },
+      {
+        "kind": "prompt",
+        "title": "Prompt 1: A new API endpoint",
+        "text": "Create a new endpoint /[endpoint] that returns [what it returns]. Use the existing [table or model] and follow the patterns in [file]. Add tests to the existing test suite and make sure all tests pass before you open the PR."
+      },
+      {
+        "kind": "prompt",
+        "title": "Prompt 2: Unit tests with a target",
+        "text": "Write unit tests for [function or class] in [file], covering [the cases]. Use [test framework]. Run [test command with coverage] and keep going until coverage for this file is at least [percent]."
+      },
+      {
+        "kind": "prompt",
+        "title": "Prompt 3: A safe migration",
+        "text": "Migrate [file] from [old language or library] to [new one]. Do not change the existing config. Check the result with [type check or build command] and the full test suite, and list anything you could not migrate."
+      },
+      {
+        "kind": "tip",
+        "text": "For tasks you repeat, such as small pull requests, the docs suggest saving the instructions as a Skill (share a plan, make only the requested changes, run lint and type checks, follow the repo's PR template, fix CI on the same branch) and mentioning it with @ in later sessions."
+      },
+      {
+        "kind": "heading",
+        "text": "Devin plans and prices"
+      },
+      {
+        "kind": "fact",
+        "text": "Cognition moved Devin to new self-serve plans in April 2026. According to its docs, Free costs nothing and includes limited Devin usage plus Devin Review and DeepWiki. Pro is $20 a month for one person, with a daily and weekly quota shared across Devin sessions, the Devin CLI and Devin Desktop, plus Slack, Linear and MCP integrations. Max is $200 a month with a bigger weekly quota and no daily cap.",
+        "sources": [
+          2,
+          3
+        ]
+      },
+      {
+        "kind": "fact",
+        "text": "Teams is $80 a month, charged as prepaid credits in a shared pool, with single sign-on and usage controls for admins. Enterprise has custom pricing. Usage past your quota is billed with on-demand credits, which roll over and do not expire. When both the quota and the credits are used up, sessions pause.",
+        "sources": [
+          2,
+          3
+        ]
+      },
+      {
+        "kind": "fact",
+        "text": "Two parts stay free for public code: DeepWiki, and Devin Review for public GitHub pull requests. To review one, replace github.com with devinreview.com in the pull request's address. No account is needed.",
+        "sources": [
+          2,
+          3
+        ]
+      },
+      {
+        "kind": "heading",
+        "text": "What Devin is bad at"
+      },
+      {
+        "kind": "analysis",
+        "text": "Devin is built for tasks with a clear finish line. Vague requests such as improving the architecture or making the app faster tend to waste usage, because there is no test that says the job is done. The docs themselves say it is not for extremely difficult tasks and that it may not always behave exactly as documented. The free tier is also thin: the docs call it limited usage and give no number, so plan on Pro if you want to use it every day. Treat Devin like a fast new teammate: give it a small, checkable task, read the pull request, and grow the size of the tasks as it earns your trust."
+      },
+      {
+        "kind": "tip",
+        "text": "Your first task should be one you already know how to do. Then you can judge Devin's pull request in five minutes instead of an hour."
+      }
+    ]
+  }
+}
