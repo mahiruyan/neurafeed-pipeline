@@ -1,80 +1,5 @@
 [
   {
-    "run_at": "2026-11-18T13:15:55.167Z",
-    "summary": "Morning run (07:55 New York, Nov 18): no open links or requests; queued a site-only article on officials blaming the U.S. outage wave on security patching, and the day's first website guide (canceling a Claude subscription). Nov 18 Instagram carousels are already full; no desk Reel could be checked.",
-    "considered": [
-      {
-        "story": "U.S. officials say the outage wave (NSA, banks, Outlook) came from security patching, not a cyberattack; Sen. Warner says AI-speed bug discovery forces everyone to patch at once",
-        "source": "https://www.foxbusiness.com/technology/jay-clayton-addresses-concerns-amid-widespread-tech-outages",
-        "decision": "queued",
-        "job_id": "2026-11-18-outages-blamed-on-security-patches",
-        "priority": 2,
-        "reason": "Strong shock story with an AI angle, confirmed by Fox Business, ABC News and Fortune (FAA cause). Made site-only because Nov 18 already has 3 Instagram carousels; it would travel on Instagram if Mahir wants it there. Unverified claims from smaller sites (20,000 canceled flights, bank CEOs testifying to Congress) were left out."
-      },
-      {
-        "story": "Guide: How to cancel a Claude subscription (web, iPhone, Android)",
-        "source": "https://support.claude.com/en/articles/8325617-cancel-your-pro-or-max-plan",
-        "decision": "queued",
-        "job_id": "2026-11-18-claude-cancel-subscription-guide",
-        "priority": 2,
-        "reason": "First of today's 6 guides, from Tier 4 of guides/plan.md, built on two Claude Help Center articles plus SSD Nodes."
-      },
-      {
-        "story": "Guide: How to use ChatGPT Atlas (next Tier 1 line in guides/plan.md)",
-        "source": "https://aiweekly.co/alerts/openai-sunsets-chatgpt-atlas-folds-browser-into-desktop-app",
-        "decision": "skipped",
-        "reason": "OpenAI retired Atlas on August 9, 2026 and folded browsing into the ChatGPT desktop app, so both Atlas lines in the plan are obsolete and should be removed."
-      },
-      {
-        "story": "Guide: How to use Grok Imagine",
-        "source": "https://aliteq.com/is-grok-imagine-free",
-        "decision": "skipped",
-        "reason": "xAI's consumer plan names, prices and video limits conflict between sources and xAI's docs only cover the API, so a guide could not be written accurately today."
-      },
-      {
-        "story": "LeBron James takes legal action against the Bron AI betting app over his AI likeness",
-        "source": "https://frontofficesports.com/article/lebron-james-demands-ai-betting-app-stop-using-his-likeness/",
-        "decision": "skipped",
-        "reason": "The cease and desist dates to early November; a lawsuit is mentioned only in one digest, and I could not confirm a new filing with a second source."
-      },
-      {
-        "story": "Nvidia stops H200 sales in China and warns customers about the Remote Access Security Act",
-        "source": "https://techcrunch.com/2026/11/17/nvidia-is-abandoning-china-after-jensen-huangs-ouster",
-        "decision": "skipped",
-        "reason": "Nvidia China access is already covered by 2026-11-17-us-shuts-china-nvidia-backdoor and two other Nvidia jobs this week."
-      },
-      {
-        "story": "Microsoft Ignite: MAI Code 2, Copilot Autopilot, Office inside Copilot",
-        "source": "https://arstechnica.com/gadgets/2026/11/microsoft-calls-copilot-the-new-os-for-work-at-ignite-keynote/",
-        "decision": "covered",
-        "reason": "Microsoft's cheaper models are covered by 2026-11-17-microsoft-mai-code-2-cheaper-models; Office in Copilot was skipped by the previous run as not new."
-      },
-      {
-        "story": "AMD closes $8.2B World Labs deal, Fei-Fei Li becomes chief scientist",
-        "source": "https://riorundown.substack.com/p/ai-news-nov-18-2026-ai-infrastructure",
-        "decision": "skipped",
-        "reason": "Closed November 13 and only seen in a digest; insider deal news that a later run could still write as site-only if confirmed."
-      },
-      {
-        "story": "Anthropic IPO pricing",
-        "decision": "skipped",
-        "reason": "Pricing is expected Wednesday evening, Nov 18; a later run must queue it as priority 1 once the price is set."
-      },
-      {
-        "story": "Korean comedian official tests AI glasses on an exam and scores 25 points",
-        "source": "https://www.starnewskorea.com/en/star/2026/11/17/2026111707544511281",
-        "decision": "skipped",
-        "reason": "Possible Reel follow-up to the Korea glasses story, but the clip appears to be on YouTube (downloads fail) and no X copy could be found."
-      },
-      {
-        "story": "Reel search",
-        "decision": "skipped",
-        "reason": "Reddit leads are empty, leads were last refreshed around 01:50 UTC, and X could not be opened from this run, so no clip could be checked against the Reel filter."
-      }
-    ],
-    "requests": []
-  },
-  {
     "run_at": "2026-11-18T15:14:27.562Z",
     "summary": "Mid-morning run (10:40 New York, Nov 18): no open links or requests; queued a desk Reel (Windows 11 on an iPhone Duo built with Gemini), a site-only article on Satya Nadella calling himself AGI pilled, and the day's second website guide (Gemini Memory summary). Nov 18 Instagram carousels are already full.",
     "considered": [
@@ -5095,6 +5020,84 @@
         "story": "Reel search: X and company videos from the last day",
         "decision": "skipped",
         "reason": "No in-window story linked a usable video, and X pages cannot be opened from this run."
+      }
+    ],
+    "requests": []
+  },
+  {
+    "run_at": "2026-11-25T15:04:20.367Z",
+    "summary": "10:00 NY run (Nov 25): no open links or requests; queued 2 site-only articles (OpenAI GPT-6.2 protein design lab results, Anthropic's 'Working with AI' study). Both Instagram carousel slots were already used; no Reel video could be checked and the Devin guide docs could not be opened, so no guide this run.",
+    "considered": [
+      {
+        "story": "OpenAI: GPT-6.2 designed proteins with reasoning and code; 35 of 322 minibinders bound their targets in Onava's lab",
+        "source": "https://openai.com/index/gpt-6-models-demonstrate-intrinsic-protein-design-capabilities/",
+        "decision": "queued",
+        "job_id": "2026-11-25-openai-gpt-6-designs-proteins-lab",
+        "priority": 2,
+        "reason": "Research news mostly insiders follow, so site-only; read OpenAI's post, AlphaSignal and StartupHub.ai."
+      },
+      {
+        "story": "Anthropic 'Working with AI' study: 58 US companies, nearly 300 deployments, 19% no business value so far",
+        "source": "https://the-decoder.com/anthropic-study-shows-the-hardest-part-of-adopting-ai-at-work-has-little-to-do-with-learning-the-tools/",
+        "decision": "queued",
+        "job_id": "2026-11-25-anthropic-study-ai-work-no-value",
+        "priority": 2,
+        "reason": "Good jobs angle but both carousel slots are used today, so site-only; read The Decoder, AI Daily Post and Today for AI."
+      },
+      {
+        "story": "Jensen Huang all-hands: thanks the White House, apologizes to staff, says he is in therapy (TechCrunch)",
+        "source": "https://techcrunch.com/2026/11/24/in-all-hands-meeting-jensen-huang-thanks-white-house-and-says-hes-in-therapy/",
+        "decision": "skipped",
+        "reason": "Huang is already today's sensitive carousel (Trump pardon) and no carousel slot is left; health detail makes it sensitive. Candidate for tomorrow if it grows."
+      },
+      {
+        "story": "EA Sports FC 27 brings back late commentator John Motson with AI, with his family's permission (BBC)",
+        "decision": "skipped",
+        "reason": "Strong 'everyone' story, but no carousel slot left today and the BBC page was not read; good candidate for tomorrow's first carousel."
+      },
+      {
+        "story": "Jensen Huang says a succession plan creates unnecessary hierarchy (TechCrunch)",
+        "source": "https://techcrunch.com/2026/11/24/jensen-huang-still-thinks-a-succession-plan-creates-unnecessary-hierarchy/",
+        "decision": "skipped",
+        "reason": "Third Huang angle in a day; no slot left."
+      },
+      {
+        "story": "New benchmark: even the best AI agents struggle with everyday tasks (TechCrunch)",
+        "source": "https://techcrunch.com/2026/11/24/even-the-best-ai-agents-struggle-with-everyday-life/",
+        "decision": "skipped",
+        "reason": "Only a digest summary seen with no numbers; not read directly."
+      },
+      {
+        "story": "Google DeepMind uses AI agents to run experiments for upcoming Gemini models (The Decoder)",
+        "decision": "skipped",
+        "reason": "Only a one-line feed mention seen; site-only candidate for a later run."
+      },
+      {
+        "story": "PrismML Ternary Bonsai 2.5 27B shrinks a 54 GB model to 5.9 GB",
+        "source": "https://prismml.com/news/bonsai-2-5-27b",
+        "decision": "skipped",
+        "reason": "Niche developer model news; two site-only articles already queued this run."
+      },
+      {
+        "story": "Amazon and Meta in talks to end Amazon's block of the Muse agent (TechCrunch/Fortune)",
+        "decision": "skipped",
+        "reason": "Still only reported talks, not read directly."
+      },
+      {
+        "story": "Guide: How to use Devin AI (next line in guides/plan.md)",
+        "source": "https://docs.devin.ai/",
+        "decision": "skipped",
+        "reason": "Devin's docs and pricing pages could not be opened this run; the guide needs the vendor docs. Next run should try again or take the next line."
+      },
+      {
+        "story": "Reel search: X and company videos from the last day",
+        "decision": "skipped",
+        "reason": "No story of the day linked a usable video, and X pages cannot be opened from this run."
+      },
+      {
+        "story": "Tidal deletes AI music / Trump could pardon Jensen Huang / OpenAI 9/4 matrix exponent",
+        "decision": "covered",
+        "reason": "Already queued earlier today."
       }
     ],
     "requests": []

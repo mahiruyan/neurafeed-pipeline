@@ -1,0 +1,180 @@
+{
+  "id": "2026-11-25-openai-gpt-6-designs-proteins-lab",
+  "created_at": "2026-11-25T15:30:00Z",
+  "story_time": "2026-11-24T21:02:00Z",
+  "timely": false,
+  "sensitive": false,
+  "priority": 2,
+  "site_only": true,
+  "format": "carousel",
+  "site_category": "models",
+  "ab": {
+    "headline": "long",
+    "photo": "story"
+  },
+  "sources": [
+    {
+      "name": "OpenAI",
+      "url": "https://openai.com/index/gpt-6-models-demonstrate-intrinsic-protein-design-capabilities/"
+    },
+    {
+      "name": "AlphaSignal",
+      "url": "https://alphasignal.ai/news/openai-s-gpt-6-2-designs-real-proteins-that-bind-drug-targets-in-the-lab"
+    },
+    {
+      "name": "StartupHub.ai",
+      "url": "https://www.startuphub.ai/ai-news/ai-research/2026/gpt-6-designs-proteins-without-bio-models"
+    }
+  ],
+  "caption": "OpenAI says GPT-6.2 designed protein shapes using only reasoning and code, with no specialized biology model making the designs.\nIn lab tests run with Onava, 35 of 322 small designed proteins bound their targets, and at least one worked on each of five targets.\nOpenAI says the work is an early step and that binding is not the same as a working medicine.\n\nWould you trust a chatbot to help design a new drug?\n\nFollow @neurafeed.ai for daily AI news.\n\nSource: OpenAI · Photo: OpenAI",
+  "threads_text": "OpenAI says GPT-6.2 sketched new proteins with plain reasoning and code, and 35 of 322 of them stuck to their targets in a real lab. Specialized tools still did the filtering, so it is a first step, not a drug. Would you trust a chatbot near drug design?",
+  "slides": [
+    {
+      "kind": "cover",
+      "headline": "OpenAI says GPT-6.2 designed proteins that *really bound their targets* in a lab",
+      "image": {
+        "url": "https://images.ctfassets.net/kftzwdyauwt9/Eg5mCwwaA3KqnznOVCh0n/8e6deaef25fd508d9853ff86a95187c1/gpt-6-models-demonstrate-intrinsic-protein-design-capabilities-social.png?w=1600&h=900&fit=fill",
+        "credit": "OpenAI",
+        "fallback_urls": [
+          "https://cdn.startuphub.ai/storage/v1/object/public/post-images/rss/1795569071450.webp"
+        ]
+      },
+      "badges": [
+        {
+          "url": "assets/logos/openai.png",
+          "fit": "contain"
+        }
+      ],
+      "badge_side": "right"
+    },
+    {
+      "kind": "card",
+      "heading": "35 hits out of *322 designs*",
+      "paras": [
+        "GPT-6.2 wrote code to shape small binding proteins for five targets. The lab partner Onava made and tested them.",
+        "35 bound, about 10.9 percent, with at least one hit on every target."
+      ],
+      "image": {
+        "url": "https://images.ctfassets.net/kftzwdyauwt9/7tdj7ylIVvRLZuSefgld5A/79ed19f943933341880b0e9bb1c4d6ae/wet-lab-desktop-light.png?w=3840&q=90&fm=webp",
+        "credit": "OpenAI",
+        "fit": "contain"
+      }
+    },
+    {
+      "kind": "card",
+      "heading": "Antibodies *kept working*",
+      "paras": [
+        "When GPT-6.2 redesigned the binding loops of known antibodies, 66 to 70 percent of the new versions still bound.",
+        "OpenAI says binding is only one step toward a useful medicine."
+      ],
+      "image": {
+        "url": "https://images.ctfassets.net/kftzwdyauwt9/4u7ogWwVXuqX5GRdnZxsLM/23d72378f6fea65debd91c914f32fb54/protein-workflows-intrinsic-desktop-light.png?w=3840&q=90&fm=webp",
+        "credit": "OpenAI",
+        "fit": "contain"
+      }
+    },
+    {
+      "kind": "cta",
+      "hook": "Follow to see whether AI-designed proteins ever reach a real medicine."
+    }
+  ],
+  "site_article": {
+    "headline": "OpenAI says GPT-6.2 designed proteins that bound their targets in lab tests",
+    "dek": "In work with the lab Onava, 35 of 322 small proteins built from GPT-6.2 designs bound their targets, though specialized tools still screened the candidates.",
+    "summary": "OpenAI said on November 24, 2026 that its GPT-6 models can design new protein shapes and sequences using reasoning and code alone. In lab tests, 35 of 322 minibinders based on GPT-6.2 designs bound their intended targets, with at least one hit for each of five targets.",
+    "seo_title": "OpenAI GPT-6.2 designs proteins that bind in lab tests",
+    "seo_description": "OpenAI says GPT-6.2 designed proteins with reasoning and code alone: 35 of 322 minibinders bound their targets in Onava's lab. The results and the limits.",
+    "answer_summary": "OpenAI reports that GPT-6.2 produced 3D protein designs and new sequences without calling specialized design models, and that 35 of 322 resulting minibinders bound their targets in the lab, but other specialized tools were still used to filter candidates.",
+    "tags": [
+      "OpenAI",
+      "GPT-6.2",
+      "Protein design",
+      "Biology",
+      "Research"
+    ],
+    "hero_alt": "OpenAI graphic announcing that GPT-6 models can design proteins.",
+    "paragraphs": [
+      {
+        "kind": "fact",
+        "text": "OpenAI said on November 24, 2026 that models in its GPT-6 family can design new protein shapes and the sequences of amino acids that make them up using only reasoning and code, without calling specialized biology models to generate the designs. The company described the work in a post and a preprint titled \"GPT-6 as a Universal Foundation Model for Protein Biology: Beyond Specialized Models.\"",
+        "sources": [
+          0,
+          2
+        ]
+      },
+      {
+        "kind": "fact",
+        "text": "The lab experiments used a pre-release version of GPT-6.2, according to OpenAI. The proteins were produced and tested by Onava, a protein design company that worked with OpenAI on the project. AlphaSignal noted that the preprint has not been peer reviewed and that independent replication is still pending.",
+        "sources": [
+          0,
+          1
+        ]
+      },
+      {
+        "kind": "heading",
+        "text": "What the lab tests found"
+      },
+      {
+        "kind": "fact",
+        "text": "In the first experiment, GPT-6.2 received 3D structures of five target proteins with the binding site marked, then wrote code to build 3D designs for minibinders, small proteins meant to attach to a target. A specialized model called SolubleMPNN suggested sequences for those shapes, and other specialized models filtered candidates. Of 322 minibinders tested, 35, or 10.9 percent, bound their intended target. The hits were spread across all five targets: 18 for IL-17A, 8 for VEGF-A, 5 for PD-L1, 3 for IL-7R alpha and 1 for TrkA.",
+        "sources": [
+          0,
+          1,
+          2
+        ]
+      },
+      {
+        "kind": "fact",
+        "text": "A second test checked sequence design. GPT-6.2 was shown 3D models of known minibinders bound to their targets, without the original sequences, and asked to write new ones. For an MDM2 binder, 75 of 88 new sequences bound, or 85 percent. For VEGF-A the figure was 26 of 42, and for PD-1 it was 8 of 59. On three unpublished minibinder shapes, 14 of 107 proteins made from GPT-6.2 sequences bound. OpenAI said two of its sequences for one 90 amino acid PD-L1 binder differed from the original at more than half the positions, which it presented as evidence that the model was not simply recalling known answers.",
+        "sources": [
+          0,
+          2
+        ]
+      },
+      {
+        "kind": "fact",
+        "text": "The company also asked GPT-6.2 to redesign the three binding loops of antibodies. For six small VHH antibodies aimed at IL-4R alpha, 128 of 182 designs, about 70 percent, showed signs of binding. For five therapeutic antibodies that target PD-1 or PD-L1, the model changed about half the amino acids in each loop, and 179 of 272 fragments, about 66 percent, still bound the original target.",
+        "sources": [
+          0,
+          1,
+          2
+        ]
+      },
+      {
+        "kind": "heading",
+        "text": "Benchmarks and weak spots"
+      },
+      {
+        "kind": "fact",
+        "text": "OpenAI also reported computer benchmarks, many of them for an unreleased internal research model rather than GPT-6.2. On the MotifBench scaffolding test, that internal model produced passing designs 43.7 percent of the time, compared with 27.8 percent for the specialized tool RFdiffusion. In small molecule docking on the PoseBusters set, GPT-6.2 matched the experimental pose in 93 percent of scored cases, against 50 percent for DiffDock-L.",
+        "sources": [
+          0,
+          1
+        ]
+      },
+      {
+        "kind": "fact",
+        "text": "The company listed clear limits. Predicting a full protein structure from its sequence remained a weak point: the internal model averaged a TM-score of 0.38, far below the 0.93 of the specialized predictor ESMFold2. OpenAI said the campaign still relied on specialized models such as Boltz-2 and ESMFold2 to filter candidates, so the results do not yet show end to end design without that help. It also said its 3D designs scored slightly lower than RFdiffusion in one comparison, and that hit rates depend heavily on how strictly designs are filtered before lab tests.",
+        "sources": [
+          0,
+          1
+        ]
+      },
+      {
+        "kind": "fact",
+        "text": "OpenAI said binding is only one step toward a useful research tool or medicine, and that specificity, stability and biological activity would still need to be shown. The company also wrote that the same capabilities could be misused, and said it evaluates biosecurity risks under its Preparedness Framework.",
+        "sources": [
+          0
+        ]
+      },
+      {
+        "kind": "analysis",
+        "text": "The notable claim is less about any single protein and more about method. Protein design has relied on narrow tools trained for one job, and OpenAI is arguing that a general model can take over parts of that pipeline by reasoning through geometry and writing its own code. The lab numbers are a useful signal, but the strongest benchmark results come from a model the public cannot use, and the screening step still leaned on specialized software."
+      },
+      {
+        "kind": "why_it_matters",
+        "text": "The next test is outside review of the preprint and whether OpenAI or Onava show designed proteins doing something useful after they bind, which the company named as its next target."
+      }
+    ]
+  }
+}
