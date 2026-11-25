@@ -1,59 +1,5 @@
 [
   {
-    "run_at": "2026-11-18T00:58:36.890Z",
-    "summary": "Night run (20:00 New York, Nov 17): no open links or requests; queued Oregon's $2.035B child safety lawsuit against OpenAI (sensitive, needs Mahir's approval) and Microsoft's MAI Code 2 launch as a site-only article; no desk Reel passed the filter.",
-    "considered": [
-      {
-        "story": "Oregon AG Dan Rayfield sues OpenAI for $2.035 billion over ChatGPT and child safety",
-        "source": "https://www.doj.state.or.us/media-home/news-media-releases/ag-rayfield-files-2b-lawsuit-against-open-ai-launches-keeping-kids-safe-initiative/",
-        "decision": "queued",
-        "job_id": "2026-11-17-oregon-sues-openai-2-billion",
-        "priority": 1,
-        "reason": "Major OpenAI lawsuit with a huge dollar figure (money plus lawsuit plus kids). It goes past the 2 news carousels a day as a priority 1 story; it is sensitive, so Mahir decides on Telegram. Expires about midnight New York time."
-      },
-      {
-        "story": "Microsoft unveils MAI Code 2 and cheaper in-house models at Ignite to take on OpenAI and Anthropic",
-        "source": "https://www.koreatimes.co.kr/world/20261118/microsoft-unveils-ai-models-for-coding-cybersecurity-as-it-takes-on-anthropic-openai",
-        "decision": "queued",
-        "job_id": "2026-11-17-microsoft-mai-code-2-cheaper-models",
-        "priority": 1,
-        "reason": "Major Microsoft model news, but insider-focused, so site-only; this is a fifth site-only news article today, over the usual 4, because it is a priority 1 story."
-      },
-      {
-        "story": "Anthropic IPO pricing",
-        "decision": "skipped",
-        "reason": "Pricing is expected Wednesday, Nov 18; nothing new tonight."
-      },
-      {
-        "story": "California sues OpenAI over rogue agents",
-        "decision": "covered",
-        "reason": "Already queued as 2026-11-16-california-sues-openai-rogue-agents."
-      },
-      {
-        "story": "GPT-6.2 Astra and Sol launch",
-        "decision": "covered",
-        "reason": "Already queued as 2026-11-17-gpt-6-2-astra-hides-problems and the Astra vs Sol guide."
-      },
-      {
-        "story": "Google Labs buys AI email scheduling startup Howie",
-        "source": "https://qz.com",
-        "decision": "skipped",
-        "reason": "Small acquisition insiders follow, and the site-only slots are full."
-      },
-      {
-        "story": "Baidu and Xiaomi CEOs warn of a gap between AI hype and returns (Hacker News)",
-        "decision": "skipped",
-        "reason": "Interesting but low share value for a US Instagram audience; carousel slots are full."
-      },
-      {
-        "story": "Reel search",
-        "decision": "skipped",
-        "reason": "Reddit leads are empty and X cannot be opened from this run, so no clip could be checked against the Reel filter."
-      }
-    ],
-    "requests": []
-  },
-  {
     "run_at": "2026-11-18T03:07:58.961Z",
     "summary": "Late run (22:00 New York, Nov 17): no open links or requests; queued the Java4Shell story (Calif found a critical Java flaw with OpenAI's Codex in an hour for under $200) as a carousel for the Nov 18 morning window; no Reel could be checked.",
     "considered": [
@@ -5059,6 +5005,62 @@
         "story": "OpenAI's OpenWorks pays local experts up to $8,000 a month",
         "decision": "skipped",
         "reason": "No carousel or site-only slot left today."
+      }
+    ],
+    "requests": []
+  },
+  {
+    "run_at": "2026-11-25T02:55:06.355Z",
+    "summary": "22:00 NY run (Nov 24): no open links or requests; nothing queued. All Instagram carousel slots, all four site-only article slots and all six guides are used today, no new priority 1 story appeared since the 20:00 run, and no Reel video passed the filter (anything queued now would only post in tomorrow's first window).",
+    "considered": [
+      {
+        "story": "Jensen Huang tells Nvidia staff it is not true Trump got him rehired",
+        "source": "https://www.theverge.com/tech/1041571/jensen-huang-all-hands-nvidia-apology",
+        "decision": "covered",
+        "reason": "Follow-up to 2026-11-23-jensen-huang-reinstated-nvidia-ceo; too close to repeat the same story."
+      },
+      {
+        "story": "Anthropic falls below its $83 IPO price, AI stocks drag the market",
+        "decision": "covered",
+        "reason": "Already queued as 2026-11-24-anthropic-stock-below-ipo-price."
+      },
+      {
+        "story": "Anthropic Claude Ship code review agents",
+        "decision": "covered",
+        "reason": "Already queued as 2026-11-24-anthropic-claude-ship-code-approvals."
+      },
+      {
+        "story": "SpaceX sells compute to Anthropic and Google (NYT)",
+        "source": "https://www.nytimes.com/2026/11/23/business/elon-musk-ai-anthropic-google.html",
+        "decision": "skipped",
+        "reason": "Insider compute deal; site-only slots for today are full."
+      },
+      {
+        "story": "DeepMind agents find faster quantum algorithms for fusion research",
+        "source": "https://deepmind.google/blog/finding-faster-quantum-algorithms-with-agents-and-formal-verification/",
+        "decision": "skipped",
+        "reason": "Research news for insiders; no site-only slot left today."
+      },
+      {
+        "story": "Nothing Ear Note AI earbuds with a recording case",
+        "source": "https://www.cnet.com/tech/mobile/nothing-ear-note-ai-earbuds/",
+        "decision": "skipped",
+        "reason": "Gadget launch with no surprising video; site-only slots full."
+      },
+      {
+        "story": "Amateur astronomers use OpenAI's Astra to spot 49 hidden planet candidates",
+        "decision": "skipped",
+        "reason": "Good everyone story but no carousel slot left today; worth a look tomorrow with a second source."
+      },
+      {
+        "story": "Saudi engineer accused of bugging OpenAI released on $1 million bond",
+        "decision": "covered",
+        "reason": "The bugging case already has several jobs, most recently 2026-11-18-openai-bugging-trial-no-spy-evidence."
+      },
+      {
+        "story": "Reel search: viral robot and gadget clips of the last day",
+        "decision": "skipped",
+        "reason": "Search results were older viral clips already seen; nothing new that passes the filter."
       }
     ],
     "requests": []
