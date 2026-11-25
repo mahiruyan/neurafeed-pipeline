@@ -1,0 +1,151 @@
+{
+  "id": "2026-11-25-openai-matrix-exponent-nine-fourths",
+  "created_at": "2026-11-25T13:40:00Z",
+  "story_time": "2026-11-25T07:16:00Z",
+  "timely": false,
+  "sensitive": false,
+  "priority": 2,
+  "site_only": true,
+  "format": "carousel",
+  "site_category": "models",
+  "ab": {
+    "headline": "long",
+    "photo": "story"
+  },
+  "sources": [
+    {
+      "name": "alphaXiv: The matrix multiplication exponent is nine fourths",
+      "url": "https://www.alphaxiv.org/abs/2611.matrix-multiplication-exponent-lower-bound"
+    },
+    {
+      "name": "MadRobot",
+      "url": "https://madrobot.blog/2026/11/25/openai-matrix-multiplication-exponent-9-4-proof/"
+    },
+    {
+      "name": "Let's Data Science",
+      "url": "https://letsdatascience.com/news/openai-preprint-claims-matrix-multiplication-exponent-is-exa-7997d3b1"
+    }
+  ],
+  "caption": "OpenAI posted a preprint, dated November 24, that claims the exponent of matrix multiplication is exactly 9/4.\nIt adds a matching lower bound to October's upper bound, which would rule out the long hoped for value of 2.\nIt has not been peer reviewed, and the Lean check covers only part of the proof.\n\nWould you trust a math result no human has checked yet?\n\nFollow @neurafeed.ai for daily AI news.\n\nSource: alphaXiv, MadRobot · Photo: Peter van Emde Boas / CC BY-SA 4.0",
+  "threads_text": "OpenAI posted a preprint claiming matrix multiplication can never beat an exponent of exactly 9/4, which would close a question open since Strassen's 1969 trick. Nobody outside OpenAI has checked it yet. Would you believe an AI math proof before mathematicians do?",
+  "slides": [
+    {
+      "kind": "cover",
+      "headline": "An OpenAI model claims to end a math search that began in 1969: *exactly 9/4*",
+      "image": {
+        "url": "https://madrobot.blog/images/volker-strassen-1979-oberwolfach-matrix.jpg",
+        "credit": "Peter van Emde Boas / CC BY-SA 4.0",
+        "fallback_urls": [
+          "https://madrobot.blog/images/sizes/volker-strassen-1979-oberwolfach-matrix-800.jpg"
+        ]
+      },
+      "pos": "center 30%",
+      "badges": [
+        {
+          "url": "assets/logos/openai.png",
+          "fit": "contain"
+        }
+      ],
+      "badge_side": "right"
+    },
+    {
+      "kind": "card",
+      "heading": "A floor, *not just a ceiling*",
+      "paras": [
+        "In October, OpenAI showed matrices can be multiplied with an exponent of 9/4. The new preprint claims nothing can do better.",
+        "That would rule out 2, the value many theorists expected."
+      ],
+      "image": {
+        "url": "https://api.alphaxiv.org/open-graph/v1/paper/2611.matrix-multiplication-exponent-lower-bound.png?v=2",
+        "credit": "alphaXiv",
+        "fit": "contain"
+      }
+    },
+    {
+      "kind": "card",
+      "heading": "No outside expert has *checked it yet*",
+      "paras": [
+        "The preprint is not peer reviewed, and its Lean check covers only circuits that never divide.",
+        "It is a result about circuit cost, so it will not make GPUs faster."
+      ],
+      "image": {
+        "url": "https://opengraph.githubassets.com/194d3db4916893773a3ca00271cd3787ee5278e76659619c425bf90a313061be/openai/math",
+        "credit": "GitHub / OpenAI",
+        "fit": "contain"
+      }
+    },
+    {
+      "kind": "cta",
+      "hook": "Follow to see whether mathematicians confirm OpenAI's 9/4 claim."
+    }
+  ],
+  "site_article": {
+    "headline": "OpenAI preprint claims the matrix multiplication exponent is exactly 9/4",
+    "dek": "A new manuscript in OpenAI's math repository adds a matching lower bound to October's 9/4 upper bound, but it has not been peer reviewed and is only partly machine checked.",
+    "summary": "OpenAI has posted a preprint dated November 24, 2026 that claims the exponent of square matrix multiplication is exactly 9/4 over every field. If it holds, it would rule out the value of 2 that many theorists expected, but no outside mathematician has checked it yet.",
+    "seo_title": "OpenAI claims matrix multiplication exponent is exactly 9/4",
+    "seo_description": "OpenAI's new preprint claims a lower bound that pins the matrix multiplication exponent at exactly 9/4. What it says, what is checked and what is not yet.",
+    "answer_summary": "OpenAI claims that multiplying two n by n matrices needs on the order of n to the power 9/4 multiplications in the arithmetic circuit model, matching its October upper bound, but the proof is unreviewed and its Lean check covers only division free circuits.",
+    "tags": [
+      "OpenAI",
+      "Matrix multiplication",
+      "AI and mathematics",
+      "Lean",
+      "Research"
+    ],
+    "hero_alt": "Archival photo of a mathematician at the Oberwolfach research institute in 1979.",
+    "paragraphs": [
+      {
+        "kind": "fact",
+        "text": "OpenAI has posted a preprint titled \"The matrix multiplication exponent is nine fourths\" to its public openai/math repository on GitHub, according to MadRobot and Let's Data Science. The manuscript is dated November 24, 2026, and its abstract page on alphaXiv, which lists OpenAI as the author, shows a submission date of November 25. The abstract states that the exponent of square matrix multiplication is 9/4 over every field.",
+        "sources": [0, 1, 2]
+      },
+      {
+        "kind": "fact",
+        "text": "The matrix multiplication exponent, usually written as omega, describes how the cost of multiplying two n by n matrices grows as the matrices get larger. The schoolbook method takes on the order of n cubed steps, and no method can go below n squared, because the answer alone has that many entries. MadRobot notes that Volker Strassen's 1969 algorithm started the search for faster methods, that the best known exponent had reached about 2.371 by 2024, and that many theorists suspected the true value was 2.",
+        "sources": [1, 2]
+      },
+      {
+        "kind": "heading",
+        "text": "From an upper bound to an exact answer"
+      },
+      {
+        "kind": "fact",
+        "text": "The upper half of the claim is not new. According to Let's Data Science, an OpenAI preprint from October 2 showed that omega is at most 9/4 over the complex numbers. MadRobot reports that Rafael Pass later gave an independent constructive proof of that bound, and that Alimzhan Amanov, Maxim van den Berg and Jeroen Zuiddam extended it to every field. The alphaXiv abstract also credits the Amanov, van den Berg and Zuiddam paper for the upper bound over every field.",
+        "sources": [0, 1, 2]
+      },
+      {
+        "kind": "fact",
+        "text": "The new contribution is the matching lower bound. The abstract says that for every n of at least 2, any formal arithmetic circuit that multiplies two n by n matrices needs at least n to the power 9/4, divided by two and rounded up, nonscalar multiplication or division gates, even if additions and other linear operations cost nothing. Put together with the upper bound, that would fix omega at exactly 2.25 and rule out the long held hope that it equals 2.",
+        "sources": [0, 1]
+      },
+      {
+        "kind": "fact",
+        "text": "MadRobot describes the proof as an argument by contradiction: if omega were below 9/4, exact networks for a problem called list distinctness could be compressed far enough to break a known lower bound. The alphaXiv abstract describes the same approach and stresses that the result concerns circuit cost, not running time, hardware or any particular implementation.",
+        "sources": [0, 1]
+      },
+      {
+        "kind": "heading",
+        "text": "What has and has not been checked"
+      },
+      {
+        "kind": "fact",
+        "text": "Both news reports say the work has not been peer reviewed, and MadRobot reports that no one outside OpenAI has checked the new proof and that no mathematician has commented on it publicly. The release includes a Lean formalization, but according to the alphaXiv abstract and MadRobot it covers only division free circuits, which is narrower than the model used in the manuscript, so the division case of the main theorem is not machine checked.",
+        "sources": [0, 1, 2]
+      },
+      {
+        "kind": "fact",
+        "text": "MadRobot quotes the repository as saying the manuscripts come from an unnamed internal OpenAI model, are best seen as raw research data rather than polished papers, and that some of the unformalized results could have issues. It also reports that OpenAI withdrew three papers from the same collection a day after posting them in October. All three sources note that the result is asymptotic and does not directly speed up GPU kernels or deep learning software.",
+        "sources": [1, 2]
+      },
+      {
+        "kind": "analysis",
+        "text": "The claim lands one day after Anthropic posted a Claude written proof on the VP versus VNP question, which also came with partial machine checking and no human review. Both labs are now publishing results on classic open problems faster than mathematicians can read them, which shifts the bottleneck from finding proofs to verifying them. A lower bound that matches a known upper bound would be an unusually clean result for a question this old, and that is exactly why experts are likely to examine the parts that Lean does not cover."
+      },
+      {
+        "kind": "why_it_matters",
+        "text": "The next signal to watch is whether independent complexity theorists review the division case of the proof, or whether OpenAI extends the Lean formalization to cover it."
+      }
+    ]
+  }
+}

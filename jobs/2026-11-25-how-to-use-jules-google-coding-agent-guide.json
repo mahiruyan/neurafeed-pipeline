@@ -1,0 +1,211 @@
+{
+  "id": "2026-11-25-how-to-use-jules-google-coding-agent-guide",
+  "format": "utility",
+  "site_only": true,
+  "created_at": "2026-11-25T13:45:00Z",
+  "story_time": "2026-11-25T13:45:00Z",
+  "timely": false,
+  "sensitive": false,
+  "priority": 2,
+  "sources": [
+    { "name": "Jules docs: Getting started", "url": "https://jules.google/docs" },
+    { "name": "Jules docs: Limits and Plans", "url": "https://jules.google/docs/usage-limits/" },
+    { "name": "Jules docs: Environment setup", "url": "https://jules.google/docs/environment/" },
+    { "name": "Jules docs: Jules Tools CLI reference", "url": "https://jules.google/docs/cli/reference" },
+    { "name": "Jules docs: API quickstart", "url": "https://jules.google/docs/api/reference/" },
+    { "name": "Jules docs: Reviewing the plan", "url": "https://jules.google/docs/review-plan/" },
+    { "name": "Google blog: New ways to build with Jules", "url": "https://blog.google/technology/google-labs/jules-tools-jules-api/" },
+    { "name": "TechRepublic", "url": "https://techrepublic.com/article/news-google-jules-ai-coding-agent" }
+  ],
+  "caption": "Jules is Google's coding agent: you pick a GitHub repo, describe a task, approve its plan and it works on its own in a cloud VM.\nThe base plan allows 15 tasks a day, Google AI Pro 100 and Ultra 300.\nThe full step by step guide, with task prompts and the CLI, is on neurafeedai.com.\n\nWould you let an AI agent write code in your repo while you sleep?\n\nFollow @neurafeed.ai for daily AI news.\n\nSource: Google · Photo: Google",
+  "threads_text": "Google's Jules takes a GitHub repo and a task, writes a plan, and does the work in its own cloud VM while you do something else. The base plan gets 15 tasks a day. Would you hand your bug backlog to an agent?",
+  "slides": [
+    {
+      "kind": "cover",
+      "headline": "How to use *Jules*, Google's coding agent",
+      "image": {
+        "url": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/image_5_IoKAzOn.width-1300.png",
+        "credit": "Google"
+      }
+    },
+    {
+      "kind": "card",
+      "heading": "1. Pick a repo and *ask for a plan*",
+      "paras": [
+        "Sign in at jules.google.com, connect GitHub, pick a repo and branch, then describe the task.",
+        "Click Give me a plan. Jules works in its own cloud VM."
+      ],
+      "image": {
+        "url": "https://jules.google/docs/_astro/plan.DIuDTol0_Z1vwymz.webp",
+        "credit": "Google",
+        "fit": "contain"
+      }
+    },
+    {
+      "kind": "card",
+      "heading": "2. Fix the plan, *then approve*",
+      "paras": [
+        "Open each step and reply in the chat if something is off. Then approve the plan.",
+        "Leave the page and Jules approves it on its own after a timer."
+      ],
+      "image": {
+        "url": "https://jules.google/docs/_astro/feedback.8l67aYbh_24Fkj7.webp",
+        "credit": "Google",
+        "fit": "contain"
+      }
+    },
+    {
+      "kind": "cta",
+      "hook": "Follow for guides that show what AI coding agents really do."
+    }
+  ],
+  "site_article": {
+    "kind": "guide",
+    "headline": "How to use Jules, Google's coding agent: your first task, the plans and the CLI",
+    "dek": "Jules takes a GitHub repo and a plain request, writes a plan and does the work in its own cloud machine. Here are the steps, task prompts to start with and what each plan allows.",
+    "summary": "Jules is Google's experimental coding agent: it connects to GitHub, plans a change and carries it out in a short lived virtual machine. The base plan allows 15 tasks a day and 3 at once, Jules in Pro 100 and 15, and Jules in Ultra 300 and 60.",
+    "seo_title": "How to use Jules: Google's AI coding agent, step by step",
+    "seo_description": "How to use Jules, Google's coding agent: connect GitHub, write a task, approve the plan, set up your environment and use the CLI, plus each plan's daily limits.",
+    "answer_summary": "Sign in at jules.google.com, connect your GitHub account, pick a repository and branch, describe the task and click Give me a plan. Review and approve the plan, and Jules does the work in a cloud VM. The base plan allows 15 tasks a day.",
+    "tags": ["Jules", "Google", "AI coding agent", "GitHub", "Guides"],
+    "hero_alt": "Google's announcement image for Jules Tools and the Jules API.",
+    "paragraphs": [
+      {
+        "kind": "fact",
+        "text": "If you want to know how to use Jules, here is the short version: sign in with your Google account, connect GitHub, pick a repository, describe what you want, and approve the plan Jules writes. Google's docs call Jules an experimental coding agent that fixes bugs, adds documentation and builds features, and that works on its own once you hand it a task.",
+        "sources": [0]
+      },
+      {
+        "kind": "fact",
+        "text": "The key difference from a chat assistant is where the work happens. Each task runs in a secure, short lived virtual machine where Jules clones your code, installs dependencies and edits files. You do not have to keep a window open while it works, which is why Google's blog describes it as an agent for generating code, fixing bugs, writing tests and improving performance.",
+        "sources": [0, 2, 6]
+      },
+      {
+        "kind": "heading",
+        "text": "How to use Jules: your first task"
+      },
+      {
+        "kind": "step",
+        "title": "1. Sign in",
+        "text": "Go to jules.google.com and sign in with your Google account. The first time, you accept a privacy notice. The docs say users must be 18 or older."
+      },
+      {
+        "kind": "step",
+        "title": "2. Connect GitHub",
+        "text": "Click Connect to GitHub account and finish the GitHub login. You can give Jules access to all your repositories or only the ones you choose. If you are not sent back to Jules afterward, refresh the page."
+      },
+      {
+        "kind": "step",
+        "title": "3. Pick the repository and branch",
+        "text": "Use the repo selector to choose a repository. The default branch is selected for you; change it if the work belongs on another branch."
+      },
+      {
+        "kind": "step",
+        "title": "4. Write a clear task",
+        "text": "Type the task in the prompt box. The docs ask for a clear, specific prompt, and their own example is a request to add a test for one named function in one named file. Name files and functions when you can."
+      },
+      {
+        "kind": "step",
+        "title": "5. Ask for a plan",
+        "text": "Click Give me a plan. Jules writes a plan before it touches any code. Turn on browser notifications when asked, or later under Settings, so you know when it needs you."
+      },
+      {
+        "kind": "step",
+        "title": "6. Review and approve the plan",
+        "text": "Expand each step of the plan. If something is wrong or missing, say so in the chat box, answer any questions Jules asks, and click approve plan when it looks right. One thing to know: if you leave the page, Jules approves the plan on its own after a timer, so check plans for risky tasks right away."
+      },
+      {
+        "kind": "heading",
+        "text": "Task prompts to start with"
+      },
+      {
+        "kind": "prompt",
+        "title": "Prompt 1: Add missing tests",
+        "text": "Add unit tests for the [function name] function in [file path]. Cover the normal case, empty input and invalid input. Use the test framework this repo already uses and do not change the function itself."
+      },
+      {
+        "kind": "prompt",
+        "title": "Prompt 2: Fix one bug",
+        "text": "Users report that [describe the bug, with the exact error message]. Find the cause, fix it with the smallest change that works, and add a test that fails before the fix and passes after it."
+      },
+      {
+        "kind": "prompt",
+        "title": "Prompt 3: Write documentation",
+        "text": "Read the code in [folder] and update README.md with a short section on how to install the project, how to run it locally and how to run the tests. Only describe commands that exist in this repo."
+      },
+      {
+        "kind": "tip",
+        "text": "Small, specific tasks work better than one big request. Each task counts toward your daily limit, but a plan you can read in a minute is far easier to check than a long one."
+      },
+      {
+        "kind": "heading",
+        "text": "Set up the environment and AGENTS.md"
+      },
+      {
+        "kind": "fact",
+        "text": "For simple repositories, Jules works out the setup itself and may read AGENTS.md or README.md for hints. For anything more complex, add a setup script: click the repository in the left sidebar, open Configuration at the top, and enter your commands in the Initial Setup box, for example an install command followed by your test command.",
+        "sources": [2]
+      },
+      {
+        "kind": "fact",
+        "text": "Click Run and Snapshot to test the script. When it succeeds, Jules saves a snapshot and reuses it for future tasks in that repository. Run to Validate checks the script without that step, which is useful for printing tool versions. The VM runs Ubuntu with Node.js, Bun, Python, Go, Java and Rust already installed, along with tools such as Docker. The docs advise keeping the script light and including install, lint and test commands.",
+        "sources": [2]
+      },
+      {
+        "kind": "fact",
+        "text": "Jules also looks for a file named AGENTS.md in the root of your repository and uses it to understand your code and plan better. The docs recommend keeping it up to date, so it is worth writing down your build commands, code style and anything the agent should never touch.",
+        "sources": [0]
+      },
+      {
+        "kind": "heading",
+        "text": "Jules limits and plans"
+      },
+      {
+        "kind": "fact",
+        "text": "The Limits and Plans page lists three tiers. The base Jules plan allows 15 tasks in a rolling 24 hours and 3 tasks at the same time, with Gemini 2.5 Pro. Jules in Pro, included with Google AI Pro, allows 100 tasks a day and 15 at once with higher access to the latest model, starting with Gemini 3 Pro. Jules in Ultra, included with Google AI Ultra, allows 300 tasks a day and 60 at once with priority access.",
+        "sources": [1]
+      },
+      {
+        "kind": "fact",
+        "text": "When you hit the limit, the new task button is disabled until the limit resets, but you can still review and manage existing tasks. The paid tiers are currently only for individual Google accounts ending in @gmail.com, limits are not shared in a family plan, and Google says the limits may change. The page does not list prices.",
+        "sources": [1]
+      },
+      {
+        "kind": "heading",
+        "text": "Use Jules from the terminal or the API"
+      },
+      {
+        "kind": "fact",
+        "text": "Jules Tools is a command line companion that Google announced on its blog. The docs install it with npm install -g @google/jules, and jules login opens a browser to sign in. Running jules with no arguments opens a dashboard in the terminal with a side by side diff viewer.",
+        "sources": [3, 6]
+      },
+      {
+        "kind": "prompt",
+        "title": "Jules Tools: the commands you will use most",
+        "text": "jules remote new --repo . --session \"write unit tests for the parser\"\njules remote list --session\njules remote pull --session [session id]"
+      },
+      {
+        "kind": "fact",
+        "text": "The first command starts a task on the repository in your current folder, the second lists your sessions, and the third pulls the code changes from a finished session. A --parallel option on remote new runs several copies of a task at once.",
+        "sources": [3]
+      },
+      {
+        "kind": "fact",
+        "text": "There is also a REST API, which the docs label an alpha release. You create up to three API keys on the Jules settings page, and sessions started through the API have their plans approved automatically unless you ask for approval. Setting automationMode to AUTO_CREATE_PR makes Jules open a pull request; by default it does not. Google's blog gives examples such as starting a task when a bug is filed in Slack or wiring Jules into a CI/CD pipeline.",
+        "sources": [4, 6]
+      },
+      {
+        "kind": "heading",
+        "text": "What Jules is not good at"
+      },
+      {
+        "kind": "analysis",
+        "text": "Jules is built for tasks you can hand off and check later, not for quick back and forth while you code. Google still calls it experimental and the API is alpha, so features and limits can change. The auto approve timer means you should not start a risky task and walk away. And 15 tasks a day on the base plan goes fast if you split work into many small requests, so save it for jobs where a reviewed plan really saves you time."
+      },
+      {
+        "kind": "tip",
+        "text": "Start with a repository that has tests. Jules can run them in its VM, and a passing test suite is the quickest way for you to trust the change before you merge it."
+      }
+    ]
+  }
+}

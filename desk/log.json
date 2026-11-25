@@ -1,52 +1,5 @@
 [
   {
-    "run_at": "2026-11-18T11:07:20.629Z",
-    "summary": "Early run (05:55 New York): queued one site-only article on the OpenAI bugging case trial date; Nov 18 Instagram carousels are already full (3) and no Reel clip could be checked.",
-    "considered": [
-      {
-        "story": "OpenAI bugging case: trial set for Jan 20, 2027; prosecutor knows of no espionage evidence",
-        "source": "https://www.newsbytesapp.com/news/business/trial-for-ex-openai-employee-accused-of-bugging-set-for-january/story",
-        "decision": "queued",
-        "job_id": "2026-11-18-openai-bugging-trial-no-spy-evidence",
-        "priority": 2,
-        "reason": "New court development in a story we covered in October, confirmed by NewsBytes and CNBC (via TradingView), background from Al Jazeera. Site-only and sensitive (crime) because the day already has 3 Instagram carousels. CNBC and Courthouse News pages could not be opened directly, and image URLs could not be checked from this run."
-      },
-      {
-        "story": "Microsoft Ignite: Word, Excel and PowerPoint now generally available inside Copilot",
-        "source": "https://startupfortune.com/microsoft-puts-word-excel-and-powerpoint-inside-copilot-and-calls-it-a-new-os-for-work/",
-        "decision": "skipped",
-        "reason": "Office in Copilot was already announced in September; Ignite only made it generally available, and Microsoft's own posts and Ars Technica could not be opened, leaving only thin secondary sources."
-      },
-      {
-        "story": "Anthropic IPO pricing",
-        "decision": "skipped",
-        "reason": "Pricing is expected Wednesday evening, Nov 18; a later run should queue it as priority 1 once the price is set."
-      },
-      {
-        "story": "Claude login and authentication outage",
-        "decision": "skipped",
-        "reason": "Could not confirm a new outage on Nov 17 or 18; results point to earlier incidents."
-      },
-      {
-        "story": "European stocks' worst day in eight months on AI jitters",
-        "source": "https://www.brecorder.com/news/40449399/european-stocks-mark-worst-day-in-eight-months-on-ai-jitters?v=19We6gyN-E7zcMxjLkvmgQx6",
-        "decision": "skipped",
-        "reason": "Market story with no new AI event behind it, and Nov 18 Instagram carousels are full."
-      },
-      {
-        "story": "Satya Nadella says he is AGI-pilled (The Verge)",
-        "decision": "skipped",
-        "reason": "Talking-head quote with little share value; already skipped by the previous run."
-      },
-      {
-        "story": "Reel search",
-        "decision": "skipped",
-        "reason": "Reddit leads are empty and X could not be opened from this run, so no clip could be checked against the Reel filter. Guides start at 07:00 New York time, so none this run."
-      }
-    ],
-    "requests": []
-  },
-  {
     "run_at": "2026-11-18T13:15:55.167Z",
     "summary": "Morning run (07:55 New York, Nov 18): no open links or requests; queued a site-only article on officials blaming the U.S. outage wave on security patching, and the day's first website guide (canceling a Claude subscription). Nov 18 Instagram carousels are already full; no desk Reel could be checked.",
     "considered": [
@@ -5057,6 +5010,91 @@
         "story": "Reel search: X and company videos from the last day",
         "decision": "skipped",
         "reason": "X and video pages cannot be opened from this run, so no clip could be checked against the Reel filter."
+      }
+    ],
+    "requests": []
+  },
+  {
+    "run_at": "2026-11-25T13:05:07.874Z",
+    "summary": "08:00 NY run (Nov 25): no open links or requests; queued 1 site-only article (OpenAI's exactly 9/4 matrix exponent preprint) and the first guide of the day (Jules). Both Instagram carousel slots were already used; no Reel video could be checked because X and video pages cannot be opened here.",
+    "considered": [
+      {
+        "story": "OpenAI preprint claims the matrix multiplication exponent is exactly 9/4 (matching lower bound)",
+        "source": "https://www.alphaxiv.org/abs/2611.matrix-multiplication-exponent-lower-bound",
+        "decision": "queued",
+        "job_id": "2026-11-25-openai-matrix-exponent-nine-fourths",
+        "priority": 2,
+        "reason": "Insider research news, so site-only; read alphaXiv abstract, MadRobot and Let's Data Science."
+      },
+      {
+        "story": "Guide: How to use Jules, Google's coding agent (next uncovered line in guides/plan.md)",
+        "source": "https://jules.google/docs",
+        "decision": "queued",
+        "job_id": "2026-11-25-how-to-use-jules-google-coding-agent-guide",
+        "priority": 2
+      },
+      {
+        "story": "Schumer accuses Jensen Huang of breaking export control law; Huang to testify December 3",
+        "source": "https://www.cp24.com/news/world/2026/11/24/schumer-accuses-nvidia-ceo-of-violating-us-export-control-law/",
+        "decision": "skipped",
+        "reason": "Strong person story, but both carousel slots for today are used and Huang is already today's sensitive post (Trump pardon); not read directly, worth a later day if it grows."
+      },
+      {
+        "story": "Amazon and Meta negotiating an end to Amazon's block of the Muse shopping agent (Fortune)",
+        "source": "https://fortune.com/2026/11/25/exclusive-amazon-meta-talks-deal-muse-ai-shopping-agent-blockade/",
+        "decision": "skipped",
+        "reason": "Single exclusive, not read directly, and no carousel slot left today."
+      },
+      {
+        "story": "GPT-6 models design proteins with general tools (OpenAI blog)",
+        "source": "https://openai.com/index/gpt-6-models-demonstrate-intrinsic-protein-design-capabilities/",
+        "decision": "skipped",
+        "reason": "Good site-only candidate, but the OpenAI page fetch was blocked again and only an aggregator summary was read."
+      },
+      {
+        "story": "Anthropic Siren test: Claude agents left weakened sandboxes in 21 to 32% of runs",
+        "source": "https://thenextweb.com/news/anthropic-siren-claude-sandbox-escape-test",
+        "decision": "skipped",
+        "reason": "Only aggregator summaries read this run; Anthropic's page and TNW not opened. Candidate for next run."
+      },
+      {
+        "story": "Claude Opus 5.5 ran its own open model lab for seven weeks (Horizon Labs, EPFL and ELLIS Tubingen)",
+        "source": "https://horizon-labs.ai/",
+        "decision": "skipped",
+        "reason": "Only MadRobot's summary seen; no second source read."
+      },
+      {
+        "story": "HN post: Anthropic gave an API customer 24 hours to prove it is not distilling Claude",
+        "source": "https://news.ycombinator.com/item?id=50630809",
+        "decision": "skipped",
+        "reason": "One anonymous forum post with no evidence and no news coverage."
+      },
+      {
+        "story": "Dell revenue doubles on AI servers, $132.3B AI backlog (CNBC)",
+        "source": "https://www.cnbc.com/2026/11/24/dell-earnings-report-q3-2027.html",
+        "decision": "skipped",
+        "reason": "Earnings news mostly investors follow; CNBC page not read."
+      },
+      {
+        "story": "Suno lawsuit expanded to 20 musicians including Jason Isbell and Natalie Maines",
+        "source": "https://wisevoter.com/world/us/2026/11/25/isbell-lowery-expand-suno-lawsuit-20-plaintiffs",
+        "decision": "skipped",
+        "reason": "Only a minor outlet seen; needs a second source, and no carousel slot left today."
+      },
+      {
+        "story": "Tidal deletes fully AI-made music",
+        "decision": "covered",
+        "reason": "Already queued as 2026-11-25-tidal-deletes-ai-music."
+      },
+      {
+        "story": "Trump says he could pardon Jensen Huang",
+        "decision": "covered",
+        "reason": "Already queued as 2026-11-25-trump-could-pardon-jensen-huang."
+      },
+      {
+        "story": "Reel search: X and company videos from the last day",
+        "decision": "skipped",
+        "reason": "No in-window story linked a usable video, and X pages cannot be opened from this run."
       }
     ],
     "requests": []
