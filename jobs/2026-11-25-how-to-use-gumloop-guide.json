@@ -1,0 +1,241 @@
+{
+  "id": "2026-11-25-how-to-use-gumloop-guide",
+  "format": "utility",
+  "site_only": true,
+  "created_at": "2026-11-25T21:45:00Z",
+  "story_time": "2026-11-25T21:45:00Z",
+  "timely": false,
+  "sensitive": false,
+  "priority": 2,
+  "sources": [
+    {
+      "name": "Gumloop docs: Agents",
+      "url": "https://docs.gumloop.com/core-concepts/agents"
+    },
+    {
+      "name": "Gumloop docs: Agent triggers",
+      "url": "https://docs.gumloop.com/core-concepts/agent_triggers"
+    },
+    {
+      "name": "Gumloop docs: Credits",
+      "url": "https://docs.gumloop.com/core-concepts/credits"
+    },
+    {
+      "name": "Gumloop pricing",
+      "url": "https://www.gumloop.com/pricing"
+    },
+    {
+      "name": "Gumloop docs: AI models",
+      "url": "https://docs.gumloop.com/core-concepts/ai_models"
+    },
+    {
+      "name": "DataCamp: Gumloop tutorial",
+      "url": "https://www.datacamp.com/tutorial/gumloop-tutorial"
+    }
+  ],
+  "caption": "Gumloop is now an AI agent platform: you describe a job, connect your apps and let triggers run it for you.\nPro is $37 a month with 20,000 credits, after a 14 day trial.\nThe full step by step guide, with credit tips, is on neurafeedai.com.\n\nWhich task would you automate first?\n\nFollow @neurafeed.ai for daily AI news.\n\nSource: Gumloop · Photo: Gumloop",
+  "threads_text": "Gumloop's docs say feedback in one chat does not change future tasks: you have to tell the agent to update its instructions or turn it into a skill. Small detail, big difference. What would you automate first?",
+  "slides": [
+    {
+      "kind": "cover",
+      "headline": "How to use *Gumloop* to build an AI agent",
+      "image": {
+        "url": "https://cdn.prod.website-files.com/67cf28c724fc70867ea9f1a7/68a361fd46521b2e0aefd179_comms-cover.webp",
+        "credit": "Gumloop",
+        "fallback_urls": [
+          "https://mintcdn.com/agenthub/gMMzij-M4FoYonlk/images/agents/builder_agent_tab.png"
+        ]
+      }
+    },
+    {
+      "kind": "card",
+      "heading": "1. Create the *agent*",
+      "paras": [
+        "Click New agent, describe the job or pick a template, then add connectors like Gmail or Slack.",
+        "Choose the model and click Save."
+      ],
+      "image": {
+        "url": "https://mintcdn.com/agenthub/gMMzij-M4FoYonlk/images/agents/builder_agent_tab.png",
+        "credit": "Gumloop",
+        "fit": "contain"
+      }
+    },
+    {
+      "kind": "card",
+      "heading": "2. Add a *trigger*",
+      "paras": [
+        "Open the Triggers tab: an app event, a webhook, a schedule or a one-time run.",
+        "Then the agent works without you starting it."
+      ],
+      "image": {
+        "url": "https://mintcdn.com/agenthub/gMMzij-M4FoYonlk/images/agents/builder_triggers_tab.png",
+        "credit": "Gumloop",
+        "fit": "contain"
+      }
+    },
+    {
+      "kind": "card",
+      "heading": "3. Watch the *credits*",
+      "paras": [
+        "Every task shows what it cost. One credit is half a cent.",
+        "Start on Balanced or Auto and save the smartest model for hard jobs."
+      ],
+      "image": {
+        "url": "https://mintcdn.com/agenthub/97jK77BHf3QUeDX9/images/agents/task-title-credits.png",
+        "credit": "Gumloop",
+        "fit": "contain"
+      }
+    },
+    {
+      "kind": "cta",
+      "hook": "Follow for guides that show how AI agents really work."
+    }
+  ],
+  "site_article": {
+    "kind": "guide",
+    "headline": "How to use Gumloop: build your first AI agent, add triggers and control credits",
+    "dek": "Gumloop moved from drag and drop flows to AI agents. Here is how to build one, connect your apps, run it on a trigger and keep the credit bill predictable.",
+    "summary": "Gumloop is an AI agent platform: agents use your connected apps and data, and triggers, schedules and the API run them automatically. The Pro plan costs $37 a month with 20,000 credits, after a 14-day free trial.",
+    "seo_title": "How to use Gumloop: build an AI agent, triggers and credits",
+    "seo_description": "How to use Gumloop step by step: create an agent, add connectors, pick a model, set a trigger, teach it skills and keep credit costs down. Pro plan explained.",
+    "answer_summary": "In Gumloop, click New agent, describe the job or pick a template, add connectors and a model, then save. Add a trigger in the Triggers tab so the agent runs on a schedule, an app event or a webhook.",
+    "tags": [
+      "Gumloop",
+      "AI agents",
+      "Automation",
+      "Guides"
+    ],
+    "hero_alt": "Gumloop announcement graphic for its plans.",
+    "paragraphs": [
+      {
+        "kind": "fact",
+        "text": "If you want to know how to use Gumloop, start with what it is now. Gumloop's docs call it an AI agent platform: you build agents that use your tools and data to do real work, then automate them with triggers, schedules and the API. Each task is its own conversation, with its own history, files and credit usage.",
+        "sources": [
+          0
+        ]
+      },
+      {
+        "kind": "fact",
+        "text": "Older tutorials show a different product. DataCamp's February 2026 tutorial describes Gumloop as a no-code canvas where workflows are built by connecting nodes. The current pricing page still lists workflows, but marks them as legacy, so this guide follows the agent builder in the current docs.",
+        "sources": [
+          5,
+          3
+        ]
+      },
+      {
+        "kind": "heading",
+        "text": "How to build your first Gumloop agent"
+      },
+      {
+        "kind": "step",
+        "title": "1. Create a new agent",
+        "text": "Select Agents in the navigation rail, then New agent in the Agents panel or Create Agent on the Agents page. If Gumloop asks where to create it, pick Personal or one of your teams."
+      },
+      {
+        "kind": "step",
+        "title": "2. Describe the job",
+        "text": "The guided setup asks what the agent should take care of. Describe the goal in plain words, pick a template, or select Start from scratch."
+      },
+      {
+        "kind": "step",
+        "title": "3. Add connectors",
+        "text": "In the Agent tab, open Connectors and click + Add. Pick only the apps this agent needs. The docs name Gmail, Salesforce, Slack and Notion among more than 300 connectors."
+      },
+      {
+        "kind": "step",
+        "title": "4. Pick the model",
+        "text": "Choose the model from the dropdown at the top of the Agent tab. Auto is a router that picks a model for each message, and there are Balanced and Smartest presets."
+      },
+      {
+        "kind": "step",
+        "title": "5. Run a first task",
+        "text": "Send a message in the chat to start a task and watch what the agent does. When it gets something wrong, correct it in the chat."
+      },
+      {
+        "kind": "step",
+        "title": "6. Make the fix stick",
+        "text": "Ask the agent to update your instructions, or to turn this into a skill. The docs are clear that feedback in one chat does not change future tasks on its own."
+      },
+      {
+        "kind": "step",
+        "title": "7. Save",
+        "text": "Click Save, or press Ctrl or Cmd + S, to keep configuration changes. The arrow next to Save undoes unsaved changes."
+      },
+      {
+        "kind": "heading",
+        "text": "Run it automatically with a trigger"
+      },
+      {
+        "kind": "fact",
+        "text": "Triggers live in the Triggers tab of the agent's right panel. The docs list five kinds: App Trigger (an event in a connected app), Webhook, Scheduled Trigger, One-Time Trigger and Create With AI. A scheduled trigger can run as often as every minute, and polling app triggers check for new events about every 60 seconds.",
+        "sources": [
+          0,
+          1
+        ]
+      },
+      {
+        "kind": "step",
+        "title": "8. Add a trigger",
+        "text": "Open the Triggers tab, choose a trigger type, give it a name and a prompt, and click Create trigger. If the agent already has triggers, select Add trigger first."
+      },
+      {
+        "kind": "tip",
+        "text": "Write the trigger prompt as if the agent has never seen you before. The docs use a vague prompt like do the usual thing as an example of what not to write."
+      },
+      {
+        "kind": "fact",
+        "text": "Webhook triggers accept up to 100 requests per minute, and anyone with the webhook URL can run the agent, so treat that URL like a password.",
+        "sources": [
+          1
+        ]
+      },
+      {
+        "kind": "heading",
+        "text": "What Gumloop costs"
+      },
+      {
+        "kind": "fact",
+        "text": "The pricing page lists one self-serve plan, Pro, at $37 a month with 20,000 credits, unlimited agents, seats and teams, and a 14-day free trial; Enterprise is custom. The credits docs say the trial needs a card, is one time per customer and turns into paid Pro unless you cancel. Credits do not roll over, except on Enterprise.",
+        "sources": [
+          3,
+          2
+        ]
+      },
+      {
+        "kind": "fact",
+        "text": "One credit costs $0.005, so $1 buys 200 credits. A task pays for the model (the model cost divided by $0.005), 1 credit per successful connector call, and 5 credits per minute of compute, plus an 8 percent orchestration fee on top. Failed tool calls are not charged. If you run out, you can turn on overage billing at the same $0.005 per credit.",
+        "sources": [
+          2
+        ]
+      },
+      {
+        "kind": "fact",
+        "text": "Bring your own API key (BYOK) needs Pro or higher. Eligible model calls then cost 0 model credits, and the orchestration fee rises to 16 percent.",
+        "sources": [
+          2,
+          4
+        ]
+      },
+      {
+        "kind": "heading",
+        "text": "How to spend fewer credits"
+      },
+      {
+        "kind": "tip",
+        "text": "Start on Balanced or Auto, and switch to Smartest only for the hard jobs. The credits docs give the same advice."
+      },
+      {
+        "kind": "tip",
+        "text": "Start a new chat for a new topic. Long chats grow the context the model re-reads, and that is where credits go."
+      },
+      {
+        "kind": "tip",
+        "text": "Set usage notifications early. By default Gumloop warns you at 75 and 90 percent of your credits."
+      },
+      {
+        "kind": "analysis",
+        "text": "Gumloop is a good fit if you want an agent that reacts to email, Slack or app events without writing code. It is a weaker fit if you need a free plan or a fixed monthly bill: the current pricing has no free tier, credits expire each month, and cost depends on model, chat length and tools. Build one agent with one trigger during the trial and check its credit use per task before you commit."
+      }
+    ]
+  }
+}

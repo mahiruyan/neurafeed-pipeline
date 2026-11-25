@@ -1,0 +1,261 @@
+{
+  "id": "2026-11-25-how-to-use-lindy-ai-guide",
+  "format": "utility",
+  "site_only": true,
+  "created_at": "2026-11-25T21:40:00Z",
+  "story_time": "2026-11-25T21:40:00Z",
+  "timely": false,
+  "sensitive": false,
+  "priority": 2,
+  "sources": [
+    {
+      "name": "Lindy docs: Quickstart",
+      "url": "https://www.lindy.ai/docs/start-here/quickstart"
+    },
+    {
+      "name": "Lindy docs: Pricing",
+      "url": "https://www.lindy.ai/docs/pricing"
+    },
+    {
+      "name": "Lindy docs: Usage",
+      "url": "https://www.lindy.ai/docs/account-billing/usage"
+    },
+    {
+      "name": "Lindy docs: Skills",
+      "url": "https://www.lindy.ai/docs/teammate/skills"
+    },
+    {
+      "name": "Lindy docs: Routines",
+      "url": "https://www.lindy.ai/docs/teammate/routines"
+    },
+    {
+      "name": "Lindy docs: Memory",
+      "url": "https://www.lindy.ai/docs/teammate/memory"
+    },
+    {
+      "name": "Lindy docs: Integrations",
+      "url": "https://www.lindy.ai/docs/integrations/overview"
+    },
+    {
+      "name": "Dupple: Lindy AI pricing",
+      "url": "https://dupple.com/learn/lindy-ai-pricing"
+    }
+  ],
+  "caption": "Lindy is an AI assistant that works inside Slack, your email, your calendar and your texts.\nYou teach it routines in plain English, like a daily brief at 9 AM, and it runs them on its own.\nThe full step by step guide, with costs and credit tips, is on neurafeedai.com.\n\nWhat would you hand an AI assistant first?\n\nFollow @neurafeed.ai for daily AI news.\n\nSource: Lindy · Photo: Lindy",
+  "threads_text": "Lindy's own docs say each new message re-reads the whole thread above it, so long threads burn credits faster. Start a new thread per topic. Would you pay per seat for an AI assistant in Slack?",
+  "slides": [
+    {
+      "kind": "cover",
+      "headline": "How to use *Lindy AI* to build an assistant",
+      "image": {
+        "url": "https://www.lindy.ai/_sherpa/assets/static/docs/social/a3e80275a76e.png",
+        "credit": "Lindy",
+        "fallback_urls": [
+          "https://www.lindy.ai/_sherpa/assets/static/docs/social/0166f784c81f.png"
+        ]
+      }
+    },
+    {
+      "kind": "card",
+      "heading": "1. Describe a *routine*",
+      "paras": [
+        "Open Routines, click New and type what you want, like a weekday summary of unread email.",
+        "Lindy fills in the name, the trigger and the schedule."
+      ],
+      "image": {
+        "url": "https://www.lindy.ai/_sherpa/assets/static/docs/00fa1aa15db0-routines-new-button.png",
+        "credit": "Lindy",
+        "fit": "contain"
+      }
+    },
+    {
+      "kind": "card",
+      "heading": "2. Start from a *template*",
+      "paras": [
+        "The Discover tab has ready routines: Morning briefing, Weekly wrap, Calendar audit and more.",
+        "Each card says if it is ready or needs setup."
+      ],
+      "image": {
+        "url": "https://www.lindy.ai/_sherpa/assets/static/docs/0e1c6b4c6c50-routines-suggested-v2.jpg",
+        "credit": "Lindy",
+        "fit": "contain"
+      }
+    },
+    {
+      "kind": "card",
+      "heading": "3. Cap the *credits*",
+      "paras": [
+        "Every seat shares one pool of credits. Admins can set a credit limit per person in Settings, Members.",
+        "Plan credits reset each cycle and do not roll over."
+      ],
+      "image": {
+        "url": "https://www.lindy.ai/_sherpa/assets/static/docs/dba9e83f782c-edit-credit-limit.png",
+        "credit": "Lindy",
+        "fit": "contain"
+      }
+    },
+    {
+      "kind": "cta",
+      "hook": "Follow for guides that show what AI assistants really do."
+    }
+  ],
+  "site_article": {
+    "kind": "guide",
+    "headline": "How to use Lindy AI: set up your assistant, routines and skills",
+    "dek": "Lindy works from Slack, email, calendar and text. Here is how to set it up, build your first routine, teach it a skill and keep credits under control.",
+    "summary": "Lindy is an AI assistant that completes work across connected tools, reached through Slack, email, iMessage or text. It is priced per user with a shared credit pool, starts with a free 7-day credit trial, and runs automations called routines.",
+    "seo_title": "How to use Lindy AI: setup, routines, skills and credits",
+    "seo_description": "How to use Lindy AI step by step: add it to Slack, connect email and calendar, build your first routine, teach it a skill and cut credit use. Plans explained.",
+    "answer_summary": "Add Lindy to Slack or sign up, connect your Google or Microsoft account and your phone, then open Routines, click New and describe the task in plain English. Lindy sets the trigger and schedule for you.",
+    "tags": [
+      "Lindy",
+      "AI assistant",
+      "Automation",
+      "Guides"
+    ],
+    "hero_alt": "Lindy documentation banner for the Quickstart page.",
+    "paragraphs": [
+      {
+        "kind": "fact",
+        "text": "If you want to know how to use Lindy AI, here is the short version: get Lindy into Slack or sign up on its own, connect your email, calendar and phone, then build routines that run on a schedule or when something happens. Lindy's docs describe it as an AI employee that completes work across your connected tools, working as a personal assistant for one person and as a shared teammate for a team.",
+        "sources": [
+          0
+        ]
+      },
+      {
+        "kind": "fact",
+        "text": "You talk to it through Slack DMs, email, iMessage or text, and you can @mention it in shared Slack channels. The docs list Gmail, Slack, Notion, HubSpot, Google Drive and GitHub among more than 3,000 integrations, plus any MCP server. Microsoft Teams support is listed as coming soon.",
+        "sources": [
+          0,
+          6
+        ]
+      },
+      {
+        "kind": "heading",
+        "text": "How to set up Lindy AI"
+      },
+      {
+        "kind": "step",
+        "title": "1. Add Lindy to Slack",
+        "text": "For a team, an admin installs Lindy from Slack's Add to Slack screen. The first time a teammate DMs or @mentions Lindy, it replies with a Connect Slack to Lindy button. One tap and a confirm links that person. The quickstart says the whole setup takes about two minutes."
+      },
+      {
+        "kind": "step",
+        "title": "2. Connect email and calendar",
+        "text": "Connect a Google or Microsoft account. This is what lets Lindy read your inbox, prep and take notes for meetings, and schedule for you."
+      },
+      {
+        "kind": "step",
+        "title": "3. Add your phone",
+        "text": "Add a phone number or connect Apple Messages, then verify it with a code. After that you can text Lindy like a person."
+      },
+      {
+        "kind": "step",
+        "title": "4. Connect your other tools",
+        "text": "Search for a tool on the integrations page and connect it with OAuth or an API key. Every action for that tool turns on at once. You can add more than one account for the same tool, for example two Gmail inboxes."
+      },
+      {
+        "kind": "step",
+        "title": "5. Test it with a simple ask",
+        "text": "The quickstart suggests starting with plain requests such as asking what is on your calendar today, or asking it to schedule 30 minutes with a colleague next week."
+      },
+      {
+        "kind": "heading",
+        "text": "Build your first routine"
+      },
+      {
+        "kind": "fact",
+        "text": "A routine is an automation attached to your Lindy. Each one has three parts: a trigger (when it runs), a prompt in plain English (what to do) and a destination (where the result goes). Triggers can be a schedule, daily, weekly or monthly, or an event such as an email arriving, a Slack message, a calendar event about to start or a meeting ending. A Smart Filter narrows event triggers in plain English.",
+        "sources": [
+          4
+        ]
+      },
+      {
+        "kind": "step",
+        "title": "6. Open Routines and click New",
+        "text": "Open Routines from the left sidebar and click New. Type into the Describe your routine box, for example: every weekday at 9, summarize my unread email and Slack mentions. Lindy fills in the name, the trigger and the schedule. Use Advanced settings if you want to set them by hand."
+      },
+      {
+        "kind": "step",
+        "title": "7. Or start from a template",
+        "text": "The Discover tab has ready routines such as Morning briefing, End-of-day review, Weekly wrap, Promise tracker, Post-meeting follow-ups, Calendar audit and Channel digest. Each card shows Ready, Needs setup or Needs admin."
+      },
+      {
+        "kind": "step",
+        "title": "8. Do a dry run first",
+        "text": "Before you let a routine loose, ask Lindy in chat for a dry run, for example: Dry-run my morning briefing. Nothing gets sent. New routines run daily at 9:00 AM until you change the schedule."
+      },
+      {
+        "kind": "fact",
+        "text": "Personal routines deliver to your default channel, Lindy chat, text or a Slack DM. Workspace routines post to a Slack thread or a channel, and only admins can create them. Lindy also ships built-in routines you switch on per account, including daily briefs, email drafting, email labeling, urgent email alerts, follow-up bumps, meeting recording, meeting prep and meeting scheduling.",
+        "sources": [
+          4
+        ]
+      },
+      {
+        "kind": "heading",
+        "text": "Teach Lindy a skill"
+      },
+      {
+        "kind": "fact",
+        "text": "A skill is a playbook you teach Lindy: named instructions for a procedure you repeat. You can describe the process in chat and Lindy saves it as a skill, create one on the Skills page, or record your screen with Watch and Learn. Lindy always sees skill names and descriptions and loads the full instructions only when a request calls for it.",
+        "sources": [
+          3
+        ]
+      },
+      {
+        "kind": "tip",
+        "text": "If Lindy ignores a skill, rewrite its description to be more specific. The docs say the description is what Lindy uses to pick the right skill."
+      },
+      {
+        "kind": "fact",
+        "text": "Lindy keeps its files in Memory, a page in the left sidebar where you can read and edit them. Files come in Personal, Team and System scopes, and every save is a new version, so you can check what Lindy has learned and fix it.",
+        "sources": [
+          5
+        ]
+      },
+      {
+        "kind": "heading",
+        "text": "What Lindy AI costs"
+      },
+      {
+        "kind": "fact",
+        "text": "Lindy charges per user, and everyone in a workspace shares one pool of credits. The docs list Plus, Pro and Max plans plus Enterprise, and say credits cost $0.01 each on base plans. You start with free credits and no credit card; they last 7 days and the free week is one time per person. Plan credits reset each billing cycle and do not roll over, while top-up credits carry over. Phone calls start at 25 credits per minute.",
+        "sources": [
+          1,
+          2
+        ]
+      },
+      {
+        "kind": "fact",
+        "text": "The docs send you to Settings, Billing for current prices. Dupple, reading Lindy's pricing page in November 2026, reported a seat starting at $49.99 a month for 5,000 credits, with larger rungs of 15,000 credits for $99.99 and 35,000 for $199.99.",
+        "sources": [
+          7
+        ]
+      },
+      {
+        "kind": "tip",
+        "text": "Watch the seat count. Per the docs, anyone who signs up, joins the workspace or @mentions Lindy in Slack takes a billed seat."
+      },
+      {
+        "kind": "heading",
+        "text": "How to spend fewer credits"
+      },
+      {
+        "kind": "fact",
+        "text": "Lindy's usage page gives its own advice. Start a new thread for a new topic, because each message re-reads everything above it. Be specific: five bullets on a company's funding history costs less than a vague research ask. Pick a cheaper model for summaries and drafts from the dropdown below the taskbar. Review team routines monthly, and turn off the ones nobody reads.",
+        "sources": [
+          2
+        ]
+      },
+      {
+        "kind": "tip",
+        "text": "Set a cap per person in Settings, Members: click the menu on a row and choose Edit credit limit. When someone hits it, their credit-using actions pause."
+      },
+      {
+        "kind": "analysis",
+        "text": "Lindy is strongest as an inbox, calendar and meeting assistant for people who already live in Slack. It is weaker as a cheap solo tool: billing is per seat, credits vanish at the end of each cycle, and the docs do not publish prices outside the app. Run the free week on one routine you would really use every day before you pay."
+      }
+    ]
+  }
+}
