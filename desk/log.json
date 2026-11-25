@@ -1,20 +1,5 @@
 [
   {
-    "run_at": "2026-11-18T10:19:31.305Z",
-    "summary": "Link desk: made Mahir's Reel on a collector's 30 years of Nvidia graphics cards (link-2026-11-18-4357).",
-    "considered": [
-      {
-        "story": "Collector shows 30 years of Nvidia graphics cards, NV1 (1995) to RTX 5090",
-        "source": "https://www.instagram.com/reel/Df4DVliANn2/",
-        "decision": "queued",
-        "job_id": "2026-11-18-nvidia-gpu-collection-30-years-reel",
-        "priority": 1,
-        "reason": "Mahir's link. Hook is his title word for word (only 'graphic' fixed to 'graphics'). The Instagram clip is a repost carrying another AI page's branding, so the pipeline searches for the collector's original YouTube video (ornstein6990); credit goes to the collector, not the repost page, as Mahir asked. The collection was first covered in 2025, so timely is false. The '40 cards' detail in the repost caption was not confirmed by any outlet, so it is left out."
-      }
-    ],
-    "requests": []
-  },
-  {
     "run_at": "2026-11-18T11:07:20.629Z",
     "summary": "Early run (05:55 New York): queued one site-only article on the OpenAI bugging case trial date; Nov 18 Instagram carousels are already full (3) and no Reel clip could be checked.",
     "considered": [
@@ -5011,6 +4996,62 @@
         "story": "Anthropic stock below its $83 IPO price",
         "decision": "covered",
         "reason": "Already queued as 2026-11-24-anthropic-stock-below-ipo-price."
+      },
+      {
+        "story": "Reel search: X and company videos from the last day",
+        "decision": "skipped",
+        "reason": "X and video pages cannot be opened from this run, so no clip could be checked against the Reel filter."
+      }
+    ],
+    "requests": []
+  },
+  {
+    "run_at": "2026-11-25T11:02:46.818Z",
+    "summary": "06:00 NY run (Nov 25): no open links or requests; queued 1 Instagram carousel (Trump says a Jensen Huang pardon is an option and floats a U.S. stake in Nvidia), sensitive so it waits for Mahir. Both carousel slots for today are now used. Several page fetches (OpenAI, Firstpost, image hosts) were still blocked, so no site-only article or Reel could be confirmed.",
+    "considered": [
+      {
+        "story": "Trump tells the New York Post a pardon for Jensen Huang is 'always an option' and a U.S. stake in Nvidia is 'probably not too late'",
+        "source": "https://www.investing.com/news/stock-market-news/trump-says-he-could-pardon-jensen-huang-floats-us-govt-stake-in-nvidia--nyt-5049530",
+        "decision": "queued",
+        "job_id": "2026-11-25-trump-could-pardon-jensen-huang",
+        "priority": 1
+      },
+      {
+        "story": "Asian chip stocks plunge (Taiex down as much as 7.9%, Kospi over 6%) as AI doubts return",
+        "source": "https://www.aljazeera.com/news/2026/11/25/asias-stock-markets-dive-as-doubts-to-swirl-over-ai-boom",
+        "decision": "skipped",
+        "reason": "Only one current source could be read (search results for a second were 2025 coverage); used as context in the Trump/Nvidia article instead."
+      },
+      {
+        "story": "GPT-6 models demonstrate intrinsic protein-design capabilities (OpenAI blog)",
+        "source": "https://openai.com/index/gpt-6-models-demonstrate-intrinsic-protein-design-capabilities/",
+        "decision": "skipped",
+        "reason": "Good site-only candidate, but the OpenAI page fetch was blocked again (permission not answered)."
+      },
+      {
+        "story": "OpenAI preprint claims the matrix multiplication exponent is exactly 9/4",
+        "decision": "skipped",
+        "reason": "Still no readable source confirming the new claim."
+      },
+      {
+        "story": "Anthropic stock below its $83 IPO price",
+        "decision": "covered",
+        "reason": "Already queued as 2026-11-24-anthropic-stock-below-ipo-price."
+      },
+      {
+        "story": "Tidal bans fully AI-generated music",
+        "decision": "covered",
+        "reason": "Already queued as 2026-11-25-tidal-deletes-ai-music."
+      },
+      {
+        "story": "Max Tegmark claims Anthropic staff talk about 'taking over the world' (Novara Media)",
+        "decision": "skipped",
+        "reason": "One outlet relaying one person's claim; no second source."
+      },
+      {
+        "story": "Anthropic Opus 5.6 reportedly in secret testing (BigGo Finance)",
+        "decision": "skipped",
+        "reason": "Single unconfirmed rumor site."
       },
       {
         "story": "Reel search: X and company videos from the last day",
