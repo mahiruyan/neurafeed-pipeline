@@ -5037,5 +5037,69 @@
       }
     ],
     "requests": []
+  },
+  {
+    "run_at": "2026-11-25T19:02:17.009Z",
+    "summary": "14:00 NY run (Nov 25): no open links or requests; queued 1 site-only article (Claude 'Install as app' turns artifacts into Mac and Windows apps), the 4th site-only news story today. Both Instagram carousel slots were already used, no Reel video could be verified, and no guide was queued because the vendor pages for the next plan topics could not be read.",
+    "considered": [
+      {
+        "story": "Anthropic 'Install as app' beta turns Claude artifacts into Mac and Windows desktop apps, with permissions up to full computer access",
+        "source": "https://claude.com/resources/articles/install-as-app",
+        "decision": "queued",
+        "job_id": "2026-11-25-claude-artifacts-install-as-desktop-apps",
+        "priority": 2,
+        "reason": "Product news, so site-only; read Anthropic's post, The Next Web and TestingCatalog."
+      },
+      {
+        "story": "Guide: How to use InVideo AI for free (next uncovered line in guides/plan.md)",
+        "source": "https://help-ai.invideo.io/how-can-i-generate-a-video-with-invideo-ai/",
+        "decision": "skipped",
+        "reason": "Only a 2024 blog and two short help pages describing different UIs could be read; the pricing page was blocked, so free plan limits could not be stated. Next run should retry."
+      },
+      {
+        "story": "Guide: How to use Ideogram for free (next line after InVideo)",
+        "source": "https://docs.ideogram.ai/",
+        "decision": "skipped",
+        "reason": "Ideogram's docs and pricing pages could not be opened from this run."
+      },
+      {
+        "story": "AI glasses falsely said an ambulance was on the way during a simulated emergency (Dutch watchdog test)",
+        "source": "https://mezha.net/eng/news/mezha-7b9d84bf620c542d96f537d0_ai_glasses_falsely",
+        "decision": "skipped",
+        "reason": "Strong 'everyone' story, but both carousel slots for today are used and only one minor outlet was seen; candidate for tomorrow."
+      },
+      {
+        "story": "Walmart's Agent Gateway lets Meta's Muse agent complete purchases for Black Friday",
+        "decision": "skipped",
+        "reason": "Only a newsletter summary seen; no primary source read, and no carousel slot left today."
+      },
+      {
+        "story": "SoftBank finalizes purchase of the Robotics and AI Institute from Hyundai",
+        "decision": "skipped",
+        "reason": "Only a newsletter summary with no deal price; insider robotics business news."
+      },
+      {
+        "story": "Unit 42: attackers used autonomous AI agents in 10+ campaigns from July to September 2026",
+        "decision": "skipped",
+        "reason": "Only an undated newsletter summary seen; Unit 42 report not read. Site-only candidate for a later run."
+      },
+      {
+        "story": "OpenAI: amateur astronomers used Codex and Astra to search Kepler and TESS data for planets",
+        "source": "https://openai.com/index/searching-for-distant-planets-with-astra",
+        "decision": "skipped",
+        "reason": "Today's 4 site-only news slots are now full; candidate for tomorrow."
+      },
+      {
+        "story": "Reel search: viral AI videos of the last day (robots, smart glasses, gadgets)",
+        "decision": "skipped",
+        "reason": "No in-window story linked a usable video, and X and video pages cannot be opened from this run."
+      },
+      {
+        "story": "Tidal AI music / Trump could pardon Jensen Huang / OpenAI 9/4 exponent / GPT-6.2 proteins / Anthropic work study",
+        "decision": "covered",
+        "reason": "Already queued earlier today."
+      }
+    ],
+    "requests": []
   }
 ]

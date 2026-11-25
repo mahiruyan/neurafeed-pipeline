@@ -1,0 +1,149 @@
+{
+  "id": "2026-11-25-claude-artifacts-install-as-desktop-apps",
+  "created_at": "2026-11-25T19:30:00Z",
+  "story_time": "2026-11-24T18:00:00Z",
+  "timely": false,
+  "sensitive": false,
+  "priority": 2,
+  "site_only": true,
+  "format": "carousel",
+  "site_category": "companies",
+  "ab": {
+    "headline": "long",
+    "photo": "story"
+  },
+  "sources": [
+    {
+      "name": "Anthropic",
+      "url": "https://claude.com/resources/articles/install-as-app"
+    },
+    {
+      "name": "The Next Web",
+      "url": "https://thenextweb.com/news/claude-install-as-app-artifacts-mac-windows-desktop"
+    },
+    {
+      "name": "TestingCatalog",
+      "url": "https://www.testingcatalog.com/anthropic-now-allows-installing-artifacts-as-desktop-apps/"
+    }
+  ],
+  "caption": "Claude can now turn the artifacts it builds into real Mac and Windows apps, with their own icon and window.\nThe beta is rolling out on all plans, and apps can ask for notifications, menu bar items or even full computer access.\nAnthropic says it does not review these apps, so only give full access to apps you trust.\n\nWhat app would you ask Claude to build for your desktop?\n\nFollow @neurafeed.ai for daily AI news.\n\nSource: Anthropic · Photo: Anthropic",
+  "threads_text": "Claude can now install the little apps it builds as real Mac and Windows apps, and they can even ask for full access to your computer. Anthropic says it does not review them first. Would you give an AI-built app full access?",
+  "slides": [
+    {
+      "kind": "cover",
+      "headline": "Claude can now turn the apps it builds into *real Mac and Windows apps* with one click",
+      "image": {
+        "url": "https://assets.claude.com/1d558aa9dd6599dfad2f4ae46a5f7bcff085d8bb.png",
+        "credit": "Anthropic",
+        "fallback_urls": [
+          "https://claude.com/resources/articles/install-as-app/opengraph-image/og"
+        ]
+      },
+      "badges": [
+        {
+          "url": "assets/logos/claude.png",
+          "fit": "contain"
+        }
+      ],
+      "badge_side": "right"
+    },
+    {
+      "kind": "card",
+      "heading": "Its own icon, its *own window*",
+      "paras": [
+        "Pick Install as app from an artifact's Share menu in Claude for Mac or Windows. The beta is rolling out on all plans.",
+        "The app updates on its own when the artifact is edited."
+      ],
+      "image": {
+        "url": "https://storage.ghost.io/c/2a/1b/2a1b1782-8506-4d7d-bf53-ad3fb52e2a0f/content/images/size/w2000/2026/11/og--1-.png",
+        "credit": "TestingCatalog",
+        "fit": "contain"
+      }
+    },
+    {
+      "kind": "card",
+      "heading": "Full access, *no review*",
+      "paras": [
+        "Apps can ask for notifications, menu bar items or full computer access to run programs and change files.",
+        "Anthropic says it does not review apps before you install them."
+      ],
+      "image": {
+        "url": "https://claude.com/resources/articles/install-as-app/opengraph-image/og",
+        "credit": "Anthropic",
+        "fit": "contain"
+      }
+    },
+    {
+      "kind": "cta",
+      "hook": "Follow for the Claude features that change how you use your computer."
+    }
+  ],
+  "site_article": {
+    "headline": "Claude can now install its artifacts as Mac and Windows desktop apps",
+    "dek": "The beta feature gives each artifact its own icon and window, and lets it request permissions up to full computer access, which Anthropic does not review.",
+    "summary": "Anthropic began rolling out an \"Install as app\" beta on November 24, 2026 that turns Claude artifacts into standalone Mac and Windows apps. The feature is available on all plans, with three permission levels ranging from browser-like limits to full computer access.",
+    "seo_title": "Claude Install as app: artifacts become Mac and Windows apps",
+    "seo_description": "Anthropic's Install as app beta turns Claude artifacts into Mac and Windows apps on all plans. How it works, the three permission levels and the limits.",
+    "answer_summary": "Claude users on Mac and Windows can now choose Install as app on an artifact to run it as a standalone desktop app with its own icon and window. The beta is rolling out on all plans, and apps can request extra permissions up to full computer access.",
+    "tags": ["Anthropic", "Claude", "Claude artifacts", "Desktop apps", "AI app builders"],
+    "hero_alt": "Pixel-art style computer desktop showing several small app windows and an open app menu.",
+    "paragraphs": [
+      {
+        "kind": "fact",
+        "text": "Anthropic began rolling out a beta feature called \"Install as app\" on November 24, 2026, which lets people turn artifacts made in Claude into standalone apps for Mac and Windows. According to the company's announcement, an installed artifact gets its own icon and opens in its own window instead of inside Claude, and it can still use Claude and the connectors a user has set up.",
+        "sources": [0, 1]
+      },
+      {
+        "kind": "fact",
+        "text": "The feature is rolling out on all plans, Anthropic said. TestingCatalog lists them as Free, Pro, Max, Ultra, Team and Enterprise. On Team plans it is on by default, while Enterprise organizations need an owner to switch it on. Organizations with HIPAA-ready setups and hybrid deployments cannot use it.",
+        "sources": [0, 2]
+      },
+      {
+        "kind": "heading",
+        "text": "How installing works"
+      },
+      {
+        "kind": "fact",
+        "text": "Anthropic's instructions are short: update Claude for Mac or Windows, open an artifact, and choose Install as app from the Share menu. TestingCatalog reports that the option also appears in the artifact's title menu and in a right-click menu, and that it requires desktop version 6.28899.0 or later, citing Anthropic's help center. There is no separate packaging or signing step and no API key, and users must be online and signed in to Claude to open an installed app.",
+        "sources": [0, 2]
+      },
+      {
+        "kind": "fact",
+        "text": "On a Mac, installed apps go into a Claude Apps folder inside the user's Applications folder, according to TestingCatalog, while on Windows they appear in the Start menu or as a desktop shortcut. The Next Web reports that the feature is not available on Linux, on the web or on mobile. Claude Docs, Slides and Sheets, legacy artifacts and live artifacts from Claude Cowork cannot be installed, TestingCatalog said.",
+        "sources": [1, 2]
+      },
+      {
+        "kind": "fact",
+        "text": "When the underlying artifact is edited, the installed app updates automatically. Requests that an app sends to Claude count toward the user's plan usage limits, according to Anthropic.",
+        "sources": [0, 2]
+      },
+      {
+        "kind": "heading",
+        "text": "Three permission levels"
+      },
+      {
+        "kind": "fact",
+        "text": "Anthropic describes three levels of access. By default, an installed app can only do what it could do in a web browser. With app permissions, it can ask for features the company says Claude can tightly control, such as sending notifications, adding a menu bar or system tray item, keeping a window on top of others and listening for global keyboard shortcuts. The highest level, full computer access, lets an app ask to run programs and to read, change or delete files without asking each time.",
+        "sources": [0, 1]
+      },
+      {
+        "kind": "fact",
+        "text": "Full computer access is limited to apps the user made, or on Team and Enterprise plans to apps made by people in the same organization, and admins on those plans can turn app permissions and full access on or off. Anthropic states that it does not review apps before they are installed and advises granting full access only to apps the user trusts. A permission covers only the current version of an app, so Claude asks again after every update, though parts of an app loaded from another website can change without a new request. The Next Web adds that zero data retention does not apply to these apps.",
+        "sources": [0, 1]
+      },
+      {
+        "kind": "fact",
+        "text": "Anthropic showed demo apps built by its staff, including a menu bar and tray app called Vitals for checking a computer's performance. Anthropic engineer Felix Rieseberg wrote on X that he had used the feature to build his own terminals, file managers, video editors, communication tools and desktop pets, according to TestingCatalog.",
+        "sources": [0, 2]
+      },
+      {
+        "kind": "analysis",
+        "text": "In NeuraFeed's reading, the update moves Claude artifacts from throwaway previews toward small personal software that people keep using. It also shifts a security decision onto users: an app built in a chat can now ask to run programs and delete files, and the protection rests on the permission prompts and on users only trusting apps they or their colleagues made."
+      },
+      {
+        "kind": "why_it_matters",
+        "text": "Watch whether Enterprise owners switch the feature on and whether they allow full computer access, and whether Anthropic extends installed apps beyond Mac and Windows when the beta ends."
+      }
+    ]
+  }
+}
