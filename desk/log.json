@@ -5010,5 +5010,57 @@
       }
     ],
     "requests": []
+  },
+  {
+    "run_at": "2026-11-25T00:56:23.296Z",
+    "summary": "20:00 NY run (Nov 24): no open links or requests; nothing queued. Both Instagram carousel slots (plus the priority 1 Anthropic IPO exception), all four site-only article slots and all six guides are used today, no new priority 1 story appeared, and no fresh Reel video passed the filter.",
+    "considered": [
+      {
+        "story": "FT: OpenAI hires from the CIA and walls off offices as foreign spies target AI labs; Anthropic hires intelligence veterans to watch its own staff",
+        "source": "https://thenextweb.com/news/openai-anthropic-us-intelligence-hires-state-espionage-ft",
+        "decision": "skipped",
+        "reason": "Strong scandal angle, but it is a feature that mostly recaps the bugging case we already covered, only one rewrite read (FT is paywalled), and no carousel or site-only slot is left today; a candidate for tomorrow."
+      },
+      {
+        "story": "German consumer group vzbv takes legal action against Ray-Ban maker EssilorLuxottica and Meta over smart glasses that record bystanders",
+        "source": "https://www.jamaicaobserver.com/2026/11/24/ray-ban-meta-face-legal-action-smart-glasses-discreet-recording-capabilities/",
+        "decision": "skipped",
+        "reason": "Only one AFP rewrite read, a European consumer case with no filing date, and no carousel slot left today; worth checking tomorrow with a second source."
+      },
+      {
+        "story": "A boy at the Shenzhen APEC Robot Carnival walks off with a humanoid robot by the hand",
+        "source": "https://x.com/Annie_0605/status/2123214036217278695",
+        "decision": "covered",
+        "reason": "Already made as 2026-11-21-kid-walks-off-with-humanoid-robot-reel."
+      },
+      {
+        "story": "Reel search: viral robot, smart glasses and gadget clips of the last day",
+        "decision": "skipped",
+        "reason": "Searches only returned older clips (Optimus fail, San Francisco store fight, cooking robot) that are months old or already rejected."
+      },
+      {
+        "story": "Z.ai GLM-5.4 Loop Transformer model with 1M context",
+        "source": "https://z.ai/blog/glm-5.4",
+        "decision": "skipped",
+        "reason": "Model news for insiders and all four site-only slots are already used today."
+      },
+      {
+        "story": "Anthropic and OpenAI staff fear unreleased models are too powerful to release",
+        "decision": "skipped",
+        "reason": "Same as earlier runs: syndicated rewrites of August stories, nothing new confirmed."
+      },
+      {
+        "story": "Tidal bans AI-generated music",
+        "source": "https://variety.com/2026/music/news/tidal-bans-ai-generated-music-1236956924/",
+        "decision": "skipped",
+        "reason": "No slot left today; still a candidate for tomorrow."
+      },
+      {
+        "story": "OpenAI's OpenWorks pays local experts up to $8,000 a month",
+        "decision": "skipped",
+        "reason": "No carousel or site-only slot left today."
+      }
+    ],
+    "requests": []
   }
 ]
