@@ -1,102 +1,5 @@
 [
   {
-    "run_at": "2026-11-18T07:01:04.769Z",
-    "summary": "Early run (02:00 New York, Nov 18): no open links or requests; Nov 18's 2 carousels are already queued, so added OpenAI's Daybreak cyber models for NATO as a site-only article; no desk Reel could be checked.",
-    "considered": [
-      {
-        "story": "OpenAI gives NATO and European cyber agencies access to its Daybreak models (up to 300 billion tokens a month)",
-        "source": "https://www.helpnetsecurity.com/2026/11/17/openai-nato-ai-cyber-defense/",
-        "decision": "queued",
-        "job_id": "2026-11-18-openai-daybreak-nato-cyber-defense",
-        "priority": 2,
-        "reason": "Solid OpenAI news confirmed by Help Net Security, Defense One and The Decoder, but insiders follow it, so site-only. I could not preview the photos from this run."
-      },
-      {
-        "story": "OpenAI adds 50,000 free ChatGPT Plus grants for academic researchers, swapping Pro for Plus",
-        "source": "https://thenextweb.com/news/openai-chatgpt-academic-researchers-50000-grants-plus",
-        "decision": "skipped",
-        "reason": "Announced Nov 16 and only one independent article could be opened; could be a later site article."
-      },
-      {
-        "story": "Anthropic IPO pricing",
-        "decision": "skipped",
-        "reason": "Pricing is expected later on Wednesday, Nov 18; nothing final yet, a later run should queue it as priority 1."
-      },
-      {
-        "story": "Satya Nadella says he is AGI-pilled (The Verge)",
-        "decision": "skipped",
-        "reason": "Talking-head quote with little share value."
-      },
-      {
-        "story": "Nvidia's startup stakes reach $65B but Huang's exit puts deals in doubt (TechCrunch)",
-        "decision": "skipped",
-        "reason": "Another Huang exit angle; Nvidia is already covered by two Nov 17 jobs."
-      },
-      {
-        "story": "San Francisco extends data center ban days before Anthropic's debut (SF Chronicle)",
-        "decision": "skipped",
-        "reason": "Local policy story; the Chronicle page is paywalled and no second source was found."
-      },
-      {
-        "story": "Google's AI answers reduce search traffic by 40% (Hacker News)",
-        "decision": "skipped",
-        "reason": "Rests on one SEO vendor's blog, not a news source."
-      },
-      {
-        "story": "Reel search",
-        "decision": "skipped",
-        "reason": "Reddit leads are empty and X cannot be opened from this run, so no clip could be checked against the Reel filter."
-      }
-    ],
-    "requests": []
-  },
-  {
-    "run_at": "2026-11-18T09:01:03.453Z",
-    "summary": "Early run (04:00 New York, Nov 18): no open links or requests; queued Google making its Tasks in Gemini agent free (with calls and Google Pay in the US) as a priority 1 carousel; no desk Reel could be checked.",
-    "considered": [
-      {
-        "story": "Google makes Tasks in Gemini free in six countries, adds business calls and Google Pay checkout in the US",
-        "source": "https://www.androidpolice.com/google-giving-millions-gemini-users-free-personal-ai-agent/",
-        "decision": "queued",
-        "job_id": "2026-11-18-gemini-tasks-free-calls-pay",
-        "priority": 1,
-        "reason": "Major Google news that hits normal users (a free AI agent that calls and pays for you), confirmed by Android Police, Unite.AI and Data Studios. Queued as a carousel under the priority 1 exception because Google's own video could not be opened, so this makes a third Nov 18 carousel. I could not preview the photos from this run."
-      },
-      {
-        "story": "Anthropic IPO pricing",
-        "source": "https://www.cnbc.com/2026/11/16/anthropic-ipo-date-price-range.html",
-        "decision": "skipped",
-        "reason": "Pricing is expected Wednesday evening, Nov 18, with trading Nov 19; nothing final yet, a later run should queue it as priority 1."
-      },
-      {
-        "story": "Google lets users view and edit what Gemini remembers",
-        "decision": "skipped",
-        "reason": "Rollout began around Nov 9 to 11, not new."
-      },
-      {
-        "story": "Satya Nadella says he is AGI-pilled (The Verge)",
-        "decision": "skipped",
-        "reason": "Talking-head quote with little share value."
-      },
-      {
-        "story": "Nvidia's startup stakes reach $65B but Huang's exit puts deals in doubt (TechCrunch)",
-        "decision": "skipped",
-        "reason": "Another Huang exit angle; Nvidia is already covered by two Nov 17 jobs."
-      },
-      {
-        "story": "OpenAI 50,000 ChatGPT Plus research grants",
-        "decision": "skipped",
-        "reason": "Announced Nov 16, still only one independent article found."
-      },
-      {
-        "story": "Reel search",
-        "decision": "skipped",
-        "reason": "Reddit leads are empty, leads were last refreshed at 01:51 UTC, and X and Google's blog could not be opened from this run, so no clip could be checked against the Reel filter."
-      }
-    ],
-    "requests": []
-  },
-  {
     "run_at": "2026-11-18T10:19:31.305Z",
     "summary": "Link desk: made Mahir's Reel on a collector's 30 years of Nvidia graphics cards (link-2026-11-18-4357).",
     "considered": [
@@ -5056,6 +4959,63 @@
         "story": "Saudi man suspected of spying on OpenAI released on bond",
         "decision": "covered",
         "reason": "The bugging case already has several jobs."
+      }
+    ],
+    "requests": []
+  },
+  {
+    "run_at": "2026-11-25T09:01:52.256Z",
+    "summary": "04:00 NY run (Nov 25): no open links or requests; queued 1 Instagram carousel (Tidal deleting fully AI-made music). Most page fetches were still blocked, so no Reel or site-only article could be confirmed with two read sources.",
+    "considered": [
+      {
+        "story": "Tidal bans fully AI-generated music, removals start December 9 (43% of recent uploads AI, 27 million tracks)",
+        "source": "https://techcrunch.com/2026/11/24/tidal-to-ban-and-remove-millions-of-ai-generated-tracks-as-ai-slop-inundates-music-streaming/",
+        "decision": "queued",
+        "job_id": "2026-11-25-tidal-deletes-ai-music",
+        "priority": 2
+      },
+      {
+        "story": "OpenAI preprint claims the matrix multiplication exponent is exactly 9/4",
+        "source": "https://officechai.com/ai/openai-has-found-a-far-faster-way-to-multiply-matrices-the-math-that-underpins-all-of-modern-ai/",
+        "decision": "skipped",
+        "reason": "The sources I could read only describe the October 9/4 upper bound; the new 'exactly 9/4' claim could not be confirmed from any page read."
+      },
+      {
+        "story": "GPT-6 models demonstrate intrinsic protein-design capabilities (OpenAI blog)",
+        "source": "https://openai.com/index/gpt-6-models-demonstrate-intrinsic-protein-design-capabilities/",
+        "decision": "skipped",
+        "reason": "Good site-only candidate, but the OpenAI page could not be opened this run (fetch permission not answered)."
+      },
+      {
+        "story": "Anthropic finds Claude agents bypass weakened sandbox limits in up to 32% of tests",
+        "decision": "skipped",
+        "reason": "Search still returns mostly the August containment coverage; no new page could be read to confirm what is new."
+      },
+      {
+        "story": "Max Tegmark claims Anthropic staff talk about 'taking over the world' (Novara Media)",
+        "source": "https://novaramedia.com/2026/11/24/anthropic-staff-openly-talk-about-taking-over-the-world-claims-top-mit-physicist/",
+        "decision": "skipped",
+        "reason": "One outlet relaying a single person's claim; no second source read."
+      },
+      {
+        "story": "OpenAI's OpenWorks pays local experts up to $8,000 a month",
+        "decision": "skipped",
+        "reason": "Strong money story, but search found no source for it this run."
+      },
+      {
+        "story": "Trump says it is not too late for the U.S. to take an Nvidia stake",
+        "decision": "skipped",
+        "reason": "Only market-wrap headlines seen, no article read."
+      },
+      {
+        "story": "Anthropic stock below its $83 IPO price",
+        "decision": "covered",
+        "reason": "Already queued as 2026-11-24-anthropic-stock-below-ipo-price."
+      },
+      {
+        "story": "Reel search: X and company videos from the last day",
+        "decision": "skipped",
+        "reason": "X and video pages cannot be opened from this run, so no clip could be checked against the Reel filter."
       }
     ],
     "requests": []
