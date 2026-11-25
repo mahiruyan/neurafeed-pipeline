@@ -1,61 +1,5 @@
 [
   {
-    "run_at": "2026-11-18T05:12:22.135Z",
-    "summary": "Midnight run (00:00 New York, Nov 18): no open links or requests; queued Cambridge Dictionary naming \"human\" its 2026 word of the year because of AI fears as the second Nov 18 carousel; no desk Reel could be checked.",
-    "considered": [
-      {
-        "story": "Cambridge Dictionary names \"human\" its 2026 word of the year, citing AI fears",
-        "source": "https://www.clickondetroit.com/news/world/2026/11/18/cambridge-dictionary-chooses-human-as-word-of-the-year-in-response-to-ai-fears/",
-        "decision": "queued",
-        "job_id": "2026-11-18-cambridge-word-of-year-human",
-        "priority": 2,
-        "reason": "An everyone story people share (AI fears, jobs, FOBO), confirmed by AP and AFP; timely false so it can post in the Nov 18 windows. I could not preview the photos from this run."
-      },
-      {
-        "story": "Meta AI chief Alexandr Wang posts AI video of Sam Altman in a Muse costume (The Verge)",
-        "decision": "skipped",
-        "reason": "Still no second independent source after a new search."
-      },
-      {
-        "story": "Google Gemini memory summary lets users view and edit what it remembers",
-        "source": "https://9to5google.com/?p=736073",
-        "decision": "skipped",
-        "reason": "Rollout began around Nov 9 to 11, so it is not new; better as a future guide than a news article."
-      },
-      {
-        "story": "Nvidia drops China from its forecasts after Huang's exit (TechCrunch)",
-        "decision": "covered",
-        "reason": "The zero China guidance is already in 2026-11-17-nvidia-record-quarter-without-huang."
-      },
-      {
-        "story": "Nvidia's startup stakes reach $65B but Huang's exit puts deals in doubt (TechCrunch)",
-        "decision": "skipped",
-        "reason": "Another Huang exit angle insiders follow, and the TechCrunch page could not be opened from this run."
-      },
-      {
-        "story": "Microsoft Ignite: Copilot as the new OS for work, with Office inside it (Ars Technica)",
-        "decision": "skipped",
-        "reason": "The Copilot rebuild was announced on Sept 25 and Microsoft's Ignite news already has a site article (MAI Code 2); Ars could not be opened."
-      },
-      {
-        "story": "Anthropic Claude for Teachers for K-12 schools",
-        "decision": "skipped",
-        "reason": "The free district offer dates from Aug 28; I could not confirm the reported extension to July 2028."
-      },
-      {
-        "story": "Claude login outage (Mashable)",
-        "decision": "skipped",
-        "reason": "A short outage that was fixed; low share value."
-      },
-      {
-        "story": "Reel search",
-        "decision": "skipped",
-        "reason": "Reddit leads are empty and X cannot be opened from this run, so no clip could be checked against the Reel filter."
-      }
-    ],
-    "requests": []
-  },
-  {
     "run_at": "2026-11-18T07:01:04.769Z",
     "summary": "Early run (02:00 New York, Nov 18): no open links or requests; Nov 18's 2 carousels are already queued, so added OpenAI's Daybreak cyber models for NATO as a site-only article; no desk Reel could be checked.",
     "considered": [
@@ -5056,6 +5000,60 @@
       },
       {
         "story": "Saudi engineer accused of bugging OpenAI released on bond",
+        "decision": "covered",
+        "reason": "The bugging case already has several jobs."
+      }
+    ],
+    "requests": []
+  },
+  {
+    "run_at": "2026-11-25T07:00:11.171Z",
+    "summary": "02:00 NY run (Nov 25): no open links or requests; nothing queued. Page fetches were again blocked in this unattended run (permission prompts went unanswered), so no article could be read and no job can meet the two-sources-read rule.",
+    "considered": [
+      {
+        "story": "Tidal bans 100% AI-generated music and plans to delete more than 27 million tracks (Variety, Guardian)",
+        "source": "https://variety.com/2026/music/news/tidal-bans-ai-generated-music-1236956924/",
+        "decision": "skipped",
+        "reason": "Still the best everyone story for the first Nov 25 carousel slot, but Variety and the Guardian could not be opened this run; search results only show June coverage of the earlier royalty cut. Queue it next run once two sources are read."
+      },
+      {
+        "story": "OpenAI preprint claims the matrix multiplication exponent is exactly 9/4",
+        "source": "https://github.com/openai/math",
+        "decision": "skipped",
+        "reason": "Good site-only candidate, but no page could be opened this run to confirm the claim."
+      },
+      {
+        "story": "Anthropic pushes Claude-generated desktop apps (SiliconANGLE)",
+        "decision": "skipped",
+        "reason": "Only a headline seen in leads; the article could not be opened and search returned older desktop app coverage."
+      },
+      {
+        "story": "Anthropic's Opus 5.6 reportedly in secret testing (BigGo Finance)",
+        "decision": "skipped",
+        "reason": "Single unconfirmed rumor site, nothing could be read or confirmed."
+      },
+      {
+        "story": "Anthropic finds Claude agents bypass weakened sandbox limits in up to 32% of tests",
+        "decision": "skipped",
+        "reason": "Could not open the Interesting Engineering piece to confirm what is new versus the August containment coverage."
+      },
+      {
+        "story": "Trump says it is not too late for the U.S. to take an Nvidia stake",
+        "decision": "skipped",
+        "reason": "Only a market-wrap headline seen, no article read."
+      },
+      {
+        "story": "Anthropic stock below its $83 IPO price",
+        "decision": "covered",
+        "reason": "Already queued as 2026-11-24-anthropic-stock-below-ipo-price."
+      },
+      {
+        "story": "California sues OpenAI as a public nuisance",
+        "decision": "covered",
+        "reason": "Already made as 2026-11-16-california-sues-openai-rogue-agents."
+      },
+      {
+        "story": "Saudi man suspected of spying on OpenAI released on bond",
         "decision": "covered",
         "reason": "The bugging case already has several jobs."
       }
