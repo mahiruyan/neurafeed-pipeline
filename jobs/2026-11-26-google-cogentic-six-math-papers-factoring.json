@@ -1,0 +1,95 @@
+{
+  "id": "2026-11-26-google-cogentic-six-math-papers-factoring",
+  "created_at": "2026-11-26T11:20:00Z",
+  "story_time": "2026-11-25T10:21:00Z",
+  "timely": false,
+  "sensitive": false,
+  "priority": 2,
+  "site_only": true,
+  "format": "carousel",
+  "site_category": "models",
+  "ab": { "headline": "long", "photo": "story" },
+  "sources": [
+    { "name": "Snape Report", "url": "https://snapereport.com/s/google-cogentic-agent-posts-six-math-papers-led-by-claimed-fast-factoring-proof" },
+    { "name": "Apple Scoop", "url": "https://applescoop.org/story/did-ai-break-encryption-google-cogentic-factoring-openai-matrix-9-4" },
+    { "name": "CellCog", "url": "https://cellcog.ai/blog/google-cogentic-math-papers/" }
+  ],
+  "caption": "Google Research posted six math papers in one day, all written by its Cogentic agent running on Gemini 4.\nThe headline claim is a fully proven fast method for factoring whole numbers, a gap open since 1992.\nNone of it is peer reviewed yet, and it does not make RSA encryption any weaker.\n\nWould you trust a math proof that no human has checked?\n\nFollow @neurafeed.ai for daily AI news.\n\nSource: Snape Report, Apple Scoop, CellCog · Photo: Asoundd / CC BY-SA 4.0",
+  "threads_text": "Google Research posted six math papers in a single day, all written by its Cogentic agent on Gemini 4, including a claimed proof of fast factoring that has been open since 1992. Nobody outside Google has checked them yet, and RSA is not at risk. Should AI-written proofs count before a human checks them?",
+  "slides": [
+    {
+      "kind": "cover",
+      "headline": "Google's AI agent wrote six math papers in one day, including a *34-year-old factoring problem*",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/3/32/Googleplex_HQ_%28cropped%29.jpg",
+        "credit": "Asoundd / CC BY-SA 4.0",
+        "fallback_urls": [
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Googleplex_HQ_%28cropped%29.jpg/1280px-Googleplex_HQ_%28cropped%29.jpg"
+        ]
+      },
+      "badges": [ { "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Google_%22G%22_logo.svg/500px-Google_%22G%22_logo.svg.png", "fit": "contain" } ]
+    },
+    {
+      "kind": "card",
+      "heading": "Six papers, *one prompt*",
+      "paras": [
+        "On November 25, Google Research added six papers to its public GitHub, each written by its Cogentic agent on Gemini 4.",
+        "Google's files say no human stepped in beyond the first prompt."
+      ],
+      "image": {
+        "url": "https://opengraph.githubassets.com/1/google-research/google-research",
+        "credit": "GitHub / Google Research",
+        "fit": "contain"
+      }
+    },
+    {
+      "kind": "card",
+      "heading": "The *factoring* claim",
+      "paras": [
+        "The lead paper claims a fully proven L[1/3] speed for factoring any whole number. The best proven bound since 1992 was L[1/2].",
+        { "t": "Its constant is 105, far above today's best method, so RSA is not weaker.", "strong": true }
+      ],
+      "image": {
+        "url": "https://applescoop.org/image/story/ai-encryption-2048-padlock-centered-apple-scoop-cover-2026-11-26.jpg",
+        "credit": "Apple Scoop"
+      }
+    },
+    {
+      "kind": "card",
+      "heading": "Nobody has *checked it yet*",
+      "paras": [
+        "None of the six papers is peer reviewed. Lean 4 proofs that a computer can check are promised but not public.",
+        "The other papers cover discrete logs, game theory, graphs and the log-rank conjecture."
+      ],
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/5/5d/BalticServers_data_center.jpg",
+        "credit": "BalticServers.com / CC BY-SA 3.0"
+      }
+    },
+    { "kind": "cta", "hook": "Follow to see whether mathematicians confirm Google's AI-written proofs." }
+  ],
+  "site_article": {
+    "headline": "Google's Cogentic agent posts six math papers, led by a claimed factoring proof",
+    "dek": "The papers, written by an agent running on Gemini 4, have not been peer reviewed, and their promised Lean 4 proofs are not yet public.",
+    "summary": "Google Research added six mathematics papers produced by its Cogentic agent to a public GitHub folder on November 25, 2026. The lead paper claims a proven L[1/3] bound for integer factoring, an improvement on the L[1/2] bound that has stood since 1992.",
+    "seo_title": "Google Cogentic: six AI-written math papers and a factoring claim",
+    "seo_description": "Google's Cogentic agent on Gemini 4 posted six math papers, including a claimed proven L[1/3] factoring bound. What it proves, and why RSA is not affected.",
+    "answer_summary": "Cogentic is a Google Research agent system that, running on Gemini 4, produced six math papers posted on November 25, 2026. The factoring result is a theoretical proof claim and does not weaken RSA encryption.",
+    "tags": ["Google", "Gemini 4", "Cogentic", "AI math", "integer factoring"],
+    "hero_alt": "Exterior of the Googleplex, the Google headquarters office building.",
+    "paragraphs": [
+      { "kind": "fact", "text": "Google Research added six mathematics papers to a public folder in its google-research GitHub repository on November 25, 2026, according to Snape Report and CellCog. Each paper was produced by Cogentic, a multi-agent system running on Gemini 4, and the files state that no person was involved beyond the first prompt asking the system for a full proof and a formal version of it.", "sources": [0, 2] },
+      { "kind": "fact", "text": "Cogentic was first described in a research paper posted to arXiv on September 30, 2026, by researchers from Google Research and Google DeepMind. That paper reported earlier results that domain experts verified independently, according to CellCog. The GitHub folder itself notes that it is not an official Google product, and CellCog said it found no Google blog post or official announcement about the new papers as of the afternoon of November 25.", "sources": [2] },
+      { "kind": "heading", "text": "The factoring claim" },
+      { "kind": "fact", "text": "The most discussed paper claims an algorithm that factors any whole number in expected time L[1/3, 105] without relying on any unproven assumption. The general number field sieve, the method used in practice, has run at the L[1/3] level since the 1990s, but that speed has only ever been supported by heuristics. The best fully proven bound until now was L[1/2], set by Lenstra and Pomerance in 1992, according to all three reports.", "sources": [0, 1, 2] },
+      { "kind": "fact", "text": "The result does not make encryption easier to break. Apple Scoop noted that the constant in the new proof is 105, while the number field sieve works with a constant of about 1.92, so the proven method is far slower in practice. Snape Report likewise said the bound does not speed up attacks on RSA.", "sources": [0, 1] },
+      { "kind": "fact", "text": "A second factoring paper claims a deterministic method, one that uses no randomness, at a slower subexponential bound, and also covers the construction of quadratic nonresidues. A third paper claims a faster proven algorithm for discrete logarithms in finite fields of small characteristic, improving on quasi-polynomial results from 2022 and 2026. Apple Scoop said those small-characteristic fields are not the ones used by modern security systems.", "sources": [1, 2] },
+      { "kind": "heading", "text": "The other three papers" },
+      { "kind": "fact", "text": "According to CellCog's summary of the folder, the remaining papers move beyond number theory. One claims an exact polynomial-time algorithm for 1/5-approximate Nash equilibria in two-player games, improving on a 1/3 guarantee. Another claims to break the square-root barrier for the log-rank conjecture in communication complexity, by a margin of five millionths in the exponent. The last claims that every simple graph with at least 1,000 times as many edges as vertices can be reconstructed from its edge-deleted subgraphs, extending a 1977 result. The papers run from 36 to 59 pages each.", "sources": [2] },
+      { "kind": "heading", "text": "What has not been checked" },
+      { "kind": "fact", "text": "None of the six papers has been peer reviewed, and no outside mathematician has said on record that the proofs are correct, according to Apple Scoop and CellCog. The README files say complete Lean 4 formalizations, which a computer can check line by line, have been finished and will be released in a companion submission. Those files were not public on November 25, Snape Report said.", "sources": [0, 1, 2] },
+      { "kind": "analysis", "text": "The volume is the striking part. Six long papers on open problems arriving on a single day from one prompt each is new for a research lab, but the value of each claim now depends on the formal proofs Google has promised. If the Lean files compile, the factoring paper would close a gap in the theory of algorithms that has been open for more than three decades, even though it changes nothing for practical cryptography." },
+      { "kind": "why_it_matters", "text": "The release of the Lean 4 formalizations, and the first reviews from number theorists and cryptographers, will show whether these six results hold up." }
+    ]
+  }
+}

@@ -1,80 +1,5 @@
 [
   {
-    "run_at": "2026-11-19T09:05:37.551Z",
-    "summary": "Early run (04:00 New York, Nov 19): no open links or requests; Nov 19 already has its 2 Instagram carousels, so queued two site-only articles: Arizona's criminal probe of OpenAI over rogue agents in banks (priority 1) and Newsom's AI kill switch recommendations.",
-    "considered": [
-      {
-        "story": "Arizona AG Kris Mayes opens a criminal investigation into OpenAI and other AI firms over rogue AI agents in banks (Reuters)",
-        "source": "https://www.thestar.com.my/tech/tech-news/2026/11/19/arizona-says-it-is-investigating-openai-other-firms-over-possible-rogue-agents",
-        "decision": "queued",
-        "job_id": "2026-11-19-arizona-criminal-probe-openai-agents",
-        "priority": 1,
-        "reason": "Major OpenAI story of the crime kind that travels, but Nov 19 already has 2 Instagram carousels, so it goes to the website only. Mahir may want it on Instagram tomorrow or as a swap; sensitive."
-      },
-      {
-        "story": "Newsom releases AI safety recommendations: emergency shutdown power, state-licensed auditors, 48-hour incident reports (CalMatters)",
-        "source": "https://www.almanacnews.com/calmatters/2026/11/18/newsom-touts-an-ai-kill-switch-to-halt-dangerous-openai-anthropic-releases/",
-        "decision": "queued",
-        "job_id": "2026-11-19-newsom-ai-kill-switch-report",
-        "priority": 2,
-        "reason": "Policy story for the site; the governor's own release redirected in a loop, so it is written from CalMatters, CDO Magazine and Unite.AI."
-      },
-      {
-        "story": "Muslim Girl founder sues xAI over Grok images that removed her hijab",
-        "source": "https://aiweekly.co/alerts/muslim-girl-founder-sues-xai-after-grok-users-stripped-her-hijab-and-generated",
-        "decision": "skipped",
-        "reason": "Not confirmed with a primary news source this run; candidate for a later site-only article."
-      },
-      {
-        "story": "Salesforce cuts jobs and caps per-employee AI token spending",
-        "source": "https://americanbazaaronline.com/2026/11/18/salesforce-cuts-jobs-as-shares-plunge-ai-spending-limits-and-5-6-billion-braze-deal-raise-questions-492577/",
-        "decision": "skipped",
-        "reason": "Good jobs and money angle but not read or confirmed this run; candidate for a later run."
-      },
-      {
-        "story": "NYC, LA and Chicago schools weigh dropping Google Search over AI Overviews",
-        "decision": "covered",
-        "reason": "Google tying school Search to AI Overviews was covered as 2026-11-03-google-schools-no-ai-no-search."
-      },
-      {
-        "story": "Anthropic IPO first trading day (ANT)",
-        "decision": "covered",
-        "reason": "Pricing posted as 2026-11-18-anthropic-ipo-priced-83; trading starts after the 9:30 open, candidate for a daytime run."
-      },
-      {
-        "story": "Microsoft rebuilds Copilot around autonomous agents (Ignite)",
-        "decision": "skipped",
-        "reason": "Insider enterprise news; MAI Code 2 from Ignite already has a site article."
-      },
-      {
-        "story": "Google Genie 4 world model",
-        "decision": "skipped",
-        "reason": "Launched October 27, not new."
-      },
-      {
-        "story": "Claude Fable 5.2 gallery film on Hacker News",
-        "decision": "covered",
-        "reason": "Already covered as 2026-11-12-claude-fable-5-2-directs-reel."
-      },
-      {
-        "story": "Reel search",
-        "decision": "skipped",
-        "reason": "Reddit leads are empty and X and Wikimedia cannot be opened from this run, so no clip could be checked against the Reel filter."
-      },
-      {
-        "story": "Website guides",
-        "decision": "skipped",
-        "reason": "Run started before 07:00 New York time, when daily guides begin."
-      },
-      {
-        "story": "Mahir's old inbox links (link-2026-10-13-224, link-2026-10-14-435, link-2026-10-20-1074-2, link-2026-10-21-w47d4efec)",
-        "decision": "skipped",
-        "reason": "Already in inbox/skipped.json from earlier runs; no new links or open requests."
-      }
-    ],
-    "requests": []
-  },
-  {
     "run_at": "2026-11-19T11:07:40.818Z",
     "summary": "Morning run (06:00 New York, Nov 19): no open links or requests; Nov 19 already has its 2 Instagram carousels, so queued the day's first Reel (Meta's AI chief posting an AI video of Sam Altman as Meta's mascot) and a site-only article on the Doritos AI gun alert lawsuit.",
     "considered": [
@@ -5037,6 +4962,62 @@
       },
       {
         "story": "Situational Awareness 65% loss / Skills over MCP / Tim Sweeney vs Claude",
+        "decision": "covered",
+        "reason": "Already queued earlier today."
+      }
+    ],
+    "requests": []
+  },
+  {
+    "run_at": "2026-11-26T11:02:22.659Z",
+    "summary": "06:00 NY run (Nov 26): no open links or requests; queued Google's Cogentic six math papers as a site-only article. Both carousel slots for today are used, no Reel video could be opened, and guides start at 07:00.",
+    "considered": [
+      {
+        "story": "Google's Cogentic agent on Gemini 4 posts six math papers, led by a claimed proven L[1/3] factoring bound",
+        "source": "https://snapereport.com/s/google-cogentic-agent-posts-six-math-papers-led-by-claimed-fast-factoring-proof",
+        "decision": "queued",
+        "job_id": "2026-11-26-google-cogentic-six-math-papers-factoring",
+        "priority": 2
+      },
+      {
+        "story": "S&P considers Nvidia credit downgrade over governance and key man risk (TechCrunch)",
+        "source": "https://techcrunch.com/2026/11/25/sp-considers-nvidia-credit-downgrade-over-governance-and-key-man-risks/",
+        "decision": "skipped",
+        "reason": "TechCrunch page could not be opened and no second source on the S&P move was found; Huang exit fallout already covered."
+      },
+      {
+        "story": "Gemini refused to give the lyrics to Twinkle Twinkle Little Star (Hacker News)",
+        "source": "https://www.comentr.com/technology/01M88DWQ0R4NCMYR17AFEWRG1F",
+        "decision": "skipped",
+        "reason": "Fun everyone story, but no news outlet covers it and carousel slots for today are full; candidate if it spreads."
+      },
+      {
+        "story": "Much shorter version of the GRH Lean verification from Anthropic (Hacker News)",
+        "decision": "skipped",
+        "reason": "Follow-up to the Riemann proof story covered on Nov 20, only a GitHub repo as source."
+      },
+      {
+        "story": "Dario Amodei calls rival CEOs' positioning vibes-based (Business Insider, Gizmodo)",
+        "decision": "skipped",
+        "reason": "Person and feud story for a carousel, but slots for today are full and the pages could not be read; candidate for Nov 27."
+      },
+      {
+        "story": "Democrats demand new restrictions on AI (Axios)",
+        "decision": "skipped",
+        "reason": "Politics story, page not readable and carousel slots are full."
+      },
+      {
+        "story": "The New York Times warns photographers not to update Photoshop (The Verge)",
+        "decision": "skipped",
+        "reason": "Page still not readable from this run."
+      },
+      {
+        "story": "AI news digests for Nov 26 (The Neuron)",
+        "decision": "skipped",
+        "reason": "Page refused to load."
+      },
+      {
+        "story": "Situational Awareness 65% loss / Tim Sweeney vs Claude / Skills over MCP / MedChemBench",
         "decision": "covered",
         "reason": "Already queued earlier today."
       }
