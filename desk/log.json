@@ -1,53 +1,5 @@
 [
   {
-    "run_at": "2026-11-19T00:54:54.059Z",
-    "summary": "Late run (19:55 New York, Nov 18): no open links or requests; nothing queued. Carousels, site-only articles and guides for Nov 18 are full, the Anthropic IPO is already covered, and no Reel video could be checked.",
-    "considered": [
-      {
-        "story": "Anthropic IPO raises over $81 billion, the largest offering on record; trading starts Thursday",
-        "source": "https://cnbc.com/2026/11/18/anthropic-ipo-ai-offering-price.html",
-        "decision": "covered",
-        "reason": "Same story as 2026-11-18-anthropic-ipo-priced-83, posted at 18:47 New York."
-      },
-      {
-        "story": "GPT-6.2 Astra and Sol draw rough early reviews",
-        "source": "https://therundown.ai/news/openai-gpt-6-2-astra-sol-reviews-anthropic-ipo",
-        "decision": "covered",
-        "reason": "GPT-6.2 already has 2026-11-17-gpt-6-2-astra-hides-problems and a guide."
-      },
-      {
-        "story": "Google keeps Gemini chats for about two months even with history off",
-        "source": "https://arstechnica.com/ai/2026/11/google-will-let-you-opt-out-of-ai-training-in-gemini-without-losing-your-history/",
-        "decision": "skipped",
-        "reason": "Good everyday angle but the Nov 18 carousel and site-only quotas are used; a candidate for Nov 19."
-      },
-      {
-        "story": "Inside Nvidia's first all-hands without Jensen Huang: pay raises and more equity (Wired)",
-        "source": "https://www.wired.com/story/inside-nvidias-first-all-hands-without-jensen-huang-as-ceo/",
-        "decision": "skipped",
-        "reason": "Day is full; still a candidate for Nov 19 morning."
-      },
-      {
-        "story": "More banks say customers using AI agents are on their own, even if hacked (TechCrunch)",
-        "source": "https://techcrunch.com/2026/11/18/more-banks-says-customers-using-ai-agents-are-on-their-own-even-if-they-get-hacked/",
-        "decision": "skipped",
-        "reason": "Money angle that fits, but the day is full; candidate for Nov 19."
-      },
-      {
-        "story": "AI models tricked into identifying civilians as military targets by calling it a game (Vals tests)",
-        "source": "https://techcrunch.com/2026/11/17/ai-models-can-be-tricked-into-identifying-civilians-as-military-targets-by-telling-them-its-a-game/",
-        "decision": "skipped",
-        "reason": "Too close to today's GAO attack-plans story and the day is full."
-      },
-      {
-        "story": "Reel search (viral robot and consumer tech clips)",
-        "decision": "skipped",
-        "reason": "X and Reddit are blocked from this run and the clips found were only on YouTube, which fails to render, so no video could be checked against the Reel filter."
-      }
-    ],
-    "requests": []
-  },
-  {
     "run_at": "2026-11-19T03:01:53.182Z",
     "summary": "Night run (22:00 New York, Nov 18): no open links or requests; queued Google's Gemini 4 Neon launch as a priority 1 site-only article. Instagram carousels, guides and site-only articles for Nov 18 were already full.",
     "considered": [
@@ -5001,6 +4953,66 @@
         "story": "Reel search: viral AI videos of the day",
         "decision": "skipped",
         "reason": "No story in leads or the day's digests linked a usable video, and X and video pages cannot be opened from this run."
+      }
+    ],
+    "requests": []
+  },
+  {
+    "run_at": "2026-11-26T01:02:21.215Z",
+    "summary": "20:00 NY run (Nov 25): no open links or requests; queued the 6th guide of the day (Framer AI, site-only). Both Instagram carousel slots and all 4 site-only news slots were already used, no new priority 1 story was found, and no Reel video passed the filter with a verifiable source.",
+    "considered": [
+      {
+        "story": "Guide: How to use Framer AI to build a website from a prompt",
+        "source": "https://www.framer.com/help/articles/how-to-build-a-website-from-scratch-with-framer-agents/",
+        "decision": "queued",
+        "job_id": "2026-11-25-how-to-use-framer-ai-guide",
+        "priority": 2,
+        "reason": "Next readable topic in guides/plan.md; Framer's help article, builder page and AI page read, plus Popular Science. Pricing page could not be opened, so the guide states no current prices."
+      },
+      {
+        "story": "Viral video of a humanoid robot carrying Elon Musk's luggage off his jet",
+        "source": "https://www.dynamitenews.com/viral/viral-why-a-robot-carrying-elon-musks-bags-has-sparked-debate-over-jobs-and-automation",
+        "decision": "skipped",
+        "reason": "Dynamite News says the clip is AI-generated and not a real incident, while Wisevoter presents it as real; posting it as a Reel would risk spreading a fake."
+      },
+      {
+        "story": "Figure 03 humanoids walk out of the BotQ factory across campus",
+        "source": "https://interestingengineering.com/ai-robotics/figure-03-humanoids-take-campus-walk",
+        "decision": "skipped",
+        "reason": "Clip is from November 2 and a Figure Reel already posted on Nov 24; a sequel would not travel."
+      },
+      {
+        "story": "Kindly Robotics cleaning robot puts a baby doll in a recycling bin during a safety demo",
+        "source": "https://www.barchart.com/story/news/36292776/kindly-robotics-sparks-global-buzz-after-cleaning-bot-places-baby-in-recycling-bin-during-safety-demo",
+        "decision": "skipped",
+        "reason": "Article could not be read and no original video post was found, so the date and facts could not be confirmed."
+      },
+      {
+        "story": "Robot videos on Digg (M1GO dancing robot, Unitree Go2 steered with AR glasses)",
+        "source": "https://digg.com/ai/pfw12pfl",
+        "decision": "skipped",
+        "reason": "Both clips are from early September, too old and not strong enough."
+      },
+      {
+        "story": "New York bans AI toys for kids this Christmas (TechCrunch)",
+        "source": "https://techcrunch.com/2026/11/25/want-to-buy-your-kid-an-ai-toy-this-christmas-not-in-new-york/",
+        "decision": "skipped",
+        "reason": "Good everyone story, but both Instagram carousel slots are used today; candidate for tomorrow."
+      },
+      {
+        "story": "Saudi ex-OpenAI engineer in bugging case released on $1 million bond (CNBC)",
+        "decision": "skipped",
+        "reason": "Crime story that could travel, but carousel slots are full today and the article was not read; candidate for tomorrow."
+      },
+      {
+        "story": "Historian says AI found the author of a 200-year-old sketchbook in 22 minutes (Business Insider)",
+        "decision": "skipped",
+        "reason": "Already noted in earlier runs; carousel slots full, candidate for tomorrow."
+      },
+      {
+        "story": "Guides: InVideo AI and Hailuo AI (earlier plan lines)",
+        "decision": "skipped",
+        "reason": "Vendor pages could not be read in earlier runs; Framer AI taken instead."
       }
     ],
     "requests": []
