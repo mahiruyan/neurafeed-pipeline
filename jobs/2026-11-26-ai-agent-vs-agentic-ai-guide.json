@@ -1,0 +1,241 @@
+{
+  "id": "2026-11-26-ai-agent-vs-agentic-ai-guide",
+  "format": "utility",
+  "site_only": true,
+  "created_at": "2026-11-26T19:20:00Z",
+  "story_time": "2026-11-26T19:20:00Z",
+  "timely": false,
+  "sensitive": false,
+  "priority": 2,
+  "sources": [
+    {
+      "name": "Google Cloud: What is agentic AI?",
+      "url": "https://cloud.google.com/discover/what-is-agentic-ai"
+    },
+    {
+      "name": "IBM: What is agentic AI?",
+      "url": "https://www.ibm.com/think/topics/agentic-ai"
+    },
+    {
+      "name": "Workday: AI agents vs agentic AI",
+      "url": "https://www.workday.com/en-gb/perspectives/ai/understanding-the-difference-between-ai-agents-and-agentic-ai.html"
+    },
+    {
+      "name": "ISACA: AI agents and agentic AI",
+      "url": "https://isaca.org/resources/news-and-trends/isaca-now-blog/2025/ai-agents-and-agentic-ai-understanding-the-difference-that-matters-for-your-organization"
+    },
+    {
+      "name": "arXiv: AI Agents vs. Agentic AI (Sapkota, Roumeliotis, Karkee)",
+      "url": "https://arxiv.org/html/2505.10468v4"
+    }
+  ],
+  "caption": "An AI agent does one task. Agentic AI plans a whole goal and coordinates agents to reach it.\nGoogle Cloud and IBM both draw the line the same way, and ISACA warns the simplest option is often enough.\nThe full guide with the 4 differences and 3 prompts is on neurafeedai.com.\n\nWould you let an AI plan a whole task for you, or just one step?\n\nFollow @neurafeed.ai for daily AI news.\n\nSource: Google Cloud, IBM · Photo: IBM",
+  "threads_text": "AI agent vs agentic AI, in one line: an agent does one task, agentic AI plans a goal and runs several agents to reach it. Most products called agentic are closer to the first. Which one do you actually use at work?",
+  "slides": [
+    {
+      "kind": "cover",
+      "headline": "*AI agent vs agentic AI*: the difference in plain words",
+      "image": {
+        "url": "https://www.ibm.com/content/dam/worldwide-content/cdp/cf/ul/g/47/e4/2025_wxo_collage_orchestrate_home_general_02.jpg/_jcr_content/renditions/cq5dam.web.1280.1280.jpeg",
+        "credit": "IBM",
+        "fallback_urls": [
+          "https://assets.ibm.com/is/image/ibm/2025_wxo_collage_orchestrate_home_general_02?ts=1793716439041&dpr=off"
+        ]
+      }
+    },
+    {
+      "kind": "card",
+      "heading": "1. Agents are *the doers*",
+      "paras": [
+        "An AI agent does one specific task on its own: sort a ticket, check an invoice, answer a set question.",
+        "It acts when told to and does not plan ahead."
+      ],
+      "image": {
+        "url": "https://workday.scene7.com/is/image/workday/img-team-working-together-around-table-1280x720-1",
+        "credit": "Workday",
+        "fallback_urls": [
+          "https://www.workday.com/content/dam/web/zz/images/perspectives/hero-images/img-team-working-together-around-table-1280x720.jpg"
+        ]
+      }
+    },
+    {
+      "kind": "card",
+      "heading": "2. Agentic AI *makes the plan*",
+      "paras": [
+        "Agentic AI starts from a goal, breaks it into steps and coordinates several agents to finish it.",
+        "IBM describes a conductor model that supervises simpler agents."
+      ],
+      "image": {
+        "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/media/fundamentals-get-started/home-page-describe-your-agent.png",
+        "credit": "Microsoft",
+        "fit": "contain"
+      }
+    },
+    {
+      "kind": "card",
+      "heading": "3. Simple is *often enough*",
+      "paras": [
+        "ISACA's advice: use the simplest solution that works, which may mean no agentic system at all.",
+        "More autonomy means more ways for things to go wrong."
+      ],
+      "image": {
+        "url": "https://images.ctfassets.net/lzny33ho1g45/6tgXiDNr89kA2Y9ILOMCsO/80fb0dae7f501aa4dd522ae46c8dd0a2/Zapier_Agents.jpg",
+        "credit": "Zapier"
+      }
+    },
+    {
+      "kind": "cta",
+      "hook": "Follow for plain answers to the AI words everyone keeps using."
+    }
+  ],
+  "site_article": {
+    "kind": "guide",
+    "headline": "AI agent vs agentic AI: the difference in plain words, with examples",
+    "dek": "An AI agent does one task on its own. Agentic AI plans a goal and coordinates agents to reach it. Here is how to tell them apart and which one you need.",
+    "summary": "An AI agent is software that performs a specific task on its own, while agentic AI is a system that sets a goal, plans the steps and coordinates several agents with little supervision. Google Cloud, IBM and ISACA draw the line in similar places, and ISACA advises using the simplest option that works.",
+    "seo_title": "AI agent vs agentic AI: the difference in plain words",
+    "seo_description": "AI agent vs agentic AI explained: the 4 real differences, where experts disagree, when to pick each one, and 3 prompts to sort your own work into agent tasks.",
+    "answer_summary": "An AI agent performs one specific task on its own. Agentic AI is a larger system that sets a goal, plans the steps and coordinates one or more agents to reach it with limited human supervision.",
+    "tags": [
+      "AI agents",
+      "Agentic AI",
+      "Google Cloud",
+      "IBM",
+      "Guides"
+    ],
+    "hero_alt": "A woman in business attire stands in front of a large digital interface with a welcome message.",
+    "paragraphs": [
+      {
+        "kind": "fact",
+        "text": "AI agent vs agentic AI sounds like a word game, but the two terms describe different things. An AI agent is a piece of software built to do a specific task on its own. Agentic AI is the bigger system: it sets a goal, plans the steps, and coordinates one or more agents to get there with little human help. That is how Google Cloud and IBM both describe it on their own explainer pages.",
+        "sources": [
+          0,
+          1
+        ]
+      },
+      {
+        "kind": "fact",
+        "text": "Google Cloud puts it in one line: an AI agent might focus on a specific task, while agentic AI employs multiple agents to handle complex workflows. Google's comparison is a toolbox. The agents are the individual tools, and agentic AI is the coordinated use of those tools to finish a job.",
+        "sources": [
+          0
+        ]
+      },
+      {
+        "kind": "heading",
+        "text": "AI agent vs agentic AI: the short definitions"
+      },
+      {
+        "kind": "fact",
+        "text": "AI agent: Google Cloud calls agents autonomous entities designed to perform specific tasks. Workday, the HR and finance software company, describes them as task oriented systems that carry out predefined actions within a workflow, such as answering an HR question or checking finance data. They act when given an instruction and do not plan ahead on their own.",
+        "sources": [
+          0,
+          2
+        ]
+      },
+      {
+        "kind": "fact",
+        "text": "Agentic AI: IBM defines it as an AI system that can accomplish a specific goal with limited supervision, and says it is made of AI agents. Google Cloud describes it as focused on autonomous decision making and action: it can set goals, plan and carry out tasks with minimal human intervention, using a large language model as the brain and acting through tools.",
+        "sources": [
+          0,
+          1
+        ]
+      },
+      {
+        "kind": "fact",
+        "text": "Workday's shorthand is the easiest to remember: agentic AI is the thinker, AI agents are the doers. A 2025 research paper by Ranjan Sapkota, Konstantinos Roumeliotis and Manoj Karkee draws the line in a similar place. It treats AI agents as single, task specific systems and agentic AI as several specialized agents that coordinate, with shared memory and task breakdown.",
+        "sources": [
+          2,
+          4
+        ]
+      },
+      {
+        "kind": "heading",
+        "text": "The 4 differences that actually matter"
+      },
+      {
+        "kind": "step",
+        "title": "1. Scope: one task or one goal",
+        "text": "An agent does one job well: sort the support ticket, pull the invoice, draft the reply. An agentic system starts from a goal, such as resolving a customer complaint end to end, and decides which tasks it needs. Google Cloud's list of uses for agentic AI includes customer service, supply chains and software development."
+      },
+      {
+        "kind": "step",
+        "title": "2. Planning: follow steps or make them",
+        "text": "Workday says plainly that agents do not plan ahead and do not choose between alternatives. Agentic AI breaks a goal into steps and picks the order. IBM describes this as a goal setting stage that uses planning methods before the system acts."
+      },
+      {
+        "kind": "step",
+        "title": "3. Coordination: alone or as a team",
+        "text": "IBM describes multiagent systems where each agent handles one subtask and their work is coordinated through orchestration. One design it describes uses a conductor model, powered by an LLM, that supervises simpler agents. A single agent has no one to coordinate with."
+      },
+      {
+        "kind": "step",
+        "title": "4. Learning: same every time or improving",
+        "text": "IBM lists learning and adaptation as a step in how agentic systems work, using feedback from earlier results. Google Cloud calls the same stage reflection. ISACA lists memory and knowledge management among the parts an agentic system needs."
+      },
+      {
+        "kind": "heading",
+        "text": "Where the experts disagree"
+      },
+      {
+        "kind": "fact",
+        "text": "Not everyone uses the words the same way, and you will see it in product pages. ISACA, the IT governance association, points out that being an agent does not automatically mean being autonomous. A basic customer service chatbot is technically an agent but has no real agency. In ISACA's framing, agentic AI is defined by agency, the ability to act on its own, rather than by the number of agents.",
+        "sources": [
+          3
+        ]
+      },
+      {
+        "kind": "analysis",
+        "text": "So when a company says its product is agentic, ask what it actually decides on its own. If it only runs a fixed script after you press a button, it is an agent, or simply automation, whatever the marketing says."
+      },
+      {
+        "kind": "heading",
+        "text": "Which one you need for your work"
+      },
+      {
+        "kind": "fact",
+        "text": "ISACA's advice is practical: use the simplest solution that works, and it says that might mean not building agentic systems at all. Simpler agents are more cost effective. IBM adds the risks that come with more autonomy: a system rewarded for a score can exploit loopholes to hit it in ways nobody intended, and when many agents work together one failure can cascade through the rest.",
+        "sources": [
+          3,
+          1
+        ]
+      },
+      {
+        "kind": "step",
+        "title": "Pick an agent when",
+        "text": "The task is the same every time, the steps are known, and a mistake is easy to spot. Examples: tagging emails, filling a form from a document, answering a set list of HR questions."
+      },
+      {
+        "kind": "step",
+        "title": "Pick an agentic system when",
+        "text": "The goal is clear but the path is not, the job crosses several apps, and the work is worth the extra checking. Examples: researching a topic across many sources, handling a support case from start to refund, or a coding task that needs planning, editing and testing."
+      },
+      {
+        "kind": "tip",
+        "text": "Keep a human in the loop either way. Google Cloud's own page recommends human oversight for agentic AI, and ISACA notes that autonomy reduces the need for supervision but does not remove it."
+      },
+      {
+        "kind": "heading",
+        "text": "3 prompts to sort your own work"
+      },
+      {
+        "kind": "prompt",
+        "title": "Prompt 1: Split a job into agent tasks",
+        "text": "Here is a task I do every week: [describe the task in 3 to 5 sentences]. Break it into the smallest separate steps. For each step, tell me: is the input always the same format, does it need a judgment call, and what would go wrong if an AI got it wrong. Then group the steps into ones a simple AI agent could do and ones that need a person or a planning system."
+      },
+      {
+        "kind": "prompt",
+        "title": "Prompt 2: Test an agentic claim",
+        "text": "A vendor says this product is agentic: [paste the product description]. Based only on this text, list what the product decides on its own, what it does only when a person tells it to, and what tools or apps it can act in. Say which parts are unclear and give me 5 questions to ask the vendor."
+      },
+      {
+        "kind": "prompt",
+        "title": "Prompt 3: Plan the checks",
+        "text": "I want an AI system to handle this goal with little supervision: [describe the goal]. List the points where it should stop and ask me before acting, the actions it should never take on its own, and how I would notice if it took a shortcut to look successful."
+      },
+      {
+        "kind": "analysis",
+        "text": "The useful takeaway is simple. AI agent describes a worker with one job. Agentic AI describes a system that plans and runs a whole job, often with several of those workers. Both terms are stretched in marketing, so judge a product by what it decides on its own, not by the label."
+      }
+    ]
+  }
+}

@@ -1,76 +1,5 @@
 [
   {
-    "run_at": "2026-11-19T17:10:08.070Z",
-    "summary": "Midday run (12:00 New York, Nov 19): no open links or requests; queued Anthropic's Nasdaq debut ($111.50 first trade, 34% above the IPO price) as a priority 1 carousel with its website article, plus the day's first site-only guide (How to use Manus). No Reel video passed the filter.",
-    "considered": [
-      {
-        "story": "Anthropic opens at $111.50 on Nasdaq, about 34% above its $83 IPO price; Amodei siblings ring the bell",
-        "source": "https://www.koreatimes.co.kr/world/20261120/anthropic-set-to-be-worth-19-trillion-in-strong-nasdaq-debut",
-        "decision": "queued",
-        "job_id": "2026-11-19-anthropic-opens-111-nasdaq",
-        "priority": 1,
-        "reason": "Story of the day (money, priority 1). It is a third Instagram carousel for Nov 19 under the priority 1 exception; the opening price comes from the CNBC, CNN and Yahoo headlines because their live blogs could not be opened, with Reuters (via The Korea Times) confirming the $110.50 indication and the $2 trillion track."
-      },
-      {
-        "story": "Guide: How to use Manus (and how credits work)",
-        "source": "https://manus.im/help/credits",
-        "decision": "queued",
-        "job_id": "2026-11-19-how-to-use-manus-guide",
-        "priority": 2,
-        "reason": "First guide of Nov 19, from Manus docs and help center plus a Work Management review."
-      },
-      {
-        "story": "Guide: How to use ChatGPT agent mode",
-        "source": "https://help.openai.com/en/articles/11752874",
-        "decision": "skipped",
-        "reason": "OpenAI's help center still could not be opened from this run."
-      },
-      {
-        "story": "Guide: How to use Freepik AI image generator",
-        "decision": "skipped",
-        "reason": "Freepik's AI docs now redirect to magnific.com, which could not be opened, so the guide could mislead; left for a later run."
-      },
-      {
-        "story": "Anthropic opening bell video (Nasdaq, CNBC, Yahoo clips)",
-        "decision": "skipped",
-        "reason": "Official ceremony footage with no surprising shot, and the clips found were on YouTube or news sites, not X; the carousel covers the moment."
-      },
-      {
-        "story": "Nvidia stops shipping advanced AI chips to China (The Verge)",
-        "source": "https://www.theverge.com/tech/1036445/nvidia-h200-ai-chips-china-stop-selling",
-        "decision": "covered",
-        "reason": "Close to 2026-11-17-us-shuts-china-nvidia-backdoor; no new angle for a normal user."
-      },
-      {
-        "story": "Citi says customers using AI agents are on their own if hacked (TechCrunch)",
-        "source": "https://techcrunch.com/2026/11/18/more-banks-says-customers-using-ai-agents-are-on-their-own-even-if-they-get-hacked/",
-        "decision": "skipped",
-        "reason": "Overlaps with the Arizona rogue agents in banks article queued this morning; not read in full."
-      },
-      {
-        "story": "OpenAI uses its models to redesign chip parts (OpenAI blog)",
-        "decision": "skipped",
-        "reason": "Insider engineering news; OpenAI's page could not be opened in earlier runs."
-      },
-      {
-        "story": "Google opens Genie 4 to AI Ultra subscribers",
-        "decision": "skipped",
-        "reason": "No user clip on X found yet that passes the Reel filter; product news for insiders."
-      },
-      {
-        "story": "Paris Hilton and AOC push the DEFIANCE Act on sexual deepfakes (CNBC)",
-        "decision": "skipped",
-        "reason": "Not read in full this run; politics and sensitive, could fit a later run as a site-only article."
-      },
-      {
-        "story": "AI agents ask better questions than KPMG accountants in audit trial (Hacker News)",
-        "decision": "skipped",
-        "reason": "Single trade-press source, no second source read."
-      }
-    ],
-    "requests": []
-  },
-  {
     "run_at": "2026-11-19T19:03:13.094Z",
     "summary": "Afternoon run: no open links or requests; queued a site-only article on Gemini computer use for Mac and the day's second guide (delete all ChatGPT chats). No new Reel found that we can download.",
     "considered": [
@@ -5157,6 +5086,70 @@
         "story": "Reel videos",
         "decision": "skipped",
         "reason": "Reddit leads are empty and X posts cannot be opened from this run, so no clip could be checked against the Reel filter."
+      }
+    ],
+    "requests": []
+  },
+  {
+    "run_at": "2026-11-26T18:58:13.968Z",
+    "summary": "14:00 NY run (Nov 26, Thanksgiving): no open links or requests; queued the fourth guide of the day (AI agent vs agentic AI). Carousel and site-only news slots for today were already full and no new priority 1 story surfaced.",
+    "considered": [
+      {
+        "story": "Guide: AI agent vs agentic AI (guides/plan.md Tier 2, alternating after the Mercor tool guide)",
+        "source": "https://cloud.google.com/discover/what-is-agentic-ai",
+        "decision": "queued",
+        "job_id": "2026-11-26-ai-agent-vs-agentic-ai-guide",
+        "priority": 2
+      },
+      {
+        "story": "Anthropic moves the Claude Messages API from Python to Rust with no downtime",
+        "source": "https://www.anthropic.com/research/migrating-api-to-rust",
+        "decision": "skipped",
+        "reason": "Developer infrastructure story from Nov 25, already skipped earlier, and today's site-only slots are full."
+      },
+      {
+        "story": "OpenAI alpha tests Private Inference for business prompts",
+        "source": "https://the-decoder.com/openai-wants-companies-to-trust-it-with-sensitive-work-by-promising-not-to-look-at-their-data/",
+        "decision": "skipped",
+        "reason": "Enterprise insider feature in alpha, skipped in an earlier run, site-only slots full."
+      },
+      {
+        "story": "Vance says Jensen Huang will not need a pardon; Meeks wants a public hearing",
+        "source": "https://apnews.com/article/vance-trump-pardon-nvidia-huang-congress-a8d3d781f182317cbff28863d56add5d",
+        "decision": "skipped",
+        "reason": "Follow-up to the Huang pardon story already covered on Nov 25; better as a new post when Huang testifies Dec 1 to 3."
+      },
+      {
+        "story": "Oregon and Virginia sue SpaceX, X and xAI over Grok images",
+        "decision": "covered",
+        "reason": "Already queued as 2026-11-23-states-sue-spacex-grok-deepfakes."
+      },
+      {
+        "story": "AMD and Meta expand Helios rack partnership, AMD to invest $1 billion in Meta",
+        "source": "https://techsabado.com/2026/11/25/tech-news-amd-meta-expand-ai-infrastructure-partnership/",
+        "decision": "skipped",
+        "reason": "Insider infrastructure news seen only through a small blog, and site-only slots are full."
+      },
+      {
+        "story": "Meta puts its Muse assistant into Instagram DMs",
+        "source": "https://techcrunch.com/2026/11/24/meta-brings-its-muse-ai-assistant-directly-into-instagram-dms/",
+        "decision": "skipped",
+        "reason": "From Nov 24, already two days old, and both carousel slots for today are used."
+      },
+      {
+        "story": "ChatGPT and Codex to share one usage meter from December",
+        "decision": "skipped",
+        "reason": "Considered and skipped in earlier runs today."
+      },
+      {
+        "story": "The Neuron and Sam on AI digests for Nov 26",
+        "decision": "skipped",
+        "reason": "Both pages failed to load; Kelly Abbott's and AIToolly's Nov 26 digests were read instead and held no new major story."
+      },
+      {
+        "story": "Reel videos",
+        "decision": "skipped",
+        "reason": "Reddit leads are still empty and X posts cannot be opened from this run; the digests linked no usable clip."
       }
     ],
     "requests": []
