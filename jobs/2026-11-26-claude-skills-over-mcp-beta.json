@@ -1,0 +1,197 @@
+{
+  "id": "2026-11-26-claude-skills-over-mcp-beta",
+  "created_at": "2026-11-26T07:45:00Z",
+  "story_time": "2026-11-24T18:00:00Z",
+  "timely": false,
+  "sensitive": false,
+  "priority": 2,
+  "site_only": true,
+  "format": "carousel",
+  "site_category": "companies",
+  "ab": {
+    "headline": "short",
+    "photo": "story"
+  },
+  "sources": [
+    {
+      "name": "Tech Times",
+      "url": "https://www.techtimes.com/articles/331491/20261125/anthropic-launches-skills-over-mcp-beta-server-skills-update-without-reinstall-approval-unstated.htm"
+    },
+    {
+      "name": "Sulat AI & Tech News",
+      "url": "https://news.sulat.com/2026/11/25/claude-mcp-skills/"
+    },
+    {
+      "name": "The Daily Brief (Beri)",
+      "url": "https://www.beri.net/article/anthropic-skills-over-mcp-public-beta-team-admin-opt-in-auto-mode-classifier-disabledirectmcpskills-tasks-elicitation-ga-sep-2640"
+    },
+    {
+      "name": "DEV Community",
+      "url": "https://dev.to/delimitter/mcp-turns-two-anthropic-ships-skills-over-mcp-beta-tasks-and-elicitation-ga-700m-monthly-sdk-1e48"
+    }
+  ],
+  "caption": "Anthropic opened a public beta that lets MCP servers ship their own skills to Claude and Claude Code.\nIt is on by default for Pro, Max and Ultra; Team admins must turn it on.\nServers can change skills after you approve them, so Anthropic says add only servers you trust.\n\nWould you let a connected app teach your AI new tricks?\n\nFollow @neurafeed.ai for daily AI news.\n\nSource: Tech Times, Sulat · Photo: Sebastien Bozon / AFP via Getty Images",
+  "threads_text": "Claude can now load skills straight from the apps it connects to, like Shopify and HubSpot. The catch: a server can change those skills after you approve it. Would you trust that?",
+  "slides": [
+    {
+      "kind": "cover",
+      "headline": "Claude now learns *skills* from the apps you connect",
+      "image": {
+        "url": "https://d.techtimes.com/en/full/465641/anthropic.jpg",
+        "credit": "Sebastien Bozon / AFP via Getty Images",
+        "fallback_urls": [
+          "https://news.sulat.com/wp-content/uploads/2026/11/hero-claude-mcp-skills-server-scrolls.jpg"
+        ]
+      },
+      "badges": [
+        {
+          "url": "assets/logos/claude.png",
+          "fit": "contain"
+        }
+      ]
+    },
+    {
+      "kind": "card",
+      "heading": "Tools plus *instructions*",
+      "paras": [
+        "Since November 24, servers built on MCP can ship skills to Claude and Claude Code: written guides for how to use their tools.",
+        "Shopify, HubSpot and Atlassian are among the first."
+      ],
+      "image": {
+        "url": "https://news.sulat.com/wp-content/uploads/2026/11/claude-mcp-skills-three-layers.png",
+        "credit": "Sulat",
+        "fit": "contain"
+      }
+    },
+    {
+      "kind": "card",
+      "heading": "On by default for *Pro, Max, Ultra*",
+      "paras": [
+        "Team plans need an admin to turn it on. Enterprise is coming soon.",
+        "Claude Code needs version 2.1.331 or later."
+      ],
+      "image": {
+        "url": "https://news.sulat.com/wp-content/uploads/2026/11/claude-mcp-skills-load-flow.png",
+        "credit": "Sulat",
+        "fit": "contain"
+      }
+    },
+    {
+      "kind": "card",
+      "heading": "Skills can *change*",
+      "paras": [
+        "A server can change its skills after you approve it. Claude Code's docs say to add only servers you trust.",
+        "Anthropic scans skills only from Directory connectors."
+      ],
+      "image": {
+        "url": "https://news.sulat.com/wp-content/uploads/2026/11/claude-skills-branded-scanned-unscanned.png",
+        "credit": "Sulat",
+        "fit": "contain"
+      }
+    },
+    {
+      "kind": "cta",
+      "hook": "Follow for what Claude's connected apps can do next."
+    }
+  ],
+  "site_article": {
+    "headline": "Anthropic opens Skills over MCP beta in Claude and Claude Code",
+    "dek": "MCP servers can now ship instructions with their tools, and Tasks and Elicitation became generally available on paid plans.",
+    "summary": "Anthropic launched a public beta on November 24, 2026 that lets MCP servers deliver skills to Claude and Claude Code. It is on by default for Pro, Max and Ultra plans and off for Team plans until an admin enables it.",
+    "seo_title": "Claude Skills over MCP beta: what it does and who gets it",
+    "seo_description": "Anthropic's Skills over MCP beta lets servers ship skills to Claude and Claude Code. Who gets it, which apps use it, and the security catch for users.",
+    "answer_summary": "Skills over MCP lets a connected MCP server give Claude written instructions on how to use its tools. It is in public beta for Pro, Max and Ultra plans, with Team access through an admin.",
+    "tags": [
+      "Anthropic",
+      "Claude",
+      "Claude Code",
+      "MCP",
+      "AI agents"
+    ],
+    "hero_alt": "A smartphone screen showing the Anthropic logo.",
+    "paragraphs": [
+      {
+        "kind": "fact",
+        "text": "Anthropic opened a public beta of Skills over MCP in Claude and Claude Code on November 24, 2026, letting servers built on the Model Context Protocol ship their own skills alongside their tools. The company also made two other MCP features, Tasks and Elicitation, generally available on its Pro, Max and Ultra plans, according to Tech Times and Sulat.",
+        "sources": [
+          0,
+          1
+        ]
+      },
+      {
+        "kind": "fact",
+        "text": "A skill is a set of written instructions, in Anthropic's SKILL.md format, that tells Claude how to handle a specific job. Until now, a connected server mainly told Claude what tools it offered. Anthropic said tool names and descriptions do not cover how to handle specific use cases, and that skills update with the server, so developers can ship tools and guidance together, as quoted by Sulat.",
+        "sources": [
+          0,
+          1
+        ]
+      },
+      {
+        "kind": "heading",
+        "text": "Who gets it"
+      },
+      {
+        "kind": "fact",
+        "text": "Skills over MCP is on by default for Pro, Max and Ultra subscribers. On Team plans it stays off until an administrator turns it on, and Enterprise support is listed as coming soon, according to Tech Times and The Daily Brief. In Claude Code the feature needs version 2.1.331 or later, Sulat reported.",
+        "sources": [
+          0,
+          1,
+          2
+        ]
+      },
+      {
+        "kind": "fact",
+        "text": "Shopify, HubSpot and Atlassian are among the first companies shipping skills through their servers, with Carta listed as coming soon. ZoomInfo is an early user of Tasks, which let a long job keep running on the server while a conversation continues. Supabase, Railway and GitHub use Elicitation to ask the user for confirmation before costly or destructive steps, such as GitHub asking for a repository name before an agent deletes it.",
+        "sources": [
+          0,
+          2,
+          3
+        ]
+      },
+      {
+        "kind": "fact",
+        "text": "Anthropic said its MCP software development kits now pass 700 million monthly downloads and that Claude has more than 10,000 connectors, according to Tech Times. A separate file upload feature for servers is rolling out soon, the company said.",
+        "sources": [
+          0,
+          3
+        ]
+      },
+      {
+        "kind": "heading",
+        "text": "The security question"
+      },
+      {
+        "kind": "fact",
+        "text": "The launch raised a new trust issue. Because skills live on the server, a server can change them after a user has approved it. Claude Code's documentation, as quoted by Sulat and The Daily Brief, warns that servers can change skills at any time and tells users to add only servers they trust.",
+        "sources": [
+          1,
+          2
+        ]
+      },
+      {
+        "kind": "fact",
+        "text": "In Claude Code's default auto mode, a classifier decides whether a skill loads without reading it and without a prompt, according to the documentation cited by Sulat. In manual mode the user is asked, and an approval holds until the server changes that skill's files. Anthropic scans skills only from third party Directory connectors on claude.ai and from Enterprise custom connectors with scanning turned on; servers users add themselves are not scanned.",
+        "sources": [
+          1,
+          2
+        ]
+      },
+      {
+        "kind": "fact",
+        "text": "Administrators get controls. A managed setting called disableDirectMcpSkills turns off skills from servers that are not claude.ai connectors, and per server rules can deny, ask about or allow specific skills, The Daily Brief reported. Tech Times noted that the MCP Skills extension requires hosts to treat skill content as untrusted and to ask again when a skill's files change, but said Anthropic's launch post did not describe how Claude applies those rules.",
+        "sources": [
+          0,
+          2
+        ]
+      },
+      {
+        "kind": "analysis",
+        "text": "The change moves part of the know how for using a service from the user's prompt to the company that runs the server. That should make connectors work better out of the box, but it also means approving a server now covers what it tells Claude to do, not only what it can access."
+      },
+      {
+        "kind": "why_it_matters",
+        "text": "Watch whether Anthropic publishes how Claude re-checks a skill after a server changes it, and when Enterprise customers get the feature."
+      }
+    ]
+  }
+}

@@ -5002,5 +5002,67 @@
       }
     ],
     "requests": []
+  },
+  {
+    "run_at": "2026-11-26T07:05:10.113Z",
+    "summary": "02:00 NY run (Nov 26): no open links or requests; queued the Situational Awareness 65% Q3 loss as the second and last Instagram carousel for Nov 26 and the Skills over MCP beta as a site-only article. No Reel could be checked (X and image hosts not reachable from this run); guides start after 07:00.",
+    "considered": [
+      {
+        "story": "Leopold Aschenbrenner's Situational Awareness tells investors it lost 65% in Q3 but is up 88.5% for 2026",
+        "source": "https://www.globalbankingandfinance.com/situational-awareness-lost-65-fees-third-quarter-wsj-reports/",
+        "decision": "queued",
+        "job_id": "2026-11-26-situational-awareness-lost-65-percent",
+        "priority": 2
+      },
+      {
+        "story": "Anthropic opens Skills over MCP public beta; Tasks and Elicitation generally available",
+        "source": "https://www.techtimes.com/articles/331491/20261125/anthropic-launches-skills-over-mcp-beta-server-skills-update-without-reinstall-approval-unstated.htm",
+        "decision": "queued",
+        "job_id": "2026-11-26-claude-skills-over-mcp-beta",
+        "priority": 2
+      },
+      {
+        "story": "AI company employees warn internal models are too powerful to release (local TV wire)",
+        "decision": "skipped",
+        "reason": "Vague syndicated report without a clear new primary source; both carousel slots are now used."
+      },
+      {
+        "story": "S&P considers Nvidia credit downgrade over key man risk",
+        "decision": "skipped",
+        "reason": "Could not find the S&P item itself, only an earlier Moody's outlook cut; Huang saga already covered twice this week."
+      },
+      {
+        "story": "Gemini refused to give a user the lyrics to Twinkle Twinkle Little Star (Hacker News)",
+        "source": "https://www.comentr.com/technology/01M88DWQ0R4NCMYR17AFEWRG1F",
+        "decision": "skipped",
+        "reason": "Fun everyone story but only one forum post as a source and no carousel slot left today."
+      },
+      {
+        "story": "Most people who pay for AI chatbots quit within a year (Quartz)",
+        "decision": "skipped",
+        "reason": "Not read this run; carousel slots full. Candidate for tomorrow."
+      },
+      {
+        "story": "Google Gemini 4 agent claims six math proofs in a day (R&D World)",
+        "decision": "skipped",
+        "reason": "Search only found older DeepMind math stories; source not confirmed this run."
+      },
+      {
+        "story": "The New York Times warns photographers not to update Photoshop over AI features (The Verge)",
+        "decision": "skipped",
+        "reason": "Still could not be read from this run."
+      },
+      {
+        "story": "Video of a man in a meeting with four Claude AI agents (X)",
+        "decision": "skipped",
+        "reason": "X cannot be opened from this run, so the clip could not be checked as a Reel."
+      },
+      {
+        "story": "Tim Sweeney calls Claude garbage",
+        "decision": "covered",
+        "reason": "Already queued as 2026-11-26-tim-sweeney-claude-garbage."
+      }
+    ],
+    "requests": []
   }
 ]
