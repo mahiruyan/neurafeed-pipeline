@@ -1,68 +1,5 @@
 [
   {
-    "run_at": "2026-11-19T11:07:40.818Z",
-    "summary": "Morning run (06:00 New York, Nov 19): no open links or requests; Nov 19 already has its 2 Instagram carousels, so queued the day's first Reel (Meta's AI chief posting an AI video of Sam Altman as Meta's mascot) and a site-only article on the Doritos AI gun alert lawsuit.",
-    "considered": [
-      {
-        "story": "Alexandr Wang posts an AI-generated video of Sam Altman dressed as Muse's mascot Jolly (reported by The Verge)",
-        "source": "https://www.instagram.com/reel/DffPoRdhozI/",
-        "decision": "queued",
-        "job_id": "2026-11-19-wang-altman-mascot-ai-video-reel",
-        "priority": 2
-      },
-      {
-        "story": "Four Kenwood High students sue Omnilert, Baltimore County schools and police after an AI alert mistook a Doritos bag for a gun",
-        "source": "https://www.yahoo.com/news/us/articles/baltimore-students-sue-over-ai-060032732.html",
-        "decision": "queued",
-        "job_id": "2026-11-19-ai-mistook-doritos-for-gun-lawsuit",
-        "priority": 2,
-        "reason": "Strong Instagram story (lawsuit, strange AI behavior), but today's 2 carousel slots are used, so it is site-only; Mahir can ask for an Instagram version."
-      },
-      {
-        "story": "Anthropic IPO first trading day on Nasdaq (ANT)",
-        "decision": "skipped",
-        "reason": "Trading starts after the 9:30 open; a daytime run should cover the debut as priority 1, ideally as a Reel of the opening bell if a clip appears on X."
-      },
-      {
-        "story": "Claude cracks down on abusive users (Tom's Guide)",
-        "decision": "covered",
-        "reason": "Anthropic's cruelty ban was covered in 2026-10-14-rude-prompts-chatgpt-claude-rule."
-      },
-      {
-        "story": "Coalition says 'Anthropic is not a safe AI company' ahead of IPO (Business Wire)",
-        "source": "https://www.businesswire.com/news/home/20261118974464/en/",
-        "decision": "skipped",
-        "reason": "A press release from advocacy groups with no independent news coverage found."
-      },
-      {
-        "story": "OpenAI cuts GPT-6.2 Astra API prices 20 percent (BetaNews)",
-        "decision": "skipped",
-        "reason": "Developer pricing news, only one secondary source seen; low interest beyond insiders."
-      },
-      {
-        "story": "AMD uses OpenAI models for its next GPU design",
-        "decision": "skipped",
-        "reason": "OpenAI's chip design page could not be opened in earlier runs; no second source read."
-      },
-      {
-        "story": "Gemini 4 Neon reviews and pricing posts",
-        "decision": "covered",
-        "reason": "Already covered as 2026-11-18-gemini-4-neon-fourth-model."
-      },
-      {
-        "story": "Child leads a humanoid robot at a Chinese robot carnival (viral clip)",
-        "decision": "skipped",
-        "reason": "Only a trending-news page found, no X or company video to download."
-      },
-      {
-        "story": "Website guides",
-        "decision": "skipped",
-        "reason": "Run started before 07:00 New York time, when daily guides begin."
-      }
-    ],
-    "requests": []
-  },
-  {
     "run_at": "2026-11-19T17:10:08.070Z",
     "summary": "Midday run (12:00 New York, Nov 19): no open links or requests; queued Anthropic's Nasdaq debut ($111.50 first trade, 34% above the IPO price) as a priority 1 carousel with its website article, plus the day's first site-only guide (How to use Manus). No Reel video passed the filter.",
     "considered": [
@@ -5018,6 +4955,78 @@
       },
       {
         "story": "Situational Awareness 65% loss / Tim Sweeney vs Claude / Skills over MCP / MedChemBench",
+        "decision": "covered",
+        "reason": "Already queued earlier today."
+      }
+    ],
+    "requests": []
+  },
+  {
+    "run_at": "2026-11-26T13:05:17.388Z",
+    "summary": "08:00 NY run (Nov 26): no open links or requests; queued the first guide of the day (Krea) and Nvidia's Southeast Asia server halt as the fourth site-only article. Both Instagram carousel slots were already used and no Reel video could be opened.",
+    "considered": [
+      {
+        "story": "Nvidia halts AI server shipments to Malaysia, Singapore, Thailand and Indonesia (FT via The National, Lowyat.NET)",
+        "source": "https://www.thenationalnews.com/future/technology/2026/11/26/nvidia-halts-chip-shipments-to-south-east-asia-amid-us-crackdown/",
+        "decision": "queued",
+        "job_id": "2026-11-26-nvidia-halts-servers-southeast-asia",
+        "priority": 2,
+        "reason": "Big Nvidia story but export controls are insider news and both carousel slots for today are used, so it is a site-only article."
+      },
+      {
+        "story": "Guide: How to use Krea for free (next readable tool line in guides/plan.md)",
+        "source": "https://www.krea.ai/docs/user-guide/get-started/what-is-krea",
+        "decision": "queued",
+        "job_id": "2026-11-26-how-to-use-krea-guide",
+        "priority": 2
+      },
+      {
+        "story": "Guide plan lines InVideo AI, Hailuo AI and Mercor",
+        "decision": "skipped",
+        "reason": "InVideo's help pages still conflict and pricing could not be read; Hailuo skipped earlier for the same reason; Mercor docs not checked, Krea's docs were fully readable."
+      },
+      {
+        "story": "Character.AI plans to auction data from 21M US accounts; 42 state AGs object (TechCrunch, Nov 25)",
+        "decision": "skipped",
+        "reason": "Strong scandal story for a carousel, but both carousel slots for today are used and the article was not read this run. Candidate for tomorrow."
+      },
+      {
+        "story": "OpenAI merges ChatGPT Chat and Work tabs with a shared usage meter; heavy users may hit limits sooner (TechCrunch)",
+        "decision": "skipped",
+        "reason": "Not read this run and today's site-only article slots are now full."
+      },
+      {
+        "story": "FCC authorizes SpaceX Starmind constellation of 1M satellites for space data centers (Reuters, The Verge)",
+        "decision": "skipped",
+        "reason": "Not read this run; site-only slots full."
+      },
+      {
+        "story": "Karpathy had Claude build a Civilization style hex map of the US (X)",
+        "decision": "skipped",
+        "reason": "X cannot be opened from this run, so the post and any video could not be checked."
+      },
+      {
+        "story": "Anthropic moves its Messages API from Python to Rust",
+        "decision": "skipped",
+        "reason": "Developer insider story, site-only slots full."
+      },
+      {
+        "story": "New York bans AI chatbot toys for five years (NBC News)",
+        "decision": "skipped",
+        "reason": "Not read this run; politics story with carousel slots full."
+      },
+      {
+        "story": "AI news digests for Nov 26 (The Neuron, Sam on AI, Creati, AIToolly)",
+        "decision": "skipped",
+        "reason": "Pages refused to load; Techmeme and The Neuron Daily were used instead."
+      },
+      {
+        "story": "Reel videos",
+        "decision": "skipped",
+        "reason": "No Reddit leads (API still pending) and X posts cannot be opened from this run, so no video could be checked against the Reel filter."
+      },
+      {
+        "story": "Situational Awareness 65% loss / Tim Sweeney vs Claude / Skills over MCP / MedChemBench / Google Cogentic",
         "decision": "covered",
         "reason": "Already queued earlier today."
       }

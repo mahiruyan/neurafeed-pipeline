@@ -1,0 +1,267 @@
+{
+  "id": "2026-11-26-how-to-use-krea-guide",
+  "format": "utility",
+  "site_only": true,
+  "created_at": "2026-11-26T13:30:00Z",
+  "story_time": "2026-11-26T13:30:00Z",
+  "timely": false,
+  "sensitive": false,
+  "priority": 2,
+  "sources": [
+    {
+      "name": "Krea docs: What is Krea?",
+      "url": "https://www.krea.ai/docs/user-guide/get-started/what-is-krea"
+    },
+    {
+      "name": "Krea docs: Image generation",
+      "url": "https://www.krea.ai/docs/user-guide/features/krea-image"
+    },
+    {
+      "name": "Krea docs: Video generation",
+      "url": "https://www.krea.ai/docs/user-guide/features/video"
+    },
+    {
+      "name": "Krea docs: Enhancer",
+      "url": "https://www.krea.ai/docs/user-guide/features/enhancer"
+    },
+    {
+      "name": "Krea docs: Realtime",
+      "url": "https://www.krea.ai/docs/user-guide/features/realtime"
+    },
+    {
+      "name": "Krea docs: Compute units",
+      "url": "https://www.krea.ai/docs/user-guide/help-and-support/compute-units"
+    },
+    {
+      "name": "Krea docs: Agent plans and credits",
+      "url": "https://www.krea.ai/docs/user-guide/agent/plans-and-credits"
+    }
+  ],
+  "caption": "Krea puts dozens of image and video models in one app, from its own Krea models to Veo, Kling and Seedance.\nFree accounts get a small amount of compute units every day, so the trick is picking cheap models.\nThe full step by step guide is on neurafeedai.com.\n\nWhich AI image tool do you use most?\n\nFollow @neurafeed.ai for daily AI news.\n\nSource: Krea · Photo: Krea",
+  "threads_text": "Krea's own price table shows how much model choice matters: one image costs 2 units with Krea 2 Turbo and 114 with Nano Banana. Free accounts only get a small daily amount. Do you check what a generation costs before you click?",
+  "slides": [
+    {
+      "kind": "cover",
+      "headline": "How to use *Krea* for free: images, video and upscaling",
+      "image": {
+        "url": "https://mintcdn.com/krea/ZKP0lvh-s_O_QT3A/images/home.png?fit=max&auto=format&n=ZKP0lvh-s_O_QT3A&q=85&s=45037b054a8aefcee5b47f4bbf840333",
+        "credit": "Krea",
+        "fallback_urls": [
+          "https://mintcdn.com/krea/fLD7ovPZfXkqtVeE/images/Screenshot2026-03-25at2.13.57PM.png?fit=max&auto=format&n=fLD7ovPZfXkqtVeE&q=85&s=869941a28eda6317b086277281fcfdab"
+        ]
+      }
+    },
+    {
+      "kind": "card",
+      "heading": "1. Pick a *cheap model*",
+      "paras": [
+        "Every image costs compute units. Krea 2 Turbo costs 2, Flux 5, Nano Banana 114.",
+        "Free users get a small amount each day."
+      ],
+      "image": {
+        "url": "https://mintcdn.com/krea/fLD7ovPZfXkqtVeE/images/Screenshot2026-03-25at2.27.53PM.png?fit=max&auto=format&n=fLD7ovPZfXkqtVeE&q=85&s=4bc920092192bf4c03fc25e85ce63a81",
+        "credit": "Krea",
+        "fit": "contain"
+      }
+    },
+    {
+      "kind": "card",
+      "heading": "2. Make a *video*",
+      "paras": [
+        "Pick a model, add a start and end image if you like, set length and resolution, then Generate.",
+        "Hover a clip and click Extend to go longer."
+      ],
+      "image": {
+        "url": "https://mintcdn.com/krea/XiFDigTFa71y3PJH/images/video_interface.png?fit=max&auto=format&n=XiFDigTFa71y3PJH&q=85&s=47f9afcd5099e8cdcb7d4c4c396e3c82",
+        "credit": "Krea",
+        "fit": "contain"
+      }
+    },
+    {
+      "kind": "card",
+      "heading": "3. Draw it *live*",
+      "paras": [
+        "Realtime updates the picture as you draw, type or move in front of your webcam. No render button."
+      ],
+      "image": {
+        "url": "https://mintcdn.com/krea/1oOp8RQamrpTMpLf/images/Screenshot2026-03-24at9.01.16AM.png?fit=max&auto=format&n=1oOp8RQamrpTMpLf&q=85&s=ab87773b92f9a0a873ac895e08822ae2",
+        "credit": "Krea",
+        "fit": "contain"
+      }
+    },
+    {
+      "kind": "card",
+      "heading": "4. *Upscale* up to 8x",
+      "paras": [
+        "Enhancer upscales images and video 1x to 8x. Start with low Strength and raise it slowly."
+      ],
+      "image": {
+        "url": "https://mintcdn.com/krea/cYQZowaKubSLXwVH/images/aiimageenhancerkrea.png?fit=max&auto=format&n=cYQZowaKubSLXwVH&q=85&s=107b470888afc1faca3987cc6cb41c75",
+        "credit": "Krea",
+        "fit": "contain"
+      }
+    },
+    {
+      "kind": "cta",
+      "hook": "Follow for guides that show what free AI tools really give you."
+    }
+  ],
+  "site_article": {
+    "kind": "guide",
+    "headline": "How to use Krea for free: images, video and upscaling, step by step",
+    "dek": "Krea puts dozens of image and video models in one app and charges in compute units. Here is how the free units work, which models are cheap, and how to make images, videos and upscales.",
+    "summary": "Krea is an AI creative suite for images, video, live drawing and upscaling that charges in compute units. Every user gets a small daily amount of free units, and model prices range from 2 units for Krea 2 Turbo to about 1,300 for Veo 3.1.",
+    "seo_title": "How to use Krea for free: images, video and upscaling",
+    "seo_description": "How to use Krea for free: how daily compute units work, which image and video models cost least, and step by step guides for Image, Video and Enhancer.",
+    "answer_summary": "Sign up at krea.ai, open Image, pick a low cost model such as Krea 2 Turbo or Flux, type a prompt and click Generate. Free accounts get a small amount of compute units each day.",
+    "tags": [
+      "Krea",
+      "AI image generator",
+      "AI video",
+      "Guides"
+    ],
+    "hero_alt": "Krea home screen with tool shortcuts and a grid of AI generated images.",
+    "paragraphs": [
+      {
+        "kind": "fact",
+        "text": "How to use Krea for free, in short: make an account, open the Image tool, pick a cheap model, type a prompt and click Generate. Krea's own docs describe it as an AI creative suite for making, editing, upscaling and animating images and video. It puts many outside models (from Google, OpenAI, Runway and others) next to its own Krea models in one place, and it is aimed at designers and filmmakers who do not want to touch code.",
+        "sources": [
+          0
+        ]
+      },
+      {
+        "kind": "fact",
+        "text": "Everything you do costs compute units, which Krea calls the currency of its platform. Images, videos, upscales, edits and model training all spend them. Krea's help page says every user gets a small amount of free compute units each day. It does not give a number, so treat the free tier as a way to test the tools, not a way to finish a big project.",
+        "sources": [
+          5
+        ]
+      },
+      {
+        "kind": "heading",
+        "text": "What you get on Krea's free plan"
+      },
+      {
+        "kind": "fact",
+        "text": "Unused units on individual plans do not roll over to the next month; only Business and Enterprise plans carry them over. If you run out, Krea's docs list your options: wait for the daily free reset, wait for your monthly reset on a paid plan, buy a one time compute pack (packs must be used within 90 days) or upgrade. You can check what you have spent in your account under Usage Statistics, which updates within a minute or two.",
+        "sources": [
+          5
+        ]
+      },
+      {
+        "kind": "fact",
+        "text": "The price of one generation depends on the model, and the gap is huge. Krea's image page lists Krea 2 Turbo at 2 units, Flux at 5, Krea 1 at 8, Seedream 4 at 24, Nano Banana at 114 and Wan 2.5 at 569. Krea 1 returns four images for its price. On the free tier, that table is the most useful thing to read before you click anything.",
+        "sources": [
+          1
+        ]
+      },
+      {
+        "kind": "fact",
+        "text": "Krea Agent, the assistant that plans and runs multi-step jobs for you, is open on every plan, including Free. Free accounts get only the Instant and Medium effort levels and cannot pin a specific model. Paid plans are named Basic, Pro, Creator Basic, Creator Pro, Max, Creator Max, Business and Enterprise; the docs we read do not list their prices.",
+        "sources": [
+          6
+        ]
+      },
+      {
+        "kind": "heading",
+        "text": "How to make an image in Krea"
+      },
+      {
+        "kind": "step",
+        "title": "1. Open Image",
+        "text": "Click the image icon in the left navigation bar. The prompt box sits at the bottom of the screen, and the + icon in the left panel starts a new session."
+      },
+      {
+        "kind": "step",
+        "title": "2. Pick a model",
+        "text": "Click the model name in the bottom left corner to open the model picker. The default is Krea 3, and Auto lets Krea choose for you. To save units, pick a cheap model such as Krea 2 Turbo or Flux while you test ideas."
+      },
+      {
+        "kind": "step",
+        "title": "3. Write the prompt",
+        "text": "Krea's tips: name the subject, the setting, the lighting and the mood. Use 9:16 if the image is for Reels, TikTok or Stories."
+      },
+      {
+        "kind": "prompt",
+        "title": "Prompt 1: a product shot",
+        "text": "A ceramic coffee mug on a wooden kitchen counter, soft morning light from a window on the left, steam rising, calm and warm mood, shallow depth of field"
+      },
+      {
+        "kind": "prompt",
+        "title": "Prompt 2: a thumbnail background",
+        "text": "A busy night market street in [city], neon shop signs, light rain on the ground, wide angle, bold colors, empty space on the right side for text"
+      },
+      {
+        "kind": "step",
+        "title": "4. Adjust the settings and generate",
+        "text": "Below the prompt box you can set the aspect ratio, add an image prompt (a reference picture) and, with Krea 1 only, use style transfer. The options change by model. Click Generate; most models return two or four images."
+      },
+      {
+        "kind": "step",
+        "title": "5. Use what you made",
+        "text": "Hover over a result to open it full screen, send it to Edit, send it to Upscale and enhance, or turn it into the first frame of a video. Everything you make is saved under Assets in the top navigation."
+      },
+      {
+        "kind": "tip",
+        "text": "Krea 3 can keep the same character across images if you give it a reference picture and say in plain words what to keep. Useful for a mascot or a recurring face."
+      },
+      {
+        "kind": "heading",
+        "text": "How to make a video in Krea"
+      },
+      {
+        "kind": "step",
+        "title": "1. Open Video and pick a model",
+        "text": "Go to the Video page and choose a model in the picker at the bottom left. Prices vary widely: Krea's table lists Seedance Pro Fast at about 40 units, Hailuo 2.3 Fast at about 150, Seedance 2.0 at about 300, Kling 3.0 at about 1,000 and Veo 3.1 at about 1,300."
+      },
+      {
+        "kind": "step",
+        "title": "2. Add frames if you want control",
+        "text": "You can type a prompt only, or upload a start image and an end image so the clip moves from one to the other."
+      },
+      {
+        "kind": "step",
+        "title": "3. Set the format and generate",
+        "text": "Choose the aspect ratio, the length (for example 6 or 12 seconds) and the resolution (for example 720p or 1080p). Not every model supports every setting. Click Generate. A clip takes one to ten minutes."
+      },
+      {
+        "kind": "step",
+        "title": "4. Make it longer",
+        "text": "Clips are short, around 5 to 12 seconds. To go longer, hover over a clip, click Extend, adjust the prompt and generate again."
+      },
+      {
+        "kind": "tip",
+        "text": "Krea's own advice: start with short clips, run the same prompt on a few models, and describe the camera move and the motion in plain words. Shorter, lower resolution clips cost fewer units."
+      },
+      {
+        "kind": "heading",
+        "text": "Realtime and Enhancer: the two tools that set Krea apart"
+      },
+      {
+        "kind": "fact",
+        "text": "Realtime is a live canvas: you draw shapes, type or point your webcam at something, and the picture on the right updates as you go, with no render button. You can draw on the canvas, use your webcam, share a browser tab or work from text only. Fast models run at 512 pixels and quality models at 1024. When you like a result, click Upscale or Download under the output.",
+        "sources": [
+          4
+        ]
+      },
+      {
+        "kind": "fact",
+        "text": "Enhancer upscales images and video. Upload a picture or pick one you made, choose a model, set the factor to 1x, 2x, 4x or 8x, add an optional prompt and click Enhance. It takes roughly 10 to 120 seconds, and a slider shows before and after. Models include Krea Enhance, Bloom and Topaz.",
+        "sources": [
+          3
+        ]
+      },
+      {
+        "kind": "tip",
+        "text": "Start with low Strength, Clarity and Sharpness and raise them slowly. High values can add painterly strokes or fake skin texture. For a big print, upscale in two passes (2x, then 4x)."
+      },
+      {
+        "kind": "heading",
+        "text": "What Krea is bad at"
+      },
+      {
+        "kind": "analysis",
+        "text": "Krea is a good place to compare many image and video models side by side, and Realtime is fun for fast sketching. The weak spots are the ones its own docs admit: the free daily units are small and unspecified, video eats units fast, clips are short, and most image models stop at 1024 pixels square. Enhancer invents plausible detail rather than recovering the real thing, so it cannot rescue an unreadable sign or a blurry face for anything that needs to be accurate. If you want one model at a flat price, a single app may be simpler."
+      }
+    ]
+  }
+}
