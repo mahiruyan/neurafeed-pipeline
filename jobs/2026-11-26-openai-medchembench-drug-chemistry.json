@@ -1,0 +1,97 @@
+{
+  "id": "2026-11-26-openai-medchembench-drug-chemistry",
+  "created_at": "2026-11-26T09:20:00Z",
+  "story_time": "2026-11-20T18:00:00Z",
+  "timely": false,
+  "sensitive": false,
+  "priority": 2,
+  "site_only": true,
+  "format": "carousel",
+  "site_category": "models",
+  "ab": { "headline": "short", "photo": "story" },
+  "sources": [
+    { "name": "OpenAI", "url": "https://openai.com/index/introducing-medchembench/" },
+    { "name": "Unite.AI", "url": "https://www.unite.ai/openai-introduces-medchembench-for-medicinal-chemistry-reasoning/" }
+  ],
+  "caption": "OpenAI built a test that asks AI to think like a drug chemist, using 99 problems from real papers and patents.\nIts newest model, GPT-6.2 Astra, earned 84.5% of the credit.\nBut the models drew molecules far better than they picked the best drug candidate.\n\nWould you trust an AI to pick the next drug to test?\n\nFollow @neurafeed.ai for daily AI news.\n\nSource: OpenAI, Unite.AI · Photo: OpenAI",
+  "threads_text": "OpenAI made a test that asks AI to reason like a drug chemist, using 99 problems from real papers and patents. GPT-6.2 Astra scored 84.5%, but the models were only right about half the time when picking candidates. Would you trust AI to choose which drug gets tested?",
+  "slides": [
+    {
+      "kind": "cover",
+      "headline": "OpenAI tested whether AI can *think like a drug chemist*",
+      "image": {
+        "url": "https://images.ctfassets.net/kftzwdyauwt9/37ZvKdwVigsgJ7G3FMr4Nb/12854063a79d19d63278704bf54e3010/introducing-medchembench-social.png?w=1600&h=900&fit=fill",
+        "credit": "OpenAI",
+        "fallback_urls": [
+          "https://www.unite.ai/wp-content/uploads/2026/11/openai-introduces-medchembench-for-medicinal-chemistry-reasoning.jpg"
+        ]
+      },
+      "badges": [ { "url": "assets/logos/openai.png", "fit": "contain" } ]
+    },
+    {
+      "kind": "card",
+      "heading": "99 problems from *real labs*",
+      "paras": [
+        "MedChemBench uses 99 problems from 117 papers and patents, with 761 graded molecules.",
+        "Each prompt stops at a real decision point. The results that came later are hidden and used as the answer key."
+      ],
+      "image": {
+        "url": "https://images.ctfassets.net/kftzwdyauwt9/6kbw4PSOhEqlbbiM3ZYhOb/1c770a466f57e0117f970cb124b921ee/introducing-medchembench-header-poster-4k.png?w=3840&q=50&fm=webp",
+        "credit": "OpenAI",
+        "fit": "contain"
+      }
+    },
+    {
+      "kind": "card",
+      "heading": "GPT-6.2 Astra scored *84.5%*",
+      "paras": [
+        "GPT-6 Astra got 83.3%, GPT-6.1 Sol 82.0% and the older GPT-5.6 Sol 58.2%, OpenAI said.",
+        "GPT-6 Astra drew molecule structures right 95.4% of the time."
+      ],
+      "image": {
+        "url": "https://images.ctfassets.net/kftzwdyauwt9/1VTqzHLMhkmIYnsS9nSqau/bff555251736290c430519e004502198/introducing-medchembench-structure-comparison.png?w=3840&q=90&fm=webp",
+        "credit": "OpenAI",
+        "fit": "contain"
+      }
+    },
+    {
+      "kind": "card",
+      "heading": "Picking winners is *harder*",
+      "paras": [
+        "On choosing the best candidate and predicting lab numbers, it got only about half the credit.",
+        { "t": "OpenAI says the scores do not show AI can discover new drugs.", "strong": true }
+      ],
+      "image": {
+        "url": "https://images.ctfassets.net/kftzwdyauwt9/6EY1OYOVnL6SZTDp6zttc8/e2c458548218cb5cd764b05f627f573c/introducing-medchembench-prmt5-poster-4k.png?w=3840&q=50&fm=webp",
+        "credit": "OpenAI",
+        "fit": "contain"
+      }
+    },
+    { "kind": "cta", "hook": "Follow to see when AI moves from drug tests to real drug discovery." }
+  ],
+  "site_article": {
+    "headline": "OpenAI launches MedChemBench to test AI on medicinal chemistry reasoning",
+    "dek": "The benchmark uses 99 problems from published drug research, and OpenAI says top scores still do not show that models can find new drugs.",
+    "summary": "OpenAI introduced MedChemBench on November 20, 2026, a benchmark of 99 medicinal chemistry problems drawn from 117 papers and patents. GPT-6.2 Astra earned 84.5% of the available credit, but models scored about half on candidate selection and numerical prediction.",
+    "seo_title": "OpenAI MedChemBench: how GPT models score on drug chemistry",
+    "seo_description": "OpenAI's MedChemBench tests AI on 99 medicinal chemistry problems. GPT-6.2 Astra scored 84.5%, but candidate selection and lab predictions lag far behind.",
+    "answer_summary": "MedChemBench is an OpenAI benchmark that checks whether AI models can reason through real medicinal chemistry decisions. The best reported score is 84.5%, from GPT-6.2 Astra.",
+    "tags": ["OpenAI", "MedChemBench", "GPT-6", "drug discovery", "AI benchmarks"],
+    "hero_alt": "Header graphic from OpenAI's MedChemBench announcement.",
+    "paragraphs": [
+      { "kind": "fact", "text": "OpenAI introduced MedChemBench on November 20, 2026, a benchmark that measures how well AI models reason through tasks taken from medicinal chemistry research. The company said the test checks whether a model can connect a molecule's structure with experimental evidence to explain results, compare compounds and predict their properties.", "sources": [0, 1] },
+      { "kind": "fact", "text": "The benchmark contains 99 problems built from 117 papers and patents, covering 761 distinct molecular structures that are graded. Each problem is retrospective. The prompt stops at a chosen decision point in a real research program, gives the biological target, earlier compounds and selected findings, and holds back the results that came later. Those withheld results become the reference answers.", "sources": [0, 1] },
+      { "kind": "heading", "text": "What the tasks ask" },
+      { "kind": "fact", "text": "According to Unite.AI's summary of the accompanying paper, the tasks fall into seven categories. Integrated lead selection is the largest with 48 tasks, followed by structure and activity forecasting with 26. The others cover absorption and delivery, molecular design, safety liabilities, retrosynthesis, and assay biology and mechanism. Answers are graded on four parts: the molecular structures, the scientific reasoning, ranking and selection, and property predictions.", "sources": [1] },
+      { "kind": "fact", "text": "One example in OpenAI's post comes from a PRMT5 research program. The model has to reconstruct three related compounds and predict cellular potency, permeability, efflux and clearance in human liver microsomes. The withheld results showed that one compound was more potent in cells, while another crossed the cell barrier more easily and broke down more slowly in the liver enzyme assay.", "sources": [0, 1] },
+      { "kind": "fact", "text": "Another task asks the model to assemble a molecule from a central structure and two attached groups while keeping an 18 atom ring intact. According to the post, GPT-6 Astra got it right in all ten responses at its highest standard effort setting, GPT-5.6 Sol built a 15 atom ring, and GPT-5.6 Luna returned disconnected fragments.", "sources": [0, 1] },
+      { "kind": "heading", "text": "How the models scored" },
+      { "kind": "fact", "text": "At the xhigh reasoning setting, GPT-6.2 Astra earned 84.5% of the available credit, OpenAI said. GPT-6 Astra scored 83.3%, GPT-6.1 Sol 82.0%, GPT-6.1 Terra 75.1% and GPT-5.6 Sol 58.2%. Unite.AI noted that GPT-6.2 Astra is not part of the model set evaluated in the paper, so its result comes from the announcement alone.", "sources": [0, 1] },
+      { "kind": "fact", "text": "The scores were uneven across the four parts. OpenAI said GPT-6 Astra drew correct structures 95.4% of the time but earned only about half the credit on selection and numerical prediction. Unite.AI, citing the paper, put those figures at 50.42% for ranking and candidate selection and 47.02% for numerical prediction, against 91.05% for scientific reasoning.", "sources": [0, 1] },
+      { "kind": "heading", "text": "The limits OpenAI lists" },
+      { "kind": "fact", "text": "OpenAI said the scores do not establish whether models can discover new drugs or improve decisions in the lab. Each answer was a single attempt with no tools, no feedback and no new experiments, and the tasks rely on historical evidence. The company also said prior exposure to the published sources during training cannot be ruled out. According to Unite.AI, the paper describes the benchmark as close to saturation in its current form and proposes prospective cases, expert review of alternative answers and an agent track with retrieval and calculation tools.", "sources": [0, 1] },
+      { "kind": "analysis", "text": "The pattern in the results is the useful part for anyone tracking AI in drug research. Reproducing a known molecule and explaining a result in words now looks close to solved for the newest models, while the judgment calls that cost labs money, such as which compound to make next or what a clearance value will be, remain near a coin flip on this test." },
+      { "kind": "why_it_matters", "text": "The next signal to watch is a prospective version of the test, where models make predictions before the lab results exist, since that is the step OpenAI itself says this benchmark cannot yet show." }
+    ]
+  }
+}

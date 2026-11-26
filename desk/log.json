@@ -1,77 +1,5 @@
 [
   {
-    "run_at": "2026-11-19T07:13:42.520Z",
-    "summary": "Night run (01:55 New York): queued the day's second Instagram carousel, Google keeping Gemini chats about two months even with History off; no Reel or site-only article could be sourced.",
-    "considered": [
-      {
-        "story": "Google will keep Gemini chats for about two months even with History off, and splits history from AI training",
-        "source": "https://blog.google/innovation-and-ai/products/gemini-app/updated-controls/",
-        "decision": "queued",
-        "job_id": "2026-11-19-gemini-keeps-chats-two-months",
-        "priority": 2
-      },
-      {
-        "story": "Official trailer for Artificial, Luca Guadagnino's film with Andrew Garfield as Sam Altman (Neon, Dec 25)",
-        "source": "https://www.justjared.com/2026/11/18/artificial-trailer-andrew-garfield-stars-as-openai-co-founder-ceo-sam-altman-in-luca-guadagnino-film-watch-now/",
-        "decision": "skipped",
-        "reason": "Good Reel candidate, but the only clip found is on YouTube (fails to render) and X cannot be opened here; the second carousel slot went to the Gemini privacy story. Candidate for a later run if the clip is on X."
-      },
-      {
-        "story": "OpenAI: advancing chip design with its own models (Jalapeno chip)",
-        "source": "https://openai.com/index/advancing-chip-design-with-our-models/",
-        "decision": "skipped",
-        "reason": "OpenAI's page could not be opened from this run, so no site-only article could be written from the original."
-      },
-      {
-        "story": "AI agents ask better questions than KPMG accountants in an audit trial",
-        "source": "https://europeanbusinessmagazine.com/ai-agents-better-questions-kpmg/",
-        "decision": "skipped",
-        "reason": "The report could not be opened and the only other coverage found was an April Bloomberg Tax piece about planned tests, with no results."
-      },
-      {
-        "story": "OpenAI says it solved a Millennium Prize Problem (State Press explainer)",
-        "decision": "skipped",
-        "reason": "The claim dates from September 2026; the new item is only a student-paper explainer."
-      },
-      {
-        "story": "Anthropic IPO first trading day (ANT)",
-        "decision": "covered",
-        "reason": "Pricing posted as 2026-11-18-anthropic-ipo-priced-83; the debut trades after the 9:30 open, candidate for a daytime run as a priority 1 follow-up."
-      },
-      {
-        "story": "Gemini 4 Neon reviews and comparisons (The New Stack, OrcaRouter)",
-        "decision": "covered",
-        "reason": "Already covered as 2026-11-18-gemini-4-neon-fourth-model."
-      },
-      {
-        "story": "Satya Nadella on why Microsoft asked 60,000 employees to quit (TechCrunch)",
-        "decision": "covered",
-        "reason": "The buyouts were covered as 2026-10-26-microsoft-60000-buyouts-ai."
-      },
-      {
-        "story": "Elon Musk at DealBook says he is 'not MAGA' (NYT)",
-        "decision": "skipped",
-        "reason": "Politics talk, not an AI story; not read beyond the headline."
-      },
-      {
-        "story": "Mahir's old inbox links (link-2026-10-13-224, link-2026-10-14-435, link-2026-10-20-1074-2, link-2026-10-21-w47d4efec)",
-        "decision": "skipped",
-        "reason": "Already in inbox/skipped.json from earlier runs; no new links or open requests."
-      },
-      {
-        "story": "Website guides",
-        "decision": "skipped",
-        "reason": "Run started before 07:00 New York time, when daily guides begin."
-      },
-      {
-        "story": "Reel search",
-        "decision": "skipped",
-        "reason": "Reddit leads are empty and X cannot be opened from this run, so no clip could be checked."
-      }
-    ],
-    "requests": []
-  },
-  {
     "run_at": "2026-11-19T09:05:37.551Z",
     "summary": "Early run (04:00 New York, Nov 19): no open links or requests; Nov 19 already has its 2 Instagram carousels, so queued two site-only articles: Arizona's criminal probe of OpenAI over rogue agents in banks (priority 1) and Newsom's AI kill switch recommendations.",
     "considered": [
@@ -5061,6 +4989,56 @@
         "story": "Tim Sweeney calls Claude garbage",
         "decision": "covered",
         "reason": "Already queued as 2026-11-26-tim-sweeney-claude-garbage."
+      }
+    ],
+    "requests": []
+  },
+  {
+    "run_at": "2026-11-26T09:01:27.292Z",
+    "summary": "04:00 NY run (Nov 26): no open links or requests; queued OpenAI's MedChemBench as a site-only article. Both Instagram carousel slots for today are already used, no new priority 1 story was found, no Reel video could be checked, and guides start after 07:00.",
+    "considered": [
+      {
+        "story": "OpenAI introduces MedChemBench: GPT-6.2 Astra scores 84.5% on 99 medicinal chemistry problems",
+        "source": "https://openai.com/index/introducing-medchembench/",
+        "decision": "queued",
+        "job_id": "2026-11-26-openai-medchembench-drug-chemistry",
+        "priority": 2
+      },
+      {
+        "story": "Dario Amodei calls surrendering human free will to AI absurd and takes aim at rival CEOs (Digit, Business Insider)",
+        "source": "https://www.digit.in/news/general/anthropic-ceo-calls-surrendering-human-free-will-to-ai-absurd-takes-aim-at-rival-ceos.html",
+        "decision": "skipped",
+        "reason": "Person and feud story that fits a carousel, but the article could not be opened this run and both carousel slots for today are used; candidate for Nov 27."
+      },
+      {
+        "story": "Ex-OpenAI engineer's meeting recordings may contain trade secrets, prosecutors say",
+        "decision": "skipped",
+        "reason": "Still only an aggregator headline, no original source read; carousel slots are full."
+      },
+      {
+        "story": "The New York Times warns photographers not to update Photoshop over AI features (The Verge)",
+        "decision": "skipped",
+        "reason": "Page still not readable from this run; carousel slots are full."
+      },
+      {
+        "story": "Musk antitrust suit against Apple and OpenAI set for a Texas jury trial in March",
+        "decision": "skipped",
+        "reason": "Only an aggregator headline seen, no source read."
+      },
+      {
+        "story": "Gemini 4 Neon day-one usage record",
+        "decision": "skipped",
+        "reason": "Model already covered on Nov 18; record claim only from minor outlets."
+      },
+      {
+        "story": "AI news digests for Nov 26 (The Neuron, Creati, AIToolly)",
+        "decision": "skipped",
+        "reason": "All three pages refused to load, so no new stories could be found there."
+      },
+      {
+        "story": "Situational Awareness 65% loss / Skills over MCP / Tim Sweeney vs Claude",
+        "decision": "covered",
+        "reason": "Already queued earlier today."
       }
     ],
     "requests": []
