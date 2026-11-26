@@ -5100,5 +5100,65 @@
       }
     ],
     "requests": []
+  },
+  {
+    "run_at": "2026-11-26T17:02:31.179Z",
+    "summary": "12:00 NY run (Nov 26, Thanksgiving): no open links or requests; queued the third guide of the day (Mercor AI interview). Both carousel slots and all 4 site-only news slots for today were already used, no new priority 1 story surfaced, and no Reel video could be checked.",
+    "considered": [
+      {
+        "story": "Guide: Mercor AI interview (guides/plan.md tool library, next line after InVideo and Hailuo)",
+        "source": "https://talent.docs.mercor.com/support/ai-interview",
+        "decision": "queued",
+        "job_id": "2026-11-26-mercor-ai-interview-guide",
+        "priority": 2
+      },
+      {
+        "story": "Guide: How to use ChatPDF for free",
+        "source": "https://www.chatpdf.com/",
+        "decision": "skipped",
+        "reason": "ChatPDF's own pages could not be opened from this run; Mercor's docs were fully readable."
+      },
+      {
+        "story": "OpenAI merges ChatGPT Chat and Work under one usage meter (TechCrunch, Nov 25)",
+        "source": "https://techcrunch.com/2026/11/25/openai-says-heavy-chatgpt-users-may-hit-limits-sooner-as-it-merges-chat-and-work/",
+        "decision": "skipped",
+        "reason": "The merge was announced in early November and was already skipped as old news; site-only slots are full."
+      },
+      {
+        "story": "FCC authorizes SpaceX Starmind, up to 1 million AI satellites (The Verge)",
+        "source": "https://www.theverge.com/science/1042278/spacex-fcc-starmind-ai-space-data-centers",
+        "decision": "skipped",
+        "reason": "Insider infrastructure story and today's 4 site-only article slots are full."
+      },
+      {
+        "story": "The New York Times tells photographers not to use the newest Photoshop (DPReview, The Verge)",
+        "source": "https://www.dpreview.com/news/new-york-times-adobe-photoshop-2027-restriction-ai/",
+        "decision": "skipped",
+        "reason": "Pages still not read from this run and both carousel slots for today are used."
+      },
+      {
+        "story": "Google My Channel AI video patent rejected (The Verge)",
+        "source": "https://www.theverge.com/entertainment/1042221/google-my-channel-ai-video-patent",
+        "decision": "skipped",
+        "reason": "Small insider story, site-only slots full."
+      },
+      {
+        "story": "Gemini 4 Neon benchmark wins (Latent Space)",
+        "source": "https://latent.space/p/ainews-gemini-4-neon-marks-gdm-s-full-return-as-a-frontier-lab/",
+        "decision": "skipped",
+        "reason": "Model launch from earlier in the week, benchmark follow-up only."
+      },
+      {
+        "story": "AI news digests for Nov 26 (The Neuron, Creati.ai)",
+        "decision": "skipped",
+        "reason": "Both pages failed to load; aitoolly's Nov 26 list was read instead and held no new major story."
+      },
+      {
+        "story": "Reel videos",
+        "decision": "skipped",
+        "reason": "Reddit leads are empty and X posts cannot be opened from this run, so no clip could be checked against the Reel filter."
+      }
+    ],
+    "requests": []
   }
 ]
