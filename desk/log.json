@@ -5016,5 +5016,50 @@
       }
     ],
     "requests": []
+  },
+  {
+    "run_at": "2026-11-26T03:01:45.206Z",
+    "summary": "22:00 NY run (Nov 25): no open links or requests and nothing queued. Both Instagram carousel slots, all 4 site-only news slots and all 6 guides for today were already used, no new priority 1 story was found, and no Reel video could be checked.",
+    "considered": [
+      {
+        "story": "Epic CEO Tim Sweeney calls Claude 'garbage' after it blocked his set theory work as suspected distillation",
+        "source": "https://www.tweaktown.com/news/114891/epic-ceo-tim-sweeney-calls-claude-garbage-after-it-accuses-him-of-trying-to-train-another-ai/index.html",
+        "decision": "skipped",
+        "reason": "Strong person-and-feud carousel (TweakTown and Wccftech read), but both carousel slots for today are used and no photo of Sweeney could be opened or checked from this run (Wikimedia and image hosts blocked); top candidate for the first Nov 26 run."
+      },
+      {
+        "story": "Dario Amodei accuses rival AI CEOs of 'vibes-based' positioning (Business Insider)",
+        "source": "https://www.businessinsider.com/",
+        "decision": "skipped",
+        "reason": "Headline only in leads, not read; carousel slots full."
+      },
+      {
+        "story": "Gemini 4 Neon sets a day-one usage record",
+        "decision": "skipped",
+        "reason": "Model already covered on Nov 18 (2026-11-18-gemini-4-neon-fourth-model); record claim only from minor outlets."
+      },
+      {
+        "story": "Musk antitrust suit against Apple and OpenAI set for a Texas jury trial in March",
+        "decision": "skipped",
+        "reason": "Seen only in an aggregator headline, no source read; carousel slots full."
+      },
+      {
+        "story": "The New York Times warns photographers not to update Photoshop over AI features (The Verge, via Hacker News)",
+        "source": "https://www.theverge.com/ai-artificial-intelligence/1041227/the-new-york-times-warns-photographers-not-to-update-photoshop-over-ai-features",
+        "decision": "skipped",
+        "reason": "Good everyone story, but the page could not be read this run and carousel slots are full; candidate for tomorrow."
+      },
+      {
+        "story": "Video of a man in a meeting with four Claude AI agents (X)",
+        "decision": "skipped",
+        "reason": "X cannot be opened from this run and no article describing the clip was found, so it could not be checked as a Reel."
+      },
+      {
+        "story": "Tidal AI music / Trump could pardon Jensen Huang / OpenAI 9/4 exponent / GPT-6.2 proteins / Anthropic work study / Claude install as app",
+        "decision": "covered",
+        "reason": "Already queued earlier today."
+      }
+    ],
+    "requests": []
   }
 ]
