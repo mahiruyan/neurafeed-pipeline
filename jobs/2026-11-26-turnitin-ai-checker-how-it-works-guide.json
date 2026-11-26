@@ -1,0 +1,209 @@
+{
+  "id": "2026-11-26-turnitin-ai-checker-how-it-works-guide",
+  "format": "utility",
+  "site_only": true,
+  "created_at": "2026-11-26T21:20:00Z",
+  "story_time": "2026-11-26T21:20:00Z",
+  "timely": false,
+  "sensitive": false,
+  "priority": 2,
+  "sources": [
+    {
+      "name": "Turnitin: AI writing detection FAQ",
+      "url": "https://www.turnitin.com/products/features/ai-writing-detection/"
+    },
+    {
+      "name": "Turnitin Guides: AI writing detection in the classic report view",
+      "url": "https://guides.turnitin.com/hc/en-us/articles/28457596598925-AI-writing-detection-in-the-classic-report-view"
+    },
+    {
+      "name": "Turnitin Guides: AI writing detection in the enhanced Similarity Report view",
+      "url": "https://guides.ithenticate.com/hc/en-us/articles/27835303398541-AI-writing-detection-in-the-new-enhanced-Similarity-Report-view"
+    },
+    {
+      "name": "University of Melbourne: Accessing and interpreting the AI Writing Report",
+      "url": "https://lms.unimelb.edu.au/staff/guides/canvas/assignments/turnitin-accessing-and-interpreting-the-ai-writing-report"
+    },
+    {
+      "name": "University of Melbourne: Turnitin's AI writing detection tool",
+      "url": "https://academicintegrity.unimelb.edu.au/staff-resources/turnitins-ai-writing-detection-tool"
+    }
+  ],
+  "caption": "Turnitin's AI checker gives a percentage of the prose it thinks AI wrote, and hides scores from 1 to 19 percent behind an asterisk.\nTurnitin says it may flag about 1 in 100 fully human papers, and that the score alone is not proof of cheating.\nThe full guide is on neurafeedai.com.\n\nHas an AI detector ever flagged your own writing?\n\nFollow @neurafeed.ai for daily AI news.\n\nSource: Turnitin",
+  "threads_text": "Turnitin's AI checker hides any score under 20 percent behind an asterisk, and the company says about 1 in 100 fully human papers may still get flagged. Students can't even see the report unless a teacher shares it. Has an AI detector ever flagged your writing?",
+  "slides": [
+    {
+      "kind": "cover",
+      "headline": "How *Turnitin's AI checker* really scores your paper",
+      "image": {
+        "url": "https://www.turnitin.com/assets/images/ai-faq-01_textmediawithcta.png",
+        "credit": "Turnitin",
+        "fit": "contain"
+      }
+    },
+    {
+      "kind": "card",
+      "heading": "1. The *percentage* covers prose only",
+      "paras": [
+        "The score is the share of long-form sentences the model thinks AI may have written. Lists and bullets are left out.",
+        "Cyan marks AI text, purple marks AI text that was also run through a paraphraser."
+      ],
+      "image": {
+        "url": "https://www.turnitin.com/assets/images/page-images/product-pages/ai-paraphrasing-detection.png",
+        "credit": "Turnitin",
+        "fit": "contain"
+      }
+    },
+    {
+      "kind": "card",
+      "heading": "2. Under 20% shows an *asterisk*",
+      "paras": [
+        "Scores from 1 to 19 percent show *% with no highlights, because Turnitin says false positives are more likely there.",
+        "It needs at least 300 words of prose to run."
+      ],
+      "image": {
+        "url": "https://www.turnitin.com/assets/images/page-images/product-pages/text-segments.png",
+        "credit": "Turnitin",
+        "fit": "contain"
+      }
+    },
+    {
+      "kind": "card",
+      "heading": "3. It is *not proof* of cheating",
+      "paras": [
+        "Turnitin aims for under 1% false positives and says it may flag 1 in 100 fully human papers.",
+        "It says the score should never be the only basis for action against a student."
+      ],
+      "image": {
+        "url": "https://www.turnitin.com/assets/images/ai-faq-02_textmediawithcta.png",
+        "credit": "Turnitin",
+        "fit": "contain"
+      }
+    },
+    {
+      "kind": "cta",
+      "hook": "Follow for plain answers about the AI tools your school and work use on you."
+    }
+  ],
+  "site_article": {
+    "kind": "guide",
+    "headline": "Turnitin AI checker: how it works, what the score means and its limits",
+    "dek": "Turnitin's AI writing indicator gives instructors a percentage of a paper's prose that AI tools may have written. Here is how to read it, what it needs to run, who can see it and what Turnitin says about false positives.",
+    "summary": "Turnitin's AI checker estimates how much of a paper's qualifying prose AI tools may have generated, highlights those parts and hides scores from 1 to 19 percent behind an asterisk. Turnitin says it aims for a false positive rate under 1 percent and that the score should never be the only basis for action against a student.",
+    "seo_title": "Turnitin AI checker: how it works, scores and false positives",
+    "seo_description": "How the Turnitin AI checker works: what the percentage and asterisk mean, the 300 word minimum, who sees it, and what Turnitin says about false positives.",
+    "answer_summary": "Turnitin's AI checker splits a paper into overlapping segments, scores each sentence and reports the share of qualifying prose it thinks AI may have written. Scores from 1 to 19 percent show only an asterisk, students cannot see the report, and Turnitin says the score is not proof of misconduct.",
+    "tags": [
+      "Turnitin",
+      "AI detection",
+      "AI writing",
+      "Students",
+      "Guides"
+    ],
+    "hero_alt": "Illustration from Turnitin's AI writing detection page.",
+    "paragraphs": [
+      {
+        "kind": "fact",
+        "text": "The Turnitin AI checker, which Turnitin calls its AI writing indicator, shows instructors a percentage: how much of a submission's qualifying text AI tools such as ChatGPT may have generated. Qualifying text means prose sentences in long-form writing. Lists, bullet points and other text that is not in sentences are left out, so the number is not always a share of the whole paper.",
+        "sources": [
+          0
+        ]
+      },
+      {
+        "kind": "fact",
+        "text": "The percentage links to an AI writing report that highlights the parts the model flagged. Cyan marks text that is likely AI-generated. Purple marks text that is likely AI-generated and was also likely run through an AI paraphrasing tool. The AI score is separate from the similarity score, and the AI highlights do not appear in the Similarity Report itself.",
+        "sources": [
+          0,
+          2
+        ]
+      },
+      {
+        "kind": "heading",
+        "text": "How the Turnitin AI checker works"
+      },
+      {
+        "kind": "fact",
+        "text": "Turnitin says its detector is built on an open source foundation model and was first trained on output from GPT-3 and GPT-3.5, then extended to GPT-4, GPT-4o, Gemini Pro and LLaMA. It splits text into overlapping segments of about five to ten sentences and gives each sentence a score between 0 and 1. The paraphrase check only runs on segments the main detector has already flagged as AI-generated.",
+        "sources": [
+          0
+        ]
+      },
+      {
+        "kind": "fact",
+        "text": "A file needs at least 300 words of prose, must be under 100 MB and must be a .docx, .pdf, .txt or .rtf file. Turnitin's pages give a maximum of 30,000 words, while a University of Melbourne guide updated in March 2026 lists 15,000, so check your own institution's setup. Turnitin's enhanced report guide lists several languages beyond English, but it says the paraphrase and bypasser checks only work in English.",
+        "sources": [
+          0,
+          2,
+          3
+        ]
+      },
+      {
+        "kind": "heading",
+        "text": "How to read your Turnitin AI score"
+      },
+      {
+        "kind": "step",
+        "title": "1. Open the AI writing report",
+        "text": "In the classic report view, the AI indicator sits in the toolbar on the right. Selecting the percentage opens the AI writing report in a new tab. In the newer report view, look for the AI Writing tab in the top menu. Where it appears in your learning platform depends on how your school connected Turnitin."
+      },
+      {
+        "kind": "step",
+        "title": "2. Check which state the indicator is in",
+        "text": "A blue indicator with 0 or a number from 20 to 100 is a finished result. An asterisk next to the percent sign means the score landed between 1 and 19 percent. Turnitin shows no number and no highlights there because results in that range are less reliable and false positives are more likely. A gray indicator with two dashes means the file was not processed, and an error icon means processing failed."
+      },
+      {
+        "kind": "step",
+        "title": "3. Read the highlights, not just the number",
+        "text": "Look at which passages are cyan or purple and whether they are long stretches of prose or short pieces. Turnitin says that in papers of only a few hundred words, the result is mostly all or nothing. The University of Melbourne advises reviewing the whole document rather than judging sentence by sentence."
+      },
+      {
+        "kind": "step",
+        "title": "4. Download the PDF to share it",
+        "text": "Students cannot see the indicator or the report. Instructors can download the report as a PDF from the button in the upper right and share it. The University of Melbourne guide says the PDF includes a cover sheet, a FAQ about the score and the highlighted essay."
+      },
+      {
+        "kind": "tip",
+        "text": "If you are a student and a teacher raises an AI score, ask to see that PDF. It shows exactly which passages were flagged, which is the only way to answer the concern line by line."
+      },
+      {
+        "kind": "heading",
+        "text": "False positives and what the score does not mean"
+      },
+      {
+        "kind": "fact",
+        "text": "Turnitin says it aims to keep its false positive rate under 1 percent for documents with more than 20 percent AI writing, and that it might flag about one in every 100 fully human documents. To hold that rate, it says it may miss around 15 percent of AI-written text, so a paper showing 50 percent could contain more. The company lists lists with little variation, text that repeats itself and paraphrasing that adds no new ideas as things that can cause false positives.",
+        "sources": [
+          0
+        ]
+      },
+      {
+        "kind": "fact",
+        "text": "Turnitin says simple spelling and grammar fixes in Grammarly are not flagged in most cases, but Grammarly's generative features and paraphrasers such as QuillBot will likely be flagged when used on AI text. It also says the score should not be the sole basis for action against a student and that Turnitin does not decide whether misconduct happened. The University of Melbourne says a high score alone is not grounds for an allegation.",
+        "sources": [
+          0,
+          2,
+          4
+        ]
+      },
+      {
+        "kind": "heading",
+        "text": "Who gets the Turnitin AI checker"
+      },
+      {
+        "kind": "fact",
+        "text": "AI detection comes with Turnitin's Originality license or as an add-on for iThenticate 2.0. Schools with only the Similarity, Feedback Studio or Originality Check products do not get it, and administrators can turn it off. Gradescope has no AI detection. Older submissions are not scored after the fact, so they would need to be submitted again.",
+        "sources": [
+          0
+        ]
+      },
+      {
+        "kind": "analysis",
+        "text": "The Turnitin AI checker is built to start a conversation, and Turnitin says so in its own documentation. The asterisk under 20 percent, the 300 word minimum and the published miss rate all show a tool tuned to avoid accusing human writers, at the cost of missing some AI text. Treat the number as a reason to look closer, never as a verdict."
+      },
+      {
+        "kind": "tip",
+        "text": "A file with fewer than 300 words of prose gets no AI score, and lists or bullet points are left out of the count, so the checker says nothing about those parts of an assignment."
+      }
+    ]
+  }
+}

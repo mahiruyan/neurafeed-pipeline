@@ -1,134 +1,5 @@
 [
   {
-    "run_at": "2026-11-19T19:03:13.094Z",
-    "summary": "Afternoon run: no open links or requests; queued a site-only article on Gemini computer use for Mac and the day's second guide (delete all ChatGPT chats). No new Reel found that we can download.",
-    "considered": [
-      {
-        "story": "Google adds computer use to the Gemini app for Mac",
-        "source": "https://thenextweb.com/news/google-gemini-mac-computer-use-multi-step-tasks",
-        "decision": "queued",
-        "job_id": "2026-11-19-gemini-mac-computer-use",
-        "priority": 2,
-        "reason": "Product news for paying subscribers; today's 2 Instagram carousels are already used, so it goes to the site only (4th site-only article today)."
-      },
-      {
-        "story": "Guide: how to delete all ChatGPT chats and clear memory",
-        "source": "https://help-lb.openai.com/en/articles/8809935-how-chat-retention-works-in-chatgpt",
-        "decision": "queued",
-        "job_id": "2026-11-19-chatgpt-delete-all-chats-guide",
-        "priority": 2,
-        "reason": "Next uncovered line in guides/plan.md with official docs (ChatGPT Atlas lines skipped because Atlas was discontinued)."
-      },
-      {
-        "story": "Official trailer for Artificial, Andrew Garfield as Sam Altman (Neon, Nov 18)",
-        "source": "https://digital.abcaudio.com/news/andrew-garfield-sam-altman-artificial-official-trailer",
-        "decision": "skipped",
-        "reason": "Good Reel candidate, but the trailer is only on YouTube, which our servers cannot download, and no X post of it was found. Mahir can send an X or Instagram link if he wants it."
-      },
-      {
-        "story": "Anthropic shares fall back below $100 after opening at $111.50; Dow drops over 1,000 points",
-        "decision": "covered",
-        "reason": "Anthropic's debut is already posted as 2026-11-19-anthropic-opens-111-nasdaq."
-      },
-      {
-        "story": "Protesters arrested outside Nasdaq during Anthropic IPO",
-        "decision": "skipped",
-        "reason": "Side story of the IPO already covered today; a third Anthropic post would crowd the feed."
-      },
-      {
-        "story": "Claude Fable 5.2 solves two open black hole physics problems",
-        "source": "https://www.anthropic.com/research/claude-black-hole-physics",
-        "decision": "skipped",
-        "reason": "Announced around November 9, ten days old."
-      },
-      {
-        "story": "Students sue after AI mistook a Doritos bag for a gun",
-        "decision": "covered",
-        "reason": "Already queued as 2026-11-19-ai-mistook-doritos-for-gun-lawsuit."
-      },
-      {
-        "story": "Gemini 4 Neon",
-        "decision": "covered",
-        "reason": "Already covered as 2026-11-18-gemini-4-neon-fourth-model."
-      },
-      {
-        "story": "DeepMind employees unionizing",
-        "source": "https://www.gdmunion.co.uk",
-        "decision": "skipped",
-        "reason": "Only the union's own site in leads, no independent news coverage found in this run; Instagram carousel quota is full."
-      },
-      {
-        "story": "Foxconn unit reportedly to assemble OpenAI's smartphone",
-        "decision": "skipped",
-        "reason": "Single regional report on a supply chain rumor; not confirmed by a second source in this run."
-      },
-      {
-        "story": "Anthropic gave $40M to an AI safety group whose candidates mostly won (Washington Post)",
-        "decision": "skipped",
-        "reason": "Paywalled and no second source read; politics angle needs care, revisit if others pick it up."
-      }
-    ],
-    "requests": []
-  },
-  {
-    "run_at": "2026-11-19T21:03:57.826Z",
-    "summary": "Late afternoon run (16:00 New York, Nov 19): no open links or requests; queued the day's third and fourth site-only guides (What is Granola AI, Gemini Nano Banana not working). No new Reel or carousel story passed the filters.",
-    "considered": [
-      {
-        "story": "Guide: What is Granola AI and how to use it for meeting notes",
-        "source": "https://docs.granola.ai/help-center/getting-started/granola-101",
-        "decision": "queued",
-        "job_id": "2026-11-19-what-is-granola-ai-guide",
-        "priority": 2
-      },
-      {
-        "story": "Guide: Gemini Nano Banana not working, fixes from Google's help pages",
-        "source": "https://support.google.com/gemini/answer/14286560",
-        "decision": "queued",
-        "job_id": "2026-11-19-gemini-nano-banana-not-working-guide",
-        "priority": 2
-      },
-      {
-        "story": "Guide: How to use Sora",
-        "decision": "skipped",
-        "reason": "OpenAI discontinued the Sora app in March 2026, so a how-to guide would mislead; took the next plan line instead."
-      },
-      {
-        "story": "Chinese AI models carry fingerprints of export-banned Nvidia Blackwell chips (Scientific American)",
-        "source": "https://techcrunch.com/2026/11/13/export-banned-nvidia-chips-are-behind-chinas-most-powerful-ai-models-uh-oh-jensen/",
-        "decision": "skipped",
-        "reason": "The research was reported from November 13, close to the China and Nvidia stories already covered on Nov 17."
-      },
-      {
-        "story": "Chrome's built-in AI model eats bandwidth and storage (Hacker News blog post)",
-        "source": "https://perishablepress.com/chrome-ai-wasting-much-bandwidth/",
-        "decision": "skipped",
-        "reason": "A personal blog post; the 4GB Chrome model reports found are older and no fresh news coverage was read."
-      },
-      {
-        "story": "Dow drops over 1,000 points as Anthropic's debut fails to lift AI stocks (Reuters)",
-        "decision": "covered",
-        "reason": "Anthropic's debut is already posted as 2026-11-19-anthropic-opens-111-nasdaq."
-      },
-      {
-        "story": "Anthropic gave $40M to an AI safety group whose candidates mostly won (Washington Post)",
-        "decision": "skipped",
-        "reason": "Paywalled, still no second source read."
-      },
-      {
-        "story": "Artificial trailer, Andrew Garfield as Sam Altman, and Altman's reaction (Benzinga)",
-        "decision": "skipped",
-        "reason": "Trailer only found on YouTube, which our servers cannot download; no X copy confirmed."
-      },
-      {
-        "story": "Reel search",
-        "decision": "skipped",
-        "reason": "Reddit leads are empty and X and most news sites cannot be opened from this run, so no clip could be checked; Nov 19 still has only 1 Reel."
-      }
-    ],
-    "requests": []
-  },
-  {
     "run_at": "2026-11-19T23:04:31.412Z",
     "summary": "Evening run (18:00 New York, Nov 19): no open links or requests; queued the day's fifth and sixth site-only guides (Claude not working, How to use Consensus AI). Nov 19 already has 3 Instagram carousels and 4 site-only news articles, and no downloadable Reel was found.",
     "considered": [
@@ -5150,6 +5021,69 @@
         "story": "Reel videos",
         "decision": "skipped",
         "reason": "Reddit leads are still empty and X posts cannot be opened from this run; the digests linked no usable clip."
+      }
+    ],
+    "requests": []
+  },
+  {
+    "run_at": "2026-11-26T21:03:58.367Z",
+    "summary": "16:00 NY run (Nov 26, Thanksgiving): no open links or requests; queued guides five and six of the day (Scite AI literature review, Turnitin AI checker). Both carousel slots and all 4 site-only news slots for today were already used, no new priority 1 story surfaced, and no Reel video could be checked.",
+    "considered": [
+      {
+        "story": "Guide: How to use Scite AI for a literature review (guides/plan.md tool library, next readable line after Udio vs Suno and ChatPDF)",
+        "source": "https://scite.ai/getting-started",
+        "decision": "queued",
+        "job_id": "2026-11-26-how-to-use-scite-ai-literature-review-guide",
+        "priority": 2
+      },
+      {
+        "story": "Guide: How Turnitin's AI checker works (guides/plan.md tool library)",
+        "source": "https://www.turnitin.com/products/features/ai-writing-detection/",
+        "decision": "queued",
+        "job_id": "2026-11-26-turnitin-ai-checker-how-it-works-guide",
+        "priority": 2,
+        "reason": "Written without the planned Turnitin vs GPTZero comparison: GPTZero's site could not be opened this run, so that part would have rested on unread sources. Turnitin card images come from its FAQ page; if they fail to download the render may lack inner pictures."
+      },
+      {
+        "story": "Guide: Udio vs Suno",
+        "decision": "skipped",
+        "reason": "Not attempted this run; Scite and Turnitin docs were readable in full, Udio vs Suno stays next in line."
+      },
+      {
+        "story": "Guide: How to use ChatPDF for free",
+        "decision": "skipped",
+        "reason": "ChatPDF's pages could not be opened in the previous run; not retried."
+      },
+      {
+        "story": "OpenAI cuts GPT-6.2 usage: Astra hits limits about 40% faster, Sol 25% (Hacker News, X post by Codex lead)",
+        "source": "https://twitter.com/thsottiaux/status/2125784147889393806",
+        "decision": "skipped",
+        "reason": "Mostly a Codex and power user limits story, the X post cannot be opened from here, and today's carousel and site-only slots are full; candidate for Nov 27 if it spreads to normal ChatGPT users."
+      },
+      {
+        "story": "SAP looks to cut another 10,000 jobs in an AI-driven restructuring (Calcalist via RSS)",
+        "decision": "skipped",
+        "reason": "Single small source in the feed and both carousel slots for today are used; candidate for Nov 27 if Reuters or Bloomberg confirm."
+      },
+      {
+        "story": "The New York Times warns photographers not to update Photoshop over AI features (The Verge)",
+        "decision": "skipped",
+        "reason": "Still a candidate everyone story, but both carousel slots for today are used."
+      },
+      {
+        "story": "Character.AI plans to auction user chats; 42 state AGs object (TechCrunch)",
+        "decision": "skipped",
+        "reason": "Strong scandal carousel held for Nov 27, before the Dec 1 auction; today's carousel slots are full."
+      },
+      {
+        "story": "Google researchers use Gemini 4 to prove the Hadwiger conjecture (OfficeChai)",
+        "decision": "skipped",
+        "reason": "Math research story in the same week as the Cogentic six papers job; site-only slots are full."
+      },
+      {
+        "story": "Reel videos",
+        "decision": "skipped",
+        "reason": "Reddit leads are still empty and X posts cannot be opened from this run, so no clip could be checked against the Reel filter. Today has no Reels."
       }
     ],
     "requests": []
