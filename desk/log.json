@@ -5087,5 +5087,50 @@
       }
     ],
     "requests": []
+  },
+  {
+    "run_at": "2026-11-26T23:01:31.798Z",
+    "summary": "18:00 NY run (Nov 26, Thanksgiving): no open links or requests; queued the GPT-6.2 billing mistake story as a priority 1 carousel (third Instagram carousel today under the priority 1 exception). Site-only and guide slots for today were already full.",
+    "considered": [
+      {
+        "story": "OpenAI fixes GPT-6.2 billing mistake, users hit limits 40% faster on Astra and 25% on Sol, one banked reset",
+        "source": "https://thenextweb.com/news/openai-billing-mistake-gpt-6-2-usage-limits",
+        "decision": "queued",
+        "job_id": "2026-11-26-chatgpt-gpt-6-2-billing-mistake-limits",
+        "priority": 1
+      },
+      {
+        "story": "SAP weighs cutting at least 10,000 jobs in AI restructuring",
+        "decision": "skipped",
+        "reason": "Both regular Instagram carousel slots for today are used and SAP is not a priority 1 company; worth a look tomorrow if it is confirmed."
+      },
+      {
+        "story": "New York Times warns photographers not to update Photoshop over AI features",
+        "source": "https://www.theverge.com/ai-artificial-intelligence/1041227/the-new-york-times-warns-photographers-not-to-update-photoshop-over-ai-features",
+        "decision": "skipped",
+        "reason": "Carousel slots full today and no second source read yet."
+      },
+      {
+        "story": "OpenAI Codex helps amateur astronomer find two possible planets",
+        "decision": "skipped",
+        "reason": "All 4 site-only news slots for today are used and only one crypto outlet covered it in leads."
+      },
+      {
+        "story": "Google Gemini 4 solver writes proof of the Hadwiger conjecture",
+        "decision": "skipped",
+        "reason": "Insider math news; today's site-only slots are full and Google math work was already covered today."
+      },
+      {
+        "story": "Alphabet investor class action over Gemini 3.5 Pro delay claims",
+        "decision": "skipped",
+        "reason": "Proposed lawsuit from a stock news wire only; no second source read."
+      },
+      {
+        "story": "Reel videos for today",
+        "decision": "skipped",
+        "reason": "No video in today's stories passed the Reel filter, and X posts could not be opened from this run."
+      }
+    ],
+    "requests": []
   }
 ]
