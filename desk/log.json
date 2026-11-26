@@ -5032,5 +5032,73 @@
       }
     ],
     "requests": []
+  },
+  {
+    "run_at": "2026-11-26T15:04:18.202Z",
+    "summary": "10:00 NY run (Nov 26): no open links or requests; queued the second guide of the day (NotebookLM vs Gemini). Both Instagram carousel slots and all 4 site-only news slots for today were already used, no new priority 1 story was found, and no Reel video could be opened.",
+    "considered": [
+      {
+        "story": "Guide: NotebookLM vs Gemini (guides/plan.md Tier 2, next usable line after Krea)",
+        "source": "https://support.google.com/notebooklm/answer/17003757?hl=en",
+        "decision": "queued",
+        "job_id": "2026-11-26-notebooklm-vs-gemini-guide",
+        "priority": 2
+      },
+      {
+        "story": "Guide plan line: ChatGPT image limit / ChatGPT error in message stream",
+        "decision": "skipped",
+        "reason": "OpenAI's help center does not document the numbers or the fix; only forum posts and blogs, so the guide would rest on unofficial claims."
+      },
+      {
+        "story": "EA Sports FC 27 adds an AI recreated John Motson commentary voice (BBC, EA)",
+        "source": "https://www.bbc.co.uk/news/articles/c65y10j841jpo",
+        "decision": "skipped",
+        "reason": "Mostly a UK football story and both carousel slots for today are used; no clip could be opened for a Reel."
+      },
+      {
+        "story": "Character.AI plans to auction chats from 21M US accounts; 42 state AGs object (TechCrunch)",
+        "source": "https://techcrunch.com/2026/11/25/state-ags-fight-character-ais-plan-to-auction-off-users-private-chats/",
+        "decision": "skipped",
+        "reason": "Strong scandal carousel, but both carousel slots for today are used; candidate for Nov 27 before the Dec 1 auction."
+      },
+      {
+        "story": "OpenAI tests Private Inference for sensitive enterprise data (The Decoder)",
+        "source": "https://the-decoder.com/openai-wants-companies-to-trust-it-with-sensitive-work-by-promising-not-to-look-at-their-data/",
+        "decision": "skipped",
+        "reason": "Enterprise insider feature in alpha, and today's 4 site-only article slots are full."
+      },
+      {
+        "story": "Amazon and Meta in talks to lift Amazon's block on the Muse agent",
+        "decision": "skipped",
+        "reason": "Already considered and skipped in earlier runs; still talks, no deal."
+      },
+      {
+        "story": "Nvidia falls 3.9% and S&P warns of a credit downgrade after Huang's return (AP)",
+        "source": "https://www.bnnbloomberg.ca/markets/2026/11/26/global-stocks-rise-and-tech-shares-rebound-as-us-closes-for-thanksgiving/",
+        "decision": "skipped",
+        "reason": "Huang fallout already covered this week; only one source on the S&P move."
+      },
+      {
+        "story": "Musk pledges SpaceX shares to every US child",
+        "decision": "skipped",
+        "reason": "Pledge is from October 19, not new."
+      },
+      {
+        "story": "AI news digests for Nov 26 (The Neuron, Techmeme)",
+        "decision": "skipped",
+        "reason": "Both pages failed to load; Kill The AI's Nov 26 list was read instead."
+      },
+      {
+        "story": "Reel videos",
+        "decision": "skipped",
+        "reason": "Reddit leads are still empty and X posts cannot be opened from this run, so no video could be checked against the Reel filter."
+      },
+      {
+        "story": "Situational Awareness 65% loss / Tim Sweeney vs Claude / Skills over MCP / MedChemBench / Cogentic / Nvidia Southeast Asia halt / Krea guide",
+        "decision": "covered",
+        "reason": "Already queued earlier today."
+      }
+    ],
+    "requests": []
   }
 ]
