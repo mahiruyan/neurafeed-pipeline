@@ -1,63 +1,5 @@
 [
   {
-    "run_at": "2026-11-20T02:56:22.840Z",
-    "summary": "Late night run (22:00 New York, Nov 19): no open links or requests; queued one carousel for the Nov 20 morning window (Meta Muse agent mishaps, Reuters). Nov 19 site-only and guide quotas are full; no downloadable Reel found.",
-    "considered": [
-      {
-        "story": "Meta employees say Muse AI agent booked an Airbnb without permission, surfaced bank balances that were not theirs and read Signal notifications (Reuters)",
-        "source": "https://ca.finance.yahoo.com/news/meta-bets-big-muse-ai-111131311.html",
-        "decision": "queued",
-        "job_id": "2026-11-20-meta-muse-airbnb-bank-balances",
-        "priority": 2,
-        "reason": "Strange AI behavior plus money from a familiar company; skipped earlier for the Nov 19 cap, so queued as timely false for the Nov 20 morning window, Reuters read via Yahoo plus PYMNTS."
-      },
-      {
-        "story": "Anthropic's 7 founders cashed out nearly $2B in the IPO (TechCrunch)",
-        "source": "https://techcrunch.com/2026/11/19/anthropics-7-founders-cashed-out-nearly-2b-in-record-breaking-ipo/",
-        "decision": "covered",
-        "reason": "The founders' share sales are already covered in 2026-11-18-anthropic-ipo-priced-83 and 2026-11-19-anthropic-opens-111-nasdaq."
-      },
-      {
-        "story": "Anthropic IPO turns researchers into overnight millionaires; SoftBank falls 16% in Asian AI sell-off",
-        "decision": "covered",
-        "reason": "Same Anthropic IPO story, already posted twice."
-      },
-      {
-        "story": "Claude solves two open problems in black hole physics (Anthropic research, on Hacker News)",
-        "source": "https://www.anthropic.com/research/claude-black-hole-physics",
-        "decision": "skipped",
-        "reason": "Coverage dates to November 9 to 10, so it is not new news."
-      },
-      {
-        "story": "Apple may be developing its own AI agent that runs your Mac (TechCrunch)",
-        "source": "https://techcrunch.com/2026/11/19/apple-may-be-developing-its-own-ai-agent-that-runs-your-mac/",
-        "decision": "skipped",
-        "reason": "Unconfirmed report fit for site-only, but Nov 19 already has 4 site-only articles; worth checking in a Nov 20 run."
-      },
-      {
-        "story": "OpenAI tests ChatGPT dots with Plus users (9to5Mac)",
-        "decision": "skipped",
-        "reason": "Small product test for insiders, and the site-only cap for Nov 19 is used; candidate for Nov 20."
-      },
-      {
-        "story": "Google homepage gets its biggest AI change in years (Android Police)",
-        "decision": "skipped",
-        "reason": "Not read in this run; candidate for a Nov 20 run once confirmed by a second source."
-      },
-      {
-        "story": "DeepMind employees are unionising (gdmunion.co.uk, Hacker News)",
-        "decision": "skipped",
-        "reason": "Only the union's own site seen, no news source read."
-      },
-      {
-        "story": "Reel search",
-        "decision": "skipped",
-        "reason": "Reddit leads still return HTTP 403 and this run cannot open X or download images, so no clip could be checked."
-      }
-    ],
-    "requests": []
-  },
-  {
     "run_at": "2026-11-20T05:02:23.494Z",
     "summary": "Midnight run (Nov 20 New York): no open links or requests; queued 2 site-only articles (Apple Mac agent job listing, ChatGPT dots for Plus users); no Reel or new carousel found.",
     "considered": [
@@ -5118,6 +5060,55 @@
         "story": "Reel videos",
         "decision": "skipped",
         "reason": "Reddit leads are still empty and X posts cannot be opened from this run, so no clip could be checked against the Reel filter."
+      }
+    ],
+    "requests": []
+  },
+  {
+    "run_at": "2026-11-27T04:56:43.377Z",
+    "summary": "Midnight NY run (Nov 26 to 27): no open links or requests; queued the Character.AI chat auction story as a sensitive carousel for the Nov 27 morning windows (needs Mahir's approval).",
+    "considered": [
+      {
+        "story": "42 state AGs move to block Character.AI's Dec 1 auction of chats from 21M US accounts",
+        "source": "https://gizmodo.com/character-ai-wants-to-sell-millions-of-user-chats-to-the-highest-bidder-2000845664",
+        "decision": "queued",
+        "job_id": "2026-11-27-character-ai-chat-auction-states",
+        "priority": 2
+      },
+      {
+        "story": "They pledged to give away 10% of their income, now they are AI billionaires (WSJ) / Anthropic staff pledges (BigGo)",
+        "decision": "skipped",
+        "reason": "WSJ is paywalled here and the second source is a small aggregator; the Anthropic giving pledge was covered on Oct 14."
+      },
+      {
+        "story": "Wall Street flips from AI euphoria to gloom (Bloomberg)",
+        "decision": "skipped",
+        "reason": "Paywalled market piece with no single concrete event; left for the Nov 27 day runs."
+      },
+      {
+        "story": "FCC authorizes SpaceX to deploy 1 million satellites for AI data centers in space",
+        "decision": "skipped",
+        "reason": "Only a local TV item in leads; still waiting for Reuters or AP confirmation, candidate for Nov 27."
+      },
+      {
+        "story": "SoftBank default risk hits a four-year high over debt-funded AI bets",
+        "decision": "skipped",
+        "reason": "Single small outlet; candidate for a money carousel if Bloomberg or Reuters confirm."
+      },
+      {
+        "story": "Japan's JERA in talks with Anthropic and Meta to build data centers (Nikkei via Arab News)",
+        "decision": "skipped",
+        "reason": "Insider infrastructure talks based on one Nikkei report; site-only candidate for Nov 27."
+      },
+      {
+        "story": "AI agents now control part of DeepMind's compute for Gemini experiments (The Decoder)",
+        "decision": "skipped",
+        "reason": "Insider research story, already passed on in earlier runs."
+      },
+      {
+        "story": "Reel videos",
+        "decision": "skipped",
+        "reason": "Reddit leads are empty and X posts cannot be opened from this run, so no clip could be checked against the Reel filter."
       }
     ],
     "requests": []
