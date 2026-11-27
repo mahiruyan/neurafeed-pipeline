@@ -5074,5 +5074,52 @@
       }
     ],
     "requests": []
+  },
+  {
+    "run_at": "2026-11-27T02:54:23.409Z",
+    "summary": "22:00 NY run (Nov 26, Thanksgiving): no open links or requests and nothing queued. Today already has 3 Instagram carousels (one under the priority 1 exception), 4 site-only news articles and 6 guides, the last posting window closes at 22:00, and no new priority 1 story surfaced.",
+    "considered": [
+      {
+        "story": "California sues OpenAI as a public nuisance (Mashable via RSS)",
+        "decision": "covered",
+        "reason": "Same Nov 16 lawsuit, already queued as 2026-11-16-california-sues-openai-rogue-agents."
+      },
+      {
+        "story": "Early testers showcase Claude Opus 5.6 animations (X via Google News)",
+        "decision": "skipped",
+        "reason": "No Anthropic announcement found; search shows only speculation pages about a routing signal, so there is no real launch to report."
+      },
+      {
+        "story": "They pledged to give away 10% of their income, now they are AI billionaires (WSJ)",
+        "decision": "skipped",
+        "reason": "WSJ is paywalled here and the Anthropic giving pledge angle was already covered on Oct 14; candidate for Nov 27 if a readable second source appears."
+      },
+      {
+        "story": "FCC authorizes SpaceX to deploy 1 million satellites for AI data centers in space (WBTV)",
+        "decision": "skipped",
+        "reason": "Not opened this run; today's carousel and site-only slots are full. Candidate for Nov 27 if Reuters or AP confirm."
+      },
+      {
+        "story": "AI agents now control part of DeepMind's compute for Gemini experiments (The Decoder, Hacker News)",
+        "decision": "skipped",
+        "reason": "Insider research story and today's site-only slots are full."
+      },
+      {
+        "story": "SoftBank default risk hits a four-year high over debt-funded AI bets (economy.ac)",
+        "decision": "skipped",
+        "reason": "Single small outlet; could be a money carousel on Nov 27 if Bloomberg or Reuters confirm."
+      },
+      {
+        "story": "Character.AI plans to auction user chats; 42 state AGs object (TechCrunch)",
+        "decision": "skipped",
+        "reason": "Still held for the Nov 27 morning runs as a scandal carousel, before the Dec 1 auction."
+      },
+      {
+        "story": "Reel videos",
+        "decision": "skipped",
+        "reason": "Reddit leads are still empty and X posts cannot be opened from this run, so no clip could be checked against the Reel filter."
+      }
+    ],
+    "requests": []
   }
 ]
