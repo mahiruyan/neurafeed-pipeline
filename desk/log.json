@@ -1,123 +1,5 @@
 [
   {
-    "run_at": "2026-11-20T17:04:38.952Z",
-    "summary": "Midday run (noon New York, Nov 20): no open links or requests; queued the California AG subpoena of Nvidia (priority 1, site-only and sensitive because today's 2 Instagram carousels are already used) and the third guide of the day (How to use OpenClaw). No Reel passed the filter.",
-    "considered": [
-      {
-        "story": "California AG Rob Bonta serves Nvidia an investigative subpoena over Jensen Huang's affair and China chip risks",
-        "source": "https://abcnews.com/Technology/wireStory/california-attorney-general-subpoenas-nvidia-chips-former-ceos-138308129",
-        "decision": "queued",
-        "job_id": "2026-11-20-california-ag-subpoenas-nvidia",
-        "priority": 1,
-        "reason": "New turn in the week's biggest story, read in AP (ABC, NBC LA) and Newsweek. Site-only and sensitive because today's 2 Instagram carousels are taken and the story is over 12 hours old; Mahir can still choose to post it."
-      },
-      {
-        "story": "Guide: How to use OpenClaw (tool library line)",
-        "source": "https://docs.openclaw.ai/start/getting-started",
-        "decision": "queued",
-        "job_id": "2026-11-20-how-to-use-openclaw-guide",
-        "priority": 2,
-        "reason": "Third guide today, alternating back to the tool library; official docs read from the npm package (v2026.11.6) plus Malwarebytes for the safety side."
-      },
-      {
-        "story": "Guide: How to use Grok Imagine / ChatGPT agent mode",
-        "decision": "skipped",
-        "reason": "Same blockers as earlier runs (no xAI app docs, OpenAI help center unreachable)."
-      },
-      {
-        "story": "NYT report on Jensen Huang's management style built on fear (via TechCrunch)",
-        "source": "https://techcrunch.com/2026/11/20/behind-jensen-huangs-exit-questions-about-a-management-style-reportedly-built-on-fear/",
-        "decision": "skipped",
-        "reason": "Second Huang angle in one run; the subpoena is the harder news, and only a short summary was available, not the NYT original."
-      },
-      {
-        "story": "Nvidia in talks to buy diffusion model startup Inception for $500M+ (The Information)",
-        "decision": "skipped",
-        "reason": "Paywalled single source and insider deal news; site-only articles for today are already above 4."
-      },
-      {
-        "story": "Asian chip stocks fall after Anthropic IPO; VC winners Iconiq, Menlo, Lightspeed",
-        "decision": "covered",
-        "reason": "Anthropic IPO already posted twice (2026-11-18-anthropic-ipo-priced-83, 2026-11-19-anthropic-opens-111-nasdaq)."
-      },
-      {
-        "story": "Commerce approved 879,000 AI chips for Chinese firms (CNBC)",
-        "decision": "skipped",
-        "reason": "Judged in earlier runs: conflicting figures and the China chip angle ran on November 17."
-      },
-      {
-        "story": "Character.AI IP sale to Disney contested by state AGs",
-        "decision": "skipped",
-        "reason": "Only seen in an aggregator; site-only slots for the day are already used."
-      },
-      {
-        "story": "Reel search: robot and gadget clips (Lume lamp robot folding laundry)",
-        "source": "https://e.vnexpress.net/news/tech/tech-news/robot-disguised-as-bedside-lamp-goes-viral-for-folding-laundry-4921748.html",
-        "decision": "skipped",
-        "reason": "Clip is from August 2025 and its creator said it is a CGI render; no fresh clip on X or a company site passing Which Reels travel was found, and Reddit leads are empty."
-      }
-    ],
-    "requests": []
-  },
-  {
-    "run_at": "2026-11-20T19:04:44.109Z",
-    "summary": "Early afternoon run (14:00 New York, Nov 20): no open links or requests; queued the Anthropic mathematician's Riemann Hypothesis claim (priority 1, Instagram carousel as the day's priority 1 exception) and the fourth guide of the day (How to use Gemini Tasks, site-only). No Reel passed the filter.",
-    "considered": [
-      {
-        "story": "Anthropic mathematician Levent Alpöge says he and Claude found a proof of the Riemann Hypothesis",
-        "source": "https://www.bnnbloomberg.ca/business/artificial-intelligence/2026/11/20/anthropic-researcher-says-claude-solved-maths-greatest-riddle/",
-        "decision": "queued",
-        "job_id": "2026-11-20-anthropic-mathematician-riemann-proof-claude",
-        "priority": 1,
-        "reason": "The story the whole AI world is discussing today (top of Hacker News, WSJ, Washington Post, AFP); read AFP and Kingy AI. Framed clearly as an unverified claim. Posted on Instagram as a priority 1 exception even though today's carousels are already at 3."
-      },
-      {
-        "story": "Guide: How to use Gemini Tasks (now free in the US)",
-        "source": "https://support.google.com/gemini/answer/17094507?hl=en",
-        "decision": "queued",
-        "job_id": "2026-11-20-how-to-use-gemini-tasks-guide",
-        "priority": 2,
-        "reason": "Fourth guide today; hot tool this week, Google's help center plus Android Central, Inc. and Android Authority read."
-      },
-      {
-        "story": "Trump says he will penalize US tech companies that build AI data centers abroad (AP)",
-        "decision": "skipped",
-        "reason": "Only seen as AP headlines in leads and could not be read in this run; strong politics candidate for a later run."
-      },
-      {
-        "story": "Anthropic stock slides toward its IPO price, Nasdaq erases its gains for the year",
-        "decision": "covered",
-        "reason": "Anthropic IPO already posted twice (2026-11-18-anthropic-ipo-priced-83, 2026-11-19-anthropic-opens-111-nasdaq); the Riemann post mentions IPO week."
-      },
-      {
-        "story": "Frostbite: a CPU architecture designed and verified by AI (Hacker News)",
-        "decision": "skipped",
-        "reason": "Company blog only, insider hardware news, and site-only articles for today are already above 4."
-      },
-      {
-        "story": "Gemini 4 Neon tops the Models Engineering Index (Hacker News)",
-        "decision": "skipped",
-        "reason": "Benchmark news only insiders follow; Gemini 4 Neon was covered on November 18."
-      },
-      {
-        "story": "OpenAI says its models improved AMD's GPU design by up to 14% (Forbes)",
-        "decision": "skipped",
-        "reason": "Insider hardware story; site-only slots for today are full."
-      },
-      {
-        "story": "Watch Duty uses Gemini to flag wildfire dispatches in under 30 seconds",
-        "decision": "skipped",
-        "reason": "Only secondary write-ups in leads; site-only slots for today are full."
-      },
-      {
-        "story": "Reel search",
-        "decision": "skipped",
-        "reason": "X and Reddit cannot be read from this run (Reddit leads return 403) and no fresh clip on a company site passed Which Reels travel."
-      }
-    ],
-    "requests": []
-  },
-  {
     "run_at": "2026-11-20T21:03:38.568Z",
     "summary": "Late afternoon run (16:00 New York, Nov 20): no open links or requests; queued the fifth and sixth website guides of the day (Gemini Nano Banana prompts, How to use Luma Dream Machine), both site-only. Instagram carousels for the day are already past 2 and no new priority 1 story or Reel video was found.",
     "considered": [
@@ -5122,6 +5004,89 @@
         "story": "OpenAI cuts GPT-6.2 usage limits",
         "decision": "covered",
         "reason": "Already queued as 2026-11-26-chatgpt-gpt-6-2-billing-mistake-limits."
+      }
+    ],
+    "requests": []
+  },
+  {
+    "run_at": "2026-11-27T19:06:31.461Z",
+    "summary": "14:00 NY run (Nov 27): no open links or requests; queued the priority 1 Bloomberg scoop on a Nvidia Blackwell rack at Alice Huang-linked Shanghai site (sensitive, waits for Mahir) and the day's third guide (QuillBot vs Grammarly, site only). No Reel clip passed the filter.",
+    "considered": [
+      {
+        "story": "Nvidia GB300 Blackwell rack pledged for a $14M loan at Shanghai data center tied to Alice Huang (Bloomberg)",
+        "source": "https://finance.yahoo.com/technology/articles/nvidia-blackwell-chips-turn-china-114546617.html",
+        "decision": "queued",
+        "job_id": "2026-11-27-nvidia-blackwell-rack-shanghai-alice-huang",
+        "priority": 1,
+        "reason": "New turn in the Nvidia and Alice Huang scandal, read in Bloomberg, The Next Web and Anadolu; third carousel of the day under the priority 1 exception, marked sensitive."
+      },
+      {
+        "story": "Guide: QuillBot vs Grammarly (next Tool library line after ChatPDF and Arcads)",
+        "source": "https://www.grammarly.com/plans",
+        "decision": "queued",
+        "job_id": "2026-11-27-quillbot-vs-grammarly-guide",
+        "priority": 2,
+        "reason": "Official QuillBot and Grammarly pages could be read this run; site-only guide."
+      },
+      {
+        "story": "Guide: How to use ChatPDF / Arcads AI",
+        "decision": "skipped",
+        "reason": "Vendor pages not tried again this run; QuillBot vs Grammarly had readable official pages."
+      },
+      {
+        "story": "Viral clip: Russian store humanoid robot kicks man after a push",
+        "source": "https://vt.co/news/world/humanoid-robot-lashing-out-customer",
+        "decision": "skipped",
+        "reason": "Clip is from early September and may be staged or AI-made; not fresh and authenticity unclear."
+      },
+      {
+        "story": "Apple pulls MiniMax's Talkie chatbot from the App Store over child safety",
+        "source": "https://9to5mac.com/2026/11/25/apple-pulls-popular-chinese-ai-chatbot-from-the-app-store-amid-child-safety-concerns/",
+        "decision": "skipped",
+        "reason": "From November 25, older than 12 hours, and today's carousel slots are full."
+      },
+      {
+        "story": "AI stocks rebound after Thanksgiving (Nvidia up 4.7% premarket)",
+        "source": "https://nglobenews.com/en/article/us-stock-futures-surge-nasdaq-ai-rebound-2026-11-27",
+        "decision": "skipped",
+        "reason": "Market move of the day, weak for Instagram and the site-only cap of 4 is used."
+      },
+      {
+        "story": "German consumer group sues OpenAI over ChatGPT cancellation and price clauses",
+        "source": "https://pasqualepillitteri.it/en/news/36841/openai-sued-in-germany-over-chatgpt-cancellation-and-price",
+        "decision": "skipped",
+        "reason": "Filed November 23, one secondary source, little US interest."
+      },
+      {
+        "story": "OpenAI OpenWorks pays local AI experts up to $8,000 a month in 20 US cities",
+        "source": "https://openai.com/openworks/",
+        "decision": "skipped",
+        "reason": "Not new today and the site-only cap is reached; possible later money angle."
+      },
+      {
+        "story": "ElevenLabs in funding talks at a $33B valuation",
+        "decision": "skipped",
+        "reason": "Funding news for insiders, site-only cap reached."
+      },
+      {
+        "story": "Reel videos for the day",
+        "decision": "skipped",
+        "reason": "No Reddit leads and no fresh X clip found that passes the Reels filter; X posts cannot be opened from this run."
+      },
+      {
+        "story": "Anthropic rewrote its Messages API in Rust with Claude",
+        "decision": "covered",
+        "reason": "Already queued as 2026-11-27-anthropic-claude-rewrote-api-rust."
+      },
+      {
+        "story": "FCC authorizes SpaceX to deploy 1 million AI satellites",
+        "decision": "covered",
+        "reason": "Already queued as 2026-11-27-spacex-fcc-million-satellites."
+      },
+      {
+        "story": "Nvidia halts AI server shipments to Southeast Asia",
+        "decision": "covered",
+        "reason": "Already queued as 2026-11-26-nvidia-halts-servers-southeast-asia."
       }
     ],
     "requests": []
