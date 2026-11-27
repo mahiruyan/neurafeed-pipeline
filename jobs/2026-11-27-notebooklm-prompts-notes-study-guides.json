@@ -1,0 +1,275 @@
+{
+  "id": "2026-11-27-notebooklm-prompts-notes-study-guides",
+  "format": "utility",
+  "site_only": true,
+  "created_at": "2026-11-27T15:20:00Z",
+  "story_time": "2026-11-27T15:20:00Z",
+  "timely": false,
+  "sensitive": false,
+  "priority": 2,
+  "sources": [
+    {
+      "name": "Gemini Notebook Help: Use chat in Gemini Notebook",
+      "url": "https://support.google.com/gemininotebook/answer/16179559?hl=en"
+    },
+    {
+      "name": "Gemini Notebook Help: Generate Audio Overview",
+      "url": "https://support.google.com/gemininotebook/answer/16212820?hl=en"
+    },
+    {
+      "name": "Gemini Notebook Help: Create a notebook",
+      "url": "https://support.google.com/gemininotebook/answer/16206563?hl=en"
+    },
+    {
+      "name": "Google Blog: 6 ways to use NotebookLM to master any subject",
+      "url": "https://blog.google/technology/google-labs/notebooklm-student-features/"
+    },
+    {
+      "name": "Geekflare",
+      "url": "https://geekflare.com/news/notebooklm-prompts-you-can-use-right-now-for-better-summaries/"
+    }
+  ],
+  "caption": "Ten NotebookLM prompts for notes and study guides, built on Google's own help pages.\nNotebookLM answers only from your files, so point it at them and ask for citations.\nThe full guide is on neurafeedai.com.\n\nWhat do you use NotebookLM for most?\n\nFollow @neurafeed.ai for daily AI news.\n\nSource: Gemini Notebook Help · Photo: Google",
+  "threads_text": "NotebookLM only answers from the files you give it, so vague prompts get vague notes. Ask for a briefing with citations, a quiz one question at a time, or a timeline, and it gets useful fast. What do you use NotebookLM for most?",
+  "slides": [
+    {
+      "kind": "cover",
+      "headline": "10 *NotebookLM prompts* for better notes and study guides",
+      "image": {
+        "url": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/NotebookLM0908_Social.width-1300.png",
+        "credit": "Google",
+        "fallback_urls": [
+          "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/NotebookLM-Tips_Hero.width-1300.png"
+        ]
+      },
+      "pos": "center center",
+      "badges": [
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Google_%22G%22_logo.svg/500px-Google_%22G%22_logo.svg.png",
+          "fit": "contain"
+        }
+      ]
+    },
+    {
+      "kind": "prompt",
+      "heading": "1. A one page *briefing*",
+      "paras": [
+        "Start every new notebook with this.",
+        "The disagreements line shows what to read yourself."
+      ],
+      "prompt": "Using only my sources, give me a one page briefing on [topic]: main idea, five key facts, where sources disagree. Cite every point."
+    },
+    {
+      "kind": "prompt",
+      "heading": "2. Notes to *action items*",
+      "paras": [
+        "For meeting notes.",
+        "It flags actions with no owner."
+      ],
+      "prompt": "List every decision and action item in my notes, with owner and deadline if given. Mark the ones that have neither."
+    },
+    {
+      "kind": "prompt",
+      "heading": "3. A *study guide*",
+      "paras": [
+        "Or use Reports in the Studio panel.",
+        "Export it to Google Docs."
+      ],
+      "prompt": "Create a study guide from my sources for [exam]: key terms with one line definitions, main ideas in order, five questions."
+    },
+    {
+      "kind": "prompt",
+      "heading": "4. *Quiz me*",
+      "paras": [
+        "Best with the Learning Guide chat style on.",
+        "It quotes the passage behind each answer."
+      ],
+      "prompt": "Quiz me on [topic] using only my sources. One question at a time, then tell me if I was right and quote the passage."
+    },
+    {
+      "kind": "prompt",
+      "heading": "5. Steer the *podcast*",
+      "paras": [
+        "Type it in the Audio Overview prompt box.",
+        "Pick Shorter, Default or Longer."
+      ],
+      "prompt": "Focus only on [topics] for my exam, skip the background, and end with the three ideas most likely to be tested."
+    },
+    {
+      "kind": "cta",
+      "hook": "Follow for plain guides to the AI tools you already use."
+    }
+  ],
+  "site_article": {
+    "kind": "guide",
+    "headline": "NotebookLM prompts: 10 to copy for better notes and study guides",
+    "dek": "Ten copy and paste prompts for NotebookLM, now called Gemini Notebook, built on Google's own help pages: briefings, action items, study guides, quizzes and Audio Overviews.",
+    "summary": "Ten NotebookLM prompts for notes and study guides. Each one points the model at your sources, asks for structure and asks for citations, and two use Configure Chat and the Audio Overview prompt box.",
+    "seo_title": "NotebookLM prompts: 10 to copy for notes and study guides",
+    "seo_description": "10 NotebookLM prompts to copy: briefings, action items, tables, study guides, quizzes, timelines, Audio Overview focus and a Custom tutor role for chat.",
+    "answer_summary": "Good NotebookLM prompts tell it to use only your sources, ask for a clear structure (a briefing, a table, a timeline, a quiz) and ask for citations. Set the chat style in Configure Chat and steer Audio Overviews with the prompt box in Studio.",
+    "tags": [
+      "NotebookLM",
+      "Gemini Notebook",
+      "Google",
+      "Prompts",
+      "Guides"
+    ],
+    "hero_alt": "Google promotional graphic for NotebookLM.",
+    "paragraphs": [
+      {
+        "kind": "fact",
+        "text": "These NotebookLM prompts turn a pile of readings, slides or meeting notes into notes and study guides you can actually use. NotebookLM is now called Gemini Notebook in Google's help pages, but it works the same way: you add sources, and the chat answers only from those sources, with citations you can click to check the quote in context.",
+        "sources": [
+          0,
+          2
+        ]
+      },
+      {
+        "kind": "fact",
+        "text": "That last part is why prompts matter here. Google's help page says chat responses only use data from your sources, and a request it cannot ground in them may get the reply that Gemini Notebook can't answer the question. So the best prompts point it at your files, ask for structure, and ask for citations. Below are ten to copy, with [brackets] for your details.",
+        "sources": [
+          0
+        ]
+      },
+      {
+        "kind": "heading",
+        "text": "Before you prompt: set up the notebook"
+      },
+      {
+        "kind": "step",
+        "title": "1. Add only the sources you need",
+        "text": "Create a notebook and add your files. Each notebook is separate, and Google says Gemini Notebook cannot read across several notebooks at once, so keep one class, project or client per notebook. In the Sources panel you can unselect a source to leave it out of an answer."
+      },
+      {
+        "kind": "step",
+        "title": "2. Pick a chat style",
+        "text": "Open Configure Chat in the chat panel. Google offers three styles: Default for general research, Learning Guide for studying, and Custom, where you describe a style or a role. Choose a response length there too, then save."
+      },
+      {
+        "kind": "step",
+        "title": "3. Save the good answers",
+        "text": "Under any answer, select Save to note. Google says saved notes keep their formatting, including tables and clickable citations, so your best answers become your study notes."
+      },
+      {
+        "kind": "heading",
+        "text": "NotebookLM prompts for better notes"
+      },
+      {
+        "kind": "prompt",
+        "title": "Prompt 1: The one page briefing",
+        "text": "Using only my sources, give me a one page briefing on [topic]: the main idea in two sentences, the five most important facts, where the sources disagree, and what is still unclear. Cite every point."
+      },
+      {
+        "kind": "analysis",
+        "text": "Start every new notebook with this one. It tells you fast whether your sources are any good, and the disagreements line shows where you need to read the originals yourself."
+      },
+      {
+        "kind": "prompt",
+        "title": "Prompt 2: Themes across sources",
+        "text": "Which ideas show up in more than one of my sources? Group them under short headings, and under each heading list which sources support it."
+      },
+      {
+        "kind": "prompt",
+        "title": "Prompt 3: Meeting notes to action items",
+        "text": "Read my meeting notes and list every decision and every action item. For each action, give the owner and the deadline if the notes say them, and mark the ones that have neither."
+      },
+      {
+        "kind": "tip",
+        "text": "Ask for what is missing, not just what is there. Marking actions with no owner is the part that saves you from a follow-up meeting."
+      },
+      {
+        "kind": "prompt",
+        "title": "Prompt 4: A table you can export",
+        "text": "Make a table of [items, for example every study or every vendor] in my sources with these columns: [name], [date], [main finding or price], [source]. Leave a cell empty if the sources do not say it."
+      },
+      {
+        "kind": "fact",
+        "text": "For bigger tables, Google's Studio panel also has Data Tables. You can describe the rows and columns you want in its prompt box, and Export to Sheets puts the table on the first tab and the citations on the second.",
+        "sources": [
+          2
+        ]
+      },
+      {
+        "kind": "heading",
+        "text": "NotebookLM prompts for study guides"
+      },
+      {
+        "kind": "fact",
+        "text": "Google built two study tools in. Reports in the Studio panel offer FAQ, study guide, briefing document, an AI suggested report type, or Create your own, and a report can go to Google Docs with Export to Docs. Google's education post also describes flashcards and quizzes where you set the topic and the difficulty, plus an explain option that says why you missed a question.",
+        "sources": [
+          2,
+          3
+        ]
+      },
+      {
+        "kind": "prompt",
+        "title": "Prompt 5: Study guide for one exam",
+        "text": "Create a study guide from my sources for [exam or unit]. Include the key terms with one line definitions, the main ideas in order, and five short questions at the end. Cite each section."
+      },
+      {
+        "kind": "prompt",
+        "title": "Prompt 6: Explain it from zero",
+        "text": "Explain [concept] from my sources as if I have never studied this subject. Use one everyday example, keep it under 200 words, and cite the passage each point comes from."
+      },
+      {
+        "kind": "prompt",
+        "title": "Prompt 7: Quiz me one question at a time",
+        "text": "Quiz me on [chapter or topic] using only my sources. Ask one question, wait for my answer, then tell me if I was right and quote the passage that shows it. Ten questions."
+      },
+      {
+        "kind": "analysis",
+        "text": "This works best with the Learning Guide style turned on. Google says Learning Guide asks open questions and breaks problems into steps instead of handing over the answer, which is the point of a quiz."
+      },
+      {
+        "kind": "prompt",
+        "title": "Prompt 8: A timeline",
+        "text": "Put the events in my sources in date order. For each one, give the date, one line on what happened, and one line on why it matters for [course or project]."
+      },
+      {
+        "kind": "heading",
+        "text": "Prompts for Audio Overview and Custom chat"
+      },
+      {
+        "kind": "fact",
+        "text": "Audio Overview turns your sources into a spoken summary. Google lists four formats: Deep Dive with two hosts, The Brief with one speaker in under two minutes, The Critique, which gives feedback on material like an essay, and The Debate. You can pick Shorter, Default or Longer (longer is English only) and type instructions to focus on topics or change the expertise level.",
+        "sources": [
+          1
+        ]
+      },
+      {
+        "kind": "prompt",
+        "title": "Prompt 9: Audio Overview focus box",
+        "text": "I have an exam on [topics] next week. Focus only on those parts, skip the background, explain each technical term the first time you use it, and end with the three ideas I am most likely to be tested on."
+      },
+      {
+        "kind": "fact",
+        "text": "Google's NotebookLM team suggested the same kind of instruction: say what you already know, what you are curious about, or what your exam covers. Geekflare collected those examples from the team.",
+        "sources": [
+          4
+        ]
+      },
+      {
+        "kind": "prompt",
+        "title": "Prompt 10: A Custom chat role",
+        "text": "Act as a strict tutor for [course]. Answer only from my sources, keep answers short, and after each answer ask me one follow-up question to check that I understood."
+      },
+      {
+        "kind": "analysis",
+        "text": "Paste this into Configure Chat under Custom. Google's own examples for Custom are a style like answering as a PhD student or a role like a game host, so a tutor role fits what the setting is meant for."
+      },
+      {
+        "kind": "heading",
+        "text": "Where NotebookLM prompts fall short"
+      },
+      {
+        "kind": "analysis",
+        "text": "Grounding cuts down on invented facts, but it does not make the model a perfect reader. Google warns that Audio Overviews may contain inaccuracies, and the same care applies to chat: click the citation before you quote anything in an essay or a report. Creative requests are a weak spot too, since answers stay tied to your sources. If you want a rewrite or a new story, use the Gemini app instead."
+      },
+      {
+        "kind": "tip",
+        "text": "Keep sources clean. One messy scan or an off topic file pulls answers sideways. If an answer looks odd, unselect sources until you find the one causing it."
+      }
+    ]
+  }
+}

@@ -5067,5 +5067,79 @@
       }
     ],
     "requests": []
+  },
+  {
+    "run_at": "2026-11-27T15:04:14.333Z",
+    "summary": "10:00 NY run (Nov 27): no open links or requests; both Instagram carousels and all 4 site-only news slots for today are already used and no priority 1 story broke, so queued only the day's second website guide (NotebookLM prompts). No Reel video could be checked.",
+    "considered": [
+      {
+        "story": "Guide: NotebookLM prompts for notes and study guides (Tier 3 in guides/plan.md)",
+        "source": "https://support.google.com/gemininotebook/answer/16179559?hl=en",
+        "decision": "queued",
+        "job_id": "2026-11-27-notebooklm-prompts-notes-study-guides",
+        "priority": 2
+      },
+      {
+        "story": "Guide: How to use Sora (Tier 1 in guides/plan.md)",
+        "decision": "skipped",
+        "reason": "Could not confirm from OpenAI's own help pages that the Sora app is still offered as described, so a how-to could be wrong; took the next line."
+      },
+      {
+        "story": "Switzerland says five cyberattacks on power, water and telecom firms used AI agents",
+        "source": "https://www.globalbankingandfinance.com/ai-agents-used-five-cyber-attacks-switzerland-government/",
+        "decision": "skipped",
+        "reason": "Seen only in a digest with one secondary source; today's site-only cap of 4 is already reached."
+      },
+      {
+        "story": "Kansas City council rejects a 20-story vertical AI data center tower (NYT)",
+        "source": "https://www.nytimes.com/2026/11/26/business/energy-environment/vertical-data-center-kansas-city.html",
+        "decision": "skipped",
+        "reason": "Local story with no second source read; Instagram carousels and site-only slots for today are full."
+      },
+      {
+        "story": "Bank of England puts hyperscaler AI exposure at about $4 trillion",
+        "source": "https://stockanalysis.com/news/boe-financial-stability-report-ai-november-2026/",
+        "decision": "skipped",
+        "reason": "Finance insider story, only an aggregator read; site-only cap reached."
+      },
+      {
+        "story": "German consumer group sues OpenAI over ChatGPT cancellation and price terms",
+        "source": "https://pasqualepillitteri.it/en/news/36841/openai-sued-in-germany-over-chatgpt-cancellation-and-price",
+        "decision": "skipped",
+        "reason": "Filed Nov 23, one blog source, low US interest."
+      },
+      {
+        "story": "OS-Omni benchmark: top agents do well on Linux but collapse on iOS tasks",
+        "source": "https://huggingface.co/papers/2611.34232",
+        "decision": "skipped",
+        "reason": "Research benchmark mostly insiders follow; site-only cap reached."
+      },
+      {
+        "story": "Black Friday AI subscription deals (Google plans discounted, ChatGPT and Claude full price)",
+        "decision": "skipped",
+        "reason": "Only deal blogs found, no official price pages read; not a news event."
+      },
+      {
+        "story": "California sues OpenAI as a public nuisance",
+        "decision": "covered",
+        "reason": "Already covered as 2026-11-16-california-sues-openai-rogue-agents."
+      },
+      {
+        "story": "Nvidia halts AI server shipments to four Southeast Asian countries",
+        "decision": "covered",
+        "reason": "Already queued as 2026-11-26-nvidia-halts-servers-southeast-asia."
+      },
+      {
+        "story": "Anthropic: Claude migrated the Messages API from Python to Rust",
+        "decision": "covered",
+        "reason": "Already queued as 2026-11-27-anthropic-claude-rewrote-api-rust."
+      },
+      {
+        "story": "Reel videos",
+        "decision": "skipped",
+        "reason": "Reddit leads are empty and X posts cannot be opened from this run, so no clip could be checked against the Reel filter."
+      }
+    ],
+    "requests": []
   }
 ]
