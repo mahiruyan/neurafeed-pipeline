@@ -1,89 +1,5 @@
 [
   {
-    "run_at": "2026-11-20T15:05:54.196Z",
-    "summary": "Midmorning run: no open links or requests; queued two site-only articles (Claude black hole physics, Google homepage AI Mode sidebar) and one site-only guide (Claude Code prompts). Instagram carousels for the day are already at 2; no Reel video passed the filter.",
-    "considered": [
-      {
-        "story": "Anthropic details how Claude Fable 5.2 agents solved two open black hole physics problems",
-        "source": "https://www.anthropic.com/research/claude-black-hole-physics",
-        "decision": "queued",
-        "job_id": "2026-11-20-claude-black-hole-physics-six-weeks",
-        "priority": 2,
-        "reason": "Site-only: the research post is from November 17 and today's 2 Instagram carousels are taken; only mentioned in passing in the Fable 5.2 launch job."
-      },
-      {
-        "story": "Google's desktop homepage gets an AI Mode chat history sidebar",
-        "source": "https://www.digitaltrends.com/computing/google-search-is-starting-to-look-a-lot-like-a-chatbot-app/",
-        "decision": "queued",
-        "job_id": "2026-11-20-google-homepage-ai-mode-sidebar",
-        "priority": 2,
-        "reason": "Product change, site-only per Volume and mix."
-      },
-      {
-        "story": "Guide: Claude Code prompts (guides plan Tier 3, prompts for claude code)",
-        "source": "https://code.claude.com/docs/en/best-practices",
-        "decision": "queued",
-        "job_id": "2026-11-20-claude-code-prompts-guide",
-        "priority": 2,
-        "reason": "Second guide of the day, alternating from the tool library line (OpenRouter) to the tiers."
-      },
-      {
-        "story": "Anthropic's 7 founders cashed out nearly $2B in the IPO",
-        "source": "https://techcrunch.com/2026/11/19/anthropics-7-founders-cashed-out-nearly-2b-in-record-breaking-ipo/",
-        "decision": "covered",
-        "reason": "Already covered as 2026-11-18-anthropic-ipo-priced-83 and 2026-11-19-anthropic-opens-111-nasdaq."
-      },
-      {
-        "story": "Apple hiring engineers for its own Mac AI agent",
-        "source": "https://www.theverge.com/tech/1038227/apple-ai-agent-engineer-job-listing",
-        "decision": "covered",
-        "reason": "Already queued as 2026-11-20-apple-mac-ai-agent-job-listing."
-      },
-      {
-        "story": "Meta's Muse Charm device may cost $300",
-        "source": "https://techcrunch.com/2026/11/19/metas-new-muse-charm-device-may-cost-300/",
-        "decision": "skipped",
-        "reason": "A rumored price for an unreleased gadget; weaker than the stories queued and the Muse privacy story already ran today."
-      },
-      {
-        "story": "16-year-old founded an AI missile startup (Wired)",
-        "source": "https://www.wired.com/story/henrijs-dandzbergs-polemos-missiles-ai-warfare/",
-        "decision": "skipped",
-        "reason": "Strong person story, but today's 2 Instagram carousels are already queued and the Wired page could not be read for a second source in this run."
-      },
-      {
-        "story": "Jensen Huang scandal reaches his favorite restaurants (Wired)",
-        "source": "https://www.wired.com/story/jensen-huangs-favorite-restaurants-are-caught-up-in-his-scandals-too/",
-        "decision": "skipped",
-        "reason": "Side angle on a story already covered many times this week."
-      },
-      {
-        "story": "DeepMind employees unionising",
-        "source": "https://www.gdmunion.co.uk",
-        "decision": "skipped",
-        "reason": "Only the union's own site in leads, no news coverage found to confirm it in this run."
-      },
-      {
-        "story": "ChatGPT for SNES (Hacker News)",
-        "source": "https://www.bxfoundry.com/chatgpt_snes/",
-        "decision": "skipped",
-        "reason": "Possible Reel, but the page could not be opened and no video or news coverage was found."
-      },
-      {
-        "story": "Reel search: viral AI and robot videos of the last day",
-        "decision": "skipped",
-        "reason": "Searches turned up no fresh clip on X or a company site that passes Which Reels travel; Reddit leads are still empty."
-      },
-      {
-        "story": "Canva adds an AI off button",
-        "source": "https://www.theverge.com/ai-artificial-intelligence/1037126/canva-ai-features-off-button",
-        "decision": "skipped",
-        "reason": "Small product change; the Verge could not be opened in this run."
-      }
-    ],
-    "requests": []
-  },
-  {
     "run_at": "2026-11-20T17:04:38.952Z",
     "summary": "Midday run (noon New York, Nov 20): no open links or requests; queued the California AG subpoena of Nvidia (priority 1, site-only and sensitive because today's 2 Instagram carousels are already used) and the third guide of the day (How to use OpenClaw). No Reel passed the filter.",
     "considered": [
@@ -5138,6 +5054,74 @@
         "story": "Reel videos",
         "decision": "skipped",
         "reason": "Reddit leads are empty and X posts cannot be opened from this run, so no clip could be checked against the Reel filter."
+      }
+    ],
+    "requests": []
+  },
+  {
+    "run_at": "2026-11-27T17:01:22.717Z",
+    "summary": "12:00 NY run (Nov 27): no open links or requests, no priority 1 story found, both Instagram carousels and all 4 site-only news slots already used; the day's third guide could not be written because ChatPDF's and OpenAI's own pages could not be opened in this run, so nothing was queued.",
+    "considered": [
+      {
+        "story": "Guide: How to use ChatPDF for free (next Tool library line in guides/plan.md)",
+        "source": "https://www.chatpdf.com/",
+        "decision": "skipped",
+        "reason": "ChatPDF's own site, pricing and FAQ pages could not be opened from this run, and third-party reviews disagree on the free limits, so a guide could be wrong; left for the next run."
+      },
+      {
+        "story": "Guide: How to use ChatGPT Atlas (Tier 1 in guides/plan.md)",
+        "source": "https://help.openai.com/en/articles/12591856-chatgpt-atlas-release-notes",
+        "decision": "skipped",
+        "reason": "OpenAI's Atlas pages and help center could not be opened from this run, so no vendor facts to write from."
+      },
+      {
+        "story": "Early testers show Claude Opus 5.6 animations (X posts via Google News)",
+        "source": "https://kie.ai/blog/what-is-claude-opus-5-6",
+        "decision": "skipped",
+        "reason": "No Anthropic announcement found; only speculation about an unreleased model, so nothing to report as fact."
+      },
+      {
+        "story": "AI agents now control part of DeepMind's compute for Gemini experiments",
+        "source": "https://the-decoder.com/ai-agents-now-control-part-of-deepminds-compute-for-gemini-experiments-but-recursive-self-improvement-remains-distant/",
+        "decision": "skipped",
+        "reason": "Insider research story, one source, and today's 4 site-only slots are already used."
+      },
+      {
+        "story": "FDA clears DeepHealth Mammo Risk, an AI tool predicting breast cancer risk from mammograms",
+        "decision": "skipped",
+        "reason": "Seen only in a digest; health story with no second source read and site-only cap reached."
+      },
+      {
+        "story": "WSJ: effective altruists who pledged 10% of income are now AI billionaires (Anthropic staff stock)",
+        "source": "https://www.wsj.com/",
+        "decision": "skipped",
+        "reason": "Money story that could fit Instagram, but both carousels for today are queued and the WSJ article could not be read; worth a look tomorrow if still fresh."
+      },
+      {
+        "story": "Hugging Face llama.cpp benchmark dashboard for AMD Ryzen and Radeon",
+        "source": "https://huggingface.co/blog/ggml-org/llamacpp-amd-bench",
+        "decision": "skipped",
+        "reason": "Developer-only news, site-only cap reached."
+      },
+      {
+        "story": "Reel videos for the day",
+        "decision": "skipped",
+        "reason": "Leads have no Reddit items and X posts could not be opened from this run, so no clip could be checked against the Reels filter."
+      },
+      {
+        "story": "FCC authorizes SpaceX to deploy 1 million AI data center satellites",
+        "decision": "covered",
+        "reason": "Already queued as 2026-11-27-spacex-fcc-million-satellites."
+      },
+      {
+        "story": "Google requires AI agents to use Workspace MCP servers",
+        "decision": "covered",
+        "reason": "Already queued as 2026-11-27-google-workspace-ai-agents-mcp-rule."
+      },
+      {
+        "story": "OpenAI cuts GPT-6.2 usage limits",
+        "decision": "covered",
+        "reason": "Already queued as 2026-11-26-chatgpt-gpt-6-2-billing-mistake-limits."
       }
     ],
     "requests": []
