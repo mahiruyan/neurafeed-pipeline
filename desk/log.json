@@ -1,75 +1,5 @@
 [
   {
-    "run_at": "2026-11-20T13:03:54.923Z",
-    "summary": "Morning run (08:00 New York, Nov 20): no open links or requests; queued the first website guide of the day (How to use OpenRouter, site-only). Today's 2 Instagram carousels are already used; no new priority 1 story and no Reel found.",
-    "considered": [
-      {
-        "story": "Guide: How to use OpenRouter (guides plan, tool library)",
-        "source": "https://openrouter.ai/docs/quickstart",
-        "decision": "queued",
-        "job_id": "2026-11-20-how-to-use-openrouter-guide",
-        "priority": 2,
-        "reason": "Next readable tool library line; OpenRouter quickstart, FAQ, limits and free router docs plus its help center and Merge read."
-      },
-      {
-        "story": "Guide: How to use ChatGPT agent mode",
-        "decision": "skipped",
-        "reason": "OpenAI's help center was not reachable in earlier runs; not retried this run."
-      },
-      {
-        "story": "Guide: How to use OpenClaw / Luma Dream Machine (plan lines before OpenRouter)",
-        "decision": "skipped",
-        "reason": "Picked OpenRouter because its official docs could be read in full this run; these stay next in line."
-      },
-      {
-        "story": "Microsoft MAI Image 2.7 and Flash in public preview, Canvas in MAI Labs",
-        "source": "https://scalevise.com/resources/microsoft-mai-image-2-7-flash-canvas-platform-rollout/",
-        "decision": "skipped",
-        "reason": "Announced November 17 and only secondary write-ups could be read, not Microsoft's own post; insider model news."
-      },
-      {
-        "story": "Meta Muse Charm device may cost $300 (TechCrunch, The Verge)",
-        "source": "https://techcrunch.com/2026/11/19/metas-new-muse-charm-device-may-cost-300/",
-        "decision": "skipped",
-        "reason": "Neither article could be opened in this run; still a site-only candidate later today."
-      },
-      {
-        "story": "Google built a mirror internet to test its Chrome AI agents (Wired)",
-        "source": "https://www.wired.com/story/google-built-a-giant-mirror-dimension-internet-to-test-its-chrome-ai-agents/",
-        "decision": "skipped",
-        "reason": "Wired could not be opened in this run; good site-only candidate for a later run."
-      },
-      {
-        "story": "House panel says US approved 879,000 AI chips for Chinese firms (CNBC, Reuters)",
-        "source": "https://www.cnbc.com/2026/11/19/nvidia-amd-china-chip-sales-congress.html",
-        "decision": "skipped",
-        "reason": "Already judged in the 04:00 run: conflicting figures and the China chip angle was covered on November 17."
-      },
-      {
-        "story": "OpenAI Performance Factory: Codex agents fixed over 600 ChatGPT slowdowns",
-        "source": "https://openai.com/index/how-openai-performance-factory-keeps-chatgpt-fast",
-        "decision": "skipped",
-        "reason": "Engineering blog post that mostly insiders follow; site-only slots nearly full and a guide mattered more this run."
-      },
-      {
-        "story": "Substack post claims an FBI visit after Anthropic flagged a Claude chat",
-        "decision": "skipped",
-        "reason": "Single unverified personal account; no independent confirmation."
-      },
-      {
-        "story": "ChatPRD ends free trials after token fraud cost tens of thousands of dollars",
-        "decision": "skipped",
-        "reason": "Only a roundup summary seen; needs the original reporting before it could be written."
-      },
-      {
-        "story": "Reel search",
-        "decision": "skipped",
-        "reason": "X and Reddit cannot be read from this run (Reddit leads are empty) and no clip passing the Reel filter was found."
-      }
-    ],
-    "requests": []
-  },
-  {
     "run_at": "2026-11-20T15:05:54.196Z",
     "summary": "Midmorning run: no open links or requests; queued two site-only articles (Claude black hole physics, Google homepage AI Mode sidebar) and one site-only guide (Claude Code prompts). Instagram carousels for the day are already at 2; no Reel video passed the filter.",
     "considered": [
@@ -5058,6 +4988,82 @@
         "story": "Gemini 4 reportedly proves Hadwiger's covering conjecture in 3D",
         "decision": "skipped",
         "reason": "Could not find a primary or second reliable source in this run; revisit when Google publishes."
+      }
+    ],
+    "requests": []
+  },
+  {
+    "run_at": "2026-11-27T13:15:12.756Z",
+    "summary": "08:00 NY run (Nov 27): no open links or requests; today's 2 Instagram carousels are already queued, so added one site-only article (Google's Workspace MCP rule for AI agents) and the day's first website guide (Udio vs Suno). No Reel video could be checked.",
+    "considered": [
+      {
+        "story": "Google requires AI agents to reach Workspace through its MCP servers from Feb 1, 2027; the Gmail server cannot send email",
+        "source": "https://developers.google.com/workspace/guides/configure-mcp-servers",
+        "decision": "queued",
+        "job_id": "2026-11-27-google-workspace-ai-agents-mcp-rule",
+        "priority": 2
+      },
+      {
+        "story": "Guide: Udio vs Suno (next readable line in guides/plan.md)",
+        "source": "https://help.suno.com/en/articles/13614785",
+        "decision": "queued",
+        "job_id": "2026-11-27-udio-vs-suno-guide",
+        "priority": 2
+      },
+      {
+        "story": "Guide: How to use ChatGPT Atlas (Tier 1 in guides/plan.md)",
+        "source": "https://help.openai.com/en/articles/20001371-evolving-atlas-into-chatgpt-for-browser-based-agentic-work",
+        "decision": "skipped",
+        "reason": "OpenAI shut the Atlas browser down on August 9, 2026, so a how-to would be wrong; the plan lines for Atlas and Atlas for Windows are out of date."
+      },
+      {
+        "story": "FDA clears DeepHealth's Mammo Risk AI for breast cancer risk from mammograms",
+        "decision": "skipped",
+        "reason": "Seen only in a newsletter roundup this run; no second source read, and the site-only slot went to the Workspace story."
+      },
+      {
+        "story": "Hugging Face launches a llama.cpp benchmark dashboard for AMD hardware",
+        "source": "https://huggingface.co/blog/ggml-org/llamacpp-amd-bench",
+        "decision": "skipped",
+        "reason": "Developer niche with little US general interest."
+      },
+      {
+        "story": "AI made self-hosting fun again (Hacker News)",
+        "source": "https://janlukas.blog/posts/ai-self-hosting",
+        "decision": "skipped",
+        "reason": "Personal blog essay, not news."
+      },
+      {
+        "story": "Tracking diseases cured by AI (Hacker News)",
+        "source": "https://diseasescuredbyai.com/",
+        "decision": "skipped",
+        "reason": "A tracker site, no single news event or second source."
+      },
+      {
+        "story": "OpenAI cuts GPT-6.2 usage limits (Hacker News)",
+        "decision": "covered",
+        "reason": "Already queued as 2026-11-26-chatgpt-gpt-6-2-billing-mistake-limits."
+      },
+      {
+        "story": "FCC authorizes SpaceX's 1 million Starmind satellites",
+        "decision": "covered",
+        "reason": "Already queued as 2026-11-27-spacex-fcc-million-satellites."
+      },
+      {
+        "story": "Robot carrying Elon Musk's luggage (viral clip)",
+        "decision": "skipped",
+        "reason": "Outlets still disagree on whether the clip is real or AI-made, so we cannot say truthfully what it shows."
+      },
+      {
+        "story": "Morphing NTNU drone squeezes through a 15 cm gap (IEEE Spectrum Video Friday)",
+        "source": "https://spectrum.ieee.org/video-friday-morphing-robots-quadrotor",
+        "decision": "skipped",
+        "reason": "Lab clip from Nov 20 with no X post to download from; would likely need YouTube, which fails to render."
+      },
+      {
+        "story": "Reel videos",
+        "decision": "skipped",
+        "reason": "Reddit leads are empty and X posts cannot be opened from this run, so no clip could be checked against the Reel filter."
       }
     ],
     "requests": []

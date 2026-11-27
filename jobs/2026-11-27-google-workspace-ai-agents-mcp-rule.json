@@ -1,0 +1,97 @@
+{
+  "id": "2026-11-27-google-workspace-ai-agents-mcp-rule",
+  "created_at": "2026-11-27T13:40:00Z",
+  "story_time": "2026-11-24T17:00:00Z",
+  "timely": false,
+  "sensitive": false,
+  "priority": 2,
+  "site_only": true,
+  "format": "carousel",
+  "site_category": "companies",
+  "ab": { "headline": "long", "photo": "story" },
+  "sources": [
+    { "name": "Google for Developers: Configure the Google Workspace MCP servers", "url": "https://developers.google.com/workspace/guides/configure-mcp-servers" },
+    { "name": "Rajesh Beri", "url": "https://www.beri.net/article/google-workspace-mcp-servers-ga-agents-must-use-mcp-february-1-2027-rest-api-standard-tier-quotas-scaled-tier-billing-april-2027-admin-api-controls" },
+    { "name": "Flavio Copes", "url": "https://flaviocopes.com/google-workspace-mcp/" },
+    { "name": "Shipmail", "url": "https://shipmail.to/blog/google-workspace-agents-must-use-mcp" }
+  ],
+  "caption": "Google now wants every AI agent that touches Gmail, Drive or Calendar to go through its own MCP servers.\nFrom February 1, 2027, agents that call the old REST APIs get only standard quotas.\nThe public Gmail server can write drafts, but it cannot send email.\n\nWould you let an AI agent send email for you?\n\nFollow @neurafeed.ai for daily AI news.\n\nSource: Google for Developers · Photo: 9to5Google",
+  "threads_text": "Google is telling AI agents to stop calling Gmail and Drive APIs directly and use its MCP servers instead, starting February 1, 2027. The catch: the public Gmail server can draft email but not send it. Would you let an agent hit send for you?",
+  "slides": [
+    {
+      "kind": "cover",
+      "headline": "Google tells AI agents to use *its own front door* into Gmail and Drive, and the Gmail one cannot send email",
+      "image": {
+        "url": "https://9to5google.com/wp-content/uploads/sites/4/2024/04/Gemini-Google-Workspace-prompting-guide.jpg?quality=82&strip=all&w=1600",
+        "credit": "9to5Google",
+        "fallback_urls": ["https://storage.googleapis.com/gweb-uniblog-publish-prod/images/AI_Workspace_Prompts.width-1300.png"]
+      },
+      "pos": "center center"
+    },
+    {
+      "kind": "card",
+      "heading": "Eight *MCP servers*",
+      "paras": [
+        "Google made remote MCP servers for Gmail, Drive, Docs, Sheets, Slides, Calendar, Chat and Tasks generally available.",
+        "A command line tool called gwscli came with them, aimed at terminal agents."
+      ],
+      "image": {
+        "url": "https://i1.wp.com/9to5google.com/wp-content/uploads/sites/4/2024/04/Gemini-Google-Workspace-prompting-1.jpg?ssl=1",
+        "credit": "9to5Google"
+      }
+    },
+    {
+      "kind": "card",
+      "heading": "The *February 1* deadline",
+      "paras": [
+        "From February 1, 2027, AI agents that call Workspace REST APIs directly get only standard tier quotas.",
+        "The standard MCP tier allows 5,000 requests a day per project, per product."
+      ],
+      "image": {
+        "url": "https://i0.wp.com/9to5google.com/wp-content/uploads/sites/4/2024/04/Gemini-Google-Workspace-prompting-2.jpg?ssl=1",
+        "credit": "9to5Google"
+      }
+    },
+    {
+      "kind": "card",
+      "heading": "Drafts, *not sends*",
+      "paras": [
+        "The public Gmail server can search, read and create drafts.",
+        "Send, reply and forward are listed as partner only tools, so a person still has to hit send."
+      ],
+      "image": {
+        "url": "https://i0.wp.com/9to5google.com/wp-content/uploads/sites/4/2024/04/Gemini-Google-Workspace-prompting-3a.jpg?ssl=1",
+        "credit": "9to5Google"
+      }
+    },
+    {
+      "kind": "cta",
+      "hook": "Follow to see which AI assistants still send your email after February."
+    }
+  ],
+  "site_article": {
+    "headline": "Google will require AI agents to reach Workspace through its MCP servers from February 2027",
+    "dek": "The Gmail, Drive and Calendar servers are now generally available, but the public Gmail server can only draft messages, not send them.",
+    "summary": "Google has made remote MCP servers for eight Workspace apps generally available and says AI agents must use them instead of calling Workspace REST APIs directly. Enforcement starts on February 1, 2027, when agents still on REST APIs are held to standard tier quotas.",
+    "seo_title": "Google Workspace MCP rule: AI agents must switch by Feb 1, 2027",
+    "seo_description": "Google says AI agents must use its Workspace MCP servers from February 1, 2027. What the 8 servers cover, the new quotas and why the Gmail server cannot send.",
+    "answer_summary": "From February 1, 2027, AI tools that reach Gmail, Drive, Calendar and other Workspace apps are expected to use Google's MCP servers. Agents that keep calling the REST APIs directly are limited to standard tier quotas rather than blocked, according to reports on Google's terms.",
+    "tags": ["Google", "Google Workspace", "Gmail", "MCP", "AI agents"],
+    "hero_alt": "Promotional graphic for Gemini features in Google Workspace apps.",
+    "paragraphs": [
+      { "kind": "fact", "text": "Google has made remote Model Context Protocol servers for its Workspace apps generally available and told developers that AI agents must use them to reach Workspace data, according to developer analyses of the November 24, 2026 announcement. The servers cover Gmail, Google Drive, Docs, Sheets, Slides, Calendar, Chat and Tasks, and Google's own setup guide describes them as remote MCP servers that AI applications connect to over the protocol.", "sources": [0, 1, 2] },
+      { "kind": "fact", "text": "Google also released an official command line client called gwscli, meant for agents that work in a terminal, such as coding assistants. Developer Flavio Copes reported downloading the macOS build, an 11 MB binary, and listing its commands for Gmail and Drive.", "sources": [1, 2] },
+      { "kind": "heading", "text": "What changes on February 1, 2027" },
+      { "kind": "fact", "text": "According to the announcement as quoted by Rajesh Beri, AI agents and similar access tools must use MCP rather than calling Workspace REST APIs directly, and technical enforcement begins on February 1, 2027. That date is also when a new Workspace AI Tools Addendum takes effect. Billing for a paid Scaled tier starts on April 1, 2027.", "sources": [1, 3] },
+      { "kind": "fact", "text": "The rule works through quotas rather than an outright ban. Agents that keep calling the REST APIs directly are limited to Standard tier quotas regardless of the tier their developer pays for, Beri and Shipmail report. The Standard MCP tier allows 5,000 requests a day per project, per product, while the Scaled tier has no free daily allowance and charges between $0.10 and $0.50 per 1,000 requests depending on the type of call. Beri wrote that Google says more than 99% of active developers are on the Standard tier.", "sources": [1, 3] },
+      { "kind": "fact", "text": "Copes, quoting the addendum, reported that it covers any tool that is an AI agent or is driven by an AI agent, harness or model, not only fully autonomous agents. He wrote that the terms also bar disguising an agent to avoid that classification and that a breach can lead Google to cut off access.", "sources": [2] },
+      { "kind": "fact", "text": "On the technical side, Google's guide says user delegated OAuth client IDs that call the Workspace MCP servers must have an option marked for use by an AI powered agent turned on in the Google Auth Platform. Requests from clients without that setting are rejected. The same guide recommends screening prompts and responses for prompt injection, for example with Google's Model Armor.", "sources": [0] },
+      { "kind": "heading", "text": "The Gmail server writes drafts, not emails" },
+      { "kind": "fact", "text": "The limitation that drew the most attention is in Gmail. Google's guide shows the Gmail server creating a draft that lands in the user's drafts folder for review, and it lists sending email among the actions that need human approval. Copes and Shipmail report that the public Gmail server can search and read threads, manage labels and create drafts, while tools such as send, reply, forward and draft editing are marked on Google's quota page as requiring partner access.", "sources": [0, 2, 3] },
+      { "kind": "fact", "text": "Copes found similar gaps in other apps. By his count, the public Drive server cannot move, rename, share or delete files, and the Calendar server cannot create or share calendars. He reported that the Docs and Slides servers are close to their APIs and that Tasks supports creating, reading, updating and deleting items.", "sources": [2] },
+      { "kind": "fact", "text": "For administrators, Beri reported that agent activity appears in audit logs in the Admin console and that existing data loss prevention rules apply automatically. Google's guide says admins can control which agents get access through OAuth app settings and can turn on agent attribution.", "sources": [0, 1] },
+      { "kind": "analysis", "text": "In NeuraFeed's reading, Google is turning Workspace access for AI into a gated, metered service. Agents get an official and logged path, and Google gets a clear count of how much AI traffic reaches its apps. The price is that developers who built assistants on the REST APIs now face a migration with a firm date, and tools that send email on a user's behalf depend on partner access that most developers do not have." },
+      { "kind": "why_it_matters", "text": "The next marker is February 1, 2027, when quota limits for agents on REST APIs take effect. Watch whether Google opens the partner only Gmail tools, such as sending and replying, to more developers before then." }
+    ]
+  }
+}
