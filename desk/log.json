@@ -5072,5 +5072,61 @@
       }
     ],
     "requests": []
+  },
+  {
+    "run_at": "2026-11-27T08:55:55.529Z",
+    "summary": "04:00 NY run (Nov 27): no open links or requests; Instagram carousels for today are already full (2), so queued one site-only article on the FCC approving SpaceX's 1 million Starmind data center satellites. No Reel video could be found or checked.",
+    "considered": [
+      {
+        "story": "FCC authorizes SpaceX to deploy up to 1 million Starmind data center satellites",
+        "source": "https://www.tbsnews.net/worldbiz/usa/us-authorises-spacex-deploy-1-million-satellites-data-centres-space-1615466",
+        "decision": "queued",
+        "job_id": "2026-11-27-spacex-fcc-million-satellites",
+        "priority": 2,
+        "reason": "Big infrastructure story but mostly followed by insiders and two days old, so site-only."
+      },
+      {
+        "story": "California sues OpenAI as a public nuisance",
+        "source": "https://www.cnbc.com/2026/11/16/openai-california-bonta-ai-lawsuit.html",
+        "decision": "covered",
+        "reason": "Already covered as 2026-11-16-california-sues-openai-rogue-agents."
+      },
+      {
+        "story": "WSJ: Anthropic employees who pledged 10% of income are now AI billionaires",
+        "decision": "covered",
+        "reason": "The Anthropic giving pledges were covered in October (2026-10-14 and 2026-10-18 jobs) and the WSJ piece could not be read."
+      },
+      {
+        "story": "OpenAI cuts GPT-6.2 usage limits (Hacker News)",
+        "decision": "covered",
+        "reason": "Already covered as 2026-11-26-chatgpt-gpt-6-2-billing-mistake-limits."
+      },
+      {
+        "story": "Gemini 4 reportedly proved Hadwiger's covering conjecture in 3D",
+        "decision": "skipped",
+        "reason": "Only an aggregator mention found; no primary Google source to confirm it in this run."
+      },
+      {
+        "story": "Early testers show Claude Opus 5.6 animations on X",
+        "decision": "skipped",
+        "reason": "Unreleased model; only a Google News pointer to X, which cannot be read from here, so no Reel video could be verified."
+      },
+      {
+        "story": "JERA in talks with Anthropic and Meta on Japanese data centers",
+        "decision": "skipped",
+        "reason": "A Nikkei report of talks only; low US interest."
+      },
+      {
+        "story": "Anthropic study: models keep cyberattack knowledge after unlearning",
+        "decision": "skipped",
+        "reason": "Only a crypto site summary found; site-only cap for the day better used on the SpaceX story."
+      },
+      {
+        "story": "AI agents control part of DeepMind compute (The Decoder)",
+        "decision": "skipped",
+        "reason": "Insider story with a small Hacker News score."
+      }
+    ],
+    "requests": []
   }
 ]
