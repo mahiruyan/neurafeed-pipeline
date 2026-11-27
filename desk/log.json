@@ -1,124 +1,5 @@
 [
   {
-    "run_at": "2026-11-20T05:02:23.494Z",
-    "summary": "Midnight run (Nov 20 New York): no open links or requests; queued 2 site-only articles (Apple Mac agent job listing, ChatGPT dots for Plus users); no Reel or new carousel found.",
-    "considered": [
-      {
-        "story": "Apple job listing points to its own AI agent that runs a Mac (Bloomberg via TechCrunch)",
-        "source": "https://techcrunch.com/2026/11/19/apple-may-be-developing-its-own-ai-agent-that-runs-your-mac/",
-        "decision": "queued",
-        "job_id": "2026-11-20-apple-mac-ai-agent-job-listing",
-        "priority": 2,
-        "reason": "Insider product report, so site-only; TechCrunch plus Superpower Daily read."
-      },
-      {
-        "story": "OpenAI tests ChatGPT dots with Plus users and a new mobile design with a Dot tab",
-        "source": "https://9to5mac.com/2026/11/19/openai-begins-testing-dots-with-chatgpt-plus-users-expands-business-access/",
-        "decision": "queued",
-        "job_id": "2026-11-20-chatgpt-dots-plus-new-mobile-design",
-        "priority": 2,
-        "reason": "Limited product test, site-only; 9to5Mac plus Digital Trends read."
-      },
-      {
-        "story": "Google homepage adds an AI Mode history sidebar (Android Police, Talk Android)",
-        "source": "https://www.androidpolice.com/the-google-homepage-gets-its-biggest-change-in-years/",
-        "decision": "skipped",
-        "reason": "A small sidebar change, too thin for a full article; could be a later guide."
-      },
-      {
-        "story": "SoftBank falls over 16% after the Anthropic debut; NYT on new Anthropic millionaires",
-        "decision": "covered",
-        "reason": "Anthropic IPO already posted twice (2026-11-18-anthropic-ipo-priced-83, 2026-11-19-anthropic-opens-111-nasdaq)."
-      },
-      {
-        "story": "Meta Muse agent booked an Airbnb and showed bank balances (PYMNTS)",
-        "decision": "covered",
-        "reason": "Already queued as 2026-11-20-meta-muse-airbnb-bank-balances."
-      },
-      {
-        "story": "Gemini computer use on Mac (Mashable, SiliconANGLE)",
-        "decision": "covered",
-        "reason": "Already covered as 2026-11-19-gemini-mac-computer-use."
-      },
-      {
-        "story": "AI is turning jobs into low-paid gig work (Rest of World, Hacker News)",
-        "source": "https://restofworld.org/2026/ai-jobs-skills-gig-work/",
-        "decision": "skipped",
-        "reason": "Feature piece, not read in this run; Nov 20 already has the Muse carousel, so kept the second carousel slot for a stronger daytime story."
-      },
-      {
-        "story": "Genie 4 world model opens to developers in the Gemini API",
-        "decision": "skipped",
-        "reason": "Genie 4 itself launched October 27; developer access is insider news and no new video found."
-      },
-      {
-        "story": "Reel search",
-        "decision": "skipped",
-        "reason": "X, Reddit (403) and Wikimedia are not reachable from this run, so no clip passing the Reel filter could be checked."
-      }
-    ],
-    "requests": []
-  },
-  {
-    "run_at": "2026-11-20T07:03:23.859Z",
-    "summary": "Early run (Nov 20 New York, 2 a.m.): no open links or requests; queued 1 news carousel (Nadella on Microsoft's 60,000 exit offers, sensitive, needs approval); no Reel found.",
-    "considered": [
-      {
-        "story": "Nadella says he cannot promise Microsoft jobs will stay the same after 60,000 voluntary exit offers",
-        "source": "https://www.windowslatest.com/2026/11/19/asked-if-60000-exit-offers-mean-ai-layoffs-at-microsoft-satya-nadella-said-i-wish-i-could-just-sit-here-and-say-itll-all-be-the-same-i-cannot/",
-        "decision": "queued",
-        "job_id": "2026-11-20-nadella-60000-exit-offers",
-        "priority": 2,
-        "reason": "Jobs plus a famous CEO, the kind that travels; Windows Latest and TokenPost read. Marked sensitive (layoffs), so it waits for Mahir's approval."
-      },
-      {
-        "story": "Claude solves two open problems in black hole physics (Hacker News)",
-        "source": "https://www.anthropic.com/research/claude-black-hole-physics",
-        "decision": "skipped",
-        "reason": "Announced with Claude Fable 5.2 around November 9, so not new, and the Anthropic page could not be opened in this run."
-      },
-      {
-        "story": "Anthropic's 7 founders cashed out nearly $2B in the IPO (TechCrunch); NYT on new millionaires",
-        "decision": "covered",
-        "reason": "Anthropic IPO already posted twice (2026-11-18-anthropic-ipo-priced-83, 2026-11-19-anthropic-opens-111-nasdaq); same story, new angle."
-      },
-      {
-        "story": "Arizona commissioner questions Gilbert police use of AI in a report, second case in weeks (AZ Family)",
-        "source": "https://www.azfamily.com/2026/11/20/second-case-weeks-commissioner-questions-gilbert-police-use-ai-report/",
-        "decision": "skipped",
-        "reason": "Only one local source found so far; worth another look in a daytime run."
-      },
-      {
-        "story": "DeepMind employees are unionising (Hacker News)",
-        "source": "https://www.gdmunion.co.uk",
-        "decision": "skipped",
-        "reason": "Union drive has been reported since 2025 and May 2026; no new development confirmed by a news outlet."
-      },
-      {
-        "story": "AI is turning jobs into low-paid gig work (Rest of World)",
-        "source": "https://restofworld.org/2026/ai-jobs-skills-gig-work/",
-        "decision": "skipped",
-        "reason": "Feature piece, not news; today's carousel slot went to the Microsoft jobs story."
-      },
-      {
-        "story": "Anthropic rival says companies can mostly skip the pricey models (TechCrunch)",
-        "decision": "skipped",
-        "reason": "Could not find the article or a second source in this run."
-      },
-      {
-        "story": "SoftBank falls over 16% after the Anthropic debut (CNBC)",
-        "decision": "covered",
-        "reason": "Part of the Anthropic IPO story already posted."
-      },
-      {
-        "story": "Reel search",
-        "decision": "skipped",
-        "reason": "X and Reddit are not reachable from this run and search turned up only TV robot clips that fail the Reel filter (no surprising consumer use)."
-      }
-    ],
-    "requests": []
-  },
-  {
     "run_at": "2026-11-20T09:03:57.230Z",
     "summary": "Overnight run (04:00 New York): queued one Instagram carousel on OpenAI's report about a research model that wrote scripts to copy a user's outgoing email; no open links or requests; no Reel found.",
     "considered": [
@@ -5104,6 +4985,85 @@
         "story": "AI agents now control part of DeepMind's compute for Gemini experiments (The Decoder)",
         "decision": "skipped",
         "reason": "Insider research story, already passed on in earlier runs."
+      },
+      {
+        "story": "Reel videos",
+        "decision": "skipped",
+        "reason": "Reddit leads are empty and X posts cannot be opened from this run, so no clip could be checked against the Reel filter."
+      }
+    ],
+    "requests": []
+  },
+  {
+    "run_at": "2026-11-27T07:06:01.895Z",
+    "summary": "02:00 NY run (Nov 27): no open links or requests; queued the Cornwall AI-advert Christmas market fiasco as today's second Instagram carousel, plus two site-only articles (New York's AI chatbot toy ban, Anthropic's Claude-written Rust API). No Reel video could be checked.",
+    "considered": [
+      {
+        "story": "Cornwall Christmas market cancels all bookings after its AI adverts looked nothing like the real hall",
+        "source": "https://www.aol.co.uk/articles/christmas-market-cancels-bookings-promises-153823000.html",
+        "decision": "queued",
+        "job_id": "2026-11-27-kernow-christmas-market-ai-ads",
+        "priority": 2
+      },
+      {
+        "story": "Governor Hochul signs a five-year ban on AI chatbot toys in New York",
+        "source": "https://www.governor.ny.gov/news/consumers-begin-their-holiday-shopping-season-governor-hochul-signs-five-year-ban-ai-chatbot",
+        "decision": "queued",
+        "job_id": "2026-11-27-new-york-bans-ai-chatbot-toys",
+        "priority": 2,
+        "reason": "Site-only: today's two Instagram carousel slots go to Character.AI and the Cornwall market."
+      },
+      {
+        "story": "Anthropic says Claude rewrote its Messages API from Python to Rust, cutting CPU per request about 70%",
+        "source": "https://www.theneuron.ai/news/anthropic-claude-api-rust-migration/",
+        "decision": "queued",
+        "job_id": "2026-11-27-anthropic-claude-rewrote-api-rust",
+        "priority": 2,
+        "reason": "Engineering story mostly insiders follow, so site-only. Anthropic's own post could not be opened from this run; written from two outlets that summarize it."
+      },
+      {
+        "story": "OpenAI cuts GPT-6.2 usage: Astra hits limits 40% faster (Hacker News)",
+        "decision": "covered",
+        "reason": "Already queued as 2026-11-26-chatgpt-gpt-6-2-billing-mistake-limits."
+      },
+      {
+        "story": "FCC authorizes SpaceX to deploy up to one million AI computing satellites",
+        "source": "https://apnews.com/article/b9897fe06f851ffaf92fd304ae69075c",
+        "decision": "skipped",
+        "reason": "Instagram carousel slots for today are full and site-only slots were used on stronger stories; candidate for a later run."
+      },
+      {
+        "story": "New York Times tells photographers not to use Photoshop 2027 over AI features",
+        "source": "https://www.avclub.com/new-york-times-requests-freelancers-not-update-adobe-photoshop",
+        "decision": "skipped",
+        "reason": "Not opened this run; carousel slots full. Candidate for a later site-only article."
+      },
+      {
+        "story": "Amazon and Meta in talks to end the block on Meta's Muse shopping agent",
+        "source": "https://the-decoder.com/amazon-and-meta-are-in-talks-to-end-the-block-on-metas-ai-shopping-agent-muse-in-amazons-online-store/",
+        "decision": "skipped",
+        "reason": "Talks only, no deal announced, and a single source read in the digest."
+      },
+      {
+        "story": "Microsoft details state-backed hackers using the ARTEX AI attack framework",
+        "source": "https://the-decoder.com/microsoft-details-how-state-backed-hackers-use-the-artex-ai-framework-to-automate-cyberattacks/",
+        "decision": "skipped",
+        "reason": "Not opened this run; possible site-only article later today."
+      },
+      {
+        "story": "SAP to cut up to 10,000 jobs in AI restructuring",
+        "decision": "skipped",
+        "reason": "Search found only older SAP restructuring stories and foreign-language reports; still no Reuters or Bloomberg confirmation."
+      },
+      {
+        "story": "ChatGPT stock picks outperform the S&P 500 with a 22% gain (Chosun Ilbo)",
+        "decision": "skipped",
+        "reason": "Search only turned up older ChatGPT stock-picking experiments, no current second source."
+      },
+      {
+        "story": "Stanford physicist's AI-assisted theory splits scientists (Business Insider)",
+        "decision": "skipped",
+        "reason": "Could not find the article or a second source in search."
       },
       {
         "story": "Reel videos",

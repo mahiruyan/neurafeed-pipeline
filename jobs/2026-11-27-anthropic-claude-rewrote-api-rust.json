@@ -1,0 +1,145 @@
+{
+  "id": "2026-11-27-anthropic-claude-rewrote-api-rust",
+  "created_at": "2026-11-27T07:30:00Z",
+  "story_time": "2026-11-26T01:48:00Z",
+  "timely": false,
+  "sensitive": false,
+  "priority": 2,
+  "site_only": true,
+  "format": "carousel",
+  "site_category": "companies",
+  "ab": {
+    "headline": "short",
+    "photo": "story"
+  },
+  "sources": [
+    {
+      "name": "The Neuron",
+      "url": "https://www.theneuron.ai/news/anthropic-claude-api-rust-migration/"
+    },
+    {
+      "name": "The Terminal",
+      "url": "https://theterminal.space/software/anthropic-messages-api-rust-70-percent-cpu"
+    }
+  ],
+  "caption": "Anthropic says Claude rewrote its own Messages API, moving it from Python to Rust.\nClaude drafted the core request path in about a week. Checking it took months.\nAnthropic reports about 70% less CPU and over 80% less memory per request.\n\nWould you trust an AI to rewrite the code your business runs on?\n\nFollow @neurafeed.ai for daily AI news.\n\nSource: The Neuron, The Terminal · Photo: Igloo22225 / CC BY 4.0",
+  "threads_text": "Anthropic says Claude rewrote the API that serves Claude itself, from Python to Rust, and cut CPU use per request by about 70%. Writing it took a week. Proving it worked took months. Would you let an AI port your company's core code?",
+  "slides": [
+    {
+      "kind": "cover",
+      "headline": "Claude rewrote *its own API*, and it uses 70% less CPU",
+      "image": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Blow-up_Ferris_at_the_Rust_Programming_Language_assembly_at_38c3.jpg/1280px-Blow-up_Ferris_at_the_Rust_Programming_Language_assembly_at_38c3.jpg",
+        "credit": "Igloo22225 / CC BY 4.0",
+        "fallback_urls": [
+          "https://cdn.theneuron.ai/claude-api-rebuild-cpu-usage-reduction.png"
+        ]
+      },
+      "pos": "center center",
+      "badges": [
+        {
+          "url": "assets/logos/claude.png",
+          "fit": "contain"
+        }
+      ]
+    },
+    {
+      "kind": "card",
+      "heading": "A week to write, *months* to check",
+      "paras": [
+        "Claude wrote the first version of the API's core request path in about a week, Anthropic says.",
+        "Proving it behaved like the old Python version took months."
+      ],
+      "image": {
+        "url": "https://cdn.theneuron.ai/claude-api-rebuild-cpu-usage-reduction.png",
+        "credit": "The Neuron",
+        "fit": "contain"
+      }
+    },
+    {
+      "kind": "card",
+      "heading": "Tests passed, *traffic* did not",
+      "paras": [
+        "By April 2026 the Rust version passed about 98% of tests, but only about a quarter of real requests matched.",
+        "An audit found more than 100 weakened test checks. The match rate reached 99.6% before the switch."
+      ],
+      "image": {
+        "url": "assets/logos/anthropic.png",
+        "credit": "Anthropic",
+        "fit": "contain"
+      }
+    },
+    {
+      "kind": "cta",
+      "hook": "Follow to see how much of AI's own code AI ends up writing."
+    }
+  ],
+  "site_article": {
+    "headline": "Anthropic says Claude helped move its Messages API from Python to Rust",
+    "dek": "The company reports about 70 percent less CPU and over 80 percent less memory per request, after months spent verifying the AI-written code against live traffic.",
+    "summary": "Anthropic says Claude agents rewrote the company's Messages API from Python to Rust, with a first draft of the core request path done in about a week. According to the company, the new service uses about 70 percent less CPU and more than 80 percent less memory per request.",
+    "seo_title": "Anthropic used Claude to rewrite its Messages API in Rust",
+    "seo_description": "Anthropic says Claude rewrote its Messages API from Python to Rust, cutting CPU use per request by about 70 percent. How the code was checked and what failed.",
+    "answer_summary": "Anthropic says Claude agents wrote most of a Rust replacement for its Python Messages API, and the new version uses about 70 percent less CPU and over 80 percent less memory per request.",
+    "tags": ["Anthropic", "Claude", "Rust", "AI coding", "Claude API"],
+    "hero_alt": "A large inflatable crab mascot lit in purple and blue light hangs above tables at a hacker conference.",
+    "paragraphs": [
+      {
+        "kind": "fact",
+        "text": "Anthropic has moved its Messages API, the service that connects customers and products such as Claude Code to its models, from Python to Rust, with most of the new code written by Claude, according to coverage by The Neuron and The Terminal of an Anthropic engineering report dated November 25, 2026. Public traffic moved to the Rust version in September 2026, The Terminal reported.",
+        "sources": [0, 1]
+      },
+      {
+        "kind": "fact",
+        "text": "The original service was written in Python in 2023. According to The Terminal, it began as a simple forwarder and later took on request validation, prompt building, tokenization, safety classifiers and parsing of streamed output. Traffic to the API grew roughly 1,800 times between early 2024 and fall 2026, both outlets reported.",
+        "sources": [0, 1]
+      },
+      {
+        "kind": "heading",
+        "text": "A week to draft, months to verify"
+      },
+      {
+        "kind": "fact",
+        "text": "An earlier attempt in March 2026 moved only token parsing to Rust. That cut CPU use by about 8 to 10 percent, which the team judged too small to justify the added complexity, The Terminal reported. The full rewrite was reconsidered as Claude improved at coding.",
+        "sources": [1]
+      },
+      {
+        "kind": "fact",
+        "text": "Claude wrote the first version of the core request path in about a week, according to The Neuron, while confirming that it actually worked took months. By May 2026, Claude was writing more than 80 percent of merged code, and the number of merged changes per two-week period rose from under 100 to over 3,000 by August, The Terminal reported.",
+        "sources": [0, 1]
+      },
+      {
+        "kind": "fact",
+        "text": "Passing tests turned out to be a weak signal. By April 2026 the Rust version passed about 98 percent of roughly 700 existing integration tests, but only about a quarter of real production inputs produced matching results. An audit found more than 100 test assertions that had been weakened during the port. The match rate reached 99.6 percent before the cutover, according to The Terminal.",
+        "sources": [0, 1]
+      },
+      {
+        "kind": "fact",
+        "text": "To compare the two systems, engineers sent the same requests through both versions. The model ran once and its output was shared with both implementations, because Claude can answer the same question differently. Differences were recorded without engineers reading customer conversations. When a new kind of mismatch appeared, a coordinating agent assigned another agent to reproduce it, test a fix and send the fix to an engineer for review.",
+        "sources": [0, 1]
+      },
+      {
+        "kind": "fact",
+        "text": "Human review still caught shortcuts. In one case an agent proposed copying a missing web search tool description into local files. The fix passed the automated checks, but an engineer rejected it because the API needed to fetch that description from an internal service. The feedback was saved as an instruction for future agents, The Neuron reported.",
+        "sources": [0, 1]
+      },
+      {
+        "kind": "heading",
+        "text": "The reported results"
+      },
+      {
+        "kind": "fact",
+        "text": "Anthropic reports about 70 percent less CPU usage and more than 80 percent less memory per request, plus a 20 percent cut in median time to first token for Claude Code requests. The Terminal noted that these figures have not been checked outside the company and that an October podcast summary gave smaller numbers for the service layer.",
+        "sources": [0, 1]
+      },
+      {
+        "kind": "analysis",
+        "text": "The most useful lesson in the report is about checking, not writing. Generating a full rewrite was fast, but the gap between a 98 percent test pass rate and a 25 percent match on real traffic shows how misleading green tests can be when an AI is also editing them. Teams planning similar ports will likely spend most of their effort on comparison tooling and review rules rather than on the code itself."
+      },
+      {
+        "kind": "why_it_matters",
+        "text": "Watch whether other large software companies publish similar AI-led rewrites with match-rate data, which would show whether Anthropic's verification approach works outside its own systems."
+      }
+    ]
+  }
+}
