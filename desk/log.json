@@ -1,55 +1,5 @@
 [
   {
-    "run_at": "2026-11-21T02:56:51.895Z",
-    "summary": "Night run (22:00 New York, Nov 20): no open links or requests; queued the Reuters report that the SEC is examining Nvidia's accounting as a priority 1 site-only article (today's Instagram carousels are already past 2 and a timely post would expire before the 07:00 window). No Reel video passed the filter.",
-    "considered": [
-      {
-        "story": "SEC is examining Nvidia's accounting; shares fall about 13 to 14 percent, about $491 billion erased (Reuters, The Motley Fool)",
-        "source": "https://live.euronext.com/en/financial-news/nvidias-accounting-focus-us-sec-investigation-sources-say",
-        "decision": "queued",
-        "job_id": "2026-11-20-nvidia-sec-accounting-probe",
-        "priority": 1,
-        "reason": "Priority 1 Nvidia money and scandal story, new since the earlier runs; site-only and sensitive because today's Instagram carousels are already at 4 of 2 and no window opens before 07:00. A later run can make the Instagram carousel if the story develops."
-      },
-      {
-        "story": "Anthropic shares fall after the IPO as AI stocks lose about $4 trillion and the S&P 500 and Dow enter a correction (WSJ, Reuters, NBC)",
-        "decision": "covered",
-        "reason": "Anthropic IPO already posted as 2026-11-18-anthropic-ipo-priced-83 and 2026-11-19-anthropic-opens-111-nasdaq; earlier runs today made the same call."
-      },
-      {
-        "story": "Anthropic mathematician says Claude helped prove the Riemann Hypothesis (NYT, BBC, Bloomberg)",
-        "decision": "covered",
-        "reason": "Already queued as 2026-11-20-anthropic-mathematician-riemann-proof-claude."
-      },
-      {
-        "story": "Google shuts down the Nest app and Google Assistant on home devices (USA Today, Android Central)",
-        "decision": "skipped",
-        "reason": "Smart home product news, only seen as feed headlines; site-only slots for today are full."
-      },
-      {
-        "story": "Oracle says funding for its OpenAI infrastructure contract is secured",
-        "decision": "skipped",
-        "reason": "Insider infrastructure finance news from secondary outlets only."
-      },
-      {
-        "story": "Raleigh eviction after an AI bot's promise (WRAL)",
-        "decision": "skipped",
-        "reason": "Single local outlet seen; candidate for tomorrow if it gets wider coverage."
-      },
-      {
-        "story": "Tristan Thompson reveals an early Anthropic investment (E! News)",
-        "decision": "skipped",
-        "reason": "Celebrity side story to an IPO that is already covered twice."
-      },
-      {
-        "story": "Reel search: viral AI robot, gadget and smart glasses clips",
-        "decision": "skipped",
-        "reason": "Searches returned only older clips and no original X or company video from the last day."
-      }
-    ],
-    "requests": []
-  },
-  {
     "run_at": "2026-11-21T05:00:55.363Z",
     "summary": "Midnight run (00:00 New York, Nov 21): no open links or requests; nothing queued. The night's stories are already covered or are insider news, the Canva AI off switch still has only one readable source, and no Reel video passed the filter.",
     "considered": [
@@ -5157,6 +5107,59 @@
         "story": "OpenAI countersues Apple over trade secrets",
         "decision": "covered",
         "reason": "Already queued as 2026-11-27-openai-countersues-apple-suppliers."
+      },
+      {
+        "story": "Reel videos",
+        "decision": "skipped",
+        "reason": "Reddit leads are empty and X posts cannot be opened from this run, so no clip could be checked against the Reel filter."
+      }
+    ],
+    "requests": []
+  },
+  {
+    "run_at": "2026-11-28T04:54:26.916Z",
+    "summary": "00:00 NY run (Nov 27 late): no open links or requests; nothing queued. Today's carousel, site-only news and guide slots are full, no new priority 1 story broke since 22:00, and the new leads could not be confirmed.",
+    "considered": [
+      {
+        "story": "OpenAI countersues Apple over trade secrets and suppliers (new Guardian, Al Jazeera, NY Post coverage)",
+        "decision": "covered",
+        "reason": "Already queued as 2026-11-27-openai-countersues-apple-suppliers."
+      },
+      {
+        "story": "The Chicks say an AI song generator is illegally using their likeness",
+        "source": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPWGJkVjhIcS1PT3dsMmY1NU5RbmF2QkVzZ18yMFV5alJvbEMyN0IxQ0NPYXZ1SC1Gb19PUi1lOGFuaW85U2NRRDN3eVV4TDhRRXRqc2M5SW9qNEpESHZ5Y21aM0V0YkFHWHQwRTJ1aW56UTVuY3JJbUNmYXZNREs4YnZOWTR5eDhaSnFz?oc=5",
+        "decision": "skipped",
+        "reason": "A web search still found no second outlet with the details (only older Suno lawsuits by other artists); candidate for Nov 28 if confirmed."
+      },
+      {
+        "story": "DeepSeek is the latest Chinese developer to worry about losing control of AI (SCMP)",
+        "decision": "skipped",
+        "reason": "Only the SCMP headline seen, a follow-up to earlier DeepSeek safety comments, and today's slots are full."
+      },
+      {
+        "story": "Anthropic finishes first full week above IPO price (Bloomberg)",
+        "decision": "skipped",
+        "reason": "Stock move follow-up already skipped in earlier runs today."
+      },
+      {
+        "story": "Japan to revise AI law to introduce penalties",
+        "decision": "skipped",
+        "reason": "Policy news mostly insiders follow, and all 4 site-only news slots for today are used."
+      },
+      {
+        "story": "ChatGPT for Android may get calls, texts and screen context",
+        "decision": "skipped",
+        "reason": "Unconfirmed app code finding from one blog, not an announcement."
+      },
+      {
+        "story": "Woman evicted after landlord's AI assistant told her she could delay rent",
+        "decision": "skipped",
+        "reason": "Still only a Substack post; no news outlet confirms it."
+      },
+      {
+        "story": "Oregon and Virginia sue SpaceX over Grok sexual images",
+        "decision": "covered",
+        "reason": "Already covered as 2026-11-23-states-sue-spacex-grok-deepfakes."
       },
       {
         "story": "Reel videos",
