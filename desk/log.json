@@ -1,54 +1,5 @@
 [
   {
-    "run_at": "2026-11-21T00:54:42.064Z",
-    "summary": "Late evening run (19:55 New York, Nov 20): no open links or requests; nothing new queued. Today already has 4 Instagram carousels (cap is 2), 6 site-only news articles and 6 guides, and no Reel video passed the filter.",
-    "considered": [
-      {
-        "story": "Trump says he will penalize US tech companies that build AI data centers abroad (AP via local outlets)",
-        "decision": "skipped",
-        "reason": "Politics story that would expire around 00:45 New York; today's Instagram carousels are already 4 of 2 and site-only articles are full."
-      },
-      {
-        "story": "Anthropic stock slides toward its IPO price and drags AI stocks (Reuters, CNN, MarketWatch)",
-        "decision": "covered",
-        "reason": "Anthropic IPO already posted as 2026-11-18-anthropic-ipo-priced-83 and 2026-11-19-anthropic-opens-111-nasdaq."
-      },
-      {
-        "story": "Anthropic mathematician says Claude helped prove the Riemann Hypothesis (WSJ, Washington Post)",
-        "decision": "covered",
-        "reason": "Already queued as 2026-11-20-anthropic-mathematician-riemann-proof-claude."
-      },
-      {
-        "story": "AI-assisted cyberattack disrupted European Commission payroll systems (The Register)",
-        "source": "https://www.theregister.com/cyber-crime/2026/11/19/european-commission-scrambles-to-contain-ai-assisted-cyberattack/5311103",
-        "decision": "skipped",
-        "reason": "Daily Instagram and site-only slots are full; candidate for tomorrow if it grows."
-      },
-      {
-        "story": "Nvidia reportedly in talks to acquire Inception (Mercury diffusion models)",
-        "decision": "skipped",
-        "reason": "Unconfirmed report and insider news; site-only slots for today are full."
-      },
-      {
-        "story": "Google Project Suncatcher picks Blue Origin for 2029 launch (The Verge)",
-        "decision": "skipped",
-        "reason": "Insider infrastructure news; site-only slots for today are full."
-      },
-      {
-        "story": "Reel search: viral consumer AI, robot and smart glasses clips; daily AI digests (The Neuron, AI to ROI)",
-        "decision": "skipped",
-        "reason": "No item in today's digests or searches had an original X or company video that passes the Reels filter."
-      },
-      {
-        "story": "Frostbite, a CPU architecture designed by AI (Hacker News)",
-        "source": "https://architectlabs.com/blog/frostbite",
-        "decision": "skipped",
-        "reason": "Single company blog with no independent coverage found; insider hardware topic."
-      }
-    ],
-    "requests": []
-  },
-  {
     "run_at": "2026-11-21T02:56:51.895Z",
     "summary": "Night run (22:00 New York, Nov 20): no open links or requests; queued the Reuters report that the SEC is examining Nvidia's accounting as a priority 1 site-only article (today's Instagram carousels are already past 2 and a timely post would expire before the 07:00 window). No Reel video passed the filter.",
     "considered": [
@@ -5103,6 +5054,64 @@
         "story": "Gemini 3.8 Flash matches frontier models on a chemistry test",
         "decision": "skipped",
         "reason": "Benchmark news for insiders, and site-only news slots are full."
+      }
+    ],
+    "requests": []
+  },
+  {
+    "run_at": "2026-11-28T01:02:53.029Z",
+    "summary": "20:00 NY run (Nov 27): no open links or requests; queued the day's sixth website guide (Freepik AI image generator is now Magnific, site only). No new priority 1 story, today's Instagram carousels and site-only news slots are already used, and no Reel clip passed the filter.",
+    "considered": [
+      {
+        "story": "Guide: Freepik AI image generator, now Magnific",
+        "source": "https://www.magnific.com/freepik-ai",
+        "decision": "queued",
+        "job_id": "2026-11-27-freepik-ai-image-generator-now-magnific-guide",
+        "priority": 2,
+        "reason": "Next uncovered plan line; Freepik's own docs now redirect to Magnific, so the guide explains the rebrand, login and tool names from Magnific's pages plus The Next Web and Tech.eu. Pricing and docs pages could not be read, so no credit or price figures."
+      },
+      {
+        "story": "Thariq Shihipar joins OpenAI after leaving Anthropic",
+        "source": "https://x.com/trq212/status/2125675533761671405",
+        "decision": "skipped",
+        "reason": "Already looked at in an earlier run today; a single hire that mostly insiders follow, and today's carousel slots are full."
+      },
+      {
+        "story": "NYT ran an AI columnist's Anthropic essay without disclosing a $50K Omidyar stipend",
+        "decision": "skipped",
+        "reason": "Already considered earlier today; media ethics story with little reach for a US AI audience."
+      },
+      {
+        "story": "Microsoft details state-backed hackers using the ARTEX AI framework",
+        "source": "https://the-decoder.com/microsoft-details-how-state-backed-hackers-use-the-artex-ai-framework-to-automate-cyberattacks/",
+        "decision": "skipped",
+        "reason": "Not from the last 12 hours and all four site-only news slots for today are used."
+      },
+      {
+        "story": "Kioxia and NVIDIA petabyte-scale GPU memory demo with SSDs",
+        "source": "https://www.kioxia.com/en-jp/business/news/2026/20261126-1.html",
+        "decision": "skipped",
+        "reason": "Insider hardware news from Nov 26; site-only slots full."
+      },
+      {
+        "story": "Oversonic aRoBee R20 humanoid demo at electronica 2026",
+        "decision": "skipped",
+        "reason": "Considered as a Reel but no video link found, only a text description."
+      },
+      {
+        "story": "OpenAI countersues Apple",
+        "decision": "covered",
+        "reason": "Already queued as 2026-11-27-openai-countersues-apple-suppliers."
+      },
+      {
+        "story": "Nvidia Blackwell rack at Shanghai site tied to Alice Huang",
+        "decision": "covered",
+        "reason": "Already queued as 2026-11-27-nvidia-blackwell-rack-shanghai-alice-huang."
+      },
+      {
+        "story": "Anthropic stock jumps 11% as tech rebounds (Forbes)",
+        "decision": "skipped",
+        "reason": "A one-day stock move; carousel slots full for today."
       }
     ],
     "requests": []
