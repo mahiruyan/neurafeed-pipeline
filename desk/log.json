@@ -1,109 +1,5 @@
 [
   {
-    "run_at": "2026-11-21T05:00:55.363Z",
-    "summary": "Midnight run (00:00 New York, Nov 21): no open links or requests; nothing queued. The night's stories are already covered or are insider news, the Canva AI off switch still has only one readable source, and no Reel video passed the filter.",
-    "considered": [
-      {
-        "story": "Anthropic mathematician says Claude helped prove the Riemann Hypothesis (NYT, Washington Post, BBC, Economist)",
-        "decision": "covered",
-        "reason": "Already posted as 2026-11-20-anthropic-mathematician-riemann-proof-claude."
-      },
-      {
-        "story": "SEC examining Nvidia's accounting",
-        "decision": "covered",
-        "reason": "Already queued as 2026-11-20-nvidia-sec-accounting-probe."
-      },
-      {
-        "story": "Anthropic IPO aftermath: AI sell-off, $4 trillion wipeout, new millionaires, Moskovitz uneasy (WSJ, Reuters, NYT)",
-        "decision": "covered",
-        "reason": "Anthropic IPO already posted twice; same story, new angle."
-      },
-      {
-        "story": "Canva adds a setting to turn off most AI features",
-        "source": "https://www.canva.com/help/manage-ai-features/",
-        "decision": "skipped",
-        "reason": "Only Canva's help page could be read again (The Verge and the Canva FAQ failed), and it says the on/off steps are still coming soon; one source is not enough."
-      },
-      {
-        "story": "Nick Bostrom says AI could allow lifespans over 1,000 years (Business Insider)",
-        "decision": "skipped",
-        "reason": "A speculative quote that circulated months ago (el.kz in January); not news and only one current source."
-      },
-      {
-        "story": "Google to shut down the Nest app and Google Assistant on home devices (USA Today, Android Central)",
-        "decision": "skipped",
-        "reason": "Smart home product change, not one of the Instagram kinds, and the site-only count for the day was already full when it broke."
-      },
-      {
-        "story": "Army plans to use OpenAI models first in Project Gatekeeper (MLQ.ai)",
-        "decision": "skipped",
-        "reason": "Insider government contracting news from a single aggregator."
-      },
-      {
-        "story": "Moonshot AI scraps a $150 million Nvidia chip deal in Indonesia (The Information)",
-        "decision": "skipped",
-        "reason": "Paywalled single source, insider chip story."
-      },
-      {
-        "story": "Juvenile used AI to make nude images of charter school students and staff (WRAL)",
-        "decision": "skipped",
-        "reason": "Involves minors; local story we do not cover."
-      },
-      {
-        "story": "Reel search: viral AI robot and gadget clips (IEEE Video Friday, The Neuron digest)",
-        "decision": "skipped",
-        "reason": "No new X video found that passes the Reel filter; the robot clips found are old or YouTube only."
-      }
-    ],
-    "requests": []
-  },
-  {
-    "run_at": "2026-11-21T06:55:47.731Z",
-    "summary": "Early run (02:00 New York, Nov 21): no open links or requests; queued Anthropic co-founder Tom Brown's planned gift to Trump Accounts as a sensitive Instagram carousel with a site article. No Reel video passed the filter; guides start after 07:00.",
-    "considered": [
-      {
-        "story": "Anthropic co-founder Tom Brown plans a donation to Trump Accounts; Bessent says a large gift is coming (Reuters, Bloomberg)",
-        "source": "https://news.bloomberglaw.com/artificial-intelligence/bessent-says-an-anthropic-founder-will-donate-to-trump-accounts",
-        "decision": "queued",
-        "job_id": "2026-11-21-anthropic-tom-brown-trump-accounts",
-        "priority": 2,
-        "reason": "Money, a person and politics a day after the IPO; marked sensitive (politics) so Mahir approves, and timely false because it is a pledge, not breaking news, and the 12 hour limit would end before the 07:00 window."
-      },
-      {
-        "story": "Google buys Spirit Airlines' emails, chats and records for Gemini training (Yahoo)",
-        "source": "https://airlinegeeks.com/2026/08/17/report-google-buys-spirit-data-for-10m/",
-        "decision": "skipped",
-        "reason": "The purchase was first reported in August 2026; old news resurfacing."
-      },
-      {
-        "story": "Anthropic mathematician says Claude helped prove the Riemann Hypothesis",
-        "decision": "covered",
-        "reason": "Already posted as 2026-11-20-anthropic-mathematician-riemann-proof-claude."
-      },
-      {
-        "story": "AI sell-off: S&P 500 and Dow enter correction, Anthropic shares slide (Reuters, AP, WSJ)",
-        "decision": "covered",
-        "reason": "Anthropic IPO already covered twice; Nvidia SEC probe queued as 2026-11-20-nvidia-sec-accounting-probe."
-      },
-      {
-        "story": "Senate Democrats push for an AI oversight committee with subpoena power (Law Commentary)",
-        "decision": "skipped",
-        "reason": "Single minor outlet in the feed, insider policy news."
-      },
-      {
-        "story": "Oracle says its OpenAI infrastructure contract is fully funded",
-        "decision": "skipped",
-        "reason": "Insider infrastructure finance news from secondary outlets."
-      },
-      {
-        "story": "Reel search: viral AI robot and smart glasses clips",
-        "decision": "skipped",
-        "reason": "Search returned only older clips and no new original X or company video from the last day."
-      }
-    ],
-    "requests": []
-  },
-  {
     "run_at": "2026-11-21T09:01:46.673Z",
     "summary": "Early run (04:00 New York, Nov 21): no open links or requests; queued Bessent's Trump and Xi military AI remarks as the day's second Instagram carousel (sensitive, politics) and the EU Commission AI-assisted cyberattack as a site-only article. No Reel video passed the filter; guides start after 07:00.",
     "considered": [
@@ -5165,6 +5061,79 @@
         "story": "Reel videos",
         "decision": "skipped",
         "reason": "Reddit leads are empty and X posts cannot be opened from this run, so no clip could be checked against the Reel filter."
+      }
+    ],
+    "requests": []
+  },
+  {
+    "run_at": "2026-11-28T07:02:40.715Z",
+    "summary": "02:00 NY run (Nov 28): no open links or requests; queued one site-only policy article on LAUSD blocking Google AI Overviews. No Instagram carousel or Reel found that passes the filters on a quiet holiday night.",
+    "considered": [
+      {
+        "story": "LAUSD blocks Google's AI Overviews on school devices despite Google's no-AI-no-Search rule",
+        "source": "https://lamag.com/education/l-a-schools-block-googles-ai-overview-despite-companys-latest-ai-policy/",
+        "decision": "queued",
+        "job_id": "2026-11-28-lausd-blocks-google-ai-overviews",
+        "priority": 2,
+        "reason": "New development in the Google schools story (covered Nov 3 and Nov 21), confirmed by NBC LA, LA Magazine and LAist; a follow-up, so site-only rather than a third Instagram post on it."
+      },
+      {
+        "story": "GPT-6 Astra decodes historical ciphers (Napoleon letter, WWI and Enigma messages)",
+        "source": "https://www.livescience.com/technology/artificial-intelligence/a-kind-of-rosetta-stone-ai-decodes-217-year-old-secret-letter-ordered-by-napoleon",
+        "decision": "skipped",
+        "reason": "The Napoleon decode is from Sept. 30 and the new Substack post could not be opened; worth a carousel only if a fresh case gets news coverage."
+      },
+      {
+        "story": "Binance says its $6.3B heist began with an engineer's vibe coding",
+        "source": "https://futurism.com/future-society/binance-heist-vibe-code-ai",
+        "decision": "skipped",
+        "reason": "Reported Nov 3 to 5, too old, and the heist was already covered on Oct 30."
+      },
+      {
+        "story": "Two California Nvidia customers were Chinese-owned fronts for export control workarounds (Tom's Hardware)",
+        "decision": "skipped",
+        "reason": "Search found only the 2025 smuggling charges, not the new report; could not confirm with a second source."
+      },
+      {
+        "story": "Switzerland says five cyberattacks used AI agents (Reuters)",
+        "decision": "skipped",
+        "reason": "From Nov 26 and still only seen in a digest; no second source read."
+      },
+      {
+        "story": "Google DeepCrossAttention trains comparable models up to 3x faster",
+        "source": "https://research.google/blog/supercharging-transformer-residual-connections/",
+        "decision": "skipped",
+        "reason": "The Google Research post could not be opened from this run, so no facts could be checked."
+      },
+      {
+        "story": "Japan to revise AI law to introduce penalties (Japan Times)",
+        "decision": "skipped",
+        "reason": "Search shows earlier proposals but the new article was not read; insider policy news."
+      },
+      {
+        "story": "The Chicks say an AI song generator uses their likeness",
+        "decision": "skipped",
+        "reason": "Still no second outlet found in search."
+      },
+      {
+        "story": "OpenAI countersues Apple (new coverage)",
+        "decision": "covered",
+        "reason": "Already queued as 2026-11-27-openai-countersues-apple-suppliers."
+      },
+      {
+        "story": "Dungeons & Dragons maker passes AI settlement money to authors",
+        "decision": "covered",
+        "reason": "Already covered as 2026-11-22-wizards-anthropic-payout-dnd-writers."
+      },
+      {
+        "story": "Reel videos",
+        "decision": "skipped",
+        "reason": "Reddit leads are empty and X posts cannot be opened from this run, so no clip could be checked against the Reel filter."
+      },
+      {
+        "story": "Website guides for Nov 28",
+        "decision": "skipped",
+        "reason": "Guides start from 07:00 New York time; it is 02:00."
       }
     ],
     "requests": []
